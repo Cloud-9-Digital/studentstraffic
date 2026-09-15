@@ -1,0 +1,19 @@
+{
+  "countrySlug": "somaliland",
+  "universitySlug": "university-of-hargeisa-college-of-medicine-and-health-sciences",
+  "schoolName": "University of Hargeisa College of Medicine and Health Sciences",
+  "cityName": "Hargeisa",
+  "priority": "low",
+  "officialWebsite": "https://uoh-edu.net/academic_tabs/medicine-and-surgery/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The current University of Hargeisa site lists Medicine and Surgery (MBBS); its undergraduate admissions page identifies Faculty of Medicine and Surgery, and the Somaliland National Health Professions Commission lists the university's Medicine programme as accredited. The Somaliland Ministry notes limited sector data and insufficient historical regulation. Current fees, full programme structure, clinical-placement terms, international admissions/support and target-market licensing evidence were not assembled, so publication is not justified.",
+  "sourceBundle": {"sources": [
+    {"label": "University of Hargeisa medicine and surgery", "url": "https://uoh-edu.net/academic_tabs/medicine-and-surgery/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists Medicine and Surgery (MBBS)."},
+    {"label": "University of Hargeisa undergraduate admissions", "url": "https://uoh-edu.net/undergraduate-admission/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Lists Faculty of Medicine and Surgery and general undergraduate entry approach."},
+    {"label": "Somaliland National Health Professions Commission", "url": "https://www.nhpcsomaliland.org/checkhti.php", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Lists University of Hargeisa Medicine among accredited undergraduate programmes."},
+    {"label": "Somaliland Ministry higher education overview", "url": "https://moe.govsomaliland.org/article/higher-education", "kind": "government", "checkedAt": "2026-07-25", "notes": "Notes limited higher-education data and regulation context."}
+  ]},
+  "structuredFacts": {"name": "University of Hargeisa College of Medicine and Health Sciences", "city": "Hargeisa", "type": "Public", "officialWebsite": "https://uoh-edu.net/academic_tabs/medicine-and-surgery/", "bestFitFor": [], "programs": [], "missingForPublication": ["Current official tuition and total costs", "Detailed programme duration and clinical-placement terms", "International admission and student-support evidence", "Target-market licensing/recognition evidence"], "notes": "Do not make international recognition, clinical placement, licensing or outcome claims from local programme accreditation alone."},
+  "draftContent": {"summary": "", "campusLifestyle": "", "cityProfile": "", "clinicalExposure": "", "hostelOverview": "", "indianFoodSupport": "", "safetyOverview": "", "studentSupport": "", "whyChoose": [], "thingsToConsider": [], "faq": [], "notes": "Held pending authoritative decision information."}
+}

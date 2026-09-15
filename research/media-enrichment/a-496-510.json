@@ -1,0 +1,245 @@
+{
+  "batchId": "media-a-496-510",
+  "scope": "Alphabetical missing-media rows 496-510; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "ural-state-medical-university",
+      "universityName": "Ural State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo re-confirmed. Cover remains unresolved: re-checked the homepage slider and the /universitet subpage (not scanned by the first pass); both surface only seasonal/promotional graphics (New Year logo variant, quality certificates, payment-system badges), no genuine campus building photo. Cover stays held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://usma.ru/wp-content/themes/usma/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site usma.ru, dedicated header logo asset identified by the first pass, re-confirmed HTTP 200.",
+        "proposedPublicId": "ural-state-medical-university-logo"
+      }
+    },
+    {
+      "universitySlug": "urgench-ranch",
+      "universityName": "Urgench Ranch University of Technology Faculty of Medical Sciences",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Inspected the SPA's compiled static JS bundle (main.a37272db.js) for asset file-name references, since the rendered homepage exposes only the low-resolution 155x155 favicon (ranch.png, re-confirmed still 155x155). Found and verified a standalone, higher-quality logo SVG referenced by the app. Cover remains unresolved: the same bundle only references staff/personal photos (elon.jpg, ps2-5.jpg, psixolog.jpg), no campus building image; cover stays held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.utu-ranch.uz/static/media/logomain.c5d570b1129f5a8640109953fbef1073.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site utu-ranch.uz (a client-side-rendered React SPA), standalone gear/sunburst emblem SVG referenced as 'logomain' in the site's compiled JS bundle and used as the rendered header/main logo mark, verified HTTP 200.",
+        "proposedPublicId": "urgench-ranch-logo"
+      }
+    },
+    {
+      "universitySlug": "urgench-state-medical-institute",
+      "universityName": "Urgench State Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No discoverable official website exists for Urgench State Medical Institute, formed in April 2025 from the former Urgench branch of Tashkent Medical Academy. Confirmed no Wikipedia article exists (direct fetch attempt returns 404). Probed several plausible domain-name guesses; the only one that resolves, urganch-med.uz, is a different institution entirely ('Urganch Abu Ali ibn Sino nomidagi Jamoat salomatligi texnikumi' - a Public Health Technicum/college, not this medical institute) and must not be used or merged. This is an identity/status gap tied to the institution's recent formation and rename, not a media-sourcing gap; no logo or cover is nominated.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "utena-university-of-applied-sciences",
+      "universityName": "Utena University of Applied Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://login.utenos-kolegija.lt/static/logo/2022/logo2022_512.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand logo referenced from the university's own dedicated logo/branding page and served from its login subdomain",
+        "proposedPublicId": "utena-university-of-applied-sciences-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified via the college's own dedicated logotype page. No cover resolved: the only homepage slider image discoverable in static HTML is a generic, non-campus-specific stock photograph of a student standing in a library -- not identifiable as Utena's own campus or building -- so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "utrecht-university",
+      "universityName": "Utrecht University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uu.nl/themes/custom/corp/src/images/favicons/android-chrome-512x512.png",
+        "sourceType": "official",
+        "rightsBasis": "official university sun-emblem icon declared in the site's own web manifest",
+        "proposedPublicId": "utrecht-university-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified (the university's sun emblem, 512x512). No cover resolved: the site's only static og:image is that same logo graphic reused as a social-share avatar, not a distinct campus photo. The homepage's actual hero imagery loads via client-side JavaScript and was not captured by this offline audit, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "van-lang-university",
+      "universityName": "Van Lang University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.vlu.edu.vn/icons/favicon_logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official crest icon declared in the university's own homepage favicon link",
+        "proposedPublicId": "van-lang-university-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. No cover resolved: the homepage's declared og:image object returns HTTP 403 (missing/inaccessible on VLU's own media bucket), and the only alternative branded images discoverable there are QS/THE world-ranking promotional banners with time-limited ranking figures overlaid on campus photography -- not a generic evergreen cover -- so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "victoria-university-of-wellington",
+      "universityName": "Victoria University of Wellington",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.wgtn.ac.nz/__data/assets/git_bridge/0005/1778018/dist/images/new/v2/logo-green-full.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand logo served from the university's own design-system assets page",
+        "proposedPublicId": "victoria-university-of-wellington-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified via the university's own design-assets page. No cover resolved: neither the homepage nor its About/International pages populate an og:image, and the only other images found on those pages are dated news-article thumbnails rather than a dedicated campus cover, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "vilnius-university-bscn",
+      "universityName": "Vilnius University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.vu.lt/uploads/universiteto_rumai_c8256b7d25.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image served from the university's own domain and declared as its homepage og:image",
+        "proposedPublicId": "vilnius-university-bscn-cover"
+      },
+      "status": "ready",
+      "reason": "Cover captured and verified (the university's historic courtyard, via the homepage og:image). No logo resolved: the main site is a client-rendered SPA with no static logo reference, and the faculty subdomains hosting official brand/logo pages (knf.vu.lt, evaf.vu.lt) are behind a bot-detection challenge (TSPD) that blocks direct retrieval. No logo is nominated this pass."
+    },
+    {
+      "universitySlug": "virginia-polytechnic-institute-state-university",
+      "universityName": "Virginia Polytechnic Institute and State University",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.assets.cms.vt.edu/images/logo-maroon.svg",
+        "sourceType": "official",
+        "rightsBasis": "official maroon-and-orange wordmark served from the university's own CMS assets subdomain",
+        "proposedPublicId": "virginia-polytechnic-institute-state-university-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "vita-salute-san-raffaele-university",
+      "universityName": "Vita-Salute San Raffaele University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unisr.it/docroot/1.9.2/unisr/dist/images/logo_global.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand logo served from the university's own website template assets",
+        "proposedPublicId": "vita-salute-san-raffaele-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://d2o5pa08kr997h.cloudfront.net/mediaObject/unisr/home-page/media-new/istituzionali/resolutions/res-c990x540/istituzionali.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional campus image served from the university's own configured media CDN, labelled 'Institutional' on the homepage",
+        "proposedPublicId": "vita-salute-san-raffaele-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "volgograd-state-medical-university",
+      "universityName": "Volgograd State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.volgmed.ru/upload/constructor/60a/e7rx7lwdqeb24vkn64t1fz1wakazwq82.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand logo served from the university's own website",
+        "proposedPublicId": "volgograd-state-medical-university-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. No cover resolved: the only image discoverable for the cover role (the homepage's declared og:image, literally filenamed 'cover volgmed.jpg') is a stylised graphic dominated by the university's own crest and wordmark on a flat colour field -- effectively a logo presentation rather than a distinct campus or institutional photo -- so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "voronezh-state-medical-university",
+      "universityName": "Voronezh State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://vrngmu.ru/img/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official coat-of-arms logo served from the university's own website",
+        "proposedPublicId": "voronezh-state-medical-university-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified (coat of arms). No cover resolved: the only prominent graphic on the homepage is a time-limited admissions-deadline announcement banner (application dates for the 2026 intake), and no dedicated evergreen campus cover image was found in the static HTML, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "warsaw-university-technology",
+      "universityName": "Warsaw University of Technology",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.pw.edu.pl/sites/default/files/PW-uploads/metatags/gg-1300x630.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official image of the university's main building ('Gmach Glowny Politechniki Warszawskiej'), declared as the homepage og:image",
+        "proposedPublicId": "warsaw-university-technology-cover"
+      },
+      "status": "ready",
+      "reason": "Cover captured and verified (image of the main building, 'Gmach Glowny Politechniki Warszawskiej'). No logo resolved: the only header logo asset discoverable is filenamed '200_lecie_marginesy_100px.svg' -- indicating a 200th-anniversary commemorative variant coinciding with the university's 2026 bicentennial -- and no separate standard/evergreen logo file could be located, so no logo is nominated this pass to avoid assigning a time-limited campaign mark as the permanent brand logo."
+    },
+    {
+      "universitySlug": "washington-university-in-st-louis",
+      "universityName": "Washington University in St. Louis",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://washu.edu/app/themes/antipasto/assets/img/washu-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand wordmark served as a standalone file from the university's own website theme assets",
+        "proposedPublicId": "washington-university-in-st-louis-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "western-balkans-university-bscn",
+      "universityName": "Western Balkans University (WBU)",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://wbu.edu.al/assets/img/logo-big.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand logo served from the university's own website assets",
+        "proposedPublicId": "western-balkans-university-bscn-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://wbu.edu.al/assets/img/home/slider2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage slider image of the university's own campus building, served from the university's own website",
+        "proposedPublicId": "western-balkans-university-bscn-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

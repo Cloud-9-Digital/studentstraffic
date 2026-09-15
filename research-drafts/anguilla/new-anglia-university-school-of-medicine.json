@@ -1,0 +1,37 @@
+{
+  "scope": "Anguilla medical discovery — New Anglia University School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The World Directory of Medical Schools lists New Anglia University School of Medicine in Anguilla as currently operational, with a four-year English-language Doctor of Medicine degree, foreign-student admission and January, May and September intakes.",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0008660",
+      "sourceType": "international-directory",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Anguilla Executive Council minutes record approval of a 2023 MOU for New Anglia University to operate a medical school in Anguilla, with a four-year MD for science-degree holders and a five-year pre-medical-plus-MD route for high-school entrants.",
+      "sourceUrl": "https://gov.ai/document/2024-04-10-122322_1037385607.pdf",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The university's current MD overview describes more than 5,500 curriculum hours and 72 weeks of supervised clinical clerkships; its entry page lists a three-year undergraduate education with a 3.0 GPA or 90 relevant credits, plus English at B2 level.",
+      "sourceUrl": "https://newanglia.com/md-program-overview/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The university's India-specific 2024 material publishes a fee of £12,000 per annum, paid in three instalments; no general, current all-applicant MD fee schedule was located.",
+      "sourceUrl": "https://newanglia.com/wp-content/uploads/2024/10/indian-applicants.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The government evidence confirms an approved MOU, but a current direct Higher Education Licensing Board licence/assessment decision and a direct current programme-accreditation decision were not retrieved.",
+    "The World Directory entry does not replace direct regulator/accreditor evidence for formal recognition wording.",
+    "The published £12,000 figure is applicant-pathway specific. A current universal fee schedule, named clinical agreements and capacity, plus scholarship/loan/housing eligibility need policy-level validation."
+  ],
+  "nextAction": "Obtain current Anguilla licensing-board and accreditor records, a general effective-date fee schedule, and direct clinical/support-policy evidence before considering a publishable payload."
+}

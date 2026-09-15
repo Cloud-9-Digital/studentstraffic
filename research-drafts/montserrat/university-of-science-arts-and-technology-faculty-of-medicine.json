@@ -1,0 +1,21 @@
+{
+  "countrySlug": "montserrat",
+  "universitySlug": "university-of-science-arts-and-technology-faculty-of-medicine",
+  "schoolName": "University of Science, Arts and Technology Faculty of Medicine",
+  "cityName": "Olveston",
+  "priority": "low",
+  "officialWebsite": "https://usat.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - USAT is a verifiable local MD provider: WDOMS lists an operational English-language private medical school in Montserrat, and its own current course material describes a four-year MD and individualized overseas clinical training. However, CAAM-HP currently lists USAT as Not Accredited. No public content or lead-generation payload should be prepared until the provider supplies current independent recognition, pathway-specific admissions, fees, clinical-placement terms and support evidence.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "World Directory of Medical Schools", "url": "https://search.wdoms.org/home/SchoolDetail/F0000836", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists a currently operational private English-language medical school in Olveston, Montserrat, offering MD tracks."},
+      {"label": "USAT courses", "url": "https://usat.edu/courses/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes a four-year MD and individualized overseas clinical-training statements."},
+      {"label": "USAT application, tuition and fees", "url": "https://usat.edu/new-students/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Current admissions page; adequate route-specific fee and admission evidence was not assembled in this pass."},
+      {"label": "CAAM-HP assessment", "url": "https://caam-hp.org/university-of-science-arts-and-technology-usat/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists the medical school as Not Accredited."}
+    ]
+  },
+  "structuredFacts": {"name": "University of Science, Arts and Technology Faculty of Medicine", "city": "Olveston", "type": "Private", "officialWebsite": "https://usat.edu/", "bestFitFor": [], "programs": [], "missingForPublication": ["Current independent recognition evidence", "Route-specific international admission requirements", "Current fee and total-cost schedule", "Clinical placement terms and named sites", "Student support and target-market licensing evidence"], "notes": "CAAM-HP's current Not Accredited status is a publish-blocking fact; no claims about eligibility, licensing, clinical placement or outcomes may be made."},
+  "draftContent": {"summary": "", "campusLifestyle": "", "cityProfile": "", "clinicalExposure": "", "hostelOverview": "", "indianFoodSupport": "", "safetyOverview": "", "studentSupport": "", "whyChoose": [], "thingsToConsider": [], "faq": [], "notes": "Held because the current independent accreditation record is publish-blocking."}
+}

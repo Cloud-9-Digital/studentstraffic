@@ -1,0 +1,113 @@
+{
+  "countrySlug": "british-virgin-islands",
+  "universitySlug": "ponce-health-sciences-university-british-virgin-islands-school-of-medicine",
+  "schoolName": "Ponce Health Sciences University British Virgin Islands School of Medicine",
+  "cityName": "Tortola",
+  "priority": "medium",
+  "officialWebsite": "https://bvi.phsu.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The current official MD page and 2025-26 catalogue support a four-year, in-person English MD: two pre-clinical years in Tortola followed by a clinical phase for which students apply to U.S. or Puerto Rico rotations. The programme page currently lists US$62,100 per year and a January 11, 2027 start. The BVI catalogue records provisional BVI operation licence and ACCM preliminary accreditation; ACCM's 2024 annual report independently records preliminary accreditation from March 1, 2024. Keep the record held: the school does not publish a cohort-specific full cost of attendance, named and guaranteed clinical placements, current outcome data, or jurisdiction-by-jurisdiction licensing eligibility. Puerto Rico rotations require Spanish; U.S. clinical training is subject to an F-1 application and eligibility.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "PHSU BVI MD programme", "url": "https://phsu.edu/academics/programs/doctor-of-medicine-accm.php", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists a four-year, in-person, English MD, $62,100 annual tuition and January 2027 start."},
+      {"label": "PHSU BVI campus", "url": "https://bvi.phsu.edu/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes BVI study for the first two years and applications to affiliated clinical sites in the US or Puerto Rico."},
+      {"label": "PHSU BVI 2025-26 MD catalogue", "url": "https://phsu.edu/_resources/documents/catalog-2526-bvi.pdf", "kind": "official-catalogue", "checkedAt": "2026-07-25", "notes": "Documents the 164-week MD curriculum, provisional BVI licence, preliminary ACCM accreditation date, clinical curriculum, student support framework and no transfer credit or advanced standing."},
+      {"label": "PHSU BVI school page", "url": "https://phsu.edu/academics/schools/schools_of_medicine/school-of-medicine-bvi.php", "kind": "official-disclosure", "checkedAt": "2026-07-25", "notes": "States preliminary ACCM accreditation and links the BVI catalogue."},
+      {"label": "PHSU international-student guidance", "url": "https://phsu.edu/students/international-students.php", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Provides English-test, credential-evaluation and BVI student-visa information; states that U.S. clinical years require students to apply and qualify for an F-1 visa."},
+      {"label": "ACCM 2024 annual report", "url": "https://accredmed.org/wp-content/uploads/2025/03/2024-ACCM-Annual-Report.pdf", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists Tiber Health/PHSU School of Medicine, British Virgin Islands as preliminarily accredited since 1 March 2024 and records its January 2024 BVI pre-clinical campus inspection."},
+      {"label": "BVI Government school announcement", "url": "https://www.bvi.gov.vg/media-centre/ponce-health-sciences-university-open-new-school-medicine-british-virgin-islands", "kind": "government", "checkedAt": "2026-07-25", "notes": "Government states this would be the territory's first medical school and that it will award a medical degree."},
+      {"label": "BVI Medical and Dental Council", "url": "https://www.bvi.gov.vg/content/what-does-bvi-medical-and-dental-council-do", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Describes the Council's role in assessing medical training programmes and IMG registration."}
+    ]
+  },
+  "structuredFacts": {
+    "name": "Ponce Health Sciences University British Virgin Islands School of Medicine",
+    "city": "Tortola",
+    "type": "Private",
+    "officialWebsite": "https://bvi.phsu.edu/",
+    "recognition": [
+      "The BVI catalogue records a provisional operating licence from the Ministry of Education, Youth Affairs & Sports.",
+      "ACCM's 2024 annual report records preliminary accreditation from 1 March 2024.",
+      "PHSU is institutionally accredited by MSCHE; this is institutional accreditation and does not replace programme-specific or destination licensing checks."
+    ],
+    "programs": [
+      {
+        "officialTitle": "Doctor of Medicine (MD)",
+        "duration": "4 years / 164 weeks of instruction",
+        "delivery": "In person; English",
+        "preclinicalPhase": "Years 1-2 in Tortola, with basic sciences and early clinical experiences.",
+        "clinicalPhase": "Years 3-4 consist of core clerkships, advanced rotations and electives; students apply for rotations in the U.S. or Puerto Rico. Puerto Rico consideration requires Spanish.",
+        "tuition": "US$62,100 per year as listed on the current programme page; this is not a published total cost of attendance.",
+        "intake": "Current programme page lists 11 January 2027; its stated application deadline reopens 3 August.",
+        "transferPolicy": "The 2025-26 BVI catalogue says the programme does not accept transfer credit or admission with advanced standing."
+      }
+    ],
+    "admissions": {
+      "academic": "PHSU states that applicants should hold a bachelor's degree with a strong science background; specific prerequisite substitutions or exceptions are case-by-case.",
+      "tests": "PHSU states that U.S. citizens, U.S. nationals and permanent residents must submit MCAT. International applicants may submit equivalent standardised scores to strengthen an application.",
+      "english": "PHSU requires proof of English for applicants whose primary language is not English unless a stated degree-based exemption applies. Its international page lists IELTS, TOEFL and BVI-specific alternatives; thresholds and exemptions must be checked at application time.",
+      "documents": "The admissions process lists official transcripts, recommendation letters, a personal statement when required, application fee, background/no-penal-record evidence, and additional documents requested by admissions such as CV, immunisation records or test scores.",
+      "internationalRoute": "PHSU requires a Student Success Officer meeting before accepting an international applicant for Tortola. Its page lists a BVI student-visa application, acceptance letter, passport, funds, insurance and police-clearance evidence."
+    },
+    "feesAndFunding": {
+      "publishedTuition": "US$62,100 per year on the current MD programme page, checked 2026-07-25.",
+      "funding": "PHSU states that accepted U.S. citizens and eligible non-citizens may apply through FAFSA from 24 April 2026. It advertises scholarships and payment plans, but no BVI MD award amounts, selection rules or full cost-of-attendance schedule were verified.",
+      "doNotInfer": "Do not calculate a four-year total, represent scholarship availability as an award, or state a living-cost estimate until a cohort-specific official breakdown is obtained."
+    },
+    "studentSupport": [
+      "PHSU describes on-site and remote faculty guidance, dedicated faculty mentoring, academic guidance and career counselling.",
+      "The BVI catalogue documents Office of Student Affairs, registrar, grievance and reasonable-accommodation policies.",
+      "PHSU's international-student page identifies a Student Success Officer for the BVI visa process."
+    ],
+    "missingForPublication": [
+      "Cohort-specific total cost of attendance, including mandatory charges, housing, insurance and clinical-phase costs",
+      "Named clinical sites, placement allocation rules, availability and costs",
+      "Current outcome data for the new BVI programme",
+      "Destination-specific licensing eligibility and professional-route requirements",
+      "Official campus housing, food and day-to-day support details"
+    ],
+    "notes": "Do not turn preliminary accreditation, the ECFMG sponsor-note claim, exam preparation, financial aid availability, or the ability to apply for rotations into a promise of ECFMG certification, licensure, funding, clinical placement, residency or career outcome."
+  },
+  "draftContent": {
+    "summary": "Ponce Health Sciences University BVI offers an in-person, four-year MD in Tortola. The first two years cover basic sciences and early clinical experiences in the BVI; the later clinical phase requires students to apply for U.S. or Puerto Rico rotations. The programme is suitable only for applicants who can plan around a multi-jurisdiction clinical and visa route.",
+    "campusLifestyle": "The published BVI address is Paraquita Bay, Tortola. PHSU documents classroom-based pre-clinical study and on-site/remote academic support, but current official material reviewed for this packet does not provide a verified residence, meal-plan, transport or campus-life package. Those details should be obtained in writing before a student commits.",
+    "cityProfile": "Tortola is the BVI study location for Years 1 and 2. This record does not present a student-budget or safety claim because no current, provider-specific evidence was found for housing, transport, food or living costs.",
+    "clinicalExposure": "The catalogue sets out early clinical experiences in the first two years, then core clerkships in family medicine, internal medicine, obstetrics and gynecology, pediatrics, psychiatry and surgery. Advanced rotations and 24 weeks of electives follow. The clinical-location route is an application pathway, not a guaranteed placement: U.S. and Puerto Rico options have separate eligibility conditions, and Puerto Rico consideration requires Spanish.",
+    "hostelOverview": "No current official accommodation offer or price was verified. Do not publish a housing section until PHSU supplies an official option, cost and terms.",
+    "indianFoodSupport": "No provider-supported dietary or Indian-food service was verified. Omit this section from a public page.",
+    "safetyOverview": "No current official, campus-specific safety service or incident information was verified for publication. Omit this section rather than making a general Tortola safety claim.",
+    "studentSupport": "PHSU describes mentoring from on-site and remote faculty, academic guidance and career counselling. Its catalogue also documents student-affairs, registrar, grievance and reasonable-accommodation routes. For international applicants, the BVI Student Success Officer is part of the published visa process.",
+    "whyChoose": [
+      "Four-year English-language MD with two documented phases.",
+      "BVI pre-clinical study with early clinical experiences.",
+      "ACCM preliminary accreditation independently recorded for the programme.",
+      "Published academic mentoring, career counselling and international-student support."
+    ],
+    "thingsToConsider": [
+      "The listed annual tuition excludes an official full cost-of-attendance breakdown.",
+      "Clinical rotations require application; placement is not promised by the published route.",
+      "Puerto Rico rotation consideration requires Spanish.",
+      "U.S. clinical training requires separate F-1 eligibility for relevant international students.",
+      "As a new BVI programme, no BVI cohort outcome data was verified."
+    ],
+    "faq": [
+      {"question": "What degree is offered in Tortola?", "answer": "PHSU BVI lists an in-person Doctor of Medicine degree lasting four years. Its catalogue describes 164 weeks of instruction."},
+      {"question": "Where are the first two years taught?", "answer": "The programme page and catalogue place the two pre-clinical years in Tortola, British Virgin Islands."},
+      {"question": "Are clinical rotations guaranteed in the United States or Puerto Rico?", "answer": "No. The published route says students apply for clinical rotations. Availability, placement terms and immigration eligibility should be confirmed in writing before enrolment."},
+      {"question": "Is Spanish needed for Puerto Rico rotations?", "answer": "Yes. The current programme page says students must speak Spanish to be considered for rotations in Puerto Rico."},
+      {"question": "What tuition has PHSU published?", "answer": "The current MD programme page lists US$62,100 per year. A complete cohort-specific budget, including living and clinical-phase costs, was not verified for this packet."},
+      {"question": "Can international applicants apply?", "answer": "PHSU publishes an international-student route for Tortola, including a Student Success Officer meeting and BVI student-visa requirements. Academic, English-language and visa requirements apply."},
+      {"question": "Is there financial aid?", "answer": "PHSU states that accepted U.S. citizens and eligible non-citizens can apply for FAFSA from 24 April 2026. It also advertises scholarships and payment plans, but award amounts and eligibility were not verified here."},
+      {"question": "What is the programme's accreditation position?", "answer": "ACCM's 2024 annual report lists the BVI programme as preliminarily accredited from 1 March 2024. Preliminary accreditation should not be treated as a licensing or residency guarantee."},
+      {"question": "Does PHSU BVI accept transfer or advanced-standing students?", "answer": "The 2025-26 BVI catalogue says the programme does not accept transfer credit or admission with advanced standing."},
+      {"question": "What help is available after admission?", "answer": "PHSU describes faculty mentorship, academic guidance, career counselling, student-affairs services and BVI visa support. Accommodation and day-to-day support arrangements were not verified."}
+    ],
+    "conversionCtas": [
+      "Check whether your academic profile fits the published MD route.",
+      "Request a written four-year cost and clinical-phase budget review.",
+      "Plan the English, visa and clinical-location requirements before applying.",
+      "Speak with Students Traffic about comparing the programme with alternatives that match your licensing goal."
+    ],
+    "notes": "HOLD: the packet is source-backed but must not be converted into public catalogue content until the listed cost, clinical-placement, outcome and destination-licensing gaps are resolved."
+  }
+}

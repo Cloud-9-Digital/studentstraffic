@@ -1,0 +1,31 @@
+{
+  "countrySlug": "antigua-and-barbuda",
+  "universitySlug": "american-university-of-antigua-college-of-medicine",
+  "schoolName": "American University of Antigua College of Medicine",
+  "cityName": "Coolidge",
+  "priority": "medium",
+  "officialWebsite": "https://www.auamed.org/academics/md-program-new/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - AUA's official material describes a four-year MD with basic sciences in Antigua and clinical sciences at affiliated US teaching hospitals; the current published tuition structure and support options are available. CAAM-HP independently records Accreditation with Conditions for 2024-2028, and WDOMS records a current MD programme in English with the recognized-accreditation note. This pass is held because publishing requires route-specific international entry/fee/cost detail, clinical-placement terms and a target-market licensing package rather than broad eligibility claims.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "AUA MD programme", "url": "https://www.auamed.org/academics/md-program-new/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes Antigua basic sciences, US clinical rotations, three annual intakes and cohort-locked tuition."},
+      {"label": "AUA consumer disclosures", "url": "https://www.auamed.org/consumer-disclosures/", "kind": "official-disclosure", "checkedAt": "2026-07-25", "notes": "States two years of basic sciences in Antigua and 84 weeks of US clinical sciences."},
+      {"label": "AUA tuition and financial aid", "url": "https://www.auamed.org/academics/md-program-lead/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes phase tuition and describes financial-aid and scholarship options."},
+      {"label": "CAAM-HP assessment", "url": "https://caam-hp.org/american-university-of-antigua-college-of-medicine/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists Accreditation with Conditions for four years, 2024-2028."},
+      {"label": "World Directory of Medical Schools", "url": "https://search.wdoms.org/home/SchoolDetail/F0000993", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists the currently operational English-language MD programme and recognized-accreditation note."}
+    ]
+  },
+  "structuredFacts": {
+    "name": "American University of Antigua College of Medicine",
+    "city": "Coolidge",
+    "type": "Private",
+    "officialWebsite": "https://www.auamed.org/academics/md-program-new/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": ["Current route-specific international admission requirements", "Complete total cost and living-cost summary by cohort", "Clinical placement availability and location terms", "Target-market licensing and recognition evidence"],
+    "notes": "Do not turn accreditation, WDOMS listing or ECFMG eligibility into a guarantee of licensure, clinical placement or residency."
+  },
+  "draftContent": {"summary": "", "campusLifestyle": "", "cityProfile": "", "clinicalExposure": "", "hostelOverview": "", "indianFoodSupport": "", "safetyOverview": "", "studentSupport": "", "whyChoose": [], "thingsToConsider": [], "faq": [], "notes": "Held pending route-specific student decision information."}
+}

@@ -1,0 +1,444 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Ostrava maps its General Medicine programme to this category: a direct-entry, single-cycle six-year programme leading to the MUDr qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "czech-republic",
+      "slug": "university-of-ostrava",
+      "name": "University of Ostrava",
+      "city": "Ostrava",
+      "type": "Public",
+      "establishedYear": 2010,
+      "officialWebsite": "https://lf.osu.eu/",
+      "mediaAttribution": {},
+      "summary": "University of Ostrava's Faculty of Medicine, founded in 2010, runs an English-medium General Medicine programme leading to the MUDr degree. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 2010 onward, and in April 2026 the Czech National Accreditation Bureau granted the General Medicine programme its maximum possible 10-year accreditation term.",
+      "campusLifestyle": "The Faculty admits between 25 and 50 international students per intake to the English-medium General Medicine programme, ranked by entrance-exam score. Students train from the early years at Ostrava University Hospital and use SIMLEK, the Faculty's multidisciplinary simulation centre opened in the 2022/23 academic year.",
+      "cityProfile": "Ostrava is a major city in the Moravian-Silesian region of the Czech Republic. The Faculty partners with Ostrava University Hospital and Ostrava City Hospital, including a joint Centre for Hyperbaric Medicine with the latter.",
+      "practicalExposure": "The six-year, 360-ECTS General Medicine programme runs theoretical subjects (biochemistry, biology, physics, anatomy, histology, physiology) in Years 1-2, preclinical subjects (pathophysiology, pathology) transitioning into clinical courses (surgery, internal medicine) in Year 3, department internships in Years 4-5, and supervised pre-graduation clinical practice in Year 6, including nine weeks of practical training during vacation periods. Clinical training is anchored at Ostrava University Hospital, supplemented by Ostrava City Hospital and the SIMLEK simulation centre. Students may pursue IFMSA research internships (from Year 2) and clinical internships (from Year 3) abroad, alongside Erasmus+ mobility to over 60 partner universities. Graduates receive the MUDr degree.",
+      "hostelOverview": "The university's Jan Opletal Halls of Residence offer double and triple rooms at official monthly rates of roughly CZK 3,400-4,500 (about EUR 135-180) depending on occupancy. International degree students apply through the university's ISKAM system: new students apply 1 June-31 July with a CZK 4,000 refundable deposit due in August, while returning students apply in an earlier spring window. Accommodation runs for one academic year, ending 30 June.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The university's ISKAM accommodation system includes a security-deposit and contract process for incoming international students.",
+      "studentSupport": "The Faculty works with a disclosed network of roughly 18 named recruitment partners across specific countries and regions, alongside direct self-application. IFMSA-Czech Republic and Erasmus+ mobility programmes support international clinical and research experience during the programme.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002931), currently operational, with ECFMG-certification eligibility for graduates from 2010 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "In April 2026, the Czech National Accreditation Bureau granted the General Medicine programme its maximum possible 10-year accreditation term, up from a 5-year term granted in 2021.",
+        "A transparent, no-negative-marking entrance exam (Biology, Chemistry, Physics, 90 questions, 30-point pass threshold) with a published syllabus and sample tests.",
+        "A genuine merit scholarship of EUR 6,000 per year for top-performing students from the second year onward, plus a separate mobility scholarship.",
+        "Clinical training anchored at Ostrava University Hospital from the early years, supplemented by a dedicated multidisciplinary simulation centre."
+      ],
+      "thingsToConsider": [
+        "Official sources give conflicting accounts of exactly when the English-medium track began (one Faculty page says 2018/19, another official Faculty news item says the first English cohort started September 2023) -- the Faculty's 2010 founding year itself is solidly confirmed, but the English track's own start date should be confirmed directly with admissions.",
+        "The published EUR 12,000 tuition covers teaching only and explicitly excludes health insurance, textbooks, accommodation and living expenses; no tuition refund or withdrawal policy is published.",
+        "The Faculty's own entrance-exam page had a self-declared 'information expired' notice showing stale 2025 dates at the time of research; the separate, current Admission to Study page was used as the authoritative source instead.",
+        "The first-year merit scholarship is not available to incoming first-year students; it is awarded from the second year onward based on the prior year's results.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a secondary-school-level Biology, Chemistry and Physics multiple-choice exam with no negative marking.",
+        "Applicants who value a recently and maximally re-accredited programme (10-year term granted April 2026) and clear, published fee documentation.",
+        "Families comfortable confirming the exact English-track history and any outstanding admissions details directly with the Faculty given some inconsistencies across its own web pages."
+      ],
+      "industryPartners": [
+        "Ostrava University Hospital",
+        "Ostrava City Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0002931), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 2010-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Czech National Accreditation Bureau (NAU) — General Medicine programme granted the maximum 10-year accreditation term, April 2026",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Czech MUDr medical qualification across the EU/EEA"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — University of Ostrava Faculty of Medicine listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0002931" },
+        { "label": "University of Ostrava — official General Medicine programme page", "url": "https://lf.osu.eu/21563/masters-degree-programme-general-medicine-in-english/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the General Medicine programme direct-entry after high school?",
+          "answer": "Yes. The applicant must have completed secondary-level education including the school-leaving examination -- no prior university degree is required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MUDr degree, a Czech medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A 90-minute, computer-based, video-proctored exam with 30 questions each in Biology, Chemistry and Physics (90 total), single-best-answer format with no negative marking. A minimum of 30 out of 90 points is required to pass, with final admission ranked by score against the year's seat capacity (25-50 places)."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 12,000 per year for students enrolling in 2026/27, per the university's official Dean's Decision fee document. This covers tuition only and excludes health insurance, textbooks, accommodation and living expenses."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a CZK 2,000 (about EUR 80) application fee, non-refundable if the applicant misses their entrance-exam sitting."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The academic year begins in early October. For the 2026/27 cycle, applications opened 15 November 2025 with entrance-exam sittings running through 18 August 2026; the final application deadline (roughly 4 August 2026, 14 days before that sitting) had not yet passed at the time of this record's research."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "Yes -- a merit scholarship of EUR 6,000 per year is available to top-performing students from the second year onward (not first-year students), plus a separate CZK 50,000 mobility scholarship and IFMSA-linked internship-exchange opportunities."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — University of Ostrava Faculty of Medicine listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0002931",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "University of Ostrava — official Admission to Study page",
+          "url": "https://lf.osu.eu/28759/admission-to-study/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility, admissions process, required documents, capacity and current 2026/27 deadline dates."
+        },
+        {
+          "label": "University of Ostrava — Dean's Decision No. 183/2025 (tuition fee schedule, PDF)",
+          "url": "https://dokumenty.osu.cz/lf/opd/opatreni_dekana_183_2025-en.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for the confirmed EUR 12,000 2026/27 tuition figure by enrollment cohort year."
+        },
+        {
+          "label": "University of Ostrava — official entrance-exam topics document (PDF)",
+          "url": "https://dokumenty.osu.cz/lf/gm/topics-for-the-entrance-exam.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the entrance-exam syllabus, format and scoring."
+        },
+        {
+          "label": "University of Ostrava — official Academics page (Faculty of Medicine)",
+          "url": "https://lf.osu.eu/academics/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for named clinical partners, the SIMLEK simulation centre and scholarship programmes."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC Annex V (as amended by Decision (EU) 2021/2183)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021D2183",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Czech MUDr qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-ostrava-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Master's Degree Programme General Medicine in English",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 12000,
+            "officialTotalTuitionAmount": 72000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published tuition: EUR 12,000/year for students enrolling in 2026/27, per Dean's Decision No. 183/2025 (a signed, dated official fee schedule). Covers tuition only -- excludes health insurance, textbooks, accommodation and living expenses. Total is calculated as the annual figure times 6 years -- not published as a lump sum. A separate CZK 2,000 (about EUR 80) application fee applies, non-refundable if the entrance exam is missed. No tuition refund/withdrawal policy was published."
+          },
+          "officialProgramUrl": "https://lf.osu.eu/21563/masters-degree-programme-general-medicine-in-english/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary-level education including the school-leaving examination, with English proficiency at CEFR B2 or higher"
+            ],
+            "restrictions": [
+              "Admission is ranked solely on the Faculty's own entrance-exam score against a 25-50 seat capacity -- no standardized-test-based alternative route is offered",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "The entrance exam covers only standard secondary-school-level Biology, Chemistry and Physics content, per the Faculty's own published syllabus.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://lf.osu.eu/28759/admission-to-study/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit an online application, pay the admission fee, sit a computer-based Biology, Chemistry and Physics entrance exam, and are ranked by score against the year's seat capacity; admitted applicants complete document and nostrification requirements before enrollment.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education with a school-leaving exam, CEFR B2 English proficiency, and a passing rank on the Faculty's own Biology, Chemistry and Physics entrance exam.",
+              "items": [
+                "Secondary-school leaving certificate, certified and submitted by 30 September",
+                "CEFR B2 English proficiency",
+                "90-minute, 90-question entrance exam (Biology, Chemistry, Physics), minimum 30 points to pass",
+                "Certificate of nostrification (foreign-diploma recognition) for non-EU/non-Czech applicants, excluding European Baccalaureate holders",
+                "Medical fitness certificate meeting Czech Ministry of Health requirements",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the online e-application and pay the CZK 2,000 admission fee",
+              "Upload required documents, including secondary-education records and a medical fitness certificate",
+              "Sit the computer-based entrance exam on a chosen date (first round January-June, second round July-August)",
+              "Receive the ranked admission decision and, if admitted, complete nostrification of the secondary diploma",
+              "Arrange a student visa (non-EU/non-Schengen applicants) after receiving the admission letter, then enroll in early October"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified secondary-school leaving certificate/diploma, submitted by 30 September",
+                "Certificate of nostrification for non-EU/non-Czech secondary diplomas (except European Baccalaureate holders)"
+              ],
+              "application": [
+                "Passport/ID and passport photo",
+                "Medical fitness certificate per Czech Ministry of Health requirements, apostilled/legalized where required",
+                "Proof of admission-fee payment",
+                "Student visa, for non-EU/non-Schengen applicants (arranged after admission)"
+              ]
+            },
+            "deadlinesNote": "2026/27 cycle: applications opened 15 November 2025. Entrance-exam sittings ran through 18 August 2026, with each sitting's deadline 14 days prior -- the final deadline (around 4 August 2026) had not yet passed at the time of research.",
+            "visaConsiderations": [
+              "Non-EU/non-Schengen applicants arrange their student visa after receiving the admission letter; confirm current requirements directly with the university."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 tuition is EUR 12,000/year, per Dean's Decision No. 183/2025, covering tuition only and excluding insurance, textbooks, accommodation and living expenses. A CZK 2,000 (about EUR 80) application fee applies separately, non-refundable if the entrance exam is missed. No tuition refund/withdrawal policy was published.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: theoretical foundation",
+              "language": "English",
+              "details": "Biochemistry, biology, physics, anatomy, histology and physiology."
+            },
+            {
+              "phase": "Year 3: preclinical and early clinical transition",
+              "language": "English",
+              "details": "Pathophysiology and pathology, transitioning into clinical courses in surgery and internal medicine."
+            },
+            {
+              "phase": "Years 4-6: clinical training and supervised practice",
+              "language": "English",
+              "details": "Department internships in Years 4-5 at Ostrava University Hospital, followed by supervised pre-graduation clinical practice in Year 6, including nine weeks of vacation-period practical training."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-ostrava",
+      "publicField": "identity",
+      "claimText": "Faculty of Medicine founded 2010; instruction started that year per the official WHO/FAIMER record.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002931",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002931",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-ostrava",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002931), currently operational; graduates (2010-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002931",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002931",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-ostrava",
+      "publicField": "recognition",
+      "claimText": "In April 2026, the Czech National Accreditation Bureau (NAU) granted the General Medicine study programme its maximum possible accreditation term of 10 years, up from a 5-year term granted in 2021.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava official press release",
+      "sourceUrl": "https://www.osu.cz/33022/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-ostrava",
+      "publicField": "recognition",
+      "claimText": "The Czech MUDr medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, with a reference date of 1 May 2004 (Czech EU accession).",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC Annex V (as amended by Decision (EU) 2021/2183)",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021D2183",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-ostrava",
+      "programmeSlug": "university-of-ostrava-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine is a 6-year, 360-ECTS, direct-entry programme awarding the MUDr degree, taught in English, requiring completed secondary education and no prior university degree.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official General Medicine programme page",
+      "sourceUrl": "https://lf.osu.eu/21563/masters-degree-programme-general-medicine-in-english/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-ostrava",
+      "programmeSlug": "university-of-ostrava-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission via a 90-minute, 90-question (Biology/Chemistry/Physics) computer-based entrance exam, no negative marking, minimum 30 points to pass, ranked against a 25-50 seat capacity; CEFR B2 English required.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official entrance-exam topics document (PDF)",
+      "sourceUrl": "https://dokumenty.osu.cz/lf/gm/topics-for-the-entrance-exam.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-ostrava",
+      "programmeSlug": "university-of-ostrava-general-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via online e-application with a CZK 2,000 admission fee; required documents include certified secondary diploma, nostrification, and a medical fitness certificate; visa arranged after admission for non-EU/Schengen applicants.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official Admission to Study page",
+      "sourceUrl": "https://lf.osu.eu/28759/admission-to-study/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-ostrava",
+      "programmeSlug": "university-of-ostrava-general-medicine",
+      "publicField": "intake",
+      "claimText": "2026/27 cycle: applications opened 15 November 2025, entrance-exam sittings ran through 18 August 2026, and the final application deadline (around 4 August 2026) had not yet passed as of the research date.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official Admission to Study page",
+      "sourceUrl": "https://lf.osu.eu/28759/admission-to-study/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-ostrava",
+      "programmeSlug": "university-of-ostrava-general-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition: EUR 12,000/year for General Medicine, per Dean's Decision No. 183/2025; separate CZK 2,000 non-refundable application fee.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — Dean's Decision No. 183/2025 (tuition fee schedule, PDF)",
+      "sourceUrl": "https://dokumenty.osu.cz/lf/opd/opatreni_dekana_183_2025-en.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-ostrava",
+      "programmeSlug": "university-of-ostrava-general-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training is anchored at Ostrava University Hospital and supplemented by Ostrava City Hospital and the SIMLEK simulation centre (opened 2022/23).",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official Academics page",
+      "sourceUrl": "https://lf.osu.eu/academics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-ostrava",
+      "publicField": "student living",
+      "claimText": "Jan Opletal Halls of Residence offer double/triple rooms at roughly CZK 3,400-4,500/month; international students apply via the ISKAM system with a June-July application window and a CZK 4,000 refundable deposit.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official Halls of Residence price list and international accommodation page",
+      "sourceUrl": "https://koleje.osu.eu/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-ostrava",
+      "publicField": "scholarship",
+      "claimText": "A merit scholarship of EUR 6,000/year is available to top-performing students from the second year onward (not first-year students), plus a CZK 50,000 mobility scholarship and IFMSA-linked internship-exchange opportunities.",
+      "status": "verified",
+      "sourceLabel": "University of Ostrava — official Academics page",
+      "sourceUrl": "https://lf.osu.eu/academics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

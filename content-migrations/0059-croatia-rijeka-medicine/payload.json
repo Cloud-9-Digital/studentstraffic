@@ -1,0 +1,324 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Rijeka Faculty of Medicine maps its six-year Medical Studies in English programme to this category: a full-time integrated degree of 360 ECTS leading to Doctor of Medicine.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including duration, fees, teaching language and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "croatia",
+      "slug": "university-of-rijeka-faculty-of-medicine",
+      "name": "University of Rijeka Faculty of Medicine",
+      "city": "Rijeka",
+      "type": "Public",
+      "establishedYear": 1955,
+      "officialWebsite": "https://medri.uniri.hr/en/",
+      "mediaAttribution": {},
+      "summary": "University of Rijeka Faculty of Medicine delivers a full-time, six-year Medical Studies in English programme in Rijeka. The integrated 360-ECTS route awards Doctor of Medicine and uses a 2026/27 admission call with a published entrance examination, annual tuition and winter-semester entry.",
+      "campusLifestyle": "The Faculty's English medicine programme is based at Braće Branchetta 20 in Rijeka. The current curriculum includes medical English courses, clinical-skills teaching, simulation of clinical skills and a final graduation examination and thesis, rather than a generic pre-medical foundation year.",
+      "cityProfile": "Rijeka is the programme location for the integrated medical degree. The official 2026/27 call requires the on-site hybrid entrance examination at the Faculty while also allowing simultaneous examination abroad; the academic year begins in October and admission is only to the winter semester.",
+      "practicalExposure": "The curriculum progresses from biomedical sciences to clinical subjects. Clinical Propedeutics appears in the third year, while later compulsory work includes surgery, anaesthesiology and intensive care, gynaecology and obstetrics, family medicine, clinical assessment, simulation of clinical skills and emergency medical conditions. The final programme requirements include a graduation examination and thesis.",
+      "hostelOverview": "No current Medical Studies in English housing offer or official price was verified in the admission and programme sources reviewed. Accommodation is not presented as included in the EUR 12,000 annual tuition figure.",
+      "dietarySupport": "No faculty-supported meal plan or food-cost schedule was verified for Medical Studies in English. Food and daily living remain separate budget items rather than stated programme benefits.",
+      "safetyOverview": "No current faculty-specific safety statistic was found in the reviewed sources. The programme record therefore does not make a general Rijeka safety claim.",
+      "studentSupport": "The Faculty's English medicine call identifies its Office of International Relations and Medical Studies in English for detailed programme and enrolment information. The application path also uses the national Central Admission Office for record verification and recognition of foreign secondary qualifications.",
+      "whyChoose": [
+        "Six-year, 360-ECTS public-university medical programme leading to Doctor of Medicine.",
+        "2026/27 tuition is published at EUR 12,000 annually, with a EUR 200 entrance-exam application fee.",
+        "The current call sets out a concrete Biology, Chemistry and Physics entrance-examination process.",
+        "Clinical skills, propedeutics, simulation, clinical subjects and a graduation thesis are documented in the curriculum."
+      ],
+      "thingsToConsider": [
+        "The 2026/27 autumn entrance exam is only held if places remain, and the documented deadline is 29 August 2026.",
+        "The first-year tuition must be paid in full at enrolment; the enrolment fee is only approximately stated at EUR 55.50.",
+        "Applicants must have studied Biology, Chemistry and Physics or related subjects for at least two years in secondary school.",
+        "Foreign secondary qualifications can require Central Admission Office recognition, with a published 1 July 2026 submission cut-off for the 2026 cycle.",
+        "No current accommodation or full living-cost schedule was verified in this packet."
+      ],
+      "bestFitFor": [
+        "Secondary-school graduates with at least two years of Biology, Chemistry and Physics or related study.",
+        "Applicants prepared for an entrance examination and the required two-track Faculty and national-admission process.",
+        "Students who can budget separately for accommodation and living costs beyond the stated tuition.",
+        "Applicants seeking a full-time public-university medicine programme taught through the Medical Studies in English route."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Croatian Ministry of Science, Education and Sport - programme delivered by the public Faculty of Medicine under Ministry licence",
+        "Regulated Professions and Recognition of Foreign Professional Qualifications Act of Croatia - curriculum framework cited by the Faculty for medical-doctor training"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "University of Rijeka Medical Studies in English programme",
+          "url": "https://medri.uniri.hr/en/education/study-programmes/integrated-undergraduate-and-graduate-university-study/medical-studies-in-english/"
+        },
+        {
+          "label": "University of Rijeka 2026/27 English medicine admission call",
+          "url": "https://medical-studies-in-english.com/admission/call-for-applications/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is Medical Studies in English at Rijeka?",
+          "answer": "It is a six-year full-time integrated university medicine programme carrying 360 ECTS and awarding Doctor of Medicine."
+        },
+        {
+          "question": "What is the 2026/27 tuition?",
+          "answer": "The official call lists EUR 12,000 per academic year, or EUR 200 per ECTS. It separately lists a EUR 200 entrance-exam application fee and an enrolment fee expected to be about EUR 55.50."
+        },
+        {
+          "question": "What school preparation is required?",
+          "answer": "Applicants need completed secondary school and final graduation examination, with Biology, Chemistry and Physics or related subjects studied for at least two years."
+        },
+        {
+          "question": "Is there an entrance examination?",
+          "answer": "Yes. The 2026/27 call lists Biology, Chemistry and Physics entrance-exam terms and an intensive preparatory course before each term."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Submit documents through the Faculty web application, then send originals by express post after verification. Applicants also register through Croatia's Postani student Central Admission Office process."
+        },
+        {
+          "question": "When is the intake?",
+          "answer": "The academic year starts in October and admission is only for the winter semester. The 2026 autumn exam is 4 September if places remain."
+        },
+        {
+          "question": "What does the clinical curriculum include?",
+          "answer": "Published later-year compulsory subjects include surgery, anaesthesiology and intensive care, family medicine, gynaecology and obstetrics, clinical assessment, simulation and emergency medical conditions."
+        },
+        {
+          "question": "Is housing included?",
+          "answer": "No Medical Studies in English housing offer or price was verified in the cited admission and programme material, so accommodation needs a separate budget."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "University of Rijeka Medical Studies in English programme",
+          "url": "https://medri.uniri.hr/en/education/study-programmes/integrated-undergraduate-and-graduate-university-study/medical-studies-in-english/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Programme identity, 360 ECTS, Ministry licence and curriculum."
+        },
+    {
+      "label": "University of Rijeka Medical Studies in English 2026/27 call",
+      "url": "https://medical-studies-in-english.com/admission/call-for-applications/",
+      "kind": "official-program",
+      "checkedAt": "2026-07-25",
+      "notes": "Fees, entrance examination, documents, recognition and intake."
+    },
+    {
+      "label": "University of Rijeka Faculty of Medicine",
+      "url": "https://medri.uniri.hr/en/",
+      "kind": "official-university",
+      "checkedAt": "2026-07-25",
+      "notes": "Faculty identity and institutional context."
+    },
+    {
+      "label": "University of Rijeka",
+      "url": "https://uniri.hr/en/",
+      "kind": "official-university",
+      "checkedAt": "2026-07-25",
+      "notes": "Public university institutional context."
+    }
+  ],
+      "admissionsContent": {
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Rijeka MD eligibility",
+            "capture": [
+              "school subjects",
+              "final-exam record",
+              "citizenship",
+              "target intake"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my Rijeka cost plan",
+            "capture": [
+              "EUR tuition budget",
+              "entrance-exam plan",
+              "housing budget",
+              "funding need"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Prepare my English medicine application",
+            "capture": [
+              "web-application readiness",
+              "original documents",
+              "foreign-qualification recognition",
+              "exam readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-rijeka-medical-studies-in-english",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medical Studies in English",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026/2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 12000,
+            "officialTotalTuitionAmount": null,
+            "verifiedAt": "2026-07-25",
+            "notes": "The official 2026/27 call lists EUR 12,000 annual tuition and EUR 200 entrance-exam application cost. It does not provide a complete six-year living-cost or accommodation total."
+          },
+          "officialProgramUrl": "https://medri.uniri.hr/en/education/study-programmes/integrated-undergraduate-and-graduate-university-study/medical-studies-in-english/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Applicants with completed secondary education and the required science preparation"
+            ],
+            "restrictions": [
+              "Applicants need at least two years of Biology, Chemistry and Physics or related secondary-school study and a final graduation exam.",
+              "Foreign secondary qualifications can require national recognition through the Central Admission Office."
+            ],
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://medical-studies-in-english.com/admission/call-for-applications/"
+          },
+          "admissionsContent": {
+            "overview": "The 2026/27 English medicine call uses a Faculty web application, original-document submission, an entrance examination and Croatia's Central Admission Office registration path.",
+            "eligibility": {
+              "intro": "Applicants need completed secondary school, final graduation examination and the required science-course preparation.",
+              "items": [
+                "At least two secondary-school years of Biology, Chemistry and Physics or related subjects",
+                "Completed secondary education and final graduation examination",
+                "Entrance examination in Biology, Chemistry and Physics",
+                "Foreign-school recognition through the Central Admission Office where required"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the required documents through the Faculty web application.",
+              "After verification, send original documents by express post to the Faculty.",
+              "Register through Postani student and select Medicine at the Faculty of Medicine in Rijeka.",
+              "Complete foreign-secondary-qualification recognition where applicable.",
+              "Sit the scheduled entrance examination and enrol if offered a place."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school records and final graduation certificate",
+                "Evidence of Biology, Chemistry and Physics or related subjects",
+                "Foreign-secondary-qualification recognition where applicable"
+              ],
+              "application": [
+                "Faculty web-application documents",
+                "Original verified documents sent by express post",
+                "Postani student registration record",
+                "EUR 200 entrance-exam application payment"
+              ]
+            },
+            "deadlinesNote": "For 2026/27, applications for the autumn exam were due 29 August 2026 and the exam is 4 September only if places remain. The academic year starts in October; the next annual call should supply future dates."
+          },
+          "medium": "English medicine route; the Faculty programme page records Croatian/English as languages of study.",
+          "instructionLanguages": ["english", "croatian"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "EUR 12,000 annual tuition and EUR 200 entrance-exam application cost are confirmed for 2026/27. Tuition is due in full at enrolment; no verified full living-cost, accommodation or six-year total is presented.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3",
+              "language": "English with Croatian listed in the programme language record",
+              "details": "Biomedical sciences lead into Clinical Propedeutics and developing clinical skills."
+            },
+            {
+              "phase": "Later clinical years",
+              "language": "English with Croatian listed in the programme language record",
+              "details": "Compulsory clinical subjects include surgery, anaesthesiology and intensive care, family medicine, obstetrics and gynaecology, simulation and emergency conditions, ending with graduation examination and thesis."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rijeka-faculty-of-medicine",
+      "programmeSlug": "university-of-rijeka-medical-studies-in-english",
+      "publicField": "academics",
+      "claimText": "Medical Studies in English is a full-time six-year, 360-ECTS integrated medicine programme awarding Doctor of Medicine at the public University of Rijeka Faculty of Medicine.",
+      "status": "verified",
+      "sourceLabel": "University of Rijeka Medical Studies in English programme",
+      "sourceUrl": "https://medri.uniri.hr/en/education/study-programmes/integrated-undergraduate-and-graduate-university-study/medical-studies-in-english/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rijeka-faculty-of-medicine",
+      "programmeSlug": "university-of-rijeka-medical-studies-in-english",
+      "publicField": "eligibility",
+      "claimText": "Applicants need completed secondary education, final graduation examination and at least two years of Biology, Chemistry and Physics or related secondary-school study.",
+      "status": "verified",
+      "sourceLabel": "University of Rijeka Medical Studies in English 2026/27 call",
+      "sourceUrl": "https://medical-studies-in-english.com/admission/call-for-applications/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rijeka-faculty-of-medicine",
+      "programmeSlug": "university-of-rijeka-medical-studies-in-english",
+      "publicField": "admissions",
+      "claimText": "The 2026/27 call uses a Faculty web application, original documents by express post, an entrance examination and Postani student registration.",
+      "status": "verified",
+      "sourceLabel": "University of Rijeka Medical Studies in English 2026/27 call",
+      "sourceUrl": "https://medical-studies-in-english.com/admission/call-for-applications/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rijeka-faculty-of-medicine",
+      "programmeSlug": "university-of-rijeka-medical-studies-in-english",
+      "publicField": "intake",
+      "claimText": "The 2026/27 academic year starts in October and admission is only to the winter semester; the autumn entrance examination occurs 4 September if places remain.",
+      "status": "verified",
+      "sourceLabel": "University of Rijeka Medical Studies in English 2026/27 call",
+      "sourceUrl": "https://medical-studies-in-english.com/admission/call-for-applications/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rijeka-faculty-of-medicine",
+      "programmeSlug": "university-of-rijeka-medical-studies-in-english",
+      "publicField": "fee",
+      "claimText": "The 2026/27 call lists EUR 12,000 annual tuition, EUR 200 entrance-exam application cost and enrolment fee approximately EUR 55.50.",
+      "status": "verified",
+      "sourceLabel": "University of Rijeka Medical Studies in English 2026/27 call",
+      "sourceUrl": "https://medical-studies-in-english.com/admission/call-for-applications/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    }
+  ]
+}

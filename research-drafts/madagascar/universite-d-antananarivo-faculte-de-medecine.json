@@ -1,0 +1,37 @@
+{
+  "scope": "Madagascar medical discovery — Université d'Antananarivo Faculté de Médecine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The university's current formations page identifies its Faculty of Medicine and describes training in health with a clinical, research, and public-service orientation.",
+      "sourceUrl": "https://univ-antananarivo.mg/formations",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The university's guidance page lists Docteur en Médecine Humaine among Faculty of Medicine programmes.",
+      "sourceUrl": "https://www.univ-antananarivo.mg/guide/index.php/occupation/view/49-3053.00",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "For the academic year stated on its admissions page, entry to PACES at the Faculty of Medicine is by dossier selection for holders of the C, D, or S baccalaureate series.",
+      "sourceUrl": "https://ares.univ-antananarivo.mg/Admission-Inscription-108",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The national higher-education ministry's 2021 authorized-institutions list records the Faculty of Medicine at Université d'Antananarivo and lists Médecine Humaine under health-science licence and state doctor of medicine provision.",
+      "sourceUrl": "https://www.mesupres.gov.mg/assets/front/documents/documents/etablissements_habilites/liste_des_institutions_superieures_mise_a_jour_aout_2021.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Faculty of Medicine tuition or mandatory-fee schedule was located on an official source.",
+    "The selected official admissions page does not establish an active application window or a complete current document checklist.",
+    "Clinical-placement and student-support arrangements need current, provider-specific confirmation before publication."
+  ],
+  "nextAction": "Obtain the current Faculty of Medicine prospectus or fee decision and current PACES calendar, then verify teaching language, clinical placements, and student support directly with the faculty."
+}

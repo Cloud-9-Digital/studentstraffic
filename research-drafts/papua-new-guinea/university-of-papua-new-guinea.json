@@ -1,0 +1,19 @@
+{
+  "countrySlug": "papua-new-guinea",
+  "universitySlug": "university-of-papua-new-guinea",
+  "schoolName": "University of Papua New Guinea",
+  "cityName": "Port Moresby",
+  "priority": "medium",
+  "officialWebsite": "https://www.upng.ac.pg/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UPNG officially offers a five-year MBBS through the School of Medicine and Health Sciences. The official 2026 fee schedule gives Medicine and Health Sciences annual fees of K12,970 for South Pacific students and K26,930 for other international students; it also identifies separate compulsory Taurama MBBS fees. The MBBS page gives a 3.5 GPA Science Foundation Year route and specified quota groups. The current evidence does not establish eligibility for all foreign applicants outside those groups, a complete 2026 MBBS application calendar/documents list, mandatory cost breakdown, clinical placement details, accommodation/support or recognition requirements by target market. It is held pending those facts; the 2025 standalone-medical-university proposal does not alter the current UPNG identity.",
+  "sourceBundle": { "sources": [
+    { "label": "UPNG MBBS official programme page", "url": "https://www.upng.ac.pg/smhs-programs-courses/smhs-undergraduate-programs/bachelor-of-medicine-bachelor-of-surgery-mbbs", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists MBBS entry requirements including GPA 3.5 from Science Foundation Year or a higher-GPA first science degree with service for non-school leavers, and quota groups." },
+    { "label": "UPNG 2026 fee structure", "url": "https://www.upng.ac.pg/images/documents/2026_FeeStructure_InternalExternal.pdf", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists 2026 Medicine and Health Sciences annual fees of K12,970 for South Pacific students and K26,930 for other international students, plus separate compulsory Taurama MBBS fees." },
+    { "label": "UPNG 2026 non-school-leaver notice", "url": "https://www.upng.ac.pg/images/announcements/NOTICE_FOR_NSL_APPLICATIONS_2026.pdf", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Identifies School of Medicine and Health Sciences contact and 2026 application-selection context, but is not a complete MBBS international route." },
+    { "label": "PNG government medical-university announcement", "url": "https://www.pmnec.gov.pg/pm-marape-opens-new-building-symbolising-establishment-of-upcoming-medical-university/", "kind": "government", "checkedAt": "2026-07-25", "notes": "States the School of Medicine and Health Sciences is intended to become a standalone university after 2025 legislation; it does not establish a replacement current catalogue identity." }
+  ] },
+  "structuredFacts": { "name": "University of Papua New Guinea", "type": "Public university", "programs": [ { "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)", "duration": "5 years", "feeStatus": "2026 medicine-and-health-sciences fee band published; total programme costs not fully resolved", "publishable": false } ], "missingForPublication": [ "complete current eligibility for foreign applicants", "current MBBS application deadline and document list", "mandatory cost and accommodation breakdown", "clinical placement/support evidence", "current programme accreditation and target-market recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted while the international route and total cost picture remain incomplete." }
+}

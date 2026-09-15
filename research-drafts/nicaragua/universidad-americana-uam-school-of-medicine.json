@@ -1,0 +1,65 @@
+{
+  "countrySlug": "nicaragua",
+  "universitySlug": "universidad-americana-uam-school-of-medicine",
+  "schoolName": "Universidad Americana UAM School of Medicine",
+  "cityName": "Managua",
+  "priority": "medium",
+  "officialWebsite": "https://www.uam.edu.ni/medicina/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UAM officially offers Medicina General. It documents practical community health work from year two, clinical hospital practice from year three, and a final medical internship after year five. Its admissions page explicitly addresses foreign students, requiring documents issued abroad to be authenticated by the issuing country's consulate; medicine applicants also need a 90-point academic average in the stated secondary-school periods. However, the reviewed sources do not state the programme language of instruction, an audience-relevant recognition or graduate-licensing path, accommodation terms, or a complete reliable cost of attendance. Fee figures conflict between UAM's medicine page (C$15,910 monthly) and its general admissions schedule (C$16,280 monthly for Medicina General), so no fee claim should be published until UAM confirms the current medicine schedule.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UAM — Medicina General",
+        "url": "https://www.uam.edu.ni/medicina/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms the medicine course, community-health practice from second year, hospital clinical practice from third year, simulation facilities, hospital agreements for internship and the final sixth-year modules. It lists an annual registration charge of C$11,100 and monthly charge of C$15,910, alongside other stated fees."
+      },
+      {
+        "label": "UAM — Admissions",
+        "url": "https://www.uam.edu.ni/admision/",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "States that foreign-issued documents must be authenticated by the issuing country's consulate, gives the 90-point medicine-entry academic threshold and lists annual registration of C$11,100 plus C$16,280 monthly for Medicina General. This conflicts with the medicine-page monthly figure, so the newer applicable price cannot be inferred."
+      },
+      {
+        "label": "UAM — 2025–2026 Medical Internship announcement",
+        "url": "https://www.uam.edu.ni/uam-inicia-el-ciclo-de-internado-medico-2025-2026-en-nicaragua-y-otros-paises/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "States that students complete medical internship after fifth year; describes placements in Nicaraguan hospital units and selected international placements through university agreements."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Universidad Americana UAM School of Medicine",
+    "city": "Managua",
+    "type": "Private",
+    "officialWebsite": "https://www.uam.edu.ni/medicina/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Explicit language-of-instruction statement for Medicina General",
+      "Official recognition and graduate-licensing evidence for the intended audience",
+      "Resolved current medicine fee schedule and full mandatory cost of attendance",
+      "Verified accommodation and student-support terms for international entrants"
+    ],
+    "notes": "UAM's foreign-document rule is a verified administrative condition, not a complete international admissions pathway. The two official pages currently provide inconsistent monthly amounts, so a single fee or total programme cost would be misleading."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "No narrative page is drafted because the official evidence is incomplete for a medical-study-abroad decision and contains an unresolved fee conflict. The research record preserves verified curriculum and foreign-document evidence without converting it into unsupported marketing claims."
+  }
+}

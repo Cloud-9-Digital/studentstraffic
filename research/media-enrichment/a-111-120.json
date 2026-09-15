@@ -1,0 +1,237 @@
+[
+  {
+    "universitySlug": "far-eastern-federal-university",
+    "universityName": "Far Eastern Federal University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass missed the raw SVG logo path served directly in dvfu.ru's HTML (not JS-rendered); found by fetching the source HTML directly rather than relying on a rendered view. Cover sourced from a recent (2024) CC-BY-SA Commons photo not previously checked..",
+    "proposedPublicIds": {
+      "logo": "universities/far-eastern-federal-university/logo",
+      "cover": "universities/far-eastern-federal-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.dvfu.ru/html/svg/logos/logo_base_ru.svg",
+      "sourceType": "official",
+      "rightsBasis": "official FEFU site header logo asset (dvfu.ru), verified HTTP 200",
+      "proposedPublicId": "far-eastern-federal-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Far_Eastern_Federal_University_%28October_2024%29-0_8.jpg/1280px-Far_Eastern_Federal_University_%28October_2024%29-0_8.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, October 2024 own-work campus photo",
+      "proposedPublicId": "far-eastern-federal-university-cover"
+    }
+  },
+  {
+    "universitySlug": "far-eastern-state-medical-university",
+    "universityName": "Far Eastern State Medical University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Logo found via og:image meta tag on the official fesmu.ru homepage (technique not used in first pass). No dedicated Wikipedia article exists for FESMU (only listed in aggregate lists), so no Commons campus photo was available; homepage image carousel only exposed news thumbnails with no clear campus/building identification, so cover remains unresolved -- still hold on cover only.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/far-eastern-state-medical-university/logo",
+      "cover": "universities/far-eastern-state-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.fesmu.ru/simai.data/image/meta/logotip.png",
+      "sourceType": "official",
+      "rightsBasis": "official fesmu.ru og:image logo asset, verified HTTP 200",
+      "proposedPublicId": "far-eastern-state-medical-university-logo"
+    }
+  },
+  {
+    "universitySlug": "fergana-medical-institute-of-public-health",
+    "universityName": "Fergana Medical Institute of Public Health",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Identified the current official domain (fergmi.uz) which the first pass apparently did not isolate, and pulled the direct logo file referenced in the page header. No og:image or hero/campus banner was present on the homepage or reachable via background-image/data-src patterns, so cover remains unresolved.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/fergana-medical-institute-of-public-health/logo",
+      "cover": "universities/fergana-medical-institute-of-public-health/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://fergmi.uz/wp-content/uploads/2025/04/fregana_logo-removebg-preview.png",
+      "sourceType": "official",
+      "rightsBasis": "official fergmi.uz site logo asset, verified HTTP 200",
+      "proposedPublicId": "fergana-medical-institute-of-public-health-logo"
+    }
+  },
+  {
+    "universitySlug": "fergana-state-university",
+    "universityName": "Fergana State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Located the official domain (fdu.uz) and its og:image; downloaded and visually inspected the file to confirm it is a genuine aerial campus photo (not a generic branding card) before proposing it as cover..",
+    "proposedPublicIds": {
+      "logo": "universities/fergana-state-university/logo",
+      "cover": "universities/fergana-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://admin.fdu.uz/files/images/file-1777639111788-525944373.png",
+      "sourceType": "official",
+      "rightsBasis": "official fdu.uz CMS-hosted logo asset, verified HTTP 200",
+      "proposedPublicId": "fergana-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://fdu.uz/image.png",
+      "sourceType": "official",
+      "rightsBasis": "official fdu.uz og:image, verified HTTP 200 and visually confirmed as an aerial campus courtyard photo",
+      "proposedPublicId": "fergana-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "first-tashkent-state-medical-institute",
+    "universityName": "First Tashkent State Medical Institute",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Confirmed via Wikipedia (Tashkent Medical Academy article): First Tashkent State Medical Institute was formally abolished and merged by presidential decree in 2005 into Tashkent Medical Academy (official site tma.uz). No independent First Tashkent State Medical Institute entity or domain exists today. Assigning TMA's current logo/campus media to a record that specifically represents the pre-2005 historical institute would be a parent-brand inheritance decision that needs an editorial call on whether this record should be merged into/represented by Tashkent Medical Academy. No media sourced pending that decision.",
+    "proposedPublicIds": {
+      "logo": "universities/first-tashkent-state-medical-institute/logo",
+      "cover": "universities/first-tashkent-state-medical-institute/cover"
+    },
+    "dataIssue": true
+  },
+  {
+    "universitySlug": "flinders-university",
+    "universityName": "Flinders University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The /brand page only linked a logo download tool gated behind FAN login, but the footer of the public homepage itself embeds a direct main logo PNG that resolves without auth. Cover sourced from a brand-new (2026) CC-BY-SA Commons upload not available to the first pass..",
+    "proposedPublicIds": {
+      "logo": "universities/flinders-university/logo",
+      "cover": "universities/flinders-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png",
+      "sourceType": "official",
+      "rightsBasis": "official flinders.edu.au footer logo asset, verified HTTP 200",
+      "proposedPublicId": "flinders-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flinders_City_Campus_in_Adelaide%2C_May_2026_%28DSCF7190%29.jpg/1280px-Flinders_City_Campus_in_Adelaide%2C_May_2026_%28DSCF7190%29.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, May 2026 own-work photo of Flinders City Campus",
+      "proposedPublicId": "flinders-university-cover"
+    }
+  },
+  {
+    "universitySlug": "fudan-university",
+    "universityName": "Fudan University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Direct fetch of fudan.edu.cn's own logo file was blocked (403, anti-hotlink), but the Commons SVG is explicitly tagged Public Domain (not fair-use/non-free) and its description page credits Fudan's own logo.zip as source -- satisfies the free-license check the first pass likely skipped for non-free-looking university crests..",
+    "proposedPublicIds": {
+      "logo": "universities/fudan-university/logo",
+      "cover": "universities/fudan-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Fudan_University_Logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, tagged Public Domain (PD China / PD US expired); credit/source line on the file page points to Fudan's own http://www.fudan.edu.cn/files/logo.zip",
+      "proposedPublicId": "fudan-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fudan-xianghuitang.jpg/1280px-Fudan-xianghuitang.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, tagged Public Domain (self-published), photo of the Xianghui Auditorium, Fudan University",
+      "proposedPublicId": "fudan-university-cover"
+    }
+  },
+  {
+    "universitySlug": "george-washington-university",
+    "universityName": "George Washington University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Located GWU's dedicated brand-guidelines/logos subsite (communications.gwu.edu/brand-guidelines/logos), which exposes a direct primary-logo PNG not indexed on the main homepage..",
+    "proposedPublicIds": {
+      "logo": "universities/george-washington-university/logo",
+      "cover": "universities/george-washington-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://communications.gwu.edu/sites/g/files/zaxdzs7196/files/2026-03/ocm_primary.png",
+      "sourceType": "official",
+      "rightsBasis": "GWU Office of Communications & Marketing brand-guidelines page (communications.gwu.edu), primary logo asset, verified HTTP 200",
+      "proposedPublicId": "george-washington-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/George_Washington_University_%2853844978470%29.jpg/1280px-George_Washington_University_%2853844978470%29.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY 2.0 (Flickr-sourced campus photo)",
+      "proposedPublicId": "george-washington-university-cover"
+    }
+  },
+  {
+    "universitySlug": "georgetown-university",
+    "universityName": "Georgetown University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Checked the Commons wordmark file specifically for a PD-textlogo tag (distinct from the non-free Georgetown seal variants also on the page) before proposing it -- confirms it is a free-licensed simple text logo, not a fair-use crest..",
+    "proposedPublicIds": {
+      "logo": "universities/georgetown-university/logo",
+      "cover": "universities/georgetown-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Georgetown_University_Logotype.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, tagged PD-textlogo / Public domain",
+      "proposedPublicId": "georgetown-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Georgetown_University_Panorama_04_2012_1394.jpg/1280px-Georgetown_University_Panorama_04_2012_1394.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, campus panorama photo",
+      "proposedPublicId": "georgetown-university-cover"
+    }
+  },
+  {
+    "universitySlug": "georgia-institute-of-technology",
+    "universityName": "Georgia Institute of Technology",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Same PD-textlogo verification technique as Georgetown; the 2021 wordmark logo (distinct from the non-free 'Georgia Tech seal' variants) is confirmed public domain. Cover uses the iconic Tech Tower building, CC BY-SA..",
+    "proposedPublicIds": {
+      "logo": "universities/georgia-institute-of-technology/logo",
+      "cover": "universities/georgia-institute-of-technology/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Georgia_Tech_logo_2021.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, tagged PD-textlogo / Public domain",
+      "proposedPublicId": "georgia-institute-of-technology-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Tech_Tower-6.jpg/1280px-Tech_Tower-6.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, self-published photo of Tech Tower",
+      "proposedPublicId": "georgia-institute-of-technology-cover"
+    }
+  }
+]

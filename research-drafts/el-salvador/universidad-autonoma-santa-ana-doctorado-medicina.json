@@ -1,0 +1,18 @@
+{
+  "scope": "El Salvador medical discovery — Universidad Autónoma de Santa Ana Doctorado en Medicina",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UNASA's official medicine page identifies a Doctorado en Medicina offered through its Faculty of Health Sciences.",
+      "sourceUrl": "https://www.unasa.edu.sv/medicina.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The official programme page could not be reliably retrieved for detailed verification and no current official fee or admission document was located.",
+    "Duration, teaching language, curriculum, entry and international eligibility, clinical sites, internship/service-social terms, recognition, accommodation, funding and student support are unverified."
+  ],
+  "nextAction": "Obtain current official UNASA admissions, fee, curriculum and clinical-training documents before considering a payload."
+}

@@ -1,0 +1,18 @@
+{
+  "countrySlug": "republic-of-the-congo",
+  "universitySlug": "universite-marien-ngouabi",
+  "schoolName": "Université Marien Ngouabi",
+  "cityName": "Brazzaville",
+  "priority": "medium",
+  "officialWebsite": "https://enseignement-superieur.gouv.cg/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — the Republic of the Congo higher-education ministry lists UMNG as a university; current institutional reporting identifies its Faculty of Health Sciences. No current official programme page was found that establishes a medical award, duration, language, tuition, foreign-student eligibility, deadline, clinical placements, housing/support, or programme recognition. The record is not ready for a commercial medical page.",
+  "sourceBundle": { "sources": [
+    { "label": "Republic of the Congo higher-education ministry", "url": "https://enseignement-superieur.gouv.cg/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Lists Université Marien Ngouabi among the country's universities." },
+    { "label": "Congo higher-education landscape profile", "url": "https://curiexplore.enseignementsup-recherche.gouv.fr/pays/COG/enseignement-sup", "kind": "institutional-profile", "checkedAt": "2026-07-25", "notes": "Identifies UMNG as the principal public university and lists its Faculty of Health Sciences." },
+    { "label": "Congo government planning document", "url": "https://www.rppr.cg/sites/default/files/2024-05/ppap_final.pdf", "kind": "government", "checkedAt": "2026-07-25", "notes": "Provides country-level context only; not a programme/admissions source." }
+  ] },
+  "structuredFacts": { "name": "Université Marien Ngouabi", "type": "Public university", "programs": [], "missingForPublication": [ "current medical programme title, award, duration and instruction language", "current fees and mandatory costs", "international eligibility, documents, intake and deadline", "clinical training and accommodation/support", "current programme accreditation/recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because the available evidence is institution-level rather than programme-level." }
+}

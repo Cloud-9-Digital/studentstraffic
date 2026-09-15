@@ -1,0 +1,43 @@
+{
+  "scope": "Greece medical discovery — National and Kapodistrian University of Athens School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "National and Kapodistrian University of Athens School of Medicine",
+    "countrySlug": "greece",
+    "programme": "Medical Degree English Program",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "NKUA publishes 2026/27 tuition of EUR 17,000 for EU and non-EU Medical Degree English Program students, with a EUR 5,000 place-securement deposit and the balance paid in two instalments.",
+      "sourceUrl": "https://medicen.uoa.gr/tuition-fees/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The current application process requires identity documents, secondary-school diploma and final-two-year transcripts, plus one accepted academic route such as IB, A-levels, UCAT, MCAT, AP/SAT, a cognate BSc or pre-med programme.",
+      "sourceUrl": "https://medicen.uoa.gr/application-process/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "NKUA's current programme requirements give English thresholds including TOEFL 80/120 or IELTS 7.5 overall with at least 6.5 in each component.",
+      "sourceUrl": "https://medicen.uoa.gr/admission-requirements/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The programme's official site confirms it is an international Medical Degree English Program of the NKUA School of Medicine and reports a completed 2026 academic year.",
+      "sourceUrl": "https://medicen.uoa.gr/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "This batch did not establish independent, programme-specific current accreditation evidence required for the recognition badges; the programme's own statements about recognition are not sufficient by themselves.",
+    "No complete current source bundle was obtained for curriculum phases, named clinical partners/training arrangements, accommodation and practical student costs.",
+    "The admission requirements refer to current application materials, but a specific 2026/27 application deadline was not confirmed in the reviewed first-party sources."
+  ],
+  "nextAction": "Obtain Hellenic quality/accreditation evidence for the English medical degree, a 2026/27 admissions calendar, and faculty documentation of clinical training and accommodation before packaging."
+}

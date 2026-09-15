@@ -1,0 +1,407 @@
+{
+  "batchId": "second-pass-patch-08",
+  "entries": [
+    {
+      "universitySlug": "naryn-state-university",
+      "sourceFile": "a-241-250.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20211218023855im_/http://naryn.edu.kg/wp-content/uploads/2018/03/Logopng.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university logo captured via Wayback Machine snapshot (2021-12-18) of naryn.edu.kg; current live site is DNS-unreachable",
+        "proposedPublicId": "naryn-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20211218023855im_/http://naryn.edu.kg/wp-content/uploads/2018/03/banner.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official homepage banner image captured via Wayback Machine snapshot (2021-12-18) of naryn.edu.kg",
+        "proposedPublicId": "naryn-state-university-cover"
+      },
+      "note": "naryn.edu.kg fails DNS resolution directly. Used Wayback Machine snapshot of the official site (technique not used in first pass) and verified both the logo and homepage banner image resolve HTTP 200 through the archived asset proxy."
+    },
+    {
+      "universitySlug": "national-university-of-singapore",
+      "sourceFile": "a-241-250.json",
+      "outcome": "still-hold",
+      "updatedReason": "Checked Wikipedia infobox/Commons: the NUS coat-of-arms and wordmark files are hosted under English Wikipedia's local non-free namespace (upload.wikimedia.org/wikipedia/en/...), not Wikimedia Commons, and are explicitly tagged as trademarked/non-free (fair use). No Commons-licensed free alternative exists, so per instructions this cannot be used. The documented brand restriction (written NUS permission required) still stands."
+    },
+    {
+      "universitySlug": "navoi-state-university",
+      "sourceFile": "a-241-250.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Institution identity is currently unresolved: on 2024-10-31 'Navoi State University' was formed by merging Navoi State Pedagogical Institute into a new university structure. The former institute's domain (nspi.uz) is unreachable (connection refused) and no distinct official domain or media for the newly merged 'Navoi State University' entity could be verified this pass. This is an unresolved renamed/merged-institution case (per the standing guardrail), not a simple missing-media gap, so no media is sourced."
+    },
+    {
+      "universitySlug": "new-vision-university",
+      "sourceFile": "a-241-250.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://newvision.ge/_ipx/_/images/university-logo-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site header/footer logo asset, newvision.ge",
+        "proposedPublicId": "new-vision-university-logo"
+      },
+      "note": "Logo confirmed live on the official site (newvision.ge), which the first pass had verified but not isolated a direct asset URL for. No dedicated press/media page exists; homepage images are all news/article thumbnails with no distinct campus building photo, so cover remains on hold."
+    },
+    {
+      "universitySlug": "north-caucasian-state-academy",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://ncsa.ru/include/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site header logo asset, ncsa.ru",
+        "proposedPublicId": "north-caucasian-state-academy-logo"
+      },
+      "note": "Confirmed the same direct logo the first pass found (ncsa.ru/include/images/logo.png resolves 200). Checked about/history pages and homepage for a distinct campus photo; only news thumbnails and partner logos are present, no clearly identifiable institutional cover image, so cover stays on hold as before."
+    },
+    {
+      "universitySlug": "north-ossetian-state-medical-academy",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://sogma.ru/images/logo_149_100.png",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site header logo asset, sogma.ru",
+        "proposedPublicId": "north-ossetian-state-medical-academy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://sogma.ru/images/welcome1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site welcome/homepage image, sogma.ru",
+        "proposedPublicId": "north-ossetian-state-medical-academy-cover"
+      },
+      "note": "First pass could not establish an inspectable official domain. Found the actual official domain uses the Russian acronym SOGMA (sogma.ru) rather than an English transliteration; both logo and a homepage welcome image are confirmed live there."
+    },
+    {
+      "universitySlug": "north-eastern-federal-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "still-hold",
+      "updatedReason": "Official domain s-vfu.ru fails DNS resolution entirely from this environment (NXDOMAIN/server failure, not just a block). The most recent Wayback Machine snapshot (2026-04-17) is itself a reCAPTCHA challenge page — the crawler was blocked at capture time — so no current homepage content is archived. Earlier snapshots (2011-2013) predate the university's current branding and are too old to trust as current official assets. No verified current logo/cover recovered this pass."
+    },
+    {
+      "universitySlug": "northern-state-medical-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.nsmu.ru/images/header/header_logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site header logo asset, nsmu.ru",
+        "proposedPublicId": "northern-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.nsmu.ru/en/assets/nsmu_banner.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university English-site banner image, nsmu.ru",
+        "proposedPublicId": "northern-state-medical-university-cover"
+      },
+      "note": "First pass found only the header logo path; direct inspection of the English-site assets folder turned up a dedicated banner image (nsmu_banner.png) not previously isolated. Both confirmed live."
+    },
+    {
+      "universitySlug": "northwestern-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Northwestern_University_wordmark.svg/1280px-Northwestern_University_wordmark.svg.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file Northwestern_University_wordmark.svg, tagged Public Domain (simple wordmark, ineligible for copyright / PD-textlogo); a separate trademark notice applies but does not restrict reuse of the image file itself",
+        "proposedPublicId": "northwestern-university-logo"
+      },
+      "note": "Official brand.northwestern.edu pages don't expose a directly downloadable logo file (gated behind interactive brand-tool UI). Found a Public Domain-tagged wordmark on Wikimedia Commons instead. The raw SVG endpoint was rate-limited by Wikimedia on repeated requests, so used the rendered PNG thumbnail of the same Commons file (also hosted on upload.wikimedia.org), confirmed HTTP 200."
+    },
+    {
+      "universitySlug": "norwegian-school-economics",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Norwegian_School_of_Economics_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file Norwegian_School_of_Economics_logo.svg, tagged Public Domain (simple logo, ineligible for copyright); separate trademark notice does not restrict file reuse",
+        "proposedPublicId": "norwegian-school-economics-logo"
+      },
+      "note": "NHH's own site (nhh.no) responded fine this pass but exposes only partner/accreditation badge logos, not its own mark, as standalone files. Used the Public Domain-tagged logo on Wikimedia Commons instead. For cover, the only campus-adjacent photo found was a matriculation-ceremony crowd shot (people-focused, not a campus/building image), so cover remains on hold."
+    },
+    {
+      "universitySlug": "novgorod-state-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://novsu.ru/local/templates/abitur/images/logo-blue.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site template logo asset, novsu.ru",
+        "proposedPublicId": "novgorod-state-university-logo"
+      },
+      "note": "Official domain confirmed reachable and logo isolated. Homepage images are all mobile-cropped resize-cache thumbnails from the news slider with no clearly identifiable standalone campus photo, so cover remains on hold."
+    },
+    {
+      "universitySlug": "novosibirsk-state-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260418064040im_/https://english.nsu.ru/local/templates/nsu/images/Logo_en_red.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university English-site logo, captured via Wayback Machine snapshot (2026-04-18) of english.nsu.ru",
+        "proposedPublicId": "novosibirsk-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260418064040im_/https://english.nsu.ru/upload/resize_cache/iblock/a3c/eototb9orcrm9wlih6y179vnl6n56kke/800_411_2/n-korpus_en.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official university campus building photo, captured via Wayback Machine snapshot (2026-04-18) of english.nsu.ru",
+        "proposedPublicId": "novosibirsk-state-university-cover"
+      },
+      "note": "nsu.ru returns HTTP 403 directly (blocked). english.nsu.ru has a very recent Wayback snapshot taken before any bot-block; recovered and visually confirmed both the header logo and a campus building photo from it."
+    },
+    {
+      "universitySlug": "novosibirsk-state-university-zelman-medicine",
+      "sourceFile": "a-251-270.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed this catalogue record refers to NSU's Institute/Faculty of Medicine (Zelman Institute), a programme/unit inside Novosibirsk State University, not a separately accredited institution. It should inherit the parent university's brand (see the novosibirsk-state-university entry in this same batch, now upgraded with logo+cover) rather than have unit-specific media sourced separately. No media sourced pending a parent-brand inheritance decision."
+    },
+    {
+      "universitySlug": "omsk-state-medical-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://omsk-osma.ru/i/logo_max.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, omsk-osma.ru",
+        "proposedPublicId": "omsk-state-medical-university-logo"
+      },
+      "note": "Official English-name domain confirmed reachable and logo isolated. Homepage images are all news-article thumbnails; no clean standalone campus photo identified, so cover remains on hold."
+    },
+    {
+      "universitySlug": "orel-state-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://oreluniver.ru/assets/images/logo.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site og:image logo asset, oreluniver.ru",
+        "proposedPublicId": "orel-state-university-logo"
+      },
+      "note": "Confirmed oreluniver.ru (not the admissions-style .com site flagged in the first pass) is the official domain, and isolated its og:image logo. Domain has an SSL certificate issue requiring an insecure fetch to reach. Homepage slider images are all promotional banners (admissions/DPO ads); no clean campus photo identified, so cover remains on hold."
+    },
+    {
+      "universitySlug": "orenburg-state-medical-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://orgma.ru/images/big-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, orgma.ru",
+        "proposedPublicId": "orenburg-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, licensed CC-BY-SA-4.0, captioned as the OSMA main building",
+        "proposedPublicId": "orenburg-state-medical-university-cover"
+      },
+      "note": "Logo confirmed on official orgma.ru. Distinct campus-building cover sourced from Wikimedia Commons under CC-BY-SA-4.0 and visually verified as OSMA's main building (matches Russian building signage 'ГОСУДАРСТВЕННАЯ МЕДИЦИНСКАЯ АКАДЕМИЯ')."
+    },
+    {
+      "universitySlug": "osaka-university",
+      "sourceFile": "a-251-270.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.osaka-u.ac.jp/assets/images/header/logo_for_folder.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site header logo asset, osaka-u.ac.jp (English name now 'The University of Osaka')",
+        "proposedPublicId": "osaka-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.osaka-u.ac.jp/ja/assets/files/og-image/OGP-image-EN.png/@@images/image",
+        "sourceType": "official",
+        "rightsBasis": "Official university OGP share-card image, osaka-u.ac.jp",
+        "proposedPublicId": "osaka-university-cover"
+      },
+      "note": "Institution's official English name is now 'The University of Osaka' post-rename; site still resolves at osaka-u.ac.jp and both assets are confirmed live. Flagging that the cover is the university's official branded OGP card (navy background with emblem + wordmark) rather than a campus photograph — visually verified but logo-like in composition, so the integrator may prefer to source a campus photo separately."
+    },
+    {
+      "universitySlug": "osh-state-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://oshsu.kg/main/images/logo/logo-en.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, oshsu.kg",
+        "proposedPublicId": "osh-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://oshsu.kg/main/images/fon/g1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site og:image, oshsu.kg",
+        "proposedPublicId": "osh-state-university-cover"
+      },
+      "note": "Both assets confirmed live and visually verified: the cover is a clear main-building photo with 'ОШ МАМЛЕКЕТТИК УНИВЕРСИТЕТИ' (Osh State University, in Kyrgyz) inscribed on the facade, positively confirming institution identity."
+    },
+    {
+      "universitySlug": "pohang-university-science-technology",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.postech.ac.kr/_res/postech/eng/img/sub/postech_default_logo02.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university dedicated brand/logo page asset, postech.ac.kr",
+        "proposedPublicId": "pohang-university-science-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.postech.ac.kr/_res/postech/eng/img/main/clock%20tower.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage campus photo, postech.ac.kr",
+        "proposedPublicId": "pohang-university-science-technology-cover"
+      },
+      "note": "Found via a dedicated official brand/logo page (postech.ac.kr/eng/about/logo.do) offering a clean logo pack — a press/media-kit-style page not checked in the first pass. Cover is POSTECH's iconic campus clock tower, visually verified."
+    },
+    {
+      "universitySlug": "pacific-state-medical-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://tgmu.ru/wp-content/uploads/img/logo-color.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, tgmu.ru",
+        "proposedPublicId": "pacific-state-medical-university-logo"
+      },
+      "note": "Confirmed institution identity via page title 'PSMU — Тихоокеанский государственный медицинский университет' (Pacific State Medical University) at tgmu.ru, a domain not checked in the first pass. No distinct campus cover photo found on the homepage (only banner ads/partner logos), so cover remains on hold."
+    },
+    {
+      "universitySlug": "palacky-university-olomouc",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.upol.cz/fileadmin/up/fav/apple-touch-icon.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site touch-icon rendition of the crest, upol.cz",
+        "proposedPublicId": "palacky-university-olomouc-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.upol.cz/fileadmin/up/og/up_ilustracka_1200x630px_up1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university OGP share-card image, upol.cz",
+        "proposedPublicId": "palacky-university-olomouc-cover"
+      },
+      "note": "The site's header logo is rendered inline/via CSS rather than as a plain image file, so used the standalone apple-touch-icon rendition of the same crest (technique for inline/CSS-only logos) — visually confirmed as the university's official shield mark. Cover is the official branded OGP card (crest + wordmark on blue), visually verified."
+    },
+    {
+      "universitySlug": "pavlov-first-saint-petersburg-state-medical-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.1spbgmu.ru/templates/1_med/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site template logo asset, 1spbgmu.ru",
+        "proposedPublicId": "pavlov-first-saint-petersburg-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.1spbgmu.ru/images/gallery/main/clinic.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage gallery photo (clinic building), 1spbgmu.ru",
+        "proposedPublicId": "pavlov-first-saint-petersburg-state-medical-university-cover"
+      },
+      "note": "Both assets confirmed live on the official domain; cover visually verified as a clinic/institutional building photo from the site's own homepage gallery."
+    },
+    {
+      "universitySlug": "peking-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Peking_University_seal.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file Peking_University_seal.svg, tagged CC0/Public Domain (the historic Lu Xun-designed seal is treated as ineligible for copyright); separate trademark notice does not restrict file reuse",
+        "proposedPublicId": "peking-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/10_Peking_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, licensed CC-BY-SA-2.0 (Flickr image reviewed by a trusted Commons user)",
+        "proposedPublicId": "peking-university-cover"
+      },
+      "note": "english.pku.edu.cn's own homepage doesn't expose a standalone logo/cover file. Used Wikimedia Commons instead: the seal is CC0/Public Domain, and the campus cover (Weiming Lake area building) is CC-BY-SA-2.0 — both visually verified."
+    },
+    {
+      "universitySlug": "pennsylvania-state-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://brand.psu.edu/images/shared-images/psu-mark-280.png",
+        "sourceType": "official",
+        "rightsBasis": "Official Penn State brand resource site asset, brand.psu.edu",
+        "proposedPublicId": "pennsylvania-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://brand.psu.edu/images/wide-images/Shrine-brand.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Penn State brand resource site campus image, brand.psu.edu",
+        "proposedPublicId": "pennsylvania-state-university-cover"
+      },
+      "note": "Found via the official brand.psu.edu master-downloads page (dedicated brand/press resource page technique), not checked in the first pass. Both assets confirmed live."
+    },
+    {
+      "universitySlug": "penza-state-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "still-hold",
+      "updatedReason": "Official domain pnzgu.ru returned HTTP 502 / connection timeouts across repeated attempts this pass (server-side error, not a firewall block). A Wayback Machine availability lookup was itself rate-limited (429) before a usable snapshot could be retrieved. No verified current logo/cover recovered; recommend retrying later once the origin server or archive.org access is stable."
+    },
+    {
+      "universitySlug": "peoples-friendship-university-russia",
+      "sourceFile": "a-271-290.json",
+      "outcome": "still-hold",
+      "updatedReason": "Official domain rudn.ru times out on direct connection. Used Wayback Machine (a recent May-2026 snapshot returned 200), but the logo path referenced in that snapshot's markup (img/ie_instead_svg/logo.jpg) 404'd when fetched. Wikimedia Commons has a RUDN category with campus and history photos, but the clearest building photo found is tagged only with an ambiguous 'Public Domain Mark' rather than an explicit CC license, which is not a confirmed free-license basis per the required standard. No confidently verified official or licensed asset recovered this pass."
+    },
+    {
+      "universitySlug": "perm-state-medical-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://psmu.ru/local/templates/main2/images/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site template logo asset, psmu.ru",
+        "proposedPublicId": "perm-state-medical-university-logo"
+      },
+      "note": "The first pass's domain (psma.ru) is unreachable via TLS (expired certificate) but issues an HTTP meta-refresh redirect to the real current domain psmu.ru, which was not checked before. Logo confirmed there. The site's only og:image is an official branded card duplicating the logo on a red background (visually confirmed, not a distinct campus photo), so cover remains on hold rather than upgrading with a near-duplicate of the logo."
+    },
+    {
+      "universitySlug": "tbilisi-medical-academy",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://tma.edu.ge/home/assets/img/header_logo_ge.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site header logo asset, tma.edu.ge",
+        "proposedPublicId": "tbilisi-medical-academy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tma.edu.ge/home/assets/img/og.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site OGP share-card image, tma.edu.ge",
+        "proposedPublicId": "tbilisi-medical-academy-cover"
+      },
+      "note": "Petre Shotadze Tbilisi Medical Academy's official domain (tma.edu.ge) was not previously identified. Both header logo and OGP share image confirmed live and visually verified (crest + 'Since 1992' emblem). Cover is a branded card rather than a campus photograph."
+    },
+    {
+      "universitySlug": "petrozavodsk-state-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://petrsu.ru/img/logo_180.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, petrsu.ru",
+        "proposedPublicId": "petrozavodsk-state-university-logo"
+      },
+      "note": "Official domain confirmed reachable and logo isolated. Homepage banner/media images are conference advertisements and a photo of a person speaking at a podium (visually checked); no clean campus building photo identified, so cover remains on hold."
+    },
+    {
+      "universitySlug": "pirogov-russian-national-research-medical-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://rsmu.ru/typo3conf/ext/site_packagernimu/Resources/Public/Images/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university TYPO3 theme resource-package logo asset, rsmu.ru",
+        "proposedPublicId": "pirogov-russian-national-research-medical-university-logo"
+      },
+      "note": "The site's header logo is rendered inline/via CSS rather than as a plain <img> with 'logo' in its path (only partner logos appear as normal images). Located the standalone SVG asset directly inside the TYPO3 site package folder (site_packagernimu), confirming this is rsmu.ru (RNIMU/Pirogov University). No distinct campus cover photo identified among homepage assets (only topline/conference banner images), so cover remains on hold."
+    }
+  ]
+}

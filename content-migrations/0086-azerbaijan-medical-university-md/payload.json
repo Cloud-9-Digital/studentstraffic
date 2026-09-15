@@ -1,0 +1,379 @@
+{
+  "countries": [
+    {
+      "slug": "azerbaijan",
+      "name": "Azerbaijan",
+      "region": "Europe",
+      "summary": "Azerbaijan is a Caucasus nation home to Azerbaijan Medical University, the country's flagship and oldest medical school, offering a direct-entry, WHO-listed General Medicine programme with a genuine English-medium track in Baku.",
+      "whyStudentsChooseIt": "Azerbaijan offers an internationally recognized, WHO-listed medical degree with a genuine English-medium track, IAAR/WFME programme accreditation, and tuition well below most Western European destinations, at the country's oldest and largest medical university.",
+      "climate": "Predominantly dry subtropical climate in Baku, with hot summers and mild, relatively wet winters influenced by the Caspian Sea.",
+      "currencyCode": "AZN",
+      "metaTitle": "Study MBBS and Medicine in Azerbaijan",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Azerbaijan, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Azerbaijan Medical University maps its General Medicine programme to this category: a direct-entry, single-cycle six-year programme leading to the Physician qualification, with a genuine English-medium track.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "azerbaijan",
+      "slug": "azerbaijan-medical-university",
+      "name": "Azerbaijan Medical University",
+      "city": "Baku",
+      "type": "Public",
+      "establishedYear": 1930,
+      "officialWebsite": "https://amu.edu.az/",
+      "mediaAttribution": {},
+      "summary": "Azerbaijan Medical University (AMU), founded in 1930, is the country's oldest and largest medical university, running a direct-entry, six-year General Medicine programme with a genuine English-medium track in Baku. AMU is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and its General Medicine, Dentistry and Pharmacy programmes are separately accredited by the Kazakhstan-based IAAR, a WFME-recognized agency, through January 2027.",
+      "campusLifestyle": "International students on the English-medium track train at AMU's central Baku campus, supported by the university's dedicated Dean's Office for Foreign Students, with on-campus dormitories housing up to 1,700 students across six residence buildings.",
+      "cityProfile": "Baku is Azerbaijan's capital and largest city, a major Caucasus hub on the Caspian Sea, home to AMU's main campus, four university-operated clinics, and a growing international-student community. The city offers an international airport with connections across Europe, the Middle East and Central Asia, making it a practical base for students traveling from South Asia.",
+      "practicalExposure": "The six-year General Medicine programme leads to the Physician qualification, with instruction available in Azerbaijani, Russian or English. International applicants typically complete a preparatory/foundation course (roughly 5-6 months, sources vary) in their chosen language of instruction plus Biology, Chemistry and Physics before formally entering Year 1. Clinical exposure is supported by AMU's own network of four teaching clinics, including Oncologic, Educational-Therapeutic, Dental and Educational-Surgical clinics.",
+      "hostelOverview": "AMU operates six on-campus dormitories with capacity for up to 1,700 students, housing 2-3 students per furnished room (bed, desk, chair, heater, water heater, free Wi-Fi and TV, washing-machine and fridge access). The university's live FAQ page lists the current annual dormitory fee as USD 600, while a separate official Dean's Office document shows USD 700 -- confirm the current rate directly with AMU before committing. Placement is limited and only available after signing the enrollment contract.",
+      "dietarySupport": "No specific university-run meal-plan cost is published; students typically arrange meals independently.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants register through Azerbaijan's national admissions portal, are guided by AMU's Dean's Office for Foreign Students, and should apply only through AMU's two officially named admission partners (Ellevitta Limited and Pregitim) -- the university explicitly warns against unauthorized intermediaries.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000281), with a confirmed direct-entry prerequisite (completed secondary education, no prior degree required), and graduates (1953-current) eligible to apply for ECFMG Certification.",
+        "General Medicine, Dentistry and Pharmacy programmes are separately accredited by IAAR (Independent Agency for Accreditation and Rating, Kazakhstan), a WFME-recognized agency, current through 27 January 2027.",
+        "A genuine, confirmed English-medium instruction track for General Medicine (also available in Azerbaijani and Russian) -- unlike some programmes at peer institutions where 'English track' marketing overstates the reality.",
+        "AMU explicitly names its only two authorized admission partners and warns against other intermediaries, a transparency practice not all peer universities offer.",
+        "The country's oldest and largest medical university (founded 1930), with its own network of four teaching clinics in Baku."
+      ],
+      "thingsToConsider": [
+        "Two official AMU sources give different tuition figures for the same programme: the university's live, currently maintained FAQ page states USD 6,000/year, while a separate official Dean's Office document shows USD 5,000/year -- confirm the current rate directly with AMU before committing, since both are genuine AMU-published figures rather than third-party estimates.",
+        "AMU's own pages disagree on the exact length of the mandatory preparatory/foundation course for international students -- one official page states approximately 5 months, another states 3+3=6 months.",
+        "No AMU-specific 2026/27 admission deadline is published; only a national government academic-calendar reference (15 September 2026 start) could be found, which is not AMU-specific.",
+        "AMU does not publish its own scholarship programme; Azerbaijan's national Heydar Aliyev International Education Grant covers medicine and may plausibly extend to Indian applicants as Non-Aligned Movement nationals, but this was not confirmed as covering AMU specifically.",
+        "The specific preclinical-versus-clinical year breakdown of the curriculum was not published on any official AMU page found during research."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, direct-entry medical degree with a genuine English-medium track and internationally recognized programme-level accreditation.",
+        "Applicants comfortable completing a preparatory/foundation course before formally entering Year 1, and who can budget flexibly given the fee discrepancy between AMU's own published sources.",
+        "Families who value working only through officially authorized admission channels, given AMU's explicit warning against unauthorized agents."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0000281, direct-entry confirmed",
+        "IAAR (Independent Agency for Accreditation and Rating, Kazakhstan), WFME-recognized -- Accredited, 28 January 2022, valid through 27 January 2027, specifically covering General Medicine",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1953-present",
+        "Azerbaijan Education Quality Assurance Agency (TKTA) -- institutional accreditation"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Azerbaijan Medical University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000281" },
+        { "label": "Azerbaijan Medical University -- accredited specialties", "url": "https://amu.edu.az/page/2803/accredited-specialties" }
+      ],
+      "faq": [
+        {
+          "question": "Is the General Medicine programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools confirms admission follows completion of secondary education, with no prior university degree required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Physician qualification after six years of study in the General Medicine programme, accredited by IAAR (a WFME-recognized agency) through January 2027."
+        },
+        {
+          "question": "Is the programme genuinely taught in English?",
+          "answer": "Yes, for General Medicine, Dentistry, Pharmacy and Physiotherapy specifically -- confirmed on AMU's own official admissions page. Public Health and Nursing are not offered in English."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "AMU's own official sources disagree: its live FAQ page states USD 6,000/year, while a separate official Dean's Office document shows USD 5,000/year. Confirm the current rate directly with AMU before committing, along with the USD 5,000/year preparatory-course fee."
+        },
+        {
+          "question": "Is there an entrance exam?",
+          "answer": "Yes. Applicants complete an online interview assessing Biology, Chemistry, Physics and the chosen language of instruction (USD 100 interview fee), followed by a preparatory/foundation course of roughly 5-6 months before formally entering Year 1."
+        },
+        {
+          "question": "What English-proficiency score is required?",
+          "answer": "IELTS 6.5 or TOEFL 80 or higher for applicants to the English-medium track, per AMU's official documents-for-admission page."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "AMU does not publish a fixed application deadline for its own foundation-course intake, which is described as interview-based rather than date-driven. Azerbaijan's national academic calendar for 2026/27 lists a 15 September 2026 start, though this is a government-wide reference, not an AMU-specific confirmed date."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "Yes, across six dormitories with capacity for up to 1,700 students, at a published annual fee of either USD 600 or USD 700 depending on which official AMU source is used -- confirm directly with the university."
+        },
+        {
+          "question": "Are scholarships available for international students?",
+          "answer": "AMU does not publish its own scholarship programme. Azerbaijan's national Heydar Aliyev International Education Grant covers medicine and residency programmes and may extend to Indian applicants as Non-Aligned Movement nationals, but this was not confirmed as including AMU specifically among its participating institutions."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Azerbaijan Medical University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000281",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry prerequisite, founding year, IAAR/WFME accreditation and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "Azerbaijan Medical University -- registration guides for foreign citizens",
+          "url": "https://amu.edu.az/page/381/registration-guides-for-foreign-citizens",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the admissions process, interview requirements, interview fee, and the university's named authorized admission partners."
+        },
+        {
+          "label": "Azerbaijan Medical University -- documents for admission",
+          "url": "https://amu.edu.az/page/5473/documents-for-admission",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for required documents, language-of-instruction availability by faculty, and English-proficiency thresholds."
+        },
+        {
+          "label": "Azerbaijan Medical University -- frequently asked questions",
+          "url": "https://amu.edu.az/page/382/frequently-asked-questions",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Live, actively-maintained official page giving the currently-served tuition and dormitory fee figures, used as the primary quoted figures given a discrepancy with an older official PDF."
+        },
+        {
+          "label": "Azerbaijan Ministry of Health -- Azerbaijan Medical University institutional listing",
+          "url": "https://sehiyye.gov.az/en/nazirliyin-qurumlari/az-rbaycan-tibb-universiteti/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence confirming AMU's official domain, subordinate status to the Ministry of Health, and campus/dormitory scale."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry physics preparation", "English proficiency status", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "English proficiency proof", "interview preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "azerbaijan-medical-university-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (Physician)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 36000,
+            "verifiedAt": "2026-07-25",
+            "notes": "AMU's live, currently-maintained FAQ page states tuition of USD 6,000/year plus a USD 5,000/year preparatory-course fee. A separate official Dean's Office PDF document instead shows USD 5,000/year for the 6-year Basic Medical Education programme -- both are genuine AMU-published figures, not third-party estimates, but they conflict; the live FAQ page's figure is used here as the more currently maintained source. Total is calculated as the annual figure times 6 years -- an estimate, not an officially published lump sum, and does not include the preparatory-course fee or interview fee (USD 100). Confirm the current applicable rate directly with AMU before committing."
+          },
+          "officialProgramUrl": "https://amu.edu.az/page/381/registration-guides-for-foreign-citizens",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education and pass AMU's admission interview"
+            ],
+            "restrictions": [
+              "English-track applicants require IELTS 6.5+ or TOEFL 80+",
+              "Applicants typically complete a preparatory/foundation course (approximately 5-6 months) before formally entering Year 1"
+            ],
+            "notes": "AMU names only two officially authorized admission partners (Ellevitta Limited and Pregitim) and warns applicants against other intermediaries.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://amu.edu.az/page/381/registration-guides-for-foreign-citizens"
+          },
+          "admissionsContent": {
+            "overview": "International applicants register through Azerbaijan's national admissions portal, submit notarized academic and medical documents, pay a USD 100 interview fee, and complete an online interview assessing Biology, Chemistry, Physics and their chosen language of instruction before being placed into either the preparatory course or directly into Year 1.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education, passing the admission interview, and English-proficiency proof for the English track.",
+              "items": [
+                "Secondary-school diploma and transcript, notarized and translated",
+                "Online interview covering Biology, Chemistry, Physics and language of instruction",
+                "IELTS 6.5+ or TOEFL 80+ for the English-medium track"
+              ]
+            },
+            "applicationSteps": [
+              "Register on Azerbaijan's national admissions portal (portal.edu.az)",
+              "Upload notarized/translated academic and medical documents (including Hepatitis B/C and HIV test results)",
+              "Pay the USD 100 interview fee and complete the online interview",
+              "Receive placement into the preparatory course or directly into Year 1, per AMU's Scientific Council decision",
+              "Submit original documents and sign the enrollment contract after full payment"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Notarized, translated secondary-school diploma and transcript",
+                "English-proficiency certificate (IELTS/TOEFL), for the English track"
+              ],
+              "application": [
+                "Valid passport and border-crossing document",
+                "Medical exam report (Hepatitis B, Hepatitis C, HIV/AIDS test results) and recent passport-style photos"
+              ]
+            },
+            "deadlinesNote": "No AMU-specific application deadline is published; admission is interview-based. Azerbaijan's national academic calendar lists a 15 September 2026 start for 2026/27, a government-wide reference rather than an AMU-confirmed date.",
+            "visaConsiderations": [
+              "Confirm current Azerbaijani student-visa requirements directly with AMU's Dean's Office for Foreign Students."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english", "russian"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "AMU's live FAQ page states USD 6,000/year tuition plus USD 5,000/year for the preparatory course; a separate official Dean's Office document instead shows USD 5,000/year for the core programme. Both are genuine AMU sources; reconfirm the applicable current rate directly with the university.",
+          "teachingPhases": [
+            {
+              "phase": "6-year General Medicine programme, with an international preparatory phase",
+              "language": "English (also available in Azerbaijani and Russian)",
+              "details": "International applicants typically complete a preparatory/foundation course (approximately 5-6 months, sources vary) in their language of instruction plus Biology, Chemistry and Physics, before formally entering Year 1 of the 6-year General Medicine curriculum leading to the Physician qualification. A detailed year-by-year preclinical/clinical breakdown was not published by the university."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "azerbaijan-medical-university",
+      "publicField": "identity",
+      "claimText": "Azerbaijan Medical University began medical instruction in 1930 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Azerbaijan Medical University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000281",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "azerbaijan-medical-university",
+      "programmeSlug": "azerbaijan-medical-university-general-medicine",
+      "publicField": "recognition",
+      "claimText": "WHO World Directory of Medical Schools confirms direct-entry (completion of secondary education prerequisite, no prior degree required); General Medicine is accredited by IAAR (Kazakhstan), a WFME-recognized agency, current 28 January 2022 through 27 January 2027; graduates (1953-current) eligible for ECFMG Certification.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Azerbaijan Medical University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000281",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "azerbaijan-medical-university",
+      "programmeSlug": "azerbaijan-medical-university-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine is genuinely taught in English (also Azerbaijani and Russian), a 6-year direct-entry programme leading to the Physician qualification.",
+      "status": "verified",
+      "sourceLabel": "Azerbaijan Medical University -- documents for admission",
+      "sourceUrl": "https://amu.edu.az/page/5473/documents-for-admission",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "azerbaijan-medical-university",
+      "programmeSlug": "azerbaijan-medical-university-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires completed secondary education, an online interview covering Biology, Chemistry, Physics and language of instruction, and IELTS 6.5+/TOEFL 80+ for the English track.",
+      "status": "verified",
+      "sourceLabel": "Azerbaijan Medical University -- documents for admission",
+      "sourceUrl": "https://amu.edu.az/page/5473/documents-for-admission",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "azerbaijan-medical-university",
+      "programmeSlug": "azerbaijan-medical-university-general-medicine",
+      "publicField": "admissions",
+      "claimText": "International applicants register via Azerbaijan's national admissions portal, pay a USD 100 interview fee, and are placed into a preparatory course or directly into Year 1 based on interview results; AMU names only two officially authorized admission partners.",
+      "status": "verified",
+      "sourceLabel": "Azerbaijan Medical University -- registration guides for foreign citizens",
+      "sourceUrl": "https://amu.edu.az/page/381/registration-guides-for-foreign-citizens",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "azerbaijan-medical-university",
+      "programmeSlug": "azerbaijan-medical-university-general-medicine",
+      "publicField": "intake",
+      "claimText": "No AMU-specific application deadline is published; admission is interview-based rather than date-driven. Azerbaijan's national academic calendar lists a 15 September 2026 start for 2026/27, a government-wide reference rather than an AMU-confirmed date.",
+      "status": "verified",
+      "sourceLabel": "Azerbaijan Medical University -- registration guides for foreign citizens",
+      "sourceUrl": "https://amu.edu.az/page/381/registration-guides-for-foreign-citizens",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "azerbaijan-medical-university",
+      "programmeSlug": "azerbaijan-medical-university-general-medicine",
+      "publicField": "fee",
+      "claimText": "AMU's live FAQ page states USD 6,000/year tuition plus USD 5,000/year preparatory course; a separate official Dean's Office document instead shows USD 5,000/year -- both genuine AMU sources, reconcile directly with the university.",
+      "status": "verified",
+      "sourceLabel": "Azerbaijan Medical University -- frequently asked questions",
+      "sourceUrl": "https://amu.edu.az/page/382/frequently-asked-questions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "azerbaijan-medical-university",
+      "publicField": "student living",
+      "claimText": "Six on-campus dormitories house up to 1,700 students at either USD 600/year (live FAQ) or USD 700/year (Dean's Office document) depending on official source used.",
+      "status": "verified",
+      "sourceLabel": "Azerbaijan Medical University -- frequently asked questions",
+      "sourceUrl": "https://amu.edu.az/page/382/frequently-asked-questions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

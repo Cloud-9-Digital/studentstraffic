@@ -1,0 +1,38 @@
+{
+  "scope": "Honduras medical discovery — Universidad Nacional Autónoma de Honduras Faculty of Medical Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UNAH's Faculty of Medical Sciences describes its Doctor in Medicine and Surgery as an eight-year programme. Its listed entry requirements are the PHUMA score threshold, vocational test and competition for a place.",
+      "sourceUrl": "https://fcm.unah.edu.hn/carreras/medicina",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty page identifies an academic coordinator, an area coordinator for clinical training and rotating internship, and states that students undertake supervised practice in health-related institutions.",
+      "sourceUrl": "https://fcm.unah.edu.hn/carreras/medicina",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UNAH states that the Tegucigalpa Doctor in Medicine and Surgery programme holds COMAEM accreditation from 28 November 2023 to 27 November 2028; the same page says San Pedro Sula is in self-evaluation, so the Tegucigalpa status must not be generalised to another campus.",
+      "sourceUrl": "https://fcm.unah.edu.hn/carreras/medicina",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UNAH's 2026 first admission call included applicants from Honduras and foreign applicants resident inside or outside Honduras. It specified the first-cycle testing process and a L500 testing fee, but this is not programme tuition.",
+      "sourceUrl": "https://blogs.unah.edu.hn/sistema-de-admision/convocatoria-1er-proceso-de-admision-2026",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No complete, current medicine tuition and mandatory-charge schedule was located. The L500 admission-test charge cannot be represented as programme cost.",
+    "The verified call is a completed first 2026 process; a future intake needs its own live deadline, medicine-specific ranking and international-document requirements.",
+    "The source confirms supervised practice but does not identify current clinical partners, placement terms or a complete rotating-internship arrangement.",
+    "Teaching language, accommodation, scholarships/loans and detailed student-support arrangements were not verified from current authoritative sources."
+  ],
+  "nextAction": "Obtain the next medicine admission calendar and official fee schedule, then verify current clinical sites, teaching language, international documentation and student support before considering a payload."
+}

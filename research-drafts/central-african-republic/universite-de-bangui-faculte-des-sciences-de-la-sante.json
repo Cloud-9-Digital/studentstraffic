@@ -1,0 +1,31 @@
+{
+  "scope": "Central African Republic medical discovery — Université de Bangui Faculty of Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Université de Bangui's official Medicine page describes a seven-year General Medicine programme over 14 semesters, awarding a State Doctorate in Medicine.",
+      "sourceUrl": "https://www.univ-bangui.com/index.php?Itemid=494&id=82&option=com_content&view=article",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The programme page states that candidates of any nationality with a C or D scientific baccalaureate may enter after passing the first-year entrance examination.",
+      "sourceUrl": "https://www.univ-bangui.com/index.php?Itemid=494&id=82&option=com_content&view=article",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Central African Republic Prime Minister's office recorded the official start of the 2025/26 academic year at Université de Bangui on 22 October 2025.",
+      "sourceUrl": "https://primature.cf/2025/10/24/la-rentree-universitaire-2025-2026-a-luniversite-de-bangui/",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Medicine tuition, mandatory fees or full cost schedule was located on an official source.",
+    "The reviewed Medicine page does not establish a current entrance-exam date, application window, document checklist or complete foreign-applicant procedure.",
+    "Teaching language, named clinical partners, current programme recognition/accreditation, accommodation, scholarship/loan support, safety support and graduate-registration pathway are unverified."
+  ],
+  "nextAction": "Obtain the active Faculty of Health Sciences Medicine prospectus, entrance-exam notice and fee decision, then verify teaching language, clinical sites, support and recognition before any payload is prepared."
+}

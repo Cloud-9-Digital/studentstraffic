@@ -1,0 +1,43 @@
+{
+  "scope": "Bulgaria medical discovery — Medical University Plovdiv",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Medical University Plovdiv",
+    "countrySlug": "bulgaria",
+    "programme": "Medicine in English",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "MU-Plovdiv publishes a 2026/27 English Medicine route: a master's-level Medicine degree with Biology, Chemistry and English-language entry assessment.",
+      "sourceUrl": "https://mu-plovdiv.bg/en/admission-info/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Its 2026/27 admission page lists exam dates from April through August, documents due from 2 March to 11 September 2026, a EUR 30 processing fee and EUR 270 entry-test fee per exam date.",
+      "sourceUrl": "https://mu-plovdiv.bg/en/admission-info/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "MU-Plovdiv publishes EUR 10,000 annual tuition for newly admitted first-year English Medicine students in 2026/27.",
+      "sourceUrl": "https://mu-plovdiv.bg/en/admission-info/",
+      "sourceType": "official-fee",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Foreign secondary-school documents must be legalised, translated and certified under Bulgaria's relevant international treaties or general document-legalisation rules.",
+      "sourceUrl": "https://mu-plovdiv.bg/en/admission-info/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "A full gold-standard medical profile needs independently verifiable programme/institution recognition badges. This batch did not establish the required 2–3 current third-party recognition records.",
+    "The admission page establishes entry testing and tuition, but not the complete programme-specific instructional/clinical structure, named teaching hospitals or practical-training arrangements needed for the decision content.",
+    "No current authoritative accommodation and student-living cost evidence bundle was completed."
+  ],
+  "nextAction": "Verify the relevant Bulgarian accreditation/quality authority records and obtain current faculty evidence for the English Medicine clinical structure, teaching hospitals and international accommodation before packaging."
+}

@@ -1,0 +1,183 @@
+{
+  "batchId": "media-a-191-200",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official website or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "kokand-university",
+      "universityName": "Kokand University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass only found the general \"institutional social image\"; a dedicated build asset under /build/assets on the same domain is a clearly separate logo file distinct from social content..",
+      "logo": {
+        "sourceUrl": "https://www.kokanduni.uz/build/assets/logo-Dr-W4CcY.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone build-hashed logo asset served directly from the university's own domain kokanduni.uz, separate from its social-media imagery; verified HTTP 200.",
+        "proposedPublicId": "kokand-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kokanduni.uz/storage/sliders/banner2-student.webp",
+        "sourceType": "official",
+        "rightsBasis": "Homepage slider banner served directly from kokanduni.uz's own storage; verified HTTP 200.",
+        "proposedPublicId": "kokand-university-cover"
+      }
+    },
+    {
+      "universitySlug": "korea-university",
+      "universityName": "Korea University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://oia.korea.ac.kr/_res/oia2026/img/main/ku_logo_oia.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Korea University Office of International Affairs logo referenced by the office's official stylesheet",
+        "proposedPublicId": "korea-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://oia.korea.ac.kr/_res/oia2026/img/ku_oia_visual01_re.JPG",
+        "sourceType": "official",
+        "rightsBasis": "official Korea University Office of International Affairs homepage visual",
+        "proposedPublicId": "korea-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "krasnoyarsk-state-medical-university",
+      "universityName": "Krasnoyarsk State Medical University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo still held: the official domain (krasgmu.ru, confirmed via Wikidata) is a client-side-rendered Nuxt.js SPA with no server-rendered logo markup retrievable without a browser; no Commons/Wikidata logo claim exists either. Cover resolved via Wikipedia's infobox pointing to a Commons-licensed photo (not the krsmu.com search results the first pass correctly distrusted).. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Medical_University_of_Krasnoyarsk.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Medical University of Krasnoyarsk.jpg (own work, 2022), licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "krasnoyarsk-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "kuban-state-medical-university",
+      "universityName": "Kuban State Medical University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo still held: no infobox logo, Commons category logo file, or Wikidata logo claim exists for this university; ksma.ru was not assessed further as the connection issue noted in the first pass could not be independently retested with a clean logo asset found.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%9C%D0%B8%D0%BD%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File shown in Kuban State Medical University's Wikipedia infobox, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kuban-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "kursk-state-medical-university",
+      "universityName": "Kursk State Medical University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo still held: the infobox logo (Kursk State Medical University logo.png) is a local non-free/fair-use upload on English Wikipedia, not Commons; no free-licensed alternative was found. Cover resolved via a Commons cultural-heritage-monument photo not previously identified as institution-linked.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Kursk_state_medical_university.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Kursk state medical university.jpg (Wiki Loves Monuments 2016 submission), licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kursk-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "kutaisi-institute-of-medicine",
+      "universityName": "Kutaisi Institute of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "As documented in the original hold reason, this catalogue label is a legacy/informal name that research ties to Kutaisi University / Central University of Europe, but it does not match either institution's current official name. Someone needs to resolve which current institutional identity this record should map to before any logo/cover is sourced; no media sourced against an unverified identity.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "universityName": "Kwame Nkrumah University of Science and Technology",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.knust.edu.gh/themes/custom/adepts/images/knustlogo.png",
+        "sourceType": "official",
+        "rightsBasis": "official KNUST brand asset served from the university website",
+        "proposedPublicId": "kwame-nkrumah-university-of-science-and-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.knust.edu.gh/themes/custom/adepts/images/aboutknustimg.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official KNUST institutional image served on the university website",
+        "proposedPublicId": "kwame-nkrumah-university-of-science-and-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kwantlen-polytechnic-nursing",
+      "universityName": "Kwantlen Polytechnic Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.kpu.ca/themes/custom/kpu/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Kwantlen Polytechnic University logo served from the nursing page's institutional theme",
+        "proposedPublicId": "kwantlen-polytechnic-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kpu.ca/sites/default/files/BSN%20Students%20-%202018-64_Web.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official KPU Bachelor of Science in Nursing page image",
+        "proposedPublicId": "kwantlen-polytechnic-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kyoto-university",
+      "universityName": "Kyoto University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.kyoto-u.ac.jp/themes/custom/camphor/images/header-logo-horizontal.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Kyoto University English-site header logo",
+        "proposedPublicId": "kyoto-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kyoto-u.ac.jp/sites/default/files/styles/scale_crop_1920x640/public/2026-07/2-22d94d5a7b31e58b102eea2aa8daa1b2.jpg?itok=uXykR4Oc",
+        "sourceType": "official",
+        "rightsBasis": "official Kyoto University homepage feature image served from the university website",
+        "proposedPublicId": "kyoto-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kyrgyz-international-university",
+      "universityName": "Kyrgyz International University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo still held: the Wikipedia infobox logo (International_University_of_Kyrgyzstan_Logo.png) is a local non-free upload, confirming the first pass's finding that only a favicon-sized mark is otherwise available. Cover resolved from the same infobox, which also carries a Commons-licensed building photograph.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/International_University_of_Kyrgyzstan.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:International University of Kyrgyzstan.jpg by Davide Mauro, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kyrgyz-international-university-cover"
+      }
+    }
+  ]
+}

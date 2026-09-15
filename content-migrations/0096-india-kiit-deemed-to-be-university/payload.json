@@ -1,0 +1,2238 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree in computer science and engineering, entered after twelve years of schooling with physics, chemistry and mathematics. Teaching combines programming, data structures, algorithms, operating systems, databases, computer networks and software engineering with laboratory work, and Indian universities commonly add a final-year project and an industry internship. Graduates enter software engineering, data and infrastructure roles or continue to a master's degree.",
+      "metaTitle": "B.E./B.Tech CSE: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech CSE degree covers, who is eligible, how admission works and what tuition and entry requirements to expect."
+    },
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A two-year postgraduate management degree open to graduates of any discipline. The first year covers core functions such as accounting, finance, marketing, operations, organisational behaviour, economics and business analytics; the second year adds electives and specialisation. Full-time Indian MBA programmes normally include a summer internship between the two years, and selection typically combines an entrance-test score with a group discussion, written test and personal interview.",
+      "metaTitle": "MBA: Course Structure, Fees and Admission Route",
+      "metaDescription": "What a two-year full-time MBA covers, which entrance tests are accepted, how selection works and what tuition and internship structure to expect."
+    },
+    {
+      "slug": "llb",
+      "name": "Bachelor of Laws",
+      "shortName": "LLB",
+      "stream": "law",
+      "level": "bachelors",
+      "discipline": "law",
+      "aliases": [
+        "LL.B.",
+        "Bachelor of Law",
+        "B.A. LL.B.",
+        "Integrated law degree"
+      ],
+      "displayOrder": 1,
+      "durationYears": 5,
+      "summary": "In India the LLB is most often taken as a five-year integrated honours degree combining a bachelor's in arts, business administration or science with the law curriculum, entered directly after twelve years of schooling. The syllabus covers constitutional law, contract, torts, criminal law, property, corporate law, procedure and jurisprudence, with moot courts, legal aid clinics and internships. Programmes must be recognised by the Bar Council of India for graduates to seek enrolment as advocates in India.",
+      "metaTitle": "LLB: Five-Year Integrated Law Degree and Admission",
+      "metaDescription": "How the five-year integrated LLB works in India, what the syllabus covers, which entry requirements apply and why Bar Council of India recognition matters."
+    },
+    {
+      "slug": "llm",
+      "name": "Master of Laws",
+      "shortName": "LLM",
+      "stream": "law",
+      "level": "masters",
+      "discipline": "law",
+      "aliases": [
+        "LL.M.",
+        "Master of Law"
+      ],
+      "displayOrder": 2,
+      "durationYears": 1,
+      "summary": "A postgraduate law degree for holders of a recognised bachelor's degree in law. Indian LLM programmes are commonly one year long and allow specialisation in areas such as constitutional law, business and corporate law, international law, criminal law, intellectual property or taxation. Assessment blends taught coursework with a dissertation, and the degree is used for academic careers, research, policy work and specialist practice rather than as a route to first enrolment as an advocate.",
+      "metaTitle": "LLM: Specialisations, Entry Requirements and Fees",
+      "metaDescription": "What a one-year LLM covers in India, which specialisations are offered, the entry requirements that apply and what the degree is and is not used for."
+    },
+    {
+      "slug": "msc-biological-sciences",
+      "name": "M.Sc. in Biological Sciences",
+      "shortName": "M.Sc. Biological Sciences",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "biological-sciences",
+      "aliases": [
+        "Master of Science in Biology",
+        "MSc Biological Sciences",
+        "M.Sc. Biotechnology",
+        "M.Sc. Applied Microbiology"
+      ],
+      "displayOrder": 1,
+      "durationYears": 2,
+      "summary": "A two-year postgraduate science degree covering molecular biology, genetics, microbiology, biochemistry, cell biology, bioprocess technology and bioinformatics, depending on the chosen stream such as biotechnology or applied microbiology. Laboratory work is central, and most programmes end with a supervised research dissertation. Graduates move into research laboratories, biotechnology and pharmaceutical industry roles, quality and diagnostics work, or a doctoral programme.",
+      "metaTitle": "M.Sc. Biological Sciences: Streams, Entry and Fees",
+      "metaDescription": "What a two-year M.Sc. Biological Sciences degree covers across biotechnology and microbiology streams, who is eligible and what tuition and lab work to expect."
+    },
+    {
+      "slug": "mph",
+      "name": "Master of Public Health",
+      "shortName": "MPH",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "public-health",
+      "aliases": [
+        "M.P.H.",
+        "MSc Public Health"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A two-year postgraduate degree in population health, normally open to graduates of medicine, dentistry, nursing, pharmacy, allied health, life sciences and several non-clinical disciplines. Teaching covers epidemiology, biostatistics, health policy and management, environmental and occupational health, health economics and health promotion, with field placements and a dissertation. Graduates work in public health programmes, health systems management, non-governmental organisations and research.",
+      "metaTitle": "MPH: Entry Requirements, Structure and Fees",
+      "metaDescription": "What a two-year MPH covers, which bachelor's degrees make an applicant eligible, how field placements are structured and what tuition to plan for."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "kiit-deemed-to-be-university",
+      "name": "KIIT Deemed to be University",
+      "city": "Bhubaneswar",
+      "type": "Private",
+      "establishedYear": 1997,
+      "officialWebsite": "https://kiit.ac.in/",
+      "mediaAttribution": {},
+      "summary": "KIIT Deemed to be University is a private, self-financed institution at Patia in Bhubaneswar, Odisha, recognised under Section 3 of the UGC Act, 1956. Its co-located schools cover engineering and computing, management, law, sciences and biotechnology, design, media and health, and it runs a separate international admissions route with tuition published in US dollars.",
+      "campusLifestyle": "KIIT reports a 36 sq km academic township holding 30 co-located schools, more than 3,000 faculty and researchers and over 40,000 learners, including around 2,000 international students from 65 countries and 131 international faculty. Each school runs from its own campus with dedicated laboratories, library and conference halls, alongside a multi-storey central library, 18 sports complexes, 30 food courts and the Biju Patnaik Indoor Stadium. The Central Convention Centre auditorium seats 1,600, and international students can join the India Trek cultural programme and credit-based study abroad options.",
+      "cityProfile": "KIIT sits at Patia in Bhubaneswar, Odisha, at postcode 751024. The Airports Authority of India operates Biju Patnaik International Airport in the city, which is the usual arrival point for international students, and lists the Lingaraj Temple and the Odisha State Museum among nearby attractions. The Odisha Department of Tourism names Bhubaneswar among the state's major cities alongside Cuttack, Puri and Rourkela. Inside and around the campus township there is a police station, an in-house computerised post office, banks and ATMs, and KIIT runs buses and shuttle cars for students and staff. Across most of India the southwest monsoon runs from June to September, so an August arrival lands towards the end of the wet season.",
+      "practicalExposure": "KIIT runs Centres of Excellence with named industry partners, including an SAP Centre of Excellence, an IBM Centre of Excellence, a Siemens Lab, an Intel Design Lab, a Tech Mahindra Design Lab, an NI Centre of Excellence and the ISRO KIIT Satellite Centre. Several postgraduate engineering specialisations are co-branded with industry: M.Tech in Next Generation Wireless Technology with Ericsson, M.Tech in Automotive Electronics and Software with KPIT Technologies of Pune, and M.Tech tracks in AI and Data Science, Internet of Things and Cybersecurity with LTIMindtree and L and T EduTech. KIIT Technology Business Incubator, opened in 2008 with Department of Science and Technology and NSTEDB support and recognised as a Centre of Excellence in 2018, supports more than 235 ventures. Public health and biotechnology students sit on a campus that includes Kalinga Institute of Medical Sciences, the university's own super-speciality teaching hospital, and KIIT School of Law operates a Legal Aid Service Clinic and a moot court programme. KIIT reports that more than 757 companies recruited on campus in 2025 with more than 4,621 job offers made; because an Indian Student visa does not permit employment in India, these figures describe institutional recruiting activity rather than any work entitlement for an international student.",
+      "hostelOverview": "Boys and girls hostels are separate, and KIIT runs a dedicated international hostel for foreign students. Rooms are offered on single, double and triple-sharing bases with attached bathrooms, Wi-Fi and intranet access, and KIIT states that about 30 per cent of hostel rooms are air conditioned. Every hostel has an attached canteen, a 24-hour reading room and facilities for indoor and outdoor games. Hostel, mess and examination charges sit outside the published US dollar tuition table and are confirmed in the admission offer letter, so no accommodation price is published in advance of an offer.",
+      "dietarySupport": "Each hostel has an attached canteen serving Indian and Continental food, and KIIT states that the on-campus mess caters to diverse culinary preferences with multi-cuisine meals and dietary-specific options. Food courts across the township specialise in cuisines from different parts of the world. Banks, ATMs and an in-house computerised post office operate inside the campus, and grocery and restaurant options in Patia and central Bhubaneswar are reachable on the campus bus and shuttle service.",
+      "safetyOverview": "KIIT publishes a Safety SOP Manual (Version 1.0, 2026) and lists an Anti-Ragging Committee, an Internal Complaints Committee, an Equal Opportunity Cell and a Student Grievance Redressal Committee with an Ombudsperson. A police station, banks and ATMs operate in and around the campus township, and the university publishes a 24x7 student support line alongside a separate student helpline.",
+      "studentSupport": "The International Relations Office is the first point of contact for student visa documentation, FRRO registration, visa extension, opening an Indian bank account and certificate authentication. A Dean Academics for International Students and a Faculty-in-Charge in every school handle academic queries, counselling is provided by a staff counsellor and a professional psychiatrist, and KIMS gives enrolled students free medical consultancy.",
+      "whyChoose": [
+        "Tuition for international applicants is published in advance in US dollars: USD 10,000 a year for undergraduate and postgraduate courses, USD 8,000 a year for SAARC-region applicants and USD 4,000 a year for PhD, with a written refund schedule.",
+        "Five B.Tech branches - civil, computer science, electrical, mechanical and electronics and telecommunication - hold National Board of Accreditation Tier I accreditation under the Washington Accord, running to 30 June 2028.",
+        "The university is recognised under Section 3 of the UGC Act, 1956, appears on the UGC list of deemed universities included under Section 12(B), and is accredited by NAAC at A++ with a CGPA of 3.52 in Cycle 3, declared August 2022.",
+        "The International Relations Office handles student visa paperwork, FRRO registration, visa extension, bank-account opening and certificate authentication rather than leaving arrival logistics to the student.",
+        "KIIT states that its International Scholarship Programme awards 100 per cent or 50 per cent of the total fee on merit, covering tuition, books, air-conditioned accommodation, mess, library and internet access, laptop, registration and examination fees.",
+        "Thirty schools sit on one contiguous township, so law, management, engineering, science and public health students share the same campus infrastructure and support services."
+      ],
+      "thingsToConsider": [
+        "The published international fee table is scoped to Foreign National applicants including NRI, OCI and PIO applicants, so access to this route depends on nationality and residency status rather than on academic profile alone.",
+        "Admission to medical courses other than allied medical is on a NEET score only, and Bachelor of Architecture is on a NATA score only, so neither is available through the international application for the 2026 cycle.",
+        "An Indian Student visa does not permit employment or business activity, so campus recruitment volumes carry no work rights during the course.",
+        "KIIT School of Management runs a separate MBA route for foreign and NRI candidates with a US $50 application fee and a valid 2025 GMAT score for 2026 entry, unlike the fee-free general international application.",
+        "Hostel, mess and examination charges are quoted outside the US dollar tuition table and are confirmed only in the admission offer letter, so a full annual cost cannot be assembled before an offer arrives.",
+        "A registration fee of Rs 50,000 or USD 700, whichever is higher, is retained even where admission is withdrawn before reporting, and refunds are processed under RBI and foreign exchange regulations."
+      ],
+      "bestFitFor": [
+        "Foreign national, NRI, OCI or PIO applicants who want a US dollar tuition figure and a written refund schedule published before they apply.",
+        "Engineering applicants who want a B.Tech branch carrying current National Board of Accreditation Tier I accreditation under the Washington Accord, dated to 30 June 2028.",
+        "Applicants to a five-year integrated honours law degree at a Bar Council of India approved Centre of Legal Education, with honours specialisation tracks.",
+        "Public health and biotechnology postgraduates holding a science, health or technology bachelor's degree who want a campus with an attached super-speciality teaching hospital.",
+        "Applicants from SAARC countries, who are placed on the lower USD 8,000 a year undergraduate and postgraduate tuition tier.",
+        "Applicants who want engineering, management, law and sciences on one campus so a change of direction stays inside a single institution."
+      ],
+      "industryPartners": [
+        "SAP",
+        "IBM",
+        "Siemens",
+        "Intel",
+        "Tech Mahindra",
+        "National Instruments",
+        "ISRO",
+        "Ericsson",
+        "KPIT Technologies",
+        "LTIMindtree",
+        "L&T EduTech",
+        "Boeing"
+      ],
+      "recognitionBadges": [
+        "UGC - Deemed to be University under Section 3 of the UGC Act, 1956",
+        "UGC Act Section 12(B) - Listed Deemed University (UGC list, 06.10.2017)",
+        "NAAC — Accredited A++, CGPA 3.52, Cycle 3 (declared August 2022)",
+        "NBA Tier I (Washington Accord) — five B.Tech programmes accredited to 30 June 2028",
+        "Bar Council of India — Approved Centre of Legal Education, KIIT School of Law (approval to 2026-27)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated list of Deemed to be Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf"
+        },
+        {
+          "label": "UGC list of Deemed Universities under Section 12(B)",
+          "url": "https://www.ugc.gov.in/oldpdf/List-of-Deemed-University%2012-B-06-10-2017.pdf"
+        },
+        {
+          "label": "NAAC - Accreditation Status (valid-accreditation workbook)",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "National Board of Accreditation - Accredited Programs register",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "Bar Council of India - Recognised universities and colleges (approved CLE list)",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is KIIT a public or a private university?",
+          "answer": "KIIT is a private, self-financed institution. It holds Deemed to be University status under Section 3 of the UGC Act, 1956, which is a Government of India recognition granting degree-awarding powers; it appears in the Odisha section of the UGC consolidated list of deemed universities and on the UGC list of deemed universities included under Section 12(B) of the UGC Act, and NAAC records it as accredited at grade A++ with a CGPA of 3.52 in Cycle 3."
+        },
+        {
+          "question": "What is the language of instruction?",
+          "answer": "Programmes on the international route are taught in English throughout, with no transition to an Indian language part-way through the degree. KIIT additionally runs foundational English courses for non-native speakers, language workshops and sessions introducing basic Hindi for day-to-day communication outside the classroom."
+        },
+        {
+          "question": "Who is eligible to apply through the KIIT international route?",
+          "answer": "The published international fee table is scoped to Foreign National applicants, including NRI, OCI and PIO applicants. Applicants from SAARC countries are placed on a separate, lower tuition tier. Applicants who do not fall into one of these categories are outside this route and would apply through the domestic KIITEE process instead."
+        },
+        {
+          "question": "What does a year at KIIT cost for an international applicant?",
+          "answer": "KIIT publishes USD 10,000 a year for undergraduate courses, USD 10,000 a year for postgraduate courses, USD 4,000 a year for PhD, and USD 8,000 a year for undergraduate and postgraduate applicants from the SAARC region. Hostel, mess and examination charges are quoted separately and are confirmed in the admission offer letter, so a total annual budget can only be assembled once the offer is issued."
+        },
+        {
+          "question": "How do I apply, and is there an application fee?",
+          "answer": "Applications go through the KIIT international admissions portal at international.kiit.ac.in. You register, verify your email from the message sent by kiit.global@kiit.ac.in, complete the programme, personal, address and educational-qualification sections, upload documents and submit. KIIT states that the international application is free of charge for foreign nationals and NRI candidates. The MBA at KIIT School of Management is the exception: foreign and NRI MBA applicants pay a US $50 application fee."
+        },
+        {
+          "question": "Do I need IELTS or TOEFL?",
+          "answer": "KIIT lists proof of English proficiency such as TOEFL or IELTS among the upload items but marks it as not compulsory. Where documents were not issued in English, English translations are required. KIIT also conducts an online interview during the admission process to check eligibility, subject grasp and English knowledge, so English is assessed directly even without a test score."
+        },
+        {
+          "question": "Is there an entrance exam for international applicants?",
+          "answer": "For most programmes the international route replaces the KIITEE entrance test with academic-record assessment plus an online interview. The MBA works differently: KIIT School of Management assesses foreign and NRI candidates on a valid GMAT score taken in 2025 for 2026 admission, followed by a Group Discussion, Personal Interview and Writing Ability Test."
+        },
+        {
+          "question": "Can I study medicine or architecture through this route?",
+          "answer": "No. The KIIT international fee page states that admission to medical courses other than allied medical courses is on the basis of a NEET score only, and that Bachelor of Architecture is on the basis of a NATA score only. NEET is administered by the National Testing Agency and foreign, NRI and OCI candidates are eligible to sit it, but eligibility for a particular seat still depends on state and institution rules. Allied and non-clinical health programmes such as the Master of Public Health are outside that restriction."
+        },
+        {
+          "question": "When does the academic year start and when should I apply?",
+          "answer": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and induction on the first two days, and a Spring Academic Session opening on 2 January. The KIIT International Relations Office states that the international application window for each academic year runs from 1 March to 30 September."
+        },
+        {
+          "question": "Can I work part-time while studying at KIIT?",
+          "answer": "No. The Bureau of Immigration states that a holder of an Indian Student visa is not permitted to undertake employment or business activity in India. This applies for the whole duration of the course, so no part-time earnings should be built into a funding plan for study in India. Any budget needs to be covered by savings, family support or scholarship."
+        },
+        {
+          "question": "What scholarships are available to international students?",
+          "answer": "KIIT states that its International Scholarship Programme awards 100 per cent or 50 per cent of the total fee on merit, covering tuition, books, air-conditioned accommodation, multi-cuisine mess, 24/7 library and internet access, laptop, registration and examination fees, with MBBS, dental, nursing and architecture courses excluded. Separately, government routes such as the Indian Council for Cultural Relations schemes and Study in India scholarships are applied for through Indian diplomatic missions or the national portal, not through the university. Award numbers are not published, so no scholarship should be assumed when budgeting."
+        },
+        {
+          "question": "What accreditation does KIIT hold, and what does it mean for me?",
+          "answer": "KIIT is a Deemed to be University under Section 3 of the UGC Act, 1956, is on the UGC Section 12(B) list, and holds NAAC accreditation at grade A++, CGPA 3.52, Cycle 3, declared August 2022. The NBA register shows current Tier I accreditation under the Washington Accord for five B.Tech branches - civil, computer science, electrical, mechanical, and electronics and telecommunication - to 30 June 2028; other programmes are not covered by it. The Bar Council of India approved-CLE list records KIIT School of Law with approval to 2026-27. Whether an Indian degree is recognised in your home country is decided by that country's own regulator."
+        },
+        {
+          "question": "What does registration after arrival involve?",
+          "answer": "A Student visa valid for more than 180 days requires registration with the jurisdictional FRRO or FRO after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements. The Bureau of Immigration also requires a Non-Resident Ordinary bank account with a recognised Indian bank, with details given to the FRRO. The KIIT International Relations Office handles FRRO registration, visa extension, bank-account opening and certificate authentication as part of its arrival support."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "KIITEE - International and NRI Admission Fees",
+          "url": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Nationality-scoped fee table, SAARC tier, registration fee and written refund schedule."
+        },
+        {
+          "label": "KIITEE 2026 - Eligibility Criteria",
+          "url": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Current-cycle course-wise academic eligibility, updated 18 November 2025. The separate international eligibility page still carries 2021-cycle rules and was not used."
+        },
+        {
+          "label": "KIITEE - Courses Available for International Applicants",
+          "url": "https://kiitee.kiit.ac.in/international-application/courses-available/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "KIIT - How To Apply for KIIT International Application (2025)",
+          "url": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Eleven-step application flow, online interview, Study in India registration requirement."
+        },
+        {
+          "label": "KIIT Deemed to be University - International Admission",
+          "url": "https://kiit.ac.in/international-admission/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "KIIT International Relations Office brochure (2024)",
+          "url": "https://www.kiit.ac.in/wp-content/uploads/2024/01/IRO-2024.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Application window, scholarship programme, IRO support scope, courses and durations."
+        },
+        {
+          "label": "University Grants Commission - Consolidated list of Deemed to be Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+          "kind": "government",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "University Grants Commission - Deemed Universities under Section 12(B)",
+          "url": "https://www.ugc.gov.in/oldpdf/List-of-Deemed-University%2012-B-06-10-2017.pdf",
+          "kind": "government",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "National Board of Accreditation - Accredited Programs register",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Tier I (Washington Accord) accreditation to 30 June 2028 for five KIIT B.Tech branches, listed under the name Kalinga Institute of Industrial Technology. The Tier II rows dated 2008 sit under the older name KIIT UNIVERSITY and lapsed in 2011."
+        },
+        {
+          "label": "NAAC - Accreditation Status, valid-accreditation workbook as on 14-08-2025",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "A++, CGPA 3.52, Cycle 3, declared 02-08-2022, AISHE U-0356, corroborated by the 117th Standing Committee result. Declaration date only; the workbook publishes no expiry."
+        },
+        {
+          "label": "Bar Council of India - Recognised universities and colleges (approved CLE list)",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "KIIT School of Law approved upto 2026-27 (page 52, Orissa). BCI approves LL.B.-track undergraduate law courses only."
+        },
+        {
+          "label": "KIIT School of Management - MBA Eligibility and Selection Process",
+          "url": "https://ksom.ac.in/programs/mba-full-time/eligibility-and-selection-process/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Foreign and NRI MBA route: US $50 application fee, 2025 GMAT score, GD, PI and WAT."
+        },
+        {
+          "label": "KIIT School of Law - About Us",
+          "url": "https://law.kiit.ac.in/about-us/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "KIIT Deemed to be University - Academic Calendar",
+          "url": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Autumn session opening 22 August, Spring session opening 2 January."
+        },
+        {
+          "label": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+          "url": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Student visa conditions, employment prohibition, NRO account requirement."
+        },
+        {
+          "label": "KIIT Deemed to be University - Hostel Facility",
+          "url": "https://kiit.ac.in/campuslife/hostel/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "KIIT Deemed to be University - About KIIT",
+          "url": "https://kiit.ac.in/about/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "Airports Authority of India - Bhubaneswar Airport",
+          "url": "https://www.aai.aero/en/airports/bhubaneswar",
+          "kind": "government",
+          "checkedAt": "2026-08-22"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "recognition": "published",
+          "academics": "research_ready",
+          "studentLiving": "research_ready",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "research_ready"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my KIIT eligibility",
+            "capture": [
+              "citizenship or residency status",
+              "NRI, OCI or PIO status",
+              "highest qualification and year",
+              "intended programme and level",
+              "SAARC nationality"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my KIIT cost plan",
+            "capture": [
+              "intended programme and level",
+              "SAARC nationality",
+              "accommodation preference",
+              "scholarship interest",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my KIIT application review",
+            "capture": [
+              "document readiness",
+              "English evidence",
+              "GMAT status for MBA applicants",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "immigration",
+            "label": "Plan my visa and FRRO steps",
+            "capture": [
+              "nationality",
+              "intended arrival month",
+              "Study in India SII ID status"
+            ]
+          }
+        ],
+        "restrictionsSummary": "International admission at KIIT is scoped to Foreign National, NRI, OCI and PIO applicants, with a separate lower tuition tier for SAARC nationals. Medical courses other than allied medical run on NEET only and Bachelor of Architecture on NATA only, so neither is available through this route. No work rights attach to an Indian Student visa."
+      },
+      "programmes": [
+        {
+          "slug": "kiit-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "Bachelor of Technology (B.Tech) in Computer Science and Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 40000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 40000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://www.kiit.ac.in/schools/computer-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "Diploma-holder lateral entry into the three-year B.Tech route requires a three-year engineering diploma with at least 60 per cent aggregate from a State Council of Technical Education, and the eligible diploma branch is fixed per admitting branch."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year B.Tech taught in English at the KIIT School of Computer Engineering. Foreign national, NRI, OCI and PIO applicants apply through the KIIT international portal rather than through the KIITEE entrance test, and are assessed on academic records plus an online interview.",
+            "eligibility": {
+              "intro": "KIIT sets these B.Tech entry requirements for the 2026 admission cycle.",
+              "items": [
+                "Pass in 10+2 or its equivalent with at least 60 per cent marks in physics, chemistry and mathematics taken together.",
+                "Passed the 10+2 examination in 2024 or 2025, or appearing in the 10+2 examination in 2026.",
+                "Studied in regular full-time formal education at school or college level.",
+                "Born on or after 1 July 2005.",
+                "Holders of the International Baccalaureate Diploma from the IB Organization, Geneva, are eligible wherever 10+2 is the qualifying requirement."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent certificate and mark sheet showing physics, chemistry and mathematics",
+                "Secondary school certificate and mark sheet",
+                "Proof of date of birth"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over four years at the published rate the tuition total is USD 40,000 for a non-SAARC applicant and USD 32,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 to 4, B.Tech Computer Science and Engineering",
+              "language": "English",
+              "details": "Taught at the KIIT School of Computer Engineering, which also runs Computer Science and Communication Engineering, Computer Science and Systems Engineering and Information Technology branches, plus dual-degree B.Tech with M.Tech and B.Tech with MBA routes. The branch carries National Board of Accreditation Tier I accreditation under the Washington Accord for academic years 2022-23 to 2027-28."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-btech-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "Bachelor of Technology (B.Tech) in Civil Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 40000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 40000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://www.kiit.ac.in/schools/civil-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "Lateral entry into the three-year B.Tech Civil route is restricted to holders of a three-year diploma in civil engineering with at least 60 per cent aggregate from a State Council of Technical Education."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year B.Tech taught in English at the KIIT School of Civil Engineering. International applicants apply through the KIIT international portal on academic records and an online interview, and the branch holds current National Board of Accreditation Tier I accreditation under the Washington Accord.",
+            "eligibility": {
+              "intro": "KIIT sets these B.Tech entry requirements for the 2026 admission cycle.",
+              "items": [
+                "Pass in 10+2 or its equivalent with at least 60 per cent marks in physics, chemistry and mathematics taken together.",
+                "Passed the 10+2 examination in 2024 or 2025, or appearing in the 10+2 examination in 2026.",
+                "Studied in regular full-time formal education at school or college level.",
+                "Born on or after 1 July 2005.",
+                "Holders of the International Baccalaureate Diploma from the IB Organization, Geneva, are eligible wherever 10+2 is the qualifying requirement."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent certificate and mark sheet showing physics, chemistry and mathematics",
+                "Secondary school certificate and mark sheet",
+                "Proof of date of birth"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over four years at the published rate the tuition total is USD 40,000 for a non-SAARC applicant and USD 32,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 to 4, B.Tech Civil Engineering",
+              "language": "English",
+              "details": "Taught at the KIIT School of Civil Engineering, which also offers M.Tech specialisations in construction engineering and management, structural engineering, geotechnical engineering, water resources engineering, transportation engineering and environmental engineering, plus dual-degree B.Tech with M.Tech and B.Tech with MBA routes. The branch carries National Board of Accreditation Tier I accreditation under the Washington Accord to 30 June 2028."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-btech-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "Bachelor of Technology (B.Tech) in Mechanical Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 40000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 40000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://www.kiit.ac.in/schools/mechanical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "Lateral entry into the three-year B.Tech Mechanical route is restricted to holders of a three-year diploma in mechanical, automobile, production or mechatronics engineering with at least 60 per cent aggregate from a State Council of Technical Education."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year B.Tech taught in English at the KIIT School of Mechanical Engineering. International applicants apply through the KIIT international portal on academic records and an online interview; the school also runs automobile, aerospace and mechatronics branches on the same campus.",
+            "eligibility": {
+              "intro": "KIIT sets these B.Tech entry requirements for the 2026 admission cycle.",
+              "items": [
+                "Pass in 10+2 or its equivalent with at least 60 per cent marks in physics, chemistry and mathematics taken together.",
+                "Passed the 10+2 examination in 2024 or 2025, or appearing in the 10+2 examination in 2026.",
+                "Studied in regular full-time formal education at school or college level.",
+                "Born on or after 1 July 2005.",
+                "Holders of the International Baccalaureate Diploma from the IB Organization, Geneva, are eligible wherever 10+2 is the qualifying requirement."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent certificate and mark sheet showing physics, chemistry and mathematics",
+                "Secondary school certificate and mark sheet",
+                "Proof of date of birth"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over four years at the published rate the tuition total is USD 40,000 for a non-SAARC applicant and USD 32,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 to 4, B.Tech Mechanical Engineering",
+              "language": "English",
+              "details": "Taught at the KIIT School of Mechanical Engineering, which also offers mechanical engineering (automobile), aerospace, mechatronics and production branches and M.Tech specialisations in manufacturing process and systems, thermal engineering and machine design. The branch carries National Board of Accreditation Tier I accreditation under the Washington Accord to 30 June 2028."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), Full Time",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 20000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 20000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://ksom.ac.in/programs/mba-full-time/eligibility-and-selection-process/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "Foreign and NRI MBA applicants pay a US $50 application fee to KIIT School of Management, so the fee-free general KIIT international application does not apply to this programme.",
+              "Selection depends on performance in the Group Discussion, Personal Interview and Writing Ability Test as well as career marks and entrance score, so a qualifying score alone does not secure a place."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A two-year full-time MBA at KIIT School of Management, Campus-7. Foreign and NRI applicants follow a different route from the general KIIT international application: KSOM charges a US $50 application fee and assesses foreign and NRI candidates on a valid GMAT score.",
+            "eligibility": {
+              "intro": "KSOM applies the same academic eligibility to foreign and NRI applicants as to domestic applicants, with a separate entrance-score rule.",
+              "items": [
+                "A bachelor's degree in any discipline with a minimum 50 per cent aggregate marks or equivalent CGPA from a recognised university.",
+                "A minimum 50 per cent aggregate marks or equivalent CGPA in both the 10th and 12th board examinations.",
+                "Foreign and NRI candidates are considered on the basis of a valid GMAT score taken in 2025 for the 2026 admission cycle.",
+                "Foreign and NRI candidates submit the KSOM application form with the requisite documents and an application fee of US $50.",
+                "Where grades are awarded instead of marks, CGPA is converted using the equivalence certified by the awarding university, or by dividing the obtained CGPA by the maximum CGPA and multiplying by 100."
+              ]
+            },
+            "applicationSteps": [
+              "Apply to the MBA through KIIT School of Management rather than the general KIIT international portal, and pay the US $50 application fee for foreign and NRI candidates.",
+              "Submit the completed KSOM application form with academic transcripts and the valid GMAT scorecard.",
+              "Attend the shortlisting stages: Group Discussion, Personal Interview and Writing Ability Test.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "High school certificate and mark sheet",
+                "10+2 certificate and mark sheet",
+                "Graduation certificate and all semester mark sheets",
+                "Valid GMAT scorecard"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over two years at the published rate the tuition total is USD 20,000 for a non-SAARC applicant and USD 16,000 for a SAARC applicant. The US $50 KSOM application fee is separate and is not part of tuition.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MBA",
+              "language": "English",
+              "details": "Delivered at KIIT School of Management, Campus-7, Bhubaneswar, with a structure and curriculum, summer internship and specialisation tracks including Capital Market and HR Plus. Final selection combines Group Discussion, Personal Interview and Writing Ability Test outcomes with career marks and entrance score."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-integrated-llb-hons",
+          "canonicalCourseSlug": "llb",
+          "officialTitle": "B.A. LL.B (Hons), BBA LL.B (Hons) and B.Sc LL.B (Hons), Five-Year Integrated",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 50000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 50000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://law.kiit.ac.in/ballb-hons/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "Bar Council of India recognition governs enrolment as an advocate in India; enrolment or practice rights in any other jurisdiction are decided by that jurisdiction's own regulator and are not conferred by the degree."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A five-year integrated honours law degree at KIIT School of Law, entered directly after twelve years of schooling. The Bar Council of India approved list of Centres of Legal Education records KIIT School of Law with approval to 2026-27, and the school offers honours specialisations in constitutional, business, international, criminal, intellectual property and taxation law.",
+            "eligibility": {
+              "intro": "KIIT sets these entry requirements for the five-year integrated law degrees in the 2026 admission cycle.",
+              "items": [
+                "Pass in 10+2 or equivalent in any stream with at least 45 per cent marks for B.A. LL.B and BBA LL.B.",
+                "For B.Sc LL.B, pass in 10+2 or equivalent in the science stream with at least 45 per cent marks.",
+                "Holders of the International Baccalaureate Diploma from the IB Organization, Geneva, are eligible wherever 10+2 is the qualifying requirement.",
+                "Candidates appearing in the qualifying examination may apply but must produce the pass certificate at counselling."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent certificate and mark sheet",
+                "Secondary school certificate and mark sheet",
+                "Science-stream mark sheet where B.Sc LL.B is the chosen stream"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over five years at the published rate the tuition total is USD 50,000 for a non-SAARC applicant and USD 40,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 to 5, integrated honours law degree",
+              "language": "English",
+              "details": "KIIT School of Law offers B.A. LL.B (Hons), BBA LL.B (Hons) and B.Sc LL.B (Hons) with honours specialisations in constitutional law, business law, international law, crime and criminology, intellectual property law and taxation law. The school runs a Legal Aid Service Clinic and a moot court programme, and is a member of the International Association of Law Schools and the Asia-Pacific Association of Law Schools."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-llm",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "Master of Laws (LL.M), One Year",
+          "durationYears": 1,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 10000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 10000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://law.kiit.ac.in/post-graduate-programmes/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "The LL.M is a postgraduate research and specialisation degree and is not a route to first enrolment as an advocate in India, which follows the recognised bachelor's law degree."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A one-year LL.M at KIIT School of Law for holders of a recognised integrated or three-year law degree. International applicants apply through the KIIT international portal and are assessed on academic records and an online interview.",
+            "eligibility": {
+              "intro": "KIIT sets these LL.M entry requirements for the 2026 admission cycle.",
+              "items": [
+                "A B.A. LL.B, BBA LL.B, B.Sc LL.B, B.L. or equivalent law degree from a recognised university.",
+                "At least 55 per cent marks in aggregate in the qualifying law degree.",
+                "Candidates appearing in the qualifying examination may apply but must produce the pass certificate at counselling."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Law degree certificate and all semester mark sheets",
+                "10+2 certificate and mark sheet",
+                "Secondary school certificate and mark sheet"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. At the published rate one year of LL.M tuition is USD 10,000 for a non-SAARC applicant and USD 8,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "One-year LL.M",
+              "language": "English",
+              "details": "Taught at KIIT School of Law alongside the integrated undergraduate honours degrees and the doctoral programme, drawing on the school's specialisation areas in constitutional law, business law, international law, crime and criminology, intellectual property law and taxation law."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-msc-biotechnology-applied-microbiology",
+          "canonicalCourseSlug": "msc-biological-sciences",
+          "officialTitle": "M.Sc. in Biotechnology or Applied Microbiology",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 20000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 20000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://www.kiit.ac.in/schools/school-of-biotechnology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "The stream choice between biotechnology and applied microbiology is made at application and is subject to seat availability in the chosen stream."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A two-year M.Sc. at the KIIT School of Biotechnology in either biotechnology or applied microbiology, taught in English. International applicants apply through the KIIT international portal on academic records and an online interview.",
+            "eligibility": {
+              "intro": "KIIT sets these M.Sc. entry requirements for the 2026 admission cycle.",
+              "items": [
+                "A bachelor's degree in any branch of science, agriculture, pharmacy, veterinary science, engineering, technology or medicine, including MBBS or BDS.",
+                "At least 55 per cent marks in the qualifying bachelor's degree.",
+                "Candidates appearing in the qualifying examination may apply but must produce the pass certificate at counselling."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and all semester mark sheets",
+                "10+2 certificate and mark sheet",
+                "Secondary school certificate and mark sheet"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over two years at the published rate the tuition total is USD 20,000 for a non-SAARC applicant and USD 16,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year M.Sc. in Biotechnology or Applied Microbiology",
+              "language": "English",
+              "details": "Taught at the KIIT School of Biotechnology, which also runs a B.Tech and a five-year biotechnology dual degree, M.Tech Biotechnology and a doctoral programme, and holds its own board of studies. Laboratory work and a supervised dissertation are central to the postgraduate structure."
+            }
+          ]
+        },
+        {
+          "slug": "kiit-master-of-public-health",
+          "canonicalCourseSlug": "mph",
+          "officialTitle": "Master of Public Health (MPH)",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 20000,
+            "annualTuitionUsd": 10000,
+            "totalTuitionUsd": 20000,
+            "verifiedAt": "2026-08-22",
+            "notes": "KIIT publishes USD 10,000 per annum for undergraduate and postgraduate courses for Foreign National, NRI, OCI and PIO applicants, and USD 8,000 per annum for applicants from the SAARC region."
+          },
+          "officialProgramUrl": "https://www.kiit.ac.in/schools/school-of-public-health/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians (NRI)",
+              "Overseas Citizens of India (OCI)",
+              "Persons of Indian Origin (PIO)"
+            ],
+            "restrictions": [
+              "The published international fee table applies only to Foreign National applicants, including NRI, OCI and PIO applicants, so the route is scoped by nationality and residency status.",
+              "Applicants from SAARC countries are placed on a separate USD 8,000 a year tuition tier for undergraduate and postgraduate courses.",
+              "Admission to medical courses other than allied medical courses is on the basis of a NEET score only, and admission to Bachelor of Architecture is on the basis of a NATA score only, so neither route is covered by this application.",
+              "An Indian Student visa does not permit employment or business activity in India for the duration of the course.",
+              "The MPH is an allied, non-clinical public health qualification and does not confer any medical or clinical registration in India or elsewhere."
+            ],
+            "notes": "KIIT scopes its published international tuition table to Foreign National applicants including NRI, OCI and PIO applicants, with a separate lower tier for SAARC nationals.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/"
+          },
+          "admissionsContent": {
+            "overview": "A two-year Master of Public Health at the KIIT School of Public Health, taught in English. The MPH is a non-clinical public health degree and does not sit behind the NEET gate that applies to KIIT medical courses; international applicants apply through the KIIT international portal.",
+            "eligibility": {
+              "intro": "KIIT accepts three separate qualifying groups for the MPH in the 2026 admission cycle, each requiring at least 50 per cent aggregate marks.",
+              "items": [
+                "A bachelor's degree in medicine, AYUSH, dentistry, nursing, pharmacy, veterinary sciences, physiotherapy or allied health sciences with at least 50 per cent aggregate marks.",
+                "Or a bachelor's degree in technology (B.Tech), public health (BPH), business administration (BBA) or law (LLB) with at least 50 per cent aggregate marks.",
+                "Or a bachelor's degree in science, life science, statistics, economics, nutrition or demography with at least 50 per cent aggregate marks.",
+                "Candidates appearing in the qualifying examination may apply but must produce the pass certificate at counselling."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the KIIT international admissions portal at international.kiit.ac.in with name, email and contact details, and verify the email address from the confirmation link sent by kiit.global@kiit.ac.in.",
+              "Log in, select the programme level, and complete the programme, personal and address sections of the application form.",
+              "Complete the educational qualifications section listing previous institutions, degrees and academic records, then upload the required documents.",
+              "Complete the declaration section and submit the application, then note the application number issued on submission.",
+              "Attend the online interview KIIT conducts to check eligibility, subject grasp and English knowledge.",
+              "Wait for the KIIT Admissions Team review, then download the offer letter from the student dashboard once it is released.",
+              "Register on the Government of India Study in India portal for the compulsory SII ID, then apply for the Student visa with the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and all semester mark sheets",
+                "10+2 certificate and mark sheet",
+                "Secondary school certificate and mark sheet"
+              ],
+              "application": [
+                "Recent passport-sized photograph",
+                "Scanned copy of the passport",
+                "English translations of any document not issued in English",
+                "Proof of English proficiency such as TOEFL or IELTS, which KIIT marks as not compulsory"
+              ]
+            },
+            "deadlinesNote": "KIIT states that the international application window runs from 1 March to 30 September each academic year, and that the international application carries no application or examination fee.",
+            "visaConsiderations": [
+              "A Student visa is required for a full-time on-campus course at a Government of India recognised institution, and is applied for with the KIIT offer letter.",
+              "A Student visa valid for more than 180 days requires FRRO or FRO registration after arrival; the deadline depends on nationality, and Nepalese and Bhutanese citizens are exempt from visa and registration requirements.",
+              "The Study in India portal issues a compulsory SII ID, and KIIT states that all students joining the university register on that portal.",
+              "The Bureau of Immigration requires a Student visa holder to open a Non-Resident Ordinary account with a recognised Indian bank and give the details to the FRRO."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "KIIT publishes tuition for international applicants in US dollars rather than rupees. Fees are quoted per annum and exclude hostel, mess and examination charges, which are confirmed in the admission offer letter. A registration fee of Rs 50,000 or USD 700, whichever is higher, is withheld from any refund made after admission but before reporting, and refunds are processed under RBI and foreign exchange regulations. Over two years at the published rate the tuition total is USD 20,000 for a non-SAARC applicant and USD 16,000 for a SAARC applicant.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year Master of Public Health",
+              "language": "English",
+              "details": "Taught at the KIIT School of Public Health, which also runs the Master of Hospital Administration and a doctoral programme, on a campus that includes Kalinga Institute of Medical Sciences, the KIIT constituent super-speciality teaching hospital."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "publicField": "summary",
+      "claimText": "Kalinga Institute of Industrial Technology, Bhubaneswar, Odisha, appears at entry 68 of the Odisha section of the UGC consolidated list of Deemed to be Universities, and every KIIT page carries the statement Deemed to be University under Section 3 of the UGC Act, 1956 with the address Patia, Bhubaneswar, Odisha 751024.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Consolidated list of Deemed to be Universities (30.11.2021)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Corroborated by the KIIT site footer on every page and by the KIIT About page, which states that university status under Section 3 of the UGC Act 1956 was granted in 2004."
+    },
+    {
+      "entity": "university",
+      "publicField": "recognitionBadges",
+      "claimText": "Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar, Odisha, is listed at entry 30 of the Odisha section of the UGC list of Deemed Universities included under Section 12(B) of the UGC Act.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - List of Deemed Universities under Section 12(B), 06.10.2017",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/List-of-Deemed-University%2012-B-06-10-2017.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "KIIT also publishes its own 12(B) certificate at https://www.kiit.ac.in/wp-content/uploads/2025/06/12-B-UGC-Certificate.pdf, which is a scanned image and not machine-readable."
+    },
+    {
+      "entity": "university",
+      "publicField": "recognitionBadges",
+      "claimText": "The National Board of Accreditation Engineering Tier I WA (Under Graduate) accredited-programmes register lists Kalinga Institute of Industrial Technology (Bhubaneswar) as ACCREDITED for Civil Engineering, Computer Science and Engineering, Electrical Engineering, Mechanical Engineering and Electronics and Telecommunication Engineering for academic years 2022-23 through 2027-28, that is upto 30-06-2028. Tier I is the Washington Accord register.",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - Engineering Tier I WA (Under Graduate) Accredited Programs register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Regulator verification: research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22). Registers re-fetched and re-confirmed directly on 2026-08-22: the page headed 'Engineering Tier I WA (Under Graduate) Accredited Programs' carries the five KIIT rows running to 30-06-2028 under the name 'Kalinga Institute of Industrial Technology (BHUBANESWAR)'. An earlier pass by this agent transposed the two UG registers and wrongly published a Tier II badge; that error is corrected here. KIIT holds NO current Tier II accreditation - the only Tier II rows are '3 YEARS W.E.F. 22-01-2008' under the older name 'KIIT UNIVERSITY (BHUBANESWAR)', which lapsed in 2011 and must not be badged. The NBA register is cumulative history, so only the Accreditation Period column evidences currency."
+    },
+    {
+      "entity": "university",
+      "publicField": "recognitionBadges",
+      "claimText": "The Bar Council of India Approved List of CLE's (Law Colleges / Universities) records 'KIIT School of Law, KIIT University, Bhubaneshwar' (page 52, Orissa) with approval of affiliation by BCI upto 2026-27.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - Approved List of CLE's (Law Colleges / Universities), uploaded 2026-08-20",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Regulator verification: research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22). The 106-page approved-CLE PDF is reached from the recognised-universities-colleges route via the BCI feed API; the PDF itself sits behind a one-hour signed S3 link, so the route page is cited rather than the link. Supersedes the earlier attribution to KIIT's own recognition statement. BCI approves LL.B.-track undergraduate law courses only - there is no BCI approval to claim for the LL.M., so no BCI claim is attached to that programme."
+    },
+    {
+      "entity": "university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NAAC workbook 'Institutions accredited by NAAC having valid accreditation as on 14-08-2025' (Universities sheet) records Kalinga Institute of Industrial Technology, AISHE U-0356, Orissa, at Current Cycle 3, Current CGPA 3.52, Current Grade A++, Date of Declaration 02-08-2022, corroborated by the 117th Standing Committee result (2 August 2022, University 3rd Cycle).",
+      "status": "verified",
+      "sourceLabel": "NAAC - Accreditation Status, valid-accreditation workbook as on 14-08-2025",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Regulator verification: research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22). The NAAC workbook publishes a Date of Declaration and NOT an expiry date, so no 'valid to' date may be written into the NAAC badge - the declaration year is what the regulator actually publishes. assessmentonline.naac.gov.in refuses connections; the main naac.gov.in accreditation-status workbook plus the Standing Committee result PDFs are the authoritative replacement source."
+    },
+    {
+      "entity": "university",
+      "publicField": "campusLifestyle",
+      "claimText": "KIIT describes its campus as a 36 sq km academic township with 30 co-located schools, more than 3,000 faculty and researchers, over 40,000 learners, 18 sports complexes and 30 food courts, and states that this includes 2,000 international students from 65 countries.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - About KIIT",
+      "sourceUrl": "https://kiit.ac.in/about/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Institution-reported figures. Country and partner counts differ between KIIT pages (65 versus 70 countries; 162, 190 and 250+ partner universities), so only figures repeated consistently across pages have been used and partner counts were omitted."
+    },
+    {
+      "entity": "university",
+      "publicField": "campusLifestyle",
+      "claimText": "KIIT reports 131 international faculty members and 65 countries represented among its students, and lists India Trek, a Global Faculty Programme, a Global Immersion Programme and credit-based study abroad programmes.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - International Affairs",
+      "sourceUrl": "https://kiit.ac.in/international-affairs/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "hostelOverview",
+      "claimText": "KIIT states that boys and girls hostels are separate, that a dedicated international hostel accommodates foreign students, that about 30 per cent of hostel rooms are air conditioned, that all hostels have attached canteens serving Indian and Continental food, and that each hostel has a 24-hour reading room and indoor and outdoor games facilities.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Hostel Facility",
+      "sourceUrl": "https://kiit.ac.in/campuslife/hostel/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "The Study at KIIT page adds single, double and triple-sharing options with air conditioning, Wi-Fi and attached bathrooms. Neither page publishes a hostel or mess price, so no accommodation cost has been stated in public copy."
+    },
+    {
+      "entity": "university",
+      "publicField": "dietarySupport",
+      "claimText": "KIIT states that a hygienic on-campus mess caters to diverse culinary preferences including multi-cuisine meals and dietary-specific options, and that each hostel has an attached canteen.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Study at KIIT",
+      "sourceUrl": "https://kiit.ac.in/study-at-kiit/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "studentSupport",
+      "claimText": "The KIIT International Relations Office states that it is the first point of contact for international students and provides services covering student visa, FRRO registration, visa extension, opening a bank account and authentication of certificates, working alongside a Dean Academics for International Students and a Faculty-in-Charge in each school.",
+      "status": "verified",
+      "sourceLabel": "KIIT International Relations Office brochure (2024)",
+      "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2024/01/IRO-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Corroborated by the live International Relations Office page and the Study at KIIT page, which list legal assistance on visa queries and registration, counselling services, travel assistance and medical support through KIMS."
+    },
+    {
+      "entity": "university",
+      "publicField": "safetyOverview",
+      "claimText": "KIIT publishes a Safety SOP Manual (Version 1.0) dated 2026 and lists an Anti-Ragging Committee, an Internal Complaints Committee, an Equal Opportunity Cell and a Student Grievance Redressal Committee, and states that a police station, banks and ATMs operate in and around the campus.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Safety SOP Manual Version 1.0",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2026/07/KIIT-Safety-SOP-Manual-Version-1.0.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Campus police station, post office, banks and ATMs are described in the KIIT International Relations Office brochure. Governance committee links are published in the sitewide footer."
+    },
+    {
+      "entity": "university",
+      "publicField": "practicalExposure",
+      "claimText": "KIIT lists Centres of Excellence run with industry including an SAP Centre of Excellence, an IBM Centre of Excellence, a Siemens Lab, an Intel Design Lab, a Tech Mahindra Design Lab, an NI Centre of Excellence and the ISRO KIIT Satellite Centre, and states that KIIT Technology Business Incubator opened in 2008 with support from the Department of Science and Technology and NSTEDB and was recognised as a Centre of Excellence in 2018.",
+      "status": "verified",
+      "sourceLabel": "KIIT International Relations Office brochure (2024)",
+      "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2024/01/IRO-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "practicalExposure",
+      "claimText": "KIIT publishes co-branded postgraduate engineering specialisations: M.Tech in Electronics Engineering (Next Generation Wireless Technology) with Ericsson, M.Tech in Automotive Electronics and Software with KPIT Technologies, Pune, and M.Tech tracks in AI and Data Science, Internet of Things and Cybersecurity in collaboration with LTIMindtree and L and T EduTech.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "practicalExposure",
+      "claimText": "KIIT reports that in 2025 more than 757 companies visited for campus placement and more than 4,621 job offers were made.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Placement",
+      "sourceUrl": "https://kiit.ac.in/training-placement/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Institution-reported placement statistics. Framed only as institutional recruiting activity; the Bureau of Immigration prohibits employment on an Indian student visa, so this must never be presented as a work entitlement for international students."
+    },
+    {
+      "entity": "university",
+      "publicField": "practicalExposure",
+      "claimText": "KIIT states that medical facilities on campus are provided by the super-speciality hospital attached to Kalinga Institute of Medical Sciences, a KIIT constituent, which provides free medical consultancy to KIIT students.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Hospital",
+      "sourceUrl": "https://kiit.ac.in/campuslife/hospital/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Bed counts differ across KIIT pages (1,300 on the campus-life hospital page, 2,600 on the About page), so no bed figure has been published."
+    },
+    {
+      "entity": "university",
+      "publicField": "cityProfile",
+      "claimText": "The Airports Authority of India operates Biju Patnaik International Airport, Bhubaneswar (Odisha), and lists the Lingaraj Temple and the Odisha State Museum among the attractions near the airport.",
+      "status": "verified",
+      "sourceLabel": "Airports Authority of India - Bhubaneswar Airport",
+      "sourceUrl": "https://www.aai.aero/en/airports/bhubaneswar",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "cityProfile",
+      "claimText": "The Odisha Department of Tourism lists Bhubaneswar among the major cities of Odisha, alongside Cuttack, Brahmapur, Puri, Rourkela and Sambalpur.",
+      "status": "verified",
+      "sourceLabel": "Department of Tourism, Government of Odisha - Bhubaneswar",
+      "sourceUrl": "https://odishatourism.gov.in/content/tourism/en/discover/districts/khordha/bhubaneswar.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "whyChoose",
+      "claimText": "KIIT states that under the KIIT University International Scholarship Programme it offers both 100 per cent and 50 per cent scholarships on the total fee for international students, covering tuition, books, air-conditioned accommodation, multi-cuisine mess, 24/7 library and internet access, and also laptop, registration and examination fees, awarded on merit and university eligibility criteria, with MBBS, Dental, Nursing and Architecture courses excluded.",
+      "status": "verified",
+      "sourceLabel": "KIIT International Relations Office brochure (2024)",
+      "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2024/01/IRO-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Scholarship quantum and coverage are stated by the university and are subject to change; no award rate or number of awards is published, so no likelihood of award may be implied."
+    },
+    {
+      "entity": "university",
+      "publicField": "thingsToConsider",
+      "claimText": "The KIIT international and NRI admission fee table states that it is applicable only for Foreign National (including NRI/OCI/PIO) applicants, and carries the note that admission to medical courses (except allied medical) and Architecture is on the basis of NEET/NATA score only.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "thingsToConsider",
+      "claimText": "The Bureau of Immigration states that students on an Indian Student visa are not permitted to undertake employment or business activity in India.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "thingsToConsider",
+      "claimText": "The KIIT refund policy states that at any time after admission but before reporting, total fees are refunded excluding a registration fee of Rs 50,000 or USD 700, whichever is higher, and that refunds are made in accordance with RBI and foreign exchange regulations.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees, Refund Policy",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "faq",
+      "claimText": "The KIIT how-to-apply guide for international applicants states that an online interview is conducted to check eligibility, subject grasp and English knowledge, and notes that all students who join KIIT are required to register on the Study in India website.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "faq",
+      "claimText": "The KIIT international admissions page lists documents required at application as a recent passport-sized photograph, a scanned copy of the passport, academic transcripts and certificates from previous institutions, proof of English proficiency such as TOEFL or IELTS marked as not compulsory, and English-translated documents where the applicant is from a non-English-speaking country.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - International Admission",
+      "sourceUrl": "https://kiit.ac.in/international-admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "faq",
+      "claimText": "The KIIT International Relations Office brochure states that the KIIT international application is available free of charge to all foreign nationals and NRI candidates and that the application window for each academic year runs from 1 March to 30 September.",
+      "status": "verified",
+      "sourceLabel": "KIIT International Relations Office brochure (2024)",
+      "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2024/01/IRO-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Corroborated by the KIITEE international application landing page, which carries the line No Application/Examination Fees. The separate KIITEE international calendar page still shows 2023 dates and was disregarded as stale."
+    },
+    {
+      "entity": "university",
+      "publicField": "faq",
+      "claimText": "KIIT academic calendars published for 2025-26 show an Autumn Academic Session opening on 22 August 2025 with reporting, registration and academic induction on 22 and 23 August, and a Spring Academic Session opening on 2 January 2026.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar, School of Computer Application",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university"
+    },
+    {
+      "entity": "university",
+      "publicField": "recognitionBadges",
+      "claimText": "The UGC Institution of Eminence list at ioe.ugc.ac.in publishes twelve notified institutions, eight public and four private, each with a Date of Notification. Kalinga Institute of Industrial Technology does not appear in either table, so KIIT holds no Institution of Eminence status.",
+      "status": "omit",
+      "sourceLabel": "UGC - List of Institutions of Eminence",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Regulator verification: research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22). KIIT announced a Letter of Intent in 2019; a Letter of Intent is a pre-notification step, is not published on the UGC list and must never be rendered as Institution of Eminence. No IoE claim appears anywhere in this payload, including narrative fields, whyChoose and FAQ answers."
+    },
+    {
+      "entity": "university",
+      "publicField": "recognitionBadges",
+      "claimText": "The National Board of Accreditation Tier II (Under Graduate) register lists KIIT UNIVERSITY (BHUBANESWAR) for Civil, Electrical, Mechanical, Electronics and Telecommunication and Computer Science and Engineering with an accreditation period of 3 YEARS W.E.F. 22-01-2008, which lapsed in 2011.",
+      "status": "omit",
+      "sourceLabel": "National Board of Accreditation - Tier II (Under Graduate) Accredited Programs register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "internalNotes": "Regulator verification: research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22). Recorded so the lapsed Tier II rows are not mistaken for current status: KIIT holds NO current Tier II accreditation, and no Tier II badge is published. The live accreditation is Tier I (Washington Accord) to 30-06-2028 under the newer registered name Kalinga Institute of Industrial Technology."
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "Pass in 10+2 or its equivalent with at least 60 per cent marks in physics, chemistry and mathematics taken together; candidates must have passed 10+2 in 2024 or 2025 or be appearing in 2026, must have studied in regular full-time formal education, and must have been born on or after 1 July 2005.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.1",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-computer-science-engineering",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-computer-science-engineering",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "Pass in 10+2 or its equivalent with at least 60 per cent marks in physics, chemistry and mathematics taken together; candidates must have passed 10+2 in 2024 or 2025 or be appearing in 2026, must have studied in regular full-time formal education, and must have been born on or after 1 July 2005.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.1",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-civil-engineering",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-civil-engineering",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "Pass in 10+2 or its equivalent with at least 60 per cent marks in physics, chemistry and mathematics taken together; candidates must have passed 10+2 in 2024 or 2025 or be appearing in 2026, must have studied in regular full-time formal education, and must have been born on or after 1 July 2005.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.1",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-mechanical-engineering",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-mechanical-engineering",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-btech-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "The candidate must be a graduate in any discipline with minimum 50 per cent aggregate marks or equivalent CGPA, and must also have minimum 50 per cent aggregate marks in the 10th and 12th board examinations. Foreign and NRI candidates have the same eligibility, submit an application fee of US $50, and are considered for admission on the basis of their valid GMAT scores appeared in year 2025.",
+      "status": "verified",
+      "sourceLabel": "KIIT School of Management - MBA Eligibility and Selection Process",
+      "sourceUrl": "https://ksom.ac.in/programs/mba-full-time/eligibility-and-selection-process/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-mba"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "KSOM shortlists candidates on their KIITEE Management, KIITEE, CAT, XAT, CMAT, MAT or GMAT scores for MBA 2026 admission for a Group Discussion, Personal Interview and Writing Ability Test, and makes the final selection on performance in those stages together with career marks and entrance score.",
+      "status": "verified",
+      "sourceLabel": "KIIT School of Management - MBA Eligibility and Selection Process",
+      "sourceUrl": "https://ksom.ac.in/programs/mba-full-time/eligibility-and-selection-process/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-mba"
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-mba",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-mba"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "10+2 pass or equivalent in any stream with at least 45 per cent marks for B.A. LL.B and BBA LL.B; for B.Sc LL.B the candidate must have passed 10+2 or equivalent in the science stream with at least 45 per cent marks.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.5",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-integrated-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-integrated-llb-hons",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-integrated-llb-hons",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-integrated-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "Candidate should have passed B.A. LL.B, BBA LL.B, B.Sc LL.B or B.L. degree or an equivalent degree from a recognised university and must have secured at least 55 per cent of marks in aggregate.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.27",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-llm"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-llm",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-llm",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-llm"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "Bachelor's degree in any branch of Science, Agriculture, Pharmacy, Veterinary, Engineering, Technology or Medicine (MBBS/BDS) with at least 55 per cent marks.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.25",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-msc-biotechnology-applied-microbiology"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-msc-biotechnology-applied-microbiology",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-msc-biotechnology-applied-microbiology",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-msc-biotechnology-applied-microbiology"
+    },
+    {
+      "entity": "programme",
+      "publicField": "eligibility",
+      "claimText": "Bachelor's degree in Medicine, AYUSH, Dentistry, Nursing, Pharmacy, Veterinary Sciences, Physiotherapy or Allied Health Sciences with minimum 50 per cent marks; or a bachelor's degree in Technology, Public Health, Business Administration or Law with minimum 50 per cent marks; or a bachelor's degree in Science, Life Science, Statistics, Economics, Nutrition or Demography with minimum 50 per cent marks.",
+      "status": "verified",
+      "sourceLabel": "KIITEE 2026 - Eligibility Criteria, clause 3.28",
+      "sourceUrl": "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "publicField": "admissions",
+      "claimText": "The KIIT international application runs through international.kiit.ac.in: the applicant registers, verifies the email sent from kiit.global@kiit.ac.in, completes the programme, personal, address, educational qualification, upload and declaration sections, and submits. An online interview is conducted to check eligibility, subject grasp and English knowledge, after which the KIIT Admissions Team releases the offer letter to the student dashboard.",
+      "status": "verified",
+      "sourceLabel": "KIIT - How To Apply for KIIT International Application (2025)",
+      "sourceUrl": "https://static.npfs.co/accounts/5163/documents/2025/8/4/e7e0a24cb2c84e3ab57f4fc6e6ca152a_How_to_apply_KIIT%20(1).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-master-of-public-health",
+      "internalNotes": "Document list corroborated on the KIIT International Admission page, which marks TOEFL/IELTS proof as not compulsory."
+    },
+    {
+      "entity": "programme",
+      "publicField": "intake",
+      "claimText": "KIIT academic calendars show an Autumn Academic Session opening on 22 August with reporting, registration and academic induction on the opening two days, and a Spring Academic Session opening on 2 January, so the main entry point for a new cohort is the August Autumn session.",
+      "status": "verified",
+      "sourceLabel": "KIIT Deemed to be University - Academic Calendar",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2025/08/Academic-Calendar_Computer-Application.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-master-of-public-health",
+      "internalNotes": "The KIIT International Relations Office brochure states an international application window of 1 March to 30 September; the KIITEE international calendar page is stale and still displays 2023 dates, so it was not used."
+    },
+    {
+      "entity": "programme",
+      "publicField": "fee",
+      "claimText": "The KIIT International and NRI Admission Fees table, applicable only for Foreign National (including NRI/OCI/PIO) applicants, publishes USD 10,000 per annum for undergraduate courses, USD 10,000 per annum for postgraduate courses, USD 4,000 per annum for PhD courses and USD 8,000 per annum for UG and PG courses for SAARC applicants, with a registration fee of Rs 50,000 or USD 700, whichever is higher, retained from refunds.",
+      "status": "verified",
+      "sourceLabel": "KIITEE - International and NRI Admission Fees",
+      "sourceUrl": "https://kiitee.kiit.ac.in/international-application/international-nri-admission-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "universitySlug": "kiit-deemed-to-be-university",
+      "programmeSlug": "kiit-master-of-public-health"
+    }
+  ]
+}

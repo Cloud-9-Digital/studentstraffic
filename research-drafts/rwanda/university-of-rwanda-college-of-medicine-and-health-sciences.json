@@ -1,0 +1,75 @@
+{
+  "countrySlug": "rwanda",
+  "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+  "schoolName": "University of Rwanda College of Medicine and Health Sciences",
+  "cityName": "Kigali / Huye",
+  "priority": "high",
+  "officialWebsite": "https://cmhs.ur.ac.rw/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — the University of Rwanda has an official six-year MBChB listing at its College of Medicine and Health Sciences (School of Medicine and Pharmacy, Huye), but the available current official programme record reports tuition as N/A. The admissions pages substantiate Rwanda-school subject combinations and a 2024 domestic cut-off/exam/interview route, yet do not provide a current international MBChB fee schedule, current cycle dates, a programme-specific international route, a confirmed instructional-language statement, or a current programme-accreditation/overseas-recognition record. These omissions make a commercial admissions page unsafe to publish.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Rwanda MBBS programme record",
+        "url": "https://efiling.ur.ac.rw/program/11",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists MBBS in the School of Medicine and Pharmacy, CMHS; duration six years; fee range displayed as N/A RWF; admissions currently closed."
+      },
+      {
+        "label": "University of Rwanda 2025 entry requirements",
+        "url": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements.pdf",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists MBChB at Huye, full-time six years, with PCB, MCB or Associate Nurse Programme combinations for the stated cohort."
+      },
+      {
+        "label": "University of Rwanda entry-requirements portal",
+        "url": "https://applications.ur.ac.rw/nesa/public-details/entry-requirements.php",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists MBBS programme code BH8MED and eligible Rwanda secondary-school combinations; it is not a complete international admissions route."
+      },
+      {
+        "label": "Rwanda HEC higher-learning institutions list",
+        "url": "https://www.hec.gov.rw/fileadmin/user_upload/HEC/Accreditation/Heads_of_HLIs_operating_in_Rwanda_2025.pdf",
+        "kind": "regulator",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists University of Rwanda among public higher-learning institutions operating in Rwanda."
+      },
+      {
+        "label": "UR CMHS official college site",
+        "url": "https://cmhs.ur.ac.rw/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms CMHS contact and directs admissions enquiries to the UR admissions route."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Rwanda College of Medicine and Health Sciences",
+    "type": "Public",
+    "programs": [
+      {
+        "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBChB/MBBS)",
+        "duration": "6 years",
+        "campus": "Huye",
+        "feeStatus": "not published in current official programme record",
+        "publishable": false
+      }
+    ],
+    "missingForPublication": [
+      "current international tuition and mandatory-fee schedule",
+      "current international MBChB application route, intake and deadline",
+      "confirmed programme instructional language",
+      "programme-specific current accreditation and overseas recognition evidence",
+      "international accommodation and support details"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public narrative drafted. A fee or international-route claim would be unsupported by the current source bundle."
+  }
+}

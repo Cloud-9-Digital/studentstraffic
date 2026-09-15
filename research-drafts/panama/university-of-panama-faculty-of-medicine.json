@@ -1,0 +1,72 @@
+{
+  "countrySlug": "panama",
+  "universitySlug": "university-of-panama-faculty-of-medicine",
+  "schoolName": "University of Panama Faculty of Medicine",
+  "cityName": "Panama City",
+  "priority": "medium",
+  "officialWebsite": "https://facmedicina.up.ac.pa/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — The University of Panama Faculty of Medicine runs the Doctor en Medicina programme. Its published 2027 Faculty admission information and university news confirm a competitive admissions process that accommodates foreign places by examination score; the current Faculty page is specifically for 2027. The Faculty's official materials identify the 2018 updated curriculum, and a September 2025 university report says the course is accredited through 2028 and has an endorsement from COMAEM. However, no current 2026/27 full fee schedule for Doctor en Medicina, explicit language-of-instruction statement, foreign-student visa/accommodation/support terms, or audience-relevant graduate licensing pathway was found. The candidate must remain a research hold.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Panama Faculty of Medicine — Admissions 2027",
+        "url": "https://facmedicina.up.ac.pa/admision",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Faculty page publishes its 2027 admissions process and contact information."
+      },
+      {
+        "label": "University of Panama General Admissions — FAQs",
+        "url": "https://diradmision.up.ac.pa/node/70",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms Doctor en Medicina is a first-option-only Faculty of Medicine course and that the 2027 admission tests are virtual."
+      },
+      {
+        "label": "University of Panama Faculty of Medicine — Degree information",
+        "url": "https://facmedicina.up.ac.pa/licenciaturas",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms Doctor en Medicina and notes that the plan was updated in 2018 under plan 0004."
+      },
+      {
+        "label": "University of Panama — Faculty of Medicine graduation report",
+        "url": "https://launiversidad.up.ac.pa/node/4833",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "September 2025 official report states that the programme is accredited through 2028 and has COMAEM endorsement; it also reports graduates' performance in Panama's Basic Medical Certification examinations."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Panama Faculty of Medicine",
+    "city": "Panama City",
+    "type": "Public",
+    "officialWebsite": "https://facmedicina.up.ac.pa/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Current official fee schedule for Doctor en Medicina",
+      "Explicit language-of-instruction statement",
+      "Foreign-student immigration, accommodation and student-support information",
+      "Audience-relevant recognition and graduate-licensing pathway"
+    ],
+    "notes": "Foreign admission places are documented in the University's admissions material, but this alone does not establish a full international enrolment package. The programme-accreditation statement is recorded as the University's claim and is not converted into external licensure advice."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "No public-facing narrative is drafted. The evidence supports a genuine medical course and admissions process but not the full, current and audience-specific information needed for a high-integrity study-abroad page."
+  }
+}

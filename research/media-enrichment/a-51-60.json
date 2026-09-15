@@ -1,0 +1,212 @@
+[
+  {
+    "universitySlug": "california-institute-of-technology",
+    "universityName": "California Institute of Technology",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Wikimedia Commons' dedicated \"California Institute of Technology logos\" category has a PD-status wordmark file, resolving the missing logo without needing Cloudinary/rights-clearance workflow referenced in the first-pass hold reason.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/california-institute-of-technology/logo",
+      "cover": "universities/california-institute-of-technology/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Caltech_Logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+      "proposedPublicId": "california-institute-of-technology-logo"
+    }
+  },
+  {
+    "universitySlug": "cambrian-college-nursing",
+    "universityName": "Cambrian College",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The only Commons logo the first pass could have found (\"Cambrian School and College logo 002.jpg\") is a different, unrelated institution and was correctly not used. Cambrian College's own site header renders its logo as inline SVG; found the identical logo as a standalone file at /logo-reverse.svg (the header's real logo, not the decorative /logo-watermark.svg shield), plus a clean, people-free exterior photo on the About page..",
+    "proposedPublicIds": {
+      "logo": "universities/cambrian-college-nursing/logo",
+      "cover": "universities/cambrian-college-nursing/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://cambriancollege.ca/logo-reverse.svg",
+      "sourceType": "official",
+      "rightsBasis": "Standalone SVG served from Cambrian College's own domain; confirmed it is the identical vector to the inline SVG used in the site's own header logo link (path data matches exactly).",
+      "proposedPublicId": "cambrian-college-nursing-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://media.cambriancollege.ca/uploads/2024/01/03125313/CambrianCollege_About_Exterior-16-1024x684.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Direct campus-exterior photo served from Cambrian College's own media CDN, embedded on the official About Cambrian page.",
+      "proposedPublicId": "cambrian-college-nursing-cover"
+    }
+  },
+  {
+    "universitySlug": "carleton-university-nursing",
+    "universityName": "Carleton University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Carleton University Nursing is a Carleton program; applied the parent institution's Wikimedia Commons logo and a recent (2022) CC-BY-SA campus photo, neither checked in the first pass..",
+    "proposedPublicIds": {
+      "logo": "universities/carleton-university-nursing/logo",
+      "cover": "universities/carleton-university-nursing/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Carleton_University_Logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+      "proposedPublicId": "carleton-university-nursing-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/CarletonUniversity2022.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+      "proposedPublicId": "carleton-university-nursing-cover"
+    }
+  },
+  {
+    "universitySlug": "carnegie-mellon-university",
+    "universityName": "Carnegie Mellon University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Wikimedia Commons' \"Logos of Carnegie Mellon University\" category has a PD-status stacked wordmark, resolving the logo without needing a rights-cleared Cloudinary asset as the first pass required.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/carnegie-mellon-university/logo",
+      "cover": "universities/carnegie-mellon-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/CMU_logo_stack_cmyk_red.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+      "proposedPublicId": "carnegie-mellon-university-logo"
+    }
+  },
+  {
+    "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+    "universityName": "Carol Davila University of Medicine and Pharmacy",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Cover resolved via the university's Wikimedia Commons category. Logo remains unresolved: the only Commons file tagged to this university, Sigla_SSMB.jpg, is verified by its own file description to be the logo of the Bucharest Medical Students' Society (a student organisation), not the university's own emblem, so it was deliberately excluded rather than mis-applied. Left logo on hold.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/carol-davila-university-of-medicine-and-pharmacy/logo",
+      "cover": "universities/carol-davila-university-of-medicine-and-pharmacy/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fosta_Facultate_de_Medicina_azi_Universitatea_de_Medicina_si_Farmacie%2C_Bd._Eroii_Sanitari_nr._8%2C_sect._5%2C_Bucuresti.JPG",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, CC BY-SA 3.0 Romania; this is also the current Wikipedia infobox image for the university.",
+      "proposedPublicId": "carol-davila-university-of-medicine-and-pharmacy-cover"
+    }
+  },
+  {
+    "universitySlug": "case-western-reserve-university",
+    "universityName": "Case Western Reserve University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Wikimedia Commons' CWRU logo category and main category (not checked in the first pass) have a PD wordmark and a freely-licensed campus photo..",
+    "proposedPublicIds": {
+      "logo": "universities/case-western-reserve-university/logo",
+      "cover": "universities/case-western-reserve-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/CWRU_Two-line_horizontal_logo_Blue.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+      "proposedPublicId": "case-western-reserve-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Case_western_reserve_campus_2005.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, dual-licensed CC BY-SA 3.0 Unported and GNU Free Documentation License 1.2+.",
+      "proposedPublicId": "case-western-reserve-university-cover"
+    }
+  },
+  {
+    "universitySlug": "catholic-university-our-lady-of-good-counsel-unizkm",
+    "universityName": "Catholic University Our Lady of Good Counsel",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Live unizkm.al returns 403 to direct fetches (matching the general access trouble suggested by the first-pass hold). Used the Wayback Machine (archive.org/wayback/available, then verified the im_ asset URL) to recover the header logo file path from the archived HTML. Cover remains on hold: the archived homepage only exposes unlabeled numeric-ID news/media thumbnails, not a clean campus photo.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/catholic-university-our-lady-of-good-counsel-unizkm/logo",
+      "cover": "universities/catholic-university-our-lady-of-good-counsel-unizkm/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://web.archive.org/web/20260305135211im_/https://www.unizkm.al/unizkm/img/logo-header_en.png",
+      "sourceType": "official",
+      "rightsBasis": "Official header logo image, recovered via Wayback Machine snapshot of unizkm.al/en (the live site returned HTTP 403 to direct fetch during this pass); the archived asset URL itself was verified to resolve.",
+      "proposedPublicId": "catholic-university-our-lady-of-good-counsel-unizkm-logo"
+    }
+  },
+  {
+    "universitySlug": "catolica-medical-school",
+    "universityName": "Catolica Medical School",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Católica Medical School (fm.ucp.pt) is a school of Universidade Católica Portuguesa and uses the parent \"Católica\" brand identity rather than its own separate mark; applied the parent university's current Commons-licensed logo, which is also the Wikipedia infobox logo for Catholic University of Portugal. Cover remains on hold: fm.ucp.pt returned no usable image in this pass.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/catolica-medical-school/logo",
+      "cover": "universities/catolica-medical-school/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CATOLICA_Logotipo.png",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (\"Nova identidade gráfica da Católica\" - the current graphic identity of Universidade Católica Portuguesa as a whole), CC BY-SA 4.0 International.",
+      "proposedPublicId": "catolica-medical-school-logo"
+    }
+  },
+  {
+    "universitySlug": "caucasus-international-university",
+    "universityName": "Caucasus International University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): ciu.edu.ge's homepage is a client-rendered SPA shell with no images in the static HTML, which is likely why the first pass found nothing. Fetching an inner page (/en/about) directly revealed the CMS-rendered markup, exposing both a direct logo SVG and a header banner image hosted on the site's own admin subdomain.",
+    "logo": {
+      "sourceUrl": "https://admin.ciu.edu.ge/uploads/ciu_logo_dfbc4c5b14.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official logo file served from CIU's own CMS asset host (admin.ciu.edu.ge), referenced directly in the site's page markup.",
+      "proposedPublicId": "caucasus-international-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://admin.ciu.edu.ge/uploads/medium_header_mobile_302132545c.png",
+      "sourceType": "official",
+      "rightsBasis": "Official header/banner image served from CIU's own CMS asset host, used as the og:image for the site's About page.",
+      "proposedPublicId": "caucasus-international-university-cover"
+    }
+  },
+  {
+    "universitySlug": "caucasus-medicine-school",
+    "universityName": "Caucasus Medicine School",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Identity correction: \"Caucasus Medicine School\" is a school of Caucasus University (cu.edu.ge/en/schoolss/chs), a completely different institution from Caucasus International University (ciu.edu.ge) despite the similar name; the first-pass hold reason does not make this distinction. Found a school-specific logo (CMS-mainlogo.png) on the school's own page. Cover remains outstanding: the school page only uses its logo as an og:image, with no separate campus/building photo identified.",
+    "logo": {
+      "sourceUrl": "https://cu.edu.ge/files/logo/CMS-mainlogo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official school-specific logo file served directly from Caucasus University's own domain (cu.edu.ge), on the Caucasus Medicine School's own page.",
+      "proposedPublicId": "caucasus-medicine-school-logo"
+    }
+  }
+]

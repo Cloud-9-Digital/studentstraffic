@@ -1,0 +1,398 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Kragujevac Faculty of Medical Sciences maps its Integrated Academic Studies of Medicine (IASM) programme to this category: a direct-entry, single-cycle six-year programme leading to the Doctor of Medicine (MD) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "serbia",
+      "slug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "name": "University of Kragujevac Faculty of Medical Sciences",
+      "city": "Kragujevac",
+      "type": "Public",
+      "establishedYear": 1977,
+      "officialWebsite": "https://medf.kg.ac.rs/en/",
+      "mediaAttribution": {},
+      "summary": "University of Kragujevac Faculty of Medical Sciences has run Doctor of Medicine instruction since 1977 and offers a direct-entry, six-year English-medium Integrated Academic Studies of Medicine (IASM) programme, listed in the WHO World Directory of Medical Schools with ECFMG eligibility from 1985 onward. Its accreditor, Serbia's National Accreditation Body, most recently confirmed the study programme's accredited status in April 2023.",
+      "campusLifestyle": "The English-track IASM programme runs a genuinely active international cohort -- the Faculty's published 2026/27 final ranking list for its second admission round names real applicants from multiple countries, evidence of an operating, not merely advertised, international intake. Seats are offered across two rounds each cycle (107 in the first round, 78 in the second round for 2026/27), reflecting typical partial-fill patterns rather than a shortfall in demand.",
+      "cityProfile": "Kragujevac is a major city in central Serbia. The Faculty is associated with the University Clinical Centre of Kragujevac, a major regional hospital, and has more recently added the Dedinje Cardiovascular Institute in Belgrade as an additional teaching base (2022).",
+      "practicalExposure": "The six-year, 360-ECTS Integrated Academic Studies of Medicine programme (45 mandatory plus 38 elective courses, of which students choose 12) is taught entirely in English. Graduate competencies explicitly require clinical experience in a hospital-based healthcare setting under appropriate supervision. Clinical teaching is associated with the University Clinical Centre of Kragujevac, and the Faculty added the Dedinje Cardiovascular Institute in Belgrade as a further teaching base in 2022. A detailed year-by-year breakdown of which clinical years are spent at which named hospital department was not published at a level of confidence to state here. Graduates receive the Doctor of Medicine (MD) qualification.",
+      "hostelOverview": "University dormitories exist in Kragujevac, but demand regularly exceeds capacity and admission is not centrally guaranteed; in practice, international students use private rental accommodation, typically averaging EUR 150-200 per month for a single-room apartment excluding utilities. The university's International Relations Office (erasmus@kg.ac.rs) helps international students find and vet private landlords.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published for international Medicine students. Food costs should be planned as part of an independent living-cost budget alongside private accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. International applicants can direct queries to the Faculty of Medical Sciences admissions office or the university's International Relations Office for day-to-day support.",
+      "studentSupport": "The University of Kragujevac's International Relations Office (erasmus@kg.ac.rs) supports incoming international students, including a Buddy Network for settling in and assistance finding private accommodation. Faculty-level admissions queries go through the Faculty of Medical Sciences directly (phias@fmn.kg.ac.rs).",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000284), currently operational, with ECFMG-certification eligibility for graduates from 1985 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "Study-programme accreditation from Serbia's National Accreditation Body (NAT), itself recognized by the World Federation for Medical Education, confirmed 25 April 2023.",
+        "A demonstrably active international cohort, evidenced by the Faculty's own published 2026/27 ranking list naming real applicants from multiple countries.",
+        "A clearly published, official 2026/27 fee-decision document covering tuition, entrance-exam fee and first-installment amounts.",
+        "Clinical teaching associated with the University Clinical Centre of Kragujevac, plus a newer teaching-base partnership with the Dedinje Cardiovascular Institute in Belgrade (2022)."
+      ],
+      "thingsToConsider": [
+        "Serbia is not an EU member state, so this degree does not carry the automatic EU-wide recognition that an EU-member country's medical degree carries; graduates should confirm their target country's own recognition or nostrification process.",
+        "Third-party marketing/aggregator sites quote a lower EUR 5,000/year tuition figure that conflicts with the official 2026/27 admissions document's confirmed EUR 6,000/year -- rely on the official figure.",
+        "University dormitory places are not reliably available to international students in practice; budget for independent private-rental housing.",
+        "No confirmed scholarship specifically for international Medicine students was found, and no refund policy is published for tuition payments.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a combined Biology, Chemistry and interview entrance assessment, with no standardized-test-based alternative admission route.",
+        "Applicants comfortable arranging their own private housing rather than relying on university-provided dormitories.",
+        "Families able to fund the EUR 6,000 annual tuition and comfortable applying through direct email or in-person submission to the Faculty."
+      ],
+      "industryPartners": [
+        "University Clinical Centre of Kragujevac",
+        "Dedinje Cardiovascular Institute, Belgrade"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000284), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1985-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Serbia National Accreditation Body (NAT), recognized by the World Federation for Medical Education (WFME) — study programme accredited 25 April 2023"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — University of Kragujevac Faculty of Medical Sciences listing", "url": "https://search.wdoms.org/Home/SchoolDetail/F0000284" },
+        { "label": "Faculty of Medical Sciences Kragujevac — official 2026/27 IASM second-round admissions and fee decision (PDF)", "url": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is an Integrated Academic Studies of Medicine programme -- admission follows directly from a 4-year grammar school, or a medical/health or veterinary vocational secondary school, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the academic title Doctor of Medicine (MD)."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (12 semesters, 360 ECTS credits), with 45 mandatory and 38 elective courses (12 electives chosen by the student), taught entirely in English."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 6,000 per year for foreign citizens for the 2026/27 cohort, per the Faculty's official admissions and fee decision document; a first installment of EUR 3,000 is due at enrollment."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a EUR 100 entrance-exam fee for foreign candidates. No refund policy is published in the official fee document."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A Biology test (20 questions), a Chemistry test (20 questions) and an interview (up to 20 points), combined with twice the average high-school grade (up to 40 points) for a maximum of 100 points; a minimum of 30 points is required to enroll. Students who placed top-3 nationally in a biology or chemistry olympiad are exempted from the relevant test."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "The academic year follows the standard Serbian Winter/Spring semester calendar. For 2026/27, the second admission round's document-submission window ran 20-24 July 2026 with the online entrance exam on 27 July 2026; a further cycle's exact dates were not yet published at the time of research. Confirm current dates directly with the Faculty."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "University dormitories exist but are oversubscribed and not reliably available to international students in practice. Most international students arrange private rental housing, typically around EUR 150-200 per month, with support from the university's International Relations Office."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — University of Kragujevac Faculty of Medical Sciences listing",
+          "url": "https://search.wdoms.org/Home/SchoolDetail/F0000284",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding/instruction-start years, ECFMG graduation-year eligibility and NAT accreditation status."
+        },
+        {
+          "label": "Faculty of Medical Sciences Kragujevac — official 2026/27 IASM second-round admissions and fee decision (PDF)",
+          "url": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026/27 tuition, entrance-exam fee, first-installment amount, admissions steps and required documents; official Faculty decision document."
+        },
+        {
+          "label": "Faculty of Medical Sciences Kragujevac — IASM programme structure and competencies pages",
+          "url": "https://medf.kg.ac.rs/iasm/structure.php",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, curriculum structure, ECTS breakdown and graduate competencies."
+        },
+        {
+          "label": "University of Kragujevac — official Accommodation page (International Relations Office)",
+          "url": "https://en.kg.ac.rs/accommodation.php",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for dormitory availability and private-accommodation guidance for international students."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Integrated Academic Studies of Medicine (IASM)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 36000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition for foreign citizens: EUR 6,000/year, per the Faculty's official second-round admissions and fee decision document. First installment of EUR 3,000 is due at enrollment; the remaining-balance due date is not specified in the document. A separate EUR 100 entrance-exam fee applies for foreign candidates. Total is calculated as the annual figure times 6 years -- not published as a lump sum. Third-party marketing sites quote a lower, outdated EUR 5,000/year figure; the official document (EUR 6,000) is treated as authoritative. No refund policy was published."
+          },
+          "officialProgramUrl": "https://medf.kg.ac.rs/iasm/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed a 4-year grammar school, or a medical/health or veterinary vocational secondary school, with English proficiency at B2 level or higher"
+            ],
+            "restrictions": [
+              "Admission is ranked on the Faculty's own Biology test, Chemistry test and interview, combined with secondary-school grades -- no standardized-test-based alternative route is offered",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "Candidates who placed top-3 nationally (or in an international biology/chemistry olympiad) as a 3rd/4th-year high-schooler are exempted from the relevant entrance-exam subject and awarded maximum points for it.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit documents in person or by email to the Faculty, pay the entrance-exam fee, sit an online Biology and Chemistry test plus an interview, and are ranked by combined exam score and secondary-school grades; admitted candidates then submit further documents and a first tuition installment to confirm enrollment.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education (grammar school, or a medical/health or veterinary vocational school), English proficiency at B2 level, and a combined score of at least 30 out of 100 points across secondary-school grades and the Faculty's own entrance assessment.",
+              "items": [
+                "Secondary-school completion certificate/diploma, submitted to Serbia's National Agency for Academic Recognition for recognition",
+                "English-language proficiency at B2 level or higher, or proof of prior education conducted in English",
+                "Biology and Chemistry tests (20 questions each) plus an interview (up to 20 points), combined with twice the average high-school grade (up to 40 points); minimum 30 of 100 points to enroll",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the application form and required documents in person (Faculty of Medical Sciences, room 2, Svetozara Markovica 69, Kragujevac) or by email to phias@fmn.kg.ac.rs, within the published submission window",
+              "Pay the EUR 100 entrance-exam fee by bank transfer",
+              "Sit the online Biology and Chemistry entrance exam, followed by an interview on the same day",
+              "Check the published ranking list; use the 24-hour complaint window with the Enrollment Commission if needed",
+              "If admitted, submit enrollment documents and pay the EUR 3,000 first tuition installment to confirm the seat"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original secondary-education documents translated into Serbian by a certified court translator",
+                "Proof of submission to Serbia's National Agency for Academic Recognition, with the recognition decision to follow before the academic year starts"
+              ],
+              "application": [
+                "Scanned passport",
+                "Medical certificate",
+                "English B2 proficiency proof",
+                "Proof of entrance-exam-fee payment",
+                "Certificate of residence and health insurance certificate, submitted with enrollment documents"
+              ]
+            },
+            "deadlinesNote": "2026/27 second admission round: document submission 20-24 July 2026; online entrance exam and interview 27 July 2026. A further round's exact dates were not yet published at the time of research -- confirm current dates directly with the Faculty.",
+            "visaConsiderations": [
+              "Confirm current Serbian student-visa and residence-certificate requirements directly with the Faculty, since these are part of the enrollment document checklist."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026/27 cohort is EUR 6,000 per year for foreign citizens, per the Faculty's official second-round admissions and fee decision document. A EUR 100 entrance-exam fee and a EUR 3,000 first tuition installment apply separately; no refund policy was published. Third-party marketing sites quote an outdated, lower EUR 5,000 figure that should not be relied on.",
+          "teachingPhases": [
+            {
+              "phase": "6-year Integrated Academic Studies of Medicine programme",
+              "language": "English",
+              "details": "Full 6-year, 360-ECTS programme (45 mandatory plus 38 elective courses) taught entirely in English, with mandatory hospital-based clinical experience associated with the University Clinical Centre of Kragujevac and, since 2022, the Dedinje Cardiovascular Institute in Belgrade; a detailed year-by-year clinical rotation breakdown was not published by the Faculty at a verifiable level of detail."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "publicField": "identity",
+      "claimText": "Doctor of Medicine instruction began 1977; the institution operated under the name 'University of Kragujevac Faculty of Medicine' from 1982 to 2013 before its current name, Faculty of Medical Sciences.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000284",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0000284",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000284), currently operational; graduates (1985-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000284",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0000284",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "publicField": "recognition",
+      "claimText": "Study programme reviewed and given accredited status by Serbia's National Accreditation Body (NAT), a WFME-recognized accreditor, as of 25 April 2023.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000284",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0000284",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "programmeSlug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+      "publicField": "academics",
+      "claimText": "6-year, 360-ECTS Integrated Academic Studies of Medicine programme (45 mandatory plus 38 elective courses), direct-entry from secondary education, taught in English, leading to the Doctor of Medicine (MD) title.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medical Sciences Kragujevac — IASM structure page",
+      "sourceUrl": "https://medf.kg.ac.rs/iasm/structure.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "programmeSlug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission ranked on a Biology test (20 questions), Chemistry test (20 questions) and interview (up to 20 points), combined with twice the average high-school grade (up to 40 points), for a maximum of 100 points; minimum 30 points to enroll; English B2 required; olympiad exemption available.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medical Sciences Kragujevac — official 2026/27 IASM second-round admissions decision (PDF)",
+      "sourceUrl": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "programmeSlug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+      "publicField": "admissions",
+      "claimText": "Application by email or in person with a defined document list; EUR 100 entrance-exam fee; online Biology/Chemistry exam plus interview; ranking list with a 24-hour complaint window; enrollment confirmed with a EUR 3,000 first tuition installment.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medical Sciences Kragujevac — official 2026/27 IASM second-round admissions decision (PDF)",
+      "sourceUrl": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "programmeSlug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+      "publicField": "intake",
+      "claimText": "Academic year follows the standard Serbian Winter/Spring semester calendar. 2026/27 second admission round: document submission 20-24 July 2026; online entrance exam and interview 27 July 2026. A further round's exact dates were not published at the time of research.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medical Sciences Kragujevac — official 2026/27 IASM second-round admissions decision (PDF)",
+      "sourceUrl": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "programmeSlug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition 2026/27: EUR 6,000/year for foreign citizens; EUR 100 entrance-exam fee; EUR 3,000 first tuition installment due at enrollment.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medical Sciences Kragujevac — official 2026/27 IASM second-round admissions decision (PDF)",
+      "sourceUrl": "https://medf.kg.ac.rs/iasm/enrollment/2-IASM%202026%20(en).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "programmeSlug": "university-of-kragujevac-faculty-of-medical-sciences-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical teaching is associated with the University Clinical Centre of Kragujevac, and the Faculty added the Dedinje Cardiovascular Institute in Belgrade as a further teaching base in 2022.",
+      "status": "verified",
+      "sourceLabel": "University Clinical Centre of Kragujevac (general reference) and Dedinje Cardiovascular Institute news announcement",
+      "sourceUrl": "https://www.ikvbd.org/en/news/2022/the-dedinje-institute-is-becoming-a-teaching-base-at-the-faculty-of-medicine-in-kragujevac/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "publicField": "student living",
+      "claimText": "University dormitories exist but demand regularly exceeds capacity; in practice international students use private rental accommodation, averaging EUR 150-200/month for a single-room apartment excluding utilities, with support from the university's International Relations Office.",
+      "status": "verified",
+      "sourceLabel": "University of Kragujevac — official Accommodation page",
+      "sourceUrl": "https://en.kg.ac.rs/accommodation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

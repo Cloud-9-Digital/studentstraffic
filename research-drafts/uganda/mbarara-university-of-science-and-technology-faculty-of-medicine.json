@@ -1,0 +1,42 @@
+{
+  "scope": "Uganda medical discovery — Mbarara University of Science and Technology Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Mbarara University of Science and Technology lists its full-time MBChB as a five-year programme with an August intake.",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "MUST's MBChB direct-entry requirement is two principal passes in Biology and Chemistry plus a subsidiary pass in Physics or Mathematics; its international-applicant requirements include English-language evidence when the applicant's first language or prior medium of instruction is not English.",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "MUST lists MBChB tuition per semester as UGX 1,344,000 for Ugandan students and UGX 2,688,000 for international students, with annual functional fees of UGX 550,000 and UGX 1,100,000 respectively.",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "MUST's published MBChB modules include clinical-methods and essential-surgical-skills courses, and the university says its first Faculty of Medicine cohort entered for the MBChB programme.",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Uganda's National Council for Higher Education lists Mbarara University of Science and Technology among accredited public universities.",
+      "sourceUrl": "https://unche.or.ug/wp-content/uploads/2023/02/State-for-Higher-Education-Report-2019-2022.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The MBChB page does not provide enough current detailed clinical-placement and student-support evidence for the required payload fields.",
+    "A current publication decision needs confirmation that the displayed programme fees remain applicable for the target intake."
+  ],
+  "nextAction": "Verify current intake-year fees and collect clinical-placement and student-support documents before completing the field-level review and publishing."
+}

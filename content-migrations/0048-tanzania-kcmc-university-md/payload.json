@@ -1,0 +1,394 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. KCMC University maps its English-medium Doctor of Medicine (MD) programme to this category: a direct-entry, single-cycle five-year programme at its School of Medicine in Moshi.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "tanzania",
+      "slug": "kcmc-university",
+      "name": "KCMC University",
+      "city": "Moshi",
+      "type": "Private",
+      "establishedYear": 1997,
+      "officialWebsite": "https://kcmcu.ac.tz/",
+      "mediaAttribution": {},
+      "summary": "KCMC University in Moshi, Tanzania (renamed from Kilimanjaro Christian Medical University College in March 2025), runs a direct-entry, five-year, English-medium Doctor of Medicine (MD) programme at its School of Medicine. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, is accredited by the Tanzania Commission for Universities, and trains students at its affiliated Kilimanjaro Christian Medical Centre teaching hospital.",
+      "campusLifestyle": "International students apply through a dedicated international-applicant track within KCMC's own online admissions portal and train alongside the wider student body on the university's Moshi campus, with clinical practice at the affiliated Kilimanjaro Christian Medical Centre.",
+      "cityProfile": "Moshi is a city in northern Tanzania at the foot of Mount Kilimanjaro, home to KCMC University's campus and its affiliated Kilimanjaro Christian Medical Centre, one of Tanzania's major zonal referral and teaching hospitals.",
+      "practicalExposure": "The five-year Doctor of Medicine programme runs preclinical sciences in Years 1-2 (anatomy, biochemistry, physiology, pathology, microbiology/immunology, pharmacology, parasitology, community health), a transitional Year 3 (clinical practical skills, peripheral placements, research proposal development), and clinical rotations across Years 4-5 spanning internal medicine, surgery, obstetrics and gynaecology, paediatrics, anaesthesiology, emergency medicine, ophthalmology, orthopaedics, ENT, psychiatry, radiology, dermatology and urology, largely at the affiliated Kilimanjaro Christian Medical Centre.",
+      "hostelOverview": "KCMC University operates on-campus hostels built with Good Samaritan Foundation support, offering furnished quadruple, double and single rooms with 24/7 security, electricity, water, cleaning and Wi-Fi included, plus an on-site recreation centre. The university's own programme-page cost estimate lists accommodation at roughly USD 800/year, while a separate detailed hostel rate card lists per-head monthly rates from about USD 27 (quadruple) to USD 100+ (single), which would annualize to a higher figure -- these two official figures do not fully reconcile, so applicants should confirm the specific room-tier cost directly with the university.",
+      "dietarySupport": "The university's own cost estimate lists meals at approximately USD 2,250/year as part of direct student living costs; an executive/foreigner dining option is available for an additional USD 100/month.",
+      "safetyOverview": "On-campus hostels include 24/7 security. No broader university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants use a dedicated international-applicant track within KCMC's own online admissions portal (OSIM), which requires a NECTA equivalence certificate for foreign secondary-school qualifications and accepts application-fee payment by international wire transfer.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001525), with graduates (2000-current) eligible to apply for ECFMG Certification and degrees noted as acceptable to Canadian medical regulators.",
+        "Accredited by the Tanzania Commission for Universities, confirmed on TCU's current official list of accredited university institutions.",
+        "A clear, published five-year, year-by-year tuition and cost breakdown for both local and international students directly on the official programme page, including a confirmed flat USD 3,000/year tuition rate.",
+        "A dedicated international-applicant track within the online admissions portal, with an explicit NECTA foreign-qualification equivalence mechanism for applicants such as those with Indian secondary-school certificates.",
+        "Clinical training at the affiliated Kilimanjaro Christian Medical Centre, a major referral and teaching hospital in northern Tanzania."
+      ],
+      "thingsToConsider": [
+        "The WHO World Directory of Medical Schools lists an entrance exam as required, but every current official KCMC admissions page describes only grade-based direct or equivalent entry with no school-set entrance exam -- this discrepancy was not resolved during research.",
+        "Two official cost figures for on-campus accommodation do not fully reconcile: the MD programme page's own budget estimate (about USD 800/year) is notably lower than what a detailed hostel rate card's monthly per-head rates would annualize to; confirm the exact room-tier cost directly with the university.",
+        "No KCMC-specific scholarship for international MD or undergraduate students was found; only unrelated postgraduate and research-grant funding was identified.",
+        "The programme page states an October intake, while the online application portal's own banner separately labels the current round a 'September Intake' -- a minor inconsistency in the university's own materials.",
+        "Late applications are explicitly not considered, so international applicants should apply well ahead of the stated deadline given the added NECTA equivalence-certificate step."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, English-medium direct-entry medical degree with transparent, published year-by-year tuition figures.",
+        "Applicants comfortable completing a NECTA equivalence-certificate step and international wire-transfer payment as part of a structured online application process.",
+        "Students who can apply well ahead of deadlines, since late applications are not considered under current policy."
+      ],
+      "industryPartners": [
+        "Kilimanjaro Christian Medical Centre"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0001525",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 2000-present",
+        "Medical Council of Canada (MCC) -- degree acceptable to Canadian medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Tanzania Commission for Universities (TCU) -- accredited university institution"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- KCMC University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0001525" },
+        { "label": "Tanzania Commission for Universities -- list of accredited university institutions (KCMC University, item 24)", "url": "https://tcu.go.tz/sites/default/files/public_notices/2025-11/LIST%20OF%20UNIVERSITY%20INSTITUTIONS%20IN%20TANZANIA%20AS%20OF%20MARCH%2026-2026.pdf" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Doctor of Medicine programme direct-entry after high school?",
+          "answer": "Yes. Direct entry requires three principal passes in Physics, Chemistry and Biology with a minimum of 6 points and at least a D grade in each subject; no prior university degree is required, and the WHO World Directory of Medical Schools lists no prior-degree prerequisite for this programme."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Doctor of Medicine (MD) degree after five years of study at KCMC University's School of Medicine."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "Applicants with foreign certificates, such as Indian 12th-grade results, must obtain a National Examination Council of Tanzania (NECTA) equivalence certificate and enter its index number on the application before it can be processed."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "Tuition is a flat USD 3,000 per year across all five years for international students, with additional annual institutional fees (registration, examination, ICT, community outreach, quality assurance and similar charges) that bring the total payable to the college to between roughly USD 3,820 and USD 4,670 depending on the year, confirmed on the official programme page for the 2026/27 cycle."
+        },
+        {
+          "question": "Is there a separate application fee?",
+          "answer": "Yes. USD 50 for international applicants, paid by international wire transfer with a bank slip and transfer statement submitted to the admissions office."
+        },
+        {
+          "question": "Is there a written entrance exam?",
+          "answer": "Current official KCMC admissions materials describe only grade-based direct or equivalent entry with no school-set entrance exam, though the WHO World Directory of Medical Schools separately lists one as required -- applicants should confirm the current process directly with the university."
+        },
+        {
+          "question": "When is the application deadline for the 2026/27 intake?",
+          "answer": "The official 2026/27 first-round call for undergraduate applications, including Doctor of Medicine, set a deadline of 10 August 2026, with late applications not considered."
+        },
+        {
+          "question": "Is on-campus accommodation available?",
+          "answer": "Yes, on-campus hostels with furnished rooms, security and utilities are available, though the university's own published figures for the annual cost do not fully reconcile between a general budget estimate and a detailed room-tier rate card -- confirm the exact cost directly with the university."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens who obtain a primary medical qualification abroad to have qualified NEET-UG and, on return, to clear its Foreign Medical Graduate licensure pathway; this general framework was not independently verified against an NMC statement specific to this university."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- KCMC University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001525",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry status (no prior-degree prerequisite), founding year, ECFMG graduation-year eligibility and Canadian MCC acceptability."
+        },
+        {
+          "label": "Tanzania Commission for Universities -- list of accredited university institutions (KCMC University, item 24)",
+          "url": "https://tcu.go.tz/sites/default/files/public_notices/2025-11/LIST%20OF%20UNIVERSITY%20INSTITUTIONS%20IN%20TANZANIA%20AS%20OF%20MARCH%2026-2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for current TCU accreditation status."
+        },
+        {
+          "label": "KCMC University -- official Doctor of Medicine programme page",
+          "url": "https://kcmcu.ac.tz/doctor-of-medicine/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for programme structure, eligibility criteria, and the full year-by-year tuition and living-cost breakdown for local and international students."
+        },
+        {
+          "label": "KCMC University -- online admissions portal (OSIM)",
+          "url": "https://osim.kcmcu.ac.tz/apply/bachelor?step=1",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the dedicated international-applicant track, NECTA equivalence-certificate requirement, USD 50 international application fee, and the current admissions-round deadline banner."
+        },
+        {
+          "label": "KCMC University -- 2026/2027 first-round call for undergraduate applications",
+          "url": "https://kcmcu.ac.tz/%f0%9f%8e%93-call-for-undergraduate-applications-in-the-1st-round-of-the-2026-2027-admission-cycle/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the confirmed 10 August 2026 application deadline for Doctor of Medicine and other undergraduate programmes."
+        },
+        {
+          "label": "KCMC University -- Admission Policy (PDF, 23 May 2025)",
+          "url": "https://kcmcu.ac.tz/wp-content/uploads/2025/09/ADMISSION-POLICY-23-May-2025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for foreign-qualification equivalence policy and additional documentation KCMC may require of non-Tanzanian applicants."
+        },
+        {
+          "label": "KCMC University -- students page (hostel rate card)",
+          "url": "https://kcmcu.ac.tz/students/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for on-campus hostel structure and per-head monthly room-tier rates, used alongside the programme page's own budget estimate to flag the unreconciled accommodation-cost discrepancy."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "physics chemistry biology grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "NECTA equivalence status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "kcmc-university-md",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Doctor of Medicine (MD)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3000,
+            "officialTotalTuitionAmount": 15000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published flat tuition of USD 3,000/year (TZS 4,200,000) across all 5 years, confirmed on the official Doctor of Medicine programme page for the 2026/27 cycle. Beyond pure tuition, the same page publishes a 'Total Payable to College' figure that also includes registration, examination, ICT, community-outreach-supervision and other institutional fees, varying by year: Year 1 USD 4,480, Year 2 USD 4,320, Year 3 USD 4,670, Year 4 USD 4,620, Year 5 USD 3,820 (5-year total approximately USD 21,910). A separate USD 50 international application fee also applies."
+          },
+          "officialProgramUrl": "https://kcmcu.ac.tz/doctor-of-medicine/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education with a NECTA-issued equivalence certificate for their foreign qualification"
+            ],
+            "restrictions": [
+              "Foreign secondary-school certificates must carry a NECTA equivalence index number before the application can be processed",
+              "Late applications are not considered under current admissions policy"
+            ],
+            "notes": "Current official admissions materials describe grade-based direct or equivalent entry with no school-set entrance exam, though WDOMS separately lists one as required for this school; this discrepancy was not resolved during research.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://kcmcu.ac.tz/doctor-of-medicine/"
+          },
+          "admissionsContent": {
+            "overview": "International applicants use a dedicated international-applicant track within KCMC's own online admissions portal (OSIM), pay a USD 50 application fee by wire transfer, and submit academic transcripts along with a NECTA equivalence-certificate index number for their foreign secondary qualification.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education meeting minimum science-subject grades, or an accepted equivalent qualification, plus a NECTA equivalence certificate for foreign credentials.",
+              "items": [
+                "Three principal passes in Physics, Chemistry and Biology, minimum 6 points, at least D grade in each",
+                "NECTA equivalence certificate (index number) for foreign secondary-school qualifications",
+                "Alternative equivalent-entry route available for Diploma-in-Clinical-Medicine holders"
+              ]
+            },
+            "applicationSteps": [
+              "Register on KCMC's online admissions portal (OSIM) and select the international-applicant track",
+              "Obtain a NECTA equivalence certificate for foreign secondary-school qualifications",
+              "Upload academic transcripts and enter the NECTA equivalence index number",
+              "Pay the USD 50 application fee by international wire transfer and submit the bank slip",
+              "Await the admission decision"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school transcripts and NECTA equivalence certificate",
+                "Evidence of English-language proficiency, where required"
+              ],
+              "application": [
+                "Valid passport",
+                "Evidence of health insurance and student-visa eligibility, where required"
+              ]
+            },
+            "deadlinesNote": "2026/27 first-round undergraduate applications, including Doctor of Medicine, closed on 10 August 2026; late applications are explicitly not considered under current policy.",
+            "visaConsiderations": [
+              "Confirm current Tanzanian student-visa and health-insurance requirements directly with KCMC's admissions office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed flat tuition of USD 3,000/year, published directly on the official Doctor of Medicine programme page alongside a fuller 'Total Payable to College' figure (USD 3,820-4,670 depending on year) that includes additional institutional fees. A separate USD 50 international application fee also applies.",
+          "teachingPhases": [
+            {
+              "phase": "5-year Doctor of Medicine programme",
+              "language": "English",
+              "details": "Years 1-2: preclinical sciences (anatomy, biochemistry, physiology, pathology, microbiology/immunology, pharmacology, parasitology, community health). Year 3: transitional clinical practical-skills training and peripheral placements. Years 4-5: clinical rotations across internal medicine, surgery, obstetrics and gynaecology, paediatrics, anaesthesiology, emergency medicine, ophthalmology, orthopaedics, ENT, psychiatry, radiology, dermatology and urology, largely at the affiliated Kilimanjaro Christian Medical Centre."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "kcmc-university",
+      "publicField": "identity",
+      "claimText": "KCMC University began medical instruction in 1997 (as Kilimanjaro Christian Medical College, Tumaini University), later renamed Kilimanjaro Christian Medical University College (2010) and then KCMC University (March 2025).",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- KCMC University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001525",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kcmc-university",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001525); graduates (2000-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian medical regulatory authorities; no prior-degree prerequisite listed, consistent with direct-entry status.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- KCMC University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001525",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kcmc-university",
+      "publicField": "recognition",
+      "claimText": "KCMC University is listed as an accredited university institution by the Tanzania Commission for Universities.",
+      "status": "verified",
+      "sourceLabel": "Tanzania Commission for Universities -- list of accredited university institutions (KCMC University, item 24)",
+      "sourceUrl": "https://tcu.go.tz/sites/default/files/public_notices/2025-11/LIST%20OF%20UNIVERSITY%20INSTITUTIONS%20IN%20TANZANIA%20AS%20OF%20MARCH%2026-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kcmc-university",
+      "programmeSlug": "kcmc-university-md",
+      "publicField": "academics",
+      "claimText": "Doctor of Medicine (MD) is a 5-year direct-entry programme with Years 1-2 preclinical sciences, Year 3 transitional clinical skills training, and Years 4-5 clinical rotations.",
+      "status": "verified",
+      "sourceLabel": "KCMC University -- official Doctor of Medicine programme page",
+      "sourceUrl": "https://kcmcu.ac.tz/doctor-of-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kcmc-university",
+      "programmeSlug": "kcmc-university-md",
+      "publicField": "eligibility",
+      "claimText": "Direct entry requires three principal passes in Physics, Chemistry and Biology with a minimum of 6 points; foreign secondary-school qualifications require a NECTA equivalence certificate before the application can be processed.",
+      "status": "verified",
+      "sourceLabel": "KCMC University -- online admissions portal (OSIM)",
+      "sourceUrl": "https://osim.kcmcu.ac.tz/apply/bachelor?step=1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kcmc-university",
+      "programmeSlug": "kcmc-university-md",
+      "publicField": "admissions",
+      "claimText": "International applicants use a dedicated track within the OSIM online admissions portal, pay a USD 50 application fee by wire transfer, and submit documents including a NECTA equivalence index number for foreign qualifications; no school-set entrance exam is described in current materials.",
+      "status": "verified",
+      "sourceLabel": "KCMC University -- online admissions portal (OSIM)",
+      "sourceUrl": "https://osim.kcmcu.ac.tz/apply/bachelor?step=1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kcmc-university",
+      "programmeSlug": "kcmc-university-md",
+      "publicField": "intake",
+      "claimText": "2026/27 first-round undergraduate applications, including Doctor of Medicine, closed 10 August 2026; late applications are not considered.",
+      "status": "verified",
+      "sourceLabel": "KCMC University -- 2026/2027 first-round call for undergraduate applications",
+      "sourceUrl": "https://kcmcu.ac.tz/%f0%9f%8e%93-call-for-undergraduate-applications-in-the-1st-round-of-the-2026-2027-admission-cycle/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kcmc-university",
+      "programmeSlug": "kcmc-university-md",
+      "publicField": "fee",
+      "claimText": "Flat tuition of USD 3,000/year across all 5 years, published on the official Doctor of Medicine programme page, alongside a fuller 'Total Payable to College' figure of USD 3,820-4,670 depending on year that includes additional institutional fees; a separate USD 50 international application fee also applies.",
+      "status": "verified",
+      "sourceLabel": "KCMC University -- official Doctor of Medicine programme page",
+      "sourceUrl": "https://kcmcu.ac.tz/doctor-of-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kcmc-university",
+      "publicField": "student living",
+      "claimText": "On-campus hostels offer furnished quadruple, double and single rooms with security and utilities included; the programme page's own budget estimate (about USD 800/year) and a separate detailed hostel rate card's monthly per-head rates do not fully reconcile.",
+      "status": "verified",
+      "sourceLabel": "KCMC University -- students page (hostel rate card)",
+      "sourceUrl": "https://kcmcu.ac.tz/students/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Trinidad and Tobago medical discovery — University of the West Indies St. Augustine MBBS",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UWI St. Augustine's 2025/26 Faculty of Medical Sciences regulations state that MBBS graduates must complete a one-year internship to be eligible to practise and obtain full registration with the Medical Board of Trinidad and Tobago.",
+      "sourceUrl": "https://sta.uwi.edu/resources/documents/facultybooklets/FMSUndergrad.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UWI St. Augustine's official undergraduate admissions page sets the 2026/27 application cycle from 5 January to 17 July 2026.",
+      "sourceUrl": "https://www.uwi.tt/admissions/undergrad/index.asp",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UWI's fee guidance says undergraduate fees are credit-based and identifies compulsory fees including guild, ID, caution money, group health plan, personal accident insurance and student amenities.",
+      "sourceUrl": "https://www.uwi.tt/admissions/undergrad/faqs_tuition_fees.asp",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Medical Board of Trinidad and Tobago states that satisfactory completion of UWI Doctor of Medicine programmes qualifies foreign applicants for automatic full registration under the referenced Board policy.",
+      "sourceUrl": "https://www.mbtt.org/GeneralInfo.htm",
+      "sourceType": "professional-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No complete, current 2026/27 MBBS fee card was located; generic credit-based fee guidance cannot become a programme fee figure.",
+    "The general 2026/27 admissions page does not provide the complete MBBS-specific academic requirements, selection mechanics, deadline distinctions, intake capacity or international-applicant requirements.",
+    "Current MBBS duration/curriculum, named clinical sites, accommodation, scholarship/loan support and the precise scope of graduate registration require programme-specific verification."
+  ],
+  "nextAction": "Obtain UWI's current MBBS programme page, detailed admissions criteria and 2026/27 fee schedule, then verify clinical training and support before considering a payload."
+}

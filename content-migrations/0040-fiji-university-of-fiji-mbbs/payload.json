@@ -1,0 +1,417 @@
+{
+  "countries": [
+    {
+      "slug": "fiji",
+      "name": "Fiji",
+      "region": "Oceania",
+      "summary": "Fiji is a Pacific Island nation with English-medium medical education tracing back over a century, offering direct-entry MBBS programmes recognized in the WHO World Directory of Medical Schools and drawing students from across the Pacific region and beyond.",
+      "whyStudentsChooseIt": "Fiji offers an English-medium, direct-entry MBBS with WHO/FAIMER recognition, clinical training at named regional hospitals, and a compact island setting, appealing to students seeking a Pacific-region medical education outside the more commonly chosen European or South Asian destinations.",
+      "climate": "Tropical maritime climate, warm year-round with a wetter season from November to April and a drier season from May to October.",
+      "currencyCode": "FJD",
+      "metaTitle": "Study MBBS and Medicine in Fiji",
+      "metaDescription": "Explore English-medium MBBS programs in Fiji, including admissions, fees, recognition and clinical training guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Fiji's Umanand Prasad School of Medicine maps its Bachelor of Medicine and Bachelor of Surgery programme to this category: a direct-entry, single-cycle six-year programme.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "fiji",
+      "slug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "name": "University of Fiji, Umanand Prasad School of Medicine and Health Sciences",
+      "city": "Lautoka",
+      "type": "Private",
+      "establishedYear": 2008,
+      "officialWebsite": "https://www.unifiji.ac.fj/",
+      "mediaAttribution": {},
+      "summary": "University of Fiji's Umanand Prasad School of Medicine and Health Sciences has run its MBBS programme since 2008 across campuses in Lautoka and Suva. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 2011 onward, degrees are noted as acceptable to Canadian provincial and territorial medical regulators, and the university is registered with Fiji's Higher Education Commission.",
+      "campusLifestyle": "MBBS is taught across two campuses: Saweni (Lautoka, the original site) and Samabula (Suva, added in 2017). The programme runs 32 courses over 720 credit points across six years, with clinical practice incorporated from the start of the course.",
+      "cityProfile": "Lautoka is Fiji's second-largest city, on the western side of the main island of Viti Levu; Suva, the capital, hosts the university's second MBBS campus. Both cities give students access to major public hospital networks for clinical training.",
+      "practicalExposure": "The six-year MBBS runs preclinical foundations (anatomy, physiology, biochemistry, medical ethics) in Years 1-2, then clinical rotation blocks of decreasing length across Years 3-6, covering internal medicine, general surgery, obstetrics and gynaecology, paediatrics, community health and family medicine, psychiatry, and forensic medicine, concluding with an Objective Structured Clinical Examination in Year 6. Clinical training is anchored at Colonial War Memorial Hospital in Suva, and since an April 2025 memorandum of understanding, at Pacific Specialist Healthcare in Nadi for advanced and specialist attachments including cardiology and neurosurgery, plus telemedicine training. Graduates undergo a compulsory rotating internship, extended from one to two years under a 2020 Fiji Ministry of Health policy update, before registering to practise with the Fiji Medical and Dental Council.",
+      "hostelOverview": "No public dormitory fee schedule or dedicated international-student housing page was found on the university's official site; the university does have an Accommodation Officer role on staff, confirming some administrative accommodation function exists. Applicants should contact the university's admissions office directly to confirm current housing options before enrolling.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The university's regulations reference district-based accommodation falling under its Finance, Planning and Development division.",
+      "studentSupport": "International applications are reviewed case-by-case by the university's Student Academic Services team (admissions@unifiji.ac.fj), and a documented Tuition Fee Waiver Policy covers specific hardship circumstances, including for a student who has been refused a study permit.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002639), currently operational, with ECFMG-certification eligibility for graduates from 2011 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "Registered with Fiji's Higher Education Commission, with the MBBS explicitly listed as a recognized provider qualification.",
+        "A recently formalized (April 2025) clinical partnership with Pacific Specialist Healthcare in Nadi, adding advanced specialist training in cardiology and neurosurgery alongside the established Colonial War Memorial Hospital placement.",
+        "A published, dated, official fee schedule with a clear, documented refund and withdrawal policy.",
+        "A documented tuition fee waiver for international students who are refused a study permit, an unusual and useful applicant protection."
+      ],
+      "thingsToConsider": [
+        "No fixed application deadline is published; the university states international applications are decided on a case-by-case, effectively rolling basis, so applicants should apply well ahead of the intake they want.",
+        "There is no online application portal; applications go by a downloadable PDF form submitted by email or post, not through a modern online system.",
+        "The university's own MBBS page still describes a one-year post-graduation internship, but Fiji's Ministry of Health updated this to a two-year rotating internship in 2020; the longer, more current figure should be assumed.",
+        "The official fee schedule does not disclose the rate for Australian or New Zealand citizens, only a combined 'other countries' international rate double the domestic rate.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students who meet the university's direct-entry academic threshold (roughly 320/400 marks with strong English, Biology and Mathematics grades) and are comfortable with a paper-based, case-by-case international application process.",
+        "Applicants interested in Pacific-region clinical training and the university's growing specialist-hospital partnership network.",
+        "Families able to budget for a substantial six-year tuition total and plan independently for accommodation, given the limited published housing information."
+      ],
+      "industryPartners": [
+        "Colonial War Memorial Hospital",
+        "Pacific Specialist Healthcare"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0002639), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 2011-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Fiji Higher Education Commission — registered provider, MBBS listed as a recognized qualification"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — University of Fiji (Umanand Prasad School of Medicine) listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0002639" },
+        { "label": "Fiji Higher Education Commission — University of Fiji registration record", "url": "https://hec.org.fj/the-university-of-fiji/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBBS programme direct-entry after high school?",
+          "answer": "Yes. The primary route is Direct Entry from Fiji Year 13 (FSFE) or an equivalent secondary qualification, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Bachelor of Medicine and Bachelor of Surgery (MBBS), followed by a compulsory rotating internship (two years, per Fiji's Ministry of Health) before registering with the Fiji Medical and Dental Council."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (720 credit points across 32 courses): preclinical foundations in Years 1-2, then clinical rotation blocks of decreasing length through Years 3-6, concluding with an Objective Structured Clinical Examination."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "For international students (outside Fiji, the Pacific Islands Forum, Australia and New Zealand), the official 2026 fee schedule lists FJD 34,760 per year in Years 1-3, FJD 35,860 in Years 4-5, and FJD 36,960 in Year 6, for a total of roughly FJD 212,960 across the programme."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "There is no standalone entrance exam. Direct-entry applicants need an aggregate of at least 320 out of 400 marks across four subjects (English, Biology and Mathematics compulsory, plus Chemistry, Physics or Computer Science), with a minimum of 60% in English. International applicants are additionally assessed case-by-case with a recent medical report and evidence of English proficiency."
+        },
+        {
+          "question": "How do I apply, and when does the academic year start?",
+          "answer": "There is no online application portal; applicants complete a downloadable PDF application form and submit it by email or post. No fixed international application deadline is published -- decisions are made case-by-case. Semester 1 begins in mid-February and Semester 2 in mid-to-late July."
+        },
+        {
+          "question": "Is a scholarship available for international MBBS students?",
+          "answer": "No scholarship specifically for international MBBS students was found. The university's loan and scholarship schemes (the UniFiji Loan Scheme and Tertiary Scholarship and Loans Board programmes) are oriented toward Fiji citizens."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — University of Fiji (Umanand Prasad School of Medicine) listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0002639",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, ECFMG graduation-year eligibility and Canada MCC acceptability."
+        },
+        {
+          "label": "Fiji Higher Education Commission — University of Fiji registration record",
+          "url": "https://hec.org.fj/the-university-of-fiji/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for domestic registration status and the MBBS being listed as a recognized provider qualification."
+        },
+        {
+          "label": "University of Fiji — official MBBS programme page",
+          "url": "https://www.unifiji.ac.fj/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, eligibility criteria, campuses and named clinical hospitals."
+        },
+        {
+          "label": "University of Fiji — official 2026 Fee Structure (PDF)",
+          "url": "https://www.unifiji.ac.fj/wp-content/uploads/2026/01/2026-Fee-Structure.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official fee schedule; primary evidence for confirmed 2026 tuition by year and applicant category."
+        },
+        {
+          "label": "University of Fiji — official 2026 Handbook and Calendar (PDF)",
+          "url": "https://www.unifiji.ac.fj/wp-content/uploads/2026/06/Final-2026-Handbook-and-Calendar-3.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for detailed admission requirements, curriculum structure by year, academic calendar and fee-waiver/refund regulations."
+        },
+        {
+          "label": "Fiji Ministry of Health — Health Ministry updates the Doctors Internship Program",
+          "url": "https://www.health.gov.fj/health-ministry-updates-the-doctors-internship-program/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the 2020 policy update extending the post-graduation internship from one to two years."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "absent",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-fiji-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026",
+            "officialFeeCurrency": "FJD",
+            "officialAnnualTuitionAmount": 34760,
+            "officialTotalTuitionAmount": 212960,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026 tuition for international students (Column B, 'Citizens of Other Countries, except Australia and New Zealand'): FJD 34,760/year in Years 1-3, FJD 35,860/year in Years 4-5, and FJD 36,960 in Year 6, totalling approximately FJD 212,960 across the six-year programme, per the university's official 2026 Fee Structure document. This rate is exactly double the domestic Fiji/Pacific-Islands-Forum-citizen rate. The Australia/New Zealand citizen rate is not disclosed in this document. Refund policy: full refund if formally withdrawn by the second Friday of the semester, with a 25% weekly penalty thereafter and no refund after the fifth Friday. A tuition fee waiver is available for, among other grounds, an international student who has been refused a study permit."
+          },
+          "officialProgramUrl": "https://www.unifiji.ac.fj/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a secondary-education qualification equivalent to Fiji Year 13 (FSFE), assessed case-by-case, meeting an aggregate of at least 320/400 marks with strong English, Biology and Mathematics grades"
+            ],
+            "restrictions": [
+              "International candidates are decided on a case-by-case basis and must submit a recent (within 3 months) medical report plus evidence of English proficiency, though no specific minimum test score is published",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "The university's general Admissions Regulations page states a lower entry bar (300/400 marks, 50% English) than the MBBS-specific programme page and 2026 Handbook (320/400, 60% English) -- the more specific, more recently dated MBBS/Handbook figures are treated as authoritative.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.unifiji.ac.fj/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants download and complete a PDF Application for Admission form, attach certified academic and identity documents plus (for international applicants) a medical report and English-proficiency evidence, and submit it by email or post for case-by-case review by Student Academic Services.",
+            "eligibility": {
+              "intro": "Direct-entry admission requires a secondary qualification equivalent to Fiji Year 13, meeting the university's grade thresholds, plus a medical report and English-proficiency evidence for international applicants.",
+              "items": [
+                "Aggregate of at least 320 out of 400 marks across 4 subjects, with English, Biology and Mathematics compulsory, plus Chemistry, Physics or Computer Science, and a minimum 60% in English",
+                "Recent (within 3 months) medical report, required for international applicants",
+                "Evidence of English proficiency, required for international applicants (no specific minimum score is published)",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Download the Application for Admission (Undergraduate) PDF form from the university's website",
+              "Complete personal, medical-record and programme-preference sections",
+              "Attach certified copies of academic transcripts, identity documents, and (for international applicants) a medical report and English-proficiency evidence",
+              "Submit the completed form and documents by email to admissions@unifiji.ac.fj or by post to Student Academic Services in Lautoka",
+              "Await case-by-case review and decision from Student Academic Services"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified copies of secondary-school transcripts/results (Fiji Form 6/7 or international equivalent)",
+                "Certified copies of any other qualifications or certificates"
+              ],
+              "application": [
+                "Certified birth certificate",
+                "Two certified passport photos",
+                "Recent (within 3 months) medical report",
+                "Evidence of English proficiency"
+              ]
+            },
+            "deadlinesNote": "No fixed international application deadline is published; applications are reviewed case-by-case. Semester 1 begins mid-February 2026, Semester 2 mid-to-late July 2026, per the official academic calendar.",
+            "visaConsiderations": [
+              "A tuition fee waiver is available if an international student is refused a study permit; confirm current Fiji student-visa requirements directly with the university."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["February", "July"],
+          "intakeCodes": ["february", "july"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026 international tuition: FJD 34,760/year (Years 1-3), FJD 35,860/year (Years 4-5), FJD 36,960 (Year 6), per the official 2026 Fee Structure document -- exactly double the domestic Fiji/Pacific-Islands-Forum rate. The Australia/New Zealand citizen rate is not published. Refund policy is tiered by withdrawal week, with no refund after the fifth Friday of the semester; a fee waiver applies for students refused a study permit.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: preclinical foundation",
+              "language": "English",
+              "details": "Anatomy, physiology, biochemistry, medical ethics/culture/terminology, pathology, microbiology, pharmacology and basic professional skills."
+            },
+            {
+              "phase": "Years 3-5: clinical rotations",
+              "language": "English",
+              "details": "Six- to five-week rotation blocks in internal medicine, general surgery, obstetrics and gynaecology, paediatrics, community health/family medicine, clinical skills, psychiatry, allied subjects and forensic medicine."
+            },
+            {
+              "phase": "Year 6: final rotations and OSCE",
+              "language": "English",
+              "details": "Seven-week rotation blocks concluding with the OSCE6 objective structured clinical examination."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "publicField": "identity",
+      "claimText": "The MBBS programme at University of Fiji's Umanand Prasad School of Medicine and Health Sciences commenced in 2008.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002639",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0002639",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002639), currently operational; graduates (2011-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002639",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0002639",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "publicField": "recognition",
+      "claimText": "University of Fiji is registered with the Fiji Higher Education Commission (Registration Certificate Number RGN0020/11), with the Bachelor of Medicine and Bachelor of Surgery explicitly listed as a recognized provider qualification.",
+      "status": "verified",
+      "sourceLabel": "Fiji Higher Education Commission — University of Fiji registration record",
+      "sourceUrl": "https://hec.org.fj/the-university-of-fiji/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-fiji-mbbs",
+      "publicField": "academics",
+      "claimText": "MBBS is a 6-year, 720-credit-point, direct-entry programme (Year 13/FSFE entry) taught in English across the Saweni (Lautoka) and Samabula (Suva) campuses.",
+      "status": "verified",
+      "sourceLabel": "University of Fiji — official MBBS programme page",
+      "sourceUrl": "https://www.unifiji.ac.fj/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-fiji-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Direct entry requires an aggregate of at least 320/400 marks with English, Biology and Mathematics compulsory and a minimum 60% in English; international applicants are assessed case-by-case with a medical report and English-proficiency evidence.",
+      "status": "verified",
+      "sourceLabel": "University of Fiji — official 2026 Handbook and Calendar (PDF)",
+      "sourceUrl": "https://www.unifiji.ac.fj/wp-content/uploads/2026/06/Final-2026-Handbook-and-Calendar-3.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-fiji-mbbs",
+      "publicField": "admissions",
+      "claimText": "Application via a downloadable PDF form submitted by email or post to Student Academic Services; no online application portal exists; international candidates are decided case-by-case.",
+      "status": "verified",
+      "sourceLabel": "University of Fiji — Admission, Enrolment, Withdrawal and Auditing Regulations",
+      "sourceUrl": "https://www.unifiji.ac.fj/admission-enrolment-withdrawal-and-auditing-regulations/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-fiji-mbbs",
+      "publicField": "intake",
+      "claimText": "Semester-based academic calendar: Semester 1 classes begin 16 February 2026, Semester 2 classes begin 20 July 2026; no fixed international application deadline is published, admissions are reviewed case-by-case.",
+      "status": "verified",
+      "sourceLabel": "University of Fiji — official 2026 Handbook and Calendar (PDF)",
+      "sourceUrl": "https://www.unifiji.ac.fj/wp-content/uploads/2026/06/Final-2026-Handbook-and-Calendar-3.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-fiji-mbbs",
+      "publicField": "fee",
+      "claimText": "2026 international tuition: FJD 34,760/year (Years 1-3), FJD 35,860/year (Years 4-5), FJD 36,960 (Year 6) -- exactly double the domestic Fiji/Pacific-Islands-Forum rate; refund policy tiered by withdrawal week.",
+      "status": "verified",
+      "sourceLabel": "University of Fiji — official 2026 Fee Structure (PDF)",
+      "sourceUrl": "https://www.unifiji.ac.fj/wp-content/uploads/2026/01/2026-Fee-Structure.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-fiji-mbbs",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training is anchored at Colonial War Memorial Hospital in Suva, and since an April 2025 memorandum of understanding, at Pacific Specialist Healthcare in Nadi for advanced specialist attachments and telemedicine training. Post-graduation internship was extended from one to two years under a 2020 Fiji Ministry of Health policy.",
+      "status": "verified",
+      "sourceLabel": "University of Fiji — official press release, Pacific Specialist Healthcare MOU",
+      "sourceUrl": "https://www.unifiji.ac.fj/the-university-of-fiji-and-pacific-specialist-healthcare-psh-hospitals-sign-memorandum-of-understanding-for-medical-education-for-unifijis-umanand-prasad-school-of-medicine-and-health-scien/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    }
+  ]
+}

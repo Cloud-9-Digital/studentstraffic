@@ -1,0 +1,25 @@
+{
+  "scope": "Equatorial Guinea medical discovery — UNGE Faculty of Medical Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The Spanish Ministry of Education's current country guide identifies the National University of Equatorial Guinea (UNGE), its Malabo and Bata campuses, and its Faculty of Medical Sciences.",
+      "sourceUrl": "https://www.educacionfpydeportes.gob.es/guineaecuatorial/gl/estudiar/en-guinea-ecuatorial.html",
+      "sourceType": "foreign-government",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Equatorial Guinea's government news portal identifies UNGE's Bata Faculty of Health Sciences and reports medical-science laboratories in Bata.",
+      "sourceUrl": "https://www.guineaecuatorialpress.com/noticias/entrevista_con_el_rector_de_la_universidad_nacional_de_guinea_ecuatorial_",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official UNGE programme page was located that verifies the Medicine award, duration, curriculum, entry criteria or intake.",
+    "No current tuition/mandatory-fee schedule, admissions window, international-applicant route, teaching language, named clinical sites, programme-level recognition, student support or registration pathway was located.",
+    "Institution/faculty existence alone is not sufficient to publish a commercial medicine page."
+  ],
+  "nextAction": "Obtain current primary UNGE Faculty of Medical Sciences programme and admissions documents, plus fee and clinical-training evidence, before considering any payload."
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Belize medical discovery — University of Belize School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "University of Belize states that its School of Medicine admitted its first cohort in August 2024 and that it is preparing/submitting for provisional CAAM-HP accreditation.",
+      "sourceUrl": "https://ub.edu.bz/ubsom/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UB's official MBBS admissions material identifies a Medical School Admissions Committee and publishes admission prerequisites and a course sequence.",
+      "sourceUrl": "https://ub.edu.bz/wp-content/uploads/2025/06/MBBS-admission-requirements-and-course-sequencex3dENG.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The school reports that it is preparing/submitting for provisional accreditation; this material status must prevent any claim of completed programme accreditation.",
+    "No current complete fee schedule, active intake calendar, clinical-placement agreements, accommodation, scholarship/loan support or graduate-registration pathway was located.",
+    "A programme with a 2024 first cohort needs current independent quality/approval evidence before it can meet the gold-standard publication bar."
+  ],
+  "nextAction": "Verify current CAAM-HP and Belize regulator status, active fee/admissions information, clinical partners and student support before considering a payload."
+}

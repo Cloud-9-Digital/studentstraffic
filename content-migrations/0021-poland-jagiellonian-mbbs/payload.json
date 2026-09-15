@@ -1,0 +1,400 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Jagiellonian University Medical College maps its Medicine, Program in English to this category: a direct-entry, single-cycle six-year programme leading to the Lekarz (Medical Doctor) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "poland",
+      "slug": "jagiellonian-university-medical-college",
+      "name": "Jagiellonian University Medical College",
+      "city": "Krakow",
+      "type": "Public",
+      "establishedYear": 1364,
+      "officialWebsite": "https://medschool.uj.edu.pl",
+      "mediaAttribution": {},
+      "summary": "Jagiellonian University Medical College in Krakow is part of Poland's oldest university, founded in 1364. Its School of Medicine in English has run a direct-entry, six-year MD programme since 1994, listed in the WHO World Directory of Medical Schools, with the Polish Lekarz qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+      "campusLifestyle": "The School of Medicine in English educates nearly 700 students from roughly twenty countries across five continents, most commonly from Norway, the United States and Canada. Clinical and residential facilities are concentrated in the Prokocim district, about a 20-minute tram ride from the historic city-centre administrative base, anchored by the University Hospital, which opened in 2019.",
+      "cityProfile": "Krakow, Poland's former royal capital and second-largest city, hosts Jagiellonian University Medical College's School of Medicine in English. International students are supported by the Student Support and Adaptation Center (SOWA), a joint university-hospital service offering a 24-hour hotline with English-language service alongside in-person counselling during weekday office hours.",
+      "practicalExposure": "Clinical exposure begins in Year 1 with a summer clinical clerkship and increases each year: Year 3 introduces bedside teaching in Internal Medicine, Surgery, Obstetrics and Gynecology, and Pediatrics in small groups, each year from 2 to 5 ending in a further summer clerkship, and Year 6 is dedicated entirely to clinical training. Required rotations run through JU-owned facilities: the University Hospital (opened 2019), Children's University Hospital, Orthopedic-Rehabilitation University Hospital and the University Dental Clinic. Clinical training makes up 50-74% of the full programme per the WHO World Directory of Medical Schools. Final-year elective rotations are available through Global Health Learning Opportunities, a 30-plus medical-school consortium developed with the US Association of American Medical Colleges, alongside cooperation with the National Board of Medical Examiners and optional USMLE-readiness self-assessment testing. Graduation requires at least 360 ECTS credits, and admission is decided solely by a competitive, timed entrance examination rather than an interview.",
+      "hostelOverview": "The university's own dormitory complex sits in the Prokocim district near the University Hospital. For the 2026-27 academic year, monthly rates run from 805 PLN for a shared standard double room to 1,680 PLN for a single room with sole occupancy, all with en-suite bathrooms, shared kitchens, laundry facilities, WiFi, monitored parking and 24-hour staffed security.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. The university's own estimate for books and study supplies runs to roughly EUR 6,000 per year, which should be budgeted alongside tuition, accommodation and daily living costs.",
+      "safetyOverview": "The Prokocim dormitory complex has CCTV monitoring, 24-hour staffed security and photo-ID check-in. The Student Support and Adaptation Center (SOWA) runs a 24-hour hotline with English-language service for students in crisis.",
+      "studentSupport": "The Student Support and Adaptation Center (SOWA), a joint university-hospital service launched in 2019, provides a 24-hour hotline and in-person counselling. Incoming students also receive dedicated Orientation Week programming before the October academic-year start.",
+      "whyChoose": [
+        "Poland's oldest university and medical faculty, founded in 1364, with an English-medium MD track running continuously since 1994.",
+        "Listed in the WHO World Directory of Medical Schools, with the Polish Lekarz qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+        "Direct entry from secondary school under the Bologna single-cycle model, with no separate bachelor's degree required before starting medicine.",
+        "A purpose-built University Hospital (opened 2019) plus dedicated pediatric, orthopedic and dental teaching hospitals for required clinical rotations.",
+        "Final-year elective access to the Global Health Learning Opportunities network of 30-plus medical schools, developed with the US Association of American Medical Colleges."
+      ],
+      "thingsToConsider": [
+        "Admission is decided solely by a competitive, timed entrance exam (100 multiple-choice questions across Biology, Chemistry, Mathematics and Ethics, 180 minutes) -- there is no interview safety net for this programme.",
+        "The university explicitly states it does not offer scholarships to international students in the English-medium Medicine programme; tuition has also risen in most recent admission cycles (EUR 16,000/year for 2026-27 entrants, up from EUR 14,000 in 2019-20).",
+        "No official six-year lump-sum tuition total is published; total cost should be planned per academic year rather than assumed from a multiplied estimate.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Secondary-school graduates strong in Biology or Physics and Chemistry, ready to sit a competitive, timed premedical entrance exam rather than an interview-based process.",
+        "Applicants seeking an EU-recognized MD without first completing a separate bachelor's degree, particularly those targeting eventual practice or residency in Norway, Canada, the US, UK, Ireland, Sweden or Poland.",
+        "Students who can independently fund the full published tuition, given the university's confirmed policy of not offering scholarships to international students in this programme."
+      ],
+      "industryPartners": [
+        "University Hospital, Krakow",
+        "Children's University Hospital, Krakow",
+        "Orthopedic-Rehabilitation University Hospital, Krakow",
+        "University Dental Clinic, Krakow"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed, currently operational",
+        "EU Directive 2005/36/EC (Annex V.1.1) — automatic recognition of the Polish Lekarz medical qualification across the EU/EEA",
+        "Polish Commission of Accreditation (PKA) — institutional accreditation",
+        "Poland Ministry of Science and Higher Education — approval to operate"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Jagiellonian University Medical College listing", "url": "https://search.wdoms.org/home/SchoolDetail?id=F0000048" },
+        { "label": "Jagiellonian University Medical College official Tuition Fees page", "url": "https://medschool.uj.edu.pl/practical-info/tuition-fees/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Jagiellonian University Medical College Medicine programme direct-entry or graduate-entry?",
+          "answer": "It is direct-entry: a single-cycle six-year programme open to secondary-school graduates. A separate four-year graduate-entry MD track for existing degree-holders existed until 2018-19 but has since been discontinued; only the six-year direct-entry track currently admits students."
+        },
+        {
+          "question": "How is admission decided?",
+          "answer": "Admission is based solely on a mandatory 100-question multiple-choice entrance exam (Biology, Chemistry, Mathematics and Ethics, 180 minutes) -- there is no interview for this track."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "For students admitted in the 2026-27 academic year, tuition is EUR 16,000 per year for all six years, payable in full or in two instalments per year, regardless of nationality."
+        },
+        {
+          "question": "Do Indian students need NEET to apply?",
+          "answer": "The university's own admission process does not reference NEET. Under India's National Medical Commission rules, however, Indian citizens and OCI holders obtaining a primary medical qualification abroad on or after May 2018 must separately qualify NEET-UG, whose result is treated as their required NMC Eligibility Certificate."
+        },
+        {
+          "question": "Are scholarships available for international students?",
+          "answer": "No. The School of Medicine in English states directly that it does not offer scholarships to international students in its Medicine or Dentistry English programmes."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "The academic year runs 1 October to 30 September, with a single annual intake tied to that October start."
+        },
+        {
+          "question": "What language is the programme taught in?",
+          "answer": "Entirely in English, through the dedicated School of Medicine in English, which has run continuously since 1994. Students also take a required medical-Polish course for clinical communication."
+        },
+        {
+          "question": "Where do students live?",
+          "answer": "The university's own dormitory complex is in the Prokocim district near the University Hospital; 2026-27 monthly rates range from about 805 PLN for a shared double room to 1,680 PLN for a single room."
+        },
+        {
+          "question": "Is the degree recognized internationally?",
+          "answer": "The institution is listed as currently operational in the WHO World Directory of Medical Schools, and as a Polish public university its Lekarz qualification falls under the EU's automatic professional-recognition regime across the EU and EEA. Recognition requirements outside the EU/EEA, including India, are separate processes governed by that country's own regulator."
+        },
+        {
+          "question": "What clinical hospitals are used?",
+          "answer": "Required rotations run through university-owned and -operated facilities: the University Hospital (opened 2019), Children's University Hospital, Orthopedic-Rehabilitation University Hospital, and the University Dental Clinic."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Jagiellonian University Medical College listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail?id=F0000048",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year and clinical-training proportion."
+        },
+        {
+          "label": "Jagiellonian University official study-programme catalogue — Medicine",
+          "url": "https://studia.uj.edu.pl/en_GB/kierunki/wlek/medicine",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme structure, duration and accreditation listing."
+        },
+        {
+          "label": "Jagiellonian University Medical College official Tuition Fees page",
+          "url": "https://medschool.uj.edu.pl/practical-info/tuition-fees/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed tuition fee and historical rate table."
+        },
+        {
+          "label": "Jagiellonian University Medical College official Admission Criteria and Entrance Examination pages",
+          "url": "https://medschool.uj.edu.pl/prospective-students/md-program-in-english/admission-criteria/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility, admissions route and entrance-exam format."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "jagiellonian-university-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine, Program in English (Six-Year Program)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 16000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published as EUR 16,000 per year for students admitted in the 2026-27 cycle, unchanged for that cohort throughout their six years. Rates rise for each new admission cohort: EUR 14,000 (2019-20 to 2020-21), EUR 14,500 (2021-22), EUR 15,000 (2022-23 to 2023-24), EUR 15,500 (2024-25 to 2025-26), EUR 16,000 (2026-27). No official six-year lump-sum total is published. Payable in full or two instalments per year, identical regardless of citizenship."
+          },
+          "officialProgramUrl": "https://studia.uj.edu.pl/en_GB/kierunki/wlek/medicine",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants holding a secondary-education diploma that entitles them to higher-education admission in their home country, with Biology or Physics and Chemistry completed",
+              "Applicants meeting the English-proficiency requirement (IELTS 6.5+, TOEFL iBT 87+, or prior English-medium secondary education)"
+            ],
+            "restrictions": [
+              "Admission is decided solely by a competitive, timed multiple-choice entrance exam; there is no interview route",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered or referenced by the university"
+            ],
+            "notes": "Nationality, including Polish citizenship, does not affect eligibility criteria or the tuition rate for this English-medium programme.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://medschool.uj.edu.pl/prospective-students/md-program-in-english/admission-criteria/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants create an account in the university's Online Application System, submit academic and language documents, pay the application fee, and sit a mandatory 100-question multiple-choice entrance exam; admission is decided purely on exam ranking, with no interview.",
+            "eligibility": {
+              "intro": "Applicants need a secondary-education diploma with Biology or Physics and Chemistry completed, proof of English proficiency unless schooled in English, and a passing rank on the mandatory entrance examination.",
+              "items": [
+                "Secondary-education diploma entitling the holder to higher-education admission in their home country",
+                "Completed Biology or Physics, and Chemistry, during secondary or supplementary education",
+                "English proficiency: IELTS 6.5+, TOEFL iBT 87+, or confirmation that secondary education was conducted in English",
+                "Competitive ranking on the 100-question, 180-minute entrance examination",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Create an account in the Online Application System (IRK) and submit the application within the open window",
+              "Upload academic documents and proof of English proficiency",
+              "Pay the per-round application fee",
+              "Sit the mandatory online multiple-choice entrance examination on the scheduled date",
+              "Check the published ranking list and complete enrollment if admitted, including apostilled diploma, health certificate and insurance proof"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Photocopy of secondary-education diploma and transcript, or supplementary certificate showing Biology/Physics and Chemistry grades",
+                "Apostilled or legalised secondary-education diploma, submitted at enrollment"
+              ],
+              "application": [
+                "Proof of English proficiency (IELTS or TOEFL) if secondary education was not in English",
+                "Health certificate and immunization proof, submitted upon acceptance",
+                "Proof of health/accident insurance valid for the period of study in Poland"
+              ]
+            },
+            "deadlinesNote": "Most recent cycle (2026-27): applications 23 Feb-29 Apr 2026, entrance exam 23 May 2026, enrollment through 11 Sep 2026. Next cycle dates not yet published; confirm with the university.",
+            "visaConsiderations": [
+              "Significant Polish immigration-law changes for foreign-student admission took effect 1 July 2025; confirm current visa and residency requirements directly with the university before applying."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026-27 admission cohort is EUR 16,000 per year, unchanged throughout that cohort's six years, per the university's official Tuition Fees page and its published historical rate table. An estimated additional EUR 6,000 per year covers books and study supplies, per the university's own catalogue disclosure. No official lump-sum six-year total is published.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: foundational sciences",
+              "language": "English",
+              "details": "Pre-clinical foundational coursework, including a Year 1 summer clinical clerkship introduction."
+            },
+            {
+              "phase": "Years 3-5: clinical coursework",
+              "language": "English",
+              "details": "Bedside teaching in Internal Medicine, Surgery, Obstetrics and Gynecology, and Pediatrics in small groups, with a summer clinical clerkship at the end of each year."
+            },
+            {
+              "phase": "Year 6: dedicated clinical training",
+              "language": "English",
+              "details": "Full-time clinical training at university-owned teaching hospitals, with optional final-year elective rotations through the Global Health Learning Opportunities network."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "publicField": "identity",
+      "claimText": "Jagiellonian University Medical College, part of Poland's oldest university founded in 1364, is a public institution in Krakow; its School of Medicine in English has run since 1994.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools and Jagiellonian University Medical College official history page",
+      "sourceUrl": "https://medschool.uj.edu.pl/about-us/history/school-of-medicine-in-english/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "publicField": "recognition",
+      "claimText": "Listed as currently operational in the WHO World Directory of Medical Schools (FAIMER ID F0000048); the Polish Lekarz qualification carries EU Directive 2005/36/EC (Annex V.1.1) automatic recognition across the EU/EEA; institution holds Polish Commission of Accreditation (PKA) accreditation and Ministry of Science and Higher Education approval.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools and Jagiellonian University Medical College Academic Program disclosure",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail?id=F0000048",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "programmeSlug": "jagiellonian-university-medicine",
+      "publicField": "academics",
+      "claimText": "Medicine, Program in English is a direct-entry, single-cycle, 6-year (12-semester) programme entered from secondary school and awarding the title Lekarz; a prior 4-year graduate-entry track was discontinued after the 2018-19 intake.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University official study-programme catalogue and Academic Program disclosure",
+      "sourceUrl": "https://studia.uj.edu.pl/en_GB/kierunki/wlek/medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "programmeSlug": "jagiellonian-university-medicine",
+      "publicField": "eligibility",
+      "claimText": "Applicants need a secondary-education diploma with Biology/Physics and Chemistry completed, English proficiency (IELTS 6.5+/TOEFL iBT 87+ or English-medium schooling), and a passing rank on the mandatory entrance exam.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University Medical College official Admission Criteria page",
+      "sourceUrl": "https://medschool.uj.edu.pl/prospective-students/md-program-in-english/admission-criteria/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "programmeSlug": "jagiellonian-university-medicine",
+      "publicField": "admissions",
+      "claimText": "Admission is decided solely by a 100-question, 180-minute multiple-choice entrance exam (Biology, Chemistry, Mathematics/Logic, Ethics); no interview. 2026-27 cycle: applications 23 Feb-29 Apr 2026, exam 23 May 2026, enrollment rounds through 11 Sep 2026.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University Medical College official Entrance Examination and Application Timeline pages",
+      "sourceUrl": "https://medschool.uj.edu.pl/prospective-students/entrance-examination-description/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "programmeSlug": "jagiellonian-university-medicine",
+      "publicField": "intake",
+      "claimText": "The academic year runs 1 October to 30 September, with a single annual intake tied to that October start.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University Medical College Academic Program disclosure",
+      "sourceUrl": "https://medschool.uj.edu.pl/medical-education/academic-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "programmeSlug": "jagiellonian-university-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition for the 2026-27 admission cohort is EUR 16,000 per year, unchanged through that cohort's six years; historical rates rose from EUR 14,000 (2019-20) to the current figure.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University Medical College official Tuition Fees page",
+      "sourceUrl": "https://medschool.uj.edu.pl/practical-info/tuition-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "programmeSlug": "jagiellonian-university-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Required clinical rotations run through the University Hospital (opened 2019), Children's University Hospital, Orthopedic-Rehabilitation University Hospital and the University Dental Clinic; clinical training is 50-74% of the full programme; final-year electives available through the Global Health Learning Opportunities network with AAMC/NBME cooperation.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University Medical College Academic Program disclosure and World Directory of Medical Schools",
+      "sourceUrl": "https://medschool.uj.edu.pl/medical-education/academic-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jagiellonian-university-medical-college",
+      "publicField": "student living",
+      "claimText": "The university's own dormitory complex in Prokocim charges (2026-27) 805 PLN/month for a shared double room up to 1,680 PLN/month for a single room; the Student Support and Adaptation Center (SOWA) provides a 24-hour hotline and counselling.",
+      "status": "verified",
+      "sourceLabel": "Jagiellonian University Medical College official Dormitory and SOWA pages",
+      "sourceUrl": "https://medschool.uj.edu.pl/practical-info/school-dormitory/facility-description/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

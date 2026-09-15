@@ -1,0 +1,375 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Rwanda College of Medicine and Health Sciences maps its English-medium Bachelor of Medicine and Bachelor of Surgery (MBChB) programme to this category: a direct-entry, single-cycle six-year programme at Rwanda's oldest and largest public medical school.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "rwanda",
+      "slug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "name": "University of Rwanda College of Medicine and Health Sciences",
+      "city": "Huye",
+      "type": "Public",
+      "establishedYear": 1963,
+      "officialWebsite": "https://cmhs.ur.ac.rw/",
+      "mediaAttribution": {},
+      "summary": "The University of Rwanda College of Medicine and Health Sciences (CMHS), tracing back to 1963, runs a direct-entry, six-year, English-medium Bachelor of Medicine and Bachelor of Surgery (MBChB) programme at its Huye teaching campus. The school is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and its Rwandan degree carries reciprocal recognition across East African Community partner states.",
+      "campusLifestyle": "MBChB students study at the University of Rwanda's Huye Campus (the former National University of Rwanda site), while CMHS's central administrative headquarters is based in Kigali; international applicants use a dedicated online application track separate from the domestic admissions flow.",
+      "cityProfile": "Huye (formerly Butare) is a university town in southern Rwanda and home to Rwanda's first teaching hospital, CHUB (University Teaching Hospital of Butare), while CMHS's administrative headquarters sits in Kigali, Rwanda's capital.",
+      "practicalExposure": "The six-year MBChB programme is delivered at Huye Campus, with clinical training expected across Rwanda Medical and Dental Council-accredited teaching hospitals such as CHUK (University Teaching Hospital of Kigali) and CHUB (University Teaching Hospital of Butare), though a detailed year-by-year preclinical/clinical curriculum breakdown was not published on the university's own admissions pages. Graduates complete a mandatory one-year internship at an RMDC-designated centre before full registration.",
+      "hostelOverview": "On-campus hostel capacity at Huye Campus is severely constrained -- roughly 3,000 beds against 6,000-plus new arrivals in a single recent intake, with only about 23% of the undergraduate population housed on-campus overall. No specific accommodation fee figure could be confirmed from official university pages; local reporting describes off-campus private rentals in Huye as being in short supply and priced up during intake season, so international applicants should budget for this and confirm current options directly with the university.",
+      "dietarySupport": "No specific university-run meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants use a dedicated online track at efiling.ur.ac.rw, submitting a NESA foreign-qualification equivalence certificate alongside standard application documents, distinct from the domestic student application flow.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000227), with graduates (1967-current) eligible to apply for ECFMG Certification and degrees noted as acceptable to Canadian medical regulators.",
+        "Reciprocal recognition across East African Community partner states, per Rwanda's Medical and Dental Council's official approved-schools list.",
+        "The university's own current fee-structure page explicitly confirms tuition is the same for national and international students -- a genuine, official, currently-reaffirmed rate rather than a domestic-only figure.",
+        "A defined international-applicant admissions track with a published, dated entry-requirements document distinguishing subject-combination and equivalency requirements.",
+        "Rwanda's oldest and largest public university medical programme, tracing back to 1963."
+      ],
+      "thingsToConsider": [
+        "The confirmed tuition figure (RWF 2,000,000/year) is a 2018-set rate that the university's own site explicitly reaffirms as 'valid until further notice' as of a 2025 page update -- not a freshly issued 2026 figure; confirm the current rate directly before committing.",
+        "No 2026/27 admissions cycle had been published as of this record's research date; the most recent confirmed cycle (2025/26) ran a March application window and a September window, both already closed -- confirm current dates directly with the university.",
+        "On-campus accommodation is severely oversubscribed at Huye Campus, and no specific hostel fee is published; budget for the likelihood of private off-campus housing.",
+        "No confirmed scholarship route was found specifically for Indian or other non-African international applicants; the university's Mastercard Foundation Scholars Program primarily targets African students.",
+        "WHO World Directory of Medical Schools data for this school appears stale in places (still listing French alongside English as the language of instruction, and a 2008 curriculum-revision date), though current official university admissions documents confirm English-medium instruction."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, direct-entry medical degree at Rwanda's oldest public medical school, with tuition explicitly equal for domestic and international students.",
+        "Applicants comfortable completing a NESA foreign-qualification equivalence step and a competitive entrance test plus interview process.",
+        "Students who can confirm current-cycle deadlines and accommodation options directly with the university, given some figures are not yet published for the upcoming cycle."
+      ],
+      "industryPartners": [
+        "CHUK (University Teaching Hospital of Kigali)",
+        "CHUB (University Teaching Hospital of Butare)"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0000227",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1967-present",
+        "Medical Council of Canada (MCC) -- degree acceptable to Canadian medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Rwanda Medical and Dental Council (RMDC) -- reciprocal recognition across East African Community partner states"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- University of Rwanda listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000227" },
+        { "label": "Rwanda Medical and Dental Council -- approved medical schools with EAC reciprocal recognition", "url": "https://rmdc.rw/spip.php?page=article&id_article=9" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBChB programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools confirms admission follows completion of secondary education, with no prior university degree required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Bachelor of Medicine and Bachelor of Surgery (MBChB) degree after six years of study, followed by a mandatory one-year internship at an RMDC-designated centre."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "RWF 2,000,000 per year (roughly USD 1,360-1,400), a rate explicitly confirmed as the same for national and international students on the university's own fee-structure page. This is a 2018-set rate reaffirmed as still valid; confirm the current rate directly with the university."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "Applicants with foreign certificates, such as Indian 12th-grade results, must have their qualification equivalency assessed by Rwanda's National Examination and School Inspection Authority (NESA) as part of the international-applicant admissions track."
+        },
+        {
+          "question": "Is there an entrance exam?",
+          "answer": "Yes. Admission requires a comprehensive clinical aptitude entrance test plus an interview, weighted alongside secondary-school academic performance in a competitive, capped-intake selection process."
+        },
+        {
+          "question": "Is there a separate application fee for international students?",
+          "answer": "Yes. RWF 6,000 for international (non-East-African-Community) applicants, compared to RWF 5,000 for Rwandan and EAC applicants, payable through the university's Urubuto payment system."
+        },
+        {
+          "question": "When can I apply and when does the academic year start?",
+          "answer": "No 2026/27 cycle had been published as of this record's research date. The most recent confirmed cycle ran a March application window and a September window (both since closed), with registration in the September-October period -- confirm current dates directly with the university."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "On-campus hostel capacity at Huye Campus is severely constrained, with only about 23% of the undergraduate population housed on-campus; no specific accommodation fee is published, so budget for likely off-campus private housing."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Rwanda?",
+          "answer": "The degree carries reciprocal recognition across East African Community partner states. For India specifically, graduates would need to separately satisfy India's National Medical Commission screening requirements; this was not independently verified against an NMC source."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- University of Rwanda listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000227",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry prerequisite, founding year, ECFMG graduation-year eligibility and Canadian MCC acceptability; noted as stale in places (language field, curriculum-revision date)."
+        },
+        {
+          "label": "Rwanda Medical and Dental Council -- approved medical schools with EAC reciprocal recognition",
+          "url": "https://rmdc.rw/spip.php?page=article&id_article=9",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for reciprocal recognition across EAC partner states and for RMDC-accredited internship/teaching-hospital centres including CHUK and CHUB."
+        },
+        {
+          "label": "University of Rwanda -- 2025 CMHS entry requirements (PDF)",
+          "url": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements-2.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, subject-combination requirements, entrance-test/interview process, English-proficiency requirement and NESA equivalency mechanism for foreign qualifications."
+        },
+        {
+          "label": "University of Rwanda -- fee structure page",
+          "url": "https://ur.ac.rw/spip.php?page=university-fees-structure",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence that the university's 2018-set fee structure remains explicitly confirmed valid as of a 2025 page update, and that tuition is stated to be the same for national and international students."
+        },
+        {
+          "label": "University of Rwanda -- signed 2018 fee structure (PDF)",
+          "url": "https://ur.ac.rw/IMG/pdf/ur_signed_fee_structure_without_diploma-pivote.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; the underlying signed fee schedule confirming RWF 2,000,000/year tuition for Bachelor of Medicine and Surgery, explicitly equal for national and international students."
+        },
+        {
+          "label": "The New Times (Rwanda) -- UR Huye Campus grapples with student accommodation",
+          "url": "https://www.newtimes.co.rw/article/30931/news/education/ur-huye-campus-grapples-with-student-accommodation-as-academic-year-starts/amp",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Independent news reporting used as secondary evidence for on-campus hostel-capacity constraints at Huye Campus, since no official UR accommodation-fee page could be reached."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "physics chemistry biology or maths chemistry biology grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "NESA equivalency status", "entrance test preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-rwanda-cmhs-mbchb",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2018-2019, reaffirmed valid 2025",
+            "officialFeeCurrency": "RWF",
+            "officialAnnualTuitionAmount": 2000000,
+            "officialTotalTuitionAmount": 12000000,
+            "verifiedAt": "2026-07-25",
+            "notes": "The university's own fee-structure page explicitly states the fee schedule approved in 2018 remains 'valid until further notice' as of a 2025 page update, and the underlying signed 2018 document states tuition is the same for national and international students: RWF 2,000,000/year (roughly USD 1,360-1,400 at recent exchange rates) for Bachelor of Medicine and Surgery. One-time new-student administrative fees (application, medical/life insurance, student union, registration) total RWF 65,000. No separately-issued, more recent international-student USD fee schedule was found; given the university's explicit same-fee statement, this appears to be a genuine no-separate-international-fee situation rather than a missing document, but the underlying rate should be reconfirmed as current before committing. Total is calculated as the annual figure times 6 years -- not published as a lump sum."
+          },
+          "officialProgramUrl": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements-2.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education with a Physics-Chemistry-Biology or Mathematics-Chemistry-Biology subject combination"
+            ],
+            "restrictions": [
+              "Foreign secondary-school qualifications must be equivalence-assessed by Rwanda's National Examination and School Inspection Authority (NESA)",
+              "Selection is competitive against a capped intake, based on academic performance plus a clinical aptitude entrance test and interview"
+            ],
+            "notes": "International applicants use a dedicated online track (efiling.ur.ac.rw) separate from the domestic application flow.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements-2.pdf"
+          },
+          "admissionsContent": {
+            "overview": "International applicants register biographical details online to generate a reference number and PIN, upload NESA equivalence and other required documents, pay the international application fee via the university's Urubuto payment system, then sit a comprehensive entrance test and interview as part of a competitive, capped-intake selection process.",
+            "eligibility": {
+              "intro": "Admission requires a Physics-Chemistry-Biology or Mathematics-Chemistry-Biology secondary-school qualification, NESA-assessed for foreign certificates, plus a passing entrance test and interview.",
+              "items": [
+                "Advanced-level secondary qualification in Physics-Chemistry-Biology or Mathematics-Chemistry-Biology",
+                "NESA equivalence certificate for foreign secondary-school qualifications",
+                "Comprehensive clinical aptitude entrance test and interview"
+              ]
+            },
+            "applicationSteps": [
+              "Register biographical information at efiling.ur.ac.rw to generate a reference number and PIN",
+              "Upload NESA equivalence certificate, passport copy and certified secondary-school certificate",
+              "Pay the RWF 6,000 international application fee via the Urubuto payment system",
+              "Log back in with the reference number and PIN to complete submission",
+              "Sit the entrance test and interview if shortlisted, and await selection results"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "NESA equivalence certificate for foreign secondary-school qualifications",
+                "Certified Advanced Senior Six (S6) secondary-education certificate"
+              ],
+              "application": [
+                "Valid passport",
+                "Proof of application-fee payment"
+              ]
+            },
+            "deadlinesNote": "No 2026/27 cycle had been published as of this record's research date. The most recent confirmed cycle ran a March window and a September window, both since closed -- confirm current dates directly with the university.",
+            "visaConsiderations": [
+              "Confirm current Rwandan student-visa requirements directly with the university's admissions office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "The university's own current fee-structure page reaffirms a 2018-set rate of RWF 2,000,000/year as still valid, explicitly stated to be the same for national and international students. No separate, more recently issued international USD fee schedule was found; reconfirm directly with the university before committing.",
+          "teachingPhases": [
+            {
+              "phase": "6-year MBChB programme",
+              "language": "English",
+              "details": "Delivered at Huye Campus, with a mandatory one-year internship at an RMDC-designated hospital (such as CHUK or CHUB) following graduation before full registration; a detailed year-by-year preclinical/clinical curriculum breakdown was not published on the university's own admissions pages."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "publicField": "identity",
+      "claimText": "University of Rwanda's medical faculty (as the National University of Rwanda) began instruction in 1963 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- University of Rwanda listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000227",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000227); direct-entry confirmed (prerequisite: completed secondary education); graduates (1967-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- University of Rwanda listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000227",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "publicField": "recognition",
+      "claimText": "University of Rwanda's School of Medicine is listed on Rwanda's Medical and Dental Council register of schools given reciprocal recognition across East African Community partner states.",
+      "status": "verified",
+      "sourceLabel": "Rwanda Medical and Dental Council -- approved medical schools with EAC reciprocal recognition",
+      "sourceUrl": "https://rmdc.rw/spip.php?page=article&id_article=9",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-rwanda-cmhs-mbchb",
+      "publicField": "eligibility",
+      "claimText": "Admission requires a Physics-Chemistry-Biology or Mathematics-Chemistry-Biology secondary qualification, NESA equivalence certification for foreign credentials, and a comprehensive clinical aptitude entrance test plus interview.",
+      "status": "verified",
+      "sourceLabel": "University of Rwanda -- 2025 CMHS entry requirements (PDF)",
+      "sourceUrl": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements-2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-rwanda-cmhs-mbchb",
+      "publicField": "admissions",
+      "claimText": "International applicants use a dedicated online track (efiling.ur.ac.rw), pay an RWF 6,000 application fee via the Urubuto payment system, and submit NESA-equivalence and passport documents.",
+      "status": "verified",
+      "sourceLabel": "University of Rwanda -- 2025 CMHS entry requirements (PDF)",
+      "sourceUrl": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements-2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-rwanda-cmhs-mbchb",
+      "publicField": "intake",
+      "claimText": "No 2026/27 cycle published as of research date; most recent confirmed cycle (2025/26) ran application windows in March and September, both since closed, with registration in September-October.",
+      "status": "verified",
+      "sourceLabel": "University of Rwanda -- 2025 CMHS entry requirements (PDF)",
+      "sourceUrl": "https://ur.ac.rw/IMG/pdf/2025_entry_requirements-2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "programmeSlug": "university-of-rwanda-cmhs-mbchb",
+      "publicField": "fee",
+      "claimText": "RWF 2,000,000/year tuition, explicitly stated to be the same for national and international students, per the university's 2018 signed fee schedule reaffirmed as still valid on its current fee-structure page (updated 2025).",
+      "status": "verified",
+      "sourceLabel": "University of Rwanda -- signed 2018 fee structure (PDF)",
+      "sourceUrl": "https://ur.ac.rw/IMG/pdf/ur_signed_fee_structure_without_diploma-pivote.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "publicField": "student living",
+      "claimText": "On-campus hostel capacity at Huye Campus is severely constrained (roughly 3,000 beds against 6,000+ new arrivals in a recent intake, ~23% of undergraduates housed on-campus overall); no specific accommodation fee is published.",
+      "status": "verified",
+      "sourceLabel": "The New Times (Rwanda) -- UR Huye Campus grapples with student accommodation",
+      "sourceUrl": "https://www.newtimes.co.rw/article/30931/news/education/ur-huye-campus-grapples-with-student-accommodation-as-academic-year-starts/amp",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

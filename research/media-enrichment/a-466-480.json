@@ -1,0 +1,293 @@
+{
+  "batchId": "media-a-466-480",
+  "scope": "Alphabetical missing-media rows 466-480; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-sarajevo-faculty-of-medicine",
+      "universityName": "University of Sarajevo Faculty of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo (already identified by the first pass) re-confirmed resolving directly. Cover remains unresolved: re-checked the homepage (only theme stock illustrations index-slider-graphic.png/index-studij.jpg, both generic vector/illustration graphics, not photos) and checked Wikipedia/Wikimedia Commons for a Faculty-of-Medicine-specific building photo - the University of Sarajevo's Commons-linked campus photos cover Economics, Natural Sciences, Humanities, Fine Arts and Law/rectorate buildings only, none for Medicine. Cover stays held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://mf.unsa.ba/wp-content/themes/medicinski-fakultet/images/mf-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official Faculty site mf.unsa.ba, dedicated header logo asset, verified HTTP 200.",
+        "proposedPublicId": "university-of-sarajevo-faculty-of-medicine-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-saskatchewan",
+      "universityName": "University of Saskatchewan",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.usask.ca/_images/program-search.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image (Thorvaldson Building) served from the university's own homepage",
+        "proposedPublicId": "university-of-saskatchewan-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-south-asia",
+      "universityName": "University of South Asia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo re-confirmed. Checked the /about subpage (not scanned by the first pass, which covered only the homepage's program icons and testimonial photos) and found a genuine institutional inauguration-event photo there..",
+      "logo": {
+        "sourceUrl": "https://usa.edu.pk/wp-content/uploads/2026/06/usa-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site usa.edu.pk, dedicated header logo asset, verified HTTP 200.",
+        "proposedPublicId": "university-of-south-asia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://usa.edu.pk/wp-content/uploads/2024/07/History.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site's own /about page, photo alt-labelled 'Chaudhary Pervaiz Elahi inauguration University of South Asia', verified HTTP 200.",
+        "proposedPublicId": "university-of-south-asia-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-southern-california",
+      "universityName": "University of Southern California",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://identity.usc.edu/wp-content/uploads/2022/08/PrimaryLogotype-1024x219.png",
+        "sourceType": "official",
+        "rightsBasis": "official primary logotype served from USC's own brand/identity site (identity.usc.edu); the usc.edu homepage itself renders the mark as an inline SVG with no standalone file",
+        "proposedPublicId": "university-of-southern-california-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-split-school-of-medicine",
+      "universityName": "University of Split School of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo re-confirmed. Checked the /fakultet (faculty/about) subpage, not scanned by the first pass (homepage only), and found a genuine faculty-building banner photo there instead of the newsletter/event graphics the first pass rejected..",
+      "logo": {
+        "sourceUrl": "https://mefst.unist.hr/img/mefst-logo-blue.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official Faculty site mefst.unist.hr, dedicated header logo asset, verified HTTP 200.",
+        "proposedPublicId": "university-of-split-school-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://neuron.mefst.hr/docs//web2016/banner_up/MF_naslovna_800x527.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Faculty documents subdomain, image alt-labelled 'Fakultet' ('MF_naslovna' = MF frontpage/cover banner), found on the Faculty's dedicated /fakultet page, verified HTTP 200 (image/jpeg).",
+        "proposedPublicId": "university-of-split-school-of-medicine-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-stavanger",
+      "universityName": "University of Stavanger",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): uis.no's on-page logo is only an inline SVG (logo--full/logo--compact) with no standalone file, so applied the favicon/higher-res-icon technique to find the standalone 'UiS' monogram PNG. Direct fetch of uis.no remains inconsistently Cloudflare-blocked even for static assets, so both files were retrieved via the Wayback Machine..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260704203943im_/https://www.uis.no/themes/custom/uis/images/favicons/apple-touch-icon.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site uis.no, standalone 180x180 apple-touch-icon showing the 'UiS' monogram mark (matching the site's own inline logo--compact SVG variant); direct fetch is intermittently Cloudflare-blocked (confirmed still blocking on repeat attempts), so served via a Wayback Machine archived copy dated 2026-07-04, verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-stavanger-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20250928153145im_/https://www.uis.no/sites/default/files/inline-images/Banner%20uis.no%202.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site's own homepage hero banner image, served via a Wayback Machine archived copy dated 2025-09-28, verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-stavanger-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-sydney",
+      "universityName": "University of Sydney",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.sydney.edu.au/content/dam/icons/logos/logo-usyd-dark.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-sydney-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-szeged",
+      "universityName": "University of Szeged",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://u-szeged.hu/site/upload/2025/11/szte_logo_en.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-szeged-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://u-szeged.hu/site/upload/2023/05/rektori_epulet.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image of the university's Rector's Building (Rektori epulet) served from the university's own website",
+        "proposedPublicId": "university-of-szeged-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-tartu-faculty-of-medicine",
+      "universityName": "University of Tartu Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://meditsiiniteadused.ut.ee/themes/utheme/assets/img/UT_website_logo_blue_eng.svg",
+        "sourceType": "official",
+        "rightsBasis": "official University of Tartu logo served from the Faculty of Medicine's own official site",
+        "proposedPublicId": "university-of-tartu-faculty-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://meditsiiniteadused.ut.ee/sites/default/files/styles/ut_content_main_big/public/2021-11/Medicine-56.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional hero banner image served from the Faculty of Medicine's own 'About the Faculty' page",
+        "proposedPublicId": "university-of-tartu-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-tasmania",
+      "universityName": "University of Tasmania",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260721210404im_/https://www.utas.edu.au/__data/assets/git_bridge/0012/1368768/dist/mysource_files/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-07-21) since utas.edu.au is known to block Cloudinary's own fetcher, verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-tasmania-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260718102916im_/https://www.utas.edu.au/__data/assets/image/0011/1419671/university-of-tasmania__social.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-07-18), verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-tasmania-cover"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Per the task note, both assets were already correctly identified by the first pass and only failed at upload time. Direct re-fetch with a standard browser UA now also succeeds consistently, but used the Wayback Machine as the primary technique per instructions since Cloudinary's own fetcher (not my fetch path) is what actually failed before.."
+    },
+    {
+      "universitySlug": "university-of-technology-sydney",
+      "universityName": "University of Technology Sydney",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uts.edu.au/globalassets/restricted/media/all-pages-sitewide/header/restricteduts-logoheader.svg",
+        "sourceType": "official",
+        "rightsBasis": "official header brand asset served from the university's own website",
+        "proposedPublicId": "university-of-technology-sydney-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uts.edu.au/AdaptiveImages/optimizely/635a5213-c94c-49f3-944b-d2430e3eff8e/original-image-uts-campus-building-8-hr-0022.jpg?stamp=f6fa06485846bf0359a5597e98b16a6a423583a1",
+        "sourceType": "official",
+        "rightsBasis": "official campus building photograph served as the homepage social-share image on the university's own site",
+        "proposedPublicId": "university-of-technology-sydney-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-trento",
+      "universityName": "University of Trento",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): unitn.it continues to 403 on every direct fetch attempt. Recovered the homepage via the Wayback Machine to find the header logo asset path, then confirmed it resolves via its own Wayback Machine archived copy..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260726020509im_/https://www.unitn.it/themes/custom/unitn_default/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site unitn.it (still returns HTTP 403 to direct fetch) via a Wayback Machine snapshot dated 2026-07-26; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-trento-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-virginia",
+      "universityName": "University of Virginia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.virginia.edu/assets/images/logo-primary-blue.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-virginia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.virginia.edu/assets/images/meta/placeholder_3.png",
+        "sourceType": "official",
+        "rightsBasis": "official homepage social-share image (\"Lawn view of the Rotunda\") served from the university's own website",
+        "proposedPublicId": "university-of-virginia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-waikato",
+      "universityName": "University of Waikato",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The homepage hero remains JS-rendered with no static image URL as the first pass found, but the /about subpage (static server-rendered HTML) exposes a genuine high-resolution campus photo, plus the standalone header logo.svg..",
+      "logo": {
+        "sourceUrl": "https://www.waikato.ac.nz/_resources/themes/app/dist/icons/logo.svg?m=1783483664",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site waikato.ac.nz, dedicated header logo asset, verified HTTP 200.",
+        "proposedPublicId": "university-of-waikato-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.waikato.ac.nz/assets/Uploads/About-us/pvblcegzm87hplix465w.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site's own /about page, high-resolution (3872x1334) photo alt-labelled 'students-walking-past-garden-flowers', verified HTTP 200.",
+        "proposedPublicId": "university-of-waikato-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-warsaw",
+      "universityName": "University of Warsaw",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://en.uw.edu.pl/wp-content/uploads/2018/09/logo-pi.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-warsaw-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://en.uw.edu.pl/wp-content/uploads/2026/06/obiekty_uw_126_%C2%A9uniwersytet_warszawski-1-1024x683-1-960x465-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official campus facilities photograph served from the university's own homepage slider",
+        "proposedPublicId": "university-of-warsaw-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "countrySlug": "belarus",
+  "universitySlug": "belarusian-state-medical-university",
+  "schoolName": "Belarusian State Medical University",
+  "cityName": "Minsk",
+  "priority": "medium",
+  "officialWebsite": "https://www.bsmu.by/en/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — BSMU publishes a current 2026/27 English General Medicine fee (US$6,300 annually), a six-year duration and a foreign-applicant interview route that tests instruction language, chemistry and biology. The World Directory lists the six-year English MD programme and records ECFMG eligibility subject to its conditions. A publishable commercial record is still incomplete: the official sources reviewed do not give a current international application deadline/intake calendar, current residence/accommodation cost, a complete current fee schedule beyond tuition, or a country-level visa and post-arrival cost source. No fee estimate has been inferred.",
+  "sourceBundle": { "sources": [
+    { "label": "BSMU official annual fees 2026/2027", "url": "https://www.bsmu.by/en/abiturientu/annual-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists English General Medicine at US$6,300 for 2026/27, with a US$3,150 first advance payment by September 16, 2026." },
+    { "label": "BSMU rules and procedure for admission", "url": "https://www.bsmu.by/en/abiturientu/priem-dokumentov/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Foreign citizens apply on a fee basis after obtaining an invitation; first-year admission is competitive and includes an interview in the instruction language, chemistry and biology. It lists passport, secondary-school certificate, health/HIV documentation, photographs and other submission requirements." },
+    { "label": "BSMU official English homepage", "url": "https://www.bsmu.by/en/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Confirms Minsk location, nine faculties/three institutes and teaching in Russian and English; the medical faculty for international students is listed." },
+    { "label": "World Directory of Medical Schools — BSMU", "url": "https://search.wdoms.org/home/SchoolDetail/F0001100", "kind": "recognition-directory", "checkedAt": "2026-07-25", "notes": "Lists Medicine in English (six-year MD), instruction in English, international-student restriction for that programme, and ECFMG-certification eligibility subject to directory conditions." }
+  ] },
+  "structuredFacts": {
+    "name": "Belarusian State Medical University",
+    "type": "Public medical university",
+    "programs": [ { "officialTitle": "General Medicine (English)", "duration": "6 years", "instructionLanguage": "English", "tuition": "US$6,300 for 2026/27", "firstAdvancePayment": "US$3,150 by September 16, 2026", "admissionRoute": "Invitation for training followed by competitive first-year admission and an interview covering the instruction language, chemistry and biology.", "publishable": false } ],
+    "missingForPublication": [ "current international intake and submission deadline", "current hostel/accommodation fee and availability", "mandatory non-tuition costs and payment schedule beyond the stated advance payment", "current Belarus visa/residence process from an official government source", "current source-backed post-graduation recognition guidance for target markets" ]
+  },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted while key decision-stage costs and international timing remain unverified." }
+}

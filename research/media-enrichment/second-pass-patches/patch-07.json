@@ -1,0 +1,407 @@
+{
+  "batchId": "second-pass-patch-07",
+  "entries": [
+    {
+      "universitySlug": "lomonosov-moscow-state-university",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/%D0%9C%D0%93%D0%A3%2C_%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (aerial photo of MSU main campus)",
+        "proposedPublicId": "lomonosov-moscow-state-university-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons free-licensed campus photo (aerial view). Logo remains unresolved: the Wikipedia infobox emblem (Moscow_State_University_CoA.png) is hosted locally on en.wikipedia (non-free/fair-use), no free equivalent found on Commons; official msu.ru is a JS-rendered SPA shell with no discoverable static logo asset path, and a direct /img/logo.png guess returned an HTML error page, not an image. Logo stays held."
+    },
+    {
+      "universitySlug": "london-school-of-economics",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/London_school_of_economics_logo_with_name.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (current LSE wordmark logo)",
+        "proposedPublicId": "london-school-of-economics-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/LSE_main_entrance.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 / GFDL 1.2 (LSE Old Building main entrance)",
+        "proposedPublicId": "london-school-of-economics-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons free-licensed logo and campus photo (both hosted on commons.wikimedia.org, not the en-wiki fair-use path). Bypasses the Brand Portal request-access barrier noted in the first pass."
+    },
+    {
+      "universitySlug": "london-south-bank-university",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/LSBU2020logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (current 2020 LSBU logo)",
+        "proposedPublicId": "london-south-bank-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/London_South_Bank_University_inside.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (interior campus photo)",
+        "proposedPublicId": "london-south-bank-university-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons free-licensed current logo (2020 refresh) and campus photo, avoiding third-party logo directories flagged in the first pass."
+    },
+    {
+      "universitySlug": "ludwig-maximilian-university-munich",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/LMU_Muenchen_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (below threshold of originality; trademark still applies)",
+        "proposedPublicId": "ludwig-maximilian-university-munich-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/2017_LMU_1-4_rectlinear.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (LMU main building, Professor-Huber-Platz)",
+        "proposedPublicId": "ludwig-maximilian-university-munich-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons PD-textlogo wordmark and CC-BY-SA campus photo, bypassing LMU's controlled brand-guide request process."
+    },
+    {
+      "universitySlug": "lund-university",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Logotyp_Lunds_universitet_%28transp%29.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain / PD-textlogo (transparent-background logotype)",
+        "proposedPublicId": "lund-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Lunds_universitets_huvudbyggnad_%28juli_2008%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain (Main Building, July 2008)",
+        "proposedPublicId": "lund-university-cover"
+      },
+      "note": "Technique used: Commons Category:Logos_of_Lund_University (not the non-free seal used in the en-wiki infobox) plus a public-domain main-building photo, bypassing the graphic-manual restriction on the combined seal/wordmark."
+    },
+    {
+      "universitySlug": "mamun-university",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://mamun.uz/assets/images/apple-touch-icon.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the university's own official domain (mamun.uz), used site-wide as its apple-touch-icon/site emblem depicting the institution's building",
+        "proposedPublicId": "mamun-university-cover"
+      },
+      "note": "Technique used: inline-CSS/text-header site (no dedicated logo file); found apple-touch-icon.png depicting an institutional building at higher resolution than the favicon, usable as cover. No standalone logo file exists anywhere on the domain (header renders as text, homepage HTML has zero \"logo\"-named assets); gallery photos on the homepage are mixed generic/stock and could not be confirmed as MSU-owned. Logo stays held."
+    },
+    {
+      "universitySlug": "maastricht-university",
+      "sourceFile": "a-211-220.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Maastricht_University_logo_%282017_new_version%29.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (2017 UM wordmark)",
+        "proposedPublicId": "maastricht-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/20130504_Maastricht_View_over_Maastricht_from_Sint_Pietersberg_01%28cropped%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Randwyck campus view)",
+        "proposedPublicId": "maastricht-university-cover"
+      },
+      "note": "Technique used: Commons free-licensed 2017 wordmark and campus view, bypassing UM's logo request-for-use process."
+    },
+    {
+      "universitySlug": "macewan-university-nursing",
+      "sourceFile": "a-211-220.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Programme-level record (MacEwan University Nursing). No new information changes the first-pass conclusion: this needs an explicit decision on whether to inherit MacEwan University's own logo/cover or source a nursing-programme-specific asset before any media is assigned. No media sourced."
+    },
+    {
+      "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine",
+      "sourceFile": "a-211-220.json",
+      "outcome": "still-hold",
+      "updatedReason": "Faculty-level record. Tried: MUST press/media pages (guessed /en/faculty-of-medicine path returned a CMS 404 'Category not found'), homepage navigation scan for a Faculty of Medicine link (none found in static HTML, page likely JS-routed), and Wikipedia (no dedicated English or Chinese article for this faculty). Per the original hold reason, parent MUST university-wide assets are not assumed to apply to the faculty. No faculty-specific logo or cover located; stays held."
+    },
+    {
+      "universitySlug": "macquarie-university",
+      "sourceFile": "a-221-230.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Macquarie_University.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC0 1.0 Universal (official Macquarie University logo, distinct from the unrelated Macquarie Group financial-services logo)",
+        "proposedPublicId": "macquarie-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Macquarie_University_aerial.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0 (aerial view of campus)",
+        "proposedPublicId": "macquarie-university-cover"
+      },
+      "note": "Technique used: Commons category search for a free-licensed university logo (the en-wiki infobox logo is non-free); confirmed the CC0 file is the university's own logo, not the similarly-named Macquarie Group corporate logo also on Commons. Resolves the prior 'error during direct asset inspection' blocker entirely via Commons instead of the official domain."
+    },
+    {
+      "universitySlug": "masaryk-university",
+      "sourceFile": "a-221-230.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/LogoMUNI-2018.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (2018 Masaryk University logo)",
+        "proposedPublicId": "masaryk-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Kounics_palace_in_Brno_2010_%282%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0/2.5/2.0/1.0 (Kounic Palace, one of the oldest faculty buildings)",
+        "proposedPublicId": "masaryk-university-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons free-licensed 2018 logo file, which the first pass missed while only noting the campus photo."
+    },
+    {
+      "universitySlug": "maykop-state-technological-university-medical",
+      "sourceFile": "a-221-230.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "This appears to be a medical institute/faculty unit within Maykop State Technological University (MGTU, official domain mkgtu.ru, which is reachable and has its own official logo at /local/templates/modern_green_new_s1/images/logo.svg). No dedicated medical-institute-specific webpage, logo, or cover could be located on the parent site or via Wikipedia (no article exists for this entity in Russian or English). This is a parent-brand inheritance question -- whether the catalogue record should use MGTU's own identity or needs its own distinct medical-institute asset -- that needs a decision before media is assigned. No media sourced."
+    },
+    {
+      "universitySlug": "maynooth-university",
+      "sourceFile": "a-221-230.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260718230229im_/https://www.maynoothuniversity.ie/sites/default/files/assets/images/Maynooth%20University%20Irish%20Logo%20colour%20black%20text%20350%20x%20146px.png",
+        "sourceType": "official",
+        "rightsBasis": "Official Maynooth University logo file, retrieved via Wayback Machine snapshot (archive.org) of maynoothuniversity.ie since the live site 403s direct inspection",
+        "proposedPublicId": "maynooth-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Saint_Patrick%27s_College%2C_Maynooth.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0 (St Joseph's Square, South Campus)",
+        "proposedPublicId": "maynooth-university-cover"
+      },
+      "note": "Technique used: Wayback Machine snapshot of the 403-blocked official homepage located the logo asset path directly (image itself verified 200 via im_ archive URL); campus cover sourced from Commons."
+    },
+    {
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "sourceFile": "a-221-230.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Unresolved naming mismatch confirmed still present: MUST's current official site organizes this unit as the Faculty of Health Sciences, while the catalogue record is titled Faculty of Medicine (a former/legacy name). This is a rename/identity question that needs resolution before assigning current unit media; no media sourced."
+    },
+    {
+      "universitySlug": "mcmaster-university-nursing",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/McMaster_University_wordmark.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (McMaster wordmark, Garamond lettering)",
+        "proposedPublicId": "mcmaster-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/McMaster_University%2C_seen_from_above_and_from_the_southwest_%28from_Scenic_Drive%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0 (aerial campus view from Scenic Drive)",
+        "proposedPublicId": "mcmaster-university-nursing-cover"
+      },
+      "note": "Catalogue record's name field is 'McMaster University' (not programme-specific), so it was researched as the main university. Technique used: Commons free-licensed PD wordmark (the en-wiki infobox crest/logo is non-free) and CC-BY-SA aerial photo."
+    },
+    {
+      "universitySlug": "medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university",
+      "sourceFile": "a-231-240.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Identity mismatch found: the reachable official site for this brand (medicampuseuropeo.com) titles and brands itself solely as 'MediCampus Europeo - Faculty of Medicine in Malta' with no mention anywhere on the homepage of a Trakia University partnership. This needs confirmation that medicampuseuropeo.com is in fact the same entity as the catalogued 'MediCampus Europeo Faculty of Medicine in Partnership with Trakia University' before sourcing its branding as this record's media. No media sourced."
+    },
+    {
+      "universitySlug": "medical-institute-of-karakalpakstan",
+      "sourceFile": "a-231-240.json",
+      "outcome": "still-hold",
+      "updatedReason": "Still unable to identify an authoritative official domain. Tried several plausible Uzbek domain guesses (karmi.uz, nukusmedinst.uz, qmi.uz and www variants) -- all unreachable (no DNS/connection). No Wikipedia article exists under this or related names. Without a confirmed official domain, press-page, Commons, and Wayback techniques cannot be applied. Stays held."
+    },
+    {
+      "universitySlug": "medical-institute-of-reconstruction",
+      "sourceFile": "a-231-240.json",
+      "outcome": "still-hold",
+      "updatedReason": "Institution identity remains too ambiguous to locate an authoritative official source: no Wikipedia article, and the English name does not map confidently to a single verifiable institution/domain. Without a confirmed identity/domain, none of the second-pass techniques (press page, Commons, Wayback, favicon) could be applied. Stays held."
+    },
+    {
+      "universitySlug": "medical-university-of-gdansk",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Logo_of_Gda%C5%84sk_Medical_University.PNG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain under Polish Copyright Law Art. 4(2) (official symbol exemption)",
+        "proposedPublicId": "medical-university-of-gdansk-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Gdansk_GUMed_2.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (historic Building 1, Debinki Street)",
+        "proposedPublicId": "medical-university-of-gdansk-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons, both files already hosted on commons.wikimedia.org (not the non-free en-wiki path), missed by the first pass."
+    },
+    {
+      "universitySlug": "medical-university-of-warsaw",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Logo_WUM.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain under Polish Copyright Law (official symbol exemption)",
+        "proposedPublicId": "medical-university-of-warsaw-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Warszawski_Uniwersytet_Medyczny_2025.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0 Poland (Rectorate Building, Banacha Campus)",
+        "proposedPublicId": "medical-university-of-warsaw-cover"
+      },
+      "note": "Technique used: found a separate free-licensed Commons file (Logo_WUM.png) distinct from the non-free 'ceremonial brand identity' emblem used in the en-wiki infobox; paired with a freely-licensed 2025 campus photo."
+    },
+    {
+      "universitySlug": "mediterranean-university-of-albania",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://umsh.edu.al/images/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the university's own official domain (umsh.edu.al, Universiteti Mesdhetar/Mediterranean University of Albania), used as the site header logo",
+        "proposedPublicId": "mediterranean-university-of-albania-logo"
+      },
+      "note": "Technique used: direct HTML inspection of the official site (umsh.edu.al, confirmed reachable, page title 'Universiteti Mesdhetar') located the header logo SVG. Cover stays held: the only other images on the homepage (2020.jpg, project3.jpg, usia.jpg) are generic stock photography (people at laptops, a '2020' graphic) with no identifiable campus/building content, so none were used."
+    },
+    {
+      "universitySlug": "michigan-state-university",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Michigan_State_University_wordmark.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (official MSU wordmark)",
+        "proposedPublicId": "michigan-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Beaumont_Tower_South_Side.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (Beaumont Tower, iconic North Campus landmark)",
+        "proposedPublicId": "michigan-state-university-cover"
+      },
+      "note": "Technique used: the en-wiki infobox seal is non-free, but the wordmark variant is hosted free on Commons under PD-textlogo -- paired with a freely-licensed campus landmark photo."
+    },
+    {
+      "universitySlug": "monash-university",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Monash_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain (simple geometry, ineligible for copyright; trademark still applies)",
+        "proposedPublicId": "monash-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Clayton_-_Monash_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain (Clayton campus, Robert Menzies Building)",
+        "proposedPublicId": "monash-university-cover"
+      },
+      "note": "Technique used: found the free-licensed Commons logo file (sourced from Monash's own site, separately hosted from the non-free en-wiki logo) paired with a public-domain campus photo."
+    },
+    {
+      "universitySlug": "mordovia-state-university",
+      "sourceFile": "a-231-240.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://mrsu.ru/local/templates/mrsu2021/assets/images/ru_logo_bw_new.svg",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the university's own official domain (mrsu.ru), used as the live site header logo",
+        "proposedPublicId": "mordovia-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Saransk_University_%2842033511865%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 2.0 (central campus, Saransk)",
+        "proposedPublicId": "mordovia-state-university-cover"
+      },
+      "note": "Technique used: direct HTML inspection of official site (mrsu.ru, reachable, confirmed logo asset resolves 200) since the ru-wiki infobox logo is hosted non-free; paired with a freely-licensed Commons campus photo."
+    },
+    {
+      "universitySlug": "moscow-region-state-university-medicine",
+      "sourceFile": "a-241-250.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed programme/faculty-level identity issue persists: this is a medical unit of Moscow Region State University and no unit-specific official source was found, while the original hold reason explicitly states parent-university media cannot be assumed to apply. This is a parent-brand inheritance decision that needs to be made before any media is assigned. No media sourced."
+    },
+    {
+      "universitySlug": "mount-royal-university-nursing",
+      "sourceFile": "a-241-250.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Programme-level record (Mount Royal University Nursing). No new information changes the first-pass conclusion: needs an explicit decision on whether to inherit Mount Royal University's own logo/cover before any media is assigned. No media sourced."
+    },
+    {
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "sourceFile": "a-241-250.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Muhimbili_University_of_Health_and_Allied_Sciences_2.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (MUHAS facility photo)",
+        "proposedPublicId": "muhimbili-university-of-health-and-allied-sciences-cover"
+      },
+      "note": "Technique used: Wikipedia infobox -> Commons free-licensed facility photo. Logo stays held: direct inspection of the official site (muhas.ac.tz, reachable) shows the WordPress/Elementor theme is configured with a text-based header logo (hello_header_logo_type: title, no image), and no standalone logo file with 'logo' in its name exists anywhere in the homepage HTML; only unrelated content photos were found."
+    },
+    {
+      "universitySlug": "murmansk-arctic-state-university",
+      "sourceFile": "a-241-250.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo-masu-color-vertical.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (official MASU color logo)",
+        "proposedPublicId": "murmansk-arctic-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Egorova_16.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (MASU building, Kapitana Egorova St. 16, Murmansk)",
+        "proposedPublicId": "murmansk-arctic-state-university-cover"
+      },
+      "note": "Technique used: found the correct Russian Wikipedia article (МАГУ) -- the first pass appears to have searched under a title that doesn't exist on en-wiki -- which linked directly to free-licensed Commons logo and building photos."
+    },
+    {
+      "universitySlug": "namangan-state-university",
+      "sourceFile": "a-241-250.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://namdu.uz/media/settings/main/2024/02/01/logo-200x200.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the university's own official domain (namdu.uz), used as the live site header logo",
+        "proposedPublicId": "namangan-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/NamDU_binosi.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0 (entrance gate of Namangan State University)",
+        "proposedPublicId": "namangan-state-university-cover"
+      },
+      "note": "Technique used: direct HTML inspection of official site (namdu.uz, reachable, logo asset verified 200) for the logo, paired with a freely-licensed Commons entrance-gate photo used in the Wikipedia infobox for the cover."
+    },
+    {
+      "universitySlug": "nanyang-technological-university",
+      "sourceFile": "a-241-250.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/NTU_Logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from NTU's own official domain (ntu.edu.sg), used as the live site header logo",
+        "proposedPublicId": "nanyang-technological-university-logo"
+      },
+      "note": "Technique used: direct HTML inspection of the official site (ntu.edu.sg) located a first-party logo file path, avoiding the non-free en-wiki coat-of-arms and third-party logo directories the first pass correctly declined to use."
+    }
+  ]
+}

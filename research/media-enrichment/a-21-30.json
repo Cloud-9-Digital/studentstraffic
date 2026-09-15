@@ -1,0 +1,164 @@
+{
+  "batchId": "a-21-30",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 21-30; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "andijan-state-medical-institute",
+      "universityName": "Andijan State Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://adti.uz/templates/adti/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional logo served in the header and footer of the institute's official website.",
+        "proposedPublicId": "andijan-state-medical-institute-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://adti.uz/uploads/posts/2026-07/medium/photo_2026-07-21_15-00-54.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional news image served from the institute's own website; use only after integrator confirms it depicts campus or a suitable university activity.",
+        "proposedPublicId": "andijan-state-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "andizhan-state-medical-institute",
+      "universityName": "Andizhan State Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://adti.uz/templates/adti/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional logo served in the header and footer of the institute's official website; Andizhan is an alternate transliteration of Andijan.",
+        "proposedPublicId": "andizhan-state-medical-institute-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://adti.uz/uploads/posts/2026-07/medium/photo_2026-07-21_15-00-54.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional news image served from the institute's own website; use only after integrator confirms it depicts campus or a suitable university activity.",
+        "proposedPublicId": "andizhan-state-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "angeles-university-foundation",
+      "universityName": "Angeles University Foundation",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.auf.edu.ph/images/logo2.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university logo served in the navigation of the AUF home page.",
+        "proposedPublicId": "angeles-university-foundation-logo"
+      },
+      "status": "hold",
+      "reason": "Re-checked both domains from Wikipedia's infobox. www.auf.edu.ph returns HTTP 200 but serves only a bare-bones placeholder-like template (unrelated 'project-1.png'...'project-9.png' portfolio images, PHP/5.4 server, no navigation or real university content) -- confirmed identical in a May 2026 Wayback Machine snapshot, so this is the site's genuine current (degraded) state, not a caching fluke. The alternate domain angelesuniversityfoundation.com fails to resolve entirely. Wikipedia's own logo file is fair-use/non-free and excluded per policy. No safe logo or cover source currently exists."
+    },
+    {
+      "universitySlug": "anglia-ruskin-university",
+      "universityName": "Anglia Ruskin University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.aru.ac.uk/-/media/Images/700x430/International/cambridge_campus_courtyard_700x430.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Cambridge campus courtyard photo from ARU's own site.",
+        "proposedPublicId": "anglia-ruskin-university-cover"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found no standalone logo file because ARU's header logo isn't a plain image; the high-resolution android-chrome favicon is the same brand mark (crane icon) as a standalone file. Also found a genuine Cambridge campus courtyard photo..",
+      "logo": {
+        "sourceUrl": "https://www.aru.ac.uk/Assets/img/icons/favicons/android-chrome-512x512.png",
+        "sourceType": "official",
+        "rightsBasis": "Official high-resolution (512x512) favicon/app-icon file showing ARU's crane brand mark, served from the university's own domain.",
+        "proposedPublicId": "anglia-ruskin-university-logo"
+      }
+    },
+    {
+      "universitySlug": "angren-university",
+      "universityName": "Angren University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Could not re-locate a usable asset this pass. First pass identified the public English presence as a Google Sites page but did not record its exact URL, and this session's web-search tool hit its budget limit before an alternative discovery route could be attempted -- without the specific domain, press-page/Commons/Wayback techniques could not be applied. Recommend a follow-up pass once search is available again."
+    },
+    {
+      "universitySlug": "arizona-state-university",
+      "universityName": "Arizona State University",
+      "missing": [
+        "logo"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.asu.edu/sites/default/files/2022-03/HomepageLocations-Tempe.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official ASU aerial photo of the Tempe campus (no logo or wordmark in frame), served from asu.edu.",
+        "proposedPublicId": "arizona-state-university-cover"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo remains held: ASU's brand guide explicitly restricts logo use to university faculty/staff/units conducting university business, and no Commons alternative exists (checked -- the ASU seal and logo files on Wikipedia are non-free/fair-use, not PD-textlogo, so unlike some peer universities there is no free equivalent). That restriction is specific to the logo mark, not plain campus photography, so a campus aerial photo with no branding in frame is nominated for cover only.. Remaining outstanding: logo."
+    },
+    {
+      "universitySlug": "asia-international-university",
+      "universityName": "Asia International University",
+      "missing": [
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://aiu.uz/logo2.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official favicon/brand-mark SVG (shield emblem) served from aiu.uz, the confirmed current official domain.",
+        "proposedPublicId": "asia-international-university-logo"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed aiu.uz is the live official Asia International University site. It is a JS single-page app with no server-rendered content, so its favicon SVG (a full vector shield emblem, not a tiny icon) is the only extractable standalone logo file this pass; no cover image could be found this way and it remains held.. Remaining outstanding: cover."
+    },
+    {
+      "universitySlug": "asian-international-university",
+      "universityName": "Asian International University",
+      "status": "resolved-elsewhere",
+      "reason": "Merged 2026-07-27: this was a confirmed duplicate DB record of 'asian-medical-institute' (same live site, asmi.edu.kg, using both names interchangeably). Reviewed with the user; the duplicate university row (id 429) was deleted, the canonical record (id 219, which had real user peer data and was kept) preserved, and a permanent 301 redirect (university + program pages, all section suffixes) was added in next.config.ts from this slug to the canonical. No further action needed."
+    },
+    {
+      "universitySlug": "asian-medical-institute",
+      "universityName": "Asian Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed canonical record after the 2026-07-27 duplicate merge (see 'asian-international-university'). Still missing logo and cover. Note for a future media pass: asmi.edu.kg's homepage has an image filenamed 'Asian-medical-institute-7slider.png' that may be a usable cover candidate -- not yet verified or captured."
+    },
+    {
+      "universitySlug": "astrakhan-state-medical-university",
+      "universityName": "Astrakhan State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://astgmu.ru/wp-content/themes/astgmu-child/blocks/homepage/assets/logo_astgmu.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university header logo served from Astrakhan State Medical University's active public website.",
+        "proposedPublicId": "astrakhan-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://astgmu.ru/wp-content/themes/astgmu-child/blocks/homepage/assets/slide2-2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official homepage slider image served from the university's own active website.",
+        "proposedPublicId": "astrakhan-state-medical-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

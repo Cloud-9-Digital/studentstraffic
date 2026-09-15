@@ -1,0 +1,382 @@
+{
+  "countries": [
+    {
+      "slug": "malawi",
+      "name": "Malawi",
+      "region": "Africa",
+      "summary": "Malawi is a Southeast African nation home to Kamuzu University of Health Sciences, a public university whose School of Medicine and Oral Health runs a WHO-listed, direct-entry MBBS programme with a confirmed international-student fee schedule and guaranteed accommodation.",
+      "whyStudentsChooseIt": "Malawi offers an internationally recognized, WHO-listed medical degree taught entirely in English, a direct-entry curriculum with training at Malawi's two largest teaching hospitals, guaranteed student housing, and tuition well below most Western study-abroad destinations.",
+      "climate": "Subtropical climate with a warm, wet season from November to April and a cooler, dry season from May to October.",
+      "currencyCode": "MWK",
+      "metaTitle": "Study MBBS and Medicine in Malawi",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Malawi, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Kamuzu University of Health Sciences maps its English-medium Bachelor of Medicine, Bachelor of Surgery (MBBS) programme to this category: a direct-entry, single-cycle programme (a foundation year plus five core years for most entrants, or five years directly for A-Level-equivalent qualifications).",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "malawi",
+      "slug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "name": "Kamuzu University of Health Sciences School of Medicine and Oral Health",
+      "city": "Blantyre",
+      "type": "Public",
+      "establishedYear": 1991,
+      "officialWebsite": "https://www.kuhes.ac.mw/",
+      "mediaAttribution": {},
+      "summary": "Kamuzu University of Health Sciences (KUHeS) School of Medicine and Oral Health, based at the Mahatma Gandhi Campus in Blantyre, runs a direct-entry, English-medium Bachelor of Medicine, Bachelor of Surgery (MBBS) programme. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and trains students at Malawi's two largest referral hospitals.",
+      "campusLifestyle": "International students train at the Mahatma Gandhi Campus adjacent to Queen Elizabeth Central Hospital in Blantyre, with guaranteed on-campus accommodation for the full duration of the programme.",
+      "cityProfile": "Blantyre is Malawi's commercial capital and second-largest city, home to KUHeS's main medical campus and Queen Elizabeth Central Hospital, one of the country's two largest referral and teaching hospitals.",
+      "practicalExposure": "The MBBS programme runs a Foundation Year (Year 0) for MSCE/O-Level-equivalent entrants before the core five-year curriculum, or direct Year 1 entry for A-Level/IB-equivalent qualifications; Year 3 marks a clear transition from science-heavy preclinical study to clinical training. Clinical training takes place primarily at Queen Elizabeth Central Hospital in Blantyre, with Year 3 rotations at Kamuzu Central Hospital in Lilongwe, plus additional placements at district and mission hospitals including Mangochi, Nkhoma, Mulanje Mission, St Gabriel, Neno District and Mzuzu Central Hospital.",
+      "hostelOverview": "On-campus accommodation is guaranteed for the full duration of the programme, in shared rooms roughly 100 metres from classrooms, billed separately from tuition and payable at least 3 months in advance: single room with ensuite bathroom USD 200/month, two-bed ensuite room USD 100/month, or a standard two-bed room with communal bathrooms USD 70/month.",
+      "dietarySupport": "An on-campus cafeteria and a sports-complex restaurant/snack bar are available; no specific meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants apply through KUHeS's own online admissions portal, pay a USD 25 international application fee, and receive study-permit, medical-report and Medical Council of Malawi registration guidance through the university's International Students office.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001174), with foreign students admitted, no entrance exam required, and graduates (1991-current) eligible to apply for ECFMG Certification.",
+        "Clinical training at Queen Elizabeth Central Hospital and Kamuzu Central Hospital, Malawi's two largest referral and teaching hospitals, plus multiple district and mission hospital placements.",
+        "A confirmed, dated international-student tuition rate (USD 8,722.50/year), cross-verified across the university's admissions portal, its international-students page and its official intake advertisement.",
+        "Guaranteed on-campus accommodation for the full programme duration at published, affordable rates (USD 70-200/month).",
+        "Registration with the Medical Council of Malawi is built into the standard international-student process, with a fixed USD 150 programme-duration registration fee."
+      ],
+      "thingsToConsider": [
+        "The exact intake month for the next application cycle is not yet confirmed: the most recent fully documented cycle (2025/26) started in March 2026 with an October 2025 deadline, while a subsequent call closed 15 May 2026 with no published start date yet -- confirm current dates directly with KUHeS admissions.",
+        "No explicit conversion table for Indian 12th-grade (CBSE/ISC/state board) results to KUHeS's MSCE-point or A-Level equivalency scale is published; equivalency should be confirmed directly with admissions on a case-by-case basis.",
+        "No dedicated international-student scholarship was found; KUHeS's donor-funded scholarships are administered case-by-case without a clear statement of international eligibility.",
+        "International students face additional mandatory costs beyond tuition: a USD 100 study-permit fee, USD 10 medical report fee, USD 150 Medical Council of Malawi registration fee (for the programme duration), and USD 420/year mandatory health insurance.",
+        "Whether entrants need a Foundation Year (6 years total) or can enter directly into Year 1 (5 years total) depends on whether their qualification is treated as MSCE/O-Level-equivalent or A-Level/IB-equivalent -- confirm which applies to a specific Indian qualification directly with the university."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, English-medium direct-entry medical degree at a lower cost point than most Western destinations, with training at major national referral hospitals.",
+        "Applicants comfortable with a straightforward, no-entrance-exam application process handled entirely online.",
+        "Students able to confirm current-cycle intake dates and Indian-qualification equivalency directly with KUHeS admissions given some details are not transparently published."
+      ],
+      "industryPartners": [
+        "Queen Elizabeth Central Hospital",
+        "Kamuzu Central Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0001174, foreign students admitted, no entrance exam required",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1991-present",
+        "Medical Council of Malawi -- statutory registration body for all Malawian medical training programmes, including KUHeS"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Kamuzu University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0001174" },
+        { "label": "KUHeS -- School of Medicine and Oral Health", "url": "https://www.kuhes.ac.mw/medicine-and-oral-health/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBBS programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools confirms foreign students are admitted with no entrance exam required, and entry is based on secondary-school qualifications (MSCE, IGCSE, O-Level, A-Level, IB or NSC), not a prior university degree."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Bachelor of Medicine, Bachelor of Surgery (MBBS) degree, requiring a Foundation Year plus five core years for most international entrants, or five years directly for A-Level or IB-equivalent qualifications."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 8,722.50 per year for international (non-SADC) students on the standard direct-entry track, confirmed identically across the university's admissions portal, international-students page and official intake advertisement."
+        },
+        {
+          "question": "What other costs apply beyond tuition?",
+          "answer": "International students should budget for a USD 100 study-permit fee, a USD 10 medical report fee, a USD 150 Medical Council of Malawi registration fee covering the full programme, and USD 420/year mandatory health insurance, plus a one-time USD 25 application fee."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "KUHeS explicitly accepts IGCSE and National Senior Certificate as equivalents to MSCE, and A-Level or IB Diploma for direct Year 1 entry, but does not publish an explicit conversion table for Indian 12th-grade (CBSE, ISC or state board) results -- confirm equivalency directly with admissions."
+        },
+        {
+          "question": "When can I apply and when does the academic year start?",
+          "answer": "The most recently documented cycle (2025/26) started classes in March 2026 with an application deadline of 31 October 2025. A subsequent application window closed 15 May 2026, but its intake start date has not yet been published -- confirm current dates directly with KUHeS admissions."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "Yes, on-campus accommodation is guaranteed for the full programme duration, billed separately from tuition at USD 70-200/month depending on room type, payable at least 3 months in advance."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens who obtain a primary medical qualification abroad to have qualified NEET-UG and clear its Foreign Medical Graduate licensure pathway (historically FMGE, transitioning to NExT); this general framework was not independently verified against an NMC source for this specific programme."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Kamuzu University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001174",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry status (foreign students admitted, no entrance exam), founding year and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "KUHeS -- MBBS admissions portal (Economic Fee Paying track)",
+          "url": "https://admissions.kuhes.ac.mw/programs/67",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, programme structure, application documents and the current international tuition figure, cross-verified against two other official sources."
+        },
+        {
+          "label": "KUHeS -- Economic Fee Paying Intake 2025/2026 (Extended) official advertisement (PDF)",
+          "url": "https://www.kuhes.ac.mw/wp-content/uploads/2025/10/Economic-fee-paying-advert-2025-2026-academic-year-Updated-15-10-2025.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming the 2025/26 admissions calendar, eligibility criteria and itemized fee schedule."
+        },
+        {
+          "label": "KUHeS -- International Students page",
+          "url": "https://www.kuhes.ac.mw/international-students/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for additional mandatory international-student costs (study permit, medical report, Medical Council of Malawi registration, health insurance) and English-proficiency policy."
+        },
+        {
+          "label": "KUHeS -- School of Medicine and Oral Health",
+          "url": "https://www.kuhes.ac.mw/medicine-and-oral-health/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for named affiliated teaching hospitals and clinical-rotation sites."
+        },
+        {
+          "label": "KUHeS -- Accommodation page",
+          "url": "https://www.kuhes.ac.mw/accommodation/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for guaranteed on-campus housing structure and published monthly rates by room type."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry physics maths grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "equivalency status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "kuhes-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2025-2026",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 8723,
+            "officialTotalTuitionAmount": 52338,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published international (non-SADC) tuition of USD 8,722.50/year (rounded to USD 8,723 for this record), confirmed identically across the admissions portal, the international-students page and the official intake advertisement. Additional mandatory international-student costs apply on top of tuition: USD 100 study-permit fee, USD 10 medical report fee, USD 150 Medical Council of Malawi registration fee (covers the full programme duration), USD 420/year health insurance, and a one-time USD 25 application fee. Total is calculated as the annual figure times 6 years -- an estimate, not an officially published lump sum."
+          },
+          "officialProgramUrl": "https://admissions.kuhes.ac.mw/programs/67",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed MSCE, IGCSE, O-Level, National Senior Certificate, A-Level or IB-equivalent secondary education"
+            ],
+            "restrictions": [
+              "MSCE/O-Level/IGCSE-equivalent entrants join a Foundation Year (Year 0) before the 5-year core curriculum; A-Level or IB-equivalent entrants may join directly in Year 1"
+            ],
+            "notes": "No explicit conversion table for Indian 12th-grade qualifications is published; confirm equivalency directly with KUHeS admissions.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://admissions.kuhes.ac.mw/programs/67"
+          },
+          "admissionsContent": {
+            "overview": "International applicants apply online through KUHeS's own admissions portal, submit certified academic documents, and pay a USD 25 non-refundable application fee; no entrance exam or interview is required.",
+            "eligibility": {
+              "intro": "Admission requires secondary-school qualifications with required science-subject grades, entering either the Foundation Year or directly into Year 1 depending on qualification level.",
+              "items": [
+                "MSCE/O-Level-equivalent: six credits including English plus minimum 3 points in Mathematics, Biology, Physics and Chemistry or General Science",
+                "A-Level/IB-equivalent: at least 3 passes with minimum grade C in Biology, Chemistry, Mathematics or Physics",
+                "Certified copies of academic transcripts and English proficiency (no separate proof required at application stage)"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply via KUHeS's online admissions portal (admissions.kuhes.ac.mw)",
+              "Submit certified academic transcripts and required documents",
+              "Pay the USD 25 international application fee by bank deposit and attach the deposit slip",
+              "Await an admissions decision",
+              "Complete study-permit, medical-report and Medical Council of Malawi registration steps upon acceptance"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified secondary-school certificate and transcripts",
+                "Certification of scholarship or proof of funding, where applicable"
+              ],
+              "application": [
+                "Passport-size photograph",
+                "Bank deposit slip for the application fee"
+              ]
+            },
+            "deadlinesNote": "The 2025/26 cycle closed 31 October 2025 for a March 2026 start; a subsequent window closed 15 May 2026 with no published intake start date yet. Confirm the current cycle directly with KUHeS admissions.",
+            "visaConsiderations": [
+              "A USD 100 study-permit processing fee and a USD 10 medical report fee apply; confirm current Malawian immigration requirements directly with KUHeS's International Students office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["March"],
+          "intakeCodes": ["march"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current international tuition of USD 8,722.50/year, cross-verified across three official KUHeS sources, plus itemized mandatory international-student fees (study permit, medical report, Medical Council of Malawi registration, health insurance).",
+          "teachingPhases": [
+            {
+              "phase": "Foundation Year (Year 0) plus 5-year core MBBS, or direct 5-year entry for A-Level/IB-equivalent qualifications",
+              "language": "English",
+              "details": "Preclinical, science-heavy training in the early years transitions clearly to clinical training from Year 3, with rotations at Queen Elizabeth Central Hospital (Blantyre), Kamuzu Central Hospital (Lilongwe, Year 3), and additional district and mission hospital placements."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "publicField": "identity",
+      "claimText": "Kamuzu University of Health Sciences (formerly University of Malawi College of Medicine) began medical instruction in 1991 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Kamuzu University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001174",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001174); foreign students admitted, no entrance exam required; graduates (1991-current) eligible for ECFMG Certification.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Kamuzu University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001174",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "programmeSlug": "kuhes-mbbs",
+      "publicField": "academics",
+      "claimText": "MBBS is a direct-entry programme with a Foundation Year plus 5 core years for MSCE/O-Level-equivalent entrants, or direct 5-year entry for A-Level/IB-equivalent qualifications, with clinical training from Year 3 at named teaching hospitals.",
+      "status": "verified",
+      "sourceLabel": "KUHeS -- School of Medicine and Oral Health",
+      "sourceUrl": "https://www.kuhes.ac.mw/medicine-and-oral-health/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "programmeSlug": "kuhes-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Direct entry requires MSCE, IGCSE, O-Level, National Senior Certificate, A-Level or IB-equivalent secondary qualifications with specified science-subject grades; no explicit Indian-board equivalency table is published.",
+      "status": "verified",
+      "sourceLabel": "KUHeS -- MBBS admissions portal (Economic Fee Paying track)",
+      "sourceUrl": "https://admissions.kuhes.ac.mw/programs/67",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "programmeSlug": "kuhes-mbbs",
+      "publicField": "admissions",
+      "claimText": "International applicants apply online via KUHeS's admissions portal, pay a USD 25 non-refundable application fee, and require no entrance exam or interview.",
+      "status": "verified",
+      "sourceLabel": "KUHeS -- Economic Fee Paying Intake 2025/2026 (Extended) official advertisement (PDF)",
+      "sourceUrl": "https://www.kuhes.ac.mw/wp-content/uploads/2025/10/Economic-fee-paying-advert-2025-2026-academic-year-Updated-15-10-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "programmeSlug": "kuhes-mbbs",
+      "publicField": "intake",
+      "claimText": "2025/26 cycle started March 2026 with an application deadline of 31 October 2025; a subsequent window closed 15 May 2026 with no published intake start date yet.",
+      "status": "verified",
+      "sourceLabel": "KUHeS -- Economic Fee Paying Intake 2025/2026 (Extended) official advertisement (PDF)",
+      "sourceUrl": "https://www.kuhes.ac.mw/wp-content/uploads/2025/10/Economic-fee-paying-advert-2025-2026-academic-year-Updated-15-10-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "programmeSlug": "kuhes-mbbs",
+      "publicField": "fee",
+      "claimText": "International tuition confirmed at USD 8,722.50/year, cross-verified across the admissions portal, international-students page and official intake advertisement, plus itemized additional mandatory fees.",
+      "status": "verified",
+      "sourceLabel": "KUHeS -- International Students page",
+      "sourceUrl": "https://www.kuhes.ac.mw/international-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "publicField": "student living",
+      "claimText": "On-campus accommodation is guaranteed for the full programme duration at USD 70-200/month depending on room type, billed separately from tuition and payable at least 3 months in advance.",
+      "status": "verified",
+      "sourceLabel": "KUHeS -- Accommodation page",
+      "sourceUrl": "https://www.kuhes.ac.mw/accommodation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

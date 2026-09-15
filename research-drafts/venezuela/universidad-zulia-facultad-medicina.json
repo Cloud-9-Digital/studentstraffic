@@ -1,0 +1,19 @@
+{
+  "scope": "Venezuela medical discovery — Universidad del Zulia Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Universidad del Zulia's official professionalisation portal identifies its Faculty of Medicine and describes the faculty's health-sciences mission. The specific current pathway displayed on the reviewed page is an equivalency route to a nursing degree, not a medicine intake.",
+      "sourceUrl": "https://luz.unir.edu.ve/carrera/facultad-de-medicina/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official source was located that establishes a new-entry Médico Cirujano programme at the Faculty of Medicine.",
+    "No current medicine admissions, fees, duration, curriculum, language, clinical sites, recognition, international eligibility, accommodation, funding or support evidence was located.",
+    "The reviewed portal's January 2024 equivalency requirements are not evidence of an undergraduate medicine route and must not be repurposed as one."
+  ],
+  "nextAction": "Obtain a current LUZ Faculty of Medicine programme catalogue and admissions notice that directly identifies the Médico Cirujano route before considering a payload."
+}

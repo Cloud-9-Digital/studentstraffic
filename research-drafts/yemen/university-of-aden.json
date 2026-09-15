@@ -1,0 +1,19 @@
+{
+  "countrySlug": "yemen",
+  "universitySlug": "university-of-aden",
+  "schoolName": "University of Aden",
+  "cityName": "Aden",
+  "priority": "medium",
+  "officialWebsite": "https://www.aden-univ.net/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - University of Aden currently publishes a 2026/27 university admissions guide and multiple 2026 Faculty of Medicine and Health Sciences updates: active semester examinations, a human-medicine incoming cohort and quality/accreditation-planning activity. These are sufficient operational signals to record the provider, but they do not establish the programme duration, complete cost, foreign eligibility, instructional language, current clinical placement, accommodation/visa support or independent recognition route. Hold until those primary facts are available.",
+  "sourceBundle": { "sources": [
+    { "label": "University of Aden 2026/27 admissions guide", "url": "https://www.aden-univ.net/pag/60", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Current university admission and registration page for academic year 2026/27." },
+    { "label": "University of Aden Faculty of Medicine current examinations", "url": "https://www.aden-univ.net/news/15253", "kind": "official-operational", "checkedAt": "2026-07-25", "notes": "Reports Faculty of Medicine and Health Sciences second-semester examinations for 2025/26 in July 2026." },
+    { "label": "University of Aden incoming human-medicine cohort", "url": "https://www.aden-univ.net/news/14470", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Reports the 2025/26 incoming human-medicine cohort at the Faculty of Medicine and Health Sciences." },
+    { "label": "University of Aden medical-colleges accreditation planning", "url": "https://www.aden-univ.net/news/15130", "kind": "official-quality", "checkedAt": "2026-07-25", "notes": "Reports 2026 quality and academic-accreditation planning across the university medical colleges; it is not proof of completed programme accreditation." }
+  ] },
+  "structuredFacts": { "name": "University of Aden", "type": "Public university", "programs": [ { "officialTitle": "Human Medicine", "duration": "Not verified from a current official programme-detail source in this pass", "feeStatus": "No current official fee schedule verified", "publishable": false } ], "missingForPublication": [ "current curriculum, duration and title", "current foreign admissions/visa/language route", "current tuition and mandatory costs", "clinical teaching/placement details", "accommodation and safety/support evidence", "independent accreditation/recognition evidence", "target-market professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted. Evidence confirms ongoing local faculty operation but not a complete external applicant route." }
+}

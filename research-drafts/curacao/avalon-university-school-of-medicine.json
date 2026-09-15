@@ -1,0 +1,20 @@
+{
+  "countrySlug": "curacao",
+  "universitySlug": "avalon-university-school-of-medicine",
+  "schoolName": "Avalon University School of Medicine",
+  "cityName": "Willemstad",
+  "priority": "medium",
+  "officialWebsite": "https://avalonu.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Avalon officially describes a four-year MD programme, a Willemstad, Curaçao campus, and a published component-based USD tuition and cost-of-attendance schedule. The institution reports CAAM-HP and ACCM accreditation. Hold pending scoped verification of regulator/accreditor records, the current clinical-site pathway, and market-specific professional-recognition claims before a complete content packet is prepared.",
+  "sourceBundle": { "sources": [
+    { "label": "Avalon official MD-programme overview", "url": "https://avalonu.org/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes a four-year MD programme and identifies Avalon University School of Medicine's purpose as preparing physicians." },
+    { "label": "Avalon official admissions page", "url": "https://avalonu.org/admissions/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Identifies the school as located in Willemstad, Curaçao and links its MD entry routes." },
+    { "label": "Avalon official tuition and fees", "url": "https://avalonu.org/financials/tuition-and-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists MD preclinical and clinical semester tuition, additional fees, housing options and fee-change notice in USD." },
+    { "label": "Avalon official cost of attendance", "url": "https://avalonu.org/financials/cost-of-attendance/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes a stated four-year MD cost-of-attendance estimate and its component assumptions; actual cost is stated to vary." },
+    { "label": "Avalon official accreditation statement", "url": "https://avalonu.org/", "kind": "institutional-claim", "checkedAt": "2026-07-25", "notes": "The institution states it holds full accreditation from CAAM-HP and ACCM; the relevant accreditor records must be independently checked before publication." }
+  ] },
+  "structuredFacts": { "name": "Avalon University School of Medicine", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years", "feeStatus": "Official component schedule published: USD 51,975 stated preclinical tuition plus USD 84,525 stated clinical tuition, with additional fees and living costs; page warns fees may change.", "publishable": false } ], "missingForPublication": [ "current regulator and independent accreditor-record verification", "scope and availability of clinical training sites at application time", "market-specific eligibility and professional-recognition assessment", "route-specific total-cost reconciliation including optional housing and clinical-site surcharges" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until accreditation, clinical-training and professional-outcome claims are independently scoped." }
+}

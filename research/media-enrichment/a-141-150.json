@@ -1,0 +1,222 @@
+[
+  {
+    "universitySlug": "insead",
+    "universityName": "INSEAD",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Both sourced URLs were verified and visually confirmed during research (INSEAD seal logo; Fontainebleau campus courtyard cover), but at upload time insead.edu returned a persistent HTTP 403 to both Cloudinary's own fetcher and a direct browser-UA fetch for both assets -- the site now blocks automated/cloud-origin requests entirely. Neither asset was applied. Needs re-research or a manual upload in a future pass.",
+    "proposedPublicIds": {
+      "logo": "universities/insead/logo",
+      "cover": "universities/insead/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.insead.edu/profiles/custom/insead/themes/insead_core/images/logo.png",
+      "sourceType": "official",
+      "rightsBasis": "official insead.edu theme logo asset, verified as valid image content",
+      "proposedPublicId": "insead-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.insead.edu/sites/insead/files/inline-images/europe-campus_0.jpg",
+      "sourceType": "official",
+      "rightsBasis": "official insead.edu inline campus image (Europe/Fontainebleau campus), verified as valid image content and visually confirmed",
+      "proposedPublicId": "insead-cover"
+    }
+  },
+  {
+    "universitySlug": "iulm-university",
+    "universityName": "IULM University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass evidently hit iulm.it's www redirect chain; following it to /it/home surfaces a direct logo PNG (a white-on-transparent variant also exists but the standard color one was preferred). Cover uses a CC-BY-SA Commons photo of the IULM residence building since no clean campus hero photo was found directly on the official site..",
+    "proposedPublicIds": {
+      "logo": "universities/iulm-university/logo",
+      "cover": "universities/iulm-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.iulm.it/resources/images/logo-iulm.png",
+      "sourceType": "official",
+      "rightsBasis": "official iulm.it homepage logo asset (standard-color variant), verified HTTP 200",
+      "proposedPublicId": "iulm-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Residence_IULM.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, photo of the IULM student residence building",
+      "proposedPublicId": "iulm-university-cover"
+    }
+  },
+  {
+    "universitySlug": "ilia-state-university",
+    "universityName": "Ilia State University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): iliauni.edu.ge is a JS-rendered SPA exposing only a small favicon.ico for the logo slot (no standalone logo file found elsewhere on the domain), so logo remains unresolved. The site's og:image, however, resolves to a genuine official splash image (seal + graduation crowd) that was downloaded and visually confirmed, and is proposed as cover.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/ilia-state-university/logo",
+      "cover": "universities/ilia-state-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://iliauni.edu.ge/res/app/imgs/poster.jpg",
+      "sourceType": "official",
+      "rightsBasis": "official iliauni.edu.ge og:image, verified HTTP 200 and visually confirmed as the university seal over a graduation celebration photo",
+      "proposedPublicId": "ilia-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "illinois-institute-of-technology",
+    "universityName": "Illinois Institute of Technology",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Used IIT's most iconic, unambiguously identifiable building (Crown Hall, a National Historic Landmark) rather than a generic campus shot; file is tagged Public Domain on Commons, verified resolves.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/illinois-institute-of-technology/logo",
+      "cover": "universities/illinois-institute-of-technology/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Crown_Hall_1.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, tagged Public Domain, photo of S.R. Crown Hall (Mies van der Rohe), Illinois Institute of Technology",
+      "proposedPublicId": "illinois-institute-of-technology-cover"
+    }
+  },
+  {
+    "universitySlug": "baltic-federal-university",
+    "universityName": "Immanuel Kant Baltic Federal University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Ignored the broken English admission route entirely and went straight to Wikipedia Commons: found a distinct Commons-hosted PD-textlogo SVG (separate from the non-free English-Wikipedia fair-use copy) plus a CC-BY-SA/GFDL building photo, both unrelated to kantiana.ru's own reachability..",
+    "proposedPublicIds": {
+      "logo": "universities/baltic-federal-university/logo",
+      "cover": "universities/baltic-federal-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_Baltic_Federal_University_Russian_Logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, tagged PD-textlogo (simple text/shape, below threshold of originality); author of record is the university itself. Verified HTTP 200.",
+      "proposedPublicId": "baltic-federal-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/IKSUR1.JPG",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (uploader Ttracy), dual-licensed GFDL 1.2+/CC-BY-SA (1.0-4.0). Depicts an IKBFU building (History/Economics/Psychology/Sport dept). Verified HTTP 200.",
+      "proposedPublicId": "baltic-federal-university-cover"
+    }
+  },
+  {
+    "universitySlug": "imperial-college-london",
+    "universityName": "Imperial College London",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Imperial's brand platform is SSO-gated so no in-house asset could be pulled directly. Used Wikipedia Commons campus category instead of the brand portal; found a clearly-licensed 4000x3000 campus photograph distinct from the (also-Commons, CC-BY-3.0/GFDL) coat-of-arms file, which is more logo-like than cover-like so was not used here.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/imperial-college-london/logo",
+      "cover": "universities/imperial-college-london/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Imperial_College_London.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (photographer Radosław Botev / Fundacja Nomos), CC-BY-3.0-PL. South Kensington campus photo. Verified HTTP 200.",
+      "proposedPublicId": "imperial-college-london-cover"
+    }
+  },
+  {
+    "universitySlug": "impuls-medical-institute",
+    "universityName": "Impuls Medical Institute",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Live site connection times out for direct fetch (not a 403/WAF block, just unresponsive) so applied the Wayback technique: found both a round logo mark and a distinct campus/about-page banner image on two different archived snapshots, and verified each archived asset resolves directly..",
+    "proposedPublicIds": {
+      "logo": "universities/impuls-medical-institute/logo",
+      "cover": "universities/impuls-medical-institute/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://web.archive.org/web/20260422145243im_/https://impulsmedicalinstitute.com/wp-content/uploads/2025/04/IMG_3229.png",
+      "sourceType": "official",
+      "rightsBasis": "Official Impuls Medical Institute site (impulsmedicalinstitute.com), retrieved via Wayback Machine snapshot because the live site times out from this workspace. Image alt text is literally \"Impuls Medical Institute logo round\". Archived asset URL verified HTTP 200.",
+      "proposedPublicId": "impuls-medical-institute-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://web.archive.org/web/20260210060631im_/https://impulsmedicalinstitute.com/wp-content/uploads/2025/04/impuls-university.webp",
+      "sourceType": "official",
+      "rightsBasis": "Official site's own about-page hero banner (1600x600, filename \"impuls-university.webp\"), retrieved via Wayback Machine because the live domain is unreachable/timing out directly. Archived asset URL verified HTTP 200.",
+      "proposedPublicId": "impuls-medical-institute-cover"
+    }
+  },
+  {
+    "universitySlug": "ingush-state-university",
+    "universityName": "Ingush State University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Logo still not found: inggu.ru's homepage only exposes partner/consortium logos and a 1.1KB favicon too low-resolution to serve as a logo asset; no Commons category logo file exists either (only two building photos). Cover resolved via Wikimedia Commons VRT-confirmed CC-BY-SA 4.0 photo. Logo remains held.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/ingush-state-university/logo",
+      "cover": "universities/ingush-state-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/IngSU.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (photographer Evgeny Shivtsov, VRT-confirmed permission ticket #2017050810017436), CC-BY-SA 4.0. Depicts the university's main building in Magas. Verified HTTP 200.",
+      "proposedPublicId": "ingush-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "institute-pharmaceutical-education-research",
+    "universityName": "Institute of Pharmaceutical Education and Research",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "DB context places this record in Tashkent, Uzbekistan (not the similarly-named Indian NIPER/IPER-Wardha institutions, which is what open web search keeps surfacing). Found a plausible domain iper.uz (HTTP 200) but its homepage uses generic Unsplash stock photography, a bare 'University' title tag, and no branding/logo anywhere - it reads as an unbranded template site, not a verifiable official institutional presence, so it was not used as a source. No press/media page, Wikipedia article, or Wayback snapshot could be found for this Tashkent institution either. Held pending a confirmed official domain.",
+    "proposedPublicIds": {
+      "logo": "universities/institute-pharmaceutical-education-research/logo",
+      "cover": "universities/institute-pharmaceutical-education-research/cover"
+    }
+  },
+  {
+    "universitySlug": "international-black-sea-university",
+    "universityName": "International Black Sea University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The specific about-page URL 403s, but per technique #4 the favicon/apple-touch-icon logo asset on the same domain is not behind that block; a Wayback snapshot of the homepage also surfaced a recent, directly-resolving campus news photo for the cover..",
+    "proposedPublicIds": {
+      "logo": "universities/international-black-sea-university/logo",
+      "cover": "universities/international-black-sea-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://ibsu.edu.ge/wp-content/uploads/2024/01/ibsu-logo.webp",
+      "sourceType": "official",
+      "rightsBasis": "Official IBSU site (ibsu.edu.ge) apple-touch-icon/favicon asset, resolves directly (HTTP 200) even though the /about/about-ibsu/ content page itself returns 403.",
+      "proposedPublicId": "international-black-sea-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://ibsu.edu.ge/wp-content/uploads/2026/05/IMG_2113111-scaled.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official IBSU site news-post photo (2560px wide) from a recent campus delegation-visit article, resolves directly (HTTP 200) on ibsu.edu.ge.",
+      "proposedPublicId": "international-black-sea-university-cover"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "scope": "Iraq medical discovery — University of Basrah College of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "University of Basrah's College of Medicine says its undergraduate training covers basic, clinical and community medicine through lectures, tutorials, practical and clinical sessions, including inpatient, outpatient, emergency-room and surgical-theatre settings.",
+      "sourceUrl": "https://med.uobasrah.edu.iq/en/Academics/undergraduate-programs",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The College's published curriculum includes first- and second-year anatomy courses with theory and practical hours and clinical-anatomy learning objectives.",
+      "sourceUrl": "https://med.uobasrah.edu.iq/en/Curriculum%20/academic",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Iraqi Ministry of Higher Education reported the inauguration of classrooms and laboratories at the College of Medicine and reviewed the specialised university-hospital project during a 2023 visit.",
+      "sourceUrl": "https://mohesr.gov.iq/en/post/dr.-al-aboudi-visits-medicine-college%2C-university-of-basrah%2C-inaugurates-halls-%26amp%3Bamp%3B-laboratories-%26amp%3Bamp%3B-tours-specialized-university-hospital-project-2023-02-15-17",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Iraq's National Council for Accreditation of Medical Colleges records conditional accreditation for University of Basrah College of Medicine, with its decision issued on 22 May 2022.",
+      "sourceUrl": "https://mohesr.gov.iq/ar/ministrySection/64",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current official medicine-specific tuition/fee and admission-requirement evidence was not assembled for the required payload fields.",
+    "Explicit current instructional-language and student-support evidence remains incomplete for publication."
+  ],
+  "nextAction": "Collect current College of Medicine admission, fee, language and student-support publications, then complete the field-level review before publishing."
+}

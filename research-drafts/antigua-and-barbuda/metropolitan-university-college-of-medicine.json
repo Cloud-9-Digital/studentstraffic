@@ -1,0 +1,22 @@
+{
+  "countrySlug": "antigua-and-barbuda",
+  "universitySlug": "metropolitan-university-college-of-medicine",
+  "schoolName": "Metropolitan University College of Medicine",
+  "cityName": "St. John's",
+  "priority": "low",
+  "officialWebsite": "https://muantigua.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - MUCM's official site publishes separate four- and five-year MD pathways, Antigua basic sciences, US/Antigua clinical clerkship claims, fee tables and dormitory pricing. CAAM-HP independently records Provisional Accreditation for 2024-2028; WDOMS lists an operational English-language school. It is held pending a route-specific international admissions package, current full-cost/fee verification, named clinical affiliation terms and target-market licensing evidence.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "MUCM programme overview", "url": "https://muantigua.org/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes four- and five-year MD routes and stated clinical location categories."},
+      {"label": "MUCM tuition and fees", "url": "https://muantigua.org/tuition-and-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes semester tuition and university dormitory price guidance."},
+      {"label": "MUCM five-year MD pathway", "url": "https://muantigua.org/academics/programs/5-year-md-pathway/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes phase durations and USA/Antigua clinical clerkships."},
+      {"label": "CAAM-HP assessment", "url": "https://caam-hp.org/metropolitan-university-college-of-medicine/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists Provisional Accreditation for four years, 2024-2028."},
+      {"label": "World Directory of Medical Schools", "url": "https://search.wdoms.org/home/SchoolDetail/F0005227", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists currently operational private medical school, English instruction and clinical training indicator."}
+    ]
+  },
+  "structuredFacts": {"name": "Metropolitan University College of Medicine", "city": "St. John's", "type": "Private", "officialWebsite": "https://muantigua.org/", "bestFitFor": [], "programs": [], "missingForPublication": ["Current route-specific international entry requirements", "Complete current total-cost and living-cost confirmation", "Named clinical affiliation and placement terms", "Target-market licensing and recognition evidence"], "notes": "Do not merge the four- and five-year routes or present stated international pathways as guaranteed licensing outcomes."},
+  "draftContent": {"summary": "", "campusLifestyle": "", "cityProfile": "", "clinicalExposure": "", "hostelOverview": "", "indianFoodSupport": "", "safetyOverview": "", "studentSupport": "", "whyChoose": [], "thingsToConsider": [], "faq": [], "notes": "Held pending route-specific student decision information."}
+}

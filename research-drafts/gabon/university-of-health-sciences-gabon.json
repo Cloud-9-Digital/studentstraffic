@@ -1,0 +1,56 @@
+{
+  "countrySlug": "gabon",
+  "universitySlug": "university-of-health-sciences-gabon",
+  "schoolName": "Université des Sciences de la Santé — Faculté de Médecine",
+  "cityName": "Libreville",
+  "priority": "high",
+  "officialWebsite": "https://journal-officiel.ga/5755-000178-pr-msf-/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Gabon's official journal records creation of the Université des Sciences de la Santé and the World Directory of Medical Schools lists its Faculty of Medicine in Libreville. An official Gabon source confirms a Doctorat d'État en Médecine awarded by USS. A 2017 official-journal fee order exists, but is not current-cycle evidence and must not be used as a 2026 tuition quote. This pass found no current official medicine programme page, admissions route, fee schedule, teaching-language statement, international eligibility, clinical placement plan, support information or current programme-recognition detail. Do not package a page until those current primary sources exist.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Gabon Official Journal — USS creation",
+        "url": "https://journal-officiel.ga/5755-000178-pr-msf-/",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Records legal creation of Université des Sciences de la Santé."
+      },
+      {
+        "label": "World Directory of Medical Schools — USS Faculty of Medicine",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0001609",
+        "kind": "medical-directory",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists USS Faculty of Medicine in Libreville; not sufficient for current admission or cost claims."
+      },
+      {
+        "label": "Gabon Ministry of Health biography",
+        "url": "https://www.sante.gouv.ga/biographie-du-ministre",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Records an alumnus receiving a Doctorat d'État en Médecine at USS in 2004; historical award corroboration only."
+      },
+      {
+        "label": "Gabon Official Journal fee order",
+        "url": "https://journal-officiel.ga/5911-n0010-mesrsfc/",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Establishes that USS fees are set annually, but the order is historical and cannot establish 2026 fees."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université des Sciences de la Santé — Faculté de Médecine",
+    "type": "Public",
+    "programs": [],
+    "missingForPublication": [
+      "current official medicine programme curriculum and language",
+      "2026 tuition and mandatory fees",
+      "international admission route, eligibility and intake",
+      "clinical-placement/support evidence",
+      "current programme-level recognition evidence"
+    ]
+  },
+  "draftContent": {"summary": "", "faq": [], "notes": "No public copy drafted due to unavailable current programme and admissions data."}
+}

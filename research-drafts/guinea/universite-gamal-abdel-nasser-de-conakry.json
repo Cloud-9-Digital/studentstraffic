@@ -1,0 +1,19 @@
+{
+  "countrySlug": "guinea",
+  "universitySlug": "universite-gamal-abdel-nasser-de-conakry",
+  "schoolName": "Université Gamal Abdel Nasser de Conakry",
+  "cityName": "Conakry",
+  "priority": "medium",
+  "officialWebsite": "https://uganc.edu.gn/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UGANC is a public university under the higher-education ministry, its official site identifies the Faculté des sciences et techniques de la santé, and a current ministry item identifies the Faculty of Medicine. The available official admissions page identifies an online process and the homepage reports a first-year registration fee of 300,000 GNF, but these do not establish a current medicine award, duration, language, medicine-specific tuition, international eligibility, intake, clinical route, accommodation or recognition. No fee was extrapolated from unrelated postgraduate records.",
+  "sourceBundle": { "sources": [
+    { "label": "UGANC official homepage", "url": "https://uganc.edu.gn/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Lists the health-sciences faculty and a first-year registration fee of 300,000 GNF; this is not a medicine tuition schedule." },
+    { "label": "UGANC official presentation", "url": "https://uganc.edu.gn/presentation/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Identifies UGANC as a public administrative institution under the ministry." },
+    { "label": "UGANC admissions page", "url": "https://uganc.edu.gn/inscription-reinscription-et-admission/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Confirms the university GTSCO admission/registration platform but does not expose a complete current medical-admission route." },
+    { "label": "Guinea higher-education ministry news", "url": "https://mesrs.gov.gn/2026/01/07/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Current ministry item refers to the Dean's Office of UGANC's Faculty of Medicine." }
+  ] },
+  "structuredFacts": { "name": "Université Gamal Abdel Nasser de Conakry", "type": "Public university", "programs": [], "missingForPublication": [ "current medical award, duration and instruction language", "medicine-specific tuition and mandatory fees", "international eligibility, documents, intake and deadline", "clinical training and accommodation/support details", "current programme accreditation and target-market recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: the available current facts do not support a complete medicine page." }
+}

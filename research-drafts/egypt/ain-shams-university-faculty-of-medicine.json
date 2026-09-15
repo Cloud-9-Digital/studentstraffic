@@ -1,0 +1,38 @@
+{
+  "scope": "Egypt medical discovery — Ain Shams University Faculty of Medicine / Extended Medical Program",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Ain Shams University Faculty of Medicine",
+    "countrySlug": "egypt",
+    "programme": "Bachelor Degree of Medicine and General Surgery / Extended Medical Program",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "Ain Shams Faculty of Medicine's international-student office states that non-Egyptian Bachelor Degree of Medicine and General Surgery applicants apply through Study in Egypt, hold a high-school diploma or equivalent, and complete required application documents.",
+      "sourceUrl": "https://med.asu.edu.eg/iso/index.php/admission/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The official Extended Medical Program opens 2026/27 applications on 15 April 2026 and closes them on 31 August 2026. Its international applicants must use Study in Egypt, pass English and IT examinations plus an interview, and pay a USD 350 application fee.",
+      "sourceUrl": "https://emp.med.asu.edu.eg/pages/2016/Admission",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The official EMP fee page publishes 2026/27 instalments for Years 1 to 5 in Egyptian pounds and describes EMP as an integrated programme.",
+      "sourceUrl": "https://emp.med.asu.edu.eg/pages/1007/Tuition%20%26%20Fees",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The 2026/27 EMP fee page does not state whether its Egyptian-pound instalments apply to non-Egyptian students; using them as an international tuition amount would be unsupported.",
+    "The official international admission page confirms the general Medicine and Surgery route, while the EMP page describes a distinct integrated programme. The sources do not establish whether the fee schedule and entry requirements represent the same catalogue offering for foreign students.",
+    "No current independent programme-level recognition/accreditation record was established for the Ain Shams Medicine offering, so the required 2–3 recognition badges cannot be supported.",
+    "The sources do not provide a complete current programme-specific curriculum/clinical and accommodation evidence bundle at the required depth."
+  ],
+  "nextAction": "Obtain Ain Shams or Study in Egypt confirmation that identifies the foreign programme, total 2026/27 tuition and associated charges, and obtain a current independent programme-accreditation record before packaging."
+}

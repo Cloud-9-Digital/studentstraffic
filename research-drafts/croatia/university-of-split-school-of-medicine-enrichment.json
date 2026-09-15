@@ -1,0 +1,85 @@
+{
+  "scope": "decision-ready local enrichment; held pending final packaging",
+  "universitySlug": "university-of-split-school-of-medicine",
+  "programme": {
+    "officialTitle": "Medical Studies in English",
+    "award": "Doctor of Medicine (MD)",
+    "durationYears": 6,
+    "ects": 360,
+    "medium": "English",
+    "summary": "University of Split School of Medicine offers an English-taught, six-year integrated medical programme leading to the MD. Students Traffic can assess the document route, create an accurate direct-cost plan and prepare the multi-step Croatian application file.",
+    "fee": {
+      "status": "confirmed",
+      "effectiveTerm": "2026/2027 admission call",
+      "currency": "EUR",
+      "annualTuition": 12000,
+      "applicationFee": 200,
+      "paymentTerms": "The first-year tuition must be paid in full within one week of the electronic acceptance letter. The 2026/27 call says tuition is non-refundable and bank fees are paid by the candidate.",
+      "notes": "The official call confirms the annual tuition and application charge, but does not publish a complete six-year cost or an itemised living-cost budget. Accommodation, health cover, immigration and local living costs must therefore be planned separately."
+    },
+    "admissions": {
+      "overview": "The 2026/27 call accepts applicants who have completed secondary education and final exams, with at least 12 years of prior education. Admission requires both direct submission to the School and registration and document verification through Croatia's Central Admission Office process.",
+      "publishedDeadlines2026": [
+        "22 May 2026 for applicants who completed secondary education before 31 December 2025",
+        "1 July 2026 for applicants who completed or were completing secondary education in 2026"
+      ],
+      "coreDocuments": [
+        "Programme application form, selecting one study category only",
+        "CV in English with photograph and motivation letter in English",
+        "Passport or ID, birth certificate, secondary-school transcripts and final or leaving certificate",
+        "Proof of EUR 200 non-refundable application-fee payment",
+        "English-language evidence and a biomedical/health university transcript where applicable"
+      ],
+      "process": [
+        "Email the School's Medical Studies in English office with the prescribed documents",
+        "Register through the Postani Student portal and, where required, request recognition of foreign secondary education",
+        "Send certified records by tracked post to ASHE's Central Admission Office",
+        "After verification, select Medicine in English in the portal",
+        "After acceptance, pay the first-year tuition in full within one week to complete enrolment"
+      ],
+      "categories": "The 2026/27 call has two mutually exclusive routes: all six years at USSM, or the first three years at USSM followed by the final three years at the named collaborative teaching organisation Sana Kliniken in Coburg, Germany. Categories cannot be changed after enrolment.",
+      "restrictions": [
+        "The cited 2026/27 application deadlines have passed; intake availability and a future call must be confirmed before lead conversion",
+        "Foreign-secondary-education recognition, certified copies, translations and immigration requirements depend on the applicant's records and citizenship"
+      ]
+    },
+    "academics": "The official curriculum describes a six-year integrated programme with 5,500 hours of direct teaching. It progresses from natural sciences to basic medical sciences and then clinical sciences. The school year runs from 1 October to 15 July; teaching is delivered in subject blocks rather than semesters. Medical humanities, research in biomedicine and health, clinical skills and a graduate thesis are built into the route.",
+    "clinicalTraining": "Clinical skills develop from anatomical specimens and models to patients, with complexity increasing through Year 6. Clinical Propedeutics follows successful completion of Year 2 and is the first clinical course involving direct patient work. The curriculum says clinical subjects and rotations build supervised clinical experience; programme completion includes an Aggregate Knowledge Examination and an Aggregate Skills Examination.",
+    "recognition": "The programme is an integrated 360-ECTS degree listed by the University of Split as Medical Studies in English. The official curriculum states it follows Croatia's Regulated Professions and Recognition of Foreign Professional Qualifications Act and is structured for supervised clinical experience. ASHE's published re-accreditation material confirms an institutional review of the School. The School also states that it is registered in FAIMER's former IMED and that its students may sit USMLE and MCC licensing examinations. These are educational and examination-eligibility facts, not a guarantee of personal licensure, immigration, residency or employment in any jurisdiction.",
+    "support": "The School publishes an arrival guide covering Croatia's OIB personal identification number, temporary stay, health cover, visa path, housing search and student identity card. Foreign students are directed to private accommodation; the School says it has no connection with the listed agencies and advises a full-stay contract because of the tourist season. The guide also links a student support group. The School site lists counselling, an international student association, library access and the Medical Studies in English office.",
+    "scholarships": "No current programme-specific tuition scholarship or fee waiver was identified in the official 2026/27 English-MD call. The university publishes some mobility and targeted-support calls, but these must not be presented as MD tuition funding. A funding CTA should capture budget and eligibility, then seek a currently open award with published terms before making any availability claim.",
+    "faqs": [
+      ["How long is Medical Studies in English at Split?", "It is a six-year integrated programme leading to the Doctor of Medicine degree, with 360 ECTS."],
+      ["What is the current tuition?", "The 2026/27 official admission call lists EUR 12,000 annual tuition plus a EUR 200 non-refundable application fee. It does not publish one universal total for all six years."],
+      ["When is first-year tuition due?", "The 2026/27 call requires payment in full within one week of receiving the electronic acceptance letter; it says tuition is non-refundable."],
+      ["What academic background is required?", "Applicants need completed secondary education and final exams, with at least 12 years of prior education. The published process is document-based and includes recognition where required."],
+      ["What documents are needed?", "The core file includes the programme form, CV, motivation letter, identity and birth documents, certified school records and application-fee proof. English evidence and prior biomedical transcripts apply where relevant."],
+      ["Why are there two application steps?", "Applicants submit to USSM and also register through Croatia's Central Admission Office process, which verifies records and supports foreign-education recognition."],
+      ["What are the two programme categories?", "One route is entirely at USSM. The other has three years at USSM and three years at Sana Kliniken in Coburg, Germany. A student must choose one category and cannot change later."],
+      ["When does clinical patient work begin?", "Clinical Propedeutics is taken after successful completion of Year 2. Clinical learning then progresses through rotations and supervised patient work toward Year 6."],
+      ["Is the degree recognised?", "The curriculum follows Croatia's regulated-professions framework and the School describes IMED/FAIMER registration and examination eligibility. Professional registration remains governed by the destination authority."],
+      ["Is accommodation provided?", "The new-student guide directs foreign students to private accommodation and advises signing a contract covering the full stay. It does not present School-provided housing for this route."],
+      ["Are scholarships available?", "The current 2026/27 MD call does not publish a programme-specific tuition scholarship or waiver. Any funding route should be checked against an active official call before it is included in a cost plan."]
+    ],
+    "ctas": [
+      {"label": "Check my Split MD document eligibility", "capture": ["secondary-school country and completion year", "academic records", "English evidence", "citizenship"]},
+      {"label": "Prepare my Croatian application checklist", "capture": ["certified-document status", "translation need", "recognition requirement", "target category"]},
+      {"label": "Build my Split MD budget", "capture": ["EUR 12,000 tuition readiness", "private-housing budget", "health-cover need", "funding requirement"]},
+      {"label": "Plan my clinical and professional pathway", "capture": ["all-Split or Coburg category", "practice destination", "language needs", "licensing objective"]}
+    ]
+  },
+  "evidence": [
+    {"field": "2026/27 admissions, fees and application process", "url": "https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242", "type": "official-admissions", "checkedAt": "2026-07-25"},
+    {"field": "programme award and duration", "url": "https://mefst.unist.hr/studies/medical-studies-in-english/83", "type": "official-programme", "checkedAt": "2026-07-25"},
+    {"field": "curriculum and clinical framework", "url": "https://mefst.unist.hr/studies/medical-studies-in-english/curriculum/137", "type": "official-curriculum", "checkedAt": "2026-07-25"},
+    {"field": "first direct-patient clinical course", "url": "https://mefst.unist.hr/education/courses/clinical-propedeutics/2501", "type": "official-course", "checkedAt": "2026-07-25"},
+    {"field": "arrival, housing and immigration support", "url": "https://mefst.unist.hr/studies/medical-studies-in-english/information-for-new-students/795", "type": "official-student-support", "checkedAt": "2026-07-25"},
+    {"field": "institutional re-accreditation review", "url": "https://backend.deqar.eu/reports/ASHE/356342_20250917_1815_ENG_-_Final_Report_USSM_-_18.3..pdf", "type": "quality-assurance-report", "checkedAt": "2026-07-25"}
+  ],
+  "gaps": [
+    "No complete six-year direct-cost or living-cost schedule is published in the current English-MD call",
+    "No current programme-specific scholarship or fee-waiver terms were found in the official 2026/27 call",
+    "The current 2026/27 call's published deadlines have passed, so a later intake or future call must be established before public availability language",
+    "No individual professional-registration, visa, residency or employment outcome can be published as universal"
+  ]
+}

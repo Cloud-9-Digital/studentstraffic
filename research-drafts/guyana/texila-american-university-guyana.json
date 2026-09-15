@@ -1,0 +1,20 @@
+{
+  "countrySlug": "guyana",
+  "universitySlug": "texila-american-university-guyana",
+  "schoolName": "Texila American University Guyana",
+  "cityName": "Georgetown",
+  "priority": "medium",
+  "officialWebsite": "https://tau.edu.gy/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - TAU's official pages describe MD pathways, published semester fees, English-language admission context, and basic-science study in Guyana with clinical science in Guyana or the United States. Independent CAAM-HP and ACCM pages both publish current accreditation records, but their terms differ. Hold pending a reconciled route-specific cost calculation, current clinical-site availability for the applicant's intake, formal local registration evidence, and a target-market professional-eligibility assessment. No licensing outcome is asserted from directory or accreditation status alone.",
+  "sourceBundle": { "sources": [
+    { "label": "TAU official MD programme page", "url": "https://tau.edu.gy/study-best-4-year-md-program/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes basic medical sciences at the Guyana campus and clinical science in Guyana or the United States." },
+    { "label": "TAU official admission requirements", "url": "https://tau.edu.gy/admissions-requirement/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Provides current MD pathway eligibility information and admissions assessment context." },
+    { "label": "TAU official tuition and aid page", "url": "https://tau.edu.gy/tuition-and-aid/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes semester tuition, US clinical-rotation tuition, additional fees, payment-plan/scholarship information and fees subject to change." },
+    { "label": "CAAM-HP TAU assessment record", "url": "https://caam-hp.org/texila-american-university/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists Accreditation with Conditions for 3 years, 2023-2026." },
+    { "label": "ACCM assessed programmes", "url": "https://accredmed.org/accredited-medical-schools-international-medical-school-accreditation/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists Texila American University College of Medicine as accredited for six years until June 30, 2029." }
+  ] },
+  "structuredFacts": { "name": "Texila American University Guyana", "type": "Private medical university", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "Official site describes four-year and five-year pathways depending on entry route", "feeStatus": "Semester fees and additional charges published; complete route-specific total requires reconciliation", "publishable": false } ], "missingForPublication": [ "validated intake-specific curriculum and clinical-location availability", "reconciled complete cost card for each route", "formal local registration evidence", "housing/visa and learner-support evidence for intended audience", "market-specific licensing and recognition evaluation" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted while fee, clinical-placement and professional-outcome evidence remains incomplete for a defined audience." }
+}

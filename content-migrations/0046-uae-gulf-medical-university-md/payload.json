@@ -1,0 +1,406 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Gulf Medical University maps its 6-year Doctor of Medicine (MD) programme to this category: a direct-entry, single-cycle programme admitting straight from secondary school, confirmed distinct from the university's separate 4-year Graduate Entry MD track.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "united-arab-emirates",
+      "slug": "gulf-medical-university",
+      "name": "Gulf Medical University",
+      "city": "Ajman",
+      "type": "Private",
+      "establishedYear": 1998,
+      "officialWebsite": "https://gmu.ac.ae/",
+      "mediaAttribution": {},
+      "summary": "Gulf Medical University in Ajman, UAE, founded in 1998, runs a direct-entry, six-year, English-medium Doctor of Medicine (MD) programme on its dedicated Thumbay Medicity campus. The programme is listed in the WHO World Directory of Medical Schools as a distinct secondary-entry track (separate from GMU's own graduate-entry MD), and its accreditation by the UAE Commission for Academic Accreditation was most recently renewed through 29 June 2028.",
+      "campusLifestyle": "Students train on GMU's dedicated 25-acre Thumbay Medicity campus in Ajman, alongside GMU-owned teaching hospitals and clinics, with gender-segregated on-campus hostel accommodation available a short distance from campus.",
+      "cityProfile": "Ajman is one of the UAE's seven emirates, located along the Gulf coast a short drive from Dubai and Sharjah. GMU's own materials position Ajman as materially cheaper for day-to-day living than Dubai or Abu Dhabi, while remaining close to their airports and amenities.",
+      "practicalExposure": "The six-year, competency-based MD programme runs in three two-year phases -- preclinical foundation sciences, organ-system-based core medical sciences, and clinical clerkships -- with training across GMU's own Thumbay University Hospital, Thumbay Hospital, Thumbay Dental Hospital and the wider Thumbay healthcare network spanning all seven emirates for elective placements. Graduates sit international benchmarking exams (IFOM/NBME) during the programme and a comprehensive Exit Exam before graduation, followed by a mandatory one-year internship.",
+      "hostelOverview": "On-campus hostel accommodation is available in the nearby Al Jurf area in gender-segregated buildings, with single, double and triple-occupancy furnished options (bed, wardrobe, fridge, study table, washing machine), laundry, gym, Wi-Fi, university transport during campus hours and 24/7 security. A refundable AED 1,000 security deposit applies; the university's own marketing page cites on-campus housing starting around AED 19,000 per year as an approximate entry price, though the exact current annual fee is published only in a downloadable flyer that could not be independently confirmed.",
+      "dietarySupport": "Campus dining options are available through the Thumbay Medicity complex; no separate university-run meal-plan cost is published.",
+      "safetyOverview": "On-campus hostel accommodation includes 24/7 warden and security coverage. No broader university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants apply online, are guided through document evaluation and equivalency requirements, and are supported through GMU's admissions office; the university also hosts its own on-campus IELTS test center.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000841), which explicitly confirms the 6-year MD is a direct-entry programme (prerequisite: completed secondary education), distinct from GMU's own separate 4-year graduate-entry MD.",
+        "Accredited by the UAE Commission for Academic Accreditation (CAA), most recently renewed 13 June 2025, valid through 29 June 2028.",
+        "GMU states its MD graduates are recognized by all UAE health regulatory authorities and eligible to sit the UAE licensing exam for independent practice.",
+        "A detailed, published country-by-country minimum-grade table for admission, including specific thresholds for Indian CBSE/ICSE/State Board applicants (Biology 75%, Chemistry 75%, Physics or Mathematics 50%).",
+        "A dedicated 25-acre medical campus (Thumbay Medicity) with GMU's own teaching hospitals and a wide affiliated clinical network across all seven emirates."
+      ],
+      "thingsToConsider": [
+        "Tuition is AED 155,000 per year, one of the higher fee points among the platform's direct-entry MD/MBBS options, and GMU explicitly does not offer an installment plan or merit discount for the MD programme -- full annual payment is required.",
+        "No merit or need-based scholarship is available for the 6-year MD programme; GMU's published scholarship and NAFIS full-scholarship categories both explicitly exclude it.",
+        "A relatively high mandatory English-proficiency bar applies specifically to the MD programme (IELTS 6.0 / TOEFL 550), stricter than GMU's general undergraduate admissions policy for other programmes.",
+        "Admission requires clearing a computer-based entrance test (minimum 70% in each of Biology, Chemistry and Physics-or-Mathematics) plus a written situational-judgment assessment and an interview, with a minimum 70% overall weighted score required.",
+        "GMU's own accreditation page claims graduate eligibility for exams including India's FMG licensing pathway; this claim was not independently verified against an NMC or National Board of Examinations primary source and should be confirmed before relying on it."
+      ],
+      "bestFitFor": [
+        "Students who can clear a structured entrance test, written assessment and interview process, and who meet GMU's country-specific minimum science-subject grade thresholds.",
+        "Families able to pay the full annual tuition upfront, since no installment plan or MD-specific scholarship is available.",
+        "Applicants who want a dedicated medical campus with GMU's own affiliated teaching hospitals rather than a mixed-discipline university setting."
+      ],
+      "industryPartners": [
+        "Thumbay University Hospital",
+        "Thumbay Hospital",
+        "Thumbay Dental Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0000841, 6-year MD confirmed as a distinct direct-entry track",
+        "UAE Commission for Academic Accreditation (CAA) -- accredited, renewed 13 June 2025, valid through 29 June 2028",
+        "Recognized by UAE health regulatory authorities, with graduates eligible to sit the UAE licensing exam for independent practice"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Gulf Medical University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000841" },
+        { "label": "Gulf Medical University -- national and international accreditations/recognitions", "url": "https://gmu.ac.ae/college-medicine/national-and-international-accreditations-recognitions/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the 6-year MD programme direct-entry after high school?",
+          "answer": "Yes. WHO World Directory of Medical Schools records confirm the 6-year MD's prerequisite is completed secondary education, distinct from GMU's separate 4-year Graduate Entry MD, which requires a prior undergraduate degree."
+        },
+        {
+          "question": "What are the minimum academic requirements for Indian applicants?",
+          "answer": "Per GMU's published country-specific grade table: minimum 75% in Biology, 75% in Chemistry, and 50% in Physics or Mathematics, for CBSE/ICSE/State Board applicants."
+        },
+        {
+          "question": "What English-proficiency score is required?",
+          "answer": "A mandatory minimum of IELTS Academic 6.0 or TOEFL 550 (CBT 213 / iBT 79) applies specifically to the MD programme; this is a stricter threshold than GMU's general undergraduate admissions policy for other programmes."
+        },
+        {
+          "question": "What does the admissions process involve?",
+          "answer": "A computer-based entrance test in Biology, Chemistry and Physics-or-Mathematics (minimum 70% per subject), a written situational-judgment assessment, and a face-to-face interview, with a minimum overall weighted score of 70% required for admission."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "AED 155,000 per year (inclusive of 5% VAT) for the 2026/27 academic year, plus a non-refundable AED 2,100 evaluation fee and an AED 300 application fee. No installment plan is available for the MD programme."
+        },
+        {
+          "question": "Are scholarships available for the MD programme?",
+          "answer": "No. GMU's published merit-discount and full-scholarship categories both explicitly exclude the 6-year MD programme."
+        },
+        {
+          "question": "When does the academic year start and when is the application deadline?",
+          "answer": "Classes commence in late August or early September. For the 2026/27 cycle, the application process opened 5 December 2025 and closes 15 August 2026."
+        },
+        {
+          "question": "Is on-campus accommodation available?",
+          "answer": "Yes, gender-segregated on-campus hostel accommodation is available near campus, with a refundable AED 1,000 security deposit; the exact current annual fee is published only in a downloadable flyer that could not be independently confirmed, though GMU's own marketing cites a starting price of around AED 19,000 per year."
+        },
+        {
+          "question": "Can graduates practice medicine outside the UAE?",
+          "answer": "GMU states its MD is recognized by all UAE health regulatory authorities, with graduates eligible for the UAE licensing exam, and claims eligibility for exams including USMLE (USA), PLAB (UK) and India's FMG pathway. The India-specific claim was not independently verified against an NMC or National Board of Examinations source and should be confirmed directly before relying on it."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Gulf Medical University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000841",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence distinguishing GMU's three programme tracks: 5-year legacy MBBS (teach-out), 6-year direct-entry MD (current flagship, secondary-school prerequisite), and 4-year Graduate Entry MD (undergraduate-degree prerequisite, a distinct programme not covered by this record)."
+        },
+        {
+          "label": "Gulf Medical University -- MD (6-Year) programme page",
+          "url": "https://gmu.ac.ae/college-medicine/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for programme structure, country-specific admission grade table, English-proficiency thresholds, selection-criteria weighting and fees."
+        },
+        {
+          "label": "Gulf Medical University -- fee structure",
+          "url": "https://gmu.ac.ae/fee-structure/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for current AY2026-27 tuition (AED 155,000), evaluation fee (AED 2,100), application fee (AED 300), and confirmation that no merit discount or installment plan applies to the MD programme."
+        },
+        {
+          "label": "Gulf Medical University -- national and international accreditations/recognitions",
+          "url": "https://gmu.ac.ae/college-medicine/national-and-international-accreditations-recognitions/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for CAA accreditation renewal dates, UAE health-regulator recognition and UAE licensing-exam eligibility; also the source of GMU's own (unverified) claim of India FMG-pathway eligibility."
+        },
+        {
+          "label": "Gulf Medical University -- admission policy and general admission requirements",
+          "url": "https://gmu.ac.ae/policy-and-general-admission-requirements/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the 2026/27 undergraduate admissions calendar and the MD-specific English-proficiency carve-out from the general policy."
+        },
+        {
+          "label": "Gulf Medical University -- admission entrance exam (AEE) specification",
+          "url": "https://gmu.ac.ae/admission-entrance-exam-aee/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for entrance-test structure, subject coverage and format."
+        },
+        {
+          "label": "Gulf Medical University -- scholarships",
+          "url": "https://gmu.ac.ae/scholarships/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence that the 6-year MD is excluded from every published merit-discount and the NAFIS full-scholarship category."
+        },
+        {
+          "label": "Gulf Medical University -- residential life (hostel)",
+          "url": "https://gmu.ac.ae/office-student-affair/residential-life/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for on-campus hostel format, amenities and the AED 1,000 refundable security deposit."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry physics/math grades", "English proficiency score", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance test preparation", "English proficiency proof", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "gulf-medical-university-md",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Doctor of Medicine (MD), 6-Year Programme",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "AED",
+            "officialAnnualTuitionAmount": 155000,
+            "officialTotalTuitionAmount": 930000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: AED 155,000/year inclusive of 5% VAT, plus a non-refundable AED 2,100 evaluation fee and an AED 300 application fee. Total is calculated as the annual figure times 6 years -- not published as a lump sum. No merit discount or installment plan applies to the MD programme; other mandatory costs (health insurance, transport) exist per the university's non-public Undergraduate Catalog but were not itemized on the pages checked."
+          },
+          "officialProgramUrl": "https://gmu.ac.ae/college-medicine/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education with the required Biology, Chemistry and Physics-or-Mathematics grades for their curriculum system"
+            ],
+            "restrictions": [
+              "Country-specific minimum science-subject grades apply (e.g. Indian CBSE/ICSE/State Board applicants: Biology 75%, Chemistry 75%, Physics or Mathematics 50%); admission is cancelled if more than one mandatory subject falls short",
+              "Non-UAE curriculum applicants must obtain a UAE Ministry of Education equivalency certificate, with conditional one-semester admission possible while it is pending",
+              "Mandatory English-proficiency minimum of IELTS 6.0 or TOEFL 550, stricter than GMU's general undergraduate policy"
+            ],
+            "notes": "Admission also requires clearing GMU's own entrance test (minimum 70% per subject), a written situational-judgment assessment, and an interview, with a minimum overall weighted score of 70%.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://gmu.ac.ae/college-medicine/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online, submit documents and pay the evaluation fee, sit a computer-based entrance test and written situational-judgment assessment, and complete a face-to-face interview; admission is decided on a weighted score of entrance test (50%), assessment (30%), English proficiency (10%) and interview (10%), with a 70% minimum overall.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education meeting country-specific minimum grades in Biology, Chemistry and Physics-or-Mathematics, plus mandatory English-proficiency proof.",
+              "items": [
+                "Secondary-school certificate meeting country-specific minimum science-subject grades (e.g. India: Biology 75%, Chemistry 75%, Physics/Math 50%)",
+                "UAE Ministry of Education equivalency certificate for non-UAE curricula (conditional admission possible while pending)",
+                "IELTS Academic 6.0 or TOEFL 550 English-proficiency certificate",
+                "Pass GMU's own computer-based entrance test with a minimum 70% in each subject"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the online application form and upload required documents",
+              "Pay the AED 300 application fee and AED 2,100 evaluation fee",
+              "Sit the computer-based GMU Entrance Test (Biology, Chemistry, Physics-or-Mathematics)",
+              "Complete the Written Situational Judgment Assessment",
+              "Attend a face-to-face interview with the Admissions Committee"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10th and 12th grade (or O/AS/A-Level) certificates and transcripts",
+                "UAE Ministry of Education equivalency certificate (non-UAE curricula)"
+              ],
+              "application": [
+                "Valid passport (applicant and parent)",
+                "Valid English-proficiency certificate (IELTS 6.0 or TOEFL 550)",
+                "Good-conduct certificate and passport photo"
+              ]
+            },
+            "deadlinesNote": "2026/27 cycle: applications and interviews open 5 December 2025, applications close 15 August 2026, admissions close 3 weeks after programme commencement (classes begin late August or early September 2026).",
+            "visaConsiderations": [
+              "Confirm current UAE student-visa and health-insurance requirements directly with GMU's admissions office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["August", "September"],
+          "intakeCodes": ["august", "september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current 2026/27 tuition of AED 155,000/year plus AED 2,100 evaluation fee and AED 300 application fee, all from the official fee-structure and MD programme pages. No merit discount or installment plan applies to the MD programme.",
+          "teachingPhases": [
+            {
+              "phase": "6-year, 3-phase competency-based MD programme",
+              "language": "English",
+              "details": "Phase I (Years 1-2): Transition to Medical Sciences. Phase II (Years 3-4): organ-system-based Core Medical Sciences. Phase III (Years 5-6): Transition to Practice/clinical clerkships. 224 credits total, with international benchmarking (IFOM/NBME) exams at phase gates, a comprehensive Exit Exam before graduation, and a mandatory one-year internship after graduation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "gulf-medical-university",
+      "publicField": "identity",
+      "claimText": "Gulf Medical University was founded in 1998 by Dr. Thumbay Moideen, Founder President of Thumbay Group.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- official site structured data (schema.org)",
+      "sourceUrl": "https://gmu.ac.ae/about-gmu/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "gulf-medical-university",
+      "programmeSlug": "gulf-medical-university-md",
+      "publicField": "recognition",
+      "claimText": "WHO World Directory of Medical Schools (FAIMER School ID F0000841) lists Gulf Medical University's 6-year Doctor of Medicine (MD) as a direct-entry programme (prerequisite: completed secondary education), a track explicitly distinct from GMU's separate 4-year Graduate Entry MD (prerequisite: completed undergraduate degree) and its legacy 5-year MBBS (in teach-out).",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Gulf Medical University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000841",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "gulf-medical-university",
+      "publicField": "recognition",
+      "claimText": "Accredited by the UAE Commission for Academic Accreditation (CAA), most recently renewed 13 June 2025 and valid through 29 June 2028; MD graduates are recognized by all UAE health regulatory authorities and eligible to sit the UAE licensing exam.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- national and international accreditations/recognitions",
+      "sourceUrl": "https://gmu.ac.ae/college-medicine/national-and-international-accreditations-recognitions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "gulf-medical-university",
+      "programmeSlug": "gulf-medical-university-md",
+      "publicField": "academics",
+      "claimText": "The 6-year MD is a 224-credit, competency-based programme run in three two-year phases, benchmarked to ACGME domains and the UAE EmiratesMEDs framework, with IFOM/NBME exams at phase gates and a comprehensive Exit Exam before graduation.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- MD (6-Year) programme page",
+      "sourceUrl": "https://gmu.ac.ae/college-medicine/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "gulf-medical-university",
+      "programmeSlug": "gulf-medical-university-md",
+      "publicField": "eligibility",
+      "claimText": "Admission requires country-specific minimum secondary-school science grades (e.g. India: Biology 75%, Chemistry 75%, Physics/Math 50%), a UAE Ministry of Education equivalency certificate for non-UAE curricula, and a mandatory IELTS 6.0 or TOEFL 550 English-proficiency score, stricter than GMU's general undergraduate policy.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- MD (6-Year) programme page",
+      "sourceUrl": "https://gmu.ac.ae/college-medicine/bachelor-of-medicine-and-bachelor-of-surgery-mbbs/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "gulf-medical-university",
+      "programmeSlug": "gulf-medical-university-md",
+      "publicField": "admissions",
+      "claimText": "Admission is via a computer-based entrance test (minimum 70% per subject in Biology, Chemistry, Physics-or-Mathematics), a written situational-judgment assessment, and an interview, weighted 50/30/10/10 with entrance test/assessment/English/interview, minimum 70% overall required.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- admission entrance exam (AEE) specification",
+      "sourceUrl": "https://gmu.ac.ae/admission-entrance-exam-aee/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "gulf-medical-university",
+      "programmeSlug": "gulf-medical-university-md",
+      "publicField": "intake",
+      "claimText": "2026/27 cycle: applications and interviews open 5 December 2025, applications close 15 August 2026, classes commence late August or early September 2026.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- admission policy and general admission requirements",
+      "sourceUrl": "https://gmu.ac.ae/policy-and-general-admission-requirements/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "gulf-medical-university",
+      "programmeSlug": "gulf-medical-university-md",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition confirmed at AED 155,000/year (inclusive of 5% VAT), plus a non-refundable AED 2,100 evaluation fee and AED 300 application fee; no merit discount or installment plan applies to the MD programme.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- fee structure",
+      "sourceUrl": "https://gmu.ac.ae/fee-structure/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "gulf-medical-university",
+      "publicField": "student living",
+      "claimText": "On-campus gender-segregated hostel accommodation is available near campus with a refundable AED 1,000 security deposit; the exact current annual fee is published only in a downloadable flyer that could not be independently confirmed, though GMU's own marketing cites a starting price of around AED 19,000/year.",
+      "status": "verified",
+      "sourceLabel": "Gulf Medical University -- residential life (hostel)",
+      "sourceUrl": "https://gmu.ac.ae/office-student-affair/residential-life/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "Malawi medical discovery — Kamuzu University of Health Sciences School of Medicine and Oral Health",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "KUHeS offers Bachelor of Medicine Bachelor of Surgery among its full-time undergraduate programmes.",
+      "sourceUrl": "https://www.kuhes.ac.mw/undergraduate-programmes/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "KUHeS's MBBS page describes a five-year programme with a strong science foundation, early patient contact and a transition to clinical training in third year.",
+      "sourceUrl": "https://www.kuhes.ac.mw/bachelor-of-medicine-bachelor-of-surgery/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "For 2025/26 public-university selection, Malawi's NCHE lists the KUHeS MBBS as a six-year programme including foundation year, with stated MSCE/A-level subject requirements and 110 enrolment spaces.",
+      "sourceUrl": "https://www.pus.nche.ac.mw/programmesbyuniversity",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "KUHeS identifies Queen Elizabeth Central Hospital as the principal training hub, Kamuzu Central Hospital as a third-year MBBS training site, and Mangochi District Hospital as an undergraduate family-medicine rotation hub.",
+      "sourceUrl": "https://www.kuhes.ac.mw/medicine-and-oral-health/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Malawi's NCHE accredited the KUHeS institution with conditions in its December 2024 council determinations.",
+      "sourceUrl": "https://www.nche.ac.mw/downloads/NCHE%20PRESS%20RELEASE%2045TH%20COUNCIL%20SESSION%20-%209TH%20JAN%2C%202025.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "NCHE's accredited-programme publication lists the KUHeS Bachelor of Medicine, Bachelor of Surgery programme.",
+      "sourceUrl": "https://www.nche.ac.mw/downloads/NCHE%20NEWSLETTER%20VOL%202.%20ISSUE%202%20-%20MARCH%202022.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The official MBBS page calls the programme five years while the current NCHE selection listing gives six years including foundation year; the profile needs an explicit current reconciliation before publication.",
+    "Current official MBBS fee and student-support evidence was not sufficiently assembled for the required payload fields."
+  ],
+  "nextAction": "Obtain current KUHeS MBBS fee and student-support publications and reconcile the programme duration with the registrar before completing the field-level review and publishing."
+}

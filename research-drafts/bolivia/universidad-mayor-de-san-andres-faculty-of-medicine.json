@@ -1,0 +1,30 @@
+{
+  "scope": "Bolivia medical discovery — Universidad Mayor de San Andrés Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UMSA's Medicine programme page sets out a curriculum spanning basic, pre-clinical and clinical cycles, with fifth-year subjects including paediatrics, gynaecology and obstetrics.",
+      "sourceUrl": "https://medicina.umsa.bo/en/plan-de-estudios",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMSA describes its rotating internship as part of the Medicine plan and a graduation modality; it lasts one calendar year and includes Medicine, Surgery, Paediatrics, Gynaecology-Obstetrics, and Public Health and Social Medicine rotations.",
+      "sourceUrl": "https://medicina.umsa.bo/es/internado-rotatorio",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMSA reported that 334 fifth-year Medicine students selected hospitals for the 2026 rotating internship across 17 hospitals.",
+      "sourceUrl": "https://medicina.umsa.bo/es/noticias-carrera/-/asset_publisher/g9b339Z7aW8i/content/eleccion-de-hospitales-de-destino-para-el-internado-rotatorio-de-la-carrera-de-medicina-de-la-umsa/3653403",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official undergraduate admissions publication with complete entry requirements was assembled.",
+    "Current official tuition/fee, instructional-language, recognition and student-support evidence remains incomplete for the required payload fields."
+  ],
+  "nextAction": "Collect current UMSA undergraduate admissions, fee, recognition, language and support publications, then complete the field-level review before publishing."
+}

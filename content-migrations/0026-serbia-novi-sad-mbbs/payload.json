@@ -1,0 +1,384 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Novi Sad Faculty of Medicine maps its integrated Medicine studies (English track) to this category: a direct-entry, single-cycle six-year programme leading to the Doctor of Medicine (MD) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "serbia",
+      "slug": "university-of-novi-sad-faculty-of-medicine",
+      "name": "University of Novi Sad Faculty of Medicine",
+      "city": "Novi Sad",
+      "type": "Public",
+      "establishedYear": 1960,
+      "officialWebsite": "https://www.mf.uns.ac.rs/En/",
+      "mediaAttribution": {},
+      "summary": "University of Novi Sad Faculty of Medicine has taught medicine since 1960 and has run its English-medium Medicine track since 1993, offering a direct-entry, six-year MD programme listed in the WHO World Directory of Medical Schools with ECFMG eligibility from 1963 onward. Its accreditor, Serbia's National Accreditation Body, most recently confirmed the study programme's accredited status in November 2020.",
+      "campusLifestyle": "The English-track Medicine programme is a smaller, intake-limited cohort -- 15 seats for Medicine in the 2026/27 September admission term -- supported by an International Department and Erasmus Student Network volunteers who help incoming international students settle in.",
+      "cityProfile": "Novi Sad is Serbia's second-largest city, on the Danube river in the Vojvodina region. The Faculty's primary teaching hospital, the Clinical Center of Vojvodina, has served as its main clinical and research base since the 1960s-70s.",
+      "practicalExposure": "The six-year, 360-ECTS integrated Medicine programme (first- and second-level studies combined, leading directly to the Doctor of Medicine title) is taught entirely in English. Clinical training runs through the Clinical Center of Vojvodina, the Faculty's principal teaching hospital since its clinical-hospital status was formalized in the 1960s-70s. A detailed year-by-year pre-clinical/clinical curriculum breakdown and a full list of secondary clinical-partner sites were not published by the Faculty at the level of detail needed to state here with confidence.",
+      "hostelOverview": "University dormitory places in Novi Sad are state-subsidized and generally reserved for Serbian students or those covered by a specific inter-state agreement; the university's own guidance directs most international students toward private rental housing near the Faculty, with the Faculty's International Department and Erasmus Student Network volunteers available to help with the search.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published for international Medicine students. Food costs should be planned as part of an independent living-cost budget alongside private accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. International applicants can direct queries to the Faculty's dedicated Studies in English contact for day-to-day support.",
+      "studentSupport": "International admissions and enrollment run through a dedicated Studies in English contact (medns.studiesinenglish@mf.uns.ac.rs). The Faculty's International Department and Erasmus Student Network volunteers support incoming students with settling in and finding private housing.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000280), currently operational, with ECFMG-certification eligibility for graduates from 1963 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "An English-medium Medicine track running continuously since 1993, with study-programme accreditation from Serbia's National Accreditation Body confirmed in November 2020.",
+        "A published, transparent tuition figure that explicitly includes online library resources and electronic textbook access alongside tuition.",
+        "Clinical training at the Clinical Center of Vojvodina, the Faculty's principal teaching hospital since the 1960s-70s.",
+        "Regional recruitment partners listed for applicants from the Gulf, UK/Ireland/North America/Australia, Iran/Turkiye, Ghana and India, easing the application process for a wide range of nationalities."
+      ],
+      "thingsToConsider": [
+        "Serbia is not an EU member state, so this degree does not carry the automatic EU-wide recognition that an EU-member country's medical degree carries; graduates should confirm their target country's own recognition or nostrification process.",
+        "The Faculty's own site has an outdated cached admissions page still showing stale 2021/22 figures (a lower EUR 5,500 fee and different dates) alongside the current 2026/27 page -- always confirm figures directly against the live 2026/27 Admission page or with the Faculty before relying on a specific number.",
+        "University dormitory places are generally reserved for Serbian students or those on a specific inter-state agreement; most international students will need private rental housing.",
+        "No confirmed scholarship specifically for international Medicine students was found.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; claims that the university is separately 'NMC-recognized' beyond this generic pathway could not be independently verified and should not be relied on."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a Biology and Chemistry entrance exam, with no standardized-test-based alternative admission route.",
+        "Applicants comfortable arranging their own private housing rather than relying on university-provided dormitories.",
+        "Families able to fund the EUR 7,000 annual tuition and comfortable applying through email-based admissions or a recognized regional recruitment partner."
+      ],
+      "industryPartners": [
+        "Clinical Center of Vojvodina"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000280), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1963-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Serbia National Accreditation Body (NAT) — study programme accredited, confirmed 25 November 2020"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — University of Novi Sad Faculty of Medicine listing", "url": "https://search.wdoms.org/Home/SchoolDetail/F0000280" },
+        { "label": "Faculty of Medicine Novi Sad — official 2026/2027 Admission (Studies in English) page", "url": "https://www3.mf.uns.ac.rs/En/Admission.php" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is an integrated first- and second-level studies programme -- admission follows directly from completed secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the academic title Doctor of Medicine (MD)."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (360 ECTS credits), taught entirely in English, with clinical training run through the Clinical Center of Vojvodina."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 7,000 per year for the 2026/27 cohort, which includes tuition, online library resources and electronic textbook access. A first installment of at least EUR 1,750 (25% of the total) is due at registration, non-refundable after the enrollment deadline."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a non-refundable EUR 55 application fee, a RSD 5,500 registration fee, and an optional (non-mandatory) Biology or Chemistry preparatory course at EUR 600 per subject."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A mandatory Biology and Chemistry entrance exam, held online or on-site by prior arrangement. Applicants without an English-proficiency certificate also sit a university English-language test. There is no standardized-test-based alternative admission route."
+        },
+        {
+          "question": "When does the academic year start and what are the 2026/27 deadlines?",
+          "answer": "The confirmed 2026/27 cycle is the September intake term: application deadline 4 September 2026, entrance exam 8 September 2026, admitted-candidates list by 10 September, and registration with first-installment payment due by 17 September 2026."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "University dormitory places are generally reserved for Serbian students or those covered by a specific inter-state agreement. Most international students arrange private rental housing, with support from the Faculty's International Department and Erasmus Student Network volunteers."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — University of Novi Sad Faculty of Medicine listing",
+          "url": "https://search.wdoms.org/Home/SchoolDetail/F0000280",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, English-track start year (1993), ECFMG graduation-year eligibility and NAT accreditation status."
+        },
+        {
+          "label": "Faculty of Medicine Novi Sad — official 2026/2027 Admission (Studies in English) page",
+          "url": "https://www3.mf.uns.ac.rs/En/Admission.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026/27 tuition (EUR 7,000, first installment 25%/EUR 1,750), admissions steps, entrance-exam format, deadlines and required documents."
+        },
+        {
+          "label": "Faculty of Medicine Novi Sad — official history and Education pages",
+          "url": "https://www3.mf.uns.ac.rs/En/About_Eng.php",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for founding year, curriculum history (6-year restructure 1991, ECTS adoption 2005) and English-track start year."
+        },
+        {
+          "label": "Regional Medical Chamber of Vojvodina — Licensing page",
+          "url": "https://www.lkv.org.rs/PagesUserEng/License.aspx",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the generic Serbian medical-licensing mechanism, distinct from the degree's international recognition status."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "absent",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-novi-sad-faculty-of-medicine-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine — Integrated Studies (Studies in English)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 7000,
+            "officialTotalTuitionAmount": 42000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: EUR 7,000/year, which includes tuition fees, online library resources and electronic textbook access, per the Faculty's current Admission page. First installment (minimum EUR 1,750, i.e. 25% of the total) is due at registration and is non-refundable after the enrollment deadline. Total is calculated as the annual figure times 6 years -- not published as a lump sum. Separate fees: EUR 55 non-refundable application fee, RSD 5,500 registration fee, optional EUR 600-per-subject preparatory course. An older, stale cached Faculty page still shows a lower EUR 5,500 figure from the 2021/22 cycle; the current Admission page (7,000 EUR) is treated as authoritative."
+          },
+          "officialProgramUrl": "https://www3.mf.uns.ac.rs/En/Admission.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education (general or medical secondary school, or A-levels/12th grade for UK-system applicants)"
+            ],
+            "restrictions": [
+              "Admission requires the Faculty's own mandatory Biology and Chemistry entrance exam -- no standardized-test-based alternative route is offered",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "English proficiency must be shown via a certificate (e.g. IELTS, TOEFL) or, absent one, a university English-language test taken alongside the entrance exam; native English speakers or those schooled in English are exempt.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www3.mf.uns.ac.rs/En/Admission.php"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit an Application Form and secondary-school documents by email to the Faculty's Studies in English contact, pay the application fee, sit the Biology and Chemistry entrance exam (plus an English test if needed), and if admitted, confirm their seat with a first tuition installment before the registration deadline.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education, English-language proficiency (certificate or in-house test), and a passing result on the Faculty's own Biology and Chemistry entrance exam.",
+              "items": [
+                "Secondary-school completion certificate/diploma with transcripts, in original language plus Serbian translation",
+                "English-language proficiency certificate, or an in-house English test taken with the entrance exam if no certificate is held",
+                "Mandatory Biology and Chemistry entrance exam, held online or on-site by prior arrangement",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the Application Form and secondary-school certificates (original language plus Serbian translation) by email to medns.studiesinenglish@mf.uns.ac.rs",
+              "Pay the non-refundable EUR 55 (or RSD 6,600) application fee before the entrance exam",
+              "Sit the Biology and Chemistry entrance exam (plus English test if required) on the scheduled date",
+              "Check the admitted-candidates list, published within about two days of the exam",
+              "Confirm the seat by the registration deadline: pay the minimum EUR 1,750 first tuition installment and submit registration documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school completion certificate/diploma with transcripts (original language plus Serbian translation)",
+                "Secondary-school recognition decision from Serbia's Agency for Qualification Recognition, due by 31 October 2026"
+              ],
+              "application": [
+                "Birth certificate with notarized translation",
+                "English-language proficiency certificate, where available",
+                "Proof of application-fee payment",
+                "Health insurance policy (submitted with registration documents on arrival)"
+              ]
+            },
+            "deadlinesNote": "2026/27 September intake term: application deadline 4 September 2026; entrance exam 8 September 2026; admitted list by 10 September; registration and first-installment deadline 17 September 2026; recognition-decision documents due 31 October 2026.",
+            "visaConsiderations": [
+              "The Faculty issues a Certificate of Attendance and Invitation Letter for visa purposes on registration; confirm current Serbian student-visa requirements directly with the Faculty."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026/27 cohort is EUR 7,000 per year, including tuition, online library resources and e-textbook access, per the Faculty's current 2026/2027 Admission page. A non-refundable EUR 55 application fee, RSD 5,500 registration fee and optional EUR 600-per-subject preparatory course apply separately. A stale cached Faculty page shows an outdated EUR 5,500 figure from 2021/22; the current page is treated as authoritative.",
+          "teachingPhases": [
+            {
+              "phase": "6-year integrated Medicine programme",
+              "language": "English",
+              "details": "Full 6-year, 360-ECTS integrated first- and second-level studies programme, taught entirely in English, with clinical training run through the Clinical Center of Vojvodina; a detailed year-by-year pre-clinical/clinical breakdown was not published by the Faculty at a verifiable level of detail."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "publicField": "identity",
+      "claimText": "Faculty of Medicine founded 18 May 1960, opened 19 October 1960; curriculum extended to 6 years in 1991; English-medium studies began in 1993.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official history page",
+      "sourceUrl": "https://www3.mf.uns.ac.rs/En/About_Eng.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000280), currently operational; graduates (1963-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000280",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0000280",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "publicField": "recognition",
+      "claimText": "Study programme reviewed and given accredited status by Serbia's National Accreditation Body (NAT) as of 25 November 2020.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000280",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0000280",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "programmeSlug": "university-of-novi-sad-faculty-of-medicine-medicine",
+      "publicField": "academics",
+      "claimText": "6-year, 360-ECTS integrated first- and second-level Medicine studies programme, direct-entry from secondary education, taught in English, leading to the Doctor of Medicine (MD) title.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official Education page",
+      "sourceUrl": "https://www.mf.uns.ac.rs/En/Education_Eng.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "programmeSlug": "university-of-novi-sad-faculty-of-medicine-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires completed secondary education, English-language proficiency (certificate or in-house test), and a mandatory Biology and Chemistry entrance exam; no standardized-test-based alternative route.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official 2026/2027 Admission page",
+      "sourceUrl": "https://www3.mf.uns.ac.rs/En/Admission.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "programmeSlug": "university-of-novi-sad-faculty-of-medicine-medicine",
+      "publicField": "admissions",
+      "claimText": "Application by email with a defined document list; EUR 55 non-refundable application fee; entrance exam; admitted list published within days; registration confirmed with a minimum EUR 1,750 first installment. 15 Medicine seats for the 2026/27 September term.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official 2026/2027 Admission page",
+      "sourceUrl": "https://www3.mf.uns.ac.rs/En/Admission.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "programmeSlug": "university-of-novi-sad-faculty-of-medicine-medicine",
+      "publicField": "intake",
+      "claimText": "2026/27 September intake term: application deadline 4 September 2026, 13:00 CET; entrance exam 8 September 2026, 12:00-15:00 CET; admitted list by 10 September 2026; registration and first-installment deadline 17 September 2026, 13:00 CET.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official 2026/2027 Admission page",
+      "sourceUrl": "https://www3.mf.uns.ac.rs/En/Admission.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "programmeSlug": "university-of-novi-sad-faculty-of-medicine-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition 2026/27: EUR 7,000/year (includes tuition, online library resources and e-textbook access); first installment minimum EUR 1,750 (25% of total), non-refundable after enrollment deadline; EUR 55 non-refundable application fee; RSD 5,500 registration fee.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official 2026/2027 Admission page",
+      "sourceUrl": "https://www3.mf.uns.ac.rs/En/Admission.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "programmeSlug": "university-of-novi-sad-faculty-of-medicine-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Primary teaching hospital is the Clinical Center of Vojvodina, the Faculty's clinical and research base since the 1960s-70s.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Novi Sad — official history page",
+      "sourceUrl": "https://www3.mf.uns.ac.rs/En/About_Eng.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    }
+  ]
+}

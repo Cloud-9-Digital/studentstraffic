@@ -1,0 +1,38 @@
+{
+  "scope": "Aruba medical discovery — Xavier University School of Medicine Aruba",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The Government of Aruba reported in August 2024 that Xavier University School of Medicine Aruba offers a Doctor of Medicine programme to international students and described it as recognised and accredited by ACCM.",
+      "sourceUrl": "https://www.gobierno.aw/en/minister-of-education-meets-with-xavier-university-school-of-medicine-aruba",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Xavier's current programme documentation states that its MD programme is four years: basic sciences in Aruba during years one and two, followed by clinical sciences at affiliated US teaching hospitals in years three and four. The revised basic-sciences curriculum applies to Summer 2026 entrants.",
+      "sourceUrl": "https://studenthandbook.xusom.com/md-program-curriculum",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Xavier's 2026 tuition schedule lists basic-science tuition of $83,200 for Summer 2026 and subsequent entrants, clinical-science tuition of $104,500 for 76 weeks, and separately lists registration, administrative/facility, permit, insurance, housing, book and malpractice charges.",
+      "sourceUrl": "https://xusom.com/tuition/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Aruba's Department of Education states that medical programmes require Department recognition and that a charter or letter of accreditation is not a valid accreditation instrument under Aruba's legal framework.",
+      "sourceUrl": "https://www.ea.aw/pages/english/accreditation/",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Department of Education programme-recognition record, directly verifiable accreditor decision, or current official Aruba register entry was located for this programme. University claims alone are not sufficient for a formal recognition badge.",
+    "No complete 2026 entry-requirements page was verified; the university's rolling-intake statement does not establish academic, English-language or international-document requirements.",
+    "Clinical teaching is described generically as affiliated US hospitals; no current named affiliation list, placement capacity or eligibility terms were independently verified.",
+    "Scholarships, loans, housing availability and student-support eligibility need current policy-level verification."
+  ],
+  "nextAction": "Obtain current Aruba Department of Education recognition plus the accreditor's programme decision and a current admissions/clinical-affiliation pack before considering a payload."
+}

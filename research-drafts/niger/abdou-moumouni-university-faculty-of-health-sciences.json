@@ -1,0 +1,68 @@
+{
+  "countrySlug": "niger",
+  "universitySlug": "abdou-moumouni-university-faculty-of-health-sciences",
+  "schoolName": "Université Abdou Moumouni — Faculté des Sciences de la Santé",
+  "cityName": "Niamey",
+  "priority": "high",
+  "officialWebsite": "https://www.uam.edu.ne/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UAM's official enrolment page gives a Faculty of Health Sciences fee line (200,000 FCFA for years 1–6 and 400,000 FCFA for year 7), but it does not identify the award, specify whether these rates apply to international students, or supply a current medicine admissions route, deadline, language, programme curriculum, clinical placement plan or accommodation support. WDOMS records a public, currently operational French-language seven-year Docteur en Médecine programme, but directory information is not a substitute for a current university admissions and fee source. A primary-source medicine page and international terms are needed before writing public content.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UAM official enrolment page",
+        "url": "https://www.uam.edu.ne/inscription.php",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists FSS fees: 200,000 FCFA for first to sixth year and 400,000 FCFA for seventh year; general dossier selection occurs within each faculty. It does not distinguish international tuition or explain a medicine-specific route."
+      },
+      {
+        "label": "UAM Campus Niger enrolment portal",
+        "url": "https://uam.campusniger.com/",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Provides online registration/payment activity for UAM, but no current FSS medicine programme requirements or fee specification."
+      },
+      {
+        "label": "World Directory of Medical Schools — UAM FSS",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0000679",
+        "kind": "medical-directory",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists public, currently operational school; Docteur en Médecine; seven years; French language. It must not be used alone for current admissions, tuition or licensing claims."
+      },
+      {
+        "label": "UAM official FSS history item",
+        "url": "https://www.uam.edu.ne/article.php?id=32",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "A 2025 UAM item corroborates the Faculty of Health Sciences' role in Niger medical education and its association with CHU Lamordé; it does not document a current student clinical-placement arrangement."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université Abdou Moumouni — Faculté des Sciences de la Santé",
+    "type": "Public",
+    "programs": [
+      {
+        "officialTitle": "Docteur en Médecine",
+        "duration": "7 years",
+        "instructionLanguage": "French",
+        "feeStatus": "official FSS general rate found; international applicability and medicine mapping unconfirmed",
+        "publishable": false
+      }
+    ],
+    "missingForPublication": [
+      "medicine-specific current admissions criteria and application timeline",
+      "international-student eligibility and fee schedule",
+      "official current curriculum and clinical-training plan",
+      "programme-specific recognition evidence",
+      "international accommodation and support details"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public content drafted. The available FSS fee line cannot safely be presented as an international medical tuition quote."
+  }
+}

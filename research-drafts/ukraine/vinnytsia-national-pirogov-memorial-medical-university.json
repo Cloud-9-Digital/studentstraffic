@@ -1,0 +1,44 @@
+{
+  "scope": "Ukraine medical discovery — Vinnytsia National Pirogov Memorial Medical University",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Vinnytsia National Pirogov Memorial Medical University",
+    "countrySlug": "ukraine",
+    "programme": "Medicine",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "The official Study in Ukraine portal identifies the university as state-owned and lists English-medium Medicine as six years, with a published USD 27,100 total across the six listed years.",
+      "sourceUrl": "https://universities.studyinukraine.gov.ua/en/minedu/university/116/cost/",
+      "sourceType": "government-study-portal",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The same government portal describes international admission dates up to 1 November and up to 30 December.",
+      "sourceUrl": "https://universities.studyinukraine.gov.ua/uk/minedu/university/116/",
+      "sourceType": "government-study-portal",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The university's foreign-citizen faculty says it is entitled to train foreign citizens, including General Medicine, and describes five hostels, dining facilities and a central-campus student polyclinic.",
+      "sourceUrl": "https://foreign.vnmu.edu.ua/en/about-university/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The faculty's admission page retains a 2022/23 fee table for English Medicine and says medical examination and insurance are additional, but this is historical evidence only.",
+      "sourceUrl": "https://foreign.vnmu.edu.ua/en/admission-conditions-5/",
+      "sourceType": "official-university-historical",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The official programme fee page on the university domain is explicitly for 2022/23, while the government Study in Ukraine figures give no academic-year context. A current programme fee cannot be safely selected.",
+    "No current first-party foreign-Medicine admissions notice was found that aligns English instruction, entry requirements, documents, fee, class start and delivery mode for the 2026 cohort.",
+    "No independent current programme-accreditation/recognition record was established for the required recognition badges.",
+    "Because Ukraine's education system remains subject to war-related disruption, an international medical listing also requires institution-specific current clinical-delivery and continuity evidence; this was not located."
+  ],
+  "nextAction": "Obtain VNMU's 2026/27 international Medicine contract or fee notice and admissions rules, including English delivery and clinical-continuity arrangements, then verify current independent accreditation before packaging."
+}

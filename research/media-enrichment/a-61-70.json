@@ -1,0 +1,153 @@
+{
+  "batchId": "a-61-70",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 61-70; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "central-asian-international-medical-university",
+      "universityName": "Central Asian International Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "caimu.org.kg remains completely unreachable (connection failure on both http:// and https://, no response). Checked the Wayback Machine (archive.org/wayback/available) for this exact domain with and without a timestamp filter; it returns zero archived snapshots, so the archive.org fallback technique is not available for this institution. No press/media alternate domain was identified. Still-hold."
+    },
+    {
+      "universitySlug": "central-asian-medical-university",
+      "universityName": "Central Asian Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "camuf.uz is a client-side-rendered Nuxt.js single-page app: the server returns an identical empty HTML shell for every path, including guessed asset paths (e.g. /logo.png returns HTTP 200 with the SPA shell, not an image), so no logo/cover URL could be extracted from the static markup. Its Wayback Machine snapshot is the same JS-only shell. The one genuine static asset on the domain, /favicon.ico, was downloaded and inspected directly: it only contains 16x16 and 32x32 icon sizes, too low-resolution to serve as a verified institutional logo. Still-hold."
+    },
+    {
+      "universitySlug": "central-asian-university-medical-school",
+      "universityName": "Central Asian University Medical School",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed the first-pass finding: WDOMS records this school as renamed/absorbed into Akfa University Medical School post-2023. This is an unresolved rename/identity situation, not a missing-asset problem - any current official media would carry Akfa University branding rather than the historical \"Central Asian University\" name in this catalogue record. Needs an editorial decision (merge into the Akfa record, or keep as a distinct historical entry) before any logo or cover is sourced. No media proposed.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "central-university-of-europe",
+      "universityName": "Central University of Europe",
+      "missing": [
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://cue.edu.ge/wp-content/uploads/2024/10/logo-cue.png",
+        "sourceType": "official",
+        "rightsBasis": "Official logo served directly from the university's own WordPress media uploads.",
+        "proposedPublicId": "central-university-of-europe-logo"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Re-verified the first pass's already-sourced logo URL (still resolves 200). Checked the dedicated Tbilisi-campus subpage beyond the homepage for a cover candidate; it only surfaces interior classroom photos (e.g. F9A8048-1200x800.jpg), no exterior/building shot suitable as a campus-wide cover image, so cover stays on hold rather than using an interior room photo.. Remaining outstanding: cover."
+    },
+    {
+      "universitySlug": "chalmers-university-technology",
+      "universityName": "Chalmers University of Technology",
+      "missing": [
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.chalmers.se/_next/static/media/chalmers-emblem-white.11pif_jbe56ne.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official Chalmers emblem served by the university's active campus page.",
+        "proposedPublicId": "chalmers-university-technology-logo",
+        "appliedAt": "2026-07-25"
+      },
+      "status": "ready",
+      "reason": "Logo applied to the database on 2026-07-25. Cover still outstanding: the sourced URL (cms.www.chalmers.se/Media/hhajpjkf/johanneberg_i0a2179_1920x1080px.jpg) timed out / failed to fetch on three separate attempts at upload time despite resolving during research. Needs a retry or a fresh cover asset in a future pass."
+    },
+    {
+      "universitySlug": "charles-university",
+      "universityName": "Charles University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://cuni.cz/sablona/dist/img/UK-logo-horizontal-EN_hd.png",
+        "sourceType": "official",
+        "rightsBasis": "Official English horizontal logo served from Charles University's primary website.",
+        "proposedPublicId": "charles-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://cuni.cz/UKEN-1-version1-afoto2.png",
+        "sourceType": "official",
+        "rightsBasis": "Official Charles University homepage image; controlled integrator should visually verify final crop before upload.",
+        "proposedPublicId": "charles-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "chechen-state-university",
+      "universityName": "Chechen State University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): chesu.ru's own header renders its \"logo\" as plain CSS-styled text with no image at all (technique #4 territory - an inline/CSS-only logo). Found the university's actual seal/emblem instead as a standalone file used for the homepage's og:image banner. Cover remains on hold: the homepage's other photos are recent admissions-event shots with identifiable people in frame, not clean campus/building images, so none were substituted.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://chesu.ru/templates/chsu/img/chesu2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official seal/emblem image served directly from Chechen State University's own domain, used as the homepage's og:image.",
+        "proposedPublicId": "chechen-state-university-logo"
+      }
+    },
+    {
+      "universitySlug": "chelyabinsk-state-medical-university",
+      "universityName": "Chelyabinsk State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "The historical domain csmu.ru no longer resolves. Its likely successor domain, chelsma.ru, 301-redirects to susmu.su, whose homepage title is \"Южно-Уральский государственный медицинский университет\" (South Ural State Medical University), repeatedly referencing Chelyabinsk in its body text. This indicates Chelyabinsk State Medical University/Academy was renamed to South Ural State Medical University. Flagging as an unresolved rename/identity issue - the catalogue record needs a decision on whether it should be merged into or redirected to a South Ural State Medical University record before assigning media, rather than silently relabelling the renamed institution's assets under the old name. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "chirchik-branch-tsmu",
+      "universityName": "Chirchik Branch of Tashkent State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://tdtuchf.uz/static/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official seal served directly from the Chirchik branch's own domain header.",
+        "proposedPublicId": "chirchik-branch-tsmu-logo"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Downloaded and visually verified the logo the first pass had already flagged as a candidate: it is a genuine seal reading \"TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI ... CHIRCHIQ FILIALI\", confirming it is safe to use. While checking cover candidates, one homepage upload turned out on visual inspection to actually be an unrelated Russian university's (RNIMU Pirogov) logo mistakenly hosted on this domain - excluded. The only campus-building photo found is embedded inside a text-and-QR-code admissions poster rather than available as a clean standalone photo, so cover stays on hold.. Remaining outstanding: cover."
+    },
+    {
+      "universitySlug": "chita-state-medical-academy",
+      "universityName": "Chita State Medical Academy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://chitgma.ru/site/images/site/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official seal served directly from Chita State Medical Academy's own domain header.",
+        "proposedPublicId": "chita-state-medical-academy-logo"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Downloaded and visually verified both files: the logo is a genuine \"ЧГМА\" (ChSMA) seal, and the carousel photo is a clean, unobstructed exterior photo of the Academy's main building (with \"...медицинская академия\" visible on the building facade itself, not an added overlay). The carousel was not checked in the first pass, which only looked at the top-level English public page..",
+      "cover": {
+        "sourceUrl": "https://chitgma.ru/site/files/carousel_item/27/11b7e4528698e7e308d5f751daadcada.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official homepage carousel photo served directly from the Academy's own domain.",
+        "proposedPublicId": "chita-state-medical-academy-cover"
+      }
+    }
+  ]
+}

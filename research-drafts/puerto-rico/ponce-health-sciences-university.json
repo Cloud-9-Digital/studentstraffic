@@ -1,0 +1,19 @@
+{
+  "countrySlug": "puerto-rico",
+  "universitySlug": "ponce-health-sciences-university",
+  "schoolName": "Ponce Health Sciences University",
+  "cityName": "Ponce",
+  "priority": "medium",
+  "officialWebsite": "https://www.psm.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - PHSU's official catalogue documents a four-year MD and its academic progression requirements. An official 2024/25 MD educational budget publishes resident and non-resident tuition, fees and living-cost components, while the university portal exposes 2025/26 and 2026/27 fee links. Its admissions portal accepts applications and distinguishes visiting/international students, but a current MD-specific selection page, current cost document, language/immigration conditions and current clinical-site information were not fully verified. Hold pending those facts and an applicant-market eligibility review.",
+  "sourceBundle": { "sources": [
+    { "label": "PHSU 2023-2026 catalogue", "url": "https://www.psm.edu/wp-content/uploads/2023/09/Catalog-2023-2026-FINAL-8-23-2023.pdf", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists the Doctor of Medicine as a four-year programme and documents clerkship/elective progression requirements." },
+    { "label": "PHSU MD 2024/25 educational budget", "url": "https://www.psm.edu/wp-content/uploads/2024/07/EDUC_BUDGETS_MD_4_YRS_2425_Ponce_Final_xlsxL.pdf", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes 2024/25 resident/non-resident tuition, fees, living and other estimated costs; not used as a current quoted cost." },
+    { "label": "PHSU admissions portal", "url": "https://mycampus.psm.edu/ics/future_students/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Provides application access and links to 2025/26 and 2026/27 tuition/fees, financial-aid cost of attendance and visiting/international pathways." },
+    { "label": "PHSU student-services credentialing page", "url": "https://studentservices.psm.edu/", "kind": "official-clinical", "checkedAt": "2026-07-25", "notes": "States that documentation is required for clinical activities, clerkships, shadowing and rotations; it does not establish a current clinical-site list." }
+  ] },
+  "structuredFacts": { "name": "Ponce Health Sciences University", "type": "Private medical university", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years", "feeStatus": "Official 2024/25 budget available and current-year fee links surfaced, but a current MD budget needs direct capture", "publishable": false } ], "missingForPublication": [ "current MD 2026/27 tuition and cost-of-attendance document", "current MD-specific admissions requirements and dates", "foreign applicant, immigration and language requirements", "current clinical-site allocation/support evidence", "market-specific professional-registration review" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until current MD costs and applicant requirements are captured from their canonical pages." }
+}

@@ -1,0 +1,136 @@
+{
+  "batchId": "a-151-160",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 151-160; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "international-european-university",
+      "universityName": "International European University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "DB context confirms this is IEU in Bishkek, Kyrgyzstan (not Georgia). The domain ieukyrgyzstan.in fails DNS resolution entirely. The alternate ieukyrgyzstan.com resolves but is an MBBS-consultancy template site (relative unquoted image paths like 'IEU LOGO.png', and unrelated content referencing 'NSMCH' and 'Bihar University of Health Sciences') rather than IEU's own official presence, so it was not used. No Wikipedia article or Wayback snapshot of a genuine institutional domain could be found. Held pending a confirmed official IEU domain."
+    },
+    {
+      "universitySlug": "international-higher-school-of-medicine",
+      "universityName": "International Higher School of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Site is a lightweight Tilda build with almost no static campus photography in the homepage HTML (its only large image is a YouTube video thumbnail, not a real campus photo), so no cover candidate could be verified this pass. Logo resolved via the higher-resolution favicon technique; cover remains held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://static.tildacdn.one/tild3564-3864-4164-a364-326635373636/Favicon_Big.png",
+        "sourceType": "official",
+        "rightsBasis": "Official IHSM site (ism.edu.kg, built on Tilda), 192x192 favicon asset served from the site's own Tilda CDN storage bucket. Verified HTTP 200.",
+        "proposedPublicId": "international-higher-school-of-medicine-logo"
+      }
+    },
+    {
+      "universitySlug": "international-medical-institute",
+      "universityName": "International Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "DB context places this record in Bishkek, Kyrgyzstan, but Bishkek has several overlapping, similarly-named 'International Medical ...' institutions already tracked as separate catalogue records (International Medical University at imu.edu.kg, International Higher School of Medicine at ism.edu.kg, International School of Medicine under IUK at ism.iuk.kg), plus a distinct 'Bishkek International Medical Institute (BIMI)' at bimi.edu.kg, and a very low-quality, unofficial-looking Wix site (imiiusb1.wixsite.com) that self-identifies as 'International Medical Institute'. No source ties this exact catalogue record unambiguously to one specific real institution rather than a duplicate/near-duplicate of the others. Needs an identity decision before any media is assigned; no media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "international-medical-university",
+      "universityName": "International Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Resolved the identity question first: this catalogue record is International Medical University in Bishkek, Kyrgyzstan (imu.edu.kg) per the project's own prior research draft (research-drafts/kyrgyzstan/international-medical-university.json), not the Malaysian IMU. The site is a heavy JS/CMS build with almost no images in raw HTML img tags, so the logo and cover were recovered from the <head> apple-touch-icon and a homepage background-image carousel slide respectively, both hosted directly on the official domain..",
+      "logo": {
+        "sourceUrl": "https://imu.edu.kg/uploads/settings/17647883958124.png",
+        "sourceType": "official",
+        "rightsBasis": "Official IMU site (imu.edu.kg) apple-touch-icon asset declared in the page head. Verified HTTP 200.",
+        "proposedPublicId": "international-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://imu.edu.kg/uploads/banners/17677115758107.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official IMU site homepage carousel banner image (327KB JPEG). Verified HTTP 200.",
+        "proposedPublicId": "international-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "international-school-of-medicine",
+      "universityName": "International School of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): ism.iuk.kg itself still 403s directly and has no Wayback snapshot, but its parent site iuk.kg is reachable and hosts ISM's own logo file (linked directly to ism.iuk.kg) in its media library, confirmed via the anchor context around the image. No campus-specific cover photo could be confidently isolated (the parent homepage's other large photos are not clearly attributable to the ISM campus specifically), so cover remains held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://iuk.kg/wp-content/uploads/2022/01/ISM-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Hosted directly on the parent International University of Kyrgyzstan's own domain (iuk.kg, not the 403'ing ism.iuk.kg subdomain); the image is explicitly captioned alt=\"ISM logo\" and is directly hyperlinked to https://ism.iuk.kg/. Verified HTTP 200.",
+        "proposedPublicId": "international-school-of-medicine-logo"
+      }
+    },
+    {
+      "universitySlug": "international-university-science-medicine",
+      "universityName": "International University of Science and Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "DB context places this record in Bishkek, Kyrgyzstan, but no institution trading under the name 'International University of Science and Medicine' could be located there (or anywhere) via web search, Wikipedia, or domain probing in either research pass. Bishkek already has a dense cluster of similarly-themed 'International ... Medicine' records in this catalogue (IMU, IHSM, ISM, IMI); this record may be a duplicate or mis-transcribed variant of one of those rather than a distinct institution. Needs an identity decision before any media is assigned; no media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "international-university-of-tbilisi",
+      "universityName": "International University of Tbilisi",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No institution operating under the exact name 'International University of Tbilisi' could be located via Wikipedia, web search, or domain probing in this pass. Tbilisi has several similarly-named but distinct institutions already in this catalogue or in Wikipedia (International Black Sea University, International Teaching University of Georgia, European University Georgia), and this record's name does not cleanly match any single one of them. Needs an identity decision (is this a duplicate/alias of one of the above, a defunct entity, or a mis-transcription?) before any media is assigned; no media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "vnu-international-university",
+      "universityName": "VNU International University",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed via the project's own prior catalogue payload that this is IU-VNU-HCM (hcmiu.edu.vn), not a generic VNU-parent asset or an unrelated Vietnamese university. A logo path (hcmiu.edu.vn/wp-content/uploads/2020/01/logo.png) was recovered via a Wayback snapshot and re-verified live (HTTP 200) during research, but at upload time the fetch returned a suspiciously small body (177 bytes) -- the path now serves a broken/redirect stub rather than the actual image. Not applied. Needs a fresh logo asset in a future pass."
+    },
+    {
+      "universitySlug": "iowa-state-university",
+      "universityName": "Iowa State University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo remains held: the Wikipedia infobox seal (Iowa_State_University_seal.svg) is hosted only as non-free/fair-use on English Wikipedia (wikipedia/en/ namespace), not Commons, and Iowa State's own brand portal still requires a Net-ID plus a written trademark-licensing decision for external reuse, per the original hold reason. Cover resolved via a genuinely free-licensed Commons campus photo instead.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Campus_of_Iowa_State_University_83.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Dirk Hansen / Flickr), CC-BY-2.0. Depicts the Campanile and lawn on campus. Verified HTTP 200.",
+        "proposedPublicId": "iowa-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "irkutsk-state-medical-university",
+      "universityName": "Irkutsk State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No dedicated English or Russian Wikipedia article exists for this institution (search returns only passing mentions in other articles), so no Commons-licensed logo or campus photo is available via that route. The official domain ismu.baikal.ru has zero Wayback Machine snapshots at all (empty archived_snapshots), so the archive.org fallback is unavailable too. Direct connection to the live domain also failed. Held; no new technique in this pass could surface an asset."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "Ukraine medical discovery — Bogomolets National Medical University",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Bogomolets National Medical University",
+    "countrySlug": "ukraine",
+    "programme": "Medicine",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "NMU's 2026 foreign-citizen admission notice sets Medicine at six years, says teaching is in Ukrainian or English, and permits face-to-face and/or remote admission and study.",
+      "sourceUrl": "https://nmu.ua/en/zagalni-vidomosti/fakultety/fakultet-pidgotovky-inozemnyh-gromadyan/vstup-inozemnyh-gromadyan/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The same NMU notice gives 19 July–31 October 2026 as its foreign first-course application and enrolment period.",
+      "sourceUrl": "https://nmu.ua/en/zagalni-vidomosti/fakultety/fakultet-pidgotovky-inozemnyh-gromadyan/vstup-inozemnyh-gromadyan/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Ukraine's official Study in Ukraine portal lists NMU as state-owned and lists English-medium Medicine at USD 3,500 for first year.",
+      "sourceUrl": "https://universities.studyinukraine.gov.ua/uk/minedu/university/130/cost/",
+      "sourceType": "government-study-portal",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Ukraine's Ministry of Education states that foreign applicants use the Unified State System for Foreigners' Admission and that universities determine autumn and winter international intakes.",
+      "sourceUrl": "https://mon.gov.ua/news/v-ukrainskykh-zvo-navchaietsia-ponad-21-tysiacha-inozemnykh-studentiv",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The official 2026 admission notice permits face-to-face and/or remote study, but does not identify the delivery mode, clinical-practice arrangements or contingency terms for the international English Medicine cohort.",
+    "The available official fee portal does not state the academic year or mandatory charges for its USD 3,500 English-Medicine figure; it cannot be treated as a current fee without confirmation.",
+    "No independent current programme-accreditation/recognition record sufficient for the required recognition badges was established in this batch.",
+    "Ukraine's Ministry reports continuing war-related higher-education infrastructure damage and disruption. A programme page needs institution-specific safety and continuity evidence rather than a generic country assurance."
+  ],
+  "nextAction": "Obtain a 2026/27 NMU offer/fee notice that fixes the English cohort's fee, location/delivery mode, clinical training and continuity arrangements, plus current independent recognition evidence."
+}

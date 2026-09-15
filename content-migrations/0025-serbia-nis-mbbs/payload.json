@@ -1,0 +1,390 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Nis Faculty of Medicine maps its Integrated Academic Studies of Medicine in English to this category: a direct-entry, single-cycle six-year programme leading to the Doctor of Medicine (MD) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "serbia",
+      "slug": "university-of-nis-faculty-of-medicine",
+      "name": "University of Nis Faculty of Medicine",
+      "city": "Nis",
+      "type": "Public",
+      "establishedYear": 1960,
+      "officialWebsite": "https://www.medfak.ni.ac.rs/index.php/en/",
+      "mediaAttribution": {},
+      "summary": "University of Nis Faculty of Medicine has taught medicine since 1960 and runs a direct-entry, six-year English-medium Integrated Academic Studies of Medicine programme, listed in the WHO World Directory of Medical Schools with ECFMG eligibility from 1963 onward. Its accreditor, Serbia's National Accreditation Body, is itself recognized by the World Federation for Medical Education, with accreditation most recently renewed in late 2024.",
+      "campusLifestyle": "The English-track Medicine programme enrolls up to 120 self-financing international students per year, alongside smaller English-track cohorts in Dental Medicine and Nursing. Teaching combines lectures of up to 80 students with practical groups of 5-10, using a four-level clinical-competence framework that tracks students from theoretical knowledge through to routine performance of clinical skills.",
+      "cityProfile": "Nis is Serbia's third-largest city and a regional hub in the country's south. The Faculty sits directly adjacent to Clinical Center Nis, the second-largest health institution in Serbia, which reopened in a new facility in December 2017 and serves roughly 3 million people across the wider region.",
+      "practicalExposure": "The six-year, 360-ECTS curriculum totals 6,030 teaching hours: Years 1-2 cover foundational sciences (anatomy, physiology, biochemistry, immunology, microbiology, medical physics), Year 3 adds pathology, pathophysiology, pharmacology and introductory clinical subjects, and Years 4-6 cover advanced clinical disciplines including internal medicine, surgery, pediatrics, obstetrics/gynecology, psychiatry, neurology, radiology and infectious diseases. Students complete 510 hours of summer clinical practice after Years 3-5, plus a final semester combining 300 hours of clinical internship and a graduation thesis. Clinical training runs at the adjacent Clinical Center Nis and Clinic for Dental Medicine. Graduates receive the Doctor of Medicine (MD) qualification aligned with Serbia's national List of Titles.",
+      "hostelOverview": "No verified official university accommodation programme for international Medicine-in-English students was found. Applicants should plan to arrange private rental housing independently and confirm current options directly with the Faculty's admissions office (medni.eng@gmail.com) ahead of enrollment.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published for international students. Food costs should be planned as part of an independent living-cost budget alongside private accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. International applicants can direct queries to the Faculty's dedicated English-programme admissions contact for day-to-day support.",
+      "studentSupport": "International admissions run through a dedicated English-programme contact (medni.eng@gmail.com) rather than a general international office. Academic support during the programme includes small practical-group teaching (5-10 students) and a structured, competence-tiered approach to clinical-skills training.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001783), currently operational, with ECFMG-certification eligibility for graduates from 1963 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "Institutional and study-programme accreditation from Serbia's National Accreditation Body (NAT), itself recognized by the World Federation for Medical Education, most recently renewed in late 2024.",
+        "Clinical training at the adjacent Clinical Center Nis, the second-largest health institution in Serbia, serving roughly 3 million people across the region.",
+        "A transparent, exam-score-ranked admissions process with a clearly published 2026/27 tuition table and seat count.",
+        "A detailed six-year curriculum with defined professional-practice hours, including a 300-hour final-semester clinical internship."
+      ],
+      "thingsToConsider": [
+        "Serbia is not an EU member state, so this degree does not carry the automatic EU-wide recognition that an EU-member country's medical degree carries; graduates should confirm their target country's own recognition or nostrification process.",
+        "The Faculty's own admissions page lists two different application-related fees (EUR 50 and EUR 100) without reconciling them -- confirm the exact current fee directly with the Faculty before applying.",
+        "No verified official university accommodation programme for international students was found; budget for independent private-rental housing.",
+        "No confirmed scholarship specifically for this self-financing English-medium Medicine track was found; general Serbian government scholarships exist but their applicability to this programme is unverified.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a 3-hour Biology and Chemistry entrance exam, with no standardized-test-based alternative admission route.",
+        "Applicants comfortable arranging their own private housing rather than relying on university-provided dormitories.",
+        "Families prioritizing a lower-cost medical degree with strong ECFMG and Canadian-recognition backing, while accepting that Serbia's non-EU status means no automatic EU-wide licence recognition."
+      ],
+      "industryPartners": [
+        "Clinical Center Nis",
+        "Clinic for Dental Medicine, Nis"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0001783), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1963-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Serbia National Accreditation Body (NAT), recognized by the World Federation for Medical Education (WFME) — institutional accreditation 14 November 2024, study-programme accreditation 24 December 2024"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — University of Nis Faculty of Medicine listing", "url": "https://search.wdoms.org/Home/SchoolDetail/F0001783" },
+        { "label": "Faculty of Medicine Nis — official Accreditation page", "url": "https://www.medfak.ni.ac.rs/index.php/en/about-faculty/accreditation" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is an Integrated Academic Studies programme -- admission follows directly from gymnasium, or a 4-year secondary medical or veterinary school, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the academic title Doctor of Medicine (MD), aligned with Serbia's national List of Titles under the National Council for Higher Education."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (360 ECTS credits, 6,030 teaching hours): two years of foundational sciences, a third year adding introductory clinical subjects, and three years of advanced clinical disciplines, plus 510 hours of summer clinical practice and a final-semester 300-hour clinical internship."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 6,000 per year (EUR 3,000 per semester) for the 2026/27 cohort, confirmed on the Faculty's official Fees and Admissions pages; a EUR 50 application fee also applies (the Admissions page separately lists a EUR 100 fee at registration that has not been reconciled with the EUR 50 figure)."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A 3-hour written exam in Biology and Chemistry, in English, with a minimum passing score of 21 out of 60 points. There is no standardized-test-based alternative admission route."
+        },
+        {
+          "question": "Is this degree automatically recognized across the EU?",
+          "answer": "No. Serbia is not an EU member state, so this degree does not carry the automatic EU-wide recognition that an EU-member country's medical degree carries. It is, however, WHO/FAIMER-listed and ECFMG-eligible for US pathways, and noted as acceptable to Canadian medical regulators."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "The academic year begins 1 October. Applications for the English-medium Medicine track have typically opened in June, with the entrance exam in early July and enrollment by mid-July; confirm exact upcoming-cycle dates directly with the Faculty (medni.eng@gmail.com) closer to the application period."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "No verified official university accommodation programme for international Medicine-in-English students was found. Applicants should plan to arrange private rental housing and confirm current options directly with the Faculty."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — University of Nis Faculty of Medicine listing",
+          "url": "https://search.wdoms.org/Home/SchoolDetail/F0001783",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, ECFMG graduation-year eligibility and NAT/WFME accreditation status."
+        },
+        {
+          "label": "Faculty of Medicine Nis — Integrated Academic Studies of Medicine in English programme page",
+          "url": "https://www.medfak.ni.ac.rs/index.php/en/studies-in-english-en/ias-medicine",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, curriculum structure, teaching hours and named clinical partner."
+        },
+        {
+          "label": "Faculty of Medicine Nis — official Admissions and Fees pages",
+          "url": "https://www.medfak.ni.ac.rs/index.php/en/admissions-en",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026/27 tuition, entrance-exam format, admissions steps and required documents."
+        },
+        {
+          "label": "Faculty of Medicine Nis — official Accreditation page",
+          "url": "https://www.medfak.ni.ac.rs/index.php/en/about-faculty/accreditation",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for institutional and study-programme accreditation certificate dates from Serbia's National Accreditation Body."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "absent",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-nis-faculty-of-medicine-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Integrated Academic Studies of Medicine in English",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 36000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: EUR 6,000/year (EUR 3,000/semester) per the Faculty's Fees page, confirmed identically in the 2026/27 enrollment table (120 self-financing English-track seats, no state-funded seats). Total is calculated as the annual figure times 6 years -- not published as a lump sum. A EUR 50 application fee applies; the Admissions page separately lists a EUR 100 fee at the registration stage, unreconciled with the EUR 50 figure. No refund policy was published."
+          },
+          "officialProgramUrl": "https://www.medfak.ni.ac.rs/index.php/en/studies-in-english-en/ias-medicine",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed gymnasium, a 4-year secondary school of medical orientation, or a 4-year secondary veterinary school"
+            ],
+            "restrictions": [
+              "Admission is ranked solely on the Faculty's own 3-hour Biology and Chemistry entrance exam (minimum 21/60 to pass) -- no standardized-test-based alternative route is offered",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "English-language competence certification is required unless the applicant is from a native-English-speaking country.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/admissions-en"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit documents by email to the Faculty's dedicated English-programme contact, pay the application fee, sit a 3-hour Biology and Chemistry entrance exam, and are ranked on their exam score; accepted candidates then complete registration with further documents and first-semester tuition payment.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education (gymnasium, or a 4-year medical/veterinary secondary school), English-language competence, and a passing score on the Faculty's own entrance exam.",
+              "items": [
+                "High-school completion certificate/diploma with full transcripts, nostrified through Serbia's Ministry of Education process",
+                "English-language competence certificate (waived for applicants from native-English-speaking countries)",
+                "3-hour written entrance exam in Biology and Chemistry, minimum 21/60 points to pass",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the Application form and gather required documents (birth certificate with certified Serbian translation, secondary-school transcripts and diploma with notarized copies, passport copy, English-competence certificate)",
+              "Submit documents by email to the Faculty's English-programme admissions contact and pay the EUR 50 application fee",
+              "Sit the 3-hour Biology and Chemistry entrance exam on the scheduled date",
+              "Check the preliminary and final ranking lists; use the appeals window if needed",
+              "If accepted, complete registration (registration form, photographs, Index and ŠV Obrazac forms, first-semester tuition payment, health insurance, student visa)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original secondary-school transcripts (all years) and High School Diploma, each with notarized copies for the Ministry of Education nostrification process and the Faculty",
+                "Ministry of Education certificate confirming nostrification is underway"
+              ],
+              "application": [
+                "Birth certificate with notarized Serbian translation",
+                "Passport photocopy (photo/data page)",
+                "English-language competence certificate (unless exempt)",
+                "Proof of application-fee payment"
+              ]
+            },
+            "deadlinesNote": "Academic year begins 1 October. The 2026/27 first session (application window June 2026, exam 3 July 2026, enrollment by mid-July) has concluded; a second session was not confirmed. Contact the Faculty for the next cycle's dates.",
+            "visaConsiderations": [
+              "A student visa issued by Serbia's Ministry of Interior Affairs is required for registration; confirm current visa requirements directly with the Faculty given the changing admissions calendar."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026/27 cohort is EUR 6,000 per year (EUR 3,000 per semester), per the Faculty's official Fees and Admissions pages. A EUR 50 application fee applies; a separate, unreconciled EUR 100 fee also appears at the registration stage on the same Admissions page. No refund policy was published.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3: foundational and basic medical sciences",
+              "language": "English",
+              "details": "Anatomy, physiology, biochemistry, immunology, microbiology and medical physics in Years 1-2, adding pathology, pathophysiology, pharmacology and introductory clinical subjects in Year 3, with 510 hours of summer clinical practice after Years 3-5."
+            },
+            {
+              "phase": "Years 4-6: advanced clinical disciplines",
+              "language": "English",
+              "details": "Internal medicine, surgery, pediatrics, obstetrics/gynecology, psychiatry, neurology, radiology and infectious diseases, concluding with a final semester combining a 300-hour clinical internship and graduation thesis."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "publicField": "identity",
+      "claimText": "Faculty of Medicine instruction started 1960 (WDOMS record); the University of Nis became an independent, degree-granting university in 1965.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0001783",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0001783",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001783), currently operational; graduates (1963-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0001783",
+      "sourceUrl": "https://search.wdoms.org/Home/SchoolDetail/F0001783",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "publicField": "recognition",
+      "claimText": "Institutional accreditation issued by Serbia's National Accreditation Body (NAT) on 14 November 2024; study-programme accreditation (covering integrated academic studies including Medicine) issued 24 December 2024. NAT is recognized by the World Federation for Medical Education.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — official Accreditation page and certificate PDFs",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/about-faculty/accreditation",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "programmeSlug": "university-of-nis-faculty-of-medicine-medicine",
+      "publicField": "academics",
+      "claimText": "6-year, 360-ECTS, 6,030-teaching-hour Integrated Academic Studies of Medicine programme, direct-entry from secondary education, taught in English, leading to the Doctor of Medicine (MD) title.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — IAS Medicine in English programme page",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/studies-in-english-en/ias-medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "programmeSlug": "university-of-nis-faculty-of-medicine-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission via a 3-hour written Biology and Chemistry entrance exam, minimum 21/60 points to pass; open to gymnasium graduates or 4-year secondary medical/veterinary school graduates; no standardized-test-based alternative route.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — Admissions and Entrance Exam pages",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/admissions-en",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "programmeSlug": "university-of-nis-faculty-of-medicine-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via email to the Faculty's English-programme contact with a defined document list; EUR 50 application fee; registration requires further documents including a first-semester tuition payment.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — official Admissions page",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/admissions-en",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "programmeSlug": "university-of-nis-faculty-of-medicine-medicine",
+      "publicField": "intake",
+      "claimText": "Academic year begins 1 October. The 2026/27 first-session cycle ran: application window mid-to-late June 2026, entrance exam 3 July 2026, final ranking list 7 July 2026, enrollment 8-16 July 2026. A possible second admission session for 2026/27 was not confirmed on official pages.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — Dates and Deadlines page",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/dates-deadlines",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "programmeSlug": "university-of-nis-faculty-of-medicine-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition 2026/27: EUR 6,000/year (EUR 3,000/semester) for Medicine in English, 120 self-financing seats, no state-funded seats; EUR 50 application fee; a separate, unreconciled EUR 100 fee appears at the registration stage.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — official Fees page and 2026/27 enrollment table",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/fees-en",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "programmeSlug": "university-of-nis-faculty-of-medicine-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training runs at the adjacent Clinical Center Nis (second-largest health institution in Serbia, new facility opened December 2017, serving roughly 3 million people) and the adjacent Clinic for Dental Medicine.",
+      "status": "verified",
+      "sourceLabel": "Faculty of Medicine Nis — IAS Medicine in English programme page",
+      "sourceUrl": "https://www.medfak.ni.ac.rs/index.php/en/studies-in-english-en",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    }
+  ]
+}

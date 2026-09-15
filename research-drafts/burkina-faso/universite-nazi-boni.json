@@ -1,0 +1,18 @@
+{
+  "countrySlug": "burkina-faso",
+  "universitySlug": "universite-nazi-boni",
+  "schoolName": "Université Nazi BONI",
+  "cityName": "Bobo-Dioulasso",
+  "priority": "medium",
+  "officialWebsite": "https://www.univ-bobo.gov.bf/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — the official university site identifies Université Nazi BONI as a public institution and identifies INSSA plus health-sciences offerings. It does not provide a current international-facing medicine programme page with title, duration, language, admissions, fees, deadlines, accommodation or recognition. A 2023 organisation decision for INSSA cannot substitute for current programme and commercial-admissions evidence.",
+  "sourceBundle": { "sources": [
+    { "label": "UNB official Excellence 2030 page", "url": "https://www.univ-bobo.gov.bf/universite/programme-excellence", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "States that the former Université Polytechnique de Bobo-Dioulasso was renamed Université Nazi BONI in 2017, is public, and offers health sciences; lists INSSA among its constituent institutions." },
+    { "label": "UNB INSSA organisation decision", "url": "https://www.univ-bobo.gov.bf/media/documents/D%C3%A9cision_2023_69_org_et_fonct_INSSA.pdf", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Official institutional document found, but it did not provide a current international medical-programme and fee/admissions record." },
+    { "label": "MESRI 2023/2024 higher-education statistical directory", "url": "https://www.mesrsi.gov.bf/fileadmin/user_upload/storage/images/ANNUAIRE_STATISTIQUE_DE_L_ENSEIGNEMENT_SUPERIEUR_2023_2024.pdf", "kind": "government-directory", "checkedAt": "2026-07-25", "notes": "Lists Université Nazi BONI among public institutions and records UNB institutional statistics." }
+  ] },
+  "structuredFacts": { "name": "Université Nazi BONI", "type": "Public university", "programs": [], "missingForPublication": [ "current official medical-programme title, award, duration and campus", "language of instruction and eligibility for international applicants", "current tuition and mandatory costs", "current application route, intake and deadline", "clinical training, accommodation/support and accreditation/recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: the evidence confirms institutional health-science activity, not a publishable medical programme record." }
+}

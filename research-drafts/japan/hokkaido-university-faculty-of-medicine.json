@@ -1,0 +1,36 @@
+{
+  "scope": "Japan medical discovery — Hokkaido University Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Hokkaido University's School of Medicine describes a six-year undergraduate programme divided into liberal education, basic medicine, clinical medicine and clinical clerkship courses.",
+      "sourceUrl": "https://www.med.hokudai.ac.jp/en/sch-med/course.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Hokkaido University's clinical-clerkship guidance states that fourth-year students begin clinical training at Hokkaido University Hospital, fifth-year students undertake six four-week core clerkships, and sixth-year students complete three four-week elective attachments.",
+      "sourceUrl": "https://www.med.hokudai.ac.jp/en/sch-med/course.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "As of 1 April 2026, Hokkaido University's international-student handbook lists an undergraduate examination fee of JPY 17,000, entrance fee of JPY 282,000 and annual tuition of JPY 535,800, with partial or full fee waivers for eligible self-supported regular students.",
+      "sourceUrl": "https://intl-student-handbook.oia.hokudai.ac.jp/en/campus_life-en/tuition",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Hokkaido University's Medicine admissions policy says privately financed international applicants are assessed through an external English test, Japanese-language testing, an essay and an interview.",
+      "sourceUrl": "https://www.med.hokudai.ac.jp/sch-med/philosophy.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The current official undergraduate entry-admissions evidence was not assembled in sufficient detail for all required payload fields.",
+    "Recognition and student-support evidence remains incomplete for publication, and the medicine teaching language needs an explicit current primary-source confirmation."
+  ],
+  "nextAction": "Collect the current Medicine-specific undergraduate admission guidance plus explicit teaching-language, recognition and student-support evidence, then complete the field-level review before publishing."
+}

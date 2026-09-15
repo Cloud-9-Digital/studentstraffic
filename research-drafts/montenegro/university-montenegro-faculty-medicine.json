@@ -1,0 +1,43 @@
+{
+  "scope": "Montenegro medical discovery — University of Montenegro Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "University of Montenegro's 2026/27 programme catalogue identifies Medicine as a six-year, 12-semester integrated programme carrying 360 ECTS and leading to the professional title doctor of medicine.",
+      "sourceUrl": "https://upis.ucg.ac.me/skladiste/med_1.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The 2026/27 catalogue states that Medicine applicants must have completed grammar school, medical school or Medresa, take chemistry and biology entrance examinations, and compete for 40 places.",
+      "sourceUrl": "https://upis.ucg.ac.me/skladiste/med_1.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UCG says clinical exercises take place in hospitals, clinics and health centres that serve as the Faculty's teaching and research bases; the catalogue does not name the bases.",
+      "sourceUrl": "https://upis.ucg.ac.me/skladiste/med_1.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UCG accepts foreign-student applications for Medicine. Its published foreign-student instructions require secondary-school records including biology and chemistry, Montenegrin-language proficiency and recognition of school credentials; it explicitly states that the Faculty does not offer programmes in English.",
+      "sourceUrl": "https://ucg.ac.me/objava/blog/616758/objava/193479-informacije-za-strane-studente-koji-se-prijavljuju-na-medicinski-fakultet-univerziteta-crne-gore-upis-stranih-studenata",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Montenegro's Ministry of Health has a rulebook governing the issuance, renewal and withdrawal of medical-doctor licences for people educated at a medical faculty who directly perform health activities in Montenegro, including eligible foreign residents.",
+      "sourceUrl": "https://www.gov.me/cyr/clanak/pravilnik-o-postupku-izdavanja-obnavljanja-odnosno-oduzimanja-licence-za-rad-doktora-medicine",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current 2026/27 tuition and mandatory-charge schedule for domestic or foreign Medicine students was located.",
+    "The current catalogue names clinical settings generically but does not identify current partner institutions, capacity or placement terms.",
+    "Accommodation, scholarships/loans, detailed student-support arrangements and a direct programme accreditation record were not verified from current authoritative sources."
+  ],
+  "nextAction": "Obtain UCG's current Medicine fee notice and direct confirmation of named teaching bases, accommodation/funding and recognition evidence before considering a payload."
+}

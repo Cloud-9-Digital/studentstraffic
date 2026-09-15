@@ -1,0 +1,63 @@
+{
+  "appliedAt": "2026-07-27T04:11:25.446Z",
+  "uploads": {
+    "attempted": 8,
+    "succeeded": 8,
+    "failed": 0
+  },
+  "database": {
+    "updated": 8,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "aalto-university",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "budapest-university-technology-economics",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "crimea-federal-university",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "delft-university-technology",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "medical-university-of-warsaw",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "rutgers-university",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "technical-university-of-denmark",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "universidad-catolica-del-uruguay",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

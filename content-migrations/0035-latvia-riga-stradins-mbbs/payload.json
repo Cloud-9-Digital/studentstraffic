@@ -1,0 +1,432 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Riga Stradins University maps its English-medium Medicine programme to this category: a direct-entry, single-cycle six-year programme leading to the Medical Doctor (MD) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "latvia",
+      "slug": "riga-stradins-university",
+      "name": "Riga Stradins University",
+      "city": "Riga",
+      "type": "Public",
+      "establishedYear": 1950,
+      "officialWebsite": "https://www.rsu.lv/en",
+      "mediaAttribution": {},
+      "summary": "Riga Stradins University traces to the Riga Medical Institute, founded in 1950, and today runs one of the Baltic region's largest English-medium Medicine programmes, with roughly 620 international places across two annual intakes. Graduates receive the Latvian Medical Doctor qualification, carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+      "campusLifestyle": "RSU offers roughly 620 international Medicine places a year (380 for the September intake, 240 for February), making it one of the larger English-medium medical programmes in the Baltic region. Students train at the Medical Education Technology Centre (METC), which RSU describes as the only simulation centre in Latvia and the largest in the Baltics.",
+      "cityProfile": "Riga is Latvia's capital. RSU operates three student hostels across the city -- Dzirciems (beside the main campus), Agenskalns, and Mezciems (near Riga East University Hospital) -- with priority given to first-year students.",
+      "practicalExposure": "The six-year, 360-ECTS Medicine programme runs basic sciences in Years 1-2, preclinical subjects (pathology, radiology, pharmacology, general surgery) in Year 3, and clinical training mainly in real hospital settings across Years 4-5, with hospital-based classes beginning as early as the fourth semester. Year 6 comprises three placement rotations (internal diseases, invasive medicine, and a free-choice elective), a defended research paper, and a 15-ECTS national State Examination. Clinical training runs across Pauls Stradins Clinical University Hospital, the Children's Clinical University Hospital, Riga East University Hospital, and the Hospital of Traumatology and Orthopaedics. Graduates receive the Medical Doctor (MD) qualification, equivalent to a Master's degree (EQF Level 7), with direct access to residency or further RSU postgraduate study.",
+      "hostelOverview": "RSU operates three student hostels in Riga -- Dzirciems (next to the main campus), Agenskalns, and Mezciems (near Riga East University Hospital) -- with priority given to first-year students. Dzirciems rates run roughly EUR 310-525 per month depending on room type and occupancy, while Mezciems runs lower, roughly EUR 85-310 per month; all rates include heating, electricity, water and WiFi. A first month's rent plus a one-month refundable security deposit are due before move-in.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. RSU's hostels include on-site amenities such as lockable bike storage and staffed booking systems.",
+      "studentSupport": "RSU's admissions team communicates via the eA Portal and admissions@rsu.lv, and covers up to EUR 50 of document-legalisation costs for non-Hague-exempt applicants. An RSU Students-Ambassadors Scholarship Programme has offered promotional-work-linked cash awards to eligible Medicine and Dentistry students, though its current-cycle status was not independently reconfirmed.",
+      "whyChoose": [
+        "One of the larger English-medium Medicine cohorts in the Baltic region, with roughly 620 international places a year across two intakes (September and February).",
+        "Latvia's medical-accreditation body (AHPGS) is directly confirmed on the World Federation for Medical Education's own recognized-agencies list, valid through October 2033.",
+        "Graduates receive the Latvian Medical Doctor qualification, carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA; the current Medicine programme accreditation runs to 28 May 2030.",
+        "Admission is document-based (grades, recommendation and motivation letters, plus an interview for non-EU/EEA applicants) rather than a written entrance exam.",
+        "A dedicated simulation centre (METC), described by RSU as the largest of its kind in the Baltics, supplements hospital-based clinical training."
+      ],
+      "thingsToConsider": [
+        "Total cost is substantial: EUR 13,500 per year (flat across all six years, EUR 81,000 total), plus a one-time EUR 1,800 registration administration fee specific to Medicine and Dentistry applicants, on top of the EUR 100 application fee.",
+        "The September 2026 intake's application windows have already closed for all applicant categories as of this record's research date; the February 2027 intake's windows had not yet opened.",
+        "Most tuition-fee discounts (Academic Excellence, Family Member, Alumni) apply only from the third year onward or to specific circumstances, not to incoming first-year students generally.",
+        "A programme-page capacity figure of 374 places conflicts with RSU's broader admissions communications citing 620 total international Medicine places; the larger figure is treated as authoritative here, but applicants should confirm current-cycle capacity directly with RSU.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students who prefer a document-and-interview admissions process over a written entrance exam, with a structured bonus-points system for relevant prior qualifications.",
+        "Applicants targeting the university's larger September intake, and comfortable planning around Latvia's specific visa-category application windows.",
+        "Families able to fund the EUR 1,800 Medicine/Dentistry-specific registration fee alongside standard tuition and application costs."
+      ],
+      "industryPartners": [
+        "Pauls Stradins Clinical University Hospital",
+        "Children's Clinical University Hospital",
+        "Riga East University Hospital",
+        "Hospital of Traumatology and Orthopaedics"
+      ],
+      "recognitionBadges": [
+        "World Federation for Medical Education (WFME) — Latvia's medical-accreditation body (AHPGS) recognized through October 2033",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Latvian Medical Doctor qualification across the EU/EEA, in effect for Latvia since 1 May 2004",
+        "Riga Stradins University — Medicine programme accredited by Latvia's Ministry of Education and Science through 28 May 2030"
+      ],
+      "recognitionLinks": [
+        { "label": "WFME — Agencies with Recognition Status (Latvia/AHPGS listing)", "url": "https://wfme.org/recognition/bme-recognition/accrediting-agencies-status-bme/" },
+        { "label": "Riga Stradins University — official Medicine programme page", "url": "https://www.rsu.lv/en/study-programme/medicine" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is a second-level professional higher education programme following secondary education -- no prior university degree is required, though holders of relevant health or science qualifications can earn bonus admission points."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Medical Doctor (MD) qualification, equivalent to a Master's degree (EQF Level 7), a Latvian medical qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "There is no written entrance exam. Admission is a document-based Admission Competition (grades, two recommendation letters and a motivation letter), plus a mandatory online interview for non-EU/EEA applicants."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 13,500 per year, flat across all six years (EUR 81,000 total), plus a one-time EUR 1,800 registration administration fee specific to Medicine and Dentistry applicants, on top of the EUR 100 application fee."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "RSU runs two Medicine intakes a year: September and February. Application windows vary by visa category; for the most recent cycle, the September 2026 windows had all closed and the February 2027 windows had not yet opened as of this record's research date."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "RSU offers tuition-fee discounts rather than upfront scholarships: an Academic Excellence discount of up to 25% (capped at 40 Medicine recipients, from the third year onward with strong grades), a 10% Family Member discount, a 10% Alumni discount, and a capped Sports Excellence discount. A separate Ambassadors cash-scholarship programme has existed but its current-cycle status is unconfirmed."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "Yes -- RSU operates three student hostels in Riga (Dzirciems, Agenskalns and Mezciems), with priority given to first-year students and rates roughly EUR 85-525 per month depending on the hostel and room type."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Riga Stradins University — official Medicine programme page",
+          "url": "https://www.rsu.lv/en/study-programme/medicine",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, EU Directive 2005/36/EC recognition statement, accreditation-through-2030 status and clinical curriculum structure."
+        },
+        {
+          "label": "WFME — Agencies with Recognition Status (accrediting agencies list)",
+          "url": "https://wfme.org/recognition/bme-recognition/accrediting-agencies-status-bme/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence that Latvia's medical-accreditation body (AHPGS) is WFME-recognized through October 2033, satisfying ECFMG's recognized-accreditation requirement."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/eli/dir/2005/36/2024-08-18",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Latvian Medical Doctor qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "RSU official Admission Procedure to English-taught study programmes 2026/2027 (PDF)",
+          "url": "https://www.rsu.lv/sites/default/files/imce/SSD/admissions_procedure_2026_2027_eng.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard, signed regulatory document; primary evidence for eligibility, admissions process, documents and nationality-tiered deadline windows for both intakes."
+        },
+        {
+          "label": "RSU official Tuition Fees for Studies in English page",
+          "url": "https://www.rsu.lv/en/study-here/admissions/tuition-fees-studies-english",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026/27 tuition, the Medicine/Dentistry-specific registration fee, and what tuition covers."
+        },
+        {
+          "label": "RSU official Tuition Fee Discounts page",
+          "url": "https://www.rsu.lv/en/tuition-fee-discounts",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Academic Excellence, Family Member, Alumni and Sports Excellence tuition discounts."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "riga-stradins-university-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine (English-taught)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 13500,
+            "officialTotalTuitionAmount": 81000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published tuition: EUR 13,500 per year, flat across all 6 years, EUR 81,000 total, per RSU's official Tuition Fees for Studies in English page, explicitly headed for the 2026/2027 academic year. A separate, one-time EUR 1,800 registration administration fee applies specifically to Medicine and Dentistry applicants, on top of a EUR 100 non-refundable application fee. RSU covers up to EUR 50 of document-legalisation costs for applicants from non-Hague-exempt countries. A partial tuition refund is available on withdrawal, calculated individually by RSU's Finance Department."
+          },
+          "officialProgramUrl": "https://www.rsu.lv/en/study-programme/medicine",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a secondary-education diploma, assessed on Biology or Chemistry grades (Physics may substitute for Mathematics in systems without a compulsory Mathematics grade)"
+            ],
+            "restrictions": [
+              "A mandatory online interview applies to all non-EU/EEA applicants",
+              "English proficiency at CEFR B2 (IELTS 6.0+, TOEFL iBT 80+, or equivalent) is required unless prior education was fully in English",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "Up to 5 bonus admission points are available for relevant prior health/science qualifications (1 point per year of a related bachelor's/master's, or 2 points for other medicine-related qualifications).",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.rsu.lv/sites/default/files/imce/SSD/admissions_procedure_2026_2027_eng.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply via RSU's eA Portal, pay the application fee, submit academic and supporting documents (legalized/apostilled where required), and non-EU/EEA applicants complete a mandatory recorded online interview before a decision is issued.",
+            "eligibility": {
+              "intro": "Admission is assessed through secondary-school grades in Biology or Chemistry (with country-specific minimum thresholds), English proficiency, two recommendation letters, a motivation letter, and an interview for non-EU/EEA applicants.",
+              "items": [
+                "Secondary-school diploma with Biology or Chemistry grades meeting country-specific thresholds",
+                "English proficiency at CEFR B2 (IELTS 6.0, TOEFL iBT 80, or equivalent), unless prior education was fully in English",
+                "Two recommendation letters and one motivation letter on RSU's own forms",
+                "Mandatory recorded online interview for non-EU/EEA applicants",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the electronic application on RSU's eA Portal and pay the non-refundable EUR 100 application fee",
+              "Upload passport, secondary-school diploma and transcript, recommendation and motivation letters, English-proficiency proof and a passport-style photo",
+              "Have non-Latvia-issued documents evaluated for equivalence via the Academic Information Centre, and apostilled/legalized where required",
+              "Complete the mandatory online interview (non-EU/EEA applicants)",
+              "On receiving an offer, pay tuition and fees within 2 weeks, sign the study contract, and submit original documents within 30 days of study commencement"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school leaving diploma (original or certified copy) with official transcript, translated into English if needed",
+                "Academic Information Centre equivalence reference for non-Latvia-issued qualifications (unless covered by the Baltic/Benelux agreement)"
+              ],
+              "application": [
+                "Passport or ID data page",
+                "Two recommendation letters and one motivation letter (RSU's own forms)",
+                "English-proficiency certificate, if applicable",
+                "Passport-style photo and application-fee payment confirmation"
+              ]
+            },
+            "deadlinesNote": "Two intakes a year. Sept 2026: windows ran 1 Mar-1 Jul (EU/EEA/visa-exempt), 1 Mar-1 Apr, or 1 Mar-1 May 2026 by visa category -- all closed. Feb 2027: windows run 1 Sep-1 Dec, 1 Sep-1 Oct, or 1 Sep-1 Nov 2026 by visa category.",
+            "visaConsiderations": [
+              "Application deadlines are tiered by visa category; RSU covers up to EUR 50 of document legalisation costs for applicants from non-Hague-exempt countries."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September", "February"],
+          "intakeCodes": ["september", "february"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition is EUR 13,500/year flat across all 6 years (EUR 81,000 total), per RSU's official 2026/27 fee page. A one-time EUR 1,800 registration administration fee applies specifically to Medicine/Dentistry applicants, plus a EUR 100 application fee. RSU covers up to EUR 50 of legalisation costs for eligible applicants. A partial tuition refund is available on withdrawal, calculated individually.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: basic sciences",
+              "language": "English",
+              "details": "Anatomy, histology, embryology, molecular biology, physiology and medical chemistry/biochemistry, alongside humanities coursework."
+            },
+            {
+              "phase": "Year 3: preclinical subjects",
+              "language": "English",
+              "details": "Pathology, radiology, pharmacology, introduction to clinical medicine, genetics, basics of clinical care and general surgery, with hospital-based classes beginning as early as the fourth semester."
+            },
+            {
+              "phase": "Years 4-6: clinical training and State Examination",
+              "language": "English",
+              "details": "Clinical study mainly in real hospital settings across Years 4-5, followed by Year 6 rotations (internal diseases, invasive medicine, elective), a defended research paper and a 15-ECTS national State Examination."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "riga-stradins-university",
+      "publicField": "identity",
+      "claimText": "Riga Stradins University traces to the Riga Medical Institute, founded 1 September 1950 on the basis of the Faculty of Medicine of the State University of Latvia; renamed Medical Academy of Latvia (1990), then Riga Stradins University (1998).",
+      "status": "verified",
+      "sourceLabel": "Riga Stradins University — official History pages (corroborated by multiple independent sources)",
+      "sourceUrl": "https://www.rsu.lv/en/about-us/history",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "riga-stradins-university",
+      "publicField": "recognition",
+      "claimText": "Latvia's medical-accreditation body, the Accreditation Agency in Health and Social Sciences (AHPGS), is listed on the World Federation for Medical Education's own Agencies with Recognition Status, valid through October 2033.",
+      "status": "verified",
+      "sourceLabel": "WFME — Agencies with Recognition Status",
+      "sourceUrl": "https://wfme.org/recognition/bme-recognition/accrediting-agencies-status-bme/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "riga-stradins-university",
+      "publicField": "recognition",
+      "claimText": "The Latvian 'arsta diploms' (Medical Doctor qualification) is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA; RSU's own Medicine programme page cites this directive directly, and the Medicine programme is accredited by Latvia's Ministry of Education and Science through 28 May 2030.",
+      "status": "verified",
+      "sourceLabel": "Riga Stradins University — official Medicine programme page",
+      "sourceUrl": "https://www.rsu.lv/en/study-programme/medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "riga-stradins-university",
+      "programmeSlug": "riga-stradins-university-medicine",
+      "publicField": "academics",
+      "claimText": "Medicine is a 6-year, 360-ECTS, direct-entry (EQF Level 7) programme awarding the Medical Doctor (MD) qualification, taught in English.",
+      "status": "verified",
+      "sourceLabel": "Riga Stradins University — official Medicine programme page",
+      "sourceUrl": "https://www.rsu.lv/en/study-programme/medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "riga-stradins-university",
+      "programmeSlug": "riga-stradins-university-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission is a document-based Admission Competition (Biology/Chemistry grades, recommendation and motivation letters) plus a mandatory interview for non-EU/EEA applicants; no written entrance exam; English B2 required unless prior education was fully in English.",
+      "status": "verified",
+      "sourceLabel": "RSU official Admission Procedure 2026/2027 (PDF)",
+      "sourceUrl": "https://www.rsu.lv/sites/default/files/imce/SSD/admissions_procedure_2026_2027_eng.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "riga-stradins-university",
+      "programmeSlug": "riga-stradins-university-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via the eA Portal with a EUR 100 application fee; document legalisation/AIC equivalence process detailed; decision within 1-3 months; payment due within 2 weeks of offer.",
+      "status": "verified",
+      "sourceLabel": "RSU official Admission Procedure 2026/2027 (PDF)",
+      "sourceUrl": "https://www.rsu.lv/sites/default/files/imce/SSD/admissions_procedure_2026_2027_eng.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "riga-stradins-university",
+      "programmeSlug": "riga-stradins-university-medicine",
+      "publicField": "intake",
+      "claimText": "Two intakes a year (September and February). September 2026 windows (1 Mar-1 Jul/1 Apr/1 May 2026 by visa category) have closed; February 2027 windows (1 Sep-1 Dec/1 Oct/1 Nov 2026 by visa category) had not yet opened as of the research date.",
+      "status": "verified",
+      "sourceLabel": "RSU official Admission Procedure 2026/2027 (PDF)",
+      "sourceUrl": "https://www.rsu.lv/sites/default/files/imce/SSD/admissions_procedure_2026_2027_eng.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "riga-stradins-university",
+      "programmeSlug": "riga-stradins-university-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition: EUR 13,500/year flat for all 6 years (EUR 81,000 total); separate one-time EUR 1,800 registration administration fee for Medicine/Dentistry applicants; EUR 100 application fee.",
+      "status": "verified",
+      "sourceLabel": "RSU official Tuition Fees for Studies in English page",
+      "sourceUrl": "https://www.rsu.lv/en/study-here/admissions/tuition-fees-studies-english",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "riga-stradins-university",
+      "programmeSlug": "riga-stradins-university-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training runs across Pauls Stradins Clinical University Hospital, Children's Clinical University Hospital, Riga East University Hospital, and the Hospital of Traumatology and Orthopaedics, supplemented by the Medical Education Technology Centre (METC) simulation facility.",
+      "status": "verified",
+      "sourceLabel": "Riga Stradins University — official Faculty of Medicine page",
+      "sourceUrl": "https://www.rsu.lv/en/faculty-medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "riga-stradins-university",
+      "publicField": "student living",
+      "claimText": "RSU operates three student hostels (Dzirciems, Agenskalns, Mezciems) with priority for first-year students; Dzirciems rates roughly EUR 310-525/month, Mezciems roughly EUR 85-310/month, inclusive of utilities.",
+      "status": "verified",
+      "sourceLabel": "Riga Stradins University — official student hostel pages",
+      "sourceUrl": "https://www.rsu.lv/en/rsu-student-hostels",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "riga-stradins-university",
+      "publicField": "scholarship",
+      "claimText": "Tuition-fee discounts include an Academic Excellence discount of up to 25% (capped at 40 Medicine recipients, third year onward), a 10% Family Member discount, a 10% Alumni discount, and a capped Sports Excellence discount up to 100%.",
+      "status": "verified",
+      "sourceLabel": "Riga Stradins University — official Tuition Fee Discounts page",
+      "sourceUrl": "https://www.rsu.lv/en/tuition-fee-discounts",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

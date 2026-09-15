@@ -1,0 +1,377 @@
+{
+  "batchId": "second-pass-patch-05",
+  "entries": [
+    {
+      "universitySlug": "baltic-federal-university",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Immanuel_Kant_Baltic_Federal_University_Russian_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, tagged PD-textlogo (simple text/shape, below threshold of originality); author of record is the university itself. Verified HTTP 200.",
+        "proposedPublicId": "baltic-federal-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/IKSUR1.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (uploader Ttracy), dual-licensed GFDL 1.2+/CC-BY-SA (1.0-4.0). Depicts an IKBFU building (History/Economics/Psychology/Sport dept). Verified HTTP 200.",
+        "proposedPublicId": "baltic-federal-university-cover"
+      },
+      "note": "Ignored the broken English admission route entirely and went straight to Wikipedia Commons: found a distinct Commons-hosted PD-textlogo SVG (separate from the non-free English-Wikipedia fair-use copy) plus a CC-BY-SA/GFDL building photo, both unrelated to kantiana.ru's own reachability."
+    },
+    {
+      "universitySlug": "imperial-college-london",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Imperial_College_London.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Radosław Botev / Fundacja Nomos), CC-BY-3.0-PL. South Kensington campus photo. Verified HTTP 200.",
+        "proposedPublicId": "imperial-college-london-cover"
+      },
+      "note": "Imperial's brand platform is SSO-gated so no in-house asset could be pulled directly. Used Wikipedia Commons campus category instead of the brand portal; found a clearly-licensed 4000x3000 campus photograph distinct from the (also-Commons, CC-BY-3.0/GFDL) coat-of-arms file, which is more logo-like than cover-like so was not used here."
+    },
+    {
+      "universitySlug": "impuls-medical-institute",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260422145243im_/https://impulsmedicalinstitute.com/wp-content/uploads/2025/04/IMG_3229.png",
+        "sourceType": "official",
+        "rightsBasis": "Official Impuls Medical Institute site (impulsmedicalinstitute.com), retrieved via Wayback Machine snapshot because the live site times out from this workspace. Image alt text is literally \"Impuls Medical Institute logo round\". Archived asset URL verified HTTP 200.",
+        "proposedPublicId": "impuls-medical-institute-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260210060631im_/https://impulsmedicalinstitute.com/wp-content/uploads/2025/04/impuls-university.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official site's own about-page hero banner (1600x600, filename \"impuls-university.webp\"), retrieved via Wayback Machine because the live domain is unreachable/timing out directly. Archived asset URL verified HTTP 200.",
+        "proposedPublicId": "impuls-medical-institute-cover"
+      },
+      "note": "Live site connection times out for direct fetch (not a 403/WAF block, just unresponsive) so applied the Wayback technique: found both a round logo mark and a distinct campus/about-page banner image on two different archived snapshots, and verified each archived asset resolves directly."
+    },
+    {
+      "universitySlug": "ingush-state-university",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/IngSU.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Evgeny Shivtsov, VRT-confirmed permission ticket #2017050810017436), CC-BY-SA 4.0. Depicts the university's main building in Magas. Verified HTTP 200.",
+        "proposedPublicId": "ingush-state-university-cover"
+      },
+      "note": "Logo still not found: inggu.ru's homepage only exposes partner/consortium logos and a 1.1KB favicon too low-resolution to serve as a logo asset; no Commons category logo file exists either (only two building photos). Cover resolved via Wikimedia Commons VRT-confirmed CC-BY-SA 4.0 photo. Logo remains held."
+    },
+    {
+      "universitySlug": "institute-pharmaceutical-education-research",
+      "sourceFile": "a-141-150.json",
+      "outcome": "still-hold",
+      "updatedReason": "DB context places this record in Tashkent, Uzbekistan (not the similarly-named Indian NIPER/IPER-Wardha institutions, which is what open web search keeps surfacing). Found a plausible domain iper.uz (HTTP 200) but its homepage uses generic Unsplash stock photography, a bare 'University' title tag, and no branding/logo anywhere - it reads as an unbranded template site, not a verifiable official institutional presence, so it was not used as a source. No press/media page, Wikipedia article, or Wayback snapshot could be found for this Tashkent institution either. Held pending a confirmed official domain."
+    },
+    {
+      "universitySlug": "international-black-sea-university",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://ibsu.edu.ge/wp-content/uploads/2024/01/ibsu-logo.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official IBSU site (ibsu.edu.ge) apple-touch-icon/favicon asset, resolves directly (HTTP 200) even though the /about/about-ibsu/ content page itself returns 403.",
+        "proposedPublicId": "international-black-sea-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://ibsu.edu.ge/wp-content/uploads/2026/05/IMG_2113111-scaled.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official IBSU site news-post photo (2560px wide) from a recent campus delegation-visit article, resolves directly (HTTP 200) on ibsu.edu.ge.",
+        "proposedPublicId": "international-black-sea-university-cover"
+      },
+      "note": "The specific about-page URL 403s, but per technique #4 the favicon/apple-touch-icon logo asset on the same domain is not behind that block; a Wayback snapshot of the homepage also surfaced a recent, directly-resolving campus news photo for the cover."
+    },
+    {
+      "universitySlug": "international-european-university",
+      "sourceFile": "a-151-160.json",
+      "outcome": "still-hold",
+      "updatedReason": "DB context confirms this is IEU in Bishkek, Kyrgyzstan (not Georgia). The domain ieukyrgyzstan.in fails DNS resolution entirely. The alternate ieukyrgyzstan.com resolves but is an MBBS-consultancy template site (relative unquoted image paths like 'IEU LOGO.png', and unrelated content referencing 'NSMCH' and 'Bihar University of Health Sciences') rather than IEU's own official presence, so it was not used. No Wikipedia article or Wayback snapshot of a genuine institutional domain could be found. Held pending a confirmed official IEU domain."
+    },
+    {
+      "universitySlug": "international-higher-school-of-medicine",
+      "sourceFile": "a-151-160.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://static.tildacdn.one/tild3564-3864-4164-a364-326635373636/Favicon_Big.png",
+        "sourceType": "official",
+        "rightsBasis": "Official IHSM site (ism.edu.kg, built on Tilda), 192x192 favicon asset served from the site's own Tilda CDN storage bucket. Verified HTTP 200.",
+        "proposedPublicId": "international-higher-school-of-medicine-logo"
+      },
+      "note": "Site is a lightweight Tilda build with almost no static campus photography in the homepage HTML (its only large image is a YouTube video thumbnail, not a real campus photo), so no cover candidate could be verified this pass. Logo resolved via the higher-resolution favicon technique; cover remains held."
+    },
+    {
+      "universitySlug": "international-medical-institute",
+      "sourceFile": "a-151-160.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "DB context places this record in Bishkek, Kyrgyzstan, but Bishkek has several overlapping, similarly-named 'International Medical ...' institutions already tracked as separate catalogue records (International Medical University at imu.edu.kg, International Higher School of Medicine at ism.edu.kg, International School of Medicine under IUK at ism.iuk.kg), plus a distinct 'Bishkek International Medical Institute (BIMI)' at bimi.edu.kg, and a very low-quality, unofficial-looking Wix site (imiiusb1.wixsite.com) that self-identifies as 'International Medical Institute'. No source ties this exact catalogue record unambiguously to one specific real institution rather than a duplicate/near-duplicate of the others. Needs an identity decision before any media is assigned; no media sourced."
+    },
+    {
+      "universitySlug": "international-medical-university",
+      "sourceFile": "a-151-160.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://imu.edu.kg/uploads/settings/17647883958124.png",
+        "sourceType": "official",
+        "rightsBasis": "Official IMU site (imu.edu.kg) apple-touch-icon asset declared in the page head. Verified HTTP 200.",
+        "proposedPublicId": "international-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://imu.edu.kg/uploads/banners/17677115758107.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official IMU site homepage carousel banner image (327KB JPEG). Verified HTTP 200.",
+        "proposedPublicId": "international-medical-university-cover"
+      },
+      "note": "Resolved the identity question first: this catalogue record is International Medical University in Bishkek, Kyrgyzstan (imu.edu.kg) per the project's own prior research draft (research-drafts/kyrgyzstan/international-medical-university.json), not the Malaysian IMU. The site is a heavy JS/CMS build with almost no images in raw HTML img tags, so the logo and cover were recovered from the <head> apple-touch-icon and a homepage background-image carousel slide respectively, both hosted directly on the official domain."
+    },
+    {
+      "universitySlug": "international-school-of-medicine",
+      "sourceFile": "a-151-160.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://iuk.kg/wp-content/uploads/2022/01/ISM-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Hosted directly on the parent International University of Kyrgyzstan's own domain (iuk.kg, not the 403'ing ism.iuk.kg subdomain); the image is explicitly captioned alt=\"ISM logo\" and is directly hyperlinked to https://ism.iuk.kg/. Verified HTTP 200.",
+        "proposedPublicId": "international-school-of-medicine-logo"
+      },
+      "note": "ism.iuk.kg itself still 403s directly and has no Wayback snapshot, but its parent site iuk.kg is reachable and hosts ISM's own logo file (linked directly to ism.iuk.kg) in its media library, confirmed via the anchor context around the image. No campus-specific cover photo could be confidently isolated (the parent homepage's other large photos are not clearly attributable to the ISM campus specifically), so cover remains held."
+    },
+    {
+      "universitySlug": "international-university-science-medicine",
+      "sourceFile": "a-151-160.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "DB context places this record in Bishkek, Kyrgyzstan, but no institution trading under the name 'International University of Science and Medicine' could be located there (or anywhere) via web search, Wikipedia, or domain probing in either research pass. Bishkek already has a dense cluster of similarly-themed 'International ... Medicine' records in this catalogue (IMU, IHSM, ISM, IMI); this record may be a duplicate or mis-transcribed variant of one of those rather than a distinct institution. Needs an identity decision before any media is assigned; no media sourced."
+    },
+    {
+      "universitySlug": "international-university-of-tbilisi",
+      "sourceFile": "a-151-160.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "No institution operating under the exact name 'International University of Tbilisi' could be located via Wikipedia, web search, or domain probing in this pass. Tbilisi has several similarly-named but distinct institutions already in this catalogue or in Wikipedia (International Black Sea University, International Teaching University of Georgia, European University Georgia), and this record's name does not cleanly match any single one of them. Needs an identity decision (is this a duplicate/alias of one of the above, a defunct entity, or a mis-transcription?) before any media is assigned; no media sourced."
+    },
+    {
+      "universitySlug": "vnu-international-university",
+      "sourceFile": "a-151-160.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://hcmiu.edu.vn/wp-content/uploads/2020/01/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site of International University, Vietnam National University Ho Chi Minh City (hcmiu.edu.vn per this catalogue record's own officialWebsite field in research/catalog-payloads/vnu-international-university.json). The live homepage now serves a JS/cookie anti-bot challenge to direct fetches, so the file path was recovered from a clean pre-challenge Wayback snapshot (2026-06-23) and then re-verified by requesting the exact same path directly against the live domain, which returned HTTP 200 (static upload paths are not behind the challenge).",
+        "proposedPublicId": "vnu-international-university-logo"
+      },
+      "note": "Only logo was missing for this record. Confirmed via the project's own prior catalogue payload that this is IU-VNU-HCM (hcmiu.edu.vn), not a generic VNU-parent asset or an unrelated Vietnamese university, matching the original hold reason's caution. Used a Wayback snapshot only to locate the current filename, then confirmed the same asset resolves live and directly."
+    },
+    {
+      "universitySlug": "iowa-state-university",
+      "sourceFile": "a-151-160.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Campus_of_Iowa_State_University_83.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Dirk Hansen / Flickr), CC-BY-2.0. Depicts the Campanile and lawn on campus. Verified HTTP 200.",
+        "proposedPublicId": "iowa-state-university-cover"
+      },
+      "note": "Logo remains held: the Wikipedia infobox seal (Iowa_State_University_seal.svg) is hosted only as non-free/fair-use on English Wikipedia (wikipedia/en/ namespace), not Commons, and Iowa State's own brand portal still requires a Net-ID plus a written trademark-licensing decision for external reuse, per the original hold reason. Cover resolved via a genuinely free-licensed Commons campus photo instead."
+    },
+    {
+      "universitySlug": "irkutsk-state-medical-university",
+      "sourceFile": "a-151-160.json",
+      "outcome": "still-hold",
+      "updatedReason": "No dedicated English or Russian Wikipedia article exists for this institution (search returns only passing mentions in other articles), so no Commons-licensed logo or campus photo is available via that route. The official domain ismu.baikal.ru has zero Wayback Machine snapshots at all (empty archived_snapshots), so the archive.org fallback is unavailable too. Direct connection to the live domain also failed. Held; no new technique in this pass could surface an asset."
+    },
+    {
+      "universitySlug": "ivane-javakhishvili-tbilisi-state-university",
+      "sourceFile": "a-161-170.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/TSU_Logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (TSU's own coat of arms, designed by Dimitri Shevardnadze, 1918; sourced from tsu.ge). Tagged PD-1923 (published before 1 Jan 1931). Verified HTTP 200.",
+        "proposedPublicId": "ivane-javakhishvili-tbilisi-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Tbilisi_State_University_gate.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Saskia van de Nieuwenhof, via Flickr), CC-BY-SA 2.0. Depicts the Corpus I gate on Ilia Chavchavadze Avenue. Verified HTTP 200.",
+        "proposedPublicId": "ivane-javakhishvili-tbilisi-state-university-cover"
+      },
+      "note": "The first pass found TSU's official site logo but no cover; this pass instead sourced both assets from Wikimedia Commons under clean free licenses (a public-domain 1918 coat of arms for the logo, a CC-BY-SA 2.0 gate photo for the cover), avoiding any question about the official site's own reuse terms."
+    },
+    {
+      "universitySlug": "ivanovo-state-medical-academy",
+      "sourceFile": "a-161-170.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed via both the official site and Russian Wikipedia that the institution was renamed 'Ivanovsky State Medical University' in 2024. No Commons-licensed or Wikipedia logo/photo could be tied to the pre-rename 'Academy' identity specifically (Wikipedia now documents it entirely under the University name). Consistent with the original hold reason: assigning current-brand media to the legacy Academy-labelled catalogue record would create a name mismatch. Needs a rename/identity decision before any media is assigned; no media sourced."
+    },
+    {
+      "universitySlug": "izhevsk-state-medical-academy",
+      "sourceFile": "a-161-170.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed via Russian Wikipedia that the institution was elevated to 'Izhevsk State Medical University' in November 2025 by order of the Russian Ministry of Health. The Wikipedia article carries no separate logo image at all (only a building photograph), so no rename-agnostic asset exists there either. Consistent with the original hold reason: this is a live identity/rename issue, not a missing-asset issue. Needs a rename/identity decision before any media is assigned; no media sourced."
+    },
+    {
+      "universitySlug": "jalal-abad-international-university",
+      "sourceFile": "a-161-170.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://static.tildacdn.one/tild6434-6538-4565-b931-303762623164/logo-jaiu-kg-128.png",
+        "sourceType": "official",
+        "rightsBasis": "Official JAIU site (jaiu.kg, built on Tilda) apple-touch-icon/192px favicon, served from the site's own Tilda CDN bucket (filename literally 'logo-jaiu-kg-128.png'). Verified HTTP 200 directly (not via Wayback).",
+        "proposedPublicId": "jalal-abad-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://static.tildacdn.one/tild3263-3466-4230-a333-643433333432/full-shot-student-li.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official JAIU site's own og:image (site-wide social share photo, filename 'full-shot-student-li.webp'). Verified HTTP 200 directly.",
+        "proposedPublicId": "jalal-abad-international-university-cover"
+      },
+      "note": "The first pass found only one social-share image and could not tell whether it was the logo or a cover. This pass separated the two: the favicon/apple-touch-icon (distinctly named 'logo-jaiu-kg-128.png') is the logo, and the larger og:image student photo is a distinct cover-type asset. Direct jaiu.kg loads still 403, but both assets live on the site's own tildacdn.one storage bucket, which is not behind that block."
+    },
+    {
+      "universitySlug": "jalal-abad-peoples-friendship-university",
+      "sourceFile": "a-161-170.json",
+      "outcome": "still-hold",
+      "updatedReason": "Repeated this pass's domain-probing technique against several plausible short-form domains (jafu.kg, jipfu.kg, japfu.kg) with no successful connection to any of them. No Wikipedia article and no Commons category exist under this name. Consistent with the original hold reason: no authoritative official domain could be identified, so no media technique could be applied. Held."
+    },
+    {
+      "universitySlug": "james-cook-university",
+      "sourceFile": "a-161-170.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.jcu.edu.au/_media/page-elements/JCU-Logo-Shield-RGB.png",
+        "sourceType": "official",
+        "rightsBasis": "Official JCU site (jcu.edu.au) apple-touch-icon-precomposed asset; filename located via a Wayback snapshot of the homepage, then the identical path re-requested directly against the live domain, which returned HTTP 200 (only certain routes on jcu.edu.au 403, not this static media path).",
+        "proposedPublicId": "james-cook-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.jcu.edu.au/_media/jcu_v1-banner-images/home-page/JCU_door_full-res_extra-edit.jpg/fullhd.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official JCU homepage hero banner image, same discovery/verification method as the logo above. Verified HTTP 200 directly against the live domain.",
+        "proposedPublicId": "james-cook-university-cover"
+      },
+      "note": "The homepage itself (and the page the first pass inspected) 403s, but per technique #3/#4 a Wayback snapshot revealed the underlying static asset paths, and both then resolved directly on the live site with HTTP 200 - the 403 only affects certain page routes, not the _media asset paths."
+    },
+    {
+      "universitySlug": "johns-hopkins-university",
+      "sourceFile": "a-161-170.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260724152053im_/https://www.jhu.edu/assets/themes/machado/src/assets/images/logos/university-logo-small-horizontal-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official JHU site (jhu.edu) header/footer logo asset (site's standard reversed/white lockup, used throughout the official homepage's own nav and footer). The live jhu.edu domain and all of its static asset paths return 403 directly, so this was retrieved and verified via the Wayback Machine (archived asset URL confirmed HTTP 200 after redirect).",
+        "proposedPublicId": "johns-hopkins-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260724152053im_/https://www.jhu.edu/assets/uploads/2014/08/86-1600x800.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official JHU homepage og:image, captioned \"Homewood Campus\". Retrieved and verified via Wayback Machine the same way as the logo (live domain 403s entirely; archived asset URL confirmed HTTP 200 after redirect).",
+        "proposedPublicId": "johns-hopkins-university-cover"
+      },
+      "note": "Unlike JCU, jhu.edu's WAF blocks its static asset paths too (direct requests to the same URLs return 403), so per technique #3 both assets were sourced and verified strictly through the archive.org route rather than live re-verification."
+    },
+    {
+      "universitySlug": "korea-advanced-institute-science-technology",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/KAIST_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, tagged PD-textlogo (simple geometric/text mark, below threshold of originality). Verified HTTP 200.",
+        "proposedPublicId": "korea-advanced-institute-science-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/KAIST_fountains_view.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer AhmadElq), CC-BY-SA 4.0. Depicts the KAIST fountains/campus view. Verified HTTP 200.",
+        "proposedPublicId": "korea-advanced-institute-science-technology-cover"
+      },
+      "note": "Both assets sourced from Wikipedia's Commons-hosted (not the enwiki fair-use) files, avoiding any need to touch KAIST's own press pages."
+    },
+    {
+      "universitySlug": "kcmc-university",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20250615112154im_/https://kcmuco.ac.tz/wp-content/uploads/2025/03/cropped-KCMCU-Logo-270x270.png",
+        "sourceType": "official",
+        "rightsBasis": "Official Kilimanjaro Christian Medical University College site (kcmuco.ac.tz), 270x270 cropped-logo asset from the site's own uploads. The live domain does not respond (connection times out entirely), so retrieved and verified via Wayback Machine (archived asset URL confirmed HTTP 200 after redirect).",
+        "proposedPublicId": "kcmc-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20250615112154im_/https://kcmuco.ac.tz/wp-content/uploads/2025/03/KCMC-Banner-1.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site's own homepage banner image ('KCMC-Banner-1.png'). Retrieved and verified via Wayback Machine the same way as the logo.",
+        "proposedPublicId": "kcmc-university-cover"
+      },
+      "note": "kcmuco.ac.tz is unreachable directly (connection hangs/times out rather than a clean HTTP error), so per technique #3 both assets were sourced and verified strictly through the archive.org route."
+    },
+    {
+      "universitySlug": "kth-royal-institute-technology",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Royal_Institute_of_Technology_-_Stockholm.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (uploader Stern, sv.wikipedia), dual-licensed GFDL 1.2+/CC-BY-SA 3.0. Depicts KTH's main building in winter. Verified HTTP 200.",
+        "proposedPublicId": "kth-royal-institute-technology-cover"
+      },
+      "note": "Logo remains held: KTH's Wikipedia infobox logo is hosted only as non-free/fair-use on English Wikipedia (wikipedia/en/ namespace), not Commons, so it could not be used under the licensed-reuse rule. Cover resolved via a genuinely free-licensed Commons campus photo instead; logo still needs KTH's own brand/press channel."
+    },
+    {
+      "universitySlug": "kabardino-balkarian-state-university",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://kbsu.ru/wp-content/uploads/2025/06/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official KBSU site (kbsu.ru) full-resolution logo file, located by generalizing from the site's own cropped-favicon filename pattern (cropped-logo-*.png -> logo.png). Verified HTTP 200 directly on the live root domain (kbsu.ru, not the /en/ path, which 404s).",
+        "proposedPublicId": "kabardino-balkarian-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/%D0%93%D0%A3%D0%9A_%D0%9A%D0%91%D0%93%D0%A3_%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Yuri Kerimov), CC-BY-SA 4.0. Depicts KBSU's main teaching building. Verified HTTP 200.",
+        "proposedPublicId": "kabardino-balkarian-state-university-cover"
+      },
+      "note": "The /en/ site path 404s, but the Russian root kbsu.ru is directly reachable; recovered the logo by inferring the uncropped filename from the WordPress cropped-favicon naming convention (technique #4), and sourced the cover from a CC-BY-SA 4.0 Commons building photo."
+    },
+    {
+      "universitySlug": "kalmyk-state-university",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kalmykia_State_University_main_building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (uploader Ymblanter), CC-BY-SA 4.0. Depicts the university's main building in Elista. Verified HTTP 200.",
+        "proposedPublicId": "kalmyk-state-university-cover"
+      },
+      "note": "Logo remains held: the official site (kalmsu.ru) is unreachable directly, and its most recent Wayback snapshot (Jan 2025) is a pure SVG/CSS single-page build with no separate raster/vector logo file referenced anywhere in the HTML - a genuine inline-SVG-only case where no standalone file could be located elsewhere on the domain. Commons has no dedicated logo file for this university either (only building photos). Cover resolved via Commons; logo still held."
+    },
+    {
+      "universitySlug": "kaluga-state-university-medical-institute",
+      "sourceFile": "a-171-180.json",
+      "outcome": "still-hold",
+      "updatedReason": "This catalogue record's own officialWebsite is kspu.ru (K.E. Tsiolkovsky Kaluga State University, of which the Medical Institute is a constituent unit, not a separately branded site). The live domain refuses the connection outright (TLS connection closes without a response) rather than giving a clean HTTP error, and its most recent Wayback Machine snapshot is from February 2024 with no more recent crawl available, so no current, verifiable asset could be sourced with confidence this pass. Held rather than risk an outdated or mismatched (parent-university-branded) asset for a specific-institute record."
+    },
+    {
+      "universitySlug": "karshi-state-university",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://qarshidu.uz/img/logo-oz-dark-text.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official Karshi State University site (qarshidu.uz) header logo SVG, referenced directly in the homepage HTML. Verified HTTP 200.",
+        "proposedPublicId": "karshi-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Karshi_State_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (uploader Mrjavokh1r), CC-BY-SA 4.0. Depicts the university's main building. Verified HTTP 200.",
+        "proposedPublicId": "karshi-state-university-cover"
+      },
+      "note": "Confirmed the official domain is qarshidu.uz (Uzbek Wikipedia gives this explicitly), then found the site's own header logo SVG directly in its homepage markup; paired with a CC-BY-SA 4.0 Commons building photo for the cover."
+    }
+  ]
+}

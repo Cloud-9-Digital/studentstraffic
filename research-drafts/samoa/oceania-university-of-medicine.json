@@ -1,0 +1,19 @@
+{
+  "countrySlug": "samoa",
+  "universitySlug": "oceania-university-of-medicine",
+  "schoolName": "Oceania University of Medicine",
+  "cityName": "Apia",
+  "priority": "medium",
+  "officialWebsite": "https://oum.edu.ws/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — OUM's official 2025 materials publish country-specific tuition figures and describe a hybrid MD curriculum; the university reports PAASCU reaccreditation through 2030. However, no independent current regulator record was established in this pass, and the accessible source bundle does not supply a complete current admissions criteria/deadline, full programme length/cost by cohort, clinical-site allocation terms, visa/residency facts or destination-specific licensure conditions. Marketing statements about possible licensure are not being used as recognition claims.",
+  "sourceBundle": { "sources": [
+    { "label": "OUM official website", "url": "https://oum.edu.ws/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes an interactive MD curriculum and global clinical training network." },
+    { "label": "OUM 2025 student handbook", "url": "https://oum.edu.ws/documents/2023/03/oum-student-handbook.pdf/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists 2025 country-specific tuition and fee amounts; current cohort and total-cost applicability remain unresolved." },
+    { "label": "OUM 2025 reaccreditation announcement", "url": "https://oum.edu.ws/oums-year-in-review-celebrating-2025-in-numbers-pictures/", "kind": "official-accreditation-claim", "checkedAt": "2026-07-25", "notes": "University reports PAASCU reaccreditation through 2030; independent regulator verification remains required." },
+    { "label": "OUM MD catalogue", "url": "https://oum.edu.ws/documents/2023/08/oum-catalog.pdf/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Programme catalogue exists but was not sufficient in this pass to establish current admissions and placement terms." }
+  ] },
+  "structuredFacts": { "name": "Oceania University of Medicine", "type": "Private medical university", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "delivery": "hybrid", "feeStatus": "2025 official country-specific tuition published; current cohort total unresolved", "publishable": false } ], "missingForPublication": [ "independent current programme-accreditation verification", "current entry criteria, admissions deadline and full document list", "current cohort length and total mandatory cost", "clinical-site allocation and support terms", "visa/residency and target-market licensure evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until independent recognition and current cohort terms are established." }
+}

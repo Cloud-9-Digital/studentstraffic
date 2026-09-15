@@ -1,0 +1,19 @@
+{
+  "countrySlug": "martinique",
+  "universitySlug": "universite-des-antilles",
+  "schoolName": "Université des Antilles",
+  "cityName": "Fort-de-France",
+  "priority": "medium",
+  "officialWebsite": "https://www.univ-antilles.fr/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Université des Antilles' UFR Santé is implanted in Guadeloupe and Martinique and states that it has offered the complete medical curriculum since September 2023, including PASS, DFGSM, the second cycle and the medical internship/third cycle. The University has Martinique facilities in Fort-de-France. Hold pending a current Martinique-specific admissions, language, fee, clinical-site and target-market eligibility packet before publication.",
+  "sourceBundle": { "sources": [
+    { "label": "Université des Antilles UFR Santé", "url": "https://www.univ-antilles.fr/offre-formations/ufr-sante?height=auto&inline=true&width=800", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States that UFR Santé is implanted in Guadeloupe and Martinique; lists PASS, DFGSM, third-cycle medical internship and the complete medical curriculum since September 2023 with the second-cycle opening." },
+    { "label": "Université des Antilles presentation", "url": "https://www.univ-antilles.fr/decouvrir-luniversite-des-antilles/presentation", "kind": "official-institution", "checkedAt": "2026-07-25", "notes": "Confirms autonomous Guadeloupe and Martinique regional poles and the Martinique higher-education presence." },
+    { "label": "Université des Antilles 2026-2027 registration", "url": "https://felho.martinique.univ-antilles.fr/inscription-2026-2027", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Explains that registration fees are set nationally and vary by diploma and student nationality; no medicine-route total is established in this draft." },
+    { "label": "Université des Antilles DFASM accreditation file", "url": "https://www.univ-ag.fr/decouvrir-luniversite-des-antilles/actes-administratifs-reglementaires", "kind": "official-governance", "checkedAt": "2026-07-25", "notes": "University governance page lists the 2026 DFASM accreditation application; current completion/authorisation details should be checked before publication." }
+  ] },
+  "structuredFacts": { "name": "Université des Antilles", "type": "Public university", "programs": [ { "officialTitle": "Medical studies pathway", "duration": "Official UFR Santé page documents PASS, first cycle (DFGSM), second cycle and medical third cycle; the University states the complete curriculum has operated since September 2023.", "feeStatus": "Registration fees are set nationally and vary by diploma and student nationality; no complete route cost has been established in this draft.", "publishable": false } ], "missingForPublication": [ "current Martinique-specific entry and selection criteria", "language-of-instruction and language-proof requirements", "full registration, living, insurance and clinical-phase cost reconciliation", "current local clinical-training placement information", "visa/residency and target-market professional-recognition guidance" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until Martinique-specific admissions, language, cost and professional-outcome facts are fully scoped." }
+}

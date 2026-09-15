@@ -1,0 +1,204 @@
+{
+  "batchId": "media-a-01-10",
+  "notes": "Offline source audit completed 2026-07-25. Entries marked ready use direct assets served by the institution's official domain or its official site CDN. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "akfa-university-medical-school",
+      "universityName": "AKFA University Medical School",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed AKFA University was renamed Central Asian University (CAU) effective 26 June 2023 (centralasian.uz rename announcement; Wikipedia 'Central Asian University'; THE rankings page). The legacy akfauniversity.uz domain now fails outright (DNS resolution failure), confirming there is no separate live AKFA-branded site left to source assets from. This is an unresolved rename/identity situation, not a missing-asset situation, so no image is sourced. Needs a human catalogue decision (retire, redirect, or relabel the record) rather than media.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "asomi-college-of-sciences-acs",
+      "universityName": "ASOMI College of Sciences (ACS)",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.acs-college.com/wp-content/uploads/LOGO-CON-SOTTOTITOLO.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the institution's own website",
+        "proposedPublicId": "asomi-college-of-sciences-acs-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.acs-college.com/wp-content/uploads/acs-mani-about-us-optimized.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image served from the institution's own About page",
+        "proposedPublicId": "asomi-college-of-sciences-acs-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "aalto-university",
+      "universityName": "Aalto University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass could not retrieve aalto.fi directly. Wikimedia Commons (not consulted in the first pass) has a free PD-textlogo Aalto wordmark and a separately CC-BY-SA licensed campus library photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Aalto_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons PD-textlogo tag: text/simple-shape logo below the threshold of originality, public domain in copyright terms (trademark rights may still apply in some jurisdictions).",
+        "proposedPublicId": "aalto-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Aalto_University_Otaniemi_Campus_Library_October_7_2012_01.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0, author Lauri Silvennoinen ('Aalto University Otaniemi Campus Library').",
+        "proposedPublicId": "aalto-university-cover"
+      }
+    },
+    {
+      "universitySlug": "aarhus-university",
+      "universityName": "Aarhus University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass held because AU's own brand policy requires written approval for the trademarked logo/campus imagery. A Commons PD-textlogo version of the wordmark and a separately CC-BY-SA licensed campus park photo resolve this without needing AU's permission workflow..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aarhus_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons PD-textlogo tag: simple text/shape logo below threshold of originality, public domain (trademark rights may still apply).",
+        "proposedPublicId": "aarhus-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aarhus_University_Park_%28autumn%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0, author RhinoMind ('Aarhus University Park (autumn)').",
+        "proposedPublicId": "aarhus-university-cover"
+      }
+    },
+    {
+      "universitySlug": "acadia-university-nursing",
+      "universityName": "Acadia University Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://cms-main.acadiau.ca/files/acadiatheme/images/Acadia-Logo_Horizontal-Full_Colour.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from Acadia University's official CMS",
+        "proposedPublicId": "acadia-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www2.acadiau.ca/files/images/Slideshows/newshero/Acadia-Open_House-Homepage_Graphic-2024-1920x1080.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage image",
+        "proposedPublicId": "acadia-university-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "adam-university",
+      "universityName": "ADAM University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://adam.edu.kg/static/img/logo_blue.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "adam-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://adam.edu.kg/static/img/start_hero2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage hero image",
+        "proposedPublicId": "adam-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "universityName": "Adventist University of Central Africa School of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): auca.ac.rw redirects (301) to web.auca.ac.rw, a rebuilt Next.js site that exposes a clean logo.png and real campus photography in its homepage carousel; first pass evidently only checked the old domain root..",
+      "logo": {
+        "sourceUrl": "https://web.auca.ac.rw/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official AUCA seal served directly from the university's own current site (web.auca.ac.rw).",
+        "proposedPublicId": "adventist-university-of-central-africa-school-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.auca.ac.rw/images/auca/image3.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official AUCA homepage carousel campus photo (real buildings and grounds), served from the university's own site.",
+        "proposedPublicId": "adventist-university-of-central-africa-school-of-medicine-cover"
+      }
+    },
+    {
+      "universitySlug": "akaki-tsereteli-state-university",
+      "universityName": "Akaki Tsereteli State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://atsu.edu.ge/assets/images/logo_for_web.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset referenced by the university's own English website",
+        "proposedPublicId": "akaki-tsereteli-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://apiv1.atsu.edu.ge/uploads/social_b.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional social image declared by the university's English website",
+        "proposedPublicId": "akaki-tsereteli-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "al-farabi-kazakh-national-university",
+      "universityName": "Al-Farabi Kazakh National University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The original kaznu.kz had an SSL trust failure; the university's actual current domain is farabi.university (unaffected by that SSL issue) and serves its new 2024 logo directly. Cover remains held: the only large homepage image found was a news photo of Kazakhstan's president at a state visit, not a campus or generic institutional image, so no cover is nominated.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://farabi.university/front/assets/img/icons/logonew1.png",
+        "sourceType": "official",
+        "rightsBasis": "Official current (2024 rebrand) KazNU seal served from farabi.university, the university's own current domain.",
+        "proposedPublicId": "al-farabi-kazakh-national-university-logo"
+      }
+    },
+    {
+      "universitySlug": "ala-too-international",
+      "universityName": "Ala-Too International University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Live alatoo.edu.kg still returns Cloudflare 403. A September 2025 Wayback Machine snapshot serves the logo and a real campus orientation-week photo directly (im_ variant), both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20250805153344im_/https://alatoo.edu.kg/wp-content/uploads/2023/10/cropped-ALATOO-LOGO-2.png",
+        "sourceType": "official",
+        "rightsBasis": "Retrieved via Wayback Machine due to the live site's Cloudflare 403; archived image itself resolves directly (official asset, current-brand seal).",
+        "proposedPublicId": "ala-too-international-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20250918113222im_/https://alatoo.edu.kg/wp-content/uploads/2025/09/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Wayback Machine (September 2025) snapshot of an official homepage news photo (orientation week, real campus building visible in background).",
+        "proposedPublicId": "ala-too-international-cover"
+      }
+    }
+  ]
+}

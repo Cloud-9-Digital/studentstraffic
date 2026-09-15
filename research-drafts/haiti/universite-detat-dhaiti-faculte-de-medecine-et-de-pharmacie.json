@@ -1,0 +1,32 @@
+{
+  "scope": "Haiti medical discovery — Université d'État d'Haïti Faculty of Medicine and Pharmacy",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Université d'État d'Haïti identifies the Faculty of Medicine and Pharmacy as one of its faculties and dates its creation to 1861.",
+      "sourceUrl": "https://www.ueh.edu.ht/facultes/fmp.php",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UEH's official 2025/26 admission notice includes the Faculty of Medicine and Pharmacy among the faculties covered by its admission competition and lists the documents required after a candidate passes the competition.",
+      "sourceUrl": "https://ueh.edu.ht/wp-content/uploads/2025/07/Affiche-dinscription-au-concours-dadmission-a-lUEH-2025-2026-pdf-1.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "An official UEH admissions entity page describes annual competitive recruitment at the faculty and lists medicine, pharmacy, medical biology and optometry among its routes.",
+      "sourceUrl": "https://admission.ueh.edu.ht/entites/details/6",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No complete, current fee schedule or mandatory-charge schedule was located for a medicine applicant.",
+    "No current faculty-specific admissions notice establishes programme duration, full academic eligibility, selection criteria, intake, or an international-applicant route.",
+    "Teaching language, curriculum, named and current clinical partners, professional recognition, accommodation, financial support and student-support provision were not verified from authoritative current sources.",
+    "Recent independent reporting indicates disruption to a key public clinical-training setting; current, named clinical-placement continuity must be verified directly before any public clinical-training claim is published."
+  ],
+  "nextAction": "Obtain a current FMP admissions and fee notice plus direct confirmation of the teaching language, programme structure, clinical sites and student support before considering a payload."
+}

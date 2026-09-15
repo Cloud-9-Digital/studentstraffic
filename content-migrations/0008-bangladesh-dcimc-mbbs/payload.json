@@ -1,0 +1,454 @@
+{
+  "countries": [
+    {
+      "slug": "bangladesh",
+      "name": "Bangladesh",
+      "region": "South Asia",
+      "summary": "Bangladesh is a well-established South Asian destination for English-medium MBBS study, with government-regulated, University-of-Dhaka-affiliated medical colleges recognized by the Bangladesh Medical and Dental Council. Its direct-entry, five-year MBBS plus one-year internship structure closely mirrors the route familiar to Indian and Nepali applicants.",
+      "whyStudentsChooseIt": "Proximity to India and Nepal keeps travel and living costs manageable, while English-medium instruction and a BMDC-regulated, University-of-Dhaka-affiliated MBBS structure offer a familiar five-year direct-entry route plus a compulsory one-year rotatory internship. Government-coordinated foreign-student admissions add a standardized, centrally verified application process across recognized colleges.",
+      "climate": "Subtropical monsoon climate with a hot, humid summer, a monsoon season from June to October bringing heavy rainfall, and a mild, dry winter from November to February.",
+      "currencyCode": "BDT",
+      "metaTitle": "Study in Bangladesh | Universities & Programs",
+      "metaDescription": "Compare Bangladesh medical colleges by tuition, BMDC recognition, admissions, and the MBBS route for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Dhaka Central International Medical College maps its Bachelor of Medicine and Bachelor of Surgery award to this category: a five-year, English-language programme affiliated with the University of Dhaka, followed by a compulsory one-year rotatory internship.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "bangladesh",
+      "slug": "dhaka-central-international-medical-college",
+      "name": "Dhaka Central International Medical College & Hospital",
+      "city": "Dhaka",
+      "type": "Private",
+      "establishedYear": 2011,
+      "officialWebsite": "https://dcimch.com/",
+      "mediaAttribution": {},
+      "summary": "Dhaka Central International Medical College and Hospital is a private medical college in Dhaka, Bangladesh, founded in 2011 and affiliated with the University of Dhaka. Its five-year MBBS programme is recognized by the Bangladesh Medical and Dental Council and listed in the World Directory of Medical Schools, with English-medium teaching and a 500-bed on-campus teaching hospital.",
+      "campusLifestyle": "The Shyamoli, Mohammadpur campus in central Dhaka houses air-conditioned lecture halls with interactive boards, dissection and departmental laboratories, a centrally monitored computerized library open 9:30am-8:00pm, a large conference room, prayer facilities and campus-wide WiFi, alongside separate common rooms for female students.",
+      "cityProfile": "Dhaka, Bangladesh's capital, hosts DCIMC's campus at 2/1 Ring Road, Shyamoli, Mohammadpur -- a central, well-connected city location. The college reports hosting more than 200 foreign students, primarily from India and Nepal, reflecting Dhaka's established position as a nearby, English-medium MBBS destination for South Asian applicants. The college's own 500-bed teaching hospital sits on the same campus, anchoring clinical training within the city.",
+      "practicalExposure": "Clinical training runs through DCIMC's own attached teaching hospital, Dhaka Central International Medical College and Hospital, which the college describes as a 500-bed facility (a separate, uncorroborated third-party figure of 250 beds also circulates; the college's own current figure is used here). Named hospital facilities include 24-hour casualty and emergency service, 24-hour pathology and imaging/radiology/ECG including ultrasound, ICU, NICU and HDU, haemodialysis, endoscopy, ventilator care under Anaesthesiology, a computerized Pulmonary Function Lab, Surgical and Medical ICUs, a Trauma Care unit, a blood bank, an Obstetrics and Gynaecology block, and IVF services. Pre-clinical and clinical departments include Anatomy, Bio-chemistry, Community Medicine, Forensic Medicine, Medicine and Allied Subjects, Microbiology, Obstetrics and Gynecology, Pathology, Pharmacology, Physiology, and Surgery and Allied Subjects. The five academic years are followed by a compulsory one-year BMDC-recognized rotatory internship, which can be completed at the same hospital and carries a subsistence allowance.",
+      "hostelOverview": "DCIMC maintains two on-campus International Hostels, one for male and one for female foreign students, each managed by a dedicated hostel supervisor. Specific room rates are not published on the college's official pages and should be confirmed directly with the Foreign Students admissions office.",
+      "dietarySupport": "Food and mess costs are explicitly excluded from DCIMC's published USD 44,500 total course fee; a student cafeteria is listed among campus facilities, but no separate mess-fee figure is published on official pages. Daily food costs should be planned as an addition to tuition rather than assumed to be included.",
+      "safetyOverview": "DCIMC states its international hostels are fully secured and separately managed for male and female foreign students, each under a dedicated hostel supervisor. No further campus-wide safety statistics are published on official pages.",
+      "studentSupport": "Foreign-student admissions run centrally through the Government of Bangladesh's Directorate General of Medical Education (DGME) online portal, with DCIMC's Foreign Students Corner office coordinating document requirements, hostel placement and the compulsory Equivalence Certificate process.",
+      "whyChoose": [
+        "Active recognition confirmed directly on the Bangladesh Medical and Dental Council's own recognized-colleges list, with no withheld-recognition flag, alongside a current World Directory of Medical Schools listing.",
+        "MBBS degree conferred by the University of Dhaka, a long-established public university, rather than the college awarding its own degree.",
+        "English-medium instruction confirmed on the official curriculum page.",
+        "On-campus 500-bed teaching hospital with named critical-care departments, including ICU, NICU, HDU and a dedicated Trauma Care unit.",
+        "A fixed, published total five-year course fee (USD 44,500) with a defined installment schedule, rather than an unpublished or estimated cost."
+      ],
+      "thingsToConsider": [
+        "DCIMC's own official pages disagree on the minimum Biology grade-point cutoff for foreign applicants (3.50 on the Foreign Students Corner page versus 4.00 on the general Application Procedure page); confirm the current figure directly before applying.",
+        "The published USD 44,500 course fee excludes food, internship fees, and university and college exam fees, so total cost of attendance runs higher than the headline figure, and all payments are stated as non-refundable and non-transferable.",
+        "Indian applicants must separately qualify NEET-UG under India's National Medical Commission rules before enrolling abroad, and later pass India's FMGE screening test to practice in India; neither requirement is administered by DCIMC.",
+        "A government facility registry shows older, seemingly stale renewal-status fields for DCIMC alongside a currently clean BMDC recognition listing; applicants should reconfirm recognition status close to their intended enrollment date."
+      ],
+      "bestFitFor": [
+        "Indian and Nepali applicants who have already qualified NEET-UG (where applicable) and meet the stated O-level/A-level academic and Biology grade-point requirements.",
+        "Applicants who prioritize a fixed, published total course cost with a defined payment schedule over an unpublished or estimated fee.",
+        "Students planning to complete India's FMGE or an equivalent home-country licensing step after graduation, who are prepared to manage that separately from their Bangladesh MBBS admission."
+      ],
+      "industryPartners": [
+        "Dhaka Central International Medical College & Hospital (DCIMCH) — the college's own 500-bed teaching hospital"
+      ],
+      "recognitionBadges": [
+        "Bangladesh Medical & Dental Council (BMDC) — recognized medical college",
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed, School ID F0003459",
+        "University of Dhaka — MBBS degree-awarding academic affiliation",
+        "Ministry of Health & Family Welfare, Government of Bangladesh — approved medical college (DGME registry)"
+      ],
+      "recognitionLinks": [
+        { "label": "BMDC recognized medical & dental colleges list", "url": "https://www.bmdc.org.bd/about-college-n" },
+        { "label": "World Directory of Medical Schools — DCIMC listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0003459" }
+      ],
+      "faq": [
+        {
+          "question": "Is Dhaka Central International Medical College recognized by BMDC?",
+          "answer": "Yes. DCIMC appears on the Bangladesh Medical and Dental Council's own recognized-colleges list without a withheld-recognition flag. BMDC recognition is reviewed periodically and is not guaranteed to be permanent, so applicants should reconfirm status close to enrollment."
+        },
+        {
+          "question": "Who awards the MBBS degree at DCIMC?",
+          "answer": "The MBBS degree is conferred by the University of Dhaka, to which DCIMC is affiliated; this is confirmed both by the college's own site and by DCIMC's independent listing in the World Directory of Medical Schools, which records University of Dhaka as the current academic affiliation."
+        },
+        {
+          "question": "What language is the MBBS programme taught in?",
+          "answer": "English, as stated explicitly on the college's official MBBS Course Overview page."
+        },
+        {
+          "question": "When does the MBBS intake start for international students?",
+          "answer": "The college's own Academic overview page states the academic session starts in January each year, or as directed by the Government of Bangladesh. The most recent foreign-student application cycle ran online from 11 November 2025 to 15 January 2026 via the government's DGME portal."
+        },
+        {
+          "question": "What is the total MBBS course fee for foreign students?",
+          "answer": "USD 44,500 for the full 5-year course, payable in installments from admission through the final year, per DCIMC's official Foreign Students Corner page. This figure excludes food and mess costs, internship fees, and university and college exam fees, and is non-refundable once paid."
+        },
+        {
+          "question": "Do Indian students need to qualify NEET to join DCIMC?",
+          "answer": "Yes. Under India's National Medical Commission regulations, Indian citizens and OCIs enrolling in any foreign MBBS programme on or after May 2018 must qualify NEET-UG, whose result serves as the mandatory Eligibility Certificate. This is separate from, and in addition to, DCIMC's own Bangladesh-side admission requirements."
+        },
+        {
+          "question": "Is there an entrance exam for foreign applicants at DCIMC?",
+          "answer": "DCIMC's official admissions pages do not describe a college-run entrance test or interview for foreign applicants; selection follows the centralized Bangladesh government DGME online-application and document-verification process instead."
+        },
+        {
+          "question": "What accommodation does DCIMC provide for international students?",
+          "answer": "DCIMC maintains two on-campus International Hostels, one for male and one for female students, each with a dedicated hostel supervisor. Food and mess costs are separate from the tuition fee and no specific mess charge is published on the college's official pages."
+        },
+        {
+          "question": "Which hospital do DCIMC students train in?",
+          "answer": "Students train at the college's own attached teaching hospital, Dhaka Central International Medical College and Hospital, described on the college's homepage as a 500-bed facility with 24-hour emergency, ICU/NICU/HDU, and a range of named specialty departments."
+        },
+        {
+          "question": "After completing MBBS at DCIMC, can a student practice in India?",
+          "answer": "Only after separately passing India's licensing screening test, administered as the FMGE by the National Board of Examinations in Medical Sciences, as required by India's National Medical Commission for anyone who obtained their primary medical qualification abroad -- this is independent of, and in addition to, DCIMC's own degree and Bangladesh's BMDC registration process."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "DCIMC official homepage",
+          "url": "https://dcimch.com/",
+          "kind": "official-university",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for identity, founding year, campus location and attached teaching hospital."
+        },
+        {
+          "label": "DCIMC official MBBS Course Overview page",
+          "url": "https://dcimch.com/academics/mbbs-course-over-view/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme structure, medium of instruction and intake timing."
+        },
+        {
+          "label": "DCIMC official Foreign Students Corner page",
+          "url": "https://dcimch.com/foreign-students-corner/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for foreign-applicant eligibility, fee schedule, admission window and hostel arrangements."
+        },
+        {
+          "label": "Bangladesh Medical & Dental Council recognized colleges list",
+          "url": "https://www.bmdc.org.bd/about-college-n",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for BMDC recognition status."
+        },
+        {
+          "label": "World Directory of Medical Schools — DCIMC listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0003459",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WDOMS listing, University of Dhaka affiliation and instruction language."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/FMGE eligibility and licensing requirements."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MBBS eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "Equivalence Certificate status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "dhaka-central-international-medical-college-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+          "durationYears": 5,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2025-26 intake cycle",
+            "annualTuitionMinUsd": 4500,
+            "annualTuitionMaxUsd": 14000,
+            "verifiedAt": "2026-07-25",
+            "notes": "DCIMC's official Foreign Students Corner page states a confirmed total 5-year course fee of USD 44,500, payable through a defined but uneven installment schedule (USD 14,000 at admission, then 4,500, 6,500, 6,500, 6,500 and 6,500 in successive years). Because the schedule is front-loaded rather than a flat annual amount, this range reflects the actual official per-installment figures rather than a levelled average; food, internship and exam fees are excluded and all payments are non-refundable."
+          },
+          "officialProgramUrl": "https://dcimch.com/academics/mbbs-course-over-view/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants meeting the stated academic and Biology grade-point thresholds and completing Bangladesh government document authentication",
+              "Indian and Nepali applicants specifically named by the college as its primary foreign cohorts"
+            ],
+            "restrictions": [
+              "Aggregate GPA of at least 7.0 (5-point scale) and a Biology grade point of at least 3.50 per the Foreign Students Corner page; a separate official page instead states a 4.00 Biology minimum, so the current figure should be confirmed directly",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered or verified by DCIMC itself"
+            ],
+            "notes": "DCIMC's own admissions pages do not mention NEET; the NEET-as-Eligibility-Certificate requirement comes only from India's National Medical Commission and must be tracked independently of the college.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://dcimch.com/foreign-students-corner/"
+          },
+          "admissionsContent": {
+            "overview": "International admission runs centrally through the Government of Bangladesh's DGME online portal, with DCIMC's Foreign Students Corner office handling document verification, the mandatory Equivalence Certificate, and hostel placement; the college does not run a separate entrance exam for foreign applicants.",
+            "eligibility": {
+              "intro": "Foreign applicants need an aggregate GPA of at least 7.0 (5-point scale) and a Biology grade point of at least 3.50 in their A-level/12th-equivalent exam; a separate official page states a 4.00 Biology minimum instead, so confirm the current figure directly with DCIMC.",
+              "items": [
+                "Aggregate GPA of at least 7.0 on a 5-point scale (A-level/12th-equivalent)",
+                "Biology grade point of at least 3.50 per the Foreign Students Corner page (a separate official page states 4.00 -- confirm the current figure)",
+                "All academic certificates attested by the Ministry of Education and Ministry of Foreign Affairs of the home country",
+                "Equivalence Certificate from Bangladesh's Director, Medical Education (DME), Mohakhali, Dhaka",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from DCIMC's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online via the Government of Bangladesh's foreignstudents.dgme.gov.bd portal",
+              "Upload passport photo, passport copy, and attested academic certificates and marksheets",
+              "Pay the USD 100 application fee by Telegraphic Transfer or SWIFT",
+              "Collect a printed copy of the submitted application from the online platform",
+              "Complete the Equivalence Certificate process with the Director, Medical Education (DME), Mohakhali, Dhaka"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "O-level/10th-class-equivalent certificate and marksheet",
+                "A-level/12th-class-equivalent certificate and marksheet",
+                "Equivalence Certificate from the Director, Medical Education (DME)"
+              ],
+              "application": [
+                "Passport-size photograph",
+                "Passport copy",
+                "Proof of USD 100 application-fee TT/SWIFT transfer"
+              ]
+            },
+            "deadlinesNote": "The most recently confirmed foreign-student application window ran 11 November 2025 to 15 January 2026 via the government DGME portal for non-government medical colleges; confirm the current cycle's exact dates with DCIMC before applying.",
+            "visaConsiderations": [
+              "Foreign applicants are admitted through Bangladesh's centralized government DGME process rather than a college-specific visa track; confirm current student-visa requirements with DCIMC's Foreign Students Corner office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["January"],
+          "intakeCodes": ["january"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "DCIMC's total five-year MBBS course fee is USD 44,500, payable via a defined, front-loaded installment schedule: USD 14,000 at admission, then USD 4,500, 6,500, 6,500, 6,500 and 6,500 in successive years. This excludes food and mess, internship fees, and university and college exam fees, and all payments are non-refundable and non-transferable once made.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: pre-clinical phase",
+              "language": "English",
+              "details": "Anatomy, Bio-chemistry and Physiology form the foundational pre-clinical curriculum ahead of clinical training."
+            },
+            {
+              "phase": "Years 3-5: para-clinical and clinical phases",
+              "language": "English",
+              "details": "Community Medicine, Forensic Medicine, Microbiology and Pathology lead into clinical training in Medicine and Allied Subjects, Obstetrics and Gynecology, Pharmacology, and Surgery and Allied Subjects."
+            },
+            {
+              "phase": "Year 6: compulsory rotatory internship",
+              "language": "English",
+              "details": "A BMDC-recognized one-year rotatory internship, which can be completed at DCIMC's own 500-bed teaching hospital, carries a subsistence allowance and concludes with an internship certificate."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "bangladesh",
+      "publicField": "identity",
+      "claimText": "Bangladesh's medical education system is regulated by the Bangladesh Medical and Dental Council (BMDC) and the government's Directorate General of Medical Education (DGME), which coordinates foreign-student admissions to recognized colleges.",
+      "status": "verified",
+      "sourceLabel": "Bangladesh Medical & Dental Council recognized colleges list",
+      "sourceUrl": "https://www.bmdc.org.bd/about-college-n",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "publicField": "identity",
+      "claimText": "Dhaka Central International Medical College & Hospital was established in 2011, is located at 2/1 Ring Road, Shyamoli, Mohammadpur, Dhaka-1207, and is affiliated with the University of Dhaka for MBBS degree conferral.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official homepage and College page",
+      "sourceUrl": "https://dcimch.com/college-2/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "publicField": "recognition",
+      "claimText": "DCIMC is listed as entry #32 on BMDC's current 'Updated list of Recognized Medical & Dental Colleges' with no recognition-withheld annotation.",
+      "status": "verified",
+      "sourceLabel": "Bangladesh Medical & Dental Council recognized colleges list",
+      "sourceUrl": "https://www.bmdc.org.bd/about-college-n",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "publicField": "recognition",
+      "claimText": "DCIMC (FAIMER School ID F0003459) is listed in the World Directory of Medical Schools as currently operational, with academic affiliation to the University of Dhaka, MBBS qualification and a 5-year curriculum duration.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — DCIMC listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0003459",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "academics",
+      "claimText": "The MBBS programme is 5 years plus a compulsory 1-year internship, degree conferred by the University of Dhaka, with English as the stated medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official MBBS Course Overview page",
+      "sourceUrl": "https://dcimch.com/academics/mbbs-course-over-view/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Foreign applicants need an aggregate GPA of at least 7.0 (5-point scale) and a Biology grade point of at least 3.50 per the Foreign Students Corner page (a separate official page states a 4.00 Biology minimum instead), with academic documents attested by the home country's Ministry of Education and Ministry of Foreign Affairs and an Equivalence Certificate from Bangladesh's Director, Medical Education.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official Foreign Students Corner page",
+      "sourceUrl": "https://dcimch.com/foreign-students-corner/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Indian citizens and OCIs enrolling in any foreign MBBS programme on or after May 2018 must qualify NEET-UG, whose result (valid 3 years) serves as the mandatory Eligibility Certificate; a separate Screening Test (administered as the FMGE) is required to register to practice in India after graduating abroad, and NMC does not endorse any list of foreign institutions.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission of India — for students to study abroad",
+      "sourceUrl": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "admissions",
+      "claimText": "Foreign-student admission runs through the Government of Bangladesh's foreignstudents.dgme.gov.bd online portal with a printed photo, passport copy, attested academic certificates and a USD 100 application fee by TT/SWIFT; the college does not run a separate entrance exam for foreign applicants.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official Application Procedure page",
+      "sourceUrl": "https://dcimch.com/admission/application-procedure/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "intake",
+      "claimText": "The academic session starts in January each year (or as directed by the Government of Bangladesh); the most recent foreign-student application window ran 11 November 2025 to 15 January 2026 via the government DGME portal.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official MBBS Course Overview page and Foreign Students Corner page",
+      "sourceUrl": "https://dcimch.com/academics/mbbs-course-over-view/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "fee",
+      "claimText": "Total 5-year MBBS course fee is USD 44,500 with a defined installment schedule (USD 14,000 at admission, then 4,500, 6,500, 6,500, 6,500 and 6,500); food, internship and exam fees excluded; all fees non-refundable and non-transferable.",
+      "status": "indicative",
+      "sourceLabel": "DCIMC official Foreign Students Corner page",
+      "sourceUrl": "https://dcimch.com/foreign-students-corner/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "publicField": "student living",
+      "claimText": "DCIMC maintains two separate on-campus International Hostels for male and female foreign students, each managed by a dedicated hostel supervisor; food and mess costs are excluded from the tuition fee.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official Foreign Students Corner page",
+      "sourceUrl": "https://dcimch.com/foreign-students-corner/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "dhaka-central-international-medical-college",
+      "programmeSlug": "dhaka-central-international-medical-college-mbbs",
+      "publicField": "professional pathway",
+      "claimText": "The compulsory 1-year BMDC-recognized rotatory internship can be completed at DCIMC's own teaching hospital, described as a 500-bed facility with named critical-care and specialty departments including ICU, NICU, HDU, haemodialysis and a Trauma Care unit.",
+      "status": "verified",
+      "sourceLabel": "DCIMC official Campus page and Internship Training page",
+      "sourceUrl": "https://dcimch.com/campus",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "countrySlug": "kuwait",
+  "universitySlug": "kuwait-university-college-of-medicine",
+  "schoolName": "Kuwait University College of Medicine",
+  "cityName": "Kuwait City",
+  "priority": "medium",
+  "officialWebsite": "https://med.ku.edu.kw/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Kuwait University's College of Medicine has a real seven-year medicine course leading to the Doctor of Medicine degree. The College describes a staged programme in which candidates who obtain the Kuwait University B.Med.Sc. may proceed to clinical study toward the MD. Kuwait University's official 2025/26 admissions rules require at least 85% secondary-school results for Medicine and weight English and mathematics aptitude tests. The university's 2026/27 public notice specifically covers Kuwaiti applicants, including Kuwaiti holders of certificates from outside Kuwait. No official current pathway for general international applicants, fee schedule, explicit programme teaching-language statement, international accommodation/support package, or audience-relevant recognition/licensing route was found. The candidate is held rather than published as a study-abroad option.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Kuwait University College of Medicine — Medicine department",
+        "url": "https://med.ku.edu.kw/departments/medicine",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Official department page states that the College was established in 1973 and offers a seven-year medicine course."
+      },
+      {
+        "label": "Kuwait University College of Medicine — Bachelor of Medical Doctor",
+        "url": "https://med.ku.edu.kw/academics/study-programs/bachelor-medical-doctor",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Official study-programme page identifies the Bachelor of Medical Doctor (M.D.) programme."
+      },
+      {
+        "label": "Kuwait University admissions manual — College rules 2025/26",
+        "url": "https://portal.ku.edu.kw/manuals/admission/en/colleges_rules.htm",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Medicine admission weighting and the minimum 85% secondary-school requirement for the 2025/26 cycle."
+      },
+      {
+        "label": "Kuwait University — first-semester 2026/27 application announcement",
+        "url": "https://www.ku.edu.kw/media-center/news/jamt-alkwyt-tfth-bab-alalthaq-llfsl-aldrasy-alawl-2027/2026-atbaraan-mn-18-ywlyw",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "The announcement sets 2026/27 dates and expressly discusses Kuwaiti applicants holding secondary-school certificates from outside Kuwait; it does not establish a general international medical admissions channel."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Kuwait University College of Medicine",
+    "city": "Kuwait City",
+    "type": "Public",
+    "officialWebsite": "https://med.ku.edu.kw/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Official general-international-applicant eligibility and application route",
+      "Current official tuition and complete cost of attendance",
+      "Explicit language-of-instruction statement",
+      "International accommodation and ongoing student-support evidence",
+      "Audience-relevant graduate recognition and licensing evidence"
+    ],
+    "notes": "The evidence supports a domestic Kuwait University medical course, but the current public cycle is framed for Kuwaiti applicants. No programme payload is populated because a foreign education route must not be inferred from the availability of a domestic degree."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative content is intentionally blank. It would be misleading to write admissions, fee, clinical or student-life claims for international prospects before Kuwait University publishes an applicable pathway and supporting facts."
+  }
+}

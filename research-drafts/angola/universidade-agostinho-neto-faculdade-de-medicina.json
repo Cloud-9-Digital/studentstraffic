@@ -1,0 +1,31 @@
+{
+  "scope": "Angola medical discovery — Universidade Agostinho Neto Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Universidade Agostinho Neto's official Faculty of Medicine page identifies the faculty, lists Medicine as an undergraduate course, and provides faculty contact details.",
+      "sourceUrl": "https://www.uan.ao/faculdade/faculdade-de-medicina",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A 2025 official UAN notice confirms a dedicated access examination calendar for Medicine.",
+      "sourceUrl": "https://www.uan.ao/detalhes/noticia/alteracao-da-data-da-prova-de-acesso-ao-curso-de-medicina",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Angola's higher-education ministry reported a 2025 visit to UAN Faculty of Medicine laboratories and clinical facilities, and described a university hospital under construction at the Camama campus.",
+      "sourceUrl": "https://mescti.gov.ao/web/noticias/mescti-realiza-visita-de-constatacao-a-faculdade-de-medicina-da-uan",
+      "sourceType": "national-ministry",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Medicine tuition and mandatory-fee schedule was located on an official source.",
+    "The reviewed 2025 access notice does not establish a current application window, complete document checklist, or a route for international applicants.",
+    "The reviewed sources do not clearly confirm instructional language, the current clinical-placement network, programme-level accreditation outcome, accommodation, scholarship, loan, or graduate-registration arrangements."
+  ],
+  "nextAction": "Obtain the active Medicine admissions notice and fee decision directly from UAN, then verify delivery language, clinical placements, recognition and student support before considering a payload."
+}

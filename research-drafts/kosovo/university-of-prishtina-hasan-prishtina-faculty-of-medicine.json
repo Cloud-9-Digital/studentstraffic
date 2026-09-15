@@ -1,0 +1,32 @@
+{
+  "scope": "Kosovo medical discovery — University of Prishtina Hasan Prishtina Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The Faculty of Medicine lists General Medicine as an integrated six-year, 360-ECTS programme leading to the title Medical Doctor.",
+      "sourceUrl": "https://mjekesia.uni-pr.edu/page.aspx?id=2%2C19",
+      "sourceType": "official-program",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty's official history says it was established within the University of Prishtina by a 17 June 1969 law and that collaboration with Prishtina Hospital was established in 1973.",
+      "sourceUrl": "https://mjekesia.uni-pr.edu/page.aspx?=&id=2%2C103",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The General Medicine department page describes objectives including clinical and laboratory skills and student exchanges, but does not state a current applicant-facing placement allocation.",
+      "sourceUrl": "https://mjekesia.uni-pr.edu/page.aspx?id=2%2C95",
+      "sourceType": "official-program",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official General Medicine tuition amount, currency, payment terms or academic-year fee schedule was found.",
+    "No current official admission call establishes international eligibility, required documents, intake timing or selection process for General Medicine.",
+    "No official programme page located in this pass establishes the teaching language or an English-medium route.",
+    "Without those primary sources, a public programme payload would risk inventing fee, language or admissions claims."
+  ],
+  "nextAction": "Obtain the Faculty's current General Medicine admission notice and fee decision, ideally with the language of instruction and international-candidate route, before building payload.json or setting the ledger row to validated."
+}

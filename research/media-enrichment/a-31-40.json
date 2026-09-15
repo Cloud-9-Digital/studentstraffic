@@ -1,0 +1,219 @@
+[
+  {
+    "universitySlug": "auckland-university-of-technology",
+    "universityName": "Auckland University of Technology",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Found a free PD-textlogo AUT wordmark on Commons. Cover remains held: aut.ac.nz's homepage banners are all campaign-dated event promos (e.g. 'AUT LIVE 2026 - 29 Aug 2026'), not a generic evergreen campus image suitable as a lasting cover asset.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/auckland-university-of-technology/logo",
+      "cover": "universities/auckland-university-of-technology/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Logo_of_Auckland_University_of_Technology.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons PD-textlogo tag (simple shapes/text below threshold of originality; trademark may still apply), file provenance notes it was sourced from AUT's own official website.",
+      "proposedPublicId": "auckland-university-of-technology-logo"
+    }
+  },
+  {
+    "universitySlug": "australian-national-university",
+    "universityName": "Australian National University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Re-checked: both the ANU logo/emblem and the ANU coat of arms are hosted locally on English Wikipedia (not Commons) and are explicitly tagged non-free/fair-use, not PD-textlogo -- so, unlike some peer universities, no free Commons alternative exists for ANU. This confirms the original hold; no new safe asset found.",
+    "proposedPublicIds": {
+      "logo": "universities/australian-national-university/logo",
+      "cover": "universities/australian-national-university/cover"
+    }
+  },
+  {
+    "universitySlug": "avicenna-batumi-medical-university",
+    "universityName": "Avicenna Batumi Medical University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Confirmed official domain avicennabatumi.edu.ge (not recorded anywhere locally); serves a clean logo and genuine lab/teaching photography directly..",
+    "proposedPublicIds": {
+      "logo": "universities/avicenna-batumi-medical-university/logo",
+      "cover": "universities/avicenna-batumi-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://avicennabatumi.edu.ge/wp-content/uploads/2024/08/newLogo6.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official wordmark SVG served from the university's own uploads folder.",
+      "proposedPublicId": "avicenna-batumi-medical-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://avicennabatumi.edu.ge/wp-content/uploads/2024/08/6S2A2733-1024x683.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official photo of students and staff in a teaching laboratory, from the university's own site.",
+      "proposedPublicId": "avicenna-batumi-medical-university-cover"
+    }
+  },
+  {
+    "universitySlug": "avicenna-international-medical-university",
+    "universityName": "Avicenna International Medical University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "This session's web-search tool was exhausted (budget limit) before this institution's domain could be confirmed, and no official URL is recorded anywhere in the local repo. One plausible domain guess (avicenna.edu.ge) resolved successfully but turned out to be a different institution ('Avicenna International Community College', a vocational college, not this medical university) -- using it would risk assigning the wrong institution's brand, so it was rejected rather than used. No safe asset found this pass.",
+    "proposedPublicIds": {
+      "logo": "universities/avicenna-international-medical-university/logo",
+      "cover": "universities/avicenna-international-medical-university/cover"
+    }
+  },
+  {
+    "universitySlug": "bau-international-university-batumi",
+    "universityName": "BAU International University Batumi",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Confirmed official domain bauinternational.edu.ge (not recorded anywhere locally); serves a clean logo and genuine facility photography directly..",
+    "proposedPublicIds": {
+      "logo": "universities/bau-international-university-batumi/logo",
+      "cover": "universities/bau-international-university-batumi/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://bauinternational.edu.ge/img/logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official BAU International University Batumi logo served from the university's own site.",
+      "proposedPublicId": "bau-international-university-batumi-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://bauinternational.edu.ge/storage/laboratory/2.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official photo of a BAU Batumi student lounge (branded 'We <3 BAU' wall graphic visible), from the university's own site.",
+      "proposedPublicId": "bau-international-university-batumi-cover"
+    }
+  },
+  {
+    "universitySlug": "bi-norwegian-business-school",
+    "universityName": "BI Norwegian Business School",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): bi.edu redirects to bi.no. Found a free PD-textlogo wordmark on Commons plus a genuine BI Oslo campus photo on BI's own media library, neither checked in the first pass..",
+    "proposedPublicIds": {
+      "logo": "universities/bi-norwegian-business-school/logo",
+      "cover": "universities/bi-norwegian-business-school/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/BI_Norwegian_Business_School_logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons PD-textlogo tag: simple text/shape logo below threshold of originality, public domain (trademark rights may still apply).",
+      "proposedPublicId": "bi-norwegian-business-school-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://media.bi.no/asset/c1bf221f-c7b6-48da-8b70-3d48091d3134/Medium/Campus-Oslo-sunrise-59.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official BI Oslo campus building photo (with BI signage), from BI's own media library at bi.no (the redirect target of bi.edu).",
+      "proposedPublicId": "bi-norwegian-business-school-cover"
+    }
+  },
+  {
+    "universitySlug": "bangladesh-medical-college",
+    "universityName": "Bangladesh Medical College",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Live bmc-bd.org currently displays 'This Account has been suspended'. A recent Wayback Machine snapshot serves both the logo and a real campus signage photo directly, confirmed HTTP 200..",
+    "proposedPublicIds": {
+      "logo": "universities/bangladesh-medical-college/logo",
+      "cover": "universities/bangladesh-medical-college/cover"
+    },
+    "logo": {
+      "sourceUrl": "http://web.archive.org/web/20250813100543im_/https://www.bmc-bd.org/uploads/logo/logo1730884443672b335bdf209.webp",
+      "sourceType": "official",
+      "rightsBasis": "Retrieved via Wayback Machine (recent snapshot) because the live site (bmc-bd.org) currently shows a hosting-account-suspended page; the archived logo file itself resolves directly (official current-brand emblem).",
+      "proposedPublicId": "bangladesh-medical-college-logo"
+    },
+    "cover": {
+      "sourceUrl": "http://web.archive.org/web/20250813100559im_/https://www.bmc-bd.org/uploads/slider/in-pursuit-of-medical-excellence17359632996778b2a3e8f65.webp",
+      "sourceType": "official",
+      "rightsBasis": "Wayback Machine snapshot of an official campus signage photo ('BMC' letters on the building facade) from bmc-bd.org's own homepage slider.",
+      "proposedPublicId": "bangladesh-medical-college-cover"
+    }
+  },
+  {
+    "universitySlug": "bashkir-state-medical-university",
+    "universityName": "Bashkir State Medical University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "The offline audit confirms a site route but does not preserve a direct, rights-reviewed asset URL; do not derive an asset from page rendering.",
+    "proposedPublicIds": {
+      "logo": "universities/bashkir-state-medical-university/logo",
+      "cover": "universities/bashkir-state-medical-university/cover"
+    }
+  },
+  {
+    "universitySlug": "batumi-shota-rustaveli-state-university",
+    "universityName": "Batumi Shota Rustaveli State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass did not check Wikimedia Commons' dedicated category for this university (Category:Shota Rustaveli State University in Batumi), which holds a CC0 emblem and a PD campus photo distinct from the Wikipedia infobox fountain image..",
+    "proposedPublicIds": {
+      "logo": "universities/batumi-shota-rustaveli-state-university/logo",
+      "cover": "universities/batumi-shota-rustaveli-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Batumi_shota_rustaveli_state_university.png",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, dedicated CC0 1.0 Universal Public Domain Dedication.",
+      "proposedPublicId": "batumi-shota-rustaveli-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Batumi_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, released by the photographer into the public domain (PD-self).",
+      "proposedPublicId": "batumi-shota-rustaveli-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "belgorod-state-university",
+    "universityName": "Belgorod State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Wikimedia Commons category for the university (not consulted in the first pass) has a freely-licensed coat-of-arms and a CC-BY-SA campus photo..",
+    "proposedPublicIds": {
+      "logo": "universities/belgorod-state-university/logo",
+      "cover": "universities/belgorod-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/GerbBigB.GIF",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons \"copyrighted free use\" license: copyright holder allows use for any purpose including unrestricted redistribution, commercial use, and modification.",
+      "proposedPublicId": "belgorod-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Belgorod_State_University_in_september.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+      "proposedPublicId": "belgorod-state-university-cover"
+    }
+  }
+]

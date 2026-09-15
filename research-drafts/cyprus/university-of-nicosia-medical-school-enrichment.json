@@ -1,0 +1,84 @@
+{
+  "scope": "decision-ready local enrichment; held pending final packaging",
+  "universitySlug": "university-of-nicosia-medical-school",
+  "programme": {
+    "officialTitle": "6 Year Undergraduate Entry - Doctor of Medicine (MD)",
+    "durationYears": 6,
+    "medium": "English",
+    "summary": "University of Nicosia Medical School offers a six-year, English-taught MD for applicants entering after school. Students Traffic can assess the academic route, build a transparent cost plan and organise an application file for the active intake.",
+    "fee": {
+      "status": "confirmed",
+      "effectiveTerm": "page updated 15 April 2026",
+      "currency": "EUR",
+      "annualTuition": 24000,
+      "estimatedNicosiaLivingCostsPerYear": 12000,
+      "additionalCharges": {
+        "applicationFee": 60,
+        "administrativeFee": 1500,
+        "seatReservationDeposit": 3500,
+        "nonEuEntryVisaAndRegistration": 150,
+        "nonEuAnnualHealthInsurance": 180,
+        "annualMalpracticeInsuranceYears1to4": 300,
+        "annualMalpracticeInsuranceYears5to6Range": "EUR 600-1,250",
+        "annualPersonalAccidentInsurance": 50,
+        "eligibleUkUsaClinicalTrainingSupplementYears5to6": 6000,
+        "eligibleSwitzerlandGermanyClinicalTrainingSupplementYears5to6": 3000
+      },
+      "notes": "The administrative fee and seat-reservation deposit are deducted from first-semester tuition; the reservation deposit is described as fully refundable for students who decide not to join. The school states that clinical-location supplements, malpractice cover and living costs vary, so a single six-year total should not be presented as fixed. Fees are subject to change."
+    },
+    "admissions": {
+      "overview": "The current undergraduate-entry route requires a qualifying school credential, English evidence where applicable and an online interview. Academic and non-academic conditions are reviewed holistically rather than by minimum grades alone.",
+      "academicRoutes": [
+        "High school leaving certificate: 90% overall, including comparable grades in Biology and one of Chemistry, Physics or Mathematics",
+        "GCE A levels: ABB including Biology, one of Chemistry, Physics or Mathematics, and one additional subject",
+        "International Baccalaureate: 32 overall and 16 combined Higher Level points, including Biology and at least one of Chemistry, Physics or Mathematics"
+      ],
+      "english": "IELTS 6.5 overall with 6.5 in writing and at least 6.0 in every other component, or the listed TOEFL, GCSE, IB or European Baccalaureate alternatives. The school lists specified native-English-country exemptions.",
+      "steps": [
+        "Submit the MD application and academic records",
+        "Provide English-language evidence where required",
+        "Complete the online interview and suitability review",
+        "Accept an offer, secure the seat and complete visa, housing and pre-arrival actions that apply"
+      ],
+      "restrictions": [
+        "Clinical rotation sequence and location depend on affiliated-hospital capacity and allocation",
+        "Professional registration, visa and postgraduate-training outcomes are jurisdiction-specific and are not guaranteed by admission"
+      ]
+    },
+    "academics": "The programme comprises 12 full-time semesters and 360 ECTS. Years 1-3 cover health and disease, Year 4 is transitional, and Years 5-6 are clinical years. Integrated Clinical Practice begins early; Year 4 includes a research project and placements, Year 5 covers clinical-specialty rotations, and Year 6 includes clinical practice plus a 12-ECTS clinical elective. Students completing clinical training in Cyprus need appropriate Greek for patient communication; the school says Greek lessons are provided across the programme.",
+    "clinicalTraining": "Years 5 and 6 are predominantly clinical. The published Year 5 sub-rotations include medical and surgical gastroenterology, endocrinology, nephrology/urology, cardiology/respiratory medicine, rheumatology/orthopaedics, dermatology, paediatrics, obstetrics and gynaecology, psychiatry, neurology, ENT and ophthalmology. Year 6 includes internal medicine, general surgery, general practice and geriatric medicine, emergency medicine and intensive care. Allocation order is based on affiliated-hospital capacity.",
+    "recognition": "The official programme page states that the MD is accredited by the Cyprus Agency of Quality Assurance and Accreditation in Higher Education (CYQAA), whose WFME recognition status is also recorded by WFME. The programme page also states that the degree is listed in the World Directory of Medical Schools. These are programme-status facts; they do not replace country-specific professional registration requirements.",
+    "support": "The Medical School describes a Student Success Team with a personal tutor and career advisers, including one-to-one career planning from Year 1. Published programme material also identifies housing information, visa information and a Student Service Centre as student-life resources. For a Cyprus clinical allocation, Greek-language lessons are provided through the programme.",
+    "scholarships": "The current financial-information page says need-based scholarships of up to 20% of tuition are available after an applicant has met admission requirements, completed the interview and received an offer. It also notes that some students may have home-government support. This is partial funding, not an automatic tuition reduction.",
+    "faqs": [
+      ["How long is the UNIC undergraduate-entry MD?", "It is six years, delivered over 12 full-time semesters for 360 ECTS."],
+      ["What is the current annual tuition?", "The Medical School's financial-information page, updated 15 April 2026, lists EUR 24,000 per year. It separately lists additional fees and possible clinical-location supplements."],
+      ["What should I budget beyond tuition?", "The school estimates a minimum EUR 12,000 per year for staying in Nicosia, while housing, lifestyle, insurance, visa and clinical-location charges differ by applicant and placement."],
+      ["What grades are expected?", "The published routes include a 90% school-leaving score with Biology and a second science, A levels at ABB with the required sciences, or IB 32 with the stated Higher Level science combination."],
+      ["What English score is accepted?", "The primary published route is IELTS 6.5 overall, including 6.5 writing and at least 6.0 elsewhere; the school also lists TOEFL, GCSE, IB and European Baccalaureate alternatives."],
+      ["When does clinical training start?", "Integrated Clinical Practice and short clinical placements begin before the senior years. Years 5 and 6 are predominantly clinical, following a Year 4 transition with placements and research."],
+      ["Where are senior clinical rotations completed?", "The school publishes clinical opportunities across several countries and says rotation sequence depends on affiliated-hospital capacity. A final plan must use the individual allocation and its fees."],
+      ["Is the MD accredited?", "UNIC states that the MD is accredited by CYQAA and listed in WDOMS. Professional registration still follows the rules of the intended destination."],
+      ["Is scholarship support available?", "Need-based scholarships can cover up to 20% of tuition after offer and interview, subject to the school process and eligibility."],
+      ["What help is available once enrolled?", "The school describes a personal tutor, career advisers and a Student Success Team, alongside published housing, visa and student-service resources."]
+    ],
+    "ctas": [
+      {"label": "Check my UNIC MD eligibility", "capture": ["school curriculum and science grades", "English-test status", "target intake", "citizenship"]},
+      {"label": "Build my six-year cost plan", "capture": ["tuition budget", "Nicosia living preference", "clinical-location preference", "funding need"]},
+      {"label": "Prepare my MD application", "capture": ["academic records", "science subjects", "supporting experience", "interview readiness"]},
+      {"label": "Plan my postgraduate pathway", "capture": ["intended practice destination", "licensing objective", "language and immigration needs"]}
+    ]
+  },
+  "evidence": [
+    {"field": "programme, structure, curriculum and clinical training", "url": "https://www.unic.ac.cy/med/education/6-year-md-degree/", "type": "official-programme", "checkedAt": "2026-07-25"},
+    {"field": "admissions", "url": "https://www.unic.ac.cy/med/admissions/", "type": "official-admissions", "checkedAt": "2026-07-25"},
+    {"field": "fees and scholarship", "url": "https://www.unic.ac.cy/med/admissions/financial-information/", "type": "official-fees", "checkedAt": "2026-07-25"},
+    {"field": "CYQAA recognition status", "url": "https://wfme.org/recognition/accrediting-agencies-status/", "type": "recognition-body", "checkedAt": "2026-07-25"},
+    {"field": "directory listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000993", "type": "directory", "checkedAt": "2026-07-25"}
+  ],
+  "gaps": [
+    "A complete six-year total cannot be stated because clinical allocation, eligible training supplements, insurance, housing and personal spending vary",
+    "No individual professional-registration, visa, residency or employment outcome can be published as universal",
+    "The final clinical-site allocation and language requirements must be represented only after they are assigned"
+  ]
+}

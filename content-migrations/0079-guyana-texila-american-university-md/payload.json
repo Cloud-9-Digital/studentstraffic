@@ -1,0 +1,404 @@
+{
+  "countries": [
+    {
+      "slug": "guyana",
+      "name": "Guyana",
+      "region": "South America",
+      "summary": "Guyana is an English-speaking South American nation with strong Caribbean ties, home to Texila American University, a private medical school offering a direct-entry Premed-MD pathway with basic sciences taught in Guyana and clinical training primarily in the United States.",
+      "whyStudentsChooseIt": "Guyana offers an English-medium, direct-entry medical pathway with ECFMG-eligible recognition, a curriculum split between Caribbean-based preclinical training and US-based clinical rotations, and an admissions process built around secondary-school qualifications including Indian board exams.",
+      "climate": "Tropical climate with high humidity and consistent temperatures year-round, with a wet season roughly May-August and December-January.",
+      "currencyCode": "GYD",
+      "metaTitle": "Study MBBS and Medicine in Guyana",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Guyana, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Texila American University maps its 5.5-Year Premed-MD (BSMD) Program to this category: a direct-entry, single-cycle programme admitting straight from secondary school, confirmed by WDOMS as distinct from the university's separate 4-year graduate-entry MD track.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "guyana",
+      "slug": "texila-american-university-guyana",
+      "name": "Texila American University",
+      "city": "Georgetown",
+      "type": "Private",
+      "establishedYear": 2011,
+      "officialWebsite": "https://tau.edu.gy/",
+      "mediaAttribution": {},
+      "summary": "Texila American University (TAU) in Guyana runs a direct-entry 5.5-Year Premed-MD (BSMD) programme, confirmed by the WHO World Directory of Medical Schools as a distinct track from the university's separate 4-year graduate-entry MD. Basic sciences are taught in Guyana, with clinical training primarily at US teaching hospitals, and the programme is accredited by ACCM (Ireland, WFME-recognized) through 2029 and holds conditional accreditation from CAAM-HP.",
+      "campusLifestyle": "Students complete preclinical training at TAU's Guyana campus (Providence, East Bank Demerara), with university-managed off-campus housing available within walking distance, before transitioning to US-based clinical clerkships for the final two years.",
+      "cityProfile": "Georgetown is Guyana's capital, an English-speaking city on South America's Atlantic coast with strong historical and cultural ties to the Caribbean. TAU's main teaching facilities are based nearby at Providence, East Bank Demerara, giving students access to the capital's amenities and international-student community while training on a dedicated medical campus.",
+      "practicalExposure": "The 5.5-year Premed-MD programme runs a Guyana-based Pre-Medical phase (1.5 years, 94 credits), a Guyana-based Basic Science phase (2 years), and a Clinical Science phase (2 years) primarily at US teaching hospitals, with sister Zambia and Guyana campuses sharing a common Texila brand curriculum.",
+      "hostelOverview": "TAU provides university-managed, off-campus student housing within walking distance of the Guyana campus, fully furnished with air conditioning, 24/7 security, Wi-Fi, utilities and meal plans, in separate male/female facilities -- though the university's own materials describe these features without publishing a specific rate card. TAU's own cost-of-living guidance for Indian students estimates private shared housing at roughly USD 400-500/month and single-occupancy apartments at USD 600-800/month.",
+      "dietarySupport": "Meal plans are available as part of university-managed housing; specific costs are not separately published.",
+      "safetyOverview": "University-managed housing includes 24/7 security; no broader campus-safety statistics were published on official pages reached during research.",
+      "studentSupport": "International applicants apply online through TAU's own admissions process, with document review and no entrance exam required for the direct-entry Premed-MD track.",
+      "whyChoose": [
+        "The WHO World Directory of Medical Schools independently lists TAU's '5.5 Year BSMD Program' as a distinct, direct-entry track (prerequisite: completed secondary education, no entrance exam required), separate from the university's graduate-entry 4-Year MD Program.",
+        "Accredited by ACCM (Accreditation Commission on Colleges of Medicine, Ireland, WFME-recognized) for a full 6-year term through 30 June 2029.",
+        "Graduates eligible to apply for ECFMG Certification, with graduation years 2011-current recognized.",
+        "Explicit eligibility route for Indian Board examination holders, requiring a minimum 50% aggregate across Biology, Chemistry, Physics, Mathematics, English and one elective.",
+        "Real, published international scholarships including a Global Citizen Grant offering 10-20% tuition reduction for international students."
+      ],
+      "thingsToConsider": [
+        "CAAM-HP accreditation is currently 'Accreditation with Conditions' for a 3-year term (2023-2026), following an earlier 2018 accreditation denial; CAAM-HP's own January 2026 progress update states TAU is due for a full renewal site visit later in 2026, with the outcome not yet known -- monitor this before committing.",
+        "It was not independently confirmed whether CAAM-HP's and ACCM's accreditation decisions explicitly cover the 5.5-Year direct-entry track specifically, or only the core 4-year MD curriculum that both entry pathways feed into.",
+        "Clinical Science training for this track is primarily US-based, which carries a substantially higher per-semester tuition (USD 15,750) than Guyana-based semesters (USD 9,000) -- a roughly USD 27,000 premium across the full clinical phase versus completing clinical years in Guyana.",
+        "The university's own official pages do not publish a specific application-fee figure; only a third-party estimate (around USD 49) was found and should be confirmed directly with TAU.",
+        "TAU's own marketing pages make detailed claims about NMC/FMGE/NExT compliance for Indian students; these are self-reported by the university and were not independently verified against an official NMC source."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-confirmed direct-entry medical pathway with US-based clinical training and ECFMG eligibility.",
+        "Applicants comfortable with a documents-only admissions process (no entrance exam or interview for this specific track) but who can budget for the higher cost of US-based clinical semesters.",
+        "Families able to independently confirm CAAM-HP's pending 2026 renewal outcome and current application-fee amount directly with the university before committing."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0002428, direct-entry '5.5 Year BSMD Program' confirmed as a distinct track from the graduate-entry 4-year MD",
+        "ACCM (Accreditation Commission on Colleges of Medicine, Ireland, WFME-recognized) -- Accredited since May 2023, 6-year term through 30 June 2029",
+        "CAAM-HP (Caribbean Accreditation Authority) -- Accreditation with Conditions, 3-year term 2023-2026, renewal site visit pending",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 2011-present"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Texila American University (Guyana) listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0002428" },
+        { "label": "CAAM-HP -- Texila American University accreditation decision (PDF)", "url": "https://caam-hp.org/wp-content/uploads/2026/05/Texila-2026.pdf" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Premed-MD programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools separately lists TAU's 5.5-Year BSMD Program as direct-entry (prerequisite: completed secondary education, no entrance exam), distinct from the university's separate 4-year graduate-entry MD, which requires a prior undergraduate degree."
+        },
+        {
+          "question": "Can Indian students with 12th-grade marks apply directly?",
+          "answer": "Yes. The university's own eligibility criteria explicitly list Indian Board examinations as a recognized qualification, requiring a minimum 50% aggregate across Biology, Chemistry, Physics, Mathematics, English and one additional elective."
+        },
+        {
+          "question": "How is the programme structured?",
+          "answer": "A Guyana-based Pre-Medical phase (1.5 years), a Guyana-based Basic Science phase (2 years), and a Clinical Science phase (2 years) primarily completed at teaching hospitals in the United States, totaling 5.5 years."
+        },
+        {
+          "question": "Is there an entrance exam?",
+          "answer": "No. The WHO World Directory of Medical Schools confirms no entrance exam is required for the direct-entry Premed-MD track; the university's Texila Medical Admission Test (TMAT) and Multiple Mini Interviews apply only to its separate graduate-entry 4-Year MD Program."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 9,000 per semester for Guyana-based semesters and USD 15,750 per semester for US-based clinical semesters, confirmed on the official tuition page; additional exam, insurance, visa and graduation fees also apply. US-based clinical training carries roughly a USD 27,000 premium over the full clinical phase compared to completing it in Guyana."
+        },
+        {
+          "question": "Are scholarships available?",
+          "answer": "Yes. TAU publishes a Global Citizen Grant (10-20% tuition reduction for international students) and other merit-based awards, though most named scholarships are Caribbean-exam-linked or US-pathway-specific; confirm current eligibility for Indian applicants directly with the university."
+        },
+        {
+          "question": "When can I start and what is the intake schedule?",
+          "answer": "Two intakes per year, March and September; for 2026, classes begin 23 March and 28 September, with registration closing shortly before each start date."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "Yes, university-managed off-campus housing near the Guyana campus is available, though no specific rate card is published; TAU's own cost-of-living guidance estimates private shared housing at roughly USD 400-500/month."
+        },
+        {
+          "question": "Can graduates practice medicine outside Guyana?",
+          "answer": "Graduates are eligible to apply for ECFMG Certification (US pathway) and the university states its programme is recognized by Canada's Medical Council. The university also makes detailed claims about compliance with India's National Medical Commission FMGE/NExT requirements for Indian students, but these are self-reported by the university and were not independently verified against an official NMC source."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Texila American University (Guyana) listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0002428",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence distinguishing the direct-entry 5.5-Year BSMD track (secondary-education prerequisite, no entrance exam) from the separate graduate-entry 4-Year MD Program (prior-degree prerequisite, entrance exam required)."
+        },
+        {
+          "label": "CAAM-HP -- Texila American University accreditation decision (PDF)",
+          "url": "https://caam-hp.org/wp-content/uploads/2026/05/Texila-2026.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for CAAM-HP's current conditional accreditation status (2023-2026, 3-year term) and the pending 2026 renewal site visit."
+        },
+        {
+          "label": "ACCM -- accredited international medical schools directory",
+          "url": "https://accredmed.org/accredited-medical-schools-international-medical-school-accreditation/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for TAU's full ACCM accreditation, effective May 2023 through 30 June 2029."
+        },
+        {
+          "label": "TAU -- 5.5-Year Premed-MD Program page",
+          "url": "https://tau.edu.gy/study-pre-med-program/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria (including Indian Board examinations), programme structure and clinical-training location for the direct-entry track."
+        },
+        {
+          "label": "TAU -- tuition and financial aid page",
+          "url": "https://tau.edu.gy/tuition-and-aid/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming current per-semester tuition for Guyana-based and US-based clinical semesters, plus itemized additional fees."
+        },
+        {
+          "label": "TAU -- scholarships and financial aid",
+          "url": "https://tau.edu.gy/scholarship-aid/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for real, currently published international-student scholarships including the Global Citizen Grant."
+        },
+        {
+          "label": "TAU -- accreditation and recognition page",
+          "url": "https://tau.edu.gy/accreditation-and-recognition/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Source of TAU's self-reported claims regarding NMC/FMGE/NExT compliance for Indian students, flagged as unverified against an official NMC source."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "research_ready",
+          "studentLiving": "research_ready",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry physics maths grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "personal statement status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "texila-american-university-guyana-bsmd",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "5.5-Year Premed-MD (BSMD) Program",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2025-2026",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 18000,
+            "officialTotalTuitionAmount": 126000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published semester tuition: USD 9,000/semester for Guyana-based semesters (Premed and Basic Science phases, 3.5 years / 7 semesters) and USD 15,750/semester for US-based Clinical Science semesters (2 years / 4 semesters), confirmed on the official tuition-and-aid page. Total across the full 5.5-year, 11-semester programme is approximately USD 126,000 (7 x 9,000 + 4 x 15,750), before additional exam, insurance, visa and graduation fees, which add several thousand dollars more. This total assumes the default US-based clinical pathway described for this specific track; officialAnnualTuitionAmount is an approximate blended average, not a flat per-year rate."
+          },
+          "officialProgramUrl": "https://tau.edu.gy/study-pre-med-program/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education, including recognized Indian Board examinations with a minimum 50% aggregate in Biology, Chemistry, Physics, Mathematics, English and one elective"
+            ],
+            "restrictions": [
+              "Applicants with more advanced pre-university coursework (A-Levels, CAPE Units I-II, full IB) may receive 30 transfer credits and complete the programme in 5 years instead of 5.5"
+            ],
+            "notes": "No entrance exam or interview is required for this direct-entry track, unlike the university's separate graduate-entry 4-Year MD Program (which requires the TMAT and Multiple Mini Interviews).",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://tau.edu.gy/study-pre-med-program/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online, submit academic transcripts and supporting documents, and are evaluated on a case-by-case basis; no entrance exam or interview applies to this direct-entry track.",
+            "eligibility": {
+              "intro": "Admission requires a secondary-school qualification recognized as equivalent to 12 years of education, including Indian Board examinations, with minimum science-subject grades.",
+              "items": [
+                "Secondary-school certificate (including Indian Board examinations) with minimum 50% aggregate in Biology, Chemistry, Physics, Mathematics, English and one elective",
+                "Official academic transcripts from all institutions attended",
+                "Personal statement (up to 1,500 words) and two letters of recommendation, at least one academic"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through TAU's admissions portal",
+              "Submit required documents including transcripts, personal statement, resume/CV and recommendation letters",
+              "Pay the application fee (exact amount not published by the university; confirm directly)",
+              "Undergo eligibility/document screening",
+              "Receive an admissions decision"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Official secondary-school transcripts",
+                "Personal statement (up to 1,500 words)"
+              ],
+              "application": [
+                "Valid passport with colour copy and 2 passport photos",
+                "Two letters of recommendation, at least one academic, and a resume/CV"
+              ]
+            },
+            "deadlinesNote": "Two intakes per year, March and September. For 2026: classes begin 23 March and 28 September, with registration closing shortly before each start date.",
+            "visaConsiderations": [
+              "A USD 250 international visa processing fee and USD 560 visa extension fee apply; confirm current Guyanese and, if applicable, US clinical-rotation visa requirements directly with TAU."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["March", "September"],
+          "intakeCodes": ["march", "september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current tuition: USD 9,000/semester (Guyana-based) and USD 15,750/semester (US-based clinical), from the official tuition-and-aid page. Additional itemized fees include exam fees, educational resources, exit exams (USD 1,000 or USD 2,000 depending on clinical location), malpractice and health insurance, and visa fees.",
+          "teachingPhases": [
+            {
+              "phase": "5.5-year Premed-MD (BSMD) programme",
+              "language": "English",
+              "details": "Pre-Medical phase (1.5 years / 3 semesters, Guyana, 94 credits), Basic Science phase (2 years, Guyana), and Clinical Science phase (2 years, primarily at US teaching hospitals). Students with advanced pre-university coursework (A-Levels, CAPE, full IB) may receive 30 transfer credits and complete the programme in 5 years."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-guyana",
+      "publicField": "identity",
+      "claimText": "Texila American University began medical instruction in Guyana in 2011 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Texila American University (Guyana) listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0002428",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-guyana",
+      "programmeSlug": "texila-american-university-guyana-bsmd",
+      "publicField": "recognition",
+      "claimText": "WHO World Directory of Medical Schools lists TAU's '5.5 Year BSMD Program' as a direct-entry track (prerequisite: completed secondary education, no entrance exam required), distinct from the university's separate 4-Year MD Program which requires a prior undergraduate degree and an entrance exam.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Texila American University (Guyana) listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0002428",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-guyana",
+      "publicField": "recognition",
+      "claimText": "Accredited by ACCM (Accreditation Commission on Colleges of Medicine, Ireland, WFME-recognized) since May 2023, for a 6-year term through 30 June 2029. Separately holds CAAM-HP 'Accreditation with Conditions' for a 3-year term (2023-2026), with a renewal site visit pending as of a January 2026 progress update.",
+      "status": "verified",
+      "sourceLabel": "CAAM-HP -- Texila American University accreditation decision (PDF)",
+      "sourceUrl": "https://caam-hp.org/wp-content/uploads/2026/05/Texila-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-guyana",
+      "programmeSlug": "texila-american-university-guyana-bsmd",
+      "publicField": "academics",
+      "claimText": "The 5.5-Year Premed-MD programme runs a Guyana-based Pre-Medical phase (1.5 years, 94 credits), a Guyana-based Basic Science phase (2 years), and a Clinical Science phase (2 years) primarily at US teaching hospitals.",
+      "status": "verified",
+      "sourceLabel": "TAU -- 5.5-Year Premed-MD Program page",
+      "sourceUrl": "https://tau.edu.gy/study-pre-med-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-guyana",
+      "programmeSlug": "texila-american-university-guyana-bsmd",
+      "publicField": "eligibility",
+      "claimText": "Indian Board examinations are explicitly recognized, requiring a minimum 50% aggregate in Biology, Chemistry, Physics, Mathematics, English and one elective; no entrance exam is required for this track.",
+      "status": "verified",
+      "sourceLabel": "TAU -- 5.5-Year Premed-MD Program page",
+      "sourceUrl": "https://tau.edu.gy/study-pre-med-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-guyana",
+      "programmeSlug": "texila-american-university-guyana-bsmd",
+      "publicField": "admissions",
+      "claimText": "Applicants apply online, submit transcripts, a personal statement and two letters of recommendation, and are evaluated case-by-case; no entrance exam or interview applies to this direct-entry track, unlike the university's separate 4-Year MD Program.",
+      "status": "verified",
+      "sourceLabel": "TAU -- 5.5-Year Premed-MD Program page",
+      "sourceUrl": "https://tau.edu.gy/study-pre-med-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-guyana",
+      "programmeSlug": "texila-american-university-guyana-bsmd",
+      "publicField": "intake",
+      "claimText": "Two intakes per year, March and September; for 2026, classes begin 23 March and 28 September, with registration closing shortly before each start date.",
+      "status": "verified",
+      "sourceLabel": "TAU -- 5.5-Year Premed-MD Program page",
+      "sourceUrl": "https://tau.edu.gy/study-pre-med-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-guyana",
+      "programmeSlug": "texila-american-university-guyana-bsmd",
+      "publicField": "fee",
+      "claimText": "USD 9,000/semester for Guyana-based semesters and USD 15,750/semester for US-based clinical semesters, confirmed on the official tuition-and-aid page, plus itemized additional exam, insurance, visa and graduation fees.",
+      "status": "verified",
+      "sourceLabel": "TAU -- tuition and financial aid page",
+      "sourceUrl": "https://tau.edu.gy/tuition-and-aid/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-guyana",
+      "publicField": "student living",
+      "claimText": "University-managed off-campus housing near the Guyana campus is available with furnished rooms, security and utilities included, though no specific rate card is published; TAU's own cost-of-living guidance estimates private shared housing at roughly USD 400-500/month.",
+      "status": "verified",
+      "sourceLabel": "TAU -- 5.5-Year Premed-MD Program page",
+      "sourceUrl": "https://tau.edu.gy/study-pre-med-program/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

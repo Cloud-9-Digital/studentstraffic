@@ -1,0 +1,189 @@
+{
+  "batchId": "media-a-161-170",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official website or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "universityName": "Iuliu Hatieganu University of Medicine and Pharmacy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://cdn.umfcluj.ro/uploads/2021/05/logo-umfcluj.svg",
+        "sourceType": "official",
+        "rightsBasis": "official UMF Cluj brand asset served from its institutional CDN",
+        "proposedPublicId": "iuliu-hatieganu-university-of-medicine-and-pharmacy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://cdn.umfcluj.ro/uploads/2021/10/umfih-07.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image declared in the university homepage metadata",
+        "proposedPublicId": "iuliu-hatieganu-university-of-medicine-and-pharmacy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "ivane-javakhishvili-tbilisi-state-university",
+      "universityName": "Ivane Javakhishvili Tbilisi State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The first pass found TSU's official site logo but no cover; this pass instead sourced both assets from Wikimedia Commons under clean free licenses (a public-domain 1918 coat of arms for the logo, a CC-BY-SA 2.0 gate photo for the cover), avoiding any question about the official site's own reuse terms..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/TSU_Logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (TSU's own coat of arms, designed by Dimitri Shevardnadze, 1918; sourced from tsu.ge). Tagged PD-1923 (published before 1 Jan 1931). Verified HTTP 200.",
+        "proposedPublicId": "ivane-javakhishvili-tbilisi-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Tbilisi_State_University_gate.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (photographer Saskia van de Nieuwenhof, via Flickr), CC-BY-SA 2.0. Depicts the Corpus I gate on Ilia Chavchavadze Avenue. Verified HTTP 200.",
+        "proposedPublicId": "ivane-javakhishvili-tbilisi-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "ivanovo-state-medical-academy",
+      "universityName": "Ivanovo State Medical Academy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed via both the official site and Russian Wikipedia that the institution was renamed 'Ivanovsky State Medical University' in 2024. No Commons-licensed or Wikipedia logo/photo could be tied to the pre-rename 'Academy' identity specifically (Wikipedia now documents it entirely under the University name). Consistent with the original hold reason: assigning current-brand media to the legacy Academy-labelled catalogue record would create a name mismatch. Needs a rename/identity decision before any media is assigned; no media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "izhevsk-state-medical-academy",
+      "universityName": "Izhevsk State Medical Academy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed via Russian Wikipedia that the institution was elevated to 'Izhevsk State Medical University' in November 2025 by order of the Russian Ministry of Health. The Wikipedia article carries no separate logo image at all (only a building photograph), so no rename-agnostic asset exists there either. Consistent with the original hold reason: this is a live identity/rename issue, not a missing-asset issue. Needs a rename/identity decision before any media is assigned; no media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "jagiellonian-university-medical-college",
+      "universityName": "Jagiellonian University Medical College",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://medschool.uj.edu.pl/cm/themes/cmuj-podjednostka-2026/images/logo3-en.png",
+        "sourceType": "official",
+        "rightsBasis": "official English Medical College brand asset served from medschool.uj.edu.pl",
+        "proposedPublicId": "jagiellonian-university-medical-college-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://medschool.uj.edu.pl/cm/uploads/2018/08/banner1_400-1430x394.png",
+        "sourceType": "official",
+        "rightsBasis": "official School of Medicine in English banner image",
+        "proposedPublicId": "jagiellonian-university-medical-college-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "jalal-abad-international-university",
+      "universityName": "Jalal-Abad International University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The first pass found only one social-share image and could not tell whether it was the logo or a cover. This pass separated the two: the favicon/apple-touch-icon (distinctly named 'logo-jaiu-kg-128.png') is the logo, and the larger og:image student photo is a distinct cover-type asset. Direct jaiu.kg loads still 403, but both assets live on the site's own tildacdn.one storage bucket, which is not behind that block..",
+      "logo": {
+        "sourceUrl": "https://static.tildacdn.one/tild6434-6538-4565-b931-303762623164/logo-jaiu-kg-128.png",
+        "sourceType": "official",
+        "rightsBasis": "Official JAIU site (jaiu.kg, built on Tilda) apple-touch-icon/192px favicon, served from the site's own Tilda CDN bucket (filename literally 'logo-jaiu-kg-128.png'). Verified HTTP 200 directly (not via Wayback).",
+        "proposedPublicId": "jalal-abad-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://static.tildacdn.one/tild3263-3466-4230-a333-643433333432/full-shot-student-li.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official JAIU site's own og:image (site-wide social share photo, filename 'full-shot-student-li.webp'). Verified HTTP 200 directly.",
+        "proposedPublicId": "jalal-abad-international-university-cover"
+      }
+    },
+    {
+      "universitySlug": "jalal-abad-peoples-friendship-university",
+      "universityName": "Jalal-Abad Peoples Friendship University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Repeated this pass's domain-probing technique against several plausible short-form domains (jafu.kg, jipfu.kg, japfu.kg) with no successful connection to any of them. No Wikipedia article and no Commons category exist under this name. Consistent with the original hold reason: no authoritative official domain could be identified, so no media technique could be applied. Held."
+    },
+    {
+      "universitySlug": "jalal-abad-state-university-named-after-b-osmonov-medical-faculty",
+      "universityName": "Jalal-Abad State University Named After B. Osmonov Medical Faculty",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://jasu.kg/wp-content/uploads/2021/04/jasu-logo-mobile.png",
+        "sourceType": "official",
+        "rightsBasis": "official JASU brand asset served from the medical faculty's official website",
+        "proposedPublicId": "jalal-abad-state-university-named-after-b-osmonov-medical-faculty-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://jasu.kg/wp-content/uploads/2026/06/jl-4.png",
+        "sourceType": "official",
+        "rightsBasis": "official institutional social image declared by the faculty homepage metadata",
+        "proposedPublicId": "jalal-abad-state-university-named-after-b-osmonov-medical-faculty-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "james-cook-university",
+      "universityName": "James Cook University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Both sourced URLs (discovered via Wayback Machine, then re-verified live) resolved with HTTP 200 during research, but at upload time jcu.edu.au returned a persistent HTTP 403 to both Cloudinary's own fetcher and a direct browser-UA fetch for both assets. Neither asset was applied. Needs re-research or a manual upload in a future pass.",
+      "logo": {
+        "sourceUrl": "https://www.jcu.edu.au/_media/page-elements/JCU-Logo-Shield-RGB.png",
+        "sourceType": "official",
+        "rightsBasis": "Official JCU site (jcu.edu.au) apple-touch-icon-precomposed asset; filename located via a Wayback snapshot of the homepage, then the identical path re-requested directly against the live domain, which returned HTTP 200 (only certain routes on jcu.edu.au 403, not this static media path).",
+        "proposedPublicId": "james-cook-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.jcu.edu.au/_media/jcu_v1-banner-images/home-page/JCU_door_full-res_extra-edit.jpg/fullhd.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official JCU homepage hero banner image, same discovery/verification method as the logo above. Verified HTTP 200 directly against the live domain.",
+        "proposedPublicId": "james-cook-university-cover"
+      }
+    },
+    {
+      "universitySlug": "johns-hopkins-university",
+      "universityName": "Johns Hopkins University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Unlike JCU, jhu.edu's WAF blocks its static asset paths too (direct requests to the same URLs return 403), so per technique #3 both assets were sourced and verified strictly through the archive.org route rather than live re-verification..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260724152053im_/https://www.jhu.edu/assets/themes/machado/src/assets/images/logos/university-logo-small-horizontal-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official JHU site (jhu.edu) header/footer logo asset (site's standard reversed/white lockup, used throughout the official homepage's own nav and footer). The live jhu.edu domain and all of its static asset paths return 403 directly, so this was retrieved and verified via the Wayback Machine (archived asset URL confirmed HTTP 200 after redirect).",
+        "proposedPublicId": "johns-hopkins-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260724152053im_/https://www.jhu.edu/assets/uploads/2014/08/86-1600x800.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official JHU homepage og:image, captioned \"Homewood Campus\". Retrieved and verified via Wayback Machine the same way as the logo (live domain 403s entirely; archived asset URL confirmed HTTP 200 after redirect).",
+        "proposedPublicId": "johns-hopkins-university-cover"
+      }
+    }
+  ]
+}

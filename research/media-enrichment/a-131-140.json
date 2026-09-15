@@ -1,0 +1,200 @@
+{
+  "batchId": "media-a-131-140",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official website or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "hec-paris",
+      "universityName": "HEC Paris",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.hec.edu/themes/custom/hec_theme/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official HEC Paris brand asset served from the school website",
+        "proposedPublicId": "hec-paris-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://hec-prod-drupalfiles.oos.cloudgouv-eu-west-1.outscale.com/s3fs-public/styles/slid/public/2026-07/Home_page_Dare_geopo%20%281%29_0.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official HEC Paris homepage image served from its managed institutional storage",
+        "proposedPublicId": "hec-paris-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "hse-university",
+      "universityName": "HSE University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The homepage header logo is inline SVG/CSS as the hold reason suspected, and only small favicons were linked in <head>. Checked the site's web manifest (manifest_en.json) referenced via <link rel=manifest>, which exposes a proper 512x512 full-color app icon bearing the HSE seal -- well above favicon scale.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.hse.ru/f/src/manifest/icons/hse_app_512.png",
+        "sourceType": "official",
+        "rightsBasis": "official hse.ru PWA web-app-manifest icon, 512x512, verified HTTP 200",
+        "proposedPublicId": "hse-university-logo"
+      }
+    },
+    {
+      "universitySlug": "haw-hamburg-bscn",
+      "universityName": "HAW Hamburg BScN",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed the university-level logo resolves directly from raw HTML. Could not locate a nursing-programme-specific or campus building photo distinct from video thumbnails on the relevant pages within this pass, so cover remains unresolved as before.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.haw-hamburg.de/typo3temp/assets/_processed_/2/5/csm_haw_logo_fc912ebd62.png",
+        "sourceType": "official",
+        "rightsBasis": "official haw-hamburg.de site logo asset, verified HTTP 200",
+        "proposedPublicId": "haw-hamburg-bscn-logo"
+      }
+    },
+    {
+      "universitySlug": "hanoi-university-of-pharmacy",
+      "universityName": "Hanoi University of Pharmacy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://hup.edu.vn/data/orgs/2/2/1/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official university logo declared by Hanoi University of Pharmacy's English homepage metadata",
+        "proposedPublicId": "hanoi-university-of-pharmacy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://hup.edu.vn/data/orgs/2/2/1/images/banner-en.png",
+        "sourceType": "official",
+        "rightsBasis": "official English-site institutional banner image",
+        "proposedPublicId": "hanoi-university-of-pharmacy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "heriot-watt-university",
+      "universityName": "Heriot-Watt University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Same technique as HSE: found the site's manifest.webmanifest link in <head> and pulled its 512x512 icon, which carries the full Heriot-Watt shield crest -- resolves the 'favicon-scale only' limitation the first pass hit.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.hw.ac.uk/_Z8mtzw_2bb9e123-9adb-4078-94f7-88a8f8b1ee33/static/icon/icon-512.png",
+        "sourceType": "official",
+        "rightsBasis": "official hw.ac.uk PWA web-app-manifest icon, 512x512, verified HTTP 200",
+        "proposedPublicId": "heriot-watt-university-logo"
+      }
+    },
+    {
+      "universitySlug": "hochschule-bremen-city-university-of-applied-sciences",
+      "universityName": "Hochschule Bremen City University of Applied Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass evidently checked hs-bremen.com; the institution's actual current site is hs-bremen.de, which exposes both a direct logo SVG and an og:image that was downloaded and visually confirmed to be a genuine building photograph, not a generic card..",
+      "logo": {
+        "sourceUrl": "https://www.hs-bremen.de/_assets/f33b63229ca06ac40890a7fe3cae94cd/Frontend/Build/assets/images/logo_hsb_startseite.svg",
+        "sourceType": "official",
+        "rightsBasis": "official hs-bremen.de homepage logo SVG, verified HTTP 200",
+        "proposedPublicId": "hochschule-bremen-city-university-of-applied-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.hs-bremen.de/_assets/f33b63229ca06ac40890a7fe3cae94cd/Frontend/Build/assets/images/hsb-socialmedia-1613550361.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official hs-bremen.de og:image, verified HTTP 200 and visually confirmed as the historic HSB main building with flags",
+        "proposedPublicId": "hochschule-bremen-city-university-of-applied-sciences-cover"
+      }
+    },
+    {
+      "universitySlug": "humanitas-university",
+      "universityName": "Humanitas University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.hunimed.eu/wp-content/uploads/2025/06/Logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Humanitas University brand asset served from hunimed.eu",
+        "proposedPublicId": "humanitas-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.hunimed.eu/wp-content/uploads/2025/10/campus-hunimed-2023-1.jpg?wsr",
+        "sourceType": "official",
+        "rightsBasis": "official Humanitas University campus image declared in homepage metadata",
+        "proposedPublicId": "humanitas-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "humber-polytechnic-bscn",
+      "universityName": "Humber Polytechnic BScN",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://humber.ca/sites/g/files/qqwasj191/files/images/humber-polytechnic-logo-header.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Humber Polytechnic brand asset served from humber.ca",
+        "proposedPublicId": "humber-polytechnic-bscn-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://humbercollege.widen.net/content/ga7zmmwssg/web/students-talking-at-library-table.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official Humber institutional student-life image served from its media delivery domain",
+        "proposedPublicId": "humber-polytechnic-bscn-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kyrgyz-state-medical-academy-ksma",
+      "universityName": "Kyrgyz State Medical Academy KSMA",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.kgma.kg/images/icons/kgma_logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official KSMA brand asset served from the academy's English website",
+        "proposedPublicId": "kyrgyz-state-medical-academy-ksma-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kgma.kg/images/preview/07.26/img10_10.07.26.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official KSMA institutional news image served from the academy website",
+        "proposedPublicId": "kyrgyz-state-medical-academy-ksma-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "ie-university",
+      "universityName": "IE University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): IE's official image CDN (images.thesaurus.ie.edu) names its files descriptively; the og:image was literally named 'ie-university-logo_1' and a separate asset named after the IE Tower building was located and visually confirmed as a real campus photo rather than assumed from filename alone..",
+      "logo": {
+        "sourceUrl": "https://images.thesaurus.ie.edu/f/jpg/w/1280/h/768/ie-university-logo_1",
+        "sourceType": "official",
+        "rightsBasis": "official ie.edu og:image, filename 'ie-university-logo_1', verified HTTP 200 and visually confirmed as the IE University wordmark",
+        "proposedPublicId": "ie-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://images.thesaurus.ie.edu/c/cover/q/75/w/1920/h/1271/p/center/f/jpeg/ie-university-ie-tower-september-2021-news-body-470x305_3",
+        "sourceType": "official",
+        "rightsBasis": "official ie.edu image CDN asset named 'ie-university-ie-tower', verified HTTP 200 and visually confirmed as an interior/exterior view of the IE Tower campus building",
+        "proposedPublicId": "ie-university-cover"
+      }
+    }
+  ]
+}

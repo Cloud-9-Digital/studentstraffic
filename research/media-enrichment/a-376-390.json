@@ -1,0 +1,318 @@
+{
+  "batchId": "media-a-376-390",
+  "scope": "Alphabetical missing-media rows 376-390; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-aberdeen",
+      "universityName": "University of Aberdeen",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass only found reversed/white-on-transparent logo variants on the official site. Commons-license technique found the freely-licensed heraldic shield (used in Wikipedia's own infobox) plus a high-resolution campus building photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Shield_of_the_University_of_Aberdeen.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Shield_of_the_University_of_Aberdeen.svg - CC BY-SA 4.0 (trademark rights may still apply independent of copyright); used in the university's own Wikipedia infobox.",
+        "proposedPublicId": "university-of-aberdeen-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sir_Duncan_Rice_Library_2018-04-21.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, photo of the Sir Duncan Rice Library, one of the university's flagship modern buildings.",
+        "proposedPublicId": "university-of-aberdeen-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-adelaide",
+      "universityName": "University of Adelaide",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.adelaide.edu.au/content/dam/adelaideuniversity/images/global/logos/au-logo-dark-blue-horizontal.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-adelaide-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.adelaide.edu.au/content/dam/adelaideuniversity/images/home/banners/hero-banner-1920x740-home-north-terrace-dark.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage hero image",
+        "proposedPublicId": "university-of-adelaide-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-agder",
+      "universityName": "University of Agder",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found a cover-quality hero image but no standalone logo. Commons-license technique resolved a clean PD-textlogo SVG plus a public-domain campus photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/University_of_Agder_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:University_of_Agder_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-agder-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Hogskolen_i_Agder_Gimlemoen.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, released into the public domain by the photographer, captioned 'Campus Gimlemoen, located in Kristiansand.'",
+        "proposedPublicId": "university-of-agder-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-amsterdam",
+      "universityName": "University of Amsterdam",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found only an inline-SVG header mark with no standalone file. Commons-license technique resolved the same crossed-Saint-Andrew's-cross logo as a standalone, freely-licensed SVG, verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Amsterdamuniversitylogo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Amsterdamuniversitylogo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-amsterdam-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-antwerp",
+      "universityName": "University of Antwerp",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uantwerpen.be/img/logo-en.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-antwerp-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uantwerpen.be/thumb/db292548838c4c805975fffd88c13fb1/assets/img/images/987/w1600-h697-cc/b0ecae92-064a-4afc-9ff5-0770f09135cc.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image served from the university's own site",
+        "proposedPublicId": "university-of-antwerp-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-arizona",
+      "universityName": "University of Arizona",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Commons-license technique: found the freestanding 'A' wordmark logo (PD-textlogo) and a recent, high-resolution Old Main campus photo, both verified HTTP 200. Note the official arizona.edu seal file is a separate non-free enwiki upload and was not used..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/University_of_Arizona_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:University_of_Arizona_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-arizona-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/University_of_Arizona_May_2019_09_%28Old_Main%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (also GFDL/CC BY-SA 3.0), 2019 photo of the Old Main building.",
+        "proposedPublicId": "university-of-arizona-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-auckland",
+      "universityName": "University of Auckland",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found only a low-resolution downscaled banner thumbnail. The infobox 'University_of_Auckland_logo.svg' and 'Coat_of_Arms...png' are both non-free enwiki uploads, but a separately-hosted, freely-licensed Commons coat-of-arms SVG exists in the university's own Commons category, plus a clean CC-licensed Clock Tower photo..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Coat_of_arms_of_the_University_of_Auckland.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Coat_of_arms_of_the_University_of_Auckland.svg - CC BY 4.0.",
+        "proposedPublicId": "university-of-auckland-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/University_of_Auckland_Clock_Tower.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 2.0, photo of the ClockTower on the City Campus (a Category I historic place).",
+        "proposedPublicId": "university-of-auckland-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-barcelona",
+      "universityName": "University of Barcelona",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The official ub.edu site still returns HTTP 403 to direct fetch, and Wayback Machine snapshots of www.ub.edu only ever captured tiny redirect stubs (~370 bytes), not the real homepage, so that technique was a dead end here. Commons-license technique succeeded instead: CC0 logo plus a CC BY 3.0 campus photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Logo_Universitat_de_Barcelona.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo_Universitat_de_Barcelona.png - CC0 1.0 Universal Public Domain Dedication.",
+        "proposedPublicId": "university-of-barcelona-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Universitat_de_Barcelona_-_panoramio.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, photo of the historic main building (photographer: Mister No).",
+        "proposedPublicId": "university-of-barcelona-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-bari-aldo-moro",
+      "universityName": "University of Bari Aldo Moro",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uniba.it/it/++plone++design.plone.theme/unibalogo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website, corroborated by the site's og:image logo reference",
+        "proposedPublicId": "university-of-bari-aldo-moro-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uniba.it/unibacomunica-hero.jpg/@@images/3e635431-586d-4589-9029-98b1a21934b3.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage hero image",
+        "proposedPublicId": "university-of-bari-aldo-moro-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-basel",
+      "universityName": "University of Basel",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unibas.ch/dam/jcr:6358a0ea-352a-4fdf-b4d7-ba144817526b/uni-basel-logo.2015-01-15-10-45-05.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-basel-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.unibas.ch/dam/jcr:2009831d-8558-445d-af48-c0f7130771de/Sommerserie_Florian_Knappe_Header_1280x544.02c4eaa0a4b612c3a9b0b3e291d421dd.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional header image served from the university's own site",
+        "proposedPublicId": "university-of-basel-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-bergen",
+      "universityName": "University of Bergen",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Applied technique #4 (same-domain alternate path): the homepage's linked logo-uib-dark-en.svg/logo-uib-light-en.svg paths still 404 on www.uib.no, but the identical asset resolves cleanly on www4.uib.no, the site's own backend application host. Cover sourced via the Commons-license technique..",
+      "logo": {
+        "sourceUrl": "https://www4.uib.no/themes/custom/uib/public/image/logo-uib-dark-en.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution asset, served from the www4.uib.no application subdomain of the same uib.no domain (the front-facing www.uib.no path referenced by the homepage 404s, but the underlying Drupal host serves the identical file), verified HTTP 200 image/svg+xml.",
+        "proposedPublicId": "university-of-bergen-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/University_of_Bergen%2C_Rector_s_Office%2C_Museplass_1.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, released into the public domain, photo of the Rector's Office at Museplass.",
+        "proposedPublicId": "university-of-bergen-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-bonn",
+      "universityName": "University of Bonn",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Official uni-bonn.de is still unreachable directly and the Wayback Machine has no usable recent full-content snapshot (root URL captures returned 0 bytes). Commons-license technique resolved a public-domain official seal and a CC BY-SA 2.5 building photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/University_of_Bonn_seal.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:University_of_Bonn_seal.svg - public domain under German copyright law (Section 5(1) UrhG, official work/seal).",
+        "proposedPublicId": "university-of-bonn-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Universit%C3%A4t_Bonn.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.5 Generic, photo of the Electoral Palace, the university's main building.",
+        "proposedPublicId": "university-of-bonn-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-botswana",
+      "universityName": "University of Botswana",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Wayback Machine technique recovered the site's actual header logo (all live homepage sliders were time-bound event/marathon campaign banners, not usable as a generic cover). Cover instead sourced via the Commons-license technique for a clean, non-promotional campus courtyard photo..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260718225914im_/https://www.ub.bw/sites/default/files/UB-LOGO-2_0.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site ub.bw (unreachable directly) via Wayback Machine snapshot dated 2026-07-18; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-botswana-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/GABS-UB_Courtyard.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.5, photo captioned 'UB Library' (courtyard), used in the university's own Wikipedia infobox.",
+        "proposedPublicId": "university-of-botswana-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-bremen",
+      "universityName": "University of Bremen",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Only cover was missing. Direct inspection of the official site's /en/university page (rather than the homepage) surfaced several genuine, non-placeholder campus photographs; visually confirmed this one shows the real branded Boulevard structure with students, not the German-labelled placeholder graphic from the first pass..",
+      "cover": {
+        "sourceUrl": "https://www.uni-bremen.de/fileadmin/_processed_/c/4/csm_Campus_4x3_4_a1b2b7f788.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site uni-bremen.de, homepage 'university' section photo of the campus Boulevard walkway with visible 'Universitat Bremen' branding, verified HTTP 200 (not the 'Platzhalterbild_UniBremen' placeholder flagged in the first pass).",
+        "proposedPublicId": "university-of-bremen-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-bristol",
+      "universityName": "University of Bristol",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass had already found a logo but no cover. Re-fetched the live bristol.ac.uk homepage directly (the infobox logo on Wikipedia is a non-free enwiki upload) and captured the site's own current header SVG; cover sourced via the Commons-license technique..",
+      "logo": {
+        "sourceUrl": "https://www.bristol.ac.uk/assets/responsive-web-project/2.7.2/images/logos/uob-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site bristol.ac.uk homepage header logo asset, verified HTTP 200.",
+        "proposedPublicId": "university-of-bristol-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/University_of_bristol_tower_after_cleaning_arp.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, released into the public domain by the photographer (Arpingstone), photo of the Wills Memorial Building tower.",
+        "proposedPublicId": "university-of-bristol-cover"
+      }
+    }
+  ]
+}

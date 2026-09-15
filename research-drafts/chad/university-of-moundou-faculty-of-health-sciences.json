@@ -1,0 +1,45 @@
+{
+  "countrySlug": "chad",
+  "universitySlug": "university-of-moundou-faculty-of-health-sciences",
+  "schoolName": "Université de Moundou — Faculty of Health Sciences (candidate unconfirmed)",
+  "cityName": "Moundou",
+  "priority": "medium",
+  "officialWebsite": "https://www.univ-mdou.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Chad's higher-education ministry lists the University of Moundou as a state university, and the university's current history page confirms an active public university. This discovery pass found no authoritative current Faculty of Health Sciences or medicine programme page. The candidate was claimed as a plausible health expansion target but should not be presented as a medical university until its school/award identity is documented by the university or regulator. No fees, admissions, language, clinical, recognition or student-support facts were found.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Chad higher-education ministry state-universities list",
+        "url": "https://enseignementsuptchad.net/fr/universites-detat/",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists University of Moundou as a state university."
+      },
+      {
+        "label": "Université de Moundou official history page",
+        "url": "https://www.univ-mdou.org/historique/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms university governance and current operation; no Faculty of Health Sciences or medical degree detail located."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université de Moundou — Faculty of Health Sciences (candidate unconfirmed)",
+    "type": "Public",
+    "programs": [],
+    "missingForPublication": [
+      "confirmed medical/health faculty identity",
+      "programme title, duration and language",
+      "fees and admission process",
+      "clinical, recognition and support evidence"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public content drafted: medical-school status is unconfirmed."
+  }
+}

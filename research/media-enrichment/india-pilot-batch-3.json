@@ -1,0 +1,60 @@
+{
+  "batchId": "india-pilot-batch-3",
+  "notes": "Offline source audit completed 2026-09-08 by claude-india-media3-20260822. Covers three India records: SRM Institute of Science and Technology (Kattankulathur campus only), KIIT Deemed to be University (Bhubaneswar), and Lovely Professional University (Phagwara). Logos are sourced from each institution's own official domain (the header/brand-asset file actually served on the live site, or KIIT's dedicated public downloads page). Covers are sourced from the institution's own domain where a campus-identifiable official image exists (KIIT), otherwise from a Wikimedia Commons file whose file page states an explicit reusable licence and whose title/description confirms the correct campus (SRM Kattankulathur, LPU Phagwara). No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "universityName": "SRM Institute of Science and Technology",
+      "missing": ["logo", "cover"],
+      "logo": {
+        "sourceUrl": "https://www.srmist.edu.in/wp-content/uploads/2022/01/srm-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset: the primary header logo referenced by the university's own homepage (www.srmist.edu.in), served directly from its own official domain and confirmed live, returning image/svg+xml",
+        "proposedPublicId": "srm-institute-of-science-and-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Campus,_SRM_Institute_of_Science_and_Technology,_Kattankulathur_(August,2024).jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0 Unported), own work by author Annni07, file title and category ('SRM Institute of Science and Technology') explicitly name the Kattankulathur campus and are dated August 2024, matching the payload's Kattankulathur-only scope; licensing stated on the file page",
+        "proposedPublicId": "srm-institute-of-science-and-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kiit-deemed-to-be-university",
+      "universityName": "KIIT Deemed to be University",
+      "missing": ["logo", "cover"],
+      "logo": {
+        "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2022/10/KIIT-logo-HD.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset: high-resolution logo file listed on the university's own public Downloads page (kiit.ac.in/downloads/), served directly from its own official domain and confirmed live, returning image/png",
+        "proposedPublicId": "kiit-deemed-to-be-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2023/04/KIIT-University-Bhubaneswar.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image: served directly from the university's own official domain (kiit.ac.in) and used by the university itself as its homepage social-share (og:image) representation of KIIT University, Bhubaneswar; file name and homepage context both identify the Bhubaneswar campus; confirmed live, returning image/jpeg",
+        "proposedPublicId": "kiit-deemed-to-be-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "lovely-professional-university",
+      "universityName": "Lovely Professional University",
+      "missing": ["logo", "cover"],
+      "logo": {
+        "sourceUrl": "https://www.lpu.in/images/logo/LPU-logo-dark.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset: the primary header logo served directly from the university's own official domain (www.lpu.in), confirmed live and returning image/svg+xml",
+        "proposedPublicId": "lovely-professional-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lovely_Professional_University,_Jalandhar-Delhi_G.T._Road_(NH-1),_Phagwara,_Punjab_(INDIA).jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0 Unported), own work by author Shalintripathi, file title and description ('Picture of Lovely Professional University Sir Baldev Raj Mittal Park') both name the university's Jalandhar-Delhi G.T. Road (NH-1) address in Phagwara, matching the payload's Phagwara campus; licensing stated on the file page",
+        "proposedPublicId": "lovely-professional-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

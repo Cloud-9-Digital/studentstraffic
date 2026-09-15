@@ -1,0 +1,456 @@
+{
+  "countries": [
+    {
+      "slug": "bahrain",
+      "name": "Bahrain",
+      "region": "Middle East",
+      "summary": "Bahrain is a Gulf island nation home to internationally accredited English-medium medical schools, including a sister campus of Ireland's Royal College of Surgeons, drawing students from South Asia, the Middle East and beyond.",
+      "whyStudentsChooseIt": "Bahrain offers English-medium medical degrees with internationally recognized accreditation bodies behind them, a compact and safe island setting, and a fee structure that locks a student's entry-year tuition rate for the rest of their programme.",
+      "climate": "Hot desert climate with mild winters and very hot, humid summers, typical of the Gulf region.",
+      "currencyCode": "BHD",
+      "metaTitle": "Study MBBS and Medicine in Bahrain",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Bahrain, including admissions, fees, recognition and scholarship guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. RCSI Medical University of Bahrain maps its Undergraduate Medicine programme to this category: a direct-entry, single-cycle five- or six-year programme leading to the MB, BCh, BAO qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "bahrain",
+      "slug": "rcsi-medical-university-of-bahrain",
+      "name": "RCSI Medical University of Bahrain",
+      "city": "Busaiteen",
+      "type": "Private",
+      "establishedYear": 2004,
+      "officialWebsite": "https://www.rcsi.com/bahrain",
+      "mediaAttribution": {},
+      "summary": "RCSI Medical University of Bahrain, a sister campus of Ireland's Royal College of Surgeons founded in 2004, offers a direct-entry Undergraduate Medicine programme leading to the National University of Ireland MB, BCh, BAO degree. The programme carries Irish Medical Council accreditation and Bahrain Quality Authority recognition, and is listed in the World Directory of Medical Schools.",
+      "campusLifestyle": "RCSI Bahrain marked its 20th anniversary in 2024, having graduated its first cohort in 2010. Teaching follows RCSI's Case-Based Learning model in small groups of around 12 students, structured around three pillars -- Knowledge, Skills, and Personal and Professional Identity -- with four cross-year learning communities and a personal tutor system throughout the programme.",
+      "cityProfile": "RCSI Bahrain sits in Busaiteen, near Manama, with its own Halls of Residence a short walk from campus. Bahrain's Higher Education Council must approve every RCSI Bahrain offer of admission, and graduates' degrees are recognized and attested by that same Council alongside a published list of Gulf and international regulators.",
+      "practicalExposure": "The Undergraduate Medicine programme runs three stages: Foundation of Practice (Years 1-2, largely pre-clinical), Integration into Practice (Year 3, first hospital placements plus a 6-week Student Selected Project), and Preparation for Practice (Years 4-5). Year 4 rotates students through six-week blocks in Obstetrics and Gynaecology, Medicine and Surgery, Family Medicine, Psychiatry, and Paediatrics and Neonatology. Year 5 includes a 24-week Medicine and Surgery block, a 4-week sub-internship functioning as a clinical team member, and a 4-week student-selected clinical attachment. Clinical training runs across Bahrain Defence Force Hospital, the Mohammed Bin Khalifa Bin Salman Al Khalifa Specialist Cardiac Centre, King Hamad University Hospital, Salmaniya Medical Complex, and additional private hospitals and health centres. Graduates receive the MB, BCh, BAO (Hons) alongside licentiates from the Royal College of Surgeons and the Royal College of Physicians of Ireland; recognition for practice in any specific country depends on that country's own medical regulator, and the degree does not carry EU-wide automatic recognition since Bahrain is outside the EU.",
+      "hostelOverview": "RCSI's own Halls of Residence, about a 3-minute walk from campus, offers gender-matched 2-bedroom apartments (2 students sharing) at a combined BD 550/month per apartment (ensuite room BD 295, standard room BD 255), inclusive of wifi, electricity, water, 24-hour security and weekly housekeeping. The 10-month lease (September-June) is paid annually in advance plus a refundable security deposit, and is guaranteed only for a student's first year in Bahrain; a non-vetted off-campus private-accommodation list is also provided, with studios and apartments in the surrounding Busaiteen area typically running BD 280-450/month.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "The Halls of Residence include 24-hour security as a listed amenity. No wider university-published campus-safety statistics were found; international applicants can direct queries to Student Services.",
+      "studentSupport": "Every student is assigned a personal tutor, and the curriculum is organized around four cross-year learning communities for peer-based case, clinical and lab practice. Student Services (studentservices@rcsi.com) supports incoming students with accommodation and settling-in queries, and the Admissions Office (futurestudents@rcsi-mub.com) handles application queries.",
+      "whyChoose": [
+        "A sister campus of Ireland's Royal College of Surgeons (founded 1784), with its own 20-year track record in Bahrain (founded 2004, first graduates 2010) and Irish Medical Council programme accreditation.",
+        "Degrees recognized by name across multiple Gulf-region regulators (Saudi Arabia, UAE, Kuwait, Jordan, Oman, Iraq, Qatar) plus the Medical Board of California and the Medical Board of Trinidad and Tobago.",
+        "A tuition fee-lock guarantee: the annual rate a student enters on remains fixed for the rest of their studies at RCSI Bahrain, rather than rising each year.",
+        "A dedicated non-Bahraini merit scholarship offering a one-third tuition-fee concession for two places per cycle.",
+        "Clinical training across a named network of major Bahrain teaching hospitals, including the country's national cardiac referral centre."
+      ],
+      "thingsToConsider": [
+        "This degree does not carry EU Directive 2005/36/EC automatic recognition, unlike RCSI's Dublin campus, since Bahrain sits outside the EU; recognition instead rests on Irish Medical Council programme accreditation plus a published list of individual country regulators, so graduates should confirm their specific target country's requirements.",
+        "The next open international-application cycle was not published at the time of research; the most recent cycle (for September 2026 entry) is closed, and RCSI Bahrain's admissions office should be contacted directly for updated dates.",
+        "Non-Bahraini tuition (USD 49,400/year) is materially higher than the Bahraini-national rate (USD 39,500/year), and a non-refundable USD 10,000 deposit is due on accepting a place.",
+        "Kuwaiti nationals can no longer apply directly and must go through Kuwait's Ministry of Higher Education for scholarship or placement.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students able to fund a premium Gulf-region medical degree (or families targeting a Gulf-country recognition pathway specifically) and comfortable with a fee structure that locks the entry-year rate for the full programme.",
+        "Applicants who meet RCSI Bahrain's detailed, curriculum-specific grade thresholds (for example, A Level AAB including Chemistry, or IB 35+ with Chemistry HL 5, for the 5-year Direct Entry route).",
+        "Families comfortable confirming application-cycle dates directly with the admissions office rather than relying on a fixed, always-open annual window."
+      ],
+      "industryPartners": [
+        "Bahrain Defence Force Hospital",
+        "Mohammed Bin Khalifa Bin Salman Al Khalifa Specialist Cardiac Centre",
+        "King Hamad University Hospital",
+        "Salmaniya Medical Complex"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed, per RCSI Bahrain's official accreditation and recognition page",
+        "Irish Medical Council (IMC) — Programme Accreditation",
+        "Bahrain Quality Authority (BQA) — Programme Accreditation and Institutional Listing",
+        "Bahrain Higher Education Council (HEC) — approves every offer of admission and recognizes/attests the awarded degree",
+        "Recognized by name by the medical/higher-education regulators of Saudi Arabia, UAE, Kuwait, Jordan, Oman, Iraq and Qatar, plus the Medical Board of California and the Medical Board of Trinidad and Tobago"
+      ],
+      "recognitionLinks": [
+        { "label": "RCSI Bahrain — official License, accreditation and recognition page", "url": "https://www.rcsi.com/bahrain/about-rcsi-bahrain/license-accreditation-and-recognition" },
+        { "label": "RCSI Bahrain — Admissions FAQs (recognition and licensing guidance)", "url": "https://www.rcsi.com/bahrain/undergraduate/application-information/admissions-faqs" }
+      ],
+      "faq": [
+        {
+          "question": "Is Undergraduate Medicine at RCSI Bahrain direct-entry after high school?",
+          "answer": "Yes. Applicants apply straight from secondary education, and the Admissions Committee places successful applicants on either the 5-year Direct Entry route or the 6-year route with a Foundation Year, based on a holistic review of their qualifications."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MB, BCh, BAO (Hons), a National University of Ireland degree at NFQ Level 8, alongside licentiates from the Royal College of Surgeons and the Royal College of Physicians of Ireland, recognized and attested by Bahrain's Higher Education Council."
+        },
+        {
+          "question": "Does this degree carry the same EU recognition as RCSI's Dublin campus?",
+          "answer": "No. Bahrain is outside the EU, so this degree does not carry EU Directive 2005/36/EC automatic recognition. Recognition instead rests on Irish Medical Council programme accreditation plus a published list of individual country regulators (including Saudi Arabia, UAE, Kuwait, Jordan, Oman, Iraq, Qatar, and the Medical Board of California)."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 49,400 per year for non-Bahraini students (USD 39,500 for Bahraini nationals), for the 2026/27 academic year. The rate a student enters the programme on stays fixed for their remaining years of study, and tuition includes provision of a personal computer device."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a non-refundable USD 100 application fee, and a non-refundable USD 10,000 deposit payable on accepting a place, which is not credited toward tuition."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "There is no single standalone entrance exam; admission is assessed through the applicant's academic record against a detailed, curriculum-specific grade matrix, an English-proficiency requirement, and a structured interview for shortlisted candidates. SAT scores are required only for the American High School Diploma route."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The academic year starts in September. The cycle for September 2026 entry has closed, and RCSI Bahrain had not yet published the next application-cycle dates at the time of research -- confirm current dates directly with the Admissions Office (futurestudents@rcsi-mub.com)."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "Yes -- the RCSI Bahrain Medicine Scholarships offer a one-third tuition-fee concession per year, for two places per cycle, open to applicants generally (not restricted to Bahraini nationals), subject to higher grade thresholds, an essay and an interview. The 2026/27 scholarship cycle has closed."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "RCSI Bahrain — official License, accreditation and recognition page",
+          "url": "https://www.rcsi.com/bahrain/about-rcsi-bahrain/license-accreditation-and-recognition",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WDOMS listing claim, IMC/BQA/HEC accreditation, and the full list of country regulators recognizing the degree."
+        },
+        {
+          "label": "RCSI Bahrain — Medicine Entry Requirements page",
+          "url": "https://www.rcsi.com/bahrain/undergraduate/medicine/entry-requirements",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the full curriculum-specific eligibility matrix and English-proficiency thresholds."
+        },
+        {
+          "label": "RCSI Bahrain — How to Apply and Medicine Apply pages",
+          "url": "https://www.rcsi.com/bahrain/undergraduate/application-information/how-to-apply",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the admissions process, required documents, application fee and closed-cycle status."
+        },
+        {
+          "label": "RCSI Bahrain Student Fee Policy (Finance Department, February 2026, PDF)",
+          "url": "https://www.rcsi.com/bahrain/-/media/feature/media/download-document/bahrain/undergraduate/policies-and-procedures/admissions-policies-2025/rcsi-mub-student-fee-policy.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Official governance document; primary evidence for confirmed tuition rates, deposit terms, fee-lock policy and refund schedule."
+        },
+        {
+          "label": "RCSI Bahrain — Undergraduate Accommodation page",
+          "url": "https://www.rcsi.com/bahrain/student-life/undergraduate-essentials/accommodation",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for Halls of Residence structure, 2026/27 pricing and private-rental guidance."
+        },
+        {
+          "label": "RCSI Bahrain — Scholarships page",
+          "url": "https://www.rcsi.com/bahrain/undergraduate/application-information/scholarships",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the non-Bahraini Medicine scholarship amount, eligibility and closed-cycle status."
+        },
+        {
+          "label": "RCSI Bahrain — Programme Details page",
+          "url": "https://www.rcsi.com/bahrain/undergraduate/medicine/programme-details",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for curriculum structure, named teaching hospitals and clinical-year breakdown."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Undergraduate Medicine (MB, BCh, BAO)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 49400,
+            "officialTotalTuitionAmount": 296400,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 annual tuition: USD 49,400 for non-Bahraini students (USD 39,500 for Bahraini nationals), per the RCSI Bahrain Student Fee Policy (February 2026). The rate a student enters on is fixed for their remaining years at RCSI Bahrain. Total is calculated as the annual figure times 6 years for the longer track -- not published as a lump sum. Separate USD 100 application fee and non-refundable USD 10,000 deposit apply. Refund schedule: full refund (minus deposit/admin) before 1 August; 50% refund of tuition paid from 1 August through registration; full refund minus admin charges for visa refusal, HEC non-approval, or a positive Blood Borne Virus test; 50% refund within 2 weeks of registration; no refund after 2 weeks."
+          },
+          "officialProgramUrl": "https://www.rcsi.com/bahrain/undergraduate/medicine",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants meeting RCSI Bahrain's curriculum-specific grade matrix (e.g. A Level AAB including Chemistry, IB 35+ with Chemistry HL 5, or equivalent) with English proficiency at IELTS 6.5 overall (no band below 6.0) or equivalent"
+            ],
+            "restrictions": [
+              "Programme length (5 or 6 years) is assigned by the Admissions Committee based on prior qualifications, not chosen by the applicant",
+              "Kuwaiti nationals can no longer apply directly and must go through Kuwait's Ministry of Higher Education",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "No dedicated standalone entrance exam applies to most routes; SAT scores are required only for the American High School Diploma entry route (minimum EBRW 500 / Math 550 / total 1050).",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/medicine/entry-requirements"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online, pay the application fee, and if shortlisted attend an online interview; successful applicants accept their offer, pay the deposit, and complete enrollment with attested original documents before the September start.",
+            "eligibility": {
+              "intro": "Admission is assessed via a curriculum-specific academic grade matrix, English proficiency, and a structured interview for shortlisted candidates; requirements differ by the applicant's secondary-education system.",
+              "items": [
+                "A Levels: 3 A Levels including Chemistry plus one of Biology or Physics, minimum grades A,B,B, plus 6 GCSEs including English and Maths",
+                "IB Diploma: 6 subjects including Chemistry at Higher Level (minimum 5), minimum 35 points total for the 5-year Direct Entry route",
+                "English proficiency: IELTS Academic 6.5 overall, no band below 6.0 (valid 2 years), or equivalent",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online via RCSI Bahrain's application system and pay the non-refundable USD 100 application fee",
+              "Upload secondary-school transcripts, an Academic Evaluation Form, English-test results, passport and ID scans, and a 500-1,000 word personal statement",
+              "Attend an online interview if shortlisted, assessing communication, maturity and motivation",
+              "Accept a Full or Conditional Offer (subject to Higher Education Council approval) and pay the non-refundable USD 10,000 deposit",
+              "Complete enrollment: pay first-year fees, submit attested original documents, and attend Orientation before the September start"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary school transcripts (grades 9-12) or final transcript plus graduation certificate",
+                "Academic Evaluation Form completed and signed by the applicant's school"
+              ],
+              "application": [
+                "Passport copy (valid 6 months from the September start date)",
+                "English-proficiency test certificate or booking confirmation",
+                "Personal statement (500-1,000 words)",
+                "Proof of application-fee payment"
+              ]
+            },
+            "deadlinesNote": "The September 2026 intake is closed. RCSI Bahrain had not published September 2027 application-cycle dates at the time of research -- confirm current dates directly with the Admissions Office (futurestudents@rcsi-mub.com).",
+            "visaConsiderations": [
+              "RCSI Bahrain's own refund policy guarantees a fee refund (minus admin charges) if a student is refused a Bahrain immigration visa; confirm current visa requirements directly with the university."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 annual tuition is USD 49,400 for non-Bahraini students, per the official RCSI Bahrain Student Fee Policy (February 2026); the entry-year rate is locked for the remainder of the programme. A USD 100 application fee and a non-refundable USD 10,000 deposit apply separately. Refund policy is tiered by withdrawal date, with full refund (minus admin charges) for visa refusal or Higher Education Council non-approval.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: Foundation of Practice",
+              "language": "English",
+              "details": "Largely pre-clinical Case-Based Learning in small groups, building the programme's Knowledge, Skills and Personal and Professional Identity pillars."
+            },
+            {
+              "phase": "Year 3: Integration into Practice",
+              "language": "English",
+              "details": "First hospital-based clinical placements begin across RCSI Bahrain's named teaching hospitals, alongside a 6-week Student Selected Project."
+            },
+            {
+              "phase": "Years 4-5: Preparation for Practice",
+              "language": "English",
+              "details": "Year 4 rotates through six-week clinical blocks (Obstetrics and Gynaecology, Medicine and Surgery, Family Medicine, Psychiatry, Paediatrics and Neonatology); Year 5 includes a 24-week Medicine and Surgery block, a 4-week sub-internship, and a 4-week student-selected clinical attachment."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "publicField": "identity",
+      "claimText": "RCSI Medical University of Bahrain, a sister campus of Ireland's Royal College of Surgeons, was founded in 2004, graduated its first cohort in 2010, and marked its 20th anniversary in 2024.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — official 20th Anniversary page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/rcsi-bahrain-20th-anniversary",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "publicField": "recognition",
+      "claimText": "Accreditation and recognition: Irish Medical Council (Programme Accreditation), Bahrain Quality Authority (Programme Accreditation, Institutional Listing), Bahrain Higher Education Council, World Directory of Medical Schools listing, WHO EMRO Health Profession Education Directory, and named recognition by the medical/higher-education regulators of Saudi Arabia, UAE, Kuwait, Jordan, Oman, Iraq, Qatar, the Medical Board of California and the Medical Board of Trinidad and Tobago.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — official License, accreditation and recognition page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/about-rcsi-bahrain/license-accreditation-and-recognition",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "publicField": "recognition",
+      "claimText": "This degree does not carry EU Directive 2005/36/EC automatic recognition since Bahrain is outside the EU; graduates seeking to practise in the USA/Canada must sit USMLE/Canadian Board exams, and are advised to check the medical council of their intended country of practice.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Admissions FAQs",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/application-information/admissions-faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "programmeSlug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+      "publicField": "academics",
+      "claimText": "Undergraduate Medicine is a direct-entry programme (5-year Direct Entry or 6-year with Foundation Year, assigned by the Admissions Committee) awarding the MB, BCh, BAO (Hons), an NFQ Level 8 degree, taught entirely in English.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Why RCSI Bahrain page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/medicine/why-rcsi-bahrain",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "programmeSlug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission is assessed via a curriculum-specific grade matrix (e.g. A Level AAB including Chemistry for 5-year Direct Entry, IB 35+ with Chemistry HL 5) plus IELTS 6.5 overall (no band below 6.0) or equivalent English proficiency; no standalone entrance exam except SAT for the American High School Diploma route.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Medicine Entry Requirements page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/medicine/entry-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "programmeSlug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via RCSI Bahrain's online system with a USD 100 application fee and a defined document list; interview for shortlisted candidates; offer subject to Higher Education Council approval; enrollment confirmed with a USD 10,000 deposit.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — How to Apply page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/application-information/how-to-apply",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "programmeSlug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+      "publicField": "intake",
+      "claimText": "Academic year begins in September. The September 2026 intake is closed; RCSI Bahrain had not published September 2027 application-cycle dates at the time of research.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Medicine Apply page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/medicine/apply",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "programmeSlug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 annual tuition: USD 49,400 for non-Bahraini students (USD 39,500 for Bahraini nationals), fee-locked at the entry-year rate for the remainder of the programme; USD 10,000 non-refundable deposit; tiered refund policy by withdrawal date.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain Student Fee Policy (Finance Department, February 2026, PDF)",
+      "sourceUrl": "https://www.rcsi.com/bahrain/-/media/feature/media/download-document/bahrain/undergraduate/policies-and-procedures/admissions-policies-2025/rcsi-mub-student-fee-policy.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "programmeSlug": "rcsi-medical-university-of-bahrain-undergraduate-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Named teaching hospitals: Bahrain Defence Force Hospital, Mohammed Bin Khalifa Bin Salman Al Khalifa Specialist Cardiac Centre, King Hamad University Hospital, Salmaniya Medical Complex, plus additional private hospitals and health centres.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Admissions FAQs and Programme Details pages",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/medicine/programme-details",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "publicField": "student living",
+      "claimText": "RCSI's own Halls of Residence: 2-bedroom apartments (2 sharing) at BD 550/month combined, 10-month lease (September-June), guaranteed only for a student's first year; a non-vetted private off-campus list is also provided.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Undergraduate Accommodation page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/student-life/undergraduate-essentials/accommodation",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "publicField": "scholarship",
+      "claimText": "RCSI Bahrain Medicine Scholarships: two places per cycle, each a one-third tuition-fee concession per year, open to applicants generally (not restricted to Bahraini nationals), requiring a full or conditional offer, an essay, a non-academic reference and an interview.",
+      "status": "verified",
+      "sourceLabel": "RCSI Bahrain — Scholarships page",
+      "sourceUrl": "https://www.rcsi.com/bahrain/undergraduate/application-information/scholarships",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

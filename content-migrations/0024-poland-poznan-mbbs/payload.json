@@ -1,0 +1,428 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Poznan University of Medical Sciences maps its 6-year, high-school-graduate-pathway MD Program to this category: a direct-entry, single-cycle six-year programme leading to the Lekarz (Medical Doctor) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "poland",
+      "slug": "poznan-university-of-medical-sciences",
+      "name": "Poznan University of Medical Sciences",
+      "city": "Poznan",
+      "type": "Public",
+      "establishedYear": 1919,
+      "officialWebsite": "https://pums.edu.pl/",
+      "mediaAttribution": {},
+      "summary": "Poznan University of Medical Sciences has taught medicine since 1919 and runs a direct-entry, six-year English-medium MD programme for international students, listed in the WHO World Directory of Medical Schools with ECFMG eligibility from 1993 onward. Its accrediting body, the Polish Accreditation Committee, holds full WFME recognition, and the university carries a US NCFMEA comparability determination through Fall 2029.",
+      "campusLifestyle": "PUMS guarantees a double-room dormitory placement for every first-year international student across four residences, and runs an AAMC VSLO membership that gives students access to elective clinical rotations abroad. The curriculum builds in a Kaplan-run Comprehensive Basic Science Review at the end of Year 3 to prepare students for USMLE Step 1.",
+      "cityProfile": "Poznan is one of Poland's oldest and largest cities, home to the university's teaching hospital network and a sizeable international-student community across its several higher-education institutions. PUMS's four student dormitories sit within walking or biking distance of both the university's clinical sites and the city centre.",
+      "practicalExposure": "The six-year, 360-ECTS curriculum runs three years of basic sciences (anatomy, physiology, genetics, biochemistry, microbiology, pathology, pharmacology) followed by clinical rotations from Year 4 in internal medicine, surgery, pediatrics, psychiatry and radiology, continuing through Year 5 with further rotations and final exams, and Year 6 with remaining mandatory rotations, subspecialties and elective clinical placements. Patient contact begins from Year 2. Clinical training runs across the university's own hospital network -- the University Clinical Hospital in Poznan (four locations), the Obstetrics and Gynecology Specialist Clinical Hospital, the Wiktor Dega Orthopedics and Rehabilitation Clinical Hospital and the Karol Jonscher Clinical Hospital -- totalling roughly 2,200 beds, plus a palliative-care teaching unit and a University Center for Dentistry and Specialized Medicine. Graduates receive the Polish Lekarz qualification, which carries EU-wide automatic recognition once the national final licensing exam and a postgraduate internship are also completed.",
+      "hostelOverview": "PUMS guarantees a double-room dormitory placement for every first-year international student across four residences (Eskulap, Medyk, Aspirynka, Karolek), each within walking or biking distance of the university's teaching hospitals. From 1 July 2026, monthly fees range roughly PLN 820-950 for a shared double-room spot up to PLN 1,350-1,680 for single occupancy, plus metered utilities and a PLN 2,000 deposit; two private off-campus partners are also listed for students preferring a single room.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. The university's own cost-of-living estimate for accommodation, food, transport, healthcare and leisure combined is USD 800-1,600 per month; food should be planned as part of that overall budget.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The four student dormitories include on-site campus security as a listed amenity, alongside an English-speaking Resident Advisor team for day-to-day student support.",
+      "studentSupport": "Each of the four dormitories has an English-speaking Resident Advisor team. Academically, the curriculum includes a Kaplan-run Comprehensive Basic Science Review ahead of USMLE Step 1, and PUMS's AAMC VSLO membership gives students access to elective clinical rotations at partner sites abroad.",
+      "whyChoose": [
+        "A WDOMS-listed English MD programme with ECFMG eligibility for graduates from 1993 onward, backed by WFME accreditation of the Polish Accreditation Committee through September 2035 and a US NCFMEA comparability determination through Fall 2029.",
+        "Guaranteed dormitory placement for every first-year international student across four residences.",
+        "A large, university-owned clinical network of roughly 2,200 beds across multiple teaching hospitals, plus AAMC VSLO membership for elective rotations abroad.",
+        "EU Directive 2005/36/EC automatic recognition of the Polish Lekarz qualification once the national licensing exam and internship are completed.",
+        "Kaplan-run USMLE Step 1 preparation built into the curriculum at the end of Year 3."
+      ],
+      "thingsToConsider": [
+        "Total programme cost rises mid-course: PLN 71,000 per year in Years 1-2 stepping up to PLN 85,750 per year in Years 3-6, for a PLN 485,000 total, plus a PLN 600 entrance-exam fee and a PLN 85 application fee.",
+        "Admission requires PUMS's own in-person entrance exam and interview (a science quiz plus an interview); standardized test scores such as MCAT, UCAT or BMAT only earn bonus points and do not replace the exam.",
+        "A 2025 Polish law change means many applicants must obtain a NAWA secondary-education recognition certificate via the SYRENA platform before or alongside applying.",
+        "Published NRMP Match rates have trended down across the last three years (85% in 2023 to 77% in 2025) -- worth discussing with an advisor when weighing residency plans.",
+        "No PUMS-administered scholarship specifically for incoming international MD students was confirmed; published scholarship mentions cover faculty research or external home-country loan programmes only."
+      ],
+      "bestFitFor": [
+        "Students comfortable preparing for and sitting an in-person science entrance exam and interview, rather than relying solely on a standardized test score.",
+        "Applicants who prioritize a large, university-owned teaching hospital network with guaranteed first-year housing.",
+        "Families able to plan for a tuition step-up after Year 2 and fund the programme without a confirmed PUMS scholarship."
+      ],
+      "industryPartners": [
+        "University Clinical Hospital in Poznan",
+        "Obstetrics and Gynecology Specialist Clinical Hospital",
+        "Wiktor Dega Orthopedics and Rehabilitation Clinical Hospital",
+        "Karol Jonscher Clinical Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000411), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1993-present",
+        "World Federation for Medical Education (WFME) recognition of the Polish Accreditation Committee — valid through 30 September 2035",
+        "US National Committee on Foreign Medical Education and Accreditation (NCFMEA) comparability determination — valid through Fall 2029",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Polish Lekarz medical qualification across the EU/EEA"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Poznan University of Medical Sciences (English Division) listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000411" },
+        { "label": "PUMS official Accreditation page", "url": "https://pums.edu.pl/about-pums/accreditation/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is a long-cycle, undergraduate-entry programme -- admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive a Polish medical diploma with the professional title Lekarz, evidence of formal qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA once the national licensing exam and a postgraduate internship are also completed."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (360 ECTS credits): three years of basic sciences, a Kaplan-run USMLE Step 1 review at the end of Year 3, then clinical rotations from Year 4 through Year 6, including elective placements abroad via PUMS's AAMC VSLO membership."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "For the 2026-27 cohort, PLN 71,000 in Years 1-2, rising to PLN 85,750 in Years 3-6, for a PLN 485,000 total across the six years, plus a PLN 85 application fee and a PLN 600 entrance-exam and interview fee."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A roughly 60-minute, 60-question written science quiz covering Biology, Chemistry and Physics, plus an oral interview assessing science knowledge, motivation and English proficiency. Standardized test scores such as MCAT, UCAT, BMAT or GAMSAT only add optional bonus points."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "Orientation Week runs 7-13 September 2026, with classes beginning 14 September 2026 per the university's Application Calendar (a separate admissions page states 7 September, so this is worth confirming directly with the admissions office)."
+        },
+        {
+          "question": "Are international students guaranteed dormitory housing?",
+          "answer": "Yes for first-year students -- PUMS guarantees a double-room spot across its four dormitories (Eskulap, Medyk, Aspirynka, Karolek), each within walking or biking distance of the teaching hospitals."
+        },
+        {
+          "question": "Is a scholarship available for international MD students?",
+          "answer": "No PUMS-administered scholarship specifically for incoming international MD students is currently confirmed. The university does point students toward external, home-country loan and scholarship schemes (for example, US Sallie Mae, Ontario OSAP, German BAfoG)."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "PUMS's own admissions materials do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders pursuing a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Poznan University of Medical Sciences (English Division) listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000411",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, ECFMG graduation-year eligibility and programme-type classification."
+        },
+        {
+          "label": "PUMS official Admission Requirements and Introduction pages",
+          "url": "https://pums.edu.pl/admissions/medicine-program/admission-requirements/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility, entrance-exam format, English-proficiency thresholds and the 2025 NAWA/SYRENA recognition requirement."
+        },
+        {
+          "label": "PUMS official Tuition & Costs of Living page",
+          "url": "https://pums.edu.pl/admissions/medicine-program/tuition-costs-of-living/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed year-by-year tuition, payment installments and application/entrance-exam fees."
+        },
+        {
+          "label": "PUMS official Application Calendar and Accreditation pages",
+          "url": "https://pums.edu.pl/admissions/application-calendar/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for 2026-27 intake dates, orientation week, and WFME/NCFMEA/NRMP accreditation and match-rate figures."
+        },
+        {
+          "label": "PUMS official Student Accommodation page",
+          "url": "https://pums.edu.pl/admissions/student-accommodation/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for guaranteed first-year dormitory placement and 2026-27 dormitory fee table."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "poznan-university-of-medical-sciences-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "MD Program (High School Graduate Pathway)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "PLN",
+            "officialAnnualTuitionAmount": 71000,
+            "officialTotalTuitionAmount": 485000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published tuition table: PLN 71,000/year in Years 1-2 (2026/27, 2027/28), stepping up to PLN 85,750/year in Years 3-6 (2028/29 through 2031/32), for a PLN 485,000 six-year total. Year-1 down payment PLN 4,800, remaining first-year balance in 3 installments by 30 Sept 2026, 15 Feb 2027 and 15 Apr 2027. Separate one-time fees: PLN 85 application processing fee, PLN 600 entrance-exam and interview fee."
+          },
+          "officialProgramUrl": "https://pums.edu.pl/admissions/medicine-program/introduction/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with satisfactory secondary-school grades in Biology plus Chemistry and/or Mathematics/Physics, meeting PUMS's English-proficiency thresholds (IELTS 6.5 / TOEFL iBT 94 or equivalent)"
+            ],
+            "restrictions": [
+              "PUMS uses its own entrance exam and interview for admission; there is no GPA-based or graduate-entry route for prior degree holders",
+              "Applicants whose secondary education is not automatically recognized in Poland must obtain a NAWA recognition certificate via the SYRENA platform",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "Standardized test scores (MCAT, UCAT, BMAT, GAMSAT, DAT) from the last 2 years earn optional bonus admission points only -- they do not substitute for PUMS's own entrance exam.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://pums.edu.pl/admissions/medicine-program/admission-requirements/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants register online, pay the application fee, upload documents, sit PUMS's own science entrance exam and interview at one of several in-person sessions worldwide, then submit original documents and a down payment to confirm their place.",
+            "eligibility": {
+              "intro": "Admission requires satisfactory secondary-school grades in the required science subjects, a qualifying English-proficiency score, and PUMS's own entrance exam and interview; standardized test scores only add bonus points.",
+              "items": [
+                "Satisfactory secondary-school grades in Biology (obligatory) plus at least one of Chemistry or Mathematics/Physics; IB applicants need Higher Level Biology, Physics or Chemistry",
+                "English proficiency: TOEFL iBT 94+, IELTS 6.5+, TOEIC 900+, Pearson PTE Academic 60+, or Cambridge CAE/CPE",
+                "A 60-question, ~60-minute written science quiz (Biology, Chemistry, Physics) plus a 20-40 minute oral interview",
+                "Standardized test scores (MCAT/UCAT/BMAT/GAMSAT/DAT) from the last 2 years, submitted as optional bonus-point evidence only",
+                "NAWA secondary-education recognition certificate via the SYRENA platform, where the applicant's diploma is not automatically recognized in Poland",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online application via applicant.ump.edu.pl and pay the PLN 85 application processing fee",
+              "Upload secondary-school transcripts and any optional bonus-point documents (standardized test scores, volunteer/research evidence)",
+              "Register for and pay the PLN 600 entrance-exam and interview fee, then sit the exam at a scheduled Poznan or international session",
+              "If successful, submit original or certified documents (transcripts, apostilled/legalized diploma, NAWA certificate if required, English proficiency proof, health certificate, CV, background check)",
+              "Pay the PLN 4,800 down payment to be enrolled on the student list, then complete pre-arrival requirements (vaccination records, health insurance, visa documentation)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary school-leaving certificate/diploma with transcripts showing required subject grades",
+                "NAWA secondary-education recognition certificate, where the applicant's diploma is not automatically recognized in Poland"
+              ],
+              "application": [
+                "Passport copy",
+                "English-language proficiency certificate (unless IB-exempt)",
+                "Proof of application-fee and entrance-exam-fee payment",
+                "Health certificate, CV, and criminal background check (submitted after acceptance)"
+              ]
+            },
+            "deadlinesNote": "2026-27 intake: application deadline 31 July 2026; entrance-exam sessions run March-August 2026 at Poznan and international sites; Orientation Week 7-13 September 2026; classes begin 14 September 2026 per the Application Calendar (one admissions page states 7 September).",
+            "visaConsiderations": [
+              "Confirm current Polish student-visa and residency requirements directly with the university, given recent immigration-law changes affecting foreign-student admission."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026-27 cohort is PLN 71,000, rising to PLN 85,750/year from Year 3, for a PLN 485,000 six-year total, per the official PUMS Tuition & Costs of Living page. A PLN 85 application fee and a PLN 600 entrance-exam and interview fee apply separately at the admissions stage; no refund policy was published.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3: basic sciences",
+              "language": "English",
+              "details": "Anatomy, physiology, genetics, biochemistry, microbiology, pathology and pharmacology, concluding with a Kaplan-run Comprehensive Basic Science Review ahead of USMLE Step 1."
+            },
+            {
+              "phase": "Years 4-6: clinical rotations",
+              "language": "English",
+              "details": "Ward-based rotations in internal medicine, surgery, pediatrics, psychiatry and radiology, continuing through subspecialties and elective clinical placements, including electives abroad via AAMC VSLO membership."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "publicField": "identity",
+      "claimText": "University of Poznan founded in 1919, Medical Faculty established 1920; medical programmes became a standalone Medical Academy in 1950 and gained full university status in 2007.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Welcome to PUMS page",
+      "sourceUrl": "https://pums.edu.pl/about-pums/welcome-to-pums/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000411, 'Center for Medical Education in English'), currently operational; graduates of the 6-year high-school-graduate pathway (1993-current) eligible to apply for ECFMG Certification.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000411",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000411",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "publicField": "recognition",
+      "claimText": "PUMS's accreditor, the Polish Accreditation Committee, obtained full WFME recognition valid until 30 September 2035; PUMS separately holds a US NCFMEA comparability determination valid through Fall 2029.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Accreditation page",
+      "sourceUrl": "https://pums.edu.pl/about-pums/accreditation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "recognition",
+      "claimText": "The Polish Lekarz medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA once the LEK final exam and a postgraduate internship (staz podyplomowy) confirmed by the Naczelna Izba Lekarska are also completed.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex)",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20171201&from=PL",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "academics",
+      "claimText": "6-year, 360-ECTS, long-cycle undergraduate-entry Medicine programme (High School Graduate Pathway), taught fully in English, programme start in September.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Introduction page",
+      "sourceUrl": "https://pums.edu.pl/admissions/medicine-program/introduction/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires satisfactory grades in Biology plus Chemistry/Mathematics/Physics, an English-proficiency certificate (IELTS 6.5+/TOEFL iBT 94+), and PUMS's own 60-question written science exam plus interview; standardized test scores earn optional bonus points only.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Admission Requirements page",
+      "sourceUrl": "https://pums.edu.pl/admissions/medicine-program/admission-requirements/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "admissions",
+      "claimText": "5-step admissions process via applicant.ump.edu.pl; PLN 85 application fee; PLN 600 entrance-exam and interview fee; 2026 exam sessions in Poznan and internationally (e.g. Johannesburg, Chicago, Bangkok, New York, Toronto, Dubai, London); 2026-27 application deadline 31 July 2026.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Entrance Examination & Interview and Admission Calendar pages",
+      "sourceUrl": "https://pums.edu.pl/admissions/medicine-program/entrance-examination-interview/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "intake",
+      "claimText": "2026-27 cycle: Orientation Week 7-13 September 2026, classes beginning 14 September 2026 per the Application Calendar page (a separate Admission Requirements page states 7 September; Application Calendar treated as authoritative for its greater internal consistency).",
+      "status": "verified",
+      "sourceLabel": "PUMS official Application Calendar page",
+      "sourceUrl": "https://pums.edu.pl/admissions/application-calendar/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition 2026-27 cohort: PLN 71,000/year in Years 1-2, PLN 85,750/year in Years 3-6, PLN 485,000 six-year total; PLN 85 application fee; PLN 600 entrance-exam fee; PLN 4,800 enrollment down payment.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Tuition & Costs of Living page",
+      "sourceUrl": "https://pums.edu.pl/admissions/medicine-program/tuition-costs-of-living/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "programmeSlug": "poznan-university-of-medical-sciences-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Named teaching hospitals: University Clinical Hospital in Poznan (four locations), Obstetrics and Gynecology Specialist Clinical Hospital, Wiktor Dega Orthopedics and Rehabilitation Clinical Hospital, Karol Jonscher Clinical Hospital, totalling roughly 2,200 beds; PUMS is an AAMC VSLO member institution for elective rotations.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Clinical Base page",
+      "sourceUrl": "https://pums.edu.pl/about-pums/clinical-base/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "publicField": "student living",
+      "claimText": "Guaranteed double-room dormitory spots for first-year international students across four dormitories (Eskulap, Medyk, Aspirynka, Karolek); 2026-27 monthly fees PLN 820-1,680 depending on room type and dormitory, plus a PLN 2,000 deposit.",
+      "status": "verified",
+      "sourceLabel": "PUMS official Student Accommodation and Why PUMS pages",
+      "sourceUrl": "https://pums.edu.pl/admissions/student-accommodation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

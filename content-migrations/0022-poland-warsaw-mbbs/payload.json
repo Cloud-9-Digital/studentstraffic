@@ -1,0 +1,411 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Medical University of Warsaw maps its 6-year Medicine Program (English Division) to this category: a direct-entry, single-cycle six-year programme leading to the Lekarz (Medical Doctor) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "poland",
+      "slug": "medical-university-of-warsaw",
+      "name": "Medical University of Warsaw",
+      "city": "Warsaw",
+      "type": "Public",
+      "establishedYear": 1809,
+      "officialWebsite": "https://www.wum.edu.pl/en",
+      "mediaAttribution": {},
+      "summary": "Medical University of Warsaw is one of Poland's largest medical universities, with a continuous medical teaching tradition dating to 1809. Its English Division, established in 1993, runs a direct-entry, six-year MD programme listed in the WHO World Directory of Medical Schools, awarding the Polish Lekarz qualification with EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+      "campusLifestyle": "The Faculty of Medicine educates over 4,500 students across its six-year programme in all languages, with roughly 700 English Division students currently enrolled from more than 75 countries. Facilities include the Didactic Center, Banacha and Lindleya campuses, a Medical Simulation Centre, over 100 student associations (15 conducted in English) and more than 80 optional courses (25 in English).",
+      "cityProfile": "Warsaw, Poland's capital and largest city, hosts Medical University of Warsaw's Faculty of Medicine. International students are supported by the English Division Student Government, which organizes Orientation Week and ongoing community activities, alongside a peer Mentor-Mentee programme run jointly with IFMSA and active chapters of IFMSA and the European Medical Students' Association.",
+      "practicalExposure": "The six-year, 384-ECTS curriculum runs roughly three pre-clinical years followed by three years with a growing share of clinical training, plus a mandatory 20 weeks of summer clerkship spread across the programme; clinical training makes up 50-74% of the full curriculum per the WHO World Directory of Medical Schools. Clinical instruction takes place at the university's own teaching hospitals -- the Independent Public Central Clinical Hospital, Jozef Polikarp Brudzinski Public Pediatric Clinical Hospital, Infant Jesus Clinical Hospital, Duchess Anna Mazowiecka Hospital, the Independent Public Clinical Ophthalmology Hospital, the University Dental Center and the University Centre of Mother and Child's Health -- plus a dedicated Medical Simulation Centre. Graduates receive the Polish Lekarz qualification, which carries EU-wide automatic recognition once the Lekarski Egzamin Koncowy final exam and a postgraduate internship are also completed.",
+      "hostelOverview": "The university's Student Dormitory No. 2 BIS in the Wola district offers a limited, first-come-first-served number of places to first-year English Division students. For 2026-27, rates run EUR 2,738 per semester for a single room with private bathroom, or EUR 1,370 per semester for a shared double room, plus a deposit. Students who do not secure a university place can use the university's accredited private-partner dormitories in the Mokotow district.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Community kitchens are available on each dormitory floor, but kitchen appliances are not permitted in individual rooms. Daily food costs should be planned as a separate budget line alongside tuition and accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found for the Faculty of Medicine. International students can reach the English Division Student Government and an Ombudsman office for support with any concerns.",
+      "studentSupport": "The English Division Student Government organizes Orientation Week and a peer Mentor-Mentee programme with IFMSA. Additional administrative support runs through a Virtual Dean's Office and Student Inbox, alongside active IFMSA and European Medical Students' Association chapters.",
+      "whyChoose": [
+        "A continuous medical teaching tradition dating to 1809, with an English Division running since 1993 and roughly 700 international students currently enrolled from more than 75 countries.",
+        "Listed in the WHO World Directory of Medical Schools, with graduates noted as ECFMG-certification eligible for graduation years 1953 onward, subject to standard requirements.",
+        "The Polish Lekarz qualification carries EU Directive 2005/36/EC automatic recognition across the EU and EEA once the final licensing exam and postgraduate internship are completed.",
+        "Clinical training spans multiple named university-run teaching hospitals plus a dedicated Medical Simulation Centre.",
+        "A detailed, transparent multi-step admissions process with several qualifying routes: a university Competency Test, recognized standardized test scores, or university GPA for degree-holders."
+      ],
+      "thingsToConsider": [
+        "Total programme cost is substantial: EUR 112,800 tuition over six years (EUR 18,800 per year for the 2026-27 cohort), plus a non-refundable EUR 1,000 confirmation fee (only EUR 500 refundable if withdrawing in writing before 15 July) and a separate application fee.",
+        "A 2025 Polish law change tightened exemptions from the university's own Competency Test -- most standardized-test-score holders and bachelor's or master's degree holders are no longer automatically exempt and need individual Admission Board confirmation before applying via those routes.",
+        "University-dormitory placement for first-year students is limited and first-come-first-served; many students will need private accommodation at additional cost.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students able to fund a premium EU medical degree without requiring the Polish-language track, and strong in Biology and Chemistry for the Competency Test.",
+        "Applicants who prioritize EU-wide licence recognition over a faster or lower-cost non-EU pathway.",
+        "Families comfortable navigating a detailed, multi-step Polish admissions process, including bank-transfer-only EUR payments and case-by-case exemption confirmations."
+      ],
+      "industryPartners": [
+        "Independent Public Central Clinical Hospital",
+        "Jozef Polikarp Brudzinski Public Pediatric Clinical Hospital",
+        "Infant Jesus Clinical Hospital",
+        "Duchess Anna Mazowiecka Hospital",
+        "Independent Public Clinical Ophthalmology Hospital",
+        "University Centre of Mother and Child's Health"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed, currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1953-present",
+        "EU Directive 2005/36/EC (Annex V.1.1) — automatic recognition of the Polish Lekarz medical qualification across the EU/EEA",
+        "Naczelna Izba Lekarska (Polish Supreme Medical Chamber) — statutory issuer of EU recognition certificates for Lekarz graduates"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Medical University of Warsaw listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000871" },
+        { "label": "Medical University of Warsaw English Division official Tuition Fees order", "url": "https://ed.wum.edu.pl/sites/ed.wum.edu.pl/files/2026-03/order_58_2026_of_the_muw_rector_tuition_fee.pdf" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. Polish law classifies it as a long-cycle Master's programme, but it is direct-entry: admission follows straight from secondary education with no separate bachelor's stage."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive a Polish medical diploma with the degree title Lekarz, listed under EU Directive 2005/36/EC for automatic recognition across the EU/EEA once the Lekarski Egzamin Koncowy final exam and a postgraduate internship are also completed."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (384 ECTS credits): roughly three pre-clinical years followed by three years with a growing share of clinical training, plus a mandatory 20 weeks of summer clerkship spread across the years."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "For the 2026-27 academic year, tuition is EUR 18,800 per year (EUR 112,800 for the full six-year course), payable in two or four instalments per year."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a non-refundable application fee and a non-refundable EUR 1,000 confirmation fee, of which only EUR 500 is refundable if a candidate withdraws in writing before 15 July."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "The default route is the university's own Competency Test: 80 questions covering Biology, Chemistry and Decision Making. Candidates may alternatively submit a qualifying standardized test score or, for bachelor's or master's degree holders, a qualifying GPA, though a 2025 law change means most candidates in these alternate routes need individual confirmation from the Admission Board."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "The academic year begins with Orientation Week, provisionally scheduled for the last week of September, with the final schedule published each September."
+        },
+        {
+          "question": "Is the English Division open to Polish citizens?",
+          "answer": "No. The English-taught six-year Medicine programme is restricted to non-citizens of Poland."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        },
+        {
+          "question": "What accommodation options exist for first-year students?",
+          "answer": "The university's own Student Dormitory No. 2 BIS offers a limited, first-come-first-served number of places to first-year English Division students; those who don't secure a place can use accredited private partner dormitories."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Medical University of Warsaw listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000871",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year and ECFMG recognition notes."
+        },
+        {
+          "label": "English Division official Recruitment Paths and Admissions Steps pages",
+          "url": "https://ed.wum.edu.pl/en/recruitment-paths",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility, admissions route and entrance-exam format."
+        },
+        {
+          "label": "Rector's Order No. 58/2026 — Tuition Fees for English-medium studies 2026/2027",
+          "url": "https://ed.wum.edu.pl/sites/ed.wum.edu.pl/files/2026-03/order_58_2026_of_the_muw_rector_tuition_fee.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed tuition fee and payment terms."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20171201&from=PL",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Polish Lekarz qualification's EU automatic-recognition listing."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "medical-university-of-warsaw-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "6-year Medicine Program (MD) — English Division",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 18800,
+            "officialTotalTuitionAmount": 112800,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published under Rector's Order No. 58/2026 (25 February 2026): EUR 18,800 per year, EUR 112,800 total for the six-year course, payable in 2 instalments of EUR 9,600 or 4 instalments of EUR 4,900. Separate charges apply: a non-refundable application fee (EUR 20-24 depending on recruitment route) and a non-refundable EUR 1,000 Start-up/Confirmation Fee, credited toward tuition (only EUR 500 refundable if withdrawal is filed in writing before 15 July 2026)."
+          },
+          "officialProgramUrl": "https://ed.wum.edu.pl/node/993",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International (non-Polish-citizen) applicants holding a secondary-education diploma, IB Diploma or new Polish maturity certificate",
+              "Bachelor's or master's degree holders and recognized standardized-test-score holders, subject to individual Admission Board confirmation of exemption eligibility"
+            ],
+            "restrictions": [
+              "The English Division programme is restricted to non-citizens of Poland",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "A 2025 Polish law change (Act of 4 April 2025) tightened exemptions from the university's own Competency Test; most standardized-test-score and degree-holder candidates now need individual pre-confirmation from the Admission Board.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://ed.wum.edu.pl/en/recruitment-paths"
+          },
+          "admissionsContent": {
+            "overview": "Applicants choose a recruitment path (Competency Test, standardized test score, or GPA for degree holders), apply through the Online Registration System, pay the application fee, and are ranked on secondary-school grades plus their Criterion 2 qualification (test, score, or GPA).",
+            "eligibility": {
+              "intro": "Applicants need a secondary-education diploma (or IB/EB/Polish maturity equivalent) with required-subject grades, English proficiency, and a passing Criterion 2 qualification via the Competency Test, a recognized standardized test score, or GPA for degree holders.",
+              "items": [
+                "Secondary school-leaving certificate or equivalent (IB Geneva, EB Brussels, or Polish maturity certificate)",
+                "Passing grades in required subjects, or a supplementary WUM entrance exam for any missing subject (minimum 30%, up to two subjects)",
+                "English-language proficiency proof",
+                "Competency Test (80 questions: Biology, Chemistry, Decision Making), OR a qualifying UCAT/BMAT/MCAT/GAMSAT/HPAT score, OR university GPA for BSc/MSc holders -- each subject to 2025 exemption-confirmation rules",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Choose the correct recruitment path and, if applicable, email document scans to the Admission Board for pre-confirmation",
+              "Apply online via the Online Registration System (ORS), selecting the application type matching the chosen path",
+              "Pay the non-refundable application fee by bank transfer",
+              "Complete Criterion 2 qualification: sit the Competency Test, or present a qualifying test score or GPA",
+              "If accepted, pay the non-refundable Start-up Fee for Tuition and complete the remaining Admission File before Orientation Week"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary school-leaving certificate/diploma with transcripts, or predicted grades for current-year graduates",
+                "For the GPA route: BSc or MSc diploma with official transcript and grading-scale explanation"
+              ],
+              "application": [
+                "Passport, to confirm nationality",
+                "Proof of application-fee payment",
+                "Certified translations into English or Polish where required"
+              ]
+            },
+            "deadlinesNote": "2026-27 intake: online registration closes 30 June 2026, competency-test qualification deadline 1 July 2026, confirmation-fee partial-refund deadline 15 July 2026, Orientation Week provisionally 28-30 September 2026.",
+            "visaConsiderations": [
+              "Confirm current Polish student-visa and residency requirements directly with the university, given recent immigration-law changes affecting foreign-student admission."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026-27 cohort is EUR 18,800 per year (EUR 112,800 total for six years), per Rector's Order No. 58/2026. A separate non-refundable EUR 1,000 confirmation fee and an application fee (EUR 20-24) apply at the admissions stage; only EUR 500 of the confirmation fee is refundable if withdrawal is filed before 15 July 2026.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3: pre-clinical foundation",
+              "language": "English",
+              "details": "Foundational science coursework, with the first mandatory summer clinical clerkship after Year 1."
+            },
+            {
+              "phase": "Years 4-6: clinical training",
+              "language": "English",
+              "details": "A growing share of clinical instruction at university-owned teaching hospitals, with a summer clerkship after each year, totalling 20 weeks across the programme."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-warsaw",
+      "publicField": "identity",
+      "claimText": "Medical University of Warsaw traces continuous medical teaching to 1809; its English Division was established by the WUM Senate in 1993 to teach Medicine in English to international students.",
+      "status": "verified",
+      "sourceLabel": "English Division official About Us page",
+      "sourceUrl": "https://ed.wum.edu.pl/about-us/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-warsaw",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER ID F0000871) as currently operational; graduates (1953-current) eligible to apply for ECFMG Certification subject to standard eligibility rules.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000871",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "recognition",
+      "claimText": "The Polish Lekarz medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA; full recognition also requires the LEK final exam and a postgraduate internship (staz podyplomowy) confirmed by the Naczelna Izba Lekarska.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC and Naczelna Izba Lekarska official page",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20171201&from=PL",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "academics",
+      "claimText": "The 6-year Medicine programme is a direct-entry, single-cycle long-cycle Master's programme; admission follows completion of secondary education; qualification title Lekarz.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — Program Details",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000871",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires a secondary-education diploma, English proficiency, and either the university's Competency Test or a qualifying standardized test score/GPA, subject to 2025 exemption-confirmation rules.",
+      "status": "verified",
+      "sourceLabel": "English Division — Recruitment Paths",
+      "sourceUrl": "https://ed.wum.edu.pl/en/recruitment-paths",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "admissions",
+      "claimText": "5-step admissions process via the Online Registration System; Competency Test composition (80 questions: Biology 30, Chemistry 30, Decision Making 20); 2026-27 registration closes 30 June 2026.",
+      "status": "verified",
+      "sourceLabel": "English Division — Admissions Steps",
+      "sourceUrl": "https://ed.wum.edu.pl/en/admissions-steps",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "intake",
+      "claimText": "Academic year begins with Orientation Week, provisionally scheduled 28-30 September 2026 for the incoming class.",
+      "status": "verified",
+      "sourceLabel": "English Division official page",
+      "sourceUrl": "https://ed.wum.edu.pl/node/1048",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition 2026-27: EUR 18,800/year, EUR 112,800 total for the 6-year Medicine long-cycle Master's programme, per Rector's Order No. 58/2026 of 25 February 2026.",
+      "status": "verified",
+      "sourceLabel": "Appendix no.1 to Rector's Order No. 58/2026",
+      "sourceUrl": "https://ed.wum.edu.pl/sites/ed.wum.edu.pl/files/2026-03/order_58_2026_of_the_muw_rector_tuition_fee.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-warsaw",
+      "programmeSlug": "medical-university-of-warsaw-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Named teaching hospitals: Independent Public Central Clinical Hospital, Jozef Polikarp Brudzinski Public Pediatric Clinical Hospital, Infant Jesus Clinical Hospital, Duchess Anna Mazowiecka Hospital, Independent Public Clinical Ophthalmology Hospital, University Dental Center, University Centre of Mother and Child's Health.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Warsaw official Teaching Hospitals page",
+      "sourceUrl": "https://www.wum.edu.pl/en/kliniki",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-warsaw",
+      "publicField": "student living",
+      "claimText": "Student Dormitory No. 2 BIS (2026-27): EUR 2,738/semester single room, EUR 1,370/semester shared double room, plus deposit; limited first-year places; accredited private-partner dormitories available otherwise.",
+      "status": "verified",
+      "sourceLabel": "English Division official Dormitories page",
+      "sourceUrl": "https://ed.wum.edu.pl/pl/dormitories",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

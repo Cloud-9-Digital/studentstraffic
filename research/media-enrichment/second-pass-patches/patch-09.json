@@ -1,0 +1,449 @@
+{
+  "batchId": "second-pass-patch-09",
+  "entries": [
+    {
+      "universitySlug": "pitirim-sorokin-syktyvkar-state-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "http://web.archive.org/web/20230522062421im_/https://en.syktsu.ru/wp-content/uploads/2022/05/cropped-%D0%BB%D0%BE%D0%B3%D0%BE-%D0%A1%D0%93%D0%A3-%D0%B7%D0%BD%D0%B0%D0%BA-%D1%86%D0%B2-270x270.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university emblem, captured via Wayback Machine snapshot (2023-05-22) of en.syktsu.ru; the live site fails to resolve/connect directly",
+        "proposedPublicId": "pitirim-sorokin-syktyvkar-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "http://web.archive.org/web/20230522061643im_/https://en.syktsu.ru/wp-content/uploads/2019/05/cropped-DSC_6888-2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official homepage photo (students beside the Pitirim Sorokin monument near the main building), captured via Wayback Machine snapshot (2023-05-22) of en.syktsu.ru",
+        "proposedPublicId": "pitirim-sorokin-syktyvkar-state-university-cover"
+      },
+      "note": "en.syktsu.ru fails to connect directly (DNS/connection failure). Used Wayback Machine snapshots (technique not used in first pass) and verified both archived asset URLs resolve HTTP 200; cover visually confirmed as a campus photo with the Pitirim Sorokin statue."
+    },
+    {
+      "universitySlug": "ponce-health-sciences-university-british-virgin-islands-school-of-medicine",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://phsu.edu/_resources/images/branding/PHSU-H-Color.png",
+        "sourceType": "official",
+        "rightsBasis": "Official parent-institution brand asset hosted on phsu.edu, referenced from the BVI School of Medicine's own page on the main PHSU site",
+        "proposedPublicId": "ponce-health-sciences-university-british-virgin-islands-school-of-medicine-logo"
+      },
+      "note": "bvi.phsu.edu is a client-rendered Angular app with no static logo/cover file exposed in its markup or JS bundles (checked common asset paths, all 404). The BVI campus is officially branded under the parent Ponce Health Sciences University mark (confirmed via phsu.edu's own School of Medicine BVI page, which uses this same file), so used that official, directly-hosted PHSU logo. No BVI-specific campus photo could be verified from an official or licensed source this pass, so cover remains on hold."
+    },
+    {
+      "universitySlug": "poznan-university-of-medical-sciences",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.ump.edu.pl/img/logo-en.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, ump.edu.pl",
+        "proposedPublicId": "poznan-university-of-medical-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ump.edu.pl/media/uid/1166732c1ce_66_01c65/a1e4ba.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage carousel photo (historic building interior), hosted in ump.edu.pl's own media library",
+        "proposedPublicId": "poznan-university-of-medical-sciences-cover"
+      },
+      "note": "Direct logo file path was not previously isolated; found and verified live. Cover selected from the homepage image carousel and visually confirmed as an official interior/hall photo (not a generic stock image)."
+    },
+    {
+      "universitySlug": "princeton-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Princeton_seal.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file Princeton_seal.svg, tagged Public Domain in the US (PD-US, pre-1931 publication); hosted on Commons (not English Wikipedia's local non-free namespace), confirming it is a free-licensed file rather than fair-use. A separate trademark notice applies but does not restrict reuse of the image file itself",
+        "proposedPublicId": "princeton-university-logo"
+      },
+      "note": "Princeton's own brand/graphic-identity page (communications.princeton.edu) gates its assets behind an access-request form for University-affiliated users, so no direct public download exists there. Found the Wikipedia infobox image is hosted on Wikimedia Commons under a PD-US tag rather than as a non-free fair-use file, matching the Commons-license technique. Only 'logo' was in scope for this record (cover was not listed as missing)."
+    },
+    {
+      "universitySlug": "privolzhsky-research-medical-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://pimunn.ru/local/templates/.default/img/en/PIMU_logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site template logo asset, pimunn.ru (English-language template)",
+        "proposedPublicId": "privolzhsky-research-medical-university-logo"
+      },
+      "note": "The header logo is served as a standalone SVG inside the site's template folder rather than a plain content image, so located it directly by inspecting the template assets. Checked the homepage, About, History, and Academic-Buildings pages for a campus photo; all image references are ranking badges, accreditation emblems, and Instagram icons with no identifiable building photo, so cover remains on hold."
+    },
+    {
+      "universitySlug": "profi-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "still-hold",
+      "updatedReason": "Could not establish an authoritative current domain for this institution. Wikipedia full-text search returns no matching article (top results are unrelated 'Profi' brand/sports references). Web search engines (Bing, Google) via direct fetch returned no matching results for the exact institution name. Tried several plausible Georgian/Kyrgyz domain patterns (profi.edu.ge, profiuni.ge, profi-uni.ge, profi.ac.ge, profi.kg, profiuniversity.kg) — all failed DNS resolution. No authoritative domain or media identified this pass; first pass's conclusion stands."
+    },
+    {
+      "universitySlug": "pskov-state-university",
+      "sourceFile": "a-271-290.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://pskgu.ru/favicon.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site favicon/emblem asset (standalone SVG crest on the official domain), pskgu.ru",
+        "proposedPublicId": "pskov-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://pskgu.ru/upload/iblock/360/auys4sa3fnxzhlmutn7cngdn8p7tjye2/4319368601.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage photo (students at a university event, lanyards visible), hosted in pskgu.ru's own upload directory",
+        "proposedPublicId": "pskov-state-university-cover"
+      },
+      "note": "The site's header logo is inline/CSS-only, so used the standalone favicon SVG (a full crest, not a generic icon) hosted directly on the official domain as the alternate standalone-file technique. Cover sourced from the homepage's own upload directory and visually confirmed as a genuine campus/event photo."
+    },
+    {
+      "universitySlug": "quality-control-teaching-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "still-hold",
+      "updatedReason": "Could not establish an authoritative current domain or identity for this institution. Wikipedia full-text search for the exact name returns no matching article. Search engines (Bing, Google) via direct fetch returned only generic dictionary-definition results for the word 'quality', no institutional match. Tried plausible Georgian/Kyrgyz domain patterns (qctu.edu.ge, qctu.ge, qctu.kg, qctu.edu.kg, qc-tu.kg) — all failed DNS resolution. No authoritative domain or media identified this pass; first pass's conclusion stands."
+    },
+    {
+      "universitySlug": "queens-university-belfast",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "http://web.archive.org/web/20251205054639im_/https://www.qub.ac.uk/home/media/Media,772146,en.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university crest, captured via Wayback Machine snapshot (2025-12-05) of qub.ac.uk/brand/; the live site returns HTTP 403 directly",
+        "proposedPublicId": "queens-university-belfast-logo"
+      },
+      "cover": {
+        "sourceUrl": "http://web.archive.org/web/20251205114249im_/https://www.qub.ac.uk/home/media/180-years-new-old-lanyon-600x399.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university brand-page photo (Lanyon Building campus, old-vs-new comparison), captured via Wayback Machine snapshot (2025-12-05) of qub.ac.uk/brand/",
+        "proposedPublicId": "queens-university-belfast-cover"
+      },
+      "note": "qub.ac.uk/brand/ (the official brand page) returns HTTP 403 live. Used Wayback Machine to recover it and verified both the official crest and a campus photo of the iconic Lanyon Building resolve HTTP 200 through the archived asset proxy; these are QUB's own official assets, not third-party imagery."
+    },
+    {
+      "universitySlug": "queensland-university-of-technology",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/QUT_Gardens_Point_campus%2C_June_2019.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file 'QUT Gardens Point campus, June 2019.jpg', own work by Kgbo, licensed CC BY-SA 4.0",
+        "proposedPublicId": "queensland-university-of-technology-cover"
+      },
+      "note": "qut.edu.au returns HTTP 403 live; Wayback snapshot of the homepage renders the header logo as inline SVG with no isolable standalone file. Wikipedia's own QUT logo is hosted under English Wikipedia's local non-free namespace (upload.wikimedia.org/wikipedia/en/...), i.e. fair-use/non-free, so per instructions it was not used and logo remains on hold. A separate Commons search found a CC BY-SA 4.0 campus photo (Gardens Point, Brisbane skyline with visible 'QUT' building signage), which is used for cover."
+    },
+    {
+      "universitySlug": "rcsi-medical-university-of-bahrain",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.rcsi.com/assets/images/logos/logo-bahrain.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official RCSI Bahrain-specific logo asset, rcsi.com/bahrain",
+        "proposedPublicId": "rcsi-medical-university-of-bahrain-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.rcsi.com/bahrain/-/media/feature/teasers/vertical-spotlight/bahrain/homepage/homepage---studying-at-rcsi-bahrain---undergraduate.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official RCSI Bahrain homepage photo (students in campus library), rcsi.com/bahrain",
+        "proposedPublicId": "rcsi-medical-university-of-bahrain-cover"
+      },
+      "note": "rcsi.com serves a distinct Bahrain-specific logo file (logo-bahrain.svg) separate from the Dublin mark, directly resolving the first pass's brand-separation concern. Cover sourced from the Bahrain-specific homepage section and visually confirmed as a Bahrain campus library photo (not shared with the Dublin record)."
+    },
+    {
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.rcsi.com/assets/images/logos/logo-uni.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official RCSI Dublin (university) logo asset, rcsi.com/dublin",
+        "proposedPublicId": "rcsi-university-of-medicine-and-health-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.rcsi.com/dublin/-/media/feature/page-content/content-block/555x315/undergraduate-open-day-opening.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official RCSI Dublin homepage/about photo (staff and students on campus, RCSI-branded clothing visible), rcsi.com/dublin",
+        "proposedPublicId": "rcsi-university-of-medicine-and-health-sciences-cover"
+      },
+      "note": "rcsi.com serves a distinct Dublin-specific logo path (logo-uni.svg), separate from the Bahrain mark (logo-bahrain.svg) and from any historical Royal College asset. Cover sourced from the Dublin-specific about-section content and visually confirmed as a current campus photo."
+    },
+    {
+      "universitySlug": "rmit-university-australia",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.rmit.edu.au/content/dam/rmit/common-assets/logo/rmit-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official RMIT logo asset, resolved directly from rmit.edu.au (the Australian domain)",
+        "proposedPublicId": "rmit-university-australia-logo"
+      },
+      "note": "Found the shared RMIT global logo asset referenced in rmit.edu.au's own homepage markup (path not previously isolated). Confirmed it resolves directly from the Australian domain itself, keeping sourcing separate from the Vietnam record per the standing guardrail. Only logo was in scope (cover was not listed as missing)."
+    },
+    {
+      "universitySlug": "rmit-university-vietnam",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.rmit.edu.vn/content/dam/rmit/common-assets/logo/rmit-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official RMIT logo asset, resolved directly from rmit.edu.vn (the Vietnam domain)",
+        "proposedPublicId": "rmit-university-vietnam-logo"
+      },
+      "note": "Confirmed the same global RMIT logo file is served natively from rmit.edu.vn itself (same underlying CMS platform as the Australian site), fetched and verified independently from the Vietnam domain rather than copied from the Australia record. Only logo was in scope (cover was not listed as missing)."
+    },
+    {
+      "universitySlug": "rice-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://brand.rice.edu/sites/g/files/bxs5371/files/2019-07/Rice_University_Horizontal_Blue.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official Rice University brand-resource site asset, brand.rice.edu/logos",
+        "proposedPublicId": "rice-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://brand.rice.edu/sites/g/files/bxs5371/files/inline-images/220211_Stock_Fitlow_207-59.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Rice University brand-resource site photography example, brand.rice.edu/photography",
+        "proposedPublicId": "rice-university-cover"
+      },
+      "note": "Found via the dedicated official brand.rice.edu resource site (press/media-kit-style page not checked in the first pass), which offers clean downloadable logo files and photography examples. Cover visually confirmed as an official student photo (Rice-branded apparel visible)."
+    },
+    {
+      "universitySlug": "riga-stradins-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.rsu.lv/sites/default/files/rsu_logo_digital_balts-cropped.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, rsu.lv",
+        "proposedPublicId": "riga-stradins-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/RSU_-_Dzirciema_iela_16.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file 'RSU - Dzirciema iela 16.jpg', own work by Olgerts V, licensed CC BY 4.0, captioned as RSU's main building",
+        "proposedPublicId": "riga-stradins-university-cover"
+      },
+      "note": "Official site logo isolated directly. The site's own homepage/media/about pages exposed only rankings-badge graphics, not a campus photo, so used a CC BY 4.0 Commons photo of the university's main building (Dzirciema iela 16) instead."
+    },
+    {
+      "universitySlug": "robert-gordon-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.rgu.ac.uk/media/templates/site/robertgordon/images/rgu_logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, rgu.ac.uk",
+        "proposedPublicId": "robert-gordon-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Plaza_at_The_Robert_Gordon_University_1.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file 'Plaza at The Robert Gordon University 1.jpg', own work, licensed CC BY-SA 3.0, captioned as the main plaza at the Garthdee campus",
+        "proposedPublicId": "robert-gordon-university-cover"
+      },
+      "note": "Official site logo isolated directly. rgu.ac.uk's own pages are heavily JS-rendered with no plain campus-photo file exposed, so used a CC BY-SA 3.0 Commons photo of the Garthdee campus plaza instead of third-party/stock imagery."
+    },
+    {
+      "universitySlug": "rome-business-school",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "http://web.archive.org/web/20250611182448im_/https://www.romebusinessschool.it/bundles/apiplatform/logo-header.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official school header logo, captured via Wayback Machine snapshot of romebusinessschool.it; the live site fails with an SSL error directly",
+        "proposedPublicId": "rome-business-school-logo"
+      },
+      "note": "romebusinessschool.it fails to connect over HTTPS directly (SSL error). Used Wayback Machine to recover the header logo SVG and verified it resolves HTTP 200. No campus-building cover image was found in the archived homepage (the school does not appear to showcase a distinctive building), so cover remains on hold rather than substituting a generic Rome stock photo."
+    },
+    {
+      "universitySlug": "rostov-state-medical-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://rostgmu.ru/wp-content/uploads/2023/01/%D0%9B%D0%BE%D0%B3%D0%BE.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset (Cyrillic filename 'Лого.svg'), rostgmu.ru",
+        "proposedPublicId": "rostov-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, own work by GennadyL, licensed CC0, captioned as RostSMU's Educational and Laboratory Building No.1",
+        "proposedPublicId": "rostov-state-medical-university-cover"
+      },
+      "note": "The official logo file exists on the official domain but has a Cyrillic filename that requires proper percent-encoding to resolve (a plain fetch returned 403); once URL-encoded it resolves HTTP 200. The official site's own homepage photos are recruitment-style rector/staff portraits rather than campus images, so used a CC0 Commons photo of the university's own building instead."
+    },
+    {
+      "universitySlug": "royal-metropolitan-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://rmu.edu.kg/site/wp-content/uploads/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, rmu.edu.kg",
+        "proposedPublicId": "royal-metropolitan-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://rmu.edu.kg/site/wp-content/uploads/2026/06/inter-uni-main.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage event photo (student research conference, Royal Student Council branding visible on screen), rmu.edu.kg",
+        "proposedPublicId": "royal-metropolitan-university-cover"
+      },
+      "note": "Resolved the identity concern: confirmed 'Royal Metropolitan University' is a genuine institution based in Bishkek, Kyrgyzstan, reachable at rmu.edu.kg (primary/official domain) and mirrored at royalmetropolitanuniversity.com — both sites are consistent on location and branding, not competing/conflicting identities. Used rmu.edu.kg as the primary source; logo and an event photo both confirmed live."
+    },
+    {
+      "universitySlug": "russian-university-of-medicine",
+      "sourceFile": "a-291-310.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed via Russian Wikipedia and an archived snapshot of rosunimed.ru that 'Russian University of Medicine' is the current name of the institution formerly known as Moscow State University of Medicine and Dentistry (MSMSU/MSMSU n.a. A.I. Evdokimov). However, both the historic domain (msmsu.ru, redirects but then fails to load over HTTPS) and the current-name domain (rosunimed.ru) fail to connect live. The one available Wayback snapshot of rosunimed.ru (2024-02-24) confirms the correct current name in its page title but its internal template path is still literally '/local/templates/msmsu/', and no standalone logo file could be located even in that snapshot. Given the incomplete rebrand and inability to confirm a stable current-era asset, this remains an unresolved renamed-institution case rather than a simple missing-media gap — no media sourced, consistent with the standing guardrail against reusing another Moscow medical university's assets."
+    },
+    {
+      "universitySlug": "rutgers-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://communications.rutgers.edu/sites/default/files/Rutgers_Primary_Mark_Horizontal_Red_and_Black_RGB.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official Rutgers University Communications & Marketing brand-resource page asset, communications.rutgers.edu",
+        "proposedPublicId": "rutgers-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Queens_Campus_of_Rutgers_University_2026b.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, own work by Antony-22, licensed CC BY-SA 4.0, captioned as the historic Queens Campus (Old Queens) of Rutgers University, 2026",
+        "proposedPublicId": "rutgers-university-cover"
+      },
+      "note": "Found via Rutgers' dedicated official brand-resource page (communications.rutgers.edu/services-resources/logos-signatures-and-visual-identity), a press/media-kit-style page not checked in the first pass. The site's own og:image is a logo card, not a photo, so used a recent (2026) CC BY-SA 4.0 Commons photo of the Old Queens building instead."
+    },
+    {
+      "universitySlug": "ryazan-state-medical-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://rzgmu.ru/static/assets/img/logo_ru.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, rzgmu.ru",
+        "proposedPublicId": "ryazan-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://rzgmu.ru/static/assets/img/slider/season%20pic.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage slider photo (students in an auditorium, white coats visible), rzgmu.ru",
+        "proposedPublicId": "ryazan-state-medical-university-cover"
+      },
+      "note": "Both logo and a homepage slider cover photo isolated directly from the official domain and visually confirmed."
+    },
+    {
+      "universitySlug": "smk-college-applied-sciences-bscn",
+      "sourceFile": "a-291-310.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "This is a programme-level record (a specific BScN offering) rather than a standalone institution. The first pass already identified that it needs a parent-college media-inheritance decision before any standalone logo/cover can be assigned; that is a data-modeling decision, not a media-sourcing gap, so it is out of scope for this research pass. No media sourced pending that decision."
+    },
+    {
+      "universitySlug": "saint-petersburg-pediatric-medical-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.gpmu.org/assets/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, gpmu.org",
+        "proposedPublicId": "saint-petersburg-pediatric-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Saint_Petersburg_State_Pediatric_Medical_University_2015-07_1435954882.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, own work by Artem Svetlov, licensed CC BY 4.0, captioned as the Saint Petersburg State Pediatric Medical University building complex (a listed cultural heritage monument)",
+        "proposedPublicId": "saint-petersburg-pediatric-medical-university-cover"
+      },
+      "note": "Official logo isolated directly from gpmu.org (distinct domain from Saint Petersburg State University, avoiding the identity confusion flagged in the first pass). No clean campus photo was found on the official site itself, so used a CC BY 4.0 Commons photo explicitly captioned as this institution's own building."
+    },
+    {
+      "universitySlug": "saint-petersburg-state-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://english.spbu.ru/themes/spbgu/markup/dist/img/logo-big.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, english.spbu.ru",
+        "proposedPublicId": "saint-petersburg-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Twelve_collegia.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file 'Twelve collegia.jpg', own work, released into the Public Domain, captioned as the Twelve Collegia building of Saint Petersburg State University",
+        "proposedPublicId": "saint-petersburg-state-university-cover"
+      },
+      "note": "Official logo isolated directly from spbu.ru (distinct domain from the Pediatric Medical University record, avoiding the identity confusion flagged in the first pass). No standalone campus photo was exposed on the official homepage, so used a Public Domain Commons photo of the university's iconic Twelve Collegia building."
+    },
+    {
+      "universitySlug": "salymbekov-university",
+      "sourceFile": "a-291-310.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://salymbekov.com/wp-content/uploads/2023/02/logo-salymbekov-university-site.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, salymbekov.com",
+        "proposedPublicId": "salymbekov-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://salymbekov.com/wp-content/uploads/2023/02/bc0b2640-1920x1008.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university homepage photo (students in Salymbekov University-branded lab coats in a laboratory), salymbekov.com",
+        "proposedPublicId": "salymbekov-university-cover"
+      },
+      "note": "Logo and og:image candidates on the homepage turned out to be further logo variants (wordmark and circular badge); found an actual campus/lab photo with branded lab coats and the university's wall signage elsewhere in the homepage image set and verified it visually."
+    },
+    {
+      "universitySlug": "samara-state-medical-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A1%D0%B0%D0%BC%D0%93%D0%9C%D0%A3_%D1%81_%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C%D1%8E.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file 'Логотип СамГМУ с подписью.svg', uploaded by the university itself (author credited as Samara State Medical University, sourced from samsmu.ru/staff/style/, the university's own brand-style page), licensed CC BY 4.0",
+        "proposedPublicId": "samara-state-medical-university-logo"
+      },
+      "note": "samsmu.ru's public homepage is gated behind a non-interactive splash/loading screen with no plain image assets exposed. Its brand-style subpage (samsmu.ru/staff/style/) loads but contains no image files either. Found the same official logo hosted on Wikimedia Commons, uploaded directly by the university and explicitly sourced to that same brand-style page, under a free CC BY 4.0 license. No campus cover photo could be verified from an official or licensed source this pass, so cover remains on hold."
+    },
+    {
+      "universitySlug": "samarkand-state-medical-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.sammu.uz/images/logo-lg.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, sammu.uz",
+        "proposedPublicId": "samarkand-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.sammu.uz/images/default-image.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site default share/cover image, sammu.uz",
+        "proposedPublicId": "samarkand-state-medical-university-cover"
+      },
+      "note": "Both assets confirmed live and visually verified: the cover is a clear main-building photo with 'SAMARQAND DAVLAT TIBBIYOT UNIVERSITETI' (Samarkand State Medical University, in Uzbek) inscribed on the facade, positively confirming institution identity."
+    },
+    {
+      "universitySlug": "saratov-state-medical-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://sgmu.ru/local/templates/razumovskiy/tpl/assets/favicon/favicon.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site favicon/emblem asset (standalone SVG crest on the official domain), sgmu.ru",
+        "proposedPublicId": "saratov-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://sgmu.ru/local/templates/razumovskiy/tpl/assets/img/og-image.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site OGP share-card image (crest, name, and statue of V.I. Razumovsky), sgmu.ru",
+        "proposedPublicId": "saratov-state-medical-university-cover"
+      },
+      "note": "The site's header logo is inline/CSS-only, so used the standalone favicon SVG (a full crest) hosted directly on the official domain. Cover is the official branded OGP card featuring the university's full Russian name and the statue of its namesake, V.I. Razumovsky; the previously reported broken admission route was not re-tested as it is out of scope for media sourcing."
+    }
+  ]
+}

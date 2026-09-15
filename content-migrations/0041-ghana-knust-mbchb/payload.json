@@ -1,0 +1,394 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Kwame Nkrumah University of Science and Technology maps its BSc Human Biology (Medicine) to MB ChB programme to this category: a direct-entry, single continuous six-year programme, distinct from the university's separate graduate-entry Graduate Entry Medical Programme (GEMP).",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "ghana",
+      "slug": "kwame-nkrumah-university-of-science-and-technology",
+      "name": "Kwame Nkrumah University of Science and Technology",
+      "city": "Kumasi",
+      "type": "Public",
+      "establishedYear": 1975,
+      "officialWebsite": "https://sms.knust.edu.gh/",
+      "mediaAttribution": {},
+      "summary": "KNUST's School of Medical Sciences was founded in 1975 and runs a direct-entry BSc Human Biology (Medicine) to MB ChB programme, one continuous six-year admission distinct from the university's separate graduate-entry GEMP route. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 1982 onward, and clinical training runs at Komfo Anokye Teaching Hospital, the school's teaching hospital since its founding.",
+      "campusLifestyle": "Admission is decided through a single combined application, entrance exam and interview process covering both the BSc Human Biology (Medicine) and Dentistry tracks, with a formal-dress in-person interview at the School of Medical Sciences in Kumasi. KNUST explicitly warns applicants against using agents or middlemen, stating selection is strictly on merit.",
+      "cityProfile": "Kumasi is Ghana's second-largest city. The medical school shares a long-standing relationship with Komfo Anokye Teaching Hospital, which became a dedicated teaching hospital for KNUST's medical programme at the school's founding in 1975.",
+      "practicalExposure": "The programme runs as one continuous six-year admission: a three-year BSc Human Biology (Medicine) foundation stage covering basic medical sciences with early clinical exposure and community-health orientation, followed directly by a three-year clinical phase based at Komfo Anokye Teaching Hospital and affiliated sites, without a separate re-application between stages. Graduates receive the MB ChB (Bachelor of Medicine, Bachelor of Surgery) degree.",
+      "hostelOverview": "International students can book rooms through KNUST's official GUSSS Hostels system, with 2025/26 annual rates ranging from roughly USD 905 (3-in-1 room, 3rd/4th year) to USD 1,255 (2-in-1 room, 1st year), payable in USD to GUSSS Hostels accounts. Short-stay accommodation during the entrance-exam and interview period is also available at GH cedi 20 per bed per night, booked by phone through the exam notice's listed contact.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. KNUST's admissions communications explicitly warn applicants against dealing with unofficial agents or middlemen during the application process.",
+      "studentSupport": "International applicants apply through KNUST's central Admissions Portal, with a dedicated international-applicant category and payment channels for USD application fees, including GCB Bank, Ecobank, UBA and the Pan-African Payment and Settlement System (PAPSS) for local-currency payment from participating African banks.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000476), currently operational, with ECFMG-certification eligibility for graduates from 1982 onward.",
+        "A genuine direct-entry pathway (BSc Human Biology, Medicine) distinct from the university's separate graduate-entry GEMP route, confirmed independently by both KNUST's own admissions notice and the WDOMS record's 'admission follows completion of secondary education' classification.",
+        "A 50-year continuous teaching-hospital relationship with Komfo Anokye Teaching Hospital, one of Ghana's major referral hospitals.",
+        "A transparent, published international fee schedule direct from KNUST's own official fee-schedule documents.",
+        "A dedicated international-applicant admissions category with multiple payment channels, including a regional payment system (PAPSS) for African-bank customers."
+      ],
+      "thingsToConsider": [
+        "KNUST also runs a separate Graduate Entry Medical Programme (GEMP) requiring an already-completed bachelor's degree -- this record covers only the direct-entry BSc Human Biology (Medicine) route, not GEMP.",
+        "Ghana's Medical and Dental Council recognition of the programme could not be independently confirmed from a static page (the Council's accredited-institutions list is JavaScript-rendered); this is a data-access limitation, not a specific finding of non-recognition.",
+        "The most recent confirmed entrance-exam cycle was held in December 2025 for the 2025/2026 academic year; KNUST had not yet published 2026/27-cycle dates at the time of research.",
+        "A Mastercard Foundation Scholars Program is referenced by third-party sources as covering Medicine at KNUST, but this could not be independently confirmed on an official KNUST or Mastercard Foundation page, and such schemes typically carry African-nationality or need-based restrictions rather than being open to all international applicants.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a 100-question multiple-choice entrance exam (Biology, Chemistry, Physics, Mathematics, verbal/quantitative reasoning) plus a formal interview.",
+        "Applicants who meet KNUST's WASSCE-equivalent grade thresholds and are comfortable with a merit-based, single-cycle admissions process.",
+        "Families able to confirm next-cycle deadlines directly with KNUST given the university has not yet published 2026/27-specific dates."
+      ],
+      "industryPartners": [
+        "Komfo Anokye Teaching Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000476), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1982-present"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — KNUST School of Medical Sciences listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000476" },
+        { "label": "KNUST School of Medicine and Dentistry — official site", "url": "https://sms.knust.edu.gh/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the BSc Human Biology (Medicine) to MB ChB programme direct-entry after high school?",
+          "answer": "Yes. It is a single continuous six-year admission -- a three-year Human Biology foundation stage followed directly by a three-year clinical stage -- with no separate bachelor's degree required first. This is different from KNUST's separate Graduate Entry Medical Programme (GEMP), which does require a prior bachelor's degree."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MB ChB (Bachelor of Medicine, Bachelor of Surgery) degree."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A 100-question multiple-choice exam covering Biology, Chemistry, Physics, Mathematics, and verbal/quantitative reasoning, followed by a formal-dress in-person interview at the School of Medical Sciences in Kumasi."
+        },
+        {
+          "question": "What are the entry-grade requirements?",
+          "answer": "WASSCE applicants need an aggregate of 8 or better across English, Integrated Science, Core Mathematics, Chemistry, Biology and Physics or Elective Mathematics. A-Level applicants need an aggregate of 08 or better in Biology, Chemistry, Physics and General Paper."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "For 2025/26, international first-year (fresher) students pay a total of USD 7,563, and continuing-year students pay USD 7,097 per year (USD 5,950 tuition plus USD 988.41 in other charges and USD 158.76 in medicine-specific additional charges), per KNUST's official international fee schedule."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a USD 100 application/e-voucher fee and a GH cedi 400 entrance-exam fee for the 2025/26 cycle (this fee is revised each cycle)."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The most recent confirmed entrance-exam cycle was held in December 2025 for the 2025/2026 academic year. KNUST had not yet published a specific 2026/27-cycle deadline at the time of research -- confirm current dates directly with the School of Medical Sciences."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "Yes -- international students can book rooms through KNUST's official GUSSS Hostels system, with 2025/26 annual rates ranging from roughly USD 905 to USD 1,255 depending on room type and year of study."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — KNUST School of Medical Sciences listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000476",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, direct-entry classification and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "KNUST official entrance examination and interview notice (2025/2026 cycle)",
+          "url": "https://www.knust.edu.gh/index.php/announcements/general/entry-examination-and-interviews-admission-school-medical-sciences-and-school-dentistry-20252026-academic-year",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the combined BSc Human Biology (Medicine)/Dentistry admissions route, eligibility thresholds, entrance-exam format and fee."
+        },
+        {
+          "label": "KNUST official International Freshers fee schedule (PDF, 2025/2026)",
+          "url": "https://www.knust.edu.gh/sites/default/files/2025-11/UNDERGRADUATES%20-%20INTERNATIONAL%20FRESHERS.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for confirmed first-year international tuition and total charges."
+        },
+        {
+          "label": "KNUST official Continuing Students international fee schedule (PDF, 2025/2026)",
+          "url": "https://www.knust.edu.gh/sites/default/files/2025-11/UNDERGRADUATES%20-%20INTERNATIONAL%20CONTINUING.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for confirmed continuing-year international tuition breakdown and hostel fee table."
+        },
+        {
+          "label": "KNUST official International Students admissions page",
+          "url": "https://www.knust.edu.gh/students/international",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the international application process, e-voucher system and payment channels."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "knust-bsc-human-biology-medicine-mbchb",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "BSc Human Biology (Medicine) to MB ChB",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2025-2026",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 7097,
+            "officialTotalTuitionAmount": 42678,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2025/26 international fees: first-year (fresher) total USD 7,563 (combined tuition and charges); continuing years USD 7,097/year, comprising USD 5,950 tuition, USD 988.41 other charges (health care, ICT, registration, library, resident permit, sports) and USD 158.76 medicine-specific additional charges, per KNUST's official fee-schedule PDFs. Total is calculated using the continuing-year rate across 6 years, with the first year's slightly higher USD 7,563 figure -- not published as a single lump sum. A separate USD 100 application/e-voucher fee and a GH cedi 400 entrance-exam fee (revised each cycle) apply. No refund policy was published."
+          },
+          "officialProgramUrl": "https://sms.knust.edu.gh/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with WASSCE (aggregate 8+, English/Integrated Science/Core Maths plus Chemistry/Biology/Physics-or-Elective-Maths) or A-Level (aggregate 08+, Biology/Chemistry/Physics/General Paper) or equivalent secondary qualifications"
+            ],
+            "restrictions": [
+              "Admission is via a 100-question entrance exam plus interview -- no exemption route is offered",
+              "Applicants from non-English-speaking countries must provide an English Proficiency Certificate covering at least one year of prior study",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "This eligibility applies to the direct-entry BSc Human Biology (Medicine) route only, not KNUST's separate graduate-entry GEMP programme, which requires an already-completed bachelor's degree.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.knust.edu.gh/index.php/announcements/general/entry-examination-and-interviews-admission-school-medical-sciences-and-school-dentistry-20252026-academic-year"
+          },
+          "admissionsContent": {
+            "overview": "Applicants generate an e-Voucher on KNUST's Admissions Portal, apply as an international candidate, submit academic documents, sit a 100-question entrance exam, and attend a formal in-person interview before a merit-based admission decision.",
+            "eligibility": {
+              "intro": "Admission requires a qualifying secondary-education result (WASSCE, A-Level or equivalent), English proficiency, and a passing result on KNUST's own entrance exam and interview.",
+              "items": [
+                "WASSCE aggregate 8+ (English, Integrated Science, Core Maths, Chemistry, Biology, Physics or Elective Maths) or A-Level aggregate 08+ (Biology, Chemistry, Physics, General Paper)",
+                "English Proficiency Certificate (at least one year of prior study), for applicants from non-English-speaking countries",
+                "100-question multiple-choice entrance exam (Biology, Chemistry, Physics, Mathematics, verbal/quantitative reasoning) plus a formal in-person interview",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Generate an e-Voucher via the KNUST Admissions Portal, selecting the International applicant category, and pay the USD 100 application fee",
+              "Complete the online application and upload transcripts, certificates and a valid ID",
+              "Await shortlisting for the entrance exam and interview",
+              "Pay the entrance-exam fee (GH cedi 400 for the 2025/26 cycle) and sit the exam in Kumasi",
+              "Attend the formal in-person interview and await the merit-based admission decision"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school transcripts and certificates (WASSCE, A-Level or equivalent)",
+                "English Proficiency Certificate, for applicants from non-English-speaking countries"
+              ],
+              "application": [
+                "Valid passport or national ID",
+                "Proof of application-fee payment",
+                "Proof of entrance-exam-fee payment"
+              ]
+            },
+            "deadlinesNote": "Most recent confirmed cycle: entrance exam held 10 December 2025 for the 2025/2026 academic year. KNUST had not yet published 2026/27-cycle dates at the time of research -- confirm directly with the School of Medical Sciences.",
+            "visaConsiderations": [
+              "Confirm current Ghanaian student-visa/residence-permit requirements directly with KNUST's International Students office ahead of enrollment."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2025/26 international fees: USD 7,563 total in the first (fresher) year, USD 7,097/year in continuing years (USD 5,950 tuition plus USD 988.41 other charges and USD 158.76 medicine-specific charges), per KNUST's official fee-schedule PDFs. A separate USD 100 application fee and a GH cedi 400 entrance-exam fee apply. No refund policy was found on official pages.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3: BSc Human Biology (Medicine) foundation stage",
+              "language": "English",
+              "details": "Basic medical sciences with early clinical exposure and community-health orientation, forming the first half of one continuous six-year admission."
+            },
+            {
+              "phase": "Years 4-6: clinical stage",
+              "language": "English",
+              "details": "Clinical training based at Komfo Anokye Teaching Hospital and affiliated sites, concluding with the MB ChB degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "publicField": "identity",
+      "claimText": "KNUST's School of Medical Sciences was founded in 1975 (WDOMS lists instruction start as 1976), with Komfo Anokye Teaching Hospital becoming its dedicated teaching hospital at founding.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000476",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000476",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000476), currently operational, admission follows completion of secondary education (confirming direct-entry classification distinct from the university's separate graduate-entry GEMP programme); graduates (1982-current) eligible to apply for ECFMG Certification.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000476",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000476",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "programmeSlug": "knust-bsc-human-biology-medicine-mbchb",
+      "publicField": "academics",
+      "claimText": "BSc Human Biology (Medicine) to MB ChB is one continuous 6-year, direct-entry admission (3-year foundation stage plus 3-year clinical stage), taught in English, distinct from KNUST's separate graduate-entry GEMP route.",
+      "status": "verified",
+      "sourceLabel": "KNUST official entrance examination and interview notice (2025/2026 cycle)",
+      "sourceUrl": "https://www.knust.edu.gh/index.php/announcements/general/entry-examination-and-interviews-admission-school-medical-sciences-and-school-dentistry-20252026-academic-year",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "programmeSlug": "knust-bsc-human-biology-medicine-mbchb",
+      "publicField": "eligibility",
+      "claimText": "WASSCE aggregate 8+ (English, Integrated Science, Core Maths, Chemistry, Biology, Physics-or-Elective-Maths) or A-Level aggregate 08+ (Biology, Chemistry, Physics, General Paper); 100-question entrance exam plus formal interview.",
+      "status": "verified",
+      "sourceLabel": "KNUST official entrance examination and interview notice (2025/2026 cycle)",
+      "sourceUrl": "https://www.knust.edu.gh/index.php/announcements/general/entry-examination-and-interviews-admission-school-medical-sciences-and-school-dentistry-20252026-academic-year",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "programmeSlug": "knust-bsc-human-biology-medicine-mbchb",
+      "publicField": "admissions",
+      "claimText": "International applicants apply via KNUST's Admissions Portal e-Voucher system with a USD 100 application fee, sit a GH cedi 400 entrance exam, and attend a formal interview in Kumasi.",
+      "status": "verified",
+      "sourceLabel": "KNUST official International Students admissions page",
+      "sourceUrl": "https://www.knust.edu.gh/students/international",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "programmeSlug": "knust-bsc-human-biology-medicine-mbchb",
+      "publicField": "intake",
+      "claimText": "Most recent confirmed cycle: entrance exam held 10 December 2025 for the 2025/2026 academic year; 2026/27-cycle dates were not yet published at the time of research.",
+      "status": "verified",
+      "sourceLabel": "KNUST official entrance examination and interview notice (2025/2026 cycle)",
+      "sourceUrl": "https://www.knust.edu.gh/index.php/announcements/general/entry-examination-and-interviews-admission-school-medical-sciences-and-school-dentistry-20252026-academic-year",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "programmeSlug": "knust-bsc-human-biology-medicine-mbchb",
+      "publicField": "fee",
+      "claimText": "2025/26 international fees: USD 7,563 total first year, USD 7,097/year continuing years (tuition USD 5,950 + other charges USD 988.41 + medicine-specific charges USD 158.76); separate USD 100 application fee and GH cedi 400 entrance-exam fee.",
+      "status": "verified",
+      "sourceLabel": "KNUST official International Freshers and Continuing Students fee schedules (PDFs, 2025/2026)",
+      "sourceUrl": "https://www.knust.edu.gh/sites/default/files/2025-11/UNDERGRADUATES%20-%20INTERNATIONAL%20FRESHERS.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "programmeSlug": "knust-bsc-human-biology-medicine-mbchb",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training is anchored at Komfo Anokye Teaching Hospital, KNUST's dedicated teaching hospital since the medical school's 1975 founding.",
+      "status": "verified",
+      "sourceLabel": "Graphic Online — KNUST Medical School is 40 years",
+      "sourceUrl": "https://www.graphic.com.gh/news/general-news/knust-medical-school-is-40-years.html",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "kwame-nkrumah-university-of-science-and-technology",
+      "publicField": "student living",
+      "claimText": "International students book rooms through KNUST's official GUSSS Hostels system; 2025/26 annual rates run roughly USD 905-1,255 depending on room type and year of study.",
+      "status": "verified",
+      "sourceLabel": "KNUST official Continuing Students international fee schedule (PDF, 2025/2026)",
+      "sourceUrl": "https://www.knust.edu.gh/sites/default/files/2025-11/UNDERGRADUATES%20-%20INTERNATIONAL%20CONTINUING.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

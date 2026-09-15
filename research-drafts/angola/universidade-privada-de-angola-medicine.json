@@ -1,0 +1,31 @@
+{
+  "scope": "Angola medical discovery — Universidade Privada de Angola Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UPRA's 2025/26 official tuition schedule lists Medicine basic-cycle tuition of AOA 253,368 and says clinical-cycle fees are set by the signed contract; the schedule identifies the Faculty of Health Sciences.",
+      "sourceUrl": "https://www.upra.ao/noticias/pdf/TABELA%20DE%20EMOLUMENTOS%20-%20PROPINAS%20-%20Aprovada%20pelo%20Promotor%20para%20o%20Ano%20lectivo%202024.25.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UPRA's official 2025/26 vacancy document lists 500 authorised Medicine places and labels Medicine as accredited.",
+      "sourceUrl": "https://www.upra.ao/noticias/pdf/vagasU.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UPRA's official academic regulation says the Medicine degree lasts six years and awards Licenciado em Medicina; its curriculum includes supervised final-year placements in internal medicine, general surgery, paediatrics, obstetrics and gynaecology, and public health.",
+      "sourceUrl": "https://www.upra.ao/regulamento/RAE_UPRA_Unificado.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The fee schedule is for 2025/26 rather than a confirmed active 2026/27 intake, and the clinical-cycle price is contract-dependent; it cannot support a complete public fee card.",
+    "The available admissions guide is older and does not establish a complete current application window, document checklist, or international-applicant route.",
+    "The reviewed sources do not clearly establish instructional language, named clinical sites, scholarship/loan support, accommodation, or graduate-registration pathway. The university's own vacancy label is useful evidence but needs a current regulator-facing accreditation record before a commercial recognition claim."
+  ],
+  "nextAction": "Obtain UPRA's active admissions guide and full fee contract/schedule, then verify teaching language, clinical partners, regulator record and student-support arrangements before packaging content."
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Palestine medical discovery — An-Najah National University Doctor of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "An-Najah lists its Doctor of Medicine as a six-year, 72-month undergraduate programme awarding a Bachelor degree.",
+      "sourceUrl": "https://www.najah.edu/en/academic/undergraduate-programs/program/medicine/details/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty describes a 266-credit curriculum in two phases: biomedical sciences followed by clinical medical sciences. Its published clinical-training material identifies An-Najah University Hospital plus government, private and UNRWA facilities, but does not establish their current operating or placement availability.",
+      "sourceUrl": "https://fmhs.najah.edu/en/education-admissions/medicine-department/doctor-medicine-program/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "An-Najah announced in April 2024 that its Doctor of Medicine programme received international accreditation through TEPDAD, whose recognition is through WFME; the page reviewed does not state the accreditation term.",
+      "sourceUrl": "https://www.najah.edu/en/about/achievements-and-awards/an-najah-university-achieves-global-accreditation-for-doctor-of-medicine-program-through-tepdad-and-wfme/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current fee or mandatory-charge schedule and no live admissions calendar or international-applicant route were located.",
+    "Teaching language, current entry requirements, accommodation, scholarships/loans and detailed student-support arrangements were not verified from current authoritative sources.",
+    "The published clinical-facility list must not be presented as a current placement guarantee without direct, current confirmation of access, capacity and continuity.",
+    "The TEPDAD accreditation validity period and scope need direct accreditor confirmation before publication as a formal recognition statement."
+  ],
+  "nextAction": "Obtain a current admissions and fees notice, direct confirmation of clinical placement continuity and a current TEPDAD record before considering a payload."
+}

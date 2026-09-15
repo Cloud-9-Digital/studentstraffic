@@ -1,0 +1,37 @@
+{
+  "scope": "Mali medical discovery — USTTB Faculty of Medicine and Odontostomatology",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "USTTB's official site identifies it as a public scientific, technological and cultural institution founded in 2011 and lists the Faculty of Medicine and Odontostomatology as a constituent faculty.",
+      "sourceUrl": "https://usttb-edu.org/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "FMOS's official site publishes access, study and examination conditions for the faculty and records that 2024 baccalaureate holders were authorised to register for the 2024/25 academic year.",
+      "sourceUrl": "https://fmos.usttb.edu.ml/index.php/2022/09/12/usttb-arrete-2022-fixant-les-conditions-dacces-a-la-faculte-de-medecine-et-dodontostomatologie-fmos/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "FMOS published a 2024/25 academic calendar that gives a 17 February 2026 start for the 2025/26 academic year.",
+      "sourceUrl": "https://fmos.usttb.edu.ml/wp-content/uploads/2025/06/Chronogramme-_-FMOS_2024-2025.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "FMOS's 2025/26 thesis records show its Doctor of Medicine is awarded as a state diploma.",
+      "sourceUrl": "https://www.bibliosante.ml/bitstream/handle/123456789/15143/25M230.pdf?isAllowed=y&sequence=1",
+      "sourceType": "institutional-repository",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current undergraduate Medicine tuition or mandatory-fee schedule was found. The reviewed fee leaflet relates to a separate 2022 biosafety master's programme and cannot be used for Medicine.",
+    "The reviewed access rules are dated 2022 and the available calendar does not provide a current Medicine application deadline or complete candidate checklist.",
+    "Instructional language, programme duration/structure, named clinical partners, current programme-level accreditation, international eligibility, accommodation, scholarship/loan support and graduate-registration pathway remain unverified."
+  ],
+  "nextAction": "Obtain FMOS's active undergraduate Medicine prospectus, access notice and fee decision, then verify clinical sites, teaching language, recognition and student support before a payload is considered."
+}

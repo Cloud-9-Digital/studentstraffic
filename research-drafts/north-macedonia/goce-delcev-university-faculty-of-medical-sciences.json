@@ -1,0 +1,59 @@
+{
+  "countrySlug": "north-macedonia",
+  "universitySlug": "goce-delcev-university-faculty-of-medical-sciences",
+  "schoolName": "Goce Delcev University Faculty of Medical Sciences",
+  "cityName": "Štip",
+  "priority": "medium",
+  "officialWebsite": "https://www.ugd.edu.mk/en/admissions-first-cycle/",
+  "status": "research_ready",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Goce Delcev University (UGD) has a current, direct official 2026/27 pathway for foreign applicants to its English-taught Integrated Academic Studies of General Medicine: 12 semesters/six years, 360 ECTS, 80 vacancies, entrance examinations in Biology and Chemistry, and €6,000 annual self-financing tuition. UGD explicitly warns that it has no authorised recruitment representatives and directs applicants to its official registration system. Its materials set out diploma-recognition, translation/notarisation, apostille and temporary-residence steps. Despite unusually strong admissions evidence, the reviewed sources do not establish an audience-relevant recognition/licensing route, named clinical partners or placement terms, accommodation availability, or a comprehensive current cost of attendance beyond university charges. It is held pending those checks rather than published as a lead-generation destination.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Goce Delcev University — Admissions 2026/27 for international applicants",
+        "url": "https://www.ugd.edu.mk/en/admissions-first-cycle/",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Current official international-admission page confirms English-taught General Medicine: 12 semesters/six years, 360 ECTS, 80 places, Biology/Chemistry entrance exam and €6,000 self-financing annual tuition. It also provides foreign document-recognition and visa/residence steps, dates, payments and the warning that UGD has no authorised recruitment representatives."
+      },
+      {
+        "label": "Goce Delcev University — General Medicine programme page",
+        "url": "https://www.ugd.edu.mk/en/faculty-of-medicine-general-medicine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Official programme page corroborates English-programme admissions through Biology and Chemistry examination and prior published course information. The more recent 2026/27 admissions page is used for current fee and intake facts."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Goce Delcev University Faculty of Medical Sciences",
+    "city": "Štip",
+    "type": "Public",
+    "officialWebsite": "https://www.ugd.edu.mk/en/admissions-first-cycle/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Primary-source recognition and graduate-licensing evidence for the intended audience",
+      "Named clinical partners and confirmed clinical-placement terms",
+      "Verified accommodation and continuing student-support offer",
+      "Current total cost of attendance beyond the stated university fees"
+    ],
+    "notes": "The course itself is strongly documented, including current English-language delivery, fees and foreign admissions. This research workflow nevertheless requires country/audience-specific professional recognition and support evidence before a public medical destination page can be approved."
+  },
+  "draftContent": {
+    "summary": "Goce Delcev University’s Faculty of Medical Sciences in Stip offers a direct-entry English General Medicine route for international applicants. The integrated programme runs for 12 semesters (360 ECTS) and leads to the Doctor of Medicine qualification. Selection is ranked from Biology and Chemistry testing plus school results, so a complete academic file matters as much as the entrance exam.",
+    "campusLifestyle": "UGD lists four student dormitories in Stip: state-run Braka Miladinovci, plus Hiljadnikov, Oaza and Logos. Braka Miladinovci provides accommodation and food; Hiljadnikov lists furnished rooms, Wi-Fi, a reading room, dining facilities, laundry and 24-hour surveillance. UGD does not publish a current international-student price schedule, so obtain a written housing quote before paying a deposit.",
+    "cityProfile": "",
+    "clinicalExposure": "The published curriculum moves through internal medicine, surgery, obstetrics and gynaecology, paediatrics, infectious diseases, public health and electives. Year six is organised as rotation blocks, including eight weeks of internal medicine and seven weeks of surgery. UGD timetable material identifies practical teaching at Clinical Hospital Stip.",
+    "hostelOverview": "UGD identifies four Stip dormitories but does not publish current availability or charges for General Medicine applicants. Ask the International Student Office for a current room and pricing confirmation.",
+    "indianFoodSupport": "UGD publishes no Indian-food or meal-plan service for General Medicine students. Braka Miladinovci and Hiljadnikov are described as offering food provision, but menus and costs are not published.",
+    "safetyOverview": "Hiljadnikov’s published accommodation information describes 24-hour surveillance and electronically controlled entry. UGD states it has not authorised private recruiting companies or individuals; use the official International Student Office.",
+    "studentSupport": "The International Student Office is the official contact for foreign applications, payment questions, document delivery and enrollment. UGD also publishes the diploma-recognition, translation, apostille and temporary-residence steps for foreign applicants.",
+    "whyChoose": ["Direct-entry English General Medicine with 12 semesters and 360 ECTS.", "A defined 80-seat, points-ranked admission route based on Biology/Chemistry testing and secondary-school GPA.", "Published 2026/27 university charges: EUR 6,000 annual participation, plus separate application and enrollment charges.", "A published six-year curriculum with clinical rotation blocks and practical teaching at Clinical Hospital Stip."],
+    "thingsToConsider": ["Use the current admissions notice for fees; older UGD pages show historical figures.", "Foreign qualifications need Macedonian recognition/nostrification and may require certified translation and apostille documents.", "UGD has not published a current accommodation price schedule or named international medical scholarship.", "Professional registration depends on the rules of the intended country of practice."],
+    "faq": [{"question":"What is the programme duration?","answer":"Integrated General Medicine runs for 12 semesters, six years and 360 ECTS."},{"question":"Is it taught in English?","answer":"UGD’s current international admissions notice lists General Medicine as an English programme."},{"question":"What is the current tuition?","answer":"The 2026/27 notice lists EUR 6,000 annually for General Medicine, plus separate application and enrollment charges."},{"question":"How are places allocated?","answer":"Candidates are ranked using a Biology/Chemistry entrance exam and secondary-school GPA; 80 places are listed."},{"question":"Where is clinical teaching delivered?","answer":"The curriculum specifies clinical rotation blocks and UGD timetable material identifies practical teaching at Clinical Hospital Stip."},{"question":"Can an agent submit my application?","answer":"UGD states it has not authorised private recruiting companies or individuals."},{"question":"What housing is available?","answer":"UGD lists four Stip dormitories, but current availability and charges require confirmation."},{"question":"Are scholarships confirmed?","answer":"No named, current international General Medicine scholarship terms were verified."},{"question":"When are intakes?","answer":"The current admissions notice uses sequential periods in August and September."},{"question":"What documents are needed?","answer":"UGD lists school credentials, initiated recognition, identification, English evidence where applicable, CV, motivation letter and payment proof."}],
+    "ctas": [{"label":"Check my General Medicine eligibility","capture":["school qualification","Biology and Chemistry preparation","English evidence","citizenship","intended intake"]},{"label":"Plan my application documents","capture":["diploma recognition status","translations/apostille","document readiness"]},{"label":"Build my first-year budget","capture":["tuition budget","housing preference","funding need"]}],
+    "notes": "Enriched offline with current UGD admissions, General Medicine curriculum, timetable and official accommodation guidance. Do not expose source URLs publicly."
+  }
+}

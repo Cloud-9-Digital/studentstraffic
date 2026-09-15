@@ -1,0 +1,431 @@
+[
+  {
+    "universitySlug": "osh-state-university",
+    "universityName": "Osh State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Both assets confirmed live and visually verified: the cover is a clear main-building photo with 'ОШ МАМЛЕКЕТТИК УНИВЕРСИТЕТИ' (Osh State University, in Kyrgyz) inscribed on the facade, positively confirming institution identity..",
+    "proposedPublicIds": {
+      "logo": "universities/osh-state-university/logo",
+      "cover": "universities/osh-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://oshsu.kg/main/images/logo/logo-en.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official university site logo asset, oshsu.kg",
+      "proposedPublicId": "osh-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://oshsu.kg/main/images/fon/g1.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official university site og:image, oshsu.kg",
+      "proposedPublicId": "osh-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "pohang-university-science-technology",
+    "universityName": "Pohang University of Science and Technology",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Found via a dedicated official brand/logo page (postech.ac.kr/eng/about/logo.do) offering a clean logo pack — a press/media-kit-style page not checked in the first pass. Cover is POSTECH's iconic campus clock tower, visually verified..",
+    "proposedPublicIds": {
+      "logo": "universities/pohang-university-science-technology/logo",
+      "cover": "universities/pohang-university-science-technology/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.postech.ac.kr/_res/postech/eng/img/sub/postech_default_logo02.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university dedicated brand/logo page asset, postech.ac.kr",
+      "proposedPublicId": "pohang-university-science-technology-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.postech.ac.kr/_res/postech/eng/img/main/clock%20tower.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official university homepage campus photo, postech.ac.kr",
+      "proposedPublicId": "pohang-university-science-technology-cover"
+    }
+  },
+  {
+    "universitySlug": "pacific-state-medical-university",
+    "universityName": "Pacific State Medical University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Confirmed institution identity via page title 'PSMU — Тихоокеанский государственный медицинский университет' (Pacific State Medical University) at tgmu.ru, a domain not checked in the first pass. No distinct campus cover photo found on the homepage (only banner ads/partner logos), so cover remains on hold.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/pacific-state-medical-university/logo",
+      "cover": "universities/pacific-state-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://tgmu.ru/wp-content/uploads/img/logo-color.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university site logo asset, tgmu.ru",
+      "proposedPublicId": "pacific-state-medical-university-logo"
+    }
+  },
+  {
+    "universitySlug": "palacky-university-olomouc",
+    "universityName": "Palacky University Olomouc",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The site's header logo is rendered inline/via CSS rather than as a plain image file, so used the standalone apple-touch-icon rendition of the same crest (technique for inline/CSS-only logos) — visually confirmed as the university's official shield mark. Cover is the official branded OGP card (crest + wordmark on blue), visually verified..",
+    "proposedPublicIds": {
+      "logo": "universities/palacky-university-olomouc/logo",
+      "cover": "universities/palacky-university-olomouc/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.upol.cz/fileadmin/up/fav/apple-touch-icon.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university site touch-icon rendition of the crest, upol.cz",
+      "proposedPublicId": "palacky-university-olomouc-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.upol.cz/fileadmin/up/og/up_ilustracka_1200x630px_up1.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official university OGP share-card image, upol.cz",
+      "proposedPublicId": "palacky-university-olomouc-cover"
+    }
+  },
+  {
+    "universitySlug": "pavlov-first-saint-petersburg-state-medical-university",
+    "universityName": "Pavlov First Saint Petersburg State Medical University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Both assets confirmed live on the official domain; cover visually verified as a clinic/institutional building photo from the site's own homepage gallery..",
+    "proposedPublicIds": {
+      "logo": "universities/pavlov-first-saint-petersburg-state-medical-university/logo",
+      "cover": "universities/pavlov-first-saint-petersburg-state-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.1spbgmu.ru/templates/1_med/images/logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university site template logo asset, 1spbgmu.ru",
+      "proposedPublicId": "pavlov-first-saint-petersburg-state-medical-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.1spbgmu.ru/images/gallery/main/clinic.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official university homepage gallery photo (clinic building), 1spbgmu.ru",
+      "proposedPublicId": "pavlov-first-saint-petersburg-state-medical-university-cover"
+    }
+  },
+  {
+    "universitySlug": "peking-university",
+    "universityName": "Peking University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): english.pku.edu.cn's own homepage doesn't expose a standalone logo/cover file. Used Wikimedia Commons instead: the seal is CC0/Public Domain, and the campus cover (Weiming Lake area building) is CC-BY-SA-2.0 — both visually verified..",
+    "proposedPublicIds": {
+      "logo": "universities/peking-university/logo",
+      "cover": "universities/peking-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Peking_University_seal.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file Peking_University_seal.svg, tagged CC0/Public Domain (the historic Lu Xun-designed seal is treated as ineligible for copyright); separate trademark notice does not restrict file reuse",
+      "proposedPublicId": "peking-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/10_Peking_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, licensed CC-BY-SA-2.0 (Flickr image reviewed by a trusted Commons user)",
+      "proposedPublicId": "peking-university-cover"
+    }
+  },
+  {
+    "universitySlug": "pennsylvania-state-university",
+    "universityName": "Pennsylvania State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Found via the official brand.psu.edu master-downloads page (dedicated brand/press resource page technique), not checked in the first pass. Both assets confirmed live..",
+    "proposedPublicIds": {
+      "logo": "universities/pennsylvania-state-university/logo",
+      "cover": "universities/pennsylvania-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://brand.psu.edu/images/shared-images/psu-mark-280.png",
+      "sourceType": "official",
+      "rightsBasis": "Official Penn State brand resource site asset, brand.psu.edu",
+      "proposedPublicId": "pennsylvania-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://brand.psu.edu/images/wide-images/Shrine-brand.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official Penn State brand resource site campus image, brand.psu.edu",
+      "proposedPublicId": "pennsylvania-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "penza-state-university",
+    "universityName": "Penza State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Official domain pnzgu.ru returned HTTP 502 / connection timeouts across repeated attempts this pass (server-side error, not a firewall block). A Wayback Machine availability lookup was itself rate-limited (429) before a usable snapshot could be retrieved. No verified current logo/cover recovered; recommend retrying later once the origin server or archive.org access is stable.",
+    "proposedPublicIds": {
+      "logo": "universities/penza-state-university/logo",
+      "cover": "universities/penza-state-university/cover"
+    }
+  },
+  {
+    "universitySlug": "peoples-friendship-university-russia",
+    "universityName": "Peoples' Friendship University of Russia",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Official domain rudn.ru times out on direct connection. Used Wayback Machine (a recent May-2026 snapshot returned 200), but the logo path referenced in that snapshot's markup (img/ie_instead_svg/logo.jpg) 404'd when fetched. Wikimedia Commons has a RUDN category with campus and history photos, but the clearest building photo found is tagged only with an ambiguous 'Public Domain Mark' rather than an explicit CC license, which is not a confirmed free-license basis per the required standard. No confidently verified official or licensed asset recovered this pass.",
+    "proposedPublicIds": {
+      "logo": "universities/peoples-friendship-university-russia/logo",
+      "cover": "universities/peoples-friendship-university-russia/cover"
+    }
+  },
+  {
+    "universitySlug": "perm-state-medical-university",
+    "universityName": "Perm State Medical University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The first pass's domain (psma.ru) is unreachable via TLS (expired certificate) but issues an HTTP meta-refresh redirect to the real current domain psmu.ru, which was not checked before. Logo confirmed there. The site's only og:image is an official branded card duplicating the logo on a red background (visually confirmed, not a distinct campus photo), so cover remains on hold rather than upgrading with a near-duplicate of the logo.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/perm-state-medical-university/logo",
+      "cover": "universities/perm-state-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://psmu.ru/local/templates/main2/images/logo.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official university site template logo asset, psmu.ru",
+      "proposedPublicId": "perm-state-medical-university-logo"
+    }
+  },
+  {
+    "universitySlug": "tbilisi-medical-academy",
+    "universityName": "Petre Shotadze Tbilisi Medical Academy",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Petre Shotadze Tbilisi Medical Academy's official domain (tma.edu.ge) was not previously identified. Both header logo and OGP share image confirmed live and visually verified (crest + 'Since 1992' emblem). Cover is a branded card rather than a campus photograph..",
+    "proposedPublicIds": {
+      "logo": "universities/tbilisi-medical-academy/logo",
+      "cover": "universities/tbilisi-medical-academy/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://tma.edu.ge/home/assets/img/header_logo_ge.webp",
+      "sourceType": "official",
+      "rightsBasis": "Official academy site header logo asset, tma.edu.ge",
+      "proposedPublicId": "tbilisi-medical-academy-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://tma.edu.ge/home/assets/img/og.webp",
+      "sourceType": "official",
+      "rightsBasis": "Official academy site OGP share-card image, tma.edu.ge",
+      "proposedPublicId": "tbilisi-medical-academy-cover"
+    }
+  },
+  {
+    "universitySlug": "petrozavodsk-state-university",
+    "universityName": "Petrozavodsk State University",
+    "missing": [
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Official domain confirmed reachable and a logo path isolated (petrsu.ru/img/logo_180.png) during research, but at upload time Cloudinary rejected the fetched content as an invalid image file -- the path likely now serves something other than a real image (e.g. an HTML error page under a 200 status). Not applied. Homepage banner/media images are conference advertisements and a photo of a person speaking at a podium, not a clean campus building photo, so cover also remains held. Needs fresh logo and cover assets in a future pass.",
+    "proposedPublicIds": {
+      "logo": "universities/petrozavodsk-state-university/logo",
+      "cover": "universities/petrozavodsk-state-university/cover"
+    }
+  },
+  {
+    "universitySlug": "pirogov-russian-national-research-medical-university",
+    "universityName": "Pirogov Russian National Research Medical University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The site's header logo is rendered inline/via CSS rather than as a plain <img> with 'logo' in its path (only partner logos appear as normal images). Located the standalone SVG asset directly inside the TYPO3 site package folder (site_packagernimu), confirming this is rsmu.ru (RNIMU/Pirogov University). No distinct campus cover photo identified among homepage assets (only topline/conference banner images), so cover remains on hold.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/pirogov-russian-national-research-medical-university/logo",
+      "cover": "universities/pirogov-russian-national-research-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://rsmu.ru/typo3conf/ext/site_packagernimu/Resources/Public/Images/logo.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official university TYPO3 theme resource-package logo asset, rsmu.ru",
+      "proposedPublicId": "pirogov-russian-national-research-medical-university-logo"
+    }
+  },
+  {
+    "universitySlug": "pitirim-sorokin-syktyvkar-state-university",
+    "universityName": "Pitirim Sorokin Syktyvkar State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): en.syktsu.ru fails to connect directly (DNS/connection failure). Used Wayback Machine snapshots (technique not used in first pass) and verified both archived asset URLs resolve HTTP 200; cover visually confirmed as a campus photo with the Pitirim Sorokin statue..",
+    "proposedPublicIds": {
+      "logo": "universities/pitirim-sorokin-syktyvkar-state-university/logo",
+      "cover": "universities/pitirim-sorokin-syktyvkar-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "http://web.archive.org/web/20230522062421im_/https://en.syktsu.ru/wp-content/uploads/2022/05/cropped-%D0%BB%D0%BE%D0%B3%D0%BE-%D0%A1%D0%93%D0%A3-%D0%B7%D0%BD%D0%B0%D0%BA-%D1%86%D0%B2-270x270.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university emblem, captured via Wayback Machine snapshot (2023-05-22) of en.syktsu.ru; the live site fails to resolve/connect directly",
+      "proposedPublicId": "pitirim-sorokin-syktyvkar-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "http://web.archive.org/web/20230522061643im_/https://en.syktsu.ru/wp-content/uploads/2019/05/cropped-DSC_6888-2.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official homepage photo (students beside the Pitirim Sorokin monument near the main building), captured via Wayback Machine snapshot (2023-05-22) of en.syktsu.ru",
+      "proposedPublicId": "pitirim-sorokin-syktyvkar-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "ponce-health-sciences-university-british-virgin-islands-school-of-medicine",
+    "universityName": "Ponce Health Sciences University British Virgin Islands School of Medicine",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): bvi.phsu.edu is a client-rendered Angular app with no static logo/cover file exposed in its markup or JS bundles (checked common asset paths, all 404). The BVI campus is officially branded under the parent Ponce Health Sciences University mark (confirmed via phsu.edu's own School of Medicine BVI page, which uses this same file), so used that official, directly-hosted PHSU logo. No BVI-specific campus photo could be verified from an official or licensed source this pass, so cover remains on hold.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/ponce-health-sciences-university-british-virgin-islands-school-of-medicine/logo",
+      "cover": "universities/ponce-health-sciences-university-british-virgin-islands-school-of-medicine/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://phsu.edu/_resources/images/branding/PHSU-H-Color.png",
+      "sourceType": "official",
+      "rightsBasis": "Official parent-institution brand asset hosted on phsu.edu, referenced from the BVI School of Medicine's own page on the main PHSU site",
+      "proposedPublicId": "ponce-health-sciences-university-british-virgin-islands-school-of-medicine-logo"
+    }
+  },
+  {
+    "universitySlug": "poznan-university-of-medical-sciences",
+    "universityName": "Poznan University of Medical Sciences",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Direct logo file path was not previously isolated; found and verified live. Cover selected from the homepage image carousel and visually confirmed as an official interior/hall photo (not a generic stock image)..",
+    "proposedPublicIds": {
+      "logo": "universities/poznan-university-of-medical-sciences/logo",
+      "cover": "universities/poznan-university-of-medical-sciences/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.ump.edu.pl/img/logo-en.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university site logo asset, ump.edu.pl",
+      "proposedPublicId": "poznan-university-of-medical-sciences-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.ump.edu.pl/media/uid/1166732c1ce_66_01c65/a1e4ba.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official university homepage carousel photo (historic building interior), hosted in ump.edu.pl's own media library",
+      "proposedPublicId": "poznan-university-of-medical-sciences-cover"
+    }
+  },
+  {
+    "universitySlug": "princeton-university",
+    "universityName": "Princeton University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Princeton's own brand/graphic-identity page (communications.princeton.edu) gates its assets behind an access-request form for University-affiliated users, so no direct public download exists there. Found the Wikipedia infobox image is hosted on Wikimedia Commons under a PD-US tag rather than as a non-free fair-use file, matching the Commons-license technique. Only 'logo' was in scope for this record (cover was not listed as missing).. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/princeton-university/logo",
+      "cover": "universities/princeton-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Princeton_seal.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file Princeton_seal.svg, tagged Public Domain in the US (PD-US, pre-1931 publication); hosted on Commons (not English Wikipedia's local non-free namespace), confirming it is a free-licensed file rather than fair-use. A separate trademark notice applies but does not restrict reuse of the image file itself",
+      "proposedPublicId": "princeton-university-logo"
+    }
+  },
+  {
+    "universitySlug": "privolzhsky-research-medical-university",
+    "universityName": "Privolzhsky Research Medical University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The header logo is served as a standalone SVG inside the site's template folder rather than a plain content image, so located it directly by inspecting the template assets. Checked the homepage, About, History, and Academic-Buildings pages for a campus photo; all image references are ranking badges, accreditation emblems, and Instagram icons with no identifiable building photo, so cover remains on hold.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/privolzhsky-research-medical-university/logo",
+      "cover": "universities/privolzhsky-research-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://pimunn.ru/local/templates/.default/img/en/PIMU_logo.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official university site template logo asset, pimunn.ru (English-language template)",
+      "proposedPublicId": "privolzhsky-research-medical-university-logo"
+    }
+  },
+  {
+    "universitySlug": "profi-university",
+    "universityName": "Profi University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Could not establish an authoritative current domain for this institution. Wikipedia full-text search returns no matching article (top results are unrelated 'Profi' brand/sports references). Web search engines (Bing, Google) via direct fetch returned no matching results for the exact institution name. Tried several plausible Georgian/Kyrgyz domain patterns (profi.edu.ge, profiuni.ge, profi-uni.ge, profi.ac.ge, profi.kg, profiuniversity.kg) — all failed DNS resolution. No authoritative domain or media identified this pass; first pass's conclusion stands.",
+    "proposedPublicIds": {
+      "logo": "universities/profi-university/logo",
+      "cover": "universities/profi-university/cover"
+    }
+  },
+  {
+    "universitySlug": "pskov-state-university",
+    "universityName": "Pskov State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The site's header logo is inline/CSS-only, so used the standalone favicon SVG (a full crest, not a generic icon) hosted directly on the official domain as the alternate standalone-file technique. Cover sourced from the homepage's own upload directory and visually confirmed as a genuine campus/event photo..",
+    "proposedPublicIds": {
+      "logo": "universities/pskov-state-university/logo",
+      "cover": "universities/pskov-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://pskgu.ru/favicon.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official university site favicon/emblem asset (standalone SVG crest on the official domain), pskgu.ru",
+      "proposedPublicId": "pskov-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://pskgu.ru/upload/iblock/360/auys4sa3fnxzhlmutn7cngdn8p7tjye2/4319368601.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official university homepage photo (students at a university event, lanyards visible), hosted in pskgu.ru's own upload directory",
+      "proposedPublicId": "pskov-state-university-cover"
+    }
+  }
+]

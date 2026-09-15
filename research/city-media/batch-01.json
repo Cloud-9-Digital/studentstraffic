@@ -1,0 +1,250 @@
+{
+  "entries": [
+    {
+      "countrySlug": "australia",
+      "city": "Brisbane",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Skyline_of_Brisbane_from_Kangaroo_Point_Cliffs_Park%2C_Nov_2020%2C_05.jpg",
+      "alt": "Brisbane skyline viewed from Kangaroo Point Cliffs Park",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skyline_of_Brisbane_from_Kangaroo_Point_Cliffs_Park,_Nov_2020,_05.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "australia",
+      "city": "Canberra",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Canberra_skyline%2C_York_Park_conservation_site%2C_The_National_Circuit%2C_Barton%2C_ACT_IMGP9718.jpg",
+      "alt": "Canberra skyline seen from York Park, Barton",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canberra_skyline,_York_Park_conservation_site,_The_National_Circuit,_Barton,_ACT_IMGP9718.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "australia",
+      "city": "Newcastle",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Newcastle_from_Fort_Scratchley.jpg",
+      "alt": "Newcastle, New South Wales, viewed from Fort Scratchley",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Newcastle_from_Fort_Scratchley.jpg",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "countrySlug": "australia",
+      "city": "Sydney",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Sydney_Opera_House_and_Harbour_Bridge_Dusk_2019-06-21.jpg",
+      "alt": "Sydney Opera House and Harbour Bridge at dusk",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_2019-06-21.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "australia",
+      "city": "Townsville",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Townsville_from_castle_hill_lookout_near_sunset.jpg",
+      "alt": "Townsville skyline viewed from Castle Hill lookout near sunset",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Townsville_from_castle_hill_lookout_near_sunset.jpg",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "countrySlug": "bosnia-and-herzegovina",
+      "city": "Mostar",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Mostar_Old_Town_Panorama_2007.jpg",
+      "alt": "Mostar Old Town panorama with the Stari Most bridge over the Neretva River",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg",
+      "license": "CC BY-SA 4.0 (multi-licensed, also 3.0/2.5/2.0/1.0)"
+    },
+    {
+      "countrySlug": "bosnia-and-herzegovina",
+      "city": "Sarajevo",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Sarajevo_City_Panorama.JPG",
+      "alt": "Panoramic view of Sarajevo city",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarajevo_City_Panorama.JPG",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "british-virgin-islands",
+      "city": "Tortola",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Road_Town%2C_Tortola%2C_British_Virgin_Islands_%2832711582262%29.jpg",
+      "alt": "Road Town, the capital of Tortola, British Virgin Islands",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Road_Town,_Tortola,_British_Virgin_Islands_(32711582262).jpg",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "countrySlug": "canada",
+      "city": "Barrie",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Barrie_skyline_2025.jpg",
+      "alt": "Barrie, Ontario skyline",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barrie_skyline_2025.jpg",
+      "license": "CC0 1.0"
+    },
+    {
+      "countrySlug": "canada",
+      "city": "Calgary",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Calgary_2023.jpg",
+      "alt": "Calgary downtown skyline",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calgary_2023.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "canada",
+      "city": "Edmonton",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Edmonton_Skyline_2020.jpg",
+      "alt": "Edmonton downtown skyline",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edmonton_Skyline_2020.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "canada",
+      "city": "Kingston",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Kingston_Harbour_from_Fort_Henry_-_panoramio.jpg",
+      "alt": "Kingston, Ontario harbour viewed from Fort Henry",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kingston_Harbour_from_Fort_Henry_-_panoramio.jpg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "countrySlug": "canada",
+      "city": "New Westminster",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/View_of_City_of_New_Westminster_in_November_2024.jpg",
+      "alt": "View of New Westminster, British Columbia skyline",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_City_of_New_Westminster_in_November_2024.jpg",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "countrySlug": "czech-republic",
+      "city": "Ostrava",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Pohled_na_Ostravu_z_Nov%C3%A9_radnice%2C_srpen_2011%2C_4.jpg",
+      "alt": "View of Ostrava from the New City Hall tower",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pohled_na_Ostravu_z_Nov%C3%A9_radnice,_srpen_2011,_4.jpg",
+      "license": "CC BY 3.0"
+    },
+    {
+      "countrySlug": "fiji",
+      "city": "Lautoka",
+      "status": "hold",
+      "reason": "No suitable free-licensed iconic city photo found. Commons' Lautoka category (Category:Lautoka) contains only street-level snapshots, a mosque, a market, bus photos, and a resort banner image (First Landing Resort, ~7:1 aspect ratio) - none read as a recognizable representation of the city's skyline/cityscape identity. Did not want to guess or use an unrepresentative image."
+    },
+    {
+      "countrySlug": "france",
+      "city": "Fontainebleau",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Le_Grand_Escalier_%C3%A0_Fer_de_Cheval.jpg",
+      "alt": "The Horseshoe Staircase (Escalier en Fer-a-Cheval) at the Chateau de Fontainebleau",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Grand_Escalier_%C3%A0_Fer_de_Cheval.jpg",
+      "license": "CC BY 2.5 (also GFDL 1.2+)"
+    },
+    {
+      "countrySlug": "france",
+      "city": "Lille",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Grand_place%2C_Lille.jpg",
+      "alt": "Grand Place (Place du General de Gaulle) in Lille, France, with the Vieille Bourse",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_place,_Lille.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "france",
+      "city": "Paris",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg/1280px-Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+      "alt": "Eiffel Tower and Pont Alexandre III at night, Paris",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+      "license": "CC BY 2.0 (1280px thumbnail of a 10.4MB original)"
+    },
+    {
+      "countrySlug": "georgia",
+      "city": "Gori",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/View_of_Gori_from_Gori_Fortress_%28photo_by_Peterfitzgerald%2C_2005%29.JPEG",
+      "alt": "View of Gori, Georgia, from Gori Fortress",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Gori_from_Gori_Fortress_(photo_by_Peterfitzgerald,_2005).JPEG",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "countrySlug": "georgia",
+      "city": "Kutaisi",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg",
+      "alt": "Downtown Kutaisi and the White Bridge, Georgia, seen from Mount Gora",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "countrySlug": "germany",
+      "city": "Frankfurt",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Skyline_Frankfurt_am_Main_2015.jpg/1280px-Skyline_Frankfurt_am_Main_2015.jpg",
+      "alt": "Frankfurt am Main skyline",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skyline_Frankfurt_am_Main_2015.jpg",
+      "license": "CC BY-SA 3.0 DE (1280px thumbnail of a 36MB original)"
+    },
+    {
+      "countrySlug": "germany",
+      "city": "Hamburg",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Hamburg_city_skyline.jpg",
+      "alt": "Hamburg city skyline seen from the Aussenalster",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_city_skyline.jpg",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "countrySlug": "hungary",
+      "city": "Debrecen",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Great_Protestant_Church_of_Debrecen_3564.jpg",
+      "alt": "The Great Protestant Church (Nagytemplom) in Debrecen, Hungary",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Protestant_Church_of_Debrecen_3564.jpg",
+      "license": "Public Domain (author release)"
+    },
+    {
+      "countrySlug": "ireland",
+      "city": "Galway",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Spanish_Arch_%26_The_Long_Walk_-_Galway.jpg",
+      "alt": "Spanish Arch and the Long Walk in Galway, Ireland",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spanish_Arch_%26_The_Long_Walk_-_Galway.jpg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "countrySlug": "italy",
+      "city": "Rome",
+      "status": "ready",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg",
+      "alt": "The Colosseum in Rome, Italy",
+      "sourceLabel": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome,_Italy_-_April_2007.jpg",
+      "license": "CC BY-SA 2.5"
+    }
+  ]
+}

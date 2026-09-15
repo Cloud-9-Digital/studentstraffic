@@ -1,0 +1,37 @@
+{
+  "scope": "Togo medical discovery — Université de Kara Faculty of Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Université de Kara's Faculty of Health Sciences page lists a State Doctorate in Medicine among its programmes and describes hospital placement sites as its Espace CHU.",
+      "sourceUrl": "https://univkara.tg/facultes-et-instituts/fss/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The faculty's official admissions information requires a scientific baccalaureate (C, D or E) and review of secondary-school marks; the general 2026/27 admissions page requires foreign students to obtain university homologation and authorisation before enrolment.",
+      "sourceUrl": "https://univkara.tg/admission/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The faculty page says the academic year is 32 weeks over two semesters and that placements are assessed teaching units.",
+      "sourceUrl": "https://univkara.tg/universite/facultes-instituts/fss-faculte-des-sciences-de-la-sante/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Togo's official 2025/26 recognised-institutions announcement lists Université de Kara among the country's public universities.",
+      "sourceUrl": "https://www.republiquetogolaise.tg/formation/0610-11129-enseignement-superieur-97-etablissements-officiellement-reconnus-pour-l-annee-academique-2025-2026",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Medicine tuition, mandatory-fee schedule or full cost breakdown was located on an official source.",
+    "The 2026/27 general admissions page does not provide Medicine-specific deadline, document checklist, selection outcome or programme fee information.",
+    "Instructional language, named clinical partners, scholarship/loan support, accommodation and professional-registration pathway remain unverified."
+  ],
+  "nextAction": "Obtain a current FSS Medicine call, fee decision and placement agreement details, then verify language, international eligibility, support and registration evidence before packaging content."
+}

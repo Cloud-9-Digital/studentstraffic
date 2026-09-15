@@ -1,0 +1,42 @@
+{
+  "scope": "Bolivia medical discovery — Universidad Mayor de San Simón Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UMSS publishes a 2026 Licenciatura en Medicina plan in its academic system; the plan includes first-year Medicina Social, Anatomía Humana, Histología, and Embriología y Genética.",
+      "sourceUrl": "https://websis.umss.edu.bo/umss_carrerasDesc.asp?codSer=UMSS&idCat=45&qual=188301",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMSS states that the rotating internship is Medicine's sole graduation modality, lasts one calendar year, and includes rotations in internal medicine, surgery, paediatrics, gynaecology-obstetrics and social medicine.",
+      "sourceUrl": "https://med.umss.edu.bo/medicina-2/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMSS's Medicine page identifies supervised clinical placements for the internship in public and social-security hospitals at second and third levels of care.",
+      "sourceUrl": "https://med.umss.edu.bo/medicina-2/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMSS's Faculty of Medicine reports that the Medicine programme worked toward its fifth international accreditation through ARCU-SUR of MERCOSUR.",
+      "sourceUrl": "https://med.umss.edu.bo/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMSS's Faculty of Medicine lists student medical insurance, scholarships and a psychopedagogical support centre for enrolled Medicine students.",
+      "sourceUrl": "https://med.umss.edu.bo/iteracion-social-y-becas/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official undergraduate fee/cost publication was assembled for the required payload fields.",
+    "A current, complete entry-admissions and instructional-language evidence set remains incomplete for publication."
+  ],
+  "nextAction": "Obtain current UMSS undergraduate admission, fee and language publications and finish the field-level review before publishing."
+}

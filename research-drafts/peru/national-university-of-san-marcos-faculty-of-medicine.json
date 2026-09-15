@@ -1,0 +1,36 @@
+{
+  "scope": "Peru medical discovery — National University of San Marcos Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UNMSM's Faculty of Medicine describes its Escuela Profesional de Medicina Humana and publishes its 2024 plan of studies, totaling 350 credits and 10,080 semester hours.",
+      "sourceUrl": "https://medicina.unmsm.edu.pe/escuelas-profesionales/medicina-humana/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UNMSM's current admissions page schedules the 2026-II Medicina Humana entrance examination for 15 March 2026.",
+      "sourceUrl": "https://www.unmsm.edu.pe/formacion-academica/admision",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "SUNEDU lists UNMSM's Lima undergraduate medicine programme as licensed.",
+      "sourceUrl": "https://www.sunedu.gob.pe/licenciamiento-programas-medicina-humana/",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A 2026 Faculty of Medicine agreement with Hospital María Auxiliadora covers undergraduate training and internado in Medicina Humana.",
+      "sourceUrl": "https://medicina.unmsm.edu.pe/facultad-de-medicina-suscribe-convenio-con-el-hospital-maria-auxiliadora-para-fortalecer-la-formacion-clinica/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current official fee/cost information for the proposed audience was not sufficiently assembled for the required payload fields.",
+    "The evidence set does not yet document all required publication fields, including instructional language and student-support details."
+  ],
+  "nextAction": "Collect the current official fee, language and student-support publications and finish a field-level review before publishing."
+}

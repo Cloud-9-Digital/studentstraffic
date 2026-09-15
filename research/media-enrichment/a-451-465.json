@@ -1,0 +1,298 @@
+{
+  "batchId": "media-a-451-465",
+  "scope": "Alphabetical missing-media rows 451-465; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-ottawa-nursing",
+      "universityName": "University of Ottawa",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uottawa.ca/themes/custom/uottawa/dist/assets/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website header",
+        "proposedPublicId": "university-of-ottawa-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uottawa.ca/sites/g/files/bhrskd331/files/styles/max_width_l_1470px/public/2026-03/New%20Hero%20-%201920x800%20%283%29.png?itok=bm4srwjp",
+        "sourceType": "official",
+        "rightsBasis": "official uOttawa homepage hero image",
+        "proposedPublicId": "university-of-ottawa-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-oxford",
+      "universityName": "University of Oxford",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Sourced URL (assets-oxweb.admin.ox.ac.uk 'Oxford skyline' derivative) resolved with HTTP 200 across repeated requests during research, but returned a persistent HTTP 403 to both Cloudinary's own fetcher and a direct browser-UA fetch at upload time. Not applied. A second candidate (Hertford College Bridge banner, same CDN) was also identified during research and may be worth trying in a future pass."
+    },
+    {
+      "universitySlug": "university-of-padova-italy",
+      "universityName": "University of Padova",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://wwwassets.unipd.it/sites/default/files/media/2025-09/Marchio%20STD%20RED_0.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Unipd brand mark served from the university's own asset CDN",
+        "proposedPublicId": "university-of-padova-italy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://wwwassets.unipd.it/sites/default/files/hero_images/n_stemmi_cortilebo_2_1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official Unipd homepage hero image (historic courtyard) served from the university's own asset CDN",
+        "proposedPublicId": "university-of-padova-italy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-parma-italy",
+      "universityName": "University of Parma",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unipr.it/themes/custom/unipr_2025/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website theme",
+        "proposedPublicId": "university-of-parma-italy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.unipr.it/sites/default/files/styles/social_card/public/2022-06/social-card_0.jpg?itok=e-kswSf4",
+        "sourceType": "official",
+        "rightsBasis": "official Unipr social-card image declared by the university's own homepage og:image tag",
+        "proposedPublicId": "university-of-parma-italy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-pavia-italy",
+      "universityName": "University of Pavia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): unipv.eu/portale.unipv.it still 403s direct fetch. Used the Wayback Machine to render the current homepage HTML (fetched with --compressed to handle gzip) to identify both asset paths, then confirmed each resolves via its own Wayback Machine archived copy..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260723181433im_/https://portale.unipv.it/themes/custom/unipv_default/img/logosemplificatoamaranto.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site portale.unipv.it (still returns HTTP 403 to direct/automated fetch) via a Wayback Machine snapshot dated 2026-07-23; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-pavia-italy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20230118215803im_/https://portale.unipv.it/sites/default/files/styles/wide/public/2022-12/home%20testata.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same homepage hero image (alt 'studenti giardino') still referenced in the site's current 2026-07 markup (confirmed via a fresh Wayback capture of the live homepage), served via an older Wayback Machine archived copy of the asset itself since the live asset URL still 403s; verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-pavia-italy-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-pennsylvania",
+      "universityName": "University of Pennsylvania",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website theme",
+        "proposedPublicId": "university-of-pennsylvania-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-pittsburgh",
+      "universityName": "University of Pittsburgh",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.pitt.edu/sites/default/files/assets/pitt_shield_white-home.png",
+        "sourceType": "official",
+        "rightsBasis": "official Pitt shield mark served from the university's own homepage",
+        "proposedPublicId": "university-of-pittsburgh-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.pitt.edu/sites/default/files/styles/image_tile/public/tile-img/living-exploreoutdoors-cathedral.jpg?h=1c709f1d&itok=nRrvxqkH",
+        "sourceType": "official",
+        "rightsBasis": "official homepage image of the Cathedral of Learning, captioned by the university's own site",
+        "proposedPublicId": "university-of-pittsburgh-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-porto-faculty-of-medicine",
+      "universityName": "University of Porto Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260701202838im_/https://sigarra.up.pt/fmup/pt/imagens/LogotipoSI",
+        "sourceType": "official",
+        "rightsBasis": "Same asset confirmed by the first pass; served via a Wayback Machine archived copy (snapshot dated 2026-07-01) since sigarra.up.pt is known to block Cloudinary's own fetcher, verified to resolve directly (HTTP 200, image/png).",
+        "proposedPublicId": "university-of-porto-faculty-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260428164808im_/https://sigarra.up.pt/fmup/en/web_gessi_docs.download_file?p_name=F1922523963/ensino6.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-04-28), verified to resolve directly (HTTP 200, image/jpeg).",
+        "proposedPublicId": "university-of-porto-faculty-of-medicine-cover"
+      },
+      "reason": "Second-pass upgrade (2026-07-26): Per the task note, both assets were already correctly identified by the first pass and only failed at upload time. Direct re-fetch with a standard browser UA now also succeeds consistently, but used the Wayback Machine as the primary technique per instructions since Cloudinary's own fetcher (not my fetch path) is what actually failed before..",
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-pretoria",
+      "universityName": "University of Pretoria",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.up.ac.za/themes/custom/up2024/images/horizontal-logo-bg.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website theme",
+        "proposedPublicId": "university-of-pretoria-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://drupalwebprod-files.up.ac.za/Public/styles/hero_x_large/public/2026-07/DSC08032%20%281%29.jpg?VersionId=OPfBzivv0qqelxlWlagQ08wwc5nJLwgx&h=ea95bb15&itok=7SeT9dmf",
+        "sourceType": "official",
+        "rightsBasis": "official UP homepage hero-carousel image served from the university's own file CDN",
+        "proposedPublicId": "university-of-pretoria-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-pei-nursing",
+      "universityName": "University of Prince Edward Island",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://files.upei.ca/misc/upeishield.svg",
+        "sourceType": "official",
+        "rightsBasis": "official UPEI shield logo served from the university's own asset host",
+        "proposedPublicId": "university-of-pei-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.upei.ca/sites/default/files/styles/front_page_media/public/CF292-11S-Memorial-8201-M.jpg.webp",
+        "sourceType": "official",
+        "rightsBasis": "official homepage image of UPEI's Memorial Hall, captioned by the university's own site",
+        "proposedPublicId": "university-of-pei-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-pecs",
+      "universityName": "University of Pécs",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://pte.hu/sites/pte.hu/files/favicon_150x150.svg",
+        "sourceType": "official",
+        "rightsBasis": "official PTE monogram mark (matches the homepage's inline site logo geometry), served as the university's own site icon asset",
+        "proposedPublicId": "university-of-pecs-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://pte.hu/sites/pte.hu/files/inline-images/hero_pte_v3.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official PTE homepage full-width hero image",
+        "proposedPublicId": "university-of-pecs-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-queensland",
+      "universityName": "University of Queensland",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://static.uq.net.au/v11/logos/corporate/uq-logo--reversed.svg",
+        "sourceType": "official",
+        "rightsBasis": "official UQ corporate logo served from the university's own static asset CDN",
+        "proposedPublicId": "university-of-queensland-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uq.edu.au/sites/default/files/styles/uqds_card/public/2023-12/st-lucia-campus.jpg?itok=39nkzdMY",
+        "sourceType": "official",
+        "rightsBasis": "official homepage image of the Forgan Smith building at St Lucia campus, captioned by the university's own site",
+        "proposedPublicId": "university-of-queensland-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-rijeka-faculty-of-medicine",
+      "universityName": "University of Rijeka Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://medri.uniri.hr/wp-content/uploads/2020/04/medri-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "MEDRI's own logo served from the faculty's website uploads",
+        "proposedPublicId": "university-of-rijeka-faculty-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://medri.uniri.hr/wp-content/uploads/2023/01/medri-hero-360-min.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official MEDRI homepage hero section background image",
+        "proposedPublicId": "university-of-rijeka-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-rome-tor-vergata",
+      "universityName": "University of Rome Tor Vergata",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Re-checked web.uniroma2.it directly (site resolves fine, HTTP 200) and its /ateneo about-page shell, but it still only surfaces the same unlabeled slide (/immagine/7962) and outdated anniversary/coronavirus badges the first pass already rejected. Commons-license technique instead found a clean, freely-licensed campus building photo.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Lettere_e_Filosofia_-_Tor_Vergata_2.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Lettere_e_Filosofia_-_Tor_Vergata_2.jpg, CC BY-SA 4.0, own work by Camelia.boban, captioned 'Faculty of Humanities, University of Tor Vergata in Rome'.",
+        "proposedPublicId": "university-of-rome-tor-vergata-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-rwanda-college-of-medicine-and-health-sciences",
+      "universityName": "University of Rwanda College of Medicine and Health Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://cmhs.ur.ac.rw/images/logo-ur.png",
+        "sourceType": "official",
+        "rightsBasis": "official University of Rwanda logo served from the CMHS website header",
+        "proposedPublicId": "university-of-rwanda-college-of-medicine-and-health-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://cmhs.ur.ac.rw/local/cache-gd2/82/38b6bd74a871f2b191c9ae5ae1fdda.jpg?1783430015",
+        "sourceType": "official",
+        "rightsBasis": "official CMHS homepage slider image captioned 'Welcome' by the college's own site",
+        "proposedPublicId": "university-of-rwanda-college-of-medicine-and-health-sciences-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

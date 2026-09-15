@@ -1,0 +1,149 @@
+{
+  "batchId": "a-121-130",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 121-130; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "georgian-american-university",
+      "universityName": "Georgian American University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): GAU's site is a JS-rendered SPA; fetching it with a real page-render tool exposed the logo path under /storage/app/media/logo/ that plain markup scraping in the first pass likely missed. The photo carousel on the homepage pulls what appear to be Facebook-CDN-hosted images with non-persistent numeric filenames and no stable direct URL, so no confident cover could be isolated -- still hold on cover only.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://gau.edu.ge/storage/app/media/logo/gau-ka-2.png",
+        "sourceType": "official",
+        "rightsBasis": "official gau.edu.ge site logo asset, verified HTTP 200",
+        "proposedPublicId": "georgian-american-university-logo"
+      }
+    },
+    {
+      "universitySlug": "georgian-college-nursing",
+      "universityName": "Georgian College Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed this record is the Honours Bachelor of Science in Nursing (BScN) programme page of Georgian College, a public college in Barrie, Ontario, Canada (official site georgiancollege.ca/academics/programs/honours-bachelor-science-nursing-bscn/), not an independent university. It is a programme/faculty-level record and needs a parent-brand inheritance decision (whether it should carry Georgian College's institutional logo/cover, or be merged into a Georgian College parent record) before any media is assigned. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "seu-georgian-national-university",
+      "universityName": "Georgian National University SEU",
+      "status": "resolved-elsewhere",
+      "reason": "Merged 2026-07-27: this was a confirmed duplicate DB record of 'georgian-national-university-seu' (same institution, same Wikipedia entry). Reviewed with the user; the duplicate university row (id 377) was deleted, its richer summary text was carried over to the canonical record (id 216, which had real user peer/shortlist data and was kept), and a permanent 301 redirect (university + program pages, all section suffixes) was added in next.config.ts from this slug to the canonical. No further action needed."
+    },
+    {
+      "universitySlug": "georgian-national-university-seu",
+      "universityName": "Georgian National University SEU",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed canonical record after the 2026-07-27 duplicate merge (see 'seu-georgian-national-university'). Still missing logo and cover -- no dedicated media research has resolved this yet; identity is no longer in question, this just needs a normal media pass."
+    },
+    {
+      "universitySlug": "glasgow-caledonian-university",
+      "universityName": "Glasgow Caledonian University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Checked the Commons infobox logo specifically for a PD-textlogo tag rather than assuming it was a non-free crest (the GCU arms/crest file is a separate, also-PD heraldic file that was not needed here)..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/GCUlogo_251px.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, tagged PD-textlogo / Public domain",
+        "proposedPublicId": "glasgow-caledonian-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/GCU_Campus_View.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, campus view photo (uploaded via the 'For the Common Good' GLAM partnership)",
+        "proposedPublicId": "glasgow-caledonian-university-cover"
+      }
+    },
+    {
+      "universitySlug": "goce-delcev-university-faculty-of-medicine",
+      "universityName": "Goce Delcev University Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Checked ugd.edu.mk's Faculty of Medicine / General Medicine programme page directly: it carries no faculty-specific logo or emblem, only the general Goce Delcev University logo (logo-ugd-mk2.png) in the header and footer, and no hero/building photography at all. Using the parent university's logo for this faculty-level record would be a parent-brand inheritance decision that needs an editorial call. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "griffith-university",
+      "universityName": "Griffith University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Sourced assets verified during research (logo via Referer-header workaround for Cloudflare bot-mitigation; cover from Wikimedia Commons) but neither applied at upload time: logo hit persistent HTTP 403 from griffith.edu.au's automated-fetch blocking, and cover hit sustained Wikimedia rate-limiting (HTTP 429) across three retry attempts with increasing backoff. Both source URLs remain valid for a future retry once Wikimedia's rate limit clears and/or with a different fetch approach for the logo.",
+      "logo": {
+        "sourceUrl": "https://www.griffith.edu.au/__data/assets/image/0037/1755379/gu.png",
+        "sourceType": "official",
+        "rightsBasis": "official griffith.edu.au og:image, verified HTTP 200 and visually confirmed as the Griffith University crest mark",
+        "proposedPublicId": "griffith-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Griffith_University_Nathan_Campus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 2.0, photo of the Griffith University Nathan Campus entry sign",
+        "proposedPublicId": "griffith-university-cover"
+      }
+    },
+    {
+      "universitySlug": "grigol-robakidze-university",
+      "universityName": "Grigol Robakidze University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Found the direct official logo asset on gruni.edu.ge itself (preferred over a same-named Commons 'own work' recreation, since the official file is a cleaner, unambiguous source). No og:image or campus hero photo was present on the homepage, so cover remains unresolved.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://gruni.edu.ge/assets/img/grunilogo.png",
+        "sourceType": "official",
+        "rightsBasis": "official gruni.edu.ge site logo asset, verified HTTP 200",
+        "proposedPublicId": "grigol-robakidze-university-logo"
+      }
+    },
+    {
+      "universitySlug": "gulf-medical-university",
+      "universityName": "Gulf Medical University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Deliberately used GMU's own dated 2026 logo file rather than the Thumbay Group logo also present on the same page, per the hold reason's caution about Thumbay Medicity branding ambiguity. The site's og:image is a video-thumbnail (per the original hold concern) and the gallery photos are hosted on the parent thumbay.com domain with cache-only paths of uncertain GMU-specific attribution, so cover remains unresolved -- still hold on cover only, deliberately not using partner/agency imagery.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://gmu.ac.ae/wp-content/uploads/2026/02/gmu-logo-2026.png",
+        "sourceType": "official",
+        "rightsBasis": "official gmu.ac.ae site logo asset (current 2026 mark, distinct from the parent Thumbay Group logo), verified HTTP 200",
+        "proposedPublicId": "gulf-medical-university-logo"
+      }
+    },
+    {
+      "universitySlug": "gulistan-state-university",
+      "universityName": "Gulistan State University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Identified the correct official domain (guldu.uz) directly. Its og:image was downloaded and visually inspected: it turned out to be a scanned admissions-exam-schedule PDF page, not a campus photo, so it was rejected and cover remains unresolved rather than being misused.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://guldu.uz/guldu-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official guldu.uz site logo asset, verified HTTP 200",
+        "proposedPublicId": "gulistan-state-university-logo"
+      }
+    }
+  ]
+}

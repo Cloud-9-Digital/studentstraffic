@@ -1,0 +1,17 @@
+{
+  "scope": "Ghana medical discovery — University of Cape Coast Graduate Entry MBChB",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {"claim": "University of Cape Coast's 2025/26 Graduate Entry MBChB notice describes a full-time residential programme beginning in February 2026 and restricted to first-degree holders.", "sourceUrl": "https://ucc.edu.gh/announcements/admission-graduate-entry-bachelor-medicine-and-bachelor-surgery-mb-chb-programme-0", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "The 2025/26 call requires a science-related BSc with at least Second Class Honours Lower Division, an entrance examination and a selection interview; it also describes the programme as strictly fee-paying.", "sourceUrl": "https://ucc.edu.gh/announcements/admission-graduate-entry-bachelor-medicine-and-bachelor-surgery-mb-chb-programme-0", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "The reviewed 2026/27 UCC graduate and first-degree admission notices do not establish an active Graduate Entry MBChB call, its tuition or international applicant route.", "sourceUrl": "https://ucc.edu.gh/announcements?type=admission", "sourceType": "official-university", "verifiedAt": "2026-07-25"}
+  ],
+  "holdReasons": [
+    "No 2026/27 Graduate Entry MBChB announcement was found; the verified programme-specific call is for 2025/26 and has passed.",
+    "The available call says fee-paying but does not publish current annual MBChB tuition or a total programme fee.",
+    "No current official source was captured for international eligibility, teaching language, programme duration, clinical training or professional recognition.",
+    "The route is graduate entry and must not be merged with UCC's separate regular first-degree MBChB listing."
+  ],
+  "nextAction": "Wait for or obtain UCC's next Graduate Entry MBChB notice, fee schedule and curriculum/clinical-language documentation. Package only route-specific evidence for the graduate-entry programme."
+}

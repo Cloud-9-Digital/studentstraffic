@@ -1,0 +1,400 @@
+{
+  "countries": [
+    {
+      "slug": "armenia",
+      "name": "Armenia",
+      "region": "Caucasus",
+      "summary": "Armenia is an established Caucasus destination for direct-entry medical education, with several WHO-listed medical universities offering an English-medium, single-cycle six-year Physician (MD) qualification straight after secondary school. Yerevan, the capital, hosts most of the country's medical institutes.",
+      "whyStudentsChooseIt": "A direct-entry, six-year single-cycle MD structure avoids the separate pre-medical bachelor's stage required in some destinations, while nationally accredited universities and long-established international cohorts support a familiar, well-trodden admissions route. English-medium tracks, alongside Armenian and Russian instruction, make the country accessible to a broad range of international applicants.",
+      "climate": "Continental climate with hot, dry summers and cold winters; Yerevan sits in a mountainous basin with significant day-to-night and seasonal temperature swings.",
+      "currencyCode": "AMD",
+      "metaTitle": "Study in Armenia | Universities & Programs",
+      "metaDescription": "Compare Armenia medical universities by tuition, accreditation, admissions, and the direct-entry MD route for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Yerevan State Medical University maps its General Medicine MD to this category: a direct-entry, single-cycle six-year integrated programme leading to the MD Physician qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "armenia",
+      "slug": "yerevan-state-medical-university",
+      "name": "Yerevan State Medical University after Mkhitar Heratsi",
+      "city": "Yerevan",
+      "type": "Public",
+      "establishedYear": 1920,
+      "officialWebsite": "https://ysmu.am/en/",
+      "mediaAttribution": {},
+      "summary": "Yerevan State Medical University after Mkhitar Heratsi is Armenia's oldest and flagship public medical university, founded in 1920 in Yerevan. Its six-year General Medicine MD is a direct-entry, integrated one-step programme taught in English, Armenian and Russian, holding institutional accreditation from ANQA and hosting over 1,200 international students from 33 countries within its Faculty of General Medicine alone.",
+      "campusLifestyle": "The university's central campus sits at 2 Koryun Street in Yerevan. University-wide, YSMU reports over 8,000 students, around 2,000 clinical residents across 80-plus postgraduate specialties, and roughly 1,100 lecturers. Facilities include a Simulation Center for Practical Skills, OSCE-format clinical-assessment rooms at the Mikaelyan Institute of Surgery, a University Library with EBSCO database access, and the COBRAIN Center for international research collaboration.",
+      "cityProfile": "Yerevan, Armenia's capital, hosts YSMU's central campus and its network of affiliated teaching hospitals. The Faculty of General Medicine alone enrolls roughly 4,000 students, of whom more than 1,200 are international, drawn from 33 countries -- a substantial, long-established international cohort within the wider university's 9,000-plus foreign graduates across 40 countries.",
+      "practicalExposure": "Clinical instruction runs through three named university hospital complexes -- Heratsi No. 1 Hospital Complex, Muratsan Hospital Complex, and the Mikayelyan Institute of Surgery -- alongside affiliated clinical-diagnostic and pathology laboratories. Since the 2022-23 academic year, practical clinical-skills assessment has used the OSCE (Objective Structured Clinical Skills Examination) format in 25 newly renovated rooms at the Mikaelyan Institute of Surgery. Specialized clinical instruction departments named by the university include Internal Medicine (Rheumatology, Pulmonology and Nephrology, Gastroenterology and Hepatology), Abdominal, Emergency, Thoracic, Endocrine and Cardiovascular Surgery, Obstetrics and Gynecology (two departments), and Paediatrics (two departments). The programme runs over 12 semesters at 30 ECTS credits each, and an optional four-year postgraduate residency stage follows the base MD for students who continue into specialization.",
+      "hostelOverview": "A University Hostel is available for international students, with rooms housing two or three students. YSMU has not published a specific hostel fee figure on its official admissions page; applicants should confirm current accommodation costs directly with the Department of International Cooperation.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published for international students. Daily food and living costs should be budgeted as a separate line alongside tuition and the mandatory annual medical insurance the university requires of all foreign students.",
+      "safetyOverview": "No campus-wide safety statement or dedicated safety-support service is published on YSMU's official site. International students are directed instead to the International Students' Academic Affairs Department and the Department of International Cooperation for general support.",
+      "studentSupport": "YSMU names a dedicated International Students' Academic Affairs Department, a Department of International Cooperation led by a named director, a Department of Foreign Students' Preparatory Education for applicants needing a foundation year, and an International Students' Council under the Student Parliament.",
+      "whyChoose": [
+        "Armenia's oldest and flagship state medical university, founded in 1920, with institutional accreditation from ANQA currently valid through 24 December 2026.",
+        "A large, long-established English-medium international cohort -- over 1,200 international students from 33 countries within the Faculty of General Medicine alone.",
+        "A genuine direct-entry, single-cycle six-year MD structured on an ECTS credit system (30 credits per semester) rather than a graduate-entry route.",
+        "Named affiliated teaching-hospital network -- Heratsi No. 1, Muratsan, and the Mikayelyan Institute of Surgery -- plus a dedicated Simulation Center and OSCE-based clinical assessment introduced in 2022-23.",
+        "Dedicated institutional infrastructure for international students, including a Preparatory Education Department for applicants who need an additional foundation year before entrance exams."
+      ],
+      "thingsToConsider": [
+        "YSMU's own official pages disagree on the annual tuition figure for General Medicine taught in English -- the admissions page for foreign citizens states AMD 2,600,000 per year while the Faculty of General Medicine page separately states AMD 1,300,000 per year. This conflict is unresolved and should be confirmed directly with the Department of International Cooperation before budgeting.",
+        "Tuition is quoted only in Armenian Dram; any USD conversion will fluctuate with the exchange rate and is not an official YSMU figure.",
+        "Although the MD track is officially taught in English, no published document confirms whether functional Armenian or Russian becomes practically necessary during ward-level clinical rotations in later years.",
+        "Indian applicants must separately qualify NEET-UG and hold a current NMC Eligibility Certificate; YSMU's own admissions page confirms this requirement but is not itself the authority that verifies it."
+      ],
+      "bestFitFor": [
+        "NEET-UG-qualified Indian applicants and other international students seeking a direct-entry, English-medium six-year MD at a long-established, nationally accredited public university.",
+        "Students who want a structured ECTS-based curriculum with modern clinical-assessment methods such as OSCE and simulation-based teaching.",
+        "Applicants prepared to independently confirm the exact current tuition figure directly with YSMU given the discrepancy found across its own official pages."
+      ],
+      "industryPartners": [
+        "Heratsi No. 1 Hospital Complex",
+        "Muratsan Hospital Complex",
+        "Mikayelyan Institute of Surgery"
+      ],
+      "recognitionBadges": [
+        "ANQA (National Center for Professional Education Quality Assurance Foundation) — institutional accreditation, valid through 24 December 2026",
+        "State public medical university under the Republic of Armenia Ministry of Education, Science, Culture and Sport"
+      ],
+      "recognitionLinks": [
+        { "label": "ANQA institutional accreditation register — Yerevan State Medical University", "url": "https://www.anqa.am/en/institutional-accreditation-state-register/yerevan-state-medical-university-after-mkhitar-heratsi-1/" },
+        { "label": "YSMU official Faculty of General Medicine page", "url": "https://ysmu.am/en/faculty/faculty-of-general-medicine/" }
+      ],
+      "faq": [
+        {
+          "question": "Is YSMU's General Medicine programme direct-entry for students straight out of secondary school?",
+          "answer": "Yes. YSMU's own Faculty of General Medicine page describes the MD as a six-year, integrated one-step programme -- entry requires secondary or secondary-professional education plus passing two of three entrance tests (Physics, Chemistry, Biology); no prior bachelor's degree is required."
+        },
+        {
+          "question": "How long is the YSMU General Medicine (MD) programme?",
+          "answer": "Six years across 12 semesters at 30 ECTS credits each, leading to the qualification MD Physician. A separate, optional four-year postgraduate residency stage exists after the MD but is not part of the base programme."
+        },
+        {
+          "question": "What entrance exams does YSMU require?",
+          "answer": "Two of three subjects, chosen by the applicant: Physics, Chemistry and Biology, tested at secondary-school exam level. Sri Lankan applicants must pass all three, per Medical Council of Sri Lanka requirements stated on YSMU's own page."
+        },
+        {
+          "question": "Is NEET required for Indian applicants to YSMU?",
+          "answer": "Yes. Both YSMU's own admissions page and India's National Medical Commission confirm that Indian citizens and OCIs must qualify NEET-UG, with the result treated as the mandatory Eligibility Certificate, valid three years from the result declaration."
+        },
+        {
+          "question": "What language is the YSMU MD programme taught in?",
+          "answer": "YSMU states teaching is conducted in Armenian, Russian and English, with a dedicated English-medium track for international students. Applicants should confirm directly whether functional Armenian or Russian is needed for clinical-year patient interaction."
+        },
+        {
+          "question": "When can international students apply, and when does the academic year start?",
+          "answer": "For the 2026-2027 cycle, applications via the government's foreign-student portal run 22 June to 30 September 2026, with entrance exams in late August for early applicants; the academic year itself begins in September."
+        },
+        {
+          "question": "What is the tuition fee for international MD students at YSMU?",
+          "answer": "YSMU's own official pages currently disagree: its admissions page for foreign citizens states AMD 2,600,000 per year, while its Faculty of General Medicine page separately states AMD 1,300,000 per year. This unresolved discrepancy should be confirmed directly with YSMU's Department of International Cooperation before enrolling."
+        },
+        {
+          "question": "Where do YSMU medical students do clinical rotations?",
+          "answer": "At named university-affiliated hospital complexes -- Heratsi No. 1, Muratsan, and the Mikayelyan Institute of Surgery -- plus the university's own Simulation Center, using OSCE-format practical assessments introduced in the 2022-23 academic year."
+        },
+        {
+          "question": "Is accommodation available for international students?",
+          "answer": "Yes, in the University Hostel, with rooms housing two or three students. YSMU has not published a specific hostel fee figure."
+        },
+        {
+          "question": "Is YSMU institutionally accredited in Armenia?",
+          "answer": "Yes -- YSMU holds institutional accreditation from ANQA, Armenia's National Center for Professional Education Quality Assurance Foundation, currently valid through 24 December 2026."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "ANQA Institutional Accreditation State Register — Yerevan State Medical University",
+          "url": "https://www.anqa.am/en/institutional-accreditation-state-register/yerevan-state-medical-university-after-mkhitar-heratsi-1/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for institutional accreditation status and validity period."
+        },
+        {
+          "label": "YSMU official Admission for Foreign Citizens page",
+          "url": "https://ysmu.am/en/admission-foreign-citizens/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility, admissions route, intake window, tuition and accommodation."
+        },
+        {
+          "label": "YSMU official Faculty of General Medicine page",
+          "url": "https://ysmu.am/en/faculty/faculty-of-general-medicine/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme structure, clinical training and the conflicting tuition figure."
+        },
+        {
+          "label": "YSMU official Faculties page",
+          "url": "https://ysmu.am/en/faculties/",
+          "kind": "official-university",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for campus facts, student population and international-student support offices."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "physics, chemistry and biology preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate residency interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "yerevan-state-medical-university-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (MD Programme)",
+          "durationYears": 6,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-07-25",
+            "notes": "YSMU's own official pages carry two conflicting annual tuition figures for General Medicine taught in English -- AMD 2,600,000 on the Admission for Foreign Citizens page and AMD 1,300,000 on the Faculty of General Medicine page. Rather than publish either unreconciled figure as confirmed, this is treated as on-request: prospective students should obtain a current, written fee quote directly from YSMU's Department of International Cooperation."
+          },
+          "officialProgramUrl": "https://ysmu.am/en/faculty/faculty-of-general-medicine/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants holding secondary or secondary-professional education who pass entrance tests in two of three subjects (Physics, Chemistry, Biology)",
+              "Applicants who do not pass entrance exams may instead join YSMU's paid Preparatory Education programme"
+            ],
+            "restrictions": [
+              "Sri Lankan applicants must pass all three entrance exams (Physics, Chemistry and Biology) rather than two of three, per Medical Council of Sri Lanka requirements stated on YSMU's own page",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is stated on YSMU's own page but verified and administered by Indian authorities, not YSMU"
+            ],
+            "notes": "Entrance-exam and eligibility criteria are set nationally under Republic of Armenia admissions rules and reissued for each cycle; the criteria referenced here reflect the 2026-2027 cycle.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://ysmu.am/en/admission-foreign-citizens/"
+          },
+          "admissionsContent": {
+            "overview": "International applicants register through the Republic of Armenia's foreign-student portal, sit entrance exams in two of three subjects (Physics, Chemistry, Biology), and sign an admission contract with the university; those who do not pass entrance exams may instead join a paid preparatory-year programme.",
+            "eligibility": {
+              "intro": "Applicants need secondary or secondary-professional education and must pass entrance tests in two of three subjects -- Physics, Chemistry or Biology -- at secondary-school exam level; Sri Lankan applicants must pass all three.",
+              "items": [
+                "Secondary or secondary-professional education certificate",
+                "Entrance tests passed in two of three subjects: Physics, Chemistry, Biology",
+                "Notarized copies of secondary-education documents, apostilled or embassy-authenticated",
+                "Mandatory annual medical insurance once enrolled",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from YSMU's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Register and submit an application online via the government's foreign-student portal (fs.emis.am)",
+              "Submit notarized, apostilled or embassy-authenticated secondary-education documents",
+              "Sit entrance exams in two of three subjects (Physics, Chemistry, Biology)",
+              "Applicants who do not pass may apply in person to the Department of Foreign Students' Preparatory Education",
+              "Sign an admission contract with the university and arrange mandatory annual medical insurance"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Notarized copies of school or secondary-education documents",
+                "Original High School Diploma, apostilled or authenticated by the applicant's RA Embassy or Consulate, or by the RA Ministry of Foreign Affairs where none exists"
+              ],
+              "application": [
+                "Online application via the government's foreign-student portal",
+                "Completed Applicant's Questionnaire"
+              ]
+            },
+            "deadlinesNote": "For the 2026-2027 academic year, applications run 22 June to 30 September 2026; applicants who apply by 20 August 2026 may sit entrance exams 26-31 August 2026, with the exact schedule published 12 August 2026.",
+            "visaConsiderations": [
+              "Foreign applicants coordinate documentation through the Republic of Armenia's foreign-student portal and Ministry of Education, Science, Culture and Sport; confirm current visa requirements directly with YSMU."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "YSMU's own official pages carry two conflicting annual tuition figures for General Medicine taught in English -- AMD 2,600,000 on the Admission for Foreign Citizens page (most recently updated) and AMD 1,300,000 on the Faculty of General Medicine page. This unresolved discrepancy means no confirmed figure is published here; a current, written quote should be obtained directly from YSMU's Department of International Cooperation before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "General Medicine curriculum (Years 1-6)",
+              "language": "English",
+              "details": "A single, integrated six-year, 12-semester programme (30 ECTS credits per semester) leading to the MD Physician qualification, combining theoretical study with clinical training."
+            },
+            {
+              "phase": "Clinical training and assessment",
+              "language": "English",
+              "details": "Clinical instruction takes place at the Heratsi No. 1 and Muratsan hospital complexes and the Mikayelyan Institute of Surgery, with OSCE-format practical skills assessment introduced in the 2022-23 academic year."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "yerevan-state-medical-university",
+      "publicField": "identity",
+      "claimText": "Yerevan State Medical University after Mkhitar Heratsi, founded 1920, is Armenia's flagship public medical university, located at 2 Koryun Street, Yerevan.",
+      "status": "verified",
+      "sourceLabel": "YSMU official homepage and Faculties page",
+      "sourceUrl": "https://ysmu.am/en/faculties/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "yerevan-state-medical-university",
+      "publicField": "recognition",
+      "claimText": "YSMU holds ANQA institutional accreditation (certificate ԻՀ N 036, approved by RA Ministry order No. 438-Ա/2, 24.03.2021), valid through 24 December 2026.",
+      "status": "verified",
+      "sourceLabel": "ANQA Institutional Accreditation State Register — Yerevan State Medical University",
+      "sourceUrl": "https://www.anqa.am/en/institutional-accreditation-state-register/yerevan-state-medical-university-after-mkhitar-heratsi-1/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-12-24"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "yerevan-state-medical-university",
+      "programmeSlug": "yerevan-state-medical-university-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine MD is a six-year, integrated one-step direct-entry programme, 12 semesters at 30 ECTS credits each, qualification MD Physician; entry requires secondary education plus passing two of three entrance tests (Physics, Chemistry, Biology).",
+      "status": "verified",
+      "sourceLabel": "YSMU official Faculty of General Medicine page",
+      "sourceUrl": "https://ysmu.am/en/faculty/faculty-of-general-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "yerevan-state-medical-university",
+      "programmeSlug": "yerevan-state-medical-university-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Indian citizens and OCIs pursuing a primary medical qualification abroad on or after May 2018 must mandatorily qualify NEET-UG, whose result serves as the NMC Eligibility Certificate, valid three years from result declaration.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission of India — for students to study abroad",
+      "sourceUrl": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "yerevan-state-medical-university",
+      "programmeSlug": "yerevan-state-medical-university-general-medicine",
+      "publicField": "admissions",
+      "claimText": "2026-2027 applications run 22 June to 30 September 2026 via the government foreign-student portal; applicants applying by 20 August 2026 may sit entrance exams 26-31 August 2026.",
+      "status": "verified",
+      "sourceLabel": "YSMU official Admission for Foreign Citizens page",
+      "sourceUrl": "https://ysmu.am/en/admission-foreign-citizens/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "yerevan-state-medical-university",
+      "programmeSlug": "yerevan-state-medical-university-general-medicine",
+      "publicField": "intake",
+      "claimText": "The academic year begins in September; the 2026-2027 application window is 22 June to 30 September 2026, first-party confirmed on the university's own admissions page.",
+      "status": "verified",
+      "sourceLabel": "YSMU official Admission for Foreign Citizens page",
+      "sourceUrl": "https://ysmu.am/en/admission-foreign-citizens/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "yerevan-state-medical-university",
+      "programmeSlug": "yerevan-state-medical-university-general-medicine",
+      "publicField": "fee",
+      "claimText": "YSMU's own pages give two conflicting annual tuition figures for General Medicine in English -- AMD 2,600,000 (Admission for Foreign Citizens page) and AMD 1,300,000 (Faculty of General Medicine page) -- an unresolved internal discrepancy.",
+      "status": "verified",
+      "sourceLabel": "YSMU official Admission for Foreign Citizens page and Faculty of General Medicine page",
+      "sourceUrl": "https://ysmu.am/en/admission-foreign-citizens/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "yerevan-state-medical-university",
+      "programmeSlug": "yerevan-state-medical-university-general-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training takes place at the Heratsi No. 1 Hospital Complex, Muratsan Hospital Complex and Mikayelyan Institute of Surgery, with OSCE-format practical skills assessment introduced in the 2022-23 academic year in 25 renovated rooms.",
+      "status": "verified",
+      "sourceLabel": "YSMU official Faculty of General Medicine page",
+      "sourceUrl": "https://ysmu.am/en/faculty/faculty-of-general-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "yerevan-state-medical-university",
+      "publicField": "student living",
+      "claimText": "University-wide, YSMU reports over 8,000 students and roughly 1,100 lecturers; the Faculty of General Medicine enrolls about 4,000 students, of whom over 1,200 are international, from 33 countries. A University Hostel provides 2-3 person rooms; no hostel fee is published.",
+      "status": "verified",
+      "sourceLabel": "YSMU official Faculties page and Admission for Foreign Citizens page",
+      "sourceUrl": "https://ysmu.am/en/faculties/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

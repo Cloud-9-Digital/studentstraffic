@@ -1,0 +1,422 @@
+{
+  "countries": [
+    {
+      "slug": "moldova",
+      "name": "Moldova",
+      "region": "Europe",
+      "summary": "Moldova is an Eastern European nation and EU candidate country, home to a long-established state medical university offering a genuine English-medium MD track since 2010 alongside its original Romanian-medium programme, at a lower cost than most Western European destinations.",
+      "whyStudentsChooseIt": "Moldova offers an internationally recognized, WHO-listed medical degree at a lower tuition cost than most European destinations, a direct-entry six-year curriculum with substantial clinical training, and an established English-medium track with an international student community, all within a compact capital-city setting.",
+      "climate": "Temperate continental climate with warm summers and cold winters, typical of Eastern Europe.",
+      "currencyCode": "MDL",
+      "metaTitle": "Study MBBS and Medicine in Moldova",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Moldova, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Nicolae Testemitanu State University of Medicine and Pharmacy maps its 6-year Medicine (MD) programme to this category: a direct-entry, single-cycle programme available in an English-medium track since 2010, leading to a Licentiate in Medicine.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "moldova",
+      "slug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "name": "Nicolae Testemitanu State University of Medicine and Pharmacy",
+      "city": "Chisinau",
+      "type": "Public",
+      "establishedYear": 1945,
+      "officialWebsite": "https://international.usmf.md",
+      "mediaAttribution": {},
+      "summary": "Nicolae Testemitanu State University of Medicine and Pharmacy has trained doctors since 1945 and runs a genuine, separately-tracked English-medium Medicine (MD) programme since 2010, alongside its original Romanian-medium track. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 1953 onward.",
+      "campusLifestyle": "The university runs clinical and academic activity across 95 affiliated university clinics in republican and municipal medical institutions in Chisinau, supplemented by a dedicated University Simulation Center (CUSIM) with high-fidelity adult, pediatric, neonatal and obstetric simulators alongside a virtual endoscopy/bronchoscopy trainer. Two on-campus canteens serve both European and Indian cuisine, reflecting the university's sizeable Indian student cohort.",
+      "cityProfile": "Chisinau is Moldova's capital, a compact Eastern European city where the university operates its own dormitories prioritized for first-year international students, alongside the option of private rental accommodation nearby.",
+      "practicalExposure": "The 6-year, ISCED-level-7 integrated Medicine curriculum runs in stages from fundamental and preclinical disciplines through to advanced clinical training, with clinical training making up 50-74% of the full programme per the WHO World Directory of Medical Schools. Clinical placements run across 95 affiliated clinical institutions, with named major bases at the Timofei Mosneaga Republican Clinical Hospital, the Institute of Emergency Medicine, and the Mother and Child Institute. Graduates receive a Licentiate in Medicine and can proceed directly to residency or doctoral studies within Moldova's system.",
+      "hostelOverview": "University dormitories are available and prioritized for first-year international students, in rooms of 1-3 people with shared kitchens, showers and internet access. Two official university pages give slightly different monthly cost ranges (roughly EUR 70-150 or EUR 100-150, depending on room type), so applicants should confirm the exact current rate directly with the university. Students may alternatively rent a private apartment in Chisinau.",
+      "dietarySupport": "Two on-campus canteens seat around 90 students and offer both European and Indian cuisine, with meals estimated at 30-50 Moldovan lei each. No formal meal-plan cost is published; food should be planned as a separate budget item.",
+      "safetyOverview": "No university-published campus-safety statistics were found. International applicants must report to the university's international office within 3 days of arrival to begin residency-permit procedures, which is coordinated through the Recruitment and Documentation of Foreign Citizens Department.",
+      "studentSupport": "International admissions and document processing run through a dedicated Recruitment and Documentation of Foreign Citizens Department (foreign@usmf.md). The university's international office also coordinates the post-arrival temporary-residence process for newly enrolled students.",
+      "whyChoose": [
+        "A WHO/FAIMER-listed medical school (currently operational) with ECFMG-certification eligibility for every graduating class from 1953 onward, and degrees noted as acceptable to Canadian provincial and territorial medical regulatory authorities.",
+        "A genuinely separate English-medium Medicine track (WDOMS-confirmed, running continuously since 2010), not merely translated materials layered onto a Romanian-language cohort.",
+        "Accreditation from Kazakhstan's Independent Accreditation and Rating Agency (IAAR), a body recognized by the World Federation for Medical Education.",
+        "A clearly published, dated 2026-27 tuition figure directly from two official university domains, at a lower cost than most Western European medical destinations.",
+        "Two intakes a year (fall and spring), giving applicants more scheduling flexibility than a single annual admissions window."
+      ],
+      "thingsToConsider": [
+        "Moldova is an EU candidate country, not a member state, so this degree does not carry EU Directive 2005/36/EC automatic recognition; graduates should confirm their target country's own recognition process.",
+        "Published tuition excludes invitation, visa, hostel accommodation, food and medical insurance, all of which are separate costs.",
+        "The preparatory (foundation) year costs EUR 2,400, but is retroactively charged at EUR 4,400 if the student does not continue into a USMF degree programme afterward.",
+        "No refund policy is published on any official USMF page; confirm withdrawal terms directly with the admissions department before paying.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement, and must also submit their NEET score directly to USMF as part of the university's own admission process."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible European medical degree at a materially lower cost than Western Europe.",
+        "Applicants comfortable with a weighted-average admission formula based on secondary-school grades, with a university-administered subject exam only for any missing grade components.",
+        "Families able to budget separately for visa, accommodation, food and insurance costs on top of the published tuition figure."
+      ],
+      "industryPartners": [
+        "Timofei Mosneaga Republican Clinical Hospital",
+        "Institute of Emergency Medicine",
+        "Mother and Child Institute"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000364), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1953-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Independent Accreditation and Rating Agency (IAAR, Kazakhstan), recognized by the World Federation for Medical Education (WFME) — programme status Accredited"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Nicolae Testemitanu State University listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000364" },
+        { "label": "USMF official international Medicine programme page", "url": "https://international.usmf.md/study-programs/integrated-higher-education-studies/medicine" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. Admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "Is the programme actually taught in English, or just translated?",
+          "answer": "It is a genuinely separate English-medium track (confirmed independently by the WHO World Directory of Medical Schools as 'Facultatea Medicina nr. 2'), running continuously since 2010 alongside the university's original 1945 Romanian-medium track."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive a Licentiate in Medicine (ISCED level 7), with direct access to residency training or doctoral studies within Moldova's system."
+        },
+        {
+          "question": "How long is the programme?",
+          "answer": "Six years, integrated and direct-entry, with clinical training making up 50-74% of the full curriculum."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 6,000 per year for the 2026-27 academic year, confirmed on two official USMF pages, plus a one-time EUR 100 admission fee. Tuition excludes visa, hostel, food and medical insurance costs."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "Admission is ranked by a weighted-average formula using the applicant's secondary-school grades in Biology, Chemistry, Physics and their language of instruction. Any missing subject grade is instead assessed through USMF's own entrance exam for that subject."
+        },
+        {
+          "question": "When does the academic year start, and what are the deadlines?",
+          "answer": "USMF runs two intakes a year: a fall intake with an application deadline of 15 August, and a spring intake with a deadline of 25 December."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "Yes, dormitories are available and prioritized for first-year international students, at an estimated EUR 70-150 per month depending on room type; private rental in Chisinau is also an option."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "Yes. USMF's own admission regulations require Indian applicants to submit proof of a passing NEET score directly as part of the university's admissions process, in addition to India's separate National Medical Commission NEET-UG Eligibility Certificate requirement for studying medicine abroad."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Nicolae Testemitanu State University listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000364",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, English-track confirmation (Facultatea Medicina nr. 2, since 2010), ECFMG graduation-year eligibility and IAAR accreditation status."
+        },
+        {
+          "label": "USMF official international Medicine programme and Admission pages",
+          "url": "https://international.usmf.md/admission",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, languages of instruction, admissions process and named clinical/simulation facilities."
+        },
+        {
+          "label": "USMF official 2026-27 international-student fee schedule",
+          "url": "https://admission.usmf.md/en/admission/studenti-internationali/studii-superioare-integrate-ciclul-i-si-ciclul-ii/taxe-0",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026-27 tuition, admission fee, preparatory-year fee and excluded costs."
+        },
+        {
+          "label": "USMF official Admission Exam page (weighted-average formula)",
+          "url": "https://admission.usmf.md/en/admission/studenti-internationali/studii-superioare-integrate-ciclul-i-si-ciclul-ii/examen-de-admitere",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the eligibility ranking formula and NEET requirement for Indian applicants."
+        },
+        {
+          "label": "USMF official Accommodation page",
+          "url": "https://admission.usmf.md/en/admission/studenti-internationali/studii-superioare-integrate-ciclul-i-si-ciclul-ii/cazare-2",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for dormitory structure, cost range and private-rental alternative."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine (Integrated Higher Education Studies, English track)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 36000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026-27 tuition: EUR 6,000/year, confirmed identically on both admission.usmf.md and international.usmf.md, explicitly labeled for the 2026-27 academic year. Total is calculated as the annual figure times 6 years -- not published as a lump sum. A one-time EUR 100 admission fee applies. Tuition excludes invitation, visa, hostel accommodation, food and medical insurance. A preparatory (foundation) year, if needed, costs EUR 2,400, rising retroactively to EUR 4,400 if the student does not continue into a USMF degree programme. No refund policy was published."
+          },
+          "officialProgramUrl": "https://international.usmf.md/study-programs/integrated-higher-education-studies/medicine",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a secondary-education diploma and a language-proficiency certificate in their intended language of instruction (English, Romanian, French or Russian)"
+            ],
+            "restrictions": [
+              "Applicants without secondary-diploma grades in Biology, Chemistry, Physics or their language of instruction must sit USMF's own entrance exam for the missing subject(s)",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules and submit their NEET score directly to USMF as part of admission"
+            ],
+            "notes": "Admission is ranked by a weighted-average formula: 0.3x Biology + 0.2x Chemistry + 0.1x Physics + 0.4x Language grade, using secondary-diploma grades where available.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://admission.usmf.md/en/admission/studenti-internationali/studii-superioare-integrate-ciclul-i-si-ciclul-ii/examen-de-admitere"
+          },
+          "admissionsContent": {
+            "overview": "Applicants prepare a complete document file, submit an online application form, and email the scanned file to USMF's Admissions Committee; after confirmation and visa arrangements, students report to the university's international office within 3 days of arrival to complete enrollment.",
+            "eligibility": {
+              "intro": "Admission is ranked by a weighted-average formula using secondary-diploma grades in Biology, Chemistry, Physics and the language of instruction, with USMF's own entrance exam covering any missing subject grade.",
+              "items": [
+                "Secondary-education diploma with grades in Biology, Chemistry, Physics and English (or the chosen language of instruction)",
+                "Language-proficiency certificate in the intended language of instruction",
+                "Weighted score: 0.3x Biology + 0.2x Chemistry + 0.1x Physics + 0.4x Language grade; missing grades assessed via USMF's own subject entrance exam",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, plus submission of the NEET score directly to USMF"
+              ]
+            },
+            "applicationSteps": [
+              "Prepare a complete digital and printed application file with all required documents",
+              "Submit the online application form and email the signed, scanned file to the Admissions Committee",
+              "Receive official confirmation from the Recruitment and Documentation of Foreign Citizens Department",
+              "Arrange the appropriate visa (visa-free or D/AS visa, depending on nationality) for entry to Moldova",
+              "Report to the university's international office within 3 days of arrival and submit original documents to finalize enrollment"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-education diploma and transcript, translated into Romanian, English or Russian, notarized and legalized/apostilled",
+                "Language-proficiency certificate in the intended language of instruction"
+              ],
+              "application": [
+                "National passport, valid more than 1 year from the intended entry date",
+                "Notarized birth certificate",
+                "Notarized parental consent (if under 18) or marriage certificate (if applicable)",
+                "3 passport/visa-style photographs and a signed declaration of document veracity"
+              ]
+            },
+            "deadlinesNote": "Two intakes a year: fall intake application deadline 15 August; spring intake application deadline 25 December. Exact semester start dates were not published beyond these application deadlines.",
+            "visaConsiderations": [
+              "Depending on nationality, entry is visa-free or requires a D/AS visa; students must report to the university's international office within 3 days of arrival to begin residency-permit procedures."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September", "February"],
+          "intakeCodes": ["september", "february"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026-27 tuition is EUR 6,000/year, sourced identically from two official USMF domains. A one-time EUR 100 admission fee applies separately. Tuition excludes visa, hostel, food and medical insurance. The optional preparatory year costs EUR 2,400 (retroactively EUR 4,400 if the student does not continue into a degree programme). No refund policy was published on any official USMF page.",
+          "teachingPhases": [
+            {
+              "phase": "Preclinical foundation years",
+              "language": "English",
+              "details": "Fundamental and preclinical disciplines taught at the university's Chisinau campus, supplemented by simulation-based training at the University Simulation Center (CUSIM)."
+            },
+            {
+              "phase": "Advanced clinical training",
+              "language": "English",
+              "details": "Clinical placements across 95 affiliated clinical institutions, with named major bases at the Timofei Mosneaga Republican Clinical Hospital, the Institute of Emergency Medicine and the Mother and Child Institute; clinical training makes up 50-74% of the full programme."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "publicField": "identity",
+      "claimText": "Founded 20 October 1945 as the Chisinau State Institute of Medicine; renamed Nicolae Testemitanu State University of Medicine (1991), then State University of Medicine and Pharmacy Nicolae Testemitanu (1996), then its current name (2015-present).",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000364",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000364",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000364), currently operational; graduates (1953-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000364",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000364",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "publicField": "recognition",
+      "claimText": "Programme accredited by Kazakhstan's Independent Accreditation and Rating Agency (IAAR), a body recognized by the World Federation for Medical Education (WFME); Moldova is an EU candidate country, not a member state, so this degree does not carry EU Directive 2005/36/EC automatic recognition.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000364",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000364",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "programmeSlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "academics",
+      "claimText": "A genuinely separate English-medium Medicine track ('Facultatea Medicina nr. 2') has run since 2010, admitting foreign students, alongside the original 1945 Romanian-medium track; 6-year, ISCED-level-7, direct-entry programme.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000364",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000364",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "programmeSlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission ranked by a weighted-average formula (0.3x Biology + 0.2x Chemistry + 0.1x Physics + 0.4x Language) using secondary-diploma grades; missing grades assessed via USMF's own entrance exam; Indian applicants must submit a NEET score directly to USMF.",
+      "status": "verified",
+      "sourceLabel": "USMF official Admission Exam page",
+      "sourceUrl": "https://admission.usmf.md/en/admission/studenti-internationali/studii-superioare-integrate-ciclul-i-si-ciclul-ii/examen-de-admitere",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "programmeSlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via online form plus a scanned document file emailed to the Admissions Committee; required documents include passport, translated/notarized/apostilled education documents, language certificate and photographs; enrollment finalized on arrival within 3 days.",
+      "status": "verified",
+      "sourceLabel": "USMF official international Admission page",
+      "sourceUrl": "https://international.usmf.md/admission",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "programmeSlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "intake",
+      "claimText": "Two intakes a year: fall intake application deadline 15 August, spring intake application deadline 25 December.",
+      "status": "verified",
+      "sourceLabel": "USMF official international Admission page (deadline calendar)",
+      "sourceUrl": "https://international.usmf.md/admission",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "programmeSlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "fee",
+      "claimText": "2026-27 tuition: EUR 6,000/year for Medicine, confirmed identically on both official USMF domains; EUR 100 one-time admission fee; tuition excludes visa, hostel, food and medical insurance; preparatory year EUR 2,400 (EUR 4,400 if not continuing into a degree programme).",
+      "status": "verified",
+      "sourceLabel": "USMF official 2026-27 international-student fee schedule",
+      "sourceUrl": "https://admission.usmf.md/en/admission/studenti-internationali/studii-superioare-integrate-ciclul-i-si-ciclul-ii/taxe-0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "programmeSlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training across 95 affiliated clinical institutions, with named major bases at Timofei Mosneaga Republican Clinical Hospital, the Institute of Emergency Medicine and the Mother and Child Institute; supplemented by the CUSIM simulation center; clinical training is 50-74% of the full programme.",
+      "status": "verified",
+      "sourceLabel": "USMF official About page and World Directory of Medical Schools record F0000364",
+      "sourceUrl": "https://international.usmf.md/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "publicField": "student living",
+      "claimText": "University dormitories prioritized for first-year international students, 1-3 person rooms, estimated EUR 70-150/month depending on room type (two official pages give slightly different ranges); private rental in Chisinau also available.",
+      "status": "verified",
+      "sourceLabel": "USMF official Student Life and Accommodation pages",
+      "sourceUrl": "https://international.usmf.md/life-usmf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

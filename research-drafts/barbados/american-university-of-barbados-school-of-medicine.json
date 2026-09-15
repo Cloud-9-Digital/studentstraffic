@@ -1,0 +1,20 @@
+{
+  "countrySlug": "barbados",
+  "universitySlug": "american-university-of-barbados-school-of-medicine",
+  "schoolName": "American University of Barbados School of Medicine",
+  "cityName": "Wildey, Saint Michael",
+  "priority": "medium",
+  "officialWebsite": "https://www.aubmed.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - AUB's official site describes a 5.5-year route for school-leaver entrants and a four-year MD route for eligible graduates, publishes a component-based USD fee schedule and English-language instruction. The Barbados Accreditation Council lists institutional accreditation through 2031, and CAAM-HP lists Accredited with Conditions for 2025-2027. Hold pending a scoped full-content packet that reconciles all tuition components, verifies clinical affiliation availability at application time, and assesses licensing eligibility for each target market without overstating it.",
+  "sourceBundle": { "sources": [
+    { "label": "AUB medicine programme overview", "url": "https://www.aubmed.org/medicine-program/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes 5.5-year and four-year MD routes, three annual intakes, campus facilities and stated clinical-rotation locations." },
+    { "label": "AUB official eligibility page", "url": "https://www.aubmed.org/eligibility/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Sets out school-leaver and MD-route eligibility, prerequisite coursework and English-language instruction." },
+    { "label": "AUB official tuition fee page", "url": "https://www.aubmed.org/tuition-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists application and visa fees, semester tuition for pre-medical, basic sciences and clinical sciences, administrative fee and stated monthly living-expense range; fees are stated as subject to change." },
+    { "label": "Barbados Accreditation Council AUB provider profile", "url": "https://bac.gov.bb/wp-content/uploads/2025/05/Provider_Profile_for_Accreditation_-_American_University_of_Barbados-2024-2031.pdf", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Lists AUB as an accredited private provider in Wildey offering Doctor of Medicine, re-accredited from 2024 to 2031." },
+    { "label": "CAAM-HP AUB assessment record", "url": "https://caam-hp.org/american-university-of-barbados/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists AUB as Accredited with Conditions for 2025-2027." }
+  ] },
+  "structuredFacts": { "name": "American University of Barbados School of Medicine", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years for eligible graduate entrants; 5.5 years for school-leaver entrants", "feeStatus": "Official USD component schedule published; no single all-inclusive programme total", "publishable": false } ], "missingForPublication": [ "fee reconciliation into a transparent route-specific total", "current written confirmation of clinical-affiliation availability", "visa and housing facts for the intended audience", "market-specific licensing/recognition evaluation", "independent verification of any claims that would affect professional eligibility" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until cost and professional-outcome claims can be scoped precisely for the target market." }
+}

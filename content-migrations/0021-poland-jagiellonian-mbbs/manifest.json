@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0021-poland-jagiellonian-mbbs",
+  "description": "Publish Jagiellonian University Medical College Medicine MD record (Poland).",
+  "createdAt": "2026-07-24",
+  "payload": "payload.json"
+}

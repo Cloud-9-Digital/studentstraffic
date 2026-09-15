@@ -1,0 +1,517 @@
+{
+  "countries": [
+    {
+      "slug": "bulgaria",
+      "name": "Bulgaria",
+      "region": "Southeast Europe",
+      "summary": "Bulgaria is a European Union member state whose higher education runs under the Higher Education Act. The Ministry of Education and Science sets national policy, the National Evaluation and Accreditation Agency accredits institutions and programmes, and the National Centre for Information and Documentation (NACID) assesses qualifications gained abroad. Medicine is taught as a six-year programme, and state medical universities run English-taught tracks for international applicants. Entry conditions depend on nationality: EU, EEA and Swiss applicants are considered under the rules that apply to Bulgarian nationals, while others use the international route, which normally involves NACID validation of the school-leaving qualification, a minimum grade in the official language of the country where it was issued, and university entrance examinations in biology and chemistry.",
+      "whyStudentsChooseIt": "International applicants look at Bulgaria for six-year English-taught Medicine programmes at state medical universities inside the European Union, with published annual tuition and a documented application, examination and enrolment sequence. Bulgaria adopted the euro on 1 January 2026, so tuition and living costs are now quoted in a single EU currency. Medical doctor is also one of the seven professions covered by the EU system of automatic recognition of professional qualifications, although use of that route depends on nationality, on the training meeting the minimum requirements set in EU law, and on the registration and language rules of the country where a graduate intends to practise. EU guidance for Bulgaria describes non-EU students as able to work up to 20 hours a week during the academic year and during official holidays without a separate work permit.",
+      "climate": "Temperate continental across the Danube plain and the interior, with cold, often snowy winters and hot summers; the far south and the Black Sea coast are milder and carry a Mediterranean influence.",
+      "currencyCode": "EUR",
+      "metaTitle": "Study Medicine in Bulgaria: International Student Guide",
+      "metaDescription": "Regulators, admission routes, entrance exams, type D visa and residence rules that shape applications to study medicine in Bulgaria as an international student."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Clinical Medicine"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medical degrees. It includes full-time, single-cycle Medicine programmes that combine foundational, clinical and supervised practical study.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "bulgaria",
+      "slug": "medical-university-pleven",
+      "name": "Medical University Pleven",
+      "city": "Pleven",
+      "type": "Public",
+      "establishedYear": 1974,
+      "officialWebsite": "https://www.mu-pleven.bg/",
+      "mediaAttribution": {},
+      "summary": "Medical University Pleven offers a six-year full-time Medicine programme in English. Its 2026/27 fee guide lists EUR 9,000 per year, and the university publishes a February 2027 intake application window. Bulgaria?s National Evaluation and Accreditation Agency records institutional accreditation granted in 2021 for six years.",
+      "campusLifestyle": "Medicine is organised as two pre-clinical years, three clinical years and one year of state clinical practice or internship. The university does not allocate a named placement or hospital to each applicant in the sources reviewed.",
+      "cityProfile": "Pleven is a city in north-central Bulgaria and the study location for Medical University Pleven. The published tuition figure covers academic fees only, so applicants should make a separate, realistic budget for accommodation, food, local transport, health cover, travel and immigration-related expenses. The university materials reviewed do not publish a fixed living-cost package for this programme.",
+      "practicalExposure": "The published six-year Medicine structure moves from two pre-clinical years to three clinical years and a final year of state clinical practice or internship. This gives applicants a clear outline of when clinical training occurs, while avoiding unsupported claims about a particular hospital, specialty rotation, patient volume or individual placement. English-programme students also take compulsory Bulgarian during the first three years for patient communication.",
+      "hostelOverview": "The reviewed Medicine fee guide does not include a residence allocation or price. Accommodation is not included in annual tuition.",
+      "dietarySupport": "No Medicine-specific meal plan or dietary benefit was identified in the reviewed official sources.",
+      "safetyOverview": "The reviewed admissions pages do not publish Medicine-specific safety statistics or guarantees.",
+      "studentSupport": "The university publishes admissions contacts and application guidance for international applicants. The reviewed sources do not promise individual housing, visa approval or clinical placement.",
+      "whyChoose": [
+        "Six-year English Medicine programme with stated pre-clinical, clinical and internship phases.",
+        "Official 2026/27 annual tuition of EUR 9,000.",
+        "A published February 2027 application window for Medicine in English.",
+        "Government institutional-accreditation record valid through 2027."
+      ],
+      "thingsToConsider": [
+        "The EUR 9,000 fee is annual tuition and excludes living and immigration costs.",
+        "Applicants from non-English-official countries need B2 English evidence.",
+        "Clinical and licensing conditions differ by intended country of practice."
+      ],
+      "bestFitFor": [
+        "Applicants seeking an English-taught six-year Medicine degree.",
+        "Applicants prepared for Biology and Chemistry admissions requirements.",
+        "Applicants able to budget separately for living and immigration costs."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "National Evaluation and Accreditation Agency of Bulgaria ? institutional accreditation granted 2021 for six years",
+        "Medical University Pleven ? public medical university with English Medicine programme"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NEAA institutional accreditation",
+          "url": "https://www.neaa.government.bg/en/home-en/114-english/accredited-higher-education-institutions/higher-institutions/375-medical-university-pleven"
+        },
+        {
+          "label": "Medicine in English",
+          "url": "https://mu-pleven.bg/index.php/en/specialties/medicine-6-years"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is Medicine in English?",
+          "answer": "Medical University Pleven states that Medicine is a full-time six-year course: two pre-clinical years, three clinical years and one year of state clinical practice or internship."
+        },
+        {
+          "question": "What is the annual tuition?",
+          "answer": "The university?s 2026/27 expense guide lists EUR 9,000 per year for Medicine in English, payable in two equal parts at the beginning of each semester."
+        },
+        {
+          "question": "When can I apply for February 2027?",
+          "answer": "The official FAQ states that the February 2027 intake application runs from 1 June to 1 October 2026."
+        },
+        {
+          "question": "What entrance preparation is required?",
+          "answer": "The Medicine admission materials require Biology and Chemistry preparation. Applicants from countries where English is not official provide B2 English evidence or higher."
+        },
+        {
+          "question": "Is Bulgarian used during the course?",
+          "answer": "Students in the English-medium programme attend compulsory Bulgarian classes during the first three years to support communication with patients in clinical study."
+        },
+        {
+          "question": "Is the university accredited?",
+          "answer": "Bulgaria?s National Evaluation and Accreditation Agency records institutional accreditation granted on 25 March 2021 for six years."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Medical University Pleven Medicine programme",
+          "url": "https://mu-pleven.bg/index.php/en/specialties/medicine-6-years",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25"
+        },
+        {
+          "label": "Medical University Pleven fees 2026/27",
+          "url": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/641-fees",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25"
+        },
+        {
+          "label": "Medical University Pleven FAQ",
+          "url": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/5547-faq",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25"
+        },
+        {
+          "label": "NEAA accreditation record",
+          "url": "https://www.neaa.government.bg/en/home-en/114-english/accredited-higher-education-institutions/higher-institutions/375-medical-university-pleven",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MBBS eligibility",
+            "capture": [
+              "school qualifications",
+              "citizenship",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my MBBS budget",
+            "capture": ["tuition budget", "accommodation preference"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["academic records", "passport", "document readiness"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "medical-university-pleven-medicine-english",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine (English Language)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026/2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 9000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Official 2026/27 guide lists EUR 9,000 annually, payable in two semester instalments."
+          },
+          "officialProgramUrl": "https://mu-pleven.bg/index.php/en/specialties/medicine-6-years",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the English Medicine admission requirements"
+            ],
+            "restrictions": [
+              "Biology and Chemistry admission requirements apply",
+              "B2 English evidence is required where English is not an official language"
+            ],
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://mu-pleven.bg/index.php/en/specialties/medicine-6-years"
+          },
+          "admissionsContent": {
+            "overview": "Medical University Pleven publishes a February 2027 application window for its English Medicine programme. Applicants should prepare for Biology and Chemistry requirements and, where English is not an official language in their country, B2 English evidence. Use the university’s official instructions for the final document list and application route.",
+            "eligibility": {
+              "intro": "The university’s Medicine admissions information identifies Biology and Chemistry preparation, with B2 English evidence for applicants from countries where English is not an official language.",
+              "items": [
+                "Prepare the required Biology and Chemistry background",
+                "Provide B2 English evidence where the published rule applies",
+                "Follow the university’s current application and fee-payment instructions"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm that the February 2027 intake and its dates match your plan",
+              "Prepare academic and English-language evidence required by the university",
+              "Submit the application within the published 1 June to 1 October 2026 window",
+              "Respond to any university request for further documents or assessment",
+              "Use the official offer and immigration guidance for the next steps after admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Biology and Chemistry academic evidence required by the university"
+              ],
+              "application": [
+                "Application and identity documents specified in the current university instructions"
+              ]
+            },
+            "deadlinesNote": "February 2027 applications run from 1 June to 1 October 2026.",
+            "visaConsiderations": [
+              "Immigration requirements and timing depend on nationality and the current Bulgarian process; confirm them with the relevant authorities after receiving an offer."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["February 2027"],
+          "intakeCodes": ["february"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "EUR 9,000 annual tuition in the official 2026/27 fee guide; accommodation and personal costs are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Pre-clinical study",
+              "language": "English",
+              "details": "Two years of pre-clinical study."
+            },
+            {
+              "phase": "Clinical study and internship",
+              "language": "English",
+              "details": "Three clinical years and one year of state clinical practice or internship."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "summary",
+      "claimText": "Bulgarian higher education operates under the Higher Education Act (in force since 1995); the state sets national policy while the higher schools hold academic self-governance, and the Ministry of Education and Science is among the bodies responsible for the system.",
+      "status": "verified",
+      "sourceLabel": "Eurydice (EACEA, European Commission) - Bulgaria: Higher education",
+      "sourceUrl": "https://eurydice.eacea.ec.europa.eu/eurypedia/bulgaria/higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09",
+      "internalNotes": "Corroborated by the Eurydice Bulgaria mobility page, which cites Art. 8(1)(7) of the Higher Education Act on state conditions for recognition of diplomas and names the Ministry of Education and Science and NACID."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "summary",
+      "claimText": "The National Evaluation and Accreditation Agency is the Bulgarian state body that accredits higher education institutions and publishes the accreditation record for each institution, including the medical universities.",
+      "status": "verified",
+      "sourceLabel": "National Evaluation and Accreditation Agency (NEAA), Republic of Bulgaria",
+      "sourceUrl": "https://www.neaa.government.bg/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09",
+      "internalNotes": "Same state registry already used for the Medical University Pleven institutional-accreditation evidence record in this payload."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "summary",
+      "claimText": "Recognition of education acquired abroad is organised by the Minister of Education and Science through the National Centre for Information and Documentation (NACID) for labour-market purposes, and by the higher education institution for further study.",
+      "status": "verified",
+      "sourceLabel": "Eurydice (EACEA, European Commission) - Bulgaria: Mobility in higher education",
+      "sourceUrl": "https://eurydice.eacea.ec.europa.eu/eurypedia/bulgaria/mobility-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09",
+      "internalNotes": "Corroborated by the Medical University Pleven non-EU/EEA admission guide, which directs applicants to the NACID secondary-education recognition service at portal.nacid.bg."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "admissions",
+      "claimText": "Applicants to Bulgarian higher education apply under EU-citizen rules, through bilateral agreements, or as international non-EU students, and normally submit a secondary school diploma, transcript, proof of English or Bulgarian proficiency, a medical certificate and a passport copy.",
+      "status": "verified",
+      "sourceLabel": "European Commission, European Education Area - Study in Bulgaria country profile",
+      "sourceUrl": "https://education.ec.europa.eu/study-in-europe/country-profiles/bulgaria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-03-09",
+      "internalNotes": "EC page last updated 28 April 2026. The route split is corroborated at institution level by Medical University Pleven, which publishes separate admission guides for EU/EEA and non-EU/EEA applicants."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "admissions",
+      "claimText": "A non-EU/EEA applicant to a Bulgarian medical university is required to obtain a NACID validation of the secondary education certificate, to hold a mark in the official language of the country of schooling equal to at least 62 per cent of that country's maximum, and to sit entrance examinations in chemistry and biology.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven - Admission guide for non-EU/EEA applicants",
+      "sourceUrl": "https://mu-pleven.bg/index.php/en/admission/specialty-medicine/6435-admission-guide-4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-03-09",
+      "internalNotes": "The 62 per cent official-language threshold is a national admission requirement also published by other Bulgarian higher schools. Entrance examinations in biology and chemistry are set by the individual medical university, so that element is institution-specific rather than uniform nationally, and the country copy reflects that."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "visa",
+      "claimText": "Citizens of the EU, the EEA and Switzerland do not need a visa to study in Bulgaria; other nationals must apply for a type D visa and then a residence permit from the Migration Directorate, must register their address within five days of arrival, and must hold valid health insurance for the whole stay.",
+      "status": "verified",
+      "sourceLabel": "European Commission, European Education Area - Study in Bulgaria country profile",
+      "sourceUrl": "https://education.ec.europa.eu/study-in-europe/country-profiles/bulgaria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-03-09",
+      "internalNotes": "EC page last updated 28 April 2026."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "visa",
+      "claimText": "A non-EU/EEA student admitted to a Bulgarian medical university must obtain a type D long-stay visa from a Bulgarian embassy, and the university advises that the visa process can take up to 90 days.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven - Admission guide for non-EU/EEA applicants",
+      "sourceUrl": "https://mu-pleven.bg/index.php/en/admission/specialty-medicine/6435-admission-guide-4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-03-09",
+      "internalNotes": "Independent institutional confirmation of the type D route stated on the European Commission country profile. The 90-day figure is the university's own advisory estimate, not a statutory limit, so it is not used in public copy."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "work-while-studying",
+      "claimText": "European Commission guidance for Bulgaria states that EU students can work without a work permit and that non-EU students can work without a work permit for 20 hours per week during the academic year and during official holidays, while noting that rules differ by nationality, residence permit type and employer requirements.",
+      "status": "verified",
+      "sourceLabel": "European Commission, European Education Area - Study in Bulgaria country profile",
+      "sourceUrl": "https://education.ec.europa.eu/study-in-europe/country-profiles/bulgaria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-03-09",
+      "internalNotes": "Framework corroboration only: Article 24 of Directive (EU) 2016/801 entitles third-country students to be employed outside study time and requires each member state to set a weekly maximum of not less than 15 hours. No Bulgarian-government English-language page carrying the 20-hour figure was reachable during this check (mon.bg and mvr.bg return 403 to non-browser requests), so the figure rests on the EC country profile and is attributed to EU guidance in public copy."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "work-while-studying",
+      "claimText": "Under Article 24 of Directive (EU) 2016/801, third-country students are entitled to be employed outside their study time, and each member state sets the maximum permitted hours, which may not be less than 15 hours per week.",
+      "status": "verified",
+      "sourceLabel": "EUR-Lex - Directive (EU) 2016/801, Article 24",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09"
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "recognition",
+      "claimText": "Doctors covering basic medical training, general practitioners and specialists are among the seven sectoral professions that benefit from automatic recognition of professional qualifications in the EU on the basis of harmonised minimum training requirements under Directive 2005/36/EC.",
+      "status": "verified",
+      "sourceLabel": "European Commission - Recognition of professional qualifications in practice",
+      "sourceUrl": "https://single-market-economy.ec.europa.eu/single-market/services/free-movement-professionals/recognition-professional-qualifications-practice_en",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09"
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "recognition",
+      "claimText": "Your Europe states that a doctor enjoys automatic recognition of the professional qualification, that proof must be submitted and authorisation awaited before working, that training which does not meet the host country minimum requirements loses the automatic route, and that a language test or professional-association membership may be required.",
+      "status": "verified",
+      "sourceLabel": "Your Europe (European Commission) - Recognition of professional qualifications",
+      "sourceUrl": "https://europa.eu/youreurope/citizens/work/professional-qualifications/recognition-of-professional-qualifications/index_en.htm",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09",
+      "internalNotes": "Deliberately not extended beyond the EU/EEA: licensing for practice in India, the Gulf, the UK or the US is governed by those regulators and is not claimed in this country block."
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "currency",
+      "claimText": "Bulgaria joined the euro area on 1 January 2026 and the euro is its currency.",
+      "status": "verified",
+      "sourceLabel": "European Central Bank - Bulgaria joins the euro area",
+      "sourceUrl": "https://www.ecb.europa.eu/euro/changeover/bulgaria/html/index.en.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09"
+    },
+{
+      "entity": "country",
+      "countrySlug": "bulgaria",
+      "publicField": "currency",
+      "claimText": "The Council of the European Union completed the final steps in July 2025 for Bulgaria to adopt the euro from 1 January 2026, at the fixed conversion rate of EUR 1 = BGN 1.95583.",
+      "status": "verified",
+      "sourceLabel": "Council of the European Union - Bulgaria ready to use the euro from 1 January 2026",
+      "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2025/07/08/bulgaria-ready-to-use-the-euro-from-1-january-2026-council-takes-final-steps/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-09",
+      "reviewBy": "2027-09-09"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "eligibility",
+      "claimText": "Medicine applicants need Biology and Chemistry preparation; applicants from countries where English is not an official language need B2 English evidence or higher.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven FAQ",
+      "sourceUrl": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/5547-faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-pleven",
+      "publicField": "identity",
+      "claimText": "Bulgaria’s National Evaluation and Accreditation Agency records Medical University Pleven as institutionally accredited from 25 March 2021 for six years.",
+      "status": "verified",
+      "sourceLabel": "NEAA accreditation record",
+      "sourceUrl": "https://www.neaa.government.bg/en/home-en/114-english/accredited-higher-education-institutions/higher-institutions/375-medical-university-pleven",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "admissions",
+      "claimText": "The university’s FAQ gives a 1 June to 1 October 2026 application window for the February 2027 Medicine intake.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven FAQ",
+      "sourceUrl": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/5547-faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "intake",
+      "claimText": "Medical University Pleven publishes a February 2027 intake for Medicine in English.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven FAQ",
+      "sourceUrl": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/5547-faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "fee",
+      "claimText": "The official 2026/27 fee guide lists annual tuition of EUR 9,000 for Medicine in English, payable in two semester instalments.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven fees 2026/27",
+      "sourceUrl": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/641-fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "academics",
+      "claimText": "The official programme page describes full-time Medicine in English as a six-year course: two pre-clinical years, three clinical years and one year of state clinical practice or internship.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven official sources",
+      "sourceUrl": "https://mu-pleven.bg/index.php/en/specialties/medicine-6-years",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "recognition",
+      "claimText": "Bulgaria’s National Evaluation and Accreditation Agency records institutional accreditation granted to Medical University Pleven in 2021 for six years.",
+      "status": "verified",
+      "sourceLabel": "NEAA accreditation record",
+      "sourceUrl": "https://www.neaa.government.bg/en/home-en/114-english/accredited-higher-education-institutions/higher-institutions/375-medical-university-pleven",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-pleven",
+      "programmeSlug": "medical-university-pleven-medicine-english",
+      "publicField": "eligibility",
+      "claimText": "Medicine applicants meet the published Biology, Chemistry and English-language requirements.",
+      "status": "verified",
+      "sourceLabel": "Medical University Pleven FAQ",
+      "sourceUrl": "https://www.mu-pleven.bg/index.php/en/admission/specialty-medicine/5547-faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

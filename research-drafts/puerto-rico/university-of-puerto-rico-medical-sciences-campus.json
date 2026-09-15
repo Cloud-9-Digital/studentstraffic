@@ -1,0 +1,19 @@
+{
+  "countrySlug": "puerto-rico",
+  "universitySlug": "university-of-puerto-rico-medical-sciences-campus",
+  "schoolName": "University of Puerto Rico Medical Sciences Campus",
+  "cityName": "San Juan",
+  "priority": "medium",
+  "officialWebsite": "https://md.rcm.upr.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - UPR Medical Sciences Campus officially describes a four-year MD with two pre-clinical years and two clinical years, a published clerkship structure and current MD admissions documents. Its School of Medicine page states that the campus holds a renewal license and MSCHE accreditation. The public catalogue fee schedule found is historical, so it must not be used as a current quote. Hold pending a current MD-specific cost of attendance, current cycle dates/MCAT and applicant pathway, Spanish/English suitability confirmation, financial aid/residency treatment and target-audience eligibility analysis.",
+  "sourceBundle": { "sources": [
+    { "label": "UPR Medical Sciences Campus MD programme", "url": "https://md.rcm.upr.edu/doctor-of-medicine-md-program/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes two basic-science years and two clinical years, plus an internal application in addition to AMCAS." },
+    { "label": "UPR MD study programmes", "url": "https://md.rcm.upr.edu/study-programs/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists first/second-year basic science components and third/fourth-year clinical rotations and electives." },
+    { "label": "UPR MD requirements for admission", "url": "https://md.rcm.upr.edu/download/md-requirements-for-admission-2/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Current admissions requirements download marked updated April 2026." },
+    { "label": "UPR School of Medicine admission requirements", "url": "https://md.rcm.upr.edu/admission-requirements/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "States competitive admission and language/proficiency context; applicants must rely on the current MD requirements download for programme-specific details." }
+  ] },
+  "structuredFacts": { "name": "University of Puerto Rico Medical Sciences Campus", "type": "Public medical campus", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years", "feeStatus": "No current MD-specific cost of attendance verified in this pass", "publishable": false } ], "missingForPublication": [ "current MD tuition, fees and cost-of-attendance schedule", "current application calendar and selection criteria", "residency/non-residency and international-applicant treatment", "Spanish/English instructional and clinical-language requirements", "housing/support information", "target-audience eligibility and professional-registration review" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because historical catalogue costs cannot substitute for current applicant-facing fees." }
+}

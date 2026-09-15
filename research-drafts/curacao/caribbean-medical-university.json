@@ -1,0 +1,19 @@
+{
+  "countrySlug": "curacao",
+  "universitySlug": "caribbean-medical-university",
+  "schoolName": "Caribbean Medical University",
+  "cityName": "Willemstad",
+  "priority": "medium",
+  "officialWebsite": "https://cmumed.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Caribbean Medical University officially describes an MD programme with five trimesters of basic sciences at its Willemstad, Curaçao campus and six clinical-science trimesters at US clinical medicine centres. It publishes a 2026 component-based USD fee schedule. Hold pending independent verification of institutional authorisation/accreditation, current clinical-site availability, and market-specific professional-recognition claims before a complete content packet is prepared.",
+  "sourceBundle": { "sources": [
+    { "label": "CMU official academics overview", "url": "https://cmumed.org/academics-overview/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes a four-year MD programme, five basic-science trimesters at the Willemstad campus and six clinical-science trimesters at US clinical medicine centres." },
+    { "label": "CMU official programme and campus overview", "url": "https://cmumed.org/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States that CMU has its main campus in Curaçao and presents its basic-science and clinical-science pathway." },
+    { "label": "CMU official admission requirements", "url": "https://cmumed.org/admission/requirements/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Sets out direct-entry prerequisites and states that eligible students completing the curriculum and required clinical rotations are awarded the MD degree." },
+    { "label": "CMU official tuition and fees", "url": "https://cmumed.org/financial-aid/tuition-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes a 2026 trimester-based tuition and fee schedule; the page says fees are payable before each trimester." }
+  ] },
+  "structuredFacts": { "name": "Caribbean Medical University", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years; five basic-science and six clinical-science trimesters", "feeStatus": "Official 2026 component schedule published: USD 5,900 per basic-science trimester and USD 9,900 per clinical-science trimester, plus applicable fees; no all-inclusive total calculated.", "publishable": false } ], "missingForPublication": [ "current regulator and independent accreditor-record verification", "current clinical-site inventory and placement terms", "market-specific eligibility and professional-recognition assessment", "route-specific all-in cost reconciliation including required fees, living costs and clinical costs" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until authorisation, clinical-training and professional-outcome claims are independently scoped." }
+}

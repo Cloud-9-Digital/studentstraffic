@@ -1,0 +1,31 @@
+{
+  "scope": "Timor-Leste medical discovery — UNTL Faculty of Medicine and Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UNTL's official faculty page describes a General Medicine licenciatura and identifies core biomedical teaching in the first two years.",
+      "sourceUrl": "https://untl.edu.tl/pt/ensino/faculdades/medicina-e-ciencias-da-saude",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Timor-Leste's official journal records UNTL's institutional accreditation as amended in 2025 and lists 2026 authorisation for UNTL to confer degrees for courses completed in 2025.",
+      "sourceUrl": "https://www.mj.gov.tl/jornal/?q=node%2F7045",
+      "sourceType": "government-gazette",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A government order describes medical training as six academic years followed by two professional-internship semesters in primary-care and hospital settings in Timor-Leste and/or Cuba.",
+      "sourceUrl": "https://www.mj.gov.tl/jornal/?q=node%2F2772",
+      "sourceType": "government-gazette",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Medicine fee schedule, active intake deadline, vacancy count, complete admission checklist or international-applicant route was located.",
+    "The current faculty page does not establish the full current duration or curriculum, instructional language, named clinical sites, accommodation, scholarship/loan support or medical-registration pathway.",
+    "Institutional accreditation does not by itself confirm current programme accreditation or international recognition of the medical degree."
+  ],
+  "nextAction": "Obtain UNTL's active Medicine prospectus/admissions call, fee schedule and programme accreditation/clinical-placement records before evaluating a payload."
+}

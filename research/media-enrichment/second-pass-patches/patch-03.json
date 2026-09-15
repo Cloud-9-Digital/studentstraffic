@@ -1,0 +1,395 @@
+{
+  "batchId": "second-pass-patch-03",
+  "entries": [
+    {
+      "universitySlug": "constructor-university-bremen",
+      "sourceFile": "a-71-80.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Jacobs_University_Bremen_Campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file \"Jacobs_University_Bremen_Campus.JPG\" (own work, free license, not fair-use)",
+        "proposedPublicId": "constructor-university-bremen-cover"
+      },
+      "note": "Technique 2 (Commons infobox check) resolved the cover. Logo still unresolved: re-checked constructor.university homepage and /press page directly (not just the brand center) and both only expose the CU-25 anniversary wordmark (CU-25-White-On-Transparent-logo.svg) and a 32x32 favicon; the parent Constructor Group brand center (constructor.org/brand-center) has a distinct \"header_logo_constructor_group_color.svg\" but that is the holding company's mark, not confirmed as the university's own current logo, so left held."
+    },
+    {
+      "universitySlug": "cranfield-university",
+      "sourceFile": "a-71-80.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Coat_of_Arms_of_Cranfield_University.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain, Wikimedia Commons file \"Coat_of_Arms_of_Cranfield_University.svg\"",
+        "proposedPublicId": "cranfield-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Cranfield_University_C4D_building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC0 (public domain dedication), Wikimedia Commons file \"Cranfield_University_C4D_building.jpg\"",
+        "proposedPublicId": "cranfield-university-cover"
+      },
+      "note": "Technique 2: Wikipedia infobox/article links to the university's coat of arms and a campus building photo, both hosted on Commons under free licenses (not fair-use), resolving both slots."
+    },
+    {
+      "universitySlug": "crimea-federal-university",
+      "sourceFile": "a-71-80.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/2021_Crimean_federal_university.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file \"2021_Crimean_federal_university.jpg\"",
+        "proposedPublicId": "crimea-federal-university-cover"
+      },
+      "note": "Technique 2 resolved the cover via a Commons-licensed campus photo. Logo still unresolved: checked Wikidata (Q17749157) for a logo (P154) statement -- none present -- and probed eng.cfuv.ru for /press, /media, /brand, /about/media-kit paths, all 404. No direct logo file found."
+    },
+    {
+      "universitySlug": "critical-care-medicine-institute",
+      "sourceFile": "a-71-80.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Re-ran a differently phrased search targeting a standalone higher-education institution named exactly \"Critical Care Medicine Institute\". Results still only surface hospital departments/divisions (e.g. University of Pittsburgh Dept. of Critical Care Medicine, Weil Institute at Michigan Medicine) and professional bodies (College of Critical Care Medicine, Faculty/College of Intensive Care Medicine, WICCEM), none of which is a degree-granting institution matching this catalogue record. No country or additional identifying metadata is attached to the record in the codebase (checked lib/university-authors.ts and the media-enrichment JSON) to disambiguate further. Unresolved identity -- no official domain can be assigned."
+    },
+    {
+      "universitySlug": "curtin-university",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://s30991.pcdn.co/about/wp-content/uploads/sites/5/2023/10/Logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset linked from Curtin's official media/press page (curtin.edu.au/about/media)",
+        "proposedPublicId": "curtin-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/View_of_Curtin_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file \"View_of_Curtin_University.jpg\"",
+        "proposedPublicId": "curtin-university-cover"
+      },
+      "note": "Technique 1: found curtin.edu.au/about/media (a dedicated media page, distinct from the generic homepage) which links a direct Logo.png asset. Technique 2 resolved the cover via Commons."
+    },
+    {
+      "universitySlug": "dagestan-state-medical-university",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/%D0%94%D0%B0%D0%B3%D0%93%D0%BE%D1%81%D0%9C%D0%B5%D0%B4%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 3.0, Wikimedia Commons file (Dagestan State Medical Academy building photo)",
+        "proposedPublicId": "dagestan-state-medical-university-cover"
+      },
+      "note": "Technique 2 resolved the cover. Logo still unresolved: checked dgmu.ru homepage and English about page directly for a logo image file -- only accreditation-body badges and generic slider photos are present, no standalone DSMU logo asset."
+    },
+    {
+      "universitySlug": "david-aghmashenebeli-university",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://sdasu.edu.ge/wp-content/uploads/2026/03/Untitled_design-removebg-preview.png",
+        "sourceType": "official",
+        "rightsBasis": "Declared as the site's own logo in sdasu.edu.ge's schema.org JSON-LD (\"@id\":\".../#/schema/logo/image/\")",
+        "proposedPublicId": "david-aghmashenebeli-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://sdasu.edu.ge/wp-content/uploads/2023/05/sdasu.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Declared as the About-Us page's primary image in sdasu.edu.ge's schema.org JSON-LD (\"primaryImageOfPage\")",
+        "proposedPublicId": "david-aghmashenebeli-university-cover"
+      },
+      "note": "New technique: read the site's own schema.org/JSON-LD structured data (embedded in page source) rather than scanning visible <img> tags, which surfaced the exact files the site itself labels as its logo and primary page image."
+    },
+    {
+      "universitySlug": "david-tvildiani-medical-university",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://dtmu.org/assets/logo-en.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site asset, alt text \"DTMU Logo\", also used as the site favicon (dtmu.org)",
+        "proposedPublicId": "david-tvildiani-medical-university-logo"
+      },
+      "note": "Checked dtmu.org homepage source directly; logo asset was not exposed via the accreditation-body badge tags the first pass likely matched on. Cover still unresolved: only generic news/graduation photos (news-grad-1/2/3) found, none clearly an institutional campus cover; no Wikipedia article/Commons category exists for this university."
+    },
+    {
+      "universitySlug": "de-montfort-university",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/De_Montfort_University_arms.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain, Wikimedia Commons file \"De_Montfort_University_arms.svg\" (the non-free \"De_Montfort_University_logo.svg\" on the local en.wikipedia namespace was NOT used)",
+        "proposedPublicId": "de-montfort-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/The_Queen%E2%80%99s_building_at_De_Montfort_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY 4.0, Wikimedia Commons file (Queen's Building at De Montfort University)",
+        "proposedPublicId": "de-montfort-university-cover"
+      },
+      "note": "Technique 2: the Wikipedia article's infobox logo is a non-free file (wikipedia/en/ namespace) and was correctly excluded, but the article body also links the university's coat of arms, which is separately hosted on Commons under a free license, plus a Commons-licensed campus building photo."
+    },
+    {
+      "universitySlug": "deakin-university",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Deakin_University_Burwood_Campus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain (self-published, released PD), Wikimedia Commons file \"Deakin_University_Burwood_Campus.jpg\"",
+        "proposedPublicId": "deakin-university-cover"
+      },
+      "note": "Technique 2 resolved the only missing slot (cover) via a public-domain Commons campus photo."
+    },
+    {
+      "universitySlug": "dit-deggendorf-bscn",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Technische_Hochschule_Deggendorf_logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain (PD-textlogo), Wikimedia Commons file \"Technische_Hochschule_Deggendorf_logo.png\"; page also carries a standard non-copyright trademark notice that does not restrict this reuse",
+        "proposedPublicId": "dit-deggendorf-bscn-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.th-deg.de/Start/18885/image-thumb__18885__featuretteImage/campus-deg.png",
+        "sourceType": "official",
+        "rightsBasis": "Official th-deg.de homepage feature image (Deggendorf campus)",
+        "proposedPublicId": "dit-deggendorf-bscn-cover"
+      },
+      "note": "Technique 2 resolved the logo via a PD-textlogo Commons file. Cover found directly on the official th-deg.de homepage as a labeled campus feature image."
+    },
+    {
+      "universitySlug": "delft-university-technology",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Zegel_Technische_Universiteit_Delft.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (official TU Delft seal, \"Zegel Technische Universiteit Delft\")",
+        "proposedPublicId": "delft-university-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Delft_University_of_Technology_Echo_building_10.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (TU Delft Echo building)",
+        "proposedPublicId": "delft-university-technology-cover"
+      },
+      "note": "Technique 2 resolved both slots via Commons: the university's official seal and a campus building photo."
+    },
+    {
+      "universitySlug": "dhaka-central-international-medical-college",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://dcimch.com/wp-content/themes/dcimch/image/dcimch_logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset on the institution's correct domain (dcimch.com)",
+        "proposedPublicId": "dhaka-central-international-medical-college-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://dcimch.com/wp-content/uploads/2016/05/banner-campus.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official campus banner image on the /campus page of dcimch.com",
+        "proposedPublicId": "dhaka-central-international-medical-college-cover"
+      },
+      "note": "The first-pass hold likely stemmed from trying the wrong domain (dcimc.edu.bd, which does not resolve via DNS). Cross-referenced the codebase's own content-migrations/0008-bangladesh-dcimc-mbbs/payload.json, which cites the correct official domain dcimch.com; that site is reachable and exposes both a direct logo file and a labeled campus banner."
+    },
+    {
+      "universitySlug": "douglas-college-nursing",
+      "sourceFile": "a-81-90.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.douglascollege.ca/themes/douglas/img/douglas-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official theme asset on douglascollege.ca, referenced as the background-image for the site's CSS-only header logo element",
+        "proposedPublicId": "douglas-college-nursing-logo"
+      },
+      "note": "Technique 4: the homepage header logo is a CSS-background div (class \"logo-full\"), not a plain <img>. Fetched the theme's compiled stylesheet, found the background-image rule pointing at /themes/douglas/img/douglas-logo.svg (a non-reverse, standard-color variant, distinct from the white/reverse version also referenced), and verified it resolves directly. Cover still unresolved: only generic marketing hero banners and 404s on likely campus/location paths were found; no image was clearly labeled as an institutional campus photo."
+    },
+    {
+      "universitySlug": "dublin-city-university",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.dcu.ie/sites/default/files/dcu_logo_web_0.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset (dcu.ie homepage)",
+        "proposedPublicId": "dublin-city-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Dublin_City_University_Library_Glasnevin_2014.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (DCU Glasnevin campus library)",
+        "proposedPublicId": "dublin-city-university-cover"
+      },
+      "note": "The Wikipedia infobox logo (Dublin_City_University_(logo).png) is a non-free file on the local en.wikipedia namespace and was excluded per policy; instead found DCU's own logo directly on its homepage source, and a Commons-licensed campus photo for the cover."
+    },
+    {
+      "universitySlug": "duke-university",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Duke_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain (PD-textlogo), Wikimedia Commons file \"Duke_University_logo.svg\"; a standard non-copyright trademark notice is present but does not restrict this copyright-based reuse (per the task's stated exception for brand-restricted cases with a Commons-licensed alternative)",
+        "proposedPublicId": "duke-university-logo"
+      },
+      "note": "Technique 2: Duke's brand-licensing restriction applies to Duke's own asset distribution, but a separately hosted, freely-licensed (PD-textlogo) wordmark exists on Wikimedia Commons and was used per the explicit exception for this scenario."
+    },
+    {
+      "universitySlug": "edhec-business-school",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.edhec.edu/sites/default/files/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset, alt text \"EDHEC Business School\", found on edhec.edu/en/press-room",
+        "proposedPublicId": "edhec-business-school-logo"
+      },
+      "note": "Technique 1: found EDHEC's dedicated press room page (edhec.edu/en/press-room, distinct from the generic homepage) which references the site's main logo.svg directly. Cover still unresolved: no og:image or clearly labeled campus photo found on the press room or homepage; the campuses page (edhec.edu/en/edhec-campuses) 404s."
+    },
+    {
+      "universitySlug": "edu-digital-education-holdings-edu-medical-faculty-of-medicine",
+      "sourceFile": "a-91-100.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "This catalogue name appears to be a garbled/composite record combining a holding company name (\"EDU Digital Education Holdings\") with a sub-brand (\"EDU Medical Faculty of Medicine\"). No single official institutional domain matching this exact composite name could be identified; the codebase (lib/university-authors.ts) carries only an author mapping with no country or parent-brand metadata to disambiguate. This is an unresolved-identity case needing a parent-brand inheritance decision, not a sourcing gap -- no media assigned."
+    },
+    {
+      "universitySlug": "emu-university",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://next.emu.web-perfomance.uz/wp-content/uploads/2025/04/new_emu_logo-min.png",
+        "sourceType": "official",
+        "rightsBasis": "Official CDN asset backing emuni.uz's Next.js image proxy (decoded from the site's own og:image / header logo reference)",
+        "proposedPublicId": "emu-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://next.emu.web-perfomance.uz/wp-content/uploads/2025/05/bussines-campus-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official CDN campus photo linked from emuni.uz's /campus page",
+        "proposedPublicId": "emu-university-cover"
+      },
+      "note": "Technique 4 variant: emuni.uz renders images through a Next.js /_next/image proxy, obscuring the underlying file. Decoded the proxy's url= query parameter to recover the real CDN URLs on next.emu.web-perfomance.uz and verified both resolve directly."
+    },
+    {
+      "universitySlug": "escp-business-school",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://escp.eu/sites/default/files/styles/media_room_toolkit/public/inline-images/Logos/ESCP-Europe-Logo-logotype-media-room-toolkit.png",
+        "sourceType": "official",
+        "rightsBasis": "Official downloadable asset from ESCP's press room / media room toolkit (escp.eu/press-room)",
+        "proposedPublicId": "escp-business-school-logo"
+      },
+      "note": "Technique 1: found ESCP's dedicated press-room page with a \"media room toolkit\" image set containing a clean logotype file. Cover still unresolved: the page's og:image (press-room-banner.jpg) was verified but visually shows branded microphones on a table, not a campus image, so it was rejected as misleading for a multi-campus school."
+    },
+    {
+      "universitySlug": "essec-business-school",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://images.ctfassets.net/vmb6iqn8sgcm/E9owEHILaQSp48TxHGJSJ/4770c7396605bf2729481b53e2ab2c79/ESSEC-Home-summer26.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Contentful CMS asset, used as essec.edu's own homepage og:image",
+        "proposedPublicId": "essec-business-school-cover"
+      },
+      "note": "Cover resolved via the official homepage's og:image, hosted on ESSEC's own Contentful CDN (not previously captured). Logo still unresolved and deliberately left held: the site's logo is pure inline SVG markup (id=\"Logo_essec_noir\") with no standalone file to link, and the hold reason already noted a Commons-hosted alternative exists but should not be substituted, which this pass honored rather than overriding."
+    },
+    {
+      "universitySlug": "eth-zurich",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/ETH_Z%C3%BCrich_Logo_black.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain (PD-textlogo), Wikimedia Commons file \"ETH_Zurich_Logo_black.svg\"; standard non-copyright trademark notice present but does not restrict this reuse (per the task's stated exception for brand-restricted cases with a Commons-licensed alternative)",
+        "proposedPublicId": "eth-zurich-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/ETH_Z%C3%BCrich_am_Abend.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (ETH Zurich main building at dusk)",
+        "proposedPublicId": "eth-zurich-cover"
+      },
+      "note": "Technique 2: ETH's own logo-use policy blocks direct downloads without institutional approval, but a freely-licensed (PD-textlogo) wordmark and a CC-BY-SA campus photo both exist on Commons, resolving this per the explicit brand-restriction exception."
+    },
+    {
+      "universitySlug": "east-european-university",
+      "sourceFile": "a-91-100.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://eeu.edu.ge/wp-content/uploads/2025/02/logo-GEO.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset (eeu.edu.ge homepage)",
+        "proposedPublicId": "east-european-university-logo"
+      },
+      "note": "Found a direct logo file on eeu.edu.ge's own homepage source. Cover still unresolved: homepage images found (IMG_6217, IMG_6340, WhatsApp-Image-*) are unlabeled event/news snapshots, not identifiable campus photography, and the /about-university path 404s; left held to avoid using generic slider-style imagery, consistent with the audit's stated caution against unlabeled photos."
+    },
+    {
+      "universitySlug": "east-european-university-eeu",
+      "sourceFile": "a-91-100.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed this record is a duplicate of east-european-university: both resolve to the same official domain, eeu.edu.ge. No media assigned here per the standing instruction not to upload duplicate media until the canonical university record is resolved; the sibling entry (east-european-university) now carries a logo sourced from this same domain."
+    },
+    {
+      "universitySlug": "ecole-polytechnique",
+      "sourceFile": "a-101-110.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.polytechnique.edu/sites/default/files/nc-project/footer/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site footer logo asset, alt text \"École polytechnique, école d'ingénieur\" (polytechnique.edu/presse)",
+        "proposedPublicId": "ecole-polytechnique-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ecole_Polytechnique_France_seen_from_lake_DSC03389.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA (2.0/3.0 dual), Wikimedia Commons file (campus seen from the lake)",
+        "proposedPublicId": "ecole-polytechnique-cover"
+      },
+      "note": "Technique 1: found the dedicated /presse page, which (unlike the homepage's small X mark noted in the first pass) contains the full institutional footer logo with a clear alt label. Cover resolved via a Commons-licensed campus photo."
+    },
+    {
+      "universitySlug": "epoka-university",
+      "sourceFile": "a-101-110.json",
+      "outcome": "still-hold",
+      "updatedReason": "Checked epoka.edu.al homepage and the About-Us/EPOKA-IN-COMMUNITY page directly: both og:image tags point only to the university's own logo files (logo1.svg, logo_epoka_uni.svg), not a campus photo. No Wikipedia Commons campus image exists for this university. No press/media/brand page found on the domain. Cover remains unresolved."
+    },
+    {
+      "universitySlug": "erasmus-university-rotterdam",
+      "sourceFile": "a-101-110.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo_Erasmus_Universiteit_Rotterdam.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "\"Copyrighted free use\" license grant stated on the Wikimedia Commons file page for \"Logo_Erasmus_Universiteit_Rotterdam.svg\" (a recognized free-license category, distinct from fair use/non-free)",
+        "proposedPublicId": "erasmus-university-rotterdam-logo"
+      },
+      "note": "Technique 2: the EUR homepage only exposes favicon-scale/sprite assets as the first pass found, but the Wikipedia article links a full SVG wordmark hosted on Commons under a Copyrighted-free-use grant."
+    },
+    {
+      "universitySlug": "eurasian-international-university",
+      "sourceFile": "a-101-110.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Re-confirmed multiple distinct institutions share close variants of this name (\"Eurasian International University\" / \"Eurasia International University\") across different countries, with no additional identifying metadata (country, city) attached to this catalogue record to disambiguate. Unresolved identity -- no official domain can be safely assigned."
+    },
+    {
+      "universitySlug": "european-university-cyprus-euc-school-of-medicine-frankfurt-branch",
+      "sourceFile": "a-101-110.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed European University Cyprus's official assets (logo, campus imagery) are all tied to the parent university/Nicosia campus; no distinct official asset for the Frankfurt School of Medicine branch specifically was found. Applying the Nicosia-branded parent assets to this Frankfurt-branch-specific catalogue record would misrepresent the branch, so this remains a parent-brand inheritance decision rather than a sourcing gap -- no media assigned."
+    },
+    {
+      "universitySlug": "european-university-of-tirana-bscn",
+      "sourceFile": "a-101-110.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://uet.edu.al/wp-content/uploads/2025/07/UET-logo-e-bardhe-01-scaled.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset (uet.edu.al homepage)",
+        "proposedPublicId": "european-university-of-tirana-bscn-logo"
+      },
+      "note": "Found UET's own logo file directly on its homepage source (a white/reverse-color variant, but a genuine official asset). Cover still unresolved: the homepage og:image resolves to a small graduation-cap icon, not a campus photo (verified visually); the physical-infrastructure page's photo gallery loads via JS/lazy-load and no static campus image could be verified."
+    }
+  ]
+}

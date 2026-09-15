@@ -1,0 +1,37 @@
+{
+  "scope": "Madagascar medical discovery — Université de Mahajanga Faculté de Médecine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The university's Faculty of Medicine page says the faculty trains health professionals through theoretical, practical, and research teaching and lists the state diploma of Doctor of Medicine.",
+      "sourceUrl": "https://www.mahajanga-univ.mg/etablissements/faculte-de-medecine",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A 2026 university news item records a ceremony for completion of theoretical studies in general medicine at the Faculty of Medicine.",
+      "sourceUrl": "https://www.mahajanga-univ.mg/actualites",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The national higher-education ministry's 2021 authorized-institutions list records Université Mahajanga's Faculty of Medicine and Médecine Humaine under health-science licence provision.",
+      "sourceUrl": "https://www.mesupres.gov.mg/assets/front/documents/documents/etablissements_habilites/liste_des_institutions_superieures_mise_a_jour_aout_2021.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A 2026 ministry notice reports new teaching buildings for the University's Faculty of Medicine and an IFIRP facility at Université de Mahajanga.",
+      "sourceUrl": "https://www.mesupres.gov.mg/actualites/detail/474",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Faculty of Medicine tuition or mandatory-fee schedule was located on an official source.",
+    "No current official undergraduate admission notice or complete eligibility and document checklist was found.",
+    "Teaching language, clinical-placement structure, and student-support arrangements require current provider-specific confirmation."
+  ],
+  "nextAction": "Secure the current medicine admissions notice and fees from the faculty, then document the teaching language, clinical partners/placements, and student support before considering publication."
+}

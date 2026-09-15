@@ -1,0 +1,81 @@
+{
+  "countrySlug": "afghanistan",
+  "universitySlug": "mili-institute-of-higher-education-faculty-of-medicine",
+  "schoolName": "Mili Institute of Higher Education Faculty of Medicine",
+  "cityName": "Kabul",
+  "priority": "low",
+  "officialWebsite": "https://www.mili.edu.af/public/en/pd/home",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Mili Institute of Higher Education (MIHE) has current first-party operational evidence: its official home page, crawled in July 2026, announces Kankor 1405 admission for MD; its Faculty of Curative Medicine page dated January 2026 describes six years of theoretical/practical study plus one year of practical work; and its current fee page lists AFN 80,000 per semester for Medicine plus an AFN 5,500 admission fee. The Institute also claims an international-student office and nearly 180 foreign students across Medicine and Stomatology. These first-party claims establish a candidate for research, not a publishable study-abroad offer. No independent current programme accreditation/recognition, authoritative foreign admissions procedure, instruction-language confirmation, named clinical training agreements, reliable international accommodation/support package, or audience-relevant licensing pathway was verified. Given the unusually high importance of operational continuity and student support in this context, no commercial page should be published.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Mili Institute of Higher Education — official home page",
+        "url": "https://www.mili.edu.af/public/en/pd/home",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Current official page announces Kankor 1405 admission for MD, DMD, law and pharmacy, providing direct operational evidence of an active intake."
+      },
+      {
+        "label": "MIHE — Curative Medicine faculty overview",
+        "url": "https://www.mili.edu.af/public/index.php/en/pd/programs-faculties-curative-medicine-md-about",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "January 2026 official faculty page describes six years of theoretical/practical study plus one year practical work, reported student numbers, laboratory facilities and faculty departments. These are institutional claims, not independently audited evidence."
+      },
+      {
+        "label": "MIHE — fee structure",
+        "url": "https://www.mili.edu.af/public/en/pd/admission-fee-structure",
+        "kind": "official-fees",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists AFN 5,500 admission fee and AFN 80,000 Medicine semester fee. The page says it serves local and foreign students but does not provide a full foreign-admissions process or total cost of attendance."
+      },
+      {
+        "label": "MIHE — international-student overview",
+        "url": "https://www.mili.edu.af/en/pd/international-overview",
+        "kind": "official-student-support",
+        "checkedAt": "2026-07-25",
+        "notes": "Claims an international-student office and nearly 180 foreign students in Medicine and Stomatology. It does not document accommodation, immigration processing, insurance, emergency procedures or a current support entitlement."
+      },
+      {
+        "label": "Afghanistan Ministry of Higher Education — registered private universities and institutes",
+        "url": "https://mohe.gov.af/sites/default/files/2022-07/Registered%20Private%20Universities%20an1%20%282%29.pdf",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Government registry lists Meli Institute of Higher Education. The registry copy is older and does not replace current programme-level approval or external accreditation evidence."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Mili Institute of Higher Education Faculty of Medicine",
+    "city": "Kabul",
+    "type": "Private",
+    "officialWebsite": "https://www.mili.edu.af/public/en/pd/home",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Current independent programme accreditation and professional-recognition evidence",
+      "Authoritative foreign-applicant, visa and document-recognition procedure",
+      "Explicit language-of-instruction evidence",
+      "Named clinical sites and current clinical-placement terms",
+      "Verified international accommodation, insurance, safeguarding and continuity-support evidence",
+      "Audience-relevant graduate licensing pathway"
+    ],
+    "notes": "Current operations and published institutional fees are verified from MIHE's own active website. They are insufficient to overcome the absent independent programme and international-student assurance evidence required by the publish gate."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All public-facing narrative is intentionally blank. A commercial medical page would require strong, current third-party assurance on recognition, delivery continuity, clinical learning and international student protection; that evidence was not established."
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "batchId": "a-211-220",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 211-220; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "lobachevsky-state-university-medical-institute",
+      "universityName": "Lobachevsky State University Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Institute-level record (Institute of Biology and Biomedicine / Medical faculty structures within Lobachevsky State University of Nizhny Novgorod, a large classical university with its own distinct branding). Needs a decision on whether this record should inherit the parent university's official media or be scoped/merged as a sub-unit before any standalone logo/cover is sourced; no media sourced pending that call.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "lomonosov-moscow-state-university",
+      "universityName": "Lomonosov Moscow State University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Wikipedia infobox -> Commons free-licensed campus photo (aerial view). Logo remains unresolved: the Wikipedia infobox emblem (Moscow_State_University_CoA.png) is hosted locally on en.wikipedia (non-free/fair-use), no free equivalent found on Commons; official msu.ru is a JS-rendered SPA shell with no discoverable static logo asset path, and a direct /img/logo.png guess returned an HTML error page, not an image. Logo stays held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/%D0%9C%D0%93%D0%A3%2C_%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (aerial photo of MSU main campus)",
+        "proposedPublicId": "lomonosov-moscow-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "london-school-of-economics",
+      "universityName": "London School of Economics and Political Science",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Wikipedia infobox -> Commons free-licensed logo and campus photo (both hosted on commons.wikimedia.org, not the en-wiki fair-use path). Bypasses the Brand Portal request-access barrier noted in the first pass..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/London_school_of_economics_logo_with_name.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (current LSE wordmark logo)",
+        "proposedPublicId": "london-school-of-economics-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/LSE_main_entrance.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 / GFDL 1.2 (LSE Old Building main entrance)",
+        "proposedPublicId": "london-school-of-economics-cover"
+      }
+    },
+    {
+      "universitySlug": "london-south-bank-university",
+      "universityName": "London South Bank University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Wikipedia infobox -> Commons free-licensed current logo (2020 refresh) and campus photo, avoiding third-party logo directories flagged in the first pass..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/LSBU2020logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (current 2020 LSBU logo)",
+        "proposedPublicId": "london-south-bank-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/London_South_Bank_University_inside.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (interior campus photo)",
+        "proposedPublicId": "london-south-bank-university-cover"
+      }
+    },
+    {
+      "universitySlug": "ludwig-maximilian-university-munich",
+      "universityName": "Ludwig Maximilian University of Munich",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Wikipedia infobox -> Commons PD-textlogo wordmark and CC-BY-SA campus photo, bypassing LMU's controlled brand-guide request process..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/LMU_Muenchen_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (below threshold of originality; trademark still applies)",
+        "proposedPublicId": "ludwig-maximilian-university-munich-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/2017_LMU_1-4_rectlinear.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (LMU main building, Professor-Huber-Platz)",
+        "proposedPublicId": "ludwig-maximilian-university-munich-cover"
+      }
+    },
+    {
+      "universitySlug": "lund-university",
+      "universityName": "Lund University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Commons Category:Logos_of_Lund_University (not the non-free seal used in the en-wiki infobox) plus a public-domain main-building photo, bypassing the graphic-manual restriction on the combined seal/wordmark..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Logotyp_Lunds_universitet_%28transp%29.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain / PD-textlogo (transparent-background logotype)",
+        "proposedPublicId": "lund-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Lunds_universitets_huvudbyggnad_%28juli_2008%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, public domain (Main Building, July 2008)",
+        "proposedPublicId": "lund-university-cover"
+      }
+    },
+    {
+      "universitySlug": "mamun-university",
+      "universityName": "Mamun University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: inline-CSS/text-header site (no dedicated logo file); found apple-touch-icon.png depicting an institutional building at higher resolution than the favicon, usable as cover. No standalone logo file exists anywhere on the domain (header renders as text, homepage HTML has zero \"logo\"-named assets); gallery photos on the homepage are mixed generic/stock and could not be confirmed as MSU-owned. Logo stays held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://mamun.uz/assets/images/apple-touch-icon.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the university's own official domain (mamun.uz), used site-wide as its apple-touch-icon/site emblem depicting the institution's building",
+        "proposedPublicId": "mamun-university-cover"
+      }
+    },
+    {
+      "universitySlug": "maastricht-university",
+      "universityName": "Maastricht University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Commons free-licensed 2017 wordmark and campus view, bypassing UM's logo request-for-use process..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Maastricht_University_logo_%282017_new_version%29.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, PD-textlogo (2017 UM wordmark)",
+        "proposedPublicId": "maastricht-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/20130504_Maastricht_View_over_Maastricht_from_Sint_Pietersberg_01%28cropped%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Randwyck campus view)",
+        "proposedPublicId": "maastricht-university-cover"
+      }
+    },
+    {
+      "universitySlug": "macewan-university-nursing",
+      "universityName": "MacEwan University Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Programme-level record (MacEwan University Nursing). No new information changes the first-pass conclusion: this needs an explicit decision on whether to inherit MacEwan University's own logo/cover or source a nursing-programme-specific asset before any media is assigned. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine",
+      "universityName": "Macau University of Science and Technology Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Faculty-level record. Tried: MUST press/media pages (guessed /en/faculty-of-medicine path returned a CMS 404 'Category not found'), homepage navigation scan for a Faculty of Medicine link (none found in static HTML, page likely JS-routed), and Wikipedia (no dedicated English or Chinese article for this faculty). Per the original hold reason, parent MUST university-wide assets are not assumed to apply to the faculty. No faculty-specific logo or cover located; stays held."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Cape Verde medical discovery — Universidade de Cabo Verde Integrated Master's in Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Uni-CV's current 2026/27 admissions FAQ identifies a specific Integrated Master's in Medicine admissions and entrance-examination regulation.",
+      "sourceUrl": "https://www.unicv.edu.cv/pt/unicv/76-ensino/faq-ensino",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Uni-CV states that Medicine selection combines the third-cycle average (35%), a core-subject mark (15%) and the entrance-exam result (50%).",
+      "sourceUrl": "https://www.unicv.edu.cv/pt/academico/faq-sac",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The official admissions FAQ requires Medicine applicants to use the university's online application platform, submit the documents required by the general and Medicine-specific rules, and pay the generated DUC; it lists a CVE 3,000 registration-fee receipt among the admissions documents.",
+      "sourceUrl": "https://www.unicv.edu.cv/pt/unicv/76-ensino/faq-ensino",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Cape Verde's official 2025 medical-career decree requires a medicine degree and registration with the Ordem dos Médicos de Cabo Verde for medical employment pathways it governs.",
+      "sourceUrl": "https://boe.incv.cv/Bulletins/View?id=86317",
+      "sourceType": "government-gazette",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Medicine tuition or mandatory-fee schedule was located. The CVE 3,000 item is an application/registration document fee, not tuition.",
+    "The current admissions FAQ confirms that a 2026/27 Medicine regulation exists but the reviewed public material does not expose a complete current deadline, vacancy count, academic eligibility detail or an international-applicant route.",
+    "Programme duration, teaching language, named clinical partners, recognition/accreditation, accommodation, scholarship/loan support and full graduate-registration implications remain unverified."
+  ],
+  "nextAction": "Obtain Uni-CV's active Medicine regulation and fee decision, then verify programme structure, language, clinical training and student-support evidence before preparing a payload."
+}

@@ -1,0 +1,65 @@
+{
+  "countrySlug": "nicaragua",
+  "universitySlug": "unides-school-of-medical-sciences",
+  "schoolName": "UNIDES School of Medical Sciences",
+  "cityName": "Managua",
+  "priority": "medium",
+  "officialWebsite": "https://unides.edu.ni/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UNIDES's official 2026 fee table lists a six-year Medicina y Cirugía course in Managua, with annual registration of C$6,411.00 and a daytime monthly payment of C$9,158.00. A December 2025 UNIDES notice says fifth-year students who completed five years of theoretical-practical preparation would start hospital rotational internship in 2026. The record supports the programme, duration, domestic fee schedule and internship progression, but no official international admissions route, language-of-instruction statement, recognition/licensing evidence for the intended audience, or international accommodation/support terms were found. This is not publish-ready as a study-abroad medical option.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UNIDES — Información de Aranceles 2026",
+        "url": "https://unides.edu.ni/informacion-de-aranceles/",
+        "kind": "official-fees",
+        "checkedAt": "2026-07-25",
+        "notes": "Official 2026 table lists Medicina y Cirugía in Managua, six years, C$6,411.00 annual registration and C$9,158.00 daytime monthly payment. It also lists monograph, degree issuance and optional graduation-event charges."
+      },
+      {
+        "label": "UNIDES — Medical internship notice",
+        "url": "https://unides.edu.ni/2025/12/09/unides-entrega-reconocimientos-a-estudiantes-de-v-ano-de-la-carrera-medicina-y-cirugia-que-iniciaran-el-internado-rotatorio/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "UNIDES reports that fifth-year Medicina y Cirugía students who completed five years of theoretical-practical preparation would begin hospital rotational internship in 2026."
+      },
+      {
+        "label": "UNIDES — Academic services fees 2026",
+        "url": "https://unides.edu.ni/aranceles-servicios-academicos/",
+        "kind": "official-fees",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms that its 2026 academic-service tariff applies to Medicina y Cirugía as a medical-sciences course."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "UNIDES School of Medical Sciences",
+    "city": "Managua",
+    "type": "Private",
+    "officialWebsite": "https://unides.edu.ni/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Official international-applicant eligibility and application route",
+      "Explicit language-of-instruction statement",
+      "Primary-source recognition and graduate-licensing evidence for the intended audience",
+      "Verified international accommodation, health-support and clinical-placement terms"
+    ],
+    "notes": "The 2026 fee table is sufficient to record the domestic listed charges but not to assume international eligibility or a total cost of attendance. The internship news demonstrates an established course sequence but does not establish international placement conditions."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative fields remain blank. A page aimed at prospective international medical students would require evidence UNIDES does not presently publish in the reviewed material, especially language, entry route, recognition and practical student support."
+  }
+}

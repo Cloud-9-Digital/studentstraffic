@@ -1,0 +1,17 @@
+{
+  "countrySlug": "somalia",
+  "universitySlug": "somali-national-university",
+  "schoolName": "Somali National University",
+  "cityName": "Mogadishu",
+  "priority": "medium",
+  "officialWebsite": "https://universityofsomalia.net/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Somali National University's official Faculty of Medicine and Surgery page identifies the Medicine and Surgery department as delivering a six-year MBBS, including basic sciences, clinical disciplines, laboratory practice, hospital rotations, supervised patient care and a compulsory one-year internship. The same source identifies SNU as public and non-profit. No current official admissions calendar, tuition schedule, foreign eligibility, language, clinical-site, visa/support or independent recognition documentation was verified. Hold until those facts are primary-source verified.",
+  "sourceBundle": { "sources": [
+    { "label": "Somali National University Faculty of Medicine and Surgery", "url": "https://universityofsomalia.net/academics/undergraduate/faculty-of-medicine-and-surgery/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States the six-year MBBS structure and compulsory one-year internship, including hospital rotations and supervised patient care." },
+    { "label": "Somali National University Medicine faculty site reference", "url": "https://medicine.universityofsomalia.net", "kind": "official-institution", "checkedAt": "2026-07-25", "notes": "Referenced by the university faculty page; a separate canonical admissions/cost record was not captured in this pass." }
+  ] },
+  "structuredFacts": { "name": "Somali National University", "type": "Public university", "programs": [ { "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBBS)", "duration": "6 years plus compulsory 1-year internship", "feeStatus": "No current official fee schedule verified", "publishable": false } ], "missingForPublication": [ "current admissions calendar and selection criteria", "current tuition and mandatory costs", "foreign eligibility, visa and language route", "hospital/clinical-site allocation and support", "current independent accreditation/recognition evidence", "target-market professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because programme facts are present but applicant, cost and professional-outcome evidence is incomplete." }
+}

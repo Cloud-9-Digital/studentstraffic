@@ -1,0 +1,19 @@
+{
+  "countrySlug": "oman",
+  "universitySlug": "national-university-of-science-and-technology-oman",
+  "schoolName": "National University of Science and Technology",
+  "cityName": "Sohar",
+  "priority": "medium",
+  "officialWebsite": "https://nu.edu.om/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - NU's College of Medicine and Health Sciences official pages describe its MD programme and state that it has TEPDAD accreditation adhering to WFME standards. NU's accreditation page lists the MD programme as accredited by TEPDAD, while Oman News Agency reports institutional accreditation by OAAAQA in May 2025. The college originated from Oman Medical College and the university identifies itself as a private medical college. A current MD admissions call, tuition schedule, full programme structure/language route and clinical-placement/student-support conditions were not verified in this pass. Hold pending those primary facts.",
+  "sourceBundle": { "sources": [
+    { "label": "NU College of Medicine dean message", "url": "https://nu.edu.om/medicine/message-from-dean/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Identifies the College of Medicine and Health Sciences history and states MD programme TEPDAD accreditation adhering to WFME standards." },
+    { "label": "NU accreditation page", "url": "https://nu.edu.om/accreditation/", "kind": "official-accreditation", "checkedAt": "2026-07-25", "notes": "Lists the MD programme as accredited by TEPDAD and university accreditation by OAAA." },
+    { "label": "Oman News Agency NU institutional accreditation report", "url": "https://omannews.gov.om/topics/en/79/show/122238/", "kind": "government-media", "checkedAt": "2026-07-25", "notes": "Reports OAAAQA institutional accreditation certificate issuance in May 2025." },
+    { "label": "NU university overview", "url": "https://nu.edu.om/", "kind": "official-institution", "checkedAt": "2026-07-25", "notes": "States the College of Medicine and Health Sciences is the private medical college in Oman and references its 2001 establishment history." }
+  ] },
+  "structuredFacts": { "name": "National University of Science and Technology", "type": "Private university", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "Not verified from a current official programme-detail page in this pass", "feeStatus": "No current official tuition schedule verified", "publishable": false } ], "missingForPublication": [ "current MD admissions call and eligibility", "programme duration, curriculum and instructional language", "current tuition and mandatory cost schedule", "clinical placement and student-support evidence", "visa/housing details for international students", "target-market professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because admissions and cost facts are incomplete despite strong accreditation evidence." }
+}

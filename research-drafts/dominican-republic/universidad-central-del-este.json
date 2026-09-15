@@ -1,0 +1,18 @@
+{
+  "countrySlug": "dominican-republic",
+  "universitySlug": "universidad-central-del-este",
+  "schoolName": "Universidad Central del Este",
+  "cityName": "San Pedro de Macoris",
+  "priority": "medium",
+  "officialWebsite": "https://uce.edu.do/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - UCE's current official medicine page describes a 16-semester, on-campus programme in San Pedro de Macoris with pre-clinical, clinical and rotating-internship components. It publishes the stated semester investment, detailed national/foreign applicant requirements and Spanish-document translation rules. CAAM-HP lists Accreditation with Conditions for 2025-2030. Hold pending a current all-in cost calculation, confirmed language pathway for the intended audience, verified intake dates, hospital-placement detail and market-specific professional-eligibility analysis.",
+  "sourceBundle": { "sources": [
+    { "label": "UCE official Medicine programme page", "url": "https://uce.edu.do/oferta-academica/grado/medicina/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists in-person delivery in San Pedro de Macoris, 16 semesters, pre-clinical/clinical/internship structure, admissions material and stated semester investment." },
+    { "label": "UCE School of Medicine catalogue", "url": "https://www.uce.edu.do/sitios/oferta-academica/documentos/CATALOGODELAESCUELADEMEDICINA-VERSION-FINAL-%202023.pdf", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Provides school-level policy and financial-aid context; it is an older catalogue and must not replace current tuition verification." },
+    { "label": "CAAM-HP UCE assessment record", "url": "https://caam-hp.org/universidad-central-del-este/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists Accreditation with Conditions for 5 years, 2025-2030." }
+  ] },
+  "structuredFacts": { "name": "Universidad Central del Este", "type": "Private university", "programs": [ { "officialTitle": "Medicina", "duration": "16 semesters", "feeStatus": "Current official page states a semester investment; complete all-in cost and currency/fee applicability require confirmation", "publishable": false } ], "missingForPublication": [ "current intake calendar and capacity", "transparent full-programme cost calculation", "language support and pathway evidence", "named current teaching-hospital/internship arrangements", "market-specific registration and licensing assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted while language, costs and professional-outcome information require scoped validation." }
+}

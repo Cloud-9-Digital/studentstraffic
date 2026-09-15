@@ -1,0 +1,2250 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "bachelor-liberal-arts",
+      "name": "Bachelor of Liberal Arts",
+      "shortName": "Liberal Arts",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "liberal-arts",
+      "aliases": [
+        "Bachelor of Arts in Liberal Arts",
+        "BA Liberal Arts",
+        "BSc Liberal Arts"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Bachelor of Liberal Arts is the Students Traffic catalogue category for multidisciplinary undergraduate degrees built around a declared major rather than a single fixed syllabus. O.P. Jindal Global University maps its four-year B.A. (Hons.) in Liberal Arts and Humanities at the Jindal School of Liberal Arts and Humanities to this category, a 196-credit degree with thirteen declared majors, a self-designed major option, five internships and a choice of research or coursework pathway in the final year.",
+      "metaTitle": "Bachelor of Liberal Arts Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Liberal Arts degrees abroad by declared major, duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bachelor-political-science",
+      "name": "Bachelor's in Political Science",
+      "shortName": "Bachelor's Political Science",
+      "stream": "public-policy-international-relations",
+      "level": "bachelors",
+      "discipline": "political-science",
+      "aliases": [
+        "BA Political Science",
+        "BSc Political Science",
+        "B.A. (Hons.) Political Science"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Bachelor's in Political Science is the Students Traffic catalogue category for undergraduate degrees in political systems, political behaviour, political theory and government. O.P. Jindal Global University maps its four-year B.A. (Hons.) Political Science at the Jindal School of International Affairs to this category, a degree that pairs the major with a choice of thirteen minors across the humanities, social sciences, international affairs and public policy.",
+      "metaTitle": "Bachelor's in Political Science Programmes Abroad",
+      "metaDescription": "Compare Bachelor's in Political Science programmes abroad by duration, minors, teaching language, tuition and the admission requirements for international applicants."
+    },
+    {
+      "slug": "master-public-policy",
+      "name": "Master of Public Policy",
+      "shortName": "MPP",
+      "stream": "public-policy-international-relations",
+      "level": "masters",
+      "discipline": "public-policy",
+      "aliases": [
+        "M.P.P.",
+        "MSc Public Policy",
+        "M.A. Public Policy"
+      ],
+      "displayOrder": 2,
+      "durationYears": 1,
+      "summary": "Master of Public Policy is the Students Traffic catalogue category for postgraduate degrees in policy analysis, governance and programme evaluation. O.P. Jindal Global University maps its one-year M.A. Public Policy at the Jindal School of Government and Public Policy to this category, a four-term degree combining economics, law, political theory and data analysis with a mandatory internship and a dissertation, electives or an optional six-month capstone project.",
+      "metaTitle": "Master of Public Policy (MPP) Programmes Abroad",
+      "metaDescription": "Compare Master of Public Policy programmes abroad by duration, curriculum, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "mph",
+      "name": "Master of Public Health",
+      "shortName": "MPH",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "public-health",
+      "aliases": [
+        "M.P.H.",
+        "MSc Public Health",
+        "Masters in Public Health"
+      ],
+      "displayOrder": 3,
+      "durationYears": 1,
+      "summary": "Master of Public Health is the Students Traffic catalogue category for postgraduate degrees in population health, epidemiology and health systems. O.P. Jindal Global University maps its one-year non-residential Master of Public Health at the Jindal School of Public Health and Human Development to this category, a four-term degree open to graduates of any discipline and combining core epidemiology, biostatistics, health systems and nutrition teaching with an internship and a dissertation, capstone or community service learning project.",
+      "metaTitle": "Master of Public Health (MPH) Programmes Abroad",
+      "metaDescription": "Compare Master of Public Health programmes abroad by duration, curriculum, teaching language, tuition and the admission requirements for international applicants."
+    },
+    {
+      "slug": "llb",
+      "name": "Bachelor of Laws",
+      "shortName": "LLB",
+      "stream": "law",
+      "level": "bachelors",
+      "discipline": "law",
+      "aliases": [
+        "LL.B.",
+        "Bachelor of Law",
+        "B.A. LL.B.",
+        "Integrated law degree"
+      ],
+      "displayOrder": 5,
+      "durationYears": 5,
+      "summary": "LLB is the Students Traffic catalogue category for first law degrees taken as an undergraduate award, offered in India as a five-year integrated programme entered directly from school. O.P. Jindal Global University maps the BBA LL.B. (Hons.) and B.Com. LL.B. (Hons.) at Jindal Global Law School to this category, both 210-credit degrees on the Bar Council of India approved list of Centres of Legal Education. Rights to practise law are set by each jurisdiction's own regulator, not by the awarding university.",
+      "metaTitle": "LLB and Integrated Law Degrees for International Students",
+      "metaDescription": "Compare LLB and integrated five-year law degrees abroad by entry route, regulator approval, duration, tuition and the admissions test international applicants must sit."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 4,
+      "durationYears": 2,
+      "summary": "MBA is the Students Traffic catalogue category for full-time, general-management master's degrees taken after a completed bachelor's degree. O.P. Jindal Global University maps the two-year Full-Time MBA at Jindal Global Business School to this category: four semesters and 103 credits with specialisations in Finance, Marketing, Operations, Human Resource Management, and Information Systems and Analytics, and internships placed in the summer and winter vacations.",
+      "metaTitle": "MBA Programmes Abroad for International Students",
+      "metaDescription": "Compare MBA programmes abroad, including specialisations, duration, teaching language, tuition and the admission route open to international applicants."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "op-jindal-global-university",
+      "name": "O.P. Jindal Global University",
+      "city": "Sonipat",
+      "type": "Private",
+      "establishedYear": 2009,
+      "officialWebsite": "https://jgu.edu.in/",
+      "mediaAttribution": {},
+      "summary": "O.P. Jindal Global University is a private university at Sonipat in Haryana, founded in 2009 and listed by the University Grants Commission among Haryana's private universities. Its twelve schools teach law, business, international affairs, public policy, liberal arts, psychology and public health in English on a fully residential campus of more than 16,000 students.",
+      "campusLifestyle": "JGU is fully residential, with more than 16,000 students, over 1,100 full-time faculty and around 2,900 administrative staff on one campus at Sonipat Narela Road. Faculty come from more than 50 countries and students from more than 75. The Global Library covers 15,000 square feet, seats over 650 people at once, and keeps more than 60 per cent of its floor area open around the clock. Named facilities include the Naveen Jindal Sports Academy, the RASA and SAMA student activity spaces, a Film and Television Studio and Multimedia Lab, and 50 bookable conference and breakout rooms.",
+      "cityProfile": "The campus sits on Sonipat Narela Road near Jagdishpur village, in a Haryana district that borders Delhi and Uttar Pradesh and is bounded on the east by the Yamuna. Sonipat district covers 2,260 square kilometres and adjoins Rohtak, Jind and Panipat. The original Grand Trunk Road ran through what is now the campus, and a kos minar milestone from the era of Sher Shah Suri and Jehangir still stands near a campus gate beside the student housing block. The wider region carries deep archaeological significance: Rakhigarhi, in Haryana's Hisar district, is the largest known Harappan excavation. Sonipat also has an unusually dense sporting record, sending more Olympians to the 2021 Tokyo Games than any other Indian district. For an international student this is small-town Haryana rather than metropolitan Delhi, which shapes what is available off campus.",
+      "practicalExposure": "Applied work is built into each of these degrees rather than offered as an extra. The B.A. (Hons.) Liberal Arts and Humanities requires five internships, mixed academic and corporate, across the four years. The M.A. Public Policy carries a mandatory two-credit internship, with an optional six-month capstone project for students who want longer applied work. The Master of Public Health combines an internship with a dissertation, capstone project or community service learning project. The two-year MBA places internships in the summer and winter vacations. Support comes from the Office of Career Services and the Office of Career and Professional Development, which run career counselling, resume and cover letter workshops, interview skills training, networking events and placement assistance. Jindal Global Business School lists recruiters including Deloitte, KPMG, PwC, Accenture, ICICI Bank, American Express, Rolls-Royce, Tata Consultancy Services, Wipro, HCL and Infosys, and internship hosts including Tata Motors, Tech Mahindra, Reliance Retail, CRY (Child Rights and You) and the SRF Foundation. The Jindal School of Government and Public Policy names UNDP, the World Health Organisation in Geneva, NITI Aayog, the Centre for Policy Research, Observer Research Foundation, Pratham and Teach for India among the destinations of its public policy alumni. The five-year law degrees add four compulsory clinical courses and five compulsory internships, at least one of them under Trial and Appellate Advocates; Jindal Global Law School opens recruitment with a Zero Day Placement Event in the penultimate year, and around 40 to 50 organisations engage with its Office of Career Services each hiring cycle.",
+      "hostelOverview": "JGU is a fully residential university and publishes accommodation charges alongside tuition for each residential programme. Rooms are shared: the Student Handbook states accommodation is on a three- and four-people sharing basis, with no single occupancy available. For 2026-27 the annual residential charge is INR 2,32,000 on the five-year law degrees, INR 2,31,100 on the liberal arts, political science and MBA programmes and INR 1,81,100 on the M.A. Public Policy. Allied service charges covering food, laundry, security, housekeeping and electricity add INR 1,48,900 a year on the law degrees and INR 1,24,900 elsewhere, and a one-time refundable deposit of INR 50,000 applies. Both charges rise by up to ten per cent a year. The Master of Public Health is non-residential and carries neither.",
+      "dietarySupport": "Catering and housekeeping are contracted to Sodexo. All JGU dining halls serve vegetarian food, with eggs in some meals; non-vegetarian food is available on payment at other campus outlets. The Vidya Devi Jindal dining block runs over seven floors and seats 7,000 at a time. Named outlets in the T6 food court include Subway, Bikanervala, Dunkin', Oki Poki and Millets & More, most open from 11:00 to 01:00. Dining staff handle allergy, intolerance and religious dietary requests on request.",
+      "safetyOverview": "The JGU Health Centre has a dedicated Emergency Ward and runs a 24/7 helpline staffed by a resident medical officer on duty, backed by an Emergency Response Coordination Centre and Advanced Cardiac Life Support and Basic Life Support ambulances stationed across campus. A published escalation matrix runs from the duty officer through the head of nursing to the Chief Medical Superintendent. Security issues route to a Quick Response Team.",
+      "studentSupport": "Sukoon On Campus provides 24x7 mental health support, confidential one-to-one therapy and a dedicated helpline. Statutory bodies include the Anti-Ragging Committee, the Committee on Gender Sensitisation Against Sexual Harassment, the Committee on Disability Issues and the Anti-Discrimination Committee. The English Language Centre, running since 2012, teaches reading, writing, listening and speaking to students from other language backgrounds.",
+      "whyChoose": [
+        "One fee schedule for everyone: JGU charges Indian, NRI and international students the same tuition and residential fees, and states it operates no NRI or Foreign National quota, so an international applicant is not paying a separate international rate.",
+        "Cluster breadth that most Indian private universities lack: law, business, international affairs, public policy, liberal arts, psychology, journalism, design and public health are taught in twelve schools on one campus, with the law school on the Bar Council of India approved list to 2026-27.",
+        "One of only four private universities notified by the UGC as an Institution of Eminence, on a national list of twelve institutions, notified on 4 November 2020.",
+        "Published fee tables at programme level, in rupees, covering tuition, residence and allied services separately, rather than an on-request quote.",
+        "A genuinely international teaching body, with full-time faculty drawn from more than 50 countries and students from more than 75.",
+        "Applied work is compulsory, not optional: five internships on the liberal arts degree, a mandatory internship on the public policy master's, and summer and winter internships across the MBA."
+      ],
+      "thingsToConsider": [
+        "There is one annual entry point. The Academic Calendar 2026-2027 starts Fall Semester A classes on 3 August 2026 for all schools; a missed intake means waiting a full year.",
+        "Rooms are shared three or four ways and single occupancy is not available, which is a real adjustment for applicants used to individual accommodation.",
+        "Every JGU dining hall is vegetarian, with eggs in some meals. Non-vegetarian food is on payment at separate campus outlets rather than in the main dining halls.",
+        "Tuition, residence and allied service charges each rise by up to ten per cent a year, so a four- or five-year degree costs materially more in total than the first-year figure multiplied out.",
+        "Postgraduate applicants with a degree from outside India need an Association of Indian Universities equivalency certificate, which takes time to obtain and should be started well before the application.",
+        "Jindal Global Law School decides its five-year law admissions on the LNAT-UK and states it accepts no other law admissions test, so CLAT and JSAT scores do not open this route; its Bar Council of India approval runs to the 2026-27 academic year on an annual renewal cycle."
+      ],
+      "bestFitFor": [
+        "Applicants who want a social sciences, policy or humanities degree in English at an Indian price point rather than a computing or engineering degree.",
+        "Graduates of any discipline moving into public health or public policy, since both master's degrees accept a bachelor's in any subject.",
+        "Students who value a compact, fully residential campus with catering, housekeeping and health services included in one published charge.",
+        "MBA applicants testing on GMAT or GRE rather than the Indian CAT or XAT, since JGBS publishes explicit GMAT and GRE thresholds.",
+        "Applicants who want a declared major and the freedom to design their own pathway, which the liberal arts degree supports through thirteen majors plus a self-designed option."
+      ],
+      "industryPartners": [
+        "Deloitte",
+        "KPMG",
+        "PwC",
+        "Accenture",
+        "ICICI Bank",
+        "American Express",
+        "Rolls-Royce",
+        "Tata Consultancy Services",
+        "Wipro",
+        "HCL",
+        "Infosys",
+        "Tata Motors",
+        "Tech Mahindra",
+        "Reliance Retail",
+        "HDFC Bank",
+        "ICICI Prudential",
+        "CRY (Child Rights and You)",
+        "SRF Foundation",
+        "Dinabandhu Help Foundation",
+        "Sodexo"
+      ],
+      "recognitionBadges": [
+        "UGC Institution of Eminence — notified 4 November 2020",
+        "Bar Council of India — Approved Centre of Legal Education, Jindal Global Law School (approval to 2026-27)",
+        "University Grants Commission - listed among the private universities of Haryana",
+        "Government of Haryana - established under the Haryana Private Universities Act, 2006 (notification dated 10 November 2006)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC Institution of Eminence - list of notified institutions",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE"
+        },
+        {
+          "label": "Bar Council of India - approved Centres of Legal Education",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges"
+        },
+        {
+          "label": "UGC state-wise list of private universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf"
+        },
+        {
+          "label": "UGC Expert Committee inspection report on O.P. Jindal Global University",
+          "url": "https://www.ugc.gov.in/oldpdf/privateuni/opjindalsonepat.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is O.P. Jindal Global University public or private?",
+          "answer": "It is private. The University Grants Commission lists O.P. Jindal Global University, Sonipat among the private universities of Haryana, established under the Haryana Private Universities Act, 2006 by a notification dated 10 November 2006, and founded in 2009 as a non-profit philanthropic initiative. The UGC also notified it as an Institution of Eminence on 4 November 2020, one of only four private institutions on that twelve-strong national list."
+        },
+        {
+          "question": "What language are the programmes taught in?",
+          "answer": "English. The JGU Academic Regulations state that the medium of instruction and assessment at the university is English unless the Academic Council determines otherwise for a specific course or programme. There is no local-language teaching phase in the liberal arts, political science, public policy, public health or MBA programmes listed here."
+        },
+        {
+          "question": "Do international students pay a different fee?",
+          "answer": "No. JGU publishes one fee schedule and applies it to Indian, NRI and international students alike, and states that it has no NRI or Foreign National quota, no management quota and no donation or capitation seats. Admission is on merit through the same rounds every applicant goes through."
+        },
+        {
+          "question": "What does a year actually cost?",
+          "answer": "For 2026-27, tuition ranges from INR 3,50,000 for the B.A. (Hons.) Political Science to INR 7,00,000 for the Full-Time MBA and the five-year law degrees. Residential programmes add INR 2,32,000, INR 2,31,100 or INR 1,81,100 a year in residential charges, plus INR 1,48,900 on the law degrees or INR 1,24,900 elsewhere in allied services covering food, laundry, security, housekeeping and electricity. A one-time refundable deposit of INR 50,000 applies. The Master of Public Health is non-residential and costs INR 3,50,000 plus the deposit."
+        },
+        {
+          "question": "Do the fees increase during the degree?",
+          "answer": "Yes. JGU states that tuition, residential and allied service charges are each subject to an annual increase of up to ten per cent. On a four-year undergraduate degree that compounding makes the final year noticeably more expensive than the first, so the total cost of the degree is higher than four times the first-year figure."
+        },
+        {
+          "question": "How do I apply, and through which portal?",
+          "answer": "Applications go through admissions.jgu.edu.in, JGU's own admissions portal, and JGU states that it does not appoint or authorise any agent, intermediary or consultant for admissions. Undergraduate applicants submit a personal statement and supplemental questions, sit the JSAT or an accepted equivalent, and attend an online faculty interview."
+        },
+        {
+          "question": "What entrance test do I need?",
+          "answer": "It depends on the programme. Liberal arts and political science applicants need a JSAT score or an at-par SAT or ACT result. The five-year law degrees are decided on the LNAT-UK, and Jindal Global Law School states it accepts no other law admissions test. The Full-Time MBA requires GMAT 450 or above, GRE 295 or above, NMAT 160 or above, or CAT, MAT, XAT, CMAT or ATMA at the 50th percentile or above, for the 2026 admission cycle. The M.A. Public Policy uses its own closed-book examination, and the MPH an online entrance test or a listed national or international test score."
+        },
+        {
+          "question": "Is an English-language test required?",
+          "answer": "The published eligibility criteria for the liberal arts, political science, public policy, public health and MBA programmes do not list an IELTS or TOEFL requirement. JGU runs an English Language Centre, established in 2012, that supports students from other language backgrounds across reading, writing, listening and speaking once they are enrolled."
+        },
+        {
+          "question": "What do I need if my degree was awarded outside India?",
+          "answer": "Postgraduate applicants holding a bachelor's degree from outside India must submit an equivalency certificate from the Association of Indian Universities. Undergraduate applicants schooled outside India must have completed twelve years of education recognised in their own country, with a grading conversion sheet or normalisation scale where the board does not use Indian grading. JGU accepts IB Diploma and IB Career-related Programme candidates only, not IB Certificate holders, and Cambridge applicants need a minimum of 24 credits."
+        },
+        {
+          "question": "What recognition does JGU hold, and what does it mean for me?",
+          "answer": "Three things carry weight. The UGC lists JGU among Haryana's private universities under the Haryana Private Universities Act, 2006, so its degrees are UGC-recognised. The UGC separately notified JGU as an Institution of Eminence on 4 November 2020. And the Bar Council of India records Jindal Global Law School on its approved list of Centres of Legal Education, approved to 2026-27, which is what makes the five-year law degrees valid Indian law qualifications. BCI approval governs India; whether any degree opens professional practice elsewhere is decided by that jurisdiction's own regulator. JGU holds no current NAAC accreditation."
+        },
+        {
+          "question": "When do classes start and is there more than one intake?",
+          "answer": "There is one annual entry point for these programmes. The JGU Academic Calendar 2026-2027 begins Fall Semester A classes on 3 August 2026 across all schools, and sets Term 1 of the one-year master's structure from the same date. The Master of Public Health runs on its own schedule, with Term 1 from 4 September 2026 to 25 October 2026."
+        },
+        {
+          "question": "What visa and registration steps apply after admission?",
+          "answer": "A study visa is mandatory. JGU states that students travelling on any visa other than a study visa are not eligible to study or register, that the visa must name O.P. Jindal Global University, and that it must be valid from programme registration until after the study end date. Processing can take three months or longer. After arrival, e-FRRO registration must be completed within 14 days, using a bonafide letter and residence proof issued by the international office and collected within three days of reaching campus."
+        },
+        {
+          "question": "What accommodation will I get?",
+          "answer": "Shared rooms. The Student Handbook states that JGU accommodation is on a three- and four-people sharing basis with no single occupancy available, in separate blocks for male and female students. Residential and allied service charges are billed annually alongside tuition and cover food, laundry, security, housekeeping and electricity, so most day-to-day living costs sit inside the published fee."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "University Grants Commission - State-wise List of Private Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Confirms JGU's identity as a Haryana state private university with a notification date of 10.11.2006."
+        },
+        {
+          "label": "UGC Expert Committee inspection report on O.P. Jindal Global University, Sonepat",
+          "url": "https://www.ugc.gov.in/oldpdf/privateuni/opjindalsonepat.pdf",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the founding year, the establishing legislation and the registered address."
+        },
+        {
+          "label": "UGC Institution of Eminence portal - List of IoE",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Server-rendered list of the twelve notified Institutions of Eminence. Fetched and read directly by this agent: O P Jindal Global University appears in Table 2 (private) with Date of Notification 04.11.2020."
+        },
+        {
+          "label": "Bar Council of India - approved Centres of Legal Education",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Route that serves the 106-page approved-CLE PDF (uploaded 2026-08-20). Jindal Global Law School is listed under Haryana with the five-year B.Com. LL.B. (Hons.) at 120 and the five-year BBA LL.B. (Hons.) at 180, approved to 2026-27. The file link is signed and expires hourly, so the page is cited."
+        },
+        {
+          "label": "NAAC - Accreditation Status (institutions with valid accreditation as on 14-08-2025)",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Negative finding: JGU is absent from the valid-accreditation workbook and from all Standing Committee result PDFs through 12 December 2025. Recorded so the NAAC omission is not re-opened as a gap."
+        },
+        {
+          "label": "JGU - BBA LL.B. (Hons.), Jindal Global Law School",
+          "url": "https://jgu.edu.in/jgls/admissions/bba-llbhons",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the 45 per cent minimum, the LNAT-UK-only admissions rule, the 210-credit structure and the law fee table."
+        },
+        {
+          "label": "JGU - B.Com. LL.B. (Hons.), Jindal Global Law School",
+          "url": "https://jgu.edu.in/jgls/admissions/b-com-llbhons",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Same eligibility, admissions test, credit structure and fee table as the BBA LL.B. (Hons.); programme running since 2021."
+        },
+        {
+          "label": "JGU Academic Calendar 2026-2027",
+          "url": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the single annual intake, the 3 August 2026 semester start, the one-year master's term structure and the separate MPH calendar."
+        },
+        {
+          "label": "JGU Student Handbook 2025-26",
+          "url": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the English medium regulation, shared-room accommodation rule, health and mental-health services, statutory committees and library figures."
+        },
+        {
+          "label": "JGU - View All Programme Requirements",
+          "url": "https://jgu.edu.in/view-all-requirements",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for board-specific undergraduate eligibility, the AIU equivalency requirement and the MPH admission stages."
+        },
+        {
+          "label": "JGU Office of International Affairs and Global Initiatives - Visas and Immigration",
+          "url": "https://jgu.edu.in/internationaloffice/visas-and-immigration",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the study-visa-only rule and the visa validity and lead-time guidance."
+        },
+        {
+          "label": "JGU Office of International Affairs and Global Initiatives - International Office FAQ",
+          "url": "https://jgu.edu.in/internationaloffice/faq",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the e-FRRO 14-day rule and the bonafide letter and residence proof timeline."
+        },
+        {
+          "label": "District Sonipat, Government of Haryana - About District",
+          "url": "https://sonipat.gov.in/about-district/",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the district boundaries, area and river geography used in the city profile."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my JGU eligibility",
+            "capture": [
+              "citizenship or passport country",
+              "school board or bachelor's awarding country",
+              "current or expected qualification",
+              "intended school and programme",
+              "entrance test status (JSAT, SAT, ACT, GMAT or GRE)"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my JGU cost plan",
+            "capture": [
+              "intended programme",
+              "residential or non-residential preference",
+              "budget in rupees or home currency",
+              "funding source",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my JGU application review",
+            "capture": [
+              "document readiness",
+              "AIU equivalency status for a non-Indian degree",
+              "personal statement draft",
+              "interview preparation",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "scholarships",
+            "label": "Check Merit cum Means scholarship fit",
+            "capture": [
+              "annual family income",
+              "board or graduation score",
+              "entrance examination result",
+              "curricular and non-curricular achievements"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my study visa and e-FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date",
+              "address in India for registration"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "jgu-jslh-ba-hons-liberal-arts-humanities",
+          "canonicalCourseSlug": "bachelor-liberal-arts",
+          "officialTitle": "B.A. (Hons.) in Liberal Arts and Humanities, Jindal School of Liberal Arts and Humanities",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 600000,
+            "verifiedAt": "2026-08-22",
+            "notes": "JGU charges Indian, NRI and international applicants the same fee; there is no separate foreign-national rate. Tuition is INR 6,00,000 a year. Residential charges add INR 2,31,100 a year and other allied service charges, covering food, laundry, security, housekeeping and electricity, add INR 1,24,900 a year, so a residential year costs INR 9,56,000 before the one-time refundable security deposit of INR 50,000. JGU states that tuition, residential and allied service charges are subject to an annual increase of ten percent, so later years cost more than the first. The security deposit is refunded on completion of studies or on receipt of a No Dues Certificate and carries no interest."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants holding a passport of any country",
+              "Non-Resident Indians and Overseas Citizens of India",
+              "Indian nationals educated in India or abroad"
+            ],
+            "restrictions": [
+              "A minimum aggregate of 60 per cent at 10+2 level in humanities, science or commerce is required",
+              "International Baccalaureate applicants must hold the IB Diploma; IB Certificate holders are not eligible for any JGU undergraduate course",
+              "Cambridge board applicants must present a minimum of 24 credits",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "JGU applies one merit standard and one fee schedule to Indian, NRI and international applicants alike, so an international applicant competes on the same basis rather than through a separate international seat pool.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities"
+          },
+          "admissionsContent": {
+            "overview": "A four-year honours degree at the Jindal School of Liberal Arts and Humanities requiring at least 196 credits, with a declared specialisation from thirteen majors or a self-designed major, five internships, and a fourth year split between a research pathway with a thesis and a coursework pathway with a capstone project.",
+            "eligibility": {
+              "intro": "Entry is based on a completed 10+2 or equivalent school qualification with a minimum aggregate, plus a standardised test score and a faculty interview. Applicants with a gap year are eligible.",
+              "items": [
+                "Completion of 10+2 schooling or its equivalent in humanities, science or commerce",
+                "A minimum aggregate of 60 per cent from CBSE, ISC, a State Board, IB, Cambridge, NIOS or another recognised board",
+                "Twelve years of education recognised in the applicant's own country for applicants schooled outside India",
+                "An IB Diploma, not an IB Certificate, where the applicant followed an International Baccalaureate programme",
+                "A minimum of 24 credits for Cambridge board applicants",
+                "A JSAT score, or an at-par SAT or ACT score",
+                "A grading conversion sheet or normalisation scale where the board does not use Indian grading"
+              ]
+            },
+            "applicationSteps": [
+              "Register and submit the online application at admissions.jgu.edu.in with a personal statement and the supplemental questions.",
+              "Upload Class 10 and Class 12 marks together with the standardised test score, or record the test as awaited and supply it later.",
+              "Sit the JSAT, or submit an at-par SAT or ACT result in place of it.",
+              "Attend the faculty interview, which is conducted online.",
+              "Accept the provisional offer and complete the enrolment payment within the stated window, after which unanswered applications lapse."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 board marksheet or the equivalent school record",
+                "Class 12 board marksheet or the equivalent school-leaving certificate",
+                "Proof of 12 years of schooling recognised in the applicant's own country",
+                "IB Diploma results where the applicant studied an International Baccalaureate programme",
+                "Cambridge A-Level or IGCSE certificates showing the required credit load",
+                "A grading conversion sheet or normalisation scale from the school or board where the grading system is not Indian"
+              ],
+              "application": [
+                "Personal statement",
+                "Responses to the supplemental application questions",
+                "JSAT, SAT or ACT scorecard or registration number",
+                "Passport-size photograph",
+                "Passport copy for applicants schooled or resident outside India",
+                "Supporting certificates for curricular and non-curricular achievements, used in scholarship assessment"
+              ]
+            },
+            "deadlinesNote": "There is one annual entry point. The JGU Academic Calendar 2026-2027 places the start of Fall Semester A classes on 3 August 2026 for every school. Merit cum Means scholarship applications for this school open by 1 June and awards are made in July.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 6,00,000 a year, residential charges INR 2,31,100 a year and allied service charges INR 1,24,900 a year, plus a one-time refundable security deposit of INR 50,000. Each of the three recurring charges rises by ten percent a year. The same schedule applies to Indian, NRI and international students. Merit cum Means scholarships at this school cover tuition only.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 and 2 - foundation",
+              "language": "English",
+              "details": "Twenty foundation courses across communication skills, mathematics, statistics and data analysis, economics, philosophy, literature, psychology, sociology, expressive and performing arts, environment and sustainable development, design thinking and two semesters of Spanish."
+            },
+            {
+              "phase": "Year 3 - major and electives",
+              "language": "English",
+              "details": "Major courses and cross-listed electives, with an optional semester abroad at a partner university and a thesis seminar. Specialisations include digital humanities, comparative religion, economics, environment and sustainable development, expressive arts, sociology and anthropology, history, international business, psychology, literary studies, philosophy, and political science and international relations."
+            },
+            {
+              "phase": "Year 4 - research or coursework pathway",
+              "language": "English",
+              "details": "Students choose a research pathway with an advanced methods course and a two-part thesis, or a coursework pathway with advanced electives and a capstone project. Five internships, mixed academic and corporate, run across the degree."
+            }
+          ]
+        },
+        {
+          "slug": "jgu-jsia-ba-hons-political-science",
+          "canonicalCourseSlug": "bachelor-political-science",
+          "officialTitle": "B.A. (Hons.) Political Science, Jindal School of International Affairs",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 350000,
+            "verifiedAt": "2026-08-22",
+            "notes": "Tuition is INR 3,50,000 a year, the lowest of the JGU programmes in this catalogue. Residential charges add INR 2,31,100 a year and other allied service charges INR 1,24,900 a year, giving a residential year of INR 7,06,000 before the one-time refundable security deposit of INR 50,000. Tuition, residential and allied service charges are each subject to an annual increase of ten percent. The same schedule applies to Indian, NRI and international applicants; JGU publishes no separate foreign-national rate."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jsia/admissions/ba-hons-political-science",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants holding a passport of any country",
+              "Non-Resident Indians and Overseas Citizens of India",
+              "Indian nationals educated in India or abroad"
+            ],
+            "restrictions": [
+              "A completed Class XII examination or a government-recognised equivalent is required",
+              "International Baccalaureate applicants must hold the IB Diploma; IB Certificate holders are not eligible for any JGU undergraduate course",
+              "Cambridge board applicants must present a minimum of 24 credits",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "Entry runs through the Jindal School of International Affairs admissions process rather than a separate international office, and international applicants are assessed on the same three rounds as domestic applicants.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jsia/admissions/ba-hons-political-science"
+          },
+          "admissionsContent": {
+            "overview": "A four-year honours degree at the Jindal School of International Affairs covering political systems, political behaviour, political theory and international relations, with courses built around Indian and global-south political thought as well as Western frameworks, and a choice of thirteen minors alongside the major.",
+            "eligibility": {
+              "intro": "Entry rests on a recognised Class XII qualification plus a standardised test score, with the application assessed over three rounds by JSIA faculty.",
+              "items": [
+                "Successful completion of the Class XII examination or a government-recognised equivalent, including CBSE, State Boards, IB and Cambridge",
+                "Twelve years of education recognised in the applicant's own country for applicants schooled outside India",
+                "An IB Diploma, not an IB Certificate, where the applicant followed an International Baccalaureate programme",
+                "A minimum of 24 credits for Cambridge board applicants",
+                "A JSAT, SAT or ACT score that meets the published requirement",
+                "A grading conversion sheet or normalisation scale where the board does not use Indian grading"
+              ]
+            },
+            "applicationSteps": [
+              "Register at admissions.jgu.edu.in and complete the JSIA undergraduate application form.",
+              "Submit the personal statement and the supplemental question that JSIA sets for this programme.",
+              "Provide Class 10 and Class 12 marks and a JSAT, SAT or ACT score.",
+              "Attend the faculty interview in the third round of the process.",
+              "Accept the offer and complete enrolment; scholarship outcomes are notified separately by email."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 board marksheet or the equivalent school record",
+                "Class 12 board marksheet or the equivalent school-leaving certificate",
+                "Proof of 12 years of schooling recognised in the applicant's own country",
+                "IB Diploma results where the applicant studied an International Baccalaureate programme",
+                "Cambridge A-Level or IGCSE certificates showing the required credit load",
+                "A grading conversion sheet or normalisation scale from the school or board where the grading system is not Indian"
+              ],
+              "application": [
+                "Personal statement",
+                "Response to the JSIA supplemental question",
+                "JSAT, SAT or ACT scorecard or registration number",
+                "Passport-size photograph",
+                "Passport copy for applicants schooled or resident outside India",
+                "Certificates supporting curricular and non-curricular achievements"
+              ]
+            },
+            "deadlinesNote": "One annual entry point. The JGU Academic Calendar 2026-2027 places the start of Fall Semester A classes on 3 August 2026 for the Jindal School of International Affairs. Merit cum Means scholarship applications at this school open by April and awards are made in July.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 3,50,000 a year, residential charges INR 2,31,100 a year and allied service charges INR 1,24,900 a year, plus a one-time refundable security deposit of INR 50,000. Each recurring charge rises by ten percent a year. JGU has tie-ups with Avanse (ICICI), Dena Bank, Axis Bank and Credila (HDFC) for education loans, and awards Merit cum Means scholarships covering tuition only.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year honours degree",
+              "language": "English",
+              "details": "Taught at the Jindal School of International Affairs across established and emerging domains of politics, from local and state through national to international levels, with an explicit emphasis on Indian and global-south political thought alongside Western frameworks."
+            },
+            {
+              "phase": "Major with minor",
+              "language": "English",
+              "details": "Undergraduates choose from thirteen minor combinations spanning the humanities, social sciences, international affairs and public policy, taken alongside the political science major."
+            }
+          ]
+        },
+        {
+          "slug": "jgu-jsgp-ma-public-policy",
+          "canonicalCourseSlug": "master-public-policy",
+          "officialTitle": "M.A. Public Policy, Jindal School of Government and Public Policy",
+          "durationYears": 1,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 400000,
+            "officialTotalTuitionAmount": 400000,
+            "verifiedAt": "2026-08-22",
+            "notes": "This is a one-year degree, so the annual figure is also the full tuition: INR 4,00,000. Residential charges are INR 1,81,100 a year, lower than the undergraduate rate, and other allied service charges are INR 1,24,900 a year, giving a residential year of INR 7,06,000 before the one-time refundable security deposit of INR 50,000. JGU states that tuition, residential and allied service charges are subject to an annual increase of ten percent, which matters for the cohort entering after this one rather than within the single year of study."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jsgp/admissions/ma-public-policy",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Graduates of a UGC-recognised university in India",
+              "Graduates of a recognised university abroad, subject to equivalency assessment",
+              "Recent graduates and early-career professionals with no minimum work experience"
+            ],
+            "restrictions": [
+              "A completed bachelor's degree from a UGC-recognised university in India or abroad is required",
+              "A bachelor's degree awarded outside India must be supported by an Association of Indian Universities equivalency certificate",
+              "Selection includes a closed-book examination that applicants must sit before the faculty interview",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "JGU states there is no work-experience requirement and no age limit for this programme, which removes the barrier that many public policy master's degrees place in front of recent graduates.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jsgp/admissions/ma-public-policy"
+          },
+          "admissionsContent": {
+            "overview": "A one-year Master of Arts in Public Policy launched at the Jindal School of Government and Public Policy for Fall 2026, combining economics, law, political theory and data analysis with field exposure, a mandatory two-credit internship, and either a dissertation or additional electives in the final two quarters.",
+            "eligibility": {
+              "intro": "Entry requires a completed bachelor's degree in any discipline from a recognised university, assessed together with a closed-book examination and an interview.",
+              "items": [
+                "A bachelor's degree from a UGC-recognised university in India or abroad",
+                "No minimum work experience and no upper age limit",
+                "An Association of Indian Universities equivalency certificate for a degree awarded outside India",
+                "A pass in the closed-book admissions examination set by JSGP",
+                "A satisfactory faculty interview"
+              ]
+            },
+            "applicationSteps": [
+              "Register at admissions.jgu.edu.in and complete the JSGP postgraduate application.",
+              "Upload the bachelor's degree transcripts, or the record to date if the degree is still in progress.",
+              "Arrange the AIU equivalency certificate where the bachelor's degree was awarded outside India.",
+              "Sit the closed-book admissions examination set by the Jindal School of Government and Public Policy.",
+              "Attend the faculty interview that forms the second round of the process."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate, or a provisional certificate for final-year applicants",
+                "Complete bachelor's degree transcripts or marksheets",
+                "Association of Indian Universities (AIU) equivalency certificate for a bachelor's degree awarded outside India"
+              ],
+              "application": [
+                "Completed JSGP postgraduate application form",
+                "Personal statement",
+                "Curriculum vitae",
+                "Passport-size photograph",
+                "Passport copy for applicants educated or resident outside India"
+              ]
+            },
+            "deadlinesNote": "The programme begins in Fall 2026. The JGU Academic Calendar 2026-2027 sets Term 1 of the one-year master's structure from 3 August 2026 to 25 September 2026, with the final term ending on 20 June 2027.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 4,00,000 for the single year, residential charges INR 1,81,100 and allied service charges INR 1,24,900, plus a one-time refundable security deposit of INR 50,000 returned on completion or on a No Dues Certificate. Merit cum Means scholarships cover tuition only. JGU lists education-loan tie-ups with Avanse (ICICI), Dena Bank and Credila (HDFC).",
+          "teachingPhases": [
+            {
+              "phase": "One-year master's, four terms",
+              "language": "English",
+              "details": "The JGU Academic Calendar 2026-2027 divides the one-year master's structure into four terms: 3 August to 25 September 2026, 12 October to 4 December 2026, 1 February to 26 March 2027 and 12 April to 4 June 2027, with reading, revision and examination periods after each."
+            },
+            {
+              "phase": "Applied component",
+              "language": "English",
+              "details": "A mandatory two-credit internship runs during the academic year. In the final two quarters students take either a dissertation or additional electives, and those seeking more extensive applied work may opt for a six-month capstone project."
+            }
+          ]
+        },
+        {
+          "slug": "jgu-jsph-master-of-public-health",
+          "canonicalCourseSlug": "mph",
+          "officialTitle": "Master of Public Health, Jindal School of Public Health and Human Development",
+          "durationYears": 1,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 350000,
+            "officialTotalTuitionAmount": 350000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The MPH is the one non-residential programme in this set, so JGU publishes no residential or allied service charge against it: tuition of INR 3,50,000 for the single year plus a one-time refundable security deposit of INR 50,000. That makes it the cheapest published route into JGU in this catalogue, but it also means housing and living costs are not covered by the university fee and are arranged separately by the student."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jsph/admissions/masters-of-public-health",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Graduates of any recognised university in any undergraduate discipline",
+              "Final-year bachelor's students, subject to completing the degree",
+              "Holders of a foreign medical degree who have not qualified through the FMGE"
+            ],
+            "restrictions": [
+              "A bachelor's degree from a recognised university is required regardless of the undergraduate major",
+              "A bachelor's degree awarded outside India must be supported by an Association of Indian Universities equivalency certificate",
+              "Final-year applicants receive admission conditional on successful completion of the bachelor's degree",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "JGU states that holders of a foreign medical degree who have not qualified through the Foreign Medical Graduate Examination are encouraged to apply. This is a public health degree and does not confer any Indian medical registration or licence to practise.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jsph/admissions/masters-of-public-health"
+          },
+          "admissionsContent": {
+            "overview": "A one-year non-residential Master of Public Health at the Jindal School of Public Health and Human Development, built on core courses in epidemiology and biostatistics, health systems and public health nutrition, plus electives, an internship, and a dissertation, capstone project or community service learning project.",
+            "eligibility": {
+              "intro": "Any bachelor's degree from a recognised university qualifies, whatever the undergraduate subject, with final-year students admitted conditionally.",
+              "items": [
+                "A bachelor's degree from any recognised university, in any undergraduate discipline",
+                "Final-year students may apply, with admission subject to successful completion of the degree",
+                "An Association of Indian Universities equivalency certificate for a bachelor's degree awarded outside India",
+                "Holders of a foreign medical degree who have not qualified through the FMGE are expressly invited to apply"
+              ]
+            },
+            "applicationSteps": [
+              "Register at admissions.jgu.edu.in and complete the JSPH postgraduate application with a personal statement.",
+              "Upload bachelor's degree transcripts, or the record to date for final-year applicants.",
+              "Arrange the AIU equivalency certificate where the degree was awarded outside India.",
+              "Sit the online entrance test, or submit the score of a listed national or international entrance test.",
+              "Attend the personal interview, which is conducted online."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate, or a provisional certificate for final-year applicants",
+                "Complete bachelor's degree transcripts or marksheets",
+                "Association of Indian Universities (AIU) equivalency certificate for a bachelor's degree awarded outside India"
+              ],
+              "application": [
+                "Completed JSPH postgraduate application form",
+                "Personal statement",
+                "Entrance test score or registration number where a listed test is used",
+                "Passport-size photograph",
+                "Passport copy for applicants educated or resident outside India"
+              ]
+            },
+            "deadlinesNote": "The MPH runs on its own calendar. The JGU Academic Calendar 2026-2027 sets JSPH Term 1 from 4 September 2026 to 25 October 2026, a winter and internship break from 21 December 2026 to 7 January 2027, and Term 4 ending on 20 June 2027.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus.",
+              "This programme is non-residential, so a study-visa applicant must be able to evidence an address in India for e-FRRO registration."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 3,50,000 for the single year plus a one-time refundable security deposit of INR 50,000, refunded on completion of studies or on a No Dues Certificate and carrying no interest. JGU publishes no residential or allied service charge for this programme because it is non-residential, so accommodation and daily living costs sit outside the university fee.",
+          "teachingPhases": [
+            {
+              "phase": "Terms 1 and 2 - core public health",
+              "language": "English",
+              "details": "Foundations in Public Health and Human Development covering history, principles and practice of public health and human rights and health, followed by epidemiology and biostatistics, health systems, public health nutrition, management for health, social, behavioural and structural determinants of health, and research methods in public health."
+            },
+            {
+              "phase": "Terms 3 and 4 - electives and applied work",
+              "language": "English",
+              "details": "Electives are grouped under six specialisations including human rights and human development, the right to health in law and practice, the role of civil society in healthcare delivery, and political economy and global health. The final term is given to a dissertation, capstone project or community service learning project, alongside an internship."
+            }
+          ]
+        },
+        {
+          "slug": "jgu-jgbs-full-time-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Full-Time MBA Programme, Jindal Global Business School",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 700000,
+            "verifiedAt": "2026-08-22",
+            "notes": "Tuition is INR 7,00,000 a year, the highest of the JGU programmes in this catalogue. Accommodation charges add INR 2,31,100 a year and other allied service charges INR 1,24,900 a year, giving a residential year of INR 10,56,000 before the one-time refundable security deposit of INR 50,000. A separate registration fee of INR 1,05,000 is payable to secure a seat once a provisional offer is made. Tuition, accommodation and allied service charges are each subject to an annual increase of up to ten percent, so the second year costs more than the first."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jgbs/admissions/full-time-mba-programme",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Graduates of a recognised university in any discipline with at least 50 per cent",
+              "Applicants graduating in 2026",
+              "Holders of a GMAT, GRE, CAT, XAT, MAT, CMAT, NMAT or ATMA result at or above the published threshold"
+            ],
+            "restrictions": [
+              "A graduation degree with a minimum of 50 per cent from a recognised university is required",
+              "An entrance test result is mandatory: CAT, MAT, XAT, CMAT or ATMA at 50 percentile or above, GRE 295 or above, GMAT 450 or above, or NMAT 160 or above",
+              "A registration fee of INR 1,05,000 must be paid to secure a seat after a provisional offer, and applications lapse if the applicant does not respond within the stated window",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "The GMAT and GRE thresholds are the practical route for applicants outside India, since CAT, XAT, MAT, CMAT and ATMA are Indian national tests. JGU applies the same fee to Indian, NRI and international students.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jgbs/admissions/full-time-mba-programme"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, full-time MBA at Jindal Global Business School spanning four semesters and 103 credits, with specialisations in Finance, Marketing, Operations, Human Resource Management, and Information Systems and Analytics, and internships placed in the summer and winter vacations.",
+            "eligibility": {
+              "intro": "Entry requires a completed bachelor's degree with at least 50 per cent plus a qualifying management or graduate admissions test score, followed by a faculty interview.",
+              "items": [
+                "A graduation degree with a minimum of 50 per cent from a recognised university",
+                "Applicants graduating in 2026 may apply and submit the second-year marksheet in place of final results",
+                "GMAT at 450 or above, or GRE at 295 or above, for applicants testing outside the Indian national system",
+                "CAT, MAT, XAT, CMAT or ATMA at the 50th percentile or above, or NMAT at 160 or above",
+                "An Association of Indian Universities equivalency certificate for a bachelor's degree awarded outside India"
+              ]
+            },
+            "applicationSteps": [
+              "Register at admissions.jgu.edu.in with an active email address; login details are sent to that address after verification.",
+              "Complete both the mandatory and non-mandatory sections of the application, since the optional sections feed the evaluation.",
+              "Upload Class 10 and Class 12 scores, graduation scores or the second-year marksheet, the entrance test score or registration number, and a 2cm by 2cm front-facing photograph on a neutral background.",
+              "Pay the application fee and submit; an Online Application Number is issued for all later correspondence.",
+              "Attend the round-two interview with a panel of JGBS faculty, assessed on academics, entrance score and the interview.",
+              "On a provisional offer, pay the INR 1,05,000 registration fee within the stated window to secure the seat."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate, or a provisional certificate for final-year applicants",
+                "Complete bachelor's degree transcripts or marksheets",
+                "Association of Indian Universities (AIU) equivalency certificate for a bachelor's degree awarded outside India",
+                "Class 10 board scores or the equivalent",
+                "Class 12 board scores or the equivalent",
+                "Second-year bachelor's marksheet where final results are awaited"
+              ],
+              "application": [
+                "Entrance examination scorecard, percentile or registration number",
+                "Passport-size photograph, 2cm by 2cm, front-facing on a neutral background",
+                "Extra-curricular certificates supporting the activities listed",
+                "Letters of recommendation, where held",
+                "Work experience documentation, where held",
+                "Passport copy for applicants educated or resident outside India"
+              ]
+            },
+            "deadlinesNote": "JGBS states that online postgraduate admissions for the 2026 academic year are open. The JGU Academic Calendar 2026-2027 places the start of Fall Semester A classes on 3 August 2026 for Jindal Global Business School.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 7,00,000 a year, accommodation INR 2,31,100 a year and allied service charges INR 1,24,900 a year, each rising by up to ten percent annually, plus a one-time refundable security deposit of INR 50,000 and a INR 1,05,000 registration fee due on accepting a provisional offer. JGU applies UGC guidelines to refunds. Merit cum Means scholarships cover tuition only and are notified separately by email.",
+          "teachingPhases": [
+            {
+              "phase": "Year 1 - core management",
+              "language": "English",
+              "details": "Accounting for managers, financial management, microeconomics, macroeconomics, marketing management, business statistics, organisational behaviour and operations management."
+            },
+            {
+              "phase": "Year 2 - core plus specialisation",
+              "language": "English",
+              "details": "Strategic management, legal aspects of business, international business, and blockchain and AI for business, with electives such as brand management, investment banking, supply chain management and digital marketing. Specialisations are Finance, Marketing, Operations, Human Resource Management, and Information Systems and Analytics."
+            },
+            {
+              "phase": "Internships",
+              "language": "English",
+              "details": "Internships are placed in the summer and winter vacations. JGBS lists internship hosts including Tata Motors, Tech Mahindra, Reliance Retail, ICICI Prudential, HDFC Bank and social-impact placements at CRY (Child Rights and You), the Dinabandhu Help Foundation and the SRF Foundation."
+            }
+          ]
+        },
+        {
+          "slug": "jgu-jgls-bba-llb-hons",
+          "canonicalCourseSlug": "llb",
+          "officialTitle": "BBA LL.B. (Hons.), Jindal Global Law School",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 700000,
+            "verifiedAt": "2026-08-22",
+            "notes": "Tuition is INR 7,00,000 a year. The law degrees carry their own residential rates, higher than the rest of the university: accommodation charges of INR 2,32,000 a year and other allied service charges of INR 1,48,900 a year covering food, laundry, security, housekeeping and electricity, giving a residential year of INR 10,80,900 before the one-time refundable security deposit of INR 50,000. Tuition, accommodation and allied service charges are each subject to an annual increase of ten percent, which compounds materially over a five-year degree. JGU applies the same schedule to Indian, NRI and international applicants and publishes no separate foreign-national rate. Merit-cum-means scholarships at Jindal Global Law School are awarded to students qualifying through LNAT-UK, subject to the parental income tax return criteria the university defines."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jgls/admissions/bba-llbhons",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants holding a passport of any country",
+              "Non-Resident Indians and Overseas Citizens of India",
+              "Indian nationals educated in India or abroad"
+            ],
+            "restrictions": [
+              "A minimum of 45 per cent marks at 10+2 or equivalent from a recognised board is required",
+              "Admission rests on the LNAT-UK; Jindal Global Law School does not accept any other law school admissions test, including CLAT and the JSAT",
+              "International Baccalaureate applicants must hold the IB Diploma; IB Certificate holders are not eligible for any JGU undergraduate course",
+              "The Bar Council of India approval covering this course runs to the 2026-27 academic year and is renewed on an annual BCI cycle",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "This is an Indian first law degree from a Bar Council of India approved Centre of Legal Education. What it permits after graduation is set by the regulator of whichever jurisdiction the graduate wants to practise in, not by the university, and rules differ sharply between countries.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jgls/admissions/bba-llbhons"
+          },
+          "admissionsContent": {
+            "overview": "A five-year integrated honours degree at Jindal Global Law School requiring at least 210 credits, blending business administration and management subjects with law with twenty-eight compulsory law courses, four compulsory clinical courses and five compulsory internships. Jindal Global Law School has run this programme since 2013.",
+            "eligibility": {
+              "intro": "Entry is direct from school on a 45 per cent minimum at 10+2, decided on the LNAT-UK. Jindal Global Law School accepts no other law admissions test, so the LNAT is not optional.",
+              "items": [
+                "Completion of 10+2 or an equivalent examination with a minimum of 45 per cent marks",
+                "A recognised board: CBSE, ISC, a State Board, IB, Cambridge or another government-recognised board",
+                "An LNAT-UK result; Jindal Global Law School states that it does not accept any other law school admissions test",
+                "Twelve years of education recognised in the applicant's own country for applicants schooled outside India",
+                "An IB Diploma, not an IB Certificate, where the applicant followed an International Baccalaureate programme",
+                "A grading conversion sheet or normalisation scale where the board does not use Indian grading"
+              ]
+            },
+            "applicationSteps": [
+              "Register for the LNAT-UK at lnat.ac.uk and sit it at any of the 500-plus test centres across 165 countries.",
+              "Complete the Jindal Global Law School undergraduate law application through the JGU law admissions portal.",
+              "Submit Class 10 and Class 12 results evidencing the 45 per cent minimum, with a grading conversion sheet where the board is not Indian.",
+              "Release or submit the LNAT-UK score, on which the admission decision is based.",
+              "Apply separately for the merit-cum-means scholarship if wanted, which requires parental income tax return documentation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 board marksheet or the equivalent school record",
+                "Class 12 board marksheet or the equivalent school-leaving certificate",
+                "Proof of 12 years of schooling recognised in the applicant's own country",
+                "IB Diploma results where the applicant studied an International Baccalaureate programme",
+                "Cambridge A-Level or IGCSE certificates showing the required credit load",
+                "A grading conversion sheet or normalisation scale from the school or board where the grading system is not Indian"
+              ],
+              "application": [
+                "LNAT-UK score report",
+                "Completed Jindal Global Law School undergraduate application",
+                "Passport-size photograph",
+                "Passport copy for applicants schooled or resident outside India",
+                "Parental income tax return documentation, where a merit-cum-means scholarship is sought"
+              ]
+            },
+            "deadlinesNote": "One annual entry point: the JGU Academic Calendar 2026-2027 starts Fall Semester A classes on 3 August 2026 for Jindal Global Law School. The LNAT-UK is booked separately from the JGU application and can be sat at over 500 test centres in 165 countries.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 7,00,000 a year, accommodation INR 2,32,000 a year and allied service charges INR 1,48,900 a year, each rising by ten percent annually, plus a one-time refundable security deposit of INR 50,000 returned on completion or on a No Dues Certificate. Because the increase compounds across five years, the final year costs substantially more than the first. Merit-cum-means scholarships go to students qualifying through LNAT-UK, subject to parental income tax return criteria.",
+          "teachingPhases": [
+            {
+              "phase": "Credit structure (students enrolled from 2025-26 onwards)",
+              "language": "English",
+              "details": "210 credits in total: two English courses (8 credits), ten compulsory arts and humanities courses (40 credits), arts and humanities electives (8 credits), twenty-eight compulsory law courses (112 credits), law electives (16 credits), four compulsory clinical courses (16 credits) and five compulsory internships (10 credits). Credits from permitted co-curricular activity count towards the total."
+            },
+            {
+              "phase": "Years 1 to 3 - foundations and core law",
+              "language": "English",
+              "details": "Legal Methods, English, Political Science, Sociology, History, Economics, Psychology and Gender, Caste and Society alongside Law of Torts, Law of Contracts I and II, Family Law I and II, Constitutional Law I and II, Property Law, Company Law I and II, Jurisprudence I and II, Civil Procedure, Administrative Law, Alternate Dispute Resolution and Public International Law. Criminal law courses follow the Bharatiya Nyaya Sanhita, Bharatiya Nagarik Suraksha Sanhita and Bharatiya Sakshya Adhiniyam."
+            },
+            {
+              "phase": "Clinical work and internships",
+              "language": "English",
+              "details": "Four compulsory clinical courses plus five compulsory internships, including at least one under Trial and Appellate Advocates, with Moot Court Exercise and Internship carrying credit in multiple semesters. Internship routes named for this programme include corporate teams, law firms, start-ups, advisory and legal consultancies, chartered accountancy, company secretary and CFA firms, international law firms and international organisations."
+            }
+          ]
+        },
+        {
+          "slug": "jgu-jgls-bcom-llb-hons",
+          "canonicalCourseSlug": "llb",
+          "officialTitle": "B.Com. LL.B. (Hons.), Jindal Global Law School",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 700000,
+            "verifiedAt": "2026-08-22",
+            "notes": "Tuition is INR 7,00,000 a year. The law degrees carry their own residential rates, higher than the rest of the university: accommodation charges of INR 2,32,000 a year and other allied service charges of INR 1,48,900 a year covering food, laundry, security, housekeeping and electricity, giving a residential year of INR 10,80,900 before the one-time refundable security deposit of INR 50,000. Tuition, accommodation and allied service charges are each subject to an annual increase of ten percent, which compounds materially over a five-year degree. JGU applies the same schedule to Indian, NRI and international applicants and publishes no separate foreign-national rate. Merit-cum-means scholarships at Jindal Global Law School are awarded to students qualifying through LNAT-UK, subject to the parental income tax return criteria the university defines."
+          },
+          "officialProgramUrl": "https://jgu.edu.in/jgls/admissions/b-com-llbhons",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants holding a passport of any country",
+              "Non-Resident Indians and Overseas Citizens of India",
+              "Indian nationals educated in India or abroad"
+            ],
+            "restrictions": [
+              "A minimum of 45 per cent marks at 10+2 or equivalent from a recognised board is required",
+              "Admission rests on the LNAT-UK; Jindal Global Law School does not accept any other law school admissions test, including CLAT and the JSAT",
+              "International Baccalaureate applicants must hold the IB Diploma; IB Certificate holders are not eligible for any JGU undergraduate course",
+              "The Bar Council of India approval covering this course runs to the 2026-27 academic year and is renewed on an annual BCI cycle",
+              "Admission is strictly on merit: JGU publishes that it operates no NRI or Foreign National quota and no management, donation or capitation seats"
+            ],
+            "notes": "This is an Indian first law degree from a Bar Council of India approved Centre of Legal Education. What it permits after graduation is set by the regulator of whichever jurisdiction the graduate wants to practise in, not by the university, and rules differ sharply between countries.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://jgu.edu.in/jgls/admissions/b-com-llbhons"
+          },
+          "admissionsContent": {
+            "overview": "A five-year integrated honours degree at Jindal Global Law School requiring at least 210 credits, blending accounting and commerce subjects with law with twenty-eight compulsory law courses, four compulsory clinical courses and five compulsory internships. Jindal Global Law School has run this programme since 2021.",
+            "eligibility": {
+              "intro": "Entry is direct from school on a 45 per cent minimum at 10+2, decided on the LNAT-UK. Jindal Global Law School accepts no other law admissions test, so the LNAT is not optional.",
+              "items": [
+                "Completion of 10+2 or an equivalent examination with a minimum of 45 per cent marks",
+                "A recognised board: CBSE, ISC, a State Board, IB, Cambridge or another government-recognised board",
+                "An LNAT-UK result; Jindal Global Law School states that it does not accept any other law school admissions test",
+                "Twelve years of education recognised in the applicant's own country for applicants schooled outside India",
+                "An IB Diploma, not an IB Certificate, where the applicant followed an International Baccalaureate programme",
+                "A grading conversion sheet or normalisation scale where the board does not use Indian grading"
+              ]
+            },
+            "applicationSteps": [
+              "Register for the LNAT-UK at lnat.ac.uk and sit it at any of the 500-plus test centres across 165 countries.",
+              "Complete the Jindal Global Law School undergraduate law application through the JGU law admissions portal.",
+              "Submit Class 10 and Class 12 results evidencing the 45 per cent minimum, with a grading conversion sheet where the board is not Indian.",
+              "Release or submit the LNAT-UK score, on which the admission decision is based.",
+              "Apply separately for the merit-cum-means scholarship if wanted, which requires parental income tax return documentation."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 board marksheet or the equivalent school record",
+                "Class 12 board marksheet or the equivalent school-leaving certificate",
+                "Proof of 12 years of schooling recognised in the applicant's own country",
+                "IB Diploma results where the applicant studied an International Baccalaureate programme",
+                "Cambridge A-Level or IGCSE certificates showing the required credit load",
+                "A grading conversion sheet or normalisation scale from the school or board where the grading system is not Indian"
+              ],
+              "application": [
+                "LNAT-UK score report",
+                "Completed Jindal Global Law School undergraduate application",
+                "Passport-size photograph",
+                "Passport copy for applicants schooled or resident outside India",
+                "Parental income tax return documentation, where a merit-cum-means scholarship is sought"
+              ]
+            },
+            "deadlinesNote": "One annual entry point: the JGU Academic Calendar 2026-2027 starts Fall Semester A classes on 3 August 2026 for Jindal Global Law School. The LNAT-UK is booked separately from the JGU application and can be sat at over 500 test centres in 165 countries.",
+            "visaConsiderations": [
+              "A study visa naming O.P. Jindal Global University is mandatory; JGU does not permit study or registration on any other visa category.",
+              "The study visa must be valid from the date of programme registration until after the study end date, and JGU advises applying up to three months ahead.",
+              "Registration through the e-FRRO portal must be completed within 14 days of arrival in India.",
+              "The bonafide letter and residence proof needed for e-FRRO are issued by the Office of International Affairs and Global Initiatives and must be collected within three days of arriving on campus."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Tuition INR 7,00,000 a year, accommodation INR 2,32,000 a year and allied service charges INR 1,48,900 a year, each rising by ten percent annually, plus a one-time refundable security deposit of INR 50,000 returned on completion or on a No Dues Certificate. Because the increase compounds across five years, the final year costs substantially more than the first. Merit-cum-means scholarships go to students qualifying through LNAT-UK, subject to parental income tax return criteria.",
+          "teachingPhases": [
+            {
+              "phase": "Credit structure (students enrolled from 2025-26 onwards)",
+              "language": "English",
+              "details": "210 credits in total: two English courses (8 credits), ten compulsory arts and humanities courses (40 credits), arts and humanities electives (8 credits), twenty-eight compulsory law courses (112 credits), law electives (16 credits), four compulsory clinical courses (16 credits) and five compulsory internships (10 credits). Credits from permitted co-curricular activity count towards the total."
+            },
+            {
+              "phase": "Years 1 to 3 - foundations and core law",
+              "language": "English",
+              "details": "Legal Methods, English, Political Science, Sociology, History, Economics, Psychology and Gender, Caste and Society alongside Law of Torts, Law of Contracts I and II, Family Law I and II, Constitutional Law I and II, Property Law, Company Law I and II, Jurisprudence I and II, Civil Procedure, Administrative Law, Alternate Dispute Resolution and Public International Law. Criminal law courses follow the Bharatiya Nyaya Sanhita, Bharatiya Nagarik Suraksha Sanhita and Bharatiya Sakshya Adhiniyam."
+            },
+            {
+              "phase": "Clinical work and internships",
+              "language": "English",
+              "details": "Four compulsory clinical courses plus five compulsory internships, including at least one under Trial and Appellate Advocates, with Moot Court Exercise and Internship carrying credit in multiple semesters. Internship routes named for this programme include corporate taxation, law firms, start-ups, advisory and legal consultancy, capital markets and finance, auditing and accounting firms, international law firms and international organisations."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "identity",
+      "claimText": "O.P. Jindal Global University, Sonipat, appears on the UGC state-wise list of private universities under Haryana with a notification date of 10.11.2006.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Confirms JGU's current regulatory identity as a Haryana state private university rather than a deemed-to-be university."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "establishedYear",
+      "claimText": "O.P. Jindal Global University is a non-profit university established in 2009 by the Haryana Private Universities (Amendment) Ordinance, 2009 under the Haryana Private Universities Act, 2006, with its registered office at Sonipat Narela Road, Near Jagdishpur Village, Sonipat 131001, Haryana.",
+      "status": "verified",
+      "sourceLabel": "UGC Expert Committee report on the on-the-spot inspection of O.P. Jindal Global University, Sonepat",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/privateuni/opjindalsonepat.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The Ordinance was later enacted as the Haryana Private Universities (Second Amendment) Act, 2009. Corroborated by JGU's own founding statement."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The University Grants Commission lists O.P. Jindal Global University, Sonipat among the private universities of Haryana.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognitionBadges",
+      "claimText": "JGU was established under the Haryana Private Universities Act, 2006 by a Government of Haryana notification, and was inspected by a UGC Expert Committee under the UGC (Establishment of and Maintenance of Standards in Private Universities) Regulations, 2003.",
+      "status": "verified",
+      "sourceLabel": "UGC Expert Committee report on O.P. Jindal Global University, Sonepat",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/privateuni/opjindalsonepat.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The UGC Institution of Eminence portal lists O P Jindal Global University in Table 2, IoE Private Institutions, with a Date of Notification of 04.11.2020. The list carries twelve institutions in total, eight public and four private.",
+      "status": "verified",
+      "sourceLabel": "UGC Institution of Eminence portal - List of IoE",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified directly by this agent: ioe.ugc.ac.in/Home/ListofIOE is server-rendered and the row was read from the fetched HTML. Independently reported by the regulator verification pass in research/india-regulator-verification-2026-08-22.md. This supersedes the PIB release of September 2019 (PRID 1584239), which recorded only a letter to the State Government; the notification followed on 4 November 2020. A Letter of Intent is a pre-notification step and is never publishable as IoE status; JGU has an actual notification, not a Letter of Intent."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The Bar Council of India approved list of Centres of Legal Education records 'Jindal Global Law School, O. P. Jindal Global University, Sonipat' under Haryana, with the five-year B.Com. LL.B. (Hons.) at an approved strength of 120 and the five-year BBA LL.B. (Hons.) at an approved strength of 180, each approved up to the 2026-27 academic year.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - Approved List of CLEs (Law Colleges / Universities), reached from the recognised universities and colleges page",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Source is the 106-page BCI approved-CLE PDF uploaded 2026-08-20, reached via the /info/recognised-universities-colleges route and its feed API; the S3 link is signed and expires in one hour, so the page is cited rather than the file. Read by the regulator verification pass recorded in research/india-regulator-verification-2026-08-22.md. NOTE: the verification report's own extract for JGU lists only B.Com. LL.B. (Hons.) and BBA LL.B. (Hons.); B.A. LL.B. (Hons.) does not appear in the recorded rows, so only the two listed courses are packaged."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The ten JGU LL.M. streams carry no Bar Council of India approval because BCI does not accredit LL.M. programmes at all: the string 'LL.M' occurs once across the 106 pages of the BCI approved-CLE list, and BCI approval of a Centre of Legal Education is granted per undergraduate law course.",
+      "status": "omit",
+      "sourceLabel": "Bar Council of India - Approved List of CLEs (Law Colleges / Universities)",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "CATEGORY ERROR, NOT A MISSING SOURCE. Do not re-open this as an evidence gap: there is no BCI approval to find for an LL.M. anywhere in India, so no amount of further searching would produce one. The LL.M. streams are excluded from this migration because no regulator badge exists for them, and packaging them would invite an inferred approval that does not exist. Recorded per the regulator verification pass in research/india-regulator-verification-2026-08-22.md."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognitionBadges",
+      "claimText": "O.P. Jindal Global University does not appear on the NAAC list of institutions with valid accreditation as on 14-08-2025. The only similarly named entry is 'O.P. Jindal University, Raigarh, Chhattisgarh' (AISHE U-0832, CGPA 3.14, Grade A, declared 30-05-2024), which is a different institution.",
+      "status": "omit",
+      "sourceLabel": "NAAC - Accreditation Status, Institutions with valid accreditation as on 14-08-2025",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "HELD, and now held on a positive negative finding rather than an unreachable portal. The regulator verification pass in research/india-regulator-verification-2026-08-22.md searched the NAAC valid-accreditation workbook and all 1,537 Standing Committee result PDFs through the 265th SC of 12 December 2025. JGU's own 2016 'A' grade assertion is outside the five-year validity window and is not carried by the regulator. No NAAC claim appears in any public field."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "summary",
+      "claimText": "JGU has 16,000+ students, 1,100+ full-time faculty members and 2,900+ administrative staff on a fully residential campus, with twelve schools covering Law, Business and Management, International Affairs, Public Policy, Liberal Arts and Humanities, Journalism, Art and Architecture, Banking and Finance, Environment and Sustainability, Psychology and Counselling, Languages and Literature, and Public Health and Human Development.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "internalNotes": "Corroborated by the Office of International Affairs and Global Initiatives profile page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "campusLifestyle",
+      "claimText": "JGU draws full-time faculty from 50+ countries and students from 75+ countries, and has collaborated with 525+ institutions in 80+ countries.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "internalNotes": "The IAGI page quotes higher figures (80+ countries, 575+ institutions). The Student Handbook figures were preferred as the more formally published set."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The Global Library's physical facility spans 15,000 square feet, accommodates over 650 users at a time, and more than 60% of its areas are accessible 24/7. JGU also lists the Vidya Devi Jindal dining block over seven floors with a capacity of 7,000 people, RASA and SAMA student activity spaces, a Film and Television Studio and Multimedia Lab, and 50 bookable conference and breakout rooms.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "cityProfile",
+      "claimText": "Sonipat district borders the states of Delhi and Uttar Pradesh and the districts of Rohtak, Jind and Panipat; the district covers 2,260 sq km and the River Yamuna runs along its eastern boundary.",
+      "status": "verified",
+      "sourceLabel": "District Sonipat, Government of Haryana - About District",
+      "sourceUrl": "https://sonipat.gov.in/about-district/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "cityProfile",
+      "claimText": "The original Grand Trunk Road passed through what is now the JGU campus, and a kos minar milestone built in the time of Jehangir and Sher Shah Suri stands near a campus gate adjacent to the student housing block. Rakhigarhi in Haryana's Hisar district is the largest known Harappan excavation.",
+      "status": "verified",
+      "sourceLabel": "JGU Office of International Affairs and Global Initiatives - About Sonipat and India",
+      "sourceUrl": "https://jgu.edu.in/internationaloffice/about-sonipat-and-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "hostelOverview",
+      "claimText": "Student accommodation at JGU is on a three- and four-people sharing basis; there is no single occupancy available. Accommodation and other allied services charges are the same across all JGU programmes and are subject to an annual increase of up to ten percent.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "dietarySupport",
+      "claimText": "JGU has contracted Sodexo for catering and housekeeping. All JGU dining halls serve vegetarian food, with eggs in certain meals; non-vegetarian food is available on payment at other outlets on campus. Named campus outlets in the T6 food court include Subway, Oki Poki, Millets & More, Bikanervala and Dunkin', open 11:00 to 01:00.",
+      "status": "verified",
+      "sourceLabel": "JGU - Food and Dining",
+      "sourceUrl": "https://jgu.edu.in/food-and-dining",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The vegetarian-only dining-hall rule is separately stated in the JGU Student Handbook 2025-26."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "safetyOverview",
+      "claimText": "The JGU Health Centre has been expanded with a dedicated Emergency Ward and operates a 24/7 helpline with a resident medical officer on duty, an Emergency Response Coordination Centre, and campus-stationed Advanced Cardiac Life Support and Basic Life Support ambulances, with a published escalation matrix rising to the Chief Medical Superintendent.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "studentSupport",
+      "claimText": "Sukoon On Campus provides 24x7 mental-health support, confidential one-to-one therapy sessions and a helpline. JGU also operates an Anti-Ragging Committee, the Committee on Gender Sensitisation Against Sexual Harassment (COGSASH), a Committee on Disability Issues, a Grievance Redressal Committee and an Anti-Discrimination Committee. The English Language Centre, established in 2012, supports international students across reading, writing, listening and speaking.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "practicalExposure",
+      "claimText": "The Office of Career Services and the Office of Career and Professional Development provide career counselling, resume and cover letter workshops, interview skills training, networking events and placement assistance. JGBS lists recruiters including Deloitte, KPMG, PwC, Accenture, ICICI Bank, American Express, Rolls-Royce, Tata Consultancy Services, Wipro, HCL and Infosys, and internship hosts including Tata Motors, Tech Mahindra, Reliance Retail, CRY (Child Rights and You) and the SRF Foundation.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "practicalExposure",
+      "claimText": "JSGP names UNDP, the World Health Organisation in Geneva, NITI Aayog, the Centre for Policy Research, Observer Research Foundation, Pratham and Teach for India among the organisations its M.A. Public Policy alumni have joined.",
+      "status": "verified",
+      "sourceLabel": "JGU - M.A. Public Policy, Jindal School of Government and Public Policy",
+      "sourceUrl": "https://jgu.edu.in/jsgp/admissions/ma-public-policy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "thingsToConsider",
+      "claimText": "The JGU Academic Calendar 2026-2027 shows Fall Semester (A) 2026 classes beginning on 3 August 2026 across every school, and a Semester B running from January 2027 as a continuation rather than a separate entry point.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "thingsToConsider",
+      "claimText": "JGU states that it has no management quota, no donation or capitation seats, no NRI or Foreign National quota and no special quota of any kind, that admission is strictly on merit, and that it does not appoint or authorise any agent, intermediary or consultant for admissions.",
+      "status": "verified",
+      "sourceLabel": "JGU - Important Advisory for Students and Parents (published on every programme admissions page)",
+      "sourceUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "faq",
+      "claimText": "The medium of instruction and assessment at the University is English, unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "faq",
+      "claimText": "JGU awards Merit cum Means (MCM) scholarships every year covering tuition fee only; eligibility is assessed on annual family income, board or graduation score, JSAT or standardised examination results and faculty interview score, with weight given to curricular and non-curricular achievement. Applications open by 1 June for the JSLH programme and awards are made in July.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) in Liberal Arts and Humanities, scholarships section",
+      "sourceUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The JSIA page states scholarship applications open by April; the window differs by school, so no single date is published in public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "faq",
+      "claimText": "Students travelling on any visa other than a study visa to India are not eligible to study or register at JGU. The visa must state that it is for studying at O.P. Jindal Global University and must be valid from the date of programme registration until after the end date of study. JGU warns that student visa application processes can take up to three months or longer.",
+      "status": "verified",
+      "sourceLabel": "JGU Office of International Affairs and Global Initiatives - Visas and Immigration",
+      "sourceUrl": "https://jgu.edu.in/internationaloffice/visas-and-immigration",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "faq",
+      "claimText": "All foreigners requiring registration, visa extension, visa conversion or an exit permit must apply through e-FRRO within 14 days of arrival in India. International students at JGU are issued a student form ID, a bonafide letter and residence proof, which must be collected within three days of arriving on campus before the e-FRRO process is started.",
+      "status": "verified",
+      "sourceLabel": "JGU Office of International Affairs and Global Initiatives - International Office FAQ",
+      "sourceUrl": "https://jgu.edu.in/internationaloffice/faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "Applicants to the B.A. (Hons.) Liberal Arts and Humanities must have completed 10+2 or its equivalent in humanities, science or commerce with a minimum aggregate of 60 per cent from CBSE, ISC, State Boards, IB, Cambridge, NIOS or other recognised boards. Students with a gap year are eligible.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) in Liberal Arts and Humanities, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jslh-ba-hons-liberal-arts-humanities"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "For IB applicants JGU requires a diploma and for Cambridge a minimum of 24 credits; JGU accepts IB Diploma and IBCP candidates only and states that IB Certificate holders are not eligible to apply to any undergraduate course at JGU.",
+      "status": "verified",
+      "sourceLabel": "JGU - View All Programme Requirements",
+      "sourceUrl": "https://jgu.edu.in/view-all-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jslh-ba-hons-liberal-arts-humanities"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "Candidates are evaluated on their personal statement, supplemental questions, Class 10 and Class 12 marks, a faculty interview, and an at-par JSAT, SAT or ACT score.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) in Liberal Arts and Humanities, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jslh-ba-hons-liberal-arts-humanities"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "The JGU Academic Calendar 2026-2027 records Fall Semester (A) 2026 classes beginning on 3 August 2026 at the Jindal School of Liberal Arts and Humanities.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jslh-ba-hons-liberal-arts-humanities"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the B.A. (Hons.) Liberal Arts and Humanities is INR 6,00,000 per annum, with residential charges of INR 2,31,100 per annum, other allied service charges of INR 1,24,900 per annum and a one-time refundable security deposit of INR 50,000. All three recurring charges are subject to an annual increase of ten percent.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) in Liberal Arts and Humanities, fee section",
+      "sourceUrl": "https://jgu.edu.in/jslh/admissions/bahons-in-liberal-arts-humanities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jslh-ba-hons-liberal-arts-humanities"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jslh-ba-hons-liberal-arts-humanities"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "The eligibility requirement for the B.A. (Hons.) Political Science programme at JSIA is successful completion of the Class XII examination or an equivalent qualification recognised by the government, such as CBSE, State Boards, IB or Cambridge.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) Political Science, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jsia/admissions/ba-hons-political-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsia-ba-hons-political-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "For IB applicants a diploma is required and for Cambridge a minimum of 24 credits is mandatory; IB Certificate holders are not eligible for any JGU undergraduate course.",
+      "status": "verified",
+      "sourceLabel": "JGU - View All Programme Requirements",
+      "sourceUrl": "https://jgu.edu.in/view-all-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsia-ba-hons-political-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "Candidates are selected through a three-round admissions process comprising a personal statement, a supplemental question, Class 10 and Class 12 marks, a faculty interview and a JSAT, SAT or ACT score that meets the published requirement.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) Political Science, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jsia/admissions/ba-hons-political-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsia-ba-hons-political-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "The JGU Academic Calendar 2026-2027 records Fall Semester (A) 2026 classes beginning on 3 August 2026 at the Jindal School of International Affairs.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsia-ba-hons-political-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the B.A. (Hons.) Political Science is INR 3,50,000 per annum, with residential charges of INR 2,31,100 per annum, other allied service charges of INR 1,24,900 per annum and a one-time refundable security deposit of INR 50,000, each recurring charge subject to an annual increase of ten percent.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.A. (Hons.) Political Science, fee section",
+      "sourceUrl": "https://jgu.edu.in/jsia/admissions/ba-hons-political-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsia-ba-hons-political-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jsia-ba-hons-political-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "To be eligible for the M.A. Public Policy programme at the Jindal School of Government and Public Policy, applicants must have a bachelor's degree from a UGC-recognised university in India or abroad; there is no work experience requirement and no age limit.",
+      "status": "verified",
+      "sourceLabel": "JGU - M.A. Public Policy, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jsgp/admissions/ma-public-policy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsgp-ma-public-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "JGU requires students holding an international bachelor's degree to submit an equivalency certificate from the Association of Indian Universities when applying to its postgraduate programmes.",
+      "status": "verified",
+      "sourceLabel": "JGU - View All Programme Requirements",
+      "sourceUrl": "https://jgu.edu.in/view-all-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsgp-ma-public-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "Selection for the M.A. Public Policy is through a two-round admissions process consisting of a closed-book examination followed by a faculty interview.",
+      "status": "verified",
+      "sourceLabel": "JGU - M.A. Public Policy, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jsgp/admissions/ma-public-policy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsgp-ma-public-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "JSGP announces the one-year Master of Arts in Public Policy as beginning in Fall 2026, and the JGU Academic Calendar 2026-2027 sets Term 1 of the one-year master's structure from 3 August 2026.",
+      "status": "verified",
+      "sourceLabel": "JGU - M.A. Public Policy and JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsgp-ma-public-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the M.A. Public Policy is INR 4,00,000 per annum, with residential charges of INR 1,81,100 per annum, other allied service charges of INR 1,24,900 per annum and a one-time refundable security deposit of INR 50,000, each recurring charge subject to an annual increase of ten percent.",
+      "status": "verified",
+      "sourceLabel": "JGU - M.A. Public Policy, fee section",
+      "sourceUrl": "https://jgu.edu.in/jsgp/admissions/ma-public-policy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsgp-ma-public-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jsgp-ma-public-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "The eligibility criteria for the Master of Public Health require applicants to hold a bachelor's degree from any recognised university regardless of their undergraduate major; final-year students may apply subject to successful completion of the degree.",
+      "status": "verified",
+      "sourceLabel": "JGU - Master of Public Health, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jsph/admissions/masters-of-public-health",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsph-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "JGU states that students with a foreign medical degree who have not qualified through the FMGE are encouraged to apply to the MPH, and that students holding any other international bachelor's degree must submit an Association of Indian Universities equivalency certificate.",
+      "status": "verified",
+      "sourceLabel": "JGU - View All Programme Requirements",
+      "sourceUrl": "https://jgu.edu.in/view-all-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsph-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "JGU applies a three-stage admission process to the MPH: evaluation of the application form including a personal statement, an online entrance test or the score of a listed national or international entrance test, and an online personal interview.",
+      "status": "verified",
+      "sourceLabel": "JGU - View All Programme Requirements",
+      "sourceUrl": "https://jgu.edu.in/view-all-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsph-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "The JGU Academic Calendar 2026-2027 sets the MPH academic structure at the Jindal School of Public Health and Human Development with Term 1 running from 4 September 2026 to 25 October 2026 and Term 4 ending on 20 June 2027.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsph-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the Master of Public Health is INR 3,50,000 with a one-time refundable security deposit of INR 50,000. The programme page publishes no residential or allied service charge, consistent with the programme being described as one-year non-residential.",
+      "status": "verified",
+      "sourceLabel": "JGU - Master of Public Health, fee section",
+      "sourceUrl": "https://jgu.edu.in/jsph/admissions/masters-of-public-health",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jsph-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jsph-master-of-public-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "Eligibility for the JGBS Full-Time MBA is a graduation degree with a minimum of 50 per cent from a recognised university; students graduating in 2026 are also eligible to apply.",
+      "status": "verified",
+      "sourceLabel": "JGU - Full-Time MBA Programme, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jgbs/admissions/full-time-mba-programme",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgbs-full-time-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "JGBS requires CAT, MAT, XAT, CMAT or ATMA at the 50th percentile or above, GRE at 295 or above, GMAT at 450 or above, or NMAT at 160 or above for admission to the Full-Time MBA in the 2026 admission cycle.",
+      "status": "verified",
+      "sourceLabel": "JGU - Full-Time MBA Programme, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jgbs/admissions/full-time-mba-programme",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgbs-full-time-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "The JGBS MBA admission process runs over three rounds: application assessment with uploaded Class 10, Class 12 and graduation scores and an entrance test score; a faculty panel interview assessing academics, entrance score and interview performance; and declaration of the interview result with a provisional offer, after which a registration fee of INR 1,05,000 secures the seat.",
+      "status": "verified",
+      "sourceLabel": "JGU - Full-Time MBA Programme, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jgbs/admissions/full-time-mba-programme",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgbs-full-time-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "The JGU Academic Calendar 2026-2027 records Fall Semester (A) 2026 classes beginning on 3 August 2026 at Jindal Global Business School, and JGBS states that online postgraduate admissions for the academic year 2026 are open.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgbs-full-time-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the JGBS Full-Time MBA is INR 7,00,000 per annum, with accommodation charges of INR 2,31,100 per annum, other allied services charges of INR 1,24,900 per annum and a one-time refundable security deposit of INR 50,000; each recurring charge is subject to an annual increase of up to ten percent, and a registration fee of INR 1,05,000 is payable to secure a seat.",
+      "status": "verified",
+      "sourceLabel": "JGU - Full-Time MBA Programme, fee and admission process sections",
+      "sourceUrl": "https://jgu.edu.in/jgbs/admissions/full-time-mba-programme",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgbs-full-time-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jgbs-full-time-mba"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "Eligibility is 10+2 or an equivalent examination with a minimum of 45 per cent marks from CBSE, ISC, State Boards, IB, Cambridge or another government-recognised board, together with the LNAT-UK exam. Jindal Global Law School states that it does not accept any other law school admissions test.",
+      "status": "verified",
+      "sourceLabel": "JGU - Jindal Global Law School programme page, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/bba-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bba-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "Admission to the five-year integrated law programmes at Jindal Global Law School is based on performance in the LNAT-UK, a test designed and calibrated by Edexcel for Pearson VUE and available at over 500 test centres in 165 countries.",
+      "status": "verified",
+      "sourceLabel": "JGU - Jindal Global Law School programme page, LNAT-UK section",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/bba-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bba-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "The JGU Academic Calendar 2026-2027 records Fall Semester (A) 2026 classes beginning on 3 August 2026 at Jindal Global Law School.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bba-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the five-year integrated law degrees at Jindal Global Law School is INR 7,00,000 per annum, with accommodation charges of INR 2,32,000 per annum, other allied services charges of INR 1,48,900 per annum and a one-time refundable security deposit of INR 50,000, each recurring charge subject to an annual increase of ten percent.",
+      "status": "verified",
+      "sourceLabel": "JGU - Jindal Global Law School programme page, fee section",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/bba-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bba-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognition",
+      "claimText": "The Bar Council of India approved list of Centres of Legal Education records this course at Jindal Global Law School, O. P. Jindal Global University, Sonipat with an approved strength of 180, approved up to the 2026-27 academic year.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - Approved List of CLEs (Law Colleges / Universities)",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bba-llb-hons",
+      "internalNotes": "Read by the regulator verification pass recorded in research/india-regulator-verification-2026-08-22.md. The BCI PDF renders the affiliating-university column as a merged, vertically offset cell; college name, course and approval-till are aligned to each other and were the only columns relied on."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jgls-bba-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "eligibility",
+      "claimText": "Eligibility is 10+2 or an equivalent examination with a minimum of 45 per cent marks from CBSE, ISC, State Boards, IB, Cambridge or another government-recognised board, together with the LNAT-UK exam. Jindal Global Law School states that it does not accept any other law school admissions test.",
+      "status": "verified",
+      "sourceLabel": "JGU - Jindal Global Law School programme page, eligibility and selection process",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/b-com-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "admissions",
+      "claimText": "Admission to the five-year integrated law programmes at Jindal Global Law School is based on performance in the LNAT-UK, a test designed and calibrated by Edexcel for Pearson VUE and available at over 500 test centres in 165 countries.",
+      "status": "verified",
+      "sourceLabel": "JGU - Jindal Global Law School programme page, LNAT-UK section",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/b-com-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "intake",
+      "claimText": "The JGU Academic Calendar 2026-2027 records Fall Semester (A) 2026 classes beginning on 3 August 2026 at Jindal Global Law School.",
+      "status": "verified",
+      "sourceLabel": "JGU Academic Calendar 2026-2027",
+      "sourceUrl": "https://jgu.edu.in/document/Academic-Calendar.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "fee",
+      "claimText": "Tuition for the five-year integrated law degrees at Jindal Global Law School is INR 7,00,000 per annum, with accommodation charges of INR 2,32,000 per annum, other allied services charges of INR 1,48,900 per annum and a one-time refundable security deposit of INR 50,000, each recurring charge subject to an annual increase of ten percent.",
+      "status": "verified",
+      "sourceLabel": "JGU - Jindal Global Law School programme page, fee section",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/b-com-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "recognition",
+      "claimText": "The Bar Council of India approved list of Centres of Legal Education records this course at Jindal Global Law School, O. P. Jindal Global University, Sonipat with an approved strength of 120, approved up to the 2026-27 academic year.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - Approved List of CLEs (Law Colleges / Universities)",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons",
+      "internalNotes": "Read by the regulator verification pass recorded in research/india-regulator-verification-2026-08-22.md. The BCI PDF renders the affiliating-university column as a merged, vertically offset cell; college name, course and approval-till are aligned to each other and were the only columns relied on."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "medium",
+      "claimText": "The medium of instruction and assessment at the University is English unless the Academic Council determines otherwise for a specific course or programme.",
+      "status": "verified",
+      "sourceLabel": "JGU Student Handbook 2025-26, Academic Regulations, clause 5",
+      "sourceUrl": "https://jgu.s3.ap-south-1.amazonaws.com/Student-Handbook.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-21",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "programmeStructure",
+      "claimText": "Since 2013 Jindal Global Law School has provided the five-year integrated BBA LL.B. (Hons.) programme, which it states adheres to the latest Bar Council of India regulations and University Grants Commission guidelines. Students enrolled from 2025-26 onwards must be awarded no less than 210 credits.",
+      "status": "verified",
+      "sourceLabel": "JGU - BBA LL.B. (Hons.), Jindal Global Law School",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/bba-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bba-llb-hons"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "op-jindal-global-university",
+      "publicField": "programmeStructure",
+      "claimText": "Starting from 2021 Jindal Global Law School provides the five-year integrated B.Com. LL.B. (Hons.) programme, blending commerce and law courses in accordance with current Bar Council of India regulations and University Grants Commission guidelines. Students enrolled from 2025-26 onwards must be awarded no less than 210 credits.",
+      "status": "verified",
+      "sourceLabel": "JGU - B.Com. LL.B. (Hons.), Jindal Global Law School",
+      "sourceUrl": "https://jgu.edu.in/jgls/admissions/b-com-llbhons",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "programmeSlug": "jgu-jgls-bcom-llb-hons"
+    }
+  ]
+}

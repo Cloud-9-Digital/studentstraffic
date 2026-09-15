@@ -1,0 +1,21 @@
+{
+  "countrySlug": "tonga",
+  "universitySlug": "tonga-national-university-faculty-of-nursing-and-health-sciences",
+  "schoolName": "Tonga National University — Faculty of Nursing and Health Sciences",
+  "cityName": "Nuku'alofa",
+  "priority": "high",
+  "officialWebsite": "https://www.tnu.edu.to/faculty-of-nursing-and-health-science/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Tonga National University's current Faculty of Nursing and Health Sciences explicitly offers nursing, midwifery, pharmacy, medical laboratory technology, oral health and environmental-health pathways, with named collaboration with Vaiola Hospital and health centres. Its official pages do not show a Doctor of Medicine/MBBS degree. Tonga's 2026 government scholarship table directs MBBS awards to Fiji National University rather than TNU, while TNU receives pharmacy awards. Therefore a Tonga medical-university page would be factually misleading; no physician-training candidate is validated.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "TNU Faculty of Nursing and Health Sciences", "url": "https://www.tnu.edu.to/faculty-of-nursing-and-health-science/", "kind": "official-faculty", "checkedAt": "2026-07-25", "notes": "Lists nursing, midwifery, pharmacy, medical-laboratory, oral-health and environmental-health pathways and health-agency collaboration; no medical degree."},
+      {"label": "TNU programmes", "url": "https://www.tnu.edu.to/programmes/", "kind": "official-programme-list", "checkedAt": "2026-07-25", "notes": "Current university programme navigation provides health programmes without a Doctor of Medicine/MBBS listing."},
+      {"label": "Tonga Government Scholarships 2026 reference table", "url": "https://www.education.gov.to/images/Reference%20Table%20TGS%202026%20Intake_final.pdf", "kind": "government", "checkedAt": "2026-07-25", "notes": "Lists MBBS awards at Fiji National University and pharmacy awards at TNU, supporting that TNU is not the domestic MBBS provider."},
+      {"label": "Tonga Parliament national-university announcement", "url": "https://parliament.gov.to/en/media-centre/latest-news/tonga-soon-to-have-a-national-university", "kind": "government", "checkedAt": "2026-07-25", "notes": "Describes the institutional merger that created TNU including the Queen Salote nursing/allied-health school."}
+    ]
+  },
+  "structuredFacts": {"name": "Tonga National University — Faculty of Nursing and Health Sciences", "type": "Public", "programs": [], "missingForPublication": ["confirmed medical degree"], "notAMedicalUniversity": true},
+  "draftContent": {"summary": "", "faq": [], "notes": "No public medical content drafted because no MD/MBBS is offered in the verified programme set."}
+}

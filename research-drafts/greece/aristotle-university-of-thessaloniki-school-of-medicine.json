@@ -1,0 +1,43 @@
+{
+  "scope": "Greece medical discovery — Aristotle University of Thessaloniki School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Aristotle University of Thessaloniki School of Medicine",
+    "countrySlug": "greece",
+    "programme": "Medical Degree in English",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "Aristotle University School of Medicine publishes a six-year English medical degree for foreign citizens, with 360 ECTS, 83 modules and seven clinical traineeships.",
+      "sourceUrl": "https://www.aristotlemedical.edu.gr/courses-curiculum",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Clinical rotations begin in year four and the final year includes supervised full-time clinical training at affiliated hospitals.",
+      "sourceUrl": "https://www.aristotlemedical.edu.gr/courses-curiculum",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The official admissions page gives EUR 12,000 annual tuition, two instalments, and requires foreign secondary education, English evidence, a personal statement, interview and admission test or specified test/qualification exemption.",
+      "sourceUrl": "https://www.aristotlemedical.edu.gr/admission-fees",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Greece's official Study in Greece programme listing independently describes the programme as a six-year English Medical Degree at Aristotle University with EUR 12,000 tuition.",
+      "sourceUrl": "https://studies.minedu.gov.gr/program/1721/bachelor/medical-degree-by-aristotle-university-of-thessaloniki/",
+      "sourceType": "government-study-portal",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No independent programme-accreditation/quality-authority record was established in this batch. The school's claim of institutional quality compliance is not sufficient for the required recognition badges without a regulator source.",
+    "The reviewed official admissions page gives requirements and tuition but no clearly dated 2026/27 application deadline or class-start/intake date.",
+    "No authoritative accommodation, living-cost or international-student support evidence bundle was completed at the required depth."
+  ],
+  "nextAction": "Verify current Hellenic quality/accreditation status for the English Medicine degree and obtain a dated 2026/27 admissions calendar plus official housing/support evidence before packaging."
+}

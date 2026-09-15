@@ -1,0 +1,375 @@
+{
+  "countries": [
+    {
+      "slug": "belarus",
+      "name": "Belarus",
+      "region": "Europe",
+      "summary": "Belarus is an Eastern European nation home to Belarusian State Medical University, a long-established public university whose 6-year English-medium General Medicine track is WHO-listed and actively recruits international students, though current geopolitical conditions add real logistical friction around travel routing and payment processing.",
+      "whyStudentsChooseIt": "Belarus offers an internationally recognized, WHO-listed medical degree with a genuine English-medium track, direct-entry from secondary school, and tuition below many Western European destinations, at a university with an active, dedicated recruitment channel for Indian applicants.",
+      "climate": "Humid continental climate with cold winters and warm, moderately wet summers.",
+      "currencyCode": "BYN",
+      "metaTitle": "Study MBBS and Medicine in Belarus",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Belarus, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Belarusian State Medical University maps its 6-Year English MD Program to this category: a direct-entry, single-cycle six-year programme, confirmed by WDOMS as distinct from the university's separate 4-year graduate-entry MD track.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "belarus",
+      "slug": "belarusian-state-medical-university",
+      "name": "Belarusian State Medical University",
+      "city": "Minsk",
+      "type": "Public",
+      "establishedYear": 1921,
+      "officialWebsite": "https://www.bsmu.by/en/",
+      "mediaAttribution": {},
+      "summary": "Belarusian State Medical University (BSMU), founded in 1921, runs a direct-entry 6-Year English MD Program, confirmed by WHO's World Directory of Medical Schools as distinct from the university's separate 4-year graduate-entry MD. BSMU is IAAR/WFME-accredited, ECFMG-eligible, and actively recruits Indian applicants, though current travel and payment frictions should be understood before committing.",
+      "campusLifestyle": "International students study at BSMU's main campus on Dzerzhinsky Avenue in Minsk, supported by an active, named local recruitment infrastructure specifically serving Indian, Nepali and Sri Lankan applicants, with accommodation available across 12 student dormitories.",
+      "cityProfile": "Minsk is Belarus's capital and largest city, home to BSMU's main campus and clinical training sites across more than half of the university's 73 academic departments, based in municipal hospitals and clinics throughout the city.",
+      "practicalExposure": "The 6-year General Medicine curriculum covers Therapy, Surgery, Obstetrics and Gynaecology, and Anesthesiology and Critical Care Medicine, with clinical training embedded across Minsk's municipal hospital and clinic network; WDOMS records clinical training as making up 50-74% of the full programme, though the exact language split between English and Russian on clinical wards was not independently confirmed.",
+      "hostelOverview": "BSMU operates 12 student dormitories across three districts of Minsk, with availability and structure confirmed on the university's own site, but no specific dated rate is published; third-party estimates range roughly USD 600-1,000/year, though these are not officially confirmed and should be verified directly with BSMU's dormitory office before budgeting.",
+      "dietarySupport": "No specific university-run meal-plan cost is published; students typically arrange meals independently near campus or dormitories.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research. The Indian Embassy in Minsk maintains an active advisory page (updated as recently as the day before this record's research) with no blanket warning against student travel, though it does note practical travel-routing considerations (see Things to Consider).",
+      "studentSupport": "International applicants are supported by BSMU's own named local recruitment representatives specifically serving Indian, Nepali and Sri Lankan students, alongside a formal document-based admissions process handled directly with the university.",
+      "whyChoose": [
+        "The WHO World Directory of Medical Schools independently confirms the 6-Year English MD Program is direct-entry (secondary-education prerequisite), explicitly distinct from BSMU's separate 4-year graduate-entry MD track.",
+        "Accredited by IAAR (Kazakhstan), a WFME-recognized agency, most recently confirmed 28 January 2022, with graduates (1953-current) eligible to apply for ECFMG Certification.",
+        "A confirmed, current, dated 2026/27 tuition figure (USD 6,300/year) published directly on BSMU's own official fee schedule.",
+        "A genuine English-medium track for General Medicine (also Dentistry and Pharmacy) with a real, sizeable enrolled cohort (around 200-250 admits/year), not a token offering.",
+        "An active, dated, named local recruitment channel specifically serving Indian applicants, confirming BSMU is currently and visibly recruiting for the 2026/27 cycle."
+      ],
+      "thingsToConsider": [
+        "Current travel routing to Belarus typically requires transit through Russia or Central Asia due to EU airspace restrictions on Belarus's national carrier, and Indian passport holders transiting through Moscow need a separate Russian transit visa -- factor this into travel planning.",
+        "BSMU's own fee page states USD payment to its primary account is 'temporarily unavailable' as of this record's research date, with payments redirected via a Belarusian-ruble account pegged to the National Bank's daily exchange rate -- a real, current banking friction to plan around.",
+        "The step-by-step long-term (Type D) student visa process was not found on an official Belarusian government or BSMU page; only short-stay/visa-free-transit rules were located on the Indian Embassy's site, so applicants should confirm the exact student-visa route directly with BSMU's international office.",
+        "No specific dormitory rate is officially published, and no BSMU-specific scholarship for international fee-paying students was confirmed; only unverified third-party figures exist for both.",
+        "Named affiliated teaching hospitals were not enumerated on BSMU's top-level English pages, and the university's domestic (Belarus) post-graduation licensing/internship process for foreign graduates was not detailed in the pages reviewed."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, direct-entry medical degree with a genuine English-medium track and a real, currently active application pathway for Indian applicants.",
+        "Families comfortable planning around current travel-routing and payment-processing friction linked to the wider regional geopolitical situation, rather than expecting a fully frictionless process.",
+        "Applicants able to confirm dormitory cost, named teaching-hospital affiliations, and the exact student-visa process directly with BSMU before committing."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0001100, 6-Year English MD confirmed as a distinct direct-entry track",
+        "IAAR (Independent Agency for Accreditation and Rating, Kazakhstan), WFME-recognized -- Accredited, most recently confirmed 28 January 2022",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1953-present"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Belarusian State Medical University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0001100" },
+        { "label": "BSMU -- procedure for admission of foreign citizens", "url": "https://www.bsmu.by/abiturientu/pravila-i-poryadok-priema/poryadok-priema-inostrannykh-grazhdan/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the 6-Year MD Program direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools separately lists BSMU's 6-Year English MD Program as direct-entry (prerequisite: completed secondary education), distinct from a separate 4-year graduate-entry MD Program that requires a prior undergraduate degree."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 6,300 per year for the 6-Year English MD Program, confirmed on BSMU's official 'Annual Fees in 2026/2027 academic year' page, with the first advance payment (50% of the annual figure) due by 16 September 2026."
+        },
+        {
+          "question": "Is there an entrance exam?",
+          "answer": "Admission for direct-entry foreign applicants is based on an interview covering English (or Russian) language, Chemistry and Biology, rather than a written entrance exam -- no IELTS or TOEFL certificate is required for this route."
+        },
+        {
+          "question": "When can I apply and when does the academic year start?",
+          "answer": "The interview-based admission window for the 2026/27 cycle runs 13 July to 15 October 2026, subject to available seats, with the academic year anchored around early-to-mid September 2026."
+        },
+        {
+          "question": "Are there any current travel or payment complications to be aware of?",
+          "answer": "Yes. Travel to Belarus typically requires transit through Russia or Central Asia, and Indian passport holders transiting Moscow need a separate Russian transit visa. BSMU's own fee page also states that USD payments to its primary account are temporarily unavailable, with payments redirected through a Belarusian-ruble account instead."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "BSMU operates 12 student dormitories across Minsk, though no specific official room rate is published; confirm current pricing directly with BSMU's dormitory office before budgeting."
+        },
+        {
+          "question": "Are scholarships available?",
+          "answer": "No BSMU-specific scholarship for international fee-paying students was confirmed on the university's official site; international enrollment is described uniformly as fee-based, with budget-funded seats reserved only for citizens of countries with bilateral agreements with Belarus."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Belarus?",
+          "answer": "Graduates are eligible to apply for ECFMG Certification (US pathway). For India specifically, graduates would need to separately satisfy India's National Medical Commission FMGE/NExT screening requirements and hold an NMC Eligibility Certificate obtained before starting the course; this general framework was not independently verified against an NMC source for this specific programme."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Belarusian State Medical University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001100",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence distinguishing the direct-entry 6-Year English MD Program (secondary-education prerequisite) from the separate graduate-entry 4-Year MD Program (prior-degree prerequisite), plus IAAR/WFME accreditation and ECFMG eligibility."
+        },
+        {
+          "label": "BSMU -- procedure for admission of foreign citizens",
+          "url": "https://www.bsmu.by/abiturientu/pravila-i-poryadok-priema/poryadok-priema-inostrannykh-grazhdan/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, required documents, interview-based admissions process, and the confirmed 2026/27 admissions calendar."
+        },
+        {
+          "label": "BSMU -- Annual Fees in 2026/2027 academic year",
+          "url": "https://www.bsmu.by/en/abiturientu/annual-fees/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming current 2026/27 tuition by language track, and the USD-payment-processing friction disclosed on the same page."
+        },
+        {
+          "label": "BSMU -- other non-educational paid services (interview and document-review fees)",
+          "url": "https://www.bsmu.by/en/abiturientu/annual-fees/other-non-educational-paid-services",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for application/interview/document-review fees."
+        },
+        {
+          "label": "BSMU -- student campus (dormitories)",
+          "url": "https://www.bsmu.by/student/studencheskiy-gorodok/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the existence and structure of 12 student dormitories; no official rate was found on this page."
+        },
+        {
+          "label": "BSMU -- official representatives (India-facing recruitment)",
+          "url": "https://www.bsmu.by/en/abiturientu/official-representatives/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence that BSMU actively operates a named local recruitment channel specifically for Indian, Nepali and Sri Lankan applicants, confirming an active 2026/27 recruitment pipeline."
+        },
+        {
+          "label": "Embassy of India, Minsk -- advisory to Indian nationals",
+          "url": "https://www.eoiminsk.gov.in/page/advisory-to-indian-nationals/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for current travel-routing considerations (Russian transit visa requirement) and short-stay entry rules; page updated the day before this record's research."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "interview preparation", "travel routing plan", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "bsmu-6-year-md",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "6-Year MD Program (General Medicine, English-taught)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6300,
+            "officialTotalTuitionAmount": 37800,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published on BSMU's 'Annual Fees in 2026/2027 academic year' page: USD 6,300/year for English-medium General Medicine (vs USD 5,400/year for the Russian-medium track). First advance payment (50% of the annual figure, USD 3,150) is due by 16 September 2026. The same official page states USD payment to BSMU's primary account is 'temporarily unavailable,' with payments currently redirected through a Belarusian-ruble account pegged to the National Bank's daily exchange rate -- a real, current banking friction. Total is calculated as the annual figure times 6 years -- not published as a lump sum, and excludes document-review/interview fees (USD 60-80) and dormitory costs (unpublished)."
+          },
+          "officialProgramUrl": "https://www.bsmu.by/abiturientu/pravila-i-poryadok-priema/poryadok-priema-inostrannykh-grazhdan/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education, verified via an admissions interview in English or Russian covering Chemistry and Biology"
+            ],
+            "restrictions": [
+              "Foreign secondary-education certificates must be recognized in accordance with Belarus's established procedure at document-submission stage",
+              "A mandatory medical exam certificate must be issued by a Belarusian healthcare organization, and an HIV-negative certificate from the applicant's home country is required"
+            ],
+            "notes": "No IELTS or TOEFL certificate is required for direct-entry admission; the university's own interview substitutes for a language-proficiency test.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.bsmu.by/abiturientu/pravila-i-poryadok-priema/poryadok-priema-inostrannykh-grazhdan/"
+          },
+          "admissionsContent": {
+            "overview": "International applicants submit a full document package (passport, secondary-education certificate, medical and HIV-negative certificates, insurance contract), pay document-review and interview fees, and pass an admissions interview in English or Russian covering Chemistry and Biology.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education, notarized documentation, and a passing interview rather than a written entrance exam.",
+              "items": [
+                "Notarized secondary-education certificate with subject grades, recognized per Belarusian procedure",
+                "Admissions interview in English or Russian covering Chemistry and Biology",
+                "Medical exam certificate from a Belarusian healthcare organization, and an HIV-negative certificate from the home country"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the full document package (passport translation, secondary certificate, medical and HIV certificates, photos)",
+              "Pay the document-review fee (USD 70) and interview fee (USD 60-65 depending on language)",
+              "Complete the admissions interview covering English/Russian, Chemistry and Biology",
+              "Receive an admission decision and study invitation",
+              "Pay the first advance tuition instalment (50% of annual fee) by the published deadline"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original secondary-education certificate with notarized Russian translation",
+                "Certificate of completion of any preparatory faculty, if applicable"
+              ],
+              "application": [
+                "Passport with notarized Russian translation (translation must be completed inside Belarus)",
+                "Medical exam and HIV-negative certificates, plus compulsory medical insurance contract"
+              ]
+            },
+            "deadlinesNote": "Interview-based admission window for 2026/27: 13 July-15 October 2026, subject to available seats. First advance tuition payment due 16 September 2026.",
+            "visaConsiderations": [
+              "Travel typically requires transit through Russia or Central Asia; Indian passport holders transiting Moscow need a separate Russian transit visa. Confirm the long-term student visa process directly with BSMU."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english", "russian"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current 2026/27 tuition of USD 6,300/year for the English-medium track, from BSMU's own official annual-fees page, which also discloses a current USD-payment-processing friction (redirected via a Belarusian-ruble account).",
+          "teachingPhases": [
+            {
+              "phase": "6-year General Medicine programme",
+              "language": "English (also available in Russian)",
+              "details": "Covers Therapy, Surgery, Obstetrics and Gynaecology, and Anesthesiology and Critical Care Medicine, with clinical training (50-74% of the full programme per WDOMS) embedded across more than half of BSMU's 73 academic departments, based at Minsk municipal hospitals and clinics."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "belarusian-state-medical-university",
+      "publicField": "identity",
+      "claimText": "Belarusian State Medical University began medical instruction in 1921 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Belarusian State Medical University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001100",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "belarusian-state-medical-university",
+      "programmeSlug": "bsmu-6-year-md",
+      "publicField": "recognition",
+      "claimText": "WHO World Directory of Medical Schools lists the 6-Year English MD Program as direct-entry (prerequisite: completed secondary education), distinct from a separate 4-Year MD Program requiring a prior undergraduate degree; IAAR (Kazakhstan, WFME-recognized) accreditation confirmed 28 January 2022; ECFMG-eligible 1953-current.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Belarusian State Medical University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001100",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "belarusian-state-medical-university",
+      "programmeSlug": "bsmu-6-year-md",
+      "publicField": "eligibility",
+      "claimText": "Admission requires completed secondary education, notarized document translation, a medical exam certificate from a Belarusian healthcare organization, and an admissions interview covering English/Russian, Chemistry and Biology.",
+      "status": "verified",
+      "sourceLabel": "BSMU -- procedure for admission of foreign citizens",
+      "sourceUrl": "https://www.bsmu.by/abiturientu/pravila-i-poryadok-priema/poryadok-priema-inostrannykh-grazhdan/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "belarusian-state-medical-university",
+      "programmeSlug": "bsmu-6-year-md",
+      "publicField": "admissions",
+      "claimText": "International applicants submit a full document package, pay document-review (USD 70) and interview (USD 60-65) fees, and pass an admissions interview rather than a written entrance exam.",
+      "status": "verified",
+      "sourceLabel": "BSMU -- other non-educational paid services (interview and document-review fees)",
+      "sourceUrl": "https://www.bsmu.by/en/abiturientu/annual-fees/other-non-educational-paid-services",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "belarusian-state-medical-university",
+      "programmeSlug": "bsmu-6-year-md",
+      "publicField": "intake",
+      "claimText": "Interview-based admission window for 2026/27 runs 13 July-15 October 2026, subject to available seats; first advance tuition payment due 16 September 2026.",
+      "status": "verified",
+      "sourceLabel": "BSMU -- procedure for admission of foreign citizens",
+      "sourceUrl": "https://www.bsmu.by/abiturientu/pravila-i-poryadok-priema/poryadok-priema-inostrannykh-grazhdan/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "belarusian-state-medical-university",
+      "programmeSlug": "bsmu-6-year-md",
+      "publicField": "fee",
+      "claimText": "Current 2026/27 tuition confirmed at USD 6,300/year for the English-medium General Medicine track, with USD payment to BSMU's primary account temporarily disrupted and redirected via a Belarusian-ruble account.",
+      "status": "verified",
+      "sourceLabel": "BSMU -- Annual Fees in 2026/2027 academic year",
+      "sourceUrl": "https://www.bsmu.by/en/abiturientu/annual-fees/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "belarusian-state-medical-university",
+      "publicField": "student living",
+      "claimText": "BSMU operates 12 student dormitories across Minsk, though no specific official rate is published; travel to Belarus typically requires transit through Russia or Central Asia, with a separate Russian transit visa needed for Indian passport holders transiting Moscow.",
+      "status": "verified",
+      "sourceLabel": "Embassy of India, Minsk -- advisory to Indian nationals",
+      "sourceUrl": "https://www.eoiminsk.gov.in/page/advisory-to-indian-nationals/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

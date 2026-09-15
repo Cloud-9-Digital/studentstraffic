@@ -1,0 +1,392 @@
+{
+  "countries": [
+    {
+      "slug": "uganda",
+      "name": "Uganda",
+      "region": "Africa",
+      "summary": "Uganda is an East African nation home to Mbarara University of Science and Technology, a public university whose Faculty of Medicine runs a WHO-listed, direct-entry Bachelor of Medicine and Bachelor of Surgery (MBChB) programme with a distinctive community-based education model.",
+      "whyStudentsChooseIt": "Uganda offers an internationally recognized, WHO-listed medical degree taught entirely in English, a direct-entry five-year curriculum with early community health exposure, and tuition markedly lower than most other MBBS-abroad destinations.",
+      "climate": "Tropical climate with generally mild temperatures year-round due to elevation, and two rainy seasons.",
+      "currencyCode": "UGX",
+      "metaTitle": "Study MBBS and Medicine in Uganda",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Uganda, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Mbarara University of Science and Technology maps its English-medium Bachelor of Medicine and Bachelor of Surgery (MBChB) programme to this category: a direct-entry, single-cycle five-year programme with a distinctive community-based education model.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "uganda",
+      "slug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "name": "Mbarara University of Science and Technology Faculty of Medicine",
+      "city": "Mbarara",
+      "type": "Public",
+      "establishedYear": 1989,
+      "officialWebsite": "https://www.must.ac.ug/",
+      "mediaAttribution": {},
+      "summary": "Mbarara University of Science and Technology (MUST) Faculty of Medicine runs a direct-entry, five-year, English-medium Bachelor of Medicine and Bachelor of Surgery (MBChB) programme built around a distinctive community-based education model. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and is on the Uganda Medical and Dental Practitioners Council's official list of approved medical schools.",
+      "campusLifestyle": "International students join the MBChB cohort across MUST's Kihumuro Main Campus and City Campus in Mbarara, with an International Relations Office supporting pre-arrival guidance, visa/student-pass steps and accommodation options.",
+      "cityProfile": "Mbarara is a regional city in southwestern Uganda, home to MUST's campuses and a growing international-student community, with typical off-campus rents notably lower than East Africa's larger capital cities.",
+      "practicalExposure": "The five-year MBChB programme runs preclinical basic sciences in Years 1-2 (anatomy, histology, physiology, biochemistry, microbiology, pharmacology), transitions through pathology and clinical-methods modules, and moves into full clinical training in Years 4-5 (emergency medicine, surgery, family medicine, psychiatry, and specialty rotations), integrated throughout with MUST's Community Based Education, Research and Services (COBERS) model, in which students engage directly in interdisciplinary community healthcare delivery as part of the standard curriculum.",
+      "hostelOverview": "On-campus residence accommodation is available at both MUST campuses on a first-come, first-served basis, though no specific rate is published; short-stay Expatriate Quarters are available at USD 5/night for occasional or elective visitors. Typical off-campus rents in Mbarara range from roughly USD 82-125/month for a 1-bedroom apartment to USD 191-246/month for a 2-bedroom apartment in the city centre, per the university's own International Office cost guide.",
+      "dietarySupport": "An average campus meal costs roughly USD 1-2 per the university's own cost-of-living guide; no separate university-run meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants apply through MUST's own online portal, pay application fees via international wire transfer to a Uganda Revenue Authority account, and are supported by a dedicated International Relations Office with a published pre-arrival guide.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000068), with graduates (1989-current) eligible to apply for ECFMG Certification and no entrance exam required for the standard direct-entry route.",
+        "On the Uganda Medical and Dental Practitioners Council's own official list of approved East African medical schools.",
+        "A distinctive Community Based Education, Research and Services (COBERS) model giving students early, structured community-health exposure throughout the curriculum.",
+        "A published, dual (domestic/international) fee schedule directly on the official programme page, with international tuition markedly lower than most other MBBS-abroad destinations.",
+        "A confirmed live, active 2026/27 admissions cycle, evidenced by dated admission-list updates through mid-2026."
+      ],
+      "thingsToConsider": [
+        "The published international tuition figure (roughly USD 1,700-1,750/year at recent exchange rates) is notably lower than typical MBBS-abroad international pricing elsewhere; confirm this figure directly with MUST admissions before committing, since no separate international-fee-schedule document exists to cross-verify it.",
+        "MUST's official 2026/27 admissions announcement confirms an August 2026 intake but does not publish an exact day-level application deadline in machine-readable form; confirm the precise deadline directly with the university.",
+        "The specific international application fee amount could not be confirmed from an official MUST document during research; only the payment mechanism (international wire transfer to a Uganda Revenue Authority account) is confirmed.",
+        "No MBChB-specific international scholarship is published; MUST's only listed scholarship (OWSD WISDOM) is a postgraduate, women-only award unrelated to this programme.",
+        "No specific affiliated teaching hospital name was found on MUST's own official pages during this research pass; confirm current clinical-training sites directly with the university."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, English-medium direct-entry medical degree at a notably lower cost point than most MBBS-abroad destinations.",
+        "Applicants drawn to a community-health-integrated curriculum with hands-on interdisciplinary healthcare exposure from early in the programme.",
+        "Students able to confirm exact deadline, application-fee and accommodation-cost details directly with the university given some figures were not machine-extractable from official documents."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0000068",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1989-present",
+        "Uganda Medical and Dental Practitioners Council (UMDPC) -- listed as an approved East African medical school"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Mbarara University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000068" },
+        { "label": "Uganda Medical and Dental Practitioners Council -- approved medical schools", "url": "https://www.umdpc.go.ug/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBChB programme direct-entry after high school?",
+          "answer": "Yes. Direct entry requires two principal passes in Biology and Chemistry plus at least a subsidiary pass in Physics or Mathematics at the secondary-school (A-Level or equivalent) stage; no prior university degree is required, and no entrance exam applies to this standard route."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Bachelor of Medicine, Bachelor of Surgery (MBChB) degree after five years of study."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "Foreign qualifications equivalent to Uganda's UCE/UACE certificates are equated through the Uganda National Examinations Board (UNEB); no Indian-curriculum-specific conversion table is published, so applicants should confirm the equating process directly with the university."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "The official programme page publishes a dual fee schedule: international students pay double the domestic rate, working out to roughly USD 1,700-1,750/year combined tuition and functional fees at recent exchange rates -- notably lower than many other MBBS-abroad destinations, so confirm this figure directly with MUST admissions before committing."
+        },
+        {
+          "question": "Is there a written entrance exam?",
+          "answer": "No. The WHO World Directory of Medical Schools confirms no entrance exam is required for the standard direct-entry MBChB route (a separate entrance exam applies only to the university's alternative Diploma-Entry pathway)."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The intake is in August. MUST's official 2026/27 admissions announcement confirms this cycle is active, though an exact day-level application deadline could not be confirmed from the available official documents -- confirm directly with the university."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "On-campus residence accommodation is available at both MUST campuses on a first-come, first-served basis, though no specific rate is published; short-stay Expatriate Quarters are available at USD 5/night. Off-campus 1-bedroom apartments in Mbarara typically run USD 82-125/month."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens who obtain a primary medical qualification abroad to have qualified NEET-UG and, on return, to clear its Foreign Medical Graduate licensure pathway; this general framework was not independently verified against an NMC source for this specific programme."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Mbarara University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000068",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, founding year, no-entrance-exam confirmation and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "Uganda Medical and Dental Practitioners Council -- approved medical schools",
+          "url": "https://www.umdpc.go.ug/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for UMDPC's official listing of MUST as an approved East African medical school, and for the Provisional/Full Registration pathway MUST graduates follow."
+        },
+        {
+          "label": "Mbarara University -- official MBChB programme page",
+          "url": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, curriculum structure, and the dual domestic/international fee schedule."
+        },
+        {
+          "label": "Mbarara University -- International Office pre-arrival guide",
+          "url": "https://www.must.ac.ug/university_unit/international-office/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for accommodation options, off-campus cost-of-living figures, application payment mechanism and visa/student-pass requirements."
+        },
+        {
+          "label": "Mbarara University -- call for direct entry undergraduate applications 2026-2027",
+          "url": "https://www.must.ac.ug/announcement/call-for-direct-entry-undergraduate-applications-2026-2027/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence confirming the active 2026/27 August-intake admissions cycle."
+        },
+        {
+          "label": "Mbarara University -- Faculty of Medicine / Community Based Education",
+          "url": "https://www.must.ac.ug/university_unit/faculty-of-medicine/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the Community Based Education, Research and Services (COBERS) model."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry physics/math grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "UNEB equating status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "mbarara-university-of-science-and-technology-mbchb",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBChB)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "UGX",
+            "officialAnnualTuitionAmount": 5376000,
+            "officialTotalTuitionAmount": 26880000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published international-student rate: UGX 2,688,000/semester tuition (2 semesters/year = UGX 5,376,000/year), double the Ugandan domestic rate, plus a separate UGX 1,100,000/year functional fee (also double the domestic rate). Combined this is roughly USD 1,700-1,750/year at recent exchange rates -- notably lower than typical MBBS-abroad international pricing, which is unusual enough that it should be reconfirmed directly with MUST admissions before being treated as final, since no separate cross-verifying international-fee-schedule document was found. Total is calculated as the annual tuition figure times 5 years -- not published as a lump sum, and excludes the functional fee and other charges."
+          },
+          "officialProgramUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education with two principal passes in Biology and Chemistry plus a subsidiary pass in Physics or Mathematics"
+            ],
+            "restrictions": [
+              "Foreign secondary qualifications must be equated by the Uganda National Examinations Board (UNEB) before admission",
+              "Applicants whose medium of instruction was not English must provide recognized evidence of English proficiency"
+            ],
+            "notes": "No entrance exam applies to the standard direct-entry route; an entrance exam applies only to the university's separate Diploma-Entry pathway.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/"
+          },
+          "admissionsContent": {
+            "overview": "International applicants register on MUST's own online admissions portal, untick the 'I sat for UNEB' option, submit and pay for their application form, then pay the application fee via international wire transfer to a Uganda Revenue Authority account before emailing proof of payment to the admissions office.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education meeting the minimum science-subject grades, with foreign qualifications equated by UNEB.",
+              "items": [
+                "Two principal passes in Biology and Chemistry, plus at least a subsidiary pass in Physics or Mathematics",
+                "UNEB equating certificate for foreign secondary-school qualifications",
+                "Recognized evidence of English proficiency if prior schooling was not English-medium"
+              ]
+            },
+            "applicationSteps": [
+              "Register on MUST's online application portal (applications.must.ac.ug)",
+              "Complete the application form, unticking the 'I sat for UNEB' option as a non-Ugandan applicant",
+              "Upload required documents and generate a payment reference number",
+              "Pay the application fee via international wire transfer to MUST's Uganda Revenue Authority account",
+              "Email proof of payment to the admissions office and await a decision"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "UNEB-equated secondary-school certificate and transcripts",
+                "Evidence of English proficiency, where required"
+              ],
+              "application": [
+                "Valid passport",
+                "Passport-style photographs"
+              ]
+            },
+            "deadlinesNote": "The 2026/27 direct-entry admissions cycle is confirmed active, with an August 2026 intake; an exact day-level application deadline could not be confirmed from available official documents -- confirm directly with MUST admissions.",
+            "visaConsiderations": [
+              "A Uganda entry visa costs approximately USD 100 (paid to Uganda Immigration, not the university), followed by an annually renewed student pass; confirm current requirements with MUST's International Office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["August"],
+          "intakeCodes": ["august"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "International tuition of UGX 2,688,000/semester plus UGX 1,100,000/year functional fees is published directly on the official MBChB programme page, though the resulting figure (roughly USD 1,700-1,750/year) is unusually low for this category and should be reconfirmed directly with the university.",
+          "teachingPhases": [
+            {
+              "phase": "5-year MBChB programme with Community Based Education (COBERS)",
+              "language": "English",
+              "details": "Years 1-2: preclinical basic sciences (anatomy, histology, physiology, biochemistry, microbiology, pharmacology). Transition years: pathology and clinical-methods modules. Years 4-5: full clinical rotations (emergency medicine, surgery, family medicine, psychiatry and specialty modules), integrated throughout with the Community Based Education, Research and Services (COBERS) model giving structured community-healthcare exposure."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "publicField": "identity",
+      "claimText": "Mbarara University of Science and Technology Faculty of Medicine began medical instruction in 1989 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Mbarara University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000068",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000068); graduates (1989-current) eligible to apply for ECFMG Certification; no entrance exam required for the standard direct-entry route.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Mbarara University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000068",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "publicField": "recognition",
+      "claimText": "Mbarara University of Science and Technology is listed on the Uganda Medical and Dental Practitioners Council's official list of approved East African medical schools.",
+      "status": "verified",
+      "sourceLabel": "Uganda Medical and Dental Practitioners Council -- approved medical schools",
+      "sourceUrl": "https://www.umdpc.go.ug/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "programmeSlug": "mbarara-university-of-science-and-technology-mbchb",
+      "publicField": "academics",
+      "claimText": "MBChB is a 5-year direct-entry programme with preclinical Years 1-2, transitional pathology/clinical-methods modules, and clinical Years 4-5, integrated throughout with the Community Based Education, Research and Services (COBERS) model.",
+      "status": "verified",
+      "sourceLabel": "Mbarara University -- official MBChB programme page",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "programmeSlug": "mbarara-university-of-science-and-technology-mbchb",
+      "publicField": "eligibility",
+      "claimText": "Direct entry requires two principal passes in Biology and Chemistry plus at least a subsidiary pass in Physics or Mathematics; foreign qualifications are equated via UNEB.",
+      "status": "verified",
+      "sourceLabel": "Mbarara University -- official MBChB programme page",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "programmeSlug": "mbarara-university-of-science-and-technology-mbchb",
+      "publicField": "admissions",
+      "claimText": "International applicants apply via MUST's online portal, unticking the 'I sat for UNEB' option, and pay the application fee by international wire transfer to a Uganda Revenue Authority account.",
+      "status": "verified",
+      "sourceLabel": "Mbarara University -- International Office pre-arrival guide",
+      "sourceUrl": "https://www.must.ac.ug/university_unit/international-office/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "programmeSlug": "mbarara-university-of-science-and-technology-mbchb",
+      "publicField": "intake",
+      "claimText": "2026/27 direct-entry admissions cycle confirmed active with an August 2026 intake; exact day-level deadline not machine-extractable from available official documents.",
+      "status": "verified",
+      "sourceLabel": "Mbarara University -- call for direct entry undergraduate applications 2026-2027",
+      "sourceUrl": "https://www.must.ac.ug/announcement/call-for-direct-entry-undergraduate-applications-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "programmeSlug": "mbarara-university-of-science-and-technology-mbchb",
+      "publicField": "fee",
+      "claimText": "International tuition of UGX 2,688,000/semester plus UGX 1,100,000/year functional fees, double the domestic Ugandan rate on both lines, published directly on the official MBChB programme page.",
+      "status": "verified",
+      "sourceLabel": "Mbarara University -- official MBChB programme page",
+      "sourceUrl": "https://www.must.ac.ug/programme/bachelor-of-medicine-and-bachelor-of-surgery/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "publicField": "student living",
+      "claimText": "On-campus residence accommodation is available on a first-come, first-served basis (rate not published); Expatriate Quarters cost USD 5/night; off-campus 1-bedroom apartments in Mbarara typically run USD 82-125/month.",
+      "status": "verified",
+      "sourceLabel": "Mbarara University -- International Office pre-arrival guide",
+      "sourceUrl": "https://www.must.ac.ug/university_unit/international-office/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

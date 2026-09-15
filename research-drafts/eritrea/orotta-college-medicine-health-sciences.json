@@ -1,0 +1,31 @@
+{
+  "scope": "Eritrea medical discovery — Orotta College of Medicine and Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Eritrea's Ministry of Information reported that Orotta College of Medicine and Health Sciences held its fourth annual commencement in July 2025 and graduated students across postgraduate, first-degree and diploma qualifications. The report describes active academic support from 90 faculty members during that academic year.",
+      "sourceUrl": "https://shabait.com/2025/08/06/building-the-nations-future-orotta-honors-new-health-graduates/",
+      "sourceType": "government-ministry",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Eritrean Ministry of Information's 2024 commencement report states that Orotta conferred Doctor of Medicine qualifications among its graduates, alongside postgraduate, degree and diploma awards.",
+      "sourceUrl": "https://shabait.com/2024/08/03/quality-medical-education-for-securing-the-health-of-the-society/",
+      "sourceType": "government-ministry",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Eritrea's 2022–2026 health-sector strategic plan identifies Orotta Medical School as producing 30–40 doctors annually. This is national-planning context, not a current admissions or capacity guarantee.",
+      "sourceUrl": "https://extranet.who.int/cpcd/sites/default/files/public_file_repository/ERI_Eritrea_Health%20Sector%20Strategic%20and%20Development%20Plan%20%28HSSDP%20III%29_2022-2026.pdf",
+      "sourceType": "government-plan-hosted-by-who",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Doctor of Medicine programme page, entry criteria, intake calendar, duration, curriculum, teaching language, fee structure or international-applicant route was located.",
+    "No direct current evidence identifies clinical teaching sites, placement arrangements, accommodation, scholarship/loan availability or student-support provision.",
+    "No directly verifiable current programme accreditation or professional-recognition record was located."
+  ],
+  "nextAction": "Obtain an official Orotta or Eritrean higher-education admission and programme document, followed by direct confirmation of clinical teaching and recognition, before considering a payload."
+}

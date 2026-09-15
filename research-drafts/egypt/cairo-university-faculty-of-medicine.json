@@ -1,0 +1,44 @@
+{
+  "scope": "Egypt medical discovery — Cairo University Faculty of Medicine (Kasr Al Ainy)",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Cairo University Faculty of Medicine",
+    "countrySlug": "egypt",
+    "programme": "Bachelor of Medicine and Surgery",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "The Cairo Faculty of Medicine international-student office directs Bachelor of Medicine and General Surgery applicants to the Study in Egypt platform and provides international-student support information.",
+      "sourceUrl": "https://medicine.cu.edu.eg/international-students-undergraduate/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Cairo University's Faculty of Medicine lists separate mainstream and integrated-programme foreign-student routes through the Expatriates Department and Expatriates Coordination; IPKA applicants must pass an English examination and personal interview.",
+      "sourceUrl": "https://medicine.cu.edu.eg/acceptance-transfer/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Egypt's National Qualifications Framework lists Cairo University's Bachelor of Medicine and Surgery as English, face-to-face and full-time, with a six-year minimum duration.",
+      "sourceUrl": "https://nqf.naqaae.eg/NQFRegister/ProgramData/CfDJ8FAA6DwHnDpJlh8E12oSBw3hOJHNrnhSvG1pRtGDGEKAK_Erv7nBA2qDUI-9xH-Rq5kFwl36h9-YVweHzVAy6GT4PPAFAtIi738W2pow1ZHfpN90reJC-spkoaFvrf-82w",
+      "sourceType": "government-accreditor",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The same regulator record marks the programme accredited by NAQAAE from 14 May 2024 to 14 May 2029.",
+      "sourceUrl": "https://nqf.naqaae.eg/NQFRegister/ProgramData/CfDJ8FAA6DwHnDpJlh8E12oSBw3hOJHNrnhSvG1pRtGDGEKAK_Erv7nBA2qDUI-9xH-Rq5kFwl36h9-YVweHzVAy6GT4PPAFAtIi738W2pow1ZHfpN90reJC-spkoaFvrf-82w",
+      "sourceType": "government-accreditor",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official tuition schedule for the foreign mainstream or IPKA Medicine cohort was found. The faculty says fees are paid after final acceptance but gives no amount.",
+    "The available sources describe more than one foreign route, but do not establish one aligned 2026/27 package of tuition, requirements, start date and course structure for a single catalogue offering.",
+    "The regulator record is strong recognition evidence, but its programme record lists an end-of-operation date in 2024 despite accreditation through 2029; this apparent date conflict requires regulator clarification before using it as a current programme status.",
+    "No authoritative current source was found for a complete programme-specific accommodation/living-cost evidence bundle."
+  ],
+  "nextAction": "Obtain a 2026/27 Cairo University or Study in Egypt foreign-Medicine fee notice and a written confirmation identifying the applicable foreign route, intake/start date and current regulator-record status."
+}

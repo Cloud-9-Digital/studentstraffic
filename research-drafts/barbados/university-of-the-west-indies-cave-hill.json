@@ -1,0 +1,20 @@
+{
+  "countrySlug": "barbados",
+  "universitySlug": "university-of-the-west-indies-cave-hill",
+  "schoolName": "The University of the West Indies, Cave Hill",
+  "cityName": "Cave Hill",
+  "priority": "medium",
+  "officialWebsite": "https://www.cavehill.uwi.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The official Faculty of Medical Sciences page describes a five-year MBBS, with three pre-clinical years and two clinical years, and the 2025/26 official fee booklet publishes fee bands. The current admissions page says MBBS applications are not open for the 2026/27 cycle. A separate official page describes a three-year BSc Preclinical Sciences pathway articulated to the University of Ghana MB ChB, so the eventual published content must clearly distinguish that route from the Cave Hill MBBS. Hold pending a future-cycle admissions route, a complete programme-cost card, current clinical-site evidence and target-market recognition checks.",
+  "sourceBundle": { "sources": [
+    { "label": "UWI Cave Hill MBBS official programme page", "url": "https://www.cavehill.uwi.edu/fms/programme/bachelor-of-medicine-bachelor-of-surgery/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Confirms a five-year undergraduate MBBS, Phase 1 years 1-3 and Phase 2 years 4-5, with the listed clinical disciplines and Faculty contact." },
+    { "label": "UWI Cave Hill 2025/26 undergraduate fee booklet", "url": "https://www.cavehill.uwi.edu/studentfinancing/wp-content/uploads/sites/95/Resources/Fees/CH_UG_FeeBooklet_2025-26.pdf", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes MBBS pre-clinical and clinical fee treatment and notes that fees may change." },
+    { "label": "UWI Cave Hill admissions page", "url": "https://www.cavehill.uwi.edu/admissions/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "States that MBBS applications are not open for the 2026/27 cycle." },
+    { "label": "UWI Cave Hill Preclinical Sciences official programme page", "url": "https://www.cavehill.uwi.edu/fms/programme/bachelor-of-science-preclinical-sciences/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the separate three-year Cave Hill preclinical pathway that continues at the University of Ghana for MB ChB clinical training." },
+    { "label": "Barbados Accreditation Council accredited-provider list", "url": "https://bac.gov.bb/services-accreditation-accredited-providers/", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Lists UWI Cave Hill Campus as accredited for 2019-2026." }
+  ] },
+  "structuredFacts": { "name": "The University of the West Indies, Cave Hill", "type": "Public university campus", "programs": [ { "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)", "duration": "5 years", "feeStatus": "2025/26 official fee booklet available; future fees and complete cost picture require refresh", "publishable": false }, { "officialTitle": "BSc Preclinical Sciences (Phase 1 of MB ChB with University of Ghana)", "duration": "3 years at Cave Hill followed by 3 clinical years at the University of Ghana", "feeStatus": "Official page lists US$32,500 annual tuition plus stated registration and estimated housing/maintenance figures", "publishable": false } ], "missingForPublication": [ "open current-cycle MBBS admissions route and deadline", "complete itemised total-cost card", "current clinical-site and learner-support evidence", "recognition and licensing suitability by target market", "clear separation of MBBS and University of Ghana articulation-route content" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted while the current-cycle route is closed and the two distinct medical pathways need careful separation." }
+}

@@ -1,0 +1,302 @@
+{
+  "batchId": "media-a-481-495",
+  "scope": "Alphabetical missing-media rows 481-495; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-washington",
+      "universityName": "University of Washington",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/11/02134810/W-Logo_Purple_RGB.png",
+        "sourceType": "official",
+        "rightsBasis": "official primary W-logo brand asset published on UW's own brand guidelines site (washington.edu/brand), served from the university's own S3-backed CDN",
+        "proposedPublicId": "university-of-washington-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/79/2023/03/10150639/w-statue-1920x700-headerA-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official campus header image (George Washington statue) declared as the og:image of UW's own About page, served from the university's own CDN",
+        "proposedPublicId": "university-of-washington-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-western-australia",
+      "universityName": "University of Western Australia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://static.weboffice.uwa.edu.au/visualid/devcore/1/_assets/img/uwacrest-small-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official UWA crest asset actively used in the site's own global header, served from UWA's own static asset subdomain",
+        "proposedPublicId": "university-of-western-australia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uwa.edu.au/_assets/opengraph.png",
+        "sourceType": "official",
+        "rightsBasis": "official sitewide Open Graph share image declared on the UWA homepage, served from UWA's own domain",
+        "proposedPublicId": "university-of-western-australia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-westminster",
+      "universityName": "University of Westminster",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.westminster.ac.uk/themes/uow_theme/images/navbar-westminster-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official navbar logo asset referenced by the live Drupal theme CSS of the university's own website",
+        "proposedPublicId": "university-of-westminster-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.westminster.ac.uk/sites/default/public-files/general-images/university-of-westminster-regent-street-campus_0_0.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official campus photo of the Regent Street building, served from the university's own public-files library and used on its About Us page",
+        "proposedPublicId": "university-of-westminster-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-windsor-nursing",
+      "universityName": "University of Windsor",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uwindsor.ca/sites/all/themes/uwindsor_bootstrap/images/uwindsor_logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand logo asset (also declared as the homepage's own og:image), served from the university's own theme assets",
+        "proposedPublicId": "university-of-windsor-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uwindsor.ca/sites/default/files/girl-hands-w.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage carousel image of a student by Dillon Hall, served from the university's own files directory",
+        "proposedPublicId": "university-of-windsor-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-wisconsin-madison",
+      "universityName": "University of Wisconsin–Madison",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://brand.wisc.edu/content/uploads/2023/09/hor-w-crest-logo-web-digital-color-resource1.png",
+        "sourceType": "official",
+        "rightsBasis": "official crest logo declared in wisc.edu's own Organization structured data (schema.org logo field), served from the university's own brand subdomain",
+        "proposedPublicId": "university-of-wisconsin-madison-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-wollongong",
+      "universityName": "University of Wollongong",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uow.edu.au/assets/logos/logo-svgs/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official primary logo SVG served from UOW's own website assets",
+        "proposedPublicId": "university-of-wollongong-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://pxl-uoweduau.terminalfour.net/fit-in/1600x900/filters:quality(80)/filters:format(jpg)/prod01/channel_3/assets/contributed/faculty-of-the-arts-social-sciences-amp-humanities/news-article-images/Wollongong-campus-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official Wollongong campus photograph used on the UOW homepage, served from UOW's own TerminalFour asset-management subdomain",
+        "proposedPublicId": "university-of-wollongong-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-zambia",
+      "universityName": "University of Zambia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unza.zm/sites/default/files/Unza%20Logo%20sm_0.png",
+        "sourceType": "official",
+        "rightsBasis": "official UNZA logo file served from the university's own website files directory",
+        "proposedPublicId": "university-of-zambia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.unza.zm/sites/default/files/2025-06/Service%20%26%20Excellence.png",
+        "sourceType": "official",
+        "rightsBasis": "official homepage hero banner (Great East Road campus building and graduate statue) served from the university's own website files directory",
+        "proposedPublicId": "university-of-zambia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-zurich",
+      "universityName": "University of Zurich",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uzh.ch/docroot/logos/uzh_logo_d_pos.svg",
+        "sourceType": "official",
+        "rightsBasis": "official UZH logo asset served from the university's own docroot logos path and referenced on its own homepage",
+        "proposedPublicId": "university-of-zurich-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uzh.ch/dam/jcr:ed612892-f777-499f-b8fa-65c7ca8ec146/openness.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage image captioned 'Students at the main entrance of the University of Zurich', served from UZH's own digital asset management (DAM) system",
+        "proposedPublicId": "university-of-zurich-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "uwi-st-augustine-mbbs",
+      "universityName": "University of the West Indies St. Augustine MBBS",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo re-confirmed. Cover remains unresolved: the declared og:image is still the same 257x170px low-resolution thumbnail (verified via direct pixel inspection). Checked the /about and /campus-life subpages (not scanned by the first pass) and found only a very wide 1120x175 four-panel event-photo collage strip and small 285x206 thumbnails - no standard-shaped, generic, high-resolution cover photo was found. Cover stays held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://sta.uwi.edu/wp-content/uploads/2024/08/logo-1.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site sta.uwi.edu, dedicated logo asset identified by the first pass, re-confirmed HTTP 200.",
+        "proposedPublicId": "uwi-st-augustine-mbbs-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-the-west-of-england",
+      "universityName": "University of the West of England, Bristol",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uwe.ac.uk/assets/img/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official UWE Bristol logo actively used in the site's own header, served from the university's own website assets",
+        "proposedPublicId": "university-of-the-west-of-england-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uwe.ac.uk/-/media/uwe/images/about/history.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official image captioned 'Historical and modern buildings at Frenchay Campus', used on UWE's own About page and served from the university's own media library",
+        "proposedPublicId": "university-of-the-west-of-england-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "universita-campus-bio-medico-di-roma",
+      "universityName": "Università Campus Bio-Medico di Roma",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unicampus.it/2.0/wp-content/uploads/assets/logo_UCBM_esteso.svg",
+        "sourceType": "official",
+        "rightsBasis": "official extended logo SVG served from the university's own website assets",
+        "proposedPublicId": "universita-campus-bio-medico-di-roma-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.unicampus.it/2.0/wp-content/uploads/2023/06/mission.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image declared as the og:image of the university's own Mission and History page",
+        "proposedPublicId": "universita-campus-bio-medico-di-roma-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "universita-cattolica-del-sacro-cuore-faculty-of-medicine-and-surgery-rome-campus-gemelli",
+      "universityName": "Università Cattolica del Sacro Cuore - Faculty of Medicine and Surgery (Rome campus / Gemelli)",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://static.unicatt.it/resources/common/assets/images/logo-unicatt-text.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Università Cattolica wordmark logo referenced by the Rome campus site (roma.unicatt.it), served from the university's own static asset subdomain",
+        "proposedPublicId": "universita-cattolica-del-sacro-cuore-faculty-of-medicine-and-surgery-rome-campus-gemelli-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://roma.unicatt.it/Campus%20di%20Roma%20Universit%C3%A0%20Cattolica%20del%20Sacro%20Cuore.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official Rome-campus image declared as the og:image of roma.unicatt.it, the university's own Rome campus site (the site hosting the Gemelli medical faculty)",
+        "proposedPublicId": "universita-cattolica-del-sacro-cuore-faculty-of-medicine-and-surgery-rome-campus-gemelli-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "universite-paris-saclay",
+      "universityName": "Université Paris-Saclay",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.universite-paris-saclay.fr/sites/default/files/media/2019-12/logo-ups.svg",
+        "sourceType": "official",
+        "rightsBasis": "official logo asset served from the university's own website media library",
+        "proposedPublicId": "universite-paris-saclay-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.universite-paris-saclay.fr/sites/default/files/2019-12/Etudiants-en-cours.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official classroom photo (title tag: 'Université Paris-Saclay', alt: 'Etudiants en cours') served from the university's own website files directory",
+        "proposedPublicId": "universite-paris-saclay-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-montreal",
+      "universityName": "Université de Montréal",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The header/footer wordmark logo (.udem-logo-udem) remains embedded only as inline base64 SVG inside compiled CSS, as the first pass found. Applied the favicon/higher-res-icon technique instead and found a standalone, independently-addressable vector file of the university's monogram mark..",
+      "logo": {
+        "sourceUrl": "https://www.umontreal.ca/safari-pinned-tab.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site umontreal.ca, standalone vector file of the 'UdeM' monogram mark (served as the site's Safari pinned-tab icon; matches the 180x180 apple-touch-icon.png raster version, viewed and visually confirmed), verified HTTP 200.",
+        "proposedPublicId": "university-of-montreal-logo"
+      }
+    },
+    {
+      "universitySlug": "uppsala-university",
+      "universityName": "Uppsala University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uu.se/images/18.17dda5f1791cdbd287d9b55/1622452923523/uu-logo-red.svg",
+        "sourceType": "official",
+        "rightsBasis": "official red UU logo served from the university's own website image system",
+        "proposedPublicId": "uppsala-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.uu.se/images/18.65a301b318851a3f9603b1e/1685347099566/_21A5236-HDR-1600px.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official photograph of a ceremony in the University's Grand Auditorium (Universitetsaulan), declared as the og:image of the university's own Study page",
+        "proposedPublicId": "uppsala-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

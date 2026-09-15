@@ -1,0 +1,260 @@
+{
+  "batchId": "media-a-421-435",
+  "scope": "Alphabetical missing-media rows 421-435; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-illinois-urbana-champaign",
+      "universityName": "University of Illinois Urbana-Champaign",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://illinois.edu/wp-content/uploads/2025/10/Illinois_logo_fullcolor_rgb.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-illinois-urbana-champaign-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-information-technology-vnu-hcmc",
+      "universityName": "University of Information Technology (UIT), VNU-HCM",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Checked the official uit.edu.vn homepage and its dedicated 'gioi-thieu-chung' (general introduction/about) page directly. All homepage/carousel banners found (uit_bannerweb_gioithieu_02.jpg, uit_bannerweb_20nam.png, uit_bannerweb_tuyensinh.png, banner_kiem_dinh.png) are stylized marketing graphics with overlaid slogan text and/or the same '20 năm' (20-year anniversary, 2006-2026) badge already flagged in the first pass - none is genuine unstaged campus photography. The about page's own inline images are only small decorative icons (max 223x226px), not cover-quality. No press/media/brand-kit page link was found on the site. Remains held; did not substitute a marketing graphic or a low-resolution icon."
+    },
+    {
+      "universitySlug": "university-of-kent",
+      "universityName": "University of Kent",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.kent.ac.uk/kent-theme-assets/assets/images/logo-unikent-dark-navy.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own theme assets path",
+        "proposedPublicId": "university-of-kent-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://media.www.kent.ac.uk/se/55373/CW32628-1920x1280_1920w.webp",
+        "sourceType": "official",
+        "rightsBasis": "official homepage og:image served from the university's own media subdomain",
+        "proposedPublicId": "university-of-kent-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "universityName": "University of Kragujevac Faculty of Medical Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://medf.kg.ac.rs/en/images/logo_mf.png",
+        "sourceType": "official",
+        "rightsBasis": "official faculty crest served from the faculty's own website",
+        "proposedPublicId": "university-of-kragujevac-faculty-of-medical-sciences-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified (faculty crest). No cover resolved: the official medf.kg.ac.rs homepage's only other image is a promotional video's poster frame (a 2022 video thumbnail with an implied play-button context), not a clean institutional cover photo. Do not substitute a video thumbnail for the cover field; none is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-latvia",
+      "universityName": "University of Latvia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.lu.lv/_assets/8025acc2f960517e92487790c6b2e479/img/logo_100_blue_en.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website, used as the footer logo with alt text 'University of Latvia'",
+        "proposedPublicId": "university-of-latvia-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. No cover resolved: every other image on the homepage is a news-story thumbnail tied to a specific dated article (e.g. a QS Rankings announcement), not a generic, reusable campus or institutional cover photo. No clean cover candidate is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-legia-and-company",
+      "universityName": "University of Legia and Company",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Re-confirmed via the Wikipedia opensearch API that no article exists for 'University of Legia' or 'Legia and Company' (closest fuzzy matches are unrelated: Legrand (company), Leggo and Company, University of Leicester, etc.) - consistent with the first pass's finding of only thin, speculative third-party directory listings and no verifiable official domain. No new identity information was found in this pass. This remains an unresolved-identity record, not a source-availability problem; no logo or cover is nominated.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "university-of-limerick",
+      "universityName": "University of Limerick",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.ul.ie/sites/default/files/2026-04/ul-drone-footage-frame.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage banner video poster frame, described on-site as 'a short looping flyover of the UL campus'",
+        "proposedPublicId": "university-of-limerick-cover"
+      },
+      "status": "ready",
+      "reason": "Cover captured and verified. No logo resolved: UL's homepage renders its header and footer wordmarks as inline SVG path data embedded directly in the page markup, and the only separate logo-like file is a low-opacity decorative background watermark (ul-logo-symbol-modern.svg) used behind text, not a clean standalone brand logo. No logo is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-lisbon-faculty-of-medicine",
+      "universityName": "University of Lisbon Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Wayback Machine technique bypassed the persistent SSL handshake failure and recovered both a clean combined logo and a genuine faculty-building facade photo from the same July 2026 snapshot..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260723103806im_/https://www.medicina.ulisboa.pt/sites/default/files/Logos_UL%2BFMUL_Traco_Central_Logos_UL%2BFMUL_Preto.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site medicina.ulisboa.pt (repeated SSL/TLS handshake failures on direct fetch) via Wayback Machine snapshot dated 2026-07-23; archived asset URL (combined Universidade de Lisboa + FMUL logo) verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-lisbon-faculty-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260723103806im_/https://www.medicina.ulisboa.pt/sites/default/files/styles/imagem_media/public/images-crop/2024-07/faculdadedemedicinadaulisboa.jpg?itok=tJyBnYBK",
+        "sourceType": "official",
+        "rightsBasis": "Same Wayback Machine snapshot of the official site, image alt-labelled 'fachada do edifício Egas Moniz' (facade of the Egas Moniz building); archived asset URL verified to resolve directly with its original itok query string (HTTP 200).",
+        "proposedPublicId": "university-of-lisbon-faculty-of-medicine-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-liverpool",
+      "universityName": "University of Liverpool",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.liverpool.ac.uk/rb/assets/icon.svg",
+        "sourceType": "official",
+        "rightsBasis": "official crest/shield icon asset served from the university's own domain, sharing the header logo's CSS class and used as the site's own icon",
+        "proposedPublicId": "university-of-liverpool-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-maribor",
+      "universityName": "University of Maribor",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.um.si/wp-content/themes/um_si/assets/images/logoen.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own theme assets path",
+        "proposedPublicId": "university-of-maribor-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.um.si/wp-content/uploads/2021/10/slide-2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage og:image served from the university's own uploads path",
+        "proposedPublicId": "university-of-maribor-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-massachusetts-amherst",
+      "universityName": "University of Massachusetts Amherst",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.umass.edu/favicons/apple-touch-icon.png",
+        "sourceType": "official",
+        "rightsBasis": "official 'block M' brand mark served from the university's own domain as its apple-touch-icon",
+        "proposedPublicId": "university-of-massachusetts-amherst-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified ('block M' brand mark). No cover resolved: header and footer wordmarks are inline SVG, and the only two content images found on the homepage are story-specific thumbnails, one explicitly credited to Getty (a licensed third-party stock photo), so neither is a reusable official institutional cover image. No cover is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-medicine-tirana",
+      "universityName": "University of Medicine, Tirana",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://umed.edu.al/wp-content/uploads/2024/04/Logo-universiteti-Black-pa-Text.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own uploads path",
+        "proposedPublicId": "university-of-medicine-tirana-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://umed.edu.al/wp-content/uploads/2024/05/Fakulteti-i-mjeksesise-Hero-background-scaled.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage hero background image, also used as the site's og:image",
+        "proposedPublicId": "university-of-medicine-tirana-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-messina-italy",
+      "universityName": "University of Messina",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Wayback Machine technique recovered the site's current logo-new.png (all live homepage hero sliders were time-bound admissions/tax-campaign banners, e.g. '5x1000' and course-year-specific graphics, not usable as a generic cover). Cover sourced instead via the Commons-license technique..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260623120953im_/https://www.unime.it/sites/default/files/logo-new.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site unime.it (returns HTTP 405 with an AWS WAF CAPTCHA on direct fetch) via Wayback Machine snapshot dated 2026-06-23; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-messina-italy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ripresa_notturna_della_Facolta_di_Ingegneria_Messina.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, nighttime photo of the Department of Engineering (Polo Papardo campus).",
+        "proposedPublicId": "university-of-messina-italy-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-miami",
+      "universityName": "University of Miami",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://cdn.miami.edu/_assets-common/images/system/um-print-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own CDN subdomain",
+        "proposedPublicId": "university-of-miami-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://welcome.miami.edu/_assets/images/homepage-images/experience-um-images/Lawn-poincianna-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage 'Experience UM' campus photo gallery image, captioned 'The University of Miami campus in summer'",
+        "proposedPublicId": "university-of-miami-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-michigan-ann-arbor",
+      "universityName": "University of Michigan, Ann Arbor",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://umich.edu/skins/um2013/media/images/U-M-logo-preview.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage og:image, explicitly filenamed as the university's logo preview and served from the university's own domain",
+        "proposedPublicId": "university-of-michigan-ann-arbor-logo"
+      },
+      "status": "ready"
+    }
+  ]
+}

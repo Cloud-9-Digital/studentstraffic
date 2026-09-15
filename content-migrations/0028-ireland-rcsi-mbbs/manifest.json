@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0028-ireland-rcsi-mbbs",
+  "description": "Publish RCSI University of Medicine and Health Sciences direct-entry Medicine record (Ireland).",
+  "createdAt": "2026-07-25",
+  "payload": "payload.json"
+}

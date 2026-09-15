@@ -1,0 +1,18 @@
+{
+  "countrySlug": "cuba",
+  "universitySlug": "escuela-latinoamericana-de-medicina",
+  "schoolName": "Escuela Latinoamericana de Medicina",
+  "cityName": "Havana",
+  "priority": "medium",
+  "officialWebsite": "",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The World Directory of Medical Schools lists ELAM as a currently operational public school in Havana with medicine programmes, a six-year duration and Spanish-language website information. Recent Cuban official media describes ELAM's international scholarship-oriented mission, but no current official, direct applicant page was found that verifies a universal intake, a self-funded route, a full fee schedule, accommodation terms, or the nomination process for a defined target country. Hold until an embassy, ministry or ELAM source provides a current country-specific call and the recognition path is evaluated market by market.",
+  "sourceBundle": { "sources": [
+    { "label": "World Directory of Medical Schools ELAM record", "url": "https://search.wdoms.org/home/SchoolDetail/F0000327", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists ELAM as public, currently operational, in Havana, with more than one medical-degree programme/track and Spanish-language school information; lists six years." },
+    { "label": "Granma ELAM international certification report", "url": "https://www.granma.cu/cuba/2024-01-25/escuela-latinoamericana-de-medicina-primera-institucion-medica-de-cuba-certificada-por-la-udual", "kind": "official-media", "checkedAt": "2026-07-25", "notes": "Reports ELAM's 2024 international certification announcement; not sufficient to establish licensing eligibility in any target jurisdiction." },
+    { "label": "Granma ELAM scholarship-mission report", "url": "https://www.granma.cu/cuba/2023-12-03/elam-mucho-mas-que-aprender-medicina", "kind": "official-media", "checkedAt": "2026-07-25", "notes": "Describes ELAM's public scholarship-oriented international mission, but does not provide a current universal application process or fee schedule." }
+  ] },
+  "structuredFacts": { "name": "Escuela Latinoamericana de Medicina", "type": "Public international medical school", "programs": [ { "officialTitle": "Medical degree programme/track", "duration": "6 years listed in WDOMS", "feeStatus": "No current official fee schedule or target-country scholarship award terms verified", "publishable": false } ], "missingForPublication": [ "current country-specific official call and nomination route", "eligibility, age and academic criteria for intended audience", "fee/funding, housing, insurance and travel terms", "instruction and language-preparation details", "clinical-placement and degree-awarding route", "market-specific professional registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because scholarship availability and applicant pathway vary by country and require current primary confirmation." }
+}

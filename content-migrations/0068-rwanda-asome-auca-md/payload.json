@@ -1,0 +1,374 @@
+{
+  "countries": [
+    {
+      "slug": "rwanda",
+      "name": "Rwanda",
+      "region": "Africa",
+      "summary": "Rwanda is a Central-East African nation that shifted its higher education system to English-medium instruction, home to ASOME (Adventist University of Central Africa School of Medicine), a newer, WHO-listed, direct-entry Doctor of Medicine programme in Kigali with regional medical-regulator recognition.",
+      "whyStudentsChooseIt": "Rwanda offers an internationally recognized, WHO-listed, English-medium medical degree with a direct-entry curriculum and regional East African Community regulator recognition, at a private university with strong US academic-partner involvement in curriculum development.",
+      "climate": "Temperate tropical highland climate due to elevation, with mild temperatures year-round and two rainy seasons.",
+      "currencyCode": "RWF",
+      "metaTitle": "Study MBBS and Medicine in Rwanda",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Rwanda, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 7,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. ASOME (Adventist University of Central Africa School of Medicine) maps its English-medium Doctor of Medicine programme to this category: a direct-entry, single-cycle 6.5-year academic programme plus a mandatory one-year internship.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "rwanda",
+      "slug": "adventist-university-of-central-africa-school-of-medicine",
+      "name": "Adventist University of Central Africa School of Medicine",
+      "city": "Kigali",
+      "type": "Private",
+      "establishedYear": 2021,
+      "officialWebsite": "https://asome.health/",
+      "mediaAttribution": {},
+      "summary": "ASOME (the Adventist School of Medicine of East-Central Africa), the School of Medicine of the Adventist University of Central Africa, runs a direct-entry, English-medium Doctor of Medicine programme on AUCA's Masoro campus near Kigali. Officially inaugurated by Rwanda's President in September 2019, ASOME admitted its first cohort in March 2021 with curriculum support from Loma Linda University in the US, and is listed as currently operational in the WHO World Directory of Medical Schools.",
+      "campusLifestyle": "Students train on AUCA's Masoro campus, a private Adventist university whose medical programme was developed with curriculum and faculty support from Loma Linda University in the United States, with a stated emphasis on community health integration from the start of the programme.",
+      "cityProfile": "Kigali is Rwanda's capital, and AUCA's Masoro campus sits on its outskirts; Rwanda's national shift to English-medium higher education gives the country an increasingly international academic environment.",
+      "practicalExposure": "The 6.5-year (13-semester) Doctor of Medicine curriculum is competency-based, covering worldview, general knowledge, basic sciences and clinical sciences, with community health integration built in from the start of the programme, followed by a mandatory one-year internship before full medical registration; no specific affiliated teaching hospital is named on the university's own materials.",
+      "hostelOverview": "On-campus boarding is bundled into ASOME's single annual 'Tuition and Boarding' fee, implying accommodation is included for enrolled students, though no separate room-type or amenity breakdown is published. A distinct Guest House on campus offers short-stay lodging for visitors and family, separate from regular student housing.",
+      "dietarySupport": "Boarding (which typically includes meals) is bundled into the annual tuition-and-boarding fee; no separate meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants apply through ASOME's own online application portal, submitting NESA-equivalency-assessed academic documents alongside standard application materials.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0007209) as currently operational, with a confirmed direct-entry prerequisite (completed secondary education, no prior degree required).",
+        "Included on the Rwanda Medical and Dental Council's list of medical schools given reciprocal recognition across East African Community partner states (Rwanda, Kenya, Uganda, Tanzania, Burundi, South Sudan).",
+        "Curriculum and faculty development supported by Loma Linda University in the United States.",
+        "Officially inaugurated by Rwanda's President and First Lady in September 2019, reflecting direct government engagement with the programme's establishment.",
+        "A clear, published international ('Outside Africa') fee tier bundling tuition and boarding into a single annual figure."
+      ],
+      "thingsToConsider": [
+        "This is a newer medical school, with its first cohort admitted only in March 2021; it does not yet have a graduating class with an established track record.",
+        "No affiliated teaching hospital is named anywhere on the university's own official pages -- confirm current clinical-training sites directly with ASOME before enrolling.",
+        "No fixed, dated intake month or application deadline is published for the current cycle; the historical first intake was in March, but this is not confirmed as a recurring annual date.",
+        "No dedicated scholarship or financial-aid programme was found; only third-party sponsorship is accommodated, not administered directly by the university.",
+        "Rwanda's Higher Education Council does not appear to have a document specifically naming ASOME's medical programme (only broader institutional accreditation for AUCA was found), and the Adventist Accrediting Association's accreditation of AUCA is institution-wide rather than programme-specific."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, English-medium direct-entry medical degree with US-university-supported curriculum development, comfortable with a newer, still-establishing institution.",
+        "Applicants able to confirm current-cycle intake dates and clinical-training-site details directly with the university given some information is not yet published online.",
+        "Families comfortable with the bundled tuition-and-boarding fee structure rather than itemized cost breakdowns."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0007209, currently operational",
+        "Rwanda Medical and Dental Council (RMDC) -- reciprocal recognition across East African Community partner states",
+        "Adventist Accrediting Association (AAA) -- AUCA institutionally accredited through 2030 (Level C)"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- ASOME listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0007209" },
+        { "label": "Rwanda Medical and Dental Council -- approved medical schools with EAC reciprocal recognition", "url": "https://rmdc.rw/spip.php?id_article=9&page=article" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Doctor of Medicine programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools confirms admission follows completion of secondary education, with no prior university degree required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Doctor of Medicine (MD) degree after 6.5 years (13 semesters) of study, followed by a mandatory one-year internship."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "ASOME publishes a single bundled annual 'Tuition and Boarding' fee by region: USD 18,000/year for applicants from outside Africa (which includes India), USD 16,000/year for Southern Indian Ocean and West Africa Division countries, and USD 14,000/year for East-Central Africa Division countries, plus a USD 100 application fee."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "Applicants' secondary certificates are assessed against Rwanda's National Examination and School Inspection Authority (NESA) framework, requiring Biology, Chemistry and Mathematics or Physics combinations at Grade A or B (one C accepted in exceptional cases). No explicit conversion table for Indian 12th-grade marks is published, so applicants should confirm equivalency directly with ASOME."
+        },
+        {
+          "question": "What English-proficiency score is required?",
+          "answer": "A minimum of IELTS 6.0, TOEFL iBT 75, PTE 50, or Duolingo 100."
+        },
+        {
+          "question": "When can I apply and when does the academic year start?",
+          "answer": "No fixed, dated intake month or application deadline is currently published; the university encourages early application. Applicants may still apply while awaiting final secondary-school results."
+        },
+        {
+          "question": "Is on-campus accommodation available?",
+          "answer": "Boarding is bundled into the annual tuition-and-boarding fee, implying accommodation is included, though no separate room-type breakdown is published. A distinct on-campus Guest House exists for short-stay visitors, separate from regular student housing."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Rwanda?",
+          "answer": "The university is on the Rwanda Medical and Dental Council's list of schools given reciprocal recognition across East African Community partner states. For India specifically, graduates would need to separately satisfy India's National Medical Commission screening requirements; this was not independently verified against an NMC source, and the programme does not yet have a graduating class."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- ASOME listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0007209",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry prerequisite, founding year, language of instruction and operational status."
+        },
+        {
+          "label": "Rwanda Medical and Dental Council -- approved medical schools with EAC reciprocal recognition",
+          "url": "https://rmdc.rw/spip.php?id_article=9&page=article",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence that AUCA is listed among Rwanda's medical schools given reciprocal recognition across East African Community partner states."
+        },
+        {
+          "label": "ASOME -- programs page",
+          "url": "https://asome.health/programs/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for programme duration, structure and the current single-programme (MD only) status."
+        },
+        {
+          "label": "ASOME -- admissions page",
+          "url": "https://asome.health/admissions/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for eligibility criteria, English-proficiency thresholds, application process and the bundled tuition-and-boarding fee schedule by region."
+        },
+        {
+          "label": "Government of Rwanda -- President Kagame inaugurates ASOME",
+          "url": "https://www.gov.rw/blog-detail/president-kagame-inaugurates-the-adventist-school-of-medicine-of-east-central-africa",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the official September 2019 government inauguration of the programme."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "research_ready",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry maths/physics grades", "English proficiency status", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "NESA equivalency status", "English proficiency proof", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "asome-auca-school-of-medicine-md",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Doctor of Medicine (MD)",
+          "durationYears": 7,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 18000,
+            "officialTotalTuitionAmount": 117000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published bundled 'Tuition and Boarding' fee for the 'Outside Africa' region tier (which includes India): USD 18,000/year, confirmed on the official admissions page. This figure combines tuition AND boarding into a single line item -- no unbundled tuition-only figure is published. A separate USD 100 non-refundable application fee also applies. Lower regional tiers exist for East-Central African (USD 14,000/year) and Southern Indian Ocean/West Africa Division (USD 16,000/year) applicants, not applicable to most of this platform's audience. Total is calculated as the annual figure times 6.5 academic years, rounded to 7 for the catalogue's year-count field -- not published as a lump sum."
+          },
+          "officialProgramUrl": "https://asome.health/admissions/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education with NESA-assessed Biology, Chemistry and Mathematics-or-Physics grades of A or B"
+            ],
+            "restrictions": [
+              "Minimum age 18, with preference given to applicants under 35",
+              "Minimum English proficiency of IELTS 6.0, TOEFL iBT 75, PTE 50, or Duolingo 100"
+            ],
+            "notes": "No explicit foreign-credential conversion table (e.g. for Indian 12th-grade marks) is published; applicants should confirm equivalency directly with ASOME.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://asome.health/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online through ASOME's dedicated application portal, submit NESA-assessed academic documents and supporting materials, pay the application fee, and qualifying applicants are invited to an interview.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education with NESA-assessed science-subject grades of A or B, plus proof of English proficiency.",
+              "items": [
+                "Secondary-school certificate assessed against Rwanda's NESA framework (Biology-Chemistry-Mathematics or Biology-Chemistry-Physics, Grade A or B)",
+                "Minimum English-proficiency score (IELTS 6.0, TOEFL iBT 75, PTE 50, or Duolingo 100)",
+                "Motivation letter, physician's fitness letter and police clearance within 6 months"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply via ASOME's online application portal",
+              "Submit all required academic and supporting documents",
+              "Pay the USD 100 non-refundable application fee",
+              "Attend an interview if invited following document review",
+              "Complete registration and confirm vaccination and health-insurance requirements"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified secondary-school certificate/diploma, NESA-assessed",
+                "English-proficiency test certificate"
+              ],
+              "application": [
+                "Valid passport or national ID copy",
+                "Physician's fitness letter and police clearance certificate"
+              ]
+            },
+            "deadlinesNote": "No fixed, dated intake month or application deadline is currently published; the university encourages early submission and accepts applications from students awaiting final secondary-school results.",
+            "visaConsiderations": [
+              "Confirm current Rwandan student-visa and health-insurance requirements directly with ASOME."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["March"],
+          "intakeCodes": ["march"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current bundled tuition-and-boarding fee of USD 18,000/year for the 'Outside Africa' tier, plus a USD 100 application fee, from the official admissions page. No unbundled tuition-only figure is published.",
+          "teachingPhases": [
+            {
+              "phase": "6.5-year (13-semester) Doctor of Medicine programme plus 1-year internship",
+              "language": "English",
+              "details": "Competency-based curriculum covering worldview, general knowledge, basic sciences and clinical sciences, with community health integration from the start of the programme; no specific affiliated teaching hospital is named in official university materials."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "publicField": "identity",
+      "claimText": "ASOME was officially inaugurated by Rwanda's President in September 2019 and admitted its first cohort in March 2021; it is currently operational.",
+      "status": "verified",
+      "sourceLabel": "Government of Rwanda -- President Kagame inaugurates ASOME",
+      "sourceUrl": "https://www.gov.rw/blog-detail/president-kagame-inaugurates-the-adventist-school-of-medicine-of-east-central-africa",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "programmeSlug": "asome-auca-school-of-medicine-md",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0007209) as currently operational, with a confirmed direct-entry prerequisite (completed secondary education, no prior degree required) and English language of instruction.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- ASOME listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0007209",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "publicField": "recognition",
+      "claimText": "AUCA is listed on Rwanda's Medical and Dental Council register of medical schools given reciprocal recognition across East African Community partner states.",
+      "status": "verified",
+      "sourceLabel": "Rwanda Medical and Dental Council -- approved medical schools with EAC reciprocal recognition",
+      "sourceUrl": "https://rmdc.rw/spip.php?id_article=9&page=article",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "programmeSlug": "asome-auca-school-of-medicine-md",
+      "publicField": "academics",
+      "claimText": "Doctor of Medicine is a 6.5-year (13-semester), competency-based direct-entry programme covering worldview, general knowledge, basic sciences and clinical sciences, followed by a mandatory 1-year internship.",
+      "status": "verified",
+      "sourceLabel": "ASOME -- programs page",
+      "sourceUrl": "https://asome.health/programs/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "programmeSlug": "asome-auca-school-of-medicine-md",
+      "publicField": "eligibility",
+      "claimText": "Admission requires a NESA-assessed secondary-school certificate (Biology-Chemistry-Mathematics or Biology-Chemistry-Physics, Grade A or B) and minimum English proficiency of IELTS 6.0 / TOEFL iBT 75 / PTE 50 / Duolingo 100.",
+      "status": "verified",
+      "sourceLabel": "ASOME -- admissions page",
+      "sourceUrl": "https://asome.health/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "programmeSlug": "asome-auca-school-of-medicine-md",
+      "publicField": "admissions",
+      "claimText": "Applicants apply online via ASOME's dedicated application portal, pay a USD 100 application fee, and qualifying applicants are invited to an interview; no fixed current-cycle deadline is published.",
+      "status": "verified",
+      "sourceLabel": "ASOME -- admissions page",
+      "sourceUrl": "https://asome.health/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "programmeSlug": "asome-auca-school-of-medicine-md",
+      "publicField": "intake",
+      "claimText": "The first cohort began classes in March 2021; no fixed, dated recurring intake month is confirmed as current on the university's own admissions or calendar pages.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- ASOME listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0007209",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "programmeSlug": "asome-auca-school-of-medicine-md",
+      "publicField": "fee",
+      "claimText": "Bundled 'Tuition and Boarding' fee of USD 18,000/year for the 'Outside Africa' regional tier (applicable to Indian applicants), plus a USD 100 application fee, published on the official admissions page.",
+      "status": "verified",
+      "sourceLabel": "ASOME -- admissions page",
+      "sourceUrl": "https://asome.health/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

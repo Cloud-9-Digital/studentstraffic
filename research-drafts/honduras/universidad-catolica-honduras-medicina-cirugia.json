@@ -1,0 +1,19 @@
+{
+  "scope": "Honduras medical discovery — Universidad Católica de Honduras Medicine and Surgery",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Universidad Católica de Honduras' official 2026 Medicine and Surgery programme sheet lists 85 classes and an eight-year duration.",
+      "sourceUrl": "https://www.unicah.edu/wp-content/uploads/2026/02/medicina-y-cirugia-2026.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official tuition, mandatory charges or payment schedule was located for Medicine and Surgery.",
+    "No official current admission calendar or complete eligibility requirements were located, including any international-applicant route.",
+    "Teaching language, current curriculum detail, named clinical partners, internship conditions, recognition evidence, accommodation, scholarships/loans and student support were not verified from authoritative current sources."
+  ],
+  "nextAction": "Obtain UNICAH's current Medicine and Surgery admissions, fee and programme documents, followed by direct evidence of clinical training, recognition and support, before considering a payload."
+}

@@ -1,0 +1,19 @@
+{
+  "countrySlug": "saint-vincent-and-the-grenadines",
+  "universitySlug": "all-saints-university-college-of-medicine-saint-vincent",
+  "schoolName": "All Saints University College of Medicine, Saint Vincent and the Grenadines",
+  "cityName": "Kingstown",
+  "priority": "medium",
+  "officialWebsite": "https://allsaintsu.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - All Saints' Saint Vincent site describes four-year and five-year MD routes, a detailed basic/clinical curriculum and a USD fee schedule. Its site says premium clinical placements may cost more and cites institutional support; current authorisation/accreditation, clinical-site availability, language/admissions terms and target-market recognition must be independently checked before publication.",
+  "sourceBundle": { "sources": [
+    { "label": "All Saints Saint Vincent academic programmes", "url": "https://allsaintsu.org/academic-programs/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the Saint Vincent College of Medicine's MD routes and the premedical pathway." },
+    { "label": "All Saints Saint Vincent academic curriculum", "url": "https://allsaintsu.org/academic-curriculum/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes basic-science and clinical curriculum components and core specialties." },
+    { "label": "All Saints Saint Vincent tuition and fees", "url": "https://allsaintsu.org/financials-tuition-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists route-level totals and semester components in USD; notes potential additional premium-placement costs." },
+    { "label": "All Saints Saint Vincent student-support statement", "url": "https://allsaintsu.org/", "kind": "official-support", "checkedAt": "2026-07-25", "notes": "Institution describes academic, social and emotional support; detailed eligibility and service scope require confirmation." }
+  ] },
+  "structuredFacts": { "name": "All Saints University College of Medicine, Saint Vincent and the Grenadines", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4-year and 5-year routes", "feeStatus": "Official stated total school fees: USD 83,325 for the four-year route and USD 100,865 for the five-year route; premium clinical placement costs may be additional.", "publishable": false } ], "missingForPublication": [ "current independent regulator and accreditor records", "clinical-site inventory, availability and placement-cost terms", "language of instruction and route-specific admissions verification", "target-market licensing, recognition and eligibility analysis", "all-in living, travel and clinical-phase cost reconciliation" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until authorisation, clinical-training and professional-outcome claims are independently scoped." }
+}

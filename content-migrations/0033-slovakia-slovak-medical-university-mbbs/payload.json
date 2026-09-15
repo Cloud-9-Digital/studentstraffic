@@ -1,0 +1,393 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Slovak Medical University in Bratislava maps its English-medium General Medicine programme to this category: a direct-entry, single-cycle six-year programme leading to the MUDr qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "slovakia",
+      "slug": "slovak-medical-university-bratislava",
+      "name": "Slovak Medical University in Bratislava",
+      "city": "Bratislava",
+      "type": "Public",
+      "establishedYear": 2002,
+      "officialWebsite": "https://eszu.sk/en/",
+      "mediaAttribution": {},
+      "summary": "Slovak Medical University in Bratislava, established in 2002 under the Ministry of Health of the Slovak Republic, runs a small, selective English-medium General Medicine programme leading to the MUDr degree. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 2006 onward, and its accreditor, the Slovak Accreditation Agency for Higher Education, is recognized by the World Federation for Medical Education.",
+      "campusLifestyle": "The English-medium General Medicine track admits a deliberately small cohort of just 15 students per cycle, with admission ranked strictly by entrance-exam score up to that capacity. The programme's conditions are formally re-approved each year by the Faculty's Programme Council and Quality Council.",
+      "cityProfile": "Bratislava is Slovakia's capital. The university's clinical departments operate jointly with University Hospital Bratislava, reflected in named SMU clinics that are explicitly co-designated as SMU-and-University-Hospital-Bratislava joint departments.",
+      "practicalExposure": "The six-year, 360-ECTS General Medicine programme combines theoretical and preclinical instruction with simulator-based and bedside clinical teaching. Clinical departments are co-located with University Hospital Bratislava, evidenced by named joint SMU-and-hospital clinics. Graduates receive the MUDr (Doktor Vseobecneho Lekarstva) degree, a Slovak state medical qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+      "hostelOverview": "The university's own 2026/27 admissions document states explicitly that Slovak Medical University does not provide accommodation for students in the English-language General Medicine programme; students on this track should budget for private rental housing in Bratislava. A separate general SMU accommodation page advertises a student dormitory with rates around EUR 135/bed/month during the academic year, but this may not extend to the English-track cohort given the programme-specific exclusion, so applicants should confirm directly with the university before relying on it.",
+      "dietarySupport": "Meals are available through the university's own cafeteria; no separate meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found. Admissions and student queries are handled through the Faculty's Pedagogical Department.",
+      "studentSupport": "Admissions correspondence is handled by the Faculty's Pedagogical Department (Pedagogicky odbor), reachable by mail at the university's Limbova 12 address in Bratislava.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002854), currently operational, with ECFMG-certification eligibility for graduates from 2006 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "Accreditation from the Slovak Accreditation Agency for Higher Education (SAAHE), a body recognized by the World Federation for Medical Education, most recently confirmed accredited on 6 March 2024.",
+        "The MUDr degree carries EU Directive 2005/36/EC automatic recognition across the EU and EEA as a Slovak state medical qualification.",
+        "A transparent, single-instrument admissions process: ranking is based solely on a 160-question Biology and Chemistry entrance exam, with no separate interview stage.",
+        "Clinical departments co-located with University Hospital Bratislava, a major public teaching hospital."
+      ],
+      "thingsToConsider": [
+        "The university explicitly does not provide accommodation for English-track General Medicine students; budget for private rental housing in Bratislava.",
+        "Only 15 places are available per cycle, making this a small, competitive cohort by design.",
+        "The most recent admissions cycle (application deadline 31 May 2026, entrance exam 1 July 2026) has already closed as of this record's research date; the university has not yet published next-cycle dates.",
+        "No specific English-proficiency test score (such as IELTS or TOEFL) is stated as a requirement on the university's own official admissions document, despite some third-party sites claiming one -- confirm current language requirements directly with the university.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a 160-question Biology and Chemistry entrance exam and comfortable with a small, highly selective cohort.",
+        "Applicants who have already arranged private accommodation in Bratislava, since the university does not provide housing for this programme.",
+        "Families prioritizing EU-wide licence recognition at a lower tuition point than many Western European medical schools."
+      ],
+      "industryPartners": [
+        "University Hospital Bratislava"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0002854), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 2006-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Slovak Accreditation Agency for Higher Education (SAAHE), recognized by the World Federation for Medical Education (WFME) — programme status Accredited, 6 March 2024",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Slovak MUDr medical qualification across the EU/EEA"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Slovak Medical University listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0002854" },
+        { "label": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)", "url": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf" }
+      ],
+      "faq": [
+        {
+          "question": "Is the General Medicine programme direct-entry after high school?",
+          "answer": "Yes. Admission requires completed secondary or secondary vocational education, with no prior university study required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MUDr degree, a Slovak state medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA."
+        },
+        {
+          "question": "How competitive is admission?",
+          "answer": "Only 15 places are offered per cycle in the English-medium track, and applicants are ranked strictly by their entrance-exam score up to that capacity."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A 150-minute, 160-question multiple-choice exam covering Biology (80 questions) and Chemistry (80 questions), written in English, within secondary-school curriculum scope."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 10,000 per year, per the university's official 2026/27 admissions document, plus a separate, largely non-refundable EUR 70 admission fee (refundable only if the university does not open the programme due to low applicant numbers)."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "No. The university's official admissions document states explicitly that it does not provide accommodation for students in the English-language General Medicine programme; students should plan for private rental housing in Bratislava."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The most recent cycle had an application deadline of 31 May 2026 and an entrance exam on 1 July 2026; that cycle has closed, and the university had not yet published next-cycle dates at the time of research."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Slovak Medical University listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0002854",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, ECFMG graduation-year eligibility and SAAHE/WFME accreditation status."
+        },
+        {
+          "label": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+          "url": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for confirmed tuition, admission fee, entrance-exam format, deadlines and the accommodation exclusion clause."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20160524",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Slovak MUDr qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "Slovak Medical University — electronic application registration page",
+          "url": "https://eszu.sk/lf/lf-uchadzac-eng/lf-uchadzac-eng-electronic-application-registration/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the admissions process and application portal (MAIS e-application)."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "slovak-medical-university-bratislava-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (English Programme)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 60000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: EUR 10,000/year, per the university's official English Programme admissions PDF (signed off by the Programme Council and Quality Council in November 2025). Total is calculated as the annual figure times 6 years -- not published as a lump sum. A separate EUR 70 admission fee applies, refundable only if the university cancels the programme due to low applicant numbers. No tuition refund/withdrawal policy is published. What the tuition specifically covers is not itemized."
+          },
+          "officialProgramUrl": "https://eszu.sk/faculty-of-medicine/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary or secondary vocational education"
+            ],
+            "restrictions": [
+              "Only 15 places are offered per cycle; ranking is strictly by entrance-exam score up to that capacity",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "No specific English-proficiency test score is stated as an official requirement, though the entrance exam itself is administered in English.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Applicants register via the MAIS online e-application system, mail a signed application with supporting documents, pay the admission fee, and sit an in-person Biology and Chemistry entrance exam in Bratislava; places are offered strictly by exam-score ranking up to the 15-seat capacity.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education, a medical fitness certificate, and a passing rank on the university's own Biology and Chemistry entrance exam.",
+              "items": [
+                "Secondary-school leaving certificate, apostilled with certified Slovak translation",
+                "Foreign secondary-education recognition statement or a formal recognition Decision, depending on the applicant's country",
+                "160-question, 150-minute Biology and Chemistry entrance exam, written in English, at a Bratislava sitting",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Register online via the MAIS e-application system (szumais.sk/eprihlaska)",
+              "Print, sign and mail the application with supporting documents to the Faculty's Pedagogical Department in Bratislava",
+              "Pay the EUR 70 admission fee by bank transfer",
+              "Sit the Biology and Chemistry entrance exam in person in Bratislava",
+              "Await the ranked results list published on the university website"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school leaving certificate, apostilled and translated into Slovak (current-year graduates may submit on exam day)",
+                "Foreign secondary-education recognition statement or formal recognition Decision"
+              ],
+              "application": [
+                "Passport or ID copy",
+                "Medical fitness certificate and Hepatitis B vaccination certificate",
+                "Birth certificate, certified Slovak translation",
+                "CV in English and a passport photo"
+              ]
+            },
+            "deadlinesNote": "The most recent cycle had an application deadline of 31 May 2026 and an entrance exam on 1 July 2026; both have passed. Next-cycle dates were not yet published at the time of research.",
+            "visaConsiderations": [
+              "Confirm current Slovak student-visa and residence requirements directly with the university, since it does not provide accommodation for this programme."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 tuition is EUR 10,000/year, per the university's official English Programme admissions PDF. A separate EUR 70 admission fee applies, refundable only if the university cancels the programme for low enrollment. No tuition refund policy or fee-inclusion breakdown is published.",
+          "teachingPhases": [
+            {
+              "phase": "6-year integrated General Medicine programme",
+              "language": "English",
+              "details": "Combines theoretical and preclinical instruction with simulator-based and bedside clinical teaching across 360 ECTS credits, with clinical departments co-located with University Hospital Bratislava; a detailed year-by-year rotation breakdown was not published by the university."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "publicField": "identity",
+      "claimText": "Slovak Medical University in Bratislava was established effective 1 September 2002.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002854",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002854",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002854), currently operational; graduates (2006-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002854",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002854",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "publicField": "recognition",
+      "claimText": "Programme accredited by the Slovak Accreditation Agency for Higher Education (SAAHE), a WFME-recognized agency, with status 'Accredited' most recently confirmed 6 March 2024.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002854",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002854",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "programmeSlug": "slovak-medical-university-bratislava-general-medicine",
+      "publicField": "recognition",
+      "claimText": "The MUDr medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, applicable to any accredited Slovak university awarding it, including Slovak Medical University.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20160524",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "programmeSlug": "slovak-medical-university-bratislava-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine (English Programme) is a 6-year, 360-ECTS direct-entry programme awarding the MUDr degree, admitting a planned 15 students per cycle.",
+      "status": "verified",
+      "sourceLabel": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+      "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "programmeSlug": "slovak-medical-university-bratislava-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires completed secondary education and a passing rank on a 160-question, 150-minute Biology and Chemistry entrance exam written in English; no separate English-proficiency test score is stated as an official requirement.",
+      "status": "verified",
+      "sourceLabel": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+      "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "programmeSlug": "slovak-medical-university-bratislava-general-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via MAIS online e-application plus a mailed signed application; EUR 70 admission fee; entrance exam sat in person in Bratislava; results published by ranked list.",
+      "status": "verified",
+      "sourceLabel": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+      "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "programmeSlug": "slovak-medical-university-bratislava-general-medicine",
+      "publicField": "intake",
+      "claimText": "2026/27 cycle: application deadline 31 May 2026, entrance exam 1 July 2026 in Bratislava; both have passed as of the research date, with no next-cycle dates yet published.",
+      "status": "verified",
+      "sourceLabel": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+      "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "programmeSlug": "slovak-medical-university-bratislava-general-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition: EUR 10,000/year, plus a separate EUR 70 admission fee (refundable only if the university cancels the programme for low enrollment); no tuition refund policy published.",
+      "status": "verified",
+      "sourceLabel": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+      "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "slovak-medical-university-bratislava",
+      "publicField": "student living",
+      "claimText": "The university's official 2026/27 English Programme admissions document states explicitly that accommodation is not provided for students in the English-language General Medicine programme.",
+      "status": "verified",
+      "sourceLabel": "Slovak Medical University — official 2026/27 English Programme admissions information (PDF)",
+      "sourceUrl": "https://eszu.sk/wp-content/uploads/INFO-ADMISSION-GM-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

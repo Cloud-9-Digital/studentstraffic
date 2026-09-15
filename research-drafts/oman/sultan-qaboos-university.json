@@ -1,0 +1,19 @@
+{
+  "countrySlug": "oman",
+  "universitySlug": "sultan-qaboos-university",
+  "schoolName": "Sultan Qaboos University",
+  "cityName": "Muscat",
+  "priority": "medium",
+  "officialWebsite": "https://www.squ.edu.om/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - SQU's College of Medicine and Health Sciences states that its MD curriculum is outcome-based, case-based and integrated, and that the MD programme was re-accredited in 2023 for five years by AMEEMR in accordance with WFME standards. The college describes its relationship with Sultan Qaboos University Hospital for training and clinical service. SQU's Afaaq international-student document lists 220 credit hours at OMR 300 per hour and a total of OMR 64,560 for Medicine and Health Sciences. Hold pending confirmation that the Afaaq route is open to the intended nationality/current cycle, current entry and language criteria, cost inclusions/exclusions, accommodation/visa support and professional-registration analysis.",
+  "sourceBundle": { "sources": [
+    { "label": "SQU College of Medicine dean message", "url": "https://www.squ.edu.om/medicine/About-College/Deans-message", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the current MD curriculum, SQU Hospital relationship and AMEEMR five-year re-accreditation in 2023." },
+    { "label": "SQU Afaaq international admission criteria and costs", "url": "https://www.squ.edu.om/Portals/26/Afaaq-International%20students-Acceptance%20criteria-EN.pdf?ver=nRwo2NxmjkT8wFtdWvjFig%3D%3D", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists 220 Medicine and Health Sciences credit hours at OMR 300 and total OMR 64,560; route applicability requires current-cycle confirmation." },
+    { "label": "SQU MD quality assurance and accreditation", "url": "https://www.squ.edu.om/medicine/UNITS/Quality-Assurance-and-Academic-Accreditation-Unit/QAAAU", "kind": "official-accreditation", "checkedAt": "2026-07-25", "notes": "Describes the college quality unit and MD accreditation context, including WFME-recognised regional agencies." },
+    { "label": "SQU internship programme", "url": "https://www.squ.edu.om/medicine/Programs/Undergraduate/Internship-Program", "kind": "official-clinical", "checkedAt": "2026-07-25", "notes": "Provides a current non-Omani internship route and cost/support requirements; it is not undergraduate admissions evidence." }
+  ] },
+  "structuredFacts": { "name": "Sultan Qaboos University", "type": "Public university", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "Credit total published; current programme duration not verified from a current canonical admission page in this pass", "feeStatus": "Afaaq document lists OMR 64,560 total based on 220 hours at OMR 300; inclusion and eligibility conditions require confirmation", "publishable": false } ], "missingForPublication": [ "current MD international admissions call and dates", "route-specific eligibility/nationality conditions", "confirmed programme duration and instructional language", "cost inclusions, payment schedule and scholarships", "visa, housing and student-support details", "target-market professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until Afaaq availability and full student costs are current and audience-specific." }
+}

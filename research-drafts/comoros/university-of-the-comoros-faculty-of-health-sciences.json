@@ -1,0 +1,21 @@
+{
+  "countrySlug": "comoros",
+  "universitySlug": "university-of-the-comoros-faculty-of-health-sciences",
+  "schoolName": "Université des Comores — École de Médecine et de Santé Publique",
+  "cityName": "Moroni",
+  "priority": "high",
+  "officialWebsite": "https://admission.univ-comores.com/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — the Comoros Ministry lists University of Comoros and its School of Medicine and Public Health (EMSP). The university's official 2025–2026 programme offer includes EMSP's Master 2 Infirmier Spécialisé en Santé Mentale, and its 2025–2026 admissions process provides a university-wide pre-enrolment timeline. However, no current undergraduate medical degree, medicine programme curriculum, fee schedule, clinical-training route, language, international eligibility or professional-recognition record was found. The national health plan's proposal to create a Faculty of Medicine is evidence that an assumed medical-doctor pathway would be unsafe. The queue's historical 'Faculty of Health Sciences' label must not be reused as a public programme assertion.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "Comoros Ministry higher-education institutions", "url": "https://mineducomores.gouv.km/en/higher-education-institutions/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Lists University of Comoros and its School of Medicine and Public Health (Corniche)."},
+      {"label": "University of Comoros 2025–2026 programme offer", "url": "https://admission.univ-comores.com/assets/offre%20de%20formation%202025-2026.pdf", "kind": "official-programme-list", "checkedAt": "2026-07-25", "notes": "Lists EMSP Master 2 Infirmier Spécialisé en Santé Mentale; no general-medicine degree found in the offer."},
+      {"label": "University of Comoros 2025–2026 pre-enrolment process", "url": "https://admission.univ-comores.com/assets/Processus%20des%20pr%C3%A9inscriptions%202025-2026.pdf", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Provides university-wide pre-enrolment, competition and payment timeline, but not an EMSP medicine-specific route or fee."},
+      {"label": "Comoros National Health Development Plan 2022–2026", "url": "https://extranet.who.int/cpcd/sites/default/files/public_file_repository/COM_Comoros_Plan-National-de-D%C3%A9veloppement-sanitaire_2022-2026.pdf", "kind": "government-policy", "checkedAt": "2026-07-25", "notes": "Mentions creation of a Faculty of Medicine within University of Comoros as a plan; it is not evidence of an operating programme."}
+    ]
+  },
+  "structuredFacts": {"name": "Université des Comores — École de Médecine et de Santé Publique", "type": "Public", "programs": [], "missingForPublication": ["confirmed medical degree existence", "current programme and language", "fees", "international admissions", "clinical training", "recognition", "support"]},
+  "draftContent": {"summary": "", "faq": [], "notes": "No public content drafted; medical-doctor study is not verified as an available programme."}
+}

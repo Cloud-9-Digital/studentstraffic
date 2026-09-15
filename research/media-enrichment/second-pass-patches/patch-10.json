@@ -1,0 +1,437 @@
+{
+  "batchId": "second-pass-patch-10",
+  "entries": [
+    {
+      "universitySlug": "sciences-po",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Logo_Sciences_Po.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo Sciences Po.svg — tagged PD-textlogo (public domain: simple geometric shapes/text below the threshold of originality); trademark rights may still apply in some jurisdictions.",
+        "proposedPublicId": "sciences-po-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sciences-po-campus-menton.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Sciences-po-campus-menton.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "sciences-po-cover"
+      },
+      "note": "First pass apparently didn't check Wikimedia Commons file-license tags. Found the infobox logo (PD-textlogo) and a campus building photo (CC BY-SA 4.0) in the Commons category for the institution."
+    },
+    {
+      "universitySlug": "sechenov-first-moscow-state-medical-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Logo_Sechenov_University.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo Sechenov University.png — CC BY-SA 4.0.",
+        "proposedPublicId": "sechenov-first-moscow-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Rektorat_der_Sechenov-Universit%C3%A4t.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Rektorat der Sechenov-Universität.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "sechenov-first-moscow-state-medical-university-cover"
+      },
+      "note": "Wikipedia infobox logo plus a rectorate/administrative-building photo from the dedicated Commons category, both CC BY-SA 4.0."
+    },
+    {
+      "universitySlug": "second-tashkent-state-medical-institute",
+      "sourceFile": "a-311-330.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "The Second Tashkent State Medical Institute was merged into the Tashkent Medical Academy in 2005 (together with the First Tashkent State Medical Institute). No independent Wikipedia article, Wikimedia Commons category, or current official web/media presence exists under this historic standalone name — only third-party MBBS-agent marketing pages reference it. This is an unresolved identity/merger issue, not a missing-asset gap: a decision is needed on whether this record should point to Tashkent Medical Academy's media or be retired, before any logo/cover is sourced. No media sourced."
+    },
+    {
+      "universitySlug": "semmelweis-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Logo_univsemmelweis.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo univsemmelweis.svg — dual-licensed GFDL 1.2+ / CC BY-SA 3.0 (and compatible earlier versions).",
+        "proposedPublicId": "semmelweis-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Semmelweis_University%2C_main_building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Semmelweis University, main building.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "semmelweis-university-cover"
+      },
+      "note": "Commons infobox logo and a dedicated 'main building' exterior photo in the Semmelweis University Commons category, both free-licensed."
+    },
+    {
+      "universitySlug": "seneca-polytechnic-nursing",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Seneca-logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Seneca-logo.svg — PD-textlogo (simple shapes/text below threshold of originality).",
+        "proposedPublicId": "seneca-polytechnic-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Seneca_CITE_Building_K_-_front_exterior_view.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Seneca CITE Building K - front exterior view.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "seneca-polytechnic-nursing-cover"
+      },
+      "note": "Hold reason did not flag an identity/parent-inheritance issue (unlike St. Lawrence College Nursing), so the institutional Seneca Polytechnic logo/campus photo from Commons were applied directly to this programme-level record."
+    },
+    {
+      "universitySlug": "seneca-polytechnic-bscn",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Seneca-logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Seneca-logo.svg — PD-textlogo (simple shapes/text below threshold of originality).",
+        "proposedPublicId": "seneca-polytechnic-bscn-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Seneca_CITE_Building_K_-_front_exterior_view.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Seneca CITE Building K - front exterior view.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "seneca-polytechnic-bscn-cover"
+      },
+      "note": "Same institutional Seneca Polytechnic logo/campus photo as the nursing record above; hold reason here did not flag a parent-inheritance issue for this slug."
+    },
+    {
+      "universitySlug": "seoul-national-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Seoul_national_university_logotype.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Seoul national university logotype.svg — PD-textlogo.",
+        "proposedPublicId": "seoul-national-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Seoul_National_University_Main_Gate_at_Night.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Seoul National University Main Gate at Night.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "seoul-national-university-cover"
+      },
+      "note": "Commons infobox logotype plus a main-gate campus photo from the Seoul National University Commons category."
+    },
+    {
+      "universitySlug": "shanghai-jiao-tong-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/SJTU_emblem_1940.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:SJTU emblem 1940.jpg — public domain (copyright expired; 1940 emblem, PD in China and US per publication-date rules).",
+        "proposedPublicId": "shanghai-jiao-tong-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Shanghai_Jiao_Tong_University_1.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Shanghai Jiao Tong University 1.jpg — dual-licensed GFDL 1.2+ / CC BY 3.0 (photographer Peter Potrowl, attribution required).",
+        "proposedPublicId": "shanghai-jiao-tong-university-cover"
+      },
+      "note": "Used the historical 1940 emblem (Wikidata's logo image, now public domain by age) as the logo, plus a Commons campus exterior photo as cover."
+    },
+    {
+      "universitySlug": "sheridan-college-nursing",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Sheridan_College_2013_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Sheridan College 2013 logo.svg — PD-textlogo.",
+        "proposedPublicId": "sheridan-college-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Sheridan_College_Davis_Campus_2021.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Sheridan College Davis Campus 2021.jpg — CC BY 4.0.",
+        "proposedPublicId": "sheridan-college-nursing-cover"
+      },
+      "note": "Institutional Sheridan College logo/campus photo from Commons; hold reason did not flag a parent-inheritance issue for this record."
+    },
+    {
+      "universitySlug": "siberian-state-medical-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Siberian_State_Medical_University_2.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Siberian State Medical University 2.jpg — CC BY-SA 3.0 (main-entrance photo).",
+        "proposedPublicId": "siberian-state-medical-university-cover"
+      },
+      "note": "Cover upgraded from Commons. Logo remains held: no dedicated logo/emblem file exists on Commons or in the Wikipedia infobox — the infobox actually reuses this same entrance photo, not a logo. Official site ssmu.ru is reachable but its press-centre path 404'd and no brand-kit page was found."
+    },
+    {
+      "universitySlug": "singapore-institute-of-technology",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Singapore_Institute_of_Technology_logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Singapore Institute of Technology logo.png — PD-textlogo.",
+        "proposedPublicId": "singapore-institute-of-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/SIT_Dover_Building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:SIT Dover Building.jpg — dual-licensed GFDL 1.2+ / CC BY-SA 4.0.",
+        "proposedPublicId": "singapore-institute-of-technology-cover"
+      },
+      "note": "Commons infobox logo plus a campus building photo from the SIT Commons category."
+    },
+    {
+      "universitySlug": "singapore-management-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Singapore_Management_University_Logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Singapore Management University Logo.png — CC BY-SA 4.0.",
+        "proposedPublicId": "singapore-management-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Singapore_Management_University%2C_Jan_06.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Singapore Management University, Jan 06.JPG — 'copyrighted free use', owner-released for any purpose including commercial use and modification.",
+        "proposedPublicId": "singapore-management-university-cover"
+      },
+      "note": "Note there is also a separate File:Singapore Management University logo.svg hosted locally on English Wikipedia tagged non-free/fair-use — that one was NOT used; the CC BY-SA 4.0 PNG on Commons was used instead."
+    },
+    {
+      "universitySlug": "singapore-university-social-sciences",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/SUSS_new_logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:SUSS new logo.png — CC BY-SA 4.0.",
+        "proposedPublicId": "singapore-university-social-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/SUSS_Building%28updated%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:SUSS Building(updated).jpg — dual-licensed CC BY-SA 4.0 / GFDL 1.2+.",
+        "proposedPublicId": "singapore-university-social-sciences-cover"
+      },
+      "note": "Both assets found in the dedicated Singapore University of Social Sciences Commons category."
+    },
+    {
+      "universitySlug": "singapore-university-technology-design",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Singapore_University_of_Technology_and_Design_%28SUTD%29_campus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Singapore University of Technology and Design (SUTD) campus.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "singapore-university-technology-design-cover"
+      },
+      "note": "Cover upgraded from Commons. Logo remains held: the SUTD Commons category (12 files) has no logo, and the university's newsroom/press page (sutd.edu.sg/newsroom/) 404'd. The only logo.svg available is hosted locally on English Wikipedia tagged non-free/fair-use, so it was not used."
+    },
+    {
+      "universitySlug": "ssr-medical-college",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.ssrmedicalcollege.com/images/logo2.gif",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the institution's own official domain (ssrmedicalcollege.com), identified via the Wikipedia article's external-links section since no Wikipedia infobox image existed.",
+        "proposedPublicId": "ssr-medical-college-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ssrmedicalcollege.com/images/aboutus_buil.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Direct campus-building asset from the institution's own official domain (ssrmedicalcollege.com), found on its 'About/History' page.",
+        "proposedPublicId": "ssr-medical-college-cover"
+      },
+      "note": "Wikipedia article (Sir Seewoosagur Ramgoolam Medical College) had no infobox logo or photo at all and no Commons category exists. Found the official domain via the article's External Links section, then located direct image files in its /images/ folder (no dedicated press page exists, so files were located by browsing the site's own asset paths — technique #4)."
+    },
+    {
+      "universitySlug": "slovak-medical-university-bratislava",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/SZU_05.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:SZU 05.jpg — CC BY-SA 4.0 (main building exterior).",
+        "proposedPublicId": "slovak-medical-university-bratislava-cover"
+      },
+      "note": "Cover upgraded from Commons (the dedicated 'Slovak Medical University in Bratislava' category has ~50 building photos but no logo). Logo remains held — no dedicated logo/emblem file exists on Commons or in the Wikipedia infobox."
+    },
+    {
+      "universitySlug": "smolensk-state-medical-university",
+      "sourceFile": "a-311-330.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/ru/4/45/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A1%D0%93%D0%9C%D0%98%2C_1940_%D0%B3.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Russian Wikipedia File — 'Учебный корпус СГМИ, 1940 г.' (Teaching building of SGMI, 1940) — tagged PD-old-70, public domain as first published before 1 January 1956.",
+        "proposedPublicId": "smolensk-state-medical-university-cover"
+      },
+      "note": "Logo remains held — no dedicated logo/emblem file found on Commons or ru.wikipedia; the only image available for this university is this 1940 historical building photograph (public domain due to age), now used as the cover."
+    },
+    {
+      "universitySlug": "sorbonne-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Logo_of_Sorbonne_University.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo of Sorbonne University.svg (in Category:Sorbonne Université) — PD-textlogo. This is a distinct, freely-licensed Commons upload; it is NOT the same as File:Sorbonne University Logo.svg hosted locally on English Wikipedia, which is tagged non-free/fair-use and was NOT used.",
+        "proposedPublicId": "sorbonne-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Entr%C3%A9e_Campus_Pierre_et_Marie_Curie_-_Sorbonne_Universit%C3%A9.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Entrée Campus Pierre et Marie Curie - Sorbonne Université.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "sorbonne-university-cover"
+      },
+      "note": "Found via the dedicated Commons category 'Sorbonne Université' (the 2018-merged research university), distinct from the generic 'Sorbonne' historic-building category. Both assets specifically depict Sorbonne Université's own identity/campus (Pierre et Marie Curie campus entrance), not the historic shared Sorbonne building or generic third-party Paris photography, per the caution in the original hold reason."
+    },
+    {
+      "universitySlug": "ss-cyril-and-methodius-university-faculty-of-medicine",
+      "sourceFile": "a-331-350.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed via the parent Wikipedia article (Ss. Cyril and Methodius University of Skopje) that the Medical Faculty has no separate/dedicated logo or visual identity distinct from the parent university — only the parent seal (File:Kiril.metodij.png) exists, with no faculty-specific mark mentioned anywhere. This remains a faculty-level parent-brand inheritance decision (whether/how to apply the parent university's identity to this faculty record), not a sourcing gap. No media sourced, per instructions."
+    },
+    {
+      "universitySlug": "st-lawrence-college-nursing",
+      "sourceFile": "a-331-350.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "This is a programme-level record (a nursing programme hosted at St. Lawrence College, Kingston, Ontario). The open question is which St. Lawrence College institutional assets (of the several same-named 'St. Lawrence College' institutions disambiguated on Wikipedia) should be inherited by this specific programme record — a parent-brand inheritance decision, not a missing-asset gap. No media sourced, per instructions."
+    },
+    {
+      "universitySlug": "stavropol-state-medical-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "still-hold",
+      "updatedReason": "Confirmed the ru.wikipedia infobox logo (File:Logo of StGMU.png) is hosted locally on Russian Wikipedia and explicitly tagged 'несвободный' (non-free/fair use) — it is the official emblem approved Feb 2013 and is not reusable. No Wikimedia Commons category exists for this university at all, and no campus/building photo appears anywhere in the Russian Wikipedia article (only the logo image is used). The official site (stgmu.ru) is reachable, but its homepage renders the logo as inline branding with no separate favicon/og:image asset and no press/media page was found. Both logo and cover remain unresolved."
+    },
+    {
+      "universitySlug": "stockholm-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Stockholm_University_campus_building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Stockholm University campus building.jpg — CC BY 4.0.",
+        "proposedPublicId": "stockholm-university-cover"
+      },
+      "note": "Only the cover was missing for this record; sourced a free-licensed campus building photo from the dedicated Stockholm University Commons category (99 files)."
+    },
+    {
+      "universitySlug": "surgut-state-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A1%D1%83%D1%80%D0%93%D0%A3_%28%D1%81_2023_%D0%B3.%29.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — 'Логотип СурГУ (с 2023 г.)' (Surgut State University logo, since 2023) — PD-textlogo.",
+        "proposedPublicId": "surgut-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A1%D1%83%D1%80%D0%B3%D1%83%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — 'Главный корпус Сургутского Государственного Университета' (Main building of Surgut State University) — CC BY-SA 4.0.",
+        "proposedPublicId": "surgut-state-university-cover"
+      },
+      "note": "Current (2023-onward) logo and main-building photo both found via ru.wikipedia infobox, hosted on Commons."
+    },
+    {
+      "universitySlug": "swansea-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Great_Hall_at_Swansea_University_Bay_Campus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Great Hall at Swansea University Bay Campus.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "swansea-university-cover"
+      },
+      "note": "Confirmed the Wikipedia infobox logo (File:Swansea University logo.png) is hosted locally on English Wikipedia and explicitly tagged non-free/fair-use ('protected by copyright... qualifies as non-free use') — no free Commons alternative was found, so the logo remains held. Cover upgraded using a free-licensed Bay Campus photo instead."
+    },
+    {
+      "universitySlug": "swinburne-university-of-technology",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Logo_of_Swinburne_University_of_Technology.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo of Swinburne University of Technology.svg — PD-textlogo.",
+        "proposedPublicId": "swinburne-university-of-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Swinburne_University_-_Administration_Building_-_panoramio.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Swinburne University - Administration Building - panoramio.jpg — CC BY 3.0.",
+        "proposedPublicId": "swinburne-university-of-technology-cover"
+      },
+      "note": "Both the current institutional logo and a Hawthorn-campus (Australian, main) Administration Building photo are freely licensed on Commons, avoiding any need to infer across other international campuses."
+    },
+    {
+      "universitySlug": "syracuse-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Syracuse_University_wordmark.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Syracuse University wordmark.svg — PD-textlogo (trademark rights may still apply).",
+        "proposedPublicId": "syracuse-university-logo"
+      },
+      "note": "Only the logo was missing for this record; the Wikipedia infobox wordmark is hosted on Commons under a free PD-textlogo tag."
+    },
+    {
+      "universitySlug": "tu-dresden",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Logo_TU_Dresden_en_2025.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo TU Dresden en 2025.svg — public domain, tagged both as the official seal of a German public-law corporation (PD-Coa-Germany-official) and PD-textlogo.",
+        "proposedPublicId": "tu-dresden-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/TU-Dresden-Georg-Schumann-Bau.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:TU-Dresden-Georg-Schumann-Bau.jpg — CC BY-SA 2.5.",
+        "proposedPublicId": "tu-dresden-cover"
+      },
+      "note": "Current (2025) official logo is explicitly tagged public domain via the German public-law-corporation seal provision, and a TU Dresden main-building (Georg-Schumann-Bau) exterior photo is CC BY-SA 2.5 — both directly verifiable, controlled-brand-use concern addressed."
+    },
+    {
+      "universitySlug": "tambov-state-university",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/%D0%A3%D0%BB.%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C33%2C_%D0%A2%D0%93%D0%A3_%D0%B8%D0%BC.%D0%93.%D0%A0.%D0%94%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8%D0%BD%D0%B0%2C_17.10.2011_-_panoramio.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — main campus building photo (Internatsionalnaya St. 33, Derzhavin Tambov State University) — CC BY 3.0.",
+        "proposedPublicId": "tambov-state-university-cover"
+      },
+      "note": "Cover upgraded from Commons. Logo remains held — confirmed the ru.wikipedia infobox for this university has no logo/emblem image at all (only building photos), and none was found on Commons either."
+    },
+    {
+      "universitySlug": "tashkent-pediatric-medical-institute",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/20230528_092857_12_io_thread_1685248110908.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — main educational building of ToshPTI (Tashkent Pediatric Medical Institute), categorized under 'Tashkent Pediatric Medical Institute' — CC BY-SA 4.0.",
+        "proposedPublicId": "tashkent-pediatric-medical-institute-cover"
+      },
+      "note": "Checked uz.wikipedia: this institute was founded in 1972 and renamed once in 1989 to its current name, with no merger into Tashkent Medical Academy (that merger only involved the First and Second Tashkent State Medical Institutes) — so the consolidation/identity concern in the original hold reason does not actually apply here, and a cover could be sourced safely. Logo remains held — no dedicated logo file found on Commons or Wikipedia."
+    },
+    {
+      "universitySlug": "tashkent-pharmaceutical-institute",
+      "sourceFile": "a-331-350.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/PharmiMain.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:PharmiMain.jpg — main building of the Tashkent Pharmaceutical Institute — CC0 1.0 Universal (public domain dedication).",
+        "proposedPublicId": "tashkent-pharmaceutical-institute-cover"
+      },
+      "note": "Checked uz.wikipedia: this is a standalone institution founded in 1937, presented distinctly from Tashkent Medical Academy and the regional (Bukhara/Samarkand/Andijan) medical institutes, with no naming overlap found — addressing the 'do not use similarly named institution's media' caution. Logo remains held — no dedicated logo file found on Commons or Wikipedia."
+    }
+  ]
+}

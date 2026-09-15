@@ -1,0 +1,222 @@
+{
+  "batchId": "second-pass-patch-04",
+  "entries": [
+    {
+      "universitySlug": "euroregional-teaching-university-ersu",
+      "sourceFile": "a-101-110.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Cross-referenced third-party consultancy pages and Wikipedia/Wikidata: 'Euroregional Teaching University LLC' (Gori, Georgia) is documented as the post-2017 rebrand of 'Sukhishvili (Sukhishvii) Teaching University', domain sukhishvilebi.edu.ge. That domain no longer serves the university (Wayback CDX shows it redirecting/dying after 2013 and now resolves to a registrar parking page, confirmed via live snapshot). The only recoverable Wayback snapshot with real content (2011-2012, archive.org) shows the pre-rebrand 'Sukhishvili Teaching University' identity and logo (https://web.archive.org/web/20120206235041im_/http://www.sukhishvilebi.edu.ge/gfx/logo.jpg, resolves 200), not the current Euroregional name/branding. Attaching that 13+ year old pre-rebrand logo to the current record would misattribute identity across a rename. No current official domain for 'Euroregional Teaching University' could be confirmed. Needs a human decision on whether the old Sukhishvili identity is an acceptable stand-in or whether the record should stay unmedia'd pending a live official source."
+    },
+    {
+      "universitySlug": "far-eastern-federal-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.dvfu.ru/html/svg/logos/logo_base_ru.svg", "sourceType": "official", "rightsBasis": "official FEFU site header logo asset (dvfu.ru), verified HTTP 200", "proposedPublicId": "far-eastern-federal-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Far_Eastern_Federal_University_%28October_2024%29-0_8.jpg/1280px-Far_Eastern_Federal_University_%28October_2024%29-0_8.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, October 2024 own-work campus photo", "proposedPublicId": "far-eastern-federal-university-cover"},
+      "note": "First pass missed the raw SVG logo path served directly in dvfu.ru's HTML (not JS-rendered); found by fetching the source HTML directly rather than relying on a rendered view. Cover sourced from a recent (2024) CC-BY-SA Commons photo not previously checked."
+    },
+    {
+      "universitySlug": "far-eastern-state-medical-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.fesmu.ru/simai.data/image/meta/logotip.png", "sourceType": "official", "rightsBasis": "official fesmu.ru og:image logo asset, verified HTTP 200", "proposedPublicId": "far-eastern-state-medical-university-logo"},
+      "note": "Logo found via og:image meta tag on the official fesmu.ru homepage (technique not used in first pass). No dedicated Wikipedia article exists for FESMU (only listed in aggregate lists), so no Commons campus photo was available; homepage image carousel only exposed news thumbnails with no clear campus/building identification, so cover remains unresolved -- still hold on cover only."
+    },
+    {
+      "universitySlug": "fergana-medical-institute-of-public-health",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://fergmi.uz/wp-content/uploads/2025/04/fregana_logo-removebg-preview.png", "sourceType": "official", "rightsBasis": "official fergmi.uz site logo asset, verified HTTP 200", "proposedPublicId": "fergana-medical-institute-of-public-health-logo"},
+      "note": "Identified the current official domain (fergmi.uz) which the first pass apparently did not isolate, and pulled the direct logo file referenced in the page header. No og:image or hero/campus banner was present on the homepage or reachable via background-image/data-src patterns, so cover remains unresolved."
+    },
+    {
+      "universitySlug": "fergana-state-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://admin.fdu.uz/files/images/file-1777639111788-525944373.png", "sourceType": "official", "rightsBasis": "official fdu.uz CMS-hosted logo asset, verified HTTP 200", "proposedPublicId": "fergana-state-university-logo"},
+      "cover": {"sourceUrl": "https://fdu.uz/image.png", "sourceType": "official", "rightsBasis": "official fdu.uz og:image, verified HTTP 200 and visually confirmed as an aerial campus courtyard photo", "proposedPublicId": "fergana-state-university-cover"},
+      "note": "Located the official domain (fdu.uz) and its og:image; downloaded and visually inspected the file to confirm it is a genuine aerial campus photo (not a generic branding card) before proposing it as cover."
+    },
+    {
+      "universitySlug": "first-tashkent-state-medical-institute",
+      "sourceFile": "a-111-120.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed via Wikipedia (Tashkent Medical Academy article): First Tashkent State Medical Institute was formally abolished and merged by presidential decree in 2005 into Tashkent Medical Academy (official site tma.uz). No independent First Tashkent State Medical Institute entity or domain exists today. Assigning TMA's current logo/campus media to a record that specifically represents the pre-2005 historical institute would be a parent-brand inheritance decision that needs an editorial call on whether this record should be merged into/represented by Tashkent Medical Academy. No media sourced pending that decision."
+    },
+    {
+      "universitySlug": "flinders-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png", "sourceType": "official", "rightsBasis": "official flinders.edu.au footer logo asset, verified HTTP 200", "proposedPublicId": "flinders-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flinders_City_Campus_in_Adelaide%2C_May_2026_%28DSCF7190%29.jpg/1280px-Flinders_City_Campus_in_Adelaide%2C_May_2026_%28DSCF7190%29.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, May 2026 own-work photo of Flinders City Campus", "proposedPublicId": "flinders-university-cover"},
+      "note": "The /brand page only linked a logo download tool gated behind FAN login, but the footer of the public homepage itself embeds a direct main logo PNG that resolves without auth. Cover sourced from a brand-new (2026) CC-BY-SA Commons upload not available to the first pass."
+    },
+    {
+      "universitySlug": "fudan-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Fudan_University_Logo.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, tagged Public Domain (PD China / PD US expired); credit/source line on the file page points to Fudan's own http://www.fudan.edu.cn/files/logo.zip", "proposedPublicId": "fudan-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fudan-xianghuitang.jpg/1280px-Fudan-xianghuitang.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, tagged Public Domain (self-published), photo of the Xianghui Auditorium, Fudan University", "proposedPublicId": "fudan-university-cover"},
+      "note": "Direct fetch of fudan.edu.cn's own logo file was blocked (403, anti-hotlink), but the Commons SVG is explicitly tagged Public Domain (not fair-use/non-free) and its description page credits Fudan's own logo.zip as source -- satisfies the free-license check the first pass likely skipped for non-free-looking university crests."
+    },
+    {
+      "universitySlug": "george-washington-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://communications.gwu.edu/sites/g/files/zaxdzs7196/files/2026-03/ocm_primary.png", "sourceType": "official", "rightsBasis": "GWU Office of Communications & Marketing brand-guidelines page (communications.gwu.edu), primary logo asset, verified HTTP 200", "proposedPublicId": "george-washington-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/George_Washington_University_%2853844978470%29.jpg/1280px-George_Washington_University_%2853844978470%29.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 2.0 (Flickr-sourced campus photo)", "proposedPublicId": "george-washington-university-cover"},
+      "note": "Located GWU's dedicated brand-guidelines/logos subsite (communications.gwu.edu/brand-guidelines/logos), which exposes a direct primary-logo PNG not indexed on the main homepage."
+    },
+    {
+      "universitySlug": "georgetown-university",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Georgetown_University_Logotype.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, tagged PD-textlogo / Public domain", "proposedPublicId": "georgetown-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Georgetown_University_Panorama_04_2012_1394.jpg/1280px-Georgetown_University_Panorama_04_2012_1394.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, campus panorama photo", "proposedPublicId": "georgetown-university-cover"},
+      "note": "Checked the Commons wordmark file specifically for a PD-textlogo tag (distinct from the non-free Georgetown seal variants also on the page) before proposing it -- confirms it is a free-licensed simple text logo, not a fair-use crest."
+    },
+    {
+      "universitySlug": "georgia-institute-of-technology",
+      "sourceFile": "a-111-120.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Georgia_Tech_logo_2021.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, tagged PD-textlogo / Public domain", "proposedPublicId": "georgia-institute-of-technology-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Tech_Tower-6.jpg/1280px-Tech_Tower-6.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, self-published photo of Tech Tower", "proposedPublicId": "georgia-institute-of-technology-cover"},
+      "note": "Same PD-textlogo verification technique as Georgetown; the 2021 wordmark logo (distinct from the non-free 'Georgia Tech seal' variants) is confirmed public domain. Cover uses the iconic Tech Tower building, CC BY-SA."
+    },
+    {
+      "universitySlug": "georgian-american-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://gau.edu.ge/storage/app/media/logo/gau-ka-2.png", "sourceType": "official", "rightsBasis": "official gau.edu.ge site logo asset, verified HTTP 200", "proposedPublicId": "georgian-american-university-logo"},
+      "note": "GAU's site is a JS-rendered SPA; fetching it with a real page-render tool exposed the logo path under /storage/app/media/logo/ that plain markup scraping in the first pass likely missed. The photo carousel on the homepage pulls what appear to be Facebook-CDN-hosted images with non-persistent numeric filenames and no stable direct URL, so no confident cover could be isolated -- still hold on cover only."
+    },
+    {
+      "universitySlug": "georgian-college-nursing",
+      "sourceFile": "a-121-130.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed this record is the Honours Bachelor of Science in Nursing (BScN) programme page of Georgian College, a public college in Barrie, Ontario, Canada (official site georgiancollege.ca/academics/programs/honours-bachelor-science-nursing-bscn/), not an independent university. It is a programme/faculty-level record and needs a parent-brand inheritance decision (whether it should carry Georgian College's institutional logo/cover, or be merged into a Georgian College parent record) before any media is assigned. No media sourced."
+    },
+    {
+      "universitySlug": "seu-georgian-national-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "This slug and 'georgian-national-university-seu' both refer to the same institution (Georgian National University SEU, Tbilisi -- confirmed via its Wikipedia article, which exists as a single entry with no separate 'SEU-prefixed' identity). No independent 'seu-georgian-national-university' brand or domain exists distinct from the other record. Needs the canonical-record decision (which of the two duplicate slugs should stay, and which should be merged/retired) before either gets media assigned. No media sourced for either duplicate."
+    },
+    {
+      "universitySlug": "georgian-national-university-seu",
+      "sourceFile": "a-121-130.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Duplicate of 'seu-georgian-national-university' -- same institution (Georgian National University SEU, Tbilisi), same Wikipedia entry, same official identity. See companion note on that slug. Needs the canonical-record decision before media is assigned to either. No media sourced."
+    },
+    {
+      "universitySlug": "glasgow-caledonian-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/GCUlogo_251px.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, tagged PD-textlogo / Public domain", "proposedPublicId": "glasgow-caledonian-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/GCU_Campus_View.png", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, campus view photo (uploaded via the 'For the Common Good' GLAM partnership)", "proposedPublicId": "glasgow-caledonian-university-cover"},
+      "note": "Checked the Commons infobox logo specifically for a PD-textlogo tag rather than assuming it was a non-free crest (the GCU arms/crest file is a separate, also-PD heraldic file that was not needed here)."
+    },
+    {
+      "universitySlug": "goce-delcev-university-faculty-of-medicine",
+      "sourceFile": "a-121-130.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Checked ugd.edu.mk's Faculty of Medicine / General Medicine programme page directly: it carries no faculty-specific logo or emblem, only the general Goce Delcev University logo (logo-ugd-mk2.png) in the header and footer, and no hero/building photography at all. Using the parent university's logo for this faculty-level record would be a parent-brand inheritance decision that needs an editorial call. No media sourced."
+    },
+    {
+      "universitySlug": "griffith-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.griffith.edu.au/__data/assets/image/0037/1755379/gu.png", "sourceType": "official", "rightsBasis": "official griffith.edu.au og:image, verified HTTP 200 and visually confirmed as the Griffith University crest mark", "proposedPublicId": "griffith-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Griffith_University_Nathan_Campus.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 2.0, photo of the Griffith University Nathan Campus entry sign", "proposedPublicId": "griffith-university-cover"},
+      "note": "Site is behind Cloudflare bot-mitigation for direct asset requests without a Referer header; adding one unblocked the og:image fetch, which was visually confirmed as the official crest (not a generic placeholder) before proposing it."
+    },
+    {
+      "universitySlug": "grigol-robakidze-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://gruni.edu.ge/assets/img/grunilogo.png", "sourceType": "official", "rightsBasis": "official gruni.edu.ge site logo asset, verified HTTP 200", "proposedPublicId": "grigol-robakidze-university-logo"},
+      "note": "Found the direct official logo asset on gruni.edu.ge itself (preferred over a same-named Commons 'own work' recreation, since the official file is a cleaner, unambiguous source). No og:image or campus hero photo was present on the homepage, so cover remains unresolved."
+    },
+    {
+      "universitySlug": "gulf-medical-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://gmu.ac.ae/wp-content/uploads/2026/02/gmu-logo-2026.png", "sourceType": "official", "rightsBasis": "official gmu.ac.ae site logo asset (current 2026 mark, distinct from the parent Thumbay Group logo), verified HTTP 200", "proposedPublicId": "gulf-medical-university-logo"},
+      "note": "Deliberately used GMU's own dated 2026 logo file rather than the Thumbay Group logo also present on the same page, per the hold reason's caution about Thumbay Medicity branding ambiguity. The site's og:image is a video-thumbnail (per the original hold concern) and the gallery photos are hosted on the parent thumbay.com domain with cache-only paths of uncertain GMU-specific attribution, so cover remains unresolved -- still hold on cover only, deliberately not using partner/agency imagery."
+    },
+    {
+      "universitySlug": "gulistan-state-university",
+      "sourceFile": "a-121-130.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://guldu.uz/guldu-logo.png", "sourceType": "official", "rightsBasis": "official guldu.uz site logo asset, verified HTTP 200", "proposedPublicId": "gulistan-state-university-logo"},
+      "note": "Identified the correct official domain (guldu.uz) directly. Its og:image was downloaded and visually inspected: it turned out to be a scanned admissions-exam-schedule PDF page, not a campus photo, so it was rejected and cover remains unresolved rather than being misused."
+    },
+    {
+      "universitySlug": "hse-university",
+      "sourceFile": "a-131-140.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.hse.ru/f/src/manifest/icons/hse_app_512.png", "sourceType": "official", "rightsBasis": "official hse.ru PWA web-app-manifest icon, 512x512, verified HTTP 200", "proposedPublicId": "hse-university-logo"},
+      "note": "The homepage header logo is inline SVG/CSS as the hold reason suspected, and only small favicons were linked in <head>. Checked the site's web manifest (manifest_en.json) referenced via <link rel=manifest>, which exposes a proper 512x512 full-color app icon bearing the HSE seal -- well above favicon scale."
+    },
+    {
+      "universitySlug": "haw-hamburg-bscn",
+      "sourceFile": "a-131-140.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.haw-hamburg.de/typo3temp/assets/_processed_/2/5/csm_haw_logo_fc912ebd62.png", "sourceType": "official", "rightsBasis": "official haw-hamburg.de site logo asset, verified HTTP 200", "proposedPublicId": "haw-hamburg-bscn-logo"},
+      "note": "Confirmed the university-level logo resolves directly from raw HTML. Could not locate a nursing-programme-specific or campus building photo distinct from video thumbnails on the relevant pages within this pass, so cover remains unresolved as before."
+    },
+    {
+      "universitySlug": "heriot-watt-university",
+      "sourceFile": "a-131-140.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.hw.ac.uk/_Z8mtzw_2bb9e123-9adb-4078-94f7-88a8f8b1ee33/static/icon/icon-512.png", "sourceType": "official", "rightsBasis": "official hw.ac.uk PWA web-app-manifest icon, 512x512, verified HTTP 200", "proposedPublicId": "heriot-watt-university-logo"},
+      "note": "Same technique as HSE: found the site's manifest.webmanifest link in <head> and pulled its 512x512 icon, which carries the full Heriot-Watt shield crest -- resolves the 'favicon-scale only' limitation the first pass hit."
+    },
+    {
+      "universitySlug": "hochschule-bremen-city-university-of-applied-sciences",
+      "sourceFile": "a-131-140.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.hs-bremen.de/_assets/f33b63229ca06ac40890a7fe3cae94cd/Frontend/Build/assets/images/logo_hsb_startseite.svg", "sourceType": "official", "rightsBasis": "official hs-bremen.de homepage logo SVG, verified HTTP 200", "proposedPublicId": "hochschule-bremen-city-university-of-applied-sciences-logo"},
+      "cover": {"sourceUrl": "https://www.hs-bremen.de/_assets/f33b63229ca06ac40890a7fe3cae94cd/Frontend/Build/assets/images/hsb-socialmedia-1613550361.jpg", "sourceType": "official", "rightsBasis": "official hs-bremen.de og:image, verified HTTP 200 and visually confirmed as the historic HSB main building with flags", "proposedPublicId": "hochschule-bremen-city-university-of-applied-sciences-cover"},
+      "note": "First pass evidently checked hs-bremen.com; the institution's actual current site is hs-bremen.de, which exposes both a direct logo SVG and an og:image that was downloaded and visually confirmed to be a genuine building photograph, not a generic card."
+    },
+    {
+      "universitySlug": "ie-university",
+      "sourceFile": "a-131-140.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://images.thesaurus.ie.edu/f/jpg/w/1280/h/768/ie-university-logo_1", "sourceType": "official", "rightsBasis": "official ie.edu og:image, filename 'ie-university-logo_1', verified HTTP 200 and visually confirmed as the IE University wordmark", "proposedPublicId": "ie-university-logo"},
+      "cover": {"sourceUrl": "https://images.thesaurus.ie.edu/c/cover/q/75/w/1920/h/1271/p/center/f/jpeg/ie-university-ie-tower-september-2021-news-body-470x305_3", "sourceType": "official", "rightsBasis": "official ie.edu image CDN asset named 'ie-university-ie-tower', verified HTTP 200 and visually confirmed as an interior/exterior view of the IE Tower campus building", "proposedPublicId": "ie-university-cover"},
+      "note": "IE's official image CDN (images.thesaurus.ie.edu) names its files descriptively; the og:image was literally named 'ie-university-logo_1' and a separate asset named after the IE Tower building was located and visually confirmed as a real campus photo rather than assumed from filename alone."
+    },
+    {
+      "universitySlug": "insead",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.insead.edu/profiles/custom/insead/themes/insead_core/images/logo.png", "sourceType": "official", "rightsBasis": "official insead.edu theme logo asset, verified as valid image content", "proposedPublicId": "insead-logo"},
+      "cover": {"sourceUrl": "https://www.insead.edu/sites/insead/files/inline-images/europe-campus_0.jpg", "sourceType": "official", "rightsBasis": "official insead.edu inline campus image (Europe/Fontainebleau campus), verified as valid image content and visually confirmed", "proposedPublicId": "insead-cover"},
+      "note": "insead.edu is behind a Cloudflare bot challenge that blocks plain curl HEAD/GET, but a full page fetch succeeds; both the logo and the 'europe-campus' inline image were downloaded and visually confirmed (round INSEAD seal; Fontainebleau campus courtyard) rather than assumed from URL text alone."
+    },
+    {
+      "universitySlug": "iulm-university",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.iulm.it/resources/images/logo-iulm.png", "sourceType": "official", "rightsBasis": "official iulm.it homepage logo asset (standard-color variant), verified HTTP 200", "proposedPublicId": "iulm-university-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Residence_IULM.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, photo of the IULM student residence building", "proposedPublicId": "iulm-university-cover"},
+      "note": "First pass evidently hit iulm.it's www redirect chain; following it to /it/home surfaces a direct logo PNG (a white-on-transparent variant also exists but the standard color one was preferred). Cover uses a CC-BY-SA Commons photo of the IULM residence building since no clean campus hero photo was found directly on the official site."
+    },
+    {
+      "universitySlug": "ilia-state-university",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "cover": {"sourceUrl": "https://iliauni.edu.ge/res/app/imgs/poster.jpg", "sourceType": "official", "rightsBasis": "official iliauni.edu.ge og:image, verified HTTP 200 and visually confirmed as the university seal over a graduation celebration photo", "proposedPublicId": "ilia-state-university-cover"},
+      "note": "iliauni.edu.ge is a JS-rendered SPA exposing only a small favicon.ico for the logo slot (no standalone logo file found elsewhere on the domain), so logo remains unresolved. The site's og:image, however, resolves to a genuine official splash image (seal + graduation crowd) that was downloaded and visually confirmed, and is proposed as cover."
+    },
+    {
+      "universitySlug": "illinois-institute-of-technology",
+      "sourceFile": "a-141-150.json",
+      "outcome": "upgraded",
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Crown_Hall_1.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, tagged Public Domain, photo of S.R. Crown Hall (Mies van der Rohe), Illinois Institute of Technology", "proposedPublicId": "illinois-institute-of-technology-cover"},
+      "note": "Used IIT's most iconic, unambiguously identifiable building (Crown Hall, a National Historic Landmark) rather than a generic campus shot; file is tagged Public Domain on Commons, verified resolves."
+    }
+  ]
+}

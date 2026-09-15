@@ -1,0 +1,290 @@
+{
+  "batchId": "media-a-391-405",
+  "scope": "Alphabetical missing-media rows 391-405; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-business-science",
+      "universityName": "University of Business and Science",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Re-fetched ubsu.uz directly (rather than relying on a generic default.jpg og:image as in the first pass) and found dedicated /images/logos/ assets plus a genuine, clearly-branded graduation/campus carousel photo..",
+      "logo": {
+        "sourceUrl": "https://ubsu.uz/images/logos/logo-black.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site ubsu.uz, dedicated header/footer logo asset, verified HTTP 200.",
+        "proposedPublicId": "university-business-science-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://ubsu.uz/storage/carousels/01KA8C0Z0B92N2VP2JKS57WWDN.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site homepage carousel photo showing graduates in front of the branded 'UNIVERSITY OF BUSINESS AND SCIENCE' building signage, verified HTTP 200 (3200x1800).",
+        "proposedPublicId": "university-business-science-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-cagliari-italy",
+      "universityName": "University of Cagliari",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): unica.it still returns the AWS WAF CAPTCHA challenge (HTTP 405) on every path, and the only available Wayback capture of www3.unica.it served an 'Apache2 Ubuntu Default Page' rather than real content. Commons-license technique resolved a clean logo and rectorate building photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_Universit%C3%A0_di_Cagliari.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo_Università_di_Cagliari.jpg - CC BY-SA 2.5 Italy (trademark rights may still apply independent of copyright).",
+        "proposedPublicId": "university-of-cagliari-italy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Universit%C3%A0CA4.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, photo of Belgrano Palace (the University Palace / rectorate).",
+        "proposedPublicId": "university-of-cagliari-italy-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-california-san-diego",
+      "universityName": "University of California San Diego",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.ucsd.edu/_resources/img/logo_UCSD.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-california-san-diego-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-california-santa-barbara",
+      "universityName": "University of California Santa Barbara",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found only an inline-SVG header wordmark with no standalone file. Commons-license technique resolved the same wordmark as a standalone, freely-licensed SVG (distinct from the official seal, which is a different mark), verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/University_of_California%2C_Santa_Barbara_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:University_of_California,_Santa_Barbara_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-california-santa-barbara-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-california-davis",
+      "universityName": "University of California, Davis",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.ucdavis.edu/profiles/sitefarm/themes/sitefarm_one/images/uc-logo-gold.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-california-davis-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ucdavis.edu/sites/default/files/styles/hero_x_large_2000_x_1125/public/media/images/drone-ambient-first-frame-uc-davis_1.jpg?h=854a7be2&itok=jA0Qep5U",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage hero image",
+        "proposedPublicId": "university-of-california-davis-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-california-irvine",
+      "universityName": "University of California, Irvine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found only an inline-SVG header sprite and the (different) official seal, plus only small 'explore' tile thumbnails for cover. Commons-license technique resolved a standalone institutional wordmark and a genuine aerial campus photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/The_University_of_California_Irvine.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:The_University_of_California_Irvine.svg - released into the public domain by the uploader (PD-user), with a trademark caveat.",
+        "proposedPublicId": "university-of-california-irvine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Campus_of_the_University_of_California%2C_Irvine_%28aerial_view%2C_circa_2006%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (also GFDL/earlier CC BY-SA versions), aerial view of the core campus and Aldrich Park.",
+        "proposedPublicId": "university-of-california-irvine-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-california-riverside",
+      "universityName": "University of California, Riverside",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found the CSS-class-rendered masthead had no standalone logo file. Commons-license technique resolved a standalone wordmark (distinct from the official seal, a different non-free mark) plus a wide panoramic campus photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/UC_Riverside_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:UC_Riverside_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-california-riverside-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/View_of_Riverside_from_Box_Springs%28cropped%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 2.0 Generic, panoramic view of the campus from Box Springs.",
+        "proposedPublicId": "university-of-california-riverside-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-cambridge",
+      "universityName": "University of Cambridge",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.cam.ac.uk/themes/custom/fresh/images/interface/cambridge_university2.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-cambridge-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-campania-luigi-vanvitelli",
+      "universityName": "University of Campania Luigi Vanvitelli",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found a resolvable logo.jpg but no generic cover (only news/semester slider graphics). Commons-license technique replaced the logo with a cleaner free-licensed SVG and resolved a genuine institutional building photo for the cover, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_Vanvitelli_university.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo_Vanvitelli_university.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-campania-luigi-vanvitelli-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Dipartimento_ingegneria_unicampania.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, released into the public domain by the photographer, photo of the Real Casa dell'Annunziata complex (seat of the Engineering Department, Aversa).",
+        "proposedPublicId": "university-of-campania-luigi-vanvitelli-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-canberra",
+      "universityName": "University of Canberra",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.canberra.edu.au/_designs/ucweb/common/images/logo/uc_logo_inline.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-canberra-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.canberra.edu.au/__data/assets/image/0005/2377310/HP-Banner_2400x900.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage banner image",
+        "proposedPublicId": "university-of-canberra-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-canterbury",
+      "universityName": "University of Canterbury",
+      "missing": [
+        "logo"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/images/6-graphics/shaped-by-uc/homepage/jack-shaped-by-uc.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage hero image",
+        "proposedPublicId": "university-of-canterbury-cover",
+        "appliedAt": "2026-07-25"
+      },
+      "status": "ready",
+      "reason": "Cover applied to the database on 2026-07-25. Logo still outstanding: the sourced SVG (https://www.canterbury.ac.nz/content/dam/uoc-restricted/logos/header-logo.svg) returned a zero-content SVG / HTTP 406 at upload time despite resolving during research (its 'restricted' path segment suggests access-control tightened since). Needs a different logo asset in a future pass."
+    },
+    {
+      "universitySlug": "university-of-catania-italy",
+      "universityName": "University of Catania",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found a resolvable logo.svg but only news call-out thumbnails for cover. Commons-license technique resolved a clean free logo and a genuine historic university-palace photo, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Logo_UniCT.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo_UniCT.svg - public domain (PD-textlogo, below threshold of originality).",
+        "proposedPublicId": "university-of-catania-italy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Catania_BW_2012-10-06_11-26-20.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 Unported (also GFDL), photo of the Palazzo dell'Università, seat of the rectorate since the late 1690s.",
+        "proposedPublicId": "university-of-catania-italy-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-chicago",
+      "universityName": "University of Chicago",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): uchicago.edu is still a client-side-rendered React shell with no server-rendered image references (the shield used in Wikipedia's own infobox is also non-free/enwiki-only). Commons-license technique found the freely-licensed wordmark and a very large (22016x4175) campus panorama, both verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/University_of_Chicago_wordmark.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:University_of_Chicago_wordmark.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-chicago-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/University_of_Chicago_campus_panorama_%282011%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0 Unported, wide panorama of the Main Quadrangles, Booth School and Midway Plaisance (2011).",
+        "proposedPublicId": "university-of-chicago-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-colorado-boulder",
+      "universityName": "University of Colorado Boulder",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.colorado.edu/static/brand-assets/live/images/cu-boulder-logo-text-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website (redirected from its brand-assets CDN host to the same institution's primary domain)",
+        "proposedPublicId": "university-of-colorado-boulder-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-copenhagen",
+      "universityName": "University of Copenhagen",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found only an inline-SVG header mark on both the Danish and English homepages. Commons-license technique resolved the same UCPH crest as a standalone, freely-licensed SVG, verified HTTP 200.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Ku-ucph-logo-svg.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Ku-ucph-logo-svg.svg - CC BY-SA 4.0, voluntarily released by the uploader.",
+        "proposedPublicId": "university-of-copenhagen-logo"
+      }
+    }
+  ]
+}

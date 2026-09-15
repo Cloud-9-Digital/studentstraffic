@@ -1,0 +1,31 @@
+{
+  "scope": "Palestine medical discovery — Al-Quds University Doctor of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Al-Quds University's current Doctor of Medicine page describes a six-year programme with a three-year Basic Medical Sciences phase and three-year Clinical Medical Sciences phase, requiring at least 263 credit hours.",
+      "sourceUrl": "https://www.alquds.edu/en/faculties-all/medicine-en/ba-medicine/12961/doctor-of-medicine-md/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The programme states that clinical training is based on clerkships in affiliated hospitals; the faculty page states that it does not own a teaching hospital and is affiliated with local hospitals for clinical training, without listing current sites.",
+      "sourceUrl": "https://www.alquds.edu/en/faculties-at-al-quds/medicine-en/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Al-Quds says its Medicine faculty accepts students under university and Palestinian Ministry of Higher Education and Scientific Research rules, but the programme page does not provide a live admission calendar or complete entry checklist.",
+      "sourceUrl": "https://www.alquds.edu/en/faculties-all/medicine-en/ba-medicine/12961/doctor-of-medicine-md/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current fees, mandatory charges, live admissions timetable or complete international-applicant route was located.",
+    "Teaching language, recognised-programme status, accommodation, scholarships/loans, student support and detailed current entry requirements are not verified.",
+    "No current named hospital partners, clinical capacity or placement-continuity evidence was located; general affiliation must not become a placement guarantee."
+  ],
+  "nextAction": "Obtain current Doctor of Medicine admissions and fee information plus named clinical-partner and programme-recognition evidence before considering a payload."
+}

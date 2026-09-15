@@ -1,0 +1,156 @@
+{
+  "scope": "Bosnia and Herzegovina medical deep enrichment — University of Mostar Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "reviewNotes": "HOLD — The packet supports a six-year, 360-ECTS English Medical Studies route, 2026/27 annual tuition of BAM 18,000, a BAM 140 admission fee, an official 30 September 2026 application deadline (or earlier closure when places are filled), hospital-based clinical teaching, University of Mostar institutional accreditation through 26 February 2028, and current WDOMS/ECFMG eligibility information. Keep held because the official 2026/27 call does not state the teaching start date, no current programme-specific scholarship or current residence-cost/allocation terms were found, and destination-specific professional registration remains separate from degree recognition.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Mostar Faculty of Medicine — 2026/27 English Medical Studies admission call",
+        "url": "https://mef.sum.ba/engl/index.php/2026/02/13/application-for-admission-to-the-integrated-undergraduate-and-graduate-program-medical-studies-in-english-in-the-academic-year-2026-2027-first-call/",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Primary source for 30 places, six-year route, BAM 18,000 annual tuition, BAM 140 admission fee, English evidence and 30 September 2026 deadline/early closure condition."
+      },
+      {
+        "label": "University of Mostar Faculty of Medicine — English programme description",
+        "url": "https://mef.sum.ba/engl/index.php/about-3/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Primary source for six-year route, basic-science years, fourth-to-sixth-year clinical teaching, teaching laboratories and co-location with University Clinical Hospital Mostar."
+      },
+      {
+        "label": "University of Mostar — Medical Studies in English curriculum",
+        "url": "https://mef.sum.ba/engl/wp-content/uploads/2025/03/Medical-Studies-in-English-Programme-Curriculum-1.pdf",
+        "kind": "official-curriculum",
+        "checkedAt": "2026-07-25",
+        "notes": "Primary source for 360 ECTS, first-to-third-year academic structure, Years 4–6 clinical study, sixth-year mentored rotations, elective summer rotations and Croatian-language foundations."
+      },
+      {
+        "label": "Agency for Development of Higher Education and Quality Assurance of Bosnia and Herzegovina — accredited institutions register",
+        "url": "https://www.hea.gov.ba/Content/Read/lista-akreditiranih-vsu",
+        "kind": "government-registry",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Sveučilište u Mostaru as a public institution with current accreditation through 26 February 2028. This is institutional, not a standalone medical-programme licensing decision."
+      },
+      {
+        "label": "World Directory of Medical Schools — University of Mostar Faculty of Medicine",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0002398",
+        "kind": "independent-directory",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists the school as public and operational, six-year instruction in English and Bosnian, current graduation years, Canadian acceptability note and ECFMG-certification application eligibility subject to all requirements."
+      },
+      {
+        "label": "University of Mostar — student accommodation and international guide",
+        "url": "https://web-admin.sum.ba/api/storage/Vodic%20za%20internacionalizaciju_2024_1736757148_52.pdf",
+        "kind": "official-student-support",
+        "checkedAt": "2026-07-25",
+        "notes": "University guide describes Student Centre/private-rental options, 420-bed capacity in its then-described configuration, facilities, insurance and residence-permit orientation. Do not treat historic capacity or price information as a current booking offer."
+      },
+      {
+        "label": "University of Mostar Faculty of Medicine — Student Centre Mostar notice",
+        "url": "https://mef.sum.ba/2023/05/22/studentski-centar-mostar/",
+        "kind": "official-student-support",
+        "checkedAt": "2026-07-25",
+        "notes": "Faculty-hosted 2023 notice describes the Student Centre as providing accommodation and meals to around 480 students per academic year. It is historical support evidence, not current availability or price evidence."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Mostar Faculty of Medicine",
+    "city": "Mostar",
+    "country": "Bosnia and Herzegovina",
+    "type": "Public",
+    "officialWebsite": "https://mef.sum.ba/engl/",
+    "programme": {
+      "officialTitle": "Integrated undergraduate and graduate programme: Medical Studies in English",
+      "qualification": "Doctor of Medicine",
+      "duration": "6 years",
+      "credits": "360 ECTS",
+      "instructionLanguage": "English; the curriculum includes foundations/conversation of Croatian for medical study.",
+      "curriculum": "Years 1–2 cover medicine, research, informatics and biomedical foundations; Year 3 covers disease mechanisms, pharmacology and clinical propaedeutics. Years 4–6 contain clinical courses. Much of Year 6 is spent on mentored department rotations, followed by a diploma thesis."
+    },
+    "fees": {
+      "academicYear": "2026-2027",
+      "annualTuition": "BAM 18,000",
+      "admissionFee": "BAM 140",
+      "feeState": "The official call says tuition is non-refundable. It does not provide a full cost-of-attendance breakdown or a current accommodation price.",
+      "doNotInfer": "Do not publish a converted EUR total, six-year total, living-cost estimate, scholarship amount or instalment plan without a current official source."
+    },
+    "admissions": {
+      "places": "The 2026/27 first call states 30 full-time places for Bosnian or foreign students.",
+      "deadline": "30 September 2026, or earlier if all places are filled.",
+      "startDate": "Not stated in the current call; retain as a hold item rather than inferring it from a general academic calendar.",
+      "requirements": "The call requires the selection prerequisites and English-language evidence it specifies. The detailed documents, legalisation, equivalency and immigration route must be reconfirmed against the active call before a public application checklist is published.",
+      "intake": "One 2026/27 call was verified, but no exact teaching-start month is currently confirmed in this packet."
+    },
+    "clinicalTraining": {
+      "coreRoute": "Clinical teaching is scheduled in Years 4–6 through hospital departments, outpatient clinics and faculty teaching units. The faculty is located at Bijeli brijeg alongside University Clinical Hospital Mostar.",
+      "sixthYear": "The curriculum describes full-time mentored rotation across departments, with students following a mentor's work and responsibilities.",
+      "additionalExposure": "The curriculum permits Internal Medicine and Surgical Summer Rotations of 120 hours each. Their timing, mentor and institution may be chosen by the student within stated course guidance; they are not a guaranteed external placement.",
+      "limitation": "No current English-programme placement-allocation, patient-language or named hospital-department agreement was verified beyond the official curriculum and faculty description."
+    },
+    "recognition": {
+      "institution": "The HEA BiH register lists University of Mostar institutional accreditation through 26 February 2028.",
+      "directory": "WDOMS lists University of Mostar Faculty of Medicine as public, operational and offering six-year instruction in English and Bosnian.",
+      "ecfmg": "WDOMS states students and graduates may apply for ECFMG Certification provided the listed graduation-year and all other ECFMG requirements are met.",
+      "canada": "WDOMS carries its standard Canada acceptability note for the school, subject to the relevant regulatory authorities and requirements.",
+      "limitation": "Institutional accreditation, directory listing, ECFMG application eligibility and Canadian acceptability do not guarantee licensing, ECFMG certification, residency, immigration or registration in any destination."
+    },
+    "studentSupport": {
+      "academic": "The faculty lists teaching laboratories, anatomy practical space, scientific laboratories, a library and a Vice Dean for International Cooperation.",
+      "living": "The University guide describes Student Centre and private-rental pathways; the faculty's 2023 Student Centre notice describes accommodation and meal services. Current availability, allocation, eligibility and prices were not verified.",
+      "arrival": "The University guide directs students staying more than three months to request registration with Bosnia and Herzegovina's Service for Foreigners' Affairs and notes health-insurance considerations. This is background orientation, not legal advice or a current visa checklist.",
+      "scholarships": "No current programme-specific English Medicine scholarship, award value, eligibility or deadline was verified. Omit a scholarship section from public content rather than using general university funding language."
+    },
+    "missingForPublication": [
+      "Exact 2026/27 teaching-start date and enrolment calendar for Medical Studies in English",
+      "Complete current programme-specific application-document, credential-recognition and immigration checklist",
+      "Current accommodation availability, booking route, price and allocation terms for international Medicine students",
+      "Current programme-specific scholarship or funding terms",
+      "Destination-specific professional-registration requirements and any required language/exam route"
+    ]
+  },
+  "draftContent": {
+    "summary": "University of Mostar offers a six-year, 360-ECTS Medical Studies in English programme leading to the Doctor of Medicine title. It combines biomedical foundations, clinical teaching from the fourth year and a mentored clinical-rotation year. It is best assessed as a structured European medical route with decision-critical costs, clinical language and destination-registration questions resolved before application.",
+    "academicExperience": "The first two years focus on medical foundations, research and informatics. The third year develops pathology, pathophysiology, microbiology, pharmacology and clinical examination foundations. Clinical courses run through Years 4–6, with hospital departments, outpatient clinics and faculty teaching units used for practical teaching. The curriculum also includes Croatian-language foundations for medical study.",
+    "clinicalExposure": "The faculty sits beside University Clinical Hospital Mostar and describes practical work in hospital departments and outpatient clinics. The final year is built around mentored departmental rotations and a diploma thesis. Optional internal-medicine and surgical summer rotations are described in the curriculum, but should not be presented as guaranteed external placements or proof of destination-specific clinical eligibility.",
+    "feesAndFunding": "For 2026/27, the official English Medical Studies call lists BAM 18,000 annual tuition and a BAM 140 admission fee. The call states tuition is non-refundable. No current all-in budget, programme scholarship or accommodation price was verified, so a student should obtain a written fee and living-cost plan before committing.",
+    "admissions": "The verified 2026/27 first call lists 30 full-time places for Bosnian or foreign students and closes on 30 September 2026 or when places are filled. English-language evidence is part of the call. The confirmed call does not state the teaching-start date, so the timing and the full document/legalisation/immigration sequence should be confirmed with the faculty before an application is filed.",
+    "recognition": "University of Mostar is listed by the national higher-education quality agency as institutionally accredited through February 2028. The Faculty of Medicine appears in WDOMS as operational with six-year English and Bosnian instruction. WDOMS says eligible students and graduates may apply for ECFMG Certification if all requirements are met; this is an application pathway, not a certification, licensing or residency promise.",
+    "campusAndSupport": "The medical faculty describes lecture, computer and teaching laboratories, anatomy practical space, scientific laboratories and a library. The university describes Student Centre and private-rental options, but current international-student housing capacity, price and booking terms were not verified. Do not publish a hostel guarantee or daily-living estimate.",
+    "whyChoose": [
+      "Six-year English Medical Studies route leading to Doctor of Medicine.",
+      "360-ECTS curriculum with clinical study in Years 4–6.",
+      "Faculty site co-located with University Clinical Hospital Mostar.",
+      "Public-institution accreditation and current WDOMS listing.",
+      "Published 2026/27 annual tuition and admission-fee figures."
+    ],
+    "thingsToConsider": [
+      "The published tuition is not a complete living-cost budget.",
+      "The current call does not state the teaching-start date.",
+      "Clinical and professional practice may require local-language ability and destination-specific steps.",
+      "No current programme scholarship or housing terms were verified.",
+      "Medical licensing, ECFMG certification, residency and visas are not guaranteed by enrolment or graduation."
+    ],
+    "faq": [
+      {"question": "What degree does the English route lead to?", "answer": "The official call describes an integrated undergraduate and graduate Medical Studies in English programme leading to the Doctor of Medicine title."},
+      {"question": "How long is the programme?", "answer": "It is a six-year, 360-ECTS programme. The official curriculum places clinical courses in Years 4–6."},
+      {"question": "What tuition is published for 2026/27?", "answer": "The official admission call lists BAM 18,000 annual tuition and a BAM 140 admission fee. It states tuition is non-refundable."},
+      {"question": "When is the application deadline?", "answer": "The verified 2026/27 first call gives 30 September 2026, or earlier if all places are filled."},
+      {"question": "When do classes start?", "answer": "The current call does not state a teaching-start date. Obtain it directly from the faculty before planning travel or payment."},
+      {"question": "Where does clinical teaching take place?", "answer": "The faculty describes clinical study in hospital departments, outpatient clinics and faculty teaching units, and is located beside University Clinical Hospital Mostar."},
+      {"question": "Is the school listed for ECFMG?", "answer": "WDOMS says students and graduates may apply for ECFMG Certification if all graduation-year and other requirements are met. This is not a guarantee of certification or U.S. residency."},
+      {"question": "Is accommodation guaranteed?", "answer": "No. The university describes Student Centre and private-rental options, but current availability, cost and allocation rules were not verified for this programme."},
+      {"question": "Are scholarships available?", "answer": "No current programme-specific scholarship terms were verified. This should be treated as unconfirmed until the faculty publishes an award, eligibility and deadline."},
+      {"question": "Can Students Traffic help with the application?", "answer": "Students Traffic can review academic and English-readiness, build a verified cost plan, organise application documents and map the intended professional destination. Admission, visa and licensing outcomes cannot be promised."}
+    ],
+    "conversionCtas": [
+      "Check my academic and English-language readiness for Mostar Medicine.",
+      "Build my verified tuition, living-cost and funding plan.",
+      "Review my documents before the programme's stated deadline.",
+      "Plan my post-degree registration route before I apply."
+    ],
+    "notes": "Hold the public record until the listed start-date, application-detail, housing/funding and professional-route gaps are confirmed from current primary sources. Do not expose source URLs, this research note or caveat mechanics in public copy."
+  }
+}

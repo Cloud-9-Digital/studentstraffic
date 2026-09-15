@@ -1,0 +1,37 @@
+{
+  "scope": "Saint Kitts and Nevis medical discovery — Windsor University School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "WUSOM's official admissions page describes a four-year MD pathway, undergraduate-entry coursework, three annual intakes, application documents, and a St. Kitts campus address.",
+      "sourceUrl": "https://www.windsor.edu/admissions/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "WUSOM's current partner page describes 20 months of basic sciences in St. Kitts followed by 72 weeks of clinical rotations, and names US clinical partners including ACCESS Community Health Network.",
+      "sourceUrl": "https://www.windsor.edu/partners/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "CAAM-HP's assessed-programme register lists Windsor University School of Medicine in Saint Kitts and Nevis as on probation for two years, 2025–2027, last updated July 2025.",
+      "sourceUrl": "https://caam-hp.org/programs/",
+      "sourceType": "accreditor",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "WUSOM's admissions page says tuition starts at US$5,840 per semester, while its current homepage describes basic-science tuition of about US$7,190 per semester and clinical-science tuition of about US$11,490; the published figures are not internally consistent.",
+      "sourceUrl": "https://www.windsor.edu/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The institution's current page labels the school CAAM-HP accredited, but CAAM-HP's current register states probation for 2025–2027. Do not present an unqualified accreditation claim.",
+    "Current official tuition pages give inconsistent starting figures and no verified fully itemised 2026 cost schedule was retrieved.",
+    "The regulator's current institutional permission, English-language requirement, named clinical-site agreements, capacity, scholarship, loan and housing eligibility require direct current policy evidence."
+  ],
+  "nextAction": "Keep held. Resolve the CAAM-HP status with the provider and regulator, obtain one effective-date fee schedule, and verify current clinical and international-student policies before considering a payload."
+}

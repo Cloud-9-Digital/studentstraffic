@@ -1,0 +1,406 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Carol Davila University of Medicine and Pharmacy maps its English-medium General Medicine programme to this category: a direct-entry, single-cycle six-year, 360-ECTS programme leading to the Doctor Medic qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "romania",
+      "slug": "carol-davila-university-of-medicine-and-pharmacy",
+      "name": "Carol Davila University of Medicine and Pharmacy",
+      "city": "Bucharest",
+      "type": "Public",
+      "establishedYear": 1857,
+      "officialWebsite": "https://umfcd.ro/en/",
+      "mediaAttribution": {},
+      "summary": "Carol Davila University of Medicine and Pharmacy in Bucharest, tracing back to the 1857 National School of Medicine and Pharmacy, runs a direct-entry, six-year English-medium General Medicine programme leading to the Doctor Medic degree. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and its Romanian medical qualification carries automatic recognition across the EU/EEA under Directive 2005/36/EC Annex V.",
+      "campusLifestyle": "International students in the English-medium General Medicine programme are based on the university's main Dionisie Lupu Street campus in central Bucharest, with a dedicated International Students Office supporting the admissions and enrollment process.",
+      "cityProfile": "Bucharest is Romania's capital and largest city, with an international airport, a large resident student population and an established international-student community built up over decades at the country's oldest and largest medical university.",
+      "practicalExposure": "The six-year, 360-ECTS General Medicine programme combines preclinical foundation sciences with clinical training across multiple affiliated hospitals in Bucharest, culminating in the Doctor Medic degree, a Romanian medical qualification with automatic EU/EEA recognition under Directive 2005/36/EC and ECFMG-certification eligibility for US-pathway graduates.",
+      "hostelOverview": "The university's own accommodation page states that off-campus rent in Bucharest can be as low as EUR 150 per month, not including utilities, and that self-funded international students may apply for dormitory rooms (blocks U1-U6) subject to availability alongside state-scholarship students housed separately. No specific current dormitory fee amount is published for self-funded international students.",
+      "dietarySupport": "Campus and nearby student cafeterias serve the university community; no separate university-run meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research. Admissions and student queries for international applicants are handled through the International Students Office.",
+      "studentSupport": "International applicants apply through the university's dedicated exam/admissions platform and are supported by the International Students Office at the university's Nicolae Filipescu Street address in Bucharest.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001706) with graduates eligible for ECFMG Certification for graduation years 1953-current, and meeting Intealth's Recognized Accreditation Policy.",
+        "The Doctor Medic qualification sits on Romania's EU Directive 2005/36/EC Annex V automatic-recognition list (reference date 1 January 2007), applicable across the EU/EEA.",
+        "Direct-entry six-year, 360-ECTS General Medicine programme open to students straight from an accredited secondary school, with admission via an English-language interview and academic-record evaluation rather than a written entrance exam.",
+        "Officially confirmed current 2026/27 tuition of EUR 10,000 per year, re-approved by the university's Board and Senate in May 2026 and published on the live admissions page.",
+        "Romania's oldest and largest medical university, tracing its origins to the 1857 National School of Medicine and Pharmacy founded by Carol Davila."
+      ],
+      "thingsToConsider": [
+        "Registration for the 2026/27 Session II competition ran to 18 September 2026, and the university limited that extended period to EU citizens and non-EU citizens already holding a valid visa for Romania, who had to upload proof of access to Romania with their passport; other non-EU applicants could not enter that session.",
+        "Two separate international-admission charges appear in official fee documents -- a EUR 500 language test fee and a 2,500 LEI general registration fee -- and it was not possible to confirm during research whether these are the same charge described in two currencies or two distinct fees.",
+        "No confirmed current dormitory fee is published for self-funded international students; only a general off-campus rent floor of EUR 150/month (excluding utilities) is available.",
+        "No university-run scholarship specifically for the English-medium General Medicine track was found during research.",
+        "Affiliated teaching-hospital names circulate in third-party sources but were not independently confirmed against a primary university page during this research pass."
+      ],
+      "bestFitFor": [
+        "Students seeking a direct-entry, EU-recognized six-year Medicine degree at Romania's oldest and largest medical university.",
+        "Applicants comfortable with an English-language admissions interview and academic-record evaluation rather than a written entrance exam.",
+        "Students planning around a September academic-year start who can apply in either of the two admission sessions the university runs per cycle."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0001706, Faculty of Medicine record",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1953-present, meets Intealth's Recognized Accreditation Policy",
+        "Medical Council of Canada (MCC) -- degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) -- automatic recognition of the Romanian 'doctor medic' qualification across the EU/EEA, reference date 1 January 2007"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "World Directory of Medical Schools -- Carol Davila University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001706"
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02005L0036-20140117"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the English General Medicine programme direct-entry after high school?",
+          "answer": "Yes. Admission requires completion of an accredited high school whose diploma grants access to university studies in the applicant's home country; no prior university degree is required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Doctor Medic degree, a Romanian medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA, and eligible for ECFMG Certification for graduation years 1953-current."
+        },
+        {
+          "question": "Is there a written entrance exam?",
+          "answer": "No. Admission follows an online registration, a 15-30 minute English-language interview based on published scientific topics, and a ranking that combines the interview score with an Evaluation Grid based on prior school performance."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 10,000 per year for non-EU international students (EU/EEA citizens pay the RON equivalent at the National Bank of Romania exchange rate), confirmed current for the 2026/27 academic year by Board approval (11 May 2026) and Senate approval (13 May 2026)."
+        },
+        {
+          "question": "Are there other admission fees besides tuition?",
+          "answer": "Yes. Official documents list a EUR 500 language test fee and a 2,500 LEI general registration fee, plus a 200 LEI enrollment fee; it was not confirmed whether the language test fee and registration fee are the same charge or two separate ones."
+        },
+        {
+          "question": "What English-proficiency proof is required?",
+          "answer": "A minimum B2 CEFR-level English certificate not older than 2 years, unless the applicant completed secondary schooling in English or achieved B2-equivalent English in their baccalaureate exam."
+        },
+        {
+          "question": "When is the next intake and application deadline?",
+          "answer": "The academic year starts in September. For 2026/27 the university ran two admission sessions: Session I registration closed 13 July 2026 with the ranking published 21 July 2026, and Session II registration ran to 18 September 2026 for EU citizens and non-EU applicants holding a valid visa for Romania, with online interviews to 23 September, ranking on 24 September, seat confirmation on 24-28 September and General Medicine file submission on 29-30 September 2026."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "Self-funded international students may apply for dormitory rooms subject to availability, though no current fee is published; off-campus rent in Bucharest can be as low as EUR 150 per month, excluding utilities."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Romania?",
+          "answer": "The Doctor Medic qualification carries automatic recognition across the EU/EEA under Directive 2005/36/EC, and graduates are eligible for ECFMG Certification for the US pathway. For India specifically, graduates would need to separately satisfy India's National Medical Commission screening requirements; this was not independently verified against an NMC source during research."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Carol Davila University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001706",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, qualification title (Doctor Medic), curriculum duration, ECFMG eligibility and Canadian MCC acceptability."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02005L0036-20140117",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the Romanian 'doctor medic' qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "Carol Davila University -- official Admission Methodology 2026-2027",
+          "url": "https://umfcd.ro/en/international-students/admission-2026-2027-academic-year/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, English-proficiency requirements, interview-based admissions process, and the live 2026/27 Session II calendar."
+        },
+        {
+          "label": "Carol Davila University -- official 2026-2027 international-student fee schedule (PDF)",
+          "url": "https://umfcd.ro/en/wp-content/uploads/2026/INTERNATIONAL_STUDENTS/ADMISSION_2026/DOCUMENTS/Taxe_UMFCD_2026-2027_studenti_internationali_EN.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming current 2026/27 tuition, language test fee and registration fee, cross-confirmed by the Board/Senate-approved Romanian fee schedule."
+        },
+        {
+          "label": "Carol Davila University -- accommodation / social services page",
+          "url": "https://umfcd.ro/en/students/social-services/accomodation/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the off-campus rent floor and self-funded international-student dormitory eligibility; no specific current dormitory fee was published."
+        },
+        {
+          "label": "Carol Davila University -- official history page",
+          "url": "https://umfcd.ro/en/about-us/history/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the university's founding as the National School of Medicine and Pharmacy in 1857."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": [
+              "current qualification",
+              "biology and chemistry preparation",
+              "English proficiency status",
+              "citizenship or residency",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": [
+              "intended intake",
+              "budget",
+              "accommodation preference",
+              "funding need"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": [
+              "document readiness",
+              "English proficiency proof",
+              "interview preparation",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": [
+              "intended country of practice",
+              "postgraduate licensing interest"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (English-taught Program)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 60000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: EUR 10,000/year for non-EU international students, approved by the university's Board of Directors (11 May 2026) and Senate (13 May 2026) and confirmed on the live admissions page. EU/EEA citizens pay the RON equivalent at the National Bank of Romania exchange rate on the day of payment. Total is calculated as the annual figure times 6 years -- not published as a lump sum. A separate EUR 500 language test fee and a 2,500 LEI registration fee also apply; it was not confirmed whether these are the same charge in two currencies or two distinct fees."
+          },
+          "officialProgramUrl": "https://umfcd.ro/en/international-students/admission-2026-2027-academic-year/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed an accredited secondary school granting access to university studies in their home country"
+            ],
+            "restrictions": [
+              "Minimum B2 CEFR English certificate required unless exempted by prior English-medium schooling or an equivalent baccalaureate result"
+            ],
+            "notes": "Admission is by online registration and a 15-30 minute English-language interview plus an academic-record Evaluation Grid, not a written entrance exam.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://umfcd.ro/en/international-students/admission-2026-2027-academic-year/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants register online, complete their file, sit a short English-language interview based on published scientific topics, and are ranked by a score combining the interview and an academic-performance Evaluation Grid; there is no written entrance exam.",
+            "eligibility": {
+              "intro": "Admission requires completed accredited secondary education and proof of English proficiency at B2 CEFR level or an accepted exemption.",
+              "items": [
+                "Accredited high-school diploma granting access to university studies in the applicant's home country",
+                "Minimum B2 CEFR English certificate (issued within 2 years), or exemption via English-medium schooling or baccalaureate result",
+                "Certified and apostilled Romanian translations of academic documents"
+              ]
+            },
+            "applicationSteps": [
+              "Register online during the open admissions session",
+              "Complete and submit the application file with supporting documents",
+              "Sit the 15-30 minute online English-language interview",
+              "Await the ranked results list",
+              "Pay the seat-confirmation fee (50% of tuition) and submit physical files by the enrollment deadline"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Accredited, apostilled and Romanian-translated high-school diploma and transcripts",
+                "English-proficiency certificate or documented exemption"
+              ],
+              "application": [
+                "Valid passport",
+                "Birth certificate with certified Romanian translation",
+                "Passport-style photographs"
+              ]
+            },
+            "deadlinesNote": "The 2026/27 Session II ran to 18 September 2026 for EU citizens and non-EU applicants with a valid Romanian visa, with interviews to 23 September, ranking 24 September, seat confirmation 24-28 September and General Medicine file submission 29-30 September 2026.",
+            "visaConsiderations": [
+              "Confirm current Romanian student-visa requirements directly with the university's International Students Office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current 2026/27 tuition of EUR 10,000/year for non-EU international students, approved by Board (11 May 2026) and Senate (13 May 2026), cross-confirmed by the official fee-schedule PDF and the live admissions page's own worked example. A separate EUR 500 language test fee and 2,500 LEI registration fee also apply.",
+          "teachingPhases": [
+            {
+              "phase": "6-year integrated General Medicine programme",
+              "language": "English",
+              "details": "Preclinical foundation sciences followed by clinical training across 360 ECTS credits at affiliated hospitals in Bucharest; a detailed year-by-year rotation breakdown was not published by the university."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "publicField": "recognition",
+      "claimText": "Carol Davila University of Medicine and Pharmacy's Faculty of Medicine is listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001706), with the Doctor Medic qualification, 6-year curriculum duration, ECFMG-certification eligibility (graduation years 1953-current) and Canadian MCC acceptability confirmed.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Carol Davila University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001706",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "programmeSlug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+      "publicField": "recognition",
+      "claimText": "The Romanian 'doctor medic' qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, reference date 1 January 2007, applicable to accredited Romanian medical universities including Carol Davila.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02005L0036-20140117",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "programmeSlug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine (English-taught Program) is a 6-year, 360-ECTS direct-entry programme awarding the Doctor Medic degree, open to applicants with an accredited secondary-school diploma and no prior university degree required.",
+      "status": "verified",
+      "sourceLabel": "Carol Davila University -- official Admission Methodology 2026-2027",
+      "sourceUrl": "https://umfcd.ro/en/international-students/admission-2026-2027-academic-year/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "programmeSlug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires an accredited high-school diploma and a minimum B2 CEFR English certificate (or an accepted exemption); ranking is via a 15-30 minute English-language interview combined with an academic-performance Evaluation Grid, not a written entrance exam.",
+      "status": "verified",
+      "sourceLabel": "Carol Davila University -- official Admission Methodology 2026-2027",
+      "sourceUrl": "https://umfcd.ro/en/international-students/admission-2026-2027-academic-year/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "programmeSlug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+      "publicField": "admissions",
+      "claimText": "Re-verified 15 September 2026 against the official Session II application schedule (extension) PDF linked from the live admissions page (page last modified 11 September 2026): the 2026/27 Session II registration ran 22 July 2026 10:00 - 18 September 2026 16:00 (Romania time), with the extended period valid only for EU-state citizens and non-EU citizens holding a valid visa, who upload proof of access to Romania with their passport; file corrections 24 July - 22 September 2026 10:00; online English interviews 27 July - 23 September 2026; rankings 4 August and 24 September 2026; seat confirmation (50% of tuition) 5-7 August and 24-28 September 2026; file submission 31 August - 18 September 2026 for English/French taught programmes and 29-30 September 2026 for General Medicine English-taught. Supersedes the 22 August 2026 dates in migration 0045.",
+      "status": "verified",
+      "sourceLabel": "Carol Davila University -- official Session II application schedule (extension), academic year 2026/2027",
+      "sourceUrl": "https://umfcd.ro/en/wp-content/uploads/2026/INTERNATIONAL_STUDENTS/ADMISSION_2026/SECOND_SESSION/Calendar%20Concurs%20de%20Admitere_ses2_EN_prelungire_RO.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-15",
+      "reviewBy": "2027-03-01",
+      "internalNotes": "Source conflict: the PDF's IMPORTANT eligibility note still says the registration extension runs 'until 10th of September 2026', while the asterisked dated schedule in the same PDF gives registration to 18.09.2026 16:00 and the later correction/interview/ranking/confirmation/submission dates. The dated schedule was used as the later, specific statement. Previously cited ...prelungire_accessRO.pdf returns HTTP 404 as of 2026-09-15. No secondary source covers Session II; official Grade A source only. Session I dates unchanged."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "programmeSlug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+      "publicField": "intake",
+      "claimText": "Re-verified 22 August 2026: the university runs two admission sessions per cycle for a single September academic-year start. For 2026/27, Session I ran 1 April - 13 July 2026 with online English interviews 10 April - 20 July 2026, ranking 21 July 2026 and seat confirmation 21-23 July 2026 (official Application Schedule PDF); Session II followed from 22 July 2026 (official Session II schedule PDF). Both sessions' provisional admitted/rejected lists were published on the live admissions page, dated 21 July 2026 and 4 August 2026.",
+      "status": "verified",
+      "sourceLabel": "Carol Davila University -- official Application Schedule 2026/2027 and Session II schedule, with dated provisional result lists on the live admissions page",
+      "sourceUrl": "https://umfcd.ro/en/wp-content/uploads/2026/INTERNATIONAL_STUDENTS/ADMISSION_2026/DOCUMENTS/ANNEXES/UMFCD_Admission_Schedule_2026_RO-EN_extension.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-04-01"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "programmeSlug": "carol-davila-university-of-medicine-and-pharmacy-general-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition confirmed at EUR 10,000/year for non-EU international students (EU/EEA citizens pay the RON equivalent), approved by Board (11 May 2026) and Senate (13 May 2026); a separate EUR 500 language test fee and 2,500 LEI registration fee also apply.",
+      "status": "verified",
+      "sourceLabel": "Carol Davila University -- official 2026-2027 international-student fee schedule (PDF)",
+      "sourceUrl": "https://umfcd.ro/en/wp-content/uploads/2026/INTERNATIONAL_STUDENTS/ADMISSION_2026/DOCUMENTS/Taxe_UMFCD_2026-2027_studenti_internationali_EN.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "publicField": "student living",
+      "claimText": "Off-campus rent in Bucharest can be as low as EUR 150/month (excluding utilities), per the university's own accommodation page; self-funded international students may apply for dormitory rooms subject to availability, though no current dormitory fee is published.",
+      "status": "verified",
+      "sourceLabel": "Carol Davila University -- accommodation / social services page",
+      "sourceUrl": "https://umfcd.ro/en/students/social-services/accomodation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

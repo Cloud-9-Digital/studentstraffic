@@ -1,0 +1,416 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Texila American University Zambia maps its Bachelor of Medicine and Bachelor of Surgery (MBChB) programme to this category: a direct-entry, single-cycle five-year programme, with a one-year foundation stage (HPFP) required for applicants without qualifying A-Level science grades.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "zambia",
+      "slug": "texila-american-university-zambia",
+      "name": "Texila American University Zambia",
+      "city": "Lusaka",
+      "type": "Private",
+      "establishedYear": 2016,
+      "officialWebsite": "https://tau.edu.zm/",
+      "mediaAttribution": {},
+      "summary": "Texila American University Zambia opened in 2016 and enrolled its first MBChB cohort in 2017. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 2023 onward, is accredited by Zambia's Health Professions Council (HPCZ), and the university is registered with Zambia's Higher Education Authority as one of the country's multi-campus private higher-education institutions.",
+      "campusLifestyle": "The MBChB programme is a for-profit, private-university offering, part of the wider Texila American University group with campuses in several countries; Zambia-specific accreditation (HEA registration, HPCZ programme accreditation) is kept distinct in the university's own materials from its Guyana campus's separate accreditation. International (foreign) students receive a complimentary six-month hostel stay on enrollment.",
+      "cityProfile": "Lusaka is Zambia's capital and largest city, home to several major public hospitals used for the university's clinical training, including University Teaching Hospital and Levy Mwanawasa University Teaching Hospital. The city hosts a range of government ministries, regional diplomatic missions and other higher-education institutions, giving international medical students access to a reasonably sized urban support network alongside the university's own hostel and counselling services.",
+      "practicalExposure": "The five-year MBChB (following a one-year Health Professions Foundation Programme for applicants without qualifying A-Level grades) runs preclinical foundations in Years 1-2, with hospital-based clinical rotations across Years 3-5: Internal Medicine (30 weeks), General Surgery (30 weeks), Paediatrics (20 weeks), Obstetrics and Gynaecology (20 weeks), Psychiatry (10 weeks) and Community Medicine (10 weeks). Clinical training runs across a named hospital network: Chainama Hills Hospital (250 beds), University Teaching Hospital Adult and Children's sites (2,000+ and 350 beds respectively), Levy Mwanawasa University Teaching Hospital (1,000 beds), Cancer Disease Hospital (252 beds) and Maina Soko Military Hospital (260+ beds). Post-graduation internship is provided in a teaching hospital under consultant supervision. Graduates receive the MBChB degree.",
+      "hostelOverview": "International (foreign) students receive a complimentary six-month hostel stay on enrollment, in shared rooms (2- or 3-sharing) with a communal kitchen, study room, laundry and 24/7 security. No cost figure is published for accommodation beyond the initial six-month period; applicants should confirm current rates directly with Student Counsellors. The university does not provide accommodation for visiting family members.",
+      "dietarySupport": "Hostel accommodation includes a communal kitchen with a gas stove and fridge; there is no in-house cafeteria, and students self-cater. No specific food-cost figure is published.",
+      "safetyOverview": "Hostel facilities include a daytime caretaker and night security, with gender-specific accommodation. No wider university-published campus-safety statistics were found.",
+      "studentSupport": "Admissions and hostel queries are handled through the university's Student Counsellors and admissions office (enquiry@tau.edu.zm). The university's own materials state its MBChB curriculum was reviewed by South Africa's Health Professions Council in November 2024 and found to meet professional standards for registration purposes, subject to South Africa's own Medical Board Examination.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0005597), currently operational, with ECFMG-certification eligibility for graduates from 2023 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "Programme-specific accreditation from Zambia's Health Professions Council (HPCZ), with the university itself registered with Zambia's Higher Education Authority.",
+        "A named, extensive clinical hospital network spanning six major Lusaka hospitals with detailed bed counts and rotation-week allocations.",
+        "A complimentary six-month hostel stay offered to all international students on enrollment.",
+        "Two annual intakes (March and September), offering more scheduling flexibility than a single fixed date."
+      ],
+      "thingsToConsider": [
+        "ECFMG-certification eligibility applies only to graduates from 2023 onward, reflecting the programme's comparatively recent formal international-recognition track record.",
+        "No exact application deadline was found for the confirmed-open September 2026 intake; several named fees (application fee, admission processing charge, visa processing charge, seat deposit) are referenced in the university's own admissions and refund policy text but not quantified anywhere published.",
+        "Fees are non-refundable in most circumstances (application fee, admission charges, visa processing, seat deposit, and the current semester's fee once a semester has started); confirm the current refund policy in writing before paying.",
+        "The university's scholarship page describing an Academic Excellence Scholarship and a Kenneth Kaunda Scholarship was last confirmed available in December 2023 and may not reflect current terms; the Kenneth Kaunda Scholarship's naming and framing suggest a likely Zambia-national focus, though this is not explicitly stated.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students with a qualifying A-Level science background (Biology, Chemistry, Physics, Mathematics, English at grade C or above) seeking direct MBChB entry without a foundation year.",
+        "Applicants comfortable with a private, for-profit university structure and an online admissions process including an assessment test and interview.",
+        "Families able to plan for unquantified ancillary fees (application, visa processing, seat deposit) by confirming exact figures directly with admissions before applying."
+      ],
+      "industryPartners": [
+        "University Teaching Hospital",
+        "Levy Mwanawasa University Teaching Hospital",
+        "Chainama Hills Hospital",
+        "Cancer Disease Hospital",
+        "Maina Soko Military Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0005597), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 2023-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Health Professions Council of Zambia (HPCZ) — MBChB programme accredited",
+        "Zambia Higher Education Authority (HEA) — university registered as a multi-campus private higher-education institution"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Texila American University College of Medicine, Zambia listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0005597" },
+        { "label": "Zambia Higher Education Authority — 2021 registered private HEIs gazette", "url": "https://hea.org.zm/hea-gazettes-53-registered-private-heis-for-2021/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBChB programme direct-entry after high school?",
+          "answer": "Yes. Applicants with qualifying A-Level science grades (Biology, Chemistry, Physics, Mathematics, English at grade C or above) enter the 5-year MBChB directly. Applicants with O-level or equivalent results instead complete a 1-year Health Professions Foundation Programme first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MBChB (Bachelor of Medicine, Bachelor of Surgery) degree."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "There is no standalone written entrance exam. Selection uses an online assessment test plus a personal interview assessing motivation, resilience and problem-solving."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "For international students: USD 8,200 in Year 1, USD 4,500 in Year 2, and USD 5,500 in each of Years 3-5, for a five-year total of roughly USD 29,200, per the university's official tuition page. The one-year foundation programme (for O-level entrants) costs an additional USD 8,000."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- an application fee, admission processing charge, visa processing charge and seat deposit are all referenced in the university's admissions materials, but exact amounts were not published; confirm these directly with admissions. Most fees are non-refundable."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The university runs two intakes a year, in March and September. The September 2026 intake is confirmed open, but no specific application deadline date is published -- confirm the current cutoff directly with admissions."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "An Academic Excellence Scholarship offers merit-based tuition discounts (5-10%) for top-performing students, and a Kenneth Kaunda Scholarship offers a full tuition award for one MBChB student per year, though its framing suggests it may be focused on Zambian nationals. This information was last confirmed available in December 2023 and should be reverified for current terms."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Texila American University College of Medicine, Zambia listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0005597",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding/instruction-start year, programme duration and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "Health Professions Council of Zambia — Approved Training Programmes in Private Institutions",
+          "url": "https://www.hpcz.org.zm/wp-content/uploads/2019/12/Private-TIs.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for HPCZ programme accreditation of the MBChB; a more recently dated HPCZ document could not be retrieved."
+        },
+        {
+          "label": "Zambia Higher Education Authority — 2021 registered private HEIs gazette",
+          "url": "https://hea.org.zm/hea-gazettes-53-registered-private-heis-for-2021/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the university's registration as a multi-campus private higher-education institution in Zambia."
+        },
+        {
+          "label": "Texila American University Zambia — official MBChB programme page",
+          "url": "https://tau.edu.zm/mbchb-program/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, eligibility routes, curriculum structure and clinical rotation weeks."
+        },
+        {
+          "label": "Texila American University Zambia — official Tuition and Aid page",
+          "url": "https://tau.edu.zm/tuition-and-aid/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for confirmed international tuition by year, and the refund policy."
+        },
+        {
+          "label": "Texila American University Zambia — official Affiliated Hospitals page",
+          "url": "https://tau.edu.zm/affiliated-hospitals/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for named clinical partner hospitals and bed counts."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "texila-american-university-zambia-mbchb",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5500,
+            "officialTotalTuitionAmount": 29200,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published international tuition, per the university's Tuition and Aid page: USD 8,200 (Year 1), USD 4,500 (Year 2), USD 5,500 (Years 3-5 each), for a 5-year total of approximately USD 29,200. Applicants entering via the 1-year Health Professions Foundation Programme (O-level route) pay an additional USD 8,000 for that foundation year. Application fee, admission processing charge, visa processing charge and seat deposit are referenced but not quantified in any source found. Most fees are non-refundable; a pre-semester-start withdrawal refunds tuition minus non-refundable charges, while a post-start withdrawal also forfeits the current semester's fee."
+          },
+          "officialProgramUrl": "https://tau.edu.zm/mbchb-program/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with IGCSE A-Level results in Biology, Chemistry, Physics, Mathematics and English at grade C or above (direct MBChB entry), or O-level-equivalent results plus completion of the 1-year Health Professions Foundation Programme"
+            ],
+            "restrictions": [
+              "Selection uses an online assessment test and interview rather than a standardized entrance exam",
+              "English proficiency (for non-English-speaking-country applicants) requires TOEFL, IELTS 4.0 or above, or Cambridge/IB equivalents",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "Country-specific O-level equivalents are explicitly recognized for South Africa, Namibia, Zimbabwe, Botswana, Malawi and Nigeria.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://tau.edu.zm/admissions-requirement/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online, pay the application fee, submit academic documents, complete an online assessment test and interview, and progress through a multi-stage offer process (Eligibility Letter, Provisional Admission Letter, Admission Confirmation Letter, Final Admission Letter) tied to fee installment payments.",
+            "eligibility": {
+              "intro": "Admission requires qualifying secondary-education science results (direct A-Level entry, or O-level results plus the foundation programme), English proficiency, and a passing result on the university's online assessment and interview.",
+              "items": [
+                "IGCSE A-Level in Biology, Chemistry, Physics, Mathematics and English (grade C or above) for direct entry, or O-level-equivalent results plus the 1-year Health Professions Foundation Programme",
+                "English proficiency: TOEFL, IELTS 4.0 or above, or Cambridge/IB equivalents, for non-English-speaking-country applicants",
+                "Online assessment test and personal interview assessing motivation, resilience and problem-solving",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online application form via apply.tauedu.org and pay the application fee",
+              "Upload photograph, ID proof and academic credentials",
+              "Complete the online assessment test and interview",
+              "Receive an Eligibility Letter, e-sign the admission letter and pay the seat deposit",
+              "Complete document review, pay the first fee installment, and receive the Provisional and then Final Admission Letter before enrollment"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-education transcripts and certificates (A-Level or O-level-equivalent)",
+                "English-proficiency proof, for non-English-speaking-country applicants"
+              ],
+              "application": [
+                "Photograph",
+                "Proof of identity",
+                "Proof of application-fee and seat-deposit payment"
+              ]
+            },
+            "deadlinesNote": "Two intakes a year (March and September). The September 2026 intake is confirmed open, but no specific application deadline date is published -- confirm directly with admissions (enquiry@tau.edu.zm).",
+            "visaConsiderations": [
+              "A visa-processing charge applies for international students, though the exact amount is not published; confirm current Zambian student-visa requirements and costs directly with admissions."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["March", "September"],
+          "intakeCodes": ["march", "september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed international tuition: USD 8,200 (Year 1), USD 4,500 (Year 2), USD 5,500 (Years 3-5 each), roughly USD 29,200 total, per the university's official Tuition and Aid page. The 1-year foundation programme costs USD 8,000 additionally for O-level-route entrants. Application, admission-processing, visa-processing and seat-deposit fees are referenced but not quantified; most fees are non-refundable.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: preclinical foundation",
+              "language": "English",
+              "details": "Basic medical sciences, including the Health Professions Foundation Programme year for O-level-route entrants."
+            },
+            {
+              "phase": "Years 3-5: clinical rotations",
+              "language": "English",
+              "details": "Hospital-based rotations: Internal Medicine (30 weeks), General Surgery (30 weeks), Paediatrics (20 weeks), Obstetrics and Gynaecology (20 weeks), Psychiatry (10 weeks) and Community Medicine (10 weeks), across a named network of Lusaka hospitals."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-zambia",
+      "publicField": "identity",
+      "claimText": "Texila American University Zambia opened in 2016 (WDOMS lists instruction start as 2017, aligning with the first MBChB cohort and HPCZ approval).",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0005597",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0005597",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-zambia",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0005597), currently operational; graduates (2023-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0005597",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0005597",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-zambia",
+      "publicField": "recognition",
+      "claimText": "The MBChB programme is accredited by the Health Professions Council of Zambia, and the university is registered with Zambia's Higher Education Authority as a multi-campus private higher-education institution.",
+      "status": "verified",
+      "sourceLabel": "Health Professions Council of Zambia — Approved Training Programmes in Private Institutions",
+      "sourceUrl": "https://www.hpcz.org.zm/wp-content/uploads/2019/12/Private-TIs.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-zambia",
+      "programmeSlug": "texila-american-university-zambia-mbchb",
+      "publicField": "academics",
+      "claimText": "MBChB is a 5-year, direct-entry programme (with a 1-year foundation stage for O-level-route entrants), taught in English, awarding the MBChB degree.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official MBChB programme page",
+      "sourceUrl": "https://tau.edu.zm/mbchb-program/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-zambia",
+      "programmeSlug": "texila-american-university-zambia-mbchb",
+      "publicField": "eligibility",
+      "claimText": "Direct MBChB entry requires IGCSE A-Level results (Biology, Chemistry, Physics, Mathematics, English, grade C+); O-level-equivalent applicants complete a 1-year foundation programme first; no standalone written entrance exam, but an online assessment test and interview apply.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official Admissions Requirement page",
+      "sourceUrl": "https://tau.edu.zm/admissions-requirement/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-zambia",
+      "programmeSlug": "texila-american-university-zambia-mbchb",
+      "publicField": "admissions",
+      "claimText": "Application via apply.tauedu.org with a multi-stage offer process (Eligibility Letter, seat deposit, Provisional and Final Admission Letters); two annual intakes (March and September); September 2026 intake confirmed open with no specific deadline date published.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official Admissions and Undergraduate Admission Procedures pages",
+      "sourceUrl": "https://tau.edu.zm/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-zambia",
+      "programmeSlug": "texila-american-university-zambia-mbchb",
+      "publicField": "intake",
+      "claimText": "Two annual intakes (March and September); the September 2026 MBChB and HPFP intake is confirmed open per the university's official social media, though no calendar deadline date was published anywhere found.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official Facebook page",
+      "sourceUrl": "https://www.facebook.com/TexilaZambia/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-zambia",
+      "programmeSlug": "texila-american-university-zambia-mbchb",
+      "publicField": "fee",
+      "claimText": "International tuition: USD 8,200 (Year 1), USD 4,500 (Year 2), USD 5,500 (Years 3-5 each), roughly USD 29,200 five-year total; foundation year (HPFP) USD 8,000 additionally for O-level-route entrants; most fees non-refundable.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official Tuition and Aid page",
+      "sourceUrl": "https://tau.edu.zm/tuition-and-aid/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "texila-american-university-zambia",
+      "programmeSlug": "texila-american-university-zambia-mbchb",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training runs across a named hospital network: Chainama Hills Hospital, University Teaching Hospital (Adult and Children's sites), Levy Mwanawasa University Teaching Hospital, Cancer Disease Hospital and Maina Soko Military Hospital, with specific rotation-week allocations by discipline.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official Affiliated Hospitals page",
+      "sourceUrl": "https://tau.edu.zm/affiliated-hospitals/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "texila-american-university-zambia",
+      "publicField": "student living",
+      "claimText": "International students receive a complimentary six-month hostel stay on enrollment, in shared rooms with communal kitchen, study room and laundry facilities; no cost figure is published beyond the initial six months.",
+      "status": "verified",
+      "sourceLabel": "Texila American University Zambia — official Accommodation page",
+      "sourceUrl": "https://tau.edu.zm/accommodation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

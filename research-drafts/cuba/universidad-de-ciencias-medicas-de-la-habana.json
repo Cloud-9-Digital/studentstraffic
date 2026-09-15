@@ -1,0 +1,17 @@
+{
+  "countrySlug": "cuba",
+  "universitySlug": "universidad-de-ciencias-medicas-de-la-habana",
+  "schoolName": "Universidad de Ciencias Medicas de La Habana",
+  "cityName": "Havana",
+  "priority": "medium",
+  "officialWebsite": "",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - WDOMS lists Universidad de Ciencias Medicas de La Habana as a currently operational public medical school and identifies multiple constituent medical faculties. A current third-party Cuban medical-education portal identifies it as a medical university, but a current official university admission, tuition, international-student, language, accommodation and clinical-placement source was not verified. It must not be represented as available to a defined foreign applicant cohort until that government or university route is documented.",
+  "sourceBundle": { "sources": [
+    { "label": "World Directory of Medical Schools UCMH record", "url": "https://search.wdoms.org/home/SchoolDetail/F0000461", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists Universidad de Ciencias Medicas de la Habana and its constituent medical faculties; use only as directory evidence, not a fee or admissions source." },
+    { "label": "Cuba Mundo Medico UCMH profile", "url": "https://www.cubamundomedico.com/es/universidad-de-ciencias-medicas-de-la-habana", "kind": "education-portal", "checkedAt": "2026-07-25", "notes": "Identifies the institution as a medical university and references medicine study, but does not provide a verified current foreign admissions and cost route." }
+  ] },
+  "structuredFacts": { "name": "Universidad de Ciencias Medicas de La Habana", "type": "Public medical university", "programs": [ { "officialTitle": "Medicine", "duration": "Not verified from a current official programme source in this research pass", "feeStatus": "No current official fee schedule verified", "publishable": false } ], "missingForPublication": [ "current official programme catalogue and duration", "current foreign admissions/nominations process", "language and preparatory-study requirements", "fee, funding and living-cost terms", "clinical and student-support evidence", "market-specific professional registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted. The institutional identity alone does not establish an appropriate or available route for prospective applicants." }
+}

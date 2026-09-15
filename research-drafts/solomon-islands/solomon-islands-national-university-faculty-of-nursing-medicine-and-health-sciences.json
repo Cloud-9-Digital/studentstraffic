@@ -1,0 +1,22 @@
+{
+  "countrySlug": "solomon-islands",
+  "universitySlug": "solomon-islands-national-university-faculty-of-nursing-medicine-and-health-sciences",
+  "schoolName": "Solomon Islands National University — Faculty of Nursing, Medicine and Health Sciences",
+  "cityName": "Honiara",
+  "priority": "high",
+  "officialWebsite": "https://www.sinu.edu.sb/fnmhs/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — SINU's current faculty page confirms the Faculty of Nursing, Medicine and Health Sciences and names Schools of Nursing, Public Health and Medicine. The university's 2026 admissions notice and fee links confirm an active general admissions cycle. However, current programme evidence on the faculty page documents nursing and postgraduate health leadership, while the WHED programme summary lists Nursing, Midwifery and Public Health—not a medical degree. No current Doctor of Medicine/MBBS programme title, curriculum, fees, admissions, clinical pathway, recognition or international route could be confirmed. The faculty label must not be treated as proof that an undergraduate medical degree is offered.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "SINU Faculty of Nursing, Medicine and Health Sciences", "url": "https://www.sinu.edu.sb/fnmhs/", "kind": "official-faculty", "checkedAt": "2026-07-25", "notes": "Confirms faculty and Schools of Nursing, Public Health and Medicine; page describes nursing/allied-health and health-leadership programmes, not an MD/MBBS offering."},
+      {"label": "SINU 2026 programme and fee information", "url": "https://www.sinu.edu.sb/applications-for-2026-now-open/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Confirms 2026 admissions information and links fees, but no verified medical-degree details in the discovery evidence."},
+      {"label": "SINU official about page", "url": "https://www.sinu.edu.sb/about/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Confirms current national-university structure and FN MHS among five faculties."},
+      {"label": "WHED SINU record", "url": "https://whed.net/institutions/IAU-015528", "kind": "institution-directory", "checkedAt": "2026-07-25", "notes": "Lists faculty health fields and degrees in nursing/midwifery/public health; supportive context only, not a current programme authority."},
+      {"label": "Solomon Islands Tertiary Education and Skills Authority", "url": "https://www.sitesa.gov.sb/node/2", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Describes national tertiary-provider regulation and course-accreditation system; no programme-specific SINU medical approval found."}
+    ]
+  },
+  "structuredFacts": {"name": "Solomon Islands National University — Faculty of Nursing, Medicine and Health Sciences", "type": "Public", "programs": [], "missingForPublication": ["confirmed medical degree existence", "programme curriculum and language", "fees", "admission/international route", "clinical training", "recognition", "student support"]},
+  "draftContent": {"summary": "", "faq": [], "notes": "No public medical page drafted: offering an MD/MBBS is not verified."}
+}

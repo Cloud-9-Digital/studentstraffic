@@ -1,0 +1,73 @@
+{
+  "countrySlug": "guatemala",
+  "universitySlug": "university-of-san-carlos-of-guatemala-faculty-of-medical-sciences",
+  "schoolName": "University of San Carlos of Guatemala Faculty of Medical Sciences",
+  "cityName": "Guatemala City",
+  "priority": "medium",
+  "officialWebsite": "https://medicina.usac.edu.gt/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — USAC's Faculty of Medical Sciences offers the in-person Médico y Cirujano degree at the Centro Universitario Metropolitano. Its official 2026 registration guide lists a seven-year course and entry tests, while the faculty's applicant system publishes the specific-test route. The official student support page references economic-investment and scholarship information but did not provide a current, citable fee schedule in the material reviewed. No official international-applicant pathway, language-of-instruction statement, current international fee package, or independently corroborated recognition pathway suitable for this site's study-abroad medical payload was found. Do not publish until those requirements are verified.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "USAC Portal de Registro y Estadística — Facultad de Ciencias Médicas, Guía de Inscripción 2026",
+        "url": "https://portalregistro.usac.edu.gt/facultades",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Médico y Cirujano at Centro Universitario Metropolitano, Zona 11, as a seven-year programme and identifies the basic and specific admission tests for the 2026 guide."
+      },
+      {
+        "label": "USAC Faculty of Medical Sciences — Aspirant system",
+        "url": "https://aspirantes.medicina.usac.edu.gt/index.php",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Official applicant portal for the Faculty's Médico y Cirujano specific tests; it describes required identity and secondary-school documents for test assignment."
+      },
+      {
+        "label": "USAC Faculty of Medical Sciences — UNADe student information",
+        "url": "https://cms.medicina.usac.edu.gt/unade/estudiantes/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms the 2026 in-person Médico y Cirujano course and links students to curriculum, investment, scholarships and support information; no current itemised tuition schedule was captured."
+      },
+      {
+        "label": "USAC Dirección de Desarrollo Organizacional — Faculty profile",
+        "url": "https://ddo.usac.edu.gt/index.php/facultades/facultad-de-ciencias-medicas/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Identifies the Faculty as the USAC academic unit responsible for Médico y Cirujano and other health programmes."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of San Carlos of Guatemala Faculty of Medical Sciences",
+    "city": "Guatemala City",
+    "type": "Public",
+    "officialWebsite": "https://medicina.usac.edu.gt/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Current official fee schedule for the intended intake",
+      "Official international-applicant eligibility and application route",
+      "Explicit programme language-of-instruction statement",
+      "Primary-source recognition and graduate-licensing evidence relevant to the intended audience",
+      "Verified clinical-placement and accommodation information for international entrants"
+    ],
+    "notes": "The official 2026 registration guide confirms a seven-year Médico y Cirujano course at CUM and the faculty confirms an in-person course. A student-facing official page mentions investment and scholarships, but no reliable current amount was found. To avoid representing a domestic admissions route as a study-abroad pathway, no programme payload is populated."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative content is intentionally blank. The available first-party evidence supports the existence, location, duration and domestic entry-test route of Médico y Cirujano, but not an authoritative study-abroad offer with current fees, international admission terms, instructional language, accommodation or recognition claims."
+  }
+}

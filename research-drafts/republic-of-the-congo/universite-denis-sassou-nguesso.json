@@ -1,0 +1,19 @@
+{
+  "countrySlug": "republic-of-the-congo",
+  "universitySlug": "universite-denis-sassou-nguesso",
+  "schoolName": "Université Denis Sassou Nguesso",
+  "cityName": "Kintélé",
+  "priority": "medium",
+  "officialWebsite": "https://www.udsn.cg/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UDSN is a public university listed by the ministry. Its official accessible admissions material concerns applied-science bachelor entry, not medicine; it states a CEMAC/non-CEMAC dossier charge but not medical tuition. WHO documentation of a health-related equipment donation does not establish a medical degree. No current medical programme was verified, so this is not a safe medical-university candidate for publication.",
+  "sourceBundle": { "sources": [
+    { "label": "Republic of the Congo higher-education ministry", "url": "https://enseignement-superieur.gouv.cg/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Lists Université Denis Sassou N'Guesso among national universities." },
+    { "label": "UDSN official establishment-choice/admissions page", "url": "https://www.udsn.cg/choix-de-letablissement/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Current accessible page describes applied-science bachelor selection, not medical studies; stated dossier charges are 10,000 CFA for CEMAC and 20,000 CFA for non-CEMAC applicants." },
+    { "label": "WHO Africa UDSN visit", "url": "https://www.afro.who.int/fr/countries/congo/news/remise-de-medicaments-de-soins-primaires-luniversite-denis-sassou-nguesso", "kind": "international-organisation", "checkedAt": "2026-07-25", "notes": "Reports a health-related donation, not a medical-degree accreditation or programme record." },
+    { "label": "UDSN creation law", "url": "https://www.finances.gouv.cg/fr/loi-n%C2%B037-2013-du-30-d%C3%A9cembre-2013-portant-cr%C3%A9ation-de-luniversit%C3%A9-denis-sassou-nguesso", "kind": "government-law", "checkedAt": "2026-07-25", "notes": "Establishes the institution but does not supply current medicine curriculum/admissions data." }
+  ] },
+  "structuredFacts": { "name": "Université Denis Sassou Nguesso", "type": "Public university", "programs": [], "missingForPublication": [ "evidence that a current medical degree is offered", "medical award, duration, language and fee schedule", "medical international admission route and deadline", "clinical, accommodation/support and recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted. Current evidence does not establish a medicine programme." }
+}

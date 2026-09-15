@@ -1,0 +1,68 @@
+{
+  "countrySlug": "chad",
+  "universitySlug": "university-of-ndjamena-faculty-of-human-health-sciences",
+  "schoolName": "Université de N'Djaména — Faculté des Sciences de la Santé Humaine",
+  "cityName": "N'Djaména",
+  "priority": "high",
+  "officialWebsite": "https://www.universite-ndjamena.td/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — current official pages establish an FSSH Medicine department at the Gardolé campus and identify Médecine Générale as a French-language doctorate programme. The faculty page lists medical specialities and a LaboRedes laboratory, and the university reports four campuses. However, current primary sources found do not disclose programme duration, tuition/mandatory fees, intake and application process, international eligibility, named teaching-hospital/clinical placement arrangements, accommodation/support terms or programme-level professional-recognition evidence. These gaps preclude a valuable, authoritative admissions page.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Université de N'Djaména Department of Medicine",
+        "url": "https://www.universite-ndjamena.td/formation/departements/departement-de-medecine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Médecine Générale as a doctorate taught in French."
+      },
+      {
+        "label": "Université de N'Djaména FSSH page",
+        "url": "https://www.universite-ndjamena.td/formation/facultes/faculte-des-sciences-de-la-sante-humaine/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms FSSH at Campus de Gardolé, named medicine-related departments and LaboRedes; no programme fee or current entry data."
+      },
+      {
+        "label": "Université de N'Djaména official site",
+        "url": "https://www.universite-ndjamena.td/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms institution, four campuses, and university contact details."
+      },
+      {
+        "label": "Chad higher-education ministry state-universities list",
+        "url": "https://enseignementsuptchad.net/fr/universites-detat/",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Chad state universities, including University of N'Djaména."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université de N'Djaména — Faculté des Sciences de la Santé Humaine",
+    "type": "Public",
+    "programs": [
+      {
+        "officialTitle": "Médecine Générale",
+        "awardLevel": "Doctorat",
+        "instructionLanguage": "French",
+        "feeStatus": "not found",
+        "publishable": false
+      }
+    ],
+    "missingForPublication": [
+      "current programme duration and curriculum",
+      "tuition/mandatory fees",
+      "application route, intake and eligibility including international applicants",
+      "clinical-training and accommodation/support details",
+      "programme-specific regulatory and overseas-recognition evidence"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public content drafted because admissions and cost claims would be unsupported."
+  }
+}

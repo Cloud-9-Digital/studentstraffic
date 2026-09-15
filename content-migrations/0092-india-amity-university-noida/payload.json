@@ -1,0 +1,1629 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Computer science bachelor's programmes build a foundation in programming, mathematical reasoning, algorithms and computer systems. The precise award title, curriculum, admissions route, costs and progression rules depend on the university and should be assessed at programme level before an applicant shortlists an option.",
+      "metaTitle": "B.E./B.Tech CSE: Computer Science Programmes",
+      "metaDescription": "Explore B.E./B.Tech CSE programmes with programme-level curriculum, eligibility, fees, intake and application requirements for a Computer Science shortlist."
+    },
+    {
+      "slug": "be-btech-artificial-intelligence-machine-learning",
+      "name": "B.E./B.Tech in Artificial Intelligence and Machine Learning",
+      "shortName": "B.E./B.Tech AI & ML",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "artificial-intelligence-machine-learning",
+      "aliases": [
+        "Bachelor of Engineering in Artificial Intelligence",
+        "Bachelor of Science in Artificial Intelligence",
+        "Artificial Intelligence and Machine Learning"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "Artificial intelligence and machine learning bachelor's programmes combine core computing and mathematics with statistical learning, data handling and applied model building. Award titles, specialisation depth, admission thresholds and fees differ significantly by university, so the programme record rather than the category should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech AI & ML Degree Programmes Abroad",
+      "metaDescription": "Compare B.E./B.Tech AI & ML programmes by curriculum focus, entry thresholds, teaching language, intake, fee state and application route for international applicants."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": ["General MBA", "Full-time MBA", "International MBA"],
+      "displayOrder": 2,
+      "durationYears": 2,
+      "summary": "The MBA is a general management master's degree covering accounting, economics, marketing, finance, operations, human resources and strategy, usually with elective specialisation in the later terms. Duration, entrance-test expectations, work-experience requirements and fees vary widely between schools and countries, so each programme record has to be read on its own terms.",
+      "metaTitle": "MBA Programmes: Admissions, Fees and Intakes",
+      "metaDescription": "Compare MBA programmes abroad by entrance-test thresholds, eligibility, duration, teaching language, intake timing, fee state and application steps."
+    },
+    {
+      "slug": "llb",
+      "name": "Bachelor of Laws",
+      "shortName": "LLB",
+      "stream": "law",
+      "level": "bachelors",
+      "discipline": "law",
+      "aliases": ["LL.B.", "Bachelor of Law", "B.A. LL.B", "Integrated Law Degree"],
+      "displayOrder": 3,
+      "durationYears": 5,
+      "summary": "The Bachelor of Laws is the first professional law degree. It is offered both as a standalone three-year graduate-entry course and, in India and several other jurisdictions, as an integrated five-year programme entered directly from secondary school and combined with arts, commerce or business subjects. Rights to practise law are set by each jurisdiction's regulator, not by the awarding university.",
+      "metaTitle": "LLB and Integrated Law Degree Programmes",
+      "metaDescription": "Compare LLB and integrated law degrees by entry route, duration, regulator approval, teaching language, intake, fee state and application requirements."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": ["BDes", "Bachelor in Design", "Bachelor of Design (Product Design)"],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "The Bachelor of Design is a studio-based undergraduate degree with specialisation tracks such as product, communication, interior, fashion or user-experience design. Selection frequently involves a portfolio, creative test or interview in addition to academic marks, and both the specialisation offered and the selection format differ by institution.",
+      "metaTitle": "B.Des Bachelor of Design Degree Programmes",
+      "metaDescription": "Compare B.Des programmes by specialisation, selection format, academic eligibility, teaching language, intake month, fee state and application documents."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "amity-university-noida",
+      "name": "Amity University, Noida",
+      "city": "Noida",
+      "type": "Private",
+      "establishedYear": 2005,
+      "officialWebsite": "https://noida.amity.edu/",
+      "summary": "Amity University Uttar Pradesh is a private university whose main 60-acre campus sits in Sector 125, Noida, in the Delhi National Capital Region. Created by a 2005 state Act, it teaches in English across engineering, computing, management, law, design and sciences, and admits foreign nationals through a dedicated international admissions office.",
+      "campusLifestyle": "The Noida campus occupies 60 acres in Sector 125 and has been in operation since the 2005-06 academic session. Sports provision on site includes a swimming pool, squash and tennis courts, a 20-lane indoor shooting range, a riding academy, basketball, badminton and volleyball courts and cemented cricket pitches. Everyday facilities include a bookshop, food courts, a departmental store, a gym, medical inspection rooms, underground parking, a laundry and a counselling centre. QAA's 2023 review recorded 17 Faculties of Studies containing 104 institutions and over 45,000 students across the university's campuses.",
+      "cityProfile": "Noida sits in Gautam Buddha Nagar district of Uttar Pradesh, inside the Delhi National Capital Region, and the university's postal address is Sector 125, Noida 201313. Arrivals are routed through Indira Gandhi International Airport in New Delhi: Amity runs a free pick-up from the international terminal to the student's accommodation for newly arriving first-year international students, booked at least one week in advance through the Dean Student Welfare office. Living in Noida as a foreign national also carries obligations set nationally rather than by the university. India's Bureau of Immigration requires registration with the jurisdictional FRRO or FRO within 14 days of arrival where a student visa is valid for more than 180 days, and Amity's prospectus notes that the FRO charges a penalty equivalent to US$30 for late registration even though registration itself is free. A student visa does not permit employment or business activity in India, and holders are required to open a Non-Resident Ordinary bank account and report its details to the FRRO.",
+      "practicalExposure": "Practical content is written into the degree structure rather than added around it. The B.Tech Computer Science and Engineering curriculum carries credited Internship-I in semester three and Internship-II in semester five alongside laboratory-based core courses, and every undergraduate takes a four-part Foreign Business Language sequence choosing from Arabic, Chinese, French, German, Japanese, Russian, Sanskrit or Spanish. All B.Tech programmes other than the Evening, 3 Continent and International variants include a five-week Study Abroad Programme at no additional tuition fee, and the two-year MBA carries the same five-week option. Non-Teaching Credit Courses and career-aspiration courses are separately credited, and a Non-Teaching Credit Course Review Committee sits in the university's formal committee structure. QAA's 2023 International Quality Review named the university's mentoring programme and the breadth of its graduate-employment transition initiatives as features of good practice. The university also runs an Innovation Incubator and a Directorate of Innovation and Technology Transfer, and holds recognition as a Scientific and Research Organisation from the Department of Scientific and Industrial Research.",
+      "hostelOverview": "Air-conditioned hostel accommodation for men and women is available inside the Noida campus, and Amity states that separate housing is provided for international students. The published 2026 rate for the Noida campus is INR 1,95,000 per year for air-conditioned accommodation, plus a one-time refundable security deposit of INR 15,000 payable at admission. Cafeteria meals are billed on actual consumption and are not part of that figure. Hostel places are limited and allocated on a first come, first served basis, so accommodation is requested on the application form itself or through the admission office. Amity scholarships do not extend to boarding and lodging costs.",
+      "dietarySupport": "Catering runs through campus cafeterias and food courts, and hostel meals are billed on actual consumption rather than as a fixed board charge, so a student's food spend varies with what they actually eat. A departmental store and a bookshop operate on campus for daily purchases. Amity does not publish a cuisine-specific or dietary-specific catering breakdown for the Noida campus, so an applicant with a fixed dietary requirement is best raising it with the international admissions office before accepting a place.",
+      "safetyOverview": "Ragging is banned across the campus, its residential, sports and canteen premises and all university transport, and the university runs an Anti-Ragging Committee, an Anti-Ragging Squad and a separate monitoring and execution cell. Other standing bodies include an Internal Complaints Committee, the Amity Help Desk for Women, a Proctorial Board and a Student Grievance Redressal Committee.",
+      "studentSupport": "A Foreign Students Facilitation Centre handles FRRO registration, arrival logistics and welfare for international students. A dedicated international student counsellor works from the Amity Admission Office in Block J2 on the Noida campus. Each international student is assigned a faculty coordinator and a faculty mentor, first-year arrivals are also assigned a student buddy, and a professional counsellor is available during working hours.",
+      "whyChoose": [
+        "English is the medium of instruction across programmes, and Amity requires English at Class XII level rather than any local-language qualification.",
+        "Foreign applicants are charged the Sponsored fee category, and Amity's foreign-applicant admissions page states that all international students are granted a 50 per cent scholarship for the entire duration of the course.",
+        "The university is accredited by the WSCUC in the United States, with the most recent commission action in February 2023, and met all ten ESG standards in QAA's 2023 International Quality Review with no conditions set.",
+        "The Ministry of Education's NIRF India Rankings 2025 placed Amity University, Gautam Budh Nagar 22nd in the University category and 37th Overall.",
+        "One international admissions office covers the whole multi-discipline portfolio, so engineering, management, law and design applications follow the same route and the same document set."
+      ],
+      "thingsToConsider": [
+        "Applications from foreign nationals for the 2026 cycle close on 30 June 2026, well before the late-August deadlines Amity publishes for general applicants at its other campuses.",
+        "Only one scholarship or concession can be held at a time and the higher of the two applies, so the 50 per cent international scholarship cannot be stacked on an IB, A Level, SAT, ACT, JEE or CLAT award.",
+        "Published figures are first-semester fees that rise by approximately 5 per cent each year, and an academic year is two semesters, so the headline number is neither an annual nor a total cost.",
+        "Every foreign degree, diploma or certificate needs an equivalence certificate from the Association of Indian Universities or the UGC before an application is considered, and obtaining it is the applicant's own responsibility.",
+        "An Indian student visa has to be endorsed specifically in the name of Amity University, does not permit employment or business activity, and obliges the holder to register with the FRRO within 14 days of arrival.",
+        "Amity is a multi-campus group: this record covers the Noida campus of Amity University Uttar Pradesh only, and fees, programme lists and approvals differ at Lucknow, Greater Noida, Jaipur, Gurugram, Mumbai and the overseas campuses."
+      ],
+      "bestFitFor": [
+        "Applicants who want an English-taught Indian degree in computing, management, law or design without routing through a national entrance test such as JEE Main or CLAT.",
+        "International Baccalaureate, Cambridge A Level, SAT or ACT candidates whose scores fall inside Amity's published first-year merit-scholarship bands.",
+        "Graduates targeting an Indian MBA who already hold a GMAT, CAT, XAT, NMAT, MAT or CMAT score at or above the Sponsored-category threshold.",
+        "Students who want on-campus air-conditioned accommodation and an in-house foreign-student office that handles FRRO registration and arrival logistics."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC-listed private university (Sector 125, Noida, Uttar Pradesh)",
+        "Established by the Amity University Uttar Pradesh Act, 2005 - UP Gazette Notification 403/VII-V-I-I(Ka)/I/2005",
+        "WSCUC (USA) - Accredited, most recent Commission action February 2023, first accredited 2016",
+        "QAA (UK) International Quality Review 2023 - meets all 10 ESG standards, no conditions set",
+        "NIRF India Rankings 2025 (Ministry of Education) - Rank 22, University category",
+        "Bar Council of India - Approved Centre of Legal Education, Amity Law School Noida (approval to 2026-27)",
+        "Association of Indian Universities - Member",
+        "Association of Commonwealth Universities - Member"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated list of universities in India",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "WSCUC directory - Amity University Uttar Pradesh",
+          "url": "https://www.wscuc.org/institutions/amity-university-uttar-pradesh/"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        },
+        {
+          "label": "QAA International Quality Review report - Amity University, Uttar Pradesh (2023)",
+          "url": "https://www.qaa.ac.uk/docs/qaa/reports/amity-university-iqr-23.pdf"
+        },
+        {
+          "label": "Bar Council of India - recognised universities and colleges (Approved List of CLEs)",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges"
+        },
+        {
+          "label": "Amity recognitions and accreditations",
+          "url": "https://amity.edu/about-recognition.aspx"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Amity University Noida a public or a private university?",
+          "answer": "It is private. Amity University Uttar Pradesh was created by the Amity University Uttar Pradesh Act, 2005, passed by the state legislature and notified through UP Gazette Notification No. 403/VII-V-I-I(Ka)/I/2005. The UGC's consolidated list of Indian universities records it as a private university at Sector 125, Noida 201313. It operates under the not-for-profit Ritnand Balved Education Foundation."
+        },
+        {
+          "question": "Which Amity campus does this record cover?",
+          "answer": "The Noida campus at Sector 125, Gautam Buddha Nagar, which is the main campus of Amity University Uttar Pradesh. Amity is a multi-campus group that also includes separate state private universities in other Indian states and branch campuses in Lucknow, Greater Noida, Dubai and Tashkent. Every fee, eligibility threshold and selection process quoted here is taken from the Noida campus prospectus and does not carry across to those other institutions."
+        },
+        {
+          "question": "What language are programmes taught in?",
+          "answer": "English. The Noida prospectus states that the medium of instruction is English and therefore makes English a mandatory subject at Class XII level. Undergraduate degrees also carry a compulsory four-part Foreign Business Language sequence in which the student picks one of Arabic, Chinese, French, German, Japanese, Russian, Sanskrit or Spanish. Those are additional language modules, not the teaching language of the degree."
+        },
+        {
+          "question": "Do international applicants need IELTS or TOEFL?",
+          "answer": "Only where English was not a subject in the qualifying examination. In that case Amity requires TOEFL iBT 60 out of 120 or an IELTS band of 6.5, at both undergraduate and postgraduate level. Where English was studied, no separate language test is asked for. Academic transcripts must be submitted in certified English translation; transcripts in other languages are not accepted."
+        },
+        {
+          "question": "What are the entry requirements for foreign applicants?",
+          "answer": "Amity applies the same academic eligibility to foreign applicants as to Indian residents. Undergraduate entry requires twelve years of formal schooling plus the programme-specific Class XII subject and percentage thresholds. Postgraduate entry requires twelve years of schooling followed by a bachelor's degree of at least three years' duration, and Amity notes that postgraduate admission is restricted and expects a strong academic record. Every foreign qualification also needs an AIU or UGC equivalence certificate."
+        },
+        {
+          "question": "How does an international student apply?",
+          "answer": "Foreign applicants apply online only. The INR 1,500 application form fee is waived for foreign applicants. Receipt, shortlisting, selection-process scheduling, the admission letter and fee payment all run through the Amity admission microsite at portal.amity.edu. The international student counsellor is based in the Amity Admission Office, Block J2, Amity University Campus, Sector 125, Noida 201313, and is contactable at internationaladmissions@amity.edu."
+        },
+        {
+          "question": "When do applications close and when does the academic session start?",
+          "answer": "For the 2026 cycle the last date for foreign nationals to submit the application form is 30 June 2026. Amity's Noida campus marked the start of the 2025-26 academic year with its Diksharambh orientation on 14 July 2025, which places the intake in July. The exact commencement date, time and venue for each admitted student is stated in the individual admission letter issued through the admission microsite."
+        },
+        {
+          "question": "How much does it cost and how does the international fee work?",
+          "answer": "Foreign applicants are charged the Sponsored fee category. The Noida prospectus publishes first-semester Sponsored figures - INR 3,28,500 for B.Tech Computer Science and Engineering and INR 6,21,000 for the MBA, for example - and states that an academic year is two semesters and that fees rise by roughly 5 per cent a year. Amity's foreign-applicant page states that international students receive a 50 per cent scholarship for the whole course. Add a one-time academic security deposit of INR 20,000, and hostel costs if taken."
+        },
+        {
+          "question": "Can the international scholarship be combined with a merit scholarship?",
+          "answer": "No. The prospectus states that a student cannot be in receipt of a combination of scholarship and concession, that only one type may be availed, and that the higher of the two applies. Published 2026 merit bands include 100 per cent for an International Baccalaureate score of 42 or higher, 50 per cent for 38-41, 100 per cent for SAT 1500 and above and 100 per cent for ACT 34 and above. No scholarship covers the refundable security deposit or boarding and lodging."
+        },
+        {
+          "question": "What accreditation and recognition does the university hold?",
+          "answer": "The UGC lists it among India's universities, and Amity states that because it was established by a state Act it does not require separate AICTE approval. It is accredited by the WSCUC in the United States, first accredited in 2016 with the most recent commission action on 24 February 2023. QAA's 2023 International Quality Review concluded that the university meets all ten ESG standards and set no conditions. The Bar Council of India's approved list of Centres of Legal Education records Amity Law School Noida with approval to 2026-27. The university is also a member of the AIU and the Association of Commonwealth Universities."
+        },
+        {
+          "question": "How did the university perform in the NIRF rankings?",
+          "answer": "In the Ministry of Education's NIRF India Rankings 2025, Amity University, Gautam Budh Nagar, Uttar Pradesh was ranked 22nd in the University category with a score of 59.68, 37th Overall with 57.49, 37th in Engineering with 58.53 and 49th in Management with 54.15. NIRF is published annually and positions move between cycles, so the ranking year always has to be read alongside the rank."
+        },
+        {
+          "question": "What visa and registration steps apply after an offer?",
+          "answer": "A provisional offer is confirmed only against a student visa endorsed in the name of Amity University for full-time study and valid for the prescribed duration of the course; no other endorsement is accepted. A medical test report is due within a week of admission, together with adequate medical insurance cover. India's Bureau of Immigration requires registration with the jurisdictional FRRO within 14 days of arrival where the student visa runs beyond 180 days. Registration is free, but the FRO charges a penalty equivalent to US$30 for late registration."
+        },
+        {
+          "question": "What accommodation is available and what does it cost?",
+          "answer": "Air-conditioned hostel accommodation for men and women is available on the Noida campus, with separate housing provided for international students. The published 2026 rate is INR 1,95,000 per year plus a one-time refundable security deposit of INR 15,000. Cafeteria meals are billed on actual consumption rather than included. Places are limited and allocated first come, first served, and a request is made either on the application form or through the admission office."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026",
+          "url": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Campus-scoped prospectus. Source for foreign-applicant rules (section 7), fee tables by programme code, scholarship bands, hostel fee and security deposits."
+        },
+        {
+          "label": "Amity - Application Procedure for Foreign Applicants",
+          "url": "https://amity.edu/admission-procedure-nri.aspx",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Source for the international 50 per cent scholarship, form-fee waiver, online-only application requirement and the Noida international student counsellor address."
+        },
+        {
+          "label": "Amity - B.Tech (Computer Science & Engineering) course details, Noida campus",
+          "url": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=yc+U64DsPeQ%3D",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Confirms programme code 10052, Noida campus, Amity School of Engineering and Technology, four-year duration, semester-wise curriculum and first-year Sponsored semester fee of 3.285 lakh."
+        },
+        {
+          "label": "Amity - MBA course details, Noida campus",
+          "url": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=nZKHDz0KGas%3D",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Confirms programme code 10019, Noida campus, Amity Business School, two-year duration and first-year Sponsored semester fee of 6.21 lakh."
+        },
+        {
+          "label": "Amity - Recognitions and Accreditations",
+          "url": "https://amity.edu/about-recognition.aspx",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Group-level page. Used only for AUUP-attributable items: UGC recognition, establishment by state Act, AIU and ACU membership, BCI-approved law programmes, IET-accredited Noida B.Tech programmes."
+        },
+        {
+          "label": "WSCUC directory entry - Amity University Uttar Pradesh",
+          "url": "https://www.wscuc.org/institutions/amity-university-uttar-pradesh/",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Accredited status, first accredited 2016, most recent commission action 24 February 2023, Noida listed as main campus."
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Institute ID IR-O-U-0497, Amity University, Gautam Budh Nagar, Uttar Pradesh - score 59.68, rank 22."
+        },
+        {
+          "label": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+          "url": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "FRRO registration within 14 days for student visas valid beyond 180 days; nationality-specific exemptions and variations."
+        },
+        {
+          "label": "QAA International Quality Review report - Amity University, Uttar Pradesh",
+          "url": "https://www.qaa.ac.uk/docs/qaa/reports/amity-university-iqr-23.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "2023 review outcome, institutional scale figures, campus list and good-practice findings."
+        },
+        {
+          "label": "UGC consolidated list of universities in India",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Entry 873: Amity University, Sector - 125, Noida - 201313, Uttar Pradesh (Private University)."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Amity Noida eligibility",
+            "capture": [
+              "citizenship and country of residence",
+              "school system and Class XII equivalent qualification",
+              "AIU or UGC equivalence certificate status",
+              "English subject in qualifying exam, or IELTS/TOEFL score",
+              "intended programme and intake"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my Amity Noida cost plan",
+            "capture": [
+              "intended programme",
+              "hostel or private accommodation preference",
+              "IB, A Level, SAT, ACT or entrance-test score for scholarship banding",
+              "budget range"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": [
+              "document readiness including certified English transcripts",
+              "equivalence certificate progress",
+              "target intake",
+              "interview preparation"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "passport nationality",
+              "nearest Indian mission",
+              "planned arrival date",
+              "medical insurance status"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "amity-noida-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech (Computer Science & Engineering)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 657000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The 2026 Noida campus prospectus publishes a first-semester Sponsored fee of INR 3,28,500 for programme code 10052 and states that the fee for the Foreign category is the same as the Sponsored fee. The prospectus also states that each academic year is two semesters, giving INR 6,57,000 for year one, and that the published figure rises by approximately 5 per cent each year, so no fixed total is published. A one-time academic security deposit of INR 20,000 is payable at admission. Amity's foreign-applicant page states that all international students are granted a 50 per cent scholarship for the entire duration of the course and that only one scholarship or concession may be held at a time."
+          },
+          "officialProgramUrl": "https://noida.amity.edu/ug/engineering/btech-cse",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding twelve years of formal schooling with an AIU or UGC equivalence certificate for the Class XII qualification",
+              "Applicants meeting the Sponsored-category Class X and Class XII thresholds for the engineering block"
+            ],
+            "restrictions": [
+              "Foreign applicants must apply online only; postal applications are not accepted for the Noida campus",
+              "The 2026 application window for foreign nationals closes on 30 June 2026",
+              "Academic transcripts in languages other than English are not accepted, even in the original",
+              "A student visa endorsed in the name of Amity University is required before a provisional offer is confirmed"
+            ],
+            "notes": "Amity states that eligibility criteria for foreign applicants are the same as for Indian resident applicants; the difference is the fee category, the document set and the earlier application deadline.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Selection is by application plus a personal interview. Foreign applicants are placed in the Sponsored fee and eligibility category, apply online only, and attach certified English transcripts together with an AIU or UGC equivalence certificate for the Class XII qualification.",
+            "eligibility": {
+              "intro": "Amity publishes separate Class X and Class XII thresholds for its Non-Sponsored and Sponsored categories across the engineering block; foreign applicants sit in the Sponsored category.",
+              "items": [
+                "Non-Sponsored: Class X and Class XII aggregate of 60 per cent, with Physics, Mathematics and one approved third subject at a minimum of 70 per cent",
+                "Sponsored: the same thresholds relaxed by 5 percentage points",
+                "Approved third subject: Chemistry, Computer Science, Electronics, Information Technology, Biology, Informatics Practices, Biotechnology, Agriculture, Engineering Graphics or Business Studies",
+                "Twelve years of formal schooling for any foreign applicant",
+                "An equivalence certificate from the Association of Indian Universities or the UGC for the Class XII qualification",
+                "TOEFL iBT 60 out of 120 or IELTS band 6.5 where English was not a subject in the qualifying examination",
+                "Compartment cases are not considered"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the Amity application online; the INR 1,500 form fee is waived for foreign applicants",
+              "Upload the Class X mark sheet and a recent passport photograph, and attach certified English academic transcripts with the AIU or UGC equivalence certificate",
+              "Track receipt, registration and shortlisting on the admission microsite at portal.amity.edu",
+              "Attend the personal interview scheduled through the microsite",
+              "Accept the provisional admission letter and pay the first-semester fee by the date it specifies",
+              "Obtain a student visa endorsed in the name of Amity University, then submit a medical test report and proof of medical insurance"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original Class X mark sheet",
+                "Class XII academic transcripts in certified English translation listing all courses with grades or marks",
+                "Equivalence certificate from the Association of Indian Universities or the UGC",
+                "TOEFL or IELTS score report where English was not a qualifying-examination subject"
+              ],
+              "application": [
+                "Passport, and the student visa endorsed to Amity University before joining",
+                "Recent passport-size photograph",
+                "Medical test report from a registered medical practitioner within one week of admission",
+                "Proof of adequate medical insurance cover"
+              ]
+            },
+            "deadlinesNote": "The last date for foreign nationals to submit the 2026 application form is 30 June 2026. Scholarship claims need original mark sheets presented at the admission office by 31 October of the admission year.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Amity University for full-time study and valid for the prescribed duration of the course; no other endorsement is accepted",
+              "Registration with the jurisdictional FRRO is required within 14 days of arrival; registration is free but the FRO charges a penalty equivalent to US$30 for late registration"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["July"],
+          "intakeCodes": ["july"],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "First-semester Sponsored fee of INR 3,28,500 published in the 2026 Noida campus prospectus and independently shown as 3.285 lakh on Amity's course-details page for programme code 10052. The Foreign category pays the Sponsored fee. Two semesters make an academic year, so year one is INR 6,57,000 before the 50 per cent international scholarship; later years rise by approximately 5 per cent. Excludes the INR 20,000 one-time academic security deposit, hostel fees and cafeteria meals.",
+          "teachingPhases": [
+            {
+              "phase": "Year 1 - engineering foundation",
+              "language": "English",
+              "details": "Applied Mathematics I and II, Engineering Physics and Chemistry, Engineering Mechanics, Introduction to Computers and Programming in C, Workshop Practices, Basic Electrical Engineering and Engineering Graphics, plus Technical Communication and the first Foreign Business Language module."
+            },
+            {
+              "phase": "Years 2-3 - computing core and first internships",
+              "language": "English",
+              "details": "Data Structures, Object Oriented Programming in C++, Java, Operating Systems, Theory of Computation, Database Management Systems, Analysis and Design of Algorithms, Computer Networks, Software Engineering, Compiler Construction and Artificial Intelligence, with credited Internship-I in semester three and Internship-II in semester five."
+            },
+            {
+              "phase": "Year 4 - electives, honours specialisation and study abroad option",
+              "language": "English",
+              "details": "Professional and specialisation electives spanning cloud computing, cyber security, data analytics, mobile and full-stack development, immersive technologies and digital image processing. All B.Tech programmes other than the Evening, 3 Continent and International variants include a five-week Study Abroad Programme at no additional tuition fee."
+            }
+          ]
+        },
+        {
+          "slug": "amity-noida-btech-artificial-intelligence",
+          "canonicalCourseSlug": "be-btech-artificial-intelligence-machine-learning",
+          "officialTitle": "B.Tech. (Artificial Intelligence)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 657000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The 2026 Noida campus prospectus lists programme code 101198 in the engineering block with a first-semester Sponsored fee of INR 3,28,500, and states that the Foreign category pays the Sponsored fee. Each academic year is two semesters, giving INR 6,57,000 for year one before the 50 per cent international scholarship, with an approximate 5 per cent annual increase thereafter and no published total. A one-time academic security deposit of INR 20,000 applies at admission. Unlike the flagship B.Tech Computer Science and Engineering record, this figure is sourced from the prospectus fee table alone rather than from a second course-details page."
+          },
+          "officialProgramUrl": "https://noida.amity.edu/ug/engineering/btech-artificial-intelligence",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals with twelve years of formal schooling and an AIU or UGC equivalence certificate for the Class XII qualification",
+              "Applicants meeting the Sponsored-category thresholds published for Amity's engineering block"
+            ],
+            "restrictions": [
+              "Foreign applicants must apply online only",
+              "The 2026 application window for foreign nationals closes on 30 June 2026",
+              "Transcripts must be in certified English translation; other languages are not accepted",
+              "Amity notes that seats are limited in programmes regulated by statutory bodies and are granted first come, first served"
+            ],
+            "notes": "Eligibility for this programme sits inside the same engineering eligibility bracket as B.Tech Computer Science and Engineering in the 2026 prospectus.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Entry follows Amity's engineering-block route: an online application, Class X and Class XII subject thresholds with a Physics and Mathematics requirement, and a personal interview. Foreign applicants are assessed on the Sponsored-category thresholds and must submit an equivalence certificate.",
+            "eligibility": {
+              "intro": "The 2026 prospectus places this programme in the engineering block, which publishes one shared eligibility bracket for its four-year B.Tech awards.",
+              "items": [
+                "Non-Sponsored: Class X and Class XII aggregate of 60 per cent with Physics, Mathematics and one approved third subject at a minimum of 70 per cent",
+                "Sponsored: the same thresholds relaxed by 5 percentage points",
+                "Twelve years of formal schooling for any foreign applicant",
+                "An AIU or UGC equivalence certificate for the Class XII qualification",
+                "TOEFL iBT 60 out of 120 or IELTS band 6.5 where English was not a subject in the qualifying examination"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the Amity application form; the INR 1,500 fee is waived for foreign applicants",
+              "Attach certified English transcripts and the AIU or UGC equivalence certificate",
+              "Follow shortlisting and interview scheduling on the admission microsite at portal.amity.edu",
+              "Accept the provisional admission letter and pay the first-semester fee by its stated date",
+              "Secure a student visa endorsed to Amity University and submit the medical test report and insurance cover"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original Class X mark sheet",
+                "Class XII transcripts in certified English translation",
+                "AIU or UGC equivalence certificate",
+                "TOEFL or IELTS score report where applicable"
+              ],
+              "application": [
+                "Passport and Amity-endorsed student visa",
+                "Recent passport-size photograph",
+                "Medical test report within one week of admission",
+                "Adequate medical insurance cover"
+              ]
+            },
+            "deadlinesNote": "Foreign nationals must submit the 2026 application form by 30 June 2026. Scholarship documentation is due at the admission office by 31 October of the admission year.",
+            "visaConsiderations": [
+              "Only a student visa endorsed in the name of Amity University is accepted, and it must be valid for the full course duration",
+              "FRRO registration is required within 14 days of arrival for student visas valid beyond 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["July"],
+          "intakeCodes": ["july"],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Programme code 101198 carries a first-semester Sponsored fee of INR 3,28,500 in the 2026 Noida prospectus, the same band as B.Tech Computer Science and Engineering. Two semesters make an academic year, so year one is INR 6,57,000 gross of the 50 per cent international scholarship. Fees rise by approximately 5 per cent a year and exclude the INR 20,000 academic security deposit and all accommodation costs.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech in Artificial Intelligence",
+              "language": "English",
+              "details": "Delivered by Amity School of Engineering and Technology on the Noida campus under the same four-year, two-semesters-per-year structure as Amity's other B.Tech awards, including the compulsory Foreign Business Language sequence and credited internship courses. Amity has not published a public semester-by-semester syllabus for this programme code, so the module list is not reproduced here."
+            },
+            {
+              "phase": "Study Abroad Programme option",
+              "language": "English",
+              "details": "All B.Tech programmes other than the Evening, 3 Continent and International variants include a five-week Study Abroad Programme at no additional tuition fee."
+            }
+          ]
+        },
+        {
+          "slug": "amity-noida-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "MBA",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 1242000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The 2026 Noida campus prospectus publishes a first-semester Sponsored fee of INR 6,21,000 for programme code 10019 at Amity Business School, and Amity's course-details page for the same code independently shows a first-year Sponsored semester fee of 6.21 lakh. The Foreign category pays the Sponsored fee. Two semesters make an academic year, giving INR 12,42,000 for year one before the 50 per cent international scholarship; the second year rises by approximately 5 per cent, so no fixed total is published. A one-time academic security deposit of INR 20,000 applies."
+          },
+          "officialProgramUrl": "https://noida.amity.edu/pg/management/mba",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Graduates holding twelve years of schooling followed by a bachelor's degree of at least three years' duration, with an aggregate of 50 per cent",
+              "Foreign nationals whose bachelor's degree carries an AIU or UGC equivalence certificate"
+            ],
+            "restrictions": [
+              "Amity states that postgraduate admission is restricted and expects a strong academic record",
+              "The 2026 application window for foreign nationals closes on 30 June 2026",
+              "TOEFL iBT 60 or IELTS 6.5 is required for postgraduate admission where English was not a subject in the qualifying examination",
+              "Amity's CAT-percentile postgraduate scholarship is limited to candidates who took Class XII in India and graduated from Indian universities only, so it is closed to most international applicants"
+            ],
+            "notes": "Foreign applicants are charged the Sponsored fee and are assessed against the Sponsored entrance-test thresholds, which sit below the Non-Sponsored thresholds.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Admission is on a bachelor's degree with 50 per cent aggregate plus a personal interview. Where the applicant has taken a management entrance test, Amity publishes qualifying score thresholds that differ between its Non-Sponsored and Sponsored categories; foreign applicants are assessed on the Sponsored thresholds.",
+            "eligibility": {
+              "intro": "The 2026 prospectus sets one academic threshold for the general MBA and a separate table of qualifying entrance-test scores applied where the candidate has appeared for a test.",
+              "items": [
+                "Bachelor's degree with an aggregate of 50 per cent",
+                "Twelve years of school education followed by a bachelor's degree of at least three years for any foreign applicant",
+                "CAT or XAT percentile of 75 for Sponsored candidates and 85 for Non-Sponsored",
+                "GMAT 500 for Sponsored candidates and 550 for Non-Sponsored",
+                "NMAT 200 for Sponsored and 250 for Non-Sponsored; MAT 600 for Sponsored and 650 for Non-Sponsored; CMAT 150 for Sponsored and 200 for Non-Sponsored",
+                "TOEFL iBT 60 out of 120 or IELTS band 6.5 where English was not a qualifying-examination subject",
+                "AIU or UGC equivalence certificate for any foreign degree"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the Amity application form, with the INR 1,500 fee waived for foreign applicants",
+              "Attach certified English degree transcripts, the AIU or UGC equivalence certificate and any entrance-test score report",
+              "Track shortlisting and book the personal interview on the admission microsite at portal.amity.edu",
+              "Accept the provisional admission letter and pay the first-semester fee by its stated date",
+              "Obtain the Amity-endorsed student visa and submit the medical test report and insurance cover"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and year-wise transcripts in certified English translation",
+                "AIU or UGC equivalence certificate for the foreign degree",
+                "CAT, XAT, NMAT, MAT, GMAT or CMAT score report where taken",
+                "TOEFL or IELTS score report where English was not a qualifying-examination subject"
+              ],
+              "application": [
+                "Passport and student visa endorsed to Amity University",
+                "Recent passport-size photograph",
+                "Medical test report within one week of admission",
+                "Adequate medical insurance cover"
+              ]
+            },
+            "deadlinesNote": "Foreign nationals must submit the 2026 application form by 30 June 2026. Amity also notes that a candidate awaiting a qualifying-examination result may go through the selection process at their own risk.",
+            "visaConsiderations": [
+              "A student visa endorsed in the name of Amity University and valid for the two-year duration is required before the offer is confirmed",
+              "The Indian student visa does not permit employment or business activity, which rules out part-time work alongside the MBA"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["July"],
+          "intakeCodes": ["july"],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "First-semester Sponsored fee of INR 6,21,000 for programme code 10019, confirmed both in the 2026 Noida prospectus and on Amity's course-details page for the programme. Foreign category pays the Sponsored fee, two semesters make an academic year, and year one therefore comes to INR 12,42,000 before the 50 per cent international scholarship. Excludes the INR 20,000 academic security deposit, hostel fees of INR 1,95,000 a year and cafeteria meals charged on actual consumption.",
+          "teachingPhases": [
+            {
+              "phase": "Year 1 - management core",
+              "language": "English",
+              "details": "Accounting for Managers, Managerial Economics, Marketing Management, Organizational Behavior, Statistics for Management, Applications of Disruptive Technologies in Business, Financial Management, Human Resource Management, Operations Management, Business Research Methods and Legal Aspects of Business, alongside Professional and Business Communication and a Foreign Business Language module."
+            },
+            {
+              "phase": "Year 2 - specialisation electives and study abroad option",
+              "language": "English",
+              "details": "Specialisation elective courses including artificial intelligence tools and applications, consumer behaviour and digital marketing streams. The programme carries a five-week Study Abroad Programme at no additional tuition fee."
+            }
+          ]
+        },
+        {
+          "slug": "amity-noida-ba-llb-hons",
+          "canonicalCourseSlug": "llb",
+          "officialTitle": "B.A. LL.B (Hons)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 597000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The 2026 Noida campus prospectus lists programme code 10111 in the Law block with a first-semester Sponsored fee of INR 2,98,500 against a Non-Sponsored figure of INR 1,99,000, and states that the Foreign category pays the Sponsored fee. Two semesters make an academic year, giving INR 5,97,000 for year one before the 50 per cent international scholarship, with an approximate 5 per cent annual increase across the five-year programme and no published total. A one-time academic security deposit of INR 20,000 applies at admission. This figure comes from the prospectus fee table only; Amity does not expose a second public fee page for this programme code."
+          },
+          "officialProgramUrl": "https://noida.amity.edu/ug/law/ba-llb-hons",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "School leavers with twelve years of formal education meeting the Class XII aggregate threshold for the Law block",
+              "Foreign nationals holding an AIU or UGC equivalence certificate for the Class XII qualification"
+            ],
+            "restrictions": [
+              "The 2026 application window for foreign nationals closes on 30 June 2026",
+              "Fast Track Admission cum Scholarship is not available for Law programmes",
+              "Amity notes that seats are limited in programmes regulated by statutory bodies and admission is granted first come, first served",
+              "Enrolment as an advocate in India is decided by the state bar councils under the Advocates Act, 1961 and not by the university; the Act requires Indian citizenship, subject to a reciprocity provision for nationals of countries that permit qualified Indian citizens to practise there"
+            ],
+            "notes": "The Bar Council of India's approved list of Centres of Legal Education records Amity Law School Noida with a five-year B.A. LL.B. (Hons) course approved to 2026-27. That approval attaches to the centre and the course, and is separate from an individual's eligibility to be enrolled and practise as an advocate in India.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "This is a five-year integrated law degree entered directly after Class XII, run by Amity Law School Noida, which the Bar Council of India lists as an approved Centre of Legal Education to 2026-27. Selection is on the Class XII aggregate for the applicant's fee category plus the Amity selection process.",
+            "eligibility": {
+              "intro": "The Law block of the 2026 prospectus publishes two Class XII aggregate thresholds, one for each admission category, with foreign applicants placed in the Sponsored category.",
+              "items": [
+                "Non-Sponsored: Class XII aggregate of 60 per cent",
+                "Sponsored: Class XII aggregate of 55 per cent",
+                "Twelve years of formal schooling for any foreign applicant",
+                "An AIU or UGC equivalence certificate confirming the Class XII qualification gives access to bachelor's degree programmes at Indian universities",
+                "TOEFL iBT 60 out of 120 or IELTS band 6.5 where English was not a subject in the qualifying examination",
+                "Aggregate percentage is calculated on English plus three academic subjects, excluding Physical Education, Fine Arts, Performing Arts and non-written vocational subjects"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the Amity application form; the INR 1,500 fee is waived for foreign applicants",
+              "Attach certified English Class XII transcripts and the AIU or UGC equivalence certificate",
+              "Track registration, shortlisting and the selection process on the admission microsite at portal.amity.edu",
+              "Accept the provisional admission letter and pay the first-semester fee by its stated date",
+              "Obtain a student visa endorsed to Amity University and submit the medical test report and insurance cover"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original Class X mark sheet",
+                "Class XII transcripts in certified English translation",
+                "AIU or UGC equivalence certificate recognising the Class XII qualification",
+                "CLAT 2026 score report where the applicant is claiming the CLAT-based first-year scholarship"
+              ],
+              "application": [
+                "Passport and student visa endorsed to Amity University",
+                "Recent passport-size photograph",
+                "Medical test report within one week of admission",
+                "Adequate medical insurance cover"
+              ]
+            },
+            "deadlinesNote": "Foreign nationals must submit the 2026 application form by 30 June 2026. Any scholarship claim requires original mark sheets at the admission office by 31 October of the admission year.",
+            "visaConsiderations": [
+              "A student visa endorsed in the name of Amity University must be valid for the full five-year duration of the programme",
+              "FRRO registration is required within 14 days of arrival where the student visa is valid beyond 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["July"],
+          "intakeCodes": ["july"],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "First-semester Sponsored fee of INR 2,98,500 for programme code 10111 in the 2026 Noida prospectus, against INR 1,99,000 Non-Sponsored. Foreign applicants pay the Sponsored figure, so year one is INR 5,97,000 across two semesters before the 50 per cent international scholarship. Later years rise by approximately 5 per cent. Excludes the INR 20,000 academic security deposit and hostel costs. Fast Track Admission cum Scholarship is not offered on Law programmes, so the CLAT-based band is the main merit route and it cannot be combined with the international scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3 - integrated arts and core law",
+              "language": "English",
+              "details": "A five-year integrated structure of ten semesters combining law with arts and social-science subjects, delivered at the Noida campus. Amity does not publish a public semester-by-semester module list for programme code 10111, so individual course titles are not reproduced here."
+            },
+            {
+              "phase": "Years 4-5 - specialisation electives",
+              "language": "English",
+              "details": "Specialisation streams are offered in the fourth and fifth years. The Bar Council of India lists Amity Law School Noida as an approved Centre of Legal Education with this five-year B.A. LL.B. (Hons) course approved to 2026-27, which is distinct from an individual's eligibility for enrolment as an advocate in India."
+            }
+          ]
+        },
+        {
+          "slug": "amity-noida-bdes-product-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "B.Des. (Product Design)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 315000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The 2026 Noida campus prospectus lists programme code 101009 in the Design block with a first-semester Sponsored fee of INR 1,57,500 against a Non-Sponsored figure of INR 1,05,000, and states that the Foreign category pays the Sponsored fee. Two semesters make an academic year, giving INR 3,15,000 for year one before the 50 per cent international scholarship, rising by approximately 5 per cent a year with no published total. A one-time academic security deposit of INR 20,000 applies at admission. This is the lowest-cost programme in this record and the figure is drawn from the prospectus fee table alone."
+          },
+          "officialProgramUrl": "https://noida.amity.edu/ug/design/bdes-product-design",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "School leavers with twelve years of formal education meeting the Class XII aggregate threshold for the Design block",
+              "Foreign nationals holding an AIU or UGC equivalence certificate for the Class XII qualification"
+            ],
+            "restrictions": [
+              "The 2026 application window for foreign nationals closes on 30 June 2026",
+              "Fast Track Admission cum Scholarship is not available for Design programmes",
+              "Transcripts must be in certified English translation; other languages are not accepted"
+            ],
+            "notes": "Amity's Design block requires no science or mathematics subject combination at Class XII, which makes it accessible to applicants from arts and humanities streams.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A four-year product design degree entered after Class XII. Selection is on the Class XII aggregate for the applicant's fee category plus Amity's selection process; foreign applicants are assessed on the Sponsored threshold and submit an equivalence certificate with certified English transcripts.",
+            "eligibility": {
+              "intro": "The Design block of the 2026 prospectus publishes two Class XII aggregate thresholds, one for each admission category, without a prescribed subject combination.",
+              "items": [
+                "Non-Sponsored: Class XII aggregate of 55 per cent",
+                "Sponsored: Class XII aggregate of 50 per cent",
+                "Twelve years of formal schooling for any foreign applicant",
+                "An AIU or UGC equivalence certificate for the Class XII qualification",
+                "TOEFL iBT 60 out of 120 or IELTS band 6.5 where English was not a subject in the qualifying examination"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the Amity application form; the INR 1,500 fee is waived for foreign applicants",
+              "Attach certified English Class XII transcripts and the AIU or UGC equivalence certificate",
+              "Track registration, shortlisting and the selection process on the admission microsite at portal.amity.edu",
+              "Accept the provisional admission letter and pay the first-semester fee by its stated date",
+              "Obtain a student visa endorsed to Amity University and submit the medical test report and insurance cover"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original Class X mark sheet",
+                "Class XII transcripts in certified English translation",
+                "AIU or UGC equivalence certificate"
+              ],
+              "application": [
+                "Passport and student visa endorsed to Amity University",
+                "Recent passport-size photograph",
+                "Medical test report within one week of admission",
+                "Adequate medical insurance cover"
+              ]
+            },
+            "deadlinesNote": "Foreign nationals must submit the 2026 application form by 30 June 2026. Scholarship claims require original mark sheets at the admission office by 31 October of the admission year.",
+            "visaConsiderations": [
+              "A student visa endorsed in the name of Amity University and valid for the four-year duration is required before the offer is confirmed",
+              "FRRO registration is required within 14 days of arrival where the student visa is valid beyond 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["July"],
+          "intakeCodes": ["july"],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "First-semester Sponsored fee of INR 1,57,500 for programme code 101009 in the 2026 Noida prospectus, against INR 1,05,000 Non-Sponsored. Foreign applicants pay the Sponsored figure, so year one comes to INR 3,15,000 across two semesters before the 50 per cent international scholarship, rising by approximately 5 per cent a year. Excludes the INR 20,000 academic security deposit and accommodation. Fast Track Admission cum Scholarship is not offered on Design programmes.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Des in Product Design",
+              "language": "English",
+              "details": "A four-year, eight-semester studio-based design degree on the Noida campus, listed in the prospectus alongside Amity's Interior Design and UX Design awards. Amity does not publish a public semester-by-semester module list for programme code 101009, so course titles are not reproduced here."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "identity",
+      "claimText": "Amity University Uttar Pradesh was established through the Amity University Uttar Pradesh Act, 2005, passed by the state legislature and assented by the Governor, notified vide UP Government Gazette Notification No. 403/VII-V-I-I(Ka)/I/2005 dated 24 March 2005. It functions under the not-for-profit Ritnand Balved Education Foundation and its main centre is in Noida.",
+      "status": "verified",
+      "sourceLabel": "QAA International Quality Review of Amity University, Uttar Pradesh (2023), executive summary",
+      "sourceUrl": "https://www.qaa.ac.uk/docs/qaa/reports/amity-university-iqr-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by AUUP's own NAAC Self Study Report (2nd cycle, submitted 15-01-2018), which cites the same Act and Gazette notification number, and by PRS Legislative Research's copy of Act 11 of 2005. The QAA report calls it an Ordinance while the SSR calls it an Act; the Gazette notification number is identical in both."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "identity",
+      "claimText": "The UGC consolidated list of universities in India records entry 873 as Amity University, Sector - 125, Noida - 201313, Uttar Pradesh (Private University).",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - consolidated list of all universities",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The consolidated list is dated as on 25.01.2023. Re-check against a newer UGC listing at review; the Sector 125 address matches the WSCUC directory entry and the campus prospectus."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognition",
+      "claimText": "Amity University Uttar Pradesh is accredited by the WASC Senior College and University Commission (WSCUC), first accredited in 2016, with the most recent Commission action on 24 February 2023. The directory lists Amity University Noida Campus as the main campus and records 17,086 undergraduate FTE and 7,429 graduate FTE.",
+      "status": "verified",
+      "sourceLabel": "WSCUC institution directory - Amity University Uttar Pradesh",
+      "sourceUrl": "https://www.wscuc.org/institutions/amity-university-uttar-pradesh/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "FTE counts cover the whole institution including the Dubai, Greater Noida, Lucknow and Tashkent branch campuses, so they are not Noida-only figures and were deliberately kept out of public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognition",
+      "claimText": "QAA's 2023 International Quality Review concluded that Amity University, Uttar Pradesh meets all ten ESG standards and guidelines, with no conditions set. The review visit ran from 25 April to 5 May 2023 and identified ten features of good practice, including the mentoring programme and the breadth of graduate-employment transition initiatives.",
+      "status": "verified",
+      "sourceLabel": "QAA International Quality Review of Amity University, Uttar Pradesh (2023)",
+      "sourceUrl": "https://www.qaa.ac.uk/docs/qaa/reports/amity-university-iqr-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognition",
+      "claimText": "In the Ministry of Education's NIRF India Rankings 2025, Amity University, Gautam Budh Nagar, Uttar Pradesh (Institute ID IR-O-U-0497) was ranked 22 in the University category with a score of 59.68, 37 Overall with 57.49, 37 in Engineering with 58.53 and 49 in Management with 54.15.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 (Ministry of Education) - University, Overall, Engineering and Management category tables",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Overall, Engineering and Management figures read from the matching 2025 category tables at nirfindia.org under the same institute number suffix 0497. NIRF is annual; re-check when the next cycle publishes."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognition",
+      "claimText": "Amity states that its universities are recognised by the University Grants Commission, that Amity University is established by an Act of the State Legislature and therefore does not require separate AICTE approval, that it is a member of the Association of Indian Universities and of the Association of Commonwealth Universities, that its law programmes are accredited by the Bar Council of India and its architecture programmes by the Council of Architecture, and that named B.Tech programmes at the Noida campus are IET accredited.",
+      "status": "verified",
+      "sourceLabel": "Amity - Recognitions and Accreditations",
+      "sourceUrl": "https://amity.edu/about-recognition.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "This is a group-level page covering Amity universities in several states. Only claims explicitly tied to Amity University Uttar Pradesh or to the Noida campus were carried into public copy; the Rajasthan Act reference and other states' items were excluded. The BCI claim on this page is superseded as the source of the published badge by the BCI register record in this bundle (barcouncilofindia.org/info/recognised-universities-colleges), which is the regulator's own file. The Council of Architecture and IET claims on this page remain Amity-self-asserted, were not independently verified against those registers, and are deliberately absent from recognitionBadges; see also the NBA omit record, which confirms Amity Noida holds no current NBA programme accreditation."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "campusLifestyle",
+      "claimText": "The university is situated at Sector 125, Noida on a 60-acre campus and started operations from the 2005-06 academic session. Sports facilities include a swimming pool, squash courts, tennis courts, a 20-lane indoor shooting range and a riding academy, plus basketball, badminton and volleyball courts and cemented cricket pitches. Other facilities include a bookshop, food courts, a departmental store, a gym, MI rooms, underground parking, laundry, cafeterias and a counselling centre.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh Quality Manual (auup.amity.edu)",
+      "sourceUrl": "https://auup.amity.edu/NAAC_pdf/AUUP_Quality_Manual.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Manual is issue-dated 16 August 2017, so facility lists may have grown. Campus size and Sector 125 location corroborated by the UGC listing and the WSCUC directory address. Note a source conflict on the Ritnand Balved Education Foundation founding year: this manual says 1966 and the QAA 2023 report says 1986, so the founding year was omitted from public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "campusLifestyle",
+      "claimText": "Amity University, Uttar Pradesh has 17 Faculties of Studies containing 104 institutions and over 45,000 students studying over 400 programmes at bachelor, master and doctoral level; over 8,000 study by distance and online learning.",
+      "status": "verified",
+      "sourceLabel": "QAA International Quality Review of Amity University, Uttar Pradesh (2023), executive summary",
+      "sourceUrl": "https://www.qaa.ac.uk/docs/qaa/reports/amity-university-iqr-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "These are institution-wide figures spanning Noida, Lucknow, Greater Noida, London, Dubai and Tashkent, and are described as such in public copy rather than presented as Noida-only."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "studentSupport",
+      "claimText": "A Foreign Students Facilitation Centre has been set up at the university to assist international students with FRRO registration, soft landing and welfare, and a professional counsellor is available during working hours.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh - Foreign Students Facilitation Centre",
+      "sourceUrl": "https://auup.amity.edu/Centre-for-Foreign-Students.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "studentSupport",
+      "claimText": "Separate comfortable housing is available for international students, and an international student office and counsellor provide individualised attention. The counsellor for international students is at the Amity Admission Office, Block J2, Ground Floor, Amity University Campus, Sector 125, Noida 201313, contactable at internationaladmissions@amity.edu. Faculty coordinators, faculty mentors and a student buddy assist international students in settling in, and a free airport pick-up runs from the international terminal of IGI Airport New Delhi for newly arriving first-year international students when booked at least one week ahead through dsw@amity.edu.",
+      "status": "verified",
+      "sourceLabel": "Amity - Application Procedure for Foreign Applicants",
+      "sourceUrl": "https://amity.edu/admission-procedure-nri.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Housing, international student office and counsellor address are on the foreign-applicant page itself. The airport pick-up, faculty coordinator and student buddy detail is published on Amity's international-students pages; treated as an Amity-official statement and phrased without quoting the booking mechanics as a guarantee."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "safetyOverview",
+      "claimText": "Ragging is totally banned in Amity University campus including its departments, constituent units and all its premises (academic, residential, sports, canteen) whether located within the campus or outside, and in all means of transportation of students. The university lists an Anti-Ragging Committee, Anti-Ragging Squad and Anti-Ragging Monitoring and Execution Cell, an Internal Complaint Committee, an Amity Help Desk for Women, a Proctorial Board and a Student Grievance Redressal Committee among its standing committees.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 11) and AUUP statutory committees listing",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Committee names read from the AUUP site navigation at https://auup.amity.edu/about-recognition.aspx and related about-us pages."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "hostelOverview",
+      "claimText": "AC hostel accommodation is available within the Noida campus for boys and girls, applied for on the application form or through the admission office. The hostel fee for the Noida campus is INR 1,95,000 per annum for AC accommodation with a one-time security deposit of INR 15,000 payable at admission. Hostel seats are limited and allotted first come, first served, and meal charges in the cafeteria are on an actual basis. Scholarships do not include boarding and lodging cost or the refundable security deposit.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 12 and fee notes)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "dietarySupport",
+      "claimText": "Cafeteria meal charges are billed on an actual basis rather than as a fixed board fee, and the campus operates cafeterias, food courts, a departmental store and a bookshop.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 and AUUP Quality Manual",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "No official source publishes cuisine-specific or dietary-specific catering provision for the Noida campus. That absence is stated honestly in public copy rather than filled with generic reassurance."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "practicalExposure",
+      "claimText": "All B.Tech programmes except the Evening, 3 Continent and International variants offer a five-week Study Abroad Programme at no additional tuition fee, and the same option is published against the general MBA. Undergraduate curricula carry credited internships and a four-part Foreign Business Language sequence choosing from Arabic, Chinese, French, German, Japanese, Russian, Sanskrit or Spanish.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026, and Amity course-details pages for programme codes 10052 and 10019",
+      "sourceUrl": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=yc+U64DsPeQ%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "cityProfile",
+      "claimText": "All foreign students must register with the concerned District Foreigners Registration Officer or Foreigners Regional Registration Officer within 14 days of first arrival in India. No fee is charged for registration, but a penalty in Indian currency equivalent to US$30 is charged by the FRO for late registration.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 7.4)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The underlying statutory rule and its nationality-specific variations are separately evidenced against the Bureau of Immigration registration-requirements page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "thingsToConsider",
+      "claimText": "A student cannot be in receipt of a combination of scholarship and concession; only one type of scholarship or concession can be availed, whichever is higher. Scholarships are granted on an annual basis for the first year and continuation in later years is governed by the scholarship policy. Scholarships exclude the refundable security deposit and boarding and lodging cost. Published 2026 merit bands include 100 per cent for International Baccalaureate 42 or higher and 50 per cent for 38-41, 100 per cent for SAT 1500 and above with 50 per cent for 1400-1490, and 100 per cent for ACT 34 and above with 50 per cent for 31-33.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 16.2-16.4 and Scholarship Reference Notes)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "whyChoose",
+      "claimText": "The fee for the Foreign category is the same as the Sponsored fee, and all international students are granted a 50 per cent scholarship applicable for the entire duration of the course. The INR 1,500 application form cost is waived for foreign applicants, who must apply online only.",
+      "status": "verified",
+      "sourceLabel": "Amity - Application Procedure for Foreign Applicants",
+      "sourceUrl": "https://amity.edu/admission-procedure-nri.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The Foreign-equals-Sponsored fee rule is independently repeated in the 2026 Noida prospectus fee notes. The 50 per cent international scholarship appears on the foreign-applicant page and is not repeated in the prospectus scholarship chapter, so it is attributed to the admissions page and re-checked at review."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "thingsToConsider",
+      "claimText": "This record covers the Noida campus of Amity University Uttar Pradesh only. Amity operates further campuses at Lucknow, Greater Noida, Dubai and Tashkent under the same university, and separate Amity universities established under the Acts of Rajasthan, Haryana and Madhya Pradesh, each with its own approvals and fee schedules.",
+      "status": "verified",
+      "sourceLabel": "QAA International Quality Review of Amity University, Uttar Pradesh (2023) and WSCUC institution directory locations table",
+      "sourceUrl": "https://www.wscuc.org/institutions/amity-university-uttar-pradesh/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "WSCUC locations table lists Noida as Main Campus and Dubai, Greater Noida, Lucknow and Tashkent as branch campuses. Amity's own recognition page separately references the Amity University Rajasthan Act."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech (Computer Science & Engineering), programme code 10052, four years, Noida campus, Amity School of Engineering and Technology. Non-Sponsored eligibility is Class X and Class XII aggregate 60 per cent with Physics, Mathematics and a third approved subject at minimum 70 per cent; Sponsored eligibility is relaxed by 5 per cent. Selection process is a personal interview.",
+      "status": "verified",
+      "sourceLabel": "Amity - B.Tech (Computer Science & Engineering) course details, Noida campus",
+      "sourceUrl": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=yc+U64DsPeQ%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Identical eligibility bracket and the approved third-subject list are printed against programme code 10052 in the 2026 Noida prospectus engineering block."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "Foreign applicants must have completed 12 years of formal schooling and meet the same minimum eligibility as Indian residents. Where English was not a subject, TOEFL iBT 60 out of 120 or IELTS band 6.5 is required. Transcripts must be in certified English translation and transcripts in other languages are not accepted. Every foreign degree, diploma or certificate holder must obtain an equivalence certificate from the Association of Indian Universities or the UGC, and the onus is on the candidate.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 7.1 and 7.3)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Repeated verbatim on the public foreign-applicant admissions page at amity.edu/admission-procedure-nri.aspx."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "Foreign applicants for the Noida campus have to apply online only. Application receipt, registration status, shortlisting, selection-process scheduling, the admission letter and fee payment all run through the Amity admission microsite. A provisional offer is confirmed only against a student visa endorsed in the name of Amity University for full-time study and valid for the prescribed course duration, a medical test report within one week of admission and adequate medical insurance cover.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 4, 6 and 7.4)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "The last date for acceptance of the application form for foreign nationals in the 2026 cycle is 30 June 2026. Amity University Noida marked the commencement of the 2025-26 academic session with its Diksharambh orientation programme on 14 July 2025, placing the annual intake in July. Individual commencement dates are stated in each admission letter.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 6.2 and 7), and Amity event record for the Diksharambh orientation, 14 July 2025",
+      "sourceUrl": "https://www.amity.edu/event-detail-normal.aspx?Event=15463&Events=Events",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Amity does not publish a public academic calendar for the Noida campus; the July intake month is taken from its own dated orientation record for the 2025-26 session and is consistent with the 30 June foreign-national application deadline. Re-check when a Noida academic calendar is published."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "Programme code 10052 carries a first-year Sponsored semester fee of INR 3,28,500 (3.285 lakh) and a Non-Sponsored semester fee of INR 2,19,000. The prospectus states that the fee for the Foreign category is the same as the Sponsored fee, that each academic year is two semesters, that the published figure is the first-semester fee and rises by approximately 5 per cent each year, and that a one-time academic security deposit of INR 20,000 is payable at admission.",
+      "status": "verified",
+      "sourceLabel": "Amity B.Tech (Computer Science & Engineering) course details and Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 fee tables",
+      "sourceUrl": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=yc+U64DsPeQ%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The published annual figure of INR 6,57,000 is the first-semester Sponsored fee multiplied by the prospectus's own definition of an academic year as two semesters. No total-programme fee is published because of the stated 5 per cent annual escalation, so officialTotalTuitionAmount is deliberately omitted. No USD conversion is stored because no sourced exchange rate was available at research time."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "The published four-year curriculum runs Applied Mathematics I-IV, Engineering Physics and Chemistry, programming in C, C++ and Java, Data Structures, Operating Systems, Theory of Computation, Database Management Systems, Analysis and Design of Algorithms, Computer Networks, Software Engineering, Compiler Construction and Artificial Intelligence, with credited Internship-I in semester three and Internship-II in semester five and a four-part Foreign Business Language sequence.",
+      "status": "verified",
+      "sourceLabel": "Amity - B.Tech (Computer Science & Engineering) course details, semester-wise course structure",
+      "sourceUrl": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=yc+U64DsPeQ%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-artificial-intelligence",
+      "publicField": "eligibility",
+      "claimText": "B.Tech. (Artificial Intelligence), programme code 101198, four years, is listed in the engineering block of the 2026 Noida campus prospectus under the shared engineering eligibility bracket: Non-Sponsored Class X and Class XII aggregate 60 per cent with Physics, Mathematics and a third approved subject at minimum 70 per cent, with Sponsored eligibility relaxed by 5 per cent. Foreign applicants additionally need 12 years of formal schooling, an AIU or UGC equivalence certificate and, where English was not a subject, TOEFL iBT 60 or IELTS 6.5.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (engineering block and section 7)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The eligibility text is printed once for the engineering block; code 101198 sits inside that bracket immediately above code 10052. No separate public course-details page was reachable for this code, so no semester-wise curriculum was published in the payload."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-artificial-intelligence",
+      "publicField": "admissions",
+      "claimText": "Foreign applicants apply online only through the Amity application form, with the INR 1,500 form cost waived, and progress through the admission microsite to a personal interview, a provisional admission letter and confirmation against an Amity-endorsed student visa, a medical test report and medical insurance cover. The prospectus notes that seats are limited in programmes regulated by statutory bodies and that admission in such programmes is granted first come, first served.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 4, 6, 7 and eligibility notes)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-artificial-intelligence",
+      "publicField": "intake",
+      "claimText": "The last date for acceptance of the application form for foreign nationals in the 2026 cycle is 30 June 2026, and Amity University Noida marked the commencement of the 2025-26 academic session with its Diksharambh orientation on 14 July 2025, placing the annual intake in July.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 7), and Amity event record for the Diksharambh orientation, 14 July 2025",
+      "sourceUrl": "https://www.amity.edu/event-detail-normal.aspx?Event=15463&Events=Events",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-btech-artificial-intelligence",
+      "publicField": "fee",
+      "claimText": "Programme code 101198 carries a first-semester Sponsored fee of INR 3,28,500 and a Non-Sponsored figure of INR 2,19,000 in the 2026 Noida campus prospectus. The Foreign category pays the Sponsored fee, each academic year is two semesters, and the published figure rises by approximately 5 per cent each year. A one-time academic security deposit of INR 20,000 applies at admission.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (engineering fee table)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Single-source figure: unlike codes 10052 and 10019 there was no reachable second Amity page for this code. Fee-table row is standalone and unambiguous, but re-verify against a course page when one becomes reachable."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-mba",
+      "publicField": "eligibility",
+      "claimText": "MBA, programme code 10019, two years, Noida campus, Amity Business School. Eligibility is a bachelor's degree with 50 per cent aggregate. Where the candidate has appeared for a management entrance test, the published qualifying thresholds are CAT or XAT percentile 85 Non-Sponsored and 75 Sponsored, NMAT 250 and 200, MAT 650 and 600, GMAT 550 and 500, and CMAT 200 and 150. Selection process is a personal interview.",
+      "status": "verified",
+      "sourceLabel": "Amity - MBA course details, Noida campus, and Admission Prospectus 2026 postgraduate management fee and selection table",
+      "sourceUrl": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=nZKHDz0KGas%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The prospectus marks the entrance-test row as qualifying if appeared, so the thresholds are presented as conditional rather than as a universal requirement."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-mba",
+      "publicField": "eligibility",
+      "claimText": "For postgraduate programmes a foreign applicant must have 12 years of formal school education followed by a bachelor's degree of minimum 3 years duration, must meet the prospectus eligibility criteria, and where English was not a subject must have TOEFL iBT 60 out of 120 or IELTS 6.5. The prospectus and the foreign-applicant page both state that admission to postgraduate courses is restricted and that an excellent academic record is expected.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 7.2) and Amity foreign-applicant admissions page",
+      "sourceUrl": "https://amity.edu/admission-procedure-nri.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-mba",
+      "publicField": "admissions",
+      "claimText": "Foreign applicants apply online only, track shortlisting and selection through the admission microsite, and have the provisional offer confirmed against an Amity-endorsed student visa, a medical test report within one week of admission and adequate medical insurance. A candidate awaiting a qualifying-examination result may go through the selection process at their own risk.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 3.7, 4, 6 and 7.4)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-mba",
+      "publicField": "intake",
+      "claimText": "The last date for acceptance of the application form for foreign nationals in the 2026 cycle is 30 June 2026, and Amity University Noida marked the commencement of the 2025-26 academic session with its Diksharambh orientation on 14 July 2025, placing the annual intake in July.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 7), and Amity event record for the Diksharambh orientation, 14 July 2025",
+      "sourceUrl": "https://www.amity.edu/event-detail-normal.aspx?Event=15463&Events=Events",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-mba",
+      "publicField": "fee",
+      "claimText": "Programme code 10019 carries a first-year Sponsored semester fee of INR 6,21,000 (6.21 lakh) and a Non-Sponsored semester fee of INR 4,14,000. The Foreign category pays the Sponsored fee, an academic year is two semesters, the published figure is the first-semester fee and rises by approximately 5 per cent each year, and a one-time academic security deposit of INR 20,000 is payable at admission.",
+      "status": "verified",
+      "sourceLabel": "Amity MBA course details, Noida campus, and Admission Prospectus 2026 postgraduate management fee table",
+      "sourceUrl": "https://www.amity.edu/course-details.aspx?fd=FzNymoX3dH0%3D&cfn=nZKHDz0KGas%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Two independent Amity sources agree on 6.21 lakh. The stored annual figure of INR 12,42,000 applies the prospectus definition of an academic year as two semesters. Total tuition omitted because of the stated annual escalation."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-mba",
+      "publicField": "audienceEligibility",
+      "claimText": "The CAT-percentile postgraduate scholarship is open only to candidates who appeared in Class XII in full-time regular mode from CBSE, ISC or a recognised Indian state board and graduated from Indian universities only, is valid for the first year only, and requires no year gap between Class XII and graduation.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 17.2)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "This is a genuine nationality/education-system restriction and is stated on the page rather than softened."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-ba-llb-hons",
+      "publicField": "eligibility",
+      "claimText": "B.A. LL.B (Hons), programme code 10111, five years, Law block of the Noida campus. Non-Sponsored eligibility is Class XII aggregate 60 per cent and Sponsored eligibility is Class XII aggregate 55 per cent. Aggregate percentage is calculated on English plus three academic subjects, excluding Physical Education, Fine Arts, Performing Arts and non-written vocational subjects. Foreign applicants additionally require 12 years of formal schooling and an AIU or UGC equivalence certificate, plus TOEFL iBT 60 or IELTS 6.5 where English was not a subject.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (Law block and sections 7.1, 7.3)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-ba-llb-hons",
+      "publicField": "recognition",
+      "claimText": "The Bar Council of India's 'Approved List of CLE's (Law Colleges / Universities)', reached from the BCI recognised-universities-colleges page, records 'Amity Law School, Noida Uttar Pradesh' (p. 68) with a 5-year BA.LL.B.(H) course of strength 300 approved upto 2026-27. Amity Law School Centre-II, Noida carries 5-year BBA.LL.B. (300) and 5-year B.Com. LL.B. (120) on the same approval line.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - Approved List of CLEs (Law Colleges / Universities), uploaded 2026-08-20",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Re-sourced 2026-08-22 from the university's own prospectus and recognitions page to the BCI register itself, per research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822). The BCI list is a umi/React SPA whose PDF sits behind a one-hour signed S3 link, so the route page is cited rather than the file. BCI approves UG law courses only, so no BCI claim exists for any LL.M. The approval window ends with academic year 2026-27; re-check on the next BCI upload before that lapses."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognitionBadges",
+      "claimText": "Amity University Uttar Pradesh does not appear in NAAC's published list of institutions with valid accreditation as on 14-08-2025, and is absent from all 1,537 Standing Committee result PDFs through 12 December 2025. No NAAC grade, CGPA or cycle may be published for this university.",
+      "status": "omit",
+      "sourceLabel": "NAAC - Accreditation Status, Institutions with valid accreditation as on 14-08-2025",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified by agent claude-india-regverify-20260822, recorded in research/india-regulator-verification-2026-08-22.md. The workbook lists only Amity University Haryana (3.07 A), Amity University Rajasthan (3.31 A+) and Amity University Madhya Pradesh (2.95 B++) - all separate universities. Third-party aggregators assert 'A+' for Amity Noida; that is unsupported by the regulator. Do not re-add a NAAC badge, FAQ line or narrative mention from an aggregator source."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognitionBadges",
+      "claimText": "Amity University Uttar Pradesh / Noida holds no current NBA accreditation. Across all nine NBA registers the only Amity entities are Amity University Maharashtra (Raigad) for Biotechnology and two MBA programmes. No programme-level engineering accreditation may be published for the Noida B.Tech offerings.",
+      "status": "omit",
+      "sourceLabel": "National Board of Accreditation - accreditation programme registers",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified by agent claude-india-regverify-20260822, recorded in research/india-regulator-verification-2026-08-22.md. The NBA register is cumulative history rather than a current-status list, so presence alone proves nothing; only the Accreditation Period does. Amity Noida has neither. This is also why Amity's own claim that named Noida B.Tech programmes are IET accredited was deliberately kept out of recognitionBadges: it is self-asserted and was not independently verified against the IET register."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amity-university-noida",
+      "publicField": "recognitionBadges",
+      "claimText": "Amity University Uttar Pradesh is not among the twelve institutions on the UGC Institution of Eminence list. No IoE status may be published for this university in badges or in narrative copy.",
+      "status": "omit",
+      "sourceLabel": "UGC Institutions of Eminence - List of IoE",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified by agent claude-india-regverify-20260822, recorded in research/india-regulator-verification-2026-08-22.md. The UGC portal publishes only notified IoEs with their notification date; a Letter of Intent is a pre-notification step and never renders as Institution of Eminence. No IoE claim was made in this payload; this record exists so a reviewer does not add one."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-ba-llb-hons",
+      "publicField": "audienceEligibility",
+      "claimText": "Under section 24 of the Advocates Act, 1961 a person may be admitted as an advocate on a State roll only if they are a citizen of India, except that a national of another country may be admitted if citizens of India duly qualified are permitted to practise law in that other country.",
+      "status": "indicative",
+      "sourceLabel": "Section 24, The Advocates Act, 1961 (reproduced by Indian Kanoon)",
+      "sourceUrl": "https://indiankanoon.org/doc/739001/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "indiacode.nic.in and the Bar Council of India's own rule pages were not reachable from the research environment, so this is carried as indicative practical context, not as a determination of any individual's practice rights. Public copy states only that enrolment is decided by state bar councils under the Act and not by the university. Re-verify against the official statute text before promoting this to verified."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-ba-llb-hons",
+      "publicField": "admissions",
+      "claimText": "Foreign applicants apply online only and progress through the Amity admission microsite to the selection process, a provisional admission letter and confirmation against an Amity-endorsed student visa, a medical test report and medical insurance. Fast Track Admission cum Scholarship is not applicable for Law programmes, and the CLAT-based first-year scholarship requires a CLAT 2026 score with Class XII in 2026 only.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 7.4, 16.7 and scholarship notes)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-ba-llb-hons",
+      "publicField": "intake",
+      "claimText": "The last date for acceptance of the application form for foreign nationals in the 2026 cycle is 30 June 2026, and Amity University Noida marked the commencement of the 2025-26 academic session with its Diksharambh orientation on 14 July 2025, placing the annual intake in July.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 7), and Amity event record for the Diksharambh orientation, 14 July 2025",
+      "sourceUrl": "https://www.amity.edu/event-detail-normal.aspx?Event=15463&Events=Events",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-ba-llb-hons",
+      "publicField": "fee",
+      "claimText": "Programme code 10111 carries a first-semester Sponsored fee of INR 2,98,500 and a Non-Sponsored figure of INR 1,99,000 in the 2026 Noida campus prospectus Law block. The Foreign category pays the Sponsored fee, an academic year is two semesters, the published figure rises by approximately 5 per cent each year, and a one-time academic security deposit of INR 20,000 applies at admission.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (Law fee table)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Single-source figure read from the Law block fee table, where the adjacent B.A. LL.B (non-Hons, code 101347) row carries INR 1,83,000 / 2,74,500. Amity exposes no second public fee page for code 10111, so re-verify at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-bdes-product-design",
+      "publicField": "eligibility",
+      "claimText": "B.Des. (Product Design), programme code 101009, four years, Design block of the Noida campus. Non-Sponsored eligibility is Class XII aggregate 55 per cent and Sponsored eligibility is Class XII aggregate 50 per cent, with no prescribed subject combination. Foreign applicants additionally require 12 years of formal schooling, an AIU or UGC equivalence certificate, and TOEFL iBT 60 or IELTS 6.5 where English was not a subject in the qualifying examination.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (Design block and sections 7.1, 7.3)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-bdes-product-design",
+      "publicField": "admissions",
+      "claimText": "Foreign applicants apply online only through the Amity application form with the INR 1,500 cost waived, and progress through the admission microsite to the selection process, a provisional admission letter and confirmation against an Amity-endorsed student visa, a medical test report and medical insurance cover. Fast Track Admission cum Scholarship is not applicable for Design programmes.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (sections 4, 6, 7.4 and scholarship notes)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The prospectus prints a Creative Test followed by an Interview note against the adjacent B.Design (UX Design) row in the same Design block. Because the row alignment could not be resolved unambiguously for code 101009, that selection detail was deliberately omitted from public copy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-bdes-product-design",
+      "publicField": "intake",
+      "claimText": "The last date for acceptance of the application form for foreign nationals in the 2026 cycle is 30 June 2026, and Amity University Noida marked the commencement of the 2025-26 academic session with its Diksharambh orientation on 14 July 2025, placing the annual intake in July.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (section 7), and Amity event record for the Diksharambh orientation, 14 July 2025",
+      "sourceUrl": "https://www.amity.edu/event-detail-normal.aspx?Event=15463&Events=Events",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amity-university-noida",
+      "programmeSlug": "amity-noida-bdes-product-design",
+      "publicField": "fee",
+      "claimText": "Programme code 101009 carries a first-semester Sponsored fee of INR 1,57,500 and a Non-Sponsored figure of INR 1,05,000 in the 2026 Noida campus prospectus Design block. The Foreign category pays the Sponsored fee, an academic year is two semesters, the published figure rises by approximately 5 per cent each year, and a one-time academic security deposit of INR 20,000 applies at admission.",
+      "status": "verified",
+      "sourceLabel": "Amity University Uttar Pradesh, Noida Campus - Admission Prospectus 2026 (Design fee table)",
+      "sourceUrl": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Single-source figure. Adjacent Design rows are Bachelor of Interior Design (code 10803) at INR 1,18,000 / 1,77,000 and B.Design (UX Design) (code 101429) at the same INR 1,05,000 / 1,57,500 band, so the row alignment for code 101009 is consistent. Re-verify when a public course page for this code becomes reachable."
+    }
+  ]
+}

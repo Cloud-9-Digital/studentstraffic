@@ -1,0 +1,36 @@
+{
+  "scope": "Libya medical discovery — University of Benghazi Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "University of Benghazi Faculty of Medicine publishes its 2023-2024 study plan and a curriculum committee regulation on its official regulations and guides page.",
+      "sourceUrl": "https://med.uob.edu.ly/ar/about/regulations-and-guides/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty's internal-medicine department describes theoretical, clinical and interactive teaching, with clinical teaching and discussion sessions in Benghazi teaching hospitals including Benghazi Medical Centre, the Cardiac Centre, Al-Kweifiya Chest Hospital and Al-Hawari General Hospital.",
+      "sourceUrl": "https://med.uob.edu.ly/ar/departments/department-of-internal-medicine/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty's registrar page states that registration dates and required documents are announced through official faculty channels, and it describes a faculty admission and equivalency committee process for transfer applicants.",
+      "sourceUrl": "https://med.uob.edu.ly/ar/about/registeredcollege/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty's 2023 study and examination regulation requires entrants to meet the admission percentage set by the college council and to pay study and fee charges under university regulations.",
+      "sourceUrl": "https://med.uob.edu.ly/ar/wp-content/uploads/sites/33/2023/11/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D9%88-%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA-2023.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current official admission thresholds and exact fee amounts were not assembled for the required payload fields.",
+    "Current recognition, instructional-language and student-support evidence remains incomplete."
+  ],
+  "nextAction": "Collect current Faculty of Medicine admission, fee, recognition, language and student-support publications, then complete the field-level review before publishing."
+}

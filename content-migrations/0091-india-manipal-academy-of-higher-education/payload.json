@@ -1,0 +1,1695 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate engineering degrees in computer science. Manipal Academy of Higher Education maps its B.Tech in Computer Science & Engineering at Manipal Institute of Technology to this category: eight semesters, taught in English, with departmental specialisations selected after the second year in areas including cyber security, artificial intelligence and machine learning, data science, software engineering and networks and IoT.",
+      "metaTitle": "B.E./B.Tech CSE Programmes Abroad: Fees, Entry and Admissions",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees abroad by tuition, entry requirements, teaching language, intake month and the admission route each university publishes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate engineering degrees in mechanical engineering. Manipal Academy of Higher Education maps its B.Tech in Mechanical Engineering at Manipal Institute of Technology to this category: eight semesters taught in English, with minor specialisations offered in product design, materials science and engineering, thermal engineering, industrial engineering and business management.",
+      "metaTitle": "B.E./B.Tech Mechanical Engineering Degrees: Fees and Admissions",
+      "metaDescription": "Compare B.E./B.Tech Mechanical degrees by tuition, entry requirements, intake month, teaching language and the admission route published by each university."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 2,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for full-time general management master's degrees. Manipal Academy of Higher Education maps the flagship MBA taught at T. A. Pai Management Institute, Manipal, to this category: a two-year, six-term residential programme delivered in English, with a separate admission route and entrance-test requirement for foreign national, PIO and NRI applicants.",
+      "metaTitle": "MBA Programmes Abroad: Fees, Entry Tests and Admissions",
+      "metaDescription": "Compare MBA programmes by tuition, entrance-test requirements, work-experience expectations, intake timing and each business school's published admission route."
+    },
+    {
+      "slug": "bpt",
+      "name": "Bachelor of Physiotherapy",
+      "shortName": "BPT",
+      "stream": "physiotherapy",
+      "level": "bachelors",
+      "discipline": "physiotherapy",
+      "aliases": [
+        "Bachelor of Physical Therapy",
+        "BSc Physiotherapy"
+      ],
+      "displayOrder": 3,
+      "durationYears": 5,
+      "summary": "This is the Students Traffic catalogue category for undergraduate-entry physiotherapy degrees. Manipal Academy of Higher Education maps the Bachelor of Physiotherapy taught at Manipal College of Health Professions to this category: four years of coursework followed by a compulsory internship, entered from a school-leaving qualification carrying physics, chemistry, biology and English, and taught in English on the Manipal campus.",
+      "metaTitle": "BPT Bachelor of Physiotherapy Degrees: Fees and Admissions",
+      "metaDescription": "Compare BPT degrees by tuition, subject eligibility, programme length including internship, intake month and the admission route each university publishes."
+    },
+    {
+      "slug": "bachelor-media-communication",
+      "name": "Bachelor's in Media and Communication",
+      "shortName": "Bachelor's Media",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "media-communication",
+      "aliases": [
+        "BA Media and Communication",
+        "Bachelor of Communication"
+      ],
+      "displayOrder": 4,
+      "durationYears": 3,
+      "summary": "This is the Students Traffic catalogue category for undergraduate degrees in media, journalism and communication studies. Manipal Academy of Higher Education maps the B.A. in Media and Communication at Manipal Institute of Communication to this category: a three-year full-time degree taught in English, with an optional fourth honours year for students who reach a cumulative grade point average of 7.5 across the first six semesters.",
+      "metaTitle": "Bachelor's Media and Communication Degrees: Fees and Admissions",
+      "metaDescription": "Compare Bachelor's Media and Communication degrees by tuition, entry requirements, intake month, teaching language and each university's admission route."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "manipal-academy-of-higher-education",
+      "name": "Manipal Academy of Higher Education",
+      "city": "Manipal",
+      "type": "Private",
+      "establishedYear": 1953,
+      "officialWebsite": "https://www.manipal.edu/mu.html",
+      "mediaAttribution": {},
+      "summary": "Manipal Academy of Higher Education is a private deemed-to-be university in Manipal, Karnataka, whose Institution of Eminence campus town groups health sciences, engineering, management, communication, design and liberal arts institutes in one place. International applicants are admitted through a separate Foreign/NRI category run by MAHE's own International Admissions Office.",
+      "campusLifestyle": "The Manipal campus is a university town on a plateau in Karnataka's Udupi district, with more than 35,000 students drawn from over 60 countries, around 3,000 faculty and roughly 40 institutes, teaching departments and centres. Sport centres on MARENA, an indoor complex with five badminton courts, four squash courts, three tennis courts, a basketball court, a gymnasium and a walking track. Academic infrastructure includes one of Asia's largest health sciences libraries, an anatomy museum, a simulation laboratory using computer-driven manikins, an AICTE IDEA Lab and a business incubation centre, across a Wi-Fi-enabled campus.",
+      "cityProfile": "Manipal sits on a plateau in Karnataka's Udupi district on India's south-west coast and works as a university town organised around MAHE rather than as a district of a large metropolitan centre; the campus postal address is Manipal 576104, Karnataka. MAHE also runs campuses at Mangaluru, Bengaluru and Jamshedpur, plus an offshore campus in Dubai, so the campus a programme is taught at matters when comparing fees and dates - every programme packaged here is taught at Manipal. Teaching and university administration are conducted in English. The regional climate is tropical coastal, with the south-west monsoon typically running June to September, which overlaps the July orientation and class-commencement window used by most Manipal undergraduate programmes. Hostel wardens for the health sciences campus, the technology and management campus and the TAPMI campus are separate offices with separate contact points, which matters when arranging accommodation from abroad.",
+      "practicalExposure": "Practical training is organised institute by institute rather than centrally. The Computer Science and Engineering department at Manipal Institute of Technology names Monash University and the Australian National University as two-plus-two dual-degree partners and State University of New York, Binghamton for a 3.5-plus-1.5 pathway, and lists teaching and research tie-ups with IBM, Cisco, Samsung, Schneider Electric, the Data Security Council of India, the Information Sharing and Analysis Center and Infosys Springboard. The mechanical engineering department runs AI labs under Intel Unnati and lists recruiters including Bosch, Daimler India, Tata Motors, Mahindra & Mahindra, L&T, Maruti Suzuki, Volvo, Honeywell and Goldman Sachs. In MAHE's 2025 NIRF submission to the Ministry of Education, 1,650 of the 2,832 students who graduated from four-year undergraduate programmes in 2023-24 were placed, 591 went on to higher studies and the median annual salary of placed graduates was INR 800,000. Manipal Institute of Communication runs a newsroom set-up, podcast studios, digital editing suites and film screening rooms, and places students in internships with media houses, PR firms and advertising agencies. The Bachelor of Physiotherapy programme is taught with access to hospital facilities on the same campus for supervised clinical practice, followed by a compulsory internship after the coursework years.",
+      "hostelOverview": "Hostels are allotted online through MAHE's Hostel Management System for domestic entrants, but at the MIT Manipal campus Foreign/NRI students apply by emailing the Chief Warden's office at chiefwarden.mit@manipal.edu; the allotment list is issued about 15 days before classes begin and the fee is remitted by wire transfer. Published 2026 Foreign/NRI rates at that campus are USD 1,450 a year for a deluxe air-conditioned double with attached bath and USD 2,030 for a single air-conditioned room with attached bath, plus a USD 200 refundable deposit and a USD 140 to USD 200 air-conditioning electricity advance. The annual mess advance is billed separately at INR 62,000. Hostel fees cover one academic year and are renewed before each subsequent year.",
+      "dietarySupport": "Mess membership is compulsory for all first-year undergraduates living in MAHE hostels and is charged as an annual advance of INR 62,000 for 2026 entrants, quoted in rupees even where the hostel fee itself is billed in US dollars. Campus messes are run by MAHE-approved vendors and students choose among them rather than being assigned one. Food taken outside the mess, books and personal expenses sit outside the MAHE international merit scholarship, which is a waiver on the programme fee only.",
+      "safetyOverview": "MAHE publishes an anti-ragging squad, a gender sensitisation and prevention policy and an ombudsperson channel for student grievances, and signposts Tele MANAS, India's toll-free mental-health helpline, on its admissions pages. International students need a valid Registration Certificate or Residential Permit to travel inside or outside India during the course, and must surrender it to immigration on final departure.",
+      "studentSupport": "The International Admissions Office (intladm@manipal.edu) handles Foreign/NRI applications and eligibility checks on foreign qualifications, issues the confirmed-admission letter used for the student visa application, applies on students' behalf for the health-sciences No Objection Certificate after enrolment, and assists with e-FRRO registration, Registration Certificate collection and later visa extensions.",
+      "whyChoose": [
+        "MAHE allocates 15 per cent of seats to the Foreign/NRI category, so international applicants compete within a defined quota rather than against the open domestic merit list.",
+        "MAHE states that Foreign/NRI admissions to undergraduate and postgraduate programmes run on first-come, merit basis from the qualifying examination with no entrance examination, apart from the NEET-governed medical and dental programmes and NATA-governed architecture.",
+        "International-category students admitted to eligible undergraduate and postgraduate programmes receive a 20 per cent waiver on the programme fee for the full duration of the course, subject to annual academic-progress conditions.",
+        "Fees for Foreign/NRI candidates are published in US dollars for every programme in one annual schedule, so tuition, other fees and the refundable caution deposit are visible before an application is submitted.",
+        "One campus covers engineering, management, media, design, allied health and medicine, so a single application route and one international student-services office serve very different disciplines.",
+        "Manipal Institute of Technology's B.Tech programmes sit in the National Board of Accreditation's Tier I register under the Washington Accord to 30 June 2028, which is the accreditation tier other Washington Accord signatories look for when assessing an Indian engineering degree."
+      ],
+      "thingsToConsider": [
+        "OCI and PIO card holders who secured the card before 4 March 2021 are treated as Indian nationals under the Supreme Court decision of 3 February 2023 and are not admitted under the Foreign/NRI category; those who obtained the card after that date are considered under the Foreign category only.",
+        "The MBA at T. A. Pai Management Institute is an exception to MAHE's general no-entrance-test rule for international applicants: foreign national and PIO candidates need a valid GMAT score, and an IELTS score of 5.0 where required, then a group discussion, written ability test and personal interview.",
+        "Foreign students admitted to health science courses such as medicine, dentistry and nursing need a No Objection Certificate from the Government of India, which MAHE applies for after enrolment; engineering, architecture, pharmacy, management and hotel management programmes are exempt, so visa timelines differ by discipline.",
+        "Indian student-visa conditions bar employment and business activity during study, so the full cost of a MAHE programme has to be funded without part-time earnings in India.",
+        "Application windows close months before teaching starts: in the 2026 cycle the last date was 30 April for B.Tech programmes, 15 July for Manipal College of Health Professions bachelor's programmes and 31 July for Manipal Institute of Communication programmes, after which the international application pages showed admissions closed."
+      ],
+      "bestFitFor": [
+        "Foreign nationals, NRIs and NRI-sponsored candidates who want an English-taught Indian degree with a published US-dollar fee schedule and a named international admissions contact.",
+        "Applicants holding GCE A Level or International Baccalaureate qualifications, for which MAHE publishes subject-by-subject entry equivalences programme by programme.",
+        "Engineering applicants who want an overseas exit route, since MIT Manipal runs two-plus-two dual degrees with Monash University, the Australian National University, Macquarie University, Deakin University and the University of Auckland.",
+        "Management applicants who already hold a GMAT score and want an AACSB- and AMBA-accredited MBA taught in India.",
+        "Allied-health applicants who want a physiotherapy degree with hospital-based clinical placement and a compulsory internship built into the programme length."
+      ],
+      "industryPartners": [
+        "IBM",
+        "Cisco",
+        "Samsung",
+        "Schneider Electric",
+        "Intel (Unnati programme)",
+        "Infosys Springboard",
+        "Data Security Council of India",
+        "Information Sharing and Analysis Center (ISAC), India",
+        "Bosch",
+        "Tata Motors",
+        "Mahindra & Mahindra",
+        "Larsen & Toubro"
+      ],
+      "recognitionBadges": [
+        "UGC Institution of Eminence — notified 14 October 2020",
+        "Deemed to be University - declared by the Government of India, June 1993",
+        "NAAC — Accredited A++, CGPA 3.65, Cycle 3 (declared May 2022)",
+        "NBA Tier I (Washington Accord) — Manipal Institute of Technology B.Tech programmes accredited to 30 June 2028",
+        "NBA Management PG — TAPMI MBA accredited 1 January 2026 to 31 December 2031",
+        "NBA Pharmacy UG — Manipal College of Pharmaceutical Sciences accredited to 30 June 2028",
+        "UGC Graded Autonomy - Category I (UGC letter dated 4 October 2023)",
+        "NIRF India Rankings 2025 - Rank 3 in the University category, Ministry of Education",
+        "AACSB Accredited - T. A. Pai Management Institute, constituent unit of MAHE",
+        "AMBA Accredited - TAPMI MBA programmes",
+        "ISO 9001:2015, ISO 14001:2015 and ISO 50001:2018 certified"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NAAC accreditation status register - A++, CGPA 3.65, Cycle 3 declared May 2022",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "UGC Institution of Eminence list - MAHE notified 14 October 2020",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE"
+        },
+        {
+          "label": "National Board of Accreditation register - Manipal Institute of Technology and TAPMI",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category list, Ministry of Education",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        },
+        {
+          "label": "UGC Graded Autonomy Category I letter dated 4 October 2023",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/mahe/compliance/UGC%2004_10_2023-Graded%20autonomy%20Cat_I.pdf"
+        },
+        {
+          "label": "AACSB accreditation record - T. A. Pai Management Institute",
+          "url": "https://www.aacsb.edu/accredited/t/t-a-pai-management-institute"
+        },
+        {
+          "label": "MAHE history and Institution of Eminence status",
+          "url": "https://www.manipal.edu/mu/about-us/history.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Manipal Academy of Higher Education a public or a private university?",
+          "answer": "MAHE is a private, self-financing institution. It began in 1953 with a self-financing medical college set up as a public-private collaboration, was declared a Deemed to be University by the Government of India in June 1993, and was notified as an Institution of Eminence Deemed to be University by the UGC on 14 October 2020. It is not a state or central government university, and its fees are not government-subsidised outside specific scholarship and government-nominated routes."
+        },
+        {
+          "question": "Who can apply under the Foreign/NRI category, and is there an entrance examination?",
+          "answer": "The Foreign/NRI category is open to foreign nationals, candidates with NRI status, candidates sponsored by an NRI relative, OCI card holders and PIO card holders, and covers 15 per cent of seats. MAHE states that Foreign/NRI admissions to undergraduate and postgraduate programmes are made on a first-come, merit basis from the 10+2 or bachelor's degree result, with no entrance examination. The named exceptions are MBBS, BDS, MD, MS, MDS, DM and MCh, which run through NEET and central or state counselling, and B.Arch, which requires NATA or JEE Main Paper II. The MBA at TAPMI separately requires GMAT for foreign national and PIO applicants."
+        },
+        {
+          "question": "Does MAHE accept GCE A Levels and the International Baccalaureate?",
+          "answer": "Yes. MAHE publishes A Level and IB entry routes programme by programme in its 2026 eligibility document. Typically, undergraduate applicants need the required subjects at A Level plus English at AS Level or five passes at IGCSE, GCSE or GCE O Level including English, with an average grade of D in the required subjects. IB applicants need a Diploma or Certificate with three subjects at Higher Level and three at Standard Level, at least 3 points in any counted subject and 24 points overall. Candidates holding other foreign qualifications must submit an equivalence certificate from the Association of Indian Universities."
+        },
+        {
+          "question": "Is an English language test such as IELTS or TOEFL required?",
+          "answer": "MAHE does not publish a blanket IELTS or TOEFL requirement for undergraduate entry. Its published A Level and IB routes instead require English inside the qualifying examination - English at AS Level, or five passes at IGCSE, GCSE or GCE O Level including English, or English within the IB subject set. The exception in this set of programmes is the MBA at TAPMI, where foreign national and PIO applicants may be asked for an IELTS score of 5.0 alongside a compulsory GMAT score."
+        },
+        {
+          "question": "What does a B.Tech in Computer Science cost in total for an international applicant?",
+          "answer": "For the 2026-27 Foreign/NRI schedule, B.Tech in Computer Science & Engineering at MIT Manipal is USD 9,450 tuition plus USD 5,700 other fees per year across four annual instalments, giving a published programme total of USD 60,800 including a USD 200 refundable caution deposit. Accommodation is billed separately: USD 1,450 a year for a deluxe air-conditioned double room at the MIT campus plus a USD 200 refundable deposit and a USD 140 air-conditioning advance, and an annual mess advance of INR 62,000. A 20 per cent international merit scholarship, where awarded, applies to the programme fee only."
+        },
+        {
+          "question": "How does an international applicant actually apply?",
+          "answer": "Applications are made online through MAHE's admissions portal at apply.manipal.edu, choosing the international category. The applicant uploads eligibility documents, including proof of foreign national, OCI, PIO, NRI or NRI-sponsored status, receives a provisional admission offer, pays the first-year fee, then receives a provisional admission order and submits final results before the admission order is issued. MAHE states that all admissions are through its own admissions department and that it uses no agents, middlemen or consultants. Queries on foreign qualifications go to intladm@manipal.edu."
+        },
+        {
+          "question": "Do international students need a No Objection Certificate from the Government of India?",
+          "answer": "It depends on the discipline. MAHE states that foreign students admitted to health science courses such as medicine, dentistry and nursing require a No Objection Certificate from the Government of India, and that its International Admissions Office applies for that certificate on their behalf after they register and classes start. Under a 2004 resolution of the then Ministry of Human Resource Development, no such certificate is needed for engineering and technology, architecture and town planning, pharmacy, applied arts, MBA, MCA or hotel management programmes."
+        },
+        {
+          "question": "What visa is required, and what has to be done after arriving in India?",
+          "answer": "MAHE states that international students may be on campus only on a Student Visa and that students on a tourist visa cannot be admitted to any programme. The confirmed admission letter issued after the first-year fee is paid is what the applicant takes to an Indian embassy or consulate for the visa. After arrival, students at the Manipal, Mangalore, Bangalore and Jamshedpur campuses must register online through the e-FRRO portal within 14 days. The Residential Permit is issued for a maximum of one year or until the visa expires, whichever is earlier, and must be renewed at least a month before it lapses."
+        },
+        {
+          "question": "Are OCI and PIO card holders treated as international applicants?",
+          "answer": "Only in part, and the date on the card decides it. Following the Supreme Court decision of 3 February 2023 in Writ Petition (Civil) 891 of 2021, OCI and PIO candidates who secured the card before 4 March 2021 are considered Indian nationals for MAHE admission purposes and apply in the general category. Candidates who obtained an OCI or PIO card after that date are considered under the Foreign category only. Proof required includes the OCI or PIO card and a copy of a parent's passport."
+        },
+        {
+          "question": "What scholarships are available to international students?",
+          "answer": "MAHE awards a Scholar-category scholarship to students admitted under the International Students category to eligible undergraduate and postgraduate programmes, giving a 20 per cent waiver on the programme fee for the full course duration. It does not apply to B.Sc. Nursing, MBBS, BDS, MD, MS, MDS, DM, MCh or PhD programmes, and it does not cover hostel, food or book costs. Students admitted through Study in India, COMPEX or Indian Council for Cultural Relations schemes already receive a subsidised fee structure and are not eligible for this scholarship. Continuation each year depends on clearing all subjects in the previous year's university examinations."
+        },
+        {
+          "question": "When are the intakes and application deadlines?",
+          "answer": "MAHE runs a single main annual intake with teaching starting in July for most Manipal undergraduate programmes. In the 2026 cycle, the last date to apply was 30 April for B.Tech programmes at MIT Manipal, with orientation on 14 and 15 July for computer science streams and 16 and 17 July for other streams and classes from 20 July; 15 July for Manipal College of Health Professions bachelor's programmes, with classes from 21 July; and 31 July for Manipal Institute of Communication programmes. The TAPMI MBA runs on its own calendar, with Term I of the 2026-28 batch listed as commencing in June or July 2026."
+        },
+        {
+          "question": "What accommodation is available and what does it cost?",
+          "answer": "MAHE runs separate hostel systems by campus. At the MIT Manipal campus, Foreign/NRI students apply for a room by emailing the Chief Warden's office and are told their allotment about 15 days before classes begin, paying by wire transfer. Published 2026 Foreign/NRI rates are USD 1,450 a year for a deluxe air-conditioned double with attached bath, USD 1,590 for an air-conditioned double in the girls' hostel and USD 2,030 for a single air-conditioned room, plus a USD 200 refundable deposit and an air-conditioning electricity advance. Mess membership is compulsory for first-year undergraduates and is charged as an INR 62,000 annual advance."
+        },
+        {
+          "question": "What do the NAAC A++ grade and Institution of Eminence status actually mean?",
+          "answer": "NAAC is the accreditation body of the University Grants Commission; its register records MAHE at A++ with a CGPA of 3.65 in Cycle 3, declared May 2022. That is an institution-wide assessment, not a statement about one programme. Institution of Eminence is a UGC designation notified on 14 October 2020, carrying greater academic autonomy. Programme-level engineering accreditation is separate: the National Board of Accreditation places MIT Manipal's B.Tech programmes in Tier I under the Washington Accord to 30 June 2028. None of these decide whether the degree is recognised for practice or further study in an applicant's home country, which that country's own regulator sets."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "MAHE - International Admissions: Foreign / NRI Category, Who Can Apply",
+          "url": "https://www.manipal.edu/international.html",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Foreign/NRI category definition, 15 per cent seat allocation, no-entrance-test rule and its exceptions, student visa, e-FRRO, Residential Permit and NOC rules."
+        },
+        {
+          "label": "MAHE - Eligibility & Admission Process 2026: Undergraduate programs under General / Foreign / NRI category",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Programme-by-programme Indian board, A Level and IB eligibility plus the separate Foreign/NRI admission-process column."
+        },
+        {
+          "label": "MAHE - Eligibility & Admission Process 2026: Postgraduate programs under General / Foreign / NRI category",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/PG%20Eligibility%202026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "TAPMI MBA eligibility by category, OCI/PIO cut-off date rule, status-proof document lists. Document footer dated 23 July 2026."
+        },
+        {
+          "label": "MAHE - 2026-27 Foreign / NRI Category Course Fees schedule (as on 18 June 2026)",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20NRI%20Fees%20as%20on%2018-06-2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "US-dollar tuition, other-fee, caution-deposit and programme-total figures for every MAHE programme in the Foreign/NRI category."
+        },
+        {
+          "label": "MAHE - Prospectus 2026, Section 3: Schedule of Hostel Facilities Fees",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026%20Prospectus%20File%2077_Section%203%20Hostel%20Fees_20.07.2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Foreign/NRI hostel rates in US dollars for the MIT Manipal campus, mess advance, allotment procedure and warden contacts."
+        },
+        {
+          "label": "MAHE - Admission Dates to Remember 2026",
+          "url": "https://www.manipal.edu/mu/admission/dates-to-remember.html",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Last application dates, orientation dates and tentative class commencement dates by institute."
+        },
+        {
+          "label": "MAHE Scholarships 2026 guidelines",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/mahe_scholarships_2026_v17.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Section 22, Merit Scholarships for International Students: 20 per cent programme-fee waiver, exclusions and continuation conditions."
+        },
+        {
+          "label": "MAHE - History and institutional status",
+          "url": "https://www.manipal.edu/mu/about-us/history.html",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "1953 founding, June 1993 Deemed to be University status, October 2020 Institution of Eminence designation, campus scale, MARENA, ISO certifications."
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category, Ministry of Education",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "MAHE Manipal (IR-O-U-0234) listed at rank 3 with an overall score of 69.25."
+        },
+        {
+          "label": "NIRF India Rankings 2025 - data submitted by Manipal Academy of Higher Education",
+          "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/University/IR-O-U-0234.pdf",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Placement, higher-studies and median-salary figures by programme length, and outside-country student counts."
+        },
+        {
+          "label": "NAAC - Accreditation Status register of institutions with valid accreditation",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "MAHE (AISHE U-0234) at A++, CGPA 3.65, Cycle 3, declared 31 May 2022. The register publishes a declaration date and no expiry date."
+        },
+        {
+          "label": "National Board of Accreditation - accreditation programme register",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Manipal Institute of Technology in the Engineering UG Tier I (Washington Accord) register to 30 June 2028, Manipal College of Pharmaceutical Sciences in Pharmacy UG to 30 June 2028, TAPMI in Management PG with the MBA to 31 December 2031. The register is cumulative history, so only the accreditation period proves currency."
+        },
+        {
+          "label": "UGC Institution of Eminence - List of IoE institutions",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "MAHE listed as a notified private Institution of Eminence with date of notification 14.10.2020."
+        },
+        {
+          "label": "MAHE mandatory disclosure - NAAC and NBA accreditation status, Manipal campus",
+          "url": "https://www.manipal.edu/content/dam/manipal/mu/documents/mahe/mandatory-disclosure/NAAC%20NBA%20accreditaiton%20status%20Manipal%20campus.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Institutional self-disclosure. Its NAAC figures match the regulator, but its NBA status of 'Nil' is contradicted by the NBA register and was not relied on."
+        },
+        {
+          "label": "TAPMI - Admissions: eligibility, NRI and foreign national criteria, fees and key dates",
+          "url": "https://www.tapmi.edu.in/admissions/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "GMAT compulsory and IELTS 5.0 where required for PIO and foreign nationals, PIO definition, selection stages, Term I commencement June/July 2026."
+        },
+        {
+          "label": "Manipal Institute of Communication - B.A./B.A. (Hons) in Media and Communication",
+          "url": "https://www.manipal.edu/soc/program-list/ba-media-and-communication.html",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Three-year structure with conditional honours year at CGPA 7.5, international applicants exempt from the admission test, foreign-student application deadline 31 July 2026."
+        },
+        {
+          "label": "Bureau of Immigration, Ministry of Home Affairs - registration requirements for foreign nationals",
+          "url": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Student visa registration within 14 days of arrival, nationality-specific variations and exemptions."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "research_ready"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Foreign/NRI category eligibility",
+            "capture": [
+              "citizenship or residency status",
+              "OCI or PIO card issue date if applicable",
+              "qualification and awarding board",
+              "intended programme",
+              "intended intake year"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my Manipal cost plan",
+            "capture": [
+              "intended programme",
+              "accommodation preference",
+              "budget in USD",
+              "scholarship interest"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my MAHE application review",
+            "capture": [
+              "document readiness",
+              "AIU equivalence status for foreign qualifications",
+              "entrance-test status where applicable",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "immigration",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "passport nationality",
+              "current country of residence",
+              "planned arrival date",
+              "campus"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "mahe-manipal-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech in Computer Science & Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 9450,
+            "officialTotalTuitionAmount": 37800,
+            "annualTuitionUsd": 9450,
+            "totalTuitionUsd": 37800,
+            "verifiedAt": "2026-08-22",
+            "notes": "MAHE's 2026-27 Foreign/NRI fee schedule lists USD 9,450 tuition and USD 5,700 other fees per year across four annual instalments, plus a USD 200 refundable caution deposit, giving a published programme total of USD 60,800. Hostel, mess, travel and personal costs are separate."
+          },
+          "officialProgramUrl": "https://www.manipal.edu/mit/program-list/btech/btech-computer-science-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians",
+              "Candidates sponsored by an NRI relative",
+              "OCI card holders issued after 4 March 2021",
+              "PIO card holders issued after 4 March 2021"
+            ],
+            "restrictions": [
+              "Foreign/NRI seats are capped at 15 per cent of the intake and are not equivalent to payment, management or reserved seats.",
+              "OCI and PIO card holders who secured the card before 4 March 2021 are treated as Indian nationals and must apply in the general category.",
+              "General-category applicants are admitted on Manipal Entrance Test rank or the JEE Main Common Rank List, which are separate routes from the Foreign/NRI merit route described here.",
+              "Applicants holding foreign qualifications must submit an equivalence certificate from the Association of Indian Universities where the programme requires it.",
+              "Enrolment requires an Indian Student Visa; MAHE does not admit students holding a tourist visa."
+            ],
+            "notes": "MAHE states that Foreign/NRI admissions to this programme run on a first-come, merit basis from the 10+2 result with no entrance examination.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.manipal.edu/international.html"
+          },
+          "admissionsContent": {
+            "overview": "A four-year, eight-semester B.Tech taught in English at Manipal Institute of Technology. Foreign/NRI applicants are assessed on their qualifying examination rather than the Manipal Entrance Test, and choose a departmental specialisation after the second year.",
+            "eligibility": {
+              "intro": "MAHE publishes separate subject and grade requirements for Indian boards, GCE A Levels and the International Baccalaureate for this programme in its 2026 undergraduate eligibility document.",
+              "items": [
+                "Pass in 10+2 or equivalent with Physics, Mathematics and English as compulsory subjects, plus Chemistry, Biotechnology, Biology or an approved technical vocational subject as the optional subject.",
+                "Minimum 50 per cent aggregate taken together in Physics, Mathematics and one optional subject for the Indian-board route.",
+                "A Level applicants: Physics, Mathematics and one of Chemistry, Biotechnology, Biology or Computer Science at A Level, with English at AS Level or five passes at IGCSE, GCSE or GCE O Level including English.",
+                "A Level applicants need an average of grade D across Physics, Mathematics and one optional subject.",
+                "IB applicants: Diploma or Certificate with three Higher Level and three Standard Level subjects, at least 3 points in any counted subject and 24 points overall.",
+                "A technical vocational optional subject must relate to the chemical, civil, computer, electrical or mechanical streams.",
+                "Foreign qualifications must be recognised by the Association of Indian Universities as equivalent to Indian Class 12."
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the MAHE admissions portal and select the international category.",
+              "Upload eligibility documents, including the qualifying examination mark sheet and proof of foreign national, OCI, PIO, NRI or NRI-sponsored status.",
+              "Receive a provisional admission offer from the International Admissions Office once the documents are assessed.",
+              "Pay the first-year programme fee to confirm the seat and obtain the provisional admission order.",
+              "Submit final results, then receive the admission order.",
+              "Use the confirmed admission letter to apply for an Indian Student Visa at an Indian embassy or consulate.",
+              "Arrange hostel accommodation by writing to the MIT Manipal Chief Warden's office and remitting the hostel fee by wire transfer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent mark sheet and pass certificate",
+                "A Level, IGCSE, GCSE or GCE O Level statements of result where applicable",
+                "IB Diploma or Certificate transcript where applicable",
+                "Association of Indian Universities equivalence certificate for foreign qualifications",
+                "Documents in languages other than English translated by an authorised translator"
+              ],
+              "application": [
+                "Completed online application on the MAHE admissions portal",
+                "Passport copy showing personal and address pages",
+                "OCI or PIO card and a parent's passport copy for OCI or PIO applicants",
+                "Permanent Resident card, Indian mission letter or valid employment visa of the parent for NRI applicants",
+                "Notarised sponsorship and relationship affidavit for NRI-sponsored applicants",
+                "Proof of first-year fee payment"
+              ]
+            },
+            "deadlinesNote": "For the 2026 cycle MAHE listed 30 April 2026 as the last date to apply for B.Tech programmes, with orientation on 14 and 15 July for computer science streams and classes from 20 July 2026.",
+            "visaConsiderations": [
+              "An Indian Student Visa is required; MAHE does not admit international students on a tourist visa.",
+              "No Objection Certificate from the Government of India is not required for engineering and technology programmes.",
+              "Registration through the e-FRRO portal is required within 14 days of arrival in India.",
+              "Indian student-visa conditions prohibit employment or business activity during the course."
+            ]
+          },
+          "medium": "English throughout all eight semesters, including laboratory work, project work and assessment.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - orientation 14 and 15 July, classes from 20 July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Billed in four annual instalments. The 2026-27 Foreign/NRI schedule shows USD 9,450 tuition and USD 5,700 other fees in the first instalment, USD 28,350 tuition and USD 17,100 other fees across the remaining three, and a USD 200 refundable caution deposit, for a published total of USD 60,800. Hostel is separate at USD 1,450 a year for a deluxe air-conditioned double at the MIT campus, plus a USD 200 refundable deposit, a USD 140 air-conditioning advance and an INR 62,000 annual mess advance. A 20 per cent international merit scholarship, where awarded, reduces the programme fee only.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 to 4 - foundation",
+              "language": "English",
+              "details": "Programming, data structures, algorithms and computer organisation, with operating systems, databases, computer networks and theory of computation introduced."
+            },
+            {
+              "phase": "Semesters 5 to 8 - specialisation",
+              "language": "English",
+              "details": "A departmental specialisation is selected from robotics and artificial intelligence, cyber security, artificial intelligence and machine learning, data science, software engineering, gamification and digital twinning, or networks and IoT, alongside project and internship work."
+            }
+          ]
+        },
+        {
+          "slug": "mahe-manipal-btech-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.Tech in Mechanical Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4350,
+            "officialTotalTuitionAmount": 17400,
+            "annualTuitionUsd": 4350,
+            "totalTuitionUsd": 17400,
+            "verifiedAt": "2026-08-22",
+            "notes": "MAHE's 2026-27 Foreign/NRI fee schedule lists USD 4,350 tuition and USD 2,700 other fees per year across four annual instalments, plus a USD 200 refundable caution deposit, giving a published programme total of USD 28,400. Hostel, mess and personal costs are billed separately."
+          },
+          "officialProgramUrl": "https://www.manipal.edu/mit/program-list/btech/btech-mechanical-engineering.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians",
+              "Candidates sponsored by an NRI relative",
+              "OCI card holders issued after 4 March 2021",
+              "PIO card holders issued after 4 March 2021"
+            ],
+            "restrictions": [
+              "Foreign/NRI seats are capped at 15 per cent of the intake and are not equivalent to payment, management or reserved seats.",
+              "OCI and PIO card holders who secured the card before 4 March 2021 are treated as Indian nationals and must apply in the general category.",
+              "The general-category route runs on Manipal Entrance Test rank or the JEE Main Common Rank List and is separate from the Foreign/NRI merit route.",
+              "Foreign qualifications require an Association of Indian Universities equivalence certificate where the programme requires it.",
+              "Enrolment requires an Indian Student Visa; a tourist visa is not accepted."
+            ],
+            "notes": "Subject and grade requirements are identical to the other MIT Manipal B.Tech branches; only the fee differs.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.manipal.edu/international.html"
+          },
+          "admissionsContent": {
+            "overview": "A four-year, eight-semester B.Tech in Mechanical Engineering taught in English at Manipal Institute of Technology, with minor specialisations in product design, materials science and engineering, thermal engineering, industrial engineering and business management.",
+            "eligibility": {
+              "intro": "MAHE applies the same 2026 undergraduate eligibility table to every MIT Manipal B.Tech branch, with separate Indian board, A Level and IB routes.",
+              "items": [
+                "Pass in 10+2 or equivalent with Physics, Mathematics and English compulsory, plus Chemistry, Biotechnology, Biology or an approved technical vocational subject as the optional subject.",
+                "Minimum 50 per cent aggregate taken together in Physics, Mathematics and one optional subject for the Indian-board route.",
+                "A Level applicants: Physics, Mathematics and one approved optional subject at A Level, with English at AS Level or five passes at IGCSE, GCSE or GCE O Level including English.",
+                "A Level applicants need an average of grade D across Physics, Mathematics and one optional subject.",
+                "IB applicants: Diploma or Certificate with three Higher Level and three Standard Level subjects, at least 3 points in a counted subject and 24 points overall.",
+                "A technical vocational optional subject must relate to the chemical, civil, computer, electrical or mechanical streams."
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the MAHE admissions portal under the international category.",
+              "Upload the qualifying examination mark sheet and proof of foreign national, OCI, PIO, NRI or NRI-sponsored status.",
+              "Receive a provisional admission offer from the International Admissions Office.",
+              "Pay the first-year programme fee and receive the provisional admission order.",
+              "Submit final results and receive the admission order.",
+              "Apply for an Indian Student Visa using the confirmed admission letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent mark sheet and pass certificate",
+                "A Level, IGCSE, GCSE or GCE O Level statements of result where applicable",
+                "IB Diploma or Certificate transcript where applicable",
+                "Association of Indian Universities equivalence certificate for foreign qualifications"
+              ],
+              "application": [
+                "Completed online application on the MAHE admissions portal",
+                "Passport copy showing personal and address pages",
+                "OCI or PIO card and a parent's passport copy for OCI or PIO applicants",
+                "Permanent Resident card, Indian mission letter or valid employment visa of the parent for NRI applicants",
+                "Notarised sponsorship and relationship affidavit for NRI-sponsored applicants"
+              ]
+            },
+            "deadlinesNote": "For the 2026 cycle the last date to apply for B.Tech programmes was 30 April 2026, with orientation on 16 and 17 July for non-computer-science streams and classes from 20 July 2026.",
+            "visaConsiderations": [
+              "An Indian Student Visa is required; MAHE does not admit international students on a tourist visa.",
+              "A Government of India No Objection Certificate is not required for engineering and technology programmes.",
+              "e-FRRO registration is required within 14 days of arrival in India."
+            ]
+          },
+          "medium": "English across all eight semesters, including laboratory, workshop and project work.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - orientation 16 and 17 July, classes from 20 July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Four annual instalments. The 2026-27 Foreign/NRI schedule shows USD 4,350 tuition and USD 2,700 other fees in the first instalment, USD 13,050 tuition and USD 8,100 other fees across the remaining three, and a USD 200 refundable caution deposit, for a published total of USD 28,400. Accommodation at the MIT campus is billed in US dollars from USD 1,450 a year for a deluxe air-conditioned double, with an INR 62,000 annual mess advance charged in rupees. The 20 per cent international merit scholarship, where awarded, applies to the programme fee only.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 to 4 - core mechanical engineering",
+              "language": "English",
+              "details": "Engineering mathematics and sciences, mechanics, materials, thermodynamics and manufacturing fundamentals, with laboratory and workshop practice."
+            },
+            {
+              "phase": "Semesters 5 to 8 - minor specialisation and project work",
+              "language": "English",
+              "details": "Minor specialisation in product design, materials science and engineering, thermal engineering, industrial engineering or business management, with industry-linked project work and access to the Intel Unnati AI labs."
+            }
+          ]
+        },
+        {
+          "slug": "mahe-tapmi-manipal-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "MBA (Core), T. A. Pai Management Institute, Manipal",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 13800,
+            "officialTotalTuitionAmount": 27600,
+            "annualTuitionUsd": 13800,
+            "totalTuitionUsd": 27600,
+            "verifiedAt": "2026-08-22",
+            "notes": "MAHE's 2026-27 Foreign/NRI schedule lists USD 13,800 tuition and USD 4,550 other fees per year across two annual instalments, plus a USD 600 refundable caution deposit, for a published programme total of USD 37,300. TAPMI separately publishes a combined NRI figure of USD 18,300 per year and an alumni lifetime membership fee of INR 20,000."
+          },
+          "officialProgramUrl": "https://www.tapmi.edu.in/programs/mba-core/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a valid GMAT score",
+              "PIO card holders holding a valid GMAT score",
+              "Non-Resident Indians with a valid CAT, XAT, GMAT, NMAT, SNAP, ATMA, CMAT or MAT score",
+              "NRI-sponsored candidates",
+              "OCI card holders"
+            ],
+            "restrictions": [
+              "Foreign national and PIO applicants must hold a valid GMAT score; this programme is an exception to MAHE's general no-entrance-test rule for the Foreign/NRI category.",
+              "An IELTS score of 5.0 may be required of foreign national and PIO applicants.",
+              "TAPMI defines PIO status as excluding citizens of Pakistan and Bangladesh, who are therefore considered under the foreign national definition instead.",
+              "A bachelor's degree of at least three years from a recognised university with no less than 60 per cent aggregate is required; final-year students may apply but the admission is cancelled if the 60 per cent threshold is not met.",
+              "OCI and PIO card holders who secured the card before 4 March 2021 are treated as Indian nationals for admission purposes.",
+              "Enrolment requires an Indian Student Visa; a tourist visa is not accepted."
+            ],
+            "notes": "TAPMI accepts NRI, NRI-sponsored, foreign national and OCI applications for specified programmes only, and states there is no management quota.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.tapmi.edu.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, six-term full-time MBA taught in English at T. A. Pai Management Institute, a constituent unit of MAHE on the Manipal campus. The MBA programme holds AACSB and AMBA accreditation. International selection is profile-based rather than purely test-score driven.",
+            "eligibility": {
+              "intro": "TAPMI publishes separate eligibility criteria for NRI candidates and for PIO and foreign national candidates, on top of a common degree requirement.",
+              "items": [
+                "A graduate degree from a recognised university with not less than 60 per cent aggregate marks.",
+                "Final-year students may apply, but admission is cancelled if the final result falls below 60 per cent.",
+                "PIO and foreign national applicants: a valid GMAT score is compulsory.",
+                "PIO and foreign national applicants: an IELTS score of 5.0 where required.",
+                "NRI applicants: a valid CAT, XAT, GMAT, NMAT, SNAP, ATMA, CMAT or MAT score.",
+                "Foreign degrees require an Association of Indian Universities equivalence certificate where MAHE requires one for a postgraduate programme."
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through TAPMI's official application portal and pay the non-refundable application fee, listed as USD 30 for foreign nationals.",
+              "Submit the entrance-test score, academic record, work-experience details and status documents for the relevant category.",
+              "Wait for profile-based shortlisting, which weighs the test score, academic profile, work experience and extra-curricular record.",
+              "Attend the group discussion, written ability test and personal interview round.",
+              "Receive the provisional admission offer, then complete fee payment and admission formalities through MAHE's international admissions process."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Degree certificate and mark sheets for all years or semesters of the bachelor's degree",
+                "Valid GMAT score report for foreign national and PIO applicants",
+                "IELTS score report where required",
+                "Association of Indian Universities equivalence certificate for foreign degrees where required",
+                "Work-experience certificates where claimed"
+              ],
+              "application": [
+                "Completed online TAPMI application and paid application fee",
+                "Passport copy showing personal and address pages",
+                "OCI or PIO card and a parent's passport copy for OCI or PIO applicants",
+                "Permanent Resident card, Indian mission letter or valid employment visa of the parent for NRI applicants",
+                "Notarised sponsorship and relationship affidavit for NRI-sponsored applicants"
+              ]
+            },
+            "deadlinesNote": "TAPMI ran group discussions and personal interviews for the 2026-28 batch in February and March 2026, and lists commencement of MBA first-year Term I as June or July 2026, described as tentative.",
+            "visaConsiderations": [
+              "An Indian Student Visa is required; a tourist visa is not accepted for enrolment.",
+              "A Government of India No Objection Certificate is not required for MBA programmes.",
+              "e-FRRO registration is required within 14 days of arrival in India.",
+              "Indian student-visa conditions prohibit employment or business activity, which limits paid internships inside India."
+            ]
+          },
+          "medium": "English across all six terms, including case discussion, group work and the summer internship report.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June or July - Term I commencement for the 2026-28 batch, listed as tentative"
+          ],
+          "intakeCodes": [
+            "june",
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Two annual instalments. The MAHE 2026-27 Foreign/NRI schedule shows USD 13,800 tuition and USD 4,550 other fees in each instalment, plus a USD 600 refundable caution deposit, for a published total of USD 37,300. TAPMI's own admissions page states a combined NRI tuition figure of USD 18,300 per year plus an INR 20,000 alumni lifetime membership fee, and notes that hostel and mess charges for the TAPMI campus are published separately. The Dr. Ramdas M. Pai Scholarships offer up to a full tuition-fee waiver on merit across TAPMI MBA programmes, assessed separately from the MAHE international merit scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Terms I to III - core management",
+              "language": "English",
+              "details": "Common core covering accounting, economics, marketing, operations, finance, organisational behaviour and analytics, followed by a summer internship."
+            },
+            {
+              "phase": "Terms IV to VI - electives and domain specialisation",
+              "language": "English",
+              "details": "Elective domains including finance, marketing, human resource management, operations and analytics, with options such as investment banking, financial modelling, HR analytics and independent study courses."
+            }
+          ]
+        },
+        {
+          "slug": "mahe-manipal-bachelor-of-physiotherapy",
+          "canonicalCourseSlug": "bpt",
+          "officialTitle": "Bachelor of Physiotherapy (B.PT)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4350,
+            "officialTotalTuitionAmount": 17400,
+            "annualTuitionUsd": 4350,
+            "totalTuitionUsd": 17400,
+            "verifiedAt": "2026-08-22",
+            "notes": "MAHE's 2026-27 Foreign/NRI schedule lists this programme at five years with four fee instalments: USD 4,350 tuition and USD 1,500 other fees per instalment, plus a USD 200 refundable caution deposit, for a published programme total of USD 23,600."
+          },
+          "officialProgramUrl": "https://www.manipal.edu/soahs-manipal/program-list/bpt-bachelors-of-physiotherapy-soahs-manipal-manipal-univ.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians",
+              "Candidates sponsored by an NRI relative",
+              "OCI card holders issued after 4 March 2021",
+              "PIO card holders issued after 4 March 2021"
+            ],
+            "restrictions": [
+              "Foreign/NRI seats are capped at 15 per cent of the intake and are not equivalent to payment, management or reserved seats.",
+              "General-category applicants must take the Manipal Entrance Test, with the merit list weighted 50 per cent to the test and 50 per cent to Class 12 marks; the Foreign/NRI route published by MAHE does not use an entrance examination.",
+              "OCI and PIO card holders who secured the card before 4 March 2021 are treated as Indian nationals and must apply in the general category.",
+              "Entry requirements may change under directions from the National Commission for Allied and Healthcare Professions.",
+              "Enrolment requires an Indian Student Visa; a tourist visa is not accepted.",
+              "Practice rights in an applicant's home country depend on that country's own regulator and are not conferred by the degree."
+            ],
+            "notes": "Whether this allied-health programme falls under the Government of India No Objection Certificate requirement applied to medicine, dentistry and nursing is determined by MAHE's International Admissions Office.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.manipal.edu/international.html"
+          },
+          "admissionsContent": {
+            "overview": "A physiotherapy degree at Manipal College of Health Professions taught in English, structured as four years of coursework followed by a compulsory internship, with supervised practice using hospital facilities on the Manipal campus.",
+            "eligibility": {
+              "intro": "MAHE's 2026 undergraduate eligibility document sets separate Indian board, A Level and IB requirements for the Bachelor of Physiotherapy and the Bachelor of Occupational Therapy.",
+              "items": [
+                "Pass in 10+2 or equivalent with Physics, Chemistry, Biology and English from a recognised board.",
+                "Minimum 50 per cent aggregate marks in Physics, Chemistry and Biology taken together.",
+                "A Level applicants: Physics, Chemistry and Biology at A Level, with English at AS Level or five passes at IGCSE, GCSE or GCE O Level including English.",
+                "A Level applicants need an average of grade D across Physics, Chemistry and Biology.",
+                "IB applicants: English, Physics, Chemistry and Biology, with an average of 4 points in Physics, Chemistry and Biology and 24 points overall.",
+                "IB applicants need at least two science subjects at Higher Level, with the third science subject and English at Higher or Standard Level.",
+                "Applicants are directed to check the minimum grade requirements for professional registration in their own country before applying."
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the MAHE admissions portal and select the international category.",
+              "Upload the Class 12 or equivalent mark sheet and proof of foreign national, OCI, PIO, NRI or NRI-sponsored status.",
+              "Receive a provisional admission offer from the International Admissions Office.",
+              "Pay the first-year programme fee and receive the provisional admission order.",
+              "Submit final results and receive the admission order.",
+              "Apply for an Indian Student Visa with the confirmed admission letter, and check with the International Admissions Office whether a Government of India No Objection Certificate applies."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or equivalent mark sheet showing Physics, Chemistry, Biology and English",
+                "A Level, IGCSE, GCSE or GCE O Level statements of result where applicable",
+                "IB Diploma or Certificate transcript where applicable",
+                "Association of Indian Universities equivalence certificate for foreign qualifications",
+                "Translations by an authorised translator for documents not in English"
+              ],
+              "application": [
+                "Completed online application on the MAHE admissions portal",
+                "Passport copy showing personal and address pages",
+                "OCI or PIO card and a parent's passport copy for OCI or PIO applicants",
+                "Permanent Resident card, Indian mission letter or valid employment visa of the parent for NRI applicants",
+                "Notarised sponsorship and relationship affidavit for NRI-sponsored applicants"
+              ]
+            },
+            "deadlinesNote": "For the 2026 cycle MAHE listed 15 July 2026 as the last date to apply for all Manipal College of Health Professions bachelor's programmes, with orientation on 20 July and classes from 21 July 2026.",
+            "visaConsiderations": [
+              "An Indian Student Visa is required; MAHE does not admit international students on a tourist visa.",
+              "MAHE's International Admissions Office applies for the Government of India No Objection Certificate for health science students after enrolment where it applies.",
+              "e-FRRO registration is required within 14 days of arrival in India.",
+              "Indian student-visa conditions prohibit paid employment, including paid clinical work, during the course."
+            ]
+          },
+          "medium": "English for lectures, laboratory work, clinical instruction and assessment.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - orientation 20 July, classes from 21 July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Four annual instalments spread across a five-year programme. The 2026-27 Foreign/NRI schedule shows USD 4,350 tuition and USD 1,500 other fees in the first instalment, USD 13,050 tuition and USD 4,500 other fees across the remaining three, and a USD 200 refundable caution deposit, for a published total of USD 23,600. Hostel and mess costs at the health sciences campus are billed separately, with the annual mess advance at INR 62,000. The 20 per cent MAHE international merit scholarship covers programme fees for eligible international-category students and does not exclude physiotherapy.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 to 4 - coursework and supervised practice",
+              "language": "English",
+              "details": "Basic and applied sciences followed by clinical physiotherapy across areas including musculoskeletal, neurological, cardiorespiratory, postoperative, intensive care, paediatric, women's health, care of the elderly and occupational health practice."
+            },
+            {
+              "phase": "Final phase - compulsory internship",
+              "language": "English",
+              "details": "A compulsory internship after the coursework years, which is why MAHE lists the programme at five years in its fee and duration schedules."
+            }
+          ]
+        },
+        {
+          "slug": "mahe-manipal-ba-media-and-communication",
+          "canonicalCourseSlug": "bachelor-media-communication",
+          "officialTitle": "B.A. Media & Communication",
+          "durationYears": 3,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 2750,
+            "officialTotalTuitionAmount": 8250,
+            "annualTuitionUsd": 2750,
+            "totalTuitionUsd": 8250,
+            "verifiedAt": "2026-08-22",
+            "notes": "MAHE's 2026-27 Foreign/NRI schedule lists the three-year B.A. Media & Communication at USD 2,750 tuition and USD 1,700 other fees per year across three instalments, plus a USD 200 refundable caution deposit, for a published total of USD 13,550. The four-year honours variant is listed separately at USD 18,000."
+          },
+          "officialProgramUrl": "https://www.manipal.edu/soc/program-list/ba-media-and-communication.html",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians",
+              "Candidates sponsored by an NRI relative",
+              "OCI card holders issued after 4 March 2021",
+              "PIO card holders issued after 4 March 2021"
+            ],
+            "restrictions": [
+              "Foreign/NRI seats are capped at 15 per cent of the intake and are not equivalent to payment, management or reserved seats.",
+              "Domestic applicants sit a CUET (UG) or MECAT test and a personal interview; Manipal Institute of Communication states that international students and NRIs are exempt from the admission test and are assessed instead on academic and co-curricular record by MAHE's International Admissions Office.",
+              "OCI and PIO card holders who secured the card before 4 March 2021 are treated as Indian nationals and must apply in the general category.",
+              "Progression to the fourth honours year is conditional on a cumulative grade point average of 7.5 or above across the first six semesters.",
+              "Enrolment requires an Indian Student Visa; a tourist visa is not accepted."
+            ],
+            "notes": "The honours year is a progression option rather than a guaranteed part of the three-year award, and MAHE lists the four-year honours variant as a separate fee line.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.manipal.edu/soc/program-list/ba-media-and-communication.html"
+          },
+          "admissionsContent": {
+            "overview": "A three-year full-time media and communication degree taught in English at Manipal Institute of Communication, covering journalism, advertising, public relations, digital media and production, with an optional fourth honours year for students reaching a cumulative grade point average of 7.5.",
+            "eligibility": {
+              "intro": "Manipal Institute of Communication publishes one academic threshold for domestic applicants and separate A Level and IB routes, with international applicants exempt from the admission test.",
+              "items": [
+                "Pass in 10+2 or Pre-University examination from a recognised institute or board with a minimum of 45 per cent aggregate marks.",
+                "A Level applicants: minimum two or three subjects at A Level plus five passes at IGCSE or GCSE including English, with an average of grade D.",
+                "IB applicants: Diploma or Certificate with three Higher Level and three Standard Level subjects and 24 points overall, with at least 3 points in any counted subject.",
+                "International and NRI applicants are assessed on academic and co-curricular record by MAHE's International Admissions Office and are exempt from the CUET (UG) or MECAT admission test.",
+                "Foreign qualifications must be recognised by the Association of Indian Universities as equivalent to Indian Class 12 where required."
+              ]
+            },
+            "applicationSteps": [
+              "Apply online through the MAHE admissions portal and select the international category.",
+              "Upload the Class 12 or equivalent result and proof of foreign national, OCI, PIO, NRI or NRI-sponsored status for review by the International Admissions Office.",
+              "Receive a provisional admission offer based on the academic and co-curricular assessment.",
+              "Pay the first-year programme fee and receive the provisional admission order.",
+              "Submit final results and receive the admission order, then apply for the Indian Student Visa."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "10+2 or Pre-University mark sheet and pass certificate",
+                "A Level, IGCSE or GCSE statements of result where applicable",
+                "IB Diploma or Certificate transcript where applicable",
+                "Association of Indian Universities equivalence certificate for foreign qualifications where required",
+                "Evidence of co-curricular achievements considered in the international assessment"
+              ],
+              "application": [
+                "Completed online application on the MAHE admissions portal",
+                "Passport copy showing personal and address pages",
+                "OCI or PIO card and a parent's passport copy for OCI or PIO applicants",
+                "Permanent Resident card, Indian mission letter or valid employment visa of the parent for NRI applicants",
+                "Notarised sponsorship and relationship affidavit for NRI-sponsored applicants"
+              ]
+            },
+            "deadlinesNote": "Manipal Institute of Communication listed 31 July 2026 as the last date to apply for foreign students in the 2026 cycle, while MAHE's dates page listed orientation on 21 July and class commencement from 22 July 2026 as tentative.",
+            "visaConsiderations": [
+              "An Indian Student Visa is required; a tourist visa is not accepted for enrolment.",
+              "A Government of India No Objection Certificate is not required for media and communication programmes.",
+              "e-FRRO registration is required within 14 days of arrival in India.",
+              "Indian student-visa conditions prohibit employment, so paid media work inside India during the course is not permitted."
+            ]
+          },
+          "medium": "English for lectures, studio production, workshops and assessment.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - orientation 21 July, classes from 22 July in the 2026 cycle, applications open to 31 July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Three annual instalments for the three-year award. The 2026-27 Foreign/NRI schedule shows USD 2,750 tuition and USD 1,700 other fees in the first instalment, USD 5,500 tuition and USD 3,400 other fees across the remaining two, and a USD 200 refundable caution deposit, for a published total of USD 13,550. Students who progress to the fourth honours year move onto the separately listed four-year fee line, published at USD 18,000 in total. Hostel and mess costs are billed separately, with the annual mess advance at INR 62,000.",
+          "teachingPhases": [
+            {
+              "phase": "Year 1 - foundations",
+              "language": "English",
+              "details": "Communication theory and practice, media laws and ethics, fundamentals of internet and new media, and introductory production work."
+            },
+            {
+              "phase": "Years 2 and 3 - skills and professional application",
+              "language": "English",
+              "details": "Advertising and public relations, integrated marketing communication, photojournalism, scripting for broadcast media, video editing and compositing, film techniques, media research, plus internships and capstone projects."
+            },
+            {
+              "phase": "Optional Year 4 - honours",
+              "language": "English",
+              "details": "Advanced research and specialised study for students with a cumulative grade point average of 7.5 or above across the first six semesters, leading to the B.A. (Hons) award."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "identity",
+      "claimText": "MAHE started operations in 1953 with a self-financing medical college, was declared a Deemed to be University by the Government of India in June 1993, and was notified as an Institution of Eminence Deemed to be University on 14 October 2020.",
+      "status": "verified",
+      "sourceLabel": "MAHE - History",
+      "sourceUrl": "https://www.manipal.edu/mu/about-us/history.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "Some third-party sources date Institution of Eminence status to 2018. The UGC Institution of Eminence list at https://ioe.ugc.ac.in/Home/ListofIOE records the date of notification as 14.10.2020, which is authoritative and is used here; regulator verification 2026-08-22 by claude-india-regverify-20260822."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "campusLifestyle",
+      "claimText": "Over 35,000 students from more than 60 nations study at MAHE Manipal, with nearly 3,000 faculty, and campus facilities include the MARENA indoor sports complex with five badminton courts, four squash courts, three tennis courts, a basketball court, a gymnasium and a walking track, one of Asia's largest health sciences libraries, an anatomy museum, a simulation laboratory with computer-driven manikins and a business incubation centre.",
+      "status": "verified",
+      "sourceLabel": "MAHE - History and campus overview",
+      "sourceUrl": "https://www.manipal.edu/mu/about-us/history.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "The MAHE Scholarships 2026 document states a higher figure of 40,000+ students from 65+ nations. The lower, older figure from the history page is used to stay conservative; reconcile at next review."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "recognitionBadges",
+      "claimText": "The NAAC accreditation-status register records Manipal Academy of Higher Education at Grade A++ with a CGPA of 3.65 in Cycle 3, declared on 31 May 2022 (AISHE U-0234, Karnataka).",
+      "status": "verified",
+      "sourceLabel": "NAAC - Accreditation Status register, institutions with valid accreditation",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822 (research/india-regulator-verification-2026-08-22.md): NAAC valid-accreditation workbook as on 14-08-2025, corroborated by Standing Committee PDF 108SC_HSC.pdf of 31 May 2022. The register publishes a DECLARATION date, not an expiry date - the earlier 30 May 2027 'valid to' date taken from the MAHE certificate link has been removed and must not be reinstated. Also corroborated by the UGC IoE portal, which prints A++ / 3.65 against MAHE."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "recognitionBadges",
+      "claimText": "The National Board of Accreditation register lists Manipal Institute of Technology, Manipal in the Engineering UG Tier I (Washington Accord) register, with Chemical, Civil, Computer Science and Engineering, Electrical and Electronics, Electronics and Communication, Mechanical, Biotechnology and Biomedical accredited to 30 June 2028; Manipal College of Pharmaceutical Sciences accredited in Pharmacy UG to 30 June 2028; and T. A. Pai Management Institute accredited in Management PG, with the MBA running from 1 January 2026 to 31 December 2031.",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - accreditation programme register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822 (research/india-regulator-verification-2026-08-22.md). This overturns the earlier hold: MAHE's own mandatory disclosure lists NBA status as 'Nil', which the regulator register contradicts. The NBA register is cumulative history, so only rows whose Accreditation Period extends past the checked date are badged. Electronics and Instrumentation and the PG engineering programmes run only to 30-06-2027, and Aeronautical and Automobile to 31-12-2028, so they are not folded into the 2028 badge wording."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "recognitionBadges",
+      "claimText": "The UGC Institution of Eminence list records Manipal Academy of Higher Education as a notified private Institution of Eminence with a date of notification of 14 October 2020.",
+      "status": "verified",
+      "sourceLabel": "UGC Institution of Eminence - List of IoE institutions",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822 (research/india-regulator-verification-2026-08-22.md). The UGC portal publishes only notified IoEs with their notification date; a Letter of Intent is a pre-notification step and confers no status. MAHE is one of twelve notified institutions and one of four private ones."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "recognitionBadges",
+      "claimText": "Manipal Academy of Higher Education-Manipal (IR-O-U-0234) is ranked 3rd in the University category of the NIRF India Rankings 2025 with a score of 69.25.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 - University category, Ministry of Education",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "Ranking year must always be stated. Re-check when the next India Rankings cycle publishes."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "recognitionBadges",
+      "claimText": "MAHE holds UGC Graded Autonomy Category I status under a UGC letter dated 4 October 2023, and is an ISO 9001:2015, ISO 14001:2015 and ISO 50001:2018 certified deemed university.",
+      "status": "verified",
+      "sourceLabel": "MAHE UGC Public Self-Disclosure and History page",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/mahe/compliance/UGC%2004_10_2023-Graded%20autonomy%20Cat_I.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "The graded-autonomy letter is linked from the UGC Public Self-Disclosure PDF at manipal.edu; the ISO certifications are stated on the MAHE history page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "recognitionBadges",
+      "claimText": "T. A. Pai Management Institute, a constituent unit of MAHE, holds AACSB accreditation, and its MBA programme is also accredited by the Association of MBAs.",
+      "status": "verified",
+      "sourceLabel": "AACSB accreditation record - T. A. Pai Management Institute",
+      "sourceUrl": "https://www.aacsb.edu/accredited/t/t-a-pai-management-institute",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "Corroborated by TAPMI's own MBA programme page, which names AACSB, AMBA and NBA. The AACSB directory listing is the independent confirmation. The NBA element of TAPMI's claim is no longer carried here: it is verified independently against the NBA Management PG register, with the MBA period 1 January 2026 to 31 December 2031, in the separate NBA evidence record."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "practicalExposure",
+      "claimText": "In MAHE's data submission for NIRF India Rankings 2025, 1,650 of 2,832 students graduating from four-year undergraduate programmes in 2023-24 were placed, 591 were selected for higher studies, and the median annual salary of placed graduates was INR 800,000.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 - data submitted by Manipal Academy of Higher Education",
+      "sourceUrl": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/University/IR-O-U-0234.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "Institution-wide across all four-year UG programmes, not programme-specific. The same submission records 447 students from outside India across all programme lengths. Never present as a guaranteed outcome."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "hostelOverview",
+      "claimText": "MAHE's 2026 hostel fee schedule lists Foreign/NRI rates at the MIT Manipal campus of USD 1,450 a year for a deluxe air-conditioned double with attached bath, USD 1,590 for an air-conditioned double in the girls' hostel and USD 2,030 for a single air-conditioned room, plus a USD 200 deposit and a USD 140 to USD 200 air-conditioning electricity advance, with an annual mess advance of INR 62,000. Foreign/NRI students apply for accommodation by email to the MIT Chief Warden's office, are told their allotment about 15 days before class commencement and remit the fee by wire transfer.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Prospectus 2026, Section 3: Schedule of Hostel Facilities Fees",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026%20Prospectus%20File%2077_Section%203%20Hostel%20Fees_20.07.2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Health sciences campus hostels are billed in Indian rupees on a different table, so MCHP students should not be quoted the MIT US-dollar rates. Re-check when the 2027 prospectus publishes."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "dietarySupport",
+      "claimText": "Mess membership is compulsory for all first-year undergraduate students living in MAHE hostels, campus messes are run by MAHE-approved vendors and students may choose among them, and the annual mess advance for 2026 entrants is INR 62,000.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Prospectus 2026, Section 3: Schedule of Hostel Facilities Fees",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026%20Prospectus%20File%2077_Section%203%20Hostel%20Fees_20.07.2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "studentSupport",
+      "claimText": "MAHE's International Admissions Office at intladm@manipal.edu handles Foreign/NRI admissions, helps foreign students obtain a student visa from Indian embassies and consulates and the Government of India No Objection Certificate for health science courses, and assists with FRRO registration, the Registration Certificate and later visa extensions.",
+      "status": "verified",
+      "sourceLabel": "MAHE - International Admissions: Foreign / NRI Category",
+      "sourceUrl": "https://www.manipal.edu/international.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "safetyOverview",
+      "claimText": "MAHE publishes an anti-ragging squad, a gender sensitisation and prevention policy and an ombudsperson channel, and signposts the Tele MANAS toll-free helpline for students. International students must hold a valid Registration Certificate or Residential Permit to travel abroad or within India and must surrender it to immigration on final departure.",
+      "status": "verified",
+      "sourceLabel": "MAHE - International Admissions and About Us navigation",
+      "sourceUrl": "https://www.manipal.edu/international.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "whyChoose",
+      "claimText": "MAHE allocates 15 per cent of seats under the Foreign / NRI category, states that these seats are not equivalent to payment, management or reserved seats, and states that all Foreign/NRI/NRI-sponsored admissions to UG and PG programmes other than the listed exceptions are on a first-come, first-served merit basis with no entrance examinations.",
+      "status": "verified",
+      "sourceLabel": "MAHE - International Admissions: Foreign / NRI Category, Who Can Apply",
+      "sourceUrl": "https://www.manipal.edu/international.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Listed exceptions are MBBS, BDS, MD, MS, MDS, DM, MCh (NEET plus DGHS/MCC/KEA/JCECEB counselling) and B.Arch (NATA). TAPMI's MBA is a further practical exception documented on TAPMI's own admissions page and in the MAHE PG eligibility PDF."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "thingsToConsider",
+      "claimText": "Under the Supreme Court decision dated 3 February 2023 in Writ Petition (Civil) 891/2021, OCI and PIO candidates who secured the card before 4 March 2021 are considered Indian nationals, and those who secured it after that date are considered for admission under the Foreign category only.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Eligibility & Admissions 2026 and PG Eligibility 2026 document",
+      "sourceUrl": "https://www.manipal.edu/mu/admission/eligibility_mahe.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Stated on both the eligibility landing page and page 53 of the PG Eligibility 2026 PDF, which is dated 23 July 2026."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "faq",
+      "claimText": "MAHE awards a Scholar-category scholarship of a 20 per cent programme-fee waiver to students admitted under the International Students category for the entire programme duration, excluding B.Sc. Nursing, MBBS, BDS, MD, MS, MDS, DM, MCh and PhD programmes, and excluding students admitted through Study in India, COMPEX or ICCR routes who already receive a subsidised fee structure.",
+      "status": "verified",
+      "sourceLabel": "MAHE Scholarships 2026 guidelines, section 22",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/mahe_scholarships_2026_v17.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Continuation depends on clearing all subjects in the previous year's university examinations before the fee due date; the waiver is forfeited on disciplinary grounds and repayable if the student leaves before completing the course."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "faq",
+      "claimText": "MAHE states that international students must be on campus only on a Student Visa, that students on a tourist visa cannot be admitted, that all international students at the Manipal, Mangalore, Bangalore and Jamshedpur campuses must register online through the e-FRRO portal within 14 days of arrival in India, and that the Residential Permit is issued for a maximum of one year or until visa expiry, whichever is earlier.",
+      "status": "verified",
+      "sourceLabel": "MAHE - International Admissions: visa, registration and residential permit rules",
+      "sourceUrl": "https://www.manipal.edu/international.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Corroborated by the Bureau of Immigration registration-requirements page, which sets the same 14-day rule for student visas valid over 180 days and records nationality-specific exceptions."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "publicField": "faq",
+      "claimText": "MAHE states that foreign students admitted to health science courses such as medical, dental and nursing require a No Objection Certificate from the Government of India, which the International Admissions Office applies for after the students register and classes begin, and that under a resolution dated 1 June 2004 no such certificate is required for engineering and technology, architecture and town planning, pharmacy, applied arts, MBA, MCA or hotel management and catering technology programmes.",
+      "status": "verified",
+      "sourceLabel": "MAHE - International Admissions frequently asked questions",
+      "sourceUrl": "https://www.manipal.edu/international.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "MAHE names medical, dental and nursing explicitly. Allied-health programmes such as physiotherapy are not named either way, so the page routes that question to the International Admissions Office rather than asserting a rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "Entry requires a pass in 10+2 or equivalent with Physics, Mathematics and English compulsory plus an approved optional subject and 50 per cent aggregate across Physics, Mathematics and one optional subject; A Level applicants need Physics, Mathematics and an approved optional subject with English at AS Level or five IGCSE/GCSE/O Level passes including English and an average grade of D; IB applicants need three Higher Level and three Standard Level subjects with 24 points overall.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Eligibility & Admission Process 2026, Undergraduate programs under General / Foreign / NRI category",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "MIT Manipal B.Tech table, pages 23-24. The 75 per cent aggregate and grade A variants apply only to the JEE Main Common Rank List route used by general-category applicants."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "The Foreign/NRI admission process for this programme is: apply online, submit eligibility documents, receive a provisional admission offer, pay the fee, receive the provisional admission order, submit final results and receive the admission order. No entrance examination is part of that route.",
+      "status": "verified",
+      "sourceLabel": "MAHE - UG Eligibility 2026 Foreign/NRI process column and International Admissions page",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "The MET and JEE Main columns in the same table apply to general-category admission. Corroborated by manipal.edu/international.html, which states there are no entrance examinations for the Foreign/NRI category outside the NEET and NATA exceptions."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "For the 2026 cycle, 30 April 2026 was the last date to apply for B.Tech programmes at MIT Manipal, with orientation on 14 and 15 July for computer science streams and tentative class commencement on 20 July 2026.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Admission Dates to Remember 2026",
+      "sourceUrl": "https://www.manipal.edu/mu/admission/dates-to-remember.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-03-01",
+      "internalNotes": "Corroborated by the programme page's own key-dates block, which showed 30 April 2026 and, at the checked date, an admissions-closed state for both the Indian and international application buttons."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "The 2026-27 Foreign/NRI fee schedule lists B.Tech in Computer Science & Engineering at MIT Manipal as four years with four instalments, USD 9,450 first-instalment tuition, USD 5,700 first-instalment other fees, USD 28,350 and USD 17,100 across the remaining instalments, a USD 200 refundable caution deposit and a batch total of USD 60,800.",
+      "status": "verified",
+      "sourceLabel": "MAHE - 2026-27 Foreign / NRI Category Course Fees schedule (as on 18 June 2026)",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20NRI%20Fees%20as%20on%2018-06-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "The programme page quotes the general-category rupee figure of INR 24,42,000; the US-dollar schedule is the correct one for Foreign/NRI applicants and is used here."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "MAHE applies the same undergraduate eligibility table to every MIT Manipal B.Tech branch: 10+2 with Physics, Mathematics and English compulsory plus an approved optional subject and 50 per cent aggregate across Physics, Mathematics and one optional subject, with equivalent A Level and IB routes published alongside.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Eligibility & Admission Process 2026, Undergraduate programs under General / Foreign / NRI category",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "B.Tech in Mechanical Engineering is listed in the same grouped eligibility block as the other MIT Manipal branches, pages 23-25."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "Foreign/NRI applicants to this programme apply online, submit eligibility documents, receive a provisional admission offer, pay the fee, receive the provisional admission order and submit final results, without an entrance examination.",
+      "status": "verified",
+      "sourceLabel": "MAHE - UG Eligibility 2026 Foreign/NRI process column and International Admissions page",
+      "sourceUrl": "https://www.manipal.edu/international.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "For the 2026 cycle, 30 April 2026 was the last date to apply for B.Tech programmes at MIT Manipal, with orientation on 16 and 17 July for non-computer-science streams and tentative class commencement on 20 July 2026.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Admission Dates to Remember 2026",
+      "sourceUrl": "https://www.manipal.edu/mu/admission/dates-to-remember.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-03-01"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-btech-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "The 2026-27 Foreign/NRI fee schedule lists B.Tech in Mechanical Engineering at MIT Manipal as four years with four instalments, USD 4,350 first-instalment tuition, USD 2,700 first-instalment other fees, USD 13,050 and USD 8,100 across the remaining instalments, a USD 200 refundable caution deposit and a batch total of USD 28,400.",
+      "status": "verified",
+      "sourceLabel": "MAHE - 2026-27 Foreign / NRI Category Course Fees schedule (as on 18 June 2026)",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20NRI%20Fees%20as%20on%2018-06-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-tapmi-manipal-mba",
+      "publicField": "eligibility",
+      "claimText": "For the Foreign category, TAPMI requires a bachelor's degree from a recognised university with not less than 60 per cent aggregate marks together with a compulsory GMAT score and an IELTS score of 5.0 where required; NRI candidates may use a valid CAT, XAT, GMAT, NMAT, SNAP, ATMA, CMAT or MAT score.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Eligibility & Admission Process 2026, Postgraduate programs under General / Foreign / NRI category",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/PG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Pages 50-51, document dated 23 July 2026. Corroborated by TAPMI's own admissions page, which repeats the GMAT-compulsory and IELTS 5.0 rule for PIO and foreign nationals and defines PIO as excluding citizens of Pakistan and Bangladesh."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-tapmi-manipal-mba",
+      "publicField": "admissions",
+      "claimText": "TAPMI shortlists NRI and PIO candidates on profile - entrance-test score, academic profile, work experience and extra-curricular record - then runs a group discussion, written ability test and personal interview before the provisional admission offer, with the application fee for foreign nationals set at USD 30 and no management quota.",
+      "status": "verified",
+      "sourceLabel": "TAPMI - Admissions: application process and eligibility",
+      "sourceUrl": "https://www.tapmi.edu.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "The MAHE PG eligibility PDF sets out the parallel Foreign/NRI document and fee-payment steps handled by MAHE's International Admissions Office."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-tapmi-manipal-mba",
+      "publicField": "intake",
+      "claimText": "TAPMI lists commencement of MBA first-year Term I for the 2026-28 batch as June or July 2026, described as tentative, with group discussions and personal interviews conducted in February and March 2026.",
+      "status": "verified",
+      "sourceLabel": "TAPMI - Admissions: important dates for the 2026-28 batch",
+      "sourceUrl": "https://www.tapmi.edu.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-03-01",
+      "internalNotes": "MAHE's own Dates to Remember 2026 page does not list TAPMI Manipal, so the institute page is the only date source; treat the month as tentative until the 2027 cycle publishes."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-tapmi-manipal-mba",
+      "publicField": "fee",
+      "claimText": "The 2026-27 Foreign/NRI fee schedule lists the MBA at TAPMI Manipal as two years with two instalments, USD 13,800 tuition and USD 4,550 other fees per instalment, a USD 600 refundable caution deposit and a batch total of USD 37,300.",
+      "status": "verified",
+      "sourceLabel": "MAHE - 2026-27 Foreign / NRI Category Course Fees schedule (as on 18 June 2026)",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20NRI%20Fees%20as%20on%2018-06-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "TAPMI's own admissions page publishes a combined NRI figure of USD 18,300 per year against the schedule's USD 18,350 combined per-year total. The MAHE schedule is more granular and more recently dated, so it is used for the structured fee; the TAPMI figure is disclosed in the public fee note."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-bachelor-of-physiotherapy",
+      "publicField": "eligibility",
+      "claimText": "Entry to the Bachelor of Physiotherapy requires a pass in 10+2 or equivalent with Physics, Chemistry, Biology and English and a minimum of 50 per cent aggregate in Physics, Chemistry and Biology; A Level applicants need those three sciences at A Level with English at AS Level or five IGCSE/GCSE/O Level passes including English and an average grade of D; IB applicants need an average of 4 points in the three sciences and 24 points overall with at least two sciences at Higher Level.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Eligibility & Admission Process 2026, Undergraduate programs under General / Foreign / NRI category",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Page 13-14 block covering Bachelor of Occupational Therapy and Bachelor of Physiotherapy, which also notes the requirements may change under directions from the National Commission for Allied and Healthcare Professions and advises candidates to check registration grade requirements in their own country."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-bachelor-of-physiotherapy",
+      "publicField": "admissions",
+      "claimText": "General-category admission to the Bachelor of Physiotherapy uses the Manipal Entrance Test with a merit list weighted 50 per cent to the test and 50 per cent to Class 12 marks, while the Foreign/NRI column of the same document sets out a document-based route of online application, eligibility document submission, provisional admission offer, fee payment, provisional admission order and submission of final results.",
+      "status": "verified",
+      "sourceLabel": "MAHE - UG Eligibility 2026: BPT admission process columns",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "The MCHP programme page describes only the MET route because it is written for domestic applicants; the international route is documented in the eligibility PDF and on manipal.edu/international.html. This conflict must be stated explicitly rather than resolved silently."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-bachelor-of-physiotherapy",
+      "publicField": "intake",
+      "claimText": "For the 2026 cycle, 15 July 2026 was the last date to apply for all bachelor's programmes at Manipal College of Health Professions, with orientation on 20 July and tentative class commencement on 21 July 2026.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Admission Dates to Remember 2026",
+      "sourceUrl": "https://www.manipal.edu/mu/admission/dates-to-remember.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-03-01",
+      "internalNotes": "The BPT programme page's key-dates block showed the same 15 July 2026 application deadline and a July 2026 commencement."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-bachelor-of-physiotherapy",
+      "publicField": "fee",
+      "claimText": "The 2026-27 Foreign/NRI fee schedule lists Bachelor of Physiotherapy at Manipal College of Health Professions as five years with four instalments, USD 4,350 first-instalment tuition, USD 1,500 first-instalment other fees, USD 13,050 and USD 4,500 across the remaining instalments, a USD 200 refundable caution deposit and a batch total of USD 23,600.",
+      "status": "verified",
+      "sourceLabel": "MAHE - 2026-27 Foreign / NRI Category Course Fees schedule (as on 18 June 2026)",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20NRI%20Fees%20as%20on%2018-06-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "The programme page is internally inconsistent on internship length, describing 4 years plus 6 months in the body text and 4 years plus 1 year in the sidebar and FAQ. Only the 5-year total from the fee schedule and FAQ is published; the internship length itself is deliberately left unstated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-ba-media-and-communication",
+      "publicField": "eligibility",
+      "claimText": "Entry requires a pass in 10+2 or Pre-University examination from a recognised board with a minimum of 45 per cent aggregate marks; A Level applicants need two or three A Level subjects plus five IGCSE or GCSE passes including English with an average grade of D; IB applicants need three Higher Level and three Standard Level subjects with 24 points overall and at least 3 points per counted subject.",
+      "status": "verified",
+      "sourceLabel": "MAHE - Eligibility & Admission Process 2026, Undergraduate programs under General / Foreign / NRI category",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/UG%20Eligibility%202026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "Manipal Institute of Communication block covering BA Media & Communication and BA (Hons) Media & Communication."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-ba-media-and-communication",
+      "publicField": "admissions",
+      "claimText": "Manipal Institute of Communication states that domestic admission is based on a CUET (UG) or MECAT test plus a personal interview, and that international students and NRIs are admitted on prescribed academic qualifications and a review of educational and co-curricular accomplishments assessed by MAHE's International Admissions Office, exempt from the admission test.",
+      "status": "verified",
+      "sourceLabel": "Manipal Institute of Communication - B.A./B.A. (Hons) in Media and Communication, admission criteria",
+      "sourceUrl": "https://www.manipal.edu/soc/program-list/ba-media-and-communication.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "This is the clearest programme-level statement on the MAHE site that the international route is test-exempt, and it corroborates the general Foreign/NRI rule on manipal.edu/international.html."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-ba-media-and-communication",
+      "publicField": "intake",
+      "claimText": "The programme page lists 31 July 2026 as the last date to apply for foreign students in the 2026 cycle, while MAHE's dates page lists orientation on 21 July and tentative class commencement on 22 July 2026 for Manipal Institute of Communication programmes.",
+      "status": "verified",
+      "sourceLabel": "Manipal Institute of Communication programme page and MAHE Admission Dates to Remember 2026",
+      "sourceUrl": "https://www.manipal.edu/soc/program-list/ba-media-and-communication.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-03-01",
+      "internalNotes": "The two official pages are inconsistent: the application deadline of 31 July falls after the 22 July commencement date. Both figures are published as sourced rather than reconciled, and the deadline note flags the discrepancy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "manipal-academy-of-higher-education",
+      "programmeSlug": "mahe-manipal-ba-media-and-communication",
+      "publicField": "fee",
+      "claimText": "The 2026-27 Foreign/NRI fee schedule lists B.A. Media & Communication at Manipal Institute of Communication as three years with three instalments, USD 2,750 first-instalment tuition, USD 1,700 first-instalment other fees, USD 5,500 and USD 3,400 across the remaining instalments, a USD 200 refundable caution deposit and a batch total of USD 13,550; the four-year B.A. (Hons) variant is listed separately with a batch total of USD 18,000.",
+      "status": "verified",
+      "sourceLabel": "MAHE - 2026-27 Foreign / NRI Category Course Fees schedule (as on 18 June 2026)",
+      "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2026/2026-27%20NRI%20Fees%20as%20on%2018-06-2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-05-01",
+      "internalNotes": "The three-year award is packaged here because the programme page states the honours fourth year is conditional on a CGPA of 7.5 across the first six semesters rather than guaranteed at entry."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "countrySlug": "benin",
+  "universitySlug": "university-of-parakou-faculty-of-medicine",
+  "schoolName": "Université de Parakou — Faculté de Médecine",
+  "cityName": "Parakou",
+  "priority": "high",
+  "officialWebsite": "https://enseignementsuperieur.gouv.bj/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Benin's MESRS lists the University of Parakou as a public university; decree 2016-638 establishes it as a national multidisciplinary university. The World Directory of Medical Schools lists Université de Parakou Faculté de Médecine as currently operational, public, French-language and awarding a Diplôme d'État en Médecine, but this directory cannot supply a current admissions/fee payload. Primary sources found do not expose a current medicine programme page, tuition and mandatory fees, intake/deadline, international admission route, clinical placement detail, accommodation arrangements or programme-specific regulator evidence. The French-language directory record is useful evidence of existence, not enough to make claims of international availability or recognition.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Benin MESRS public universities page",
+        "url": "https://enseignementsuperieur.gouv.bj/universites/TYPE_UNIVERSITE_UNIVERSITE",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Université de Parakou among Benin public universities."
+      },
+      {
+        "label": "Benin decree 2016-638",
+        "url": "https://sgg.gouv.bj/pdf/web/viewer.html?file=%2Fdoc%2Fdecret-2016-638%2Fread",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Establishes University of Parakou as a national multidisciplinary university."
+      },
+      {
+        "label": "World Directory of Medical Schools — Université de Parakou",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0002629",
+        "kind": "medical-directory",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists a public, currently operational school; French instruction; Diplôme d'État en Médecine. Do not use this alone for admission, fee or cross-border recognition claims."
+      },
+      {
+        "label": "Benin MESRS University of Parakou announcement",
+        "url": "https://enseignementsuperieur.gouv.bj/uploads/document_actualite/3a851d0cb2218b5cae04a15f2e6bb2c6.pdf",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "A 2025 university-governance call corroborates the University of Parakou as an active public institution."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université de Parakou — Faculté de Médecine",
+    "type": "Public",
+    "programs": [
+      {
+        "officialTitle": "Diplôme d'État en Médecine",
+        "instructionLanguage": "French",
+        "feeStatus": "not found in current official source",
+        "publishable": false
+      }
+    ],
+    "missingForPublication": [
+      "current official programme duration and curriculum",
+      "international eligibility, application route and required documents",
+      "current tuition/mandatory fees and intake date",
+      "clinical-training and accommodation evidence",
+      "programme-specific approval and overseas-recognition evidence"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public copy drafted because programme-level and international route details remain unverified."
+  }
+}

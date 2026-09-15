@@ -1,0 +1,1723 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "MBA is the Students Traffic catalogue category for full-time, general-management master's degrees taken after a completed bachelor's degree. Symbiosis International (Deemed University) maps the two-year Master of Business Administration run by Symbiosis Institute of Business Management at its Lavale campus in Pune to this category, including its Marketing, Human Resource, Finance, Operations and Supply Chain Management, and Data Analytics specialisations.",
+      "metaTitle": "MBA Programmes Abroad for International Students",
+      "metaDescription": "Compare MBA programmes abroad, including specialisations, duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "llb",
+      "name": "Bachelor of Laws",
+      "shortName": "LLB",
+      "stream": "law",
+      "level": "bachelors",
+      "discipline": "law",
+      "aliases": [
+        "LL.B.",
+        "Bachelor of Law",
+        "B.A. LL.B.",
+        "Integrated law degree"
+      ],
+      "displayOrder": 1,
+      "durationYears": 5,
+      "summary": "LLB is the Students Traffic catalogue category for first law degrees taken as an undergraduate award. Symbiosis International (Deemed University) maps the five-year Bachelor of Arts and Bachelor of Laws (Honours) run by Symbiosis Law School, Pune to this category: an integrated Indian law degree entered directly after Class 12, whose curriculum follows Bar Council of India regulations.",
+      "metaTitle": "LLB and Integrated Law Degrees for International Students",
+      "metaDescription": "Explore LLB and integrated five-year law degrees abroad, including entry requirements, duration, tuition and the admissions route for international applicants."
+    },
+    {
+      "slug": "bachelor-liberal-arts",
+      "name": "Bachelor of Liberal Arts",
+      "shortName": "Liberal Arts",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "liberal-arts",
+      "aliases": [
+        "Bachelor of Arts in Liberal Arts",
+        "BA Liberal Arts",
+        "BSc Liberal Arts"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "Bachelor of Liberal Arts is the Students Traffic catalogue category for multidisciplinary undergraduate degrees built around a declared major and minor rather than a single fixed syllabus. Symbiosis International (Deemed University) maps the four-year Bachelor of Arts / Bachelor of Science Liberal Arts (Honours) at Symbiosis School for Liberal Arts, Pune to this category, with thirteen majors and eight minors, a community outreach project, an internship and a research dissertation.",
+      "metaTitle": "Bachelor of Liberal Arts Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Liberal Arts degrees abroad, with declared majors and minors, duration, tuition and international admission requirements."
+    },
+    {
+      "slug": "bachelor-media-communication",
+      "name": "Bachelor's in Media and Communication",
+      "shortName": "Bachelor's Media",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "media-communication",
+      "aliases": [
+        "BA Media and Communication",
+        "Bachelor of Communication",
+        "BA Mass Communication"
+      ],
+      "displayOrder": 3,
+      "durationYears": 3,
+      "summary": "Bachelor's in Media and Communication is the Students Traffic catalogue category for undergraduate degrees in journalism, mass communication, advertising and screen media. Symbiosis International (Deemed University) maps the Bachelor of Arts in Mass Communication at Symbiosis Centre for Media and Communication, Pune to this category, offered as a three-year or four-year full-time programme on the Viman Nagar campus.",
+      "metaTitle": "Bachelor's in Media and Communication Degrees Abroad",
+      "metaDescription": "Explore a Bachelor's in Media and Communication abroad, covering journalism and mass communication entry rules, duration, tuition and admissions."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "Bachelor of Design is the Students Traffic catalogue category for portfolio-entry undergraduate design degrees. Symbiosis International (Deemed University) maps the four-year Bachelor of Design at Symbiosis Institute of Design, Pune to this category, with specialisations in Communication Design, Industrial Design, Fashion Design and Fashion Communication and a compulsory portfolio submitted with the international application.",
+      "metaTitle": "Bachelor of Design (B.Des) Programmes Abroad",
+      "metaDescription": "Compare Bachelor of Design programmes abroad across communication, industrial and fashion design, with portfolio rules, duration, tuition and admissions."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "symbiosis-international-university",
+      "name": "Symbiosis International (Deemed University)",
+      "city": "Pune",
+      "type": "Private",
+      "establishedYear": 1971,
+      "officialWebsite": "https://www.siu.edu.in/",
+      "mediaAttribution": {},
+      "summary": "Symbiosis International (Deemed University) is a private multidisciplinary university in Pune, Maharashtra, established under Section 3 of the UGC Act, 1956. Its Pune institutes teach management, law, liberal arts, media and design in English to students from more than 85 countries, with admissions for every international category run centrally by the Symbiosis Centre for International Education.",
+      "campusLifestyle": "SIU runs six Pune campuses - Senapati Bapat Road, Lavale, Hinjewadi, Viman Nagar, Model Colony and Kirkee - alongside sites in Bengaluru, Noida, Nashik, Hyderabad, Nagpur and Dubai. SIBM Pune sits on the Lavale hilltop campus at Gram Lavale, Tal Mulshi, PIN 412115; Symbiosis Law School, Pune is at Rohan Mithila, Viman Nagar. The wider Symbiosis family hosts more than 40,000 Indian and international students drawn from over 85 countries. Nine faculties cover Law, Management, Computer Studies, Medical and Health Sciences, Media and Communication, Humanities and Social Sciences, Engineering, Design and Education, and a Symbiosis Centre for Health Care operates on campus.",
+      "cityProfile": "Pune is a university and technology city in western Maharashtra, roughly 150 km inland from Mumbai, and SIU's campuses are spread across it rather than concentrated on one site. The registered university address is Gram Lavale, Tal Mulshi, Pune 412115, on a hill campus outside the city; SCIE's admissions office is in central Pune at Symbiosis Vishwabhavan, Senapati Bapat Road, Pune 411004, and other institutes sit at Viman Nagar in the east, Model Colony and Kirkee to the north, and Hinjewadi to the west beside the city's main IT corridor. That spread matters practically: which campus a programme belongs to determines where an admitted student reports, where hostel places are allocated, and how long the daily commute runs. Foreigners' registration for Pune is administered through the Police Commissioner's Office, and SCIE publishes its rules and document lists for students who need to register or extend a visa.",
+      "practicalExposure": "Applied work is built into the programmes rather than bolted on. At Symbiosis School for Liberal Arts, students complete a two-month community outreach project with a written report and presentation, an internship in the declared major assessed by project report and viva, and either a dissertation or a research project plus a mandatory seminar paper written to publishable standard, supported by core courses in research methods. Symbiosis Institute of Design admits on portfolio and streams students into Communication Design, Industrial Design, Fashion Design or Fashion Communication. Symbiosis Law School, Pune builds its B.A. LL.B. (Honours) curriculum to Bar Council of India regulations, with practical legal training and a research component. The SIBM Pune MBA offers specialisations in Marketing, Human Resource, Finance, Operations and Supply Chain Management, and Data Analytics. Across the university, the Global Immersion Programme lets students take a semester abroad at a partner university, using a floating credit semester that removes the need to map course content exactly, with mutual credit recognition and, in some cases, tuition waivers; summer and winter schools of two to four weeks and overseas internships run alongside it. SIU also receives incoming exchange and free-moving students for one or two semesters, with credits transferable back to the home university.",
+      "hostelOverview": "Students admitted to a residential programme must live in the campus hostel, and most institutes also offer hostel places on non-residential programmes. SCIE states that accommodation is not guaranteed: it is allocated against vacancies, and the institute Director or Principal decides. Undergraduate hostels run at Viman Nagar, Vishwabhavan, Lavale Hill Base, Lavale Hill Top, Model Colony, Noida, Hyderabad and Nagpur; postgraduate hostels add Hinjewadi, Bengaluru and Nashik. For Foreign Nationals SIU publishes hostel charges of USD 650 per year plus a USD 250 deposit. Hostel, mess and uniform fees fall outside the annual academic fee and are settled at the institute after the joining letter is submitted.",
+      "dietarySupport": "SIU publishes an annual meal plan for Foreign National students at USD 560 per year, charged separately from the academic fee and paid to the institute at joining alongside hostel and uniform charges. Catering is run by the individual institute rather than centrally, so menus and dietary arrangements are set campus by campus. SCIE runs cultural food programming through the year, including an international food festival during International Students' Day and an Iftar dinner for the student community.",
+      "safetyOverview": "Anti-ragging undertakings signed by both student and parent are compulsory at reporting, and SIU runs an anti-ragging cell alongside a Student Grievance Redressal Committee and an Ombudsperson. Every international student takes a medical examination at the Symbiosis Centre for Health Care on campus. SCIE publishes the Pune Police Commissioner's registration rules, including the 14-day FRRO deadline for long-term student visas.",
+      "studentSupport": "SCIE is the nodal department for international students from admission to graduation. It runs an orientation covering university rules, legal procedures and medical facilities, assigns buddies and mentors, helps set academic timetables, assists with finding accommodation and supports Foreigners' Registration Office formalities. An International Students' Council represents students, and International Students' Day falls on 29 to 31 July 2026.",
+      "whyChoose": [
+        "One central channel handles everything: SCIE processes applications for every constituent institute, so a single application can reach management, law, liberal arts, media or design programmes.",
+        "Foreign National, OCI and PIO applicants are exempted from SIU's SET, SITEEE and SNAP entrance tests; shortlisting weighs transcripts at 90 per cent, the statement of purpose at 5 per cent and two recommendations at 5 per cent.",
+        "The Golden Jubilee Scholarship for Foreign Nationals covers academic fees at USD 1,300 a year for undergraduate programmes, USD 2,600 for MBA programmes and USD 1,950 for other postgraduate programmes.",
+        "SIU is a UGC deemed-to-be university with UGC Category-I status and NAAC A++ re-accreditation, ranked 24th in the NIRF 2025 university category.",
+        "Individual institutes rank in their own right: Symbiosis Law School, Pune placed 7th in the NIRF 2025 law category and SIBM Pune 11th in management.",
+        "Applicants can apply while awaiting Class 12 results using a principal-endorsed predicted score, and travel to India only after accepting an offer."
+      ],
+      "thingsToConsider": [
+        "NRI, OCI and PIO applicants pay far more than Foreign Nationals: the 2026-27 SIBM Pune MBA academic fee is USD 23,200 a year for NRI and OCI against USD 2,600 for Foreign Nationals.",
+        "An Indian student visa does not permit employment or business activity, so no part-time earnings can be built into a funding plan.",
+        "IELTS Academic at 6.0 or the Symbiosis IELA test at band 4 is compulsory for Foreign National, OCI and PIO applicants, and the IELA sitting costs a further USD 50.",
+        "Eligibility documents not handed over at reporting must reach SCIE by 31 August; a student who misses that date cannot sit the Semester I examination and may forfeit the academic fee.",
+        "Fees for the SCMC Pune mass communication and SID Pune design programmes are still published for 2025-26, and the SCMC table is headed with the name of a different degree.",
+        "Symbiosis Law School Pune holds Bar Council of India approval to 2026-27, which governs practice in India; an Indian law degree does not by itself confer the right to practise in another jurisdiction."
+      ],
+      "bestFitFor": [
+        "Foreign nationals who want an English-taught business, law, liberal arts, media or design degree in India at a published, scholarship-backed academic fee.",
+        "Applicants who would rather be assessed on transcripts, a statement of purpose and letters of recommendation than sit an Indian entrance examination.",
+        "Students who want a residential campus with a dedicated international office handling orientation, accommodation and FRRO registration.",
+        "Undergraduate applicants who need to apply on predicted or pre-board marks while final Class 12 results are pending.",
+        "Students who want a degree in India with the option of a semester abroad on transferable credits through the Global Immersion Programme."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC Deemed-to-be University under Section 3 of the UGC Act, 1956",
+        "NAAC - Accredited A++, CGPA 3.56, Cycle 3 (declared December 2022)",
+        "UGC Category-I University",
+        "Bar Council of India - Approved Centre of Legal Education, Symbiosis Law School Pune (approval to 2026-27)",
+        "NBA - Master of Business Administration accredited at Symbiosis Institute of Business Management Pune (Management Post Graduate register, to 30 June 2027)",
+        "AACSB Accredited - Symbiosis Centre for Management and Human Resource Development",
+        "NIRF 2025 - 24th in the University category (Ministry of Education)",
+        "NIRF 2025 - Symbiosis Law School, Pune 7th in Law; SIBM Pune 11th in Management"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "University Grants Commission - recognised university listings",
+          "url": "https://www.ugc.gov.in/"
+        },
+        {
+          "label": "SIU Public Self Disclosure - Section 3 status, NAAC A++ and UGC Category-I",
+          "url": "https://www.siu.edu.in/uploads/pdf/SIU_Public_Self_Disclosure.pdf"
+        },
+        {
+          "label": "SIU accreditation, recognition and rankings",
+          "url": "https://www.siu.edu.in/about-us/why-us/accreditation-and-recognition"
+        },
+        {
+          "label": "AACSB accredited school listing - SCMHRD, Symbiosis International University",
+          "url": "https://www.aacsb.edu/accredited/s/symbiosis-international-university-symbiosis-centre-for-management-and-human-resource-development"
+        },
+        {
+          "label": "National Institutional Ranking Framework (Ministry of Education)",
+          "url": "https://www.nirfindia.org/Home"
+        },
+        {
+          "label": "NAAC accreditation status register",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "Bar Council of India - recognised universities and colleges",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges"
+        },
+        {
+          "label": "NBA accreditation programme register",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Symbiosis International a public or a private university?",
+          "answer": "It is a private university. Symbiosis International (Deemed University) is a deemed-to-be university established under Section 3 of the UGC Act, 1956, sponsored by the Symbiosis Society. It holds Category-I status from the UGC and is accredited by NAAC at Grade A++ with a CGPA of 3.56 in Cycle 3, declared in December 2022."
+        },
+        {
+          "question": "How do international students apply, and is it different from the Indian route?",
+          "answer": "Yes, it is a separate channel. Admissions for Foreign Nationals, NRI, OCI and PIO applicants are centralised for every constituent institute through the Symbiosis Centre for International Education (SCIE) at scie.ac.in, not through the institute directly. Application, document upload, payment and admission-status tracking are all handled online, and the applicant travels to India only after accepting an offer."
+        },
+        {
+          "question": "Do I have to sit SET, SITEEE or SNAP?",
+          "answer": "Foreign National, OCI and PIO candidates are exempted from SIU's entrance tests and instead take an English proficiency test. For NRI candidates applying under the international category, the entrance exam is not mandatory. Selection is made on academic transcripts weighted at 90 per cent, the statement of purpose at 5 per cent and two letters of recommendation at 5 per cent."
+        },
+        {
+          "question": "What English test does Symbiosis accept?",
+          "answer": "An English proficiency test is compulsory for Foreign National, OCI and PIO applicants. Either IELTS Academic with a minimum overall score of 6.0, or Symbiosis's own International English Language Assessment (IELA), conducted online by the English Language Teaching Institute of Symbiosis, with a minimum band 4 out of 6. IELA is registered through the SCIE application form and costs USD 50. NRI applicants are not asked for an English test."
+        },
+        {
+          "question": "How many seats are open to international applicants?",
+          "answer": "SCIE earmarks 20 per cent of the total intake of each programme for the international categories, which cover Foreign Nationals, PIO card holders, OCI card holders and Non-Resident Indians. Seats are therefore capped per programme rather than open-ended, and admission is on a merit list."
+        },
+        {
+          "question": "Why are the fees so different for Foreign Nationals and for NRI or OCI applicants?",
+          "answer": "SIU publishes two separate fee tables for each programme. For the 2026-27 SIBM Pune MBA the Foreign National academic fee is USD 2,600 a year against USD 23,200 for NRI and OCI candidates. Undergraduate law at SLS Pune is USD 1,300 a year for Foreign Nationals and USD 8,900 for NRI and OCI. SIU's Golden Jubilee Scholarship covers academic fees for Foreign Nationals only, at USD 1,300 a year for undergraduate programmes, USD 2,600 for MBA programmes and USD 1,950 for other postgraduate programmes; it excludes Indian, NRI, OCI and PIO students, short-term programmes, doctoral programmes and part-time programmes."
+        },
+        {
+          "question": "What does the full first-year cost look like beyond tuition?",
+          "answer": "Foreign Nationals pay a one-time application fee of USD 65, a one-time administrative fee of USD 275, a refundable institute deposit of USD 275 and, where applicable, USD 50 for the IELA test. Hostel accommodation is published at USD 650 per year plus a USD 250 deposit, and the annual meal plan at USD 560. Hostel, mess and uniform charges sit outside the annual academic fee and are settled at the institute on joining. NRI, OCI and PIO applicants pay USD 120 as the application fee and USD 550 as the administrative fee."
+        },
+        {
+          "question": "Is accommodation guaranteed?",
+          "answer": "No. Students admitted to a residential programme must live in the campus hostel, and most institutes also offer hostel places to students on non-residential programmes, but SCIE states plainly that hostel accommodation is not guaranteed and is allocated against vacancies at the discretion of the institute Director or Principal. Undergraduate hostels operate at Viman Nagar, Vishwabhavan, Lavale Hill Base, Lavale Hill Top, Model Colony, Noida, Hyderabad and Nagpur."
+        },
+        {
+          "question": "When are the 2026 intakes and reporting dates?",
+          "answer": "They vary by institute. SIBM Pune reports 29 May to 3 June 2026 with the MBA commencing 3 June. Symbiosis Law School Pune reports 24 to 27 June and 29 to 30 June, commencing in the first week of July. Symbiosis Institute of Design reports 29 and 30 June, commencing 1 July. Symbiosis Centre for Media and Communication reports 13 to 15 July, commencing 16 July. Symbiosis School for Liberal Arts reports 17 and 18 July, commencing 20 July 2026."
+        },
+        {
+          "question": "Can I apply before my Class 12 results are out?",
+          "answer": "Yes, for undergraduate programmes. An applicant may submit a predicted score or pre-board marks endorsed by the school principal on school letterhead, together with the Class 12 hall ticket. The final board result must be uploaded as soon as it is declared, otherwise the application is not considered for the merit list. Nepali nationals submit the Class 11 final marksheet and pre-board marksheet instead."
+        },
+        {
+          "question": "What happens after I arrive in Pune?",
+          "answer": "Reporting formalities include a medical examination at the Symbiosis Centre for Health Care on campus, confirmation of fee details with the accounts department and payment of any balance, and eligibility clearance. Anti-ragging and indemnification undertakings are signed by both student and parent, and the SIU eligibility form is executed on 500-rupee stamp paper. Any documents not produced at reporting must reach SCIE by 31 August, or the student is not permitted to sit the Semester I examination and may forfeit the academic fee."
+        },
+        {
+          "question": "What are the visa and registration rules?",
+          "answer": "SCIE issues a Provisional Admission Letter for the visa application once the administrative fee and part payment of the annual academic fee are received. The visa must be a student visa naming Symbiosis International University; any other visa type is invalid for final admission. Foreign nationals on a visa longer than 180 days must register with the FRRO or FRO within 14 days of arrival, with shorter deadlines for Pakistani, Afghan and Bangladeshi nationals. Nepali and Bhutanese nationals are not asked for a visa or residential permit."
+        },
+        {
+          "question": "Can I work part-time in India while studying?",
+          "answer": "No. The Bureau of Immigration states that students on an Indian student visa must not undertake employment or business activity in India, and must open a Non-Resident Ordinary bank account and give the details to the FRRO. Any funding plan therefore has to cover tuition and living costs without local earnings."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "SIU International Admissions",
+          "url": "https://www.siu.edu.in/admissions/international-admissions",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "SCIE routing, 20 per cent international earmark, scholarship overview."
+        },
+        {
+          "label": "SCIE - Apply for Undergraduate",
+          "url": "https://www.scie.ac.in/apply-for-undergraduate/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Category definitions, document set, selection weightage, application and IELA fees, reporting formalities."
+        },
+        {
+          "label": "SCIE - Apply for Postgraduate",
+          "url": "https://www.scie.ac.in/apply-for-postgraduate/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Postgraduate document set and selection weightage."
+        },
+        {
+          "label": "SCIE - English Language Requirement",
+          "url": "https://www.scie.ac.in/english-language-requirement/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "IELTS 6.0 and IELA band 4 thresholds, IELA structure and banding."
+        },
+        {
+          "label": "SCIE - Scholarship",
+          "url": "https://www.scie.ac.in/scholarship/",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Golden Jubilee Scholarship amounts, exclusions, hostel and meal-plan charges."
+        },
+        {
+          "label": "SCIE - Payment Information",
+          "url": "https://www.scie.ac.in/payment-information/",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Application and IELA fee schedule by applicant category, USD-only payment rule."
+        },
+        {
+          "label": "SCIE - Accommodations",
+          "url": "https://www.scie.ac.in/accommodations/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Hostel campuses by level and the no-guarantee allocation rule."
+        },
+        {
+          "label": "SCIE - Foreigners Registrations",
+          "url": "https://www.scie.ac.in/foreigners-registrations/",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Pune Police Commissioner's Office registration rules, nationality-specific deadlines, visa extension documents."
+        },
+        {
+          "label": "SCIE - Student Mobility",
+          "url": "https://www.scie.ac.in/student-mobility/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Global Immersion Programme, credit transfer, buddy and support services."
+        },
+        {
+          "label": "SIU Undergraduate Prospectus 2026-27",
+          "url": "https://www.siu.edu.in/siteassets/img-inner/UG_Prospectus_2026-27.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "International process, category definitions, entrance-test exemption, administrative and part-payment schedule."
+        },
+        {
+          "label": "SCIE UG and PG Commencement and Reporting Dates 2026",
+          "url": "https://www.scie.ac.in/wp-content/uploads/2026/07/UG-and-PG-Commencement-and-Reporting-dates-2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Institute-level reporting and commencement dates for the 2026 intake."
+        },
+        {
+          "label": "SNAP - Symbiosis admission for international students",
+          "url": "https://www.snaptest.org/symbiosis-international-students.html",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Entrance-test exemption for Foreign National, OCI and PIO candidates."
+        },
+        {
+          "label": "SIU Public Self Disclosure",
+          "url": "https://www.siu.edu.in/uploads/pdf/SIU_Public_Self_Disclosure.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Section 3 of the UGC Act 1956, NAAC A++ re-accreditation, UGC Category-I."
+        },
+        {
+          "label": "SIU Accreditation and Recognition",
+          "url": "https://www.siu.edu.in/about-us/why-us/accreditation-and-recognition",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "NIRF 2025 positions and subject rankings."
+        },
+        {
+          "label": "SIU Our Legacy",
+          "url": "https://www.siu.edu.in/about-us/our-legacy",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "1971 founding, 85-plus countries, 40,000-plus students."
+        },
+        {
+          "label": "AACSB accredited school listing - SCMHRD",
+          "url": "https://www.aacsb.edu/accredited/s/symbiosis-international-university-symbiosis-centre-for-management-and-human-resource-development",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Independent confirmation of AACSB business accreditation."
+        },
+        {
+          "label": "NAAC accreditation status register",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Valid-accreditation workbook: Cycle 3, CGPA 3.56, Grade A++, declared 20 December 2022."
+        },
+        {
+          "label": "Bar Council of India - recognised universities and colleges",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Approved List of CLEs: Symbiosis Society's Law College, Pune, UG law courses approved to 2026-27."
+        },
+        {
+          "label": "NBA accreditation programme register",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Management Postgraduate register: SIBM Pune MBA accredited to 30 June 2027."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Symbiosis eligibility",
+            "capture": [
+              "citizenship or passport country",
+              "applicant category (FN, NRI, OCI or PIO)",
+              "current or expected qualification",
+              "intended institute and programme",
+              "English test status"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my Symbiosis cost plan",
+            "capture": [
+              "applicant category",
+              "intended programme",
+              "hostel preference",
+              "funding source",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my SCIE application review",
+            "capture": [
+              "document readiness",
+              "statement of purpose draft",
+              "recommendation letters",
+              "portfolio (design applicants)",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "scholarships",
+            "label": "Check Golden Jubilee Scholarship fit",
+            "capture": [
+              "citizenship",
+              "programme level",
+              "full-time or short-term study"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "siu-sibm-pune-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), Symbiosis Institute of Business Management, Pune",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 2600,
+            "officialTotalTuitionAmount": 5200,
+            "annualTuitionUsd": 2600,
+            "totalTuitionUsd": 5200,
+            "verifiedAt": "2026-08-22",
+            "notes": "This is the Foreign National rate published by SCIE for 2026-27: USD 2,600 academic fee per annum, plus a one-time USD 275 refundable institute deposit and USD 275 non-refundable administrative fee, giving a first-year total of USD 3,150. SIU publishes a separate and much higher NRI and OCI rate for the same programme: USD 23,200 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 24,025. The Golden Jubilee Scholarship for Foreign Nationals covers academic fees of USD 2,600 per year on MBA programmes and does not extend to Indian, NRI, OCI or PIO students. Hostel, mess and uniform charges are billed separately by the institute."
+          },
+          "officialProgramUrl": "https://www.scie.ac.in/mba-courses-sibm-pune-lavale/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign Nationals holding a passport of any country other than India",
+              "Overseas Citizen of India and Person of Indian Origin card holders",
+              "Non-Resident Indians who took a qualifying examination outside India"
+            ],
+            "restrictions": [
+              "SCIE earmarks 20 per cent of each programme's intake for the international categories, so seats are capped",
+              "Foreign National, OCI and PIO applicants must clear IELTS Academic at 6.0 or the Symbiosis IELA test at band 4",
+              "Non-Resident Indian status requires the Class 12 examination or the bachelor's degree to have been taken outside India"
+            ],
+            "notes": "Admission for every international category is centralised through the Symbiosis Centre for International Education; the institute does not accept direct applications from these categories.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.scie.ac.in/apply-for-postgraduate/"
+          },
+          "admissionsContent": {
+            "overview": "International applicants to the SIBM Pune MBA apply through the Symbiosis Centre for International Education rather than sitting SNAP. Shortlisting weighs graduation transcripts at 90 per cent, the statement of purpose at 5 per cent and two letters of recommendation at 5 per cent, and Foreign National, OCI and PIO candidates must clear an English proficiency test.",
+            "eligibility": {
+              "intro": "Entry requires a completed bachelor's degree with at least 50 per cent marks, membership of one of SCIE's international categories, and an English proficiency result where applicable.",
+              "items": [
+                "Bachelor's degree from a recognised university or institution of national importance with a minimum of 50 per cent marks or equivalent grade",
+                "IELTS Academic 6.0 overall or the Symbiosis IELA test at band 4 for Foreign National, OCI and PIO applicants",
+                "Foreign National, NRI, OCI or PIO status as defined by SCIE",
+                "Foreign National, OCI and PIO candidates are exempted from the SNAP entrance test and apply only through SCIE"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the SCIE online application portal and complete the postgraduate application form",
+              "Upload Class 12 marksheets, semester-wise or year-wise bachelor's degree transcripts, passport copy, statement of purpose and two letters of recommendation",
+              "Pay the application fee: USD 65 for Foreign Nationals and USD 120 for NRI, OCI and PIO applicants, plus USD 50 if taking the IELA test",
+              "SCIE verifies the documents and forwards the file to the Admission Committee, which issues an offer, waitlist or regret letter",
+              "Accept the offer by paying the administrative fee and part payment of the annual academic fee within the period stated in the offer letter",
+              "Collect the Provisional Admission Letter for the Indian student visa, then report to SIBM Pune between 29 May and 3 June 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 or equivalent final marksheet",
+                "Semester-wise or year-wise bachelor's degree marksheets and transcripts",
+                "Certified English translation of any transcript not issued in English",
+                "IELTS Academic or Symbiosis IELA result for Foreign National, OCI and PIO applicants"
+              ],
+              "application": [
+                "Photocopy of a valid passport, mandatory for every applicant",
+                "Statement of purpose of up to 1,000 words",
+                "Two letters of recommendation on institutional letterhead, signed and stamped",
+                "Proof of application-fee payment, including the SWIFT, NEFT or RTGS transaction copy where used",
+                "OCI or PIO card where that category is claimed"
+              ]
+            },
+            "deadlinesNote": "SIBM Pune reporting for the 2026 intake runs 29 May to 3 June 2026 and classes commence on 3 June 2026. Eligibility documents not handed over at reporting must reach SCIE by 31 August.",
+            "visaConsiderations": [
+              "SCIE issues the Provisional Admission Letter only after the administrative fee and part payment of the annual academic fee are received",
+              "The visa must be a student visa naming Symbiosis International University; other visa categories are not accepted at final admission",
+              "Holders of a long-term student visa must register with the FRRO or FRO in Pune within 14 days of arrival"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "SCIE publishes two fee tables for this programme for 2026-27. Foreign Nationals are charged USD 2,600 academic fee per annum, a USD 275 refundable institute deposit and a USD 275 non-refundable administrative fee, a first-year total of USD 3,150. NRI and OCI applicants are charged USD 23,200 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 24,025. Hostel accommodation is published at USD 650 per year plus a USD 250 deposit, and the annual meal plan at USD 560; both are paid to the institute at joining and sit outside the academic fee.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MBA",
+              "language": "English",
+              "details": "Delivered at the Lavale hilltop campus, Gram Lavale, Tal Mulshi, Pune 412115, with specialisations in Marketing, Human Resource, Finance, Operations and Supply Chain Management, and Data Analytics."
+            }
+          ]
+        },
+        {
+          "slug": "siu-sls-pune-ba-llb-hons",
+          "canonicalCourseSlug": "llb",
+          "officialTitle": "Bachelor of Arts and Bachelor of Laws (Honours), B.A. LL.B., Symbiosis Law School, Pune",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 1300,
+            "officialTotalTuitionAmount": 6500,
+            "annualTuitionUsd": 1300,
+            "totalTuitionUsd": 6500,
+            "verifiedAt": "2026-08-22",
+            "notes": "Foreign National rate published by SCIE for 2026-27: USD 1,300 academic fee per annum, a USD 275 refundable institute deposit and a USD 275 non-refundable administrative fee, a first-year total of USD 1,850. The five-year total shown multiplies the annual figure and is not published as a lump sum. NRI and OCI applicants are charged USD 8,900 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 9,725. The Golden Jubilee Scholarship covers academic fees of USD 1,300 per year on undergraduate programmes for Foreign Nationals only."
+          },
+          "officialProgramUrl": "https://www.scie.ac.in/bachelor-of-arts-and-bachelor-of-laws-pune/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign Nationals holding a passport of any country other than India",
+              "Overseas Citizen of India and Person of Indian Origin card holders",
+              "Non-Resident Indians who took a qualifying examination outside India"
+            ],
+            "restrictions": [
+              "SCIE earmarks 20 per cent of each programme's intake for the international categories, so seats are capped",
+              "Foreign National, OCI and PIO applicants must clear IELTS Academic at 6.0 or the Symbiosis IELA test at band 4",
+              "Applicants holding a compartment or supplementary result in the final qualifying examination are not eligible"
+            ],
+            "notes": "Applications from every international category run through SCIE; Symbiosis Law School does not process these applications directly.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/"
+          },
+          "admissionsContent": {
+            "overview": "Symbiosis Law School, Pune admits international applicants to its five-year integrated B.A. LL.B. (Honours) through SCIE, with no SET or SITEEE entrance test for Foreign National, OCI and PIO candidates. Selection weighs the Class 12 transcript at 90 per cent, the statement of purpose at 5 per cent and two letters of recommendation at 5 per cent.",
+            "eligibility": {
+              "intro": "Entry is direct from Class 12 in any stream, with a lower percentage threshold than most other SIU undergraduate programmes.",
+              "items": [
+                "Class 12 or equivalent from a recognised board or university in any stream with a minimum of 45 per cent marks",
+                "Applicants awaiting final Class 12 results may apply using a predicted score or pre-board marks endorsed by the school principal",
+                "IELTS Academic 6.0 overall or the Symbiosis IELA test at band 4 for Foreign National, OCI and PIO applicants",
+                "Foreign National, OCI and PIO candidates are exempted from the SET and SITEEE entrance tests and apply through SCIE"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the SCIE online application portal and complete the undergraduate application form",
+              "Upload Class 10 and Class 12 marksheets, passport copy, statement of purpose and two letters of recommendation",
+              "Pay the application fee: USD 65 for Foreign Nationals and USD 120 for NRI, OCI and PIO applicants, plus USD 50 if taking the IELA test",
+              "SCIE verifies the documents and the Admission Committee weighs the Class 12 transcript at 90 per cent, the statement of purpose at 5 per cent and the two recommendations at 5 per cent",
+              "Accept the offer letter by paying the administrative fee and part payment of the annual academic fee within the stated period",
+              "Collect the Provisional Admission Letter for the Indian student visa, then report to SCIE in Pune between 24 and 27 June or on 29 and 30 June 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 or equivalent final marksheet, front and back",
+                "Class 12 or equivalent final marksheet, with a certified English translation if not issued in English",
+                "Predicted score or pre-board marks endorsed by the school principal on letterhead if Class 12 results are pending",
+                "IELTS Academic or Symbiosis IELA result for Foreign National, OCI and PIO applicants",
+                "Migration certificate and transfer certificate in original where Class 12 was taken with an Indian board"
+              ],
+              "application": [
+                "Photocopy of a valid passport, mandatory for every applicant",
+                "Statement of purpose of up to 1,000 words",
+                "Two letters of recommendation from a teacher or principal who has known the applicant for at least two years, on letterhead with stamp and signature",
+                "Proof of application-fee payment, including the SWIFT, NEFT or RTGS transaction copy where used",
+                "OCI or PIO card where that category is claimed, and a citizen card for Nepali or Bhutanese nationals"
+              ]
+            },
+            "deadlinesNote": "Reporting for the 2026 intake runs 24 to 27 June and 29 to 30 June 2026, with classes commencing in the first week of July 2026. Outstanding eligibility documents must reach SCIE by 31 August.",
+            "visaConsiderations": [
+              "SCIE issues the Provisional Admission Letter for the visa application only after the administrative fee and part payment of the annual academic fee are received",
+              "The visa must be a student visa naming Symbiosis International University; other visa categories are not accepted at final admission",
+              "Holders of a long-term student visa must register with the FRRO or FRO in Pune within 14 days of arrival",
+              "Nepali and Bhutanese nationals are not asked for a visa or residential permit at reporting"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "SCIE publishes two fee tables for 2026-27. Foreign Nationals pay USD 1,300 academic fee per annum plus a USD 275 refundable institute deposit and a USD 275 non-refundable administrative fee, a first-year total of USD 1,850. NRI and OCI applicants pay USD 8,900 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 9,725. Hostel accommodation is published at USD 650 per year plus a USD 250 deposit and the annual meal plan at USD 560, both billed by the institute at joining. A one-time application fee of USD 65 for Foreign Nationals or USD 120 for NRI, OCI and PIO applicants applies, and the IELA test costs a further USD 50.",
+          "teachingPhases": [
+            {
+              "phase": "Five-year integrated B.A. LL.B. (Honours)",
+              "language": "English",
+              "details": "Taught at Symbiosis Law School, Pune, Rohan Mithila, Viman Nagar, a Bar Council of India approved Centre of Legal Education with approval to 2026-27. The curriculum combines legal study with interdisciplinary arts subjects, practical training and a research component."
+            }
+          ]
+        },
+        {
+          "slug": "siu-ssla-pune-liberal-arts-hons",
+          "canonicalCourseSlug": "bachelor-liberal-arts",
+          "officialTitle": "Bachelor of Arts / Bachelor of Science Liberal Arts (Honours), Symbiosis School for Liberal Arts, Pune",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 1300,
+            "officialTotalTuitionAmount": 5200,
+            "annualTuitionUsd": 1300,
+            "totalTuitionUsd": 5200,
+            "verifiedAt": "2026-08-22",
+            "notes": "Foreign National rate published by SCIE for 2026-27: USD 1,300 academic fee per annum, a USD 275 refundable institute deposit and a USD 275 non-refundable administrative fee, a first-year total of USD 1,850. NRI and OCI applicants are charged USD 9,575 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 10,400. The four-year total shown multiplies the published annual figure and is not itself published as a lump sum."
+          },
+          "officialProgramUrl": "https://www.scie.ac.in/ba-bsc-liberal-arts-honours-ssla-pune-scie/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign Nationals holding a passport of any country other than India",
+              "Overseas Citizen of India and Person of Indian Origin card holders",
+              "Non-Resident Indians who took a qualifying examination outside India"
+            ],
+            "restrictions": [
+              "SCIE earmarks 20 per cent of each programme's intake for the international categories, so seats are capped",
+              "Foreign National, OCI and PIO applicants must clear IELTS Academic at 6.0 or the Symbiosis IELA test at band 4",
+              "Applicants holding a compartment or supplementary result in the final qualifying examination are not eligible"
+            ],
+            "notes": "Applications from every international category run through SCIE, and the school does not process them directly.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/"
+          },
+          "admissionsContent": {
+            "overview": "Symbiosis School for Liberal Arts admits international applicants through SCIE to a four-year honours degree structured around a declared major and minor. Selection is on the Class 12 transcript at 90 per cent, the statement of purpose at 5 per cent and two letters of recommendation at 5 per cent, with no SIU entrance test for Foreign National, OCI and PIO candidates.",
+            "eligibility": {
+              "intro": "Entry is from Class 12 in any stream, and applicants awaiting final results may apply on predicted or pre-board marks.",
+              "items": [
+                "Class 12 or equivalent from a recognised board or university in any stream with a minimum of 50 per cent marks",
+                "Applicants awaiting final Class 12 results may apply, subject to passing before the programme commences",
+                "IELTS Academic 6.0 overall or the Symbiosis IELA test at band 4 for Foreign National, OCI and PIO applicants",
+                "Nepali applicants submit the Class 11 final marksheet and pre-board marksheet in place of a pending Class 12 result"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the SCIE online application portal and complete the undergraduate application form",
+              "Upload Class 10 and Class 12 marksheets, passport copy, statement of purpose and two letters of recommendation",
+              "Pay the application fee: USD 65 for Foreign Nationals and USD 120 for NRI, OCI and PIO applicants, plus USD 50 if taking the IELA test",
+              "SCIE verifies the documents and the Admission Committee weighs the Class 12 transcript at 90 per cent, the statement of purpose at 5 per cent and the two recommendations at 5 per cent",
+              "Accept the offer letter by paying the administrative fee and part payment of the annual academic fee within the stated period",
+              "Collect the Provisional Admission Letter for the Indian student visa, then report to SCIE in Pune on 17 or 18 July 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 or equivalent final marksheet, front and back",
+                "Class 12 or equivalent final marksheet, with a certified English translation if not issued in English",
+                "Predicted score or pre-board marks endorsed by the school principal on letterhead if Class 12 results are pending",
+                "IELTS Academic or Symbiosis IELA result for Foreign National, OCI and PIO applicants",
+                "Migration certificate and transfer certificate in original where Class 12 was taken with an Indian board"
+              ],
+              "application": [
+                "Photocopy of a valid passport, mandatory for every applicant",
+                "Statement of purpose of up to 1,000 words",
+                "Two letters of recommendation from a teacher or principal who has known the applicant for at least two years, on letterhead with stamp and signature",
+                "Proof of application-fee payment, including the SWIFT, NEFT or RTGS transaction copy where used",
+                "OCI or PIO card where that category is claimed, and a citizen card for Nepali or Bhutanese nationals"
+              ]
+            },
+            "deadlinesNote": "Reporting for the 2026 intake is on 17 and 18 July 2026, with classes commencing 20 July 2026. Outstanding eligibility documents must reach SCIE by 31 August.",
+            "visaConsiderations": [
+              "SCIE issues the Provisional Admission Letter for the visa application only after the administrative fee and part payment of the annual academic fee are received",
+              "The visa must be a student visa naming Symbiosis International University; other visa categories are not accepted at final admission",
+              "Holders of a long-term student visa must register with the FRRO or FRO in Pune within 14 days of arrival",
+              "Nepali and Bhutanese nationals are not asked for a visa or residential permit at reporting"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "SCIE publishes two fee tables for 2026-27. Foreign Nationals pay USD 1,300 academic fee per annum plus a USD 275 refundable institute deposit and a USD 275 non-refundable administrative fee, a first-year total of USD 1,850. NRI and OCI applicants pay USD 9,575 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 10,400. Hostel accommodation is published at USD 650 per year plus a USD 250 deposit and the annual meal plan at USD 560, both paid to the institute at joining and outside the academic fee.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year Liberal Arts (Honours) degree",
+              "language": "English",
+              "details": "Majors available in Mathematics and Statistics, Computer Studies, English, Economics, Psychology, Sociology, Philosophy, Anthropology, Media Studies, Business Studies, International Relations, Political Science and Public Policy, and Applied Environmental and Sustainability Science; minors in Biology, Women and Gender Studies, History, Film Studies, Peace and Conflict Studies, Physics, Performing Arts and Law."
+            },
+            {
+              "phase": "Applied and research components",
+              "language": "English",
+              "details": "A two-month community outreach project with a written report and presentation, an internship in the major area assessed by project report and viva, and a dissertation or research project plus a mandatory seminar paper submitted to publishable standard."
+            }
+          ]
+        },
+        {
+          "slug": "siu-scmc-pune-ba-mass-communication",
+          "canonicalCourseSlug": "bachelor-media-communication",
+          "officialTitle": "Bachelor of Arts - Mass Communication, Symbiosis Centre for Media and Communication, Pune",
+          "durationYears": 3,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2025-2026",
+            "annualTuitionMinUsd": 1300,
+            "annualTuitionMaxUsd": 6775,
+            "verifiedAt": "2026-08-22",
+            "notes": "SCIE still publishes this programme's fee for the 2025-26 academic year, and the fee table on the page carries the heading of a different SCMC-campus programme, Bachelor of Arts (Visual Arts and Photography). The published range therefore spans the Foreign National academic fee of USD 1,300 per annum and the NRI and OCI academic fee of USD 6,775 per annum, with a USD 275 refundable institute deposit in both cases and an administrative fee of USD 275 for Foreign Nationals or USD 550 for NRI and OCI applicants. No 2026-27 figure was published at the checked date."
+          },
+          "officialProgramUrl": "https://www.scie.ac.in/ba-mass-communication-scmc-pune/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign Nationals holding a passport of any country other than India",
+              "Overseas Citizen of India and Person of Indian Origin card holders",
+              "Non-Resident Indians who took a qualifying examination outside India"
+            ],
+            "restrictions": [
+              "SCIE earmarks 20 per cent of each programme's intake for the international categories, so seats are capped",
+              "Foreign National, OCI and PIO applicants must clear IELTS Academic at 6.0 or the Symbiosis IELA test at band 4",
+              "Applicants holding a compartment or supplementary result in the final qualifying examination are not eligible"
+            ],
+            "notes": "Admission runs through SCIE for every international category, and the current fee page has not yet been updated to the 2026-27 academic year.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/"
+          },
+          "admissionsContent": {
+            "overview": "Symbiosis Centre for Media and Communication admits international applicants through SCIE to its Bachelor of Arts in Mass Communication, offered as a three-year or four-year full-time programme. Foreign National, OCI and PIO applicants are exempted from SET and SITEEE, and selection rests on the Class 12 transcript, statement of purpose and two letters of recommendation.",
+            "eligibility": {
+              "intro": "Entry is from Class 12 or a recognised three-year technical diploma, in any stream.",
+              "items": [
+                "Class 12 or equivalent from a recognised board with a minimum of 50 per cent marks",
+                "A 10+3 diploma approved by a State Board of Technical Education with a minimum of 50 per cent marks is also accepted",
+                "IELTS Academic 6.0 overall or the Symbiosis IELA test at band 4 for Foreign National, OCI and PIO applicants",
+                "Applicants carrying a compartment in the final qualifying result are not eligible for admission"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the SCIE online application portal and complete the undergraduate application form",
+              "Upload Class 10 and Class 12 marksheets, passport copy, statement of purpose and two letters of recommendation",
+              "Pay the application fee: USD 65 for Foreign Nationals and USD 120 for NRI, OCI and PIO applicants, plus USD 50 if taking the IELA test",
+              "SCIE verifies the documents and the Admission Committee weighs the Class 12 transcript at 90 per cent, the statement of purpose at 5 per cent and the two recommendations at 5 per cent",
+              "Accept the offer letter by paying the administrative fee and part payment of the annual academic fee within the stated period",
+              "Collect the Provisional Admission Letter for the Indian student visa, then report to SCIE in Pune between 13 and 15 July 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 or equivalent final marksheet, front and back",
+                "Class 12 or equivalent final marksheet, with a certified English translation if not issued in English",
+                "Predicted score or pre-board marks endorsed by the school principal on letterhead if Class 12 results are pending",
+                "IELTS Academic or Symbiosis IELA result for Foreign National, OCI and PIO applicants",
+                "Migration certificate and transfer certificate in original where Class 12 was taken with an Indian board"
+              ],
+              "application": [
+                "Photocopy of a valid passport, mandatory for every applicant",
+                "Statement of purpose of up to 1,000 words",
+                "Two letters of recommendation from a teacher or principal who has known the applicant for at least two years, on letterhead with stamp and signature",
+                "Proof of application-fee payment, including the SWIFT, NEFT or RTGS transaction copy where used",
+                "OCI or PIO card where that category is claimed, and a citizen card for Nepali or Bhutanese nationals"
+              ]
+            },
+            "deadlinesNote": "Reporting for the 2026 intake runs 13 to 15 July 2026, with classes commencing 16 July 2026. Outstanding eligibility documents must reach SCIE by 31 August.",
+            "visaConsiderations": [
+              "SCIE issues the Provisional Admission Letter for the visa application only after the administrative fee and part payment of the annual academic fee are received",
+              "The visa must be a student visa naming Symbiosis International University; other visa categories are not accepted at final admission",
+              "Holders of a long-term student visa must register with the FRRO or FRO in Pune within 14 days of arrival",
+              "Nepali and Bhutanese nationals are not asked for a visa or residential permit at reporting"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "The fee published for this programme is still the 2025-26 figure and the table is headed with the name of a different SCMC-campus degree, so it is recorded here as indicative rather than confirmed. The Foreign National academic fee shown is USD 1,300 per annum with a USD 275 refundable institute deposit and a USD 275 administrative fee; the NRI and OCI figure is USD 6,775 per annum with a USD 550 administrative fee, a first-year total of USD 7,600. Hostel accommodation is published at USD 650 per year plus a USD 250 deposit and the meal plan at USD 560 per year, billed by the institute at joining.",
+          "teachingPhases": [
+            {
+              "phase": "Three-year or four-year Bachelor of Arts in Mass Communication",
+              "language": "English",
+              "details": "Taught at Symbiosis Centre for Media and Communication on the Viman Nagar campus in Pune; the detailed programme structure is maintained by the institute at scmc.edu.in."
+            }
+          ]
+        },
+        {
+          "slug": "siu-sid-pune-bdes",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design (B.Des), Symbiosis Institute of Design, Pune",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2025-2026",
+            "annualTuitionMinUsd": 1300,
+            "annualTuitionMaxUsd": 8920,
+            "verifiedAt": "2026-08-22",
+            "notes": "SCIE still publishes this programme's fee for the 2025-26 academic year. The range spans the Foreign National academic fee of USD 1,300 per annum, with a USD 275 refundable institute deposit and a USD 275 administrative fee giving a first-year total of USD 1,850, and the NRI and OCI academic fee of USD 8,920 per annum, with a USD 550 administrative fee giving a first-year total of USD 9,745. No 2026-27 figure was published at the checked date, so the fee is recorded as indicative."
+          },
+          "officialProgramUrl": "https://www.scie.ac.in/bachelor-of-design-sid-pune/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign Nationals holding a passport of any country other than India",
+              "Overseas Citizen of India and Person of Indian Origin card holders",
+              "Non-Resident Indians who took a qualifying examination outside India"
+            ],
+            "restrictions": [
+              "SCIE earmarks 20 per cent of each programme's intake for the international categories, so seats are capped",
+              "Foreign National, OCI and PIO applicants must clear IELTS Academic at 6.0 or the Symbiosis IELA test at band 4",
+              "Applicants holding a compartment or supplementary result in the final qualifying examination are not eligible"
+            ],
+            "notes": "Admission runs through SCIE for every international category; the portfolio requirement applies in addition to the standard document set.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/"
+          },
+          "admissionsContent": {
+            "overview": "Symbiosis Institute of Design admits international applicants through SCIE to a four-year Bachelor of Design with a compulsory portfolio. Alongside the standard SCIE document set, design applicants answer design-specific statement-of-purpose questions and email five high-resolution specimens of their creative work to the international admissions office.",
+            "eligibility": {
+              "intro": "Entry is from Class 12 or a recognised technical diploma, and a portfolio of creative work is required in addition to the academic threshold.",
+              "items": [
+                "Class 12 or equivalent from a recognised board with a minimum of 50 per cent marks",
+                "A 10+3 diploma approved by a State Board of Technical Education with a minimum of 50 per cent marks is also accepted",
+                "A portfolio of relevant creative work must be uploaded with the online registration form",
+                "IELTS Academic 6.0 overall or the Symbiosis IELA test at band 4 for Foreign National, OCI and PIO applicants"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the SCIE online application portal and complete the undergraduate application form",
+              "Upload Class 10 and Class 12 marksheets, passport copy, statement of purpose and two letters of recommendation",
+              "Upload the design portfolio and email five high-resolution specimens of creative work to intadmissions@symbiosis.ac.in",
+              "Pay the application fee: USD 65 for Foreign Nationals and USD 120 for NRI, OCI and PIO applicants, plus USD 50 if taking the IELA test",
+              "SCIE verifies the documents and the Admission Committee weighs the Class 12 transcript at 90 per cent, the statement of purpose at 5 per cent and the two recommendations at 5 per cent",
+              "Accept the offer letter by paying the administrative fee and part payment of the annual academic fee within the stated period",
+              "Collect the Provisional Admission Letter for the Indian student visa, then report to SCIE in Pune on 29 or 30 June 2026"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 or equivalent final marksheet, front and back",
+                "Class 12 or equivalent final marksheet, with a certified English translation if not issued in English",
+                "Predicted score or pre-board marks endorsed by the school principal on letterhead if Class 12 results are pending",
+                "IELTS Academic or Symbiosis IELA result for Foreign National, OCI and PIO applicants",
+                "Migration certificate and transfer certificate in original where Class 12 was taken with an Indian board"
+              ],
+              "application": [
+                "Photocopy of a valid passport, mandatory for every applicant",
+                "Statement of purpose of up to 1,000 words",
+                "Two letters of recommendation from a teacher or principal who has known the applicant for at least two years, on letterhead with stamp and signature",
+                "Proof of application-fee payment, including the SWIFT, NEFT or RTGS transaction copy where used",
+                "OCI or PIO card where that category is claimed, and a citizen card for Nepali or Bhutanese nationals",
+                "Design portfolio, plus five high-resolution specimens of creative work emailed to intadmissions@symbiosis.ac.in"
+              ]
+            },
+            "deadlinesNote": "Reporting for the 2026 intake is on 29 and 30 June 2026, with classes commencing 1 July 2026. Outstanding eligibility documents must reach SCIE by 31 August.",
+            "visaConsiderations": [
+              "SCIE issues the Provisional Admission Letter for the visa application only after the administrative fee and part payment of the annual academic fee are received",
+              "The visa must be a student visa naming Symbiosis International University; other visa categories are not accepted at final admission",
+              "Holders of a long-term student visa must register with the FRRO or FRO in Pune within 14 days of arrival",
+              "Nepali and Bhutanese nationals are not asked for a visa or residential permit at reporting"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "The published fee is still the 2025-26 figure, so it is recorded as indicative. Foreign Nationals are shown at USD 1,300 academic fee per annum with a USD 275 refundable institute deposit and a USD 275 administrative fee, a first-year total of USD 1,850. NRI and OCI applicants are shown at USD 8,920 academic fee per annum with a USD 550 administrative fee, a first-year total of USD 9,745. Hostel accommodation is published at USD 650 per year plus a USD 250 deposit and the annual meal plan at USD 560, both billed by the institute at joining. Applicants also pay a one-time application fee of USD 65 as a Foreign National or USD 120 as an NRI, OCI or PIO candidate.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year Bachelor of Design",
+              "language": "English",
+              "details": "Specialisations in Communication Design, Industrial Design, Fashion Design and Fashion Communication, taught at Symbiosis Institute of Design, Pune; the programme structure is published by the institute at sid.edu.in."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "identity",
+      "claimText": "Symbiosis International (Deemed University) is established under Section 3 of the UGC Act, 1956 and awarded Category-I status by the UGC; its registered address is Lavale, Pune 412115, Maharashtra.",
+      "status": "verified",
+      "sourceLabel": "SIU Public Self Disclosure",
+      "sourceUrl": "https://www.siu.edu.in/uploads/pdf/SIU_Public_Self_Disclosure.pdf",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC records Symbiosis International (Deemed University), AISHE U-0329, Maharashtra, at Grade A++ with a CGPA of 3.56 in Cycle 3, declared 20 December 2022.",
+      "status": "verified",
+      "sourceLabel": "NAAC accreditation status register - valid-accreditation workbook as on 14-08-2025",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822, corroborated against 136th Standing Committee result PDF (136SC_Appeal.pdf, 20 Dec 2022). The workbook publishes a declaration date, not an expiry date, so no validity end date is stated in public copy.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The Bar Council of India Approved List of Centres of Legal Education records Symbiosis Society's Law College, Pune with approval to 2026-27 for its 5-year B.A. LL.B. (Hons.), 5-year BBA LL.B. (Hons.), 5-year B.Com. LL.B. (Hons.) and 3-year LL.B. courses.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - recognised universities and colleges",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822 from the BCI Approved List of CLEs PDF (106 pages, uploaded 2026-08-20), page 48, Maharashtra. BCI approval attaches to UG law courses only; no LL.M. claim is made because BCI does not accredit LL.M. programmes.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA Management (Post Graduate) register lists Symbiosis Institute of Business Management Pune, Symbiosis International (Deemed University), programme Master of Business Administration, level Post Graduate, status ACCREDITED, for academic years 2024-25, 2025-26 and 2026-27, upto 30 June 2027.",
+      "status": "verified",
+      "sourceLabel": "NBA accreditation programme register - Management (Post Graduate)",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822; register row re-read directly from the NBA Management (Post Graduate) register on 2026-08-22. NBA Management (Post Graduate) register row, read 2026-08-22: 'Symbiosis Institute of Business Management Pune, Symbiosis International (Deemed University) (Pune) | Master of Business Administration | Post Graduate | ACCREDITED | Academic Year 2024-25, 2025-26 and 2026-27, i.e., upto 30/06/2027'. The register names this exact programme, so the badge is scoped to it rather than to 'MBA (various)'. Sibling SIU institutes hold separately named awards (SIIB Pune MBA (International Business), SIOM Nashik MBA (Operations Management)) and are not covered by this badge. Only the accreditation period evidences current status. SIU's Tier I (Washington Accord) engineering holdings sit with Symbiosis Institute of Technology, whose B.Tech programmes are not packaged in this bundle, so no Tier I badge is written here. SIU is not on the UGC Institution of Eminence list and no IoE claim is made.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "identity",
+      "claimText": "The Symbiosis idea was conceived by Prof. Dr. S. B. Mujumdar in 1971 to support foreign students in Pune; the Symbiosis family now hosts more than 40,000 Indian and international students from over 85 countries, and Symbiosis Society is the sponsoring body of the university.",
+      "status": "verified",
+      "sourceLabel": "SIU - Our Legacy",
+      "sourceUrl": "https://www.siu.edu.in/about-us/our-legacy",
+      "sourceGrade": "A",
+      "reviewBy": "2027-08-21",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF 2025 places SIU 24th in the University category, Symbiosis Law School Pune 7th in Law and Symbiosis Institute of Business Management Pune 11th in Management.",
+      "status": "verified",
+      "sourceLabel": "SIU - Accreditation and Recognition",
+      "sourceUrl": "https://www.siu.edu.in/about-us/why-us/accreditation-and-recognition",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF is the Ministry of Education ranking framework; always cite with its year. Corroborated at nirfindia.org.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "recognitionBadges",
+      "claimText": "Symbiosis Centre for Management and Human Resource Development, a constituent institute of Symbiosis International University, is listed in the AACSB accredited-school directory.",
+      "status": "verified",
+      "sourceLabel": "AACSB accredited school listing",
+      "sourceUrl": "https://www.aacsb.edu/accredited/s/symbiosis-international-university-symbiosis-centre-for-management-and-human-resource-development",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Institute-specific accreditation, not university-wide. SIBM Pune is not covered by this record and no AACSB claim is made for it.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "admissions",
+      "claimText": "Admissions of international students are centralised for all constituent institutes and routed through the Symbiosis Centre for International Education; SCIE earmarks 20 per cent of the total intake of each programme for Foreign Nationals, PIO and OCI card holders and Non-Resident Indians.",
+      "status": "verified",
+      "sourceLabel": "SIU - International Admissions",
+      "sourceUrl": "https://www.siu.edu.in/admissions/international-admissions",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "SIU's SNAP site states a 25 per cent over-and-above intake for PG; the 20 per cent figure published by SIU and SCIE is used here. Re-check both at review.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "admissions",
+      "claimText": "Foreign National, OCI and PIO candidates are exempted from the Symbiosis entrance test and must instead take an English proficiency test; for NRI candidates applying under the international category the entrance exam is not mandatory.",
+      "status": "verified",
+      "sourceLabel": "SNAP - Symbiosis admission for international students",
+      "sourceUrl": "https://www.snaptest.org/symbiosis-international-students.html",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by SIU UG Prospectus 2026-27 page 79, which exempts OCI/PIO/FN from SET and SITEEE 2026.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "eligibility",
+      "claimText": "An English proficiency test is mandatory for Foreign National, OCI and PIO applicants: IELTS Academic with a minimum overall score of 6.0, or the Symbiosis IELA test at a minimum band 4 of 6, conducted online by the English Language Teaching Institute of Symbiosis.",
+      "status": "verified",
+      "sourceLabel": "SCIE - English Language Requirement",
+      "sourceUrl": "https://www.scie.ac.in/english-language-requirement/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "fees",
+      "claimText": "The Golden Jubilee Scholarship for Foreign Nationals covers academic fees of USD 1,300 per year for undergraduate programmes other than MBBS, USD 2,600 per year for MBA programmes and USD 1,950 per year for other postgraduate programmes; it excludes Indian, NRI, OCI and PIO students, short-term programmes, doctoral programmes and part-time programmes. Fees payable by Foreign Nationals are listed as a USD 65 application fee, USD 50 English test fee where applicable, USD 275 administrative fee, USD 650 annual hostel fee plus a USD 250 deposit, and a USD 560 annual meal plan.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Scholarship",
+      "sourceUrl": "https://www.scie.ac.in/scholarship/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Scholarship amounts match the Foreign National academic-fee figures in each programme fee table exactly. Public copy states both facts without asserting that tuition is fully waived.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "fees",
+      "claimText": "The application fee is USD 65 for Foreign Nationals and USD 120 for NRI, OCI and PIO applicants; the IELA examination fee is USD 50 and non-refundable. Except for students from Nepal and Bhutan, all transactions must be made in USD and no cash payments are accepted.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Payment Information",
+      "sourceUrl": "https://www.scie.ac.in/payment-information/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "hostelOverview",
+      "claimText": "Students admitted to a residential programme must stay in the campus hostel; hostel accommodation is not guaranteed and is available only against vacancies, with the decision of the institute Director or Principal final. Undergraduate hostels operate at Viman Nagar, Vishwabhavan, Lavale Hill Base, Lavale Hill Top, Model Colony, Noida, Hyderabad and Nagpur.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Accommodations",
+      "sourceUrl": "https://www.scie.ac.in/accommodations/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "safetyOverview",
+      "claimText": "Foreigners on a long-term visa exceeding 180 days must register with the FRRO or FRO within 14 days of arrival; Pakistani nationals must report within 24 hours, Afghan nationals within 7 days and Bangladeshi nationals on a student visa within 7 days. The rules are published by the Police Commissioner's Office, Pune.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Foreigners Registrations",
+      "sourceUrl": "https://www.scie.ac.in/foreigners-registrations/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "studentSupport",
+      "claimText": "SCIE provides orientation programmes, buddy and mentor allocation, timetable setup, accommodation assistance and support with Foreigners' Registration Office formalities, and hosts an International Students' Council. International Students' Day at SIU falls on 29 to 31 July 2026.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Student Mobility",
+      "sourceUrl": "https://www.scie.ac.in/student-mobility/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "International Students' Day dates corroborated by the SCIE 2026 commencement and reporting dates PDF.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "symbiosis-international-university",
+      "publicField": "practicalExposure",
+      "claimText": "SIU runs a Global Immersion Programme offering a semester abroad at partner universities with a floating credit semester, mutual credit recognition and in some cases tuition waivers, plus two-to-four-week summer and winter schools and overseas internships; incoming exchange and free-moving students can study one or two semesters with transferable credits.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Student Mobility",
+      "sourceUrl": "https://www.scie.ac.in/student-mobility/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-08-21",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sibm-pune-mba",
+      "publicField": "eligibility",
+      "claimText": "Entry to the SIBM Pune MBA requires a graduate degree from a recognised university or institution of national importance with a minimum of 50 per cent marks or equivalent grade; the programme runs two years full time.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme page - siu-sibm-pune-mba",
+      "sourceUrl": "https://www.scie.ac.in/mba-courses-sibm-pune-lavale/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sibm-pune-mba",
+      "publicField": "admissions",
+      "claimText": "Postgraduate international applicants are shortlisted by the Admission Committee on graduation transcripts at 90 per cent, statement of purpose at 5 per cent and two letters of recommendation at 5 per cent, after SCIE verifies the uploaded documents.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Apply for Postgraduate",
+      "sourceUrl": "https://www.scie.ac.in/apply-for-postgraduate/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sibm-pune-mba",
+      "publicField": "intake",
+      "claimText": "SIBM Pune reporting for the 2026 MBA intake runs 29 May to 3 June 2026, with commencement on 3 June 2026.",
+      "status": "verified",
+      "sourceLabel": "SCIE UG and PG Commencement and Reporting Dates 2026",
+      "sourceUrl": "https://www.scie.ac.in/wp-content/uploads/2026/07/UG-and-PG-Commencement-and-Reporting-dates-2026.pdf",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sibm-pune-mba",
+      "publicField": "fee",
+      "claimText": "SCIE publishes the 2026-27 MBA academic fee at USD 2,600 per annum for Foreign Nationals, a USD 3,150 first-year total with deposit and administrative fee, and USD 23,200 per annum for NRI and OCI applicants, a USD 24,025 first-year total.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme fee table - siu-sibm-pune-mba",
+      "sourceUrl": "https://www.scie.ac.in/mba-courses-sibm-pune-lavale/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Two published rates by applicant category; the catalogue headline uses the Foreign National academic fee and both figures appear in the fee notes.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sibm-pune-mba",
+      "publicField": "recognition",
+      "claimText": "The NBA Management (Post Graduate) register lists the Master of Business Administration at Symbiosis Institute of Business Management Pune as ACCREDITED for academic years 2024-25, 2025-26 and 2026-27, upto 30 June 2027.",
+      "status": "verified",
+      "sourceLabel": "NBA accreditation programme register - Management (Post Graduate)",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NBA Management (Post Graduate) register row, read 2026-08-22: 'Symbiosis Institute of Business Management Pune, Symbiosis International (Deemed University) (Pune) | Master of Business Administration | Post Graduate | ACCREDITED | Academic Year 2024-25, 2025-26 and 2026-27, i.e., upto 30/06/2027'. The register names this exact programme, so the badge is scoped to it rather than to 'MBA (various)'. Sibling SIU institutes hold separately named awards (SIIB Pune MBA (International Business), SIOM Nashik MBA (Operations Management)) and are not covered by this badge. Only the accreditation period evidences current status.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sibm-pune-mba",
+      "publicField": "language",
+      "claimText": "An English proficiency test is mandatory for Foreign National, OCI and PIO applicants to this programme: IELTS Academic at 6.0 overall or the Symbiosis IELA test at band 4.",
+      "status": "verified",
+      "sourceLabel": "SCIE - English Language Requirement",
+      "sourceUrl": "https://www.scie.ac.in/english-language-requirement/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sls-pune-ba-llb-hons",
+      "publicField": "eligibility",
+      "claimText": "Entry to the B.A. LL.B. (Honours) at Symbiosis Law School, Pune requires Class 12 or equivalent in any stream from a recognised board or university with a minimum of 45 per cent marks; the programme runs five years full time.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme page - siu-sls-pune-ba-llb-hons",
+      "sourceUrl": "https://www.scie.ac.in/bachelor-of-arts-and-bachelor-of-laws-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sls-pune-ba-llb-hons",
+      "publicField": "admissions",
+      "claimText": "Undergraduate international applicants are shortlisted on the Class 12 transcript at 90 per cent, statement of purpose at 5 per cent and two letters of recommendation at 5 per cent, with the full document set uploaded through the SCIE portal.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Apply for Undergraduate",
+      "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sls-pune-ba-llb-hons",
+      "publicField": "intake",
+      "claimText": "SLS Pune reporting for the 2026 intake runs 24 to 27 June and 29 to 30 June 2026, with commencement in the first week of July 2026.",
+      "status": "verified",
+      "sourceLabel": "SCIE UG and PG Commencement and Reporting Dates 2026",
+      "sourceUrl": "https://www.scie.ac.in/wp-content/uploads/2026/07/UG-and-PG-Commencement-and-Reporting-dates-2026.pdf",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sls-pune-ba-llb-hons",
+      "publicField": "fee",
+      "claimText": "SCIE publishes the 2026-27 academic fee at USD 1,300 per annum for Foreign Nationals, a USD 1,850 first-year total, and USD 8,900 per annum for NRI and OCI applicants, a USD 9,725 first-year total.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme fee table - siu-sls-pune-ba-llb-hons",
+      "sourceUrl": "https://www.scie.ac.in/bachelor-of-arts-and-bachelor-of-laws-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Two published rates by applicant category; the catalogue headline uses the Foreign National academic fee and both figures appear in the fee notes.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sls-pune-ba-llb-hons",
+      "publicField": "recognition",
+      "claimText": "The Bar Council of India Approved List of Centres of Legal Education records the 5-year B.A. LL.B. (Hons.) at Symbiosis Society's Law College, Pune, with a sanctioned strength of 180, as approved to 2026-27.",
+      "status": "verified",
+      "sourceLabel": "Bar Council of India - recognised universities and colleges",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Regulator verification 2026-08-22 by claude-india-regverify-20260822, BCI Approved List of CLEs page 48. The affiliating-university column in that PDF is a merged cell and is not aligned to the data rows; only college name, course and approval-till were relied on.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sls-pune-ba-llb-hons",
+      "publicField": "language",
+      "claimText": "An English proficiency test is mandatory for Foreign National, OCI and PIO applicants to this programme: IELTS Academic at 6.0 overall or the Symbiosis IELA test at band 4.",
+      "status": "verified",
+      "sourceLabel": "SCIE - English Language Requirement",
+      "sourceUrl": "https://www.scie.ac.in/english-language-requirement/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-ssla-pune-liberal-arts-hons",
+      "publicField": "eligibility",
+      "claimText": "Entry to the B.A./B.Sc. Liberal Arts (Honours) at Symbiosis School for Liberal Arts requires Class 12 or equivalent in any stream from a recognised board or university with a minimum of 50 per cent marks; applicants awaiting results may apply subject to passing before commencement. The programme runs four years.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme page - siu-ssla-pune-liberal-arts-hons",
+      "sourceUrl": "https://www.scie.ac.in/ba-bsc-liberal-arts-honours-ssla-pune-scie/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-ssla-pune-liberal-arts-hons",
+      "publicField": "admissions",
+      "claimText": "Undergraduate international applicants are shortlisted on the Class 12 transcript at 90 per cent, statement of purpose at 5 per cent and two letters of recommendation at 5 per cent through the SCIE portal.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Apply for Undergraduate",
+      "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-ssla-pune-liberal-arts-hons",
+      "publicField": "intake",
+      "claimText": "SSLA Pune reporting for the 2026 intake is on 17 and 18 July 2026, with commencement on 20 July 2026.",
+      "status": "verified",
+      "sourceLabel": "SCIE UG and PG Commencement and Reporting Dates 2026",
+      "sourceUrl": "https://www.scie.ac.in/wp-content/uploads/2026/07/UG-and-PG-Commencement-and-Reporting-dates-2026.pdf",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-ssla-pune-liberal-arts-hons",
+      "publicField": "fee",
+      "claimText": "SCIE publishes the 2026-27 academic fee at USD 1,300 per annum for Foreign Nationals, a USD 1,850 first-year total, and USD 9,575 per annum for NRI and OCI applicants, a USD 10,400 first-year total.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme fee table - siu-ssla-pune-liberal-arts-hons",
+      "sourceUrl": "https://www.scie.ac.in/ba-bsc-liberal-arts-honours-ssla-pune-scie/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Two published rates by applicant category; the catalogue headline uses the Foreign National academic fee and both figures appear in the fee notes.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-ssla-pune-liberal-arts-hons",
+      "publicField": "language",
+      "claimText": "An English proficiency test is mandatory for Foreign National, OCI and PIO applicants to this programme: IELTS Academic at 6.0 overall or the Symbiosis IELA test at band 4.",
+      "status": "verified",
+      "sourceLabel": "SCIE - English Language Requirement",
+      "sourceUrl": "https://www.scie.ac.in/english-language-requirement/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-scmc-pune-ba-mass-communication",
+      "publicField": "eligibility",
+      "claimText": "Entry to the B.A. Mass Communication at Symbiosis Centre for Media and Communication requires Class 12 or equivalent from a recognised board, or a 10+3 diploma approved by a State Board of Technical Education, with a minimum of 50 per cent marks. The programme runs three or four years full time.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme page - siu-scmc-pune-ba-mass-communication",
+      "sourceUrl": "https://www.scie.ac.in/ba-mass-communication-scmc-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-scmc-pune-ba-mass-communication",
+      "publicField": "admissions",
+      "claimText": "Undergraduate international applicants are shortlisted on the Class 12 transcript at 90 per cent, statement of purpose at 5 per cent and two letters of recommendation at 5 per cent through the SCIE portal.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Apply for Undergraduate",
+      "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-scmc-pune-ba-mass-communication",
+      "publicField": "intake",
+      "claimText": "SCMC Pune reporting for the 2026 intake runs 13 to 15 July 2026, with commencement on 16 July 2026.",
+      "status": "verified",
+      "sourceLabel": "SCIE UG and PG Commencement and Reporting Dates 2026",
+      "sourceUrl": "https://www.scie.ac.in/wp-content/uploads/2026/07/UG-and-PG-Commencement-and-Reporting-dates-2026.pdf",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-scmc-pune-ba-mass-communication",
+      "publicField": "fee",
+      "claimText": "The published academic fee is still the 2025-26 figure and the fee table is headed with the name of a different SCMC-campus degree: USD 1,300 per annum for Foreign Nationals and USD 6,775 per annum for NRI and OCI applicants. Treated as indicative pending a 2026-27 update.",
+      "status": "indicative",
+      "sourceLabel": "SCIE programme fee table - siu-scmc-pune-ba-mass-communication",
+      "sourceUrl": "https://www.scie.ac.in/ba-mass-communication-scmc-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Two published rates by applicant category; the catalogue headline uses the Foreign National academic fee and both figures appear in the fee notes.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-scmc-pune-ba-mass-communication",
+      "publicField": "fee",
+      "claimText": "No 2026-27 academic fee had been published for this programme at the checked date, so the 2025-26 published figures are carried as an indicative range.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme fee table - siu-scmc-pune-ba-mass-communication",
+      "sourceUrl": "https://www.scie.ac.in/ba-mass-communication-scmc-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-scmc-pune-ba-mass-communication",
+      "publicField": "language",
+      "claimText": "An English proficiency test is mandatory for Foreign National, OCI and PIO applicants to this programme: IELTS Academic at 6.0 overall or the Symbiosis IELA test at band 4.",
+      "status": "verified",
+      "sourceLabel": "SCIE - English Language Requirement",
+      "sourceUrl": "https://www.scie.ac.in/english-language-requirement/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sid-pune-bdes",
+      "publicField": "eligibility",
+      "claimText": "Entry to the Bachelor of Design at Symbiosis Institute of Design requires Class 12 or equivalent from a recognised board, or a 10+3 diploma approved by a State Board of Technical Education, with a minimum of 50 per cent marks, plus a portfolio of relevant creative work uploaded with the registration form. The programme runs four years.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme page - siu-sid-pune-bdes",
+      "sourceUrl": "https://www.scie.ac.in/bachelor-of-design-sid-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sid-pune-bdes",
+      "publicField": "admissions",
+      "claimText": "Design applicants complete the SCIE undergraduate route and additionally answer design-specific statement-of-purpose questions and email five high-resolution specimens of creative work to intadmissions@symbiosis.ac.in.",
+      "status": "verified",
+      "sourceLabel": "SCIE - Apply for Undergraduate",
+      "sourceUrl": "https://www.scie.ac.in/apply-for-undergraduate/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sid-pune-bdes",
+      "publicField": "intake",
+      "claimText": "SID Pune reporting for the 2026 intake is on 29 and 30 June 2026, with commencement on 1 July 2026.",
+      "status": "verified",
+      "sourceLabel": "SCIE UG and PG Commencement and Reporting Dates 2026",
+      "sourceUrl": "https://www.scie.ac.in/wp-content/uploads/2026/07/UG-and-PG-Commencement-and-Reporting-dates-2026.pdf",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sid-pune-bdes",
+      "publicField": "fee",
+      "claimText": "The published academic fee is still the 2025-26 figure: USD 1,300 per annum for Foreign Nationals, a USD 1,850 first-year total, and USD 8,920 per annum for NRI and OCI applicants, a USD 9,745 first-year total. Treated as indicative pending a 2026-27 update.",
+      "status": "indicative",
+      "sourceLabel": "SCIE programme fee table - siu-sid-pune-bdes",
+      "sourceUrl": "https://www.scie.ac.in/bachelor-of-design-sid-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Two published rates by applicant category; the catalogue headline uses the Foreign National academic fee and both figures appear in the fee notes.",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sid-pune-bdes",
+      "publicField": "fee",
+      "claimText": "No 2026-27 academic fee had been published for this programme at the checked date, so the 2025-26 published figures are carried as an indicative range.",
+      "status": "verified",
+      "sourceLabel": "SCIE programme fee table - siu-sid-pune-bdes",
+      "sourceUrl": "https://www.scie.ac.in/bachelor-of-design-sid-pune/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "symbiosis-international-university",
+      "programmeSlug": "siu-sid-pune-bdes",
+      "publicField": "language",
+      "claimText": "An English proficiency test is mandatory for Foreign National, OCI and PIO applicants to this programme: IELTS Academic at 6.0 overall or the Symbiosis IELA test at band 4.",
+      "status": "verified",
+      "sourceLabel": "SCIE - English Language Requirement",
+      "sourceUrl": "https://www.scie.ac.in/english-language-requirement/",
+      "sourceGrade": "A",
+      "reviewBy": "2027-02-22",
+      "checkedAt": "2026-08-22"
+    }
+  ]
+}

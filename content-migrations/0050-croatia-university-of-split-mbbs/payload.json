@@ -1,0 +1,128 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": ["Bachelor of Medicine and Bachelor of Surgery", "Doctor of Medicine", "General Medicine", "Medicine and Surgery", "Single-Cycle Degree in Medicine and Surgery"],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. The University of Split School of Medicine maps its English-medium Medical Studies in English programme to this category: a direct-entry, single-cycle six-year programme leading to the Doctor of Medicine qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "croatia",
+      "slug": "university-of-split-school-of-medicine",
+      "name": "University of Split School of Medicine",
+      "city": "Split",
+      "type": "Public",
+      "establishedYear": 1997,
+      "officialWebsite": "https://mefst.unist.hr/",
+      "mediaAttribution": {},
+      "summary": "University of Split School of Medicine delivers Medical Studies in English as a six-year, 360-ECTS integrated programme leading to the Doctor of Medicine qualification. The route combines foundational science, clinical skills and supervised clinical learning in Split, with a published 2026/27 fee and two application categories for international applicants.",
+      "campusLifestyle": "Medical Studies in English is delivered at the School of Medicine in Split. The School's new-student information links international students with the Medical Studies in English office, counselling and student-support resources while the arrival guide explains local administrative steps and private-housing search routes.",
+      "cityProfile": "Split is the programme's Croatian study location. The School directs foreign students to private accommodation rather than presenting School-provided housing; its published guide advises a full-stay rental contract because of the local tourist season. No verified standard living-cost figure is included in this package.",
+      "practicalExposure": "The official curriculum sets out 5,500 hours of direct teaching across six years. It moves from natural and basic medical sciences into clinical sciences, clinical skills and a graduate thesis. Clinical Propedeutics follows successful completion of Year 2 and introduces direct patient work; later clinical subjects and rotations develop supervised experience through the final year, which concludes with aggregate knowledge and skills examinations.",
+      "hostelOverview": "The School's published new-student guide directs foreign students to private accommodation and provides housing-search resources. It does not offer a School-operated housing guarantee or a current standard room price for this programme, so accommodation costs and availability are not included in the programme fee.",
+      "dietarySupport": "No current School-operated meal plan or programme-specific food-cost schedule was verified. This package therefore does not present food costs as part of tuition or a fixed student budget.",
+      "safetyOverview": "No School-published campus-safety statistics were identified for this package. The arrival material focuses instead on legal stay, health cover, housing contracts and access to the School's support resources.",
+      "studentSupport": "The School publishes information on counselling, library access, an international student association, a student support group and the Medical Studies in English office. Its arrival guide covers OIB registration, temporary stay, health cover, visa orientation and housing search, while personal immigration outcomes remain determined by the relevant authority.",
+      "whyChoose": [
+        "Six-year, 360-ECTS English medical programme leading to Doctor of Medicine.",
+        "Published 2026/27 tuition and application-fee terms for the English route.",
+        "Structured clinical progression from Year 3 patient work to final-year rotations.",
+        "Croatian regulated-professions framework referenced in the official curriculum.",
+        "Dedicated international-arrival guidance and Medical Studies in English support contacts."
+      ],
+      "thingsToConsider": [
+        "The verified 2026/27 call deadlines have passed; a future call is needed for new availability.",
+        "Annual tuition excludes housing, health cover, immigration and personal living costs.",
+        "Programme scholarships or fee waivers were not published in the verified English-MD call.",
+        "Foreign-secondary recognition and document certification add steps for many applicants.",
+        "Medical registration, residency and immigration rules vary by destination and are not guaranteed by enrolment."
+      ],
+      "bestFitFor": [
+        "Applicants seeking an English integrated medical degree in Croatia with published fee terms.",
+        "Students ready for a document-led Croatian central-admission and recognition process.",
+        "Applicants able to plan private accommodation and a separate living-cost budget.",
+        "Students who will map their intended professional destination before committing to medicine abroad."
+      ],
+      "industryPartners": ["Sana Kliniken, Coburg (Germany) — collaborative teaching category only"],
+      "recognitionBadges": [
+        "Croatian regulated-professions framework — referenced by the official curriculum",
+        "University of Split School of Medicine — institutional re-accreditation review published by ASHE",
+        "FAIMER / former IMED registration — stated by the School"
+      ],
+      "recognitionLinks": [
+        {"label":"University of Split School of Medicine — Medical Studies in English curriculum","url":"https://mefst.unist.hr/studies/medical-studies-in-english/curriculum/137"},
+        {"label":"ASHE — University of Split School of Medicine re-accreditation report","url":"https://backend.deqar.eu/reports/ASHE/356342_20250917_1815_ENG_-_Final_Report_USSM_-_18.3..pdf"}
+      ],
+      "faq": [
+        {"question":"How long is Medical Studies in English at Split?","answer":"It is a six-year integrated programme leading to the Doctor of Medicine qualification, with 360 ECTS."},
+        {"question":"What is the published tuition for the English programme?","answer":"The verified 2026/27 call lists EUR 12,000 annual tuition plus a EUR 200 non-refundable application fee. It does not publish a complete living-cost budget."},
+        {"question":"When is first-year tuition due after acceptance?","answer":"The 2026/27 call requires the first-year tuition to be paid in full within one week of the electronic acceptance letter. It states that tuition is non-refundable."},
+        {"question":"What school background is required?","answer":"The verified call requires completed secondary education and final exams, with at least 12 years of prior education. It also specifies English-language evidence unless an exemption applies."},
+        {"question":"Why are there School and central-admission steps?","answer":"The School's process requires direct submission and Croatia's Central Admission Office route, which includes record verification and, where relevant, recognition of foreign secondary education."},
+        {"question":"Are there different Medical Studies in English categories?","answer":"The 2026/27 call offered an all-Split category and a category with the first three years in Split followed by three years at Sana Kliniken in Coburg, Germany. The chosen category could not later be changed."},
+        {"question":"When does direct patient work begin?","answer":"Clinical Propedeutics follows successful completion of Year 2. The official curriculum describes subsequent clinical subjects and rotations as progressively developing supervised clinical experience."},
+        {"question":"Does the degree guarantee medical registration abroad?","answer":"No. The curriculum follows Croatia's regulated-professions framework, but professional registration, licensing examinations, language requirements, immigration and residency rules are determined by the destination authority."},
+        {"question":"Is School-provided accommodation included?","answer":"No. The new-student guide directs foreign students to private accommodation and does not state a School-provided housing guarantee or a fixed programme accommodation cost."},
+        {"question":"Are English-MD scholarships published?","answer":"No programme-specific tuition scholarship or fee waiver was identified in the verified 2026/27 English-MD call. Funding discussions should use a current official award notice with its terms."}
+      ],
+      "researchSources": [
+        {"label":"University of Split School of Medicine — 2026/27 call and application procedure","url":"https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242","kind":"official-university","checkedAt":"2026-07-25","notes":"Primary admissions, fee, category and deadline source."},
+        {"label":"University of Split School of Medicine — Medical Studies in English","url":"https://mefst.unist.hr/studies/medical-studies-in-english/83","kind":"official-program","checkedAt":"2026-07-25","notes":"Programme identity, award, duration and international-route source."},
+        {"label":"University of Split School of Medicine — curriculum","url":"https://mefst.unist.hr/studies/medical-studies-in-english/curriculum/137","kind":"official-program","checkedAt":"2026-07-25","notes":"Curriculum, clinical progression and Croatian regulated-professions framework source."},
+        {"label":"University of Split School of Medicine — Clinical Propedeutics","url":"https://mefst.unist.hr/education/courses/clinical-propedeutics/2501","kind":"official-program","checkedAt":"2026-07-25","notes":"First direct-patient clinical-course source."},
+        {"label":"University of Split School of Medicine — information for new students","url":"https://mefst.unist.hr/studies/medical-studies-in-english/information-for-new-students/795","kind":"official-university","checkedAt":"2026-07-25","notes":"Arrival, housing, support and administration source."},
+        {"label":"ASHE re-accreditation report","url":"https://backend.deqar.eu/reports/ASHE/356342_20250917_1815_ENG_-_Final_Report_USSM_-_18.3..pdf","kind":"other","checkedAt":"2026-07-25","notes":"Independent institutional quality-assurance source; it is not programme-specific professional licensing evidence."}
+      ],
+      "admissionsContent": {
+        "contentState":"research_ready",
+        "sectionStates":{"decisionSummary":"research_ready","eligibility":"research_ready","fees":"published","admissions":"research_ready","academics":"published","recognition":"research_ready","studentLiving":"research_ready","scholarships":"absent","funding":"absent","placements":"research_ready"},
+        "ctas":[
+          {"trigger":"eligibility","label":"Check my Split MD eligibility","capture":["secondary-school country and completion year","academic records","English evidence","citizenship"]},
+          {"trigger":"fees","label":"Build my Split MD budget","capture":["tuition readiness","private-housing budget","health-cover need","funding requirement"]},
+          {"trigger":"application","label":"Prepare my Croatian application checklist","capture":["certified-document status","translation need","recognition requirement","target category"]},
+          {"trigger":"professional pathway","label":"Plan my clinical and professional pathway","capture":["selected programme category","practice destination","language needs","licensing objective"]}
+        ]
+      },
+      "programmes": [
+        {
+          "slug":"university-of-split-school-of-medicine-medical-studies-in-english",
+          "canonicalCourseSlug":"mbbs",
+          "officialTitle":"Medical Studies in English",
+          "durationYears":6,
+          "fee":{"status":"confirmed","academicYear":"2026-2027","officialFeeCurrency":"EUR","officialAnnualTuitionAmount":12000,"officialTotalTuitionAmount":72000,"verifiedAt":"2026-07-25","notes":"The 2026/27 call publishes EUR 12,000 annual tuition and a EUR 200 non-refundable application fee. It requires first-year tuition payment in full within one week of the electronic acceptance letter and says tuition is non-refundable. EUR 72,000 is the annual tuition multiplied by six years, not a university-published all-in package; it excludes housing, health cover, immigration and living costs."},
+          "officialProgramUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/83",
+          "audienceEligibility":{"availability":"global","eligibleAudiences":["Applicants with completed secondary education and final examinations, including at least 12 years of prior education"],"restrictions":["The verified 2026/27 call required English evidence unless prior education was in English or English is the applicant's mother tongue","Foreign secondary education may require recognition through Croatia's Central Admission Office process","The cited 2026/27 deadlines have passed; a new call is required before representing a future opening"],"notes":"The 2026/27 call used mutually exclusive all-Split and Split-to-Coburg categories.","verifiedAt":"2026-07-25","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242"},
+          "admissionsContent":{"overview":"Applicants submit the prescribed Medical Studies in English file to the School and complete Croatia's Central Admission Office route, including foreign-education recognition where applicable. The 2026/27 call used a document-led process and required payment after an electronic acceptance letter.","eligibility":{"intro":"The verified 2026/27 call requires completed secondary education with final examinations and at least 12 years of prior education, together with English-language evidence unless a published exemption applies.","items":["Completed secondary education and final examinations after at least 12 years of education","English-language evidence unless the call's exemption for English-medium schooling or mother tongue applies","Foreign-secondary education recognition through the Central Admission Office route when required","Selection of one published programme category only"]},"applicationSteps":["Send the School's prescribed English Medicine application file by the stated deadline","Register through the Postani Student portal and begin foreign-education recognition where required","Send certified records by tracked post to the Central Admission Office when the process requires it","Select Medical Studies in English after document verification","After electronic acceptance, pay first-year tuition in full within the stated one-week period"],"documentsRequired":{"academic":["Secondary-school transcripts and final or leaving certificate","Certified translations and recognition material where applicable","English-language evidence where required"],"application":["Programme application form","CV with photograph and motivation letter in English","Passport or identity document and birth certificate","Proof of EUR 200 application-fee payment"]},"deadlinesNote":"The 2026/27 call set 22 May 2026 for applicants whose secondary education ended before 31 December 2025 and 1 July 2026 for 2026 school leavers. Both dates have passed; do not market a future intake until a new official call is available.","visaConsiderations":["The School's arrival guide covers OIB registration, temporary stay, health cover and visa orientation; the applicable route depends on citizenship and is determined by Croatian authorities."]},
+          "medium":"English",
+          "instructionLanguages":["english"],
+          "intakeMonths":["October"],
+          "intakeCodes":["october"],
+          "feeVerifiedAt":"2026-07-25",
+          "feeNotes":"Confirmed 2026/27 annual tuition is EUR 12,000, with a separate EUR 200 non-refundable application fee. The fee is not a complete student budget.",
+          "teachingPhases":[{"phase":"Six-year integrated Medical Studies in English","language":"English","details":"The curriculum comprises 5,500 hours of direct teaching. It progresses from natural and basic medical sciences into clinical sciences; Clinical Propedeutics after Year 2 introduces direct patient work, and later clinical subjects and rotations build supervised experience toward final aggregate knowledge and skills examinations."}]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {"entity":"university","universitySlug":"university-of-split-school-of-medicine","publicField":"recognition","claimText":"ASHE published a re-accreditation review of the University of Split School of Medicine. The official curriculum states that Medical Studies in English implements Croatia's regulated-professions requirements for medical-doctor training.","status":"verified","sourceLabel":"ASHE re-accreditation report and University of Split official curriculum","sourceUrl":"https://backend.deqar.eu/reports/ASHE/356342_20250917_1815_ENG_-_Final_Report_USSM_-_18.3..pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25","internalNotes":"Institutional QA evidence only; public copy must not promise personal licensing outcomes."},
+    {"entity":"programme","universitySlug":"university-of-split-school-of-medicine","programmeSlug":"university-of-split-school-of-medicine-medical-studies-in-english","publicField":"academics","claimText":"Medical Studies in English is a six-year, 360-ECTS integrated programme leading to the Doctor of Medicine qualification, with 5,500 hours of direct teaching and a progression from basic sciences to clinical learning.","status":"verified","sourceLabel":"University of Split School of Medicine — Medical Studies in English and curriculum","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/curriculum/137","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"university-of-split-school-of-medicine","programmeSlug":"university-of-split-school-of-medicine-medical-studies-in-english","publicField":"eligibility","claimText":"The 2026/27 call required completed secondary education and final examinations after at least 12 years of education, plus English-language evidence unless a stated exemption applied. Foreign records may require central recognition.","status":"verified","sourceLabel":"University of Split School of Medicine — 2026/27 call and application procedure","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"},
+    {"entity":"programme","universitySlug":"university-of-split-school-of-medicine","programmeSlug":"university-of-split-school-of-medicine-medical-studies-in-english","publicField":"admissions","claimText":"The 2026/27 application process combined direct School submission with Postani Student and Central Admission Office steps, including certified-record handling and foreign-secondary recognition where applicable.","status":"verified","sourceLabel":"University of Split School of Medicine — 2026/27 call and application procedure","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"},
+    {"entity":"programme","universitySlug":"university-of-split-school-of-medicine","programmeSlug":"university-of-split-school-of-medicine-medical-studies-in-english","publicField":"intake","claimText":"The 2026/27 call used two deadlines, 22 May 2026 and 1 July 2026, based on secondary-school completion timing. Those windows are now closed and a future intake must rely on a new official call.","status":"verified","sourceLabel":"University of Split School of Medicine — 2026/27 call and application procedure","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"},
+    {"entity":"programme","universitySlug":"university-of-split-school-of-medicine","programmeSlug":"university-of-split-school-of-medicine-medical-studies-in-english","publicField":"fee","claimText":"The 2026/27 call publishes EUR 12,000 annual tuition and a EUR 200 non-refundable application fee. First-year tuition is due in full within one week of the electronic acceptance letter and tuition is non-refundable.","status":"verified","sourceLabel":"University of Split School of Medicine — 2026/27 call and application procedure","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/call-for-applicants-and-application-procedure-for-admission-into-2026-2027-medical-studies-in-english/13242","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"},
+    {"entity":"programme","universitySlug":"university-of-split-school-of-medicine","programmeSlug":"university-of-split-school-of-medicine-medical-studies-in-english","publicField":"professional pathway","claimText":"Clinical Propedeutics begins after successful completion of Year 2 and is the first clinical course involving direct patient work. Later clinical subjects and rotations develop supervised clinical experience through Year 6.","status":"verified","sourceLabel":"University of Split School of Medicine — Clinical Propedeutics","sourceUrl":"https://mefst.unist.hr/education/courses/clinical-propedeutics/2501","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"university","universitySlug":"university-of-split-school-of-medicine","publicField":"student living","claimText":"The School's new-student information directs foreign students to private accommodation and provides information on OIB, temporary stay, health cover, visa orientation and student support; it does not state School-provided housing or a standard accommodation price.","status":"verified","sourceLabel":"University of Split School of Medicine — information for new students","sourceUrl":"https://mefst.unist.hr/studies/medical-studies-in-english/information-for-new-students/795","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"}
+  ]
+}

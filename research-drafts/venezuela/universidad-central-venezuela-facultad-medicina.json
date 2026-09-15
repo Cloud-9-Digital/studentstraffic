@@ -1,0 +1,32 @@
+{
+  "scope": "Venezuela medical discovery — Universidad Central de Venezuela Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UCV's Faculty of Medicine describes its undergraduate rotating internship as supervised, full-time practical training in the final year or semester.",
+      "sourceUrl": "https://medicinaucv.com/academica.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty's published rotating-internship rules for the Luis Razetti and José María Vargas schools make the internship compulsory for the Médico Cirujano title. They specify 50 weeks across surgery, medicine, obstetrics and gynaecology, paediatrics and public health after completion through fifth year and community service.",
+      "sourceUrl": "https://medicinaucv.com/documentos/compilacion/REGLAMENTOS%20Y%20NORMAS%20APLICABLES%20A%20LOS%20ESTUDIANTES.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UCV identifies a preparatory course as an alternative route into its Faculty of Medicine for secondary-school graduates without a place through OPSU, SIMADI, a convention record or another university-entry route.",
+      "sourceUrl": "https://medicinaucv.com/propedeutico/propedeutico.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current, complete undergraduate medicine fee schedule, admissions timetable, selection requirements or international-applicant route was located.",
+    "Teaching language, total programme duration and current curriculum were not verified from a programme-level source.",
+    "The internship rules name disciplines but do not establish current named hospital sites, capacity, placement continuity, accommodation, funding or student-support provision.",
+    "No directly verifiable current programme accreditation or recognition record was located."
+  ],
+  "nextAction": "Obtain the current undergraduate medicine curriculum, admissions and fees notice, and direct confirmation of current hospital sites and recognition before considering a payload."
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "Singapore medical discovery — Duke-NUS Medical School",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Duke-NUS offers a four-year graduate-entry MD jointly awarded by Duke University and the National University of Singapore; its curriculum includes core clinical clerkships, a research-and-scholarship period, and advanced clinical rotations.",
+      "sourceUrl": "https://www.duke-nus.edu.sg/education/our-programmes/md-programme",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The MD admissions requirements require a completed or final-year bachelor or honours degree, GAMSAT or MCAT results, and three to five references; applicants already holding MBBS or equivalent are not eligible.",
+      "sourceUrl": "https://www.duke-nus.edu.sg/admissions/duke-nus-medicine-programmes/admissions-requirements",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Applicants from non-English-speaking curricula must submit TOEFL or IELTS evidence; the stated minimums include IELTS overall 7.0 and TOEFL iBT 5 for exams on or after 21 January 2026.",
+      "sourceUrl": "https://www.duke-nus.edu.sg/admissions/duke-nus-medicine-programmes/admissions-requirements",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "For the 2026-2027 MD intake, Duke-NUS lists annual tuition of SGD 50,050 for Singapore citizens, SGD 68,150 for permanent residents, and SGD 99,900 for international students; its FAQ also states that scholarships, bursaries and loans are available.",
+      "sourceUrl": "https://www.duke-nus.edu.sg/admissions/why-duke-nus/faq",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Singapore's Ministry of Health states that students accepted into Duke-NUS must sign the Government medical/dental Tuition Grant Agreement, and its First Schedule lists the Doctor of Medicine of Duke-NUS Graduate Medical School Singapore as a Singapore degree.",
+      "sourceUrl": "https://hpp.moh.gov.sg/career-practice/medical-dental-undergraduate-agreement/",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Duke-NUS says students must meet screening and immunisation requirements before matriculation because clinical training is mostly held in healthcare institutions.",
+      "sourceUrl": "https://www.duke-nus.edu.sg/admissions/duke-nus-medicine-programmes/admissions-requirements",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Duke-NUS is a distinct graduate-entry school but its jointly awarded NUS degree requires careful treatment alongside the existing National University of Singapore catalog payload; no duplicate payload was created.",
+    "A publication decision needs an explicit editorial determination on representing this graduate-entry school separately from its existing NUS parent-university entry."
+  ],
+  "nextAction": "Resolve the catalog entity and parent-university relationship, then map the verified MD data into an approved distinct-school payload only if the editorial policy permits it."
+}

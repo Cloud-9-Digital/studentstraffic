@@ -1,0 +1,198 @@
+[
+  {
+    "universitySlug": "kyrgyz-medical-dental-institute",
+    "universityName": "Kyrgyz Medical Dental Institute",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "No Wikidata or Wikipedia entry exists under this name or plausible variants (Kyrgyz State Medical and Dental Academy, medical-dental institute Bishkek). Without a verified official domain to check directly, and with this session's web-search budget exhausted, no new official logo/cover source could be located; not resolved via guesswork per instructions.",
+    "proposedPublicIds": {
+      "logo": "universities/kyrgyz-medical-dental-institute/logo",
+      "cover": "universities/kyrgyz-medical-dental-institute/cover"
+    }
+  },
+  {
+    "universitySlug": "kyrgyz-national-agrarian-university",
+    "universityName": "Kyrgyz National Agrarian University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Wikipedia's infobox carried no images at all. Went to the official site directly (knau.kg) and found the university's own dedicated logo folder, distinct from several unrelated faculty/department emblem graphics also present on the same page..",
+    "proposedPublicIds": {
+      "logo": "universities/kyrgyz-national-agrarian-university/logo",
+      "cover": "universities/kyrgyz-national-agrarian-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://knau.kg/wp-content/uploads/2021/logotips/1618561127790.png",
+      "sourceType": "official",
+      "rightsBasis": "University's own logo file in its own \"logotips\" (logotypes) uploads folder on knau.kg (official domain per Wikidata P856); verified HTTP 200.",
+      "proposedPublicId": "kyrgyz-national-agrarian-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://knau.kg/wp-content/uploads/2026/07/IMG_6393.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Campus photo (delegation visit news story) served directly from knau.kg's own uploads; verified HTTP 200.",
+      "proposedPublicId": "kyrgyz-national-agrarian-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kyrgyz-national-university",
+    "universityName": "Kyrgyz National University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Logo still held: no Commons category or Wikidata logo claim exists; both infobox images are building/gate photographs, not a logo.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/kyrgyz-national-university/logo",
+      "cover": "universities/kyrgyz-national-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/KUUbashky.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:KUUbashky.jpg, main building/gate of Kyrgyz National University, multi-licensed CC BY-SA 3.0 / GFDL; verified HTTP 200.",
+      "proposedPublicId": "kyrgyz-national-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kyrgyz-state-university-arabaev",
+    "universityName": "Kyrgyz State University Arabaev",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Cover still held: the legacy domain arabaev.kg (from Wikidata P856) now redirects to arabaevksu.edu.kg, which WebFetch could not load directly (403) but was retrievable via curl; homepage imagery beyond the logo is small blog-post thumbnails with no confirmed campus-exterior shot, so no cover was claimed.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/kyrgyz-state-university-arabaev/logo",
+      "cover": "universities/kyrgyz-state-university-arabaev/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://arabaevksu.edu.kg/public/assetss/img/logo_mi01.svg",
+      "sourceType": "official",
+      "rightsBasis": "Header logo SVG served directly from the university's current official domain arabaevksu.edu.kg, alt text \"КГУ им И. Арабаева\" (KSU named after I. Arabaev); verified HTTP 200.",
+      "proposedPublicId": "kyrgyz-state-university-arabaev-logo"
+    }
+  },
+  {
+    "universitySlug": "kyrgyz-russian-slavic-university",
+    "universityName": "Kyrgyz-Russian Slavic University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Checked the live official site (krsu.edu.kg, confirmed via Wikidata P856) directly: its header logo is rendered purely via an inline SVG-sprite <use> reference, with no standalone file at that path; the favicon/web-manifest icons trace back to generic, unconfigured Nuxt-theme boilerplate (webmanifest named \"MyWebSite\"/\"MySite\", and the 512px icon 404s on the redirected bare domain krsu.kg). No Commons category exists, and the only Wikipedia infobox image is a local non-free upload. No verified free/official asset found for either logo or cover.",
+    "proposedPublicIds": {
+      "logo": "universities/kyrgyz-russian-slavic-university/logo",
+      "cover": "universities/kyrgyz-russian-slavic-university/cover"
+    }
+  },
+  {
+    "universitySlug": "kyrgyz-uzbek-university",
+    "universityName": "Kyrgyz-Uzbek University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Checked the live official site (kumu.kg, confirmed via Wikidata P856) directly. The only image resembling a header asset is actually a promotional admissions-CTA banner (linked to priem.kumu.kg) with an obfuscated filename, not a genuine site logo; no distinct custom-logo markup was found elsewhere on the page. No Commons category or Wikidata logo/image claim exists. Not claiming the CTA banner as a logo or cover given the uncertainty.",
+    "proposedPublicIds": {
+      "logo": "universities/kyrgyz-uzbek-university/logo",
+      "cover": "universities/kyrgyz-uzbek-university/cover"
+    }
+  },
+  {
+    "universitySlug": "la-trobe-university",
+    "universityName": "La Trobe University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Logo still held: La Trobe University logo.svg is local non-free/fair-use on English Wikipedia; the only \"logo\"-named file in the Commons La Trobe category (Liralogo.jpg) is an unrelated student-club mark, not the institutional logo. Cover resolved from the Commons Bundoora campus-buildings category.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/la-trobe-university/logo",
+      "cover": "universities/la-trobe-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Donald_Whitehead_Building%2C_La_Trobe_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Donald Whitehead Building, La Trobe University.jpg by Tseenster, licensed CC BY 4.0; verified HTTP 200.",
+      "proposedPublicId": "la-trobe-university-cover"
+    }
+  },
+  {
+    "universitySlug": "langara-college-nursing",
+    "universityName": "Langara College",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Both resolved via Wikimedia Commons, not previously checked; treated the logo's rights basis as the ineligible-for-copyright wordmark determination rather than relying solely on the uploader's own-work claim over a corporate mark..",
+    "proposedPublicIds": {
+      "logo": "universities/langara-college-nursing/logo",
+      "cover": "universities/langara-college-nursing/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Langara_College_logo.png",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Langara College logo.png; the file page separately notes the mark \"does not meet the threshold of originality\" (simple text/geometric wordmark, PD-ineligible for copyright) in addition to the uploader's CC BY-SA 4.0 declaration; verified HTTP 200.",
+      "proposedPublicId": "langara-college-nursing-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Langara-college.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Langara-college.jpg, licensed Creative Commons Attribution; verified HTTP 200.",
+      "proposedPublicId": "langara-college-nursing-cover"
+    }
+  },
+  {
+    "universitySlug": "leiden-university",
+    "universityName": "Leiden University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Only cover was missing (logo already on file). Found via the Commons \"Academiegebouw (Leiden)\" subcategory rather than the broader, unfiltered \"University buildings in Leiden\" category the first pass likely skimmed.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/leiden-university/logo",
+      "cover": "universities/leiden-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Leiden-Academiegebouw-01.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Leiden-Academiegebouw-01.jpg, canal-side exterior of Leiden University's historic main Academy Building, licensed CC BY-SA 4.0; verified HTTP 200.",
+      "proposedPublicId": "leiden-university-cover"
+    }
+  },
+  {
+    "universitySlug": "lincoln-university-new-zealand",
+    "universityName": "Lincoln University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The Commons \"Logo of Lincoln University, New Zealand\" category explicitly documents the university's own CC BY release on its copyright page — a genuine institutional grant, not a mislabeled trademark. Cover is the heritage-listed Ivey Hall building shown in Wikipedia's infobox..",
+    "proposedPublicIds": {
+      "logo": "universities/lincoln-university-new-zealand/logo",
+      "cover": "universities/lincoln-university-new-zealand/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/LU_logo.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:LU logo.jpg, file description states \"Released under CC BY per http://www.lincoln.ac.nz/footer/copyright/\" — an explicit release by the university itself, not a bare self-declared upload; verified HTTP 200.",
+      "proposedPublicId": "lincoln-university-new-zealand-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ivey_Hall%2C_Lincoln_University%2C_New_Zealand.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Ivey Hall, Lincoln University, New Zealand.jpg by Michal Klajban, licensed CC BY-SA 4.0; verified HTTP 200.",
+      "proposedPublicId": "lincoln-university-new-zealand-cover"
+    }
+  }
+]

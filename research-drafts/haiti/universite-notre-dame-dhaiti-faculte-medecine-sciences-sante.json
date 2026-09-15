@@ -1,0 +1,25 @@
+{
+  "scope": "Haiti medical discovery — Université Notre Dame d'Haïti Faculty of Medicine and Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The faculty's official 2024/25 enrolment notice states that applicants may enrol in medicine or pharmacy and requires the payment slip among the enrolment documents.",
+      "sourceUrl": "https://www.fmss.undh.edu.ht/donnees_fmss/avis_2024.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The faculty's online admission form is specifically for first-year pharmacy and lists a non-refundable 5,000 Haitian gourde fee; it is not evidence of the medicine programme fee.",
+      "sourceUrl": "https://fmss.undh.edu.ht/Admission/inscriptionPh.php",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current medicine-specific admission notice, fee schedule or mandatory-charge schedule was located; the pharmacy form must not be represented as a medicine fee.",
+    "No authoritative current evidence establishes programme duration, teaching language, full academic or international eligibility, intake, curriculum, clinical sites or professional recognition.",
+    "Accommodation, scholarship or loan options, safety arrangements and student support could not be verified from authoritative current sources."
+  ],
+  "nextAction": "Obtain the current medicine admissions notice and fee card, then verify teaching language, curriculum, named clinical-training sites, recognition and support before considering a payload."
+}

@@ -1,0 +1,384 @@
+{
+  "countries": [
+    {
+      "slug": "romania",
+      "name": "Romania",
+      "region": "Europe",
+      "summary": "Romania is an EU member state with a long tradition of medical education, home to several state medical universities that have run dedicated English-medium Medicine programmes for international students for decades. Its degrees carry automatic recognition across the EU/EEA under Directive 2005/36/EC.",
+      "whyStudentsChooseIt": "Romania combines EU-recognized, direct-entry six-year Medicine degrees with an established international student community, English-medium instruction at multiple state universities, and tuition well below most Western European destinations.",
+      "climate": "Temperate continental climate with warm summers and cold, snowy winters, typical of Central-Eastern Europe.",
+      "currencyCode": "RON",
+      "metaTitle": "Study MBBS and Medicine in Romania",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Romania, including admissions, fees, EU recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Iuliu Hatieganu University of Medicine and Pharmacy maps its English-medium Medicine programme to this category: a direct-entry, single-cycle six-year, 360-ECTS programme leading to the Doctor Medic qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "romania",
+      "slug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "name": "Iuliu Hatieganu University of Medicine and Pharmacy",
+      "city": "Cluj-Napoca",
+      "type": "Public",
+      "establishedYear": 1919,
+      "officialWebsite": "https://umfcluj.ro/en/",
+      "mediaAttribution": {},
+      "summary": "Iuliu Hatieganu University of Medicine and Pharmacy in Cluj-Napoca runs a direct-entry, six-year English-medium Medicine programme leading to the Doctor Medic degree. The university is listed in the WHO World Directory of Medical Schools, and the Romanian medical qualification carries automatic recognition across the EU/EEA under Directive 2005/36/EC Annex V.",
+      "campusLifestyle": "International students join a long-established English-medium Medicine cohort alongside a parallel French-medium track, based on the university's main Cluj-Napoca campus, with a separate extension campus in Novara, Italy operating under its own fee schedule for students who choose that route.",
+      "cityProfile": "Cluj-Napoca is Romania's second-largest city and the unofficial capital of Transylvania, a major university hub with a large resident student population. The city has an international airport with European connections and an established base of foreign medical students built up over several decades.",
+      "practicalExposure": "The six-year, 360-ECTS Medicine programme combines preclinical foundation years (anatomy, physiology, biochemistry, microbiology) with later clinical training in Cluj-Napoca's teaching hospitals, culminating in the Doctor Medic degree, a Romanian medical qualification with automatic EU/EEA recognition under Directive 2005/36/EC.",
+      "hostelOverview": "The university operates student dormitories on its Hasdeu and Observator campuses, though its published dormitory-fee page reflects an outdated 2023-2024 cycle rather than a current figure. A university-affiliated recruitment portal estimates total average student living costs, including rent, utilities and food, at roughly EUR 600-800 per month; applicants should confirm current dormitory rates directly with the university before budgeting.",
+      "dietarySupport": "Campus and nearby student cafeterias serve the university community; no separate university-run meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research. Admissions and student queries are handled through the university's International Relations Office.",
+      "studentSupport": "International applicants apply and track their file through the university's own online admissions platform, with correspondence handled by the International Relations Office in Cluj-Napoca.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001415) under its Faculty of Medicine record.",
+        "The Doctor Medic qualification sits on Romania's EU Directive 2005/36/EC Annex V automatic-recognition list (reference date 1 January 2007), applicable across the EU/EEA.",
+        "Direct-entry six-year, 360-ECTS Medicine programme open to students straight from an accredited secondary school, with no prior degree required.",
+        "Officially confirmed current 2026/27 tuition of EUR 10,000 for Year 1, published in a dated university fee schedule alongside the live admissions page.",
+        "Long-established English-medium track (also available in French) at a state medical university founded in 1919, with Cluj's Faculty of Medicine tracing back to 1776."
+      ],
+      "thingsToConsider": [
+        "The university's official admissions page currently shows a live extended deadline of 12 August 2026 for the English Medicine track, which differs from its own published Session II calendar ending 16 July 2026 -- confirm the operative deadline directly with the university before applying.",
+        "WDOMS separately notes 'an entrance exam is required' for this school, which appears to conflict with the university's own file-evaluation-based international admissions route; this discrepancy was not resolved during research.",
+        "No specific numeric English-test score (such as an IELTS or TOEFL band) is published on the official admissions page -- only a general minimum B2 CEFR requirement, with several stated exemption routes.",
+        "The university's own dormitory-fee page has not been updated past the 2023-2024 cycle, so no current on-campus housing cost could be confirmed.",
+        "A separate Novara, Italy extension campus for Medicine exists under its own distinct fee schedule (EUR 14,800 for Year 1); this record covers the Cluj-Napoca campus only."
+      ],
+      "bestFitFor": [
+        "Students seeking a direct-entry, EU-recognized six-year Medicine degree at a lower tuition point than most Western European destinations.",
+        "Applicants comfortable navigating an online, file-evaluation-based admissions process without a standardized written entrance exam.",
+        "Students who have independently arranged or budgeted for off-campus housing, given the lack of a confirmed current dormitory rate."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0001415, Faculty of Medicine record",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) -- automatic recognition of the Romanian 'doctor medic' qualification across the EU/EEA, reference date 1 January 2007",
+        "Romanian Ministry of Education -- accredited state university awarding recognized medical qualifications"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Iuliu Hatieganu University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0001415" },
+        { "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02005L0036-20140117" }
+      ],
+      "faq": [
+        {
+          "question": "Is the English Medicine programme direct-entry after high school?",
+          "answer": "Yes. Admission requires completion of an accredited high school whose diploma grants access to university studies in the applicant's home country; no prior university degree is required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Doctor Medic degree, a Romanian medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 10,000 per year for Years 1 and 2, reducing in later years (Year 3: EUR 8,500; Year 4: EUR 8,000; Years 5-6: EUR 7,500 each), totaling EUR 51,500 across the 6-year programme, confirmed for the 2026/27 academic year in the university's official fee schedule."
+        },
+        {
+          "question": "Is there a separate application fee?",
+          "answer": "Yes. A non-refundable EUR 300 processing fee applies, plus a confirmation-of-place payment equal to 50% of the tuition fee once admitted, with the remainder payable by bank transfer."
+        },
+        {
+          "question": "What English-proficiency proof is required?",
+          "answer": "A minimum B2 CEFR-level English certificate not older than the university's stated validity window, unless the applicant completed secondary schooling in English or achieved B2-equivalent English in their baccalaureate exam."
+        },
+        {
+          "question": "Is there a written entrance exam?",
+          "answer": "The university's own official admissions page describes an evaluation-based international admissions route without a written exam, though the WHO World Directory of Medical Schools separately lists an entrance exam as required -- applicants should confirm the current process directly with the university."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "Enrollment for admitted students takes place in the last two weeks of September. As of this record's research date, the university's live admissions page showed an extended application deadline of 12 August 2026 for the English Medicine track."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "The university operates dormitories on its Hasdeu and Observator campuses, but its published dormitory-fee page reflects an outdated cycle rather than a current rate; confirm current cost directly with the university."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Romania?",
+          "answer": "The Doctor Medic qualification carries automatic recognition across the EU/EEA under Directive 2005/36/EC. For India specifically, graduates would need to separately satisfy India's National Medical Commission screening requirements; this was not independently verified against an NMC source during research."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Iuliu Hatieganu University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001415",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, qualification title (Doctor Medic), curriculum duration and languages of instruction."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02005L0036-20140117",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the Romanian 'doctor medic' qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "Iuliu Hatieganu University -- official admission information for international candidates",
+          "url": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, English-proficiency requirements, admissions process, 2026/27 calendar and application/confirmation fees."
+        },
+        {
+          "label": "Iuliu Hatieganu University -- official tuition fees for academic year 2026-2027 (PDF)",
+          "url": "https://cdn.umfcluj.ro/uploads/2026/05/TUITION-FEES-FOR-THE-ACADEMIC-YEAR-2026_2027.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming the current 2026/27 year-by-year Medicine tuition schedule for the fee-based international admission route."
+        },
+        {
+          "label": "Iuliu Hatieganu University -- scholarships page",
+          "url": "https://umfcluj.ro/en/students/university-fees-charges/scholarships/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence that performance scholarships exist for international students, though no specific amount is published for the English Medicine track."
+        },
+        {
+          "label": "Iuliu Hatieganu University -- average cost of living (joinumfcluj.ro)",
+          "url": "https://www.joinumfcluj.ro/en/average-cost-of-living/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "University-affiliated recruitment portal; primary evidence for the EUR 600-800/month overall living-cost estimate. Dormitory-fee page (umfcluj.ro/en/students/university-fees-charges/dormitory-fees/) was checked but only contained an outdated 2023-2024 figure, so no current dormitory rate is cited."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "English proficiency status", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "English proficiency proof", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine (English Programme)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 10000,
+            "officialTotalTuitionAmount": 51500,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition schedule: EUR 10,000 in Years 1-2, EUR 8,500 in Year 3, EUR 8,000 in Year 4, EUR 7,500 in Years 5-6, totaling EUR 51,500 across the 6-year programme -- confirmed by both the official dated fee-schedule PDF and the live admissions page. A separate EUR 300 non-refundable processing fee and a confirmation payment equal to 50% of tuition also apply. Figures apply to the Cluj-Napoca campus only, not the separate Novara, Italy extension campus."
+          },
+          "officialProgramUrl": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed an accredited secondary school granting access to university studies in their home country"
+            ],
+            "restrictions": [
+              "Minimum B2 CEFR English certificate required unless exempted by prior English-medium schooling or an equivalent baccalaureate result"
+            ],
+            "notes": "The university's own admissions page describes a file-evaluation-based process without a written entrance exam, though WDOMS separately lists an entrance exam as required for this school; this discrepancy was not resolved during research.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants register online through the university's admission platform, upload required documents, pay the processing fee, and are ranked through a file-evaluation-based process; there is no mail, email or courier submission route.",
+            "eligibility": {
+              "intro": "Admission requires completed accredited secondary education and proof of English proficiency at B2 CEFR level or an accepted exemption.",
+              "items": [
+                "Accredited high-school diploma granting access to university studies in the applicant's home country",
+                "Passport valid at least 6 months from the application date",
+                "Minimum B2 CEFR English certificate, or exemption via English-medium secondary schooling or baccalaureate result"
+              ]
+            },
+            "applicationSteps": [
+              "Create an account on the university's online admission platform",
+              "Review the required-document checklist and upload all documents",
+              "Pay the EUR 300 non-refundable processing fee",
+              "Submit the application and monitor the registered email for updates",
+              "Pay the confirmation fee (50% of tuition) if admitted, then submit original documents during enrollment"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Accredited high-school diploma and transcripts",
+                "English-proficiency certificate or documented exemption"
+              ],
+              "application": [
+                "Valid passport (minimum 6 months validity)",
+                "Passport-style photographs"
+              ]
+            },
+            "deadlinesNote": "Published Session II calendar runs through 16 July 2026, but the live admissions page shows an extended deadline of 12 August 2026 for English Medicine; enrollment occurs in the last two weeks of September 2026.",
+            "visaConsiderations": [
+              "Confirm current Romanian student-visa requirements directly with the university's International Relations Office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current 2026/27 tuition schedule (EUR 10,000/10,000/8,500/8,000/7,500/7,500 across Years 1-6, total EUR 51,500), cross-confirmed by an official dated PDF and the live admissions page. Applies to the fee-based international admission route at the Cluj-Napoca campus.",
+          "teachingPhases": [
+            {
+              "phase": "6-year integrated Medicine programme",
+              "language": "English",
+              "details": "Preclinical foundation years (Years 1-3: anatomy, physiology, biochemistry, microbiology) followed by clinical training years (Years 4-6) across 360 ECTS credits at Cluj-Napoca teaching hospitals; a detailed year-by-year rotation breakdown was not published by the university."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "publicField": "recognition",
+      "claimText": "Iuliu Hatieganu University of Medicine and Pharmacy's Faculty of Medicine is listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001415), with the Doctor Medic qualification and 6-year curriculum duration confirmed.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Iuliu Hatieganu University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001415",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "programmeSlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "recognition",
+      "claimText": "The Romanian 'doctor medic' qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, reference date 1 January 2007, applicable to accredited Romanian medical universities including Iuliu Hatieganu.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02005L0036-20140117",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "programmeSlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "academics",
+      "claimText": "Medicine (English Programme) is a 6-year, 360-ECTS direct-entry programme awarding the Doctor Medic degree, open to applicants with an accredited secondary-school diploma and no prior university degree required.",
+      "status": "verified",
+      "sourceLabel": "Iuliu Hatieganu University -- official admission information for international candidates",
+      "sourceUrl": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "programmeSlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires an accredited high-school diploma and a minimum B2 CEFR English certificate (or an accepted exemption); the university's own admissions page does not state a separate written entrance-exam requirement, though WDOMS lists one for this school.",
+      "status": "verified",
+      "sourceLabel": "Iuliu Hatieganu University -- official admission information for international candidates",
+      "sourceUrl": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "programmeSlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "admissions",
+      "claimText": "Application is fully online via the university's admission platform, with a EUR 300 non-refundable processing fee, and enrollment for admitted students occurs in the last two weeks of September 2026.",
+      "status": "verified",
+      "sourceLabel": "Iuliu Hatieganu University -- official admission information for international candidates",
+      "sourceUrl": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "programmeSlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "intake",
+      "claimText": "2026/27 cycle: published Session II calendar runs through 16 July 2026, while the live admissions page shows an extended deadline of 12 August 2026 for English Medicine; enrollment occurs in the last two weeks of September 2026.",
+      "status": "verified",
+      "sourceLabel": "Iuliu Hatieganu University -- official admission information for international candidates",
+      "sourceUrl": "https://umfcluj.ro/en/study-programmes/admission-undergraduate-studies/admission-international-candidates/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "programmeSlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition schedule: EUR 10,000 (Years 1-2), EUR 8,500 (Year 3), EUR 8,000 (Year 4), EUR 7,500 (Years 5-6), total EUR 51,500, confirmed current by both an official dated fee-schedule PDF and the live admissions page; a separate EUR 300 processing fee and a 50%-of-tuition confirmation payment also apply.",
+      "status": "verified",
+      "sourceLabel": "Iuliu Hatieganu University -- official tuition fees for academic year 2026-2027 (PDF)",
+      "sourceUrl": "https://cdn.umfcluj.ro/uploads/2026/05/TUITION-FEES-FOR-THE-ACADEMIC-YEAR-2026_2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "iuliu-hatieganu-university-of-medicine-and-pharmacy",
+      "publicField": "student living",
+      "claimText": "The university operates dormitories on its Hasdeu and Observator campuses, though its published dormitory-fee page reflects an outdated 2023-2024 cycle; a university-affiliated recruitment portal estimates total student living costs at roughly EUR 600-800 per month.",
+      "status": "verified",
+      "sourceLabel": "Iuliu Hatieganu University -- average cost of living (joinumfcluj.ro)",
+      "sourceUrl": "https://www.joinumfcluj.ro/en/average-cost-of-living/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

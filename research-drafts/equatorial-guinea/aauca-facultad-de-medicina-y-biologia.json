@@ -1,0 +1,31 @@
+{
+  "scope": "Equatorial Guinea medical discovery — AAUCA Faculty of Medicine and Biology",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "AAUCA's official Faculty of Medicine and Biology page advertises a Grado en Medicina and lists entry via selectivity/equivalent qualifications, transfer from UNGE Medical Sciences, or evaluation of another university study plan.",
+      "sourceUrl": "https://www.aaucauniversity.com/oferta-formativa-facultad-de-medicina-y-biologia/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The same official page locates AAUCA in Ciudad de la Paz, Djibloho, Equatorial Guinea and lists its faculty contact details.",
+      "sourceUrl": "https://www.aaucauniversity.com/oferta-formativa-facultad-de-medicina-y-biologia/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Spanish Ministry of Education's country guide identifies the Universidad Afro-Americana de África Central as an institution in Equatorial Guinea with a Faculty of Medicine and Biology.",
+      "sourceUrl": "https://www.educacionfpydeportes.gob.es/guineaecuatorial/gl/estudiar/en-guinea-ecuatorial.html",
+      "sourceType": "foreign-government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current fee schedule, duration, curriculum, active intake date, complete admissions checklist or international applicant process was found.",
+    "The page's reference to medical specialities does not establish an approved postgraduate route; it must not be represented as one without a separate current programme source.",
+    "Teaching language, named clinical partners, programme recognition/accreditation, accommodation, scholarship/loan support and graduate-registration pathway are unverified."
+  ],
+  "nextAction": "Obtain AAUCA's current Medicine plan, fee schedule, admissions call and regulator/clinical-training evidence before a complete content payload is assessed."
+}

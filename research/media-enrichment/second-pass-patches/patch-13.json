@@ -1,0 +1,169 @@
+{
+  "batchId": "second-pass-patch-13",
+  "entries": [
+    {
+      "universitySlug": "university-of-newcastle-australia",
+      "sourceFile": "a-436-450.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.newcastle.edu.au/__data/assets/file/0011/661727/uon-logo-square.svg", "sourceType": "official", "rightsBasis": "Official institution site newcastle.edu.au (returns a Cloudflare bot-challenge on direct homepage fetch) - homepage HTML recovered via a Wayback Machine snapshot dated 2026-07-18, and the referenced header-logo asset URL itself then verified to resolve directly, outside the challenge (HTTP 200).", "proposedPublicId": "university-of-newcastle-australia-logo"},
+      "cover": {"sourceUrl": "https://www.newcastle.edu.au/__data/assets/image/0010/958069/home_1600x800_enrol_dec23.jpg", "sourceType": "official", "rightsBasis": "Same Wayback Machine snapshot of the official site, homepage hero banner (fetchpriority=high, alt 'A group of students walking around university', 1600x800, no overlaid dates); asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-newcastle-australia-cover"},
+      "note": "Wayback Machine technique bypassed the homepage Cloudflare challenge to discover the asset paths; both the logo and hero-banner asset URLs then resolved directly and repeatably outside the challenge, confirming the challenge only gates the HTML page, not this CDN path."
+    },
+    {
+      "universitySlug": "university-of-otago",
+      "sourceFile": "a-436-450.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260719014035im_/https://www.otago.ac.nz/__data/assets/file/0034/568366/UoO_Logo_RGB_Horz_Gold-REV.svg", "sourceType": "official", "rightsBasis": "Same asset confirmed by the first pass; otago.ac.nz still blocks Cloudinary's own fetcher, so served via a Wayback Machine archived copy (snapshot dated 2026-07-19), verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-otago-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20260623041247im_/https://www.otago.ac.nz/__data/assets/image/0034/588913/Homepage-banner-Feb-2026.jpg", "sourceType": "official", "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-06-23), verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-otago-cover"},
+      "note": "Per the task note, the underlying assets were already correctly identified by the first pass and only failed at upload time. Used the Wayback Machine to obtain working alternative URLs for the same two confirmed assets."
+    },
+    {
+      "universitySlug": "university-of-oxford",
+      "sourceFile": "a-451-465.json",
+      "outcome": "upgraded",
+      "cover": {"sourceUrl": "https://assets-oxweb.admin.ox.ac.uk/styles/3_2_media_xl_2000x1333/s3/2025-11/Oxford-skyline_0.jpg.avif?itok=0zwBH_7K", "sourceType": "official", "rightsBasis": "Official institution asset CDN assets-oxweb.admin.ox.ac.uk, the same homepage 'Oxford skyline' teaser flagged in the first pass, verified to resolve directly with HTTP 200 across repeated requests.", "proposedPublicId": "university-of-oxford-cover"},
+      "note": "Re-tested direct fetch of the same asset CDN subdomain that returned a Cloudflare bot-challenge in the first pass; the challenge no longer triggers for this styled/itok-signed derivative URL (confirmed stable over 3 repeat requests plus an alternate 1500w derivative). Also found a second working candidate (Hertford College Bridge banner) on the same CDN if this one is preferred instead."
+    },
+    {
+      "universitySlug": "university-of-pavia-italy",
+      "sourceFile": "a-451-465.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260723181433im_/https://portale.unipv.it/themes/custom/unipv_default/img/logosemplificatoamaranto.svg", "sourceType": "official", "rightsBasis": "Official institution site portale.unipv.it (still returns HTTP 403 to direct/automated fetch) via a Wayback Machine snapshot dated 2026-07-23; archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-pavia-italy-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20230118215803im_/https://portale.unipv.it/sites/default/files/styles/wide/public/2022-12/home%20testata.jpg", "sourceType": "official", "rightsBasis": "Same homepage hero image (alt 'studenti giardino') still referenced in the site's current 2026-07 markup (confirmed via a fresh Wayback capture of the live homepage), served via an older Wayback Machine archived copy of the asset itself since the live asset URL still 403s; verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-pavia-italy-cover"},
+      "note": "unipv.eu/portale.unipv.it still 403s direct fetch. Used the Wayback Machine to render the current homepage HTML (fetched with --compressed to handle gzip) to identify both asset paths, then confirmed each resolves via its own Wayback Machine archived copy."
+    },
+    {
+      "universitySlug": "university-of-porto-faculty-of-medicine",
+      "sourceFile": "a-451-465.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260701202838im_/https://sigarra.up.pt/fmup/pt/imagens/LogotipoSI", "sourceType": "official", "rightsBasis": "Same asset confirmed by the first pass; served via a Wayback Machine archived copy (snapshot dated 2026-07-01) since sigarra.up.pt is known to block Cloudinary's own fetcher, verified to resolve directly (HTTP 200, image/png).", "proposedPublicId": "university-of-porto-faculty-of-medicine-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20260428164808im_/https://sigarra.up.pt/fmup/en/web_gessi_docs.download_file?p_name=F1922523963/ensino6.jpg", "sourceType": "official", "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-04-28), verified to resolve directly (HTTP 200, image/jpeg).", "proposedPublicId": "university-of-porto-faculty-of-medicine-cover"},
+      "note": "Per the task note, both assets were already correctly identified by the first pass and only failed at upload time. Direct re-fetch with a standard browser UA now also succeeds consistently, but used the Wayback Machine as the primary technique per instructions since Cloudinary's own fetcher (not my fetch path) is what actually failed before."
+    },
+    {
+      "universitySlug": "university-of-rome-tor-vergata",
+      "sourceFile": "a-451-465.json",
+      "outcome": "upgraded",
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Lettere_e_Filosofia_-_Tor_Vergata_2.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Lettere_e_Filosofia_-_Tor_Vergata_2.jpg, CC BY-SA 4.0, own work by Camelia.boban, captioned 'Faculty of Humanities, University of Tor Vergata in Rome'.", "proposedPublicId": "university-of-rome-tor-vergata-cover"},
+      "note": "Re-checked web.uniroma2.it directly (site resolves fine, HTTP 200) and its /ateneo about-page shell, but it still only surfaces the same unlabeled slide (/immagine/7962) and outdated anniversary/coronavirus badges the first pass already rejected. Commons-license technique instead found a clean, freely-licensed campus building photo."
+    },
+    {
+      "universitySlug": "university-of-sarajevo-faculty-of-medicine",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://mf.unsa.ba/wp-content/themes/medicinski-fakultet/images/mf-logo.svg", "sourceType": "official", "rightsBasis": "Official Faculty site mf.unsa.ba, dedicated header logo asset, verified HTTP 200.", "proposedPublicId": "university-of-sarajevo-faculty-of-medicine-logo"},
+      "note": "Logo (already identified by the first pass) re-confirmed resolving directly. Cover remains unresolved: re-checked the homepage (only theme stock illustrations index-slider-graphic.png/index-studij.jpg, both generic vector/illustration graphics, not photos) and checked Wikipedia/Wikimedia Commons for a Faculty-of-Medicine-specific building photo - the University of Sarajevo's Commons-linked campus photos cover Economics, Natural Sciences, Humanities, Fine Arts and Law/rectorate buildings only, none for Medicine. Cover stays held."
+    },
+    {
+      "universitySlug": "university-of-south-asia",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://usa.edu.pk/wp-content/uploads/2026/06/usa-logo.png", "sourceType": "official", "rightsBasis": "Official institution site usa.edu.pk, dedicated header logo asset, verified HTTP 200.", "proposedPublicId": "university-of-south-asia-logo"},
+      "cover": {"sourceUrl": "https://usa.edu.pk/wp-content/uploads/2024/07/History.webp", "sourceType": "official", "rightsBasis": "Official institution site's own /about page, photo alt-labelled 'Chaudhary Pervaiz Elahi inauguration University of South Asia', verified HTTP 200.", "proposedPublicId": "university-of-south-asia-cover"},
+      "note": "Logo re-confirmed. Checked the /about subpage (not scanned by the first pass, which covered only the homepage's program icons and testimonial photos) and found a genuine institutional inauguration-event photo there."
+    },
+    {
+      "universitySlug": "university-of-split-school-of-medicine",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://mefst.unist.hr/img/mefst-logo-blue.svg", "sourceType": "official", "rightsBasis": "Official Faculty site mefst.unist.hr, dedicated header logo asset, verified HTTP 200.", "proposedPublicId": "university-of-split-school-of-medicine-logo"},
+      "cover": {"sourceUrl": "https://neuron.mefst.hr/docs//web2016/banner_up/MF_naslovna_800x527.jpg", "sourceType": "official", "rightsBasis": "Official Faculty documents subdomain, image alt-labelled 'Fakultet' ('MF_naslovna' = MF frontpage/cover banner), found on the Faculty's dedicated /fakultet page, verified HTTP 200 (image/jpeg).", "proposedPublicId": "university-of-split-school-of-medicine-cover"},
+      "note": "Logo re-confirmed. Checked the /fakultet (faculty/about) subpage, not scanned by the first pass (homepage only), and found a genuine faculty-building banner photo there instead of the newsletter/event graphics the first pass rejected."
+    },
+    {
+      "universitySlug": "university-of-stavanger",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260704203943im_/https://www.uis.no/themes/custom/uis/images/favicons/apple-touch-icon.png", "sourceType": "official", "rightsBasis": "Official institution site uis.no, standalone 180x180 apple-touch-icon showing the 'UiS' monogram mark (matching the site's own inline logo--compact SVG variant); direct fetch is intermittently Cloudflare-blocked (confirmed still blocking on repeat attempts), so served via a Wayback Machine archived copy dated 2026-07-04, verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-stavanger-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20250928153145im_/https://www.uis.no/sites/default/files/inline-images/Banner%20uis.no%202.jpg", "sourceType": "official", "rightsBasis": "Official institution site's own homepage hero banner image, served via a Wayback Machine archived copy dated 2025-09-28, verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-stavanger-cover"},
+      "note": "uis.no's on-page logo is only an inline SVG (logo--full/logo--compact) with no standalone file, so applied the favicon/higher-res-icon technique to find the standalone 'UiS' monogram PNG. Direct fetch of uis.no remains inconsistently Cloudflare-blocked even for static assets, so both files were retrieved via the Wayback Machine."
+    },
+    {
+      "universitySlug": "university-of-tasmania",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260721210404im_/https://www.utas.edu.au/__data/assets/git_bridge/0012/1368768/dist/mysource_files/logo.svg", "sourceType": "official", "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-07-21) since utas.edu.au is known to block Cloudinary's own fetcher, verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-tasmania-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20260718102916im_/https://www.utas.edu.au/__data/assets/image/0011/1419671/university-of-tasmania__social.jpg", "sourceType": "official", "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-07-18), verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-tasmania-cover"},
+      "note": "Per the task note, both assets were already correctly identified by the first pass and only failed at upload time. Direct re-fetch with a standard browser UA now also succeeds consistently, but used the Wayback Machine as the primary technique per instructions since Cloudinary's own fetcher (not my fetch path) is what actually failed before."
+    },
+    {
+      "universitySlug": "university-of-trento",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260726020509im_/https://www.unitn.it/themes/custom/unitn_default/logo.svg", "sourceType": "official", "rightsBasis": "Official institution site unitn.it (still returns HTTP 403 to direct fetch) via a Wayback Machine snapshot dated 2026-07-26; archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-trento-logo"},
+      "note": "unitn.it continues to 403 on every direct fetch attempt. Recovered the homepage via the Wayback Machine to find the header logo asset path, then confirmed it resolves via its own Wayback Machine archived copy."
+    },
+    {
+      "universitySlug": "university-of-waikato",
+      "sourceFile": "a-466-480.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.waikato.ac.nz/_resources/themes/app/dist/icons/logo.svg?m=1783483664", "sourceType": "official", "rightsBasis": "Official institution site waikato.ac.nz, dedicated header logo asset, verified HTTP 200.", "proposedPublicId": "university-of-waikato-logo"},
+      "cover": {"sourceUrl": "https://www.waikato.ac.nz/assets/Uploads/About-us/pvblcegzm87hplix465w.webp", "sourceType": "official", "rightsBasis": "Official institution site's own /about page, high-resolution (3872x1334) photo alt-labelled 'students-walking-past-garden-flowers', verified HTTP 200.", "proposedPublicId": "university-of-waikato-cover"},
+      "note": "The homepage hero remains JS-rendered with no static image URL as the first pass found, but the /about subpage (static server-rendered HTML) exposes a genuine high-resolution campus photo, plus the standalone header logo.svg."
+    },
+    {
+      "universitySlug": "uwi-st-augustine-mbbs",
+      "sourceFile": "a-481-495.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://sta.uwi.edu/wp-content/uploads/2024/08/logo-1.png", "sourceType": "official", "rightsBasis": "Official institution site sta.uwi.edu, dedicated logo asset identified by the first pass, re-confirmed HTTP 200.", "proposedPublicId": "uwi-st-augustine-mbbs-logo"},
+      "note": "Logo re-confirmed. Cover remains unresolved: the declared og:image is still the same 257x170px low-resolution thumbnail (verified via direct pixel inspection). Checked the /about and /campus-life subpages (not scanned by the first pass) and found only a very wide 1120x175 four-panel event-photo collage strip and small 285x206 thumbnails - no standard-shaped, generic, high-resolution cover photo was found. Cover stays held."
+    },
+    {
+      "universitySlug": "university-of-montreal",
+      "sourceFile": "a-481-495.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.umontreal.ca/safari-pinned-tab.svg", "sourceType": "official", "rightsBasis": "Official institution site umontreal.ca, standalone vector file of the 'UdeM' monogram mark (served as the site's Safari pinned-tab icon; matches the 180x180 apple-touch-icon.png raster version, viewed and visually confirmed), verified HTTP 200.", "proposedPublicId": "university-of-montreal-logo"},
+      "note": "The header/footer wordmark logo (.udem-logo-udem) remains embedded only as inline base64 SVG inside compiled CSS, as the first pass found. Applied the favicon/higher-res-icon technique instead and found a standalone, independently-addressable vector file of the university's monogram mark."
+    },
+    {
+      "universitySlug": "ural-state-medical-university",
+      "sourceFile": "a-496-510.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://usma.ru/wp-content/themes/usma/images/logo.png", "sourceType": "official", "rightsBasis": "Official institution site usma.ru, dedicated header logo asset identified by the first pass, re-confirmed HTTP 200.", "proposedPublicId": "ural-state-medical-university-logo"},
+      "note": "Logo re-confirmed. Cover remains unresolved: re-checked the homepage slider and the /universitet subpage (not scanned by the first pass); both surface only seasonal/promotional graphics (New Year logo variant, quality certificates, payment-system badges), no genuine campus building photo. Cover stays held."
+    },
+    {
+      "universitySlug": "urgench-ranch",
+      "sourceFile": "a-496-510.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.utu-ranch.uz/static/media/logomain.c5d570b1129f5a8640109953fbef1073.svg", "sourceType": "official", "rightsBasis": "Official institution site utu-ranch.uz (a client-side-rendered React SPA), standalone gear/sunburst emblem SVG referenced as 'logomain' in the site's compiled JS bundle and used as the rendered header/main logo mark, verified HTTP 200.", "proposedPublicId": "urgench-ranch-logo"},
+      "note": "Inspected the SPA's compiled static JS bundle (main.a37272db.js) for asset file-name references, since the rendered homepage exposes only the low-resolution 155x155 favicon (ranch.png, re-confirmed still 155x155). Found and verified a standalone, higher-quality logo SVG referenced by the app. Cover remains unresolved: the same bundle only references staff/personal photos (elon.jpg, ps2-5.jpg, psixolog.jpg), no campus building image; cover stays held."
+    },
+    {
+      "universitySlug": "urgench-state-medical-institute",
+      "sourceFile": "a-496-510.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "No discoverable official website exists for Urgench State Medical Institute, formed in April 2025 from the former Urgench branch of Tashkent Medical Academy. Confirmed no Wikipedia article exists (direct fetch attempt returns 404). Probed several plausible domain-name guesses; the only one that resolves, urganch-med.uz, is a different institution entirely ('Urganch Abu Ali ibn Sino nomidagi Jamoat salomatligi texnikumi' - a Public Health Technicum/college, not this medical institute) and must not be used or merged. This is an identity/status gap tied to the institution's recent formation and rename, not a media-sourcing gap; no logo or cover is nominated."
+    },
+    {
+      "universitySlug": "yale-university",
+      "sourceFile": "a-511-520.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.yale.edu/sites/all/themes/yale_blue/images/favicons/android-chrome-192x192.png", "sourceType": "official", "rightsBasis": "Official institution site yale.edu, standalone 192x192 PNG of the Yale 'Y' monogram mark (served as the site's Android/Chrome home-screen icon, viewed and visually confirmed as the recognized Yale bulldog-alternative brand icon), verified HTTP 200.", "proposedPublicId": "yale-university-logo"},
+      "note": "The on-page header logo remains a CSS icon-sprite as the first pass found, and identity.yale.edu (Yale's brand site) still fails to connect. Applied the favicon/higher-res-icon technique instead and found a standalone, independently-addressable file of Yale's official monogram mark, of materially better quality than the print-only asset the first pass had found."
+    },
+    {
+      "universitySlug": "yonsei-university",
+      "sourceFile": "a-511-520.json",
+      "outcome": "upgraded",
+      "cover": {"sourceUrl": "https://www.yonsei.ac.kr/Web-home/_UI/images/img_symbol.png", "sourceType": "official", "rightsBasis": "Official institution site's own declared og:image (600x315), showing the Yonsei eagle-statue campus landmark with the university's wordmark, served from the university's own site, verified HTTP 200.", "proposedPublicId": "yonsei-university-cover"},
+      "note": "The first pass's carousel-slide dead end (visual3.jpg 404) was on the /en_sc/ path, which now 404s outright; fetching the correct root homepage (www.yonsei.ac.kr) instead surfaces a clean, genuinely institutional og:image. Could not reconfirm the previously-found header_logo.png on the current homepage markup (site structure appears to have changed since the first pass; no standalone header logo file found in this pass), so logo status is left unchanged pending a future check."
+    },
+    {
+      "universitySlug": "zarmed-university",
+      "sourceFile": "a-511-520.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://zarmeduniver.com/landing/images/Univer%20new%20logo%20n-08.png", "sourceType": "official", "rightsBasis": "ZARMED University's own institutional seal/wordmark logo (white-on-transparent PNG, 2560x699, viewed and visually confirmed to show a circular seal with book/lion emblem and 'ZARMED UNIVERSITY' wordmark), served from the institution's own site zarmeduniver.com, distinct from the third-party partner-hospital logos (Continental Med, Tomar, Pratiksha) also present on the same landing page. Verified HTTP 200.", "proposedPublicId": "zarmed-university-logo"},
+      "cover": {"sourceUrl": "https://zarmeduniver.com/landing/images/campus-bukhara.png", "sourceType": "official", "rightsBasis": "Official site photo alt-labelled 'Bukhara Campus' (1920x1071, viewed and visually confirmed), showing an actual building bearing 'ZARMED UNIVERSITETI' signage and the same seal logo, served from the institution's own site. Verified HTTP 200.", "proposedPublicId": "zarmed-university-cover"},
+      "note": "The first pass rejected zarmeduniver.com based on its preloaded third-party partner-hospital logos. Deeper inspection of the same Next.js site's full asset list (not just the preloaded images) found the institution's own distinct seal/wordmark logo plus campus-specific, alt-labelled, visually-confirmed photography for both Bukhara and Samarkand campuses (matching building signage in each photo) - resolving the domain-identity concern without merging or guessing between the two campus records. The site also has genuine academic navigation (/programs, /structure, /university, /journals), consistent with being the real institutional site rather than a marketing funnel."
+    },
+    {
+      "universitySlug": "zarmed-university-samarkand",
+      "sourceFile": "a-511-520.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://zarmeduniver.com/landing/images/Univer%20new%20logo%20n-08.png", "sourceType": "official", "rightsBasis": "Same shared institutional seal/wordmark logo as the Bukhara campus record (one legal institution, two campuses), served from zarmeduniver.com. Verified HTTP 200.", "proposedPublicId": "zarmed-university-samarkand-logo"},
+      "cover": {"sourceUrl": "https://zarmeduniver.com/landing/images/campus-samarkand.png", "sourceType": "official", "rightsBasis": "Official site photo alt-labelled 'Samarkand Campus' (1920x842, viewed and visually confirmed), showing a distinct building bearing 'ZARMED UNIVERSITY' signage, served from the institution's own site. Verified HTTP 200.", "proposedPublicId": "zarmed-university-samarkand-cover"},
+      "note": "Same technique and same site as the Bukhara record. The campus-specific alt text and visibly distinct building photography (different architecture, different signage) confirm this asset is specifically the Samarkand campus, not a shared or guessed asset from the Bukhara record - satisfying the instruction not to merge or guess between the two campus records."
+    }
+  ]
+}

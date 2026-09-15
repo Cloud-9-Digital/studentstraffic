@@ -1,0 +1,19 @@
+{
+  "countrySlug": "sao-tome-and-principe",
+  "universitySlug": "universidade-de-sao-tome-e-principe",
+  "schoolName": "Universidade de São Tomé e Príncipe",
+  "cityName": "São Tomé",
+  "priority": "medium",
+  "officialWebsite": "https://ustp.gov.st/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — USTP is the public university and its official catalogue is available; official/government material identifies the Instituto Superior de Ciências da Saúde within the wider education system. However, no current verified physician/medicine degree, duration, language, tuition, international admission route, clinical placement, accommodation or recognition record was found. The national higher-education fee page cannot substitute for a programme-specific medical fee record. No second safe non-duplicate medical-university candidate was identified.",
+  "sourceBundle": { "sources": [
+    { "label": "USTP official programme catalogue", "url": "https://ustp.gov.st/ensino/ofertas-formativas", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Official USTP course-offerings destination; retrieved listing did not establish a current physician-degree record." },
+    { "label": "São Tomé higher-education directorate", "url": "https://desc.gov.st/quemsomo", "kind": "government", "checkedAt": "2026-07-25", "notes": "Identifies DESC as the Ministry of Education, Culture and Science body responsible for higher-education policy." },
+    { "label": "São Tomé higher-education fees page", "url": "https://desc.gov.st/propina.html", "kind": "government-fees", "checkedAt": "2026-07-25", "notes": "National fee destination; not a current programme-specific medical tuition source." },
+    { "label": "Government legal repository", "url": "https://repositoriodigital.me.gov.st/storage/files/May2023/wGVNDjHXhSzWaQtVvbJz.pdf", "kind": "government", "checkedAt": "2026-07-25", "notes": "Official legal material references the Instituto Superior de Ciências da Saúde, but does not provide a current medicine programme/admissions record." }
+  ] },
+  "structuredFacts": { "name": "Universidade de São Tomé e Príncipe", "type": "Public university", "programs": [], "missingForPublication": [ "evidence of a current medical/physician degree", "degree title, duration and instruction language", "current programme fee and mandatory costs", "international eligibility, documents, intake and deadline", "clinical training, housing/support and recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: a health-sciences institutional reference is not a publishable medical programme record." }
+}

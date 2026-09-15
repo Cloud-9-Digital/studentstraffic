@@ -1,0 +1,252 @@
+{
+  "batchId": "media-a-406-420",
+  "scope": "Alphabetical missing-media rows 406-420; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-danang-medicine-pharmacy",
+      "universityName": "University of Danang Faculty of Medicine and Pharmacy",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://smp.udn.vn/public/uploads/file/giaodientrangchu/logo/logoUD-SMPTOP.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the school's own domain (smp.udn.vn, titled 'TRUONG Y DUOC - DAI HOC DA NANG')",
+        "proposedPublicId": "university-of-danang-medicine-pharmacy-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-debrecen",
+      "universityName": "University of Debrecen",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://unideb.hu/themes/custom/unideb_gamma/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own theme assets on unideb.hu",
+        "proposedPublicId": "university-of-debrecen-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. The only homepage hero candidate found (2021-07/Depositphotos_22064225_l-2015.jpg) is a licensed Depositphotos stock image filename, not identifiable campus photography, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-delaware",
+      "universityName": "University of Delaware",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.udel.edu/content/dam/udelImages/main/graphics/udelLogoImages/logo-udel.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own DAM (udelImages) on udel.edu",
+        "proposedPublicId": "university-of-delaware-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. The homepage hero image is tied to the time-limited 'Delaware Declares' fundraising campaign banner rather than a generic institutional image, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "university-duisburg-essen",
+      "universityName": "University of Duisburg-Essen",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uni-due.de/portal/4/images/UDE-logo-claim--en.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own portal on uni-due.de",
+        "proposedPublicId": "university-duisburg-essen-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-dundee",
+      "universityName": "University of Dundee",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.dundee.ac.uk/themes/custom/uod/assets/logo-title.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own theme assets on dundee.ac.uk",
+        "proposedPublicId": "university-of-dundee-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-essex",
+      "universityName": "University of Essex",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.essex.ac.uk/-/media/images/undergraduate/mature-students/colchester-campus-squares-1200x625.png",
+        "sourceType": "official",
+        "rightsBasis": "official institutional campus photograph served from the university's own media library on essex.ac.uk",
+        "proposedPublicId": "university-of-essex-cover"
+      },
+      "status": "ready",
+      "reason": "Cover captured and verified. The homepage header logo is inline SVG markup with no standalone file URL, and the official brand/logo page (essex.ac.uk/staff/brand/logo) exposes only usage-example illustrations (poster mockups, partner-lockup GIFs) rather than a clean logo file, so no logo is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "universityName": "University of Fiji, Umanand Prasad School of Medicine and Health Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unifiji.ac.fj/wp-content/uploads/2022/02/viber_image_2022-02-04_11-32-02-502.png",
+        "sourceType": "official",
+        "rightsBasis": "official parent-university logo, confirmed as the site's schema.org Organization logo and homepage custom-logo asset on unifiji.ac.fj",
+        "proposedPublicId": "university-of-fiji-school-of-medicine-and-health-sciences-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified against the parent University of Fiji site (no dedicated Umanand Prasad School of Medicine site/brand exists). The school's own page (unifiji.ac.fj/umanand-prasad-school-of-medicine-and-health-sciences) has no featured image, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-florida",
+      "universityName": "University of Florida",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.ufl.edu/wp-content/uploads/sites/5/2023/09/UF-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own WordPress uploads on ufl.edu",
+        "proposedPublicId": "university-of-florida-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ufl.edu/wp-content/uploads/2021/11/Group-10179.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage og:image institutional image served from ufl.edu",
+        "proposedPublicId": "university-of-florida-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-galway",
+      "universityName": "University of Galway",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.universityofgalway.ie/cdn/images/logo-irish.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset referenced by the university's own production CSS (#logo background image) on universityofgalway.ie",
+        "proposedPublicId": "university-of-galway-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-geneva",
+      "universityName": "University of Geneva",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unige.ch/cdn/themes/unige2016/img/unige-logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own theme CDN on unige.ch",
+        "proposedPublicId": "university-of-geneva-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. Homepage image candidates (e.g. hp-formation.jpg, unige_15911.jpg) carry no alt text or context confirming genuine campus/institutional photography rather than generic content thumbnails, so no cover is nominated this pass."
+    },
+    {
+      "universitySlug": "university-of-georgia-tbilisi",
+      "universityName": "University of Georgia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://ug.edu.ge/assets/images/logo.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own domain, ug.edu.ge",
+        "proposedPublicId": "university-of-georgia-tbilisi-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://ug.edu.ge/storage/sliders/February2023/0aISKHWjr79bTsV5J3LQ.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage carousel image served from ug.edu.ge",
+        "proposedPublicId": "university-of-georgia-tbilisi-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-georgia",
+      "universityName": "University of Georgia School of Health Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://ug.edu.ge/assets/images/logo.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official parent-university brand asset served from ug.edu.ge (the School of Health Sciences has no separate brand mark)",
+        "proposedPublicId": "university-of-georgia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://ug.edu.ge/storage/schools/April2018/eXY0J4fcQwmiSTmUHb6f-cropped.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official School of Health Sciences page image served from ug.edu.ge/en/jan-skolis-shesakheb",
+        "proposedPublicId": "university-of-georgia-cover"
+      },
+      "status": "ready",
+      "reason": "Note for the integrator: the task brief for this batch described 'university-of-georgia-tbilisi' and 'university-of-georgia' as different institutions in different countries, but this audit found the codebase itself (lib/data/mbbs-country-lp.ts GEORGIA_LP_FEATURED_SLUGS and app/seminar-2026 university lists) groups 'university-of-georgia' under the country Georgia alongside other Tbilisi-area universities, and its official site is the same ug.edu.ge domain used for 'university-of-georgia-tbilisi' -- this record appears to be the Umanand-style School of Health Sciences sub-brand of the same Tbilisi institution, not a separate institution in a separate country. A distinct third-party lead-generation site (uog.ge, offering 'Study MBBS in Georgia' with India/UAE phone numbers and a lead-capture form) was found and deliberately excluded as non-official. Please double-check institutional identity/country for this record before publishing."
+    },
+    {
+      "universitySlug": "university-of-guelph",
+      "universityName": "University of Guelph",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found the header logo rendered only via the site's own <uofg-header> web component with no standalone file. Commons-license technique resolved a standalone, freely-licensed PNG logo, verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/UofGLogo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:UofGLogo.png - CC BY 4.0.",
+        "proposedPublicId": "university-of-guelph-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-helsinki",
+      "universityName": "University of Helsinki",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found the header rendered only through custom web components with no 'logo' asset in the page source (the infobox mark used on Wikipedia is a separate non-free enwiki upload). Commons-license technique resolved a monochrome, freely-licensed logo file (Finnish-language variant), verified HTTP 200..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Logo_University_of_Helsinki_fi.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo_University_of_Helsinki_fi.svg - public domain (PD-textlogo, below threshold of originality); vector data extracted from an official PDF source.",
+        "proposedPublicId": "university-of-helsinki-logo"
+      }
+    },
+    {
+      "universitySlug": "university-of-huddersfield",
+      "universityName": "University of Huddersfield",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.hud.ac.uk/media/universityofhuddersfield/styleassets/images/2016homepageimages/uoh-logo-2019-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own style assets on hud.ac.uk, used as the site's nav-bar logo",
+        "proposedPublicId": "university-of-huddersfield-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. Remaining homepage image candidates are all tied to specific marketing campaigns or dated events (Clearing 2024, Open Day Oct 2025, Prospectus 2026), so no generic institutional cover is nominated this pass."
+    }
+  ]
+}

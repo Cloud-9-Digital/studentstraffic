@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0029-bahrain-rcsi-mbbs",
+  "description": "Publish RCSI Medical University of Bahrain direct-entry Medicine record (Bahrain).",
+  "createdAt": "2026-07-25",
+  "payload": "payload.json"
+}

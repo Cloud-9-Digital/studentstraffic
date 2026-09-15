@@ -1,0 +1,186 @@
+{
+  "entries": [
+    {
+      "universitySlug": "amity-university-noida",
+      "universityName": "Amity University, Noida",
+      "sourceBatch": "india-pilot-batch-2.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amity_Campus_Noida_Delhi.jpg",
+          "sourceType": "wikimedia",
+          "rightsBasis": "Wikimedia Commons file page states this is the uploader's own work, licensed CC BY 4.0 (wgCategories includes \"CC-BY-4.0\" and \"Self-published work\"), and the file is categorized under Category:Amity University, Noida, i.e. the Noida campus specifically (not Lucknow, Greater Noida, Dubai or Tashkent). Direct asset resolves at https://upload.wikimedia.org/wikipedia/commons/b/be/Amity_Campus_Noida_Delhi.jpg (HTTP 200, image/jpeg).",
+          "proposedPublicId": "studentstraffic/universities/amity-university-noida/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "universityName": "Amrita Vishwa Vidyapeetham",
+      "sourceBatch": "india-pilot-batch-2.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://webfiles.amrita.edu/2026/02/amrita-red-logo-new.svg",
+          "sourceType": "official",
+          "rightsBasis": "Official brand asset served from the university's own CDN (webfiles.amrita.edu) and rendered as the header logo (alt text \"Amrita Vishwa Vidyapeetham\") on the university's own homepage (www.amrita.edu) as of this check; also referenced on the official branding guidelines page at www.amrita.edu/branding/. URL resolves HTTP 200, image/svg+xml.",
+          "proposedPublicId": "studentstraffic/universities/amrita-vishwa-vidyapeetham/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://webfiles.amrita.edu/2020/05/2w4fqsOS-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-photo-1.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own CDN and used as the hero/background banner on the university's own Coimbatore campus page (www.amrita.edu/campus/coimbatore/). The filename itself identifies it as an aerial/drone photograph of the Coimbatore campus, which matches this payload's record city (Coimbatore) and its Coimbatore-campus programme and accreditation content. URL resolves HTTP 200, image/jpeg.",
+          "proposedPublicId": "studentstraffic/universities/amrita-vishwa-vidyapeetham/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kiit-deemed-to-be-university",
+      "universityName": "KIIT Deemed to be University",
+      "sourceBatch": "india-pilot-batch-3.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2022/10/KIIT-logo-HD.png",
+          "sourceType": "official",
+          "rightsBasis": "official brand asset: high-resolution logo file listed on the university's own public Downloads page (kiit.ac.in/downloads/), served directly from its own official domain and confirmed live, returning image/png",
+          "proposedPublicId": "studentstraffic/universities/kiit-deemed-to-be-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2023/04/KIIT-University-Bhubaneswar.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "official institutional image: served directly from the university's own official domain (kiit.ac.in) and used by the university itself as its homepage social-share (og:image) representation of KIIT University, Bhubaneswar; file name and homepage context both identify the Bhubaneswar campus; confirmed live, returning image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/kiit-deemed-to-be-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "lovely-professional-university",
+      "universityName": "Lovely Professional University",
+      "sourceBatch": "india-pilot-batch-3.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.lpu.in/images/logo/LPU-logo-dark.svg",
+          "sourceType": "official",
+          "rightsBasis": "official brand asset: the primary header logo served directly from the university's own official domain (www.lpu.in), confirmed live and returning image/svg+xml",
+          "proposedPublicId": "studentstraffic/universities/lovely-professional-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lovely_Professional_University,_Jalandhar-Delhi_G.T._Road_(NH-1),_Phagwara,_Punjab_(INDIA).jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0 Unported), own work by author Shalintripathi, file title and description ('Picture of Lovely Professional University Sir Baldev Raj Mittal Park') both name the university's Jalandhar-Delhi G.T. Road (NH-1) address in Phagwara, matching the payload's Phagwara campus; licensing stated on the file page",
+          "proposedPublicId": "studentstraffic/universities/lovely-professional-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "manipal-academy-of-higher-education",
+      "universityName": "Manipal Academy of Higher Education",
+      "sourceBatch": "india-pilot-batch-1.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/mcops-manipal/Images_new/MAHE_Color.svg",
+          "sourceType": "official",
+          "rightsBasis": "official brand asset: logo file served directly from the university's own official domain (www.manipal.edu) under its /content/dam asset repository, confirmed live and returning image/svg+xml",
+          "proposedPublicId": "studentstraffic/universities/manipal-academy-of-higher-education/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manipal_Institute_of_Technology_Academic_Building,_Manipal_University,_Manipal_Campus,_India_(Ank_Kumar,_Infosys_Limited_)_02.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (Creative Commons Attribution-ShareAlike 4.0 International), own work by author Ank Kumar, file title and description explicitly state 'Manipal Institute of Technology Academic Building, Manipal University, Manipal Campus, Udupi, Karnataka, India' - directly identifying the Manipal campus this record covers",
+          "proposedPublicId": "studentstraffic/universities/manipal-academy-of-higher-education/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "op-jindal-global-university",
+      "universityName": "O.P. Jindal Global University",
+      "sourceBatch": "india-pilot-batch-2.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jgu.edu.in/front/assets/img/blue-logo.webp",
+          "sourceType": "official",
+          "rightsBasis": "Official brand asset served directly from the university's own site assets path and used as the site logo on the university's own homepage (jgu.edu.in). URL resolves HTTP 200.",
+          "proposedPublicId": "studentstraffic/universities/op-jindal-global-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://jgu.edu.in/storage/1062/DJI_0020.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own storage path and used as the campus-overview slider image on the university's own Sonipat-focused page (jgu.edu.in/internationaloffice/sonipatindia/), the campus that this payload's record is scoped to. The filename (DJI_0020) is a stock drone-camera output name, consistent with an aerial photograph of the university's own 80-acre Sonipat campus. URL resolves HTTP 200, image/jpeg.",
+          "proposedPublicId": "studentstraffic/universities/op-jindal-global-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "universityName": "SRM Institute of Science and Technology",
+      "sourceBatch": "india-pilot-batch-3.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.srmist.edu.in/wp-content/uploads/2022/01/srm-logo.svg",
+          "sourceType": "official",
+          "rightsBasis": "official brand asset: the primary header logo referenced by the university's own homepage (www.srmist.edu.in), served directly from its own official domain and confirmed live, returning image/svg+xml",
+          "proposedPublicId": "studentstraffic/universities/srm-institute-of-science-and-technology/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Campus,_SRM_Institute_of_Science_and_Technology,_Kattankulathur_(August,2024).jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0 Unported), own work by author Annni07, file title and category ('SRM Institute of Science and Technology') explicitly name the Kattankulathur campus and are dated August 2024, matching the payload's Kattankulathur-only scope; licensing stated on the file page",
+          "proposedPublicId": "studentstraffic/universities/srm-institute-of-science-and-technology/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "symbiosis-international-university",
+      "universityName": "Symbiosis International (Deemed University)",
+      "sourceBatch": "india-pilot-batch-1.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.siu.edu.in/siteassets/images/siu-logo.webp",
+          "sourceType": "official",
+          "rightsBasis": "official brand asset: the primary header logo served directly from the university's own official domain (www.siu.edu.in), confirmed live and returning image/webp",
+          "proposedPublicId": "studentstraffic/universities/symbiosis-international-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Symbiosis_International_University,_S._B._Road_campus.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0 (Creative Commons Attribution 4.0 International), own work by author DesiBoy101, uploaded with embedded camera coordinates 18.52252, 73.82930 which sit on Senapati Bapat Road, Pune - matching the payload's Senapati Bapat Road campus description; file page states the licence explicitly under its Licensing section",
+          "proposedPublicId": "studentstraffic/universities/symbiosis-international-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "vellore-institute-of-technology",
+      "universityName": "Vellore Institute of Technology",
+      "sourceBatch": "india-pilot-batch-1.json",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://vit.ac.in/wp-content/uploads/2023/06/header-logo.webp",
+          "sourceType": "official",
+          "rightsBasis": "official brand asset: the header logo served directly from the university's own official domain (vit.ac.in), confirmed live and returning image/webp",
+          "proposedPublicId": "studentstraffic/universities/vellore-institute-of-technology/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technology_Tower(VIT).jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0 Unported), own work by author Wikindinator, filed under category 'Vellore Institute of Technology' (distinct from the separate 'Vellore Institute of Technology (Andhra Pradesh)' category used for the VIT-AP campus), described as 'the symbolic academic structure of the Vellore Institute of Technology (VIT)' and used as the lead image on the English Wikipedia article for the Vellore campus institution",
+          "proposedPublicId": "studentstraffic/universities/vellore-institute-of-technology/cover"
+        }
+      ]
+    }
+  ]
+}

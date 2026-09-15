@@ -1,0 +1,19 @@
+{
+  "countrySlug": "costa-rica",
+  "universitySlug": "universidad-de-ciencias-medicas-costa-rica",
+  "schoolName": "Universidad de Ciencias Medicas",
+  "cityName": "San Jose",
+  "priority": "medium",
+  "officialWebsite": "https://ucimed.com/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - UCIMED's official Medicine and Surgery page describes five semesters for the Bachelor in Health Sciences and six semesters for the Licentiate stage, including five internships in the final semester. The programme page describes clinical practice in Costa Rican hospitals and clinics. SINAES records current quality-recognition context, including UCIMED's Medicine accreditation history and COMAEM's authorization to accredit medicine programmes in Costa Rica. Hold pending a current official tuition schedule, complete foreign-admissions document list, Spanish/immigration route, current internship allocation and market-specific professional-registration analysis.",
+  "sourceBundle": { "sources": [
+    { "label": "UCIMED Medicine and Surgery programme page", "url": "https://ucimed.com/programas/medicina-y-cirugia/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the Bachelor and Licentiate stages, final-semester internship areas and clinical-practice context." },
+    { "label": "UCIMED foreign-student admissions guide", "url": "https://ucimed.com/cuales-son-los-requisitos-para-estudiar-medicina-y-cirugia-en-costa-rica-siendo-extranjero-guia-ucimed/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Describes the online process for applicants whose secondary education was completed outside Costa Rica; complete document and visa requirements still need a canonical admissions source." },
+    { "label": "SINAES UCIMED Medicine quality-certificate report", "url": "https://www.sinaes.ac.cr/medicina-de-ucimed-recibio-por-quinta-vez-un-certificado-de-calidad-del-sinaes/", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Reports SINAES quality certification for UCIMED's Bachelor in Health Sciences and Licentiate in Medicine and Surgery in 2022." },
+    { "label": "SINAES authorized accreditation agencies", "url": "https://www.sinaes.ac.cr/agencias_autorizadas/", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Lists COMAEM authorization for accreditation of Medicine programmes in Costa Rica for 2025-2029." }
+  ] },
+  "structuredFacts": { "name": "Universidad de Ciencias Medicas", "type": "Private medical university", "programs": [ { "officialTitle": "Bachillerato en Ciencias de la Salud / Licenciatura en Medicina y Cirugia", "duration": "5 Bachelor semesters plus 6 Licentiate semesters", "feeStatus": "Current official programme page directs applicants to obtain costs; no current public itemised tuition schedule verified", "publishable": false } ], "missingForPublication": [ "current itemised tuition and mandatory-cost schedule", "canonical foreign-document and immigration requirements", "language requirements/support", "intake-specific clinical/internship allocations", "accommodation/student-support evidence", "market-specific registration and licensing assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until costs and applicant obligations can be stated precisely." }
+}

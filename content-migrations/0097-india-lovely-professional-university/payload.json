@@ -1,0 +1,1713 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Technology in Computer Science and Engineering",
+        "B.Tech. Computer Science and Engineering (CSE)",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate engineering degrees in computer science and engineering taken after an upper-secondary qualification. Lovely Professional University maps its B.Tech. Computer Science and Engineering (CSE), taught in English at the Phagwara campus in Punjab and listed on the National Board of Accreditation Tier I (Washington Accord) register to 30 June 2027, to this category. The LPU curriculum covers programming, data structures and algorithms, database management systems, computer networks and operating systems, with later coursework in artificial intelligence and machine learning, cybersecurity, cloud computing and blockchain.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition tiers and each university's admission route."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 1,
+      "durationYears": 2,
+      "summary": "MBA is the Students Traffic catalogue category for full-time general-management master's degrees taken after a completed bachelor's degree. Lovely Professional University maps its two-year MBA, delivered in English across eight terms at the Phagwara campus and listed on the National Board of Accreditation Management PG register to 30 June 2027, to this category. LPU also runs specialised MBA tracks in areas such as international business, business analytics, supply chain and logistics, and hospital and healthcare management, which are admitted under separate programme codes.",
+      "metaTitle": "MBA Degrees for International Students",
+      "metaDescription": "Compare MBA degrees open to international applicants: programme length, teaching language, intake months, published tuition and required documents."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design",
+        "B.Design"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "Bachelor of Design is the catalogue category for four-year studio-based undergraduate design degrees. Lovely Professional University maps its B.Design Interior and Furniture programme, taught in English at Phagwara, to this category. The LPU version combines conceptual foundation coursework with intensive studio practice in interior and furniture design, adds design research methods and a dissertation, and allows an interdisciplinary minor. Other LPU B.Design tracks covering fashion, graphics, gaming, product and industrial design, and film and television production sit under the same category.",
+      "metaTitle": "B.Des Degrees for International Students",
+      "metaDescription": "Compare B.Des degrees open to international applicants: studio specialisations, duration, teaching language, intake months and published tuition."
+    },
+    {
+      "slug": "bsc-agriculture",
+      "name": "B.Sc. in Agriculture",
+      "shortName": "B.Sc. Agriculture",
+      "stream": "agriculture",
+      "level": "bachelors",
+      "discipline": "agriculture",
+      "aliases": [
+        "Bachelor of Agriculture",
+        "B.Sc. Hons. Agriculture",
+        "BSc Agricultural Science"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "This category covers four-year undergraduate agricultural science degrees. Lovely Professional University maps its B.Sc. Hons. Agriculture, taught in English at Phagwara, to this category. The School of Agriculture and its B.Sc. (Hons.) award are accredited by the National Agricultural Education Accreditation Board of the Indian Council of Agricultural Research. Coursework spans crop production, plant protection against disease, insect pests and weeds, soil nutrient management and on-field implementation of agricultural practice.",
+      "metaTitle": "B.Sc. Agriculture Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Agriculture degrees open to international applicants: subject prerequisites, duration, intake months, accreditation and published tuition."
+    },
+    {
+      "slug": "bachelor-hospitality-management",
+      "name": "Bachelor's in Hospitality Management",
+      "shortName": "Bachelor's Hospitality",
+      "stream": "hospitality",
+      "level": "bachelors",
+      "discipline": "hospitality-management",
+      "aliases": [
+        "Bachelor of Hotel Management and Catering Technology",
+        "BHMCT",
+        "BSc Hospitality Management"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "This category covers undergraduate hospitality and hotel-management degrees that combine classroom teaching with supervised operational training. Lovely Professional University maps its four-year Bachelor of Hotel Management and Catering Technology (BHMCT), taught in English at Phagwara, to this category. LPU describes the programme as a blend of classroom teaching and industry-oriented operations aimed at hospitality leadership roles, and it sits alongside the university's B.Sc. Hotel and Hospitality Management and B.Sc. Culinary Arts awards in the same discipline area.",
+      "metaTitle": "Bachelor's Hospitality Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Hospitality degrees open to international applicants: operational training structure, duration, teaching language, intake months and published tuition."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "lovely-professional-university",
+      "name": "Lovely Professional University",
+      "city": "Phagwara",
+      "type": "Private",
+      "establishedYear": 2005,
+      "officialWebsite": "https://www.lpu.in/",
+      "mediaAttribution": {},
+      "summary": "Lovely Professional University is a state private university at Phagwara in Punjab, created by a 2005 Act of the Punjab legislature. Its single residential campus teaches computing, engineering, business, design, agriculture, hospitality and sciences in English, and admits international students from more than 50 countries through its own international admissions office.",
+      "campusLifestyle": "Teaching sits on one residential campus on the Jalandhar-Delhi G.T. Road at Phagwara, Punjab 144411. LPU reports more than 3,000 international students from over 50 countries, more than 150 programmes across over 40 discipline areas, and a library holding more than two million books and e-books with 24-hour access. A shopping mall, about 50 ATMs, a swimming pool, an indoor sports stadium and a health centre are inside the campus. Summers in the Phagwara-Jalandhar belt run 35-45C and winters 5-20C, so winter clothing is needed from November.",
+      "cityProfile": "Phagwara is a small industrial city in Punjab on the Jalandhar-Delhi G.T. Road, and the campus sits directly on that highway, so long-distance buses from Delhi can stop at the university gates if the driver is told in advance. LPU publishes road distances to five airports: Adampur Civil Airport 35 km (about 45 minutes), Ludhiana 60 km (about 1 hour 30 minutes), Amritsar Sri Guru Ram Dass Jee International 70 km (about 2 hours), Chandigarh 175 km (about 3 hours) and Delhi Indira Gandhi International 370 km (about 7 hours). Most international arrivals route through Delhi and continue by connecting flight or road. The currency is the Indian rupee; LPU advises arriving with US dollars or euros and using the money-exchange point on campus, and Indian SIM cards are sold at helpdesks during reporting. Temperatures range from 35-45C in summer to 5-20C in winter, so warm clothing is needed from November.",
+      "practicalExposure": "Practical training is built around named industry relationships rather than generic placement support. LPU lists tie-ups used in engineering teaching with Google, Microsoft, Dell EMC, Bosch, Cisco, VMware and Pega, and runs B.Tech. (CSE) specialisations designed with named partners including Quantiphi and Futurense. The National Board of Accreditation lists four B.Tech. programmes - Computer Science and Engineering, Civil Engineering, Electronics and Communication Engineering and Mechanical Engineering - on its Tier I register, which is the Washington Accord tier, to 30 June 2027, and the MBA on its Management PG register to the same date. The School of Agriculture holds ICAR accreditation from the National Agricultural Education Accreditation Board for its B.Sc. (Hons.) and eight M.Sc. awards, so agriculture teaching is assessed against the national agricultural-education standard rather than a general technical one. Academic collaborations with universities including UCLA, the University of British Columbia, Seoul National University, the University of Bristol and the University of Leeds support 2+2 international credit-transfer versions of several B.Tech., BBA and B.Design awards, which are admitted under separate programme codes. Hospitality and design programmes are taught with studio and operational components rather than lecture-only delivery.",
+      "hostelOverview": "Rooms are booked when the Acceptance Letter is issued and charged for a full academic session of about ten months. Published 2026-2027 Early Decision charges, valid to 31 August 2026, run from INR 73,000 or USD 870 for an air-cooled six-to-eight-seater, through INR 86,000 or USD 1,020 for an air-cooled four-seater and INR 116,000 or USD 1,370 for an air-cooled two-seater, to INR 156,000 or USD 1,845 for an air-conditioned single and INR 193,000 or USD 2,295 for a one-seater studio apartment. Rupee rates apply to Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka; every other nationality pays the dollar rate. After the deadline each category rises by INR 10,000 or USD 120. Rooms include bed, mattress, study table, almirah and an attached washroom with geyser.",
+      "dietarySupport": "Campus dining halls serve four meals a day and LPU states that more than 100,000 meals are prepared fresh on campus daily. Mess, laundry, gym, swimming pool and indoor-facility charges sit outside the published room rate and are administered by the campus residential operator, so they are quoted separately at booking. A shopping mall, food courts and about 50 ATMs are on campus, and a money-exchange point handles arrivals carrying US dollars or euros.",
+      "safetyOverview": "LPU states the campus is manned by over 400 full-time security officials with CCTV surveillance and fire-safety systems, and applies zero tolerance to ragging, alcohol, smoking, drugs and disciplinary misconduct. A health centre operates on campus, and international students are required to hold international medical insurance valid in India for the full programme duration.",
+      "studentSupport": "The Division of International Affairs at Block 32, Room 308 handles FRRO registration and visa extensions. Complimentary airport pickup is offered to new July/August intake students who submit arrival details at least one week ahead, though it may be declined for very small groups. An English Language Programme runs at beginner (8 months), intermediate (5 months) and advanced (3 months) levels alongside regular study.",
+      "whyChoose": [
+        "One international admissions route covers computing, engineering, business, design, agriculture, hospitality, law and sciences, so a single portal serves very different disciplines",
+        "International applicants are assessed on marks in the last qualification completed; LPU states no additional entrance examination is required, unlike the LPUNEST, JEE (Main) and CUET route used for Indian nationals",
+        "Merit scholarships cut tuition by 40, 50 or 60 per cent for the standard duration of the programme, awarded on qualifying-exam marks or the LPUIST score without a separate application",
+        "Per-semester tuition, residential charges by room category, uniform and examination fees are all published before application rather than quoted on request",
+        "Five programmes carry National Board of Accreditation status to 30 June 2027 and the School of Agriculture holds ICAR accreditation, so recognition is programme-specific and independently checkable"
+      ],
+      "thingsToConsider": [
+        "The Bureau of Immigration prohibits employment and business activity on an Indian student visa, so the programme cannot be part-funded from work in India, and LPU repeats that a visa issued in its name cannot be used for employment",
+        "Tuition tier is decided by nationality, not by need: SAARC applicants are billed in rupees, applicants from Africa and a defined list of other countries pay a lower dollar tier, and everyone else pays the standard dollar tier",
+        "The NRI scholarship scale is far stricter than the foreign-national scale - 98 per cent in Grade 12 for the 60 per cent award against 90 per cent on the foreign-national scale - so applicant category changes the real cost",
+        "The fee and scholarship structure must be fixed at admission and cannot be switched later, which matters for applicants holding a prior Indian qualification who can elect either structure",
+        "A student visa is endorsed to a named institution: a tourist visa cannot be converted inside India, a change of university after issue is not considered, and FRRO registration falls due within 14 days of arrival",
+        "Recognition varies by discipline - NBA covers four B.Tech. branches and the MBA, ICAR covers agriculture - so a programme outside those lists carries university-level recognition only"
+      ],
+      "bestFitFor": [
+        "Applicants from the 25 origin countries with a dedicated LPU requirements page, whose national qualification is already mapped to the 50 per cent entry threshold",
+        "Students who want an English-taught Indian degree without sitting a national entrance examination such as JEE (Main) or CUET",
+        "Strong school leavers who can convert 90 per cent or higher marks, or an LPUIST category cut-off, into a 60 per cent tuition scholarship",
+        "Applicants who want on-campus residence with a price published by room category rather than arranging private accommodation on arrival",
+        "Students choosing NBA-accredited engineering or management, or ICAR-accredited agriculture, where programme-level recognition is independently verifiable"
+      ],
+      "industryPartners": [
+        "Google",
+        "Microsoft",
+        "Dell EMC",
+        "Bosch",
+        "Cisco",
+        "VMware",
+        "Pega",
+        "Quantiphi",
+        "Futurense"
+      ],
+      "recognitionBadges": [
+        "UGC - Recognised under Section 2(f) of the UGC Act, 1956",
+        "UGC - Recognition under Section 12(B) of the UGC Act, 1956",
+        "NAAC - Accredited A++, CGPA 3.68, Cycle 1 (declared August 2023)",
+        "NBA Tier I (Washington Accord) - four B.Tech programmes accredited to 30 June 2027",
+        "NBA - MBA accredited on the Management PG register to 30 June 2027",
+        "ICAR (NAEAB) Accredited - School of Agriculture, B.Sc. (Hons.) and eight M.Sc. programmes",
+        "Pharmacy Council of India - Approved B.Pharm and M.Pharm",
+        "Council of Architecture - Approved B.Arch and M.Arch (Executive)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "LPU - Accreditations, Approvals and Global Memberships",
+          "url": "https://www.lpu.in/about-lpu/accreditation.php"
+        },
+        {
+          "label": "The Lovely Professional University Act, 2005 (India Code)",
+          "url": "https://www.indiacode.nic.in/handle/123456789/14983"
+        },
+        {
+          "label": "NAAC - Accreditation Status (valid-accreditation workbook)",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NBA - Accredited Programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Lovely Professional University public or private?",
+          "answer": "It is a state private university. LPU was established in Punjab by the Lovely Professional University Act, 2005, which received the Governor's assent on 23 December 2005, and it is recognised by the University Grants Commission under Section 2(f) of the UGC Act, 1956, with recognition also accorded under Section 12(B)."
+        },
+        {
+          "question": "What language are the programmes taught in?",
+          "answer": "English is the medium of instruction across LPU's regular programmes, with no later switch to Hindi or Punjabi. LPU states that it will not be accountable for academic difficulty caused by weak English, gives no exam relaxation on language grounds, and may require a student to take its English Language Programme alongside the regular degree or move the student to another programme."
+        },
+        {
+          "question": "Do international applicants need to sit an entrance exam?",
+          "answer": "No. LPU states that international students do not take an additional qualifying examination; eligibility and the scholarship band are decided on marks in the last qualification completed. LPUNEST, JEE (Main), CMAT and CUET belong to the Indian-national admission route. LPUIST, the International Scholarship Test, is optional and affects only the scholarship band."
+        },
+        {
+          "question": "What are the English language requirements?",
+          "answer": "Every international applicant must satisfy one of five routes regardless of programme: a pass in English at Grade 10 or a higher examination; proof that the eligibility qualification or higher was taught in English; IELTS band 5.5; TOEFL 70 or the equivalent in another TOEFL format; or a Certificate for Proficiency in English lasting at least three months."
+        },
+        {
+          "question": "Do the entry requirements change depending on my country?",
+          "answer": "The 50 per cent threshold and the English requirement are constant, but the qualification named changes. LPU runs requirement pages for 25 origin countries plus a Non-Resident Indian track. Nepal is assessed on the Secondary Education Examination and Higher Secondary Education, Bangladesh on the Secondary School Certificate and Higher Secondary Certificate, and Nigeria and Ghana on grade 10 / O Level and the 12th Grade Graduation Certificate."
+        },
+        {
+          "question": "How much is tuition and does it depend on nationality?",
+          "answer": "Yes, three per-semester tiers are published. For B.Tech. CSE the SAARC tier is INR 160,000, the Africa and selected-countries tier USD 2,500 and the all-other-countries tier USD 4,000; the MBA is INR 220,000, USD 3,000 and USD 4,500. A one-time uniform charge, an examination fee each semester and a one-time admission processing fee are added on top."
+        },
+        {
+          "question": "How is the NRI fee and scholarship track different?",
+          "answer": "The NRI page carries its own scholarship scale, which is materially harder than the foreign-national scale. It awards 60 per cent for 98 per cent or above in Grade 12, 50 per cent for 95-97.99 per cent, 40 per cent for 90-94.99 per cent and 30 per cent for 80-89.99 per cent, against 90, 75 and 60 per cent thresholds on the foreign-national scale. Children of NRIs and PIO card holders also do not need to obtain a student visa."
+        },
+        {
+          "question": "What does on-campus accommodation cost?",
+          "answer": "Residential charges for academic session 2026-2027 are published by room category for the full year. With the Early Decision Benefit valid to 31 August 2026 they run from INR 73,000 or USD 870 for an air-cooled six-to-eight-seater to INR 193,000 or USD 2,295 for a one-seater studio apartment. Rupee rates apply to the six SAARC countries and dollar rates elsewhere; after the deadline each category rises by INR 10,000 or USD 120."
+        },
+        {
+          "question": "How do I apply and what does the process produce?",
+          "answer": "Register on the LPU INTADMIT portal, complete the form and upload the qualifying-exam documents. An Offer Letter or Conditional Offer Letter usually follows within three working days. After the provisional registration fee is transferred and the signed Acceptance of Offer Letter, payment proof and passport copy are uploaded, LPU issues the Acceptance Letter. Only the Acceptance Letter is accepted for the Indian student-visa application."
+        },
+        {
+          "question": "When does the session start and what is the application deadline?",
+          "answer": "Batch 2026 international admissions opened on 25 October 2025, and LPU publishes 31 August 2026 as the last date to apply with scholarship. The session commences in the third week of July, with exact reporting dates issued per programme. MBA applicants report earlier: compulsory pre-term classes begin on 30 July 2026 and classes start on 10 August 2026."
+        },
+        {
+          "question": "Can I work part-time in India while studying at LPU?",
+          "answer": "No. The Bureau of Immigration states that foreigners on a student visa must not involve themselves in any employment or business activity in India, and LPU repeats that a visa issued in its name cannot be used for employment or for admission elsewhere. Budgeting should assume tuition, residence and living costs are met from savings, family support or scholarship."
+        },
+        {
+          "question": "What immigration steps apply after arrival?",
+          "answer": "Student-visa holders staying beyond 180 days must register with the Foreigners Regional Registration Officer within 14 days of arrival, using passport, visa page, bonafide certificate, local address proof and a photograph. Foreign students are also required to open a Non-Resident Ordinary bank account and give the details to the FRRO. LPU's Division of International Affairs at Block 32, Room 308 assists with registration and extension."
+        },
+        {
+          "question": "What do the accreditations actually cover?",
+          "answer": "They are programme-specific. The National Board of Accreditation lists LPU's B.Tech. in Computer Science and Engineering, Civil Engineering, Electronics and Communication Engineering and Mechanical Engineering on its Tier I (Washington Accord) register to 30 June 2027, and the MBA on the Management PG register to the same date. ICAR accreditation covers the School of Agriculture's B.Sc. (Hons.) and eight M.Sc. awards. Pharmacy and architecture carry PCI and COA approval. LPU's law courses do not currently hold a Bar Council of India approval window running past 2025-26, so no LPU law programme is listed on this page."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "LPU International - admissions and support",
+          "url": "https://www.lpu.in/international/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "LPU International - country-specific information",
+          "url": "https://www.lpu.in/international/country.php",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Index of 25 origin-country requirement pages plus the Non-Resident Indian track."
+        },
+        {
+          "label": "LPU International - English Language Requirement",
+          "url": "https://www.lpu.in/international/english-language-requirement.php",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "LPU International - admission, visa and FRRO FAQs",
+          "url": "https://www.lpu.in/international/faq.php",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "LPU International - residential facilities and charges",
+          "url": "https://www.lpu.in/international/accommodation.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Room-category charges for academic session 2026-2027 in both the INR and USD tiers."
+        },
+        {
+          "label": "LPU - Accreditations, Approvals and Global Memberships",
+          "url": "https://www.lpu.in/about-lpu/accreditation.php",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "UGC 2(f) and 12(B), the NBA programme schedule to 30 June 2027, ICAR, BCI, PCI, COA, NCTE, RCI and ITPI."
+        },
+        {
+          "label": "India Code - Lovely Professional University Act, 2005",
+          "url": "https://www.indiacode.nic.in/handle/123456789/14983",
+          "kind": "government",
+          "checkedAt": "2026-08-22"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking (Ministry of Education)",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Institution id IR-O-U-0379: rank 31, score 57.77. The Overall table gives rank 49, score 55.49."
+        },
+        {
+          "label": "Bureau of Immigration - Study in India",
+          "url": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "No employment or business activity on a student visa; FRRO registration within 14 days; NRO account requirement."
+        },
+        {
+          "label": "LPU International - visa and FRRO FAQs",
+          "url": "https://www.lpu.in/international/visa-frro-faq.php",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my LPU eligibility by origin country",
+            "capture": [
+              "citizenship or passport country",
+              "applicant category (foreign national or NRI)",
+              "name of the school-leaving or degree qualification held",
+              "aggregate marks or grade",
+              "English Language Requirement route"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Work out my LPU fee tier and scholarship band",
+            "capture": [
+              "citizenship",
+              "intended programme",
+              "qualifying-exam marks",
+              "LPUIST status",
+              "room category preference"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my LPU INTADMIT application review",
+            "capture": [
+              "document readiness",
+              "result status (declared or awaited)",
+              "need for certified English translations",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my Indian student visa and FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date",
+              "medical insurance status"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "lpu-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech. Computer Science and Engineering (CSE), Lovely Professional University, Phagwara",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 8000,
+            "officialTotalTuitionAmount": 32000,
+            "annualTuitionUsd": 8000,
+            "totalTuitionUsd": 32000,
+            "verifiedAt": "2026-08-22",
+            "notes": "LPU publishes three per-semester tuition tiers for this programme and the tier is set by nationality. SAARC applicants (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka) are billed INR 1,60,000 per semester; applicants from Africa and a defined list of other countries pay USD 2500 per semester; all other nationalities pay USD 4000 per semester, which is the figure carried in the catalogue total. A one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier) and an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier) are charged on top of tuition, along with a one-time non-refundable admission processing fee. Merit scholarships cut tuition by 60, 50 or 40 per cent depending on qualifying-exam marks or the LPUIST score and apply for the standard duration of the programme. Students billed in US dollars may pay the initial instalment in USD and the balance in INR, and later semester fees in either currency. The fee and scholarship structure chosen at admission stays fixed for the whole programme."
+          },
+          "officialProgramUrl": "https://www.lpu.in/international/programmes/engineering/b-tech-computer-science",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport of any country other than India",
+              "Non-Resident Indians and applicants applying under LPU's NRI category",
+              "International students already enrolled at a recognised university, applying for advanced standing or transfer"
+            ],
+            "restrictions": [
+              "Tuition tier is set by nationality: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) are billed INR 1,60,000 per semester, applicants from Africa and a defined list of other countries USD 2500, and all other nationalities USD 4000",
+              "Merit-scholarship thresholds differ by applicant category: the foreign-national scale awards 60 per cent at 90 per cent marks, while the NRI scale requires 98 per cent marks for the same award",
+              "The fee and scholarship structure must be fixed at the time of admission and stays in force for the whole programme",
+              "An international applicant who previously studied at LPU or another Indian university may instead elect the Indian-national fee and scholarship structure, but must choose one option at admission",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be part-funded from work in India"
+            ],
+            "notes": "LPU publishes separate requirement pages for 25 origin countries plus a Non-Resident Indian track. The academic threshold is 50 per cent in each case, but the national qualification named differs by country, and the NRI page carries its own, stricter scholarship scale.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.lpu.in/international/country.php"
+          },
+          "admissionsContent": {
+            "overview": "International applicants to LPU's four-year B.Tech. in Computer Science and Engineering are assessed on merit in the qualifying examination rather than an entrance test; LPUNEST, JEE (Main) and CUET belong to the Indian-national route. The programme sits on the National Board of Accreditation Tier I (Washington Accord) register to 30 June 2027 and is taught in English across eight semesters.",
+            "eligibility": {
+              "intro": "Entry requires a completed Grade 12 or A Level qualification including Physics and Mathematics with a minimum aggregate of 50 per cent, plus LPU's English Language Requirement.",
+              "items": [
+                "Pass with 50 per cent marks in Grade 12 / A Level or an equivalent qualification, including Physics and Mathematics",
+                "Satisfy one route of the English Language Requirement: a pass in English at Grade 10 or higher, proof of English-medium study, IELTS 5.5, TOEFL 70, or a Certificate for Proficiency in English of at least three months",
+                "No additional entrance examination is required of international applicants; marks in the qualifying examination set both eligibility and the scholarship band",
+                "Where a transcript states neither a percentage nor a grade, LPU converts it using the method set out in Part C of its prospectus"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the LPU INTADMIT portal with email, name, country, mobile number and gender, then complete the application for the chosen programme",
+              "Upload the qualifying-examination transcript, or select the result status 'awaited' where the final result is pending, with a certified English translation of any document not issued in English",
+              "Receive the Offer Letter or Conditional Offer Letter, normally issued within three working days of a complete application",
+              "Transfer the minimum provisional registration fee to the LPU bank account and upload the payment proof, the signed Acceptance of Offer Letter and the passport copy",
+              "Download the Acceptance Letter, which is the document Indian missions accept for the student-visa application; an Offer Letter alone is not accepted"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / A Level final transcript or marksheet showing Physics and Mathematics",
+                "Grade 10 / O Level transcript",
+                "Certified English translation of any transcript not issued in English",
+                "Evidence of English-medium instruction, or an IELTS, TOEFL or English proficiency certificate"
+              ],
+              "application": [
+                "Copy of a valid passport, or a national identity document for applicants from Nepal and Bhutan",
+                "Signed Acceptance of Offer Letter (page four of the Offer Letter)",
+                "Proof of the bank transfer made to the LPU account",
+                "Evidence meeting the English Language Requirement",
+                "International medical insurance valid in India for the full programme duration"
+              ]
+            },
+            "deadlinesNote": "LPU opened Batch 2026 international admissions on 25 October 2025 and publishes 31 August 2026 as the last date to apply for admission with scholarship. The session commences in the third week of July, and exact reporting and induction dates are issued per programme in the reporting schedule.",
+            "visaConsiderations": [
+              "The Indian student visa must be endorsed in the name of Lovely Professional University; a visa issued for another institution cannot be transferred",
+              "A tourist or other visa category cannot be converted into a student visa inside India; the applicant must return home and apply afresh",
+              "Student-visa holders staying beyond 180 days must register with the FRRO within 14 days of arrival in India",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July",
+            "August"
+          ],
+          "intakeCodes": [
+            "july",
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Per-semester tuition on the three published tiers is INR 1,60,000 for SAARC nationals, USD 2500 for applicants from Africa and a defined list of other countries, and USD 4000 for all other nationalities, which is the figure used for the catalogue total. That works out at USD 8000 a year and USD 32000 across the 4-year programme on the standard tier, against USD 5000 a year on the Africa tier and INR 3,20,000 a year on the SAARC tier. Add a one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier), an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier), a one-time non-refundable admission processing fee, and residential charges billed separately. Merit scholarships of 60, 50 or 40 per cent are applied after document verification at reporting, so the first invoice can show the gross amount.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech., eight semesters",
+              "language": "English",
+              "details": "Core coursework in programming, data structures and algorithms, database management systems, computer networks and operating systems, with later study in artificial intelligence and machine learning, cybersecurity, cloud computing and blockchain. Delivered at the Phagwara campus."
+            }
+          ]
+        },
+        {
+          "slug": "lpu-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "MBA (Master of Business Administration), Lovely Professional University, Phagwara",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 9000,
+            "officialTotalTuitionAmount": 18000,
+            "annualTuitionUsd": 9000,
+            "totalTuitionUsd": 18000,
+            "verifiedAt": "2026-08-22",
+            "notes": "LPU publishes three per-semester tuition tiers for this programme and the tier is set by nationality. SAARC applicants (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka) are billed INR 2,20,000 per semester; applicants from Africa and a defined list of other countries pay USD 3000 per semester; all other nationalities pay USD 4500 per semester, which is the figure carried in the catalogue total. A one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier) and an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier) are charged on top of tuition, along with a one-time non-refundable admission processing fee. Merit scholarships cut tuition by 60, 50 or 40 per cent depending on qualifying-exam marks or the LPUIST score and apply for the standard duration of the programme. Students billed in US dollars may pay the initial instalment in USD and the balance in INR, and later semester fees in either currency. The fee and scholarship structure chosen at admission stays fixed for the whole programme."
+          },
+          "officialProgramUrl": "https://www.lpu.in/international/programmes/management/mba",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport of any country other than India",
+              "Non-Resident Indians and applicants applying under LPU's NRI category",
+              "International students already enrolled at a recognised university, applying for advanced standing or transfer"
+            ],
+            "restrictions": [
+              "Tuition tier is set by nationality: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) are billed INR 2,20,000 per semester, applicants from Africa and a defined list of other countries USD 3000, and all other nationalities USD 4500",
+              "Merit-scholarship thresholds differ by applicant category: the foreign-national scale awards 60 per cent at 90 per cent marks, while the NRI scale requires 98 per cent marks for the same award",
+              "The fee and scholarship structure must be fixed at the time of admission and stays in force for the whole programme",
+              "An international applicant who previously studied at LPU or another Indian university may instead elect the Indian-national fee and scholarship structure, but must choose one option at admission",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be part-funded from work in India"
+            ],
+            "notes": "LPU publishes separate requirement pages for 25 origin countries plus a Non-Resident Indian track. The academic threshold is 50 per cent in each case, but the national qualification named differs by country, and the NRI page carries its own, stricter scholarship scale.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.lpu.in/international/country.php"
+          },
+          "admissionsContent": {
+            "overview": "LPU's two-year MBA runs across eight terms in English and sits on the National Board of Accreditation Management PG register to 30 June 2027. International applicants are admitted on merit in the bachelor's degree; CMAT and LPUNEST belong to the Indian-national route. Compulsory pre-term classes precede the main session, so MBA reporting is earlier than for undergraduate programmes.",
+            "eligibility": {
+              "intro": "Entry requires a completed bachelor's degree in any discipline with a minimum aggregate of 50 per cent, or an accepted Indian professional qualification, together with the English Language Requirement.",
+              "items": [
+                "Pass with 50 per cent aggregate marks in a bachelor's degree in any discipline, or an equivalent qualification",
+                "Completion of the Company Secretary qualification from the Institute of Company Secretaries of India is accepted as an alternative entry route",
+                "Completion of Chartered Accountancy from the Institute of Chartered Accountants of India is accepted as an alternative entry route",
+                "Satisfy one route of the English Language Requirement: English passed at Grade 10 or higher, proof of English-medium study, IELTS 5.5, TOEFL 70, or a three-month English proficiency certificate",
+                "Marks in the bachelor's degree set both eligibility and the scholarship band; no separate entrance test is required of international applicants"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the LPU INTADMIT portal with email, name, country, mobile number and gender, then complete the application for the chosen programme",
+              "Upload the qualifying-examination transcript, or select the result status 'awaited' where the final result is pending, with a certified English translation of any document not issued in English",
+              "Receive the Offer Letter or Conditional Offer Letter, normally issued within three working days of a complete application",
+              "Transfer the minimum provisional registration fee to the LPU bank account and upload the payment proof, the signed Acceptance of Offer Letter and the passport copy",
+              "Download the Acceptance Letter, which is the document Indian missions accept for the student-visa application; an Offer Letter alone is not accepted"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate with all semester or year marksheets",
+                "Grade 12 / A Level transcript",
+                "Grade 10 / O Level transcript",
+                "Certified English translation of any transcript not issued in English",
+                "Institute of Company Secretaries of India or Institute of Chartered Accountants of India completion certificate where that route is used"
+              ],
+              "application": [
+                "Copy of a valid passport, or a national identity document for applicants from Nepal and Bhutan",
+                "Signed Acceptance of Offer Letter (page four of the Offer Letter)",
+                "Proof of the bank transfer made to the LPU account",
+                "Evidence meeting the English Language Requirement",
+                "International medical insurance valid in India for the full programme duration"
+              ]
+            },
+            "deadlinesNote": "Batch 2026 international admissions opened on 25 October 2025, with 31 August 2026 the last date to apply with scholarship. Compulsory MBA pre-term classes run from 30 July 2026 and classes begin on 10 August 2026. LPU records 17 August 2026 as the close of its 2026 MBA application window.",
+            "visaConsiderations": [
+              "The Indian student visa must be endorsed in the name of Lovely Professional University; a visa issued for another institution cannot be transferred",
+              "A tourist or other visa category cannot be converted into a student visa inside India; the applicant must return home and apply afresh",
+              "Student-visa holders staying beyond 180 days must register with the FRRO within 14 days of arrival in India",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July",
+            "August"
+          ],
+          "intakeCodes": [
+            "july",
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Per-semester tuition on the three published tiers is INR 2,20,000 for SAARC nationals, USD 3000 for applicants from Africa and a defined list of other countries, and USD 4500 for all other nationalities, which is the figure used for the catalogue total. That works out at USD 9000 a year and USD 18000 across the 2-year programme on the standard tier, against USD 6000 a year on the Africa tier and INR 4,40,000 a year on the SAARC tier. Add a one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier), an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier), a one-time non-refundable admission processing fee, and residential charges billed separately. Merit scholarships of 60, 50 or 40 per cent are applied after document verification at reporting, so the first invoice can show the gross amount.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year MBA, eight terms",
+              "language": "English",
+              "details": "Compulsory pre-term classes run from 30 July 2026 and the main teaching session begins on 10 August 2026 at the Phagwara campus. Coursework is built with corporate partners, and specialised MBA tracks including international business, business analytics, supply chain and logistics, and hospital and healthcare management are admitted under separate programme codes."
+            }
+          ]
+        },
+        {
+          "slug": "lpu-bdes-interior-and-furniture",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "B.Design Interior and Furniture, Lovely Professional University, Phagwara",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 7000,
+            "officialTotalTuitionAmount": 28000,
+            "annualTuitionUsd": 7000,
+            "totalTuitionUsd": 28000,
+            "verifiedAt": "2026-08-22",
+            "notes": "LPU publishes three per-semester tuition tiers for this programme and the tier is set by nationality. SAARC applicants (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka) are billed INR 1,40,000 per semester; applicants from Africa and a defined list of other countries pay USD 2000 per semester; all other nationalities pay USD 3500 per semester, which is the figure carried in the catalogue total. A one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier) and an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier) are charged on top of tuition, along with a one-time non-refundable admission processing fee. Merit scholarships cut tuition by 60, 50 or 40 per cent depending on qualifying-exam marks or the LPUIST score and apply for the standard duration of the programme. Students billed in US dollars may pay the initial instalment in USD and the balance in INR, and later semester fees in either currency. The fee and scholarship structure chosen at admission stays fixed for the whole programme."
+          },
+          "officialProgramUrl": "https://www.lpu.in/international/programmes/bachelor-of-design-in-interior-and-furniture",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport of any country other than India",
+              "Non-Resident Indians and applicants applying under LPU's NRI category",
+              "International students already enrolled at a recognised university, applying for advanced standing or transfer"
+            ],
+            "restrictions": [
+              "Tuition tier is set by nationality: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) are billed INR 1,40,000 per semester, applicants from Africa and a defined list of other countries USD 2000, and all other nationalities USD 3500",
+              "Merit-scholarship thresholds differ by applicant category: the foreign-national scale awards 60 per cent at 90 per cent marks, while the NRI scale requires 98 per cent marks for the same award",
+              "The fee and scholarship structure must be fixed at the time of admission and stays in force for the whole programme",
+              "An international applicant who previously studied at LPU or another Indian university may instead elect the Indian-national fee and scholarship structure, but must choose one option at admission",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be part-funded from work in India"
+            ],
+            "notes": "LPU publishes separate requirement pages for 25 origin countries plus a Non-Resident Indian track. The academic threshold is 50 per cent in each case, but the national qualification named differs by country, and the NRI page carries its own, stricter scholarship scale.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.lpu.in/international/country.php"
+          },
+          "admissionsContent": {
+            "overview": "This four-year design degree pairs conceptual foundation coursework with intensive studio work in interior and furniture design, adds design research methods and a dissertation, and allows an interdisciplinary minor. International applicants are assessed on marks in Grade 12 or A Level, and LPU publishes no portfolio or design aptitude test for the international route.",
+            "eligibility": {
+              "intro": "Entry requires a completed Grade 12 or A Level qualification with a minimum aggregate of 50 per cent in any subject combination, together with LPU's English Language Requirement.",
+              "items": [
+                "Pass with 50 per cent marks in Grade 12 / A Level or an equivalent qualification, in any stream",
+                "Satisfy one route of the English Language Requirement: English passed at Grade 10 or higher, proof of English-medium study, IELTS 5.5, TOEFL 70, or a three-month English proficiency certificate",
+                "Marks in Grade 12 / A Level set both eligibility and the merit scholarship band",
+                "No entrance test or design aptitude test is published for the international admission route"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the LPU INTADMIT portal with email, name, country, mobile number and gender, then complete the application for the chosen programme",
+              "Upload the qualifying-examination transcript, or select the result status 'awaited' where the final result is pending, with a certified English translation of any document not issued in English",
+              "Receive the Offer Letter or Conditional Offer Letter, normally issued within three working days of a complete application",
+              "Transfer the minimum provisional registration fee to the LPU bank account and upload the payment proof, the signed Acceptance of Offer Letter and the passport copy",
+              "Download the Acceptance Letter, which is the document Indian missions accept for the student-visa application; an Offer Letter alone is not accepted"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / A Level final transcript or marksheet",
+                "Grade 10 / O Level transcript",
+                "Certified English translation of any transcript not issued in English",
+                "Evidence meeting the English Language Requirement"
+              ],
+              "application": [
+                "Copy of a valid passport, or a national identity document for applicants from Nepal and Bhutan",
+                "Signed Acceptance of Offer Letter (page four of the Offer Letter)",
+                "Proof of the bank transfer made to the LPU account",
+                "Evidence meeting the English Language Requirement",
+                "International medical insurance valid in India for the full programme duration"
+              ]
+            },
+            "deadlinesNote": "LPU opened Batch 2026 international admissions on 25 October 2025 and publishes 31 August 2026 as the last date to apply for admission with scholarship. The session commences in the third week of July, and exact reporting and induction dates are issued per programme in the reporting schedule.",
+            "visaConsiderations": [
+              "The Indian student visa must be endorsed in the name of Lovely Professional University; a visa issued for another institution cannot be transferred",
+              "A tourist or other visa category cannot be converted into a student visa inside India; the applicant must return home and apply afresh",
+              "Student-visa holders staying beyond 180 days must register with the FRRO within 14 days of arrival in India",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July",
+            "August"
+          ],
+          "intakeCodes": [
+            "july",
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Per-semester tuition on the three published tiers is INR 1,40,000 for SAARC nationals, USD 2000 for applicants from Africa and a defined list of other countries, and USD 3500 for all other nationalities, which is the figure used for the catalogue total. That works out at USD 7000 a year and USD 28000 across the 4-year programme on the standard tier, against USD 4000 a year on the Africa tier and INR 2,80,000 a year on the SAARC tier. Add a one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier), an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier), a one-time non-refundable admission processing fee, and residential charges billed separately. Merit scholarships of 60, 50 or 40 per cent are applied after document verification at reporting, so the first invoice can show the gross amount.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Design, eight semesters",
+              "language": "English",
+              "details": "Conceptual foundation coursework with intensive studio work in interior and furniture design, inputs on design research methods and a dissertation, plus an optional interdisciplinary minor. Delivered at the Phagwara campus."
+            }
+          ]
+        },
+        {
+          "slug": "lpu-bsc-hons-agriculture",
+          "canonicalCourseSlug": "bsc-agriculture",
+          "officialTitle": "B.Sc. Hons. Agriculture, Lovely Professional University, Phagwara",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 24000,
+            "annualTuitionUsd": 6000,
+            "totalTuitionUsd": 24000,
+            "verifiedAt": "2026-08-22",
+            "notes": "LPU publishes three per-semester tuition tiers for this programme and the tier is set by nationality. SAARC applicants (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka) are billed INR 1,20,000 per semester; applicants from Africa and a defined list of other countries pay USD 1500 per semester; all other nationalities pay USD 3000 per semester, which is the figure carried in the catalogue total. A one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier) and an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier) are charged on top of tuition, along with a one-time non-refundable admission processing fee. Merit scholarships cut tuition by 60, 50 or 40 per cent depending on qualifying-exam marks or the LPUIST score and apply for the standard duration of the programme. Students billed in US dollars may pay the initial instalment in USD and the balance in INR, and later semester fees in either currency. The fee and scholarship structure chosen at admission stays fixed for the whole programme."
+          },
+          "officialProgramUrl": "https://www.lpu.in/international/programmes/bsc-hons-agriculture",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport of any country other than India",
+              "Non-Resident Indians and applicants applying under LPU's NRI category",
+              "International students already enrolled at a recognised university, applying for advanced standing or transfer"
+            ],
+            "restrictions": [
+              "Tuition tier is set by nationality: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) are billed INR 1,20,000 per semester, applicants from Africa and a defined list of other countries USD 1500, and all other nationalities USD 3000",
+              "Merit-scholarship thresholds differ by applicant category: the foreign-national scale awards 60 per cent at 90 per cent marks, while the NRI scale requires 98 per cent marks for the same award",
+              "The fee and scholarship structure must be fixed at the time of admission and stays in force for the whole programme",
+              "An international applicant who previously studied at LPU or another Indian university may instead elect the Indian-national fee and scholarship structure, but must choose one option at admission",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be part-funded from work in India"
+            ],
+            "notes": "LPU publishes separate requirement pages for 25 origin countries plus a Non-Resident Indian track. The academic threshold is 50 per cent in each case, but the national qualification named differs by country, and the NRI page carries its own, stricter scholarship scale.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.lpu.in/international/country.php"
+          },
+          "admissionsContent": {
+            "overview": "LPU's four-year B.Sc. Hons. Agriculture is run by a School of Agriculture whose B.Sc. (Hons.) award is accredited by the National Agricultural Education Accreditation Board of the Indian Council of Agricultural Research. It carries a subject prerequisite and a minimum-age condition that LPU's other undergraduate programmes do not.",
+            "eligibility": {
+              "intro": "Entry requires a Grade 12 or Intermediate qualification with 50 per cent aggregate marks including three science or agriculture subjects, a minimum age of 16, and the English Language Requirement.",
+              "items": [
+                "Pass with 50 per cent aggregate marks in 10+2 or Intermediate with three subjects from Physics, Chemistry, Mathematics, Biology and Agriculture",
+                "Minimum age of 16 years on or before 31 December 2026 for the 2026 admission cycle",
+                "Satisfy one route of the English Language Requirement: English passed at Grade 10 or higher, proof of English-medium study, IELTS 5.5, TOEFL 70, or a three-month English proficiency certificate",
+                "Marks in the Grade 12 or Intermediate qualification set both eligibility and the merit scholarship band"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the LPU INTADMIT portal with email, name, country, mobile number and gender, then complete the application for the chosen programme",
+              "Upload the qualifying-examination transcript, or select the result status 'awaited' where the final result is pending, with a certified English translation of any document not issued in English",
+              "Receive the Offer Letter or Conditional Offer Letter, normally issued within three working days of a complete application",
+              "Transfer the minimum provisional registration fee to the LPU bank account and upload the payment proof, the signed Acceptance of Offer Letter and the passport copy",
+              "Download the Acceptance Letter, which is the document Indian missions accept for the student-visa application; an Offer Letter alone is not accepted"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 or Intermediate final transcript showing three subjects from Physics, Chemistry, Mathematics, Biology and Agriculture",
+                "Grade 10 / O Level transcript",
+                "Date-of-birth evidence supporting the minimum-age condition",
+                "Certified English translation of any transcript not issued in English"
+              ],
+              "application": [
+                "Copy of a valid passport, or a national identity document for applicants from Nepal and Bhutan",
+                "Signed Acceptance of Offer Letter (page four of the Offer Letter)",
+                "Proof of the bank transfer made to the LPU account",
+                "Evidence meeting the English Language Requirement",
+                "International medical insurance valid in India for the full programme duration"
+              ]
+            },
+            "deadlinesNote": "LPU opened Batch 2026 international admissions on 25 October 2025 and publishes 31 August 2026 as the last date to apply for admission with scholarship. The session commences in the third week of July, and exact reporting and induction dates are issued per programme in the reporting schedule.",
+            "visaConsiderations": [
+              "The Indian student visa must be endorsed in the name of Lovely Professional University; a visa issued for another institution cannot be transferred",
+              "A tourist or other visa category cannot be converted into a student visa inside India; the applicant must return home and apply afresh",
+              "Student-visa holders staying beyond 180 days must register with the FRRO within 14 days of arrival in India",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July",
+            "August"
+          ],
+          "intakeCodes": [
+            "july",
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Per-semester tuition on the three published tiers is INR 1,20,000 for SAARC nationals, USD 1500 for applicants from Africa and a defined list of other countries, and USD 3000 for all other nationalities, which is the figure used for the catalogue total. That works out at USD 6000 a year and USD 24000 across the 4-year programme on the standard tier, against USD 3000 a year on the Africa tier and INR 2,40,000 a year on the SAARC tier. Add a one-time uniform charge of USD 50 (INR 4,000 on the SAARC tier), an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier), a one-time non-refundable admission processing fee, and residential charges billed separately. Merit scholarships of 60, 50 or 40 per cent are applied after document verification at reporting, so the first invoice can show the gross amount.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Sc. Hons. Agriculture, eight semesters",
+              "language": "English",
+              "details": "Coursework in crop production and allied agricultural science with on-field implementation, covering plant disease, insect pests, weeds and nutrient disorders. The School of Agriculture holds ICAR (NAEAB) accreditation for the B.Sc. (Hons.) and eight M.Sc. awards."
+            }
+          ]
+        },
+        {
+          "slug": "lpu-bhmct",
+          "canonicalCourseSlug": "bachelor-hospitality-management",
+          "officialTitle": "Bachelor of Hotel Management and Catering Technology (BHMCT), Lovely Professional University, Phagwara",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 24000,
+            "annualTuitionUsd": 6000,
+            "totalTuitionUsd": 24000,
+            "verifiedAt": "2026-08-22",
+            "notes": "LPU publishes three per-semester tuition tiers for this programme and the tier is set by nationality. SAARC applicants (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka) are billed INR 80,000 per semester; applicants from Africa and a defined list of other countries pay USD 1500 per semester; all other nationalities pay USD 3000 per semester, which is the figure carried in the catalogue total. A one-time uniform charge of USD 80 (INR 6,000 on the SAARC tier) and an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier) are charged on top of tuition, along with a one-time non-refundable admission processing fee. Merit scholarships cut tuition by 60, 50 or 40 per cent depending on qualifying-exam marks or the LPUIST score and apply for the standard duration of the programme. Students billed in US dollars may pay the initial instalment in USD and the balance in INR, and later semester fees in either currency. The fee and scholarship structure chosen at admission stays fixed for the whole programme."
+          },
+          "officialProgramUrl": "https://www.lpu.in/international/programmes/bhmct-bachelor-of-hotel-management-and-catering-technology",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport of any country other than India",
+              "Non-Resident Indians and applicants applying under LPU's NRI category",
+              "International students already enrolled at a recognised university, applying for advanced standing or transfer"
+            ],
+            "restrictions": [
+              "Tuition tier is set by nationality: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) are billed INR 80,000 per semester, applicants from Africa and a defined list of other countries USD 1500, and all other nationalities USD 3000",
+              "Merit-scholarship thresholds differ by applicant category: the foreign-national scale awards 60 per cent at 90 per cent marks, while the NRI scale requires 98 per cent marks for the same award",
+              "The fee and scholarship structure must be fixed at the time of admission and stays in force for the whole programme",
+              "An international applicant who previously studied at LPU or another Indian university may instead elect the Indian-national fee and scholarship structure, but must choose one option at admission",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be part-funded from work in India"
+            ],
+            "notes": "LPU publishes separate requirement pages for 25 origin countries plus a Non-Resident Indian track. The academic threshold is 50 per cent in each case, but the national qualification named differs by country, and the NRI page carries its own, stricter scholarship scale.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.lpu.in/international/country.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year BHMCT combines classroom teaching with industry-oriented hospitality and catering operations. It carries the lowest published SAARC-tier tuition among the LPU undergraduate programmes listed here, and a higher one-time uniform charge than the university's other undergraduate awards because of its operational dress requirement.",
+            "eligibility": {
+              "intro": "Entry requires a completed Grade 12 or A Level qualification with a minimum aggregate of 50 per cent in any subject combination, together with LPU's English Language Requirement.",
+              "items": [
+                "Pass with 50 per cent marks in Grade 12 / A Level or an equivalent qualification, in any stream",
+                "Satisfy one route of the English Language Requirement: English passed at Grade 10 or higher, proof of English-medium study, IELTS 5.5, TOEFL 70, or a three-month English proficiency certificate",
+                "Marks in Grade 12 / A Level set both eligibility and the merit scholarship band",
+                "No entrance test is required of international applicants for this programme"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the LPU INTADMIT portal with email, name, country, mobile number and gender, then complete the application for the chosen programme",
+              "Upload the qualifying-examination transcript, or select the result status 'awaited' where the final result is pending, with a certified English translation of any document not issued in English",
+              "Receive the Offer Letter or Conditional Offer Letter, normally issued within three working days of a complete application",
+              "Transfer the minimum provisional registration fee to the LPU bank account and upload the payment proof, the signed Acceptance of Offer Letter and the passport copy",
+              "Download the Acceptance Letter, which is the document Indian missions accept for the student-visa application; an Offer Letter alone is not accepted"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / A Level final transcript or marksheet",
+                "Grade 10 / O Level transcript",
+                "Certified English translation of any transcript not issued in English",
+                "Evidence meeting the English Language Requirement"
+              ],
+              "application": [
+                "Copy of a valid passport, or a national identity document for applicants from Nepal and Bhutan",
+                "Signed Acceptance of Offer Letter (page four of the Offer Letter)",
+                "Proof of the bank transfer made to the LPU account",
+                "Evidence meeting the English Language Requirement",
+                "International medical insurance valid in India for the full programme duration"
+              ]
+            },
+            "deadlinesNote": "LPU opened Batch 2026 international admissions on 25 October 2025 and publishes 31 August 2026 as the last date to apply for admission with scholarship. The session commences in the third week of July, and exact reporting and induction dates are issued per programme in the reporting schedule.",
+            "visaConsiderations": [
+              "The Indian student visa must be endorsed in the name of Lovely Professional University; a visa issued for another institution cannot be transferred",
+              "A tourist or other visa category cannot be converted into a student visa inside India; the applicant must return home and apply afresh",
+              "Student-visa holders staying beyond 180 days must register with the FRRO within 14 days of arrival in India",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July",
+            "August"
+          ],
+          "intakeCodes": [
+            "july",
+            "august"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Per-semester tuition on the three published tiers is INR 80,000 for SAARC nationals, USD 1500 for applicants from Africa and a defined list of other countries, and USD 3000 for all other nationalities, which is the figure used for the catalogue total. That works out at USD 6000 a year and USD 24000 across the 4-year programme on the standard tier, against USD 3000 a year on the Africa tier and INR 1,60,000 a year on the SAARC tier. Add a one-time uniform charge of USD 80 (INR 6,000 on the SAARC tier), an examination fee of USD 75 per semester (INR 5,000 on the SAARC tier), a one-time non-refundable admission processing fee, and residential charges billed separately. Merit scholarships of 60, 50 or 40 per cent are applied after document verification at reporting, so the first invoice can show the gross amount.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year BHMCT, eight semesters",
+              "language": "English",
+              "details": "Classroom teaching combined with industry-oriented hospitality and catering operations, taught within LPU's Hotel Management and Tourism discipline alongside the B.Sc. Hotel and Hospitality Management and B.Sc. Culinary Arts awards. Delivered at the Phagwara campus."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "International applicants to LPU's B.Tech. Computer Science and Engineering must pass Grade 12 / A Level or an equivalent qualification with 50 per cent marks including Physics and Mathematics, and satisfy the English Language Requirement.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page (eligibility)",
+      "sourceUrl": "https://www.lpu.in/international/programmes/engineering/b-tech-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "LPU states that international students do not sit an additional qualifying examination; admission and the scholarship band are decided on marks in the last qualification completed, and applications run through the LPU INTADMIT portal to an Offer Letter and then an Acceptance Letter.",
+      "status": "verified",
+      "sourceLabel": "LPU International - admission FAQs and how to apply",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "LPU states that the international session commences in the third week of July, that its complimentary arrival pickup covers the July/August 2026 batch, and that Batch 2026 admissions opened on 25 October 2025 with 31 August 2026 as the last date to apply with scholarship.",
+      "status": "verified",
+      "sourceLabel": "LPU International - reporting schedule and country pages",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "LPU publishes per-semester tuition for B.Tech. Computer Science and Engineering (CSE) of INR 1,60,000 on the SAARC tier, USD 2500 on the Africa and selected-countries tier and USD 4000 for all other nationalities, plus a one-time uniform charge of USD 50 and an examination fee of USD 75 per semester.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page, Fee tab",
+      "sourceUrl": "https://www.lpu.in/international/programmes/engineering/b-tech-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Values read from LPU's own international fee service (POST https://webapi.lpu.in/InternationalFee/api/InternationalFees/get-by-code with officialCode P132), which is the service that populates the Fee tab on the linked official programme page. The Fee tab renders client-side so the numbers are not present in the raw HTML. Tier labels confirmed against the fee-tab markup on https://www.lpu.in/international/programmes/all/grade-12th-(a-level): nonSAARC block = 'International Applicants From African & Some Other Selected Countries', saarc block = SAARC list shown with the rupee glyph, other block = 'International Applicants From All Other Countries'. LPU does not stamp an academic year on the fee service; the year is taken from the 2026 admission-cycle context of the page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "Merit scholarships of 60, 50 or 40 per cent of tuition apply to B.Tech. Computer Science and Engineering (CSE) based on marks in the qualifying examination or the LPUIST score, and run for the standard duration of the programme.",
+      "status": "verified",
+      "sourceLabel": "LPU International - scholarship criteria",
+      "sourceUrl": "https://www.lpu.in/international/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Scholarship bands differ by applicant category: the foreign-national country pages use 90%+ / 75-89.99% / 60-74.99% for the 60 / 50 / 40 per cent awards, while the Non-Resident Indian page uses 98%+ / 95-97.99% / 90-94.99% with an extra 30 per cent band at 80-89.99%. Both scales are published in the public copy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-mba",
+      "publicField": "eligibility",
+      "claimText": "LPU's international MBA entry requires a bachelor's degree in any discipline with 50 per cent aggregate marks, or completion of the Indian Company Secretary or Chartered Accountancy qualification, plus the English Language Requirement.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page (eligibility)",
+      "sourceUrl": "https://www.lpu.in/international/programmes/management/mba",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-mba",
+      "publicField": "admissions",
+      "claimText": "LPU admits international MBA applicants on marks in the bachelor's degree through the LPU INTADMIT portal, and publishes compulsory MBA pre-term classes from 30 July 2026 with classes beginning on 10 August 2026.",
+      "status": "verified",
+      "sourceLabel": "LPU International - admission FAQs and how to apply",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-mba",
+      "publicField": "intake",
+      "claimText": "LPU states that the international session commences in the third week of July, that its complimentary arrival pickup covers the July/August 2026 batch, and that Batch 2026 admissions opened on 25 October 2025 with 31 August 2026 as the last date to apply with scholarship.",
+      "status": "verified",
+      "sourceLabel": "LPU International - reporting schedule and country pages",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-mba",
+      "publicField": "fee",
+      "claimText": "LPU publishes per-semester tuition for MBA (Master of Business Administration) of INR 2,20,000 on the SAARC tier, USD 3000 on the Africa and selected-countries tier and USD 4500 for all other nationalities, plus a one-time uniform charge of USD 50 and an examination fee of USD 75 per semester.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page, Fee tab",
+      "sourceUrl": "https://www.lpu.in/international/programmes/management/mba",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Values read from LPU's own international fee service (POST https://webapi.lpu.in/InternationalFee/api/InternationalFees/get-by-code with officialCode P371-NNAF), which is the service that populates the Fee tab on the linked official programme page. The Fee tab renders client-side so the numbers are not present in the raw HTML. Tier labels confirmed against the fee-tab markup on https://www.lpu.in/international/programmes/all/grade-12th-(a-level): nonSAARC block = 'International Applicants From African & Some Other Selected Countries', saarc block = SAARC list shown with the rupee glyph, other block = 'International Applicants From All Other Countries'. LPU does not stamp an academic year on the fee service; the year is taken from the 2026 admission-cycle context of the page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-mba",
+      "publicField": "fee",
+      "claimText": "Merit scholarships of 60, 50 or 40 per cent of tuition apply to MBA (Master of Business Administration) based on marks in the qualifying examination or the LPUIST score, and run for the standard duration of the programme.",
+      "status": "verified",
+      "sourceLabel": "LPU International - scholarship criteria",
+      "sourceUrl": "https://www.lpu.in/international/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Scholarship bands differ by applicant category: the foreign-national country pages use 90%+ / 75-89.99% / 60-74.99% for the 60 / 50 / 40 per cent awards, while the Non-Resident Indian page uses 98%+ / 95-97.99% / 90-94.99% with an extra 30 per cent band at 80-89.99%. Both scales are published in the public copy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bdes-interior-and-furniture",
+      "publicField": "eligibility",
+      "claimText": "LPU requires international B.Design Interior and Furniture applicants to pass Grade 12 / A Level or an equivalent qualification with 50 per cent marks and to satisfy the English Language Requirement.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page (eligibility)",
+      "sourceUrl": "https://www.lpu.in/international/programmes/bachelor-of-design-in-interior-and-furniture",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bdes-interior-and-furniture",
+      "publicField": "admissions",
+      "claimText": "LPU admits international B.Design applicants on merit in the qualifying examination through the LPU INTADMIT portal, issuing an Offer Letter and then an Acceptance Letter for the student-visa application.",
+      "status": "verified",
+      "sourceLabel": "LPU International - admission FAQs and how to apply",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bdes-interior-and-furniture",
+      "publicField": "intake",
+      "claimText": "LPU states that the international session commences in the third week of July, that its complimentary arrival pickup covers the July/August 2026 batch, and that Batch 2026 admissions opened on 25 October 2025 with 31 August 2026 as the last date to apply with scholarship.",
+      "status": "verified",
+      "sourceLabel": "LPU International - reporting schedule and country pages",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bdes-interior-and-furniture",
+      "publicField": "fee",
+      "claimText": "LPU publishes per-semester tuition for B.Design Interior and Furniture of INR 1,40,000 on the SAARC tier, USD 2000 on the Africa and selected-countries tier and USD 3500 for all other nationalities, plus a one-time uniform charge of USD 50 and an examination fee of USD 75 per semester.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page, Fee tab",
+      "sourceUrl": "https://www.lpu.in/international/programmes/bachelor-of-design-in-interior-and-furniture",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Values read from LPU's own international fee service (POST https://webapi.lpu.in/InternationalFee/api/InternationalFees/get-by-code with officialCode P742-NN1), which is the service that populates the Fee tab on the linked official programme page. The Fee tab renders client-side so the numbers are not present in the raw HTML. Tier labels confirmed against the fee-tab markup on https://www.lpu.in/international/programmes/all/grade-12th-(a-level): nonSAARC block = 'International Applicants From African & Some Other Selected Countries', saarc block = SAARC list shown with the rupee glyph, other block = 'International Applicants From All Other Countries'. LPU does not stamp an academic year on the fee service; the year is taken from the 2026 admission-cycle context of the page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bdes-interior-and-furniture",
+      "publicField": "fee",
+      "claimText": "Merit scholarships of 60, 50 or 40 per cent of tuition apply to B.Design Interior and Furniture based on marks in the qualifying examination or the LPUIST score, and run for the standard duration of the programme.",
+      "status": "verified",
+      "sourceLabel": "LPU International - scholarship criteria",
+      "sourceUrl": "https://www.lpu.in/international/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Scholarship bands differ by applicant category: the foreign-national country pages use 90%+ / 75-89.99% / 60-74.99% for the 60 / 50 / 40 per cent awards, while the Non-Resident Indian page uses 98%+ / 95-97.99% / 90-94.99% with an extra 30 per cent band at 80-89.99%. Both scales are published in the public copy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bsc-hons-agriculture",
+      "publicField": "eligibility",
+      "claimText": "LPU requires B.Sc. Hons. Agriculture applicants to pass 10+2 or Intermediate with 50 per cent aggregate marks including three subjects from Physics, Chemistry, Mathematics, Biology and Agriculture, to be at least 16 years old on or before 31 December 2026, and to satisfy the English Language Requirement.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page (eligibility)",
+      "sourceUrl": "https://www.lpu.in/international/programmes/bsc-hons-agriculture",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bsc-hons-agriculture",
+      "publicField": "admissions",
+      "claimText": "International applicants are admitted on merit in the qualifying examination through the LPU INTADMIT portal; the LPUNEST (UGHONS) and JEE (Main) routes named on the programme page apply to Indian-national applicants.",
+      "status": "verified",
+      "sourceLabel": "LPU International - admission FAQs and how to apply",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bsc-hons-agriculture",
+      "publicField": "intake",
+      "claimText": "LPU states that the international session commences in the third week of July, that its complimentary arrival pickup covers the July/August 2026 batch, and that Batch 2026 admissions opened on 25 October 2025 with 31 August 2026 as the last date to apply with scholarship.",
+      "status": "verified",
+      "sourceLabel": "LPU International - reporting schedule and country pages",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bsc-hons-agriculture",
+      "publicField": "fee",
+      "claimText": "LPU publishes per-semester tuition for B.Sc. Hons. Agriculture of INR 1,20,000 on the SAARC tier, USD 1500 on the Africa and selected-countries tier and USD 3000 for all other nationalities, plus a one-time uniform charge of USD 50 and an examination fee of USD 75 per semester.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page, Fee tab",
+      "sourceUrl": "https://www.lpu.in/international/programmes/bsc-hons-agriculture",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Values read from LPU's own international fee service (POST https://webapi.lpu.in/InternationalFee/api/InternationalFees/get-by-code with officialCode P24B-H), which is the service that populates the Fee tab on the linked official programme page. The Fee tab renders client-side so the numbers are not present in the raw HTML. Tier labels confirmed against the fee-tab markup on https://www.lpu.in/international/programmes/all/grade-12th-(a-level): nonSAARC block = 'International Applicants From African & Some Other Selected Countries', saarc block = SAARC list shown with the rupee glyph, other block = 'International Applicants From All Other Countries'. LPU does not stamp an academic year on the fee service; the year is taken from the 2026 admission-cycle context of the page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bsc-hons-agriculture",
+      "publicField": "fee",
+      "claimText": "Merit scholarships of 60, 50 or 40 per cent of tuition apply to B.Sc. Hons. Agriculture based on marks in the qualifying examination or the LPUIST score, and run for the standard duration of the programme.",
+      "status": "verified",
+      "sourceLabel": "LPU International - scholarship criteria",
+      "sourceUrl": "https://www.lpu.in/international/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Scholarship bands differ by applicant category: the foreign-national country pages use 90%+ / 75-89.99% / 60-74.99% for the 60 / 50 / 40 per cent awards, while the Non-Resident Indian page uses 98%+ / 95-97.99% / 90-94.99% with an extra 30 per cent band at 80-89.99%. Both scales are published in the public copy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bhmct",
+      "publicField": "eligibility",
+      "claimText": "LPU requires international BHMCT applicants to pass Grade 12 / A Level or an equivalent qualification with 50 per cent marks and to satisfy the English Language Requirement.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page (eligibility)",
+      "sourceUrl": "https://www.lpu.in/international/programmes/bhmct-bachelor-of-hotel-management-and-catering-technology",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bhmct",
+      "publicField": "admissions",
+      "claimText": "LPU admits international BHMCT applicants on merit in the qualifying examination through the LPU INTADMIT portal, issuing an Offer Letter and then an Acceptance Letter for the student-visa application.",
+      "status": "verified",
+      "sourceLabel": "LPU International - admission FAQs and how to apply",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bhmct",
+      "publicField": "intake",
+      "claimText": "LPU states that the international session commences in the third week of July, that its complimentary arrival pickup covers the July/August 2026 batch, and that Batch 2026 admissions opened on 25 October 2025 with 31 August 2026 as the last date to apply with scholarship.",
+      "status": "verified",
+      "sourceLabel": "LPU International - reporting schedule and country pages",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bhmct",
+      "publicField": "fee",
+      "claimText": "LPU publishes per-semester tuition for Bachelor of Hotel Management and Catering Technology (BHMCT) of INR 80,000 on the SAARC tier, USD 1500 on the Africa and selected-countries tier and USD 3000 for all other nationalities, plus a one-time uniform charge of USD 80 and an examination fee of USD 75 per semester.",
+      "status": "verified",
+      "sourceLabel": "LPU International - official programme page, Fee tab",
+      "sourceUrl": "https://www.lpu.in/international/programmes/bhmct-bachelor-of-hotel-management-and-catering-technology",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Values read from LPU's own international fee service (POST https://webapi.lpu.in/InternationalFee/api/InternationalFees/get-by-code with officialCode P344), which is the service that populates the Fee tab on the linked official programme page. The Fee tab renders client-side so the numbers are not present in the raw HTML. Tier labels confirmed against the fee-tab markup on https://www.lpu.in/international/programmes/all/grade-12th-(a-level): nonSAARC block = 'International Applicants From African & Some Other Selected Countries', saarc block = SAARC list shown with the rupee glyph, other block = 'International Applicants From All Other Countries'. LPU does not stamp an academic year on the fee service; the year is taken from the 2026 admission-cycle context of the page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "lovely-professional-university",
+      "programmeSlug": "lpu-bhmct",
+      "publicField": "fee",
+      "claimText": "Merit scholarships of 60, 50 or 40 per cent of tuition apply to Bachelor of Hotel Management and Catering Technology (BHMCT) based on marks in the qualifying examination or the LPUIST score, and run for the standard duration of the programme.",
+      "status": "verified",
+      "sourceLabel": "LPU International - scholarship criteria",
+      "sourceUrl": "https://www.lpu.in/international/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Scholarship bands differ by applicant category: the foreign-national country pages use 90%+ / 75-89.99% / 60-74.99% for the 60 / 50 / 40 per cent awards, while the Non-Resident Indian page uses 98%+ / 95-97.99% / 90-94.99% with an extra 30 per cent band at 80-89.99%. Both scales are published in the public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "identity",
+      "claimText": "Lovely Professional University was established as a state private university in Punjab by the Lovely Professional University Act, 2005, which received the assent of the Governor of Punjab on 23 December 2005 and was published in the Punjab Government Gazette (Extraordinary) on 26 December 2005.",
+      "status": "verified",
+      "sourceLabel": "India Code - Lovely Professional University Act, 2005 (Punjab Act 25 of 2005)",
+      "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/14983",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "identity",
+      "claimText": "The university's campus and registered address is Jalandhar-Delhi G.T. Road, Phagwara, Punjab 144411, India, and the Division of International Affairs sits at Block 32, Room 308.",
+      "status": "verified",
+      "sourceLabel": "LPU International - contact and reporting details",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "LPU is recognised by the University Grants Commission under Section 2(f) of the UGC Act, 1956 and has been accorded recognition under Section 12(B) of the same Act.",
+      "status": "verified",
+      "sourceLabel": "LPU - Accreditations, Approvals and Global Memberships",
+      "sourceUrl": "https://www.lpu.in/about-lpu/accreditation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC's own HEI listing pages at ugc.gov.in load their tables client-side and returned no server-rendered institution rows when fetched on 2026-08-22, so the UGC section status is carried on the university's own recognition page with the state Act as the corroborating government source. A reviewer with browser access should confirm the entry in the UGC State Private Universities list."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The National Board of Accreditation register lists Lovely Professional University (Kapurthala) on its Engineering UG Tier I (Washington Accord) register for Civil, Computer Science and Engineering, Electronics and Communication, and Mechanical Engineering with an accreditation period running to 30 June 2027, and on its Management PG register for the MBA to the same date.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited Programme registers (Engineering UG Tier I and Management PG)",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified against the regulator's own register on 2026-08-22 by the browser-equipped verification agent; see research/india-regulator-verification-2026-08-22.md section 4. The NBA register is a cumulative history rather than a current-status list, so the Accreditation Period is the operative field and is quoted here; row presence alone is not evidence of current accreditation. Tier I is the Washington Accord tier. This supersedes the earlier sourcing to LPU's own accreditation page at https://www.lpu.in/about-lpu/accreditation.php, which states the same four B.Tech branches, the MBA and the same 30 June 2027 end date, and is retained as corroboration."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The School of Agriculture at LPU, together with its B.Sc. (Hons.) and eight M.Sc. (Agriculture and Horticulture) programmes, holds ICAR accreditation awarded by the National Agricultural Education Accreditation Board.",
+      "status": "verified",
+      "sourceLabel": "LPU - Accreditations, Approvals and Global Memberships (ICAR)",
+      "sourceUrl": "https://www.lpu.in/about-lpu/accreditation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "LPU's B.Pharm and M.Pharm are approved by the Pharmacy Council of India, and its Diploma in Architectural Assistantship, B.Arch and M.Arch (Executive) are approved by the Council of Architecture.",
+      "status": "verified",
+      "sourceLabel": "LPU - Accreditations, Approvals and Global Memberships (PCI and COA)",
+      "sourceUrl": "https://www.lpu.in/about-lpu/accreditation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Pharmacy Council of India and Council of Architecture approvals are published as modals on the LPU accreditation page. Neither regulator was independently re-verified in the 2026-08-22 central-regulator pass, which covered NAAC, BCI, UGC IoE and NBA only; these two remain sourced to the university's own recognition page and should be checked against the PCI and COA registers at the next review."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "Bar Council of India approval for LPU law courses has lapsed: the BCI approved-Centres-of-Legal-Education list uploaded on 20 August 2026 records School of Law, Lovely Professional University, Phagwara with a 3-year LL.B. (300) approved only up to 2025-26 and a B.Com. LL.B. (Hons.) up to 2018-19, and Lovely Institute of Law, Phagwara with a 5-year BA LL.B. (Hons.) up to 2024-25. No approval window runs past 2025-26, so no Bar Council badge is published and no law programme is packaged.",
+      "status": "omit",
+      "sourceLabel": "Bar Council of India - Recognised Universities and Colleges (approved CLE list)",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Negative finding recorded deliberately so that a later pass does not package LPU law on the strength of the university's own accreditation page, which still presents Bar Council recognition without an end date. Verified by the browser-equipped regulator agent on 2026-08-22; see research/india-regulator-verification-2026-08-22.md section 2. The approved-CLE PDF sits behind a one-hour signed S3 link, so the BCI route page is cited rather than the file. Any future law packaging for LPU requires a fresh BCI list showing an approval window beyond 2025-26. LPU's own page at https://www.lpu.in/about-lpu/accreditation.php links a bci_approval.pdf that is no longer sufficient on its own."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC records Lovely Professional University with grade A++, CGPA 3.68 on a four-point scale, in accreditation Cycle 1, declared on 12 August 2023 (AISHE id U-0379, Punjab).",
+      "status": "verified",
+      "sourceLabel": "NAAC - Accreditation Status: institutions with valid accreditation",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified against NAAC's own published valid-accreditation workbook (Institutions accredited by NAAC having valid accreditation as on 14-08-2025, Universities sheet) and corroborated against the Standing Committee result PDF that declared the award, 162SC_Results_Dual_Mode_University.pdf, 162nd Standing Committee of 12 August 2023, Dual Mode University 1st Cycle. Verified by the browser-equipped regulator agent on 2026-08-22; see research/india-regulator-verification-2026-08-22.md section 1. IMPORTANT: the NAAC workbook publishes a date of declaration and no expiry date, so no validity end date is asserted in the public badge or copy. The earlier sourcing to LPU's own page plus contemporaneous press is superseded; assessmentonline.naac.gov.in remains unreachable and is no longer needed."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "recognitionBadges",
+      "claimText": "In the Ministry of Education's NIRF 2025 rankings LPU is placed 31 in the University category with a score of 57.77 and 49 in the Overall category with a score of 55.49, alongside rank 48 in Engineering and rank 44 in Management.",
+      "status": "verified",
+      "sourceLabel": "NIRF 2025 - University category ranking",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified directly against the nirfindia.org 2025 tables, institution id IR-O-U-0379, Phagwara, Punjab. Overall table: https://www.nirfindia.org/Rankings/2025/OverallRanking.html. Rankings are not accreditations, so these positions are kept out of recognitionBadges and are always stated with the year attached. LPU's own marketing quotes '31st' without a category or year and also quotes self-asserted THE and QS positions, which are not carried here."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "campusLifestyle",
+      "claimText": "LPU reports more than 3,000 international students from over 50 countries, more than 150 programmes across more than 40 discipline areas, a library holding over two million books and e-books with 24-hour access, an on-campus shopping mall, about 50 ATMs, a swimming pool, an indoor sports stadium and a health centre.",
+      "status": "verified",
+      "sourceLabel": "LPU International - overview and joining FAQs",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "cityProfile",
+      "claimText": "LPU publishes road distances and travel times to five airports: Adampur Civil Airport 35 km (about 45 minutes), Ludhiana 60 km (about 1 hour 30 minutes), Amritsar Sri Guru Ram Dass Jee International 70 km (about 2 hours), Chandigarh 175 km (about 3 hours) and Delhi Indira Gandhi International 370 km (about 7 hours). Buses from Delhi stop at the university gates if the driver is told in advance. Temperatures in the Jalandhar-Phagwara area range from 35-45C in summer to 5-20C in winter.",
+      "status": "verified",
+      "sourceLabel": "LPU International - joining FAQs and pickup services",
+      "sourceUrl": "https://www.lpu.in/international/reporting-schedule-pickup-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "hostelOverview",
+      "claimText": "For academic session 2026-2027 LPU publishes residential charges for the full academic year with an Early Decision Benefit valid to 31 August 2026, from INR 73,000 or USD 870 for an air-cooled six-to-eight-seater room to INR 193,000 or USD 2,295 for an air-conditioned one-seater studio apartment. Rupee charges apply to Afghanistan, Bangladesh, Bhutan, Maldives, Nepal and Sri Lanka and dollar charges to all other countries; after the deadline each category rises by INR 10,000 or USD 120. A full-year charge covers a session of approximately ten months excluding vacations.",
+      "status": "verified",
+      "sourceLabel": "LPU International - residential facilities and charges",
+      "sourceUrl": "https://www.lpu.in/international/accommodation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "dietarySupport",
+      "claimText": "Campus dining halls serve four meals a day and LPU states that more than 100,000 meals are prepared fresh on campus daily. Mess, laundry, swimming pool, gym and indoor-facility charges are administered by the campus residential operator separately from the published room rate. A campus shopping mall, food courts, about 50 ATMs and a money-exchange point are inside the campus.",
+      "status": "verified",
+      "sourceLabel": "LPU International - residential facilities and joining FAQs",
+      "sourceUrl": "https://www.lpu.in/international/accommodation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "safetyOverview",
+      "claimText": "LPU states that the campus is manned by over 400 full-time security officials with CCTV surveillance and fire-safety systems, and that the university has zero tolerance for ragging, alcohol, smoking, drugs and disciplinary misconduct. International students are required to hold international medical insurance valid in India for the complete duration of the programme.",
+      "status": "verified",
+      "sourceLabel": "LPU International - student services and residential facilities",
+      "sourceUrl": "https://www.lpu.in/international/international-student-services.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "studentSupport",
+      "claimText": "The Division of International Affairs at Block 32, Room 308 handles FRRO registration and visa-extension support. Complimentary airport pickup is offered to new international students of the July/August 2026 batch who submit arrival details at least one week in advance and may be declined for very small groups. LPU also runs an English Language Programme at beginner level (8 months, October to May), intermediate level (5 months, January to May) and advanced level (3 months, April to July).",
+      "status": "verified",
+      "sourceLabel": "LPU International - visa/FRRO FAQs, pickup services and English Language Programme",
+      "sourceUrl": "https://www.lpu.in/international/visa-frro-faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "thingsToConsider",
+      "claimText": "The Bureau of Immigration states that foreigners on a student visa must not involve themselves in any employment or business activity in India, that foreign nationals holding student visas valid beyond 180 days must register with the FRRO within 14 days of arrival, and that foreign students must open a Non-Resident Ordinary account at a recognised Indian bank and furnish the details to the FRRO.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "thingsToConsider",
+      "claimText": "LPU states that a student visa endorsed in its name cannot be used for employment or for admission to another institution, that a tourist or other visa category cannot be converted into a student visa inside India, and that a request to change university after the visa is issued cannot be considered.",
+      "status": "verified",
+      "sourceLabel": "LPU International - visa/FRRO FAQs and student services",
+      "sourceUrl": "https://www.lpu.in/international/visa-frro-faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "admissionsContent",
+      "claimText": "LPU publishes country-specific requirement pages for 25 origin countries - Afghanistan, Angola, Bangladesh, Bhutan, Burkina Faso, Cameroon, DR Congo, Ghana, Ivory Coast, Lesotho, Liberia, Madagascar, Malawi, Mali, Mongolia, Myanmar, Nepal, Nigeria, Papua New Guinea, Rwanda, Sri Lanka, Sudan, Tanzania, Zambia and Zimbabwe - plus a separate Non-Resident Indian track.",
+      "status": "verified",
+      "sourceLabel": "LPU International - country-specific information",
+      "sourceUrl": "https://www.lpu.in/international/country.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "admissionsContent",
+      "claimText": "The academic threshold on each country page is 50 per cent in that country's named qualification: the Secondary Education Examination and Higher Secondary Education for Nepal, the Secondary School Certificate and Higher Secondary Certificate for Bangladesh, and grade 10 / O Level and the 12th Grade Graduation Certificate for Nigeria and Ghana. Every page also applies the English Language Requirement.",
+      "status": "verified",
+      "sourceLabel": "LPU International - Nepal country requirements page",
+      "sourceUrl": "https://www.lpu.in/international/country/nepal.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated across https://www.lpu.in/international/country/bangladesh.php , https://www.lpu.in/international/country/nigeria.php and https://www.lpu.in/international/country/ghana.php , checked 2026-08-22. All four pages share the 50 per cent threshold and the English Language Requirement while naming different national qualifications."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "admissionsContent",
+      "claimText": "The Non-Resident Indian scholarship scale differs materially from the foreign-national scale: the NRI page awards 60 per cent for 98 per cent or above in Grade 12, 50 per cent for 95-97.99 per cent, 40 per cent for 90-94.99 per cent and 30 per cent for 80-89.99 per cent, with indicative LPUIST cut-offs of 80, 70 and 60 marks out of 100 for categories A, B and C.",
+      "status": "verified",
+      "sourceLabel": "LPU International - Non-Resident Indian requirements page",
+      "sourceUrl": "https://www.lpu.in/international/country/non-resident-indian.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "admissionsContent",
+      "claimText": "LPU's English Language Requirement applies to every international applicant regardless of programme and is met by a pass in English at Grade 10 or higher, proof that the eligibility qualification was taught in English, IELTS band 5.5, TOEFL 70, or a Certificate for Proficiency in English of at least three months' duration.",
+      "status": "verified",
+      "sourceLabel": "LPU International - English Language Requirement",
+      "sourceUrl": "https://www.lpu.in/international/english-language-requirement.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "admissionsContent",
+      "claimText": "LPU states that international students do not need to sit an additional qualifying examination for admission and that the last qualification completed is used to assess both eligibility and scholarship. Applications run through the LPU INTADMIT portal, with an Offer Letter or Conditional Offer Letter normally issued within three working days and an Acceptance Letter issued after fee transfer; only the Acceptance Letter can be used to apply for the Indian student visa.",
+      "status": "verified",
+      "sourceLabel": "LPU International - admission FAQs",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "admissionsContent",
+      "claimText": "Applicants from Nepal and Bhutan may submit a national identity document in place of a passport at the fee-acceptance stage, and LPU asks students travelling from Africa to carry a Yellow Fever vaccination card and polio drop certificate in hand luggage for immigration.",
+      "status": "verified",
+      "sourceLabel": "LPU International - joining FAQs",
+      "sourceUrl": "https://www.lpu.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "practicalExposure",
+      "claimText": "LPU lists industry tie-ups used in its engineering teaching with organisations including Google, Microsoft, Dell EMC, Bosch, Cisco, VMware and Pega, runs B.Tech. (CSE) specialisations built with named partners such as Quantiphi and Futurense, and publishes academic collaborations with universities including UCLA, the University of British Columbia, Seoul National University, the University of Bristol and the University of Leeds that support 2+2 international credit-transfer versions of several awards.",
+      "status": "verified",
+      "sourceLabel": "LPU International - programme pages and university collaborations",
+      "sourceUrl": "https://www.lpu.in/international/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "lovely-professional-university",
+      "publicField": "faq",
+      "claimText": "LPU states that more than 25,000 students use on-campus residence facilities, that a room should be booked when the Acceptance Letter is issued, and that full-year residential charges cover an academic session of approximately ten months excluding vacations.",
+      "status": "verified",
+      "sourceLabel": "LPU International - residential facilities and joining FAQs",
+      "sourceUrl": "https://www.lpu.in/international/accommodation.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    }
+  ]
+}

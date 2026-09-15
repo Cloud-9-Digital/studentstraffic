@@ -1,0 +1,50 @@
+{
+  "scope": "Nepal medical discovery — Kathmandu University School of Medical Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Kathmandu University School of Medical Sciences",
+    "countrySlug": "nepal",
+    "programme": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "KUSMS states that it was established in collaboration between Kathmandu University and Dhulikhel Hospital and launched its constituent MBBS programme in August 2001.",
+      "sourceUrl": "https://kusms.edu.np/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "KUSMS identifies its basic-science facilities in Panauti and university hospital in Dhulikhel.",
+      "sourceUrl": "https://kusms.edu.np/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "KU School of Medical Sciences is a Kathmandu University MBBS institution with 100 total seats and 33 foreign seats in the MECEE-BL 2025 allocation.",
+      "sourceUrl": "https://www.mec.gov.np/uploads/shares/ug_2025/ug_seats_2025_categorywise.pdf",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Medical Education Commission's foreign-category MBBS matching list includes KU School of Medical Sciences placements.",
+      "sourceUrl": "https://mec.gov.np/public/uploads/shares/ug_2025/first_admission_list_foreign_ug2025.pdf",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The legacy KUSMS programme page says foreign citizens may be eligible through entrance examination and counselling or a recognised current-year MBBS/BDS entrance test, but the page is historical and cannot establish the current route.",
+      "sourceUrl": "https://old.kusms.edu.np/index.php/12-programs",
+      "sourceType": "official-university-historical",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official MBBS fee schedule for foreign students was found; the only fee material located is historical and cannot support a 2026 payload.",
+    "The live KUSMS site establishes the programme and facilities but does not provide a current, programme-specific foreign admission/eligibility page with documents and selection steps.",
+    "No current first-party source establishes the foreign-cohort teaching language or exact intake/start month, so required controlled programme facets cannot be set.",
+    "Available regulator material proves a foreign-seat route, but does not substitute for a complete institution-level programme admissions and fee bundle."
+  ],
+  "nextAction": "Obtain a 2026 KUSMS or MEC foreign-MBBS notice stating fee, language, start date/intake, eligibility, documents and application route; then independently verify the programme's recognition evidence before packaging."
+}

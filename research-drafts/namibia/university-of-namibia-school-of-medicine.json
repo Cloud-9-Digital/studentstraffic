@@ -1,0 +1,42 @@
+{
+  "scope": "Namibia medical discovery — University of Namibia School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UNAM's School of Medicine lists the Bachelor of Medicine and Bachelor of Surgery programme and describes the school as providing locally relevant clinical training.",
+      "sourceUrl": "https://www.unam.edu.na/faculty-of-health-sciences",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UNAM's 2024 School of Medicine prospectus schedules MBChB clinical rotations in fourth through sixth years, including fifth-year rotations at Onandjokwe and Oshakati and community-based education and service in third year.",
+      "sourceUrl": "https://www.unam.edu.na/wp-content/uploads/2023/12/2024-Prospectus-School-of-Medicine.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UNAM's published School of Medicine admissions regulations require academic standing, essay writing and a successful interview; the MBChB subject requirements include English, mathematics, physical science/chemistry and biology/life sciences.",
+      "sourceUrl": "https://unam.edu.na/wp-content/uploads/2022/01/Prospectus-2022-School-of-Medicine.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A Government Gazette schedule records UNAM's Bachelor of Medicine and Bachelor of Surgery as National Qualifications Framework level 8.",
+      "sourceUrl": "https://www.lac.org.na/laws/2022/7894.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Namibia Qualifications Authority's 2023 accreditation list identifies UNAM as one of Namibia's two public national universities.",
+      "sourceUrl": "https://namqa.org/wp-content/uploads/2024/01/Accreditation-list.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current MBChB-specific fee data and a current programme prospectus were not assembled for the required payload fields.",
+    "The admissions evidence is from the 2022 prospectus and needs current-cycle confirmation; explicit student-support evidence is also incomplete."
+  ],
+  "nextAction": "Obtain the current UNAM School of Medicine prospectus and MBChB fee/support documents, then complete the field-level review before publishing."
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Senegal medical discovery — Université Gaston Berger UFR Sciences de la Santé",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UGB's UFR Sciences de la Santé offers a State Doctorate in Medicine after eight years of study; the doctoral cycle includes two semesters of general-medicine competency synthesis with clinical placements.",
+      "sourceUrl": "https://www9.ugb.sn/2s/index.php/component/content/article/90-2s/134-doctorat-en-medecine",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UGB's Medicine licence is six semesters and 180 credits; L1 applicants need a scientific baccalaureate or recognised equivalent, with criteria and modalities set by the UFR 2S council.",
+      "sourceUrl": "https://www9.ugb.sn/2s/index.php/component/content/article/90-2s/122-licence-en-medecine?Itemid=101",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UGB's published Master in Medicine description includes hospital placements across both Master years.",
+      "sourceUrl": "https://www9.ugb.sn/2s/index.php/component/content/article/90-2s/147-descriptif-du-master-en-medecine?Itemid=101",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UGB's current registration-fee page lists annual administrative and pedagogical charges of FCFA 25,000 for licence, FCFA 50,000 for master and FCFA 75,000 for doctorate students in the specified Senegalese and assimilated categories, with separate non-assimilated international rates.",
+      "sourceUrl": "https://www9.ugb.sn/scolarite/droits-d-inscription.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UGB states that the student card provides access to student-life services including accommodation, medical care and restaurants, and its orientation office provides information on scholarships and housing.",
+      "sourceUrl": "https://www9.ugb.sn/scolarite/inscription-reinscription.html",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The programme evidence uses a licence-master-doctorate sequence, but the latest detailed Medicine programme materials are historical; a current academic-year confirmation is required.",
+    "Current explicit recognition and instructional-language evidence remains incomplete for publication."
+  ],
+  "nextAction": "Obtain current UFR 2S programme, recognition and language documentation and confirm the current medical-study sequence before publishing."
+}

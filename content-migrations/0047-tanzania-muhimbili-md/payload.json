@@ -1,0 +1,376 @@
+{
+  "countries": [
+    {
+      "slug": "tanzania",
+      "name": "Tanzania",
+      "region": "Africa",
+      "summary": "Tanzania is an East African nation home to Muhimbili University of Health and Allied Sciences, a long-established public medical university in Dar es Salaam offering an English-medium, direct-entry Doctor of Medicine programme with a genuine international-student fee schedule.",
+      "whyStudentsChooseIt": "Tanzania offers an internationally recognized, WHO-listed medical degree taught entirely in English, with a direct-entry five-year curriculum, a dedicated international-student fee schedule, and tuition well below most Western destinations, at a public university with roots dating to 1963.",
+      "climate": "Tropical climate with a hot, humid coastal belt around Dar es Salaam and distinct wet and dry seasons.",
+      "currencyCode": "TZS",
+      "metaTitle": "Study MBBS and Medicine in Tanzania",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Tanzania, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Muhimbili University of Health and Allied Sciences maps its English-medium Doctor of Medicine (MD) programme to this category: a direct-entry, single-cycle five-year programme, followed by a mandatory one-year internship.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "tanzania",
+      "slug": "muhimbili-university-of-health-and-allied-sciences",
+      "name": "Muhimbili University of Health and Allied Sciences",
+      "city": "Dar es Salaam",
+      "type": "Public",
+      "establishedYear": 1963,
+      "officialWebsite": "https://muhas.ac.tz/",
+      "mediaAttribution": {},
+      "summary": "Muhimbili University of Health and Allied Sciences (MUHAS) in Dar es Salaam runs a direct-entry, five-year, English-medium Doctor of Medicine (MD) programme, followed by a mandatory one-year internship. The university is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, is accredited and chartered by the Tanzania Commission for Universities, and publishes a distinct international-student fee schedule.",
+      "campusLifestyle": "International students join the same Doctor of Medicine cohort as Tanzanian students on MUHAS's Dar es Salaam campus, training alongside clinical partners including Muhimbili National Hospital, one of East Africa's largest referral hospitals.",
+      "cityProfile": "Dar es Salaam is Tanzania's largest city and commercial capital, a major East African coastal hub with an international airport and Tanzania's largest concentration of tertiary healthcare facilities, anchored by Muhimbili National Hospital.",
+      "practicalExposure": "The five-year, 10-semester Doctor of Medicine programme combines basic sciences and community fieldwork in its first four semesters with junior and senior clinical clerkships and community health training in its remaining six semesters, followed by a mandatory one-year internship at an approved hospital before full medical registration.",
+      "hostelOverview": "MUHAS's official prospectus does not publish a specific on-campus hostel rate for international, self-funded students; a cost line for 'meal allowance and accommodation' in the same document appears tied to Tanzania's domestic HESLB student-loan scheme rather than a stated international hostel fee. Private off-campus housing operators near the Muhimbili campus exist and market specifically to international medical students, though no verified current pricing was available.",
+      "dietarySupport": "Campus dining facilities serve the MUHAS student community; no separate university-run international meal-plan cost is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants must first have their foreign secondary-school certificates verified by Tanzania's National Examination Council (NECTA) before applying through MUHAS's own online admissions portal.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000169), currently operational, with graduates (1963-current) eligible to apply for ECFMG Certification and degrees noted as acceptable to Canadian medical regulators.",
+        "Accredited and chartered by the Tanzania Commission for Universities (Registration No. CR 1/015), with the Doctor of Medicine listed as a UQF Level 8, 60-month full-time bachelor programme.",
+        "A confirmed, distinct international-student fee schedule (USD 5,672/year tuition) separate from the Tanzanian domestic rate, published on both the live programme page and the official prospectus.",
+        "Direct-entry five-year Doctor of Medicine programme open to students with A-Level passes in Physics, Chemistry and Biology, entirely taught in English.",
+        "Clinical training at Muhimbili National Hospital, one of East Africa's largest referral and teaching hospitals."
+      ],
+      "thingsToConsider": [
+        "MUHAS's own prospectus separately states foreign-student fees are 'under review and are subject to change at any time,' describing them elsewhere as a 50% surcharge over the Tanzanian rate -- a figure that would differ from the itemized USD 5,672/year published on the live programme page. Confirm the current applicable rate directly with MUHAS before committing.",
+        "No MUHAS-specific 2026/27 undergraduate international-admissions deadline could be confirmed; only a general Tanzania Commission for Universities centralized calendar (built primarily around domestic NECTA A-Level results) was found, and it is not confirmed whether this calendar applies to foreign-certificate applicants.",
+        "Foreign secondary-school certificates must be verified through Tanzania's National Examination Council (NECTA) before an application can be submitted, adding a documentation step ahead of the online application.",
+        "No scholarship, bursary or fee-waiver programme for international MD students was found; Tanzania's HESLB student-loan scheme referenced throughout MUHAS materials is restricted to Tanzanian citizens.",
+        "No confirmed on-campus hostel fee for international, self-funded students was found in official MUHAS materials."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, English-medium direct-entry medical degree at a lower tuition point than most Western destinations.",
+        "Applicants comfortable completing a NECTA certificate-verification step ahead of a straightforward online application process.",
+        "Students able to confirm current fee and deadline details directly with the university given some published figures are explicitly marked as under review."
+      ],
+      "industryPartners": [
+        "Muhimbili National Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0000169, currently operational",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1963-present",
+        "Medical Council of Canada (MCC) -- degree acceptable to Canadian medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Tanzania Commission for Universities (TCU) -- accredited and chartered, Registration No. CR 1/015"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- Muhimbili University listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000169" },
+        { "label": "Tanzania Commission for Universities -- accredited academic programmes directory (MUHAS Doctor of Medicine)", "url": "https://www.tcu.go.tz/services/accreditation/academic-programmes-offered-universities-tanzania?title=Doctor+of+Medicine&university_institution_id=253" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Doctor of Medicine programme direct-entry after high school?",
+          "answer": "Yes. Direct entry requires three principal passes in Physics, Chemistry and Biology with a minimum of 6 points and at least a D grade in each subject at A-Level; no prior university degree is required."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Doctor of Medicine (MD) degree after five years (10 semesters) of study, followed by a mandatory one-year internship at an approved hospital before full registration."
+        },
+        {
+          "question": "What is the current tuition fee for international students?",
+          "answer": "USD 5,672 per year, published on both the university's live programme page and its official prospectus, plus modest application, registration and other administrative fees. The prospectus separately notes foreign fees are under review and subject to change, so this should be reconfirmed directly with the university."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "Applicants with foreign certificates, such as Indian 12th-grade results, must first have them verified by Tanzania's National Examination Council (NECTA) before submitting an application through MUHAS's own online admissions portal."
+        },
+        {
+          "question": "Is there a separate entrance exam?",
+          "answer": "No standalone entrance exam is documented in current university sources for A-Level direct entry; admission is based on verified academic results. An older WHO Directory record mentioning an entrance exam appears to reflect outdated enrollment-era data."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "No MUHAS-specific international deadline was confirmed at the time of research. Tanzania's national university admissions calendar for the 2026/27 cycle runs its first application window from 10 July to 10 August 2026, though it is not confirmed whether this applies to foreign-certificate applicants; confirm directly with MUHAS."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "No confirmed on-campus hostel fee for international, self-funded students was found in official university materials; some private off-campus housing operators near campus market specifically to international medical students."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens who obtain a primary medical qualification abroad to have qualified NEET-UG and, on return, to clear the National Exit Test (NExT) before Indian licensure; this general framework was not independently verified against an NMC source for this specific programme."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- Muhimbili University listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000169",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry prerequisite, founding year, ECFMG graduation-year eligibility and Canadian MCC acceptability."
+        },
+        {
+          "label": "Tanzania Commission for Universities -- accredited academic programmes directory (MUHAS Doctor of Medicine)",
+          "url": "https://www.tcu.go.tz/services/accreditation/academic-programmes-offered-universities-tanzania?title=Doctor+of+Medicine&university_institution_id=253",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for TCU institutional accreditation status, registration number and the 60-month UQF Level 8 bachelor-programme classification."
+        },
+        {
+          "label": "Muhimbili University -- official Doctor of Medicine programme page",
+          "url": "https://muhas.ac.tz/directory/muhas/doctor-of-medicine/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, programme structure, and the current international-student tuition figure (USD 5,672/year)."
+        },
+        {
+          "label": "Muhimbili University -- Undergraduate Prospectus 2025/2026-2027/2028 (PDF)",
+          "url": "https://muhas.ac.tz/wp-content/uploads/2025/11/UG-PROSPECTUS-FORMATTED-17th-November-2025.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the itemized international-student fee table, the NECTA certificate-verification requirement, the internship structure, and the caveat that foreign fees remain under review."
+        },
+        {
+          "label": "Tanzania Commission for Universities -- Bachelor's Degree Admissions Almanac for the 2026/2027 Admission Cycle (PDF)",
+          "url": "https://tcu.go.tz/sites/default/files/public_notices/2026-07/BACHELORS%20DEGREE%20ADMISSIONS%20ALMANAC%20FOR%20THE%202026-2027%20ADMISSION%20CYCLE.pdf",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the national centralized admissions calendar; applicability to foreign-certificate applicants specifically was not confirmed."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "physics chemistry biology grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "NECTA verification status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "muhimbili-university-of-health-and-allied-sciences-md",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Doctor of Medicine (MD)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5672,
+            "officialTotalTuitionAmount": 28360,
+            "verifiedAt": "2026-07-25",
+            "notes": "USD 5,672/year is published identically on both the live official programme page and the current official prospectus's itemized international-fee table. Flagged for user disclosure: the same prospectus's general regulations chapter separately states foreign-student fees are 'under review and are subject to change at any time,' elsewhere describing them as a 50% surcharge over the Tanzanian domestic rate -- an unresolved internal inconsistency in the university's own documentation; the itemized USD 5,672 figure is used here as the more specific and currently-published number. Total is calculated as the annual figure times 5 years -- not published as a lump sum. Additional modest fees apply: USD 10 application, USD 10 registration, USD 20 annual quality-assurance fee, plus smaller TZS-denominated examination/graduation/ID/union fees."
+          },
+          "officialProgramUrl": "https://muhas.ac.tz/directory/muhas/doctor-of-medicine/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with A-Level (or equivalent) passes in Physics, Chemistry and Biology, verified through Tanzania's National Examination Council (NECTA)"
+            ],
+            "restrictions": [
+              "Foreign secondary-school certificates must be verified by NECTA before an application can be submitted",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "No standalone entrance exam is documented for current A-Level direct entry; admission is based on verified academic results.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://muhas.ac.tz/directory/muhas/doctor-of-medicine/"
+          },
+          "admissionsContent": {
+            "overview": "International applicants first have their foreign secondary-school certificates verified by Tanzania's National Examination Council (NECTA), then apply through MUHAS's own online admissions portal alongside domestic applicants, differentiated mainly by document-verification body and fee currency.",
+            "eligibility": {
+              "intro": "Admission requires verified A-Level (or equivalent) passes in Physics, Chemistry and Biology, or an accepted equivalent qualification route.",
+              "items": [
+                "Three principal passes in Physics, Chemistry and Biology, minimum 6 points, at least D grade in each at A-Level",
+                "NECTA verification of foreign secondary-school certificates prior to application",
+                "Alternative equivalent-entry routes exist for Diploma-in-Clinical-Medicine or prior Biomedical-Sciences-degree holders"
+              ]
+            },
+            "applicationSteps": [
+              "Obtain NECTA verification/equation of foreign secondary-school certificates",
+              "Register and apply through MUHAS's online admissions portal (oas.muhas.ac.tz)",
+              "Pay the USD 10 application fee",
+              "Await admission decision",
+              "Complete registration and pay initial fees upon admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "NECTA-verified secondary-school certificate and transcripts",
+                "Proof of proficiency in written and spoken English"
+              ],
+              "application": [
+                "Valid passport",
+                "Passport-style photographs"
+              ]
+            },
+            "deadlinesNote": "No MUHAS-specific international deadline was confirmed. Tanzania's national admissions calendar for 2026/27 opens its first window 10 July-10 August 2026, but applicability to foreign-certificate applicants is unconfirmed -- verify directly with MUHAS.",
+            "visaConsiderations": [
+              "Confirm current Tanzanian student-visa requirements directly with MUHAS's admissions office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "USD 5,672/year confirmed on two independent official sources (live programme page and current prospectus), but the same prospectus separately flags foreign fees as under review and subject to change, describing an alternative 50%-surcharge model. Reconfirm directly with the university before committing.",
+          "teachingPhases": [
+            {
+              "phase": "5-year, 10-semester Doctor of Medicine programme",
+              "language": "English",
+              "details": "First 4 semesters: basic sciences, introduction to clinical medicine, and community fieldwork. Remaining 6 semesters: junior and senior clinical clerkships and community health training. Followed by a mandatory 1-year internship at an approved hospital before full medical registration."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "publicField": "identity",
+      "claimText": "Muhimbili University of Health and Allied Sciences began medical instruction in 1963 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Muhimbili University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000169",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000169), currently operational; graduates (1963-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- Muhimbili University listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000169",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "publicField": "recognition",
+      "claimText": "Accredited and chartered by the Tanzania Commission for Universities (Registration No. CR 1/015), with the Doctor of Medicine listed as a UQF Level 8, 60-month full-time bachelor programme.",
+      "status": "verified",
+      "sourceLabel": "Tanzania Commission for Universities -- accredited academic programmes directory (MUHAS Doctor of Medicine)",
+      "sourceUrl": "https://www.tcu.go.tz/services/accreditation/academic-programmes-offered-universities-tanzania?title=Doctor+of+Medicine&university_institution_id=253",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "programmeSlug": "muhimbili-university-of-health-and-allied-sciences-md",
+      "publicField": "academics",
+      "claimText": "Doctor of Medicine (MD) is a 5-year, 10-semester direct-entry programme, followed by a mandatory 1-year internship, with the first 4 semesters covering basic sciences and the remaining 6 covering clinical clerkships.",
+      "status": "verified",
+      "sourceLabel": "Muhimbili University -- Undergraduate Prospectus 2025/2026-2027/2028 (PDF)",
+      "sourceUrl": "https://muhas.ac.tz/wp-content/uploads/2025/11/UG-PROSPECTUS-FORMATTED-17th-November-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "programmeSlug": "muhimbili-university-of-health-and-allied-sciences-md",
+      "publicField": "eligibility",
+      "claimText": "Direct entry requires three principal passes in Physics, Chemistry and Biology with a minimum of 6 points and at least a D grade in each at A-Level; foreign certificates must be verified by NECTA before application.",
+      "status": "verified",
+      "sourceLabel": "Muhimbili University -- official Doctor of Medicine programme page",
+      "sourceUrl": "https://muhas.ac.tz/directory/muhas/doctor-of-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "programmeSlug": "muhimbili-university-of-health-and-allied-sciences-md",
+      "publicField": "admissions",
+      "claimText": "International applicants apply through MUHAS's own online admissions portal after NECTA verification of foreign certificates; USD 10 application fee applies; no standalone entrance exam is documented for current A-Level direct entry.",
+      "status": "verified",
+      "sourceLabel": "Muhimbili University -- Undergraduate Prospectus 2025/2026-2027/2028 (PDF)",
+      "sourceUrl": "https://muhas.ac.tz/wp-content/uploads/2025/11/UG-PROSPECTUS-FORMATTED-17th-November-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "programmeSlug": "muhimbili-university-of-health-and-allied-sciences-md",
+      "publicField": "intake",
+      "claimText": "No MUHAS-specific international deadline was confirmed; Tanzania's national admissions calendar for 2026/27 opens its first application window 10 July-10 August 2026, though applicability to foreign-certificate applicants is unconfirmed.",
+      "status": "verified",
+      "sourceLabel": "Tanzania Commission for Universities -- Bachelor's Degree Admissions Almanac for the 2026/2027 Admission Cycle (PDF)",
+      "sourceUrl": "https://tcu.go.tz/sites/default/files/public_notices/2026-07/BACHELORS%20DEGREE%20ADMISSIONS%20ALMANAC%20FOR%20THE%202026-2027%20ADMISSION%20CYCLE.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "programmeSlug": "muhimbili-university-of-health-and-allied-sciences-md",
+      "publicField": "fee",
+      "claimText": "International tuition of USD 5,672/year is published on both the live programme page and the current official prospectus's itemized fee table, though the same prospectus separately flags foreign fees as under review and subject to change.",
+      "status": "verified",
+      "sourceLabel": "Muhimbili University -- Undergraduate Prospectus 2025/2026-2027/2028 (PDF)",
+      "sourceUrl": "https://muhas.ac.tz/wp-content/uploads/2025/11/UG-PROSPECTUS-FORMATTED-17th-November-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

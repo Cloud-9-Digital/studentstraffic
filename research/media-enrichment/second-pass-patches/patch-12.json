@@ -1,0 +1,233 @@
+{
+  "batchId": "second-pass-patch-12",
+  "entries": [
+    {
+      "universitySlug": "university-sakartvelo",
+      "sourceFile": "a-371-375.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Institution identity remains unresolved after a second, deeper pass. Wikipedia has no article under 'Sakartvelo University'/'University Sakartvelo' (confirmed via the Wikipedia opensearch API - zero matches). No official .edu.ge or similar domain could be guessed and verified (tried sakartvelo.edu.ge, sakartvelouni.edu.ge, sau.edu.ge, usu.edu.ge - none resolve). A distinct institution, University Geomedi (geomedi.edu.ge), does exist in Georgia and was already resolved in an earlier batch under the slug 'university-geomedi' - this record is NOT the same institution and should not inherit its assets. This looks like an unresolved-identity / possible duplicate-or-mistranslated-name record ('Sakartvelo' is simply the Georgian word for 'Georgia') rather than a source-availability problem; recommend a data/identity review of this specific 'Faculty of Medicine' record before further media research is attempted."
+    },
+    {
+      "universitySlug": "university-of-aberdeen",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Shield_of_the_University_of_Aberdeen.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Shield_of_the_University_of_Aberdeen.svg - CC BY-SA 4.0 (trademark rights may still apply independent of copyright); used in the university's own Wikipedia infobox.", "proposedPublicId": "university-of-aberdeen-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sir_Duncan_Rice_Library_2018-04-21.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 4.0, photo of the Sir Duncan Rice Library, one of the university's flagship modern buildings.", "proposedPublicId": "university-of-aberdeen-cover"},
+      "note": "First pass only found reversed/white-on-transparent logo variants on the official site. Commons-license technique found the freely-licensed heraldic shield (used in Wikipedia's own infobox) plus a high-resolution campus building photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-agder",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/University_of_Agder_logo.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:University_of_Agder_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-agder-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Hogskolen_i_Agder_Gimlemoen.JPG", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, released into the public domain by the photographer, captioned 'Campus Gimlemoen, located in Kristiansand.'", "proposedPublicId": "university-of-agder-cover"},
+      "note": "First pass found a cover-quality hero image but no standalone logo. Commons-license technique resolved a clean PD-textlogo SVG plus a public-domain campus photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-amsterdam",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Amsterdamuniversitylogo.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Amsterdamuniversitylogo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-amsterdam-logo"},
+      "note": "First pass found only an inline-SVG header mark with no standalone file. Commons-license technique resolved the same crossed-Saint-Andrew's-cross logo as a standalone, freely-licensed SVG, verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-arizona",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/University_of_Arizona_logo.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:University_of_Arizona_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-arizona-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/University_of_Arizona_May_2019_09_%28Old_Main%29.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (also GFDL/CC BY-SA 3.0), 2019 photo of the Old Main building.", "proposedPublicId": "university-of-arizona-cover"},
+      "note": "Commons-license technique: found the freestanding 'A' wordmark logo (PD-textlogo) and a recent, high-resolution Old Main campus photo, both verified HTTP 200. Note the official arizona.edu seal file is a separate non-free enwiki upload and was not used."
+    },
+    {
+      "universitySlug": "university-of-auckland",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Coat_of_arms_of_the_University_of_Auckland.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Coat_of_arms_of_the_University_of_Auckland.svg - CC BY 4.0.", "proposedPublicId": "university-of-auckland-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/University_of_Auckland_Clock_Tower.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 2.0, photo of the ClockTower on the City Campus (a Category I historic place).", "proposedPublicId": "university-of-auckland-cover"},
+      "note": "First pass found only a low-resolution downscaled banner thumbnail. The infobox 'University_of_Auckland_logo.svg' and 'Coat_of_Arms...png' are both non-free enwiki uploads, but a separately-hosted, freely-licensed Commons coat-of-arms SVG exists in the university's own Commons category, plus a clean CC-licensed Clock Tower photo."
+    },
+    {
+      "universitySlug": "university-of-barcelona",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Logo_Universitat_de_Barcelona.png", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Logo_Universitat_de_Barcelona.png - CC0 1.0 Universal Public Domain Dedication.", "proposedPublicId": "university-of-barcelona-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Universitat_de_Barcelona_-_panoramio.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 3.0, photo of the historic main building (photographer: Mister No).", "proposedPublicId": "university-of-barcelona-cover"},
+      "note": "The official ub.edu site still returns HTTP 403 to direct fetch, and Wayback Machine snapshots of www.ub.edu only ever captured tiny redirect stubs (~370 bytes), not the real homepage, so that technique was a dead end here. Commons-license technique succeeded instead: CC0 logo plus a CC BY 3.0 campus photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-bergen",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www4.uib.no/themes/custom/uib/public/image/logo-uib-dark-en.svg", "sourceType": "official", "rightsBasis": "Official institution asset, served from the www4.uib.no application subdomain of the same uib.no domain (the front-facing www.uib.no path referenced by the homepage 404s, but the underlying Drupal host serves the identical file), verified HTTP 200 image/svg+xml.", "proposedPublicId": "university-of-bergen-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/University_of_Bergen%2C_Rector_s_Office%2C_Museplass_1.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, released into the public domain, photo of the Rector's Office at Museplass.", "proposedPublicId": "university-of-bergen-cover"},
+      "note": "Applied technique #4 (same-domain alternate path): the homepage's linked logo-uib-dark-en.svg/logo-uib-light-en.svg paths still 404 on www.uib.no, but the identical asset resolves cleanly on www4.uib.no, the site's own backend application host. Cover sourced via the Commons-license technique."
+    },
+    {
+      "universitySlug": "university-of-bonn",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/University_of_Bonn_seal.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:University_of_Bonn_seal.svg - public domain under German copyright law (Section 5(1) UrhG, official work/seal).", "proposedPublicId": "university-of-bonn-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Universit%C3%A4t_Bonn.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 2.5 Generic, photo of the Electoral Palace, the university's main building.", "proposedPublicId": "university-of-bonn-cover"},
+      "note": "Official uni-bonn.de is still unreachable directly and the Wayback Machine has no usable recent full-content snapshot (root URL captures returned 0 bytes). Commons-license technique resolved a public-domain official seal and a CC BY-SA 2.5 building photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-botswana",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260718225914im_/https://www.ub.bw/sites/default/files/UB-LOGO-2_0.png", "sourceType": "official", "rightsBasis": "Official institution site ub.bw (unreachable directly) via Wayback Machine snapshot dated 2026-07-18; archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-botswana-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/GABS-UB_Courtyard.JPG", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 2.5, photo captioned 'UB Library' (courtyard), used in the university's own Wikipedia infobox.", "proposedPublicId": "university-of-botswana-cover"},
+      "note": "Wayback Machine technique recovered the site's actual header logo (all live homepage sliders were time-bound event/marathon campaign banners, not usable as a generic cover). Cover instead sourced via the Commons-license technique for a clean, non-promotional campus courtyard photo."
+    },
+    {
+      "universitySlug": "university-of-bremen",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "cover": {"sourceUrl": "https://www.uni-bremen.de/fileadmin/_processed_/c/4/csm_Campus_4x3_4_a1b2b7f788.jpg", "sourceType": "official", "rightsBasis": "Official institution site uni-bremen.de, homepage 'university' section photo of the campus Boulevard walkway with visible 'Universitat Bremen' branding, verified HTTP 200 (not the 'Platzhalterbild_UniBremen' placeholder flagged in the first pass).", "proposedPublicId": "university-of-bremen-cover"},
+      "note": "Only cover was missing. Direct inspection of the official site's /en/university page (rather than the homepage) surfaced several genuine, non-placeholder campus photographs; visually confirmed this one shows the real branded Boulevard structure with students, not the German-labelled placeholder graphic from the first pass."
+    },
+    {
+      "universitySlug": "university-of-bristol",
+      "sourceFile": "a-376-390.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://www.bristol.ac.uk/assets/responsive-web-project/2.7.2/images/logos/uob-logo.svg", "sourceType": "official", "rightsBasis": "Official institution site bristol.ac.uk homepage header logo asset, verified HTTP 200.", "proposedPublicId": "university-of-bristol-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/University_of_bristol_tower_after_cleaning_arp.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, released into the public domain by the photographer (Arpingstone), photo of the Wills Memorial Building tower.", "proposedPublicId": "university-of-bristol-cover"},
+      "note": "First pass had already found a logo but no cover. Re-fetched the live bristol.ac.uk homepage directly (the infobox logo on Wikipedia is a non-free enwiki upload) and captured the site's own current header SVG; cover sourced via the Commons-license technique."
+    },
+    {
+      "universitySlug": "university-business-science",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://ubsu.uz/images/logos/logo-black.svg", "sourceType": "official", "rightsBasis": "Official institution site ubsu.uz, dedicated header/footer logo asset, verified HTTP 200.", "proposedPublicId": "university-business-science-logo"},
+      "cover": {"sourceUrl": "https://ubsu.uz/storage/carousels/01KA8C0Z0B92N2VP2JKS57WWDN.jpg", "sourceType": "official", "rightsBasis": "Official institution site homepage carousel photo showing graduates in front of the branded 'UNIVERSITY OF BUSINESS AND SCIENCE' building signage, verified HTTP 200 (3200x1800).", "proposedPublicId": "university-business-science-cover"},
+      "note": "Re-fetched ubsu.uz directly (rather than relying on a generic default.jpg og:image as in the first pass) and found dedicated /images/logos/ assets plus a genuine, clearly-branded graduation/campus carousel photo."
+    },
+    {
+      "universitySlug": "university-of-cagliari-italy",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_Universit%C3%A0_di_Cagliari.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Logo_Università_di_Cagliari.jpg - CC BY-SA 2.5 Italy (trademark rights may still apply independent of copyright).", "proposedPublicId": "university-of-cagliari-italy-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Universit%C3%A0CA4.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 3.0, photo of Belgrano Palace (the University Palace / rectorate).", "proposedPublicId": "university-of-cagliari-italy-cover"},
+      "note": "unica.it still returns the AWS WAF CAPTCHA challenge (HTTP 405) on every path, and the only available Wayback capture of www3.unica.it served an 'Apache2 Ubuntu Default Page' rather than real content. Commons-license technique resolved a clean logo and rectorate building photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-california-santa-barbara",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/University_of_California%2C_Santa_Barbara_logo.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:University_of_California,_Santa_Barbara_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-california-santa-barbara-logo"},
+      "note": "First pass found only an inline-SVG header wordmark with no standalone file. Commons-license technique resolved the same wordmark as a standalone, freely-licensed SVG (distinct from the official seal, which is a different mark), verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-california-irvine",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/The_University_of_California_Irvine.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:The_University_of_California_Irvine.svg - released into the public domain by the uploader (PD-user), with a trademark caveat.", "proposedPublicId": "university-of-california-irvine-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Campus_of_the_University_of_California%2C_Irvine_%28aerial_view%2C_circa_2006%29.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (also GFDL/earlier CC BY-SA versions), aerial view of the core campus and Aldrich Park.", "proposedPublicId": "university-of-california-irvine-cover"},
+      "note": "First pass found only an inline-SVG header sprite and the (different) official seal, plus only small 'explore' tile thumbnails for cover. Commons-license technique resolved a standalone institutional wordmark and a genuine aerial campus photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-california-riverside",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/UC_Riverside_logo.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:UC_Riverside_logo.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-california-riverside-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/View_of_Riverside_from_Box_Springs%28cropped%29.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 2.0 Generic, panoramic view of the campus from Box Springs.", "proposedPublicId": "university-of-california-riverside-cover"},
+      "note": "First pass found the CSS-class-rendered masthead had no standalone logo file. Commons-license technique resolved a standalone wordmark (distinct from the official seal, a different non-free mark) plus a wide panoramic campus photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-campania-luigi-vanvitelli",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_Vanvitelli_university.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Logo_Vanvitelli_university.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-campania-luigi-vanvitelli-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Dipartimento_ingegneria_unicampania.png", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, released into the public domain by the photographer, photo of the Real Casa dell'Annunziata complex (seat of the Engineering Department, Aversa).", "proposedPublicId": "university-of-campania-luigi-vanvitelli-cover"},
+      "note": "First pass found a resolvable logo.jpg but no generic cover (only news/semester slider graphics). Commons-license technique replaced the logo with a cleaner free-licensed SVG and resolved a genuine institutional building photo for the cover, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-catania-italy",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Logo_UniCT.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Logo_UniCT.svg - public domain (PD-textlogo, below threshold of originality).", "proposedPublicId": "university-of-catania-italy-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Catania_BW_2012-10-06_11-26-20.JPG", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 Unported (also GFDL), photo of the Palazzo dell'Università, seat of the rectorate since the late 1690s.", "proposedPublicId": "university-of-catania-italy-cover"},
+      "note": "First pass found a resolvable logo.svg but only news call-out thumbnails for cover. Commons-license technique resolved a clean free logo and a genuine historic university-palace photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-chicago",
+      "sourceFile": "a-391-405.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/University_of_Chicago_wordmark.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:University_of_Chicago_wordmark.svg - PD-textlogo (below threshold of originality); trademark rights may still apply independent of copyright.", "proposedPublicId": "university-of-chicago-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/University_of_Chicago_campus_panorama_%282011%29.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY 3.0 Unported, wide panorama of the Main Quadrangles, Booth School and Midway Plaisance (2011).", "proposedPublicId": "university-of-chicago-cover"},
+      "note": "uchicago.edu is still a client-side-rendered React shell with no server-rendered image references (the shield used in Wikipedia's own infobox is also non-free/enwiki-only). Commons-license technique found the freely-licensed wordmark and a very large (22016x4175) campus panorama, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-copenhagen",
+      "sourceFile": "a-406-420.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Ku-ucph-logo-svg.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Ku-ucph-logo-svg.svg - CC BY-SA 4.0, voluntarily released by the uploader.", "proposedPublicId": "university-of-copenhagen-logo"},
+      "note": "First pass found only an inline-SVG header mark on both the Danish and English homepages. Commons-license technique resolved the same UCPH crest as a standalone, freely-licensed SVG, verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-guelph",
+      "sourceFile": "a-406-420.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/UofGLogo.png", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:UofGLogo.png - CC BY 4.0.", "proposedPublicId": "university-of-guelph-logo"},
+      "note": "First pass found the header logo rendered only via the site's own <uofg-header> web component with no standalone file. Commons-license technique resolved a standalone, freely-licensed PNG logo, verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-helsinki",
+      "sourceFile": "a-406-420.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Logo_University_of_Helsinki_fi.svg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons File:Logo_University_of_Helsinki_fi.svg - public domain (PD-textlogo, below threshold of originality); vector data extracted from an official PDF source.", "proposedPublicId": "university-of-helsinki-logo"},
+      "note": "First pass found the header rendered only through custom web components with no 'logo' asset in the page source (the infobox mark used on Wikipedia is a separate non-free enwiki upload). Commons-license technique resolved a monochrome, freely-licensed logo file (Finnish-language variant), verified HTTP 200."
+    },
+    {
+      "universitySlug": "university-of-information-technology-vnu-hcmc",
+      "sourceFile": "a-421-435.json",
+      "outcome": "still-hold",
+      "updatedReason": "Checked the official uit.edu.vn homepage and its dedicated 'gioi-thieu-chung' (general introduction/about) page directly. All homepage/carousel banners found (uit_bannerweb_gioithieu_02.jpg, uit_bannerweb_20nam.png, uit_bannerweb_tuyensinh.png, banner_kiem_dinh.png) are stylized marketing graphics with overlaid slogan text and/or the same '20 năm' (20-year anniversary, 2006-2026) badge already flagged in the first pass - none is genuine unstaged campus photography. The about page's own inline images are only small decorative icons (max 223x226px), not cover-quality. No press/media/brand-kit page link was found on the site. Remains held; did not substitute a marketing graphic or a low-resolution icon."
+    },
+    {
+      "universitySlug": "university-of-legia-and-company",
+      "sourceFile": "a-421-435.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Re-confirmed via the Wikipedia opensearch API that no article exists for 'University of Legia' or 'Legia and Company' (closest fuzzy matches are unrelated: Legrand (company), Leggo and Company, University of Leicester, etc.) - consistent with the first pass's finding of only thin, speculative third-party directory listings and no verifiable official domain. No new identity information was found in this pass. This remains an unresolved-identity record, not a source-availability problem; no logo or cover is nominated."
+    },
+    {
+      "universitySlug": "university-of-lisbon-faculty-of-medicine",
+      "sourceFile": "a-421-435.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260723103806im_/https://www.medicina.ulisboa.pt/sites/default/files/Logos_UL%2BFMUL_Traco_Central_Logos_UL%2BFMUL_Preto.png", "sourceType": "official", "rightsBasis": "Official institution site medicina.ulisboa.pt (repeated SSL/TLS handshake failures on direct fetch) via Wayback Machine snapshot dated 2026-07-23; archived asset URL (combined Universidade de Lisboa + FMUL logo) verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-lisbon-faculty-of-medicine-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20260723103806im_/https://www.medicina.ulisboa.pt/sites/default/files/styles/imagem_media/public/images-crop/2024-07/faculdadedemedicinadaulisboa.jpg?itok=tJyBnYBK", "sourceType": "official", "rightsBasis": "Same Wayback Machine snapshot of the official site, image alt-labelled 'fachada do edifício Egas Moniz' (facade of the Egas Moniz building); archived asset URL verified to resolve directly with its original itok query string (HTTP 200).", "proposedPublicId": "university-of-lisbon-faculty-of-medicine-cover"},
+      "note": "Wayback Machine technique bypassed the persistent SSL handshake failure and recovered both a clean combined logo and a genuine faculty-building facade photo from the same July 2026 snapshot."
+    },
+    {
+      "universitySlug": "university-of-messina-italy",
+      "sourceFile": "a-421-435.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260623120953im_/https://www.unime.it/sites/default/files/logo-new.png", "sourceType": "official", "rightsBasis": "Official institution site unime.it (returns HTTP 405 with an AWS WAF CAPTCHA on direct fetch) via Wayback Machine snapshot dated 2026-06-23; archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-messina-italy-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ripresa_notturna_della_Facolta_di_Ingegneria_Messina.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, nighttime photo of the Department of Engineering (Polo Papardo campus).", "proposedPublicId": "university-of-messina-italy-cover"},
+      "note": "Wayback Machine technique recovered the site's current logo-new.png (all live homepage hero sliders were time-bound admissions/tax-campaign banners, e.g. '5x1000' and course-year-specific graphics, not usable as a generic cover). Cover sourced instead via the Commons-license technique."
+    },
+    {
+      "universitySlug": "university-of-milan-bicocca",
+      "sourceFile": "a-436-450.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260714094951im_/https://www.unimib.it/sites/default/files/logo.png", "sourceType": "official", "rightsBasis": "Official institution site unimib.it (returns Cloudflare bot-challenge HTTP 403 on direct fetch) via Wayback Machine snapshot dated 2026-07-14; archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-milan-bicocca-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20260714094951im_/https://www.unimib.it/sites/default/files/styles/slick_carousel_1920x520/public/2024-08/studentiBicocca.jpg?itok=t-bRgmBG", "sourceType": "official", "rightsBasis": "Same Wayback Machine snapshot of the official site, image alt-labelled 'studenti università Bicocca' (a generic students photo, not a dated campaign graphic); archived asset URL verified to resolve directly with its original itok query string (HTTP 200).", "proposedPublicId": "university-of-milan-bicocca-cover"},
+      "note": "Wayback Machine technique bypassed the persistent Cloudflare 403 and recovered both the header logo.png and a non-promotional students-on-campus photo from the same snapshot (other carousel slides were all dated admissions/survey campaign graphics and were skipped)."
+    },
+    {
+      "universitySlug": "university-of-namibia-school-of-medicine",
+      "sourceFile": "a-436-450.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260525213444im_/https://www.unam.edu.na/wp-content/uploads/2024/07/UNAM-LogoLandscape2.png", "sourceType": "official", "rightsBasis": "Official institution site unam.edu.na, currently hijacked/serving unrelated spam content, via Wayback Machine snapshot dated 2026-05-25 (confirmed genuine - page title 'University of Namibia | Open your mind', not spam); archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-namibia-school-of-medicine-logo"},
+      "cover": {"sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Unamt.jpg", "sourceType": "licensed", "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, photo captioned 'UNAM main campus', used in the university's own Wikipedia infobox.", "proposedPublicId": "university-of-namibia-school-of-medicine-cover"},
+      "note": "Confirmed via the Wayback Machine that the domain was still legitimate as recently as 2026-05-25, i.e. the hijack is a very recent development; recovered the genuine header logo from that snapshot. The archived page's own og:image was a portrait-orientation corporate-brochure cover rather than a campus photo, so the cover was instead sourced via the Commons-license technique."
+    },
+    {
+      "universitySlug": "university-of-new-england-australia",
+      "sourceFile": "a-436-450.json",
+      "outcome": "upgraded",
+      "logo": {"sourceUrl": "https://web.archive.org/web/20260718224650im_/https://www.une.edu.au/__data/assets/image/0004/584005/une-logo.png", "sourceType": "official", "rightsBasis": "Official institution site une.edu.au (now blocks automated/cloud-origin fetches, per the first pass) via Wayback Machine snapshot dated 2026-07-18; archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-new-england-australia-logo"},
+      "cover": {"sourceUrl": "https://web.archive.org/web/20260718224650im_/https://www.une.edu.au/__data/assets/image/0006/591099/varieties/hero.jpg", "sourceType": "official", "rightsBasis": "Same Wayback Machine snapshot of the official site, homepage hero banner (agriculture students with livestock, no overlaid dates or campaign text); archived asset URL verified to resolve directly (HTTP 200).", "proposedPublicId": "university-of-new-england-australia-cover"},
+      "note": "Per the task note, the first pass had already confirmed the correct official asset before it started failing at upload time due to une.edu.au blocking Cloudinary's fetcher. Used the Wayback Machine to obtain working alternative URLs for both the logo and a generic (non-time-bound) hero photo from the same official domain."
+    }
+  ]
+}

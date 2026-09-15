@@ -1,0 +1,376 @@
+{
+  "countries": [
+    {
+      "slug": "jamaica",
+      "name": "Jamaica",
+      "region": "Caribbean",
+      "summary": "Jamaica is an English-speaking Caribbean nation home to the University of the West Indies Mona campus, whose Faculty of Medical Sciences runs a direct-entry, WHO-listed MBBS programme with clean, unconditional CAAM-HP accreditation and an ECFMG-eligible medical degree.",
+      "whyStudentsChooseIt": "Jamaica offers an internationally recognized, WHO-listed medical degree at a long-established regional university, with English-medium instruction, a direct-entry six-year curriculum, and confirmed on-campus accommodation at published rates well below the cost of housing in many other study-abroad destinations.",
+      "climate": "Tropical climate with warm temperatures year-round, a wet season roughly May-November, and occasional hurricane risk.",
+      "currencyCode": "JMD",
+      "metaTitle": "Study MBBS and Medicine in Jamaica",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Jamaica, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of the West Indies Mona Faculty of Medical Sciences maps its English-medium Bachelor of Medicine, Bachelor of Surgery (MBBS) programme to this category: a direct-entry, single-cycle five-year programme, one of the Caribbean's longest-established medical schools.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "jamaica",
+      "slug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "name": "University of the West Indies Mona Faculty of Medical Sciences",
+      "city": "Kingston",
+      "type": "Public",
+      "establishedYear": 1948,
+      "officialWebsite": "https://www.mona.uwi.edu/fms",
+      "mediaAttribution": {},
+      "summary": "The University of the West Indies (UWI) Mona Faculty of Medical Sciences, one of the Caribbean's oldest medical schools, runs a direct-entry, five-year, English-medium Bachelor of Medicine, Bachelor of Surgery (MBBS) programme in Kingston, Jamaica. The school is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and holds a clean, unconditional CAAM-HP accreditation granted 20 July 2023.",
+      "campusLifestyle": "International students join the MBBS cohort at UWI's Mona campus, training at the adjacent University Hospital of the West Indies (UHWI), the region's first teaching hospital, with on-campus housing available across more than ten residence halls.",
+      "cityProfile": "Kingston is Jamaica's capital, home to UWI's Mona campus and the University Hospital of the West Indies, giving MBBS students direct daily access to a major regional teaching hospital alongside an established international-student community.",
+      "practicalExposure": "The five-year MBBS programme is structured as MB BS Stage I (with an intermediate B.Med.Sci. award) followed by MB BS Stage II, with clinical teaching at the University Hospital of the West Indies and other approved hospitals and health centres, and a mandatory 12-month supervised internship (pre-registration house officer year) required before full registration.",
+      "hostelOverview": "UWI Mona operates more than ten Halls of Residence, with published 2026/27 annual rates ranging from roughly USD 2,296 to USD 2,786 depending on hall and room type -- confirmed on a dated official fee schedule. Placement is competitive and not guaranteed for every applicant. Off-campus housing is supported by the university's Lodgings Office, though no official typical off-campus rent figure is published.",
+      "dietarySupport": "Dining facilities are available across campus and halls of residence; no separate university-run meal-plan cost beyond hall fees is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants submit a free online application, a medical-programme-specific Statement of Responsibility, and a Non-Academic Criteria selection form, with no entrance exam or interview required for MBBS.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000014), with no prior-degree prerequisite and no entrance exam required, and graduates (1953-current) eligible to apply for ECFMG Certification.",
+        "Clean, unconditional CAAM-HP accreditation ('Accreditation Granted,' 20 July 2023) -- a stronger status than the conditional accreditation carried by several newer Caribbean medical schools.",
+        "One of the Caribbean's oldest and largest medical schools, founded in 1948, training over 275 students per recent intake at the region's first teaching hospital.",
+        "A confirmed, current, dated (May 2026) official international-student tuition figure of USD 28,000/year, with no hidden or undisclosed international premium.",
+        "Genuinely affordable, confirmed on-campus accommodation (roughly USD 2,300-2,800/year) at a dated, official rate, well below typical off-campus housing costs at many other destinations."
+      ],
+      "thingsToConsider": [
+        "The application cycle for MBBS follows an early deadline -- the Faculty's own regulations set a mid-January cutoff, well ahead of the general university's March 31 priority date -- meaning the September 2026 intake had already closed by the time of this research; the realistic target for a fresh applicant is the September 2027 intake, with its specific application window not yet confirmed live on the university's site.",
+        "No scholarship specifically available to Indian or other non-CARICOM international MBBS applicants was found; the university's listed international scholarships (Ghana Scholarship Secretariat, Erasmus+, Fulbright) do not apply to this audience.",
+        "The published USD 28,000/year fee is a single annual figure without an official year-by-year breakdown across the full 5-year programme, and the university explicitly reserves the right to change fees without prior notice.",
+        "Off-campus accommodation cost in Kingston is not officially quantified by the university, only supported logistically through its Lodgings Office.",
+        "Some official pages contain stale or placeholder content (e.g. an admissions page still referencing the 2010/2011 academic year, and a template contact block on the MBBS programme page) -- rely on the specifically dated documents cited in this record rather than every page on the site."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, direct-entry medical degree at one of the Caribbean's most established medical schools with a clean, unconditional accreditation status.",
+        "Applicants comfortable with a documents-and-selection-form admissions process (no entrance exam or interview) who can apply well ahead of the Faculty's early mid-January deadline.",
+        "Families prioritizing confirmed, affordable on-campus housing alongside a transparent, currently dated international tuition rate."
+      ],
+      "industryPartners": [
+        "University Hospital of the West Indies (UHWI)"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0000014, direct-entry (no prior-degree prerequisite, no entrance exam)",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1953-present",
+        "CAAM-HP (Caribbean Accreditation Authority) -- Accreditation Granted (unconditional), 20 July 2023"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- UWI Mona listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000014" },
+        { "label": "UWI Mona -- MBBS programme page", "url": "https://www.mona.uwi.edu/fms/bachelor-medicine-bachelor-surgery-mbbs-0" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBBS programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools confirms admission follows completion of secondary education, with no prior university degree required and no entrance exam."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Bachelor of Medicine, Bachelor of Surgery (MBBS) degree after five years, with an intermediate Bachelor of Medical Sciences (B.Med.Sci.) awarded on completion of Stage I, followed by a mandatory 12-month supervised internship."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 28,000 per year for students from non-CARICOM countries, confirmed on the university's official May 2026 fee schedule. This is published as a single annual figure without an official year-by-year total across the 5-year programme."
+        },
+        {
+          "question": "Is there an entrance exam or interview?",
+          "answer": "No. The WHO World Directory of Medical Schools confirms no entrance exam is required, and no interview is stated for MBBS specifically (unlike some of the university's other health-science programmes). Applicants do complete a non-academic selection form covering leadership, community service and extracurricular achievement."
+        },
+        {
+          "question": "When can I apply and when does the academic year start?",
+          "answer": "The Faculty of Medical Sciences sets an early application deadline, historically around mid-January, well ahead of the general university's March 31 priority date. Classes for the current cycle begin in September; the September 2026 intake had already closed by the time of this research, so applicants should target September 2027 and confirm the exact window directly with UWI admissions."
+        },
+        {
+          "question": "Is on-campus accommodation available?",
+          "answer": "Yes. UWI Mona operates more than ten Halls of Residence with published 2026/27 annual rates of roughly USD 2,296-2,786 depending on hall and room type, though placement is competitive and not guaranteed."
+        },
+        {
+          "question": "Are scholarships available for international students?",
+          "answer": "No scholarship specifically available to Indian or other non-CARICOM international MBBS applicants was found; the university's listed international scholarship programmes are restricted to other nationalities or exchange schemes."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Jamaica?",
+          "answer": "A UWI medical degree entitles graduates to register with medical councils across the English-speaking Caribbean, and graduates are eligible to apply for ECFMG Certification. For India specifically, graduates would need to separately satisfy India's National Medical Commission FMGE/NExT screening requirements; this was not independently verified against an NMC source."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- UWI Mona listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000014",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry status (no prior-degree prerequisite, no entrance exam), founding year, unconditional CAAM-HP accreditation and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "UWI Mona -- MBBS programme page",
+          "url": "https://www.mona.uwi.edu/fms/bachelor-medicine-bachelor-surgery-mbbs-0",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for programme structure, the intermediate B.Med.Sci. award and the mandatory internship requirement."
+        },
+        {
+          "label": "UWI Mona -- entry requirements",
+          "url": "https://www.mona.uwi.edu/content/entry-requirements",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for eligibility criteria, English-proficiency thresholds and the non-academic selection requirements."
+        },
+        {
+          "label": "UWI Mona -- 2026-2027 Undergraduate Fee Schedule (PDF, dated 28 May 2026)",
+          "url": "https://www.mona.uwi.edu/sites/default/files/uwi/uwi-mona_2026-2027_undergraduate_fee_schedule_may_2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming the current USD 28,000/year international tuition rate for MBBS (Non-Contributing Countries category)."
+        },
+        {
+          "label": "UWI Mona -- 2026-2027 Residence Fee Schedule (PDF, dated 5 June 2026)",
+          "url": "https://www.mona.uwi.edu/sites/default/files/uwi/uwi-mona_2026-2027_residence_fees.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming current per-hall annual accommodation rates."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology chemistry physics grades", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "notarization status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "uwi-mona-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 28000,
+            "officialTotalTuitionAmount": 140000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published tuition of USD 28,000/year for students from non-CARICOM ('Non-Contributing') countries, including India, confirmed on the university's dated 28 May 2026 fee schedule. This is published as a single annual figure without an official year-by-year breakdown; total is calculated as the annual figure times 5 years -- an estimate, not an officially published lump sum. A separate non-refundable commitment fee of roughly JMD 35,000 (about USD 222) applies upon accepting an offer, plus annual miscellaneous fees (roughly JMD 44,000-53,000/year depending on residence status)."
+          },
+          "officialProgramUrl": "https://www.mona.uwi.edu/fms/bachelor-medicine-bachelor-surgery-mbbs-0",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education with required science-subject qualifications"
+            ],
+            "restrictions": [
+              "Minimum age 18 in year of admission",
+              "Requires 5 CSEC/O-Level-equivalent passes plus 3 CAPE/A-Level-equivalent subjects including Chemistry and Biology, or an accepted equivalent qualification evaluated case-by-case from transcripts",
+              "A Police Certificate of Character is required of all applicants"
+            ],
+            "notes": "No entrance exam is required for MBBS; admission also weighs a non-academic selection form covering leadership, community service and extracurricular achievement.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.mona.uwi.edu/content/entry-requirements"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit a free online application with certified (notarized, for non-contributing-territory applicants) academic and identity documents, plus a medical-programme-specific Statement of Responsibility and a Non-Academic Criteria selection form; no entrance exam or interview applies to MBBS.",
+            "eligibility": {
+              "intro": "Admission requires secondary-school science qualifications equivalent to CSEC/CAPE or A-Level standards, evaluated case-by-case for foreign transcripts.",
+              "items": [
+                "5 CSEC/O-Level-equivalent passes including English, Mathematics, Biology, Chemistry and Physics",
+                "3 CAPE/A-Level-equivalent subjects including Chemistry and Biology, or an accepted equivalent qualification",
+                "Police Certificate of Character and a 300-word autobiographical career-choice statement"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the free online application through UWI Mona's admissions portal",
+              "Upload certified (notarized, if outside contributing territories) academic and identity documents",
+              "Submit the Statement of Responsibility for Medical Students and Non-Academic Criteria selection form",
+              "Await an admissions decision",
+              "Pay the commitment fee (approx. JMD 35,000) by the deadline stated in the Offer of Entry letter"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified secondary-school certificates and transcripts (notarized if outside UWI contributing territories)",
+                "English-proficiency proof (IELTS 6.5+ or TOEFL 500 paper-based/82 iBT+), where required"
+              ],
+              "application": [
+                "Certified birth certificate",
+                "Police Certificate of Character"
+              ]
+            },
+            "deadlinesNote": "Faculty of Medical Sciences historically set a mid-January deadline, earlier than the general university's March 31 date. September 2026 intake already closed; target September 2027 and confirm with UWI admissions.",
+            "visaConsiderations": [
+              "Confirm current Jamaican student-visa requirements directly with UWI Mona's International Student Office."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current international tuition of USD 28,000/year from the official 28 May 2026 fee schedule, published as a single annual figure without a year-by-year breakdown; the university reserves the right to change fees without prior notice.",
+          "teachingPhases": [
+            {
+              "phase": "5-year MBBS programme (MB BS Stage I and Stage II)",
+              "language": "English",
+              "details": "MB BS Stage I culminates in an intermediate Bachelor of Medical Sciences (B.Med.Sci.) award, followed by MB BS Stage II, with clinical teaching at the University Hospital of the West Indies and other approved hospitals and health centres, and a mandatory 12-month supervised internship before full registration."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "publicField": "identity",
+      "claimText": "University of the West Indies Mona Faculty of Medical Sciences began medical instruction in 1948 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- UWI Mona listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000014",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000014); direct-entry confirmed (no prior-degree prerequisite, no entrance exam); graduates (1953-current) eligible for ECFMG Certification; CAAM-HP Accreditation Granted (unconditional) 20 July 2023.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- UWI Mona listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000014",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "programmeSlug": "uwi-mona-mbbs",
+      "publicField": "academics",
+      "claimText": "MBBS is a 5-year direct-entry programme structured as MB BS Stage I (with an intermediate B.Med.Sci. award) and Stage II, followed by a mandatory 12-month supervised internship before full registration.",
+      "status": "verified",
+      "sourceLabel": "UWI Mona -- MBBS programme page",
+      "sourceUrl": "https://www.mona.uwi.edu/fms/bachelor-medicine-bachelor-surgery-mbbs-0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "programmeSlug": "uwi-mona-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Admission requires 5 CSEC/O-Level-equivalent passes and 3 CAPE/A-Level-equivalent subjects including Chemistry and Biology, or an accepted equivalent qualification evaluated case-by-case from transcripts, plus a Police Certificate of Character.",
+      "status": "verified",
+      "sourceLabel": "UWI Mona -- entry requirements",
+      "sourceUrl": "https://www.mona.uwi.edu/content/entry-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "programmeSlug": "uwi-mona-mbbs",
+      "publicField": "admissions",
+      "claimText": "Applicants submit a free online application with certified/notarized documents, a medical-specific Statement of Responsibility, and a Non-Academic Criteria selection form; no entrance exam or interview applies to MBBS.",
+      "status": "verified",
+      "sourceLabel": "UWI Mona -- entry requirements",
+      "sourceUrl": "https://www.mona.uwi.edu/content/entry-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "programmeSlug": "uwi-mona-mbbs",
+      "publicField": "intake",
+      "claimText": "The Faculty of Medical Sciences historically set a mid-January application deadline, well ahead of the general university's March 31 priority date; the September 2026 intake had already closed by this research date, with September 2027 the realistic next target.",
+      "status": "verified",
+      "sourceLabel": "UWI Mona -- MBBS programme page",
+      "sourceUrl": "https://www.mona.uwi.edu/fms/bachelor-medicine-bachelor-surgery-mbbs-0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "programmeSlug": "uwi-mona-mbbs",
+      "publicField": "fee",
+      "claimText": "International tuition confirmed at USD 28,000/year for non-CARICOM ('Non-Contributing Countries') students, per the official 28 May 2026 fee schedule.",
+      "status": "verified",
+      "sourceLabel": "UWI Mona -- 2026-2027 Undergraduate Fee Schedule (PDF, dated 28 May 2026)",
+      "sourceUrl": "https://www.mona.uwi.edu/sites/default/files/uwi/uwi-mona_2026-2027_undergraduate_fee_schedule_may_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "publicField": "student living",
+      "claimText": "On-campus Halls of Residence charge roughly USD 2,296-2,786/year depending on hall and room type, per the official 5 June 2026 residence fee schedule; placement is competitive and not guaranteed.",
+      "status": "verified",
+      "sourceLabel": "UWI Mona -- 2026-2027 Residence Fee Schedule (PDF, dated 5 June 2026)",
+      "sourceUrl": "https://www.mona.uwi.edu/sites/default/files/uwi/uwi-mona_2026-2027_residence_fees.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

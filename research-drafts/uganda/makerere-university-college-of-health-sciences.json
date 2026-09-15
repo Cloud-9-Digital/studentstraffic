@@ -1,0 +1,36 @@
+{
+  "scope": "Uganda medical discovery — Makerere University College of Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Makerere University College of Health Sciences lists Bachelor of Medicine and Bachelor of Surgery among the School of Medicine's undergraduate programmes.",
+      "sourceUrl": "https://chs.mak.ac.ug/academics/academics",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Makerere's College of Health Sciences states that its undergraduate MBChB diploma-entry scheme requires a health or biological-science diploma and at least two years of relevant work experience; degree-holder applications are considered case by case under university guidelines.",
+      "sourceUrl": "https://www.chs.mak.ac.ug/page/entry-requirements-makchs-undergraduate-programmes-diploma-and-degree-holders",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Makerere's medical-school elective page states that placements are available at Mulago Hospital and other Makerere-affiliated hospitals, with possible district-hospital and rural-clinic placements.",
+      "sourceUrl": "https://chs.mak.ac.ug/academics/academics",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Makerere University states that all its academic programmes and affiliated-institution programmes are accredited by Uganda's National Council for Higher Education.",
+      "sourceUrl": "https://news.mak.ac.ug/2023/05/statement-on-accreditation-of-university-academic-programmes/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current direct-entry MBChB admission requirements and Medicine-specific fee data were not sufficiently assembled for the required payload fields.",
+    "An explicit current teaching-language and student-support evidence set remains incomplete for publication."
+  ],
+  "nextAction": "Collect current Makerere MBChB direct-entry, fee, teaching-language and student-support publications, then complete the field-level review before publishing."
+}

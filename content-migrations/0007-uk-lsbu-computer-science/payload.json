@@ -1,0 +1,114 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": ["Bachelor of Engineering in Computer Science", "Bachelor of Engineering in Computer Science and Engineering", "Bachelor of Technology in Computer Science and Engineering", "BEng Computer Science", "BSc Computer Science"],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Computer science bachelor's programmes build a foundation in programming, mathematical reasoning, algorithms and computer systems. The precise award title, curriculum, admissions route, costs and progression rules depend on the university and should be assessed at programme level before an applicant shortlists an option.",
+      "metaTitle": "B.E./B.Tech CSE: Computer Science Programmes",
+      "metaDescription": "Explore B.E./B.Tech CSE programmes with programme-level curriculum, eligibility, fees, intake and application requirements for a Computer Science shortlist."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "united-kingdom",
+      "slug": "london-south-bank-university",
+      "name": "London South Bank University",
+      "city": "London",
+      "type": "Public",
+      "establishedYear": 1892,
+      "officialWebsite": "https://www.lsbu.ac.uk",
+      "mediaAttribution": {},
+      "summary": "London South Bank University is a public university in south London with roots in the Borough Polytechnic Institute, founded in 1892. Its Southwark-based BSc (Hons) Computer Science is a three-year September course with a BCS accreditation shown on the course page and a four-year sandwich route that includes a placement year.",
+      "campusLifestyle": "The Computer Science course is taught at LSBU's Southwark campus. The university's computing school identifies facilities and learning around software, operating systems, high-performance computing and Raspberry Pi devices; the course page also lists work in programming, databases, AI, cloud computing and mobile development.",
+      "cityProfile": "LSBU's Southwark campus places students in central London, but the city needs a realistic budget. LSBU's current 2025/26 planning guide estimates a 39-week undergraduate year at £12,600–£18,400 in university accommodation or £16,400–£25,500 in private accommodation; those totals include more than rent and are not tuition charges.",
+      "practicalExposure": "The BSc course page describes hands-on work with programming, software development, databases and computing systems, and offers a four-year sandwich option with a work-placement year. It also cites past student projects for Southwark Council and RICS. These examples show the type of applied work associated with the course, not a guaranteed placement or employer outcome.",
+      "hostelOverview": "LSBU has two halls with more than 900 single bedrooms within a ten-minute walk of its main campus. For 2026/27, McLaren House publishes weekly rents from £215 for an ensuite to £295 for a superior ensuite with a large bed, with internet, utilities and contents insurance included; availability and room allocation are separate from a course offer.",
+      "dietarySupport": "LSBU's current cost guide budgets £45–£65 a week for food and household shopping. It does not publish a compulsory meal plan for Computer Science students. Campus microwaves are available in the Student Centre and LSBU Hub for students bringing food from home.",
+      "safetyOverview": "LSBU directs students to its SafeZone app for campus emergencies, first-aid requests and contact with the local safety team or a safety escort after dark. Its published emergency number is 020 7815 6666; immediate danger still requires the UK emergency number, 999.",
+      "studentSupport": "The Student Life Centre provides advice through appointments, online chat and MyAccount. LSBU lists specialist support for disability and dyslexia, money advice, employability, health and wellbeing, while international applicants can contact the university's dedicated international team before applying and after receiving an offer.",
+      "whyChoose": [
+        "The BSc (Hons) Computer Science course page shows BCS accreditation and a curriculum spanning programming, databases, AI, cloud computing and mobile development.",
+        "Applicants can choose a three-year full-time route or a four-year sandwich route with a work-placement year.",
+        "The 2026/27 course page publishes the international annual fee and an illustrative total based on the current fee, allowing a clear first budget comparison.",
+        "LSBU publishes current international scholarships, including a £2,000-per-year Vice-Chancellor's International Merit Award for qualifying undergraduate applicants."
+      ],
+      "thingsToConsider": [
+        "The £17,880 international fee is for 2026/27 entry and LSBU states that fees can rise annually; the displayed three-year total is based on the current annual fee rather than a fixed future-fee guarantee.",
+        "London living costs are material: LSBU's 39-week planning estimate is £12,600–£18,400 in university accommodation and £16,400–£25,500 privately, separate from tuition.",
+        "The standard full-time programme begins in September. International students needing a UK Student visa should apply full-time; LSBU says part-time study may not be available to those requiring that visa.",
+        "The course requires 112 UCAS points and GCSE Mathematics grade 4/C or an equivalent qualification; international equivalence must meet LSBU's published country and English-language requirements."
+      ],
+      "bestFitFor": [
+        "Applicants seeking a London-based undergraduate Computer Science degree with a published three-year route and an optional sandwich placement year.",
+        "Students whose academic record meets the course's stated 112-UCAS-point and Mathematics-equivalent entry threshold.",
+        "International applicants able to plan separately for tuition, London living costs, a UK Student visa and any required English-language evidence.",
+        "Students looking for structured support through the Student Life Centre, computing-school careers support and named campus safety channels."
+      ],
+      "industryPartners": ["Southwark Council", "Royal Institution of Chartered Surveyors (RICS)"],
+      "recognitionBadges": ["BCS (The Chartered Institute for IT) accredited — BSc (Hons) Computer Science", "Office for Students — registered English higher-education provider (UKPRN 10004078)"],
+      "recognitionLinks": [
+        {"label": "LSBU BSc Computer Science course and BCS accreditation", "url": "https://www.lsbu.ac.uk/study/course-finder/computer-science"},
+        {"label": "Office for Students fee information listing — London South Bank University", "url": "https://www.officeforstudents.org.uk/media/42odqqcj/ofs-fee-limits-2025-26-web.pdf"}
+      ],
+      "faq": [
+        {"question": "Is London South Bank University a public university?", "answer": "Yes. LSBU is a public university in London with roots dating to the Borough Polytechnic Institute in 1892. It is listed in Office for Students fee information under UKPRN 10004078."},
+        {"question": "Is the LSBU Computer Science degree accredited?", "answer": "The current BSc (Hons) Computer Science course page shows BCS accreditation. LSBU's published course specification describes BCS accreditation for the academic requirements associated with Chartered IT Professional registration; professional registration itself remains subject to BCS requirements."},
+        {"question": "How long is BSc Computer Science at LSBU?", "answer": "The standard full-time BSc (Hons) Computer Science route is three years and starts in September. LSBU also lists a four-year sandwich route, which includes a work-placement year, and a four-year part-time route."},
+        {"question": "What is the international tuition fee for Computer Science?", "answer": "For 2026/27 entry, LSBU publishes an international annual tuition fee of £17,880 for the full-time BSc (Hons) Computer Science route. Its displayed three-year total is £53,640, calculated from the current annual fee and subject to future fee increases."},
+        {"question": "What are the entry requirements for Computer Science?", "answer": "LSBU lists 112 UCAS points and GCSE Mathematics at grade 4/C or equivalent for the course. International applicants should use LSBU's international qualification guidance to establish the equivalent school qualification and English-language evidence for their country."},
+        {"question": "How do international applicants apply?", "answer": "International applicants and EU applicants without settled or pre-settled status can apply directly to LSBU. The Computer Science page directs them to LSBU's international application guidance; applicants should submit the academic and identity evidence requested for their route."},
+        {"question": "When does the course start and what is the 2026 application timing?", "answer": "The full-time course starts in September. LSBU's undergraduate guidance says applicants for September 2026 should apply by 30 June 2026 to be considered before Clearing, while noting that course-specific deadlines can vary."},
+        {"question": "Can international students receive an LSBU scholarship?", "answer": "LSBU lists the Vice-Chancellor's International Merit Award at £2,000 per academic year for qualifying undergraduate international students with grades equivalent to AAB, approximately 75% or above in other international school-leaving certificates. It also lists a Global Success Scholarship of up to £4,000 in the first year, subject to the published conditions."},
+        {"question": "What should I budget for accommodation and living in London?", "answer": "LSBU's 2025/26 guide estimates £12,600–£18,400 for a 39-week undergraduate year in university accommodation and £16,400–£25,500 privately. For 2026/27, McLaren House rooms are published from £215 to £295 per week, with utilities, internet and contents insurance included."},
+        {"question": "What student support is available at LSBU?", "answer": "The Student Life Centre provides appointments, online chat and access to specialist teams. LSBU lists disability and dyslexia support, money advice, employability and wellbeing services, and its SafeZone app can contact campus safety staff or request a safety escort after dark."}
+      ],
+      "researchSources": [
+        {"label": "LSBU BSc (Hons) Computer Science", "url": "https://www.lsbu.ac.uk/study/course-finder/computer-science", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Course identity, delivery modes, entry requirements, BCS accreditation, fees and current course content."},
+        {"label": "LSBU undergraduate application guidance", "url": "https://www.lsbu.ac.uk/study/undergraduate/how-to-apply", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "International direct application route and September 2026 timing."},
+        {"label": "LSBU cost of living support", "url": "https://www.lsbu.ac.uk/student-life/our-campuses/southwark/cost-of-living", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Current London living-cost planning figures."},
+        {"label": "LSBU accommodation and McLaren House rates", "url": "https://www.lsbu.ac.uk/student-life/accommodation/our-residences/mclaren-house", "kind": "official-fee", "checkedAt": "2026-07-25", "notes": "2026/27 accommodation prices and included charges."},
+        {"label": "LSBU international scholarships", "url": "https://www.lsbu.ac.uk/international/fees-and-funding/scholarships", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "International award eligibility and published values."},
+        {"label": "LSBU student support and safety", "url": "https://www.lsbu.ac.uk/student-life/student-support", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Student Life Centre and specialist-support routes."},
+        {"label": "Office for Students fee information", "url": "https://www.officeforstudents.org.uk/media/42odqqcj/ofs-fee-limits-2025-26-web.pdf", "kind": "government", "checkedAt": "2026-07-25", "notes": "Official listing for London South Bank University, UKPRN 10004078."}
+      ],
+      "admissionsContent": {"international": "International applicants can apply directly to LSBU. Programme eligibility, English-language evidence and document requirements must match the current country-specific LSBU guidance and the Computer Science course page."},
+      "programmes": [
+        {
+          "slug": "lsbu-bsc-computer-science",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "BSc (Hons) Computer Science",
+          "durationYears": 3,
+          "fee": {"status": "confirmed", "academicYear": "2026/2027", "officialFeeCurrency": "GBP", "officialAnnualTuitionAmount": 17880, "officialTotalTuitionAmount": 53640, "verifiedAt": "2026-07-25", "notes": "LSBU's course page lists £17,880 international tuition for 2026/27 and a £53,640 three-year total based on the current annual fee. The university states tuition fees are subject to annual inflationary increases."},
+          "officialProgramUrl": "https://www.lsbu.ac.uk/study/course-finder/computer-science",
+          "audienceEligibility": {"availability": "global", "eligibleAudiences": ["International applicants", "UK applicants", "EU applicants with or without UK settlement status"], "restrictions": ["Applicants must meet the published academic and Mathematics-equivalent requirements.", "Applicants who need a UK Student visa should use a full-time route; LSBU says part-time study may not be available to them.", "English-language evidence and qualification equivalence depend on LSBU's current country guidance."], "notes": "LSBU directs international applicants to its direct international application route and country-specific qualification guidance.", "verifiedAt": "2026-07-25", "sourceUrl": "https://www.lsbu.ac.uk/study/undergraduate/how-to-apply"},
+          "admissionsContent": {"overview": "International applicants can apply directly to LSBU for the September-start full-time BSc (Hons) Computer Science. The course page sets the academic threshold while LSBU's international guidance sets the relevant country-equivalence and English-language route.", "eligibility": {"intro": "The course lists 112 UCAS points and GCSE Mathematics grade 4/C or equivalent. International applicants need an equivalent academic qualification and the English-language evidence specified for their country or course route.", "items": ["Qualification equivalent to 112 UCAS points.", "Mathematics qualification equivalent to GCSE grade 4/C.", "International academic qualifications assessed against LSBU's country guidance.", "English-language evidence where required by LSBU's international entry requirements."]}, "applicationSteps": ["Choose the full-time BSc (Hons) Computer Science September route and review its entry requirements.", "Use LSBU's international application route if you are an international applicant or an EU applicant without settled or pre-settled status.", "Submit the supporting academic, identity and English-language documents requested for your application route.", "Track the application and respond to any conditions or further-document requests from LSBU Admissions."], "documentsRequired": {"academic": ["School-leaving qualification or equivalent academic record", "Mathematics qualification evidence", "English-language evidence where required"], "application": ["Identity document or passport", "Application information and supporting documents requested by LSBU"]}, "deadlinesNote": "For September 2026 entry, LSBU advises applying by 30 June 2026 to be considered before Clearing. The university says deadlines may vary by course.", "visaConsiderations": ["Applicants requiring a UK Student visa should select an eligible full-time route and follow LSBU's CAS and visa instructions after receiving an offer."]},
+          "medium": "English. LSBU publishes the BSc (Hons) Computer Science curriculum and international-entry guidance in English.",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "The 2026/27 international annual fee is £17,880. LSBU displays a £53,640 total for the standard three-year route based on that current annual fee and states that fees may rise annually. Accommodation, living costs, visa charges and personal expenses are separate.",
+          "teachingPhases": [{"phase": "Years 1–3", "language": "English", "details": "The standard full-time BSc is a three-year September course. Published content covers programming, software development, databases, algorithms, systems and computing topics including AI, cloud and mobile development."}, {"phase": "Optional sandwich year", "language": "English", "details": "LSBU lists a four-year sandwich version with a work-placement year; availability and placement arrangements are governed by the course route."}]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {"entity": "university", "universitySlug": "london-south-bank-university", "publicField": "identity", "claimText": "London South Bank University traces its roots to the Borough Polytechnic Institute, founded in 1892, and operates as a public university in London.", "status": "verified", "sourceLabel": "LSBU About Us", "sourceUrl": "https://www.lsbu.ac.uk/about-us", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-07-25"},
+    {"entity": "university", "universitySlug": "london-south-bank-university", "publicField": "recognition", "claimText": "LSBU's current Computer Science course page shows BCS accreditation, and OfS fee information lists London South Bank University under UKPRN 10004078.", "status": "verified", "sourceLabel": "LSBU course page and Office for Students", "sourceUrl": "https://www.lsbu.ac.uk/study/course-finder/computer-science", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "london-south-bank-university", "programmeSlug": "lsbu-bsc-computer-science", "publicField": "programme", "claimText": "LSBU publishes BSc (Hons) Computer Science as a three-year full-time September course with a four-year sandwich option.", "status": "verified", "sourceLabel": "LSBU BSc Computer Science", "sourceUrl": "https://www.lsbu.ac.uk/study/course-finder/computer-science", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "london-south-bank-university", "programmeSlug": "lsbu-bsc-computer-science", "publicField": "eligibility", "claimText": "The course lists 112 UCAS points and GCSE Mathematics grade 4/C or equivalent; LSBU directs international applicants to country-specific qualification guidance.", "status": "verified", "sourceLabel": "LSBU BSc Computer Science", "sourceUrl": "https://www.lsbu.ac.uk/study/course-finder/computer-science", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "london-south-bank-university", "programmeSlug": "lsbu-bsc-computer-science", "publicField": "admissions", "claimText": "International applicants can apply directly to LSBU, while the standard full-time course is applied for through the route specified on its course page.", "status": "verified", "sourceLabel": "LSBU undergraduate application guidance", "sourceUrl": "https://www.lsbu.ac.uk/study/undergraduate/how-to-apply", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "london-south-bank-university", "programmeSlug": "lsbu-bsc-computer-science", "publicField": "intake", "claimText": "The BSc Computer Science course has a September start. LSBU advises September 2026 applicants to apply by 30 June 2026 before Clearing, subject to course-specific variation.", "status": "verified", "sourceLabel": "LSBU undergraduate application guidance", "sourceUrl": "https://www.lsbu.ac.uk/study/undergraduate/how-to-apply", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "london-south-bank-university", "programmeSlug": "lsbu-bsc-computer-science", "publicField": "fee", "claimText": "LSBU lists an international fee of £17,880 for 2026/27 BSc Computer Science entry and displays £53,640 as the current-fee-based three-year total.", "status": "verified", "sourceLabel": "LSBU BSc Computer Science", "sourceUrl": "https://www.lsbu.ac.uk/study/course-finder/computer-science", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "london-south-bank-university", "programmeSlug": "lsbu-bsc-computer-science", "publicField": "instruction_language", "claimText": "LSBU publishes the BSc Computer Science curriculum and international-entry route in English.", "status": "verified", "sourceLabel": "LSBU BSc Computer Science", "sourceUrl": "https://www.lsbu.ac.uk/study/course-finder/computer-science", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"}
+  ]
+}

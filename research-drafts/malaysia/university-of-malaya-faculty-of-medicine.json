@@ -1,0 +1,49 @@
+{
+  "scope": "Malaysia medical discovery — University of Malaya Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "University of Malaya Faculty of Medicine",
+    "countrySlug": "malaysia",
+    "programme": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "UM's Faculty of Medicine describes UMMP as a five-year professional undergraduate MBBS with clinical experience, research opportunities and elective placements.",
+      "sourceUrl": "https://medicine.um.edu.my/ug",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UM accepts international undergraduate applications for 2026/27 and specifies a 9 June 2026 deadline for MBBS.",
+      "sourceUrl": "https://study.um.edu.my/how-to-apply",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UM's international MBBS requirements document requires a recognised secondary qualification, specified English evidence, a recognised admission test and a satisfactory interview.",
+      "sourceUrl": "https://medicine.um.edu.my/pdf/undergraduate/MBBS-International.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Malaysian Qualifications Register records UM's full-time conventional MBBS as MQF Level 6, five years, with Malaysian Medical Council as professional body, accredited 24 February 2023 to 23 February 2028.",
+      "sourceUrl": "https://www2.mqa.gov.my/MQR/english/epapariptaAA.cfm?IDAkrKP=20042",
+      "sourceType": "government-accreditor",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UM's international-fee schedule for academic session 2025/26 lists MBBS tuition of RM 673,200.",
+      "sourceUrl": "https://study.um.edu.my/doc/tution-fee/Fee%20Structure%2C%20UG%2C%20International%20-%20Updated%2022%20Oct%202025.pdf",
+      "sourceType": "official-fee",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The only located international MBBS fee schedule is for 2025/26, while the official admissions page is already running the 2026/27 cycle. It is outside the active-cycle fee freshness window and cannot be published as current tuition.",
+    "The international requirement document is labelled 2020/21 in its source metadata. It supports the historic route but cannot by itself establish all current programme-specific eligibility requirements.",
+    "No current 2026/27 fee document with mandatory charges, instalments or payment conditions was located."
+  ],
+  "nextAction": "Recheck UM Student Financial Centre once its 2026/27 international undergraduate fee schedule is published, then confirm current MBBS entry requirements with the Faculty before packaging."
+}

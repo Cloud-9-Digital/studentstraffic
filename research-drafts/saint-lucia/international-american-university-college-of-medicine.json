@@ -1,0 +1,37 @@
+{
+  "scope": "Saint Lucia medical discovery — International American University College of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "IAU describes a four-year MD programme with basic sciences in Saint Lucia completed in 20 months and clinical sciences at its Baltimore clinical campus; it states rotations are in teaching hospitals with ACGME-accredited residency programmes.",
+      "sourceUrl": "https://iau.edu.lc/academics/college-of-medicine/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "IAU's 2025–2026 admissions page lists basic-science tuition of US$7,500 per semester (semesters 1–4), US$7,100 for semester 5, and US$13,500 per clinical semester (semesters 6–10), together with academic prerequisites and English-test thresholds for applicants whose principal language is not English.",
+      "sourceUrl": "https://iau.edu.lc/admissions/admission-requirements/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "IAU publishes student financial-services, scholarship and financial-aid contact routes, but detailed eligibility and awards were not independently evaluated in this batch.",
+      "sourceUrl": "https://iau.edu.lc/our-student-financial-services/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "CAAM-HP's assessed-programme register lists International American University College of Medicine, Saint Lucia, as accreditation withdrawn, last updated November 2020.",
+      "sourceUrl": "https://caam-hp.org/programs/",
+      "sourceType": "accreditor",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "IAU's current site claims government charter and accreditation, but CAAM-HP's assessed-programme register records accreditation withdrawn. Do not make unqualified accreditation, recognition, ECFMG or licensure claims.",
+    "A current direct Saint Lucia licensing/accreditation-board decision and current direct accreditor decision were not retrieved.",
+    "The university describes clinical training but named current hospital agreements, placement capacity, clinical eligibility and effective support-policy terms need direct validation."
+  ],
+  "nextAction": "Keep held until Saint Lucia regulator and CAAM-HP status are reconciled in direct current records, with current clinical and support evidence."
+}

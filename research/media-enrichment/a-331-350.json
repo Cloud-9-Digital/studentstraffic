@@ -1,0 +1,335 @@
+{
+  "batchId": "a-331-350",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 331-350; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "sorbonne-university",
+      "universityName": "Sorbonne University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Found via the dedicated Commons category 'Sorbonne Université' (the 2018-merged research university), distinct from the generic 'Sorbonne' historic-building category. Both assets specifically depict Sorbonne Université's own identity/campus (Pierre et Marie Curie campus entrance), not the historic shared Sorbonne building or generic third-party Paris photography, per the caution in the original hold reason..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Logo_of_Sorbonne_University.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo of Sorbonne University.svg (in Category:Sorbonne Université) — PD-textlogo. This is a distinct, freely-licensed Commons upload; it is NOT the same as File:Sorbonne University Logo.svg hosted locally on English Wikipedia, which is tagged non-free/fair-use and was NOT used.",
+        "proposedPublicId": "sorbonne-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Entr%C3%A9e_Campus_Pierre_et_Marie_Curie_-_Sorbonne_Universit%C3%A9.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Entrée Campus Pierre et Marie Curie - Sorbonne Université.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "sorbonne-university-cover"
+      }
+    },
+    {
+      "universitySlug": "ss-cyril-and-methodius-university-faculty-of-medicine",
+      "universityName": "Ss. Cyril and Methodius University Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed via the parent Wikipedia article (Ss. Cyril and Methodius University of Skopje) that the Medical Faculty has no separate/dedicated logo or visual identity distinct from the parent university — only the parent seal (File:Kiril.metodij.png) exists, with no faculty-specific mark mentioned anywhere. This remains a faculty-level parent-brand inheritance decision (whether/how to apply the parent university's identity to this faculty record), not a sourcing gap. No media sourced, per instructions.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "st-lawrence-college-nursing",
+      "universityName": "St. Lawrence College Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "This is a programme-level record (a nursing programme hosted at St. Lawrence College, Kingston, Ontario). The open question is which St. Lawrence College institutional assets (of the several same-named 'St. Lawrence College' institutions disambiguated on Wikipedia) should be inherited by this specific programme record — a parent-brand inheritance decision, not a missing-asset gap. No media sourced, per instructions.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "stavropol-state-medical-university",
+      "universityName": "Stavropol State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed the ru.wikipedia infobox logo (File:Logo of StGMU.png) is hosted locally on Russian Wikipedia and explicitly tagged 'несвободный' (non-free/fair use) — it is the official emblem approved Feb 2013 and is not reusable. No Wikimedia Commons category exists for this university at all, and no campus/building photo appears anywhere in the Russian Wikipedia article (only the logo image is used). The official site (stgmu.ru) is reachable, but its homepage renders the logo as inline branding with no separate favicon/og:image asset and no press/media page was found. Both logo and cover remain unresolved."
+    },
+    {
+      "universitySlug": "stockholm-university",
+      "universityName": "Stockholm University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Only the cover was missing for this record; sourced a free-licensed campus building photo from the dedicated Stockholm University Commons category (99 files).. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Stockholm_University_campus_building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Stockholm University campus building.jpg — CC BY 4.0.",
+        "proposedPublicId": "stockholm-university-cover"
+      }
+    },
+    {
+      "universitySlug": "surgut-state-university",
+      "universityName": "Surgut State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Current (2023-onward) logo and main-building photo both found via ru.wikipedia infobox, hosted on Commons..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A1%D1%83%D1%80%D0%93%D0%A3_%28%D1%81_2023_%D0%B3.%29.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — 'Логотип СурГУ (с 2023 г.)' (Surgut State University logo, since 2023) — PD-textlogo.",
+        "proposedPublicId": "surgut-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A1%D1%83%D1%80%D0%B3%D1%83%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — 'Главный корпус Сургутского Государственного Университета' (Main building of Surgut State University) — CC BY-SA 4.0.",
+        "proposedPublicId": "surgut-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "swansea-university",
+      "universityName": "Swansea University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed the Wikipedia infobox logo (File:Swansea University logo.png) is hosted locally on English Wikipedia and explicitly tagged non-free/fair-use ('protected by copyright... qualifies as non-free use') — no free Commons alternative was found, so the logo remains held. Cover upgraded using a free-licensed Bay Campus photo instead.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Great_Hall_at_Swansea_University_Bay_Campus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Great Hall at Swansea University Bay Campus.jpg — CC BY-SA 4.0.",
+        "proposedPublicId": "swansea-university-cover"
+      }
+    },
+    {
+      "universitySlug": "swinburne-university-of-technology",
+      "universityName": "Swinburne University of Technology",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Both the current institutional logo and a Hawthorn-campus (Australian, main) Administration Building photo are freely licensed on Commons, avoiding any need to infer across other international campuses..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Logo_of_Swinburne_University_of_Technology.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo of Swinburne University of Technology.svg — PD-textlogo.",
+        "proposedPublicId": "swinburne-university-of-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Swinburne_University_-_Administration_Building_-_panoramio.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Swinburne University - Administration Building - panoramio.jpg — CC BY 3.0.",
+        "proposedPublicId": "swinburne-university-of-technology-cover"
+      }
+    },
+    {
+      "universitySlug": "syracuse-university",
+      "universityName": "Syracuse University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Only the logo was missing for this record; the Wikipedia infobox wordmark is hosted on Commons under a free PD-textlogo tag.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Syracuse_University_wordmark.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Syracuse University wordmark.svg — PD-textlogo (trademark rights may still apply).",
+        "proposedPublicId": "syracuse-university-logo"
+      }
+    },
+    {
+      "universitySlug": "tu-dresden",
+      "universityName": "TU Dresden",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Current (2025) official logo is explicitly tagged public domain via the German public-law-corporation seal provision, and a TU Dresden main-building (Georg-Schumann-Bau) exterior photo is CC BY-SA 2.5 — both directly verifiable, controlled-brand-use concern addressed..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Logo_TU_Dresden_en_2025.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Logo TU Dresden en 2025.svg — public domain, tagged both as the official seal of a German public-law corporation (PD-Coa-Germany-official) and PD-textlogo.",
+        "proposedPublicId": "tu-dresden-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/TU-Dresden-Georg-Schumann-Bau.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:TU-Dresden-Georg-Schumann-Bau.jpg — CC BY-SA 2.5.",
+        "proposedPublicId": "tu-dresden-cover"
+      }
+    },
+    {
+      "universitySlug": "tambov-state-university",
+      "universityName": "Tambov State University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover upgraded from Commons. Logo remains held — confirmed the ru.wikipedia infobox for this university has no logo/emblem image at all (only building photos), and none was found on Commons either.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/%D0%A3%D0%BB.%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C33%2C_%D0%A2%D0%93%D0%A3_%D0%B8%D0%BC.%D0%93.%D0%A0.%D0%94%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8%D0%BD%D0%B0%2C_17.10.2011_-_panoramio.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — main campus building photo (Internatsionalnaya St. 33, Derzhavin Tambov State University) — CC BY 3.0.",
+        "proposedPublicId": "tambov-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "tashkent-pediatric-medical-institute",
+      "universityName": "Tashkent Pediatric Medical Institute",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Checked uz.wikipedia: this institute was founded in 1972 and renamed once in 1989 to its current name, with no merger into Tashkent Medical Academy (that merger only involved the First and Second Tashkent State Medical Institutes) — so the consolidation/identity concern in the original hold reason does not actually apply here, and a cover could be sourced safely. Logo remains held — no dedicated logo file found on Commons or Wikipedia.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/20230528_092857_12_io_thread_1685248110908.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons — main educational building of ToshPTI (Tashkent Pediatric Medical Institute), categorized under 'Tashkent Pediatric Medical Institute' — CC BY-SA 4.0.",
+        "proposedPublicId": "tashkent-pediatric-medical-institute-cover"
+      }
+    },
+    {
+      "universitySlug": "tashkent-pharmaceutical-institute",
+      "universityName": "Tashkent Pharmaceutical Institute",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Checked uz.wikipedia: this is a standalone institution founded in 1937, presented distinctly from Tashkent Medical Academy and the regional (Bukhara/Samarkand/Andijan) medical institutes, with no naming overlap found — addressing the 'do not use similarly named institution's media' caution. Logo remains held — no dedicated logo file found on Commons or Wikipedia.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/PharmiMain.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:PharmiMain.jpg — main building of the Tashkent Pharmaceutical Institute — CC0 1.0 Universal (public domain dedication).",
+        "proposedPublicId": "tashkent-pharmaceutical-institute-cover"
+      }
+    },
+    {
+      "universitySlug": "tashkent-state-dental-institute",
+      "universityName": "Tashkent State Dental Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass tried www.tsdi.uz which fails TLS hostname verification; fetching tsdi.uz directly (no www) resolved cleanly and exposed a clean logo.png plus campus slider photos not previously captured..",
+      "logo": {
+        "sourceUrl": "https://tsdi.uz/assets/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site (tsdi.uz, reachable without the www. subdomain which has a cert mismatch); dedicated header logo.png, verified HTTP 200.",
+        "proposedPublicId": "tashkent-state-dental-institute-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tsdi.uz/assets/images/slider/stom.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site homepage slider photo, verified HTTP 200.",
+        "proposedPublicId": "tashkent-state-dental-institute-cover"
+      }
+    },
+    {
+      "universitySlug": "tashkent-university-of-information-technologies",
+      "universityName": "Tashkent University of Information Technologies",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Direct inspection of tuit.uz (rather than admission subdomain) surfaced the actual header <img> logo and a large homepage carousel banner; the logo file is low native resolution (43x43) but is confirmed the exact asset the official site itself serves as its logo..",
+      "logo": {
+        "sourceUrl": "https://static.tuit.uz/assets/c4c88c23/img/src/newlogotype.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site tuit.uz header logo asset (served from static.tuit.uz CDN), verified HTTP 200.",
+        "proposedPublicId": "tashkent-university-of-information-technologies-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tuit.uz/logos/UZ.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official site homepage carousel banner image, verified HTTP 200 (1.5MB full-size photo).",
+        "proposedPublicId": "tashkent-university-of-information-technologies-cover"
+      }
+    },
+    {
+      "universitySlug": "tbilisi-humanitarian-teaching-university",
+      "universityName": "Tbilisi Humanitarian Teaching University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Located the institution's own domain thu.edu.ge (distinct from the aggregator listing found in the first pass) and found both a named logo_en.png and a purpose-built cover/ image..",
+      "logo": {
+        "sourceUrl": "https://www.thu.edu.ge/img/logo_en.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site thu.edu.ge dedicated logo asset, verified HTTP 200.",
+        "proposedPublicId": "tbilisi-humanitarian-teaching-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.thu.edu.ge/img/cover/cover-6077eba9de7bd.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site, image served from a dedicated /img/cover/ directory, verified HTTP 200.",
+        "proposedPublicId": "tbilisi-humanitarian-teaching-university-cover"
+      }
+    },
+    {
+      "universitySlug": "tbilisi-medical-institute-vita",
+      "universityName": "Tbilisi Medical Institute Vita",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No official institutional domain located. Checked Wikipedia (no article/infobox exists for this institute), Wayback Machine (no snapshots for guessed domains vita.edu.ge/vitamed.ge - DNS never resolved), and press/media search - only third-party MBBS-aggregator sites (mededatlas.com, mbbsadvice.com) and a Facebook page reference the institute. Consistent with the first pass; per instructions did not substitute similarly-named Georgian medical institutions' or agency assets."
+    },
+    {
+      "universitySlug": "tbilisi-medical-teaching-university-hippocrates",
+      "universityName": "Tbilisi Medical Teaching University Hippocrates",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No dedicated official domain surfaced via search engines, Wikipedia, or press/media lookups - only MBBS-abroad aggregator/agency sites (edufever.com, mbbs-in-georgia.in, unipage.net, mededatlas.com, rmcedu.com) reference the institution, all clearly third-party. No Wayback Machine snapshot of an official site exists under any guessed domain. Remains held; did not substitute other Georgian medical schools' assets."
+    },
+    {
+      "universitySlug": "tbilisi-national-university-gaenati",
+      "universityName": "Tbilisi National University Gaenati",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Wayback Machine has one snapshot of gaenati.edu.ge from 2016-03-13 (http://web.archive.org/web/20160313134138/http://gaenati.edu.ge/), but it is a fragmented 1990s-style sliced-table layout; the individual archived image slices (top.jpg, w1.jpg, index_0X.gif) all return empty/zero-byte content when fetched from the archive, so no usable single logo or cover asset exists even via this technique. No live site, Wikipedia page, or Commons category exists. Institution identity and branding remain unverifiable from any inspectable source."
+    },
+    {
+      "universitySlug": "tbilisi-state-medical-university",
+      "universityName": "Tbilisi State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Direct fetch of tsmu.edu (the university's own domain, surfaced while searching for a different Tbilisi institute) resolved a full site with a clean logo.png and current professional campus photography under /ts/images/slider/..",
+      "logo": {
+        "sourceUrl": "https://tsmu.edu/ts/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tsmu.edu (base path /ts/), dedicated logo.png, verified HTTP 200.",
+        "proposedPublicId": "tbilisi-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tsmu.edu/ts/images/slider/_1783674149.JPG",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site homepage slider photo (2026 admissions campaign), verified HTTP 200.",
+        "proposedPublicId": "tbilisi-state-medical-university-cover"
+      }
+    }
+  ]
+}

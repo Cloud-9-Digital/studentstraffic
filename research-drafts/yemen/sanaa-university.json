@@ -1,0 +1,19 @@
+{
+  "countrySlug": "yemen",
+  "universitySlug": "sanaa-university",
+  "schoolName": "Sanaa University",
+  "cityName": "Sanaa",
+  "priority": "medium",
+  "officialWebsite": "https://su.edu.ye/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Sana'a University's Faculty of Medicine and Health Sciences currently publishes Medicine and Surgery programme information and faculty admissions procedures, while the university announced updated admissions-system criteria in June 2026. Current official results also evidence Medicine and Surgery admissions activity. These sources do not establish a complete foreign-student route, current fee schedule, instructional language, clinical placement details, accommodation/visa support, or recognition suitability for a defined external market. Hold until those facts are primary-source verified.",
+  "sourceBundle": { "sources": [
+    { "label": "Sanaa University Medicine and Surgery programme", "url": "https://su.edu.ye/chm/en/medicine-and-surgery-program/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the Medicine and Surgery programme mission, aims and curriculum context." },
+    { "label": "Sanaa University Faculty admissions page", "url": "https://su.edu.ye/chm/en/admissions/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Lists faculty admission and registration documents/processes; it does not provide a complete current international route or fee schedule." },
+    { "label": "Sanaa University 2026 admission-system update", "url": "https://su.edu.ye/en/51660/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Reports updated online admissions criteria and open registrations for the 1448 AH cycle in June 2026." },
+    { "label": "Sanaa University Medicine and Surgery result page", "url": "https://results.su.edu.ye/results_doc/%D9%83%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D8%B7%D8%A8_%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9_%D8%B7%D8%A8_%D9%88%D8%AC%D8%B1%D8%A7%D8%AD%D8%A9_%D8%B9%D8%A7%D9%85_2026_2025_1?page=12&sort=percent", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Current results page evidencing Medicine and Surgery admission activity." }
+  ] },
+  "structuredFacts": { "name": "Sanaa University", "type": "Public university", "programs": [ { "officialTitle": "Medicine and Surgery", "duration": "Not verified from a current official programme-detail source in this pass", "feeStatus": "No current official fee schedule verified", "publishable": false } ], "missingForPublication": [ "current programme duration and course structure", "complete foreign eligibility, visa and language route", "current tuition and mandatory costs", "clinical placement and student-support evidence", "independent accreditation/recognition evidence", "target-market professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: current local operation is verified, but applicant-facing external-market facts are incomplete." }
+}

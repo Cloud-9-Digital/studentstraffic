@@ -1,0 +1,24 @@
+{
+  "scope": "Peru medical discovery — Universidad Peruana Cayetano Heredia Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "SUNEDU lists Universidad Peruana Cayetano Heredia's Lima undergraduate medicine programme as licensed.",
+      "sourceUrl": "https://www.sunedu.gob.pe/licenciamiento-programas-medicina-humana/",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "SUNEDU's renewal register lists Universidad Peruana Cayetano Heredia with 03 February 2028 as its institutional licence renewal date.",
+      "sourceUrl": "https://www.sunedu.gob.pe/renovacion-licencia-institucional/",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official university page was located that supplies a complete, publication-ready undergraduate Medicina Humana programme profile.",
+    "Current official tuition, admission requirements, instructional-language and clinical-training/support evidence was not sufficiently assembled for the required payload fields."
+  ],
+  "nextAction": "Obtain current primary UPCH programme, admissions and fee publications plus clinical-training and student-support evidence, then complete the required field-level review before publishing."
+}

@@ -1,0 +1,408 @@
+{
+  "countries": [
+    {
+      "slug": "latvia",
+      "name": "Latvia",
+      "region": "Europe",
+      "summary": "Latvia is a Baltic European Union member state with a long tradition of English-medium medical education, offering direct-entry MD programmes at public universities whose degrees carry automatic recognition across the EU and EEA.",
+      "whyStudentsChooseIt": "Latvia offers an EU-recognized medical degree at a lower cost than Western Europe, transparent grade-and-test-based admission criteria, and established English-medium programmes with sizeable international student communities in Riga.",
+      "climate": "Temperate climate with warm summers and cold winters, moderated by the Baltic Sea.",
+      "currencyCode": "EUR",
+      "metaTitle": "Study MBBS and Medicine in Latvia",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Latvia, including admissions, fees, recognition and visa guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Latvia maps its Medicine (EN) programme to this category: a direct-entry, single-cycle six-year programme leading to the Medical Doctor's Degree.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "latvia",
+      "slug": "university-of-latvia",
+      "name": "University of Latvia",
+      "city": "Riga",
+      "type": "Public",
+      "establishedYear": 2024,
+      "officialWebsite": "https://www.lu.lv/en",
+      "mediaAttribution": {},
+      "summary": "University of Latvia's Faculty of Medicine and Life Sciences (formed in 2024 by merging the former Faculties of Biology, Chemistry and Medicine) runs an English-medium Medicine programme accredited through 2 February 2029. Graduates receive the Latvian 'arsta diploms' (Medical Doctor's Degree), a qualification listed in EU Directive 2005/36/EC Annex V for automatic recognition across the EU and EEA since Latvia's 2004 EU accession.",
+      "campusLifestyle": "The English-medium Medicine programme offers 35 fee-paying places per intake, alongside a separate, larger Latvian-medium track. Admission is based on secondary-school grades, an English/Chemistry/Biology weighting formula, and a mandatory online interview for applicants from outside the EU/EEA/Switzerland.",
+      "cityProfile": "Riga is Latvia's capital and largest city, on the Baltic coast. The university offers two dedicated student residences, with international degree-seeking students able to apply for a room only after receiving their admission offer.",
+      "practicalExposure": "The six-year, 360-ECTS Medicine programme moves from foundational science subjects into intensive clinical practice beginning in the third year, with named practicum blocks including Basics of Clinical Care, repeated Clinical Practice modules, Emergency Medicine and Basic Life Support, and dedicated Family Medicine, Internal Diseases and Surgery practice in the final semester. Historical faculty communications name several major Riga hospitals as clinical training sites, though a current, re-confirmed list for this specific admissions cycle was not located. Graduates receive the Latvian Medical Doctor's Degree, a qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA, and the university describes the degree as compliant with European labour-market requirements.",
+      "hostelOverview": "The university offers rooms at two student residences: Student Hotel Prima and a residence on Krisjana Valdemara iela, both reachable from the main campus by public transport. Monthly rates run roughly EUR 114-291 depending on room type and building, with a minimum 2-month stay and priority given to international degree-seeking and exchange students; a rate increase applies from 1 July 2026. International students may apply for a room only after receiving their admission offer. A university-partnered real estate agency also assists students seeking private off-campus housing.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The student residences include on-site management and a minimum-stay policy; day-to-day support runs through the university's International Students Office.",
+      "studentSupport": "The university's International Students Office coordinates visa, residence-permit and diploma-recognition guidance, including a documented process through Latvia's Academic Information Centre (the national ENIC/NARIC body) for foreign secondary-diploma recognition.",
+      "whyChoose": [
+        "A Medicine programme accredited through 2 February 2029, confirmed directly on the university's own official application portal.",
+        "Graduates receive the Latvian Medical Doctor's Degree, carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+        "Transparent, formula-based admission (English 20%, Chemistry 40%, Biology 40%) rather than a single high-stakes exam, alongside a mandatory but short (10-15 minute) online interview for non-EU applicants.",
+        "The same tuition schedule applies to EU/EEA/Swiss and non-EU applicants alike, with no separate international-student premium.",
+        "A documented, detailed visa and residence-permit process for non-EU students, including exact processing fees and minimum subsistence-fund requirements."
+      ],
+      "thingsToConsider": [
+        "Tuition rises each year of the programme (from EUR 11,850 in year one to EUR 14,610 in year six), for a EUR 77,340 six-year total, rather than a flat annual rate.",
+        "Application deadlines for the 2026/27 intake vary by nationality; for applicants from countries not on the university's EU/UK/US-aligned or higher-scrutiny lists (which includes India), the published deadline was 21 June 2026 and has already passed as of this record's research date.",
+        "No scholarship specifically for the fee-paying English-medium Medicine cohort was confirmed; all 35 English-track places are fee places with no state-funded route.",
+        "The named teaching-hospital list available for this record traces to a 2013 faculty communication and was not re-confirmed against a current-cycle official source.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident in their secondary-school Chemistry and Biology grades, comfortable with a short online interview rather than a written entrance exam.",
+        "Applicants from EU/EEA/Switzerland, the UK, the USA or similar nationalities with a later application window, given the earlier deadline for other nationalities.",
+        "Families able to budget for a tuition schedule that increases each year rather than staying flat."
+      ],
+      "industryPartners": [
+        "Pauls Stradins Clinical University Hospital",
+        "Riga East Clinical University Hospital",
+        "Children's Clinical University Hospital"
+      ],
+      "recognitionBadges": [
+        "University of Latvia — Medicine programme accredited through 2 February 2029",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Latvian Medical Doctor's Degree across the EU/EEA, in effect for Latvia since 1 May 2004"
+      ],
+      "recognitionLinks": [
+        { "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0036" },
+        { "label": "University of Latvia — official Medicine (EN) admissions portal", "url": "https://apply.lu.lv/courses/course/5-professional-medicine" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is a single-cycle, 6-year, 360-ECTS programme -- admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Medical Doctor's Degree (arsta diploms), a Latvian qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA."
+        },
+        {
+          "question": "What entrance requirements does the university use?",
+          "answer": "Admission is based on secondary-school grades (Biology and Chemistry minimums differ for EU/EEA/Swiss versus other applicants), a weighted score (English 20%, Chemistry 40%, Biology 40%), an SAT score of at least 1200 for applicants whose secondary education was outside the EU/EEA/Switzerland, and a mandatory short online interview for non-EU/EEA/Swiss applicants."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "Tuition rises each year: EUR 11,850 in year one, increasing to EUR 12,120, 12,720, 12,720, 13,320 and 14,610 in years two through six, for a EUR 77,340 total. The same schedule applies to EU/EEA/Swiss and non-EU applicants."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a non-refundable EUR 170 application fee, and for non-EU/EEA/Swiss applicants, a EUR 500 deposit paid on arrival, which is refundable on request after graduation."
+        },
+        {
+          "question": "When does the academic year start, and what are the deadlines?",
+          "answer": "Studies begin in early September. For the 2026/27 intake, deadlines varied by nationality group: 1 May 2026 for a higher-scrutiny country list, 21 June 2026 for most other countries, and 26 July 2026 for EU/EEA/Switzerland, the UK, the USA and several other listed nationalities. Confirm the applicable deadline for your nationality directly with the university for future cycles."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "No scholarship specifically for the fee-paying English-medium Medicine cohort was confirmed; all 35 places in this track are fee places, with no state-funded route. A general university foundation scholarship exists but has no confirmed Medicine-specific stream."
+        },
+        {
+          "question": "What visa and residence documents do non-EU students need?",
+          "answer": "Non-EU students need a visa and temporary residence permit, requiring proof of at least EUR 780 per month in subsistence funds, health/life insurance, and a state processing fee of EUR 160-560 depending on processing speed; the process typically takes 40-45 days or more."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "University of Latvia — official Medicine (EN) admissions portal (DreamApply)",
+          "url": "https://apply.lu.lv/courses/course/5-professional-medicine",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for accreditation-through-2029 status, tiered tuition schedule, application fee, deposit and nationality-tiered deadlines."
+        },
+        {
+          "label": "University of Latvia — official Medicine (EN) programme page",
+          "url": "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/medicine-en/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, eligibility criteria, weighting formula and curriculum structure."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0036",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Latvian Medical Doctor's Degree's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "University of Latvia — official Visas and Residence Permits page",
+          "url": "https://www.lu.lv/en/admission/for-international-students/degree/visas-and-residence-permits/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the non-EU visa/residence-permit process, fees and subsistence requirements."
+        },
+        {
+          "label": "University of Latvia — official Accommodation page",
+          "url": "https://www.lu.lv/en/studies/student-life/accommodation/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for student residence options, pricing and application process."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-latvia-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine (EN)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 11850,
+            "officialTotalTuitionAmount": 77340,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published tiered tuition: EUR 11,850 (year 1), 12,120 (year 2), 12,720 (years 3-4), 13,320 (year 5), 14,610 (year 6), for a EUR 77,340 six-year total, per the university's official DreamApply admissions portal. Identical schedule applies to EU/EEA/Swiss and non-EU applicants. A EUR 170 non-refundable application fee applies; non-EU/EEA/Swiss applicants also pay a EUR 500 deposit on arrival, refundable on request after graduation. No mid-programme tuition withdrawal/refund policy was published."
+          },
+          "officialProgramUrl": "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/medicine-en/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a general secondary-school diploma, meeting minimum Biology and Chemistry grade thresholds that differ for EU/EEA/Swiss versus other applicants"
+            ],
+            "restrictions": [
+              "Applicants whose secondary education was outside the EU/EEA/Switzerland need an SAT score of at least 1200",
+              "A mandatory online interview (10-15 minutes) applies to non-EU/EEA/Swiss applicants",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "Selection uses a weighted score: English 20%, Chemistry 40%, Biology 40% (or Natural Sciences 80% if Chemistry/Biology were not studied).",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/medicine-en/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online via the DreamApply-powered admissions portal, pay the application fee, submit notarized (and for non-EU/EEA/Swiss applicants, apostilled/legalized) academic documents, and non-EU/EEA/Swiss applicants complete a short online interview before a decision is issued.",
+            "eligibility": {
+              "intro": "Admission requires a secondary-school diploma meeting minimum Biology and Chemistry grade thresholds, English proficiency, an SAT score for applicants educated outside the EU/EEA/Switzerland, and an interview for non-EU/EEA/Swiss applicants.",
+              "items": [
+                "Secondary-school diploma with Biology and Chemistry grades of at least 6/10 (EU/EEA/Swiss) or 8/10 with an overall average of at least 6/10 (other applicants)",
+                "SAT score of at least 1200, required for applicants whose secondary education was outside the EU/EEA/Switzerland",
+                "English proficiency proof (IELTS 6.0+, TOEFL iBT 80+, or equivalent), waived for certain nationalities and EU/EEA/Swiss diploma holders",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online via the DreamApply-powered admissions portal (apply.lu.lv) and pay the non-refundable EUR 170 application fee",
+              "Upload notarized bilingual transcripts and diploma (non-EU/EEA/Swiss applicants: also apostilled/legalized via the Foreign Ministry and nearest Latvian Embassy)",
+              "Submit English-proficiency proof and, if applicable, SAT results",
+              "Complete a mandatory online interview (non-EU/EEA/Swiss applicants only)",
+              "Receive a decision within about two weeks of a complete application; if admitted, pay the first semester's tuition in full to matriculate"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Notarized bilingual secondary-school transcript and diploma",
+                "For non-EU/EEA/Swiss applicants: apostille/legalization via the Foreign Ministry and nearest Latvian Embassy"
+              ],
+              "application": [
+                "Passport or ID copy",
+                "English-proficiency proof",
+                "Application-fee payment receipt",
+                "SAT score report, if applicable"
+              ]
+            },
+            "deadlinesNote": "2026/27 deadlines varied by nationality: 1 May 2026 (higher-scrutiny country list), 21 June 2026 (most other countries, including India), 26 July 2026 (EU/EEA/Switzerland, UK, USA and other listed nationalities). Studies commence early September 2026.",
+            "visaConsiderations": [
+              "Non-EU students need a visa and residence permit requiring proof of at least EUR 780/month in funds, insurance, and a EUR 160-560 processing fee; the process takes about 40-45 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition rises each year of the programme, from EUR 11,850 in year one to EUR 14,610 in year six, for a EUR 77,340 six-year total, per the official DreamApply admissions portal. A EUR 170 non-refundable application fee and, for non-EU/EEA/Swiss applicants, a EUR 500 refundable deposit apply separately. No mid-programme withdrawal refund policy was published.",
+          "teachingPhases": [
+            {
+              "phase": "Foundational science years",
+              "language": "English",
+              "details": "Core science and pre-clinical subjects (333 ECTS of mandatory A-part subjects including anatomy, physiology, pharmacology and pathology) alongside mandatory-selection and elective modules."
+            },
+            {
+              "phase": "Clinical practice years (from semester 5)",
+              "language": "English",
+              "details": "Named practicum blocks including Basics of Clinical Care, repeated Clinical Practice modules, Emergency Medicine and Basic Life Support, and Family Medicine/Internal Diseases/Surgery practice in the final semester."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-latvia",
+      "publicField": "identity",
+      "claimText": "The Faculty of Medicine and Life Sciences was formed in 2024 by merging the former Faculties of Biology, Chemistry and Medicine plus four research institutes.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Faculty of Medicine and Life Sciences page",
+      "sourceUrl": "https://www.lu.lv/en/about-us/faculties/faculty-of-medicine-and-life-sciences/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-latvia",
+      "publicField": "recognition",
+      "claimText": "The Medicine study programme is accredited through 2 February 2029, per the university's official admissions portal.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Medicine (EN) admissions portal (DreamApply)",
+      "sourceUrl": "https://apply.lu.lv/courses/course/5-professional-medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-latvia",
+      "publicField": "recognition",
+      "claimText": "The Latvian 'arsta diploms' (Medical Doctor's Degree) is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, with a reference date of 1 May 2004 (Latvia's EU accession).",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32005L0036",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-latvia",
+      "programmeSlug": "university-of-latvia-medicine",
+      "publicField": "academics",
+      "claimText": "Medicine (EN) is a 6-year, 12-semester, 360-ECTS direct-entry programme awarding the Medical Doctor's Degree, taught entirely in English, with intensive clinical practice beginning in the third year.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Medicine (EN) programme page",
+      "sourceUrl": "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/medicine-en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-latvia",
+      "programmeSlug": "university-of-latvia-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission requires secondary-school Biology/Chemistry grade thresholds (6/10 for EU/EEA/Swiss, 8/10 with 6/10 overall average for others), an SAT score of at least 1200 for non-EU/EEA/Swiss-educated applicants, English proficiency, and a mandatory interview for non-EU/EEA/Swiss applicants.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Medicine (EN) programme page",
+      "sourceUrl": "https://www.lu.lv/en/studies/study-programmes-1/bachelors-study-programmes/medicine-en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-latvia",
+      "programmeSlug": "university-of-latvia-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via the DreamApply-powered apply.lu.lv portal, EUR 170 non-refundable application fee, notarized (and for non-EU applicants apostilled/legalized) academic documents, and a mandatory online interview for non-EU/EEA/Swiss applicants.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Medicine (EN) admissions portal (DreamApply)",
+      "sourceUrl": "https://apply.lu.lv/courses/course/5-professional-medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-latvia",
+      "programmeSlug": "university-of-latvia-medicine",
+      "publicField": "intake",
+      "claimText": "2026/27 intake: studies commence early September 2026; nationality-tiered deadlines of 1 May 2026, 21 June 2026 (includes India) and 26 July 2026 (EU/EEA/Switzerland, UK, USA and other listed nationalities).",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Medicine (EN) admissions portal (DreamApply)",
+      "sourceUrl": "https://apply.lu.lv/courses/course/5-professional-medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-latvia",
+      "programmeSlug": "university-of-latvia-medicine",
+      "publicField": "fee",
+      "claimText": "Tiered tuition schedule: EUR 11,850 (year 1) rising to EUR 14,610 (year 6), EUR 77,340 six-year total, identical for EU and non-EU applicants; EUR 170 application fee; EUR 500 refundable deposit for non-EU/EEA/Swiss applicants.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Medicine (EN) admissions portal (DreamApply)",
+      "sourceUrl": "https://apply.lu.lv/courses/course/5-professional-medicine",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-latvia",
+      "publicField": "student living",
+      "claimText": "Two student residences (Prima and Valdemara 161) with monthly rates roughly EUR 114-291 depending on room type, minimum 2-month stay, and priority given to international students; applications open only after an admission offer is issued.",
+      "status": "verified",
+      "sourceLabel": "University of Latvia — official Accommodation page",
+      "sourceUrl": "https://www.lu.lv/en/studies/student-life/accommodation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

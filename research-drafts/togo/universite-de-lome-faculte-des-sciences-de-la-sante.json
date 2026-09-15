@@ -1,0 +1,37 @@
+{
+  "scope": "Togo medical discovery — Université de Lomé Faculty of Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Université de Lomé's official Faculty of Health Sciences page identifies a seven-year State Doctorate in Medicine and says the faculty trains doctors, pharmacists and medical specialists.",
+      "sourceUrl": "https://univ-lome.tg/faculte-des-sciences-de-la-sante-fss/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The faculty states that students undertake placements under agreements with university hospitals, regional hospitals, district hospitals and prefecture hospitals.",
+      "sourceUrl": "https://univ-lome.tg/faculte-des-sciences-de-la-sante-fss/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "A 2025/26 FSS call for applications set a dossier review fee of CFA 10,000 for Togolese/UEMOA applicants and CFA 15,000 for applicants outside UEMOA, with a September 2025 submission window.",
+      "sourceUrl": "https://univ-lome.tg/wp-content/uploads/2025/08/Appel_a-Candidatures-2025-2026-FSS.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Togo's official 2025/26 recognised-institutions announcement lists Université de Lomé among the country's public universities.",
+      "sourceUrl": "https://www.republiquetogolaise.tg/formation/0610-11129-enseignement-superieur-97-etablissements-officiellement-reconnus-pour-l-annee-academique-2025-2026",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current Medicine tuition or mandatory-fee schedule was found; the published dossier-review fee is not programme tuition.",
+    "The reviewed call is for 2025/26, not a confirmed active 2026/27 Medicine intake, and does not establish the complete programme-level entry route.",
+    "Current teaching-language confirmation, named clinical partners, accommodation, scholarship/loan support and professional-registration pathway were not established from reviewed primary sources."
+  ],
+  "nextAction": "Obtain the active Medicine prospectus/admissions notice and fee decision, then verify language, named clinical sites, support arrangements and graduate-registration route before preparing a payload."
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "Nepal medical discovery — Tribhuvan University Institute of Medicine / Maharajgunj Medical Campus",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Tribhuvan University Institute of Medicine",
+    "deliveryCampus": "Maharajgunj Medical Campus",
+    "countrySlug": "nepal",
+    "programme": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "IOM lists MBBS among its programmes and says admission to its programmes requires passing the Medical Education Commission combined entrance examination.",
+      "sourceUrl": "https://www.iom.edu.np/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Maharajgunj Medical Campus is a public Tribhuvan University MBBS institution with 100 total seats and 8 foreign seats in the MECEE-BL 2025 allocation.",
+      "sourceUrl": "https://www.mec.gov.np/uploads/shares/ug_2025/ug_seats_2025_categorywise.pdf",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Medical Education Commission's foreign-category MBBS matching list includes Maharajgunj Medical Campus placements.",
+      "sourceUrl": "https://mec.gov.np/public/uploads/shares/ug_2025/first_admission_list_foreign_ug2025.pdf",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Nepal Medical Council identifies itself as the statutory regulator that monitors and regulates medical education in Nepal.",
+      "sourceUrl": "https://www.nmc.org.np/",
+      "sourceType": "regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current first-party or government MBBS tuition schedule for the foreign cohort was found; do not infer fees from domestic, historical or agency material.",
+    "No current programme-specific official source establishes the instructional language for the foreign MBBS cohort, so controlled instruction-language facets cannot be set.",
+    "No current official source establishes the foreign-cohort teaching start/intake month; the regulator confirms a foreign route but not the required programme facet.",
+    "The reviewed sources do not provide the complete programme-specific foreign eligibility and document route needed for admissionsContent."
+  ],
+  "nextAction": "Obtain a current IOM or MEC foreign-MBBS fee and admission notice that states tuition, cohort language, start date/intake and eligibility; then independently verify institution/programme recognition before packaging."
+}

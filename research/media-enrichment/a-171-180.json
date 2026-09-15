@@ -1,0 +1,236 @@
+[
+  {
+    "universitySlug": "korea-advanced-institute-science-technology",
+    "universityName": "Korea Advanced Institute of Science and Technology",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Both assets sourced from Wikipedia's Commons-hosted (not the enwiki fair-use) files, avoiding any need to touch KAIST's own press pages..",
+    "proposedPublicIds": {
+      "logo": "universities/korea-advanced-institute-science-technology/logo",
+      "cover": "universities/korea-advanced-institute-science-technology/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/KAIST_logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file, tagged PD-textlogo (simple geometric/text mark, below threshold of originality). Verified HTTP 200.",
+      "proposedPublicId": "korea-advanced-institute-science-technology-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/KAIST_fountains_view.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (photographer AhmadElq), CC-BY-SA 4.0. Depicts the KAIST fountains/campus view. Verified HTTP 200.",
+      "proposedPublicId": "korea-advanced-institute-science-technology-cover"
+    }
+  },
+  {
+    "universitySlug": "kcmc-university",
+    "universityName": "KCMC University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): kcmuco.ac.tz is unreachable directly (connection hangs/times out rather than a clean HTTP error), so per technique #3 both assets were sourced and verified strictly through the archive.org route..",
+    "proposedPublicIds": {
+      "logo": "universities/kcmc-university/logo",
+      "cover": "universities/kcmc-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://web.archive.org/web/20250615112154im_/https://kcmuco.ac.tz/wp-content/uploads/2025/03/cropped-KCMCU-Logo-270x270.png",
+      "sourceType": "official",
+      "rightsBasis": "Official Kilimanjaro Christian Medical University College site (kcmuco.ac.tz), 270x270 cropped-logo asset from the site's own uploads. The live domain does not respond (connection times out entirely), so retrieved and verified via Wayback Machine (archived asset URL confirmed HTTP 200 after redirect).",
+      "proposedPublicId": "kcmc-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://web.archive.org/web/20250615112154im_/https://kcmuco.ac.tz/wp-content/uploads/2025/03/KCMC-Banner-1.png",
+      "sourceType": "official",
+      "rightsBasis": "Official site's own homepage banner image ('KCMC-Banner-1.png'). Retrieved and verified via Wayback Machine the same way as the logo.",
+      "proposedPublicId": "kcmc-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kth-royal-institute-technology",
+    "universityName": "KTH Royal Institute of Technology",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Logo remains held: KTH's Wikipedia infobox logo is hosted only as non-free/fair-use on English Wikipedia (wikipedia/en/ namespace), not Commons, so it could not be used under the licensed-reuse rule. Cover resolved via a genuinely free-licensed Commons campus photo instead; logo still needs KTH's own brand/press channel.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/kth-royal-institute-technology/logo",
+      "cover": "universities/kth-royal-institute-technology/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Royal_Institute_of_Technology_-_Stockholm.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (uploader Stern, sv.wikipedia), dual-licensed GFDL 1.2+/CC-BY-SA 3.0. Depicts KTH's main building in winter. Verified HTTP 200.",
+      "proposedPublicId": "kth-royal-institute-technology-cover"
+    }
+  },
+  {
+    "universitySlug": "kabardino-balkarian-state-university",
+    "universityName": "Kabardino-Balkarian State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The /en/ site path 404s, but the Russian root kbsu.ru is directly reachable; recovered the logo by inferring the uncropped filename from the WordPress cropped-favicon naming convention (technique #4), and sourced the cover from a CC-BY-SA 4.0 Commons building photo..",
+    "proposedPublicIds": {
+      "logo": "universities/kabardino-balkarian-state-university/logo",
+      "cover": "universities/kabardino-balkarian-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://kbsu.ru/wp-content/uploads/2025/06/logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official KBSU site (kbsu.ru) full-resolution logo file, located by generalizing from the site's own cropped-favicon filename pattern (cropped-logo-*.png -> logo.png). Verified HTTP 200 directly on the live root domain (kbsu.ru, not the /en/ path, which 404s).",
+      "proposedPublicId": "kabardino-balkarian-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/%D0%93%D0%A3%D0%9A_%D0%9A%D0%91%D0%93%D0%A3_%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (photographer Yuri Kerimov), CC-BY-SA 4.0. Depicts KBSU's main teaching building. Verified HTTP 200.",
+      "proposedPublicId": "kabardino-balkarian-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kalmyk-state-university",
+    "universityName": "Kalmyk State University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Logo remains held: the official site (kalmsu.ru) is unreachable directly, and its most recent Wayback snapshot (Jan 2025) is a pure SVG/CSS single-page build with no separate raster/vector logo file referenced anywhere in the HTML - a genuine inline-SVG-only case where no standalone file could be located elsewhere on the domain. Commons has no dedicated logo file for this university either (only building photos). Cover resolved via Commons; logo still held.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/kalmyk-state-university/logo",
+      "cover": "universities/kalmyk-state-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kalmykia_State_University_main_building.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (uploader Ymblanter), CC-BY-SA 4.0. Depicts the university's main building in Elista. Verified HTTP 200.",
+      "proposedPublicId": "kalmyk-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kaluga-state-university-medical-institute",
+    "universityName": "Kaluga State University Medical Institute",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "This catalogue record's own officialWebsite is kspu.ru (K.E. Tsiolkovsky Kaluga State University, of which the Medical Institute is a constituent unit, not a separately branded site). The live domain refuses the connection outright (TLS connection closes without a response) rather than giving a clean HTTP error, and its most recent Wayback Machine snapshot is from February 2024 with no more recent crawl available, so no current, verifiable asset could be sourced with confidence this pass. Held rather than risk an outdated or mismatched (parent-university-branded) asset for a specific-institute record.",
+    "proposedPublicIds": {
+      "logo": "universities/kaluga-state-university-medical-institute/logo",
+      "cover": "universities/kaluga-state-university-medical-institute/cover"
+    }
+  },
+  {
+    "universitySlug": "karshi-state-university",
+    "universityName": "Karshi State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Confirmed the official domain is qarshidu.uz (Uzbek Wikipedia gives this explicitly), then found the site's own header logo SVG directly in its homepage markup; paired with a CC-BY-SA 4.0 Commons building photo for the cover..",
+    "proposedPublicIds": {
+      "logo": "universities/karshi-state-university/logo",
+      "cover": "universities/karshi-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://qarshidu.uz/img/logo-oz-dark-text.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official Karshi State University site (qarshidu.uz) header logo SVG, referenced directly in the homepage HTML. Verified HTTP 200.",
+      "proposedPublicId": "karshi-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Karshi_State_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons file (uploader Mrjavokh1r), CC-BY-SA 4.0. Depicts the university's main building. Verified HTTP 200.",
+      "proposedPublicId": "karshi-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kasym-tynystanov-issyk-kul-state-university",
+    "universityName": "Kasym Tynystanov Issyk-Kul State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass never tried the live site; live site now has an expired cert, so used Wayback Machine (technique 3) to pull the header logo and a dated official campus-photoshoot image directly from main.iksu.kg's own uploads folder..",
+    "proposedPublicIds": {
+      "logo": "universities/kasym-tynystanov-issyk-kul-state-university/logo",
+      "cover": "universities/kasym-tynystanov-issyk-kul-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://web.archive.org/web/20260508194832im_/http://main.iksu.kg/wp-content/uploads/2020/01/cropped-logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official university header logo captured via Wayback Machine snapshot (2026-05-08) of main.iksu.kg, whose live site now returns an expired-SSL error; archived asset verified HTTP 200.",
+      "proposedPublicId": "kasym-tynystanov-issyk-kul-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://web.archive.org/web/20260508194832im_/http://main.iksu.kg/wp-content/uploads/2024/02/%D0%98%D0%93%D0%A3_2-%D1%8F_%D1%81%D1%8A%D1%91%D0%BC%D0%BA%D0%B0_005-1200x600.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official campus photoshoot image hosted on the university's own site, retrieved via Wayback Machine snapshot after the live domain failed SSL; verified HTTP 200.",
+      "proposedPublicId": "kasym-tynystanov-issyk-kul-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "kauno-kolegija-kaunas-university-of-applied-sciences",
+    "universityName": "Kauno Kolegija Kaunas University of Applied Sciences",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass only checked Lithuanian Wikipedia (which only has a non-free local logo). Went directly to the institution's own homepage HTML and pulled the real header <img> logo plus the og:image meta banner, bypassing the fair-use Wikipedia file entirely..",
+    "proposedPublicIds": {
+      "logo": "universities/kauno-kolegija-kaunas-university-of-applied-sciences/logo",
+      "cover": "universities/kauno-kolegija-kaunas-university-of-applied-sciences/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://kaunokolegija.lt/wp-content/uploads/2025/10/cropped-1600x960_LT.png",
+      "sourceType": "official",
+      "rightsBasis": "Header logo asset served directly from the institution's own site (kaunokolegija.lt), alt text \"Site Logo\"; verified HTTP 200.",
+      "proposedPublicId": "kauno-kolegija-kaunas-university-of-applied-sciences-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://kaunokolegija.lt/wp-content/uploads/2026/06/KK26-KV-Web-1920x1080-1.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official og:image social-share banner declared in the site's own <head> meta tags; verified HTTP 200.",
+      "proposedPublicId": "kauno-kolegija-kaunas-university-of-applied-sciences-cover"
+    }
+  },
+  {
+    "universitySlug": "kazan-federal-university",
+    "universityName": "Kazan Federal University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Checked Wikimedia Commons directly (not just search snippets): a dedicated free-licensed logo file and a quality-assessed, freely-licensed building photograph both exist and resolve..",
+    "proposedPublicIds": {
+      "logo": "universities/kazan-federal-university/logo",
+      "cover": "universities/kazan-federal-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Kazan_Federal_University_Logo.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Kazan Federal University Logo.jpg, licensed CC BY-SA 4.0; verified HTTP 200.",
+      "proposedPublicId": "kazan-federal-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Kazan_Federal_University_building_08-2016.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons File:Kazan Federal University building 08-2016.jpg, own work by A.Savin (Wiki Loves Monuments 2016, quality image), multi-licensed CC BY-SA/GFDL/FAL; verified HTTP 200.",
+      "proposedPublicId": "kazan-federal-university-cover"
+    }
+  }
+]

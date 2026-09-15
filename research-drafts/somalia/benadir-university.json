@@ -1,0 +1,20 @@
+{
+  "countrySlug": "somalia",
+  "universitySlug": "benadir-university",
+  "schoolName": "Benadir University",
+  "cityName": "Mogadishu",
+  "priority": "medium",
+  "officialWebsite": "https://www.bu.edu.so/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Benadir University's official Faculty of Medicine and Surgery pages identify a five-year MBChB programme, describe basic-science and clinical/clerkship components, publish admission requirements and distinguish local/international fee sections. The university's home page has current July 2026 institutional news, and WDOMS lists the medical school as currently operational. However, the faculty pages contain conflicting five-year and six-year narrative references, and no current itemised international fee, internship terms, clinical-site list, visa/support route or target-market professional eligibility has been verified. Hold until those facts are reconciled from primary sources.",
+  "sourceBundle": { "sources": [
+    { "label": "Benadir University Faculty of Medicine about page", "url": "https://bu.edu.so/academics/undergraduate/Faculty-of-Medicine-and-Surgery/about", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States a five-year MBChB and outlines basic science, professional and core clinical-clerkship structure." },
+    { "label": "Benadir University Medicine entry requirements", "url": "https://bu.edu.so/academics/undergraduate/Faculty-of-Medicine-and-Surgery/requirements", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Lists local applicant documents and placement exam/admission fee; a complete foreign requirement set was not captured." },
+    { "label": "Benadir University admissions page", "url": "https://www.bu.edu.so/admision", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Lists Medicine and Surgery and local/international tuition-fee sections, but no current accessible itemised international fee was captured." },
+    { "label": "Benadir University current university page", "url": "https://www.bu.edu.so/", "kind": "official-operational", "checkedAt": "2026-07-25", "notes": "Contains a July 2026 university news item about a National Higher Education Commission visit." },
+    { "label": "World Directory of Medical Schools Benadir record", "url": "https://search.wdoms.org/home/SchoolDetail/F0002461", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists the private medical school as currently operational with MBChB qualification; directory listing alone is not a licensing claim." }
+  ] },
+  "structuredFacts": { "name": "Benadir University", "type": "Private university", "programs": [ { "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBChB)", "duration": "Official pages conflict between five-year and six-year narrative references; not publishable until reconciled", "feeStatus": "Admissions page exposes local/international fee sections but no current verified itemised fee was captured", "publishable": false } ], "missingForPublication": [ "reconciled current duration and academic structure", "itemised current international fee and payment terms", "foreign eligibility, visa and language route", "internship and clinical-site evidence", "housing/student-support evidence", "current recognition and target-market professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted due to the duration conflict and incomplete external-applicant facts." }
+}

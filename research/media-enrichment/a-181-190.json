@@ -1,0 +1,172 @@
+{
+  "batchId": "a-181-190",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 181-190; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "kazan-state-medical-university",
+      "universityName": "Kazan State Medical University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo still held: the only infobox logo (KSMU_logo.png) is a local non-free/fair-use upload on English Wikipedia, not Commons, and no Commons-hosted or official-site alternative was found. Cover resolved via a Commons category not checked in the first pass.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9A%D0%93%D0%9C%D0%A3.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File (Wiki Loves Monuments 2020 submission) of KSMU's main building, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kazan-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "kemerovo-state-medical-university",
+      "universityName": "Kemerovo State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover still held: no Commons category, Wikidata P18, or reliable campus-exterior photo was found for this specific medical university (as opposed to Kemerovo State University); the official site (kemsmu.ru) only surfaces news/event thumbnails, not a clean campus photo.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/KemSMU_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:KemSMU Logo.svg, tagged public domain under Russian Federation Civil Code Art. 1259 (official state-body symbol, not copyrightable); verified HTTP 200.",
+        "proposedPublicId": "kemerovo-state-medical-university-logo"
+      }
+    },
+    {
+      "universitySlug": "kemerovo-state-university-medical-institute",
+      "universityName": "Kemerovo State University Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "This is an institute-level record (Medical Institute within Kemerovo State University, a classical university, not a standalone medical university). Before sourcing any standalone logo/cover, someone needs to decide whether this record should inherit Kemerovo State University's own branding or be treated as a distinct entity with its own identity. No media sourced pending that decision.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "ken-walker-international-university",
+      "universityName": "Ken Walker International University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass concluded no authoritative domain existed. The institution's official site is reachable at kwiu.edu.ge (confirmed via EQAR/education-directory cross-references) and serves its own logo and hero banner directly — no recruitment/social-media imagery used..",
+      "logo": {
+        "sourceUrl": "https://kwiu.edu.ge/img/logo_2.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo served directly from the university's own current domain kwiu.edu.ge (?ena=eng); verified HTTP 200.",
+        "proposedPublicId": "ken-walker-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://kwiu.edu.ge/img/hero_images/hero_5.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Hero/banner campus image served directly from kwiu.edu.ge's own hero_images folder; verified HTTP 200.",
+        "proposedPublicId": "ken-walker-international-university-cover"
+      }
+    },
+    {
+      "universitySlug": "khakasia-state-university-medical-faculty",
+      "universityName": "Khakasia State University Medical Faculty",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Faculty-level record (Medical Faculty of Khakas State University named after N.F. Katanov). No dedicated faculty logo/cover exists independently of the parent university; a decision is needed on whether this should inherit Khakas State University branding or be merged/retired as a catalogue entry before sourcing media.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "khalifa-university",
+      "universityName": "Khalifa University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed directly on Khalifa University's own brand page (ku.ac.ae/media/visual-identity-and-branding-guidelines) that logo/branding assets require contacting the Communications and Business Development Department — written permission is explicitly required, consistent with the original hold reason. A Commons file (File:Khalifa University New Logo.png) claims CC BY-SA 4.0, but it was self-declared \"own work\" by an unaffiliated Commons uploader (Rem1706) merely citing ku.ac.ae as the source — a common Commons mislabeling pattern for corporate trademarks, not a verifiable release by the rights holder — so it was not used. No written-permission workflow was pursued per instructions."
+    },
+    {
+      "universitySlug": "khanty-mansiysk-state-medical-academy",
+      "universityName": "Khanty-Mansiysk State Medical Academy",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover still held: the homepage's only large imagery is news-story thumbnails (diploma ceremonies, events), with no og:image or identifiable campus-exterior photo; no Commons/Wikidata image claim exists either. Logo resolved by going straight to the official Bitrix-CMS site rather than search-engine snippets.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://hmgma.ru/bitrix/templates/main/images/logo2.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo file served directly from the academy's own official domain (hmgma.ru, resolved via Wikidata P856); verified HTTP 200.",
+        "proposedPublicId": "khanty-mansiysk-state-medical-academy-logo"
+      }
+    },
+    {
+      "universitySlug": "kimyo-international-university",
+      "universityName": "Kimyo International University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The first pass verified the site existed but didn't extract a standalone logo asset; kiut.uz (current KIUT domain) serves both a dedicated header logo SVG and campus banner photos directly, distinct from any social/press imagery..",
+      "logo": {
+        "sourceUrl": "https://kiut.uz/static/img/icons/logo.65854c536596.svg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone header logo SVG served from the university's own current domain kiut.uz; verified HTTP 200.",
+        "proposedPublicId": "kimyo-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://kiut.uz/media/filer_public/18/8e/188ee0cf-43c7-4589-8095-683ec6f4251e/land_kiut.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Campus banner image served directly from kiut.uz's own media library; verified HTTP 200.",
+        "proposedPublicId": "kimyo-international-university-cover"
+      }
+    },
+    {
+      "universitySlug": "kirov-state-medical-university",
+      "universityName": "Kirov State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass didn't check Wikidata's structured claims or the live official site directly. Wikidata P18 pointed to a free-licensed Commons building photo, and kirovgma.ru serves its own header logo asset (different from the earlier misidentified Kirov Military Medical Academy emblem)..",
+      "logo": {
+        "sourceUrl": "https://kirovgma.ru/sites/default/files/logo_0.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo image served directly from the university's official domain kirovgma.ru, alt text \"Кировский ГМУ logo\"; verified HTTP 200.",
+        "proposedPublicId": "kirov-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%B3.%D0%9A%D0%B8%D1%80%D0%BE%D0%B2.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons image linked from Wikidata P18 for Kirov State Medical Academy (Q4221614), licensed CC BY-SA 3.0; verified HTTP 200.",
+        "proposedPublicId": "kirov-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "klaipeda-state-university-of-applied-sciences",
+      "universityName": "Klaipeda State University of Applied Sciences",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Note: the resolved logo file is a white/reversed-color variant of the KVK mark (meant for dark backgrounds) — usable, but a colored variant was not located; a guessed alternate filename returned 404..",
+      "logo": {
+        "sourceUrl": "https://www.kvk.lt/wp-content/uploads/2025/01/kvk-pagrindinis-white-rgb.svg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone header logo SVG (white/reversed color variant) served directly from the college's own domain kvk.lt (resolved via Wikidata P856); verified HTTP 200.",
+        "proposedPublicId": "klaipeda-state-university-of-applied-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kvk.lt/wp-content/uploads/2026/06/KVK-2026-234.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Hero banner image served directly from kvk.lt's own uploads folder; verified HTTP 200.",
+        "proposedPublicId": "klaipeda-state-university-of-applied-sciences-cover"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "countrySlug": "saint-vincent-and-the-grenadines",
+  "universitySlug": "saint-james-school-of-medicine",
+  "schoolName": "Saint James School of Medicine",
+  "cityName": "Kingstown",
+  "priority": "medium",
+  "officialWebsite": "https://www.sjsm.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - SJSM's official current support material describes a Saint Vincent basic-science programme (MD1-MD5) and a clinical-science programme (CS1-CS5); another official support entry says completion requires five basic-science and five clinical-science semesters (80 weeks of clinical rotations). The current fees are published as USD amounts. Hold pending independent authorisation/accreditation, clinical-site, language/admission and target-market eligibility verification.",
+  "sourceBundle": { "sources": [
+    { "label": "SJSM official tuition, payment and refund policy", "url": "https://support.sjsm.org/support/solutions/articles/66000477830-tuition-fees-payments-and-refund-policies", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists Saint Vincent basic-science MD1-MD5 and clinical-science CS1-CS5 tuition and linked fee conditions." },
+    { "label": "SJSM official finance support index", "url": "https://support.sjsm.org/support/solutions/folders/66000411679", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States completion of the MD requires five basic-science semesters and five clinical-science semesters, totaling 80 weeks of clinical rotations." },
+    { "label": "SJSM official student catalogue", "url": "https://sjsm.org/downloads/9/SJSM_Catalog%202024_BS_to_MD.pdf", "kind": "official-catalogue", "checkedAt": "2026-07-25", "notes": "Provides a programme and cost reference but is an older catalogue; current programme terms must be confirmed against current policies." },
+    { "label": "SJSM official support portal", "url": "https://support.sjsm.org/support/home", "kind": "official-support", "checkedAt": "2026-07-25", "notes": "Lists student-facing support topics including USMLE counseling services; scope and eligibility require confirmation." }
+  ] },
+  "structuredFacts": { "name": "Saint James School of Medicine", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "Five basic-science semesters and five clinical-science semesters; official policy describes 80 clinical-rotation weeks", "feeStatus": "Official current policy lists USD 10,250 for Saint Vincent basic science (MD1-MD5) and USD 14,800 for clinical science (CS1-CS5); fee and unit interpretation requires reconciliation before display.", "publishable": false } ], "missingForPublication": [ "current independent regulator and accreditor records", "clinical-site inventory, availability and contractual cost terms", "language of instruction and route-specific admissions verification", "target-market licensing, recognition and eligibility analysis", "current all-in fee reconciliation, including repeat, housing, travel and clinical costs" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until programme pricing and professional-outcome claims are independently scoped." }
+}

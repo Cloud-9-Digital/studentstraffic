@@ -1,0 +1,206 @@
+{
+  "batchId": "media-a-511-520",
+  "scope": "Alphabetical missing-media rows 511-520; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "western-sydney-university",
+      "universityName": "Western Sydney University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.westernsydney.edu.au/content/dam/digital/images/badges-and-logos/WSU_Logo_LeftAligned_Centred_RGB.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own DAM under its official domain",
+        "proposedPublicId": "western-sydney-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.westernsydney.edu.au/content/dam/digital/images/home-page-banner-images/SNGF_wb01.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage carousel image (current 'Stay Near Go Far' campaign banner) served from the university's own domain",
+        "proposedPublicId": "western-sydney-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "yale-university",
+      "universityName": "Yale University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The on-page header logo remains a CSS icon-sprite as the first pass found, and identity.yale.edu (Yale's brand site) still fails to connect. Applied the favicon/higher-res-icon technique instead and found a standalone, independently-addressable file of Yale's official monogram mark, of materially better quality than the print-only asset the first pass had found..",
+      "logo": {
+        "sourceUrl": "https://www.yale.edu/sites/all/themes/yale_blue/images/favicons/android-chrome-192x192.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site yale.edu, standalone 192x192 PNG of the Yale 'Y' monogram mark (served as the site's Android/Chrome home-screen icon, viewed and visually confirmed as the recognized Yale bulldog-alternative brand icon), verified HTTP 200.",
+        "proposedPublicId": "yale-university-logo"
+      }
+    },
+    {
+      "universitySlug": "yaroslavl-state-medical-university",
+      "universityName": "Yaroslavl State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.ysmu.ru/simai.data/image/logo/logo-ysmu.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own domain (also declared as its own og:image logo variant)",
+        "proposedPublicId": "yaroslavl-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ysmu.ru/upload/iblock/074/yoqcqcsy46vz0b5d0urbuqu5yov9ljmk/banner_main_1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage carousel background image served from the university's own domain",
+        "proposedPublicId": "yaroslavl-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "yerevan-haybusak-university",
+      "universityName": "Yerevan Haybusak University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://haybusak.am/wp-content/uploads/2023/04/Logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own domain (haybusak.am, corrected from the stale haybusak.org record which no longer resolves)",
+        "proposedPublicId": "yerevan-haybusak-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://haybusak.am/wp-content/uploads/2023/06/achitecture-web-.png",
+        "sourceType": "official",
+        "rightsBasis": "official homepage og:image institutional campus/architecture visual served from the university's own domain",
+        "proposedPublicId": "yerevan-haybusak-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "yerevan-state-medical-university",
+      "universityName": "Yerevan State Medical University after Mkhitar Heratsi",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://ysmu.am/v2/wp-content/themes/ysmu/img/icon/YSMU_logo_white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own theme assets on its official domain",
+        "proposedPublicId": "yerevan-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://ysmu.am/v2/wp-content/uploads/2026/01/ysmu_slaid_1-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage hero-slide background image served from the university's own domain",
+        "proposedPublicId": "yerevan-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "yonsei-university",
+      "universityName": "Yonsei University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The first pass's carousel-slide dead end (visual3.jpg 404) was on the /en_sc/ path, which now 404s outright; fetching the correct root homepage (www.yonsei.ac.kr) instead surfaces a clean, genuinely institutional og:image. Could not reconfirm the previously-found header_logo.png on the current homepage markup (site structure appears to have changed since the first pass; no standalone header logo file found in this pass), so logo status is left unchanged pending a future check.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://www.yonsei.ac.kr/Web-home/_UI/images/img_symbol.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site's own declared og:image (600x315), showing the Yonsei eagle-statue campus landmark with the university's wordmark, served from the university's own site, verified HTTP 200.",
+        "proposedPublicId": "yonsei-university-cover"
+      }
+    },
+    {
+      "universitySlug": "zarmed-university",
+      "universityName": "Zarmed University Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The first pass rejected zarmeduniver.com based on its preloaded third-party partner-hospital logos. Deeper inspection of the same Next.js site's full asset list (not just the preloaded images) found the institution's own distinct seal/wordmark logo plus campus-specific, alt-labelled, visually-confirmed photography for both Bukhara and Samarkand campuses (matching building signage in each photo) - resolving the domain-identity concern without merging or guessing between the two campus records. The site also has genuine academic navigation (/programs, /structure, /university, /journals), consistent with being the real institutional site rather than a marketing funnel..",
+      "logo": {
+        "sourceUrl": "https://zarmeduniver.com/landing/images/Univer%20new%20logo%20n-08.png",
+        "sourceType": "official",
+        "rightsBasis": "ZARMED University's own institutional seal/wordmark logo (white-on-transparent PNG, 2560x699, viewed and visually confirmed to show a circular seal with book/lion emblem and 'ZARMED UNIVERSITY' wordmark), served from the institution's own site zarmeduniver.com, distinct from the third-party partner-hospital logos (Continental Med, Tomar, Pratiksha) also present on the same landing page. Verified HTTP 200.",
+        "proposedPublicId": "zarmed-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://zarmeduniver.com/landing/images/campus-bukhara.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site photo alt-labelled 'Bukhara Campus' (1920x1071, viewed and visually confirmed), showing an actual building bearing 'ZARMED UNIVERSITETI' signage and the same seal logo, served from the institution's own site. Verified HTTP 200.",
+        "proposedPublicId": "zarmed-university-cover"
+      }
+    },
+    {
+      "universitySlug": "zarmed-university-samarkand",
+      "universityName": "Zarmed University Faculty of Medicine Samarkand",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Same technique and same site as the Bukhara record. The campus-specific alt text and visibly distinct building photography (different architecture, different signage) confirm this asset is specifically the Samarkand campus, not a shared or guessed asset from the Bukhara record - satisfying the instruction not to merge or guess between the two campus records..",
+      "logo": {
+        "sourceUrl": "https://zarmeduniver.com/landing/images/Univer%20new%20logo%20n-08.png",
+        "sourceType": "official",
+        "rightsBasis": "Same shared institutional seal/wordmark logo as the Bukhara campus record (one legal institution, two campuses), served from zarmeduniver.com. Verified HTTP 200.",
+        "proposedPublicId": "zarmed-university-samarkand-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://zarmeduniver.com/landing/images/campus-samarkand.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site photo alt-labelled 'Samarkand Campus' (1920x842, viewed and visually confirmed), showing a distinct building bearing 'ZARMED UNIVERSITY' signage, served from the institution's own site. Verified HTTP 200.",
+        "proposedPublicId": "zarmed-university-samarkand-cover"
+      }
+    },
+    {
+      "universitySlug": "emlyon-business-school",
+      "universityName": "emlyon business school",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://em-lyon.com/themes/custom/emlyon/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the school's own theme assets on its official domain",
+        "proposedPublicId": "emlyon-business-school-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://res.cloudinary.com/emlyon/image/fetch/t_scroll_banner_l_1x/https://res.cloudinary.com/emlyon/image/upload/v1648716028/EMWH-visuels/decouvrir-emlyon/hub-gerland/ENTREE_JAURES.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official og:image campus visual (Gerland hub entrance) declared directly in the school's own homepage markup, served from the school's own emlyon-namespaced Cloudinary account",
+        "proposedPublicId": "emlyon-business-school-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "siauliai-state-university-of-applied-sciences-siauliu-valstybine-kolegija",
+      "universityName": "Šiauliai State University of Applied Sciences (Šiaulių valstybinė kolegija)",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.svako.lt/img/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the institution's own domain",
+        "proposedPublicId": "siauliai-state-university-of-applied-sciences-siauliu-valstybine-kolegija-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.svako.lt/img/home-slide/about_siauliu_valstybine_kolegija_higher_education_institution.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage 'about the institution' slide image served from the institution's own domain",
+        "proposedPublicId": "siauliai-state-university-of-applied-sciences-siauliu-valstybine-kolegija-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

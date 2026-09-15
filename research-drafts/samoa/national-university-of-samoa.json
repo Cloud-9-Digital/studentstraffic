@@ -1,0 +1,18 @@
+{
+  "countrySlug": "samoa",
+  "universitySlug": "national-university-of-samoa",
+  "schoolName": "National University of Samoa",
+  "cityName": "Apia",
+  "priority": "medium",
+  "officialWebsite": "https://nus.edu.ws/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — NUS officially offers a six-year MBBS through its School of Medicine; public government reporting records Samoa Qualifications Authority accreditation in 2021. The current accessible evidence does not provide a current tuition/mandatory-cost schedule, 2026 intake/deadline, full eligibility/documents for international applicants, clinical placement specifics, accommodation/support or current accreditation period. The 2021 accreditation announcement alone is not treated as current programme status.",
+  "sourceBundle": { "sources": [
+    { "label": "NUS School of Medicine", "url": "https://nus.edu.ws/school-of-medicine/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes School of Medicine history and health-sector partners; states OUM local operations ceased in 2012 and NUS subsequently established the school." },
+    { "label": "NUS area-of-study programme regulations", "url": "https://nus.edu.ws/area-of-study-2/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States MBBS requires all prescribed courses and is minimum six years, maximum eight years." },
+    { "label": "Samoa government NUS programme accreditation announcement", "url": "https://mpmc.gov.ws/pr-five-5-nus-higher-education-programmes-accreidted-by-the-samoa-qualifications-authority-accreditation-affirms-quality-and-standards-of-post-school-education-and-training-in-samoa/", "kind": "government-quality-assurance", "checkedAt": "2026-07-25", "notes": "Reports SQA approval of NUS MBBS accreditation in August 2021; current status/expiry not established." }
+  ] },
+  "structuredFacts": { "name": "National University of Samoa", "type": "Public university", "programs": [ { "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)", "duration": "6 years minimum", "feeStatus": "not found in current official programme evidence", "publishable": false } ], "missingForPublication": [ "current tuition and mandatory costs", "current international eligibility, documents, intake and deadline", "clinical placement and accommodation/support details", "current programme-accreditation status and target-market recognition" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted pending current cost and admissions evidence." }
+}

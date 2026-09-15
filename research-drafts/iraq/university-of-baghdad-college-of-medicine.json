@@ -1,0 +1,36 @@
+{
+  "scope": "Iraq medical discovery — University of Baghdad College of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The College of Medicine describes an integrated, body-systems curriculum that links basic medical sciences with clinical practice and community patient encounters.",
+      "sourceUrl": "https://en.comed.uobaghdad.edu.iq/?page_id=160",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Baghdad College of Medicine's third-year Clinical Attachment includes 248 practical skill-lab hours and 16 theory hours, covering medical history, examination and procedural skills.",
+      "sourceUrl": "https://en.comed.uobaghdad.edu.iq/?page_id=3060",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Iraq's National Council for Accreditation of Medical Colleges records conditional accreditation for the University of Baghdad College of Medicine, with the decision issued on 23 January 2020.",
+      "sourceUrl": "https://mohesr.gov.iq/ar/ministrySection/64",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Iraqi Ministry of Higher Education's 2025 university ranking lists the University of Baghdad first among public universities.",
+      "sourceUrl": "https://iru.mohesr.gov.iq/result",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current official medicine-specific tuition/fee and admission-requirement evidence was not assembled for the required payload fields.",
+    "An explicit current primary-source statement of instructional language and student-support provision remains incomplete."
+  ],
+  "nextAction": "Collect the current College of Medicine admissions, fee, teaching-language and student-support publications, then complete the field-level review before publishing."
+}

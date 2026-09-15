@@ -1,0 +1,164 @@
+{
+  "batchId": "media-a-101-110",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official website or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "east-west-university",
+      "universityName": "East West University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.ewubd.edu/themes/east-west-university/assets/default/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from East West University's website",
+        "proposedPublicId": "east-west-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ewubd.edu/themes/east-west-university/assets/default/images/students.png",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image served from the university website",
+        "proposedPublicId": "east-west-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "ecole-polytechnique",
+      "universityName": "École Polytechnique",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 1: found the dedicated /presse page, which (unlike the homepage's small X mark noted in the first pass) contains the full institutional footer logo with a clear alt label. Cover resolved via a Commons-licensed campus photo..",
+      "logo": {
+        "sourceUrl": "https://www.polytechnique.edu/sites/default/files/nc-project/footer/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site footer logo asset, alt text \"École polytechnique, école d'ingénieur\" (polytechnique.edu/presse)",
+        "proposedPublicId": "ecole-polytechnique-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ecole_Polytechnique_France_seen_from_lake_DSC03389.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA (2.0/3.0 dual), Wikimedia Commons file (campus seen from the lake)",
+        "proposedPublicId": "ecole-polytechnique-cover"
+      }
+    },
+    {
+      "universitySlug": "epoka-university",
+      "universityName": "EPOKA University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Checked epoka.edu.al homepage and the About-Us/EPOKA-IN-COMMUNITY page directly: both og:image tags point only to the university's own logo files (logo1.svg, logo_epoka_uni.svg), not a campus photo. No Wikipedia Commons campus image exists for this university. No press/media/brand page found on the domain. Cover remains unresolved."
+    },
+    {
+      "universitySlug": "erasmus-university-rotterdam",
+      "universityName": "Erasmus University Rotterdam",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 2: the EUR homepage only exposes favicon-scale/sprite assets as the first pass found, but the Wikipedia article links a full SVG wordmark hosted on Commons under a Copyrighted-free-use grant.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo_Erasmus_Universiteit_Rotterdam.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "\"Copyrighted free use\" license grant stated on the Wikimedia Commons file page for \"Logo_Erasmus_Universiteit_Rotterdam.svg\" (a recognized free-license category, distinct from fair use/non-free)",
+        "proposedPublicId": "erasmus-university-rotterdam-logo"
+      }
+    },
+    {
+      "universitySlug": "eurasian-international-university",
+      "universityName": "Eurasian International University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Re-confirmed multiple distinct institutions share close variants of this name (\"Eurasian International University\" / \"Eurasia International University\") across different countries, with no additional identifying metadata (country, city) attached to this catalogue record to disambiguate. Unresolved identity -- no official domain can be safely assigned.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "european-university-georgia",
+      "universityName": "European University Georgia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://eu.edu.ge/wp-content/uploads/2023/06/evropis-universiteti-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from European University's English website",
+        "proposedPublicId": "european-university-georgia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://eu.edu.ge/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-30-at-21.35.04.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional social image declared by the university's English homepage metadata",
+        "proposedPublicId": "european-university-georgia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "european-university-cyprus",
+      "universityName": "European University Cyprus",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://euc.ac.cy/wp-content/uploads/2026/06/euc-logo-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from European University Cyprus's website",
+        "proposedPublicId": "european-university-cyprus-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://euc.ac.cy/wp-content/uploads/2026/05/642x428-EUC_Drone_2025_002-copy-1-1024x682.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional campus image declared by the university's homepage metadata",
+        "proposedPublicId": "european-university-cyprus-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "european-university-cyprus-euc-school-of-medicine-frankfurt-branch",
+      "universityName": "European University Cyprus EUC School of Medicine Frankfurt Branch",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed European University Cyprus's official assets (logo, campus imagery) are all tied to the parent university/Nicosia campus; no distinct official asset for the Frankfurt School of Medicine branch specifically was found. Applying the Nicosia-branded parent assets to this Frankfurt-branch-specific catalogue record would misrepresent the branch, so this remains a parent-brand inheritance decision rather than a sourcing gap -- no media assigned.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "european-university-of-tirana-bscn",
+      "universityName": "European University of Tirana BScN",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Found UET's own logo file directly on its homepage source (a white/reverse-color variant, but a genuine official asset). Cover still unresolved: the homepage og:image resolves to a small graduation-cap icon, not a campus photo (verified visually); the physical-infrastructure page's photo gallery loads via JS/lazy-load and no static campus image could be verified.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://uet.edu.al/wp-content/uploads/2025/07/UET-logo-e-bardhe-01-scaled.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset (uet.edu.al homepage)",
+        "proposedPublicId": "european-university-of-tirana-bscn-logo"
+      }
+    },
+    {
+      "universitySlug": "euroregional-teaching-university-ersu",
+      "universityName": "Euroregional Teaching University ERSU",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Cross-referenced third-party consultancy pages and Wikipedia/Wikidata: 'Euroregional Teaching University LLC' (Gori, Georgia) is documented as the post-2017 rebrand of 'Sukhishvili (Sukhishvii) Teaching University', domain sukhishvilebi.edu.ge. That domain no longer serves the university (Wayback CDX shows it redirecting/dying after 2013 and now resolves to a registrar parking page, confirmed via live snapshot). The only recoverable Wayback snapshot with real content (2011-2012, archive.org) shows the pre-rebrand 'Sukhishvili Teaching University' identity and logo (https://web.archive.org/web/20120206235041im_/http://www.sukhishvilebi.edu.ge/gfx/logo.jpg, resolves 200), not the current Euroregional name/branding. Attaching that 13+ year old pre-rebrand logo to the current record would misattribute identity across a rename. No current official domain for 'Euroregional Teaching University' could be confirmed. Needs a human decision on whether the old Sukhishvili identity is an acceptable stand-in or whether the record should stay unmedia'd pending a live official source.",
+      "dataIssue": true
+    }
+  ]
+}

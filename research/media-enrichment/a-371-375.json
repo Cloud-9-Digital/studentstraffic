@@ -1,0 +1,84 @@
+{
+  "batchId": "media-a-371-375",
+  "scope": "Alphabetical missing-media rows 371-375; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-college-cork",
+      "universityName": "University College Cork",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover resolved via Commons-license technique. Logo remains unresolved: checked UCC_logo_2026.png (the current logo used in UCC's Wikipedia infobox) and confirmed it is non-free/fair-use, not reusable. No Commons-licensed UCC logo alternative exists. Logo held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/County_Cork_-_University_College_Cork_-_20190125141016.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, campus photo dated 2019-01-25.",
+        "proposedPublicId": "university-college-cork-cover"
+      }
+    },
+    {
+      "universitySlug": "university-college-dublin",
+      "universityName": "University College Dublin",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover resolved via Commons-license technique. Logo remains unresolved: checked University_College_Dublin_logo.svg (the current logo used in UCD's Wikipedia infobox) and confirmed it is non-free/fair-use; the older logo files listed under Category:Logos_of_University_College_Dublin on Commons are unlicensed campus photos, not a distinct free logo. Logo held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Belfield.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, 'Belfield campus by night' photo by Gianluca Miscione.",
+        "proposedPublicId": "university-college-dublin-cover"
+      }
+    },
+    {
+      "universitySlug": "university-college-london",
+      "universityName": "University College London",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover resolved via Commons-license technique. Logo remains unresolved: the current UCL wordmark used in Wikipedia's infobox is confirmed non-free/fair-use. Checked UCL_Crest.svg (free under CC BY-SA 3.0/GFDL/PD-mark) as an alternative, but its own Commons file description explicitly states it is 'the oft-used unofficial coat of arms of UCL... not the formal institutional coat of arms recognized by the university' - fails the official-asset bar. Logo held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Wilkins_Building_1%2C_UCL%2C_London_-_Diliff.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, Wilkins Building photo by David Iliff (Diliff).",
+        "proposedPublicId": "university-college-london-cover"
+      }
+    },
+    {
+      "universitySlug": "university-geomedi",
+      "universityName": "University Geomedi",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass only identified the domain via a programme document; direct homepage inspection of geomedi.edu.ge found both a clean logo-geomedi.png and an explicitly-named campus building banner photo..",
+      "logo": {
+        "sourceUrl": "https://geomedi.edu.ge/wp-content/uploads/2016/03/logo-geomedi.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site geomedi.edu.ge, dedicated logo asset in the WordPress uploads directory, verified HTTP 200.",
+        "proposedPublicId": "university-geomedi-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://geomedi.edu.ge/wp-content/uploads/2020/01/GEOMEDI-BUILDING-1100x400.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site, named 'GEOMEDI-BUILDING' banner photo, verified HTTP 200.",
+        "proposedPublicId": "university-geomedi-cover"
+      }
+    },
+    {
+      "universitySlug": "university-sakartvelo",
+      "universityName": "University Sakartvelo Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Institution identity remains unresolved after a second, deeper pass. Wikipedia has no article under 'Sakartvelo University'/'University Sakartvelo' (confirmed via the Wikipedia opensearch API - zero matches). No official .edu.ge or similar domain could be guessed and verified (tried sakartvelo.edu.ge, sakartvelouni.edu.ge, sau.edu.ge, usu.edu.ge - none resolve). A distinct institution, University Geomedi (geomedi.edu.ge), does exist in Georgia and was already resolved in an earlier batch under the slug 'university-geomedi' - this record is NOT the same institution and should not inherit its assets. This looks like an unresolved-identity / possible duplicate-or-mistranslated-name record ('Sakartvelo' is simply the Georgian word for 'Georgia') rather than a source-availability problem; recommend a data/identity review of this specific 'Faculty of Medicine' record before further media research is attempted.",
+      "dataIssue": true
+    }
+  ]
+}

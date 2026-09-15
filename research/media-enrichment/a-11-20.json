@@ -1,0 +1,204 @@
+[
+  {
+    "universitySlug": "albanian-university",
+    "universityName": "Albanian University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass apparently only recorded the homepage URL without inspecting page assets; the logo and a faculty banner image are both served directly from albanianuniversity.edu.al's own uploads folder..",
+    "proposedPublicIds": {
+      "logo": "universities/albanian-university/logo",
+      "cover": "universities/albanian-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://albanianuniversity.edu.al/wp-content/uploads/2017/03/Logo_AU-e1757943458904.png",
+      "sourceType": "official",
+      "rightsBasis": "Official logo served from the university's own uploads folder.",
+      "proposedPublicId": "albanian-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://albanianuniversity.edu.al/wp-content/uploads/2023/11/fakulteti-i-shkencave-mjekesore.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official Faculty of Medical Sciences homepage banner, served from the university's own site.",
+      "proposedPublicId": "albanian-university-cover"
+    }
+  },
+  {
+    "universitySlug": "aldent-university",
+    "universityName": "Aldent University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The official domain is ual.edu.al; both a clean seal logo and a real graduation-ceremony photo are served directly from its uploads folder..",
+    "proposedPublicIds": {
+      "logo": "universities/aldent-university/logo",
+      "cover": "universities/aldent-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://ual.edu.al/wp-content/uploads/2024/09/ual-icon.png",
+      "sourceType": "official",
+      "rightsBasis": "Official Aldent University (UAL) seal served from the university's own site.",
+      "proposedPublicId": "aldent-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://ual.edu.al/wp-content/uploads/2024/09/Screenshot_16.png",
+      "sourceType": "official",
+      "rightsBasis": "Official 2025 graduation-ceremony photo hosted on the university's own site (ual.edu.al).",
+      "proposedPublicId": "aldent-university-cover"
+    }
+  },
+  {
+    "universitySlug": "alfraganus-university",
+    "universityName": "Alfraganus University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): afu.uz serves a clean brand.svg wordmark with its 2022 emblem directly from theme assets. No usable cover found: the homepage hero is a low-content animated GIF, not a genuine campus photo, so cover remains held.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/alfraganus-university/logo",
+      "cover": "universities/alfraganus-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.afu.uz/themes/univer/assets/images/brand.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official brand wordmark/emblem SVG served from the university's own theme assets (afu.uz).",
+      "proposedPublicId": "alfraganus-university-logo"
+    }
+  },
+  {
+    "universitySlug": "altai-state-medical-university",
+    "universityName": "Altai State Medical University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Re-checked this pass: the official site (www.agmu.ru) currently returns HTTP 503. Wayback Machine CDX history shows only 301/302 redirect captures for 2019-2025 and no full HTTP 200 snapshot newer than March 2017 -- too stale to safely represent the current brand, and the domain's ownership/design could have changed since. No usable current-brand asset found via press-page, Commons, or archive techniques.",
+    "proposedPublicIds": {
+      "logo": "universities/altai-state-medical-university/logo",
+      "cover": "universities/altai-state-medical-university/cover"
+    }
+  },
+  {
+    "universitySlug": "altamimi-international-university",
+    "universityName": "Altamimi International University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Confirmed a clean shield logo on the official site. Checked the About page specifically for campus photography (a technique not tried in the first pass) but found only a business-card graphic and a blank placeholder image -- no genuine cover photo exists on the site, so cover remains held.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/altamimi-international-university/logo",
+      "cover": "universities/altamimi-international-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://altamimiinternationaluniversity.com/wp-content/uploads/2024/11/ALTAMIMI-INTERNATIONAL-UNIVERSITY-e1770896794652.png",
+      "sourceType": "official",
+      "rightsBasis": "Official shield/crest logo served from the university's own site.",
+      "proposedPublicId": "altamimi-international-university-logo"
+    }
+  },
+  {
+    "universitySlug": "alte-university",
+    "universityName": "Alte University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Site is a Next.js app; logo is a build asset and cover comes from the site's own gallery API rather than the homepage hero (which is a text-only promo graphic, not usable as a cover)..",
+    "proposedPublicIds": {
+      "logo": "universities/alte-university/logo",
+      "cover": "universities/alte-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://alte.edu.ge/_next/static/media/logo.bb05f41a.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official wordmark SVG served from the university's own site build assets.",
+      "proposedPublicId": "alte-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://alte.edu.ge/api/storage/gallery/RrCA6b4KVO.webp",
+      "sourceType": "official",
+      "rightsBasis": "Official gallery photo of students in front of the branded 'alte University' wall signage, served from the university's own storage API.",
+      "proposedPublicId": "alte-university-cover"
+    }
+  },
+  {
+    "universitySlug": "american-university",
+    "universityName": "American University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass reported the brand/campus pages Cloudflare-blocked, but the logo and a campus sign photo are both served from a different, unblocked path on the same domain (customcf/2016-redesign/images/...)..",
+    "proposedPublicIds": {
+      "logo": "universities/american-university/logo",
+      "cover": "universities/american-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.american.edu/customcf/2016-redesign/images/logos/crest-logotype-blue-seo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official American University (Washington, DC) crest-logotype served from the university's own domain.",
+      "proposedPublicId": "american-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.american.edu/customcf/2016-redesign/images/social_graph.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official 'The American University' campus entrance-sign photo, used by AU itself as its social-share image.",
+      "proposedPublicId": "american-university-cover"
+    }
+  },
+  {
+    "universitySlug": "american-university-of-beirut",
+    "universityName": "American University of Beirut",
+    "status": "resolved-elsewhere",
+    "reason": "Confirmed 2026-07-26: both logo_url and cover_image_url are already live Cloudinary assets in the database, applied outside this batch pipeline. No action needed."
+  },
+  {
+    "universitySlug": "american-university-of-sharjah",
+    "universityName": "American University of Sharjah",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): First pass found aus.edu's brand/campus pages blocked; the header logo and a full-resolution gallery photo (Office of Communications > Photos and Videos > Gallery) are both directly reachable..",
+    "proposedPublicIds": {
+      "logo": "universities/american-university-of-sharjah/logo",
+      "cover": "universities/american-university-of-sharjah/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.aus.edu/sites/default/files/aus-default-logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official AUS bilingual (Arabic/English) logo served from the university's own site.",
+      "proposedPublicId": "american-university-of-sharjah-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.aus.edu/sites/default/files/albums/photos/caad_1.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official full-resolution photo of the AUS College of Architecture, Art and Design studio, from AUS's own Office of Communications photo gallery.",
+      "proposedPublicId": "american-university-of-sharjah-cover"
+    }
+  },
+  {
+    "universitySlug": "amur-state-medical-academy",
+    "universityName": "Amur State Medical Academy",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Re-checked directly this pass: amursma.ru (the domain given in Wikipedia's infobox) is now a hijacked/parked Russian-language online-casino affiliate site ('TOP CASINO ONLINE'), confirming and sharpening the first pass's 'suspicious/compromised' flag -- this is not a transient issue. Wayback Machine only holds snapshots from 2018, too old to safely represent the current institution and of uncertain provenance given the domain has since been compromised. No safe asset exists; worth flagging separately that this record's official-website field may need review since it now points at a gambling site.",
+    "proposedPublicIds": {
+      "logo": "universities/amur-state-medical-academy/logo",
+      "cover": "universities/amur-state-medical-academy/cover"
+    }
+  }
+]

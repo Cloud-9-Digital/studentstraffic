@@ -1,0 +1,1914 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate computer science and engineering degrees. Vellore Institute of Technology maps its B.Tech. Computer Science and Engineering at the Vellore campus to this category: a four-year, English-taught programme that VIT states is accredited by both the Computing Accreditation Commission and the Engineering Accreditation Commission of ABET, USA, and that international applicants can enter directly on qualifying-examination merit without sitting VITEEE.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE programmes abroad, including four-year structure, entry requirements, teaching language, tuition in USD and international admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate electronics and communication engineering degrees. Vellore Institute of Technology maps its B.Tech. Electronics and Communication Engineering at the Vellore campus to this category: a four-year English-taught programme that VIT's School of Electronics Engineering states is accredited by the Engineering Accreditation Commission of ABET, USA, and that is open to foreign nationals through VIT's direct international-admission route.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE programmes abroad, including course length, subject prerequisites, teaching language, published USD tuition and international admission routes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate mechanical engineering degrees. Vellore Institute of Technology maps its B.Tech. Mechanical Engineering at the Vellore campus to this category: a four-year English-taught programme delivered under VIT's Fully Flexible Credit System, open to foreign nationals and NRI applicants through a document-based direct admission route that does not require the VITEEE entrance examination.",
+      "metaTitle": "B.E./B.Tech Mechanical Degrees for Global Applicants",
+      "metaDescription": "Compare B.E./B.Tech Mechanical programmes abroad, including duration, Physics and Mathematics prerequisites, teaching language, USD tuition and application steps."
+    },
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate civil engineering degrees. Vellore Institute of Technology maps its B.Tech. Civil Engineering at the Vellore campus to this category: a four-year English-taught programme within VIT's School of Civil Engineering, available to foreign nationals through the international admission channel on the strength of Class 12 or equivalent results rather than an entrance test.",
+      "metaTitle": "B.E./B.Tech Civil Degrees for International Applicants",
+      "metaDescription": "Compare B.E./B.Tech Civil programmes abroad, including four-year structure, subject requirements, teaching language, published USD tuition and admission timelines."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 4,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for full-time general management master's degrees. Vellore Institute of Technology maps its two-year Master of Business Administration at the Vellore campus to this category. It is taught at VIT Business School, which is listed as an accredited school in the AACSB business school directory, and international applicants enter through VIT's separate NRI and Foreign postgraduate application rather than the domestic entrance-test route.",
+      "metaTitle": "MBA Programmes Abroad for International Applicants",
+      "metaDescription": "Compare full-time MBA programmes abroad, including two-year structure, degree and percentage requirements, teaching language, USD tuition and application windows."
+    },
+    {
+      "slug": "msc-data-science",
+      "name": "M.Sc. in Data Science",
+      "shortName": "M.Sc. Data Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "data-science",
+      "aliases": [
+        "Master of Science in Data Science",
+        "MSc Data Science"
+      ],
+      "displayOrder": 5,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year taught master's degrees in data science. Vellore Institute of Technology maps its two-year M.Sc. Data Science at the Vellore campus to this category. Entry requires a quantitative bachelor's degree and Mathematics studied at both Class 12 and degree level, and international applicants apply through VIT's dedicated NRI and Foreign postgraduate application rather than the VITMEE entrance test.",
+      "metaTitle": "M.Sc. Data Science Degrees for Global Applicants",
+      "metaDescription": "Compare M.Sc. Data Science programmes abroad, including two-year structure, Mathematics prerequisites, teaching language, published USD tuition and how to apply."
+    },
+    {
+      "slug": "bcom",
+      "name": "Bachelor of Commerce",
+      "shortName": "B.Com",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "commerce",
+      "aliases": [
+        "BCom",
+        "Bachelor in Commerce"
+      ],
+      "displayOrder": 6,
+      "durationYears": 3,
+      "summary": "This is the Students Traffic catalogue category for undergraduate commerce degrees. Vellore Institute of Technology maps its Bachelor of Commerce at the Vellore campus to this category: a general commerce degree covering accountancy, taxation, auditing, marketing and entrepreneurship, with an optional ACCA-UK embedded track and no entrance examination for international applicants, who are admitted on Class 12 or equivalent results.",
+      "metaTitle": "B.Com Degrees Abroad for International Students",
+      "metaDescription": "Compare B.Com programmes abroad, including commerce subject requirements, teaching language, published USD tuition, professional-certification tracks and how to apply."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "vellore-institute-of-technology",
+      "name": "Vellore Institute of Technology",
+      "city": "Vellore",
+      "type": "Private",
+      "establishedYear": 1984,
+      "officialWebsite": "https://vit.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Vellore Institute of Technology is a private deemed-to-be university in Vellore, Tamil Nadu, founded in 1984 and granted university status in 2001. This page covers the Vellore campus only. It teaches engineering, computing, business, sciences, design and commerce in English, and admits foreign nationals and NRI applicants through a direct route that does not require the VITEEE entrance test.",
+      "campusLifestyle": "The Vellore campus is VIT's original site and the largest of its four campuses. Its NIRF 2025 engineering submission records 35,957 students on four-year undergraduate programmes, 2,600 on two-year postgraduate programmes and 6,308 on five-year integrated programmes, including 1,408 students from outside India. Facilities include the Periyar E.V.R. Central Library, an air-conditioned gymnasium, indoor and outdoor sports grounds, a swimming pool, campus-wide Wi-Fi, general stores and a pharmacy. Teaching runs on VIT's Fully Flexible Credit System, which lets students choose electives, faculty and slots rather than following a fixed timetable.",
+      "cityProfile": "Vellore is a district city in northern Tamil Nadu, in southern India, and VIT's main campus sits on the Chennai-Bengaluru corridor at the 632014 postcode. The teaching language across VIT's international programmes is English, so day-to-day academic life does not require Tamil, though Tamil and Hindi dominate outside campus. The campus is largely self-contained: hostels, dining, a primary health centre, banking, general stores, a pharmacy and sports facilities are inside the gates, which matters because Vellore is a mid-sized city rather than a metro and most international students live on campus for the full degree. Sri Narayani Hospital and Research Centre, a tertiary hospital VIT lists in its health-services provision, is at Thirumalaikodi about 9 kilometres from campus. VIT's International Relations Office, which every NRI and foreign student must register with on the day of admission, is at Room 105, Floor I, Dr. M.G.R. Block on the Vellore campus.",
+      "practicalExposure": "Practical exposure at Vellore is built around industry-partnered degrees, credit mobility and campus recruitment. Named industry-linked programmes include B.Tech. Computer Science and Engineering and Business Systems delivered with TCS, B.Tech. Civil Engineering in collaboration with L&T, M.Tech. Artificial Intelligence and Machine Learning with LTIMindtree as knowledge partner, and B.Com. specialisations run with NSE Academy and TCS. VIT's International Transfer Programme offers 2+2 bachelor's, 1+1 master's, 3+2 and 3.5+1.5 accelerated pathways with partner universities abroad, and is available in seven engineering disciplines: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, Mechanical Engineering, Chemical Engineering, Civil Engineering and Biotechnology. VIT states it holds more than 500 memoranda of understanding with foreign universities and is a partner in the European Commission-funded Erasmus+ CBHE HARMONY project on internationalisation, led by the University of Zaragoza. On placement outcomes, VIT's NIRF 2025 submission for the Vellore campus records 4,031 of 5,964 graduating four-year undergraduates placed in 2023-24 at a median salary of INR 899,000, and 884 of 1,270 two-year postgraduates placed at a median of INR 915,000.",
+      "hostelOverview": "The Vellore campus has 32 hostel blocks - 21 for men and the remainder for women - housing over 30,000 residents a year. NRI and foreign students pay in USD on a separate published tariff. For 2026-27 the men's regular blocks range from USD 2,170 for a six-bed non-air-conditioned room with vegetarian mess to USD 3,240 for a two-bed air-conditioned room with special mess, and the women's blocks from USD 2,680 for a four-bed air-conditioned bunker-cot room to USD 3,950 for a three-bed apartment room. Each figure covers room, mess, a non-refundable USD 250 admission fee and a refundable USD 400 caution deposit, and includes laundry up to 44 washes. Rooms are allotted first come, first served and the hostel fee is paid separately from tuition.",
+      "dietarySupport": "Hostel fees are quoted as room-plus-mess packages, so meals are prepaid rather than pay-as-you-go. Students choose between vegetarian, non-vegetarian and special mess tiers at the Vellore campus, and VIT states its catering serves vegetarian, non-vegetarian and international palates. Mess selection can be changed monthly, but upgrading in the fall semester requires paying the full differential and there is no refund for downgrading a mess or room.",
+      "safetyOverview": "Hostel premises have round-the-clock security personnel, and each block is staffed by supervisors, student counsellors and maintenance staff. A hostel review committee meets once a fortnight to take resident queries. VIT runs a primary health centre in the Dr. A.L. Mudaliar Block on campus with a pharmacy, two consultation rooms, an emergency room and 24-hour doctor and nursing cover.",
+      "studentSupport": "The International Relations Office in Dr. M.G.R. Block handles NRI and foreign admissions and every international student registers there on the day of admission. It is reachable at global@vit.ac.in and by phone on +91-416-220-2070 or +91-416-220-2072. VIT also operates an Equal Opportunity Cell, a Student Grievance Redressal Committee, an Internal Complaints Committee, a disability support service and the Centre for VIT Happiness and Well Being.",
+      "whyChoose": [
+        "Foreign nationals and NRI applicants can be admitted to B.Tech. directly on Class 12 or equivalent results, with no requirement to sit VITEEE - a genuinely separate channel from the domestic entrance-test route.",
+        "Two US accreditors recognise VIT's Vellore provision: VIT states that its B.Tech. Computer Science and Engineering is accredited by both the Computing Accreditation Commission and the Engineering Accreditation Commission of ABET, and its B.Tech. Electronics and Communication Engineering by the ABET Engineering Accreditation Commission, while VIT Business School, which teaches the Vellore MBA, appears as an accredited school in the AACSB business school directory.",
+        "Tuition for every international programme is published in USD on VIT's own international fee page for 2026-27, including USD 9,000 a year for B.Tech. and USD 6,450 a year for the MBA, so the cost is knowable before applying.",
+        "NAAC accredited VIT at A++ grade with a CGPA of 3.66 in its fourth assessment cycle, declared in August 2021, and NIRF 2025 placed VIT at 14th among universities, 16th in engineering and 21st overall in India.",
+        "Four B.Tech programmes at the Vellore campus hold National Board of Accreditation Tier I accreditation under the Washington Accord, running to 30 June 2031 - Chemical, Electrical and Electronics, Electronics and Instrumentation, and Mechanical Engineering.",
+        "The International Transfer Programme allows part of a VIT degree to be completed at a partner university abroad through 2+2, 1+1, 3+2 and 3.5+1.5 structures across seven engineering disciplines."
+      ],
+      "thingsToConsider": [
+        "An Indian Student visa prohibits employment or business activity, so there is no part-time work income to offset costs; students must also open an NRO bank account and give the details to the FRRO.",
+        "VIT allots the B.Tech. branch after reviewing the application and supporting documents, and states that the branch once allotted will not be changed under any circumstances - so applicants cannot count on switching specialisation after arrival.",
+        "Foreign applicants who studied Physics, Chemistry and Biology without Mathematics are restricted to a short named list of bio-related B.Tech. programmes, and at the Vellore campus that means Biotechnology, Computer Science and Engineering (Bioinformatics) or Health Sciences and Technology, with a compulsory bridge course in Mathematics after joining.",
+        "Applicants from boards outside VIT's recognised-equivalence list must obtain a University Grants Commission equivalence certificate, which is mandatory at the time of admission rather than at application.",
+        "The NRI category requires sponsorship by a parent living abroad plus that parent's employer certificate; sponsorship by a relative or friend is not accepted, so the NRI route is not a general discount channel.",
+        "VIT marks its published international application deadlines as tentative and states that hostel fees are subject to annual escalation, so the 31 August 2026 B.Tech. and 30 June 2026 other-programme dates should be treated as provisional."
+      ],
+      "bestFitFor": [
+        "Foreign nationals and NRI applicants who want an English-taught Indian engineering or computing degree and prefer a merit-based document route over preparing for an Indian entrance examination.",
+        "Applicants who need published, dated tuition in USD before committing, rather than an on-request quotation negotiated after an offer.",
+        "Students who want the option to transfer part of the degree to a partner university abroad through a structured 2+2 or 1+1 pathway rather than reapplying independently later.",
+        "Business and commerce applicants who want an AACSB-listed business school and a campus that runs commerce specialisations with NSE Academy and TCS.",
+        "Students comfortable living on a large, largely self-contained campus in a mid-sized Tamil Nadu city rather than in a metropolitan centre."
+      ],
+      "industryPartners": [
+        "Tata Consultancy Services (TCS)",
+        "Larsen & Toubro (L&T)",
+        "LTIMindtree",
+        "NSE Academy"
+      ],
+      "recognitionBadges": [
+        "University Grants Commission (India) - Deemed-to-be University under Section 3 of the UGC Act 1956, conferred 2001",
+        "NAAC — Accredited A++, CGPA 3.66, Cycle 4 (declared August 2021)",
+        "NBA Tier I (Washington Accord) — four B.Tech programmes accredited to 30 June 2031",
+        "ABET (USA) - B.Tech. Computer Science and Engineering accredited by the Computing Accreditation Commission and the Engineering Accreditation Commission",
+        "ABET (USA) - B.Tech. Electronics and Communication Engineering accredited by the Engineering Accreditation Commission",
+        "AACSB International - VIT Business School listed as an accredited school",
+        "NIRF 2025 (Ministry of Education, India) - Rank 14 University, Rank 16 Engineering, Rank 21 Overall"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NAAC - accreditation status of institutions with valid accreditation",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NBA - accreditation programme registers (Engineering UG Tier I, Washington Accord)",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "VIT - Ranking and Recognition (NIRF 2025 ranks and QS subject placements)",
+          "url": "https://vit.ac.in/ranking-and-recognition"
+        },
+        {
+          "label": "VIT - About: deemed-to-be-university status under Section 3 of the UGC Act",
+          "url": "https://vit.ac.in/about"
+        },
+        {
+          "label": "AACSB - VIT Business School, Vellore Institute of Technology accredited school listing",
+          "url": "https://www.aacsb.edu/accredited/v/vit-business-school-vellore-institute-of-technology"
+        },
+        {
+          "label": "VIT School of Computer Science and Engineering - ABET accreditation statement",
+          "url": "https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is VIT Vellore a public or a private university?",
+          "answer": "VIT is private. It was founded in 1984 as the self-financing Vellore Engineering College and was conferred deemed-to-be-university status under Section 3 of the University Grants Commission Act 1956 in 2001. On the regulators' own registers, NAAC accredited VIT at A++ with a CGPA of 3.66 in Cycle 4, declared August 2021, and the National Board of Accreditation lists four Vellore B.Tech programmes at Tier I under the Washington Accord to 30 June 2031."
+        },
+        {
+          "question": "Does this page cover VIT Chennai, VIT-AP or VIT Bhopal?",
+          "answer": "No. The fees, hostel tariffs, placement data and programme availability here are for the Vellore campus in Tamil Nadu. VIT also runs campuses at Chennai, Amaravati in Andhra Pradesh and Bhopal in Madhya Pradesh, which have their own programme lists and their own NIRF submissions. Confirm the campus code on your application before paying."
+        },
+        {
+          "question": "What language are the programmes taught in?",
+          "answer": "English throughout, with no local-language transition later in the degree. VIT's foreign-category eligibility rules require applicants to have studied English through higher secondary level or attended an English-medium school, and no separate IELTS or TOEFL score is listed as a requirement on VIT's international admissions pages."
+        },
+        {
+          "question": "Do international applicants have to take the VITEEE entrance exam?",
+          "answer": "No, not on the international route. VIT operates a dedicated NRI and Foreign category application where B.Tech. admission is based on merit in the qualifying examination and availability of seats. NRI and OCI candidates may alternatively apply through the general category, where VITEEE is mandatory. For the non-engineering undergraduate programmes VIT states there is no entrance examination at all."
+        },
+        {
+          "question": "What are the B.Tech. entry requirements for a foreign national?",
+          "answer": "Twelve years of schooling equivalent to the Indian 10+2 system, with Mathematics and Physics compulsory and a third subject from Chemistry, Computing Sciences, Electronics, Biology or Biotechnology. The minimum is a 55 per cent aggregate in those subjects at Class 12 or equivalent, with not less than 50 per cent in Mathematics. Applicants from Nepal need 55 per cent across Class 11 and Class 12 combined."
+        },
+        {
+          "question": "How do the NRI and Foreign categories differ?",
+          "answer": "The Foreign category covers any foreign national with a valid passport or National ID, including OCI holders; Bhutanese candidates may use a birth certificate or National ID instead. The NRI category is for Indian nationals whose parent works abroad, requires a 60 per cent PCM aggregate rather than 55, and requires parent-only sponsorship plus that parent's employer certificate. The USD 50 application fee applies to NRI applicants only."
+        },
+        {
+          "question": "What does a year at VIT Vellore cost for an international student?",
+          "answer": "For 2026-27 VIT publishes B.Tech. tuition at USD 9,000 a year plus a one-time refundable USD 100 caution deposit, MBA, M.Tech., MCA, M.Des. and M.Arch. at USD 6,450 plus a USD 50 deposit, and M.Sc., MSW, BCA, B.Com., BBA and B.Sc. Computer Science at USD 3,450 plus a USD 50 deposit. Hostel and mess are separate, at roughly USD 2,170 to USD 3,950 for the first year depending on room type."
+        },
+        {
+          "question": "How do I apply, and what is the exact route?",
+          "answer": "Register as a new user on VIT's NRI and Foreign online application, log in with the password VIT emails you, complete the form, pay the application fee if you are an NRI applicant, then upload a photograph and PDF documents of up to 1 MB each. B.Tech. applicants use the undergraduate international application at admissions.vit.ac.in; postgraduate applicants use the separate PG NRI and Foreign application. VIT acknowledges receipt within 10 working days and processes complete applications in 15 to 20 working days."
+        },
+        {
+          "question": "When are the application deadlines and when does teaching start?",
+          "answer": "VIT lists 31 August 2026 as the tentative last date for B.Tech. NRI and Foreign applications, and 30 June 2026 for the other undergraduate and the postgraduate NRI and Foreign applications, with postgraduate forms issued from 30 January 2026. The 2026 B.Tech. foreign intake is advertised as a July session, and the academic year runs as a Fall and a Winter semester."
+        },
+        {
+          "question": "What documents are required, and is a UGC equivalence certificate needed?",
+          "answer": "At application: proof of age and nationality, Class 11 and Class 12 marksheets or the AS and A Level equivalents, and for NRI applicants a parental visa or resident card plus employer certificate. At admission a sponsorship letter is mandatory, and applicants from a board outside VIT's recognised-equivalence list must produce a University Grants Commission equivalence certificate confirming their qualification is equivalent to Class 12."
+        },
+        {
+          "question": "What visa do I need and do I have to register after arriving?",
+          "answer": "A student visa, issued by an Indian Mission on the strength of an admission offer to a full-time regular course at a recognised institution plus evidence of financial support. Foreign nationals on a student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival through the e-FRRO portal; the rule differs for some nationalities. The Bureau of Immigration also states that student-visa holders may not take employment in India."
+        },
+        {
+          "question": "What accommodation is available and what does it cost?",
+          "answer": "The Vellore campus has 32 hostel blocks, 21 for men, housing more than 30,000 residents a year. For 2026-27 the NRI and foreign tariff runs from USD 2,170 for a six-bed non-air-conditioned men's room with vegetarian mess to USD 3,950 for a three-bed apartment room in the women's hostel, each including mess, a USD 250 non-refundable admission fee and a USD 400 refundable caution deposit. Rooms are allotted first come, first served and hostel fees are paid separately from tuition."
+        },
+        {
+          "question": "What do VIT Vellore's own placement figures show?",
+          "answer": "VIT's NIRF 2025 submission for the Vellore campus reports that 4,031 of 5,964 four-year undergraduates who graduated in the minimum stipulated time in 2023-24 were placed, at a median salary of INR 899,000, and that 884 of 1,270 two-year postgraduates were placed at a median of INR 915,000. A further 1,255 undergraduates went on to higher studies. Headline figures VIT publishes on its Career Development Centre pages cover all four campuses together."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "VIT - International Admissions overview",
+          "url": "https://vit.ac.in/admissions/international/overview",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for the existence of a dedicated NRI/Foreign international admissions channel, the International Relations Office contact details at the Vellore campus, and the list of international programme categories."
+        },
+        {
+          "label": "VIT - B.Tech. international admissions eligibility and procedure",
+          "url": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for NRI vs Foreign category definitions, subject and percentage eligibility, recognised equivalent boards, the seven-stage application process, the direct-vs-VITEEE selection routes, documents required and the tentative 31 August 2026 deadline."
+        },
+        {
+          "label": "VIT - Other undergraduate international admissions (B.Com., BBA, BCA, B.Sc.)",
+          "url": "https://vit.ac.in/admissions/international/otherugprogrammes",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence that non-engineering undergraduate admission has no entrance examination, plus course-wise NRI (60 per cent) and Foreign (55 per cent) eligibility and the tentative 30 June 2026 deadline."
+        },
+        {
+          "label": "VIT - Postgraduate international admissions (M.Tech., MBA, MCA, M.Sc., M.Des., M.Arch.)",
+          "url": "https://vit.ac.in/admissions/international/pg",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for MBA and M.Sc. Data Science eligibility, the postgraduate NRI/Foreign fee bands, the 30 January to 30 June 2026 application window, campus availability per programme and the documents required at reporting."
+        },
+        {
+          "label": "VIT - International admissions fee structure",
+          "url": "https://vit.ac.in/admissions/international/fee",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Gold-standard official source for 2026-27 international tuition in USD by programme band, including the caution deposits and the Vellore hostel and mess links."
+        },
+        {
+          "label": "VIT - Ranking and Recognition (NIRF 2025 and QS subject placements)",
+          "url": "https://vit.ac.in/ranking-and-recognition",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for NIRF 2025 ranks (14 University, 14 Research, 16 Engineering, 21 Overall) and QS subject placements. The NAAC award is evidenced against NAAC's own accreditation-status publication instead of this page."
+        },
+        {
+          "label": "VIT - NIRF 2025 Engineering data submission (Vellore, IR-E-U-0490)",
+          "url": "https://vit.ac.in/files/nirf/Engineering-NIRF-2025.pdf",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Government data-capture submission giving Vellore-campus student strength, the outside-country student counts, and 2023-24 placement and median-salary figures by programme level."
+        },
+        {
+          "label": "VIT - About (history, deemed-university status, leadership)",
+          "url": "https://vit.ac.in/about",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for the 1984 founding as Vellore Engineering College, the 2001 conferment of university status under Section 3 of the UGC Act 1956, and the Chancellor's identity."
+        },
+        {
+          "label": "VIT - Hostels (Vellore campus)",
+          "url": "https://vit.ac.in/campuslife/hostels",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for 32 hostel blocks at Vellore, 21 of them men's, over 30,000 residents a year, fortnightly hostel review committee meetings, on-site amenities and security cover, and the links to the 2026-27 NRI/Foreign hostel tariffs."
+        },
+        {
+          "label": "VIT - Men's hostel fee structure 2026-27, Vellore campus (Indian, NRI and Foreign)",
+          "url": "https://vit.ac.in/wp-content/uploads/2026/06/MH-First-Year-FEE-structure-Indian-NRI-FOREIGN-Category-2026-27.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Official 2026-27 tariff giving USD room-plus-mess totals for NRI and foreign men, from USD 2,170 to USD 3,240 in the regular blocks, inclusive of admission fee and refundable caution deposit."
+        },
+        {
+          "label": "VIT - Ladies hostel fee structure 2026-27, Vellore campus (NRI and Foreign)",
+          "url": "https://vit.ac.in/wp-content/uploads/2026/05/LH-NRI-fees-2026-27.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Official 2026-27 tariff giving USD room-plus-mess totals for NRI and foreign women, from USD 2,680 to USD 3,950, plus the mess-change and no-refund conditions."
+        },
+        {
+          "label": "VIT - School of Computer Science and Engineering (SCOPE), undergraduate",
+          "url": "https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "VIT's own statement that B.Tech. Computer Science and Engineering is accredited by the Computing Accreditation Commission and the Engineering Accreditation Commission of ABET, plus the Vellore-campus CSE specialisation list."
+        },
+        {
+          "label": "VIT - School of Electronics Engineering (SENSE), undergraduate",
+          "url": "https://vit.ac.in/schools/school-of-electronics-engineering-for-ug-courses",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "VIT's own statement that the B.Tech. Electronics and Communication Engineering courses are accredited by the Engineering Accreditation Commission of ABET."
+        },
+        {
+          "label": "AACSB - VIT Business School, Vellore Institute of Technology accredited school listing",
+          "url": "https://www.aacsb.edu/accredited/v/vit-business-school-vellore-institute-of-technology",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Third-party accreditor's own directory entry confirming business accreditation for the Vellore-based business school, with the Vellore 632 014 main-campus address."
+        },
+        {
+          "label": "VIT - Programmes offered (campus-wise availability)",
+          "url": "https://vit.ac.in/admissions/programmes-offered",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence that B.Tech. CSE, ECE, Mechanical and Civil, the MBA, M.Sc. Data Science and B.Com. are each offered at the Vellore campus, and that some VIT programmes are offered only at Chennai, AP or Bhopal."
+        },
+        {
+          "label": "VIT - International Transfer Programmes (ITP)",
+          "url": "https://vit.ac.in/internationalrelations/itp",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Primary evidence for the 2+2, 1+1, 3+2 and 3.5+1.5 transfer structures and the seven engineering disciplines in which ITP is offered."
+        },
+        {
+          "label": "Bureau of Immigration, Ministry of Home Affairs - Registration requirements for foreign nationals",
+          "url": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Government source for the rule that student-visa holders with visas valid beyond 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival."
+        },
+        {
+          "label": "Study in India (Ministry of Education) - Onboarding and FRRO",
+          "url": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Government source for student-visa eligibility conditions, validity of up to five years, required documents and the online e-FRRO process."
+        },
+        {
+          "label": "NAAC - accreditation status, institutions with valid accreditation",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Regulator's own published accreditation status, giving VIT (AISHE U-0490, Vellore) Cycle 4, CGPA 3.66, grade A++, declared 31-08-2021. The publication carries a declaration date and no expiry date, so no validity end date is claimed."
+        },
+        {
+          "label": "NBA - accreditation programme registers (Engineering UG Tier I, Washington Accord)",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Regulator's own register recording Vellore Institute of Technology (Vellore) with four B.Tech programmes at Tier I under the Washington Accord for AY 2025-26 to 2030-31, up to 30 June 2031. The register is cumulative history, so only the accreditation period establishes currency."
+        },
+        {
+          "label": "UGC Institutions of Eminence - official list of notified IoEs",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Complete regulator list of the twelve notified Institutions of Eminence with their notification dates. VIT is absent from both the public and private tables, which is why no Institution of Eminence claim appears anywhere in this record."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers the Vellore campus of Vellore Institute of Technology only. VIT Chennai, VIT-AP and VIT Bhopal run separate programme lists, fee schedules and regulatory submissions.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "published"
+        },
+        "internationalRoutes": [
+          "Foreign category - any foreign national with a valid passport or National ID, including OCI holders; direct admission on qualifying-examination merit, no VITEEE",
+          "NRI category - Indian nationals whose parent works abroad, with parent-only sponsorship and employer certificate; direct admission on qualifying-examination merit, no VITEEE",
+          "General category through VITEEE - open to NRI and OCI candidates who prefer the domestic entrance-test route"
+        ],
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my VIT Vellore eligibility",
+            "capture": [
+              "citizenship or passport country",
+              "prior qualification and board",
+              "Class 12 subject combination and percentage",
+              "NRI or foreign category",
+              "intended programme"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my VIT cost plan",
+            "capture": [
+              "intended programme",
+              "hostel room and mess preference",
+              "budget in USD",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": [
+              "document readiness",
+              "UGC equivalence certificate status",
+              "sponsorship documentation",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "immigration",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "citizenship",
+              "nearest Indian Mission",
+              "programme duration",
+              "arrival month"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "vit-vellore-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech. Computer Science and Engineering (Vellore campus)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 9000,
+            "officialTotalTuitionAmount": 36000,
+            "annualTuitionUsd": 9000,
+            "totalTuitionUsd": 36000,
+            "verifiedAt": "2026-08-22",
+            "notes": "VIT's international fee page publishes B.Tech. tuition for 2026-27 at USD 9,000 per annum, plus a one-time refundable caution deposit of USD 100, giving a first-year payment of USD 9,100. The four-year total is calculated as the annual figure times four and is not published as a lump sum. Hostel and mess are charged separately in USD (roughly USD 2,170 to USD 3,950 for the first year depending on room type) and are not included. Balance tuition is paid by fund transfer in USD after the advance instalment named on the provisional admission letter."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a valid passport or National ID, including OCI holders, admitted on Class 12 or equivalent merit",
+              "NRI applicants - Indian nationals whose parent works abroad, sponsored by that parent"
+            ],
+            "restrictions": [
+              "Foreign-category applicants need Mathematics and Physics plus a third subject from Chemistry, Computing Sciences, Electronics, Biology or Biotechnology, at 55 per cent aggregate with not less than 50 per cent in Mathematics",
+              "Applicants who studied Physics, Chemistry and Biology without Mathematics are eligible only for a named list of bio-related B.Tech. programmes and must complete a bridge course in Mathematics after joining",
+              "NRI-category applicants need a 60 per cent PCM aggregate, a parent-only sponsorship and that parent's employer certificate; a relative or friend may not sponsor",
+              "Applicants from a board outside VIT's recognised-equivalence list must produce a UGC equivalence certificate at admission"
+            ],
+            "notes": "No IELTS or TOEFL requirement is published; VIT instead requires that the applicant studied English through higher secondary level or at an English-medium school.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure"
+          },
+          "admissionsContent": {
+            "overview": "Foreign nationals and NRI applicants apply through VIT's dedicated international B.Tech. application. Admission is decided on merit in the qualifying examination and seat availability, with no VITEEE entrance test, and the specialisation branch is allotted by VIT after reviewing the submitted documents.",
+            "eligibility": {
+              "intro": "Entry needs twelve years of schooling equivalent to the Indian 10+2 system, with the required science and mathematics subjects and English-medium study.",
+              "items": [
+                "Foreign category: 55 per cent aggregate in Mathematics, Physics and a third subject from Chemistry, Computing Sciences, Electronics, Biology or Biotechnology, with at least 50 per cent in Mathematics",
+                "Nepal Education Board applicants: 55 per cent aggregate across Class 11 and Class 12 combined, with both marksheets submitted",
+                "NRI category: 60 per cent aggregate in Physics, Chemistry and Mathematics with at least 50 per cent in Mathematics, and date of birth on or after 1 July 2004",
+                "English studied through higher secondary level, or schooling at an English-medium institution",
+                "Cambridge or Edexcel A Level applicants: Mathematics and Physics at A Level, Chemistry at A or AS Level; IB applicants: Mathematics and Physics at Higher Level, Chemistry at Higher or Standard Level",
+                "Proof of foreign nationality by valid passport or National ID; Bhutanese candidates may submit a birth certificate or National ID"
+              ]
+            },
+            "applicationSteps": [
+              "Register as a new user on VIT's NRI and Foreign undergraduate application portal and collect the password emailed by VIT",
+              "Complete the online application form and note the application number generated on submission",
+              "Pay the USD 50 non-refundable application fee if applying in the NRI category",
+              "Upload a 3.5 cm by 4.5 cm photograph between 10 kB and 200 kB, then upload each supporting document as a PDF of up to 1 MB",
+              "Wait for VIT's acknowledgement within 10 working days; complete applications are processed in 15 to 20 working days",
+              "On receiving the provisional admission letter, pay the advance fee in USD, then the balance tuition by fund transfer",
+              "Pay the hostel fee separately by fund transfer and register at the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 11 marksheet, AS Level or Form V results for applicants still awaiting final results",
+                "Class 12 marksheet, A Level or Form VI results for applicants who have completed the qualifying examination",
+                "Both Class 11 and Class 12 marksheets for Nepal Education Board applicants",
+                "UGC equivalence certificate for boards outside VIT's recognised-equivalence list, mandatory at admission",
+                "Transfer, migration or college leaving certificate from the last institution attended, produced at reporting"
+              ],
+              "application": [
+                "Proof of age and nationality: valid passport, or birth certificate or National ID for Bhutanese nationals",
+                "NRI applicants: parent's visa or resident card evidencing NRI status, plus the sponsoring parent's employer certificate",
+                "Sponsorship letter, optional at application but mandatory at admission",
+                "Passport-size colour photographs and a physical fitness certificate signed by an authorised physician, at reporting",
+                "Common affidavit and undertaking form signed by student and parent, at reporting"
+              ]
+            },
+            "deadlinesNote": "VIT lists 31 August 2026 as the tentative last date for the B.Tech. NRI and Foreign online application, with the 2026 foreign intake advertised as a July session.",
+            "visaConsiderations": [
+              "A student visa requires an admission offer to a full-time regular course plus evidence of financial support; apply through an Indian Mission",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival if the visa is valid beyond 180 days",
+              "Student-visa holders may not take up employment or business activity in India and must open an NRO bank account"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international tuition of USD 9,000 per year for B.Tech. at the Vellore campus, from VIT's own international fee page, plus a one-time refundable USD 100 caution deposit. Hostel and mess are billed separately in USD.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech. Computer Science and Engineering",
+              "language": "English",
+              "details": "Delivered by VIT's School of Computer Science and Engineering (SCOPE) at Vellore under the Fully Flexible Credit System, which lets students select electives, faculty and time slots. VIT states the programme is accredited by both the Computing Accreditation Commission and the Engineering Accreditation Commission of ABET, USA. Vellore-campus specialisation streams within SCOPE include Bioinformatics, Information Security, Internet of Things, Data Science, Blockchain Technology, Artificial Intelligence and Machine Learning, and a Business Systems track run with TCS; VIT allots the branch after reviewing the application and does not change it later."
+            }
+          ]
+        },
+        {
+          "slug": "vit-vellore-btech-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.Tech. Electronics and Communication Engineering (Vellore campus)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 9000,
+            "officialTotalTuitionAmount": 36000,
+            "annualTuitionUsd": 9000,
+            "totalTuitionUsd": 36000,
+            "verifiedAt": "2026-08-22",
+            "notes": "VIT publishes a single international B.Tech. tuition band for 2026-27 of USD 9,000 per annum covering all B.Tech. programmes, plus a one-time refundable caution deposit of USD 100, so the first-year payment is USD 9,100. The four-year total is the annual figure times four and is not published as a lump sum. Hostel and mess charges are separate and quoted in USD on the Vellore hostel tariffs."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a valid passport or National ID, including OCI holders",
+              "NRI applicants sponsored by a parent working abroad"
+            ],
+            "restrictions": [
+              "Mathematics and Physics are compulsory subjects; applicants without Mathematics at Class 12 are not eligible for this programme",
+              "Foreign category requires a 55 per cent aggregate in the required subjects with at least 50 per cent in Mathematics; NRI category requires 60 per cent in PCM",
+              "Applicants from a board outside VIT's recognised-equivalence list must produce a UGC equivalence certificate at admission"
+            ],
+            "notes": "The branch is allotted by VIT on review of the application and supporting documents, and VIT states it will not be changed after allotment.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure"
+          },
+          "admissionsContent": {
+            "overview": "International applicants use the same NRI and Foreign B.Tech. application as all other engineering branches at Vellore. Selection is on qualifying-examination merit and seat availability rather than an entrance test, and VIT allots the branch after document review.",
+            "eligibility": {
+              "intro": "Entry requires 10+2-equivalent schooling with Mathematics and Physics compulsory, plus English-medium study.",
+              "items": [
+                "Foreign category: 55 per cent aggregate in Mathematics, Physics and a third permitted science or computing subject, with at least 50 per cent in Mathematics",
+                "NRI category: 60 per cent aggregate in Physics, Chemistry and Mathematics with at least 50 per cent in Mathematics",
+                "Date of birth on or after 1 July 2004 for NRI-category applicants",
+                "English studied through higher secondary level, or schooling at an English-medium institution",
+                "Proof of foreign nationality by valid passport or National ID"
+              ]
+            },
+            "applicationSteps": [
+              "Register on VIT's NRI and Foreign undergraduate application portal and log in with the emailed password",
+              "Complete the online form and record the generated application number",
+              "Pay the USD 50 non-refundable application fee if applying under the NRI category",
+              "Upload the photograph and each supporting document as a PDF of up to 1 MB",
+              "Accept the provisional admission letter, pay the advance fee in USD, then the balance tuition by fund transfer",
+              "Pay the hostel fee separately and register at the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 11 marksheet, AS Level or Form V results for applicants awaiting final results",
+                "Class 12 marksheet, A Level or Form VI results for applicants who have completed the qualifying examination",
+                "UGC equivalence certificate where the board is outside VIT's recognised-equivalence list",
+                "Transfer, migration or college leaving certificate from the last institution attended, at reporting"
+              ],
+              "application": [
+                "Proof of age and nationality: valid passport, or birth certificate or National ID for Bhutanese nationals",
+                "NRI applicants: parent's visa or resident card and the sponsoring parent's employer certificate",
+                "Sponsorship letter, mandatory at admission",
+                "Physical fitness certificate, common affidavit and undertaking form, at reporting"
+              ]
+            },
+            "deadlinesNote": "The tentative last date for the B.Tech. NRI and Foreign online application is 31 August 2026, with the 2026 foreign intake advertised as a July session.",
+            "visaConsiderations": [
+              "Apply for a student visa through an Indian Mission with the admission letter and evidence of financial support",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international B.Tech. tuition of USD 9,000 per year at the Vellore campus from VIT's own international fee page, plus a one-time refundable USD 100 caution deposit; hostel and mess are billed separately in USD.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech. Electronics and Communication Engineering",
+              "language": "English",
+              "details": "Delivered by VIT's School of Electronics Engineering (SENSE) at Vellore, which states that the B.Tech. Electronics and Communication Engineering courses are accredited by the Engineering Accreditation Commission of ABET, USA. Related Vellore-campus streams include Embedded Systems, VLSI, and Artificial Intelligence and Cybernetics. Electronics and Communication Engineering is one of the seven disciplines in which VIT's International Transfer Programme offers 2+2 and related pathways to a partner university abroad."
+            }
+          ]
+        },
+        {
+          "slug": "vit-vellore-btech-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.Tech. Mechanical Engineering (Vellore campus)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 9000,
+            "officialTotalTuitionAmount": 36000,
+            "annualTuitionUsd": 9000,
+            "totalTuitionUsd": 36000,
+            "verifiedAt": "2026-08-22",
+            "notes": "VIT's published 2026-27 international undergraduate fee table sets B.Tech. tuition at USD 9,000 per annum across branches, plus a one-time refundable caution deposit of USD 100 for a first-year total of USD 9,100. The four-year figure is derived by multiplying the annual rate and is not published as a single sum. Accommodation and mess are charged separately in USD under the Vellore hostel tariffs."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a valid passport or National ID, including OCI holders",
+              "NRI applicants sponsored by a parent working abroad"
+            ],
+            "restrictions": [
+              "Mathematics and Physics are compulsory; applicants without Mathematics at Class 12 are not eligible for this programme",
+              "Foreign category requires 55 per cent aggregate with at least 50 per cent in Mathematics; NRI category requires 60 per cent in PCM",
+              "NRI sponsorship must come from the applicant's father or mother living abroad, evidenced by that parent's employer certificate"
+            ],
+            "notes": "Admission is on qualifying-examination merit and seat availability; the branch is allotted by VIT and is not changed afterwards.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure"
+          },
+          "admissionsContent": {
+            "overview": "Mechanical Engineering at Vellore is admitted through VIT's common international B.Tech. route. There is no entrance examination on this route: VIT scrutinises the uploaded documents, issues a provisional admission letter and allots the branch on that basis.",
+            "eligibility": {
+              "intro": "Applicants need 10+2-equivalent schooling with Mathematics and Physics, studied in English, at the published minimum aggregates.",
+              "items": [
+                "Foreign category: 55 per cent aggregate in Mathematics, Physics and a permitted third subject, with at least 50 per cent in Mathematics",
+                "NRI category: 60 per cent aggregate in Physics, Chemistry and Mathematics with at least 50 per cent in Mathematics",
+                "NRI-category date of birth on or after 1 July 2004",
+                "English studied through higher secondary level, or schooling at an English-medium institution",
+                "Proof of foreign nationality by valid passport or National ID for foreign-category applicants"
+              ]
+            },
+            "applicationSteps": [
+              "Register on the NRI and Foreign undergraduate application portal and log in with the password VIT emails",
+              "Complete the online application and note the application number",
+              "Pay the USD 50 non-refundable application fee if applying under the NRI category",
+              "Upload the photograph and PDF documents of up to 1 MB each within the stated specifications",
+              "Pay the advance fee named on the provisional admission letter, then the balance tuition by fund transfer in USD",
+              "Pay the hostel fee separately and report to the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 11 marksheet, AS Level or Form V results for applicants awaiting results",
+                "Class 12 marksheet, A Level or Form VI results for completed qualifications",
+                "UGC equivalence certificate where the board sits outside VIT's recognised-equivalence list",
+                "Transfer, migration or college leaving certificate at reporting"
+              ],
+              "application": [
+                "Valid passport, or birth certificate or National ID for Bhutanese nationals",
+                "NRI applicants: parent's visa or resident card and the sponsoring parent's employer certificate",
+                "Sponsorship letter, mandatory at admission",
+                "Physical fitness certificate, common affidavit and undertaking form at reporting"
+              ]
+            },
+            "deadlinesNote": "The tentative last date for the B.Tech. NRI and Foreign application is 31 August 2026; the 2026 foreign intake is advertised as a July session.",
+            "visaConsiderations": [
+              "A student visa is issued against an admission offer to a full-time regular course plus evidence of financial support",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international B.Tech. tuition of USD 9,000 per year at Vellore from VIT's own international fee page, plus a one-time refundable USD 100 caution deposit; hostel, mess and the USD 50 NRI application fee are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech. Mechanical Engineering",
+              "language": "English",
+              "details": "Taught at the Vellore campus under the Fully Flexible Credit System. Mechanical Engineering is one of the seven disciplines covered by VIT's International Transfer Programme, so students may complete part of the degree at a partner university abroad through a 2+2, 3+2 or 3.5+1.5 structure. Related Vellore-campus specialisations recorded in VIT's programme list include Automotive Design, Electric Vehicles and Robotics, and postgraduate progression routes at Vellore include M.Tech. CAD/CAM, Smart Manufacturing and Smart Mobility."
+            }
+          ]
+        },
+        {
+          "slug": "vit-vellore-btech-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.Tech. Civil Engineering (Vellore campus)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 9000,
+            "officialTotalTuitionAmount": 36000,
+            "annualTuitionUsd": 9000,
+            "totalTuitionUsd": 36000,
+            "verifiedAt": "2026-08-22",
+            "notes": "The 2026-27 international undergraduate fee table on VIT's own site sets B.Tech. tuition at USD 9,000 per annum with a one-time refundable USD 100 caution deposit, a USD 9,100 first-year payment. The four-year total is the annual rate multiplied by four rather than a published lump sum, and excludes hostel, mess and the USD 50 NRI application fee."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a valid passport or National ID, including OCI holders",
+              "NRI applicants sponsored by a parent working abroad"
+            ],
+            "restrictions": [
+              "Mathematics and Physics are compulsory subjects for this programme",
+              "Foreign category requires 55 per cent aggregate with at least 50 per cent in Mathematics; NRI category requires 60 per cent in PCM",
+              "A UGC equivalence certificate is mandatory at admission for boards outside VIT's recognised-equivalence list"
+            ],
+            "notes": "VIT also lists a separate B.Tech. Civil Engineering track run in collaboration with L&T; confirm which variant an offer refers to before accepting.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure"
+          },
+          "admissionsContent": {
+            "overview": "Civil Engineering at Vellore is admitted through the common NRI and Foreign B.Tech. application, on merit in the qualifying examination and seat availability. VIT scrutinises documents, issues a provisional admission letter and allots the branch on that review.",
+            "eligibility": {
+              "intro": "Applicants need 10+2-equivalent schooling with Mathematics and Physics studied in English at the published minimum aggregates.",
+              "items": [
+                "Foreign category: 55 per cent aggregate in Mathematics, Physics and a permitted third subject, with at least 50 per cent in Mathematics",
+                "NRI category: 60 per cent aggregate in Physics, Chemistry and Mathematics with at least 50 per cent in Mathematics",
+                "NRI-category date of birth on or after 1 July 2004",
+                "English studied through higher secondary level, or schooling at an English-medium institution",
+                "Proof of foreign nationality by valid passport or National ID"
+              ]
+            },
+            "applicationSteps": [
+              "Register on VIT's NRI and Foreign undergraduate application portal and log in with the emailed password",
+              "Complete the online application form and note the application number",
+              "Pay the USD 50 non-refundable application fee if applying under the NRI category",
+              "Upload the photograph and each document as a PDF of up to 1 MB",
+              "Pay the advance fee on the provisional admission letter, then the balance tuition by fund transfer in USD",
+              "Pay the hostel fee separately and register at the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 11 marksheet, AS Level or Form V results for applicants awaiting results",
+                "Class 12 marksheet, A Level or Form VI results for completed qualifications",
+                "UGC equivalence certificate for boards outside VIT's recognised-equivalence list",
+                "Transfer, migration or college leaving certificate at reporting"
+              ],
+              "application": [
+                "Valid passport, or birth certificate or National ID for Bhutanese nationals",
+                "NRI applicants: parent's visa or resident card and the sponsoring parent's employer certificate",
+                "Sponsorship letter, mandatory at admission",
+                "Physical fitness certificate, common affidavit and undertaking form at reporting"
+              ]
+            },
+            "deadlinesNote": "VIT lists 31 August 2026 as the tentative last date for the B.Tech. NRI and Foreign online application, for a July 2026 foreign session.",
+            "visaConsiderations": [
+              "A student visa requires the admission offer and evidence of financial support, applied for at an Indian Mission",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international B.Tech. tuition of USD 9,000 per year at Vellore from VIT's own international fee page, plus a one-time refundable USD 100 caution deposit; hostel and mess are billed separately in USD.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech. Civil Engineering",
+              "language": "English",
+              "details": "Taught by VIT's School of Civil Engineering at Vellore under the Fully Flexible Credit System. Civil Engineering is one of the seven disciplines in which VIT's International Transfer Programme offers 2+2, 3+2 and 3.5+1.5 pathways to a partner university abroad. VIT separately lists a B.Tech. Civil Engineering variant delivered in collaboration with L&T, and postgraduate progression at Vellore includes M.Tech. Structural Engineering and M.Tech. Construction Technology and Management."
+            }
+          ]
+        },
+        {
+          "slug": "vit-vellore-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), Vellore campus",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6450,
+            "officialTotalTuitionAmount": 12900,
+            "annualTuitionUsd": 6450,
+            "totalTuitionUsd": 12900,
+            "verifiedAt": "2026-08-22",
+            "notes": "VIT's international fee page publishes MBA tuition for 2026-27 at USD 6,450 per annum with a USD 50 caution deposit, a total of USD 6,500 for the first year. The two-year total is the annual rate multiplied by two rather than a published lump sum. Hostel and mess are charged separately in USD on the Vellore tariff and are not included. The USD 50 application fee applies to NRI applicants only."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/pg",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals and NRI applicants holding a recognised undergraduate degree in any discipline",
+              "Applicants in the final year of a qualifying undergraduate degree on a 10+2+3 or 10+2+4 pattern"
+            ],
+            "restrictions": [
+              "A minimum of 60 per cent marks or First Class is required in Class 10, in Class 12 or the diploma, and in the undergraduate degree",
+              "The undergraduate degree must be from a recognised university or institution",
+              "NRI-category applicants must be sponsored by a parent working abroad and produce that parent's employer certificate"
+            ],
+            "notes": "International applicants use the postgraduate NRI and Foreign application rather than VIT's domestic MBA entrance and selection process.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/pg"
+          },
+          "admissionsContent": {
+            "overview": "The two-year MBA at Vellore is taught at VIT Business School, which appears as an accredited school in the AACSB directory. International applicants apply through VIT's postgraduate NRI and Foreign application, which runs on academic merit rather than an entrance test.",
+            "eligibility": {
+              "intro": "Entry is based on academic record across school and degree level, with a uniform 60 per cent or First Class threshold at each stage.",
+              "items": [
+                "A minimum of 60 per cent marks or First Class in Class 10",
+                "A minimum of 60 per cent marks or First Class in Class 12 or the equivalent diploma",
+                "A minimum of 60 per cent marks or First Class in any undergraduate degree from a recognised university or institution",
+                "Applicants may apply while in the final year of the qualifying undergraduate degree on a 10+2+3 or 10+2+4 pattern",
+                "NRI applicants: parental sponsorship with the sponsoring parent's employer certificate"
+              ]
+            },
+            "applicationSteps": [
+              "Register on VIT's postgraduate NRI and Foreign application, which opens on 30 January 2026 for the 2026-27 year",
+              "Complete the online form and upload the required academic and identity documents",
+              "Pay the USD 50 non-refundable application fee if applying under the NRI category",
+              "Await the provisional admission letter issued after VIT reviews eligibility",
+              "Pay the advance fee named on the letter, then the balance tuition by fund transfer in USD",
+              "Pay the hostel fee separately and register at the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 or diploma marksheets showing the 60 per cent or First Class threshold",
+                "Undergraduate degree marksheets, and the degree or provisional certificate where already awarded",
+                "UGC equivalence certificate where the qualification is from a board or university outside VIT's recognised-equivalence list",
+                "Transfer, migration or college leaving certificate from the last institution attended, at reporting"
+              ],
+              "application": [
+                "Valid passport or National ID as proof of age and nationality",
+                "NRI applicants: parent's visa or resident card and the sponsoring parent's employer certificate",
+                "Two recent passport-size colour photographs and a completed student profile, at reporting",
+                "Physical fitness certificate signed by an authorised physician, plus the common affidavit and undertaking form"
+              ]
+            },
+            "deadlinesNote": "The postgraduate NRI and Foreign application for 2026-27 is issued on 30 January 2026, with 30 June 2026 as the last date to complete the form.",
+            "visaConsiderations": [
+              "Apply for a student visa at an Indian Mission with the admission letter and evidence of financial support",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival where the visa exceeds 180 days",
+              "A student visa does not permit employment, internships for pay or business activity in India"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international MBA tuition of USD 6,450 per year at Vellore, plus a USD 50 caution deposit, from VIT's own international fee page. The same band covers M.Tech., MCA, M.Des. and M.Arch. Hostel and mess are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year Master of Business Administration",
+              "language": "English",
+              "details": "Delivered by VIT Business School at the Vellore campus, which the AACSB accredited-school directory lists with a Vellore 632 014 address and records as covering undergraduate, master's and doctoral business education. VIT's own milestones record AACSB accreditation for VIT Business School in 2021. The MBA is also offered at VIT's Chennai and Bhopal campuses under separate admissions, so confirm the campus named on the offer letter."
+            }
+          ]
+        },
+        {
+          "slug": "vit-vellore-msc-data-science",
+          "canonicalCourseSlug": "msc-data-science",
+          "officialTitle": "M.Sc. Data Science (2 Year), Vellore campus",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3450,
+            "officialTotalTuitionAmount": 6900,
+            "annualTuitionUsd": 3450,
+            "totalTuitionUsd": 6900,
+            "verifiedAt": "2026-08-22",
+            "notes": "VIT's international fee page publishes two-year M.Sc. tuition for 2026-27 at USD 3,450 per annum with a USD 50 caution deposit, a first-year total of USD 3,500. The two-year figure is the annual rate multiplied by two rather than a published lump sum. Hostel and mess are billed separately in USD on the Vellore tariff, and the USD 50 application fee applies to NRI applicants only."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/pg",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals and NRI applicants holding a quantitative bachelor's degree at the required percentage",
+              "Applicants in the final year of a qualifying undergraduate degree on a 10+2+3 or 10+2+4 pattern"
+            ],
+            "restrictions": [
+              "The undergraduate degree must be in Mathematics, Computer Science, Physics or Statistics, or an engineering or technology degree in CSE, IT, ECE, EEE or E&I",
+              "A minimum of 60 per cent of marks inclusive of all subjects is required",
+              "Mathematics must have been studied both at Class 12 and at degree level",
+              "NRI-category applicants must be sponsored by a parent working abroad, with that parent's employer certificate"
+            ],
+            "notes": "This is the two-year M.Sc. at the Vellore campus, distinct from VIT's five-year integrated and dual-degree Data Science routes, which carry different fees and entry rules.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/pg"
+          },
+          "admissionsContent": {
+            "overview": "The two-year M.Sc. Data Science at Vellore is admitted through VIT's postgraduate NRI and Foreign application. Entry turns on a quantitative undergraduate background and Mathematics studied at both Class 12 and degree level, rather than on the domestic VITMEE entrance test.",
+            "eligibility": {
+              "intro": "The subject prerequisites are specific: a quantitative degree plus Mathematics at two separate levels of prior study.",
+              "items": [
+                "Undergraduate degree in Mathematics, Computer Science, Physics or Statistics, or a UG degree in Engineering or Technology in CSE, IT, ECE, EEE or E&I",
+                "A minimum of 60 per cent of marks inclusive of all subjects in the qualifying degree",
+                "Mathematics studied as a subject at Class 12 and at degree level",
+                "Applicants may apply while in the final year of the qualifying degree on a 10+2+3 or 10+2+4 pattern",
+                "NRI applicants: parental sponsorship with the sponsoring parent's employer certificate"
+              ]
+            },
+            "applicationSteps": [
+              "Register on VIT's postgraduate NRI and Foreign application, issued from 30 January 2026 for the 2026-27 year",
+              "Complete the online form and upload degree and Class 12 marksheets evidencing the Mathematics prerequisite",
+              "Pay the USD 50 non-refundable application fee if applying under the NRI category",
+              "Await the provisional admission letter issued after VIT confirms eligibility",
+              "Pay the advance fee named on the letter, then the balance tuition by fund transfer in USD",
+              "Pay the hostel fee separately and register at the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 marksheet showing Mathematics as a studied subject",
+                "Undergraduate degree marksheets covering all subjects, evidencing the 60 per cent aggregate",
+                "Degree or provisional certificate where the qualification is already awarded",
+                "UGC equivalence certificate where the awarding body is outside VIT's recognised-equivalence list",
+                "Transfer, migration or college leaving certificate at reporting"
+              ],
+              "application": [
+                "Valid passport or National ID as proof of age and nationality",
+                "NRI applicants: parent's visa or resident card and the sponsoring parent's employer certificate",
+                "Two recent passport-size colour photographs and a completed student profile, at reporting",
+                "Physical fitness certificate, common affidavit and undertaking form at reporting"
+              ]
+            },
+            "deadlinesNote": "The postgraduate NRI and Foreign application is issued on 30 January 2026 with 30 June 2026 as the last date to complete the form for 2026-27.",
+            "visaConsiderations": [
+              "A student visa is issued against an admission offer to a full-time regular course plus evidence of financial support",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international tuition of USD 3,450 per year for two-year M.Sc. programmes at Vellore, plus a USD 50 caution deposit, from VIT's own international fee page. Hostel and mess are billed separately in USD.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year M.Sc. Data Science",
+              "language": "English",
+              "details": "Taught at the Vellore campus, where VIT also offers the same title at Chennai and VIT-AP under separate admissions. VIT runs adjacent quantitative master's programmes at Vellore including M.Sc. Artificial Intelligence and Machine Learning and M.Sc. Business Statistics, and progression to a Ph.D. is available through VIT's research programmes, which carry a separate NRI and Foreign application and a different fee band."
+            }
+          ]
+        },
+        {
+          "slug": "vit-vellore-bcom",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com. (Bachelor of Commerce), Vellore campus",
+          "durationYears": 3,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3450,
+            "officialTotalTuitionAmount": 10350,
+            "annualTuitionUsd": 3450,
+            "totalTuitionUsd": 10350,
+            "verifiedAt": "2026-08-22",
+            "notes": "VIT's international fee page groups BCA, B.Sc. Computer Science, B.Sc. Hospitality and Hotel Administration, B.Com. and BBA at USD 3,450 per annum for 2026-27 with a USD 50 caution deposit, a first-year total of USD 3,500. The three-year total is derived from the annual rate; VIT's School of Social Sciences and Languages publishes B.Com. curricula in three-year cohort bands such as 2025-2028. Hostel and mess are separate, and the USD 50 application fee applies to NRI applicants only."
+          },
+          "officialProgramUrl": "https://vit.ac.in/admissions/international/otherugprogrammes",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a valid passport or National ID who have completed 12 years of schooling",
+              "NRI applicants sponsored by a parent working abroad"
+            ],
+            "restrictions": [
+              "Foreign category requires a 55 per cent overall aggregate, or the grade-point equivalent, with Commerce, Accountancy, Book Keeping and Accountancy or Mathematics as a subject",
+              "NRI category requires a 60 per cent overall aggregate with the same subject requirement, and a date of birth on or after 1 July 2006",
+              "NRI applicants must have studied through regular, full-time, formal education with English as one of the subjects",
+              "A UGC equivalence certificate is mandatory at admission for boards outside VIT's recognised-equivalence list"
+            ],
+            "notes": "VIT states there is no entrance examination for this group of undergraduate programmes; admission is on Class 12 or equivalent performance.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://vit.ac.in/admissions/international/otherugprogrammes"
+          },
+          "admissionsContent": {
+            "overview": "B.Com. at Vellore sits in VIT's non-engineering undergraduate international group, where VIT states there is no entrance examination and admission is decided on merit in the qualifying Class 12 examination and seat availability.",
+            "eligibility": {
+              "intro": "Entry requires 12 years of schooling with a commerce or mathematics subject and the published minimum aggregate for the applicant's category.",
+              "items": [
+                "Foreign category: 55 per cent overall aggregate, or the grade-point equivalent, with Commerce, Accountancy, Book Keeping and Accountancy or Mathematics among the subjects studied",
+                "NRI category: 60 per cent overall aggregate with the same subject requirement",
+                "NRI category: date of birth on or after 1 July 2006, and study through regular, full-time, formal education with English as one of the subjects",
+                "Proof of foreign nationality by valid passport or National ID for foreign-category applicants",
+                "Equivalency marks card from the school where the qualification is graded rather than marked"
+              ]
+            },
+            "applicationSteps": [
+              "Register on VIT's NRI and Foreign undergraduate application for B.Sc., BCA, B.Com., BBA and related programmes",
+              "Complete the online form and note the application number generated",
+              "Pay the USD 50 non-refundable application fee if applying under the NRI category",
+              "Upload the photograph and each supporting document as a PDF of up to 1 MB",
+              "Accept the provisional admission letter and pay the fee named on it, then the balance by fund transfer in USD",
+              "Pay the hostel fee separately and register at the International Relations Office on the day of admission"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 11 marksheet, AS Level or Form V results for applicants awaiting final results",
+                "Class 12 marksheet, A Level or Form VI results for completed qualifications",
+                "Equivalency marks card from the school where grades rather than percentages are awarded",
+                "UGC equivalence certificate where the board sits outside VIT's recognised-equivalence list",
+                "Transfer, migration or college leaving certificate at reporting"
+              ],
+              "application": [
+                "Valid passport, or birth certificate or National ID for Bhutanese nationals",
+                "NRI applicants: parent's visa or resident card and the sponsoring parent's employer certificate",
+                "Sponsorship letter, mandatory at admission",
+                "Physical fitness certificate, common affidavit and undertaking form at reporting"
+              ]
+            },
+            "deadlinesNote": "VIT lists 30 June 2026 as the tentative last date to complete the NRI and Foreign application form for its non-engineering undergraduate programmes.",
+            "visaConsiderations": [
+              "Apply for a student visa at an Indian Mission with the admission letter and evidence of financial support",
+              "Register with the jurisdictional FRRO or FRO through e-FRRO within 14 days of arrival where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "Confirmed 2026-27 international tuition of USD 3,450 per year for B.Com. at Vellore, plus a USD 50 caution deposit, from VIT's own international fee page, which groups B.Com. with BCA, BBA and B.Sc. Computer Science in the same band.",
+          "teachingPhases": [
+            {
+              "phase": "Three-year Bachelor of Commerce",
+              "language": "English",
+              "details": "Taught by VIT's School of Social Sciences and Languages at the Vellore campus. The general B.Com. covers accountancy, taxation, auditing, marketing and entrepreneurship alongside business analytics, financial modelling and forensic accounting, and offers an optional ACCA-UK embedded track for students pursuing professional certification. The school also runs Vellore-campus B.Com. specialisations in Banking and Capital Markets and in Financial Technology with NSE Academy, and in Business Process Services with TCS."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "identity",
+      "claimText": "Vellore Institute of Technology was founded in 1984 as the self-financing Vellore Engineering College, was conferred deemed-to-be-university status under Section 3 of the UGC Act 1956 in 2001 and renamed, and is headed by its founder and Chancellor Dr. G. Viswanathan.",
+      "status": "verified",
+      "sourceLabel": "VIT - About (history and leadership)",
+      "sourceUrl": "https://vit.ac.in/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-08-22",
+      "internalNotes": "Corroborated by VIT's milestones timeline, which records the 2001 conferment of deemed-to-be-university status by UGC and MHRD and the renaming from Vellore Engineering College."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "NIRF 2025, the Ministry of Education's national ranking framework, ranked VIT 14th in the University category, 14th in Research, 16th in Engineering and 21st Overall.",
+      "status": "verified",
+      "sourceLabel": "VIT - Ranking and Recognition (NIRF 2025 ranks)",
+      "sourceUrl": "https://vit.ac.in/ranking-and-recognition",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF ranks change annually; always state the ranking year. The NAAC award previously carried on this record is now evidenced separately against NAAC's own published accreditation status, not VIT's page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "NAAC accredited Vellore Institute of Technology at A++ grade with a CGPA of 3.66 on a four-point scale in Cycle 4, declared on 31 August 2021.",
+      "status": "verified",
+      "sourceLabel": "NAAC - accreditation status, institutions with valid accreditation (workbook as on 14-08-2025)",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified against the regulator's own workbook by research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22); workbook row AISHE U-0490, Katpadi-Thiruvalam Road, Vellore. VIT's award predates the earliest published Standing Committee result PDF (the archive begins at the 29th SC), so no corroborating SC file exists. CRITICAL HANDLING: the NAAC workbook publishes a date of declaration, NOT an expiry date - never write a 'valid to' date into a NAAC badge. The declared date of 31-08-2021 reaches its five-year point in August 2026 and NAAC has published no Standing Committee results after the 265th SC of 12 December 2025, so the badge states the declaration year only and makes no currency claim. Do not write 'currently A++'. Re-check for a fresh declaration before the review date. Supersedes the earlier self-reported figure on https://vit.ac.in/ranking-and-recognition, which agrees on grade, CGPA and cycle."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "Four B.Tech programmes at VIT Vellore hold National Board of Accreditation Tier I (Washington Accord) accreditation for AY 2025-26 to 2030-31, up to 30 June 2031: Chemical, Electrical and Electronics, Electronics and Instrumentation, and Mechanical Engineering.",
+      "status": "verified",
+      "sourceLabel": "NBA - accreditation programme registers (Engineering UG Tier I, Washington Accord)",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified against the regulator's own register by research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22), registered entity 'Vellore Institute of Technology (Vellore)'. The NBA register is cumulative history, not a current-status list: a row's presence proves nothing on its own and only the Accreditation Period establishes currency, so the badge quotes the period. The separate 'Vellore Institute Of Technology Chennai Off Campus (Kancheepuram)' Tier I block (Mechanical, Electrical and Electronics, also to 30-06-2031) belongs to the Chennai campus and must not be merged into this Vellore record. Note the NBA Tier I set does not include CSE or Civil at Vellore, so it must never be presented as covering all B.Tech programmes; ABET, evidenced separately, is what covers CSE and ECE."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "No Bar Council of India approval was published for VIT Vellore: the Vellore campus has no BCI-approved Centre of Legal Education, so no law claim is made anywhere in this record.",
+      "status": "omit",
+      "sourceLabel": "Bar Council of India - approved list of Centres of Legal Education (recognised universities and colleges)",
+      "sourceUrl": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Checked against the BCI 106-page approved-CLE list uploaded 2026-08-20 by research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22). The only VIT law entry is 'School of Law, Vellore Institute of Technology, Inavolu, Amaravati' (Andhra Pradesh), approval to 2024-25 - a different campus and in any case lapsed. No law programme is packaged in this payload and no BCI badge may be added for the Vellore campus. Recorded so a later pass does not re-open the question."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "VIT states that B.Tech. Computer Science and Engineering is accredited by the Computing Accreditation Commission and the Engineering Accreditation Commission of ABET, USA, and that the B.Tech. Electronics and Communication Engineering courses are accredited by the Engineering Accreditation Commission of ABET.",
+      "status": "verified",
+      "sourceLabel": "VIT - School of Computer Science and Engineering (SCOPE) and School of Electronics Engineering (SENSE), undergraduate pages",
+      "sourceUrl": "https://vit.ac.in/schools/school-of-computer-science-and-engineering-for-ug-courses",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "ABET's own accredited-programme directory (amspub.abet.org) refused automated access during this research pass, so the programme-by-programme ABET status and current accreditation expiry could not be verified against the accreditor's database. Both statements are VIT's own current published claims on its live school pages; the ECE statement is at https://vit.ac.in/schools/school-of-electronics-engineering-for-ug-courses. VIT's separate 2019 accreditation brochure claiming 14 ABET-accredited B.Tech. programmes was deliberately not used - it is stale and unconfirmed. Re-verify directly against ABET's directory before the review date."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "VIT Business School, Vellore Institute of Technology, appears as an accredited school in AACSB International's business school directory, listed at a Vellore 632 014 main-campus address and covering undergraduate, master's and doctoral business education.",
+      "status": "verified",
+      "sourceLabel": "AACSB - VIT Business School, Vellore Institute of Technology accredited school listing",
+      "sourceUrl": "https://www.aacsb.edu/accredited/v/vit-business-school-vellore-institute-of-technology",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Accreditor's own directory, so this is third-party rather than self-reported. VIT's milestones page independently records AACSB accreditation for VIT Business School in 2021."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "recognition",
+      "claimText": "Institution of Eminence status was NOT published. VIT markets IoE recognition in its own accreditation brochure, but VIT does not appear on the official UGC list of Institutions of Eminence.",
+      "status": "omit",
+      "sourceLabel": "UGC Institutions of Eminence - official list of notified IoEs",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Re-verified by research/india-regulator-verification-2026-08-22.md (agent claude-india-regverify-20260822, checked 2026-08-22): the UGC portal publishes the COMPLETE list of notified Institutions of Eminence - twelve rows, eight public and four private, each with a Date of Notification. The four private IoEs are BITS Pilani (14.10.2020), Manipal Academy of Higher Education (14.10.2020), O P Jindal Global University (04.11.2020) and Shiv Nadar (03.08.2022). VIT appears in neither table, so VIT has NO IoE status for badging or narrative purposes. VIT's own brochure at https://vit.ac.in/wp-content/uploads/2023/08/accreditation.pdf asserts IoE recognition; it is unsupported by the regulator. A Letter of Intent is a pre-notification step, is not on this list and must never be rendered as 'Institution of Eminence'. This payload was audited on 2026-08-22 and contains no IoE assertion in any badge, summary, narrative field, whyChoose entry or FAQ answer. Do not add one without a UGC or Ministry of Education notification naming VIT."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "campusLifestyle",
+      "claimText": "VIT's NIRF 2025 engineering submission for the Vellore campus records 35,957 students on four-year undergraduate programmes, 2,600 on two-year postgraduate programmes and 6,308 on five-year integrated programmes, of whom 1,376, 16 and 16 respectively are from outside the country.",
+      "status": "verified",
+      "sourceLabel": "VIT - NIRF 2025 Engineering data submission (Vellore, IR-E-U-0490)",
+      "sourceUrl": "https://vit.ac.in/files/nirf/Engineering-NIRF-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Government data-capture submission, institute code IR-E-U-0490 identifying the Vellore campus specifically. The totals cover programmes captured in the engineering submission; VIT-wide Vellore enrolment across all NIRF categories may differ slightly. Do not present these as VIT group-wide figures."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "practicalExposure",
+      "claimText": "VIT's NIRF 2025 submission for the Vellore campus records that 4,031 of 5,964 four-year undergraduates graduating in the minimum stipulated time in 2023-24 were placed at a median salary of INR 899,000, that 884 of 1,270 two-year postgraduates were placed at a median of INR 915,000, and that 1,255 undergraduates went on to higher studies.",
+      "status": "verified",
+      "sourceLabel": "VIT - NIRF 2025 Engineering data submission (Vellore, IR-E-U-0490)",
+      "sourceUrl": "https://vit.ac.in/files/nirf/Engineering-NIRF-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Vellore-campus-specific and government-submitted, unlike the 'Highest CTC INR 1 Cr' figure on VIT's Career Development Centre pages, which VIT footnotes as covering internships and placement across all four campuses. Never publish the group-wide headline as a Vellore outcome."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "practicalExposure",
+      "claimText": "VIT's International Transfer Programme offers 2+2 bachelor's, 1+1 master's, 3+2 and 3.5+1.5 accelerated pathways with partner universities abroad, in seven engineering disciplines: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, Mechanical Engineering, Chemical Engineering, Civil Engineering and Biotechnology.",
+      "status": "verified",
+      "sourceLabel": "VIT - International Transfer Programmes (ITP)",
+      "sourceUrl": "https://vit.ac.in/internationalrelations/itp",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Partner-university lists on the page are grouped by region and change between cycles; individual partner names were deliberately not published. VIT's 500+ MoU claim is from its own international admissions overview page and is self-reported."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "hostelOverview",
+      "claimText": "The Vellore campus has 32 hostel blocks, 21 of them men's, housing over 30,000 residents a year. For 2026-27 the NRI and foreign tariff runs from USD 2,170 for a six-bed non-air-conditioned men's room with vegetarian mess to USD 3,240 for a two-bed air-conditioned room, and from USD 2,680 to USD 3,950 in the women's hostels, each inclusive of mess, a USD 250 non-refundable admission fee and a USD 400 refundable caution deposit.",
+      "status": "verified",
+      "sourceLabel": "VIT - Vellore campus hostel fee structures 2026-27, NRI and Foreign category",
+      "sourceUrl": "https://vit.ac.in/wp-content/uploads/2026/06/MH-First-Year-FEE-structure-Indian-NRI-FOREIGN-Category-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Men's regular blocks MHM, MHN and MHP; the separate deluxe MHQ block is priced higher and was excluded from the published range. Women's figures are from https://vit.ac.in/wp-content/uploads/2026/05/LH-NRI-fees-2026-27.pdf. Block count and resident volume are from https://vit.ac.in/campuslife/hostels. VIT states hostel fees are subject to annual escalation."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "safetyOverview",
+      "claimText": "VIT hostel premises have round-the-clock security personnel and block supervisors, student counsellors and maintenance staff, with a hostel review committee meeting once a fortnight; a primary health centre in the Dr. A.L. Mudaliar Block on the Vellore campus provides 24-hour doctor and nursing cover with a pharmacy, consultation rooms and an emergency room.",
+      "status": "verified",
+      "sourceLabel": "VIT - Hostels and Health Services (Vellore campus)",
+      "sourceUrl": "https://vit.ac.in/campuslife/hostels",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Health-centre detail is from https://vit.ac.in/campuslife/healthservices, which also names Sri Narayani Hospital and Research Centre at Thirumalaikodi about 9 km from campus. No campus crime statistics are published by VIT, so no safety-rate claim was made."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "studentSupport",
+      "claimText": "VIT's International Relations Office at Room 105, Floor I, Dr. M.G.R. Block, VIT Vellore 632014 handles NRI and foreign admissions, is contactable at global@vit.ac.in and on +91-416-220-2070 or +91-416-220-2072, and every NRI and foreign student must register there on the day of admission.",
+      "status": "verified",
+      "sourceLabel": "VIT - International Admissions overview and B.Tech. eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/overview",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The day-of-admission IR registration requirement is stated on the B.Tech. and other-UG international admission pages. Named staff on these pages were deliberately not published because personnel change between cycles."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "thingsToConsider",
+      "claimText": "VIT allots the B.Tech. branch on review of the application and supporting documents and states that the branch once allotted will not be changed under any circumstances; foreign applicants who studied Physics, Chemistry and Biology without Mathematics are restricted to a named list of bio-related programmes and must take a compulsory bridge course in Mathematics after joining.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The named PCB list spans all four campuses; the Vellore-campus entries are B.Tech. Biotechnology, B.Tech. Computer Science and Engineering (Bioinformatics) and B.Tech. Health Sciences and Technology. The remaining named programmes are Chennai or Bhopal only."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "vellore-institute-of-technology",
+      "publicField": "scholarships",
+      "claimText": "No VIT scholarship dedicated to international fee-paying students was located during this research pass.",
+      "status": "omit",
+      "sourceLabel": "VIT - International Admissions overview",
+      "sourceUrl": "https://vit.ac.in/admissions/international/overview",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "VIT links an 'Institute and Government Scholarship' page and the Vidya Lakshmi portal, but neither the international admissions pages nor the international fee page names a scholarship or fee waiver open to NRI or foreign-category applicants. The Study in India portal separately mentions institute fee waivers for students routed through that portal, but VIT's participation and the terms were not confirmed. Scholarships section left absent rather than described generically."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "Foreign-category B.Tech. applicants need Mathematics and Physics plus a third subject from Chemistry, Computing Sciences, Electronics, Biology or Biotechnology at 55 per cent aggregate with not less than 50 per cent in Mathematics; NRI-category applicants need 60 per cent in PCM with not less than 50 per cent in Mathematics and a date of birth on or after 1 July 2004.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "Direct admission to B.Tech. is available to NRI and foreign candidates through the dedicated NRI/Foreign application without VITEEE, on merit in the qualifying examination and seat availability; the seven-stage online process ends with document upload, and complete applications are processed in 15 to 20 working days.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "The tentative last date for the B.Tech. NRI and Foreign online application for 2026-27 is 31 August 2026, and VIT advertises the 2026 B.Tech. foreign admission as a July session.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "VIT itself marks the date 'tentatively'. The July session is named in VIT's site-wide announcement banner ('B.Tech Foreign 2026 (July session)'). Exact term-start dates were not published in an accessible 2026-27 academic calendar, so no teaching-start date was claimed."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "International B.Tech. tuition at VIT for 2026-27 is USD 9,000 per annum with a one-time refundable caution deposit of USD 100, giving a first-year payment of USD 9,100.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech. Electronics and Communication Engineering requires Mathematics and Physics as compulsory Class 12 subjects, at 55 per cent aggregate for foreign-category applicants and 60 per cent PCM for NRI-category applicants, with not less than 50 per cent in Mathematics.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "ECE is not on VIT's named PCB-eligible list, so applicants without Class 12 Mathematics are excluded from this programme."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "Electronics and Communication Engineering is admitted through the common NRI and Foreign B.Tech. application with no entrance test, and B.Tech. Electronics and Communication Engineering is offered at the Vellore campus.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions procedure and campus-wise programmes offered",
+      "sourceUrl": "https://vit.ac.in/admissions/programmes-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Campus availability verified on the programmes-offered listing, which shows ECE at Vellore, Chennai, VIT-AP and VIT-Bhopal."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "The tentative last date for the B.Tech. NRI and Foreign online application for 2026-27 is 31 August 2026, for a July 2026 foreign session.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "International B.Tech. tuition for 2026-27 is published as a single band of USD 9,000 per annum plus a one-time refundable USD 100 caution deposit, applying to Electronics and Communication Engineering as to other B.Tech. branches.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "VIT publishes one B.Tech. figure for 2026-27 rather than branch-level tuition, so branch-specific variation could not be checked and none is claimed."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech. Mechanical Engineering requires Mathematics and Physics at Class 12, at a 55 per cent aggregate for foreign-category applicants or 60 per cent PCM for NRI-category applicants, with not less than 50 per cent in Mathematics.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "Mechanical Engineering is admitted through VIT's common NRI and Foreign B.Tech. application with no entrance test, and B.Tech. Mechanical Engineering is offered at the Vellore campus.",
+      "status": "verified",
+      "sourceLabel": "VIT - Programmes offered (campus-wise availability)",
+      "sourceUrl": "https://vit.ac.in/admissions/programmes-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Some Mechanical Engineering specialisations, for example Artificial Intelligence and Robotics, are listed at VIT-AP only and are not available at Vellore."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "The tentative last date for the B.Tech. NRI and Foreign online application for 2026-27 is 31 August 2026, for a July 2026 foreign session.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "International B.Tech. tuition for 2026-27 is USD 9,000 per annum plus a one-time refundable USD 100 caution deposit, applying to Mechanical Engineering as to other B.Tech. branches.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech. Civil Engineering requires Mathematics and Physics at Class 12, at a 55 per cent aggregate for foreign-category applicants or 60 per cent PCM for NRI-category applicants, with not less than 50 per cent in Mathematics.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "Civil Engineering is admitted through VIT's common NRI and Foreign B.Tech. application with no entrance test, and B.Tech. Civil Engineering is offered at the Vellore campus alongside a separate variant delivered in collaboration with L&T.",
+      "status": "verified",
+      "sourceLabel": "VIT - Programmes offered (campus-wise availability)",
+      "sourceUrl": "https://vit.ac.in/admissions/programmes-offered",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The listing shows B.Tech. Civil Engineering at Vellore and Chennai, plus a separately listed 'B.Tech - Civil Engineering (In Collaboration with L & T)' entry. Fee or eligibility differences between the two variants were not published and are not claimed."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-civil-engineering",
+      "publicField": "intake",
+      "claimText": "The tentative last date for the B.Tech. NRI and Foreign online application for 2026-27 is 31 August 2026, for a July 2026 foreign session.",
+      "status": "verified",
+      "sourceLabel": "VIT - B.Tech. international admissions eligibility and procedure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/btech-eligibilityandprocedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-btech-civil-engineering",
+      "publicField": "fee",
+      "claimText": "International B.Tech. tuition for 2026-27 is USD 9,000 per annum plus a one-time refundable USD 100 caution deposit, applying to Civil Engineering as to other B.Tech. branches.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-mba",
+      "publicField": "eligibility",
+      "claimText": "MBA entry requires a minimum of 60 per cent marks or First Class in Class 10, in Class 12 or the diploma, and in any undergraduate degree from a recognised university or institution; applicants in the final year of a 10+2+3 or 10+2+4 qualifying degree may apply.",
+      "status": "verified",
+      "sourceLabel": "VIT - Postgraduate international admissions (NRI and Foreign)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/pg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-mba",
+      "publicField": "admissions",
+      "claimText": "The two-year MBA is offered at the Vellore campus and international applicants apply through VIT's postgraduate NRI and Foreign application rather than the domestic MBA entrance and selection route.",
+      "status": "verified",
+      "sourceLabel": "VIT - Postgraduate international admissions (NRI and Foreign)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/pg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The PG international page lists the MBA as offered at Vellore, Chennai and Bhopal. VIT separately publishes domestic MBA admission results by campus, confirming the two routes are distinct."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-mba",
+      "publicField": "intake",
+      "claimText": "VIT issues the postgraduate NRI and Foreign application for 2026-27 on 30 January 2026, with 30 June 2026 as the last date to complete the form.",
+      "status": "verified",
+      "sourceLabel": "VIT - Postgraduate international admissions (NRI and Foreign)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/pg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The application window implies a July or Fall start consistent with VIT's Fall and Winter semester structure, but VIT did not publish an accessible 2026-27 postgraduate term-start date, so none is claimed."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-mba",
+      "publicField": "fee",
+      "claimText": "International MBA tuition at VIT for 2026-27 is USD 6,450 per annum with a USD 50 caution deposit, a first-year total of USD 6,500.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The same USD 6,450 band is published for M.Tech., MCA, M.Des. and M.Arch. and is repeated on the postgraduate international admissions page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "M.Sc. Data Science requires an undergraduate degree in Mathematics, Computer Science, Physics or Statistics, or an engineering or technology degree in CSE, IT, ECE, EEE or E&I, with 60 per cent of marks inclusive of all subjects and Mathematics studied at both Class 12 and degree level.",
+      "status": "verified",
+      "sourceLabel": "VIT - Postgraduate international admissions (NRI and Foreign)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/pg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-msc-data-science",
+      "publicField": "admissions",
+      "claimText": "The two-year M.Sc. Data Science is offered at the Vellore campus and international applicants apply through VIT's postgraduate NRI and Foreign application rather than the domestic VITMEE entrance test.",
+      "status": "verified",
+      "sourceLabel": "VIT - Postgraduate international admissions (NRI and Foreign)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/pg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The PG international page lists M.Sc. Data Science at Vellore, Chennai and VIT-AP. VIT separately publishes VITMEE seat-allotment results for the domestic route, confirming the two channels are distinct."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-msc-data-science",
+      "publicField": "intake",
+      "claimText": "VIT issues the postgraduate NRI and Foreign application for 2026-27 on 30 January 2026, with 30 June 2026 as the last date to complete the form.",
+      "status": "verified",
+      "sourceLabel": "VIT - Postgraduate international admissions (NRI and Foreign)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/pg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-msc-data-science",
+      "publicField": "fee",
+      "claimText": "International tuition for VIT's two-year M.Sc. programmes in 2026-27 is USD 3,450 per annum with a USD 50 caution deposit, a first-year total of USD 3,500.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "VIT publishes one band for all two-year M.Sc. programmes and MSW rather than per-title tuition, so no Data Science-specific figure is claimed."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-bcom",
+      "publicField": "eligibility",
+      "claimText": "B.Com. entry requires 12 years of schooling with Commerce, Accountancy, Book Keeping and Accountancy or Mathematics among the subjects studied, at 55 per cent overall aggregate or the grade-point equivalent for foreign-category applicants and 60 per cent for NRI-category applicants, whose date of birth must fall on or after 1 July 2006.",
+      "status": "verified",
+      "sourceLabel": "VIT - Other undergraduate international admissions (B.Com., BBA, BCA, B.Sc.)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/otherugprogrammes",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-bcom",
+      "publicField": "admissions",
+      "claimText": "VIT states there is no entrance examination for its non-engineering undergraduate programmes and that admission is based on performance in the qualifying 10+2 examination and seat availability; B.Com. is offered at the Vellore campus.",
+      "status": "verified",
+      "sourceLabel": "VIT - Other undergraduate international admissions and campus-wise programmes offered",
+      "sourceUrl": "https://vit.ac.in/admissions/international/otherugprogrammes",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Campus availability confirmed on https://vit.ac.in/admissions/programmes-offered, which shows B.Com. and its Business Process Management, Banking and Capital Markets and Financial Technology variants at Vellore; B.Com. (Hons.) is Chennai and B.Com. (Finance Honours) is VIT-AP."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-bcom",
+      "publicField": "intake",
+      "claimText": "VIT lists 30 June 2026 as the tentative last date to complete the NRI and Foreign application form for its non-engineering undergraduate programmes for 2026-27.",
+      "status": "verified",
+      "sourceLabel": "VIT - Other undergraduate international admissions (B.Com., BBA, BCA, B.Sc.)",
+      "sourceUrl": "https://vit.ac.in/admissions/international/otherugprogrammes",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "VIT itself marks the date 'tentatively'. No separate teaching-start date is published for this undergraduate group; the July intake is inferred from VIT's Fall semester structure and is expressed only as an intake month, not a term-start date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-bcom",
+      "publicField": "fee",
+      "claimText": "International tuition for B.Com. at VIT in 2026-27 is USD 3,450 per annum with a USD 50 caution deposit, a first-year total of USD 3,500, in the band VIT publishes jointly for BCA, B.Sc. Computer Science, B.Sc. Hospitality and Hotel Administration, B.Com. and BBA.",
+      "status": "verified",
+      "sourceLabel": "VIT - International admissions fee structure",
+      "sourceUrl": "https://vit.ac.in/admissions/international/fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "vellore-institute-of-technology",
+      "programmeSlug": "vit-vellore-bcom",
+      "publicField": "duration",
+      "claimText": "VIT's Bachelor of Commerce at Vellore is a three-year degree.",
+      "status": "verified",
+      "sourceLabel": "VIT - School of Social Sciences and Languages, undergraduate B.Com. programmes",
+      "sourceUrl": "https://vit.ac.in/school/course/ssl/ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "VIT does not print a duration label on the B.Com. page. The three-year length is taken from the curriculum cohort bands published on that same page (2025-2028, 2024-2027, 2023-2026, 2022-2023 style entries), which span three intake-to-graduation years. VIT separately lists four-year B.Com. (Hons.) variants at other campuses, which are out of scope here. Re-confirm the duration with VIT's International Relations Office before the review date."
+    }
+  ]
+}

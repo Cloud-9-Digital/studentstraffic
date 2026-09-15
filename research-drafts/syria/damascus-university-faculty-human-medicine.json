@@ -1,0 +1,32 @@
+{
+  "scope": "Syria medical discovery — Damascus University Faculty of Human Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Damascus University's official Faculty of Human Medicine Telegram channel published current 2025/26 preparatory-year examination and administrative notices in June 2026, including notices for students assigned to Human Medicine.",
+      "sourceUrl": "https://t.me/meddamascus_official",
+      "sourceType": "official-university-channel",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Syria's official news agency reported in May 2026 that Damascus University's Faculty of Human Medicine participated with the Arab Board of Health Specializations in a scientific meeting addressing postgraduate training quality, governance and assessment.",
+      "sourceUrl": "https://sana.sy/education/2477519/",
+      "sourceType": "state-news-agency",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Syrian Ministries of Higher Education and Health ran a unified 2025/26 selection process for medical-college graduates across Syrian public and private universities for approved training and qualification programmes; this is graduate training evidence, not undergraduate admission evidence.",
+      "sourceUrl": "https://sana.sy/education/2513294/",
+      "sourceType": "state-news-agency",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current undergraduate programme duration, curriculum, language, fees, admissions criteria and international-applicant route were not verified from an authoritative faculty or ministry notice.",
+    "No current named teaching-hospital, clinical-placement capacity or continuity evidence was located.",
+    "No direct, current programme-recognition or accreditation record was verified.",
+    "Given material operational uncertainty, no historical facility, clinical or graduate-outcome claim can be promoted without direct current confirmation."
+  ],
+  "nextAction": "Obtain a current Faculty or Ministry undergraduate Human Medicine intake notice, fee schedule, curriculum and direct operational confirmation of clinical teaching bases before considering a payload."
+}

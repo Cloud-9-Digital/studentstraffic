@@ -1,0 +1,383 @@
+{
+  "batchId": "second-pass-patch-01",
+  "entries": [
+    {
+      "universitySlug": "akfa-university-medical-school",
+      "sourceFile": "a-01-10.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed AKFA University was renamed Central Asian University (CAU) effective 26 June 2023 (centralasian.uz rename announcement; Wikipedia 'Central Asian University'; THE rankings page). The legacy akfauniversity.uz domain now fails outright (DNS resolution failure), confirming there is no separate live AKFA-branded site left to source assets from. This is an unresolved rename/identity situation, not a missing-asset situation, so no image is sourced. Needs a human catalogue decision (retire, redirect, or relabel the record) rather than media."
+    },
+    {
+      "universitySlug": "aalto-university",
+      "sourceFile": "a-01-10.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Aalto_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons PD-textlogo tag: text/simple-shape logo below the threshold of originality, public domain in copyright terms (trademark rights may still apply in some jurisdictions).",
+        "proposedPublicId": "aalto-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Aalto_University_Otaniemi_Campus_Library_October_7_2012_01.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0, author Lauri Silvennoinen ('Aalto University Otaniemi Campus Library').",
+        "proposedPublicId": "aalto-university-cover"
+      },
+      "note": "First pass could not retrieve aalto.fi directly. Wikimedia Commons (not consulted in the first pass) has a free PD-textlogo Aalto wordmark and a separately CC-BY-SA licensed campus library photo, both verified HTTP 200."
+    },
+    {
+      "universitySlug": "aarhus-university",
+      "sourceFile": "a-01-10.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Aarhus_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons PD-textlogo tag: simple text/shape logo below threshold of originality, public domain (trademark rights may still apply).",
+        "proposedPublicId": "aarhus-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Aarhus_University_Park_%28autumn%29.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0, author RhinoMind ('Aarhus University Park (autumn)').",
+        "proposedPublicId": "aarhus-university-cover"
+      },
+      "note": "First pass held because AU's own brand policy requires written approval for the trademarked logo/campus imagery. A Commons PD-textlogo version of the wordmark and a separately CC-BY-SA licensed campus park photo resolve this without needing AU's permission workflow."
+    },
+    {
+      "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+      "sourceFile": "a-01-10.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.auca.ac.rw/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official AUCA seal served directly from the university's own current site (web.auca.ac.rw).",
+        "proposedPublicId": "adventist-university-of-central-africa-school-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.auca.ac.rw/images/auca/image3.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official AUCA homepage carousel campus photo (real buildings and grounds), served from the university's own site.",
+        "proposedPublicId": "adventist-university-of-central-africa-school-of-medicine-cover"
+      },
+      "note": "auca.ac.rw redirects (301) to web.auca.ac.rw, a rebuilt Next.js site that exposes a clean logo.png and real campus photography in its homepage carousel; first pass evidently only checked the old domain root."
+    },
+    {
+      "universitySlug": "al-farabi-kazakh-national-university",
+      "sourceFile": "a-01-10.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://farabi.university/front/assets/img/icons/logonew1.png",
+        "sourceType": "official",
+        "rightsBasis": "Official current (2024 rebrand) KazNU seal served from farabi.university, the university's own current domain.",
+        "proposedPublicId": "al-farabi-kazakh-national-university-logo"
+      },
+      "note": "The original kaznu.kz had an SSL trust failure; the university's actual current domain is farabi.university (unaffected by that SSL issue) and serves its new 2024 logo directly. Cover remains held: the only large homepage image found was a news photo of Kazakhstan's president at a state visit, not a campus or generic institutional image, so no cover is nominated."
+    },
+    {
+      "universitySlug": "ala-too-international",
+      "sourceFile": "a-01-10.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20250805153344im_/https://alatoo.edu.kg/wp-content/uploads/2023/10/cropped-ALATOO-LOGO-2.png",
+        "sourceType": "official",
+        "rightsBasis": "Retrieved via Wayback Machine due to the live site's Cloudflare 403; archived image itself resolves directly (official asset, current-brand seal).",
+        "proposedPublicId": "ala-too-international-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20250918113222im_/https://alatoo.edu.kg/wp-content/uploads/2025/09/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Wayback Machine (September 2025) snapshot of an official homepage news photo (orientation week, real campus building visible in background).",
+        "proposedPublicId": "ala-too-international-cover"
+      },
+      "note": "Live alatoo.edu.kg still returns Cloudflare 403. A September 2025 Wayback Machine snapshot serves the logo and a real campus orientation-week photo directly (im_ variant), both verified HTTP 200."
+    },
+    {
+      "universitySlug": "albanian-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://albanianuniversity.edu.al/wp-content/uploads/2017/03/Logo_AU-e1757943458904.png",
+        "sourceType": "official",
+        "rightsBasis": "Official logo served from the university's own uploads folder.",
+        "proposedPublicId": "albanian-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://albanianuniversity.edu.al/wp-content/uploads/2023/11/fakulteti-i-shkencave-mjekesore.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Faculty of Medical Sciences homepage banner, served from the university's own site.",
+        "proposedPublicId": "albanian-university-cover"
+      },
+      "note": "First pass apparently only recorded the homepage URL without inspecting page assets; the logo and a faculty banner image are both served directly from albanianuniversity.edu.al's own uploads folder."
+    },
+    {
+      "universitySlug": "aldent-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://ual.edu.al/wp-content/uploads/2024/09/ual-icon.png",
+        "sourceType": "official",
+        "rightsBasis": "Official Aldent University (UAL) seal served from the university's own site.",
+        "proposedPublicId": "aldent-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://ual.edu.al/wp-content/uploads/2024/09/Screenshot_16.png",
+        "sourceType": "official",
+        "rightsBasis": "Official 2025 graduation-ceremony photo hosted on the university's own site (ual.edu.al).",
+        "proposedPublicId": "aldent-university-cover"
+      },
+      "note": "The official domain is ual.edu.al; both a clean seal logo and a real graduation-ceremony photo are served directly from its uploads folder."
+    },
+    {
+      "universitySlug": "alfraganus-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.afu.uz/themes/univer/assets/images/brand.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official brand wordmark/emblem SVG served from the university's own theme assets (afu.uz).",
+        "proposedPublicId": "alfraganus-university-logo"
+      },
+      "note": "afu.uz serves a clean brand.svg wordmark with its 2022 emblem directly from theme assets. No usable cover found: the homepage hero is a low-content animated GIF, not a genuine campus photo, so cover remains held."
+    },
+    {
+      "universitySlug": "altai-state-medical-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "still-hold",
+      "updatedReason": "Re-checked this pass: the official site (www.agmu.ru) currently returns HTTP 503. Wayback Machine CDX history shows only 301/302 redirect captures for 2019-2025 and no full HTTP 200 snapshot newer than March 2017 -- too stale to safely represent the current brand, and the domain's ownership/design could have changed since. No usable current-brand asset found via press-page, Commons, or archive techniques."
+    },
+    {
+      "universitySlug": "altamimi-international-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://altamimiinternationaluniversity.com/wp-content/uploads/2024/11/ALTAMIMI-INTERNATIONAL-UNIVERSITY-e1770896794652.png",
+        "sourceType": "official",
+        "rightsBasis": "Official shield/crest logo served from the university's own site.",
+        "proposedPublicId": "altamimi-international-university-logo"
+      },
+      "note": "Confirmed a clean shield logo on the official site. Checked the About page specifically for campus photography (a technique not tried in the first pass) but found only a business-card graphic and a blank placeholder image -- no genuine cover photo exists on the site, so cover remains held."
+    },
+    {
+      "universitySlug": "alte-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://alte.edu.ge/_next/static/media/logo.bb05f41a.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official wordmark SVG served from the university's own site build assets.",
+        "proposedPublicId": "alte-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://alte.edu.ge/api/storage/gallery/RrCA6b4KVO.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official gallery photo of students in front of the branded 'alte University' wall signage, served from the university's own storage API.",
+        "proposedPublicId": "alte-university-cover"
+      },
+      "note": "Site is a Next.js app; logo is a build asset and cover comes from the site's own gallery API rather than the homepage hero (which is a text-only promo graphic, not usable as a cover)."
+    },
+    {
+      "universitySlug": "american-university",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.american.edu/customcf/2016-redesign/images/logos/crest-logotype-blue-seo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official American University (Washington, DC) crest-logotype served from the university's own domain.",
+        "proposedPublicId": "american-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.american.edu/customcf/2016-redesign/images/social_graph.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official 'The American University' campus entrance-sign photo, used by AU itself as its social-share image.",
+        "proposedPublicId": "american-university-cover"
+      },
+      "note": "First pass reported the brand/campus pages Cloudflare-blocked, but the logo and a campus sign photo are both served from a different, unblocked path on the same domain (customcf/2016-redesign/images/...)."
+    },
+    {
+      "universitySlug": "american-university-of-sharjah",
+      "sourceFile": "a-11-20.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.aus.edu/sites/default/files/aus-default-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official AUS bilingual (Arabic/English) logo served from the university's own site.",
+        "proposedPublicId": "american-university-of-sharjah-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.aus.edu/sites/default/files/albums/photos/caad_1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official full-resolution photo of the AUS College of Architecture, Art and Design studio, from AUS's own Office of Communications photo gallery.",
+        "proposedPublicId": "american-university-of-sharjah-cover"
+      },
+      "note": "First pass found aus.edu's brand/campus pages blocked; the header logo and a full-resolution gallery photo (Office of Communications > Photos and Videos > Gallery) are both directly reachable."
+    },
+    {
+      "universitySlug": "amur-state-medical-academy",
+      "sourceFile": "a-11-20.json",
+      "outcome": "still-hold",
+      "updatedReason": "Re-checked directly this pass: amursma.ru (the domain given in Wikipedia's infobox) is now a hijacked/parked Russian-language online-casino affiliate site ('TOP CASINO ONLINE'), confirming and sharpening the first pass's 'suspicious/compromised' flag -- this is not a transient issue. Wayback Machine only holds snapshots from 2018, too old to safely represent the current institution and of uncertain provenance given the domain has since been compromised. No safe asset exists; worth flagging separately that this record's official-website field may need review since it now points at a gambling site."
+    },
+    {
+      "universitySlug": "angeles-university-foundation",
+      "sourceFile": "a-21-30.json",
+      "outcome": "still-hold",
+      "updatedReason": "Re-checked both domains from Wikipedia's infobox. www.auf.edu.ph returns HTTP 200 but serves only a bare-bones placeholder-like template (unrelated 'project-1.png'...'project-9.png' portfolio images, PHP/5.4 server, no navigation or real university content) -- confirmed identical in a May 2026 Wayback Machine snapshot, so this is the site's genuine current (degraded) state, not a caching fluke. The alternate domain angelesuniversityfoundation.com fails to resolve entirely. Wikipedia's own logo file is fair-use/non-free and excluded per policy. No safe logo or cover source currently exists."
+    },
+    {
+      "universitySlug": "anglia-ruskin-university",
+      "sourceFile": "a-21-30.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.aru.ac.uk/Assets/img/icons/favicons/android-chrome-512x512.png",
+        "sourceType": "official",
+        "rightsBasis": "Official high-resolution (512x512) favicon/app-icon file showing ARU's crane brand mark, served from the university's own domain.",
+        "proposedPublicId": "anglia-ruskin-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.aru.ac.uk/-/media/Images/700x430/International/cambridge_campus_courtyard_700x430.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Cambridge campus courtyard photo from ARU's own site.",
+        "proposedPublicId": "anglia-ruskin-university-cover"
+      },
+      "note": "First pass found no standalone logo file because ARU's header logo isn't a plain image; the high-resolution android-chrome favicon is the same brand mark (crane icon) as a standalone file. Also found a genuine Cambridge campus courtyard photo."
+    },
+    {
+      "universitySlug": "angren-university",
+      "sourceFile": "a-21-30.json",
+      "outcome": "still-hold",
+      "updatedReason": "Could not re-locate a usable asset this pass. First pass identified the public English presence as a Google Sites page but did not record its exact URL, and this session's web-search tool hit its budget limit before an alternative discovery route could be attempted -- without the specific domain, press-page/Commons/Wayback techniques could not be applied. Recommend a follow-up pass once search is available again."
+    },
+    {
+      "universitySlug": "arizona-state-university",
+      "sourceFile": "a-21-30.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://www.asu.edu/sites/default/files/2022-03/HomepageLocations-Tempe.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official ASU aerial photo of the Tempe campus (no logo or wordmark in frame), served from asu.edu.",
+        "proposedPublicId": "arizona-state-university-cover"
+      },
+      "note": "Logo remains held: ASU's brand guide explicitly restricts logo use to university faculty/staff/units conducting university business, and no Commons alternative exists (checked -- the ASU seal and logo files on Wikipedia are non-free/fair-use, not PD-textlogo, so unlike some peer universities there is no free equivalent). That restriction is specific to the logo mark, not plain campus photography, so a campus aerial photo with no branding in frame is nominated for cover only."
+    },
+    {
+      "universitySlug": "asia-international-university",
+      "sourceFile": "a-21-30.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://aiu.uz/logo2.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official favicon/brand-mark SVG (shield emblem) served from aiu.uz, the confirmed current official domain.",
+        "proposedPublicId": "asia-international-university-logo"
+      },
+      "note": "Confirmed aiu.uz is the live official Asia International University site. It is a JS single-page app with no server-rendered content, so its favicon SVG (a full vector shield emblem, not a tiny icon) is the only extractable standalone logo file this pass; no cover image could be found this way and it remains held."
+    },
+    {
+      "universitySlug": "asian-international-university",
+      "sourceFile": "a-21-30.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Re-confirmed directly from the live site (asmi.edu.kg): the homepage itself mixes both names -- the hero banner reads 'Asian International University Named After S. Tentishev' while an adjacent homepage image file is literally named 'Asian-medical-institute-7slider.png', and the institution's full legal name is 'S. Tentishev Asian International University' (historically Asian Medical Institute). This is the exact identity ambiguity flagged in the first pass, now confirmed from the live site itself. Needs a human decision on whether this and 'asian-medical-institute' are the same catalogue record before any logo/cover is assigned to either."
+    },
+    {
+      "universitySlug": "asian-medical-institute",
+      "sourceFile": "a-21-30.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Same site (asmi.edu.kg) and same ambiguity as the 'asian-international-university' record: the live homepage interchangeably uses 'Asian International University Named After S. Tentishev' (hero text) and 'Asian Medical Institute' (an image filename on the same page). Needs a human decision on whether these two catalogue records should be merged/deduplicated before any logo/cover is assigned to either."
+    },
+    {
+      "universitySlug": "auckland-university-of-technology",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Logo_of_Auckland_University_of_Technology.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons PD-textlogo tag (simple shapes/text below threshold of originality; trademark may still apply), file provenance notes it was sourced from AUT's own official website.",
+        "proposedPublicId": "auckland-university-of-technology-logo"
+      },
+      "note": "Found a free PD-textlogo AUT wordmark on Commons. Cover remains held: aut.ac.nz's homepage banners are all campaign-dated event promos (e.g. 'AUT LIVE 2026 - 29 Aug 2026'), not a generic evergreen campus image suitable as a lasting cover asset."
+    },
+    {
+      "universitySlug": "australian-national-university",
+      "sourceFile": "a-31-40.json",
+      "outcome": "still-hold",
+      "updatedReason": "Re-checked: both the ANU logo/emblem and the ANU coat of arms are hosted locally on English Wikipedia (not Commons) and are explicitly tagged non-free/fair-use, not PD-textlogo -- so, unlike some peer universities, no free Commons alternative exists for ANU. This confirms the original hold; no new safe asset found."
+    },
+    {
+      "universitySlug": "avicenna-batumi-medical-university",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://avicennabatumi.edu.ge/wp-content/uploads/2024/08/newLogo6.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official wordmark SVG served from the university's own uploads folder.",
+        "proposedPublicId": "avicenna-batumi-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://avicennabatumi.edu.ge/wp-content/uploads/2024/08/6S2A2733-1024x683.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official photo of students and staff in a teaching laboratory, from the university's own site.",
+        "proposedPublicId": "avicenna-batumi-medical-university-cover"
+      },
+      "note": "Confirmed official domain avicennabatumi.edu.ge (not recorded anywhere locally); serves a clean logo and genuine lab/teaching photography directly."
+    },
+    {
+      "universitySlug": "avicenna-international-medical-university",
+      "sourceFile": "a-31-40.json",
+      "outcome": "still-hold",
+      "updatedReason": "This session's web-search tool was exhausted (budget limit) before this institution's domain could be confirmed, and no official URL is recorded anywhere in the local repo. One plausible domain guess (avicenna.edu.ge) resolved successfully but turned out to be a different institution ('Avicenna International Community College', a vocational college, not this medical university) -- using it would risk assigning the wrong institution's brand, so it was rejected rather than used. No safe asset found this pass."
+    },
+    {
+      "universitySlug": "bau-international-university-batumi",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://bauinternational.edu.ge/img/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official BAU International University Batumi logo served from the university's own site.",
+        "proposedPublicId": "bau-international-university-batumi-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://bauinternational.edu.ge/storage/laboratory/2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official photo of a BAU Batumi student lounge (branded 'We <3 BAU' wall graphic visible), from the university's own site.",
+        "proposedPublicId": "bau-international-university-batumi-cover"
+      },
+      "note": "Confirmed official domain bauinternational.edu.ge (not recorded anywhere locally); serves a clean logo and genuine facility photography directly."
+    },
+    {
+      "universitySlug": "bi-norwegian-business-school",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/BI_Norwegian_Business_School_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons PD-textlogo tag: simple text/shape logo below threshold of originality, public domain (trademark rights may still apply).",
+        "proposedPublicId": "bi-norwegian-business-school-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://media.bi.no/asset/c1bf221f-c7b6-48da-8b70-3d48091d3134/Medium/Campus-Oslo-sunrise-59.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official BI Oslo campus building photo (with BI signage), from BI's own media library at bi.no (the redirect target of bi.edu).",
+        "proposedPublicId": "bi-norwegian-business-school-cover"
+      },
+      "note": "bi.edu redirects to bi.no. Found a free PD-textlogo wordmark on Commons plus a genuine BI Oslo campus photo on BI's own media library, neither checked in the first pass."
+    },
+    {
+      "universitySlug": "bangladesh-medical-college",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "http://web.archive.org/web/20250813100543im_/https://www.bmc-bd.org/uploads/logo/logo1730884443672b335bdf209.webp",
+        "sourceType": "official",
+        "rightsBasis": "Retrieved via Wayback Machine (recent snapshot) because the live site (bmc-bd.org) currently shows a hosting-account-suspended page; the archived logo file itself resolves directly (official current-brand emblem).",
+        "proposedPublicId": "bangladesh-medical-college-logo"
+      },
+      "cover": {
+        "sourceUrl": "http://web.archive.org/web/20250813100559im_/https://www.bmc-bd.org/uploads/slider/in-pursuit-of-medical-excellence17359632996778b2a3e8f65.webp",
+        "sourceType": "official",
+        "rightsBasis": "Wayback Machine snapshot of an official campus signage photo ('BMC' letters on the building facade) from bmc-bd.org's own homepage slider.",
+        "proposedPublicId": "bangladesh-medical-college-cover"
+      },
+      "note": "Live bmc-bd.org currently displays 'This Account has been suspended'. A recent Wayback Machine snapshot serves both the logo and a real campus signage photo directly, confirmed HTTP 200."
+    }
+  ]
+}

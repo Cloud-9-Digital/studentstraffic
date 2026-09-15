@@ -1,0 +1,401 @@
+{
+  "batchId": "second-pass-patch-02",
+  "entries": [
+    {
+      "universitySlug": "batumi-shota-rustaveli-state-university",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Batumi_shota_rustaveli_state_university.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, dedicated CC0 1.0 Universal Public Domain Dedication.",
+        "proposedPublicId": "batumi-shota-rustaveli-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Batumi_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, released by the photographer into the public domain (PD-self).",
+        "proposedPublicId": "batumi-shota-rustaveli-state-university-cover"
+      },
+      "note": "First pass did not check Wikimedia Commons' dedicated category for this university (Category:Shota Rustaveli State University in Batumi), which holds a CC0 emblem and a PD campus photo distinct from the Wikipedia infobox fountain image."
+    },
+    {
+      "universitySlug": "belgorod-state-university",
+      "sourceFile": "a-31-40.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/GerbBigB.GIF",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons \"copyrighted free use\" license: copyright holder allows use for any purpose including unrestricted redistribution, commercial use, and modification.",
+        "proposedPublicId": "belgorod-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Belgorod_State_University_in_september.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+        "proposedPublicId": "belgorod-state-university-cover"
+      },
+      "note": "Wikimedia Commons category for the university (not consulted in the first pass) has a freely-licensed coat-of-arms and a CC-BY-SA campus photo."
+    },
+    {
+      "universitySlug": "bcit-nursing",
+      "sourceFile": "a-41-50.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/BCIT_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "bcit-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/BCITCampus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 3.0 Unported.",
+        "proposedPublicId": "bcit-nursing-cover"
+      },
+      "note": "This is a BCIT program record; sourced the parent institution's Wikimedia Commons logo and campus photo (not checked in the first pass, which only looked at bcit.ca directly)."
+    },
+    {
+      "universitySlug": "brock-university",
+      "sourceFile": "a-41-50.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Brock_University_Logo_2022.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "brock-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Brock_University_campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, released into the public domain by the copyright holder (PD-self).",
+        "proposedPublicId": "brock-university-cover"
+      },
+      "note": "brocku.ca still returns HTTP 403 to direct fetches, confirming the first-pass block. Wikimedia Commons (a different source entirely, not the blocked official site) has a current 2022 PD logo and a PD campus photo."
+    },
+    {
+      "universitySlug": "brock-university-nursing",
+      "sourceFile": "a-41-50.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Brock_University_Logo_2022.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "brock-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Brock_University_campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, released into the public domain by the copyright holder (PD-self).",
+        "proposedPublicId": "brock-university-nursing-cover"
+      },
+      "note": "Brock University Nursing is a program of Brock University; applied the same Wikimedia Commons parent-brand logo and campus photo used for the main Brock University record, since brocku.ca is 403-blocked for both."
+    },
+    {
+      "universitySlug": "budapest-university-technology-economics",
+      "sourceFile": "a-41-50.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/BME_Logo_Unterz_horizontal_3c.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+        "proposedPublicId": "budapest-university-technology-economics-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/BME_K_building.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+        "proposedPublicId": "budapest-university-technology-economics-cover"
+      },
+      "note": "Wikimedia Commons has an official BME wordmark (BME Logo Unterz horizontal 3c.svg) and a CC-BY-SA photo of the K building, the university's main building; neither was checked in the first pass, which focused on BME's own copyright notice."
+    },
+    {
+      "universitySlug": "bukhara-state-medical-institute-abu-ali-ibn-sino",
+      "sourceFile": "a-41-50.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://bsmi.uz/wp-content/uploads/2022/01/logo_250x250.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct file served from the institute's own domain (bsmi.uz), also embedded in the institute's own press-service article announcing the logo.",
+        "proposedPublicId": "bukhara-state-medical-institute-abu-ali-ibn-sino-logo"
+      },
+      "note": "Found the direct logo file referenced in BSMI's own press-service article about the logo's unveiling (technique: dedicated press page). Cover remains unresolved: the homepage and general-information page only surface unlabeled news thumbnails and event photos, no clean campus building shot; left on hold rather than substituting a news image."
+    },
+    {
+      "universitySlug": "buryat-state-university-medical-institute",
+      "sourceFile": "a-41-50.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.bsu.ru/v7/i/logo_w_full.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official vector logo served directly from Buryat State University's own site header.",
+        "proposedPublicId": "buryat-state-university-medical-institute-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/The_building_of_the_Medical_Institute_of_the_Buryat_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC0 1.0 Universal Public Domain Dedication.",
+        "proposedPublicId": "buryat-state-university-medical-institute-cover"
+      },
+      "note": "First pass only checked the university's Commons category, which has no logo; the parent bsu.ru site itself serves a full vector logo directly. Commons separately has a CC0 photo specifically labelled as the Medical Institute building, not just generic campus slider art."
+    },
+    {
+      "universitySlug": "california-institute-of-technology",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Caltech_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "california-institute-of-technology-logo"
+      },
+      "note": "Wikimedia Commons' dedicated \"California Institute of Technology logos\" category has a PD-status wordmark file, resolving the missing logo without needing Cloudinary/rights-clearance workflow referenced in the first-pass hold reason."
+    },
+    {
+      "universitySlug": "cambrian-college-nursing",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://cambriancollege.ca/logo-reverse.svg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone SVG served from Cambrian College's own domain; confirmed it is the identical vector to the inline SVG used in the site's own header logo link (path data matches exactly).",
+        "proposedPublicId": "cambrian-college-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://media.cambriancollege.ca/uploads/2024/01/03125313/CambrianCollege_About_Exterior-16-1024x684.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Direct campus-exterior photo served from Cambrian College's own media CDN, embedded on the official About Cambrian page.",
+        "proposedPublicId": "cambrian-college-nursing-cover"
+      },
+      "note": "The only Commons logo the first pass could have found (\"Cambrian School and College logo 002.jpg\") is a different, unrelated institution and was correctly not used. Cambrian College's own site header renders its logo as inline SVG; found the identical logo as a standalone file at /logo-reverse.svg (the header's real logo, not the decorative /logo-watermark.svg shield), plus a clean, people-free exterior photo on the About page."
+    },
+    {
+      "universitySlug": "carleton-university-nursing",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Carleton_University_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "carleton-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/CarletonUniversity2022.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+        "proposedPublicId": "carleton-university-nursing-cover"
+      },
+      "note": "Carleton University Nursing is a Carleton program; applied the parent institution's Wikimedia Commons logo and a recent (2022) CC-BY-SA campus photo, neither checked in the first pass."
+    },
+    {
+      "universitySlug": "carnegie-mellon-university",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/CMU_logo_stack_cmyk_red.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "carnegie-mellon-university-logo"
+      },
+      "note": "Wikimedia Commons' \"Logos of Carnegie Mellon University\" category has a PD-status stacked wordmark, resolving the logo without needing a rights-cleared Cloudinary asset as the first pass required."
+    },
+    {
+      "universitySlug": "carol-davila-university-of-medicine-and-pharmacy",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fosta_Facultate_de_Medicina_azi_Universitatea_de_Medicina_si_Farmacie%2C_Bd._Eroii_Sanitari_nr._8%2C_sect._5%2C_Bucuresti.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 3.0 Romania; this is also the current Wikipedia infobox image for the university.",
+        "proposedPublicId": "carol-davila-university-of-medicine-and-pharmacy-cover"
+      },
+      "note": "Cover resolved via the university's Wikimedia Commons category. Logo remains unresolved: the only Commons file tagged to this university, Sigla_SSMB.jpg, is verified by its own file description to be the logo of the Bucharest Medical Students' Society (a student organisation), not the university's own emblem, so it was deliberately excluded rather than mis-applied. Left logo on hold."
+    },
+    {
+      "universitySlug": "case-western-reserve-university",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/CWRU_Two-line_horizontal_logo_Blue.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "case-western-reserve-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Case_western_reserve_campus_2005.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, dual-licensed CC BY-SA 3.0 Unported and GNU Free Documentation License 1.2+.",
+        "proposedPublicId": "case-western-reserve-university-cover"
+      },
+      "note": "Wikimedia Commons' CWRU logo category and main category (not checked in the first pass) have a PD wordmark and a freely-licensed campus photo."
+    },
+    {
+      "universitySlug": "catholic-university-our-lady-of-good-counsel-unizkm",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260305135211im_/https://www.unizkm.al/unizkm/img/logo-header_en.png",
+        "sourceType": "official",
+        "rightsBasis": "Official header logo image, recovered via Wayback Machine snapshot of unizkm.al/en (the live site returned HTTP 403 to direct fetch during this pass); the archived asset URL itself was verified to resolve.",
+        "proposedPublicId": "catholic-university-our-lady-of-good-counsel-unizkm-logo"
+      },
+      "note": "Live unizkm.al returns 403 to direct fetches (matching the general access trouble suggested by the first-pass hold). Used the Wayback Machine (archive.org/wayback/available, then verified the im_ asset URL) to recover the header logo file path from the archived HTML. Cover remains on hold: the archived homepage only exposes unlabeled numeric-ID news/media thumbnails, not a clean campus photo."
+    },
+    {
+      "universitySlug": "catolica-medical-school",
+      "sourceFile": "a-51-60.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CATOLICA_Logotipo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file (\"Nova identidade gráfica da Católica\" - the current graphic identity of Universidade Católica Portuguesa as a whole), CC BY-SA 4.0 International.",
+        "proposedPublicId": "catolica-medical-school-logo"
+      },
+      "note": "Católica Medical School (fm.ucp.pt) is a school of Universidade Católica Portuguesa and uses the parent \"Católica\" brand identity rather than its own separate mark; applied the parent university's current Commons-licensed logo, which is also the Wikipedia infobox logo for Catholic University of Portugal. Cover remains on hold: fm.ucp.pt returned no usable image in this pass."
+    },
+    {
+      "universitySlug": "caucasus-international-university",
+      "sourceFile": "a-61-70.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://admin.ciu.edu.ge/uploads/ciu_logo_dfbc4c5b14.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official logo file served from CIU's own CMS asset host (admin.ciu.edu.ge), referenced directly in the site's page markup.",
+        "proposedPublicId": "caucasus-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://admin.ciu.edu.ge/uploads/medium_header_mobile_302132545c.png",
+        "sourceType": "official",
+        "rightsBasis": "Official header/banner image served from CIU's own CMS asset host, used as the og:image for the site's About page.",
+        "proposedPublicId": "caucasus-international-university-cover"
+      },
+      "note": "ciu.edu.ge's homepage is a client-rendered SPA shell with no images in the static HTML, which is likely why the first pass found nothing. Fetching an inner page (/en/about) directly revealed the CMS-rendered markup, exposing both a direct logo SVG and a header banner image hosted on the site's own admin subdomain."
+    },
+    {
+      "universitySlug": "caucasus-medicine-school",
+      "sourceFile": "a-61-70.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://cu.edu.ge/files/logo/CMS-mainlogo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official school-specific logo file served directly from Caucasus University's own domain (cu.edu.ge), on the Caucasus Medicine School's own page.",
+        "proposedPublicId": "caucasus-medicine-school-logo"
+      },
+      "note": "Identity correction: \"Caucasus Medicine School\" is a school of Caucasus University (cu.edu.ge/en/schoolss/chs), a completely different institution from Caucasus International University (ciu.edu.ge) despite the similar name; the first-pass hold reason does not make this distinction. Found a school-specific logo (CMS-mainlogo.png) on the school's own page. Cover remains on hold: the school page only uses its logo as an og:image, with no separate campus/building photo identified."
+    },
+    {
+      "universitySlug": "central-asian-international-medical-university",
+      "sourceFile": "a-61-70.json",
+      "outcome": "still-hold",
+      "updatedReason": "caimu.org.kg remains completely unreachable (connection failure on both http:// and https://, no response). Checked the Wayback Machine (archive.org/wayback/available) for this exact domain with and without a timestamp filter; it returns zero archived snapshots, so the archive.org fallback technique is not available for this institution. No press/media alternate domain was identified. Still-hold."
+    },
+    {
+      "universitySlug": "central-asian-medical-university",
+      "sourceFile": "a-61-70.json",
+      "outcome": "still-hold",
+      "updatedReason": "camuf.uz is a client-side-rendered Nuxt.js single-page app: the server returns an identical empty HTML shell for every path, including guessed asset paths (e.g. /logo.png returns HTTP 200 with the SPA shell, not an image), so no logo/cover URL could be extracted from the static markup. Its Wayback Machine snapshot is the same JS-only shell. The one genuine static asset on the domain, /favicon.ico, was downloaded and inspected directly: it only contains 16x16 and 32x32 icon sizes, too low-resolution to serve as a verified institutional logo. Still-hold."
+    },
+    {
+      "universitySlug": "central-asian-university-medical-school",
+      "sourceFile": "a-61-70.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Confirmed the first-pass finding: WDOMS records this school as renamed/absorbed into Akfa University Medical School post-2023. This is an unresolved rename/identity situation, not a missing-asset problem - any current official media would carry Akfa University branding rather than the historical \"Central Asian University\" name in this catalogue record. Needs an editorial decision (merge into the Akfa record, or keep as a distinct historical entry) before any logo or cover is sourced. No media proposed."
+    },
+    {
+      "universitySlug": "central-university-of-europe",
+      "sourceFile": "a-61-70.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://cue.edu.ge/wp-content/uploads/2024/10/logo-cue.png",
+        "sourceType": "official",
+        "rightsBasis": "Official logo served directly from the university's own WordPress media uploads.",
+        "proposedPublicId": "central-university-of-europe-logo"
+      },
+      "note": "Re-verified the first pass's already-sourced logo URL (still resolves 200). Checked the dedicated Tbilisi-campus subpage beyond the homepage for a cover candidate; it only surfaces interior classroom photos (e.g. F9A8048-1200x800.jpg), no exterior/building shot suitable as a campus-wide cover image, so cover stays on hold rather than using an interior room photo."
+    },
+    {
+      "universitySlug": "chechen-state-university",
+      "sourceFile": "a-61-70.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://chesu.ru/templates/chsu/img/chesu2.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official seal/emblem image served directly from Chechen State University's own domain, used as the homepage's og:image.",
+        "proposedPublicId": "chechen-state-university-logo"
+      },
+      "note": "chesu.ru's own header renders its \"logo\" as plain CSS-styled text with no image at all (technique #4 territory - an inline/CSS-only logo). Found the university's actual seal/emblem instead as a standalone file used for the homepage's og:image banner. Cover remains on hold: the homepage's other photos are recent admissions-event shots with identifiable people in frame, not clean campus/building images, so none were substituted."
+    },
+    {
+      "universitySlug": "chelyabinsk-state-medical-university",
+      "sourceFile": "a-61-70.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "The historical domain csmu.ru no longer resolves. Its likely successor domain, chelsma.ru, 301-redirects to susmu.su, whose homepage title is \"Южно-Уральский государственный медицинский университет\" (South Ural State Medical University), repeatedly referencing Chelyabinsk in its body text. This indicates Chelyabinsk State Medical University/Academy was renamed to South Ural State Medical University. Flagging as an unresolved rename/identity issue - the catalogue record needs a decision on whether it should be merged into or redirected to a South Ural State Medical University record before assigning media, rather than silently relabelling the renamed institution's assets under the old name. No media sourced."
+    },
+    {
+      "universitySlug": "chirchik-branch-tsmu",
+      "sourceFile": "a-61-70.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://tdtuchf.uz/static/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official seal served directly from the Chirchik branch's own domain header.",
+        "proposedPublicId": "chirchik-branch-tsmu-logo"
+      },
+      "note": "Downloaded and visually verified the logo the first pass had already flagged as a candidate: it is a genuine seal reading \"TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI ... CHIRCHIQ FILIALI\", confirming it is safe to use. While checking cover candidates, one homepage upload turned out on visual inspection to actually be an unrelated Russian university's (RNIMU Pirogov) logo mistakenly hosted on this domain - excluded. The only campus-building photo found is embedded inside a text-and-QR-code admissions poster rather than available as a clean standalone photo, so cover stays on hold."
+    },
+    {
+      "universitySlug": "chita-state-medical-academy",
+      "sourceFile": "a-61-70.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://chitgma.ru/site/images/site/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official seal served directly from Chita State Medical Academy's own domain header.",
+        "proposedPublicId": "chita-state-medical-academy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://chitgma.ru/site/files/carousel_item/27/11b7e4528698e7e308d5f751daadcada.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official homepage carousel photo served directly from the Academy's own domain.",
+        "proposedPublicId": "chita-state-medical-academy-cover"
+      },
+      "note": "Downloaded and visually verified both files: the logo is a genuine \"ЧГМА\" (ChSMA) seal, and the carousel photo is a clean, unobstructed exterior photo of the Academy's main building (with \"...медицинская академия\" visible on the building facade itself, not an added overlay). The carousel was not checked in the first pass, which only looked at the top-level English public page."
+    },
+    {
+      "universitySlug": "chuvash-state-university",
+      "sourceFile": "a-71-80.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.chuvsu.ru/wp-content/themes/SiteOnWpTEAM/img/logo.gif",
+        "sourceType": "official",
+        "rightsBasis": "Official seal served directly from Chuvash State University's own domain theme assets.",
+        "proposedPublicId": "chuvash-state-university-logo"
+      },
+      "note": "Downloaded and visually verified the logo: a genuine \"ЧГУ - Чувашский государственный университет имени И.Н. Ульянова\" seal. Checked Wikipedia's infobox photo as a cover candidate and, via its Commons file description, discovered it is miscategorised - it actually depicts a different institution (the Cheboksary Medical Technicum building), not Chuvash State University - and deliberately excluded it rather than reusing Wikipedia's mistake. The official site's own homepage otherwise only has icons and unlabeled news thumbnails, so cover stays on hold."
+    },
+    {
+      "universitySlug": "city-university-of-london",
+      "sourceFile": "a-71-80.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Re-confirmed via Wikipedia: St George's, University of London merged into City, University of London in 2024, with the combined institution rebranding as City St George's, University of London in 2025. Current official assets belong to the merged successor identity; declining to assign those to this legacy standalone catalogue record pending an editorial decision on how the merger should be reflected in the catalogue. No media sourced."
+    },
+    {
+      "universitySlug": "classical-traditional-medicine-academy",
+      "sourceFile": "a-71-80.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "No reachable official domain, Wikipedia article, or Wikimedia Commons category matching this exact institution name was found in this pass either. The legal institution name, country, and official domain remain unconfirmed, so this is an unresolved-identity case rather than a missing-asset one. No media proposed until the institution is positively identified."
+    },
+    {
+      "universitySlug": "concordia-university-montreal",
+      "sourceFile": "a-71-80.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Concordia_univ_montreal_textlogo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "concordia-university-montreal-logo"
+      },
+      "note": "Concordia's own media-relations page still requires filing a request for logo/media-kit files, matching the first-pass hold. Independently, Wikimedia Commons hosts a PD-status wordmark logo that does not require going through that request workflow, resolving the only missing field (logo) for this record."
+    }
+  ]
+}

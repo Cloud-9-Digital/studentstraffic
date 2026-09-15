@@ -1,0 +1,180 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": ["Bachelor of Medicine and Bachelor of Surgery", "Doctor of Medicine", "General Medicine", "Medicine and Surgery", "Single-Cycle Degree in Medicine and Surgery"],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. It includes integrated, single-cycle General Medicine or Medical Doctor programmes that normally combine foundational sciences, clinical study and supervised practical training over six academic years.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "georgia",
+      "slug": "university-of-georgia-tbilisi",
+      "name": "University of Georgia",
+      "city": "Tbilisi",
+      "type": "Private",
+      "establishedYear": 2004,
+      "officialWebsite": "https://ug.edu.ge/en/",
+      "mediaAttribution": {},
+      "summary": "University of Georgia is a private, multi-school university in Tbilisi. Its School of Health Sciences offers a six-year, 360-ECTS English Medicine programme leading to the Medical Doctor qualification, with a stated USD 6,500 annual international fee.",
+      "campusLifestyle": "UG lists the School of Health Sciences alongside science and technology, law, social sciences, arts and humanities, and business schools. The university's international-student site places its main Tbilisi contact at 77a M. Kostava Street and separately provides travel, health-insurance and visa information for incoming students.",
+      "cityProfile": "The programme is based in Tbilisi, Georgia's capital. UG's international portal gives a campus address at 77a M. Kostava Street, Tbilisi 0171, and directs applicants to its international-student information pages for practical arrival topics. No university-wide living-cost figure is published with the Medicine fee, so housing and daily expenses should be budgeted separately.",
+      "practicalExposure": "UG's published Medicine curriculum is a one-cycle, 360-ECTS programme leading to Medical Doctor (MD). The programme document describes a six-year structure and identifies the qualification, but the reviewed current sources do not name a teaching-hospital network or a mandatory clinical-placement site. This payload therefore does not infer hospital access or licensing outcomes from the programme title.",
+      "hostelOverview": "The reviewed UG international pages provide travel and transportation information but do not publish a university-managed medicine hostel, accommodation price, or guaranteed room allocation. Applicants should obtain current housing options and costs from the Office of International Student Services before making an enrolment decision.",
+      "dietarySupport": "UG's reviewed international pages do not publish a meal plan, dedicated Indian dining service, or a standard food-cost figure for Medicine students. The university's stated tuition is treated separately from daily living costs.",
+      "safetyOverview": "The reviewed UG international pages do not make a standalone campus-safety claim. They do provide international-student information for visa requirements, travel and transportation, and health insurance; students should use those university channels for arrival and settlement questions.",
+      "studentSupport": "UG maintains an Office of International Student Services and International Relations and provides dedicated international pages for how to apply, visa requirements, travel and transportation, health insurance and frequently asked questions. Those published routes are the university's clearest documented support pathway for an incoming international student.",
+      "whyChoose": [
+        "The official programme document confirms a six-year, 360-ECTS English Medicine degree leading to the Medical Doctor qualification.",
+        "UG's current international tuition page lists the English Program of Medical Education (MD) at USD 6,500 per year.",
+        "The Medicine programme received ASIIN/AMSE accreditation and an ASIIN certificate for EQF Level 7 compliance, according to UG's accreditation announcement."
+      ],
+      "thingsToConsider": [
+        "UG's Medicine programme document requires B2 English; applicants without an accepted certificate take a university English assessment.",
+        "For the international route described by UG, applicants also face a Biology-Chemistry-Physics admission exam or interview in addition to document processing.",
+        "The reviewed pages do not publish a medicine-hostel price, living-cost budget, or named clinical partner network, so these practical points need direct confirmation."
+      ],
+      "bestFitFor": [
+        "International applicants seeking an English, single-cycle medical degree in Tbilisi with an explicitly published annual tuition figure.",
+        "Applicants able to demonstrate B2 English or take UG's English assessment and complete the science admission assessment.",
+        "Students who prefer a multi-faculty university with a dedicated international-student services route."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "ASIIN / AMSE - accredited one-cycle English Medicine programme",
+        "ASIIN - European Qualifications Framework Level 7 compliance certificate"
+      ],
+      "recognitionLinks": [
+        {"label": "UG announcement: ASIIN/AMSE accreditation of one-cycle Medicine", "url": "https://www.ug.edu.ge/en/news/international-accreditation-of-one-step-medicine-program-asiin"},
+        {"label": "UG international accreditation page", "url": "https://www.ug.edu.ge/en/international-accreditation"}
+      ],
+      "faq": [
+        {"question": "Is University of Georgia a public or private university?", "answer": "UG describes itself through a multi-school university structure and is catalogued here as a private institution. Its official international site identifies the Tbilisi campus at 77a M. Kostava Street and offers a separate Office of International Student Services and International Relations."},
+        {"question": "Is UG Medicine taught in English?", "answer": "Yes. UG's Medicine programme document identifies English as the language of instruction. The same document describes Medicine as a one-cycle higher-education programme leading to the Medical Doctor (MD) qualification."},
+        {"question": "How long is the UG English Medicine programme?", "answer": "UG states that Medicine comprises 360 ECTS credits. Its programme document identifies the programme as a six-year, one-cycle qualification leading to Medical Doctor (MD)."},
+        {"question": "What does UG list as the international Medicine fee?", "answer": "UG's current international tuition page lists the English Program of Medical Education (MD) at USD 6,500 per year. The page does not provide a full six-year total, accommodation cost, or living-cost estimate, so those items are not included as an official fee quote."},
+        {"question": "What English level does UG require for Medicine?", "answer": "UG's Medicine programme document states B2 English. It names TOEFL, IELTS, FCE and CERTUS as accepted ways to prove English competence, while applicants without one of those certificates take a university English assessment."},
+        {"question": "How does an international applicant apply to UG Medicine?", "answer": "For the international-entry route in UG's Medicine document, applicants submit the documents required under the Georgian education ministry procedure, demonstrate B2 English, and complete a Biology-Chemistry-Physics admission exam or interview. UG separately provides an international how-to-apply page."},
+        {"question": "Does UG publish a Medicine hostel or living-cost figure?", "answer": "The reviewed international tuition and programme pages do not publish a university-managed medicine hostel, a room price, or a standard living-cost figure. Students should request current housing information from the Office of International Student Services before committing."}
+      ],
+      "researchSources": [
+        {"label": "UG Medicine programme document", "url": "https://www.ug.edu.ge/storage/news/Modified%20Medicine%20Program%2011.10.2021.pdf", "kind": "official-program", "checkedAt": "2026-07-25"},
+        {"label": "UG international tuition and fees", "url": "https://ug.edu.ge/en/tuition-and-fees", "kind": "official-fee", "checkedAt": "2026-07-25"},
+        {"label": "UG international accreditation", "url": "https://www.ug.edu.ge/en/news/international-accreditation-of-one-step-medicine-program-asiin", "kind": "recognition", "checkedAt": "2026-07-25"},
+        {"label": "UG international student services", "url": "https://ug.edu.ge/en/", "kind": "official-university", "checkedAt": "2026-07-25"}
+      ],
+      "admissionsContent": {},
+      "programmes": [
+        {
+          "slug": "university-of-georgia-tbilisi-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "English Program of Medical Education (MD)",
+          "durationYears": 6,
+          "fee": {"status": "confirmed", "academicYear": "2026-2027", "officialFeeCurrency": "USD", "officialAnnualTuitionAmount": 6500, "officialTotalTuitionAmount": 39000, "verifiedAt": "2026-07-25", "notes": "UG's international tuition page lists USD 6,500 for the English Program of Medical Education (MD). The USD 39,000 total is the listed annual amount multiplied by the six-year programme duration; UG does not separately publish that total."},
+          "officialProgramUrl": "https://www.ug.edu.ge/storage/news/Modified%20Medicine%20Program%2011.10.2021.pdf",
+          "audienceEligibility": {"availability": "global", "eligibleAudiences": ["Applicants included under the Georgian ministry procedure cited by UG", "Applicants who demonstrate B2 English and complete the Biology-Chemistry-Physics assessment"], "restrictions": ["B2 English is required; applicants without an accepted certificate must take UG's English assessment", "The international route requires the ministry-procedure documents and a Biology-Chemistry-Physics admission exam or interview"], "notes": "UG's programme document distinguishes the international/ministry-procedure route from national-exam admission.", "verifiedAt": "2026-07-25", "sourceUrl": "https://www.ug.edu.ge/storage/news/Modified%20Medicine%20Program%2011.10.2021.pdf"},
+          "admissionsContent": {"overview": "For the international route stated in UG's Medicine programme document, applicants submit the required Georgian ministry-procedure documents, demonstrate B2 English and complete a Biology-Chemistry-Physics admission exam or interview.", "eligibility": {"intro": "Applicants on UG's international route must meet the Georgian ministry procedure cited by the university, show B2 English and complete the programme's Biology-Chemistry-Physics assessment.", "items": ["Complete general education documents under the Georgian ministry procedure", "B2 English demonstrated by an accepted certificate or UG assessment", "Biology-Chemistry-Physics admission exam or interview"]}, "applicationSteps": ["Review UG's international how-to-apply guidance", "Submit the documents required under the Georgian ministry procedure", "Provide accepted B2 English evidence or take UG's English assessment", "Complete the Biology-Chemistry-Physics admission exam or interview"], "documentsRequired": {"academic": ["Complete general education documentation required by the Georgian ministry procedure"], "application": ["Relevant documents required under the Georgian ministry procedure", "Accepted English-language certificate where available"]}, "deadlinesNote": "UG's reviewed programme document does not state a dated application deadline. The university's international flyer states that UG has Fall and Spring intake; applicants should use the current international application route for cycle-specific dates."},
+          "medium": "English throughout the published one-cycle Medicine programme.",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["Fall", "Spring"],
+          "intakeCodes": ["september", "january"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "UG lists USD 6,500 per year for the English Program of Medical Education (MD). USD 39,000 is a transparent six-year calculation, not a separately published total. The university does not publish a standard living-cost figure on the reviewed fee page.",
+          "teachingPhases": [{"phase": "One-cycle Medical Doctor programme", "language": "English", "details": "UG's programme document states that Medicine is a six-year, 360-ECTS one-cycle higher-education programme leading to Medical Doctor (MD)."}],
+          "sourceUrls": ["https://www.ug.edu.ge/storage/news/Modified%20Medicine%20Program%2011.10.2021.pdf", "https://ug.edu.ge/en/tuition-and-fees", "https://www.ug.edu.ge/storage/International%20Flyer%20A5.pdf"]
+        }
+      ]
+    },
+    {
+      "countrySlug": "georgia",
+      "slug": "caucasus-international-university",
+      "name": "Caucasus International University",
+      "city": "Tbilisi",
+      "type": "Private",
+      "establishedYear": 1995,
+      "officialWebsite": "https://ciu.edu.ge/en/",
+      "mediaAttribution": {},
+      "summary": "Caucasus International University is a private Tbilisi university founded in 1995 as the medical institute Clinician. Its English Medical Educational Program is a six-year, 12-semester, 360-credit one-cycle MD with a published USD 6,000 annual tuition fee.",
+      "campusLifestyle": "CIU operates across business and technology, social sciences and humanities, law, medicine, and viticulture and enology. Its student-facing services include an electronic library restricted to registered university users; CIU says the library contains programme-organised textbooks in multiple languages. The university's international portal also provides online registration, visa, living and transport guidance.",
+      "cityProfile": "CIU is located at 73 Chargali Street, Tbilisi. Its international-student portal discusses practical matters such as online registration, visa requirements, living and dining, and travel and transportation. CIU has not published one fixed annual living-cost budget for English Medicine students, so the stated USD tuition should not be treated as a complete annual budget.",
+      "practicalExposure": "CIU's English Medical Educational Program is a full-time, one-cycle MD of 360 credits over six years and 12 semesters. The programme structure includes basic, clinical, clinical-skills, scientific-research-skills and optional modules. CIU's Faculty of Medicine also describes a Clinical Skills Center and says practical teaching in clinical disciplines takes place at affiliated and partner clinics and medical institutions.",
+      "hostelOverview": "CIU's reviewed international pages provide living and dining information but do not state that a university hostel is guaranteed for Medicine students or publish a medicine-specific accommodation fee. Applicants should request current housing availability, location and cost directly from CIU before paying an enrolment deposit.",
+      "dietarySupport": "CIU's international-student materials reference living and dining information, but the reviewed sources do not publish a dedicated Indian meal service, a mandatory meal plan or a standard food-cost figure for English Medicine students.",
+      "safetyOverview": "The reviewed CIU sources do not make a standalone campus-safety claim. They do identify institutional support routes including the International Relations Department, Student Service Office and Medical Office; international students can also use CIU's published visa and travel information before arrival.",
+      "studentSupport": "CIU's published structure includes a Student Service Office, International Relations Department, Lifelong Learning and Career Development Service, Medical Office, and youth and culture services. For an incoming student, the university also provides international pages for online registration, visa requirements, living and dining, and travel and transportation.",
+      "whyChoose": [
+        "CIU's English Medicine programme is a six-year, 12-semester, 360-credit one-cycle Medical Doctor degree.",
+        "The official international programme listing states USD 6,000 annual tuition for Medical Educational Program in English.",
+        "CIU's current authorization/accreditation register lists Medicine in English as an accredited one-cycle Medicine programme."
+      ],
+      "thingsToConsider": [
+        "CIU's English programme PDF requires at least B1 English, demonstrated by a certificate or a university-administered test.",
+        "Foreign-student eligibility is governed by the categories and timeframes set by Georgia's education ministry; applicants need to match their own education history to those categories.",
+        "The reviewed sources do not publish a guaranteed hostel or a standard annual living-cost amount for English Medicine students."
+      ],
+      "bestFitFor": [
+        "International applicants seeking a six-year English MD with a stated USD annual tuition figure in Tbilisi.",
+        "Students who want an integrated curriculum that explicitly includes clinical-skills and scientific-research-skills modules.",
+        "Applicants able to meet the foreign-student route and demonstrate B1 English through a certificate or CIU's test."
+      ],
+      "industryPartners": ["Caucasus Medical Center", "M. Iashvili Children's Central Hospital", "Academician O. Gudushauri National Medical Center", "Simon Khechinashvili University Clinic"],
+      "recognitionBadges": ["NCEQE - institutional authorization, third term granted in 2024", "NCEQE - Medicine in English accredited one-cycle programme"],
+      "recognitionLinks": [{"label": "CIU authorization and accreditation register", "url": "https://ciu.edu.ge/en/about/authorization-accreditation"}, {"label": "CIU institutional authorization information", "url": "https://ciu.edu.ge/en/about"}],
+      "faq": [
+        {"question": "Is Caucasus International University public or private?", "answer": "CIU describes itself as a private higher-education institution. It says it was founded in 1995 as the medical institute Clinician and later developed into a multi-faculty university in Tbilisi."},
+        {"question": "Is CIU Medicine taught in English?", "answer": "Yes. CIU's programme listing is titled Medical Educational Program in English. The official programme material states that the tuition language is English and the qualification awarded is Medical Doctor (MD)."},
+        {"question": "How long is CIU's English Medicine programme?", "answer": "CIU lists a 360-credit workload over six years and 12 semesters. The programme is described as a full-time, one-cycle medical degree leading to Medical Doctor (MD)."},
+        {"question": "What annual tuition does CIU publish for English Medicine?", "answer": "CIU's official programme search result lists USD 6,000 tuition for Medical Educational Program in English. The university does not publish a complete six-year total or one standard living-cost amount in that listing."},
+        {"question": "What English requirement does CIU state?", "answer": "CIU's English Medicine programme PDF states that applicants need at least B1 English. It says this can be proved by certificate or by a university-administered test when no certificate is presented."},
+        {"question": "Who can use CIU's foreign-student admission route?", "answer": "CIU's programme document lists foreign citizens and stateless persons who studied abroad and acquired general education, along with several defined foreign-education and credit-transfer categories. The route is subject to Georgian ministry rules and timeframes, so applicants should compare their own education history to the published categories."},
+        {"question": "Does CIU publish accommodation for English Medicine students?", "answer": "CIU publishes living and dining information for international students, but the reviewed sources do not promise a medicine hostel, room allocation or accommodation price. Request current housing options directly from the university before planning costs."}
+      ],
+      "researchSources": [{"label": "CIU about page", "url": "https://ciu.edu.ge/en/about", "kind": "official-university", "checkedAt": "2026-07-25"}, {"label": "CIU English Medicine programme", "url": "https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf", "kind": "official-program", "checkedAt": "2026-07-25"}, {"label": "CIU international programmes", "url": "https://ciu.edu.ge/en/search/3", "kind": "official-fee", "checkedAt": "2026-07-25"}, {"label": "CIU authorization/accreditation register", "url": "https://ciu.edu.ge/en/about/authorization-accreditation", "kind": "recognition", "checkedAt": "2026-07-25"}, {"label": "CIU Clinical Skills Center", "url": "https://ciu.edu.ge/en/faculty/medicine/clinical-skills-center", "kind": "official-program", "checkedAt": "2026-07-25"}],
+      "admissionsContent": {},
+      "programmes": [{
+        "slug": "caucasus-international-university-medicine",
+        "canonicalCourseSlug": "mbbs",
+        "officialTitle": "Medical Educational Program in English",
+        "durationYears": 6,
+        "fee": {"status": "confirmed", "academicYear": "2026-2027", "officialFeeCurrency": "USD", "officialAnnualTuitionAmount": 6000, "officialTotalTuitionAmount": 36000, "verifiedAt": "2026-07-25", "notes": "CIU lists USD 6,000 tuition for Medical Educational Program in English. USD 36,000 is the listed annual amount multiplied by the six-year duration, not a separately stated CIU total."},
+        "officialProgramUrl": "https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf",
+        "audienceEligibility": {"availability": "global", "eligibleAudiences": ["Foreign citizens and stateless persons who studied abroad and acquired general education or its equivalent", "Defined foreign-education and foreign-credit categories listed in CIU's programme document"], "restrictions": ["Admission without unified national exams is limited to the categories and timeframes determined by Georgia's Ministry of Education and Science", "At least B1 English is required and must be demonstrated by certificate or university test"], "notes": "CIU's programme document lists several foreign-student and transfer categories under the Georgian ministry framework.", "verifiedAt": "2026-07-25", "sourceUrl": "https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf"},
+        "admissionsContent": {"overview": "CIU's English Medicine programme document sets a foreign-student admission route under Georgian ministry rules and requires B1 English demonstrated by certificate or a university test.", "eligibility": {"intro": "Applicants must fall within a foreign-student or foreign-education category stated in CIU's programme document and demonstrate at least B1 English by certificate or university test.", "items": ["Education history that meets one of CIU's stated foreign-student or foreign-education categories", "At least B1 English proven by certificate or university-administered test", "Documents required under the Georgian ministry rules that govern the admission category"]}, "applicationSteps": ["Review CIU's stated foreign-student eligibility categories", "Use CIU's international online-registration route", "Submit the documentation required for the applicable Georgian ministry category", "Provide B1 English evidence or complete CIU's English test", "Follow CIU's published visa and arrival guidance after admission"], "documentsRequired": {"academic": ["General-education or equivalent documents matching the applicable foreign-student category"], "application": ["Online registration through CIU's international route", "English-language certificate where available", "Documents required by the applicable Georgian ministry admission category"]}, "deadlinesNote": "The reviewed CIU programme document does not provide a dated intake deadline. CIU's international website provides online registration and visa information; applicants should use that current route for cycle-specific dates."},
+        "medium": "English for the full-time Medical Educational Program in English.",
+        "instructionLanguages": ["english"],
+        "intakeMonths": ["Fall"],
+        "intakeCodes": ["september"],
+        "feeVerifiedAt": "2026-07-25",
+        "feeNotes": "CIU lists USD 6,000 tuition for Medical Educational Program in English. USD 36,000 is a transparent six-year calculation rather than a separately published total. No standard living-cost figure is published in the reviewed programme listing.",
+        "teachingPhases": [{"phase": "Integrated medical curriculum", "language": "English", "details": "CIU describes a full-time, 360-credit, six-year and 12-semester one-cycle programme with basic, clinical, clinical-skills, scientific-research-skills and optional modules."}, {"phase": "Clinical-skills and clinical study", "language": "English", "details": "CIU's Faculty of Medicine describes a Clinical Skills Center and states that practical teaching in clinical disciplines takes place at affiliated and partner clinics and medical institutions."}],
+        "sourceUrls": ["https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf", "https://ciu.edu.ge/en/search/3", "https://ciu.edu.ge/en/faculty/medicine/clinical-skills-center"]
+      }]
+    }
+  ],
+  "evidence": [
+    {"entity":"university","universitySlug":"university-of-georgia-tbilisi","publicField":"identity","claimText":"University of Georgia is a Tbilisi institution whose international site lists 77a M. Kostava Street, Tbilisi 0171.","status":"verified","sourceLabel":"UG international tuition page","sourceUrl":"https://ug.edu.ge/en/tuition-and-fees","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-07-25"},
+    {"entity":"university","universitySlug":"university-of-georgia-tbilisi","publicField":"recognition","claimText":"UG announced ASIIN/AMSE accreditation of its one-cycle English Medicine programme and ASIIN certification of EQF Level 7 compliance.","status":"verified","sourceLabel":"UG ASIIN accreditation announcement","sourceUrl":"https://www.ug.edu.ge/en/news/international-accreditation-of-one-step-medicine-program-asiin","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"university-of-georgia-tbilisi","programmeSlug":"university-of-georgia-tbilisi-medicine","publicField":"academics","claimText":"UG Medicine is an English, six-year, 360-ECTS one-cycle programme leading to Medical Doctor (MD).","status":"verified","sourceLabel":"UG Medicine programme document","sourceUrl":"https://www.ug.edu.ge/storage/news/Modified%20Medicine%20Program%2011.10.2021.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"university-of-georgia-tbilisi","programmeSlug":"university-of-georgia-tbilisi-medicine","publicField":"eligibility","claimText":"UG requires B2 English and, for the cited international route, Georgian ministry-procedure documents plus a Biology-Chemistry-Physics admission exam or interview.","status":"verified","sourceLabel":"UG Medicine programme document","sourceUrl":"https://www.ug.edu.ge/storage/news/Modified%20Medicine%20Program%2011.10.2021.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"university-of-georgia-tbilisi","programmeSlug":"university-of-georgia-tbilisi-medicine","publicField":"admissions","claimText":"UG's international flyer states Fall and Spring intakes; the Medicine document sets the international application assessment route.","status":"verified","sourceLabel":"UG international flyer and Medicine programme document","sourceUrl":"https://www.ug.edu.ge/storage/International%20Flyer%20A5.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"university-of-georgia-tbilisi","programmeSlug":"university-of-georgia-tbilisi-medicine","publicField":"intake","claimText":"UG states it has Fall and Spring intake for international students.","status":"verified","sourceLabel":"UG international flyer","sourceUrl":"https://www.ug.edu.ge/storage/International%20Flyer%20A5.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"university-of-georgia-tbilisi","programmeSlug":"university-of-georgia-tbilisi-medicine","publicField":"fee","claimText":"UG's international tuition page lists the English Program of Medical Education (MD) at USD 6,500 per year.","status":"verified","sourceLabel":"UG tuition and fees","sourceUrl":"https://ug.edu.ge/en/tuition-and-fees","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"},
+    {"entity":"university","universitySlug":"caucasus-international-university","publicField":"identity","claimText":"CIU is a private higher-education institution founded in 1995 as the medical institute Clinician.","status":"verified","sourceLabel":"CIU about page","sourceUrl":"https://ciu.edu.ge/en/about","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-07-25"},
+    {"entity":"university","universitySlug":"caucasus-international-university","publicField":"recognition","claimText":"CIU states that it received third-term institutional authorization in 2024; its accreditation register lists Medicine in English as an accredited one-cycle Medicine programme.","status":"verified","sourceLabel":"CIU about and authorization/accreditation pages","sourceUrl":"https://ciu.edu.ge/en/about/authorization-accreditation","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"caucasus-international-university","programmeSlug":"caucasus-international-university-medicine","publicField":"academics","claimText":"CIU's English Medical Educational Program is full-time, 360 credits, six years and 12 semesters, leading to Medical Doctor (MD).","status":"verified","sourceLabel":"CIU English Medicine programme PDF","sourceUrl":"https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"caucasus-international-university","programmeSlug":"caucasus-international-university-medicine","publicField":"eligibility","claimText":"CIU's foreign-student route is limited to defined Georgian ministry categories and requires B1 English proven by certificate or university test.","status":"verified","sourceLabel":"CIU English Medicine programme PDF","sourceUrl":"https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"caucasus-international-university","programmeSlug":"caucasus-international-university-medicine","publicField":"admissions","claimText":"CIU publishes an international online-registration route and its English Medicine document describes the foreign-student admission categories.","status":"verified","sourceLabel":"CIU English Medicine programme PDF","sourceUrl":"https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"caucasus-international-university","programmeSlug":"caucasus-international-university-medicine","publicField":"intake","claimText":"CIU's English Medicine programme is published for the academic year and CIU provides an active international online-registration route; no dated deadline was published in the reviewed programme material.","status":"verified","sourceLabel":"CIU English Medicine programme PDF","sourceUrl":"https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2027-01-25"},
+    {"entity":"programme","universitySlug":"caucasus-international-university","programmeSlug":"caucasus-international-university-medicine","publicField":"fee","claimText":"CIU lists USD 6,000 tuition for Medical Educational Program in English.","status":"verified","sourceLabel":"CIU international programme listing","sourceUrl":"https://ciu.edu.ge/en/search/3","sourceGrade":"A","checkedAt":"2026-07-25","reviewBy":"2026-10-25"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "countrySlug": "guinea",
+  "universitySlug": "universite-kofi-annan-de-guinee",
+  "schoolName": "Université Kofi Annan de Guinée",
+  "cityName": "Conakry",
+  "priority": "medium",
+  "officialWebsite": "https://www.ukaguinee.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UKAG's official admissions page provides an annual registration fee of 400,000 GNF for Licence/engineering/medicine and describes dossier submission to an admissions commission. External institutional evidence identifies a Medicine and Pharmacy faculty, but the official site material collected does not provide a current medicine programme title, duration, language, total tuition, medical eligibility, deadline, clinical route, accommodation or accreditation. Registration is not represented as tuition.",
+  "sourceBundle": { "sources": [
+    { "label": "UKAG official application page", "url": "https://ukaguinee.org/admission/candidater", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Lists 400,000 GNF annual registration for Licence/engineering/medicine and application-dossier review; it does not state a complete medicine programme or tuition record." },
+    { "label": "UKAG official tuition page", "url": "https://univ-kag.org/frais-scolarite/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "States that tuition varies by programme, without exposing a verified current medicine fee in the retrieved content." },
+    { "label": "Agence universitaire de la Francophonie UKAG profile", "url": "https://www.auf.org/membre/universite-kofi-annan-de-guinee-2/", "kind": "institutional-directory", "checkedAt": "2026-07-25", "notes": "Identifies UKAG as a private multidisciplinary university with a Medicine and Pharmacy faculty." },
+    { "label": "Guinea ANAQ private-institution listing", "url": "https://anaq-edu.org/wp-content/uploads/2024/03/Classement-general-des-Institutions-privees.pdf", "kind": "quality-assurance", "checkedAt": "2026-07-25", "notes": "Lists Université Kofi Annan de Guinée in the private-institution document; it is not programme accreditation evidence." }
+  ] },
+  "structuredFacts": { "name": "Université Kofi Annan de Guinée", "type": "Private university", "programs": [], "missingForPublication": [ "current medical degree title, duration and instructional language", "full medicine tuition and mandatory-cost schedule", "programme-specific admission eligibility/documents/deadline", "clinical training and accommodation/support evidence", "programme-level accreditation and target-market recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: only a registration charge, not a complete medicine fee/admission record, was available." }
+}

@@ -1,0 +1,220 @@
+[
+  {
+    "universitySlug": "mcmaster-university-nursing",
+    "universityName": "McMaster University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Catalogue record's name field is 'McMaster University' (not programme-specific), so it was researched as the main university. Technique used: Commons free-licensed PD wordmark (the en-wiki infobox crest/logo is non-free) and CC-BY-SA aerial photo..",
+    "proposedPublicIds": {
+      "logo": "universities/mcmaster-university-nursing/logo",
+      "cover": "universities/mcmaster-university-nursing/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/McMaster_University_wordmark.png",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, PD-textlogo (McMaster wordmark, Garamond lettering)",
+      "proposedPublicId": "mcmaster-university-nursing-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/McMaster_University%2C_seen_from_above_and_from_the_southwest_%28from_Scenic_Drive%29.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0 (aerial campus view from Scenic Drive)",
+      "proposedPublicId": "mcmaster-university-nursing-cover"
+    }
+  },
+  {
+    "universitySlug": "medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university",
+    "universityName": "MediCampus Europeo Faculty of Medicine in Partnership with Trakia University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Identity mismatch found: the reachable official site for this brand (medicampuseuropeo.com) titles and brands itself solely as 'MediCampus Europeo - Faculty of Medicine in Malta' with no mention anywhere on the homepage of a Trakia University partnership. This needs confirmation that medicampuseuropeo.com is in fact the same entity as the catalogued 'MediCampus Europeo Faculty of Medicine in Partnership with Trakia University' before sourcing its branding as this record's media. No media sourced.",
+    "proposedPublicIds": {
+      "logo": "universities/medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university/logo",
+      "cover": "universities/medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university/cover"
+    },
+    "dataIssue": true
+  },
+  {
+    "universitySlug": "medical-institute-of-karakalpakstan",
+    "universityName": "Medical Institute of Karakalpakstan",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Still unable to identify an authoritative official domain. Tried several plausible Uzbek domain guesses (karmi.uz, nukusmedinst.uz, qmi.uz and www variants) -- all unreachable (no DNS/connection). No Wikipedia article exists under this or related names. Without a confirmed official domain, press-page, Commons, and Wayback techniques cannot be applied. Stays held.",
+    "proposedPublicIds": {
+      "logo": "universities/medical-institute-of-karakalpakstan/logo",
+      "cover": "universities/medical-institute-of-karakalpakstan/cover"
+    }
+  },
+  {
+    "universitySlug": "medical-institute-of-reconstruction",
+    "universityName": "Medical Institute of Reconstruction",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "hold",
+    "reason": "Institution identity remains too ambiguous to locate an authoritative official source: no Wikipedia article, and the English name does not map confidently to a single verifiable institution/domain. Without a confirmed identity/domain, none of the second-pass techniques (press page, Commons, Wayback, favicon) could be applied. Stays held.",
+    "proposedPublicIds": {
+      "logo": "universities/medical-institute-of-reconstruction/logo",
+      "cover": "universities/medical-institute-of-reconstruction/cover"
+    }
+  },
+  {
+    "universitySlug": "medical-university-of-gdansk",
+    "universityName": "Medical University of Gdansk",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique used: Wikipedia infobox -> Commons, both files already hosted on commons.wikimedia.org (not the non-free en-wiki path), missed by the first pass..",
+    "proposedPublicIds": {
+      "logo": "universities/medical-university-of-gdansk/logo",
+      "cover": "universities/medical-university-of-gdansk/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Logo_of_Gda%C5%84sk_Medical_University.PNG",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, public domain under Polish Copyright Law Art. 4(2) (official symbol exemption)",
+      "proposedPublicId": "medical-university-of-gdansk-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Gdansk_GUMed_2.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (historic Building 1, Debinki Street)",
+      "proposedPublicId": "medical-university-of-gdansk-cover"
+    }
+  },
+  {
+    "universitySlug": "medical-university-of-warsaw",
+    "universityName": "Medical University of Warsaw",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique used: found a separate free-licensed Commons file (Logo_WUM.png) distinct from the non-free 'ceremonial brand identity' emblem used in the en-wiki infobox; paired with a freely-licensed 2025 campus photo..",
+    "proposedPublicIds": {
+      "logo": "universities/medical-university-of-warsaw/logo",
+      "cover": "universities/medical-university-of-warsaw/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Logo_WUM.png",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, public domain under Polish Copyright Law (official symbol exemption)",
+      "proposedPublicId": "medical-university-of-warsaw-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Warszawski_Uniwersytet_Medyczny_2025.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY 3.0 Poland (Rectorate Building, Banacha Campus)",
+      "proposedPublicId": "medical-university-of-warsaw-cover"
+    }
+  },
+  {
+    "universitySlug": "mediterranean-university-of-albania",
+    "universityName": "Mediterranean University of Albania",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique used: direct HTML inspection of the official site (umsh.edu.al, confirmed reachable, page title 'Universiteti Mesdhetar') located the header logo SVG. Cover stays held: the only other images on the homepage (2020.jpg, project3.jpg, usia.jpg) are generic stock photography (people at laptops, a '2020' graphic) with no identifiable campus/building content, so none were used.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/mediterranean-university-of-albania/logo",
+      "cover": "universities/mediterranean-university-of-albania/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://umsh.edu.al/images/logo.svg",
+      "sourceType": "official",
+      "rightsBasis": "Direct asset from the university's own official domain (umsh.edu.al, Universiteti Mesdhetar/Mediterranean University of Albania), used as the site header logo",
+      "proposedPublicId": "mediterranean-university-of-albania-logo"
+    }
+  },
+  {
+    "universitySlug": "michigan-state-university",
+    "universityName": "Michigan State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique used: the en-wiki infobox seal is non-free, but the wordmark variant is hosted free on Commons under PD-textlogo -- paired with a freely-licensed campus landmark photo..",
+    "proposedPublicIds": {
+      "logo": "universities/michigan-state-university/logo",
+      "cover": "universities/michigan-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Michigan_State_University_wordmark.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, PD-textlogo (official MSU wordmark)",
+      "proposedPublicId": "michigan-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Beaumont_Tower_South_Side.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (Beaumont Tower, iconic North Campus landmark)",
+      "proposedPublicId": "michigan-state-university-cover"
+    }
+  },
+  {
+    "universitySlug": "monash-university",
+    "universityName": "Monash University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique used: found the free-licensed Commons logo file (sourced from Monash's own site, separately hosted from the non-free en-wiki logo) paired with a public-domain campus photo..",
+    "proposedPublicIds": {
+      "logo": "universities/monash-university/logo",
+      "cover": "universities/monash-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Monash_University_logo.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, public domain (simple geometry, ineligible for copyright; trademark still applies)",
+      "proposedPublicId": "monash-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Clayton_-_Monash_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, public domain (Clayton campus, Robert Menzies Building)",
+      "proposedPublicId": "monash-university-cover"
+    }
+  },
+  {
+    "universitySlug": "mordovia-state-university",
+    "universityName": "Mordovia State University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique used: direct HTML inspection of official site (mrsu.ru, reachable, confirmed logo asset resolves 200) since the ru-wiki infobox logo is hosted non-free; paired with a freely-licensed Commons campus photo..",
+    "proposedPublicIds": {
+      "logo": "universities/mordovia-state-university/logo",
+      "cover": "universities/mordovia-state-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://mrsu.ru/local/templates/mrsu2021/assets/images/ru_logo_bw_new.svg",
+      "sourceType": "official",
+      "rightsBasis": "Direct asset from the university's own official domain (mrsu.ru), used as the live site header logo",
+      "proposedPublicId": "mordovia-state-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Saransk_University_%2842033511865%29.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Wikimedia Commons, CC BY 2.0 (central campus, Saransk)",
+      "proposedPublicId": "mordovia-state-university-cover"
+    }
+  }
+]

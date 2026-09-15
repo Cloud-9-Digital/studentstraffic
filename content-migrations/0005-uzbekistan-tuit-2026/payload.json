@@ -1,0 +1,114 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-software-engineering",
+      "name": "B.E./B.Tech in Software Engineering",
+      "shortName": "B.Tech Software Engineering",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "software-engineering",
+      "aliases": ["Bachelor of Software Engineering", "B.Tech Software Engineering"],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Software Engineering is the Students Traffic catalogue category for undergraduate programmes focused on software design, programming, testing, software architecture and delivery. It is used here for TUIT's official Bachelor of Software Engineering programme, whose published outcomes cover engineering problem-solving, software creation, quality processes and software-hardware integration.",
+      "metaTitle": "B.Tech Software Engineering Programs and Admissions",
+      "metaDescription": "Explore B.Tech Software Engineering programmes by curriculum, international admissions, fees, teaching language and application requirements."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "uzbekistan",
+      "slug": "tashkent-university-of-information-technologies",
+      "name": "Tashkent University of Information Technologies named after Muhammad al-Khwarizmi",
+      "city": "Tashkent",
+      "type": "Public",
+      "establishedYear": 1955,
+      "officialWebsite": "https://tuit.uz/en",
+      "mediaAttribution": {},
+      "summary": "Tashkent University of Information Technologies named after Muhammad al-Khwarizmi is a public technology university in Tashkent. Its 2026 international-admissions route lists Software Engineering among the available fields, accepts school or college graduates, and states that instruction is offered in Uzbek, Russian and English.",
+      "campusLifestyle": "TUIT's main campus is at Amir Temur Avenue 108 in Tashkent. The Software Engineering faculty identifies higher mathematics, software information technologies, system and applied programming, programming technologies, and algorithms and mathematical modelling among its departments.",
+      "cityProfile": "Tashkent is the university's study location. TUIT's 2026 international-admissions information gives a planning reference of USD 200–300 per month for city-centre rentals, USD 2–5 per restaurant meal, and public transport below USD 0.50 per trip. These are local planning figures rather than tuition and should be budgeted separately.",
+      "practicalExposure": "The published Software Engineering programme describes work with software for automated and computer systems, information processing, microprocessor systems, software products, databases and interactive state-service systems. Its stated professional competencies include software creation, testing and operation, software-hardware integration, and research activity.",
+      "hostelOverview": "TUIT states that dormitory accommodation is available for international applicants. The current admissions page does not publish a room category, capacity, allocation rule or residence fee, so this profile does not present a housing price as a confirmed university charge.",
+      "dietarySupport": "TUIT's international-admissions page gives a restaurant-meal planning reference of USD 2–5. It does not identify a university meal plan, dietary service or included food charge for this programme.",
+      "safetyOverview": "The international-admissions page provides direct contact details for TUIT's International Relations Office and identifies an online admissions route. It does not publish a programme-specific safety service or a measurable campus-safety outcome.",
+      "studentSupport": "International applicants can apply through TUIT's online international-admissions system or contact the International Relations Office. The university lists document requirements, an online interview window and a named admissions contact, which gives applicants a defined route for application and arrival planning.",
+      "whyChoose": [
+        "The 2026 international route lists Software Engineering and accepts school or college graduates.",
+        "TUIT publishes an English-language Software Engineering programme page with curriculum and competency detail.",
+        "TUIT lists Uzbek, Russian and English as languages of instruction for international admissions.",
+        "Software Engineering is one of the TUIT ICT programmes named in its ASIIN accreditation announcement."
+      ],
+      "thingsToConsider": [
+        "The published USD 1,500 bachelor tuition is tied to the 2025/2026 foreign-citizen fee schedule; later cohorts need a fresh fee confirmation before payment.",
+        "TUIT lists Uzbek, Russian and English at admissions level, but the public programme page does not specify a language by module or year; applicants should select and confirm the available study language in their application.",
+        "The current international-admissions deadline is August 15, 2026, with online interviews scheduled from July 15 to August 25, so document preparation must be completed before that window.",
+        "Dormitory availability is stated, but a current room fee and allocation terms are not published on the international-admissions page."
+      ],
+      "bestFitFor": [
+        "Applicants seeking an undergraduate software-engineering route in Tashkent with a defined international admissions process.",
+        "Students who can provide a school or college certificate, transcript, passport copy and photograph for the online application.",
+        "Applicants planning for an online selection interview and an English-language credential where requested.",
+        "Students who want programme content spanning software design, testing, systems and information-processing applications."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "ASIIN — Software Engineering programme accreditation",
+        "TUIT — public university under Uzbekistan's higher-education system"
+      ],
+      "recognitionLinks": [
+        {"label": "TUIT ASIIN accreditation announcement", "url": "https://tuit.uz/en/post/ozbekiston-oliy-talim-tizimidabirinchi-marotaba-axborot-kommunikatsiya"},
+        {"label": "TUIT official university website", "url": "https://tuit.uz/en"}
+      ],
+      "faq": [
+        {"question": "Is TUIT a public university?", "answer": "Tashkent University of Information Technologies named after Muhammad al-Khwarizmi is a public university in Tashkent. Its official international-admissions page and programme pages are the routes used for this profile."},
+        {"question": "Does TUIT offer Software Engineering?", "answer": "Yes. TUIT publishes Bachelor’s Educational Program 60610600 – Software Engineering and also lists Software Engineering in its 2026 international-admissions information."},
+        {"question": "What language is used for international study at TUIT?", "answer": "TUIT's 2026 international-admissions page lists Uzbek, Russian and English as languages of instruction. The public programme material does not break the Software Engineering curriculum down by language, so confirm the available language route before accepting an offer."},
+        {"question": "What is the tuition fee for an international bachelor at TUIT?", "answer": "TUIT's foreign-citizen fee schedule linked from its current tuition page lists USD 1,500 for full-time bachelor programmes for the 2025/2026 academic year. This profile treats that as a dated published fee, not a quote for a later cohort."},
+        {"question": "Who can apply to TUIT as an international bachelor applicant?", "answer": "The 2026 admissions page says school or college graduates can apply. It asks for a passport, school certificate or diploma with transcript, a photo, and IELTS 5.5 or TOEFL iBT 71 if available."},
+        {"question": "How does an international applicant apply to TUIT?", "answer": "Applications are submitted through TUIT's international-admissions system or by the published international-admissions email route. The 2026 page sets an August 15 deadline and states that interviews are held online from July 15 to August 25."},
+        {"question": "Is accommodation available at TUIT?", "answer": "TUIT says dormitory accommodation is available. It does not publish a current room fee or allocation terms on the international-admissions page, so accommodation needs to be costed separately from the stated tuition."},
+        {"question": "What does the Software Engineering programme cover?", "answer": "TUIT's programme page describes software for automated and computer systems, information processing, microprocessor systems, databases and software-hardware integration. It also names software creation, testing and operation among the professional activities addressed by the programme."}
+      ],
+      "researchSources": [
+        {"label": "TUIT international admissions 2026–2027", "url": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "International eligibility, documents, deadline, interview window, instruction languages and accommodation statement."},
+        {"label": "TUIT foreign-citizen tuition schedule", "url": "https://static.tuit.uz/uploads/1/0ik-_mrzNyJ-q-SV-vh7jBFyJc16ZIko.pdf", "kind": "official-fee", "checkedAt": "2026-07-25", "notes": "2025/2026 full-time international bachelor tuition."},
+        {"label": "TUIT Software Engineering programme", "url": "https://tuit.uz/en/software-engineering", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Programme identity, objectives and published competency scope."},
+        {"label": "TUIT ASIIN accreditation announcement", "url": "https://tuit.uz/en/post/ozbekiston-oliy-talim-tizimidabirinchi-marotaba-axborot-kommunikatsiya", "kind": "recognition", "checkedAt": "2026-07-25", "notes": "Software Engineering included in TUIT's ASIIN accreditation announcement."}
+      ],
+      "admissionsContent": {
+        "international": "International bachelor applicants use TUIT's online application route, submit the listed identity and academic documents, and complete the stated online interview process."
+      },
+      "programmes": [
+        {
+          "slug": "tuit-software-engineering-bachelors",
+          "canonicalCourseSlug": "be-btech-software-engineering",
+          "officialTitle": "Bachelor’s Educational Program 60610600 – Software Engineering",
+          "durationYears": 4,
+          "fee": {"status": "confirmed", "academicYear": "2025/2026", "officialFeeCurrency": "USD", "officialAnnualTuitionAmount": 1500, "officialTotalTuitionAmount": 6000, "annualTuitionUsd": 1500, "totalTuitionUsd": 6000, "verifiedAt": "2026-07-25", "notes": "TUIT's linked foreign-citizen schedule lists USD 1,500 for all full-time bachelor programmes for 2025/2026. The total is calculated across the recorded four-year programme duration and excludes living and accommodation costs."},
+          "officialProgramUrl": "https://tuit.uz/en/software-engineering",
+          "audienceEligibility": {"availability": "global", "eligibleAudiences": ["International school graduates", "International college graduates"], "restrictions": ["Applicants must submit the documents listed by TUIT and complete the online interview process.", "The available programme-language route must be confirmed with TUIT because its admissions page lists Uzbek, Russian and English without a programme-by-programme allocation."], "notes": "The 2026 international-admissions page identifies school and college graduates as eligible applicant groups.", "verifiedAt": "2026-07-25", "sourceUrl": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli"},
+          "admissionsContent": {"overview": "TUIT lists Software Engineering in its international-admissions route. International school and college graduates apply online, submit the requested identity and academic records, and complete an online interview.", "eligibility": {"intro": "The 2026 international-admissions page accepts graduates of schools or colleges and asks applicants to meet the stated English-language requirements.", "items": ["School or college certificate or diploma with transcript.", "Passport copy in PDF format.", "IELTS 5.5 or higher, or TOEFL iBT 71 or higher, if available.", "Online interview in the published selection window."]}, "applicationSteps": ["Submit the application through TUIT's international-admissions system or the published international-admissions email route.", "Provide a passport copy, academic certificate or diploma with transcript, and a current photograph.", "Provide IELTS or TOEFL evidence where available under the published admissions requirements.", "Complete the online interview scheduled by TUIT's selection process."], "documentsRequired": {"academic": ["School certificate or diploma", "Academic transcript"], "application": ["Passport copy in PDF format", "Photograph sized 3.5 x 4.5 cm", "IELTS or TOEFL result if available"]}, "deadlinesNote": "For the 2026/2027 cycle, TUIT lists an August 15, 2026 application deadline and online interviews from July 15 to August 25, 2026."},
+          "medium": "TUIT's 2026 international-admissions page lists Uzbek, Russian and English as languages of instruction. It does not publish a Software Engineering module-by-module language allocation.",
+          "instructionLanguages": ["english", "russian", "uzbek"],
+          "intakeMonths": ["July–August international admissions cycle"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "The official foreign-citizen fee schedule linked from TUIT's current tuition page lists USD 1,500 for full-time bachelor programmes for 2025/2026. It does not include accommodation, meals, transport or personal expenses.",
+          "teachingPhases": [{"phase": "Bachelor programme", "language": "Uzbek, Russian or English", "details": "The 2026 international-admissions page lists these instruction languages at university level; the Software Engineering programme page does not identify a separate language by phase."}]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {"entity": "university", "universitySlug": "tashkent-university-of-information-technologies", "publicField": "identity", "claimText": "TUIT is a public technology university in Tashkent with its main address at Amir Temur Avenue 108.", "status": "verified", "sourceLabel": "TUIT official university pages", "sourceUrl": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-07-25"},
+    {"entity": "university", "universitySlug": "tashkent-university-of-information-technologies", "publicField": "recognition", "claimText": "TUIT's official announcement includes Software Engineering among programmes recognized by ASIIN.", "status": "verified", "sourceLabel": "TUIT ASIIN accreditation announcement", "sourceUrl": "https://tuit.uz/en/post/ozbekiston-oliy-talim-tizimidabirinchi-marotaba-axborot-kommunikatsiya", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-12-31"},
+    {"entity": "programme", "universitySlug": "tashkent-university-of-information-technologies", "programmeSlug": "tuit-software-engineering-bachelors", "publicField": "programme", "claimText": "TUIT publishes Bachelor’s Educational Program 60610600 – Software Engineering with stated programme objectives and competencies.", "status": "verified", "sourceLabel": "TUIT Software Engineering programme", "sourceUrl": "https://tuit.uz/en/software-engineering", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-07-25"},
+    {"entity": "programme", "universitySlug": "tashkent-university-of-information-technologies", "programmeSlug": "tuit-software-engineering-bachelors", "publicField": "eligibility", "claimText": "TUIT's 2026 international-admissions page accepts school or college graduates and lists passport, academic records, photo and English evidence where available.", "status": "verified", "sourceLabel": "TUIT international admissions 2026–2027", "sourceUrl": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-23"},
+    {"entity": "programme", "universitySlug": "tashkent-university-of-information-technologies", "programmeSlug": "tuit-software-engineering-bachelors", "publicField": "admissions", "claimText": "TUIT directs international applicants to online application or the published email route and schedules an online interview.", "status": "verified", "sourceLabel": "TUIT international admissions 2026–2027", "sourceUrl": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-23"},
+    {"entity": "programme", "universitySlug": "tashkent-university-of-information-technologies", "programmeSlug": "tuit-software-engineering-bachelors", "publicField": "intake", "claimText": "TUIT lists an August 15, 2026 international application deadline and July 15 to August 25, 2026 online interviews.", "status": "verified", "sourceLabel": "TUIT international admissions 2026–2027", "sourceUrl": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-23"},
+    {"entity": "programme", "universitySlug": "tashkent-university-of-information-technologies", "programmeSlug": "tuit-software-engineering-bachelors", "publicField": "fee", "claimText": "TUIT's 2025/2026 foreign-citizen fee schedule lists USD 1,500 for full-time bachelor programmes.", "status": "verified", "sourceLabel": "TUIT foreign-citizen tuition schedule", "sourceUrl": "https://static.tuit.uz/uploads/1/0ik-_mrzNyJ-q-SV-vh7jBFyJc16ZIko.pdf", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-23"},
+    {"entity": "programme", "universitySlug": "tashkent-university-of-information-technologies", "programmeSlug": "tuit-software-engineering-bachelors", "publicField": "instruction_language", "claimText": "TUIT's 2026 international-admissions page lists Uzbek, Russian and English as languages of instruction.", "status": "verified", "sourceLabel": "TUIT international admissions 2026–2027", "sourceUrl": "https://tuit.uz/en/xorijiy-fuqarolar-qabuli", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-23"}
+  ]
+}

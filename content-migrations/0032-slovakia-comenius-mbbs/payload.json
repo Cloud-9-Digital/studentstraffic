@@ -1,0 +1,407 @@
+{
+  "countries": [
+    {
+      "slug": "slovakia",
+      "name": "Slovakia",
+      "region": "Europe",
+      "summary": "Slovakia is a European Union member state with a long-established tradition of English-medium medical education, offering direct-entry MUDr programmes at public universities whose degrees carry automatic recognition across the EU and EEA.",
+      "whyStudentsChooseIt": "Slovakia offers an EU-recognized medical degree at a lower cost than Western European destinations, entrance routes based on a single subject-knowledge exam rather than a competitive standardized test, and established English-medium tracks with sizeable international student communities in Bratislava.",
+      "climate": "Temperate continental climate with warm summers and cold, snowy winters, typical of Central Europe.",
+      "currencyCode": "EUR",
+      "metaTitle": "Study MBBS and Medicine in Slovakia",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Slovakia, including admissions, fees, recognition and visa guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Comenius University Bratislava Faculty of Medicine maps its General Medicine programme to this category: a direct-entry, single-cycle six-year programme leading to the MUDr qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "slovakia",
+      "slug": "comenius-university-bratislava",
+      "name": "Comenius University Bratislava",
+      "city": "Bratislava",
+      "type": "Public",
+      "establishedYear": 1919,
+      "officialWebsite": "https://www.fmed.uniba.sk/en",
+      "mediaAttribution": {},
+      "summary": "Comenius University Bratislava's Faculty of Medicine has run medical education since 1919, the founding faculty of Slovakia's oldest university. Its English-medium General Medicine programme leads to the MUDr degree, a Slovak state medical qualification listed in EU Directive 2005/36/EC Annex V for automatic recognition across the EU and EEA since Slovakia's 2004 EU accession.",
+      "campusLifestyle": "The Faculty of Medicine offers General Medicine in parallel Slovak- and English-medium tracks, admitting roughly 240 General Medicine students per cycle. Applicants sit a fixed-question-pool entrance exam prepared with published practice materials, giving a transparent, exam-score-only path to admission.",
+      "cityProfile": "Bratislava is Slovakia's capital, with the Faculty's students housed primarily at the Druzba and Ludovit Stur-Mlyny university dormitories. Clinical training is anchored at University Hospital Bratislava, which spans multiple campuses across the city including Ruzinov and Kramare.",
+      "practicalExposure": "The six-year General Medicine programme runs pre-clinical theory, labs and practical classes in Years 1-3, followed by diverse clinical experience across Years 4-6. Clinical training is anchored at University Hospital Bratislava, with named departmental partnerships including the Faculty's own 4th Department of Surgery based there. Graduates receive the MUDr (Medicinae universae doctor) degree after passing the state examination, a Slovak state medical qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+      "hostelOverview": "University accommodation is available at the Druzba and Ludovit Stur-Mlyny dormitories, with dormitory room rates estimated in the roughly EUR 72-174 per month range depending on room type, alongside private-market options via ESN partnerships. The university's own broader cost-of-living estimate cites EUR 250-300 per month for housing, a notably higher figure than the dormitory-only estimate, so applicants should confirm current dormitory pricing and availability directly with the university.",
+      "dietarySupport": "The university's cost-of-living estimate for meals is roughly EUR 150 per month; on-site doctors provide primary health and dental care at Comenius University dormitories.",
+      "safetyOverview": "No university-published campus-safety statistics were found. Non-EU students must register with the Foreign Police Department in Bratislava after arrival as part of the standard residence-permit process.",
+      "studentSupport": "The Faculty's Study Department (study.info@fmed.uniba.sk) handles admissions queries, while Comenius University's central International Relations Office supports visa, residence-permit and settling-in guidance for degree-seeking international students.",
+      "whyChoose": [
+        "A medical faculty with a continuous history since 1919, the founding faculty of Slovakia's oldest university, awarding the MUDr degree with EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+        "A transparent entrance-exam route: 100 Biology and 100 Chemistry multiple-choice questions drawn from a published 500-question practice pool, with no interview and no English-proficiency certificate required.",
+        "A fee-lock guarantee: the tuition rate a student is admitted on stays fixed for the full standard duration of the programme.",
+        "Three entrance-exam sittings per admissions cycle (typically March, June and August), giving applicants more flexibility than a single fixed date.",
+        "Clinical training anchored at University Hospital Bratislava, a major multi-campus teaching hospital across the city."
+      ],
+      "thingsToConsider": [
+        "The most recent admissions cycle (for September 2026 entry) has fully closed as of this record's research date; the university has not yet published dates for the next cycle.",
+        "Non-EU applicants are explicitly advised to register only for the earliest exam sittings, since the visa process can take several weeks and the university itself discourages non-EU applicants from the final (August) sitting.",
+        "The university does not publish what the EUR 13,000 annual tuition specifically covers, nor a refund/withdrawal policy; confirm both directly with the Study Department before paying.",
+        "A Slovak government scholarship (up to EUR 15,000, requiring a SAT score of at least 1100) has been referenced for talented international students, but its most recent published application window was for the 2025/26 cycle and its applicability to the fee-paying English-medium MUDr programme is unconfirmed for the current cycle.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident preparing for a 200-question Biology and Chemistry multiple-choice exam from a published practice-question pool.",
+        "Applicants prioritizing EU-wide licence recognition and willing to plan their visa application around the university's early (March or June) exam sittings.",
+        "Families comfortable confirming next-cycle dates directly with the university rather than relying on a currently open application window."
+      ],
+      "industryPartners": [
+        "University Hospital Bratislava"
+      ],
+      "recognitionBadges": [
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Slovak MUDr medical qualification across the EU/EEA, in effect for Slovakia since 1 May 2004",
+        "Comenius University Bratislava — Slovakia's oldest university, Faculty of Medicine operating continuously since 1919"
+      ],
+      "recognitionLinks": [
+        { "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0036-20240620" },
+        { "label": "Comenius University Faculty of Medicine — official Admission Process page", "url": "https://www.fmed.uniba.sk/en/study/for-applicants/admission-process/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the General Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is a joint 1st- and 2nd-cycle programme -- admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MUDr (Medicinae universae doctor) degree after passing the state examination, a Slovak state medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A 180-minute, 200-question multiple-choice exam covering Biology and Chemistry (100 questions each), drawn from a published pool of 500 practice questions per subject. There is no interview and no separate English-proficiency certificate requirement."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 13,000 per year, with the entry-year rate guaranteed to stay fixed for the full six-year standard duration of the programme. A separate, non-refundable EUR 99 admission fee applies at application."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The academic year begins with enrollment in mid-September. The most recent cycle offered three exam sittings (typically March, June and August); that cycle has closed, and the university had not yet published next-cycle dates at the time of research. Non-EU applicants are advised to target the earliest sittings given visa-processing time."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "A Slovak government scheme (up to EUR 15,000, requiring a SAT score of at least 1100) has been offered to talented international students, but its most recently published window was for the 2025/26 cycle and its applicability to this fee-paying English-medium programme for the current cycle is unconfirmed."
+        },
+        {
+          "question": "What visa and residence documents do non-EU students need?",
+          "answer": "Non-EU applicants apply for a national long-stay visa and temporary residence permit before arrival, then register with Bratislava's Foreign Police Department after arrival. Required documents include a criminal-record certificate (translated or apostilled), proof of at least EUR 2,400 in available funds, proof of accommodation, and travel/health insurance covering at least EUR 30,000."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "Yes -- the Druzba and Ludovit Stur-Mlyny dormitories are the university's main housing options, with room rates estimated in the roughly EUR 72-174 per month range; private-market housing is also available."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Comenius University Faculty of Medicine — official Mission and History page",
+          "url": "https://www.fmed.uniba.sk/en/faculty/mission-and-history/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for founding year and the parallel Slovak/English-medium programme structure."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0036-20240620",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Slovak MUDr qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "Comenius University Faculty of Medicine — official Admission Process page",
+          "url": "https://www.fmed.uniba.sk/en/study/for-applicants/admission-process/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026/27 tuition, admission fee, exam-sitting dates and enrollment date."
+        },
+        {
+          "label": "Comenius University Faculty of Medicine — official Entrance Examination page",
+          "url": "https://www.fmed.uniba.sk/en/study/for-applicants/entrance-examination/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the entrance-exam format, subject weighting and practice-question pool."
+        },
+        {
+          "label": "Comenius University — International Relations Practical Information page",
+          "url": "https://uniba.sk/en/international-relations/practical-information/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for non-EU visa/residence-permit process, dormitory options and cost-of-living estimates."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "comenius-university-bratislava-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (joint 1st and 2nd Degree)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 13000,
+            "officialTotalTuitionAmount": 78000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: EUR 13,000/year, guaranteed fixed for the full 6-year standard duration, per the Faculty's official Admission Process page. A separate, non-refundable EUR 99 admission fee applies. Total is calculated as the annual figure times 6 years -- not published as a lump sum. What the tuition specifically covers, and any refund/withdrawal policy, are not published; confirm directly with the Study Department. A stale EUR 10,000/year figure appears in some secondary sources and should not be used."
+          },
+          "officialProgramUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed secondary education at a level giving access to university study (EQF level 4 or equivalent)"
+            ],
+            "restrictions": [
+              "Admission is ranked solely on entrance-exam performance -- no minimum secondary-school grade threshold is published",
+              "Non-EU applicants are advised to register only for the earliest exam sittings due to visa-processing time",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "No English-language proficiency certificate is required for admission to the English-medium General Medicine programme.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/entrance-examination/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants register via the university's online e-Application system, choose an entrance-exam sitting, pay the admission fee, sit a Biology and Chemistry multiple-choice exam, and if successful, complete document submission and enrollment by the published date.",
+            "eligibility": {
+              "intro": "Admission requires completed secondary education giving access to university study, plus a passing performance on the Faculty's own Biology and Chemistry entrance exam; no minimum school grade or English certificate is required.",
+              "items": [
+                "Secondary-education diploma or certificate giving access to university study",
+                "180-minute entrance exam: 100 Biology and 100 Chemistry multiple-choice questions, drawn from a published 500-question practice pool per subject",
+                "Nostrification or a Recognition Statement for the secondary diploma, depending on the applicant's country and school",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Register via the online e-Application system (e-prihlaska.uniba.sk) and choose an entrance-exam sitting",
+              "Upload a passport scan and secondary-education diploma scan, and pay the non-refundable EUR 99 admission fee",
+              "Sit the SCIO-administered Biology and Chemistry entrance exam, online or in person in Bratislava",
+              "Await results (published within 30 days) and the Dean's Admissions Committee decision",
+              "If admitted, submit birth certificate, medical fitness certificate, Hepatitis B vaccination proof and nostrification/recognition documents by the enrollment date"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-education diploma or certificate (or an official school letter confirming graduation date if not yet issued)",
+                "Nostrification (foreign-diploma recognition) or a Recognition Statement, depending on the applicant's country and school"
+              ],
+              "application": [
+                "Passport scan (photo and personal-details page)",
+                "Proof of admission-fee payment",
+                "Birth certificate, notarized and translated into Slovak (post-admission)",
+                "Medical fitness certificate and Hepatitis B vaccination proof (post-admission)"
+              ]
+            },
+            "deadlinesNote": "The most recent cycle (three sittings, typically March/June/August, enrollment mid-September) has closed. Next-cycle dates were not yet published at the time of research -- confirm directly with the Faculty's Study Department.",
+            "visaConsiderations": [
+              "Non-EU applicants need a long-stay visa and residence permit before arrival, then must register with Bratislava's Foreign Police Department with a translated criminal-record certificate and proof of funds."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 tuition is EUR 13,000/year, fixed for the full 6-year standard duration, per the Faculty's official Admission Process page. A separate EUR 99 non-refundable admission fee applies. Fee inclusions and refund/withdrawal policy are not published; confirm directly with the Study Department. A stale EUR 10,000/year figure circulating in some secondary sources should not be used.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3: pre-clinical foundation",
+              "language": "English",
+              "details": "Theoretical and pre-clinical lectures, laboratory work and practical classes."
+            },
+            {
+              "phase": "Years 4-6: clinical training",
+              "language": "English",
+              "details": "Diverse clinical experience anchored at University Hospital Bratislava, concluding with the state examination for the MUDr degree."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "comenius-university-bratislava",
+      "publicField": "identity",
+      "claimText": "Faculty of Medicine founded 1919 as the first faculty of the newly created Comenius University (Act No. 375/1919 Coll.), operating continuously since 21 September 1919.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — official Mission and History page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/faculty/mission-and-history/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "comenius-university-bratislava",
+      "publicField": "recognition",
+      "claimText": "The Slovak MUDr medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, with a reference date of 1 May 2004 (Slovakia's EU accession).",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02005L0036-20240620",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "comenius-university-bratislava",
+      "programmeSlug": "comenius-university-bratislava-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine is a joint 1st- and 2nd-cycle, direct-entry, 6-year programme awarding the MUDr degree after a state examination, offered in parallel Slovak- and English-medium tracks.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — official For Applicants page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "comenius-university-bratislava",
+      "programmeSlug": "comenius-university-bratislava-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission is ranked solely on a 180-minute, 200-question Biology and Chemistry multiple-choice entrance exam (no interview, no English-proficiency certificate), drawn from a published 500-question practice pool per subject.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — official Entrance Examination page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/entrance-examination/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "comenius-university-bratislava",
+      "programmeSlug": "comenius-university-bratislava-general-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via online e-Application system with a EUR 99 admission fee; three exam sittings offered in the most recent cycle (March, June, August); nostrification/recognition-statement process required for foreign secondary diplomas.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — official Admission Process page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/admission-process/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "comenius-university-bratislava",
+      "programmeSlug": "comenius-university-bratislava-general-medicine",
+      "publicField": "intake",
+      "claimText": "Single annual September intake; the most recent cycle's three exam sittings (March/June/August 2026) and enrollment date (14 September 2026) have concluded. Next-cycle dates were not published at the time of research.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — official Admission Process page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/admission-process/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "comenius-university-bratislava",
+      "programmeSlug": "comenius-university-bratislava-general-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition: EUR 13,000/year, guaranteed fixed for the full 6-year standard duration; separate non-refundable EUR 99 admission fee.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — official Admission Process page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/study/for-applicants/admission-process/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "comenius-university-bratislava",
+      "programmeSlug": "comenius-university-bratislava-general-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training (Years 4-6) is anchored at University Hospital Bratislava, corroborated at departmental level by the Faculty's own 4th Department of Surgery page naming University Hospital Bratislava as its clinical site.",
+      "status": "verified",
+      "sourceLabel": "Comenius University Faculty of Medicine — 4th Department of Surgery page",
+      "sourceUrl": "https://www.fmed.uniba.sk/en/departments/departments/4th-department-of-surgery/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "comenius-university-bratislava",
+      "publicField": "student living",
+      "claimText": "University accommodation is available at the Druzba and Ludovit Stur-Mlyny dormitories; non-EU students must obtain a national long-stay visa and temporary residence permit before arrival, with proof of at least EUR 2,400 in funds and insurance covering at least EUR 30,000.",
+      "status": "verified",
+      "sourceLabel": "Comenius University — International Relations Practical Information page",
+      "sourceUrl": "https://uniba.sk/en/international-relations/practical-information/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "countrySlug": "kosovo",
+  "universitySlug": "university-of-pristina",
+  "schoolName": "University of Prishtina Hasan Prishtina",
+  "cityName": "Prishtina",
+  "priority": "medium",
+  "officialWebsite": "https://uni-pr.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The University of Prishtina Faculty of Medicine officially lists General Medicine as a six-year, 360 ECTS integrated programme leading to Medical Doctor. Its international admissions page states that foreign candidates submit school records/diploma equivalency and sit the entrance exam, and says applicants do not pay registration or tuition fees. The faculty describes educational activity at the University Clinical Center and other national health institutions. Hold pending a current Medicine-specific admissions call, teaching language confirmation for the full programme, formal foreign-student eligibility/visa support, and a target-market recognition assessment.",
+  "sourceBundle": { "sources": [
+    { "label": "University of Prishtina General Medicine programme", "url": "https://mjekesia.uni-pr.edu/page.aspx?id=2%2C19", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists General Medicine as 6 years/360 ECTS leading to Medical Doctor." },
+    { "label": "University of Prishtina international access and admission", "url": "https://uni-pr.edu/page.aspx?id=1%2C186", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Describes foreign diploma equivalency, entrance examinations and the university's published no-registration/no-tuition statement for applicants." },
+    { "label": "University of Prishtina clinical medicine page", "url": "https://mjekesia.uni-pr.edu/page.aspx?id=2%2C103", "kind": "official-clinical", "checkedAt": "2026-07-25", "notes": "Lists the University Clinical Center and other national institutions used for educational activities." },
+    { "label": "Kosovo accredited-programme listing", "url": "https://masht.rks-gov.net/programet-e-akredituara-2021-2022/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Lists General Medicine at University of Prishtina with the Dr.Med title; current accreditation period requires dedicated confirmation before publication." }
+  ] },
+  "structuredFacts": { "name": "University of Prishtina Hasan Prishtina", "type": "Public university", "programs": [ { "officialTitle": "General Medicine", "duration": "6 years, 360 ECTS", "feeStatus": "University international-admissions page says no registration or tuition fee; Medicine-specific and current-cycle conditions need confirmation", "publishable": false } ], "missingForPublication": [ "current Medicine-specific admissions call and dates", "full programme instructional-language confirmation", "foreign visa/residence and support route", "current Medicine-specific fee/exception confirmation", "current accreditation evidence", "market-specific professional-registration assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until the language and international-applicant route can be stated without extrapolation." }
+}

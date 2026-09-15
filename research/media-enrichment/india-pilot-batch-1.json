@@ -1,0 +1,60 @@
+{
+  "batchId": "india-pilot-batch-1",
+  "notes": "Offline source audit completed 2026-09-08 by claude-india-media1-20260822. Covers three campus-scoped India records: Symbiosis International (Deemed University) Pune institutes, VIT Vellore campus only, and MAHE Manipal campus only. Logos are sourced from each institution's own official domain (header/brand asset actually served on the live site). Covers are sourced from Wikimedia Commons files whose file page states an explicit reusable licence and whose description/coordinates/category confirm the correct campus. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "symbiosis-international-university",
+      "universityName": "Symbiosis International (Deemed University)",
+      "missing": ["logo", "cover"],
+      "logo": {
+        "sourceUrl": "https://www.siu.edu.in/siteassets/images/siu-logo.webp",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset: the primary header logo served directly from the university's own official domain (www.siu.edu.in), confirmed live and returning image/webp",
+        "proposedPublicId": "symbiosis-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Symbiosis_International_University,_S._B._Road_campus.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0 (Creative Commons Attribution 4.0 International), own work by author DesiBoy101, uploaded with embedded camera coordinates 18.52252, 73.82930 which sit on Senapati Bapat Road, Pune - matching the payload's Senapati Bapat Road campus description; file page states the licence explicitly under its Licensing section",
+        "proposedPublicId": "symbiosis-international-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "vellore-institute-of-technology",
+      "universityName": "Vellore Institute of Technology",
+      "missing": ["logo", "cover"],
+      "logo": {
+        "sourceUrl": "https://vit.ac.in/wp-content/uploads/2023/06/header-logo.webp",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset: the header logo served directly from the university's own official domain (vit.ac.in), confirmed live and returning image/webp",
+        "proposedPublicId": "vellore-institute-of-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Technology_Tower(VIT).jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 (Creative Commons Attribution-ShareAlike 3.0 Unported), own work by author Wikindinator, filed under category 'Vellore Institute of Technology' (distinct from the separate 'Vellore Institute of Technology (Andhra Pradesh)' category used for the VIT-AP campus), described as 'the symbolic academic structure of the Vellore Institute of Technology (VIT)' and used as the lead image on the English Wikipedia article for the Vellore campus institution",
+        "proposedPublicId": "vellore-institute-of-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "manipal-academy-of-higher-education",
+      "universityName": "Manipal Academy of Higher Education",
+      "missing": ["logo", "cover"],
+      "logo": {
+        "sourceUrl": "https://www.manipal.edu/content/dam/manipal/mu/mcops-manipal/Images_new/MAHE_Color.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset: logo file served directly from the university's own official domain (www.manipal.edu) under its /content/dam asset repository, confirmed live and returning image/svg+xml",
+        "proposedPublicId": "manipal-academy-of-higher-education-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manipal_Institute_of_Technology_Academic_Building,_Manipal_University,_Manipal_Campus,_India_(Ank_Kumar,_Infosys_Limited_)_02.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (Creative Commons Attribution-ShareAlike 4.0 International), own work by author Ank Kumar, file title and description explicitly state 'Manipal Institute of Technology Academic Building, Manipal University, Manipal Campus, Udupi, Karnataka, India' - directly identifying the Manipal campus this record covers",
+        "proposedPublicId": "manipal-academy-of-higher-education-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

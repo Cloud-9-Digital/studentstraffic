@@ -1,0 +1,19 @@
+{
+  "countrySlug": "dominica",
+  "universitySlug": "all-saints-university-school-of-medicine-dominica",
+  "schoolName": "All Saints University School of Medicine, Dominica",
+  "cityName": "Roseau",
+  "priority": "medium",
+  "officialWebsite": "https://allsaintsudom.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - All Saints' Dominica site describes four-year and five-year MD routes, five basic-science semesters on its Dominica campus and 72 weeks of clinical rotations, and publishes route totals in USD. Its accreditation and international-recognition language is institution-supplied and must be independently checked against current regulator/accreditor and target-market requirements before publication.",
+  "sourceBundle": { "sources": [
+    { "label": "All Saints Dominica MD-programme page", "url": "https://allsaintsudom.org/5-year-md-program/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the five-year MD programme and Roseau campus; includes the institution's accreditation claim, which is not treated as independently verified." },
+    { "label": "All Saints MD application overview", "url": "https://allsaintsuniversity.org/apply-now-md-program/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Describes graduate and school-leaver MD routes, five basic-science semesters on the Dominica campus and 72 weeks of clinical rotations." },
+    { "label": "All Saints Dominica tuition and fees", "url": "https://allsaintsudom.org/tuition-fees/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists stated MD tuition totals of USD 92,250 for the four-year route and USD 108,330 for the five-year route; fees are stated to be subject to change." },
+    { "label": "All Saints scholarship and payment-plan information", "url": "https://allsaintsudom.org/2025/07/04/scholarships-and-flexible-payment-plans-at-all-saints-university/", "kind": "official-support", "checkedAt": "2026-07-25", "notes": "Describes scholarship and payment-plan availability; individual eligibility and award amounts are not established by this source." }
+  ] },
+  "structuredFacts": { "name": "All Saints University School of Medicine, Dominica", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years for graduate entrants; 5 years for school-leaver route", "feeStatus": "Official total-tuition figures published in USD: 92,250 (4-year) and 108,330 (5-year); page states fees may change and does not establish an all-in cost.", "publishable": false } ], "missingForPublication": [ "current independent regulator and accreditor records", "current clinical-rotation site inventory and placement terms", "language of instruction and route-specific admissions verification", "target-market licensing, recognition and eligibility analysis", "all-in cost reconciliation including non-tuition, living and clinical-phase costs" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until the institutional recognition and clinical-training claims are independently scoped." }
+}

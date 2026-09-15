@@ -1,0 +1,163 @@
+{
+  "batchId": "media-a-71-80",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official site or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "chuvash-state-university",
+      "universityName": "Chuvash State University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Downloaded and visually verified the logo: a genuine \"ЧГУ - Чувашский государственный университет имени И.Н. Ульянова\" seal. Checked Wikipedia's infobox photo as a cover candidate and, via its Commons file description, discovered it is miscategorised - it actually depicts a different institution (the Cheboksary Medical Technicum building), not Chuvash State University - and deliberately excluded it rather than reusing Wikipedia's mistake. The official site's own homepage otherwise only has icons and unlabeled news thumbnails, so cover stays on hold.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.chuvsu.ru/wp-content/themes/SiteOnWpTEAM/img/logo.gif",
+        "sourceType": "official",
+        "rightsBasis": "Official seal served directly from Chuvash State University's own domain theme assets.",
+        "proposedPublicId": "chuvash-state-university-logo"
+      }
+    },
+    {
+      "universitySlug": "city-university-of-london",
+      "universityName": "City, University of London",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Re-confirmed via Wikipedia: St George's, University of London merged into City, University of London in 2024, with the combined institution rebranding as City St George's, University of London in 2025. Current official assets belong to the merged successor identity; declining to assign those to this legacy standalone catalogue record pending an editorial decision on how the merger should be reflected in the catalogue. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "classical-traditional-medicine-academy",
+      "universityName": "Classical Traditional Medicine Academy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No reachable official domain, Wikipedia article, or Wikimedia Commons category matching this exact institution name was found in this pass either. The legal institution name, country, and official domain remain unconfirmed, so this is an unresolved-identity case rather than a missing-asset one. No media proposed until the institution is positively identified.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "comenius-university-bratislava",
+      "universityName": "Comenius University Bratislava",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://uniba.sk/fileadmin/templates/img/logos/logoUK.png",
+        "sourceType": "official",
+        "rightsBasis": "official English logo declared in the university's homepage metadata",
+        "proposedPublicId": "comenius-university-bratislava-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://uniba.sk/typo3temp/GB/291ENLIGHT26_GALWAY-3_f104425eab_b3893e3036.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional news image served by the university website",
+        "proposedPublicId": "comenius-university-bratislava-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "concordia-university-montreal",
+      "universityName": "Concordia University Montreal",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Concordia's own media-relations page still requires filing a request for logo/media-kit files, matching the first-pass hold. Independently, Wikimedia Commons hosts a PD-status wordmark logo that does not require going through that request workflow, resolving the only missing field (logo) for this record.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Concordia_univ_montreal_textlogo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "concordia-university-montreal-logo"
+      }
+    },
+    {
+      "universitySlug": "confederation-college-nursing",
+      "universityName": "Confederation College Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.confederationcollege.ca/themes/custom/confederation_college/images/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from Confederation College's website",
+        "proposedPublicId": "confederation-college-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.confederationcollege.ca/sites/default/files/styles/contextual_banner_md/public/2026-06/2023-shuniah-fall-16.jpg.webp",
+        "sourceType": "official",
+        "rightsBasis": "official institutional campus image served from the college homepage",
+        "proposedPublicId": "confederation-college-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "constructor-university-bremen",
+      "universityName": "Constructor University Bremen",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 2 (Commons infobox check) resolved the cover. Logo still unresolved: re-checked constructor.university homepage and /press page directly (not just the brand center) and both only expose the CU-25 anniversary wordmark (CU-25-White-On-Transparent-logo.svg) and a 32x32 favicon; the parent Constructor Group brand center (constructor.org/brand-center) has a distinct \"header_logo_constructor_group_color.svg\" but that is the holding company's mark, not confirmed as the university's own current logo, so left held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Jacobs_University_Bremen_Campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file \"Jacobs_University_Bremen_Campus.JPG\" (own work, free license, not fair-use)",
+        "proposedPublicId": "constructor-university-bremen-cover"
+      }
+    },
+    {
+      "universitySlug": "cranfield-university",
+      "universityName": "Cranfield University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 2: Wikipedia infobox/article links to the university's coat of arms and a campus building photo, both hosted on Commons under free licenses (not fair-use), resolving both slots..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Coat_of_Arms_of_Cranfield_University.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain, Wikimedia Commons file \"Coat_of_Arms_of_Cranfield_University.svg\"",
+        "proposedPublicId": "cranfield-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Cranfield_University_C4D_building.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC0 (public domain dedication), Wikimedia Commons file \"Cranfield_University_C4D_building.jpg\"",
+        "proposedPublicId": "cranfield-university-cover"
+      }
+    },
+    {
+      "universitySlug": "crimea-federal-university",
+      "universityName": "Crimea Federal University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 2 resolved the cover via a Commons-licensed campus photo. Logo still unresolved: checked Wikidata (Q17749157) for a logo (P154) statement -- none present -- and probed eng.cfuv.ru for /press, /media, /brand, /about/media-kit paths, all 404. No direct logo file found.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/2021_Crimean_federal_university.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file \"2021_Crimean_federal_university.jpg\"",
+        "proposedPublicId": "crimea-federal-university-cover"
+      }
+    },
+    {
+      "universitySlug": "critical-care-medicine-institute",
+      "universityName": "Critical Care Medicine Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Re-ran a differently phrased search targeting a standalone higher-education institution named exactly \"Critical Care Medicine Institute\". Results still only surface hospital departments/divisions (e.g. University of Pittsburgh Dept. of Critical Care Medicine, Weil Institute at Michigan Medicine) and professional bodies (College of Critical Care Medicine, Faculty/College of Intensive Care Medicine, WICCEM), none of which is a degree-granting institution matching this catalogue record. No country or additional identifying metadata is attached to the record in the codebase (checked lib/university-authors.ts and the media-enrichment JSON) to disambiguate further. Unresolved identity -- no official domain can be assigned.",
+      "dataIssue": true
+    }
+  ]
+}

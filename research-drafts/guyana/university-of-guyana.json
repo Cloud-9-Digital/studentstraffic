@@ -1,0 +1,20 @@
+{
+  "countrySlug": "guyana",
+  "universitySlug": "university-of-guyana",
+  "schoolName": "University of Guyana",
+  "cityName": "Greater Georgetown",
+  "priority": "medium",
+  "officialWebsite": "https://uog.edu.gy/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The official University of Guyana catalogue and School of Medicine pages confirm a face-to-face, five-year MBBS. The university's current tuition pages publish first-year medicine fees and the mandatory facilities fee; its MBBS admission page sets out selection criteria and notes that eligibility does not guarantee a place. CAAM-HP lists the University of Guyana School of Medicine as Accreditation with Conditions for 2024-2028. Hold pending a complete current international application calendar/document list, an all-years cost card, accommodation/visa support evidence, and target-market licensing analysis.",
+  "sourceBundle": { "sources": [
+    { "label": "University of Guyana 2025/26 prospectus", "url": "https://uog.edu.gy/sites/default/files/2025-04/UG%20Undergraduate%20and%20Postgraduate%20Prospectus%20%28April%202025%29%20%283%29%20%281%29.pdf", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists the Bachelor of Medicine, Bachelor of Surgery as a face-to-face programme in the College of Medical Sciences." },
+    { "label": "University of Guyana MBBS admission criteria", "url": "https://cms.uog.edu.gy/school-medicine/bachelor-medicine-bachelor-surgery-mbbs-0/admission-criteria", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Explains admission categories, ranking and that satisfying entry requirements does not guarantee selection." },
+    { "label": "University of Guyana tuition fees", "url": "https://www.registry.uog.edu.gy/admissions-division/tuition-fees", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists MBBS first-year tuition and the annual mandatory facilities fee, with fees stated as subject to change." },
+    { "label": "University of Guyana School of Medicine director message", "url": "https://cms.uog.edu.gy/school-medicine/message-director", "kind": "official-clinical", "checkedAt": "2026-07-25", "notes": "Describes the MBBS, Georgetown Public Hospital Corporation teaching relationship and clinical preceptor context." },
+    { "label": "CAAM-HP assessed programmes", "url": "https://caam-hp.org/programs/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists University of Guyana School of Medicine as Accreditation with Conditions for 4 years, 2024-2028." }
+  ] },
+  "structuredFacts": { "name": "University of Guyana", "type": "Public university", "programs": [ { "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)", "duration": "5 years", "feeStatus": "Current official first-year fees published; all-years total and non-tuition costs unresolved", "publishable": false } ], "missingForPublication": [ "complete current international admissions timetable and document list", "route-specific total cost across all years", "accommodation, visa and student-support evidence", "current full clinical-placement route", "market-specific registration/licensing review" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until foreign-applicant and professional-outcome claims can be supported precisely." }
+}

@@ -1,0 +1,20 @@
+{
+  "countrySlug":"grenada",
+  "universitySlug":"st-georges-university-school-of-medicine",
+  "schoolName":"St George's University School of Medicine",
+  "cityName":"St. George's",
+  "priority":"medium",
+  "officialWebsite":"https://www.sgu.edu/school-of-medicine/",
+  "status":"hold",
+  "verifiedAt":"2026-07-25",
+  "reviewNotes":"HOLD — SGU is an active Grenada MD provider with multiple entry tracks, current 2026/27 tuition/COA materials, a Grenada Medical and Dental Council regulatory framework, and an official network claim of 85+ US, Canadian and UK clinical partners. The research is held because entry-track-specific fees, admissions and clinical locations must not be combined, and this pass did not build a complete route-specific international admissions, accommodation and target-market professional-recognition package.",
+  "sourceBundle":{"sources":[
+    {"label":"SGU Doctor of Medicine","url":"https://www.sgu.edu/school-of-medicine/md/","kind":"official-program","checkedAt":"2026-07-25","notes":"Confirms MD pathways and Grenada/UK starting options."},
+    {"label":"SGU tuition and fees","url":"https://www.sgu.edu/school-of-medicine/tuition/","kind":"official-fees","checkedAt":"2026-07-25","notes":"Links current 2026/27 tuition and fee material."},
+    {"label":"SGU 2026/27 MD estimated cost of attendance","url":"https://myuniversity.sgu.edu/external/pages/fin-aid-md-student-estimated-cost-of-attendance","kind":"official-fees","checkedAt":"2026-07-25","notes":"Current 2026/27 estimated cost information, subject to annual increase."},
+    {"label":"Grenada National Accreditation Board","url":"https://accreditation.gd/higher-education-system/","kind":"government","checkedAt":"2026-07-25","notes":"Describes SGU and MD accreditation context."},
+    {"label":"Grenada Medical and Dental Council","url":"https://gmdc.gd/about-us/","kind":"regulator","checkedAt":"2026-07-25","notes":"Sets the Council's medical-school oversight role."}
+  ]},
+  "structuredFacts":{"name":"St George's University School of Medicine","city":"St. George's","type":"Private","officialWebsite":"https://www.sgu.edu/school-of-medicine/","bestFitFor":[],"programs":[],"missingForPublication":["Route-specific current admission and total fee summary","Clinical-placement terms by pathway","International accommodation and support evidence","Target-market licensing evidence"],"notes":"Do not merge four-, five-, six- and seven-year MD routes or the Grenada and UK delivery variants."},
+  "draftContent":{"summary":"","campusLifestyle":"","cityProfile":"","clinicalExposure":"","hostelOverview":"","indianFoodSupport":"","safetyOverview":"","studentSupport":"","whyChoose":[],"thingsToConsider":[],"faq":[],"notes":"Held pending route-specific packaging and recognition checks."}
+}

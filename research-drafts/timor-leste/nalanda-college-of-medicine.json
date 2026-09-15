@@ -1,0 +1,19 @@
+{
+  "scope": "Timor-Leste medical discovery — Nalanda College of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Nalanda College of Medicine's own site says it offers a Medicine and Surgery course leading to a Bachelor of Medicine and Surgery and claims ministerial licensing.",
+      "sourceUrl": "https://ncmtimor.com/about/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The licensing claim has not been independently corroborated in the reviewed Timor-Leste government gazette or accreditation material.",
+    "No current fee schedule, duration/curriculum, admissions call, eligibility, teaching language, named clinical partners, accommodation, scholarship/loan support or graduate-registration evidence was found.",
+    "A self-published licence statement alone does not meet the site’s commercial-content evidence threshold."
+  ],
+  "nextAction": "Locate the cited ministerial decree/gazette and the current programme/accreditation, fees, admissions and clinical-training records before reconsidering this candidate."
+}

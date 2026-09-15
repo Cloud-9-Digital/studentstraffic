@@ -1,0 +1,383 @@
+{
+  "batchId": "second-pass-patch-06",
+  "entries": [
+    {
+      "universitySlug": "kasym-tynystanov-issyk-kul-state-university",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260508194832im_/http://main.iksu.kg/wp-content/uploads/2020/01/cropped-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university header logo captured via Wayback Machine snapshot (2026-05-08) of main.iksu.kg, whose live site now returns an expired-SSL error; archived asset verified HTTP 200.",
+        "proposedPublicId": "kasym-tynystanov-issyk-kul-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260508194832im_/http://main.iksu.kg/wp-content/uploads/2024/02/%D0%98%D0%93%D0%A3_2-%D1%8F_%D1%81%D1%8A%D1%91%D0%BC%D0%BA%D0%B0_005-1200x600.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official campus photoshoot image hosted on the university's own site, retrieved via Wayback Machine snapshot after the live domain failed SSL; verified HTTP 200.",
+        "proposedPublicId": "kasym-tynystanov-issyk-kul-state-university-cover"
+      },
+      "note": "First pass never tried the live site; live site now has an expired cert, so used Wayback Machine (technique 3) to pull the header logo and a dated official campus-photoshoot image directly from main.iksu.kg's own uploads folder."
+    },
+    {
+      "universitySlug": "kauno-kolegija-kaunas-university-of-applied-sciences",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://kaunokolegija.lt/wp-content/uploads/2025/10/cropped-1600x960_LT.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo asset served directly from the institution's own site (kaunokolegija.lt), alt text \"Site Logo\"; verified HTTP 200.",
+        "proposedPublicId": "kauno-kolegija-kaunas-university-of-applied-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://kaunokolegija.lt/wp-content/uploads/2026/06/KK26-KV-Web-1920x1080-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official og:image social-share banner declared in the site's own <head> meta tags; verified HTTP 200.",
+        "proposedPublicId": "kauno-kolegija-kaunas-university-of-applied-sciences-cover"
+      },
+      "note": "First pass only checked Lithuanian Wikipedia (which only has a non-free local logo). Went directly to the institution's own homepage HTML and pulled the real header <img> logo plus the og:image meta banner, bypassing the fair-use Wikipedia file entirely."
+    },
+    {
+      "universitySlug": "kazan-federal-university",
+      "sourceFile": "a-171-180.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Kazan_Federal_University_Logo.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Kazan Federal University Logo.jpg, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kazan-federal-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Kazan_Federal_University_building_08-2016.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Kazan Federal University building 08-2016.jpg, own work by A.Savin (Wiki Loves Monuments 2016, quality image), multi-licensed CC BY-SA/GFDL/FAL; verified HTTP 200.",
+        "proposedPublicId": "kazan-federal-university-cover"
+      },
+      "note": "Checked Wikimedia Commons directly (not just search snippets): a dedicated free-licensed logo file and a quality-assessed, freely-licensed building photograph both exist and resolve."
+    },
+    {
+      "universitySlug": "kazan-state-medical-university",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C_%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9A%D0%93%D0%9C%D0%A3.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File (Wiki Loves Monuments 2020 submission) of KSMU's main building, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kazan-state-medical-university-cover"
+      },
+      "note": "Logo still held: the only infobox logo (KSMU_logo.png) is a local non-free/fair-use upload on English Wikipedia, not Commons, and no Commons-hosted or official-site alternative was found. Cover resolved via a Commons category not checked in the first pass."
+    },
+    {
+      "universitySlug": "kemerovo-state-medical-university",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/KemSMU_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:KemSMU Logo.svg, tagged public domain under Russian Federation Civil Code Art. 1259 (official state-body symbol, not copyrightable); verified HTTP 200.",
+        "proposedPublicId": "kemerovo-state-medical-university-logo"
+      },
+      "note": "Cover still held: no Commons category, Wikidata P18, or reliable campus-exterior photo was found for this specific medical university (as opposed to Kemerovo State University); the official site (kemsmu.ru) only surfaces news/event thumbnails, not a clean campus photo."
+    },
+    {
+      "universitySlug": "kemerovo-state-university-medical-institute",
+      "sourceFile": "a-181-190.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "This is an institute-level record (Medical Institute within Kemerovo State University, a classical university, not a standalone medical university). Before sourcing any standalone logo/cover, someone needs to decide whether this record should inherit Kemerovo State University's own branding or be treated as a distinct entity with its own identity. No media sourced pending that decision."
+    },
+    {
+      "universitySlug": "ken-walker-international-university",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://kwiu.edu.ge/img/logo_2.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo served directly from the university's own current domain kwiu.edu.ge (?ena=eng); verified HTTP 200.",
+        "proposedPublicId": "ken-walker-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://kwiu.edu.ge/img/hero_images/hero_5.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Hero/banner campus image served directly from kwiu.edu.ge's own hero_images folder; verified HTTP 200.",
+        "proposedPublicId": "ken-walker-international-university-cover"
+      },
+      "note": "First pass concluded no authoritative domain existed. The institution's official site is reachable at kwiu.edu.ge (confirmed via EQAR/education-directory cross-references) and serves its own logo and hero banner directly — no recruitment/social-media imagery used."
+    },
+    {
+      "universitySlug": "khakasia-state-university-medical-faculty",
+      "sourceFile": "a-181-190.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Faculty-level record (Medical Faculty of Khakas State University named after N.F. Katanov). No dedicated faculty logo/cover exists independently of the parent university; a decision is needed on whether this should inherit Khakas State University branding or be merged/retired as a catalogue entry before sourcing media."
+    },
+    {
+      "universitySlug": "khalifa-university",
+      "sourceFile": "a-181-190.json",
+      "outcome": "still-hold",
+      "updatedReason": "Confirmed directly on Khalifa University's own brand page (ku.ac.ae/media/visual-identity-and-branding-guidelines) that logo/branding assets require contacting the Communications and Business Development Department — written permission is explicitly required, consistent with the original hold reason. A Commons file (File:Khalifa University New Logo.png) claims CC BY-SA 4.0, but it was self-declared \"own work\" by an unaffiliated Commons uploader (Rem1706) merely citing ku.ac.ae as the source — a common Commons mislabeling pattern for corporate trademarks, not a verifiable release by the rights holder — so it was not used. No written-permission workflow was pursued per instructions."
+    },
+    {
+      "universitySlug": "khanty-mansiysk-state-medical-academy",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://hmgma.ru/bitrix/templates/main/images/logo2.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo file served directly from the academy's own official domain (hmgma.ru, resolved via Wikidata P856); verified HTTP 200.",
+        "proposedPublicId": "khanty-mansiysk-state-medical-academy-logo"
+      },
+      "note": "Cover still held: the homepage's only large imagery is news-story thumbnails (diploma ceremonies, events), with no og:image or identifiable campus-exterior photo; no Commons/Wikidata image claim exists either. Logo resolved by going straight to the official Bitrix-CMS site rather than search-engine snippets."
+    },
+    {
+      "universitySlug": "kimyo-international-university",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://kiut.uz/static/img/icons/logo.65854c536596.svg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone header logo SVG served from the university's own current domain kiut.uz; verified HTTP 200.",
+        "proposedPublicId": "kimyo-international-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://kiut.uz/media/filer_public/18/8e/188ee0cf-43c7-4589-8095-683ec6f4251e/land_kiut.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Campus banner image served directly from kiut.uz's own media library; verified HTTP 200.",
+        "proposedPublicId": "kimyo-international-university-cover"
+      },
+      "note": "The first pass verified the site existed but didn't extract a standalone logo asset; kiut.uz (current KIUT domain) serves both a dedicated header logo SVG and campus banner photos directly, distinct from any social/press imagery."
+    },
+    {
+      "universitySlug": "kirov-state-medical-university",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://kirovgma.ru/sites/default/files/logo_0.png",
+        "sourceType": "official",
+        "rightsBasis": "Header logo image served directly from the university's official domain kirovgma.ru, alt text \"Кировский ГМУ logo\"; verified HTTP 200.",
+        "proposedPublicId": "kirov-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%B3.%D0%9A%D0%B8%D1%80%D0%BE%D0%B2.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons image linked from Wikidata P18 for Kirov State Medical Academy (Q4221614), licensed CC BY-SA 3.0; verified HTTP 200.",
+        "proposedPublicId": "kirov-state-medical-university-cover"
+      },
+      "note": "First pass didn't check Wikidata's structured claims or the live official site directly. Wikidata P18 pointed to a free-licensed Commons building photo, and kirovgma.ru serves its own header logo asset (different from the earlier misidentified Kirov Military Medical Academy emblem)."
+    },
+    {
+      "universitySlug": "klaipeda-state-university-of-applied-sciences",
+      "sourceFile": "a-181-190.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.kvk.lt/wp-content/uploads/2025/01/kvk-pagrindinis-white-rgb.svg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone header logo SVG (white/reversed color variant) served directly from the college's own domain kvk.lt (resolved via Wikidata P856); verified HTTP 200.",
+        "proposedPublicId": "klaipeda-state-university-of-applied-sciences-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kvk.lt/wp-content/uploads/2026/06/KVK-2026-234.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Hero banner image served directly from kvk.lt's own uploads folder; verified HTTP 200.",
+        "proposedPublicId": "klaipeda-state-university-of-applied-sciences-cover"
+      },
+      "note": "Note: the resolved logo file is a white/reversed-color variant of the KVK mark (meant for dark backgrounds) — usable, but a colored variant was not located; a guessed alternate filename returned 404."
+    },
+    {
+      "universitySlug": "kokand-university",
+      "sourceFile": "a-191-200.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://www.kokanduni.uz/build/assets/logo-Dr-W4CcY.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Standalone build-hashed logo asset served directly from the university's own domain kokanduni.uz, separate from its social-media imagery; verified HTTP 200.",
+        "proposedPublicId": "kokand-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.kokanduni.uz/storage/sliders/banner2-student.webp",
+        "sourceType": "official",
+        "rightsBasis": "Homepage slider banner served directly from kokanduni.uz's own storage; verified HTTP 200.",
+        "proposedPublicId": "kokand-university-cover"
+      },
+      "note": "First pass only found the general \"institutional social image\"; a dedicated build asset under /build/assets on the same domain is a clearly separate logo file distinct from social content."
+    },
+    {
+      "universitySlug": "krasnoyarsk-state-medical-university",
+      "sourceFile": "a-191-200.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Medical_University_of_Krasnoyarsk.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Medical University of Krasnoyarsk.jpg (own work, 2022), licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "krasnoyarsk-state-medical-university-cover"
+      },
+      "note": "Logo still held: the official domain (krasgmu.ru, confirmed via Wikidata) is a client-side-rendered Nuxt.js SPA with no server-rendered logo markup retrievable without a browser; no Commons/Wikidata logo claim exists either. Cover resolved via Wikipedia's infobox pointing to a Commons-licensed photo (not the krsmu.com search results the first pass correctly distrusted)."
+    },
+    {
+      "universitySlug": "kuban-state-medical-university",
+      "sourceFile": "a-191-200.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%9C%D0%B8%D0%BD%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File shown in Kuban State Medical University's Wikipedia infobox, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kuban-state-medical-university-cover"
+      },
+      "note": "Logo still held: no infobox logo, Commons category logo file, or Wikidata logo claim exists for this university; ksma.ru was not assessed further as the connection issue noted in the first pass could not be independently retested with a clean logo asset found."
+    },
+    {
+      "universitySlug": "kursk-state-medical-university",
+      "sourceFile": "a-191-200.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Kursk_state_medical_university.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Kursk state medical university.jpg (Wiki Loves Monuments 2016 submission), licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kursk-state-medical-university-cover"
+      },
+      "note": "Logo still held: the infobox logo (Kursk State Medical University logo.png) is a local non-free/fair-use upload on English Wikipedia, not Commons; no free-licensed alternative was found. Cover resolved via a Commons cultural-heritage-monument photo not previously identified as institution-linked."
+    },
+    {
+      "universitySlug": "kutaisi-institute-of-medicine",
+      "sourceFile": "a-191-200.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "As documented in the original hold reason, this catalogue label is a legacy/informal name that research ties to Kutaisi University / Central University of Europe, but it does not match either institution's current official name. Someone needs to resolve which current institutional identity this record should map to before any logo/cover is sourced; no media sourced against an unverified identity."
+    },
+    {
+      "universitySlug": "kyrgyz-international-university",
+      "sourceFile": "a-191-200.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/International_University_of_Kyrgyzstan.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:International University of Kyrgyzstan.jpg by Davide Mauro, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "kyrgyz-international-university-cover"
+      },
+      "note": "Logo still held: the Wikipedia infobox logo (International_University_of_Kyrgyzstan_Logo.png) is a local non-free upload, confirming the first pass's finding that only a favicon-sized mark is otherwise available. Cover resolved from the same infobox, which also carries a Commons-licensed building photograph."
+    },
+    {
+      "universitySlug": "kyrgyz-medical-dental-institute",
+      "sourceFile": "a-201-210.json",
+      "outcome": "still-hold",
+      "updatedReason": "No Wikidata or Wikipedia entry exists under this name or plausible variants (Kyrgyz State Medical and Dental Academy, medical-dental institute Bishkek). Without a verified official domain to check directly, and with this session's web-search budget exhausted, no new official logo/cover source could be located; not resolved via guesswork per instructions."
+    },
+    {
+      "universitySlug": "kyrgyz-national-agrarian-university",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://knau.kg/wp-content/uploads/2021/logotips/1618561127790.png",
+        "sourceType": "official",
+        "rightsBasis": "University's own logo file in its own \"logotips\" (logotypes) uploads folder on knau.kg (official domain per Wikidata P856); verified HTTP 200.",
+        "proposedPublicId": "kyrgyz-national-agrarian-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://knau.kg/wp-content/uploads/2026/07/IMG_6393.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Campus photo (delegation visit news story) served directly from knau.kg's own uploads; verified HTTP 200.",
+        "proposedPublicId": "kyrgyz-national-agrarian-university-cover"
+      },
+      "note": "Wikipedia's infobox carried no images at all. Went to the official site directly (knau.kg) and found the university's own dedicated logo folder, distinct from several unrelated faculty/department emblem graphics also present on the same page."
+    },
+    {
+      "universitySlug": "kyrgyz-national-university",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/KUUbashky.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:KUUbashky.jpg, main building/gate of Kyrgyz National University, multi-licensed CC BY-SA 3.0 / GFDL; verified HTTP 200.",
+        "proposedPublicId": "kyrgyz-national-university-cover"
+      },
+      "note": "Logo still held: no Commons category or Wikidata logo claim exists; both infobox images are building/gate photographs, not a logo."
+    },
+    {
+      "universitySlug": "kyrgyz-state-university-arabaev",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://arabaevksu.edu.kg/public/assetss/img/logo_mi01.svg",
+        "sourceType": "official",
+        "rightsBasis": "Header logo SVG served directly from the university's current official domain arabaevksu.edu.kg, alt text \"КГУ им И. Арабаева\" (KSU named after I. Arabaev); verified HTTP 200.",
+        "proposedPublicId": "kyrgyz-state-university-arabaev-logo"
+      },
+      "note": "Cover still held: the legacy domain arabaev.kg (from Wikidata P856) now redirects to arabaevksu.edu.kg, which WebFetch could not load directly (403) but was retrievable via curl; homepage imagery beyond the logo is small blog-post thumbnails with no confirmed campus-exterior shot, so no cover was claimed."
+    },
+    {
+      "universitySlug": "kyrgyz-russian-slavic-university",
+      "sourceFile": "a-201-210.json",
+      "outcome": "still-hold",
+      "updatedReason": "Checked the live official site (krsu.edu.kg, confirmed via Wikidata P856) directly: its header logo is rendered purely via an inline SVG-sprite <use> reference, with no standalone file at that path; the favicon/web-manifest icons trace back to generic, unconfigured Nuxt-theme boilerplate (webmanifest named \"MyWebSite\"/\"MySite\", and the 512px icon 404s on the redirected bare domain krsu.kg). No Commons category exists, and the only Wikipedia infobox image is a local non-free upload. No verified free/official asset found for either logo or cover."
+    },
+    {
+      "universitySlug": "kyrgyz-uzbek-university",
+      "sourceFile": "a-201-210.json",
+      "outcome": "still-hold",
+      "updatedReason": "Checked the live official site (kumu.kg, confirmed via Wikidata P856) directly. The only image resembling a header asset is actually a promotional admissions-CTA banner (linked to priem.kumu.kg) with an obfuscated filename, not a genuine site logo; no distinct custom-logo markup was found elsewhere on the page. No Commons category or Wikidata logo/image claim exists. Not claiming the CTA banner as a logo or cover given the uncertainty."
+    },
+    {
+      "universitySlug": "la-trobe-university",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Donald_Whitehead_Building%2C_La_Trobe_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Donald Whitehead Building, La Trobe University.jpg by Tseenster, licensed CC BY 4.0; verified HTTP 200.",
+        "proposedPublicId": "la-trobe-university-cover"
+      },
+      "note": "Logo still held: La Trobe University logo.svg is local non-free/fair-use on English Wikipedia; the only \"logo\"-named file in the Commons La Trobe category (Liralogo.jpg) is an unrelated student-club mark, not the institutional logo. Cover resolved from the Commons Bundoora campus-buildings category."
+    },
+    {
+      "universitySlug": "langara-college-nursing",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Langara_College_logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Langara College logo.png; the file page separately notes the mark \"does not meet the threshold of originality\" (simple text/geometric wordmark, PD-ineligible for copyright) in addition to the uploader's CC BY-SA 4.0 declaration; verified HTTP 200.",
+        "proposedPublicId": "langara-college-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Langara-college.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Langara-college.jpg, licensed Creative Commons Attribution; verified HTTP 200.",
+        "proposedPublicId": "langara-college-nursing-cover"
+      },
+      "note": "Both resolved via Wikimedia Commons, not previously checked; treated the logo's rights basis as the ineligible-for-copyright wordmark determination rather than relying solely on the uploader's own-work claim over a corporate mark."
+    },
+    {
+      "universitySlug": "leiden-university",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Leiden-Academiegebouw-01.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Leiden-Academiegebouw-01.jpg, canal-side exterior of Leiden University's historic main Academy Building, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "leiden-university-cover"
+      },
+      "note": "Only cover was missing (logo already on file). Found via the Commons \"Academiegebouw (Leiden)\" subcategory rather than the broader, unfiltered \"University buildings in Leiden\" category the first pass likely skimmed."
+    },
+    {
+      "universitySlug": "lincoln-university-new-zealand",
+      "sourceFile": "a-201-210.json",
+      "outcome": "upgraded",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/LU_logo.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:LU logo.jpg, file description states \"Released under CC BY per http://www.lincoln.ac.nz/footer/copyright/\" — an explicit release by the university itself, not a bare self-declared upload; verified HTTP 200.",
+        "proposedPublicId": "lincoln-university-new-zealand-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Ivey_Hall%2C_Lincoln_University%2C_New_Zealand.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Ivey Hall, Lincoln University, New Zealand.jpg by Michal Klajban, licensed CC BY-SA 4.0; verified HTTP 200.",
+        "proposedPublicId": "lincoln-university-new-zealand-cover"
+      },
+      "note": "The Commons \"Logo of Lincoln University, New Zealand\" category explicitly documents the university's own CC BY release on its copyright page — a genuine institutional grant, not a mislabeled trademark. Cover is the heritage-listed Ivey Hall building shown in Wikipedia's infobox."
+    },
+    {
+      "universitySlug": "lobachevsky-state-university-medical-institute",
+      "sourceFile": "a-211-220.json",
+      "outcome": "data-issue-flagged",
+      "updatedReason": "Institute-level record (Institute of Biology and Biomedicine / Medical faculty structures within Lobachevsky State University of Nizhny Novgorod, a large classical university with its own distinct branding). Needs a decision on whether this record should inherit the parent university's official media or be scoped/merged as a sub-unit before any standalone logo/cover is sourced; no media sourced pending that call."
+    }
+  ]
+}

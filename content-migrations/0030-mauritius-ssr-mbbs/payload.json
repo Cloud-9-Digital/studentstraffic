@@ -1,0 +1,409 @@
+{
+  "countries": [
+    {
+      "slug": "mauritius",
+      "name": "Mauritius",
+      "region": "Africa",
+      "summary": "Mauritius is an Indian Ocean island nation with a small but established base of English-medium private medical colleges, popular with Indian and African students for direct-entry MBBS programmes affiliated to Mauritius's own public universities.",
+      "whyStudentsChooseIt": "Mauritius offers English-medium MBBS programmes with a straightforward admissions process, a lower overall cost than many Western destinations, and degrees awarded through affiliation with Mauritius's own public universities, all within a compact island setting with an established Indian-student community.",
+      "climate": "Tropical maritime climate with a warm, humid summer (November-April) and a milder, drier winter (May-October).",
+      "currencyCode": "MUR",
+      "metaTitle": "Study MBBS and Medicine in Mauritius",
+      "metaDescription": "Explore English-medium MBBS programs in Mauritius, including admissions, fees, recognition and hostel guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. SSR Medical College maps its 5-year MBBS programme, awarded by the University of Mauritius, to this category: a direct-entry, single-cycle programme followed by a compulsory 1-year rotating internship.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "mauritius",
+      "slug": "ssr-medical-college",
+      "name": "Sir Seewoosagur Ramgoolam Medical College",
+      "city": "Belle Rive",
+      "type": "Private",
+      "establishedYear": 2002,
+      "officialWebsite": "http://www.ssrmedicalcollege.com",
+      "mediaAttribution": {},
+      "summary": "SSR Medical College has run an English-medium MBBS programme since 2002, with the degree awarded by the University of Mauritius. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for every graduating class since 2002, and degrees are noted as acceptable to Canadian provincial and territorial medical regulatory authorities.",
+      "campusLifestyle": "SSR Medical College admits two cohorts a year (February/March and August/September), each around 75 students, on an 18-acre campus near Curepipe with more than 300 hostel rooms across 10 blocks. College transport runs between the campus and its teaching hospitals.",
+      "cityProfile": "The college sits near Curepipe in central Mauritius, roughly 15 km from the capital Port Louis and from the international airport. Admission interviews are held not only on campus but also in New Delhi and Durban, reflecting the college's largest applicant pools from India and Southern Africa.",
+      "practicalExposure": "The 5-year, 10-semester MBBS runs in three phases (Semesters I-III, IV-VI, VII-X), each gated by passing the prior phase's subjects, followed by a compulsory 1-year rotating internship. Clinical training runs at Victoria Hospital (800 beds) and Jawaharlal Nehru Hospital (600 beds), both Mauritius government hospitals, with additional exposure at other government-approved sites. University of Mauritius examinations combine theory, practical and viva voce/OSCE-style components, requiring 80% physical attendance. Internship arrangements differ by cohort: since a 2022 Mauritius-government agreement (reflected in a November 2023 Medical Council of Mauritius Act amendment), students admitted from 2022 onward are intended to intern in Mauritius government hospitals, while earlier cohorts of Indian graduates historically completed internship at named hospitals in India (including Safdarjung, Sir Ganga Ram and KEM Mumbai).",
+      "hostelOverview": "The campus has more than 300 hostel rooms across 10 blocks, a short distance from the academic building, with separate accommodation for men and women. Rooms are furnished twin-sharing with an attached bathroom; a single-occupancy option is generally available from the second year, subject to availability. Hostel space covers roughly 80% of students, so it is not guaranteed for everyone. A one-time, non-refundable Hostel Registration Fee of USD 2,000 applies, plus USD 100/month for a twin-sharing room or USD 200/month for a single room, paid in advance for the full year. Hostel residence is not compulsory; students may live off-campus from the second year with permission.",
+      "dietarySupport": "Two contractor-run messes operate on campus, catering Indian and other cuisines on a cash-and-carry basis, at an approximate cost of USD 100-170 per month; mess charges are paid directly to the operator, not to the college.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The hostel blocks are separated by gender, and the college provides its own transport between campus and teaching hospitals.",
+      "studentSupport": "Admissions and student queries are handled through the college's Mauritius registered office and a New Delhi liaison office; the college explicitly states it has no recruiting agents and warns applicants to pay fees only directly to its own bank account.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000326), currently operational, with open-ended ECFMG-certification eligibility for every graduating class from 2002 onward, and degrees noted as acceptable to Canadian provincial and territorial medical regulatory authorities.",
+        "A degree awarded by the University of Mauritius, a public university, rather than by the college itself.",
+        "A transparent, itemized 2026/27 fee schedule with no differential pricing by nationality, plus an optional 20% tuition discount for a one-time upfront payment.",
+        "Two intakes a year (February/March and August/September), giving applicants more scheduling flexibility than a single annual intake.",
+        "Since India's NEET result has served as the deemed MBBS-abroad Eligibility Certificate since June 2018, Indian applicants face one less separate certification step before joining."
+      ],
+      "thingsToConsider": [
+        "No transfers or lateral entry from other medical colleges are accepted under any circumstances.",
+        "Fees are explicitly non-refundable under multiple conditions (ineligibility, dropping out, disciplinary expulsion or any other reason), and hostel room charges are payable for the full year even if a student moves out mid-year.",
+        "SSR's own pages contain some internal inconsistencies (for example, differing mess-charge figures and a stale currency-conversion reference), so applicants should confirm exact current figures directly with the college before paying.",
+        "No SSR-funded scholarship exists for MBBS students of any nationality, per the college's own FAQ; a Mauritius-government scholarship scheme is referenced for students from some African countries, but its current status could not be independently verified.",
+        "Postgraduate (MD/MS) courses were not yet operational at the time of research, pending Higher Education Commission of Mauritius concurrence, despite a June 2025 agreement extension with the University of Mauritius."
+      ],
+      "bestFitFor": [
+        "Indian and Southern African applicants who can attend an in-person interview in New Delhi, Durban, or on the Mauritius campus.",
+        "Students able to fund the full USD 45,000 programme cost (or USD 37,000 under the one-time-payment discount) without relying on an SSR-administered scholarship.",
+        "Applicants comfortable with a straightforward, exam-score-and-interview admissions process rather than a competitive standardized-test-ranked system."
+      ],
+      "industryPartners": [
+        "Victoria Hospital",
+        "Jawaharlal Nehru Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000326), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 2002-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Degree awarded by the University of Mauritius, a public university"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — SSR Medical College listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0000326" },
+        { "label": "SSR Medical College — official Course page (recognition and affiliation details)", "url": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=course" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBBS programme direct-entry after high school?",
+          "answer": "Yes. Admission follows Class 12/HSC/A-Level results (plus a NEET pass for Indian applicants), with no separate bachelor's or foundation stage required first."
+        },
+        {
+          "question": "Who awards the MBBS degree?",
+          "answer": "The degree is awarded by the University of Mauritius, a public university; SSR Medical College is the affiliated teaching institution."
+        },
+        {
+          "question": "How long is the programme?",
+          "answer": "5 years (10 semesters of 6 months each), followed by a compulsory 1-year rotating internship."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 8,000 per year (USD 40,000 total tuition over 5 years) plus a one-time, non-refundable USD 5,000 registration fee, for a grand total of USD 45,000 on the standard yearly payment plan. A one-time-payment option offers a 20% tuition discount, bringing the total to USD 37,000."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a USD 100 per-subject examination fee, and a USD 1,000 per-subject fee for repeating a failed subject at the university-exam level."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "Indian applicants must have qualified NEET (any year's result is accepted); other applicants are assessed on their secondary-school science and English grades. There is no separate SSR-administered entrance exam."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "SSR runs two intakes a year (February/March and August/September). For the August/September 2026 batch, the stated deadline is 15 August 2026 for Indian applicants and 15 January 2027 for the international batch."
+        },
+        {
+          "question": "Is a scholarship available for MBBS students?",
+          "answer": "No SSR-funded scholarship exists for any nationality, per the college's own FAQ. The college separately references a Mauritius-government scholarship scheme for students from some African countries, but its current status could not be independently verified."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "Yes. NEET is compulsory for Indian applicants, and since June 2018 a NEET pass has served as the deemed Eligibility Certificate for joining an MBBS programme abroad, without a separate certificate. After graduating, Indian students must still clear India's FMGE screening exam (or its planned NExT successor) before practising in India."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — SSR Medical College listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0000326",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, ECFMG graduation-year eligibility and Canada MCC acceptability."
+        },
+        {
+          "label": "SSR Medical College — official Course and Admissions pages",
+          "url": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=course",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, eligibility criteria, admissions process and 2026/27 intake dates."
+        },
+        {
+          "label": "SSR Medical College — official College Fees page",
+          "url": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=collegefees",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed 2026/27 tuition, registration, examination and hostel fees, plus refund policy."
+        },
+        {
+          "label": "SSR Medical College — official FAQ page",
+          "url": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=faq",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for hostel details, scholarship policy, and admissions cross-checks."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement and FMGE screening pathway."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "ssr-medical-college-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "MBBS (Bachelor of Medicine, Bachelor of Surgery)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 8000,
+            "officialTotalTuitionAmount": 45000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published on the college's 'Silver Jubilee Year' 2026/27 fee page: USD 8,000/year tuition (USD 40,000 total over 5 years) plus a one-time, non-refundable USD 5,000 registration fee, for a USD 45,000 grand total under the standard yearly payment plan -- identical across Mauritian, Indian and other international applicants (no nationality-based differential). An alternative One-Time Payment plan offers a 20% tuition discount (USD 32,000 tuition + USD 5,000 registration = USD 37,000 total). A USD 100 per-subject examination fee and a USD 1,000 per-subject resit fee apply separately. Fees are explicitly non-refundable under multiple withdrawal/expulsion scenarios."
+          },
+          "officialProgramUrl": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=course",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants (CBSE/ICSE/State Board): minimum 60% aggregate in Physics, Chemistry, Biology and English at Class 12, plus a NEET pass (any year's result accepted)",
+              "A-Level/Senior Cambridge applicants: minimum 22 points across required science subjects plus English",
+              "South African Board applicants: minimum 60% aggregate in Physical Sciences, Life Sciences and English"
+            ],
+            "restrictions": [
+              "No transfers or lateral entry from other medical colleges are accepted under any circumstances",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules"
+            ],
+            "notes": "No IELTS/TOEFL requirement is stated for applicants from English-medium secondary education backgrounds; a NEET pass (any year) serves as the deemed MBBS-abroad Eligibility Certificate for Indian applicants since June 2018.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=course"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit Class 12/A-Level results (and NEET result, if Indian) by email or online, attend an interview in New Delhi, Durban, or on the Mauritius campus, and on approval receive a Provisional Admission Letter; enrollment is confirmed with a non-refundable registration fee paid directly to the college's Mauritius bank account.",
+            "eligibility": {
+              "intro": "Admission requires secondary-school science qualifications meeting the college's grade thresholds, a NEET pass for Indian applicants, and successful completion of a personal interview.",
+              "items": [
+                "Minimum 60% aggregate in Physics, Chemistry, Biology and English at Class 12 (Indian boards), or 22 points across required subjects (A-Level), or 60% aggregate in Physical/Life Sciences plus English (South African Board)",
+                "NEET pass (any year's result accepted) for Indian applicants, serving as the deemed MBBS-abroad Eligibility Certificate",
+                "Minimum age 17 by 31 December of the admission year",
+                "A personal interview, held in New Delhi, Durban, or on the Mauritius campus"
+              ]
+            },
+            "applicationSteps": [
+              "Email Class 12/A-Level marksheets (and NEET result, if applicable) to the college's admissions office, or apply online",
+              "Attend a scheduled interview in New Delhi, Durban, or on the Mauritius campus",
+              "Receive a Provisional Admission Letter and submit required documents (acceptance letter, affidavit, admission agreement, visa form, character certificate, sponsor bank statement) within about 10 working days",
+              "Pay the non-refundable USD 5,000 registration fee directly to the college's Mauritius bank account",
+              "Receive visa assistance from the college and complete final in-person document verification on arrival before joining"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12/HSC/A-Level marksheet and pass certificate",
+                "NEET result (Indian applicants)"
+              ],
+              "application": [
+                "Passport copy (first and last two pages)",
+                "Character certificate from school and local police station",
+                "Sponsor bank statement showing a minimum balance equivalent to INR 3 lakh",
+                "Signed admission agreement and affidavit"
+              ]
+            },
+            "deadlinesNote": "Two intakes a year (Feb/March and Aug/Sept). For the Aug/Sept 2026 batch: 15 August 2026 deadline for Indian applicants, 15 January 2027 deadline for the international batch. Introductory classes begin the last week of September 2026.",
+            "visaConsiderations": [
+              "The college applies for the student visa on the applicant's behalf after registration; processing takes approximately 45 days, with no separate visa fee charged by the college."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["February", "September"],
+          "intakeCodes": ["february", "september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 fees: USD 8,000/year tuition (USD 40,000 over 5 years) plus a non-refundable USD 5,000 registration fee, for a USD 45,000 total on the standard yearly plan, with no nationality-based price difference. An optional one-time-payment plan discounts total tuition by 20% (USD 37,000 grand total). A USD 100 per-subject exam fee and a USD 1,000 per-subject resit fee apply separately; fees are explicitly non-refundable under most withdrawal scenarios.",
+          "teachingPhases": [
+            {
+              "phase": "Phase I: Semesters I-III",
+              "language": "English",
+              "details": "Preclinical foundation subjects, gated by passing all Phase I subjects before progressing to Phase II."
+            },
+            {
+              "phase": "Phase II: Semesters IV-VI",
+              "language": "English",
+              "details": "Paraclinical subjects, gated by passing all Phase II subjects before progressing to Phase III."
+            },
+            {
+              "phase": "Phase III: Semesters VII-X, plus internship",
+              "language": "English",
+              "details": "Clinical training at Victoria Hospital and Jawaharlal Nehru Hospital, followed by a compulsory 1-year rotating internship in Mauritius or, for some Indian cohorts, at named hospitals in India."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "ssr-medical-college",
+      "publicField": "identity",
+      "claimText": "SSR Medical College's MBBS instruction began in 2002; the college is currently operational and academically affiliated with the University of Mauritius.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000326",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000326",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ssr-medical-college",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000326), currently operational; graduates (2002-current, open-ended) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000326",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000326",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ssr-medical-college",
+      "programmeSlug": "ssr-medical-college-mbbs",
+      "publicField": "academics",
+      "claimText": "MBBS is a 5-year, 10-semester direct-entry programme awarded by the University of Mauritius, taught in English, followed by a compulsory 1-year rotating internship.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000326 (language of instruction field)",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0000326",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ssr-medical-college",
+      "programmeSlug": "ssr-medical-college-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Admission requires minimum 60% aggregate in PCB/English (Indian boards) or equivalent A-Level/South African Board grades, plus a NEET pass for Indian applicants; no transfers or lateral entry accepted from other medical colleges.",
+      "status": "verified",
+      "sourceLabel": "SSR Medical College — official Course page (Minimum Eligibility section)",
+      "sourceUrl": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=course",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ssr-medical-college",
+      "programmeSlug": "ssr-medical-college-mbbs",
+      "publicField": "admissions",
+      "claimText": "Application by email/online with Class 12/A-Level and NEET results, followed by an interview in New Delhi, Durban, or Mauritius; Provisional Admission Letter issued, then a USD 5,000 non-refundable registration fee confirms enrollment.",
+      "status": "verified",
+      "sourceLabel": "SSR Medical College — official Admissions and About pages",
+      "sourceUrl": "http://www.ssrmedicalcollege.com",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ssr-medical-college",
+      "programmeSlug": "ssr-medical-college-mbbs",
+      "publicField": "intake",
+      "claimText": "Two intakes per year (Feb/March and Aug/Sept), roughly 75 students each. For the Aug/Sept 2026 batch: 15 August 2026 deadline for Indian applicants, 15 January 2027 deadline for the international batch, with introductory classes starting the last week of September 2026.",
+      "status": "verified",
+      "sourceLabel": "SSR Medical College — official About page (Aug/Sept'26 batch Admissions section)",
+      "sourceUrl": "http://www.ssrmedicalcollege.com",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ssr-medical-college",
+      "programmeSlug": "ssr-medical-college-mbbs",
+      "publicField": "fee",
+      "claimText": "2026/27 'Silver Jubilee Year' fees: USD 8,000/year tuition (USD 40,000 over 5 years) plus USD 5,000 non-refundable registration fee, USD 45,000 total on the yearly plan (or USD 37,000 with a 20% one-time-payment discount); identical across all nationalities.",
+      "status": "verified",
+      "sourceLabel": "SSR Medical College — official College Fees page",
+      "sourceUrl": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=collegefees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ssr-medical-college",
+      "programmeSlug": "ssr-medical-college-mbbs",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training runs at Victoria Hospital (800 beds) and Jawaharlal Nehru Hospital (600 beds), both Mauritius government hospitals; internship arrangements differ by admission cohort year (2022+ cohorts intern in Mauritius, earlier Indian cohorts historically interned in India).",
+      "status": "verified",
+      "sourceLabel": "SSR Medical College — official Academic and About pages",
+      "sourceUrl": "http://www.ssrmedicalcollege.com",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ssr-medical-college",
+      "publicField": "student living",
+      "claimText": "More than 300 hostel rooms across 10 blocks, twin-sharing standard (single from 2nd year, subject to availability); USD 2,000 one-time hostel registration fee, USD 100/month twin-share or USD 200/month single, paid annually in advance; hostel not compulsory, off-campus permitted from 2nd year with permission.",
+      "status": "verified",
+      "sourceLabel": "SSR Medical College — official FAQ and Fees pages",
+      "sourceUrl": "http://www.ssrmedicalcollege.com/main.php?do=clientsitecontent&action=home&pageid=faq",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

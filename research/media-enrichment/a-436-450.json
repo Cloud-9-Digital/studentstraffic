@@ -1,0 +1,304 @@
+{
+  "batchId": "media-a-436-450",
+  "scope": "Alphabetical missing-media rows 436-450; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "university-of-milan-bicocca",
+      "universityName": "University of Milan-Bicocca",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Wayback Machine technique bypassed the persistent Cloudflare 403 and recovered both the header logo.png and a non-promotional students-on-campus photo from the same snapshot (other carousel slides were all dated admissions/survey campaign graphics and were skipped)..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260714094951im_/https://www.unimib.it/sites/default/files/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site unimib.it (returns Cloudflare bot-challenge HTTP 403 on direct fetch) via Wayback Machine snapshot dated 2026-07-14; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-milan-bicocca-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260714094951im_/https://www.unimib.it/sites/default/files/styles/slick_carousel_1920x520/public/2024-08/studentiBicocca.jpg?itok=t-bRgmBG",
+        "sourceType": "official",
+        "rightsBasis": "Same Wayback Machine snapshot of the official site, image alt-labelled 'studenti università Bicocca' (a generic students photo, not a dated campaign graphic); archived asset URL verified to resolve directly with its original itok query string (HTTP 200).",
+        "proposedPublicId": "university-of-milan-bicocca-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-mostar-faculty-of-medicine",
+      "universityName": "University of Mostar Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://mef.sum.ba/engl/wp-content/uploads/2023/11/medicina-logo-eng.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the Faculty of Medicine's own WordPress site",
+        "proposedPublicId": "university-of-mostar-faculty-of-medicine-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. No cover asset resolved: the only campus photograph on the homepage (rektorat_mostar3.jpg) tops out at 327px wide across all its srcset variants, too low-resolution for a cover image, and no larger or dedicated hero/cover asset was found on the site."
+    },
+    {
+      "universitySlug": "university-of-namibia-school-of-medicine",
+      "universityName": "University of Namibia School of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed via the Wayback Machine that the domain was still legitimate as recently as 2026-05-25, i.e. the hijack is a very recent development; recovered the genuine header logo from that snapshot. The archived page's own og:image was a portrait-orientation corporate-brochure cover rather than a campus photo, so the cover was instead sourced via the Commons-license technique..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260525213444im_/https://www.unam.edu.na/wp-content/uploads/2024/07/UNAM-LogoLandscape2.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site unam.edu.na, currently hijacked/serving unrelated spam content, via Wayback Machine snapshot dated 2026-05-25 (confirmed genuine - page title 'University of Namibia | Open your mind', not spam); archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-namibia-school-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Unamt.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, photo captioned 'UNAM main campus', used in the university's own Wikipedia infobox.",
+        "proposedPublicId": "university-of-namibia-school-of-medicine-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-naples-federico-ii",
+      "universityName": "University of Naples Federico II",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unina.it/o/ThemaL74GA66_3/images/logo/logo_unina.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website theme assets",
+        "proposedPublicId": "university-of-naples-federico-ii-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.unina.it/documents/20117/34705/Centrale+1200x700.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional homepage hero image of the university's central building, served from the university's own document repository",
+        "proposedPublicId": "university-of-naples-federico-ii-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-new-england-australia",
+      "universityName": "University of New England",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260718224650im_/https://www.une.edu.au/__data/assets/image/0004/584005/une-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site une.edu.au (now blocks automated/cloud-origin fetches, per the first pass) via Wayback Machine snapshot dated 2026-07-18; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-new-england-australia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260718224650im_/https://www.une.edu.au/__data/assets/image/0006/591099/varieties/hero.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same Wayback Machine snapshot of the official site, homepage hero banner (agriculture students with livestock, no overlaid dates or campaign text); archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-new-england-australia-cover"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Per the task note, the first pass had already confirmed the correct official asset before it started failing at upload time due to une.edu.au blocking Cloudinary's fetcher. Used the Wayback Machine to obtain working alternative URLs for both the logo and a generic (non-time-bound) hero photo from the same official domain.."
+    },
+    {
+      "universitySlug": "university-of-new-south-wales",
+      "universityName": "University of New South Wales",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unsw.edu.au/content/dam/images/graphics/logos/unsw/unsw_0.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website asset repository",
+        "proposedPublicId": "university-of-new-south-wales-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. No cover asset resolved: every large photograph on the homepage is tied to a specific news, faculty or alumni story tile (business, engineering, alumni updates, etc.) rather than a dedicated university-wide hero/cover image, and the page's own og:image is the same logo mark, not a photograph."
+    },
+    {
+      "universitySlug": "university-of-newcastle-australia",
+      "universityName": "University of Newcastle",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Both sourced URLs (discovered via Wayback Machine, then re-verified live outside the homepage's Cloudflare challenge) resolved with HTTP 200 during research, but at upload time newcastle.edu.au returned a persistent HTTP 403 to both Cloudinary's own fetcher and a direct browser-UA fetch for both assets. Neither asset was applied. Needs re-research or a manual upload in a future pass.",
+      "logo": {
+        "sourceUrl": "https://www.newcastle.edu.au/__data/assets/file/0011/661727/uon-logo-square.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site newcastle.edu.au (returns a Cloudflare bot-challenge on direct homepage fetch) - homepage HTML recovered via a Wayback Machine snapshot dated 2026-07-18, and the referenced header-logo asset URL itself then verified to resolve directly, outside the challenge (HTTP 200).",
+        "proposedPublicId": "university-of-newcastle-australia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.newcastle.edu.au/__data/assets/image/0010/958069/home_1600x800_enrol_dec23.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same Wayback Machine snapshot of the official site, homepage hero banner (fetchpriority=high, alt 'A group of students walking around university', 1600x800, no overlaid dates); asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-newcastle-australia-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-nicosia",
+      "universityName": "University of Nicosia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.unic.ac.cy/wp-content/uploads/2025/07/UNIC-Logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website",
+        "proposedPublicId": "university-of-nicosia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.unic.ac.cy/wp-content/uploads/2025/03/university.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional image (1920x1080) served from the university's own website, used as the background for a University of Nicosia news feature on its homepage",
+        "proposedPublicId": "university-of-nicosia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-nis-faculty-of-medicine",
+      "universityName": "University of Nis Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.medfak.ni.ac.rs/templates/restaurantlab/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the faculty's own website template assets",
+        "proposedPublicId": "university-of-nis-faculty-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.medfak.ni.ac.rs/images/MF_slike/Top_Slike/Prijemni/combine_images_980.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage showcase banner image served from the faculty's own website",
+        "proposedPublicId": "university-of-nis-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-notre-dame",
+      "universityName": "University of Notre Dame",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://static.nd.edu/images/webclips/default/webclip-1024.png",
+        "sourceType": "official",
+        "rightsBasis": "official ND monogram brand mark served from the university's own static asset CDN (static.nd.edu), referenced as the site's webclip icon",
+        "proposedPublicId": "university-of-notre-dame-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.nd.edu/assets/images/home/hallmarks-catholic.webp",
+        "sourceType": "official",
+        "rightsBasis": "official homepage image (alt text: aerial view of the Golden Dome on the Main Building at the University of Notre Dame, with the Sacred Heart Basilica spire) served from the university's own website",
+        "proposedPublicId": "university-of-notre-dame-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-nottingham",
+      "universityName": "University of Nottingham",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.nottingham.ac.uk/etc.clientlibs/uon/clientlibs/clientlib-site/resources/images/Logo-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website client library assets",
+        "proposedPublicId": "university-of-nottingham-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.nottingham.ac.uk/Homepage-2021/Images/Hero/Normal-Never-Changed-the-World/Desktop/students-smiling-desktop.x18051b15.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage hero image (alt text: undergraduate students walking outside the Monica Partridge Building) served from the university's own website",
+        "proposedPublicId": "university-of-nottingham-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-novi-sad-faculty-of-medicine",
+      "universityName": "University of Novi Sad Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.mf.uns.ac.rs/img/MFlogo_transp.png",
+        "sourceType": "official",
+        "rightsBasis": "official Faculty of Medicine brand asset served from the faculty's own website",
+        "proposedPublicId": "university-of-novi-sad-faculty-of-medicine-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.mf.uns.ac.rs/img/slider/Headers/front_1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official homepage slider header image served from the faculty's own website",
+        "proposedPublicId": "university-of-novi-sad-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-oslo",
+      "universityName": "University of Oslo",
+      "missing": [
+        "logo"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.uio.no/vrtx/dist/resources/uio2/css/images/footer/uio-logo-no.svg",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website resource assets",
+        "proposedPublicId": "university-of-oslo-logo"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-ostrava",
+      "universityName": "University of Ostrava",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.osu.cz/grafika2016/logo-ou-en.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from the university's own website (osu.eu homepage links to this osu.cz-hosted asset as its header logo)",
+        "proposedPublicId": "university-of-ostrava-logo"
+      },
+      "status": "ready",
+      "reason": "Logo captured and verified. No cover asset resolved: the homepage slider images (served from images.osu.cz) are each tied to a specific news article or student interview rather than a dedicated institutional hero/cover photo, and the page's own og:image is the university's spiral logo mark, not a photograph."
+    },
+    {
+      "universitySlug": "university-of-otago",
+      "universityName": "University of Otago",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260719014035im_/https://www.otago.ac.nz/__data/assets/file/0034/568366/UoO_Logo_RGB_Horz_Gold-REV.svg",
+        "sourceType": "official",
+        "rightsBasis": "Same asset confirmed by the first pass; otago.ac.nz still blocks Cloudinary's own fetcher, so served via a Wayback Machine archived copy (snapshot dated 2026-07-19), verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-otago-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260623041247im_/https://www.otago.ac.nz/__data/assets/image/0034/588913/Homepage-banner-Feb-2026.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same asset confirmed by the first pass, served via a Wayback Machine archived copy (snapshot dated 2026-06-23), verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "university-of-otago-cover"
+      },
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Per the task note, the underlying assets were already correctly identified by the first pass and only failed at upload time. Used the Wayback Machine to obtain working alternative URLs for the same two confirmed assets.."
+    }
+  ]
+}

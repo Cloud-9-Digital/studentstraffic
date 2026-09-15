@@ -1,0 +1,24 @@
+{
+  "scope": "Senegal medical discovery — Université Cheikh Anta Diop Faculty of Medicine, Pharmacy and Odontology",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UCAD's Faculty of Medicine, Pharmacy and Odonto-Stomatology describes basic training leading to State Doctorates in Medicine, Pharmacy and Dentistry.",
+      "sourceUrl": "https://fmpos.ucad.sn/sites/default/files/Pr%C3%A9sentation%20du%20D%C3%A9partement%20de%20M%C3%A9decine%20version%20finale.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Senegal's Ministry of Higher Education publishes the doctoral-degree decree, which includes medicine and an accreditation section governing the degree framework.",
+      "sourceUrl": "https://mesrisenegal.sn/wp-content/uploads/2025/01/Decret-n-2012-1116-relatif-au-diplome-de-doctorat.pdf",
+      "sourceType": "national-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "Current official medicine-specific curriculum, clinical-training, admission, fee, language and student-support evidence was not sufficiently assembled for publication.",
+    "The available UCAD faculty presentation is not a complete current programme record for the required payload fields."
+  ],
+  "nextAction": "Obtain current UCAD Medicine programme, admissions, fee, clinical-training, language and support publications, then complete the field-level review before publishing."
+}

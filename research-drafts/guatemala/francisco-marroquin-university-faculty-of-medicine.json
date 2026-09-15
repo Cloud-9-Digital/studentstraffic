@@ -1,0 +1,66 @@
+{
+  "countrySlug": "guatemala",
+  "universitySlug": "francisco-marroquin-university-faculty-of-medicine",
+  "schoolName": "Francisco Marroquín University Faculty of Medicine",
+  "cityName": "Guatemala City",
+  "priority": "medium",
+  "officialWebsite": "https://medicina.ufm.edu/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UFM officially offers the Licenciatura en Médico Cirujano through its Faculty of Medicine. Its admissions page states a six-year duration and displays a first-semester price of Q58,197.00, comprising a Q11,639.40 first-payment registration charge and Q9,311.52 monthly payment, subject to change and course allocation. UFM also describes simulation-based learning and elective opportunities. However, the reviewed official material does not establish an international-applicant route, the programme language of instruction, a complete current multi-year fee schedule, student accommodation terms, or recognition/licensing evidence relevant to the intended study-abroad audience. The candidate remains held rather than being represented as publish-ready.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UFM Admissions — Faculty of Medicine",
+        "url": "https://admisiones.ufm.edu/site/facultad-de-medicina/",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Official admissions page confirms six-year duration, simulation-based learning, elective opportunities and the displayed first-semester breakdown: registration Q11,639.40; monthly payment Q9,311.52; semester total Q58,197.00. The page says values are subject to change and can vary by assigned courses."
+      },
+      {
+        "label": "UFM Vive la UFM — Faculty of Medicine activity",
+        "url": "https://admisiones.ufm.edu/vivelaufm/actividad/conoce-tu-futuro-como-futuro-estudiante-de-medicina/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Identifies the degree as Licenciatura en Médico Cirujano and describes clinical-skills demonstration activities for prospective students."
+      },
+      {
+        "label": "UFM directory",
+        "url": "https://www.ufm.edu/directorio/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms the Faculty of Medicine and university-level admissions contact details in Guatemala City."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Francisco Marroquín University Faculty of Medicine",
+    "city": "Guatemala City",
+    "type": "Private",
+    "officialWebsite": "https://medicina.ufm.edu/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Official international-applicant eligibility and application route",
+      "Explicit programme language-of-instruction statement",
+      "Current full-programme fee schedule and additional compulsory costs",
+      "Primary-source recognition and graduate-licensing evidence relevant to the intended audience",
+      "Verified accommodation and clinical-placement terms for international entrants"
+    ],
+    "notes": "The official admissions page provides a useful current first-semester amount only, expressly subject to change and course allocation. It is not sufficient to calculate or promise a full degree cost. No programme payload is created until international-facing evidence and recognition requirements are satisfied."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative fields are intentionally blank. UFM's first-party admissions page supports a six-year Licenciatura en Médico Cirujano and a conditional first-semester price, but the evidence reviewed does not support a complete authoritative medical-study-abroad page or conversion claims."
+  }
+}

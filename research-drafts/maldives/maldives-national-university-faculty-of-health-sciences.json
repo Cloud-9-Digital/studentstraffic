@@ -1,0 +1,22 @@
+{
+  "countrySlug": "maldives",
+  "universitySlug": "maldives-national-university-faculty-of-health-sciences",
+  "schoolName": "The Maldives National University — School of Medicine",
+  "cityName": "Malé",
+  "priority": "high",
+  "officialWebsite": "https://courses.mnu.edu.mv/course/245",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — this is a strong source base, but not yet a complete commercial/international payload. MNU's current Doctor of Medicine page confirms a five-year, full-time MNQF Level 7 programme in Malé, an August 2026 deadline of 30 July 2026, a course-fee figure of MVR 616,800 specifically marked applicable to the Free First Degree Scheme, and a general-entry/pre-medicine selection route. MQA lists MNU programmes and MNU announced in June 2026 that GMC confirmed its primary medical qualification currently meets acceptable-overseas-qualification criteria. Yet the current evidence does not establish international applicant eligibility or a separate international fee, the exact fee inclusion/exclusions, primary source clinical-placement/internship arrangements, accommodation and student support, or a complete admissions document list. The Free First Degree fee must not be presented as a price for an international applicant. Hold until these gaps have primary evidence.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "MNU Doctor of Medicine course page", "url": "https://courses.mnu.edu.mv/course/245", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Current August 2026 listing: five years, full-time, Malé, MVR 616,800 marked applicable for Free First Degree Scheme; deadline 30 July 2026; general-entry and MQA-approved pre-medicine criteria. Includes per-course fee table, not a verified international fee package."},
+      {"label": "Maldives Qualifications Authority MNU record", "url": "https://mqa.gov.mv/en/higher-education-institutes/the-maldives-national-university", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Lists MNU accredited qualifications; use as regulator context, with exact current MD record to be captured before any payload."},
+      {"label": "MNU GMC recognition announcement", "url": "https://mnu.edu.mv/mnu-school-of-medicine-achieves-recognition-from-the-uk-general-medical-council/", "kind": "official-recognition", "checkedAt": "2026-07-25", "notes": "MNU reports June 2026 GMC confirmation that its PMQ currently meets acceptable overseas qualification criteria; must be framed narrowly, without promise of registration or employment."},
+      {"label": "MNU Faculty of Health Sciences", "url": "https://mnu.edu.mv/fhs/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Confirms School of Medicine is within the health-sciences structure."},
+      {"label": "Maldives Medical and Dental Council medical-education accreditation procedures", "url": "https://health.gov.mv/en/downloads/procedures-for-assessment-and-accreditation-of-medical-education-programmesmmdc", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Gives regulatory context; not a programme-specific approval record."}
+    ]
+  },
+  "structuredFacts": {"name": "The Maldives National University — School of Medicine", "type": "Public", "programs": [{"officialTitle": "Degree in Doctor of Medicine", "duration": "5 years (10 semesters)", "campus": "Malé", "feeStatus": "MVR 616,800 displayed for Free First Degree Scheme only", "internationalFeeConfirmed": false, "publishable": false}], "missingForPublication": ["international admission eligibility and documents", "international tuition/mandatory-fee schedule", "fee inclusions and exclusions", "clinical placement/internship primary-source detail", "accommodation and support", "exact MD programme accreditation listing"]},
+  "draftContent": {"summary": "", "faq": [], "notes": "No public copy drafted until fee status and international admission route are verified."}
+}

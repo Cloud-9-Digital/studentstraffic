@@ -1,0 +1,54 @@
+{
+  "countrySlug": "niger",
+  "universitySlug": "university-of-zinder-faculty-of-health-sciences",
+  "schoolName": "Université André Salifou de Zinder — Faculté des Sciences de la Santé",
+  "cityName": "Zinder",
+  "priority": "high",
+  "officialWebsite": "https://www.stat-niger.org/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — the candidate's historical University of Zinder identity has changed: Niger's 2024–2025 higher-education statistical yearbook names Université André Salifou (UAS) in Zinder. A current primary medical-programme or admissions site could not be located. Older official statistical material records a University of Zinder Faculty of Health Sciences, while third-party material suggests an active Faculty of Health Sciences, but neither provides current fee, language, international-entry, duration, clinical-placement, recognition or support evidence. The queue slug remains the historical identity to prevent an alias duplicate; any future payload must use the confirmed current institutional name.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Niger higher-education statistical yearbook 2024–2025",
+        "url": "https://www.stat-niger.org/wp-content/uploads/publication_sectorielle/annuaire/MESRI/Annuaire_2024_2025.pdf",
+        "kind": "government-statistics",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Université André Salifou in Zinder, establishing the current naming context."
+      },
+      {
+        "label": "Niger higher-education statistical yearbook 2020–2021",
+        "url": "https://www.stat-niger.org/wp-content/uploads/publication_sectorielle/annuaire/MESRI/Annuaire_2020_2021.pdf",
+        "kind": "government-statistics",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Université de Zinder as a public university; historical support only."
+      },
+      {
+        "label": "Niger government higher-education record",
+        "url": "https://www.uddm.edu.ne/index.php/inscription-reinscription/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Used only for country-level context on public-university registration; it is not a UAS/FSS medicine source."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université André Salifou de Zinder — Faculté des Sciences de la Santé",
+    "type": "Public (historical UZ / current UAS naming needs direct institutional confirmation)",
+    "programs": [],
+    "missingForPublication": [
+      "current official university and FSS identity/contact page",
+      "medicine programme title, duration and language",
+      "current tuition and mandatory fees",
+      "international entry route, intake and deadline",
+      "clinical-training, accreditation and professional-recognition evidence",
+      "student accommodation/support evidence"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public copy drafted because the current institutional identity and programme facts require direct confirmation."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "Western Sahara medical discovery — Ibn Zohr University Faculty of Medicine and Pharmacy Laâyoune",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Ibn Zohr University lists its Faculty of Medicine and Pharmacy in Laâyoune and identifies its current dean.",
+      "sourceUrl": "https://www.uiz.ac.ma/index.php/faculte-de-medecine-et-de-pharmacie-laayoune",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Ibn Zohr University's programme catalogue lists a Doctorat en Médecine delivered by the Faculty of Medicine and Pharmacy Laâyoune, with first-year entry by competitive admission for eligible scientific-baccalaureate holders.",
+      "sourceUrl": "https://www.uiz.ac.ma/formation/diplome/dm",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The faculty's official 2026 residency notice requires a Doctorat en Médecine for the competitive residency examination, providing current evidence of the physician degree pathway.",
+      "sourceUrl": "https://fmpl.uiz.ac.ma/2026/04/21/concours-de-residanat-en-medecine-session-du-12-mai-2026/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official effective-date fee schedule was retrieved; no fee figure may be inferred or stated.",
+    "The official material retrieved does not establish international admissions, teaching language, named clinical sites or placement capacity.",
+    "Scholarship, loan, accommodation and student-support eligibility require current policy-level evidence."
+  ],
+  "nextAction": "Obtain current official fee, admissions, teaching-language, clinical-training and support-policy documents before considering a publishable payload."
+}

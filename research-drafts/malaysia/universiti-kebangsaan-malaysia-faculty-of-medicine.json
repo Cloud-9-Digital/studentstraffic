@@ -1,0 +1,37 @@
+{
+  "scope": "Malaysia medical discovery — Universiti Kebangsaan Malaysia Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Universiti Kebangsaan Malaysia Faculty of Medicine",
+    "countrySlug": "malaysia",
+    "programme": "Doctor of Medicine (MDUKM)",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "The Malaysian Qualifications Register records UKM's Doctor of Medicine as a full-time conventional MQF Level 6 qualification, 238 credits and five years, with Malaysian Medical Council as professional body.",
+      "sourceUrl": "https://www.mqa.gov.my/mqr/english/epapariptaAA.cfm?IDAkrKP=20097",
+      "sourceType": "government-accreditor",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The same MQR record lists accreditation from 1 July 2023 to 30 June 2028.",
+      "sourceUrl": "https://www.mqa.gov.my/mqr/english/epapariptaAA.cfm?IDAkrKP=20097",
+      "sourceType": "government-accreditor",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UKMShape officially states that the Bachelor of Medicine (MDUKM) tuition fee for local and international students is being restructured and that the revised structure is expected by 31 July 2026.",
+      "sourceUrl": "https://www.ukm.my/ukmshape/ukmshape-learning-fees/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "UKM's official notice confirms that the local and international MDUKM tuition structure is under revision; no current amount can be published before the promised 31 July 2026 update.",
+    "No complete current first-party international undergraduate admissions page was established for the MDUKM cohort, including application route, qualification/test requirements, documents and intake timing.",
+    "No current programme-specific source bundle for clinical structure, accommodation and international-student support was completed."
+  ],
+  "nextAction": "After 31 July 2026, obtain UKM's revised international MDUKM fee schedule and a current Faculty/UKM international admissions notice, then continue the programme evidence packet."
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Belize medical discovery — Washington University of Health and Sciences Belize",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The World Directory of Medical Schools record says one or more Washington University of Health and Sciences medical education programmes currently meet the Intealth Recognized Accreditation Policy.",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0002692",
+      "sourceType": "international-medical-directory",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "WUHS's own recognition page states that it is licensed and chartered by Belize's Ministry of Education and recognised by the Belize Medical Council.",
+      "sourceUrl": "https://www.wuhs.edu.bz/about/recognition.php",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The licensing and local-recognition claims need confirmation from a Belize government/regulator record, not only the school's own page.",
+    "No complete current MD tuition/mandatory-fee schedule, current intake date, entry criteria, teaching language, named clinical sites, accommodation, scholarship/loan support or graduate-registration pathway was located.",
+    "Directory eligibility must not be turned into a blanket US, Canadian, Indian or global licensing claim."
+  ],
+  "nextAction": "Obtain Belize regulator documentation, active MD admissions/fee records and clinical-affiliation evidence before any commercial content is evaluated."
+}

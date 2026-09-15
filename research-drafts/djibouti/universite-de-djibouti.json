@@ -1,0 +1,19 @@
+{
+  "countrySlug": "djibouti",
+  "universitySlug": "universite-de-djibouti",
+  "schoolName": "Université de Djibouti",
+  "cityName": "Djibouti",
+  "priority": "medium",
+  "officialWebsite": "https://www.univ.edu.dj/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — the university officially lists a Faculty of Medicine, while Djibouti legal sources establish the national Doctor of Medicine framework and the Faculty's statutory oversight. The current accessible sources do not provide a current programme duration/language, tuition and mandatory costs, international eligibility, cycle dates, clinical placements, housing/support or programme-recognition record. No fee or foreign-admission claim has been inferred from the legal framework. No second safe university-level medical candidate was identified; ISSS is a separate health-sciences institute rather than a university.",
+  "sourceBundle": { "sources": [
+    { "label": "Université de Djibouti official homepage", "url": "https://www.univ.edu.dj/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Lists seven components including the Faculty of Medicine." },
+    { "label": "Djibouti Faculty of Medicine statute", "url": "https://www.journalofficiel.dj/arabe/texte-juridique/decret-n2012-238-pr-mensur-fixant-le-statut-de-la-faculte-de-medecine-de-djibouti/", "kind": "government-law", "checkedAt": "2026-07-25", "notes": "Establishes joint higher-education/health-ministry programme oversight; it is not a current admissions or fee schedule." },
+    { "label": "Djibouti national Doctor of Medicine framework", "url": "https://www.journalofficiel.dj/texte-juridique/decret-n2007-0231-pr-ms-fixant-le-cadre-general-du-regime-des-etudes-et-les-conditions-dobtention-du-diplome-national-de-docteur-en-medecine/", "kind": "government-law", "checkedAt": "2026-07-25", "notes": "Establishes the national Doctor of Medicine diploma framework, but does not give a current programme-level commercial record." },
+    { "label": "Djibouti higher-education ministry portal", "url": "https://www.mensur-dj.com/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Lists the University of Djibouti and the Institute of Health Sciences in the national higher-education system." }
+  ] },
+  "structuredFacts": { "name": "Université de Djibouti", "type": "Public university", "programs": [], "missingForPublication": [ "current medical award duration and language", "current tuition and mandatory costs", "international eligibility, documents, intake and deadlines", "clinical structure and student accommodation/support", "current programme accreditation and target-market recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: current programme-level facts necessary for an admissions page were not available." }
+}

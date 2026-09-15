@@ -1,0 +1,62 @@
+{
+  "countrySlug": "benin",
+  "universitySlug": "university-of-abomey-calavi-faculty-of-health-sciences",
+  "schoolName": "Université d'Abomey-Calavi — Faculté des Sciences de la Santé",
+  "cityName": "Cotonou / Abomey-Calavi",
+  "priority": "high",
+  "officialWebsite": "https://www.uac.bj/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Benin's MESRS lists UAC as a public university and national decree 2016-638 establishes UAC as a national multidisciplinary university with health training. WHED records a Faculty of Health Sciences and a Doctorat en Médecine, but current primary sources located in this pass do not provide a current medicine programme page with duration, official teaching language, international eligibility, current tuition/mandatory fees, application window, clinical placement structure or programme-specific approval/recognition. UAC's current health-related INMeS pages are separate nursing/health-programme material and cannot be used to infer medical-degree facts. The public medicine page must remain unbuilt rather than fill gaps with generic Francophone or study-abroad copy.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Benin MESRS public universities page",
+        "url": "https://enseignementsuperieur.gouv.bj/universites/UNI1/show",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Université d'Abomey-Calavi as a public university and identifies Abomey-Calavi as its headquarters."
+      },
+      {
+        "label": "Benin decree 2016-638",
+        "url": "https://sgg.gouv.bj/pdf/web/viewer.html?file=%2Fdoc%2Fdecret-2016-638%2Fread",
+        "kind": "government",
+        "checkedAt": "2026-07-25",
+        "notes": "Establishes UAC and University of Parakou as national multidisciplinary universities; describes UAC health-training remit."
+      },
+      {
+        "label": "WHED UAC institutional record",
+        "url": "https://whed.net/detail_institution.php?id=19542",
+        "kind": "institution-directory",
+        "checkedAt": "2026-07-25",
+        "notes": "Records UAC Faculty of Health Sciences and Doctorat en Médecine, but does not replace a current official programme, fee or international-admissions source."
+      },
+      {
+        "label": "UAC INMeS admissions page",
+        "url": "https://inmes.uac.bj/admission-a-linmes/",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Shows UAC has procedures for health programmes and mentions non-Beninese applicants, but the page is not an undergraduate medicine admission page."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université d'Abomey-Calavi — Faculté des Sciences de la Santé",
+    "type": "Public",
+    "programs": [],
+    "missingForPublication": [
+      "current official medicine programme title, duration and curriculum",
+      "confirmed medium of instruction",
+      "international-applicant eligibility and application process",
+      "current tuition, registration and mandatory fees",
+      "intake/deadline",
+      "clinical and professional-recognition evidence",
+      "international accommodation and support evidence"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public copy drafted: the required programme facts are not available in an adequate current primary-source bundle."
+  }
+}

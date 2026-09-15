@@ -1,0 +1,304 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": ["General Medicine", "Doctor of Medicine", "Medicine and Surgery"],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Maribor maps its six-year General Medicine integrated master's programme, which leads to the Doctor of Medicine title, to this category.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including duration, fees, teaching language and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "slovenia",
+      "slug": "university-of-maribor",
+      "name": "University of Maribor",
+      "city": "Maribor",
+      "type": "Public",
+      "establishedYear": 1975,
+      "officialWebsite": "https://www.um.si/en/",
+      "mediaAttribution": {},
+      "summary": "University of Maribor Faculty of Medicine offers General Medicine in Maribor as a six-year, 360-ECTS integrated master's programme leading to Doctor of Medicine. It is a Slovenian-language route: every applicant needs Slovenian at CEFR C2, including before first-year enrolment for the 2026/27 foreign-citizen route.",
+      "campusLifestyle": "General Medicine is delivered at the Faculty of Medicine, Taborska ulica 8, Maribor. The programme record identifies full-time study and an academic year of 30 weeks split into two 15-week semesters. Faculty material describes a curriculum of pre-clinical, clinical and problem-based-learning modules rather than a separate foundation year.",
+      "cityProfile": "Maribor is the study location stated in the University programme catalogue. The 2026/27 foreign-citizen route uses the University's eVŠ portal and concludes first-year enrolment at the relevant faculty student office, rather than a separate overseas recruitment portal.",
+      "practicalExposure": "The programme catalogue says practical education forms part of doctors' working environments. Progression moves from anatomy, histology, biophysics, biochemistry and pre-clinical PBL to internal medicine with propedeutics, surgery, radiology, clinical biochemistry, special pathology and clinical PBL. Assessment can include practical examinations, practice assessment and practical-training reports.",
+      "hostelOverview": "No Faculty of Medicine accommodation entitlement, room availability or current housing price was verified in the programme, foreign-admission and fee materials used for this package. Housing must therefore be treated as a separate arrangement and budget, not as an included part of the EUR 9,160 tuition figure.",
+      "dietarySupport": "No current Faculty of Medicine meal-plan price or dietary-support service was verified in the sources reviewed for this package. Daily food costs are separate from tuition and should not be represented as a programme benefit.",
+      "safetyOverview": "No Faculty-specific safety statistic or safety guarantee was verified in the reviewed official material. This record therefore makes no general safety-ranking claim for Maribor.",
+      "studentSupport": "The University of Maribor's Higher Education Application and Information Centre manages the foreign-education recognition route, while the Faculty student office handles enrolment after an acceptance decision. The University also identifies its Faculty of Arts as a local provider of intermediate and C2 Slovene-language examinations for foreign applicants.",
+      "whyChoose": [
+        "A direct-entry integrated medicine route: six years, 360 ECTS and the Doctor of Medicine qualification.",
+        "The University catalogue specifies progression from pre-clinical sciences to internal medicine, surgery, radiology and practical education.",
+        "Current 2026/27 tuition is published as EUR 9,160 per year in the University fee schedule.",
+        "The foreign-citizen process identifies eVŠ submission, recognition of foreign secondary education and enrolment at the Faculty."
+      ],
+      "thingsToConsider": [
+        "This is not an English-medium medicine course: Slovenian CEFR C2 is an entry condition for Faculty of Medicine General Medicine.",
+        "For 2026/27, foreign applicants must submit C2 evidence by 31 July 2026, unless their prior Slovene schooling or equivalent evidence meets the stated condition.",
+        "Foreign secondary-school qualifications require University recognition; the eVŠ application can start that process when the applicant does not yet hold a recognition decision.",
+        "The 2026/27 EUR 9,160 figure is annual tuition only; this package does not assert a six-year total, housing cost or living-cost allowance.",
+        "A direct interview is required for foreign citizens from countries classified by Slovenia as higher migration risk."
+      ],
+      "bestFitFor": [
+        "Applicants who already meet the Slovenian C2 language requirement and have a qualifying Matura-equivalent secondary credential.",
+        "Applicants seeking a public-university integrated medicine curriculum with documented pre-clinical and clinical progression.",
+        "Applicants prepared to use the national eVŠ application and foreign-qualification recognition process.",
+        "Applicants who can budget annual tuition and accommodation separately."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Council for Higher Education of the Republic of Slovenia - positive opinion on introduction of General Medicine (5 May 2008)",
+        "University of Maribor Faculty of Medicine Senate - approved General Medicine programme (26 November 2007)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "University of Maribor General Medicine programme record",
+          "url": "https://moja.um.si/studijski-programi/Strani/studijskiprogram.aspx?deli=N&jezik=A&program=0000183"
+        },
+        {
+          "label": "University of Maribor General Medicine accreditation record",
+          "url": "https://moja.um.si/studijski-programi/Strani/akreditacija.aspx?deli=N&fakulteta=MF&jezik=A&program=0000183"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is University of Maribor General Medicine a direct-entry medical degree?",
+          "answer": "Yes. The University catalogue identifies General Medicine as a six-year, 360-ECTS uniform master's programme that awards Doctor of Medicine. The listed access route is the Matura examination or the stated legacy four-year secondary-school route; it is not presented as a graduate-entry MD."
+        },
+        {
+          "question": "Is the course taught in English?",
+          "answer": "No English-medium General Medicine route is evidenced in this package. Faculty of Medicine General Medicine requires Slovenian at CEFR C2, and the 2026/27 foreign-citizen requirements place that condition before first-year enrolment."
+        },
+        {
+          "question": "What Slovenian-language evidence can meet the C2 requirement?",
+          "answer": "The University accepts Slovenian studied at the Matura or final secondary-school year where it was taught, a passed Slovenian C2 examination, or another equivalent document. The University identifies the Faculty of Arts in Maribor as a provider of intermediate and C2 examinations for foreign applicants."
+        },
+        {
+          "question": "What is the annual tuition for 2026/27?",
+          "answer": "The University of Maribor full-time tuition schedule lists EUR 9,160 per year for Faculty of Medicine General Medicine. It does not establish a complete six-year tuition, accommodation or living-cost total in the material reviewed."
+        },
+        {
+          "question": "How do foreign applicants apply?",
+          "answer": "The 2026/27 foreign-citizen route uses the eVŠ application portal. The application includes the qualification-recognition process when secondary education was completed abroad and no recognition decision is already held."
+        },
+        {
+          "question": "What education documents are needed for the foreign-qualification process?",
+          "answer": "The University requires electronic copies or photographs of the final secondary-school certificate, third- and fourth-year certificates, a short chronological education description, the relevant language evidence and, where applicable, translated or verified documents. The recognition authority can request additional evidence."
+        },
+        {
+          "question": "What were the 2026/27 foreign-applicant dates?",
+          "answer": "The first application deadline was 18 March 2026. Required C2 Slovene evidence was due by 31 July 2026; valid non-English-programme applications were ranked on 24 August, decisions were issued by 1 September, and accepted first- and second-period candidates could enrol by 30 September 2026."
+        },
+        {
+          "question": "Is there an interview for every foreign applicant?",
+          "answer": "The University states that a direct interview applies to foreign citizens from countries classified by Slovenia as higher migration risk. The interview assesses suitability against programme enrolment requirements under the University guidance."
+        },
+        {
+          "question": "What clinical and practical subjects are part of the curriculum?",
+          "answer": "The programme record documents a progression into internal medicine with propedeutics, surgery, radiology, clinical biochemistry, special pathology and clinical PBL. It also states that practical education occurs in doctors' working environments and that practical examinations and practice assessment can be used."
+        },
+        {
+          "question": "Is accommodation included in the medicine tuition?",
+          "answer": "No. The Faculty's medicine sources and the tuition schedule reviewed here do not describe included accommodation or a Faculty housing price. Treat accommodation as a separate arrangement and budget."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "University of Maribor General Medicine programme record",
+          "url": "https://moja.um.si/studijski-programi/Strani/studijskiprogram.aspx?deli=N&jezik=A&program=0000183",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Current 2026/27 programme identity, 6 years, 360 ECTS, M.D., approval history, curriculum and C2 requirement."
+        },
+        {
+          "label": "University of Maribor 2026/27 full-time tuition schedule",
+          "url": "https://moja.um.si/en/future-students/Documents/Price_List_2026/UM_Price_List_2026-27_Tuition_fees_full-time_studies.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Faculty of Medicine General Medicine annual tuition: EUR 9,160."
+        },
+        {
+          "label": "University of Maribor 2026/27 foreign-citizen admission requirements",
+          "url": "https://moja.um.si/en/future-students/SiteAssets/Strani/enrolment/Admission_req_non_EU_citizens_2026_27_Final_KM.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-07-25",
+          "notes": "eVŠ process, recognition, foreign-applicant timing, interview rules, documents and Faculty of Medicine C2 Slovenian requirement."
+        },
+        {
+          "label": "University of Maribor General Medicine accreditation record",
+          "url": "https://moja.um.si/studijski-programi/Strani/akreditacija.aspx?deli=N&fakulteta=MF&jezik=A&program=0000183",
+          "kind": "official-university",
+          "checkedAt": "2026-07-25",
+          "notes": "University programme accreditation record."
+        }
+      ],
+      "admissionsContent": {
+        "ctas": [
+          {
+            "trigger": "language",
+            "label": "Check my Slovenian C2 readiness",
+            "capture": ["C2 evidence type", "secondary-school language record", "exam plan", "target intake"]
+          },
+          {
+            "trigger": "eligibility",
+            "label": "Assess my Maribor medicine eligibility",
+            "capture": ["secondary qualification", "science subjects", "country of education", "recognition status"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my Maribor medicine budget",
+            "capture": ["EUR tuition budget", "housing budget", "funding need", "target intake"]
+          },
+          {
+            "trigger": "application",
+            "label": "Prepare my eVŠ application",
+            "capture": ["document readiness", "translations", "recognition documents", "application timeline"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-maribor-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (Splošna medicina)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026/2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 9160,
+            "officialTotalTuitionAmount": null,
+            "verifiedAt": "2026-07-25",
+            "notes": "University of Maribor lists EUR 9,160 annual tuition for Faculty of Medicine General Medicine in its 2026/27 full-time fee schedule. No complete six-year, housing or living-cost total is published in this package."
+          },
+          "officialProgramUrl": "https://moja.um.si/studijski-programi/Strani/studijskiprogram.aspx?deli=N&jezik=A&program=0000183",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": ["Applicants with a qualifying Matura-equivalent secondary credential and Slovenian CEFR C2 evidence"],
+            "restrictions": ["This is a Slovenian-language route; Faculty of Medicine General Medicine requires Slovenian CEFR C2 before first-year enrolment.", "Foreign secondary education requires University of Maribor recognition.", "A direct interview applies to foreign citizens from countries classified by Slovenia as higher migration risk."],
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://moja.um.si/en/future-students/SiteAssets/Strani/enrolment/Admission_req_non_EU_citizens_2026_27_Final_KM.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Foreign applicants use the eVŠ portal. The University combines the application with recognition of foreign secondary education where needed; Faculty of Medicine General Medicine also requires Slovenian CEFR C2 before first-year enrolment.",
+            "eligibility": {
+              "intro": "The programme record requires a qualifying Matura route and Slovenian language proficiency at CEFR C2.",
+              "items": ["Matura examination or the programme's stated eligible legacy four-year secondary-school route", "Slovenian language proficiency at CEFR C2", "Foreign-secondary-education recognition where education was completed abroad", "Direct interview if the applicant falls within Slovenia's higher-migration-risk category"]
+            },
+            "applicationSteps": ["Create and submit the application in eVŠ within the published application period.", "Upload final secondary-school and annual certificates, education history and required language evidence.", "Allow the University to start recognition of foreign education if a recognition decision is not already held.", "Provide translations, verified copies or additional evidence requested by the recognition authority.", "Complete a direct interview where the foreign-citizen rule applies.", "Access the acceptance decision in eVŠ and enrol at the Faculty student office by the stated deadline."],
+            "documentsRequired": {
+              "academic": ["Final secondary-school certificate", "Third- and fourth-year secondary-school certificates", "Short chronological description of relevant education", "Slovenian C2 evidence or accepted equivalent", "Recognition decision for foreign education where already available"],
+              "application": ["eVŠ application", "Translations or verified documents when required", "Additional documents requested by the recognition authority", "Acceptance decision for faculty enrolment"]
+            },
+            "deadlinesNote": "For 2026/27, the first foreign-citizen application deadline was 18 March 2026; C2 evidence was due by 31 July 2026, selection for other valid applicants occurred 24 August, decisions were issued by 1 September and enrolment ran until 30 September. Future-cycle dates require the next University call."
+          },
+          "medium": "Slovenian; C2 Slovenian language proficiency is required before first-year enrolment.",
+          "instructionLanguages": ["slovenian"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed for 2026/27: EUR 9,160 annual tuition for General Medicine. This is not represented as a six-year total and does not include housing or living costs.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2",
+              "language": "Slovenian",
+              "details": "Core pre-clinical work includes anatomy with histology, biophysics, biochemistry, chemistry, cell biology, physiology, microbiology, pharmacology, pathology and PBL modules."
+            },
+            {
+              "phase": "Years 3-6",
+              "language": "Slovenian",
+              "details": "Clinical progression includes internal medicine with propedeutics, surgery, radiology, clinical biochemistry, special pathology and clinical PBL, with practical education in doctors' working environments."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-maribor",
+      "publicField": "recognition",
+      "claimText": "The Council for Higher Education of the Republic of Slovenia gave a positive opinion on introducing the University of Maribor General Medicine programme on 5 May 2008.",
+      "status": "verified",
+      "sourceLabel": "University of Maribor General Medicine programme record",
+      "sourceUrl": "https://moja.um.si/studijski-programi/Strani/studijskiprogram.aspx?deli=N&jezik=A&program=0000183",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maribor",
+      "programmeSlug": "university-of-maribor-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine is a six-year, 360-ECTS uniform master's programme leading to Doctor of Medicine.",
+      "status": "verified",
+      "sourceLabel": "University of Maribor General Medicine programme record",
+      "sourceUrl": "https://moja.um.si/studijski-programi/Strani/studijskiprogram.aspx?deli=N&jezik=A&program=0000183",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maribor",
+      "programmeSlug": "university-of-maribor-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Faculty of Medicine General Medicine requires Slovenian CEFR C2 before first-year enrolment, alongside the stated qualifying secondary-education route.",
+      "status": "verified",
+      "sourceLabel": "University of Maribor 2026/27 foreign-citizen admission requirements",
+      "sourceUrl": "https://moja.um.si/en/future-students/SiteAssets/Strani/enrolment/Admission_req_non_EU_citizens_2026_27_Final_KM.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maribor",
+      "programmeSlug": "university-of-maribor-general-medicine",
+      "publicField": "admissions",
+      "claimText": "The 2026/27 foreign-citizen route uses eVŠ, combines recognition of foreign secondary education with the application where needed and can require a direct interview for designated foreign citizens.",
+      "status": "verified",
+      "sourceLabel": "University of Maribor 2026/27 foreign-citizen admission requirements",
+      "sourceUrl": "https://moja.um.si/en/future-students/SiteAssets/Strani/enrolment/Admission_req_non_EU_citizens_2026_27_Final_KM.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maribor",
+      "programmeSlug": "university-of-maribor-general-medicine",
+      "publicField": "intake",
+      "claimText": "For 2026/27, accepted first- and second-application-period candidates could enrol in first-year long-cycle programmes until 30 September 2026.",
+      "status": "verified",
+      "sourceLabel": "University of Maribor 2026/27 foreign-citizen admission requirements",
+      "sourceUrl": "https://moja.um.si/en/future-students/SiteAssets/Strani/enrolment/Admission_req_non_EU_citizens_2026_27_Final_KM.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maribor",
+      "programmeSlug": "university-of-maribor-general-medicine",
+      "publicField": "fee",
+      "claimText": "University of Maribor lists EUR 9,160 annual tuition for Faculty of Medicine General Medicine in the 2026/27 full-time fee schedule.",
+      "status": "verified",
+      "sourceLabel": "University of Maribor 2026/27 full-time tuition schedule",
+      "sourceUrl": "https://moja.um.si/en/future-students/Documents/Price_List_2026/UM_Price_List_2026-27_Tuition_fees_full-time_studies.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-11-30"
+    }
+  ]
+}

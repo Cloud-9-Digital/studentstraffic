@@ -1,0 +1,375 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Guyana School of Medicine maps its English-medium Bachelor of Medicine, Bachelor of Surgery (MBBS) programme to this category: a direct-entry, single-cycle five-year programme, Guyana's only regionally accredited medical school.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "guyana",
+      "slug": "university-of-guyana",
+      "name": "University of Guyana",
+      "city": "Georgetown",
+      "type": "Public",
+      "establishedYear": 1985,
+      "officialWebsite": "https://uog.edu.gy/",
+      "mediaAttribution": {},
+      "summary": "The University of Guyana School of Medicine, based at Turkeyen Campus in Greater Georgetown, runs a direct-entry, five-year, English-medium Bachelor of Medicine, Bachelor of Surgery (MBBS) programme, Guyana's only regionally accredited medical school. It is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility, and holds CAAM-HP 'Accreditation with Conditions' through 2028, a routine, standard status shared by most established Caribbean medical schools.",
+      "campusLifestyle": "Students train at Turkeyen Campus and complete clinical rotations at the Georgetown Public Hospital Corporation (GPHC), Guyana's leading national referral hospital, with a foreign-student housing priority policy at one of the university's residence halls just five minutes from campus.",
+      "cityProfile": "Georgetown is Guyana's capital, an English-speaking city on South America's Atlantic coast, home to the University of Guyana's Turkeyen Campus and the Georgetown Public Hospital Corporation, the country's main teaching hospital and national referral centre.",
+      "practicalExposure": "The five-year MBBS curriculum runs preclinical foundations in Years 1-2 (anatomy, physiology, biochemistry, pathology, microbiology, pharmacotherapeutics) threaded with an 'Introduction to Clinical Medicine' series, followed by rotational clinical training in Years 3-5 across Internal Medicine, General Surgery, Obstetrics and Gynaecology, Paediatrics, Psychiatry, Family Medicine and Emergency Medicine, primarily at the Georgetown Public Hospital Corporation, which hosts over ten affiliated postgraduate residency programmes.",
+      "hostelOverview": "Dennis Irvine Hall of Residence, about five minutes from Turkeyen Campus, explicitly prioritizes foreign students in its room allocation, offering single rooms at USD 240/month and double rooms at USD 200/month, plus a refundable USD 50 deposit. A second hall, New Building Society Hall, is available at a flat GYD 20,000/month rate but does not carry the same foreign-student priority.",
+      "dietarySupport": "Residence halls include communal kitchen and dining facilities; no separate university-run meal-plan cost beyond room rates is published.",
+      "safetyOverview": "No university-published campus-safety statistics were found during research.",
+      "studentSupport": "International applicants apply through the university's SRMS online portal, pay a USD 10 non-refundable processing fee per programme, and are guided through eligibility categories including A-Level and CAPE-equivalent secondary qualifications.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001261), with no prior-degree prerequisite and no entrance exam required for the standard entry route, and graduates (1985-current) eligible to apply for ECFMG Certification.",
+        "CAAM-HP 'Accreditation with Conditions' through 2028 -- confirmed as a routine, standard status shared by most established Caribbean medical schools (including UWI and Ross University), not an adverse or red-flag rating, following a nearly two-decade accreditation history with no denial or withdrawal since 2008.",
+        "Guyana's only regionally accredited medical school, training at the Georgetown Public Hospital Corporation, a Level V national referral hospital with over ten affiliated postgraduate residency programmes.",
+        "A confirmed, published foreign-student tuition rate (USD 8,853 for the first year) and a real, dated foreign-student accommodation rate with explicit housing priority for international students.",
+        "Direct entry via GCE A-Level or CAPE-equivalent secondary qualifications, without requiring a prior university degree."
+      ],
+      "thingsToConsider": [
+        "The university publishes tuition for the first year only, explicitly stating fees are 'subject to change' and reflect first-year cost alone; no official total 5-year programme cost is published, and estimating one from published per-credit formulas is unreliable given overlapping clinical-year course codes.",
+        "The Semester I 2026/27 application window (30 March-9 May 2026) has already closed as of this record's research date; it is not confirmed whether MBBS runs a Semester II intake, so the next confirmed application opportunity should be treated as Semester I 2027/28 pending direct confirmation with the university.",
+        "How Indian 12th-grade or CBSE/state-board qualifications are formally equated to the required GCE A-Level standard is not transparently published; this determination is made case-by-case by the university and should be confirmed directly with Admissions.",
+        "No scholarship for international students was found; the university's only named undergraduate scholarship (SAGE) is explicitly restricted to Guyanese nationals.",
+        "Whether non-national University of Guyana graduates need to sit the Caribbean Association of Medical Councils (CAMC) exams for Guyana internship registration, as 'offshore' graduates typically must, is not explicitly clarified in the Medical Council of Guyana's published requirements -- confirm directly before relying on a specific licensing pathway."
+      ],
+      "bestFitFor": [
+        "Students seeking a WHO-listed, ECFMG-eligible, direct-entry medical degree at Guyana's only regionally accredited public medical school, with confirmed foreign-student pricing and housing priority.",
+        "Applicants entering via GCE A-Level or CAPE-equivalent secondary qualifications, comfortable with a competitive, quota-based selection process rather than a guaranteed-admission model.",
+        "Students able to confirm current-cycle application windows and the full multi-year cost directly with the university, given some figures are published only for the first year or are pending clarification."
+      ],
+      "industryPartners": [
+        "Georgetown Public Hospital Corporation (GPHC)"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) -- listed, School ID F0001261, direct-entry (no prior-degree prerequisite, no entrance exam)",
+        "ECFMG Certification -- graduates eligible to apply, graduation years 1985-present",
+        "Medical Council of Canada (MCC) -- degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "CAAM-HP (Caribbean Accreditation Authority) -- Accreditation with Conditions, 4-year term 2024-2028"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools -- University of Guyana listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0001261" },
+        { "label": "CAAM-HP -- University of Guyana School of Medicine accreditation history (PDF)", "url": "https://caam-hp.org/wp-content/uploads/2025/08/University-of-Guyana-2025.pdf" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBBS programme direct-entry after high school?",
+          "answer": "Yes. The WHO World Directory of Medical Schools lists no prior-degree prerequisite and no entrance exam requirement, and the university's standard entry routes are based on GCE A-Level or CAPE-equivalent secondary-school passes."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the Bachelor of Medicine, Bachelor of Surgery (MBBS) degree after five years of study, structured as two preclinical years followed by three years of rotational clinical training."
+        },
+        {
+          "question": "Is CAAM-HP 'Accreditation with Conditions' a red flag?",
+          "answer": "No. Cross-checking CAAM-HP's own accreditation directory shows this is the standard, steady-state status held by most established, reputable Caribbean medical schools, including the University of the West Indies and Ross University School of Medicine. The University of Guyana has held this or a comparable status continuously since 2008 with no denial or withdrawal."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "USD 8,853 for the first year, confirmed as the current foreign-student rate, plus a mandatory USD 250 annual facilities fee. The university publishes first-year fees only and states they are subject to change; no official total 5-year cost is published."
+        },
+        {
+          "question": "How are foreign secondary-school qualifications evaluated?",
+          "answer": "The university's published admission criteria are keyed primarily to GCE A-Level or CAPE-equivalent passes; how Indian 12th-grade qualifications specifically are equated to this standard is determined case-by-case and is not transparently published, so applicants should confirm directly with Admissions."
+        },
+        {
+          "question": "When can I apply and when does the academic year start?",
+          "answer": "The confirmed Semester I 2026/27 application window (30 March-9 May 2026) has already closed. Classes for that semester begin 31 August 2026. It is unconfirmed whether MBBS also admits in Semester II; the next confirmed opportunity should be treated as Semester I 2027/28 pending confirmation with the university."
+        },
+        {
+          "question": "Is university accommodation available?",
+          "answer": "Yes. Dennis Irvine Hall of Residence, about five minutes from campus, explicitly prioritizes foreign students, offering single rooms at USD 240/month and double rooms at USD 200/month, plus a refundable USD 50 deposit."
+        },
+        {
+          "question": "Are scholarships available for international students?",
+          "answer": "No dedicated scholarship for international students was found; the university's only named undergraduate scholarship (SAGE) is explicitly restricted to Guyanese nationals."
+        },
+        {
+          "question": "Can this degree be used to practice medicine outside Guyana?",
+          "answer": "Graduates are eligible to apply for ECFMG Certification, and the degree is noted as acceptable to Canadian medical regulators. Whether non-national graduates need to sit CAMC exams for Guyana internship registration is not explicitly clarified by the Medical Council of Guyana. For India specifically, graduates would need to separately satisfy India's National Medical Commission FMGE/NExT screening requirements; this was not independently verified against a Guyana-specific NMC ruling."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools -- University of Guyana listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001261",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for WHO/FAIMER listing, direct-entry status (no prior-degree prerequisite, no entrance exam), founding year and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "CAAM-HP -- University of Guyana School of Medicine accreditation history (PDF)",
+          "url": "https://caam-hp.org/wp-content/uploads/2025/08/University-of-Guyana-2025.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the current 2024-2028 Accreditation with Conditions status and the full accreditation history back to 2008, establishing this as a routine tier rather than an adverse rating."
+        },
+        {
+          "label": "University of Guyana -- MBBS admission criteria",
+          "url": "https://cms.uog.edu.gy/school-medicine/bachelor-medicine-bachelor-surgery-mbbs-0/admission-criteria",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the nine alternate admission criteria, curriculum structure and selection process."
+        },
+        {
+          "label": "University of Guyana -- tuition fees (foreign students)",
+          "url": "https://registry.uog.edu.gy/admissions-division/tuition-fees",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document confirming current first-year foreign-student tuition (USD 8,853) and the mandatory USD 250 annual facilities fee."
+        },
+        {
+          "label": "University of Guyana -- 2026-2027 Academic Deadlines (PDF)",
+          "url": "https://www.turkeyenonline.uog.edu.gy/srms/docs/Academic-Deadlines-2026-2027.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the confirmed 2026/27 application windows and semester start dates."
+        },
+        {
+          "label": "University of Guyana -- Dennis Irvine Hall of Residence",
+          "url": "https://registry.uog.edu.gy/students-welfare-division/dormitories/dennis-irvine-hall-residence",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for the foreign-student housing priority policy and confirmed dated USD accommodation rates."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "A-Level or CAPE equivalent status", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "equivalency status", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-guyana-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2025-2026",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 8853,
+            "officialTotalTuitionAmount": null,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published foreign-student tuition of USD 8,853 for the first year, confirmed on the university's tuition-fees page, plus a mandatory USD 250 annual facilities fee. The university explicitly states published fees 'only reflect tuition for the first year of each programme' and are 'subject to change' -- no official total 5-year cost is published, and estimating one from per-credit formulas is unreliable given overlapping clinical-year course codes in the official curriculum. Total is intentionally left unset rather than guessed; confirm year-by-year costs directly with the university."
+          },
+          "officialProgramUrl": "https://cms.uog.edu.gy/school-medicine/bachelor-medicine-bachelor-surgery-mbbs-0/admission-criteria",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants meeting GCE A-Level or CAPE-equivalent secondary-school passes in Physics, Chemistry, Biology or Mathematics"
+            ],
+            "restrictions": [
+              "Meeting the published eligibility criteria does not guarantee a place; admission is competitive and quota-based across nine alternate admission categories",
+              "Case-by-case equivalency determination applies for qualifications not explicitly listed, including Indian 12th-grade/CBSE or state-board results"
+            ],
+            "notes": "No entrance exam is required for applicants qualifying via A-Level or CAPE-equivalent routes; the general University Entrance Examination applies only to Mature Student applicants without standard qualifications.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://cms.uog.edu.gy/school-medicine/bachelor-medicine-bachelor-surgery-mbbs-0/admission-criteria"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online through the university's SRMS portal, submit notarised academic and identity documents, pay a USD 10 non-refundable processing fee per programme, and are ranked within eligibility categories for a limited number of places.",
+            "eligibility": {
+              "intro": "Admission requires one of nine alternate qualification routes, most commonly GCE A-Level or CAPE-equivalent passes in required science subjects.",
+              "items": [
+                "3+ GCE A-Level (or equivalent) passes in Physics, Chemistry, Biology or Mathematics, minimum C in at least 2 subjects",
+                "3+ CAPE (or equivalent) passes in the same subjects, minimum Grade III in at least 2 subjects",
+                "Case-by-case equivalency for other qualifications, including Indian secondary-school results, as determined by the university"
+              ]
+            },
+            "applicationSteps": [
+              "Create an applicant login on the university's SRMS online portal",
+              "Complete and submit the online application form",
+              "Download, sign and upload the Certificate of Declaration and supporting notarised documents",
+              "Pay the USD 10 non-refundable processing fee per programme",
+              "Track application status via the portal and attend an interview if requested"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Notarised copies of secondary-school qualification certificates",
+                "Notarised birth certificate or passport"
+              ],
+              "application": [
+                "Passport-size photograph",
+                "Proof of application-fee payment"
+              ]
+            },
+            "deadlinesNote": "Semester I 2026/27 application window (30 March-9 May 2026) has closed; classes for that semester begin 31 August 2026. Semester II 2026/27 applications run 1 December 2026-9 January 2027, though it is unconfirmed whether MBBS admits in Semester II -- confirm directly with the university.",
+            "visaConsiderations": [
+              "Confirm current Guyanese student-visa requirements directly with the university's Admissions Division."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["August"],
+          "intakeCodes": ["august"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed current foreign-student first-year tuition of USD 8,853, plus a mandatory USD 250 annual facilities fee, both from the official tuition-fees page. Fees are published for the first year only and are stated to be subject to change; no total programme cost is published.",
+          "teachingPhases": [
+            {
+              "phase": "5-year MBBS programme",
+              "language": "English",
+              "details": "Years 1-2: preclinical foundations (anatomy, physiology, biochemistry, pathology, microbiology, pharmacotherapeutics) with an integrated Introduction to Clinical Medicine series. Years 3-5: rotational clinical training across Internal Medicine, General Surgery, Obstetrics and Gynaecology, Paediatrics, Psychiatry, Family Medicine and Emergency Medicine, primarily at the Georgetown Public Hospital Corporation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-guyana",
+      "publicField": "identity",
+      "claimText": "University of Guyana School of Medicine began medical instruction in 1985 and is currently operational.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- University of Guyana listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001261",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-guyana",
+      "programmeSlug": "university-of-guyana-mbbs",
+      "publicField": "recognition",
+      "claimText": "WHO World Directory of Medical Schools lists no prior-degree prerequisite and no entrance exam for the standard MBBS entry route, confirming direct-entry status; graduates (1985-current) eligible to apply for ECFMG Certification.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools -- University of Guyana listing",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001261",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-guyana",
+      "publicField": "recognition",
+      "claimText": "CAAM-HP 'Accreditation with Conditions' (2024-2028) is a routine, standard tier shared by most established Caribbean medical schools, confirmed via CAAM-HP's own full accreditation-history document showing continuous accreditation since 2008 with no denial or withdrawal.",
+      "status": "verified",
+      "sourceLabel": "CAAM-HP -- University of Guyana School of Medicine accreditation history (PDF)",
+      "sourceUrl": "https://caam-hp.org/wp-content/uploads/2025/08/University-of-Guyana-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-guyana",
+      "programmeSlug": "university-of-guyana-mbbs",
+      "publicField": "eligibility",
+      "claimText": "Admission requires one of nine alternate qualification routes, most commonly 3+ GCE A-Level or CAPE-equivalent passes in required science subjects; meeting criteria does not guarantee a place given competitive, quota-based selection.",
+      "status": "verified",
+      "sourceLabel": "University of Guyana -- MBBS admission criteria",
+      "sourceUrl": "https://cms.uog.edu.gy/school-medicine/bachelor-medicine-bachelor-surgery-mbbs-0/admission-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-guyana",
+      "programmeSlug": "university-of-guyana-mbbs",
+      "publicField": "admissions",
+      "claimText": "International applicants apply via the SRMS online portal, submit notarised documents, and pay a USD 10 non-refundable processing fee per programme; no entrance exam applies to the standard A-Level/CAPE entry route.",
+      "status": "verified",
+      "sourceLabel": "University of Guyana -- MBBS admission criteria",
+      "sourceUrl": "https://cms.uog.edu.gy/school-medicine/bachelor-medicine-bachelor-surgery-mbbs-0/admission-criteria",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-guyana",
+      "programmeSlug": "university-of-guyana-mbbs",
+      "publicField": "intake",
+      "claimText": "Semester I 2026/27 application window (30 March-9 May 2026) has closed; classes begin 31 August 2026. Semester II 2026/27 applications run 1 December 2026-9 January 2027, though MBBS-specific Semester II admission is unconfirmed.",
+      "status": "verified",
+      "sourceLabel": "University of Guyana -- 2026-2027 Academic Deadlines (PDF)",
+      "sourceUrl": "https://www.turkeyenonline.uog.edu.gy/srms/docs/Academic-Deadlines-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-guyana",
+      "programmeSlug": "university-of-guyana-mbbs",
+      "publicField": "fee",
+      "claimText": "Foreign-student first-year tuition confirmed at USD 8,853, plus a mandatory USD 250 annual facilities fee; the university publishes first-year fees only, with no official multi-year total.",
+      "status": "verified",
+      "sourceLabel": "University of Guyana -- tuition fees (foreign students)",
+      "sourceUrl": "https://registry.uog.edu.gy/admissions-division/tuition-fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-guyana",
+      "publicField": "student living",
+      "claimText": "Dennis Irvine Hall of Residence explicitly prioritizes foreign students, offering single rooms at USD 240/month and double rooms at USD 200/month, plus a refundable USD 50 deposit.",
+      "status": "verified",
+      "sourceLabel": "University of Guyana -- Dennis Irvine Hall of Residence",
+      "sourceUrl": "https://registry.uog.edu.gy/students-welfare-division/dormitories/dennis-irvine-hall-residence",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-25"
+    }
+  ]
+}

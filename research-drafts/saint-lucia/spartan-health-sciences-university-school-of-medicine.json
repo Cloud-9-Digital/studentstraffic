@@ -1,0 +1,37 @@
+{
+  "scope": "Saint Lucia medical discovery — Spartan Health Sciences University School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Spartan's current programme information describes five basic-science trimesters followed by supervised clinical clerkships, including 66 weeks of required core clerkships and 14 weeks of electives.",
+      "sourceUrl": "https://spartanmed.org/admission-package-information/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Spartan's current fee page lists US$6,250 per basic-science trimester, US$12,500 per clinical-science trimester (including hospital fee), and separately listed application, deposit, NBME, insurance and other charges.",
+      "sourceUrl": "https://spartanmed.org/tution-fees/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Spartan's FAQ describes January, May and September medical/pre-medical intakes and a merit scholarship claim for applicants with a GPA of 3.5 or above; detailed terms were not retrieved.",
+      "sourceUrl": "https://spartanmed.org/faq/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "CAAM-HP's assessed-programme register lists Spartan Health Sciences University School of Medicine, Saint Lucia, as not accredited, last updated January 2024.",
+      "sourceUrl": "https://caam-hp.org/programs/",
+      "sourceType": "accreditor",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The provider's FAQ makes government accreditation claims, while CAAM-HP's current programme register lists the school as not accredited. Do not make unqualified accreditation, recognition or destination-licensure claims.",
+    "No current direct Saint Lucia licensing decision, current language-admission policy, or independently verified clinical-site agreements and capacity were retrieved.",
+    "Scholarship terms, loan availability, housing and clinical-placement eligibility require current policy-level validation."
+  ],
+  "nextAction": "Keep held until direct Saint Lucia licensing evidence and current independent accreditation/clinical-training evidence are obtained."
+}

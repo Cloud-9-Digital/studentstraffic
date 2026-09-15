@@ -1,0 +1,19 @@
+{
+  "countrySlug": "costa-rica",
+  "universitySlug": "universidad-de-costa-rica",
+  "schoolName": "Universidad de Costa Rica",
+  "cityName": "San Pedro de Montes de Oca",
+  "priority": "medium",
+  "officialWebsite": "https://www.ucr.ac.cr/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - UCR's School of Medicine publishes the Bachelor in Medical Sciences and Licentiate in Medicine and Surgery plan, and UCR's academic-evaluation unit lists the programme as reaccredited by SINAES. The 2026 financial office page publishes undergraduate credit charges including foreign-student rates. Hold pending a current Medicine-specific admissions route for the intended audience, a full programme credit/cost calculation, Spanish-language and immigration requirements, confirmed clinical placement information and market-specific professional-registration analysis.",
+  "sourceBundle": { "sources": [
+    { "label": "UCR School of Medicine study plan", "url": "https://emedic.ucr.ac.cr/plan-de-estudios/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Identifies the Bachillerato en Ciencias Medicas and Licenciatura en Medicina y Cirugia at Rodrigo Facio." },
+    { "label": "UCR accredited-programme record", "url": "https://cea.ucr.ac.cr/index.php/es/carreras-acreditadas", "kind": "institutional-quality", "checkedAt": "2026-07-25", "notes": "Lists Medicine and Surgery under the School of Medicine as reaccredited by SINAES." },
+    { "label": "UCR 2026 fees", "url": "https://oaf.ucr.ac.cr/aranceles", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes 2026 undergraduate per-credit and capped rates for Costa Rican and foreign students, plus admissions/registration charges; it is not a Medicine-specific total." },
+    { "label": "UCR Medicine plan PDF", "url": "https://emedic.ucr.ac.cr/wp-content/uploads/2022/03/0018-EM-Plan-de-estudios-Medicina.pdf", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Provides the programme-plan document; currency, cost and course-load assumptions must be refreshed before publication." }
+  ] },
+  "structuredFacts": { "name": "Universidad de Costa Rica", "type": "Public university", "programs": [ { "officialTitle": "Bachillerato en Ciencias Medicas / Licenciatura en Medicina y Cirugia", "duration": "Current plan available; total duration requires confirmation from current admissions source", "feeStatus": "2026 undergraduate credit charges published, including foreign-student rates; Medicine-specific total not published", "publishable": false } ], "missingForPublication": [ "current Medicine-specific intake/admissions process", "full programme duration and credit-based cost calculation", "language and immigration requirements", "clinical training/placement details", "accommodation/support evidence", "market-specific registration and licensing assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until the pathway and total costs can be presented without inference." }
+}

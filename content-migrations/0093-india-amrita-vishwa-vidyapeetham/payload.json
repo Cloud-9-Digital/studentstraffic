@@ -1,0 +1,1388 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "B Tech in Computer Science and Engineering (CSE)",
+        "BTech Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate computer-science engineering degrees. Amrita Vishwa Vidyapeetham maps its 'B Tech in Computer Science and Engineering (CSE)' to this category. The Amrita programme has run since the Department of Computer Science and Engineering opened on 7 October 1996 and is offered across the Amritapuri, Coimbatore, Chennai, Bengaluru, Amaravati, Nagercoil and Haridwar campuses.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees abroad by campus, duration, teaching language, intake, eligibility restrictions and published or on-request tuition."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "B Tech in Electronics and Communication Engineering",
+        "BTech ECE"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate electronics and communication engineering degrees. Amrita Vishwa Vidyapeetham maps its 'B. Tech. in Electronics and Communication Engineering' to this category: a four-year programme covering digital systems design, electromagnetic theory, digital signal processing, microprocessors, VLSI design, analog and digital communication, control engineering and microwave engineering.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees abroad by campus, duration, teaching language, intake, eligibility restrictions and published or on-request tuition."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronics Engineering",
+        "B. Tech. in Electrical and Electronics Engineering",
+        "BTech EEE"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate electrical and electronics engineering degrees. Amrita Vishwa Vidyapeetham maps its 'B. Tech. in Electrical and Electronics Engineering' to this category. The Amrita department was established in 1994 and runs Power Electronics, Electric Machines and Control Systems, Electrical Measurements and Embedded Systems laboratories alongside an electrical workshop.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees abroad by campus, duration, teaching language, intake, eligibility restrictions and published or on-request tuition."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA",
+        "MBA-MS Dual Degree"
+      ],
+      "displayOrder": 3,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for general full-time Master of Business Administration degrees. Amrita Vishwa Vidyapeetham maps its Bengaluru-campus 'MBA/MBA-MS in Business Analytics Dual Degree Programme with University at Buffalo, USA' to this category: a two-year, six-trimester, 126-credit programme in which the MBA is conferred by Amrita and an additional MS in Business Analytics and Systems is conferred by the University at Buffalo when its separate conditions are met.",
+      "metaTitle": "MBA Programmes Abroad for International Students",
+      "metaDescription": "Compare full-time MBA programmes abroad by campus, duration, specialisations, entrance-test requirements, eligibility restrictions and published or on-request tuition."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "amrita-vishwa-vidyapeetham",
+      "name": "Amrita Vishwa Vidyapeetham",
+      "city": "Coimbatore",
+      "type": "Private",
+      "establishedYear": 2003,
+      "officialWebsite": "https://www.amrita.edu/",
+      "mediaAttribution": {},
+      "summary": "Amrita Vishwa Vidyapeetham is a private deemed-to-be university headquartered at Ettimadai, Coimbatore, declared a deemed university in January 2003 and now operating ten campuses across six Indian states. This page covers its English-taught engineering, computing and management degrees. International admission is open only to foreign nationals, through the Amrita Center for International Programs.",
+      "campusLifestyle": "The Coimbatore headquarters campus began in 1994 as a School of Engineering in Ettimadai village, at the foothills of the Bouluvanpatty range of the Western Ghats. It now runs more than 120 undergraduate, postgraduate and doctoral programmes for a student population above 12,000 with close to 1,500 faculty, organised into schools of Engineering, Computing, Business, Physical Sciences, Arts and Commerce, Agricultural Sciences, Architecture, Artificial Intelligence, Law and Social Sciences. Fixtures include the Anokha national techfest, an AICTE IDEA Lab and the Corporate and Industry Relations centre; the 30th convocation in 2026 conferred degrees on 2,197 graduates.",
+      "cityProfile": "The headquarters campus is at Amritanagar, Ettimadai post, Coimbatore 641112, in Coimbatore district of Tamil Nadu, set in the Western Ghats foothills rather than inside the city itself. Coimbatore is Tamil Nadu's third-largest city and a long-established textile, motor-pump and engineering-manufacturing centre with tens of thousands of small, medium and large industrial units. Coimbatore International Airport, operated by the Airports Authority of India, is the nearest arrival point for international students. Tamil is the state language, while teaching at Amrita is in English, so classes do not require Tamil even though local transport and markets largely run in it. Because Amrita requires undergraduate and postgraduate international students to live in university-allocated accommodation, most of a student's week is spent on the residential campus. Amrita also runs campuses at Amritapuri, Amaravati, Bengaluru, Chennai, Faridabad, Kochi, Mysuru, Nagercoil and Haridwar, and the campus a programme is attached to determines the city a student actually lives in.",
+      "practicalExposure": "Practical training is programme-attached rather than centralised. Engineering departments at Coimbatore keep their own laboratory stock: the Electrical and Electronics department, established in 1994, maintains Power Electronics, Electric Machines and Control Systems, Electrical Measurements and Embedded Systems laboratories plus an electrical workshop, and the Electronics and Communication curriculum carries specialisation electives in embedded systems, wireless and satellite communication, biomedical signal processing, VLSI fabrication technology, speech processing and optical communication. The Corporate and Industry Relations directorate at Coimbatore handles industry engagement and placement activity. The Bengaluru MBA-MS builds in a six-credit summer internship after the third trimester, a Live-in-Labs rural field-immersion block after the first two trimesters, and a study trip to the University at Buffalo at the end of the first year during which students take a Strategy course on the US campus. Amrita also operates dual-degree, twinning and student-exchange arrangements with partner universities in the United States and Europe through the Amrita Center for International Programs; standalone Live-in-Labs, internship and observership placements sit outside the degree-admission route and are applied for separately.",
+      "hostelOverview": "Living in university-allocated accommodation is mandatory for undergraduate and postgraduate students; PhD students may live off campus and then arrange their own food. Coimbatore publishes 2026-27 rates: international hostels are air-conditioned rooms with attached washrooms at INR 1,00,000 for three-occupancy, INR 1,20,000 for two-occupancy and INR 1,50,000 for single occupancy, plus an INR 62,500 annual mess fee and a one-time INR 10,000 caution deposit. Non-AC rooms run INR 52,000 to INR 68,000 by block and occupancy, with the same mess fee. For international students the hostel charge is billed through the Provisional Offer Letter and bundles accommodation, mess and health insurance. Extra electrical appliances are not permitted in rooms.",
+      "dietarySupport": "The university mess serves vegetarian food only; there is no non-vegetarian option on the mess menu. Students with food allergies are required to declare them to their campus mess. Uniforms and books are paid for separately after arrival and are not part of the annual fee. Medical insurance is compulsory for every international student, is bundled into the hostel fee and covers inpatient services.",
+      "safetyOverview": "The campus is residential and gated, with a published dress code, an anti-ragging regime and mandatory on-campus residence for undergraduate and postgraduate students. Students must notify the international office two days before leaving campus, and a Form C filing is required for each place stayed away from campus for more than 24 hours. Only a Student or Research visa endorsed to the institution is accepted for study.",
+      "studentSupport": "The Amrita Center for International Programs handles e-FRRO filings (Form C within 24 hours of arrival, Form S within 14 days where the visa exceeds 180 days), bonafide letters, visa-extension paperwork and exit formalities, and files each international student's attendance and results on the e-FRRO portal every three months. It also assists with SIM-card and bank-account applications. Admission may be deferred by up to one year.",
+      "whyChoose": [
+        "Regulator-verified standing: UGC deemed-to-be-university status since 13 January 2003, NAAC A++ at CGPA 3.70 in Cycle 3, NBA Tier I (Washington Accord) engineering accreditation across three campuses, and AACSB accreditation for Amrita School of Business, Coimbatore.",
+        "Published, unusually specific international admission rules covering nationality, age, equivalency, deposit and named route exceptions, so an applicant can self-assess before applying.",
+        "Merit scholarships carry numeric thresholds: a 100 per cent tuition waiver at 80 per cent and above, and a 50 per cent waiver between 70 and 79 per cent, for UG, PG and PhD programmes.",
+        "A campus choice of ten locations across six states, so the same B.Tech title can be taken in Coimbatore, Amritapuri, Chennai, Bengaluru, Amaravati, Nagercoil or Haridwar.",
+        "Coimbatore hostel and mess rates for 2026-27 are published in full, including a separate international-hostel table, so accommodation cost is knowable before an offer arrives."
+      ],
+      "thingsToConsider": [
+        "International admission is restricted to foreign nationals, defined as holders of a passport of a country other than India; NRIs and Indian citizens holding a foreign-board qualification are explicitly not treated as foreign nationals and apply through a separate NRI route.",
+        "Full-time undergraduate applicants must be aged between 17 and 23, and no exemption from that band is published.",
+        "Tuition is not published for the international route. The fee is stated only in the Provisional Offer Letter, must be paid annually in a single instalment in US dollars, and partial payments are refused.",
+        "Medicine, Ayurveda, Nursing, Live-in-Labs, Internship and Observership are named exceptions to the standard international admission route and are not covered by this page.",
+        "Indian immigration rules prohibit employment or business activity on a student visa, and the university's own guidance directs non-Nepalese students to Indian immigration regulations before any work is considered.",
+        "Amrita states it has appointed no agent or third-party representative inside India, and that overseas representatives should be checked through official university channels before any payment."
+      ],
+      "bestFitFor": [
+        "Foreign-passport holders aged 17 to 23 who finished secondary school outside India and can obtain an AIU equivalency certificate for that certificate.",
+        "Applicants who want an English-taught Indian engineering or computing degree and are comfortable with a compulsory residential, vegetarian-mess campus.",
+        "Graduates seeking an Indian MBA with an additional US master's option, who can also satisfy the University at Buffalo's separate English-test and CGPA conditions.",
+        "Students with strong Grade 12 or bachelor's results who want to be assessed against a published 70 per cent and 80 per cent scholarship threshold.",
+        "Applicants who need one institution offering the same degree title on several campuses in different Indian states."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC Deemed to be University - declared 13 January 2003",
+        "NAAC — Accredited A++, CGPA 3.70, Cycle 3 (declared August 2021)",
+        "NBA Tier I (Washington Accord) — B.Tech programmes accredited across the Coimbatore, Bengaluru and Amritapuri campuses (current to 2027-2031)",
+        "AACSB International Accredited - Amrita School of Business, Coimbatore"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC list of institutions declared as Deemed to be Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf"
+        },
+        {
+          "label": "NAAC accreditation status - institutions with valid accreditation",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NBA accredited-programme register",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "AACSB accredited-school directory entry - Amrita School of Business (Coimbatore)",
+          "url": "https://www.aacsb.edu/accredited/a/amrita-school-of-business-coimbatore-amrita-vishwa-vidyapeetham"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Amrita Vishwa Vidyapeetham a public or a private university?",
+          "answer": "It is private. Amrita Vishwa Vidyapeetham appears on the University Grants Commission's consolidated list of institutions declared as Deemed to be Universities, with an entry for Ettimadai Post, Coimbatore and a declaration date of 13 January 2003. Deemed-to-be-university status is a degree-awarding recognition conferred by the Government of India; it is not the same as being a state or central university."
+        },
+        {
+          "question": "Who is actually eligible to apply as an international student?",
+          "answer": "Only foreign nationals, which Amrita defines as a candidate holding the passport or citizenship of a country other than India, or holding an OCI or PIO card together with a passport of another country. A Non-Resident Indian, or an Indian citizen whose qualifying examination was taken with an international board or a foreign university, is explicitly not treated as a foreign national and must use the separate NRI, OCI and PIO admission route instead."
+        },
+        {
+          "question": "Is there an age limit for undergraduate applicants?",
+          "answer": "Yes. Amrita's international admission policy states that full-time undergraduate applicants must be within the age group of 17 to 23 years. No exception to that band is published on the policy or FAQ pages, so an applicant outside it should confirm their position with the Amrita Center for International Programs before paying anything."
+        },
+        {
+          "question": "Which programmes are excluded from the standard international route?",
+          "answer": "Amrita's international admission policy names six exceptions: Medicine, Ayurveda, Nursing, Live-in-Labs, Internship and Observership. Those follow different admission arrangements, and Nursing qualifications additionally need equivalency from the Indian Nursing Council. This page therefore covers only non-exception engineering, computing and management degrees."
+        },
+        {
+          "question": "What is the AIU equivalency certificate and when is it needed?",
+          "answer": "The Association of Indian Universities issues equivalency certificates recognising a foreign qualification as equivalent to the corresponding Indian qualification. Amrita requires one for Grade 12 where Grade 12 was completed at a school, institution or board outside India, and for the undergraduate transcript where the bachelor's degree was awarded outside India. The student obtains it online themselves, and failure to submit it can also cost an awarded Amrita scholarship."
+        },
+        {
+          "question": "How much does it cost, and why is no tuition figure published?",
+          "answer": "Amrita does not publish an international tuition figure. Its policy states that the fee structure for a programme is strictly the one issued in the Provisional Offer Letter and that no other fee structure applies. One concrete charge is published: a security deposit of USD 500 for all foreign students except Nepalese nationals, and INR 10,000 for Nepalese nationals. Coimbatore hostel and mess rates for 2026-27 are published separately in Indian rupees."
+        },
+        {
+          "question": "How are fees paid?",
+          "answer": "All fees are transferred to bank details supplied by the international office. Payments are made in US dollars, with the exception of Nepalese students, who may pay in Indian rupees. The first year's fees must be remitted before the student reaches campus, subsequent annual fees are paid in a single instalment at times the university specifies, and partial payments are not accepted. A copy of the transfer must be sent to the international office."
+        },
+        {
+          "question": "How does the application and selection process work?",
+          "answer": "Applications must be routed through the AOAP portal for international admissions; requests sent by email, WhatsApp or any other means are still channelled back through that portal. Selection uses a 70:30 weighting, with 70 per cent from marks and 30 per cent from an interview conducted by a panel of three or four subject faculty who score subject knowledge, communication skills and general awareness out of ten each."
+        },
+        {
+          "question": "Is an entrance exam or English test required?",
+          "answer": "For B.Tech admission in 2026 Amrita's programme pages state that entry is based on the Amrita Entrance Examination - Engineering 2026 or a JEE Main 2026 percentile score; the NRI, PIO and foreign-national admission guidance adds that candidates who studied Plus Two outside India are exempt from that entrance examination, while those studying Plus Two in India must sit it. Amrita's international FAQ states GRE and TOEFL scores are mandatory for PhD programmes."
+        },
+        {
+          "question": "When is the intake and when do applications close?",
+          "answer": "The academic year opens in July on the Coimbatore calendar. On the Amrita online admissions portal for international applicants, the last date for admission to all UG and PG programmes for Academic Year 2026 was 15 August 2026, and the portal now records the 2026 UG and PG cycle as closed. Applicants should treat the next cycle as the 2027 academic year and confirm dates on the portal."
+        },
+        {
+          "question": "What scholarships exist for international students?",
+          "answer": "Amrita publishes two merit awards for international applicants: the Amrita Chancellor's Scholarship, a 100 per cent tuition waiver for 80 per cent and above, and the Amrita Meritorious Scholarship, a 50 per cent waiver for 70 to 79 per cent. Both apply to UG, PG and PhD programmes but not to Pharmacy, Nursing or Allied Health Sciences. They are tuition waivers only, renewable annually, and require a CGPA of at least 7.0 each semester and 75 per cent attendance."
+        },
+        {
+          "question": "What accommodation is available and what does it cost?",
+          "answer": "Staying in university-allocated accommodation is compulsory for undergraduate and postgraduate students; PhD students may live outside and then arrange their own food. Coimbatore's published 2026-27 international-hostel rates are INR 1,00,000 for a three-occupancy air-conditioned room with attached washroom, INR 1,20,000 for two-occupancy and INR 1,50,000 for single occupancy, plus INR 62,500 mess and a one-time INR 10,000 caution deposit."
+        },
+        {
+          "question": "Can an international student work in India while studying?",
+          "answer": "No. The Bureau of Immigration states that students on an Indian student visa must not undertake employment or business activity in India. Amrita's own guidance says work regulations vary by nationality, notes that students of Nepalese origin may work in India without a visa, and directs all other nationalities to Indian immigration regulations. No part-time work should be assumed as part of the funding plan."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Amrita Center for International Programs - International admission policies",
+          "url": "https://www.amrita.edu/international/admissions/policies/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Nationality restriction, 17-23 UG age band, AIU equivalency requirement, AOAP-only application channel, USD 500 / INR 10,000 security deposit, 70:30 interview weighting, POL-only fee rule, named admission exceptions, accommodation and mess rules."
+        },
+        {
+          "label": "Amrita Center for International Programs - International admissions FAQ",
+          "url": "https://www.amrita.edu/international/admissions/faq/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Definition of Foreign National and the explicit NRI exclusion, FRRO Form C and Form S process, insurance and immunisation requirements, dress code, deferral, and the nationality-dependent statement on working in India."
+        },
+        {
+          "label": "Amrita Center for International Programs - International scholarships",
+          "url": "https://www.amrita.edu/international/admissions/scholarships/",
+          "kind": "official-university",
+          "checkedAt": "2026-08-22",
+          "notes": "Chancellor's Scholarship 100 per cent waiver at 80 per cent and above, Meritorious Scholarship 50 per cent waiver at 70-79 per cent, exclusions for Pharmacy, Nursing and Allied Health Sciences, CGPA 7.0 and 75 per cent attendance renewal clauses."
+        },
+        {
+          "label": "Amrita Online Admissions Portal - international admissions 2026",
+          "url": "https://aoap.amrita.edu/international-26/index/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Official application portal for the international route; publishes 15 August 2026 as the last date for admission to all UG and PG programmes for Academic Year 2026 and records that cycle as closed."
+        },
+        {
+          "label": "Amrita Vishwa Vidyapeetham - B.Tech Computer Science and Engineering programme page",
+          "url": "https://www.amrita.edu/program/btech-computer-science-and-engineering/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Academic eligibility bar, 2026 entrance-exam basis (AEEE 2026 or JEE Main 2026 percentile), campus availability, curriculum under the 2023 regulations, and the Directorate of Admissions notice on agents and overseas representatives."
+        },
+        {
+          "label": "Amrita Vishwa Vidyapeetham - B.Tech Electronics and Communication Engineering programme page",
+          "url": "https://www.amrita.edu/program/btech-electronics-and-communication-engineering/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Four-year structure, core subject coverage, specialisation electives and campus availability."
+        },
+        {
+          "label": "Amrita Vishwa Vidyapeetham - B.Tech Electrical and Electronics Engineering programme page",
+          "url": "https://www.amrita.edu/program/btech-electrical-and-electronics-engineering/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Department founded 1994, named laboratories, Board of Studies curriculum revision, and the narrower Amritapuri, Coimbatore and Bengaluru campus list."
+        },
+        {
+          "label": "Amrita Vishwa Vidyapeetham - MBA/MBA-MS in Business Analytics Dual Degree with University at Buffalo",
+          "url": "https://www.amrita.edu/program/mba-ms-university-buffalo-usa/",
+          "kind": "official-program",
+          "checkedAt": "2026-08-22",
+          "notes": "Eligibility, accepted aptitude tests, English-proficiency thresholds for the University at Buffalo MS, 126-credit six-trimester structure, specialisations, experiential-learning blocks and the Indian-route INR fee table."
+        },
+        {
+          "label": "Amrita Vishwa Vidyapeetham - Annual fees for Hostel and Mess, Coimbatore Campus, Academic Year 2026-27",
+          "url": "https://webfiles.amrita.edu/2026/06/annual-fee-hostel-mess-2026-2027-coimbatore.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-08-22",
+          "notes": "Separate international-hostel AC table (INR 1,00,000 / 1,20,000 / 1,50,000 by occupancy), INR 62,500 mess fee, INR 10,000 caution deposit and the non-AC hostel range."
+        },
+        {
+          "label": "UGC - List of institutions declared as Deemed to be Universities (as on 30 November 2021)",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Regulator's own list; Tamil Nadu section names Amrita Vishwa Vidyapeetham, Ettimadai Post, Coimbatore with a 13.01.2003 declaration date."
+        },
+        {
+          "label": "AACSB accredited-school directory - Amrita School of Business (Coimbatore)",
+          "url": "https://www.aacsb.edu/accredited/a/amrita-school-of-business-coimbatore-amrita-vishwa-vidyapeetham",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Accreditor's own directory entry confirming AACSB accreditation for Amrita School of Business at the Ettimadai, Coimbatore campus."
+        },
+        {
+          "label": "National Institutional Ranking Framework 2025 - University and Overall category rankings",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "NIRF 2025 lists Amrita Vishwa Vidyapeetham (IR-O-U-0436, Coimbatore, Tamil Nadu) at rank 7 with a score of 67.24 in the University category and rank 16 with 65.06 in the Overall category. Rankings are not accreditations and are deliberately excluded from recognitionBadges; held for a future rankings section."
+        },
+        {
+          "label": "Press Information Bureau, Ministry of Human Resource Development - Steps taken to implement the Institutions of Eminence Scheme",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=193016",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "5 September 2019 release: Letters of Intent were issued to five private universities including Amrita Viswavidyapeetham, Tamil Nadu, for accepting and sending their preparedness to be declared Institutions of Eminence. The UGC's own list of notified Institutions of Eminence at https://ioe.ugc.ac.in/Home/ListofIOE was subsequently read in full by the regulator verification pass and contains twelve institutions, eight public and four private; Amrita is not among them. A Letter of Intent is a pre-notification step and confers no Institution of Eminence status, so no IoE claim appears anywhere in this payload's public copy."
+        },
+        {
+          "label": "Airports Authority of India - Coimbatore Airport",
+          "url": "https://www.aai.aero/en/airports/coimbatore",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "City context: Coimbatore as Tamil Nadu's third-largest city with more than 30,000 industrial units, and the international airport serving it."
+        },
+        {
+          "label": "NAAC - Accreditation status, institutions with valid accreditation as on 14-08-2025",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Regulator's own valid-accreditation workbook (Universities sheet) recording Amrita Vishwa Vidyapeetham, AISHE U-0436, at Grade A++, CGPA 3.70, Cycle 3, declared 17-08-2021, corroborated against Standing Committee result PDF 69SC_3rdCycle.pdf. The workbook publishes a declaration date and no expiry date."
+        },
+        {
+          "label": "National Board of Accreditation - accredited-programme register",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Engineering UG Tier I (Washington Accord) register carrying current accreditation periods for Amrita B.Tech programmes at the Coimbatore, Bengaluru and Amritapuri campuses. The register is cumulative history rather than a current-status list, so only the Accreditation Period column establishes currency; NBA publishes tier, status and period, not letter grades."
+        },
+        {
+          "label": "UGC - List of notified Institutions of Eminence",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE",
+          "kind": "government",
+          "checkedAt": "2026-08-22",
+          "notes": "Complete UGC list of notified Institutions of Eminence: twelve institutions, eight public and four private, each with a date of notification. Amrita Vishwa Vidyapeetham does not appear, confirming that its 2019 Letter of Intent never became a notification. Negative finding recorded so no IoE claim is ever added to this bundle."
+        },
+        {
+          "label": "Bar Council of India - Approved list of Centres of Legal Education",
+          "url": "https://www.barcouncilofindia.org/info/recognised-universities-colleges",
+          "kind": "recognition",
+          "checkedAt": "2026-08-22",
+          "notes": "Negative finding: the BCI approved-CLE list uploaded 2026-08-20 records Amrita International School of Law, Coimbatore with approval only upto 2018-19, i.e. lapsed. No Bar Council of India claim is made anywhere in this payload, and law programmes are outside this bundle's scope."
+        },
+        {
+          "label": "India pilot - central regulator verification (NAAC / BCI / UGC IoE / NBA)",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "other",
+          "checkedAt": "2026-08-22",
+          "notes": "Internal cross-check artefact at research/india-regulator-verification-2026-08-22.md, produced by a browser-equipped verification agent that resolved the NAAC, BCI, UGC IoE and NBA portals this bundle could not reach with curl. Its findings supersede the earlier NBA scoping in this payload and supplied the NAAC record; the IoE and BCI verdicts were negative and confirmed that both stay omitted."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Amrita international eligibility",
+            "capture": [
+              "passport country",
+              "age at intended intake",
+              "country and board of the qualifying examination",
+              "AIU equivalency status",
+              "intended programme and campus"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Request the Amrita fee position for my programme",
+            "capture": [
+              "intended programme and campus",
+              "intended intake year",
+              "accommodation preference",
+              "scholarship eligibility (Grade 12 or bachelor's percentage)"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my AOAP application review",
+            "capture": [
+              "document readiness",
+              "entrance or aptitude test status",
+              "interview preparation",
+              "intended intake year"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "amrita-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B. Tech. in Computer Science and Engineering (CSE)",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-08-22",
+            "notes": "Amrita publishes no international tuition figure for this programme. Its international admission policy states that the fee structure is strictly the one issued in the Provisional Offer Letter and that no other fee structure applies, that tuition includes exam fees, library fees and the caution deposit, and that payment is made in US dollars except for Nepalese students, who may pay in Indian rupees. The published INR annual tuition table on the programme page (INR 1,25,000 to INR 6,00,000 depending on campus and fee slab for 2026) belongs to the Indian entrance-examination route, not to the international route, and must not be read as an international price. One published international charge exists: a security deposit of USD 500, or INR 10,000 for Nepalese nationals."
+          },
+          "officialProgramUrl": "https://www.amrita.edu/program/btech-computer-science-and-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport or citizenship of a country other than India",
+              "Holders of an OCI or PIO card who also hold a passport of a country other than India",
+              "Full-time undergraduate applicants aged 17 to 23 years"
+            ],
+            "restrictions": [
+              "Non-Resident Indians and Indian citizens whose qualifying examination was taken with an international board or foreign university are not treated as foreign nationals and must use the separate NRI, OCI and PIO route",
+              "An Association of Indian Universities equivalency certificate is required for Grade 12 where Grade 12 was completed outside India",
+              "Applications must be routed through the AOAP portal for international admissions; email or WhatsApp requests are redirected to it",
+              "A security deposit of USD 500 is payable by all foreign students except Nepalese nationals, who pay INR 10,000"
+            ],
+            "notes": "Availability is restricted by nationality and by age. Amrita's international route is open to persons of foreign origin only; separate arrangements exist for NRI, OCI and PIO applicants.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.amrita.edu/international/admissions/policies/"
+          },
+          "admissionsContent": {
+            "overview": "Foreign nationals apply through the AOAP international portal, are shortlisted on marks and a faculty-panel interview weighted 70:30, receive a Provisional Offer Letter naming the course and fee, and confirm admission by returning the signed letter with transcripts, an AIU equivalency certificate where required, the fee receipt and the security deposit.",
+            "eligibility": {
+              "intro": "Eligibility combines Amrita's programme-level academic bar for B.Tech with the international route's nationality, age and equivalency conditions.",
+              "items": [
+                "A pass in 10+2 or its equivalent from a recognised board with at least 60 per cent aggregate in Physics, Chemistry and Mathematics and not less than 50 per cent in each of those three subjects individually",
+                "Foreign nationality, defined as holding the passport or citizenship of a country other than India",
+                "Age between 17 and 23 years for full-time undergraduate entry",
+                "An AIU equivalency certificate for Grade 12 where Grade 12 was completed at a school, institution or board outside India",
+                "A completion certificate or transcript for the most recent academic qualification",
+                "For 2026 entry, admission is based on the Amrita Entrance Examination - Engineering 2026 or a JEE Main 2026 percentile score; foreign nationals who studied Plus Two outside India are exempt from that examination"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply on the AOAP portal for international admissions at aoap.amrita.edu; applications sent by email or WhatsApp are routed back through the portal",
+              "Submit transcripts and the completion certificate for the most recent qualification for verification by the Amrita Center for International Programs",
+              "Attend the online admission interview with a panel of three to four subject faculty, scored on subject knowledge, communication skills and general awareness",
+              "Accept the Provisional Offer Letter, which names the course and the fee, by returning it signed",
+              "Submit passport or national ID copy, Grade 10 and Grade 12 transcripts, the AIU equivalency certificate where applicable, the fee payment receipt and the security deposit to finalise admission",
+              "Collect the admission confirmation and visa letter, apply for an Indian Student visa at an Indian mission, and remit the first year's fees before travelling"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 and Grade 12 transcripts",
+                "Completion certificate or transcript for the most recent qualification",
+                "AIU equivalency certificate for Grade 12 where Grade 12 was completed outside India"
+              ],
+              "application": [
+                "Valid passport copy or valid national ID copy",
+                "Fee payment receipt for the annual fees named in the Provisional Admission Letter",
+                "Security deposit of USD 500, or INR 10,000 for Nepalese nationals",
+                "Sponsorship letter where a person or organisation other than a biological parent funds the education",
+                "Completed Amrita scholarship form where a scholarship has been awarded"
+              ]
+            },
+            "deadlinesNote": "On the Amrita online admissions portal for international applicants, the last date for admission to all UG and PG programmes for Academic Year 2026 was 15 August 2026, and the portal now records the 2026 UG and PG cycle as closed. The academic year opens in July on the Coimbatore calendar.",
+            "visaConsiderations": [
+              "Only a Student or Research visa endorsed to Amrita Vishwa Vidyapeetham is accepted; a tourist visa is not",
+              "Form C must be filed on the e-FRRO portal within 24 hours of arrival on campus, and Form S within 14 days where the visa is valid for more than 180 days",
+              "An immunisation record is required from all students, and yellow fever and polio certification must be carried in hand luggage by students travelling from Africa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "No international tuition figure is published. Amrita states the fee is set in the Provisional Offer Letter only, is payable annually in a single instalment in US dollars (Indian rupees for Nepalese students), and that tuition includes exam and library fees and the caution deposit. Coimbatore's separately published 2026-27 international hostel rates are INR 1,00,000 to INR 1,50,000 by occupancy, plus INR 62,500 mess and a one-time INR 10,000 caution deposit; the hostel charge for international students bundles accommodation, mess and health insurance. Uniforms and books are paid for separately on arrival.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech in Computer Science and Engineering, eight semesters",
+              "language": "English",
+              "details": "Curriculum under the 2023 regulations opens with Technical Communication and Calculus and builds through core computing courses, professional and general electives, Indian Knowledge Systems open electives, industry-oriented electives and an optional Minor in Quantum Sciences covering topics such as Quantum Communication and Quantum Machine Learning. The department has run since 7 October 1996 and lists Image Processing, Multimedia Mining, Evolutionary Computing, Network Security and Wireless Networks as its main research areas. The programme holds National Board of Accreditation Tier I (Washington Accord) accreditation at Coimbatore to 30 June 2027 and at Amritapuri to 30 June 2028."
+            }
+          ]
+        },
+        {
+          "slug": "amrita-btech-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B. Tech. in Electronics and Communication Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-08-22",
+            "notes": "Amrita publishes no international tuition figure for this programme. Its international admission policy states that the fee structure is strictly the one issued in the Provisional Offer Letter and that no other fee structure applies, and that payment is made in US dollars except for Nepalese students, who may pay in Indian rupees. The INR annual tuition slab table on the programme page applies to the Indian entrance-examination route and is not an international price. The one published international charge is a security deposit of USD 500, or INR 10,000 for Nepalese nationals."
+          },
+          "officialProgramUrl": "https://www.amrita.edu/program/btech-electronics-and-communication-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport or citizenship of a country other than India",
+              "Holders of an OCI or PIO card who also hold a passport of a country other than India",
+              "Full-time undergraduate applicants aged 17 to 23 years"
+            ],
+            "restrictions": [
+              "Non-Resident Indians and Indian citizens whose qualifying examination was taken with an international board or foreign university are not treated as foreign nationals and must use the separate NRI, OCI and PIO route",
+              "An Association of Indian Universities equivalency certificate is required for Grade 12 where Grade 12 was completed outside India",
+              "Applications must be routed through the AOAP portal for international admissions",
+              "A security deposit of USD 500 is payable by all foreign students except Nepalese nationals, who pay INR 10,000"
+            ],
+            "notes": "Availability is restricted by nationality and by age; Amrita's international route is open to persons of foreign origin only.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.amrita.edu/international/admissions/policies/"
+          },
+          "admissionsContent": {
+            "overview": "Entry follows the same international route as Amrita's other B.Tech titles: an AOAP portal application, document verification, a faculty-panel interview weighted at 30 per cent against 70 per cent for marks, a Provisional Offer Letter carrying the fee, and confirmation on submission of transcripts, equivalency certificate, fee receipt and security deposit.",
+            "eligibility": {
+              "intro": "The academic bar is the standard Amrita B.Tech requirement; the nationality, age and equivalency conditions come from the international admission policy.",
+              "items": [
+                "A pass in 10+2 or its equivalent from a recognised board with at least 60 per cent aggregate in Physics, Chemistry and Mathematics and not less than 50 per cent in each of those three subjects individually",
+                "Foreign nationality, defined as holding the passport or citizenship of a country other than India",
+                "Age between 17 and 23 years for full-time undergraduate entry",
+                "An AIU equivalency certificate for Grade 12 where Grade 12 was completed outside India",
+                "For 2026 entry, admission is based on the Amrita Entrance Examination - Engineering or a JEE Main percentile score; foreign nationals who studied Plus Two outside India are exempt from it"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply on the AOAP portal for international admissions at aoap.amrita.edu",
+              "Send transcripts and the completion certificate for verification by the Amrita Center for International Programs",
+              "Attend the online departmental interview scored on subject knowledge, communication skills and general awareness",
+              "Return the signed Provisional Offer Letter to receive the Provisional Admission Letter",
+              "Submit passport or national ID copy, Grade 10 and Grade 12 transcripts, the AIU equivalency certificate where applicable, the fee receipt and the security deposit",
+              "Apply for an Indian Student visa with the invitation and visa letter, then remit the first year's fees before arriving on campus"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 and Grade 12 transcripts",
+                "Completion certificate or transcript for the most recent qualification",
+                "AIU equivalency certificate for Grade 12 where Grade 12 was completed outside India"
+              ],
+              "application": [
+                "Valid passport copy or valid national ID copy",
+                "Fee payment receipt for the annual fees named in the Provisional Admission Letter",
+                "Security deposit of USD 500, or INR 10,000 for Nepalese nationals",
+                "Sponsorship letter where the education is funded by someone other than a biological parent"
+              ]
+            },
+            "deadlinesNote": "The Amrita online admissions portal for international applicants gave 15 August 2026 as the last date for admission to all UG and PG programmes for Academic Year 2026 and now records that cycle as closed. The academic year opens in July on the Coimbatore calendar.",
+            "visaConsiderations": [
+              "Only a Student or Research visa endorsed to Amrita Vishwa Vidyapeetham is accepted for study",
+              "Form C is filed on the e-FRRO portal within 24 hours of arrival, and Form S within 14 days where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "No international tuition figure is published; the fee is issued only in the Provisional Offer Letter, payable annually in one instalment in US dollars (Indian rupees for Nepalese students). Coimbatore's published 2026-27 international hostel rates are INR 1,00,000 for three-occupancy, INR 1,20,000 for two-occupancy and INR 1,50,000 for single occupancy, plus INR 62,500 mess and a one-time INR 10,000 caution deposit. Uniforms and books are paid for separately on arrival.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech in Electronics and Communication Engineering",
+              "language": "English",
+              "details": "The programme is offered by Amrita School of Engineering across the Amritapuri, Coimbatore, Bengaluru, Chennai, Nagercoil, Haridwar and Amaravati campuses. The core covers digital systems design, electromagnetic theory, digital signal processing, microprocessors and microcontrollers, electronic circuits, VLSI design, analog and digital communication, control engineering and microwave engineering, with specialisation electives in embedded systems, wireless and satellite communication, biomedical signal processing, VLSI fabrication technology, speech processing and optical communication. The programme holds National Board of Accreditation Tier I (Washington Accord) accreditation at Coimbatore and Amritapuri to 30 June 2027 and at Bengaluru to 30 June 2028."
+            }
+          ]
+        },
+        {
+          "slug": "amrita-btech-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B. Tech. in Electrical and Electronics Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-08-22",
+            "notes": "Amrita publishes no international tuition figure for this programme. The international admission policy states the fee is strictly the one issued in the Provisional Offer Letter, that tuition includes exam fees, library fees and the caution deposit, and that payment is in US dollars except for Nepalese students paying in Indian rupees. The INR fee slab table shown on the programme page for the Amritapuri, Bengaluru and Coimbatore campuses belongs to the Indian entrance-examination route. The one published international charge is a security deposit of USD 500, or INR 10,000 for Nepalese nationals."
+          },
+          "officialProgramUrl": "https://www.amrita.edu/program/btech-electrical-and-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport or citizenship of a country other than India",
+              "Holders of an OCI or PIO card who also hold a passport of a country other than India",
+              "Full-time undergraduate applicants aged 17 to 23 years"
+            ],
+            "restrictions": [
+              "Non-Resident Indians and Indian citizens whose qualifying examination was taken with an international board or foreign university are not treated as foreign nationals and must use the separate NRI, OCI and PIO route",
+              "An Association of Indian Universities equivalency certificate is required for Grade 12 where Grade 12 was completed outside India",
+              "Applications must be routed through the AOAP portal for international admissions",
+              "A security deposit of USD 500 is payable by all foreign students except Nepalese nationals, who pay INR 10,000"
+            ],
+            "notes": "Availability is restricted by nationality and by age; the programme is offered at the Amritapuri, Bengaluru and Coimbatore campuses only.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.amrita.edu/international/admissions/policies/"
+          },
+          "admissionsContent": {
+            "overview": "Foreign nationals apply on the AOAP international portal, are assessed on a 70:30 marks-and-interview split by a departmental panel, receive a Provisional Offer Letter stating the fee, and complete admission by submitting identity and academic documents, the AIU equivalency certificate where required, the fee receipt and the security deposit.",
+            "eligibility": {
+              "intro": "The academic requirement is Amrita's standard B.Tech bar; nationality, age and equivalency conditions come from the international admission policy.",
+              "items": [
+                "A pass in 10+2 or its equivalent from a recognised board with at least 60 per cent aggregate in Physics, Chemistry and Mathematics and not less than 50 per cent in each subject individually",
+                "Foreign nationality, defined as holding the passport or citizenship of a country other than India",
+                "Age between 17 and 23 years for full-time undergraduate entry",
+                "An AIU equivalency certificate for Grade 12 where Grade 12 was completed outside India",
+                "For 2026 entry, admission is based on the Amrita Entrance Examination - Engineering or a JEE Main percentile score; foreign nationals who studied Plus Two outside India are exempt from it"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply on the AOAP portal for international admissions at aoap.amrita.edu",
+              "Send transcripts and the completion certificate for verification by the Amrita Center for International Programs",
+              "Attend the online departmental interview scored on subject knowledge, communication skills and general awareness",
+              "Return the signed Provisional Offer Letter to receive the Provisional Admission Letter",
+              "Submit passport or national ID copy, Grade 10 and Grade 12 transcripts, the AIU equivalency certificate where applicable, the fee receipt and the security deposit",
+              "Apply for an Indian Student visa, then remit the first year's fees before arriving on campus"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 and Grade 12 transcripts",
+                "Completion certificate or transcript for the most recent qualification",
+                "AIU equivalency certificate for Grade 12 where Grade 12 was completed outside India"
+              ],
+              "application": [
+                "Valid passport copy or valid national ID copy",
+                "Fee payment receipt for the annual fees named in the Provisional Admission Letter",
+                "Security deposit of USD 500, or INR 10,000 for Nepalese nationals",
+                "Sponsorship letter where the education is funded by someone other than a biological parent"
+              ]
+            },
+            "deadlinesNote": "The Amrita online admissions portal for international applicants gave 15 August 2026 as the last date for admission to all UG and PG programmes for Academic Year 2026 and now records that cycle as closed. The academic year opens in July on the Coimbatore calendar.",
+            "visaConsiderations": [
+              "Only a Student or Research visa endorsed to Amrita Vishwa Vidyapeetham is accepted for study",
+              "Form C is filed on the e-FRRO portal within 24 hours of arrival, and Form S within 14 days where the visa exceeds 180 days"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "No international tuition figure is published; the fee is issued only in the Provisional Offer Letter and paid annually in a single instalment in US dollars (Indian rupees for Nepalese students). Coimbatore's published 2026-27 international hostel rates are INR 1,00,000 to INR 1,50,000 by occupancy, plus INR 62,500 mess and a one-time INR 10,000 caution deposit. Uniforms and books are paid for separately on arrival.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech in Electrical and Electronics Engineering",
+              "language": "English",
+              "details": "Offered at the Amritapuri, Coimbatore and Bengaluru campuses. The department, established in 1994, teaches from Power Electronics, Electric Machines and Control Systems, Electrical Measurements and Embedded Systems laboratories together with an electrical workshop, and supplements classroom instruction with distinguished lectures from invited experts. The curriculum is revised on the recommendation of the Board of Studies. The programme holds National Board of Accreditation Tier I (Washington Accord) accreditation on all three campuses that offer it: Coimbatore from 1 January 2026 to 31 December 2031, and Bengaluru and Amritapuri to 30 June 2027."
+            }
+          ]
+        },
+        {
+          "slug": "amrita-mba-ms-business-analytics-buffalo",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "MBA/MBA-MS in Business Analytics Dual Degree Programme with University at Buffalo, USA",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-08-22",
+            "notes": "Amrita publishes no international tuition figure for this programme. Under the international admission policy the fee is issued only in the Provisional Offer Letter and paid in US dollars, except by Nepalese students who may pay in Indian rupees. The programme page publishes an INR fee structure for the Indian-route intake (INR 6,00,000 tuition per year plus INR 1,24,000 hostel and mess per year, an INR 10,000 refundable caution deposit, and a note that the fee is to be revised for the 2026-28 batch); it also notes that the cost of the University at Buffalo study visit, stated as about INR 6 lakh and subject to exchange rates, is borne by the student and is not included. Those figures belong to the Indian route and must not be presented as the international price."
+          },
+          "officialProgramUrl": "https://www.amrita.edu/program/mba-ms-university-buffalo-usa/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a passport or citizenship of a country other than India",
+              "Holders of an OCI or PIO card who also hold a passport of a country other than India",
+              "Graduates of a bachelor's degree recognised by the Association of Indian Universities"
+            ],
+            "restrictions": [
+              "Non-Resident Indians and Indian citizens whose qualifying examination was taken with an international board or foreign university are not treated as foreign nationals and must use the separate NRI, OCI and PIO route",
+              "An Association of Indian Universities equivalency certificate is required where the bachelor's degree was awarded outside India",
+              "Applications must be routed through the AOAP portal for international admissions",
+              "The additional University at Buffalo MS award depends on that university's own separate English-test and CGPA conditions; failing them affects only the MS, not the Amrita MBA",
+              "A security deposit of USD 500 is payable by all foreign students except Nepalese nationals, who pay INR 10,000"
+            ],
+            "notes": "The programme runs at the Bengaluru campus. The Amrita MBA and the University at Buffalo MS are separate awards with separate conditions.",
+            "verifiedAt": "2026-08-22",
+            "sourceUrl": "https://www.amrita.edu/international/admissions/policies/"
+          },
+          "admissionsContent": {
+            "overview": "Foreign nationals apply through the AOAP international portal and are assessed on marks and an interview weighted 70:30. Amrita School of Business additionally requires a bachelor's degree recognised by the Association of Indian Universities with a minimum aggregate and a valid management-aptitude test score; the University at Buffalo MS component carries its own English-test and CGPA conditions.",
+            "eligibility": {
+              "intro": "Two sets of conditions apply: Amrita's postgraduate academic bar plus the international route's nationality and equivalency rules, and separately the University at Buffalo's conditions for the additional MS award.",
+              "items": [
+                "A bachelor's degree in any discipline recognised by the Association of Indian Universities on a 10+2+3 pattern, with a minimum of 60 per cent marks",
+                "A valid score from ACAT, CAT, MAT, CMAT, GMAT, GRE or XAT",
+                "Foreign nationality, defined as holding the passport or citizenship of a country other than India",
+                "An AIU equivalency certificate for the undergraduate transcript where the degree was awarded outside India",
+                "For the University at Buffalo MS award only: 50 per cent in all semesters, an English score (TOEFL 79, IELTS 6.5, PTE 55 or Duolingo 120) by the published deadline, and a CGPA of at least 3 out of 4"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply on the AOAP portal for international admissions at aoap.amrita.edu",
+              "Submit Grade 12 or diploma transcripts, undergraduate transcripts and the degree completion certificate for verification",
+              "Provide a valid ACAT, CAT, MAT, CMAT, GMAT, GRE or XAT score",
+              "Attend the interview conducted by the Amrita School of Business panel",
+              "Return the signed Provisional Offer Letter, then submit the AIU equivalency certificate where applicable, the fee receipt and the security deposit",
+              "Submit the English-proficiency score separately if the additional University at Buffalo MS award is wanted"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 or diploma transcripts",
+                "Undergraduate transcripts and certificate of degree completion",
+                "AIU equivalency certificate for the undergraduate transcript where the degree was awarded outside India",
+                "Valid ACAT, CAT, MAT, CMAT, GMAT, GRE or XAT score report"
+              ],
+              "application": [
+                "Valid passport copy or valid national ID copy",
+                "Fee payment receipt for the annual fees named in the Provisional Admission Letter",
+                "Security deposit of USD 500, or INR 10,000 for Nepalese nationals",
+                "Sponsorship letter where the education is funded by someone other than a biological parent",
+                "English-proficiency score report where the additional University at Buffalo MS award is sought"
+              ]
+            },
+            "deadlinesNote": "The Amrita online admissions portal for international applicants gave 15 August 2026 as the last date for admission to all UG and PG programmes for Academic Year 2026, and now records that cycle as closed.",
+            "visaConsiderations": [
+              "Only a Student or Research visa endorsed to Amrita Vishwa Vidyapeetham is accepted for study in India",
+              "The first-year study trip to the University at Buffalo requires a separate United States visa, and its cost is borne by the student"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-08-22",
+          "feeNotes": "No international tuition figure is published; under the international admission policy the fee is issued only in the Provisional Offer Letter and paid in US dollars, or Indian rupees for Nepalese students. The programme page's published INR structure (INR 6,00,000 tuition and INR 1,24,000 hostel and mess per year, INR 10,000 refundable caution deposit, marked for revision for the 2026-28 batch) applies to the Indian route. The University at Buffalo study visit, stated as roughly INR 6 lakh subject to exchange rates and covering visa charges, flights, hostel and food, is charged only if the student makes the visit and sits outside the fee structure.",
+          "teachingPhases": [
+            {
+              "phase": "Six trimesters over two years, 126 credits",
+              "language": "English",
+              "details": "The curriculum comprises 30 core courses and 10 to 11 electives from a pool of 51, with 109 credits of core and elective work, 6 credits of Self-Awareness and Personal Growth, 2 of colloquium, 3 of corporate skills and 6 for the summer internship. MBA specialisations, with a dual-specialisation option, are Business Analytics, Human Resources, Operations, Marketing and Finance; the University at Buffalo MS specialisation is Business Analytics and Systems. Live-in-Labs rural fieldwork follows the first two trimesters, the summer internship follows the third, and a study trip to the University at Buffalo including a Strategy course closes the first year."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "recognitionBadges",
+      "claimText": "Amrita Vishwa Vidyapeetham, Ettimadai Post, Coimbatore, Tamil Nadu appears on the University Grants Commission's consolidated list of institutions declared as Deemed to be Universities, with a declaration date of 13 January 2003.",
+      "status": "verified",
+      "sourceLabel": "UGC - List of institutions declared as Deemed to be Universities (as on 30 November 2021)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Tamil Nadu section of the PDF; the entry and the 13.01.2003 date sit in adjacent columns of the same table. This is the regulator's own list, so it is the primary evidence for degree-awarding recognition, independent of any institutional marketing claim."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "recognitionBadges",
+      "claimText": "Amrita School of Business (Coimbatore), Amrita Vishwa Vidyapeetham holds AACSB business accreditation and is listed in the AACSB accredited-school directory.",
+      "status": "verified",
+      "sourceLabel": "AACSB accredited-school directory - Amrita School of Business (Coimbatore)",
+      "sourceUrl": "https://www.aacsb.edu/accredited/a/amrita-school-of-business-coimbatore-amrita-vishwa-vidyapeetham",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Verified on the accreditor's own directory, not on the university's site. The directory entry gives the main campus as Amrita School of Business, Ettimadai Post, Coimbatore 641112 and 446 students in the business school. The school-supplied profile text on that page states accreditation was received in 2019; the year is school-authored, so the badge names the accreditation without asserting the year."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC records Amrita Vishwa Vidyapeetham (AISHE U-0436, Ettimadai PO, Tamil Nadu) as accredited with Grade A++ at CGPA 3.70 in Cycle 3, declared 17 August 2021.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Institutions with valid accreditation as on 14-08-2025, Universities sheet",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2026-11-22",
+      "internalNotes": "Regulator source obtained by the browser-equipped verification agent (research/india-regulator-verification-2026-08-22.md, section 1) from NAAC's own valid-accreditation workbook, corroborated against Standing Committee result PDF 69SC_3rdCycle.pdf (69th SC, 17 August 2021, Universities 3rd Cycle). Verification URL https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status. This CONTRADICTS Amrita's own pages, which assert Cycle-3 A++ in an August 2021 news item, \"A++ awarded in 2023\" in site navigation, and elsewhere a CGPA of 3.67; the regulator figure of 3.70 declared 17-08-2021 wins and the institutional figures must not be republished. Two deliberate constraints on the badge: (1) the workbook publishes a declaration date and NOT an expiry, so no \"valid to\" date appears in public copy; (2) the five-year point from 17-08-2021 falls in August 2026 and NAAC has published no Standing Committee results after 12 December 2025, so the badge carries the declaration year only and no currency claim - no \"currently A++\" wording is used in any field. reviewBy is shortened to 2026-11-22; if no renewal has appeared by then, hold the badge."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "recognitionBadges",
+      "claimText": "Amrita Vishwa Vidyapeetham holds current National Board of Accreditation Tier I (Washington Accord) accreditation for B.Tech programmes on three campuses: Coimbatore (Electrical & Electronics 1 January 2026 to 31 December 2031; Chemical, Civil and Aerospace 1 January 2026 to 31 December 2028; Computer Science & Engineering, Electronics & Communication and Mechanical to 30 June 2027), Bengaluru (Electrical & Electronics to 30 June 2027; Electronics & Communication and Mechanical to 30 June 2028) and Amritapuri (Computer Science & Engineering to 30 June 2028; Electrical & Electronics, Electronics & Communication and Mechanical to 30 June 2027).",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - accredited-programme register, Engineering UG Tier I (Washington Accord)",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Read directly from the regulator's own register by the browser-equipped verification agent; findings recorded in research/india-regulator-verification-2026-08-22.md section 4, verification URL https://www.nbaind.org/accreditationprogram. This SUPERSEDES the earlier scoping of this badge, which was wrong in three ways: it named only four Coimbatore programmes, it attached a letter grade, and it rested on an institutional news item rather than the register. NBA publishes no letter grades in this register - only tier, status and accreditation period. The register is cumulative history, so only rows whose Accreditation Period extends beyond the check date are treated as current. Re-check before 30 June 2027, when the earliest current windows lapse."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "summary",
+      "claimText": "Amrita Vishwa Vidyapeetham operates ten campuses across six Indian states: Amritapuri, Amaravati, Bengaluru, Chennai, Coimbatore, Faridabad, Kochi, Mysuru, Nagercoil and Haridwar, with its headquarters campus at Ettimadai, Coimbatore.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - Coimbatore campus page",
+      "sourceUrl": "https://www.amrita.edu/campus/coimbatore/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Same page carries the 1994 School of Engineering origin at Ettimadai, the January 2003 institution date, the 12,000-plus student and nearly 1,500 faculty figures and the 120-plus programme count. Campus list corroborated by the site-wide campus navigation."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "campusLifestyle",
+      "claimText": "The Coimbatore campus began in 1994 as a School of Engineering at Ettimadai in the Bouluvanpatty foothills of the Western Ghats, and now offers more than 120 UG, PG and doctoral programmes to over 12,000 students with nearly 1,500 faculty.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - Coimbatore campus page",
+      "sourceUrl": "https://www.amrita.edu/campus/coimbatore/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The 2,197-graduate figure for the 30th convocation comes from the campus news feed on the same page (3 August 2026 item). School list taken from the Schools panel on that page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "cityProfile",
+      "claimText": "Coimbatore is the third-largest city in Tamil Nadu with more than 30,000 small, medium and large industries and textile mills, and is served by Coimbatore International Airport, operated by the Airports Authority of India.",
+      "status": "verified",
+      "sourceLabel": "Airports Authority of India - Coimbatore Airport",
+      "sourceUrl": "https://www.aai.aero/en/airports/coimbatore",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Postal address of the campus (Amritanagar, Ettimadai post, Coimbatore 641112) taken from the Amrita School of Business contact block and the AACSB directory entry. No distance figure between campus and city centre is published by an authoritative source, so none is stated."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "hostelOverview",
+      "claimText": "For 2026-27 the Coimbatore campus publishes international hostel rates of INR 1,00,000 for three-occupancy, INR 1,20,000 for two-occupancy and INR 1,50,000 for single-occupancy air-conditioned rooms with attached washrooms, plus an INR 62,500 mess fee and a one-time INR 10,000 caution deposit; non-AC hostel rooms range from INR 52,000 to INR 68,000.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - Annual fees for Hostel and Mess, Coimbatore Campus, Academic Year 2026-27",
+      "sourceUrl": "https://webfiles.amrita.edu/2026/06/annual-fee-hostel-mess-2026-2027-coimbatore.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Official PDF linked from the B.Tech CSE programme page fee section. It contains a separate 'Annual fees for Hostel & Mess - International Hostels' table for AC rooms. Mandatory-residence, PhD exemption, appliance and damage rules come from the international admission policy page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "dietarySupport",
+      "claimText": "Vegetarian food is provided at the university mess facility, students must communicate food allergies to their campus mess, uniforms and books are paid for separately on arrival, and all international students must hold medical insurance whose cost is bundled with the hostel fee and which covers inpatient services.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Food and Accommodation, and Medical Insurance sections. Corroborated on the international FAQ page, which repeats the vegetarian-mess and insurance requirements and adds that insurance must cover the full stay."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "studentSupport",
+      "claimText": "The Amrita Center for International Programs completes e-FRRO documentation with the student, including Form C within 24 hours of arrival and Form S within 14 days where the visa exceeds 180 days, submits each international student's attendance and results on the e-FRRO portal every three months, assists with SIM cards and bank accounts, and the university permits deferral of admission for up to one year.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admissions FAQ",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/faq/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "FRRO process, cell phone, bank account, Wi-Fi and deferral questions on that page. The FRRO timelines match the Bureau of Immigration registration rules already recorded in the India country evidence block."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "safetyOverview",
+      "claimText": "Amrita requires undergraduate and postgraduate students to live within campus premises, applies a published dress code, requires two days' notice to the international office before leaving campus and a Form C filing for each place stayed away from campus for more than 24 hours, and accepts only a Student or Research visa endorsed to the institution for study.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admissions FAQ and policies",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/faq/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Dress code, mandatory campus residence and FRRO exit rules on the FAQ page; the accommodation mandate is repeated in the Food and Accommodation section of the policies page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "whyChoose",
+      "claimText": "Amrita publishes two merit scholarships for international applicants: the Amrita Chancellor's Scholarship, a 100 per cent tuition waiver for 80 per cent and above, and the Amrita Meritorious Scholarship, a 50 per cent waiver for 70 to 79 per cent, applicable to UG, PG and PhD programmes but not to Pharmacy, Nursing or Allied Health Sciences, and requiring a CGPA of at least 7.0 each semester and 75 per cent attendance for renewal.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International scholarships",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/scholarships/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Thresholds corroborated on the International Admissions landing page, which states the same 100 per cent and 50 per cent waivers against Grade 12, UG and PG marks. The clauses to maintain the scholarship are repeated identically on the policies page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "thingsToConsider",
+      "claimText": "International admission is open to foreign nationals (persons of foreign origin) only; a foreign national is defined as a candidate holding a passport or citizenship of a country other than India, or holding an OCI or PIO card plus a passport of another country. NRIs and Indian citizens whose qualifying examination is from an international board or foreign university are explicitly not considered foreign nationals. Full-time undergraduate applicants must be within the age group of 17 to 23 years, and Medicine, Ayurveda, Nursing, Live-in-Labs, Internship and Observership are named admission exceptions.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The 'Who can Apply' and 'Admission exceptions' blocks on the policies page carry the nationality, age and exception list verbatim; the 'Who is a Foreign National?' block on the international FAQ page carries the definition and the explicit NRI exclusion. Both were read directly on 2026-08-22. These restrictions are the single most decision-critical facts on this page and must never be softened."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "thingsToConsider",
+      "claimText": "Amrita states it has not appointed any agent or third-party representative within India for admissions to any programme, and that for international admissions it may work with authorised overseas representatives in select countries whose credentials should be verified through official Amrita communication channels before applications or payments.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Computer Science and Engineering programme page, Directorate of Admissions notice",
+      "sourceUrl": "https://www.amrita.edu/program/btech-computer-science-and-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The same 'Attention Please!' notice, issued in public interest by the Directorate of Admissions and Academic Outreach, appears on the ECE and EEE programme pages."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "thingsToConsider",
+      "claimText": "Amrita's international guidance states that regulations for work vary by nationality, that students of Nepalese origin are permitted to work in India without a visa, and that students of all other nationalities must refer to Indian immigration work regulations.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admissions FAQ",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/faq/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Read alongside the Bureau of Immigration rule already in the India country evidence block, which prohibits employment or business activity on an Indian student visa. No work-rights or earn-while-you-study copy is permitted on this page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "publicField": "practicalExposure",
+      "claimText": "The Electrical and Electronics department at Coimbatore, established in 1994, runs Power Electronics, Electric Machines and Control Systems, Electrical Measurements and Embedded Systems laboratories and an electrical workshop; the Bengaluru MBA-MS carries a six-credit summer internship, a Live-in-Labs rural fieldwork block and a first-year study trip to the University at Buffalo including a Strategy course.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Electrical and Electronics Engineering and MBA-MS programme pages",
+      "sourceUrl": "https://www.amrita.edu/program/mba-ms-university-buffalo-usa/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Laboratory list from https://www.amrita.edu/program/btech-electrical-and-electronics-engineering/; internship, Live-in-Labs and study-trip structure from the MBA-MS Experiential Learning section. Placement statistics published on the international FAQ page (average and highest CTC, percentage placed) are undated and reference a 2019 batch, so they are deliberately excluded from public copy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech admission requires a pass in 10+2 or equivalent from a recognised board with at least 60 per cent aggregate in Physics, Chemistry and Mathematics and not less than 50 per cent in each subject individually; international applicants must additionally be foreign nationals aged 17 to 23 with an AIU equivalency certificate where Grade 12 was completed outside India.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Computer Science and Engineering, Admission section",
+      "sourceUrl": "https://www.amrita.edu/program/btech-computer-science-and-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Academic bar from the programme page; nationality, age and AIU conditions from https://www.amrita.edu/international/admissions/policies/. The Amaravati campus publishes a different bar (minimum 60 per cent in Class 10 and 12), which is not applied to the campuses covered here."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "International applications must be made through the AOAP portal for international admissions, selection uses a 70:30 weighting of marks to interview scored by a panel of three to four subject faculty on subject knowledge, communication skills and general awareness, and admission is finalised on submission of passport or national ID, Grade 10 and 12 transcripts, the AIU equivalency certificate where applicable, the fee receipt and a security deposit of USD 500 (INR 10,000 for Nepalese nationals).",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "How to Apply, Admission Process, Under-Graduate admission and Interview & Selection blocks. The entrance-exam basis for 2026 (AEEE 2026 or JEE Main 2026 percentile, with Centralised Seat Allotment in May 2026) comes from the programme page; the exemption for foreign nationals who studied Plus Two outside India comes from https://www.amrita.edu/admissions/international-admissions/engineering/, which is an undated NRI/OCI/PIO page - the exemption is therefore stated without a year attached to it while the exam basis carries the 2026 year."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "The last date for admission to all UG and PG programmes for Academic Year 2026 was 15 August 2026 on Amrita's online admissions portal for international applicants, which now records the 2026 UG and PG cycle as closed; the Coimbatore academic year opens in July.",
+      "status": "verified",
+      "sourceLabel": "Amrita Online Admissions Portal - international admissions 2026",
+      "sourceUrl": "https://aoap.amrita.edu/international-26/index/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "July academic-year start corroborated by the Coimbatore academic calendar PDF at https://webfiles.amrita.edu/2023/06/academic-calendar-cbr-2023.pdf, whose AY 2023-24 grid opens in July. The calendar is two cycles old, so the intake month should be re-checked when the 2027 portal opens."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "The fee structure for the programme is strictly based on the Provisional Offer Letter issued to the student and no other fee structure is applicable; fee payments are made in US dollars except by Nepalese students, who may pay in Indian rupees, and annual fees must be remitted as one single payment with partial payments refused.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies, Fees Structure & Payment",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "This is the evidence for the on_request fee state: the institution explicitly declines to publish an international price. The INR slab table on the programme page is the Indian entrance-examination route and must not be republished as an international tuition figure. Corroborated by the international FAQ page, which repeats the POL-only rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech in Electronics and Communication Engineering requires a pass in 10+2 or equivalent from a recognised board with at least 60 per cent aggregate in Physics, Chemistry and Mathematics and not less than 50 per cent in each subject individually; international applicants must additionally be foreign nationals aged 17 to 23 with an AIU equivalency certificate where Grade 12 was completed outside India.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Electronics and Communication Engineering, Admission section",
+      "sourceUrl": "https://www.amrita.edu/program/btech-electronics-and-communication-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Nationality, age and AIU conditions from the international admission policies page. The programme is offered at Amritapuri, Coimbatore, Bengaluru, Chennai, Nagercoil, Haridwar and Amaravati per the campus selector on the programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "Admission to all B.Tech programmes for 2026 is based on the Amrita Entrance Examination - Engineering or a JEE Main percentile score, while international applicants apply through the AOAP portal and are selected on a 70:30 marks-to-interview weighting with the documents and security deposit set out in the international admission policy.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Electronics and Communication Engineering, Admission section",
+      "sourceUrl": "https://www.amrita.edu/program/btech-electronics-and-communication-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The 2026 exam basis is stated with its year on the programme page. International route mechanics from https://www.amrita.edu/international/admissions/policies/."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "The last date for admission to all UG and PG programmes for Academic Year 2026 was 15 August 2026 on Amrita's online admissions portal for international applicants, which now records the 2026 UG and PG cycle as closed; the Coimbatore academic year opens in July.",
+      "status": "verified",
+      "sourceLabel": "Amrita Online Admissions Portal - international admissions 2026",
+      "sourceUrl": "https://aoap.amrita.edu/international-26/index/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Coimbatore academic calendar PDF, whose academic year grid opens in July."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "The fee structure is strictly based on the Provisional Offer Letter and no other fee structure applies; payment is in US dollars except for Nepalese students, and annual fees must be remitted in a single payment.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies, Fees Structure & Payment",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Evidence for the on_request fee state. The INR slab table on the programme page belongs to the Indian entrance-examination route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "B.Tech in Electrical and Electronics Engineering requires a pass in 10+2 or equivalent from a recognised board with at least 60 per cent aggregate in Physics, Chemistry and Mathematics and not less than 50 per cent in each subject individually; international applicants must additionally be foreign nationals aged 17 to 23 with an AIU equivalency certificate where Grade 12 was completed outside India.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Electrical and Electronics Engineering, Admission section",
+      "sourceUrl": "https://www.amrita.edu/program/btech-electrical-and-electronics-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The campus selector on the programme page lists only Amritapuri, Coimbatore and Bengaluru for this title, which is narrower than the CSE and ECE campus lists."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "Admission to all B.Tech programmes for 2026 is based on the Amrita Entrance Examination - Engineering or a JEE Main percentile score, while international applicants apply through the AOAP portal and are selected on a 70:30 marks-to-interview weighting with the documents and security deposit set out in the international admission policy.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - B.Tech Electrical and Electronics Engineering, Admission section",
+      "sourceUrl": "https://www.amrita.edu/program/btech-electrical-and-electronics-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The 2026 exam basis is stated with its year on the programme page. International route mechanics from the international admission policies page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "The last date for admission to all UG and PG programmes for Academic Year 2026 was 15 August 2026 on Amrita's online admissions portal for international applicants, which now records the 2026 UG and PG cycle as closed; the Coimbatore academic year opens in July.",
+      "status": "verified",
+      "sourceLabel": "Amrita Online Admissions Portal - international admissions 2026",
+      "sourceUrl": "https://aoap.amrita.edu/international-26/index/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Coimbatore academic calendar PDF, whose academic year grid opens in July."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-btech-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "The fee structure is strictly based on the Provisional Offer Letter and no other fee structure applies; payment is in US dollars except for Nepalese students, and annual fees must be remitted in a single payment.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies, Fees Structure & Payment",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Evidence for the on_request fee state. The INR slab table for Amritapuri, Bengaluru and Coimbatore on the programme page belongs to the Indian entrance-examination route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-mba-ms-business-analytics-buffalo",
+      "publicField": "eligibility",
+      "claimText": "The MBA/MBA-MS requires a bachelor's degree in any discipline recognised by the Association of Indian Universities on a 10+2+3 pattern with a minimum of 60 per cent marks and a valid ACAT, CAT, MAT, CMAT, GMAT, GRE or XAT score; the additional University at Buffalo MS award further requires a minimum of 50 per cent in all semesters, an English-proficiency score and a CGPA of at least 3 out of 4. International applicants must additionally be foreign nationals with an AIU equivalency certificate where the degree was awarded outside India.",
+      "status": "verified",
+      "sourceLabel": "Amrita Vishwa Vidyapeetham - MBA/MBA-MS in Business Analytics Dual Degree with University at Buffalo, Admissions section",
+      "sourceUrl": "https://www.amrita.edu/program/mba-ms-university-buffalo-usa/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "English thresholds on that page are TOEFL 79, IELTS 6.0 in each band and 6.5 overall, PTE 50 in each and 55 overall, Duolingo 120. The page also carries batch-specific submission deadlines (30 September 2025, extendable to March 2027) which are cycle-bound and therefore not published as a general rule. Nationality and AIU conditions from the international admission policies page. The page states failing the English requirement affects only the MS, not the MBA."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-mba-ms-business-analytics-buffalo",
+      "publicField": "admissions",
+      "claimText": "International applicants apply through the AOAP portal for international admissions and are selected on a 70:30 weighting of marks to a faculty-panel interview, submitting Grade 12 or diploma transcripts, undergraduate transcripts and degree completion certificate, the AIU equivalency certificate where applicable, the fee receipt and a security deposit of USD 500 or INR 10,000 for Nepalese nationals.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies, Post-Graduate admission",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Postgraduate document list and Interview & Selection block. The management-aptitude test list comes from the programme page. The older NRI/OCI/PIO management page states CAT as the default route and is undated, so it is not used for the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-mba-ms-business-analytics-buffalo",
+      "publicField": "intake",
+      "claimText": "The last date for admission to all UG and PG programmes for Academic Year 2026 was 15 August 2026 on Amrita's online admissions portal for international applicants, which now records the 2026 UG and PG cycle as closed; Amrita School of Business inaugurated its 31st MBA batch for 2026-28 during 2026.",
+      "status": "verified",
+      "sourceLabel": "Amrita Online Admissions Portal - international admissions 2026",
+      "sourceUrl": "https://aoap.amrita.edu/international-26/index/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The 31st MBA batch 2026-28 inauguration is listed in the Amrita School of Business news feed at https://www.amrita.edu/school/business/. The programme is trimester-based; no exact start date is published, so July is recorded from the university academic calendar rather than a programme-specific source."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "programmeSlug": "amrita-mba-ms-business-analytics-buffalo",
+      "publicField": "fee",
+      "claimText": "The fee structure is strictly based on the Provisional Offer Letter and no other fee structure applies; payment is in US dollars except for Nepalese students, and annual fees must be remitted in a single payment.",
+      "status": "verified",
+      "sourceLabel": "Amrita Center for International Programs - International admission policies, Fees Structure & Payment",
+      "sourceUrl": "https://www.amrita.edu/international/admissions/policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Evidence for the on_request fee state. The programme page's INR structure (INR 6,00,000 tuition and INR 1,24,000 hostel and mess per year, INR 10,000 refundable caution deposit, plus an approximately INR 6 lakh University at Buffalo study-visit cost) is the Indian-route table and is explicitly marked as due for revision for the 2026-28 batch."
+    }
+  ]
+}

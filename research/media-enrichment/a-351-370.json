@@ -1,0 +1,386 @@
+{
+  "batchId": "media-a-351-370",
+  "scope": "Alphabetical missing-media rows 351-370; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "alte-university-georgia",
+      "universityName": "Alte University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed the site's own footer wordmark SVG resolves cleanly as a distinct logo asset. Checked favicon.ico, apple-touch-icon.png (404), and the full homepage image inventory for a separate generic campus/building cover photo - only promotional banners (scholarship funding, news announcements) were found, no plain campus/exterior photo. Cover remains unresolved and held.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://alte.edu.ge/_next/static/media/footer-alte.b118c18e.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site alte.edu.ge footer wordmark SVG asset, verified HTTP 200 (3515x1518).",
+        "proposedPublicId": "alte-university-georgia-logo"
+      }
+    },
+    {
+      "universitySlug": "tbilisi-university-metekhi",
+      "universityName": "Tbilisi University 'Metekhi'",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No live domain resolves for likely candidates (metekhi.edu.ge, www.metekhi.edu.ge, tum.edu.ge all fail DNS resolution) and the Wayback Machine has no archived snapshots for metekhi.edu.ge. No Wikipedia article or Wikimedia Commons category exists for this institution under this or related names. No inspectable official media source could be established via any of the second-pass techniques."
+    },
+    {
+      "universitySlug": "technical-university-of-denmark",
+      "universityName": "Technical University of Denmark",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Used the Wikipedia-infobox + Commons-license technique: DTU's own wordmark logo is PD-textlogo and a campus building photo is separately available under CC BY-SA 4.0..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Danmarks_Tekniske_Universitet_%28logo%29.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Danmarks_Tekniske_Universitet_(logo).svg - PD-textlogo (simple text/shape, below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "technical-university-of-denmark-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Technical_University_of_Denmark%2C_Building_328%2C_2015-10-30.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, photographed by Finn Arup Nielsen (DTU Building 328 / DTU Space, 2015-10-30).",
+        "proposedPublicId": "technical-university-of-denmark-cover"
+      }
+    },
+    {
+      "universitySlug": "termez-branch-tsmu",
+      "universityName": "Termez Branch of Tashkent State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The live site ttatf.uz now shows a hosting-account-suspended page. Used the Wayback Machine to retrieve a January 2026 snapshot of the still-functioning site, confirmed a dedicated LOGO.jpg media asset and a campus photo, and verified both archived image URLs resolve on their own (not just the containing page)..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260103021156im_/https://media.ttatf.uz/media/original/thumbnails/user/admin/28a45eb1fded4faa9d43096e629cb0fe.LOGO.jpg_VfFewaa.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site ttatf.uz (currently down / hosting-suspended) via Wayback Machine snapshot dated 2026-01-03; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "termez-branch-tsmu-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260103021156im_/https://ttatf.uz/wp-content/uploads/2025/05/umumiy-768x512.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same Wayback Machine snapshot of the official site; archived campus/faculty photo verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "termez-branch-tsmu-cover"
+      }
+    },
+    {
+      "universitySlug": "termez-economics-services",
+      "universityName": "Termez University of Economics and Services",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Official domain tues.uz (Termiz Iqtisodiyot va Servis Universiteti) resolved cleanly; found the header logo.png and, since the homepage carries only news thumbnails, located a campus photo via the site's own dedicated photo-gallery album..",
+      "logo": {
+        "sourceUrl": "https://tues.uz/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tues.uz header logo, verified HTTP 200.",
+        "proposedPublicId": "termez-economics-services-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tues.uz/uploads/album/2/l_13565bd624f6d48f6f9b334a98fcfcd6.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site's own photo gallery ('Foto galereya' album 2), verified HTTP 200.",
+        "proposedPublicId": "termez-economics-services-cover"
+      }
+    },
+    {
+      "universitySlug": "texas-am-university",
+      "universityName": "Texas A&M University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Wikipedia-infobox + Commons-license technique: the 'aTm' wordmark is PD-textlogo and the infobox campus photo is CC BY-SA 3.0..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Texas_A%26M_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Texas_A&M_University_logo.svg - PD-textlogo (simple geometric shapes/text, below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "texas-am-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/TAMUcampus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0 / GFDL, view of main campus from Kyle Field, used in the university's own Wikipedia infobox.",
+        "proposedPublicId": "texas-am-university-cover"
+      }
+    },
+    {
+      "universitySlug": "texila-american-university-zambia",
+      "universityName": "Texila American University Zambia",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Live tau.edu.zm blocks direct fetches with 403. Used Wayback Machine snapshots of the official domain's own asset paths (not a mirrored CDN, which returned 404) to retrieve a verified logo and a lab/student photo..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20250620052021im_/https://tau.edu.zm/wp-content/uploads/2017/07/zm-logo-1.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tau.edu.zm (returns HTTP 403 to direct fetch) via Wayback Machine snapshot dated 2025-06-20; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "texila-american-university-zambia-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20240615063636im_/https://tau.edu.zm/wp-content/uploads/2020/05/lap-student-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Same official site via Wayback Machine snapshot dated 2024-06-15; archived asset URL verified to resolve directly (HTTP 200).",
+        "proposedPublicId": "texila-american-university-zambia-cover"
+      }
+    },
+    {
+      "universitySlug": "ohio-state-university",
+      "universityName": "The Ohio State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.osu.edu/images/osu-logo-stacked.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Ohio State University logo served from osu.edu",
+        "proposedPublicId": "ohio-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://editing.intcomm.osu.edu/sites/default/files/2026-07/stonelabfo_homepage.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official Ohio State homepage image served from the university's communications domain",
+        "proposedPublicId": "ohio-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-texas-at-austin",
+      "universityName": "The University of Texas at Austin",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Only logo was missing for this record. Wikipedia-infobox + Commons-license technique: the Longhorn wordmark logo used in UT Austin's own infobox is PD-textlogo.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/University_of_Texas_at_Austin_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:University_of_Texas_at_Austin_logo.svg - PD-textlogo (simple shape, below threshold of originality); trademark rights may still apply independent of copyright.",
+        "proposedPublicId": "university-of-texas-at-austin-logo"
+      }
+    },
+    {
+      "universitySlug": "thompson-rivers-university-nursing",
+      "universityName": "Thompson Rivers University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Direct inspection of the official BSN program page (tru.ca/nursing/programs/bsn.html) surfaced the TRU wordmark logo and a clearly-labelled nursing/campus photo distinct from the ambiguous image flagged in the first pass..",
+      "logo": {
+        "sourceUrl": "https://www.tru.ca/__shared/assets/TRU-LOGO-LEFT-REVERSED56576.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tru.ca, TRU wordmark asset served from the site's own shared-assets directory, verified HTTP 200.",
+        "proposedPublicId": "thompson-rivers-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.tru.ca/__shared/assets/Practical_Nursing_Diploma_Williams_Lake_Campus51676.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site, nursing-program page photo (Williams Lake Campus), verified HTTP 200.",
+        "proposedPublicId": "thompson-rivers-university-nursing-cover"
+      }
+    },
+    {
+      "universitySlug": "trent-university-canada",
+      "universityName": "Trent University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Only logo was missing. Checked Wikipedia: Trent_University_Logo.svg exists solely as a non-free/fair-use file on en.wikipedia (returns 404 on Wikimedia Commons, confirming it is not freely licensed there). Checked the official site's Communications & Enrolment 'Logos for Download' page: it explicitly requires emailing webrequest@trentu.ca with a usage justification before any logo file is released - an explicit written-permission gate per the hold criteria. No Commons-licensed alternative exists. Remains held."
+    },
+    {
+      "universitySlug": "tsinghua-university",
+      "universityName": "Tsinghua University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Commons-license technique: the historic seal is public domain (expired copyright), and a clean, high-resolution Main Gate photo is separately available under CC BY-SA 4.0..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tsinghua_University_Logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:Tsinghua_University_Logo.svg - public domain (1928-origin seal, copyright term expired under both Chinese and US law).",
+        "proposedPublicId": "tsinghua-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Main_gate_of_Tsinghua_University.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, photo of the Main Gate of Tsinghua University.",
+        "proposedPublicId": "tsinghua-university-cover"
+      }
+    },
+    {
+      "universitySlug": "tula-state-university",
+      "universityName": "Tula State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Direct inspection of tulsu.ru (rather than the tulasu.ru/tulasu.com mirror domains) found the theme's own logo.png and an About University page photo..",
+      "logo": {
+        "sourceUrl": "https://tulsu.ru/themes/polytech/assets/images/polytech/lang/en/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tulsu.ru, theme-hosted logo.png, verified HTTP 200.",
+        "proposedPublicId": "tula-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tulsu.ru/storage/app/uploads/public/6a3/8d7/2fb/6a38d72fb344d949363940.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site, image hosted on the 'About University' (en) page, verified HTTP 200.",
+        "proposedPublicId": "tula-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "turon-university",
+      "universityName": "Turon University Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The official site returns HTTP 403 to the WebFetch tool's default user agent but is reachable directly with a standard browser user agent; found a root-level logo.png and current campus/faculty photography under /storage/..",
+      "logo": {
+        "sourceUrl": "https://www.turonuniversity.uz/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site turonuniversity.uz root-level logo.png, verified HTTP 200.",
+        "proposedPublicId": "turon-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.turonuniversity.uz/storage/20260601/file-1780295894.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site, recent (2026-06) storage/media photo, verified HTTP 200.",
+        "proposedPublicId": "turon-university-cover"
+      }
+    },
+    {
+      "universitySlug": "tver-state-medical-university",
+      "universityName": "Tver State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Direct inspection of the official domain (tvgmu.ru, not the third-party tverstatemedicaluniversity.* agency mirrors) found the template logo SVG; all in-content photos use opaque hashed filenames so the site's own designated og:image share photo was used as the cover candidate (only 340x200 resolution available)..",
+      "logo": {
+        "sourceUrl": "https://tvgmu.ru/bitrix/templates/80bit/images/logo_new_text.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tvgmu.ru, site-template logo SVG, verified HTTP 200.",
+        "proposedPublicId": "tver-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://tvgmu.ru/upload/dev2fun.imagecompress/webp/resize_cache/dev2fun_opengraph/ee9/340_200_1/q25f9cvxxzi222lmfn0ab5qtnw4wlikz.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site's own designated Open Graph share image, verified HTTP 200.",
+        "proposedPublicId": "tver-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "tyumen-state-medical-university",
+      "universityName": "Tyumen State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Direct inspection of the official domain tyumsmu.ru (distinct from the parent tyumen state university utmn.ru) found a page-builder-hosted logo file and an institution-labelled campus photo..",
+      "logo": {
+        "sourceUrl": "https://www.tyumsmu.ru/upload/constructor/069/xqfctnuayo6m6wr37888f5rnx2ve8ls7/%D0%9B%D0%BE%D0%B3%D0%BE.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site tyumsmu.ru, page-builder-hosted logo asset ('Лого.png' = 'Logo.png'), verified HTTP 200.",
+        "proposedPublicId": "tyumen-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.tyumsmu.ru/upload/constructor/2c2/jxkt7yyd625l33r21z1szgiumoyua8e3/%D0%A2%D0%9C%D0%A31.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institution site, image filename 'ТМУ1.jpg' (TyumSMU abbreviation), verified HTTP 200.",
+        "proposedPublicId": "tyumen-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "university-of-tromso",
+      "universityName": "UiT The Arctic University of Norway",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover resolved via the Commons-license technique. Logo remains unresolved: the current UiT wordmark (UiT_The_Arctic_University_of_Norway_logo.svg) is confirmed non-free/fair-use on Wikipedia; a similarly-named 'Logo_of_UIT.png' on Commons was checked and turned out to belong to an unrelated Indian institution (University Institute of Technology, Burdwan University), not UiT Norway - discarded to avoid misattribution. Logo held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/University_of_Troms%C3%B8_Breivika_campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0/GFDL, Breivika campus photo used in UiT's own Wikipedia infobox.",
+        "proposedPublicId": "university-of-tromso-cover"
+      }
+    },
+    {
+      "universitySlug": "ulster-university",
+      "universityName": "Ulster University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Only cover was missing. Commons-license technique found a dedicated Belfast Campus exterior photo, distinct from the coat-of-arms/escutcheon file considered in the first pass.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/University_of_Ulster%2C_Belfast_Campus%2C_July_2010_%2807%29.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0/GFDL, Belfast Campus photo (July 2010).",
+        "proposedPublicId": "ulster-university-cover"
+      }
+    },
+    {
+      "universitySlug": "ulyanovsk-state-university",
+      "universityName": "Ulyanovsk State University",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover resolved via Commons-license technique (Wikipedia infobox caption confirms this is USU's Administration Building). Logo remains unresolved: Ulyanovsk_State_University_Logo.jpg is confirmed non-free/fair-use on Wikipedia with no Commons equivalent found. Logo held.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B3%D0%BE42.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, Lev Tolstoy Street 40-42 building photo, tagged to Ulyanovsk State University and used as the Administration Building photo in the university's own Wikipedia infobox.",
+        "proposedPublicId": "ulyanovsk-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "universidad-catolica-del-uruguay",
+      "universityName": "Universidad Católica del Uruguay",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Commons-license technique: the English wordmark logo is PD-textlogo and a facade photo explicitly identified as UCU's own central building is CC BY-SA 4.0..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/English_UCU_Logo.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons File:English_UCU_Logo.png - PD-textlogo (below threshold of originality); also used in UCU's own Wikipedia infobox.",
+        "proposedPublicId": "universidad-catolica-del-uruguay-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Fachada_ucu_2.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, explicitly captioned as the facade of UCU's Edificio Central (central building).",
+        "proposedPublicId": "universidad-catolica-del-uruguay-cover"
+      }
+    }
+  ]
+}

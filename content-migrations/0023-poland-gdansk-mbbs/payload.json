@@ -1,0 +1,420 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Medical University of Gdansk maps its 6-year Doctor of Medicine (M.D.) programme to this category: a direct-entry, single-cycle uniform Master's Degree leading to the Lekarz (Medical Doctor) qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "poland",
+      "slug": "medical-university-of-gdansk",
+      "name": "Medical University of Gdansk",
+      "city": "Gdansk",
+      "type": "Public",
+      "establishedYear": 1945,
+      "officialWebsite": "https://gumed.edu.pl/en",
+      "mediaAttribution": {},
+      "summary": "Medical University of Gdansk has run medical education since 1945 and offers a direct-entry, six-year English-medium Doctor of Medicine (M.D.) programme for international students, listed in the WHO World Directory of Medical Schools with ECFMG eligibility from 1953 onward. Accreditations include the US NCFMEA (valid to 2029), WFME recognition of the Polish Accreditation Committee (valid to 2035), and ACEEU recognition through 2030.",
+      "campusLifestyle": "The English Division educates roughly 600 international students (about 9% of the student body), admitting around 150 international students a year across all English-taught programmes, with 72 seats proposed for Medicine in the 2026 intake. Recent admission cycles have seen roughly 12 candidates competing per seat for Medicine.",
+      "cityProfile": "Gdansk is a major port city on Poland's Baltic coast. The university's student campus sits on Debowa Street, about 300 metres from teaching buildings, 1.5 km from Gdansk railway station and roughly 12 km from the airport, with an on-campus student club, canteen and adjacent Sports Center.",
+      "practicalExposure": "The six-year, 360-ECTS uniform Master's Degree programme is taught entirely in English. Clinical training runs through the university's own hospital network -- the University Clinical Centre (UCC), the largest multi-specialty hospital in northern Poland, offering multi-organ transplantation, invasive cardiology and oncological radiotherapy/chemotherapy, plus the University Maritime and Tropical Medicine Centre (UMTMC), which adds hyperbaric medicine and tropical-disease care. Graduates receive the Polish Lekarz qualification, which carries EU-wide automatic recognition once the national final licensing exam and a postgraduate internship are also completed.",
+      "hostelOverview": "The university's student campus on Debowa Street has four dormitories offering double-occupancy rooms only (around 20 sqm, furnished, with shared corridor kitchens, bathrooms and a laundry room). The combined monthly room rate is PLN 1,358 (PLN 679 per person), charged October through June. Private off-campus alternatives (a GUMed-affiliated dormitory and several independent providers) are also listed for students who prefer other arrangements.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published; the student campus has an on-site canteen. Food costs should be planned as a separate budget line alongside tuition and accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The student campus includes an on-site club, canteen and Sports Center; day-to-day support runs through the university's Admissions Office and clinical-site staff.",
+      "studentSupport": "International admissions are supported through regional recruitment partners across Africa, Asia, Europe and other regions, alongside the University Admissions Office directly. A named accommodation contact (International Student Office) coordinates dormitory placement and off-campus alternatives for incoming students.",
+      "whyChoose": [
+        "A WDOMS-listed English M.D. programme with ECFMG eligibility for graduates from 1953 onward, backed by NCFMEA accreditation valid through 2029, WFME recognition of the Polish Accreditation Committee valid through September 2035, and ACEEU recognition through 2030.",
+        "Clinical training at the university's own hospital network, including the largest multi-specialty hospital in northern Poland and a dedicated maritime and tropical medicine centre.",
+        "EU Directive 2005/36/EC automatic recognition of the Polish Lekarz qualification once the national licensing exam and internship are completed.",
+        "A dedicated International Student Office and regional recruitment partners across Africa, Asia and Europe to support the application process.",
+        "On-campus dormitory housing with a canteen, student club and Sports Center within walking distance of teaching buildings."
+      ],
+      "thingsToConsider": [
+        "Tuition for the 2026-27 cohort is PLN 64,200 per year (PLN 32,100 per semester) per the university's official Rector's Order, plus a one-time PLN 3,100 orientation/organisational fee for foreign students and a PLN 100 registration fee; no refund policy was published.",
+        "Admission runs through the university's own grade-based ranking plus, for foreign-diploma holders, a mandatory online entrance exam and interview -- there is no standardized-test-score exemption route (MCAT, UCAT, BMAT and similar are not accepted as alternatives).",
+        "Dormitory rooms on campus are double-occupancy only; students wanting a single room will need a private off-campus option at additional cost.",
+        "No confirmed scholarship specifically for incoming international MD students was found; the university's published loan and scholarship contacts cover only a handful of nationalities (Norway, Sweden, Canada for loans; Saudi Arabia for scholarships).",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students confident in their secondary-school science grades and, if applying with a foreign diploma, prepared to sit an online Biology and Chemistry entrance exam plus an interview.",
+        "Applicants who prioritize a large, university-owned clinical network with a maritime and tropical medicine specialty.",
+        "Families comfortable funding the programme without a confirmed university scholarship and planning for double-occupancy campus housing."
+      ],
+      "industryPartners": [
+        "University Clinical Centre (UCC)",
+        "University Maritime and Tropical Medicine Centre (UMTMC)"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0001309), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1953-present",
+        "US National Committee on Foreign Medical Education and Accreditation (NCFMEA) — accreditation valid until 2029",
+        "World Federation for Medical Education (WFME) recognition of the Polish Accreditation Committee — valid until 30 September 2035",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Polish Lekarz medical qualification across the EU/EEA"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Medical University of Gdansk listing", "url": "https://search.wdoms.org/home/SchoolDetail/F0001309" },
+        { "label": "Medical University of Gdansk — Foreign accreditations and recognition in the world", "url": "https://mug.edu.pl/45167.html" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Doctor of Medicine programme direct-entry after high school?",
+          "answer": "Yes. It is a uniform Master's Degree -- admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive a Polish medical diploma with the professional title Lekarz, evidence of formal qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA once the national licensing exam and a postgraduate internship are also completed."
+        },
+        {
+          "question": "How long is the programme and how is it structured?",
+          "answer": "Six years (12 semesters, 360 ECTS credits), taught entirely in English, with clinical training run through the university's own University Clinical Centre and University Maritime and Tropical Medicine Centre."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "PLN 32,100 per semester (PLN 64,200 per year) for the 2026-27 cohort, per the university's Rector's Order No. 41/2026, paid in two installments by 15 October and 15 February each year."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "Applicants holding a foreign (non-Polish, non-IB) diploma sit a mandatory online Biology and Chemistry exam plus an interview. Polish Matura and IB Diploma holders are generally ranked on their Biology plus Chemistry/Physics/Mathematics grades, with an interview required for IB Standard Level candidates."
+        },
+        {
+          "question": "Does the university accept MCAT, UCAT or BMAT scores instead of its own exam?",
+          "answer": "No. Medical University of Gdansk's official admissions pages do not list any standardized-test-score exemption route -- admission runs through secondary-school grades plus, where applicable, the university's own entrance exam and interview."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "Classes begin with an obligatory Orientation Week in the last week of September; the university has not published the exact calendar date. The 2026-27 document-submission deadline for Medicine is 15 July 2026."
+        },
+        {
+          "question": "Is a scholarship available for international MD students?",
+          "answer": "No university-administered scholarship specifically for incoming international MD students is currently confirmed. The university lists external loan contacts for students from Norway, Sweden and Canada, and a scholarship contact for students from Saudi Arabia only."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Medical University of Gdansk listing",
+          "url": "https://search.wdoms.org/home/SchoolDetail/F0001309",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "Medical University of Gdansk — 6-year Doctor of Medicine (M.D.) programme page",
+          "url": "https://admission.mug.edu.pl/38950.html",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, duration, ECTS credits and 2026 entrance-exam session dates."
+        },
+        {
+          "label": "Medical University of Gdansk — Admission steps and Recruitment procedure pages",
+          "url": "https://admission.mug.edu.pl/1452.html",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility tracks, entrance-exam/interview format and required documents."
+        },
+        {
+          "label": "Rector's Order No. 41/2026 on tuition fees for the 2026/2027 academic year",
+          "url": "https://admission.mug.edu.pl/attachment/attachment/115883/ENG_z4126_oplaty_za_ksztalcenie_w_roku_akademickim_26_27.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed tuition, orientation fee and payment installment dates; primary legal fee-setting instrument."
+        },
+        {
+          "label": "Medical University of Gdansk — Accommodation page",
+          "url": "https://admission.mug.edu.pl/1456.html",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for dormitory structure, room type and monthly fee."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "medical-university-of-gdansk-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "6-year Doctor of Medicine (M.D.)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "PLN",
+            "officialAnnualTuitionAmount": 64200,
+            "officialTotalTuitionAmount": 385200,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published under Rector's Order No. 41/2026 (29 April 2026): PLN 32,100 per semester (PLN 64,200 per year), paid in two installments (15 October, 15 February). Total is calculated as the annual figure times 6 years -- the university has not published a lump-sum six-year total. A separate one-time PLN 3,100 orientation/organisational fee applies to foreign students, plus a PLN 100 registration fee at application. A separate Cost-of-Attendance page quotes a lower, inconsistent PLN 24,000 figure; the Rector's Order is treated as authoritative."
+          },
+          "officialProgramUrl": "https://admission.mug.edu.pl/38950.html",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a Polish Matura, IB Diploma, or foreign secondary-school diploma showing required grades in Biology plus Chemistry/Physics/Mathematics, meeting the university's English-proficiency threshold (B2, e.g. IELTS 5.5+ or TOEFL iBT 80+)"
+            ],
+            "restrictions": [
+              "Foreign-diploma holders (and IB Standard Level candidates) must additionally sit the university's own online Biology/Chemistry entrance exam and an interview",
+              "No standardized-test-score exemption route (MCAT, UCAT, BMAT, GAMSAT) is offered as an alternative to the university's own admission criteria",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "A Regulation of the Minister of Science and Higher Education of 30 July 2025 (Dz.U. 2025 poz. 1045) is the current legal basis cited by the university for its B2 English-certificate requirement.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://admission.mug.edu.pl/1452.html"
+          },
+          "admissionsContent": {
+            "overview": "Applicants register online via the university's enrolment portal, pay the registration fee, submit secondary-school documents, sit the entrance exam and interview if required by their eligibility track, then submit original documents and pre-arrival paperwork after acceptance.",
+            "eligibility": {
+              "intro": "Admission is grade-based for Polish Matura and IB Diploma holders (Biology obligatory plus one of Chemistry/Physics/Mathematics at advanced/Higher Level), and additionally requires an online entrance exam and interview for foreign-diploma holders and IB Standard Level candidates.",
+              "items": [
+                "Biology (obligatory) plus at least one of Chemistry, Physics or Mathematics, at advanced/Higher Level, from the secondary-school transcript",
+                "English proficiency at CEFR B2: IELTS 5.5+, TOEFL iBT 80+, Cambridge B2 First or equivalent (IB Diploma holders with an English HL/SL grade are exempt from a separate certificate)",
+                "Foreign-diploma holders and IB Standard Level candidates: a 60-question online Biology/Chemistry exam plus a 20-minute interview",
+                "NAWA/relevant recognition of the secondary-school diploma where required for admission to Polish higher education",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Register online via the university's enrolment portal (opens 18 March 2026) and pay the PLN 100 registration fee",
+              "Complete the online application form and upload secondary-school transcripts, passport copy and English-proficiency certificate",
+              "Print, sign and upload both the English application form and its Polish translation",
+              "Sit the online entrance exam and interview, if required by the applicant's eligibility track (2026 sessions run May-July, plus partner-agency sessions)",
+              "After acceptance, submit original/apostilled documents, pay the orientation fee and first tuition installment, and arrange health insurance and visa documentation before Orientation Week"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified copy of secondary school-leaving diploma and transcript (native language) plus certified English or Polish translation",
+                "IB Diploma or Polish Matura certificate, where applicable"
+              ],
+              "application": [
+                "Passport copy",
+                "English-language proficiency certificate (unless IB-exempt)",
+                "Proof of registration-fee payment",
+                "Health insurance proof (EHIC, private policy, or minimum EUR 30,000 medical-treatment coverage), submitted after acceptance"
+              ]
+            },
+            "deadlinesNote": "2026-27 intake: registration opens 18 March 2026; document-submission deadline for Medicine is 15 July 2026; entrance-exam sessions run May-July 2026 (online); Orientation Week falls in the last week of September 2026 (exact date not yet published).",
+            "visaConsiderations": [
+              "Confirm current Polish student-visa and residency requirements directly with the university, given recent immigration-law changes affecting foreign-student admission."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed tuition for the 2026-27 cohort is PLN 64,200 per year (PLN 32,100 per semester), per Rector's Order No. 41/2026. A one-time PLN 3,100 orientation fee applies to foreign students, plus a PLN 100 registration fee at application. No refund policy was published; a separate Cost-of-Attendance page shows a lower, unreconciled PLN 24,000 figure that is treated as stale in favour of the Rector's Order.",
+          "teachingPhases": [
+            {
+              "phase": "Pre-clinical and clinical training",
+              "language": "English",
+              "details": "Full 6-year, 360-ECTS curriculum taught entirely in English, with clinical training run through the university's own University Clinical Centre and University Maritime and Tropical Medicine Centre; a detailed year-by-year rotation breakdown was not published by the university."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-gdansk",
+      "publicField": "identity",
+      "claimText": "Instruction started 1945 (Akademia Lekarska w Gdansku, founded 8 October 1945).",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0001309",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001309",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-gdansk",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001309), currently operational, public school type; graduates (1953-current) eligible to apply for ECFMG Certification.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0001309",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0001309",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-gdansk",
+      "publicField": "recognition",
+      "claimText": "Accreditations include the US NCFMEA (valid until 2029), WFME recognition of the Polish Accreditation Committee (obtained 12 September 2025, valid until 30 September 2035), and ACEEU 5-year accreditation (granted September 2025, valid to 2030).",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — Foreign accreditations and recognition in the world",
+      "sourceUrl": "https://mug.edu.pl/45167.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "recognition",
+      "claimText": "The Polish Lekarz medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA once the LEK final exam and a postgraduate internship (staz podyplomowy) confirmed by the Naczelna Izba Lekarska are also completed.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex)",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20171201&from=PL",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "academics",
+      "claimText": "6-year, 12-semester, 360-ECTS uniform Master's Degree programme (direct-entry from secondary education), taught entirely in English.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — 6-year Doctor of Medicine (M.D.) programme page",
+      "sourceUrl": "https://admission.mug.edu.pl/38950.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission is grade-based for Polish Matura/IB holders (Biology obligatory plus one of Chemistry/Physics/Mathematics at advanced/HL); foreign-diploma holders and IB Standard Level candidates additionally sit a mandatory online Biology/Chemistry entrance exam and interview; English proficiency required at CEFR B2 (IELTS 5.5+/TOEFL iBT 80+); no standardized-test-score exemption route exists.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — Admission steps and FAQ pages",
+      "sourceUrl": "https://admission.mug.edu.pl/1452.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "admissions",
+      "claimText": "Registration opens 18 March 2026 via the university's online enrolment portal; PLN 100 registration fee; document-submission deadline for Medicine is 15 July 2026; 2026 entrance-exam sessions run 14 May-30 July online.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — Registration on-line and FAQ pages",
+      "sourceUrl": "https://admission.mug.edu.pl/5750.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "intake",
+      "claimText": "Programme starts with an obligatory Orientation Week in the last week of September; the university has not published an exact calendar date for the 2026-27 cycle.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — Recruitment procedure page",
+      "sourceUrl": "https://admission.mug.edu.pl/1447.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "fee",
+      "claimText": "Tuition 2026-27: PLN 32,100 per semester (PLN 64,200 per year), per Rector's Order No. 41/2026 of 29 April 2026; one-time PLN 3,100 orientation fee for foreign students; PLN 100 registration fee; two annual installments due 15 October and 15 February.",
+      "status": "verified",
+      "sourceLabel": "Rector's Order No. 41/2026 on tuition fees for the 2026/2027 academic year",
+      "sourceUrl": "https://admission.mug.edu.pl/attachment/attachment/115883/ENG_z4126_oplaty_za_ksztalcenie_w_roku_akademickim_26_27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "medical-university-of-gdansk",
+      "programmeSlug": "medical-university-of-gdansk-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Named teaching hospitals: University Clinical Centre (UCC), the largest multi-specialty hospital in northern Poland, and the University Maritime and Tropical Medicine Centre (UMTMC), both founded and operated by the university.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — University healthcare entities page",
+      "sourceUrl": "https://gumed.edu.pl/en/university-healthcare-entities",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "medical-university-of-gdansk",
+      "publicField": "student living",
+      "claimText": "Four dormitories on the Debowa Street student campus, double-occupancy rooms only, combined monthly fee PLN 1,358 (PLN 679 per person), charged October through June.",
+      "status": "verified",
+      "sourceLabel": "Medical University of Gdansk — Accommodation page",
+      "sourceUrl": "https://admission.mug.edu.pl/1456.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

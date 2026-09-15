@@ -1,0 +1,37 @@
+{
+  "scope": "Bulgaria medical discovery — Medical University Sofia",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "institution": {
+    "canonicalName": "Medical University Sofia",
+    "countrySlug": "bulgaria",
+    "programme": "Medicine in English",
+    "canonicalCourseSlug": "mbbs"
+  },
+  "verifiedFacts": [
+    {
+      "claim": "Medical University Sofia publishes a 2026/27 foreign-citizen admission route for Medicine, Dentistry and Pharmacy, with translated and legalised foreign-secondary documents required.",
+      "sourceUrl": "https://mu-sofia.bg/en/admission/admissions-of-foreign-citizen/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The university says admitted foreign students pay the applicable English-specialty tuition in addition to the Bulgarian-nationals paid-form annual fee.",
+      "sourceUrl": "https://mu-sofia.bg/en/admission/admissions-of-foreign-citizen/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The university announced paid 2026/27 enrolment in Medicine, Dentistry, Pharmacy, Public Health and Health Care in July 2026.",
+      "sourceUrl": "https://mu-sofia.bg/zapochva-priemat-na-documenti-za-plateno-obuchenie-za-uchebnata-2026-2027-g/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current 2026/27 official fee amount for the foreign English Medicine cohort was established. The university identifies the components but does not publish their combined amount on the reviewed admission page.",
+    "No current programme-specific English-Medicine admissions guide was found that unambiguously supplies the applicable entrance examination, language standard, dates, documents and course delivery for the non-EU cohort.",
+    "No independent current programme-accreditation record sufficient for the required recognition badges was captured in this batch."
+  ],
+  "nextAction": "Obtain MU-Sofia's current 2026/27 English Medicine fee decision and foreign-admission guide, then verify programme accreditation through the relevant Bulgarian authority."
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Vanuatu medical discovery — Vanuatu College of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "The World Directory of Medical Schools has a school-detail record for Vanuatu College of Medicine.",
+      "sourceUrl": "https://search.wdoms.org/home/SchoolDetail/F0002006",
+      "sourceType": "international-medical-directory",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Vanuatu's government scholarship eligibility criteria directs students seeking a Bachelor of Medicine and Surgery to Fiji National University or other external routes, not to a verified local degree provider in the reviewed material.",
+      "sourceUrl": "https://scholarships.gov.vu/doc/2024_Scholarship_Eligibility_Criteria.pdf",
+      "sourceType": "government",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No current official college website, programme page, admissions call, fee schedule, curriculum, teaching-language statement, clinical-training evidence or student-support record was located.",
+    "The World Directory record establishes that a school record exists; it does not supply enough current programme or commercial-admissions evidence for a public university page.",
+    "No current Vanuatu regulator or government document corroborating active delivery, programme accreditation or graduate-registration status was located."
+  ],
+  "nextAction": "Locate Vanuatu College of Medicine's current official programme/admissions materials and the responsible regulator's approval/accreditation evidence before reconsidering this candidate."
+}

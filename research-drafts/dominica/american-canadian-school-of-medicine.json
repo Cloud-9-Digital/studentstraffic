@@ -1,0 +1,20 @@
+{
+  "countrySlug": "dominica",
+  "universitySlug": "american-canadian-school-of-medicine",
+  "schoolName": "American Canadian School of Medicine",
+  "cityName": "Picard-Portsmouth",
+  "priority": "medium",
+  "officialWebsite": "https://www.acsom.edu.dm/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - ACSOM's official pages describe a four-year MD curriculum, two years of basic sciences in Dominica, then clinical clerkships, published annual USD tuition/fees and visa/wellness/financial-aid support. The World Directory record identifies the school as currently operational and lists Doctor of Medicine. Hold because current approval/accreditation status, actual clinical-site contracts and market-specific licensing claims need independent, current verification.",
+  "sourceBundle": { "sources": [
+    { "label": "ACSOM official curriculum", "url": "https://www.acsom.edu.dm/admissions/curriculum/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes a four-year MD curriculum; describes future contracted clinical core rotations in US and Canada, so current site availability requires confirmation." },
+    { "label": "ACSOM official FAQ", "url": "https://www.acsom.edu.dm/faq/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States the first two years of basic sciences are in Dominica and describes a remaining two-year clinical-clerkship period; professional-practice statements are institution claims only." },
+    { "label": "World Directory of Medical Schools ACSOM record", "url": "https://search.wdoms.org/home/SchoolDetail/F0008211", "kind": "directory", "checkedAt": "2026-07-25", "notes": "Lists private school in Dominica as currently operational, with Doctor of Medicine qualification and instruction beginning in 2023." },
+    { "label": "ACSOM tuition and financial aid", "url": "https://www.acsom.edu.dm/admissions/tuition-financial-aid/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists projected annual tuition and technology/administrative fees for the four-year MD and estimated attendance costs; figures are stated as subject to change." },
+    { "label": "ACSOM student support services", "url": "https://www.acsom.edu.dm/admissions/student-support-services/", "kind": "official-support", "checkedAt": "2026-07-25", "notes": "Describes orientation, financial-aid guidance, wellness assistance and stated help facilitating student visas with the Dominican government." }
+  ] },
+  "structuredFacts": { "name": "American Canadian School of Medicine", "type": "Private medical school", "programs": [ { "officialTitle": "Doctor of Medicine (MD)", "duration": "4 years; official FAQ describes 2 years basic sciences in Dominica and 2 years clinical clerkships", "feeStatus": "Official projected annual tuition: USD 50,000 in years 1-2 and USD 57,000 in years 3-4, plus USD 3,000 annual technology and USD 3,000 annual administrative fees; costs are subject to change.", "publishable": false } ], "missingForPublication": [ "current independent approval and accreditor records", "executed clinical-site inventory, availability and country scope", "target-market licensing, recognition and eligibility analysis", "language-of-instruction confirmation in the admission terms", "all-in cost reconciliation including required clinical, living and travel costs" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until approval, clinical-training and professional-outcome claims are independently scoped." }
+}

@@ -1,0 +1,19 @@
+{
+  "countrySlug": "somaliland",
+  "universitySlug": "amoud-university-school-of-medicine-and-surgery",
+  "schoolName": "Amoud University School of Medicine and Surgery",
+  "cityName": "Borama",
+  "priority": "low",
+  "officialWebsite": "https://amouduniversity.org/auchs/school-of-medicine-and-surgery/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Amoud's current material identifies a Bachelor of Medicine and Surgery programme aligned to Somaliland's national curriculum and medical-education policy, with admissions information for local and international applicants. The Somaliland National Health Professions Commission lists Amoud Medicine as an accredited undergraduate programme. It is held because the official pages do not provide a current complete fee schedule, unambiguous course duration, clinical-placement terms, international support package or target-market licensing evidence.",
+  "sourceBundle": {"sources": [
+    {"label": "Amoud MBBS programme", "url": "https://amouduniversity.org/auchs/school-of-medicine-and-surgery/bachelor-of-medicine-and-surgery/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the Bachelor of Medicine and Surgery curriculum and admission requirements."},
+    {"label": "Amoud admissions", "url": "https://amouduniversity.org/admissions/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Publishes general undergraduate admission criteria."},
+    {"label": "Somaliland National Health Professions Commission", "url": "https://www.nhpcsomaliland.org/checkhti.php", "kind": "regulator", "checkedAt": "2026-07-25", "notes": "Lists Amoud University Medicine among accredited undergraduate programmes."},
+    {"label": "Somaliland Ministry higher education overview", "url": "https://moe.govsomaliland.org/article/higher-education", "kind": "government", "checkedAt": "2026-07-25", "notes": "Notes limited higher-education data and regulation context."}
+  ]},
+  "structuredFacts": {"name": "Amoud University School of Medicine and Surgery", "city": "Borama", "type": "Institutional governance not independently verified", "officialWebsite": "https://amouduniversity.org/auchs/school-of-medicine-and-surgery/", "bestFitFor": [], "programs": [], "missingForPublication": ["Current official tuition and total costs", "Unambiguous current duration and clinical-placement terms", "International admissions and student-support evidence", "Target-market licensing/recognition evidence"], "notes": "Do not infer global professional recognition or licensure eligibility from local programme accreditation."},
+  "draftContent": {"summary": "", "campusLifestyle": "", "cityProfile": "", "clinicalExposure": "", "hostelOverview": "", "indianFoodSupport": "", "safetyOverview": "", "studentSupport": "", "whyChoose": [], "thingsToConsider": [], "faq": [], "notes": "Held pending authoritative decision information."}
+}

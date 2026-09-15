@@ -1,0 +1,17 @@
+{
+  "scope": "University of Cape Town Health Sciences — MBChB programme addition",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {"claim": "UCT Faculty of Health Sciences describes MBChB as a six-year undergraduate programme and its 2027 applications open 1 April 2026 and close 31 July 2026.", "sourceUrl": "https://health.uct.ac.za/home/undergraduate-faqs", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "UCT publishes minimum school-subject percentages, APS 450 and National Benchmark Test requirements for the six-year MBChB.", "sourceUrl": "https://health.uct.ac.za/home/undergraduate-programmes", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "UCT Medicine teaching identifies clinical learning across Groote Schuur, Mitchells Plain, New Somerset, Victoria and George hospitals, including supervised ward and ambulatory care in years 4 and 6.", "sourceUrl": "https://health.uct.ac.za/department-medicine/activities/teaching", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "UCT says MBChB graduates require two years of internship and one year of community service before independent practice under HPCSA.", "sourceUrl": "https://health.uct.ac.za/home/undergraduate-programmes", "sourceType": "official-program", "verifiedAt": "2026-07-25"}
+  ],
+  "holdReasons": [
+    "No programme-specific current MBChB tuition amount or student-category fee table was captured; the current fee handbook only directs users to a course-fee section.",
+    "The University of Cape Town ledger row is already published and locked queue transitions do not permit a ledger update or migration link from published status.",
+    "The existing University payload has no MBChB offering, so this needs a programme-addition merge path rather than a duplicate university payload."
+  ],
+  "nextAction": "Use the reserved correction migration only after extracting the current MBChB fee from the UCT Student Fees Handbook and defining a supported published-record addition/link workflow."
+}

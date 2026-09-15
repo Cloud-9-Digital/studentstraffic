@@ -1,0 +1,60 @@
+{
+  "countrySlug": "rwanda",
+  "universitySlug": "adventist-university-of-central-africa-school-of-medicine",
+  "schoolName": "Adventist University of Central Africa — Adventist School of Medicine of East Central Africa",
+  "cityName": "Kigali",
+  "priority": "medium",
+  "officialWebsite": "https://web.auca.ac.rw/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — AUCA is listed by Rwanda HEC as an operating private higher-learning institution. The university’s official site exposes current general undergraduate requirements, including a USD 50 international application fee, NESA equivalence and study-visa information. A current Adventist Accrediting Association directory records the Adventist School of Medicine of East Central Africa at AUCA and describes a three-year Medicine plus three-year Surgery structure, but AUCA’s current public programme catalogue does not publish the medical programme’s fee schedule, admissions requirements, intake, teaching language, clinical placements or a dedicated international application route. The regulator document found establishes AUCA’s institutional presence, not a current programme-specific medical approval. Do not package or publish until those gaps are resolved directly from AUCA/HEC/RMDC sources.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "AUCA official site",
+        "url": "https://web.auca.ac.rw/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "States AUCA was founded in 1978, operates Masoro and Gishushu campuses and has health-sciences activity; it does not supply a current medical-school programme page or tuition schedule."
+      },
+      {
+        "label": "AUCA undergraduate admission requirements",
+        "url": "https://web.auca.ac.rw/admissions/undergraduate-requirements",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists application documents, USD 50 international application fee, NESA equivalence for foreign qualifications and a study-visa process; nursing-specific grades are listed, not medicine-specific requirements."
+      },
+      {
+        "label": "Rwanda HEC higher-learning institutions list",
+        "url": "https://www.hec.gov.rw/fileadmin/user_upload/HEC/Accreditation/Heads_of_HLIs_operating_in_Rwanda_2025.pdf",
+        "kind": "regulator",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists Adventist University of Central Africa among private higher-learning institutions operating in Rwanda."
+      },
+      {
+        "label": "Adventist Accrediting Association directory",
+        "url": "https://www.adventistaccreditingassociation.org/wp-content/uploads/Directory-of-SDA-Colleges-and-Universities.pdf",
+        "kind": "accreditor",
+        "checkedAt": "2026-07-25",
+        "notes": "Records AUCA/ASOME and lists three-year Bachelor of Medicine and three-year Bachelor of Surgery entries; this requires direct current programme confirmation before use in a catalogue payload."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Adventist University of Central Africa — Adventist School of Medicine of East Central Africa",
+    "type": "Private",
+    "programs": [],
+    "missingForPublication": [
+      "current official ASOME programme page and award structure",
+      "current medical tuition and mandatory fees",
+      "medicine-specific entry criteria, intake and deadline",
+      "instruction language and clinical-training evidence",
+      "current programme-specific approval and professional-recognition evidence"
+    ]
+  },
+  "draftContent": {
+    "summary": "",
+    "faq": [],
+    "notes": "No public narrative drafted because current medicine-specific facts cannot be confirmed from AUCA’s public programme catalogue."
+  }
+}

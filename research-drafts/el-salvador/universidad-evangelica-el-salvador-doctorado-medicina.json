@@ -1,0 +1,37 @@
+{
+  "scope": "El Salvador medical discovery — Universidad Evangélica de El Salvador Doctorado en Medicina",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UEES lists Doctorado en Medicina as an in-person programme and states that its clinical practice is delivered across three national hospital sites, without naming those sites on the page reviewed.",
+      "sourceUrl": "https://admision.uees.edu.sv/oferta-academica/doctorado-en-medicina",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UEES's official 2026 fee schedule lists Doctorado en Medicina (presential) with a $125 enrolment fee, six instalments per cycle, a $170–$355 instalment range, $5 insurance and $70 educational service charge. Its current admissions page separately lists a $40 preparatory course charge.",
+      "sourceUrl": "https://www.uees.edu.sv/wp-content/uploads/2025/10/ARANCELES-DE-CARRERAS-2026-23OCT.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UEES says its Doctorado en Medicina holds international accreditation through RIEV and COMAEM. Its internationalisation page describes the RIEV accreditation as fully renewed in 2022 for six years; the programme page does not display a separate COMAEM validity period.",
+      "sourceUrl": "https://www.uees.edu.sv/internacionalizacion/carreras-acreditadas/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "El Salvador's Consejo Superior de Salud Pública states that its medical-profession board oversees the practice of medicine and provides permanent professional-registration materials for Doctorado en Medicina graduates.",
+      "sourceUrl": "https://cssp.gob.sv/junta-de-vigilancia-de-la-profesion-medica/?tax%5Bwpdmcategory%5D=jvpm-permanente",
+      "sourceType": "government-regulator",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "No complete current admissions calendar or academic and international-applicant requirements were located.",
+    "Programme duration, teaching language, named clinical hospitals, internship/service-social terms, curriculum document and student-support arrangements were not verified from current authoritative sources.",
+    "The university's COMAEM claim needs a directly verifiable accreditor record and validity date before it can be used as a formal recognition statement."
+  ],
+  "nextAction": "Obtain UEES's current curriculum, live admissions requirements and direct confirmation of named hospital training sites and COMAEM validity before considering a payload."
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "universitySlug": "curtin-university",
+    "universityName": "Curtin University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 1: found curtin.edu.au/about/media (a dedicated media page, distinct from the generic homepage) which links a direct Logo.png asset. Technique 2 resolved the cover via Commons..",
+    "proposedPublicIds": {
+      "logo": "universities/curtin-university/logo",
+      "cover": "universities/curtin-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://s30991.pcdn.co/about/wp-content/uploads/sites/5/2023/10/Logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Direct asset linked from Curtin's official media/press page (curtin.edu.au/about/media)",
+      "proposedPublicId": "curtin-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/View_of_Curtin_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file \"View_of_Curtin_University.jpg\"",
+      "proposedPublicId": "curtin-university-cover"
+    }
+  },
+  {
+    "universitySlug": "dagestan-state-medical-university",
+    "universityName": "Dagestan State Medical University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 2 resolved the cover. Logo still unresolved: checked dgmu.ru homepage and English about page directly for a logo image file -- only accreditation-body badges and generic slider photos are present, no standalone DSMU logo asset.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/dagestan-state-medical-university/logo",
+      "cover": "universities/dagestan-state-medical-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/%D0%94%D0%B0%D0%B3%D0%93%D0%BE%D1%81%D0%9C%D0%B5%D0%B4%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "CC BY-SA 3.0, Wikimedia Commons file (Dagestan State Medical Academy building photo)",
+      "proposedPublicId": "dagestan-state-medical-university-cover"
+    }
+  },
+  {
+    "universitySlug": "david-aghmashenebeli-university",
+    "universityName": "David Aghmashenebeli University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): New technique: read the site's own schema.org/JSON-LD structured data (embedded in page source) rather than scanning visible <img> tags, which surfaced the exact files the site itself labels as its logo and primary page image..",
+    "proposedPublicIds": {
+      "logo": "universities/david-aghmashenebeli-university/logo",
+      "cover": "universities/david-aghmashenebeli-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://sdasu.edu.ge/wp-content/uploads/2026/03/Untitled_design-removebg-preview.png",
+      "sourceType": "official",
+      "rightsBasis": "Declared as the site's own logo in sdasu.edu.ge's schema.org JSON-LD (\"@id\":\".../#/schema/logo/image/\")",
+      "proposedPublicId": "david-aghmashenebeli-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://sdasu.edu.ge/wp-content/uploads/2023/05/sdasu.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Declared as the About-Us page's primary image in sdasu.edu.ge's schema.org JSON-LD (\"primaryImageOfPage\")",
+      "proposedPublicId": "david-aghmashenebeli-university-cover"
+    }
+  },
+  {
+    "universitySlug": "david-tvildiani-medical-university",
+    "universityName": "David Tvildiani Medical University",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Checked dtmu.org homepage source directly; logo asset was not exposed via the accreditation-body badge tags the first pass likely matched on. Cover still unresolved: only generic news/graduation photos (news-grad-1/2/3) found, none clearly an institutional campus cover; no Wikipedia article/Commons category exists for this university.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/david-tvildiani-medical-university/logo",
+      "cover": "universities/david-tvildiani-medical-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://dtmu.org/assets/logo-en.png",
+      "sourceType": "official",
+      "rightsBasis": "Official site asset, alt text \"DTMU Logo\", also used as the site favicon (dtmu.org)",
+      "proposedPublicId": "david-tvildiani-medical-university-logo"
+    }
+  },
+  {
+    "universitySlug": "de-montfort-university",
+    "universityName": "De Montfort University",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 2: the Wikipedia article's infobox logo is a non-free file (wikipedia/en/ namespace) and was correctly excluded, but the article body also links the university's coat of arms, which is separately hosted on Commons under a free license, plus a Commons-licensed campus building photo..",
+    "proposedPublicIds": {
+      "logo": "universities/de-montfort-university/logo",
+      "cover": "universities/de-montfort-university/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/De_Montfort_University_arms.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "Public domain, Wikimedia Commons file \"De_Montfort_University_arms.svg\" (the non-free \"De_Montfort_University_logo.svg\" on the local en.wikipedia namespace was NOT used)",
+      "proposedPublicId": "de-montfort-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/The_Queen%E2%80%99s_building_at_De_Montfort_University.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "CC BY 4.0, Wikimedia Commons file (Queen's Building at De Montfort University)",
+      "proposedPublicId": "de-montfort-university-cover"
+    }
+  },
+  {
+    "universitySlug": "deakin-university",
+    "universityName": "Deakin University",
+    "missing": [
+      "logo"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 2 resolved the only missing slot (cover) via a public-domain Commons campus photo.. Remaining outstanding: logo.",
+    "proposedPublicIds": {
+      "logo": "universities/deakin-university/logo",
+      "cover": "universities/deakin-university/cover"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Deakin_University_Burwood_Campus.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "Public domain (self-published, released PD), Wikimedia Commons file \"Deakin_University_Burwood_Campus.jpg\"",
+      "proposedPublicId": "deakin-university-cover"
+    }
+  },
+  {
+    "universitySlug": "dit-deggendorf-bscn",
+    "universityName": "Deggendorf Institute of Technology",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 2 resolved the logo via a PD-textlogo Commons file. Cover found directly on the official th-deg.de homepage as a labeled campus feature image..",
+    "proposedPublicIds": {
+      "logo": "universities/dit-deggendorf-bscn/logo",
+      "cover": "universities/dit-deggendorf-bscn/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Technische_Hochschule_Deggendorf_logo.png",
+      "sourceType": "licensed",
+      "rightsBasis": "Public domain (PD-textlogo), Wikimedia Commons file \"Technische_Hochschule_Deggendorf_logo.png\"; page also carries a standard non-copyright trademark notice that does not restrict this reuse",
+      "proposedPublicId": "dit-deggendorf-bscn-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://www.th-deg.de/Start/18885/image-thumb__18885__featuretteImage/campus-deg.png",
+      "sourceType": "official",
+      "rightsBasis": "Official th-deg.de homepage feature image (Deggendorf campus)",
+      "proposedPublicId": "dit-deggendorf-bscn-cover"
+    }
+  },
+  {
+    "universitySlug": "delft-university-technology",
+    "universityName": "Delft University of Technology",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 2 resolved both slots via Commons: the university's official seal and a campus building photo..",
+    "proposedPublicIds": {
+      "logo": "universities/delft-university-technology/logo",
+      "cover": "universities/delft-university-technology/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Zegel_Technische_Universiteit_Delft.svg",
+      "sourceType": "licensed",
+      "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (official TU Delft seal, \"Zegel Technische Universiteit Delft\")",
+      "proposedPublicId": "delft-university-technology-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Delft_University_of_Technology_Echo_building_10.jpg",
+      "sourceType": "licensed",
+      "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (TU Delft Echo building)",
+      "proposedPublicId": "delft-university-technology-cover"
+    }
+  },
+  {
+    "universitySlug": "dhaka-central-international-medical-college",
+    "universityName": "Dhaka Central International Medical College",
+    "missing": [
+      "logo",
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): The first-pass hold likely stemmed from trying the wrong domain (dcimc.edu.bd, which does not resolve via DNS). Cross-referenced the codebase's own content-migrations/0008-bangladesh-dcimc-mbbs/payload.json, which cites the correct official domain dcimch.com; that site is reachable and exposes both a direct logo file and a labeled campus banner..",
+    "proposedPublicIds": {
+      "logo": "universities/dhaka-central-international-medical-college/logo",
+      "cover": "universities/dhaka-central-international-medical-college/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://dcimch.com/wp-content/themes/dcimch/image/dcimch_logo.png",
+      "sourceType": "official",
+      "rightsBasis": "Official site logo asset on the institution's correct domain (dcimch.com)",
+      "proposedPublicId": "dhaka-central-international-medical-college-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://dcimch.com/wp-content/uploads/2016/05/banner-campus.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official campus banner image on the /campus page of dcimch.com",
+      "proposedPublicId": "dhaka-central-international-medical-college-cover"
+    }
+  },
+  {
+    "universitySlug": "douglas-college-nursing",
+    "universityName": "Douglas College",
+    "missing": [
+      "cover"
+    ],
+    "status": "ready",
+    "reason": "Second-pass upgrade (2026-07-26): Technique 4: the homepage header logo is a CSS-background div (class \"logo-full\"), not a plain <img>. Fetched the theme's compiled stylesheet, found the background-image rule pointing at /themes/douglas/img/douglas-logo.svg (a non-reverse, standard-color variant, distinct from the white/reverse version also referenced), and verified it resolves directly. Cover still unresolved: only generic marketing hero banners and 404s on likely campus/location paths were found; no image was clearly labeled as an institutional campus photo.. Remaining outstanding: cover.",
+    "proposedPublicIds": {
+      "logo": "universities/douglas-college-nursing/logo",
+      "cover": "universities/douglas-college-nursing/cover"
+    },
+    "logo": {
+      "sourceUrl": "https://www.douglascollege.ca/themes/douglas/img/douglas-logo.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official theme asset on douglascollege.ca, referenced as the background-image for the site's CSS-only header logo element",
+      "proposedPublicId": "douglas-college-nursing-logo"
+    }
+  }
+]

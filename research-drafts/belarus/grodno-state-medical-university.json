@@ -1,0 +1,25 @@
+{
+  "countrySlug": "belarus",
+  "universitySlug": "grodno-state-medical-university",
+  "schoolName": "Grodno State Medical University",
+  "cityName": "Grodno",
+  "priority": "medium",
+  "officialWebsite": "https://www.grsmu.by/en/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — GrSMU's official site presents a 2026/27 admission-testing page and an international applicant workflow, while the World Directory records a six-year English General Medicine/MD programme for foreign students after secondary education. The official tuition page is discoverable but the accessible content did not expose a current fee amount or fee year; an official hostel-fee item is explicitly for 2024/25. Current international fee, deadline, complete documents/eligibility, up-to-date accommodation cost and programme recognition evidence therefore remain insufficient for a publishable admissions page.",
+  "sourceBundle": { "sources": [
+    { "label": "GrSMU official English homepage", "url": "https://www.grsmu.by/en/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Identifies the Medical Faculty for International Students, international admission links, student-hostel and psychological-support pages." },
+    { "label": "GrSMU international applicant workflow", "url": "https://www.grsmu.by/en/university/structure/departments/world/podacha_docum_dlya_postupleniya/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Links official invitation, deadline, admission and accommodation workflow pages and provides the international-affairs contact." },
+    { "label": "GrSMU 2026/2027 admission test topics", "url": "https://www.grsmu.by/en/admission-aid/topics-admission/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Current-cycle page exists, but does not by itself establish a complete international eligibility and application record." },
+    { "label": "GrSMU educational programmes and tuition page", "url": "https://www.grsmu.by/en/university/structure/faculties/01/info/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Official tuition destination found, but no usable current General Medicine fee or fee year was exposed in the accessible page content." },
+    { "label": "World Directory of Medical Schools — GrSMU", "url": "https://search.wdoms.org/home/SchoolDetail/F0000069", "kind": "recognition-directory", "checkedAt": "2026-07-25", "notes": "Lists a six-year English General Medicine MD programme; foreign students are admitted after secondary education. It also records ECFMG-certification eligibility subject to directory conditions." }
+  ] },
+  "structuredFacts": {
+    "name": "Grodno State Medical University",
+    "type": "Public medical university",
+    "programs": [ { "officialTitle": "General Medicine in English", "duration": "6 years", "instructionLanguage": "English", "qualification": "Doctor of Medicine (M.D.)", "feeStatus": "not confirmed from a current accessible official fee record", "publishable": false } ],
+    "missingForPublication": [ "current international tuition and mandatory-fee schedule", "current application deadline and intake timing", "complete current international eligibility and document list", "current hostel fee/availability", "current programme accreditation and target-market recognition evidence" ]
+  },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted; fee transparency and a complete current international admission route are unresolved." }
+}

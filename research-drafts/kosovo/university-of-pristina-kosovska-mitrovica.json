@@ -1,0 +1,18 @@
+{
+  "countrySlug": "kosovo",
+  "universitySlug": "university-of-pristina-kosovska-mitrovica",
+  "schoolName": "University of Pristina in Kosovska Mitrovica",
+  "cityName": "Kosovska Mitrovica",
+  "priority": "medium",
+  "officialWebsite": "https://med.pr.ac.rs/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - The Faculty of Medicine's official 2026/27 admissions call lists Integrated Academic Studies of Medicine and gives application dates and first-installment amounts, including EUR 450 equivalent for foreign citizens. The university's English study-programme page lists General Medicine as an integrated programme. The current call is in Serbian and does not establish full foreign eligibility, programme language, the number of tuition instalments/annual total, visa support, clinical placement or a recognition route for a defined audience. Hold pending those primary facts.",
+  "sourceBundle": { "sources": [
+    { "label": "Faculty of Medicine 2026/27 admissions call", "url": "https://med.pr.ac.rs/upis-studenata-2026-2027/?pismo=lat", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Lists 2026/27 first-year application dates, required school documents and first tuition instalment for integrated Medicine, including foreign-citizen amount." },
+    { "label": "University of Pristina study programmes", "url": "https://en.pr.ac.rs/education/study-programmes/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Lists General Medicine as an integrated academic study at the Faculty of Medicine." },
+    { "label": "Faculty of Medicine information page", "url": "https://med.pr.ac.rs/", "kind": "official-institution", "checkedAt": "2026-07-25", "notes": "Faculty official site; the 2026 information listing is visible, but this pass did not establish current international support or clinical details." }
+  ] },
+  "structuredFacts": { "name": "University of Pristina in Kosovska Mitrovica", "type": "Public university", "programs": [ { "officialTitle": "Integrated Academic Studies of Medicine / General Medicine", "duration": "Not verified from a current official programme-detail page in this pass", "feeStatus": "2026/27 first instalment for foreign citizens is published as EUR 450 equivalent; annual total and remaining instalments are not verified", "publishable": false } ], "missingForPublication": [ "full programme duration, curriculum and instructional language", "annual total fee and all mandatory charges", "current foreign eligibility and visa/residence route", "clinical placement/support evidence", "recognition and professional-registration assessment by target market" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because the first instalment alone is not a transparent cost and programme-language/eligibility facts remain incomplete." }
+}

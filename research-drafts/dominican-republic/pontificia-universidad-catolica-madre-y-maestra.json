@@ -1,0 +1,20 @@
+{
+  "countrySlug": "dominican-republic",
+  "universitySlug": "pontificia-universidad-catolica-madre-y-maestra",
+  "schoolName": "Pontificia Universidad Catolica Madre y Maestra",
+  "cityName": "Santiago and Santo Domingo",
+  "priority": "medium",
+  "officialWebsite": "https://www.pucmm.edu.do/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - PUCMM officially describes a Medicine degree lasting five years and eight months at Santiago and Santo Domingo, with pre-medical, basic medical science, clinical pre-internship and internship stages. It publishes 2026/27 admission criteria and institution-wide registration/credit charges; its current pages also describe local clinical-internship activity. However, CAAM-HP lists the PUCMM School of Medicine as Accreditation Denied. This status must not be softened or replaced with marketing claims. Hold pending an authoritative explanation of the status, programme-specific cost calculation, foreign-student pathway, and market-specific professional-eligibility review.",
+  "sourceBundle": { "sources": [
+    { "label": "PUCMM Medicine programme overview", "url": "https://medicina.pucmm.edu.do/admision/programa-de-la-carrera/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "States 5 years and 8 months, August start and Santiago/Santo Domingo delivery." },
+    { "label": "PUCMM Medicine progression information", "url": "https://medicina.pucmm.edu.do/admision/informaciones-generales-de-la-carrera-de-medicina/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Explains progression from pre-medical to basic/clinical stages and vaccination/academic requirements." },
+    { "label": "PUCMM Medicine admission criteria 2026/27", "url": "https://www.pucmm.edu.do/admisiones/Documents/criterios-admision-carrera-medicina-2026.pdf", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Sets current Medicine-specific selection criteria for the August 2026 intake." },
+    { "label": "PUCMM 2026/27 undergraduate costs", "url": "https://pucmm.edu.do/admisiones/costos-y-disposiciones-de-pago-de-grado/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Publishes institution-wide charges and payment terms; a programme-specific Medicine total needs calculation from current course loads and any special charges." },
+    { "label": "CAAM-HP PUCMM assessment record", "url": "https://caam-hp.org/pontificia-universidad-catolica-madre-y-maestra-pucmm-school-of-medicine/", "kind": "accreditor", "checkedAt": "2026-07-25", "notes": "Lists the PUCMM School of Medicine accreditation status as Accreditation Denied." }
+  ] },
+  "structuredFacts": { "name": "Pontificia Universidad Catolica Madre y Maestra", "type": "Private university", "programs": [ { "officialTitle": "Medicina", "duration": "5 years and 8 months", "feeStatus": "Current institution-wide 2026/27 fees published; programme total not directly published", "publishable": false } ], "missingForPublication": [ "authoritative current accreditation-status context", "Medicine-specific full cost calculation", "foreign applicant route and language requirements", "current clinical-site allocation evidence", "market-specific registration and licensing assessment" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted because the current primary accreditor record requires a precise, non-promotional treatment before any publication decision." }
+}

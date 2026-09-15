@@ -1,0 +1,87 @@
+{
+  "countrySlug": "macau",
+  "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine",
+  "schoolName": "Macau University of Science and Technology Faculty of Medicine",
+  "cityName": "Macau",
+  "priority": "medium",
+  "officialWebsite": "https://fmd.must.edu.mo/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — MUST offers an active English-taught six-year MBBS. Its current 2026/27 non-Macao-resident fee table lists HKD 258,000 for the first year, including clinical-internship tuition, and its official admissions system documents direct admission for international applicants plus MBBS-specific interview requirements. A June 2026 official news post records the second MBBS graduating cohort. Despite strong course, fee and admissions evidence, this pass did not establish a current independent programme accreditation/recognition record, complete local licensing pathway, MBBS-specific international accommodation/insurance evidence, or a fully evidenced clinical-placement contract packet. Keep it held until these requirements are verified; do not imply global or Indian recognition.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "MUST Faculty of Medicine — MBBS programme",
+        "url": "https://fmd.must.edu.mo/all/program/view/id-269.html?locale=en_US",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Confirms MBBS programme and clinical foundation rotations at hospital, family medicine and community-health clinics."
+      },
+      {
+        "label": "MUST — 2026/27 non-Macao-resident undergraduate tuition table",
+        "url": "https://www.must.edu.mo/images/Admission/files/PreUBachelorFT_Non_Macao_residents_EN.pdf",
+        "kind": "official-fees",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists MBBS normal study period of six years and HKD 258,000 first-year tuition for non-Macao residents, including clinical internship tuition. It must not be treated as a full six-year total."
+      },
+      {
+        "label": "MUST — 2026/27 undergraduate online admissions system",
+        "url": "https://oas.must.edu.mo/admission/index_B_en.htm",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Official system provides application windows for international applicants and warns that MUST has no authorised recruitment agents."
+      },
+      {
+        "label": "MUST — MBBS direct-admission requirements",
+        "url": "https://www.must.edu.mo/images/Admission/files/ENG_admission_regulations_att2.pdf",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Current 2026 MBBS-specific requirements are published for listed direct-admission qualification routes."
+      },
+      {
+        "label": "MUST — important dates for direct admission",
+        "url": "https://ugadmissions.must.edu.mo/id-2828/article/view/id-22633.html?locale=en_US",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Identifies a programme-specific MBBS interview in the 2026 direct-admission process."
+      },
+      {
+        "label": "MUST — second MBBS cohort graduation",
+        "url": "https://msd.must.edu.mo/news/article/view/id-41377.html?locale=en_US",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "June 2026 official news records graduation of the second MBBS cohort."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Macau University of Science and Technology Faculty of Medicine",
+    "city": "Macau",
+    "type": "Private",
+    "officialWebsite": "https://fmd.must.edu.mo/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Independent current programme accreditation and recognition evidence",
+      "Clear current professional-registration and licensing pathway",
+      "MBBS-specific international accommodation, insurance and support terms",
+      "Independently corroborated clinical-placement agreements and internship requirements",
+      "Audience-relevant foreign medical licensing evidence"
+    ],
+    "notes": "MUST's current evidence supports a genuine, active English MBBS and an international application pathway. The statutory and professional-recognition checks remain necessary before commercial publication."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Public-facing content is withheld despite strong admissions and fee evidence, because professional recognition and student-protection details must be independently authoritative before a physician-degree destination is marketed."
+  }
+}

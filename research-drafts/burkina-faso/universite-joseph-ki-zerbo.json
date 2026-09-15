@@ -1,0 +1,18 @@
+{
+  "countrySlug": "burkina-faso",
+  "universitySlug": "universite-joseph-ki-zerbo",
+  "schoolName": "Université Joseph Ki-Zerbo",
+  "cityName": "Ouagadougou",
+  "priority": "medium",
+  "officialWebsite": "https://www.ujkz.bf/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — UJKZ is listed as a public higher-education institution in the current MESRI statistical directory, and university material confirms health-sciences activity. The retrieved official material does not establish a current named medical degree, programme duration, instruction language, fee schedule, international applicant route, intake/deadline, accommodation or programme accreditation. Publishing an admissions record would require unsupported assumptions.",
+  "sourceBundle": { "sources": [
+    { "label": "UJKZ official site", "url": "https://www.ujkz.bf/", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Official university presence; the current public material retrieved was insufficient for a complete programme record." },
+    { "label": "MESRI 2023/2024 higher-education statistical directory", "url": "https://www.mesrsi.gov.bf/fileadmin/user_upload/storage/images/ANNUAIRE_STATISTIQUE_DE_L_ENSEIGNEMENT_SUPERIEUR_2023_2024.pdf", "kind": "government-directory", "checkedAt": "2026-07-25", "notes": "Lists Université Joseph Ki-Zerbo among public institutions and records UJKZ institutional statistics." },
+    { "label": "UJKZ health-sciences notice", "url": "https://www.ujkz.bf/wp-content/uploads/2024/08/SDS-TSS.pdf", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Search result identifies UJKZ Sciences de la Santé material, but the official PDF timed out and could not be used to establish current programme claims." }
+  ] },
+  "structuredFacts": { "name": "Université Joseph Ki-Zerbo", "type": "Public university", "programs": [], "missingForPublication": [ "current official medical-programme title, award, duration and campus", "instruction language and international eligibility", "current fees and mandatory costs", "current intake, deadline and application documents", "clinical training, accommodation/support and programme recognition evidence" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted: programme-level facts were not available from current authoritative sources." }
+}

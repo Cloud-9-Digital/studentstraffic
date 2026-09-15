@@ -1,0 +1,59 @@
+{
+  "countrySlug": "panama",
+  "universitySlug": "universidad-americana-panama-faculty-of-medical-sciences",
+  "schoolName": "Universidad Americana Panama Faculty of Medical Sciences",
+  "cityName": "Panama City",
+  "priority": "medium",
+  "officialWebsite": "https://uam.edu.pa/doctor-en-medicina-y-cirugia/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Universidad Americana's Doctor en Medicina y Cirugía is a six-year, in-person programme at Panamá Este, with CTDA Resolution 145-2026 dated 12 June 2026. The university explicitly publishes an international-applicant document route (apostilled/authenticated school records, Spanish translation where needed, MEDUCA recognition/convalidation, health and vaccination documents, psychology test and propedeutic course). It also requires a 768-hour clinical practice for graduation. Nevertheless, the programme approval is very recent, and the reviewed material lacks an official fee schedule, evidence of completed clinical-partner arrangements, language-of-instruction statement, accommodation/support terms and audience-relevant recognition/licensing evidence. It should not be published as established conversion content until that evidence exists.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Universidad Americana Panama — Doctor en Medicina y Cirugía",
+        "url": "https://uam.edu.pa/doctor-en-medicina-y-cirugia/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Official programme page gives CTDA-145-2026 dated 12 June 2026, Panamá Este location, in-person mode, six-year duration, foreign-student requirements and the 768-hour clinical-practice graduation requirement."
+      },
+      {
+        "label": "Universidad Americana Panama — Faculty of Medical Sciences",
+        "url": "https://uam.edu.pa/facultad-de-ciencias-medicas-y-de-salud/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Faculty page lists Doctor en Medicina y Cirugía and the CTDA-145-2026 resolution."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Universidad Americana Panama Faculty of Medical Sciences",
+    "city": "Panama City",
+    "type": "Private",
+    "officialWebsite": "https://uam.edu.pa/doctor-en-medicina-y-cirugia/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Current official fee schedule and total cost of attendance",
+      "Explicit language-of-instruction statement",
+      "Verified clinical-partner and implementation evidence following the 2026 programme approval",
+      "Verified accommodation and continuing student-support terms",
+      "Audience-relevant recognition and graduate-licensing evidence"
+    ],
+    "notes": "The university's foreign-admissions checklist is concrete and valuable, but approval in June 2026 does not by itself substantiate a mature clinical training track or external recognition claims."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative content is intentionally blank. The course has a verified current approval and international document checklist, but publishing recruitment content now would overstate unverified costs, delivery, clinical access and recognition."
+  }
+}

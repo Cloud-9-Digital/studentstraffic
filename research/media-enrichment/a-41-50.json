@@ -1,0 +1,210 @@
+{
+  "batchId": "media-a-41-50",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official website or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "bishkek-international-medical-institute",
+      "universityName": "Bishkek International Medical Institute",
+      "missing": [
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.bimi.edu.kg/_next/static/media/logo.5a40f8d3.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset referenced by BIMI's official English homepage",
+        "proposedPublicId": "bishkek-international-medical-institute-logo",
+        "appliedAt": "2026-07-25"
+      },
+      "status": "ready",
+      "reason": "Logo applied to the database on 2026-07-25. Cover still outstanding: the sourced URL (https://bimi.edu.kg/images/og-image.jpg) returned HTTP 404 at upload time despite resolving during research. Needs a fresh cover asset in a future pass."
+    },
+    {
+      "universitySlug": "brandeis-university",
+      "universityName": "Brandeis University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.brandeis.edu/_files/favicons/apple-touch-icon-180x180.png",
+        "sourceType": "official",
+        "rightsBasis": "official university identity asset served from brandeis.edu",
+        "proposedPublicId": "brandeis-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.brandeis.edu/images/campus-walking-spring.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional campus image from the university homepage",
+        "proposedPublicId": "brandeis-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "brandon-university-nursing",
+      "universityName": "Brandon University Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.brandonu.ca/wp-content/themes/bu-skel-2014/images/crest.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Brandon University crest served from the university website",
+        "proposedPublicId": "brandon-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.brandonu.ca/wp-content/uploads/2025/04/Residence-Slide-2-980x300.png",
+        "sourceType": "official",
+        "rightsBasis": "official university residential-life image from the university homepage",
+        "proposedPublicId": "brandon-university-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "bcit-nursing",
+      "universityName": "British Columbia Institute of Technology Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): This is a BCIT program record; sourced the parent institution's Wikimedia Commons logo and campus photo (not checked in the first pass, which only looked at bcit.ca directly)..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/BCIT_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "bcit-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/BCITCampus.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 3.0 Unported.",
+        "proposedPublicId": "bcit-nursing-cover"
+      }
+    },
+    {
+      "universitySlug": "brock-university",
+      "universityName": "Brock University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): brocku.ca still returns HTTP 403 to direct fetches, confirming the first-pass block. Wikimedia Commons (a different source entirely, not the blocked official site) has a current 2022 PD logo and a PD campus photo..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Brock_University_Logo_2022.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "brock-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Brock_University_campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, released into the public domain by the copyright holder (PD-self).",
+        "proposedPublicId": "brock-university-cover"
+      }
+    },
+    {
+      "universitySlug": "brock-university-nursing",
+      "universityName": "Brock University Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Brock University Nursing is a program of Brock University; applied the same Wikimedia Commons parent-brand logo and campus photo used for the main Brock University record, since brocku.ca is 403-blocked for both..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Brock_University_Logo_2022.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, PD-textlogo (simple shapes/text below threshold of originality); trademark still applies.",
+        "proposedPublicId": "brock-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Brock_University_campus.JPG",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, released into the public domain by the copyright holder (PD-self).",
+        "proposedPublicId": "brock-university-nursing-cover"
+      }
+    },
+    {
+      "universitySlug": "budapest-university-technology-economics",
+      "universityName": "Budapest University of Technology and Economics",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Wikimedia Commons has an official BME wordmark (BME Logo Unterz horizontal 3c.svg) and a CC-BY-SA photo of the K building, the university's main building; neither was checked in the first pass, which focused on BME's own copyright notice..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/BME_Logo_Unterz_horizontal_3c.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+        "proposedPublicId": "budapest-university-technology-economics-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/BME_K_building.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC BY-SA 4.0 International.",
+        "proposedPublicId": "budapest-university-technology-economics-cover"
+      }
+    },
+    {
+      "universitySlug": "bukhara-innovative-education",
+      "universityName": "Bukhara Innovative Education and Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://bitu.uz/static/images/bitu-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official brand asset served from BITU's English website",
+        "proposedPublicId": "bukhara-innovative-education-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://bitu.uz/media/settings/hero/photo_2026-05-04_16-13-57.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official institutional hero image served from BITU's English website",
+        "proposedPublicId": "bukhara-innovative-education-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "bukhara-state-medical-institute-abu-ali-ibn-sino",
+      "universityName": "Bukhara State Medical Institute Abu Ali ibn Sino",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Found the direct logo file referenced in BSMI's own press-service article about the logo's unveiling (technique: dedicated press page). Cover remains unresolved: the homepage and general-information page only surface unlabeled news thumbnails and event photos, no clean campus building shot; left on hold rather than substituting a news image.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://bsmi.uz/wp-content/uploads/2022/01/logo_250x250.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct file served from the institute's own domain (bsmi.uz), also embedded in the institute's own press-service article announcing the logo.",
+        "proposedPublicId": "bukhara-state-medical-institute-abu-ali-ibn-sino-logo"
+      }
+    },
+    {
+      "universitySlug": "buryat-state-university-medical-institute",
+      "universityName": "Buryat State University Medical Institute",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass only checked the university's Commons category, which has no logo; the parent bsu.ru site itself serves a full vector logo directly. Commons separately has a CC0 photo specifically labelled as the Medical Institute building, not just generic campus slider art..",
+      "logo": {
+        "sourceUrl": "https://www.bsu.ru/v7/i/logo_w_full.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official vector logo served directly from Buryat State University's own site header.",
+        "proposedPublicId": "buryat-state-university-medical-institute-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/The_building_of_the_Medical_Institute_of_the_Buryat_University.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, CC0 1.0 Universal Public Domain Dedication.",
+        "proposedPublicId": "buryat-state-university-medical-institute-cover"
+      }
+    }
+  ]
+}

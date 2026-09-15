@@ -1,0 +1,37 @@
+{
+  "scope": "Saint Kitts and Nevis medical discovery — University of Medicine and Health Sciences",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "UMHS publishes a four-semester basic-science programme in St. Kitts, followed by a fifth semester in Portland, Maine and 78 weeks of clinical rotations at US and Canadian teaching hospitals (48 core and 30 elective weeks).",
+      "sourceUrl": "https://www.umhs-sk.org/clinical-program",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMHS's published September 2026 fee schedule lists basic-science tuition of US$18,550 per semester plus listed fees, and clinical-science tuition of US$21,200 per semester plus listed insurance. It also identifies housing, living expenses, books, supplies and travel as indirect costs.",
+      "sourceUrl": "https://www.umhs-sk.org/tuition-and-fees",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "UMHS publishes 90 undergraduate credits and specified science, English and mathematics prerequisites. Its international-admissions page requires evaluation of overseas coursework and notarised English translations, and sets TOEFL minima where English is not the applicant's principal language.",
+      "sourceUrl": "https://www.umhs-sk.org/admission-process",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The 2025–2026 UMHS catalogue states that the St. Christopher and Nevis Accreditation Board granted UMHS accreditations in 2012, 2017 and 2023, and describes full ACCM accreditation; this is a university-published assertion rather than a current regulator decision retrieved directly.",
+      "sourceUrl": "https://www.umhs-sk.org/hubfs/UMHS_Course_Catalog_v2024-2025.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "A current direct decision or register entry from the Saint Kitts and Nevis regulator and a current direct ACCM programme decision were not retrieved; the published catalogue's recognition claims alone are insufficient for a formal recognition badge.",
+    "Named clinical affiliations, placement capacity and current placement eligibility require direct current confirmation before lead-facing clinical-training claims are written.",
+    "Scholarship, loan and housing eligibility must be checked against the current policy pages before any conversion copy is prepared."
+  ],
+  "nextAction": "Obtain current regulator and ACCM records, then validate named clinical partners and student-support terms before considering a publishable payload."
+}

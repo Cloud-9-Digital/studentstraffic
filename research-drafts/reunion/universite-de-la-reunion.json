@@ -1,0 +1,19 @@
+{
+  "countrySlug": "reunion",
+  "universitySlug": "universite-de-la-reunion",
+  "schoolName": "Université de La Réunion",
+  "cityName": "Saint-Denis",
+  "priority": "medium",
+  "officialWebsite": "https://www.univ-reunion.fr/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD - Université de La Réunion's official Faculty of Health material documents the local DFGSM, DFASM and third-cycle medical-study progression toward the French State Diploma of Doctor of Medicine. It describes teaching and internships with Réunion and Mayotte hospital centres. Hold pending a single current admission/fee packet for the intended audience, language-of-instruction confirmation in the admissions terms, and scoped eligibility/visa guidance before publication.",
+  "sourceBundle": { "sources": [
+    { "label": "Université de La Réunion DFGSM", "url": "https://www.univ-reunion.fr/en/fiche-formation/diplome-de-formation-generale-en-sciences-medicales-dfgsm/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the general medical-sciences diploma, preparation for DFASM and third-cycle medical study, and local clinical teaching/internship collaboration with Réunion and Mayotte hospitals." },
+    { "label": "Université de La Réunion DFASM", "url": "https://www.univ-reunion.fr/en/fiche-formation/dfasm/", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Describes the second cycle introduced locally in 2023 and states its competencies prepare students to claim the State Diploma of Doctor of Medicine at the end of third-cycle study." },
+    { "label": "Université de La Réunion PASS", "url": "https://www.univ-reunion.fr/fiche-formation/pass/", "kind": "official-admissions", "checkedAt": "2026-07-25", "notes": "Describes PASS selection access to medicine and other health programmes; route-specific admission conditions require current applicant guidance." },
+    { "label": "Université de La Réunion third-cycle medicine registration", "url": "https://www.univ-reunion.fr/choisir-sa-formation/inscriptions/etudiant-en-3eme-cycle-de-medecine/", "kind": "official-fees", "checkedAt": "2026-07-25", "notes": "Lists ministerially set 2026 registration charges for DES and thesis registrations; this is not a full programme-cost schedule." }
+  ] },
+  "structuredFacts": { "name": "Université de La Réunion", "type": "Public university", "programs": [ { "officialTitle": "Medical studies leading to the French State Diploma of Doctor of Medicine", "duration": "Three-cycle medical-study pathway; local DFGSM, DFASM and third-cycle DES components are documented", "feeStatus": "Official third-cycle page lists 2026 ministerial registration charges of EUR 526 for DES and EUR 398 for the thesis year; a full route cost is not established in this draft.", "publishable": false } ], "missingForPublication": [ "current full admission path and eligibility packet for the intended audience", "language-of-instruction and language-proof requirements", "full registration, living, insurance and clinical-phase cost reconciliation", "visa/residency requirements for non-EU applicants", "scope of professional-recognition guidance by target market" ] },
+  "draftContent": { "summary": "", "faq": [], "notes": "No public narrative drafted until the target-audience admission, language and cost facts are fully scoped." }
+}

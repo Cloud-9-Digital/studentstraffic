@@ -1,0 +1,400 @@
+{
+  "countries": [
+    {
+      "slug": "zambia",
+      "name": "Zambia",
+      "region": "Africa",
+      "summary": "Zambia is a Southern African nation whose flagship public university runs an English-medium, direct-entry MBChB programme with a WHO-listed medical school dating to the 1960s, drawing international students from the region and beyond.",
+      "whyStudentsChooseIt": "Zambia offers an English-medium medical degree at a public university with a long operating history, a large national teaching hospital directly adjacent to the medical campus, and a lower overall cost than many other international MBBS destinations.",
+      "climate": "Subtropical highland climate with a warm, wet season from November to April and a cooler, dry season from May to August.",
+      "currencyCode": "ZMW",
+      "metaTitle": "Study MBBS and Medicine in Zambia",
+      "metaDescription": "Explore English-medium MBChB programs in Zambia, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 7,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Zambia maps its Bachelor of Medicine and Surgery (MBChB) programme to this category: a direct-entry, single-cycle seven-year programme.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "zambia",
+      "slug": "university-of-zambia",
+      "name": "University of Zambia",
+      "city": "Lusaka",
+      "type": "Public",
+      "establishedYear": 1966,
+      "officialWebsite": "https://www.unza.zm/medicine",
+      "mediaAttribution": {},
+      "summary": "University of Zambia's School of Medicine began instruction in 1966 and runs an English-medium, direct-entry Bachelor of Medicine and Surgery (MBChB) programme explicitly open to both Zambian nationals and international students. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 1967 onward, and degrees are noted as acceptable to Canadian provincial and territorial medical regulators.",
+      "campusLifestyle": "The School of Medicine is based at UNZA's Ridgeway Campus, roughly half a kilometre from University Teaching Hospital, with the Dean's Office and clinical departments physically located within the hospital and its consultants holding honorary lecturer appointments. English is the medium of instruction and examination across the university, and international applicants are explicitly told they do not need to submit separate English-proficiency test scores.",
+      "cityProfile": "Lusaka is Zambia's capital. University Teaching Hospital, a roughly 1,800-bed facility next to the Ridgeway Campus, anchors clinical training for the School of Medicine, with Chainama Hills Hospital and unnamed urban clinics as additional sites.",
+      "practicalExposure": "The MBChB is a seven-year programme, confirmed both by the university's own programme page and by the WHO World Directory of Medical Schools; a claim that the duration was recently shortened to six years could not be independently verified and should not be relied on. Clinical training is anchored at University Teaching Hospital, supplemented by Chainama Hills Hospital and other urban clinics; a detailed year-by-year clinical curriculum breakdown was not published on the university's current site. Graduates receive the MBChB and, for those pursuing US or Canadian pathways, benefit from the school's ECFMG-eligible and Canada-MCC-acceptable WHO listing status.",
+      "hostelOverview": "The Ridgeway Campus, which hosts the School of Medicine, has 442 beds available, in shared two-student rooms, at an official rate of ZMW 5,850 per year; placement is not guaranteed for all students. The university's published international-student information is oriented mainly toward short-term exchange students, with full-degree international applicants directed to apply for housing through the Dean of Students' Office or the International Link Office on a first-come, first-served basis.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. International students arrange a required Zambian student (study) permit before travel, which includes a medical report and police clearance as part of the process.",
+      "studentSupport": "International applicants can direct queries to the Dean of Students' Office or the International Link Office, and the university offers three levels of remedial English courses for students who need additional language support after admission.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001674), currently operational, with ECFMG-certification eligibility for graduates from 1967 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "A long-established public medical school (instruction since 1966) explicitly open to both Zambian and international applicants, with the same academic entry bar applied to both.",
+        "No separate English-proficiency test (IELTS/TOEFL) is required for admission, since English is verified through the required secondary-school English credit.",
+        "Clinical training anchored directly at University Teaching Hospital, a roughly 1,800-bed national referral hospital adjacent to the medical campus.",
+        "A transparent, published official fee schedule with a clear four-installment payment structure."
+      ],
+      "thingsToConsider": [
+        "The most recently published application cycle (for the 2027 intake) closed on 17 April 2026; the university had not yet announced its next intake cycle at the time of research, and historically does not open a new cycle until around January of the year before intake.",
+        "WHO/FAIMER's record states an entrance exam is required, but the university's own admissions documents describe only grade/credit-based competitive selection with no standalone written exam -- this discrepancy is unresolved and worth confirming directly with admissions.",
+        "The university's own pages give conflicting founding dates for the School of Medicine (1965, 1966 and 1968 appear across different official pages); 1966 is used here as it matches the WHO/FAIMER record.",
+        "No scholarship specifically for international MBChB students was found; the university's medicine-related bursary (Ridge Bursary Awards) is restricted to Zambian health workers pursuing postgraduate study.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students who meet the standard secondary-school science entry bar (five O-Level-equivalent credits including English, Mathematics and Biology) and are comfortable with a grade-based, competitive selection process.",
+        "Applicants prioritizing a lower overall cost and direct clinical access to a large national teaching hospital.",
+        "Families able to confirm the next application cycle's dates directly with the university, since a new cycle was not open at the time of this record's research."
+      ],
+      "industryPartners": [
+        "University Teaching Hospital",
+        "Chainama Hills Hospital"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0001674), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1967-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — University of Zambia School of Medicine listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0001674" },
+        { "label": "University of Zambia — official School of Medicine page", "url": "https://www.unza.zm/medicine" }
+      ],
+      "faq": [
+        {
+          "question": "Is the MBChB programme direct-entry after high school?",
+          "answer": "Yes. Admission requires five O-Level-equivalent credits (English plus four others including Mathematics, Biology and Science, or Physics and Chemistry), with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MBChB (Bachelor of Medicine and Bachelor of Surgery), a joint degree confirmed as a 7-year programme by both the university and the WHO World Directory of Medical Schools."
+        },
+        {
+          "question": "Do I need to submit IELTS or TOEFL scores?",
+          "answer": "No. The university explicitly states international applicants do not need to submit English-proficiency test scores, since English proficiency is assessed through the required secondary-school English credit."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "ZMW 77,943 per year for international students, per the university's official fee schedule, paid in four installments of 25% each across the academic year."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a non-refundable ZMW 150 (about USD 60) international application fee, plus various annual and first-year-only administrative fees (registration, examination, recreation, medical, technology, library, student ID and a one-time non-refundable caution fee)."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The most recently published application cycle (for the 2027 intake) closed on 17 April 2026. The university had not yet published its next intake cycle at the time of research; historically, a new cycle opens around January of the year before the intake."
+        },
+        {
+          "question": "What is the application process for international students?",
+          "answer": "Applicants apply online via the university's official portal, pay the international application fee, and submit a Zambia Qualifications Authority (ZAQA) equivalence certification for foreign secondary results. Separately, international students must apply for a Zambian student permit before travelling, initiated while still outside Zambia."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — University of Zambia School of Medicine listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0001674",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, programme duration, ECFMG graduation-year eligibility and Canada MCC acceptability."
+        },
+        {
+          "label": "University of Zambia — official Admission Requirements page",
+          "url": "https://www.unza.zm/academics/undergraduate/requirements",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for eligibility criteria and entry-subject requirements."
+        },
+        {
+          "label": "University of Zambia — 2027-intake Online Undergraduate Admission Advert (PDF)",
+          "url": "https://www.unza.zm/sites/default/files/article_files/2026-01/2026%20JANUARY%20ONLINE%20UNDERGRADUATE%20ADMISSION%20ADVERT.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the confirmed 2027-intake application window and deadline, and the ZAQA equivalence requirement."
+        },
+        {
+          "label": "University of Zambia — official Undergraduate Fees page",
+          "url": "https://www.unza.zm/academics/undergraduate/fees",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for confirmed international tuition, other fees, payment structure and accommodation cost."
+        },
+        {
+          "label": "University of Zambia — official International Students page",
+          "url": "https://www.unza.zm/academics/international-students",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the English-proficiency policy and the student-permit/visa application process."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-zambia-mbchb",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine and Surgery (MBChB)",
+          "durationYears": 7,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026",
+            "officialFeeCurrency": "ZMW",
+            "officialAnnualTuitionAmount": 77943,
+            "officialTotalTuitionAmount": 545601,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published international tuition: ZMW 77,943/year, per the university's official Undergraduate Fees page (mirrored on the MBChB programme page's Finance tab). Total is calculated as the annual figure times 7 years -- not published as a lump sum. Paid in 4 installments of 25% each (registration, end of first term, second term, before the final exam). Additional annual/first-year fees apply (registration, examination per course, recreation, medical, technology, library, student ID, and a one-time non-refundable caution fee). Only the caution fee is explicitly stated as non-refundable; no general tuition refund policy was found. A separate ZMW 150 (about USD 60) non-refundable application fee applies for international applicants."
+          },
+          "officialProgramUrl": "https://unza.zm/undergraduate/school-of-medicine/surgery/bachelor-of-medicine-and-surgery",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with five O-Level-equivalent credits including English, Mathematics, Biology and Science (or Physics and Chemistry)"
+            ],
+            "restrictions": [
+              "Foreign secondary-school results must be certified by the Zambia Qualifications Authority (ZAQA) for equivalence",
+              "Meeting the minimum entry requirements does not guarantee admission, since places are competitive",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "No separate English-proficiency test (IELTS/TOEFL) is required; WHO/FAIMER's record states an entrance exam is required, but the university's own admissions documents describe only grade/credit-based competitive selection -- this discrepancy is unresolved.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.unza.zm/academics/undergraduate/requirements"
+          },
+          "admissionsContent": {
+            "overview": "Applicants apply online via the university's official application portal, pay the international application fee, submit ZAQA-certified secondary results and supporting documents, and separately apply for a Zambian student permit before travelling.",
+            "eligibility": {
+              "intro": "Admission requires five O-Level-equivalent credits including English, Mathematics, Biology and Science (or Physics and Chemistry), certified for equivalence via ZAQA for foreign qualifications, with places awarded competitively.",
+              "items": [
+                "Five O-Level-equivalent credits: English plus Mathematics, Biology and Science (or Physics and Chemistry)",
+                "Zambia Qualifications Authority (ZAQA) equivalence certification for non-Zambian secondary results",
+                "No separate English-proficiency test required; assessed via the required English credit",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Apply online via the official application portal (oap.unza.ac.zm/apply)",
+              "Pay the non-refundable ZMW 150 (about USD 60) international application fee",
+              "Submit ZAQA-certified secondary results, a passport copy and other required documents",
+              "Select up to 3 programme choices, with Medicine as a first choice if desired",
+              "If admitted, apply for a Zambian student (study) permit while still outside Zambia, including a medical report and police clearance"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified secondary-school results (ZAQA-certified for foreign qualifications)",
+                "Passport copy (in place of a national ID for non-Zambian applicants)"
+              ],
+              "application": [
+                "Proof of application-fee payment",
+                "Letter of acceptance (for the subsequent study-permit application)",
+                "Proof of sponsor's financial commitment or scholarship certification, for the study-permit application",
+                "Medical report and police clearance, for the study-permit application"
+              ]
+            },
+            "deadlinesNote": "The most recently published cycle (2027 intake) had an application deadline of 17 April 2026, now passed. The university had not yet published its next intake cycle at the time of research; historically a new cycle opens around January of the year before intake.",
+            "visaConsiderations": [
+              "International students must apply for a Zambian student permit before travelling, initiated while still outside Zambia, including a medical report, police clearance and proof of financial sponsorship."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed international tuition is ZMW 77,943/year, per the university's official Undergraduate Fees page, paid in 4 installments of 25% each. Additional annual and first-year-only fees apply, alongside a separate ZMW 150 (about USD 60) international application fee. Only the caution fee is explicitly non-refundable; no general tuition refund policy was published.",
+          "teachingPhases": [
+            {
+              "phase": "7-year Bachelor of Medicine and Surgery programme",
+              "language": "English",
+              "details": "A competence-based, integrated curriculum with problem-based learning and community-based education, reviewed circa 2012-2013; clinical training runs at University Teaching Hospital and Chainama Hills Hospital. A detailed year-by-year pre-clinical/clinical breakdown was not published on the university's current site."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-zambia",
+      "publicField": "identity",
+      "claimText": "University of Zambia School of Medicine instruction started in 1966, per the WHO/FAIMER record; the university's own pages give conflicting founding dates (1965 and 1968) across different official pages.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0001674",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0001674",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-zambia",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0001674), currently operational; graduates (1967-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0001674",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0001674",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-zambia",
+      "programmeSlug": "university-of-zambia-mbchb",
+      "publicField": "academics",
+      "claimText": "MBChB is a 7-year, direct-entry programme confirmed by both the official programme page and the WHO World Directory of Medical Schools, taught in English, explicitly open to Zambian nationals and international students.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — official Bachelor of Medicine and Surgery programme page",
+      "sourceUrl": "https://unza.zm/undergraduate/school-of-medicine/surgery/bachelor-of-medicine-and-surgery",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-zambia",
+      "programmeSlug": "university-of-zambia-mbchb",
+      "publicField": "eligibility",
+      "claimText": "Admission requires 5 O-Level-equivalent credits (English, Mathematics, Biology, Science or Physics/Chemistry); no separate English-proficiency test is required; foreign results require ZAQA equivalence certification.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — official Admission Requirements and International Students pages",
+      "sourceUrl": "https://www.unza.zm/academics/undergraduate/requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-zambia",
+      "programmeSlug": "university-of-zambia-mbchb",
+      "publicField": "admissions",
+      "claimText": "Application via official online portal with a ZMW 150 (USD 60) international application fee; required documents include ZAQA-certified results; a separate Zambian student permit process applies for international students.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — 2027-intake Online Undergraduate Admission Advert (PDF)",
+      "sourceUrl": "https://www.unza.zm/sites/default/files/article_files/2026-01/2026%20JANUARY%20ONLINE%20UNDERGRADUATE%20ADMISSION%20ADVERT.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-zambia",
+      "programmeSlug": "university-of-zambia-mbchb",
+      "publicField": "intake",
+      "claimText": "The most recently published cycle (2027 intake) had an application deadline of 17 April 2026, already passed; the university had not yet published its next intake cycle at the time of research.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — 2027-intake Online Undergraduate Admission Advert (PDF)",
+      "sourceUrl": "https://www.unza.zm/sites/default/files/article_files/2026-01/2026%20JANUARY%20ONLINE%20UNDERGRADUATE%20ADMISSION%20ADVERT.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-zambia",
+      "programmeSlug": "university-of-zambia-mbchb",
+      "publicField": "fee",
+      "claimText": "International tuition: ZMW 77,943/year, paid in 4 installments of 25% each, plus various annual/first-year administrative fees; only the caution fee is explicitly non-refundable.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — official Undergraduate Fees page",
+      "sourceUrl": "https://www.unza.zm/academics/undergraduate/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-zambia",
+      "programmeSlug": "university-of-zambia-mbchb",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training is anchored at University Teaching Hospital (roughly 1,800 beds), adjacent to the Ridgeway Campus, with Chainama Hills Hospital as an additional named site.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — official School of Medicine About page",
+      "sourceUrl": "https://www.unza.zm/medicine/about",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-zambia",
+      "publicField": "student living",
+      "claimText": "Ridgeway Campus (hosting the School of Medicine) has 442 beds in shared 2-student rooms at ZMW 5,850/year, not guaranteed; international-student housing information is oriented mainly toward short-term exchange students.",
+      "status": "verified",
+      "sourceLabel": "University of Zambia — official Undergraduate Fees page and Accommodation page",
+      "sourceUrl": "https://www.unza.zm/academics/undergraduate/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

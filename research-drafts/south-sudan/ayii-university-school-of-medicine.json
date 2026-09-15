@@ -1,0 +1,81 @@
+{
+  "countrySlug": "south-sudan",
+  "universitySlug": "ayii-university-school-of-medicine",
+  "schoolName": "Ayii University School of Medicine",
+  "cityName": "Juba",
+  "priority": "low",
+  "officialWebsite": "https://ayiiuniversity.edu.ss/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Ayii University's active official site presents a six-year Bachelor of Medicine & Bachelor of Surgery, a listed annual fee of USD 1,200, entry requirements and an online application process. It also publishes clinical-placement claims for Juba Teaching Hospital, Juba Civil Hospital, Munuki Health Centre and St. Mary's Medical Centre. All of these claims are first-party. The only 2025/26 application notice located is historical, and no independent current accreditation record, professional-recognition pathway, international-applicant procedure, language-of-instruction confirmation, accommodation/insurance evidence, or independently verified clinical agreement was found. The site should not convert this into a medical-study-abroad lead page; the record is retained only as a held research candidate.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Ayii University — Bachelor Degree Programmes",
+        "url": "https://ayiiuniversity.edu.ss/bachelor",
+        "kind": "official-program",
+        "checkedAt": "2026-07-25",
+        "notes": "Active page lists a six-year MBBS, curriculum progression and domestic/equivalent secondary-school entry conditions; it says applications are rolling."
+      },
+      {
+        "label": "Ayii University — Fees and Tuition",
+        "url": "https://ayiiuniversity.edu.ss/fees",
+        "kind": "official-fees",
+        "checkedAt": "2026-07-25",
+        "notes": "Lists MBBS as six years with USD 1,200 annual fee and semester/annual payment options. It does not provide a full international cost of attendance or fee effective date."
+      },
+      {
+        "label": "Ayii University — Admissions",
+        "url": "https://ayiiuniversity.edu.ss/admissions",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-25",
+        "notes": "Sets out application documents and process; the listed key dates are for 2025, so they are not represented as a current intake calendar."
+      },
+      {
+        "label": "Ayii University — Internship and attachments",
+        "url": "https://ayiiuniversity.edu.ss/internship",
+        "kind": "official-clinical",
+        "checkedAt": "2026-07-25",
+        "notes": "Claims clinical placement partners and a six-month placement. Those details require independent confirmation before any student-facing clinical-training promise."
+      },
+      {
+        "label": "Ayii University — About",
+        "url": "https://ayiiuniversity.edu.ss/about",
+        "kind": "official-university",
+        "checkedAt": "2026-07-25",
+        "notes": "Institution claims full accreditation from the South Sudan Higher Education Authority. No government/regulator source confirming programme-level status was located in this bounded pass."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Ayii University School of Medicine",
+    "city": "Juba",
+    "type": "Private",
+    "officialWebsite": "https://ayiiuniversity.edu.ss/",
+    "bestFitFor": [],
+    "programs": [],
+    "missingForPublication": [
+      "Current independent institutional and programme accreditation evidence",
+      "Authoritative international-applicant, visa and document-recognition procedure",
+      "Explicit language-of-instruction statement",
+      "Independent confirmation of clinical-placement agreements and MBBS-specific requirements",
+      "Verified accommodation, insurance, safeguarding and continuity support",
+      "Audience-relevant medical licensing and recognition route"
+    ],
+    "notes": "Ayii's web presence provides programme, cost and claimed clinical information, but the complete assurance bundle required for an international medical destination is absent."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative content remains blank. The source base is primarily institutional self-reporting, and not enough to support authoritative commercial recruitment content for a high-dependency professional course."
+  }
+}

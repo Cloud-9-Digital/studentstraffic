@@ -1,0 +1,38 @@
+{
+  "university": "Pavol Jozef Safarik University in Kosice, Faculty of Medicine",
+  "country": "Slovakia",
+  "programme": "General Medicine (English)",
+  "migrationId": "0087-slovakia-upjs-kosice-general-medicine",
+  "status": "researching",
+  "checkedAt": "2026-07-25",
+  "confirmedFacts": [
+    "The Faculty offers General Medicine in English; the programme lasts six years and awards MUDr.",
+    "For 2026/27, the university fee regulation sets English-language General Medicine tuition at EUR 13,000 per academic year.",
+    "Admission requires a written multiple-choice entrance examination in Biology and Chemistry; the published 2026 sitting dates are 17 June and 12 August in Kosice.",
+    "The admission page states 210 places for full-time General Medicine and identifies English as the language of instruction.",
+    "The university academic-calendar page links a 2026/27 university schedule."
+  ],
+  "officialEvidence": [
+    {
+      "url": "https://www.upjs.sk/lekarska-fakulta/en/for-applicants/programs-in-english/",
+      "use": "English programme availability, six-year duration and qualification."
+    },
+    {
+      "url": "https://www.upjs.sk/app/uploads/sites/9/2026/03/Rectors-Decision-No.-3_2026_Fees_2026_2027.pdf",
+      "use": "2026/27 English General Medicine annual tuition of EUR 13,000."
+    },
+    {
+      "url": "https://www.upjs.sk/lekarska-fakulta/en/for-applicants/entrance-examination/",
+      "use": "Biology/Chemistry written test, 2026 dates, 210 General Medicine places."
+    },
+    {
+      "url": "https://www.upjs.sk/lekarska-fakulta/en/actuality/official-statement-of-the-faculty-of-medicine-pavol-jozef-safarik-university-in-kosice-on-the-admission-procedure-for-study-programmes-taught-in-english/",
+      "use": "June 2026 confirmation that 2026/27 English General Medicine admission is governed by the official conditions and successful entrance examination."
+    }
+  ],
+  "gapsBeforeResearchReadyPayload": [
+    "Obtain the linked 2026/27 Faculty admission-conditions document for complete eligibility, documents, application deadline and fee details.",
+    "Confirm official accommodation availability and present-day rate before creating a hostel claim.",
+    "Identify a current primary recognition/accreditation source; do not infer international licensing eligibility from the degree title."
+  ]
+}

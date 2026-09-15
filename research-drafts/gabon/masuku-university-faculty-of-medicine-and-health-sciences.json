@@ -1,0 +1,19 @@
+{
+  "countrySlug": "gabon",
+  "universitySlug": "masuku-university-faculty-of-medicine-and-health-sciences",
+  "schoolName": "Université des Sciences et Techniques de Masuku — Faculté de Médecine et des Sciences de la Santé",
+  "cityName": "Franceville",
+  "priority": "medium",
+  "officialWebsite": "https://presidence.ga/2025/01/05/communique-final-du-conseil-des-ministres-du-05-janvier-2025/",
+  "status": "hold",
+  "verifiedAt": "2026-07-25",
+  "reviewNotes": "HOLD — Gabon's official record confirms the January/February 2025 creation of a Faculty of Medicine and Health Sciences at USTM. The faculty is too new for this pass to establish an operating medical programme, intake, fees, instruction language, clinical training, admissions, recognition or support arrangements. It must not be represented as an available medical programme until USTM and the Gabon regulator publish those details.",
+  "sourceBundle": {
+    "sources": [
+      {"label": "Gabon Presidency Council of Ministers communiqué", "url": "https://presidence.ga/2025/01/05/communique-final-du-conseil-des-ministres-du-05-janvier-2025/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Records creation of a Faculty of Medicine and Health Sciences at Université des Sciences et Techniques de Masuku."},
+      {"label": "Gabon government USTM visit", "url": "https://gouvernement.ga/2026/03/22/gabon-haut-ogooue-enseignement-superieur-le-ministre-charles-edgar-mombo-dresse-un-etat-des-lieux-du-secteur/", "kind": "government", "checkedAt": "2026-07-25", "notes": "Confirms current USTM activity in Franceville, but does not document a medicine intake."}
+    ]
+  },
+  "structuredFacts": {"name": "Université des Sciences et Techniques de Masuku — Faculté de Médecine et des Sciences de la Santé", "type": "Public", "programs": [], "missingForPublication": ["current operational programme confirmation", "fees", "language", "admissions", "clinical placements", "recognition", "student support"]},
+  "draftContent": {"summary": "", "faq": [], "notes": "No public copy drafted; a new faculty is not evidence of a current international medical offering."}
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "universitySlug": "amity-university-noida",
+    "universityName": "Amity University, Noida",
+    "missing": ["logo", "cover"],
+    "logo": {
+      "status": "hold",
+      "reason": "No rights-safe logo source could be confirmed. The university's own domains (www.amity.edu, noida.amity.edu, including the dedicated /amity-university-logo brand page found via search) did not resolve from this research environment - both curl (TLS renegotiation failure / timeout) and a rendering browser returned empty responses on every attempt, so no official brand-asset page could be read. The only copy found on Wikimedia Commons (File:Old-amity-logo.png) is an outdated/unofficial upload with no clear own-work or free licence attached to the current mark, and the logo used in the Wikipedia infobox (File:Amity_University_logo.png) is tagged non-free fair-use on English Wikipedia, which is not reusable here. Aggregator/vector sites (Brandfetch, PNGEgg, PNGWing, freelogovectors, vectorseek) surfaced in search are explicitly excluded by the rights rules. Recommend a follow-up attempt from a network path that can reach amity.edu, or direct outreach to Amity's media/communications office."
+    },
+    "cover": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amity_Campus_Noida_Delhi.jpg",
+      "sourceType": "wikimedia",
+      "rightsBasis": "Wikimedia Commons file page states this is the uploader's own work, licensed CC BY 4.0 (wgCategories includes \"CC-BY-4.0\" and \"Self-published work\"), and the file is categorized under Category:Amity University, Noida, i.e. the Noida campus specifically (not Lucknow, Greater Noida, Dubai or Tashkent). Direct asset resolves at https://upload.wikimedia.org/wikipedia/commons/b/be/Amity_Campus_Noida_Delhi.jpg (HTTP 200, image/jpeg).",
+      "proposedPublicId": "amity-university-noida-cover"
+    },
+    "status": "ready",
+    "reason": "Logo remains outstanding: Amity's own domains (www.amity.edu, noida.amity.edu) were unreachable from this research environment and no rights-safe alternative exists (Commons/Wikipedia copies are unofficial or non-free fair-use, and aggregator sites are excluded by the rights rules). Needs a retry from a different network path or direct contact with Amity's media/communications office. The cover asset above is verified and rights-cleared."
+  },
+  {
+    "universitySlug": "amrita-vishwa-vidyapeetham",
+    "universityName": "Amrita Vishwa Vidyapeetham",
+    "missing": ["logo", "cover"],
+    "logo": {
+      "sourceUrl": "https://webfiles.amrita.edu/2026/02/amrita-red-logo-new.svg",
+      "sourceType": "official",
+      "rightsBasis": "Official brand asset served from the university's own CDN (webfiles.amrita.edu) and rendered as the header logo (alt text \"Amrita Vishwa Vidyapeetham\") on the university's own homepage (www.amrita.edu) as of this check; also referenced on the official branding guidelines page at www.amrita.edu/branding/. URL resolves HTTP 200, image/svg+xml.",
+      "proposedPublicId": "amrita-vishwa-vidyapeetham-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://webfiles.amrita.edu/2020/05/2w4fqsOS-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-photo-1.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official institutional image served from the university's own CDN and used as the hero/background banner on the university's own Coimbatore campus page (www.amrita.edu/campus/coimbatore/). The filename itself identifies it as an aerial/drone photograph of the Coimbatore campus, which matches this payload's record city (Coimbatore) and its Coimbatore-campus programme and accreditation content. URL resolves HTTP 200, image/jpeg.",
+      "proposedPublicId": "amrita-vishwa-vidyapeetham-cover"
+    },
+    "status": "ready"
+  },
+  {
+    "universitySlug": "op-jindal-global-university",
+    "universityName": "O.P. Jindal Global University",
+    "missing": ["logo", "cover"],
+    "logo": {
+      "sourceUrl": "https://jgu.edu.in/front/assets/img/blue-logo.webp",
+      "sourceType": "official",
+      "rightsBasis": "Official brand asset served directly from the university's own site assets path and used as the site logo on the university's own homepage (jgu.edu.in). URL resolves HTTP 200.",
+      "proposedPublicId": "op-jindal-global-university-logo"
+    },
+    "cover": {
+      "sourceUrl": "https://jgu.edu.in/storage/1062/DJI_0020.jpg",
+      "sourceType": "official",
+      "rightsBasis": "Official institutional image served from the university's own storage path and used as the campus-overview slider image on the university's own Sonipat-focused page (jgu.edu.in/internationaloffice/sonipatindia/), the campus that this payload's record is scoped to. The filename (DJI_0020) is a stock drone-camera output name, consistent with an aerial photograph of the university's own 80-acre Sonipat campus. URL resolves HTTP 200, image/jpeg.",
+      "proposedPublicId": "op-jindal-global-university-cover"
+    },
+    "status": "ready"
+  }
+]

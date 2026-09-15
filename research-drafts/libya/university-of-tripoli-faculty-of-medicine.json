@@ -1,0 +1,36 @@
+{
+  "scope": "Libya medical discovery — University of Tripoli Faculty of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "University of Tripoli's programme directory lists a Bachelor in Medicine and General Surgery with a 10-semester, 166-unit study plan.",
+      "sourceUrl": "https://uot.edu.ly/programdetails.php?id=227&lang=en",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The programme directory describes basic-science, clinical and internship stages; clinical training takes place in Tripoli teaching hospitals and the internship assigns students to educational hospitals under doctors' supervision.",
+      "sourceUrl": "https://uot.edu.ly/programdetails.php?id=227&lang=en",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The Faculty's published MBChB syllabus describes seven academic and clinical training years, including a final one-year internship served as internal doctors in a teaching hospital.",
+      "sourceUrl": "https://uot.edu.ly/med/local/files/documents/1724064267_doc.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "The published MBChB syllabus states that limited annual admission requires excellent grades of at least 85% in the Medical Sciences branch of the Libyan secondary certificate and a competition examination; the current programme directory also lists a secondary certificate, acceptance test and interview among entry requirements.",
+      "sourceUrl": "https://uot.edu.ly/med/local/files/documents/1724064267_doc.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "The programme directory and syllabus present differing duration structures, requiring current faculty clarification before a publication-ready profile can be prepared.",
+    "Current official fee, recognition, instructional-language and student-support evidence remains incomplete."
+  ],
+  "nextAction": "Obtain a current Faculty of Medicine admission notice and fee/recognition/language/support publications, reconcile the programme duration, then complete the field-level review before publishing."
+}

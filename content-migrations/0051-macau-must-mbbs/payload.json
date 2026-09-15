@@ -1,0 +1,143 @@
+{
+  "countries": [
+    {
+      "slug": "macau",
+      "name": "Macau",
+      "region": "Asia",
+      "summary": "Macau is a special administrative region on China's southern coast. Macau University of Science and Technology offers the local Bachelor of Medicine and Bachelor of Surgery route covered in this catalogue, with programme approval and higher-education quality information recorded by the territory's education authority.",
+      "whyStudentsChooseIt": "Macau offers an approved six-year MBBS route with English as the stated instructional language, direct-admission qualification routes, a published non-Macao-resident fee table and locally based university services.",
+      "climate": "Humid subtropical climate with warm, wet summers and milder winters.",
+      "currencyCode": "HKD",
+      "metaTitle": "Study MBBS and Medicine in Macau",
+      "metaDescription": "Explore MBBS and medicine study options in Macau, including programme structure, fees, admissions and accommodation guidance."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": ["Bachelor of Medicine and Bachelor of Surgery", "Doctor of Medicine", "General Medicine", "Medicine and Surgery"],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for direct-entry medical degrees. Macau University of Science and Technology maps its Bachelor of Medicine and Bachelor of Surgery to this category: a six-year programme with five years of formal study and a compulsory supervised internship year.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "macau",
+      "slug": "macau-university-of-science-and-technology-faculty-of-medicine",
+      "name": "Macau University of Science and Technology Faculty of Medicine",
+      "city": "Macau",
+      "type": "Private",
+      "establishedYear": 2019,
+      "officialWebsite": "https://fmd.must.edu.mo/",
+      "mediaAttribution": {},
+      "summary": "Macau University of Science and Technology Faculty of Medicine offers an approved six-year Bachelor of Medicine and Bachelor of Surgery in Macau. The English-taught route combines five years of formal medical study with a compulsory supervised internship year, with published 2026/27 first-year fees and direct-admission qualification routes.",
+      "campusLifestyle": "The Faculty is based within Macau University of Science and Technology. Its on-campus University Hospital is described by MUST as the Faculty's teaching arm, combining clinical, teaching and research support; published facilities include operating theatres, an ICU, imaging, laboratory diagnostics, endoscopy and haemodialysis services.",
+      "cityProfile": "Macau is the programme location for the initial academic years and may be one internship-training location. The Faculty's current MBBS information also permits recognised training units beyond Macau, so the assigned final-year placement can affect clinical language, cost and day-to-day arrangements.",
+      "practicalExposure": "The competency-based MBBS runs five formal study years followed by a 12-month compulsory supervised internship. Year 3 includes hospital, family-medicine and community-health rotations for clinical examination practice with patients. The final clinical year is a year-long specialty clerkship with six eight-week rotations spanning surgery, medicine, obstetrics and gynaecology, paediatrics, family medicine, psychiatry, community medicine and subspecialties. MUST monitors internship experience and supervisor logbooks.",
+      "hostelOverview": "MUST requires non-local first- and second-year undergraduates to live in university dormitories and guarantees a place for non-local third-year undergraduates. The published dormitory rules do not provide one programme-wide room price in this packet; room type, availability and fee schedule should be selected as part of the applicant's documented cost plan.",
+      "dietarySupport": "No MBBS-specific meal plan or dietary-price schedule was identified in the reviewed official material. The cost plan therefore keeps food as a separate living-cost category instead of implying a university catering arrangement or a specific dietary option.",
+      "safetyOverview": "MUST's Student Affairs support menu includes counselling, group insurance and student-visa services. The programme record does not claim a safety ranking or a universal welfare outcome; it directs applicants to the relevant university service for the support that applies to their enrolment and residence status.",
+      "studentSupport": "Student Affairs publishes contacts for dormitory matters, counselling, scholarships, student visa and group insurance. The Faculty also states that it monitors the compulsory internship through clinical-experience records and signed supervisor logbooks, providing an academic follow-up mechanism during the final training year.",
+      "whyChoose": [
+        "Macao's Education and Youth Development Bureau lists the MUST MBBS as an approved bachelor programme.",
+        "The stated English-medium, six-year route includes five formal study years and a compulsory 12-month supervised internship.",
+        "The 2026/27 non-Macao-resident fee table publishes HKD 258,000 for first-year MBBS tuition, enabling a transparent first-year cost plan.",
+        "Year 3 clinical-foundation rotations and the final-year specialty clerkship create a documented progression from patient examination practice to supervised internship training.",
+        "MUST publishes multiple direct-admission qualification routes and an MBBS-specific faculty interview process."
+      ],
+      "thingsToConsider": [
+        "HKD 258,000 is the published 2026/27 first-year tuition, not a fixed six-year total; MUST says sixth-year internship charges vary by country and hospital and tuition may rise by about 5% annually.",
+        "Clinical placements may have different language requirements during teaching and assessment, depending on the training hospital location.",
+        "The 2026 direct-admission window ran from 22 January to 22 April and classes started on 1 September; the next-cycle dates are not published in this packet.",
+        "Non-local students should plan for required early-year dormitory residence, health insurance, medical examination, textbooks and other charges listed separately from first-year tuition.",
+        "Programme approval and quality-review evidence do not guarantee professional registration, visa approval or postgraduate placement in another jurisdiction."
+      ],
+      "bestFitFor": [
+        "Applicants with one of MUST's published school-leaving qualification routes and the required Chemistry result.",
+        "Students comfortable building a multi-year budget rather than relying on the first-year tuition figure as a total-course quote.",
+        "Applicants open to a clinical-training plan in which language and final-year location are determined by the recognised internship organisation.",
+        "Students seeking a direct university application route rather than using a recruitment agent."
+      ],
+      "industryPartners": ["MUST University Hospital"],
+      "recognitionBadges": [
+        "Macao Education and Youth Development Bureau (DSEDJ) - approved Bachelor of Medicine and Bachelor of Surgery programme",
+        "Hong Kong Council for Accreditation of Academic and Vocational Qualifications (HKCAAVQ) - 2025 quality-evaluation review published for the MUST MBBS programme"
+      ],
+      "recognitionLinks": [
+        {"label": "DSEDJ approved-programme register", "url": "https://es.dsedj.gov.mo/esdbonline/_site/search_results_en.asp?group=5&level2=89"},
+        {"label": "DSEDJ published HKCAAVQ quality-evaluation report", "url": "https://portal.dsedj.gov.mo/webdsejspace/addon/upload/Upload_viewfile_page.jsp?id=708007"}
+      ],
+      "faq": [
+        {"question": "Is MUST MBBS a six-year programme?", "answer": "Yes. MUST describes a six-year MBBS with five years of formal course work followed by a compulsory 12-month supervised internship. The Faculty's current programme page describes English as the teaching language, while noting that clinical teaching and assessment can have location-specific language requirements."},
+        {"question": "What is the published 2026/27 tuition for MBBS?", "answer": "The official non-Macao-resident fee table lists HKD 258,000 for first-year MBBS tuition. It separately lists a HKD 2,000 admission miscellaneous fee and HKD 10,000 refundable caution fee; insurance, health examination, textbooks and dormitory costs can be separate."},
+        {"question": "Can I treat the first-year fee as the entire MBBS cost?", "answer": "No. The university says sixth-year internship tuition varies by country and hospital and that tuition may increase by about 5% annually. A cost plan should preserve the confirmed first-year amount and keep later-year internship and living costs as variable rather than inventing a total."},
+        {"question": "What school qualifications does MUST publish for direct MBBS admission?", "answer": "The 2026 regulations list routes including A Levels or IAL, IBDP, SAT, ACT, Canadian Grade 12 and ATAR. Each route has a stated threshold, and the listed A Level, IB and Canadian routes include Chemistry requirements."},
+        {"question": "Is there an MBBS interview?", "answer": "Yes. MUST's 2026 direct-admission timetable says qualified MBBS applicants were interviewed by the Faculty of Medicine in May. The programme's next-cycle date and format should be taken from the next official admission notice when it is released."},
+        {"question": "How do I apply to MUST MBBS?", "answer": "Use MUST's Online Application System for Direct Admission, select the relevant programme route, upload the required qualification and identity records, then follow the Faculty's interview and offer-confirmation instructions. MUST states that it has not authorised recruitment agents for admissions."},
+        {"question": "When does clinical training begin?", "answer": "The published curriculum places clinical-foundation rotations in Year 3 at hospitals, family medicine and community-health clinics. The final clinical year contains specialty clerkship rotations before the compulsory supervised internship."},
+        {"question": "Where can the internship take place?", "answer": "After passing the MBBS examination, students complete a 12-month compulsory supervised internship at recognised training units in Macau and beyond. MUST monitors experience and signed supervisor logbooks; the training organisation can affect the clinical language used."},
+        {"question": "Is the MBBS programme approved in Macau?", "answer": "DSEDJ's higher-education programme register lists the MUST Bachelor of Medicine and Bachelor of Surgery as an approved bachelor programme. DSEDJ also published a 2025 HKCAAVQ quality-evaluation review. Those records do not by themselves establish a graduate's registration rights in another country."},
+        {"question": "Does MUST provide accommodation support?", "answer": "Non-local first- and second-year undergraduates are required to live in MUST dormitories, while non-local third-year undergraduates are guaranteed a place. Use the active dormitory room table for the chosen room type when finalising the accommodation budget."},
+        {"question": "Are scholarships available for MBBS applicants?", "answer": "MUST publishes competitive international admission scholarships for selected outstanding applicants. The listed distinguished award includes tuition, accommodation and a living allowance, while full and half awards cover tuition; retention follows published academic-performance conditions."},
+        {"question": "Can this degree guarantee practice rights abroad?", "answer": "No. The university programme approval and quality-review records establish educational status in Macau, while professional registration, examinations, language rules and immigration requirements are set by the jurisdiction where the graduate plans to practise."}
+      ],
+      "researchSources": [
+        {"label": "MUST MBBS programme", "url": "https://fmd.must.edu.mo/all/program/view/id-269.html?locale=en_US", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Duration, English language, curriculum, clerkship and internship structure."},
+        {"label": "MUST 2026/27 non-Macao-resident undergraduate fees", "url": "https://www.must.edu.mo/images/Admission/files/PreUBachelorFT_Non_Macao_residents_EN.pdf", "kind": "official-fee", "checkedAt": "2026-07-25", "notes": "First-year MBBS tuition and variable sixth-year fee note."},
+        {"label": "MUST 2026 MBBS direct-admission requirements", "url": "https://www.must.edu.mo/images/Admission/files/ENG_admission_regulations_att2.pdf", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Published qualification routes and thresholds."},
+        {"label": "MUST 2026 direct-admission timetable", "url": "https://ugadmissions.must.edu.mo/id-2828/article/view/id-22633.html?locale=en_US", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Application window, MBBS interview and class-start timing."},
+        {"label": "DSEDJ approved-programme register", "url": "https://es.dsedj.gov.mo/esdbonline/_site/search_results_en.asp?group=5&level2=89", "kind": "government", "checkedAt": "2026-07-25", "notes": "Macau official programme approval record."},
+        {"label": "DSEDJ published HKCAAVQ quality-evaluation review", "url": "https://portal.dsedj.gov.mo/webdsejspace/addon/upload/Upload_viewfile_page.jsp?id=708007", "kind": "government", "checkedAt": "2026-07-25", "notes": "2025 quality-evaluation review record."},
+        {"label": "MUST dormitory rules", "url": "https://sa.must.edu.mo/page/dormitory-rules-en.html?locale=en_US", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Residence rules for non-local undergraduates."},
+        {"label": "MUST international admission scholarships", "url": "https://sa.must.edu.mo/id-1952/article/view/id-3848.html?locale=en_US", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "International admission scholarship categories and conditions."}
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {"fees": "published", "admissions": "published", "academics": "published", "recognition": "published", "studentLiving": "published", "scholarships": "published"},
+        "ctas": [
+          {"trigger": "eligibility", "label": "Check my MBBS eligibility", "capture": ["qualification", "Chemistry and science grades", "English profile", "intake"]},
+          {"trigger": "fees", "label": "Build my MUST cost and funding plan", "capture": ["budget", "dormitory preference", "scholarship profile", "internship-location preference"]},
+          {"trigger": "application", "label": "Start my application review", "capture": ["Online Application System readiness", "documents", "interview readiness"]},
+          {"trigger": "professional pathway", "label": "Plan my professional pathway", "capture": ["intended practice destination", "licensing objective"]}
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "must-faculty-of-medicine-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+          "durationYears": 6,
+          "fee": {"status": "confirmed", "academicYear": "2026/27", "officialFeeCurrency": "HKD", "officialAnnualTuitionAmount": 258000, "officialTotalTuitionAmount": null, "verifiedAt": "2026-07-25", "notes": "Confirmed first-year non-Macao-resident tuition. The university states that sixth-year internship tuition varies by country and hospital, and that tuition may increase by about 5% annually; it is not a fixed six-year total."},
+          "officialProgramUrl": "https://fmd.must.edu.mo/all/program/view/id-269.html?locale=en_US",
+          "audienceEligibility": {"availability": "global", "eligibleAudiences": ["Form 6 or equivalent applicants meeting a listed direct-admission qualification route"], "restrictions": ["MBBS requires programme-specific academic thresholds and a Faculty of Medicine interview for qualified candidates.", "The published 2026 direct-admission cycle has closed; next-cycle availability is not established in this payload."], "notes": "MUST's Direct Admission materials describe an international application route. Eligibility remains route- and qualification-specific.", "verifiedAt": "2026-07-25", "sourceUrl": "https://www.must.edu.mo/images/Admission/files/ENG_admission_regulations_att2.pdf"},
+          "admissionsContent": {"overview": "MUST Direct Admission accepts Form 6 or equivalent applicants through its Online Application System. MBBS has programme-specific academic thresholds and a Faculty of Medicine interview for qualified applicants.", "eligibility": {"intro": "Applicants must satisfy one published qualification route and its MBBS science requirement.", "items": ["A Level or IAL: two A grades or three B grades plus two AS subjects, including Chemistry at B or above", "IBDP: diploma with 36 overall or above and Higher Level Chemistry grade 4 or above", "SAT: 1300 or above; ACT: composite 30 or above", "Canadian Grade 12: overall and Chemistry 80% or above; ATAR: 80 or above"]}, "applicationSteps": ["Choose Direct Admission in MUST's Online Application System.", "Upload the qualification and identity records required for the selected route.", "Follow Faculty of Medicine interview instructions if invited after qualification review.", "Complete offer confirmation, payment and registration actions within the university's stated timeline."], "documentsRequired": {"academic": ["Secondary-school qualification records for the selected admission route", "Chemistry and other required subject results", "English-language evidence where required by the selected qualification route"], "application": ["Identity document", "Online Application System submission and supporting records requested by MUST"]}, "deadlinesNote": "The 2026 Direct Admission cycle ran from 22 January to 22 April, with MBBS interviews in May and classes starting 1 September. The next-cycle timetable is not published in this payload.", "visaConsiderations": ["Student visa and immigration support are administered through MUST Student Affairs; no programme-specific visa rule is asserted here."]},
+          "medium": "English for the academic programme; clinical teaching and assessment may have location-specific language requirements during placements.",
+          "instructionLanguages": ["english", "chinese"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "The 2026/27 non-Macao-resident table lists HKD 258,000 first-year MBBS tuition. It also lists a HKD 2,000 admission miscellaneous fee and HKD 10,000 refundable caution fee; insurance, health examination, textbooks and dormitory may be separate. Do not treat the first-year figure as a six-year total.",
+          "teachingPhases": [{"phase": "Years 1-5 formal study", "language": "English", "details": "Competency-based formal study begins with an orientation module and progresses through biomedical sciences, clinical foundations and clinical clerkships."}, {"phase": "Year 6 supervised internship", "language": "English and/or the language required by the recognised training hospital", "details": "Twelve months of compulsory supervised internship at recognised units in Macau and beyond. MUST monitors clinical experience and signed supervisor logbooks; the training location may change clinical language requirements."}]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {"entity": "university", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "publicField": "identity", "claimText": "The Faculty of Medicine was officially renamed in March 2019 at Macau University of Science and Technology, which was established in 2000.", "status": "verified", "sourceLabel": "MUST Faculty Introduction", "sourceUrl": "https://www.must.edu.mo/en/fmd/introduction", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-07-25"},
+    {"entity": "programme", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "programmeSlug": "must-faculty-of-medicine-mbbs", "publicField": "academics", "claimText": "MUST MBBS is a six-year programme consisting of five years of formal course work and a 12-month compulsory supervised internship, with English stated as the teaching language and location-specific language requirements possible in clinical placements.", "status": "verified", "sourceLabel": "MUST MBBS programme", "sourceUrl": "https://fmd.must.edu.mo/all/program/view/id-269.html?locale=en_US", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "programmeSlug": "must-faculty-of-medicine-mbbs", "publicField": "recognition", "claimText": "DSEDJ lists the MUST Bachelor of Medicine and Bachelor of Surgery as an approved bachelor programme, and DSEDJ published a 2025 HKCAAVQ quality-evaluation review for the programme.", "status": "verified", "sourceLabel": "DSEDJ approved-programme register", "sourceUrl": "https://es.dsedj.gov.mo/esdbonline/_site/search_results_en.asp?group=5&level2=89", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "programmeSlug": "must-faculty-of-medicine-mbbs", "publicField": "eligibility", "claimText": "MUST publishes MBBS direct-admission routes for A Level or IAL, IBDP, SAT, ACT, Canadian Grade 12 and ATAR applicants, with programme-specific thresholds including Chemistry requirements for the listed science-based school routes.", "status": "verified", "sourceLabel": "MUST 2026 MBBS direct-admission requirements", "sourceUrl": "https://www.must.edu.mo/images/Admission/files/ENG_admission_regulations_att2.pdf", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-11-30"},
+    {"entity": "programme", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "programmeSlug": "must-faculty-of-medicine-mbbs", "publicField": "admissions", "claimText": "MUST Direct Admission uses the Online Application System, and qualified MBBS applicants complete a Faculty of Medicine interview in the published 2026 cycle.", "status": "verified", "sourceLabel": "MUST 2026 direct-admission timetable", "sourceUrl": "https://ugadmissions.must.edu.mo/id-2828/article/view/id-22633.html?locale=en_US", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-11-30"},
+    {"entity": "programme", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "programmeSlug": "must-faculty-of-medicine-mbbs", "publicField": "intake", "claimText": "The published 2026 Direct Admission cycle opened 22 January, closed 22 April, held MBBS interviews in May and began classes on 1 September. The next intake timetable is not yet published in this payload.", "status": "verified", "sourceLabel": "MUST 2026 direct-admission timetable", "sourceUrl": "https://ugadmissions.must.edu.mo/id-2828/article/view/id-22633.html?locale=en_US", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-11-30"},
+    {"entity": "programme", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "programmeSlug": "must-faculty-of-medicine-mbbs", "publicField": "fee", "claimText": "The 2026/27 non-Macao-resident fee table lists HKD 258,000 first-year MBBS tuition, while sixth-year internship charges vary by country and hospital.", "status": "verified", "sourceLabel": "MUST 2026/27 non-Macao-resident undergraduate fees", "sourceUrl": "https://www.must.edu.mo/images/Admission/files/PreUBachelorFT_Non_Macao_residents_EN.pdf", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-11-30"},
+    {"entity": "university", "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine", "publicField": "student support", "claimText": "MUST requires non-local first- and second-year undergraduates to live in university dormitories and guarantees third-year undergraduate placement; Student Affairs lists counselling, scholarships, visa and insurance support.", "status": "verified", "sourceLabel": "MUST dormitory rules", "sourceUrl": "https://sa.must.edu.mo/page/dormitory-rules-en.html?locale=en_US", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"}
+  ]
+}

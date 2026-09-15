@@ -1,0 +1,132 @@
+{
+  "countries": [{
+    "slug":"uruguay","name":"Uruguay","region":"South America",
+    "summary":"Uruguay is a South American country with a stable public university tradition and Montevideo as its principal academic centre. Universidad Católica del Uruguay offers a medical degree in the country's capital.",
+    "whyStudentsChooseIt":"Students considering Uruguay can evaluate a Spanish-speaking South American medical route with a structured university programme in Montevideo. The Universidad Católica del Uruguay package sets out the programme, admissions route and current fee evidence for applicants planning this destination.",
+    "climate":"Uruguay has a temperate climate with warm summers, cool winters and rainfall distributed throughout the year. Seasonal conditions are generally moderate across the country.",
+    "currencyCode":"UYU","metaTitle":"Study in Uruguay: Universities and Medicine","metaDescription":"Explore universities in Uruguay, including medical study in Montevideo, with programme, admissions, tuition and student-life information."
+  }],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": ["Bachelor of Medicine and Bachelor of Surgery", "Doctor of Medicine", "General Medicine", "Medicine and Surgery", "Single-Cycle Degree in Medicine and Surgery"],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Universidad Católica del Uruguay maps its direct-entry Doctor/a en Medicina degree to this category: a six-year, campus-based programme in Montevideo.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "uruguay",
+      "slug": "universidad-catolica-del-uruguay",
+      "name": "Universidad Católica del Uruguay",
+      "city": "Montevideo",
+      "type": "Private",
+      "establishedYear": 1985,
+      "officialWebsite": "https://www.ucu.edu.uy/",
+      "mediaAttribution": {},
+      "summary": "Universidad Católica del Uruguay (UCU) offers a direct-entry Doctor/a en Medicina degree at its Montevideo campus. The programme is in person, lasts six years and accepts completed secondary education from every orientation without pending subjects. UCU identifies the degree as a university-level course recognised by Uruguay's Ministry of Education and Culture (MEC), with a curriculum spanning basic, clinical and pre-professional practice stages.",
+      "campusLifestyle": "Medicine is delivered at UCU's Montevideo campus. The programme describes a common Health cycle, problem-based learning, small groups and simulation, morphofunctional and human-movement laboratories. Its published timetable places the basic cycle across morning and afternoon sessions, while the clinical cycle is primarily morning with some compulsory afternoon activity.",
+      "cityProfile": "The Medicine programme is campus-based in Montevideo. UCU lists the campus at Av. 8 de Octubre 2738 and places the programme's university clinic within its health-learning environment. The official materials reviewed for this bundle do not provide a Medicine-specific housing or living-cost budget, so no local cost estimate is included as a programme fact.",
+      "practicalExposure": "UCU's curriculum is organised into basic, clinical and pre-professional practice. The programme describes clinical cases from the start through laboratories, the university clinic and community settings. For its first internship cohort, UCU reported a 40-week supervised placement with four ten-week rotations: three in Montevideo and one compulsory rotation outside Montevideo. The reported Montevideo work included Internal Medicine and Paediatrics, Surgery/Gynaecology and an elective, alongside outpatient, emergency and inpatient activities.",
+      "hostelOverview": "No Medicine-specific UCU residence, housing provider, bed allocation or published living-cost figure was verified in the official sources for this bundle. Accommodation is not represented as included in the programme cost or as a guaranteed service.",
+      "dietarySupport": "The reviewed official Medicine and admissions materials do not publish a Medicine-specific meal plan, food allowance or dietary-support service. Daily living and food costs need separate planning from the university's quoted tuition arrangement.",
+      "safetyOverview": "UCU's student-wellbeing service provides orientation, inclusion, wellbeing promotion and scholarship-holder follow-up. The official materials reviewed do not publish Medicine-specific campus-safety statistics or an accommodation safety service.",
+      "studentSupport": "UCU's Bienestar Estudiantil service supports students through individual interviews, group interventions, workshops and coordination with academic units. Its orientation service addresses academic adjustment and learning difficulties. Medicine students who need to meet the programme's B2 English requirement can access UCU courses at no cost, according to the programme page.",
+      "whyChoose": [
+        "Direct entry after completed secondary education from every orientation, with no pending subjects stated on the programme page.",
+        "A six-year in-person Doctor/a en Medicina programme structured across basic, clinical and pre-professional stages.",
+        "A documented 40-week supervised internship model, including a compulsory rotation outside Montevideo.",
+        "Early clinical-case learning through laboratories, the university clinic and community settings.",
+        "A published undergraduate scholarship competition that includes Medicine, with 100% and 80% award categories subject to competition conditions."
+      ],
+      "thingsToConsider": [
+        "UCU does not publish a current Medicine tuition total, annual fee or instalment schedule on the programme pages reviewed; applicants need the current written economic information before budgeting.",
+        "The degree requires English equivalent to B2 in speaking, writing and reading for graduation; this is a completion requirement, not proof that teaching is English-medium.",
+        "International secondary-school documents need completion evidence, a grades transcript and apostille or legalisation as applicable; the public route does not set out every nationality-specific immigration step.",
+        "Internship partners and rotation availability are cohort-dependent. The named sites are evidence of the reported 2025 model, not a guaranteed future placement.",
+        "MEC recognition in Uruguay does not establish professional registration, licensing or residency eligibility in another country."
+      ],
+      "bestFitFor": [
+        "School-leaving applicants seeking a Spanish-medium, in-person six-year medicine degree in Montevideo.",
+        "Applicants who can plan for a full daytime academic schedule and a final supervised internship.",
+        "Students wanting a programme with documented clinical simulation, a university clinic and a structured financial-aid competition."
+      ],
+      "industryPartners": ["Círculo Católico", "Asociación Española", "CASMU", "Médica Uruguaya", "Hospital Evangélico", "Hospital de Tacuarembó (ASSE)", "Asistencial Médica San José", "COMECA"],
+      "recognitionBadges": [
+        "Ministry of Education and Culture of Uruguay (MEC) — Doctor/a en Medicina recognised as a university-level programme",
+        "Ministry of Education and Culture of Uruguay (MEC) — Universidad Católica del Uruguay officially recognised under Uruguay's private-university framework"
+      ],
+      "recognitionLinks": [
+        {"label": "UCU Medicine programme", "url": "https://carreras.ucu.edu.uy/programas/ver/carrera-en-medicina--mvd--presencial?variante=2"},
+        {"label": "UCU institutional history and authorisation", "url": "https://www.ucu.edu.uy/categoria/Nosotros-320"}
+      ],
+      "faq": [
+        {"question": "Is UCU Medicine direct-entry after secondary school?", "answer": "Yes. UCU lists completed secondary education from every orientation, without pending subjects, as the entry requirement for its Doctor/a en Medicina programme."},
+        {"question": "How long is the Doctor/a en Medicina programme?", "answer": "It is a six-year, in-person programme at UCU's Montevideo campus. The curriculum is organised into basic, clinical and pre-professional practice stages."},
+        {"question": "Is the programme taught in English?", "answer": "The programme page is Spanish-language and does not describe Medicine as English-medium. It requires B2-equivalent English in speaking, writing and reading for graduation, and UCU offers no-cost courses to help students reach that level."},
+        {"question": "What is the current tuition fee?", "answer": "UCU does not publicly display a current Medicine fee, full programme cost or instalment count on the reviewed pages. Its admissions route provides economic information directly and uses consecutive instalments for degree payment."},
+        {"question": "What do international secondary-school graduates submit?", "answer": "UCU requests a school certificate proving completion and university eligibility, a transcript of subjects and passing grades, and apostille or legalisation as applicable. The admissions team needs to confirm the country-specific route."},
+        {"question": "What is the Medicine internship structure?", "answer": "UCU reported a 40-week supervised internship for its first cohort, divided into four ten-week rotations. Three were in Montevideo and one was compulsory outside Montevideo; sites and rotations can vary by cohort."},
+        {"question": "Are scholarships available for Medicine?", "answer": "Medicine participates in UCU's undergraduate scholarship competition. Published categories include 100% and 80% academic-excellence awards and 100% and 80% need-based awards, subject to eligibility, results, places and ongoing conditions."},
+        {"question": "What student support is available?", "answer": "Bienestar Estudiantil provides orientation, inclusion, wellbeing promotion and scholarship-holder follow-up through interviews, group interventions and workshops. It is a university-wide service for UCU students."},
+        {"question": "Does MEC recognition allow medical practice abroad?", "answer": "No automatic overseas practice right follows from the stated Uruguay recognition. Professional registration, examinations, language requirements and postgraduate pathways are determined by the country where a graduate plans to work."}
+      ],
+      "researchSources": [
+        {"label": "UCU — Doctor/a en Medicina programme", "url": "https://carreras.ucu.edu.uy/programas/ver/carrera-en-medicina--mvd--presencial?variante=2", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Private evidence for duration, entry, MEC recognition, curriculum, English requirement and learning model."},
+        {"label": "UCU — Admissions", "url": "https://carreras.ucu.edu.uy/categoria/Admisiones-12", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Private evidence for the admissions route, foreign secondary documents, payment model and current intake context."},
+        {"label": "UCU — Scholarship competition", "url": "https://carreras.ucu.edu.uy/categoria/Concurso-de-Becas-357", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Private evidence for Medicine scholarship participation and published award categories."},
+        {"label": "UCU — Medicine internship report", "url": "https://www.ucu.edu.uy/Institucionales/Del-aula-al-hospital-primera-generacion-de-estudiantes-de-Medicina-comenzo-sus-practicas-profesionales-uc3007", "kind": "official-program", "checkedAt": "2026-07-25", "notes": "Private evidence for 40-week internship structure and reported partner institutions."},
+        {"label": "UCU — Student wellbeing", "url": "https://www.ucu.edu.uy/Institucionales/Bienestar-estudiantil-uc1453", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Private evidence for university-wide student orientation, inclusion and wellbeing support."},
+        {"label": "UCU — institutional history and authorisation", "url": "https://www.ucu.edu.uy/categoria/Nosotros-320", "kind": "official-university", "checkedAt": "2026-07-25", "notes": "Private evidence for the 1984 authorisation and 1985 institutional foundation context."}
+      ],
+      "admissionsContent": {"contentState": "research_ready", "sectionStates": {"decisionSummary": "published", "eligibility": "published", "fees": "research_ready", "admissions": "published", "academics": "published", "recognition": "published", "studentLiving": "research_ready", "scholarships": "published", "funding": "research_ready", "placements": "research_ready"}, "ctas": [
+        {"trigger": "eligibility", "label": "Check my eligibility", "capture": ["current qualification", "secondary-school completion", "citizenship or residency", "intended intake"]},
+        {"trigger": "fees", "label": "Build my cost and funding plan", "capture": ["intended intake", "budget", "accommodation preference", "funding need"]},
+        {"trigger": "application", "label": "Start my application review", "capture": ["document readiness", "apostille or legalisation status", "intended intake"]},
+        {"trigger": "professional pathway", "label": "Plan my professional pathway", "capture": ["intended country of practice", "licensing interest"]}
+      ]},
+      "programmes": [
+        {
+          "slug": "universidad-catolica-del-uruguay-doctor-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Doctor/a en Medicina",
+          "durationYears": 6,
+          "fee": {"status": "on_request", "verifiedAt": "2026-07-25", "notes": "UCU's current Medicine page directs applicants to request economic information and does not display a current Medicine tuition figure, annual total or instalment count. UCU's admissions page explains that degree fees are paid in equal, consecutive instalments and that the first instalment is paid at registration. No price is inferred in this bundle."},
+          "officialProgramUrl": "https://carreras.ucu.edu.uy/programas/ver/carrera-en-medicina--mvd--presencial?variante=2",
+          "audienceEligibility": {"availability": "global", "eligibleAudiences": ["Applicants with completed secondary education from any orientation and no pending subjects", "Applicants whose overseas secondary records establish completion and eligibility for university study"], "restrictions": ["Foreign secondary documents require proof of completion, a subjects-and-grades transcript, and apostille or legalisation as applicable", "The Medicine degree requires B2-equivalent English in speaking, writing and reading for graduation", "The public pages reviewed do not set out a complete nationality-specific immigration process or Medicine-specific selection rubric"], "notes": "UCU's general admissions process begins with economic information and an academic interview, then document submission, contract signing and first-instalment payment.", "verifiedAt": "2026-07-25", "sourceUrl": "https://carreras.ucu.edu.uy/categoria/Admisiones-12"},
+          "admissionsContent": {"overview": "Applicants begin by requesting economic information and an academic interview. They then submit the required documents, sign the university contract and pay the first instalment to complete registration. Foreign-secondary applicants follow the same undergraduate route with additional academic-document formalities.", "eligibility": {"intro": "Doctor/a en Medicina accepts completed secondary education from every orientation without pending subjects. Applicants educated abroad need documents that establish both secondary-school completion and eligibility for university-level study.", "items": ["Completed secondary education from any orientation, with no pending subjects", "School certificate confirming completion and eligibility for tertiary or university study", "Transcript listing subjects and passing grades", "Apostille or legalisation of foreign educational documents as applicable", "B2-equivalent English in speaking, writing and reading required for graduation"]}, "applicationSteps": ["Request economic information and an academic interview", "Prepare secondary-school evidence and identity documentation", "For overseas education, obtain the required completion certificate, transcript and apostille or legalisation", "Submit the admissions documents", "Sign the university contract", "Pay the first instalment to complete registration and reserve the programme place"], "documentsRequired": {"academic": ["Secondary-school completion certificate", "Subjects-and-grades transcript", "Apostille or legalisation for overseas educational documents as applicable"], "application": ["Identity document", "University contract", "First-instalment payment confirmation"]}, "deadlinesNote": "UCU's current admissions information refers to August 2026 and March 2027 degree starts in its published reduction schedule. The reviewed pages do not publish a Medicine-specific closing date or selection calendar.", "visaConsiderations": ["The official Medicine and admissions pages reviewed do not publish a programme-specific student-visa route. Immigration requirements need to be assessed separately for the applicant's nationality."]},
+          "medium": "Spanish; English B2 completion requirement",
+          "instructionLanguages": ["spanish"],
+          "intakeMonths": ["August 2026", "March 2027"],
+          "intakeCodes": ["august", "march"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "UCU's Medicine page provides economic information on request rather than a published tuition amount. Degree payment is described as equal, consecutive instalments, with the first instalment paid at registration. Current Medicine tuition, instalment count, inclusions and all-in cost are not publicly stated in the reviewed sources.",
+          "teachingPhases": [
+            {"phase": "Basic and clinical cycles", "language": "Spanish", "details": "The programme is delivered in person at Montevideo, with a basic cycle scheduled morning and afternoon and a clinical cycle primarily in the morning with some compulsory afternoon activities."},
+            {"phase": "Pre-professional practice", "language": "Spanish", "details": "UCU reported a 40-week supervised internship for its first cohort, organised as four ten-week rotations. Three were in Montevideo and one was compulsory outside Montevideo; future placement arrangements can vary by cohort."}
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {"entity": "university", "universitySlug": "universidad-catolica-del-uruguay", "publicField": "identity", "claimText": "Universidad Católica del Uruguay was authorised to operate by Decree 343/984 and was founded in 1985; it operates as a private university in Uruguay.", "status": "verified", "sourceLabel": "Universidad Católica del Uruguay — institutional history", "sourceUrl": "https://www.ucu.edu.uy/categoria/Nosotros-320", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-07-25"},
+    {"entity": "university", "universitySlug": "universidad-catolica-del-uruguay", "publicField": "recognition", "claimText": "Universidad Católica del Uruguay states that it is officially recognised by Uruguay's Ministry of Education and Culture under the framework for private universities.", "status": "verified", "sourceLabel": "Universidad Católica del Uruguay — canonical statutes", "sourceUrl": "https://www.ucu.edu.uy/aucdocumento.aspx?2958%2C6639=", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-07-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "academics", "claimText": "Doctor/a en Medicina is an in-person six-year programme in Montevideo, structured into basic, clinical and pre-professional practice stages.", "status": "verified", "sourceLabel": "UCU — Doctor/a en Medicina programme", "sourceUrl": "https://carreras.ucu.edu.uy/programas/ver/carrera-en-medicina--mvd--presencial?variante=2", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "eligibility", "claimText": "The programme requires completed secondary education from every orientation without pending subjects. Applicants who completed secondary school abroad must provide completion and grades records with apostille or legalisation as applicable.", "status": "verified", "sourceLabel": "UCU — Medicine programme and Admissions", "sourceUrl": "https://carreras.ucu.edu.uy/categoria/Admisiones-12", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "admissions", "claimText": "UCU's undergraduate admissions route begins with economic information and an academic interview, followed by documents, contract signing and first-instalment payment; foreign-secondary applicants have a documented certificate, grades and apostille/legalisation route.", "status": "verified", "sourceLabel": "UCU — Admissions", "sourceUrl": "https://carreras.ucu.edu.uy/categoria/Admisiones-12", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "intake", "claimText": "UCU's current admissions page refers to August 2026 and March 2027 degree starts in its published admissions reduction schedule, while not providing a Medicine-specific closing date.", "status": "verified", "sourceLabel": "UCU — Admissions", "sourceUrl": "https://carreras.ucu.edu.uy/categoria/Admisiones-12", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "fee", "claimText": "UCU's Medicine page directs applicants to request economic information and does not publish a current Medicine tuition or all-in total; its admissions page states degree payment uses equal, consecutive instalments.", "status": "verified", "sourceLabel": "UCU — Medicine programme and Admissions", "sourceUrl": "https://carreras.ucu.edu.uy/programas/ver/carrera-en-medicina--mvd--presencial?variante=2", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2026-10-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "recognition", "claimText": "UCU identifies Doctor/a en Medicina as a university-level programme recognised by Uruguay's Ministry of Education and Culture.", "status": "verified", "sourceLabel": "UCU — Doctor/a en Medicina programme", "sourceUrl": "https://carreras.ucu.edu.uy/programas/ver/carrera-en-medicina--mvd--presencial?variante=2", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "programme", "universitySlug": "universidad-catolica-del-uruguay", "programmeSlug": "universidad-catolica-del-uruguay-doctor-medicine", "publicField": "professional pathway", "claimText": "UCU reported a 40-week supervised internship for its first Medicine cohort, with four ten-week rotations in public and private health-system institutions, including one compulsory rotation outside Montevideo.", "status": "verified", "sourceLabel": "UCU — Medicine internship report", "sourceUrl": "https://www.ucu.edu.uy/Institucionales/Del-aula-al-hospital-primera-generacion-de-estudiantes-de-Medicina-comenzo-sus-practicas-profesionales-uc3007", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"},
+    {"entity": "university", "universitySlug": "universidad-catolica-del-uruguay", "publicField": "student support", "claimText": "UCU Bienestar Estudiantil provides orientation, inclusion, wellbeing promotion and scholarship-holder follow-up for UCU students through interviews, group interventions and workshops.", "status": "verified", "sourceLabel": "UCU — Bienestar Estudiantil", "sourceUrl": "https://www.ucu.edu.uy/Institucionales/Bienestar-estudiantil-uc1453", "sourceGrade": "A", "checkedAt": "2026-07-25", "reviewBy": "2027-01-25"}
+  ]
+}

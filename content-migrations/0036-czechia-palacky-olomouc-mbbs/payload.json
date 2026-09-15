@@ -1,0 +1,417 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Palacky University Olomouc maps its General Medicine programme to this category: a direct-entry, single-cycle six-year programme leading to the MUDr qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "czech-republic",
+      "slug": "palacky-university-olomouc",
+      "name": "Palacky University Olomouc",
+      "city": "Olomouc",
+      "type": "Public",
+      "establishedYear": 1946,
+      "officialWebsite": "https://www.lf.upol.cz/en",
+      "mediaAttribution": {},
+      "summary": "Palacky University Olomouc's modern Faculty of Medicine was re-established in 1946 and runs an English-medium General Medicine programme leading to the MUDr degree. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 1953 onward, accredited by the Czech National Accreditation Bureau (WFME-recognized) as of 20 November 2024, and was the first Czech medical school accredited by the Association of Medical Schools in Europe.",
+      "campusLifestyle": "The Faculty admits roughly 80 students per intake to the English-medium General Medicine programme. University housing is guaranteed for all international students for their entire period of study, and the Faculty campus sits alongside University Hospital Olomouc, with most clinical departments a short walk from the lecture halls.",
+      "cityProfile": "Olomouc is a historic university city in Moravia, home to Palacky University since 1573. The Faculty of Medicine and Dentistry shares its campus directly with University Hospital Olomouc, one of only nine hospitals in the Czech Republic under direct Ministry of Health control.",
+      "practicalExposure": "The six-year General Medicine curriculum runs theoretical foundation subjects (anatomy, biology, biochemistry, biophysics, histology, physiology) in Years 1-2, preclinical subjects (pathology, microbiology, pharmacology) from semester 5, and clinical subjects (internal medicine, surgery, pediatrics, obstetrics and gynaecology, neurology) from subsequent semesters, with Year 6 devoted entirely to bedside clinical training. Students complete compulsory Czech-language classes during the first three years to support ward communication, though all coursework and exams remain in English. Clinical training runs at University Hospital Olomouc (FNOL), a roughly 1,200-bed hospital with 67 medical workplaces. Graduates sit final state examinations in Paediatrics, Internal Medicine, Surgery, Gynaecology and Obstetrics, and Epidemiology/Law/Social Medicine before receiving the MUDr degree.",
+      "hostelOverview": "University housing is guaranteed for international students throughout their studies, administered by the university's Accommodation and Dining Services across several halls of residence, some with shared bathrooms and some with communal kitchens. Official nightly rates translate to roughly EUR 175-215 per month for a single room and EUR 135-165 per month for a twin room, though applicants should confirm exact current rates in euros at the time of booking. Housing is not available for students with families, and international/exchange students' accommodation is generally booked automatically by the university based on their programme.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Food costs should be planned as part of an independent living-cost budget alongside accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. Olomouc's municipal waste-collection fee is waived for students under 26 living in the halls of residence.",
+      "studentSupport": "The Faculty's Admissions office coordinates application and entrance-exam logistics, including partner-run exam sessions in multiple countries. The university's Accommodation and Dining Services (SKM UP, hotel@upol.cz) coordinates housing for incoming international students.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000513), currently operational, with ECFMG-certification eligibility for graduates from 1953 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "Accredited by the Czech National Accreditation Bureau, a WFME-recognized body, most recently confirmed 20 November 2024, and the first Czech medical school accredited by the Association of Medical Schools in Europe.",
+        "Guaranteed university housing for international students for their entire period of study.",
+        "A published, official fee-decision document (Appendix No. 10 to the University's Constitution) setting out the exact annual tuition for the programme.",
+        "Entrance exams run at numerous partner-organized sessions across multiple countries and formats (in-person and online), rather than a single fixed location."
+      ],
+      "thingsToConsider": [
+        "The university's own admissions page states the 2026 application window closes 31 July 2026, but the same page lists entrance-exam sessions in mid-to-late August 2026 -- a genuine internal inconsistency worth confirming directly with the Faculty before relying on either date.",
+        "Some third-party sites claim UK General Medical Council recognition, but since Brexit, EEA-earned medical qualifications (including this one) no longer receive automatic GMC registration; UK-bound graduates should confirm the current post-Brexit route directly with the GMC.",
+        "No scholarship specifically for international General Medicine students was confirmed on official channels.",
+        "The published EUR 12,500 tuition covers teaching, clinical practice and exams only -- it excludes accommodation, subsistence, textbooks and any study abroad.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students comfortable sitting a written Biology, Chemistry and Physics-or-Mathematics entrance exam, available at numerous international venues and online.",
+        "Applicants who value a campus directly co-located with a large teaching hospital and guaranteed international-student housing.",
+        "Families comfortable confirming exact deadline and document requirements directly with the Faculty given the noted date inconsistency."
+      ],
+      "industryPartners": [
+        "University Hospital Olomouc (FNOL)"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0000513), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 1953-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "Czech National Accreditation Bureau, recognized by the World Federation for Medical Education (WFME) — programme status Accredited, 20 November 2024",
+        "Association of Medical Schools in Europe (AMSE) — first Czech medical school accredited",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Czech MUDr medical qualification across the EU/EEA"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — Palacky University Olomouc listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000513" },
+        { "label": "Palacky University Olomouc — official General Medicine (MUDr) programme page", "url": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/" }
+      ],
+      "faq": [
+        {
+          "question": "Is the General Medicine programme direct-entry after high school?",
+          "answer": "Yes. Admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MUDr degree after passing final state examinations, a Czech medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "A written test covering Biology, Chemistry, and either Physics or Mathematics (the applicant's choice), which can only be taken once per academic year. Sample tests and topic lists are published in advance."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 12,500 per year, per the university's official fee-decision document (Appendix No. 10 to the University's Constitution), covering tuition, lectures, clinical practice and exams -- it excludes accommodation, subsistence and textbooks. A non-refundable EUR 80 application fee also applies."
+        },
+        {
+          "question": "Does the programme require learning Czech?",
+          "answer": "Coursework and exams are entirely in English, but students complete compulsory Czech-language classes during the first three years to support communication with patients and ward staff."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The academic year starts in September. For the 2026/27 cycle, the application window opened 1 November 2025 and the university's admissions page states it closes 31 July 2026, though entrance-exam sessions are also listed into late August -- confirm the exact current deadline directly with the Faculty."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "Yes -- housing is guaranteed for international students for their entire period of study, across several halls of residence, at rates of roughly EUR 175-215 per month for a single room or EUR 135-165 per month for a twin room."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — Palacky University Olomouc listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0000513",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year, ECFMG graduation-year eligibility and national accreditation status."
+        },
+        {
+          "label": "Palacky University Olomouc — official General Medicine (MUDr) programme page",
+          "url": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, entrance-exam format, English-certificate options, application process and deadline (including the noted internal date inconsistency)."
+        },
+        {
+          "label": "Palacky University Olomouc — official Practical Information page (fee schedule)",
+          "url": "https://www.lf.upol.cz/en/students/practicalinformation/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document (Appendix No. 10 to the University's Constitution); primary evidence for confirmed 2026/27 tuition and what it covers."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20160524&from=DE",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Czech MUDr qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "University Hospital Olomouc (FNOL) — official About Us and History pages",
+          "url": "https://www.fnol.cz/en/about-us",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the named teaching hospital's size, structure and Ministry-of-Health status."
+        },
+        {
+          "label": "GMC — Relevant European qualifications to be recognised post-Brexit",
+          "url": "https://www.gmc-uk.org/news/news-archive/relevant-european-qualifications-to-be-recognised-post-brexit",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence correcting the outdated 'UK GMC recognizes' marketing claim -- EEA qualifications lost automatic GMC recognition after Brexit."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "palacky-university-olomouc-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine (MUDr)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 12500,
+            "officialTotalTuitionAmount": 75000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published tuition: EUR 12,500/year, per Appendix No. 10 to the Constitution of Palacky University Olomouc, an official fee-decision document. Covers tuition, lectures, clinical practice and exams only -- excludes accommodation, subsistence, textbooks and any studies abroad. Total is calculated as the annual figure times 6 years -- not published as a lump sum. A separate EUR 80 non-refundable application fee applies. Installment option available: first half due within 1 month of the academic year start, second half plus a EUR 200 supplement due before the summer semester. No tuition withdrawal/refund policy was published on accessible pages."
+          },
+          "officialProgramUrl": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants who have completed (or are completing) secondary education in three relevant subjects"
+            ],
+            "restrictions": [
+              "The entrance exam (Biology, Chemistry, Physics or Mathematics) can only be taken once per academic year",
+              "Compulsory Czech-language classes apply during the first three years, alongside all-English coursework",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "English-language proof is required unless the applicant's prior education was conducted in English; accepted proofs include Cambridge FCE, IELTS 6.0, TOEFL 87, PTE Academic 59, a psychometric test, or the Faculty's own English test.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants submit an online application, pay the non-refundable admission fee, and sit a written Biology, Chemistry and Physics-or-Mathematics entrance exam at one of many partner-run sessions worldwide or online, at least two weeks after their complete application is submitted.",
+            "eligibility": {
+              "intro": "Admission requires completed or in-progress secondary education, English proficiency (unless exempt), and a passing result on the Faculty's own written entrance exam.",
+              "items": [
+                "Secondary education in three relevant subjects, completed or in progress",
+                "English proficiency proof (Cambridge FCE, IELTS 6.0, TOEFL 87, PTE Academic 59, psychometric test, or the Faculty's own test), unless prior education was in English",
+                "Written entrance exam covering Biology, Chemistry, and Physics or Mathematics, sat once per academic year",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Submit the online application form, choosing the General Medicine track",
+              "Pay the non-refundable EUR 80 administrative fee",
+              "Complete the application with all required documents at least two weeks before the chosen entrance-exam date",
+              "Sit the written entrance exam at a partner-run session (in Olomouc, at an international venue, or online)",
+              "Await the admission decision and enroll for the September intake"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-education transcripts or certificates demonstrating completed or in-progress study in the required subjects"
+              ],
+              "application": [
+                "English-proficiency proof, unless exempt",
+                "Proof of admin-fee payment",
+                "A specific document checklist beyond these was not published on accessible pages -- confirm directly with the Faculty's Admissions office"
+              ]
+            },
+            "deadlinesNote": "2026/27 cycle: application window opened 1 November 2025; the official page states applications close 31 July 2026, but also lists entrance-exam sessions into late August 2026 -- confirm the exact current deadline directly with the Faculty.",
+            "visaConsiderations": [
+              "Confirm current Czech student-visa requirements directly with the university's Admissions office ahead of the September intake."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 tuition is EUR 12,500/year, per the official Appendix No. 10 fee-decision document, covering teaching, clinical practice and exams only. A EUR 80 non-refundable application fee applies separately. Installment payment is available with a EUR 200 supplement on the second installment. No tuition refund/withdrawal policy was found on accessible pages.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: theoretical foundation",
+              "language": "English",
+              "details": "Anatomy, biology, biochemistry, biophysics, histology and physiology, alongside compulsory Czech-language classes."
+            },
+            {
+              "phase": "Semesters 5-7: preclinical subjects",
+              "language": "English",
+              "details": "Pathology, microbiology and pharmacology, transitioning into clinical subjects including internal medicine, surgery, pediatrics, obstetrics/gynaecology and neurology."
+            },
+            {
+              "phase": "Year 6: clinical bedside training and state examinations",
+              "language": "English",
+              "details": "Full-time bedside clinical training at University Hospital Olomouc, concluding with final state examinations in Paediatrics, Internal Medicine, Surgery, Gynaecology/Obstetrics and Epidemiology/Law/Social Medicine."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "palacky-university-olomouc",
+      "publicField": "identity",
+      "claimText": "Palacky University founded 1573; the modern Faculty of Medicine was re-established 21 February 1946 when the university itself was refounded.",
+      "status": "verified",
+      "sourceLabel": "Palacky University Olomouc — official University History page",
+      "sourceUrl": "https://www.upol.cz/en/university/basic-information/university-history/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "palacky-university-olomouc",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0000513), currently operational; graduates (1953-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities; accredited by the Czech National Accreditation Bureau (WFME-recognized), status confirmed 20 November 2024.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0000513",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0000513",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "palacky-university-olomouc",
+      "publicField": "recognition",
+      "claimText": "The Czech MUDr medical qualification is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, with a reference date of 1 May 2004 (Czech EU accession).",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20160524&from=DE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "palacky-university-olomouc",
+      "programmeSlug": "palacky-university-olomouc-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine is a 6-year, direct-entry programme awarding the MUDr degree, taught in English (with compulsory Czech-language classes in Years 1-3), admitting roughly 80 students per intake.",
+      "status": "verified",
+      "sourceLabel": "Palacky University Olomouc — official General Medicine (MUDr) programme page",
+      "sourceUrl": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "palacky-university-olomouc",
+      "programmeSlug": "palacky-university-olomouc-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Admission via a written Biology, Chemistry and Physics-or-Mathematics entrance exam (once per academic year), plus English proficiency proof (Cambridge FCE, IELTS 6.0, TOEFL 87, PTE 59, or the Faculty's own test) unless exempt.",
+      "status": "verified",
+      "sourceLabel": "Palacky University Olomouc — official General Medicine (MUDr) programme page",
+      "sourceUrl": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "palacky-university-olomouc",
+      "programmeSlug": "palacky-university-olomouc-general-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via online form with a EUR 80 non-refundable admin fee; entrance exams run at numerous partner-organized venues worldwide and online; application must be complete at least 2 weeks before the chosen exam date.",
+      "status": "verified",
+      "sourceLabel": "Palacky University Olomouc — official General Medicine (MUDr) programme page",
+      "sourceUrl": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "palacky-university-olomouc",
+      "programmeSlug": "palacky-university-olomouc-general-medicine",
+      "publicField": "intake",
+      "claimText": "September 2026 intake: application window opened 1 November 2025, with the official page stating a 31 July 2026 closing date, though entrance-exam sessions are also listed into late August 2026 -- an internal inconsistency on the official page.",
+      "status": "verified",
+      "sourceLabel": "Palacky University Olomouc — official General Medicine (MUDr) programme page",
+      "sourceUrl": "https://www.lf.upol.cz/en/studyat-our-faculty/general-medicine-mudr/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "palacky-university-olomouc",
+      "programmeSlug": "palacky-university-olomouc-general-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition: EUR 12,500/year for General Medicine, per Appendix No. 10 to the University's Constitution, covering tuition/lectures/clinical practice/exams only; separate EUR 80 application fee.",
+      "status": "verified",
+      "sourceLabel": "Palacky University Olomouc — official Practical Information page (fee schedule)",
+      "sourceUrl": "https://www.lf.upol.cz/en/students/practicalinformation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "palacky-university-olomouc",
+      "programmeSlug": "palacky-university-olomouc-general-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training runs at University Hospital Olomouc (FNOL), roughly 1,200 beds and 67 medical workplaces, one of nine Czech hospitals under direct Ministry of Health control, co-located with the Faculty campus.",
+      "status": "verified",
+      "sourceLabel": "University Hospital Olomouc (FNOL) — official About Us and History pages",
+      "sourceUrl": "https://www.fnol.cz/en/about-us",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "palacky-university-olomouc",
+      "publicField": "student living",
+      "claimText": "University housing is guaranteed for international students throughout their studies across several halls of residence; official nightly rates translate to roughly EUR 175-215/month single or EUR 135-165/month twin occupancy.",
+      "status": "verified",
+      "sourceLabel": "SKM UP — official Accommodation Booking for Students page",
+      "sourceUrl": "https://skm.upol.cz/en/accommodation/accommodation-booking/accommodation-booking-for-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

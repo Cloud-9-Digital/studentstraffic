@@ -1,0 +1,459 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. RCSI University of Medicine and Health Sciences maps its Direct Entry Medicine (DEM) programme to this category: a direct-entry, single-cycle five- or six-year programme leading to the MB, BCh, BAO qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "ireland",
+      "slug": "rcsi-university-of-medicine-and-health-sciences",
+      "name": "RCSI University of Medicine and Health Sciences",
+      "city": "Dublin",
+      "type": "Private",
+      "establishedYear": 1784,
+      "officialWebsite": "https://www.rcsi.com/dublin",
+      "mediaAttribution": {},
+      "summary": "RCSI University of Medicine and Health Sciences has trained doctors since 1784 and is Ireland's largest medical school. Its Direct Entry Medicine programme leads to the National University of Ireland MB, BCh, BAO degree, accredited by the Irish Medical Council, with the underlying Irish medical qualification carrying EU Directive 2005/36/EC automatic recognition across the EU/EEA since Ireland's 1976 accession to the mechanism.",
+      "campusLifestyle": "RCSI's Direct Entry Medicine programme offers 75 EU and 225 non-EU places per year, taught through Case-Based Learning in small groups of around 12 students, with a Personal Tutor assigned to every student and six cross-year learning communities. RCSI states it is among the first Irish higher-education institutions authorised by Quality and Qualifications Ireland to use the TrustEd Ireland mark.",
+      "cityProfile": "Dublin is Ireland's capital, and RCSI's central-Dublin campus sits close to its own Mercer Court student residence, a short walk from the city centre. RCSI is recognised by the US Department of Education's Federal Student Aid programme as an eligible foreign institution (school code 00770500) for its Medicine, Physiotherapy and Pharmacy programmes.",
+      "practicalExposure": "The Direct Entry Medicine programme runs across three stages -- Foundation of Practice (Years 1-2), Integration into Practice (Year 3), and Preparation for Practice (Years 4-5) -- with a preceding Foundation Year for the 6-year track. Clinical placements from Year 3 run across RCSI's teaching hospitals, including Beaumont Hospital, Connolly Hospital, the Rotunda Hospital, Our Lady of Lourdes Hospital Drogheda, Cavan and Monaghan Hospital, and Louth County Hospital, alongside a wider affiliated network including the National Maternity Hospital and Children's Health Ireland at Crumlin. Year 4 places students full-time on hospital clinical teams across Medicine, Obstetrics and Gynaecology, Psychiatry, Surgery, Paediatrics and General Practice, and Year 5 concludes with a sub-internship clerkship. Graduates who complete Ireland's 12-month intern year and receive a Certificate of Experience are exempt from the Irish Medical Council's PRES pre-registration exam before full registration.",
+      "hostelOverview": "RCSI operates its own Mercer Court residence (Millin House plus Mercer Apartments), a short walk from campus, with 24/7 security and a dedicated accommodation manager. For a 41-week lease (11 September 2026-25 June 2027), Mercer Apartments run EUR 322/week single (EUR 13,202 total) or EUR 220/week twin (EUR 9,020 total), and Millin House runs EUR 332/week single (EUR 13,612 total) or EUR 244/week twin (EUR 10,004 total). Students who prefer private rental can use RCSI Student Services' guidance, though the university does not book private housing on students' behalf.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Mercer Court residences include shared or communal kitchens; food costs should be planned as part of an independent living-cost budget.",
+      "safetyOverview": "No university-published campus-safety statistics were found. Mercer Court residence includes 24/7 security and a dedicated accommodation manager for resident students.",
+      "studentSupport": "Every student is assigned a Personal Tutor, and the curriculum is built around six cross-year learning communities with a positive-education-informed, well-being-focused design. RCSI Student Services provides accommodation guidance, and international scholarship queries go through the RCSI Admissions Office.",
+      "whyChoose": [
+        "A medical school with a continuous history since 1784, Ireland's largest, whose Irish medical qualification carries EU Directive 2005/36/EC automatic recognition across the EU/EEA once the Irish intern year and Certificate of Experience are completed.",
+        "Recognised as an eligible foreign institution by the US Department of Education's Federal Student Aid programme for its Medicine programme (school code 00770500).",
+        "A detailed, country-specific entry-requirements framework covering A Levels, IB, US, Indian, Canadian, Australian, Gulf and other qualification systems for non-EU applicants.",
+        "A dedicated non-EU merit scholarship (International Consilio Manuque Medicine Scholarship, EUR 25,000 total, disbursed across the programme) with a transparent application and interview process.",
+        "Clinical training across a large, named network of RCSI teaching and affiliated hospitals, including Ireland's national referral centres for neurosurgery and renal transplantation at Beaumont Hospital."
+      ],
+      "thingsToConsider": [
+        "Non-EU tuition is substantial: EUR 61,000 per year plus a once-off EUR 135 National University of Ireland registration fee (EUR 61,135 in year one), with historical annual increases of roughly 2%.",
+        "The September 2026 intake has already closed; the next confirmed cycle is September 2027, with non-EU (excluding USA/Canada) applications opening 1 November 2026 and closing 15 January 2027.",
+        "Withdrawal after 31 January makes a student liable for 100% of that year's tuition; only visa refusal guarantees a full refund.",
+        "Programme length (5 or 6 years) depends on the applicant's prior secondary-school qualifications and is assigned by the Admissions Committee, not chosen freely by the applicant.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students able to fund a premium EU medical degree and meet RCSI's country-specific academic thresholds (for example, A Level AAB including Chemistry, or IB 38+ with Chemistry HL 5).",
+        "Applicants who prioritize EU-wide licence recognition and a long-established teaching-hospital network over a faster or lower-cost non-EU pathway.",
+        "Families comfortable planning around a single annual September intake with an application window roughly ten months ahead of the start date."
+      ],
+      "industryPartners": [
+        "Beaumont Hospital",
+        "Connolly Hospital",
+        "Rotunda Hospital",
+        "Our Lady of Lourdes Hospital, Drogheda",
+        "Cavan and Monaghan Hospital",
+        "Louth County Hospital"
+      ],
+      "recognitionBadges": [
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — automatic recognition of the Irish medical qualification across the EU/EEA, in effect for Ireland since 20 December 1976",
+        "Irish Medical Council (IMC) — accredits the RCSI Medicine degree; graduates with a Certificate of Experience are exempt from the PRES pre-registration exam",
+        "US Federal Student Aid — RCSI Dublin listed as an eligible foreign institution for Medicine (school code 00770500)",
+        "Quality and Qualifications Ireland (QQI) — RCSI authorised to use the TrustEd Ireland mark"
+      ],
+      "recognitionLinks": [
+        { "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20160524" },
+        { "label": "US Federal Student Aid — Royal College of Surgeons in Ireland eligible-institution listing", "url": "https://studentaid.gov/understand-aid/types/international/royal-college-surgeons-ireland" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Direct Entry Medicine programme different from Graduate Entry Medicine?",
+          "answer": "Yes. Direct Entry Medicine (DEM) admits students straight from secondary education; Graduate Entry Medicine (GEM) is a separate 4-year programme for applicants who already hold a bachelor's degree. This record covers Direct Entry Medicine only."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MB, BCh, BAO (Hons), a National University of Ireland degree at Level 8 on Ireland's National Framework of Qualifications, accredited by the Irish Medical Council."
+        },
+        {
+          "question": "How long is the programme?",
+          "answer": "5 years for applicants exempt from the Foundation Year, or 6 years (including a Foundation Year) for others, based on the applicant's prior secondary-school qualifications as assessed by the Admissions Committee."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 61,000 per year for non-EU students, plus a once-off EUR 135 National University of Ireland registration fee (EUR 61,135 total in year one). Non-EU fees have historically risen by roughly 2% a year."
+        },
+        {
+          "question": "What entrance route does the university use for non-EU applicants?",
+          "answer": "Non-EU applicants do not sit HPAT-Ireland (that applies only to the Irish/EU school-leaver route). Instead, RCSI assesses non-EU applicants against published country-specific academic criteria, such as A Level AAB including Chemistry, or IB 38+ with Chemistry at Higher Level."
+        },
+        {
+          "question": "When does the academic year start, and when can I apply?",
+          "answer": "The single annual intake starts in September. The September 2026 intake has already closed. For September 2027 entry, non-EU applications (excluding USA/Canada) open 1 November 2026 and close 15 January 2027; USA/Canada applicants apply via Atlantic Bridge, opening 1 August 2026."
+        },
+        {
+          "question": "Is a scholarship available for non-EU Medicine students?",
+          "answer": "Yes -- the International Consilio Manuque Medicine Scholarship offers EUR 25,000 total, disbursed across the programme (EUR 5,000/year on the 5-year track, EUR 4,167/year on the 6-year track), open to self-funding non-EU students admitted to the programme who have accepted their offer."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "Yes -- RCSI's own Mercer Court residence offers single and twin rooms a short walk from campus, priced per a 41-week lease. Students can contact accommodation@rcsi.ie to apply, or use RCSI Student Services' guidance for private rental."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "RCSI's own admissions criteria do not reference NEET, though the university advises Indian applicants to separately check India's National Medical Commission requirements. NEET-UG is required for Indian citizens and OCI holders pursuing a primary medical qualification abroad, as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "RCSI Dublin — Why RCSI (Undergraduate Medicine) page",
+          "url": "https://www.rcsi.com/dublin/undergraduate/medicine/why-rcsi-dublin",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for founding year, IMC/NUI accreditation, QQI TrustEd Ireland authorisation and place numbers."
+        },
+        {
+          "label": "RCSI Dublin — Medicine Entry Requirements page",
+          "url": "https://www.rcsi.com/dublin/undergraduate/medicine/entry-requirements",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for country-specific eligibility criteria, English-proficiency thresholds and minimum age for September 2026 entry."
+        },
+        {
+          "label": "RCSI Dublin — Medicine Apply page",
+          "url": "https://www.rcsi.com/dublin/undergraduate/medicine/apply",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for admissions steps, required documents, application fee and 2026/27-cycle deadline dates."
+        },
+        {
+          "label": "RCSI Dublin — Medicine Fees and Funding page",
+          "url": "https://www.rcsi.com/dublin/undergraduate/medicine/fees-and-funding",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for confirmed non-EU tuition, NUI registration fee and payment terms."
+        },
+        {
+          "label": "RCSI Dublin — Finance FAQs (refund policy)",
+          "url": "https://www.rcsi.com/dublin/undergraduate/application-information/finance/finance-faqs",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the tuition refund and withdrawal policy."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20160524",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the Irish medical qualification's EU automatic-recognition listing under Annex V point 5.1.1."
+        },
+        {
+          "label": "RCSI Dublin — Teaching Hospitals and Clinical Sites page",
+          "url": "https://www.rcsi.com/dublin/about/faculty-of-medicine-and-health-sciences/collaborations-and-partnerships/teaching-hospitals-and-clinical-sites",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for named RCSI teaching and affiliated clinical sites."
+        },
+        {
+          "label": "RCSI Dublin — Undergraduate Accommodation page",
+          "url": "https://www.rcsi.com/dublin/student-life/undergraduate-essentials/accommodation",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for Mercer Court residence structure, 2026/27 pricing and private-rental guidance."
+        },
+        {
+          "label": "RCSI Dublin — International Consilio Manuque Medicine Scholarship page",
+          "url": "https://www.rcsi.com/dublin/undergraduate/application-information/scholarships/international-consilio-manuque-medicine-scholarship",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the non-EU Medicine scholarship amount, disbursement schedule and eligibility."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Direct Entry Medicine (MB, BCh, BAO)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 61000,
+            "officialTotalTuitionAmount": 366135,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published non-EU tuition: EUR 61,000/year, plus a once-off EUR 135 National University of Ireland registration fee (EUR 61,135 total in year one), per RCSI's official Fees and Funding page. Non-EU fees have historically risen roughly 2%/year; the 6-year total is a calculated estimate (61,000 x 6 + 135) assuming no increase and is not an official locked-in figure. A EUR 75 application fee applies separately. Refund policy: 50% of annual tuition due by 1 July, a 14-day cooling-off period follows, withdrawal after 31 January makes the student liable for 100% of that year's tuition, and visa refusal triggers a full refund."
+          },
+          "officialProgramUrl": "https://www.rcsi.com/dublin/undergraduate/medicine",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International (non-EU) applicants meeting RCSI's country-specific academic criteria (e.g. A Level AAB including Chemistry, IB 38+ with Chemistry HL 5, or equivalent), with English proficiency at IELTS 6.5 overall (no band below 6.0) or exemption"
+            ],
+            "restrictions": [
+              "Applicants must have turned 18 by 31 December following entry",
+              "Programme length (5 or 6 years) is assigned by the Admissions Committee based on prior qualifications, not chosen by the applicant",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "Non-EU applicants do not sit HPAT-Ireland (required only for the Irish/EU school-leaver route). USA/Canada-resident applicants apply via RCSI's partner, Atlantic Bridge, rather than directly.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/entry-requirements"
+          },
+          "admissionsContent": {
+            "overview": "Non-EU applicants (outside USA/Canada) apply directly via RCSI's website within the published window, pay the application fee, and submit academic and supporting documents; USA/Canada-resident applicants apply through RCSI's partner, Atlantic Bridge, on a separate timeline.",
+            "eligibility": {
+              "intro": "Admission requires meeting RCSI's country-specific academic threshold (e.g. A Levels, IB, or national equivalents with required Chemistry and science grades), English proficiency, and being at least 18 by 31 December following entry.",
+              "items": [
+                "Country-specific academic threshold, e.g. A Level AAB including Chemistry (UK), IB 38+ with Chemistry HL 5 (International Baccalaureate), or 90% overall with 75%+ in Chemistry, Biology and Physics/Maths (India)",
+                "English proficiency: IELTS 6.5 overall, no band below 6.0 (certificate under 2 years old), or exemption for wholly English-medium qualifications such as A Levels or IB",
+                "Minimum age: 18 by 31 December following entry",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Apply directly via RCSI's website within the published application window (or via Atlantic Bridge if resident in the USA/Canada)",
+              "Pay the non-refundable EUR 75 application fee",
+              "Submit certified academic transcripts, a passport copy, a passport-style photo and a personal statement",
+              "Provide confidential referee contact details; RCSI contacts the referee directly for a reference",
+              "Submit supplementary documents evidencing relevant life experience (work, extracurriculars, volunteering) where applicable"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified academic transcripts (plus English-language transcripts or IELTS certificate where applicable)",
+                "Evidence meeting the applicant's country-specific academic threshold for Direct Entry Medicine"
+              ],
+              "application": [
+                "Passport copy (name, nationality and date-of-birth page)",
+                "Passport-style photo",
+                "Personal statement",
+                "Confidential academic referee contact details"
+              ]
+            },
+            "deadlinesNote": "September 2026 entry is closed. For September 2027 entry: non-EU (excl. USA/Canada) applications open 1 Nov 2026, close 15 Jan 2027; Atlantic Bridge (USA/Canada) opens 1 Aug 2026, standard-fee deadline 15 Nov 2026.",
+            "visaConsiderations": [
+              "RCSI's own refund policy guarantees a full fee refund if a student cannot obtain the required visa; confirm current Irish student-visa requirements directly with RCSI or Irish immigration authorities."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed non-EU tuition is EUR 61,000/year plus a once-off EUR 135 NUI registration fee (EUR 61,135 in year one), per RCSI's official Fees and Funding page. A EUR 75 application fee applies separately. Non-EU fees have historically risen roughly 2%/year. Refund policy: 50% of annual tuition due by 1 July, a 14-day cooling-off period follows, withdrawal after 31 January makes the student liable for 100% of that year's tuition, and visa refusal triggers a full refund.",
+          "teachingPhases": [
+            {
+              "phase": "Foundation Year (6-year track only) and Years 1-2: Foundation of Practice",
+              "language": "English",
+              "details": "An optional Foundation Year covers biomedical sciences and professionalism ahead of Years 1-2, which build anatomical, molecular, biochemical and pharmacological foundations through Case-Based Learning in small groups."
+            },
+            {
+              "phase": "Year 3: Integration into Practice",
+              "language": "English",
+              "details": "Hospital-based clinical placements begin at RCSI-affiliated teaching hospitals, alongside a simulation module and a Student Selected research or audit project."
+            },
+            {
+              "phase": "Years 4-5: Preparation for Practice",
+              "language": "English",
+              "details": "Full-time clinical team placements across Medicine, Obstetrics and Gynaecology, Psychiatry, Surgery, Paediatrics and General Practice, concluding with a mandatory sub-internship clerkship."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "publicField": "identity",
+      "claimText": "RCSI has trained doctors continuously since 1784 and is Ireland's largest medical school; renamed RCSI University of Medicine and Health Sciences in 2019.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Why RCSI (Undergraduate Medicine) page",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/why-rcsi-dublin",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "publicField": "recognition",
+      "claimText": "The Irish medical qualification (MB, BCh, BAO) is listed in EU Directive 2005/36/EC Annex V point 5.1.1 for automatic recognition across the EU/EEA, in effect for Ireland since 20 December 1976, once the Irish intern year and Certificate of Experience are also completed.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC (EUR-Lex), Annex V",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20160524",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "publicField": "recognition",
+      "claimText": "RCSI Dublin is listed by the US Department of Education's Federal Student Aid programme as an eligible foreign institution for its Medicine programme (school code 00770500). RCSI is authorised by Quality and Qualifications Ireland to use the TrustEd Ireland mark, and the Medicine degree is accredited by the Irish Medical Council and the National University of Ireland.",
+      "status": "verified",
+      "sourceLabel": "US Federal Student Aid — Royal College of Surgeons in Ireland eligible-institution listing",
+      "sourceUrl": "https://studentaid.gov/understand-aid/types/international/royal-college-surgeons-ireland",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "programmeSlug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+      "publicField": "academics",
+      "claimText": "Direct Entry Medicine is a 5-year (or 6-year with Foundation Year) direct-entry programme awarding the MB, BCh, BAO (Hons), an NUI Level 8 NFQ degree, taught in English, with 75 EU and 225 non-EU places.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Medicine Course Details and Why RCSI pages",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/course-details",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "programmeSlug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+      "publicField": "eligibility",
+      "claimText": "Non-EU applicants are assessed against country-specific academic criteria (e.g. A Level AAB including Chemistry, IB 38+ with Chemistry HL 5, India 90% overall with 75%+ in Chemistry/Biology/Physics-Maths) plus IELTS 6.5 overall (no band below 6.0); minimum age 18 by 31 December following entry.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Medicine Entry Requirements page",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/entry-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "programmeSlug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+      "publicField": "admissions",
+      "claimText": "Non-EU applicants (excl. USA/Canada) apply directly via RCSI's website with a EUR 75 application fee and a defined document list; USA/Canada-resident applicants apply via partner Atlantic Bridge on a separate timeline.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Medicine Apply page",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/apply",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "programmeSlug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+      "publicField": "intake",
+      "claimText": "Single annual September intake. September 2026 entry is closed. For September 2027 entry: non-EU (excl. USA/Canada) applications open 1 November 2026, close 15 January 2027; Atlantic Bridge (USA/Canada) opens 1 August 2026, standard-fee deadline 15 November 2026.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Medicine Apply page",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/apply",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "programmeSlug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+      "publicField": "fee",
+      "claimText": "Non-EU tuition 2026/27: EUR 61,000/year plus a once-off EUR 135 NUI registration fee; 50% of annual tuition due by 1 July with a 14-day cooling-off period; withdrawal after 31 January makes the student liable for 100% of that year's tuition; visa refusal triggers a full refund.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Medicine Fees and Funding page and Finance FAQs",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/medicine/fees-and-funding",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "programmeSlug": "rcsi-university-of-medicine-and-health-sciences-direct-entry-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical placements from Year 3 run across RCSI's named teaching hospitals (Beaumont, Connolly, Rotunda, Our Lady of Lourdes Drogheda, Cavan and Monaghan, Louth County) and a wider affiliated network; graduates who complete Ireland's intern year and receive a Certificate of Experience are exempt from the Irish Medical Council's PRES pre-registration exam.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Teaching Hospitals and Clinical Sites page",
+      "sourceUrl": "https://www.rcsi.com/dublin/about/faculty-of-medicine-and-health-sciences/collaborations-and-partnerships/teaching-hospitals-and-clinical-sites",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "publicField": "student living",
+      "claimText": "RCSI's Mercer Court residence (Millin House plus Mercer Apartments) offers single and twin rooms; for the 41-week 2026/27 lease, Mercer Apartments run EUR 322/week single or EUR 220/week twin, and Millin House runs EUR 332/week single or EUR 244/week twin.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — Undergraduate Accommodation page",
+      "sourceUrl": "https://www.rcsi.com/dublin/student-life/undergraduate-essentials/accommodation",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rcsi-university-of-medicine-and-health-sciences",
+      "publicField": "scholarship",
+      "claimText": "International Consilio Manuque Medicine Scholarship: EUR 25,000 total, disbursed across the programme (EUR 5,000/year on the 5-year track, EUR 4,167/year on the 6-year track), open to self-funding non-EU students admitted to Direct Entry Medicine who have accepted their offer, selected on academic merit plus interview.",
+      "status": "verified",
+      "sourceLabel": "RCSI Dublin — International Consilio Manuque Medicine Scholarship page",
+      "sourceUrl": "https://www.rcsi.com/dublin/undergraduate/application-information/scholarships/international-consilio-manuque-medicine-scholarship",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

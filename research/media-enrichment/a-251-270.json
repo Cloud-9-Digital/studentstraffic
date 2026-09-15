@@ -1,0 +1,369 @@
+{
+  "batchId": "media-a-251-270",
+  "notes": "Offline source audit completed 2026-07-25. Ready entries nominate direct assets served by the named institution's official website or official site storage. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy",
+      "universityName": "Nicolae Testemitanu State University of Medicine and Pharmacy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://usmf.md/sites/default/files/2025-02/Logo%20USMF%203_80-01_4.png",
+        "sourceType": "official",
+        "rightsBasis": "official USMF logo served from the university website",
+        "proposedPublicId": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://usmf.md/sites/default/files/styles/1920x664/public/2026-06/724745056_1348619543874276_2375505792233955439_n.jpg.jpeg?itok=Vx_23Vlg",
+        "sourceType": "official",
+        "rightsBasis": "official USMF homepage visual",
+        "proposedPublicId": "nicolae-testemitanu-state-university-of-medicine-and-pharmacy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "nipissing-university-nursing",
+      "universityName": "Nipissing University Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.nipissingu.ca/themes/custom/nu/images/logo/nuLogo-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Nipissing University logo served by the nursing page theme",
+        "proposedPublicId": "nipissing-university-nursing-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.nipissingu.ca/sites/default/files/nursing-sim-lab.jpg",
+        "sourceType": "official",
+        "rightsBasis": "official Nipissing School of Nursing simulation-lab image",
+        "proposedPublicId": "nipissing-university-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "nord-university",
+      "universityName": "Nord University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.nord.no/themes/custom/nord/src/img/logo-en.svg",
+        "sourceType": "official",
+        "rightsBasis": "official Nord University English logo",
+        "proposedPublicId": "nord-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.nord.no/sites/default/files/styles/block_frontpage/public/2023-02/To-jenter-i-gronne-gensere-Foto_KarolineOAPettersen-998kb.jpg?itok=3vpZgcEq",
+        "sourceType": "official",
+        "rightsBasis": "official Nord University homepage image",
+        "proposedPublicId": "nord-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "north-caucasian-state-academy",
+      "universityName": "North Caucasian State Academy",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed the same direct logo the first pass found (ncsa.ru/include/images/logo.png resolves 200). Checked about/history pages and homepage for a distinct campus photo; only news thumbnails and partner logos are present, no clearly identifiable institutional cover image, so cover stays on hold as before.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://ncsa.ru/include/images/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site header logo asset, ncsa.ru",
+        "proposedPublicId": "north-caucasian-state-academy-logo"
+      }
+    },
+    {
+      "universitySlug": "north-ossetian-state-medical-academy",
+      "universityName": "North Ossetian State Medical Academy",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass could not establish an inspectable official domain. Found the actual official domain uses the Russian acronym SOGMA (sogma.ru) rather than an English transliteration; both logo and a homepage welcome image are confirmed live there..",
+      "logo": {
+        "sourceUrl": "https://sogma.ru/images/logo_149_100.png",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site header logo asset, sogma.ru",
+        "proposedPublicId": "north-ossetian-state-medical-academy-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://sogma.ru/images/welcome1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official academy site welcome/homepage image, sogma.ru",
+        "proposedPublicId": "north-ossetian-state-medical-academy-cover"
+      }
+    },
+    {
+      "universitySlug": "north-eastern-federal-university",
+      "universityName": "North-Eastern Federal University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Official domain s-vfu.ru fails DNS resolution entirely from this environment (NXDOMAIN/server failure, not just a block). The most recent Wayback Machine snapshot (2026-04-17) is itself a reCAPTCHA challenge page — the crawler was blocked at capture time — so no current homepage content is archived. Earlier snapshots (2011-2013) predate the university's current branding and are too old to trust as current official assets. No verified current logo/cover recovered this pass."
+    },
+    {
+      "universitySlug": "mechnikov-north-western-medical-university",
+      "universityName": "Mechnikov North-Western Medical University",
+      "missing": [
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://szgmu.ru/eng/css/logo.png",
+        "sourceType": "official",
+        "rightsBasis": "official North-Western State Medical University English-site logo",
+        "proposedPublicId": "mechnikov-north-western-medical-university-logo",
+        "appliedAt": "2026-07-25"
+      },
+      "status": "ready",
+      "reason": "Logo applied to the database on 2026-07-25. Cover still outstanding: the sourced URL (https://szgmu.ru/eng/css/sl-spec-prog.jpg) returned HTTP 404 at upload time despite resolving during research. Needs a fresh cover asset in a future pass."
+    },
+    {
+      "universitySlug": "northeastern-university",
+      "universityName": "Northeastern University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.northeastern.edu/wp-content/uploads/NU_Experience_primary_box_red_rgb-1@2x-300x68.png",
+        "sourceType": "official",
+        "rightsBasis": "official Northeastern University brand asset served from its website",
+        "proposedPublicId": "northeastern-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.northeastern.edu/wp-content/uploads/Commencement-homepage-takeover.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official Northeastern University homepage visual",
+        "proposedPublicId": "northeastern-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "northern-state-medical-university",
+      "universityName": "Northern State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): First pass found only the header logo path; direct inspection of the English-site assets folder turned up a dedicated banner image (nsmu_banner.png) not previously isolated. Both confirmed live..",
+      "logo": {
+        "sourceUrl": "https://www.nsmu.ru/images/header/header_logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site header logo asset, nsmu.ru",
+        "proposedPublicId": "northern-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.nsmu.ru/en/assets/nsmu_banner.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university English-site banner image, nsmu.ru",
+        "proposedPublicId": "northern-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "northwestern-university",
+      "universityName": "Northwestern University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Official brand.northwestern.edu pages don't expose a directly downloadable logo file (gated behind interactive brand-tool UI). Found a Public Domain-tagged wordmark on Wikimedia Commons instead. The raw SVG endpoint was rate-limited by Wikimedia on repeated requests, so used the rendered PNG thumbnail of the same Commons file (also hosted on upload.wikimedia.org), confirmed HTTP 200.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Northwestern_University_wordmark.svg/1280px-Northwestern_University_wordmark.svg.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file Northwestern_University_wordmark.svg, tagged Public Domain (simple wordmark, ineligible for copyright / PD-textlogo); a separate trademark notice applies but does not restrict reuse of the image file itself",
+        "proposedPublicId": "northwestern-university-logo"
+      }
+    },
+    {
+      "universitySlug": "norwegian-school-economics",
+      "universityName": "Norwegian School Economics",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): NHH's own site (nhh.no) responded fine this pass but exposes only partner/accreditation badge logos, not its own mark, as standalone files. Used the Public Domain-tagged logo on Wikimedia Commons instead. For cover, the only campus-adjacent photo found was a matriculation-ceremony crowd shot (people-focused, not a campus/building image), so cover remains on hold.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Norwegian_School_of_Economics_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file Norwegian_School_of_Economics_logo.svg, tagged Public Domain (simple logo, ineligible for copyright); separate trademark notice does not restrict file reuse",
+        "proposedPublicId": "norwegian-school-economics-logo"
+      }
+    },
+    {
+      "universitySlug": "norwegian-university-science-technology",
+      "universityName": "Norwegian University Science Technology",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://www.ntnu.edu/o/ntnu-theme/images/ntnu-logo-web-v1.svg",
+        "sourceType": "official",
+        "rightsBasis": "official NTNU logo served from the university theme",
+        "proposedPublicId": "norwegian-university-science-technology-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.ntnu.edu/documents/1289651401/1339396683/Hovedbygget.jpg/08dad362-e352-e195-0283-d40706d5bf3b?t=1723102578793",
+        "sourceType": "official",
+        "rightsBasis": "official NTNU campus image",
+        "proposedPublicId": "norwegian-university-science-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "novgorod-state-university",
+      "universityName": "Novgorod State University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Official domain confirmed reachable and logo isolated. Homepage images are all mobile-cropped resize-cache thumbnails from the news slider with no clearly identifiable standalone campus photo, so cover remains on hold.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://novsu.ru/local/templates/abitur/images/logo-blue.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site template logo asset, novsu.ru",
+        "proposedPublicId": "novgorod-state-university-logo"
+      }
+    },
+    {
+      "universitySlug": "novosibirsk-state-university",
+      "universityName": "Novosibirsk State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): nsu.ru returns HTTP 403 directly (blocked). english.nsu.ru has a very recent Wayback snapshot taken before any bot-block; recovered and visually confirmed both the header logo and a campus building photo from it..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20260418064040im_/https://english.nsu.ru/local/templates/nsu/images/Logo_en_red.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university English-site logo, captured via Wayback Machine snapshot (2026-04-18) of english.nsu.ru",
+        "proposedPublicId": "novosibirsk-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20260418064040im_/https://english.nsu.ru/upload/resize_cache/iblock/a3c/eototb9orcrm9wlih6y179vnl6n56kke/800_411_2/n-korpus_en.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official university campus building photo, captured via Wayback Machine snapshot (2026-04-18) of english.nsu.ru",
+        "proposedPublicId": "novosibirsk-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "novosibirsk-state-university-zelman-medicine",
+      "universityName": "Novosibirsk State University Zelman Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed this catalogue record refers to NSU's Institute/Faculty of Medicine (Zelman Institute), a programme/unit inside Novosibirsk State University, not a separately accredited institution. It should inherit the parent university's brand (see the novosibirsk-state-university entry in this same batch, now upgraded with logo+cover) rather than have unit-specific media sourced separately. No media sourced pending a parent-brand inheritance decision.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "omsk-state-medical-university",
+      "universityName": "Omsk State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Official English-name domain confirmed reachable and logo isolated. Homepage images are all news-article thumbnails; no clean standalone campus photo identified, so cover remains on hold.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://omsk-osma.ru/i/logo_max.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, omsk-osma.ru",
+        "proposedPublicId": "omsk-state-medical-university-logo"
+      }
+    },
+    {
+      "universitySlug": "orel-state-university",
+      "universityName": "Orel State University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Confirmed oreluniver.ru (not the admissions-style .com site flagged in the first pass) is the official domain, and isolated its og:image logo. Domain has an SSL certificate issue requiring an insecure fetch to reach. Homepage slider images are all promotional banners (admissions/DPO ads); no clean campus photo identified, so cover remains on hold.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://oreluniver.ru/assets/images/logo.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site og:image logo asset, oreluniver.ru",
+        "proposedPublicId": "orel-state-university-logo"
+      }
+    },
+    {
+      "universitySlug": "orenburg-state-medical-university",
+      "universityName": "Orenburg State Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo confirmed on official orgma.ru. Distinct campus-building cover sourced from Wikimedia Commons under CC-BY-SA-4.0 and visually verified as OSMA's main building (matches Russian building signage 'ГОСУДАРСТВЕННАЯ МЕДИЦИНСКАЯ АКАДЕМИЯ')..",
+      "logo": {
+        "sourceUrl": "https://orgma.ru/images/big-logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university site logo asset, orgma.ru",
+        "proposedPublicId": "orenburg-state-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons file, licensed CC-BY-SA-4.0, captioned as the OSMA main building",
+        "proposedPublicId": "orenburg-state-medical-university-cover"
+      }
+    },
+    {
+      "universitySlug": "osaka-university",
+      "universityName": "Osaka University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Institution's official English name is now 'The University of Osaka' post-rename; site still resolves at osaka-u.ac.jp and both assets are confirmed live. Flagging that the cover is the university's official branded OGP card (navy background with emblem + wordmark) rather than a campus photograph — visually verified but logo-like in composition, so the integrator may prefer to source a campus photo separately..",
+      "logo": {
+        "sourceUrl": "https://www.osaka-u.ac.jp/assets/images/header/logo_for_folder.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site header logo asset, osaka-u.ac.jp (English name now 'The University of Osaka')",
+        "proposedPublicId": "osaka-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://www.osaka-u.ac.jp/ja/assets/files/og-image/OGP-image-EN.png/@@images/image",
+        "sourceType": "official",
+        "rightsBasis": "Official university OGP share-card image, osaka-u.ac.jp",
+        "proposedPublicId": "osaka-university-cover"
+      }
+    },
+    {
+      "universitySlug": "osh-international-medical-university",
+      "universityName": "Osh International Medical University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "logo": {
+        "sourceUrl": "https://oimu.kg/imf/assets/img/logo/logo_1.png",
+        "sourceType": "official",
+        "rightsBasis": "official Osh International Medical University logo served from oimu.kg",
+        "proposedPublicId": "osh-international-medical-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://oimu.kg/storage/uploads/thumbnail/hoAdhvKIKcB5oyFiHVvk2tdO8eCMIxv6EzzIf0u5.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "official Osh International Medical University image served from site storage",
+        "proposedPublicId": "osh-international-medical-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

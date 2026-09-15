@@ -1,0 +1,36 @@
+{
+  "scope": "Japan medical discovery — Tohoku University School of Medicine",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {
+      "claim": "Tohoku University School of Medicine states that its undergraduate classes are all conducted in Japanese, that no undergraduate courses are offered in English, and that strong Japanese ability is required.",
+      "sourceUrl": "https://www.med.tohoku.ac.jp/english/admissions/undergraduate/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Tohoku University's admissions centre states that privately financed international undergraduates take the same classes as Japanese students and therefore need high Japanese-language proficiency.",
+      "sourceUrl": "https://admissions.tohoku.ac.jp/en/admissions/undergraduate/international_student/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Tohoku University's 2026 international-student leaflet lists undergraduate application fee of JPY 17,000, admission fee of JPY 282,000, and annual tuition of JPY 900,000 for international students requiring a student visa.",
+      "sourceUrl": "https://www.insc.tohoku.ac.jp/japanese/wp-content/uploads/2026/06/TU-Leaflet-2026.06.1.pdf",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    },
+    {
+      "claim": "Tohoku University's undergraduate admissions page for Medicine reports a Ministry of Education-approved increase in the programme's admission capacity.",
+      "sourceUrl": "https://www.med.tohoku.ac.jp/admission/medical/",
+      "sourceType": "official-university",
+      "verifiedAt": "2026-07-25"
+    }
+  ],
+  "holdReasons": [
+    "A current, complete Medicine-specific undergraduate admission requirements set was not assembled from primary sources.",
+    "Programme curriculum, clinical-training, recognition and student-support evidence remains incomplete for the required publication fields."
+  ],
+  "nextAction": "Collect current Medicine-specific undergraduate admissions, curriculum, clinical-training, recognition and support documentation, then complete the field-level review before publishing."
+}

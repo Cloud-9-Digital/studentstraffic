@@ -1,0 +1,431 @@
+{
+  "countries": [
+    {
+      "slug": "cyprus",
+      "name": "Cyprus",
+      "region": "Europe",
+      "summary": "Cyprus is a Mediterranean European Union member state with several English-medium medical schools whose degrees carry automatic recognition across the EU and EEA, drawing international students with clinical placement options extending to Greece, the USA and Germany.",
+      "whyStudentsChooseIt": "Cyprus offers EU-recognized, English-medium medical degrees with grade-based (rather than entrance-exam-based) admission, established international student communities, and clinical training networks that can extend beyond Cyprus itself to partner hospitals in Greece and abroad.",
+      "climate": "Mediterranean climate with hot, dry summers and mild, wetter winters.",
+      "currencyCode": "EUR",
+      "metaTitle": "Study MBBS and Medicine in Cyprus",
+      "metaDescription": "Explore English-medium MBBS and Medicine programs in Cyprus, including admissions, fees, recognition and accommodation guidance for international students."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. European University Cyprus maps its Doctor of Medicine (MD) programme to this category: a direct-entry, single-cycle six-year programme leading to the MD qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "cyprus",
+      "slug": "european-university-cyprus",
+      "name": "European University Cyprus",
+      "city": "Nicosia",
+      "type": "Private",
+      "establishedYear": 2013,
+      "officialWebsite": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+      "mediaAttribution": {},
+      "summary": "European University Cyprus's School of Medicine began instruction in 2013 and runs an English-medium, direct-entry Doctor of Medicine programme. The programme is listed in the WHO World Directory of Medical Schools with ECFMG-certification eligibility for graduates from 2013 onward, and EU law explicitly names European University Cyprus as one of Cyprus's approved medical-qualification awarding bodies under EU Directive 2005/36/EC.",
+      "campusLifestyle": "The School of Medicine operates from EUC's Nicosia main campus, distinct from a separate WDOMS-listed EUC branch campus in Frankfurt, Germany. Clinical training draws on a wide hospital network across Cyprus and Greece, with optional elective placements available in the USA and Germany.",
+      "cityProfile": "Nicosia is Cyprus's capital. EUC does not operate a traditional on-campus dormitory but partners with several private student-residence buildings near campus, coordinated through a dedicated Housing Office.",
+      "practicalExposure": "The six-year, 360-ECTS MD programme runs preclinical study with introductory clinical exposure in Years 1-3, then clinical rotations: Internal Medicine and Surgery in Year 4, Neurosciences/Mental Health and Maternal/Child Health in Year 5, and a Year 6 traineeship across five specialties plus a 12-ECTS thesis. Clinical placements run through a named hospital network in Cyprus (German Medical Institute, American Medical Center, Hygeia Polyclinic Limassol, Polyclinic Nicosia, Mediterranean Hospital) and Greece (Athens Medical Center, IASO General Hospital, European Interbalkan Medical Center), with optional elective placements in the USA and Germany. Graduates receive the MD degree, a Cypriot medical qualification carrying EU Directive 2005/36/EC automatic recognition across the EU and EEA.",
+      "hostelOverview": "EUC does not operate a traditional dormitory but partners with several private student-residence buildings near campus, including Unihalls Trinity, U-City Residence, Unihalls Premier, The Med-Boutique Residence and New Life Halls, with weekly rates roughly EUR 150-350 depending on the residence and room type, generally including utilities. Students typically apply directly to the residence of their choice after enrollment, and off-campus private rentals are also common, running roughly EUR 550-700+ per month.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. Several partner residences include utilities and amenities such as gyms, but food costs should be planned as a separate budget line.",
+      "safetyOverview": "No university-published campus-safety statistics were found. EUC's Housing Office (housing@euc.ac.cy) supports students in finding vetted accommodation options near campus.",
+      "studentSupport": "EUC's Office of Admissions coordinates visa-relevant document processing for non-EU applicants, advising submission at least 3 months before semester start to allow time for entry-permit issuance. The Housing Office supports students in arranging accommodation after enrollment.",
+      "whyChoose": [
+        "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002949), currently operational, with ECFMG-certification eligibility for graduates from 2013 onward and Canadian medical-regulator acceptability noted in the same record.",
+        "EU Directive 2005/36/EC explicitly names European University Cyprus, alongside the University of Cyprus and University of Nicosia, as an approved awarding body for the automatically-recognized Cypriot medical qualification.",
+        "Grade-based admission (no dedicated medical-school entrance exam) accepting GCE A-Levels, IB Higher Level and Abitur as equivalency routes.",
+        "A wide clinical hospital network spanning Cyprus and Greece, with optional elective placements in the USA and Germany.",
+        "A published, official 2026/27 fee-schedule document with no ambiguity about the base annual tuition rate."
+      ],
+      "thingsToConsider": [
+        "Medicine is explicitly excluded from every standard EUC scholarship category (High School, Academic Excellence, Alumni, Athletic and need-based Financial Aid) -- no institutional discount applies to this programme.",
+        "Choosing USA-based clinical training in years 4-6 adds a EUR 6,000/year surcharge on top of the base EUR 23,000/year tuition.",
+        "No fixed, Medicine-specific 2026/27 application deadline is published; the university cites a general 15 September deadline (subject to early fill) and advises non-EU applicants to apply at least 3 months before an October start for visa-processing time.",
+        "Some third-party sites describe a separate, higher 'Europe-based internship' fee tier that does not appear in EUC's own official 2026/27 fee-schedule document -- rely on the official document's flat EUR 23,000/year figure.",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students with strong secondary-school grades (roughly 90% average or equivalent) who prefer a grade-based admissions process over a written entrance exam.",
+        "Applicants interested in optional USA or German clinical placements during the later years of the programme, and able to budget for the associated surcharge if choosing the USA track.",
+        "Families able to fund the full tuition without relying on an institutional scholarship, given Medicine's exclusion from EUC's scholarship programmes."
+      ],
+      "industryPartners": [
+        "German Medical Institute",
+        "American Medical Center",
+        "Hygeia Polyclinic Limassol",
+        "Polyclinic Nicosia",
+        "Mediterranean Hospital",
+        "Athens Medical Center"
+      ],
+      "recognitionBadges": [
+        "World Directory of Medical Schools (WDOMS/FAIMER) — listed (School ID F0002949), currently operational",
+        "ECFMG Certification — graduates eligible to apply, graduation years 2013-present",
+        "Medical Council of Canada (MCC) — degree acceptable to Canadian provincial/territorial medical regulatory authorities, per WDOMS Sponsor Notes",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — European University Cyprus named explicitly as an approved awarding body for the automatically-recognized Cypriot medical qualification",
+        "Cyprus Agency of Quality Assurance and Accreditation in Higher Education (CYQAA) — MD programme accredited"
+      ],
+      "recognitionLinks": [
+        { "label": "World Directory of Medical Schools — European University Cyprus School of Medicine listing", "url": "https://search.wdoms.org/home/GetSchoolDetail/F0002949" },
+        { "label": "Consolidated EU Directive 2005/36/EC Annex V (Cyprus entry)", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401395" }
+      ],
+      "faq": [
+        {
+          "question": "Is the Doctor of Medicine programme direct-entry after high school?",
+          "answer": "Yes. Admission follows completion of secondary education, with no separate bachelor's stage required first."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MD (Doctor of Medicine), a Cypriot medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA, with European University Cyprus explicitly named as an approved awarding body."
+        },
+        {
+          "question": "What entrance exam does the university require?",
+          "answer": "There is no dedicated medical-school entrance exam. Admission is grade-based (roughly a 90% secondary-school average or equivalent, with Biology plus one of Chemistry, Mathematics or Physics), accepting GCE A-Levels, IB Higher Level and Abitur; the university reserves the right to conduct an interview for selected candidates."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 23,000 per year, per the university's official 2026/27 international-student fee schedule. Students who choose USA-based clinical training in years 4-6 pay an additional EUR 6,000 per year for those years."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a non-refundable EUR 200 application fee specific to Medicine (higher than the standard EUR 80 undergraduate application fee)."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "No. Medicine is explicitly excluded from every standard EUC scholarship category (High School, Academic Excellence, Alumni, Athletic, and need-based Financial Aid), so no institutional discount applies to this programme."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The academic year begins in October. The university has not published a fixed Medicine-specific deadline; it cites a general 15 September deadline (subject to early fill for high demand) and advises non-EU applicants to submit visa-relevant documents at least 3 months before the October start."
+        },
+        {
+          "question": "Is university accommodation available for international students?",
+          "answer": "EUC does not operate a traditional dormitory but partners with several private student residences near campus, with weekly rates roughly EUR 150-350 depending on the building and room type; students generally apply directly to their chosen residence after enrollment."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "World Directory of Medical Schools — European University Cyprus School of Medicine listing",
+          "url": "https://search.wdoms.org/home/GetSchoolDetail/F0002949",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WHO/FAIMER listing, founding year and ECFMG graduation-year eligibility."
+        },
+        {
+          "label": "European University Cyprus — official MD programme page",
+          "url": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, eligibility criteria, named clinical partners and curriculum structure."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC Annex V (Cyprus entry)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401395",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence naming European University Cyprus explicitly as an approved awarding body for the EU-recognized Cypriot medical qualification."
+        },
+        {
+          "label": "European University Cyprus — official 2026/27 International Students Tuition Fees (PDF, doc EUC/INTF/07/2026)",
+          "url": "https://syllabus.euc.ac.cy/tuitions/euc-tuition-fees-i.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Gold-standard official document; primary evidence for confirmed 2026/27 tuition, USA-track surcharge and application fee."
+        },
+        {
+          "label": "European University Cyprus — official Visa Requirements page",
+          "url": "https://euc.ac.cy/en/admissions/how-to-apply/visa-requirements/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the non-EU visa-document lead-time guidance."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "european-university-cyprus-doctor-of-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Doctor of Medicine (MD)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 23000,
+            "officialTotalTuitionAmount": 138000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition: EUR 23,000/year, per the university's official International Students Tuition Fees document (EUC/INTF/07/2026). Total is calculated as the annual figure times 6 years -- not published as a lump sum. Students choosing USA-based clinical training in years 4-6 pay an additional EUR 6,000/year for those years. A separate, non-refundable EUR 200 application fee applies. Withdrawal before the applicable deadline refunds tuition fees excluding application/transfer fees, per general university policy; this was not independently re-confirmed word-for-word as Medicine-specific."
+          },
+          "officialProgramUrl": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a secondary-school average of roughly 90% or equivalent (18/20 for Cyprus/Greece systems, 2.3 for German Abitur), including Biology plus one of Chemistry, Mathematics or Physics"
+            ],
+            "restrictions": [
+              "The university reserves the right to conduct an interview (online available) for selected candidates",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "GCE A-Levels, IB Higher Level and German Abitur are accepted as equivalency routes; English proficiency (IELTS 6.5+/TOEFL iBT 79+) is required unless exempt by nationality or prior English-medium education.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://euc.ac.cy/en/programs/bachelor-medicine/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants complete the online application form with the Medicine-specific application fee, submit academic records, a reference letter and a personal statement, and attend an interview if selected, before confirming acceptance and paying a tuition deposit.",
+            "eligibility": {
+              "intro": "Admission is grade-based, requiring a secondary-school average of roughly 90% (or equivalent) including Biology plus one of Chemistry, Mathematics or Physics, English proficiency, and an interview for selected candidates.",
+              "items": [
+                "Secondary-school leaving certificate with an average of roughly 90% or equivalent (GCE A-Level, IB HL or Abitur accepted)",
+                "Biology plus one of Chemistry, Mathematics or Physics at school-leaving level",
+                "English proficiency (IELTS 6.5+, TOEFL iBT 79+, or equivalent), unless exempt",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online application form and pay the non-refundable EUR 200 application fee",
+              "Submit academic records, an academic reference letter sent directly by the referee, and a personal statement in English",
+              "Attend an interview if selected (an online option is available for international applicants)",
+              "Confirm acceptance within one week of an offer and pay the tuition deposit",
+              "Arrange visa-relevant documents at least 3 months before the October start (non-EU applicants)"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Secondary-school leaving certificate and transcript",
+                "Academic reference letter, sent directly by the referee's institution"
+              ],
+              "application": [
+                "Personal statement in English",
+                "English-proficiency proof, unless exempt",
+                "Proof of application-fee payment",
+                "Visa-relevant documents (non-EU applicants), submitted at least 3 months before the October start"
+              ]
+            },
+            "deadlinesNote": "October intake. No fixed Medicine-specific deadline is published; the general university deadline is 15 September, subject to early fill for high demand. Non-EU applicants should apply at least 3 months ahead for visa processing.",
+            "visaConsiderations": [
+              "Non-EU applicants must submit visa-relevant documents to the Office of Admissions at least 3 months before semester start to allow time for entry-permit issuance."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 tuition is EUR 23,000/year, per the official International Students Tuition Fees document (EUC/INTF/07/2026). A EUR 6,000/year surcharge applies for years 4-6 if the student chooses USA-based clinical training. A separate EUR 200 non-refundable application fee applies. Some third-party sites describe an additional 'Europe-based internship' fee tier not present in the official document -- the flat EUR 23,000/year figure is treated as authoritative.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3: preclinical and introductory clinical exposure",
+              "language": "English",
+              "details": "Preclinical foundation subjects with introductory clinical coursework."
+            },
+            {
+              "phase": "Years 4-5: clinical rotations",
+              "language": "English",
+              "details": "Year 4 covers Internal Medicine and Surgery; Year 5 covers Neurosciences/Mental Health and Maternal/Child Health, across a hospital network in Cyprus and Greece with optional USA/Germany placements."
+            },
+            {
+              "phase": "Year 6: traineeship and thesis",
+              "language": "English",
+              "details": "Rotating traineeship across five specialties, concluding with a 12-ECTS thesis."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "european-university-cyprus",
+      "publicField": "identity",
+      "claimText": "European University Cyprus School of Medicine (Nicosia campus) began instruction in 2013, distinct from a separate WDOMS-listed EUC branch campus in Frankfurt, Germany.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002949",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002949",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "european-university-cyprus",
+      "publicField": "recognition",
+      "claimText": "Listed in the WHO World Directory of Medical Schools (FAIMER School ID F0002949), currently operational; graduates (2013-current) eligible to apply for ECFMG Certification; degree noted as acceptable to Canadian provincial/territorial medical regulatory authorities.",
+      "status": "verified",
+      "sourceLabel": "World Directory of Medical Schools — school detail record F0002949",
+      "sourceUrl": "https://search.wdoms.org/home/GetSchoolDetail/F0002949",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "european-university-cyprus",
+      "publicField": "recognition",
+      "claimText": "EU Directive 2005/36/EC Annex V point 5.1.1 explicitly names European University Cyprus (alongside the University of Cyprus and University of Nicosia) as an approved awarding body for the Cypriot medical qualification, automatically recognized across the EU/EEA with a reference date of 1 May 2004.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC Annex V (Cyprus entry)",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401395",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "european-university-cyprus",
+      "programmeSlug": "european-university-cyprus-doctor-of-medicine",
+      "publicField": "academics",
+      "claimText": "Doctor of Medicine is a 6-year, 360-ECTS, direct-entry programme awarding the MD degree, taught entirely in English.",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official MD programme page",
+      "sourceUrl": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "european-university-cyprus",
+      "programmeSlug": "european-university-cyprus-doctor-of-medicine",
+      "publicField": "eligibility",
+      "claimText": "Grade-based admission (roughly 90% secondary-school average or equivalent, Biology plus one of Chemistry/Mathematics/Physics), accepting A-Level, IB HL and Abitur; no dedicated entrance exam, interview possible for selected candidates.",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official MD programme page",
+      "sourceUrl": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "european-university-cyprus",
+      "programmeSlug": "european-university-cyprus-doctor-of-medicine",
+      "publicField": "admissions",
+      "claimText": "Application via EUC's online form with a EUR 200 admission fee, academic records, a reference letter and personal statement; interview possible; non-EU applicants advised to submit visa documents at least 3 months before the October start.",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official Visa Requirements page",
+      "sourceUrl": "https://euc.ac.cy/en/admissions/how-to-apply/visa-requirements/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "european-university-cyprus",
+      "programmeSlug": "european-university-cyprus-doctor-of-medicine",
+      "publicField": "intake",
+      "claimText": "October intake; no fixed Medicine-specific deadline published, general university deadline 15 September subject to early fill.",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official MD programme page",
+      "sourceUrl": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "european-university-cyprus",
+      "programmeSlug": "european-university-cyprus-doctor-of-medicine",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition: EUR 23,000/year, plus a EUR 6,000/year surcharge for years 4-6 under the USA clinical-training track; EUR 200 non-refundable application fee.",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official 2026/27 International Students Tuition Fees (PDF, doc EUC/INTF/07/2026)",
+      "sourceUrl": "https://syllabus.euc.ac.cy/tuitions/euc-tuition-fees-i.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "european-university-cyprus",
+      "programmeSlug": "european-university-cyprus-doctor-of-medicine",
+      "publicField": "professional pathway",
+      "claimText": "Clinical training runs across a named hospital network in Cyprus (German Medical Institute, American Medical Center, Hygeia Polyclinic Limassol, Polyclinic Nicosia, Mediterranean Hospital) and Greece (Athens Medical Center, IASO General Hospital, European Interbalkan Medical Center), with optional elective placements in the USA and Germany.",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official MD programme page",
+      "sourceUrl": "https://euc.ac.cy/en/programs/bachelor-medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "european-university-cyprus",
+      "publicField": "scholarship",
+      "claimText": "Medicine is explicitly excluded from every standard EUC scholarship category (High School, Academic Excellence, Alumni, Athletic, and need-based Financial Aid).",
+      "status": "verified",
+      "sourceLabel": "European University Cyprus — official Scholarship Aid page",
+      "sourceUrl": "https://euc.ac.cy/en/admissions/finance-aid/scholarship-aid/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

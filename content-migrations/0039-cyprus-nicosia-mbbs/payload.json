@@ -1,0 +1,413 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. University of Nicosia maps its 6-Year MD (Nicosia) programme to this category: a direct-entry, single-cycle six-year programme leading to the Doctor of Medicine (MD) qualification. This does not cover the university's separate 5-year graduate-entry MD pathway.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "cyprus",
+      "slug": "university-of-nicosia",
+      "name": "University of Nicosia",
+      "city": "Nicosia",
+      "type": "Private",
+      "establishedYear": 2011,
+      "officialWebsite": "https://www.unic.ac.cy/med/",
+      "mediaAttribution": {},
+      "summary": "University of Nicosia opened the first medical school in Cyprus in 2011 and runs a direct-entry, six-year Doctor of Medicine programme in Nicosia (360 ECTS), alongside a separate graduate-entry pathway and an Athens campus not covered by this record. Cyprus's national accreditation registry certifies this programme from Winter 2025-2026 through Spring 2030, and EU Directive 2005/36/EC names the university as an approved medical-degree awarding body.",
+      "campusLifestyle": "University of Nicosia Medical School has graduated a large alumni cohort now practising at several hundred medical centres worldwide, and maintains a dedicated USMLE Study Club and individualized career-advising structure from Year 1, reflecting a strong institutional focus on the US residency pathway. Students who remain in Cyprus for clinical training receive free Greek-language lessons to support patient communication.",
+      "cityProfile": "Nicosia is Cyprus's capital. The university operates its own on-campus UNIC Medical Centre, described as the first of its kind in Cyprus, operating under the Cyprus General Healthcare System and serving as a primary-care training ground for students.",
+      "practicalExposure": "The six-year, 360-ECTS MD programme begins longitudinal, primary-care-focused clinical placements from Year 2, increases clinical intensity through Years 3-4 (including a Year 4 transition rotation across Primary Care, General Surgery and Internal Medicine plus a research project), and moves to an almost entirely clinical structure in Years 5-6, with rotating sub-specialty placements (cardiology, respiratory, gastroenterology, nephrology/urology, paediatrics, obstetrics/gynaecology, psychiatry, neurology and more) culminating in a 6-week clinical elective that can be taken abroad. The university does not publish specific named teaching-hospital partners, describing clinical sites only generically as 'affiliated hospitals' whose sub-rotation sequence depends on clinical capacity; students may also opt into international clinical-training placements in the UK, USA, Switzerland or Germany at additional cost. Graduates receive the MD degree.",
+      "hostelOverview": "The university offers three residence complexes near the Medical School -- SIX (314 rooms), Triangle (147 rooms) and U (399 single-occupancy studios with an option to share) -- bookable through the same account used for the admissions application. No official per-month or per-year accommodation cost is published; applicants should confirm current rates directly with the university. Private studios, flats and houses around campus are also available, and the university arranges short-term accommodation (from budget options to hotels) for the arrival period before permanent housing begins.",
+      "dietarySupport": "No specific on-campus meal plan or dining-cost figure is published. The university's own minimum living-cost estimate for Nicosia is EUR 12,000 per year, which should be planned alongside tuition and accommodation.",
+      "safetyOverview": "No university-published campus-safety statistics were found. The university's Student Services team assists with housing and settling-in support for incoming students.",
+      "studentSupport": "Every student is assigned a personal tutor from Year 1, alongside one-on-one Career Adviser meetings, an individualized career profile for postgraduate planning, and alumni-led mentoring. A dedicated USMLE Study Club supports students targeting US residency pathways.",
+      "whyChoose": [
+        "The first medical school in Cyprus (founded 2011), with a 6-Year MD (Nicosia) programme certified by Cyprus's national accreditation registry from Winter 2025-2026 through Spring 2030.",
+        "EU Directive 2005/36/EC names University of Nicosia explicitly as an approved awarding body for the automatically-recognized Cypriot medical qualification, effective for degrees awarded from October 2014 onward.",
+        "A strong, institutionally-supported US residency pathway: since 2024 ECFMG certifies only WFME-accredited-programme graduates, and the university's CYQAA/DIPAE accreditation carries WFME Recognition Status, with a dedicated USMLE Study Club and individualized career advising.",
+        "A need-based scholarship of up to 20% of tuition, available to admitted students after receiving an offer.",
+        "A fully refundable seat-reservation deposit if an admitted student ultimately decides not to enroll."
+      ],
+      "thingsToConsider": [
+        "University of Nicosia also runs a separate 5-year graduate-entry MD pathway (bachelor's-degree holders only, EUR 25,000/year, 300 ECTS, accredited only through Spring 2027) and a 6-Year MD at an Athens, Greece campus -- this record covers the direct-entry 6-Year MD in Nicosia specifically, not those other pathways.",
+        "The university does not publish a fixed 2026/27 application deadline; admissions are presented as rolling ('Admissions Open'), with a September intake -- confirm current-cycle deadlines directly with the admissions team.",
+        "Choosing an international clinical-training placement in years 5-6 adds a substantial supplement: EUR 6,000/year for UK/USA placements or EUR 3,000/year for Switzerland/Germany placements.",
+        "No specific named teaching hospitals are published for the Cyprus-based clinical placements; the university describes sites only generically as 'affiliated hospitals.'",
+        "Indian applicants must separately satisfy India's National Medical Commission NEET-UG Eligibility Certificate requirement; this is not referenced or administered by the university."
+      ],
+      "bestFitFor": [
+        "Students with strong secondary-school grades (roughly 90% average, A-Level ABB, or IB 32) targeting a US residency pathway, given the university's dedicated USMLE support structure.",
+        "Applicants comfortable with rolling admissions and confirming exact deadlines directly with the university rather than relying on a fixed published date.",
+        "Families able to budget for substantial optional clinical-placement supplements if targeting a UK, USA, Switzerland or Germany elective."
+      ],
+      "industryPartners": [
+        "UNIC Medical Centre"
+      ],
+      "recognitionBadges": [
+        "Cyprus national accreditation registry (DIPAE, formerly CYQAA) — 6-Year MD (Nicosia) programme certified Winter 2025-2026 through Spring 2030",
+        "World Federation for Medical Education (WFME) — Recognition Status carried via CYQAA/DIPAE accreditation, the mechanism enabling ECFMG certification since 2024",
+        "EU Directive 2005/36/EC (Annex V, point 5.1.1) — University of Nicosia named explicitly as an approved awarding body for the automatically-recognized Cypriot medical qualification, effective from October 2014"
+      ],
+      "recognitionLinks": [
+        { "label": "Cyprus DIPAE — Accredited Programmes, University of Nicosia Medical School listing", "url": "https://www.dipae.ac.cy/el/accreditation-el/accredited-programmes-med-el" },
+        { "label": "Consolidated EU Directive 2005/36/EC Annex V (Cyprus entry)", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20240620" }
+      ],
+      "faq": [
+        {
+          "question": "Is the 6-Year MD programme direct-entry after high school?",
+          "answer": "Yes. Admission follows completion of secondary education, with no separate bachelor's stage required first. This is different from University of Nicosia's separate 5-year Graduate-Entry MD, which requires an existing bachelor's degree."
+        },
+        {
+          "question": "What qualification is awarded on graduation?",
+          "answer": "Graduates receive the MD (Doctor of Medicine), a Cypriot medical qualification listed under EU Directive 2005/36/EC Annex V for automatic recognition across the EU/EEA, with University of Nicosia named explicitly as an approved awarding body for degrees from October 2014 onward."
+        },
+        {
+          "question": "What entrance requirements does the university use?",
+          "answer": "Admission is grade-based (roughly a 90% secondary-school average, A-Level ABB, or IB 32 overall including Biology plus one of Chemistry/Physics/Mathematics), plus English proficiency and a mandatory online interview -- there is no separate written entrance exam for this direct-entry pathway."
+        },
+        {
+          "question": "What is the current tuition fee?",
+          "answer": "EUR 24,000 per year for the 6-Year MD in Nicosia. The university's separate 5-year Graduate-Entry MD is priced differently, at EUR 25,000 per year."
+        },
+        {
+          "question": "Are there additional fees besides tuition?",
+          "answer": "Yes -- a EUR 60 non-refundable application fee, a EUR 1,500 administrative fee and a EUR 3,500 seat-reservation deposit (both deducted from first-semester tuition, with the deposit fully refundable if the student does not enroll), plus visa, insurance and malpractice-cover fees for non-EU students."
+        },
+        {
+          "question": "When does the academic year start and when can I apply?",
+          "answer": "The academic year starts in September. The university presents admissions as rolling ('Admissions Open') rather than tied to one fixed deadline -- confirm the current application timeline directly with the admissions team."
+        },
+        {
+          "question": "Is a scholarship available for international Medicine students?",
+          "answer": "Yes -- a need-based scholarship of up to 20% of tuition is available, but only after an applicant has met admissions requirements, completed the interview and received an offer; the offer letter specifies the scholarship application deadline."
+        },
+        {
+          "question": "Do Indian students need NEET to join this programme?",
+          "answer": "The university's own admissions criteria do not reference NEET. Separately, India's National Medical Commission requires Indian citizens and OCI holders who obtain a primary medical qualification abroad to have qualified NEET-UG, whose result serves as the mandatory Eligibility Certificate."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Cyprus DIPAE — Accredited Programmes, University of Nicosia Medical School listing",
+          "url": "https://www.dipae.ac.cy/el/accreditation-el/accredited-programmes-med-el",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary government registry evidence confirming the 6-Year MD (Nicosia) programme's certification window (Winter 2025-2026 to Spring 2030), distinct from the university's other MD pathways with different expiry dates."
+        },
+        {
+          "label": "University of Nicosia Medical School — official Accreditation page",
+          "url": "https://www.unic.ac.cy/med/2022/06/29/accreditation/",
+          "kind": "recognition",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for WDOMS listing claim and the ECFMG/WFME accreditation linkage established since 2024."
+        },
+        {
+          "label": "Consolidated EU Directive 2005/36/EC Annex V (Cyprus entry)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20240620",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence naming University of Nicosia explicitly as an approved awarding body, with an 'as from October 2014' effective-date footnote."
+        },
+        {
+          "label": "University of Nicosia Medical School — official 6-Year MD Degree programme page",
+          "url": "https://www.unic.ac.cy/med/education/6-year-md-degree/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for programme identity, eligibility criteria and curriculum structure specific to the 6-year direct-entry pathway."
+        },
+        {
+          "label": "University of Nicosia Medical School — official Financial Information page",
+          "url": "https://www.unic.ac.cy/med/admissions/financial-information/",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-25",
+          "notes": "Primary evidence for confirmed 2026/27 tuition, ancillary fees, international clinical-placement supplements and the up-to-20% scholarship policy."
+        },
+        {
+          "label": "University of Nicosia Medical School — official Housing Information page",
+          "url": "https://www.unic.ac.cy/med/housing-information/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for residence options and the booking process; no official cost figure was published."
+        },
+        {
+          "label": "National Medical Commission of India — for students to study abroad",
+          "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+          "kind": "government",
+          "checkedAt": "2026-07-25",
+          "notes": "Private evidence for the separate India-side NEET-UG/NMC eligibility requirement."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "published",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my MD eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "NEET status (if Indian)", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my application review",
+            "capture": ["document readiness", "entrance exam preparation", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate licensing interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "university-of-nicosia-6-year-md",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "6-Year MD Degree (Nicosia)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-2027",
+            "officialFeeCurrency": "EUR",
+            "officialAnnualTuitionAmount": 24000,
+            "officialTotalTuitionAmount": 144000,
+            "verifiedAt": "2026-07-25",
+            "notes": "Officially published 2026/27 tuition for the 6-Year MD (Nicosia): EUR 24,000/year, per the university's official Financial Information page. Total is calculated as the annual figure times 6 years -- not published as a lump sum. Additional confirmed one-off/annual fees: EUR 60 application fee (non-refundable), EUR 1,500 administrative fee and EUR 3,500 seat-reservation deposit (both deducted from first-semester tuition, deposit fully refundable if the student does not enroll), plus visa, insurance and malpractice-cover fees for non-EU students. Choosing an international clinical-training placement in years 5-6 adds EUR 6,000/year (UK/USA) or EUR 3,000/year (Switzerland/Germany). The university's separate 5-year Graduate-Entry MD is priced at EUR 25,000/year and is not covered by this record."
+          },
+          "officialProgramUrl": "https://www.unic.ac.cy/med/education/6-year-md-degree/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants with a secondary-school average of roughly 90% (or equivalent: A-Level ABB, IB 32 overall with 16 at HL) including Biology plus one of Chemistry, Physics or Mathematics"
+            ],
+            "restrictions": [
+              "A mandatory online interview applies to all applicants",
+              "Indian applicants must separately hold a current NEET-UG qualification under India's National Medical Commission rules; this is not administered by the university itself"
+            ],
+            "notes": "English proficiency (IELTS 6.5 overall, 6.5 writing, 6.0 other bands; or TOEFL iBT 79+) is required unless exempt by nationality (UK, Ireland, USA, Australia, New Zealand) or prior qualification.",
+            "verifiedAt": "2026-07-25",
+            "sourceUrl": "https://www.unic.ac.cy/med/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "Applicants complete the online application form, submit certified academic documents and English-proficiency proof, and attend an online interview before receiving a conditional or unconditional offer.",
+            "eligibility": {
+              "intro": "Admission requires a secondary-school qualification meeting the grade threshold, English proficiency, and a mandatory online interview assessing skills, attributes and professionalism.",
+              "items": [
+                "Secondary-school leaving certificate with roughly 90% average (or A-Level ABB, or IB 32 overall/16 at HL), including Biology plus one of Chemistry, Physics or Mathematics",
+                "English proficiency: IELTS 6.5 overall (6.5 writing, 6.0 other bands) or TOEFL iBT 79+, unless exempt",
+                "Mandatory online interview assessing skills, attributes and professionalism",
+                "Indian applicants: current NEET-UG qualification per India's National Medical Commission rules, separate from the university's own admission process"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online application form on the Medical School's admissions site",
+              "Submit certified copies of academic qualifications, transcripts, English-proficiency proof and CV/references as requested",
+              "Attend the mandatory online interview",
+              "Receive a conditional or unconditional offer, then pay the seat-reservation deposit to confirm the place",
+              "After receiving an offer, apply for the need-based scholarship if eligible, following the deadline stated in the offer letter"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Certified copies of secondary-school qualification(s) and transcripts",
+                "English-proficiency proof, unless exempt"
+              ],
+              "application": [
+                "CV and reference letters, where requested",
+                "Proof of application-fee payment",
+                "Visa and residency documents (non-EU applicants), arranged after an offer is issued"
+              ]
+            },
+            "deadlinesNote": "September intake. The university presents admissions as rolling ('Admissions Open') rather than tied to one fixed 2026/27 deadline -- confirm the current application timeline directly with the admissions team.",
+            "visaConsiderations": [
+              "Non-EU students pay a one-off EUR 150 entry-visa/alien-registration fee and an EUR 55 visa-renewal fee after year one; confirm current requirements directly with the university."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-25",
+          "feeNotes": "Confirmed 2026/27 tuition for the 6-Year MD (Nicosia) is EUR 24,000/year, per the official Financial Information page. Ancillary fees include a EUR 60 application fee, a EUR 1,500 administrative fee, a EUR 3,500 fully-refundable seat deposit, and non-EU-specific visa/insurance charges. International clinical-placement supplements (EUR 6,000/year UK/USA, EUR 3,000/year Switzerland/Germany) apply optionally in years 5-6. A need-based scholarship of up to 20% is available post-offer.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2: foundation and early clinical exposure",
+              "language": "English",
+              "details": "Foundational science subjects with longitudinal, primary-care-focused clinical placements beginning in Year 2."
+            },
+            {
+              "phase": "Years 3-4: increasing clinical intensity",
+              "language": "English",
+              "details": "Growing clinical placement intensity, with a Year 4 transition rotation across Primary Care, General Surgery and Internal Medicine plus a research project."
+            },
+            {
+              "phase": "Years 5-6: clinical rotations and elective",
+              "language": "English",
+              "details": "Almost entirely clinical, with rotating sub-specialty placements across major medical and surgical disciplines, concluding with a 6-week clinical elective that can be taken abroad."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nicosia",
+      "publicField": "identity",
+      "claimText": "University of Nicosia opened the first medical school in Cyprus in 2011, and separately runs a 5-year Graduate-Entry MD pathway and a 6-Year MD at an Athens, Greece campus, distinct from the 6-Year MD (Nicosia) covered by this record.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official Admissions page",
+      "sourceUrl": "https://www.unic.ac.cy/med/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-07-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nicosia",
+      "publicField": "recognition",
+      "claimText": "Cyprus's national accreditation registry (DIPAE, formerly CYQAA) confirms the 6-Year MD (Nicosia) programme (File No. 07.14.829.001.001) is certified from Winter 2025-2026 through Spring 2030, distinct from the university's other MD pathways which carry different certification windows.",
+      "status": "verified",
+      "sourceLabel": "Cyprus DIPAE — Accredited Programmes, University of Nicosia Medical School listing",
+      "sourceUrl": "https://www.dipae.ac.cy/el/accreditation-el/accredited-programmes-med-el",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nicosia",
+      "publicField": "recognition",
+      "claimText": "EU Directive 2005/36/EC Annex V point 5.1.1 names University of Nicosia explicitly as an approved awarding body for the automatically-recognized Cypriot medical qualification, with an 'as from October 2014' effective-date footnote.",
+      "status": "verified",
+      "sourceLabel": "Consolidated EU Directive 2005/36/EC Annex V (Cyprus entry)",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02005L0036-20240620",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nicosia",
+      "programmeSlug": "university-of-nicosia-6-year-md",
+      "publicField": "academics",
+      "claimText": "The 6-Year MD (Nicosia) is a 360-ECTS, direct-entry programme awarding the MD degree, taught entirely in English, with clinical placements from Year 2 and an almost entirely clinical structure in Years 5-6.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official 6-Year MD Degree programme page",
+      "sourceUrl": "https://www.unic.ac.cy/med/education/6-year-md-degree/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nicosia",
+      "programmeSlug": "university-of-nicosia-6-year-md",
+      "publicField": "eligibility",
+      "claimText": "Admission is grade-based (roughly 90% secondary average, A-Level ABB, or IB 32) including Biology plus one of Chemistry/Physics/Mathematics, plus English proficiency and a mandatory online interview -- no separate written entrance exam for this direct-entry pathway.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official Admissions page",
+      "sourceUrl": "https://www.unic.ac.cy/med/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nicosia",
+      "programmeSlug": "university-of-nicosia-6-year-md",
+      "publicField": "admissions",
+      "claimText": "Application via the online form with certified document submission and a mandatory online interview; admissions are presented as rolling rather than tied to a single fixed deadline, with a September intake.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official Admissions page",
+      "sourceUrl": "https://www.unic.ac.cy/med/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nicosia",
+      "programmeSlug": "university-of-nicosia-6-year-md",
+      "publicField": "intake",
+      "claimText": "Single annual September intake, confirmed via the official MD programme welcome materials; no fixed 2026/27 application deadline is published, admissions are rolling.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official MD Programme brochure",
+      "sourceUrl": "https://www.unic.ac.cy/wp-content/uploads/sites/39/UNICMed_MD-Brochure.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-nicosia",
+      "programmeSlug": "university-of-nicosia-6-year-md",
+      "publicField": "fee",
+      "claimText": "2026/27 tuition for the 6-Year MD (Nicosia): EUR 24,000/year; ancillary fees include a EUR 60 application fee, EUR 1,500 administrative fee, EUR 3,500 fully-refundable seat deposit, and non-EU visa/insurance charges; optional international clinical-placement supplements of EUR 6,000/year (UK/USA) or EUR 3,000/year (Switzerland/Germany) apply in years 5-6.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official Financial Information page",
+      "sourceUrl": "https://www.unic.ac.cy/med/admissions/financial-information/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2026-10-23"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nicosia",
+      "publicField": "scholarship",
+      "claimText": "A need-based scholarship of up to 20% of tuition is available, applicable only after an applicant has met admissions requirements, completed the interview and received an offer.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official Financial Information page",
+      "sourceUrl": "https://www.unic.ac.cy/med/admissions/financial-information/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-nicosia",
+      "publicField": "student living",
+      "claimText": "Three residence complexes (SIX, Triangle, U) near the Medical School are bookable through the same account as the admissions application; no official per-month cost is published.",
+      "status": "verified",
+      "sourceLabel": "University of Nicosia Medical School — official Housing Information page",
+      "sourceUrl": "https://www.unic.ac.cy/med/housing-information/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

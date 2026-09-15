@@ -1,0 +1,165 @@
+{
+  "batchId": "a-91-100",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 91-100; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "dublin-city-university",
+      "universityName": "Dublin City University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): The Wikipedia infobox logo (Dublin_City_University_(logo).png) is a non-free file on the local en.wikipedia namespace and was excluded per policy; instead found DCU's own logo directly on its homepage source, and a Commons-licensed campus photo for the cover..",
+      "logo": {
+        "sourceUrl": "https://www.dcu.ie/sites/default/files/dcu_logo_web_0.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset (dcu.ie homepage)",
+        "proposedPublicId": "dublin-city-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Dublin_City_University_Library_Glasnevin_2014.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (DCU Glasnevin campus library)",
+        "proposedPublicId": "dublin-city-university-cover"
+      }
+    },
+    {
+      "universitySlug": "duke-university",
+      "universityName": "Duke University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 2: Duke's brand-licensing restriction applies to Duke's own asset distribution, but a separately hosted, freely-licensed (PD-textlogo) wordmark exists on Wikimedia Commons and was used per the explicit exception for this scenario.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Duke_University_logo.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain (PD-textlogo), Wikimedia Commons file \"Duke_University_logo.svg\"; a standard non-copyright trademark notice is present but does not restrict this copyright-based reuse (per the task's stated exception for brand-restricted cases with a Commons-licensed alternative)",
+        "proposedPublicId": "duke-university-logo"
+      }
+    },
+    {
+      "universitySlug": "edhec-business-school",
+      "universityName": "EDHEC Business School",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 1: found EDHEC's dedicated press room page (edhec.edu/en/press-room, distinct from the generic homepage) which references the site's main logo.svg directly. Cover still unresolved: no og:image or clearly labeled campus photo found on the press room or homepage; the campuses page (edhec.edu/en/edhec-campuses) 404s.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.edhec.edu/sites/default/files/logo.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset, alt text \"EDHEC Business School\", found on edhec.edu/en/press-room",
+        "proposedPublicId": "edhec-business-school-logo"
+      }
+    },
+    {
+      "universitySlug": "edu-digital-education-holdings-edu-medical-faculty-of-medicine",
+      "universityName": "EDU Digital Education Holdings EDU Medical Faculty of Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "This catalogue name appears to be a garbled/composite record combining a holding company name (\"EDU Digital Education Holdings\") with a sub-brand (\"EDU Medical Faculty of Medicine\"). No single official institutional domain matching this exact composite name could be identified; the codebase (lib/university-authors.ts) carries only an author mapping with no country or parent-brand metadata to disambiguate. This is an unresolved-identity case needing a parent-brand inheritance decision, not a sourcing gap -- no media assigned.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "emu-university",
+      "universityName": "EMU University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 4 variant: emuni.uz renders images through a Next.js /_next/image proxy, obscuring the underlying file. Decoded the proxy's url= query parameter to recover the real CDN URLs on next.emu.web-perfomance.uz and verified both resolve directly..",
+      "logo": {
+        "sourceUrl": "https://next.emu.web-perfomance.uz/wp-content/uploads/2025/04/new_emu_logo-min.png",
+        "sourceType": "official",
+        "rightsBasis": "Official CDN asset backing emuni.uz's Next.js image proxy (decoded from the site's own og:image / header logo reference)",
+        "proposedPublicId": "emu-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://next.emu.web-perfomance.uz/wp-content/uploads/2025/05/bussines-campus-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official CDN campus photo linked from emuni.uz's /campus page",
+        "proposedPublicId": "emu-university-cover"
+      }
+    },
+    {
+      "universitySlug": "escp-business-school",
+      "universityName": "ESCP Business School",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 1: found ESCP's dedicated press-room page with a \"media room toolkit\" image set containing a clean logotype file. Cover still unresolved: the page's og:image (press-room-banner.jpg) was verified but visually shows branded microphones on a table, not a campus image, so it was rejected as misleading for a multi-campus school.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://escp.eu/sites/default/files/styles/media_room_toolkit/public/inline-images/Logos/ESCP-Europe-Logo-logotype-media-room-toolkit.png",
+        "sourceType": "official",
+        "rightsBasis": "Official downloadable asset from ESCP's press room / media room toolkit (escp.eu/press-room)",
+        "proposedPublicId": "escp-business-school-logo"
+      }
+    },
+    {
+      "universitySlug": "essec-business-school",
+      "universityName": "ESSEC Business School",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Cover resolved via the official homepage's og:image, hosted on ESSEC's own Contentful CDN (not previously captured). Logo still unresolved and deliberately left held: the site's logo is pure inline SVG markup (id=\"Logo_essec_noir\") with no standalone file to link, and the hold reason already noted a Commons-hosted alternative exists but should not be substituted, which this pass honored rather than overriding.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://images.ctfassets.net/vmb6iqn8sgcm/E9owEHILaQSp48TxHGJSJ/4770c7396605bf2729481b53e2ab2c79/ESSEC-Home-summer26.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official Contentful CMS asset, used as essec.edu's own homepage og:image",
+        "proposedPublicId": "essec-business-school-cover"
+      }
+    },
+    {
+      "universitySlug": "eth-zurich",
+      "universityName": "ETH Zurich",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique 2: ETH's own logo-use policy blocks direct downloads without institutional approval, but a freely-licensed (PD-textlogo) wordmark and a CC-BY-SA campus photo both exist on Commons, resolving this per the explicit brand-restriction exception..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/ETH_Z%C3%BCrich_Logo_black.svg",
+        "sourceType": "licensed",
+        "rightsBasis": "Public domain (PD-textlogo), Wikimedia Commons file \"ETH_Zurich_Logo_black.svg\"; standard non-copyright trademark notice present but does not restrict this reuse (per the task's stated exception for brand-restricted cases with a Commons-licensed alternative)",
+        "proposedPublicId": "eth-zurich-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/ETH_Z%C3%BCrich_am_Abend.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "CC BY-SA 4.0, Wikimedia Commons file (ETH Zurich main building at dusk)",
+        "proposedPublicId": "eth-zurich-cover"
+      }
+    },
+    {
+      "universitySlug": "east-european-university",
+      "universityName": "East European University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Found a direct logo file on eeu.edu.ge's own homepage source. Cover still unresolved: homepage images found (IMG_6217, IMG_6340, WhatsApp-Image-*) are unlabeled event/news snapshots, not identifiable campus photography, and the /about-university path 404s; left held to avoid using generic slider-style imagery, consistent with the audit's stated caution against unlabeled photos.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://eeu.edu.ge/wp-content/uploads/2025/02/logo-GEO.png",
+        "sourceType": "official",
+        "rightsBasis": "Official site logo asset (eeu.edu.ge homepage)",
+        "proposedPublicId": "east-european-university-logo"
+      }
+    },
+    {
+      "universitySlug": "east-european-university-eeu",
+      "universityName": "East European University (EEU)",
+      "status": "resolved-elsewhere",
+      "reason": "Merged 2026-07-27: this was a confirmed duplicate DB record of 'east-european-university' (both resolved to the same official domain, eeu.edu.ge). Reviewed with the user; the duplicate university row (id 378) was deleted, the canonical record (id 217, already carrying a live logo) preserved, and a permanent 301 redirect (university + program pages, all section suffixes) was added in next.config.ts from this slug to the canonical. No further action needed."
+    }
+  ]
+}

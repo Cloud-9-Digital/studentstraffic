@@ -1,0 +1,161 @@
+{
+  "batchId": "a-241-250",
+  "checkedAt": "2026-07-25",
+  "scope": "Alphabetical missing-media rows 241-250; research only, no upload or database update.",
+  "entries": [
+    {
+      "universitySlug": "moscow-region-state-university-medicine",
+      "universityName": "Moscow Region State University Medicine",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Confirmed programme/faculty-level identity issue persists: this is a medical unit of Moscow Region State University and no unit-specific official source was found, while the original hold reason explicitly states parent-university media cannot be assumed to apply. This is a parent-brand inheritance decision that needs to be made before any media is assigned. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "mount-royal-university-nursing",
+      "universityName": "Mount Royal University Nursing",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Programme-level record (Mount Royal University Nursing). No new information changes the first-pass conclusion: needs an explicit decision on whether to inherit Mount Royal University's own logo/cover before any media is assigned. No media sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "muhimbili-university-of-health-and-allied-sciences",
+      "universityName": "Muhimbili University of Health and Allied Sciences",
+      "missing": [
+        "logo"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: Wikipedia infobox -> Commons free-licensed facility photo. Logo stays held: direct inspection of the official site (muhas.ac.tz, reachable) shows the WordPress/Elementor theme is configured with a text-based header logo (hello_header_logo_type: title, no image), and no standalone logo file with 'logo' in its name exists anywhere in the homepage HTML; only unrelated content photos were found.. Remaining outstanding: logo.",
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Muhimbili_University_of_Health_and_Allied_Sciences_2.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (MUHAS facility photo)",
+        "proposedPublicId": "muhimbili-university-of-health-and-allied-sciences-cover"
+      }
+    },
+    {
+      "universitySlug": "murmansk-arctic-state-university",
+      "universityName": "Murmansk Arctic State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: found the correct Russian Wikipedia article (МАГУ) -- the first pass appears to have searched under a title that doesn't exist on en-wiki -- which linked directly to free-licensed Commons logo and building photos..",
+      "logo": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo-masu-color-vertical.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (official MASU color logo)",
+        "proposedPublicId": "murmansk-arctic-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Egorova_16.jpg",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0 (MASU building, Kapitana Egorova St. 16, Murmansk)",
+        "proposedPublicId": "murmansk-arctic-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "namangan-state-university",
+      "universityName": "Namangan State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: direct HTML inspection of official site (namdu.uz, reachable, logo asset verified 200) for the logo, paired with a freely-licensed Commons entrance-gate photo used in the Wikipedia infobox for the cover..",
+      "logo": {
+        "sourceUrl": "https://namdu.uz/media/settings/main/2024/02/01/logo-200x200.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from the university's own official domain (namdu.uz), used as the live site header logo",
+        "proposedPublicId": "namangan-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/NamDU_binosi.png",
+        "sourceType": "licensed",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0 (entrance gate of Namangan State University)",
+        "proposedPublicId": "namangan-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "nanyang-technological-university",
+      "universityName": "Nanyang Technological University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Technique used: direct HTML inspection of the official site (ntu.edu.sg) located a first-party logo file path, avoiding the non-free en-wiki coat-of-arms and third-party logo directories the first pass correctly declined to use.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/NTU_Logo.png",
+        "sourceType": "official",
+        "rightsBasis": "Direct asset from NTU's own official domain (ntu.edu.sg), used as the live site header logo",
+        "proposedPublicId": "nanyang-technological-university-logo"
+      }
+    },
+    {
+      "universitySlug": "naryn-state-university",
+      "universityName": "Naryn State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): naryn.edu.kg fails DNS resolution directly. Used Wayback Machine snapshot of the official site (technique not used in first pass) and verified both the logo and homepage banner image resolve HTTP 200 through the archived asset proxy..",
+      "logo": {
+        "sourceUrl": "https://web.archive.org/web/20211218023855im_/http://naryn.edu.kg/wp-content/uploads/2018/03/Logopng.png",
+        "sourceType": "official",
+        "rightsBasis": "Official university logo captured via Wayback Machine snapshot (2021-12-18) of naryn.edu.kg; current live site is DNS-unreachable",
+        "proposedPublicId": "naryn-state-university-logo"
+      },
+      "cover": {
+        "sourceUrl": "https://web.archive.org/web/20211218023855im_/http://naryn.edu.kg/wp-content/uploads/2018/03/banner.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official homepage banner image captured via Wayback Machine snapshot (2021-12-18) of naryn.edu.kg",
+        "proposedPublicId": "naryn-state-university-cover"
+      }
+    },
+    {
+      "universitySlug": "national-university-of-singapore",
+      "universityName": "National University of Singapore",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Checked Wikipedia infobox/Commons: the NUS coat-of-arms and wordmark files are hosted under English Wikipedia's local non-free namespace (upload.wikimedia.org/wikipedia/en/...), not Wikimedia Commons, and are explicitly tagged as trademarked/non-free (fair use). No Commons-licensed free alternative exists, so per instructions this cannot be used. The documented brand restriction (written NUS permission required) still stands."
+    },
+    {
+      "universitySlug": "navoi-state-university",
+      "universityName": "Navoi State University",
+      "missing": [
+        "logo",
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Institution identity is currently unresolved: on 2024-10-31 'Navoi State University' was formed by merging Navoi State Pedagogical Institute into a new university structure. The former institute's domain (nspi.uz) is unreachable (connection refused) and no distinct official domain or media for the newly merged 'Navoi State University' entity could be verified this pass. This is an unresolved renamed/merged-institution case (per the standing guardrail), not a simple missing-media gap, so no media is sourced.",
+      "dataIssue": true
+    },
+    {
+      "universitySlug": "new-vision-university",
+      "universityName": "New Vision University",
+      "missing": [
+        "cover"
+      ],
+      "status": "ready",
+      "reason": "Second-pass upgrade (2026-07-26): Logo confirmed live on the official site (newvision.ge), which the first pass had verified but not isolated a direct asset URL for. No dedicated press/media page exists; homepage images are all news/article thumbnails with no distinct campus building photo, so cover remains on hold.. Remaining outstanding: cover.",
+      "logo": {
+        "sourceUrl": "https://newvision.ge/_ipx/_/images/university-logo-white.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official university site header/footer logo asset, newvision.ge",
+        "proposedPublicId": "new-vision-university-logo"
+      }
+    }
+  ]
+}

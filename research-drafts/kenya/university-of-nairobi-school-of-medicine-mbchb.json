@@ -1,0 +1,18 @@
+{
+  "scope": "Kenya medical discovery — University of Nairobi School of Medicine MBChB",
+  "status": "held",
+  "reviewedAt": "2026-07-25",
+  "verifiedFacts": [
+    {"claim": "The University of Nairobi School of Medicine states that MBChB training lasts six years.", "sourceUrl": "https://healthsciences.uonbi.ac.ke/slideshow-entry/school-medicine", "sourceType": "official-university", "verifiedAt": "2026-07-25"},
+    {"claim": "The MBChB programme page specifies a September intake, full-time mode, government-sponsored and self-sponsored routes, published science subject requirements and online application with supporting academic documents.", "sourceUrl": "https://obsgyn.uonbi.ac.ke/programs-content-type/bachelor-medicine-and-bachelor-surgery-mbchb", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "The official programme page describes 11-week electives after year five, including Kenyatta National Hospital, county hospitals and an overseas option, before final year six.", "sourceUrl": "https://obsgyn.uonbi.ac.ke/programs-content-type/bachelor-medicine-and-bachelor-surgery-mbchb", "sourceType": "official-program", "verifiedAt": "2026-07-25"},
+    {"claim": "A Faculty fee table shows MBChB figures, but it does not identify a current academic year or unambiguously establish the applicable international-student fee category; older official booklets show different totals.", "sourceUrl": "https://healthsciences.uonbi.ac.ke/programs-content-type/bachelor-medicine-and-bachelor-surgery-mbbs", "sourceType": "official-fee", "verifiedAt": "2026-07-25"}
+  ],
+  "holdReasons": [
+    "No dated, current MBChB fee schedule was captured that identifies the applicable domestic and international category. The undated Faculty table conflicts with older University booklets.",
+    "No current MBChB-specific admissions call establishes the next application opening, deadline, spaces or the precise international applicant route.",
+    "The reviewed English-language materials support an English-facing programme page but do not provide a separate official language-of-instruction policy statement.",
+    "No current primary recognition source from the Kenyan medical regulator was captured for public recognition badges."
+  ],
+  "nextAction": "Obtain a current, dated MBChB fee circular covering international applicants, the next MBChB intake notice and a regulator recognition record before creating a public payload."
+}
