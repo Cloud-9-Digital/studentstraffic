@@ -27,7 +27,11 @@ import {
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { UserMenu, UserMenuMobile } from "@/components/site/user-menu";
-import { CountryFlag } from "@/components/site/country-flag";
+import {
+  CountriesMobilePanel,
+  DesktopCountriesMenu,
+  useCountriesMenuModel,
+} from "@/components/site/countries-menu";
 import { SearchPalette } from "@/components/site/search-palette";
 import { cn } from "@/lib/utils";
 import {
@@ -241,7 +245,11 @@ function SiteHeaderInner() {
   const courseMenuRef = useRef<HTMLElement | null>(null);
   const headerRef = useRef<HTMLElement | null>(null);
 
-  const filteredNavCountries = navCountries;
+  // Region groups, popular picks and the search index, built once per payload
+  // and shared by the desktop panel and the mobile drawer.
+  const countriesMenu = useCountriesMenuModel(navCountries);
+  const toggleCountries = useCallback(() => setCountriesOpen((open) => !open), []);
+  const closeCountries = useCallback(() => setCountriesOpen(false), []);
   const programmeGroups = useMemo(
     () => groupProgrammeNavigationCourses(navCourses),
     [navCourses],
@@ -418,6 +426,25 @@ function SiteHeaderInner() {
   const newsActive = isActive("/news");
   const blogActive = isActive("/blog");
 
+  // Back button for the active drill-down panel. Rendered inside the panel's
+  // sticky bar (the countries panel pins its search field alongside it).
+  const mobileBackButton = (
+    <button
+      type="button"
+      onClick={() => setMobilePanel(
+        mobilePanel === "countries" || mobilePanel === "programs" ? null : "programs",
+      )}
+      className="flex w-full items-center gap-2 px-5 py-4 text-left text-sm font-semibold text-foreground sm:px-7"
+    >
+      <ChevronLeft className="size-4 text-muted-foreground" />
+      {mobilePanel === "countries"
+        ? "Countries"
+        : mobilePanel === "programs"
+          ? "Programs"
+          : mobileProgrammeCategories.find((category) => category.id === mobilePanel)?.label}
+    </button>
+  );
+
   return (
     <>
       <header
@@ -439,112 +466,14 @@ function SiteHeaderInner() {
 
           {/* Desktop main nav */}
           <nav className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 xl:flex">
-            <div className="pointer-events-auto relative" ref={countriesMenuRef}>
-              <button
-                type="button"
-                className={cn(
-                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                  countriesActive || countriesOpen
-                    ? "bg-primary/8 text-primary"
-                    : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                )}
-                aria-expanded={countriesOpen}
-                aria-haspopup="menu"
-                onClick={() => setCountriesOpen((open) => !open)}
-              >
-                <MapPinned className="size-3.5 text-primary/65" />
-                Countries
-                <ChevronDown
-                  className={cn(
-                    "size-4 transition-transform",
-                    countriesOpen ? "rotate-180" : "",
-                  )}
-                />
-              </button>
-
-              <div
-                inert={!countriesOpen}
-                className={cn(
-                  // No `w-screen`: the header's backdrop-filter makes it this
-                  // panel's containing block, so `inset-x-0` already spans the
-                  // header, while 100vw would add the vertical-scrollbar width
-                  // as horizontal page overflow on classic-scrollbar browsers.
-                  "fixed inset-x-0 top-16 z-40 overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
-                  countriesOpen
-                    ? "pointer-events-auto translate-y-0 opacity-100"
-                    : "pointer-events-none -translate-y-1 opacity-0",
-                )}
-              >
-                <div className="float-left min-h-[18rem] w-64 border-r border-border bg-white px-6 py-7">
-                  <div>
-                    <p className="flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-accent">
-                      <MapPinned className="size-3.5" /> 01 / WHERE TO GO
-                    </p>
-                    <h3 className="mt-2 font-display text-3xl font-semibold leading-none tracking-[-0.04em] text-primary">
-                      Where will your degree take you?
-                    </h3>
-                    <p className="mt-2 max-w-sm text-xs leading-5 text-muted-foreground">
-                      A quick way into the countries, cities, and stories students compare most.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="ml-64 min-h-[18rem] bg-white p-5">
-                  <div className="max-h-[27rem] min-w-0 overflow-y-auto pr-1">
-                    {filteredNavCountries.length > 0 ? (
-                      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                        {filteredNavCountries.map((destination) => (
-                          <Link
-                            key={destination.href}
-                            href={destination.href}
-                            onClick={() => setCountriesOpen(false)}
-                            className="group relative flex min-h-20 flex-col items-start justify-between gap-3 rounded-2xl border border-border bg-card p-3.5 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:bg-muted/30 hover:shadow-sm"
-                          >
-                            <CountryFlag
-                              countryCode={destination.isoCode}
-                              alt={destination.name}
-                              width={26}
-                              height={18}
-                              className="rounded-sm border border-black/5 shadow-sm"
-                            />
-                            <span className="min-w-0 break-words text-sm font-semibold leading-5 text-foreground">
-                              {destination.name}
-                            </span>
-                            <ArrowRight className="absolute right-3.5 top-3.5 size-3.5 text-accent opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" />
-                          </Link>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="flex h-40 flex-col items-center justify-center gap-2 text-center">
-                        <p className="text-sm font-medium text-foreground">
-                          No destinations available
-                        </p>
-                        <Link
-                          href="/countries"
-                          onClick={() => setCountriesOpen(false)}
-                          className="text-sm font-semibold text-primary hover:underline"
-                        >
-                          Browse all countries
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-
-                </div>
-
-                <div className="clear-both flex items-center justify-between gap-3 border-t border-border bg-muted/20 px-7 py-3.5">
-                  <p className="text-xs font-medium text-muted-foreground">Explore destinations</p>
-                  <Link
-                    href="/countries"
-                    onClick={() => setCountriesOpen(false)}
-                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/8"
-                  >
-                    View all countries
-                    <ArrowRight className="size-4" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <DesktopCountriesMenu
+              model={countriesMenu}
+              open={countriesOpen}
+              active={countriesActive}
+              onToggle={toggleCountries}
+              onClose={closeCountries}
+              containerRef={countriesMenuRef}
+            />
 
             <Link
               href="/universities"
@@ -783,54 +712,19 @@ function SiteHeaderInner() {
               mobilePanel !== null ? "translate-x-0" : "translate-x-full",
             )}
           >
-            {mobilePanel !== null ? (
+            {mobilePanel === "countries" ? (
+              <CountriesMobilePanel
+                model={countriesMenu}
+                header={mobileBackButton}
+                onNavigate={navigateMobile}
+              />
+            ) : mobilePanel !== null ? (
               <>
-                <button
-                  type="button"
-                  onClick={() => setMobilePanel(
-                    mobilePanel === "countries" || mobilePanel === "programs" ? null : "programs",
-                  )}
-                  className="sticky top-0 z-10 flex w-full items-center gap-2 border-b border-border bg-white/95 px-5 py-4 text-left text-sm font-semibold text-foreground backdrop-blur sm:px-7"
-                >
-                  <ChevronLeft className="size-4 text-muted-foreground" />
-                  {mobilePanel === "countries"
-                    ? "Countries"
-                    : mobilePanel === "programs"
-                      ? "Programs"
-                    : mobileProgrammeCategories.find((category) => category.id === mobilePanel)?.label}
-                </button>
+                <div className="sticky top-0 z-10 border-b border-border bg-white/95 backdrop-blur">
+                  {mobileBackButton}
+                </div>
                 <div className="mx-auto w-full max-w-3xl flex-1">
-                  {mobilePanel === "countries" ? (
-                    <div className="space-y-1 px-5 py-4 sm:px-7">
-                      {filteredNavCountries.length > 0 ? (
-                        filteredNavCountries.map((destination) => (
-                          <Link
-                            key={destination.href}
-                            href={destination.href}
-                            onClick={closeMobile}
-                            className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm transition-colors hover:bg-primary/5"
-                          >
-                            <CountryFlag
-                              countryCode={destination.isoCode}
-                              alt={destination.name}
-                              width={24}
-                              height={18}
-                              className="rounded-sm border border-black/5"
-                            />
-                            <div className="min-w-0">
-                              <p className="font-semibold text-foreground">
-                                {destination.name}
-                              </p>
-                            </div>
-                          </Link>
-                        ))
-                      ) : (
-                        <p className="px-3 py-4 text-sm text-muted-foreground">
-                          No destinations available
-                        </p>
-                      )}
-                    </div>
-                  ) : mobilePanel === "programs" ? (
+                  {mobilePanel === "programs" ? (
                     <div className="space-y-1 px-5 py-4 sm:px-7">
                       {mobileProgrammeCategories.map(({ id, label, icon: Icon }) => (
                         <MobileMenuRow

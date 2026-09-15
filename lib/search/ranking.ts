@@ -3,6 +3,7 @@
 // fixture documents. `search.ts` owns execution; this module owns relevance.
 import { sql, type SQL } from "drizzle-orm";
 
+import { COUNTRY_ALIASES } from "@/lib/country-aliases";
 import type { SearchDocument, SearchDocumentType, SearchResult } from "@/lib/data/types";
 
 /**
@@ -83,33 +84,6 @@ const BM25_FUZZY_FIELDS = ["title", "subtitle"] as const;
 const BM25_PREFIX_FIELDS = ["title", "search_text"] as const;
 const BM25_PHRASE_FIELDS = ["title", "search_text"] as const;
 
-/**
- * Everyday names for catalogue countries, keyed by normalised query phrase and
- * mapped to the country slug written with spaces ("united-kingdom").
- *
- * Bare "us" is deliberately absent: it is an ordinary word ("contact us",
- * "why choose us"). "u.s." normalises to "u s".
- */
-const COUNTRY_ALIASES: Readonly<Record<string, string>> = {
-  uk: "united kingdom",
-  britain: "united kingdom",
-  "great britain": "united kingdom",
-  england: "united kingdom",
-  scotland: "united kingdom",
-  wales: "united kingdom",
-  usa: "united states",
-  "u s": "united states",
-  "u s a": "united states",
-  america: "united states",
-  "united states of america": "united states",
-  uae: "united arab emirates",
-  holland: "netherlands",
-  korea: "south korea",
-  czechia: "czech republic",
-  bosnia: "bosnia and herzegovina",
-  macedonia: "north macedonia",
-  nz: "new zealand",
-};
 const MAX_COUNTRY_PHRASE_TOKENS = 4;
 /**
  * "mbbs abroad from india": a country right after "from" is where the student
