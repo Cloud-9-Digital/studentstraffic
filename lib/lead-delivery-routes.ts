@@ -9,7 +9,6 @@ export type LeadDeliveryFlow = "neetPredictor" | "seminar" | "default";
 
 export type LeadDeliveryRoute = {
   crm: boolean;
-  leadSquared: boolean;
   pabbly: boolean;
   whatsapp: boolean;
 };
@@ -22,10 +21,15 @@ const SEMINAR_SOURCE_PATH_PREFIX = "/seminar-2026";
 // unwanted/duplicate messages we don't control from this codebase. WhatsApp
 // now goes through WATI directly (the whatsapp flag), and Google Sheets
 // logging goes through lib/google-sheets.ts -- neither depends on Pabbly.
+//
+// LeadSquared was a fourth destination, taking NEET predictor leads scoring
+// under 400. It is retired across every Aieraa repo and nothing is sent to it
+// any more, so the predictor flow now lands in this site's own database and
+// Google Sheets only.
 const ROUTES: Record<LeadDeliveryFlow, LeadDeliveryRoute> = {
-  neetPredictor: { crm: false, leadSquared: true, pabbly: false, whatsapp: false },
-  seminar: { crm: true, leadSquared: false, pabbly: false, whatsapp: true },
-  default: { crm: true, leadSquared: false, pabbly: false, whatsapp: true },
+  neetPredictor: { crm: false, pabbly: false, whatsapp: false },
+  seminar: { crm: true, pabbly: false, whatsapp: true },
+  default: { crm: true, pabbly: false, whatsapp: true },
 };
 
 export function getLeadDeliveryFlow(sourcePath: string): LeadDeliveryFlow {

@@ -158,11 +158,6 @@ export async function submitLeadAction(
       const shouldSyncCrm = deliveryRoute.crm && env.hasCrmLeadSyncConfig;
       const shouldSyncPabbly =
         deliveryRoute.pabbly && env.hasPabblyLeadWebhook;
-      const shouldSyncLeadSquared =
-        deliveryRoute.leadSquared &&
-        neetScore !== undefined &&
-        neetScore < 400 &&
-        env.hasLeadSquaredConfig;
 
       const [recentLead] = await db
         .select({ id: leads.id })
@@ -244,7 +239,7 @@ export async function submitLeadAction(
         clientContext,
         crmSyncStatus: shouldSyncCrm ? "pending" : "skipped",
         pabblySyncStatus: shouldSyncPabbly ? "pending" : "skipped",
-        leadSquaredSyncStatus: shouldSyncLeadSquared ? "pending" : "skipped",
+        leadSquaredSyncStatus: "skipped",
         createdAt: submittedAt,
       }).returning({
         id: leads.id,

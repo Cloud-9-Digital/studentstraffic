@@ -124,7 +124,6 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
     .select({
       sourcePath: leads.sourcePath,
       crmSyncStatus: leads.crmSyncStatus,
-      leadSquaredSyncStatus: leads.leadSquaredSyncStatus,
       pabblySyncStatus: leads.pabblySyncStatus,
     })
     .from(leads)
@@ -139,11 +138,6 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
   const failedDestinations = [
     route.crm && lead.crmSyncStatus !== "synced" && lead.crmSyncStatus !== "skipped"
       ? `crm:${lead.crmSyncStatus}`
-      : null,
-    route.leadSquared &&
-    lead.leadSquaredSyncStatus !== "synced" &&
-    lead.leadSquaredSyncStatus !== "skipped"
-      ? `leadsquared:${lead.leadSquaredSyncStatus}`
       : null,
     route.pabbly && lead.pabblySyncStatus !== "synced" && lead.pabblySyncStatus !== "skipped"
       ? `pabbly:${lead.pabblySyncStatus}`
