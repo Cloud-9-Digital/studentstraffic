@@ -30,6 +30,8 @@ function StatusBadge({ status }: { status: string | null }) {
     pending: "bg-amber-50 text-amber-700 ring-1 ring-amber-600/20",
     failed: "bg-red-50 text-red-700 ring-1 ring-red-600/20",
     skipped: "bg-slate-50 text-slate-600 ring-1 ring-slate-600/20",
+    // Refused for good, as opposed to "failed", which is still being retried.
+    rejected: "bg-orange-50 text-orange-700 ring-1 ring-orange-600/20",
     read: "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-600/20",
     delivered: "bg-blue-50 text-blue-700 ring-1 ring-blue-600/20",
     sent: "bg-blue-50 text-blue-700 ring-1 ring-blue-600/20",

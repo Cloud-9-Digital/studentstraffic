@@ -6,7 +6,7 @@ import { getDb } from "@/lib/db/server";
 import { backgroundJobs, leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
-import { syncLeadDestinations } from "@/lib/lead-sync";
+import { isSettledSyncStatus, syncLeadDestinations } from "@/lib/lead-sync";
 import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import { sendLeadWhatsAppMessage } from "@/lib/wati";
 
@@ -136,10 +136,10 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
 
   const route = getLeadDeliveryRoute(lead.sourcePath);
   const failedDestinations = [
-    route.crm && lead.crmSyncStatus !== "synced" && lead.crmSyncStatus !== "skipped"
+    route.crm && !isSettledSyncStatus(lead.crmSyncStatus)
       ? `crm:${lead.crmSyncStatus}`
       : null,
-    route.pabbly && lead.pabblySyncStatus !== "synced" && lead.pabblySyncStatus !== "skipped"
+    route.pabbly && !isSettledSyncStatus(lead.pabblySyncStatus)
       ? `pabbly:${lead.pabblySyncStatus}`
       : null,
   ].filter((value): value is string => Boolean(value));

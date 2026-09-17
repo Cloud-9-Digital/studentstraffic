@@ -37,7 +37,20 @@ type CrmSyncResponse = {
   updated?: boolean;
   error?: string;
   message?: string;
+  /** Stable identifier for the failure, e.g. "duplicate_lead". */
+  code?: string;
+  /** False when the CRM will refuse this same payload however often it is sent. */
+  retryable?: boolean;
 };
+
+/**
+ * Statuses that mean a destination is finished with this lead, whether or not it took it.
+ * Shared with the delivery job so the two cannot drift: a status the job does not recognise as
+ * settled is one it keeps retrying.
+ */
+export function isSettledSyncStatus(status: string | null): boolean {
+  return status === "synced" || status === "skipped" || status === "rejected";
+}
 
 const SYNC_TIMEOUT_MS = 8_000;
 const SYNC_PLACEHOLDER = "NA";
@@ -254,11 +267,31 @@ export async function syncLeadToCrm(
     const parsed = rawText ? (JSON.parse(rawText) as CrmSyncResponse) : {};
 
     if (!response.ok) {
-      throw new Error(
+      const reason =
         parsed.error ??
-          parsed.message ??
-          `CRM intake failed with status ${response.status}.`
-      );
+        parsed.message ??
+        `CRM intake failed with status ${response.status}.`;
+
+      // The CRM distinguishes "not right now" from "not ever" — a duplicate or a payload it
+      // will never accept comes back retryable:false. Recording that as a terminal state costs
+      // one write; leaving it as `failed` costs five retries of a request whose answer cannot
+      // change, and buries the reason under attempt counts.
+      if (parsed.retryable === false) {
+        await updateLeadSyncState(leadId, {
+          crmSyncStatus: "rejected",
+          crmSyncedAt: null,
+          crmSyncError: parsed.code ? `${parsed.code}: ${reason}` : reason,
+          crmExternalId: null,
+        });
+        console.warn("CRM permanently rejected the lead; not retrying.", {
+          leadId,
+          code: parsed.code,
+          reason,
+        });
+        return;
+      }
+
+      throw new Error(reason);
     }
 
     await updateLeadSyncState(leadId, {
