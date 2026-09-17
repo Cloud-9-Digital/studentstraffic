@@ -218,7 +218,14 @@ export async function syncLeadToCrm(
   payload: LeadSyncPayload,
   options: LeadSyncOptions = {},
 ) {
-  if (!getLeadDeliveryRoute(payload.sourcePath).crm) {
+  const route = getLeadDeliveryRoute(payload.sourcePath);
+  // A flow with a score cut-off forwards only the leads under it, and forwards
+  // nothing when the score is missing entirely.
+  const belowScoreCutOff =
+    route.crmMaxNeetScore === undefined ||
+    (payload.neetScore !== undefined && payload.neetScore < route.crmMaxNeetScore);
+
+  if (!route.crm || !belowScoreCutOff) {
     if (!options.skipPersistedSkipStates) {
       await updateLeadSyncState(leadId, {
         crmSyncStatus: "skipped",

@@ -155,7 +155,13 @@ export async function submitLeadAction(
 
     if (db) {
       const deliveryRoute = getLeadDeliveryRoute(data.sourcePath);
-      const shouldSyncCrm = deliveryRoute.crm && env.hasCrmLeadSyncConfig;
+      // Mirrors the cut-off in syncLeadToCrm so the status written at insert
+      // matches what delivery will actually do with the lead.
+      const shouldSyncCrm =
+        deliveryRoute.crm &&
+        env.hasCrmLeadSyncConfig &&
+        (deliveryRoute.crmMaxNeetScore === undefined ||
+          (neetScore !== undefined && neetScore < deliveryRoute.crmMaxNeetScore));
       const shouldSyncPabbly =
         deliveryRoute.pabbly && env.hasPabblyLeadWebhook;
 
