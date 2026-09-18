@@ -57,7 +57,24 @@ export type TrackingSnapshot = {
   gbraid?: string;
   wbraid?: string;
   ttclid?: string;
+  /** Meta click id cookie (`_fbc`), or one derived from a fresh `fbclid`. */
+  fbc?: string;
+  /** Meta browser id cookie (`_fbp`). Only the pixel can mint this. */
+  fbp?: string;
 };
+
+/**
+ * Meta's `_fbc` cookie is `fb.<subdomainIndex>.<creationMs>.<fbclid>`. The pixel
+ * writes it, but it loads with `lazyOnload`, so a visitor who submits quickly can
+ * have an `fbclid` in the URL and no cookie yet. Rebuilding it from the raw
+ * `fbclid` keeps Conversions API match quality intact for exactly those visitors,
+ * who are the fastest-converting ones.
+ */
+function deriveFbc(fbcCookie?: string, fbclid?: string) {
+  if (fbcCookie) return fbcCookie;
+  if (!fbclid) return undefined;
+  return `fb.1.${Date.now()}.${fbclid}`;
+}
 
 export function getTrackingSnapshot(
   cookieStore: CookieStoreLike,
@@ -89,5 +106,10 @@ export function getTrackingSnapshot(
     gbraid: cookieStore.get("gbraid")?.value ?? getFirstValue(sourceQuery, "gbraid"),
     wbraid: cookieStore.get("wbraid")?.value ?? getFirstValue(sourceQuery, "wbraid"),
     ttclid: cookieStore.get("ttclid")?.value ?? getFirstValue(sourceQuery, "ttclid"),
+    fbc: deriveFbc(
+      cookieStore.get("_fbc")?.value,
+      cookieStore.get("fbclid")?.value ?? getFirstValue(sourceQuery, "fbclid"),
+    ),
+    fbp: cookieStore.get("_fbp")?.value,
   };
 }

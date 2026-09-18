@@ -425,15 +425,15 @@
     {
       "idx": 74,
       "version": "7",
-      "when": 1789833600000,
-      "tag": "0077_lakebase_text_prefix_vector",
+      "when": 1788912000000,
+      "tag": "0075_peer_launch_hardening",
       "breakpoints": true
     },
     {
       "idx": 75,
       "version": "7",
-      "when": 1789833601000,
-      "tag": "0078_drop_pg_search",
+      "when": 1789747200000,
+      "tag": "0076_backfill_medium_note",
       "breakpoints": true
     }
   ]

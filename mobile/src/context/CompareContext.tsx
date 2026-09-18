@@ -4,7 +4,7 @@ export type CompareItem = {
   slug: string;
   name: string;
   country: string;
-  tuitionUsd: number;
+  tuitionUsd: number | null;
 };
 
 type CompareContextType = {

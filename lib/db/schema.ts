@@ -707,6 +707,7 @@ export const studentPeers = pgTable(
     languages: text("languages").array(),
     countryId: integer("country_id").references(() => countries.id, { onDelete: "set null" }),
     peerUserId: varchar("peer_user_id", { length: 255 }).references(() => users.id, { onDelete: "set null" }),
+    acceptingRequests: boolean("accepting_requests").notNull().default(true),
     status: text("status").$type<StudentPeerStatus>().notNull().default("active"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
@@ -831,6 +832,9 @@ export const peerCallBookings = pgTable(
       .references(() => studentPeers.id, { onDelete: "cascade" }),
     status: text("status").notNull().default("pending"),
     message: text("message"),
+    studentBlockedAt: timestamp("student_blocked_at", { withTimezone: true }),
+    peerBlockedAt: timestamp("peer_blocked_at", { withTimezone: true }),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
   },
   (table) => [
@@ -891,6 +895,7 @@ export const guideMessages = pgTable(
       .notNull()
       .default("text"),
     body: text("body").notNull(),
+    clientNonce: varchar("client_nonce", { length: 128 }),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     editedAt: timestamp("edited_at", { withTimezone: true }),
   },
@@ -899,6 +904,7 @@ export const guideMessages = pgTable(
       table.conversationId,
       table.createdAt
     ),
+    uniqueIndex("guide_messages_nonce_idx").on(table.conversationId, table.senderUserId, table.clientNonce),
     index("guide_messages_sender_idx").on(table.senderUserId),
   ]
 );
@@ -1343,3 +1349,16 @@ export type UserShortlistRow = typeof userShortlists.$inferSelect;
 export type UserShortlistInsert = typeof userShortlists.$inferInsert;
 export type ApplicationRow = typeof applications.$inferSelect;
 export type ApplicationInsert = typeof applications.$inferInsert;
+
+export const peerReports = pgTable("peer_reports", {
+  id: serial("id").primaryKey(),
+  conversationId: integer("conversation_id").notNull().references(() => guideConversations.id, { onDelete: "restrict" }),
+  reporterUserId: varchar("reporter_user_id", { length: 255 }).notNull().references(() => users.id, { onDelete: "restrict" }),
+  reason: text("reason").notNull(),
+  details: text("details").notNull(),
+  status: text("status").notNull().default("open"),
+  resolutionNotes: text("resolution_notes"),
+  reviewedByAdminId: integer("reviewed_by_admin_id").references(() => adminUsers.id),
+  reviewedAt: timestamp("reviewed_at", { withTimezone: true }),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [index("peer_reports_status_created_idx").on(table.status, table.createdAt)]);

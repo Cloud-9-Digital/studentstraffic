@@ -79,5 +79,5 @@ export async function startPeerCallAction(
     universityName: peer.universityName,
   });
 
-  return { callId: call.callId };
+  return call.error ? { error: call.error } : { callId: call.callId };
 }

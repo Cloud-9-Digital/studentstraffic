@@ -1,6 +1,12 @@
 import "server-only";
 
-import { and, count, desc, eq, gt, ne, or } from "drizzle-orm";
+import { sql, and, count, desc, eq, gt, ne, or } from "drizzle-orm";
+
+import { containsPeerContactDetails, PEER_CONTACT_POLICY_ERROR, peerSafeText } from "@/lib/peer-contact-policy";
+
+import { peerLockQuery, sendPeerMessageQuery } from "@/lib/peer-queries";
+import { schedulePeerNotification } from "@/lib/peer-notifications";
+import { consumePublicFormRateLimits } from "@/lib/security/public-form-guard";
 
 import { getDb } from "@/lib/db/server";
 import { listPeerCallTimelineEvents, type PeerCallTimelineEvent } from "@/lib/peer-calls";
@@ -21,6 +27,10 @@ export type GuideConversationSummary = {
   peerUserId: string;
   studentUserId: string;
   bookingId: number | null;
+  canMessage: boolean;
+  canCall: boolean;
+  blockedByMe: boolean;
+  connectionStatus: string;
   displayName: string;
   subtitle: string;
   universityName: string;
@@ -48,8 +58,11 @@ export type AuthorizedGuideConversation = {
   peerUserId: string;
   studentUserId: string;
   bookingId: number | null;
+  bookingStatus: string | null;
+  guideStatus: string;
+  studentBlockedAt: Date | null;
+  peerBlockedAt: Date | null;
   studentName: string | null;
-  studentEmail: string;
   peerName: string;
   universityName: string;
   universitySlug: string;
@@ -74,7 +87,6 @@ type GuideConversationStarter = {
   bookingId: number;
   studentUserId: string;
   studentName: string | null;
-  studentEmail: string;
   bookingStatus: string;
   conversationId: number | null;
   lastMessageAt: Date | null;
@@ -95,7 +107,6 @@ export type GuideConversationStarterSummary = {
   peerId: number;
   studentUserId: string;
   studentName: string | null;
-  studentEmail: string;
   universityName: string;
   universitySlug: string;
   bookingStatus: string;
@@ -123,6 +134,8 @@ export async function getOrCreateGuideConversationForStudent(
     .innerJoin(studentPeers, eq(peerCallBookings.peerId, studentPeers.id))
     .where(
       and(
+        eq(studentPeers.status, "active"),
+        sql`${peerCallBookings.studentBlockedAt} is null and ${peerCallBookings.peerBlockedAt} is null`,
         eq(peerCallBookings.studentUserId, studentUserId),
         eq(peerCallBookings.peerId, peerId),
         or(
@@ -164,6 +177,7 @@ export async function getOrCreateGuideConversationForStudent(
       createdAt: now,
       updatedAt: now,
     })
+    .onConflictDoUpdate({ target: [guideConversations.studentUserId, guideConversations.peerId], set: { updatedAt: sql`${guideConversations.updatedAt}` } })
     .returning({ id: guideConversations.id });
 
   return createdConversation?.id ?? null;
@@ -186,6 +200,8 @@ export async function getOrCreateGuideConversationForGuide(
     .where(
       and(
         eq(peerCallBookings.id, bookingId),
+        eq(studentPeers.status, "active"),
+        sql`${peerCallBookings.studentBlockedAt} is null and ${peerCallBookings.peerBlockedAt} is null`,
         eq(studentPeers.peerUserId, peerUserId),
         or(
           eq(peerCallBookings.status, CHAT_ENABLED_BOOKING_STATUSES[0]),
@@ -226,6 +242,7 @@ export async function getOrCreateGuideConversationForGuide(
       createdAt: now,
       updatedAt: now,
     })
+    .onConflictDoUpdate({ target: [guideConversations.studentUserId, guideConversations.peerId], set: { updatedAt: sql`${guideConversations.updatedAt}` } })
     .returning({ id: guideConversations.id });
 
   return createdConversation?.id ?? null;
@@ -245,8 +262,11 @@ export async function getAuthorizedGuideConversation(
       peerUserId: guideConversations.peerUserId,
       studentUserId: guideConversations.studentUserId,
       bookingId: peerCallBookings.id,
+      bookingStatus: peerCallBookings.status,
+      guideStatus: studentPeers.status,
+      studentBlockedAt: peerCallBookings.studentBlockedAt,
+      peerBlockedAt: peerCallBookings.peerBlockedAt,
       studentName: users.name,
-      studentEmail: users.email,
       peerName: studentPeers.fullName,
       universityName: universities.name,
       universitySlug: universities.slug,
@@ -338,13 +358,14 @@ export async function getGuideConversationSummaryForUser(
     peerUserId: conversation.peerUserId,
     studentUserId: conversation.studentUserId,
     bookingId: conversation.bookingId ?? null,
+    ...conversationCapabilities(conversation, userId),
     displayName: conversation.isPeerParticipant
       ? conversation.studentName?.trim() || "Student"
       : conversation.peerName,
     subtitle: conversation.universityName,
     universityName: conversation.universityName,
     universitySlug: conversation.universitySlug,
-    lastMessageText: conversation.lastMessageText,
+    lastMessageText: conversation.lastMessageText ? peerSafeText(conversation.lastMessageText) : null,
     lastMessageAt: conversation.lastMessageAt,
     counterpartLastReadAt: conversation.isPeerParticipant
       ? conversation.studentLastReadAt
@@ -354,101 +375,51 @@ export async function getGuideConversationSummaryForUser(
 }
 
 
-export async function listStudentGuideConversations(studentUserId: string) {
-  const db = getDb();
-  if (!db) return [] as GuideConversationSummary[];
-
-  const rows = await db
-    .select({
-      id: guideConversations.id,
-      peerId: guideConversations.peerId,
-      peerUserId: guideConversations.peerUserId,
-      studentUserId: guideConversations.studentUserId,
-      peerName: studentPeers.fullName,
-      universityName: universities.name,
-      universitySlug: universities.slug,
-      lastMessageText: guideConversations.lastMessageText,
-      lastMessageAt: guideConversations.lastMessageAt,
-      studentLastReadAt: guideConversations.studentLastReadAt,
-      peerLastReadAt: guideConversations.peerLastReadAt,
-      createdAt: guideConversations.createdAt,
-    })
-    .from(guideConversations)
-    .innerJoin(studentPeers, eq(guideConversations.peerId, studentPeers.id))
-    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-    .where(eq(guideConversations.studentUserId, studentUserId))
-    .orderBy(desc(guideConversations.lastMessageAt), desc(guideConversations.createdAt));
-
-  return Promise.all(
-    rows.map(async (row) => ({
-      id: row.id,
-      peerId: row.peerId,
-      peerUserId: row.peerUserId,
-      studentUserId: row.studentUserId,
-      bookingId: null,
-      displayName: row.peerName,
-      subtitle: row.universityName,
-      universityName: row.universityName,
-      universitySlug: row.universitySlug,
-      lastMessageText: row.lastMessageText,
-      lastMessageAt: row.lastMessageAt,
-      counterpartLastReadAt: row.peerLastReadAt ?? null,
-      unreadCount: await getUnreadCount(row.id, studentUserId, row.studentLastReadAt),
-    }))
-  );
+export async function listStudentGuideConversations(userId: string) {
+  return listConversationsForParticipant(userId, false);
 }
-
-export async function listGuideConversations(peerUserId: string) {
+export async function listGuideConversations(userId: string) {
+  return listConversationsForParticipant(userId, true);
+}
+async function listConversationsForParticipant(userId: string, isGuide: boolean): Promise<GuideConversationSummary[]> {
   const db = getDb();
-  if (!db) return [] as GuideConversationSummary[];
-
-  const rows = await db
-    .select({
-      id: guideConversations.id,
-      peerId: guideConversations.peerId,
-      peerUserId: guideConversations.peerUserId,
-      studentUserId: guideConversations.studentUserId,
-      bookingId: peerCallBookings.id,
-      studentName: users.name,
-      universityName: universities.name,
-      universitySlug: universities.slug,
-      lastMessageText: guideConversations.lastMessageText,
-      lastMessageAt: guideConversations.lastMessageAt,
-      studentLastReadAt: guideConversations.studentLastReadAt,
-      peerLastReadAt: guideConversations.peerLastReadAt,
-      createdAt: guideConversations.createdAt,
-    })
-    .from(guideConversations)
-    .innerJoin(users, eq(guideConversations.studentUserId, users.id))
+  if (!db) return [];
+  const rows = await db.select({
+    id: guideConversations.id, peerId: guideConversations.peerId,
+    studentUserId: guideConversations.studentUserId, peerUserId: guideConversations.peerUserId,
+    bookingId: peerCallBookings.id, bookingStatus: peerCallBookings.status,
+    guideStatus: studentPeers.status, studentBlockedAt: peerCallBookings.studentBlockedAt, peerBlockedAt: peerCallBookings.peerBlockedAt,
+    peerName: studentPeers.fullName, studentName: users.name,
+    universityName: universities.name, universitySlug: universities.slug,
+    lastMessageText: guideConversations.lastMessageText, lastMessageAt: guideConversations.lastMessageAt,
+    studentLastReadAt: guideConversations.studentLastReadAt, peerLastReadAt: guideConversations.peerLastReadAt,
+    unreadCount: sql<number>`(select count(*)::integer from guide_messages m where m.conversation_id = ${guideConversations.id}
+      and m.sender_user_id <> ${userId} and m.created_at > coalesce(${isGuide ? guideConversations.peerLastReadAt : guideConversations.studentLastReadAt}, '-infinity'::timestamptz))`.mapWith(Number),
+  }).from(guideConversations)
     .innerJoin(studentPeers, eq(guideConversations.peerId, studentPeers.id))
+    .innerJoin(users, eq(guideConversations.studentUserId, users.id))
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-    .leftJoin(
-      peerCallBookings,
-      and(
-        eq(peerCallBookings.peerId, guideConversations.peerId),
-        eq(peerCallBookings.studentUserId, guideConversations.studentUserId)
-      )
-    )
-    .where(eq(guideConversations.peerUserId, peerUserId))
-    .orderBy(desc(guideConversations.lastMessageAt), desc(guideConversations.createdAt));
-
-  return Promise.all(
-    rows.map(async (row) => ({
-      id: row.id,
-      peerId: row.peerId,
-      peerUserId: row.peerUserId,
-      studentUserId: row.studentUserId,
-      bookingId: row.bookingId ?? null,
-      displayName: row.studentName?.trim() || "Student",
-      subtitle: row.universityName,
-      universityName: row.universityName,
-      universitySlug: row.universitySlug,
-      lastMessageText: row.lastMessageText,
-      lastMessageAt: row.lastMessageAt,
-      counterpartLastReadAt: row.studentLastReadAt ?? null,
-      unreadCount: await getUnreadCount(row.id, peerUserId, row.peerLastReadAt),
-    }))
-  );
+    .leftJoin(peerCallBookings, and(eq(peerCallBookings.peerId, guideConversations.peerId), eq(peerCallBookings.studentUserId, guideConversations.studentUserId)))
+    .where(eq(isGuide ? guideConversations.peerUserId : guideConversations.studentUserId, userId))
+    .orderBy(sql`${guideConversations.lastMessageAt} desc nulls last`, desc(guideConversations.createdAt)).limit(100);
+  return rows.map(row => ({
+    id: row.id, peerId: row.peerId, studentUserId: row.studentUserId, peerUserId: row.peerUserId,
+    bookingId: row.bookingId, ...conversationCapabilities(row, userId),
+    displayName: peerSafeText(isGuide ? row.studentName?.trim() || "Student" : row.peerName),
+    subtitle: row.universityName, universityName: row.universityName, universitySlug: row.universitySlug,
+    lastMessageText: row.lastMessageText ? peerSafeText(row.lastMessageText) : null, lastMessageAt: row.lastMessageAt,
+    counterpartLastReadAt: isGuide ? row.studentLastReadAt : row.peerLastReadAt, unreadCount: row.unreadCount,
+  }));
+}
+export function conversationCapabilities(conversation: Pick<AuthorizedGuideConversation, "studentBlockedAt" | "peerBlockedAt" | "guideStatus" | "bookingStatus" | "peerUserId">, userId: string) {
+  const blocked = Boolean(conversation.studentBlockedAt || conversation.peerBlockedAt);
+  const canMessage = !blocked && conversation.guideStatus === "active" && ["pending", "accepted"].includes(conversation.bookingStatus || "");
+  return {
+    canMessage,
+    canCall: canMessage && conversation.bookingStatus === "accepted",
+    blockedByMe: Boolean(conversation.peerUserId === userId ? conversation.peerBlockedAt : conversation.studentBlockedAt),
+    connectionStatus: blocked ? "blocked" : conversation.guideStatus !== "active" ? "unavailable" : conversation.bookingStatus || "closed",
+  };
 }
 
 export async function listStudentConversationCandidates(
@@ -479,6 +450,8 @@ export async function listStudentConversationCandidates(
     )
     .where(
       and(
+        eq(studentPeers.status, "active"),
+        sql`${peerCallBookings.studentBlockedAt} is null and ${peerCallBookings.peerBlockedAt} is null`,
         eq(peerCallBookings.studentUserId, studentUserId),
         or(
           eq(peerCallBookings.status, CHAT_ENABLED_BOOKING_STATUSES[0]),
@@ -498,13 +471,15 @@ export async function listGuideConversationStarters(
   return db
     .select({
       bookingId: peerCallBookings.id,
+      bookingStatus: peerCallBookings.status,
+      guideStatus: studentPeers.status,
+      studentBlockedAt: peerCallBookings.studentBlockedAt,
+      peerBlockedAt: peerCallBookings.peerBlockedAt,
       peerId: studentPeers.id,
       studentUserId: peerCallBookings.studentUserId,
       studentName: users.name,
-      studentEmail: users.email,
       universityName: universities.name,
       universitySlug: universities.slug,
-      bookingStatus: peerCallBookings.status,
       conversationId: guideConversations.id,
       lastMessageAt: guideConversations.lastMessageAt,
     })
@@ -521,6 +496,8 @@ export async function listGuideConversationStarters(
     )
     .where(
       and(
+        eq(studentPeers.status, "active"),
+        sql`${peerCallBookings.studentBlockedAt} is null and ${peerCallBookings.peerBlockedAt} is null`,
         eq(studentPeers.peerUserId, peerUserId),
         or(
           eq(peerCallBookings.status, CHAT_ENABLED_BOOKING_STATUSES[0]),
@@ -556,10 +533,11 @@ export async function listGuideConversationMessages(
     .from(guideMessages)
     .leftJoin(users, eq(guideMessages.senderUserId, users.id))
     .where(eq(guideMessages.conversationId, conversationId))
-    .orderBy(guideMessages.createdAt);
+    .orderBy(desc(guideMessages.id)).limit(100);
 
-  return rows.map((row) => ({
+  return rows.reverse().map((row) => ({
     ...row,
+    body: peerSafeText(row.body),
     messageType: row.messageType,
     isMine: row.senderUserId === userId,
   }));
@@ -573,7 +551,7 @@ export async function listGuideConversationCallEvents(
 ): Promise<GuideCallTimelineEvent[]> {
   const conversation = await getAuthorizedGuideConversation(conversationId, userId);
   if (!conversation) return [];
-  return listPeerCallTimelineEvents(conversation.peerId, userId);
+  return listPeerCallTimelineEvents(conversation.peerId, userId, conversation.studentUserId);
 }
 
 export async function markGuideConversationRead(
@@ -600,8 +578,13 @@ export async function markGuideConversationRead(
 export async function sendGuideConversationMessage(
   conversationId: number,
   userId: string,
-  body: string
+  body: string,
+  clientNonce?: string
 ) {
+  if (containsPeerContactDetails(body)) {
+    return { ok: false as const, error: PEER_CONTACT_POLICY_ERROR };
+  }
+
   const db = getDb();
   if (!db) return { ok: false as const, error: "Service unavailable." };
 
@@ -615,34 +598,17 @@ export async function sendGuideConversationMessage(
     return { ok: false as const, error: "Message cannot be empty." };
   }
 
-  const now = new Date();
-
-  await db.insert(guideMessages).values({
-    conversationId,
-    senderUserId: userId,
-    messageType: "text",
-    body: normalizedBody,
-    createdAt: now,
-  });
-
-  await db
-    .update(guideConversations)
-    .set(
-      conversation.isPeerParticipant
-        ? {
-            lastMessageText: normalizedBody,
-            lastMessageAt: now,
-            peerLastReadAt: now,
-            updatedAt: now,
-          }
-        : {
-            lastMessageText: normalizedBody,
-            lastMessageAt: now,
-            studentLastReadAt: now,
-            updatedAt: now,
-          }
-    )
-    .where(eq(guideConversations.id, conversationId));
-
-  return { ok: true as const };
+  if (normalizedBody.length > 2000) return { ok: false as const, error: "Messages must be 2,000 characters or fewer." };
+  const nonce = clientNonce || crypto.randomUUID();
+  if (!/^[a-zA-Z0-9_-]{1,128}$/.test(nonce)) return { ok: false as const, error: "Invalid message identifier." };
+  const rateError = await consumePublicFormRateLimits([{ scope: "peer:messages", identifier: userId, limit: 30, windowMs: 60_000 }], "messages");
+  if (rateError) return { ok: false as const, error: rateError };
+  const [, result] = await db.batch([
+    db.execute(peerLockQuery(conversation.peerId)),
+    db.execute<{ messageId: number | null; jobId: number | null; reused: boolean }>(sendPeerMessageQuery({ conversationId, userId, body: normalizedBody, nonce })),
+  ]);
+  const row = result.rows[0];
+  if (!row?.messageId) return { ok: false as const, error: "This conversation is closed or blocked, or this message identifier was already used." };
+  if (row.jobId) schedulePeerNotification(row.jobId);
+  return { ok: true as const, messageId: row.messageId };
 }

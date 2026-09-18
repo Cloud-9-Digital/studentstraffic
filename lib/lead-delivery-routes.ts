@@ -5,7 +5,11 @@
  * and submit-lead.ts.
  */
 
-export type LeadDeliveryFlow = "neetPredictor" | "seminar" | "default";
+export type LeadDeliveryFlow =
+  | "neetPredictor"
+  | "seminar"
+  | "crmOnly"
+  | "default";
 
 export type LeadDeliveryRoute = {
   crm: boolean;
@@ -15,6 +19,14 @@ export type LeadDeliveryRoute = {
 
 export const NEET_PREDICTOR_SOURCE_PATH = "/neet-college-predictor";
 const SEMINAR_SOURCE_PATH_PREFIX = "/seminar-2026";
+
+/**
+ * Paid-traffic landing pages whose leads go to the Students Traffic CRM and
+ * nowhere else — no WhatsApp confirmation. The counsellor call is the entire
+ * promise on these pages, so an automated message ahead of it only competes
+ * with the call. Add future ad landing pages here.
+ */
+const CRM_ONLY_SOURCE_PATHS = new Set(["/free-mbbs-counselling-2026"]);
 
 // Pabbly is off for every flow: its automation scenario sends its own WhatsApp
 // message on receipt regardless of the whatsapp flag below, which caused
@@ -29,6 +41,7 @@ const SEMINAR_SOURCE_PATH_PREFIX = "/seminar-2026";
 // whatever the score.
 const ROUTES: Record<LeadDeliveryFlow, LeadDeliveryRoute> = {
   neetPredictor: { crm: true, pabbly: false, whatsapp: false },
+  crmOnly: { crm: true, pabbly: false, whatsapp: false },
   seminar: { crm: true, pabbly: false, whatsapp: true },
   default: { crm: true, pabbly: false, whatsapp: true },
 };
@@ -40,6 +53,10 @@ export function getLeadDeliveryFlow(sourcePath: string): LeadDeliveryFlow {
 
   if (sourcePath.startsWith(SEMINAR_SOURCE_PATH_PREFIX)) {
     return "seminar";
+  }
+
+  if (CRM_ONLY_SOURCE_PATHS.has(sourcePath)) {
+    return "crmOnly";
   }
 
   return "default";

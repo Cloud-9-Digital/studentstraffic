@@ -1,3 +1,5 @@
+import { SearchablePicker } from "../../src/components/SearchablePicker";
+import { useReducedMotion } from "../../src/hooks/useReducedMotion";
 import {
   Animated,
   Image,
@@ -17,7 +19,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { BlurView } from "expo-blur";
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import * as Haptics from "expo-haptics";
 
@@ -75,32 +77,23 @@ function CheckItem({ text, variant = "check" }: { text: string; variant?: "check
           color={isWarn ? colors.amber : colors.primary}
         />
       </View>
-      <Text style={[sh.checkText, isWarn && sh.warnText]}>{text}</Text>
+      <View style={{ flex: 1 }}><ExpandableText text={text} /></View>
     </View>
   );
 }
 
-function InfoCard({ icon, title, body }: { icon: string; title: string; body: string }) {
-  return (
-    <View style={sh.infoCard}>
-      <View style={sh.infoIconWrap}>
-        <Ionicons name={icon as any} size={16} color={colors.primary} />
-      </View>
-      <View style={{ flex: 1 }}>
-        <Text style={sh.infoTitle}>{title}</Text>
-        <Text style={sh.infoBody}>{body}</Text>
-      </View>
-    </View>
-  );
+function ExpandableText({ text, lines = 4 }: { text: string; lines?: number }) {
+  const [expanded, setExpanded] = useState(false);
+  return <View><Text style={ux.paragraph} numberOfLines={expanded ? undefined : lines}>{text}</Text>{text.length > lines * 40 ? <Pressable accessibilityRole="button" accessibilityState={{ expanded }} onPress={() => setExpanded(v => !v)} style={ux.textAction}><Text style={ux.link}>{expanded ? "Read less" : "Read more"}</Text></Pressable> : null}</View>;
 }
-
-function CostRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
-  return (
-    <View style={[sh.costRow, highlight && sh.costRowHL]}>
-      <Text style={[sh.costLabel, highlight && sh.costLabelHL]}>{label}</Text>
-      <Text style={[sh.costValue, highlight && sh.costValueHL]}>{value}</Text>
-    </View>
-  );
+function DetailSection({ title, icon, children }: { title: string; icon?: keyof typeof Ionicons.glyphMap; children: ReactNode }) {
+  const [open, setOpen] = useState(false);
+  const reducedMotion = useReducedMotion();
+  return <View style={ux.accordion}><Pressable accessibilityRole="button" accessibilityState={{ expanded: open }} onPress={() => { if (!reducedMotion) LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut); setOpen(v => !v); }} style={ux.accordionHeader}>{icon ? <Ionicons name={icon} size={20} color={colors.primary} /> : null}<Text style={ux.accordionTitle}>{title}</Text><Ionicons name={open ? "chevron-up" : "chevron-down"} size={17} color={colors.muted} /></Pressable>{open ? <View style={ux.accordionContent}>{children}</View> : null}</View>;
+}
+function BulletPreview({ items, warn = false }: { items: string[]; warn?: boolean }) {
+  const [all, setAll] = useState(false);
+  return <View style={{ gap: 12 }}>{(all ? items : items.slice(0, 3)).map((text, i) => <View key={i} style={{ flexDirection: "row", gap: 10 }}><Ionicons name={warn ? "alert-circle-outline" : "checkmark-circle-outline"} size={18} color={warn ? colors.accent : colors.primary} /><View style={{ flex: 1 }}><ExpandableText text={text} lines={2} /></View></View>)}{items.length > 3 ? <Pressable accessibilityRole="button" accessibilityState={{ expanded: all }} onPress={() => setAll(v => !v)} style={ux.textAction}><Text style={ux.link}>{all ? "Show fewer" : `Show all ${items.length}`}</Text></Pressable> : null}</View>;
 }
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
@@ -145,6 +138,11 @@ export default function UniversityDetailScreen() {
 
   const scrollY    = useRef(new Animated.Value(0)).current;
   const shimmerAnim = useRef(new Animated.Value(0)).current;
+  const [selectedProgram, setSelectedProgram] = useState<string | null>(null);
+  const [programPicker, setProgramPicker] = useState(false);
+  const [allFaqs, setAllFaqs] = useState(false);
+  const [logoError, setLogoError] = useState(false);
+  useEffect(() => { setSelectedProgram(null); setProgramPicker(false); setAllFaqs(false); setLogoError(false); setImgError(false); }, [slug]);
   const [saved, setSaved]               = useState(false);
   const [toggling, setToggling]         = useState(false);
   const [imgError, setImgError]         = useState(false);
@@ -182,7 +180,7 @@ export default function UniversityDetailScreen() {
     return () => scrollY.removeListener(listenerId);
   }, [scrollY]);
 
-  const HERO_H = 300;
+  const HERO_H = 260 + Math.max(0, insets.top - 44);
 
   const headerOpacity = scrollY.interpolate({
     inputRange: [HERO_H - 80, HERO_H - 20],
@@ -274,8 +272,8 @@ export default function UniversityDetailScreen() {
 
   const tone = toneFor(university.country);
   const hasCoverImage = !imgError && !!university.coverImageUrl;
-  const o = university.primaryOffering;
-  const usd = (n: number) => `$${n.toLocaleString()}`;
+  const programs = university.offerings ?? [];
+  const o = programs.find(program => program.slug === selectedProgram) ?? university.primaryOffering ?? programs[0] ?? null;
 
   const campusSections = [
     { icon: "home-outline",       title: "Hostel & Accommodation", body: university.hostelOverview },
@@ -373,50 +371,18 @@ export default function UniversityDetailScreen() {
         {/* ── Content ── */}
         <View style={s.content}>
 
-          {/* Established */}
-          {university.establishedYear && (
-            <View style={s.estPill}>
-              <Ionicons name="business-outline" size={13} color={colors.faint} />
-              <Text style={s.estText}>Established {university.establishedYear}</Text>
-            </View>
-          )}
-
-          {/* Key facts */}
-          <View style={s.factRow}>
-            <FactTile icon="cash-outline"     label="Annual Fee" value={o ? usd(o.annualTuitionUsd) : usd(university.tuitionUsd)} />
-            <FactTile icon="time-outline"     label="Duration"   value={o ? `${o.durationYears} years` : (university.duration ?? "6 years")} />
-            {(o?.medium ?? university.medium) ? (
-              <FactTile icon="language-outline" label="Medium" value={(o?.medium ?? university.medium)!} />
-            ) : null}
-          </View>
-
-          {/* About */}
-          {!!university.summary && (
-            <View style={s.section}>
-              <SectionTitle>About</SectionTitle>
-              <Text style={s.body}>{university.summary}</Text>
-            </View>
-          )}
-
-          {/* Why choose */}
-          {university.whyChoose?.length > 0 && (
-            <View style={s.section}>
-              <SectionTitle>Why Choose</SectionTitle>
-              <View style={s.bulletList}>
-                {university.whyChoose.map((item, i) => (
-                  <CheckItem key={i} text={item} variant="check" />
-                ))}
-              </View>
-            </View>
-          )}
-
+          <View style={ux.identityRow}>{university.logoUrl && !logoError ? <Image source={{ uri: university.logoUrl }} resizeMode="contain" style={ux.logo} onError={() => setLogoError(true)} /> : <View style={ux.logoFallback}><Ionicons name="school-outline" size={24} color={colors.primary} /></View>}<View style={{ flex: 1 }}><Text style={[ux.meta, { color: colors.ink }]}>University overview</Text><Text style={ux.meta}>{university.establishedYear ? `Established ${university.establishedYear} · ` : ""}{programs.length} {programs.length === 1 ? "program" : "programs"}</Text></View></View>
+          {!!university.summary && <View style={ux.section}><SectionTitle>At a glance</SectionTitle><ExpandableText key={university.slug} text={university.summary} /></View>}
+          <View style={ux.programSection}><View style={ux.sectionHeading}><SectionTitle>Explore programs</SectionTitle><Text style={ux.count}>{programs.length}</Text></View><Text style={ux.caption}>Choose a program to see its duration, language and intake.</Text>{programs.length ? <Pressable accessibilityRole="button" accessibilityLabel="Choose a program" onPress={() => setProgramPicker(true)} style={ux.programSelector}><Ionicons name="school-outline" size={21} color={colors.accent} /><Text style={ux.programTitle} numberOfLines={2}>{o?.title ?? "Choose a program"}</Text><Ionicons name="chevron-down" size={18} color={colors.accent} /></Pressable> : <Text style={ux.caption}>Program details are being updated.</Text>}
+          {o ? <View style={ux.facts}><View style={ux.fact}><Ionicons name="time-outline" size={17} color={colors.muted} /><Text style={ux.factLabel}>Duration</Text><Text style={ux.factValue}>{o.durationYears ? `${o.durationYears} years` : "Not confirmed"}</Text></View><View style={ux.fact}><Ionicons name="language-outline" size={17} color={colors.muted} /><Text style={ux.factLabel}>Language</Text><Text style={ux.factValue}>{o.medium || "Not confirmed"}</Text></View>{o.intakeMonths?.length ? <View style={ux.fact}><Ionicons name="calendar-outline" size={17} color={colors.muted} /><Text style={ux.factLabel}>Intake</Text><Text style={ux.factValue}>{o.intakeMonths.join(", ")}</Text></View> : null}</View> : null}</View>
+          {university.whyChoose?.length > 0 ? <View style={ux.section}><SectionTitle>Why consider this university</SectionTitle><BulletPreview key={university.slug} items={university.whyChoose} /></View> : null}
+          <View style={ux.section}><SectionTitle>A closer look</SectionTitle>
           {/* Admissions */}
           {university.admissionsContent && (
-            <View style={s.section}>
-              <SectionTitle>Admissions</SectionTitle>
+            <DetailSection title="University admissions" icon="document-text-outline">
               <View style={s.admCard}>
                 {!!university.admissionsContent.overview && (
-                  <Text style={[s.body, { marginBottom: 14 }]}>{university.admissionsContent.overview}</Text>
+                  <ExpandableText text={university.admissionsContent.overview} />
                 )}
 
                 {/* Eligibility */}
@@ -497,137 +463,28 @@ export default function UniversityDetailScreen() {
                 )}
               </View>
 
-            </View>
+            </DetailSection>
           )}
 
-          {/* Cost breakdown */}
-          {o && (
-            <View style={s.section}>
-              <SectionTitle>Fees & Costs</SectionTitle>
 
-              {/* Year-wise table if available, else simple summary */}
-              {o.yearlyCostBreakdown?.length > 0 ? (
-                <View style={s.yearTable}>
-                  <View style={[s.yearRow, s.yearHeader]}>
-                    <Text style={[s.yearCell, s.yearHeaderText, { flex: 2 }]}>Year</Text>
-                    <Text style={[s.yearCell, s.yearHeaderText]}>Tuition</Text>
-                    <Text style={[s.yearCell, s.yearHeaderText]}>Living</Text>
-                    <Text style={[s.yearCell, s.yearHeaderText]}>Total</Text>
-                  </View>
-                  {o.yearlyCostBreakdown.map((yr, i) => (
-                    <View key={i} style={[s.yearRow, i % 2 === 1 && s.yearRowAlt]}>
-                      <Text style={[s.yearCell, s.yearLabel, { flex: 2 }]}>{yr.yearLabel}</Text>
-                      <Text style={s.yearCell}>{usd(yr.tuitionUsd)}</Text>
-                      <Text style={s.yearCell}>{usd(yr.livingUsd)}</Text>
-                      <Text style={[s.yearCell, s.yearCellBold]}>{usd(yr.totalUsd)}</Text>
-                    </View>
-                  ))}
-                  <View style={[s.yearRow, s.yearTotalRow]}>
-                    <Text style={[s.yearCell, s.yearTotalLabel, { flex: 2 }]}>Programme Total</Text>
-                    <Text style={[s.yearCell, s.yearTotalVal, { flex: 3, textAlign: "right" }]}>{usd(o.totalTuitionUsd)}</Text>
-                  </View>
-                </View>
-              ) : (
-                <View style={s.costCard}>
-                  <CostRow label="Annual tuition"      value={usd(o.annualTuitionUsd)} />
-                  <CostRow label="Annual living costs" value={usd(o.livingUsd)} />
-                  <CostRow label={`Total (${o.durationYears} years)`} value={usd(o.totalTuitionUsd)} highlight />
-                </View>
-              )}
-
-              {/* Fee notes */}
-              {!!o.feeNotes && (
-                <View style={s.feeNote}>
-                  <Ionicons name="information-circle-outline" size={14} color={colors.faint} />
-                  <Text style={s.feeNoteText}>{o.feeNotes}</Text>
-                </View>
-              )}
-
-              {/* Intake months */}
-              {o.intakeMonths?.length > 0 && (
-                <View style={s.intakeWrap}>
-                  <SectionLabel>INTAKE MONTHS</SectionLabel>
-                  <View style={s.intakePills}>
-                    {o.intakeMonths.map(m => (
-                      <View key={m} style={s.intakePill}>
-                        <Text style={s.intakePillText}>{m}</Text>
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              )}
-            </View>
-          )}
-
-          {/* Best fit for */}
-          {university.bestFitFor?.length > 0 && (
-            <View style={s.section}>
-              <SectionTitle>Best Fit For</SectionTitle>
-              <View style={s.fitWrap}>
-                {university.bestFitFor.map((tag, i) => (
-                  <View key={i} style={s.fitTag}>
-                    <Ionicons name="person-outline" size={11} color={colors.primary} />
-                    <Text style={s.fitTagText}>{tag}</Text>
-                  </View>
-                ))}
-              </View>
-            </View>
-          )}
-
-          {/* Campus life */}
-          {campusSections.length > 0 && (
-            <View style={s.section}>
-              <SectionTitle>Campus & Life</SectionTitle>
-              <View style={s.infoList}>
-                {campusSections.map(c => (
-                  <InfoCard key={c.title} icon={c.icon} title={c.title} body={c.body} />
-                ))}
-              </View>
-            </View>
-          )}
-
-          {/* Things to consider */}
-          {university.thingsToConsider?.length > 0 && (
-            <View style={s.section}>
-              <SectionTitle>Things to Consider</SectionTitle>
-              <View style={[s.bulletList, s.warnCard]}>
-                {university.thingsToConsider.map((item, i) => (
-                  <CheckItem key={i} text={item} variant="warn" />
-                ))}
-              </View>
-            </View>
-          )}
-
-          {/* FAQ */}
-          {university.faq?.length > 0 && (
-            <View style={s.section}>
-              <SectionTitle>FAQs</SectionTitle>
-              <View style={s.faqList}>
-                {university.faq.map((item, i) => (
-                  <FaqItem key={i} question={item.question} answer={item.answer} />
-                ))}
-              </View>
-            </View>
-          )}
+          {campusSections.map(c => <DetailSection key={university.slug + c.title} title={c.title} icon={c.icon as keyof typeof Ionicons.glyphMap}><ExpandableText text={c.body} /></DetailSection>)}
+          {university.bestFitFor?.length ? <DetailSection title="Who it may suit" icon="people-outline"><BulletPreview items={university.bestFitFor} /></DetailSection> : null}
+          {university.thingsToConsider?.length ? <DetailSection title="Before you decide" icon="alert-circle-outline"><BulletPreview items={university.thingsToConsider} warn /></DetailSection> : null}
+          </View>
+          <Pressable accessibilityRole="button" onPress={() => router.push({ pathname: "/student-guides", params: { university: university.slug } })} style={ux.guideCard}><View style={{ flex: 1 }}><Text style={ux.guideTitle}>Ask a student guide</Text><Text style={ux.caption}>Find out what studying here is really like.</Text></View><Ionicons name="arrow-forward" size={22} color={colors.primary} /></Pressable>
+          {university.faq?.length ? <View style={ux.section}><SectionTitle>Common questions</SectionTitle>{(allFaqs ? university.faq : university.faq.slice(0,3)).map((item,i) => <FaqItem key={university.slug+i} question={item.question} answer={item.answer} />)}{university.faq.length > 3 ? <Pressable accessibilityRole="button" onPress={() => setAllFaqs(v => !v)} style={ux.textAction}><Text style={ux.link}>{allFaqs ? "Show fewer questions" : `View all ${university.faq.length} questions`}</Text></Pressable> : null}</View> : null}
 
 
         </View>
       </Animated.ScrollView>
 
+      {programPicker ? <SearchablePicker picker={{ title: "Choose a program", selected: o?.slug ?? "", options: programs.map(program => ({ label: program.title, value: program.slug })), onSelect: setSelectedProgram }} onClose={() => setProgramPicker(false)} /> : null}
       {/* ── Sticky bottom CTA bar ── */}
       <View style={[s.bottomBar, { paddingBottom: insets.bottom + 12 }]}>
         {Platform.OS === "ios" && (
           <BlurView tint="systemChromeMaterial" intensity={80} style={StyleSheet.absoluteFill} />
         )}
         <View style={s.bottomInner}>
-          {/* Call */}
-          <Pressable
-            onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); Linking.openURL("tel:+919176162888"); }}
-            style={({ pressed }) => [s.counselBtn, pressed && s.counselBtnPressed]}
-          >
-            <Ionicons name="call" size={19} color={colors.primary} />
-          </Pressable>
-
           {/* Talk to a counsellor */}
           <Pressable
             onPress={() => {
@@ -636,17 +493,12 @@ export default function UniversityDetailScreen() {
             }}
             style={({ pressed }) => [s.applyBtn, pressed && s.applyBtnPressed]}
           >
+            <LinearGradient pointerEvents="none" colors={[colors.accent, colors.accentStrong]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={StyleSheet.absoluteFill} />
             <Ionicons name="chatbubble-ellipses" size={17} color="#fff" />
             <Text style={s.applyLabel}>Talk to a counsellor</Text>
           </Pressable>
 
-          {/* WhatsApp */}
-          <Pressable
-            onPress={() => { Haptics.selectionAsync(); Linking.openURL("https://wa.me/919176162888?text=Hi%2C+I%27m+exploring+study+abroad+options.+Can+you+help+me%3F"); }}
-            style={({ pressed }) => [s.counselBtn, pressed && s.counselBtnPressed]}
-          >
-            <Ionicons name="logo-whatsapp" size={19} color={colors.primary} />
-          </Pressable>
+
         </View>
       </View>
     </View>
@@ -1342,9 +1194,10 @@ const s = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: 8,
-    height: 46,
+    minHeight: 50,
     borderRadius: 14,
-    backgroundColor: colors.primary,
+    overflow: "hidden",
+    backgroundColor: colors.accent,
   },
   applyBtnPressed: { opacity: 0.88 },
   applyLabel: {
@@ -1362,4 +1215,31 @@ const s = StyleSheet.create({
     flexShrink: 0,
   },
   counselBtnPressed: { opacity: 0.75 },
+});
+
+const ux = StyleSheet.create({
+  identityRow: { flexDirection: "row", alignItems: "center", gap: 12, paddingBottom: 18, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.line },
+  logo: { width: 48, height: 48, borderRadius: 10, backgroundColor: "#fff" },
+  logoFallback: { width: 48, height: 48, borderRadius: 12, backgroundColor: colors.primarySoft, alignItems: "center", justifyContent: "center" },
+  meta: { fontFamily: "PlusJakartaSans-Medium", fontSize: 12, lineHeight: 20, color: colors.muted },
+  section: { marginTop: 26 },
+  paragraph: { fontFamily: "PlusJakartaSans-Regular", fontSize: 13, lineHeight: 22, color: colors.muted },
+  textAction: { minHeight: 44, justifyContent: "center", alignSelf: "flex-start" },
+  link: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12, color: colors.primary },
+  programSection: { marginTop: 24, padding: 16, borderRadius: 18, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line },
+  sectionHeading: { flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" },
+  count: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, color: colors.accent, paddingHorizontal: 9, paddingVertical: 3, borderRadius: 8, backgroundColor: colors.coralSoft },
+  caption: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, lineHeight: 20, color: colors.muted },
+  programSelector: { flexDirection: "row", alignItems: "center", gap: 10, padding: 13, borderRadius: 12, backgroundColor: colors.coralSoft, marginTop: 16 },
+  programTitle: { flex: 1, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, lineHeight: 20, color: colors.accentStrong },
+  facts: { marginTop: 10 },
+  fact: { flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 12, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.line },
+  factLabel: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, color: colors.muted, width: 68 },
+  factValue: { flex: 1, textAlign: "right", fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12, lineHeight: 19, color: colors.ink },
+  accordion: { borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.line },
+  accordionHeader: { minHeight: 62, flexDirection: "row", alignItems: "center", gap: 12, paddingVertical: 14 },
+  accordionTitle: { flex: 1, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, lineHeight: 21, color: colors.ink },
+  accordionContent: { paddingBottom: 18 },
+  guideCard: { flexDirection: "row", gap: 16, alignItems: "center", marginTop: 28, padding: 18, backgroundColor: colors.primarySoft, borderRadius: 16 },
+  guideTitle: { fontFamily: "Fraunces-Medium", fontSize: 21, color: colors.ink, marginBottom: 6 },
 });

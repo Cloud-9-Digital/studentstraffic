@@ -59,7 +59,7 @@ export default async function CountriesPage() {
       path,
       name: "Study destinations",
       description:
-        "Country guides covering universities, fees, cities, and teaching context for Indian students.",
+        "Country guides covering universities, fees, cities, and teaching context for students worldwide.",
     }),
   ];
 

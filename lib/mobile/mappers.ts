@@ -30,6 +30,7 @@ export function mapUniversityDetail(
   const primaryOffering = offerings[0];
   return {
     slug: university.slug,
+    programCount: offerings.length,
     name: university.name,
     countrySlug: university.countrySlug,
     country: countryName ?? university.countrySlug,

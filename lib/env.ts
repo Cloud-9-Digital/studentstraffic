@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { defaultSiteUrl } from "@/lib/constants";
+import { defaultSiteUrl, metaPixelId as metaPixelIdFallback } from "@/lib/constants";
 
 const envSchema = z.object({
   DATABASE_URL: z.string().url().optional(),
@@ -34,6 +34,10 @@ const envSchema = z.object({
   AGORA_APP_CERTIFICATE: z.string().min(1).optional(),
   ABLY_API_KEY: z.string().min(1).optional(),
   GNEWS_API_KEY: z.string().min(1).optional(),
+  // Meta Conversions API (server-side mirror of the browser pixel)
+  META_PIXEL_ID: z.string().min(1).optional(),
+  META_CAPI_ACCESS_TOKEN: z.string().min(1).optional(),
+  META_CAPI_TEST_EVENT_CODE: z.string().min(1).optional(),
 });
 
 function optionalEnv(value: string | undefined) {
@@ -71,6 +75,9 @@ const parsedEnv = envSchema.safeParse({
   AGORA_APP_CERTIFICATE: optionalEnv(process.env.AGORA_APP_CERTIFICATE),
   ABLY_API_KEY: optionalEnv(process.env.ABLY_API_KEY),
   GNEWS_API_KEY: optionalEnv(process.env.GNEWS_API_KEY),
+  META_PIXEL_ID: optionalEnv(process.env.META_PIXEL_ID),
+  META_CAPI_ACCESS_TOKEN: optionalEnv(process.env.META_CAPI_ACCESS_TOKEN),
+  META_CAPI_TEST_EVENT_CODE: optionalEnv(process.env.META_CAPI_TEST_EVENT_CODE),
 });
 
 if (!parsedEnv.success) {
@@ -135,6 +142,10 @@ export const env = {
   agoraAppCertificate: parsedEnv.data.AGORA_APP_CERTIFICATE,
   ablyApiKey: parsedEnv.data.ABLY_API_KEY,
   gNewsApiKey: parsedEnv.data.GNEWS_API_KEY,
+  metaPixelId: parsedEnv.data.META_PIXEL_ID ?? metaPixelIdFallback,
+  metaCapiAccessToken: parsedEnv.data.META_CAPI_ACCESS_TOKEN,
+  metaCapiTestEventCode: parsedEnv.data.META_CAPI_TEST_EVENT_CODE,
+  hasMetaCapiConfig: Boolean(parsedEnv.data.META_CAPI_ACCESS_TOKEN),
   hasUpstashRedis: Boolean(
     parsedEnv.data.UPSTASH_REDIS_REST_URL && parsedEnv.data.UPSTASH_REDIS_REST_TOKEN
   ),

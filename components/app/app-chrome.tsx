@@ -14,6 +14,7 @@ const BARE_PREFIXES = [
 const BARE_EXACT = new Set([
   "/login",
   "/register",
+  "/free-mbbs-counselling-2026",
   "/mbbs-in-russia-admission",
   "/mbbs-in-vietnam-admission",
   "/mbbs-in-georgia-admission",

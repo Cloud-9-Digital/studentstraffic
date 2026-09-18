@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   title: {
-    fontFamily: "PlusJakartaSans-ExtraBold",
+    fontFamily: "Fraunces-Medium",
     color: colors.ink,
-    fontSize: 18,
+    fontSize: 22,
   },
   action: {
     fontFamily: "PlusJakartaSans-Bold",

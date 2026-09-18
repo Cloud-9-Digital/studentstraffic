@@ -1,3 +1,4 @@
+import { supportsNativeCalls } from "./nativeRuntime";
 import { NativeModules, Platform } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -16,7 +17,7 @@ export type PendingCallAction = {
 // ─── CallKeep setup ──────────────────────────────────────────────────────────
 
 export async function setupCallKeep() {
-  if (Platform.OS === "web") return false;
+  if (!supportsNativeCalls) return false;
   try {
     const RNCallKeep = require("react-native-callkeep").default;
     const accepted = await RNCallKeep.setup({
@@ -52,7 +53,7 @@ export async function setupCallKeep() {
 // ─── Show incoming call via ConnectionService (works even when app is killed) ─
 
 export async function displayIncomingCall(callId: string, callerDisplayName: string) {
-  if (Platform.OS === "web") return false;
+  if (!supportsNativeCalls) return false;
   try {
     const RNCallKeep = require("react-native-callkeep").default;
     await RNCallKeep.displayIncomingCall(callId, callerDisplayName, callerDisplayName, "generic", false);
@@ -64,7 +65,7 @@ export async function displayIncomingCall(callId: string, callerDisplayName: str
 }
 
 export function endCallKeepCall(callId: string) {
-  if (Platform.OS !== "android") return;
+  if (!supportsNativeCalls || Platform.OS !== "android") return;
   try {
     const RNCallKeep = require("react-native-callkeep").default;
     RNCallKeep.endCall(callId);
@@ -72,7 +73,7 @@ export function endCallKeepCall(callId: string) {
 }
 
 export function setCallKeepCallActive(callId: string) {
-  if (Platform.OS !== "android") return;
+  if (!supportsNativeCalls || Platform.OS !== "android") return;
   try {
     const RNCallKeep = require("react-native-callkeep").default;
     RNCallKeep.setCurrentCallActive(callId);
@@ -146,7 +147,7 @@ async function ensureActiveChannel(notifee: any) {
 }
 
 export async function startCallForegroundService(callId: string, displayName: string) {
-  if (Platform.OS !== "android") return;
+  if (!supportsNativeCalls || Platform.OS !== "android") return;
   try {
     const notifee = require("@notifee/react-native").default;
     const { AndroidImportance } = require("@notifee/react-native");
@@ -167,7 +168,7 @@ export async function startCallForegroundService(callId: string, displayName: st
 }
 
 export async function stopCallForegroundService(callId: string) {
-  if (Platform.OS !== "android") return;
+  if (!supportsNativeCalls || Platform.OS !== "android") return;
   try {
     const notifee = require("@notifee/react-native").default;
     await notifee.stopForegroundService();
@@ -180,7 +181,7 @@ export async function cancelIncomingCallNotification(callId: string) {
   try {
     NativeModules.IncomingCallStore?.cancelIncomingCall?.(callId);
   } catch {}
-  if (Platform.OS !== "android") return;
+  if (!supportsNativeCalls || Platform.OS !== "android") return;
   try {
     const notifee = require("@notifee/react-native").default;
     await notifee.cancelNotification(`incoming_${callId}`);
@@ -190,7 +191,7 @@ export async function cancelIncomingCallNotification(callId: string) {
 // ─── Background handlers (must run in index.js before React mounts) ──────────
 
 export function registerBackgroundHandlers() {
-  if (Platform.OS === "web") return;
+  if (!supportsNativeCalls) return;
 
   try {
     const notifee = require("@notifee/react-native").default;
@@ -202,6 +203,7 @@ export function registerBackgroundHandlers() {
     });
   } catch {}
 
+  if (Platform.OS !== "android") return;
   try {
     const messaging = require("@react-native-firebase/messaging").default;
     messaging().setBackgroundMessageHandler(async (message: any) => {

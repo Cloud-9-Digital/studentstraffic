@@ -97,7 +97,7 @@ export default async function JoinPage() {
             <div className="space-y-3">
               {[
                 { icon: GraduationCap, text: "Get your profile listed on our platform for free" },
-                { icon: MessageCircle, text: "Students can message you directly on WhatsApp" },
+                { icon: MessageCircle, text: "Connect with students through in-app chat and calls" },
                 { icon: Star,          text: "Build your reputation as a trusted guide" },
               ].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">

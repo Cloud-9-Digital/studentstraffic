@@ -1,0 +1,31 @@
+import { PageHeader } from "../../src/components/PageHeader";
+import { useEffect, useState } from "react";
+import { ActivityIndicator, FlatList, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useLocalSearchParams, useRouter } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { useQuery } from "@tanstack/react-query";
+import { mobileClient } from "../../src/api/mobileClient";
+import { colors } from "../../src/theme/tokens";
+import { CountryFlag } from "../../src/components/CountryFlag";
+
+type Mode = "programs" | "countries" | "universities";
+const MODES: Mode[] = ["programs", "countries", "universities"];
+export default function ExploreScreen() {
+  const router = useRouter();
+  const params = useLocalSearchParams<{ mode?: string }>();
+  const [mode, setMode] = useState<Mode>("programs");
+  const [query, setQuery] = useState("");
+  useEffect(() => { if (MODES.includes(params.mode as Mode)) { setMode(params.mode as Mode); setQuery(""); } }, [params.mode]);
+  const options = useQuery({ queryKey: ["homeCatalogue"], queryFn: () => mobileClient.getUniversities({}, 1, 4), staleTime: 120_000 });
+  const rows = (mode === "countries" ? options.data?.options.countries : options.data?.options.courses?.map(c => ({ slug: c.slug, name: c.shortName }))) ?? [];
+  const filtered = rows.filter(r => `${r.name} ${r.slug.replaceAll("-", " ")}`.toLowerCase().includes(query.trim().toLowerCase()));
+  function openSearch() { router.push({ pathname: "/(tabs)/search", params: { q: query.trim(), country: "", course: "", sort: "" } }); }
+  return <SafeAreaView style={s.root} edges={["top"]}>
+    <PageHeader title="Explore" subtitle="Find your program, university or next destination." />
+    <View style={s.tabs}>{MODES.map(value => <Pressable accessibilityRole="tab" accessibilityState={{ selected: mode === value }} key={value} onPress={() => { setMode(value); setQuery(""); }} style={[s.tab, mode === value && s.active]}><Text style={[s.tabLabel, mode === value && s.activeLabel]}>{value[0].toUpperCase() + value.slice(1)}</Text></Pressable>)}</View>
+    <View style={s.search}><Ionicons name="search-outline" size={20} color={colors.muted} /><TextInput accessibilityLabel={`Search ${mode}`} placeholder={`Search ${mode}`} placeholderTextColor={colors.muted} value={query} onChangeText={setQuery} onSubmitEditing={mode === "universities" ? openSearch : undefined} returnKeyType="search" style={s.input} clearButtonMode="while-editing" autoCorrect={false} /></View>
+    {mode === "universities" ? <View style={s.universities}><View style={s.symbol}><Ionicons name="business-outline" size={36} color={colors.primary} /></View><Text style={s.heading}>Find your university</Text><Text style={s.subtitle}>Explore the full directory. Narrow your choices by country, program and university type.</Text><Pressable accessibilityRole="button" onPress={openSearch} style={s.cta}><Text style={s.ctaText}>{query.trim() ? "Search universities" : "Browse all universities"}</Text><Ionicons name="arrow-forward" size={18} color="#fff" /></Pressable></View> : options.isLoading ? <ActivityIndicator style={s.loading} color={colors.primary} /> : options.isError ? <Pressable style={s.loading} onPress={() => options.refetch()}><Text style={s.subtitle}>Couldn’t load study options. Tap to retry.</Text></Pressable> : <FlatList key={mode} data={filtered} keyExtractor={r => r.slug} keyboardShouldPersistTaps="handled" contentContainerStyle={s.list} renderItem={({ item }) => <Pressable accessibilityRole="button" onPress={() => mode === "countries" ? router.push({ pathname: "/country/[slug]", params: { slug: item.slug, name: item.name } }) : router.push({ pathname: "/(tabs)/search", params: { course: item.slug, country: "", q: "", sort: "" } })} style={s.row}>{mode === "countries" ? <CountryFlag country={item.name} countrySlug={item.slug} width={28} height={20} /> : <View style={s.rowIcon}><Ionicons name="school-outline" size={19} color={colors.primary} /></View>}<Text style={s.rowLabel}>{item.name}</Text><Ionicons name="chevron-forward" size={17} color={colors.muted} /></Pressable>} ListEmptyComponent={<Text style={s.subtitle}>No matches. Try another search.</Text>} />}
+  </SafeAreaView>;
+}
+const s = StyleSheet.create({ root: { flex: 1, backgroundColor: "#fff" }, header: { padding: 22, paddingBottom: 18 }, title: { fontFamily: "Fraunces-SemiBold", fontSize: 30, color: colors.ink }, subtitle: { fontFamily: "PlusJakartaSans-Regular", fontSize: 13, lineHeight: 21, color: colors.muted, marginTop: 7 }, tabs: { flexDirection: "row", marginHorizontal: 20, padding: 4, borderRadius: 13, backgroundColor: "#f1f4f2", marginBottom: 18 }, tab: { flex: 1, minHeight: 44, alignItems: "center", justifyContent: "center", borderRadius: 10 }, active: { backgroundColor: colors.primary }, tabLabel: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 11, color: colors.muted }, activeLabel: { color: "#fff" }, search: { marginHorizontal: 20, paddingHorizontal: 13, flexDirection: "row", alignItems: "center", gap: 9, minHeight: 50, backgroundColor: "#f5f6f5", borderRadius: 12, marginBottom: 8 }, input: { flex: 1, fontFamily: "PlusJakartaSans-Regular", fontSize: 13, color: colors.ink, paddingVertical: 14 }, list: { paddingHorizontal: 20, paddingBottom: 24 }, row: { minHeight: 64, paddingVertical: 13, flexDirection: "row", alignItems: "center", gap: 13, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.line }, rowIcon: { width: 32, height: 32, borderRadius: 10, backgroundColor: colors.primarySoft, alignItems: "center", justifyContent: "center" }, rowLabel: { flex: 1, fontFamily: "PlusJakartaSans-Medium", fontSize: 13, color: colors.ink }, loading: { padding: 30 }, universities: { padding: 24, paddingTop: 32 }, symbol: { width: 68, height: 68, borderRadius: 20, alignItems: "center", justifyContent: "center", backgroundColor: colors.primarySoft, marginBottom: 20 }, heading: { fontFamily: "Fraunces-SemiBold", fontSize: 24, color: colors.ink }, cta: { flexDirection: "row", gap: 12, justifyContent: "center", alignItems: "center", marginTop: 24, padding: 16, borderRadius: 13, backgroundColor: colors.primary }, ctaText: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, color: "#fff" } });

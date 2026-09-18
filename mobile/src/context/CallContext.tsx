@@ -1,3 +1,4 @@
+import { supportsNativeCalls, NATIVE_BUILD_REQUIRED } from "../services/nativeRuntime";
 import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { AppState } from "react-native";
 
@@ -147,6 +148,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => () => stopRecoverySync(), [stopRecoverySync]);
 
   const startCall = useCallback(async (bookingId: number, peerName: string, universityName: string) => {
+    if (!supportsNativeCalls) { setCallError(NATIVE_BUILD_REQUIRED); return; }
     setIsStarting(true);
     setCallError(null);
     outgoingCancelledRef.current = false;

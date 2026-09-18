@@ -213,7 +213,7 @@ export function SearchPalettePanel({
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search Indian colleges, universities, countries, courses..."
+              placeholder="Search colleges, universities, countries, courses..."
               className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
             />
             <div className="flex items-center gap-2">

@@ -1,4 +1,5 @@
 export type University = {
+  programCount?: number;
   slug: string;
   name: string;
   countrySlug?: string;
@@ -10,7 +11,7 @@ export type University = {
   course?: string;
   courseSlug?: string;
   offeringSlug?: string;
-  tuitionUsd: number;
+  tuitionUsd: number | null;
   duration?: string;
   medium?: string | null;
   summary?: string;
@@ -108,6 +109,8 @@ export type StudentProfile = {
 };
 
 export type CallBooking = {
+  requestMessage?: string | null;
+  canRespond?: boolean;
   bookingId: number;
   peerId: number;
   fullName: string;
@@ -121,6 +124,10 @@ export type CallBooking = {
 };
 
 export type GuideConversation = {
+  canMessage: boolean;
+  canCall: boolean;
+  blockedByMe: boolean;
+  connectionStatus: string;
   id: number;
   peerId: number;
   bookingId: number | null;
@@ -188,3 +195,21 @@ export type IncomingCall = {
   createdAt: string | null;
   status: string;
 };
+
+export type StudentGuide = {
+  id: number;
+  fullName: string;
+  photoUrl: string | null;
+  courseName: string | null;
+  currentYearOrBatch: string | null;
+  languages: string[];
+  universityName: string;
+  universitySlug: string;
+  countryName: string | null;
+  requestState: "available" | "pending" | "accepted" | "paused" | "cooldown";
+  retryAt: string | null;
+};
+
+export type GuideFilterKey = "country" | "university" | "course" | "year" | "state" | "language";
+export type GuideFilters = Record<GuideFilterKey, string>;
+export type GuideFilterOptions = Record<GuideFilterKey, { value: string; label: string }[]>;

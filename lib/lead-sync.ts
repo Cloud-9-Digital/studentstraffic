@@ -10,6 +10,7 @@ import {
   appendWebsiteLeadToGoogleSheets,
 } from "@/lib/google-sheets";
 import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
+import { sendMetaLeadEvent } from "@/lib/meta-capi";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
 type LeadSyncUpdate = {
@@ -375,6 +376,20 @@ async function syncLeadToGoogleSheets(payload: LeadSyncPayload) {
   }
 }
 
+/**
+ * Ad-platform measurement, not lead delivery. A failure here must never fail the
+ * job and retry it: the CRM write would then run twice, and Meta would receive a
+ * second `Lead` beyond the pixel/server pair it already deduplicates. So this
+ * settles on its own and only logs.
+ */
+async function reportLeadToMeta(payload: LeadSyncPayload) {
+  const result = await sendMetaLeadEvent(payload);
+
+  if (result.status === "failed") {
+    console.error("Meta Conversions API delivery failed:", result.error);
+  }
+}
+
 export async function syncLeadDestinations(
   leadId: number | undefined,
   payload: LeadSyncPayload,
@@ -384,5 +399,6 @@ export async function syncLeadDestinations(
     syncLeadToCrm(leadId, payload, options),
     syncLeadToPabbly(leadId, payload, options),
     syncLeadToGoogleSheets(payload),
+    reportLeadToMeta(payload),
   ]);
 }

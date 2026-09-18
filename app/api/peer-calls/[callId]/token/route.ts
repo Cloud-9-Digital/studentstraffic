@@ -1,12 +1,9 @@
-import { and, eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 import { auth } from "@/lib/auth";
 import { buildAgoraRtcToken } from "@/lib/agora";
-import { getDb } from "@/lib/db/server";
-import { peerCallSessions } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-import { getAuthorizedPeerCallSession, notifyPeerCallParticipants } from "@/lib/peer-calls";
+import { preparePeerCallToken } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
 
 export async function POST(
@@ -28,7 +25,7 @@ export async function POST(
   }
 
   const { callId } = await context.params;
-  const call = await getAuthorizedPeerCallSession(callId, userId);
+  const call = await preparePeerCallToken(callId, userId);
 
   if (!call) {
     return NextResponse.json({ error: "Call session not found." }, { status: 404 });
@@ -42,34 +39,6 @@ export async function POST(
     return NextResponse.json({ error: "This call has expired." }, { status: 410 });
   }
 
-  if (call.isPeerParticipant && call.status === "ringing") {
-    const db = getDb();
-    if (db) {
-      const answeredAt = new Date();
-      await db
-        .update(peerCallSessions)
-        .set({
-          status: "active",
-          answeredAt,
-          // A short expiry is only for unanswered ringing calls. Once the
-          // guide accepts, allow a normal long conversation.
-          expiresAt: new Date(answeredAt.getTime() + 60 * 60 * 1000),
-          updatedAt: answeredAt,
-        })
-        .where(
-          and(
-            eq(peerCallSessions.id, call.id),
-            eq(peerCallSessions.status, "ringing")
-          )
-        );
-      notifyPeerCallParticipants([call.peerUserId, call.callerUserId], "active");
-    }
-  }
-
-  const responseStatus = call.isPeerParticipant && call.status === "ringing" ? "active" : call.status;
-
-  // Use fixed numeric UIDs per role — safe because every call has a unique channelName.
-  // String user accounts require registerLocalUserAccount() first, which can cause silent hangs.
   const uid = call.isPeerParticipant ? 2 : 1;
   const token = buildAgoraRtcToken({
     channelName: call.channelName,
@@ -83,7 +52,7 @@ export async function POST(
     uid,
     call: {
       id: call.id,
-      status: responseStatus,
+      status: call.status,
       peerName: call.peerName,
       callerName: call.callerName,
       universityName: call.universityName,

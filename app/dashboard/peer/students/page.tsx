@@ -68,7 +68,6 @@ export default async function PeerStudentsPage({
       .select({
         id: peerRequests.id,
         fullName: peerRequests.fullName,
-        email: peerRequests.email,
         userState: peerRequests.userState,
         userCity: peerRequests.userCity,
         courseInterest: peerRequests.courseInterest,
@@ -150,11 +149,6 @@ export default async function PeerStudentsPage({
                   {s.courseInterest && (
                     <p className="mt-0.5 text-xs text-[#6b7280]">{s.courseInterest}</p>
                   )}
-                  {s.email && (
-                    <a href={`mailto:${s.email}`} className="mt-1 block text-xs font-medium text-[#0f3d37] hover:underline">
-                      {s.email}
-                    </a>
-                  )}
                 </div>
               ))}
             </div>
@@ -167,7 +161,6 @@ export default async function PeerStudentsPage({
                     <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Name</th>
                     <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Location</th>
                     <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Course interest</th>
-                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Email</th>
                     <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
                   </tr>
                 </thead>
@@ -179,11 +172,6 @@ export default async function PeerStudentsPage({
                         {s.userCity ? `${s.userCity}, ${s.userState}` : (s.userState ?? "—")}
                       </td>
                       <td className="py-4 pr-6 text-[#6b7280]">{s.courseInterest ?? "—"}</td>
-                      <td className="py-4 pr-6 text-[#6b7280]">
-                        {s.email
-                          ? <a href={`mailto:${s.email}`} className="hover:text-[#0f3d37] hover:underline">{s.email}</a>
-                          : "—"}
-                      </td>
                       <td className="py-4 text-[#9ca3af] whitespace-nowrap text-xs">
                         {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                       </td>

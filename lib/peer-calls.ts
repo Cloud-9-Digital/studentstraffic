@@ -1,12 +1,16 @@
 import "server-only";
 
-import { and, desc, eq, gt, inArray, lt, or } from "drizzle-orm";
+import { sql, and, desc, eq, gt, inArray, lt, or } from "drizzle-orm";
+
+import { createPeerCallQuery, peerLockQuery, preparePeerCallQuery } from "@/lib/peer-queries";
+import { schedulePeerNotification } from "@/lib/peer-notifications";
+import { consumePublicFormRateLimits } from "@/lib/security/public-form-guard";
 
 import { getDb } from "@/lib/db/server";
 import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import type { PeerCallStatus } from "@/lib/data/types";
 import { publishGuideChatUserEvent, publishPeerCallsUserEvent } from "@/lib/realtime/ably";
-import { sendCallEndedPushNotification, sendCallPushNotification } from "@/lib/push-notifications";
+import { sendCallEndedPushNotification } from "@/lib/push-notifications";
 
 const OPEN_CALL_STATUSES: PeerCallStatus[] = ["ringing", "active"];
 export const RINGING_CALL_TTL_MS = 60 * 1000;
@@ -28,45 +32,24 @@ export async function createOrReusePeerCallSession(input: CreatePeerCallInput) {
   const db = getDb();
   if (!db) throw new Error("Call service is unavailable.");
 
-  const now = new Date();
-  const [existing] = await db
-    .select({ id: peerCallSessions.id })
-    .from(peerCallSessions)
-    .where(
-      and(
-        eq(peerCallSessions.peerId, input.peerId),
-        eq(peerCallSessions.callerUserId, input.callerUserId),
-        inArray(peerCallSessions.status, OPEN_CALL_STATUSES),
-        gt(peerCallSessions.expiresAt, now)
-      )
-    )
-    .limit(1);
-
-  if (existing) return { callId: existing.id, reused: true };
-
-  const callId = crypto.randomUUID();
-  await db.insert(peerCallSessions).values({
-    id: callId,
-    channelName: `peer-call-${callId}`,
-    universityId: input.universityId,
-    peerId: input.peerId,
-    peerUserId: input.recipientUserId,
-    callerUserId: input.callerUserId,
-    status: "ringing",
-    startedAt: now,
-    expiresAt: new Date(now.getTime() + RINGING_CALL_TTL_MS),
-    createdAt: now,
-    updatedAt: now,
-  });
-
+  const rateError = await consumePublicFormRateLimits([{ scope: "peer:calls", identifier: input.callerUserId, limit: 6, windowMs: 60_000 }], "call attempts");
+  if (rateError) return { error: rateError };
+  const participants = [input.callerUserId, input.recipientUserId].sort();
+  const [, , , result] = await db.batch([
+    db.execute(peerLockQuery(input.peerId)),
+    db.execute(sql`select pg_advisory_xact_lock(hashtext(${'peer-user:' + participants[0]}))`),
+    db.execute(sql`select pg_advisory_xact_lock(hashtext(${'peer-user:' + participants[1]}))`),
+    db.execute<{ callId: string | null; reused: boolean; jobId: number | null; error: string | null }>(createPeerCallQuery({
+      id: crypto.randomUUID(), peerId: input.peerId,
+      callerUserId: input.callerUserId, recipientUserId: input.recipientUserId,
+    })),
+  ]);
+  const row = result.rows[0];
+  if (!row?.callId) return { error: row?.error || "Unable to start this call." };
+  if (row.jobId) schedulePeerNotification(row.jobId);
   notifyPeerCallParticipants([input.callerUserId, input.recipientUserId], "ringing");
-  await sendCallPushNotification(input.recipientUserId, {
-    callId,
-    callerDisplayName: input.callerDisplayName,
-    universityName: input.universityName,
-  });
+  return { callId: row.callId, reused: row.reused };
 
-  return { callId, reused: false };
 }
 
 // Tells a participant's dashboard/mobile client to refetch its incoming-calls
@@ -98,7 +81,8 @@ export type PeerCallTimelineEvent = {
 /** Returns call records for one participant in one guide relationship. */
 export async function listPeerCallTimelineEvents(
   peerId: number,
-  userId: string
+  userId: string,
+  studentUserId: string
 ): Promise<PeerCallTimelineEvent[]> {
   const db = getDb();
   if (!db) return [];
@@ -116,6 +100,7 @@ export async function listPeerCallTimelineEvents(
     .where(
       and(
         eq(peerCallSessions.peerId, peerId),
+        or(eq(peerCallSessions.callerUserId, studentUserId), eq(peerCallSessions.peerUserId, studentUserId)),
         or(eq(peerCallSessions.callerUserId, userId), eq(peerCallSessions.peerUserId, userId))
       )
     )
@@ -430,4 +415,18 @@ export async function getActivePeerCallForUser(userId: string): Promise<ActiveCa
     : row.peerName;
 
   return { id: row.id, displayName, universityName: row.universityName };
+}
+
+/** Token authorization is rechecked under the same lock used by block/call mutations. */
+export async function preparePeerCallToken(callId: string, userId: string) {
+  const call = await getAuthorizedPeerCallSession(callId, userId);
+  const db = getDb();
+  if (!call || !db) return null;
+  const [, result] = await db.batch([
+    db.execute(peerLockQuery(call.peerId)),
+    db.execute<{ status: PeerCallStatus }>(preparePeerCallQuery(callId, userId)),
+  ]);
+  if (!result.rows[0]) return null;
+  notifyPeerCallParticipants([call.callerUserId, call.peerUserId], result.rows[0].status);
+  return { ...call, status: result.rows[0].status };
 }

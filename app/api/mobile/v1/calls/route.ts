@@ -1,4 +1,5 @@
-import { and, eq } from "drizzle-orm";
+import { peerSafeText } from "@/lib/peer-contact-policy";
+import { and, eq, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
@@ -28,6 +29,8 @@ export async function GET(request: Request) {
       universityName: universities.name,
       universitySlug: universities.slug,
       bookingStatus: peerCallBookings.status,
+      requestMessage: peerCallBookings.message,
+      canRespond: sql<boolean>`${peerCallBookings.status} = 'pending' and ${studentPeers.status} = 'active' and ${peerCallBookings.studentBlockedAt} is null and ${peerCallBookings.peerBlockedAt} is null`.mapWith(Boolean),
       createdAt: peerCallBookings.createdAt,
     })
     .from(peerCallBookings)
@@ -37,7 +40,7 @@ export async function GET(request: Request) {
     .where(guideMode ? eq(studentPeers.peerUserId, session.user.id) : eq(peerCallBookings.studentUserId, session.user.id))
     .orderBy(peerCallBookings.createdAt);
 
-  return mobileJson({ bookings: bookings.map((booking) => ({ ...booking, fullName: guideMode ? booking.studentName?.trim() || "Student" : booking.guideName })) });
+  return mobileJson({ bookings: bookings.map((booking) => ({ ...booking, requestMessage: booking.requestMessage ? peerSafeText(booking.requestMessage) : null, fullName: guideMode ? booking.studentName?.trim() || "Student" : booking.guideName })) });
 }
 
 // POST — start a call by bookingId
@@ -96,5 +99,6 @@ export async function POST(request: Request) {
     universityName: booking.universityName,
   });
 
+  if (call.error) return mobileError("unavailable", call.error, 409);
   return mobileJson({ callId: call.callId });
 }

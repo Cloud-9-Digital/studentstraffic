@@ -1,3 +1,4 @@
+import { FormInput } from "../../src/components/FormInput";
 import { useRef, useState } from "react";
 import {
   ActivityIndicator,
@@ -187,6 +188,7 @@ export default function LoginScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
 
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPwd, setShowPwd] = useState(false);
@@ -195,6 +197,12 @@ export default function LoginScreen() {
 
   async function handleSignIn() {
     if (loading) return;
+    const next: Record<string, string> = {};
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) next.email = "Enter a valid email address.";
+    if (!password) next.password = "Enter your password.";
+    setFieldErrors(next);
+    if (Object.keys(next).length) return;
+
     setError(null);
     setLoading(true);
     try {
@@ -235,10 +243,7 @@ export default function LoginScreen() {
           </View>
 
           {/* ── Inputs ── */}
-          {Platform.OS === "ios"
-            ? <IOSInputGroup {...inputProps} />
-            : <AndroidInputGroup {...inputProps} />
-          }
+          <View><FormInput label="Email address" value={email} onChangeText={v => { setEmail(v); setFieldErrors(e => ({ ...e, email: "" })); }} error={fieldErrors.email} focusError={["email", "password"].find(k => fieldErrors[k]) === "email"} keyboardType="email-address" autoCapitalize="none" /><FormInput label="Password" value={password} onChangeText={v => { setPassword(v); setFieldErrors(e => ({ ...e, password: "" })); }} error={fieldErrors.password} focusError={["email", "password"].find(k => fieldErrors[k]) === "password"} secureTextEntry={!showPwd} autoCapitalize="none" /><Pressable accessibilityRole="button" onPress={() => setShowPwd(v => !v)} style={{ paddingVertical: 8 }}><Text style={{ color: colors.primary, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12 }}>{showPwd ? "Hide password" : "Show password"}</Text></Pressable></View>
 
           {/* ── Forgot password ── */}
           <Pressable

@@ -1,9 +1,12 @@
 "use server";
 
+import { revalidateTag } from "next/cache";
+import { allPeersTag, getUniversityPeersTag } from "@/lib/university-community";
 import { eq } from "drizzle-orm";
+import { containsPeerContactDetails, PEER_CONTACT_POLICY_ERROR } from "@/lib/peer-contact-policy";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
-import { studentPeers } from "@/lib/db/schema";
+import { studentPeers, universities } from "@/lib/db/schema";
 import { isAllowedPhotoType, uploadFileToCloudinary } from "@/lib/cloudinary-upload";
 import { resolveDbUserId } from "@/lib/server-session";
 
@@ -23,7 +26,7 @@ export async function updatePeerProfileAction(
   if (!userId) return { status: "error", message: "Account not found. Please sign in again." };
 
   const [peer] = await db
-    .select({ id: studentPeers.id, photoUrl: studentPeers.photoUrl })
+    .select({ id: studentPeers.id, photoUrl: studentPeers.photoUrl, universityId: studentPeers.universityId })
     .from(studentPeers)
     .where(eq(studentPeers.peerUserId, userId))
     .limit(1);
@@ -38,6 +41,11 @@ export async function updatePeerProfileAction(
   const languages = languagesRaw
     ? languagesRaw.split(",").map((l) => l.trim()).filter(Boolean)
     : [];
+
+  if ([courseName, currentYearOrBatch, homeState, homeCity, ...languages]
+    .some((value) => value && containsPeerContactDetails(value))) {
+    return { status: "error", message: PEER_CONTACT_POLICY_ERROR };
+  }
 
   let photoUrl = peer.photoUrl;
   const photoFile = formData.get("photo");
@@ -62,6 +70,7 @@ export async function updatePeerProfileAction(
   await db
     .update(studentPeers)
     .set({
+      acceptingRequests: formData.get("acceptingRequests") === "on",
       courseName,
       currentYearOrBatch,
       homeState,
@@ -71,6 +80,10 @@ export async function updatePeerProfileAction(
       updatedAt: new Date(),
     })
     .where(eq(studentPeers.id, peer.id));
+
+  revalidateTag(allPeersTag, "max");
+  const [university] = await db.select({ slug: universities.slug }).from(universities).where(eq(universities.id, peer.universityId)).limit(1);
+  if (university) revalidateTag(getUniversityPeersTag(university.slug), "max");
 
   return { status: "success", message: "Profile updated." };
 }

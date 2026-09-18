@@ -1,5 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+import { cancelBookingAction } from "@/app/_actions/respond-to-peer-booking";
 import { useState } from "react";
 import { Loader2, MessageCircle, PhoneCall } from "lucide-react";
 
@@ -48,6 +50,7 @@ function PeerRow({
   voiceEnabled: boolean;
   onCallStart: (callId: string, peer: BookedPeer) => void;
 }) {
+  const router = useRouter();
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -68,6 +71,13 @@ function PeerRow({
       setError(result.error ?? "Unable to start the call right now.");
     }
     setIsPending(false);
+  }
+
+  async function cancel() {
+    setIsPending(true);
+    try { const result = await cancelBookingAction(peer.bookingId); if (result.error) setError(result.error); else router.refresh(); }
+    catch { setError("Unable to cancel. Please try again."); }
+    finally { setIsPending(false); }
   }
 
   const actions = canCall ? (
@@ -96,6 +106,7 @@ function PeerRow({
   ) : isPendingStatus ? (
     <div className="flex flex-wrap items-center gap-2">
       <span className="text-xs font-medium text-amber-600">Awaiting approval</span>
+      <button type="button" onClick={() => void cancel()} disabled={isPending} className="rounded-lg border px-3 py-2 text-xs">Cancel request</button>
       <form action={openStudentGuideConversationAction}>
         <input type="hidden" name="peerId" value={peer.peerId} />
         <input type="hidden" name="redirectPath" value="/dashboard/messages" />
@@ -125,7 +136,7 @@ function PeerRow({
       </form>
     </div>
   ) : (
-    <span className="text-xs text-[#9ca3af]">Offline</span>
+    <span className="text-xs text-[#9ca3af]">{peer.bookingStatus === "cancelled" ? "Request cancelled" : "Unavailable"}</span>
   );
 
   return (

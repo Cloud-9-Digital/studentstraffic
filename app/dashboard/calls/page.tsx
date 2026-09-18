@@ -1,4 +1,4 @@
-import { eq, desc, count } from "drizzle-orm";
+import { or, eq, desc, count } from "drizzle-orm";
 import { Phone, PhoneCall, PhoneOff, PhoneMissed, Clock } from "lucide-react";
 
 import { auth } from "@/lib/auth";
@@ -90,7 +90,7 @@ export default async function MyCallsPage({
           })
           .from(peerCallSessions)
           .leftJoin(studentPeers, eq(peerCallSessions.peerId, studentPeers.id))
-          .where(eq(peerCallSessions.callerUserId, userId))
+          .where(or(eq(peerCallSessions.callerUserId, userId), eq(peerCallSessions.peerUserId, userId)))
           .orderBy(desc(peerCallSessions.createdAt))
           .limit(HISTORY_PER_PAGE)
           .offset(historyOffset)
@@ -100,7 +100,7 @@ export default async function MyCallsPage({
       ? db
           .select({ total: count() })
           .from(peerCallSessions)
-          .where(eq(peerCallSessions.callerUserId, userId))
+          .where(or(eq(peerCallSessions.callerUserId, userId), eq(peerCallSessions.peerUserId, userId)))
       : Promise.resolve([{ total: 0 }]),
   ]);
 

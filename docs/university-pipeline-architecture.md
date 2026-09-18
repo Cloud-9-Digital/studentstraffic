@@ -523,3 +523,9 @@ only. The validated catalogue publisher rejects non-Cloudinary public media. Ori
 rights information belong in `universities.media_attribution`; they must not be used as public image
 delivery URLs. Upload media before publication and verify the Cloudinary response. Never use an
 external hotlink or substitute a pixelated favicon for a proper university logo.
+
+## Medium normalization (2026-09-09)
+
+`instruction_languages` remains the controlled teaching-language facet. `medium` is its short display label (e.g. `English` or `English / French`), or `Not confirmed` when delivery cannot be established. `medium_details` preserves the original evidence and caveats; it is not a stats-card value. Admission-test requirements, translated application instructions and foreign-language electives do not establish teaching language. Never default missing medium to English.
+
+Both publishers use `lib/program-medium.ts`. Migration `0073_normalize_program_medium` adds the notes column and a write trigger enforcing canonical labels from language codes. Run `npx tsx scripts/normalize-program-medium.ts` to preview legacy changes and add `--apply` to back up and normalize the configured database, including search-document labels. Verify the printed database target before applying. No course, fee, admission, or publication fields are changed.

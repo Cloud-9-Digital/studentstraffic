@@ -1,3 +1,4 @@
+import { FormInput } from "../../src/components/FormInput";
 import { useState } from "react";
 import { ActivityIndicator, StyleSheet, Text, TextInput, View } from "react-native";
 
@@ -9,10 +10,16 @@ import { colors } from "../../src/theme/tokens";
 export default function ForgotPasswordScreen() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState<string | null>(null);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
   async function submit() {
+    const next: Record<string, string> = {};
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) next.email = "Enter a valid email address.";
+    setFieldErrors(next);
+    if (Object.keys(next).length) return;
+
     setLoading(true);
     setError(null);
     setMessage(null);
@@ -33,7 +40,7 @@ export default function ForgotPasswordScreen() {
         <Text style={styles.copy}>Enter your email and we will send reset instructions if an account exists.</Text>
       </View>
       <View style={styles.form}>
-        <TextInput value={email} onChangeText={setEmail} placeholder="Email address" autoCapitalize="none" keyboardType="email-address" style={styles.input} />
+        <FormInput label="Email" value={email} onChangeText={v => { setEmail(v); setFieldErrors(e => ({ ...e, email: "" })); }} error={fieldErrors.email} focusError={Object.keys(fieldErrors)[0] === "email"} keyboardType="email-address" autoCapitalize="none" />
         {message ? <Text style={styles.success}>{message}</Text> : null}
         {error ? <Text style={styles.error}>{error}</Text> : null}
         {loading ? <ActivityIndicator color={colors.primary} /> : <Button label="Send reset link" icon="mail" onPress={submit} />}

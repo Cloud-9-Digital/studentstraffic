@@ -55,8 +55,8 @@ export default async function PeerMessagesPage({
 
   const starters: ChatStarterItem[] = starterOptions.map((option) => ({
     kind: "guide",
-    label: option.studentName?.trim() || option.studentEmail,
-    sublabel: option.studentEmail,
+    label: option.studentName?.trim() || "Student",
+    sublabel: option.universityName,
     badge:
       option.bookingStatus === "pending"
         ? "Pending"

@@ -1,4 +1,4 @@
-import { and, eq, inArray } from "drizzle-orm";
+import { sql, and, eq, inArray } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { peerCallSessions } from "@/lib/db/schema";
@@ -32,7 +32,7 @@ export async function POST(
   const endedAt = new Date();
   await db
     .update(peerCallSessions)
-    .set({ status: "ended", endedAt, updatedAt: endedAt })
+    .set({ status: sql`case when ${peerCallSessions.answeredAt} is not null then 'ended' when ${peerCallSessions.peerUserId} = ${nativeDeclineAuthorized ? call.peerUserId : session!.user.id} then 'declined' else 'missed' end`, endedAt, updatedAt: endedAt })
     .where(
       and(
         eq(peerCallSessions.id, call.id),

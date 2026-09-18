@@ -97,5 +97,5 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     universityName: peer.universityName,
   });
 
-  return { callId: call.callId };
+  return call.error ? { error: call.error } : { callId: call.callId };
 }

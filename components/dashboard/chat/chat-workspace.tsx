@@ -1,6 +1,8 @@
 "use client";
 
+import { containsPeerContactDetails, PEER_CONTACT_POLICY_ERROR } from "@/lib/peer-contact-policy";
 import {
+  useCallback,
   useEffect,
   useEffectEvent,
   useRef,
@@ -24,6 +26,7 @@ import { getGuideChatRealtimeClient } from "@/lib/realtime/ably-browser";
 import { cn } from "@/lib/utils";
 import { startPeerCallAction } from "@/app/_actions/start-peer-call";
 import { startCallAsPeerAction } from "@/app/_actions/start-call-as-peer";
+import { ConversationSafety } from "./conversation-safety";
 import { CallOverlay } from "@/components/site/call-overlay";
 
 type ViewerRole = "student" | "guide";
@@ -219,6 +222,7 @@ export function ChatWorkspace({
   const [messages, setMessages] = useState<LiveMessage[]>(initialMessages);
   const [calls, setCalls] = useState<GuideCallTimelineEvent[]>(initialCalls);
   const [draft, setDraft] = useState("");
+  const [sendError, setSendError] = useState<string | null>(null);
   const [loadingConversation, setLoadingConversation] = useState(false);
   const [sending, setSending] = useState(false);
   const [isSidebarVisible, setIsSidebarVisible] = useState(!initialSelectedConversationId);
@@ -254,16 +258,16 @@ export function ChatWorkspace({
     };
   }, [selectedConversation, isSidebarVisible]);
 
-  const replaceUrl = useEffectEvent((conversationId: number | null) => {
+  const replaceUrl = useCallback((conversationId: number | null) => {
     startTransition(() => {
       router.replace(
         conversationId ? `${basePath}?conversation=${conversationId}` : basePath,
         { scroll: false }
       );
     });
-  });
+  }, [router, basePath]);
 
-  const markAsRead = useEffectEvent(async (conversationId: number) => {
+  const markAsRead = useCallback(async (conversationId: number) => {
     if (lastMarkedConversationIdRef.current === conversationId) return;
     const response = await fetch(
       `/api/dashboard/chat/conversations/${conversationId}/read`,
@@ -275,9 +279,9 @@ export function ChatWorkspace({
     if (data.conversation) {
       setConversations((current) => upsertConversation(current, data.conversation!));
     }
-  });
+  }, []);
 
-  const loadConversation = useEffectEvent(
+  const loadConversation = useCallback(
     async (conversationId: number, options?: { syncUrl?: boolean; openThread?: boolean }) => {
       setLoadingConversation(true);
       try {
@@ -300,7 +304,7 @@ export function ChatWorkspace({
       } finally {
         setLoadingConversation(false);
       }
-    }
+    }, [replaceUrl, markAsRead]
   );
 
   const refreshSidebar = useEffectEvent(async () => {
@@ -320,7 +324,7 @@ export function ChatWorkspace({
         setStarters((current) =>
           current.map((starter) => {
             const starterMatchesConversation =
-              (starter.peerId && starter.peerId === payload.conversation?.peerId) ||
+              (role === "student" && starter.peerId && starter.peerId === payload.conversation?.peerId) ||
               (starter.studentUserId &&
                 starter.studentUserId === payload.conversation?.studentUserId);
             if (!starterMatchesConversation && starter.conversationId !== payload.conversationId) {
@@ -430,7 +434,7 @@ export function ChatWorkspace({
       window.removeEventListener("online", syncFromServer);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [loadConversation, refreshSidebar]);
+  }, [loadConversation]);
 
   async function handleOpenStarter(starter: ChatStarterItem) {
     if (starter.conversationId) {
@@ -465,7 +469,12 @@ export function ChatWorkspace({
 
   async function handleSendMessage() {
     const body = draft.trim();
-    if (!body || !selectedConversationId || sending) return;
+    if (!body || !selectedConversationId || !selectedConversation?.canMessage || sending) return;
+    if (containsPeerContactDetails(body)) {
+      setSendError(PEER_CONTACT_POLICY_ERROR);
+      return;
+    }
+    setSendError(null);
     const optimisticId = Date.now();
     const clientNonce = `${selectedConversationId}-${optimisticId}`;
     const optimisticMessage: LiveMessage = {
@@ -493,7 +502,10 @@ export function ChatWorkspace({
           body: JSON.stringify({ body, clientNonce }),
         }
       );
-      if (!response.ok) throw new Error("Unable to send message");
+      if (!response.ok) {
+        const failure = await response.json().catch(() => null);
+        throw new Error(failure?.error || "Unable to send message");
+      }
       const data = (await response.json()) as {
         conversation: GuideConversationSummary | null;
         message: GuideChatMessage | null;
@@ -514,7 +526,8 @@ export function ChatWorkspace({
             )
         );
       }
-    } catch {
+    } catch (error) {
+      setSendError(error instanceof Error ? error.message : "Unable to send message");
       setMessages((current) =>
         current.map((message) =>
           message.id === optimisticId
@@ -530,7 +543,7 @@ export function ChatWorkspace({
   const availableStarters = starters.filter((starter) => starter.conversationId == null);
 
   async function handleStartCall() {
-    if (!selectedConversation || callingPending) return;
+    if (!selectedConversation?.canCall || !voiceEnabled || callingPending) return;
     setCallingPending(true);
     try {
       let result: { callId?: string; error?: string };
@@ -543,6 +556,7 @@ export function ChatWorkspace({
           result = await startCallAsPeerAction(selectedConversation.bookingId);
         }
       }
+      if (result.error) setSendError(result.error);
       if (result.callId) {
         setActiveCall({
           callId: result.callId,
@@ -698,11 +712,16 @@ export function ChatWorkspace({
         className="border-t border-[#edf2f1] bg-white px-3 py-3 sm:px-4"
         style={paddingBottom ? { paddingBottom } : undefined}
       >
+        <p className="mb-2 text-xs text-[#5d726b]">{selectedConversation?.canMessage ? "Chat and call here. Do not share contact details or send money." : "This conversation is closed, blocked, or unavailable."}</p>
+        {sendError && <p role="alert" className="mb-2 text-sm text-red-600">{sendError}</p>}
         <div className="flex items-end gap-2 rounded-[20px] border border-[#d9e6e2] bg-[#f4f9f7] px-3 py-1.5">
           <textarea
             name="body"
+            aria-label="Message"
+            maxLength={2000}
+            disabled={!selectedConversation?.canMessage}
             value={draft}
-            onChange={(e) => setDraft(e.target.value)}
+            onChange={(e) => { setDraft(e.target.value); setSendError(null); }}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
                 e.preventDefault();
@@ -720,7 +739,8 @@ export function ChatWorkspace({
           <button
             type="button"
             onClick={() => void handleSendMessage()}
-            disabled={!draft.trim() || sending}
+            disabled={!draft.trim() || sending || !selectedConversation?.canMessage}
+            aria-label="Send message"
             className="mb-0.5 flex size-9 shrink-0 items-center justify-center rounded-2xl bg-[#0f3d37] text-white shadow-sm transition active:bg-[#184a43] disabled:cursor-not-allowed disabled:opacity-40"
           >
             {sending ? (
@@ -767,7 +787,7 @@ export function ChatWorkspace({
                   )}
                 >
                   <div className="relative shrink-0">
-                    <div className="flex size-10 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
+            <div className="flex size-10 items-center justify-center rounded-full bg-[#0f3d37] text-xs font-bold text-white">
                       {getInitials(conversation.displayName)}
                     </div>
                     {conversation.unreadCount > 0 && (
@@ -856,6 +876,7 @@ export function ChatWorkspace({
           <div className="flex items-center gap-3 border-b border-[#edf2f1] bg-white px-3 py-2.5 shadow-sm">
             <button
               type="button"
+              aria-label="Back to conversations"
               onClick={() => {
                 setIsSidebarVisible(true);
                 setSelectedConversationId(null);
@@ -882,12 +903,15 @@ export function ChatWorkspace({
             <button
               type="button"
               onClick={() => void handleStartCall()}
-              disabled={callingPending}
+              disabled={callingPending || !selectedConversation.canCall || !voiceEnabled}
+              aria-label="Start voice call"
               className="flex size-9 shrink-0 items-center justify-center rounded-full text-[#0f3d37] transition active:bg-[#f0f5f4] disabled:opacity-40"
             >
               {callingPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-5" />}
             </button>
           </div>
+
+          <div className="border-b px-3 py-2"><ConversationSafety conversationId={selectedConversation.id} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} /></div>
 
           {/* Messages */}
           {MessageBubbles({ listRef: mobileMessageListRef })}
@@ -938,6 +962,7 @@ export function ChatWorkspace({
                       </p>
                     )}
                   </div>
+                  <ConversationSafety conversationId={selectedConversation.id} blockedByMe={selectedConversation.blockedByMe} onChanged={() => void loadConversation(selectedConversation.id, { syncUrl: false })} />
                   {loadingConversation && (
                     <Loader2 className="size-4 shrink-0 animate-spin text-[#9ca3af]" />
                   )}
@@ -945,7 +970,8 @@ export function ChatWorkspace({
                     <button
                       type="button"
                       onClick={() => void handleStartCall()}
-                      disabled={callingPending}
+                      disabled={callingPending || !selectedConversation.canCall || !voiceEnabled}
+              aria-label="Start voice call"
                       className="flex size-9 shrink-0 items-center justify-center rounded-full text-[#374151] transition hover:bg-[#f3f4f6] disabled:opacity-40"
                     >
                       {callingPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-5" />}

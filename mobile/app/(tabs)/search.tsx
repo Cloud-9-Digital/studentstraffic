@@ -1,3 +1,4 @@
+import { PageHeader } from "../../src/components/PageHeader";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ActivityIndicator,
@@ -12,13 +13,13 @@ import {
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams } from "expo-router";
-import { FlashList, type ListRenderItemInfo } from "@shopify/flash-list";
+import { FlatList, type ListRenderItemInfo } from "react-native";
 import { useQuery } from "@tanstack/react-query";
 import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { UniversityCard } from "../../src/components/UniversityCard";
-import { FiltersSheet, DEFAULT_FILTERS, FEE_RANGES } from "../../src/components/FiltersSheet";
+import { FiltersSheet, DEFAULT_FILTERS } from "../../src/components/FiltersSheet";
 import type { FilterState } from "../../src/components/FiltersSheet";
 import type { University } from "../../src/types/domain";
 import { colors } from "../../src/theme/tokens";
@@ -30,8 +31,7 @@ type SearchOptions = {
 };
 
 const COUNTRY_PRIORITY = ["vietnam", "russia", "georgia", "kyrgyzstan", "uzbekistan", "india"];
-const BG = Platform.OS === "ios" ? "#F2F2F7" : colors.background;
-const LIST_DRAW_DISTANCE = 600;
+const BG = colors.surface;
 
 function sortCountries(countries: SearchOptions["countries"]) {
   return [...countries].sort((a, b) => {
@@ -54,13 +54,13 @@ function ListSeparator() {
 }
 
 export default function SearchScreen() {
-  const params = useLocalSearchParams<{ country?: string; feeRange?: string; sort?: string }>();
+  const params = useLocalSearchParams<{ country?: string; course?: string; sort?: string; q?: string }>();
   const insets = useSafeAreaInsets();
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(params.q ?? "");
   const [filters, setFilters] = useState<FilterState>(() => ({
     ...DEFAULT_FILTERS,
     country: params.country ?? "",
-    feeRange: params.feeRange ?? "",
+    course: params.course ?? "",
     sort: params.sort ?? "",
   }));
   const [pendingFilters, setPendingFilters] = useState<FilterState>(filters);
@@ -84,28 +84,26 @@ export default function SearchScreen() {
 
   useEffect(() => {
     const patch: Partial<FilterState> = {};
+    if (params.q !== undefined) setQuery(params.q);
+    if (params.course !== undefined) patch.course = params.course;
     if (params.country !== undefined) patch.country = params.country;
-    if (params.feeRange !== undefined) patch.feeRange = params.feeRange;
     if (params.sort !== undefined) patch.sort = params.sort;
     if (Object.keys(patch).length) {
       setFilters((current) => ({ ...current, ...patch }));
       setPendingFilters((current) => ({ ...current, ...patch }));
     }
-  }, [params.country, params.feeRange, params.sort]);
+  }, [params.country, params.course, params.sort, params.q]);
 
   const loadUniversities = useCallback(async (nextPage: number, append: boolean) => {
     const id = ++requestId.current;
     if (append) setLoadingMore(true); else setLoading(true);
     try {
-      const feeRange = FEE_RANGES.find((item) => item.value === filters.feeRange);
       const result = await mobileClient.getUniversities({
         q: query.trim() || undefined,
         country: filters.country || undefined,
         course: filters.course || undefined,
         universityType: filters.universityType || undefined,
-        sort: filters.sort || undefined,
-        feeMin: feeRange?.feeMin,
-        feeMax: feeRange?.feeMax,
+        sort: filters.sort === "name_asc" ? "name_asc" : undefined,
       }, nextPage);
       if (id !== requestId.current) return;
       setUniversities((current) => append ? appendUnique(current, result.universities) : result.universities);
@@ -139,17 +137,15 @@ export default function SearchScreen() {
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
       <SafeAreaView edges={["top"]} style={[s.headerSafe, { backgroundColor: BG }]}>
-        <View style={s.headerRow}>
-          <Text style={s.title}>Universities</Text>
-          <Pressable
+        <PageHeader title="Universities" action={<Pressable accessibilityRole="button" accessibilityLabel="Filter universities"
             onPress={() => { Haptics.selectionAsync(); setPendingFilters(filters); setSheetVisible(true); }}
             style={({ pressed }) => [s.filterButton, pressed && s.filterPressed]}
             hitSlop={8}
           >
             <Ionicons name="options-outline" size={18} color="#fff" />
             {activeFilterCount > 0 ? <View style={s.filterBadge}><Text style={s.filterBadgeText}>{activeFilterCount}</Text></View> : null}
-          </Pressable>
-        </View>
+          </Pressable>} />
+
 
         <View style={s.searchBar}>
           <Ionicons name="search" size={17} color={query ? colors.primary : colors.faint} />
@@ -193,14 +189,14 @@ export default function SearchScreen() {
       {loading ? (
         <View style={s.loadingWrap}><ActivityIndicator color={colors.primary} /></View>
       ) : (
-        <FlashList
+        <FlatList
+          initialNumToRender={10}
+          windowSize={7}
           data={universities}
-          estimatedItemSize={150}
           keyExtractor={(item, index) => item.offeringSlug ?? `${item.slug}-${index}`}
           renderItem={renderUniversity}
           extraData={shortlistedSlugs}
-          drawDistance={LIST_DRAW_DISTANCE}
-          contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: insets.bottom + 90 }}
+          contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 24 }}
           ItemSeparatorComponent={ListSeparator}
           keyboardShouldPersistTaps="handled"
           keyboardDismissMode="on-drag"

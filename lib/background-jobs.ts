@@ -150,6 +150,11 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
 }
 
 async function processJob(job: typeof backgroundJobs.$inferSelect) {
+  if (job.kind === "peer.notification") {
+    const { deliverPeerNotification } = await import("@/lib/peer-notifications");
+    await deliverPeerNotification(job.payload);
+    return;
+  }
   if (job.kind !== LEAD_DELIVERY_JOB_KIND) {
     throw new Error(`Unsupported background job kind: ${job.kind}`);
   }

@@ -56,7 +56,6 @@ const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
 type Fact = { icon: string; label: string; value: string };
 
 const DEFAULT_FACTS: Fact[] = [
-  { icon: "cash-outline",     label: "Tuition",            value: "Varies by program" },
   { icon: "school-outline",   label: "Study levels",       value: "Undergrad & postgrad" },
   { icon: "language-outline", label: "Teaching language",  value: "Varies by university" },
   { icon: "document-outline", label: "Admissions",         value: "Check requirements" },

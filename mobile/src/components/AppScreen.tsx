@@ -1,9 +1,8 @@
 import { PropsWithChildren } from "react";
-import { Platform, ScrollView, StyleSheet, View } from "react-native";
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
+import { ScrollView, StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import { colors, spacing } from "../theme/tokens";
-import { FLOATING_TAB_INSET } from "./FloatingTabBar";
 
 type Props = PropsWithChildren<{
   scroll?: boolean;
@@ -11,22 +10,18 @@ type Props = PropsWithChildren<{
 }>;
 
 export function AppScreen({ children, scroll = true, tabScreen = false }: Props) {
-  const insets = useSafeAreaInsets();
-
-  // On iOS inside a tab, the floating pill tab bar is absolutely positioned
-  // so we need extra bottom padding to avoid content going under it.
-  const extraBottom = tabScreen && Platform.OS === "ios" ? FLOATING_TAB_INSET : 0;
+  const extraBottom = 0;
 
   if (!scroll) {
     return (
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView style={styles.safe} edges={tabScreen ? ["top", "left", "right"] : undefined}>
         <View style={[styles.content, { paddingBottom: extraBottom }]}>{children}</View>
       </SafeAreaView>
     );
   }
 
   return (
-    <SafeAreaView style={styles.safe}>
+    <SafeAreaView style={styles.safe} edges={tabScreen ? ["top", "left", "right"] : undefined}>
       <ScrollView
         contentContainerStyle={[
           styles.scrollContent,

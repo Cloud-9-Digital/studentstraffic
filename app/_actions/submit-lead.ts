@@ -2,6 +2,8 @@
 
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
+import { randomUUID } from "node:crypto";
+
 import { redirect } from "next/navigation";
 import { after } from "next/server";
 import { z } from "zod";
@@ -148,6 +150,9 @@ export async function submitLeadAction(
   const sourceQuery = parseJsonObject<QueryParamMap>(data.sourceQuery);
   const clientContext = parseJsonObject<ClientContext>(data.clientContext);
   const tracking = getTrackingSnapshot(cookieStore, sourceQuery);
+  // One id per submission, shared by the server-side Conversions API event and
+  // the browser pixel's `Lead` on /thank-you, so Meta counts them as one.
+  const metaEventId = randomUUID();
   const ipAddress = getIpAddress(headerStore);
 
   try {
@@ -272,6 +277,9 @@ export async function submitLeadAction(
         utmCampaign: tracking.utmCampaign,
         utmTerm: tracking.utmTerm,
         utmContent: tracking.utmContent,
+        fbc: tracking.fbc,
+        fbp: tracking.fbp,
+        metaEventId,
         referrer: headerStore.get("referer") ?? undefined,
         userAgent: headerStore.get("user-agent") ?? undefined,
         ipAddress: ipAddress ?? undefined,
@@ -314,6 +322,6 @@ export async function submitLeadAction(
     data.universitySlug ?? data.countrySlug ?? data.courseSlug ?? "study-abroad";
 
   redirect(
-    `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(interest)}`
+    `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(interest)}&eid=${encodeURIComponent(metaEventId)}`
   );
 }

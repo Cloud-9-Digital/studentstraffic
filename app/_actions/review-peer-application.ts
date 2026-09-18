@@ -12,7 +12,7 @@ import {
 } from "@/lib/db/schema";
 import { sendApplicationApprovedEmail } from "@/lib/email/templates/application-approved";
 import { sendApplicationRejectedEmail } from "@/lib/email/templates/application-rejected";
-import { getUniversityPeersTag } from "@/lib/university-community";
+import { allPeersTag, getUniversityPeersTag } from "@/lib/university-community";
 
 export async function approvePeerApplicationAction(applicationId: number) {
   const admin = await requireAdminSession();
@@ -60,6 +60,7 @@ export async function approvePeerApplicationAction(applicationId: number) {
     status: "active",
   });
 
+  revalidateTag(allPeersTag, "max");
   revalidateTag(getUniversityPeersTag(university.slug), "hours");
   revalidatePath("/admin/peer-applications");
   revalidatePath(`/admin/peer-applications/${applicationId}`);

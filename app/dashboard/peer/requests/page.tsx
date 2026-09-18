@@ -1,3 +1,4 @@
+import { peerSafeText } from "@/lib/peer-contact-policy";
 import { redirect } from "next/navigation";
 import { and, count, desc, eq, ne } from "drizzle-orm";
 import { Inbox, Clock, Check, MessageCircle, X } from "lucide-react";
@@ -110,7 +111,7 @@ export default async function PeerRequestsPage({
         message: peerCallBookings.message,
         createdAt: peerCallBookings.createdAt,
         studentName: users.name,
-        studentEmail: users.email,
+
       })
       .from(peerCallBookings)
       .innerJoin(users, eq(peerCallBookings.studentUserId, users.id))
@@ -124,7 +125,7 @@ export default async function PeerRequestsPage({
         message: peerCallBookings.message,
         createdAt: peerCallBookings.createdAt,
         studentName: users.name,
-        studentEmail: users.email,
+
       })
       .from(peerCallBookings)
       .innerJoin(users, eq(peerCallBookings.studentUserId, users.id))
@@ -177,24 +178,18 @@ export default async function PeerRequestsPage({
             {/* Mobile flat list */}
             <div className="md:hidden divide-y divide-[#eaeaea]">
               {pendingRequests.map((req) => {
-                const displayName = req.studentName ?? req.studentEmail.split("@")[0];
+                const displayName = req.studentName?.trim() || "Student";
                 return (
                   <div key={req.id} className="py-4">
                     <div className="flex items-center gap-3 mb-3">
                       <InitialsAvatar name={displayName} />
                       <div className="min-w-0 flex-1">
                         <p className="truncate text-sm font-semibold text-[#0f1f1c]">{displayName}</p>
-                        <a
-                          href={`mailto:${req.studentEmail}`}
-                          className="truncate block text-xs text-[#6b7280] hover:text-[#0f3d37] hover:underline"
-                        >
-                          {req.studentEmail}
-                        </a>
                       </div>
                       <p className="shrink-0 text-[10px] text-[#9ca3af]">{formatDate(req.createdAt)}</p>
                     </div>
                     {req.message ? (
-                      <p className="mb-3 text-sm text-[#374151] leading-relaxed">{req.message}</p>
+                      <p className="mb-3 text-sm text-[#374151] leading-relaxed">{peerSafeText(req.message)}</p>
                     ) : (
                       <p className="mb-3 text-xs italic text-[#9ca3af]">No message included.</p>
                     )}
@@ -217,7 +212,7 @@ export default async function PeerRequestsPage({
                 </thead>
                 <tbody className="divide-y divide-[#eaeaea]">
                   {pendingRequests.map((req) => {
-                    const displayName = req.studentName ?? req.studentEmail.split("@")[0];
+                    const displayName = req.studentName?.trim() || "Student";
                     return (
                       <tr key={req.id} className="hover:bg-[#fafafa] transition-colors">
                         <td className="py-4 pr-6">
@@ -225,18 +220,12 @@ export default async function PeerRequestsPage({
                             <InitialsAvatar name={displayName} />
                             <div className="min-w-0">
                               <p className="font-semibold text-[#0f1f1c] whitespace-nowrap">{displayName}</p>
-                              <a
-                                href={`mailto:${req.studentEmail}`}
-                                className="text-xs text-[#9ca3af] hover:text-[#0f3d37] hover:underline"
-                              >
-                                {req.studentEmail}
-                              </a>
                             </div>
                           </div>
                         </td>
                         <td className="py-4 pr-6 max-w-xs">
                           {req.message ? (
-                            <p className="line-clamp-2 text-xs text-[#6b7280] leading-relaxed">{req.message}</p>
+                            <p className="line-clamp-2 text-xs text-[#6b7280] leading-relaxed">{peerSafeText(req.message)}</p>
                           ) : (
                             <p className="text-xs italic text-[#9ca3af]">No message</p>
                           )}
@@ -272,7 +261,7 @@ export default async function PeerRequestsPage({
           {/* Mobile flat list */}
           <div className="md:hidden divide-y divide-[#eaeaea]">
             {respondedRequests.map((req) => {
-              const displayName = req.studentName ?? req.studentEmail.split("@")[0];
+              const displayName = req.studentName?.trim() || "Student";
               return (
                 <div key={req.id} className="flex items-center gap-3 py-3.5">
                   <InitialsAvatar name={displayName} size="sm" />
@@ -325,7 +314,7 @@ export default async function PeerRequestsPage({
               </thead>
               <tbody className="divide-y divide-[#eaeaea]">
                 {respondedRequests.map((req) => {
-                  const displayName = req.studentName ?? req.studentEmail.split("@")[0];
+                  const displayName = req.studentName?.trim() || "Student";
                   return (
                     <tr key={req.id} className="hover:bg-[#fafafa] transition-colors">
                       <td className="py-4 pr-6">
@@ -333,12 +322,11 @@ export default async function PeerRequestsPage({
                           <InitialsAvatar name={displayName} size="sm" />
                           <div className="min-w-0">
                             <p className="font-medium text-[#0f1f1c] whitespace-nowrap">{displayName}</p>
-                            <p className="text-xs text-[#9ca3af]">{req.studentEmail}</p>
                           </div>
                         </div>
                       </td>
                       <td className="py-4 pr-6 max-w-xs">
-                        <p className="line-clamp-2 text-xs text-[#6b7280]">{req.message ?? "—"}</p>
+                        <p className="line-clamp-2 text-xs text-[#6b7280]">{req.message ? peerSafeText(req.message) : "—"}</p>
                       </td>
                       <td className="py-4 pr-6 whitespace-nowrap">
                         {statusLabel(req.status)}

@@ -1,3 +1,6 @@
+import { useReducedMotion } from "../src/hooks/useReducedMotion";
+import { mobileClient } from "../src/api/mobileClient";
+import { supportsNativeCalls } from "../src/services/nativeRuntime";
 import { useEffect, useState } from "react";
 import { Modal, Platform } from "react-native";
 import { Stack, useRouter } from "expo-router";
@@ -52,6 +55,7 @@ const PERSISTED_QUERY_KEYS = new Set([
 ]);
 
 export default function RootLayout() {
+  const reducedMotion = useReducedMotion();
   const [fontsLoaded, fontError] = useFonts({
     "PlusJakartaSans-Regular":   PlusJakartaSans_400Regular,
     "PlusJakartaSans-Medium":    PlusJakartaSans_500Medium,
@@ -78,7 +82,7 @@ export default function RootLayout() {
   const [persister] = useState(
     () => createAsyncStoragePersister({
       storage: AsyncStorage,
-      key: "ST_QUERY_CACHE_V1",
+      key: `ST_QUERY_CACHE_V2:${mobileClient.apiUrl}`,
       throttleTime: 1000,
     })
   );
@@ -129,20 +133,20 @@ export default function RootLayout() {
               screenOptions={{
                 headerShown: false,
                 contentStyle: { backgroundColor: colors.background },
-                animation: "slide_from_right",
+                animation: reducedMotion ? "none" : "slide_from_right",
               }}
             >
               <Stack.Screen
                 name="counselling"
                 options={{
                   presentation: "modal",
-                  animation: "slide_from_bottom",
+                  animation: reducedMotion ? "none" : "slide_from_bottom",
                   contentStyle: { backgroundColor: "transparent" },
                 }}
               />
               <Stack.Screen
                 name="country/[slug]"
-                options={{ animation: "slide_from_right" }}
+                options={{ animation: reducedMotion ? "none" : "slide_from_right" }}
               />
             </Stack>
             <ActiveCallModal />
@@ -187,7 +191,7 @@ function FCMForegroundHandler() {
   const queryClient = useQueryClient();
 
   useEffect(() => {
-    if (Platform.OS !== "android") return;
+    if (!supportsNativeCalls || Platform.OS !== "android") return;
     let unsub: (() => void) | undefined;
     try {
       const messaging = require("@react-native-firebase/messaging").default;
@@ -230,7 +234,7 @@ function IOSPushNotificationHandler() {
   const { dismissCallById, openIncomingCallById } = useCall();
 
   useEffect(() => {
-    if (Platform.OS !== "ios") return;
+    if (!supportsNativeCalls || Platform.OS !== "ios") return;
 
     let receivedSubscription: { remove: () => void } | undefined;
     let responseSubscription: { remove: () => void } | undefined;
@@ -281,7 +285,7 @@ function CallKeepEventHandler() {
   } = useCall();
 
   useEffect(() => {
-    if (Platform.OS !== "android") return;
+    if (!supportsNativeCalls || Platform.OS !== "android") return;
 
     setupCallKeep();
 

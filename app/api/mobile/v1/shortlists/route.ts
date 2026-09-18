@@ -1,3 +1,4 @@
+import { getMobileProgramCounts } from "@/lib/mobile/program-counts";
 import { and, asc, eq } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
@@ -42,10 +43,13 @@ export async function GET(request: Request) {
     return true;
   });
 
+  const counts = await getMobileProgramCounts(unique.map(row => row.universitySlug));
+
   return mobileJson({
     shortlists: unique.map((row) => ({
       id: String(row.id),
       slug: row.universitySlug,
+      programCount: counts.get(row.universitySlug),
       name: row.universityName ?? row.universitySlug,
       city: row.universityCity,
       country: row.countryName,

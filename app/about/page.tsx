@@ -101,7 +101,7 @@ export default function AboutPage() {
               <p className="max-w-lg text-base leading-8 text-muted-foreground">
                 Compare universities and programmes across destinations, with
                 practical guidance on fees, fit, applications, and the move
-                ahead. We began with strong India-to-abroad expertise and are
+                ahead. We began with deep study-abroad expertise and are
                 building Students Traffic for students everywhere.
               </p>
               <div className="flex flex-wrap gap-3 pt-1">

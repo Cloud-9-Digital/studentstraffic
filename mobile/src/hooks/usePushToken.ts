@@ -1,3 +1,4 @@
+import { supportsNativeCalls } from "../services/nativeRuntime";
 import { useEffect, useRef } from "react";
 import { AppState, Platform } from "react-native";
 
@@ -8,6 +9,7 @@ export function usePushToken() {
   const registeredTokenRef = useRef<string | null>(null);
 
   useEffect(() => {
+    if (!supportsNativeCalls) return;
     let disposed = false;
 
     const register = async () => {

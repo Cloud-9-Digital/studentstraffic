@@ -1,12 +1,9 @@
-import { and, eq } from "drizzle-orm";
 
 import { buildAgoraRtcToken } from "@/lib/agora";
-import { getDb } from "@/lib/db/server";
-import { peerCallSessions } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { requireMobileSession } from "@/lib/mobile/auth";
 import { mobileError, mobileJson } from "@/lib/mobile/http";
-import { getAuthorizedPeerCallSession } from "@/lib/peer-calls";
+import { preparePeerCallToken } from "@/lib/peer-calls";
 
 export async function POST(
   _request: Request,
@@ -20,7 +17,7 @@ export async function POST(
   }
 
   const { callId } = await context.params;
-  const call = await getAuthorizedPeerCallSession(callId, session.user.id);
+  const call = await preparePeerCallToken(callId, session.user.id);
 
   if (!call) return mobileError("not_found", "Call session not found.", 404);
 
@@ -33,24 +30,6 @@ export async function POST(
   }
 
   // If peer is answering a ringing call, mark it active
-  if (call.isPeerParticipant && call.status === "ringing") {
-    const db = getDb();
-    if (db) {
-      const answeredAt = new Date();
-      await db
-        .update(peerCallSessions)
-        .set({
-          status: "active",
-          answeredAt,
-          // Once answered, allow a normal long conversation. The one-minute
-          // expiry applies only while the call is ringing.
-          expiresAt: new Date(answeredAt.getTime() + 60 * 60 * 1000),
-          updatedAt: answeredAt,
-        })
-        .where(and(eq(peerCallSessions.id, call.id), eq(peerCallSessions.status, "ringing")));
-    }
-  }
-
   const uid = call.isPeerParticipant ? 2 : 1;
   const token = buildAgoraRtcToken({ channelName: call.channelName, uid });
 
@@ -61,7 +40,7 @@ export async function POST(
     uid,
     call: {
       id: call.id,
-      status: call.isPeerParticipant && call.status === "ringing" ? "active" : call.status,
+      status: call.status,
       peerName: call.peerName,
       callerName: call.callerName,
       universityName: call.universityName,

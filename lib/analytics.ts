@@ -34,19 +34,27 @@ function trackMetaEvent(
   method: MetaTrackMethod,
   event: string,
   params?: Record<string, unknown>,
-  attempt = 0
+  attempt = 0,
+  eventId?: string
 ) {
   if (typeof window === "undefined") return;
 
   if (typeof window.fbq === "function") {
-    window.fbq(method, event, cleanParams(params));
+    // The 4th argument is fbq's options bag. `eventID` here must match the
+    // `event_id` the server sends to the Conversions API, or Meta counts the
+    // same conversion twice.
+    if (eventId) {
+      window.fbq(method, event, cleanParams(params), { eventID: eventId });
+    } else {
+      window.fbq(method, event, cleanParams(params));
+    }
     return;
   }
 
   if (attempt >= 20) return;
 
   window.setTimeout(
-    () => trackMetaEvent(method, event, params, attempt + 1),
+    () => trackMetaEvent(method, event, params, attempt + 1, eventId),
     attempt < 5 ? 100 : 250
   );
 }
@@ -61,9 +69,10 @@ export function trackEvent(
 
 export function trackMetaStandardEvent(
   event: string,
-  params?: Record<string, unknown>
+  params?: Record<string, unknown>,
+  eventId?: string
 ) {
-  trackMetaEvent("track", event, params);
+  trackMetaEvent("track", event, params, 0, eventId);
 }
 
 export function trackMetaCustomEvent(
@@ -78,14 +87,21 @@ export function trackLeadFormSubmit(params?: Record<string, unknown>) {
   trackMetaCustomEvent(analyticsEvents.leadFormSubmit, params);
 }
 
-export function trackLeadFormSuccess(params?: Record<string, unknown>) {
+export function trackLeadFormSuccess(
+  params?: Record<string, unknown>,
+  eventId?: string
+) {
   trackEvent(analyticsEvents.leadFormSuccess, params);
   trackMetaCustomEvent(analyticsEvents.leadFormSuccess, params);
-  trackMetaStandardEvent("Lead", {
-    ...params,
-    content_name: "Lead form submitted",
-    content_category: "Website lead",
-  });
+  trackMetaStandardEvent(
+    "Lead",
+    {
+      ...params,
+      content_name: "Lead form submitted",
+      content_category: "Website lead",
+    },
+    eventId
+  );
 }
 
 export function trackContactClick(

@@ -17,7 +17,6 @@ export type FilterState = {
   country: string;
   course: string;
   universityType: string;
-  feeRange: string;
 };
 
 export const DEFAULT_FILTERS: FilterState = {
@@ -25,21 +24,10 @@ export const DEFAULT_FILTERS: FilterState = {
   country: "",
   course: "",
   universityType: "",
-  feeRange: "",
 };
-
-export const FEE_RANGES = [
-  { label: "Any budget",     value: "",     feeMin: undefined, feeMax: undefined },
-  { label: "Under $5k/yr",  value: "u5k",  feeMin: undefined, feeMax: 5000 },
-  { label: "$5k – $10k/yr", value: "5-10k", feeMin: 5000,     feeMax: 10000 },
-  { label: "$10k – $20k/yr",value: "10-20k",feeMin: 10000,    feeMax: 20000 },
-  { label: "Over $20k/yr",  value: "o20k", feeMin: 20000,     feeMax: undefined },
-];
 
 export const SORT_OPTIONS = [
   { label: "Recommended",  value: "" },
-  { label: "Lowest fee",   value: "tuition_asc" },
-  { label: "Highest fee",  value: "tuition_desc" },
   { label: "A – Z",        value: "name_asc" },
 ];
 
@@ -198,12 +186,6 @@ export function FiltersSheet({ visible, onClose, filters, onChange, onApply, opt
             ))}
           </Section>
 
-          {/* Annual budget */}
-          <Section title="ANNUAL BUDGET">
-            {FEE_RANGES.map(r => (
-              <Pill key={r.value} label={r.label} selected={filters.feeRange === r.value} onPress={() => set("feeRange", r.value)} />
-            ))}
-          </Section>
         </ScrollView>
 
         {/* Apply CTA */}

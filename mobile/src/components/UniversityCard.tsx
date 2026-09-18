@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import { Image } from "expo-image";
+import { UniversityLogo } from "./UniversityLogo";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
@@ -21,9 +21,6 @@ const TONE_GRADIENT: Record<Tone, [string, string]> = {
   coral: ["#c04d28", "#d95f38"],
 };
 
-function formatFee(usd: number) {
-  return `$${usd.toLocaleString("en-US")}/yr`;
-}
 
 function getInitials(name: string) {
   return name
@@ -96,12 +93,9 @@ export const UniversityCard = memo(function UniversityCard({ university, isShort
       {/* ── Visual ── */}
       {showImage ? (
         <View style={s.visual}>
-          <Image
-            source={university.logoUrl!}
+          <UniversityLogo
+            uri={university.logoUrl!}
             style={s.logo}
-            contentFit="contain"
-            cachePolicy="memory-disk"
-            recyclingKey={university.logoUrl}
             onError={() => setImgError(true)}
           />
         </View>
@@ -116,11 +110,16 @@ export const UniversityCard = memo(function UniversityCard({ university, isShort
         </LinearGradient>
       )}
 
-      {/* ── Body ── */}
       <View style={s.body}>
-        <View style={s.nameRow}>
-          <Text style={s.name} numberOfLines={2}>{university.name}</Text>
-
+        <Text style={s.name} numberOfLines={2}>{university.name}</Text>
+        <View style={s.locationRow}>
+          <Ionicons name="location-outline" size={12} color={colors.faint} />
+          <Text style={s.location} numberOfLines={1}>
+            {university.city}, {university.country}
+          </Text>
+        </View>
+      </View>
+      <View style={s.actionColumn}>
           <View style={s.actionBtns}>
             {/* Compare toggle — always visible */}
             <Pressable
@@ -157,23 +156,11 @@ export const UniversityCard = memo(function UniversityCard({ university, isShort
               />
             </Pressable>
           </View>
-        </View>
-
-        <View style={s.locationRow}>
-          <Ionicons name="location-outline" size={12} color={colors.faint} />
-          <Text style={s.location} numberOfLines={1}>
-            {university.city}, {university.country}
+        {university.programCount != null && (
+          <Text style={s.programCount}>
+            {university.programCount} {university.programCount === 1 ? "program" : "programs"}
           </Text>
-        </View>
-
-        <View style={s.footer}>
-          <Text style={s.fee}>{formatFee(university.tuitionUsd)}</Text>
-          {university.course && (
-            <View style={s.badge}>
-              <Text style={s.badgeText}>{university.course}</Text>
-            </View>
-          )}
-        </View>
+        )}
       </View>
     </Pressable>
   );
@@ -212,10 +199,17 @@ const s = StyleSheet.create({
 
   body: { flex: 1, gap: 5 },
 
-  nameRow: {
-    flexDirection: "row",
-    alignItems: "flex-start",
+  actionColumn: {
+    alignItems: "flex-end",
+    justifyContent: "center",
     gap: 8,
+    flexShrink: 0,
+  },
+  programCount: {
+    fontFamily: "PlusJakartaSans-SemiBold",
+    fontSize: 11,
+    color: colors.primary,
+    textAlign: "right",
   },
   actionBtns: {
     flexDirection: "row",
@@ -235,7 +229,6 @@ const s = StyleSheet.create({
     backgroundColor: colors.primarySoft,
   },
   name: {
-    flex: 1,
     fontFamily: "PlusJakartaSans-Bold",
     fontSize: 14,
     color: colors.ink,
@@ -266,27 +259,5 @@ const s = StyleSheet.create({
     fontSize: 12,
     color: colors.faint,
     flex: 1,
-  },
-  footer: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: 2,
-  },
-  fee: {
-    fontFamily: "PlusJakartaSans-Bold",
-    fontSize: 13,
-    color: colors.primary,
-  },
-  badge: {
-    backgroundColor: colors.primarySoft,
-    borderRadius: 6,
-    paddingHorizontal: 7,
-    paddingVertical: 3,
-  },
-  badgeText: {
-    fontFamily: "PlusJakartaSans-Bold",
-    fontSize: 10,
-    color: colors.primary,
   },
 });

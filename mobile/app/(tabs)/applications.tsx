@@ -1,3 +1,4 @@
+import { PageHeader } from "../../src/components/PageHeader";
 import {
   Platform,
   Pressable,
@@ -17,7 +18,7 @@ import { mobileClient } from "../../src/api/mobileClient";
 import { StatusPill } from "../../src/components/StatusPill";
 import { colors, shadow } from "../../src/theme/tokens";
 
-const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
+const BG = colors.surface;
 
 const STATUS_COLORS: Record<string, string> = {
   draft:        colors.amberSoft,
@@ -50,15 +51,13 @@ export default function ApplicationsScreen() {
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
       <SafeAreaView edges={["top"]} style={[s.headerSafe, { backgroundColor: BG }]}>
-        <View style={s.headerRow}>
-          <Text style={s.title}>Applications</Text>
-        </View>
+        <PageHeader title="Applications" />
       </SafeAreaView>
 
       <ScrollView
         contentContainerStyle={[
           s.scroll,
-          { paddingBottom: insets.bottom + 90 },
+          { paddingBottom: 24 },
         ]}
         showsVerticalScrollIndicator={false}
       >

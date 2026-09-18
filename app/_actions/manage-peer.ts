@@ -8,7 +8,7 @@ import { requireAdminSession } from "@/lib/auth";
 import { uploadFileToCloudinary, isAllowedPhotoType } from "@/lib/cloudinary-upload";
 import { getDb } from "@/lib/db/server";
 import { studentPeers, universities } from "@/lib/db/schema";
-import { getUniversityPeersTag } from "@/lib/university-community";
+import { allPeersTag, getUniversityPeersTag } from "@/lib/university-community";
 
 export type ManagePeerState = {
   error?: string;
@@ -93,6 +93,7 @@ export async function createPeerAction(
     status: "active",
   });
 
+  revalidateTag(allPeersTag, "max");
   revalidateTag(getUniversityPeersTag(university.slug), "hours");
 
   return { success: true };
@@ -167,6 +168,7 @@ export async function updatePeerAction(
     })
     .where(eq(studentPeers.id, peerId));
 
+  revalidateTag(allPeersTag, "max");
   revalidateTag(getUniversityPeersTag(university.slug), "hours");
 
   return { success: true };
@@ -194,7 +196,8 @@ export async function togglePeerStatusAction(peerId: number, currentStatus: "act
       .limit(1);
 
     if (university) {
-      revalidateTag(getUniversityPeersTag(university.slug), "hours");
+      revalidateTag(allPeersTag, "max");
+  revalidateTag(getUniversityPeersTag(university.slug), "hours");
     }
   }
 }

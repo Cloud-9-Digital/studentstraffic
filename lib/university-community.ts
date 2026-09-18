@@ -30,6 +30,8 @@ export function getUniversityReviewsTag(universitySlug: string) {
 
 export const allUniversityReviewsTag = "university-reviews:all";
 
+export const allPeersTag = "university-peers:all";
+
 export function getUniversityPeersTag(universitySlug: string) {
   return `university-peers:${universitySlug}`;
 }
@@ -95,6 +97,7 @@ export type PublicPeer = {
   currentYearOrBatch: string | null;
   hasWhatsApp: boolean;
   canReceiveCalls: boolean;
+  acceptingRequests: boolean;
   homeState: string | null;
   homeCity: string | null;
   languages: string[] | null;
@@ -121,6 +124,7 @@ export async function getActivePeersForUniversity(
         courseName: studentPeers.courseName,
         currentYearOrBatch: studentPeers.currentYearOrBatch,
         hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+        acceptingRequests: studentPeers.acceptingRequests,
         canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
         homeState: studentPeers.homeState,
         homeCity: studentPeers.homeCity,
@@ -160,6 +164,7 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
   "use cache: remote";
 
   cacheLife("hours");
+  cacheTag(allPeersTag);
 
   const db = getDb();
   if (!db) return [];
@@ -173,6 +178,7 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
         courseName: studentPeers.courseName,
         currentYearOrBatch: studentPeers.currentYearOrBatch,
         hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+        acceptingRequests: studentPeers.acceptingRequests,
         canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
         homeState: studentPeers.homeState,
         homeCity: studentPeers.homeCity,
@@ -215,6 +221,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
   "use cache: remote";
 
   cacheLife("hours");
+  cacheTag(allPeersTag);
 
   const db = getDb();
   if (!db) return [];
@@ -232,6 +239,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
         peerCourseName: studentPeers.courseName,
         peerCurrentYearOrBatch: studentPeers.currentYearOrBatch,
         hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+        acceptingRequests: studentPeers.acceptingRequests,
         canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
         homeState: studentPeers.homeState,
         homeCity: studentPeers.homeCity,
@@ -265,6 +273,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
         currentYearOrBatch: row.peerCurrentYearOrBatch,
         hasWhatsApp: row.hasWhatsApp,
         canReceiveCalls: row.canReceiveCalls,
+        acceptingRequests: row.acceptingRequests,
         homeState: row.homeState,
         homeCity: row.homeCity,
         languages: row.languages,
@@ -284,6 +293,7 @@ export async function getUniversitiesWithActivePeers(
   "use cache: remote";
 
   cacheLife("hours");
+  cacheTag(allPeersTag);
 
   const db = getDb();
   if (!db) return [];

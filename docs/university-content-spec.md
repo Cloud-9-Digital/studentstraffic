@@ -186,3 +186,7 @@ support like "FMGE prep sessions" not generic "exam support available").
   `recognitionBadges` (currently empty on several live universities) and expand FAQs — this is
   cheaper than re-researching from scratch since the university's core facts are already verified.
 - Keep this file updated when the reference bar changes or new field-specific guidance is learned.
+
+### Medium of instruction
+
+Use a concise language label derived from controlled `instructionLanguages`. Store evidence, teaching-phase caveats and language-test notes separately in `mediumDetails`; never put paragraphs into `medium`. Preserve known clinical-language transitions in teaching phases/appropriate admission content. Where teaching language is not established, use `Not confirmed`, not an inferred English label.

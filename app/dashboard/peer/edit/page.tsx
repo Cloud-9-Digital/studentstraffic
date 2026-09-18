@@ -20,6 +20,7 @@ export default async function PeerEditPage() {
   const [peer] = await db
     .select({
       id: studentPeers.id,
+      acceptingRequests: studentPeers.acceptingRequests,
       fullName: studentPeers.fullName,
       photoUrl: studentPeers.photoUrl,
       courseName: studentPeers.courseName,

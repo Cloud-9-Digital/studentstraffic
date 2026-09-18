@@ -8,7 +8,7 @@ import { NewsFeed } from "@/components/site/news-feed";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "News | Study Abroad, Education & Career Updates | Students Traffic",
   description:
-    "Latest news on study abroad, higher education, university admissions, career pathways, and policy changes — curated for Indian students.",
+    "Latest news on study abroad, higher education, university admissions, career pathways, and policy changes — curated for students worldwide.",
   path: "/news",
 });
 
@@ -33,8 +33,8 @@ export default async function NewsPage() {
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
             Study abroad, higher education, university admissions, career
-            pathways, and policy changes — curated and filtered for Indian
-            students.
+            pathways, and policy changes — curated and filtered for students
+            worldwide.
           </p>
         </div>
       </section>

@@ -55,7 +55,7 @@ export function ReviewsHero({
             Student reviews
           </h1>
           <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-            Real experiences from Indian students studying MBBS abroad —
+            Real experiences from students studying medicine abroad —
             academics, hostels, food, clinical training, and life on campus.
           </p>
         </div>

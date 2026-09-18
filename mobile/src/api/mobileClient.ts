@@ -1,4 +1,4 @@
-import type { CallBooking, CallTokenResponse, GuideCallEvent, GuideConversation, GuideConversationStarter, GuideMessage, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
+import type { GuideFilters, GuideFilterOptions, StudentGuide, CallBooking, CallTokenResponse, GuideCallEvent, GuideConversation, GuideConversationStarter, GuideMessage, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
 import { PermissionsAndroid, Platform } from "react-native";
 import Constants from "expo-constants";
 import { clearToken, getToken, setToken } from "./tokenStore";
@@ -13,7 +13,7 @@ const APP_BUILD = Platform.select({
 let pushTokenRefreshUnsubscribe: (() => void) | null = null;
 
 type ApiErrorBody = {
-  error?: {
+  error?: string | {
     code?: string;
     message?: string;
   };
@@ -21,9 +21,9 @@ type ApiErrorBody = {
 
 async function request<T>(path: string, init?: RequestInit & { auth?: boolean }): Promise<T> {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const timeout = setTimeout(() => controller.abort(), init?.body instanceof FormData ? 120_000 : REQUEST_TIMEOUT_MS);
   const headers = new Headers(init?.headers);
-  headers.set("Content-Type", "application/json");
+  if (!(init?.body instanceof FormData)) headers.set("Content-Type", "application/json");
   headers.set("Accept", "application/json");
   headers.set("X-Platform", Platform.OS);
   headers.set("X-App-Version", APP_BUILD ? `${APP_VERSION} (${APP_BUILD})` : APP_VERSION);
@@ -42,7 +42,7 @@ async function request<T>(path: string, init?: RequestInit & { auth?: boolean })
 
     const body = (await response.json().catch(() => ({}))) as ApiErrorBody;
     if (!response.ok) {
-      throw new Error(body.error?.message ?? `Request failed (${response.status})`);
+      throw new Error((typeof body.error === "string" ? body.error : body.error?.message) ?? `Request failed (${response.status})`);
     }
 
     return body as T;
@@ -59,6 +59,7 @@ async function request<T>(path: string, init?: RequestInit & { auth?: boolean })
 function toUniversity(input: any): University {
   return {
     slug: input.slug,
+    programCount: input.programCount,
     name: input.name,
     country: input.country,
     countrySlug: input.countrySlug,
@@ -69,7 +70,7 @@ function toUniversity(input: any): University {
     course: input.course,
     courseSlug: input.courseSlug,
     offeringSlug: input.offeringSlug,
-    tuitionUsd: input.tuitionUsd ?? input.primaryOffering?.annualTuitionUsd ?? 0,
+    tuitionUsd: input.tuitionUsd ?? input.primaryOffering?.annualTuitionUsd ?? null,
     duration: input.primaryOffering ? `${input.primaryOffering.durationYears} years` : undefined,
     medium: input.primaryOffering?.medium,
     summary: input.summary,
@@ -104,6 +105,12 @@ function toApplication(input: any): StudentApplication {
 
 export const mobileClient = {
   apiUrl: API_URL,
+  getGuideApplication() {
+    return request<{ application: { status: "pending" | "approved" | "rejected"; createdAt: string | null } | null; guideStatus: "active" | "inactive" | null; universities: { id: number; name: string; country: string | null }[] }>("/api/mobile/v1/guide-application");
+  },
+  submitGuideApplication(form: FormData) {
+    return request<{ success: boolean }>("/api/mobile/v1/guide-application", { method: "POST", body: form });
+  },
 
   async login(email: string, password: string) {
     const result = await request<{ token: string; user: StudentProfile }>("/api/mobile/v1/auth/login", {
@@ -192,17 +199,17 @@ export const mobileClient = {
   async getDashboard() {
     const [profile, shortlists, applications, universities] = await Promise.all([
       this.getProfile(),
-      this.getShortlists().catch(() => []),
-      this.getApplications().catch(() => []),
+      this.getShortlists().catch(() => null),
+      this.getApplications().catch(() => null),
       this.getUniversities({}, 1, 4).then(r => r.universities).catch(() => []),
     ]);
 
     return {
       profile,
-      shortlistCount: shortlists.length,
-      applicationCount: applications.length,
+      shortlistCount: shortlists?.length ?? null,
+      applicationCount: applications?.length ?? null,
       recommended: universities.slice(0, 4),
-      nextStep: applications[0]?.nextStep ?? "Explore universities and shortlist your favourites.",
+      nextStep: applications?.[0]?.nextStep ?? "Explore universities and shortlist your favourites.",
     };
   },
 
@@ -250,7 +257,7 @@ export const mobileClient = {
     return {
       ...toUniversity(result.university),
       ...result.university,
-      tuitionUsd: result.university.primaryOffering?.annualTuitionUsd ?? 0,
+      tuitionUsd: result.university.primaryOffering?.annualTuitionUsd ?? null,
     } as UniversityDetail;
   },
 
@@ -299,6 +306,21 @@ export const mobileClient = {
     return toApplication(result.application);
   },
 
+  async getStudentGuides(query: string, page = 1, filters?: GuideFilters) {
+    const params = new URLSearchParams({ q: query, page: String(page), ...filters });
+    return request<{ guides: StudentGuide[]; hasNextPage: boolean; options: GuideFilterOptions }>(`/api/mobile/v1/guides?${params.toString()}`);
+  },
+
+  async requestStudentGuide(peerId: number, message: string) {
+    return request<{ success?: boolean; alreadyBooked?: boolean }>(`/api/mobile/v1/guides/${peerId}/request`, {
+      method: "POST", body: JSON.stringify({ message }),
+    });
+  },
+
+  async respondToGuideRequest(bookingId: number, operation: "accept" | "decline") {
+    return request<{ success: boolean }>(`/api/peer-connections/${bookingId}`, { method: "POST", body: JSON.stringify({ operation }) });
+  },
+
   async getCallBookings(role: "student" | "guide" = "student") {
     const result = await request<{ bookings: CallBooking[] }>(`/api/mobile/v1/calls?role=${role}`);
     return result.bookings;
@@ -319,10 +341,14 @@ export const mobileClient = {
     return request<{ conversation: GuideConversation; messages: GuideMessage[]; calls: GuideCallEvent[] }>(`/api/mobile/v1/conversations/${conversationId}`);
   },
 
-  async sendConversationMessage(conversationId: number, body: string) {
+  async conversationSafety(conversationId: number, body: { operation: "block" | "unblock" | "report"; reason?: string; details?: string }) {
+    return request<{ success: boolean }>(`/api/mobile/v1/conversations/${conversationId}/safety`, { method: "POST", body: JSON.stringify(body) });
+  },
+
+  async sendConversationMessage(conversationId: number, body: string, clientNonce?: string) {
     return request<{ ok: true; conversation: GuideConversation }>(`/api/mobile/v1/conversations/${conversationId}/messages`, {
       method: "POST",
-      body: JSON.stringify({ body }),
+      body: JSON.stringify({ body, clientNonce }),
     });
   },
 

@@ -127,7 +127,7 @@ export default async function PeerOverviewPage() {
       .select({
         bookingId: peerCallBookings.id,
         studentName: users.name,
-        studentEmail: users.email,
+
       })
       .from(peerCallBookings)
       .innerJoin(users, eq(peerCallBookings.studentUserId, users.id))
@@ -199,7 +199,7 @@ export default async function PeerOverviewPage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Ready to call</p>
           <div className="divide-y divide-[#eaeaea]">
             {acceptedBookings.map((b) => {
-              const displayName = b.studentName ?? b.studentEmail.split("@")[0];
+              const displayName = b.studentName?.trim() || "Student";
               return (
                 <div key={b.bookingId} className="flex items-center gap-3 py-3.5">
                   <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-700">

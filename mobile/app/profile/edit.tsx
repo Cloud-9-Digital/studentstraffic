@@ -1,3 +1,4 @@
+import { FormInput } from "../../src/components/FormInput";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, StyleSheet, Text, TextInput, View } from "react-native";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
@@ -20,6 +21,7 @@ export default function EditProfileScreen() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [preferredCountries, setPreferredCountries] = useState("");
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -31,6 +33,12 @@ export default function EditProfileScreen() {
   }, [profile]);
 
   async function submit() {
+    const next: Record<string, string> = {};
+    if (!name.trim()) next.name = "Enter your full name.";
+    if (phone.trim() && !/^\+?[\d\s()-]{7,20}$/.test(phone.trim())) next.phone = "Enter a valid phone number.";
+    setFieldErrors(next);
+    if (Object.keys(next).length) return;
+
     setLoading(true);
     setError(null);
     try {
@@ -53,8 +61,8 @@ export default function EditProfileScreen() {
       <Button label="Back" variant="ghost" icon="arrow-back" onPress={() => router.back()} />
       <Text style={styles.title}>Edit profile</Text>
       <View style={styles.form}>
-        <TextInput value={name} onChangeText={setName} placeholder="Full name" style={styles.input} />
-        <TextInput value={phone} onChangeText={setPhone} placeholder="Phone" keyboardType="phone-pad" style={styles.input} />
+        <FormInput label="Name" value={name} onChangeText={v => { setName(v); setFieldErrors(e => ({ ...e, name: "" })); }} error={fieldErrors.name} focusError={Object.keys(fieldErrors)[0] === "name"}  />
+        <FormInput label="Phone" value={phone} onChangeText={v => { setPhone(v); setFieldErrors(e => ({ ...e, phone: "" })); }} error={fieldErrors.phone} focusError={Object.keys(fieldErrors)[0] === "phone"} keyboardType="phone-pad" />
         <TextInput value={preferredCountries} onChangeText={setPreferredCountries} placeholder="Preferred countries comma separated" style={styles.input} />
         {error ? <Text style={styles.error}>{error}</Text> : null}
         {loading ? <ActivityIndicator color={colors.primary} /> : <Button label="Save profile" icon="checkmark" onPress={submit} />}

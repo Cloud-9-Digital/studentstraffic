@@ -122,7 +122,7 @@ export function CounsellingDialog({
               <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center">
                 <Image
                   src="/images/counselling/study-abroad-enquiry-illustration.png"
-                  alt="Indian student preparing to study abroad"
+                  alt="Student preparing to study abroad"
                   width={1085}
                   height={1450}
                   sizes="(max-width: 767px) 15rem, 20rem"

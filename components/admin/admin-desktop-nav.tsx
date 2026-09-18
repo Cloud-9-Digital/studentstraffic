@@ -14,6 +14,7 @@ const navigation = [
   { href: "/admin/not-found-logs", label: "404 Logs", icon: LinkIcon, ownerOnly: false },
   { href: "/admin/peers", label: "Students", icon: GraduationCap, ownerOnly: false },
   { href: "/admin/peer-applications", label: "Applications", icon: ClipboardList, ownerOnly: false },
+  { href: "/admin/peer-reports", label: "Safety Reports", icon: MessageCircleMore, ownerOnly: false },
   { href: "/admin/peer-requests", label: "Peer Requests", icon: Users2, ownerOnly: false },
   { href: "/admin/reviews", label: "Reviews", icon: MessageSquareQuote, ownerOnly: false },
   { href: "/admin/blog", label: "Blog", icon: NotebookPen, ownerOnly: false },

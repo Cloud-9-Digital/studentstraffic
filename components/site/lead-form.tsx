@@ -77,6 +77,13 @@ export type LeadFormProps = {
   /** When true, hides input placeholder text (labels still show the field purpose). */
   hidePlaceholders?: boolean;
   /**
+   * When true, the email field is not rendered at all. Email is optional
+   * server-side, so the lead still submits. Used on paid-traffic landing pages
+   * where the promise is a phone callback and every extra field costs
+   * conversions. Has no effect together with `emailRequired`.
+   */
+  hideEmail?: boolean;
+  /**
    * When true, renders the NEET score and category fields (alongside email
    * and state). Only the NEET College Predictor tool sets this — every other
    * lead form no longer asks for a NEET score.
@@ -119,6 +126,7 @@ export function LeadForm({
   embedded = false,
   stacked = false,
   hidePlaceholders = false,
+  hideEmail = false,
   showNeetCategory = false,
   lockInterest = false,
   lockPhoneToIndia = false,
@@ -188,7 +196,9 @@ export function LeadForm({
     });
   };
 
-  const emailField = (
+  const showEmailField = !hideEmail || emailRequired;
+
+  const emailField = !showEmailField ? null : (
     <div className="space-y-2">
       <Label htmlFor={`${fieldPrefix}-email`}>
         Email

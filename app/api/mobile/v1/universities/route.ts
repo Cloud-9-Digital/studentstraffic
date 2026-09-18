@@ -1,3 +1,4 @@
+import { getMobileProgramCounts } from "@/lib/mobile/program-counts";
 import { NextRequest } from "next/server";
 
 import { finderPageSize } from "@/lib/constants";
@@ -20,8 +21,10 @@ export async function GET(request: NextRequest) {
     getFinderOptions(),
   ]);
 
+  const counts = await getMobileProgramCounts(results.programs.map(p => p.university.slug));
+
   return mobilePublicJson({
-    universities: results.programs.map(mapFinderCardProgram),
+    universities: results.programs.map(p => ({ ...mapFinderCardProgram(p), programCount: counts.get(p.university.slug) })),
     pagination: {
       totalItems: results.totalItems,
       totalPages: results.totalPages,

@@ -8,7 +8,7 @@ import { ReviewsMasonry } from "./reviews-masonry";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Student Reviews | MBBS Abroad Experience | Students Traffic",
   description:
-    "Read and watch honest reviews from Indian students studying MBBS abroad — academics, hostel life, food, clinical exposure, and daily experience at universities across Vietnam, Russia, Georgia and more.",
+    "Read and watch honest reviews from students studying medicine abroad — academics, hostel life, food, clinical exposure, and daily experience at universities across Vietnam, Russia, Georgia and more.",
   path: "/reviews",
 });
 

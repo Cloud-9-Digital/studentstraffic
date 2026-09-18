@@ -28,6 +28,7 @@ const LANGUAGE_OPTIONS = [
 ];
 
 type Peer = {
+  acceptingRequests: boolean;
   fullName: string;
   photoUrl: string | null;
   courseName: string | null;
@@ -102,6 +103,10 @@ export function PeerEditForm({ peer }: { peer: Peer }) {
 
   return (
     <form onSubmit={handleSubmit} className="divide-y divide-[#eaeaea]">
+      <label className="flex items-start gap-3 rounded-xl border p-4 text-sm">
+        <input type="checkbox" name="acceptingRequests" defaultChecked={peer.acceptingRequests} className="mt-1" />
+        <span>Accept new conversation requests<span className="mt-1 block text-xs text-[#6b7280]">Pause when you are busy. Existing connections can still chat and call. This is not an online status.</span></span>
+      </label>
 
       {/* Photo row */}
       <div className="flex items-center gap-4 py-5">

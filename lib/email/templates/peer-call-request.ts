@@ -5,7 +5,6 @@ interface PeerCallRequestParams {
   peerName: string;
   peerEmail: string;
   studentName: string;
-  studentEmail: string;
   message: string;
   universityName: string;
 }
@@ -31,12 +30,6 @@ export async function sendPeerCallRequestEmail(params: PeerCallRequestParams) {
           <tr>
             <td class="info-label" style="padding-bottom:10px;width:110px;vertical-align:top;">Name</td>
             <td class="info-value" style="padding-bottom:10px;">${params.studentName}</td>
-          </tr>
-          <tr>
-            <td class="info-label" style="padding-bottom:10px;width:110px;vertical-align:top;">Email</td>
-            <td class="info-value" style="padding-bottom:10px;">
-              <a href="mailto:${params.studentEmail}" style="color:#c2410c;">${params.studentEmail}</a>
-            </td>
           </tr>
           <tr>
             <td class="info-label" style="width:110px;vertical-align:top;">Message</td>

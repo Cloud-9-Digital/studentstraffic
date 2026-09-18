@@ -346,7 +346,7 @@ export function StudentsExplorer({
               Talk to students studying abroad
             </h1>
             <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-              Connect with Indian students already at these universities through
+              Connect with students already at these universities through
               secure in-app conversations and voice calls. Unfiltered answers from peers who&apos;ve been there.
             </p>
           </div>

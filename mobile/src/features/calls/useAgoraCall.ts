@@ -1,3 +1,4 @@
+import { supportsNativeCalls } from "../../services/nativeRuntime";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { PermissionsAndroid, Platform } from "react-native";
 
@@ -21,6 +22,7 @@ async function requestMicPermission() {
 // Lazy-load Agora so the app doesn't crash in Expo Go (native module not linked there).
 // In a dev build / production build this will always be available.
 function loadAgora() {
+  if (!supportsNativeCalls) return null;
   try {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const mod = require("react-native-agora");

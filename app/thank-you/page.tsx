@@ -18,6 +18,7 @@ export default async function ThankYouPage({
   const params = await searchParams;
   const source = Array.isArray(params.source) ? params.source[0] : params.source;
   const interest = Array.isArray(params.interest) ? params.interest[0] : params.interest;
+  const eventId = Array.isArray(params.eid) ? params.eid[0] : params.eid;
   const isNeetPredictor = source === "/neet-college-predictor";
   const heading = isNeetPredictor
     ? "Your NEET prediction request has been received."
@@ -39,7 +40,7 @@ export default async function ThankYouPage({
                 {heading}
               </h1>
 
-              <ThankYouAnalytics source={source} interest={interest} />
+              <ThankYouAnalytics source={source} interest={interest} eventId={eventId} />
               <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-white/70 md:text-lg">
                 {isNeetPredictor
                   ? "Your NEET college prediction request is in. We will send the results to your email."

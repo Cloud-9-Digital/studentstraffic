@@ -2,45 +2,41 @@
 
 Native mobile app built with Expo Router and React Native.
 
-## Test Locally
+## Test locally
 
-From the repo root:
+Use the Students Traffic development build for calls and push notifications.
+Expo Go has no Firebase, Agora, Notifee or CallKeep native modules. Installing a
+matching Expo Go version only enables a limited browsing/chat preview.
 
-```bash
-npm run mobile:typecheck
-npm run mobile:web
-```
-
-For a real phone:
+From the repository root, run the Next.js API separately with `npm run dev`.
+Then, from `mobile/`, use a Mac LAN address that the phone can reach:
 
 ```bash
-cd mobile
-EXPO_PUBLIC_API_URL=http://YOUR_MAC_LAN_IP:3000 npx expo start -c
+EXPO_PUBLIC_API_URL=http://YOUR_MAC_LAN_IP:3000 npm start
 ```
 
-Then scan the QR code:
-
-- iPhone: use the Camera app or Expo Go.
-- Android: use the Expo Go scanner.
-
-The API URL must point at the Next.js server that exposes `/api/mobile/v1`.
-For local iPhone testing, run the web app separately from the repo root:
+Install a native development build first (USB device and native tooling required):
 
 ```bash
-npm run dev
+npm run android:device
+npm run ios:device
 ```
 
-Then use your Mac's LAN IP, not `localhost`, because `localhost` on the phone
-means the phone itself.
+Open **Students Traffic** on the phone, not Expo Go. JavaScript-only changes can
+use the existing build; native dependency/configuration changes require rebuilding.
+The EAS `development` profile is also configured for internal device builds.
+Physical iOS push testing requires configured Apple/APNs signing credentials.
 
-For simulators:
+The project currently uses SDK 54. Android Expo Go must match SDK 54 for the
+limited preview; the current store client may support a different SDK.
+`npm run start:go` explicitly starts that preview mode. Its New Architecture
+warning reflects Expo Go's architecture, not the configured native build.
+Native builds currently retain `newArchEnabled: false`; migrating native modules
+and architecture is a separate compatibility change, not a fix for missing modules
+inside Expo Go. Do not enable it merely to silence the warning.
 
-```bash
-npm run ios
-npm run android
-```
-
-This app is currently pinned to Expo SDK 54 so it can run in the App Store version of Expo Go on physical iPhones during Expo's 2026 SDK 55/56 transition. If Expo prints engine warnings or behaves oddly, use Node 20.19.4 or newer before debugging app code.
+Run `npm run typecheck` and `npm run web` for TypeScript and browser checks.
+Never use a phone's `localhost` as the Mac API address.
 
 ## Versioning
 
@@ -59,7 +55,7 @@ Quick rule:
 - `app/(auth)/` contains welcome, login, and register flows.
 - `app/(tabs)/` contains Home, Search, Saved, Applications, and Profile.
 - `app/university/[slug].tsx` contains the university detail flow.
-- `src/api/` contains the mobile API adapter. It currently uses mock data and is designed to switch to `/api/mobile/v1`.
+- `src/api/` contains the mobile API adapter. It calls the authenticated `/api/mobile/v1` backend.
 - `src/components/` contains reusable app UI primitives.
 - `src/theme/` contains shared mobile design tokens.
 - `src/types/` contains domain types used by screens and API adapters.

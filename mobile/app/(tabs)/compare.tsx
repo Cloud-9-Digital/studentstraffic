@@ -1,3 +1,4 @@
+import { PageHeader } from "../../src/components/PageHeader";
 import {
   ActivityIndicator,
   Platform,
@@ -20,11 +21,11 @@ import { useCompare } from "../../src/context/CompareContext";
 import { colors, shadow } from "../../src/theme/tokens";
 import type { UniversityDetail } from "../../src/types/domain";
 
-const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
+const BG = colors.surface;
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-function usd(n: number) { return `$${n.toLocaleString("en-US")}`; }
+
 
 type Row = {
   label: string;
@@ -33,7 +34,7 @@ type Row = {
 };
 
 const ROWS: Row[] = [
-  { label: "Annual fee",   icon: "cash-outline",      get: u => usd(u.primaryOffering?.annualTuitionUsd ?? u.tuitionUsd) },
+  { label: "Programs", icon: "school-outline", get: u => String(u.programCount ?? u.offerings?.length ?? 0) },
   { label: "Duration",     icon: "time-outline",      get: u => u.primaryOffering ? `${u.primaryOffering.durationYears} yrs` : (u.duration ?? "6 yrs") },
   { label: "Total cost",   icon: "wallet-outline",    get: u => u.primaryOffering ? usd(u.primaryOffering.totalTuitionUsd) : "—" },
   { label: "Medium",       icon: "language-outline",  get: u => u.primaryOffering?.medium ?? u.medium ?? "—" },
@@ -193,35 +194,23 @@ export default function CompareScreen() {
     <View style={[s.root, { backgroundColor: BG }]}>
       {/* ── Header ── */}
       <SafeAreaView edges={["top"]} style={[s.headerSafe, { backgroundColor: BG }]}>
-        <View style={s.headerRow}>
-          <View style={s.titleWrap}>
-            <Text style={s.title}>Compare</Text>
-            {items.length > 0 && (
-              <View style={s.badge}>
-                <Text style={s.badgeText}>{items.length}</Text>
-              </View>
-            )}
-          </View>
-          {items.length > 0 && (
-            <Pressable
+        <PageHeader title="Compare" action={items.length > 0 ? (<Pressable
               onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light); clear(); }}
               hitSlop={8}
               style={({ pressed }) => [s.clearBtn, pressed && s.clearBtnPressed]}
             >
               <Text style={s.clearLabel}>Clear all</Text>
-            </Pressable>
-          )}
-        </View>
+            </Pressable>) : null} />
       </SafeAreaView>
 
       {/* ── Content ── */}
       {items.length === 0 ? (
-        <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + 100 }}>
+        <ScrollView contentContainerStyle={{ paddingBottom: 24 }}>
           <EmptyState />
         </ScrollView>
       ) : (
         <ScrollView
-          contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 100 }]}
+          contentContainerStyle={[s.scroll, { paddingBottom: 24 }]}
           showsVerticalScrollIndicator={false}
         >
           {/* University column headers */}

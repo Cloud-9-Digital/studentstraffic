@@ -57,6 +57,12 @@ export type LeadSyncPayload = {
   gbraid?: string;
   wbraid?: string;
   ttclid?: string;
+  /** Meta click id (`_fbc`), for Conversions API match quality. */
+  fbc?: string;
+  /** Meta browser id (`_fbp`), for Conversions API match quality. */
+  fbp?: string;
+  /** Shared id that deduplicates the pixel and Conversions API copies of `Lead`. */
+  metaEventId?: string;
   referrer?: string;
   userAgent?: string;
   ipAddress?: string;

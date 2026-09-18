@@ -9,7 +9,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
-import { FlashList, type ListRenderItemInfo } from "@shopify/flash-list";
+import { FlatList, type ListRenderItemInfo } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -100,10 +100,11 @@ export default function CountriesScreen() {
           <Pressable onPress={() => refetch()} style={s.retry}><Text style={s.retryText}>Try again</Text></Pressable>
         </View>
       ) : (
-        <FlashList
+        <FlatList
+          initialNumToRender={10}
+          windowSize={7}
           data={countries}
           numColumns={2}
-          estimatedItemSize={80}
           keyExtractor={(item) => item.slug}
           renderItem={renderCountry}
           showsVerticalScrollIndicator={false}

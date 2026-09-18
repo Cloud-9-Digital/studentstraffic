@@ -1,4 +1,4 @@
-import { and, eq, inArray } from "drizzle-orm";
+import { sql, and, eq, inArray } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 import { auth } from "@/lib/auth";
@@ -38,7 +38,7 @@ export async function POST(
   await db
     .update(peerCallSessions)
     .set({
-      status: "ended",
+      status: sql`case when ${peerCallSessions.answeredAt} is not null then 'ended' when ${peerCallSessions.peerUserId} = ${userId} then 'declined' else 'missed' end`,
       endedAt,
       updatedAt: endedAt,
     })

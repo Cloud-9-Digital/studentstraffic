@@ -1,3 +1,5 @@
+import { GuideApplicationLink } from "../../src/features/guides/GuideApplicationLink";
+import { PageHeader } from "../../src/components/PageHeader";
 import {
   KeyboardAvoidingView,
   Modal,
@@ -24,7 +26,7 @@ import { mobileClient } from "../../src/api/mobileClient";
 import { colors, shadow } from "../../src/theme/tokens";
 import { Skeleton } from "../../src/components/Skeleton";
 
-const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
+const BG = colors.surface;
 const APP_VERSION = Constants.expoConfig?.version ?? "1.0.0";
 const APP_BUILD = Platform.OS === "android"
   ? Constants.expoConfig?.android?.versionCode
@@ -70,6 +72,10 @@ function FieldEditModal({ field, initialValue, onClose, onSave }: EditModalProps
   }, [initialValue, field]);
 
   async function handleSave() {
+    if (saving) return;
+    if (field?.key === "name" && !value.trim()) { setError("Enter your full name."); inputRef.current?.focus(); return; }
+    if (field?.key === "phone" && value.trim() && !/^\+?[\d\s()-]{7,20}$/.test(value.trim())) { setError("Enter a valid phone number."); inputRef.current?.focus(); return; }
+
     setSaving(true);
     setError(null);
     try {
@@ -117,14 +123,14 @@ function FieldEditModal({ field, initialValue, onClose, onSave }: EditModalProps
           <TextInput
             ref={inputRef}
             value={value}
-            onChangeText={setValue}
+            onChangeText={v => { setValue(v); setError(null); }}
             placeholder={field.placeholder}
             placeholderTextColor={colors.faint}
             keyboardType={field.keyboardType}
             autoCapitalize={field.autoCapitalize ?? "none"}
             returnKeyType="done"
             onSubmitEditing={handleSave}
-            style={m.input}
+            style={[m.input, error && { borderColor: colors.accent, backgroundColor: colors.coralSoft }]}
           />
 
           {error && <Text style={m.error}>{error}</Text>}
@@ -294,10 +300,10 @@ export default function ProfileScreen() {
 
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
-      {/* Dark gradient header — light status bar icons */}
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
+      <SafeAreaView edges={["top"]}><PageHeader title="Profile" subtitle="Your details, preferences and account." /></SafeAreaView>
       <ScrollView
-        contentContainerStyle={{ paddingBottom: insets.bottom + 90 }}
+        contentContainerStyle={{ paddingBottom: 24 }}
         showsVerticalScrollIndicator={false}
       >
         {/* ── Branded header ── */}
@@ -307,7 +313,7 @@ export default function ProfileScreen() {
           end={{ x: 1, y: 1 }}
           style={s.headerGrad}
         >
-          <SafeAreaView edges={["top"]}>
+          <View>
             <View style={s.headerInner}>
               {loadingProfile ? (
                 <>
@@ -350,11 +356,12 @@ export default function ProfileScreen() {
                 </>
               )}
             </View>
-          </SafeAreaView>
+          </View>
         </LinearGradient>
 
         {/* ── Settings ── */}
         <View style={s.content}>
+          <GuideApplicationLink />
           {loadingProfile ? (
             <>
               <Skeleton width={80} height={10} borderRadius={4} style={{ marginTop: 8, marginBottom: 10, marginLeft: 4 }} />
@@ -462,7 +469,7 @@ export default function ProfileScreen() {
 const s = StyleSheet.create({
   root: { flex: 1 },
 
-  headerGrad: {},
+  headerGrad: { marginHorizontal: 20, borderRadius: 18, overflow: "hidden" },
   headerInner: {
     alignItems: "center",
     paddingTop: 12,

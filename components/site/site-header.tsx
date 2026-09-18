@@ -55,7 +55,7 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
         <>
           <span className="h-5 w-px shrink-0 bg-foreground/25" aria-hidden />
           <span className="text-[9px] font-medium leading-snug text-foreground/65">
-            India&apos;s Trusted<br />Study Abroad Platform
+            Trusted<br />Study Abroad Platform
           </span>
         </>
       )}

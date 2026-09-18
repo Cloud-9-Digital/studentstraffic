@@ -1,3 +1,10 @@
+/**
+ * Meta pixel id. Shared deliberately: the browser pixel and the server-side
+ * Conversions API must post to the SAME pixel, or Meta cannot deduplicate the
+ * two copies of an event. `META_PIXEL_ID` overrides this in env.
+ */
+export const metaPixelId = "1702517386867719";
+
 export const siteConfig = {
   name: "Students Traffic",
   shortName: "Students Traffic",

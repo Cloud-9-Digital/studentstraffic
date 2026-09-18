@@ -1,3 +1,4 @@
+import { PageHeader } from "../../src/components/PageHeader";
 import {
   Animated,
   LayoutAnimation,
@@ -27,7 +28,7 @@ if (Platform.OS === "android" && UIManager.setLayoutAnimationEnabledExperimental
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
+const BG = colors.surface;
 
 type AnimValues = { opacity: Animated.Value; tx: Animated.Value; scale: Animated.Value };
 
@@ -100,29 +101,19 @@ export default function ShortlistsScreen() {
     <View style={[s.root, { backgroundColor: BG }]}>
       {/* ── Fixed header ── */}
       <SafeAreaView edges={["top"]} style={[s.headerSafe, { backgroundColor: BG }]}>
-        <View style={s.headerRow}>
-          <View style={s.titleWrap}>
-            <Text style={s.title}>Saved</Text>
-            {localData.length > 0 && (
-              <View style={s.badge}>
-                <Text style={s.badgeText}>{localData.length}</Text>
-              </View>
-            )}
-          </View>
-          <Pressable
+        <PageHeader title="Saved" action={<Pressable accessibilityRole="button" accessibilityLabel="Add a university"
             onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/search"); }}
             style={({ pressed }) => [s.addBtn, pressed && s.addBtnPressed]}
           >
             <Ionicons name="add" size={20} color={colors.primary} />
-          </Pressable>
-        </View>
+          </Pressable>} />
       </SafeAreaView>
 
       {/* ── Content ── */}
       <ScrollView
         contentContainerStyle={[
           s.scroll,
-          { paddingBottom: insets.bottom + 90 },
+          { paddingBottom: 24 },
         ]}
         showsVerticalScrollIndicator={false}
       >

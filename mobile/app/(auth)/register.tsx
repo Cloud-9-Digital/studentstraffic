@@ -1,3 +1,4 @@
+import { FormInput } from "../../src/components/FormInput";
 import { useRef, useState } from "react";
 import {
   ActivityIndicator,
@@ -40,8 +41,8 @@ function getStrength(p: string) {
   return              { label: "Very strong", color: "#0f3d37", fill: 5 };
 }
 
-function PasswordStrength({ password }: { password: string }) {
-  if (!password) return null;
+function PasswordStrength({ password, showRequirements = false }: { password: string; showRequirements?: boolean }) {
+  if (!password && !showRequirements) return null;
   const { label, color, fill } = getStrength(password);
   return (
     <View style={pw.wrap}>
@@ -240,6 +241,7 @@ export default function RegisterScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
 
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [name, setName]         = useState("");
   const [email, setEmail]       = useState("");
   const [phone, setPhone]       = useState("");
@@ -253,7 +255,15 @@ export default function RegisterScreen() {
 
   async function handleCreate() {
     if (loading) return;
-    if (!allRulesMet) { Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error); return; }
+    const next: Record<string, string> = {};
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) next.email = "Enter a valid email address.";
+    if (!password) next.password = "Enter your password.";
+    if (!name.trim()) next.name = "Enter your full name.";
+    if (!/^\+?[\d\s()-]{7,20}$/.test(phone.trim())) next.phone = "Enter a valid phone number.";
+    if (!allRulesMet) next.password = "Meet the password requirements below.";
+    setFieldErrors(next);
+    if (Object.keys(next).length) return;
+
     setLoading(true); setError(null);
     try {
       await mobileClient.register({ name, email, phone, password });
@@ -297,13 +307,10 @@ export default function RegisterScreen() {
           ) : (
             <>
               {/* ── Inputs ── */}
-              {Platform.OS === "ios"
-                ? <IOSGroupedInputs {...inputProps} />
-                : <AndroidInputs {...inputProps} />
-              }
+              <View><FormInput label="Full name" value={name} onChangeText={v => { setName(v); setFieldErrors(e => ({ ...e, name: "" })); }} error={fieldErrors.name} focusError={["name", "email", "phone", "password"].find(k => fieldErrors[k]) === "name"}  /><FormInput label="Email address" value={email} onChangeText={v => { setEmail(v); setFieldErrors(e => ({ ...e, email: "" })); }} error={fieldErrors.email} focusError={["name", "email", "phone", "password"].find(k => fieldErrors[k]) === "email"} keyboardType="email-address" autoCapitalize="none" /><FormInput label="Phone number" value={phone} onChangeText={v => { setPhone(v); setFieldErrors(e => ({ ...e, phone: "" })); }} error={fieldErrors.phone} focusError={["name", "email", "phone", "password"].find(k => fieldErrors[k]) === "phone"} keyboardType="phone-pad" /><FormInput label="Password" value={password} onChangeText={v => { setPassword(v); setFieldErrors(e => ({ ...e, password: "" })); }} error={fieldErrors.password} focusError={["name", "email", "phone", "password"].find(k => fieldErrors[k]) === "password"} secureTextEntry={!showPwd} autoCapitalize="none" /><Pressable accessibilityRole="button" onPress={() => setShowPwd(v => !v)} style={{ paddingVertical: 8 }}><Text style={{ color: colors.primary, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12 }}>{showPwd ? "Hide password" : "Show password"}</Text></Pressable></View>
 
               {/* ── Password strength ── */}
-              <PasswordStrength password={password} />
+              <PasswordStrength password={password} showRequirements={!!fieldErrors.password} />
 
               {/* ── Error ── */}
               {error ? (
