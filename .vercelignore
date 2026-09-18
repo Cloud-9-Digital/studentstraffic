@@ -1,0 +1,14 @@
+# The React Native app ships through EAS/stores, never through Vercel.
+# mobile/android and mobile/ios hold multi-GB local build artifacts (Gradle
+# caches, .cxx, Pods, DerivedData) that made `vercel deploy` try to upload 4.2GB
+# and fail. Git builds were never affected — only 101 mobile files are tracked —
+# but CLI deploys upload the working tree, so they need this.
+mobile/
+
+# Local scratch: audit screenshots and search-spike output.
+.audit/
+analysis/
+
+# Android build outputs kept at the repo root.
+*.aab
+*.apk
