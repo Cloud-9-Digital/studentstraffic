@@ -79,10 +79,6 @@ const MAX_QUERY_TERMS = 8;
 const MIN_PREFIX_TERM_LENGTH = 4;
 export const MAX_PROGRAMS_PER_UNIVERSITY = 3;
 
-const BM25_FIELDS = ["title", "subtitle", "summary", "search_text"] as const;
-const BM25_FUZZY_FIELDS = ["title", "subtitle"] as const;
-const BM25_PREFIX_FIELDS = ["title", "search_text"] as const;
-const BM25_PHRASE_FIELDS = ["title", "search_text"] as const;
 
 const MAX_COUNTRY_PHRASE_TOKENS = 4;
 /**
@@ -712,82 +708,71 @@ export function rerankSearchResults(
     .map((entry) => toSearchResult(entry.result));
 }
 
-function bm25Field(field: string) {
-  return sql.raw(`'${field}'`);
+/**
+ * Strips the characters tsquery treats as operators so a user-supplied term
+ * can be embedded in a `:*` prefix query. Unicode letters are kept, so
+ * non-ASCII university names still match.
+ */
+function sanitizePrefixTerm(term: string) {
+  return term.replace(/['\\:&|!()<>*\s]/g, "");
 }
 
 /**
- * Builds the ParadeDB query for one search. Every core term must match in
- * some field — exactly (BM25-scored), within its typo budget, or as a prefix
- * for the last term — so exact and typo-tolerant matching happen in a single
- * statement. Optional terms only add score.
+ * Builds the WHERE predicate for one search against lakebase_text.
+ *
+ * Every core term must match, mirroring the `must` array pg_search used. The
+ * last token also matches by prefix so a partially typed word still finds
+ * results. That clause runs against `search_tsv_prefix`, which is built with
+ * the unstemmed 'simple' configuration: a prefix query cannot match the
+ * stemmed lexemes in `search_tsv` ('universities' indexes as 'univers', which
+ * 'universit':* does not match).
+ *
+ * websearch_to_tsquery is used rather than per-term plainto_tsquery because it
+ * drops stopwords instead of yielding an empty tsquery that matches nothing.
+ *
+ * Typo tolerance has no lakebase_text equivalent — pg_search did it with
+ * `distance =>`. Misspellings now fall through to the pg_trgm tier, which is
+ * what Neon's migration guide recommends.
  */
-export function buildBm25SearchQuery(analysis: SearchQueryAnalysis): SQL {
+export function buildLakebaseTextFilter(analysis: SearchQueryAnalysis): SQL {
   const lastToken = analysis.tokens.at(-1);
+  const coreTerms = analysis.coreTerms;
+  const lastCoreTerm = coreTerms.at(-1);
+  const prefixTerm =
+    lastCoreTerm !== undefined && lastCoreTerm === lastToken
+      ? sanitizePrefixTerm(lastCoreTerm)
+      : "";
+  const usePrefix =
+    prefixTerm.length >= MIN_PREFIX_TERM_LENGTH && lastCoreTerm !== undefined;
 
-  const must = analysis.coreTerms.map((term) => {
-    const distance = getFuzzyDistance(term);
-    const clauses = BM25_FIELDS.map(
-      (field) => sql`paradedb.match(${bm25Field(field)}, ${term})`,
+  const requiredTerms = usePrefix ? coreTerms.slice(0, -1) : coreTerms;
+  const clauses: SQL[] = [];
+
+  if (requiredTerms.length) {
+    clauses.push(
+      sql`search_tsv @@ websearch_to_tsquery('english', ${requiredTerms.join(" ")})`,
     );
+  }
 
-    if (distance > 0) {
-      clauses.push(
-        ...BM25_FUZZY_FIELDS.map(
-          (field) =>
-            sql`paradedb.match(${bm25Field(field)}, ${term}, distance => ${sql.raw(String(distance))}, transposition_cost_one => true)`,
-        ),
-      );
-    }
+  if (usePrefix && lastCoreTerm !== undefined) {
+    clauses.push(
+      sql`(
+        search_tsv @@ websearch_to_tsquery('english', ${lastCoreTerm})
+        OR search_tsv_prefix @@ to_tsquery('simple', ${`${prefixTerm}:*`})
+      )`,
+    );
+  }
 
-    if (term === lastToken && term.length >= MIN_PREFIX_TERM_LENGTH) {
-      // `match(..., prefix => true)` ignores the prefix flag in pg_search 0.15;
-      // `fuzzy_term` honours it for a single already-normalised token.
-      clauses.push(
-        ...BM25_PREFIX_FIELDS.map(
-          (field) =>
-            sql`paradedb.fuzzy_term(${bm25Field(field)}, ${term}, distance => 0, prefix => true)`,
-        ),
-      );
-    }
+  // Callers only reach this with a non-empty coreTerms, but an all-stopword
+  // query would otherwise produce an empty predicate that matches every row.
+  return clauses.length ? sql.join(clauses, sql` AND `) : sql`false`;
+}
 
-    return sql`paradedb.disjunction_max(ARRAY[${sql.join(clauses, sql`, `)}], tie_breaker => 0.15)`;
-  });
-
-  const optionalTermClauses = analysis.optionalTerms.map(
-    (term) =>
-      sql`paradedb.disjunction_max(ARRAY[${sql.join(
-        BM25_FIELDS.map((field) => sql`paradedb.match(${bm25Field(field)}, ${term})`),
-        sql`, `,
-      )}], tie_breaker => 0.15)`,
-  );
-
-  // Proximity: adjacent query words that also appear next to each other in a
-  // document ("computer science") score above documents that merely contain
-  // both words somewhere.
-  const phraseClauses = analysis.tokens.slice(1).flatMap((term, index) => {
-    const previous = analysis.tokens[index];
-
-    if (
-      !analysis.coreTerms.includes(previous) ||
-      !analysis.coreTerms.includes(term)
-    ) {
-      return [];
-    }
-
-    return [
-      sql`paradedb.disjunction_max(ARRAY[${sql.join(
-        BM25_PHRASE_FIELDS.map(
-          (field) => sql`paradedb.phrase(${bm25Field(field)}, ARRAY[${previous}, ${term}])`,
-        ),
-        sql`, `,
-      )}])`,
-    ];
-  });
-
-  const should = [...optionalTermClauses, ...phraseClauses];
-
-  return should.length
-    ? sql`paradedb.boolean(must => ARRAY[${sql.join(must, sql`, `)}], should => ARRAY[${sql.join(should, sql`, `)}])`
-    : sql`paradedb.boolean(must => ARRAY[${sql.join(must, sql`, `)}])`;
+/**
+ * The query vector `to_bm25query` scores against. Built from the full
+ * normalised query so optional terms still contribute score, which is what the
+ * `should` array did under pg_search.
+ */
+export function buildLakebaseRankVector(analysis: SearchQueryAnalysis): SQL {
+  return sql`to_tsvector('english', ${analysis.normalized})`;
 }

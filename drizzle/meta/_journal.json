@@ -421,6 +421,20 @@
       "when": 1789660800000,
       "tag": "0074_lakebase_text_search",
       "breakpoints": true
+    },
+    {
+      "idx": 74,
+      "version": "7",
+      "when": 1789833600000,
+      "tag": "0077_lakebase_text_prefix_vector",
+      "breakpoints": true
+    },
+    {
+      "idx": 75,
+      "version": "7",
+      "when": 1789833601000,
+      "tag": "0078_drop_pg_search",
+      "breakpoints": true
     }
   ]
 }

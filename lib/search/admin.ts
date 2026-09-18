@@ -38,23 +38,21 @@ async function ensurePostgresSearchIndexes() {
   await db.execute(sql`
     DO $$
     BEGIN
-      IF EXISTS (SELECT 1 FROM pg_am WHERE amname = 'bm25') THEN
-        DROP INDEX IF EXISTS search_documents_bm25_idx;
+      IF EXISTS (SELECT 1 FROM pg_am WHERE amname = 'lakebase_bm25') THEN
+        -- Rebuilt rather than left in place: lakebase_bm25 reads corpus
+        -- statistics at build time and the documents have just changed.
+        DROP INDEX IF EXISTS search_documents_lakebase_bm25_idx;
 
-        CREATE INDEX search_documents_bm25_idx
+        CREATE INDEX search_documents_lakebase_bm25_idx
         ON search_documents
-        USING bm25 (
-          id,
-          title,
-          subtitle,
-          summary,
-          search_text
-        )
-        WITH (
-          key_field='id'
-        );
+        USING lakebase_bm25 (search_tsv);
       END IF;
     END $$
+  `);
+  await db.execute(sql`
+    CREATE INDEX IF NOT EXISTS search_documents_prefix_tsv_idx
+    ON search_documents
+    USING gin (search_tsv_prefix)
   `);
   await db.execute(sql`
     CREATE INDEX IF NOT EXISTS search_documents_title_trgm_idx

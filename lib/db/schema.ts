@@ -1003,6 +1003,15 @@ export const searchDocuments = pgTable(
     searchTsv: tsvector("search_tsv").generatedAlwaysAs(
       sql`setweight(to_tsvector('english', coalesce(title, '')), 'A') || setweight(to_tsvector('english', coalesce(subtitle, '')), 'B') || setweight(to_tsvector('english', coalesce(summary, '')), 'C') || setweight(to_tsvector('english', coalesce(search_text, '')), 'D')`
     ),
+    /**
+     * Unstemmed vector for prefix matching on a partially typed last word.
+     * Separate from searchTsv because a `:*` query cannot match the stemmed
+     * lexemes the 'english' configuration produces. Filtering only; BM25
+     * scoring stays on searchTsv. Index managed in raw SQL.
+     */
+    searchTsvPrefix: tsvector("search_tsv_prefix").generatedAlwaysAs(
+      sql`to_tsvector('simple', coalesce(title, '') || ' ' || coalesce(search_text, ''))`
+    ),
     highlights: jsonb("highlights").$type<SearchDocument["highlights"]>().notNull(),
     countrySlug: text("country_slug"),
     courseSlug: text("course_slug"),

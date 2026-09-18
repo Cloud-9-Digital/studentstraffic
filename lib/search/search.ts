@@ -14,7 +14,8 @@ import { getDb } from "@/lib/db/server";
 import { buildSearchDocuments } from "@/lib/search/documents";
 import {
   analyzeSearchQuery,
-  buildBm25SearchQuery,
+  buildLakebaseRankVector,
+  buildLakebaseTextFilter,
   buildSearchTextCoverageSql,
   findQueryCountrySlugs,
   getCountryQueryPhrases,
@@ -216,7 +217,7 @@ function getMonotonicTimeMs() {
   return Number(process.hrtime.bigint() / BigInt(1_000_000));
 }
 
-async function hasSearchBm25Index() {
+async function hasLakebaseBm25Index() {
   "use cache: remote";
 
   cacheLife("catalog");
@@ -232,7 +233,7 @@ async function hasSearchBm25Index() {
     const rows = await db
       .select({ value: count() })
       .from(sql`pg_indexes`)
-      .where(sql`schemaname = 'public' AND indexname = 'search_documents_bm25_idx'`);
+      .where(sql`schemaname = 'public' AND indexname = 'search_documents_lakebase_bm25_idx'`);
 
     return (rows[0]?.value ?? 0) > 0;
   } catch {
@@ -271,7 +272,7 @@ async function executeSearchCatalog(
       const bm25MatchPoolSize = 200;
       const analysis = analyzeSearchQuery(query);
       const countryHubName = resolveCountryAlias(analysis.coreTerms.join(" "));
-      const canUseBm25 = await hasSearchBm25Index();
+      const canUseBm25 = await hasLakebaseBm25Index();
       const exactMatchBoost = sql`
         CASE
           WHEN lower(title) = lower(${query}) THEN 12
@@ -331,8 +332,8 @@ async function executeSearchCatalog(
       `;
 
       if (canUseBm25 && analysis.coreTerms.length) {
-        // A single statement: typo-tolerant BM25 matching (see
-        // buildBm25SearchQuery), per-type candidate caps so long blog posts or
+        // A single statement: BM25 matching with prefix support (see
+        // buildLakebaseTextFilter), per-type candidate caps so long blog posts or
         // one university's programme catalogue cannot fill the candidate pool,
         // then a primary-key join so wide display columns are read only for
         // the returned candidates. The matched pool is bounded with a top-N
@@ -348,14 +349,19 @@ async function executeSearchCatalog(
               featured,
               title,
               (
-                coalesce(paradedb.score(id), 0)
+                -(
+                  search_tsv <@> to_bm25query(
+                    ${buildLakebaseRankVector(analysis)},
+                    'search_documents_lakebase_bm25_idx'
+                  )
+                )
                 + ${exactMatchBoost}
                 + ${businessBoost}
                 + ${countryIntentBoost}
               )::float AS score
             FROM search_documents
             WHERE ${sql.join(
-              [...conditions, sql`id @@@ ${buildBm25SearchQuery(analysis)}`],
+              [...conditions, buildLakebaseTextFilter(analysis)],
               sql` AND `
             )}
             ORDER BY score DESC, id

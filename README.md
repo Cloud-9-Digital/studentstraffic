@@ -82,7 +82,7 @@ The interface is intentionally light-only. The visual direction should stay mode
 - shadcn/ui
 - Neon Postgres
 - Drizzle ORM
-- ParadeDB `pg_search`
+- Neon `lakebase_text`
 - PostgreSQL `pg_trgm`
 - `react-phone-number-input`
 
@@ -144,9 +144,11 @@ Search is Postgres-native and currently does not depend on Algolia, Typesense, o
 
 Current search stack:
 
-- `pg_search` for BM25-style ranking
-- ParadeDB query builders for exact and fuzzy matching
-- `pg_trgm` fallback for similarity
+- `lakebase_text` for BM25 ranking over a weighted `tsvector`
+- `websearch_to_tsquery` for matching, with `:*` prefix on a partially typed
+  last word (against an unstemmed `simple` vector, since `:*` cannot match
+  stemmed lexemes)
+- `pg_trgm` fallback for similarity and typo tolerance
 - a denormalized `search_documents` table as the searchable index
 
 This gives us:
@@ -286,8 +288,8 @@ The search logic lives in `lib/search/search.ts`.
 
 Search ranking combines:
 
-- BM25 relevance from ParadeDB
-- fuzzy matching from ParadeDB query builders
+- BM25 relevance from `lakebase_text`
+- prefix matching on the last query word
 - trigram similarity fallback
 - small business-aware boosts for featured or curated result types
 

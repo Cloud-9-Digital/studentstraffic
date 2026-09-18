@@ -7,7 +7,8 @@ import { PgDialect } from "drizzle-orm/pg-core";
 import type { SearchResult } from "@/lib/data/types";
 import {
   analyzeSearchQuery,
-  buildBm25SearchQuery,
+  buildLakebaseRankVector,
+  buildLakebaseTextFilter,
   buildSearchTextCoverageSql,
   findQueryCountrySlugs,
   getEditDistance,
@@ -69,29 +70,48 @@ test("measures typos with adjacent transpositions costing one edit", () => {
   assert.equal(getEditDistance("kiit", "iit"), 1);
 });
 
-test("builds one BM25 query with typo budgets, last-term prefix and optional terms", () => {
-  const { sql, params } = new PgDialect().sqlToQuery(
-    buildBm25SearchQuery(analyzeSearchQuery("tbilsi medical fees")),
+test("builds one lakebase_text predicate with last-term prefix and optional terms", () => {
+  const dialect = new PgDialect();
+
+  // Optional terms are left out of the predicate (they only add score), so a
+  // trailing optional term does not become the prefix clause.
+  const optional = dialect.sqlToQuery(
+    buildLakebaseTextFilter(analyzeSearchQuery("tbilsi medical fees")),
   );
 
-  assert.match(sql, /^paradedb\.boolean\(must => ARRAY\[/);
-  assert.match(sql, /should => ARRAY\[/);
-  assert.match(sql, /distance => 1, transposition_cost_one => true/);
-  assert.ok(params.includes("tbilsi"));
-  assert.ok(params.includes("fees"));
+  assert.match(optional.sql, /search_tsv @@ websearch_to_tsquery\('english', \$\d+\)/);
+  assert.doesNotMatch(optional.sql, /search_tsv_prefix/);
+  assert.deepEqual(optional.params, ["tbilsi medical"]);
 
-  // Acronyms get no typo budget (only the last-term prefix clause).
-  const acronym = new PgDialect().sqlToQuery(buildBm25SearchQuery(analyzeSearchQuery("kiit")));
-  assert.doesNotMatch(acronym.sql, /transposition_cost_one/);
-  assert.doesNotMatch(acronym.sql, /should =>/);
-
-  const partial = new PgDialect().sqlToQuery(buildBm25SearchQuery(analyzeSearchQuery("manipal univ")));
-  assert.match(partial.sql, /paradedb\.fuzzy_term\('title', \$\d+, distance => 0, prefix => true\)/);
-
-  const programme = new PgDialect().sqlToQuery(
-    buildBm25SearchQuery(analyzeSearchQuery("computer science canada")),
+  // ...but they still contribute to the BM25 score.
+  const rank = dialect.sqlToQuery(
+    buildLakebaseRankVector(analyzeSearchQuery("tbilsi medical fees")),
   );
-  assert.equal(programme.sql.match(/paradedb\.phrase\('search_text'/g)?.length, 2);
+  assert.match(rank.sql, /to_tsvector\('english', \$\d+\)/);
+  assert.deepEqual(rank.params, ["tbilsi medical fees"]);
+
+  // A single core term still gets its prefix clause.
+  const acronym = dialect.sqlToQuery(buildLakebaseTextFilter(analyzeSearchQuery("kiit")));
+  assert.match(acronym.sql, /search_tsv_prefix @@ to_tsquery\('simple', \$\d+\)/);
+  assert.ok(acronym.params.includes("kiit:*"));
+
+  // A partially typed last word matches by prefix against the unstemmed
+  // vector, while the earlier terms stay required.
+  const partial = dialect.sqlToQuery(
+    buildLakebaseTextFilter(analyzeSearchQuery("manipal univ")),
+  );
+  assert.match(partial.sql, /AND/);
+  assert.deepEqual(partial.params, ["manipal", "univ", "univ:*"]);
+
+  // Terms below the prefix threshold get no prefix clause.
+  const short = dialect.sqlToQuery(buildLakebaseTextFilter(analyzeSearchQuery("mbbs in uk")));
+  assert.doesNotMatch(short.sql, /search_tsv_prefix/);
+
+  // tsquery operators in user input cannot break the prefix clause.
+  const hostile = dialect.sqlToQuery(
+    buildLakebaseTextFilter(analyzeSearchQuery("kazan univ:*|!&()")),
+  );
+  assert.ok(hostile.params.every((p) => typeof p !== "string" || !/[|!&()]/.test(p)));
 });
 
 test("a misspelled university name ranks the named university first", () => {
