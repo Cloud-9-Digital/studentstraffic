@@ -1,6 +1,7 @@
 import {
   bigint,
   boolean,
+  customType,
   index,
   integer,
   jsonb,
@@ -14,6 +15,17 @@ import {
   varchar,
 } from "drizzle-orm/pg-core";
 import { sql } from "drizzle-orm";
+
+/**
+ * Postgres `tsvector`. Drizzle has no native mapping for it, and we only ever
+ * read it through SQL, so a thin custom type is enough to keep the column in
+ * the schema snapshot (otherwise drizzle-kit generates a DROP COLUMN for it).
+ */
+const tsvector = customType<{ data: string; driverData: string }>({
+  dataType() {
+    return "tsvector";
+  },
+});
 import type {
   CourseStream,
   FeeStatus,
@@ -982,6 +994,15 @@ export const searchDocuments = pgTable(
     subtitle: text("subtitle"),
     summary: text("summary").notNull(),
     searchText: text("search_text").notNull(),
+    /**
+     * BM25 search vector backing `search_documents_lakebase_bm25_idx`.
+     * Field weights stand in for the per-field scoring pg_search used to do
+     * with paradedb.disjunction_max: A=title, B=subtitle, C=summary, D=search_text.
+     * The index itself is managed in raw SQL, like the pg_trgm indexes.
+     */
+    searchTsv: tsvector("search_tsv").generatedAlwaysAs(
+      sql`setweight(to_tsvector('english', coalesce(title, '')), 'A') || setweight(to_tsvector('english', coalesce(subtitle, '')), 'B') || setweight(to_tsvector('english', coalesce(summary, '')), 'C') || setweight(to_tsvector('english', coalesce(search_text, '')), 'D')`
+    ),
     highlights: jsonb("highlights").$type<SearchDocument["highlights"]>().notNull(),
     countrySlug: text("country_slug"),
     courseSlug: text("course_slug"),
