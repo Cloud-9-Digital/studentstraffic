@@ -1,0 +1,94 @@
+{
+  "batchId": "cover-pass-03b-uzbekistan",
+  "notes": "Cover-only re-pass for 9 published Uzbek universities, researched 2026-09-16 using the Wikimedia-Commons-first method (Commons search in English/Uzbek-Latin/Russian across namespaces 6|14, category listings with imageinfo+extmetadata, and uz/ru/en Wikipedia pageimages), falling back to the institution's own .uz domain only when Commons was empty. Non-Latin API queries were issued via node fetch (curl --data-urlencode mangles Cyrillic in this Git Bash environment and silently returns an empty result set). Every nominated URL was verified in-session with a ranged GET (HTTP 200/206 + image/* content-type) and every nominated image was additionally downloaded and visually inspected before being accepted, so no candidate rests on its filename or its Commons description alone. 4 ready, 5 hold. Systemic finding: the July 2026 alphabetical pass held all of these after trying only official sites; Commons in fact carries good campus photography for the Tashkent Medical Academy lineage (incl. its Urgench branch) and for Gulistan, and kkmi.uz publishes a clean facade shot of its own main building. The remaining 5 holds are genuine: two are unresolved institutional-identity cases (Second Tashkent State Medical Institute, Navoi State University), and three private/new institutions publish only stock photography, people/marketing photography or watermarked event photos on their own domains. Rights caveat for reviewers: all Commons items nominated here are CC BY-SA 4.0 and require author + licence attribution at the point of display; the kkmi.uz item is an institutional image published on the institution's own domain, not an open licence.",
+  "entries": [
+    {
+      "universitySlug": "first-tashkent-state-medical-institute",
+      "universityName": "First Tashkent State Medical Institute",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Toshkent_tibbiyot_akademiyasi_bosh_o%27quv_binosi.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Boboyev1996 (self-published work), File:Toshkent tibbiyot akademiyasi bosh o'quv binosi.jpg in Category:Tashkent Medical Academy; depicts the main academic building (bosh o'quv binosi) of Tashkent Medical Academy in Tashkent, facade signage reading 'TOSHKENT TIBBIYOT AKADEMIYASI' clearly legible above the entrance, flagpoles with the Uzbek flag and the academy's own pennants - visually confirmed by downloading and inspecting the image, it is a building exterior, not a logo, portrait or event photo. Institutional basis: the First Tashkent State Medical Institute is the direct lineage institution of Tashkent Medical Academy, into which it was merged by presidential decree in 2005 and whose main Tashkent campus it occupies; this is the parent/successor institution's own main building and is used here explicitly on that lineage basis. Deliberately NOT reused for the second-tashkent-state-medical-institute record. 1280x720 px landscape; verified HTTP 206 image/jpeg",
+        "proposedPublicId": "first-tashkent-state-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "gulistan-state-university",
+      "universityName": "Gulistan State University Faculty of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Gulistan_State_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Chrisvomdeich (self-published work), File:Gulistan State University.jpg, described on Commons as 'Gulistan State University, Usbekistan' and categorised under Category:Guliston, Uzbekistan; depicts the university's campus buildings in Gulistan - a two-storey block signed 'MA'NAVIYAT VA MA'RIFAT MARKAZI' (the campus spirituality-and-enlightenment centre) adjoining the four-storey teaching block, with the Uzbek flag flying over the entrance and the paved campus forecourt in the foreground - visually confirmed by downloading and inspecting the image. This record is the medicine faculty of Gulistan State University, so the parent university's own campus building is a fair subject for the cover. 4032x3024 px landscape; verified HTTP 206 image/jpeg. Supersedes the July 2026 pass, which rejected guldu.uz's og:image because it was a scanned admissions-exam-schedule PDF page; that rejection was correct, but Commons was not checked at the time.",
+        "proposedPublicId": "gulistan-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "institute-pharmaceutical-education-research",
+      "universityName": "Institute of Pharmaceutical Education and Research",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Progress on identity but still no usable cover. Commons searched in English ('Institute of Pharmaceutical Education and Research', 'Profi'-style name variants), Uzbek-Latin ('Toshkent farmatsevtika instituti', \"Farmatsevtika ta'limi va tadqiqotlari instituti\") and Russian ('Ташкентский фармацевтический институт') across namespaces 6|14 - zero file or category hits for this institution. uz.wikipedia has no article. Unlike the July pass, the correct official domain WAS identified this time: ftti.uz, whose <title> is \"Farmatsevtika ta'lim va tadqiqot instituti\", the institution's registered Uzbek name (FTTI / IPER, licence No. 0033, Yunusabad, Tashkent); the previously-probed iper.uz remains an unbranded template site titled merely 'University' and was again not used, and miper.uz does not resolve. ftti.uz was mined in full (homepage, about.html, gallery.html, contact.html, welcome.html) and every image candidate was downloaded and inspected: /templates/ftti/images/headeruz.jpg is a marketing banner built on a stock gloved-hand-and-hexagons composite with overlaid admissions text; /templates/ftti/images/about.jpg is a two-up laboratory interior collage; /uploads/posts/2025-05/medium/1-7.jpg are scans of the institute's licence and registry documents; the whole gallery.html set (01-35) is interior classroom, conference and ceremony photography of people, every frame carrying an 'FTTI.UZ' watermark burnt into the lower-right corner. No exterior building or campus photograph is published anywhere on the institution's own domain. Held: nothing on hand is a campus/building image, and watermarked event photos of identifiable people are excluded by the brief.",
+      "officialDomainFound": "https://ftti.uz"
+    },
+    {
+      "universitySlug": "medical-institute-of-karakalpakstan",
+      "universityName": "Medical Institute of Karakalpakstan",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://kkmi.uz/wp-content/uploads/2024/06/3j6h6fdh6f8gh-1568x882.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph published on the institution's own domain, kkmi.uz (Qoraqalpog'iston tibbiyot instituti / Karakalpakstan Medical Institute, Nukus), used as the homepage hero image on both kkmi.uz/ and kkmi.uz/en/; depicts the institute's main building head-on from the street - a three-storey green-and-white block whose pediment carries the institute's own signage 'QARAQALPAQSTAN MEDICINA INSTITUTI' and whose gate plaques read 'O'zbekiston Respublikasi Sog'liqni saqlash vazirligi - Qoraqalpog'iston Tibbiyot Instituti' - visually confirmed by downloading and inspecting the image; it is a building exterior, not stock, a logo, a portrait or an event photo. 1568x882 px landscape (WordPress-generated size); the full-resolution original of the same photograph is also live and verified at https://kkmi.uz/wp-content/uploads/2024/06/3j6h6fdh6f8gh.jpg (HTTP 200 image/jpeg, 2.83 MB) if the integrator prefers maximum resolution, though its pixel dimensions were not read in this session. Nominated URL verified HTTP 200 image/jpeg. Resolves the July 2026 hold, which failed only because it guessed karmi.uz / nukusmedinst.uz / qmi.uz; the actual domain is kkmi.uz. No open licence - this is an institution-published image, so reuse rests on institutional-image grounds and should be reviewed as such.",
+        "proposedPublicId": "medical-institute-of-karakalpakstan-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "navoi-state-university",
+      "universityName": "Navoi State University Faculty of Natural Sciences and Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Official domain found, but it publishes stock photography only. Commons searched in Uzbek-Latin ('Navoiy davlat universiteti', 'Navoiy davlat pedagogika instituti'), Russian ('Навоийский государственный университет') and English ('Navoi State University') - the only institutional hits are File:NSUMT.webp and File:NSMTU.jpg, which belong to Navoi State University of MINING AND TECHNOLOGY, a different institution, and were rejected to avoid conflating the two. uz.wikipedia's 'Navoiy davlat universiteti' article carries no photograph (only stub/graduation-hat icons). The correct official domain for the university formed on 31 October 2024 from Navoi State Pedagogical Institute is nsuz.uz (uz and ru interfaces both checked); its imagery is served from generically named paths (/about-campus.jpg, /news/campus.jpg, /news/building.jpg, /news/library.jpg) and two of these were downloaded and inspected: /about-campus.jpg is a North-American-style red-brick-and-glass academic building on a manicured lawn, and /news/campus.jpg is a glass-walled library reading room with parquet and red chairs - both are unmistakably western stock photography, not Navoi, and /news/building.jpg is byte-identical in size to /about-campus.jpg. The two /storage/images/<uuid>.jpg items are news thumbnails, not campus views. Other plausible domains probed and dead or blocked: navdu.uz and nsu.uz do not resolve, navoiy-uni.uz, navdpi.uz and the old nspi.uz all return 403 Forbidden. Held rather than publish stock.",
+      "officialDomainFound": "https://nsuz.uz"
+    },
+    {
+      "universitySlug": "profi-university",
+      "universityName": "Profi University Faculty of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Official domain found this pass (correcting the July pass, which wrongly probed Georgian and Kyrgyz domains for what is a Tashkent institution), but no acceptable cover exists on it. Commons searched in English ('Profi University Tashkent', 'Profi University') and Uzbek-Latin ('Profi universiteti') across namespaces 6|14 - no institutional files or categories; no Wikipedia article. The live official site is profiuniversity.uz (root 302-redirects to /en; the /en/about, /en/contact and /en/filial/* subpages 302-loop and returned nothing usable to curl, so only the homepage could be mined). Every non-logo image on the homepage was enumerated and the plausible ones downloaded and inspected: the three hero banners under admin.profiuniversity.uz/storage/banners/ are people-first marketing photography - a group of seven graduands in caps and gowns posed thumbs-up in front of the 'PROFI UNIVERSITY' entrance sign, and three students in branded white coats leafing through a prospectus under an interior 'Profi University' wall logo; the /storage/abouts/ images are staged library portraits of a single student; /storage/galleries/ items are vertical social-video stills with Russian marketing captions ('КАК ЭТО БЫЛО: от абитуриента до студента'); /storage/employees/ are staff portraits. The building does appear behind the graduation group, but the frame is dominated by identifiable individuals and is a posed group portrait, which the brief excludes. No clean exterior or campus photograph is published on the institution's own domain. Held.",
+      "officialDomainFound": "https://profiuniversity.uz"
+    },
+    {
+      "universitySlug": "second-tashkent-state-medical-institute",
+      "universityName": "Second Tashkent State Medical Institute",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Unresolved institutional identity - held deliberately so that it is not given the same image as the first-tashkent-state-medical-institute record. Like the First, the Second Tashkent State Medical Institute ceased to exist as a standalone body when both were merged into Tashkent Medical Academy by presidential decree in 2005, but unlike the First it has no identifiable surviving campus of its own in any source checked here. Commons searched in Russian ('Второй Ташкентский государственный медицинский институт'), Uzbek-Latin ('Ikkinchi Toshkent davlat tibbiyot instituti', \"TTA 2-o'quv binosi\", 'Toshkent tibbiyot akademiyasi ikkinchi') and English - zero hits under any of them; en.wikipedia has no article ('Second Tashkent State Medical Institute' returns missing); ru.wikipedia's 'Ташкентская медицинская академия' article illustrates only the academy logo, a historical graduation photo and File:Ректорат ТМА.jpg (which its own Commons description identifies as the TMA student DORMITORY, not a rectorate or a Second-institute building, so it was rejected as mislabelled). The full Category:Tashkent Medical Academy tree (17 campus files plus the Urgench, Fergana and Termez branch subcategories) was enumerated: every building file is captioned as the academy's main building, a numbered 'TTA campus' view or a named branch, and none is attributable to the historic Second institute's campus. Assigning any TMA building here would either duplicate the First institute's cover or silently mislabel an arbitrary campus view. Needs the same editorial decision the July pass flagged - whether this record should be merged into Tashkent Medical Academy or retired - before any cover is sourced.",
+      "identityIssue": true
+    },
+    {
+      "universitySlug": "urgench-ranch",
+      "universityName": "Urgench Ranch University of Technology Faculty of Medical Sciences",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Current official domain identified (ranch.university - the July pass worked against an older ranch.uz SPA, which no longer resolves), but it publishes no campus photograph at all. Commons searched in Uzbek-Latin ('Urganch Ranch') and English - no hits; no Wikipedia article. ranch.university's server-rendered HTML is a 7 KB SPA shell whose only og:image is the logo (/assets/img/logo/RANCH_LOGO_RGB_03.png). Its compiled bundle /assets/index-BPbkDHug.js (876 KB) was grepped exhaustively for asset references: the ONLY image paths in the entire application are the two RANCH logo PNGs, three flagsapi.com country flags, and seven img.youtube.com/vi/<id>/maxresdefault.jpg video thumbnails - no campus, building or gallery imagery is bundled or referenced. The API was probed for a media source (/api/banners, /api/news, /api/posts, /api/gallery) and all four return 404 'route could not be found'. Sibling domains probed: ranch.uz and utu.uz do not resolve; utu-ranch.uz returns 200 but only a 1.2 KB placeholder. YouTube thumbnails are third-party video stills, not photographs published on the institution's own domain, and are excluded by the brief. Held. (Note: the logo for this record was already resolved in the July second pass; only the cover remains outstanding.)",
+      "officialDomainFound": "https://ranch.university"
+    },
+    {
+      "universitySlug": "urgench-state-medical-institute",
+      "universityName": "Urgench State Medical Institute",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/TTA_Urganch_filiali.png",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Askarov547 (self-published work), File:TTA Urganch filiali.png in Category:Tashkent Medical Academy; depicts the main teaching building of the Tashkent Medical Academy Urgench branch in Urgench, with its own facade signage in Uzbek and English - 'TOSHKENT TIBBIYOT AKADEMIYASI URGANCH FILIALI' and 'URGENCH BRANCH OF TASHKENT MEDICAL ACADEMY' - clearly legible above the entrance colonnade, visually confirmed by downloading and inspecting the image. Institutional basis: Urgench State Medical Institute was constituted in April 2025 on the basis of exactly this Urgench branch of Tashkent Medical Academy (the same finding recorded in the July 2026 pass, which then held for lack of a domain), so this is the institute's own campus, not a parent-brand substitute. 1280x720 px landscape PNG; verified HTTP 206 image/png. Alternative if a JPEG is preferred: File:TTA Urganch filiali asosiy o'quv binosi.jpg, https://upload.wikimedia.org/wikipedia/commons/b/bd/TTA_Urganch_filiali_asosiy_o%27quv_binosi.jpg, same building, CC BY-SA 4.0 but author recorded on Commons as 'Unknown author' and only 980x490 px - also verified HTTP 206 image/jpeg this session, but not preferred because of the weaker attribution and lower resolution. Not to be confused with urganch-med.uz, a Public Health Technicum, which the July pass correctly rejected.",
+        "proposedPublicId": "urgench-state-medical-institute-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "batchId": "cover-pass-02-georgia",
+  "notes": "Second-pass COVER-only research for 19 published Georgian universities whose cover_image_url is empty, carried out 2026-09-16. Method: (1) grepped the July 2026 alphabetical pass (a-*.json and second-pass-patches/patch-*.json) for every slug so dead ends were not repeated; (2) fetched each institution's own domain with curl (desktop UA), including Georgian-language paths, campus/infrastructure/gallery/contact subpages, Next.js/React SPA JSON APIs (seu.edu.ge -> cc.seu.edu.ge/api/photos; newvision.ge -> api.newvision.ge Umbraco delivery API) and CSS background-image declarations; (3) downloaded every plausible candidate and visually inspected it before nominating; (4) searched Wikimedia Commons via the API in English and Georgian for all named institutions - zero usable campus photographs exist there (only two logo files, File:GRUNI.png and File:Logo of New Vision University.png), so Commons is a dead end for this cohort. Bar applied (relaxed vs. the July pass): an official photograph published on the institution's own domain of that institution's own building/campus/facility; exteriors preferred, a clearly-identified interior of the institution's own facility accepted as a last resort. Rejected on sight: logos/wordmarks used as og:image, designed marketing composites with text overlay, graduation/ceremony/news-event photos, posed portraits of people, stock imagery (e.g. gruni.edu.ge medical_2016.jpg carries EXIF copyright 'everythingpossible - Fotolia'; newvision.ge school-cover 4 and 7 are abstract stock composites), and generic city-of-Tbilisi/Kutaisi tourism shots. Three identity questions the July pass left open were resolved this pass: ccmi.edu.ge IS 'Critical Care Medicine Institute | Tbilisi, Georgia'; iut.edu.ge IS 'Tbilisi International University' (medicine, dentistry and physiotherapy programmes) and matches the 'International University of Tbilisi School of Health' record; unik.edu.ge 301-redirects to cue.edu.ge, confirming Kutaisi University == Central University of Europe and therefore that 'kutaisi-institute-of-medicine' duplicates 'central-university-of-europe'. Every sourceUrl below was verified in this session with curl -sIL and returns HTTP 200 with an image/* content-type; no URL was guessed or reconstructed. No uploads, no database writes, no scripts run.",
+  "entries": [
+    {
+      "universitySlug": "alte-university-georgia",
+      "universityName": "Alte University",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Re-checked alte.edu.ge in Georgian and English: homepage, /ka/universiteti-erti-shekhedvit, /ka/sauniversiteto-tsentrebi, /ka/galerea, /ka/kampus-turi and /ka/sivrtseebi-ghonisdziebebistvis. The site is a Next.js app whose gallery is client-rendered; /api/gallery, /api/galleries and /api/page/galerea all 404, so only the images embedded in server-rendered markup are reachable. Every one of those is a marketing asset, not a campus photograph: /api/storage/og_image/alte-universiteti.jpg and /img/alte-university-default.jpg are the logo on a flat background; /api/storage/gallery/RrCA6b4KVO.webp and jcbbLMpcvY.webp (3749x2800 / 3738x2800) are the same posed studio shot of four students in front of the interior lobby signage with large 'EDUCATION FOR CONSTANT DEVELOPMENT' / Georgian slogan text burned in; /api/storage/gallery/-6.webp, -289.webp and xbP28biGzP.webp (all 1920x752) are advertising banners (typographic promo panel; a six-up grid of cast members from a TV-style campaign). No exterior of the building and no unbranded interior of an Alte facility is published anywhere reachable on the domain. Wikimedia Commons has nothing under 'Alte University' or 'ალტე უნივერსიტეტი'."
+    },
+    {
+      "universitySlug": "caucasus-medicine-school",
+      "universityName": "Caucasus Medicine School",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://cu.edu.ge/files/gallery/International%20Relations/2020/CU%20CAMPUS/1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from Caucasus University's own domain (cu.edu.ge), published in the 'CU CAMPUS' gallery on the university's own campus page https://cu.edu.ge/about-us/cu-campus; depicts an aerial exterior view of the Caucasus University campus in Tbilisi - the historic stone main building, forecourt, fountain, grounds and sports pitch - which is the campus the Caucasus Medicine School (a school of Caucasus University, cu.edu.ge/en/schoolss/chs, NOT Caucasus International University) sits on; no photographer watermark, unlike several other files in the same gallery which carry a '(c) Photo courtesy of KOM Hive' credit and were therefore avoided; verified HTTP 200 image/jpeg, 967x1080 px (portrait-leaning, so a landscape crop across the building band will be needed for cover use)",
+        "proposedPublicId": "caucasus-medicine-school-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "central-university-of-europe",
+      "universityName": "Central University of Europe Faculty of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://cue.edu.ge/wp-content/uploads/2025/09/F9A8063-1200x800.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own WordPress media library (cue.edu.ge), published in the photo set on the university's own 'About the Tbilisi campus' page https://cue.edu.ge/chvens-shesaxeb/tbilisis-campusis-shesaxeb/; depicts the faculty's own teaching laboratory on the Tbilisi campus - benches with sinks, fume cabinet, analyser and glassware, no people; accepted as a last-resort interior because no exterior of the building is published anywhere on the domain (the homepage hero CoverWebMedic.jpg is a designed blue composite with a Tbilisi skyline silhouette, slide1-banner.webp is an outdoor graduation ceremony, and the Kutaisi page only carries city-tourism stock such as Kutaisi_Golden_morning.jpg and Kutaisi_airport_interior_information.jpg); verified HTTP 200 image/jpeg, 1200x800 px (a -scaled.jpg original also exists at the same path)",
+        "proposedPublicId": "central-university-of-europe-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "classical-traditional-medicine-academy",
+      "universityName": "Classical and Traditional Medicine Academy",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Unresolved identity - no media can be attributed. Searched in English ('Classical and Traditional Medicine Academy' Tbilisi Georgia) and probed plausible Georgian domains (ctma.edu.ge - DNS resolution failure). Web search surfaces no official site: results are other institutions entirely (Tbilisi Medical Academy, Tbilisi State Medical University, Georgian International Academy) plus MBBS-abroad directory listings that merely repeat the name. Wikimedia Commons API returns nothing for the name in English or Georgian. Consistent with the July 2026 pass, which also flagged this as an unresolved-identity record rather than a missing-asset one. Until the legal institution name and official domain are confirmed there is no domain to source an official photograph from, and nothing should be attached."
+    },
+    {
+      "universitySlug": "critical-care-medicine-institute",
+      "universityName": "Critical Care Medicine Institute",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Identity RESOLVED this pass (correcting the July 2026 'unresolved identity' finding): https://www.ccmi.edu.ge/ returns HTTP 200 with <title>Critical Care Medicine Institute | Tbilisi, Georgia</title>. However no usable cover exists on it. The site is a small Wix build; its entire image inventory, harvested from the Georgian homepage, the /en page and the /სტრუქტურა pages, is four files on static.wixstatic.com: three UI icons (adress.png, websites.png, chat/phone/mail glyphs), the institute logo (logo.png), and one photograph, Capture_PNG.png (1007x439). That photograph is a panoramic lobby interior whose reception signage reads 'TBILISI CENTRAL HOSPITAL' - it depicts the affiliated hospital's building, a separate legal entity, not the institute's own premises, so publishing it as the institute's campus cover would be a misattribution. No gallery, campus, infrastructure or press page exists on the domain; Wikimedia Commons has nothing. Recommend recording ccmi.edu.ge as the official domain on the record, but holding the cover."
+    },
+    {
+      "universitySlug": "david-tvildiani-medical-university",
+      "universityName": "David Tvildiani Medical University AIETI Medical School",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://dtmu.org/assets/Campus-Lookaround_151.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own domain (dtmu.org), used as a CSS background-image in the campus section of the dtmu.org homepage and named 'Campus-Lookaround' by the university itself; depicts an exterior view of the DTMU campus in Tbilisi - the multi-storey teaching block on the left, the walled inner courtyard with its brick paving, lawns and sundial feature, and the surrounding Tbilisi hillside; no people, no event, no text overlay; verified HTTP 200 image/jpeg, 1280x720 px landscape. Chosen over /assets/tvild1.webp, tvild2.webp and tvild-3.webp on the same domain, which are graduation-ceremony photographs (diploma handover on stage in front of the DTMU backdrop), and over the /assets/news-grad-*.jpg files the July pass had already rejected.",
+        "proposedPublicId": "david-tvildiani-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "east-european-university",
+      "universityName": "East European University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://eeu.edu.ge/wp-content/uploads/2020/07/DPI0782-2048x1360.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own WordPress media library (eeu.edu.ge), published in the university's own infrastructure gallery at https://eeu.edu.ge/portfolio/infrastructure/; depicts a plain daylight exterior of the East European University main building in Tbilisi - the glass-and-stone facade with the rooftop EEU sign, forecourt and pines - with no people, event or text overlay; verified HTTP 200 image/jpeg, 2048x1360 px landscape (a larger -scaled.jpg original exists at the same path). A second clean exterior of the same building, DPI0774, is available as a fallback at https://eeu.edu.ge/wp-content/uploads/2020/07/DPI0774-2048x1365.jpg style paths if a different angle is preferred.",
+        "proposedPublicId": "east-european-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "euroregional-teaching-university-ersu",
+      "universityName": "Euroregional Teaching University LLC",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No live official domain, so no official photograph can exist to source. Probed ersu.edu.ge and www.ersu.edu.ge (both DNS resolution failure) in addition to the sukhishvilebi.edu.ge predecessor domain the July 2026 pass established is dead/parked. English and Georgian search for 'Euroregional Teaching University' Gori returns no official site at all - results are the unrelated Gori State Teaching University (gu.edu.ge), International Teaching University of Georgia and European University (Georgia). Wikimedia Commons has nothing under the name. The only recoverable imagery remains the 2011-2012 Wayback snapshot of the pre-rebrand 'Sukhishvili Teaching University' logo, which is 14 years old, a logo not a campus photo, and would misattribute identity across the rename. Unchanged from the July pass: this needs a human decision on the institution's current identity before any media is attached."
+    },
+    {
+      "universitySlug": "georgian-american-university",
+      "universityName": "Georgian American University",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Checked gau.edu.ge homepage plus /ka/for-foreign-students/why-gau, /ka/students-life, /fast-facts, /ka/about/presidents-greeting and the gauedu.gau.edu.ge subdomain, harvesting both <img> sources and CSS background-image declarations under /storage/app/. Everything published is promotional rather than a campus photograph: the homepage hero /storage/app/uploads/public/6a2/ff4/95b/thumb_13546_1920_800_0_0_crop.png is a graduation-ceremony shot with an 'ACT TO WIN / GRANTS - SCHOLARSHIPS / 95%' marketing overlay; the other slider backgrounds (6a8d5e87cf1c8663357255.jpg, 6a9dd2c24cd53198497067.jpg, 6a8d5df1593d8733012140.jpeg) are square 1200x1200/960x960 social-media promo tiles; /storage/app/media/pageImages/Campus.jpg, despite its filename, is a collage of eight small snapshots of students at indoor events; /storage/app/uploads/public/5c7/eed/f24/5c7eedf24f457591153208.jpg is a decorative carved-stone texture strip. The remaining carousel images are pulled from a Facebook CDN with non-persistent numeric filenames and no stable direct URL, as the July pass also found. No exterior of a GAU building and no unbranded interior of a GAU facility is published on the domain; Wikimedia Commons has nothing usable."
+    },
+    {
+      "universitySlug": "georgian-national-university-seu",
+      "universityName": "Georgian National University SEU",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://cc.seu.edu.ge/gallery/692edd95d0e07.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own content backend (cc.seu.edu.ge, the API host seu.edu.ge's SPA loads all site media from); it is photo 30 of the university's own 'SEU Campus' / 'SEU-ს კამპუსი' gallery, category 58 of https://cc.seu.edu.ge/api/photos; depicts the SEU Blockchain Lab on the SEU campus - the room is empty of people and every monitor displays the SEU wordmark wallpaper, with 'SEU BLOCKCHAIN LAB' and partner logos on the end wall, so the facility is unambiguously identified as SEU's own; accepted as a last-resort interior because the SEU Campus gallery contains no exterior of the building (its other frames are a decorated atrium ice rink, library/auditorium/lecture-hall interiors with students, a dental simulation clinic and welcome-party crowd shots); verified HTTP 200 image/jpeg, 756x425 px landscape - below the 1000 px preference, which is the maximum the gallery serves. CAVEAT for the integrator: the July 2026 pass flagged this slug as a duplicate of 'seu-georgian-national-university'; the canonical-record decision should be made before the same asset is uploaded twice.",
+        "proposedPublicId": "georgian-national-university-seu-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "grigol-robakidze-university",
+      "universityName": "Grigol Robakidze University School of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Walked gruni.edu.ge: homepage, the contact page, the sitemap, all six /schools/index/* school pages (the medicine school is id 1442824513) and the /other_content and /menu_content about pages. Nothing on the domain is a usable campus photograph. The only site-chrome photographs, /assets/bottomslider/images/1-4.jpg, are 220x124 px thumbnails (one is a night-time street scene) - far too small for a cover. The school header banners under /uploads/images/Schools/School Header Banners/ are 1600x82 px decorative strips, and /uploads/images/Other_Page/gruniverse/gruniverse.jpg is 1600x160. Critically, /uploads/images/Schools/School thumbs/medical_2016.jpg - the medicine school's own thumbnail - carries the EXIF copyright string 'everythingpossible - Fotolia', i.e. it is licensed stock photography, not an image of the university, and must not be used. The remaining /uploads/images/ content is news-article covers and staff/blog portraits. Wikimedia Commons holds only File:GRUNI.png, a logo, no campus photograph."
+    },
+    {
+      "universitySlug": "international-university-of-tbilisi",
+      "universityName": "International University of Tbilisi School of Health",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://iut.edu.ge/wp-content/uploads/2024/02/image-007.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the institution's own WordPress media library (iut.edu.ge), published in the university's own photo gallery at https://iut.edu.ge/abiturientebisatvis/potogalerea/; depicts the university's clinical-skills simulation ward - hospital beds with patient manikins, ventilator and defibrillator trolleys, wheelchair - which is directly relevant to the School of Health record; accepted as a last-resort interior because the institution publishes no exterior of its building (the 15-frame gallery is entirely indoor: lecture rooms, board room, moot court, anatomy museum, physiotherapy room, simulated operating theatre, student lounge); verified HTTP 200 image/jpeg, 1280x960 px landscape. IDENTITY NOTE for the integrator: the July 2026 pass could not locate this institution. iut.edu.ge resolves and self-describes throughout its Georgian markup as 'თბილისის საერთაშორისო უნივერსიტეტი' (Tbilisi International University), running accredited medicine, dentistry, physiotherapy and Georgian-language programmes - this is the institution behind the record, and iut.edu.ge should be recorded as its official domain.",
+        "proposedPublicId": "international-university-of-tbilisi-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kutaisi-institute-of-medicine",
+      "universityName": "Kutaisi Institute of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Identity clarified but cover still unavailable, and the record is very likely a duplicate. Probed kum.edu.ge and kim.edu.ge (both DNS resolution failure) and unik.edu.ge, which returns HTTP 200 after a redirect to https://cue.edu.ge/ - confirming that Kutaisi University now operates as Central University of Europe and that this record duplicates 'central-university-of-europe' in this same batch. CUE's own Kutaisi page, https://cue.edu.ge/chvens-shesaxeb/kutaisis-shesaxeb/, publishes no photograph of the Kutaisi campus at all: its images are city-of-Kutaisi tourism shots (Kutaisi_Golden_morning.jpg, Kutaisi_airport_interior_information.jpg, Things-to-do-in-Kutaisi-39-of-430.jpg) plus Facebook-sourced event snapshots, none of which is a campus photograph. The Tbilisi-campus laboratory image nominated for the central-university-of-europe entry depicts the Tbilisi site and must not be reused here as a Kutaisi cover. Needs the duplicate-record decision before any media is attached."
+    },
+    {
+      "universitySlug": "new-vision-university",
+      "universityName": "New Vision University School of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://api.newvision.ge/media/rvnl3ou3/school-covers-1680-x-662-px-zip-8.png",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own media host api.newvision.ge (the Umbraco backend newvision.ge loads all site media from), used as a school cover banner on the newvision.ge homepage; depicts New Vision University's own clinical teaching facility - a multi-chair simulation/treatment room with 'NEW VISION HEALTH HUB' signage on the wall and numbered bays, staff and students in scrubs at work - so the facility is unambiguously identified as NVU's own; accepted as a last-resort interior because the university publishes no exterior of its building; verified HTTP 200 image/png, 1680x662 px landscape. Deliberately NOT used from the same cover set: school-covers-...-4.png (abstract blue circuit-board stock graphic) and school-covers-...-7.png (stock hospital-corridor composite with hexagon icon overlay and a logo lockup) - the set mixes real NVU photography with licensed stock, so only frames showing NVU's own signage were considered. Also rejected: api.newvision.ge/media/43dnj350/568a0498.jpg (posed portrait of a student in a classroom) and /media/mnrf1xlq/canon-eos-r6m2-...jpg (two men exchanging documents in the library).",
+        "proposedPublicId": "new-vision-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "quality-control-teaching-university",
+      "universityName": "Quality Control Teaching University of Georgia",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No official domain could be established, so there is no institutional source to take a photograph from. Probed qctu.edu.ge and qcteachinguni.edu.ge (both DNS resolution failure), on top of the qctu.ge / qctu.kg / qctu.edu.kg / qc-tu.kg patterns the July 2026 pass already ruled out. English and Georgian search returns no official site: the only result that actually matches the institution is a third-party directory entry (mededatlas.com), which states it is a Tbilisi institution founded in 2010 offering medicine, nursing and pharmacy, but links to no official web presence; every other result is a different university (University of Georgia, International Teaching University of Georgia, Guram Tavartkiladze Tbilisi Teaching University). Wikimedia Commons has nothing. First-pass conclusion stands."
+    },
+    {
+      "universitySlug": "tbilisi-medical-teaching-university-hippocrates",
+      "universityName": "Tbilisi Medical Teaching University 'Hippocrates'",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Official domain is documented but dead. Third-party listings (yell.ge, unipage, uniagents) give the university's address as 4b G. Svanidze St., Vake, Tbilisi and its contact as medicina@hippocrates.edu.ge, i.e. hippocrates.edu.ge is the institution's own domain - but both hippocrates.edu.ge and www.hippocrates.edu.ge fail DNS resolution, so nothing can be fetched from it and no official photograph is reachable. Every other reference to the institution is an MBBS-abroad aggregator or agency (edufever, mbbs-in-georgia.in, azgec, free-apply, mededatlas, rmcedu), which is out of scope as a source. Wikimedia Commons has nothing under the name in English or Georgian. No substitution from another Georgian medical school was made."
+    },
+    {
+      "universitySlug": "tbilisi-university-metekhi",
+      "universityName": "Tbilisi University 'Metekhi'",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No live official domain exists to source from. Re-probed metekhi.edu.ge (DNS resolution failure), consistent with the July 2026 pass which also found no Wayback snapshots for it and no live tum.edu.ge. English and Georgian search ('Tbilisi University Metekhi', 'უნივერსიტეტი მეტეხი') surfaces only MBBS-abroad aggregator pages (amwcareerpoint, ymfedutech, mbbsinabroad) and the unrelated Wikipedia article on the Metekhi church/district - no official site, and explicitly no official website in any result. Wikimedia Commons has no category or file for the institution (searches for 'Metekhi' return the church and the Tbilisi district only, which must not be substituted for the university)."
+    },
+    {
+      "universitySlug": "university-of-legia-and-company",
+      "universityName": "University of Legia and Company",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Unresolved identity - no media can be attributed. Probed legia.edu.ge and legiauni.edu.ge (both DNS resolution failure). English search for 'University of Legia and Company' Tbilisi returns zero matching institutions; results are unrelated Georgian universities (Ilia State, TSU, ITUG, University of Georgia, BTU). This matches the July 2026 pass, which confirmed via the Wikipedia opensearch API that no article exists for 'University of Legia' or 'Legia and Company' and found only thin, speculative third-party directory listings. Wikimedia Commons has nothing. Without a positively identified institution and an official domain there is no legitimate source; this is a data/identity problem to resolve on the record, not a media-availability problem."
+    },
+    {
+      "universitySlug": "university-sakartvelo",
+      "universityName": "University Sakartvelo Faculty of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "The institution is real but has no reachable official domain. Search establishes it as a Tbilisi medical faculty at Phangikidze St. #1, 0160 Tbilisi, but every describing page is a third-party aggregator or directory (healthmanagement.org, mbbs-in-georgia.in, medicaleducator.co.uk, careerkaka), none of which links to an official site. Probed sakartvelo.edu.ge, unisakartvelo.edu.ge, unisaqartvelo.edu.ge, saqartvelo.edu.ge, un-sakartvelo.edu.ge and sakartvelouni.ge - all DNS resolution failure - in addition to the sau.edu.ge / usu.edu.ge / sakartvelouni.edu.ge patterns the July 2026 pass ruled out. Note ug.edu.ge resolves but is the University of Georgia (საქართველოს უნივერსიტეტი), a different institution whose assets must not be borrowed, and University Geomedi (geomedi.edu.ge) is likewise a separate institution already covered under 'university-geomedi'. Wikimedia Commons returns nothing for 'University Sakartvelo'. With no official domain there is no source of an official photograph."
+    }
+  ]
+}

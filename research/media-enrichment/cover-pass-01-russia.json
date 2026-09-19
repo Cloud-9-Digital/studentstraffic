@@ -1,0 +1,508 @@
+{
+  "batchId": "cover-pass-01-russia",
+  "notes": "Cover-image research pass for the 38 published Russian universities whose cover_image_url is empty, completed 2026-09-16. Method: Wikimedia Commons and ru.wikipedia were queried through the MediaWiki API from node (a descriptive bot User-Agent was used; curl --data-urlencode mangled Cyrillic in this Git-Bash environment, so all API calls were made from node fetch). For each institution I searched Commons in Russian and English (list=search, namespaces 6|14), enumerated the matching Commons category with prop=imageinfo/extmetadata to read licence, author, description and pixel dimensions, and cross-checked the ru.wikipedia article lead image (prop=pageimages) as an independent identification signal. Every sourceUrl is an upload.wikimedia.org direct file URL with any utm_* query string stripped, and every one was re-requested this session until it returned an image/* content-type (HTTP 200, or 206 on a ranged retry after Wikimedia 429 rate-limiting). Ambiguous candidates were downloaded and visually inspected before being accepted or rejected. Where no Commons asset existed I fell back to the institution’s own domain with a browser User-Agent; no .ru site in this batch published a usable og:image or campus hero, and several are dead or relocated. No uploads, database writes or publishes were performed. Caveats for the reviewer: (1) chelyabinsk-state-medical-university is the institution now named South Ural State Medical University; the image is correct for the institution but the record name is historic, and the July 2026 pass already flagged this rename as an unresolved identity issue. (2) moscow-region-state-university-medicine has likewise been renamed Государственный университет просвещения. (3) amur-state-medical-academy: the July 2026 pass found its registered domain amursma.ru hijacked into a casino affiliate site; the cover proposed here comes from Commons and is unaffected, but the record’s website field still needs review. (4) mechnikov-north-western-medical-university is a campus sports facility rather than the main academic block, the only free exterior available on Commons. (5) Several entries deliberately use the parent university’s main building for the \"(Medical Institute/Faculty)\" records; this is stated explicitly in each rightsBasis. (6) petrozavodsk-state-university is licensed under the Free Art License rather than Creative Commons.",
+  "entries": [
+    {
+      "universitySlug": "altai-state-medical-university",
+      "universityName": "Altai State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Altai_State_Medical_University_1.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, author Obakeneko, file \"Altai State Medical University 1.jpg\"; depicts the Altai State Medical University building, Lenina Avenue 40, Barnaul (file description names the university and address; file sits in Category:Altai State Medical University and is the ru.wikipedia article lead image); 2288x1712 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "altai-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "amur-state-medical-academy",
+      "universityName": "Amur State Medical Academy",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/201907_Amur_State_Medical_Academy_01.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Jonashtand, file \"201907 Amur State Medical Academy 01.jpg\"; depicts the Amur State Medical Academy campus in Blagoveshchensk (file description \"Amur State Medical Academy\"; in Category:Amur State Medical Academy); 6000x4000 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "amur-state-medical-academy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "bashkir-state-medical-university",
+      "universityName": "Bashkir State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bashkortostan_State_Medical_University_%28March_2025%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Vyacheslav Bukharov, file \"Bashkortostan State Medical University (March 2025).jpg\"; depicts Bashkir State Medical University building No. 1 in Ufa (file description \"Уфа, вид на Башкирский государственный медицинский университет (корпус № 1)\"; ru.wikipedia article lead image; in Category:Bashkortostan State Medical University); 3548x1978 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "bashkir-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "chechen-state-university",
+      "universityName": "Chechen State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%D0%A7%D0%B5%D1%87%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Салман Д, file \"Чеченский государственный университет.JPG\"; depicts the Chechen State University building in Grozny (file description \"Чеченский государственный университет\"; in Category:Chechen State University); 4752x3168 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "chechen-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "chelyabinsk-state-medical-university",
+      "universityName": "Chelyabinsk State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Chelyabinsk_State_Medical_Academy.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Rishat Kagirov (IEPCBM), file \"Chelyabinsk State Medical Academy.jpg\"; depicts the main building of what is now South Ural State Medical University in Chelyabinsk, the same institution as this record (file description: Federal State Budgetary Educational Institution of Higher Education \"South-Ural State Medical University\"; ru.wikipedia article lead image; in Category:South Ural State Medical University). NOTE: this institution was renamed from Chelyabinsk State Medical Academy/University to South Ural State Medical University; the catalogue record carries the historic name; 3188x1809 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "chelyabinsk-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "chuvash-state-university",
+      "universityName": "Chuvash State University",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Wikimedia Commons searched in Russian (\"Чувашский государственный университет\", \"ЧувГУ\", \"Чувашский государственный университет имени Ульянова здание\") and English. Category:Chuvash State University holds only four files: two group photographs of students (identifiable people in frame), File:P9012019-2.jpg and File:Здание Чебоксарского медицинского техникума.jpg. I downloaded and visually inspected both building shots. P9012019-2.jpg is captioned only \"Чебоксары, проспект Ленина, 6\" and the visible facade signage reads \"СТРОИТЕЛЬНЫЙ...\" (a construction organisation), so it does not demonstrably depict ChuvSU. The second file is used as the ru.wikipedia lead image for Чувашский государственный университет имени И. Н. Ульянова and is category-tagged to the university, but its own title and description name a DIFFERENT institution (\"Здание Чебоксарского медицинского техникума\", the Cheboksary medical technical school), so the identification conflicts with itself. Official route: https://www.chuvsu.ru/ returns HTTP 200 but exposes no og:image or twitter:image and its homepage image set is entirely theme icons and logos under /wp-content/themes/ and /wp-content/uploads/ with no campus photograph. Holding rather than shipping a building that may belong to another institution."
+    },
+    {
+      "universitySlug": "far-eastern-state-medical-university",
+      "universityName": "Far Eastern State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Far_Eastern_State_Medical_University_1.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0, author H2v5o68z, file \"Far Eastern State Medical University 1.jpg\"; depicts Far Eastern State Medical University in Khabarovsk (file description \"Far Eastern State Medical University\"; in Category:Far Eastern State Medical University); 4000x3000 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "far-eastern-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "irkutsk-state-medical-university",
+      "universityName": "Irkutsk State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No Commons category exists (Category:Irkutsk State Medical University is empty) and the ru.wikipedia article Иркутский государственный медицинский университет has no lead image. Commons searched in Russian (\"Иркутский государственный медицинский университет\", \"ИГМУ Иркутск\") and English (\"Irkutsk medical university\"): the only hits are unrelated scanned books and one diagram (File:Сфигмограмма (схема).svg). Official route is dead: ismu.baikal.ru, www.ismu.baikal.ru, ismu.ru, www.ismu.ru and mir.ismu.baikal.ru all fail to connect over HTTPS (curl response code 000); http://ismu.baikal.ru/ does return HTTP 200 but serves a 1 KB VestaCP default placeholder titled \"oauth.ismu.baikal.ru - Coming Soon\" with no content and no images. No verifiable asset exists, and the record’s official-website field probably needs review too."
+    },
+    {
+      "universitySlug": "ivanovo-state-medical-academy",
+      "universityName": "Ivanovo State Medical Academy",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Aleximagine, file \"Медицинский институт.jpg\"; depicts the medical institute building at Sheremetevsky Prospekt 8, Ivanovo, the main building of Ivanovo State Medical Academy/University (file description gives the building, architect and address; it is the ru.wikipedia lead image of the Ивановский государственный медицинский университет article); 1280x852 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "ivanovo-state-medical-academy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "izhevsk-state-medical-academy",
+      "universityName": "Izhevsk State Medical Academy",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%BE-%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Iruroko, file \"Учебно-лабораторный корпус.jpg\"; depicts the teaching-and-laboratory block of Izhevsk State Medical Academy/University housing the biochemistry and human anatomy departments; it is the ru.wikipedia lead image of the Ижевский государственный медицинский университет article, which is the redirect target of Ижевская государственная медицинская академия; 1600x1066 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "izhevsk-state-medical-academy-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kaluga-state-university-medical-institute",
+      "universityName": "Kaluga State University (Medical Institute)",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kaluga_2013_Lunacharskogo_2_north_02_1TM.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Kaluga.2012, file \"Kaluga 2013 Lunacharskogo 2 north 02 1TM.jpg\"; depicts the historic boys-gymnasium building on Lunacharskogo Street, Kaluga, which houses Kaluga State University, the parent university of this record’s Medical Institute. Identification: the file is in Category:Kaluga State University on Commons AND is the ru.wikipedia lead image of the Калужский государственный университет имени К. Э. Циолковского article; 4000x2400 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "kaluga-state-university-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kemerovo-state-medical-university",
+      "universityName": "Kemerovo State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Commons has no Category:Kemerovo State Medical University (empty) and the only files returned for \"Кемеровский государственный медицинский университет\" are three scanned research PDFs. The ru.wikipedia article’s lead image is File:KemSMU Logo.svg, a logo rather than a cover. Official route: kemsmu.ru now serves only a \"Сайт переехал — kemgmu.ru\" relocation notice; the live site kemgmu.ru returns HTTP 200 but its og:image is a logo SVG. I downloaded its only large homepage graphic, https://kemgmu.ru/picture/Frame30.jpg (3484x1288, 440 KB), and visually inspected it: it is a World Patient Safety Day 2025 awareness banner (ministry and WHO logos plus pictograms), not a campus photograph. The remaining homepage images are news thumbnails a few KB in size. No verifiable campus photograph found."
+    },
+    {
+      "universitySlug": "kemerovo-state-university-medical-institute",
+      "universityName": "Kemerovo State University (Medical Institute)",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Views_of_Kemerovo_%28Nov_2022%29_-_15.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Vyacheslav Bukharov, file \"Views of Kemerovo (Nov 2022) - 15.jpg\"; depicts Kemerovo State University, the parent university of this record’s Medical Institute (file description \"Кемеровский государственный университет\"; in Category:Kemerovo State University); 3885x1764 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "kemerovo-state-university-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "khakasia-state-university-medical-faculty",
+      "universityName": "Khakasia State University (Medical Faculty)",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/2025-08-13_%D0%A5%D0%B0%D0%BA%D0%B0%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%2820250813_141716%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0, author Ташебинский, file \"2025-08-13 Хакасский государственный университет (20250813 141716).jpg\"; depicts the building of Khakas State University on the central avenue of Abakan, the parent university of this record’s Medical Faculty (file description names Хакасский государственный университет and Abakan; ru.wikipedia article lead image); 7666x4315 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "khakasia-state-university-medical-faculty-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "khanty-mansiysk-state-medical-academy",
+      "universityName": "Khanty-Mansiysk State Medical Academy",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Commons has no Category:Khanty-Mansiysk State Medical Academy and a Russian-language Commons search for \"Ханты-Мансийская государственная медицинская академия\" returns zero files; the ru.wikipedia article does not exist, so there is no lead image to inherit. Official route: https://hmgma.ru/ returns HTTP 200 but publishes no og:image or twitter:image, and every JPEG referenced from its homepage is a news thumbnail between 5.5 KB and 12 KB (all ten HEAD-checked this session), far below the 800px-wide bar and none captioned as a campus view. No verifiable asset found."
+    },
+    {
+      "universitySlug": "lobachevsky-state-university-medical-institute",
+      "universityName": "Lobachevsky State University of Nizhny Novgorod",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/%D0%9D%D0%9D%D0%93%D0%A3_%D0%B8%D0%BC._%D0%9D.%D0%98.%D0%9B%D0%BE%D0%B1%D0%B0%D1%87%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E%2C_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0, author Ubivatel noskov, file \"ННГУ им. Н.И.Лобачевского осенью, Нижний Новгород.jpg\"; depicts Lobachevsky State University of Nizhny Novgorod in autumn (file description \"ННГУ им. Н.И.Лобачевского осенью, Нижний Новгород\"; in Category:Lobachevsky State University of Nizhny Novgorod); 4000x1800 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "lobachevsky-state-university-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "maykop-state-technological-university-medical",
+      "universityName": "Maykop State Technological University",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Commons has no Category:Maykop State Technological University; Russian searches (\"Майкопский государственный технологический университет\", \"Майкопский технологический университет здание\") return only an unrelated encyclopaedia scan, and the ru.wikipedia article does not exist, so there is no lead image. Official route: https://mkgtu.ru/ returns HTTP 200 with no og:image; its two site-background files under /upload/back-img/ were downloaded and visually inspected. 3133194_11.jpg is an abstract green geometric graphic, not a photograph. vbvc3212.jpg is a real but heavily colour-graded, darkened aerial of a district of Maykop used as a page-background wash, with no caption identifying which of the many buildings in frame belong to MSTU. Neither is a usable, demonstrably-MSTU campus cover; holding rather than guessing at an uncaptioned aerial."
+    },
+    {
+      "universitySlug": "mechnikov-north-western-medical-university",
+      "universityName": "North-Western State Medical University n.a. Mechnikov",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/6343._St._Petersburg._North-Western_State_Medical_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author GAlexandrova, file \"6343. St. Petersburg. North-Western State Medical University.jpg\"; depicts the sports and recreation centre with swimming pool of North-Western State Medical University n.a. I.I. Mechnikov, Piskarevsky Prospekt 47 bldg 11, St Petersburg, photographed from outside (file description names the university and address; in Category:Mechnikov North-West State Medical University). Caveat: this is a campus sports facility, not the historic main academic block; no free exterior of the main block exists on Commons; 4608x3456 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "mechnikov-north-western-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "moscow-region-state-university-medicine",
+      "universityName": "Moscow Region State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Moscow%2C_Radio_Street_10.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, author NVO, file \"Moscow, Radio Street 10.jpg\"; depicts the Moscow Region State University building at Radio Street 10, Moscow (in Category:Moscow Region State University; it is the ru.wikipedia lead image of the Государственный университет просвещения article, the institution’s current name after its rename from Московский государственный областной университет). Caveat: the file description generically says \"College in Moscow, 10, Radio Street\"; identification rests on the Commons category and the Wikipedia infobox use; 1000x657 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "moscow-region-state-university-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "north-caucasian-state-academy",
+      "universityName": "North Caucasian State Academy",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Commons searched in Russian (\"Северо-Кавказская государственная академия Черкесск\") and English. Only three candidate files exist and all fail the bar: File:NCSHTA.jpg is 400x265 and File:Ncshta.jpg is 422x400, both far below the 800px-wide minimum; File:MI-NCSHTA.jpg (809x1086) was downloaded and visually inspected and is a promotional poster collage, an orange text panel reading \"Medical Institute of North Caucasian State Humanitarian and Technological Academy\" over three institutional seals, above a photograph of a lecture hall full of identifiable students in white coats. That is a marketing graphic with people in frame, not a campus photograph. File:Студенческий совет СКГА.jpg is likewise a group portrait. Official route: https://ncsa.ru/ returns HTTP 200 but publishes no og:image, and its homepage images are hashed Bitrix news thumbnails under /upload/iblock/ with no captions identifying a campus exterior; the alternate domain skgta.ru does not resolve. No verifiable asset found."
+    },
+    {
+      "universitySlug": "north-eastern-federal-university",
+      "universityName": "North-Eastern Federal University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A1%D0%92%D0%A4%D0%A3.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author LxAndrew, file \"Главный корпус СВФУ.JPG\"; depicts the main building of North-Eastern Federal University in Yakutsk, built 1957 (file description \"Северо-Восточный федеральный университет (ранее - Якутский государственный университет). Здание 1957 года постройки\"; in Category:North-Eastern Federal University); 3264x2448 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "north-eastern-federal-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "novgorod-state-university",
+      "universityName": "Novgorod State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9D%D0%BE%D0%B2%D0%93%D0%A3.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Novqwer, file \"Главный корпус НовГУ.jpg\"; depicts the main building of Yaroslav-the-Wise Novgorod State University in Veliky Novgorod (file description \"The main building of the Novgorod State University in Veliky Novgorod\"); 5442x3625 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "novgorod-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "novosibirsk-state-university-zelman-medicine",
+      "universityName": "Novosibirsk State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Ngu_nsk.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author De Arso, file \"Ngu nsk.jpg\"; depicts Novosibirsk State University, the parent university of this record’s Institute of Medicine and Psychology (file description \"Новосибирский Государственный Университет\"); 1440x960 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "novosibirsk-state-university-zelman-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "omsk-state-medical-university",
+      "universityName": "Omsk State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/%D0%94%D0%BE%D0%BC_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9_%C2%AB%D0%A2%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0_%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D0%B5%D0%B2_%D0%9E%D0%B2%D1%81%D1%8F%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D1%8B%D1%85_%D0%B8_%D0%93%D0%B0%D0%BD%D1%88%D0%B8%D0%BD%D1%8B%D1%85_%D1%81_%D1%81%D1%8B%D0%BD%D0%BE%D0%B2%D1%8C%D1%8F%D0%BC%D0%B8%C2%BB.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Вера Дегтярёва, file \"Дом торговый «Товарищества братьев Овсянниковых и Ганшиных с сыновьями».jpg\"; depicts the Ovsyannikov-Ganshin trading house at Lenina Street 12, Omsk, which is the main building of Omsk State Medical University; it is the ru.wikipedia lead image of the Омский государственный медицинский университет article and sits in Category:Omsk State Medical University. Caveat: the file title is the building’s heritage-listing name, not the university’s; 2246x1685 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "omsk-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "orel-state-university",
+      "universityName": "Orel State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9E%D0%93%D0%A3_%28%D0%9E%D1%80%D1%91%D0%BB%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2C_95%29_%282%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Sviraman, file \"Главный корпус ОГУ (Орёл, Комсомольская, 95) (2).jpg\"; depicts the main building of Orel State University, 95 Komsomolskaya Street, Oryol (file description \"OSU main building. 95 Komsomolskaya Street, Oryol, Russia\"; in Category:Oryol State University; ru.wikipedia article lead image); 4345x3415 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "orel-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "pacific-state-medical-university",
+      "universityName": "Pacific State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Vladivostok_State_Medical_University_%28October_2024%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Vyacheslav Bukharov, file \"Vladivostok State Medical University (October 2024).jpg\"; depicts the building of Pacific State Medical University in Vladivostok (file description \"Владивосток: здание Тихоокеанского государственного медицинского университета\"; in Category:Vladivostok State Medical University, the institution’s former name); 3687x1851 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "pacific-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "penza-state-university",
+      "universityName": "Penza State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Penza_State_University_building_1.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, author Zxc123, file \"Penza State University building 1.jpg\"; depicts building No. 1 of Penza State University (file description \"Building #1 of the Penza State University in Russia\"; in Category:Penza State University; ru.wikipedia article lead image); 2592x1944 px image/jpeg; verified this session HTTP 200 image/jpeg",
+        "proposedPublicId": "penza-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "peoples-friendship-university-russia",
+      "universityName": "Peoples' Friendship University of Russia (RUDN)",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/%D0%92%D1%85%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%A3%D0%94%D0%9D_02.2023_3.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author ATI1999, file \"Вход в РУДН 02.2023 3.jpg\"; depicts the entrance to RUDN University, Moscow, February 2023 (file description \"Вход в РУДН вечером, февраль 2023 года\"; ru.wikipedia article lead image); 4160x1920 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "peoples-friendship-university-russia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "perm-state-medical-university",
+      "universityName": "Perm State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/PermSMA_foto1.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author AndreyIGOSHEV, file \"PermSMA foto1.jpg\"; depicts Perm State Medical University (file description \"Perm state medical University\"; in Category:Perm State Medical University; ru.wikipedia article lead image); 3648x2736 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "perm-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "petrozavodsk-state-university",
+      "universityName": "Petrozavodsk State University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Petrozavodsk_06-2017_img34_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, FAL, author A.Savin, file \"Petrozavodsk 06-2017 img34 University.jpg\"; depicts the main building of Petrozavodsk State University, aerial view (file description \"Main building of the University (aerial photo) in Petrozavodsk, Republic of Karelia (Russia)\"; ru.wikipedia article lead image). Licence is the Free Art License (FAL), a free licence, not a Creative Commons one; attribution to A.Savin is required; 3525x2350 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "petrozavodsk-state-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "pirogov-russian-national-research-medical-university",
+      "universityName": "Pirogov Russian National Research Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Rnimu_zdanie.png",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Gatin228, file \"Rnimu zdanie.png\"; depicts the Pirogov Russian National Research Medical University building in Moscow (file description \"Российский национальный исследовательский медицинский университет имени Н. И. Пирогова\"). A second, university-authored option exists at File:Rsmu building.jpg (1024x768, CC BY-SA 4.0) if a JPEG is preferred over this PNG; 1274x796 px image/png; verified this session HTTP 206 image/png",
+        "proposedPublicId": "pirogov-russian-national-research-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "privolzhsky-research-medical-university",
+      "universityName": "Privolzhsky Research Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Privolzhsky_Research_Medical_University_in_Nizhny_Novgorod.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Алексей Трефилов, file \"Privolzhsky Research Medical University in Nizhny Novgorod.jpg\"; depicts Privolzhsky Research Medical University in Nizhny Novgorod (file description \"Приволжский исследовательский медицинский университет в Нижнем Новгороде\"; in Category:Privolzhsky Research Medical University); 4608x3072 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "privolzhsky-research-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "russian-university-of-medicine",
+      "universityName": "Russian University of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB.%2C_4%2C%D0%B3_%D0%A4%D0%93%D0%91%D0%9E%D0%A3_%D0%92%D0%9E_%C2%AB%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B%C2%BB_%D0%9C%D0%B8%D0%BD%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Sophia Zima, file \"Долгоруковская ул., 4,г ФГБОУ ВО «Российский университет медицины» Минздрава России.jpg\"; depicts the Russian University of Medicine building at Dolgorukovskaya Street 4, Moscow (file description \"ФГБОУ ВО «Российский университет медицины» Минздрава России\"); 4032x3024 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "russian-university-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "samara-state-medical-university",
+      "universityName": "Samara State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Samara State Medical University, file \"Самарский государственный медицинский университет.jpg\"; depicts Samara State Medical University (file description \"Самарский государственный медицинский университет\"; the author of record is the university itself; ru.wikipedia article lead image); 1204x800 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "samara-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "stavropol-state-medical-university",
+      "universityName": "Stavropol State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/%D0%A1%D1%82%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author User:A.Tanchugin, file \"Ставропольский государственный медицинский университет.jpg\"; depicts the main building of Stavropol State Medical University, Mira Street 310, built 1960 (file description \"Главный корпус Ставропольского государственного медицинского университета ... Ул. Мира, 310\"); 3853x2930 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "stavropol-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "ural-state-medical-university",
+      "universityName": "Ural State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A3%D0%93%D0%9C%D0%A3.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Иван Абатуров, file \"Главный корпус УГМУ.jpg\"; depicts the main building of Ural State Medical University, Yekaterinburg, 22 November 2017 (file description \"Главный корпус Уральского государственного медицинского университета\"; ru.wikipedia article lead image); 3664x2748 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "ural-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "volgograd-state-medical-university",
+      "universityName": "Volgograd State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%92%D0%BE%D0%BB%D0%93%D0%9C%D0%A3.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author xVodolazx, file \"Главный корпус ВолГМУ.jpg\"; depicts the main building of Volgograd State Medical University, February 2017 (file description \"Главный корпус Волгоградского государственного медицинского университета, февраль 2017 года\"; in Category:Volgograd State Medical University); 4567x3025 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "volgograd-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "voronezh-state-medical-university",
+      "universityName": "Voronezh State Medical University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/%D0%92%D0%93%D0%9C%D0%A3_%28%D0%92%D0%93%D0%9C%D0%98%29_-1.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0, author GennadyL, file \"ВГМУ (ВГМИ) -1.jpg\"; depicts the main building of Voronezh State Medical University (file named \"ВГМУ (ВГМИ)\" = Voronezh State Medical University / Voronezh State Medical Institute; in Category:Voronezh State Medical University; it is the ru.wikipedia lead image of the Воронежский государственный медицинский университет article). Caveat: the uploader’s free-text caption reads \"Воронежский государственный университет - главный корпус\", omitting \"медицинский\"; the filename, the Commons category and the Wikipedia infobox use all identify it as the medical university; 2592x1944 px image/jpeg; verified this session HTTP 206 image/jpeg",
+        "proposedPublicId": "voronezh-state-medical-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

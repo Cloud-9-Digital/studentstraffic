@@ -1,0 +1,1612 @@
+{
+  "manifestId": "university-cover-enrichment-2026-09-16",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "scope": "cover images only, for published universities whose universities.cover_image_url is null or empty",
+  "generatedFrom": [
+    "cover-pass-00-india.json",
+    "cover-pass-01-russia.json",
+    "cover-pass-02-georgia.json",
+    "cover-pass-03a-uzbekistan.json",
+    "cover-pass-03b-uzbekistan.json",
+    "cover-pass-04-kyrgyzstan.json",
+    "cover-pass-05-row-a.json",
+    "cover-pass-06-row-b.json",
+    "cover-pass-07-carryover.json"
+  ],
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "A controlled integrator must upload every asset, verify the Cloudinary response, and retain source provenance before any database update.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded and require a new evidence batch.",
+    "Every sourceUrl here was verified to return HTTP 200/206 with an image/* content-type at research time. Re-verify before upload: several institutional hosts add bot protection over time."
+  ],
+  "summary": {
+    "auditedUniversities": 164,
+    "readyUniversities": 113,
+    "approvedAssets": 113,
+    "heldUniversities": 51
+  },
+  "entries": [
+    {
+      "universitySlug": "akfa-university-medical-school",
+      "universityName": "AKFA University Medical School",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Akfa_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Kagansky, File:Akfa University.jpg (description 'Университет Акфа', dated 2023-02-26); depicts the AKFA University campus entrance gateway in Tashkent with the illuminated 'AKFA UNIVERSITY' sign and international flag row, academic buildings behind - the parent university's own campus is the fair subject for this medical-school record; 4032x3024 px landscape; verified HTTP 206 image/jpeg. Composition caveat: a city bus and roadside guardrail sit in the foreground, so a crop to the gateway is advisable. Identity note: AKFA University was renamed Central Asian University in June 2023; this file still carries the AKFA branding that matches this record.",
+          "proposedPublicId": "studentstraffic/universities/akfa-university-medical-school/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "al-farabi-kazakh-national-university",
+      "universityName": "Al-Farabi Kazakh National University",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Al-Farabi_University_%28AP4P0172_1PS%29_%2829554231332%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 2.0, author Alexandru Panoiu from Bucharest, Romania (Flickr, reviewed by FlickreviewR), File:Al-Farabi University (AP4P0172 1PS) (29554231332).jpg, from Category:Al-Farabi Kazakh National University; description 'Al-Farabi University, Almaty, Kazakhstan'; 3600x2400 px landscape; verified HTTP 200 image/jpeg (3.5 MB). Chosen over File:Al-Farabi KazNU rektorat.jpg (the en.wikipedia lead image) because that file is only 1200x799 px and is credited simply to kaznu.kz; a second Panoiu frame, File:Al-Farabi University (AP4M2500 1PS) (29689474976).jpg (3586x2688, CC BY 2.0), is available as an alternative. This replaces the first pass's hold, which had found only a news photo of a state visit on the university's homepage.",
+          "proposedPublicId": "studentstraffic/universities/al-farabi-kazakh-national-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "alfraganus-university",
+      "universityName": "Alfraganus University Faculty of Medicine",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Alfraganus_Universiteti.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Omina Sayfullayeva, File:Alfraganus Universiteti.jpg (description 'Toshkent Shahridagi Alfraganus Universiteti', dated 2024-05-11); depicts the Alfraganus University main building in Tashkent with the rooftop 'ALFRAGANUS UNIVERSITY' sign and emblem clearly legible - the parent university's own building is the fair subject for this faculty-of-medicine record; 4160x3120 px; verified HTTP 206 image/jpeg. This supersedes the July 2026 hold, which rejected the homepage hero GIF on afu.uz and found no other candidate.",
+          "proposedPublicId": "studentstraffic/universities/alfraganus-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "altai-state-medical-university",
+      "universityName": "Altai State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Altai_State_Medical_University_1.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 3.0, author Obakeneko, file \"Altai State Medical University 1.jpg\"; depicts the Altai State Medical University building, Lenina Avenue 40, Barnaul (file description names the university and address; file sits in Category:Altai State Medical University and is the ru.wikipedia article lead image); 2288x1712 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/altai-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "amity-university-noida",
+      "universityName": "Amity University, Noida",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Amity_Campus_Noida_Delhi.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, own work by author Hghulam49, File:Amity Campus Noida Delhi.jpg, categorised under Category:Amity University, Noida - i.e. the Noida campus specifically, not Lucknow, Greater Noida, Dubai or Tashkent. 1440x1080 px, 273 KB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-2.json as the /wiki/File: description page.)",
+          "proposedPublicId": "studentstraffic/universities/amity-university-noida/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "universityName": "Amrita Vishwa Vidyapeetham",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://webfiles.amrita.edu/2020/05/2w4fqsOS-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-photo-1.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own CDN (webfiles.amrita.edu) and used as the hero banner on the university's own Coimbatore campus page (www.amrita.edu/campus/coimbatore/). Aerial/drone photograph of the Coimbatore campus, which is the campus this catalogue record is scoped to. Re-verified 2026-09-16: HTTP 200, image/jpeg, 149 KB. Unchanged from india-pilot-batch-2.json.",
+          "proposedPublicId": "studentstraffic/universities/amrita-vishwa-vidyapeetham/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "amur-state-medical-academy",
+      "universityName": "Amur State Medical Academy",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/201907_Amur_State_Medical_Academy_01.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Jonashtand, file \"201907 Amur State Medical Academy 01.jpg\"; depicts the Amur State Medical Academy campus in Blagoveshchensk (file description \"Amur State Medical Academy\"; in Category:Amur State Medical Academy); 6000x4000 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/amur-state-medical-academy/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "angeles-university-foundation",
+      "universityName": "Angeles University Foundation",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/9422jfAngeles_University_Foundation_Roadsfvf_15.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Judgefloro, File:9422jfAngeles University Foundation Roadsfvf 15.JPG in Category:Angeles University Foundation; depicts the AUF Sports and Cultural Center beside the AUF Medical Center and Professional Schools, Barangay Lourdes Sur East, Angeles City; 4608x3456 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 hold (a-21-30.json), which was caused by auf.edu.ph serving a degraded placeholder site and Wikipedia's logo being non-free - neither problem affects this freely licensed campus photograph.",
+          "proposedPublicId": "studentstraffic/universities/angeles-university-foundation/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "asia-international-university",
+      "universityName": "Asia International University Faculty of Medicine",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Osiyo_Xalqaro_universiteti.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Bekwox, File:Osiyo Xalqaro universiteti.jpg (description \"Osiyo Xalqaro universitetini old tomondan ko'rinishi\" - front view of Asia International University, dated 2024-10-03); depicts the university's main academic block in Bukhara head-on, with the crest and 'OSIYO XALQARO UNIVERSITETI' roof signage legible - the parent university's own building is the fair subject for this faculty-of-medicine record; 4624x2604 px, wide landscape, ideal cover ratio; verified HTTP 206 image/jpeg. Minor caveat: a staff car park occupies the lower third.",
+          "proposedPublicId": "studentstraffic/universities/asia-international-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "asian-medical-institute",
+      "universityName": "Asian Medical Institute (S. Tentishev Memorial), Kant",
+      "sourceBatch": "cover-pass-04-kyrgyzstan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://asmi.edu.kg/wp-content/uploads/slider2/Asianmedicalinstitute7-scaled.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph served from the institute's own domain asmi.edu.kg (homepage slider library /wp-content/uploads/slider2/, surfaced via the site's own /wp-json/wp/v2/media index). Aerial exterior of the main academic building; the roof fascia is legibly signed in three languages - 'TENTISHEV SATKYNBAI MEMORIAL ASIAN MEDICAL INSTITUTE', 'Азиатский медицинский институт имени Тентишева Сатыбалдыбая' and the Kyrgyz form - with the institute crest and the Kyrgyz flag on the roof, so the subject is self-identifying. DJI FC300X drone EXIF, original capture; 2560x1518 px landscape; verified HTTP 200 image/jpeg, 648,865 bytes. Downloaded and visually inspected before acceptance.",
+          "proposedPublicId": "studentstraffic/universities/asian-medical-institute/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "auckland-university-of-technology",
+      "universityName": "Auckland University of Technology",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Auckland_University_of_Technology_Tower.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, Public domain (PD-self), author Ingolfson, File:Auckland University of Technology Tower.jpg in Category:AUT Tower; depicts the AUT Tower (WT building), one of the main city-campus buildings in the Auckland CBD; 1600x1200 px landscape; verified HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/auckland-university-of-technology/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "australian-national-university",
+      "universityName": "Australian National University",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/University_Avenue_walkway_in_the_ANU_on_a_foggy_morning_July_2025.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:Nick-D, File:University Avenue walkway in the ANU on a foggy morning July 2025.jpg, from Category:Australian National University (115 files); depicts the University Avenue walkway through the ANU Acton campus, Canberra, on a foggy morning; 6000x4000 px landscape; verified HTTP 200 image/jpeg (11.0 MB). Contrary to the July 2026 hold, ANU is very well covered on Commons - the category also holds Bruce Hall, Linnaeus Way, Sullivans Creek and multiple University Avenue entrance shots at 4000-4608 px if a different framing is preferred.",
+          "proposedPublicId": "studentstraffic/universities/australian-national-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "azerbaijan-medical-university",
+      "universityName": "Azerbaijan Medical University",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Tibbuni02.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Languard, File:Tibbuni02.jpg in Category:Azerbaijan Medical University; the Commons description is only the terse filename 'tibbuni02', so the subject was confirmed by downloading and visually inspecting the file: it is an elevated/aerial view of the Azerbaijan Medical University main building in Baku, the stone-clad block with its arched window arcades and forecourt, set against the Baku skyline. 2048x1365 px landscape; verified HTTP 200 image/jpeg. The az and ru Wikipedia lead images are both File:Emblem of the Azerbaijan Medical University.jpg (an emblem, excluded). Alternate in the same category: File:Tibbunidekan.jpg (1840x1228, CC BY-SA 4.0, same author).",
+          "proposedPublicId": "studentstraffic/universities/azerbaijan-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "bashkir-state-medical-university",
+      "universityName": "Bashkir State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bashkortostan_State_Medical_University_%28March_2025%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Vyacheslav Bukharov, file \"Bashkortostan State Medical University (March 2025).jpg\"; depicts Bashkir State Medical University building No. 1 in Ufa (file description \"Уфа, вид на Башкирский государственный медицинский университет (корпус № 1)\"; ru.wikipedia article lead image; in Category:Bashkortostan State Medical University); 3548x1978 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/bashkir-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "belarusian-state-medical-university",
+      "universityName": "Belarusian State Medical University",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Belarusian_State_Medical_University_p1.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Homoatrox, File:Belarusian State Medical University p1.jpg in Category:Belarusian State Medical University, photographed 2021-04-09 in Minsk; depicts the BSMU main building and tower block - identification independently confirmed by visual inspection: the facade carries the university's name in Belarusian, 'БЕЛАРУСКІ ДЗЯРЖАЎНЫ МЕДЫЦЫНСКІ ЎНІВЕРСІТЭТ'. 5256x3423 px landscape; verified HTTP 200 image/jpeg. Five further consistent views (p2-p6) exist in the same category if a different angle is preferred.",
+          "proposedPublicId": "studentstraffic/universities/belarusian-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "bukhara-state-medical-institute-abu-ali-ibn-sino",
+      "universityName": "Bukhara State Medical Institute named after Abu Ali Ibn Sino",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Med_ins.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author credited as Bsmi.uz (the institute's own site, uploaded 2023-02-18), File:Med ins.jpg, in Category:Bukhara State Medical Institute; depicts the institute's main building with the full 'ABU ALI IBN SINO NOMIDAGI BUXORO DAVLAT TIBBIYOT INSTITUTI' facade signage, crest and the Ibn Sino statue at left - unambiguous identification; 6000x3368 px, 16:9 landscape; verified HTTP 206 image/jpeg. Note for the uploader: the original is very large, so downscale on upload. Alternatives inspected and available if a smaller file is preferred: File:Buxoro davlat tibbiyot instituti yangi kampusi.jpg (aerial of the new campus, 1160x773, CC BY-SA 4.0, author Medxim) and File:Buxoro davlat tibbiyot instituti.jpg (the teaching clinic block, 1170x600).",
+          "proposedPublicId": "studentstraffic/universities/bukhara-state-medical-institute-abu-ali-ibn-sino/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "california-institute-of-technology",
+      "universityName": "California Institute of Technology",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Beckman_Auditorium_%2817521897582%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author Yisong Yue (via Flickr, licence reviewed by FlickreviewR 2), File:Beckman Auditorium (17521897582).jpg in Category:Beckman Auditorium (a subcategory of Campus of the California Institute of Technology); depicts Beckman Auditorium, Caltech's best-known architectural landmark (Edward Durell Stone, 1960) on the Pasadena campus - confirmed by downloading and visually inspecting the file; 5184x3456 px landscape; verified HTTP 200 image/jpeg. Caltech is extremely well covered on Commons; alternates if a different building is preferred include File:Cahill Center Caltech 2017.jpg (4608x3456, CC BY-SA 4.0, Antony-22) and File:Broad Center Caltech 2017.jpg (4608x3456, CC BY-SA 4.0).",
+          "proposedPublicId": "studentstraffic/universities/california-institute-of-technology/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "caucasus-medicine-school",
+      "universityName": "Caucasus Medicine School",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cu.edu.ge/files/gallery/International%20Relations/2020/CU%20CAMPUS/1.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from Caucasus University's own domain (cu.edu.ge), published in the 'CU CAMPUS' gallery on the university's own campus page https://cu.edu.ge/about-us/cu-campus; depicts an aerial exterior view of the Caucasus University campus in Tbilisi - the historic stone main building, forecourt, fountain, grounds and sports pitch - which is the campus the Caucasus Medicine School (a school of Caucasus University, cu.edu.ge/en/schoolss/chs, NOT Caucasus International University) sits on; no photographer watermark, unlike several other files in the same gallery which carry a '(c) Photo courtesy of KOM Hive' credit and were therefore avoided; verified HTTP 200 image/jpeg, 967x1080 px (portrait-leaning, so a landscape crop across the building band will be needed for cover use)",
+          "proposedPublicId": "studentstraffic/universities/caucasus-medicine-school/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "central-asian-international-medical-university",
+      "universityName": "Central Asian International Medical University (CAIMU)",
+      "sourceBatch": "cover-pass-04-kyrgyzstan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://caimu.edu.kg/wp-content/uploads/2024/05/breadcumb-bg.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph served from the university's own current domain caimu.edu.kg (used site-wide as the page-header background; the domain caimu.org.kg recorded in the previous pass is dead, caimu.edu.kg is the live official site - og:site_name 'Central Asian International Medical University', address 174 Lenin Street, Jalal-Abad). Street-level exterior of the main entrance; the facade banner and the gate sign both read 'CENTRAL ASIAN INTERNATIONAL MEDICAL UNIVERSITY' in Kyrgyz, English and Russian, so the subject is self-identifying. 1920x400 px landscape (a wide header crop - suitable as a cover band but with little room for further cropping); verified HTTP 200 image/jpeg, 443,020 bytes. Chosen after downloading and inspecting 48 of the 127 landscape items in the site's /wp-json media library, which are otherwise entirely cultural-event and lecture photography with no building shot.",
+          "proposedPublicId": "studentstraffic/universities/central-asian-international-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "central-asian-university-medical-school",
+      "universityName": "Central Asian University Medical School",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Central_Asian_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, author CentralAsianUniversity1, File:Central Asian University.jpg (description 'Central Asian University (CAU) in Tashkent'); depicts the CAU Tashkent campus plaza with the large freestanding 'CAU' monument in the foreground and the main academic building behind - the parent university's own campus is the fair subject for this medical-school record; 2560x1706 px landscape, clean and uncluttered; verified HTTP 206 image/jpeg. Alternatives inspected: File:CAU - Central Asian University, Tashkent.jpg (9504x6336, CC BY-SA 4.0, SARVARCAU1, same view at much higher resolution) and File:CAU - Central Asian University, Tashkent (1).jpg (6240x4160, building facade with CAU banners). IDENTITY CAVEAT for the reviewer: AKFA University was renamed Central Asian University in June 2023, so this is very likely the same campus as the akfa-university-medical-school record in this batch; the two records have deliberately been given differently branded photos, but the July pass's flagged duplicate/rename question remains unresolved and should be settled before both covers go live.",
+          "proposedPublicId": "studentstraffic/universities/central-asian-university-medical-school/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "central-university-of-europe",
+      "universityName": "Central University of Europe Faculty of Medicine",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cue.edu.ge/wp-content/uploads/2025/09/F9A8063-1200x800.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own WordPress media library (cue.edu.ge), published in the photo set on the university's own 'About the Tbilisi campus' page https://cue.edu.ge/chvens-shesaxeb/tbilisis-campusis-shesaxeb/; depicts the faculty's own teaching laboratory on the Tbilisi campus - benches with sinks, fume cabinet, analyser and glassware, no people; accepted as a last-resort interior because no exterior of the building is published anywhere on the domain (the homepage hero CoverWebMedic.jpg is a designed blue composite with a Tbilisi skyline silhouette, slide1-banner.webp is an outdoor graduation ceremony, and the Kutaisi page only carries city-tourism stock such as Kutaisi_Golden_morning.jpg and Kutaisi_airport_interior_information.jpg); verified HTTP 200 image/jpeg, 1200x800 px (a -scaled.jpg original also exists at the same path)",
+          "proposedPublicId": "studentstraffic/universities/central-university-of-europe/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "chalmers-university-technology",
+      "universityName": "Chalmers University of Technology",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Chalmers_University_of_Technology_Campus.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Johan Bodell (Chalmers) - i.e. released by the university's own photographer, File:Chalmers University of Technology Campus.jpg in Category:Chalmers University of Technology; depicts the walkway between the MV building and Fysik on Chalmers' main Johanneberg campus, Gothenburg; 7625x5086 px landscape; verified HTTP 200 image/jpeg. Replaces the July 2026 candidate cms.www.chalmers.se/.../johanneberg_i0a2179_1920x1080px.jpg, which timed out three times at upload; this file is on Wikimedia's CDN and is the correct Johanneberg campus (not the Lindholmen campus shown in the en.wikipedia lead image).",
+          "proposedPublicId": "studentstraffic/universities/chalmers-university-technology/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "chechen-state-university",
+      "universityName": "Chechen State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%D0%A7%D0%B5%D1%87%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Салман Д, file \"Чеченский государственный университет.JPG\"; depicts the Chechen State University building in Grozny (file description \"Чеченский государственный университет\"; in Category:Chechen State University); 4752x3168 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/chechen-state-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "chelyabinsk-state-medical-university",
+      "universityName": "Chelyabinsk State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Chelyabinsk_State_Medical_Academy.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Rishat Kagirov (IEPCBM), file \"Chelyabinsk State Medical Academy.jpg\"; depicts the main building of what is now South Ural State Medical University in Chelyabinsk, the same institution as this record (file description: Federal State Budgetary Educational Institution of Higher Education \"South-Ural State Medical University\"; ru.wikipedia article lead image; in Category:South Ural State Medical University). NOTE: this institution was renamed from Chelyabinsk State Medical Academy/University to South Ural State Medical University; the catalogue record carries the historic name; 3188x1809 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/chelyabinsk-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "chirchik-branch-tsmu",
+      "universityName": "Chirchik Branch of Tashkent State Medical University",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tdtuchf.uz/static/uploads/TDTUCHF_R.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official photograph published on the branch's own domain tdtuchf.uz (the same domain that supplied the approved logo in the July pass), served from its static uploads directory; depicts the CHIRCHIK branch's own entrance facade - the canopy sign reads 'TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI CHIRCHIQ FILIALI' with the branch crest, plus a wall plaque in English reading 'Tashkent Medical Academy Chirchik Branch', so this is confirmed as the Chirchik campus and NOT the TSMU main building in Tashkent; 1280x960 px, 4:3 landscape; verified HTTP 206 image/jpeg. Nothing exists on Commons for this branch (searches for 'Chirchiq tibbiyot' and 'Toshkent tibbiyot akademiyasi Chirchiq' returned zero files; uz.wikipedia has no article). Note: the only other campus-adjacent image on the homepage, /static/uploads/IMG_0475.jpeg, is an AI-generated 'Eng yaxshi tyutor-2026' promotional poster and was rejected; the homepage hero itself is a via.placeholder.com placeholder.",
+          "proposedPublicId": "studentstraffic/universities/chirchik-branch-tsmu/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "david-tvildiani-medical-university",
+      "universityName": "David Tvildiani Medical University AIETI Medical School",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dtmu.org/assets/Campus-Lookaround_151.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own domain (dtmu.org), used as a CSS background-image in the campus section of the dtmu.org homepage and named 'Campus-Lookaround' by the university itself; depicts an exterior view of the DTMU campus in Tbilisi - the multi-storey teaching block on the left, the walled inner courtyard with its brick paving, lawns and sundial feature, and the surrounding Tbilisi hillside; no people, no event, no text overlay; verified HTTP 200 image/jpeg, 1280x720 px landscape. Chosen over /assets/tvild1.webp, tvild2.webp and tvild-3.webp on the same domain, which are graduation-ceremony photographs (diploma handover on stage in front of the DTMU backdrop), and over the /assets/news-grad-*.jpg files the July pass had already rejected.",
+          "proposedPublicId": "studentstraffic/universities/david-tvildiani-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "douglas-college-nursing",
+      "universityName": "Douglas College",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Enter_Square_of_Douglas_Colledge_-_panoramio.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Weixi Zeng (via Panoramio, reviewed by trusted users), File:Enter Square of Douglas Colledge - panoramio.jpg, from Category:Douglas College; downloaded and visually inspected: the Douglas College New Westminster campus courtyard - brick and glass academic blocks around a water feature with fountain and planters, students walking; 4320x3240 px landscape; verified HTTP 200 image/jpeg (5.7 MB). Subject is the college campus itself, per the brief for the '-nursing' records. Two sibling files in the same category were inspected and rejected as weaker: 'Main hall of Douglas Colledge' (interior atrium with construction hoarding) and 'Entrance of Douglas Colledge' (a tight crop of the wordmark on a canopy).",
+          "proposedPublicId": "studentstraffic/universities/douglas-college-nursing/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "east-european-university",
+      "universityName": "East European University",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://eeu.edu.ge/wp-content/uploads/2020/07/DPI0782-2048x1360.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own WordPress media library (eeu.edu.ge), published in the university's own infrastructure gallery at https://eeu.edu.ge/portfolio/infrastructure/; depicts a plain daylight exterior of the East European University main building in Tbilisi - the glass-and-stone facade with the rooftop EEU sign, forecourt and pines - with no people, event or text overlay; verified HTTP 200 image/jpeg, 2048x1360 px landscape (a larger -scaled.jpg original exists at the same path). A second clean exterior of the same building, DPI0774, is available as a fallback at https://eeu.edu.ge/wp-content/uploads/2020/07/DPI0774-2048x1365.jpg style paths if a different angle is preferred.",
+          "proposedPublicId": "studentstraffic/universities/east-european-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "edhec-business-school",
+      "universityName": "EDHEC Business School",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Croix_edhec_facade.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:Velvet, File:Croix edhec facade.jpg, from Category:EDHEC Business School (also a Commons Quality Image); description 'Street facade of the Edhec Business School, in Croix' - Croix is in the Lille metropolitan area and is EDHEC's principal Lille-campus site, matching the record's city; 4295x2876 px landscape; verified HTTP 200 image/jpeg (17.6 MB). The category also holds File:Edhec Business School Lille campus.jpg (3264x1836) and File:Edhec Business School panorama.jpg (2560x688) under the same licence if a different framing or a letterbox crop is preferred; File:EDHEC, quartier Arenas.jpg was NOT chosen because it is the Nice campus. This supersedes the first pass's hold, which searched only edhec.edu (where the campuses page 404s).",
+          "proposedPublicId": "studentstraffic/universities/edhec-business-school/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "epoka-university",
+      "universityName": "Epoka University",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.epoka.edu.al/assets/images/footer.webp",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph published on the university's own domain (epoka.edu.al, referenced from the homepage template as assets/images/footer.webp); depicts the Epoka University campus in Tirana - the glazed main academic building on the left, a second faculty block on the right, students on the paved central walkway, Albanian hills behind; 832x555 px, landscape; verified HTTP 200 image/webp. CAVEAT: 832 px wide, below the 1000 px preference - the homepage exposes no larger variant in static HTML and the earlier pass correctly found that the site's og:image is only a logo SVG. Usable for a cover at modest display sizes; flag if the integrator needs >=1000 px.",
+          "proposedPublicId": "studentstraffic/universities/epoka-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "far-eastern-state-medical-university",
+      "universityName": "Far Eastern State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Far_Eastern_State_Medical_University_1.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0, author H2v5o68z, file \"Far Eastern State Medical University 1.jpg\"; depicts Far Eastern State Medical University in Khabarovsk (file description \"Far Eastern State Medical University\"; in Category:Far Eastern State Medical University); 4000x3000 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/far-eastern-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "fergana-medical-institute-of-public-health",
+      "universityName": "Fergana Medical Institute of Public Health",
+      "sourceBatch": "cover-pass-03a-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/FJSTI.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0 (public domain dedication), author credited as FJSTI - the institute itself, uploaded 2024-03-13, File:FJSTI.jpg, description \"Farg'ona jamoat salomatligi tibbiyot instituti rasmi\" which is the exact Uzbek name of this institution; depicts the institute's main academic building frontage with its crest above the entrance; 1280x852 px landscape; verified HTTP 206 image/jpeg. REVIEWER CAVEAT: the shot is taken with a fisheye lens (curved horizon) and the entrance carries a gold-and-black balloon arch with several people walking past, so it reads partly as an opening-day photo; the building is nonetheless the dominant subject and fills the frame, and it is the institute's own CC0 upload. Flagged rather than silently accepted in case the stricter no-event-photo rule should apply. No other candidate exists: Commons has nothing else for this institute, ru.wikipedia 'Ферганский медицинский институт' returned no files, and fergmi.uz carries no og:image or hero banner - only the logo and small department thumbnails.",
+          "proposedPublicId": "studentstraffic/universities/fergana-medical-institute-of-public-health/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "first-tashkent-state-medical-institute",
+      "universityName": "First Tashkent State Medical Institute",
+      "sourceBatch": "cover-pass-03b-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Toshkent_tibbiyot_akademiyasi_bosh_o%27quv_binosi.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Boboyev1996 (self-published work), File:Toshkent tibbiyot akademiyasi bosh o'quv binosi.jpg in Category:Tashkent Medical Academy; depicts the main academic building (bosh o'quv binosi) of Tashkent Medical Academy in Tashkent, facade signage reading 'TOSHKENT TIBBIYOT AKADEMIYASI' clearly legible above the entrance, flagpoles with the Uzbek flag and the academy's own pennants - visually confirmed by downloading and inspecting the image, it is a building exterior, not a logo, portrait or event photo. Institutional basis: the First Tashkent State Medical Institute is the direct lineage institution of Tashkent Medical Academy, into which it was merged by presidential decree in 2005 and whose main Tashkent campus it occupies; this is the parent/successor institution's own main building and is used here explicitly on that lineage basis. Deliberately NOT reused for the second-tashkent-state-medical-institute record. 1280x720 px landscape; verified HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/first-tashkent-state-medical-institute/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "georgian-college-nursing",
+      "universityName": "Georgian College",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Georgian_College_in_Owen_Sound.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 3.0, author User:Tabercil, File:Georgian College in Owen Sound.jpg, from Category:Georgian College; description 'Photo of the main building for Georgian College as seen from 8th St. E.'; 2560x1920 px landscape; verified HTTP 200 image/jpeg. CAVEAT ON IDENTITY: this is Georgian College's Owen Sound campus building, not the Barrie main campus that the catalogue record names as its city. It is unambiguously a Georgian College building (the college operates seven Ontario campuses) and is the only college-building photograph on Commons - Category:Georgian College holds just three files, the other two being the college logo SVG and an unrelated portrait. Alternative checked and rejected: georgiancollege.ca publishes no og:image and its homepage media are all 720x408 marketing web tiles (summer campaign, viewbook, continuing-education promos). Flag the campus discrepancy to the integrator; hold instead if the record must show Barrie.",
+          "proposedPublicId": "studentstraffic/universities/georgian-college-nursing/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "georgian-national-university-seu",
+      "universityName": "Georgian National University SEU",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cc.seu.edu.ge/gallery/692edd95d0e07.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own content backend (cc.seu.edu.ge, the API host seu.edu.ge's SPA loads all site media from); it is photo 30 of the university's own 'SEU Campus' / 'SEU-ს კამპუსი' gallery, category 58 of https://cc.seu.edu.ge/api/photos; depicts the SEU Blockchain Lab on the SEU campus - the room is empty of people and every monitor displays the SEU wordmark wallpaper, with 'SEU BLOCKCHAIN LAB' and partner logos on the end wall, so the facility is unambiguously identified as SEU's own; accepted as a last-resort interior because the SEU Campus gallery contains no exterior of the building (its other frames are a decorated atrium ice rink, library/auditorium/lecture-hall interiors with students, a dental simulation clinic and welcome-party crowd shots); verified HTTP 200 image/jpeg, 756x425 px landscape - below the 1000 px preference, which is the maximum the gallery serves. CAVEAT for the integrator: the July 2026 pass flagged this slug as a duplicate of 'seu-georgian-national-university'; the canonical-record decision should be made before the same asset is uploaded twice.",
+          "proposedPublicId": "studentstraffic/universities/georgian-national-university-seu/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "goce-delcev-university-faculty-of-medicine",
+      "universityName": "Goce Delcev University Stip - Faculty of Medical Sciences",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Univerzitet_Goce_Del%C4%8Dev_-_%C5%A0tip.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Raso, File:Univerzitet Goce Delcev - Stip.JPG in Category:Goce Delcev University; depicts the main building of Goce Delcev University in Stip, North Macedonia; 4272x2848 px landscape; verified HTTP 200 image/jpeg. IDENTITY CAVEAT: this is the parent university's main building, not a Faculty of Medical Sciences building. Searched Commons in Macedonian (Универзитет „Гоце Делчев“ во Штип, Медицински факултет Штип) and English; the only other campus-specific free file is File:Кампус 4 на Универзитетот „Гоце Делчев“ - Штип.jpg (Campus 4), which is not the campus housing the medical faculty. No faculty-specific photograph exists on Commons and ugd.edu.mk carries no faculty building photography (re-confirmed; consistent with the July 2026 hold note in a-121-130.json). Reviewer may prefer to reject this parent-building substitution.",
+          "proposedPublicId": "studentstraffic/universities/goce-delcev-university-faculty-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "griffith-university",
+      "universityName": "Griffith University",
+      "sourceBatch": "cover-pass-07-carryover.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Kinaba%2C_KGCB_colleges%2C_Griffith_University_Nathan_Campus.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, own work by author SpringbokSam, File:Kinaba, KGCB colleges, Griffith University Nathan Campus.jpg, in Category:Griffith University. Description names the Kinaba and KGBC college buildings on the Nathan campus - Nathan is Griffith's Brisbane campus, matching this record's city. 3264x1836 px (16:9 landscape), 3.3 MB; verified HTTP 200 image/jpeg. REPLACES the patch-04.json pick, File:Griffith University Nathan Campus.jpg (CC BY 2.0, Tate Johnson), which still resolves but depicts only the campus entrance SIGN rather than the campus itself; it remains a valid fallback.",
+          "proposedPublicId": "studentstraffic/universities/griffith-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "gulf-medical-university",
+      "universityName": "Gulf Medical University",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Gulf_Medical_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Shaj.pre, File:Gulf Medical University.jpg in Category:Gulf Medical University; description 'The main building of Gulf Medical University'; this is the lead image of the en.wikipedia article Gulf Medical University; 4500x2406 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 cover hold cleanly: it is GMU-specific, so it avoids the Thumbay Group / Thumbay Medicity branding ambiguity that blocked the gulfmedicaluniversity.com and thumbay.com candidates.",
+          "proposedPublicId": "studentstraffic/universities/gulf-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "gulistan-state-university",
+      "universityName": "Gulistan State University Faculty of Medicine",
+      "sourceBatch": "cover-pass-03b-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Gulistan_State_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Chrisvomdeich (self-published work), File:Gulistan State University.jpg, described on Commons as 'Gulistan State University, Usbekistan' and categorised under Category:Guliston, Uzbekistan; depicts the university's campus buildings in Gulistan - a two-storey block signed 'MA'NAVIYAT VA MA'RIFAT MARKAZI' (the campus spirituality-and-enlightenment centre) adjoining the four-storey teaching block, with the Uzbek flag flying over the entrance and the paved campus forecourt in the foreground - visually confirmed by downloading and inspecting the image. This record is the medicine faculty of Gulistan State University, so the parent university's own campus building is a fair subject for the cover. 4032x3024 px landscape; verified HTTP 206 image/jpeg. Supersedes the July 2026 pass, which rejected guldu.uz's og:image because it was a scanned admissions-exam-schedule PDF page; that rejection was correct, but Commons was not checked at the time.",
+          "proposedPublicId": "studentstraffic/universities/gulistan-state-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "haw-hamburg-bscn",
+      "universityName": "Hamburg University of Applied Sciences (HAW Hamburg)",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/HAW-Berlinertor7-3.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Uwe Rohwedder (User:UweRohwedder), File:HAW-Berlinertor7-3.jpg, from Category:Hochschule fuer Angewandte Wissenschaften Hamburg; description 'Hochhaus Berliner Tor 7, Campus der HAW Hochschule fuer Angewandte Wissenschaften Hamburg' - the Berliner Tor high-rise, HAW Hamburg's principal campus building; 3103x2069 px landscape; verified HTTP 200 image/jpeg. Found only via the German-language Commons category name, which is why the first pass missed it. Same category alternative: File:HAW Hamburg, Haus H, Stiftstrasse 69, Aula von aussen.jpg (3936x2952, CC BY 4.0, author User:Minderbinder).",
+          "proposedPublicId": "studentstraffic/universities/haw-hamburg-bscn/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "insead",
+      "universityName": "INSEAD",
+      "sourceBatch": "cover-pass-07-carryover.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.insead.edu/sites/insead/files/inline-images/europe-campus_0.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the school's own domain (www.insead.edu), an inline campus image of the Europe (Fontainebleau) campus, which is the campus this record is scoped to. Re-verified 2026-09-16: HTTP 200, image/jpeg, 110 KB. Unchanged from second-pass-patches/patch-04.json. CAVEAT: modest file size, so likely around 1000 px wide - acceptable for a card cover, thin for a full-bleed hero.",
+          "proposedPublicId": "studentstraffic/universities/insead/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "international-higher-school-of-medicine",
+      "universityName": "International Higher School of Medicine (IHSM)",
+      "sourceBatch": "cover-pass-04-kyrgyzstan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/International_higher_school_of_medicine_central_campus.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author ArgenBekbolotov, own work, file 'International higher school of medicine central campus.jpg' (description 'central campus', taken 2023-06-29) in Category:Universities and colleges in Bishkek and Category:Medical higher education institutions in Kyrgyzstan. Depicts the IHSM central campus: elevated frontal view of the long five-storey academic block with the forecourt monument, the Tien Shan range behind, and the facade legend readable at full resolution as 'INTERNATIONAL SCHOOL OF ME[DICINE]'. Attribution to IHSM rather than to the separate ISM-under-IUK record is corroborated three ways: the Commons file title, the fact that the English Wikipedia article 'International Higher School of Medicine' uses this exact file as its lead image, and IHSM's own site ism.edu.kg carrying the page title 'International Higher School of Medicine (IHSM)' - i.e. IHSM is the institution that trades under the 'International School of Medicine' name and the ISM domain. 5472x3648 px landscape; verified HTTP 200 image/jpeg, 2,489,650 bytes (downloaded in full, inspected, and the signage crop enlarged to confirm). An alternative Commons file exists (File:IHSM Central Campus.jpg, CC BY-SA 4.0, author Hismiuk, 3088x1360) if a wider, lower-resolution crop is preferred.",
+          "proposedPublicId": "studentstraffic/universities/international-higher-school-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "international-university-of-tbilisi",
+      "universityName": "International University of Tbilisi School of Health",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://iut.edu.ge/wp-content/uploads/2024/02/image-007.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the institution's own WordPress media library (iut.edu.ge), published in the university's own photo gallery at https://iut.edu.ge/abiturientebisatvis/potogalerea/; depicts the university's clinical-skills simulation ward - hospital beds with patient manikins, ventilator and defibrillator trolleys, wheelchair - which is directly relevant to the School of Health record; accepted as a last-resort interior because the institution publishes no exterior of its building (the 15-frame gallery is entirely indoor: lecture rooms, board room, moot court, anatomy museum, physiotherapy room, simulated operating theatre, student lounge); verified HTTP 200 image/jpeg, 1280x960 px landscape. IDENTITY NOTE for the integrator: the July 2026 pass could not locate this institution. iut.edu.ge resolves and self-describes throughout its Georgian markup as 'თბილისის საერთაშორისო უნივერსიტეტი' (Tbilisi International University), running accredited medicine, dentistry, physiotherapy and Georgian-language programmes - this is the institution behind the record, and iut.edu.ge should be recorded as its official domain.",
+          "proposedPublicId": "studentstraffic/universities/international-university-of-tbilisi/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "ivanovo-state-medical-academy",
+      "universityName": "Ivanovo State Medical Academy",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Aleximagine, file \"Медицинский институт.jpg\"; depicts the medical institute building at Sheremetevsky Prospekt 8, Ivanovo, the main building of Ivanovo State Medical Academy/University (file description gives the building, architect and address; it is the ru.wikipedia lead image of the Ивановский государственный медицинский университет article); 1280x852 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/ivanovo-state-medical-academy/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "izhevsk-state-medical-academy",
+      "universityName": "Izhevsk State Medical Academy",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%BE-%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Iruroko, file \"Учебно-лабораторный корпус.jpg\"; depicts the teaching-and-laboratory block of Izhevsk State Medical Academy/University housing the biochemistry and human anatomy departments; it is the ru.wikipedia lead image of the Ижевский государственный медицинский университет article, which is the redirect target of Ижевская государственная медицинская академия; 1600x1066 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/izhevsk-state-medical-academy/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "james-cook-university",
+      "universityName": "James Cook University",
+      "sourceBatch": "cover-pass-07-carryover.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/JCU_University_Drive.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, released into the public domain by its author Nielg (PD-self), File:JCU University Drive.JPG, in Category:James Cook University. Description: 'View of University Drive at the Douglas Campus of JCU' - Douglas is JCU's Townsville campus, matching this record's city. 3072x2304 px, 1.5 MB; verified HTTP 200 image/jpeg. REPLACES the patch-05.json pick, the jcu.edu.au homepage hero banner, which now returns HTTP 403 Forbidden and would fail at upload. Rejected the higher-resolution files in the same category (the 'James Cook University Staff Members Tour Emory S Land' US Navy series) because they depict people aboard a naval vessel, not the campus.",
+          "proposedPublicId": "studentstraffic/universities/james-cook-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kaluga-state-university-medical-institute",
+      "universityName": "Kaluga State University (Medical Institute)",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kaluga_2013_Lunacharskogo_2_north_02_1TM.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Kaluga.2012, file \"Kaluga 2013 Lunacharskogo 2 north 02 1TM.jpg\"; depicts the historic boys-gymnasium building on Lunacharskogo Street, Kaluga, which houses Kaluga State University, the parent university of this record’s Medical Institute. Identification: the file is in Category:Kaluga State University on Commons AND is the ru.wikipedia lead image of the Калужский государственный университет имени К. Э. Циолковского article; 4000x2400 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/kaluga-state-university-medical-institute/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kemerovo-state-university-medical-institute",
+      "universityName": "Kemerovo State University (Medical Institute)",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Views_of_Kemerovo_%28Nov_2022%29_-_15.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Vyacheslav Bukharov, file \"Views of Kemerovo (Nov 2022) - 15.jpg\"; depicts Kemerovo State University, the parent university of this record’s Medical Institute (file description \"Кемеровский государственный университет\"; in Category:Kemerovo State University); 3885x1764 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/kemerovo-state-university-medical-institute/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "khakasia-state-university-medical-faculty",
+      "universityName": "Khakasia State University (Medical Faculty)",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/2025-08-13_%D0%A5%D0%B0%D0%BA%D0%B0%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%2820250813_141716%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0, author Ташебинский, file \"2025-08-13 Хакасский государственный университет (20250813 141716).jpg\"; depicts the building of Khakas State University on the central avenue of Abakan, the parent university of this record’s Medical Faculty (file description names Хакасский государственный университет and Abakan; ru.wikipedia article lead image); 7666x4315 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/khakasia-state-university-medical-faculty/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "khalifa-university",
+      "universityName": "Khalifa University",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.ku.ac.ae/wp-content/uploads/2019/11/DX3_8099.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official photograph published by Khalifa University on its own domain (ku.ac.ae), found as the campus photo on https://www.ku.ac.ae/campus (the page serves a downscaled 575x244 derivative, DX3_8099-e1617193912674.jpg; this is the full-size original in the same WordPress upload folder). Depicts the Khalifa University Student Center building, Abu Dhabi, with its bilingual Arabic/English 'Student Center' signage - verified by downloading and visually inspecting the file. 4000x1690 px landscape, no campaign text or date-limited overlay; verified HTTP 200 image/jpeg, 438743 bytes. Commons has NO photograph of Khalifa University (Category:Khalifa University contains only two logo files and one portrait), so the official-domain route was used. This is a building photograph, not a brand asset, so the ku.ac.ae visual-identity page's written-permission requirement for logo/branding assets - the basis of the July 2026 hold in a-181-190.json - does not apply in the same way; the media integrator should still confirm reuse terms before upload.",
+          "proposedPublicId": "studentstraffic/universities/khalifa-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kiit-deemed-to-be-university",
+      "universityName": "KIIT Deemed to be University",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2023/04/KIIT-University-Bhubaneswar.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own domain (kiit.ac.in) and used by the university itself as its homepage social-share (og:image) representation of KIIT University, Bhubaneswar; filename and homepage context both identify the Bhubaneswar campus. Re-verified 2026-09-16: HTTP 200, image/jpeg, 350 KB. Unchanged from india-pilot-batch-3.json.",
+          "proposedPublicId": "studentstraffic/universities/kiit-deemed-to-be-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kyrgyz-russian-slavic-university",
+      "universityName": "Kyrgyz-Russian Slavic University (KRSU) Medical Faculty",
+      "sourceBatch": "cover-pass-04-kyrgyzstan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kyrgyz-Russian_Slavic_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0 1.0 public-domain dedication (no attribution legally required; author Arthur Dolchenko, own work, 2024-03-30), file 'Kyrgyz-Russian Slavic University.jpg', description 'Главный корпус Кыргызского-Российского Славянского Университета в 2024 году' (main building of KRSU in 2024), in Category:Universities and colleges in Bishkek and Category:Kiev Street, Bishkek. Depicts the KRSU main building on Kiev Street: the colonnaded facade and arched brick entrance, with the Pushkin statue in the forecourt, the Kyrgyz and Russian flags, the trilingual entrance inscription naming the Kyrgyz-Russian Slavic University, and a 'Я ♥ КРСУ' sculpture - self-identifying. 12000x9000 px (note: 21,947,042 bytes, so the integrator should downscale before upload); verified HTTP 200 image/jpeg. Downloaded at 1280px and visually inspected. This resolves the previous pass's hold, which had only checked krsu.edu.kg's Nuxt boilerplate and reported no Commons category - the file is categorised by street and city rather than under a university category, which is why category-name searching missed it.",
+          "proposedPublicId": "studentstraffic/universities/kyrgyz-russian-slavic-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kyrgyz-state-university-arabaev",
+      "universityName": "Kyrgyz State University named after I. Arabaev",
+      "sourceBatch": "cover-pass-04-kyrgyzstan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Kyrgyz_State_University_of_Arabaev.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Ekrem Canli, own work, file 'Kyrgyz State University of Arabaev.jpg', description 'Kyrgyz State University of Arabaev in Bishkek/Kyrgyzstan' (taken 2012-06-23, Canon EOS 1000D), in Category:Universities and colleges in Bishkek. Depicts the university's campus gateway: the portal carries the full name in Kyrgyz and English - 'ИШЕНАЛЫ АРАБАЕВ АТЫНДАГЫ КЫРГЫЗ МАМЛЕКЕТТИК УНИВЕРСИТЕТИ' / 'ISHENALY ARABAEV KYRGYZ STATE UNIVERSITY' - together with the university crest, so the subject is self-identifying. 3888x2592 px landscape; verified HTTP 200 image/jpeg, 7,370,465 bytes. Downloaded at 1280px and visually inspected. This resolves the July 2026 hold, which had checked only arabaevksu.edu.kg (whose photography is small news thumbnails and captioned press graphics - all candidates there were re-downloaded and inspected again this pass and confirmed unusable).",
+          "proposedPublicId": "studentstraffic/universities/kyrgyz-state-university-arabaev/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kyrgyz-uzbek-university",
+      "universityName": "Kyrgyz-Uzbek International University named after B. Sydykov, Medical Faculty",
+      "sourceBatch": "cover-pass-04-kyrgyzstan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kumu.kg/wp-content/uploads/2026/06/714759762_2160547271402769_9065602383921088360_n.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph served from the university's own domain kumu.kg (uploaded to its own WordPress media library and surfaced via /wp-json/wp/v2/media). Street-level exterior of the university's medical building in Osh: the roof banner reads 'КЫРГЫЗ-ӨЗБЕК ЭЛ АРАЛЫК УНИВЕРСИТЕТИ' (Kyrgyz-Uzbek International University), the glazed atrium is signed 'МЕДИЦИНАЛЫК КЛИНИКА / MEDICAL CLINIC' with the Rod-of-Asclepius emblem, and the flanking wings are signed 'ЭЛ АРАЛЫК МЕД[ИЦИНАЛЫК КОЛЛЕДЖ] / INTERNATIONAL...' - so the subject is self-identifying and is specifically the medical estate, matching this record's Medical Faculty scope rather than the central rectorate. 2048x1536 px landscape; verified HTTP 200 image/jpeg, 848,427 bytes. Chosen after downloading and inspecting 72 of the 83 landscape items in the site's media library, which are otherwise almost entirely meeting, ceremony and delegation photography. Deliberately NOT used: Commons File:Kyrgyz-Uzbek state universty.jpg, which despite a CC BY-SA 4.0 tag credits a news site (novayaepoxa.com) rather than a self-published author and is filed under Category:Osh State University - a different institution - i.e. exactly the misattribution risk this batch warns about.",
+          "proposedPublicId": "studentstraffic/universities/kyrgyz-uzbek-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "lobachevsky-state-university-medical-institute",
+      "universityName": "Lobachevsky State University of Nizhny Novgorod",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/%D0%9D%D0%9D%D0%93%D0%A3_%D0%B8%D0%BC._%D0%9D.%D0%98.%D0%9B%D0%BE%D0%B1%D0%B0%D1%87%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E%2C_%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0, author Ubivatel noskov, file \"ННГУ им. Н.И.Лобачевского осенью, Нижний Новгород.jpg\"; depicts Lobachevsky State University of Nizhny Novgorod in autumn (file description \"ННГУ им. Н.И.Лобачевского осенью, Нижний Новгород\"; in Category:Lobachevsky State University of Nizhny Novgorod); 4000x1800 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/lobachevsky-state-university-medical-institute/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "lovely-professional-university",
+      "universityName": "Lovely Professional University",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Lovely_Professional_University%2C_Jalandhar-Delhi_G.T._Road_%28NH-1%29%2C_Phagwara%2C_Punjab_%28INDIA%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author Shalintripathi, File:Lovely Professional University, Jalandhar-Delhi G.T. Road (NH-1), Phagwara, Punjab (INDIA).jpg. File title and description name the university's Jalandhar-Delhi G.T. Road (NH-1) address in Phagwara, matching this record's campus. 1280x824 px landscape, 311 KB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-3.json as the /wiki/File: description page.)",
+          "proposedPublicId": "studentstraffic/universities/lovely-professional-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine",
+      "universityName": "Macau University of Science and Technology Faculty of Medicine",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Macau_University_of_Science_and_Technology_13-10-2024.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:LN9267, File:Macau University of Science and Technology 13-10-2024.jpg, description (zh) 'this photograph was taken at Macau University of Science and Technology'; downloaded and visually inspected: the MUST campus in Taipa seen from the roadside, with the university crest and its Chinese and Portuguese names ('Universidade de Ciencia e Tecnologia de Macau') mounted on the end wall of the main teaching block; 8064x6048 px landscape; verified HTTP 200 image/jpeg (10.3 MB). IDENTITY CAVEAT, stated explicitly per the brief: no photograph of the Faculty of Medicine's own building could be located - Commons has no Faculty of Medicine category (only MUST Hospital, Library, Gymnasium, Sports Field and the Innovation Technology Research Institute), there is no dedicated English or Chinese Wikipedia article for the faculty, and must.edu.mo returns HTTP 403 to curl. This is therefore the PARENT university's main campus, used to represent the faculty record. Alternative, lower-resolution but cleaner composition: File:Macau Science & Technology University.JPG (1600x1200, the en.wikipedia lead image), which shows the same signed facade.",
+          "proposedPublicId": "studentstraffic/universities/macau-university-of-science-and-technology-faculty-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "macewan-university-nursing",
+      "universityName": "MacEwan University",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/MacEwan_University_%2841937862632%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author Mack Male from Edmonton, AB, Canada (Flickr, reviewed by FlickreviewR 2), File:MacEwan University (41937862632).jpg, from Category:MacEwan University; description 'MacEwan University'; depicts the MacEwan University city centre campus, Edmonton; 5472x3648 px landscape; verified HTTP 200 image/jpeg (16.0 MB). Subject is the university campus itself, per the brief for the '-nursing' records. Commons also carries Category:Buildings at MacEwan University and Category:Allard Hall (Building 11, MacEwan University) if a specific building is later preferred.",
+          "proposedPublicId": "studentstraffic/universities/macewan-university-nursing/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "manipal-academy-of-higher-education",
+      "universityName": "Manipal Academy of Higher Education",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Manipal_Institute_of_Technology_Academic_Building%2C_Manipal_University%2C_Manipal_Campus%2C_India_%28Ank_Kumar%2C_Infosys_Limited_%29_02.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, own work by author Ank Kumar, File:Manipal Institute of Technology Academic Building, Manipal University, Manipal Campus, India (Ank Kumar, Infosys Limited ) 02.jpg. Title and description explicitly state 'Manipal Institute of Technology Academic Building, Manipal University, Manipal Campus, Udupi, Karnataka, India', directly identifying the Manipal campus this record covers. 3072x2304 px, 2.2 MB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-1.json as the /wiki/File: description page.)",
+          "proposedPublicId": "studentstraffic/universities/manipal-academy-of-higher-education/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "universityName": "Mbarara University of Science and Technology Faculty of Medicine",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Sunny_evening_%285pm%29_in_Kihumuro_Campus_at_Mbarara_University_of_Science_and_Technology_03.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Macholi, File:Sunny evening (5pm) in Kihumuro Campus at Mbarara University of Science and Technology 03.jpg, from Wiki Loves Africa 2023; depicts the Kihumuro campus of MUST, Mbarara, Uganda; this is the lead image of the en.wikipedia article Mbarara University; 4000x3000 px landscape; verified HTTP 200 image/jpeg. IDENTITY CAVEAT: university-level campus imagery, not faculty-specific. Note the July 2026 hold (a-221-230.json) flagged an unresolved naming question - MUST now organises this unit as the Faculty of Health Sciences while the catalogue record says Faculty of Medicine. That rename question is untouched by this cover and still needs an editorial decision; a university-level campus photo is safe either way.",
+          "proposedPublicId": "studentstraffic/universities/mbarara-university-of-science-and-technology-faculty-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "mechnikov-north-western-medical-university",
+      "universityName": "North-Western State Medical University n.a. Mechnikov",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/6343._St._Petersburg._North-Western_State_Medical_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author GAlexandrova, file \"6343. St. Petersburg. North-Western State Medical University.jpg\"; depicts the sports and recreation centre with swimming pool of North-Western State Medical University n.a. I.I. Mechnikov, Piskarevsky Prospekt 47 bldg 11, St Petersburg, photographed from outside (file description names the university and address; in Category:Mechnikov North-West State Medical University). Caveat: this is a campus sports facility, not the historic main academic block; no free exterior of the main block exists on Commons; 4608x3456 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/mechnikov-north-western-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "medical-institute-of-karakalpakstan",
+      "universityName": "Medical Institute of Karakalpakstan",
+      "sourceBatch": "cover-pass-03b-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kkmi.uz/wp-content/uploads/2024/06/3j6h6fdh6f8gh-1568x882.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph published on the institution's own domain, kkmi.uz (Qoraqalpog'iston tibbiyot instituti / Karakalpakstan Medical Institute, Nukus), used as the homepage hero image on both kkmi.uz/ and kkmi.uz/en/; depicts the institute's main building head-on from the street - a three-storey green-and-white block whose pediment carries the institute's own signage 'QARAQALPAQSTAN MEDICINA INSTITUTI' and whose gate plaques read 'O'zbekiston Respublikasi Sog'liqni saqlash vazirligi - Qoraqalpog'iston Tibbiyot Instituti' - visually confirmed by downloading and inspecting the image; it is a building exterior, not stock, a logo, a portrait or an event photo. 1568x882 px landscape (WordPress-generated size); the full-resolution original of the same photograph is also live and verified at https://kkmi.uz/wp-content/uploads/2024/06/3j6h6fdh6f8gh.jpg (HTTP 200 image/jpeg, 2.83 MB) if the integrator prefers maximum resolution, though its pixel dimensions were not read in this session. Nominated URL verified HTTP 200 image/jpeg. Resolves the July 2026 hold, which failed only because it guessed karmi.uz / nukusmedinst.uz / qmi.uz; the actual domain is kkmi.uz. No open licence - this is an institution-published image, so reuse rests on institutional-image grounds and should be reviewed as such.",
+          "proposedPublicId": "studentstraffic/universities/medical-institute-of-karakalpakstan/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "medical-university-pleven",
+      "universityName": "Medical University Pleven",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Medical_University_Pleven_TB.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Todor Bozhinov (Тодор Божинов), File:Medical University Pleven TB.jpg in Category:Pleven Medical University; description 'Medical University of Pleven, Bulgaria'; 3624x2716 px landscape; verified HTTP 200 image/jpeg. Found via Commons search in both English and Bulgarian (Медицински университет Плевен). Alternate in the same category: File:Medical University - Медицински университет - panoramio.jpg (1224x1632, CC BY 3.0, but portrait).",
+          "proposedPublicId": "studentstraffic/universities/medical-university-pleven/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "moscow-region-state-university-medicine",
+      "universityName": "Moscow Region State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Moscow%2C_Radio_Street_10.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 3.0, author NVO, file \"Moscow, Radio Street 10.jpg\"; depicts the Moscow Region State University building at Radio Street 10, Moscow (in Category:Moscow Region State University; it is the ru.wikipedia lead image of the Государственный университет просвещения article, the institution’s current name after its rename from Московский государственный областной университет). Caveat: the file description generically says \"College in Moscow, 10, Radio Street\"; identification rests on the Commons category and the Wikipedia infobox use; 1000x657 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/moscow-region-state-university-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "mount-royal-university-nursing",
+      "universityName": "Mount Royal University",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bella_Concert_Hall_entrance%2C_Mount_Royal_University%2C_Calgary%2C_Alberta%2C_2025-07-11.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Chris Woodrich (User:Crisco 1492), File:Bella Concert Hall entrance, Mount Royal University, Calgary, Alberta, 2025-07-11.jpg, from Category:Mount Royal University; depicts the Bella Concert Hall entrance on the Mount Royal University campus, Calgary; 5620x3747 px landscape; verified HTTP 200 image/jpeg (9.3 MB). Subject is the university campus itself, per the brief for the '-nursing' records. The same 2025 photo set on Commons also offers the campus amphitheatre, Wyckham House, the fountain and the West Student Residences at 5600-6000 px if a different framing is preferred.",
+          "proposedPublicId": "studentstraffic/universities/mount-royal-university-nursing/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "new-vision-university",
+      "universityName": "New Vision University School of Medicine",
+      "sourceBatch": "cover-pass-02-georgia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://api.newvision.ge/media/rvnl3ou3/school-covers-1680-x-662-px-zip-8.png",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own media host api.newvision.ge (the Umbraco backend newvision.ge loads all site media from), used as a school cover banner on the newvision.ge homepage; depicts New Vision University's own clinical teaching facility - a multi-chair simulation/treatment room with 'NEW VISION HEALTH HUB' signage on the wall and numbered bays, staff and students in scrubs at work - so the facility is unambiguously identified as NVU's own; accepted as a last-resort interior because the university publishes no exterior of its building; verified HTTP 200 image/png, 1680x662 px landscape. Deliberately NOT used from the same cover set: school-covers-...-4.png (abstract blue circuit-board stock graphic) and school-covers-...-7.png (stock hospital-corridor composite with hexagon icon overlay and a logo lockup) - the set mixes real NVU photography with licensed stock, so only frames showing NVU's own signage were considered. Also rejected: api.newvision.ge/media/43dnj350/568a0498.jpg (posed portrait of a student in a classroom) and /media/mnrf1xlq/canon-eos-r6m2-...jpg (two men exchanging documents in the library).",
+          "proposedPublicId": "studentstraffic/universities/new-vision-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "north-eastern-federal-university",
+      "universityName": "North-Eastern Federal University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A1%D0%92%D0%A4%D0%A3.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author LxAndrew, file \"Главный корпус СВФУ.JPG\"; depicts the main building of North-Eastern Federal University in Yakutsk, built 1957 (file description \"Северо-Восточный федеральный университет (ранее - Якутский государственный университет). Здание 1957 года постройки\"; in Category:North-Eastern Federal University); 3264x2448 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/north-eastern-federal-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "norwegian-school-economics",
+      "universityName": "Norwegian School of Economics",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/NHH%2C_Sandviken%2C_Bergen%2C_Hordaland%2C_Norway_-_panoramio.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author trolvag, File:NHH, Sandviken, Bergen, Hordaland, Norway - panoramio.jpg in Category:Norwegian School of Economics and Business Administration; depicts the NHH campus building at Helleveien, Sandviken, Bergen; this is the lead image of the Norwegian Wikipedia article Norges handelshoyskole; 3784x2426 px landscape; verified HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/norwegian-school-economics/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "novgorod-state-university",
+      "universityName": "Novgorod State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9D%D0%BE%D0%B2%D0%93%D0%A3.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Novqwer, file \"Главный корпус НовГУ.jpg\"; depicts the main building of Yaroslav-the-Wise Novgorod State University in Veliky Novgorod (file description \"The main building of the Novgorod State University in Veliky Novgorod\"); 5442x3625 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/novgorod-state-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "novosibirsk-state-university-zelman-medicine",
+      "universityName": "Novosibirsk State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Ngu_nsk.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author De Arso, file \"Ngu nsk.jpg\"; depicts Novosibirsk State University, the parent university of this record’s Institute of Medicine and Psychology (file description \"Новосибирский Государственный Университет\"); 1440x960 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/novosibirsk-state-university-zelman-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "omsk-state-medical-university",
+      "universityName": "Omsk State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/%D0%94%D0%BE%D0%BC_%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9_%C2%AB%D0%A2%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0_%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D0%B5%D0%B2_%D0%9E%D0%B2%D1%81%D1%8F%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D1%8B%D1%85_%D0%B8_%D0%93%D0%B0%D0%BD%D1%88%D0%B8%D0%BD%D1%8B%D1%85_%D1%81_%D1%81%D1%8B%D0%BD%D0%BE%D0%B2%D1%8C%D1%8F%D0%BC%D0%B8%C2%BB.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Вера Дегтярёва, file \"Дом торговый «Товарищества братьев Овсянниковых и Ганшиных с сыновьями».jpg\"; depicts the Ovsyannikov-Ganshin trading house at Lenina Street 12, Omsk, which is the main building of Omsk State Medical University; it is the ru.wikipedia lead image of the Омский государственный медицинский университет article and sits in Category:Omsk State Medical University. Caveat: the file title is the building’s heritage-listing name, not the university’s; 2246x1685 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/omsk-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "op-jindal-global-university",
+      "universityName": "O.P. Jindal Global University",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://jgu.edu.in/storage/1062/DJI_0020.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional image served from the university's own storage path and used as the campus-overview slider image on the university's own Sonipat page (jgu.edu.in/internationaloffice/sonipatindia/), the campus this record is scoped to. Aerial photograph of the university's Sonipat campus. Re-verified 2026-09-16: HTTP 200, image/jpeg, 1.09 MB. Unchanged from india-pilot-batch-2.json.",
+          "proposedPublicId": "studentstraffic/universities/op-jindal-global-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "orel-state-university",
+      "universityName": "Orel State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%9E%D0%93%D0%A3_%28%D0%9E%D1%80%D1%91%D0%BB%2C_%D0%9A%D0%BE%D0%BC%D1%81%D0%BE%D0%BC%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2C_95%29_%282%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Sviraman, file \"Главный корпус ОГУ (Орёл, Комсомольская, 95) (2).jpg\"; depicts the main building of Orel State University, 95 Komsomolskaya Street, Oryol (file description \"OSU main building. 95 Komsomolskaya Street, Oryol, Russia\"; in Category:Oryol State University; ru.wikipedia article lead image); 4345x3415 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/orel-state-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "pacific-state-medical-university",
+      "universityName": "Pacific State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Vladivostok_State_Medical_University_%28October_2024%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Vyacheslav Bukharov, file \"Vladivostok State Medical University (October 2024).jpg\"; depicts the building of Pacific State Medical University in Vladivostok (file description \"Владивосток: здание Тихоокеанского государственного медицинского университета\"; in Category:Vladivostok State Medical University, the institution’s former name); 3687x1851 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/pacific-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "penza-state-university",
+      "universityName": "Penza State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Penza_State_University_building_1.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 3.0, author Zxc123, file \"Penza State University building 1.jpg\"; depicts building No. 1 of Penza State University (file description \"Building #1 of the Penza State University in Russia\"; in Category:Penza State University; ru.wikipedia article lead image); 2592x1944 px image/jpeg; verified this session HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/penza-state-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "peoples-friendship-university-russia",
+      "universityName": "Peoples' Friendship University of Russia (RUDN)",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/%D0%92%D1%85%D0%BE%D0%B4_%D0%B2_%D0%A0%D0%A3%D0%94%D0%9D_02.2023_3.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author ATI1999, file \"Вход в РУДН 02.2023 3.jpg\"; depicts the entrance to RUDN University, Moscow, February 2023 (file description \"Вход в РУДН вечером, февраль 2023 года\"; ru.wikipedia article lead image); 4160x1920 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/peoples-friendship-university-russia/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "perm-state-medical-university",
+      "universityName": "Perm State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/PermSMA_foto1.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author AndreyIGOSHEV, file \"PermSMA foto1.jpg\"; depicts Perm State Medical University (file description \"Perm state medical University\"; in Category:Perm State Medical University; ru.wikipedia article lead image); 3648x2736 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/perm-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "petrozavodsk-state-university",
+      "universityName": "Petrozavodsk State University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Petrozavodsk_06-2017_img34_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, FAL, author A.Savin, file \"Petrozavodsk 06-2017 img34 University.jpg\"; depicts the main building of Petrozavodsk State University, aerial view (file description \"Main building of the University (aerial photo) in Petrozavodsk, Republic of Karelia (Russia)\"; ru.wikipedia article lead image). Licence is the Free Art License (FAL), a free licence, not a Creative Commons one; attribution to A.Savin is required; 3525x2350 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/petrozavodsk-state-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "pirogov-russian-national-research-medical-university",
+      "universityName": "Pirogov Russian National Research Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Rnimu_zdanie.png",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Gatin228, file \"Rnimu zdanie.png\"; depicts the Pirogov Russian National Research Medical University building in Moscow (file description \"Российский национальный исследовательский медицинский университет имени Н. И. Пирогова\"). A second, university-authored option exists at File:Rsmu building.jpg (1024x768, CC BY-SA 4.0) if a JPEG is preferred over this PNG; 1274x796 px image/png; verified this session HTTP 206 image/png",
+          "proposedPublicId": "studentstraffic/universities/pirogov-russian-national-research-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "privolzhsky-research-medical-university",
+      "universityName": "Privolzhsky Research Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Privolzhsky_Research_Medical_University_in_Nizhny_Novgorod.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Алексей Трефилов, file \"Privolzhsky Research Medical University in Nizhny Novgorod.jpg\"; depicts Privolzhsky Research Medical University in Nizhny Novgorod (file description \"Приволжский исследовательский медицинский университет в Нижнем Новгороде\"; in Category:Privolzhsky Research Medical University); 4608x3072 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/privolzhsky-research-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "rome-business-school",
+      "universityName": "Rome Business School",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://romebusinessschool.com/wp-content/uploads/2026/03/heaer-homepage-scaled.webp",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph published on the school's own domain (romebusinessschool.com), declared as the homepage og:image; downloaded and visually inspected: the Rome Business School building in Rome photographed from the street - a restored period villa with the school's own 'ROME BUSINESS SCHOOL / By Planeta Formacion y Universidades' plaque on the boundary wall and four Rome Business School banners ('Better managers for a better world') flanking the entrance, so the institution is unambiguously identified in-frame; 1980x1018 px landscape; verified HTTP 200 image/webp. This is specifically NOT a generic Rome stock photo, which the brief warned against, and it supersedes the July 2026 hold: the site now resolves over HTTPS (the earlier SSL failure forced that pass onto the Wayback Machine) and the Commons file 'Rome Business School.webp' was checked and rejected because its description confirms it is the school LOGO, not a building.",
+          "proposedPublicId": "studentstraffic/universities/rome-business-school/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "russian-university-of-medicine",
+      "universityName": "Russian University of Medicine",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D0%BB.%2C_4%2C%D0%B3_%D0%A4%D0%93%D0%91%D0%9E%D0%A3_%D0%92%D0%9E_%C2%AB%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B%C2%BB_%D0%9C%D0%B8%D0%BD%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Sophia Zima, file \"Долгоруковская ул., 4,г ФГБОУ ВО «Российский университет медицины» Минздрава России.jpg\"; depicts the Russian University of Medicine building at Dolgorukovskaya Street 4, Moscow (file description \"ФГБОУ ВО «Российский университет медицины» Минздрава России\"); 4032x3024 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/russian-university-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "samara-state-medical-university",
+      "universityName": "Samara State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Samara State Medical University, file \"Самарский государственный медицинский университет.jpg\"; depicts Samara State Medical University (file description \"Самарский государственный медицинский университет\"; the author of record is the university itself; ru.wikipedia article lead image); 1204x800 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/samara-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "shandong-university-cheeloo-college-of-medicine",
+      "universityName": "Shandong University Cheeloo College of Medicine",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Cheeloo_alumni_gate_jinan_2009_07.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Rolfmueller, File:Cheeloo alumni gate jinan 2009 07.jpg in Category:Cheeloo University; depicts the Alumni Gate (completed 17 June 1924) on the historic Cheeloo/Baotuquan campus of Shandong University in Jinan - the correct subject for the Cheeloo College of Medicine, and the lead image of the Chinese Wikipedia article 山东大学齐鲁医学院; 2816x1880 px landscape; verified HTTP 200 image/jpeg. Alternates found by searching in Chinese (山东大学 趵突泉校区): File:山东大学趵突泉校区全景照片.jpg and File:山东大学趵突泉校区全景图.jpg (both 4096x2048, CC BY-SA 4.0, SunRuikang, drone views of the Baotuquan campus explicitly including the Cheeloo College of Medicine buildings) - higher resolution, but they are 360-degree equirectangular panoramas and will look distorted if cropped as a normal cover, which is why the Alumni Gate was preferred.",
+          "proposedPublicId": "studentstraffic/universities/shandong-university-cheeloo-college-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "universityName": "SRM Institute of Science and Technology",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/SRM_University_Auditorium.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author Hareesh Sivasubramanian, File:SRM University Auditorium.JPG, categorised under Category:SRM Institute of Science and Technology. Description names the building explicitly: 'DR T.P Ganesan Auditorium of SRM University, Chennai' - the Dr T.P. Ganesan Auditorium stands on the Kattankulathur campus this record is scoped to. 4608x2592 px landscape, 5.2 MB. Verified HTTP 200 image/jpeg. REPLACES the earlier india-pilot-batch-3.json pick, File:Old Campus, SRM Institute of Science and Technology, Kattankulathur (August,2024).jpg, which is correct in subject but 1072x1440 PORTRAIT and therefore a poor fit for a landscape cover card; that file remains a valid fallback if a human prefers the 'old campus' framing.",
+          "proposedPublicId": "studentstraffic/universities/srm-institute-of-science-and-technology/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "ss-cyril-and-methodius-university-faculty-of-medicine",
+      "universityName": "Ss. Cyril and Methodius University of Skopje - Faculty of Medicine",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/%D0%94%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D1%82_%D0%BD%D0%B0_%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8_%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82_-_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Buli, File:Деканатот на Медицински факултет - Скопје.jpg (The Deanery of the Faculty of Medicine - Skopje) in Category:Ss. Cyril and Methodius University, Skopje; depicts the actual Deanery building of the Faculty of Medicine in Skopje - correct faculty-level subject, not the parent university; 3264x2448 px landscape; verified HTTP 200 image/jpeg and visually inspected. Found only by searching Commons in Macedonian script; the July 2026 pass searched in English and concluded no faculty-level asset existed. Framing caveat: an ordinary street-level view including road and utility furniture rather than a polished hero shot, but the subject identification is exact.",
+          "proposedPublicId": "studentstraffic/universities/ss-cyril-and-methodius-university-faculty-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "st-lawrence-college-nursing",
+      "universityName": "St. Lawrence College",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/SLCKingston.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author User:Gordonrox24, File:SLCKingston.JPG, from Category:St. Lawrence College, Ontario; description 'A photo of the St Lawrence College Kingston campus from Portsmouth avenue' - this resolves the first pass's disambiguation worry: it is explicitly the Kingston, Ontario campus of St. Lawrence College, matching the record's city; 1936x2592 px; verified HTTP 200 image/jpeg. CAVEATS: PORTRAIT orientation, not landscape, so it will need a centre crop for a wide cover slot; it is the only file in the Commons category; taken on an iPhone 4 in 2012, so fine detail is limited. Accept or hold on the orientation constraint at the integrator's discretion.",
+          "proposedPublicId": "studentstraffic/universities/st-lawrence-college-nursing/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "stavropol-state-medical-university",
+      "universityName": "Stavropol State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/%D0%A1%D1%82%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author User:A.Tanchugin, file \"Ставропольский государственный медицинский университет.jpg\"; depicts the main building of Stavropol State Medical University, Mira Street 310, built 1960 (file description \"Главный корпус Ставропольского государственного медицинского университета ... Ул. Мира, 310\"); 3853x2930 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/stavropol-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "symbiosis-international-university",
+      "universityName": "Symbiosis International (Deemed University)",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Symbiosis_International_University%2C_S._B._Road_campus.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, own work by author DesiBoy101, File:Symbiosis International University, S. B. Road campus.jpg. Embedded camera coordinates 18.52252, 73.82930 sit on Senapati Bapat Road, Pune, matching this record's Senapati Bapat Road campus. 3641x2785 px, 3.2 MB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-1.json as the /wiki/File: description page.)",
+          "proposedPublicId": "studentstraffic/universities/symbiosis-international-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-debrecen",
+      "universityName": "University of Debrecen",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/DebrecenDSCN3583.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, Public domain (PD-self), author Yoav Dothan, File:DebrecenDSCN3583.JPG, description 'Debrecen / University of Debrecen', in Category:Kossuth Lajos Tudomanyegyetem (the university's historic name); this is the lead image of the en.wikipedia article 'University of Debrecen', which is a strong identity confirmation. Downloaded and visually inspected: the iconic neoclassical Main Building (Fokepulet) with its columned portico, arched windows and forecourt, students on the steps; 3648x2736 px landscape; verified HTTP 200 image/jpeg. Public domain, so no attribution obligation, though crediting Yoav Dothan is courteous. This replaces the first pass's finding that the homepage hero was a licensed Depositphotos stock file.",
+          "proposedPublicId": "studentstraffic/universities/university-of-debrecen/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-delaware",
+      "universityName": "University of Delaware",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/UDel_Memorial_and_Magnolia_Circle.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Cargoudel, File:UDel Memorial and Magnolia Circle.JPG in Category:University of Delaware; description 'University of Delaware in Newark, Delaware. Memorial Hall in the background, Magnolia Circle in the foreground' - Memorial Hall is the university's signature Colonial Revival building on The Green; 2608x1952 px landscape; verified HTTP 200 image/jpeg. Evergreen, so it avoids the time-limited 'Delaware Declares' fundraising hero that blocked the July 2026 pass. Alternate: File:Cannon Hall UofDel by Carol M Highsmith.jpg (1024x768, Public domain, Library of Congress/Highsmith collection).",
+          "proposedPublicId": "studentstraffic/universities/university-of-delaware/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-galway",
+      "universityName": "University of Galway",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/GALWAY_UNIVERSITY_CAMPUS.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author William Murphy (Flickr, reviewed by FlickreviewR), File:GALWAY UNIVERSITY CAMPUS.jpg, from Category:National University of Ireland, Galway - the university's pre-2022 name, which is why a search on 'University of Galway' alone returns nothing and the first pass found no category; 5929x3997 px landscape; verified HTTP 200 image/jpeg (2.9 MB). Same category alternatives at high resolution: File:J.E. Cairnes School of Business & Economics.jpg (9310x2590, a natural letterbox crop), File:Arts-Science Building, National University of Ireland, Galway.jpg (4128x3096) and Category:National University of Ireland, Galway quadrangle for the landmark Quadrangle building.",
+          "proposedPublicId": "studentstraffic/universities/university-of-galway/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-geneva",
+      "universityName": "University of Geneva",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/University_of_Geneva_2015.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Dmitry A. Mottl, File:University of Geneva 2015.jpg in Category:Exterior of Uni Bastions (Geneva); depicts Uni Bastions, the University of Geneva's historic main building in the Parc des Bastions; this is the lead image of the en.wikipedia article University of Geneva; 4743x3162 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 hold, which was caused by unidentifiable unige.ch homepage thumbnails - Commons was never checked.",
+          "proposedPublicId": "studentstraffic/universities/university-of-geneva/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-guyana",
+      "universityName": "University of Guyana",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Entrance_to_UG.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Loriski, File:Entrance to UG.jpg in Category:University of Guyana, taken 2009 in Guyana; description 'Photograph of the Entrance to the University of Guyana'; this is the lead image of the en.wikipedia article University of Guyana; 2618x1810 px landscape; verified HTTP 200 image/jpeg. Depicts the Turkeyen campus entrance, Greater Georgetown.",
+          "proposedPublicId": "studentstraffic/universities/university-of-guyana/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-huddersfield",
+      "universityName": "University of Huddersfield",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Huddersfield_University_Queensgate_Campus_-_geograph.org.uk_-_3958338.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author Kay Williams, File:Huddersfield University Queensgate Campus - geograph.org.uk - 3958338.jpg in Category:University of Huddersfield, from Geograph Britain and Ireland; depicts the Queensgate Campus, the university's main campus; 1600x1059 px landscape; verified HTTP 200 image/jpeg. Evergreen (no Clearing/Open Day/prospectus campaign branding), which was the reason the July 2026 pass rejected every hud.ac.uk homepage candidate.",
+          "proposedPublicId": "studentstraffic/universities/university-of-huddersfield/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-latvia",
+      "universityName": "University of Latvia",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Latvijas_Universit%C4%81te_-_ogre11_-_Panoramio.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 3.0, author ogre11 (via Panoramio, reviewed by the Panoramio Review Bot), File:Latvijas Universitate - ogre11 - Panoramio.jpg, in Category:University of Latvia main building; downloaded and visually inspected: a symmetrical frontal stitch of the University of Latvia main building on Raina bulvaris, Riga - the ornate 19th-century facade with its central tower, crest and entrance steps; 10240x4846 px, a natural 2.1:1 letterbox that suits a cover slot exactly; verified HTTP 200 image/jpeg (6.6 MB). Found via the Latvian-language search term, which the first pass did not try. Alternatives: File:Latvijas Universitates Akademiskais centrs.jpg (4800x3200, CC BY-SA 4.0, uploaded by the university itself) for the modern Academic Centre in Torņakalns, or File:University of Latvia.jpg (5184x3456, CC BY-SA 4.0).",
+          "proposedPublicId": "studentstraffic/universities/university-of-latvia/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-massachusetts-amherst",
+      "universityName": "University of Massachusetts Amherst",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/UMass_Amherst_campus_aerial_view.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Quintin Soloviev, File:UMass Amherst campus aerial view.jpg in Category:University of Massachusetts Amherst; description 'Aerial view of the University of Massachusetts Amherst campus in autumn, with the Southwest Residential Area in the foreground and the W. E. B. Du Bois Library'; 4827x3137 px landscape; verified HTTP 200 image/jpeg. Free-licensed original photography, so it avoids the Getty-credited third-party stock thumbnail that blocked the July 2026 pass. Alternate: File:Umass Amherst Skyline.jpg (3000x1015, CC BY 2.5).",
+          "proposedPublicId": "studentstraffic/universities/university-of-massachusetts-amherst/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-mostar-faculty-of-medicine",
+      "universityName": "University of Mostar Faculty of Medicine",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mef.sum.ba/wp-content/uploads/2021/11/mef11-800.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph published on the faculty's OWN domain (mef.sum.ba, the Medicinski fakultet Sveucilista u Mostaru site), used in the homepage feature grid; downloaded and visually inspected: an evening exterior of the faculty/clinical-hospital complex in Mostar - dark-clad tower block behind, yellow and orange lower teaching wings with a lit canopied entrance in front. This is the faculty's own building, not the parent university's rectorate; 800x534 px landscape; verified HTTP 200 image/jpeg. CAVEAT: 800 px wide, below the 1000 px preference - this is nonetheless a large improvement on the first pass's finding (a 327 px rectorate thumbnail on sum.ba) and is the largest identifiable building photograph the faculty publishes; mef.sum.ba serves a -1000x668 derivative of the same frame but no original larger than 800 px was found. Note also that the parent-site og:image (sum.ba/logo.png) and the faculty og:image (mef_sum_logo1.png) are both logos.",
+          "proposedPublicId": "studentstraffic/universities/university-of-mostar-faculty-of-medicine/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-new-south-wales",
+      "universityName": "University of New South Wales",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/UNSW_Anzac_Parade_entrance_001.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:Sardaka, File:UNSW Anzac Parade entrance 001.jpg, from Category:University of New South Wales (102 files); description 'UNSW seen at dusk from entrance on Anzac Parade, Kensington, Sydney'; 7502x4507 px landscape; verified HTTP 200 image/jpeg (21.1 MB). Contrary to the July 2026 hold, UNSW has a large Commons category (UNSW Gate 13, Dusk UNSW, UNSW at dusk 002, Fig Tree High Street, several 'University of New South Wales 0xx' series, all 6000-8256 px) - this is the most recognisable main-entrance framing.",
+          "proposedPublicId": "studentstraffic/universities/university-of-new-south-wales/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-newcastle-australia",
+      "universityName": "University of Newcastle",
+      "sourceBatch": "cover-pass-07-carryover.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/UoN_Math_Building.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author 관인생략, File:UoN Math Building.JPG, in Category:University of Newcastle, Australia. Depicts the university's Mathematics building on the Callaghan campus in Newcastle, NSW, matching this record. 2592x1936 px landscape, 1.8 MB; verified HTTP 200 image/jpeg. REPLACES the patch-13.json pick, the newcastle.edu.au homepage banner, which now returns HTTP 403 Forbidden and was in any case a marketing shot of students rather than a campus view. Fallback if a human prefers a different building: File:NUSA Building 2018.png (1250x934, CC BY-SA 4.0, Ghorbani), the Newcastle University Students' Association building on the eastern side of the Callaghan campus.",
+          "proposedPublicId": "studentstraffic/universities/university-of-newcastle-australia/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-ostrava",
+      "universityName": "University of Ostrava",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/OSU_ostrava.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, Public domain (PD Czech official, credited to MMO - the City of Ostrava), File:OSU ostrava.jpg, from Category:University of Ostrava; description 'Ostrava OSU, Prirodovedecka fakulta, Chittussiho 983/10, 710 00 Ostrava' - the Faculty of Science building of Ostravska univerzita; downloaded and visually inspected: a clean sunlit exterior of the modern white four-storey faculty building with its terraced forecourt; 3264x2045 px landscape; verified HTTP 200 image/jpeg. Identity check: deliberately NOT one of the many VSB - Technicka univerzita Ostrava files that dominate a naive 'Ostrava university' search - VSB-TUO is a different institution. Alternatives in the same category if preferred: File:Vstup do budovy Pedagogicke fakulty Ostravske univerzity na ulici Frani Sramka.jpg (6180x4076, CC BY-SA 4.0) and File:Klastr sportu a zdravi, Ostravska univerzita.jpg (4000x3000, CC BY-SA 4.0).",
+          "proposedPublicId": "studentstraffic/universities/university-of-ostrava/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-oxford",
+      "universityName": "University of Oxford",
+      "sourceBatch": "cover-pass-07-carryover.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/1099146_I_RADCLIFFE_CAMERA_Oxford_20250617_0013.jpg/1280px-1099146_I_RADCLIFFE_CAMERA_Oxford_20250617_0013.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, own work by author Tilman2007, File:1099146 I RADCLIFFE CAMERA Oxford 20250617 0013.jpg, in Category:Radcliffe Camera. Depicts the Radcliffe Camera, the Bodleian Library reading room and the University of Oxford's most recognisable university building - a university building, not a city view. The original is 7512x4993 px / 18 MB, which exceeds Cloudinary's upload size cap, so the sourceUrl above is Wikimedia's own 1280px CDN thumbnail (1280 is one of the fixed bucket widths Wikimedia serves; 1600 is not and returns HTTP 400). Verified HTTP 200 image/jpeg, 305 KB. REPLACES the patch-13.json pick, the assets-oxweb.admin.ox.ac.uk 'Oxford skyline' teaser, which now returns HTTP 403 Forbidden and was a city skyline rather than an institutional building.",
+          "proposedPublicId": "studentstraffic/universities/university-of-oxford/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "universityName": "University of the West Indies Mona Faculty of Medical Sciences",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Biblioth%C3%A8que_Mona._Campus_Mona._UWI._Jamaica.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author AfricanadeCuba (Noircir Wikipedia project), File:Bibliotheque Mona. Campus Mona. UWI. Jamaica.jpg; description 'Bibliotheque du Campus Mona' - the Mona campus library, University of the West Indies, Kingston, JAMAICA. Confirmed to be the Mona campus and deliberately NOT the St. Augustine campus in Trinidad used for the uwi-st-augustine-mbbs record in this same batch. 4032x3024 px landscape; verified HTTP 200 image/jpeg. Chosen over the two older Mona files in Category:University of the West Indies (Mona), Jamaica - File:UWI Mona Campus Main Library.jpg (800x600) and File:Chapel Mona Campus UWI.jpg (800x434) - both of which fall below the 1000 px bar. IDENTITY CAVEAT: campus-level, not Faculty of Medical Sciences-specific; no free photograph of the medical faculty building itself exists on Commons.",
+          "proposedPublicId": "studentstraffic/universities/university-of-the-west-indies-mona-faculty-of-medical-sciences/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "ural-state-medical-university",
+      "universityName": "Ural State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%A3%D0%93%D0%9C%D0%A3.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Иван Абатуров, file \"Главный корпус УГМУ.jpg\"; depicts the main building of Ural State Medical University, Yekaterinburg, 22 November 2017 (file description \"Главный корпус Уральского государственного медицинского университета\"; ru.wikipedia article lead image); 3664x2748 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/ural-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "urgench-state-medical-institute",
+      "universityName": "Urgench State Medical Institute",
+      "sourceBatch": "cover-pass-03b-uzbekistan.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/TTA_Urganch_filiali.png",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Askarov547 (self-published work), File:TTA Urganch filiali.png in Category:Tashkent Medical Academy; depicts the main teaching building of the Tashkent Medical Academy Urgench branch in Urgench, with its own facade signage in Uzbek and English - 'TOSHKENT TIBBIYOT AKADEMIYASI URGANCH FILIALI' and 'URGENCH BRANCH OF TASHKENT MEDICAL ACADEMY' - clearly legible above the entrance colonnade, visually confirmed by downloading and inspecting the image. Institutional basis: Urgench State Medical Institute was constituted in April 2025 on the basis of exactly this Urgench branch of Tashkent Medical Academy (the same finding recorded in the July 2026 pass, which then held for lack of a domain), so this is the institute's own campus, not a parent-brand substitute. 1280x720 px landscape PNG; verified HTTP 206 image/png. Alternative if a JPEG is preferred: File:TTA Urganch filiali asosiy o'quv binosi.jpg, https://upload.wikimedia.org/wikipedia/commons/b/bd/TTA_Urganch_filiali_asosiy_o%27quv_binosi.jpg, same building, CC BY-SA 4.0 but author recorded on Commons as 'Unknown author' and only 980x490 px - also verified HTTP 206 image/jpeg this session, but not preferred because of the weaker attribution and lower resolution. Not to be confused with urganch-med.uz, a Public Health Technicum, which the July pass correctly rejected.",
+          "proposedPublicId": "studentstraffic/universities/urgench-state-medical-institute/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "utena-university-of-applied-sciences",
+      "universityName": "Utena University of Applied Sciences",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Utenos_kolegija_2013.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, uploaded as own work by User:Utenos kolegija - i.e. released by the institution itself, File:Utenos kolegija 2013.jpg, from Category:Utena College; description 'Utenos kolegijos centrinis pastatas (Maironio g. 7)' - the college's central building at Maironio 7, Utena; 4368x2912 px landscape; verified HTTP 200 image/jpeg (5.2 MB). Found via the Lithuanian name 'Utenos kolegija', which the first pass did not try; this replaces its hold on a generic library stock photo from the homepage slider. Alternatives in the same category: File:Utena. Kolegija.JPG (5184x2920, CC BY-SA 3.0) and File:Koleg-23.jpg (3776x2313, CC BY-SA 4.0, also self-published by the college).",
+          "proposedPublicId": "studentstraffic/universities/utena-university-of-applied-sciences/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "utrecht-university",
+      "universityName": "Utrecht University",
+      "sourceBatch": "cover-pass-05-row-a.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Academiegebouw_Utrecht_University.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Steven Lek (User:Tukka), File:Academiegebouw Utrecht University.JPG, from Category:Academiegebouw (Utrecht); description 'Het Academiegebouw van de Universiteit Utrecht' - the University Hall on Domplein, Utrecht University's ceremonial main building; 4928x3264 px landscape; verified HTTP 200 image/jpeg (7.3 MB). Note Category:Utrecht University itself enumerates no files directly - the imagery lives in the Dutch-named building categories, which is why the first pass (which relied on the homepage og:image, a logo, and JS-loaded hero imagery) found nothing. Alternatives: File:Utrecht Academy 018 2689.jpg (6439x4582, CC BY-SA 4.0), File:Academiegebouw Utrecht 2015.jpg (5472x3080, CC BY-SA 4.0, a natural wide crop) and File:The Academiegebouw in Utrecht.jpg (5470x3656, CC0, no attribution required).",
+          "proposedPublicId": "studentstraffic/universities/utrecht-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "uwi-st-augustine-mbbs",
+      "universityName": "University of the West Indies St. Augustine MBBS",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/TnT_St._Augustine_UWI_Campus.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Grueslayer, File:TnT St. Augustine UWI Campus.jpg in Category:University of the West Indies (Saint Augustine); description 'UWI campus, St. Augustine, Trinidad' - confirmed the St. Augustine campus in Trinidad, NOT the Mona campus in Jamaica; this is the lead image of the en.wikipedia article University of the West Indies; 4320x3240 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 hold, which was caused by sta.uwi.edu's og:image being a 257x170 thumbnail - Commons was never checked.",
+          "proposedPublicId": "studentstraffic/universities/uwi-st-augustine-mbbs/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "van-lang-university",
+      "universityName": "Van Lang University",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/VLU_Campus.webp",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0 (public domain dedication), author Syan1211, File:VLU Campus.webp in Category:Van Lang University; description 'Van Lang University Campus'; this is the lead image of the Vietnamese Wikipedia article Van Lang University; 960x499 px landscape; verified HTTP 200 image/webp. SIZE CAVEAT: 960 px wide, just under the 1000 px preference, and webp rather than jpeg. Accepted because it is the only free, genuine, correctly-identified VLU campus photograph in existence on Commons and the official alternative is unavailable: VLU's declared og:image (vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_View010000_Post_moi_2022_...jpg) still returns HTTP 403 Forbidden on their own S3 bucket, re-confirmed this pass, exactly as in July; the remaining vlu.edu.vn banners are QS/THE ranking promotional graphics with time-limited figures overlaid. Reviewer may prefer to hold on resolution grounds.",
+          "proposedPublicId": "studentstraffic/universities/van-lang-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "vellore-institute-of-technology",
+      "universityName": "Vellore Institute of Technology",
+      "sourceBatch": "cover-pass-00-india.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Technology_Tower%28VIT%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author Wikindinator, File:Technology Tower(VIT).jpg, categorised under Category:Vellore Institute of Technology (distinct from the separate Category:Vellore Institute of Technology (Andhra Pradesh) used for VIT-AP). Depicts the Technology Tower, the landmark academic building of the Vellore campus, and is the lead image of the English Wikipedia article for the Vellore campus institution. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. CAVEAT: only 800x600 px / 96 KB - adequate for a card thumbnail but low for a full-bleed hero. Every larger landscape alternative in the same Commons category was rejected: File:Vituniversity.jpg (4032x3024, CC BY-SA 4.0) and File:S-MH and T-MH VIT, Vellore Campus.jpg (4096x3072, CC0) are respectively undescribed and a men's-hostel block, neither confidently a campus-representative exterior; File:MBA Block.jpg and File:Food place.jpg (2048x1360) are single minor facilities.",
+          "proposedPublicId": "studentstraffic/universities/vellore-institute-of-technology/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "victoria-university-of-wellington",
+      "universityName": "Victoria University of Wellington",
+      "sourceBatch": "cover-pass-06-row-b.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Victoria_University_of_Wellington_Kelburn_Campus_01.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Panamitsu, File:Victoria University of Wellington Kelburn Campus 01.jpg in Category:Victoria University of Wellington; depicts the Kelburn Campus, the university's main campus in Wellington; 4000x3000 px landscape; verified HTTP 200 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/victoria-university-of-wellington/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "volgograd-state-medical-university",
+      "universityName": "Volgograd State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_%D0%92%D0%BE%D0%BB%D0%93%D0%9C%D0%A3.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author xVodolazx, file \"Главный корпус ВолГМУ.jpg\"; depicts the main building of Volgograd State Medical University, February 2017 (file description \"Главный корпус Волгоградского государственного медицинского университета, февраль 2017 года\"; in Category:Volgograd State Medical University); 4567x3025 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/volgograd-state-medical-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "voronezh-state-medical-university",
+      "universityName": "Voronezh State Medical University",
+      "sourceBatch": "cover-pass-01-russia.json",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/%D0%92%D0%93%D0%9C%D0%A3_%28%D0%92%D0%93%D0%9C%D0%98%29_-1.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons, CC0, author GennadyL, file \"ВГМУ (ВГМИ) -1.jpg\"; depicts the main building of Voronezh State Medical University (file named \"ВГМУ (ВГМИ)\" = Voronezh State Medical University / Voronezh State Medical Institute; in Category:Voronezh State Medical University; it is the ru.wikipedia lead image of the Воронежский государственный медицинский университет article). Caveat: the uploader’s free-text caption reads \"Воронежский государственный университет - главный корпус\", omitting \"медицинский\"; the filename, the Commons category and the Wikipedia infobox use all identify it as the medical university; 2592x1944 px image/jpeg; verified this session HTTP 206 image/jpeg",
+          "proposedPublicId": "studentstraffic/universities/voronezh-state-medical-university/cover"
+        }
+      ]
+    }
+  ]
+}

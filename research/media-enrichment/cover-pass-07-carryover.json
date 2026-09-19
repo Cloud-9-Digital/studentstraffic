@@ -1,0 +1,66 @@
+{
+  "batchId": "cover-pass-07-carryover",
+  "notes": "Cover-only pass, 2026-09-16. Five published universities that ALREADY had a resolved cover source in the July 2026 second-pass-patches (patch-04, patch-05, patch-13) but whose universities.cover_image_url is still null/empty in the live database - i.e. the research landed but the upload+apply step never ran for them. This batch re-verifies those five sources today and replaces the ones that no longer work or that fail the subject-quality bar. Findings: three of the five original sourceUrls now return HTTP 403 Forbidden (James Cook University, University of Newcastle Australia, University of Oxford) - all three were hot-linked hero banners on institutional sites that have since added bot protection, so applying the old manifest as-is would fail at upload time. Two (Griffith, INSEAD) still resolve. Separately, three of the original picks were weak subjects under the 'must depict the institution's campus/building' rule: Griffith's was a photo of an entrance sign, Newcastle's was a marketing banner captioned 'a group of students walking around university', and Oxford's was an 'Oxford skyline' city view rather than a university building. All three have been replaced with freely licensed Wikimedia Commons photographs of actual, named university buildings. Every sourceUrl below was verified in this session with curl -sIL and returned HTTP 200 with an image/* content-type; note that one candidate (UoN Math Building) was initially wrong on its hash path and 404'd, which is why each URL is checked rather than constructed. No asset was downloaded, uploaded, or applied to the database.",
+  "entries": [
+    {
+      "universitySlug": "griffith-university",
+      "universityName": "Griffith University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Kinaba%2C_KGCB_colleges%2C_Griffith_University_Nathan_Campus.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, own work by author SpringbokSam, File:Kinaba, KGCB colleges, Griffith University Nathan Campus.jpg, in Category:Griffith University. Description names the Kinaba and KGBC college buildings on the Nathan campus - Nathan is Griffith's Brisbane campus, matching this record's city. 3264x1836 px (16:9 landscape), 3.3 MB; verified HTTP 200 image/jpeg. REPLACES the patch-04.json pick, File:Griffith University Nathan Campus.jpg (CC BY 2.0, Tate Johnson), which still resolves but depicts only the campus entrance SIGN rather than the campus itself; it remains a valid fallback.",
+        "proposedPublicId": "griffith-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "insead",
+      "universityName": "INSEAD",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://www.insead.edu/sites/insead/files/inline-images/europe-campus_0.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the school's own domain (www.insead.edu), an inline campus image of the Europe (Fontainebleau) campus, which is the campus this record is scoped to. Re-verified 2026-09-16: HTTP 200, image/jpeg, 110 KB. Unchanged from second-pass-patches/patch-04.json. CAVEAT: modest file size, so likely around 1000 px wide - acceptable for a card cover, thin for a full-bleed hero.",
+        "proposedPublicId": "insead-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "james-cook-university",
+      "universityName": "James Cook University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/JCU_University_Drive.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, released into the public domain by its author Nielg (PD-self), File:JCU University Drive.JPG, in Category:James Cook University. Description: 'View of University Drive at the Douglas Campus of JCU' - Douglas is JCU's Townsville campus, matching this record's city. 3072x2304 px, 1.5 MB; verified HTTP 200 image/jpeg. REPLACES the patch-05.json pick, the jcu.edu.au homepage hero banner, which now returns HTTP 403 Forbidden and would fail at upload. Rejected the higher-resolution files in the same category (the 'James Cook University Staff Members Tour Emory S Land' US Navy series) because they depict people aboard a naval vessel, not the campus.",
+        "proposedPublicId": "james-cook-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-newcastle-australia",
+      "universityName": "University of Newcastle",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/UoN_Math_Building.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author 관인생략, File:UoN Math Building.JPG, in Category:University of Newcastle, Australia. Depicts the university's Mathematics building on the Callaghan campus in Newcastle, NSW, matching this record. 2592x1936 px landscape, 1.8 MB; verified HTTP 200 image/jpeg. REPLACES the patch-13.json pick, the newcastle.edu.au homepage banner, which now returns HTTP 403 Forbidden and was in any case a marketing shot of students rather than a campus view. Fallback if a human prefers a different building: File:NUSA Building 2018.png (1250x934, CC BY-SA 4.0, Ghorbani), the Newcastle University Students' Association building on the eastern side of the Callaghan campus.",
+        "proposedPublicId": "university-of-newcastle-australia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-oxford",
+      "universityName": "University of Oxford",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/1099146_I_RADCLIFFE_CAMERA_Oxford_20250617_0013.jpg/1280px-1099146_I_RADCLIFFE_CAMERA_Oxford_20250617_0013.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, own work by author Tilman2007, File:1099146 I RADCLIFFE CAMERA Oxford 20250617 0013.jpg, in Category:Radcliffe Camera. Depicts the Radcliffe Camera, the Bodleian Library reading room and the University of Oxford's most recognisable university building - a university building, not a city view. The original is 7512x4993 px / 18 MB, which exceeds Cloudinary's upload size cap, so the sourceUrl above is Wikimedia's own 1280px CDN thumbnail (1280 is one of the fixed bucket widths Wikimedia serves; 1600 is not and returns HTTP 400). Verified HTTP 200 image/jpeg, 305 KB. REPLACES the patch-13.json pick, the assets-oxweb.admin.ox.ac.uk 'Oxford skyline' teaser, which now returns HTTP 403 Forbidden and was a city skyline rather than an institutional building.",
+        "proposedPublicId": "university-of-oxford-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "batchId": "cover-pass-03a-uzbekistan",
+  "notes": "Cover-only re-pass over 9 published Uzbek universities, 2026-09-16, using the Wikimedia-Commons-FIRST method that unblocked the Russia batch (the July 2026 alphabetical pass only tried official .uz sites and held nearly all of these). Searched Commons list=search (srnamespace=6|14) in Uzbek Latin, Russian Cyrillic and English (node fetch used for all non-Latin queries because curl --data-urlencode mangles Cyrillic in this Git Bash environment and the API silently returns batchcomplete with no results). Also checked uz/ru Wikipedia prop=pageimages lead images for the three institutions with no Commons hit. Every candidate was pulled through prop=imageinfo (url|size|mime|extmetadata) - no URL was guessed - then a 520px thumbnail was downloaded and visually inspected before acceptance, so each ready entry is a confirmed exterior of the named institution with on-building signage, not a logo, portrait or stock image. Every sourceUrl re-verified in this session with a ranged GET (all returned HTTP 206 image/jpeg); Commons utm_* query strings stripped. Result: 7 ready (6 Commons, 1 official domain), 2 hold. Caveats for the reviewer: (1) AKFA University was renamed Central Asian University in June 2023, so akfa-university-medical-school and central-asian-university-medical-school are almost certainly the same physical Tashkent campus - each has been given the photo carrying its own record's branding, but the duplicate-record question is still an open editorial decision from the July pass; (2) the Fergana image is the institute's own upload and shows an opening-ceremony arch and a few passers-by, flagged below; (3) no Cloudinary upload, DB write or publish was performed.",
+  "entries": [
+    {
+      "universitySlug": "akfa-university-medical-school",
+      "universityName": "AKFA University Medical School",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Akfa_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Kagansky, File:Akfa University.jpg (description 'Университет Акфа', dated 2023-02-26); depicts the AKFA University campus entrance gateway in Tashkent with the illuminated 'AKFA UNIVERSITY' sign and international flag row, academic buildings behind - the parent university's own campus is the fair subject for this medical-school record; 4032x3024 px landscape; verified HTTP 206 image/jpeg. Composition caveat: a city bus and roadside guardrail sit in the foreground, so a crop to the gateway is advisable. Identity note: AKFA University was renamed Central Asian University in June 2023; this file still carries the AKFA branding that matches this record.",
+        "proposedPublicId": "akfa-university-medical-school-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "alfraganus-university",
+      "universityName": "Alfraganus University Faculty of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Alfraganus_Universiteti.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Omina Sayfullayeva, File:Alfraganus Universiteti.jpg (description 'Toshkent Shahridagi Alfraganus Universiteti', dated 2024-05-11); depicts the Alfraganus University main building in Tashkent with the rooftop 'ALFRAGANUS UNIVERSITY' sign and emblem clearly legible - the parent university's own building is the fair subject for this faculty-of-medicine record; 4160x3120 px; verified HTTP 206 image/jpeg. This supersedes the July 2026 hold, which rejected the homepage hero GIF on afu.uz and found no other candidate.",
+        "proposedPublicId": "alfraganus-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "angren-university",
+      "universityName": "Angren University Faculty of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No verifiable image of this institution exists on either route. Commons list=search returned nothing for 'Angren universiteti' and, for 'Angren University Uzbekistan', only File:Техникум-Ангрен.jpg (a Soviet-era technical college in the city of Angren, a different institution) and a US Army topographic map sheet of the Angren area - both rejected on identity. uz.wikipedia has no 'Angren universiteti' article (page missing) and the 'Angren shahri' article has no lead image. Official domain: this pass located the current site as auni.uz (WordPress; angrenuniversity.uz did not resolve, HTTP 000, and mr.auni.uz / ac.auni.uz / en-ac.auni.uz are student portals). The auni.uz homepage markup exposes only logo files, and its full WordPress media library (wp-json/wp/v2/media, 60 items) contains exactly two distinct images: Angren-univer-logo.png (a logo) and banner.jpg - banner.jpg was downloaded (1489x838) and inspected: it is the theme's generic stock desk photo of an iMac, a yellow mug and a pen pot, not a campus. Nothing else on the domain. Needs either a future Commons upload or an official campus photo direct from the university."
+    },
+    {
+      "universitySlug": "asia-international-university",
+      "universityName": "Asia International University Faculty of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Osiyo_Xalqaro_universiteti.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Bekwox, File:Osiyo Xalqaro universiteti.jpg (description \"Osiyo Xalqaro universitetini old tomondan ko'rinishi\" - front view of Asia International University, dated 2024-10-03); depicts the university's main academic block in Bukhara head-on, with the crest and 'OSIYO XALQARO UNIVERSITETI' roof signage legible - the parent university's own building is the fair subject for this faculty-of-medicine record; 4624x2604 px, wide landscape, ideal cover ratio; verified HTTP 206 image/jpeg. Minor caveat: a staff car park occupies the lower third.",
+        "proposedPublicId": "asia-international-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "bukhara-state-medical-institute-abu-ali-ibn-sino",
+      "universityName": "Bukhara State Medical Institute named after Abu Ali Ibn Sino",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Med_ins.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author credited as Bsmi.uz (the institute's own site, uploaded 2023-02-18), File:Med ins.jpg, in Category:Bukhara State Medical Institute; depicts the institute's main building with the full 'ABU ALI IBN SINO NOMIDAGI BUXORO DAVLAT TIBBIYOT INSTITUTI' facade signage, crest and the Ibn Sino statue at left - unambiguous identification; 6000x3368 px, 16:9 landscape; verified HTTP 206 image/jpeg. Note for the uploader: the original is very large, so downscale on upload. Alternatives inspected and available if a smaller file is preferred: File:Buxoro davlat tibbiyot instituti yangi kampusi.jpg (aerial of the new campus, 1160x773, CC BY-SA 4.0, author Medxim) and File:Buxoro davlat tibbiyot instituti.jpg (the teaching clinic block, 1170x600).",
+        "proposedPublicId": "bukhara-state-medical-institute-abu-ali-ibn-sino-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "central-asian-medical-university",
+      "universityName": "Central Asian Medical University",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No campus exterior could be verified. Commons list=search returned nothing for 'Central Asian Medical University Fergana' or 'Markaziy Osiyo tibbiyot universiteti'; uz.wikipedia 'Markaziy Osiyo tibbiyot universiteti' and ru.wikipedia 'Центральноазиатский медицинский университет' are both missing pages. Official domain camuf.uz is a client-side Nuxt SPA whose served HTML contains no images at all (confirming the July finding), but this pass went further and read the site's own API base out of the JS bundle (gateway.camuf.uz) and queried its real endpoints rather than guessing paths. /banners/ returns exactly one image, media/static/banners/Screenshot_2024-01-24_at_11.28.20_2_w34dlW4.png - downloaded (1920x1080) and inspected: it is a macOS desktop screenshot of a generic aerial forest wallpaper, complete with the visible Chrome menu bar, so it is stock/placeholder and rejected. /universityinformation/ yields only the logo PNG. /sections/ yields four images, all downloaded and inspected: a composite of Acta CAMU journal covers (2126x1417, not a campus), an indoor simulation-lab class photo with students and staff (2560x1920, an event/people photo), a 400x400 thumbnail (too small), and a photo re-hosted from a Facebook post (rejected as a social-media scrape). Remaining imagery lives under /staff/ and is portraits. Nothing acceptable exists on either route today."
+    },
+    {
+      "universitySlug": "central-asian-university-medical-school",
+      "universityName": "Central Asian University Medical School",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Central_Asian_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, author CentralAsianUniversity1, File:Central Asian University.jpg (description 'Central Asian University (CAU) in Tashkent'); depicts the CAU Tashkent campus plaza with the large freestanding 'CAU' monument in the foreground and the main academic building behind - the parent university's own campus is the fair subject for this medical-school record; 2560x1706 px landscape, clean and uncluttered; verified HTTP 206 image/jpeg. Alternatives inspected: File:CAU - Central Asian University, Tashkent.jpg (9504x6336, CC BY-SA 4.0, SARVARCAU1, same view at much higher resolution) and File:CAU - Central Asian University, Tashkent (1).jpg (6240x4160, building facade with CAU banners). IDENTITY CAVEAT for the reviewer: AKFA University was renamed Central Asian University in June 2023, so this is very likely the same campus as the akfa-university-medical-school record in this batch; the two records have deliberately been given differently branded photos, but the July pass's flagged duplicate/rename question remains unresolved and should be settled before both covers go live.",
+        "proposedPublicId": "central-asian-university-medical-school-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "chirchik-branch-tsmu",
+      "universityName": "Chirchik Branch of Tashkent State Medical University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://tdtuchf.uz/static/uploads/TDTUCHF_R.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official photograph published on the branch's own domain tdtuchf.uz (the same domain that supplied the approved logo in the July pass), served from its static uploads directory; depicts the CHIRCHIK branch's own entrance facade - the canopy sign reads 'TOSHKENT DAVLAT TIBBIYOT UNIVERSITETI CHIRCHIQ FILIALI' with the branch crest, plus a wall plaque in English reading 'Tashkent Medical Academy Chirchik Branch', so this is confirmed as the Chirchik campus and NOT the TSMU main building in Tashkent; 1280x960 px, 4:3 landscape; verified HTTP 206 image/jpeg. Nothing exists on Commons for this branch (searches for 'Chirchiq tibbiyot' and 'Toshkent tibbiyot akademiyasi Chirchiq' returned zero files; uz.wikipedia has no article). Note: the only other campus-adjacent image on the homepage, /static/uploads/IMG_0475.jpeg, is an AI-generated 'Eng yaxshi tyutor-2026' promotional poster and was rejected; the homepage hero itself is a via.placeholder.com placeholder.",
+        "proposedPublicId": "chirchik-branch-tsmu-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "fergana-medical-institute-of-public-health",
+      "universityName": "Fergana Medical Institute of Public Health",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/FJSTI.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0 (public domain dedication), author credited as FJSTI - the institute itself, uploaded 2024-03-13, File:FJSTI.jpg, description \"Farg'ona jamoat salomatligi tibbiyot instituti rasmi\" which is the exact Uzbek name of this institution; depicts the institute's main academic building frontage with its crest above the entrance; 1280x852 px landscape; verified HTTP 206 image/jpeg. REVIEWER CAVEAT: the shot is taken with a fisheye lens (curved horizon) and the entrance carries a gold-and-black balloon arch with several people walking past, so it reads partly as an opening-day photo; the building is nonetheless the dominant subject and fills the frame, and it is the institute's own CC0 upload. Flagged rather than silently accepted in case the stricter no-event-photo rule should apply. No other candidate exists: Commons has nothing else for this institute, ru.wikipedia 'Ферганский медицинский институт' returned no files, and fergmi.uz carries no og:image or hero banner - only the logo and small department thumbnails.",
+        "proposedPublicId": "fergana-medical-institute-of-public-health-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

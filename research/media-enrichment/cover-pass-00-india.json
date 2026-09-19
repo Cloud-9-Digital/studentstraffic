@@ -1,0 +1,114 @@
+{
+  "batchId": "cover-pass-00-india",
+  "notes": "Cover-only pass, 2026-09-16. All 9 published India universities whose universities.cover_image_url is null/empty. These were already researched in india-pilot-batch-1/2/3.json (2026-09-08) and every one of them resolved to a ready cover, so this batch does NOT redo that research - it is a correctness pass over the same nine records. Two defects were found and fixed here: (1) six covers were recorded as commons.wikimedia.org/wiki/File:... DESCRIPTION PAGE urls, which are text/html and would be uploaded to Cloudinary as an HTML document rather than an image by scripts/apply-media-enrichment.ts; each has been resolved to its direct upload.wikimedia.org image url via the Commons imageinfo API and re-verified. (2) the SRM cover was a 1072x1440 PORTRAIT file, wrong aspect for a landscape cover card; it has been replaced with a landscape file from the same Commons category that names the building explicitly. Licence, author and subject for every Commons file were re-read from the live extmetadata (LicenseShortName / Artist / ImageDescription / Categories) rather than trusted from the earlier batch. Every sourceUrl below was verified in this session with curl -sIL and returned HTTP 200 with an image/* content-type. No asset was downloaded, uploaded, or applied to the database. Logos are out of scope for this pass and are unchanged - see india-pilot-batch-*.json for those.",
+  "entries": [
+    {
+      "universitySlug": "amity-university-noida",
+      "universityName": "Amity University, Noida",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Amity_Campus_Noida_Delhi.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, own work by author Hghulam49, File:Amity Campus Noida Delhi.jpg, categorised under Category:Amity University, Noida - i.e. the Noida campus specifically, not Lucknow, Greater Noida, Dubai or Tashkent. 1440x1080 px, 273 KB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-2.json as the /wiki/File: description page.)",
+        "proposedPublicId": "amity-university-noida-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "universityName": "Amrita Vishwa Vidyapeetham",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://webfiles.amrita.edu/2020/05/2w4fqsOS-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-photo-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own CDN (webfiles.amrita.edu) and used as the hero banner on the university's own Coimbatore campus page (www.amrita.edu/campus/coimbatore/). Aerial/drone photograph of the Coimbatore campus, which is the campus this catalogue record is scoped to. Re-verified 2026-09-16: HTTP 200, image/jpeg, 149 KB. Unchanged from india-pilot-batch-2.json.",
+        "proposedPublicId": "amrita-vishwa-vidyapeetham-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kiit-deemed-to-be-university",
+      "universityName": "KIIT Deemed to be University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2023/04/KIIT-University-Bhubaneswar.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own domain (kiit.ac.in) and used by the university itself as its homepage social-share (og:image) representation of KIIT University, Bhubaneswar; filename and homepage context both identify the Bhubaneswar campus. Re-verified 2026-09-16: HTTP 200, image/jpeg, 350 KB. Unchanged from india-pilot-batch-3.json.",
+        "proposedPublicId": "kiit-deemed-to-be-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "lovely-professional-university",
+      "universityName": "Lovely Professional University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Lovely_Professional_University%2C_Jalandhar-Delhi_G.T._Road_%28NH-1%29%2C_Phagwara%2C_Punjab_%28INDIA%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author Shalintripathi, File:Lovely Professional University, Jalandhar-Delhi G.T. Road (NH-1), Phagwara, Punjab (INDIA).jpg. File title and description name the university's Jalandhar-Delhi G.T. Road (NH-1) address in Phagwara, matching this record's campus. 1280x824 px landscape, 311 KB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-3.json as the /wiki/File: description page.)",
+        "proposedPublicId": "lovely-professional-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "manipal-academy-of-higher-education",
+      "universityName": "Manipal Academy of Higher Education",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Manipal_Institute_of_Technology_Academic_Building%2C_Manipal_University%2C_Manipal_Campus%2C_India_%28Ank_Kumar%2C_Infosys_Limited_%29_02.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, own work by author Ank Kumar, File:Manipal Institute of Technology Academic Building, Manipal University, Manipal Campus, India (Ank Kumar, Infosys Limited ) 02.jpg. Title and description explicitly state 'Manipal Institute of Technology Academic Building, Manipal University, Manipal Campus, Udupi, Karnataka, India', directly identifying the Manipal campus this record covers. 3072x2304 px, 2.2 MB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-1.json as the /wiki/File: description page.)",
+        "proposedPublicId": "manipal-academy-of-higher-education-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "op-jindal-global-university",
+      "universityName": "O.P. Jindal Global University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://jgu.edu.in/storage/1062/DJI_0020.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own storage path and used as the campus-overview slider image on the university's own Sonipat page (jgu.edu.in/internationaloffice/sonipatindia/), the campus this record is scoped to. Aerial photograph of the university's Sonipat campus. Re-verified 2026-09-16: HTTP 200, image/jpeg, 1.09 MB. Unchanged from india-pilot-batch-2.json.",
+        "proposedPublicId": "op-jindal-global-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "universityName": "SRM Institute of Science and Technology",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/SRM_University_Auditorium.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author Hareesh Sivasubramanian, File:SRM University Auditorium.JPG, categorised under Category:SRM Institute of Science and Technology. Description names the building explicitly: 'DR T.P Ganesan Auditorium of SRM University, Chennai' - the Dr T.P. Ganesan Auditorium stands on the Kattankulathur campus this record is scoped to. 4608x2592 px landscape, 5.2 MB. Verified HTTP 200 image/jpeg. REPLACES the earlier india-pilot-batch-3.json pick, File:Old Campus, SRM Institute of Science and Technology, Kattankulathur (August,2024).jpg, which is correct in subject but 1072x1440 PORTRAIT and therefore a poor fit for a landscape cover card; that file remains a valid fallback if a human prefers the 'old campus' framing.",
+        "proposedPublicId": "srm-institute-of-science-and-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "symbiosis-international-university",
+      "universityName": "Symbiosis International (Deemed University)",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Symbiosis_International_University%2C_S._B._Road_campus.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, own work by author DesiBoy101, File:Symbiosis International University, S. B. Road campus.jpg. Embedded camera coordinates 18.52252, 73.82930 sit on Senapati Bapat Road, Pune, matching this record's Senapati Bapat Road campus. 3641x2785 px, 3.2 MB. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. (Was recorded in india-pilot-batch-1.json as the /wiki/File: description page.)",
+        "proposedPublicId": "symbiosis-international-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "vellore-institute-of-technology",
+      "universityName": "Vellore Institute of Technology",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Technology_Tower%28VIT%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, own work by author Wikindinator, File:Technology Tower(VIT).jpg, categorised under Category:Vellore Institute of Technology (distinct from the separate Category:Vellore Institute of Technology (Andhra Pradesh) used for VIT-AP). Depicts the Technology Tower, the landmark academic building of the Vellore campus, and is the lead image of the English Wikipedia article for the Vellore campus institution. Direct image url resolved from the Commons imageinfo API; verified HTTP 200 image/jpeg. CAVEAT: only 800x600 px / 96 KB - adequate for a card thumbnail but low for a full-bleed hero. Every larger landscape alternative in the same Commons category was rejected: File:Vituniversity.jpg (4032x3024, CC BY-SA 4.0) and File:S-MH and T-MH VIT, Vellore Campus.jpg (4096x3072, CC0) are respectively undescribed and a men's-hostel block, neither confidently a campus-representative exterior; File:MBA Block.jpg and File:Food place.jpg (2048x1360) are single minor facilities.",
+        "proposedPublicId": "vellore-institute-of-technology-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

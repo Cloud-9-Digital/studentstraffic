@@ -1,0 +1,322 @@
+{
+  "batchId": "cover-pass-06-row-b",
+  "notes": "Cover-only research pass, 2026-09-16, for 28 published universities across NZ, North Macedonia, Norway, Philippines, Portugal, Serbia, Sweden, Switzerland, Trinidad and Tobago, Uganda, UAE, UK, USA, Vietnam plus eight never-researched records (Azerbaijan, Belarus, Bulgaria, China, Guyana x2, Jamaica, Malawi). Method: (1) grepped the July 2026 a-*.json batches and second-pass-patches/*.json for every slug first, so no dead end was repeated; (2) Wikipedia pageimages API for the lead image of the en/az/ru/mk/sr/bg/vi/zh/no/pt article; (3) Wikimedia Commons list=search and generator=categorymembers with prop=imageinfo&iiprop=url|size|mime|extmetadata, run in English and in the local language/script where relevant (Македонски, Български, Српски, Azərbaycanca, Русский, 中文, Tiếng Việt, Norsk, Portugues); (4) official institutional domains via curl for og:image and hero/campus-page imagery where Commons had nothing. Every sourceUrl in this file was verified in-session with curl -sIL and returned HTTP 200 with an image/* content-type; query strings were stripped from upload.wikimedia.org URLs. Ambiguous or under-documented candidates (Khalifa, Azerbaijan Medical University, Belarusian State Medical University, Caltech, the Skopje deanery, the KUHES and Texila candidates) were downloaded and visually inspected before acceptance or rejection. SYSTEMIC FINDING: the July 2026 pass researched covers almost exclusively by scraping institutional homepages and never queried Wikimedia Commons; that is why large, well-documented public universities (Caltech, UMass Amherst, Delaware, Geneva, Chalmers, Victoria Wellington, AUT, UWI St. Augustine, Gulf Medical, Huddersfield) were held. All of those are resolved here from free-licence Commons files. Wikimedia returned HTTP 429 mid-verification; affected URLs were re-verified with backoff and all returned 200. CAVEATS recorded per entry below: Goce Delcev uses the parent university's main building (no faculty-specific photo exists); Mbarara uses the MUST Kihumuro campus (university-level, not faculty-level); Van Lang's file is 960px wide, slightly under the 1000px preference, but is the only free genuine VLU campus photograph and VLU's own og:image still returns HTTP 403 as it did in July.",
+  "entries": [
+    {
+      "universitySlug": "auckland-university-of-technology",
+      "universityName": "Auckland University of Technology",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Auckland_University_of_Technology_Tower.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, Public domain (PD-self), author Ingolfson, File:Auckland University of Technology Tower.jpg in Category:AUT Tower; depicts the AUT Tower (WT building), one of the main city-campus buildings in the Auckland CBD; 1600x1200 px landscape; verified HTTP 200 image/jpeg",
+        "proposedPublicId": "auckland-university-of-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "victoria-university-of-wellington",
+      "universityName": "Victoria University of Wellington",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Victoria_University_of_Wellington_Kelburn_Campus_01.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Panamitsu, File:Victoria University of Wellington Kelburn Campus 01.jpg in Category:Victoria University of Wellington; depicts the Kelburn Campus, the university's main campus in Wellington; 4000x3000 px landscape; verified HTTP 200 image/jpeg",
+        "proposedPublicId": "victoria-university-of-wellington-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "goce-delcev-university-faculty-of-medicine",
+      "universityName": "Goce Delcev University Stip - Faculty of Medical Sciences",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Univerzitet_Goce_Del%C4%8Dev_-_%C5%A0tip.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Raso, File:Univerzitet Goce Delcev - Stip.JPG in Category:Goce Delcev University; depicts the main building of Goce Delcev University in Stip, North Macedonia; 4272x2848 px landscape; verified HTTP 200 image/jpeg. IDENTITY CAVEAT: this is the parent university's main building, not a Faculty of Medical Sciences building. Searched Commons in Macedonian (Универзитет „Гоце Делчев“ во Штип, Медицински факултет Штип) and English; the only other campus-specific free file is File:Кампус 4 на Универзитетот „Гоце Делчев“ - Штип.jpg (Campus 4), which is not the campus housing the medical faculty. No faculty-specific photograph exists on Commons and ugd.edu.mk carries no faculty building photography (re-confirmed; consistent with the July 2026 hold note in a-121-130.json). Reviewer may prefer to reject this parent-building substitution.",
+        "proposedPublicId": "goce-delcev-university-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "ss-cyril-and-methodius-university-faculty-of-medicine",
+      "universityName": "Ss. Cyril and Methodius University of Skopje - Faculty of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/%D0%94%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D1%82_%D0%BD%D0%B0_%D0%9C%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8_%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82_-_%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Buli, File:Деканатот на Медицински факултет - Скопје.jpg (The Deanery of the Faculty of Medicine - Skopje) in Category:Ss. Cyril and Methodius University, Skopje; depicts the actual Deanery building of the Faculty of Medicine in Skopje - correct faculty-level subject, not the parent university; 3264x2448 px landscape; verified HTTP 200 image/jpeg and visually inspected. Found only by searching Commons in Macedonian script; the July 2026 pass searched in English and concluded no faculty-level asset existed. Framing caveat: an ordinary street-level view including road and utility furniture rather than a polished hero shot, but the subject identification is exact.",
+        "proposedPublicId": "ss-cyril-and-methodius-university-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "norwegian-school-economics",
+      "universityName": "Norwegian School of Economics",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/NHH%2C_Sandviken%2C_Bergen%2C_Hordaland%2C_Norway_-_panoramio.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author trolvag, File:NHH, Sandviken, Bergen, Hordaland, Norway - panoramio.jpg in Category:Norwegian School of Economics and Business Administration; depicts the NHH campus building at Helleveien, Sandviken, Bergen; this is the lead image of the Norwegian Wikipedia article Norges handelshoyskole; 3784x2426 px landscape; verified HTTP 200 image/jpeg",
+        "proposedPublicId": "norwegian-school-economics-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "angeles-university-foundation",
+      "universityName": "Angeles University Foundation",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/9422jfAngeles_University_Foundation_Roadsfvf_15.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Judgefloro, File:9422jfAngeles University Foundation Roadsfvf 15.JPG in Category:Angeles University Foundation; depicts the AUF Sports and Cultural Center beside the AUF Medical Center and Professional Schools, Barangay Lourdes Sur East, Angeles City; 4608x3456 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 hold (a-21-30.json), which was caused by auf.edu.ph serving a degraded placeholder site and Wikipedia's logo being non-free - neither problem affects this freely licensed campus photograph.",
+        "proposedPublicId": "angeles-university-foundation-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "catolica-medical-school",
+      "universityName": "Catolica Medical School, Universidade Catolica Portuguesa",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No verifiable image of the Sintra medical school building found. Commons: searched 'Universidade Catolica Portuguesa Sintra', 'Catolica Medical School', 'Faculdade de Medicina Universidade Catolica' in English and Portuguese - Category:Universidade Catolica Portuguesa and the pt.wikipedia lead image return only File:CATOLICA Logotipo.png (a logo, excluded). No photograph of any UCP campus, Sintra or Lisbon, exists on Commons. Official domains: the faculty's own site fm.ucp.pt returns a 20-byte body to curl on both /sintra-campus-building and /sintra-campus (HTTP 200 but JS-rendered/bot-gated, no og:image, no <img>, no background-image in the delivered HTML), so the Sintra building photo published there could not be resolved to a direct image URL and I will not guess one. www.ucp.pt declares an og:image of logo-mobile@2x.png (a logo) and its only other same-domain images are EU/PRR/Republica Portuguesa funding badges; www.ucp.pt/medicalschool returns 404. lisboa.ucp.pt/explorecampi-lisboasintra-campus/presentation returns HTTP 200 but its only file-system images are the same funding badges plus CATOLICA-LISBOA.png (a logo). Deliberately did not substitute the Lisbon main campus for the Sintra medical school per the identity requirement. Retry route: fetch fm.ucp.pt/sintra-campus-building with a JS-capable renderer.",
+      "reason_note": "Sintra building: designed by Bartolomeu da Costa Cabral, inaugurated 2001, rehabilitated 2021 for the Faculty of Medicine - identified via search but no retrievable image file."
+    },
+    {
+      "universitySlug": "university-of-kragujevac-faculty-of-medical-sciences",
+      "universityName": "University of Kragujevac Faculty of Medical Sciences",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No correctly-identified faculty image found. Commons/Wikipedia: the en.wikipedia lead image for University of Kragujevac is File:UBKG10.jpg, but its Commons description and categories confirm it depicts the University Library in Kragujevac (Category:University Library Kragujevac), not the Faculty of Medical Sciences - rejected as the wrong subject. Searched Commons for 'Medicinski fakultet Kragujevac', 'Крагујевац медицински факултет', 'University of Kragujevac Faculty of Medical Sciences' in Latin and Cyrillic: zero file results; sr.wikipedia 'Медицински факултет у Крагујевцу' returns NO IMAGE. Official domain medf.kg.ac.rs: re-fetched the homepage, /index.php and /en/ (all HTTP 200); /o-nama.php is 404. Every image served is either a logo (logo_mf.png, logos.png, unkgfmn2026.png, erasmus-logo.png) or a dated news/event thumbnail (GRAS2026.jpg, the_third_annual_enrollment.jpg, vel/BMCR_2026.jpg, vel/Hubei_2026.jpg) - no building or campus photography anywhere on the site. Consistent with the July 2026 finding (a-421-435.json) that the only non-logo homepage image was a video poster frame.",
+      "reason_note": "Do not substitute File:UBKG10.jpg - it is the university library, a different institution unit."
+    },
+    {
+      "universitySlug": "chalmers-university-technology",
+      "universityName": "Chalmers University of Technology",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Chalmers_University_of_Technology_Campus.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Johan Bodell (Chalmers) - i.e. released by the university's own photographer, File:Chalmers University of Technology Campus.jpg in Category:Chalmers University of Technology; depicts the walkway between the MV building and Fysik on Chalmers' main Johanneberg campus, Gothenburg; 7625x5086 px landscape; verified HTTP 200 image/jpeg. Replaces the July 2026 candidate cms.www.chalmers.se/.../johanneberg_i0a2179_1920x1080px.jpg, which timed out three times at upload; this file is on Wikimedia's CDN and is the correct Johanneberg campus (not the Lindholmen campus shown in the en.wikipedia lead image).",
+        "proposedPublicId": "chalmers-university-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-geneva",
+      "universityName": "University of Geneva",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/University_of_Geneva_2015.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Dmitry A. Mottl, File:University of Geneva 2015.jpg in Category:Exterior of Uni Bastions (Geneva); depicts Uni Bastions, the University of Geneva's historic main building in the Parc des Bastions; this is the lead image of the en.wikipedia article University of Geneva; 4743x3162 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 hold, which was caused by unidentifiable unige.ch homepage thumbnails - Commons was never checked.",
+        "proposedPublicId": "university-of-geneva-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "uwi-st-augustine-mbbs",
+      "universityName": "University of the West Indies St. Augustine MBBS",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/TnT_St._Augustine_UWI_Campus.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Grueslayer, File:TnT St. Augustine UWI Campus.jpg in Category:University of the West Indies (Saint Augustine); description 'UWI campus, St. Augustine, Trinidad' - confirmed the St. Augustine campus in Trinidad, NOT the Mona campus in Jamaica; this is the lead image of the en.wikipedia article University of the West Indies; 4320x3240 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 hold, which was caused by sta.uwi.edu's og:image being a 257x170 thumbnail - Commons was never checked.",
+        "proposedPublicId": "uwi-st-augustine-mbbs-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "mbarara-university-of-science-and-technology-faculty-of-medicine",
+      "universityName": "Mbarara University of Science and Technology Faculty of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Sunny_evening_%285pm%29_in_Kihumuro_Campus_at_Mbarara_University_of_Science_and_Technology_03.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Macholi, File:Sunny evening (5pm) in Kihumuro Campus at Mbarara University of Science and Technology 03.jpg, from Wiki Loves Africa 2023; depicts the Kihumuro campus of MUST, Mbarara, Uganda; this is the lead image of the en.wikipedia article Mbarara University; 4000x3000 px landscape; verified HTTP 200 image/jpeg. IDENTITY CAVEAT: university-level campus imagery, not faculty-specific. Note the July 2026 hold (a-221-230.json) flagged an unresolved naming question - MUST now organises this unit as the Faculty of Health Sciences while the catalogue record says Faculty of Medicine. That rename question is untouched by this cover and still needs an editorial decision; a university-level campus photo is safe either way.",
+        "proposedPublicId": "mbarara-university-of-science-and-technology-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "gulf-medical-university",
+      "universityName": "Gulf Medical University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Gulf_Medical_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Shaj.pre, File:Gulf Medical University.jpg in Category:Gulf Medical University; description 'The main building of Gulf Medical University'; this is the lead image of the en.wikipedia article Gulf Medical University; 4500x2406 px landscape; verified HTTP 200 image/jpeg. Resolves the July 2026 cover hold cleanly: it is GMU-specific, so it avoids the Thumbay Group / Thumbay Medicity branding ambiguity that blocked the gulfmedicaluniversity.com and thumbay.com candidates.",
+        "proposedPublicId": "gulf-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "khalifa-university",
+      "universityName": "Khalifa University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://www.ku.ac.ae/wp-content/uploads/2019/11/DX3_8099.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official photograph published by Khalifa University on its own domain (ku.ac.ae), found as the campus photo on https://www.ku.ac.ae/campus (the page serves a downscaled 575x244 derivative, DX3_8099-e1617193912674.jpg; this is the full-size original in the same WordPress upload folder). Depicts the Khalifa University Student Center building, Abu Dhabi, with its bilingual Arabic/English 'Student Center' signage - verified by downloading and visually inspecting the file. 4000x1690 px landscape, no campaign text or date-limited overlay; verified HTTP 200 image/jpeg, 438743 bytes. Commons has NO photograph of Khalifa University (Category:Khalifa University contains only two logo files and one portrait), so the official-domain route was used. This is a building photograph, not a brand asset, so the ku.ac.ae visual-identity page's written-permission requirement for logo/branding assets - the basis of the July 2026 hold in a-181-190.json - does not apply in the same way; the media integrator should still confirm reuse terms before upload.",
+        "proposedPublicId": "khalifa-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-huddersfield",
+      "universityName": "University of Huddersfield",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Huddersfield_University_Queensgate_Campus_-_geograph.org.uk_-_3958338.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author Kay Williams, File:Huddersfield University Queensgate Campus - geograph.org.uk - 3958338.jpg in Category:University of Huddersfield, from Geograph Britain and Ireland; depicts the Queensgate Campus, the university's main campus; 1600x1059 px landscape; verified HTTP 200 image/jpeg. Evergreen (no Clearing/Open Day/prospectus campaign branding), which was the reason the July 2026 pass rejected every hud.ac.uk homepage candidate.",
+        "proposedPublicId": "university-of-huddersfield-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "california-institute-of-technology",
+      "universityName": "California Institute of Technology",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Beckman_Auditorium_%2817521897582%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author Yisong Yue (via Flickr, licence reviewed by FlickreviewR 2), File:Beckman Auditorium (17521897582).jpg in Category:Beckman Auditorium (a subcategory of Campus of the California Institute of Technology); depicts Beckman Auditorium, Caltech's best-known architectural landmark (Edward Durell Stone, 1960) on the Pasadena campus - confirmed by downloading and visually inspecting the file; 5184x3456 px landscape; verified HTTP 200 image/jpeg. Caltech is extremely well covered on Commons; alternates if a different building is preferred include File:Cahill Center Caltech 2017.jpg (4608x3456, CC BY-SA 4.0, Antony-22) and File:Broad Center Caltech 2017.jpg (4608x3456, CC BY-SA 4.0).",
+        "proposedPublicId": "california-institute-of-technology-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-delaware",
+      "universityName": "University of Delaware",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/UDel_Memorial_and_Magnolia_Circle.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Cargoudel, File:UDel Memorial and Magnolia Circle.JPG in Category:University of Delaware; description 'University of Delaware in Newark, Delaware. Memorial Hall in the background, Magnolia Circle in the foreground' - Memorial Hall is the university's signature Colonial Revival building on The Green; 2608x1952 px landscape; verified HTTP 200 image/jpeg. Evergreen, so it avoids the time-limited 'Delaware Declares' fundraising hero that blocked the July 2026 pass. Alternate: File:Cannon Hall UofDel by Carol M Highsmith.jpg (1024x768, Public domain, Library of Congress/Highsmith collection).",
+        "proposedPublicId": "university-of-delaware-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-massachusetts-amherst",
+      "universityName": "University of Massachusetts Amherst",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/UMass_Amherst_campus_aerial_view.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 4.0, author Quintin Soloviev, File:UMass Amherst campus aerial view.jpg in Category:University of Massachusetts Amherst; description 'Aerial view of the University of Massachusetts Amherst campus in autumn, with the Southwest Residential Area in the foreground and the W. E. B. Du Bois Library'; 4827x3137 px landscape; verified HTTP 200 image/jpeg. Free-licensed original photography, so it avoids the Getty-credited third-party stock thumbnail that blocked the July 2026 pass. Alternate: File:Umass Amherst Skyline.jpg (3000x1015, CC BY 2.5).",
+        "proposedPublicId": "university-of-massachusetts-amherst-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-information-technology-vnu-hcmc",
+      "universityName": "University of Information Technology (UIT), VNU-HCM",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No verifiable genuine campus photograph found; the July 2026 hold (a-421-435.json) still stands and Commons adds nothing. Commons/Wikipedia: searched 'University of Information Technology VNU-HCM' and the Vietnamese name 'Truong Dai hoc Cong nghe Thong tin, Dai hoc Quoc gia Thanh pho Ho Chi Minh' - the vi.wikipedia lead image is File:Logo UIT updated.svg (a logo, excluded) and no photographic file of the campus exists in any related category. Official domain uit.edu.vn (re-fetched 2026-09-16, HTTP 200): the declared og:image is /media/uit_thumbnail_72a6453358.png, an 800x450 branded thumbnail graphic, not photography. The homepage hero (tamnhin_sumang_02_02_01_01_...png) is the same stylised slogan graphic flagged in July. The one photographic asset on the page, /media/740215593_1000874972575871_5368889140275719740_n_1_...jpg, has a Facebook CDN-derived filename (a re-uploaded social-media photo of uncertain provenance and no rights statement) and is served only through the Next.js /_next/image resizing proxy rather than as a direct image URL - rejected on both grounds. No press/media/brand-kit page exists on the site.",
+      "reason_note": "Did not substitute a marketing graphic, a logo, or a Facebook-sourced re-upload."
+    },
+    {
+      "universitySlug": "van-lang-university",
+      "universityName": "Van Lang University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/VLU_Campus.webp",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0 (public domain dedication), author Syan1211, File:VLU Campus.webp in Category:Van Lang University; description 'Van Lang University Campus'; this is the lead image of the Vietnamese Wikipedia article Van Lang University; 960x499 px landscape; verified HTTP 200 image/webp. SIZE CAVEAT: 960 px wide, just under the 1000 px preference, and webp rather than jpeg. Accepted because it is the only free, genuine, correctly-identified VLU campus photograph in existence on Commons and the official alternative is unavailable: VLU's declared og:image (vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_View010000_Post_moi_2022_...jpg) still returns HTTP 403 Forbidden on their own S3 bucket, re-confirmed this pass, exactly as in July; the remaining vlu.edu.vn banners are QS/THE ranking promotional graphics with time-limited figures overlaid. Reviewer may prefer to hold on resolution grounds.",
+        "proposedPublicId": "van-lang-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "azerbaijan-medical-university",
+      "universityName": "Azerbaijan Medical University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Tibbuni02.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Languard, File:Tibbuni02.jpg in Category:Azerbaijan Medical University; the Commons description is only the terse filename 'tibbuni02', so the subject was confirmed by downloading and visually inspecting the file: it is an elevated/aerial view of the Azerbaijan Medical University main building in Baku, the stone-clad block with its arched window arcades and forecourt, set against the Baku skyline. 2048x1365 px landscape; verified HTTP 200 image/jpeg. The az and ru Wikipedia lead images are both File:Emblem of the Azerbaijan Medical University.jpg (an emblem, excluded). Alternate in the same category: File:Tibbunidekan.jpg (1840x1228, CC BY-SA 4.0, same author).",
+        "proposedPublicId": "azerbaijan-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "belarusian-state-medical-university",
+      "universityName": "Belarusian State Medical University",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Belarusian_State_Medical_University_p1.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Homoatrox, File:Belarusian State Medical University p1.jpg in Category:Belarusian State Medical University, photographed 2021-04-09 in Minsk; depicts the BSMU main building and tower block - identification independently confirmed by visual inspection: the facade carries the university's name in Belarusian, 'БЕЛАРУСКІ ДЗЯРЖАЎНЫ МЕДЫЦЫНСКІ ЎНІВЕРСІТЭТ'. 5256x3423 px landscape; verified HTTP 200 image/jpeg. Five further consistent views (p2-p6) exist in the same category if a different angle is preferred.",
+        "proposedPublicId": "belarusian-state-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "medical-university-pleven",
+      "universityName": "Medical University Pleven",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Medical_University_Pleven_TB.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Todor Bozhinov (Тодор Божинов), File:Medical University Pleven TB.jpg in Category:Pleven Medical University; description 'Medical University of Pleven, Bulgaria'; 3624x2716 px landscape; verified HTTP 200 image/jpeg. Found via Commons search in both English and Bulgarian (Медицински университет Плевен). Alternate in the same category: File:Medical University - Медицински университет - panoramio.jpg (1224x1632, CC BY 3.0, but portrait).",
+        "proposedPublicId": "medical-university-pleven-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "shandong-university-cheeloo-college-of-medicine",
+      "universityName": "Shandong University Cheeloo College of Medicine",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Cheeloo_alumni_gate_jinan_2009_07.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Rolfmueller, File:Cheeloo alumni gate jinan 2009 07.jpg in Category:Cheeloo University; depicts the Alumni Gate (completed 17 June 1924) on the historic Cheeloo/Baotuquan campus of Shandong University in Jinan - the correct subject for the Cheeloo College of Medicine, and the lead image of the Chinese Wikipedia article 山东大学齐鲁医学院; 2816x1880 px landscape; verified HTTP 200 image/jpeg. Alternates found by searching in Chinese (山东大学 趵突泉校区): File:山东大学趵突泉校区全景照片.jpg and File:山东大学趵突泉校区全景图.jpg (both 4096x2048, CC BY-SA 4.0, SunRuikang, drone views of the Baotuquan campus explicitly including the Cheeloo College of Medicine buildings) - higher resolution, but they are 360-degree equirectangular panoramas and will look distorted if cropped as a normal cover, which is why the Alumni Gate was preferred.",
+        "proposedPublicId": "shandong-university-cheeloo-college-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "texila-american-university-guyana",
+      "universityName": "Texila American University",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Held deliberately, per the instruction to be strict with this small private provider rather than accept a generic Georgetown photo. Commons: searched 'Texila American University', 'Texila American University Guyana campus' - the only file is File:Texila American University Logo.jpg (448x302), a logo, which is also the en.wikipedia lead image; no photographic file exists. Official domains: www.texilaamericanuniversity.com does not respond to curl (connection failure, exit code 000, on both / and /campus/). The Guyana site tau.edu.gy does respond (HTTP 200 on /, /about-us/, /campus-life/, /guyana-campus/) but its only photographic assets are campus-gallery-1..6.jpg; I fetched the originals directly from tau.edu.gy/wp-content/uploads/2020/04/ and all are 800x600 - under the 1000 px bar - and visual inspection of campus-gallery-1.jpg shows an interior corridor/atrium with students standing at a railing, i.e. a people-focused interior snapshot, not a campus or building cover image. Every other image on those pages is a logo, an accreditation badge (ACCM, CAAM-HP, ECFMG, WDOMS, BAC) or a DMCA badge. No stock or aggregator image was considered.",
+      "reason_note": "Rejected candidates: Texila logo file (logo); tau.edu.gy campus-gallery-1..6.jpg (800x600 interior/people shots)."
+    },
+    {
+      "universitySlug": "university-of-guyana",
+      "universityName": "University of Guyana",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Entrance_to_UG.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Loriski, File:Entrance to UG.jpg in Category:University of Guyana, taken 2009 in Guyana; description 'Photograph of the Entrance to the University of Guyana'; this is the lead image of the en.wikipedia article University of Guyana; 2618x1810 px landscape; verified HTTP 200 image/jpeg. Depicts the Turkeyen campus entrance, Greater Georgetown.",
+        "proposedPublicId": "university-of-guyana-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-the-west-indies-mona-faculty-of-medical-sciences",
+      "universityName": "University of the West Indies Mona Faculty of Medical Sciences",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Biblioth%C3%A8que_Mona._Campus_Mona._UWI._Jamaica.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author AfricanadeCuba (Noircir Wikipedia project), File:Bibliotheque Mona. Campus Mona. UWI. Jamaica.jpg; description 'Bibliotheque du Campus Mona' - the Mona campus library, University of the West Indies, Kingston, JAMAICA. Confirmed to be the Mona campus and deliberately NOT the St. Augustine campus in Trinidad used for the uwi-st-augustine-mbbs record in this same batch. 4032x3024 px landscape; verified HTTP 200 image/jpeg. Chosen over the two older Mona files in Category:University of the West Indies (Mona), Jamaica - File:UWI Mona Campus Main Library.jpg (800x600) and File:Chapel Mona Campus UWI.jpg (800x434) - both of which fall below the 1000 px bar. IDENTITY CAVEAT: campus-level, not Faculty of Medical Sciences-specific; no free photograph of the medical faculty building itself exists on Commons.",
+        "proposedPublicId": "university-of-the-west-indies-mona-faculty-of-medical-sciences-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kamuzu-university-of-health-sciences-school-of-medicine-and-oral-health",
+      "universityName": "Kamuzu University of Health Sciences School of Medicine and Oral Health",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No verifiable campus or building photograph found. Commons: searched 'Kamuzu University of Health Sciences', 'Kamuzu University of Health Sciences Blantyre', 'College of Medicine Blantyre Malawi' - zero relevant image files; the only hits were unrelated PDFs and 19th-century Nyasaland/Livingstone photographs. The en.wikipedia article Kamuzu University of Health Sciences returns NO IMAGE. Official domain kuhes.ac.mw (HTTP 200): the homepage carries four slider banners, of which I downloaded and visually inspected KUHES-Banner-3748x980.jpg - it is a flat-orange marketing graphic with the slogan 'THE FUTURE IS BETTER TOGETHER' and a cut-out group of students/clinicians, i.e. a people-and-slogan composite, not a campus photograph; Excellence-For-Life-3-3748x980.jpg is the same 3748x980 banner format from the same campaign series. The remaining content images are dated event photographs (Dietetics-Symposium-2, IMG_9181, IMG_1741 from Jan-Feb 2026) and brochure graphics (LAB-BROCHURE.png, RASMUS.png). /about-us/ returns 404; /campuses/ returns HTTP 200 but serves no photographs at all - only the KUHES logo and favicons. No press/media page found. Did not substitute a hospital photograph (e.g. Queen Elizabeth Central Hospital) for the university.",
+      "reason_note": "Rejected candidates: KUHES-Banner-3748x980.jpg and Excellence-For-Life-3-3748x980.jpg (slogan/people marketing banners); dated 2026 event photos."
+    }
+  ]
+}

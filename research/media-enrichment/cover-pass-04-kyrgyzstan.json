@@ -1,0 +1,148 @@
+{
+  "batchId": "cover-pass-04-kyrgyzstan",
+  "notes": "Cover-only research pass for 16 published Kyrgyz universities whose cover_image_url is empty, run 2026-09-16. Method: (1) re-read every prior hold reason for these slugs in research/media-enrichment/a-*.json and second-pass-patches/*.json so dead ends were not repeated; (2) WebSearch (English + Russian) to establish or re-establish each institution's real legal identity and its OWN domain; (3) curl with a desktop browser UA against each candidate domain (https/http, www, /en and /ru variants), extracting og:image, <img src> and CSS background-image URLs, and where the site runs WordPress enumerating /wp-json/wp/v2/media (up to 4 pages) to find large landscape assets that never appear in the rendered HTML; (4) Wikimedia Commons API by category traversal (Category:Universities and colleges in Bishkek, Category:Medical higher education institutions in Kyrgyzstan) as well as keyword search, with full extmetadata licence/author checks; (5) EVERY shortlisted image was actually downloaded and visually inspected (contact sheets of up to 24 images at a time) before acceptance or rejection, and every accepted sourceUrl was re-verified with curl -sIL requiring HTTP 200 + image/* content-type. Per the caution for this country, NO image was taken from an Indian education-agent or consultancy site; only the institution's own domain or Commons with an explicit free licence. Visual inspection proved its worth: avicenna.edu.kg's homepage hero (2026/07/123.jpg) turned out to be a stock photograph of a Vietnamese secondary school, and altamimiuniversity.com's media library is full of files named download-N.jpeg, Snapinsta.app_* and Drupal-Web_* scraped from third parties - both institutions were held on that basis even though the images sit on their own domains. Identity notes resolved this pass: (a) International Higher School of Medicine's own site is ism.edu.kg (page title 'International Higher School of Medicine (IHSM)') and its building is signed 'International School of Medicine', which is why en.wikipedia's IHSM article uses the Commons file accepted here; (b) the separate catalogue record international-school-of-medicine (ISM under IUK, ism.iuk.kg) is therefore NOT safe to attach that same photo to and stays on hold; (c) avicenna.edu.kg is the genuine Avicenna IMU site while aimu.edu.kg mixes in other institutions' photography (e.g. 7-Bukhara-State-Medical-Institute.webp) and was not used; (d) caimu.org.kg from the previous pass is dead, the live official domain is caimu.edu.kg; (e) eiu.edu.kg serves Eurasian International University content from emu.edu.kg. Caveat: the Kyrgyz-Uzbek University cover shows the university's Medical Clinic / International Medical College building rather than the central rectorate, chosen deliberately because the catalogue record is the Medical Faculty. Caveat: the CAIMU cover is a wide 1920x400 page-header crop - correct institution and clearly signed, but it cannot be cropped much further. No uploads, no database writes, no scripts run.",
+  "entries": [
+    {
+      "universitySlug": "altamimi-international-university",
+      "universityName": "Altamimi International University",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Two live domains claim this institution - altamimiinternationaluniversity.com (used by the July 2026 pass for the logo) and altamimiuniversity.com (found this pass via search, title 'Altamimi International University', campus given as 230 Chuy Avenue, Bishkek). Both were fetched with curl and their full image inventories examined; altamimiuniversity.com was additionally enumerated via /wp-json/wp/v2/media (100 items, 28 of them >=700px and landscape). Neither domain publishes a verifiable photograph of its own building. altamimiinternationaluniversity.com carries only the crest, a business-card graphic and two Elementor stock photos ('a-group-of-young-multi-ethnic-group-of-student-in-university-smiling...jpg', 'laughing-graduated-multiethnic-students-with-diplomas...jpg'). altamimiuniversity.com's library is dominated by files whose names prove third-party origin - download-1..download-9.jpeg/.png, Snapinsta.app_<instagram-id>_1080.jpg (Instagram scrapes), Drupal-Web_LWB_0974.jpg and RG16MicroBioLab0319-960px.jpg (both generic US-university web assets) - so nothing on that domain can be attributed to Altamimi's own campus even though it is self-hosted. Searched in English and Russian; no Wikipedia article and no Commons category or file exists under this name. Held rather than risk publishing another institution's building."
+    },
+    {
+      "universitySlug": "asian-medical-institute",
+      "universityName": "Asian Medical Institute (S. Tentishev Memorial), Kant",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://asmi.edu.kg/wp-content/uploads/slider2/Asianmedicalinstitute7-scaled.jpeg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph served from the institute's own domain asmi.edu.kg (homepage slider library /wp-content/uploads/slider2/, surfaced via the site's own /wp-json/wp/v2/media index). Aerial exterior of the main academic building; the roof fascia is legibly signed in three languages - 'TENTISHEV SATKYNBAI MEMORIAL ASIAN MEDICAL INSTITUTE', 'Азиатский медицинский институт имени Тентишева Сатыбалдыбая' and the Kyrgyz form - with the institute crest and the Kyrgyz flag on the roof, so the subject is self-identifying. DJI FC300X drone EXIF, original capture; 2560x1518 px landscape; verified HTTP 200 image/jpeg, 648,865 bytes. Downloaded and visually inspected before acceptance.",
+        "proposedPublicId": "asian-medical-institute-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "avicenna-international-medical-university",
+      "universityName": "Avicenna International Medical University",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "The domain the previous pass could not find was located this session: avicenna.edu.kg (Russian-language institutional site, custom 'avicenna' WordPress theme, Ministry of Education seal, Shabdan-Baatyr street 74, Bishkek). Its media library was enumerated (/wp-json/wp/v2/media, 100 items) and all 26 large landscape assets were downloaded and inspected on contact sheets, as were the two CSS background images (photo-conf.jpg, photo-hall-new.jpg) and the homepage hero. Result: no exterior of the building exists anywhere on the site, and the domain is demonstrably not a reliable provenance - its 1420x947 homepage hero 2026/07/123.jpg is a stock photograph of students at a Vietnamese secondary school (Vietnamese uniforms and signage), which means 'published on avicenna.edu.kg' cannot be treated as evidence that a photo depicts Avicenna's own facility. The only candidates were unsigned interiors (a conference room and a lobby, both 1280x720) with no identifying marks, and people/event photography. The second domain that search returns, aimu.edu.kg, was rejected as a source because its homepage slider republishes other institutions' photography (file 7-Bukhara-State-Medical-Institute.webp sits alongside 'Avicenna-International-Medical-University-1.webp' and a copy of avicenna.edu.kg's photo-hall-new.jpg). No Commons file or category exists. Held."
+    },
+    {
+      "universitySlug": "bishkek-international-medical-institute",
+      "universityName": "Bishkek International Medical Institute (BIMI)",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "BIMI's official domain has gone offline since the July 2026 pass. bimi.edu.kg, www.bimi.edu.kg, http://bimi.edu.kg and https://bimi.edu.kg/en all return HTTP 403 serving a hosting-provider page titled 'Account disabled by server administrator' (3,850 bytes), so neither the previously sourced cover (bimi.edu.kg/images/og-image.jpg, which already 404'd at upload time) nor any new asset can be retrieved. The alternate domain bimi.org.kg surfaced by search does not resolve at all (curl exit 6, no DNS). The remaining search result, bimiuni.com, also failed to connect and in any case presents as an admissions-marketing site rather than the institute's own presence, so it was not pursued. Searched in English and Russian; no Wikipedia article, no Commons category and no Commons file under 'Bishkek International Medical Institute' or its Russian form. Held until BIMI's own hosting is restored."
+    },
+    {
+      "universitySlug": "central-asian-international-medical-university",
+      "universityName": "Central Asian International Medical University (CAIMU)",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://caimu.edu.kg/wp-content/uploads/2024/05/breadcumb-bg.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph served from the university's own current domain caimu.edu.kg (used site-wide as the page-header background; the domain caimu.org.kg recorded in the previous pass is dead, caimu.edu.kg is the live official site - og:site_name 'Central Asian International Medical University', address 174 Lenin Street, Jalal-Abad). Street-level exterior of the main entrance; the facade banner and the gate sign both read 'CENTRAL ASIAN INTERNATIONAL MEDICAL UNIVERSITY' in Kyrgyz, English and Russian, so the subject is self-identifying. 1920x400 px landscape (a wide header crop - suitable as a cover band but with little room for further cropping); verified HTTP 200 image/jpeg, 443,020 bytes. Chosen after downloading and inspecting 48 of the 127 landscape items in the site's /wp-json media library, which are otherwise entirely cultural-event and lecture photography with no building shot.",
+        "proposedPublicId": "central-asian-international-medical-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "eurasian-international-university",
+      "universityName": "Eurasian International University Faculty of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Identity resolved this pass (the previous pass held it as unresolvable): the Bishkek institution is Евразийский Международный Университет / Eurasian International University, reachable at eiu.edu.kg, which serves its content and assets from emu.edu.kg (Isakeev street, Bishkek; the medical faculty page exists at /en/the-medical-faculty). Both domains were fetched and every image reference extracted. The homepage carries only 140x98 and 380x226 news thumbnails - there is no hero or gallery image at usable size anywhere on it. The About-University page's larger images are all referenced from a third hostname, eimu.edu.kg, which does not resolve; refetching those same paths from emu.edu.kg succeeded, and all seven were downloaded and inspected: six are accreditation-body logos (ECFMG, Australian Medical Council, KIMEE, Danish Patient Safety Authority, IFMSA, Medical Council of Canada) and the seventh is a 750x225 name banner whose only photographic element is a domed neoclassical building unrelated to the Bishkek campus. No campus photograph at any size. No Commons category or file, and the English Wikipedia article carries no free image. Held."
+    },
+    {
+      "universitySlug": "international-european-university",
+      "universityName": "International European University Faculty of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "A genuine official domain was found this pass, resolving the previous pass's blocker: ieu.edu.kg / www.ieu.edu.kg (title 'IEU – International European University', WordPress, with the medical and dentistry programme pages and the WDOMS/ECFMG/FAIMER/NMC accreditation set). Its media library was enumerated (/wp-json/wp/v2/media, 100 items) and the homepage image references extracted. The site contains no photograph of its own building: apart from accreditation logos and 40-47px icons, the only substantial image is 2024/02/Main-Banner-Campus-Lif3e.png (1920x1080), which was downloaded and inspected and is a generic commercial stock photograph of students around anatomical models in a white studio-lit lab, with nothing identifying it as IEU; the two other >=800px items in the library are 'computersecurity09.jpg' and an opaque-named file, neither institutional. The domains ieukyrgyzstan.in and ieukz.com remain agent/marketing sites and were not used, consistent with the earlier pass. No Wikipedia article, no Commons file or category. Held."
+    },
+    {
+      "universitySlug": "international-higher-school-of-medicine",
+      "universityName": "International Higher School of Medicine (IHSM)",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/International_higher_school_of_medicine_central_campus.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author ArgenBekbolotov, own work, file 'International higher school of medicine central campus.jpg' (description 'central campus', taken 2023-06-29) in Category:Universities and colleges in Bishkek and Category:Medical higher education institutions in Kyrgyzstan. Depicts the IHSM central campus: elevated frontal view of the long five-storey academic block with the forecourt monument, the Tien Shan range behind, and the facade legend readable at full resolution as 'INTERNATIONAL SCHOOL OF ME[DICINE]'. Attribution to IHSM rather than to the separate ISM-under-IUK record is corroborated three ways: the Commons file title, the fact that the English Wikipedia article 'International Higher School of Medicine' uses this exact file as its lead image, and IHSM's own site ism.edu.kg carrying the page title 'International Higher School of Medicine (IHSM)' - i.e. IHSM is the institution that trades under the 'International School of Medicine' name and the ISM domain. 5472x3648 px landscape; verified HTTP 200 image/jpeg, 2,489,650 bytes (downloaded in full, inspected, and the signage crop enlarged to confirm). An alternative Commons file exists (File:IHSM Central Campus.jpg, CC BY-SA 4.0, author Hismiuk, 3088x1360) if a wider, lower-resolution crop is preferred.",
+        "proposedPublicId": "international-higher-school-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "international-medical-institute",
+      "universityName": "International Medical Institute, International University of Science & Business",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Still no reachable official domain. Search (English and Russian) identifies IMI as the medical college of the International University of Science and Business (IUBS / Международный университет науки и бизнеса) and gives its site as munib.org; that domain resolves but serves an unrelated Arabic-language site (page title 'منيب'), so it is not IUBS's presence. No .kg domain for IUBS or IMI could be found or probed successfully. The wixsite page flagged in the previous pass remains the only self-identifying 'International Medical Institute' web presence and is not a credible official domain. Everything else that search returns for 'IMI Kyrgyzstan' is Indian education-agent content, which under this batch's sourcing rule is a hold, not a source. No Wikipedia article and no Commons file or category. The prior pass's data-issue flag also still stands: this record sits inside a cluster of near-identically named Bishkek institutions (IMU/imu.edu.kg, IHSM/ism.edu.kg, ISM/ism.iuk.kg, BIMI) and needs an identity decision before any media is attached. Held; no media sourced."
+    },
+    {
+      "universitySlug": "international-school-of-medicine",
+      "universityName": "International School of Medicine",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "Held deliberately to avoid a misattribution this pass came close to making. ism.iuk.kg still 403s and has no Wayback snapshot; the parent domain iuk.kg is reachable and was fully examined (homepage image set plus og:image inventory), but it hosts only the ISM logo, campus wordmark graphics, and generic imagery - its two largest photographs are DSC02157.png (1200x800) and vypusk.jpg (1200x800), the latter a widely circulated stock graduation photograph (mortarboards thrown against a white building) that is not IUK-specific, and neither is attributable to an ISM building. Critically, the one high-quality campus exterior available on Commons - File:International higher school of medicine central campus.jpg, whose facade reads 'INTERNATIONAL SCHOOL OF MEDICINE' - belongs to the International Higher School of Medicine (ism.edu.kg), not to this ISM-under-IUK record: the Commons title names IHSM and the English Wikipedia IHSM article uses it as its lead image. Attaching it here would put the wrong institution's building on this page, which is exactly the failure mode this country's sourcing caution warns about. No Commons file or category exists for ISM under IUK. Held pending a human identity decision on whether this record and international-higher-school-of-medicine are genuinely distinct."
+    },
+    {
+      "universitySlug": "international-university-science-medicine",
+      "universityName": "International University of Science and Medicine (IUSM)",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "The institution was confirmed to exist this pass (previous passes could not locate it at all): International University of Science and Medicine, founded 2020, Gorky Street 1A/7, Bishkek, official domain iusmbishkek.edu.kg. However that domain is offline - https://iusmbishkek.edu.kg/ returns HTTP 403 with the hosting-provider page 'Account disabled by server administrator' (the same dead-hosting response as bimi.edu.kg), so no og:image, hero, gallery or media-library asset can be retrieved from it. The remaining sources that carry IUSM imagery are Facebook, YouTube and third-party medical-school directories, none of which is the institution's own domain and none of which carries a free licence. Searched in English and Russian; no Wikipedia article, no Commons category or file. Held until iusmbishkek.edu.kg is restored."
+    },
+    {
+      "universitySlug": "jalal-abad-peoples-friendship-university",
+      "universityName": "Jalal-Abad People's Friendship University A. Batirov Medical Faculty",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No official domain exists that could be found or probed. Repeated the previous pass's short-form domain probing (jafu.kg, jipfu.kg, japfu.kg all fail to connect) and added pfu.kg this pass, which also fails to connect (curl exit 6, no DNS). Searched in English and Russian ('Жалал-Абадский университет дружбы народов', 'Peoples Friendship University Batirov'); the only institutional sites that surface for Jalal-Abad are different institutions - jasu.kg (Jalal-Abad State University named after B. Osmonov) and jiu.edu.kg (Jalal-Abad International University) - and using either would attach another university's building to this record. The remaining hits are 4icu/medicaleducator directory entries and agent pages, which are not acceptable sources here. No Wikipedia article, and the only Commons hit under a related name (File:Xalqlar Do'tligi Univesiteti.jpg) is an Uzbek institution, not this one. Held."
+    },
+    {
+      "universitySlug": "kyrgyz-medical-dental-institute",
+      "universityName": "Kyrgyz Medical and Dental Institute",
+      "missing": ["cover"],
+      "status": "hold",
+      "reason": "No institution trading under this exact name could be located, in English or Russian ('Кыргызский медико-стоматологический институт', 'Kyrgyz Medical and Dental Institute', 'KMDI Bishkek'). Every search route converges instead on the Kyrgyz State Medical Academy named after I.K. Akhunbaev, which is a separate catalogue-scale institution, so nothing from it may be attached here. No candidate .kg domain was returned by search, and with no domain there is nothing to fetch and grep. No Wikidata item, no Wikipedia article, and Commons has no file or category under this name or any plausible variant (Category:Medical higher education institutions in Kyrgyzstan contains only IHSM photographs and the KGMA logo). Consistent with the previous pass. Held; the record may need an identity/name review before any media pass can succeed."
+    },
+    {
+      "universitySlug": "kyrgyz-russian-slavic-university",
+      "universityName": "Kyrgyz-Russian Slavic University (KRSU) Medical Faculty",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kyrgyz-Russian_Slavic_University.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC0 1.0 public-domain dedication (no attribution legally required; author Arthur Dolchenko, own work, 2024-03-30), file 'Kyrgyz-Russian Slavic University.jpg', description 'Главный корпус Кыргызского-Российского Славянского Университета в 2024 году' (main building of KRSU in 2024), in Category:Universities and colleges in Bishkek and Category:Kiev Street, Bishkek. Depicts the KRSU main building on Kiev Street: the colonnaded facade and arched brick entrance, with the Pushkin statue in the forecourt, the Kyrgyz and Russian flags, the trilingual entrance inscription naming the Kyrgyz-Russian Slavic University, and a 'Я ♥ КРСУ' sculpture - self-identifying. 12000x9000 px (note: 21,947,042 bytes, so the integrator should downscale before upload); verified HTTP 200 image/jpeg. Downloaded at 1280px and visually inspected. This resolves the previous pass's hold, which had only checked krsu.edu.kg's Nuxt boilerplate and reported no Commons category - the file is categorised by street and city rather than under a university category, which is why category-name searching missed it.",
+        "proposedPublicId": "kyrgyz-russian-slavic-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kyrgyz-state-university-arabaev",
+      "universityName": "Kyrgyz State University named after I. Arabaev",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Kyrgyz_State_University_of_Arabaev.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Ekrem Canli, own work, file 'Kyrgyz State University of Arabaev.jpg', description 'Kyrgyz State University of Arabaev in Bishkek/Kyrgyzstan' (taken 2012-06-23, Canon EOS 1000D), in Category:Universities and colleges in Bishkek. Depicts the university's campus gateway: the portal carries the full name in Kyrgyz and English - 'ИШЕНАЛЫ АРАБАЕВ АТЫНДАГЫ КЫРГЫЗ МАМЛЕКЕТТИК УНИВЕРСИТЕТИ' / 'ISHENALY ARABAEV KYRGYZ STATE UNIVERSITY' - together with the university crest, so the subject is self-identifying. 3888x2592 px landscape; verified HTTP 200 image/jpeg, 7,370,465 bytes. Downloaded at 1280px and visually inspected. This resolves the July 2026 hold, which had checked only arabaevksu.edu.kg (whose photography is small news thumbnails and captioned press graphics - all candidates there were re-downloaded and inspected again this pass and confirmed unusable).",
+        "proposedPublicId": "kyrgyz-state-university-arabaev-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "kyrgyz-uzbek-university",
+      "universityName": "Kyrgyz-Uzbek International University named after B. Sydykov, Medical Faculty",
+      "missing": ["cover"],
+      "cover": {
+        "sourceUrl": "https://kumu.kg/wp-content/uploads/2026/06/714759762_2160547271402769_9065602383921088360_n.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph served from the university's own domain kumu.kg (uploaded to its own WordPress media library and surfaced via /wp-json/wp/v2/media). Street-level exterior of the university's medical building in Osh: the roof banner reads 'КЫРГЫЗ-ӨЗБЕК ЭЛ АРАЛЫК УНИВЕРСИТЕТИ' (Kyrgyz-Uzbek International University), the glazed atrium is signed 'МЕДИЦИНАЛЫК КЛИНИКА / MEDICAL CLINIC' with the Rod-of-Asclepius emblem, and the flanking wings are signed 'ЭЛ АРАЛЫК МЕД[ИЦИНАЛЫК КОЛЛЕДЖ] / INTERNATIONAL...' - so the subject is self-identifying and is specifically the medical estate, matching this record's Medical Faculty scope rather than the central rectorate. 2048x1536 px landscape; verified HTTP 200 image/jpeg, 848,427 bytes. Chosen after downloading and inspecting 72 of the 83 landscape items in the site's media library, which are otherwise almost entirely meeting, ceremony and delegation photography. Deliberately NOT used: Commons File:Kyrgyz-Uzbek state universty.jpg, which despite a CC BY-SA 4.0 tag credits a news site (novayaepoxa.com) rather than a self-published author and is filed under Category:Osh State University - a different institution - i.e. exactly the misattribution risk this batch warns about.",
+        "proposedPublicId": "kyrgyz-uzbek-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "batchId": "cover-pass-05-row-a",
+  "notes": "Cover-only research pass, 2026-09-16, for 31 published universities across Albania, Australia, Bosnia and Herzegovina, British Virgin Islands, Canada, Czechia, Fiji, France, Germany, Hungary, Ireland, Italy, Kazakhstan, Latvia, Lithuania, Macau, Malta and the Netherlands whose cover_image_url is empty. Method: (1) Wikimedia Commons via the MediaWiki API (category enumeration with imageinfo/extmetadata, plus full-text file search in English and in the local language - Universiteit Utrecht, Ostravska univerzita, Latvijas Universitate, Utenos kolegija, Sveuciliste u Mostaru, Univerzitet u Sarajevu, Universiteti Epoka etc.) and en/sq.wikipedia pageimages for lead-image identification; (2) where Commons had nothing, the institution's own domain (og:image, hero and campus-page imagery fetched with curl). Every nominated URL was checked with curl -sIL and returned HTTP 200 with an image/* content-type, and every nominated image was additionally opened and inspected visually before acceptance, which is how several plausible-looking candidates (SMK's branded social card, Mediterranean University of Albania's graduation and inauguration photos, UET's ceremony photo, the Rome Business School Commons file that is actually a logo, Ponce/PHSU's 325px BVI thumbnail, University of Fiji's blank texture image) were rejected. SYSTEMIC FINDING: the July 2026 alphabetical pass appears to have researched almost exclusively on institutional websites and barely used Wikimedia Commons; as a result it held large, extremely well-covered public universities (ANU, UNSW, Utrecht, Galway, Debrecen, Latvia, Ostrava, EDHEC, Al-Farabi, MacEwan, Mount Royal, Douglas, Utena) that each have dedicated, richly populated Commons categories. Those are the bulk of this batch's wins. Caveats flagged per entry: two ready entries (Epoka 832px, University of Mostar Faculty of Medicine 800px) fall below the 1000px-wide preference; one (St. Lawrence College) is portrait rather than landscape; one (Georgian College) depicts the Owen Sound campus rather than the Barrie main campus; two (Macau UST, and by extension its Faculty of Medicine record) use parent-university campus imagery, stated explicitly. Commons entries are freely licensed but nearly all require attribution and share-alike - the author and licence string in each rightsBasis must be carried through to the public credit line.",
+  "entries": [
+    {
+      "universitySlug": "catholic-university-our-lady-of-good-counsel-unizkm",
+      "universityName": "Catholic University \"Our Lady of Good Counsel\" (UNIZKM)",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No verifiable image found. Wikimedia Commons: searched (namespaces 6 and 14) for 'Universiteti Katolik Zoja e Keshillit te Mire', 'Catholic University Our Lady of Good Counsel', 'Zoja e Keshillit te Mire Tirana' - zero file and zero category hits. Wikipedia: en.wikipedia 'Catholic University Our Lady of Good Counsel' has no lead image (pageimages returned null); sq.wikipedia 'Universiteti Katolik Zoja e Keshillit te Mire' likewise returned no page image. Official domain: https://www.unizkm.al/ and http://unizkm.al/ both return HTTP 403 to curl (bot-blocked, a 5.6 KB challenge page) with browser User-Agent, Accept, Accept-Language and Referer headers set, so no og:image or campus-page hero could be read. Nothing nominated rather than guess a URL on a domain that will not serve one."
+    },
+    {
+      "universitySlug": "epoka-university",
+      "universityName": "Epoka University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://www.epoka.edu.al/assets/images/footer.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph published on the university's own domain (epoka.edu.al, referenced from the homepage template as assets/images/footer.webp); depicts the Epoka University campus in Tirana - the glazed main academic building on the left, a second faculty block on the right, students on the paved central walkway, Albanian hills behind; 832x555 px, landscape; verified HTTP 200 image/webp. CAVEAT: 832 px wide, below the 1000 px preference - the homepage exposes no larger variant in static HTML and the earlier pass correctly found that the site's og:image is only a logo SVG. Usable for a cover at modest display sizes; flag if the integrator needs >=1000 px.",
+        "proposedPublicId": "epoka-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "european-university-of-tirana-bscn",
+      "universityName": "European University of Tirana (UET)",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No acceptable image found. Wikimedia Commons: searched 'Universiteti Europian i Tiranes', 'European University of Tirana', 'Tirana university building' (ns 6 and 14) - no file or category for this institution. Wikipedia: en and sq articles return no page image. Official domain uet.edu.al: the homepage og:image (wp-content/uploads/2023/02/master.jpg) downloads as a 61x62 px icon, not a campus photo; the site-wide og:image on interior pages is wp-content/uploads/2022/12/Logo-pa-adrese.png, a logo. Fetched the physical-infrastructure page (uet.edu.al/infrastruktura-fizike/) and enumerated its media: the featured image AAA_1531-scaled.jpg (2560x1707) was downloaded and inspected and is a night graduation-ceremony photo of students throwing caps amid sparklers - an event photo, not a building; the 2025/03 gallery images are activity photos (inspected 0c08a028-...-scaled.jpeg, 2560x1441: a close-up of measuring instruments in a case on a table). No building or campus photograph could be verified on the domain this pass."
+    },
+    {
+      "universitySlug": "mediterranean-university-of-albania",
+      "universityName": "Mediterranean University of Albania (MUA)",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No acceptable image found. Wikimedia Commons: searched 'Universiteti Mesdhetar i Shqiperise', 'Mediterranean University of Albania', 'Universiteti Mesdhetar' - no files, no category. Wikipedia: no lead image on en or sq. Official domain umsh.edu.al: the site has no og:image tag; enumerated every image in the homepage HTML. The four 1920x700 slider/cover assets under /imazhe/cover/ were downloaded and inspected - 6908bab2589c9.jpg is a podium portrait of a man speaking at a graduation ceremony (rejected: portrait/event); the others in that slot are of the same ceremony series. Also followed the site's own news item announcing the inauguration of the new Faculty of Medical Sciences campus and inspected its 880 px photographs (e.g. /imazhe/2025/11/14/1994-880-0-69171abb9e8b6.jpg, 880x587): a group photo of attendees with balloons and an EU flag inside a room - a news/event photo of people, not a building exterior. The remaining site images are 500x500 and 273x182 thumbnails. No identifiable campus-building photograph available."
+    },
+    {
+      "universitySlug": "australian-national-university",
+      "universityName": "Australian National University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/University_Avenue_walkway_in_the_ANU_on_a_foggy_morning_July_2025.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:Nick-D, File:University Avenue walkway in the ANU on a foggy morning July 2025.jpg, from Category:Australian National University (115 files); depicts the University Avenue walkway through the ANU Acton campus, Canberra, on a foggy morning; 6000x4000 px landscape; verified HTTP 200 image/jpeg (11.0 MB). Contrary to the July 2026 hold, ANU is very well covered on Commons - the category also holds Bruce Hall, Linnaeus Way, Sullivans Creek and multiple University Avenue entrance shots at 4000-4608 px if a different framing is preferred.",
+        "proposedPublicId": "australian-national-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-new-south-wales",
+      "universityName": "University of New South Wales",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/UNSW_Anzac_Parade_entrance_001.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:Sardaka, File:UNSW Anzac Parade entrance 001.jpg, from Category:University of New South Wales (102 files); description 'UNSW seen at dusk from entrance on Anzac Parade, Kensington, Sydney'; 7502x4507 px landscape; verified HTTP 200 image/jpeg (21.1 MB). Contrary to the July 2026 hold, UNSW has a large Commons category (UNSW Gate 13, Dusk UNSW, UNSW at dusk 002, Fig Tree High Street, several 'University of New South Wales 0xx' series, all 6000-8256 px) - this is the most recognisable main-entrance framing.",
+        "proposedPublicId": "university-of-new-south-wales-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-mostar-faculty-of-medicine",
+      "universityName": "University of Mostar Faculty of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://mef.sum.ba/wp-content/uploads/2021/11/mef11-800.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph published on the faculty's OWN domain (mef.sum.ba, the Medicinski fakultet Sveucilista u Mostaru site), used in the homepage feature grid; downloaded and visually inspected: an evening exterior of the faculty/clinical-hospital complex in Mostar - dark-clad tower block behind, yellow and orange lower teaching wings with a lit canopied entrance in front. This is the faculty's own building, not the parent university's rectorate; 800x534 px landscape; verified HTTP 200 image/jpeg. CAVEAT: 800 px wide, below the 1000 px preference - this is nonetheless a large improvement on the first pass's finding (a 327 px rectorate thumbnail on sum.ba) and is the largest identifiable building photograph the faculty publishes; mef.sum.ba serves a -1000x668 derivative of the same frame but no original larger than 800 px was found. Note also that the parent-site og:image (sum.ba/logo.png) and the faculty og:image (mef_sum_logo1.png) are both logos.",
+        "proposedPublicId": "university-of-mostar-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-sarajevo-faculty-of-medicine",
+      "universityName": "University of Sarajevo Faculty of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No image that identifies either the Faculty of Medicine or the parent university's own building could be verified. Wikimedia Commons: Category:University of Sarajevo contains only 4 files (a 1987 street photo, a 640x480 law-school snapshot and two institute logos) - none usable; searched in Bosnian and English for 'Medicinski fakultet Sarajevo', 'Medical Faculty Sarajevo building', 'Rektorat Univerziteta u Sarajevu', 'Univerzitet u Sarajevu zgrada'. The only large hit, File:Univerzitet u Sarajevu, BH Posta, 2023.01.29.jpg (4032x3024, CC BY-SA 4.0), is categorised under Central Post Office in Sarajevo and Judicial Palace (Sarajevo) and its description is 'Zgrada glavne poste u Sarajevu' - the main post office building, so it does not reliably identify a university building and was rejected. The sibling categories on Commons cover the Sarajevo faculties of Architecture, Philosophy, Mechanical Engineering, Veterinary Medicine, Fine Arts and Economics, but there is no Medicine category. Official domains: mf.unsa.ba serves a theme-stock slider graphic plus wp-content/uploads/2025/02/template.jpg, which was downloaded and inspected and is the faculty's green crest logo on grey, not a photo; unsa.ba's og:image and twitter:image both resolve to themes/unsa/images/logo.jpg, a logo. This confirms the earlier hold; it is a genuine sourcing gap."
+    },
+    {
+      "universitySlug": "ponce-health-sciences-university-british-virgin-islands-school-of-medicine",
+      "universityName": "Ponce Health Sciences University BVI School of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No verifiable image of the Tortola site. Wikimedia Commons: searched 'Ponce Health Sciences University', 'Ponce Health Sciences University Tortola', 'Ponce School of Medicine' - the only hits are unrelated Judgefloro photo-set categories; no file depicting any PHSU campus, and nothing for the BVI branch. Wikipedia: en.wikipedia 'Ponce Health Sciences University' returns no page image. Official domain: psm.edu redirects to phsu.edu; fetched the BVI location page and enumerated its assets - the only BVI-specific image is https://phsu.edu/_resources/images/locations/bvi.png, downloaded and measured at 325x228 px, a location-card thumbnail far below any usable cover size; the remaining assets are branding PNGs, a decorative bubble graphic and the generic 'PHSU Web Homepage' hero. Applying Ponce (Puerto Rico) campus imagery to the BVI record would misrepresent the site, so nothing is nominated."
+    },
+    {
+      "universitySlug": "douglas-college-nursing",
+      "universityName": "Douglas College",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Enter_Square_of_Douglas_Colledge_-_panoramio.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author Weixi Zeng (via Panoramio, reviewed by trusted users), File:Enter Square of Douglas Colledge - panoramio.jpg, from Category:Douglas College; downloaded and visually inspected: the Douglas College New Westminster campus courtyard - brick and glass academic blocks around a water feature with fountain and planters, students walking; 4320x3240 px landscape; verified HTTP 200 image/jpeg (5.7 MB). Subject is the college campus itself, per the brief for the '-nursing' records. Two sibling files in the same category were inspected and rejected as weaker: 'Main hall of Douglas Colledge' (interior atrium with construction hoarding) and 'Entrance of Douglas Colledge' (a tight crop of the wordmark on a canopy).",
+        "proposedPublicId": "douglas-college-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "georgian-college-nursing",
+      "universityName": "Georgian College",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Georgian_College_in_Owen_Sound.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, author User:Tabercil, File:Georgian College in Owen Sound.jpg, from Category:Georgian College; description 'Photo of the main building for Georgian College as seen from 8th St. E.'; 2560x1920 px landscape; verified HTTP 200 image/jpeg. CAVEAT ON IDENTITY: this is Georgian College's Owen Sound campus building, not the Barrie main campus that the catalogue record names as its city. It is unambiguously a Georgian College building (the college operates seven Ontario campuses) and is the only college-building photograph on Commons - Category:Georgian College holds just three files, the other two being the college logo SVG and an unrelated portrait. Alternative checked and rejected: georgiancollege.ca publishes no og:image and its homepage media are all 720x408 marketing web tiles (summer campaign, viewbook, continuing-education promos). Flag the campus discrepancy to the integrator; hold instead if the record must show Barrie.",
+        "proposedPublicId": "georgian-college-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "macewan-university-nursing",
+      "universityName": "MacEwan University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/MacEwan_University_%2841937862632%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author Mack Male from Edmonton, AB, Canada (Flickr, reviewed by FlickreviewR 2), File:MacEwan University (41937862632).jpg, from Category:MacEwan University; description 'MacEwan University'; depicts the MacEwan University city centre campus, Edmonton; 5472x3648 px landscape; verified HTTP 200 image/jpeg (16.0 MB). Subject is the university campus itself, per the brief for the '-nursing' records. Commons also carries Category:Buildings at MacEwan University and Category:Allard Hall (Building 11, MacEwan University) if a specific building is later preferred.",
+        "proposedPublicId": "macewan-university-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "mount-royal-university-nursing",
+      "universityName": "Mount Royal University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bella_Concert_Hall_entrance%2C_Mount_Royal_University%2C_Calgary%2C_Alberta%2C_2025-07-11.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Chris Woodrich (User:Crisco 1492), File:Bella Concert Hall entrance, Mount Royal University, Calgary, Alberta, 2025-07-11.jpg, from Category:Mount Royal University; depicts the Bella Concert Hall entrance on the Mount Royal University campus, Calgary; 5620x3747 px landscape; verified HTTP 200 image/jpeg (9.3 MB). Subject is the university campus itself, per the brief for the '-nursing' records. The same 2025 photo set on Commons also offers the campus amphitheatre, Wyckham House, the fountain and the West Student Residences at 5600-6000 px if a different framing is preferred.",
+        "proposedPublicId": "mount-royal-university-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "st-lawrence-college-nursing",
+      "universityName": "St. Lawrence College",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/SLCKingston.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 3.0, author User:Gordonrox24, File:SLCKingston.JPG, from Category:St. Lawrence College, Ontario; description 'A photo of the St Lawrence College Kingston campus from Portsmouth avenue' - this resolves the first pass's disambiguation worry: it is explicitly the Kingston, Ontario campus of St. Lawrence College, matching the record's city; 1936x2592 px; verified HTTP 200 image/jpeg. CAVEATS: PORTRAIT orientation, not landscape, so it will need a centre crop for a wide cover slot; it is the only file in the Commons category; taken on an iPhone 4 in 2012, so fine detail is limited. Accept or hold on the orientation constraint at the integrator's discretion.",
+        "proposedPublicId": "st-lawrence-college-nursing-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-ostrava",
+      "universityName": "University of Ostrava",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/OSU_ostrava.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, Public domain (PD Czech official, credited to MMO - the City of Ostrava), File:OSU ostrava.jpg, from Category:University of Ostrava; description 'Ostrava OSU, Prirodovedecka fakulta, Chittussiho 983/10, 710 00 Ostrava' - the Faculty of Science building of Ostravska univerzita; downloaded and visually inspected: a clean sunlit exterior of the modern white four-storey faculty building with its terraced forecourt; 3264x2045 px landscape; verified HTTP 200 image/jpeg. Identity check: deliberately NOT one of the many VSB - Technicka univerzita Ostrava files that dominate a naive 'Ostrava university' search - VSB-TUO is a different institution. Alternatives in the same category if preferred: File:Vstup do budovy Pedagogicke fakulty Ostravske univerzity na ulici Frani Sramka.jpg (6180x4076, CC BY-SA 4.0) and File:Klastr sportu a zdravi, Ostravska univerzita.jpg (4000x3000, CC BY-SA 4.0).",
+        "proposedPublicId": "university-of-ostrava-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-fiji-school-of-medicine-and-health-sciences",
+      "universityName": "University of Fiji, Umanand Prasad School of Medicine and Health Sciences",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No verifiable image. Wikimedia Commons: searched 'University of Fiji', 'Umanand Prasad School of Medicine', 'University of Fiji Lautoka' (ns 6 and 14). There is no Category:University of Fiji - the nearest categories are Fiji National University and University of the South Pacific, both different institutions, and the Lautoka file search returns only unrelated town photography (sugar mill, Methodist church, market, vicarage). Wikipedia: en.wikipedia 'University of Fiji' returns no page image. Official domain unifiji.ac.fj: the homepage has no og:image; its only large media are a 300x225 Levuka campus thumbnail and news-story thumbnails of the Vice-Chancellor with Drua players. Fetched the site's own /campuses/ page: the only non-logo asset is wp-content/uploads/2026/09/1.jpg, which was downloaded (1680x944) and inspected and is a blank white cloth/texture placeholder, not a photograph of anything; /about-us/ returns HTTP 404. The school page itself still has no featured image, as the first pass found."
+    },
+    {
+      "universitySlug": "edhec-business-school",
+      "universityName": "EDHEC Business School",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Croix_edhec_facade.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:Velvet, File:Croix edhec facade.jpg, from Category:EDHEC Business School (also a Commons Quality Image); description 'Street facade of the Edhec Business School, in Croix' - Croix is in the Lille metropolitan area and is EDHEC's principal Lille-campus site, matching the record's city; 4295x2876 px landscape; verified HTTP 200 image/jpeg (17.6 MB). The category also holds File:Edhec Business School Lille campus.jpg (3264x1836) and File:Edhec Business School panorama.jpg (2560x688) under the same licence if a different framing or a letterbox crop is preferred; File:EDHEC, quartier Arenas.jpg was NOT chosen because it is the Nice campus. This supersedes the first pass's hold, which searched only edhec.edu (where the campuses page 404s).",
+        "proposedPublicId": "edhec-business-school-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "escp-business-school",
+      "universityName": "ESCP Business School",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No acceptable Paris-campus image at usable resolution. Wikimedia Commons: enumerated Category:Ecole superieure de commerce de Paris - Europe in full and ran file searches for 'ESCP', 'ESCP Europe Paris campus'. Candidates and why each was rejected: File:Escp-Paris.jpg (the en.wikipedia lead image) is only 517x390 px, far below the bar; File:ESCP Business School Madrid campus.jpg (4032x3024) is the MADRID campus, not Paris, and would misrepresent a record whose city is Paris; File:Escp-Berlin.jpg (1299x617) and File:Escp-Torino.jpg are likewise other campuses; File:ESCPinterieur.jpg is 998x653 and an interior; File:Skulptur Heubnerweg 8 (Charl) ESCP Baer.jpg is a Berlin sculpture; the remaining large files are logos (ESCP LOGO CMJN.png, Logo ESCP-EAP.jpg, Press Photo New ESCP Logo.jpg), event photos (Grand Prix ESCP de la Publicite, WikiStage ESCP Europe, the Ca' Foscari partnership signing) or portraits. Official domain: re-checked escp.eu - as the first pass found, the press-room og:image (press-room-banner.jpg) shows branded microphones on a table, not a campus. No Paris building photo of adequate size is verifiably available; holding rather than substituting another city's campus."
+    },
+    {
+      "universitySlug": "european-university-cyprus-euc-school-of-medicine-frankfurt-branch",
+      "universityName": "European University Cyprus (EUC) School of Medicine - Frankfurt Branch",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "Only Nicosia imagery exists, which the brief explicitly rules out for this record. Official domain euc.ac.cy returns og:image https://euc.ac.cy/wp-content/uploads/2026/05/642x428-EUC_Drone_2025_002-copy-1-1024x682.jpg - a 2025 drone shot of the NICOSIA campus, i.e. the parent site in Cyprus, not the Frankfurt branch. Wikimedia Commons: searched 'European University Cyprus Frankfurt' and 'European University Cyprus' (ns 6 and 14) - no file depicting any Frankfurt EUC site. No separate Frankfurt-branch domain publishing a building photograph was identified. Per the brief, Nicosia imagery on a Frankfurt-branch record is a hold, not a substitution."
+    },
+    {
+      "universitySlug": "haw-hamburg-bscn",
+      "universityName": "Hamburg University of Applied Sciences (HAW Hamburg)",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/HAW-Berlinertor7-3.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Uwe Rohwedder (User:UweRohwedder), File:HAW-Berlinertor7-3.jpg, from Category:Hochschule fuer Angewandte Wissenschaften Hamburg; description 'Hochhaus Berliner Tor 7, Campus der HAW Hochschule fuer Angewandte Wissenschaften Hamburg' - the Berliner Tor high-rise, HAW Hamburg's principal campus building; 3103x2069 px landscape; verified HTTP 200 image/jpeg. Found only via the German-language Commons category name, which is why the first pass missed it. Same category alternative: File:HAW Hamburg, Haus H, Stiftstrasse 69, Aula von aussen.jpg (3936x2952, CC BY 4.0, author User:Minderbinder).",
+        "proposedPublicId": "haw-hamburg-bscn-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-debrecen",
+      "universityName": "University of Debrecen",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/DebrecenDSCN3583.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, Public domain (PD-self), author Yoav Dothan, File:DebrecenDSCN3583.JPG, description 'Debrecen / University of Debrecen', in Category:Kossuth Lajos Tudomanyegyetem (the university's historic name); this is the lead image of the en.wikipedia article 'University of Debrecen', which is a strong identity confirmation. Downloaded and visually inspected: the iconic neoclassical Main Building (Fokepulet) with its columned portico, arched windows and forecourt, students on the steps; 3648x2736 px landscape; verified HTTP 200 image/jpeg. Public domain, so no attribution obligation, though crediting Yoav Dothan is courteous. This replaces the first pass's finding that the homepage hero was a licensed Depositphotos stock file.",
+        "proposedPublicId": "university-of-debrecen-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-galway",
+      "universityName": "University of Galway",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/GALWAY_UNIVERSITY_CAMPUS.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 2.0, author William Murphy (Flickr, reviewed by FlickreviewR), File:GALWAY UNIVERSITY CAMPUS.jpg, from Category:National University of Ireland, Galway - the university's pre-2022 name, which is why a search on 'University of Galway' alone returns nothing and the first pass found no category; 5929x3997 px landscape; verified HTTP 200 image/jpeg (2.9 MB). Same category alternatives at high resolution: File:J.E. Cairnes School of Business & Economics.jpg (9310x2590, a natural letterbox crop), File:Arts-Science Building, National University of Ireland, Galway.jpg (4128x3096) and Category:National University of Ireland, Galway quadrangle for the landmark Quadrangle building.",
+        "proposedPublicId": "university-of-galway-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "rome-business-school",
+      "universityName": "Rome Business School",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://romebusinessschool.com/wp-content/uploads/2026/03/heaer-homepage-scaled.webp",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional photograph published on the school's own domain (romebusinessschool.com), declared as the homepage og:image; downloaded and visually inspected: the Rome Business School building in Rome photographed from the street - a restored period villa with the school's own 'ROME BUSINESS SCHOOL / By Planeta Formacion y Universidades' plaque on the boundary wall and four Rome Business School banners ('Better managers for a better world') flanking the entrance, so the institution is unambiguously identified in-frame; 1980x1018 px landscape; verified HTTP 200 image/webp. This is specifically NOT a generic Rome stock photo, which the brief warned against, and it supersedes the July 2026 hold: the site now resolves over HTTPS (the earlier SSL failure forced that pass onto the Wayback Machine) and the Commons file 'Rome Business School.webp' was checked and rejected because its description confirms it is the school LOGO, not a building.",
+        "proposedPublicId": "rome-business-school-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "al-farabi-kazakh-national-university",
+      "universityName": "Al-Farabi Kazakh National University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Al-Farabi_University_%28AP4P0172_1PS%29_%2829554231332%29.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 2.0, author Alexandru Panoiu from Bucharest, Romania (Flickr, reviewed by FlickreviewR), File:Al-Farabi University (AP4P0172 1PS) (29554231332).jpg, from Category:Al-Farabi Kazakh National University; description 'Al-Farabi University, Almaty, Kazakhstan'; 3600x2400 px landscape; verified HTTP 200 image/jpeg (3.5 MB). Chosen over File:Al-Farabi KazNU rektorat.jpg (the en.wikipedia lead image) because that file is only 1200x799 px and is credited simply to kaznu.kz; a second Panoiu frame, File:Al-Farabi University (AP4M2500 1PS) (29689474976).jpg (3586x2688, CC BY 2.0), is available as an alternative. This replaces the first pass's hold, which had found only a news photo of a state visit on the university's homepage.",
+        "proposedPublicId": "al-farabi-kazakh-national-university-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "university-of-latvia",
+      "universityName": "University of Latvia",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Latvijas_Universit%C4%81te_-_ogre11_-_Panoramio.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY 3.0, author ogre11 (via Panoramio, reviewed by the Panoramio Review Bot), File:Latvijas Universitate - ogre11 - Panoramio.jpg, in Category:University of Latvia main building; downloaded and visually inspected: a symmetrical frontal stitch of the University of Latvia main building on Raina bulvaris, Riga - the ornate 19th-century facade with its central tower, crest and entrance steps; 10240x4846 px, a natural 2.1:1 letterbox that suits a cover slot exactly; verified HTTP 200 image/jpeg (6.6 MB). Found via the Latvian-language search term, which the first pass did not try. Alternatives: File:Latvijas Universitates Akademiskais centrs.jpg (4800x3200, CC BY-SA 4.0, uploaded by the university itself) for the modern Academic Centre in Torņakalns, or File:University of Latvia.jpg (5184x3456, CC BY-SA 4.0).",
+        "proposedPublicId": "university-of-latvia-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "smk-college-applied-sciences-bscn",
+      "universityName": "SMK College of Applied Sciences",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No acceptable image found. Wikimedia Commons: searched 'SMK Vilnius', 'SMK University of Applied Social Sciences', 'SMK kolegija' (ns 6 and 14) - no category and no file for this institution; en.wikipedia 'SMK University of Applied Social Sciences' returns no page image. Official domain smk.lt: the site's only og:image is https://smk.lt/wp-content/uploads/2023/03/SMK.jpg, which was downloaded (1200x630) and visually inspected - it is a branded social-share card, not a campus photo: a cropped lifestyle photograph of six young people high-fiving on outdoor steps, laid on a white field beneath the SMK wordmark and three coloured brand tiles. Rejected on two counts (a photo of people, and a composite with baked-in logo). No building or campus photograph is exposed in the homepage HTML. Note this is a genuine sourcing gap rather than the first pass's stated reason (which deferred it as a parent-brand inheritance question)."
+    },
+    {
+      "universitySlug": "utena-university-of-applied-sciences",
+      "universityName": "Utena University of Applied Sciences",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Utenos_kolegija_2013.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, uploaded as own work by User:Utenos kolegija - i.e. released by the institution itself, File:Utenos kolegija 2013.jpg, from Category:Utena College; description 'Utenos kolegijos centrinis pastatas (Maironio g. 7)' - the college's central building at Maironio 7, Utena; 4368x2912 px landscape; verified HTTP 200 image/jpeg (5.2 MB). Found via the Lithuanian name 'Utenos kolegija', which the first pass did not try; this replaces its hold on a generic library stock photo from the homepage slider. Alternatives in the same category: File:Utena. Kolegija.JPG (5184x2920, CC BY-SA 3.0) and File:Koleg-23.jpg (3776x2313, CC BY-SA 4.0, also self-published by the college).",
+        "proposedPublicId": "utena-university-of-applied-sciences-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "macau-university-of-science-and-technology-faculty-of-medicine",
+      "universityName": "Macau University of Science and Technology Faculty of Medicine",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Macau_University_of_Science_and_Technology_13-10-2024.jpg",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author User:LN9267, File:Macau University of Science and Technology 13-10-2024.jpg, description (zh) 'this photograph was taken at Macau University of Science and Technology'; downloaded and visually inspected: the MUST campus in Taipa seen from the roadside, with the university crest and its Chinese and Portuguese names ('Universidade de Ciencia e Tecnologia de Macau') mounted on the end wall of the main teaching block; 8064x6048 px landscape; verified HTTP 200 image/jpeg (10.3 MB). IDENTITY CAVEAT, stated explicitly per the brief: no photograph of the Faculty of Medicine's own building could be located - Commons has no Faculty of Medicine category (only MUST Hospital, Library, Gymnasium, Sports Field and the Innovation Technology Research Institute), there is no dedicated English or Chinese Wikipedia article for the faculty, and must.edu.mo returns HTTP 403 to curl. This is therefore the PARENT university's main campus, used to represent the faculty record. Alternative, lower-resolution but cleaner composition: File:Macau Science & Technology University.JPG (1600x1200, the en.wikipedia lead image), which shows the same signed facade.",
+        "proposedPublicId": "macau-university-of-science-and-technology-faculty-of-medicine-cover"
+      },
+      "status": "ready"
+    },
+    {
+      "universitySlug": "edu-digital-education-holdings-edu-medical-faculty-of-medicine",
+      "universityName": "EDU - Digital Education Holdings (EDU Medical, Faculty of Medicine)",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No verifiable image, and a structural reason to expect none. Identity was resolved this pass (the first pass had treated the name as garbled): EDU is a European institution of higher education operated by Digital Education Holdings Ltd, registered at Chaplain's House, Villa Bighi, Marina Street, Kalkara, Malta, and EDU Medical is its online/digital medical degree provider - it is described as Europe's first digital medical school, so it has no teaching campus of its own to photograph. Wikimedia Commons: no category or file for 'EDU Malta', 'Digital Education Holdings' or 'EDU Medical'. Official domains: https://medical.edu.mt/ and https://edu.edu.mt failed to connect over curl (connection error, HTTP 000) on repeated attempts, so no og:image or hero could be read. Nothing was nominated; a photograph of Villa Bighi as a building would identify a historic Kalkara site rather than the institution, and the brief requires strictness for small private providers."
+    },
+    {
+      "universitySlug": "medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university",
+      "universityName": "MediCampus Europeo (MCE) - Faculty of Medicine, in partnership with Trakia University",
+      "missing": [
+        "cover"
+      ],
+      "status": "hold",
+      "reason": "No verifiable image. Wikimedia Commons: searched 'MediCampus Europeo', 'MCE Malta', 'Floriana university' (ns 6 and 14) - no category, no files. Wikipedia: no article, hence no lead image. Official domain: https://medicampus.eu/ failed to connect over curl (HTTP 000) on repeated attempts with a browser User-Agent, so no og:image, hero or campus page could be read; no other domain could be confirmed as this provider's own. Per the brief, a small private provider in Floriana must not be given a generic Valletta or Grand Harbour stock photograph, and the Trakia University (Stara Zagora, Bulgaria) partner campus would misrepresent a Malta-sited record, so both of those routes were deliberately not taken. Nothing nominated."
+    },
+    {
+      "universitySlug": "utrecht-university",
+      "universityName": "Utrecht University",
+      "missing": [
+        "cover"
+      ],
+      "cover": {
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Academiegebouw_Utrecht_University.JPG",
+        "sourceType": "wikimedia-commons",
+        "rightsBasis": "Wikimedia Commons, CC BY-SA 4.0, author Steven Lek (User:Tukka), File:Academiegebouw Utrecht University.JPG, from Category:Academiegebouw (Utrecht); description 'Het Academiegebouw van de Universiteit Utrecht' - the University Hall on Domplein, Utrecht University's ceremonial main building; 4928x3264 px landscape; verified HTTP 200 image/jpeg (7.3 MB). Note Category:Utrecht University itself enumerates no files directly - the imagery lives in the Dutch-named building categories, which is why the first pass (which relied on the homepage og:image, a logo, and JS-loaded hero imagery) found nothing. Alternatives: File:Utrecht Academy 018 2689.jpg (6439x4582, CC BY-SA 4.0), File:Academiegebouw Utrecht 2015.jpg (5472x3080, CC BY-SA 4.0, a natural wide crop) and File:The Academiegebouw in Utrecht.jpg (5470x3656, CC0, no attribution required).",
+        "proposedPublicId": "utrecht-university-cover"
+      },
+      "status": "ready"
+    }
+  ]
+}
