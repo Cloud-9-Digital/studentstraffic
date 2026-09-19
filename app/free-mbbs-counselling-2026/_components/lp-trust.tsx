@@ -55,14 +55,13 @@ export function LpTrust() {
               ))}
             </ul>
 
-            <div className="mt-9 flex flex-wrap items-center gap-4">
+            <div className="mt-9">
               <LpDialogTrigger
                 className="inline-flex items-center justify-center rounded-xl px-7 py-3.5 text-sm font-bold text-white transition hover:opacity-90"
                 style={{ background: BRAND.coral } as React.CSSProperties}
               >
                 Get my free counselling call
               </LpDialogTrigger>
-              <p className="text-xs text-gray-400">Parents are welcome on the call.</p>
             </div>
           </div>
         </div>
