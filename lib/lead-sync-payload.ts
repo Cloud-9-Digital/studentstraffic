@@ -17,6 +17,12 @@ export type LeadSyncPayload = {
   handoffVersion?: string;
   leadKind?: LeadKind;
   sourceCategory?: string;
+  /**
+   * Name the CRM files this lead under, matched/created in its `leadSources`
+   * table and written to `leads.source`. Omitted for most paths, which lets
+   * the CRM fall back to its own LEAD_INTAKE_SOURCE_NAME default.
+   */
+  sourceName?: string;
   acquisitionChannel?: string;
   primaryInterestType?: "university" | "country" | "course" | "seminar" | "general";
   primaryInterestValue?: string;

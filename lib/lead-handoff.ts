@@ -6,6 +6,7 @@ type LeadHandoffInput = Omit<
   LeadSyncPayload,
   | "handoffVersion"
   | "sourceCategory"
+  | "sourceName"
   | "acquisitionChannel"
   | "primaryInterestType"
   | "primaryInterestValue"
@@ -35,6 +36,23 @@ function getSourceCategory(sourcePath: string) {
   }
 
   return "website";
+}
+
+/**
+ * Per-campaign source names for the CRM. The CRM matches these against its
+ * `leadSources` table by name (creating the row if new) and shows the result as
+ * the lead's Source, so the string must match what the sales team expects to
+ * see -- it is a label, not a slug.
+ *
+ * Only paid landing pages need an entry. Everything else returns undefined and
+ * the CRM applies its own default, so this must never return a placeholder.
+ */
+const SOURCE_NAME_BY_PATH: Record<string, string> = {
+  "/free-mbbs-counselling-2026": "MBBS in 10 Lakhs",
+};
+
+function getSourceName(sourcePath: string) {
+  return SOURCE_NAME_BY_PATH[sourcePath];
 }
 
 function getAcquisitionChannel(payload: LeadHandoffInput) {
@@ -97,6 +115,7 @@ export function buildLeadHandoffPayload(
     ...payload,
     handoffVersion: LEAD_HANDOFF_VERSION,
     sourceCategory: getSourceCategory(payload.sourcePath),
+    sourceName: getSourceName(payload.sourcePath),
     acquisitionChannel: getAcquisitionChannel(payload),
     primaryInterestType: primaryInterest.primaryInterestType,
     primaryInterestValue: primaryInterest.primaryInterestValue,

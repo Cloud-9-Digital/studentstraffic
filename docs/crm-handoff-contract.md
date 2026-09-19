@@ -56,6 +56,29 @@ This repo does not own:
 
 New fields added to the handoff payload should be additive. Existing fields should not be renamed or removed without coordinating with the CRM repository.
 
+## CRM source name
+
+The CRM's `/api/leads/intake` accepts an optional `sourceName` (1-60 chars). It matches that string
+against the CRM's `leadSources` table by name, **creating the row if it does not exist**, and writes
+the result to `leads.source` -- which is what the sales team sees as the lead's Source. When the
+field is omitted the CRM falls back to its own `LEAD_INTAKE_SOURCE_NAME`, defaulting to `"Website"`.
+
+This repo derives it in `getSourceName` in `lib/lead-handoff.ts`, from a per-path map:
+
+| `sourcePath` | `sourceName` |
+|---|---|
+| `/free-mbbs-counselling-2026` | `MBBS in 10 Lakhs` |
+| everything else | omitted, so the CRM applies its default |
+
+Two rules when adding an entry:
+
+- The value is a **label the sales team reads**, not a slug. A typo silently creates a second
+  lead source in the CRM rather than failing, so check the exact spelling against the CRM first.
+- Never route `sourceName` through `withPlaceholder` in `lib/lead-sync.ts`. That helper substitutes
+  `"NA"` for empty values, and since the CRM validates `min(1)` it would happily create a lead source
+  named `NA` for every lead without a campaign. It must stay on the plain `...payload` spread, where
+  an undefined value is dropped by `JSON.stringify`.
+
 ## Lead delivery routing
 
 Which destinations a lead reaches is decided by its `sourcePath`, through the single routing table
