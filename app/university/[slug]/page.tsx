@@ -38,6 +38,10 @@ import { getRelatedContent } from "@/lib/data/related-content";
 import { RelatedContentSection } from "@/components/site/related-content-section";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
+  buildUniversityMetadata,
+  selectFlagshipProgram,
+} from "@/lib/university-metadata";
+import {
   getArticleStructuredData,
   getBreadcrumbStructuredData,
   getCountryStructuredData,
@@ -53,7 +57,6 @@ import {
   getUniversityInitials,
 } from "@/lib/university-media";
 import { parseUniversitySlug } from "@/lib/university-sections";
-import { formatProgramAnnualFee, hasRenderableProgramFee } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 // Cap build-time enumeration so build times stay bounded as the catalog grows —
@@ -104,7 +107,7 @@ async function redirectLegacySectionUrl(rawSlug: string) {
     const university = await getUniversityBySlug(legacyProgramMatch.base);
     if (university) {
       const programs = await getProgramsForUniversity(university.slug);
-      const primaryProgram = programs.find((p) => p.offering.featured) ?? programs[0];
+      const primaryProgram = selectFlagshipProgram(programs);
       if (primaryProgram) {
         const newSection =
           legacyProgramMatch.suffix === "academics" ? null : legacyProgramMatch.suffix;
@@ -173,74 +176,19 @@ export async function generateMetadata({
     return { title: "University Not Found" };
   }
 
-  const primaryProgram =
-    programs.find((p) => p.offering.featured) ?? programs[0];
-  const primaryProgramHasPublishedFee = primaryProgram
-    ? hasRenderableProgramFee(primaryProgram.offering)
-    : false;
-  const courseName = primaryProgram?.course.shortName;
   const pathSuffix = section ? `-${section}` : "";
-
-  let title: string;
-  let description: string;
-
-  const loc = country ? `${university.city}, ${country.name}` : university.city;
-
-  if (section === "programs") {
-    title = `${university.name} Programs | Courses, Duration & Intake for Indian Students`;
-    description = `All programs at ${university.name}, ${loc} — course duration, medium of instruction, annual intake, and official program details for Indian students.`;
-  } else if (section === "student-life") {
-    title = `${university.name} Student Life | Indian Community, Food & Campus in ${university.city}`;
-    description = `Campus lifestyle, Indian food availability, accommodation, safety, and student support at ${university.name}, ${university.city}. Everything Indian students need to know before joining.`;
-  } else if (section === "hostel") {
-    title = `${university.name} Hostel & Accommodation | Indian Food, Campus Life & Costs`;
-    description = `Hostel facilities, Indian food options, room costs, campus environment, and safety at ${university.name}, ${university.city} — complete accommodation guide for Indian students.`;
-  } else if (section === "faq") {
-    title = `${university.name} FAQ | ${university.faq.length > 0 ? `${university.faq.length} Questions` : "Common Questions"} Answered for Indian Students`;
-    description = `Answers to the most common questions Indian students ask about ${university.name}, ${loc} — programs, hostel, and student life.`;
-  } else {
-    // Google truncates SERP titles at ~60 chars. Long official university
-    // names push a trailing "Fees" past that cutoff, so it never becomes
-    // visible for "[university] fees" queries. Lead with course + "Fees"
-    // instead, university name after — survives truncation regardless of
-    // name length. "Complete Guide for Indian Students" matches the pattern
-    // used by every competitor checked in the GSC review — plain keyword
-    // titles ranked but read as dry metadata next to it.
-    title = primaryProgram
-      ? primaryProgramHasPublishedFee
-        ? `${courseName} Fees at ${university.name} 2026 — Complete Guide for Indian Students`
-        : `${courseName} Admissions & Course Details — Complete Guide for Indian Students | ${university.name}`
-      : `${university.name} | University Details`;
-    // Google truncates meta descriptions at ~155-160 chars in the SERP snippet.
-    // "[university] fees"-style queries are our single biggest zero-click
-    // cluster on page-1 rankings — the fee figure previously lived only deep
-    // inside `university.summary`, past that truncation point. Lead with it.
-    description =
-      primaryProgram && country
-        ? `${
-            primaryProgramHasPublishedFee
-              ? `${university.name} ${courseName} annual fees: ${formatProgramAnnualFee(
-                  primaryProgram.offering
-                )}. Complete 2026 guide covering tuition, eligibility, intake, medium of instruction, and admission process for Indian students — ${university.city}, ${country.name}. `
-              : `Complete 2026 guide to ${courseName} at ${university.name} for Indian students — eligibility, admissions process, medium of instruction, and student support. `
-          }${university.summary}`
-        : university.summary;
-  }
+  const { title, description, keywords } = buildUniversityMetadata({
+    university,
+    country,
+    programs,
+    section,
+  });
 
   return buildIndexableMetadata({
     title,
     description,
     path: `/university/${university.slug}${pathSuffix}`,
-    keywords: [
-      university.name,
-      primaryProgram
-        ? `${courseName} at ${university.name}`
-        : undefined,
-      country ? `${university.name} ${country.name}` : undefined,
-      `${university.city} medical university`,
-      country ? `${university.name} for Indian students` : undefined,
-      ...university.recognitionBadges,
-    ].filter(Boolean) as string[],
+    keywords,
   });
 }
 
@@ -269,8 +217,7 @@ export default async function UniversityDetailPage({
 
   if (!country) notFound();
 
-  const primaryProgram =
-    programs.find((p) => p.offering.featured) ?? programs[0];
+  const primaryProgram = selectFlagshipProgram(programs);
   const coverImage = getUniversityCoverImage(university);
   const pageReviewedAt = university.lastVerifiedAt || catalogReviewedAt;
   const authorSlug = getUniversityAuthorSlug(university.slug);

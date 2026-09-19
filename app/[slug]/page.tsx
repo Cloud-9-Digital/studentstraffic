@@ -52,6 +52,7 @@ import {
   getUniversityStructuredData,
 } from "@/lib/structured-data";
 import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildProgramMetadata } from "@/lib/university-metadata";
 import {
   getLandingPageBySlug,
   getLandingPageContext,
@@ -77,7 +78,6 @@ import { getAuthor } from "@/lib/authors";
 import { getUniversityAuthorSlug } from "@/lib/university-authors";
 import { parseProgramSlug } from "@/lib/university-sections";
 import { ProgramSectionShell } from "@/components/site/university/program-section-shell";
-import { formatProgramAnnualFee, hasRenderableProgramFee } from "@/lib/utils";
 
 const PLACEHOLDER_ROOT_SLUG = "__root-fallback__";
 
@@ -144,41 +144,6 @@ const getProgramPageData = cache(async (rawSlug: string) => {
   };
 });
 
-// Keyword-first titles/descriptions: long official university names (e.g.
-// "... named after Jusup Balasagyn") push everything after them past
-// Google's ~60-char title / ~155-char description truncation. Lead with the
-// course + intent keyword (Fees, Eligibility, ...) so they survive
-// truncation regardless of how long the university name is.
-const PROGRAM_SECTION_META: Record<
-  string,
-  {
-    title: (course: string, university: string, feeText?: string) => string;
-    description: (course: string, university: string, city: string, feeText?: string) => string;
-  }
-> = {
-  admissions: {
-    title: (course, university) => `${course} Admissions 2026 at ${university} | How to Apply for Indian Students`,
-    description: (course, university, city) =>
-      `${course} admissions process at ${university}, ${city} for Indian students — eligibility, documents, application timeline, and visa process.`,
-  },
-  eligibility: {
-    title: (course, university) => `${course} Eligibility at ${university} 2026 | Requirements for Indian Students`,
-    description: (course, university, city) =>
-      `Academic eligibility, age limit, and admission requirements for ${course} at ${university}, ${city}. Complete eligibility criteria for Indian students 2026.`,
-  },
-  fees: {
-    title: (course, university, feeText) =>
-      `${course} Fees at ${university} 2026${feeText ? `: ${feeText}` : ""} — Complete Guide for Indian Students`,
-    description: (course, university, city, feeText) =>
-      `${course} annual fees at ${university}${feeText ? `: ${feeText}` : ""}. Complete 2026 guide covering year-wise tuition, hostel costs, total program cost in USD, and scholarship information — ${city}.`,
-  },
-  recognition: {
-    title: (course, university) => `Is ${course} at ${university} Recognised? 2026 | Accreditation Status for Indian Students`,
-    description: (course, university, city) =>
-      `Recognition and accreditation status of ${course} at ${university}, ${city} — what it means for Indian students and official verification links.`,
-  },
-};
-
 export async function generateMetadata({
   params,
 }: {
@@ -195,34 +160,20 @@ export async function generateMetadata({
 
     const programData = await getProgramPageData(slug);
     if (programData) {
-      const { program, university, section } = programData;
-      const course = program.course.shortName;
-      const sectionMeta = section ? PROGRAM_SECTION_META[section] : null;
-      const feeText = hasRenderableProgramFee(program.offering)
-        ? formatProgramAnnualFee(program.offering)
-        : undefined;
-      // Long official university names (e.g. "... named after Jusup
-      // Balasagyn") push everything after them past Google's ~60-char title
-      // truncation. Put "Fees" and the year right after the short course
-      // name so they survive truncation regardless of university name length.
-      // "Complete Guide for Indian Students" matches the pattern used by
-      // every competitor checked in the GSC review.
-      const title = sectionMeta
-        ? sectionMeta.title(course, university.name, feeText)
-        : `${course} Fees at ${university.name} 2026 — Complete Guide for Indian Students`;
-      // Same truncation problem hits the description (~155-160 chars): lead
-      // with the actual fee figure so Google's snippet answers the "fees"
-      // query directly instead of discarding our description and scraping
-      // the on-page fee table into a snippet itself.
-      const description = sectionMeta
-        ? sectionMeta.description(course, university.name, university.city, feeText)
-        : `${course} annual fees at ${university.name}${
-            feeText ? `: ${feeText}` : ""
-          }. Complete 2026 guide covering duration, fee breakdown, eligibility, medium of instruction, and academic structure for Indian students — ${university.city}.`;
+      const { program, university, country, section } = programData;
+      // The entity of this page is the programme *at this university*, so the
+      // title leads with it; the university page leads with the institution.
+      const { title, description, keywords } = buildProgramMetadata({
+        program,
+        university,
+        country,
+        section,
+      });
       return buildIndexableMetadata({
         title,
         description,
         path: `/${slug}`,
+        keywords,
       });
     }
 

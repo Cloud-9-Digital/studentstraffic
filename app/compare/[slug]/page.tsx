@@ -31,6 +31,7 @@ import {
   type CountryComparisonGuide,
 } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildComparisonTitle } from "@/lib/university-metadata";
 import {
   getBreadcrumbStructuredData,
   getCountryStructuredData,
@@ -1095,7 +1096,12 @@ export async function generateMetadata({
   switch (page.kind) {
     case "university":
       return buildIndexableMetadata({
-        title: `${page.left.university.name} vs ${page.right.university.name} | Fees, Eligibility and Admission Details`,
+        // Both institutions have to survive SERP truncation, so the pair is
+        // budgeted together instead of letting the second name fall off.
+        title: buildComparisonTitle(
+          page.left.university.name,
+          page.right.university.name,
+        ),
         description: getPageDescription(page),
         path,
         keywords: [

@@ -121,6 +121,37 @@ Scholarship pages should:
 - Reserve specialist or niche routes for their relevant landing pages. Do not let a long list of MBBS-only cities or guides dominate the global footer once the product supports wider programmes and destinations.
 - Footer links should help a student enter by destination, programme, university, budget, comparison, scholarship, or student conversation—the practical decisions that apply across disciplines.
 
+## Catalogue metadata standards (titles and descriptions)
+
+Every catalogue template must describe **the entity the page is about**. A university page that led with an arbitrary course ("B.Com Fees at Vellore Institute of Technology") was the bug this standard exists to prevent. All of the rules below are implemented once, in `lib/university-metadata.ts`, and covered by `tests/university-metadata.test.ts` — extend that module rather than writing inline template literals in a route.
+
+**Entity rule**
+
+| Page | Title leads with |
+| --- | --- |
+| `/university/[slug]` | The university name. The flagship course is appended only when the university teaches a single stream, where it is the search intent. |
+| `/university/[slug]-{programs,student-life,hostel,faq}` | The university name, then that section's intent (Courses & Fees, Student Life, Hostel, FAQs). |
+| Programme page `/[programme-slug]` and its `-fees/-eligibility/-admissions/-recognition` sections | The programme **at that university** (`MBBS at Kazan State Medical University — Fees & Eligibility`). |
+| `/compare/[slug]` (university kind) | Both institutions; names are trimmed evenly so neither drops out of the SERP title. |
+
+**Budgets**
+
+- Titles: 60 characters maximum for the page-owned part. The root layout appends `" | Students Traffic"` (19 characters) through the metadata template, so the rendered title stays inside Google's cut-off. `fitTitle()` picks the longest suffix variant that fits and degrades (drops the year, then keywords) instead of overflowing; a name that busts the budget on its own is truncated at a word boundary.
+- Descriptions: 140–155 characters, benefit-led and specific. `composeDescription()` appends clauses only while they fit, and picks the longest surviving variant of each clause.
+- The year appears only where it earns the click (fees, admissions, course lists), never on evergreen sections that would then look stale.
+- No two sibling pages may share a title template; the section suffixes are distinct by design, and the tests assert it.
+
+**Data honesty**
+
+- A fee, intake or recognition hook is included **only when that data exists for that page**. Omit rather than fabricate (same rule as the content sourcing runbook).
+- "Tuition from X" must use the cheapest published offering (`selectLowestFeeProgram`), never the flagship's price.
+- Flagship selection is deterministic and defensible — `selectFlagshipProgram()`: explicitly `featured` offerings first, then the university's dominant stream (most offerings, ties broken by demand priority), then the lowest study level, then a stable name/slug tie-break. Never `programs[0]`.
+
+**Keywords**
+
+- Minimal and honest: the university name, its fee/admission variants, country, one stream-aware `"<city> <noun>"` phrase, the flagship course, and short recognition tokens only (e.g. `NMC`, `NAAC`). Full accreditation sentences are not keywords.
+- The stream noun comes from the catalogue (`engineering college`, `medical university`, `business school`, …). A broad, four-plus-stream catalogue falls back to plain `university`. Never hardcode `medical university`.
+
 ## Operational note
 
 This file should be updated whenever the team makes a new project-wide decision about content, conversion style, trust signals, or page structure.
