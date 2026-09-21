@@ -28,7 +28,20 @@ export type NavCountry = {
 // be bundled into client code.
 export { FEATURED_NAV_COUNTRY_SLUG } from "@/lib/data/nav-constants";
 
-export async function getNavCountries(): Promise<NavCountry[]> {
+// Bump whenever the NavCountry shape or the query changes. Cached arguments
+// are part of the `use cache` key, and the remote cache outlives deploys: the
+// pre-3a79409 entry ({ description } only, "catalog" lifetime) kept being
+// served after the redesign, so the countries menu received rows without
+// region/universityCount and rendered an empty panel. A new version forces a
+// fresh entry instead of relying on a shared-tag revalidation publishes refuse.
+const NAV_COUNTRIES_PAYLOAD_VERSION = 2;
+
+export function getNavCountries(): Promise<NavCountry[]> {
+  return loadNavCountries(NAV_COUNTRIES_PAYLOAD_VERSION);
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars -- cache-key seed
+async function loadNavCountries(_payloadVersion: number): Promise<NavCountry[]> {
   // `use cache: remote` (not plain `use cache`) because this runs in the root
   // layout on every render. Plain `use cache` is an in-memory LRU that does not
   // persist across serverless instances, so every new Vercel instance re-ran

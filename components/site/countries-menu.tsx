@@ -42,28 +42,48 @@ export type CountriesMenuModel = {
 
 const byName = (left: NavCountry, right: NavCountry) => left.name.localeCompare(right.name);
 
+const NAV_REGION_IDS: ReadonlySet<string> = new Set(NAV_REGIONS.map((region) => region.id));
+
+// The payload crosses a cache boundary that can outlive a deploy, so fields
+// added after an entry was written may be missing at runtime. Never let that
+// drop a country: unknown regions fall into "other" and missing counts read 0.
+function regionOf(country: NavCountry): NavRegionId {
+  return NAV_REGION_IDS.has(country.region) ? country.region : "other";
+}
+
+function universityCountOf(country: NavCountry) {
+  return typeof country.universityCount === "number" ? country.universityCount : 0;
+}
+
 function buildCountriesMenuModel(countries: readonly NavCountry[]): CountriesMenuModel {
   const byRegion = new Map<NavRegionId, NavCountry[]>();
   const bySlug = new Map<string, NavCountry>();
 
   for (const country of countries) {
     bySlug.set(country.slug, country);
-    const list = byRegion.get(country.region);
+    const region = regionOf(country);
+    const list = byRegion.get(region);
     if (list) list.push(country);
-    else byRegion.set(country.region, [country]);
+    else byRegion.set(region, [country]);
   }
 
+  // Ordered by published university count; counts are never displayed.
+  // Countries without published universities stay in their region list
+  // (they have country pages worth linking) but never rank as popular.
+  const ranked = countries
+    .filter((country) => universityCountOf(country) > 0)
+    .sort((left, right) => universityCountOf(right) - universityCountOf(left) || byName(left, right))
+    .slice(0, POPULAR_LIMIT);
+
   return {
-    // Ordered by published university count; counts are never displayed.
-    // Countries without published universities stay in their region list
-    // (they have country pages worth linking) but never rank as popular.
-    popular: countries
-      .filter((country) => country.universityCount > 0)
-      .sort((left, right) => right.universityCount - left.universityCount || byName(left, right))
-      .slice(0, POPULAR_LIMIT),
+    // Without counts, fall back to the curated MBBS shortlist so the default
+    // tab is never an empty grid.
+    popular: ranked.length
+      ? ranked
+      : MBBS_NAV_COUNTRY_SLUGS.flatMap((slug) => bySlug.get(slug) ?? []).slice(0, POPULAR_LIMIT),
     mbbs: MBBS_NAV_COUNTRY_SLUGS.flatMap((slug) => {
       const country = bySlug.get(slug);
-      return country?.hasMedicine && country.universityCount > 0 ? [country] : [];
+      return country?.hasMedicine && universityCountOf(country) > 0 ? [country] : [];
     }),
     regions: NAV_REGIONS.flatMap(({ id, label }) => {
       const list = byRegion.get(id);
@@ -141,6 +161,30 @@ function CountryListItem({
         <span className="min-w-0 truncate font-medium">{country.name}</span>
       </Link>
     </li>
+  );
+}
+
+/** Shown instead of a blank panel if the destinations list is unavailable. */
+function CountriesEmptyState({
+  onSelect,
+}: {
+  onSelect: (event: MouseEvent<HTMLAnchorElement>) => void;
+}) {
+  return (
+    <div className="rounded-2xl border border-dashed border-border bg-muted/20 px-5 py-6 text-sm">
+      <p className="font-semibold text-foreground">Destinations are loading slowly right now.</p>
+      <p className="mt-1 text-muted-foreground">
+        Browse every country we cover, with fees, universities and admission guides.
+      </p>
+      <Link
+        href="/countries"
+        onClick={onSelect}
+        className="mt-3 inline-flex items-center gap-2 rounded-xl bg-primary px-3.5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+      >
+        View all countries
+        <ArrowRight aria-hidden className="size-4" />
+      </Link>
+    </div>
   );
 }
 
@@ -322,6 +366,9 @@ export function DesktopCountriesMenu({
                 aria-labelledby={tabId("popular")}
                 hidden={activeTab !== "popular"}
               >
+                {model.popular.length === 0 ? (
+                  <CountriesEmptyState onSelect={onClose} />
+                ) : null}
                 <ol className="grid grid-cols-4 gap-2.5">
                   {model.popular.map((country) => (
                     <li key={country.slug}>
@@ -560,6 +607,11 @@ export function CountriesMobilePanel({
           </section>
         ) : null}
 
+        {model.popular.length === 0 && model.regions.length === 0 ? (
+          <CountriesEmptyState onSelect={(event) => handleLinkClick(event, "/countries")} />
+        ) : null}
+
+        {model.regions.length > 0 ? (
         <section aria-labelledby={`${headingId}-regions`} className="mt-7">
           <h2
             id={`${headingId}-regions`}
@@ -586,6 +638,7 @@ export function CountriesMobilePanel({
             ))}
           </div>
         </section>
+        ) : null}
 
         <nav aria-label="More destination links" className="mt-7 border-t border-border pt-4">
           <ul className="space-y-0.5">
