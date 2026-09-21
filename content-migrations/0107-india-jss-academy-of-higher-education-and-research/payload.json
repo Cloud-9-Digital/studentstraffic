@@ -1,0 +1,1728 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "bpharm",
+      "name": "Bachelor of Pharmacy",
+      "shortName": "B.Pharm",
+      "stream": "pharmacy",
+      "level": "bachelors",
+      "discipline": "pharmacy",
+      "aliases": [
+        "BPharm",
+        "Bachelor's Degree in Pharmacy"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Bachelor of Pharmacy is the Students Traffic catalogue category for four-year undergraduate pharmacy degrees taken after secondary school, covering pharmaceutics, pharmaceutical chemistry, pharmacology, pharmacognosy and pharmacy practice. JSS Academy of Higher Education & Research maps the eight-semester B.Pharm taught at JSS College of Pharmacy, Mysuru and JSS College of Pharmacy, Ooty to this category.",
+      "metaTitle": "Bachelor of Pharmacy (B.Pharm) for International Students",
+      "metaDescription": "Compare B.Pharm degrees open to international applicants: entry subjects, entrance tests, teaching language, tuition in US dollars and intake timing."
+    },
+    {
+      "slug": "bsc-medical-laboratory-science",
+      "name": "B.Sc. in Medical Laboratory Science",
+      "shortName": "B.Sc. Medical Laboratory Science",
+      "stream": "public-health-allied-health",
+      "level": "bachelors",
+      "discipline": "medical-laboratory-science",
+      "aliases": [
+        "Bachelor of Medical Laboratory Science",
+        "BSc Biomedical Laboratory Science"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "B.Sc. in Medical Laboratory Science is the Students Traffic catalogue category for undergraduate degrees that train clinical laboratory professionals in biochemistry, microbiology, pathology, haematology and blood banking. JSS Academy of Higher Education & Research maps its B.Sc Medical Laboratory Technology, taught at JSS Medical College in Mysuru with a twelve-month internship, to this category.",
+      "metaTitle": "B.Sc. Medical Laboratory Science for International Students",
+      "metaDescription": "Compare B.Sc. Medical Laboratory Science degrees abroad: science entry rules, internship length, teaching language, US-dollar tuition and intakes."
+    },
+    {
+      "slug": "mba-healthcare-management",
+      "name": "MBA in Healthcare Management",
+      "shortName": "MBA Healthcare Management",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "healthcare-management",
+      "aliases": [
+        "MBA in Healthcare Administration",
+        "MBA in Hospital Management"
+      ],
+      "displayOrder": 2,
+      "durationYears": 2,
+      "summary": "MBA in Healthcare Management is the Students Traffic catalogue category for MBA degrees specialising in the management of hospitals, health systems, insurance and health services. JSS Academy of Higher Education & Research maps its two-year MBA in Hospital Administration, run by the Department of Health System Management Studies in Mysuru with hospital postings, to this category.",
+      "metaTitle": "MBA Healthcare Management Programmes for International Students",
+      "metaDescription": "Compare MBA Healthcare Management and hospital administration degrees: graduate entry rules, hospital postings, teaching language, fees and intakes."
+    },
+    {
+      "slug": "master-nutrition-dietetics",
+      "name": "Master's in Nutrition and Dietetics",
+      "shortName": "Master's Nutrition",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "nutrition-dietetics",
+      "aliases": [
+        "MSc Nutrition and Dietetics",
+        "Master of Nutrition"
+      ],
+      "displayOrder": 3,
+      "durationYears": 2,
+      "summary": "Master's in Nutrition and Dietetics is the Students Traffic catalogue category for postgraduate degrees in clinical, community and therapeutic nutrition, usually with hospital or community internships and a dissertation. JSS Academy of Higher Education & Research maps the two-year M.Sc Nutrition and Dietetics taught by its Department of Nutrition & Dietetics in Mysuru to this category.",
+      "metaTitle": "Master's in Nutrition and Dietetics for International Students",
+      "metaDescription": "Compare Master's in Nutrition and Dietetics degrees abroad: science entry rules, clinical internships, teaching language, US-dollar fees and intakes."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "jss-academy-of-higher-education-and-research",
+      "name": "JSS Academy of Higher Education & Research",
+      "city": "Mysuru",
+      "type": "Private",
+      "establishedYear": 2008,
+      "officialWebsite": "https://jssuni.edu.in/",
+      "mediaAttribution": {},
+      "summary": "JSS Academy of Higher Education & Research is a private deemed-to-be university in Mysuru, Karnataka, formerly JSS University, focused on the health sciences. It runs JSS Medical College, JSS Dental College & Hospital and JSS College of Pharmacy in Mysuru, a second pharmacy college in Ooty, Tamil Nadu, and departments of allied health, life sciences, public health and health system management.",
+      "campusLifestyle": "The main campus at Sri Shivarathreeshwara Nagara, Mysuru 570015 holds the medical, dental and pharmacy colleges, with more than 650 faculty teaching about 3,500 undergraduates, 2,500 postgraduates and 700 research scholars. The university reports over 800 international students from more than 35 countries. Campus facilities listed for international students include a primary health centre, pharmacy, library, gymnasium, indoor and outdoor sports, food courts, a bank branch and ATM, NRI apartments, Wi-Fi and in-campus cycle services. Clinical teaching is linked to the 1,800-bed JSS Hospital in Mysuru.",
+      "cityProfile": "Mysuru is a heritage city in southern Karnataka, about 175 km by road from Kempegowda International Airport in Bengaluru, which is the usual arrival airport for international students. The airport Flybus runs directly to Mysuru in about four hours for roughly INR 800, the Shatabdi Express covers Bengaluru to Mysuru by rail in about two hours, and buses from Bengaluru's Satellite Bus Stop leave about every ten minutes for INR 180 to 300. JSS AHER's medical, dental and pharmacy colleges and most departments are in Mysuru, but JSS College of Pharmacy, Ooty is an off-campus college in Udhagamandalam in the Nilgiris district of Tamil Nadu, so the campus named on an offer letter decides where the student lives.",
+      "practicalExposure": "Practical training is organised by college. Pharmacy students at the Mysuru and Ooty colleges follow the Pharmacy Council of India B.Pharm syllabus, with a Practice School in the seventh semester and industrial training at a pharmaceutical company. Medical Laboratory Technology students train in the laboratories of JSS Medical College and hospital across biochemistry, microbiology, pathology and blood bank, handling automated analysers, histopathology processing and blood-component preparation, then complete a twelve-month internship. The MBA in Hospital Administration uses the 1,800-bed JSS Hospital for hospital postings in the third and fourth semesters, followed by an eight-week internship and a project. The M.Sc Nutrition and Dietetics programme includes a hospital and community nutrition internship in the third semester and a dissertation in the fourth. JSS AHER's placement cell and international students cell support students across these colleges.",
+      "hostelOverview": "JSS Medical College runs separate hostels for men and women with furnished rooms, a pantry and laundry in each block, RO drinking water and hostel kitchens, plus separate postgraduate hostels outside the campus. JSS College of Pharmacy, Mysuru has its own hostels for men and women. The 2026 hostel fee published for medical and dental entrants at JSS Medical College is INR 1,68,100 a year for men and INR 1,64,500 for women, paid at reporting and separate from tuition. NRI apartments are listed among campus facilities. Hostel places are applied for on the university's prescribed form.",
+      "dietarySupport": "Hostel kitchens serve residents in each JSS hostel block, and the Mysuru campus has canteens, restaurants, a cafeteria and food courts for students and visiting parents. A bank branch, ATM, post office and healthcare clinic are on campus, so day-to-day money and health needs can be handled without leaving. JSS AHER advises international students to take out health insurance on arrival and to bring prescriptions for any regular medicines.",
+      "safetyOverview": "JSS Medical College hostels have round-the-clock male and female security guards for the respective hostels and CCTV monitoring, and the campus has a 24-hour security service. An anti-ragging cell operates on campus. The Student Support Centre, run with the departments of psychiatry and clinical psychology, offers free and confidential counselling for stress, anxiety, depression and adjustment to a new environment.",
+      "studentSupport": "The International Students Cell, chaired by the Dean (Academics), is the single window for foreign applicants: it issues the provisional admission letter used for the visa, guides airport transfers, collects registration and tuition fees on arrival, and provides the bonafide letter for e-FRRO registration and later visa extensions. Contact: international@jssuni.edu.in or +91 98455 55625.",
+      "whyChoose": [
+        "NRI and Foreign National fees are published in US dollars for 2026-27, from USD 2,500 for the M.Sc Nutrition and Dietetics to USD 6,000 first-year tuition for the B.Pharm, so the programme cost is known before applying.",
+        "The B.Pharm is offered at two constituent colleges, Mysuru and Ooty, both on the NBA's accredited Pharmacy UG register, and placed 7th and 4th in the NIRF 2025 Pharmacy rankings.",
+        "JSS AHER holds NAAC A++ accreditation with a CGPA of 3.61 in Cycle 3, declared in October 2024, and ranked 21st in the NIRF 2025 University category.",
+        "Health-sciences teaching sits beside the 1,800-bed JSS Hospital, which the MBA in Hospital Administration and the allied health programmes use for postings and internships.",
+        "A dedicated International Students Cell issues the provisional admission letter for the visa and assists with airport transfer, fee collection and FRRO registration."
+      ],
+      "thingsToConsider": [
+        "MBBS and BDS are not open through the international cell: both run on NEET-UG and Medical Counselling Committee deemed-university counselling, and JSS AHER's 2026 BDS fee notice lists all 100 seats as All India management seats with no NRI category.",
+        "SAARC-country students on the BBA and MBA programmes are billed in rupees on the Indian fee schedule rather than the US-dollar NRI/Foreign schedule, so fee comparisons differ by nationality.",
+        "Several fee schedules state only the first-year figure, and the pharmacy schedule adds other fees that are not given in US dollars, so the full-course cost is not published in one document.",
+        "B.Pharm applicants sit a JSS AHER online entrance test (23 June 2026 in the last cycle), while allied health, MBA and M.Sc seats are allotted on qualifying marks subject to an interview.",
+        "The application fee must be paid online by card, UPI or internet banking, and several brochures refer to debit cards issued in India, which can complicate payment from abroad.",
+        "Start dates differ widely: pharmacy classes began in early July, while allied health, MBA and M.Sc sessions began between September and October in recent cycles."
+      ],
+      "bestFitFor": [
+        "Pharmacy applicants from Africa, South Asia or the Middle East who want an English-taught B.Pharm with a US-dollar fee and a choice between a city campus and a hill-station college.",
+        "Nepali B.Pharm applicants who can combine admission with the Embassy of India COMPEX scholarship route listed by JSS AHER.",
+        "Graduates from any discipline aiming for hospital or health-system management roles, through an MBA taught beside a teaching hospital.",
+        "Science school-leavers with Physics, Chemistry and Biology who want a laboratory-medicine degree with a full year of internship built in.",
+        "Science graduates who want a clinical and community nutrition master's with hospital internship at a moderate US-dollar fee."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC — Deemed to be University (declared 28 May 2008)",
+        "NAAC — Accredited A++, CGPA 3.61, Cycle 3 (declared October 2024)",
+        "NBA — B.Pharm accredited at JSS College of Pharmacy Mysuru (to 30 June 2028) and Ooty (to 30 June 2027)",
+        "NIRF 2025 — 21st in the University category (Ministry of Education)",
+        "NIRF 2025 — 38th in the Overall category (Ministry of Education)",
+        "NIRF 2025 — Pharmacy category: JSS College of Pharmacy Ooty 4th, Mysuru 7th",
+        "NIRF 2025 — Dental category: JSS Dental College and Hospital, Mysuru 10th"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC list of institutions declared Deemed to be Universities - JSS AHER, 28.05.2008",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf"
+        },
+        {
+          "label": "NAAC accreditation status register - A++, CGPA 3.61, Cycle 3",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "National Board of Accreditation register - JSS College of Pharmacy Mysuru and Ooty",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Overall category",
+          "url": "https://www.nirfindia.org/Rankings/2025/OverallRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Pharmacy category",
+          "url": "https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Dental category",
+          "url": "https://www.nirfindia.org/Rankings/2025/DentalRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is JSS Academy of Higher Education & Research a public or a private university?",
+          "answer": "It is a private, self-financing deemed-to-be university. The UGC lists JSS Academy of Higher Education and Research, Mysore among institutions declared Deemed to be Universities, with effect from 28 May 2008, and it was previously known as JSS University. It is not a state or central government university: fees are set by JSS AHER and published separately for the Merit category and for NRI and Foreign National students."
+        },
+        {
+          "question": "Who counts as an international applicant at JSS AHER?",
+          "answer": "JSS AHER recognises three international categories. Foreign Nationals hold a foreign passport. PIO applicants hold a PIO card and are citizens of another country. NRI applicants took the 10+2 or bachelor's qualifying examination outside India. Allied health, MBA and M.Sc programmes reserve 15 per cent of seats for NRI and Foreign National candidates; the B.Pharm reserves 15 per cent for the NRI, Foreign and Management category."
+        },
+        {
+          "question": "What is the language of instruction, and is IELTS or TOEFL required?",
+          "answer": "JSS AHER's regulations for the B.Pharm, the allied health B.Sc programmes, the MBA in Hospital Administration and the Faculty of Life Sciences M.Sc programmes all state that teaching and examinations are in English. The 2026 admission brochures do not list an IELTS or TOEFL score among required documents. For the B.Pharm and the allied health degrees, English must be one of the subjects in the qualifying school examination."
+        },
+        {
+          "question": "Can I enter directly with a foreign school-leaving or bachelor's qualification?",
+          "answer": "Yes, where it matches the programme's subject and mark rules. The allied health brochure accepts 10+2 or equivalent from India or abroad after 12 years of study, with at least 50 per cent across Physics, Chemistry and Biology. For the B.Pharm, a foreign qualification must be recognised by the Association of Indian Universities as equivalent to 10+2. Foreign nationals applying to allied health and M.Sc programmes also need an eligibility certificate issued by JSS AHER."
+        },
+        {
+          "question": "Is there an entrance test or interview?",
+          "answer": "It depends on the programme. B.Pharm selection uses qualifying-examination marks and a JSS AHER online entrance test at 10+2 level in Physics, Chemistry and Mathematics or Biology; in 2026 the test was held on 23 June. For B.Sc Medical Laboratory Technology, the MBA in Hospital Administration and the M.Sc Nutrition and Dietetics, seats are allotted on qualifying marks subject to passing an interview."
+        },
+        {
+          "question": "What does a programme cost an international student?",
+          "answer": "The 2026-27 NRI and Foreign National fees are: B.Pharm USD 6,000 first-year tuition plus other fees; B.Sc Medical Laboratory Technology USD 3,500 for the first year; MBA in Hospital Administration USD 5,200 a year, USD 10,400 in total; M.Sc Nutrition and Dietetics in Mysuru USD 2,500 for the first year. Hostel is extra: JSS Medical College's 2026 hostel fee is INR 1,68,100 a year for men and INR 1,64,500 for women."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Applications are made only online through the JSS AHER admissions portal: register, choose the programme, upload mark sheets, passport and photographs, and pay the application fee online. JSS AHER checks eligibility and sends a provisional admission letter with fee details, which is used for the student visa. After the visa is issued and the fee paid, the student reports to Mysuru or Ooty for final admission. JSS AHER states that it has no agents."
+        },
+        {
+          "question": "What visa do I need, and what happens after arrival?",
+          "answer": "Foreign nationals need an Indian student visa endorsed to JSS AHER, applied for with the provisional admission letter; nationals of Nepal and Bhutan do not need a visa, and PIO and OCI holders do not need a student visa. Registration on the e-FRRO portal is required within 14 days of arrival. India's Study in India guidance requires a Ministry of Health No Objection Certificate for medical or paramedical courses."
+        },
+        {
+          "question": "When do courses start and when should I apply?",
+          "answer": "Pharmacy runs earliest: in 2026, applications closed on 15 June, the entrance test was on 23 June and classes were set to begin on 10 July. Allied health, MBA and M.Sc applications opened in mid-February 2026. In recent cycles the allied health session began on 23 September 2025, the MBA on 9 October 2025 and the two-year M.Sc Life Sciences on 9 September 2024."
+        },
+        {
+          "question": "Are scholarships available for international students?",
+          "answer": "JSS AHER's international students cell lists external schemes rather than an institutional waiver: the Government of India Study in India programme, through which JSS AHER states it has granted full scholarships; the Embassy of India COMPEX scheme for Nepali students taking B.Pharm; Royal Government of Bhutan scholarships; the Ministry of External Affairs scheme for Syrian nationals; and the e-VBAB programme for African students."
+        },
+        {
+          "question": "What do JSS AHER's accreditations and rankings mean for my home country?",
+          "answer": "NAAC's A++ grade with a CGPA of 3.61 (Cycle 3, declared October 2024), the NBA accreditation of the B.Pharm at both pharmacy colleges and the NIRF 2025 rankings are Indian quality-assurance and ranking outcomes. They do not by themselves license a graduate to practise abroad; pharmacist, laboratory or dietitian registration depends on the rules of the regulator in the country where the graduate plans to work."
+        },
+        {
+          "question": "Where will I live, and what does accommodation cost?",
+          "answer": "Students apply for hostel places on JSS AHER's prescribed form. JSS Medical College has separate men's and women's hostels with furnished rooms, pantries, laundry and security, plus postgraduate hostels outside the campus; the pharmacy college in Mysuru has its own hostels, and NRI apartments are listed among campus facilities. The 2026 JSS Medical College hostel fee is INR 1,68,100 a year for men and INR 1,64,500 for women."
+        },
+        {
+          "question": "Should I choose the B.Pharm at Mysuru or at Ooty?",
+          "answer": "The syllabus, entrance test, 100-seat intake and USD 6,000 first-year NRI/Foreign tuition are the same at both colleges. The differences are location and ratings: Mysuru is on the main university campus, while Ooty is a hill town in Tamil Nadu. NBA accreditation for the B.Pharm runs to 30 June 2028 at Mysuru and 30 June 2027 at Ooty, and NIRF 2025 placed Ooty 4th and Mysuru 7th in Pharmacy."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "JSS AHER International Students Cell - home, admissions, visa, arrival and support pages",
+          "url": "https://jssuni.edu.in/jssaher/jssaher-international-students/jssaher-international-students-home.html",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Seven-step admission route, provisional admission letter, FRRO support, 800+ international students from 35+ countries, contact details."
+        },
+        {
+          "label": "JSS AHER online admissions portal 2026-27",
+          "url": "https://jssuni.edu.in/jssaher/jssaher-admissions/admissions-home.aspx",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Single online application route for all regular programmes, including allied health, MBA, M.Sc and pharmacy."
+        },
+        {
+          "label": "UG & PG Pharmacy Information Brochure 2026-27",
+          "url": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "B.Pharm eligibility, 15 per cent NRI/Foreign/Management seats, entrance test, 2026 calendar, intake 100 at each college."
+        },
+        {
+          "label": "UG Pharmacy Fee Structure 2026",
+          "url": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2635.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "B.Pharm NRI/FN first-year tuition USD 6,000 plus other fees."
+        },
+        {
+          "label": "B.Sc Allied and Healthcare Education & BOT Brochure and Fee Structure 2026-27",
+          "url": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A46_2264.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "MLT NRI fee USD 3,500; eligibility, 15 per cent NRI/FN seats, interview, eligibility certificate for foreign nationals."
+        },
+        {
+          "label": "BBA (H&HSM) & MBA (HA/PA/IT) Brochure and Fee Structure 2026-27",
+          "url": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_2278.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "MBA HA USD 5,200 a year for NRI/FN; SAARC students on INR schedule; FN/PIO/NRI definitions."
+        },
+        {
+          "label": "M.Sc Life Sciences Brochure and Fee Structure 2026-27, Mysuru campus",
+          "url": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A73_2305.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "M.Sc Nutrition and Dietetics NRI fee USD 2,500 (Mysuru)."
+        },
+        {
+          "label": "JSS AHER Academic Calendar 2024-25 (includes 2025-26 notices)",
+          "url": "https://jssaherdatalake.blob.core.windows.net/web-jssaher/AC-2024-2025.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Scanned; session start dates for B.Pharm, B.Sc Allied Health Sciences, MBA and M.Sc Life Sciences read visually."
+        },
+        {
+          "label": "UGC list of Deemed to be Universities (as on 30 November 2021)",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NAAC accreditation status register",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NBA accredited programmes register",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NIRF India Rankings 2025",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my NRI/Foreign National eligibility",
+            "capture": [
+              "passport nationality",
+              "country where 10+2 or degree was taken",
+              "subjects and marks in Physics, Chemistry and Biology or Mathematics",
+              "intended programme and campus",
+              "intended intake year"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my JSS AHER cost plan",
+            "capture": [
+              "intended programme",
+              "nationality (SAARC or other)",
+              "hostel preference",
+              "budget in USD",
+              "scholarship interest"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my JSS AHER application review",
+            "capture": [
+              "document readiness",
+              "AIU equivalence or JSS AHER eligibility certificate status",
+              "online payment method",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "immigration",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "passport nationality",
+              "whether a Ministry of Health NOC applies",
+              "planned arrival date",
+              "campus: Mysuru or Ooty"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "jss-aher-mysuru-bpharm",
+          "canonicalCourseSlug": "bpharm",
+          "officialTitle": "Bachelor of Pharmacy (B.Pharm) - JSS College of Pharmacy, Mysuru",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": 6000,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-09-21",
+            "notes": "JSS AHER's UG pharmacy fee structure for 2026 lists B.Pharm first-year tuition of USD 6,000 for the NRI/Foreign National category at both JSS pharmacy colleges, against INR 2,10,600 for the Merit category. Other fees are charged on top and are not stated in US dollars. This offering is taught at JSS College of Pharmacy, Mysuru."
+          },
+          "officialProgramUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=JSSCPM&COURC=BPH4",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Persons of Indian Origin (PIO card holders)",
+              "Non-Resident Indians",
+              "Indian nationals (Merit and institutional categories)"
+            ],
+            "restrictions": [
+              "International applicants compete for the 15 per cent NRI, Foreign and Management share of the 100 seats at the Mysuru college.",
+              "A foreign 10+2 qualification must be recognised by the Association of Indian Universities as equivalent to Indian 10+2.",
+              "Applicants must be 17 or older on 31 December of the admission year.",
+              "The application fee must be paid online by card, UPI or internet banking; there is no offline payment option."
+            ],
+            "notes": "JSS AHER defines Foreign National applicants as foreign-passport holders, PIO applicants as PIO-card holders who are citizens of another country, and NRI applicants by where the qualifying examination was taken.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf"
+          },
+          "admissionsContent": {
+            "overview": "An eight-semester B.Pharm taught in English at JSS College of Pharmacy, Mysuru, following the Pharmacy Council of India syllabus. Selection uses marks in the qualifying examination and the JSS AHER online entrance test, with 15 per cent of seats in the NRI, Foreign and Management category.",
+            "eligibility": {
+              "intro": "The 2026-27 pharmacy brochure sets one academic rule for all applicants to the four-year B.Pharm at the Mysuru and Ooty colleges, with a separate NRI/Foreign seat category.",
+              "items": [
+                "Pass in 10+2 or an examination recognised by the Association of Indian Universities as equivalent to 10+2.",
+                "English must be one of the subjects, with Physics and Chemistry plus Mathematics or Biology as optional subjects.",
+                "Any other qualification approved by the Pharmacy Council of India as equivalent is also accepted.",
+                "Applicants must be at least 17 years old on or before 31 December 2026.",
+                "15 per cent of seats are reserved for the NRI, Foreign and Management category; 70 per cent are All India Merit and 15 per cent institutional preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the JSS AHER online admissions portal, choose the B.Pharm programme and note the registration number sent by email.",
+              "Complete the application, upload the 10th and 12th mark sheets, other documents, photograph and signature, and pay the non-refundable application fee online.",
+              "Submit the online application by 23:59 on 15 June 2026, the closing date for the 2026 pharmacy cycle.",
+              "Download the Test Admission Ticket from 16 June 2026 and take the online entrance test held on 23 June 2026.",
+              "Report for document verification and admission between 25 and 27 June 2026, carrying the printed application and original documents.",
+              "Use the provisional admission letter with fee details to apply for an Indian student visa, then register on the e-FRRO portal within 14 days of arrival."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 (SSLC) mark sheet",
+                "Class 12 (10+2, PUC or HSC) mark sheet",
+                "Association of Indian Universities equivalence for a foreign 10+2 qualification",
+                "Transfer certificate",
+                "Conduct or character certificate from the last institution attended"
+              ],
+              "application": [
+                "Printed online application form",
+                "Passport as identity proof",
+                "Proof of NRI status of the student, parent or sponsor where applying as NRI",
+                "Six recent colour photographs",
+                "Provisional admission letter and fee receipt for the student visa"
+              ]
+            },
+            "deadlinesNote": "For the 2026 cycle, applications opened on 9 February 2026 and closed on 15 June 2026; the entrance test was on 23 June and classes were scheduled to begin on 10 July 2026 (tentative).",
+            "visaConsiderations": [
+              "An Indian student visa endorsed to JSS AHER is required; nationals of Nepal and Bhutan do not need a visa to enter India.",
+              "Registration with the FRRO through the e-FRRO portal is required within 14 days of arrival, except for nationals of Nepal and Bhutan.",
+              "Indian student-visa conditions prohibit employment or business activity during the course."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "JSS AHER's B.Pharm regulations state that the medium of instruction and examination is English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from 10 July 2026 (tentative); 1 July 2025 and 2 July 2024 in earlier cycles"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year B.Pharm tuition for the NRI/Foreign National category is USD 6,000 for 2026-27, plus other university fees that are not published in US dollars. Hostel accommodation is billed separately. Nepali nationals may be eligible for the Embassy of India COMPEX scholarship for B.Pharm, which JSS AHER's international students cell lists; it is announced around April or May each year.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 to 4 - pharmaceutical foundations",
+              "language": "English",
+              "details": "Human anatomy and physiology, pharmaceutical analysis, pharmaceutics, inorganic and organic chemistry, biochemistry, pathophysiology, physical pharmaceutics, pharmaceutical microbiology and engineering, medicinal chemistry I, pharmacology I and pharmacognosy I."
+            },
+            {
+              "phase": "Semesters 5 to 8 - applied and professional subjects",
+              "language": "English",
+              "details": "Industrial pharmacy, pharmacology II and III, herbal drug technology, biopharmaceutics and pharmacokinetics, quality assurance, instrumental methods of analysis, pharmacy practice and novel drug delivery, with Practice School in semester 7 and a final-year project at JSS College of Pharmacy, Mysuru."
+            }
+          ]
+        },
+        {
+          "slug": "jss-aher-ooty-bpharm",
+          "canonicalCourseSlug": "bpharm",
+          "officialTitle": "Bachelor of Pharmacy (B.Pharm) - JSS College of Pharmacy, Ooty",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": 6000,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-09-21",
+            "notes": "JSS AHER's UG pharmacy fee structure for 2026 lists B.Pharm first-year tuition of USD 6,000 for the NRI/Foreign National category at both JSS pharmacy colleges, against INR 2,10,600 for the Merit category. Other fees are charged on top and are not stated in US dollars. This offering is taught at JSS College of Pharmacy, Ooty."
+          },
+          "officialProgramUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=JSSCPO&COURC=BPH4",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Persons of Indian Origin (PIO card holders)",
+              "Non-Resident Indians",
+              "Indian nationals (Merit and institutional categories)"
+            ],
+            "restrictions": [
+              "International applicants compete for the 15 per cent NRI, Foreign and Management share of the 100 seats at the Ooty college.",
+              "A foreign 10+2 qualification must be recognised by the Association of Indian Universities as equivalent to Indian 10+2.",
+              "Applicants must be 17 or older on 31 December of the admission year.",
+              "The college is in Udhagamandalam (Ooty), Tamil Nadu, not on the Mysuru campus."
+            ],
+            "notes": "JSS AHER defines Foreign National applicants as foreign-passport holders, PIO applicants as PIO-card holders who are citizens of another country, and NRI applicants by where the qualifying examination was taken.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The same four-year B.Pharm taught in English at JSS College of Pharmacy, Ooty, JSS AHER's off-campus college in the Nilgiris, Tamil Nadu. Admission runs through the same JSS AHER portal, entrance test and 15 per cent NRI, Foreign and Management seat share as Mysuru.",
+            "eligibility": {
+              "intro": "The 2026-27 pharmacy brochure sets one academic rule for all applicants to the four-year B.Pharm at the Mysuru and Ooty colleges, with a separate NRI/Foreign seat category.",
+              "items": [
+                "Pass in 10+2 or an examination recognised by the Association of Indian Universities as equivalent to 10+2.",
+                "English must be one of the subjects, with Physics and Chemistry plus Mathematics or Biology as optional subjects.",
+                "Any other qualification approved by the Pharmacy Council of India as equivalent is also accepted.",
+                "Applicants must be at least 17 years old on or before 31 December 2026.",
+                "15 per cent of seats are reserved for the NRI, Foreign and Management category; 70 per cent are All India Merit and 15 per cent institutional preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the JSS AHER online admissions portal, choose the B.Pharm programme and note the registration number sent by email.",
+              "Complete the application, upload the 10th and 12th mark sheets, other documents, photograph and signature, and pay the non-refundable application fee online.",
+              "Submit the online application by 23:59 on 15 June 2026, the closing date for the 2026 pharmacy cycle.",
+              "Download the Test Admission Ticket from 16 June 2026 and take the online entrance test held on 23 June 2026.",
+              "Report for document verification and admission between 25 and 27 June 2026, carrying the printed application and original documents.",
+              "Use the provisional admission letter with fee details to apply for an Indian student visa, then register on the e-FRRO portal within 14 days of arrival."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 (SSLC) mark sheet",
+                "Class 12 (10+2, PUC or HSC) mark sheet",
+                "Association of Indian Universities equivalence for a foreign 10+2 qualification",
+                "Transfer certificate",
+                "Conduct or character certificate from the last institution attended"
+              ],
+              "application": [
+                "Printed online application form",
+                "Passport as identity proof",
+                "Proof of NRI status of the student, parent or sponsor where applying as NRI",
+                "Six recent colour photographs",
+                "Provisional admission letter and fee receipt for the student visa"
+              ]
+            },
+            "deadlinesNote": "For the 2026 cycle, applications opened on 9 February 2026 and closed on 15 June 2026; the entrance test was on 23 June and classes were scheduled to begin on 10 July 2026 (tentative).",
+            "visaConsiderations": [
+              "An Indian student visa endorsed to JSS AHER is required; nationals of Nepal and Bhutan do not need a visa to enter India.",
+              "Registration with the FRRO through the e-FRRO portal is required within 14 days of arrival, except for nationals of Nepal and Bhutan.",
+              "Indian student-visa conditions prohibit employment or business activity during the course."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "JSS AHER's B.Pharm regulations state that the medium of instruction and examination is English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from 10 July 2026 (tentative); 1 July 2025 and 2 July 2024 in earlier cycles"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year B.Pharm tuition for the NRI/Foreign National category is USD 6,000 for 2026-27 at Ooty, the same as at Mysuru, plus other university fees that are not published in US dollars. Hostel accommodation is billed separately.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 to 4 - pharmaceutical foundations",
+              "language": "English",
+              "details": "Human anatomy and physiology, pharmaceutical analysis, pharmaceutics, inorganic and organic chemistry, biochemistry, pathophysiology, physical pharmaceutics, pharmaceutical microbiology and engineering, medicinal chemistry I, pharmacology I and pharmacognosy I."
+            },
+            {
+              "phase": "Semesters 5 to 8 - applied and professional subjects",
+              "language": "English",
+              "details": "Industrial pharmacy, pharmacology II and III, herbal drug technology, biopharmaceutics and pharmacokinetics, quality assurance, instrumental methods of analysis, pharmacy practice and novel drug delivery, with Practice School in semester 7 and a final-year project at JSS College of Pharmacy, Ooty."
+            }
+          ]
+        },
+        {
+          "slug": "jss-aher-bsc-medical-laboratory-technology",
+          "canonicalCourseSlug": "bsc-medical-laboratory-science",
+          "officialTitle": "B.Sc Medical Laboratory Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3500,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": 3500,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-09-21",
+            "notes": "JSS AHER's 2026-27 fee structure for B.Sc Allied and Healthcare Education lists a first-year fee of USD 3,500 for the NRI category in Medical Laboratory Technology, against INR 1,28,300 for the Merit category. Later-year fees are not published in the same schedule."
+          },
+          "officialProgramUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=JSSMC&COURC=BSSML",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians",
+              "Indian nationals (Merit and institutional categories)"
+            ],
+            "restrictions": [
+              "15 per cent of seats are reserved for NRI and Foreign National candidates; the 2026 intake for this programme is 15 seats.",
+              "Foreign nationals must obtain an eligibility certificate issued by JSS AHER before admission.",
+              "At least 50 per cent aggregate in Physics, Chemistry and Biology in the qualifying examination is required.",
+              "Seats are allotted subject to passing an interview under JSS AHER policy."
+            ],
+            "notes": "JSS AHER defines Foreign National applicants as foreign-passport holders, PIO applicants as PIO-card holders who are citizens of another country, and NRI applicants by where the qualifying examination was taken.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A46_777.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A three-year B.Sc in Medical Laboratory Technology at JSS Medical College, Mysuru, followed by a twelve-month internship, taught in English. Selection is on qualifying-examination marks and an interview, with 15 per cent of seats reserved for NRI and Foreign National candidates.",
+            "eligibility": {
+              "intro": "The 2026 allied health brochure accepts school-leaving qualifications from India or abroad after 12 years of study, provided the science subjects and marks below are met.",
+              "items": [
+                "Pass in 10+2, PUC II, HSC, ISC or an equivalent examination from a recognised board in India or abroad after 12 years of study.",
+                "Physics, Chemistry and Biology studied in the last two years, with at least 50 per cent of marks taken together in the three subjects.",
+                "JSS AHER's allied health regulations also require English as one of the principal subjects studied.",
+                "Applicants must be at least 17 years old on or before 31 December 2026."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the JSS AHER online admissions portal and select B.Sc Medical Laboratory Technology.",
+              "Complete the application, upload the 10th and 12th mark sheets, other documents, photograph and signature, and pay the INR 2,000 application fee online.",
+              "Apply for the JSS AHER eligibility certificate that foreign nationals need for admission.",
+              "Attend the admission interview; seats are allotted on qualifying marks subject to passing it.",
+              "Receive the provisional admission letter with fee details and use it to apply for an Indian student visa.",
+              "Report to JSS Medical Institutions Campus, Mysuru with original documents and register with the FRRO within 14 days of arrival."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 (SSLC) or equivalent mark sheet",
+                "Class 12 (PUC, 10+2 or equivalent) mark sheet in English",
+                "Grade-to-marks equivalence from the board where grades are awarded",
+                "Transfer or school-leaving certificate",
+                "Migration certificate",
+                "JSS AHER eligibility certificate for foreign nationals"
+              ],
+              "application": [
+                "Printed online application form",
+                "Passport copy",
+                "Proof of NRI status of the student, parent or sponsor where applying as NRI",
+                "Six passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "Online registration for the 2026 cycle opened on 12 February 2026. The allied health session began on 23 September 2025 and 9 October 2024 in the last two cycles; the 2026 start date is announced on the JSS AHER website.",
+            "visaConsiderations": [
+              "An Indian student visa endorsed to JSS AHER is required; nationals of Nepal and Bhutan do not need a visa to enter India.",
+              "India's Study in India guidance requires a No Objection Certificate from the Ministry of Health for admission to medical or paramedical courses.",
+              "Registration on the e-FRRO portal is required within 14 days of arrival, except for nationals of Nepal and Bhutan."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "JSS AHER's allied health sciences regulations state that the medium of instruction and examination is English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September to October - session began 23 September 2025 and 9 October 2024; 2026 date to be notified"
+          ],
+          "intakeCodes": [
+            "september",
+            "october"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "The 2026-27 NRI-category fee is USD 3,500 for the first year, charged in US dollars. The INR 2,000 application fee is paid online at registration. Hostel places at JSS Medical College were billed at INR 1,68,100 a year for men and INR 1,64,500 for women in the 2026 schedule published for medical entrants.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 to 3 - laboratory medicine coursework",
+              "language": "English",
+              "details": "Training across biochemistry, microbiology, pathology and blood bank, including phlebotomy, automated analysers, haematology and cytology, histopathology processing, mycobacterial and fungal culture, ELISA and chemiluminescence immunoassay, and quality control."
+            },
+            {
+              "phase": "Internship - twelve months",
+              "language": "English",
+              "details": "A compulsory twelve-month internship follows the six semesters of coursework, giving a four-year total programme length."
+            }
+          ]
+        },
+        {
+          "slug": "jss-aher-mba-hospital-administration",
+          "canonicalCourseSlug": "mba-healthcare-management",
+          "officialTitle": "MBA in Hospital Administration",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5200,
+            "officialTotalTuitionAmount": 10400,
+            "annualTuitionUsd": 5200,
+            "totalTuitionUsd": 10400,
+            "verifiedAt": "2026-09-21",
+            "notes": "JSS AHER's 2026-27 BBA/MBA fee structure lists the MBA in Hospital Administration at USD 5,200 in year one and USD 5,200 in year two for NRI and Foreign National students. Indian and SAARC-country students are billed semester-wise in rupees instead: INR 1,86,450 for year one and INR 1,73,950 for year two."
+          },
+          "officialProgramUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=HSMS&COURC=MBAH1",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Persons of Indian Origin (PIO card holders)",
+              "Non-Resident Indians",
+              "SAARC nationals (billed in INR)",
+              "Indian nationals (Merit and institutional categories)"
+            ],
+            "restrictions": [
+              "15 per cent of the 60 seats are reserved for NRI and Foreign National candidates.",
+              "A bachelor's degree with at least 50 per cent marks is required for the general category.",
+              "Seats are allotted on degree marks subject to passing an interview under JSS AHER policy.",
+              "Students from SAARC countries are placed on the rupee fee schedule with Indian students, not the US-dollar schedule."
+            ],
+            "notes": "JSS AHER defines Foreign National applicants as foreign-passport holders, PIO applicants as PIO-card holders who are citizens of another country, and NRI applicants by where the qualifying examination was taken.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_779.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, four-semester MBA in Hospital Administration run by JSS AHER's Department of Health System Management Studies in Mysuru, taught in English, with hospital postings in the second year and an eight-week internship. Admission is on degree marks and an interview.",
+            "eligibility": {
+              "intro": "The 2026 BBA/MBA brochure applies one academic rule to the MBA in Hospital Administration and names three international applicant categories.",
+              "items": [
+                "A bachelor's degree in any discipline from a recognised university with at least 50 per cent marks (general category).",
+                "Foreign National category: holders of a foreign passport.",
+                "PIO category: holders of a PIO card who are citizens of a country other than India.",
+                "NRI category: applicants who took the 10+2 or the bachelor's degree examination outside India."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the JSS AHER online admissions portal and select the MBA in Hospital Administration.",
+              "Enter the application details, upload the photograph and signature, and pay the INR 1,000 application fee online.",
+              "Print the generated application form and keep it for document verification.",
+              "Attend document verification and the interview; seats are allotted on degree marks subject to passing it.",
+              "Use the provisional admission letter with fee details to apply for an Indian student visa.",
+              "Report to JSS Medical Institutions Campus, Mysuru for final admission and complete e-FRRO registration within 14 days of arrival."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 mark sheets",
+                "Bachelor's degree mark sheets for each year or semester",
+                "Degree or provisional degree certificate",
+                "Migration and transfer certificates"
+              ],
+              "application": [
+                "Printed online application form",
+                "Passport copy",
+                "Proof of NRI or PIO status where applicable",
+                "Six passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "Online registration for the 2026 cycle opened on 13 February 2026. The first semester began on 9 October 2025 and 14 October 2024 in the last two cycles; the 2026 start date is announced on the JSS AHER website.",
+            "visaConsiderations": [
+              "An Indian student visa endorsed to JSS AHER is required; nationals of Nepal and Bhutan do not need a visa to enter India.",
+              "Indian student-visa conditions prohibit employment or business activity, so hospital postings form part of the course rather than paid work."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "JSS AHER's MBA Hospital Administration regulations state that the medium of instruction and evaluation is English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October - first semester began 9 October 2025 and 14 October 2024; 2026 date to be notified"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "NRI and Foreign National students pay USD 5,200 a year for two years, USD 10,400 in total, under the 2026-27 schedule. Indian and SAARC students pay in rupees: INR 1,11,450 and INR 75,000 for semesters one and two, then INR 98,950 and INR 75,000 for semesters three and four. The INR 1,000 application fee is paid online, and hostel costs are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Year 1 - management core",
+              "language": "English",
+              "details": "Principles of management and organisational behaviour, marketing, accounting, managerial economics, business statistics and analytics, quantitative techniques, human resource, strategic, financial and project management, research methodology and management information systems."
+            },
+            {
+              "phase": "Year 2 - hospital administration",
+              "language": "English",
+              "details": "Supply chain, medical law and ethics, hospital planning and designing, support and utility services, epidemiology, materials management, safety and risk, health insurance, patient safety and quality, AI in healthcare, and international health and medical tourism, with hospital postings, a project and an eight-week internship."
+            }
+          ]
+        },
+        {
+          "slug": "jss-aher-msc-nutrition-dietetics",
+          "canonicalCourseSlug": "master-nutrition-dietetics",
+          "officialTitle": "M.Sc Nutrition and Dietetics",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 2500,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": 2500,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-09-21",
+            "notes": "JSS AHER's 2026-27 M.Sc Life Sciences fee structure for the Mysuru campus lists a first-year fee of USD 2,500 for the NRI category in Nutrition and Dietetics, against INR 1,00,650 for the Merit category. The Ooty campus lists USD 1,900; this offering is the Mysuru programme."
+          },
+          "officialProgramUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=DND&COURC=NMSND",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals",
+              "Non-Resident Indians",
+              "Indian nationals (Merit and institutional categories)"
+            ],
+            "restrictions": [
+              "15 per cent of seats are reserved for NRI and Foreign National candidates.",
+              "Foreign nationals must obtain an eligibility certificate issued by JSS AHER before admission.",
+              "A science bachelor's degree with biology, food science and nutrition, clinical nutrition or home science as a subject is required.",
+              "Seats are allotted subject to passing an interview under JSS AHER policy."
+            ],
+            "notes": "JSS AHER defines Foreign National applicants as foreign-passport holders, PIO applicants as PIO-card holders who are citizens of another country, and NRI applicants by where the qualifying examination was taken.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A73_2306.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, four-semester M.Sc in Nutrition and Dietetics from JSS AHER's Department of Nutrition & Dietetics in Mysuru, taught in English, covering clinical, therapeutic and community nutrition with hospital and community internships and a final-semester dissertation.",
+            "eligibility": {
+              "intro": "The programme page and the 2026 M.Sc Life Sciences brochure set a science-degree requirement for entry.",
+              "items": [
+                "An undergraduate science degree recognised by the UGC with biology, food science and nutrition, clinical nutrition or home science as one of the subjects.",
+                "The 2026 brochure lists a B.Sc in biological sciences as the qualifying degree for M.Sc Nutrition and Dietetics.",
+                "Foreign qualifications are assessed by JSS AHER, which issues an eligibility certificate to foreign nationals."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the JSS AHER online admissions portal and select M.Sc Nutrition and Dietetics under the M.Sc Life Sciences programmes, Mysuru.",
+              "Complete the application, upload mark sheets, photograph and signature, and pay the application fee online.",
+              "Apply for the JSS AHER eligibility certificate required for foreign nationals.",
+              "Attend the interview; seats are allotted on qualifying-degree marks subject to passing it.",
+              "Use the provisional admission letter with fee details to apply for an Indian student visa, then report to Mysuru and register with the FRRO within 14 days."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 mark sheets",
+                "Bachelor's degree mark sheets for each year or semester",
+                "Migration and transfer certificates",
+                "JSS AHER eligibility certificate for foreign nationals"
+              ],
+              "application": [
+                "Printed online application form",
+                "Passport copy",
+                "Proof of NRI status where applicable",
+                "Six passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "The 2026 application form was hosted from 12 February 2026. The two-year M.Sc Life Sciences programmes began on 9 September 2024 in the 2024-25 cycle; the 2026 start date is announced on the JSS AHER website.",
+            "visaConsiderations": [
+              "An Indian student visa endorsed to JSS AHER is required; nationals of Nepal and Bhutan do not need a visa to enter India.",
+              "Registration on the e-FRRO portal is required within 14 days of arrival, except for nationals of Nepal and Bhutan."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Life Sciences regulations state that instruction, examinations, seminars and project work are in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - two-year M.Sc Life Sciences session began 9 September 2024; 2026 date to be notified"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "The 2026-27 NRI-category fee at the Mysuru campus is USD 2,500 for the first year, charged in US dollars; the Merit-category equivalent is INR 1,00,650. Later-year fees are not stated in the same schedule, and hostel and mess costs are billed separately.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 and 2 - nutrition science",
+              "language": "English",
+              "details": "Food science, body composition and metabolism, life-cycle nutrition, nutritional biochemistry, research methods and statistics, advanced nutrition, diet therapy and medical nutrition management, with electives in paediatric, geriatric, sports or molecular nutrition and nutraceuticals."
+            },
+            {
+              "phase": "Semesters 3 and 4 - clinical and community practice",
+              "language": "English",
+              "details": "Therapeutic and community nutrition, diet in endocrine disorders, maternal and child nutrition, disease-specific electives, a hospital and community nutrition internship, and a dissertation in semester 4."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "identity",
+      "claimText": "The UGC list of institutions declared Deemed to be Universities (as on 30 November 2021) includes JSS Academy of Higher Education and Research, Jagadguru Dr. Sri Shivarathri Rajendra Circle, Ramanuja Road, Mysore 570004, Karnataka, with the date 28.05.2008.",
+      "sourceLabel": "UGC consolidated list of Deemed to be Universities (30.11.2021)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+      "internalNotes": "Row 34 under Karnataka; date read from raw PDF text order (pdftotext -raw). Used for establishedYear 2008 and the UGC deemed badge. UGC 12(B) list (as on 10.06.2020) also includes JSS AHER at S.No. 16 (https://www.ugc.gov.in/oldpdf/List-of-Deemed-University%2012-B-06-10-2017.pdf)."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "summary",
+      "claimText": "JSS AHER, formerly JSS University, is a health-science-focused deemed university in Mysuru with faculties of medicine, biomedical sciences, pharmacy, dentistry, life sciences and management studies; its constituent colleges are JSS Medical College, JSS Dental College & Hospital and JSS College of Pharmacy at Mysuru and JSS College of Pharmacy at Ootacamund, Tamil Nadu (off-campus).",
+      "sourceLabel": "JSS AHER International Students Cell - About JSS AHER",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/about-us.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "campusLifestyle",
+      "claimText": "JSS AHER reports more than 650 faculty, approximately 3,500 undergraduates, 2,500 graduate students, around 700 research scholars and more than 800 international students from 35+ countries; campus facilities listed include a primary health centre, pharmacy, library, gymnasium, sports amenities, food courts, NRI apartments, banking and ATM, Wi-Fi and cycle services.",
+      "sourceLabel": "JSS AHER International Students Cell - About us and Campus facilities",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/about-us.html",
+      "internalNotes": "Facilities list from https://jssuni.edu.in/jssaher/jssaher-international-students/campus-facilities.html. The 1,800-bed JSS Hospital figure is from the 2026 BBA/MBA brochure (https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_779.pdf)."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC valid-accreditation workbook (as on 14-08-2025), sheet Universities: JSS Academy of Higher Education & Research, Mysuru - AISHE U-0222, Track KAUNGN11002, Cycle 3, CGPA 3.61, Grade A++, declared 18-10-2024.",
+      "sourceLabel": "NAAC accreditation status register - valid-accreditation workbook as on 14-08-2025",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "internalNotes": "Supervisor regulator verification 2026-09-21 (regulator-findings-india-batch-2.md). No NAAC SC results published after the 265th SC of 12 Dec 2025. NAAC publishes a declaration date, not an expiry; no validity end date is stated."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "NBA register: 'JSS College of Pharmacy, JSS Academy of Higher Education and Research, Deemed to be University (Mysore)' - Pharmacy UG, ACCREDITED, further accredited for 2025-26, 2026-27 and 2027-28, upto 30/06/2028; 'JSS COLLEGE OF PHARMACY (Nilgiris (HQ: Udhagamandalam))' - Pharmacy UG, further accredited for 2024-25, 2025-26 and 2026-27, upto 30/06/2027.",
+      "sourceLabel": "NBA accredited programmes register - Pharmacy UG",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "internalNotes": "Supervisor regulator verification 2026-09-21. JSS Science and Technology University, JSS Academy of Technical Education and JSS Polytechnics are separate institutions and their NBA rows are not used."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF India Rankings 2025: JSS Academy of Higher Education and Research (IR-O-U-0222) is ranked 21 in the University category and 38 in the Overall category.",
+      "sourceLabel": "NIRF India Rankings 2025 - University and Overall",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "internalNotes": "Overall list: https://www.nirfindia.org/Rankings/2025/OverallRanking.html. NIRF 2026 pages returned 'Website Under Maintenance' on 2026-09-21; 2025 is the latest published."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF India Rankings 2025 Pharmacy category: JSS College of Pharmacy, Ooty rank 4; JSS College of Pharmacy, Mysore rank 7. Dental category: JSS Dental College and Hospital, Mysuru rank 10. Medical category: JSS Medical College, Mysore rank 37.",
+      "sourceLabel": "NIRF India Rankings 2025 - Pharmacy, Dental and Medical",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html",
+      "internalNotes": "Dental: https://www.nirfindia.org/Rankings/2025/DentalRanking.html; Medical: https://www.nirfindia.org/Rankings/2025/MedicalRanking.html. Supervisor regulator verification 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "omit",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "JSS AHER is not on the UGC Institution of Eminence list; no Institution of Eminence claim is made.",
+      "sourceLabel": "UGC Institution of Eminence list",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "admissionsContent",
+      "claimText": "JSS AHER opened admission to international students through its International Students Cell from the 2008-09 session; the cell, a single window for foreign nationals, handles admission, visa guidance, FRRO registration and student well-being.",
+      "sourceLabel": "JSS AHER International Students Cell - General Information",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/general-inforamation.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "admissionsContent",
+      "claimText": "JSS AHER's international admission route: apply online on the university portal, attach certified mark sheets in English, grade-to-marks equivalence, transfer certificate, passport copy and NRI proof where applicable; on eligibility, a provisional admission letter with fee details is issued for the visa; students report to Mysuru for final admission and register with the FRRO within 14 days (except nationals of Nepal and Bhutan). NRI/PIO students do not require a visa.",
+      "sourceLabel": "JSS AHER International Students Cell - Admissions (How to Apply)",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/admissions.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "studentSupport",
+      "claimText": "The International Students Cell is chaired by the Dean (Academics); on arrival an executive guides airport transfer, admission formalities including collection of registration and tuition fees, and FRRO registration; a bonafide letter is issued for online FRRO registration. Contact international@jssuni.edu.in and +91 98455 55625.",
+      "sourceLabel": "JSS AHER International Students Cell - About us, Support on Arrival, Contact",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/support-on-arrival.html",
+      "internalNotes": "Also https://jssuni.edu.in/jssaher/jssaher-international-students/about-us.html and https://jssuni.edu.in/jssaher/jssaher-international-students/contact-us.html."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "faq",
+      "claimText": "JSS AHER's 2026 BBA/MBA brochure defines Foreign National (foreign passport), PIO (PIO card, citizen of another country) and NRI (last qualifying exam or graduation taken outside India) categories for international admission.",
+      "sourceLabel": "BBA (H&HSM) & MBA (HA/PA/IT) Information Brochure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_779.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "faq",
+      "claimText": "Nationals of Nepal and Bhutan do not need a visa to enter India; PIO and OCI holders do not require a student visa; the visa is applied for on the provisional admission letter at the Indian embassy, with turnaround of about 3 to 8 weeks.",
+      "sourceLabel": "JSS AHER International Students Cell - Applying for Visa / Pre Arrival",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/applying-for-visa-pre-arrival.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "faq",
+      "claimText": "An applicant should hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "sourceLabel": "Study in India - Onboarding and FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "indicative",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "faq",
+      "claimText": "JSS AHER's international students cell lists the Study in India scholarship (stating JSS AHER has granted full scholarships through it), the Embassy of India COMPEX scholarship for B.Pharm (Nepal), Royal Government of Bhutan scholarships, the MEA scheme for Syrian nationals and the e-VBAB scheme for African students.",
+      "sourceLabel": "JSS AHER International Students Cell - Scholarship Schemes for Foreign Students",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/scholarship-schemes.html",
+      "internalNotes": "Institution listing of external schemes; availability each year is set by the granting agencies. Public copy attributes the list to JSS AHER."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "thingsToConsider",
+      "claimText": "JSS AHER's MBBS Admission Fee Guidelines 2026: admission through NEET-UG 2026 and MCC deemed-university counselling; intake 250 (199 All India management, 38 NRI, 13 state quota); NRI/Foreign/PIO tuition USD 46,000 per annum payable in US dollars from the sponsor account.",
+      "sourceLabel": "JSS AHER MBBS Admission Fee Guidelines 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A76_3151.pdf",
+      "internalNotes": "MBBS is not packaged as a programme: NMC college listing and home-country licensing caveats were not verified from NMC in this pass."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "thingsToConsider",
+      "claimText": "JSS AHER's BDS Admission Fee Guidelines 2026 list all 100 BDS seats under All India Merit (Management/Paid) category through NEET-UG 2026 and MCC deemed-university counselling, with tuition of INR 6,51,800 per annum; no NRI category is listed.",
+      "sourceLabel": "JSS AHER BDS Admission Fee Guidelines 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A76_3150.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "hostelOverview",
+      "claimText": "JSS Medical College, Mysuru hostel fee structure per annum for 2026 entrants: male Rs. 1,68,100, female Rs. 1,64,500, paid at physical reporting and not included in tuition.",
+      "sourceLabel": "JSS AHER MBBS Physically Reporting Guidelines 2026 - Hostel Fee Structure",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A76_2426.pdf",
+      "internalNotes": "Same figures appear in the BDS reporting guidelines (A76_2425.pdf). Published for medical/dental entrants; hostel rates for other programmes are not published separately."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "hostelOverview",
+      "claimText": "JSS Medical College has exclusive hostels for boys and girls with furnished rooms, hygienic kitchens, RO drinking water, pantry and laundry in each block, round-the-clock male and female security guards and CCTV, and separate postgraduate hostels outside the campus; JSS College of Pharmacy, Mysuru has exclusive hostels for men and women.",
+      "sourceLabel": "JSS AHER - Hostel Facilities",
+      "sourceUrl": "https://jssuni.edu.in/JSSWeb/WebShowFromDB.aspx?K=m080744796ac3169d-5fe6-450d-ba9b-6888093c0e12"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "safetyOverview",
+      "claimText": "The Student Support Centre, formed with the Departments of Psychiatry and Clinical Psychology, provides free and confidential counselling for stress, burnout, anxiety, depression and adjustment concerns.",
+      "sourceLabel": "JSS AHER - Student Support Centre",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-academics/student-support-center.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "cityProfile",
+      "claimText": "Kempegowda International Airport, Bengaluru is about 175 km from JSS AHER; the Flybus connects the airport to Mysuru in about 4 hours for about INR 800; Shatabdi Express covers Bengaluru-Mysuru in about two hours; buses from Satellite Bus Stop run every 10 minutes, about 3 hours, INR 180-300.",
+      "sourceLabel": "JSS AHER International Students Cell - About Mysuru",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/about-mysuru.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "university",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "publicField": "dietarySupport",
+      "claimText": "JSS AHER advises international students that health insurance is mandatory on arrival in India, to carry prescriptions for regular medicines, and (for travellers from African countries) that yellow fever vaccination is mandatory before entry.",
+      "sourceLabel": "JSS AHER International Students Cell - Arrival in India / Mysuru",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/jssaher-international-students/arrival-in-india-mysuru.html"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mysuru-bpharm",
+      "publicField": "eligibility",
+      "claimText": "B.Pharm requisite qualification: 10+2 conducted by state/central government authorities or recognised as equivalent by the AIU, with English as one of the subjects and Physics, Chemistry, Mathematics/Biology as optional subjects; or a PCI-approved equivalent; minimum age 17 on or before 31 December 2026. 70% All India Merit, 15% NRI/Foreign/Management, 15% institutional preference.",
+      "sourceLabel": "UG & PG Pharmacy Information Brochure 2026-27",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mysuru-bpharm",
+      "publicField": "admissions",
+      "claimText": "2026 pharmacy admission: online application from 09.02.2026, last date 15.06.2026, Test Admission Ticket from 16.06.2026, online common entrance test 23.06.2026, reporting and admission 25-27.06.2026; selection on qualifying-examination marks and the JSS AHER online entrance test; application fee payable online only.",
+      "sourceLabel": "UG & PG Pharmacy Information Brochure 2026-27 and UG Calendar of Events 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf",
+      "internalNotes": "Calendar: https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2636.pdf. Visa/FRRO steps from https://jssuni.edu.in/jssaher/jssaher-international-students/admissions.html."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mysuru-bpharm",
+      "publicField": "intake",
+      "claimText": "UG pharmacy commencement of academic session 10.07.2026 (tentative); JSS AHER academic calendars record B.Pharm first-semester commencement on 2 July 2024 and 1 July 2025.",
+      "sourceLabel": "UG Pharmacy Calendar of Events 2026 and JSS AHER Academic Calendar 2024-25",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2636.pdf",
+      "internalNotes": "Prior-cycle dates read visually from the scanned calendar https://jssaherdatalake.blob.core.windows.net/web-jssaher/AC-2024-2025.pdf (pages 1 and 20)."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mysuru-bpharm",
+      "publicField": "fee",
+      "claimText": "UG Pharmacy Annual fee structure 2026: B.Pharm tuition fee for 1st year - Merit category Rs 2,10,600 + other fee; NRI/FN category USD 6,000 (Diploma, UG and PG at JSS College of Pharmacy, Mysuru & Ooty).",
+      "sourceLabel": "UG Pharmacy Fee Structure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2635.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mysuru-bpharm",
+      "publicField": "medium",
+      "claimText": "JSS AHER B.Pharm regulations, clause 4: medium of instruction and examination shall be in English.",
+      "sourceLabel": "JSS AHER B.Pharm Regulations and Syllabus",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/coursedetail/D_3_99.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-ooty-bpharm",
+      "publicField": "eligibility",
+      "claimText": "B.Pharm requisite qualification: 10+2 conducted by state/central government authorities or recognised as equivalent by the AIU, with English as one of the subjects and Physics, Chemistry, Mathematics/Biology as optional subjects; or a PCI-approved equivalent; minimum age 17 on or before 31 December 2026. 70% All India Merit, 15% NRI/Foreign/Management, 15% institutional preference.",
+      "sourceLabel": "UG & PG Pharmacy Information Brochure 2026-27",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-ooty-bpharm",
+      "publicField": "admissions",
+      "claimText": "2026 pharmacy admission: online application from 09.02.2026, last date 15.06.2026, Test Admission Ticket from 16.06.2026, online common entrance test 23.06.2026, reporting and admission 25-27.06.2026; selection on qualifying-examination marks and the JSS AHER online entrance test; application fee payable online only.",
+      "sourceLabel": "UG & PG Pharmacy Information Brochure 2026-27 and UG Calendar of Events 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf",
+      "internalNotes": "Calendar: https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2636.pdf. Visa/FRRO steps from https://jssuni.edu.in/jssaher/jssaher-international-students/admissions.html."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-ooty-bpharm",
+      "publicField": "intake",
+      "claimText": "UG pharmacy commencement of academic session 10.07.2026 (tentative); JSS AHER academic calendars record B.Pharm first-semester commencement on 2 July 2024 and 1 July 2025.",
+      "sourceLabel": "UG Pharmacy Calendar of Events 2026 and JSS AHER Academic Calendar 2024-25",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2636.pdf",
+      "internalNotes": "Prior-cycle dates read visually from the scanned calendar https://jssaherdatalake.blob.core.windows.net/web-jssaher/AC-2024-2025.pdf (pages 1 and 20)."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-ooty-bpharm",
+      "publicField": "fee",
+      "claimText": "UG Pharmacy Annual fee structure 2026: B.Pharm tuition fee for 1st year - Merit category Rs 2,10,600 + other fee; NRI/FN category USD 6,000 (Diploma, UG and PG at JSS College of Pharmacy, Mysuru & Ooty).",
+      "sourceLabel": "UG Pharmacy Fee Structure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2635.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-ooty-bpharm",
+      "publicField": "medium",
+      "claimText": "JSS AHER B.Pharm regulations, clause 4: medium of instruction and examination shall be in English.",
+      "sourceLabel": "JSS AHER B.Pharm Regulations and Syllabus",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/coursedetail/D_3_99.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-ooty-bpharm",
+      "publicField": "admissionsContent",
+      "claimText": "JSS College of Pharmacy, Ooty offers the B.Pharm with an intake of 100 (Ooty campus) alongside 100 at Mysuru.",
+      "sourceLabel": "UG & PG Pharmacy Information Brochure 2026-27",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A24_2363.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-bsc-medical-laboratory-technology",
+      "publicField": "eligibility",
+      "claimText": "B.Sc Allied and Healthcare Education eligibility 2026: 10+2/PUC II/HSC/ISC or equivalent from any recognised board in India or abroad after 12 years of study with Physics, Chemistry and Biology, minimum 50% in PCB taken together; age 17 by 31 December 2026; 15% of seats reserved for NRI/Foreign Nationals; foreign nationals must obtain an eligibility certificate issued by JSS AHER; seats allotted subject to interview.",
+      "sourceLabel": "B.Sc (Allied and Healthcare Education) & BOT Information Brochure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A46_777.pdf",
+      "internalNotes": "English as a principal subject from the allied health regulations https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/udpdocs/BOT.pdf. Programme page lists 10+2 with Physics, Chemistry and Biology."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-bsc-medical-laboratory-technology",
+      "publicField": "admissions",
+      "claimText": "Allied health 2026 admission: online registration from 12.02.2026; application fee Rs 2,000 paid online; selection on merit in qualifying examinations with seat allotment subject to interview; admission at JSS Medical Institutions Campus, Mysuru; MLT intake 15.",
+      "sourceLabel": "B.Sc (Allied and Healthcare Education) & BOT Information Brochure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A46_777.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-bsc-medical-laboratory-technology",
+      "publicField": "intake",
+      "claimText": "JSS AHER academic calendars record commencement of the first semester for B.Sc Allied Health Sciences courses on 9 October 2024 (2024-25) and 23 September 2025 (2025-26); the 2026-27 commencement is 'will be notified on the website'.",
+      "sourceLabel": "JSS AHER Academic Calendar 2024-25 (pages 6 and 24) and B.Sc AHE & BOT Calendar of Events 2026-27",
+      "sourceUrl": "https://jssaherdatalake.blob.core.windows.net/web-jssaher/AC-2024-2025.pdf",
+      "internalNotes": "Scanned PDF; dates read visually on 2026-09-21. 2026-27 calendar: https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A46_776.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-bsc-medical-laboratory-technology",
+      "publicField": "fee",
+      "claimText": "B.Sc Allied and Healthcare Education & BOT Annual fee structure 2026-27, fee for 1st year: Medical Laboratory Technology - Merit Rs 1,28,300; NRI category USD 3,500.",
+      "sourceLabel": "B.Sc Allied and Healthcare Education & BOT Annual Fee Structure 2026-27",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A46_2264.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-bsc-medical-laboratory-technology",
+      "publicField": "medium",
+      "claimText": "JSS AHER allied health sciences regulations (covering B.Sc MLT among courses a to l): the medium of instruction and examination shall be English.",
+      "sourceLabel": "JSS AHER Allied Health Sciences / BOT Regulations",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/udpdocs/BOT.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-bsc-medical-laboratory-technology",
+      "publicField": "teachingPhases",
+      "claimText": "B.Sc Medical Laboratory Technology: duration 4 years (6 semesters and 12 months of internship); training in biochemistry, microbiology, pathology and blood bank.",
+      "sourceLabel": "JSS AHER course finder - B.Sc Medical Laboratory Technology",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=JSSMC&COURC=BSSML"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mba-hospital-administration",
+      "publicField": "eligibility",
+      "claimText": "MBA eligibility 2026: general category - undergraduate degree from any university with minimum 50% marks; 15% of seats reserved for NRI/Foreign Nationals; seats allotted subject to interview. Programme page: any bachelor's degree from a recognised university with 50%.",
+      "sourceLabel": "BBA (H&HSM) & MBA (HA/PA/IT) Information Brochure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_779.pdf",
+      "internalNotes": "Programme page https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=HSMS&COURC=MBAH1."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mba-hospital-administration",
+      "publicField": "admissions",
+      "claimText": "MBA 2026 admission: online registration from 13.02.2026; application fee Rs 1,000 paid online; selection on merit in qualifying examinations with interview; admission at JSS Medical Institutions Campus, Mysuru; MBA in Hospital Administration intake 60, 2 years full time (4 semesters).",
+      "sourceLabel": "BBA (H&HSM) & MBA (HA/PA/IT) Information Brochure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_779.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mba-hospital-administration",
+      "publicField": "intake",
+      "claimText": "JSS AHER academic calendars record commencement of the first semester for MBA in Hospital Administration, Pharmacy Administration & Information Technology on 14 October 2024 (2024-25) and 9 October 2025 (2025-26); the 2026-27 commencement is to be notified.",
+      "sourceLabel": "JSS AHER Academic Calendar 2024-25 (pages 19 and 35)",
+      "sourceUrl": "https://jssaherdatalake.blob.core.windows.net/web-jssaher/AC-2024-2025.pdf",
+      "internalNotes": "Scanned PDF; dates read visually on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mba-hospital-administration",
+      "publicField": "fee",
+      "claimText": "Fee Structure for NRI/Foreign Nationals in USD 2026-27: MBA - Hospital Administration, I Year 5,200, II Year 5,200. Indian/SAARC students (INR): I Sem 1,11,450, II Sem 75,000 (1,86,450 per annum); III Sem 98,950, IV Sem 75,000 (1,73,950).",
+      "sourceLabel": "BBA (H & HSM) / MBA (HA / PA / IT) Annual fee structure 2026-27",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A39_2278.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mba-hospital-administration",
+      "publicField": "medium",
+      "claimText": "JSS University MBA - Hospital Administration regulations: medium of instruction/evaluation shall be English.",
+      "sourceLabel": "JSS AHER MBA Hospital Administration Regulations",
+      "sourceUrl": "https://www.jssuni.edu.in/JSSWeb/UDData/Docs/MBAHA.pdf",
+      "internalNotes": "Regulations issued under the former name JSS University; the current programme page and 2026 brochure do not contradict it."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-mba-hospital-administration",
+      "publicField": "teachingPhases",
+      "claimText": "MBA in Hospital Administration curriculum: semesters 1-2 management core; semester 3 includes hospital planning and designing, epidemiology, materials management and hospital postings; semester 4 includes health insurance, patient safety, AI in healthcare, international health and medical tourism, project work, hospital postings and an 8-week internship.",
+      "sourceLabel": "JSS AHER course finder - MBA in Hospital Administration",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=HSMS&COURC=MBAH1"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-msc-nutrition-dietetics",
+      "publicField": "eligibility",
+      "claimText": "M.Sc Nutrition and Dietetics eligibility: any undergraduate science degree recognised by UGC with Biology/Food Science & Nutrition, Clinical Nutrition or Home Science as one of the subjects (programme page); 2026 brochure lists B.Sc in Biological Sciences; 15% of M.Sc Life Sciences seats reserved for NRI/Foreign Nationals; foreign nationals need an eligibility certificate issued by JSS AHER; seats allotted subject to interview.",
+      "sourceLabel": "JSS AHER course finder - M.Sc Nutrition and Dietetics; M.Sc Life Sciences Brochure 2026",
+      "sourceUrl": "https://jssuni.edu.in/jssaher/course-finder/CourseDetail.aspx?COLLC=DND&COURC=NMSND",
+      "internalNotes": "Brochure https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A73_2306.pdf."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-msc-nutrition-dietetics",
+      "publicField": "admissions",
+      "claimText": "M.Sc Life Sciences 2026 admission: online application via the JSS AHER portal (form hosted from 12.02.2026); selection on qualifying marks with interview; M.Sc Nutrition and Dietetics at the Mysuru campus is a 2-year programme with intake 20.",
+      "sourceLabel": "M.Sc Life Sciences Information Brochure 2026",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A73_2306.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-msc-nutrition-dietetics",
+      "publicField": "intake",
+      "claimText": "JSS AHER academic calendar records commencement of the first semester for M.Sc Life Sciences courses admitted in 2024-25 on 09-09-2024; the 2026-27 commencement is to be notified.",
+      "sourceLabel": "JSS AHER Academic Calendar 2024-25 (page 17)",
+      "sourceUrl": "https://jssaherdatalake.blob.core.windows.net/web-jssaher/AC-2024-2025.pdf",
+      "internalNotes": "Scanned PDF; date read visually on 2026-09-21. No two-year M.Sc 2025-26 start date was found in the calendar file."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-msc-nutrition-dietetics",
+      "publicField": "fee",
+      "claimText": "M.Sc Life Sciences Programs - Annual fee structure 2026-27 @ Mysuru Campus, fee for 1st year: Nutrition and Dietetics - Merit Rs 1,00,650; NRI category USD 2,500. Ooty campus: Rs 78,150; USD 1,900.",
+      "sourceLabel": "M.Sc Life Sciences Fee Structure 2026-27, Mysuru Campus",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A73_2305.pdf",
+      "internalNotes": "Layout text misaligns the USD column; values confirmed with pdftotext -raw row order. Ooty: https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/webnotification/admission/A73_2308.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "status": "verified",
+      "sourceGrade": "A",
+      "entity": "programme",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "programmeSlug": "jss-aher-msc-nutrition-dietetics",
+      "publicField": "medium",
+      "claimText": "Faculty of Life Sciences regulations: the medium of the instruction, examination, seminar and project work should be in English.",
+      "sourceLabel": "JSS AHER Faculty of Life Sciences PG Regulations",
+      "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/coursedetail/D_20_11.pdf"
+    }
+  ]
+}

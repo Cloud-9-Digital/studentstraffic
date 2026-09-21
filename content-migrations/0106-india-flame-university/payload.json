@@ -1,0 +1,1325 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "bachelor-liberal-arts",
+      "name": "Bachelor of Liberal Arts",
+      "shortName": "Liberal Arts",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "liberal-arts",
+      "aliases": [
+        "Bachelor of Arts in Liberal Arts",
+        "BA Liberal Arts",
+        "BSc Liberal Arts"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Bachelor of Liberal Arts is the Students Traffic catalogue category for multidisciplinary undergraduate degrees built around a declared major rather than a single fixed syllabus. O.P. Jindal Global University maps its four-year B.A. (Hons.) in Liberal Arts and Humanities at the Jindal School of Liberal Arts and Humanities to this category, a 196-credit degree with thirteen declared majors, a self-designed major option, five internships and a choice of research or coursework pathway in the final year.",
+      "metaTitle": "Bachelor of Liberal Arts Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Liberal Arts degrees abroad by declared major, duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "Bachelor of Design is the catalogue category for four-year studio-based undergraduate design degrees. Lovely Professional University maps its B.Design Interior and Furniture programme, taught in English at Phagwara, to this category. The LPU version combines conceptual foundation coursework with intensive studio practice in interior and furniture design, adds design research methods and a dissertation, and allows an interdisciplinary minor. Other LPU B.Design tracks covering fashion, graphics, gaming, product and industrial design, and film and television production sit under the same category.",
+      "metaTitle": "B.Des Degrees for International Students",
+      "metaDescription": "Compare B.Des degrees open to international applicants: studio specialisations, duration, teaching language, intake months and published tuition."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 1,
+      "durationYears": 2,
+      "summary": "MBA is the Students Traffic catalogue category for full-time general-management master's degrees taken after a completed bachelor's degree. Lovely Professional University maps its two-year MBA, delivered in English across eight terms at the Phagwara campus and listed on the National Board of Accreditation Management PG register to 30 June 2027, to this category. LPU also runs specialised MBA tracks in areas such as international business, business analytics, supply chain and logistics, and hospital and healthcare management, which are admitted under separate programme codes.",
+      "metaTitle": "MBA Degrees for International Students",
+      "metaDescription": "Compare MBA degrees open to international applicants: programme length, teaching language, intake months, published tuition and required documents."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "flame-university",
+      "name": "FLAME University",
+      "city": "Pune",
+      "type": "Private",
+      "establishedYear": 2015,
+      "officialWebsite": "https://www.flame.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.flame.edu.in/images/home/flame-shild.svg",
+          "rights": "Official FLAME University shield emblem (vector), served from the university's own website (flame.edu.in) and used on its homepage with alt text 'FLAME Logo'. Used only to identify the institution.",
+          "checkedAt": "2026-09-21"
+        },
+        "cover": {
+          "sourceUrl": "https://www.flame.edu.in/images/titlebanners/common.jpg",
+          "rights": "Official institutional photograph served from FLAME University's own website (flame.edu.in) as a page title banner. It shows the 'FLAME UNIVERSITY' name wall at the Lavale campus. Used only to identify the institution.",
+          "checkedAt": "2026-09-21",
+          "altText": "Stone wall engraved with the name FLAME UNIVERSITY beside trees and a water feature at the Lavale campus in Pune"
+        }
+      },
+      "summary": "FLAME University is a private, fully residential university for liberal education at Lavale, off the Pune-Bengaluru Highway in Pune, Maharashtra. Accredited A++ by NAAC in 2024, it teaches three- and four-year B.A., B.Sc., BBA and BBA (Communications Management) degrees with more than 24 majors, a four-year B.Des and a two-year MBA.",
+      "campusLifestyle": "FLAME is strictly residential, and exchange-student guidance states that all students must live on campus for the whole programme. The undergraduate programme offers more than 24 majors, each with at least eight matching minors, giving over 350 major-minor combinations. Campus facilities include dedicated learning spaces, sports facilities, recreation areas, a dining hall and several cafes. Every first-year undergraduate is assigned a faculty mentor and a peer mentor.",
+      "cityProfile": "The campus is at Gat No. 1270, Lavale, off the Pune-Bengaluru Highway, Pune 412115, Maharashtra. It is on a hill, and FLAME notes that Ola and Uber cabs can be irregular there. On working days FLAME runs five or six mini and medium buses from about 11:00 to 20:00, making around seven trips to Fergusson College Road (FC Road) in Pune city and back. Bus travel is included in the annual other fees. Serious medical cases are taken by 24-hour ambulance to Chellaram hospital.",
+      "practicalExposure": "The undergraduate curriculum includes foundation courses, major and minor specialisations, experiential learning courses, value-added courses, open electives and, in the optional fourth year, project-based courses. BBA (Communications Management) majors include Advertising and Branding, Digital Marketing and Communications, and Film and Television Management, while BBA majors include Finance, Business Analytics, Marketing, Operations and Entrepreneurship. FLAME's Career Services runs a placement process, training modules and a summer internship programme for undergraduate and postgraduate students. The Office of International Relations runs semester exchanges with partner universities, and FLAME also runs the FLAME Investment Lab and a summer immersion programme.",
+      "hostelOverview": "Housing is apartment-style twin sharing and is compulsory for the whole programme. The Year I lodging and boarding fee of INR 1,90,000 covers a twin room with a bathroom shared by flatmates, plus dining and laundry for up to 40 clothes a month. A room with an attached bathroom costs INR 94,000 more a year, and an air-conditioned room with an attached bathroom INR 1,41,000 more, allotted first come, first served. Students must be back on campus by midnight and inside their hostel by 02:00.",
+      "dietarySupport": "The dining hall serves vegetarian meals only, and breakfast, lunch, evening snacks and dinner are included in the fees. Menus cover South Indian, North Indian, Maharashtrian, Chinese, Thai and Continental dishes, with live counters. Pay-and-eat cafes include Times Cafe, open until 02:00 with delivery, the Library Cafe and Juice Press.",
+      "safetyOverview": "Two residential doctors provide round-the-clock care. Of the three doctors, two are women, and students can choose to see a female doctor. A 24-hour ambulance transfers serious cases to Chellaram hospital. Students must be on campus by midnight and in their hostel by 02:00. FLAME has zero tolerance for drug abuse and can require urine, blood or breath tests.",
+      "studentSupport": "Four student counsellors, all clinical psychologists, work from 09:00 to 20:00 on working days. Every first-year undergraduate has a faculty mentor and a peer mentor, and from the second year a faculty advisor guides course choice, major and minor declaration and the degree audit. The Office of International Relations assigns student and faculty mentors to incoming exchange students.",
+      "whyChoose": [
+        "Accredited A++ by NAAC, with a CGPA of 3.56 in its first accreditation cycle, declared in October 2024.",
+        "More than 24 majors and over 350 major-minor combinations, with a three-year degree and an optional fourth Honours year.",
+        "The whole admission process is online, including FEAT or FDAT, the essay and the interview, so international applicants do not need to travel to India to be assessed.",
+        "Published eligibility rules for IB Diploma, Cambridge A Level and accredited US high school diplomas, and SAT or ACT scores can replace FLAME's own entrance test.",
+        "Year-by-year fees are published for all four undergraduate years, including lodging, boarding and other charges, so the full cost of the degree can be planned.",
+        "Care on campus includes two residential doctors, the option of a female doctor, a 24-hour ambulance and four clinical-psychologist counsellors."
+      ],
+      "thingsToConsider": [
+        "There is no dedicated international admissions page for degree students. International applicants go through the standard process, fees are published only in rupees, and the currency is confirmed in the offer letter.",
+        "Undergraduate and B.Des applicants must be under 21 on 31 July 2026, which rules out many gap-year or older applicants.",
+        "Qualifications other than IB, Cambridge A Level or an accredited US diploma need an equivalence certificate before you apply.",
+        "The dining hall is vegetarian only; other food is available only from pay-and-eat cafes.",
+        "The campus is on a hill outside the city. Cabs can be irregular and the free buses to FC Road run only from about 11:00 to 20:00.",
+        "The MBA accepts GMAT as the only non-Indian test, and admission for 2026 has closed."
+      ],
+      "bestFitFor": [
+        "Students who want a liberal education with a wide choice of majors and minors, and who are happy to choose their degree title through their major.",
+        "IB, Cambridge A Level and US-system school leavers under 21 who want to apply entirely online with SAT, ACT or FEAT.",
+        "Design applicants with UCEED, NID or NIFT scores, or those willing to sit FLAME's own design aptitude test.",
+        "Graduates with a GMAT score who want a residential MBA with a published two-year cost."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "NAAC — Accredited A++, CGPA 3.56, Cycle 1 (declared October 2024)",
+        "University Grants Commission — listed among the private universities of Maharashtra"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NAAC - accreditation status of institutions",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "UGC state-wise list of private universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is FLAME University public or private?",
+          "answer": "It is private. FLAME University was established as a state private university under the FLAME University Act 2014 (Maharashtra Act No. II of 2015), and the University Grants Commission lists it among the private universities of Maharashtra. Its sponsoring body is the Foundation for Liberal And Management Education Society."
+        },
+        {
+          "question": "What language are programmes taught in?",
+          "answer": "English. FLAME's Office of International Relations states that English is the language of instruction and examination in all courses except specific language courses, and that a minimum level of English proficiency is required. The degree admission pages do not name a specific IELTS or TOEFL score, and the essay, test and interview are all in English."
+        },
+        {
+          "question": "Can I apply straight after finishing school with a foreign qualification?",
+          "answer": "Yes, if you are under 21 on 31 July 2026. FLAME accepts the full IB Diploma, a Cambridge A Level certificate with five O Level subjects at grades A to C including English plus three A Levels, and high school diplomas from accredited US-system schools. Other foreign school qualifications need an equivalence certificate submitted with the application."
+        },
+        {
+          "question": "How much does the undergraduate programme cost?",
+          "answer": "For the incoming class of 2026, the published total is INR 11,45,000 in Year I, INR 11,95,000 in Year II, INR 12,50,000 in Year III and INR 13,00,000 in the optional Year IV. This covers the program fee, lodging and boarding with meals, and other fees. There is also a one-time INR 75,000 refundable caution deposit. Rooms with an attached bathroom or air conditioning cost INR 94,000 or INR 1,41,000 more a year."
+        },
+        {
+          "question": "Do international students pay a different fee?",
+          "answer": "FLAME publishes one fee schedule for each programme, in rupees, and no separate foreign-national rate. It has no dedicated international admissions page for degree students, so international applicants should treat the rupee figures as a planning estimate. The offer letter confirms the fee and the currency of payment."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Register at apply.flame.edu.in, complete the online application with a statement of purpose, and pay the non-refundable INR 2,000 application fee online or by demand draft. Upload your Class 10 and Class 12 records. Shortlisted applicants take the online test and essay, then an online personal interview. You can keep your original passport as identity proof for the online assessment."
+        },
+        {
+          "question": "Which entrance test do I need?",
+          "answer": "An admission test is mandatory. For the liberal education undergraduate programme, you take FLAME's online FEAT (120 minutes, no negative marking) or submit SAT or ACT scores, and SAT and ACT applicants write only the essay. For the B.Des, you take the FLAME Design Aptitude Test or submit UCEED, NID or NIFT scores. The MBA needs CAT, MAT, XAT, CMAT, NMAT, MH-CET or GMAT."
+        },
+        {
+          "question": "When is the intake and when should I apply?",
+          "answer": "Undergraduate and B.Des students start in August; new undergraduates arrived on 7 to 9 August 2026. MBA students start in late July. For 2026 entry, undergraduate applications ran in six online cycles from 30 November 2025 to 21 June 2026. Applying in an early cycle gets you an earlier decision and more time for a student visa, which FLAME says can take up to eight weeks."
+        },
+        {
+          "question": "Is FLAME accredited?",
+          "answer": "Yes. NAAC accredited FLAME University with grade A++ and a CGPA of 3.56 in its first cycle, as declared by NAAC's 220th Standing Committee in October 2024. The UGC lists it among Maharashtra's private universities. How the degree is recognised abroad depends on the credential-evaluation body in your destination country."
+        },
+        {
+          "question": "What is accommodation like?",
+          "answer": "Living on campus is compulsory for the whole programme. Rooms are apartment-style twin shares with a bathroom shared by flatmates, included in the INR 1,90,000 Year I lodging and boarding fee with meals and laundry. Rooms with an attached bathroom or air conditioning cost more and are allotted first come, first served. Students must be on campus by midnight and in their hostel by 02:00."
+        },
+        {
+          "question": "Are scholarships available?",
+          "answer": "FLAME awards merit scholarships at admission, ranging from partial to full fee waivers, based mainly on your final internal admission score, and the amount appears in the offer letter. There are also special scholarships for rank holders and sports achievers. The FLAME Fellows Program gives 20 full tuition waivers to postgraduate students with CAT or XAT above the 90th percentile or GMAT above 650. Emergency need-based support is also available."
+        },
+        {
+          "question": "Can international graduates apply for the MBA?",
+          "answer": "Yes, if they hold a bachelor's degree with at least 50 per cent aggregate from a university recognised by the UGC or an equivalent body, and a valid test score. The GMAT, valid for five years, is the practical route for most international applicants. Selection adds an essay, an online interview, a 60-second video and personality profiling. Admission for 2026 has closed."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "FLAME University - Undergraduate Program Fee Structure (incoming class of 2026)",
+          "url": "https://www.flame.edu.in/admissions/ug/fees",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Year I-IV fees, housing supplements, other-fee inclusions, caution deposit."
+        },
+        {
+          "label": "FLAME University - Undergraduate Program Minimum Eligibility",
+          "url": "https://www.flame.edu.in/admissions/ug/minimum-eligibility",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "IB, Cambridge, US-system and equivalence rules; age under 21; maths requirement; SAT/ACT."
+        },
+        {
+          "label": "FLAME University - Undergraduate Program Admission Procedure",
+          "url": "https://www.flame.edu.in/admissions/ug/admission-procedure",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "Portal, INR 2,000 fee, FEAT structure, essay, interview, documents, ID proof."
+        },
+        {
+          "label": "FLAME University - Undergraduate Program Admission Schedule 2026",
+          "url": "https://www.flame.edu.in/admissions/ug/admission-schedule",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "Six 2026 cycles."
+        },
+        {
+          "label": "FLAME University - Undergraduate Program (degrees, majors and structure)",
+          "url": "https://www.flame.edu.in/academics/ug",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "Degrees, majors, 3-year and optional 4-year structure."
+        },
+        {
+          "label": "FLAME University - Academic Calendar 2026-27",
+          "url": "https://www.flame.edu.in/important-info/academic-calendar",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "UG and B.Des arrival 7-9 Aug 2026; PG arrival 30 Jul 2026."
+        },
+        {
+          "label": "FLAME University - Campus Life FAQs",
+          "url": "https://www.flame.edu.in/campus-life/faqs",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Dining, medical, counselling, transport, curfew, drug policy, mentoring."
+        },
+        {
+          "label": "FLAME University Office of International Relations - Student Exchange Fact Sheet 2025-26 (hosted by Huron University)",
+          "url": "https://huronu.ca/wp-content/uploads/FLAME-Fact-Sheet-25-26.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "English medium of instruction; mandatory residence; visa lead time."
+        },
+        {
+          "label": "NAAC - Institutions with valid accreditation as on 14-08-2025 (Universities sheet)",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21",
+          "notes": "FLAME UNIVERSITY, U-1181, cycle 1, CGPA 3.56, A++, declared 09-10-2024."
+        },
+        {
+          "label": "NAAC - 220th Standing Committee results, Cycle 1",
+          "url": "https://naac.gov.in/images/docs/AccreditationResults/220SC/SC_220_Cycle1.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21",
+          "notes": "U-1181 FLAME UNIVERSITY, PUNE, MAHARASHTRA 3.56 A++."
+        },
+        {
+          "label": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Flame University, Lavale, Pune listed under Maharashtra (S.No. 248)."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my FLAME eligibility",
+            "capture": [
+              "school board or degree and results",
+              "date of birth for the under-21 rule",
+              "equivalence certificate status for other foreign boards",
+              "SAT, ACT, UCEED or GMAT score if available",
+              "intended programme"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my FLAME cost plan",
+            "capture": [
+              "intended programme",
+              "room type preference",
+              "budget in rupees or home currency",
+              "scholarship interest"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my FLAME application review",
+            "capture": [
+              "statement of purpose draft",
+              "choice of test (FEAT, SAT, ACT, FDAT or GMAT)",
+              "document readiness",
+              "target admission cycle"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my student visa and e-FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date"
+            ]
+          }
+        ],
+        "restrictionsSummary": "FLAME has no separate international route for degree students. Undergraduate and B.Des applicants must be under 21 on 31 July 2026, qualifications outside IB, Cambridge and accredited US boards need an equivalence certificate, residence on campus is mandatory, and fees are published only in rupees."
+      },
+      "programmes": [
+        {
+          "slug": "flame-undergraduate-liberal-education",
+          "canonicalCourseSlug": "bachelor-liberal-arts",
+          "officialTitle": "Undergraduate Program: B.A., B.Sc., BBA and BBA (Communications Management), with optional four-year Honours",
+          "durationYears": 3,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (Year I, incoming class of 2026)",
+            "annualTuitionMinUsd": 9126,
+            "annualTuitionMaxUsd": 9126,
+            "verifiedAt": "2026-09-21",
+            "notes": "FLAME publishes one fee schedule for its incoming class of 2026, in Indian rupees, with no separate foreign-national rate and no dedicated international admissions page. The Year I program fee is INR 8,75,000, about USD 9,126 at the ECB reference rate of INR 95.88 on 18 September 2026, and is shown as a planning estimate for international applicants. The program fee rises to INR 9,15,000 in Year II, INR 9,60,000 in Year III and INR 10,00,000 in the optional Year IV. Lodging and boarding is INR 1,90,000 in Year I for an apartment-style twin room with a shared bathroom, including dining and laundry for up to 40 clothes a month. An attached bathroom adds INR 94,000 and an air-conditioned room with attached bathroom adds INR 1,41,000 a year. Other fees of INR 80,000 in Year I cover IT, on-campus medical care, counselling, sports, the gymnasium and the university bus to Fergusson College Road, and a one-time refundable caution deposit of INR 75,000 is charged at admission."
+          },
+          "officialProgramUrl": "https://www.flame.edu.in/academics/ug",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Applicants from Indian boards (CBSE, CISCE and State Boards)",
+              "IB Diploma, Cambridge A Level and accredited US high school diploma holders of any nationality",
+              "Holders of other foreign Class 12-equivalent qualifications, with an equivalence certificate"
+            ],
+            "restrictions": [
+              "Applicants must be under 21 years of age on 31 July 2026",
+              "Foreign qualifications other than IB, Cambridge A Level or an accredited US diploma need an equivalence certificate submitted with the application",
+              "Majors in Computer Science, Applied Mathematics, Computer Science and Design, and Data Science and Economics require Mathematics at Class 12 or equivalent level",
+              "Residence on campus is mandatory for the whole programme"
+            ],
+            "notes": "FLAME has no separate international admissions route for degree students. International applicants use the same online process, with eligibility rules for IB, Cambridge, US-system and other foreign boards.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.flame.edu.in/admissions/ug/minimum-eligibility"
+          },
+          "admissionsContent": {
+            "overview": "One undergraduate admission leads to a three-year B.A., B.Sc., BBA or BBA (Communications Management), or an optional four-year Honours degree. The degree title depends on the major chosen from more than 24 options, and students can combine a major and minor in over 350 ways.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent qualification. FLAME publishes specific rules for IB, Cambridge, US-system and other foreign boards, and an admission test is mandatory: FEAT, SAT or ACT.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification, passed by 30 September 2026 if you are currently in Class 12",
+                "IB applicants: the full IB Diploma",
+                "Cambridge applicants: A Level certificate with five subjects at grades A to C at O Level, including English, and three subjects at A Level",
+                "US-system diplomas: a high school diploma from a school accredited by a State Department of Education or one of the six US regional accrediting agencies",
+                "Other foreign qualifications: an equivalence certificate submitted with the application",
+                "Age under 21 on 31 July 2026",
+                "An admission test: FEAT, or a SAT or ACT score valid until enrolment"
+              ]
+            },
+            "applicationSteps": [
+              "Register at apply.flame.edu.in and complete the online application with education details, achievements, a statement of purpose and your admission-cycle preference.",
+              "Pay the non-refundable INR 2,000 application fee online by card, net banking or UPI, or by demand draft.",
+              "Upload board-issued Class 10 and Class 12 records, plus SAT or ACT score cards if you are not sitting FEAT.",
+              "If shortlisted, take the online FEAT (120 minutes) and a 20-minute on-the-spot essay; SAT or ACT applicants take the essay only.",
+              "Attend the online personal interview with FLAME's admissions panel, with your passport as original identity proof.",
+              "Accept the offer on the portal and pay the enrolment deposit by the deadline in the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 or equivalent mark sheet and passing certificate issued by the board",
+                "Class 12 or equivalent mark sheet and passing certificate, if already completed",
+                "SAT score card (FLAME DI code 6784) or ACT score card (college code 8974), if used",
+                "Equivalence certificate for foreign qualifications other than IB, Cambridge or accredited US diplomas"
+              ],
+              "application": [
+                "Online application with statement of purpose",
+                "Passport-size photograph under 5 MB",
+                "Original passport, Aadhaar or PAN card as identity proof for the online assessment",
+                "Optional certificates, testimonials or recommendation letters"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry there were six online cycles, from an Early Decision deadline on 30 November 2025 to a final deadline on 21 June 2026, with results by 13 July. New undergraduates arrived on 7 to 9 August 2026.",
+            "visaConsiderations": [
+              "Foreign nationals need an Indian student visa, and FLAME's international office advises that the visa process can take up to about eight weeks.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Published totals for the incoming class of 2026 are INR 11,45,000 in Year I, INR 11,95,000 in Year II, INR 12,50,000 in Year III and INR 13,00,000 in the optional Year IV. These include the program fee, lodging and boarding with a twin room and shared bathroom, and other fees. An INR 75,000 refundable caution deposit is added at admission. Field trips, immersions, books and some software are charged extra.",
+          "teachingPhases": [
+            {
+              "phase": "Foundation year",
+              "language": "English",
+              "details": "Foundation courses, with a faculty mentor and a peer mentor assigned to every first-year undergraduate."
+            },
+            {
+              "phase": "Major and minor (Years II-III)",
+              "language": "English",
+              "details": "Specialisation courses in the chosen major and minor, plus experiential learning, value-added and open elective courses, with a faculty advisor for course choice and degree audit."
+            },
+            {
+              "phase": "Optional Year IV (Honours)",
+              "language": "English",
+              "details": "Project-based courses leading to an Honours degree in the chosen B.A., B.Sc., BBA or BBA (Communications Management) major."
+            }
+          ]
+        },
+        {
+          "slug": "flame-bachelor-of-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Undergraduate Program (B.Des)",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (Year I, incoming class of 2026)",
+            "annualTuitionMinUsd": 9126,
+            "annualTuitionMaxUsd": 9126,
+            "verifiedAt": "2026-09-21",
+            "notes": "FLAME publishes one fee schedule for its incoming class of 2026, in Indian rupees, with no separate foreign-national rate and no dedicated international admissions page. The Year I program fee is INR 8,75,000, about USD 9,126 at the ECB reference rate of INR 95.88 on 18 September 2026, and is shown as a planning estimate for international applicants. The program fee rises to INR 9,15,000 in Year II, INR 9,60,000 in Year III and INR 10,00,000 in Year IV. Lodging and boarding is INR 1,90,000 in Year I for an apartment-style twin room with a shared bathroom, including dining and laundry for up to 40 clothes a month. An attached bathroom adds INR 94,000 and an air-conditioned room with attached bathroom adds INR 1,41,000 a year. Other fees of INR 80,000 in Year I cover IT, on-campus medical care, counselling, sports, the gymnasium and the university bus to Fergusson College Road, and a one-time refundable caution deposit of INR 75,000 is charged at admission."
+          },
+          "officialProgramUrl": "https://www.flame.edu.in/admissions/ug-bdes",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Applicants from Indian boards (CBSE, CISCE and State Boards)",
+              "IB Diploma, Cambridge A Level and accredited US high school diploma holders of any nationality",
+              "Holders of other foreign Class 12-equivalent qualifications, with an equivalence certificate"
+            ],
+            "restrictions": [
+              "Applicants must be under 21 years of age on 31 July 2026",
+              "Foreign qualifications other than IB, Cambridge A Level or an accredited US diploma need an equivalence certificate submitted with the application",
+              "An admission test is mandatory: the FLAME Design Aptitude Test, or a UCEED, NID or NIFT score",
+              "Residence on campus is mandatory for the whole programme"
+            ],
+            "notes": "The B.Des has its own admission process, separate from the liberal education undergraduate programme, and uses the same foreign-board eligibility rules.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.flame.edu.in/admissions/ug-bdes/minimum-eligibility"
+          },
+          "admissionsContent": {
+            "overview": "A four-year Bachelor of Design at FLAME's residential Pune campus. It has a separate admission process built around the FLAME Design Aptitude Test (FDAT) and an online personal interview, and UCEED, NID or NIFT scores can replace the FDAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent qualification, under the same foreign-board rules as FLAME's other undergraduate degrees, plus a design admission test.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification, passed by 30 September 2026 if you are currently in Class 12",
+                "IB applicants: the full IB Diploma",
+                "Cambridge applicants: A Level certificate with five subjects at grades A to C at O Level, including English, and three subjects at A Level",
+                "US-system diplomas: a high school diploma from a school accredited by a State Department of Education or one of the six US regional accrediting agencies",
+                "Other foreign qualifications: an equivalence certificate submitted with the application",
+                "Age under 21 on 31 July 2026",
+                "An admission test: FDAT, or a valid UCEED, NID or NIFT score"
+              ]
+            },
+            "applicationSteps": [
+              "Register at apply.flame.edu.in and complete the B.Des application with education details, achievements and a statement of purpose.",
+              "Pay the non-refundable INR 2,000 application fee.",
+              "Choose to sit the FDAT, or enter a valid UCEED, NID or NIFT score, and upload Class 10 and Class 12 records.",
+              "If shortlisted, take the online two-part FDAT and attend the online personal interview, with original identity proof.",
+              "Accept the offer on the portal and pay the enrolment deposit by the deadline in the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 or equivalent mark sheet and passing certificate issued by the board",
+                "Class 12 or equivalent mark sheet and passing certificate, if already completed",
+                "UCEED, NID or NIFT score card, if used instead of FDAT",
+                "Equivalence certificate for foreign qualifications other than IB, Cambridge or accredited US diplomas"
+              ],
+              "application": [
+                "Online application with statement of purpose",
+                "Passport-size photograph under 5 MB",
+                "Original passport, Aadhaar or PAN card as identity proof for the online assessment"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry the B.Des ran six online cycles, from an Early Decision deadline on 30 November 2025 to a final deadline on 21 June 2026, with results by 13 July. First-year B.Des students arrived on 7 to 9 August 2026.",
+            "visaConsiderations": [
+              "Foreign nationals need an Indian student visa, and FLAME's international office advises that the visa process can take up to about eight weeks.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Published totals for the incoming class of 2026 are INR 11,45,000 in Year I, INR 11,95,000 in Year II, INR 12,50,000 in Year III and INR 13,00,000 in Year IV. These include the program fee, lodging and boarding with a twin room and shared bathroom, and other fees. An INR 75,000 refundable caution deposit is added at admission. Specialisation software, consumables and immersions are charged extra.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Des",
+              "language": "English",
+              "details": "Studio-based design degree on the residential Lavale campus. First-year B.Des students join induction and orientation with the undergraduate cohort in August."
+            }
+          ]
+        },
+        {
+          "slug": "flame-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "MBA, FLAME School of Business",
+          "durationYears": 2,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (Year I, incoming class of 2026)",
+            "annualTuitionMinUsd": 7874,
+            "annualTuitionMaxUsd": 7874,
+            "verifiedAt": "2026-09-21",
+            "notes": "FLAME publishes one MBA fee schedule for the incoming class of 2026, in Indian rupees, with no separate foreign-national rate. The Year I program fee is INR 7,55,000, about USD 7,874 at the ECB reference rate of INR 95.88 on 18 September 2026, and is shown as a planning estimate for international applicants. It rises to INR 7,90,000 in Year II. Lodging and boarding is INR 1,90,000 in Year I for an apartment-style twin room with a shared bathroom, including dining and laundry for up to 40 clothes a month. An attached bathroom adds INR 94,000 and an air-conditioned room with attached bathroom adds INR 1,41,000 a year. Other fees of INR 80,000 in Year I cover IT, on-campus medical care, counselling, sports, the gymnasium and the university bus to Fergusson College Road, and a one-time refundable caution deposit of INR 75,000 is charged at admission."
+          },
+          "officialProgramUrl": "https://www.flame.edu.in/admissions/pg/mba",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Graduates of any discipline from a UGC-recognised university or an equivalent body",
+              "Final-year bachelor's students who can show their results by 30 September 2026"
+            ],
+            "restrictions": [
+              "A bachelor's degree with at least 50 per cent aggregate, or an equivalent grade, is required",
+              "A current national-level test score is mandatory: CAT, MAT, XAT, CMAT, NMAT or MH-CET from the current year, or a GMAT score valid for five years",
+              "Residence on campus is mandatory for the whole programme"
+            ],
+            "notes": "For most international applicants the GMAT is the practical test route, since the other accepted tests are Indian national examinations. Admission to the MBA for the incoming class of 2026 is closed.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.flame.edu.in/admissions/pg/mba/minimum-eligibility"
+          },
+          "admissionsContent": {
+            "overview": "A two-year full-time MBA at FLAME's residential Pune campus. Selection uses a national-level or GMAT test score, an on-the-spot essay, an online personal interview, a 60-second video, the statement of purpose and personality profiling.",
+            "eligibility": {
+              "intro": "Entry requires a completed bachelor's degree in any discipline with at least 50 per cent aggregate, or an equivalent grade, plus a valid test score.",
+              "items": [
+                "A bachelor's degree in any discipline from a university recognised by the UGC or an equivalent body",
+                "At least 50 per cent aggregate or an equivalent CGPA or CPI",
+                "A CAT, MAT, XAT, CMAT, NMAT or MH-CET score from the current year, or a GMAT score valid until enrolment",
+                "Final-year students may apply if they can show their final results by 30 September 2026"
+              ]
+            },
+            "applicationSteps": [
+              "Register at apply.flame.edu.in and complete the MBA application with test scores, education, professional achievements and a statement of purpose.",
+              "Pay the non-refundable INR 2,000 application fee; you can apply before your test score is available, but the decision waits for the score card.",
+              "Upload school, graduation and any postgraduate records, plus your test score card when available.",
+              "If shortlisted, write a 20-minute online essay, attend the online personal interview and upload a 60-second video on why you want to join FLAME.",
+              "Accept the offer and pay the enrolment deposit by the deadline in the offer letter."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 (or equivalent) mark sheets and passing certificates",
+                "Graduation mark sheets for all years or semesters, and the degree certificate if received",
+                "Any postgraduate mark sheets and certificates",
+                "CAT, MAT, XAT, CMAT, NMAT, MH-CET or GMAT score card"
+              ],
+              "application": [
+                "Online application with statement of purpose",
+                "Passport-size photograph under 5 MB",
+                "60-second video uploaded to the application portal",
+                "Optional work-experience certificates and testimonials"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry the MBA had four online cycles, with deadlines from 7 December 2025 to 23 April 2026, and admission for 2026 is now closed. First-year MBA students arrived on 30 July 2026.",
+            "visaConsiderations": [
+              "Foreign nationals need an Indian student visa, and FLAME's international office advises that the visa process can take up to about eight weeks.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Published totals for the incoming class of 2026 are INR 10,25,000 in Year I and INR 10,70,000 in Year II. These include the program fee (INR 7,55,000 and INR 7,90,000), lodging and boarding (INR 1,90,000 and INR 1,95,000) and other fees (INR 80,000 and INR 85,000). An INR 75,000 refundable caution deposit is added at admission. The FLAME Fellows Program offers 20 full tuition waivers to postgraduate students with CAT or XAT above the 90th percentile, or a GMAT score above 650.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MBA",
+              "language": "English",
+              "details": "Residential MBA at the FLAME School of Business. First-year students arrive on 30 July 2026, followed by induction and orientation to 16 August 2026."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "eligibility",
+      "claimText": "Minimum eligibility: Class 12 or equivalent; IB Diploma; Cambridge A Level with 5 O Level subjects at A-C including English and 3 A Level subjects; accredited US high school diploma; other foreign 10+2 qualifications need an equivalence certificate; applicant must be under 21 on 31 July 2026; Class 12 results due by 30 September 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program Minimum Eligibility",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug/minimum-eligibility",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "FLAME's page names the UGC as the issuer of the equivalence certificate; public copy says 'equivalence certificate' without naming the issuer."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "admissions",
+      "claimText": "Online application at apply.flame.edu.in; INR 2,000 non-refundable fee; FEAT (120 minutes, 4 sections) or SAT (DI code 6784) / ACT (code 8974); on-the-spot essay (20 minutes); online personal interview; passport accepted as original ID.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program Admission Procedure",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug/admission-procedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "intake",
+      "claimText": "2026 online cycles: Early Decision deadline 30 Nov 2025 through Cycle V deadline 21 June 2026, results 13 July 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program Admission Schedule 2026",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug/admission-schedule",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "intake",
+      "claimText": "Academic Calendar 2026-27: UGLE1 and BDES1 arrival and registration 7-9 August 2026; induction 10-16 August 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.flame.edu.in/important-info/academic-calendar",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "fee",
+      "claimText": "Fee structure for the incoming class of 2026 (INR per annum): program fees 8,75,000 / 9,15,000 / 9,60,000 / 10,00,000; lodging and boarding 1,90,000 / 1,95,000 / 2,00,000 / 2,05,000; other fees 80,000 / 85,000 / 90,000 / 95,000; caution deposit INR 75,000.",
+      "status": "indicative",
+      "sourceLabel": "FLAME University - Undergraduate Program Fee Structure (incoming class of 2026)",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative for international applicants: FLAME publishes a single INR schedule with no foreign-national rate and no international admissions page (/admissions/international-students soft-404s to the homepage). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "medium",
+      "claimText": "Medium of instruction and examination at FLAME University is the English language in all courses, other than specific language courses.",
+      "status": "verified",
+      "sourceLabel": "FLAME University Office of International Relations - Student Exchange Fact Sheet 2025-26 (hosted by Huron University)",
+      "sourceUrl": "https://huronu.ca/wp-content/uploads/FLAME-Fact-Sheet-25-26.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-bachelor-of-design",
+      "publicField": "eligibility",
+      "claimText": "Minimum eligibility: Class 12 or equivalent; IB Diploma; Cambridge A Level with 5 O Level subjects at A-C including English and 3 A Level subjects; accredited US high school diploma; other foreign 10+2 qualifications need an equivalence certificate; applicant must be under 21 on 31 July 2026; Class 12 results due by 30 September 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - B.Des Minimum Eligibility",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug-bdes/minimum-eligibility",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "FLAME's page names the UGC as the issuer of the equivalence certificate; public copy says 'equivalence certificate' without naming the issuer."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-bachelor-of-design",
+      "publicField": "admissions",
+      "claimText": "Online application at apply.flame.edu.in; INR 2,000 non-refundable fee; FDAT (two parts) or UCEED/NID/NIFT scores; online personal interview; passport accepted as original ID.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - B.Des Admission Procedure",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug-bdes/admission-procedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-bachelor-of-design",
+      "publicField": "intake",
+      "claimText": "2026 online cycles: Early Decision deadline 30 Nov 2025 through Cycle V deadline 21 June 2026, results 13 July 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - B.Des Admission Schedule 2026",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug-bdes/admission-schedule",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-bachelor-of-design",
+      "publicField": "intake",
+      "claimText": "Academic Calendar 2026-27: UGLE1 and BDES1 arrival and registration 7-9 August 2026; induction 10-16 August 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.flame.edu.in/important-info/academic-calendar",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-bachelor-of-design",
+      "publicField": "fee",
+      "claimText": "Fee structure for the incoming class of 2026 (INR per annum): program fees 8,75,000 / 9,15,000 / 9,60,000 / 10,00,000; lodging and boarding 1,90,000 / 1,95,000 / 2,00,000 / 2,05,000; other fees 80,000 / 85,000 / 90,000 / 95,000; caution deposit INR 75,000.",
+      "status": "indicative",
+      "sourceLabel": "FLAME University - B.Des Fee Structure (incoming class of 2026)",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug-bdes/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative for international applicants: FLAME publishes a single INR schedule with no foreign-national rate and no international admissions page (/admissions/international-students soft-404s to the homepage). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-bachelor-of-design",
+      "publicField": "medium",
+      "claimText": "Medium of instruction and examination at FLAME University is the English language in all courses, other than specific language courses.",
+      "status": "verified",
+      "sourceLabel": "FLAME University Office of International Relations - Student Exchange Fact Sheet 2025-26 (hosted by Huron University)",
+      "sourceUrl": "https://huronu.ca/wp-content/uploads/FLAME-Fact-Sheet-25-26.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-undergraduate-liberal-education",
+      "publicField": "programmeStructure",
+      "claimText": "3-year B.A., B.Sc., BBA, BBA (Communications Management) with optional 4-year Honours; 24+ majors with at least 8 minors each, 350+ combinations; foundation, major/minor, experiential learning, value-added, project-based (Year IV) and open elective courses.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program (degrees, majors and structure)",
+      "sourceUrl": "https://www.flame.edu.in/academics/ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "eligibility",
+      "claimText": "Bachelor's degree in any discipline from a UGC-recognised university or equivalent body with at least 50% aggregate; final-year students must produce results by 30 September 2026; CAT/MAT/XAT/CMAT/NMAT/MH-CET from the current year or GMAT (valid 5 years).",
+      "status": "verified",
+      "sourceLabel": "FLAME University - MBA Minimum Eligibility",
+      "sourceUrl": "https://www.flame.edu.in/admissions/pg/mba/minimum-eligibility",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "admissions",
+      "claimText": "Online application at apply.flame.edu.in; INR 2,000 fee; test score mandatory but may follow the application; essay (20 minutes) and online personal interview; documents include graduation mark sheets and test score card.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - MBA Admission Procedure",
+      "sourceUrl": "https://www.flame.edu.in/admissions/pg/mba/admission-procedure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "admissions",
+      "claimText": "Selection considers test score, essay, online PI, academic record, extracurricular and professional achievements, SOP and personality profiling, plus a 60-second video.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - MBA Selection Process",
+      "sourceUrl": "https://www.flame.edu.in/admissions/pg/mba/selection-process",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "intake",
+      "claimText": "MBA 2026 cycles: deadlines 7 Dec 2025, 18 Jan 2026, 15 Mar 2026 and 23 Apr 2026; admission for the incoming class of 2026 is closed.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - MBA Admission Schedule 2026",
+      "sourceUrl": "https://www.flame.edu.in/admissions/pg/mba/admission-schedule",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "intake",
+      "claimText": "Academic Calendar 2026-27: PGB1, PGC1, PGPEI and MSc1 arrival and registration 30 July 2026; induction 31 July to 16 August 2026.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.flame.edu.in/important-info/academic-calendar",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "PGB1 is read as the first-year MBA (business) cohort; PGC1 as MBA (Communications Management)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "fee",
+      "claimText": "MBA fee structure, incoming class of 2026 (INR): program fees 7,55,000 / 7,90,000; lodging and boarding 1,90,000 / 1,95,000; other fees 80,000 / 85,000; totals 10,25,000 / 10,70,000; caution deposit INR 75,000.",
+      "status": "indicative",
+      "sourceLabel": "FLAME University - MBA Program Fee Structure (incoming class of 2026)",
+      "sourceUrl": "https://www.flame.edu.in/admissions/pg/mba/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Single INR schedule; no foreign-national rate published. USD at ECB INR 95.88 on 18 Sep 2026."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "fee",
+      "claimText": "FLAME Fellows Program: 20 postgraduate scholarships with 100% tuition waiver for CAT/XAT above 90 percentile or GMAT above 650.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Scholarships and Need-based Support",
+      "sourceUrl": "https://www.flame.edu.in/admissions/scholarships",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "flame-university",
+      "programmeSlug": "flame-mba",
+      "publicField": "medium",
+      "claimText": "Medium of instruction and examination at FLAME University is the English language in all courses, other than specific language courses.",
+      "status": "verified",
+      "sourceLabel": "FLAME University Office of International Relations - Student Exchange Fact Sheet 2025-26 (hosted by Huron University)",
+      "sourceUrl": "https://huronu.ca/wp-content/uploads/FLAME-Fact-Sheet-25-26.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "identity",
+      "claimText": "Flame University, GAT No. 1270, Village Lavale, Taluka Mulshi, Pune, Maharashtra appears on the UGC state-wise list of private universities under Maharashtra (S.No. 248).",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "establishedYear",
+      "claimText": "FLAME University was established as a state private university vide the FLAME University Act 2014 (Maharashtra Act No. II of 2015) of the Government of Maharashtra.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Accreditation (FLAME University Act; UGC 2(f))",
+      "sourceUrl": "https://www.flame.edu.in/about-flame/accreditation",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "establishedYear 2015 follows the Maharashtra Act number year."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC valid-accreditation workbook as on 14-08-2025: FLAME UNIVERSITY, Track MHUNGN113637, AISHE U-1181, cycle 1, CGPA 3.56, grade A++, date of declaration 09-10-2024.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Institutions with valid accreditation as on 14-08-2025 (Universities sheet)",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Declaration date only; NAAC publishes no expiry date."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC 220th Standing Committee, Cycle 1 results: U-1181 FLAME UNIVERSITY, PUNE, MAHARASHTRA, 3.56, A++.",
+      "status": "verified",
+      "sourceLabel": "NAAC - 220th Standing Committee results, Cycle 1",
+      "sourceUrl": "https://naac.gov.in/images/docs/AccreditationResults/220SC/SC_220_Cycle1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC lists Flame University, Pune among the private universities of Maharashtra.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "thingsToConsider",
+      "claimText": "NBA register lists FLAME SCHOOL OF BUSINESS (Pune) MBA as accredited for 5 years w.e.f. 01-07-2015 only; no current NBA accreditation, so no NBA badge.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programmes register, Management PG",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Omitted from public copy; recorded so a later agent does not add a lapsed NBA claim."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "summary",
+      "claimText": "FLAME offers 3-year and optional 4-year B.A., B.Sc., BBA and BBA (Communications Management) degrees with 24+ majors; B.Des and MBA programmes are admitted separately.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program (degrees, majors and structure)",
+      "sourceUrl": "https://www.flame.edu.in/academics/ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "campusLifestyle",
+      "claimText": "FLAME University programs are residential and it is mandatory for all students to live on campus for the complete duration of the program.",
+      "status": "verified",
+      "sourceLabel": "FLAME University Office of International Relations - Student Exchange Fact Sheet 2025-26 (hosted by Huron University)",
+      "sourceUrl": "https://huronu.ca/wp-content/uploads/FLAME-Fact-Sheet-25-26.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "campusLifestyle",
+      "claimText": "FLAME University has a strictly residential program; campus has learning, sporting, accommodation and recreation spaces, amenities, a dining hall and several cafes.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Campus Infrastructure",
+      "sourceUrl": "https://www.flame.edu.in/campus-life/infrastructure",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "cityProfile",
+      "claimText": "Campus is located on a hill; Ola/Uber frequency can be irregular; 5-6 buses run on fixed schedules with the first bus at 11:00 and the last at 20:00, about 7 trips a day to FC Road; 24-hour ambulance to Chellaram hospital for serious cases.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Campus Life FAQs",
+      "sourceUrl": "https://www.flame.edu.in/campus-life/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "practicalExposure",
+      "claimText": "Programme comprises Foundation, Specialisation (Major and Minor), Experiential Learning, Value-Added, Project-based (optional Year IV) and Open Elective courses; BBA and BBA (CM) majors listed.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program (degrees, majors and structure)",
+      "sourceUrl": "https://www.flame.edu.in/academics/ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "practicalExposure",
+      "claimText": "FLAME's site navigation lists Career Services pages for placement process, training modules, placement report and summer internship program, and Global Connect study-abroad pages.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program (degrees, majors and structure)",
+      "sourceUrl": "https://www.flame.edu.in/academics/ug",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Navigation-level evidence only; no placement statistics are used in public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "hostelOverview",
+      "claimText": "Apartment-style twin sharing with common bathroom included; attached bathroom +INR 94,000; AC with attached bathroom +INR 1,41,000; lodging and boarding includes dining and laundry up to 40 clothes a month.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Undergraduate Program Fee Structure (incoming class of 2026)",
+      "sourceUrl": "https://www.flame.edu.in/admissions/ug/fees",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "hostelOverview",
+      "claimText": "Students must be back on campus by 12:00 am and inside their hostels by 02:00 am.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Campus Life FAQs",
+      "sourceUrl": "https://www.flame.edu.in/campus-life/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "dietarySupport",
+      "claimText": "Dining hall serves vegetarian meals with breakfast, lunch, evening snacks and dinner included in fees; Times Cafe open until 2am with delivery, Library Cafe and Juice Press are pay-and-eat.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Campus Life FAQs",
+      "sourceUrl": "https://www.flame.edu.in/campus-life/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "safetyOverview",
+      "claimText": "24-hour doctor availability with 2 residential doctors; 2 female and 1 male doctor with choice of female doctor; 24-hour ambulance; zero-tolerance drug policy with testing.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Campus Life FAQs",
+      "sourceUrl": "https://www.flame.edu.in/campus-life/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "studentSupport",
+      "claimText": "Team of 4 student counsellors, all clinical psychologists, 9 AM to 8 PM on working days; faculty mentor and peer mentor in first year; faculty advisor in second and third year.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Campus Life FAQs",
+      "sourceUrl": "https://www.flame.edu.in/campus-life/faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "faq",
+      "claimText": "Merit scholarships from partial to full fee waivers based on final internal admission scores; special scholarships for rank holders and sports achievers; emergency need-based tuition support.",
+      "status": "verified",
+      "sourceLabel": "FLAME University - Scholarships and Need-based Support",
+      "sourceUrl": "https://www.flame.edu.in/admissions/scholarships",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "flame-university",
+      "publicField": "faq",
+      "claimText": "Visa application process may take up to eight weeks or so depending on the Indian Embassy in the home country.",
+      "status": "verified",
+      "sourceLabel": "FLAME University Office of International Relations - Student Exchange Fact Sheet 2025-26 (hosted by Huron University)",
+      "sourceUrl": "https://huronu.ca/wp-content/uploads/FLAME-Fact-Sheet-25-26.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    }
+  ]
+}

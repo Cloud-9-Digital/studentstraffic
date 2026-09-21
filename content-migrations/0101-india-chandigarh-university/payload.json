@@ -1,0 +1,2313 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-aerospace-engineering",
+      "name": "B.E./B.Tech in Aerospace Engineering",
+      "shortName": "B.E./B.Tech Aerospace",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "aerospace-engineering",
+      "aliases": [
+        "Bachelor of Aerospace Engineering",
+        "BEng Aerospace Engineering"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate aerospace engineering degrees. Programmes in this category cover aerodynamics, flight mechanics, propulsion, aerospace structures, control systems and spacecraft dynamics, supported by wind-tunnel, propulsion and structures laboratories and a final-year design project. In India the award is a B.Tech. or B.E. over eight semesters, and international entry normally requires physics and mathematics at the school-leaving stage.",
+      "metaTitle": "B.E./B.Tech Aerospace Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech Aerospace degrees abroad by four-year structure, subject prerequisites, teaching language, tuition in USD and international entry."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 1,
+      "durationYears": 2,
+      "summary": "MBA is the Students Traffic catalogue category for full-time general-management master's degrees taken after a completed bachelor's degree, usually over one or two years. Programmes combine a core in accounting, finance, marketing, operations, organisational behaviour and strategy with a specialisation such as finance, marketing, human resources or international business, plus case work, projects and an internship or live industry assignment.",
+      "metaTitle": "MBA Degrees for International Students",
+      "metaDescription": "Compare MBA degrees open to international applicants: programme length, teaching language, intake months, published tuition and required documents."
+    },
+    {
+      "slug": "bpharm",
+      "name": "Bachelor of Pharmacy",
+      "shortName": "B.Pharm",
+      "stream": "pharmacy",
+      "level": "bachelors",
+      "discipline": "pharmacy",
+      "aliases": [
+        "BPharm",
+        "Bachelor's Degree in Pharmacy"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate Bachelor of Pharmacy degrees, typically four years after upper-secondary physics, chemistry and biology or mathematics. Curricula cover pharmaceutics, pharmaceutical chemistry, pharmacology and pharmacognosy with laboratory work and industrial or hospital training; registration to practise as a pharmacist is governed separately by each country's pharmacy regulator.",
+      "metaTitle": "B.Pharm Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Pharmacy (B.Pharm) degrees for international applicants: entry subjects, duration, intakes, tuition and each admission route."
+    },
+    {
+      "slug": "bachelor-psychology",
+      "name": "Bachelor's in Psychology",
+      "shortName": "Bachelor's Psychology",
+      "stream": "psychology",
+      "level": "bachelors",
+      "discipline": "psychology",
+      "aliases": [
+        "BA Psychology",
+        "BSc Psychology"
+      ],
+      "displayOrder": 5,
+      "durationYears": 3,
+      "summary": "This catalogue category covers undergraduate psychology degrees such as the BA or BSc in Psychology, usually three or four years. Programmes introduce developmental, social, cognitive, clinical and organisational psychology alongside research methods and statistics; professional practice as a psychologist normally requires further postgraduate training and registration.",
+      "metaTitle": "Bachelor's Psychology Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Psychology degrees (BA/BSc) for international applicants: duration, teaching language, intakes, tuition and each admission route."
+    },
+    {
+      "slug": "bachelor-journalism",
+      "name": "Bachelor's in Journalism",
+      "shortName": "Bachelor's Journalism",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "journalism",
+      "aliases": [
+        "BA Journalism",
+        "Bachelor of Journalism"
+      ],
+      "displayOrder": 6,
+      "durationYears": 3,
+      "summary": "This catalogue category covers undergraduate journalism and mass communication degrees, usually three or four years. Programmes typically combine news reporting, writing and editing, broadcast and digital production, media law and ethics, and public relations or advertising, with studio work, portfolio projects and media internships.",
+      "metaTitle": "Bachelor's Journalism Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Journalism and mass communication degrees for international applicants: duration, intakes, tuition and each admission route."
+    },
+    {
+      "slug": "msc-chemistry",
+      "name": "M.Sc. in Chemistry",
+      "shortName": "M.Sc. Chemistry",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "chemistry",
+      "aliases": [
+        "Master of Science in Chemistry",
+        "MSc Chemistry"
+      ],
+      "displayOrder": 7,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate Master of Science degrees in chemistry, usually two years after a science bachelor's degree with chemistry. Programmes typically advance organic, inorganic, physical and analytical chemistry with spectroscopy and instrumentation, supported by extensive laboratory work, seminars and a research project or dissertation.",
+      "metaTitle": "M.Sc. Chemistry Degrees for International Students",
+      "metaDescription": "Compare M.Sc. Chemistry degrees for international applicants: duration, teaching language, intake months, tuition and each university's entry requirements."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "chandigarh-university",
+      "name": "Chandigarh University",
+      "city": "Mohali",
+      "type": "Private",
+      "establishedYear": 2012,
+      "officialWebsite": "https://www.cuchd.in/",
+      "mediaAttribution": {},
+      "summary": "Chandigarh University is a state private university established by a 2012 Act of the Punjab legislature, with its campus at Gharuan in Mohali district on the Chandigarh-Ludhiana highway. It teaches engineering, business, pharmacy, sciences, media, design, law and liberal arts in English, and admits international students through its own International Admission Department.",
+      "campusLifestyle": "The Gharuan campus covers more than 150 acres, and CU reports more than 2,500 international students from over 65 countries. Each academic block has its own library, and the central library opens seven days a week. Food courts sit beside every block, and two banks with four ATMs operate on campus. Classes run Monday to Friday, 9:30 am to 4:30 pm. A formal dress code applies, with student uniform on Wednesdays. The campus is alcohol-free, and CU reports smoking, drug or alcohol use to the local police.",
+      "cityProfile": "Gharuan is a village in Kharar tehsil of Sahibzada Ajit Singh Nagar (Mohali) district, and the campus sits on NH-05, the Chandigarh-Ludhiana highway. Chandigarh city, railway station and international airport are the nearest hubs. From Chandigarh's ISBT Sector 43, CTU bus 20 runs to Kharar bus stand, where an auto-rickshaw covers the last stretch. Long-route buses to Ludhiana via Kharar also stop in front of the university. CU offers a free airport pickup from New Delhi or Chandigarh international airport, but only if flight details reach international@cumail.in at least two weeks before arrival. Punjab summers (May-July) run 30-44 C and winters (November-January) 2-20 C, so warm clothing is needed from November. Private rooms can be rented off campus in Kharar or Mohali.",
+      "practicalExposure": "The National Board of Accreditation's Tier I (Washington Accord) register lists eight B.E. programmes to 30 June 2027: Civil, Electrical, Mechanical, Chemical, Computer Science and Engineering, Aerospace, Electronics and Communication, and Mechatronics. The MBA is on NBA's Management PG register to the same date. CU also runs industry-linked B.E. CSE (Hons.) tracks with IBM in AI and machine learning, cloud computing, data science, cyber security and the Internet of Things, plus a Computer Science and Business Systems track with TCS. For time abroad, CU lists a European Project Semester for engineering, management and fashion students: two months of study in Italy and four months of training with European companies. It also names semester exchanges by discipline, such as aerospace places at IPSA in France and SPbPU in Russia, and MBA exchanges in Poland, Germany, Belgium, South Korea and Taiwan. The B.A. Psychology (Hons.) includes field study, a practicum and an internship.",
+      "hostelOverview": "Campus hostels are single-sex, and the fee is paid yearly in advance because there is one intake. International rates per year (meals included) are: AC 5-seater, men, USD 1,950; AC 4-seater, women, USD 2,350; AC 3-seater USD 2,600; AC 2-seater, men, USD 3,140; AC single, men, USD 3,530. Non-AC rooms cost USD 2,150 for a 4-seater, USD 2,350 for a 3-seater, USD 2,750 for a 2-seater (men) and USD 3,000 for a single (men). CU says rates rise each year for the batch to cover food inflation. Rooms come with a bed, mattress, cupboard, study table and chair. Basic electricity units are free, and extra use is billed. Students who arrive without a paid booking can stay one night only.",
+      "dietarySupport": "Hostel messes serve Indian vegetarian meals, with non-vegetarian meals twice a week, and the cost is part of the hostel fee. SAARC students can pay a small monthly amount for upgraded meals. Students may cook in their rooms on induction heaters, paying for electricity above the free allowance. Branded and local food courts sit next to every academic block, and hostel tuck shops sell bedding and toiletries.",
+      "safetyOverview": "CU says the campus is guarded 24x7 with CCTV and is ragging-free, with separate emergency lines for security, medical help, the women cell and anti-ragging. A registered doctor runs OPD in working hours. Three ambulances are on campus, and medical supervisors cover the hostels 24x7. Health insurance is compulsory. Without a valid policy, about INR 3,500 a year is billed for a group cover that excludes routine OPD.",
+      "studentSupport": "The International Admission Department (international@cumail.in, +91 7626862200) handles admission queries. On arrival, students collect a University Identification Number and Wi-Fi access. The FRO help desk in Block A1 guides FRO registration and visa extensions, which take about 45 days. SIM cards need a passport and visa copy or the student ID card with two photographs.",
+      "whyChoose": [
+        "NIRF 2025 (Ministry of Education) places CU 19th in the University category, 32nd Overall, 31st in Engineering, 32nd in Management and 15th in Pharmacy",
+        "Eight B.E. branches, including CSE, Mechanical and Aerospace, are on NBA's Tier I (Washington Accord) register to 30 June 2027, and the MBA is on NBA's Management PG register to the same date",
+        "Published international tuition is in US dollars per semester: USD 3,200 for the listed B.E. branches, USD 3,700 for the MBA and B.Pharm, and USD 1,900 for the B.A. programmes",
+        "The published international admission route has no entrance-test stage: registration, an eligibility check, Offer Letter, acceptance, invoice and an Acceptance Letter for the visa",
+        "An on-campus FRO help desk, free airport pickup booked in advance, and a Language Foundation Program for students from non-English-speaking countries"
+      ],
+      "thingsToConsider": [
+        "CU's NAAC A+ (CGPA 3.28) is a Cycle 1 grade declared in September 2019. NAAC's status list shows no newer cycle through December 2025, so applicants can check NAAC's list for a later declaration",
+        "Fees are in two tiers: SAARC nationals pay per-semester rupee rates, for example INR 1,59,000 for B.E. CSE, while other nationalities pay the dollar rate. Scholarships of up to 50 per cent are advertised, but the marks bands are not published",
+        "Work and business are not allowed on an Indian student visa. The visa must be endorsed to Chandigarh University, Mohali, and FRO registration is due within 14 days of arrival. A single-entry visa means a fresh visa after any trip home",
+        "There is one intake a year. The AY 2027-28 session starts on 14 July 2027, and late reporting counts against attendance. Fees are paid by SWIFT to Chandigarh Educational Trust Regd., and CU warns that payments made to agents are at the student's own risk",
+        "CU publishes no IELTS or TOEFL minimum, so applicants should be ready to study in English. B.Pharm applicants also need a school qualification that the Association of Indian Universities treats as equivalent to India's 10+2",
+        "Chandigarh University also has a separate campus in Uttar Pradesh (Unnao). Everything on this page refers to the Gharuan, Mohali campus in Punjab"
+      ],
+      "bestFitFor": [
+        "Engineering applicants who want an NBA Tier I (Washington Accord) listed B.E. branch, such as CSE, Mechanical or Aerospace, with USD-denominated fees",
+        "Graduates seeking an NBA-accredited two-year MBA in English with HR, Finance, Marketing, IT, International Business or Entrepreneurship specialisations",
+        "Students who want a large residential campus with single-sex hostels, meals included in the hostel fee and an on-campus FRO help desk",
+        "Applicants from SAARC countries, who are billed on a separate rupee fee tier"
+      ],
+      "industryPartners": [
+        "IBM",
+        "TCS"
+      ],
+      "recognitionBadges": [
+        "UGC - State (Private) University, Punjab, notified 10 July 2012",
+        "UGC - Included under Section 12(B) of the UGC Act, 1956 (547th Commission meeting, May 2020)",
+        "NAAC - Accredited A+, CGPA 3.28, Cycle 1 (declared September 2019)",
+        "NBA Tier I (Washington Accord) - eight B.E. programmes accredited to 30 June 2027",
+        "NBA - MBA accredited on the Management PG register to 30 June 2027"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC - State-wise List of State (Private) Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated_List_Private_Universities.pdf"
+        },
+        {
+          "label": "UGC - State (Private) Universities under Section 12(B)",
+          "url": "https://www.ugc.gov.in/oldpdf/LIST_OF_STATE_PRIVATE_UNIVERSITY_UNDER_SECTION_12B.pdf"
+        },
+        {
+          "label": "NAAC - Accreditation Status (valid-accreditation workbook)",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NBA - Accredited Programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Chandigarh University public or private?",
+          "answer": "It is a state private university. It was established by the Chandigarh University Act, 2012 (Punjab Act No. 7 of 2012), which is headquartered at Gharuan in Mohali district and receives no state grant. UGC lists it among state private universities, notified on 10 July 2012, and includes it under Section 12(B) of the UGC Act following the Commission's 547th meeting in May 2020."
+        },
+        {
+          "question": "What language are programmes taught in?",
+          "answer": "CU states that English is the medium of instruction in its classes, with no switch to Hindi or Punjabi later in the degree. For international students from non-English-speaking countries, CU offers a Language Foundation Program (LFP), which can be chosen on the international registration form."
+        },
+        {
+          "question": "Do international applicants need an entrance exam or an English test?",
+          "answer": "CU's international admission tracker has no entrance-test stage. It runs from enquiry to an eligibility check, Offer Letter, acceptance, invoice and an Acceptance Letter for the visa. CUCET belongs to CU's Indian-national route. CU's international pages publish no IELTS or TOEFL minimum, but classes are taught in English. B.Arch is different: it needs a NATA or JEE aptitude score, which is why it is not listed here."
+        },
+        {
+          "question": "What are the academic entry requirements?",
+          "answer": "Requirements vary by programme. The B.E. CSE needs 10+2 with Physics and Mathematics plus a third science or computing subject and 60 per cent. Mechanical and Aerospace need the same subjects with 50 per cent. B.Pharm needs 60 per cent with English and PCM/PCB, AIU equivalence and a minimum age of 17. The MBA needs a bachelor's degree with 50 per cent, B.A. Psychology needs 55 per cent in any stream, and B.A. Journalism needs 50 per cent in any stream."
+        },
+        {
+          "question": "How much does it cost per year in total?",
+          "answer": "International tuition is USD 3,200 per semester for the listed B.E. branches (USD 6,400 a year), USD 3,700 per semester for the MBA and B.Pharm, USD 2,200 for M.Sc. Chemistry and USD 1,900 for the B.A. programmes. Hostels with meals add USD 1,950-3,530 a year depending on the room. Insurance adds about INR 3,500 a year unless you hold a valid policy, plus charges such as uniform and fest fees. SAARC nationals pay separate rupee rates."
+        },
+        {
+          "question": "Are scholarships available for international students?",
+          "answer": "CU advertises a merit scholarship of up to 50 per cent for international students, but it does not publish the marks bands or which fee components it covers. Government of India scholarships run separately through the ICCR. Students Traffic can help you request the scholarship terms in writing before you pay the first-semester fee."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Register on CU's international portal at cuchd.in/international/registration and upload your Grade 10 and Grade 12 (or degree) results, translated into English where needed, with a grade-percentage equivalency certificate. After the eligibility check, CU issues an Offer Letter. You then sign the Acceptance of Offer Letter, pay the invoiced fee by SWIFT, and receive the Acceptance Letter used for the student visa."
+        },
+        {
+          "question": "When is the intake and when should I apply?",
+          "answer": "CU has one academic intake a year. Its calendar sets the start of the AY 2027-28 session for 14 July 2027. No fixed international closing date is published, but the first semester fee must be paid on or before arrival. Late reporting counts against attendance, and CU asks late arrivals to seek written permission from international@cumail.in. Allow up to three months for the visa."
+        },
+        {
+          "question": "What visa and FRRO steps apply after admission?",
+          "answer": "Apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali, using CU's Acceptance Letter; Nepalese and Bhutanese nationals are exempt. The Bureau of Immigration requires FRRO/FRO registration within 14 days of arrival for visas longer than 180 days and prohibits work and business on a student visa. CU's FRO help desk in Block A1 handles registration and extensions."
+        },
+        {
+          "question": "What is Chandigarh University's accreditation status?",
+          "answer": "NAAC accredited CU A+ with a CGPA of 3.28 in Cycle 1, declared in September 2019, and it remains on NAAC's list of institutions with valid accreditation. No newer cycle has been declared through December 2025. NBA's Tier I (Washington Accord) register lists eight B.E. branches, and its Management PG register lists the MBA, all to 30 June 2027. NIRF 2025 ranks CU 19th among universities."
+        },
+        {
+          "question": "What accommodation is available and what does it cost?",
+          "answer": "Campus hostels are single-sex and are paid yearly in advance, with meals included. International rates run from USD 1,950 for an AC 5-seater (men) and USD 2,150 for a non-AC 4-seater to USD 3,530 for an AC single (men). Women's rooms are the AC 4-seater at USD 2,350 and the shared 3-seater categories. CU says rates rise each year to cover food inflation, and private rooms are available in Kharar and Mohali."
+        },
+        {
+          "question": "Can I change programme after arriving?",
+          "answer": "Yes. CU allows a programme change after arrival, before a deadline it announces, if seats are available, and a nominal administrative fee may apply. Transcripts still pending at admission must be submitted within one week of reporting, or within a week of the result being published if it was awaited."
+        },
+        {
+          "question": "How does CU compare with other private universities in Punjab?",
+          "answer": "In NIRF 2025, CU ranks 19th in the University category and 31st in Engineering. Its B.E. international tuition is USD 3,200 per semester, and SAARC nationals pay a separate rupee tier. Its NAAC grade dates from a 2019 Cycle 1 declaration, so compare declaration years as well as grades when you shortlist Punjab universities."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "CU International - Study in India overview",
+          "url": "https://www.cuchd.in/international/international.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CU International - admissions, fee, hostel and visa FAQs",
+          "url": "https://www.cuchd.in/international/faq.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CU International - online registration and admission status",
+          "url": "https://www.cuchd.in/international/registration/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CU International - Pre-arrival and post-arrival information",
+          "url": "https://www.cuchd.in/international/arrival.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CU International - Visa information and FRRO process",
+          "url": "https://www.cuchd.in/international/visa-information.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CU - Hostel facility and fee table",
+          "url": "https://www.cuchd.in/student-services/hostel-facility.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "International (USD) annual rates by room type."
+        },
+        {
+          "label": "CU International - programme fee and eligibility service",
+          "url": "https://www.cuchd.in/international/engineering/be-computer-science-engineering.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Course Fee and Eligibility tabs load from services.aspx/GetInternationalProgramDetails by programme code."
+        },
+        {
+          "label": "CU - Academic calendar 2026-27",
+          "url": "https://www.cuchd.in/academics/academic-calendar.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "The Chandigarh University Act, 2012 (Punjab Act 7 of 2012)",
+          "url": "https://indiankanoon.org/doc/139883784/",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Act text read on Indian Kanoon; India Code handle 123456789/14972 was unreachable."
+        },
+        {
+          "label": "UGC - State-wise List of State (Private) Universities as on 17.01.2024",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated_List_Private_Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "UGC - State (Private) Universities under Section 12(B), as on 10.05.2024",
+          "url": "https://www.ugc.gov.in/oldpdf/LIST_OF_STATE_PRIVATE_UNIVERSITY_UNDER_SECTION_12B.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NAAC - Accreditation status",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NBA - Accredited programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking (Ministry of Education)",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Bureau of Immigration - Study in India",
+          "url": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "No employment or business on a student visa; FRRO within 14 days."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Chandigarh University eligibility",
+            "capture": [
+              "citizenship or passport country",
+              "school-leaving or degree qualification held",
+              "aggregate marks and subjects",
+              "intended programme"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Work out my CU fee tier and total cost",
+            "capture": [
+              "citizenship (SAARC or other)",
+              "intended programme",
+              "hostel room preference",
+              "medical insurance status"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my CU international application review",
+            "capture": [
+              "document readiness",
+              "result status (declared or awaited)",
+              "need for English translations",
+              "grade-percentage equivalency certificate"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my Indian student visa and FRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date",
+              "airport of arrival"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "cu-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "Bachelor of Engineering (B.E.) Computer Science and Engineering, Chandigarh University, Mohali",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6400,
+            "officialTotalTuitionAmount": 25600,
+            "annualTuitionUsd": 6400,
+            "totalTuitionUsd": 25600,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code CS201 lists USD 3,200 per semester for international students and INR 159,000 per semester for SAARC nationals. That is USD 6,400 a year and USD 25,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/engineering/be-computer-science-engineering.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India",
+              "Hostel rooms in the AC 5-seater, AC 2-seater and single categories are for men only, and the AC 4-seater for women only"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/engineering/be-computer-science-engineering.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.E. Computer Science and Engineering is taught in English at the University Institute of Engineering, Gharuan. International applicants are admitted on their 10+2 results through CU's international office; the programme is on the NBA Tier I (Washington Accord) register to 30 June 2027.",
+            "eligibility": {
+              "intro": "Entry needs 10+2 or equivalent with Physics and Mathematics compulsory, one further science or computing subject and at least 60 per cent aggregate.",
+              "items": [
+                "10+2 with Physics and Mathematics as compulsory subjects along with one of Chemistry, Biotechnology, Computer Science, Biology, Informatics Practices or Information Technology",
+                "At least 60 per cent aggregate marks in the 10+2 or equivalent qualification",
+                "Results issued in another language must be translated into English and accompanied by a grade-percentage equivalency certificate",
+                "English is the medium of instruction; CU publishes no separate IELTS or TOEFL minimum for international entry"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / 10+2 marksheet and certificate showing Physics and Mathematics",
+                "Grade 10 / O Level marksheet and certificate",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate from the school or board"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code CS201 lists USD 3,200 per semester for international students and INR 159,000 per semester for SAARC nationals. That is USD 6,400 a year and USD 25,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.E., eight semesters",
+              "language": "English",
+              "details": "Covers computing theory, software and hardware systems design, with exposure to Internet of Things, mobile computing and open-source technologies. Delivered at the Gharuan, Mohali campus."
+            }
+          ]
+        },
+        {
+          "slug": "cu-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "Bachelor of Engineering (B.E.) Mechanical Engineering, Chandigarh University, Mohali",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6400,
+            "officialTotalTuitionAmount": 25600,
+            "annualTuitionUsd": 6400,
+            "totalTuitionUsd": 25600,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code ME201 lists USD 3,200 per semester for international students and INR 149,000 per semester for SAARC nationals. That is USD 6,400 a year and USD 25,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/engineering/be-mechanical-engineering.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India",
+              "Hostel rooms in the AC 5-seater, AC 2-seater and single categories are for men only, and the AC 4-seater for women only"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/engineering/be-mechanical-engineering.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.E. Mechanical Engineering is taught in English at the University Institute of Engineering, Gharuan. International applicants are admitted on their 10+2 results through CU's international office; the programme is on the NBA Tier I (Washington Accord) register to 30 June 2027.",
+            "eligibility": {
+              "intro": "Entry needs 10+2 or equivalent with Physics and Mathematics compulsory, one further science or computing subject and at least 50 per cent aggregate.",
+              "items": [
+                "10+2 with Physics and Mathematics as compulsory subjects along with one of Chemistry, Biotechnology, Computer Science, Biology, Informatics Practices or Information Technology",
+                "At least 50 per cent aggregate marks in the 10+2 or equivalent qualification",
+                "Results issued in another language must be translated into English and accompanied by a grade-percentage equivalency certificate",
+                "English is the medium of instruction; CU publishes no separate IELTS or TOEFL minimum for international entry"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / 10+2 marksheet and certificate showing Physics and Mathematics",
+                "Grade 10 / O Level marksheet and certificate",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate from the school or board"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code ME201 lists USD 3,200 per semester for international students and INR 149,000 per semester for SAARC nationals. That is USD 6,400 a year and USD 25,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.E., eight semesters",
+              "language": "English",
+              "details": "Covers fluid mechanics, materials science, thermodynamics and kinematics, with computer-aided design and product lifecycle management tools. Delivered at the Gharuan, Mohali campus."
+            }
+          ]
+        },
+        {
+          "slug": "cu-be-aerospace-engineering",
+          "canonicalCourseSlug": "be-btech-aerospace-engineering",
+          "officialTitle": "Bachelor of Engineering (B.E.) Aerospace Engineering, Chandigarh University, Mohali",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6400,
+            "officialTotalTuitionAmount": 25600,
+            "annualTuitionUsd": 6400,
+            "totalTuitionUsd": 25600,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code AS201 lists USD 3,200 per semester for international students and INR 149,000 per semester for SAARC nationals. That is USD 6,400 a year and USD 25,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/engineering/be-aerospace.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India",
+              "Hostel rooms in the AC 5-seater, AC 2-seater and single categories are for men only, and the AC 4-seater for women only"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/engineering/be-aerospace.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.E. Aerospace Engineering is taught in English at the University Institute of Engineering, Gharuan. International applicants are admitted on their 10+2 results through CU's international office; the programme is on the NBA Tier I (Washington Accord) register to 30 June 2027.",
+            "eligibility": {
+              "intro": "Entry needs 10+2 or equivalent with Physics and Mathematics compulsory, one further science or computing subject and at least 50 per cent aggregate.",
+              "items": [
+                "10+2 with Physics and Mathematics as compulsory subjects along with one of Chemistry, Biotechnology, Computer Science, Biology, Informatics Practices or Information Technology",
+                "At least 50 per cent aggregate marks in the 10+2 or equivalent qualification",
+                "Results issued in another language must be translated into English and accompanied by a grade-percentage equivalency certificate",
+                "English is the medium of instruction; CU publishes no separate IELTS or TOEFL minimum for international entry"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / 10+2 marksheet and certificate showing Physics and Mathematics",
+                "Grade 10 / O Level marksheet and certificate",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate from the school or board"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code AS201 lists USD 3,200 per semester for international students and INR 149,000 per semester for SAARC nationals. That is USD 6,400 a year and USD 25,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.E., eight semesters",
+              "language": "English",
+              "details": "Covers aircraft and spacecraft design, manufacture, testing and maintenance. CU lists aerospace semester exchanges with IPSA France and SPbPU Russia and a European Project Semester option in Italy."
+            }
+          ]
+        },
+        {
+          "slug": "cu-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), Chandigarh University, Mohali",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 7400,
+            "officialTotalTuitionAmount": 14800,
+            "annualTuitionUsd": 7400,
+            "totalTuitionUsd": 14800,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code MB301 lists USD 3,700 per semester for international students and INR 179,000 per semester for SAARC nationals. That is USD 7,400 a year and USD 14,800 across 2 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/management/mba-master-of-business-administration.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/management/mba-master-of-business-administration.php"
+          },
+          "admissionsContent": {
+            "overview": "The two-year MBA at the University School of Business, Gharuan, is taught in English with specialisations in HR, Finance, Marketing, IT, International Business and Entrepreneurship. International applicants are admitted on their bachelor's results; the MBA is on the NBA Management PG register to 30 June 2027.",
+            "eligibility": {
+              "intro": "Entry needs a bachelor's degree in any discipline with at least 50 per cent marks, or a recognised professional qualification such as CA or ICWA.",
+              "items": [
+                "Bachelor's degree in any discipline with at least 50 per cent marks from a recognised university or institution",
+                "Graduates of recognised professional programmes such as CA or ICWA are also eligible",
+                "Degree results issued in another language must be translated into English with a grade-percentage equivalency certificate",
+                "English is the medium of instruction; CU publishes no separate IELTS, TOEFL, GMAT or CAT requirement for international entry"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and full transcripts",
+                "Grade 12 and Grade 10 marksheets",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate from the university"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code MB301 lists USD 3,700 per semester for international students and INR 179,000 per semester for SAARC nationals. That is USD 7,400 a year and USD 14,800 across 2 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year MBA, four semesters",
+              "language": "English",
+              "details": "General-management core followed by a specialisation in HR, Finance, Marketing, IT, International Business or Entrepreneurship. Exchange options listed by CU for MBA students include Poland, Germany, Belgium, Mexico, South Korea, Georgia, Taiwan and Vietnam."
+            }
+          ]
+        },
+        {
+          "slug": "cu-bpharm",
+          "canonicalCourseSlug": "bpharm",
+          "officialTitle": "Bachelor of Pharmacy (B.Pharm), Chandigarh University, Mohali",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 7400,
+            "officialTotalTuitionAmount": 29600,
+            "annualTuitionUsd": 7400,
+            "totalTuitionUsd": 29600,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code BP201 lists USD 3,700 per semester for international students and INR 159,000 per semester for SAARC nationals. That is USD 7,400 a year and USD 29,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/pharma-sciences/bachelor-of-pharmacy.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India",
+              "Qualifying school results must be from a board recognised by the Association of Indian Universities as equivalent to India's 10+2",
+              "Registration to practise as a pharmacist is governed by the pharmacy regulator of the country where the graduate intends to work"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/pharma-sciences/bachelor-of-pharmacy.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.Pharm at the University Institute of Pharma Sciences, Gharuan, is taught in English. International applicants are admitted on 10+2 results that the AIU treats as equivalent to India's 10+2, with English and science subjects compulsory.",
+            "eligibility": {
+              "intro": "Entry needs 10+2 with at least 60 per cent, English as a subject and Physics, Chemistry and Mathematics or Biology, from a board recognised as equivalent by the AIU.",
+              "items": [
+                "Passed 10+2 with at least 60 per cent marks",
+                "English as one of the subjects, with Physics, Chemistry and Mathematics or Biology as compulsory subjects",
+                "The qualifying examination must be recognised by the Association of Indian Universities (AIU) as equivalent to India's 10+2",
+                "The applicant must be at least 17 years old on or before 31 December of the year of admission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / 10+2 marksheet showing English, Physics, Chemistry and Mathematics or Biology",
+                "Grade 10 / O Level marksheet",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate; AIU equivalence of the school-leaving qualification"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code BP201 lists USD 3,700 per semester for international students and INR 159,000 per semester for SAARC nationals. That is USD 7,400 a year and USD 29,600 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Pharm, eight semesters",
+              "language": "English",
+              "details": "Pharmaceutical sciences covering drug discovery and development, pharmaceutics, pharmacology and related laboratory work at the University Institute of Pharma Sciences."
+            }
+          ]
+        },
+        {
+          "slug": "cu-ba-hons-psychology",
+          "canonicalCourseSlug": "bachelor-psychology",
+          "officialTitle": "Bachelor of Arts - Psychology (Hons.), Chandigarh University, Mohali",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3800,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": 3800,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code BA201 lists USD 1,900 per semester for international students and INR 84,000 per semester for SAARC nationals. That is USD 3,800 a year on the international tier before scholarships. CU's fee table lists a 4-year duration but the programme page describes a 3-year programme, so no total is given here. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/liberal-arts/ba-psychology.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/liberal-arts/ba-psychology.php"
+          },
+          "admissionsContent": {
+            "overview": "The B.A. Psychology (Hons.) at the University Institute of Liberal Arts, Gharuan, is taught in English and includes field study, a practicum and an internship. International applicants from any 10+2 stream are admitted on their school-leaving results.",
+            "eligibility": {
+              "intro": "Entry needs 10+2 in any stream with at least 55 per cent marks from a recognised board or university.",
+              "items": [
+                "10+2 or equivalent in any stream from a recognised board or university",
+                "At least 55 per cent marks in the qualifying examination",
+                "Results issued in another language must be translated into English with a grade-percentage equivalency certificate",
+                "English is the medium of instruction; CU publishes no separate IELTS or TOEFL minimum"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / 10+2 marksheet and certificate",
+                "Grade 10 / O Level marksheet",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code BA201 lists USD 1,900 per semester for international students and INR 84,000 per semester for SAARC nationals. That is USD 3,800 a year on the international tier before scholarships. CU's fee table lists a 4-year duration but the programme page describes a 3-year programme, so no total is given here. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Honours programme with field study, practicum and internship",
+              "language": "English",
+              "details": "Covers clinical, counselling, health, educational, sports and industrial/organisational psychology with supervised field study, practicum and internship. CU's fee table lists a 4-year duration while the programme page text describes a 3-year programme; the exit point should be confirmed at offer stage."
+            }
+          ]
+        },
+        {
+          "slug": "cu-ba-journalism-mass-communication",
+          "canonicalCourseSlug": "bachelor-journalism",
+          "officialTitle": "Bachelor of Arts - Journalism and Mass Communication, Chandigarh University, Mohali",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3800,
+            "officialTotalTuitionAmount": 15200,
+            "annualTuitionUsd": 3800,
+            "totalTuitionUsd": 15200,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code BJ201 lists USD 1,900 per semester for international students and INR 99,000 per semester for SAARC nationals. That is USD 3,800 a year and USD 15,200 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/journalism-and-mass-communication/bachelor-of-journalism-and-mass-communication.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/journalism-and-mass-communication/bachelor-of-journalism-and-mass-communication.php"
+          },
+          "admissionsContent": {
+            "overview": "The B.A. Journalism and Mass Communication at the University Institute of Media Studies, Gharuan, is taught in English and prepares students for print and TV journalism, production, public relations and digital media. International applicants are admitted on their 10+2 results from any stream.",
+            "eligibility": {
+              "intro": "Entry needs 10+2 or an equivalent examination in any stream with at least 50 per cent aggregate from a recognised board, university or council.",
+              "items": [
+                "10+2 or equivalent examination in any stream from a recognised board, university or council",
+                "At least 50 per cent aggregate marks",
+                "Results issued in another language must be translated into English with a grade-percentage equivalency certificate",
+                "English is the medium of instruction; CU publishes no separate IELTS or TOEFL minimum"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 12 / 10+2 marksheet and certificate",
+                "Grade 10 / O Level marksheet",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code BJ201 lists USD 1,900 per semester for international students and INR 99,000 per semester for SAARC nationals. That is USD 3,800 a year and USD 15,200 across 4 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Undergraduate programme, eight semesters as listed in CU's fee table",
+              "language": "English",
+              "details": "Journalism for TV and print, TV production, writing and publishing, public relations, digital marketing, content and social media. CU lists journalism exchanges in South Korea, Belgium, Mexico and Taiwan."
+            }
+          ]
+        },
+        {
+          "slug": "cu-msc-chemistry",
+          "canonicalCourseSlug": "msc-chemistry",
+          "officialTitle": "Master of Science (M.Sc.) Chemistry, Chandigarh University, Mohali",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 admission cycle",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4400,
+            "officialTotalTuitionAmount": 8800,
+            "annualTuitionUsd": 4400,
+            "totalTuitionUsd": 8800,
+            "verifiedAt": "2026-09-21",
+            "notes": "CU's international fee service for programme code MS305 lists USD 2,200 per semester for international students and INR 74,000 per semester for SAARC nationals. That is USD 4,400 a year and USD 8,800 across 2 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees."
+          },
+          "officialProgramUrl": "https://www.cuchd.in/international/basic-sciences/msc-chemistry.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying through CU's International Admission Department",
+              "SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka), billed on the rupee tier"
+            ],
+            "restrictions": [
+              "Tuition is billed in two tiers: SAARC nationals (Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, Sri Lanka) pay a rupee per-semester rate, all other international students a US dollar rate",
+              "Employment and business activity are not permitted on an Indian student visa, so the programme cannot be funded from work in India"
+            ],
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.cuchd.in/international/basic-sciences/msc-chemistry.php"
+          },
+          "admissionsContent": {
+            "overview": "The two-year M.Sc. Chemistry at the University Institute of Sciences, Gharuan, is taught in English and specialises in inorganic and organic chemistry through coursework, research projects, seminars and laboratory work. International applicants are admitted on their bachelor's results.",
+            "eligibility": {
+              "intro": "Entry needs a bachelor's degree with Chemistry as a compulsory subject, in a listed science discipline, with at least 50 per cent aggregate.",
+              "items": [
+                "Bachelor's degree in Chemistry, Medical, Non-Medical, Forensic Science, Industrial Chemistry, Biochemistry, Biotechnology, Polymer Chemistry or Life Sciences",
+                "Chemistry must have been a compulsory subject in the bachelor's degree",
+                "At least 50 per cent aggregate marks",
+                "English is the medium of instruction; CU publishes no separate IELTS or TOEFL minimum"
+              ]
+            },
+            "applicationSteps": [
+              "Complete CU's international online registration at cuchd.in/international/registration with passport name, country, programme choice and whether campus residence is wanted",
+              "Upload the Grade 10 and Grade 12 (or bachelor's) results, translated into English where needed, plus a grade-percentage equivalency certificate so CU can run its eligibility check",
+              "Receive the Offer Letter, then return the signed Acceptance of Offer Letter",
+              "Pay the invoiced first-semester tuition (and the annual hostel fee if booked) by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.",
+              "Receive the Acceptance Letter issued for the visa and apply for an Indian student visa endorsed in the name of Chandigarh University, Mohali",
+              "Book the complimentary airport pickup at least two weeks before the flight, report on campus and register with the FRO within 14 days of arrival"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and transcripts showing Chemistry",
+                "Grade 12 and Grade 10 marksheets",
+                "English translation of any result not issued in English",
+                "Grade-percentage equivalency certificate from the university"
+              ],
+              "application": [
+                "Passport copy (national ID accepted for Nepalese and Bhutanese students)",
+                "Indian student visa endorsed to Chandigarh University, Mohali",
+                "SWIFT advice for the tuition and hostel payments",
+                "Chandigarh University Admission/Acceptance Letter",
+                "Medical insurance valid in India, or acceptance of CU's group policy premium",
+                "At least 10 passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "CU has one academic intake a year and publishes no fixed international closing date. The AY 2027-28 session starts on 14 July 2027; the first semester fee is due on or before arrival, and late reporting counts against attendance.",
+            "visaConsiderations": [
+              "The student visa must be endorsed in the name of Chandigarh University, Mohali, Punjab (not required for Nepalese and Bhutanese nationals)",
+              "FRO registration is due within 14 days of arrival for visas longer than 180 days; CU runs an FRO help desk in Block A1",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "CU's international fee service for programme code MS305 lists USD 2,200 per semester for international students and INR 74,000 per semester for SAARC nationals. That is USD 4,400 a year and USD 8,800 across 2 years on the international tier before scholarships. CU advertises a merit scholarship of up to 50 per cent for international students but does not publish the marks bands. Add the hostel fee (USD 1,950-3,530 a year by room type, meals included), about INR 3,500 a year for medical insurance unless the student has a valid policy, and charges such as the uniform, CU Fest and freshers' fees.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year M.Sc., four semesters",
+              "language": "English",
+              "details": "Advanced inorganic and organic chemistry with research projects, seminars and hands-on laboratory work at the University Institute of Sciences."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "summary",
+      "claimText": "The Chandigarh University Act, 2012 (Punjab Act No. 7 of 2012) received the assent of the Governor of Punjab on 6 July 2012, was published on 10 July 2012, and locates the university's headquarters at Village Gharuan, Tehsil Kharar, District Sahibzada Ajit Singh Nagar (Mohali); the Act makes the university self-financed with no state grant.",
+      "status": "verified",
+      "sourceLabel": "The Chandigarh University Act, 2012 (Punjab Act 7 of 2012) - full text",
+      "sourceUrl": "https://indiankanoon.org/doc/139883784/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "India Code handle https://www.indiacode.nic.in/handle/123456789/14972 did not respond to curl on 2026-09-21; the Act text was read on Indian Kanoon. Corroborated by the UGC state private university list (notification date 10.07.2012) recorded separately."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC's State-wise List of State (Private) Universities as on 17.01.2024 lists 'Chandigarh University, Gharuan, Mohali - 140413, Punjab' at serial 314 with notification date 10.07.2012.",
+      "status": "verified",
+      "sourceLabel": "UGC - State-wise List of State (Private) Universities as on 17.01.2024",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC's List of State (Private) Universities included under Section 12(B) of the UGC Act, 1956 (as on 10.05.2024) lists Chandigarh University, Gharuan, Mohali at serial 15 under Punjab, approved at the Commission's 547th meeting of 29.05.2020, letter F.No 8-25/2011 (CPP-I/PU) dated 12.06.2020.",
+      "status": "verified",
+      "sourceLabel": "UGC - State (Private) Universities under Section 12(B), as on 10.05.2024",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/LIST_OF_STATE_PRIVATE_UNIVERSITY_UNDER_SECTION_12B.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC lists Chandigarh University (AISHE U-0747) as accredited Cycle 1, CGPA 3.28, grade A+, declared 09-09-2019, and the institution remains in the workbook of institutions with valid accreditation as on 14-08-2025.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Accreditation status (valid-accreditation workbook as on 14-08-2025)",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Per batch-supervisor regulator verdict 2026-09-21. No Standing Committee result through the 265th SC (12 Dec 2025) shows a newer cycle. NAAC publishes a declaration date, not an expiry; copy says 'declared September 2019' only. CU's own pages describe itself as 'Ranked amongst Top 5% institutions of India for receiving NAAC A+' - not repeated."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA Engineering UG Tier I (Washington Accord) register lists 'Chandigarh University (Ropar)' for Civil, Electrical, Mechanical, Chemical, Computer Science and Engineering, Aerospace, Electronics and Communication, and Mechatronics Engineering, each with an accreditation period to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme register, Engineering UG Tier I",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Entity name on the register is 'Chandigarh University (Ropar)'; the Gharuan campus is in SAS Nagar (Mohali) district. Per supervisor verdict 2026-09-21."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA Management PG register lists the Chandigarh University MBA with accreditation for AY 2024-25 to 2026-27, up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme register, Management PG",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "whyChoose",
+      "claimText": "NIRF 2025 (Ministry of Education) ranks Chandigarh University 19 in the University category (score 61.27), 32 Overall, 31 in Engineering, 32 in Management, 15 in Pharmacy and 14 in Architecture.",
+      "status": "verified",
+      "sourceLabel": "NIRF 2025 - University category ranking (Ministry of Education)",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Per supervisor verdict. Research-category rank 34 (50.47) also noted. CU's international recognitions page still says 'Ranked 52nd ... by NIRF' - stale institutional claim, not used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "summary",
+      "claimText": "Chandigarh University describes more than 150 bachelor's, master's and doctoral programmes, a campus of more than 150 acres and more than 2,500 international students from 65 or more countries.",
+      "status": "verified",
+      "sourceLabel": "CU International - Study in India overview",
+      "sourceUrl": "https://www.cuchd.in/international/international.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Institution-reported counts (international page variously says 65+, 68+ countries; 2,500+ international students). Copy attributes them to CU."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "campusLifestyle",
+      "claimText": "CU's international FAQs state that every academic block has its own library, the central library is open seven days a week, two banks and four ATMs operate on campus, food courts sit next to every academic block, and university working hours are Monday to Friday 9:30 am to 4:30 pm.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (facilities, other)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "campusLifestyle",
+      "claimText": "CU's pre-arrival guidance states the campus is non-alcoholic, that smoking, drugs or alcohol inside university premises is reported to the local police, that a formal dress code applies and a student uniform is mandatory every Wednesday.",
+      "status": "verified",
+      "sourceLabel": "CU International - Pre-arrival and post-arrival information",
+      "sourceUrl": "https://www.cuchd.in/international/arrival.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "cityProfile",
+      "claimText": "CU publishes its address as NH-05 Chandigarh-Ludhiana Highway, Mohali, Punjab, and gives routes from Chandigarh railway station, ISBT Sector 43 and Chandigarh airport via Kharar bus stand: CTU bus 20 to Kharar then an auto, or any long-route bus to Ludhiana via Kharar, which stops in front of the university.",
+      "status": "verified",
+      "sourceLabel": "CU - How to reach us",
+      "sourceUrl": "https://www.cuchd.in/contact/how-to-reach-us.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "cityProfile",
+      "claimText": "Complimentary airport pickup from New Delhi or Chandigarh international airport is available only on advance booking sent at least two weeks before the flight to international@cumail.in; Punjab summer temperatures run 30-44 C (May-July) and winter 2-20 C (November-January).",
+      "status": "verified",
+      "sourceLabel": "CU International - Pre-arrival information",
+      "sourceUrl": "https://www.cuchd.in/international/arrival.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "hostelOverview",
+      "claimText": "CU's hostel fee table lists international (USD) annual rates: AC 5-seater (boys) 1950, AC 4-seater (girls) 2350, AC 3-seater 2600, AC 2-seater (boys) 3140, AC single (boys) 3530; non-AC 4-seater 2150, 3-seater 2350, 2-seater (boys) 2750, single (boys) 3000; non-AC 5-seater not offered to international students; rates rise each year for the batch by Rs 4,000 per annum for international students on account of food inflation.",
+      "status": "verified",
+      "sourceLabel": "CU - Hostel facility and hostel fee table",
+      "sourceUrl": "https://www.cuchd.in/student-services/hostel-facility.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The page shows a second, older table (Rs 84,000-1,50,000) inside an HTML comment; only the visible table is used. The page does not stamp an academic year on the table; the year is not asserted in copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "hostelOverview",
+      "claimText": "CU's international FAQs state that the hostel fee is paid yearly in advance because there is one academic intake, that food is included in the hostel accommodation fee, that basic electricity units are free with excess billed, and that bed, mattress, cupboard, study table and chair are provided.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (fee and hostel)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "dietarySupport",
+      "claimText": "CU states that Indian vegetarian meals are served in all hostels with two non-vegetarian meals a week, that SAARC students can pay a small monthly amount to upgrade meals, and that induction heaters may be used in rooms with excess electricity billed.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (hostel)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "safetyOverview",
+      "claimText": "CU states the campus is guarded 24x7 with CCTV monitoring and is ragging-free; a registered medical doctor works on campus in working hours with separate OPD rooms for men and women, three ambulances, and 24x7 medical supervisors in the hostels.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (safety, medical)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "safetyOverview",
+      "claimText": "CU's hostel page lists emergency lines including a women cell helpline, medical emergency, security and an anti-ragging number.",
+      "status": "verified",
+      "sourceLabel": "CU - Hostel facility (emergency contacts)",
+      "sourceUrl": "https://www.cuchd.in/student-services/hostel-facility.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "studentSupport",
+      "claimText": "An FRO help desk in Block A1 guides international students through FRO registration and visa extension (not applicable to Nepalese and Bhutanese students); international students report to the Department of International Admissions at Block A1 on arrival to obtain a University Identification Number.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (reporting, FRO)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The pre-arrival page says reporting and UID filing happen at Block 9 while the FAQ says Block A1; copy names only the Block A1 FRO help desk, which both FAQ and FRRO pages agree on."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "studentSupport",
+      "claimText": "CU's International Admission Department can be reached at international@cumail.in and on +91 7626862200.",
+      "status": "verified",
+      "sourceLabel": "CU International - International student helpline",
+      "sourceUrl": "https://www.cuchd.in/international/student-helpline.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "studentSupport",
+      "claimText": "Health insurance is mandatory for international students; without a valid policy a premium of about INR 3,500 a year is debited to the student's fee account under a group policy that covers hospitalisation, surgery and accidental death but not routine check-ups or OPD without hospitalisation.",
+      "status": "verified",
+      "sourceLabel": "CU International - fee FAQs (medical insurance)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Group-policy exclusions from the pre-arrival page https://www.cuchd.in/international/arrival.php."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Fees are paid by SWIFT transfer to the university account in favour of Chandigarh Educational Trust Regd.; the first semester fee is due on or before arrival, later semester fees in November and April (tentatively), and students who pay an education consultant do so at their own risk; late payment can bar students from examinations and attracts a late fee.",
+      "status": "verified",
+      "sourceLabel": "CU International - fee and charges FAQs",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Additional charges named by CU are a CU Fest fee, uniform fee, freshers' party, an examination fee for SAARC students only, optional training and placement, and industry visits; cash payments attract a handling charge of at least INR 500 per transaction.",
+      "status": "verified",
+      "sourceLabel": "CU International - fee and charges FAQs",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "thingsToConsider",
+      "claimText": "CU states that obtaining an Indian student visa endorsed in the name of Chandigarh University, Mohali, Punjab is the student's own responsibility (except Bhutanese and Nepalese students), that a single-entry visa holder who goes home must apply for a new visa, and that a visa extension takes about 45 days.",
+      "status": "verified",
+      "sourceLabel": "CU International - Visa information and FRRO process",
+      "sourceUrl": "https://www.cuchd.in/international/visa-information.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Single-entry visa rule is from the FAQ page https://www.cuchd.in/international/faq.php Q28."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Students on a visa of more than 180 days must register with the local FRO within 14 days of arrival; penalties apply for late registration.",
+      "status": "verified",
+      "sourceLabel": "CU International - FRRO process",
+      "sourceUrl": "https://www.cuchd.in/international/frro-process.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Chandigarh University also operates a separate Uttar Pradesh campus (Unnao/Lucknow); the programmes, fees and recognitions in this listing refer to the Gharuan, Mohali campus in Punjab.",
+      "status": "verified",
+      "sourceLabel": "CU - Unnao campus announcement",
+      "sourceUrl": "https://www.cuchd.in/cu-unnao-campus-gets-nod-from-up-government/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "UP campus is a different institution under UP legislation; none of its facts are used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "admissions",
+      "claimText": "CU's international application tracker moves through: enquiry form filled, eligibility check by Chandigarh University, Offer Letter, Acceptance of Offer Letter, invoice, and Acceptance Letter issued for the visa; the form asks for Grade 10/O Level, Grade 12/A Level or bachelor's results translated into English where issued in another language, and a grade-percentage equivalency certificate.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "admissions",
+      "claimText": "CU states that English is the medium of instruction in classes, and offers a Language Foundation Program (LFP) exclusively for international students from non-English-speaking and other countries.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (medium of instruction)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "LFP description from https://www.cuchd.in/international/enquiry/ ; the dedicated LFP page (/international/language-foundation/) returned CU's 404 page on 2026-09-21. No IELTS/TOEFL minimum is published on CU's international pages; none is asserted."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "scholarships",
+      "claimText": "CU's international scholarship page advertises a merit scholarship of up to 50 per cent for meritorious international students; the page does not publish the marks bands or which fee components it applies to.",
+      "status": "verified",
+      "sourceLabel": "CU International - Scholarships for international students",
+      "sourceUrl": "https://www.cuchd.in/international/scholarship/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "intake",
+      "claimText": "CU states hostel fees are paid yearly because there is only one academic intake, and its 2026-27 academic calendar sets the start of the AY 2027-28 academic session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "One-intake statement is FAQ Q8 at https://www.cuchd.in/international/faq.php ."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "practicalExposure",
+      "claimText": "CU's international programme list includes B.E. CSE (Hons.) specialisations in association with IBM (AI and Machine Learning, Cloud Computing, Data Science, Cyber Security, Internet of Things) and a B.E. CSE (Computer Science and Business Systems) in association with TCS.",
+      "status": "verified",
+      "sourceLabel": "CU International - Engineering undergraduate programmes",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/ug-courses.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "practicalExposure",
+      "claimText": "CU describes a European Project Semester for engineering, management and fashion students (two months of study in Italy and four months of training with European companies) and discipline-specific semester exchanges, e.g. aerospace exchanges with IPSA France and SPbPU Russia.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (international programmes)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "faq",
+      "claimText": "CU states that students may change programme after arriving on campus before a university-announced deadline, subject to seat availability and a nominal administrative fee, and that transcripts pending at admission must be submitted within one week of reporting or of the result being published.",
+      "status": "verified",
+      "sourceLabel": "CU International - admissions FAQs (programme change, documents)",
+      "sourceUrl": "https://www.cuchd.in/international/faq.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chandigarh-university",
+      "publicField": "faq",
+      "claimText": "The Bureau of Immigration states that foreign nationals on an Indian student visa must not undertake employment or business activity, and must register with the FRRO/FRO within 14 days of arrival when the visa is valid for more than 180 days.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Reuses the country-level BOI evidence used in 0097."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's B.E. Computer Science and Engineering need 10+2 with Physics and Mathematics as compulsory subjects plus one of Chemistry, Biotechnology, Computer Science, Biology, Informatics Practices or Information Technology, with at least 60 per cent aggregate marks.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Engineering (B.E.) Computer Science and Engineering, Chandigarh University, Mohali (eligibility, programme code CS201)",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/be-computer-science-engineering.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'CS201', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Bachelor of Engineering (B.E.) Computer Science and Engineering, Chandigarh University, Mohali (code CS201) at USD 3,200 per semester over 4 years, and INR 159,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Engineering (B.E.) Computer Science and Engineering, Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/be-computer-science-engineering.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'CS201' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's B.E. Mechanical Engineering need 10+2 with Physics and Mathematics as compulsory subjects plus one of Chemistry, Biotechnology, Computer Science, Biology, Informatics Practices or Information Technology, with at least 50 per cent aggregate marks.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Engineering (B.E.) Mechanical Engineering, Chandigarh University, Mohali (eligibility, programme code ME201)",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/be-mechanical-engineering.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'ME201', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Bachelor of Engineering (B.E.) Mechanical Engineering, Chandigarh University, Mohali (code ME201) at USD 3,200 per semester over 4 years, and INR 149,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Engineering (B.E.) Mechanical Engineering, Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/be-mechanical-engineering.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'ME201' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-aerospace-engineering",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's B.E. Aerospace Engineering need 10+2 with Physics and Mathematics as compulsory subjects plus one of Chemistry, Biotechnology, Computer Science, Biology, Informatics Practices or Information Technology, with at least 50 per cent aggregate marks.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Engineering (B.E.) Aerospace Engineering, Chandigarh University, Mohali (eligibility, programme code AS201)",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/be-aerospace.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'AS201', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-aerospace-engineering",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-aerospace-engineering",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-aerospace-engineering",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Bachelor of Engineering (B.E.) Aerospace Engineering, Chandigarh University, Mohali (code AS201) at USD 3,200 per semester over 4 years, and INR 149,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Engineering (B.E.) Aerospace Engineering, Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/engineering/be-aerospace.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'AS201' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-mba",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's MBA need a bachelor's degree in any discipline with at least 50 per cent marks from a recognised university or institution; graduates of recognised professional programmes such as CA/ICWA are also eligible.",
+      "status": "verified",
+      "sourceLabel": "CU International - Master of Business Administration (MBA), Chandigarh University, Mohali (eligibility, programme code MB301)",
+      "sourceUrl": "https://www.cuchd.in/international/management/mba-master-of-business-administration.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'MB301', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-mba",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-mba",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-mba",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Master of Business Administration (MBA), Chandigarh University, Mohali (code MB301) at USD 3,700 per semester over 2 years, and INR 179,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Master of Business Administration (MBA), Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/management/mba-master-of-business-administration.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'MB301' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-bpharm",
+      "publicField": "eligibility",
+      "claimText": "CU requires B.Pharm applicants to have passed 10+2 with at least 60 per cent marks, recognised as equivalent by the Association of Indian Universities, with English as a subject and Physics, Chemistry and Mathematics/Biology compulsory, and to be 17 by 31 December of the admission year.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Pharmacy (B.Pharm), Chandigarh University, Mohali (eligibility, programme code BP201)",
+      "sourceUrl": "https://www.cuchd.in/international/pharma-sciences/bachelor-of-pharmacy.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'BP201', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-bpharm",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-bpharm",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-bpharm",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Bachelor of Pharmacy (B.Pharm), Chandigarh University, Mohali (code BP201) at USD 3,700 per semester over 4 years, and INR 159,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Pharmacy (B.Pharm), Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/pharma-sciences/bachelor-of-pharmacy.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'BP201' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-hons-psychology",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's B.A. Psychology (Hons.) need 10+2 in any stream with 55 per cent marks from a recognised board or university.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Arts - Psychology (Hons.), Chandigarh University, Mohali (eligibility, programme code BA201)",
+      "sourceUrl": "https://www.cuchd.in/international/liberal-arts/ba-psychology.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'BA201', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-hons-psychology",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-hons-psychology",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-hons-psychology",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Bachelor of Arts - Psychology (Hons.), Chandigarh University, Mohali (code BA201) at USD 1,900 per semester over 4 years, and INR 84,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Arts - Psychology (Hons.), Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/liberal-arts/ba-psychology.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'BA201' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date. Duration conflict: fee service returns duration 4.0 years; programme page body says 'The 3-year program'. Likely NEP 3+1 honours structure; total left null."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-journalism-mass-communication",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's B.A. Journalism and Mass Communication need 10+2 or equivalent in any stream with at least 50 per cent aggregate marks from a recognised board, university or council.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Arts - Journalism and Mass Communication, Chandigarh University, Mohali (eligibility, programme code BJ201)",
+      "sourceUrl": "https://www.cuchd.in/international/journalism-and-mass-communication/bachelor-of-journalism-and-mass-communication.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'BJ201', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-journalism-mass-communication",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-journalism-mass-communication",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-journalism-mass-communication",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Bachelor of Arts - Journalism and Mass Communication, Chandigarh University, Mohali (code BJ201) at USD 1,900 per semester over 4 years, and INR 99,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Bachelor of Arts - Journalism and Mass Communication, Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/journalism-and-mass-communication/bachelor-of-journalism-and-mass-communication.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'BJ201' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-msc-chemistry",
+      "publicField": "eligibility",
+      "claimText": "International applicants to CU's M.Sc. Chemistry need a bachelor's degree in Chemistry, Medical, Non-Medical, Forensic, Industrial Chemistry, Biochemistry, Biotechnology, Polymer Chemistry or Life Sciences with Chemistry compulsory and at least 50 per cent aggregate.",
+      "status": "verified",
+      "sourceLabel": "CU International - Master of Science (M.Sc.) Chemistry, Chandigarh University, Mohali (eligibility, programme code MS305)",
+      "sourceUrl": "https://www.cuchd.in/international/basic-sciences/msc-chemistry.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Eligibility text is loaded client-side from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'MS305', the service that fills the Eligibility tab on the linked programme page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-msc-chemistry",
+      "publicField": "admissions",
+      "claimText": "CU's international admission route runs through online registration, an eligibility check, Offer Letter, Acceptance of Offer Letter, invoice and an Acceptance Letter for the visa; the tracker lists no entrance-test stage, and English is the medium of instruction.",
+      "status": "verified",
+      "sourceLabel": "CU International - online registration and admission status",
+      "sourceUrl": "https://www.cuchd.in/international/registration/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "No IELTS/TOEFL minimum is published on CU's international pages, so none is asserted. CUCET is CU's Indian-national test and is not named in the international route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-msc-chemistry",
+      "publicField": "intake",
+      "claimText": "CU has a single academic intake a year (international FAQ) and its academic calendar sets the start of the AY 2027-28 session for 14 July 2027.",
+      "status": "verified",
+      "sourceLabel": "CU - Academic calendar 2026-27",
+      "sourceUrl": "https://www.cuchd.in/academics/academic-calendar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-msc-chemistry",
+      "publicField": "fee",
+      "claimText": "CU lists international tuition for Master of Science (M.Sc.) Chemistry, Chandigarh University, Mohali (code MS305) at USD 2,200 per semester over 2 years, and INR 74,000 per semester for SAARC students.",
+      "status": "verified",
+      "sourceLabel": "CU International - Master of Science (M.Sc.) Chemistry, Chandigarh University, Mohali (Course Fee tab)",
+      "sourceUrl": "https://www.cuchd.in/international/basic-sciences/msc-chemistry.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from POST https://www.cuchd.in/services.aspx/GetInternationalProgramDetails with ProgramCode 'MS305' on 2026-09-21; the dollar icon (fa-dollar) marks the international figure and the rupee icon the SAARC figure. CU does not stamp an academic year on the service; '2026-27 admission cycle' reflects the fetch date."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "This B.E. branch is on the NBA Engineering UG Tier I (Washington Accord) register under 'Chandigarh University (Ropar)' with an accreditation period to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme register, Engineering UG Tier I",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "This B.E. branch is on the NBA Engineering UG Tier I (Washington Accord) register under 'Chandigarh University (Ropar)' with an accreditation period to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme register, Engineering UG Tier I",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-be-aerospace-engineering",
+      "publicField": "admissions",
+      "claimText": "This B.E. branch is on the NBA Engineering UG Tier I (Washington Accord) register under 'Chandigarh University (Ropar)' with an accreditation period to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme register, Engineering UG Tier I",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-mba",
+      "publicField": "admissions",
+      "claimText": "The CU MBA is on the NBA Management PG register for AY 2024-25 to 2026-27, up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme register, Management PG",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-mba",
+      "publicField": "practicalExposure",
+      "claimText": "MBA specialisations listed by CU are HR, Finance, Marketing, IT, International Business and Entrepreneurship.",
+      "status": "verified",
+      "sourceLabel": "CU International - MBA programme page",
+      "sourceUrl": "https://www.cuchd.in/international/management/mba-master-of-business-administration.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chandigarh-university",
+      "programmeSlug": "cu-ba-hons-psychology",
+      "publicField": "teachingPhases",
+      "claimText": "CU's B.A. Psychology (Hons.) page states the course mandates field study, practicum and internship.",
+      "status": "verified",
+      "sourceLabel": "CU International - B.A. Psychology (Hons.) programme page",
+      "sourceUrl": "https://www.cuchd.in/international/liberal-arts/ba-psychology.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    }
+  ]
+}

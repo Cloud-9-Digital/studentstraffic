@@ -1,0 +1,1984 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "mba-international-business",
+      "name": "MBA in International Business",
+      "shortName": "MBA International Business",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "international-business",
+      "aliases": [
+        "Master of Business Administration in International Business"
+      ],
+      "displayOrder": 2,
+      "durationYears": 2,
+      "summary": "This catalogue category covers full-time Master of Business Administration degrees specialising in international business, taken after a completed bachelor degree and usually lasting two years. Programmes typically combine core management subjects with international trade, export-import management, cross-border finance, global marketing and foreign-exchange risk, and some include study-abroad or international project components.",
+      "metaTitle": "MBA International Business for International Students",
+      "metaDescription": "Compare MBA International Business degrees open to international applicants: duration, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate Bachelor of Design degrees, commonly four years, in fields such as communication, interior, fashion, product and interaction design. Programmes usually start with design fundamentals, drawing and visualisation and move into studio-based specialisation, portfolio development and industry projects; some universities add an aptitude test or portfolio review.",
+      "metaTitle": "B.Des Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Design (B.Des) degrees for international applicants: specialisations, duration, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "bpharm",
+      "name": "Bachelor of Pharmacy",
+      "shortName": "B.Pharm",
+      "stream": "pharmacy",
+      "level": "bachelors",
+      "discipline": "pharmacy",
+      "aliases": [
+        "BPharm",
+        "Bachelor's Degree in Pharmacy"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate Bachelor of Pharmacy degrees, typically four years after upper-secondary physics, chemistry and biology or mathematics. Curricula cover pharmaceutics, pharmaceutical chemistry, pharmacology and pharmacognosy with laboratory work and industrial or hospital training; registration to practise as a pharmacist is governed separately by each country's pharmacy regulator.",
+      "metaTitle": "B.Pharm Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Pharmacy (B.Pharm) degrees for international applicants: entry subjects, duration, intakes, tuition and each admission route."
+    },
+    {
+      "slug": "bachelor-psychology",
+      "name": "Bachelor's in Psychology",
+      "shortName": "Bachelor's Psychology",
+      "stream": "psychology",
+      "level": "bachelors",
+      "discipline": "psychology",
+      "aliases": [
+        "BA Psychology",
+        "BSc Psychology"
+      ],
+      "displayOrder": 5,
+      "durationYears": 3,
+      "summary": "This catalogue category covers undergraduate psychology degrees such as the BA or BSc in Psychology, usually three or four years. Programmes introduce developmental, social, cognitive, clinical and organisational psychology alongside research methods and statistics; professional practice as a psychologist normally requires further postgraduate training and registration.",
+      "metaTitle": "Bachelor's Psychology Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Psychology degrees (BA/BSc) for international applicants: duration, teaching language, intakes, tuition and each admission route."
+    },
+    {
+      "slug": "bachelor-journalism",
+      "name": "Bachelor's in Journalism",
+      "shortName": "Bachelor's Journalism",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "journalism",
+      "aliases": [
+        "BA Journalism",
+        "Bachelor of Journalism"
+      ],
+      "displayOrder": 6,
+      "durationYears": 3,
+      "summary": "This catalogue category covers undergraduate journalism and mass communication degrees, usually three or four years. Programmes typically combine news reporting, writing and editing, broadcast and digital production, media law and ethics, and public relations or advertising, with studio work, portfolio projects and media internships.",
+      "metaTitle": "Bachelor's Journalism Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Journalism and mass communication degrees for international applicants: duration, intakes, tuition and each admission route."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "sharda-university",
+      "name": "Sharda University",
+      "city": "Greater Noida",
+      "type": "Private",
+      "establishedYear": 2009,
+      "officialWebsite": "https://www.sharda.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Sharda University is a state private university in Greater Noida, Uttar Pradesh, in the Delhi NCR, established under a 2009 Uttar Pradesh Act. Its single campus teaches engineering, computing, business, design, pharmacy, media, law, sciences and health programmes in English, and admits international students through a dedicated International Relations Division.",
+      "campusLifestyle": "Teaching is on one residential campus at Knowledge Park-III, Greater Noida, which Sharda describes as 63 acres with more than 19,200 students from over 95 countries and more than 1,047 faculty. The central library holds about 1.4 lakh books, and school libraries open 8 am to 7 pm, longer during examinations. The campus network runs at 1 Gbps through two ISPs with over 200 access points including hostels. Sharda Hospital is on campus, and the university runs the Suno Sharda 90.8 FM community radio.",
+      "cityProfile": "Greater Noida is in Gautam Budh Nagar district of Uttar Pradesh, within the Delhi National Capital Region. Sharda states the campus is about an hour's drive from Delhi International Airport, which is the arrival airport it asks new students to book; the International Relations Division arranges airport pickup when flight details are sent at least two weeks ahead. University buses run fixed morning routes from across Delhi, Noida and Faridabad for a separate transport fee. Summer temperatures run 30-45C and winter 5-25C, with winter from around November, so warm bedding and clothing are needed. Mains power is 240 V with two- and three-pin sockets. Everyday items are sold at campus tuck shops and markets within about 5 km. Immigration registration is handled at FRO Noida or FRRO New Delhi.",
+      "practicalExposure": "Recognition at programme level is specific. The National Board of Accreditation lists Sharda's B.Tech in Electronics and Communication Engineering, Electrical and Electronics Engineering and Biotechnology on its Tier I (Washington Accord) register to 30 June 2028, the MBA on its Management PG register to 30 June 2028, and the B.Pharm on its Pharmacy UG register to 31 December 2028. Several 2026-27 programmes are built with named partners: B.Tech (CSE) Cyber Security and Forensics with EC-Council, B.Tech (CSE) Full Stack Development with Xebia Academic Alliance, B.Tech (EEE) Advanced Electric Vehicle with L&T EduTech, and B.Com International Accounting and Finance with ACCA, UK. B.Tech curricula include project-based learning each year, three summer internships and two capstone semesters, and the three-year media and psychology degrees end in an apprenticeship semester. Sharda reports more than 330 functional MoUs for semester exchange and credit transfer, with partners including Curtin University (Australia), Taipei Medical University (Taiwan), the University of Bremen (Germany) and the University of Malta.",
+      "hostelOverview": "Rooms are allotted first-come-first-served on payment. Sharda's international accommodation page, still labelled session 2022-23, lists annual per-student rates including food: USD 3,800 for a double AC room, USD 3,100 for a double AC room with shared washroom, USD 2,800 for a double non-AC room and USD 2,300 for a double non-AC room with shared washroom. A refundable security deposit of USD 300 (AC) or USD 200 (non-AC) applies. All hostel residents must eat in the university mess, and no refund is given once a room is occupied. Sharda's 2026 domestic hostel schedule runs INR 1,24,000-2,38,000 a year including mess, from 1 August to 31 May.",
+      "dietarySupport": "Hostel meals come from a separate hostel mess with vegetarian and non-vegetarian options, and mess charges are built into the hostel rate. The campus also has cafeterias, the Lego House fast-food restaurant and a grocery store for staples. Hostel residents get complimentary laundry of 5 kg x 20 washes per academic year, and may add a room cooler or refrigerator on payment of charges fixed by the Inter-Hostel Administration.",
+      "safetyOverview": "Sharda states that the campus, hostels, parking and academic areas are guarded 24x7 by outsourced security agencies with armed guards, and a centralised command and control centre monitors about 1,450 CCTV cameras. Each hostel has a warden and a faculty-in-charge. Emergency vans and ambulances are based on campus, with Sharda Hospital on site.",
+      "studentSupport": "The International Relations Division checks documents at reporting, registers students, and guides FRO/FRRO registration, visa extensions and residence-permit changes. New arrivals get a free medical check-up at Sharda Hospital and a medical-insurance card. IRD also helps open an Indian bank account. University ID cards are issued about 10 days after registration. Confidential counselling is available for personal and study-related concerns.",
+      "whyChoose": [
+        "One published international entry bar - 50 per cent in the qualifying examination plus the programme's prerequisite subjects - covers engineering, business, design, pharmacy, media and humanities, with no SUAT or JEE requirement for the Foreign/NRI quota",
+        "Per-year international tuition in US dollars is published for 2026-27 programme by programme, for example USD 4,200 for B.Tech CSE, USD 6,000 for the MBA and USD 3,400 for BA Journalism",
+        "Programme-level NBA accreditation is current for B.Tech ECE, EEE and Biotechnology and the MBA to 30 June 2028, and for B.Pharm to 31 December 2028",
+        "NAAC accredited A+ with CGPA 3.27 in Cycle 2 (declared January 2023), and ranked 87 in the NIRF 2025 University category",
+        "Sharda Hospital, a cashless group mediclaim policy and an International Relations Division that handles arrival, registration and FRRO support are all on one Greater Noida campus about an hour from Delhi airport"
+      ],
+      "thingsToConsider": [
+        "Fee tier depends on nationality: nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries pay the Indian rupee fee structure, while everyone else pays the USD international rate plus USD 500 first-year and USD 250 later-year procedural charges",
+        "Scholarships are merit-based, tuition-only and conditional on document verification, attendance and conduct; some programmes, including B.Pharm, show no scholarship, so the 'assured' percentages in marketing should not be budgeted as certain",
+        "NBA accreditation for B.Tech Computer Science, Civil and Mechanical Engineering ended on 30 June 2026 with no renewal on the NBA register as at September 2026, although Sharda's international page still describes engineering programmes as NBA-accredited",
+        "The only published international hostel rates are labelled session 2022-23, so the current USD room charge needs to be confirmed with the International Relations Division before budgeting",
+        "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission, and the application window closes on 31 July for an August start",
+        "Work is not permitted on an Indian student visa, the visa must be endorsed to Sharda, and all students except Nepali and Bhutanese nationals must register with FRO Noida or FRRO New Delhi within 14 days of arrival"
+      ],
+      "bestFitFor": [
+        "School leavers with at least 50 per cent in Grade 12 who want an English-taught Indian degree without sitting JEE, CUET or SUAT",
+        "Applicants choosing programmes with current programme-level recognition, such as NBA-accredited B.Tech ECE, the MBA or B.Pharm",
+        "Students from Nepal, Bhutan and Bangladesh who can use the Indian rupee fee structure instead of the USD international rate",
+        "Students who want a residential campus in the Delhi NCR with an on-campus hospital and arrival support from a dedicated international office"
+      ],
+      "industryPartners": [
+        "EC-Council",
+        "Xebia Academic Alliance",
+        "L&T EduTech",
+        "ACCA (UK)"
+      ],
+      "recognitionBadges": [
+        "NAAC - Accredited A+, CGPA 3.27, Cycle 2 (declared January 2023)",
+        "NBA Tier I (Washington Accord) - B.Tech ECE, EEE and Biotechnology accredited to 30 June 2028",
+        "NBA - MBA accredited on the Management PG register to 30 June 2028",
+        "NBA - B.Pharm accredited on the Pharmacy UG register to 31 December 2028",
+        "UGC - Listed State Private University, Uttar Pradesh (notified 24 March 2009)",
+        "NIRF 2025 - Rank 87, University category (Ministry of Education)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NAAC - Accreditation Status (valid-accreditation workbook)",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NBA - Accredited programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "UGC - State-wise List of Private Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        },
+        {
+          "label": "NIRF 2025 - Pharmacy category ranking",
+          "url": "https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Sharda University public or private?",
+          "answer": "Private. Sharda University is a state private university established by the Uttar Pradesh legislature through Act No. 14 of 2009 and notified on 24 March 2009, run under the non-profit Sharda Education Trust. UGC lists it in its State-wise List of Private Universities for Uttar Pradesh."
+        },
+        {
+          "question": "What language are programmes taught in?",
+          "answer": "English. Sharda's international FAQ gives English as the medium of instruction, and all seven programmes listed here are taught in English throughout. Sharda also sells a six-month Certificate of Proficiency (English) at USD 1,000 and a one-year advanced certificate at USD 3,000 for students who want extra language support."
+        },
+        {
+          "question": "What marks do international applicants need?",
+          "answer": "Sharda publishes one rule for international applicants to all programmes: at least 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. Subjects are not listed separately for international applicants; the same programme pages' national rules name Physics and Mathematics for B.Tech CSE, Physics, Chemistry and Mathematics for B.Tech ECE, PCM or PCB for B.Pharm, and a bachelor's degree for the MBA. PhD entry needs a relevant master's with 55 per cent."
+        },
+        {
+          "question": "Do international students sit SUAT, JEE or CAT?",
+          "answer": "No. Sharda's admission FAQ says Foreign/NRI-quota admission is based on marks in the qualifying examination, while SUAT, JEE Main ranks and MAT/CAT/XAT scores belong to the Indian-national route. Sharda does reserve the right to assess a candidate through group discussion or personal interview before final admission."
+        },
+        {
+          "question": "Is there an English test requirement such as IELTS or TOEFL?",
+          "answer": "Sharda does not publish an IELTS or TOEFL minimum for international applicants. Its domestic programme rules ask for proficiency in English communication, and teaching is in English, so applicants from non-English-medium schools should plan for the English proficiency certificate courses Sharda offers."
+        },
+        {
+          "question": "How much does it cost in total?",
+          "answer": "Tuition for 2026-27 is published in US dollars per year: for example USD 4,200 for B.Tech CSE, USD 4,000 for B.Tech ECE, B.Des and B.Pharm, USD 3,800 for BA Psychology, USD 3,400 for BA Journalism and USD 6,000 for the MBA. Add USD 500 in procedural charges in year one and USD 250 a year after that, then hostel with food of USD 2,300-3,800 a year on the last published international schedule (2022-23), plus a refundable USD 200-300 deposit."
+        },
+        {
+          "question": "Does my nationality change the fee?",
+          "answer": "Yes. Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries pay the same fee structure as Indian students, in rupees, plus an INR 30,000 admission fee, INR 6,000 per semester examination fee and INR 15,000 annual registration from year two. All other international students pay the USD rate. Fees can be paid in US dollars or the equivalent in rupees."
+        },
+        {
+          "question": "Are the scholarships guaranteed?",
+          "answer": "No. Sharda's fee list shows 20 or 50 per cent scholarships against many programmes, but its terms say scholarships are merit-based, apply to tuition only, are confirmed only after original transcripts are verified at reporting, and continue only with regular attendance, progress and good conduct. Only one benefit applies if several are available, and some programmes, such as B.Pharm, show no scholarship."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Apply online through Sharda's international application page. The International Relations Division checks eligibility and issues an offer letter; you then pay USD 500 and email the proof to global@sharda.ac.in. Sharda then issues an Admission Letter / Visa Letter, which you use to apply for a student visa endorsed to Sharda at the nearest Indian mission, allowing 3-8 weeks for processing."
+        },
+        {
+          "question": "When is the intake and the application deadline?",
+          "answer": "There is one main intake a year. Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications. In the 2026-27 first-year calendar, engineering, computing, business, design and media students reported on 17 August with classes from 31 August, while humanities and pharmacy students reported 24-29 August with classes from 7 September."
+        },
+        {
+          "question": "Do I need an AIU equivalence certificate?",
+          "answer": "Sharda accepts qualifications recognised by the Association of Indian Universities for equivalence. If your school-leaving or degree qualification is not AIU-recognised, you must provide equivalence proof from the Indian High Commission or Consulate in your country, or another statutory body. Sharda's first-year procedural charge includes AIU equivalence assistance."
+        },
+        {
+          "question": "What do Sharda's accreditations cover?",
+          "answer": "NAAC accredits the whole university at A+ (CGPA 3.27, Cycle 2, declared January 2023). NBA accreditation is programme-specific: B.Tech ECE, EEE and Biotechnology and the MBA run to 30 June 2028, and B.Pharm to 31 December 2028. The NBA periods for B.Tech Computer Science, Civil and Mechanical Engineering ended on 30 June 2026. In NIRF 2025 Sharda ranks 87 among universities and 57 in pharmacy."
+        },
+        {
+          "question": "Can I work in India while studying, and what happens after arrival?",
+          "answer": "No work is allowed: the Bureau of Immigration bars employment and business activity on a student visa, and Sharda says its visa cannot be used for employment. After arrival you report to the International Relations Division, have a free medical check at Sharda Hospital, and, unless you are Nepali or Bhutanese, register with FRO Noida or FRRO New Delhi within 14 days."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Sharda University - International admissions",
+          "url": "https://www.sharda.ac.in/international",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Sharda University - Programme Fee International 2026-27",
+          "url": "https://www.sharda.ac.in/international/global-course-fee",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Programme-by-programme USD per-year fees, procedural charges, and the Nepal/Bhutan/Bangladesh/GCC-NRI Indian-fee rule."
+        },
+        {
+          "label": "Sharda University - Admission rules for international students",
+          "url": "https://www.sharda.ac.in/international/admission-rules",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Sharda University - International admission FAQs",
+          "url": "https://www.sharda.ac.in/international/admission-faqs",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Sharda University - International general FAQs",
+          "url": "https://www.sharda.ac.in/international/general-faqs",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Sharda University - International accommodation fee (session 2022-23)",
+          "url": "https://www.sharda.ac.in/international/accommodation-fee",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Sharda University - Guidelines for visa and FRO/FRRO",
+          "url": "https://www.sharda.ac.in/international/guidelines-for-visa",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Sharda University - Academic Calendar 2026-27, first-year semester programmes",
+          "url": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "UGC - State-wise List of Private Universities as on 25.11.2022",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "UGC - Expert Committee inspection report on Sharda University (2010)",
+          "url": "https://www.ugc.gov.in/oldpdf/privateuni/shardaunivnoida.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Establishment under Uttar Pradesh Act No. 14 of 2009, notified 24 March 2009."
+        },
+        {
+          "label": "NAAC - Accreditation status",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NBA - Accredited programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking (Ministry of Education)",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Bureau of Immigration - Study in India",
+          "url": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Sharda eligibility and AIU equivalence",
+            "capture": [
+              "citizenship",
+              "qualifying examination and board",
+              "aggregate percentage",
+              "subjects studied",
+              "intended programme"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Work out my Sharda fee tier and total cost",
+            "capture": [
+              "citizenship (USD or INR fee structure)",
+              "intended programme",
+              "hostel room preference",
+              "qualifying-exam marks"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my Sharda international application review",
+            "capture": [
+              "document readiness",
+              "result status",
+              "intended intake",
+              "passport validity"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my Indian student visa and FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date",
+              "airport pickup need"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "sharda-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B. Tech. - Computer Science & Engineering (CSE), Sharda University, Greater Noida",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4200,
+            "officialTotalTuitionAmount": 16800,
+            "annualTuitionUsd": 4200,
+            "totalTuitionUsd": 16800,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 4,200 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 4 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/btech-computer-science",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body",
+              "The B.Tech CSE NBA accreditation period ended on 30 June 2026 and no renewal appears on the NBA register as at September 2026"
+            ],
+            "notes": "Sharda's international rule is a single 50 per cent bar with prerequisite subjects. Note that the NBA accreditation period for this branch ended on 30 June 2026.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "International applicants to Sharda's four-year B.Tech in Computer Science and Engineering are admitted on qualifying-exam merit under the Foreign/NRI quota rather than SUAT or JEE. The programme sits in the Sharda School of Computing Science and Engineering (programme code SET0101) and is taught in English over eight semesters.",
+            "eligibility": {
+              "intro": "International entry needs at least 50 per cent in Grade 12 or equivalent with the programme's prerequisite subjects; the national rule counts Physics, Mathematics and English.",
+              "items": [
+                "Minimum 50 per cent in the qualifying Grade 12 / A Level or equivalent examination",
+                "Prerequisite subjects studied; the page's national rule computes eligibility on Physics, Mathematics, English and two best subjects",
+                "SUAT or JEE Main ranks are required only on the Indian-national route, not the Foreign/NRI quota",
+                "Qualification recognised by the Association of Indian Universities, or an equivalence certificate from the Indian mission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 / O Level marksheet",
+                "Grade 12 / A Level marksheet showing Physics and Mathematics",
+                "AIU equivalence or Indian-mission equivalence certificate where the board is not AIU-recognised"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 4,200 per year for international students; the catalogue total of USD 16,800 is that figure multiplied by the 4-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4, eight semesters",
+              "language": "English",
+              "details": "Programming for problem solving, Python, data structures, operating systems, computer networks, DBMS, theory of computation and algorithms, then compiler design, artificial intelligence and machine learning, with summer internships, project-based learning and two capstone semesters."
+            }
+          ]
+        },
+        {
+          "slug": "sharda-btech-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "Bachelor of Technology (Electronics & Communication Engineering), Sharda University, Greater Noida",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4000,
+            "officialTotalTuitionAmount": 16000,
+            "annualTuitionUsd": 4000,
+            "totalTuitionUsd": 16000,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 4,000 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 4 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/electronics-and-communication-engineering",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body"
+            ],
+            "notes": "Single university-wide 50 per cent international bar; programme-level NBA Tier I accreditation runs to 30 June 2028.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "Sharda's four-year B.Tech in Electronics and Communication Engineering (programme code SET0501, Sharda School of Engineering and Science) admits international applicants on qualifying-exam merit. It is on the NBA Tier I (Washington Accord) register to 30 June 2028 and is taught in English.",
+            "eligibility": {
+              "intro": "International entry needs at least 50 per cent in Grade 12 or equivalent with prerequisite subjects; the national rule for this branch names Physics, Chemistry and Mathematics.",
+              "items": [
+                "Minimum 50 per cent in the qualifying Grade 12 / A Level or equivalent examination",
+                "Prerequisite subjects studied; the national rule asks for Physics, Chemistry and Mathematics, with at least 50 per cent in Mathematics",
+                "SUAT or JEE Main ranks apply only to the Indian-national route",
+                "Qualification recognised by AIU, or an equivalence certificate from the Indian mission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 / O Level marksheet",
+                "Grade 12 / A Level marksheet showing Physics, Chemistry and Mathematics",
+                "AIU or Indian-mission equivalence certificate where needed"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 4,000 per year for international students; the catalogue total of USD 16,000 is that figure multiplied by the 4-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4, eight semesters",
+              "language": "English",
+              "details": "Electronics engineering principles, analog electronics, network theory, digital signal processing, computer networks, then digital communication and computer architecture, with industrial visits and dedicated training slots."
+            }
+          ]
+        },
+        {
+          "slug": "sharda-mba-international-business",
+          "canonicalCourseSlug": "mba-international-business",
+          "officialTitle": "Master of Business Administration - International Business, Sharda University, Greater Noida",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 6000,
+            "officialTotalTuitionAmount": 12000,
+            "annualTuitionUsd": 6000,
+            "totalTuitionUsd": 12000,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 6,000 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 2 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/mba-international-business",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body"
+            ],
+            "notes": "Sharda's MBA is on the NBA Management PG register to 30 June 2028; the register does not list specialisations separately.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "Sharda's two-year MBA in International Business covers export-import documentation, international finance, international marketing and world trade, with further specialisation in marketing, finance, supply chain or HR. International applicants are admitted on their bachelor's result rather than the SUAT, MAT or CAT scores used nationally.",
+            "eligibility": {
+              "intro": "International entry needs a recognised bachelor's degree with at least 50 per cent; national applicants additionally need SUAT, MAT or CAT/XAT scores.",
+              "items": [
+                "Bachelor's degree with a minimum of 50 per cent from a recognised university",
+                "Degree meeting Association of Indian Universities equivalence criteria, or an Indian-mission equivalence certificate",
+                "SUAT, MAT or CAT/XAT scores apply to the Indian-national route only",
+                "Sharda reserves the right to assess candidates through group discussion or personal interview before final admission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and all-year transcripts",
+                "Grade 12 marksheet",
+                "AIU or Indian-mission equivalence certificate where needed"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 6,000 per year for international students; the catalogue total of USD 12,000 is that figure multiplied by the 2-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2, four semesters",
+              "language": "English",
+              "details": "Core management courses followed by international business specialisation in exports and imports documentation, international finance, international marketing strategy and world trade, with a second specialisation option."
+            }
+          ]
+        },
+        {
+          "slug": "sharda-bdes-communication-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design - Communication Design, Sharda University, Greater Noida",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4000,
+            "officialTotalTuitionAmount": 16000,
+            "annualTuitionUsd": 4000,
+            "totalTuitionUsd": 16000,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 4,000 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 4 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/bachelor-of-design-communication-design",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body"
+            ],
+            "notes": "Single university-wide 50 per cent international bar; no separate design entrance test is published for international applicants.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "Sharda's four-year Bachelor of Design in Communication Design covers UI/UX, web and graphic design, branding, advertising, publication, packaging, animation and game design. International applicants are admitted on qualifying-exam merit and the programme is taught in English.",
+            "eligibility": {
+              "intro": "International entry needs at least 50 per cent in Grade 12 or equivalent; the national rule asks for any stream plus English proficiency and a creative aptitude.",
+              "items": [
+                "Minimum 50 per cent in the qualifying Grade 12 / A Level or equivalent examination",
+                "The national rule lists proficiency in English communication and a creative personality",
+                "Qualification recognised by AIU, or an equivalence certificate from the Indian mission",
+                "Sharda reserves the right to assess candidates through group discussion or personal interview before final admission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 / O Level marksheet",
+                "Grade 12 / A Level marksheet",
+                "AIU or Indian-mission equivalence certificate where needed"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 4,000 per year for international students; the catalogue total of USD 16,000 is that figure multiplied by the 4-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4, eight semesters",
+              "language": "English",
+              "details": "Design fundamentals and visualisation, then communication-design verticals including UI/UX, web, graphics, branding, advertising, publication and packaging, with specialisation work in game, graphic and VFX design."
+            }
+          ]
+        },
+        {
+          "slug": "sharda-bpharm",
+          "canonicalCourseSlug": "bpharm",
+          "officialTitle": "Bachelor of Pharmacy (B.Pharm), Sharda University, Greater Noida",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4000,
+            "officialTotalTuitionAmount": 16000,
+            "annualTuitionUsd": 4000,
+            "totalTuitionUsd": 16000,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 4,000 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 4 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows no scholarship (N/A) for this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/bachelor-of-pharmacy",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body",
+              "Sharda's fee list shows no scholarship for B.Pharm, unlike most other programmes"
+            ],
+            "notes": "Single university-wide 50 per cent international bar with PCM/PCB prerequisites; programme-level NBA accreditation runs to 31 December 2028.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "Sharda's four-year B.Pharm follows the Pharmacy Council of India curriculum across pharmaceutics, pharmaceutical chemistry, pharmacognosy and pharmacology. It is on the NBA Pharmacy UG register from 1 January 2026 to 31 December 2028 and admits international applicants on qualifying-exam merit.",
+            "eligibility": {
+              "intro": "International entry needs at least 50 per cent in Grade 12 or equivalent with prerequisite subjects; the national rule asks for Physics, Chemistry and Mathematics or Biology.",
+              "items": [
+                "Minimum 50 per cent in the qualifying Grade 12 / A Level or equivalent examination",
+                "Prerequisite subjects studied; the national rule is Physics, Chemistry and Mathematics or Biology (PCM/PCB)",
+                "Qualification recognised by AIU, or an equivalence certificate from the Indian mission",
+                "No entrance test is published for the Foreign/NRI quota"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 / O Level marksheet",
+                "Grade 12 / A Level marksheet showing Physics, Chemistry and Mathematics or Biology",
+                "AIU or Indian-mission equivalence certificate where needed"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 4,000 per year for international students; the catalogue total of USD 16,000 is that figure multiplied by the 4-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows no scholarship (N/A) for this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead. Unlike most programmes on the list, no scholarship is shown for B.Pharm, so budget on the full rate.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4, eight semesters",
+              "language": "English",
+              "details": "PCI-pattern curriculum in pharmaceutics, pharmaceutical chemistry, pharmacognosy and pharmacology, with industrial visits, practical sessions and a final-semester project and electives such as advanced instrumentation techniques."
+            }
+          ]
+        },
+        {
+          "slug": "sharda-ba-psychology",
+          "canonicalCourseSlug": "bachelor-psychology",
+          "officialTitle": "Bachelor of Arts - Psychology, Sharda University, Greater Noida",
+          "durationYears": 3,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3800,
+            "officialTotalTuitionAmount": 11400,
+            "annualTuitionUsd": 3800,
+            "totalTuitionUsd": 11400,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 3,800 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 3 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows a 50 per cent scholarship 'every year' against this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/ba-psychology",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body"
+            ],
+            "notes": "Single university-wide 50 per cent international bar. Sharda also lists a four-year BA (Hons./Research) Psychology at the same USD 3,800 rate, admitted separately.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "Sharda's three-year BA in Psychology covers social, experimental, clinical and organisational psychology, mental health and development, and quantitative and qualitative research methods. International applicants are admitted on qualifying-exam merit and the programme is taught in English.",
+            "eligibility": {
+              "intro": "International entry needs at least 50 per cent in Grade 12 or equivalent; the national rule accepts any stream with proficiency in English communication.",
+              "items": [
+                "Minimum 50 per cent in the qualifying Grade 12 / A Level or equivalent examination",
+                "The national rule lists proficiency in English communication; no subject prerequisite is named",
+                "Qualification recognised by AIU, or an equivalence certificate from the Indian mission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 / O Level marksheet",
+                "Grade 12 / A Level marksheet",
+                "AIU or Indian-mission equivalence certificate where needed"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 3,800 per year for international students; the catalogue total of USD 11,400 is that figure multiplied by the 3-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows a 50 per cent scholarship 'every year' against this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3, six semesters",
+              "language": "English",
+              "details": "Foundations of psychology, research methods and developmental, social, clinical and organisational psychology, ending with an apprenticeship or project semester in semester six."
+            }
+          ]
+        },
+        {
+          "slug": "sharda-ba-journalism-mass-communication",
+          "canonicalCourseSlug": "bachelor-journalism",
+          "officialTitle": "B.A (Journalism & Mass Communication), Sharda University, Greater Noida",
+          "durationYears": 3,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3400,
+            "officialTotalTuitionAmount": 10200,
+            "annualTuitionUsd": 3400,
+            "totalTuitionUsd": 10200,
+            "verifiedAt": "2026-09-21",
+            "notes": "Official international fee of USD 3,400 per year from Sharda's Programme Fee International 2026-27 page, shown in the 'For International Students' fee-per-year cell on the programme page (fee per semester shown as NA). Total is the per-year figure times 3 years. Excludes USD 500 first-year and USD 250 later-year admission and procedural charges and accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme, conditional on Sharda's merit terms."
+          },
+          "officialProgramUrl": "https://www.sharda.ac.in/programmes/journalism-and-mass-communication",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals applying under Sharda's Foreign/NRI quota",
+              "Non-Resident Indians applying from outside India",
+              "Nationals of Nepal, Bhutan and Bangladesh (billed on the Indian fee structure)"
+            ],
+            "restrictions": [
+              "Nationals of Nepal, Bhutan and Bangladesh and NRIs from GCC countries are billed on the Indian (INR) fee structure rather than the USD international rate",
+              "Employment and business activity are not permitted on an Indian student visa, and a visa endorsed to Sharda cannot be used to study elsewhere",
+              "Qualifications not recognised by the Association of Indian Universities need an equivalence certificate from the Indian mission or another statutory body"
+            ],
+            "notes": "Single university-wide 50 per cent international bar. A four-year BA (Hons./Research) variant is listed separately at the same USD 3,400 rate.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.sharda.ac.in/international/admission-rules"
+          },
+          "admissionsContent": {
+            "overview": "Sharda's three-year BA in Journalism and Mass Communication, taught in the Sharda School of Media, Film and Entertainment, covers news reporting, editing, radio and television, public relations, advertising and digital media. International applicants are admitted on qualifying-exam merit.",
+            "eligibility": {
+              "intro": "International entry needs at least 50 per cent in Grade 12 or equivalent; the national rule accepts any stream with proficiency in English communication.",
+              "items": [
+                "Minimum 50 per cent in the qualifying Grade 12 / A Level or equivalent examination",
+                "The national rule lists proficiency in English communication; no subject prerequisite is named",
+                "Qualification recognised by AIU, or an equivalence certificate from the Indian mission"
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online international application at sharda.ac.in/international/apply for the chosen programme, uploading marksheets and passport copy",
+              "Receive an offer letter once the International Relations Division has checked eligibility against the 50 per cent and prerequisite-subject rule",
+              "Pay USD 500 and email the proof of payment to global@sharda.ac.in, keeping the bank's SWIFT advice as evidence of remittance",
+              "Receive the Admission Letter / Visa Letter and apply for a student visa endorsed to Sharda University at the nearest Indian mission, allowing 3-8 weeks",
+              "Share flight details with the International Relations Division at least two weeks ahead for airport pickup, then report to IRD with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Grade 10 / O Level marksheet",
+                "Grade 12 / A Level marksheet",
+                "AIU or Indian-mission equivalence certificate where needed"
+              ],
+              "application": [
+                "Valid passport copy (and visa once issued)",
+                "Admission Letter / Visa Letter issued by Sharda",
+                "Proof of the USD 500 payment and bank SWIFT advice",
+                "15 passport-size photographs for reporting"
+              ]
+            },
+            "deadlinesNote": "Sharda accepts international applications from January to July and gives 31 July as the last date for Foreign/NRI-quota applications for all programmes; seats are limited per course.",
+            "visaConsiderations": [
+              "The student visa must be endorsed to Sharda University; a change of institution on that visa is not considered",
+              "All international students except nationals of Nepal and Bhutan register with FRO Noida or FRRO New Delhi within 14 days of arrival",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Sharda's Programme Fee International 2026-27 list and the programme page give USD 3,400 per year for international students; the catalogue total of USD 10,200 is that figure multiplied by the 3-year duration, since no year-by-year international escalation is published. Add admission and procedural charges of USD 500 in the first year and USD 250 a year afterwards, plus accommodation. The fee list shows a 20 per cent scholarship 'every year' against this programme; Sharda's terms make any scholarship merit-based, tuition-only, subject to document verification at reporting and conditional on attendance and conduct. Nationals of Nepal, Bhutan and Bangladesh and GCC NRIs are billed on the Indian INR structure instead.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3, six semesters",
+              "language": "English",
+              "details": "Reporting, editing, radio production, television journalism, PR and advertising, with data journalism, mobile reporting, podcasting and Adobe Creative Suite work, ending with an apprenticeship semester."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "identity",
+      "claimText": "Sharda University was established in Greater Noida by the Uttar Pradesh legislature through Act No. 14 of 2009 as a private university under the Sharda Education Trust, with the Act notified on 24 March 2009; its campus is at Plot 32-34, Knowledge Park-III, Greater Noida.",
+      "status": "verified",
+      "sourceLabel": "UGC Expert Committee inspection report on Sharda University (2010)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/privateuni/shardaunivnoida.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Government source (UGC-hosted report). Sharda's own ordinances page adds that the 2009 Act has since been subsumed under the Uttar Pradesh Private Universities Act, 2019; that later statement is university-sourced only and is not asserted in public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The UGC State-wise List of Private Universities (as on 25.11.2022) lists Sharda University, Gautam Budh Nagar, Uttar Pradesh, with a date of notification of 24.03.2009.",
+      "status": "verified",
+      "sourceLabel": "UGC - State-wise List of Private Universities as on 25.11.2022",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Checked on UGC's own PDF (entry 391). Sharda is NOT found in UGC's list of State Private Universities included under Section 12(B) (as on 10.05.2024, https://www.ugc.gov.in/oldpdf/LIST_OF_STATE_PRIVATE_UNIVERSITY_UNDER_SECTION_12B.pdf), so no 12(B) claim is made. Sharda's own admission FAQ says 'registered under Section 2(f) of UGC Act'; the public badge is worded as UGC listing rather than a section number."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC records Sharda University, Greater Noida (AISHE U-0541) as accredited in Cycle 2 with CGPA 3.27, grade A+ after appeal, declared by the 140th Standing Committee on 17 January 2023.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Accreditation status workbook and Standing Committee results",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Conflict/resolution: the NAAC valid-accreditation workbook (as on 14-08-2025) shows the grade cell as 'A' with CGPA 3.27 and declaration 17-01-2023, but CGPA 3.27 falls in NAAC's A+ band (3.26-3.50) and the 140th SC appeal file 140SC_Appeal.pdf ('List of Institutions CGPA & Grade Change after Appeal') records A+. A+ is published. NAAC publishes a declaration date, not an expiry, so no validity end is asserted. Verified by the batch supervisor 2026-09-21 (regulator-verdicts-india-batch-2.md)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA Engineering UG Tier I (Washington Accord) register lists Sharda University (Gautam Budh Nagar) for Electronics and Communication Engineering, Electrical and Electronics Engineering and Biotechnology with accreditation to 30 June 2028.",
+      "status": "verified",
+      "sourceLabel": "NBA - Accredited programme registers",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The same register shows Computer Science and Engineering, Civil Engineering and Mechanical Engineering with an accreditation period that ended 30 June 2026 and no renewal as at 2026-09-21, so those three are NOT described as NBA-accredited anywhere in this bundle. Sharda's international page still says 'Engineering Programmes at Sharda University have been accredited by the National Board of Accreditation (NBA)' without qualification - overbroad."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA Management PG register lists the Sharda University MBA for academic years 2025-26 to 2027-28, up to 30 June 2028.",
+      "status": "verified",
+      "sourceLabel": "NBA - Management PG register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The register lists the MBA without separating specialisations; the International Business track is presented as part of Sharda's MBA, not as a separately accredited award."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA Pharmacy UG register lists Sharda University's B.Pharm with accreditation from 1 January 2026 to 31 December 2028.",
+      "status": "verified",
+      "sourceLabel": "NBA - Pharmacy UG register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "recognitionBadges",
+      "claimText": "In the Ministry of Education's NIRF 2025 rankings, Sharda University is ranked 87 in the University category (score 49.00) and 57 in Pharmacy (score 49.99), with band 101-150 in Overall and Engineering and band 101-125 in Management.",
+      "status": "verified",
+      "sourceLabel": "NIRF 2025 - University category ranking",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Pharmacy table: https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html. Sharda's international page still quotes 'NIRF Rankings 2023' positions (87 University, 62 Pharmacy, 151-200 Engineering); the stale 2023 figures are not used. Rankings are kept out of the headline recognition claims except as a dated NIRF 2025 badge."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "summary",
+      "claimText": "Sharda University reports more than 19,200 students on its 63-acre Greater Noida campus, students from more than 95 countries, more than 1,047 faculty and more than 135 programmes offered.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International admissions page",
+      "sourceUrl": "https://www.sharda.ac.in/international",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The central library holds around 1.4 lakh books, school libraries open 8 am to 7 pm, the campus network runs at 1 Gbps through two ISPs with more than 200 access points including hostels, and the university operates the Suno Sharda 90.8 FM community radio.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International page (facilities)",
+      "sourceUrl": "https://www.sharda.ac.in/international",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Library hours from the international general FAQ: https://www.sharda.ac.in/international/general-faqs"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "cityProfile",
+      "claimText": "Sharda University states the campus is about an hour's drive from Delhi International Airport, that new arrivals should book to Delhi and request airport pickup at least two weeks before arrival, that summer temperatures run 30-45C and winter 5-25C with winter starting around November, that mains power is 240 V, and that markets are available within about 5 km of campus.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Pre-arrival information for international students",
+      "sourceUrl": "https://www.sharda.ac.in/international/pre-arrival-information",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "hostelOverview",
+      "claimText": "Sharda's international accommodation page lists annual per-student charges for session 2022-23 of USD 3800 (double AC with food), USD 3100 (double AC, common washroom), USD 2800 (double non-AC) and USD 2300 (double non-AC, common washroom), with a refundable security deposit of USD 300 for AC and USD 200 for non-AC rooms; hostel residents must take food in the university mess.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International accommodation fee",
+      "sourceUrl": "https://www.sharda.ac.in/international/accommodation-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The page is still labelled 'Session 2022-23' as at 2026-09-21; no newer international rate schedule is published. The national hostel-fee page carries 2026 INR rates (e.g. 3-seater non-AC INR 1,24,000-1,25,000; single-seater AC apartment in Mandela Girls Hostel INR 2,38,000, all including mess) but it is not scoped to international students, so it is cited only as context in hostelOverview."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "hostelOverview",
+      "claimText": "Sharda's 2026 hostel-fee page lists annual rates including mess from INR 1,24,000 (three-seater non-AC, Vivekananda boys hostel) to INR 2,38,000 (single-seater AC apartment, Mandela Girls Hostel), applicable 1 August to 31 May, and restricts first-year boys to Vivekananda and Vardhman and first-year girls to Sarojini and Mandela Girls Hostel.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Hostel fee (national page)",
+      "sourceUrl": "https://www.sharda.ac.in/admissions/hostel-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "dietarySupport",
+      "claimText": "Sharda's international FAQ states complimentary laundry of 5 kg x 20 washes per academic year for hostel residents and that residents may add a room cooler or refrigerator on payment of charges fixed by the Inter-Hostel Administration; the campus-facilities page lists a grocery store, cafeterias, the Lego House restaurant and a separate hostel mess.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International general FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/general-faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Campus facility names from https://www.sharda.ac.in/campuslife/campus-facilities"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "safetyOverview",
+      "claimText": "Sharda states that the campus, hostels, residential, parking and academic areas are secured 24x7 by outsourced security agencies with armed guards and CCTV, and its campus-facilities page describes a centralised command and control centre monitoring about 1,450 CCTV cameras, plus emergency vans and ambulances.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International general FAQs (security)",
+      "sourceUrl": "https://www.sharda.ac.in/international/general-faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "C4 / 1450+ CCTV figure from https://www.sharda.ac.in/campuslife/campus-facilities"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "studentSupport",
+      "claimText": "Sharda's International Relations Division verifies documents at reporting, registers students, arranges the free arrival medical check-up at Sharda Hospital, issues the cashless group mediclaim card (valid one year, renewed annually), helps open a bank account, and assists with FRO/FRRO registration.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Post-arrival information",
+      "sourceUrl": "https://www.sharda.ac.in/international/post-arrival-information",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Medical check-up, mediclaim and bank-account detail from https://www.sharda.ac.in/international/general-faqs"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Sharda states that a student visa must be endorsed to Sharda University, that a change of university cannot be considered on that visa, that the visa cannot be used for employment or admission elsewhere, that Indian visas generally take 3-8 weeks, and that all international students except those from Nepal and Bhutan must register with FRO Noida or FRRO New Delhi within 14 days of arrival.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Guidelines for visa and FRO/FRRO",
+      "sourceUrl": "https://www.sharda.ac.in/international/guidelines-for-visa",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "thingsToConsider",
+      "claimText": "The Bureau of Immigration states that foreigners on a student visa must not engage in employment or business activity in India and that student-visa holders staying beyond 180 days must register with the FRRO within 14 days of arrival.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Registration rule also at https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Sharda states that for equivalence of the qualifying exam, qualifications recognised by the Association of Indian Universities are accepted, and that for any qualification not recognised by AIU the applicant must provide equivalence proof from the Indian High Commission or Consulate or other statutory body.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Admission rules for international students",
+      "sourceUrl": "https://www.sharda.ac.in/international/admission-rules",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "admissionsContent",
+      "claimText": "Sharda states that the eligibility criterion for all programmes for international applicants is a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme, and that PhD entry needs a relevant master's with 55 per cent.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Admission rules for international students",
+      "sourceUrl": "https://www.sharda.ac.in/international/admission-rules",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "admissionsContent",
+      "claimText": "Sharda's international programme-fee page for 2026-27 lists admission and procedural charges (medical check-up, insurance, AIU equivalence, FRRO and visa-extension assistance) of USD 500 in the first year and USD 250 a year from the second year, and states that students from Nepal, Bhutan, Bangladesh and NRIs from GCC countries pay the Indian fee structure plus INR charges (admission INR 30,000, examination INR 6,000 per semester, registration INR 15,000 a year from year two).",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "admissionsContent",
+      "claimText": "Sharda's international page says a minimum 20 per cent scholarship applies to all programmes and 50 per cent to PhD, M.Tech and selected bachelor's programmes, but its terms state that scholarships are merit-based, apply to tuition only, are subject to verification of original transcripts at reporting, and continue only on attendance, progress and conduct.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International page (scholarship terms)",
+      "sourceUrl": "https://www.sharda.ac.in/international",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Conflict: the 'minimum 20% assured scholarship for all programs' line conflicts with the programme-fee list, which shows scholarship 'N/A' for B.Pharm and blank for several programmes. Public copy therefore describes scholarships as listed and conditional, never as assured or guaranteed."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "admissionsContent",
+      "claimText": "Sharda's international FAQ states that applications are accepted from January to July, that 31 July is the last date for all programmes under the Foreign/NRI quota, that Foreign/NRI quota admission is based on marks in 10+2 or equivalent, and that the medium of instruction is English.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/admission-faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "practicalExposure",
+      "claimText": "Sharda's 2026-27 international fee list names industry-linked programme variants including B.Tech (CSE) Cyber Security and Forensics with EC-Council, B.Tech (CSE) Full Stack Development with Xebia Academic Alliance, B.Tech (EEE) Advanced Electric Vehicle with L&T EduTech, and B.Com International Accounting and Finance with ACCA, UK.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "practicalExposure",
+      "claimText": "Sharda's international pages report more than 330 functional MoUs for semester exchange and free-tuition programmes and list academic tie-ups including Curtin University of Technology (Australia), Taipei Medical University (Taiwan), University of Bremen (Germany) and University of Malta.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Why choose Sharda (international)",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "faq",
+      "claimText": "Sharda's international FAQ states that programme or tuition fees can be paid in US dollars or equivalent Indian rupees, that there is no capitation fee, and that change of programme requires a written request to the International Relations Division.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/admission-faqs",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Payment channels (ICICI remittance with SWIFT advice, cash counter in Block-2 basement, student-login gateway) from https://www.sharda.ac.in/international/global-payment-procedure"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "faq",
+      "claimText": "Sharda's international fee list includes a six-month Certificate of Proficiency (English) at USD 1000 and a one-year Advance Certificate of Proficiency (English) at USD 3000.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sharda-university",
+      "publicField": "intake",
+      "claimText": "Sharda's 2026-27 first-year academic calendar sets reporting on 17 August 2026 and classes from 31 August 2026 for SSMFE, SSD, SSOL, SSBS, SSCSE and SSES, and reporting in the week of 24-29 August with classes from 7 September 2026 for SSHSS, SOP, SSAHS and SSBT.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27, first-year semester programmes",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Scanned PDF; read visually from page 1 on 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs at least 50 per cent in Grade 12 or equivalent with the programme's prerequisite subjects; the national rule counts Physics, Mathematics and English.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/btech-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school was 17 August 2026 with classes from 31 August 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list B. Tech. - Computer Science & Engineering (CSE), Sharda University, Greater Noida at USD 4,200 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/btech-computer-science (Fee Per Semester NA, Fee Per Year 4200**). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs at least 50 per cent in Grade 12 or equivalent with prerequisite subjects; the national rule for this branch names Physics, Chemistry and Mathematics.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/electronics-and-communication-engineering",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school was 17 August 2026 with classes from 31 August 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-btech-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list Bachelor of Technology (Electronics & Communication Engineering), Sharda University, Greater Noida at USD 4,000 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/electronics-and-communication-engineering (Fee Per Semester NA, Fee Per Year 4000**). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-mba-international-business",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs a recognised bachelor's degree with at least 50 per cent; national applicants additionally need SUAT, MAT or CAT/XAT scores.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/mba-international-business",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-mba-international-business",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-mba-international-business",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school was 17 August 2026 with classes from 31 August 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-mba-international-business",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list Master of Business Administration - International Business, Sharda University, Greater Noida at USD 6,000 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/mba-international-business (Fee Per Semester NA, Fee Per Year 6000**). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bdes-communication-design",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs at least 50 per cent in Grade 12 or equivalent; the national rule asks for any stream plus English proficiency and a creative aptitude.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/bachelor-of-design-communication-design",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bdes-communication-design",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bdes-communication-design",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school was 17 August 2026 with classes from 31 August 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bdes-communication-design",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list Bachelor of Design - Communication Design, Sharda University, Greater Noida at USD 4,000 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/bachelor-of-design-communication-design (Fee Per Semester NA, Fee Per Year 4000**). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bpharm",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs at least 50 per cent in Grade 12 or equivalent with prerequisite subjects; the national rule asks for Physics, Chemistry and Mathematics or Biology.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/bachelor-of-pharmacy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bpharm",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bpharm",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school ran 24-29 August 2026 with classes from 7 September 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-bpharm",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list Bachelor of Pharmacy (B.Pharm), Sharda University, Greater Noida at USD 4,000 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/bachelor-of-pharmacy (Fee Per Semester NA, Fee Per Year 4000). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-psychology",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs at least 50 per cent in Grade 12 or equivalent; the national rule accepts any stream with proficiency in English communication.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/ba-psychology",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-psychology",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-psychology",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school ran 24-29 August 2026 with classes from 7 September 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-psychology",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list Bachelor of Arts - Psychology, Sharda University, Greater Noida at USD 3,800 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/ba-psychology (Fee Per Semester NA, Fee Per Year 3800*). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-journalism-mass-communication",
+      "publicField": "eligibility",
+      "claimText": "Sharda applies one published bar to international applicants for all programmes: a minimum of 50 per cent in the qualifying examination and having studied the prerequisite subjects for the chosen programme. International entry needs at least 50 per cent in Grade 12 or equivalent; the national rule accepts any stream with proficiency in English communication.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - official programme page, Eligibility Criteria (For International Students)",
+      "sourceUrl": "https://www.sharda.ac.in/programmes/journalism-and-mass-communication",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The programme page's international row repeats the university-wide rule; subject detail in public copy is taken from the same page's national row and labelled as such. A commented-out line 'There is no NRI/Foreign Nationals quota for these courses as per the Uttar Pradesh Government policy' exists in the page HTML but is not rendered, so it is not treated as a live restriction."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-journalism-mass-communication",
+      "publicField": "admissions",
+      "claimText": "Sharda's international route runs from online application to eligibility check and offer letter, a USD 500 payment with proof sent to global@sharda.ac.in, then an Admission Letter / Visa Letter used for the student-visa application; Foreign/NRI-quota admission is on qualifying-exam marks rather than the SUAT entrance test used for Indian applicants.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - International 'How to apply' and admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/international/why-choose-sharda",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Merit basis for Foreign/NRI quota from https://www.sharda.ac.in/international/admission-faqs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-journalism-mass-communication",
+      "publicField": "intake",
+      "claimText": "Sharda accepts international applications January to July with 31 July as the last date for the Foreign/NRI quota. Reporting for first-year students in this school was 17 August 2026 with classes from 31 August 2026 in the 2026-27 calendar.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Academic Calendar 2026-27 (first year) and international admission FAQs",
+      "sourceUrl": "https://www.sharda.ac.in/attachments/common_files/Academic_Calendar_2026-27_First_year_students_Semester_programme.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sharda-university",
+      "programmeSlug": "sharda-ba-journalism-mass-communication",
+      "publicField": "fee",
+      "claimText": "Sharda's Programme Fee International 2026-27 page and the programme page list B.A (Journalism & Mass Communication), Sharda University, Greater Noida at USD 3,400 per year for international students, with admission and procedural charges of USD 500 in the first year and USD 250 a year thereafter.",
+      "status": "verified",
+      "sourceLabel": "Sharda University - Programme Fee International 2026-27",
+      "sourceUrl": "https://www.sharda.ac.in/international/global-course-fee",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Values read from the allCourses data embedded in the international fee page and cross-checked against the 'For International Students' fee table on https://www.sharda.ac.in/programmes/journalism-and-mass-communication (Fee Per Semester NA, Fee Per Year 3400**). The asterisk markers are not explained on either page and are not reproduced. The national (INR) row on the programme page is commented out in HTML and not used."
+    }
+  ]
+}

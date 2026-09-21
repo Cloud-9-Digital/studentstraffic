@@ -1,0 +1,210 @@
+{
+  "manifestId": "india-batch-2-media-2026-09-21",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "scope": "logo and cover for india-batch-2 content migrations (0099 onward)",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-09-21; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "sharda-university",
+      "universityName": "Sharda University",
+      "sourceBatch": "india-batch-2",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.sharda.ac.in/attachments/site_logo/logo22.png",
+          "sourceType": "official",
+          "rightsBasis": "Official Sharda University site logo served from the university's own domain and referenced as the organisation logo in the sharda.ac.in JSON-LD; used as the header logo across sharda.ac.in. No open licence - used as the institution's own brand mark for identification. HTTP 200, content-type image/png, 253x56 px, checked 2026-09-21. Visual confirmation: 'SHARDA UNIVERSITY - Beyond Boundaries' wordmark with lotus emblem; NOTE the file also includes a 'NAAC A+ Accredited' seal on the right, which is consistent with the regulator verdict but may be cropped out if a pure wordmark is preferred. Small (253px wide) - a higher-resolution official asset would be preferable if found. Rights status: official institutional asset, no open licence; reuse relies on identification of the institution only.",
+          "proposedPublicId": "studentstraffic/universities/sharda-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sharda.ac.in/attachments/infrastructure_images/infra.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official campus photograph on the university's own domain, used as the banner on https://www.sharda.ac.in/campuslife/infrastructure. No open licence stated - official institutional image. HTTP 200, content-type image/jpeg, 2880x900 px (wide landscape banner), checked 2026-09-21. Visual confirmation: red-brick multi-storey academic blocks of the Greater Noida campus under blue sky, no text overlays. Wikimedia Commons 'Sharda University' files were rejected: they show Sharada Peeth ruins in Azad Kashmir, Pakistan, not this campus. Alternative official image with text overlays: https://media.sharda.ac.in/sharda.ac.in/sharda-assets/imgs/virutal-tour_1200x628.jpg (aerial, 1200x628, labelled pins - not preferred). Rights status: official institutional asset, no open licence; reuse relies on identification of the institution only.",
+          "proposedPublicId": "studentstraffic/universities/sharda-university/cover",
+          "altText": "Red-brick multi-storey academic buildings on the Sharda University campus in Greater Noida, Uttar Pradesh"
+        }
+      ]
+    },
+    {
+      "universitySlug": "world-university-of-design",
+      "universityName": "World University of Design",
+      "sourceBatch": "india-batch-2",
+      "migrationId": "0102-india-world-university-of-design",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://worlduniversityofdesign.ac.in/wud_new/images/Logo_2.png",
+          "sourceType": "official",
+          "rightsBasis": "Official WUD brand mark (grey polygon emblem plus yellow 'WUD / World University of Design' wordmark panel) served from the university's own domain and used as the site header logo across wud.ac.in pages (www.wud.ac.in/wud_new/images/Logo_2.png 301-redirects to this URL). No open licence; used only to identify the institution. Checked 2026-09-21: HTTP 200, content-type image/png, 63,532 bytes, 508x211 px; visually confirmed.",
+          "proposedPublicId": "studentstraffic/universities/world-university-of-design/logo"
+        },
+        {
+          "kind": "cover",
+          "status": "hold",
+          "reason": "No rights-safe campus exterior image found: Wikimedia Commons has no World University of Design campus files, and the official site's images are school/programme banners and event photos rather than an identifiable campus view. Leave the cover empty until an official media-kit or user-supplied campus photo is obtained.",
+          "proposedPublicId": "studentstraffic/universities/world-university-of-design/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "chandigarh-university",
+      "universityName": "Chandigarh University",
+      "sourceBatch": "india-batch-2",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.cuchd.in/includes/assets/images/header-footer/cu-logo-dark.webp",
+          "sourceType": "official",
+          "rightsBasis": "Official Chandigarh University wordmark and seal served from the university's own domain in the site header of cuchd.in (e.g. https://www.cuchd.in/about/ and /international/); used for identification only. HTTP 200, content-type image/webp, 304x109 px RGBA. Checked 2026-09-21; visually confirmed: red CU seal block with 'CHANDIGARH UNIVERSITY - Discover. Learn. Empower.' wordmark on transparent background. CU's Our Identity page asks that the seal not be altered, cropped or rotated.",
+          "proposedPublicId": "studentstraffic/universities/chandigarh-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Main_Block_Chandigarh_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons File:Main_Block_Chandigarh_University.jpg by Navyison, licensed CC BY-SA 4.0 (attribution: 'Navyison, CC BY-SA 4.0, via Wikimedia Commons'), photographed 2021-09-15. HTTP 200, content-type image/jpeg, 6000x4000 px (11.0 MB). Checked 2026-09-21; visually confirmed via 1280px thumbnail: multi-storey red-brick and white academic block of the Gharuan campus under blue sky with palms and hedges in front. Note: upload.wikimedia.org returns 429 to a generic UA; use a descriptive User-Agent when fetching.",
+          "proposedPublicId": "studentstraffic/universities/chandigarh-university/cover",
+          "altText": "Main academic block of Chandigarh University's Gharuan campus in Mohali, Punjab, a multi-storey red-brick building with palm trees in front"
+        }
+      ]
+    },
+    {
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "universityName": "Sri Ramachandra Institute of Higher Education and Research",
+      "sourceBatch": "india-batch-2",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/01/logo-sriher@2x.png",
+          "sourceType": "official",
+          "rightsBasis": "Official brand asset: the @2x header logo (alt \"Sriher\") served from the university's own media domain and used in the header of https://sriramachandra.edu/. Checked 2026-09-21: HTTP 200 image/png, 844x146 RGBA; visually confirmed as the SRIHER red triangle-and-caduceus emblem with the 'SRI RAMACHANDRA / INSTITUTE OF HIGHER EDUCATION AND RESEARCH' wordmark. Not a favicon.",
+          "proposedPublicId": "studentstraffic/universities/sri-ramachandra-institute-of-higher-education-and-research/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Sri_Ramachandra_Institute.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons File:Sri_Ramachandra_Institute.jpg, CC BY-SA 4.0, author/uploader User:Sriher (own work, dated 2019-03-19); member of Category:Sri Ramachandra Institute of Higher Education and Research. Checked 2026-09-21 via the Commons imageinfo API and curl: HTTP 200 image/jpeg, 956x475 landscape. Visually confirmed as an aerial view of the Porur campus showing the star-shaped block pictured on the cover of SRIHER's own 2026-27 international prospectus. Slightly below 1000px wide; no larger rights-safe campus image found on Commons (category has 4 files, the rest are postage stamps).",
+          "proposedPublicId": "studentstraffic/universities/sri-ramachandra-institute-of-higher-education-and-research/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "universityName": "JSS Academy of Higher Education & Research",
+      "sourceBatch": "india-batch-2",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jssaherstoragenew.blob.core.windows.net/jssuudstorage/sdimages/jssnewlogo.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official brand asset: the header logo served on the jssuni.edu.in homepage from the university's own Azure storage (jssaherstoragenew). Checked 2026-09-21: HTTP 200 image/jpeg, 1296x610; visually confirmed as the JSS AHER logo (JSS Mahavidyapeetha emblem, 'JSS Academy of Higher Education & Research (Deemed to be University) Mysuru' wordmark). JPEG on white; no SVG located. The smaller 150x71 copy on the international pages was not used.",
+          "proposedPublicId": "studentstraffic/universities/jss-academy-of-higher-education-and-research/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/JSS_Hospital%2C_Mysore_%2801%29.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons File:JSS Hospital, Mysore (01).jpg, CC BY-SA 4.0, author Christopher J. Fynn (User:Cfynn), taken 2015-05-24; in Category:JSS Hospital. Checked 2026-09-21 via the Commons imageinfo API: 7349x2948 landscape, HTTP 200 image/jpeg; visually confirmed as the JSS Hospital building in Mysuru (signage 'JSS HOSPITAL'), the teaching hospital of JSS Medical College, a constituent college of JSS AHER. Photo predates landscaping (construction vehicles visible). Attribution and share-alike required. No Commons image of the Sri Shivarathreeshwara Nagara academic campus itself was found (Category:JSS Medical College holds only a 604x453 FAL group photo).",
+          "proposedPublicId": "studentstraffic/universities/jss-academy-of-higher-education-and-research/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "christ-university",
+      "universityName": "CHRIST (Deemed to be University)",
+      "sourceBatch": "india-batch-2",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://christuniversity.in/images/logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official CHRIST (Deemed to be University) wordmark and crest used as the site header logo on christuniversity.in (all pages); used only to identify the institution. HTTP 200, content-type image/png, 194,711 bytes, 1794x608 px (PIL). Checked 2026-09-21; visually confirmed: gold crest (star, candle, book; 'Excellence', 'Service', 'Christ') with 'CHRIST (DEEMED TO BE UNIVERSITY) BANGALORE | DELHI NCR | PUNE' on transparent background.",
+          "proposedPublicId": "studentstraffic/universities/christ-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Christ_University_Hosur_road_Bangalore_4819.JPG",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons File:Christ University Hosur road Bangalore 4819.JPG by Rameshng, licensed CC BY-SA 3.0 (attribution: 'Rameshng / Wikimedia Commons, CC BY-SA 3.0'); description 'Christ University Entrance at Hosur road side, Bangalore'. HTTP 200, content-type image/jpeg, 3648x2736 px (landscape). Checked 2026-09-21; visually confirmed on a 1280px copy: Central Campus entrance on Hosur Road with 'CHRIST UNIVERSITY' signboard (Kannada and English), crest, gates and glass-fronted building behind trees. Signage predates the 'CHRIST (Deemed to be University)' renaming.",
+          "proposedPublicId": "studentstraffic/universities/christ-university/cover",
+          "altText": "Hosur Road entrance of CHRIST (Deemed to be University) Central Campus in Bengaluru, with the Christ University signboard and gates in front of a glass-fronted building"
+        }
+      ]
+    },
+    {
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "universityName": "Shiv Nadar Institution of Eminence",
+      "sourceBatch": "india-batch-2",
+      "migrationId": "0104-india-shiv-nadar-institution-of-eminence",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://snu.edu.in/site/templates/images/logo.svg",
+          "sourceType": "official",
+          "rightsBasis": "Official Shiv Nadar University logo (vector) served from the university own domain and used as the site header logo (alt text \"Shiv Nadar University Logo\") on snu.edu.in. No open licence - official institutional brand mark used for identification only. HTTP 200, content-type image/svg+xml, 500x172 viewBox, blue (#006DB4) and grey wordmark, checked 2026-09-21.",
+          "proposedPublicId": "studentstraffic/universities/shiv-nadar-institution-of-eminence/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Shiv_Nadar_University.jpg",
+          "sourceType": "wikimedia",
+          "rightsBasis": "Wikimedia Commons file https://commons.wikimedia.org/wiki/File:Shiv_Nadar_University.jpg by User:Dkuthari, licence CC BY-SA 4.0 (attribution: \"Dkuthari, CC BY-SA 4.0, via Wikimedia Commons\"; share-alike applies to derivatives). Direct asset HTTP 200, image/jpeg, 5152x3008 after EXIF rotation (stored 3008x5152 with an orientation flag - apply EXIF transpose before cropping). Visual confirmation: panoramic view of a glass-fronted campus building with a curved white canopy roof and lawns, dated 29 July 2023. Checked 2026-09-21.",
+          "proposedPublicId": "studentstraffic/universities/shiv-nadar-institution-of-eminence/cover",
+          "altText": "Glass-fronted building with a curved canopy roof and landscaped lawns on the Shiv Nadar Institution of Eminence campus near Greater Noida"
+        }
+      ]
+    },
+    {
+      "universitySlug": "ashoka-university",
+      "universityName": "Ashoka University",
+      "sourceBatch": "india-batch-2",
+      "migrationId": "0105-india-ashoka-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://in8cdn.npfs.co/uploads/template/5716/1792/publish/images/logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official Ashoka University logo used as the header logo of Ashoka own undergraduate application portal (https://application.ashoka.edu.in/), which serves its assets from this NoPaperForms CDN path; the same red rosette and navy wordmark is the header logo on www.ashoka.edu.in (that copy is behind a Cloudflare challenge and returns 403 to curl, so the portal copy is used). No open licence - official brand mark for identification only. HTTP 200, image/png, 488x163 transparent, checked 2026-09-21.",
+          "proposedPublicId": "studentstraffic/universities/ashoka-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ashoka_University_Campus.jpg",
+          "sourceType": "wikimedia",
+          "rightsBasis": "Wikimedia Commons file https://commons.wikimedia.org/wiki/File:Ashoka_University_Campus.jpg by User:Arora.prianca, licence CC BY-SA 4.0 (attribution: \"Arora.prianca, CC BY-SA 4.0, via Wikimedia Commons\"; share-alike applies to derivatives). Direct asset HTTP 200, image/jpeg, 4032x3024, dated 2022-07-13. Visual confirmation: red-brick campus buildings around landscaped lawns at sunset, no text overlays. Checked 2026-09-21.",
+          "proposedPublicId": "studentstraffic/universities/ashoka-university/cover",
+          "altText": "Red-brick residential and academic buildings around landscaped lawns on the Ashoka University campus in Sonipat at sunset"
+        }
+      ]
+    },
+    {
+      "universitySlug": "flame-university",
+      "universityName": "FLAME University",
+      "sourceBatch": "india-batch-2",
+      "migrationId": "0106-india-flame-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.flame.edu.in/images/home/flame-shild.svg",
+          "sourceType": "official",
+          "rightsBasis": "Official FLAME University shield emblem (vector, orange flame gradient and navy #0c3f6a) served from the university own domain and used on the flame.edu.in homepage with alt text \"FLAME Logo\". Emblem only, without the wordmark; the full-colour wordmark PNG (https://www.flame.edu.in/images/FLAME-Logo.png) is only 192x64 and the white-Logo-FLAME.svg is a reversed (white) version for dark backgrounds. No open licence - official brand mark for identification only. HTTP 200, image/svg+xml, checked 2026-09-21.",
+          "proposedPublicId": "studentstraffic/universities/flame-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.flame.edu.in/images/titlebanners/common.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph served from FLAME University own domain as a page title banner. Visual confirmation: stone name wall engraved \"FLAME UNIVERSITY\" with trees and a water-feature mist at the Lavale campus. No open licence - official institutional image used for identification only. HTTP 200, image/jpeg, 1920x600 wide banner, checked 2026-09-21. No Wikimedia Commons image of the FLAME campus was found (Commons searches returned only unrelated flame images).",
+          "proposedPublicId": "studentstraffic/universities/flame-university/cover",
+          "altText": "Stone wall engraved with the name FLAME UNIVERSITY beside trees and a water feature at the Lavale campus in Pune"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2560 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-chemical-engineering",
+      "name": "B.E./B.Tech in Chemical Engineering",
+      "shortName": "B.E./B.Tech Chemical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "chemical-engineering",
+      "aliases": [
+        "Bachelor of Chemical Engineering",
+        "BEng Chemical Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "B.E./B.Tech in Chemical Engineering is the Students Traffic catalogue category for four-year undergraduate engineering degrees in chemical engineering, taken after an upper-secondary qualification with physics, chemistry and mathematics. Programmes in this category cover process design, thermodynamics, mass and heat transfer, reaction engineering and plant operations. Each university's own award title, entry rules and fees are shown on its programme page.",
+      "metaTitle": "B.E./B.Tech Chemical Engineering for International Students",
+      "metaDescription": "Compare B.E./B.Tech Chemical Engineering degrees abroad by duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bachelor-economics",
+      "name": "Bachelor's in Economics",
+      "shortName": "Bachelor's Economics",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "economics",
+      "aliases": [
+        "BA Economics",
+        "BSc Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Bachelor's in Economics is the Students Traffic catalogue category for undergraduate degrees whose main subject is economics, whether awarded as a B.A., B.Sc. or equivalent. Programmes in this category typically cover microeconomics, macroeconomics, econometrics and quantitative methods, and many require mathematics at school level. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+      "metaTitle": "Bachelor's in Economics for International Students",
+      "metaDescription": "Compare Bachelor's in Economics degrees abroad by award, duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bachelor-international-relations",
+      "name": "Bachelor's in International Relations",
+      "shortName": "Bachelor's International Relations",
+      "stream": "public-policy-international-relations",
+      "level": "bachelors",
+      "discipline": "international-relations",
+      "aliases": [
+        "BA International Relations",
+        "Bachelor of International Studies"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Bachelor's in International Relations is the Students Traffic catalogue category for undergraduate degrees centred on international relations, global politics and governance, whether awarded as a B.A. or an equivalent. Programmes in this category typically cover international relations theory, foreign policy, international political economy and regional studies. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+      "metaTitle": "Bachelor's in International Relations for International Students",
+      "metaDescription": "Compare Bachelor's in International Relations degrees abroad by duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "Bachelor of Design is the catalogue category for four-year studio-based undergraduate design degrees. Lovely Professional University maps its B.Design Interior and Furniture programme, taught in English at Phagwara, to this category. The LPU version combines conceptual foundation coursework with intensive studio practice in interior and furniture design, adds design research methods and a dissertation, and allows an interdisciplinary minor. Other LPU B.Design tracks covering fashion, graphics, gaming, product and industrial design, and film and television production sit under the same category.",
+      "metaTitle": "B.Des Degrees for International Students",
+      "metaDescription": "Compare B.Des degrees open to international applicants: studio specialisations, duration, teaching language, intake months and published tuition."
+    },
+    {
+      "slug": "bsc-mathematics",
+      "name": "B.Sc. in Mathematics",
+      "shortName": "B.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "bachelors",
+      "discipline": "mathematics",
+      "aliases": [
+        "Bachelor of Science in Mathematics",
+        "BSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "B.Sc. in Mathematics is the Students Traffic catalogue category for undergraduate science degrees whose main subject is mathematics. Programmes in this category typically cover calculus, linear algebra, real and complex analysis, algebra, probability and applied or computational mathematics, and require mathematics at school-leaving level. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+      "metaTitle": "B.Sc. Mathematics Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Mathematics degrees abroad by duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bsc-physics",
+      "name": "B.Sc. in Physics",
+      "shortName": "B.Sc. Physics",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "physics",
+      "aliases": [
+        "Bachelor of Science in Physics",
+        "BSc Physics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "B.Sc. in Physics is the Students Traffic catalogue category for undergraduate science degrees whose main subject is physics. Programmes in this category typically cover classical and quantum mechanics, electromagnetism, thermal and statistical physics and laboratory work, and require physics and mathematics at school-leaving level. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+      "metaTitle": "B.Sc. Physics Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Physics degrees abroad by duration, teaching language, tuition and the admission route open to international applicants."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "shiv-nadar-institution-of-eminence",
+      "name": "Shiv Nadar Institution of Eminence",
+      "city": "Greater Noida",
+      "type": "Private",
+      "establishedYear": 2011,
+      "officialWebsite": "https://snu.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://snu.edu.in/site/templates/images/logo.svg",
+          "rights": "Official Shiv Nadar University logo served from the university's own website (snu.edu.in) as the site header logo, alt text 'Shiv Nadar University Logo'. Used only to identify the institution.",
+          "checkedAt": "2026-09-21"
+        },
+        "cover": {
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Shiv_Nadar_University.jpg",
+          "rights": "Wikimedia Commons file 'Shiv Nadar University.jpg' by User:Dkuthari, licensed CC BY-SA 4.0 (attribution and share-alike required). File page: https://commons.wikimedia.org/wiki/File:Shiv_Nadar_University.jpg",
+          "checkedAt": "2026-09-21",
+          "altText": "Glass-fronted building with a curved canopy roof and landscaped lawns on the Shiv Nadar Institution of Eminence campus near Greater Noida"
+        }
+      },
+      "summary": "Shiv Nadar Institution of Eminence is a private, fully residential research university on a 286-acre campus near Greater Noida in the Delhi National Capital Region. Founded in 2011 and declared an Institution of Eminence Deemed to be University in 2022, it teaches four-year undergraduate degrees in engineering, natural sciences, social sciences, design and management.",
+      "campusLifestyle": "The 286-acre campus houses more than 2,500 students and over 250 faculty and staff across four Schools: Engineering, Natural Sciences, Humanities and Social Sciences, and Management and Entrepreneurship. On-campus services include a central library, cafes, grocery stores, an indoor sports complex, a student recreation centre, a post office, a salon and an in-house bank with ATMs. The academic year runs from August to May with a winter break in December, and students come from 28 Indian states.",
+      "cityProfile": "The campus sits on NH-91 in Dadri tehsil of Gautam Buddha Nagar district, Uttar Pradesh, inside the Delhi National Capital Region; NIRF records the university under Gautam Buddha Nagar. Because the university is fully residential, day-to-day life is centred on campus rather than on a city neighbourhood. University-chartered buses run on weekends, on a paid basis, between the campus and the Great India Place mall in Noida, and students who need hospital care beyond the campus health centre are referred to Kailash Hospital, Yatharth Hospital or Fortis Hospital in Greater Noida. The university describes its NCR location as giving students access to Delhi's cultural and recreational life, but international arrivals should plan onward transport from Delhi to the campus before travelling.",
+      "practicalExposure": "Undergraduate degrees at Shiv Nadar are four-year programmes with a research orientation: the sciences and social sciences carry the '(Research)' label in their titles, and the university describes itself as the first in India to offer a four-year multidisciplinary research degree. The Department of Computer Science and Engineering, one of the largest in the School of Engineering, lists research groups including algorithms and complexity and natural language processing. The International Office runs outbound mobility with partner universities, including semester exchanges, summer schools, full-year engagements and research internships, with pre-departure orientation for selected students. Students who want a US degree can take the BS Computer Science or BS Business 2+2 dual degree, studying two years in Delhi-NCR and two at Arizona State University, where the university estimates about USD 45,000 tuition and USD 15,000 living costs a year. A Career Development Centre prepares students for placements and graduate study, and on-campus jobs open after the first semester.",
+      "hostelOverview": "Shiv Nadar is fully residential. Gender-segregated hostels are spread over 18 buildings with twin and single rooms, AC and non-AC, some with attached bathrooms, allotted by course and availability. Each hostel has wardens, 24/7 security, power backup and internet, Wi-Fi in common areas, and air-conditioned 24x7 study rooms under CCTV with access control. For the 2026 intake, living charges are INR 2,43,500 a year for AC twin sharing or INR 2,28,500 for non-AC twin sharing, covering hostel, mess, laundry and 24x7 primary medical services. A higher room category, if allotted, is billed extra.",
+      "dietarySupport": "Mess charges are included in the annual living charge. Four meals are served daily (breakfast, lunch, evening snacks and dinner), plus a midnight mess from 23:00 to 02:00. The mess is run by Sodexo under Food Safety and Standards Authority of India parameters, with menus set with student representatives. Students with food allergies can arrange special meals through the Department of Student Affairs with medical documents. Hostel pantries have microwaves and induction cooktops for light snacks; cooking in rooms is not allowed.",
+      "safetyOverview": "The Health and Wellness Centre has a general physician, nursing staff and ambulances available 24/7, with an Advanced Life Support ambulance for transfers to tertiary hospitals. All students are covered by group medical insurance with cashless hospitalisation up to INR 2.5 lakh. Campus security handles safety reports, and the university follows zero tolerance on ragging, with an annual anti-ragging affidavit required for enrolment.",
+      "studentSupport": "Every international student is assigned a Campus Buddy, a student volunteer who helps with settling in. Two clinical psychologists live on campus, and a YourDOST partnership gives 24x7 online counselling on helpline 1800 891 3499; primary medical and counselling services are free. Family Groups led by senior students and Peer Support Guides help first-year undergraduates adjust.",
+      "whyChoose": [
+        "One of only four private universities on the UGC's twelve-institution Institution of Eminence list, notified on 3 August 2022.",
+        "Ranked 57th in the University category and 85th Overall in the Ministry of Education's NIRF India Rankings 2025.",
+        "SAT and ACT scores are accepted as standalone admission routes, and the SNUSAT entrance test is taken online at home, so no travel to India is needed to apply.",
+        "A single published undergraduate fee table for the 2026 intake covers tuition and all-inclusive living charges for every programme, from INR 4,00,000 to INR 6,00,000 tuition a year.",
+        "Health cover on campus is unusually deep: a 24/7 general physician and ambulance, two resident clinical psychologists, free primary care and counselling, and cashless insurance up to INR 2.5 lakh.",
+        "An optional 2+2 dual degree with Arizona State University in computer science or business for students aiming at a US bachelor's degree."
+      ],
+      "thingsToConsider": [
+        "The dedicated international admissions page was last updated for the 2024 cycle. For 2026 the academic rules and fees sit on the common undergraduate page, so international fees and scholarships are confirmed only in the offer letter.",
+        "Foreign passport holders, including OCI and PIO card holders, must apply in the foreign national or NRI category and cannot switch to the domestic category later.",
+        "There is one August intake, and the final 2026 window was short: applications 1 to 15 June, offers on 30 June and fees by 8 July, which leaves little time for a student visa.",
+        "Tuition and living charges can rise by up to 8 per cent a year, and a higher hostel room category, if allotted, is charged extra.",
+        "Need-based financial aid requires Indian financial records such as income tax returns and a physical address verification, which families outside India may find hard to provide.",
+        "The Arizona State University dual degree moves years three and four to the US at an estimated USD 60,000 a year in tuition and living costs."
+      ],
+      "bestFitFor": [
+        "International applicants with a strong SAT or ACT score who want a four-year research-oriented bachelor's in India without sitting an Indian entrance exam.",
+        "Engineering applicants comfortable with a Physics and Mathematics aptitude test, or those holding a JEE Main score.",
+        "Students who want a fully residential campus with meals, laundry and medical care bundled into one annual living charge.",
+        "IB and Cambridge students, who have explicit published thresholds of 28/45 points or two A levels at 65 per cent.",
+        "Students planning a later move to the US who can fund the Arizona State University 2+2 route."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC Institution of Eminence (Deemed to be University) — notified 3 August 2022",
+        "NAAC — Accredited A, CGPA 3.06, Cycle 1 (declared November 2019)",
+        "NIRF India Rankings 2025 (Ministry of Education) — rank 57, University category",
+        "NIRF India Rankings 2025 (Ministry of Education) — rank 85, Overall category"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC Institution of Eminence - list of notified institutions",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE"
+        },
+        {
+          "label": "NAAC - accreditation status of institutions",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Overall category",
+          "url": "https://www.nirfindia.org/Rankings/2025/OverallRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Shiv Nadar Institution of Eminence public or private?",
+          "answer": "It is private. It was established in 2011 as Shiv Nadar University under Uttar Pradesh Act No. 12 of 2011. On 3 August 2022 the Ministry of Education declared it an Institution of Eminence Deemed to be University, and the UGC removed it from its list of state private universities from that date. It is now known as Shiv Nadar (Institution of Eminence Deemed to be University)."
+        },
+        {
+          "question": "What language are the programmes taught in?",
+          "answer": "English. The university is listed by the University of Michigan's Rackham Graduate School among overseas institutions whose language of instruction is English exclusively. Most non-engineering programmes require English as a Class 12 subject, while English is not mandatory for IB and Cambridge applicants. The admissions pages do not list a separate IELTS or TOEFL requirement for international applicants."
+        },
+        {
+          "question": "Can I apply straight after finishing school?",
+          "answer": "Yes. Entry is straight after Class 12 or an equivalent school-leaving qualification. You need an aggregate of at least 65 per cent across all subjects, including the subjects named for your programme, such as Physics and Mathematics for most B.Tech. degrees, and a pass in every subject. IB students need 28 of 45 points or 65 per cent, and Cambridge students need two A levels and 65 per cent Percentage Uniform Mark."
+        },
+        {
+          "question": "How much does a year cost?",
+          "answer": "For the 2026 intake, first-year tuition is INR 6,00,000 for Computer Science and Engineering, Electrical and Computer Engineering, Design, Economics and Management; INR 4,25,000 for Mechanical, Civil and Chemical Engineering; and INR 4,00,000 for the natural sciences and International Relations. Living charges add INR 2,43,500 (AC twin) or INR 2,28,500 (non-AC twin). One-time charges are INR 2,500, INR 60,000 and a refundable INR 30,000 deposit. Charges can rise by up to 8 per cent a year."
+        },
+        {
+          "question": "Do international students pay a different fee?",
+          "answer": "Shiv Nadar last published a separate foreign-national fee table for the 2024 cycle, and it was in Indian rupees. For 2026 only the common undergraduate fee table is published, so the rupee figures above are a planning estimate for international applicants. The binding figure is the one in your offer letter."
+        },
+        {
+          "question": "How do I apply as an international student?",
+          "answer": "Apply online through the university's international application form at ugapplications.snu.edu.in. You can choose several admission routes in the same form. Foreign passport holders, including OCI and PIO card holders, apply in the foreign national or NRI category. Indian nationals who completed Class 12 outside India are also treated as international applicants."
+        },
+        {
+          "question": "Which entrance test do I need?",
+          "answer": "International applicants usually use a valid SAT or ACT score or the university's own SNUSAT. SNUSAT is an online, home-proctored test of quantitative and logical reasoning, held in six cycles from January to July. B.Tech. and BS Computer Science applicants on the SNUSAT route also take the APT in Physics and Mathematics. JEE Main and CUET are accepted too, and design applicants add a portfolio review and interview."
+        },
+        {
+          "question": "When is the intake and when should I apply?",
+          "answer": "There is one intake a year, in August, and the academic year runs from August to May. For 2026, the last application window ran from 1 to 15 June, with SNUSAT on 22 June, offers on 30 June and fee payment by 8 July. Earlier phases closed on 30 April and 31 May. Apply in the earliest phase you can, so there is time to get a student visa after your offer."
+        },
+        {
+          "question": "Is the university recognised?",
+          "answer": "Yes. The UGC lists Shiv Nadar as an Institution of Eminence, notified on 3 August 2022, one of four private institutions on that list of twelve. NAAC lists it as accredited with grade A (CGPA 3.06, first cycle, declared 26 November 2019). In the NIRF India Rankings 2025 it placed 57th among universities and 85th overall. Recognition of the degree abroad depends on the credential-evaluation body in your destination country."
+        },
+        {
+          "question": "What accommodation is available and what does it cost?",
+          "answer": "The campus is fully residential. Gender-segregated hostels across 18 buildings offer twin and single rooms, AC and non-AC, some with attached bathrooms, allotted by course and availability. For 2026, AC twin sharing costs INR 2,43,500 a year and non-AC twin sharing INR 2,28,500. Both include hostel, mess with four daily meals, laundry and 24x7 primary medical services."
+        },
+        {
+          "question": "Are scholarships open to international students?",
+          "answer": "The 2026 list includes School Topper's, merit-based, JEE and UCEED, Vice-Chancellor's (up to INR 1 lakh a year for top SNUSAT performers), sports and need-based awards. The 2026 page does not say which of these apply to foreign nationals. The 2024 international page offered a 50 per cent School Topper's waiver and a 25 per cent merit waiver, for example for IB scores of 40 or more. Need-based aid relies on Indian financial documents."
+        },
+        {
+          "question": "What is the dual degree with Arizona State University?",
+          "answer": "The BS Computer Science and BS Business (2+2) programmes run two years at Shiv Nadar's Delhi-NCR campus and two years at Arizona State University in the US. Tuition for the Indian years is INR 8,00,000 a year for the 2026 intake. For the ASU years, the university estimates about USD 45,000 in tuition and USD 15,000 in living costs a year, based on its 2028-29 projection."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+          "url": "https://snuadmissions.com/",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "2026 programmes, eligibility, IB/Cambridge rules, fee table, admission routes, key dates, scholarships."
+        },
+        {
+          "label": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+          "url": "https://snuadmissions.com/International/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Definition of international student; foreign national/NRI category rule; 2024 international fee table in INR."
+        },
+        {
+          "label": "Shiv Nadar University - online international application form",
+          "url": "https://ugapplications.snu.edu.in/international-application-form",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "International application form; shows 2026 applications closed."
+        },
+        {
+          "label": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+          "url": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Hostels, meals, health centre, insurance, Campus Buddy, counselling, transport, academic year, exchange."
+        },
+        {
+          "label": "Shiv Nadar Institution of Eminence - Life at Shiv Nadar",
+          "url": "https://snu.edu.in/life-at-shiv-nadar/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "286-acre campus, 2,500+ students, on-campus amenities."
+        },
+        {
+          "label": "UGC - Institutions of Eminence list (ioe.ugc.ac.in)",
+          "url": "https://ioe.ugc.ac.in/Home/ListofIOE",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Shiv Nadar (Institution of Eminence Deemed to be University), notified 03.08.2022."
+        },
+        {
+          "label": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Removal from private-university list w.e.f. 03.08.2022; established by UP Act No. 12 of 2011."
+        },
+        {
+          "label": "NAAC - Institutions with valid accreditation as on 14-08-2025 (Universities sheet)",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21",
+          "notes": "SHIV NADAR UNIVERSITY, U-0642, cycle 1, CGPA 3.06, grade A, declared 26-11-2019."
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "IR-O-U-0642, score 52.18, rank 57."
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Overall category",
+          "url": "https://www.nirfindia.org/Rankings/2025/OverallRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "IR-O-U-0642, score 50.80, rank 85."
+        },
+        {
+          "label": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+          "url": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+          "kind": "other",
+          "checkedAt": "2026-09-21",
+          "notes": "Independent corroboration of English-medium instruction."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Shiv Nadar eligibility",
+            "capture": [
+              "citizenship, OCI or PIO status",
+              "school board and Class 12 or equivalent result",
+              "SAT, ACT or JEE Main score if available",
+              "intended programme",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my Shiv Nadar cost plan",
+            "capture": [
+              "intended programme",
+              "AC or non-AC room preference",
+              "budget in rupees or home currency",
+              "scholarship interest",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my Shiv Nadar application review",
+            "capture": [
+              "document readiness",
+              "choice of admission route (SNUSAT, SAT or ACT)",
+              "portfolio readiness for design applicants",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my student visa and e-FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date"
+            ]
+          }
+        ],
+        "restrictionsSummary": "Foreign passport holders, including OCI and PIO card holders, apply in a separate foreign national and NRI category and cannot be considered as domestic candidates. Every programme requires a 65 per cent Class 12 or equivalent aggregate with named subjects, and there is one August intake a year."
+      },
+      "programmes": [
+        {
+          "slug": "snu-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech. Computer Science and Engineering, School of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 6258,
+            "annualTuitionMaxUsd": 6258,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 6,00,000 for this programme, about USD 6,258 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/computer-science-engineering.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including Physics and Mathematics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Engineering at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including Physics and Mathematics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview",
+                "B.Tech. applicants on the SNUSAT route also sit the APT, which tests Physics and Mathematics"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT and APT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 6,00,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 8,43,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year B.Tech. in the Department of Computer Science and Engineering, one of the largest departments in the School of Engineering, with research groups including algorithms and complexity and natural language processing."
+            }
+          ]
+        },
+        {
+          "slug": "snu-btech-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.Tech. Mechanical Engineering, School of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 4433,
+            "annualTuitionMaxUsd": 4433,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 4,25,000 for this programme, about USD 4,433 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/mechanical-engineering.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including Physics and Mathematics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Engineering at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including Physics and Mathematics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview",
+                "B.Tech. applicants on the SNUSAT route also sit the APT, which tests Physics and Mathematics"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT and APT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 4,25,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 6,68,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year B.Tech. taught in the School of Engineering on the residential Delhi-NCR campus."
+            }
+          ]
+        },
+        {
+          "slug": "snu-btech-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.Tech. Civil Engineering, School of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 4433,
+            "annualTuitionMaxUsd": 4433,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 4,25,000 for this programme, about USD 4,433 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/civil-engineering.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including Physics and Mathematics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Engineering at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including Physics and Mathematics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview",
+                "B.Tech. applicants on the SNUSAT route also sit the APT, which tests Physics and Mathematics"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT and APT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 4,25,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 6,68,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year B.Tech. taught in the School of Engineering on the residential Delhi-NCR campus."
+            }
+          ]
+        },
+        {
+          "slug": "snu-btech-chemical-engineering",
+          "canonicalCourseSlug": "be-btech-chemical-engineering",
+          "officialTitle": "B.Tech. Chemical Engineering, School of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 4433,
+            "annualTuitionMaxUsd": 4433,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 4,25,000 for this programme, about USD 4,433 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/chemical-engineering.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including Physics, Chemistry and Mathematics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Engineering at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including Physics, Chemistry and Mathematics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview",
+                "B.Tech. applicants on the SNUSAT route also sit the APT, which tests Physics and Mathematics"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT and APT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 4,25,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 6,68,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year B.Tech. taught in the School of Engineering on the residential Delhi-NCR campus."
+            }
+          ]
+        },
+        {
+          "slug": "snu-bsc-research-economics",
+          "canonicalCourseSlug": "bachelor-economics",
+          "officialTitle": "B.Sc. (Research) Economics, School of Humanities and Social Sciences",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 6258,
+            "annualTuitionMaxUsd": 6258,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 6,00,000 for this programme, about USD 6,258 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/bsc_economics.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including English and Mathematics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Humanities and Social Sciences at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including English and Mathematics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: SNUSAT, a valid SAT score, a valid ACT score or a JEE Main score"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 6,00,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 8,43,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year research-track B.Sc. in Economics taught in the School of Humanities and Social Sciences."
+            }
+          ]
+        },
+        {
+          "slug": "snu-ba-research-international-relations",
+          "canonicalCourseSlug": "bachelor-international-relations",
+          "officialTitle": "B.A. (Research) International Relations, School of Humanities and Social Sciences",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 4172,
+            "annualTuitionMaxUsd": 4172,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 4,00,000 for this programme, about USD 4,172 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/ba_International_Relations.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including English is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Humanities and Social Sciences at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including English",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: SNUSAT, a valid SAT score, a valid ACT score, or CUET 2026 with an interview"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 4,00,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 6,43,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year research-track B.A. offered by the Department of International Relations and Governance Studies."
+            }
+          ]
+        },
+        {
+          "slug": "snu-bachelor-of-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "Bachelor of Design (B.Des.), School of Humanities and Social Sciences",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 6258,
+            "annualTuitionMaxUsd": 6258,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 6,00,000 for this programme, about USD 6,258 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/b_des.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including English is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Humanities and Social Sciences at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including English",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: SNUSAT, a valid SAT score, UCEED 2026, CUET 2026 or JEE Paper 2A, each combined with a portfolio review and an interview",
+                "A design portfolio for review, followed by an interview"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Sit SNUSAT or submit a valid SAT, UCEED, CUET or JEE Paper 2A score, then submit a design portfolio for review.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500",
+                "Design portfolio"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 6,00,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 8,43,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year B.Des. studio programme, with an option to continue to a five-year integrated B.Des.-M.Des. degree."
+            }
+          ]
+        },
+        {
+          "slug": "snu-bsc-research-mathematics",
+          "canonicalCourseSlug": "bsc-mathematics",
+          "officialTitle": "B.Sc. (Research) Mathematics, School of Natural Sciences",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 4172,
+            "annualTuitionMaxUsd": 4172,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 4,00,000 for this programme, about USD 4,172 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/bsc_maths.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including English and Mathematics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Natural Sciences at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including English and Mathematics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: JEE Main 2026 or 2025, SNUSAT, a valid SAT score, a valid ACT score, or CUET 2026, each followed by an interview if the department requires one"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 4,00,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 6,43,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year research-track B.Sc. taught in the School of Natural Sciences."
+            }
+          ]
+        },
+        {
+          "slug": "snu-bsc-research-physics",
+          "canonicalCourseSlug": "bsc-physics",
+          "officialTitle": "B.Sc. (Research) Physics, School of Natural Sciences",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (first year, 2026 intake)",
+            "annualTuitionMinUsd": 4172,
+            "annualTuitionMaxUsd": 4172,
+            "verifiedAt": "2026-09-21",
+            "notes": "Shiv Nadar's undergraduate fee structure for the 2026 intake lists first-year tuition of INR 4,00,000 for this programme, about USD 4,172 at the ECB reference rate of INR 95.88 per US dollar on 18 September 2026. The university last published a separate foreign-national fee table for the 2024 cycle, also in rupees, and publishes no separate 2026 foreign-national schedule, so this figure is a planning estimate that the offer letter confirms. Living charges for the 2026 intake are INR 2,43,500 a year for a twin-sharing air-conditioned room, or INR 2,28,500 for non-AC twin sharing, and cover hostel, mess, laundry and 24x7 primary medical services. One-time charges are an INR 2,500 entrance fee, an INR 60,000 non-refundable admission fee and an INR 30,000 security deposit refunded on leaving the university. Tuition and living charges are revised annually by up to 8 per cent."
+          },
+          "officialProgramUrl": "https://snuadmissions.com/bsc_physics.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign passport holders, including OCI and PIO card holders",
+              "Indian nationals who completed Class 12 outside India",
+              "Indian nationals schooled in India"
+            ],
+            "restrictions": [
+              "Candidates applying under the foreign national or NRI category are not considered for the domestic category, and foreign passport holders, including OCI and PIO card holders, cannot apply as domestic candidates",
+              "A Class 12 or equivalent aggregate of at least 65 per cent including English, Mathematics and Physics is required",
+              "IB applicants need 28 of 45 points or 65 per cent; Cambridge applicants need two A levels and 65 per cent Percentage Uniform Mark"
+            ],
+            "notes": "Shiv Nadar runs a separate foreign national and NRI admission category through its own international application form. The 2026 academic eligibility rules on the common undergraduate admissions page apply to both categories.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://snuadmissions.com/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year undergraduate degree in the School of Natural Sciences at Shiv Nadar's residential Delhi-NCR campus. International applicants apply through the university's foreign national and NRI application form and can use SAT or ACT scores or the online home-proctored SNUSAT.",
+            "eligibility": {
+              "intro": "Entry is straight after Class 12 or an equivalent school-leaving qualification, with a minimum aggregate and named subjects, plus one accepted entrance route.",
+              "items": [
+                "Class 12 or an equivalent school-leaving qualification with an aggregate of at least 65 per cent across all subjects, including English, Mathematics and Physics",
+                "A pass in every subject on the Class 12 marksheet, as required by the awarding board",
+                "IB Diploma applicants: an aggregate of 28 out of 45 points, or at least 65 per cent",
+                "Cambridge applicants: at least two subjects at A level and an aggregate of at least 65 per cent Percentage Uniform Mark",
+                "One accepted admission route: JEE Main 2026 or 2025, SNUSAT, a valid SAT score, a valid ACT score, or CUET 2026, each followed by an interview if the department requires one"
+              ]
+            },
+            "applicationSteps": [
+              "Register and complete the undergraduate application at ugapplications.snu.edu.in, using the international application form if you hold a foreign passport, including an OCI or PIO card.",
+              "Select one or more admission routes in the same form, for example SNUSAT, SAT or ACT, and pay the INR 2,500 entrance fee.",
+              "Schedule and sit the online home-proctored SNUSAT, or submit a valid SAT or ACT score instead.",
+              "Attend an online interview with the department if you are shortlisted.",
+              "Accept the conditional offer by paying the fee stated in the offer letter by its deadline, then meet the remaining eligibility conditions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet or equivalent",
+                "Class 12 marksheet or equivalent school-leaving certificate",
+                "IB Diploma or Cambridge A level results where applicable",
+                "SAT, ACT, JEE Main or CUET scorecard where that route is used"
+              ],
+              "application": [
+                "Completed online application form",
+                "Passport copy for foreign nationals, OCI and PIO card holders",
+                "Entrance fee payment of INR 2,500"
+              ]
+            },
+            "deadlinesNote": "For the August 2026 intake the final application window ran 1 to 15 June 2026, with SNUSAT on 22 June, offers on 30 June and fees due by 8 July 2026. The international form now shows 2026 applications as closed.",
+            "visaConsiderations": [
+              "Foreign nationals study on an Indian student visa issued against the university's admission offer.",
+              "Registration on the Bureau of Immigration e-FRRO portal is required after arrival for stays longer than 180 days."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First-year tuition for the 2026 intake is INR 4,00,000. With AC twin-sharing living charges of INR 2,43,500, the first year costs INR 6,43,500 before one-time charges of INR 2,500 (entrance), INR 60,000 (admission, non-refundable) and INR 30,000 (security deposit, refundable). Both tuition and living charges can rise by up to 8 per cent a year.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year undergraduate degree",
+              "language": "English",
+              "details": "Four-year research-track B.Sc. taught in the School of Natural Sciences."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Tech. Computer Science and Engineering requires a Class 12 aggregate of at least 65 per cent across all subjects including Physics and Mathematics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 6,00,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Tech. Mechanical Engineering requires a Class 12 aggregate of at least 65 per cent across all subjects including Physics and Mathematics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 4,25,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-mechanical-engineering",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Tech. Civil Engineering requires a Class 12 aggregate of at least 65 per cent across all subjects including Physics and Mathematics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 4,25,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-civil-engineering",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Tech. Chemical Engineering requires a Class 12 aggregate of at least 65 per cent across all subjects including Physics, Chemistry and Mathematics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: JEE Main 2026 or 2025, SNUSAT plus the Academic Proficiency Test (APT) in Physics and Mathematics, a valid SAT score, a valid ACT score, or CUET 2026 with an interview. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 4,25,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-btech-chemical-engineering",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Sc. (Research) Economics requires a Class 12 aggregate of at least 65 per cent across all subjects including English and Mathematics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: SNUSAT, a valid SAT score, a valid ACT score or a JEE Main score. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 6,00,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-economics",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.A. (Research) International Relations requires a Class 12 aggregate of at least 65 per cent across all subjects including English; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: SNUSAT, a valid SAT score, a valid ACT score, or CUET 2026 with an interview. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 4,00,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-ba-research-international-relations",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, Bachelor of Design (B.Des.) requires a Class 12 aggregate of at least 65 per cent across all subjects including English; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: SNUSAT, a valid SAT score, UCEED 2026, CUET 2026 or JEE Paper 2A, each combined with a portfolio review and an interview. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 6,00,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bachelor-of-design",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Sc. (Research) Mathematics requires a Class 12 aggregate of at least 65 per cent across all subjects including English and Mathematics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: JEE Main 2026 or 2025, SNUSAT, a valid SAT score, a valid ACT score, or CUET 2026, each followed by an interview if the department requires one. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 4,00,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-mathematics",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "eligibility",
+      "claimText": "For the 2026 intake, B.Sc. (Research) Physics requires a Class 12 aggregate of at least 65 per cent across all subjects including English, Mathematics and Physics; IB applicants need 28/45 or 65 per cent and Cambridge applicants two A levels with 65 per cent PUM.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "eligibility",
+      "claimText": "Candidates applying under the foreign national/NRI category are not considered for the domestic category; foreign passport holders including PIO/OCI card holders cannot apply under the domestic category.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Stated on the international admissions page published for the 2024 cycle, which remains live and linked from the international application form. The 2026 common admissions page does not restate the category rule."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "admissions",
+      "claimText": "Accepted 2026 admission routes: JEE Main 2026 or 2025, SNUSAT, a valid SAT score, a valid ACT score, or CUET 2026, each followed by an interview if the department requires one. Applicants may apply through multiple routes in one form; SNUSAT is an online home-proctored test and interviews are held online.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "admissions",
+      "claimText": "An international application form exists on the official undergraduate application portal; it shows applications as closed for 2026.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University - online international application form",
+      "sourceUrl": "https://ugapplications.snu.edu.in/international-application-form",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "intake",
+      "claimText": "2026 key dates: application start 1 June 2026, deadline 15 June 2026, SNUSAT/APT on 22 June, offers on 30 June and fee payment by 8 July 2026. The academic year runs from August to May.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "August start corroborated by the Student Handbook 2026: 'The academic year runs from August to May with a Winter Break during December.'"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "fee",
+      "claimText": "The 2026 undergraduate fee structure lists first-year tuition of INR 4,00,000 and living charges of INR 2,43,500 (AC twin) for this programme, with an INR 60,000 admission fee and INR 30,000 refundable deposit; charges are revised annually by up to 8 per cent.",
+      "status": "indicative",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Indicative because the 2026 schedule is the common undergraduate table; SNU last published a separate foreign-national fee table for 2024 (also INR). USD converted at ECB reference INR 95.88 = USD 1 on 18 Sep 2026 (api.frankfurter.app)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "programmeSlug": "snu-bsc-research-physics",
+      "publicField": "medium",
+      "claimText": "Shiv Nadar University appears on the University of Michigan Rackham list of overseas institutions whose language of instruction is English exclusively.",
+      "status": "verified",
+      "sourceLabel": "University of Michigan Rackham - Overseas Institutions Whose Language of Instruction Is English Exclusively",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "identity",
+      "claimText": "Shiv Nadar University, Dadri, Gautam Budh Nagar (established 06.04.2011 by Act No. 12 of 2011) was removed from the UGC private-university list w.e.f. 03.08.2022 after the Ministry of Education declared it an 'Institution of Eminence Deemed to be University', known as Shiv Nadar (Institutions of Eminence Deemed to be University).",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "establishedYear",
+      "claimText": "Shiv Nadar Institution of Eminence was established in 2011 by Shiv Nadar.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - About",
+      "sourceUrl": "https://snu.edu.in/about/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Matches the UGC note citing U.P. Act No. 12 of 2011 (06.04.2011)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "recognitionBadges",
+      "claimText": "Shiv Nadar (Institution of Eminence Deemed to be University) appears in Table 2 (private institutions) of the UGC IoE list with date of notification 03.08.2022; the list has 12 institutions, four of them private (BITS Pilani, MAHE, O P Jindal Global University, Shiv Nadar).",
+      "status": "verified",
+      "sourceLabel": "UGC - Institutions of Eminence list (ioe.ugc.ac.in)",
+      "sourceUrl": "https://ioe.ugc.ac.in/Home/ListofIOE",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC valid-accreditation workbook (as on 14-08-2025), Universities sheet: SHIV NADAR UNIVERSITY, AISHE U-0642, NH-91 Tehsil Dadri, cycle 1, CGPA 3.06, grade A, date of declaration 26-11-2019.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Institutions with valid accreditation as on 14-08-2025 (Universities sheet)",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Declaration date only; NAAC publishes no expiry. The declaration is more than five years old but NAAC still listed it as valid on 14-08-2025; no second-cycle result for Shiv Nadar appears in any Standing Committee PDF through the 265th SC (12 Dec 2025). Badge carries the declaration date only, no currency claim."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF India Rankings 2025, University category: IR-O-U-0642 Shiv Nadar University, Gautam Buddha Nagar, score 52.18, rank 57.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 - University category",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "NIRF 2026 not published at check date (2026 URLs return an empty shell)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF India Rankings 2025, Overall category: IR-O-U-0642 Shiv Nadar University, score 50.80, rank 85.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 - Overall category",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/OverallRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "summary",
+      "claimText": "The 286-acre residential campus houses more than 2,500 students and 250+ faculty and staff; it is a fully residential campus.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Life at Shiv Nadar",
+      "sourceUrl": "https://snu.edu.in/life-at-shiv-nadar/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "campusLifestyle",
+      "claimText": "Campus has cafes, grocery stores, a fully equipped medical centre, an indoor sports complex, a student recreational centre, a central library, a post office, a salon and an in-house bank with ATMs; students come from 28 states.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Life at Shiv Nadar",
+      "sourceUrl": "https://snu.edu.in/life-at-shiv-nadar/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "campusLifestyle",
+      "claimText": "The academic year runs from August to May with a Winter Break during December.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "cityProfile",
+      "claimText": "Campus address NH-91, Tehsil Dadri, Gautam Buddha Nagar, Uttar Pradesh 201314.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Institutions with valid accreditation as on 14-08-2025 (Universities sheet)",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "cityProfile",
+      "claimText": "University-chartered buses run on weekends on a paid basis between Noida's Great India Place mall and the university; referral hospitals are Kailash, Yatharth and Fortis hospitals in Greater Noida.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "practicalExposure",
+      "claimText": "Student Mobility and Exchange Program managed by the International Office: semester exchanges, summer schools, full-year engagements, research internships, pre-departure orientation. First-year students cannot take on-campus jobs in their first semester.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "practicalExposure",
+      "claimText": "BS Computer Science and BS Business (2+2) with ASU: two years at Shiv Nadar University Delhi NCR and two at Arizona State University; estimated ASU tuition about USD 45,000 and living about USD 15,000 a year (estimate for 2028-29).",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "practicalExposure",
+      "claimText": "The Career Development Centre prepares students for the job market or higher education.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University admissions - Placements (Career Development Centre)",
+      "sourceUrl": "https://snuadmissions.com/placements.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "hostelOverview",
+      "claimText": "Hostels are gender segregated across 18 buildings; twin and single rooms, AC and non-AC, attached or common bathrooms by course and availability; 24/7 security, power backup and internet; AC 24x7 study rooms under CCTV with access control.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "hostelOverview",
+      "claimText": "Living charges for 2026: INR 2,43,500 for AC twin sharing and INR 2,28,500 for non-AC twin sharing, covering hostel, mess, laundry and 24x7 primary medical services; higher-category rooms are billed extra.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "dietarySupport",
+      "claimText": "Four meals a day plus a midnight mess from 23:00 to 02:00; mess contracted to Sodexo under FSSAI parameters; special meals for food allergies via the Department of Student Affairs; pantries for light snacks only, no cooking in hostels.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "safetyOverview",
+      "claimText": "Health and Wellness Centre with GP, nursing staff and ambulances 24/7, ALS ambulance for transfers; group insurance with cashless cover up to INR 2.5 lakh; zero tolerance on ragging with an annual anti-ragging affidavit by 30 June.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "studentSupport",
+      "claimText": "Campus Buddy for every international student; two resident clinical psychologists; YourDOST 24x7 helpline 1800 891 3499; primary medical and counselling services free; Family Groups and Peer Support Guides.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - Student Handbook 2026",
+      "sourceUrl": "https://snu.edu.in/site/assets/files/24802/student_handbook_2026_final_1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "thingsToConsider",
+      "claimText": "The international admissions page (snuadmissions.com/International/) is titled for 2024 and carries a 2024 fee table and key dates; the 2026 cycle information is on the common undergraduate page.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "thingsToConsider",
+      "claimText": "Need-based financial aid requires income tax returns, bank statements, asset declarations and physical verification at the family address.",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar University Delhi-NCR - Undergraduate Admissions 2026-27 (eligibility, fees, routes, key dates)",
+      "sourceUrl": "https://snuadmissions.com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
+      "publicField": "faq",
+      "claimText": "The 2024 international page offered a School Topper's Scholarship (50% tuition waiver) and a Merit Based Scholarship (25% waiver, e.g. 95% Class 12, IB 40 without bonus, or A* in all Cambridge subjects).",
+      "status": "verified",
+      "sourceLabel": "Shiv Nadar Institution of Eminence - International Admissions information page (published for the 2024 cycle)",
+      "sourceUrl": "https://snuadmissions.com/International/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Used only as historical context in the scholarships FAQ; the 2026 list does not separate foreign-national eligibility."
+    }
+  ]
+}

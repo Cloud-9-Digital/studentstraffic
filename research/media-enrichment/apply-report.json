@@ -1,9 +1,9 @@
 {
-  "appliedAt": "2026-07-27T04:11:25.446Z",
+  "appliedAt": "2026-09-21T07:22:58.137Z",
   "uploads": {
-    "attempted": 8,
-    "succeeded": 8,
-    "failed": 0
+    "attempted": 18,
+    "succeeded": 16,
+    "failed": 2
   },
   "database": {
     "updated": 8,
@@ -11,53 +11,66 @@
   },
   "updatedUniversities": [
     {
-      "universitySlug": "aalto-university",
-      "logoUpdated": false,
+      "universitySlug": "amity-university-noida",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "budapest-university-technology-economics",
-      "logoUpdated": false,
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "crimea-federal-university",
-      "logoUpdated": false,
+      "universitySlug": "lovely-professional-university",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "delft-university-technology",
-      "logoUpdated": false,
+      "universitySlug": "manipal-academy-of-higher-education",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "medical-university-of-warsaw",
-      "logoUpdated": false,
+      "universitySlug": "op-jindal-global-university",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "rutgers-university",
-      "logoUpdated": false,
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "technical-university-of-denmark",
-      "logoUpdated": false,
+      "universitySlug": "symbiosis-international-university",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "universidad-catolica-del-uruguay",
-      "logoUpdated": false,
+      "universitySlug": "vellore-institute-of-technology",
+      "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     }
   ],
-  "uploadFailures": []
+  "uploadFailures": [
+    {
+      "universitySlug": "kiit-deemed-to-be-university",
+      "kind": "logo",
+      "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2022/10/KIIT-logo-HD.png",
+      "error": "Client fetch failed: HTTP 403"
+    },
+    {
+      "universitySlug": "kiit-deemed-to-be-university",
+      "kind": "cover",
+      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2023/04/KIIT-University-Bhubaneswar.jpeg",
+      "error": "Client fetch failed: HTTP 403"
+    }
+  ]
 }

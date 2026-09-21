@@ -1,0 +1,2428 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "barch",
+      "name": "Bachelor of Architecture",
+      "shortName": "B.Arch",
+      "stream": "architecture",
+      "level": "bachelors",
+      "discipline": "architecture",
+      "aliases": [
+        "BArch",
+        "Bachelor of Science in Architecture"
+      ],
+      "displayOrder": 5,
+      "durationYears": 5,
+      "summary": "The Students Traffic catalogue category for the five-year professional Bachelor of Architecture. Programmes in this category are built around a sequence of architectural design studios supported by building construction, structures, history and theory, environmental services, urban design and professional practice, and normally include a practical training period and a final thesis project. In India the degree is regulated by the Council of Architecture, and entry is tied to a prescribed aptitude test in addition to school-leaving results.",
+      "metaTitle": "B.Arch Degrees for International Students",
+      "metaDescription": "Compare B.Arch degrees abroad by five-year studio structure, aptitude-test requirements, teaching language, annual tuition in USD and the international admission route."
+    },
+    {
+      "slug": "bdes",
+      "name": "Bachelor of Design",
+      "shortName": "B.Des",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "design",
+      "aliases": [
+        "BDes",
+        "Bachelor in Design"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "Bachelor of Design is the catalogue category for four-year studio-based undergraduate design degrees. Lovely Professional University maps its B.Design Interior and Furniture programme, taught in English at Phagwara, to this category. The LPU version combines conceptual foundation coursework with intensive studio practice in interior and furniture design, adds design research methods and a dissertation, and allows an interdisciplinary minor. Other LPU B.Design tracks covering fashion, graphics, gaming, product and industrial design, and film and television production sit under the same category.",
+      "metaTitle": "B.Des Degrees for International Students",
+      "metaDescription": "Compare B.Des degrees open to international applicants: studio specialisations, duration, teaching language, intake months and published tuition."
+    },
+    {
+      "slug": "bachelor-fashion-design",
+      "name": "Bachelor's in Fashion Design",
+      "shortName": "Bachelor's Fashion Design",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "fashion-design",
+      "aliases": [
+        "Bachelor of Fashion Design",
+        "BA Fashion Design"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "Bachelor's in Fashion Design is the Students Traffic catalogue category for undergraduate degrees centred on apparel design: design process, draping, patternmaking, garment construction, fashion illustration and collection development. World University of Design maps its four-year B.Des Fashion Design, taught in English at Sonipat in the Delhi NCR, to this category; its studios cover womenswear, menswear and Indian wear alongside CAD and CLO3D work.",
+      "metaTitle": "Bachelor's Fashion Design for International Students",
+      "metaDescription": "Compare Bachelor's Fashion Design degrees open to international applicants: studio structure, duration, teaching language, intake and published tuition."
+    },
+    {
+      "slug": "bachelor-animation-game-design",
+      "name": "Bachelor's in Animation and Game Design",
+      "shortName": "Bachelor's Animation & Games",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "animation-game-design",
+      "aliases": [
+        "Bachelor of Animation",
+        "BA Game Design"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "Bachelor's in Animation and Game Design is the Students Traffic catalogue category for undergraduate degrees covering the animation and games production pipeline: storyboarding, character design, 2D and 3D animation, environment art, level design and interactive media. World University of Design maps its four-year B.Des Animation and Game Design, taught in English at Sonipat in the Delhi NCR, to this category.",
+      "metaTitle": "Bachelor's Animation & Games Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Animation & Games degrees open to international applicants: production pipeline, duration, teaching language, intake and tuition."
+    },
+    {
+      "slug": "bfa",
+      "name": "Bachelor of Fine Arts",
+      "shortName": "BFA",
+      "stream": "design-creative-arts",
+      "level": "bachelors",
+      "discipline": "fine-arts",
+      "aliases": [
+        "B.F.A.",
+        "Bachelor in Fine Arts"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "Bachelor of Fine Arts is the Students Traffic catalogue category for studio-based undergraduate degrees in painting, drawing, printmaking, sculpture and related art practice, supported by art history and theory. World University of Design maps its four-year Bachelor of Visual Arts in Creative Painting, which the university states was earlier called the Bachelor of Fine Arts, to this category; it is taught in English at Sonipat.",
+      "metaTitle": "BFA Degrees for International Students",
+      "metaDescription": "Compare BFA and equivalent visual-arts degrees open to international applicants: studio focus, duration, teaching language, intake and published tuition."
+    },
+    {
+      "slug": "mdes",
+      "name": "Master of Design",
+      "shortName": "M.Des",
+      "stream": "design-creative-arts",
+      "level": "masters",
+      "discipline": "design",
+      "aliases": [
+        "MDes",
+        "Master in Design"
+      ],
+      "displayOrder": 5,
+      "durationYears": 2,
+      "summary": "Master of Design is the Students Traffic catalogue category for two-year postgraduate design degrees built around advanced studio projects, design research and a final thesis or industry project. World University of Design maps its M.Des Industrial Design, taught in English at Sonipat in the Delhi NCR and covering smart products, IoT-enabled systems, CAD and material workshops, to this category.",
+      "metaTitle": "M.Des Degrees for International Students",
+      "metaDescription": "Compare M.Des degrees open to international applicants: studio specialisations, duration, teaching language, intake months and published tuition."
+    },
+    {
+      "slug": "master-fashion-design",
+      "name": "Master's in Fashion Design",
+      "shortName": "Master's Fashion Design",
+      "stream": "design-creative-arts",
+      "level": "masters",
+      "discipline": "fashion-design",
+      "aliases": [
+        "Master of Fashion Design",
+        "MA Fashion Design"
+      ],
+      "displayOrder": 6,
+      "durationYears": 2,
+      "summary": "Master's in Fashion Design is the Students Traffic catalogue category for postgraduate degrees in advanced apparel design, fashion research and collection development. World University of Design maps its two-year M.Des Fashion Design, taught in English at Sonipat, to this category; the programme combines draping, patternmaking and garment construction with CLO3D, virtual sampling and sustainable fashion systems.",
+      "metaTitle": "Master's Fashion Design for International Students",
+      "metaDescription": "Compare Master's Fashion Design degrees open to international applicants: studio focus, duration, teaching language, intake and published tuition."
+    },
+    {
+      "slug": "master-animation-game-design",
+      "name": "Master's in Animation and Game Design",
+      "shortName": "Master's Animation & Games",
+      "stream": "design-creative-arts",
+      "level": "masters",
+      "discipline": "animation-game-design",
+      "aliases": [
+        "Master of Animation",
+        "MA Game Design"
+      ],
+      "displayOrder": 7,
+      "durationYears": 2,
+      "summary": "Master's in Animation and Game Design is the Students Traffic catalogue category for postgraduate degrees in game design, interactive storytelling, animation and immersive media. World University of Design maps its two-year M.Des Game Design and Development, taught in English at Sonipat and covering game mechanics, narrative design, 2D and 3D art, prototyping and XR, to this category.",
+      "metaTitle": "Master's Animation & Games Degrees for International Students",
+      "metaDescription": "Compare Master's Animation & Games degrees open to international applicants: game and XR focus, duration, teaching language, intake and tuition."
+    },
+    {
+      "slug": "mfa",
+      "name": "Master of Fine Arts",
+      "shortName": "MFA",
+      "stream": "design-creative-arts",
+      "level": "masters",
+      "discipline": "fine-arts",
+      "aliases": [
+        "M.F.A.",
+        "Master in Fine Arts"
+      ],
+      "displayOrder": 8,
+      "durationYears": 2,
+      "summary": "Master of Fine Arts is the Students Traffic catalogue category for postgraduate studio degrees in contemporary art practice, supported by critical theory and professional practice. World University of Design maps its two-year Master of Visual Arts in Contemporary Art Practice, which the university states was earlier called the Master of Fine Arts, to this category; it is taught in English at Sonipat.",
+      "metaTitle": "MFA Degrees for International Students",
+      "metaDescription": "Compare MFA and equivalent visual-arts master's degrees open to international applicants: studio focus, duration, language, intake and tuition."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 1,
+      "durationYears": 2,
+      "summary": "MBA is the Students Traffic catalogue category for full-time general-management master's degrees taken after a completed bachelor's degree. Lovely Professional University maps its two-year MBA, delivered in English across eight terms at the Phagwara campus and listed on the National Board of Accreditation Management PG register to 30 June 2027, to this category. LPU also runs specialised MBA tracks in areas such as international business, business analytics, supply chain and logistics, and hospital and healthcare management, which are admitted under separate programme codes.",
+      "metaTitle": "MBA Degrees for International Students",
+      "metaDescription": "Compare MBA degrees open to international applicants: programme length, teaching language, intake months, published tuition and required documents."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "world-university-of-design",
+      "name": "World University of Design",
+      "city": "Sonipat",
+      "type": "Private",
+      "establishedYear": 2018,
+      "officialWebsite": "https://www.wud.ac.in/",
+      "mediaAttribution": {},
+      "summary": "World University of Design is a private state university in Sonipat, Haryana, in the Delhi NCR, founded in 2018 for creative education. Its seven schools teach architecture, design, fashion, communication, visual arts, performing arts and business, all in English, and it runs a dedicated admission route for foreign nationals, NRI, OCI and PIO applicants.",
+      "campusLifestyle": "The 12-acre campus sits in Rajiv Gandhi Education City at Rai on NH-1, about 15 minutes from the Delhi border. Studios, wood, metal, plastics and digital-fabrication workshops, galleries and performance spaces are shared by all seven schools, so design, architecture, fashion and arts students work side by side. Annual events include the MIW showcase and CULT fest, and clubs cover photography, film-making, theatre, fashion styling, music and gaming.",
+      "cityProfile": "Sonipat is a district in Haryana on the northern edge of the Delhi National Capital Region. Rajiv Gandhi Education City is a purpose-built education zone that also houses other universities and national institutes, so the immediate area is institutional rather than urban. The nearest Delhi Metro station is Jahangirpuri, and WUD offers airport pick-up from Delhi's international airport for newly admitted international students. The NCR location gives access to Delhi's museums, galleries, heritage sites and the region's fashion, architecture, media and manufacturing industries, which WUD uses for industry visits and weekend trips. Chandigarh is about three hours away by road.",
+      "practicalExposure": "Teaching is studio-based and project-led. B.Des programmes build through workshops in wood, metal, plastics and digital fabrication toward an industry internship and a bachelor's thesis; B.Arch students complete a semester-long internship in an architecture office and a final-year thesis; the MBA uses live industry projects, consulting assignments and start-up incubation. WUD reports MoUs for reciprocal exchange with institutions including the University of Huddersfield, Oxford Brookes University, Emily Carr University of Art and Design, Vancouver Film School, ENSAIT in France, HAMK in Finland and Universidad de Monterrey, with more than twenty students having taken semester exchanges. It led the Erasmus+ DESINNO capacity-building project with Brunel University, Politecnico di Milano and the University of the Aegean, and is a member of the Cumulus association of art and design schools. The Career Services Office offers international students portfolio reviews and internship placement support in India.",
+      "hostelOverview": "WUD has two on-campus halls with about 1,200 beds: KG Subramanyan Hall for men and Pupul Jayakar Hall for women, which also holds the dining room, common room and gym. Most students share air-conditioned triple rooms with individual beds, Wi-Fi, study tables, wardrobes and usually attached bathrooms; a few twin and single rooms cost extra. Hostel and mess are listed at INR 82,500 each a year for twin or triple sharing, subject to annual revision. International students get priority allocation.",
+      "dietarySupport": "Meals are served in the dining hall in Pupul Jayakar Hall from a kitchen designed by chef Shaju Zacharia and run by institutional caterers; the mess charge is INR 82,500 a year and multi-cuisine meals are served. The hostels also have a vending machine, tuck shops and laundry rooms. A domestic Indian bank account is needed for everyday payments, and WUD assists with opening one after arrival.",
+      "safetyOverview": "Campus and hostels have 24-hour security, CCTV across academic and residential zones, and controlled entry and exit points. WUD states a zero-tolerance policy on ragging, harassment and discrimination and has a student welfare team. A campus infirmary has a full-time nurse and a doctor on call, with multi-specialty hospitals within a 10-15 minute drive. Health insurance is mandatory for international students.",
+      "studentSupport": "WUD's Office of International Admissions handles documentation, visa guidance, FRRO registration support, onboarding, orientation, IT and studio access, and sessions on Indian culture, safety and city navigation in the first week. It arranges airport pick-up from Delhi and help with the AIU equivalence certificate. First-semester international students are paired with senior students through a buddy system.",
+      "whyChoose": [
+        "A university devoted entirely to creative disciplines, with seven schools on one campus and B.Des tracks in product, UX, transportation, interior, fashion, textile, film, graphics and animation.",
+        "International applicants have a dedicated route open to foreign nationals, OCI and PIO card holders, NRIs educated abroad and NRI-sponsored students, with IELTS or TOEFL recommended rather than mandatory.",
+        "The B.Arch is on the Council of Architecture's approved list for 2026-27, and WUD is a member of the Association of Indian Universities.",
+        "The Office of International Admissions provides airport pick-up, FRRO registration support, a first-semester buddy and priority hostel allocation.",
+        "Exchange MoUs cover partners including Oxford Brookes, Huddersfield, Emily Carr, Vancouver Film School and ENSAIT."
+      ],
+      "thingsToConsider": [
+        "WUD's international fee table carries no academic year, and its B.Arch and MBA rows do not match the 2026-27 fee schedule, so tuition for those two is confirmed only in the offer.",
+        "International design tuition runs 1.75 times the domestic rate: the B.Des is INR 6,44,000 a year against INR 3,68,000 for domestic students, before a one-time INR 40,000 international registration fee.",
+        "The USD 500 advance paid to receive the offer letter for the visa is non-refundable.",
+        "B.Arch entrants must qualify NATA (or submit JEE Main Paper 2 scores), which means planning an Indian architecture aptitude test around the school-leaving year.",
+        "An AIU equivalence certificate is due within two months of admission, with an evaluation fee of INR 12,000 plus 18% GST.",
+        "There is one intake a year, in August, and WUD does not publish an international application deadline."
+      ],
+      "bestFitFor": [
+        "International applicants set on a specialised design, fashion, animation or architecture degree on a creative-only campus rather than a large multi-faculty university.",
+        "Students with a portfolio or creative work who are comfortable with selection by aptitude test and interview.",
+        "Visual artists seeking a BVA or MVA studio degree at a lower tuition point than WUD's design programmes.",
+        "Graduates who want an MBA that pairs management with design thinking and innovation strategy."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC - listed Private University, Haryana (UGC state-wise list of private universities)",
+        "Council of Architecture - B.Arch approved for 2026-27, intake 40 (institution code HR30)",
+        "Association of Indian Universities - Member (AIU member directory, July 2026)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC - State-wise list of private universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf"
+        },
+        {
+          "label": "Council of Architecture - approved UG institutions 2026-27",
+          "url": "https://ecoa.in/academic/public/Approved-Institution-UG-2026"
+        },
+        {
+          "label": "Association of Indian Universities - member university directory",
+          "url": "https://aiu.ac.in/wp-content/uploads/docs/2026/07/Directory-File-AIU-Member-Univ-As-on-22.07.2026-1.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is World University of Design a public or private university?",
+          "answer": "It is a private state university in Sonipat, Haryana, founded in 2018 and appearing on the University Grants Commission's list of private universities. It is also a member of the Association of Indian Universities. It is not currently listed in NAAC's accreditation register or the NIRF rankings."
+        },
+        {
+          "question": "Who can apply as an international student?",
+          "answer": "WUD's international category covers foreign nationals, OCI and PIO card holders, NRIs who completed Grades 11 and 12 abroad, and NRI-sponsored students. Applicants in this category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates."
+        },
+        {
+          "question": "What language are programmes taught in?",
+          "answer": "All WUD programmes are taught entirely in English, including studio critiques. There is no local-language teaching phase."
+        },
+        {
+          "question": "Do I need IELTS or TOEFL?",
+          "answer": "No. WUD recommends IELTS or TOEFL but does not make either mandatory unless it specifically asks. It accepts schooling in English as evidence and may hold an online interview to check English proficiency."
+        },
+        {
+          "question": "Can I apply straight after my school-leaving qualification?",
+          "answer": "Yes, for undergraduate programmes, provided the qualification is equivalent to Indian Class 12 and recognised by the Association of Indian Universities; IB and GCE A Levels are commonly accepted. WUD's programme table asks for at least 50% marks, and there is no bridge or foundation year."
+        },
+        {
+          "question": "How do I apply and what happens after selection?",
+          "answer": "Complete WUD's international application form and pay the INR 2,000 application fee. Selected applicants pay a non-refundable USD 500 advance to receive the Provisional Admission Offer Letter, which is used to apply for a student visa endorsed to WUD at the Indian mission in their home country."
+        },
+        {
+          "question": "Is there an entrance test or interview?",
+          "answer": "Yes. Design, fashion and communication programmes select through WUD's design aptitude test and interview, visual arts through an art aptitude test, and management through a general aptitude test. B.Arch applicants need a qualifying NATA score, as the Council of Architecture requires, or JEE Main Paper 2 scores."
+        },
+        {
+          "question": "What does a year at WUD cost an international student?",
+          "answer": "WUD's international table lists B.Des tuition at INR 6,44,000 a year, M.Des at INR 7,04,375 and the BVA at INR 1,81,125. Add one-time charges of INR 40,000 registration, INR 20,000 security deposit and INR 2,000 application fee, plus hostel and mess at about INR 1.65-1.75 lakh a year."
+        },
+        {
+          "question": "When is the intake and is there a deadline?",
+          "answer": "WUD has one intake a year, in August. For the 2027-28 session, first-year registration and document verification is scheduled for 2 August 2027. WUD publishes no separate international closing date, so the visa timeline sets the practical deadline."
+        },
+        {
+          "question": "What is the AIU equivalence certificate?",
+          "answer": "It is the Association of Indian Universities' certificate confirming that a foreign qualification is equivalent to the Indian one. WUD requires it within two months of admission; the evaluation fee is INR 12,000 plus 18% GST, and the application needs the WUD offer letter and fee receipt."
+        },
+        {
+          "question": "Is the B.Arch recognised?",
+          "answer": "The Council of Architecture lists WUD's B.Arch as approved for 2026-27 with an intake of 40, which is the approval Indian architecture degrees require. Recognition for practising architecture in another country depends on that country's regulator."
+        },
+        {
+          "question": "What accommodation is available?",
+          "answer": "WUD has two on-campus halls with about 1,200 beds, one for men and one for women, mostly in air-conditioned triple rooms with attached bathrooms; twin and single rooms cost extra. Hostel and mess are listed at INR 82,500 each a year, and international students get priority allocation."
+        },
+        {
+          "question": "How does WUD compare with design programmes at large multi-faculty universities?",
+          "answer": "WUD teaches only creative disciplines, so all seven schools share one campus and its studios and workshops. Large multi-faculty universities offer design as one school among many and may hold NAAC or NIRF credentials that WUD does not currently have."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "WUD - International Admissions",
+          "url": "https://www.wud.ac.in/international-admissions.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Resolves first-audit HOLD: the real route is international-admissions.php, not /international-students/. Categories, PAOL, visa, AIU equivalence, FRRO, language, accommodation, safety, support."
+        },
+        {
+          "label": "WUD - Fee Structure for International Students",
+          "url": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Undated international tuition table plus one-time charges and hostel."
+        },
+        {
+          "label": "WUD - Fee Structure (Admissions 2026)",
+          "url": "https://www.wud.ac.in/fee.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Domestic 2026-27 schedule used to date-check the international table."
+        },
+        {
+          "label": "WUD - UG programmes of study 2026-27",
+          "url": "https://www.wud.ac.in/ug-programmes.php",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "Seats, duration and eligibility per UG programme."
+        },
+        {
+          "label": "WUD - PG programmes of study 2026-27",
+          "url": "https://www.wud.ac.in/pg-programmes.php",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "Seats, duration and eligibility per PG programme."
+        },
+        {
+          "label": "WUD - Academic Calendar 2026-27",
+          "url": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "August intake; 2 August 2027 first-year registration."
+        },
+        {
+          "label": "UGC - State-wise list of private universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Entry 130 (Haryana), as on 25.11.2022."
+        },
+        {
+          "label": "Council of Architecture - approved UG institutions 2026-27",
+          "url": "https://ecoa.in/academic/public/Approved-Institution-UG-2026",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21",
+          "notes": "HR30, B.Arch, intake 40, approval 2026-2027."
+        },
+        {
+          "label": "AIU - member university directory as on 22.07.2026",
+          "url": "https://aiu.ac.in/wp-content/uploads/docs/2026/07/Directory-File-AIU-Member-Univ-As-on-22.07.2026-1.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21",
+          "notes": "Entry 1155."
+        },
+        {
+          "label": "WUD - Hostel Facilities",
+          "url": "https://www.wud.ac.in/hostel-facilities.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "WUD - International Collaborations",
+          "url": "https://www.wud.ac.in/international-collaborations.php",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my WUD eligibility",
+            "capture": [
+              "citizenship or passport country",
+              "applicant category (foreign national, NRI, OCI or PIO)",
+              "current or expected qualification",
+              "intended programme",
+              "portfolio or NATA status"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my WUD cost plan",
+            "capture": [
+              "applicant category",
+              "intended programme",
+              "hostel room preference",
+              "funding source",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my WUD application review",
+            "capture": [
+              "document readiness",
+              "portfolio or creative work",
+              "aptitude-test readiness",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "wud-barch",
+          "canonicalCourseSlug": "barch",
+          "officialTitle": "B.Arch (Architecture), School of Architecture",
+          "durationYears": 5,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists B.Arch at INR 3,38,100 a year, but the table is undated and this row does not follow the 2026-27 fee schedule used for WUD's other programmes (domestic B.Arch tuition for 2026-27 is INR 2,26,800 a year). The current international tuition is therefore confirmed with the offer. Known one-time charges are an INR 2,000 application fee, an INR 40,000 international registration fee, an INR 20,000 security deposit and the USD 500 offer-letter advance."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/b-arch-architecture.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued",
+              "Council of Architecture rules require every architecture entrant to qualify the NATA aptitude test; WUD also considers JEE Main Paper 2 scores"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The five-year B.Arch is run by WUD's School of Architecture, approved by the Council of Architecture for 40 seats in 2026-27. International applicants use WUD's international route, but admission follows Council of Architecture rules, so a qualifying architecture aptitude score is needed alongside the school-leaving result.",
+            "eligibility": {
+              "intro": "Entry requires a Class 12 equivalent with Physics, Chemistry and Mathematics, a qualifying architecture aptitude score, and a qualification recognised by the Association of Indian Universities.",
+              "items": [
+                "Class 12 or AIU-recognised equivalent, such as IB or GCE A Levels, with Physics, Chemistry and Mathematics",
+                "Minimum 50% in PCM and 50% overall at Class 12 level",
+                "Qualifying NATA score, as the Council of Architecture requires; JEE Main Paper 2 scores are also considered",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Submit NATA or JEE Main Paper 2 scores with the application; admission follows Council of Architecture guidelines",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 (or equivalent) certificate and transcripts, originals and copies",
+                "Class 10 certificate and transcripts",
+                "Certified English translation of any document not issued in English",
+                "NATA or JEE Main Paper 2 score card"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking",
+              "The five-year duration, including a semester-long office internship, needs a visa valid for the full programme"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Current international tuition for B.Arch is confirmed with the offer. Known costs: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, the USD 500 advance for the offer letter, and hostel with mess listed at INR 82,500 plus INR 82,500 a year. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Foundation year",
+              "language": "English",
+              "details": "Core visualisation, architectural drawing, graphics and building construction."
+            },
+            {
+              "phase": "Years 2-5",
+              "language": "English",
+              "details": "Architectural design studios with history and theory, structures, services, sustainability and urban contexts; a semester-long internship in an architecture office and a final-year thesis."
+            }
+          ]
+        },
+        {
+          "slug": "wud-bdes-product-design",
+          "canonicalCourseSlug": "bdes",
+          "officialTitle": "B.Des Product Design, School of Design",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 6717,
+            "annualTuitionMaxUsd": 6717,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 6,44,000 for B.Des (all specialisations except Animation and Game Design), about USD 6,717 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/bdes-product-design.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.Des Product Design trains students in ergonomics, materials, form and system design through wood, metal, plastics and digital-fabrication workshops. International applicants apply through WUD's international route; selection is by design aptitude test and interview, and there is an option to exit after three years with a B.Sc.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised Class 12 equivalent with at least 50% marks and success in WUD's selection test and interview.",
+              "items": [
+                "Class 12 or an AIU-recognised equivalent, such as IB or GCE A Levels",
+                "Minimum 50% marks at Class 12 level",
+                "Selection through WUD's design aptitude test (DAT) and interview",
+                "UCEED, NID or NIFT qualified candidates are preferred",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's design aptitude test (DAT) and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 (or equivalent) certificate and transcripts, originals and copies",
+                "Class 10 certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 6,44,000 a year (about USD 6,717), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3",
+              "language": "English",
+              "details": "Design fundamentals, form studies, product visualisation, CAD and materials workshops, with design projects on ergonomics, special needs and craft-based design; exit with a B.Sc is possible after year 3."
+            },
+            {
+              "phase": "Year 4",
+              "language": "English",
+              "details": "Smart-product and sustainable-design projects, an industry internship and a bachelor's thesis project."
+            }
+          ]
+        },
+        {
+          "slug": "wud-bdes-fashion-design",
+          "canonicalCourseSlug": "bachelor-fashion-design",
+          "officialTitle": "B.Des Fashion Design, School of Fashion",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 6717,
+            "annualTuitionMaxUsd": 6717,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 6,44,000 for B.Des (all specialisations except Animation and Game Design), about USD 6,717 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/b-des-fashion-design.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.Des Fashion Design, WUD's largest B.Des cohort at 60 seats, covers draping, patternmaking, garment construction, CAD and CLO3D. International applicants apply through WUD's international route; selection is by design aptitude test and interview, with an option to exit after three years with a B.Sc.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised Class 12 equivalent with at least 50% marks and success in WUD's selection test and interview.",
+              "items": [
+                "Class 12 or an AIU-recognised equivalent, such as IB or GCE A Levels",
+                "Minimum 50% marks at Class 12 level",
+                "Selection through WUD's design aptitude test (DAT) and interview",
+                "UCEED, NID or NIFT qualified candidates are preferred",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's design aptitude test (DAT) and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 (or equivalent) certificate and transcripts, originals and copies",
+                "Class 10 certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 6,44,000 a year (about USD 6,717), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3",
+              "language": "English",
+              "details": "Fashion studios in womenswear and menswear, fashion labs in patternmaking, garment construction, draping and CAD, surface design and fashion studies; exit with a B.Sc is possible after year 3."
+            },
+            {
+              "phase": "Year 4",
+              "language": "English",
+              "details": "Indian wear and portfolio development, fashion styling, design collection and an industry internship."
+            }
+          ]
+        },
+        {
+          "slug": "wud-bdes-animation-game-design",
+          "canonicalCourseSlug": "bachelor-animation-game-design",
+          "officialTitle": "B.Des Animation & Game Design, School of Communication",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 7346,
+            "annualTuitionMaxUsd": 7346,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 7,04,375 for B.Des Animation and Game Design, about USD 7,346 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/bdes-animation-game-design.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year B.Des Animation and Game Design covers storyboarding, character design, 2D and 3D animation, VFX, environment art, level design, coding and XR. It carries a higher fee than WUD's other B.Des tracks. International applicants apply through the international route; selection is by design aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised Class 12 equivalent with at least 50% marks and success in WUD's selection test and interview.",
+              "items": [
+                "Class 12 or an AIU-recognised equivalent, such as IB or GCE A Levels",
+                "Minimum 50% marks at Class 12 level",
+                "Selection through WUD's design aptitude test (DAT) and interview",
+                "UCEED, NID or NIFT qualified candidates are preferred",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's design aptitude test (DAT) and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 (or equivalent) certificate and transcripts, originals and copies",
+                "Class 10 certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 7,04,375 a year (about USD 7,346), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-3",
+              "language": "English",
+              "details": "Drawing, storytelling, 2D and 3D animation, character and environment design, and game-design fundamentals in collaborative studios; exit with a B.Sc is possible after year 3."
+            },
+            {
+              "phase": "Year 4",
+              "language": "English",
+              "details": "Advanced animation film and playable game projects, immersive XR work and an industry internship."
+            }
+          ]
+        },
+        {
+          "slug": "wud-bva-creative-painting",
+          "canonicalCourseSlug": "bfa",
+          "officialTitle": "BVA (earlier called BFA) Creative Painting, School of Visual Arts",
+          "durationYears": 4,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 1889,
+            "annualTuitionMaxUsd": 1889,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 1,81,125 for BVA (earlier called BFA), about USD 1,889 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/bva-creative-painting.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The four-year Bachelor of Visual Arts in Creative Painting, which WUD states was earlier called the Bachelor of Fine Arts, combines acrylic, oil, watercolour and life drawing with digital painting, graphic novels and installation. It is WUD's lowest-fee undergraduate degree. Selection is by art aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised Class 12 equivalent with at least 50% marks and success in WUD's selection test and interview.",
+              "items": [
+                "Class 12 or an AIU-recognised equivalent, such as IB or GCE A Levels",
+                "Minimum 50% marks at Class 12 level",
+                "Selection through WUD's art aptitude test (AAT) and interview",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's art aptitude test (AAT) and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 12 (or equivalent) certificate and transcripts, originals and copies",
+                "Class 10 certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 1,81,125 a year (about USD 1,889), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4",
+              "language": "English",
+              "details": "Studio painting in traditional and contemporary media, digital painting and illustration, with art theory, history, philosophy and cultural studies and professional-practice training."
+            }
+          ]
+        },
+        {
+          "slug": "wud-mdes-industrial-design",
+          "canonicalCourseSlug": "mdes",
+          "officialTitle": "M.Des Industrial Design, School of Design",
+          "durationYears": 2,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 7346,
+            "annualTuitionMaxUsd": 7346,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 7,04,375 for M.Des, about USD 7,346 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/mdes-industrial-design.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The two-year M.Des Industrial Design focuses on smart products, wearables, assistive devices and IoT-enabled systems, with CAD and wood, plastics, clay and metal workshops. WUD targets B.Tech, B.Sc and design graduates. International applicants apply through the international route; selection is by PG design aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised bachelor's degree with at least 50% marks and success in WUD's postgraduate selection test and interview.",
+              "items": [
+                "A bachelor's degree with at least 50% marks, recognised by the Association of Indian Universities",
+                "Selection through WUD's PG design aptitude test and interview",
+                "NID, NIFT or CEED qualified candidates are preferred",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's PG design aptitude test and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and semester-wise transcripts, originals and copies",
+                "Class 12 (or equivalent) certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 7,04,375 a year (about USD 7,346), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2",
+              "language": "English",
+              "details": "Design visualisation, CAD, materials workshops, AI-aided design and IoT integration, with live industry projects and a final design project."
+            }
+          ]
+        },
+        {
+          "slug": "wud-mdes-fashion-design",
+          "canonicalCourseSlug": "master-fashion-design",
+          "officialTitle": "M.Des Fashion Design, School of Fashion",
+          "durationYears": 2,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 7346,
+            "annualTuitionMaxUsd": 7346,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 7,04,375 for M.Des, about USD 7,346 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/mdes-digital-fashion.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The two-year M.Des Fashion Design combines draping, patternmaking and sewing with CAD, CLO3D, virtual sampling and sustainable fashion systems, taking designs from concept to 3D prototype and runway. WUD targets fashion, textile and apparel graduates. Selection is by PG design aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised bachelor's degree with at least 50% marks and success in WUD's postgraduate selection test and interview.",
+              "items": [
+                "A bachelor's degree with at least 50% marks, recognised by the Association of Indian Universities",
+                "Selection through WUD's PG design aptitude test and interview",
+                "NID, NIFT or CEED qualified candidates are preferred",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's PG design aptitude test and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and semester-wise transcripts, originals and copies",
+                "Class 12 (or equivalent) certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 7,04,375 a year (about USD 7,346), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2",
+              "language": "English",
+              "details": "Advanced fashion studios, digital fashion tools including CLO3D, sustainable textiles and circular design, fashion research methods and an industry internship."
+            }
+          ]
+        },
+        {
+          "slug": "wud-mdes-game-design",
+          "canonicalCourseSlug": "master-animation-game-design",
+          "officialTitle": "M.Des Game Design & Development, School of Communication",
+          "durationYears": 2,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 7346,
+            "annualTuitionMaxUsd": 7346,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 7,04,375 for M.Des, about USD 7,346 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/mdes-game-design.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The two-year M.Des Game Design and Development, which WUD's programme page describes as Game Design, XR and Immersive Storytelling, covers game mechanics, narrative design, 2D and 3D art, prototyping and AR, VR and MR. It has 20 seats. Selection is by PG design aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised bachelor's degree with at least 50% marks and success in WUD's postgraduate selection test and interview.",
+              "items": [
+                "A bachelor's degree with at least 50% marks, recognised by the Association of Indian Universities",
+                "Selection through WUD's PG design aptitude test and interview",
+                "NID, NIFT or CEED qualified candidates are preferred",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's PG design aptitude test and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and semester-wise transcripts, originals and copies",
+                "Class 12 (or equivalent) certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 7,04,375 a year (about USD 7,346), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2",
+              "language": "English",
+              "details": "Game mechanics, narrative design, 2D and 3D art, prototyping and XR development, with live projects in entertainment, ed-tech and healthcare."
+            }
+          ]
+        },
+        {
+          "slug": "wud-mva-contemporary-art-practice",
+          "canonicalCourseSlug": "mfa",
+          "officialTitle": "MVA (earlier called MFA) Contemporary Art Practices, School of Visual Arts",
+          "durationYears": 2,
+          "fee": {
+            "status": "indicative",
+            "academicYear": "2026-27 (international table undated)",
+            "annualTuitionMinUsd": 2309,
+            "annualTuitionMaxUsd": 2309,
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists annual tuition of INR 2,21,375 for MVA (earlier called MFA), about USD 2,309 at September 2026 exchange rates. The table does not print an academic year, so the figure is shown as a planning estimate; it equals 1.75 times the 2026-27 domestic tuition for the same programme. One-time charges add an INR 2,000 application fee, an INR 40,000 international registration fee and an INR 20,000 security deposit. Hostel with meals runs about INR 1.65-1.75 lakh a year."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/mva-contemporary-art-practice.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "The two-year Master of Visual Arts in Contemporary Art Practice, which WUD states was earlier called the Master of Fine Arts, is studio-based across painting, sculpture, printmaking, photography, installation and new media. Entry requires a BFA or BVA. Selection is by PG art aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised bachelor's degree with at least 50% marks and success in WUD's postgraduate selection test and interview.",
+              "items": [
+                "A BFA or BVA degree with at least 50% marks, recognised by the Association of Indian Universities",
+                "Selection through WUD's PG art aptitude test and interview",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's PG art aptitude test and interview; portfolio or creative work may be shown at interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and semester-wise transcripts, originals and copies",
+                "Class 12 (or equivalent) certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Portfolio of creative work, where requested at interview",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "International tuition: INR 2,21,375 a year (about USD 2,309), from WUD's undated international fee table. One-time: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, plus the USD 500 advance paid for the offer letter. Twin or triple-sharing hostel with mess is listed at INR 82,500 plus INR 82,500 a year, subject to annual revision. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2",
+              "language": "English",
+              "details": "Studio practice across media with theoretical studies and regular dialogue with visiting artists, designers and architects."
+            }
+          ]
+        },
+        {
+          "slug": "wud-mba-design-strategy-management",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "MBA in Design Strategy & Management, School of Business",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-09-21",
+            "notes": "WUD's international fee table lists MBA at INR 9,50,906 a year, but the table is undated and this row does not follow the 2026-27 fee schedule used for WUD's other programmes (domestic MBA tuition for 2026-27 is INR 3,78,000 a year). The current international tuition is therefore confirmed with the offer. Known one-time charges are an INR 2,000 application fee, an INR 40,000 international registration fee, an INR 20,000 security deposit and the USD 500 offer-letter advance."
+          },
+          "officialProgramUrl": "https://www.wud.ac.in/mba.php",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign nationals holding a non-Indian passport",
+              "Overseas Citizens of India (OCI) and PIO card holders",
+              "Non-Resident Indians who completed Grades 11 and 12 abroad",
+              "NRI-sponsored students"
+            ],
+            "restrictions": [
+              "Applicants in the foreign, NRI, OCI or PIO category are never considered for the domestic category, and foreign passport holders cannot apply as domestic candidates",
+              "A student visa endorsed to World University of Design, Sonipat is required for all international students except NRI and OCI applicants",
+              "Certain nationalities may need Ministry of Home Affairs security clearance before the visa can be issued"
+            ],
+            "notes": "International applicants use WUD's dedicated international application form, separate from the domestic admission route.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.wud.ac.in/international-admissions.php"
+          },
+          "admissionsContent": {
+            "overview": "WUD's two-year MBA combines business strategy, marketing, finance and operations with design thinking, user research and innovation strategy, through live industry projects, consulting assignments and start-up incubation. International applicants apply through WUD's international route; selection is by postgraduate general aptitude test and interview.",
+            "eligibility": {
+              "intro": "Entry requires an AIU-recognised bachelor's degree with at least 50% marks and success in WUD's postgraduate general aptitude test and interview.",
+              "items": [
+                "A bachelor's degree with at least 50% marks, recognised by the Association of Indian Universities",
+                "Selection through WUD's PG general aptitude test and interview",
+                "Adequate English for studio work and critiques; IELTS or TOEFL is recommended but not mandatory, and an online English interview may be held"
+              ]
+            },
+            "applicationSteps": [
+              "Confirm eligibility as a foreign national, OCI or PIO card holder, NRI who studied Grades 11 and 12 abroad, or NRI-sponsored student",
+              "Complete WUD's international application form online, or apply offline through info@wud.ac.in, and pay the INR 2,000 (about USD 25) application fee",
+              "Take WUD's PG general aptitude test and attend the interview",
+              "On selection, pay the non-refundable USD 500 advance to receive the Provisional Admission Offer Letter (PAOL)",
+              "Apply for an Indian student visa endorsed to WUD at the Indian mission in the home country using the PAOL",
+              "Report to the Sonipat campus with original documents, register with the FRRO within 14 days and apply for the AIU equivalence certificate within two months"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor's degree certificate and semester-wise transcripts, originals and copies",
+                "Class 12 (or equivalent) certificate and transcripts",
+                "Certified English translation of any document not issued in English"
+              ],
+              "application": [
+                "Completed WUD international application form",
+                "Passport copy",
+                "Proof of the INR 2,000 application fee",
+                "Curriculum vitae, including any work experience",
+                "Medical fitness certificate and health insurance for joining"
+              ]
+            },
+            "deadlinesNote": "WUD publishes no separate international closing date. First-year registration and document verification for the 2027-28 session is scheduled for 2 August 2027, so the visa must be in hand before then.",
+            "visaConsiderations": [
+              "The Provisional Admission Offer Letter needed for the visa is issued only after a non-refundable USD 500 advance",
+              "The student visa must be endorsed to World University of Design, Sonipat",
+              "FRRO registration is due within 14 days of arrival; WUD supplies the offer letter, bonafide certificate and undertaking"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "WUD states that all programmes are taught entirely in English.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Current international tuition for MBA is confirmed with the offer. Known costs: INR 2,000 application fee, INR 40,000 international registration fee, INR 20,000 security deposit, the USD 500 advance for the offer letter, and hostel with mess listed at INR 82,500 plus INR 82,500 a year. The AIU equivalence evaluation costs INR 12,000 plus 18% GST.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2",
+              "language": "English",
+              "details": "Management core in strategy, marketing, finance and operations with design-thinking studios, live industry projects, consulting assignments and start-up incubation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "identity",
+      "claimText": "World University of Design, Plot No-1, Rajiv Gandhi Education City, Rai, Delhi-NCR, Sonipat 131029, Haryana, appears as entry 130 under Haryana in the UGC State-wise List of Private Universities as on 25.11.2022.",
+      "status": "verified",
+      "sourceLabel": "UGC - State-wise List of Private Universities",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Also entry 291 (Private University) in the UGC Consolidated list of all universities as on 25.01.2023: https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "recognitionBadges",
+      "claimText": "The UGC State-wise List of Private Universities (as on 25.11.2022) lists World University of Design, Sonipat under Haryana.",
+      "status": "verified",
+      "sourceLabel": "UGC - State-wise List of Private Universities",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Section 2(f) wording appears only on the university's own site, so the badge states the UGC listing, not a 2(f) claim."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "recognitionBadges",
+      "claimText": "The Council of Architecture approved-institutions list for UG 2026 records institution code HR30, World School of Planning and Architecture, Plot No. 1, Rajiv Gandhi Education City, Sonepat, with affiliating university World University of Design, course Bachelor of Architecture, commenced 2016, current intake 40, approval period 2026-2027.",
+      "status": "verified",
+      "sourceLabel": "Council of Architecture - Approved Institutions UG 2026",
+      "sourceUrl": "https://ecoa.in/academic/public/Approved-Institution-UG-2026",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Server-rendered list on ecoa.in linked from coa.gov.in/architectural_institutions.php. No WUD entry in the PG 2026 list, so no M.Arch approval claim is made and M.Arch is not packaged."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "recognitionBadges",
+      "claimText": "The Association of Indian Universities member directory as on 22.07.2026 lists World University of Design (Private University), Plot No.1, Rajiv Gandhi Education City, Rai, Sonepat-131029 at entry 1155.",
+      "status": "verified",
+      "sourceLabel": "AIU - Directory of member universities as on 22.07.2026",
+      "sourceUrl": "https://aiu.ac.in/wp-content/uploads/docs/2026/07/Directory-File-AIU-Member-Univ-As-on-22.07.2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "recognitionBadges",
+      "claimText": "World University of Design is not listed in the NAAC valid-accreditation workbook, has no NBA-accredited programme and does not appear in the NIRF 2025 University, Overall or Architecture lists; no such badge is made.",
+      "status": "omit",
+      "sourceLabel": "NAAC - Accreditation status",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Supervisor regulator findings 2026-09-21. QS I-GAUGE and 'World Institutional Ranking' claims on WUD's own site are not regulator-verified and are omitted."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "establishedYear",
+      "claimText": "WUD's international fee page states that the university was established in 2018 under the Haryana Private University Act 2006.",
+      "status": "verified",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "campusLifestyle",
+      "claimText": "WUD's campus location page states the campus covers 12 acres in Rajiv Gandhi Education City on NH1 in Delhi NCR, 15 minutes from the Delhi border and 3 hours from Chandigarh, with Jahangirpuri as the nearest Delhi Metro station.",
+      "status": "verified",
+      "sourceLabel": "WUD - Campus Location",
+      "sourceUrl": "https://www.wud.ac.in/location.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "hostelOverview",
+      "claimText": "WUD's hostel page describes two halls, KG Subramanyan Hall for boys and Pupul Jaykar Hall for girls, with about 1,200 beds, mostly triple-sharing AC rooms with attached bathrooms, and a dining room, common room and gym in Pupul Jaykar Hall; the kitchen was designed by Master Chef Shaju Zacharia and is operated by institutional caterers.",
+      "status": "verified",
+      "sourceLabel": "WUD - Hostel Facilities",
+      "sourceUrl": "https://www.wud.ac.in/hostel-facilities.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "hostelOverview",
+      "claimText": "WUD's international fee page lists annual hostel charges of INR 82,500 (hostel, electricity, services) and INR 82,500 (mess) for twin or triple sharing, subject to availability, and elsewhere quotes a hostel fee of INR 1,75,000 subject to annual change.",
+      "status": "verified",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Internal inconsistency (82,500 + 82,500 = 1,65,000 vs 1,75,000) handled by stating the components and a 1.65-1.75 lakh range."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "studentSupport",
+      "claimText": "WUD's international admissions page describes the Office of International Admissions (documentation, visa guidance, FRRO registration support, onboarding, orientation, culture and safety sessions), airport pick-up from Delhi International Airport, a first-semester buddy system, priority hostel allocation, and assistance opening a domestic bank account.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "safetyOverview",
+      "claimText": "WUD's international admissions page describes 24x7 campus security, monitored entry and exit, CCTV across academic and residential zones, zero-tolerance policies on ragging, harassment and discrimination, a campus infirmary with a qualified nurse, a doctor on call, hospital tie-ups within a 10-15 minute drive and mandatory health insurance.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "practicalExposure",
+      "claimText": "WUD's international collaborations page lists exchange MoUs with the University of Huddersfield, Oxford Brookes University, University of the West of Scotland, Emily Carr University of Art & Design, Vancouver Film School, UC Berkeley, College for Creative Studies, ENSAIT, HAMK, University of Nicosia, Utrecht University, Kauno Kolegija, Banat's University, UDEM and UPAEP; over twenty semester exchanges; the Erasmus+ DESINNO project with Brunel, Politecnico di Milano, University of the Aegean and IIIT-Delhi; and Cumulus and AUTEX membership.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Collaborations",
+      "sourceUrl": "https://www.wud.ac.in/international-collaborations.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "University's own statement of partnerships; public copy names only a subset and attributes them to WUD's reporting."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "world-university-of-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international admission process: check category, apply on the dedicated international application form (INR 2,000, about USD 25, by bank transfer or card, or offline via info@wud.ac.in), receive the Provisional Admission Offer Letter after a non-refundable USD 500 advance, and obtain a student visa endorsed to WUD; certain nationalities may require MHA security clearance. AIU equivalence certificate within two months; FRRO registration within 14 days of arrival.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Application form link: https://worlduniversityofdesign.extraaedge.com/international.html. First audit's /international-students/ URL is a 404-style page; the live route is international-admissions.php."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-barch",
+      "publicField": "eligibility",
+      "claimText": "WUD's undergraduate programmes table for 2026-27 lists B.Arch Architecture with 40 seats, five years, and eligibility of minimum 50% in PCM and overall in Class 12, NATA or JEE Paper 2 scores considered, admission as per CoA guidelines.",
+      "status": "verified",
+      "sourceLabel": "WUD - Programmes of study 2026-27 and International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/ug-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-barch",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-barch",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, and obtain a student visa endorsed to WUD, Sonipat.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-barch",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-barch",
+      "publicField": "fee",
+      "claimText": "WUD's international fee table lists B.Arch at INR 3,38,100 a year without an academic year, while the 2026-27 domestic fee schedule lists B.Arch at INR 2,26,800 a year. Unlike the design and visual-arts rows, the international B.Arch row is not 1.75 times the 2026-27 domestic figure, so no current international tuition can be stated.",
+      "status": "verified",
+      "sourceLabel": "WUD - Fee Structure for International Students and Fee Structure 2026",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Domestic schedule: https://www.wud.ac.in/fee.php. Conflict recorded; tuition held as on_request per content-framework fee policy."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-barch",
+      "publicField": "eligibility",
+      "claimText": "The Council of Architecture Approval Process Handbook states that, under the COA (Minimum Standards of Architectural Education) Regulations, 2020, all candidates seeking admission to an architecture programme must qualify the Council's aptitude test, NATA.",
+      "status": "verified",
+      "sourceLabel": "Council of Architecture - Approval Process Handbook",
+      "sourceUrl": "https://coa.gov.in/showfile.php?lang=1&level=1&sublinkid=1282&lid=1154",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-product-design",
+      "publicField": "eligibility",
+      "claimText": "WUD's undergraduate programmes table for 2026-27 lists B.Des Product Design with 40 seats over 4 years; eligibility is Sr. Secondary (10+2) with minimum 50% marks and admission through design aptitude test (DAT) and interview; UCEED/NID/NIFT qualified students preferred.",
+      "status": "verified",
+      "sourceLabel": "WUD - UG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/ug-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-product-design",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-product-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-product-design",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-product-design",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 6,44,000 for B.Des (all specialisations except Animation and Game Design), with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-fashion-design",
+      "publicField": "eligibility",
+      "claimText": "WUD's undergraduate programmes table for 2026-27 lists B.Des Fashion Design with 60 seats over 4 years; eligibility is Sr. Secondary (10+2) with minimum 50% marks and admission through design aptitude test (DAT) and interview; UCEED/NID/NIFT qualified students preferred.",
+      "status": "verified",
+      "sourceLabel": "WUD - UG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/ug-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-fashion-design",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-fashion-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-fashion-design",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-fashion-design",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 6,44,000 for B.Des (all specialisations except Animation and Game Design), with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-animation-game-design",
+      "publicField": "eligibility",
+      "claimText": "WUD's undergraduate programmes table for 2026-27 lists B.Des Animation & Game Design with 40 seats over 4 years; eligibility is Sr. Secondary (10+2) with minimum 50% marks and admission through design aptitude test (DAT) and interview; UCEED/NID/NIFT qualified students preferred.",
+      "status": "verified",
+      "sourceLabel": "WUD - UG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/ug-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-animation-game-design",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-animation-game-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-animation-game-design",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bdes-animation-game-design",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 7,04,375 for B.Des Animation and Game Design, with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bva-creative-painting",
+      "publicField": "eligibility",
+      "claimText": "WUD's undergraduate programmes table for 2026-27 lists BVA (earlier called BFA) Creative Painting with 40 seats over 4 years; eligibility is Sr. Secondary (10+2) with minimum 50% marks and admission through art aptitude test (AAT) and interview.",
+      "status": "verified",
+      "sourceLabel": "WUD - UG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/ug-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bva-creative-painting",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bva-creative-painting",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bva-creative-painting",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-bva-creative-painting",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 1,81,125 for BVA (earlier called BFA), with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-industrial-design",
+      "publicField": "eligibility",
+      "claimText": "WUD's postgraduate programmes table for 2026-27 lists M.Des Industrial Design with 30 seats over two years; eligibility is graduation with minimum 50% marks and admission through PG design aptitude test and interview.",
+      "status": "verified",
+      "sourceLabel": "WUD - PG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/pg-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-industrial-design",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-industrial-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-industrial-design",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-industrial-design",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 7,04,375 for M.Des, with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-fashion-design",
+      "publicField": "eligibility",
+      "claimText": "WUD's postgraduate programmes table for 2026-27 lists M.Des Fashion Design with 30 seats over two years; eligibility is graduation with minimum 50% marks and admission through PG design aptitude test and interview.",
+      "status": "verified",
+      "sourceLabel": "WUD - PG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/pg-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-fashion-design",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-fashion-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-fashion-design",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-fashion-design",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 7,04,375 for M.Des, with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-game-design",
+      "publicField": "eligibility",
+      "claimText": "WUD's postgraduate programmes table for 2026-27 lists M.Des Game Design & Development with 20 seats over two years; eligibility is graduation with minimum 50% marks and admission through PG design aptitude test and interview.",
+      "status": "verified",
+      "sourceLabel": "WUD - PG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/pg-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-game-design",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-game-design",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-game-design",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mdes-game-design",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 7,04,375 for M.Des, with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mva-contemporary-art-practice",
+      "publicField": "eligibility",
+      "claimText": "WUD's postgraduate programmes table for 2026-27 lists MVA (earlier called MFA) Contemporary Art Practices with 30 seats over two years; eligibility is BFA/BVA with minimum 50% marks and admission through PG art aptitude test and interview.",
+      "status": "verified",
+      "sourceLabel": "WUD - PG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/pg-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mva-contemporary-art-practice",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mva-contemporary-art-practice",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, obtain a student visa endorsed to WUD, and apply for the AIU equivalence certificate after admission.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mva-contemporary-art-practice",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mva-contemporary-art-practice",
+      "publicField": "fee",
+      "claimText": "WUD's Fee Structure for International Students page lists annual tuition of INR 2,21,375 for MVA (earlier called MFA), with an INR 2,000 application fee, INR 20,000 security deposit, INR 40,000 international registration fee and hostel fee of INR 1,75,000 (table rows INR 82,500 hostel plus INR 82,500 mess). No academic year is printed on the page.",
+      "status": "indicative",
+      "sourceLabel": "WUD - Fee Structure for International Students",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Linked from the 'Click here to check International Fee' button on https://www.wud.ac.in/international-admissions.php. Cross-check: the figure equals 1.75 x the domestic 2026-27 tuition on https://www.wud.ac.in/fee.php ('Admissions 2026'), consistent across B.Des, B.Des AGD, BVA, BPA, M.Des, MVA and MPA rows, so the table is treated as current but undated. USD conversion at ECB reference USD/INR 95.88 (18 Sep 2026, https://api.frankfurter.app/latest?from=USD&to=INR). The table's SAARC note refers to 2021 admissions and is not used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mba-design-strategy-management",
+      "publicField": "eligibility",
+      "claimText": "WUD's postgraduate programmes table for 2026-27 lists the MBA over two years with eligibility of graduation with minimum 50% marks and admission through PG General Aptitude Test and interview.",
+      "status": "verified",
+      "sourceLabel": "WUD - PG programmes of study 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/pg-programmes.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mba-design-strategy-management",
+      "publicField": "eligibility",
+      "claimText": "International applicants must hold a qualification recognised by the Association of Indian Universities; eligible categories are foreign nationals, OCI and PIO card holders, NRIs who studied Grades 11 and 12 abroad, and NRI-sponsored students. Programmes are taught entirely in English; IELTS or TOEFL is recommended, not mandatory.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mba-design-strategy-management",
+      "publicField": "admissions",
+      "claimText": "WUD's international route: apply on the international application form (INR 2,000 fee), receive a Provisional Admission Offer Letter after a non-refundable USD 500 advance, and obtain a student visa endorsed to WUD, Sonipat.",
+      "status": "verified",
+      "sourceLabel": "WUD - International Admissions",
+      "sourceUrl": "https://www.wud.ac.in/international-admissions.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mba-design-strategy-management",
+      "publicField": "intake",
+      "claimText": "WUD's Academic Calendar 2026-27 (office order WUD/RO/2026/OO/008, dated 17 March 2026) sets Semester I registration and document verification on 3 August 2026 with orientation 4-8 August 2026, and Semester I registration for the following year on 2 August 2027. The single annual intake is August.",
+      "status": "verified",
+      "sourceLabel": "WUD - Academic Calendar 2026-27",
+      "sourceUrl": "https://www.wud.ac.in/assets/Academic%20Calendar%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Image-only PDF; read visually 2026-09-21."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "world-university-of-design",
+      "programmeSlug": "wud-mba-design-strategy-management",
+      "publicField": "fee",
+      "claimText": "WUD's international fee table lists MBA at INR 9,50,906 a year without an academic year, while the 2026-27 domestic fee schedule lists MBA at INR 3,78,000 a year. Unlike the design and visual-arts rows, the international MBA row is not 1.75 times the 2026-27 domestic figure, so no current international tuition can be stated.",
+      "status": "verified",
+      "sourceLabel": "WUD - Fee Structure for International Students and Fee Structure 2026",
+      "sourceUrl": "https://worlduniversityofdesign.ac.in/fee-international-students.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Domestic schedule: https://www.wud.ac.in/fee.php. Conflict recorded; tuition held as on_request per content-framework fee policy."
+    }
+  ]
+}

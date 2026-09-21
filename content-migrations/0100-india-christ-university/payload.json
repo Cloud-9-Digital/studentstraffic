@@ -1,0 +1,2257 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate engineering degrees in computer science and engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically combine programming, data structures, algorithms, operating systems, networks and databases with electives in artificial intelligence, data science, cloud computing and cyber security, and many include industry internships.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition tiers and admission routes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in mechanical engineering taken after an upper-secondary qualification with physics, chemistry and mathematics. Programmes typically cover engineering mechanics, thermodynamics, fluid mechanics, machine design, manufacturing processes and materials, with laboratory work, projects and electives in areas such as automotive, robotics or thermal engineering.",
+      "metaTitle": "B.E./B.Tech Mechanical Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech Mechanical engineering degrees for international applicants: duration, teaching language, intakes, fees and entry rules."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 3,
+      "durationYears": 2,
+      "summary": "This catalogue category covers full-time Master of Business Administration programmes, usually one to two years after a bachelor's degree. Programmes typically combine core courses in finance, marketing, operations, human resources and strategy with a specialisation, and many admit through a management aptitude test such as GMAT, GRE, CAT or MAT followed by group discussion and interview.",
+      "metaTitle": "MBA Programmes for International Students",
+      "metaDescription": "Compare MBA programmes open to international applicants: duration, specialisations, test-score requirements, intake months and tuition by nationality tier."
+    },
+    {
+      "slug": "msc-data-science",
+      "name": "M.Sc. in Data Science",
+      "shortName": "M.Sc. Data Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "data-science",
+      "aliases": [
+        "Master of Science in Data Science",
+        "MSc Data Science"
+      ],
+      "displayOrder": 4,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate Master of Science degrees in data science, usually one to two years after a bachelor's degree with a quantitative or computing background. Programmes typically cover statistics, machine learning, programming, databases and big-data tools, data visualisation and applied projects, often with industry internships or capstone work.",
+      "metaTitle": "M.Sc. Data Science Degrees for International Students",
+      "metaDescription": "Compare M.Sc. Data Science programmes for international applicants: eligible first degrees, duration, teaching language, intakes and published fees."
+    },
+    {
+      "slug": "master-clinical-psychology",
+      "name": "Master's in Clinical Psychology",
+      "shortName": "Master's Clinical Psychology",
+      "stream": "psychology",
+      "level": "masters",
+      "discipline": "clinical-psychology",
+      "aliases": [
+        "MA Clinical Psychology",
+        "MSc Clinical Psychology"
+      ],
+      "displayOrder": 5,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate MA and MSc degrees in clinical psychology, normally taken after a bachelor's degree with psychology. Programmes typically cover psychopathology, psychological assessment and psychometrics, psychotherapy and counselling methods, research methods and supervised practicum. Professional licensing to practise as a clinical psychologist depends on each country's regulator.",
+      "metaTitle": "Master's Clinical Psychology for International Students",
+      "metaDescription": "Compare Master's Clinical Psychology degrees for international applicants: psychology prerequisites, entrance tests, duration, intakes and published tuition."
+    },
+    {
+      "slug": "master-media-communication",
+      "name": "Master's in Media and Communication",
+      "shortName": "Master's Media",
+      "stream": "media-communication",
+      "level": "masters",
+      "discipline": "media-communication",
+      "aliases": [
+        "MA Media and Communication",
+        "Master of Communication"
+      ],
+      "displayOrder": 6,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate master's degrees in media and communication studies, usually open to graduates of any discipline. Programmes typically combine communication theory and media research with practical work in journalism, advertising, corporate communication, digital content and production, and may include internships or a dissertation.",
+      "metaTitle": "Master's Media and Communication for International Students",
+      "metaDescription": "Compare Master's in Media and Communication programmes for international applicants: eligibility, selection process, duration, intakes and tuition."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "christ-university",
+      "name": "CHRIST (Deemed to be University)",
+      "city": "Bengaluru",
+      "type": "Private",
+      "establishedYear": 1969,
+      "officialWebsite": "https://christuniversity.in/",
+      "mediaAttribution": {},
+      "summary": "CHRIST (Deemed to be University) is a private deemed-to-be university administered by the Carmelites of Mary Immaculate, with its central campus on Hosur Road, Bengaluru. Founded as Christ College in 1969 and declared a deemed university in 2008, it teaches about 40,000 students across humanities, sciences, commerce, management, engineering, architecture, education and law on four Bengaluru campuses plus Delhi NCR and Pune Lavasa.",
+      "campusLifestyle": "Teaching runs across four Bengaluru campuses - Central (Hosur Road), Kengeri, Bannerghatta Road and Yeshwanthpur - plus Delhi NCR and Pune Lavasa. CHRIST reports about 40,000 students from around 60 countries. The engineering school sits on the 78.5-acre Kengeri campus on Mysore Road, about 25 km from the Central campus. Central has a main auditorium of about 2,000 seats. Admitted students open a South Indian Bank account at the campus branch and use a smart ID card for fees and campus access.",
+      "cityProfile": "Bengaluru is the capital of Karnataka, on the Deccan Plateau in southern India. CHRIST's own Bangalore guide describes it as a centre of public-sector aerospace, telecommunications and defence industry and of India's software-services sector. The Central Campus is on Hosur Road near Dairy Circle in the south-east of the city. The Kengeri campus is on Mysore Road on the south-western edge, about 25 km from Central, so engineering students live and study at a distance from the main campus. The Bannerghatta Road and Yeshwanthpur campuses are also within the city. Bengaluru is served by Kempegowda International Airport, where CHRIST states it arranges pickup for new international students. The Office of International Affairs estimates living costs at up to USD 3,000-4,000 a year depending on accommodation.",
+      "practicalExposure": "CHRIST's engineering programmes run from the School of Engineering and Technology at the Kengeri campus, where seven B.Tech programmes - Information Technology, Mechanical, Civil, Computer Science and Engineering, Electronics and Communication, Automobile, and Electrical and Electronics - are on the National Board of Accreditation Tier I register to 30 June 2027. The B.Tech Computer Science and Engineering department lists industry partnerships with Cisco, Samsung, AWS, C-DAC, Tech Mahindra, Red Hat and Oracle for labs, workshops and research, allows paid internships from the second year and includes a semester-long internship in the final year. Kengeri also offers an Indo-German first-year B.Tech credit transfer with THWS, Germany. In business, the MBA runs dual-degree tracks with THWS (Germany), Western Michigan University and Virginia Commonwealth University (USA), and the Central Campus runs an MSc Data Analytics and AI dual degree with Steinbeis University, Germany. CHRIST hosts short-term US students through the University Study Abroad Consortium.",
+      "hostelOverview": "Residence halls are limited and are not guaranteed. The Office of International Affairs quotes hostel rooms at USD 600-1,000 a year depending on room type, and estimates total living costs at up to USD 3,000-4,000 a year depending on accommodation and personal spending. Hostel admission is for one year only; readmission depends on academic performance, discipline and participation. There is no mess in the residence halls. The international office helps students find rooms near campus when hostel places run out.",
+      "dietarySupport": "CHRIST's residence halls have no mess, so meals come from the campus cafeteria and eateries or from outside the campus. CHRIST does not publish a meal-plan price. Students living off campus cook or eat locally; the living-cost estimate of up to USD 3,000-4,000 a year from the Office of International Affairs includes food.",
+      "safetyOverview": "CHRIST states that its Bengaluru campuses follow the UGC guidelines on student safety and Karnataka's Public Safety (Measures) Enforcement Act, 2017, with CCTV across the campus and a security control room (080 4012 9485). Security staff are trained in first aid and fire safety. Each campus has an anti-ragging committee and squad under the UGC anti-ragging regulations.",
+      "studentSupport": "The Office of International Affairs (Audi Block, Central Campus; isc.admission@christuniversity.in) handles international admissions. CHRIST states it arranges airport pickup and on-campus accommodation for new arrivals, helps with FRRO registration and runs an orientation. Students must register with the FRRO within 14 working days and bring comprehensive medical insurance from home. Kengeri has its own international affairs contact.",
+      "whyChoose": [
+        "Tuition for international applicants is published in US dollars for each programme and year, with a lower tier for SAARC, African and ASEAN nationals and PIO/OCI holders",
+        "NAAC accreditation at A+ (CGPA 3.42, Cycle 2, declared October 2022), and seven Kengeri B.Tech programmes on NBA's Tier I (Washington Accord) register to 30 June 2027",
+        "NIRF 2025 places CHRIST 63rd in the University category, 57th in Management and 76th in Engineering",
+        "Applicants without an English-medium qualification or IELTS/TOEFL score can join a university-run intensive English course (March-May, USD 400) before the programme",
+        "The Office of International Affairs states it arranges airport pickup, initial accommodation and FRRO registration help for newly admitted students"
+      ],
+      "thingsToConsider": [
+        "Selection is in person: after the online entrance test, the skill assessment, micro presentation and interview are held at CHRIST venues in India or, for 2026 UG/PG rounds, in Bahrain, Dubai, Qatar, Kuwait, Oman and Saudi Arabia; the MBA lists only Indian venues",
+        "The fee tier is fixed by category for the whole programme, and PIO, OCI and foreign-national applicants who studied under an Indian curriculum still pay the International Student fee",
+        "CHRIST's admissions disclaimer says campus and programme allocation across its Bengaluru, Pune Lavasa and Delhi NCR campuses is at the university's discretion, so a seat may be offered on a different campus",
+        "Hostel places are limited, residence halls have no mess, and hostel admission is renewed year by year on performance and conduct",
+        "The Bureau of Immigration bars employment on a student visa, and CHRIST requires FRRO registration within 14 working days of admission or arrival",
+        "NBA accreditation covers the seven Kengeri B.Tech programmes; the MBA's NBA period ended on 30 June 2026 and was not renewed on the register as of September 2026"
+      ],
+      "bestFitFor": [
+        "Applicants who want an English-taught B.Tech in computer science, mechanical or electrical and electronics engineering from a programme on NBA's Washington Accord register",
+        "Graduates with a quantitative first degree seeking a two-year MSc Data Science selected by interview rather than an entrance test",
+        "Psychology graduates who studied psychology in every year of their degree and want a two-year MSc Clinical Psychology in Bengaluru",
+        "MBA applicants who hold a GMAT or GRE score and can travel to India for group discussion and interview",
+        "SAARC, African and ASEAN nationals, who pay a lower published US dollar tuition tier than other foreign nationals"
+      ],
+      "industryPartners": [
+        "Cisco",
+        "Samsung",
+        "Amazon Web Services",
+        "C-DAC",
+        "Tech Mahindra",
+        "Red Hat",
+        "Oracle"
+      ],
+      "recognitionBadges": [
+        "NAAC - Accredited A+, CGPA 3.42, Cycle 2 (declared October 2022)",
+        "UGC - Listed Deemed to be University under Section 3 of the UGC Act, 1956",
+        "NBA Tier I (Washington Accord) - seven B.Tech programmes at Kengeri Campus accredited to 30 June 2027",
+        "NIRF 2025 - Rank 63, University category (Ministry of Education)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NAAC - Accreditation Status (valid-accreditation workbook)",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "NAAC - Standing Committee accreditation results",
+          "url": "https://naac.gov.in/index.php/en/19-quick-links/62-accreditationresults"
+        },
+        {
+          "label": "NBA - Accredited programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "UGC - Consolidated list of Deemed to be Universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is CHRIST (Deemed to be University) public or private?",
+          "answer": "It is a private deemed-to-be university administered by the Carmelites of Mary Immaculate (CMI). It began as Christ College in 1969, was declared a deemed university under Section 3 of the UGC Act in July 2008, and it appears on the UGC's consolidated list of deemed universities. As a deemed university it awards its own degrees rather than those of an affiliating state university."
+        },
+        {
+          "question": "What language are programmes taught in?",
+          "answer": "CHRIST states that all its courses are taught in English, with no switch to Kannada or another language later in the programme. Because of this, international applicants from non-English-speaking backgrounds must prove English ability before admission or complete CHRIST's English course first."
+        },
+        {
+          "question": "What English test scores does CHRIST accept?",
+          "answer": "Applicants from non-English-speaking countries need either proof that the qualifying examination was taken in English, or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT). Otherwise CHRIST requires its full-time Intensive English Language Course (March to May, over 320 hours, USD 400) or a part-time one-semester certificate course (June to December)."
+        },
+        {
+          "question": "Is my school-leaving qualification accepted for a bachelor's programme?",
+          "answer": "CHRIST assesses international curricula under Association of Indian Universities (AIU) stipulations. For B.Tech it states that IB applicants need 3 Higher Level and 3 Standard Level subjects with 24 credits, and GCE/Edexcel applicants need at least 3 A levels at grade C or above, alongside the programme's subject rules such as Physics and Mathematics with 50 per cent in Mathematics."
+        },
+        {
+          "question": "Is there an entrance test and interview?",
+          "answer": "Yes for most programmes. B.Tech, MSc Clinical Psychology and MA Media and Communication Studies use a 90-minute online entrance test followed by an in-person skill assessment, 90-second micro presentation and 10-minute interview. MSc Data Science skips the test but keeps the in-person stages. The MBA uses a management test score for eligibility, then group discussion, written assessment and interview."
+        },
+        {
+          "question": "Can I attend the selection process outside India?",
+          "answer": "For the 2026 NRI and international rounds CHRIST held the skill assessment, micro presentation and interview in Bahrain, Dubai, Qatar, Kuwait, Oman and Saudi Arabia as well as on its Indian campuses, with the entrance test online. The MBA 2027 cycle lists only Indian venues: Bengaluru, Delhi NCR, Pune and, for Session I, Kolkata."
+        },
+        {
+          "question": "How much does a programme cost for an international student?",
+          "answer": "Fees are published in US dollars by programme and year, in two tiers. For B.Tech Computer Science and Engineering, other foreign nationals pay USD 5,700 in years 1-2 and USD 6,200 in years 3-4 (USD 23,800 in total), while SAARC, African and ASEAN nationals and PIO/OCI holders pay USD 5,100 and USD 5,600. The MBA is USD 8,000 a year. A USD 100 registration fee is non-refundable. Hostel rooms cost USD 600-1,000 a year, and CHRIST estimates living costs at up to USD 3,000-4,000 a year."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Foreign citizens and PIO and OCI card holders apply in the International Student category through CHRIST's online admissions portal (espro.christuniversity.in/Application). Register once, choose the programme and campus, upload marks statements and pay the application fee online. Then book the entrance-test date and selection venue. International admission queries go to isc.admission@christuniversity.in."
+        },
+        {
+          "question": "When do programmes start and when are applications open?",
+          "answer": "The academic year starts in late May or June. For 2026 the MBA and MSc Data Science were inaugurated on 25 May, the Kengeri B.Tech on 8 June and most other postgraduate programmes on 11 June. CHRIST lists the next application cycle for most programmes as opening on 8 December 2026. MBA 2027 applications are open from 5 September 2026 to 24 January 2027."
+        },
+        {
+          "question": "Can I work part-time in India while studying?",
+          "answer": "No. The Bureau of Immigration states that foreigners on a student visa must not take up any employment or business activity in India. Budget for tuition, hostel and living costs from funds brought from home or from scholarships."
+        },
+        {
+          "question": "What happens after arrival in Bengaluru?",
+          "answer": "CHRIST requires international students to register with the Foreigners Regional Registration Officer within 14 working days of admission or arrival. At admission it checks the passport and visa, a Medical Fitness Certificate and any Resident Permit already held. It also asks students to arrive at least seven days before classes, bring comprehensive medical insurance from home and open an account at the South Indian Bank campus branch."
+        },
+        {
+          "question": "What do CHRIST's accreditations cover?",
+          "answer": "NAAC accredited the university A+ with CGPA 3.42 in Cycle 2, declared in October 2022. NBA's Tier I (Washington Accord) register lists seven B.Tech programmes at the Kengeri campus up to 30 June 2027. The MBA's NBA period ended on 30 June 2026 and did not appear as renewed in September 2026. NIRF 2025 ranks CHRIST 63rd among universities."
+        },
+        {
+          "question": "Is on-campus accommodation guaranteed?",
+          "answer": "No. CHRIST states that hostel seats are limited, admission to a residence hall is for one year only, and readmission depends on performance and conduct. Rooms cost USD 600-1,000 a year depending on type, and the residence halls have no mess. The Office of International Affairs helps students find accommodation near campus."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "CHRIST Office of International Affairs - Apply to CHRIST",
+          "url": "https://christuniversity.in/center/C/IS/apply-tochrist",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "International Student category definition, English requirement, IELC (USD 400), application portal."
+        },
+        {
+          "label": "CHRIST Office of International Affairs - Fees, accommodation and lifestyle cost",
+          "url": "https://christuniversity.in/center/C/IS/fees-and-cost",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Hostel USD 600-1,000 a year; living cost up to USD 3,000-4,000 a year; fee bands by discipline."
+        },
+        {
+          "label": "CHRIST Office of International Affairs - Prepare to Arrive",
+          "url": "https://christuniversity.in/center/C/IS/prepare-to-arrive1",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CHRIST Office of International Affairs - Contact Us",
+          "url": "https://christuniversity.in/center/C/IS/contact-us",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CHRIST - UG/PG Selection Process 2026, detailed information",
+          "url": "https://christuniversity.in/admission/2026-ugpgsp",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CHRIST - Important dates for NRI/International selection process 2026",
+          "url": "https://christuniversity.in/admission/nri-selection-process-dates-2026",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CHRIST - History and Milestones",
+          "url": "https://christuniversity.in/history",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CHRIST - Hostel and Dining",
+          "url": "https://christuniversity.in/hostel/main-campus/hostel-and-dining",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "CHRIST - Safety and Security of Students on Campus",
+          "url": "https://christuniversity.in/view-pdf/safety-and-security-of-students-on-campus",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "UGC - Consolidated list of Deemed to be Universities (as on 30 November 2021)",
+          "url": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Karnataka entry 30: 'Christ, Hosur Road, Bangalore - 560029', declared 22.07.2008."
+        },
+        {
+          "label": "NAAC - Accreditation Status",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NBA - Accredited programme registers",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NIRF 2025 - University category ranking (Ministry of Education)",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "Bureau of Immigration - Study in India",
+          "url": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my CHRIST eligibility as an international applicant",
+            "capture": [
+              "citizenship or passport country",
+              "applicant category (foreign national, PIO or OCI)",
+              "school-leaving or degree qualification and curriculum (IB, A level, national board)",
+              "subjects and aggregate marks",
+              "English-medium evidence or IELTS/TOEFL score"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Work out my CHRIST fee tier in US dollars",
+            "capture": [
+              "citizenship",
+              "intended programme and campus",
+              "whether SAARC, African, ASEAN, PIO or OCI tier applies",
+              "hostel preference"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my CHRIST selection-process route",
+            "capture": [
+              "intended programme",
+              "preferred selection venue (India or Gulf centre)",
+              "management test score for MBA (GMAT, GRE, CAT, MAT)",
+              "intended intake year"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my Indian student visa and FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date",
+              "medical insurance status"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "christ-btech-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "Bachelor of Technology (BTech) Computer Science and Engineering, CHRIST (Deemed to be University), Bangalore Kengeri Campus",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5700,
+            "officialTotalTuitionAmount": 23800,
+            "annualTuitionUsd": 5700,
+            "totalTuitionUsd": 23800,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a year-by-year programme fee for this B.Tech. with two international tiers. Other Foreign Nationals pay USD 5,700 in years 1 and 2 and USD 6,200 in years 3 and 4 (USD 23,800 in total); nationals of SAARC, African and ASEAN countries and PIO/OCI holders pay USD 5,100 and USD 5,600 (USD 21,400 in total). A non-refundable admission registration fee of USD 100 applies. The annual figure shown is the year-1 Other Foreign Nationals fee."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/ODE=",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "PIO, OCI and foreign-national applicants who studied under an Indian curriculum still pay the International Student category fee",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/ODE="
+          },
+          "admissionsContent": {
+            "overview": "The four-year Bachelor of Technology (BTech) Computer Science and Engineering is taught at the Bangalore Kengeri Campus. International applicants are selected through an online entrance test followed by an in-person skill assessment, micro presentation and personal interview, and must meet CHRIST's English requirement.",
+            "eligibility": {
+              "intro": "A pass at the +2 level with Physics, Mathematics and one of 14 listed subjects, scoring 50 per cent aggregate in those three, and at least 50 per cent in Mathematics. International curricula are assessed under AIU stipulations.",
+              "items": [
+                "Pass at the +2 level having studied Physics, Mathematics and one of 14 listed subjects (such as Chemistry, Computer Science, Electronics, Information Technology or Biology), with 50 per cent aggregate in those three",
+                "IB applicants need 3 Higher Level and 3 Standard Level subjects with 24 credits",
+                "GCE / Edexcel applicants need at least 3 A levels, each at grade C or above",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme",
+                "Lateral entry to year 2 is open to holders of a 3-year diploma in Computer Science and Engineering or Information Technology"
+              ]
+            },
+            "applicationSteps": [
+              "Create a one-time registration on CHRIST's admissions portal (espro.christuniversity.in/Application) with the name printed on the Class 10 certificate, then verify by OTP",
+              "Choose the programme and Kengeri campus, upload Class 10 and Class 11 final or Class 12 board marks, and pay the non-refundable application fee online",
+              "Select the online entrance-test date and the venue for the in-person selection process (skill assessment, micro presentation, personal interview)",
+              "Take the 90-minute online entrance test, then attend SA_MP_PI on the date shown on the e-admit card issued 2-3 days before",
+              "If selected, accept the e-offer, pay the first-year fee within seven days of the result and complete admission in person at the Kengeri campus with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marks statement",
+                "Class 11 final report or Class 12 board result",
+                "Transfer Certificate and Migration Certificate from the last institution",
+                "Evidence of English-medium schooling, or IELTS / TOEFL score report"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "CHRIST lists applications for this programme as opening on 8 December 2026 for the next cycle; the 2026-intake window closed on 23 August 2026. Teaching for the 2026 batch began with the B.Tech inauguration on 8 June 2026.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Year-by-year fee for international applicants, published in CHRIST's Fee Structure - 2026: Other Foreign Nationals USD 5,700 (year 1), 5,700 (year 2), 6,200 (year 3), 6,200 (year 4); SAARC / Africa / PIO / OCI / ASEAN USD 5,100, 5,100, 5,600, 5,600. Year 1 is due within seven days of the selection result; later years by 15 March. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-2 (semesters 1-4)",
+              "language": "English",
+              "details": "Core engineering and computing foundations: mathematics, chemistry, basic electronics, computer programming, basic mechanical engineering and English communication for engineers, then data structures, algorithms and operating systems."
+            },
+            {
+              "phase": "Years 3-4 (semesters 5-8)",
+              "language": "English",
+              "details": "Specialisation tracks listed by CHRIST: AI and intelligent systems, data science and computational analytics, IoT/cloud/quantum and next-generation networks, computer vision, and cyber security and digital forensics, with a semester-long internship in the final year."
+            }
+          ]
+        },
+        {
+          "slug": "christ-btech-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "Bachelor of Technology (BTech) Mechanical Engineering, CHRIST (Deemed to be University), Bangalore Kengeri Campus",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5200,
+            "officialTotalTuitionAmount": 21800,
+            "annualTuitionUsd": 5200,
+            "totalTuitionUsd": 21800,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a year-by-year programme fee for this B.Tech. with two international tiers. Other Foreign Nationals pay USD 5,200 in years 1 and 2 and USD 5,700 in years 3 and 4 (USD 21,800 in total); nationals of SAARC, African and ASEAN countries and PIO/OCI holders pay USD 4,500 and USD 5,000 (USD 19,000 in total). A non-refundable admission registration fee of USD 100 applies. The annual figure shown is the year-1 Other Foreign Nationals fee."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/NzM=",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "PIO, OCI and foreign-national applicants who studied under an Indian curriculum still pay the International Student category fee",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/NzM="
+          },
+          "admissionsContent": {
+            "overview": "The four-year Bachelor of Technology (BTech) Mechanical Engineering is taught at the Bangalore Kengeri Campus. International applicants are selected through an online entrance test followed by an in-person skill assessment, micro presentation and personal interview, and must meet CHRIST's English requirement.",
+            "eligibility": {
+              "intro": "A pass at the +2 level with Physics, Chemistry and Mathematics, with 50 per cent aggregate in those three, and at least 50 per cent in Mathematics. International curricula are assessed under AIU stipulations.",
+              "items": [
+                "Pass at the +2 level having studied Physics, Chemistry and Mathematics, with 50 per cent aggregate in those three",
+                "IB applicants need 3 Higher Level and 3 Standard Level subjects with 24 credits",
+                "GCE / Edexcel applicants need at least 3 A levels, each at grade C or above",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme",
+                "Lateral entry to year 2 is open to holders of a 3-year diploma in Engineering"
+              ]
+            },
+            "applicationSteps": [
+              "Create a one-time registration on CHRIST's admissions portal (espro.christuniversity.in/Application) with the name printed on the Class 10 certificate, then verify by OTP",
+              "Choose the programme and Kengeri campus, upload Class 10 and Class 11 final or Class 12 board marks, and pay the non-refundable application fee online",
+              "Select the online entrance-test date and the venue for the in-person selection process (skill assessment, micro presentation, personal interview)",
+              "Take the 90-minute online entrance test, then attend SA_MP_PI on the date shown on the e-admit card issued 2-3 days before",
+              "If selected, accept the e-offer, pay the first-year fee within seven days of the result and complete admission in person at the Kengeri campus with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marks statement",
+                "Class 11 final report or Class 12 board result",
+                "Transfer Certificate and Migration Certificate from the last institution",
+                "Evidence of English-medium schooling, or IELTS / TOEFL score report"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "CHRIST lists applications for this programme as opening on 8 December 2026 for the next cycle; the 2026-intake window closed on 23 August 2026. Teaching for the 2026 batch began with the B.Tech inauguration on 8 June 2026.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Year-by-year fee for international applicants, published in CHRIST's Fee Structure - 2026: Other Foreign Nationals USD 5,200 (year 1), 5,200 (year 2), 5,700 (year 3), 5,700 (year 4); SAARC / Africa / PIO / OCI / ASEAN USD 4,500, 4,500, 5,000, 5,000. Year 1 is due within seven days of the selection result; later years by 15 March. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech., eight semesters",
+              "language": "English",
+              "details": "Mechanical engineering core with the specialisation areas CHRIST lists for the programme: thermal engineering, design engineering, manufacturing engineering, automobile engineering, robotics and automation, and materials and sustainable engineering."
+            }
+          ]
+        },
+        {
+          "slug": "christ-btech-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "Bachelor of Technology (BTech) Electrical and Electronics Engineering, CHRIST (Deemed to be University), Bangalore Kengeri Campus",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5200,
+            "officialTotalTuitionAmount": 21800,
+            "annualTuitionUsd": 5200,
+            "totalTuitionUsd": 21800,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a year-by-year programme fee for this B.Tech. with two international tiers. Other Foreign Nationals pay USD 5,200 in years 1 and 2 and USD 5,700 in years 3 and 4 (USD 21,800 in total); nationals of SAARC, African and ASEAN countries and PIO/OCI holders pay USD 4,500 and USD 5,000 (USD 19,000 in total). A non-refundable admission registration fee of USD 100 applies. The annual figure shown is the year-1 Other Foreign Nationals fee."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/NTk=",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "PIO, OCI and foreign-national applicants who studied under an Indian curriculum still pay the International Student category fee",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/NTk="
+          },
+          "admissionsContent": {
+            "overview": "The four-year Bachelor of Technology (BTech) Electrical and Electronics Engineering is taught at the Bangalore Kengeri Campus. International applicants are selected through an online entrance test followed by an in-person skill assessment, micro presentation and personal interview, and must meet CHRIST's English requirement.",
+            "eligibility": {
+              "intro": "A pass at the +2 level with Physics, Mathematics and one of 14 listed subjects, scoring 50 per cent aggregate in those three, and at least 50 per cent in Mathematics. International curricula are assessed under AIU stipulations.",
+              "items": [
+                "Pass at the +2 level having studied Physics, Mathematics and one of 14 listed subjects (such as Chemistry, Computer Science, Electronics or Information Technology), with 50 per cent aggregate in those three",
+                "IB applicants need 3 Higher Level and 3 Standard Level subjects with 24 credits",
+                "GCE / Edexcel applicants need at least 3 A levels, each at grade C or above",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme",
+                "Lateral entry to year 2 is open to holders of a 3-year diploma in Engineering"
+              ]
+            },
+            "applicationSteps": [
+              "Create a one-time registration on CHRIST's admissions portal (espro.christuniversity.in/Application) with the name printed on the Class 10 certificate, then verify by OTP",
+              "Choose the programme and Kengeri campus, upload Class 10 and Class 11 final or Class 12 board marks, and pay the non-refundable application fee online",
+              "Select the online entrance-test date and the venue for the in-person selection process (skill assessment, micro presentation, personal interview)",
+              "Take the 90-minute online entrance test, then attend SA_MP_PI on the date shown on the e-admit card issued 2-3 days before",
+              "If selected, accept the e-offer, pay the first-year fee within seven days of the result and complete admission in person at the Kengeri campus with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marks statement",
+                "Class 11 final report or Class 12 board result",
+                "Transfer Certificate and Migration Certificate from the last institution",
+                "Evidence of English-medium schooling, or IELTS / TOEFL score report"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "CHRIST lists applications for this programme as opening on 8 December 2026 for the next cycle; the 2026-intake window closed on 23 August 2026. Teaching for the 2026 batch began with the B.Tech inauguration on 8 June 2026.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Year-by-year fee for international applicants, published in CHRIST's Fee Structure - 2026: Other Foreign Nationals USD 5,200 (year 1), 5,200 (year 2), 5,700 (year 3), 5,700 (year 4); SAARC / Africa / PIO / OCI / ASEAN USD 4,500, 4,500, 5,000, 5,000. Year 1 is due within seven days of the selection result; later years by 15 March. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year B.Tech., eight semesters",
+              "language": "English",
+              "details": "Electrical and electronics core with the focus areas CHRIST lists for the programme: power and energy systems, automation and embedded systems, and e-mobility and power electronics."
+            }
+          ]
+        },
+        {
+          "slug": "christ-mba",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "Master of Business Administration (MBA), CHRIST (Deemed to be University), Bangalore Central Campus",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2027 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 8000,
+            "officialTotalTuitionAmount": 16000,
+            "annualTuitionUsd": 8000,
+            "totalTuitionUsd": 16000,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a per-year programme fee with two international tiers: Other Foreign Nationals USD 8,000 a year (USD 16,000 over two years); SAARC, African and ASEAN nationals and PIO/OCI holders USD 7,800 a year (USD 15,600). A non-refundable admission registration fee of USD 100 applies to foreign nationals, PIO and OCI."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/MzM0",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "The MBA selection process for 2027 is held in person only at CHRIST venues in Bengaluru, Delhi NCR and Pune, plus Kolkata for Session I; no overseas venue is listed",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/MzM0"
+          },
+          "admissionsContent": {
+            "overview": "CHRIST's two-year MBA admits international applicants through the MBA 2027 cycle. A valid management entrance score sets eligibility only; selection rests on group discussion, micro presentation, written assessment and interview held in person in India. Specialisations include Finance, Marketing, HR, Business Analytics and Lean Operations.",
+            "eligibility": {
+              "intro": "An undergraduate degree with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU, plus a qualifying score in MAT, CAT, CMAT, XAT, ATMA, GMAT or GRE taken in 2026 or 2027.",
+              "items": [
+                "Undergraduate degree with 50 per cent aggregate, recognised by UGC / AIU; final-year students need 50 per cent in all semesters so far",
+                "Minimum score (eligibility only): MAT 600, CAT/XAT/CMAT/ATMA 60th percentile, GMAT 450 or GRE 295",
+                "Dual-degree tracks add conditions: THWS Germany needs one year of work experience; Western Michigan needs GMAT 450 or GRE 295",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme"
+              ]
+            },
+            "applicationSteps": [
+              "Register once on CHRIST's admissions portal (espro.christuniversity.in/Application), verify by OTP and select MBA with the preferred campus",
+              "Upload Class 10, Class 12 and undergraduate marks with a valid MAT, CAT, CMAT, XAT, ATMA, GMAT Focus or GRE scorecard, and pay the application fee online",
+              "Download the e-admit card and attend Group Discussion, Micro Presentation, Written Assessment and Personal Interview in person at the chosen venue",
+              "Check the final selection list on the portal, accept the e-offer and pay the first-year fee within seven days of the result",
+              "Complete admission in person at the allotted campus with original documents; CHRIST allots Central or Kengeri seats by availability"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marks statements",
+                "Undergraduate marks cards (semester, year or consolidated)",
+                "Provisional or degree certificate, Transfer Certificate and Migration Certificate",
+                "Valid MAT, CAT, CMAT, XAT, ATMA, GMAT Focus or GRE scorecard (2026 or 2027)"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "MBA 2027 Session I applications opened on 5 September 2026 and close at 17:00 IST on 24 January 2027; GD and micro presentation from 31 January 2027, written assessment and interview to 2 February, final list on 6 February 2027.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "May"
+          ],
+          "intakeCodes": [
+            "may"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Per-year fee for international applicants: Other Foreign Nationals USD 8,000 in each of years 1 and 2; SAARC / Africa / PIO / OCI / ASEAN USD 7,800 in each year. Year 1 is due within seven days of the selection result and year 2 by 15 March of the following year. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Year 1",
+              "language": "English",
+              "details": "Core management curriculum at the School of Business and Management."
+            },
+            {
+              "phase": "Year 2",
+              "language": "English",
+              "details": "Specialisation in one of the published streams - Finance, Marketing, Human Resource, Business Analytics, Lean Operations and Systems or International Business - with dual-degree options with THWS (Germany), Western Michigan University or Virginia Commonwealth University (USA) run as separate listings."
+            }
+          ]
+        },
+        {
+          "slug": "christ-msc-data-science",
+          "canonicalCourseSlug": "msc-data-science",
+          "officialTitle": "Master of Science (Data Science), CHRIST (Deemed to be University), Bangalore Central Campus",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5400,
+            "officialTotalTuitionAmount": 10800,
+            "annualTuitionUsd": 5400,
+            "totalTuitionUsd": 10800,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a per-year programme fee with two international tiers: Other Foreign Nationals USD 5,400 a year (USD 10,800 over two years); SAARC, African and ASEAN nationals and PIO/OCI holders USD 4,800 a year (USD 9,600). A non-refundable admission registration fee of USD 100 applies to foreign nationals, PIO and OCI."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/NDQ0",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "Graduates in BA, BCom or BBA are eligible only if their degree included Mathematics, Business Mathematics, Data Analytics, Data Science, Statistics or Computer Science",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/NDQ0"
+          },
+          "admissionsContent": {
+            "overview": "The two-year MSc (Data Science) at the Bangalore Central Campus is a non-entrance-test programme: international applicants are selected on academic record plus an in-person skill assessment, micro presentation and personal interview, and must meet CHRIST's English requirement.",
+            "eligibility": {
+              "intro": "An undergraduate degree with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU, in BE/BTech, BSc with Statistics, Mathematics or Computer Science, BSc Data Science/Analytics, BCA, or BA/BCom/BBA with a quantitative subject.",
+              "items": [
+                "Undergraduate degree with 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU",
+                "Accepted backgrounds: BE/BTech; BSc with Statistics, Mathematics or Computer Science; BSc Data Science or Data Analytics; BCA",
+                "BA, BCom or BBA graduates qualify only with Mathematics, Business Mathematics, Data Analytics, Data Science, Statistics or Computer Science",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme"
+              ]
+            },
+            "applicationSteps": [
+              "Register once on CHRIST's admissions portal (espro.christuniversity.in/Application), verify by OTP and choose the programme and Bangalore Central Campus",
+              "Upload Class 10, Class 12 and undergraduate marks (up to the last completed semester if still studying) and pay the non-refundable application fee online",
+              "Select the date and venue for the in-person skill assessment, micro presentation and personal interview (no entrance test for this programme)",
+              "Attend the selection process on the date on the e-admit card, issued 2-3 days beforehand; results are published on the portal",
+              "If selected, pay the first-year fee within seven days of the result and complete admission in person with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marks statements",
+                "Undergraduate marks cards (semester, year or consolidated)",
+                "Provisional or degree certificate, Transfer Certificate and Migration Certificate",
+                "Evidence of English-medium study, or IELTS / TOEFL score report"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "The 2026-intake window for this programme ran from 8 December 2025 to 22 March 2026; CHRIST had not listed the next cycle's dates when checked on 21 September 2026.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "May"
+          ],
+          "intakeCodes": [
+            "may"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Per-year fee for international applicants: Other Foreign Nationals USD 5,400 in each of years 1 and 2; SAARC / Africa / PIO / OCI / ASEAN USD 4,800 in each year. Year 1 is due within seven days of the selection result and year 2 by 15 March of the following year. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year MSc, four semesters",
+              "language": "English",
+              "details": "Postgraduate data science programme of the School of Sciences at the Bangalore Central Campus; CHRIST requires admitted postgraduate students to buy a laptop at their own cost."
+            }
+          ]
+        },
+        {
+          "slug": "christ-msc-clinical-psychology",
+          "canonicalCourseSlug": "master-clinical-psychology",
+          "officialTitle": "Master of Science Clinical Psychology, CHRIST (Deemed to be University), Bangalore Central Campus",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5200,
+            "officialTotalTuitionAmount": 10400,
+            "annualTuitionUsd": 5200,
+            "totalTuitionUsd": 10400,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a per-year programme fee with two international tiers: Other Foreign Nationals USD 5,200 a year (USD 10,400 over two years); SAARC, African and ASEAN nationals and PIO/OCI holders USD 4,600 a year (USD 9,200). A non-refundable admission registration fee of USD 100 applies to foreign nationals, PIO and OCI."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/MTcy",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "CHRIST labels its separate MA Clinical Psychology at the Yeshwanthpur campus as recognised by the Rehabilitation Council of India; this MSc listing carries no such label",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/MTcy"
+          },
+          "admissionsContent": {
+            "overview": "The two-year MSc Clinical Psychology at the Bangalore Central Campus requires psychology in every year of the bachelor's degree. International applicants take an online entrance test, then an in-person skill assessment, micro presentation and personal interview.",
+            "eligibility": {
+              "intro": "A bachelor's degree with psychology as a core paper in all years, with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU.",
+              "items": [
+                "Bachelor's degree with psychology as a core paper in every year of the programme",
+                "50 per cent aggregate or above from a university recognised by UGC / AIU; final-year students need 50 per cent in all semesters so far",
+                "International curricula are assessed under Association of Indian Universities (AIU) stipulations",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme"
+              ]
+            },
+            "applicationSteps": [
+              "Register once on CHRIST's admissions portal (espro.christuniversity.in/Application), verify by OTP and choose the programme and Bangalore Central Campus",
+              "Upload Class 10, Class 12 and undergraduate marks (up to the last completed semester if still studying) and pay the non-refundable application fee online",
+              "Select the online entrance-test date and the venue for the in-person skill assessment, micro presentation and personal interview",
+              "Attend the selection process on the date on the e-admit card, issued 2-3 days beforehand; results are published on the portal",
+              "If selected, pay the first-year fee within seven days of the result and complete admission in person with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marks statements",
+                "Undergraduate marks cards (semester, year or consolidated)",
+                "Provisional or degree certificate, Transfer Certificate and Migration Certificate",
+                "Evidence of English-medium study, or IELTS / TOEFL score report"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "CHRIST lists applications for this programme as opening on 8 December 2026 for the next cycle; the 2026-intake window closed on 23 August 2026.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Per-year fee for international applicants: Other Foreign Nationals USD 5,200 in each of years 1 and 2; SAARC / Africa / PIO / OCI / ASEAN USD 4,600 in each year. Year 1 is due within seven days of the selection result and year 2 by 15 March of the following year. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year MSc, four semesters",
+              "language": "English",
+              "details": "Focus areas CHRIST lists for the programme: child and adolescent mental health, adult psychopathology and psychotherapy, counselling and psychotherapy practice, community mental health, and clinical assessment and psychometrics."
+            }
+          ]
+        },
+        {
+          "slug": "christ-ma-media-communication-studies",
+          "canonicalCourseSlug": "master-media-communication",
+          "officialTitle": "Master of Arts Media and Communication Studies, CHRIST (Deemed to be University), Bangalore Central Campus",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026 admission batch",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5000,
+            "officialTotalTuitionAmount": 10000,
+            "annualTuitionUsd": 5000,
+            "totalTuitionUsd": 10000,
+            "verifiedAt": "2026-09-21",
+            "notes": "CHRIST publishes a per-year programme fee with two international tiers: Other Foreign Nationals USD 5,000 a year (USD 10,000 over two years); SAARC, African and ASEAN nationals and PIO/OCI holders USD 4,400 a year (USD 8,800). A non-refundable admission registration fee of USD 100 applies to foreign nationals, PIO and OCI."
+          },
+          "officialProgramUrl": "https://christuniversity.in/courses/MTQ1",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Foreign citizens holding a non-Indian passport",
+              "Person of Indian Origin (PIO) card holders",
+              "Overseas Citizen of India (OCI) card holders"
+            ],
+            "restrictions": [
+              "Fee tier is set by nationality: SAARC, African and ASEAN nationals and PIO/OCI holders pay the lower USD tier; all other foreign nationals pay the higher USD tier",
+              "The International Student category fee is binding for the full programme and cannot be changed part-way",
+              "Selection needs attendance in person at the skill assessment, micro presentation and interview venue chosen in the application",
+              "Employment and business activity are not permitted on an Indian student visa"
+            ],
+            "notes": "CHRIST's Office of International Affairs handles International Student category admissions through isc.admission@christuniversity.in; Non-Resident Indians holding Indian passports apply under a separate NRI category with INR fees.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://christuniversity.in/courses/MTQ1"
+          },
+          "admissionsContent": {
+            "overview": "The two-year MA Media and Communication Studies at the Bangalore Central Campus accepts graduates of any discipline. International applicants take an online entrance test, then an in-person skill assessment, micro presentation and personal interview.",
+            "eligibility": {
+              "intro": "An undergraduate degree in any discipline with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU.",
+              "items": [
+                "Undergraduate degree in any discipline with 50 per cent aggregate from a university recognised by UGC / AIU",
+                "Final-year students may apply if they hold 50 per cent or above in all semesters or years completed so far",
+                "International curricula are assessed under Association of Indian Universities (AIU) stipulations",
+                "Applicants from non-English-speaking backgrounds need an English-medium qualifying exam, or IELTS 6.0 (no band below 5.5), TOEFL 550 paper / 213 computer / 79 iBT",
+                "Without that evidence, CHRIST requires its full-time Intensive English Language Course (March-May, USD 400) or a part-time one-semester English certificate (June-December)",
+                "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category, whose fee tier is binding for the whole programme"
+              ]
+            },
+            "applicationSteps": [
+              "Register once on CHRIST's admissions portal (espro.christuniversity.in/Application), verify by OTP and choose the programme and Bangalore Central Campus",
+              "Upload Class 10, Class 12 and undergraduate marks (up to the last completed semester if still studying) and pay the non-refundable application fee online",
+              "Select the online entrance-test date and the venue for the in-person skill assessment, micro presentation and personal interview",
+              "Attend the selection process on the date on the e-admit card, issued 2-3 days beforehand; results are published on the portal",
+              "If selected, pay the first-year fee within seven days of the result and complete admission in person with original documents"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marks statements",
+                "Undergraduate marks cards (semester, year or consolidated)",
+                "Provisional or degree certificate, Transfer Certificate and Migration Certificate",
+                "Evidence of English-medium study, or IELTS / TOEFL score report"
+              ],
+              "application": [
+                "Copy of a valid passport, with the PIO or OCI card where applicable",
+                "Medical Fitness Certificate from a recognised medical practitioner",
+                "Resident Permit, if already held when applying",
+                "Recent photograph, 3.5 x 4.5 cm, formal dress on a white background",
+                "Payment acknowledgment for the non-refundable application fee"
+              ]
+            },
+            "deadlinesNote": "CHRIST lists applications for this programme as opening on 8 December 2026 for the next cycle; the 2026-intake window closed on 23 August 2026.",
+            "visaConsiderations": [
+              "Employment and business activity are not permitted on an Indian student visa, so tuition cannot be part-funded from work in India",
+              "CHRIST requires international students to register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru",
+              "Passport and visa details are verified at admission, together with a Medical Fitness Certificate from a recognised medical practitioner"
+            ]
+          },
+          "medium": "English",
+          "mediumNote": null,
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Per-year fee for international applicants: Other Foreign Nationals USD 5,000 in each of years 1 and 2; SAARC / Africa / PIO / OCI / ASEAN USD 4,400 in each year. Year 1 is due within seven days of the selection result and year 2 by 15 March of the following year. CHRIST states the fee may see a periodic nominal increase. Admission registration fee USD 100, non-refundable. Hostel (USD 600-1,000 a year) and living costs are extra.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year MA, four semesters",
+              "language": "English",
+              "details": "Media and communication programme with specialisation areas CHRIST lists as design thinking and content strategy, and advertising and corporate communication."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Bachelor of Technology (BTech) Computer Science and Engineering: a pass at the +2 level with Physics, Mathematics and one of 14 listed subjects (such as Chemistry, Computer Science, Electronics, Information Technology or Biology), with 50 per cent aggregate in those three, and 50 per cent in Mathematics; international curricula follow AIU stipulations (IB 3 HL + 3 SL with 24 credits; GCE/Edexcel at least 3 A levels at grade C or above).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Computer Science and Engineering, Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=81, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's full-time intensive English course (March-May) or part-time one-semester course (June-December).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Computer Science and Engineering, International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "International Category tab content loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=56). IELC fee USD 400 from the Office of International Affairs 'Apply to CHRIST' page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "CHRIST lists BTech (Computer Science and Engineering) among Bangalore Kengeri Campus UG programmes selected by Entrance Test (online, 90 minutes), Skill Assessment, Micro Presentation and Personal Interview, with SA_MP_PI held in person at the venue chosen in the application.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus UG Entrance Test programmes 2026 (selection process PDF)",
+      "sourceUrl": "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BKC%20UG%20ET%20PROGRAMMES%202026%20NEW-III.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "CHRIST's Kengeri campus inauguration schedule for academic year 2026-2027 lists the School of Engineering and Technology B.Tech inauguration on 8 June; the programme listing shows the 2026 window closing 23 August 2026 and the next cycle opening 8 December 2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus inauguration of academic year 2026-2027",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomeugpg-2026-bkc",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Welcome letter PDF at https://christuniversity.in/uploads/admission/CHRIST%20BKC%20-%20Admission%20Welcome%20Letter%202026-27%20NEW_20260512034319.pdf (image; read visually). Open-from/open-until dates from the course listing API https://christuniversity.in/php/ajax/ajax_course.php (type=UGP)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "CHRIST's Fee Structure - 2026 for Bachelor of Technology (BTech) Computer Science and Engineering lists Other Foreign Nationals at USD 5700, 5700, 6200 and 6200 for years 1-4 and SAARC / Africa / PIO / OCI / ASEAN at USD 5100, 5100, 5600 and 5600, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Computer Science and Engineering, Fee Structure - 2026 tab",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=81, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-computer-science-engineering",
+      "publicField": "recognition",
+      "claimText": "NBA's Tier I (Washington Accord) UG register lists Computer Science and Engineering under 'Christ Deemed to be University, Kengeri Campus (Bangalore Urban)' with an accreditation period up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - accredited programme registers",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "From the batch supervisor's regulator verdict file (checked 2026-09-21)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Bachelor of Technology (BTech) Mechanical Engineering: a pass at the +2 level with Physics, Chemistry and Mathematics, with 50 per cent aggregate in those three, and 50 per cent in Mathematics; international curricula follow AIU stipulations (IB 3 HL + 3 SL with 24 credits; GCE/Edexcel at least 3 A levels at grade C or above).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Mechanical Engineering, Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/NzM=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=73, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's full-time intensive English course (March-May) or part-time one-semester course (June-December).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Mechanical Engineering, International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/NzM=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "International Category tab content loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=56). IELC fee USD 400 from the Office of International Affairs 'Apply to CHRIST' page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "CHRIST lists BTech (Mechanical Engineering) among Bangalore Kengeri Campus UG programmes selected by Entrance Test (online, 90 minutes), Skill Assessment, Micro Presentation and Personal Interview, with SA_MP_PI held in person at the venue chosen in the application.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus UG Entrance Test programmes 2026 (selection process PDF)",
+      "sourceUrl": "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BKC%20UG%20ET%20PROGRAMMES%202026%20NEW-III.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "CHRIST's Kengeri campus inauguration schedule for academic year 2026-2027 lists the School of Engineering and Technology B.Tech inauguration on 8 June; the programme listing shows the 2026 window closing 23 August 2026 and the next cycle opening 8 December 2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus inauguration of academic year 2026-2027",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomeugpg-2026-bkc",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Welcome letter PDF at https://christuniversity.in/uploads/admission/CHRIST%20BKC%20-%20Admission%20Welcome%20Letter%202026-27%20NEW_20260512034319.pdf (image; read visually). Open-from/open-until dates from the course listing API https://christuniversity.in/php/ajax/ajax_course.php (type=UGP)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "CHRIST's Fee Structure - 2026 for Bachelor of Technology (BTech) Mechanical Engineering lists Other Foreign Nationals at USD 5200, 5200, 5700 and 5700 for years 1-4 and SAARC / Africa / PIO / OCI / ASEAN at USD 4500, 4500, 5000 and 5000, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Mechanical Engineering, Fee Structure - 2026 tab",
+      "sourceUrl": "https://christuniversity.in/courses/NzM=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=73, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-mechanical-engineering",
+      "publicField": "recognition",
+      "claimText": "NBA's Tier I (Washington Accord) UG register lists Mechanical Engineering under 'Christ Deemed to be University, Kengeri Campus (Bangalore Urban)' with an accreditation period up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - accredited programme registers",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "From the batch supervisor's regulator verdict file (checked 2026-09-21)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Bachelor of Technology (BTech) Electrical and Electronics Engineering: a pass at the +2 level with Physics, Mathematics and one of 14 listed subjects (such as Chemistry, Computer Science, Electronics or Information Technology), with 50 per cent aggregate in those three, and 50 per cent in Mathematics; international curricula follow AIU stipulations (IB 3 HL + 3 SL with 24 credits; GCE/Edexcel at least 3 A levels at grade C or above).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Electrical and Electronics Engineering, Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/NTk=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=59, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's full-time intensive English course (March-May) or part-time one-semester course (June-December).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Electrical and Electronics Engineering, International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/NTk=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "International Category tab content loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=56). IELC fee USD 400 from the Office of International Affairs 'Apply to CHRIST' page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "CHRIST lists BTech (Electrical and Electronics Engineering) among Bangalore Kengeri Campus UG programmes selected by Entrance Test (online, 90 minutes), Skill Assessment, Micro Presentation and Personal Interview, with SA_MP_PI held in person at the venue chosen in the application.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus UG Entrance Test programmes 2026 (selection process PDF)",
+      "sourceUrl": "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BKC%20UG%20ET%20PROGRAMMES%202026%20NEW-III.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "CHRIST's Kengeri campus inauguration schedule for academic year 2026-2027 lists the School of Engineering and Technology B.Tech inauguration on 8 June; the programme listing shows the 2026 window closing 23 August 2026 and the next cycle opening 8 December 2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus inauguration of academic year 2026-2027",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomeugpg-2026-bkc",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Welcome letter PDF at https://christuniversity.in/uploads/admission/CHRIST%20BKC%20-%20Admission%20Welcome%20Letter%202026-27%20NEW_20260512034319.pdf (image; read visually). Open-from/open-until dates from the course listing API https://christuniversity.in/php/ajax/ajax_course.php (type=UGP)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "CHRIST's Fee Structure - 2026 for Bachelor of Technology (BTech) Electrical and Electronics Engineering lists Other Foreign Nationals at USD 5200, 5200, 5700 and 5700 for years 1-4 and SAARC / Africa / PIO / OCI / ASEAN at USD 4500, 4500, 5000 and 5000, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bachelor of Technology (BTech) Electrical and Electronics Engineering, Fee Structure - 2026 tab",
+      "sourceUrl": "https://christuniversity.in/courses/NTk=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=59, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-btech-electrical-electronics-engineering",
+      "publicField": "recognition",
+      "claimText": "NBA's Tier I (Washington Accord) UG register lists Electrical and Electronics Engineering under 'Christ Deemed to be University, Kengeri Campus (Bangalore Urban)' with an accreditation period up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - accredited programme registers",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "From the batch supervisor's regulator verdict file (checked 2026-09-21)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Master of Business Administration (MBA): An undergraduate degree with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU, plus a qualifying score in MAT, CAT, CMAT, XAT, ATMA, GMAT or GRE taken in 2026 or 2027.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Business Administration (MBA), Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/MzM0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=334, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's intensive or one-semester English course.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Business Administration (MBA), International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/MzM0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=12)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "admissions",
+      "claimText": "CHRIST's MBA Selection Process 2027 comprises Group Discussion (25 minutes per group), Micro Presentation (90 seconds), Written Assessment and Personal Interview, held in person at Bengaluru Central, Bannerghatta Road and Kengeri, Delhi NCR and Pune; the entrance-test minimum score is an eligibility criterion only and has no bearing on selection.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - MBA Selection Process 2027 (programme page tab)",
+      "sourceUrl": "https://christuniversity.in/courses/MzM0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "intake",
+      "claimText": "CHRIST's postgraduate inauguration schedule for academic year 2026-27 lists the MBA (School of Business and Management) inauguration on 25 May 2026, followed by orientation and commencement of teaching.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Inauguration of academic year 2026-27, postgraduate programmes",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomepg-2026",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "PG welcome PDF: https://christuniversity.in/uploads/admission/Welcome%202026%20-%20PG%20New_20260603094136.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "fee",
+      "claimText": "CHRIST's published fee for Master of Business Administration (MBA) lists Other Foreign Nationals at USD 8000 and SAARC / Africa / PIO / OCI / ASEAN at USD 7800 for each of the two years, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Business Administration (MBA), Fee Structure tab",
+      "sourceUrl": "https://christuniversity.in/courses/MzM0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=334, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "intake",
+      "claimText": "CHRIST's MBA Important Dates 2027 (Session I) list applications from 5 September 2026, the last day to apply as 24 January 2027 at 17:00, Group Discussion and Micro Presentation on 31 January 2027, Written Assessment and Personal Interview from 31 January to 2 February 2027 and the final selection list on 6 February 2027.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - MBA Important Dates 2027 (programme page tab)",
+      "sourceUrl": "https://christuniversity.in/courses/MzM0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=106, courseid=334). Venues for GD/WA/PI: Bengaluru Central, BGR, Kengeri, Delhi NCR, Pune and Kolkata."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-mba",
+      "publicField": "eligibility",
+      "claimText": "MBA 2027 eligibility: undergraduate degree with 50 per cent aggregate from a university in India or abroad recognised by UGC/AIU; minimum scores MAT 600, CAT/XAT/CMAT/ATMA 60 percentile, GMAT 450, GRE 295, accepted from tests held in 2026 and 2027.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - MBA Eligibility-2027 tab",
+      "sourceUrl": "https://christuniversity.in/courses/MzM0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The MBA NBA accreditation period (Main Campus, Kengeri, Executive) ended 30-06-2026 per the supervisor's verdict file; no NBA claim is made for this programme."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Master of Science (Data Science): An undergraduate degree with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU, in BE/BTech, BSc with Statistics, Mathematics or Computer Science, BSc Data Science/Analytics, BCA, or BA/BCom/BBA with a quantitative subject.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Science (Data Science), Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/NDQ0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=444, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-data-science",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's intensive or one-semester English course.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Science (Data Science), International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/NDQ0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=12)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-data-science",
+      "publicField": "admissions",
+      "claimText": "CHRIST lists MSc (Data Science) at the Bangalore Central Campus among PG programmes selected by Skill Assessment, Micro Presentation and Personal Interview without an entrance test, held in person at the venue selected in the application.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Central Campus PG non-entrance-test programmes 2026 (selection process PDF)",
+      "sourceUrl": "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BCC%20PG%20NONET%20PROGRAMMES%202026%20NEW-III(4).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-data-science",
+      "publicField": "intake",
+      "claimText": "CHRIST's postgraduate inauguration schedule for academic year 2026-27 lists MSc (Data Science) with MCA, MSc Statistics and MSc AI/ML on 25 May 2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Inauguration of academic year 2026-27, postgraduate programmes",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomepg-2026",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "PG welcome PDF: https://christuniversity.in/uploads/admission/Welcome%202026%20-%20PG%20New_20260603094136.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-data-science",
+      "publicField": "fee",
+      "claimText": "CHRIST's published fee for Master of Science (Data Science) lists Other Foreign Nationals at USD 5400 and SAARC / Africa / PIO / OCI / ASEAN at USD 4800 for each of the two years, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Science (Data Science), Fee Structure tab",
+      "sourceUrl": "https://christuniversity.in/courses/NDQ0",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=444, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-clinical-psychology",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Master of Science Clinical Psychology: A bachelor's degree with psychology as a core paper in all years, with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Science Clinical Psychology, Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/MTcy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=172, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-clinical-psychology",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's intensive or one-semester English course.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Science Clinical Psychology, International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/MTcy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=12)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-clinical-psychology",
+      "publicField": "admissions",
+      "claimText": "CHRIST lists MSc (Clinical Psychology) at the Bangalore Central Campus among PG programmes selected by an online Entrance Test followed by in-person Skill Assessment, Micro Presentation and Personal Interview.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Central Campus PG entrance-test programmes 2026 (selection process PDF)",
+      "sourceUrl": "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BCC%20PG%20ET%20PROGRAMMES%202026%20NEW-III.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-clinical-psychology",
+      "publicField": "intake",
+      "claimText": "CHRIST's postgraduate inauguration schedule for academic year 2026-27 lists the School of Psychological Sciences, Education and Social Work among programmes inaugurated on 11 June 2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Inauguration of academic year 2026-27, postgraduate programmes",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomepg-2026",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "PG welcome PDF: https://christuniversity.in/uploads/admission/Welcome%202026%20-%20PG%20New_20260603094136.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-msc-clinical-psychology",
+      "publicField": "fee",
+      "claimText": "CHRIST's published fee for Master of Science Clinical Psychology lists Other Foreign Nationals at USD 5200 and SAARC / Africa / PIO / OCI / ASEAN at USD 4600 for each of the two years, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Science Clinical Psychology, Fee Structure tab",
+      "sourceUrl": "https://christuniversity.in/courses/MTcy",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=172, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-ma-media-communication-studies",
+      "publicField": "eligibility",
+      "claimText": "CHRIST's eligibility for Master of Arts Media and Communication Studies: An undergraduate degree in any discipline with at least 50 per cent aggregate from a university in India or abroad recognised by UGC / AIU.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Arts Media and Communication Studies, Eligibility tab",
+      "sourceUrl": "https://christuniversity.in/courses/MTQ1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Text read from CHRIST's eligibility pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=145, type=Eligibility), also rendered on the programme page's 'Eligibility' tab."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-ma-media-communication-studies",
+      "publicField": "eligibility",
+      "claimText": "International Student category applicants from non-English-speaking countries must show an English-medium qualifying examination or IELTS 6.0 with no sub-score below 5.5, or TOEFL 550 (paper), 213 (computer) or 79 (iBT); otherwise they enrol in CHRIST's intensive or one-semester English course.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Arts Media and Communication Studies, International Category tab",
+      "sourceUrl": "https://christuniversity.in/courses/MTQ1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Loaded via POST https://christuniversity.in/php/ajax/get_common_content.php (link_id=12)."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-ma-media-communication-studies",
+      "publicField": "admissions",
+      "claimText": "CHRIST lists MA (Media and Communication Studies) at the Bangalore Central Campus among PG programmes selected by an online Entrance Test followed by in-person Skill Assessment, Micro Presentation and Personal Interview.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Central Campus PG entrance-test programmes 2026 (selection process PDF)",
+      "sourceUrl": "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BCC%20PG%20ET%20PROGRAMMES%202026%20NEW-III.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-ma-media-communication-studies",
+      "publicField": "intake",
+      "claimText": "CHRIST's postgraduate inauguration schedule for academic year 2026-27 lists all postgraduate programmes not otherwise named, including the School of Humanities and Performing Arts and School of Social Sciences, on 11 June 2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Inauguration of academic year 2026-27, postgraduate programmes",
+      "sourceUrl": "https://christuniversity.in/admission/view-pdf/welcomepg-2026",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "PG welcome PDF: https://christuniversity.in/uploads/admission/Welcome%202026%20-%20PG%20New_20260603094136.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "christ-university",
+      "programmeSlug": "christ-ma-media-communication-studies",
+      "publicField": "fee",
+      "claimText": "CHRIST's published fee for Master of Arts Media and Communication Studies lists Other Foreign Nationals at USD 5000 and SAARC / Africa / PIO / OCI / ASEAN at USD 4400 for each of the two years, plus a non-refundable admission registration fee of USD 100 for foreign nationals, PIO and OCI.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Master of Arts Media and Communication Studies, Fee Structure tab",
+      "sourceUrl": "https://christuniversity.in/courses/MTQ1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Table read from CHRIST's own fee pop-up (POST https://christuniversity.in/php/ajax/ajax_admissionPopup.php, course_id=145, type=Fees), the same content shown under the programme page's 'Fee Structure' tab."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "identity",
+      "claimText": "CHRIST was established as Christ College in 1969; the Ministry of Human Resource Development declared it a Deemed to be University under Section 3 of the UGC Act, 1956 on 22 July 2008. It is administered by the Carmelites of Mary Immaculate (CMI).",
+      "status": "verified",
+      "sourceLabel": "CHRIST - History and Milestones",
+      "sourceUrl": "https://christuniversity.in/history",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "identity",
+      "claimText": "UGC's consolidated list of institutions declared Deemed to be Universities (as on 30 November 2021) lists under Karnataka 'Christ, Hosur Road, Bangalore - 560029' at serial 30.",
+      "status": "verified",
+      "sourceLabel": "UGC - Consolidated list of Deemed to be Universities (as on 30 November 2021)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Government listing; AISHE code U-0217 per the supervisor's verdict file. Supervisor re-check 2026-09-21: the UGC consolidated list (as on 30.11.2021) lists the institution under Karnataka at serial 30 but prints no declaration date against it; the 22 July 2008 date rests on the institution's own history page (evidence 56)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "summary",
+      "claimText": "CHRIST reports about 40,000+ students, programmes in humanities, social sciences, sciences, commerce, management, engineering, architecture, education and law, four campus locations in Bangalore plus Lavasa (Pune) and Ghaziabad (Delhi NCR), and students from around 60 countries.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - History and Milestones",
+      "sourceUrl": "https://christuniversity.in/history",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NAAC Cycle 2: CHRIST (Deemed to be University), Bengaluru, Karnataka - CGPA 3.42, grade A+, declared by the 128th Standing Committee on 26 October 2022.",
+      "status": "verified",
+      "sourceLabel": "NAAC - Accreditation Status and Standing Committee results",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Supervisor verdict: 128SC_Cycle2.pdf. CHRIST's own site counts earlier college cycles (1998, 2004/05, 2016, 2022); badge uses NAAC's Cycle 2 wording. No expiry claimed."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC lists CHRIST, Hosur Road, Bangalore, as a Deemed to be University (serial 30, Karnataka) on its consolidated list as on 30 November 2021.",
+      "status": "verified",
+      "sourceLabel": "UGC - Consolidated list of Deemed to be Universities",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Deemed%20University/Deemed-University-Consolidated-Deemed-Universities-List_30_11_21.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Supervisor re-check 2026-09-21: the UGC consolidated list (as on 30.11.2021) lists the institution under Karnataka at serial 30 but prints no declaration date against it; the 22 July 2008 date rests on the institution's own history page (evidence 56)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NBA Tier I (Washington Accord) UG register, 'Christ Deemed to be University, Kengeri Campus (Bangalore Urban)': Information Technology, Mechanical, Civil, Computer Science and Engineering, Electronics and Communication, Automobile, and Electrical and Electronics Engineering accredited up to 30-06-2027.",
+      "status": "verified",
+      "sourceLabel": "National Board of Accreditation - accredited programme registers",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Supervisor verdict file. MBA (Main and Kengeri) and MBA (Executive) period ended 30-06-2026 - LAPSED; not badged."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF 2025 University category: CHRIST rank 63 (score 50.92). Other 2025 ranks: Overall 96, Management 57, Engineering 76, Law 24, Architecture 34.",
+      "status": "verified",
+      "sourceLabel": "NIRF 2025 - University category ranking",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Supervisor verdict file; IoE not listed."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "whyChoose",
+      "claimText": "NIRF 2025 ranks CHRIST 57 in Management and 76 in Engineering.",
+      "status": "verified",
+      "sourceLabel": "NIRF 2025 - Management and Engineering rankings",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/ManagementRanking.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Engineering table: https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The Kengeri campus is 78.5 acres, about 25 km from the Central Campus on Mysore Road, and houses the Faculty of Engineering (started 14 September 2009) and the School of Business and Management.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Kengeri Campus",
+      "sourceUrl": "https://christuniversity.in/bangalore-kengeri-campus",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "campusLifestyle",
+      "claimText": "CHRIST's milestones record the inauguration of the main auditorium with seating for about 2,000 in 2006 and Jonas Hall women's hostel on the Main Campus in 2008.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - History and Milestones",
+      "sourceUrl": "https://christuniversity.in/history",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "campusLifestyle",
+      "claimText": "All admitted students must open an account at the South Indian Bank CHRIST branch; the smart ID card works as ID, ATM and access card, and campus transactions including fees go through it.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - B.Tech CSE Admission Process 2026 tab",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Admission Process tab via get_common_content.php link_id=70."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "hostelOverview",
+      "claimText": "CHRIST states hostel room costs vary from USD 600 to 1,000 a year depending on room type, seats are limited, and living costs are estimated at up to USD 3,000-4,000 a year.",
+      "status": "verified",
+      "sourceLabel": "CHRIST Office of International Affairs - Fees, accommodation and lifestyle cost",
+      "sourceUrl": "https://christuniversity.in/center/C/IS/fees-and-cost",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "hostelOverview",
+      "claimText": "Mess facility is not available in the residence halls; students use the campus cafeteria and eateries. Hostel admission is for one year only, with readmission based on performance, discipline and participation.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Hostel and Dining",
+      "sourceUrl": "https://christuniversity.in/hostel/main-campus/hostel-and-dining",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "dietarySupport",
+      "claimText": "Mess facility is not available in CHRIST residence halls; students can use the cafeteria and eateries on campus.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Hostel and Dining",
+      "sourceUrl": "https://christuniversity.in/hostel/main-campus/hostel-and-dining",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "safetyOverview",
+      "claimText": "CHRIST Bangalore states it meets UGC guidelines on safety of students and the Karnataka Public Safety (Measures) Enforcement Act No. 44/2017, has CCTV across the campus, trained security staff and a security control room at 080 4012 9485.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Safety and Security of Students on Campus (PDF)",
+      "sourceUrl": "https://christuniversity.in/view-pdf/safety-and-security-of-students-on-campus",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "PDF: https://christuniversity.in/uploads/cmsmenu/Safety%20and%20Security_20230706041955.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "safetyOverview",
+      "claimText": "CHRIST publishes anti-ragging committees and squads for each Bengaluru campus and its Delhi NCR and Pune Lavasa off-campuses, alongside the UGC anti-ragging regulation.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Anti Ragging Cell",
+      "sourceUrl": "https://christuniversity.in/anti-ragging-cell",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "studentSupport",
+      "claimText": "CHRIST states it arranges airport pickup and on-campus accommodation through the Office of International Relations, runs orientation, recommends arriving seven days before classes and requires comprehensive medical insurance from the home country.",
+      "status": "verified",
+      "sourceLabel": "CHRIST Office of International Affairs - Prepare to Arrive",
+      "sourceUrl": "https://christuniversity.in/center/C/IS/prepare-to-arrive1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "studentSupport",
+      "claimText": "International admission queries: isc.admission@christuniversity.in, +91 80 4012 9176 / 9439; Office at Audi Block, Ground Floor, Central Campus; Kengeri campus international affairs at christ-kengeri-ia@christuniversity.in.",
+      "status": "verified",
+      "sourceLabel": "CHRIST Office of International Affairs - Contact Us",
+      "sourceUrl": "https://christuniversity.in/center/C/IS/contact-us",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "studentSupport",
+      "claimText": "The International Office assists international students with registration at the local Foreigners Regional Registration Office and arranges reception and accommodation for new students.",
+      "status": "verified",
+      "sourceLabel": "CHRIST Office of International Affairs - International Profile",
+      "sourceUrl": "https://christuniversity.in/center/C/IS/international-profile-center",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Undated profile page; the '600 foreign students from 55 countries' figure on it is not used because it is undated."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "cityProfile",
+      "claimText": "CHRIST's Bangalore guide describes Bengaluru as Karnataka's capital on the Deccan Plateau, a post-independence centre of public-sector aerospace, telecommunications and defence industry and of India's software-services sector.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Guide",
+      "sourceUrl": "https://christuniversity.in/bangalore-guide",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "cityProfile",
+      "claimText": "The Central Campus is on Hosur Road near Dairy Circle, Bengaluru 560029; the Kengeri campus is at Kanmanike, Kumbalgodu, Mysore Road, Bengaluru 560074.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Bangalore Central Campus",
+      "sourceUrl": "https://christuniversity.in/bangalore-central-campus",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Kengeri address: https://christuniversity.in/bangalore-kengeri-campus"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "practicalExposure",
+      "claimText": "The B.Tech CSE department lists partnerships with CISCO, Samsung, AWS, CDAC, Tech Mahindra, Red Hat and Oracle, paid internships from the second year and a semester-long internship in the final year.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - B.Tech Computer Science and Engineering programme page",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "practicalExposure",
+      "claimText": "CHRIST lists MBA dual-degree programmes with THWS Germany, Western Michigan University and Virginia Commonwealth University (USA), an MSc Data Analytics and AI dual degree with Steinbeis University, Germany, and an Indo-German first-year B.Tech credit transfer with THWS.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - programme listing (course API)",
+      "sourceUrl": "https://christuniversity.in/our-programmes/All/1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Listing rows loaded via POST https://christuniversity.in/php/ajax/ajax_course.php (type=UGP/PGP, campus=1)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "practicalExposure",
+      "claimText": "CHRIST states it hosts short-term US students for the University Study Abroad Consortium (USAC), launched on campus in 2007.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - History and Milestones",
+      "sourceUrl": "https://christuniversity.in/history",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "admissionsContent",
+      "claimText": "Foreign citizens, PIO card holders and OCI card holders must apply in the International Student category; its fee structure is binding for the full programme; category applicants with Indian qualifications applying under Indian categories pay the International Student fee.",
+      "status": "verified",
+      "sourceLabel": "CHRIST Office of International Affairs - Admissions",
+      "sourceUrl": "https://christuniversity.in/center/C/IS/admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "admissionsContent",
+      "claimText": "English requirement: English-medium qualifying exam, or TOEFL 550 (paper) / 213 (online) or IELTS 6.0; otherwise the 3-month Intensive English Language Course (March-May, 320+ hours, USD 400).",
+      "status": "verified",
+      "sourceLabel": "CHRIST Office of International Affairs - Apply to CHRIST",
+      "sourceUrl": "https://christuniversity.in/center/C/IS/apply-tochrist",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "admissionsContent",
+      "claimText": "For the 2026 NRI/International selection process, applications opened 30 October 2025 (Selection Process I) and 3 December 2025 (II); the entrance test was online and SA_MP_PI was held on stated dates in Bahrain, Dubai, Qatar, Kuwait, Oman and Saudi Arabia.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Important dates for NRI selection process 2026",
+      "sourceUrl": "https://christuniversity.in/admission/nri-selection-process-dates-2026",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Venue graphic: https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BCC/NRI%20Selection%20Process.jpg (New Horizon School Bahrain, Rajagiri Public School Doha, Pioneer Institute Muscat, Carmel School Kuwait, Springdales School Dubai; Saudi venue TBA)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "admissionsContent",
+      "claimText": "CHRIST's admissions disclaimer: allocation of students to campuses and programmes among its Bangalore, Lavasa (Pune) and Delhi NCR campuses is at the sole discretion of University Management.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Admission Process 2026 (programme page tab)",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "thingsToConsider",
+      "claimText": "International students must register with the FRRO/FRO within 14 working days of admission or arrival in Bengaluru.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - Admission Process 2026 (programme page tab)",
+      "sourceUrl": "https://christuniversity.in/courses/ODE=",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Foreigners on a student visa must not engage in any employment or business activity in India; student-visa holders must register with the FRRO within 14 days of arrival.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "christ-university",
+      "publicField": "faq",
+      "claimText": "CHRIST lists the next application window for B.Tech CSE, MSc Clinical Psychology and MA Media and Communication Studies as opening 8-Dec-2026 (2026 window closed 23-Aug-2026), and MSc Data Science's 2026 window as 8-Dec-2025 to 22-Mar-2026.",
+      "status": "verified",
+      "sourceLabel": "CHRIST - programme listing (course API)",
+      "sourceUrl": "https://christuniversity.in/our-programmes/All/1",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "From ajax_course.php desktopHtml rows (open-from / open-until columns)."
+    }
+  ]
+}

@@ -1,0 +1,1822 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "bpt",
+      "name": "Bachelor of Physiotherapy",
+      "shortName": "BPT",
+      "stream": "physiotherapy",
+      "level": "bachelors",
+      "discipline": "physiotherapy",
+      "aliases": [
+        "Bachelor of Physical Therapy",
+        "BSc Physiotherapy"
+      ],
+      "displayOrder": 0,
+      "durationYears": 5,
+      "summary": "Bachelor of Physiotherapy is the Students Traffic catalogue category for undergraduate-entry physiotherapy degrees. In India the BPT normally runs four academic years followed by a one-year clinical internship, is entered from a school-leaving qualification with physics, chemistry and biology, and covers anatomy, exercise therapy, electrotherapy and physiotherapy in musculoskeletal, neurological and cardiothoracic conditions with supervised hospital practice.",
+      "metaTitle": "BPT Bachelor of Physiotherapy Degrees: Fees and Admissions",
+      "metaDescription": "Compare BPT degrees by tuition, subject eligibility, programme length including internship, intake month and the admission route each university publishes."
+    },
+    {
+      "slug": "bachelor-occupational-therapy",
+      "name": "Bachelor's in Occupational Therapy",
+      "shortName": "Bachelor's Occupational Therapy",
+      "stream": "public-health-allied-health",
+      "level": "bachelors",
+      "discipline": "occupational-therapy",
+      "aliases": [
+        "Bachelor of Occupational Therapy",
+        "BSc Occupational Therapy"
+      ],
+      "displayOrder": 1,
+      "durationYears": 5,
+      "summary": "Bachelor's in Occupational Therapy is the Students Traffic catalogue category for undergraduate degrees that train therapists to restore daily function after injury, illness or disability. Indian BOT degrees typically combine four academic years of anatomy, physiology, psychology, biomechanics and occupational therapy practice in medical, neurological, psychiatric and paediatric conditions with a one-year compulsory rotatory internship.",
+      "metaTitle": "Bachelor's Occupational Therapy Degrees: Fees and Entry",
+      "metaDescription": "Compare Bachelor's Occupational Therapy degrees by tuition, science-subject entry rules, internship length, teaching language and each university's intake."
+    },
+    {
+      "slug": "bachelor-psychology",
+      "name": "Bachelor's in Psychology",
+      "shortName": "Bachelor's Psychology",
+      "stream": "psychology",
+      "level": "bachelors",
+      "discipline": "psychology",
+      "aliases": [
+        "BA Psychology",
+        "BSc Psychology"
+      ],
+      "displayOrder": 2,
+      "durationYears": 3,
+      "summary": "Bachelor's in Psychology is the Students Traffic catalogue category for undergraduate degrees in psychology, including applied psychology programmes. Three-year Indian B.Sc. and B.A. programmes usually cover cognitive, developmental, social, clinical and counselling psychology, research methods and statistics, with practical assessment work and observation postings, and lead to postgraduate study in clinical, counselling or organisational psychology.",
+      "metaTitle": "Bachelor's Psychology Degrees: Fees, Entry and Admissions",
+      "metaDescription": "Compare Bachelor's Psychology degrees by tuition, A Level and IB entry rules, teaching language, intake month and the admission route each university publishes."
+    },
+    {
+      "slug": "mph",
+      "name": "Master of Public Health",
+      "shortName": "MPH",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "public-health",
+      "aliases": [
+        "M.P.H.",
+        "MSc Public Health"
+      ],
+      "displayOrder": 3,
+      "durationYears": 2,
+      "summary": "Master of Public Health is the Students Traffic catalogue category for postgraduate degrees in population health. Programmes are normally open to graduates of medicine, dentistry, nursing, allied health, life sciences and several non-clinical disciplines, and teach epidemiology, biostatistics, health policy and management, environmental and occupational health and health promotion, with a field practicum and dissertation.",
+      "metaTitle": "MPH Master of Public Health: Entry, Structure and Fees",
+      "metaDescription": "Compare MPH programmes by eligible first degrees, elective streams, field practicum, teaching language, tuition and the admission route for international applicants."
+    },
+    {
+      "slug": "master-clinical-psychology",
+      "name": "Master's in Clinical Psychology",
+      "shortName": "Master's Clinical Psychology",
+      "stream": "psychology",
+      "level": "masters",
+      "discipline": "clinical-psychology",
+      "aliases": [
+        "MA Clinical Psychology",
+        "MSc Clinical Psychology"
+      ],
+      "displayOrder": 4,
+      "durationYears": 2,
+      "summary": "Master's in Clinical Psychology is the Students Traffic catalogue category for postgraduate degrees focused on psychological assessment, psychopathology and therapy. Two-year M.Sc. or M.A. programmes normally require a psychology bachelor's degree and combine theory with supervised clinical rotations and a dissertation; in some countries, including India, independent practice as a clinical psychologist needs a further regulated qualification.",
+      "metaTitle": "Master's Clinical Psychology Programmes: Fees and Entry",
+      "metaDescription": "Compare Master's Clinical Psychology programmes by entry degree and grade, clinical rotations, teaching language, tuition and each university's admission route."
+    },
+    {
+      "slug": "mba-healthcare-management",
+      "name": "MBA in Healthcare Management",
+      "shortName": "MBA Healthcare Management",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "healthcare-management",
+      "aliases": [
+        "MBA in Healthcare Administration",
+        "MBA in Hospital Management"
+      ],
+      "displayOrder": 5,
+      "durationYears": 2,
+      "summary": "MBA in Healthcare Management is the Students Traffic catalogue category for management master's degrees specialised in hospitals and health systems. Programmes combine core management subjects such as finance, marketing, HR and analytics with hospital operations, healthcare quality and accreditation, health insurance and clinical governance, and usually include hospital postings, a summer internship and a dissertation.",
+      "metaTitle": "MBA Healthcare Management: Fees, Entry and Admissions",
+      "metaDescription": "Compare MBA Healthcare Management programmes by tuition, entry degree, hospital postings, accreditation, teaching language and the admission route each school publishes."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "name": "Sri Ramachandra Institute of Higher Education and Research",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 1985,
+      "officialWebsite": "https://sriramachandra.edu/",
+      "mediaAttribution": {},
+      "summary": "Sri Ramachandra Institute of Higher Education and Research (SRIHER) is a private deemed-to-be university on a 150-acre campus at Porur, Chennai, Tamil Nadu. Its 15 constituent faculties span medicine, dentistry, pharmacy, nursing, physiotherapy, allied health, public health, psychology, management and engineering around a teaching hospital on the same campus. Foreign nationals and NRIs apply through its International Relations Office.",
+      "campusLifestyle": "The 150-acre Porur campus holds 15 constituent faculties, a teaching hospital the university reports at more than 2,500 beds, a 40,000 sq ft central library open 8 a.m. to 10 p.m. on working days, a swimming pool, playgrounds, a bank with ATMs, a post office, a railway reservation counter and multi-cuisine restaurants. Student life runs through 16 clubs including dance, debate, fitness, Rotaract, Tamil, English literature, theatre and yoga, six NSS units, and Army and Naval NCC wings. SRIHER reports an alumni network of more than 20,000 graduates.",
+      "cityProfile": "SRIHER is at Porur in western Chennai, the capital of Tamil Nadu on India's south-east coast, with the postal address Porur, Chennai 600 116. The campus works as a self-contained township with colleges, staff quarters, a medical centre, the university hospital, retail stores and a travel service, so most day-to-day needs are met on site. Foreign nationals complete Foreigners Regional Registration Office formalities in Chennai after admission, with the university filing the residence and student registrations. First-year teaching starts in July: for 2026-27 entrants, undergraduate classes were scheduled to begin around the second week of July and postgraduate classes around the third week, with exact dates emailed to admitted students in advance.",
+      "practicalExposure": "Clinical and field training is built around Sri Ramachandra Hospital, a tertiary care and referral centre inside the campus that the university reports sees an average of 5,000 out-patients a day. The Bachelor of Physiotherapy is offered under the NCAHP allied and healthcare professions framework, with fourth-year clinical rotations and a one-year internship across musculoskeletal, neurological, cardiology and ICU, pulmonology, sports, obstetric, paediatric, oncology and burns physiotherapy. The Bachelor of Occupational Therapy includes supervised clinical training or field work in every academic year before a one-year compulsory rotatory internship. The M.Sc. Clinical Psychology includes two clinical rotations, psychological assessment practicals and a dissertation. The Master of Public Health is run by the Faculty of Public Health, whose Department of Environmental Health Engineering has been a WHO Collaborating Centre for occupational health since 2007 and started the MPH in collaboration with the University of California, Berkeley; students add a field practicum, a dissertation and an internship. The MBA in Hospital and Health Systems Management includes two hands-on hospital postings, a summer internship and a dissertation. SRIHER's placement cell reports about 700 offers through 230 campus processes in its latest cycle, with packages from INR 2.2 lakh to INR 72 lakh a year.",
+      "hostelOverview": "International students live in separate hostels for men and women inside the campus, with wardens assigned to international residents. For 2026-27 the published international hostel rates are USD 1,700 a year for an air-conditioned single room with common bath (USD 750 one-time caution deposit), USD 900 for an air-conditioned twin share or a non-air-conditioned single (USD 375 deposit each) and USD 450 for a non-air-conditioned twin share (USD 300 deposit). Fees are paid at admission and then annually, and rooms are allotted subject to availability. Hostel entry and exit are logged by biometric readers, entrances are under CCTV, and hostel gates close at 9 p.m.",
+      "dietarySupport": "Mess and canteen dining is provided inside the hostel complexes, and students pay the mess directly before hostel admission at the rate SRIHER notifies each year; this is not included in the hostel fee. Meals are served only in the mess, with no room service, and night cafeterias in the hostels sell snacks, coffee and tea between 9 p.m. and 1 a.m. Carbonated beverages and junk food are banned on university premises under a Government of India higher-education directive.",
+      "safetyOverview": "SRIHER applies the UGC, medical, dental and AICTE anti-ragging regulations and the Tamil Nadu Prohibition of Ragging Act 1997, and reported no ragging incidents in the current year. Health insurance is mandatory for foreign students at USD 50 a year, and the campus hospital runs a 24-hour emergency service with an ambulance, treating students at concessional charges.",
+      "studentSupport": "The International Relations Office handles foreign-national and NRI admissions, pre-arrival guidance, FRRO registration, Bonafide Certificates and APAAR IDs for students without Aadhaar. Three student counsellors offer free, confidential sessions on the third floor of the IQAC wing, every student is assigned a faculty mentor, and an international student orientation is held on arrival.",
+      "whyChoose": [
+        "Foreign nationals are exempt from SRIHER's own undergraduate and postgraduate entrance examinations for university-regulated programmes and are admitted on first-cum-first-served merit from their qualifying results, with a possible online interview.",
+        "The 2026-27 international prospectuses publish a total programme fee in US dollars for each listed degree, payable in two to four instalments, so the full tuition commitment is known before applying.",
+        "Health-sciences programmes train in Sri Ramachandra Hospital on the same campus, a tertiary referral centre that the university reports at more than 2,500 beds.",
+        "The MBA in Hospital and Health Systems Management is accredited by the National Board of Accreditation to 30 June 2027, and the B.Pharm at the Faculty of Pharmacy to 30 June 2028.",
+        "The MPH is taught by a faculty whose environmental health department is a WHO Collaborating Centre for occupational and environmental health, with a climate change and human health stream among its four electives.",
+        "SRIHER placed 21st among medical and 13th among dental institutions in the Ministry of Education's NIRF 2025 rankings."
+      ],
+      "thingsToConsider": [
+        "Foreign nationals, including OCI cardholders, must apply only in the Foreign National category; applications filed under the general or NRI category are not considered.",
+        "MBBS and BDS are excluded from the 2026-27 foreign-national undergraduate prospectus and B.Pharm is not on its programme list, so these degrees have no published foreign-national route this cycle.",
+        "Allied-health programmes regulated by NCAHP can require NEET: the BPT page states foreign nationals must appear in NEET and obtain an equivalence certificate from the State Allied and Healthcare Council.",
+        "Foreign school and degree qualifications need an equivalence certificate from the UGC equivalence portal, and graded results must be converted to percentages on an official conversion sheet.",
+        "Deadlines sit close to the July start - 30 June 2026 for foreign-national undergraduate and 10 July 2026 for postgraduate applications - and foreign nationals needing a visa are admitted only with a valid student visa.",
+        "Fees paid are not refunded, and a student who discontinues after the admission cut-off date must pay tuition for the entire remaining programme period before certificates are released."
+      ],
+      "bestFitFor": [
+        "International applicants who want an English-taught physiotherapy or occupational therapy degree with hospital-based clinical training and a built-in internship year.",
+        "Graduates in medicine, allied health, life sciences, engineering or the social sciences seeking a two-year MPH with an occupational, environmental, nutrition or climate-and-health focus.",
+        "Psychology graduates who want a two-year M.Sc. Clinical Psychology with supervised clinical rotations inside a hospital-based university.",
+        "NRI applicants aiming for hospital administration roles through an NBA-accredited MBA in Hospital and Health Systems Management."
+      ],
+      "industryPartners": [
+        "Bentley University, USA",
+        "ACCA, UK",
+        "Institute of Cost Accountants of India (ICMAI)",
+        "XLRI",
+        "Zoho"
+      ],
+      "recognitionBadges": [
+        "NAAC — Accredited A++, CGPA 3.53, Cycle 3 (declared January 2021)",
+        "NBA — B.Pharm at Sri Ramachandra Faculty of Pharmacy accredited to 30 June 2028",
+        "NBA — MBA (Hospital & Health Management) at Sri Ramachandra Faculty of Management Sciences accredited to 30 June 2027",
+        "NIRF 2025 — 21st in the Medical category (Ministry of Education)",
+        "NIRF 2025 — 13th in the Dental category (Ministry of Education)",
+        "NIRF 2025 — 36th in the Pharmacy category (Ministry of Education)",
+        "NIRF 2025 — 60th in the University category (Ministry of Education)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NAAC accreditation status register - A++, CGPA 3.53, Cycle 3 declared January 2021",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status"
+        },
+        {
+          "label": "National Board of Accreditation register - Faculty of Pharmacy B.Pharm and Faculty of Management Sciences MBA",
+          "url": "https://www.nbaind.org/accreditationprogram"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Medical category",
+          "url": "https://www.nirfindia.org/Rankings/2025/MedicalRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Dental category",
+          "url": "https://www.nirfindia.org/Rankings/2025/DentalRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Pharmacy category",
+          "url": "https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Sri Ramachandra Institute of Higher Education and Research a public or a private university?",
+          "answer": "SRIHER is a private, not-for-profit, self-financing institution. It began in 1985 as Sri Ramachandra Medical College and Research Institute, set up by the Sri Ramachandra Educational and Health Trust, was declared a Deemed to be University by the Government of India in September 1994 under Section 3 of the UGC Act, and took its current name in August 2018. It is not a state or central government university."
+        },
+        {
+          "question": "Who can apply to SRIHER as an international student?",
+          "answer": "The Foreign National category covers holders of a foreign passport, including OCI cardholders, and Nepal or Bhutan citizens holding citizenship cards. For postgraduate programmes OCI cardholders may apply only as foreign nationals. Non-Resident Indians and NRI-sponsored candidates use a separate NRI category with its own application and fee table. Applications filed in the wrong category are not considered."
+        },
+        {
+          "question": "Do international applicants sit an entrance examination?",
+          "answer": "Foreign nationals and NRIs are exempt from SRIHER's own undergraduate and postgraduate entrance examinations for programmes governed by university regulations, unless a programme specifies otherwise, and are admitted on first-cum-first-served merit; SRIHER may hold an online interview. Programmes governed by councils follow those councils' rules, and the 2026-27 application states that admission to NCAHP programmes requiring NEET cannot be confirmed without a valid NEET appearance."
+        },
+        {
+          "question": "What language are SRIHER programmes taught in, and is IELTS or TOEFL required?",
+          "answer": "SRIHER's programme regulations make English the medium of instruction and examination. The 2026-27 international prospectuses do not list an IELTS or TOEFL requirement; English is assessed through the qualifying examination instead, for example English at AS Level or five IGCSE or GCSE passes including English for A Level applicants, and English as a subject for IB applicants."
+        },
+        {
+          "question": "Can I apply with A Levels or the International Baccalaureate?",
+          "answer": "Yes, for programmes where SRIHER publishes those routes. For B.Sc. Applied Psychology, A Level applicants need three Science or three Arts subjects at A Level, five IGCSE or GCSE passes including English and an average of grade D; IB applicants need a Diploma or Certificate with three Higher Level and three Standard Level subjects, 24 points overall and at least 3 in each subject. All foreign school qualifications also need a UGC equivalence certificate."
+        },
+        {
+          "question": "How much does it cost to study at SRIHER as a foreign national?",
+          "answer": "SRIHER publishes a total programme fee in US dollars. For 2026-27 entrants examples are USD 26,500 for the five-year BPT or BOT, USD 14,000 for the three-year B.Sc. Applied Psychology, USD 7,000 for the two-year MPH and USD 9,500 for the M.Sc. Clinical Psychology. On top come a one-time USD 50 registration fee, USD 50 a year health insurance, university examination fees, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit, and mess charges."
+        },
+        {
+          "question": "How do I apply to SRIHER from abroad?",
+          "answer": "Download the category-specific 2026-27 application from the SRIHER admissions page and email it with scanned documents to admissions.international@sriramachandra.edu.in; there is no application fee in the international category. The International Relations Office and Admissions Committee check eligibility, issue an Offer of Provisional Admission, and after the first instalment is paid and final results are submitted, issue the confirmation letter used for the student visa."
+        },
+        {
+          "question": "When does the SRIHER intake start and when do applications close?",
+          "answer": "SRIHER admits international students once a year for a July start. For 2026-27 the last date for foreign-national undergraduate applications was 30 June 2026, with classes from around the second week of July, and the last date for NRI and foreign-national postgraduate applications was 10 July 2026, with classes from around the third week of July."
+        },
+        {
+          "question": "What visa and registration steps apply to international students?",
+          "answer": "Foreign nationals need an Indian student visa, not a tourist visa, and those who need a visa are admitted only once it is issued. Postgraduate foreign-national applicants must register on the Study in India portal, obtain an SII ID and apply for the visa through it. SRIHER registers each foreign student and their campus residence with the FRRO within 24 hours of admission, and students on visas longer than 180 days register with the FRRO within 14 days of arrival."
+        },
+        {
+          "question": "How is SRIHER accredited and ranked?",
+          "answer": "NAAC accredited SRIHER A++ with a CGPA of 3.53 in its third cycle, declared in January 2021. The National Board of Accreditation lists the B.Pharm at the Faculty of Pharmacy to 30 June 2028 and the MBA in Hospital and Health Management to 30 June 2027. In NIRF 2025 SRIHER ranked 21st for medical, 13th for dental, 36th for pharmacy and 60th among universities. Professional registration abroad is decided by each country's own licensing body."
+        },
+        {
+          "question": "Where do international students live, and what does accommodation cost?",
+          "answer": "Separate on-campus hostels for men and women are reserved for international students. The 2026-27 annual rates are USD 1,700 for an air-conditioned single, USD 900 for an air-conditioned twin share or non-air-conditioned single, and USD 450 for a non-air-conditioned twin share, plus a one-time caution deposit of USD 300 to USD 750. Mess charges are paid separately, and rooms are allotted subject to availability."
+        },
+        {
+          "question": "Can foreign nationals study MBBS or BDS at SRIHER?",
+          "answer": "Not through a published route in 2026-27. SRIHER's foreign-national undergraduate prospectus and application forms for 2026-27 are issued for programmes excluding medical and dental degrees, so MBBS and BDS do not appear among the programmes offered to foreign nationals this cycle. Allied-health, psychology, public-health and management degrees are the programmes with a published international route."
+        },
+        {
+          "question": "What happens to fees if I withdraw from a programme?",
+          "answer": "SRIHER states that fees paid to the university are not refunded or adjusted. A student who discontinues after the admission cut-off date, or whose seat cannot be refilled, must pay tuition and other fees for the entire remaining programme period, and certificates such as the transfer certificate and mark sheets are withheld until that payment is made."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "SRIHER Prospectus 2026-27 - Foreign Nationals Admissions (Undergraduate)",
+          "url": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "FN categories, UG programme list, total programme fees in USD, programme-wise eligibility, application steps, deadline 30/06/2026, hostel fees AY 26-27, FRRO, refund and commencement rules. Image-only PDF read page by page."
+        },
+        {
+          "label": "SRIHER Prospectus 2026-27 - Postgraduate Admissions (NRI / Foreign National)",
+          "url": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "PG programme list, programme-wise eligibility, NRI and FN fee tables, Study in India SII ID rule, deadline 10/07/2026, classes from third week of July 2026."
+        },
+        {
+          "label": "SRIHER - Undergraduate Admissions 2026-27 International Category (FN) application",
+          "url": "https://media.sriramachandra.edu/ms/storage/2026/02/FN-UG-26-27-application.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Excluding Medical & Dental; no application fee; NEET for NCAHP-mandated programmes; UGC equivalence portal."
+        },
+        {
+          "label": "SRIHER - Admissions page (2026-27 prospectuses and applications)",
+          "url": "https://sriramachandra.edu/admissions/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Hub linking the FN, NRI and PG 2026-27 prospectuses and application forms on the new sriramachandra.edu domain."
+        },
+        {
+          "label": "SRIHER - Insurance / Visa for International Students",
+          "url": "https://sriramachandra.edu/nri-about-us/insurance-visa-for-international-students/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Mandatory health insurance for foreign students, 24x7 hospital emergency, concessional treatment, student visa not tourist visa."
+        },
+        {
+          "label": "SRIHER - International Relation / Students",
+          "url": "https://sriramachandra.edu/nri-about-us/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "International Relations Office services, International Student Support Committee, separate international hostel."
+        },
+        {
+          "label": "SRIHER Student Manual 2026-27",
+          "url": "https://media.sriramachandra.edu/ms/storage/2026/07/Student-Manual-2026-27.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Hostel rules, mess, night cafeterias, CCTV and biometric entry, counselling service, placements, faculty profiles."
+        },
+        {
+          "label": "NAAC - Accreditation status register",
+          "url": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "National Board of Accreditation - accreditation programme register",
+          "url": "https://www.nbaind.org/accreditationprogram",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Medical category",
+          "url": "https://www.nirfindia.org/Rankings/2025/MedicalRanking.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "research_ready"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my SRIHER international-category eligibility",
+            "capture": [
+              "citizenship or OCI status",
+              "qualification and awarding board",
+              "NEET status for allied-health programmes",
+              "intended programme",
+              "intended intake year"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my SRIHER cost plan",
+            "capture": [
+              "intended programme",
+              "hostel room preference",
+              "budget in USD"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my SRIHER application review",
+            "capture": [
+              "document readiness",
+              "UGC equivalence certificate status",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "immigration",
+            "label": "Plan my student visa and FRRO steps",
+            "capture": [
+              "passport nationality",
+              "Study in India registration status",
+              "planned arrival date"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "sriher-chennai-bachelor-of-physiotherapy",
+          "canonicalCourseSlug": "bpt",
+          "officialTitle": "Bachelor of Physiotherapy (BPT)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 entry",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5300,
+            "officialTotalTuitionAmount": 26500,
+            "annualTuitionUsd": 5300,
+            "totalTuitionUsd": 26500,
+            "verifiedAt": "2026-09-21",
+            "notes": "SRIHER publishes USD 26,500 as the total tuition for the five-year programme for 2026-27 foreign-national entrants, payable in instalments; the USD 5,300 annual figure is that total averaged over five years. Registration, insurance, examination, hostel and mess charges are extra."
+          },
+          "officialProgramUrl": "https://sriramachandra.edu/programme/bachelor-of-physiotherapy-bpt/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a foreign passport",
+              "OCI cardholders applying as foreign nationals",
+              "Nepal and Bhutan citizens holding citizenship cards"
+            ],
+            "restrictions": [
+              "Foreign nationals, including OCI cardholders, must apply in the Foreign National category; applications filed under the general or NRI category are not considered.",
+              "Foreign school qualifications need an equivalence certificate from the UGC equivalence portal.",
+              "Admission is provisional until original certificates are verified and, where a visa is needed, a valid student visa is held.",
+              "The programme page states that foreign nationals must obtain an eligibility equivalence certificate from the State Allied and Healthcare Council and appear in NEET."
+            ],
+            "notes": "BPT is regulated under the NCAHP framework; the 2026-27 foreign-national application states admission cannot be confirmed without a valid NEET appearance where NCAHP rules require it.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A five-year Bachelor of Physiotherapy at Sri Ramachandra Faculty of Physiotherapy: four academic years with clinical education, then a one-year internship. Foreign nationals are admitted on first-cum-first-served merit from their 10+2 results, with NEET appearance required under NCAHP rules.",
+            "eligibility": {
+              "intro": "SRIHER's 2026-27 foreign-national prospectus and the BPT programme page set these requirements for international applicants.",
+              "items": [
+                "Pass in 10+2 or an equivalent examination with at least 50 per cent aggregate in Physics, Chemistry and Biology (or Botany and Zoology).",
+                "Qualifications earned abroad must be judged equivalent by the UGC and the NCAHP Equivalence Committee and meet the same subject and mark rule.",
+                "Minimum age of 17 years on or before 31 December 2026.",
+                "Foreign nationals must appear in NEET and hold an eligibility equivalence certificate from the State Allied and Healthcare Council.",
+                "A physical fitness certificate from an authorised medical attendant is required at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Download the 2026-27 Foreign National undergraduate application from the SRIHER admissions page; there is no application fee in the international category.",
+              "Email the signed form and scanned documents to the International Relations Office at admissions.international@sriramachandra.edu.in, filing one application per programme.",
+              "The Admissions Committee and International Relations Office check eligibility and documents, and may hold an online interview.",
+              "Eligible applicants receive an Offer of Provisional Admission and pay the first fee instalment by the date stated in it.",
+              "After payment and submission of final school results, SRIHER issues a Confirmation of Provisional Admission Letter.",
+              "Apply for an Indian student visa with the confirmation letter, then report on the notified date for original-document verification.",
+              "Complete FRRO registration after arrival; SRIHER files the Form II and Form III registrations within 24 hours of admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 mark statements, or O Level and A Level certificates including Advanced Level courses",
+                "UGC equivalence certificate for foreign school qualifications",
+                "NEET score or proof of NEET 2026 appearance",
+                "Grade-to-percentage conversion sheet issued by the school where results are graded"
+              ],
+              "application": [
+                "Signed Foreign National application form with photograph",
+                "Passport first and last pages",
+                "Visa, OCI card or Nepal or Bhutan citizenship card where held",
+                "Transfer, conduct and migration certificates",
+                "Proof of date of birth and four passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "For 2026-27 the last date for foreign-national undergraduate applications was 30 June 2026, with first-year classes starting around the second week of July 2026.",
+            "visaConsiderations": [
+              "Foreign nationals who need a visa are admitted only after obtaining a valid Indian student visa, not a tourist visa.",
+              "Students on a student visa longer than 180 days register with the Chennai FRRO within 14 days of arrival.",
+              "Health insurance is mandatory for foreign students and is charged at USD 50 a year."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "SRIHER's Bachelor of Physiotherapy regulations make English the medium of instruction for all subjects and for examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from around the second week of July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Total programme tuition for 2026-27 foreign-national entrants is USD 26,500 for five years, paid in instalments: the first on receipt of the provisional offer and the rest each May, in US dollars only. Add a one-time USD 50 registration fee, USD 50 a year health insurance, university examination fees as notified, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit of USD 300 to USD 750, and mess charges billed separately.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 and 2 - foundation",
+              "language": "English",
+              "details": "Anatomy, physiology, biochemistry, exercise and electrophysical modalities, then pathology, pharmacology, exercise therapy, electrotherapy and biomechanics with clinical observation."
+            },
+            {
+              "phase": "Years 3 and 4 - clinical",
+              "language": "English",
+              "details": "Physiotherapy in orthopaedic, medical, surgical, neurological and cardiothoracic conditions, sports physiotherapy, community rehabilitation and clinical rotations."
+            },
+            {
+              "phase": "Year 5 - internship",
+              "language": "English",
+              "details": "One-year internship rotating through musculoskeletal, neurological, cardiology and ICU, pulmonology, sports, obstetric, paediatric, oncology and burns physiotherapy."
+            }
+          ]
+        },
+        {
+          "slug": "sriher-chennai-bachelor-of-occupational-therapy",
+          "canonicalCourseSlug": "bachelor-occupational-therapy",
+          "officialTitle": "Bachelor of Occupational Therapy (BOT)",
+          "durationYears": 5,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 entry",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 5300,
+            "officialTotalTuitionAmount": 26500,
+            "annualTuitionUsd": 5300,
+            "totalTuitionUsd": 26500,
+            "verifiedAt": "2026-09-21",
+            "notes": "SRIHER publishes USD 26,500 as the total tuition for the five-year BOT for 2026-27 foreign-national entrants, payable in instalments; the USD 5,300 annual figure is that total averaged over five years. Registration, insurance, examination, hostel and mess charges are extra."
+          },
+          "officialProgramUrl": "https://sriramachandra.edu/programme/bachelor-of-occupational-therapy-bot/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a foreign passport",
+              "OCI cardholders applying as foreign nationals",
+              "Nepal and Bhutan citizens holding citizenship cards"
+            ],
+            "restrictions": [
+              "Foreign nationals, including OCI cardholders, must apply in the Foreign National category; applications filed under the general or NRI category are not considered.",
+              "Foreign school qualifications need an equivalence certificate from the UGC equivalence portal.",
+              "Admission is provisional until original certificates are verified and, where a visa is needed, a valid student visa is held.",
+              "BOT is regulated under the NCAHP Act; the 2026-27 foreign-national application states admission cannot be confirmed without a valid NEET appearance where NCAHP rules require it."
+            ],
+            "notes": "Candidates who studied abroad are assessed against UGC equivalence guidelines and must have passed Physics, Chemistry, Biology and English at the 12th-standard level.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A five-year Bachelor of Occupational Therapy at Sri Ramachandra Faculty of Occupational Therapy: four academic years with supervised clinical training or field work each year, then a one-year compulsory rotatory internship. Foreign nationals are admitted on merit from their 10+2 results.",
+            "eligibility": {
+              "intro": "SRIHER's 2026-27 foreign-national prospectus sets these requirements for international BOT applicants.",
+              "items": [
+                "Pass in 10+2 or equivalent with at least 50 per cent aggregate in Physics, Chemistry and Biology (Botany and Zoology).",
+                "Applicants who studied abroad must hold a qualification judged equivalent under UGC guidelines, with Physics, Chemistry, Biology and English passed at 12th-standard level.",
+                "Minimum age of 17 years as on 31 December 2026.",
+                "A physical fitness certificate from an authorised medical attendant is required at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Download the 2026-27 Foreign National undergraduate application from the SRIHER admissions page; there is no application fee in the international category.",
+              "Email the signed form and scanned documents to the International Relations Office at admissions.international@sriramachandra.edu.in, filing one application per programme.",
+              "The Admissions Committee and International Relations Office check eligibility and documents, and may hold an online interview.",
+              "Eligible applicants receive an Offer of Provisional Admission and pay the first fee instalment by the date stated in it.",
+              "After payment and submission of final school results, SRIHER issues a Confirmation of Provisional Admission Letter.",
+              "Apply for an Indian student visa with the confirmation letter, then report on the notified date for original-document verification.",
+              "Complete FRRO registration after arrival; SRIHER files the Form II and Form III registrations within 24 hours of admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 mark statements, or O Level and A Level certificates including Advanced Level courses",
+                "UGC equivalence certificate for foreign school qualifications",
+                "NEET score where NCAHP rules require it",
+                "Grade-to-percentage conversion sheet issued by the school where results are graded"
+              ],
+              "application": [
+                "Signed Foreign National application form with photograph",
+                "Passport first and last pages",
+                "Visa, OCI card or Nepal or Bhutan citizenship card where held",
+                "Transfer, conduct and migration certificates",
+                "Proof of date of birth and four passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "For 2026-27 the last date for foreign-national undergraduate applications was 30 June 2026, with first-year classes starting around the second week of July 2026.",
+            "visaConsiderations": [
+              "Foreign nationals who need a visa are admitted only after obtaining a valid Indian student visa, not a tourist visa.",
+              "Students on a student visa longer than 180 days register with the Chennai FRRO within 14 days of arrival.",
+              "Health insurance is mandatory for foreign students and is charged at USD 50 a year."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "SRIHER's Bachelor of Occupational Therapy regulations make English the medium of instruction for all subjects and for examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from around the second week of July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Total programme tuition for 2026-27 foreign-national entrants is USD 26,500 for five years, paid in instalments: the first on receipt of the provisional offer and the rest each May, in US dollars only. Add a one-time USD 50 registration fee, USD 50 a year health insurance, university examination fees as notified, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit of USD 300 to USD 750, and mess charges billed separately.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1 and 2 - foundation",
+              "language": "English",
+              "details": "Anatomy, physiology, biochemistry, fundamentals of occupational therapy, pathology, pharmacology, psychology and biomechanics, with supervised clinical training or field work."
+            },
+            {
+              "phase": "Years 3 and 4 - clinical practice",
+              "language": "English",
+              "details": "Occupational therapy in medical, surgical, musculoskeletal, neurological, psychiatric and paediatric conditions, ergonomics, community rehabilitation and a project."
+            },
+            {
+              "phase": "Year 5 - internship",
+              "language": "English",
+              "details": "One year of compulsory rotatory internship after the four academic years."
+            }
+          ]
+        },
+        {
+          "slug": "sriher-chennai-bsc-applied-psychology",
+          "canonicalCourseSlug": "bachelor-psychology",
+          "officialTitle": "B.Sc. Applied Psychology",
+          "durationYears": 3,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 entry",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4667,
+            "officialTotalTuitionAmount": 14000,
+            "annualTuitionUsd": 4667,
+            "totalTuitionUsd": 14000,
+            "verifiedAt": "2026-09-21",
+            "notes": "SRIHER publishes USD 14,000 as the total tuition for the three-year B.Sc. Applied Psychology for 2026-27 foreign-national entrants, payable in instalments; the USD 4,667 annual figure is that total averaged over three years. Other charges are extra."
+          },
+          "officialProgramUrl": "https://sriramachandra.edu/programme/b-sc-applied-psychology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a foreign passport",
+              "OCI cardholders applying as foreign nationals",
+              "Nepal and Bhutan citizens holding citizenship cards"
+            ],
+            "restrictions": [
+              "Foreign nationals, including OCI cardholders, must apply in the Foreign National category; applications filed under the general or NRI category are not considered.",
+              "Foreign school qualifications need an equivalence certificate from the UGC equivalence portal.",
+              "Admission is provisional until original certificates are verified and, where a visa is needed, a valid student visa is held."
+            ],
+            "notes": "SRIHER publishes separate A Level and International Baccalaureate entry rules for this programme.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A three-year, six-semester B.Sc. Applied Psychology in the Faculty of Behavioural and Social Sciences, covering clinical, counselling, health, social and organisational psychology with clinical observation postings and a final project. Foreign nationals are admitted on merit with no university entrance test.",
+            "eligibility": {
+              "intro": "SRIHER's 2026-27 foreign-national prospectus publishes these routes for B.Sc. Applied Psychology.",
+              "items": [
+                "A Level: at least three Science or three Arts subjects at A Level plus five IGCSE or GCSE passes including English.",
+                "A Level applicants need a minimum average of grade D.",
+                "IB: Diploma or Certificate with three Science or three Arts subjects at Higher Level and three at Standard Level, and at least 24 points overall.",
+                "IB applicants need at least 3 points in each subject counted.",
+                "Indian-board route: pass in the 10+2 academic stream with the minimum marks set by SRIHER."
+              ]
+            },
+            "applicationSteps": [
+              "Download the 2026-27 Foreign National undergraduate application from the SRIHER admissions page; there is no application fee in the international category.",
+              "Email the signed form and scanned documents to the International Relations Office at admissions.international@sriramachandra.edu.in, filing one application per programme.",
+              "The Admissions Committee and International Relations Office check eligibility and documents, and may hold an online interview.",
+              "Eligible applicants receive an Offer of Provisional Admission and pay the first fee instalment by the date stated in it.",
+              "After payment and submission of final school results, SRIHER issues a Confirmation of Provisional Admission Letter.",
+              "Apply for an Indian student visa with the confirmation letter, then report on the notified date for original-document verification.",
+              "Complete FRRO registration after arrival; SRIHER files the Form II and Form III registrations within 24 hours of admission."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 mark statements, or IGCSE, GCSE and A Level certificates",
+                "IB Diploma or Certificate transcript where applicable",
+                "UGC equivalence certificate for foreign school qualifications",
+                "Grade-to-percentage conversion sheet issued by the school where results are graded"
+              ],
+              "application": [
+                "Signed Foreign National application form with photograph",
+                "Passport first and last pages",
+                "Visa, OCI card or Nepal or Bhutan citizenship card where held",
+                "Transfer, conduct and migration certificates",
+                "Proof of date of birth and four passport-size photographs"
+              ]
+            },
+            "deadlinesNote": "For 2026-27 the last date for foreign-national undergraduate applications was 30 June 2026, with first-year classes starting around the second week of July 2026.",
+            "visaConsiderations": [
+              "Foreign nationals who need a visa are admitted only after obtaining a valid Indian student visa, not a tourist visa.",
+              "Students on a student visa longer than 180 days register with the Chennai FRRO within 14 days of arrival.",
+              "Health insurance is mandatory for foreign students and is charged at USD 50 a year."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "SRIHER's B.Sc. Applied Psychology regulations make English the medium of instruction for all subjects and for examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from around the second week of July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Total programme tuition for 2026-27 foreign-national entrants is USD 14,000 for three years, paid in instalments with the first on receipt of the provisional offer and the rest each May, in US dollars only. Add a one-time USD 50 registration fee, USD 50 a year health insurance, examination fees as notified, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit, and mess charges.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 and 2",
+              "language": "English",
+              "details": "Psychological processes, health and positive psychology, biological basis of behaviour, lifespan development, environmental and forensic psychology and English."
+            },
+            {
+              "phase": "Semesters 3 and 4",
+              "language": "English",
+              "details": "Applied social psychology, clinical psychology and mental health, sports psychology, research methods and biostatistics, and an observational posting."
+            },
+            {
+              "phase": "Semesters 5 and 6",
+              "language": "English",
+              "details": "Organisational, community and counselling psychology, psychodiagnostics, psychopathology, two clinical observation postings and a project."
+            }
+          ]
+        },
+        {
+          "slug": "sriher-chennai-master-of-public-health",
+          "canonicalCourseSlug": "mph",
+          "officialTitle": "Master of Public Health (MPH)",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 entry",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 3500,
+            "officialTotalTuitionAmount": 7000,
+            "annualTuitionUsd": 3500,
+            "totalTuitionUsd": 7000,
+            "verifiedAt": "2026-09-21",
+            "notes": "SRIHER publishes USD 7,000 as the total tuition for the two-year MPH for 2026-27 foreign-national and NRI entrants, payable in two instalments; the USD 3,500 annual figure is that total averaged over two years. Other charges are extra."
+          },
+          "officialProgramUrl": "https://sriramachandra.edu/programme/mph-occupational-environmental-health/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a foreign passport",
+              "OCI cardholders, who may apply only in the foreign national category",
+              "Nepal and Bhutan citizens holding citizenship cards",
+              "Non-Resident Indians and NRI-sponsored candidates through the separate NRI category"
+            ],
+            "restrictions": [
+              "Foreign national applicants must register on the Study in India portal and obtain an SII ID.",
+              "Foreign degrees may need an equivalence certificate from the UGC equivalence portal.",
+              "Admission is provisional until original documents are verified and, where needed, a student visa is obtained."
+            ],
+            "notes": "Foreign nationals and NRIs are exempt from the university PG entrance examination for this programme unless SRIHER specifies otherwise.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, four-semester Master of Public Health at Sri Ramachandra Faculty of Public Health with four elective streams: Occupational and Environmental Health, Public Health Nutrition, Health Systems Management, and Climate Change and Human Health. It ends with a field practicum, dissertation and internship.",
+            "eligibility": {
+              "intro": "SRIHER accepts a wide range of first degrees for the MPH, from institutions recognised by NMC, AICTE or UGC or their foreign equivalents.",
+              "items": [
+                "Bachelor's degree in public health, environmental health sciences, medicine, AYUSH, dentistry or veterinary sciences.",
+                "Or a bachelor's degree in paramedical or allied health sciences, life sciences, B.Tech or B.E.",
+                "Or a degree in statistics, biostatistics, demography, population studies, nutrition, sociology, psychology, anthropology or social work.",
+                "Equivalent undergraduate or postgraduate degrees in engineering or basic and applied science are also accepted."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the Government of India Study in India portal to obtain an SII ID; this applies to foreign nationals needing a visa, OCI cardholders and Nepal or Bhutan citizens.",
+              "Download the 2026-27 postgraduate application from the SRIHER admissions page and email it with enclosures to admissions.international@sriramachandra.edu.in.",
+              "The Admissions Committee and International Relations Office review eligibility and documents, and may hold an online interview.",
+              "Eligible applicants receive an Offer of Provisional Admission and pay the first fee instalment within the stated deadline.",
+              "SRIHER issues a Confirmation of Admission Letter, used to apply for the student visa through the Study in India portal.",
+              "Report on the notified date for original-document verification, then complete FRRO registration."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Undergraduate degree certificate or provisional pass certificate",
+                "Consolidated and semester-wise mark sheets or transcripts",
+                "Official grade-to-percentage conversion where results are graded",
+                "UGC equivalence certificate for foreign degrees where required"
+              ],
+              "application": [
+                "Completed postgraduate application form",
+                "Passport first and last pages",
+                "Visa, OCI card or citizenship card where held",
+                "Transfer, conduct and migration certificates and birth certificate",
+                "Certificate showing the degree-awarding institution is accredited in its country"
+              ]
+            },
+            "deadlinesNote": "For 2026-27 the last date for NRI and foreign-national postgraduate applications was 10 July 2026, with first-year classes starting around the third week of July 2026.",
+            "visaConsiderations": [
+              "Foreign nationals apply for the student visa through the Study in India portal using the SRIHER confirmation letter.",
+              "Students on a student visa longer than 180 days register with the Chennai FRRO within 14 days of arrival.",
+              "Health insurance is mandatory for foreign students and is charged at USD 50 a year."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "SRIHER's MPH regulations make English the medium of instruction for all subjects and for examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from around the third week of July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Total programme tuition for 2026-27 entrants is USD 7,000 for two years, paid in two instalments: the first on receipt of the provisional offer and the second in May of the following year, in US dollars for foreign nationals. Add a one-time USD 50 registration fee, USD 50 a year health insurance, examination fees as notified, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit of USD 300 to USD 750, and mess charges.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 and 2 - core",
+              "language": "English",
+              "details": "Public health principles and demography, epidemiology, biostatistics, Indian health systems and policy, environmental health, health economics, health management and health promotion, with a field practicum."
+            },
+            {
+              "phase": "Semester 3 - elective stream",
+              "language": "English",
+              "details": "One of Occupational and Environmental Health, Public Health Nutrition, Health Systems Management, or Climate Change and Human Health, plus epidemiology, law and ethics, and research methodology."
+            },
+            {
+              "phase": "Semester 4 - research",
+              "language": "English",
+              "details": "Advanced seminar series, dissertation and internship."
+            }
+          ]
+        },
+        {
+          "slug": "sriher-chennai-msc-clinical-psychology",
+          "canonicalCourseSlug": "master-clinical-psychology",
+          "officialTitle": "M.Sc. Clinical Psychology",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 entry",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 4750,
+            "officialTotalTuitionAmount": 9500,
+            "annualTuitionUsd": 4750,
+            "totalTuitionUsd": 9500,
+            "verifiedAt": "2026-09-21",
+            "notes": "SRIHER publishes USD 9,500 as the total tuition for the two-year M.Sc. Clinical Psychology for 2026-27 foreign-national and NRI entrants, payable in two instalments; the USD 4,750 annual figure is that total averaged over two years. Other charges are extra."
+          },
+          "officialProgramUrl": "https://sriramachandra.edu/programme/m-sc-clinical-psycology/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Foreign nationals holding a foreign passport",
+              "OCI cardholders, who may apply only in the foreign national category",
+              "Nepal and Bhutan citizens holding citizenship cards",
+              "Non-Resident Indians and NRI-sponsored candidates through the separate NRI category"
+            ],
+            "restrictions": [
+              "Foreign national applicants must register on the Study in India portal and obtain an SII ID.",
+              "Foreign degrees may need an equivalence certificate from the UGC equivalence portal.",
+              "Admission is provisional until original documents are verified and, where needed, a student visa is obtained.",
+              "Only a B.A. or B.Sc. in Psychology studied in regular mode qualifies; degrees in other subjects are not accepted."
+            ],
+            "notes": "The programme page describes graduates as assisting RCI-certified clinical psychologists under supervision; the M.Sc. alone is not an RCI clinical psychologist licence.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, four-semester M.Sc. Clinical Psychology in the Faculty of Behavioural and Social Sciences with two clinical rotations, assessment practicals and a dissertation. Graduates work under RCI-certified clinical psychologists; the programme also prepares students for an M.Phil. in Clinical Psychology.",
+            "eligibility": {
+              "intro": "SRIHER's 2026-27 postgraduate prospectus sets a single academic requirement for this programme.",
+              "items": [
+                "Bachelor's degree (B.A. or B.Sc.) in Psychology, studied in regular mode at a UGC-recognised university or an equivalent foreign institution.",
+                "Minimum 55 per cent marks or a B+ grade in the bachelor's degree.",
+                "Foreign degrees may need a UGC equivalence certificate."
+              ]
+            },
+            "applicationSteps": [
+              "Register on the Government of India Study in India portal to obtain an SII ID; this applies to foreign nationals needing a visa, OCI cardholders and Nepal or Bhutan citizens.",
+              "Download the 2026-27 postgraduate application from the SRIHER admissions page and email it with enclosures to admissions.international@sriramachandra.edu.in.",
+              "The Admissions Committee and International Relations Office review eligibility and documents, and may hold an online interview.",
+              "Eligible applicants receive an Offer of Provisional Admission and pay the first fee instalment within the stated deadline.",
+              "SRIHER issues a Confirmation of Admission Letter, used to apply for the student visa through the Study in India portal.",
+              "Report on the notified date for original-document verification, then complete FRRO registration."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Undergraduate degree certificate or provisional pass certificate",
+                "Consolidated and semester-wise mark sheets or transcripts",
+                "Official grade-to-percentage conversion where results are graded",
+                "UGC equivalence certificate for foreign degrees where required"
+              ],
+              "application": [
+                "Completed postgraduate application form",
+                "Passport first and last pages",
+                "Visa, OCI card or citizenship card where held",
+                "Transfer, conduct and migration certificates and birth certificate",
+                "Certificate showing the degree-awarding institution is accredited in its country"
+              ]
+            },
+            "deadlinesNote": "For 2026-27 the last date for NRI and foreign-national postgraduate applications was 10 July 2026, with first-year classes starting around the third week of July 2026.",
+            "visaConsiderations": [
+              "Foreign nationals apply for the student visa through the Study in India portal using the SRIHER confirmation letter.",
+              "Students on a student visa longer than 180 days register with the Chennai FRRO within 14 days of arrival.",
+              "Health insurance is mandatory for foreign students and is charged at USD 50 a year."
+            ]
+          },
+          "medium": "English",
+          "mediumNote": "SRIHER's M.Sc. Clinical Psychology regulations make English the medium of instruction for all subjects and for examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from around the third week of July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Total programme tuition for 2026-27 entrants is USD 9,500 for two years, paid in two instalments: the first on receipt of the provisional offer and the second in May of the following year, in US dollars for foreign nationals. Add a one-time USD 50 registration fee, USD 50 a year health insurance, examination fees as notified, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit, and mess charges.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 and 2",
+              "language": "English",
+              "details": "Physiological psychology and neuropsychology, personality, developmental and cognitive psychology, research methods and biostatistics, psychological assessment practicals and two clinical rotations."
+            },
+            {
+              "phase": "Semesters 3 and 4",
+              "language": "English",
+              "details": "Counselling psychology, psychopathology, learning disabilities, guidance and counselling practicals, psychotherapy, case studies and a dissertation."
+            }
+          ]
+        },
+        {
+          "slug": "sriher-chennai-mba-hospital-health-systems-management",
+          "canonicalCourseSlug": "mba-healthcare-management",
+          "officialTitle": "M.B.A. Hospital and Health Systems Management",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27 entry (NRI category)",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 7000,
+            "officialTotalTuitionAmount": 14000,
+            "annualTuitionUsd": 7000,
+            "totalTuitionUsd": 14000,
+            "verifiedAt": "2026-09-21",
+            "notes": "SRIHER publishes USD 14,000 as the total NRI-category tuition for the two-year MBA for 2026-27, payable in two instalments; the USD 7,000 annual figure is that total averaged over two years. The 2026-27 foreign-national fee table does not list this MBA."
+          },
+          "officialProgramUrl": "https://sriramachandra.edu/programme/m-b-a-hospital-health-systems-management/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Non-Resident Indians who completed their qualifying degree outside India",
+              "NRI-sponsored candidates meeting the Supreme Court sponsorship conditions"
+            ],
+            "restrictions": [
+              "The 2026-27 foreign-national postgraduate fee table does not include this MBA, so no foreign-national seat or fee is published for this cycle.",
+              "NRI status requires an Indian citizen who completed the qualifying degree abroad and whose parent or sibling also holds NRI status.",
+              "NRI-sponsored candidates need a sponsor who is a parent, sibling or specified near relative residing abroad and who funds the full course fee.",
+              "Candidates who confirm an NRI seat by paying the first instalment cannot later move to the general category."
+            ],
+            "notes": "NRI applicants are exempt from the university PG entrance examination unless SRIHER specifies otherwise; domestic general-category entry uses MAT, CMAT, XAT, CAT, ATMA, TANCET or the SRIHER entrance examination.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+          },
+          "admissionsContent": {
+            "overview": "A two-year, four-semester MBA in Hospital and Health Systems Management at Sri Ramachandra Faculty of Management Sciences, accredited by the National Board of Accreditation to 30 June 2027. Electives cover healthcare finance, quality and human resources, with two hospital postings and a summer internship.",
+            "eligibility": {
+              "intro": "SRIHER's 2026-27 postgraduate prospectus sets the academic requirement for NRI and NRI-sponsored applicants.",
+              "items": [
+                "Bachelor's degree of at least three years' duration.",
+                "Minimum 50 per cent marks in the bachelor's degree.",
+                "A certificate of medical fitness from an authorised medical officer at admission.",
+                "Proof of NRI status, or sponsorship documents for NRI-sponsored candidates."
+              ]
+            },
+            "applicationSteps": [
+              "Download the 2026-27 NRI postgraduate application from the SRIHER admissions page and select the NRI or NRI-sponsored category.",
+              "Email the completed application and enclosures to the International Relations Office at admissions.international@sriramachandra.edu.in.",
+              "The Admissions Committee and International Relations Office verify eligibility and documents and may hold an online interview.",
+              "Eligible candidates receive an Offer of Provisional Admission and pay the first instalment within the stated deadline.",
+              "Report on the notified date for verification of original documents and completion of admission formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Undergraduate degree certificate or provisional pass certificate",
+                "Consolidated and semester-wise mark sheets or transcripts",
+                "Official grade-to-percentage conversion where results are graded"
+              ],
+              "application": [
+                "Completed NRI postgraduate application form",
+                "Passport of the candidate and proof of parent's or sibling's NRI status",
+                "For NRI-sponsored candidates: notarised sponsor affidavit and Indian Embassy certificate of the sponsor's NRI status",
+                "For NRI-sponsored candidates: sponsor's passport and visa copy and a Gazetted Officer's relationship certificate",
+                "Transfer, conduct and migration certificates and birth certificate"
+              ]
+            },
+            "deadlinesNote": "For 2026-27 the last date for NRI and foreign-national postgraduate applications was 10 July 2026, with first-year classes starting around the third week of July 2026."
+          },
+          "medium": "English",
+          "mediumNote": "SRIHER's MBA regulations make English the medium of instruction for all subjects and for examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July - classes from around the third week of July in the 2026 cycle"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "Total NRI-category tuition for 2026-27 entrants is USD 14,000 for two years, paid in two instalments: the first on receipt of the provisional offer and the second in May of the following year. Add a one-time USD 50 registration fee, USD 50 a year health insurance, examination fees as notified, hostel from USD 450 to USD 1,700 a year plus a one-time caution deposit, and mess charges. No foreign-national rate is published for this MBA in 2026-27.",
+          "teachingPhases": [
+            {
+              "phase": "Semesters 1 and 2",
+              "language": "English",
+              "details": "Hospital operations, healthcare economics, marketing, financial analysis, HR, business analytics, healthcare laws, quality and accreditation, hospital infrastructure and a first hands-on posting."
+            },
+            {
+              "phase": "Semesters 3 and 4",
+              "language": "English",
+              "details": "Services marketing, strategy, public health systems and insurance, clinical governance, AI for business, electives in finance, quality or HR, a second posting, summer internship and dissertation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-09-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "identity",
+      "claimText": "SRIHER began in 1985 as Sri Ramachandra Medical College and Research Institute, a not-for-profit self-financing institution of the Sri Ramachandra Educational and Health Trust; the Government of India declared it a Deemed to be University in September 1994 under Section 3 of the UGC Act, 1956, and it was renamed Sri Ramachandra Institute of Higher Education and Research in August 2018.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), p. 4",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "The former domain www.sriramachandra.edu.in now serves a 'We've moved' redirect page to https://sriramachandra.edu (checked 2026-09-21), which is why the first-audit international pages returned ~300-character stubs. UGC deemed-university list not separately fetched; no UGC badge is claimed."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-09-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "summary",
+      "claimText": "SRIHER has 15 constituent faculties including medicine, dentistry, pharmacy, nursing, physiotherapy, allied health sciences, management sciences, biomedical sciences and technology, public health, sports and exercise sciences, clinical research, engineering and technology, audiology and speech language pathology, occupational therapy and behavioural and social sciences, on a 150-acre campus at Porur, Chennai.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), p. 5",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-09-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "campusLifestyle",
+      "claimText": "The campus spreads over 150 acres with a hospital of over 2,500 beds, central library, auditorium, swimming pool, playgrounds, multi-cuisine restaurants, bank with ATMs, retail stores, travel service, railway reservation counter and post office; SRIHER houses 16 clubs (dance, debate, fitness, Rotaract, Tamil, English literature, theatre, yoga etc.), 6 NSS units, Army and Naval NCC wings and an alumni network of over 20,000 graduates.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 5-6",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "Library area 40,000 sq ft and hours 8 a.m.-10 p.m. working days from the Student Manual 2026-27 (https://media.sriramachandra.edu/ms/storage/2026/07/Student-Manual-2026-27.pdf) and 2024-25 PG information booklet."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "practicalExposure",
+      "claimText": "Sri Ramachandra Hospital is a tertiary care and referral centre inside the campus with, on average, 5,000 out-patients a day; the Department of Environmental Health Engineering has been a WHO Collaborating Centre for Research and Training in Occupational Health since 2007 and started the MPH with the University of California, Berkeley; the placement cell reports nearly 700 offers through 230 campus processes with packages from Rs 2.2 lakh to Rs 72 lakh a year.",
+      "sourceLabel": "SRIHER Student Manual 2026-27, pp. 43-44, 60",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/07/Student-Manual-2026-27.pdf",
+      "internalNotes": "Out-patient figure from the 2024-25 PG information booklet (https://media.sriramachandra.edu/ms/storage/2024/05/pg-info-booklet-2024-1.pdf); placement figures are SRIHER-reported, not independently audited."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "hostelOverview",
+      "claimText": "Hostel fees for AY 2026-27 for international students: A/C single with common bath USD 1,700 a year and USD 750 caution deposit; A/C twin sharing USD 900 and USD 375; non-A/C single USD 900 and USD 375; non-A/C twin sharing USD 450 and USD 300; payable at admission and annually thereafter, subject to availability.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), p. 20",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "Identical table in the PG 2026-27 prospectus p. 21. CCTV, biometric entry and 9 p.m. gate closure from the Student Manual 2026-27 section 9."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "dietarySupport",
+      "claimText": "Canteen and mess facilities are in the hostel complexes; students pay the mess directly before hostel admission; dining only in the mess with no room service; night cafeterias in the hostels 9 p.m. to 1 a.m.; carbonated beverages and junk food banned on premises per a Department of Higher Education (MHRD) directive.",
+      "sourceLabel": "SRIHER Student Manual 2026-27, sections 7.1.8 and 9.16",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/07/Student-Manual-2026-27.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "safetyOverview",
+      "claimText": "Foreign students must hold health insurance, charged at USD 50 a year; the on-campus hospital provides a 24x7 emergency service with ambulance and treatment at concessional charges; SRIHER applies the UGC, MCI, DCI and AICTE anti-ragging regulations and the Tamil Nadu Prohibition of Ragging Act 1997 and reports NIL ragging incidents for the academic year to date.",
+      "sourceLabel": "SRIHER - Insurance / Visa for International Students; Prospectus 2026-27 FN (UG), pp. 20-21",
+      "sourceUrl": "https://sriramachandra.edu/nri-about-us/insurance-visa-for-international-students/",
+      "internalNotes": "Insurance charge and ragging data from https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "studentSupport",
+      "claimText": "The International Relations Office handles international admissions, pre-arrival support, orientation, statutory compliance including FRRO, Bonafide Certificates and APAAR IDs for students without Aadhaar; three named student counsellors offer free confidential counselling on the 3rd floor, IQAC wing, and every student has a faculty mentor.",
+      "sourceLabel": "SRIHER Student Manual 2026-27, section 3.2; International Relation / Students page",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/07/Student-Manual-2026-27.pdf",
+      "internalNotes": "IRO services also from https://sriramachandra.edu/nri-about-us/ and FN UG prospectus p. 23."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "cityProfile",
+      "claimText": "The Form II (formerly Form S) and Form III (formerly Form C) registrations of foreign nationals and their campus residence are filed with the FRRO by the university within 24 hours of admission; students with a student visa of more than 180 days register with the FRRO within 14 days of arrival; UG classes commence around the second week of July 2026 and PG classes around the third week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 20-21; PG prospectus p. 22",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "thingsToConsider",
+      "claimText": "The 2026-27 Foreign National and NRI undergraduate application forms are titled 'Undergraduate Admissions 2026-27 ... (Excluding Medical & Dental)', and the FN UG prospectus programme list does not include MBBS, BDS or B.Pharm; all fees once paid are not refunded, and students discontinuing after the cut-off date must remit fees for the entire remaining programme period.",
+      "sourceLabel": "SRIHER FN UG 2026-27 application; Prospectus 2026-27 FN (UG), pp. 1, 7, 22-23",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/02/FN-UG-26-27-application.pdf",
+      "internalNotes": "MBBS omitted from the bundle for this reason: no published foreign-national route, quota or counselling authority for 2026-27. NMC facts were therefore not researched for publication."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "industryPartners",
+      "claimText": "Sri Ramachandra Faculty of Management Sciences partners with Bentley University (USA), ACCA-UK, ICMAI, XLRI, ZOHO and others, and holds NBA, ACCA-UK and ICMAI accreditations.",
+      "sourceLabel": "SRIHER Student Manual 2026-27, pp. 41-42",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/07/Student-Manual-2026-27.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "The NAAC valid-accreditation workbook (as on 14-08-2025, Universities sheet) records Sri Ramachandra Institute of Higher Education and Research, Porur, Chennai (AISHE U-0478, Track TNUNGN10143) at Cycle 3, CGPA 3.53, Grade A++, declared 25-01-2021.",
+      "sourceLabel": "NAAC - Accreditation Status register, institutions with valid accreditation",
+      "sourceUrl": "https://naac.gov.in/index.php/en/2-uncategorised/32-accreditation-status",
+      "internalNotes": "Supervisor regulator verification 2026-09-21 (regulator-findings-india-batch-2.md). VALIDITY CAVEAT: the standard five-year point from the January 2021 declaration fell in January 2026 and no renewal appears in any published NAAC Standing Committee result through the 265th SC of 12 Dec 2025 (no later SC results published as of 2026-09-21). Badge therefore states the declaration year only, with no currency claim; never write 'currently A++' or any valid-until date. Re-check NAAC SC results at next review."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "The NBA register lists 'Sri Ramachandra Faculty of Pharmacy (Kancheepuram)' - Pharmacy UG, Further Accredited from Academic Year 2025-26, 2026-27 and 2027-28, i.e., upto 30/06/2028; and 'SRI RAMACHANDRA FACULTY OF MANAGEMENT SCIENCES (Chennai)' - MBA- Hospital & Health Management, Post Graduate, Academic Year 2024-25, 2025-26 and 2026-27, i.e., upto 30/06/2027.",
+      "sourceLabel": "National Board of Accreditation - accreditation programme register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "internalNotes": "Supervisor regulator verification 2026-09-21. Ramachandra College of Engineering, West Godavari is a different institution and is not used. The register is cumulative; only the accreditation periods evidence current status."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "recognitionBadges",
+      "claimText": "NIRF India Rankings 2025 (Ministry of Education) place SRIHER (IR-*-I-1486) 60th in the University category, 21st in the Medical category, 13th in the Dental category and 36th in the Pharmacy category; SRIHER is not in the 2025 Overall list.",
+      "sourceLabel": "NIRF India Rankings 2025 - University, Medical, Dental and Pharmacy categories",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/MedicalRanking.html",
+      "internalNotes": "Other category pages: https://www.nirfindia.org/Rankings/2025/UniversityRanking.html, https://www.nirfindia.org/Rankings/2025/DentalRanking.html, https://www.nirfindia.org/Rankings/2025/PharmacyRanking.html. nirfindia.org 2026 pages showed 'Website Under Maintenance' on 2026-09-21, so 2025 is the latest published cycle. Ranking year must always be stated. SRIHER is not on the UGC Institution of Eminence list; no IoE claim."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "publicField": "admissions",
+      "claimText": "Foreign nationals apply under the International Student (FN) category - foreign passport holders including OCI cardholders, and Nepal/Bhutan citizenship-card holders - by emailing the application to admissions.international@sriramachandra.edu.in; there is no application fee; FN applicants are exempt from the university UG/PG entrance examination for programmes governed by university regulations unless otherwise specified; tuition is quoted as a total programme fee in USD.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 7-8, 18-19; FN UG 2026-27 application",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "This resolves the first-audit hold: the international route is published on the new domain as 2026-27 prospectuses (image-only PDFs, read visually page by page) rather than on the old HTML pages."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-physiotherapy",
+      "publicField": "eligibility",
+      "claimText": "SRIHER's 2026-27 Foreign Nationals UG prospectus requires a 10+2 pass with minimum 50 per cent aggregate in Physics, Chemistry and Biology (Botany and Zoology), equivalence of foreign qualifications as determined by the UGC and the NCAHP Equivalence Committee, age 17 by 31 December 2026 and a physical fitness certificate. The BPT programme page adds that foreign nationals must take an equivalence certificate of eligibility from the State Allied and Healthcare Council and appear in NEET.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 10-11; BPT programme page",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "Programme page https://sriramachandra.edu/programme/bachelor-of-physiotherapy-bpt/ read 2026-09-21. The FN prospectus eligibility table for BPT does not itself mention NEET, but the FN UG 2026-27 application (https://media.sriramachandra.edu/ms/storage/2026/02/FN-UG-26-27-application.pdf) states that programmes where NCAHP regulations mandate NEET cannot be confirmed without a valid NEET appearance; the NEET requirement is therefore published as a restriction."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-physiotherapy",
+      "publicField": "admissions",
+      "claimText": "Foreign-national UG applications for 2026-27 are submitted by email to the International Relations Office, processed on a first-cum-first-served merit basis with no university entrance examination for university-regulated programmes, followed by a provisional offer, first-instalment payment, a confirmation letter, student visa, document verification and FRRO registration.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 8, 18-19",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-physiotherapy",
+      "publicField": "intake",
+      "claimText": "The 2026-27 FN UG prospectus sets 30 June 2026 as the last date for applications and states first-year classes usually commence around the second week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 18, 21",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-physiotherapy",
+      "publicField": "fee",
+      "claimText": "The 2026-27 FN UG prospectus lists BPT at 5 years with a programme fee for foreign nationals of USD 26,500, footnoted as tuition fees for the entire duration of the programme payable in instalments, in USD only.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 7-8, 19-20",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "Annual figure (USD 5,300) is the published total divided by the five-year duration; it is not a separately published annual rate. The 2025-26 international UG fee sheet listed BPT at USD 13,500 over 4.5 years, so the 2026-27 total is a material increase."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-physiotherapy",
+      "publicField": "medium",
+      "claimText": "SRIHER's BPT regulations state that English shall be the medium of instruction for all courses of study and for examinations of the Bachelor of Physiotherapy programme.",
+      "sourceLabel": "SRIHER BPT regulations (IQAC portal, archived)",
+      "sourceUrl": "https://web.archive.org/web/2024/https://iqac.sriramachandra.edu.in/iqacreq/pdflst-i/112_t01_bptacfinal04072019.pdf",
+      "internalNotes": "The regulations were published on SRIHER's former IQAC document portal (iqac.sriramachandra.edu.in), which no longer resolves after the move to sriramachandra.edu; the official PDF was read from the Internet Archive copy on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-occupational-therapy",
+      "publicField": "eligibility",
+      "claimText": "SRIHER's 2026-27 Foreign Nationals UG prospectus requires for BOT a 10+2 pass with 50 per cent aggregate in Physics, Chemistry and Biology (Botany and Zoology); candidates who studied abroad must hold an equivalent qualification determined under UGC guidelines and have passed Physics, Chemistry, Biology and English at 12th-standard level; age 17 by 31 December 2026; and a physical fitness certificate at admission.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 11-12",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "BOT programme page (https://sriramachandra.edu/programme/bachelor-of-occupational-therapy-bot/) states 5 years (4 years academics plus 1 year CRI) and PO4 references the NCAHP Act. The FN UG 2026-27 application (https://media.sriramachandra.edu/ms/storage/2026/02/FN-UG-26-27-application.pdf) says NEET is required for certain NCAHP programmes as indicated in the prospectus; the prospectus BOT row does not name NEET, so the requirement is carried only as a conditional restriction."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-occupational-therapy",
+      "publicField": "admissions",
+      "claimText": "Foreign-national UG applications for 2026-27 are emailed to the International Relations Office and processed on a first-cum-first-served merit basis, with the steps provisional offer, fee payment, confirmation letter, student visa, document verification and FRRO registration.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 8, 18-19",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-occupational-therapy",
+      "publicField": "intake",
+      "claimText": "The 2026-27 FN UG prospectus sets 30 June 2026 as the last date for applications and states first-year classes usually commence around the second week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 18, 21",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-occupational-therapy",
+      "publicField": "fee",
+      "claimText": "The 2026-27 FN UG prospectus lists BOT at 5 years with a programme fee for foreign nationals of USD 26,500, footnoted as tuition fees for the entire duration of the programme payable in instalments, in USD only.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 7-8, 19-20",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "Annual figure (USD 5,300) is the published total divided by five years."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bachelor-of-occupational-therapy",
+      "publicField": "medium",
+      "claimText": "SRIHER's BOT regulations state that English shall be the medium of instruction for all subjects of study and that examinations will be conducted only in English.",
+      "sourceLabel": "SRIHER BOT regulations and syllabus 2020-21 (IQAC portal, archived)",
+      "sourceUrl": "https://web.archive.org/web/2024/https://iqac.sriramachandra.edu.in/iqacreq/pdflst-i/botreg_syllabus202021.pdf",
+      "internalNotes": "The regulations were published on SRIHER's former IQAC document portal (iqac.sriramachandra.edu.in), which no longer resolves after the move to sriramachandra.edu; the official PDF was read from the Internet Archive copy on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bsc-applied-psychology",
+      "publicField": "eligibility",
+      "claimText": "SRIHER's 2026-27 FN UG prospectus sets B.Sc. Applied Psychology entry as: Indian boards - pass in 10+2 with the minimum marks prescribed by the university; A Level - minimum 3 Science or 3 Arts subjects at A Level and 5 passes in IGCSE/GCSE including English with an average of D; IB - Diploma or Certificate with 3 Science or 3 Arts subjects at HL and 3 at SL, overall minimum 24 points and at least 3 points in a subject.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 14-15",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bsc-applied-psychology",
+      "publicField": "admissions",
+      "claimText": "Foreign nationals are exempt from the university UG entrance examination for programmes governed by university regulations and are processed by the International Relations Office on a first-cum-first-served merit basis, subject to a possible online interview.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 8, 18",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bsc-applied-psychology",
+      "publicField": "intake",
+      "claimText": "The 2026-27 FN UG prospectus sets 30 June 2026 as the application deadline and states first-year classes usually commence around the second week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 18, 21",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bsc-applied-psychology",
+      "publicField": "fee",
+      "claimText": "The 2026-27 FN UG prospectus lists B.Sc. Applied Psychology at 3 years with a foreign-national programme fee of USD 14,000 for the entire duration, payable in instalments in USD.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 Foreign Nationals Admissions (UG), pp. 7-8",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/04/PROSPECTUS_Foreign-Nationals-Admissions-18_April_2026-compressed.pdf",
+      "internalNotes": "Annual figure (USD 4,667) is the published total divided by three years, rounded."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-bsc-applied-psychology",
+      "publicField": "medium",
+      "claimText": "SRIHER's B.Sc. Applied Psychology regulations state that English shall be the medium of instruction for all subjects of study and that examinations will be conducted only in English.",
+      "sourceLabel": "SRIHER B.Sc. Applied Psychology regulations 2019-20 (IQAC portal, archived)",
+      "sourceUrl": "https://web.archive.org/web/2024/https://iqac.sriramachandra.edu.in/iqacreq/pdflst-i/111_a12_bscappliedpsychologyregu201920acfinal.pdf",
+      "internalNotes": "The regulations were published on SRIHER's former IQAC document portal (iqac.sriramachandra.edu.in), which no longer resolves after the move to sriramachandra.edu; the official PDF was read from the Internet Archive copy on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-master-of-public-health",
+      "publicField": "eligibility",
+      "claimText": "The 2026-27 PG prospectus requires for the MPH a bachelor's degree in Public Health, Environmental Health Sciences, Medicine, AYUSH, Dentistry, Veterinary Sciences, Paramedical or Allied Health Sciences, Life Sciences, B.Tech/B.E., Statistics, Biostatistics, Demography, Population Studies, Nutrition, Sociology, Psychology, Anthropology or Social Work, or an equivalent UG/PG degree in engineering or basic and applied science from an institution recognised by NMC, AICTE or UGC.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), p. 10",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-master-of-public-health",
+      "publicField": "admissions",
+      "claimText": "PG applications under the FN category for 2026-27 are processed by the International Relations Office on a first-cum-first-served merit basis without the university PG entrance examination unless specified, and all foreign-national applicants must register on the Study in India portal and obtain an SII ID; the steps are application by email, scrutiny, provisional offer, fee payment, confirmation letter, student visa via Study in India, document verification and FRRO registration.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 8, 17-20",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-master-of-public-health",
+      "publicField": "intake",
+      "claimText": "The 2026-27 PG prospectus sets 10 July 2026 as the last date for filled applications and states first-year classes usually commence around the third week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 15, 19, 22",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-master-of-public-health",
+      "publicField": "fee",
+      "claimText": "The 2026-27 PG prospectus foreign-national table lists M.P.H. Master of Public Health at 2 years and USD 7,000, footnoted as tuition fees for the entire duration of the programme payable in two instalments, with FN students paying in USD only; the NRI table lists the same USD 7,000.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 14, 18, 21",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+      "internalNotes": "The FN table column header reads 'Program fees NRI in USD #' (apparent carry-over from the NRI table) but sits under the Foreign Nationals section and its footnote refers to the FN category. Annual figure is total divided by two."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-master-of-public-health",
+      "publicField": "medium",
+      "claimText": "SRIHER's MPH regulations state that English shall be the medium of instruction for all subjects of study and that examinations will be conducted only in English.",
+      "sourceLabel": "SRIHER MPH amended regulations and syllabus 2019 (IQAC portal, archived)",
+      "sourceUrl": "https://web.archive.org/web/2024/https://iqac.sriramachandra.edu.in/iqacreq/pdflst-i/111_h01_mphamendedregulationandsyllabus2019.pdf",
+      "internalNotes": "The regulations were published on SRIHER's former IQAC document portal (iqac.sriramachandra.edu.in), which no longer resolves after the move to sriramachandra.edu; the official PDF was read from the Internet Archive copy on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-msc-clinical-psychology",
+      "publicField": "eligibility",
+      "claimText": "The 2026-27 PG prospectus requires for M.Sc. Clinical Psychology a Bachelor's degree (B.A. or B.Sc.) in Psychology from any university recognised by the UGC in regular mode with a minimum of 55 per cent marks or B+ grade; the PG prospectus also requires foreign-qualification holders to submit a UGC equivalence certificate.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 8, 10",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+      "internalNotes": "Programme page https://sriramachandra.edu/programme/m-sc-clinical-psycology/ (read 2026-09-21) describes graduates as assisting RCI certified Clinical Psychologists under supervision and preparing for M.Phil. Clinical Psychology."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-msc-clinical-psychology",
+      "publicField": "admissions",
+      "claimText": "PG applications under the FN category for 2026-27 are processed by the International Relations Office on a first-cum-first-served merit basis without the university PG entrance examination unless specified, after Study in India portal registration.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 8, 19",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-msc-clinical-psychology",
+      "publicField": "intake",
+      "claimText": "The 2026-27 PG prospectus sets 10 July 2026 as the application deadline and states first-year classes usually commence around the third week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 19, 22",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-msc-clinical-psychology",
+      "publicField": "fee",
+      "claimText": "The 2026-27 PG prospectus lists M.Sc. Clinical Psychology at 2 years and USD 9,500 in both the foreign-national and NRI tables, as tuition for the entire programme payable in two instalments.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 14, 18, 21",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+      "internalNotes": "Annual figure is total divided by two."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-msc-clinical-psychology",
+      "publicField": "medium",
+      "claimText": "SRIHER's M.Sc. Clinical Psychology regulations state that English shall be the medium of instruction for all subjects of study and that examinations will be conducted only in English.",
+      "sourceLabel": "SRIHER M.Sc. Clinical Psychology regulations 2019-20 (IQAC portal, archived)",
+      "sourceUrl": "https://web.archive.org/web/2024/https://iqac.sriramachandra.edu.in/iqacreq/pdflst-i/111_a36_mscclinicalpsychologyregu201920acfinal.pdf",
+      "internalNotes": "The regulations were published on SRIHER's former IQAC document portal (iqac.sriramachandra.edu.in), which no longer resolves after the move to sriramachandra.edu; the official PDF was read from the Internet Archive copy on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-mba-hospital-health-systems-management",
+      "publicField": "eligibility",
+      "claimText": "The 2026-27 PG prospectus requires for M.B.A. Hospital and Health Systems Management a Bachelor's degree of minimum 3 years duration with at least 50 per cent marks; the programme page adds a certificate of medical fitness from an authorised medical officer.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), p. 12; MBA programme page",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+      "internalNotes": "Programme page https://sriramachandra.edu/programme/m-b-a-hospital-health-systems-management/ also lists MAT/CMAT/XAT/CAT/ATMA/TANCET or the SRIHER entrance examination for general admission; the PG prospectus states NRI/FN candidates are exempt from the university entrance examination unless specified."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-mba-hospital-health-systems-management",
+      "publicField": "admissions",
+      "claimText": "The 2026-27 PG prospectus defines NRI candidates as Indian citizens who completed their qualifying UG examination outside India and whose parent or sibling holds NRI status, and NRI-sponsored candidates per the Supreme Court order of 22.08.2017 in W.P.(C) No. 689 of 2017; NRI applications are processed through the International Relations Office on first-cum-first-served merit without the university PG entrance examination unless specified. The foreign-national fee table (37 programmes) does not list the MBA, while the NRI table lists it.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 8, 13-16, 17-18",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+      "internalNotes": "Prospectus page 1 lists the MBA among programmes offered under NRI / Foreign National categories, but only the NRI fee table prices it, so availability is published as NRI-only for 2026-27. NRI UG 2026-27 application (https://media.sriramachandra.edu/ms/storage/2026/02/NRI-UG-26-27-application.pdf) states NRI-seat confirmation by first-instalment payment bars later transfer to the general category."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-mba-hospital-health-systems-management",
+      "publicField": "intake",
+      "claimText": "The 2026-27 PG prospectus sets 10 July 2026 as the last date for NRI applications and states first-year classes usually commence around the third week of July 2026.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 15, 22",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf"
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-mba-hospital-health-systems-management",
+      "publicField": "fee",
+      "claimText": "The 2026-27 PG prospectus NRI table lists M.B.A. Hospital and Health Systems Management at 2 years and USD 14,000, as tuition for the entire programme payable in two instalments.",
+      "sourceLabel": "SRIHER Prospectus 2026-27 PG Admissions (NRI / Foreign National), pp. 15, 21",
+      "sourceUrl": "https://media.sriramachandra.edu/ms/storage/2026/06/PG_-PROSPECTUS_NRI_FN_2026_27_Final.pdf",
+      "internalNotes": "Annual figure is total divided by two. The 2024-25 PG booklet listed the MBA at USD 16,000 total; the 2025-26 PG international fee sheet also listed USD 16,000."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-mba-hospital-health-systems-management",
+      "publicField": "medium",
+      "claimText": "SRIHER's MBA regulations state that the medium of instruction for all subjects shall be English for both study and examination.",
+      "sourceLabel": "SRIHER MBA regulations 2019 (IQAC portal, archived)",
+      "sourceUrl": "https://web.archive.org/web/2024/https://iqac.sriramachandra.edu.in/iqacreq/pdflst-i/111_g02_mba20192005072019acfinal.pdf",
+      "internalNotes": "The regulations were published on SRIHER's former IQAC document portal (iqac.sriramachandra.edu.in), which no longer resolves after the move to sriramachandra.edu; the official PDF was read from the Internet Archive copy on 2026-09-21."
+    },
+    {
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "sourceGrade": "A",
+      "status": "verified",
+      "entity": "programme",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "programmeSlug": "sriher-chennai-mba-hospital-health-systems-management",
+      "publicField": "recognition",
+      "claimText": "The NBA register lists 'SRI RAMACHANDRA FACULTY OF MANAGEMENT SCIENCES (Chennai)' - MBA- Hospital & Health Management, Post Graduate, for Academic Year 2024-25, 2025-26 and 2026-27, i.e., upto 30/06/2027.",
+      "sourceLabel": "National Board of Accreditation - accreditation programme register",
+      "sourceUrl": "https://www.nbaind.org/accreditationprogram",
+      "internalNotes": "Supervisor regulator verification 2026-09-21 (regulator-findings-india-batch-2.md). Only the accreditation period evidences current status."
+    }
+  ]
+}

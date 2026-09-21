@@ -1,0 +1,934 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "bachelor-liberal-arts",
+      "name": "Bachelor of Liberal Arts",
+      "shortName": "Liberal Arts",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "liberal-arts",
+      "aliases": [
+        "Bachelor of Arts in Liberal Arts",
+        "BA Liberal Arts",
+        "BSc Liberal Arts"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Bachelor of Liberal Arts is the Students Traffic catalogue category for multidisciplinary undergraduate degrees built around a declared major rather than a single fixed syllabus. O.P. Jindal Global University maps its four-year B.A. (Hons.) in Liberal Arts and Humanities at the Jindal School of Liberal Arts and Humanities to this category, a 196-credit degree with thirteen declared majors, a self-designed major option, five internships and a choice of research or coursework pathway in the final year.",
+      "metaTitle": "Bachelor of Liberal Arts Degrees for International Students",
+      "metaDescription": "Compare Bachelor of Liberal Arts degrees abroad by declared major, duration, teaching language, tuition and the admission route open to international applicants."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "ashoka-university",
+      "name": "Ashoka University",
+      "city": "Sonipat",
+      "type": "Private",
+      "establishedYear": 2014,
+      "officialWebsite": "https://www.ashoka.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://in8cdn.npfs.co/uploads/template/5716/1792/publish/images/logo.png",
+          "rights": "Official Ashoka University logo used as the header logo of Ashoka's own undergraduate application portal (application.ashoka.edu.in), which is hosted on this NoPaperForms CDN; the same mark appears on www.ashoka.edu.in. Used only to identify the institution.",
+          "checkedAt": "2026-09-21"
+        },
+        "cover": {
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ashoka_University_Campus.jpg",
+          "rights": "Wikimedia Commons file 'Ashoka University Campus.jpg' by User:Arora.prianca, licensed CC BY-SA 4.0 (attribution and share-alike required). File page: https://commons.wikimedia.org/wiki/File:Ashoka_University_Campus.jpg",
+          "checkedAt": "2026-09-21",
+          "altText": "Red-brick residential and academic buildings around landscaped lawns on the Ashoka University campus in Sonipat at sunset"
+        }
+      },
+      "summary": "Ashoka University is a private, residential liberal arts and sciences university in Rajiv Gandhi Education City, Sonipat, in the Haryana part of the Delhi National Capital Region. Founded in 2014, it teaches a four-year interdisciplinary B.A./B.Sc. Honours programme with 25 majors, alongside postgraduate and PhD programmes, to more than 2,800 students.",
+      "campusLifestyle": "Ashoka has more than 2,800 students from 28 Indian states, over 287 Indian cities and 21 other countries. International undergraduates come from countries including Bangladesh, Kenya, Ethiopia, Bhutan, Nepal, the UAE, Afghanistan, Kuwait, Rwanda, Burundi and Brazil. The undergraduate programme has 13 pure and 12 interdisciplinary majors, minors or concentrations, and nine Foundation Courses. Academic writing is taught through the Undergraduate Writing Programme and the Centre for Writing and Communication.",
+      "cityProfile": "The campus is at Plot No. 2, Rajiv Gandhi Education City, Kundli, Sonipat, in Haryana, part of the Delhi National Capital Region. International students usually fly into Delhi. Ashoka runs a pick-up service: staff or students meet arrivals at the airport with a banner and a code sent by email, then take them to campus by shuttle or cab. Ashoka notes that Sonipat has extreme weather, with hot summers and cold winters, and that most everyday items can be bought after arrival. Its budget guide puts spending outside tuition, residence and mess meals at about INR 21,000 (USD 250) a month: about INR 3,700 for transport, INR 5,000 for food, INR 2,000 for books and stationery and INR 5,000 for personal expenses. Local SIM cards need a visa and passport.",
+      "practicalExposure": "Internships are a graduation requirement: every undergraduate must earn at least 2 internship credits, and internships count for 2 or 4 credits within the 160-credit degree. The Honours with Research degree adds a research component in the fourth year. Co-curricular courses carry 2 credits each and are part of the required credit structure. The Career Development Office runs workshops with the Office of Admissions and Student Affairs, including in the fully funded three-week Academic Bridge Programme that some admitted students attend before term. Many majors are interdisciplinary, such as Economics and Finance, Economics and Public Policy, Politics, Philosophy and Economics, Computer Science and Entrepreneurial Leadership, and Philosophy and Computer Science, so applied and quantitative work is built into the degree.",
+      "hostelOverview": "Ashoka offers on-campus housing, and accommodation details are given at registration. For the August 2027 intake the residence charge is INR 2,11,000 for the first year. It covers the room, water, electricity with full power backup and air conditioning, a pantry and gymnasium access. Students need special permission to stay on campus during vacations. A refundable security and meal deposit of INR 75,000 is paid at offer confirmation. Resident Assistants and AUISA buddies help new international students check in.",
+      "dietarySupport": "Meals are billed separately from the residence charge. Each student pays a fixed minimum of INR 10,000 a semester (INR 20,000 a year) towards dining. Meals beyond that are charged pro rata through a meal-coupon system, with a full day of meals costing about INR 315. Ashoka's budget guide suggests about INR 5,000 a month for food outside the buffet and combo mess meals.",
+      "safetyOverview": "Ashoka provides health insurance for all students, with details at registration. Arrivals are met at the airport by university staff with an institutional banner who check an emailed code, and Ashoka warns students not to follow anyone without an official badge or hand over their passport. Foreign nationals must complete e-FRRO registration within 14 days of arrival, supported by documents from the Assistant Registrar.",
+      "studentSupport": "The Ashoka University International Student Association (AUISA) works with university offices, helps with campus check-in and pairs new arrivals with buddies. Resident Assistants and Cohort Leaders help with course registration. The Ashoka Centre for Well Being and the Office of Learning Support offer workshops, and the Centre for Writing and Communication gives one-to-one English writing support.",
+      "whyChoose": [
+        "A dedicated international undergraduate route with its own pages for timelines, fees, policies and arrival, covering airport pick-up, e-FRRO registration, bank accounts and PAN and Aadhaar applications.",
+        "The same fee, scholarship and financial-aid policies apply to international and Indian students, and need-based aid is open to any student with a firm offer, whatever their nationality.",
+        "Admission does not depend on an Indian entrance exam: SAT, ACT, CUET and JEE scores are optional, and every applicant takes Ashoka's own essay and aptitude assessments.",
+        "A flexible liberal arts structure with 13 pure and 12 interdisciplinary majors, declared by the end of the third semester rather than at application.",
+        "Listed in the NIRF India Rankings 2025 in the 101-150 band among Indian universities.",
+        "English is the sole medium of instruction, supported by writing courses, one-to-one sessions and a funded three-week Academic Bridge Programme for selected admits."
+      ],
+      "thingsToConsider": [
+        "All fees are charged and paid in Indian rupees, and Ashoka's USD figures are approximate, so exchange-rate movements change the real cost for families paying in dollars.",
+        "There is one August intake and no deferral. An offer is valid only for the session after the cycle you applied in, so a later start means applying again.",
+        "Only one application per cycle is allowed, and skipping the mandatory On-the-Spot Essay or Aptitude Assessment annuls it.",
+        "Meals are not included in the residence charge. There is a fixed minimum dining charge of INR 20,000 a year, plus pay-per-meal costs of about INR 315 a day.",
+        "Majors in Economics, Physics, Mathematics or Computer Science need Class XI-XII Mathematics, or a pass at the required grade in a compulsory Calculus course.",
+        "Ashoka does not appear on NAAC's list of institutions with valid accreditation as on 14 August 2025, so no NAAC grade can be cited for it."
+      ],
+      "bestFitFor": [
+        "Students who want a broad liberal arts and sciences education and want to choose a major after exploring subjects in the first three semesters.",
+        "International applicants without Indian entrance-exam scores, since assessment rests on school results, essays, Ashoka's own tests and an interview.",
+        "Applicants who need financial aid, as need-based scholarships are open to international students on the same terms as Indian students.",
+        "Students who want a residential campus near Delhi with organised arrival, registration and peer support for international students."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "University Grants Commission — listed among the private universities of Haryana",
+        "NIRF India Rankings 2025 (Ministry of Education) — University category, rank band 101-150",
+        "NIRF India Rankings 2025 (Ministry of Education) — Overall category, rank band 151-200"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC state-wise list of private universities",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category, rank band 101-150",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking150.html"
+        },
+        {
+          "label": "NIRF India Rankings 2025 - Overall category, rank band 151-200",
+          "url": "https://www.nirfindia.org/Rankings/2025/OverallRanking200.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Ashoka University public or private?",
+          "answer": "It is private. The University Grants Commission lists Ashoka University, at Plot No. 2, Rajiv Gandhi Education City, Kundli, Sonepat, among the private universities of Haryana. It admitted its first students in 2014 and now has more than 2,800 students on its residential campus."
+        },
+        {
+          "question": "What language is the programme taught in?",
+          "answer": "English. Ashoka's Centre for Writing and Communication describes English as the sole medium of instruction. It supports students through the Academic Bridge Programme, two four-credit writing courses and one-to-one sessions. Ashoka's international pages do not list a separate IELTS or TOEFL requirement, but essays and interviews are in English."
+        },
+        {
+          "question": "Can I apply straight after finishing school?",
+          "answer": "Yes. You apply to the undergraduate programme with Class X and Class XII, or equivalent, results. Final or predicted results are accepted. IB and Cambridge A Level applicants without final grades give self-predicted grades and their school counsellor's details. Ashoka does not give transfer credit at first-year entry, so previous university study does not shorten the degree."
+        },
+        {
+          "question": "What does the first year cost an international student?",
+          "answer": "For the August 2027 intake, first-year tuition is INR 10,74,000, residence INR 2,11,000 and essential services INR 5,400, a total of INR 12,90,400. Meals are extra, with a minimum of INR 20,000 a year plus about INR 315 a day beyond that. Ashoka's arrival guide suggests about INR 21,000 a month for other living costs. Refundable deposits of INR 1,35,000 in total are paid when you confirm your offer."
+        },
+        {
+          "question": "Do international students pay more than Indian students?",
+          "answer": "No. The fee on Ashoka's page for international undergraduates, INR 10,74,000 in tuition for the August 2027 intake, is the same as the figure for Indian applicants. All payments are made in rupees. Ashoka's dollar figures are approximate and depend on the exchange rate when you pay."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Apply online at application.ashoka.edu.in. The form asks for student and family details, Class X to XII scores, non-academic engagement and a personal essay. After you submit it, you must sit the On-the-Spot Essay and the Ashoka Aptitude Assessment. Shortlisted applicants are then interviewed by a panel. You can submit only one application in each admissions cycle."
+        },
+        {
+          "question": "Do I need the SAT or another entrance test?",
+          "answer": "No. SAT, ACT, CUET and JEE Main scores are optional. Every applicant must take Ashoka's own assessments: a 30-minute On-the-Spot Essay with a choice of two topics, and the 90-minute Ashoka Aptitude Assessment. The aptitude test has 40 multiple-choice questions on problem-solving and critical thinking, and there is no negative marking."
+        },
+        {
+          "question": "When is the intake and when should I apply?",
+          "answer": "There is one intake, in August. The 2026 cycle had four rounds, with deadlines on 26 November 2025, 21 January, 22 April and 31 May 2026, and classes began on 24 August 2026. Ashoka advises international students to apply in Round 1 or 2 to leave time for visas and travel. Dates for the 2027 cycle have not yet been published."
+        },
+        {
+          "question": "Are scholarships available to international students?",
+          "answer": "Yes. Ashoka states that its scholarship policies for international students are the same as for Indian students. Merit scholarships come with some offers for high-achieving applicants. Need-based scholarships are open to anyone with a firm offer, whatever their finances, through a detailed scholarship form with family financial documents. Applying for aid does not affect the admission decision."
+        },
+        {
+          "question": "Is Ashoka recognised?",
+          "answer": "The UGC lists Ashoka among Haryana's private universities, so it is a recognised degree-awarding university in India. In the Ministry of Education's NIRF India Rankings 2025, it is in the 101-150 band for universities and the 151-200 band overall. It does not appear on NAAC's list of institutions with valid accreditation as on 14 August 2025. Recognition abroad depends on your destination's credential evaluator."
+        },
+        {
+          "question": "What is the accommodation like, and what does it cost?",
+          "answer": "Ashoka has on-campus housing. For the August 2027 intake the residence charge is INR 2,11,000 for the first year. It covers the room, water, electricity with full power backup and air conditioning, a pantry and the gymnasium. Staying on campus during vacations needs special permission. Resident Assistants and AUISA buddies help new students settle in."
+        },
+        {
+          "question": "What happens after I arrive in India?",
+          "answer": "Ashoka offers an airport pick-up for international students. Within 14 days of arrival you must register on the e-FRRO portal using documents from the Assistant Registrar. With the FRRO certificate you can open an NRO bank account, which you need for visa renewals. You can also apply for a PAN card and an Aadhaar card, and AUISA helps with campus check-in."
+        },
+        {
+          "question": "How does Ashoka's programme differ from a single-subject degree?",
+          "answer": "You do not apply to one subject. Everyone completes nine Foundation Courses, including Introduction to Critical Thinking, and declares a major by the end of the third semester from 13 pure and 12 interdisciplinary options. Majors need at least 72 credits within a 160-credit degree, with room for a minor, co-curricular courses and internships."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Ashoka University - Undergraduate International Students",
+          "url": "https://www.ashoka.edu.in/admissions/undergraduate-international-students/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "International route, countries represented, August 2027 fee, same scholarship policy. Cloudflare-protected; read with a rendering browser."
+        },
+        {
+          "label": "Ashoka University - Undergraduate International Students: Fee Structure",
+          "url": "https://www.ashoka.edu.in/undergraduate-international-students-fee-structure/",
+          "kind": "official-fee",
+          "checkedAt": "2026-09-21",
+          "notes": "Fee components, one-time deposits, meal charges, residence inclusions, refund policy, 5-8% increases."
+        },
+        {
+          "label": "Ashoka University - Undergraduate International Students: Admissions Timeline",
+          "url": "https://www.ashoka.edu.in/undergraduate-international-students-admissions-timeline/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "2026 four-round calendar, commencement 24 August 2026."
+        },
+        {
+          "label": "Ashoka University - Undergraduate International Students: Admissions Process and Key Policies",
+          "url": "https://www.ashoka.edu.in/undergraduate-international-admissions-process-key-policies/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Mandatory/optional requirements, OSE, AAA, interview, decision types, Academic Bridge Programme."
+        },
+        {
+          "label": "Ashoka University - Guide to Successfully Transitioning to Ashoka (international students)",
+          "url": "https://www.ashoka.edu.in/transitioning-to-ashoka/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "Visa letter, insurance, pick-up, monthly budget, e-FRRO, NRO account, PAN/Aadhaar, AUISA."
+        },
+        {
+          "label": "Ashoka University - Undergraduate Admissions Related Policies",
+          "url": "https://www.ashoka.edu.in/undergraduate-admissions-related-policies/",
+          "kind": "official-university",
+          "checkedAt": "2026-09-21",
+          "notes": "One application per cycle, no deferral, no transfer credit, mathematics requirement."
+        },
+        {
+          "label": "Ashoka University - Undergraduate Programme (structure and curriculum)",
+          "url": "https://www.ashoka.edu.in/academic-programme/undergraduate/",
+          "kind": "official-program",
+          "checkedAt": "2026-09-21",
+          "notes": "Four-year B.A./B.Sc. Honours structure, credits, majors."
+        },
+        {
+          "label": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+          "url": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Ashoka University listed as Haryana private university (S.No. 109)."
+        },
+        {
+          "label": "NIRF India Rankings 2025 - University category, rank band 101-150",
+          "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking150.html",
+          "kind": "government",
+          "checkedAt": "2026-09-21",
+          "notes": "Ashoka University, Sonepat in 101-150 band."
+        },
+        {
+          "label": "NAAC - Institutions with valid accreditation as on 14-08-2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-09-21",
+          "notes": "Ashoka University not present on the Universities sheet; no NAAC badge."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Ashoka eligibility",
+            "capture": [
+              "citizenship or passport country",
+              "school board and Class XII or predicted results",
+              "Mathematics in Class XI-XII",
+              "intended majors",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my Ashoka cost plan",
+            "capture": [
+              "budget in rupees or home currency",
+              "need-based aid interest",
+              "meal and monthly spending plan",
+              "intended intake"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Start my Ashoka application review",
+            "capture": [
+              "personal essay draft",
+              "non-academic engagement record",
+              "preparation for the On-the-Spot Essay and Aptitude Assessment",
+              "target admissions round"
+            ]
+          },
+          {
+            "trigger": "visa",
+            "label": "Plan my student visa and e-FRRO steps",
+            "capture": [
+              "nationality",
+              "nearest Indian mission",
+              "planned arrival date"
+            ]
+          }
+        ],
+        "restrictionsSummary": "One undergraduate admissions process covers Indian and international applicants. Only one application is allowed per cycle, there is no deferral and no first-year transfer credit, and some quantitative majors need Class XI-XII Mathematics or a Calculus course."
+      },
+      "programmes": [
+        {
+          "slug": "ashoka-undergraduate-ba-bsc-honours",
+          "canonicalCourseSlug": "bachelor-liberal-arts",
+          "officialTitle": "Undergraduate Programme: B.A./B.Sc. Honours and Honours with Research (interdisciplinary liberal arts and sciences)",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2027-28 (first year, August 2027 intake)",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 1074000,
+            "annualTuitionUsd": 11202,
+            "verifiedAt": "2026-09-21",
+            "notes": "Ashoka's page for undergraduate international students publishes first-year tuition of INR 10,74,000 for the August 2027 intake, the same figure listed for Indian applicants, and all fees are paid in rupees. Residence adds INR 2,11,000 and essential services (medical insurance and laundry) INR 5,400, a first-year total of INR 12,90,400. At offer confirmation, applicants also pay a refundable INR 50,000 admissions fee, a refundable INR 75,000 security and meal deposit, and a refundable INR 10,000 acceptance fee. The USD figure uses the ECB reference rate of INR 95.88 on 18 September 2026. Ashoka states the fee has risen by about 5 to 8 per cent a year over the last three years."
+          },
+          "officialProgramUrl": "https://www.ashoka.edu.in/academic-programme/undergraduate/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "International applicants of any nationality",
+              "Indian nationals schooled in India or abroad"
+            ],
+            "restrictions": [
+              "Only one application may be submitted in an admissions cycle, and missing the mandatory assessments annuls it",
+              "Ashoka does not defer admission; an offer is valid only for the session that follows the cycle in which you applied",
+              "No transfer credit is granted at first-year entry; transfer applicants use a separate route",
+              "Majors in Economics, Physics, Mathematics or Computer Science require Class XI-XII Mathematics or a pass at the required grade in the Calculus course (MAT 1000)"
+            ],
+            "notes": "Ashoka runs one undergraduate admissions process for Indian and international applicants, with the same fee and scholarship policies. International applicants are encouraged to apply in Rounds 1 and 2 so there is time for visa and travel.",
+            "verifiedAt": "2026-09-21",
+            "sourceUrl": "https://www.ashoka.edu.in/admissions/undergraduate-international-students/"
+          },
+          "admissionsContent": {
+            "overview": "A four-year interdisciplinary B.A. or B.Sc. Honours, or Honours with Research, degree. Students complete nine Foundation Courses, including Introduction to Critical Thinking, and declare a major by the end of the third semester. There are 13 pure and 12 interdisciplinary majors, plus minors and concentrations.",
+            "eligibility": {
+              "intro": "Admission is holistic and merit-based: Ashoka reviews Class X to XII academics, non-academic engagement, a personal essay and two mandatory assessments, then invites selected applicants to interview.",
+              "items": [
+                "Class XII or an equivalent final school qualification, or predicted results if final results are not yet available",
+                "IB and Cambridge A Level applicants without final grades must give self-predicted grades and their school counsellor's details",
+                "Mandatory On-the-Spot Essay (30 minutes) and Ashoka Aptitude Assessment (90 minutes, 40 multiple-choice questions)",
+                "SAT, ACT, CUET or JEE Main scores and a letter of recommendation are optional",
+                "For Economics, Physics, Mathematics or Computer Science majors: Class XI-XII Mathematics, or the required grade in Calculus (MAT 1000)"
+              ]
+            },
+            "applicationSteps": [
+              "Register and submit the undergraduate application at application.ashoka.edu.in within a round deadline, with family details, Class X to XII scores, non-academic engagement and a personal essay.",
+              "Sit the mandatory On-the-Spot Essay and the Ashoka Aptitude Assessment on the date set for your round.",
+              "If shortlisted after the holistic review, attend an interview with an admissions panel.",
+              "Receive a decision: a firm or conditional offer, a waitlist place, a deferred decision or a denial. After a firm offer, you can apply for need-based financial aid.",
+              "Confirm the offer by paying the offer confirmation fee, which includes the refundable admissions fee, security and meal deposit and acceptance fee, then the Semester 1 fee by its deadline.",
+              "Ask the Office of Admissions for a visa letter and apply for an Indian student visa at the Indian embassy in your country."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class X marksheet",
+                "Class XII final or predicted marksheet, or IB or Cambridge predicted grades",
+                "Optional SAT, ACT, CUET or JEE Main score report"
+              ],
+              "application": [
+                "Online application with student and family details",
+                "Personal essay and details of non-academic engagement",
+                "A valid government-issued ID, such as a passport",
+                "Optional recommender details"
+              ]
+            },
+            "deadlinesNote": "The 2026 cycle had four rounds, with deadlines of 26 November 2025, 21 January, 22 April and 31 May 2026, and classes began on 24 August 2026. Ashoka advises international applicants to use Rounds 1 or 2. 2027 dates are not yet published.",
+            "visaConsiderations": [
+              "An Indian student visa is required; the Office of Admissions issues a visa letter on request after the offer is accepted.",
+              "Foreign nationals staying more than 180 days must register on the e-FRRO portal within 14 days of arrival.",
+              "A local NRO bank account needs the FRRO certificate, passport and visa, and is used for visa renewals."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-09-21",
+          "feeNotes": "First year for the August 2027 intake: tuition INR 10,74,000, residence INR 2,11,000 and essential services INR 5,400, a total of INR 12,90,400. Meals are charged separately: a fixed minimum of INR 10,000 a semester, with extra meals at about INR 315 a day for three meals. Refundable deposits at offer confirmation are INR 50,000 (admissions fee), INR 75,000 (security and meal deposit) and INR 10,000 (acceptance fee). Books, printing and stationery are charged at actual cost. Fees have risen about 5 to 8 per cent a year recently.",
+          "teachingPhases": [
+            {
+              "phase": "Foundation and exploration",
+              "language": "English",
+              "details": "Nine mandatory Foundation Courses, including Introduction to Critical Thinking, alongside exploratory courses; the major is declared by the end of the third semester."
+            },
+            {
+              "phase": "Major, minor and internships",
+              "language": "English",
+              "details": "At least 72 credits in the major and 160 credits overall, most courses worth 4 credits, with an optional 24-credit minor, co-curricular courses and at least 2 internship credits."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "eligibility",
+      "claimText": "Mandatory: student and family details, Class X-XII scores, non-academic engagement, personal essay; optional SAT/ACT/CUET/JEE Mains and a letter of recommendation; mandatory On-the-Spot Essay (30 min) and Ashoka Aptitude Assessment (90 min, 40 MCQs).",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Admissions Process and Key Policies",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-admissions-process-key-policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "eligibility",
+      "claimText": "One application per cycle; no deferral; no transfer credit at admission; IB and Cambridge applicants without final grades must provide self-predicted grades and counsellor details; Mathematics requirement or MAT 1000 Calculus for Economics, Physics, Mathematics and Computer Science majors.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate Admissions Related Policies",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-admissions-related-policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "admissions",
+      "claimText": "The international admissions page states the application process is open to students from across the world, that the cycle has four rounds, and advises international students to apply in Rounds 1 and 2 for visa time.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students",
+      "sourceUrl": "https://www.ashoka.edu.in/admissions/undergraduate-international-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "admissions",
+      "claimText": "Decisions are confirmed offer, conditional offer, waitlist, deferral of decision or denial; need-based scholarship form opens after a firm offer; the Office of Admissions provides a visa letter.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Admissions Process and Key Policies",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-admissions-process-key-policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "intake",
+      "claimText": "Undergraduate Admissions Calendar for August 2026 Intake: deadlines 26 Nov 2025, 21 Jan 2026, 22 Apr 2026, 31 May 2026; last date of admission 5 August 2026; commencement 24 August 2026.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Admissions Timeline",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-students-admissions-timeline/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "fee",
+      "claimText": "International undergraduate fee structure for the August 2027 intake: tuition INR 10,74,000, residence INR 2,11,000, essential services INR 5,400, total INR 12,90,400.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students",
+      "sourceUrl": "https://www.ashoka.edu.in/admissions/undergraduate-international-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "The linked fee-structure sub-page carries the same INR figures labelled for the August 2026 intake with an 'AY 2025-2026' column header and inconsistent USD conversions; the main international page and the domestic UG page both label INR 10,74,000 as the August 2027 / AY 2027-28 figure. USD omitted from public copy except the ECB-rate conversion."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "fee",
+      "claimText": "All fee payments are made in INR; refundable admissions fee INR 50,000, security and meal deposit INR 75,000 and acceptance fee INR 10,000 at offer confirmation; meals minimum INR 10,000 per semester, full day about INR 315; fee rose about 5-8% a year over the last three years.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Fee Structure",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-students-fee-structure/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "fee",
+      "claimText": "The domestic undergraduate fee structure for the August 2027 intake lists the same tuition of INR 10,74,000 and total of INR 12,90,400.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate Students (admissions and August 2027 fee structure)",
+      "sourceUrl": "https://www.ashoka.edu.in/admissions/undergraduate-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "medium",
+      "claimText": "English Language Teaching is recognised as the sole medium of instruction at Ashoka.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Centre for Writing and Communication: Teaching",
+      "sourceUrl": "https://www.ashoka.edu.in/cwc-teaching/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "ashoka-university",
+      "programmeSlug": "ashoka-undergraduate-ba-bsc-honours",
+      "publicField": "programmeStructure",
+      "claimText": "Four-year B.A./B.Sc. Honours and Honours with Research; nine mandatory Foundation Courses; major declared by the third semester; 13 pure and 12 interdisciplinary majors; minimum 72 major credits, 160 total; minimum 2 internship credits.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate Programme (structure and curriculum)",
+      "sourceUrl": "https://www.ashoka.edu.in/academic-programme/undergraduate/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "identity",
+      "claimText": "Ashoka University, Plot No. 2, Rajiv Gandhi Education City, Kundli, NCR, Sonepat, Haryana appears on the UGC state-wise list of private universities under Haryana (S.No. 109).",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "establishedYear",
+      "claimText": "The UGC consolidated list of all universities records Ashoka University, Sonepat (Private University) with the date 02.05.2014.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Consolidated list of all universities (as on 25.01.2023)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Year 2014 also matches Ashoka's own founding narrative; the notification date is read from the consolidated list layout."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC lists Ashoka University among the private universities of Haryana.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - State-wise List of Private Universities (as on 25.11.2022)",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Private%20University/Consolidated_List_Private_Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "recognitionBadges",
+      "claimText": "India Rankings 2025: University (Rank-band: 101-150) includes Ashoka University, Sonepat, Haryana.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 - University category, rank band 101-150",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/UniversityRanking150.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "recognitionBadges",
+      "claimText": "India Rankings 2025: Overall (Rank-band: 151-200) includes Ashoka University, Sonepat, Haryana.",
+      "status": "verified",
+      "sourceLabel": "NIRF India Rankings 2025 - Overall category, rank band 151-200",
+      "sourceUrl": "https://www.nirfindia.org/Rankings/2025/OverallRanking200.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Ashoka University does not appear on the NAAC Universities sheet of institutions with valid accreditation as on 14-08-2025, nor in any NAAC Standing Committee result PDF through the 265th SC (12 Dec 2025).",
+      "status": "verified",
+      "sourceLabel": "NAAC - Institutions with valid accreditation as on 14-08-2025",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Positive negative finding; third-party pages claiming an NAAC 'A' grade are not corroborated by the regulator."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "summary",
+      "claimText": "2,800+ students from 28 states, 287+ Indian cities and 21 other countries; liberal, multidisciplinary education.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - About Us",
+      "sourceUrl": "https://www.ashoka.edu.in/about-us/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "campusLifestyle",
+      "claimText": "International students represent over 20 countries including Bangladesh, Kenya, Ethiopia, Bhutan, Nepal, UAE, Afghanistan, Kuwait, Rwanda, Burundi and Brazil.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students",
+      "sourceUrl": "https://www.ashoka.edu.in/admissions/undergraduate-international-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "campusLifestyle",
+      "claimText": "13 pure and 12 interdisciplinary majors, minors/concentrations, nine mandatory foundation courses.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate Programme (structure and curriculum)",
+      "sourceUrl": "https://www.ashoka.edu.in/academic-programme/undergraduate/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "cityProfile",
+      "claimText": "Pick-up service with banner and emailed code; Sonipat has extreme climate; monthly estimate transport INR 3,700, food 5,000, books 2,000, personal 5,000, total from INR 21,000 (USD 250); SIM needs visa and passport.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Guide to Successfully Transitioning to Ashoka (international students)",
+      "sourceUrl": "https://www.ashoka.edu.in/transitioning-to-ashoka/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "practicalExposure",
+      "claimText": "Internships of 2 or 4 credits with at least 2 mandatory; co-curricular courses carry 2 credits; 160 credits to graduate.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate Programme (structure and curriculum)",
+      "sourceUrl": "https://www.ashoka.edu.in/academic-programme/undergraduate/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "practicalExposure",
+      "claimText": "Academic Bridge Programme: fully funded three-week programme with workshops from the Career Development Office, Office of Learning Support and Ashoka Centre for Well Being; interdisciplinary majors including Economics and Finance, PPE, Computer Science and Entrepreneurial Leadership.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Admissions Process and Key Policies",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-admissions-process-key-policies/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21",
+      "internalNotes": "Interdisciplinary major names from the Undergraduate Admissions Related Policies page."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "hostelOverview",
+      "claimText": "Residence cost includes room and utilities such as water, electricity (100% backup and air conditioning), pantry and gymnasium; special permission needed to stay during vacations; on-campus housing details given at registration.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Fee Structure",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-students-fee-structure/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "dietarySupport",
+      "claimText": "Meals: fixed minimum INR 10,000 per semester; additional meals pro rata via meal coupons at about INR 315 per day; food budget about INR 5,000 per month outside mess meals.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students: Fee Structure",
+      "sourceUrl": "https://www.ashoka.edu.in/undergraduate-international-students-fee-structure/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "safetyOverview",
+      "claimText": "Ashoka provides health insurance for all students; airport pick-up by personnel with a banner and code; warning not to follow unofficial persons or hand over passports; e-FRRO within 14 days.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Guide to Successfully Transitioning to Ashoka (international students)",
+      "sourceUrl": "https://www.ashoka.edu.in/transitioning-to-ashoka/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "studentSupport",
+      "claimText": "AUISA supports international students, guides check-in and provides buddies; Resident Assistants and Cohort Leaders help with course registration.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Guide to Successfully Transitioning to Ashoka (international students)",
+      "sourceUrl": "https://www.ashoka.edu.in/transitioning-to-ashoka/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "ashoka-university",
+      "publicField": "faq",
+      "claimText": "Scholarship policies and processes for international students are the same as for Indian students; need-based scholarship is available only after an offer of admission.",
+      "status": "verified",
+      "sourceLabel": "Ashoka University - Undergraduate International Students",
+      "sourceUrl": "https://www.ashoka.edu.in/admissions/undergraduate-international-students/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-09-21",
+      "reviewBy": "2027-03-21"
+    }
+  ]
+}
