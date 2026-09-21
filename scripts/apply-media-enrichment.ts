@@ -27,6 +27,8 @@ type ManifestAsset = {
   sourceType: string;
   rightsBasis: string;
   proposedPublicId: string;
+  /** Reviewed manifests mark assets with no rights-safe source as `hold`; those carry no sourceUrl. */
+  status?: string;
 };
 type ManifestEntry = {
   universitySlug: string;
@@ -132,6 +134,10 @@ async function main() {
 
   for (const entry of manifest.entries) {
     for (const asset of entry.assets) {
+      if (asset.status === "hold" || !asset.sourceUrl) {
+        console.log(`  [skip] ${entry.universitySlug} ${asset.kind}: held in manifest (no source).`);
+        continue;
+      }
       let result: { secure_url: string; public_id: string; bytes: number } | undefined;
       let lastError: unknown;
 

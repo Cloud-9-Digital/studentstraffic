@@ -1,76 +1,69 @@
 {
-  "appliedAt": "2026-09-21T07:22:58.137Z",
+  "appliedAt": "2026-09-21T11:35:32.341Z",
   "uploads": {
-    "attempted": 18,
-    "succeeded": 16,
-    "failed": 2
+    "attempted": 17,
+    "succeeded": 17,
+    "failed": 0
   },
   "database": {
-    "updated": 8,
+    "updated": 9,
     "notFoundInDb": []
   },
   "updatedUniversities": [
     {
-      "universitySlug": "amity-university-noida",
+      "universitySlug": "sharda-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "universitySlug": "world-university-of-design",
+      "logoUpdated": true,
+      "coverUpdated": false,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "chandigarh-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "lovely-professional-university",
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "manipal-academy-of-higher-education",
+      "universitySlug": "jss-academy-of-higher-education-and-research",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "op-jindal-global-university",
+      "universitySlug": "christ-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "srm-institute-of-science-and-technology",
+      "universitySlug": "shiv-nadar-institution-of-eminence",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "symbiosis-international-university",
+      "universitySlug": "ashoka-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "vellore-institute-of-technology",
+      "universitySlug": "flame-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     }
   ],
-  "uploadFailures": [
-    {
-      "universitySlug": "kiit-deemed-to-be-university",
-      "kind": "logo",
-      "sourceUrl": "https://www.kiit.ac.in/wp-content/uploads/2022/10/KIIT-logo-HD.png",
-      "error": "Client fetch failed: HTTP 403"
-    },
-    {
-      "universitySlug": "kiit-deemed-to-be-university",
-      "kind": "cover",
-      "sourceUrl": "https://kiit.ac.in/wp-content/uploads/2023/04/KIIT-University-Bhubaneswar.jpeg",
-      "error": "Client fetch failed: HTTP 403"
-    }
-  ]
+  "uploadFailures": []
 }
