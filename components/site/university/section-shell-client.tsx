@@ -36,10 +36,8 @@ type Props = {
   logoInitials: string;
   primaryProgramShortName?: string;
   courseSlug?: string;
-  feeLabel: string;
   feeValue: string;
   hasFee: boolean;
-  intakeLabel: string;
   recognitionBadge?: string;
   lastVerifiedAt: string;
   author?: Author | null;
@@ -87,12 +85,6 @@ export function UniversitySectionShellClient(props: Props) {
         activeSectionLabel={activeSection ? SECTION_TITLES[activeSection] : null}
         lastVerifiedAt={props.lastVerifiedAt}
         author={props.author}
-        decisionFacts={activeSection ? [] : [
-          { label: "Location", value: `${props.universityCity}, ${props.countryName}` },
-          { label: "Programme focus", value: props.primaryProgramShortName ?? "Explore programmes" },
-          { label: props.feeLabel, value: props.feeValue },
-          { label: "Next intake", value: props.intakeLabel },
-        ]}
         countrySlug={props.countrySlug}
         courseSlug={props.courseSlug}
       />

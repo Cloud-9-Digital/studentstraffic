@@ -32,7 +32,6 @@ export function UniversityHeroSection({
   activeSectionLabel,
   lastVerifiedAt,
   author,
-  decisionFacts = [],
   countrySlug,
   courseSlug,
 }: {
@@ -45,7 +44,6 @@ export function UniversityHeroSection({
   activeSectionLabel?: string | null;
   lastVerifiedAt: string;
   author?: Author | null;
-  decisionFacts?: Array<{ label: string; value: string }>;
   countrySlug?: string;
   courseSlug?: string;
 }) {
@@ -158,23 +156,6 @@ export function UniversityHeroSection({
               <ShareButton title={universityName} />
             </div>
 
-            {decisionFacts.length > 0 ? (
-              <div className="grid max-w-2xl grid-cols-2 overflow-hidden rounded-2xl border border-white/12 bg-white/[0.06] sm:grid-cols-4">
-                {decisionFacts.map((fact) => (
-                  <div
-                    key={fact.label}
-                    className="min-w-0 border-b border-r border-white/10 px-3 py-3 last:border-r-0 even:border-r-0 sm:border-b-0 sm:even:border-r sm:last:border-r-0"
-                  >
-                    <p className="text-[0.6rem] font-semibold uppercase tracking-[0.13em] text-white/45">
-                      {fact.label}
-                    </p>
-                    <p className="mt-1 text-xs font-semibold leading-5 text-white/90">
-                      {fact.value}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            ) : null}
           </div>
 
           <div className="min-w-0 lg:justify-self-end">

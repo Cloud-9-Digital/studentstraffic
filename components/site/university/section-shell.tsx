@@ -5,7 +5,6 @@ import type { Country, FinderProgram, University } from "@/lib/data/types";
 import type { UniversitySection } from "@/lib/university-sections";
 import {
   formatProgramAnnualFee,
-  getProgramAnnualFeeLabel,
   hasRenderableProgramAnnualFee,
 } from "@/lib/utils";
 
@@ -87,18 +86,12 @@ export function UniversitySectionShell({
       logoInitials={logoInitials}
       primaryProgramShortName={primaryProgramShortName}
       courseSlug={primaryProgram?.course.slug}
-      feeLabel={
-        primaryProgram ? getProgramAnnualFeeLabel(primaryProgram.offering) : "Fee planning"
-      }
       feeValue={
         primaryProgram
           ? formatProgramAnnualFee(primaryProgram.offering, "Fee plan on request")
           : "Available on request"
       }
       hasFee={hasFee}
-      intakeLabel={
-        primaryProgram?.offering.intakeMonths.join(", ") || "Guidance available"
-      }
       recognitionBadge={university.recognitionBadges[0]}
       lastVerifiedAt={lastVerifiedAt}
       author={author}
