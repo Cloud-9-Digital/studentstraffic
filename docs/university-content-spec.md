@@ -28,6 +28,15 @@ None of this requires fabrication — DIT's numbers are all real, sourced facts.
 **research depth and structural decomposition**, not invented detail. Everything below is about
 digging up and organizing more real facts, never padding with generic filler or guessing.
 
+## Programme-level minimum content (2026-09-21)
+
+Every packaged programme, at minimum, needs: official title, level, duration, campus, intake,
+eligibility for international applicants, a fee with explicit status (`confirmed` / `indicative` /
+`on_request`) and its currency basis, teaching language, and its evidence records (source URL,
+source type, verified date per material claim). This is the compact floor for a programme to be
+publishable at all; `admissionsContent` below and the FAQ/narrative guidance further down are the
+target depth once a programme clears this floor.
+
 ## Programme admissions content — required and programme-specific
 
 Every published programme must carry its own `admissionsContent`. This is distinct from the
@@ -74,6 +83,9 @@ from early templated batch scripts. Cleaned up, but the pattern must not recur:
   Prize"-style award or a "Medical Council of Europe"-style body that doesn't actually exist under
   that name. If you can't find independent corroboration that a body is real and actually confers
   the claimed status, omit it rather than include it on the strength of how official it sounds.
+- Verify every accreditation/recognition claim on the regulator's own published list, never from the
+  institution's own site or an aggregator. The institution's site or an aggregator may point you to
+  a claim, but the regulator's list is the only acceptable evidence for it.
 - Facts about clinical/industry partnerships (e.g. a named teaching hospital or company partnership)
   belong in `clinicalExposure`/`teachingHospitals`, not `recognitionBadges`, even when true.
 

@@ -99,3 +99,28 @@ canonical label. Hold it and propose a reviewed taxonomy addition when no exact 
 
 Programme pages and metadata must use the official programme title where the page describes one
 specific university offering. Catalogue and discovery pages may use the canonical programme name.
+
+## Shipping new canonical courses (India batch 3, 2026-09-21)
+
+A catalogue payload must contain at least one university, so new canonical courses are not shipped in
+a courses-only bundle. A new course is shipped in two steps:
+
+1. Add the approved slug, name, short name, stream, level, discipline and aliases to
+   `lib/data/program-taxonomy.ts`, then run `node --import tsx --test tests/program-taxonomy.test.ts`.
+2. Keep the full course record in a reusable research file. The record includes the duration, a
+   generic university-neutral summary, the meta title and the meta description. Copy it verbatim
+   into the `courses` array of every university payload that references the slug. Publishing
+   overwrites the shared course row, so the text must stay identical across bundles.
+
+Batch 3 added 35 parent families: BBA, BCA, MCA, B.Sc. Computer Science, B.Sc. General Sciences,
+M.Tech CSE/Biotechnology/Environmental/Materials/Energy, B.Tech Biotechnology/Environmental,
+polytechnic diplomas, M.Pharm, D.Pharm, BUMS, MD Unani, GNM, M.Sc. Nursing, allied health,
+optometry, social work, religious studies, library science, physical education and M.Sc. Forensic
+Science. Their records are in `research/india-batch3-canonical-courses.json` and the mapping
+rationale is in `research/india-batch3-taxonomy-decisions.md`. Traditional-system postgraduate
+degrees (MD Unani) are not residencies, so the Medical PG / Residency alias rule excludes them.
+
+The publishing fixes for batch 3 added the generic `mcom` record and one more parent family,
+`ba-general-arts` (a B.A. with two or more humanities or social-science subjects fixed at admission,
+the arts counterpart of `bsc-general-sciences`). Do not map a combined-subject B.A. to
+`bachelor-liberal-arts`, which is for declared-major liberal-arts degrees.

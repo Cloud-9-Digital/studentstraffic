@@ -67,10 +67,16 @@ context/tool-loading cost.
 **Current shape:**
 - **Stage A — Discover+Research (one agent, one batch of ~5–8 universities):** dedupes against the
   DB, researches and drafts the whole batch in one call, applying sourcing rules (multi-source,
-  omit-don't-fabricate) as it writes rather than leaving that to a separate step.
+  omit-don't-fabricate) as it writes rather than leaving that to a separate step. For each new
+  university this stage now starts with the programme inventory required by
+  `docs/content-seeding-runbook.md` §1b (`research/<country>-programme-inventory/<slug>.csv` + `.md`)
+  and packages full coverage of every `open_to_international` programme, not a representative sample,
+  resolving taxonomy `GAP:` rows before handing off to Stage B.
 - **Stage B — Verify+Publish (one agent, same batch):** adversarially checks each draft (sources,
-  audience-specific eligibility restrictions, dedup), then itself runs the publish workflow for everything
-  that passes. Holds + logs anything that fails, same as before.
+  audience-specific eligibility restrictions, dedup, programme-inventory coverage and resolved
+  taxonomy gaps, and logo/cover media present and legible), then itself runs the publish workflow —
+  content and media applied in the same session — for everything that passes. Holds + logs anything
+  that fails, same as before.
 
 That's ~2 agent spawns per batch of 6 universities instead of ~13.
 
@@ -94,9 +100,11 @@ sources) rather than double-verifying everything — cheaper and catches systemi
 doubling the cost of every run.
 
 **For program-only additions to already-published universities:** don't run the full discovery
-pipeline. One agent researches the programme facts, packages them in a numbered content migration
-and stops at `validated`. The controlled integrator applies the migration; the historical direct
-`add-program-offerings.mjs` path is not permitted from a research session.
+pipeline, and the programme-inventory-first stage (§1b in the runbook) does not apply — it is scoped
+to net-new university additions. One agent researches the programme facts, packages them in a
+numbered content migration and stops at `validated`. The controlled integrator applies the
+migration; the historical direct `add-program-offerings.mjs` path is not permitted from a research
+session.
 
 ## Content-migration operating model (2026-07-19)
 

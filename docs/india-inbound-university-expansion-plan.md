@@ -69,11 +69,17 @@ institution types and programmes that actively publish international-admission i
 candidate must have:
 
 1. a clear official international admissions route;
-2. published programme pages for the selected UG and/or PG offerings;
-3. current official fee information or an explicit on-request fee state;
-4. verifiable institutional and programme recognition where relevant;
+2. a complete programme inventory built per `docs/content-seeding-runbook.md` §1b
+   (`research/india-programme-inventory/<university-slug>.csv` + `.md`), with every programme whose
+   `intl_status` is `open_to_international` packaged — not a selected subset of UG/PG offerings —
+   and any `GAP:` canonical-course row resolved before packaging;
+3. current official fee information or an explicit on-request fee state, per programme;
+4. verifiable institutional and programme recognition, checked against the regulator's own list
+   (AICTE/UGC/NAAC/NBA/etc. as applicable), never the institution's site or an aggregator;
 5. precise academic, language, entrance-test, nationality, and residency restrictions; and
-6. a rights-safe logo and cover image that can be hosted in Students Traffic Cloudinary.
+6. a rights-safe logo and cover image, checked for legibility, hosted in Students Traffic Cloudinary
+   and applied in the same publish as the content — a missing cover may be held only with a recorded
+   reason.
 
 Prioritise broad programmes with cross-border demand—such as computing, engineering, business,
 sciences, design, public health, and selected health programmes—rather than starting with a

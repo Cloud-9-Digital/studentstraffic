@@ -83,9 +83,19 @@ Keep it current — see "Keeping this doc current" at the bottom.
 All net-new catalogue content now follows a migration-style workflow:
 
 ```text
-research + source bundle (offline) → complete local payload → content-migrations/NNNN-scope/
+research + source bundle (offline) → programme inventory (new universities, see below)
+→ complete local payload with mandatory media → content-migrations/NNNN-scope/
 → npm run content:validate → reviewed commit → npm run content:migrate -- --apply
 ```
+
+**Programme inventory stage (2026-09-21, new universities only).** Before a new university's payload
+is drafted, its full programme portfolio is inventoried under
+`research/<country>-programme-inventory/<university-slug>.csv` (+ a companion `.md` with sources,
+unreachable sources and counts). Every programme with `intl_status=open_to_international` is
+packaged — not a representative sample — and every `GAP:` canonical-course row is resolved in the
+same batch before packaging. Full column list, source order and the aggregator-as-checklist-only
+rule are in `docs/content-seeding-runbook.md` §1b. This does not apply retroactively to universities
+already published before this date.
 
 `manifest.json` identifies the bundle and its `payload.json`. The runner hashes both files, rejects
 any change to an already-applied migration, applies pending migrations in sequence, and records the
@@ -228,7 +238,13 @@ module the content-migration payload schema uses:
   no placeholders such as `Not confirmed` / `TBC` / `Unknown` / `N/A`). There is no `"English"`
   fallback any more.
 - `instructionLanguages` is required, non-empty, and every code must be in
-  `teachingLanguageCodes` (`lib/catalogue-facets.ts`).
+  `teachingLanguageCodes` (`lib/catalogue-facets.ts`). The database enforces the same list in the
+  `normalize_program_medium_fields()` trigger, which also rewrites `medium` to the codes' labels in
+  alphabetical order (e.g. `English / Hindi`). Adding a language therefore needs both the TypeScript
+  code and a migration that replaces the trigger function's allow-list, applied before any bundle
+  that uses it (`drizzle/0079_indian_teaching_languages.sql` added Hindi, Sanskrit, Telugu and Urdu).
+  0079 was applied on its own, not with `drizzle-kit migrate`: the live `__drizzle_migrations`
+  table does not record 0074 or 0076, and 0076 (medium-note backfill) has not been applied.
 - `mediumNote` is optional (10-300 chars when present).
 - Content-migration bundles use the same strict rule, except the 18 frozen, already-applied bundles in
   `LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS` (`scripts/lib/content-migrations.ts`), which parse with the old
@@ -523,6 +539,12 @@ only. The validated catalogue publisher rejects non-Cloudinary public media. Ori
 rights information belong in `universities.media_attribution`; they must not be used as public image
 delivery URLs. Upload media before publication and verify the Cloudinary response. Never use an
 external hotlink or substitute a pixelated favicon for a proper university logo.
+
+**Media is mandatory in the same publish, not a deferred step (2026-09-21).** For every new
+university, logo and cover sources go into the batch media manifest and are applied with
+`scripts/apply-media-enrichment.ts` in the same session as the content apply — see
+`docs/content-seeding-runbook.md` for the full source/legibility/hold rules. A missing cover may be
+held only with a recorded reason; it must not be silently deferred to a later enrichment pass.
 
 ## Medium normalization (2026-09-09)
 

@@ -32,8 +32,9 @@ The public page may use strong design and clear labels, but “best”, “easy�
 ## Canonical workflow
 
 ```text
-Define scope → research official sources → build complete payload → validate everything
-→ publish canonical records atomically → refresh search/cache → QA public URLs
+Define scope → research official sources → build the programme inventory (new universities)
+→ resolve taxonomy gaps → build complete payload with mandatory media
+→ validate everything → publish canonical records atomically → refresh search/cache → QA public URLs
 ```
 
 ### 1. Define scope before research
@@ -90,7 +91,46 @@ assignment: the worker should move to the next non-duplicate discovery candidate
 turn, and the supervisor should relaunch the worker immediately after completion. This keeps the
 research pipeline moving without weakening evidence holds or creating duplicate claims.
 
-### 1b. Keep research offline and create a numbered content migration
+### 1b. Build the programme inventory before packaging (new universities only)
+
+For every **new** university (this stage does not apply to backfilling already-published
+universities), build a complete programme inventory before drafting the publishing payload:
+`research/<country>-programme-inventory/<university-slug>.csv` plus a companion
+`<university-slug>.md` recording sources used, unreachable sources and row counts.
+
+CSV columns: `university_slug, programme_official_title, level, discipline, duration, campus,
+delivery_mode, intl_status, intl_evidence_url, official_source_url, other_sources,
+already_on_site, existing_offering_slug, canonical_course_match, notes`. `intl_status` is one of
+`open_to_international`, `not_open` or `unknown`. `canonical_course_match` is either an existing
+canonical course slug or `GAP:<proposed>`.
+
+Source order:
+
+1. the official site (programme directory, sitemap, prospectus, international-admissions and fee
+   pages);
+2. the destination country's official international-student/regulator sources (for India: Study in
+   India, AICTE, NIRF data files; use the equivalent generic registers for other countries).
+
+Aggregators (for India: Shiksha, Collegedunia, Careers360; use the equivalent aggregators
+elsewhere) are a missed-programme **checklist only** — never cite or copy them as evidence. A
+programme found only on an aggregator must be confirmed on the official site before it can be
+packaged; if it cannot be confirmed, mark it `aggregator_only_unconfirmed` in the CSV and do not
+publish it.
+
+Package every programme whose `intl_status` is `open_to_international` — not a representative
+sample. A programme marked `unknown` needs per-programme verification before packaging, or is held
+with the reason recorded in the inventory `notes`/`.md`. Majors or specialisations chosen only
+after admission inside one umbrella degree (a liberal-arts model) are recorded as `major_within`
+rows under the parent degree, not packaged as separate program offerings.
+
+Resolve every `GAP:` row from the inventory in the same batch, before packaging the migration:
+map a specialisation to an existing parent canonical course where one genuinely fits (e.g. an
+M.Tech specialisation maps to an M.Tech canonical course), and add a genuinely new canonical
+course only with a generic, university-neutral summary — publishing overwrites the shared
+canonical course record, so never write university-specific text into it. A GAP left unresolved
+blocks packaging that programme, not the whole university.
+
+### 1c. Keep research offline and create a numbered content migration
 
 Research agents must not connect to, query or write the production database while researching or
 drafting. They produce one complete source-backed payload under
@@ -143,12 +183,14 @@ Examples:
 - `msc-business-analytics`
 - `mba`
 
-Research the university's complete supported undergraduate and postgraduate portfolio. Master's
-programmes are important catalogue records and must not be omitted simply because a bachelor's
-programme has already been published. Publish only exact canonical matches and retain the official
-award title separately; record unmatched specialisations in
-`research/programme-taxonomy-gaps.md` with the university and official programme source, then hold
-them for taxonomy review.
+Research the university's complete supported undergraduate and postgraduate portfolio — for a new
+university this means every row in its programme inventory (§1b) marked `open_to_international`,
+not a representative handful. Master's programmes are important catalogue records and must not be
+omitted simply because a bachelor's programme has already been published. Publish only exact
+canonical matches and retain the official award title separately. Resolve `GAP:` rows in the same
+batch per §1b; only genuinely unmatched specialisations that cannot be resolved within the batch go
+to `research/programme-taxonomy-gaps.md` with the university and official programme source, held
+for taxonomy review.
 
 Before creating a course, check for an existing equivalent. Do not create duplicate slugs or two
 course rows that mean the same thing. A program offering must map to exactly one canonical course.
@@ -170,7 +212,9 @@ For each university and program, collect separate source records for:
 - work, placement or professional progression.
 
 A university website alone is not enough for visa rules, national recognition or post-study work
-claims. Add the relevant government or regulator source for those claims.
+claims. Add the relevant government or regulator source for those claims. An accreditation or
+recognition claim is always verified on the regulator's own published list, never taken from the
+institution's own marketing or from an aggregator site.
 
 Audience eligibility is programme data, not a global publication gate. Research citizenship,
 residency, nationality, prior-qualification, location and visa restrictions explicitly. A local-only
@@ -244,10 +288,18 @@ Public copy limits and page order are defined in
 [`university-page-architecture.md`](./university-page-architecture.md). Field-level depth and
 research quality rules are defined in [`university-content-spec.md`](./university-content-spec.md).
 
-University media is part of the payload. Prefer an official logo and a high-quality campus/location
-cover from an official media kit, a clearly reusable licensed source, a user-supplied asset or an
-original generated image. Store the source URL, rights basis, verification date and cover alt text.
-Never copy an arbitrary search-result image or publish an asset with unclear usage rights.
+University media is mandatory in the same publish as the content, not an optional later step. Every
+new-university batch needs a logo and a cover source in the batch media manifest before the content
+migration is packaged, and the media must be applied with `scripts/apply-media-enrichment.ts` in the
+same session as the content apply. Prefer an official logo and a high-quality campus/location cover
+from an official media kit, a clearly reusable licensed source, a user-supplied asset or an original
+generated image; each candidate URL must return HTTP 200 with an `image/*` content type — never a
+`/wiki/File:` page or other non-image wrapper. Check every logo for legibility on a white tile: a
+white-on-transparent logo is invisible and must be rejected or recoloured before use. Store the
+source URL, rights basis, verification date and cover alt text. Never copy an arbitrary
+search-result image or publish an asset with unclear usage rights. A missing cover may be held only
+with the reason recorded; a missing cover must never block or delay otherwise-valid content by being
+silently deferred to a later pass.
 
 Student-living media is optional and section-specific. When rights-safe assets exist, provide at most
 one image each for campus environment, accommodation, daily living and safety/support through
@@ -447,6 +499,11 @@ current availability.
   intentionally ignored after their reviewed migration is committed.
 
 ## What belongs in this runbook
+
+The programme-inventory-first workflow (§1b) applies to all future university additions in any
+country, starting 2026-09-21. It does not require backfilling universities already published before
+that date, though a later correction batch for an already-published university may still choose to
+build one.
 
 Update this document when the schema, page architecture, validation rules, content limits, publishing
 workflow or source-quality standard changes. Historical scripts, old prompts and one-off country
