@@ -1,0 +1,676 @@
+[
+  {
+    "slug": "bba",
+    "name": "Bachelor of Business Administration",
+    "shortName": "BBA",
+    "stream": "business",
+    "level": "bachelors",
+    "discipline": "business-administration",
+    "aliases": [
+      "B.B.A.",
+      "Bachelor's in Business Administration",
+      "Bachelor of Management Studies",
+      "BMS",
+      "Bachelor of Business Management"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "The Bachelor of Business Administration is an undergraduate management degree taken after secondary school. Core study covers accounting, finance, marketing, organisational behaviour, human resource management, operations, business law and economics, usually followed by a specialisation such as business analytics, international business, digital marketing, finance or healthcare management, plus an internship or live project. Programmes run for three years in many systems and four years where an honours or research year is added. Graduates move into entry-level management roles or continue to an MBA or a specialist master's degree.",
+    "metaTitle": "BBA (Bachelor of Business Administration) Degrees",
+    "metaDescription": "Compare BBA degrees open to international students: specialisations, entry requirements, duration, teaching language, tuition and intake timing."
+  },
+  {
+    "slug": "bca",
+    "name": "Bachelor of Computer Applications",
+    "shortName": "BCA",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "computer-applications",
+    "aliases": [
+      "B.C.A.",
+      "BCA (Honours)",
+      "Bachelor in Computer Applications"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "The Bachelor of Computer Applications is an undergraduate computing degree focused on programming, software development and applied information technology rather than engineering science. Typical coursework covers programming languages, data structures, database systems, operating systems, computer networks, web and mobile development, software engineering and discrete mathematics, with electives in areas such as data science, cyber security or cloud computing. The degree usually lasts three years, or four with an honours or research year, and commonly leads to software and IT roles or to a Master of Computer Applications.",
+    "metaTitle": "BCA (Bachelor of Computer Applications) Degrees",
+    "metaDescription": "Compare BCA degrees open to international students: programming curriculum, electives, entry requirements, duration, tuition and intake timing."
+  },
+  {
+    "slug": "mca",
+    "name": "Master of Computer Applications",
+    "shortName": "MCA",
+    "stream": "computing-information-systems",
+    "level": "masters",
+    "discipline": "computer-applications",
+    "aliases": [
+      "M.C.A.",
+      "Master in Computer Applications"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The Master of Computer Applications is a two-year postgraduate degree in applied computing, open to graduates who have studied computing or mathematics at undergraduate level. Study covers advanced programming, algorithms, database management, software engineering, computer networks and web technologies, with electives such as machine learning, cloud computing, data analytics and cyber security, and usually a major project or industry internship. Graduates typically work as software developers, systems analysts or IT consultants, and some continue to doctoral research in computer applications.",
+    "metaTitle": "MCA (Master of Computer Applications) Programmes",
+    "metaDescription": "Compare MCA programmes open to international students: eligibility, specialisations, project work, duration, tuition and intake timing."
+  },
+  {
+    "slug": "bsc-computer-science",
+    "name": "B.Sc. in Computer Science",
+    "shortName": "B.Sc. Computer Science",
+    "stream": "computing-information-systems",
+    "level": "bachelors",
+    "discipline": "computer-science",
+    "aliases": [
+      "Bachelor of Science in Computer Science",
+      "BSc (Hons) Computer Science",
+      "BSc Data Science"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A B.Sc. in Computer Science is a science-faculty bachelor's degree in the theory and practice of computing. The curriculum covers programming, data structures and algorithms, discrete mathematics, computer architecture, operating systems, databases, networks and software engineering, with electives in artificial intelligence, data science, cyber security or graphics. It differs from a B.E./B.Tech by placing more weight on mathematics and computing theory and less on engineering design. Programmes last three or four years and lead to software, data and IT roles or to master's study.",
+    "metaTitle": "B.Sc. Computer Science Degrees for International Students",
+    "metaDescription": "Compare B.Sc. Computer Science degrees open to international students: curriculum, electives, entry subjects, duration, tuition and intakes."
+  },
+  {
+    "slug": "bsc-general-sciences",
+    "name": "B.Sc. in General Sciences",
+    "shortName": "B.Sc. General Sciences",
+    "stream": "natural-sciences",
+    "level": "bachelors",
+    "discipline": "general-sciences",
+    "aliases": [
+      "B.Sc. (General)",
+      "B.Sc. Combined Sciences",
+      "Bachelor of Science (Multidisciplinary)",
+      "B.Sc. PCM"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A B.Sc. in General Sciences is a bachelor's degree in which students study two or three science subjects together, such as physics, chemistry, mathematics, botany, zoology or computer science, instead of a single-subject honours degree. Some programmes let students choose one of the subjects as a major after admission. The degree builds a broad base in laboratory work, mathematics and scientific method and usually lasts three years, or four with an honours or research year. Graduates often continue to a subject-specific master's degree, teacher education or science-based employment.",
+    "metaTitle": "B.Sc. General Sciences Degrees for International Students",
+    "metaDescription": "Compare B.Sc. General Sciences degrees open to international students: subject combinations, entry requirements, duration and tuition."
+  },
+  {
+    "slug": "me-mtech-computer-science-engineering",
+    "name": "M.E./M.Tech in Computer Science and Engineering",
+    "shortName": "M.E./M.Tech CSE",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "computer-science-engineering",
+    "aliases": [
+      "Master of Technology in Computer Science and Engineering",
+      "Master of Engineering in Computer Science",
+      "M.Tech Computer Engineering",
+      "M.Tech Artificial Intelligence"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The M.E./M.Tech in Computer Science and Engineering is a postgraduate engineering degree for graduates in computer science, information technology or a related branch. Coursework covers advanced algorithms, distributed and parallel systems, machine learning, computer networks, security and software systems, and many programmes offer specialisations such as artificial intelligence, data science or cyber security. The second year is usually a research dissertation or industry project. Programmes normally last two years, while integrated five-year versions admit students after secondary school.",
+    "metaTitle": "M.E./M.Tech CSE Programmes for International Students",
+    "metaDescription": "Compare M.E./M.Tech CSE programmes open to international students: specialisations, eligibility, dissertation, duration, tuition and intakes."
+  },
+  {
+    "slug": "be-btech-biotechnology",
+    "name": "B.E./B.Tech in Biotechnology",
+    "shortName": "B.E./B.Tech Biotechnology",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "biotechnology-engineering",
+    "aliases": [
+      "Bachelor of Technology in Biotechnology",
+      "Bachelor of Engineering in Biotechnology",
+      "BEng Biotechnology",
+      "B.Tech Bioinformatics"
+    ],
+    "displayOrder": 0,
+    "durationYears": 4,
+    "summary": "The B.E./B.Tech in Biotechnology is an undergraduate engineering degree that applies engineering principles to living systems. Students study biochemistry, microbiology, molecular biology and genetic engineering alongside bioprocess engineering, fermentation technology, downstream processing, bioinformatics and engineering mathematics, with substantial laboratory work and an industry or research project. It is usually a four-year programme entered after secondary school with physics, chemistry and mathematics or biology. Graduates work in biopharmaceutical, food, agricultural and environmental biotechnology or continue to M.Tech or research study.",
+    "metaTitle": "B.E./B.Tech Biotechnology for International Students",
+    "metaDescription": "Compare B.E./B.Tech Biotechnology degrees open to international students: curriculum, entry subjects, duration, tuition and intakes."
+  },
+  {
+    "slug": "me-mtech-biotechnology",
+    "name": "M.E./M.Tech in Biotechnology",
+    "shortName": "M.E./M.Tech Biotechnology",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "biotechnology-engineering",
+    "aliases": [
+      "Master of Technology in Biotechnology",
+      "M.Tech Bioinformatics",
+      "M.Tech Computational Biology"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The M.E./M.Tech in Biotechnology is a postgraduate engineering degree for graduates in biotechnology, life sciences, chemical engineering or a related field. Advanced study covers bioprocess and fermentation engineering, genetic engineering, protein and enzyme technology, bioinformatics and computational biology, and biosafety and regulation, with a research dissertation in the final year. Some programmes focus on the computational side of biology. The degree normally lasts two years and prepares graduates for research, development and production roles in the biotechnology and pharmaceutical sectors or for doctoral study.",
+    "metaTitle": "M.E./M.Tech Biotechnology for International Students",
+    "metaDescription": "Compare M.E./M.Tech Biotechnology programmes open to international students: eligibility, research focus, duration, tuition and intakes."
+  },
+  {
+    "slug": "be-btech-environmental-engineering",
+    "name": "B.E./B.Tech in Environmental Engineering",
+    "shortName": "B.E./B.Tech Environmental",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "environmental-engineering",
+    "aliases": [
+      "Bachelor of Technology in Environmental Engineering",
+      "BEng Environmental Engineering",
+      "Environmental and Sustainability Engineering"
+    ],
+    "displayOrder": 0,
+    "durationYears": 4,
+    "summary": "The B.E./B.Tech in Environmental Engineering is an undergraduate engineering degree in protecting air, water and land and designing sustainable infrastructure. The curriculum combines engineering mathematics, fluid mechanics and chemistry with water and wastewater treatment, air-pollution control, solid-waste management, environmental impact assessment, hydrology and sustainability, supported by laboratory work and design projects. It usually lasts four years after secondary school with physics, chemistry and mathematics. Graduates work in environmental consultancy, utilities, regulators and industry or continue to postgraduate study.",
+    "metaTitle": "B.E./B.Tech Environmental Engineering Degrees",
+    "metaDescription": "Compare B.E./B.Tech Environmental Engineering degrees open to international students: curriculum, entry subjects, duration and tuition."
+  },
+  {
+    "slug": "me-mtech-environmental-engineering",
+    "name": "M.E./M.Tech in Environmental Engineering",
+    "shortName": "M.E./M.Tech Environmental",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "environmental-engineering",
+    "aliases": [
+      "Master of Technology in Environmental Engineering",
+      "M.Tech Environmental Science and Engineering",
+      "MSc Environmental Engineering"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The M.E./M.Tech in Environmental Engineering is a postgraduate engineering degree for graduates in civil, chemical or environmental engineering or a related science. Advanced study covers water and wastewater treatment design, air-quality management, solid and hazardous waste engineering, environmental modelling, impact and risk assessment, and health and safety management, with a research dissertation in the final year. The degree normally lasts two years and leads to roles in environmental consultancy, pollution-control agencies, utilities and industry, or to doctoral research.",
+    "metaTitle": "M.E./M.Tech Environmental Engineering Programmes",
+    "metaDescription": "Compare M.E./M.Tech Environmental Engineering programmes open to international students: eligibility, research areas, duration and tuition."
+  },
+  {
+    "slug": "me-mtech-materials-engineering",
+    "name": "M.E./M.Tech in Materials Engineering",
+    "shortName": "M.E./M.Tech Materials",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "materials-engineering",
+    "aliases": [
+      "Master of Technology in Materials Science and Engineering",
+      "M.Tech Nanotechnology",
+      "M.Tech Material Science and Technology",
+      "MSc Materials Engineering"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The M.E./M.Tech in Materials Engineering is a postgraduate engineering degree in the structure, properties, processing and performance of materials. Study covers metals, ceramics, polymers, composites and nanomaterials, materials characterisation, thermodynamics and kinetics, electronic and functional materials, and nanotechnology, with a research dissertation in the final year. It suits graduates in materials, metallurgical, mechanical or chemical engineering, or in physics or chemistry. Programmes normally last two years; integrated five-year versions admit students after secondary school.",
+    "metaTitle": "M.E./M.Tech Materials Engineering Programmes",
+    "metaDescription": "Compare M.E./M.Tech Materials Engineering programmes open to international students: eligibility, research areas, duration and tuition."
+  },
+  {
+    "slug": "me-mtech-energy-engineering",
+    "name": "M.E./M.Tech in Energy Engineering",
+    "shortName": "M.E./M.Tech Energy",
+    "stream": "engineering",
+    "level": "masters",
+    "discipline": "energy-engineering",
+    "aliases": [
+      "Master of Technology in Energy Science and Technology",
+      "M.Tech Renewable Energy",
+      "MSc Energy Engineering"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The M.E./M.Tech in Energy Engineering is a postgraduate engineering degree in producing, converting, storing and managing energy. Coursework typically covers thermodynamics and heat transfer, solar, wind and bioenergy systems, energy storage and batteries, power systems and grid integration, energy efficiency and auditing, and energy policy, followed by a research dissertation. It suits graduates in mechanical, electrical or chemical engineering or the physical sciences. The degree normally lasts two years and leads to roles in renewable-energy development, utilities and energy consultancy, or to research.",
+    "metaTitle": "M.E./M.Tech Energy Engineering Programmes",
+    "metaDescription": "Compare M.E./M.Tech Energy Engineering programmes open to international students: renewable-energy focus, eligibility, duration and tuition."
+  },
+  {
+    "slug": "diploma-civil-engineering",
+    "name": "Diploma in Civil Engineering",
+    "shortName": "Diploma Civil Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "civil-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Civil Engineering",
+      "Civil Engineering Diploma"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A Diploma in Civil Engineering is a sub-degree technical qualification, often taught at polytechnics, that trains civil-engineering technicians and supervisors. Students learn surveying, building materials and construction, structural mechanics, concrete technology, soil mechanics, hydraulics, estimating and costing, and technical drawing, with workshop practice and site training. In many systems it takes about three years after lower-secondary school or less after upper-secondary school, and it can allow lateral entry into the second year of a civil-engineering degree. Graduates work as site supervisors, draughtspersons and junior engineers.",
+    "metaTitle": "Diploma Civil Engineering for International Students",
+    "metaDescription": "Compare Diploma Civil Engineering programmes open to international students: entry level, curriculum, lateral-entry routes, duration and fees."
+  },
+  {
+    "slug": "diploma-mechanical-engineering",
+    "name": "Diploma in Mechanical Engineering",
+    "shortName": "Diploma Mechanical Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "mechanical-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Mechanical Engineering",
+      "Diploma in Production Engineering",
+      "Mechanical Engineering Diploma"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A Diploma in Mechanical Engineering is a sub-degree technical qualification, often taught at polytechnics, that trains mechanical and production technicians. Students learn engineering drawing, workshop technology, manufacturing processes, thermal engineering, strength of materials, machine design, fluid machines and maintenance, with extensive practical and industrial training. Related diplomas in manufacturing and product technology share much of this base. The diploma typically lasts about three years after lower-secondary school and can allow lateral entry into a mechanical-engineering degree. Graduates work in production, maintenance and quality roles.",
+    "metaTitle": "Diploma Mechanical Engineering for International Students",
+    "metaDescription": "Compare Diploma Mechanical Engineering programmes open to international students: entry level, workshop training, duration and fees."
+  },
+  {
+    "slug": "diploma-electrical-electronics-engineering",
+    "name": "Diploma in Electrical and Electronics Engineering",
+    "shortName": "Diploma Electrical & Electronics",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "electrical-electronics-engineering",
+    "aliases": [
+      "Diploma in Electrical Engineering",
+      "Diploma in Electronics Engineering",
+      "Polytechnic Diploma in Electrical Engineering"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A Diploma in Electrical and Electronics Engineering is a sub-degree technical qualification that trains electrical and electronics technicians. Depending on the branch, students learn electrical circuits and machines, power generation and distribution, wiring and installation, measurement and instrumentation, analogue and digital electronics, microcontrollers and communication basics, with laboratory and industrial training. The diploma typically lasts about three years after lower-secondary school and can allow lateral entry into an electrical or electronics degree. Graduates work as electrical, electronics and maintenance technicians.",
+    "metaTitle": "Diploma Electrical and Electronics Engineering Programmes",
+    "metaDescription": "Compare Diploma Electrical & Electronics programmes open to international students: branches, entry level, duration, lateral entry and fees."
+  },
+  {
+    "slug": "diploma-computer-engineering",
+    "name": "Diploma in Computer Engineering",
+    "shortName": "Diploma Computer Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "computer-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Computer Engineering",
+      "Diploma in Information Technology",
+      "Diploma in Information and Communication Technology"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A Diploma in Computer Engineering is a sub-degree technical qualification that trains computer and IT technicians. Students learn programming, digital electronics, computer hardware and maintenance, operating systems, databases, networking and web development, with laboratory work and an industry project; closely related diplomas in information technology or information and communication technology cover similar ground. The diploma typically lasts about three years after lower-secondary school and can allow lateral entry into a computer-engineering degree. Graduates work in IT support, networking and junior development roles.",
+    "metaTitle": "Diploma Computer Engineering for International Students",
+    "metaDescription": "Compare Diploma Computer Engineering programmes open to international students: curriculum, entry level, lateral entry, duration and fees."
+  },
+  {
+    "slug": "diploma-chemical-engineering",
+    "name": "Diploma in Chemical Engineering",
+    "shortName": "Diploma Chemical Engineering",
+    "stream": "engineering",
+    "level": "diploma",
+    "discipline": "chemical-engineering",
+    "aliases": [
+      "Polytechnic Diploma in Chemical Engineering",
+      "Chemical Engineering Diploma"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A Diploma in Chemical Engineering is a sub-degree technical qualification that trains process-plant technicians for the chemical, petrochemical, pharmaceutical and fertiliser industries. Students learn industrial chemistry, material and energy balances, fluid flow, heat and mass transfer, unit operations, process instrumentation and plant safety, with laboratory and in-plant training. The diploma typically lasts about three years after lower-secondary school and can allow lateral entry into a chemical-engineering degree. Graduates work as plant operators, process technicians and laboratory or quality staff.",
+    "metaTitle": "Diploma Chemical Engineering for International Students",
+    "metaDescription": "Compare Diploma Chemical Engineering programmes open to international students: curriculum, entry level, plant training, duration and fees."
+  },
+  {
+    "slug": "mpharm",
+    "name": "Master of Pharmacy",
+    "shortName": "M.Pharm",
+    "stream": "pharmacy",
+    "level": "masters",
+    "discipline": "pharmacy",
+    "aliases": [
+      "M. Pharm.",
+      "MPharm (postgraduate)",
+      "Master of Pharmacy (Postgraduate)"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The Master of Pharmacy is a two-year postgraduate degree for holders of a Bachelor of Pharmacy. Students specialise in one branch, such as pharmaceutics, pharmacology, pharmaceutical chemistry, pharmaceutical analysis, quality assurance, regulatory affairs, pharmacognosy or pharmacy practice, combining advanced coursework with a research project in the final year. It is different from the integrated Master of Pharmacy, a first professional degree entered directly after secondary school. Graduates work in drug development, manufacturing, quality and regulatory roles, clinical pharmacy and teaching, or continue to doctoral research.",
+    "metaTitle": "M.Pharm (Master of Pharmacy) for International Students",
+    "metaDescription": "Compare M.Pharm programmes open to international students: specialisations, B.Pharm eligibility, research project, duration and tuition."
+  },
+  {
+    "slug": "dpharm",
+    "name": "Diploma in Pharmacy",
+    "shortName": "D.Pharm",
+    "stream": "pharmacy",
+    "level": "diploma",
+    "discipline": "pharmacy",
+    "aliases": [
+      "D. Pharm",
+      "Pharmacy Diploma",
+      "Diploma in Unani Pharmacy"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "A Diploma in Pharmacy is an entry-level pharmacy qualification taken after secondary school with science subjects. Students learn pharmaceutics, pharmaceutical chemistry, pharmacognosy, pharmacology, human anatomy and physiology, dispensing and community pharmacy practice, with practical training in a hospital or community pharmacy. Some diplomas prepare students for pharmacy in a traditional medicine system instead. The diploma usually lasts about two years. Whether it leads to registration as a pharmacist depends on the regulator in the country where the graduate intends to work, so international students should check this before applying.",
+    "metaTitle": "D.Pharm (Diploma in Pharmacy) for International Students",
+    "metaDescription": "Compare D.Pharm programmes open to international students: entry subjects, practical training, duration, tuition and recognition questions."
+  },
+  {
+    "slug": "bums",
+    "name": "Bachelor of Unani Medicine and Surgery",
+    "shortName": "BUMS",
+    "stream": "medicine",
+    "level": "bachelors",
+    "discipline": "unani-medicine",
+    "aliases": [
+      "B.U.M.S.",
+      "Kamil-e-Tib-o-Jarahat",
+      "Unani Medicine degree"
+    ],
+    "displayOrder": 0,
+    "durationYears": 5,
+    "summary": "The Bachelor of Unani Medicine and Surgery is a professional undergraduate degree in the Unani system of medicine, one of the traditional medical systems recognised in India. Students study anatomy, physiology, pathology and pharmacology alongside Unani principles, Unani pharmacology, regimenal therapy, and clinical medicine and surgery, followed by a compulsory rotating internship. In India the course lasts about five and a half years including internship and is regulated by the National Commission for Indian System of Medicine. The degree is not an MBBS, and recognition to practise differs widely between countries.",
+    "metaTitle": "BUMS (Unani Medicine) for International Students",
+    "metaDescription": "Compare BUMS programmes open to international students: Unani curriculum, internship, entrance requirements, recognition, duration and fees."
+  },
+  {
+    "slug": "md-unani",
+    "name": "M.D. in Unani Medicine",
+    "shortName": "MD Unani",
+    "stream": "medicine",
+    "level": "masters",
+    "discipline": "unani-medicine",
+    "aliases": [
+      "MD (Unani)",
+      "Mahir-e-Tib",
+      "Postgraduate Unani Medicine"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "The M.D. in Unani Medicine is a postgraduate clinical degree in the Unani system of medicine, open to holders of a Bachelor of Unani Medicine and Surgery. Students specialise in one discipline, such as Unani internal medicine, pharmacology, preventive and social medicine, regimenal therapy, paediatrics or obstetrics and gynaecology, combining advanced coursework, supervised clinical work and a dissertation. In India the course lasts three years and is regulated by the National Commission for Indian System of Medicine. It is distinct from an MD in modern medicine, and recognition to practise differs between countries.",
+    "metaTitle": "MD Unani (M.D. in Unani Medicine) Programmes",
+    "metaDescription": "Compare MD Unani programmes open to international students: specialities, BUMS eligibility, dissertation, recognition, duration and fees."
+  },
+  {
+    "slug": "diploma-general-nursing-midwifery",
+    "name": "Diploma in General Nursing and Midwifery",
+    "shortName": "GNM",
+    "stream": "nursing",
+    "level": "diploma",
+    "discipline": "nursing",
+    "aliases": [
+      "G.N.M.",
+      "DGNM",
+      "General Nursing and Midwifery"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "The Diploma in General Nursing and Midwifery is a nursing qualification taken after secondary school that prepares students for general nursing and midwifery practice. Study covers anatomy and physiology, fundamentals of nursing, medical-surgical, community health, mental health, child health and midwifery nursing, with extensive supervised clinical placements in hospitals and community settings. The diploma usually lasts about three years. It is a lower qualification than a B.Sc. Nursing, and registration, further study and overseas recognition depend on the nursing regulators involved, which international students should confirm first.",
+    "metaTitle": "GNM (General Nursing and Midwifery) Diploma Programmes",
+    "metaDescription": "Compare GNM nursing diplomas open to international students: clinical training, entry requirements, duration, recognition and tuition."
+  },
+  {
+    "slug": "msc-nursing",
+    "name": "M.Sc. Nursing",
+    "shortName": "M.Sc. Nursing",
+    "stream": "nursing",
+    "level": "masters",
+    "discipline": "nursing",
+    "aliases": [
+      "Master of Science in Nursing",
+      "MSN",
+      "Master of Nursing"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The M.Sc. Nursing is a postgraduate degree for registered nurses who hold a bachelor's degree in nursing. Students specialise in a clinical field such as medical-surgical, community health, paediatric, psychiatric or obstetric and gynaecological nursing, or in critical care, and study advanced nursing practice, nursing education, administration and research methods, with supervised clinical practice and a dissertation. The degree normally lasts two years. Graduates work as clinical nurse specialists, nurse educators and nursing managers; the right to practise still depends on registration with the relevant nursing regulator.",
+    "metaTitle": "M.Sc. Nursing Programmes for International Students",
+    "metaDescription": "Compare M.Sc. Nursing programmes open to international students: specialities, eligibility, clinical practice, duration and tuition."
+  },
+  {
+    "slug": "bsc-allied-health-sciences",
+    "name": "B.Sc. in Allied Health Sciences",
+    "shortName": "B.Sc. Allied Health Sciences",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "allied-health-sciences",
+    "aliases": [
+      "Bachelor of Allied Health Sciences",
+      "B.Sc. Anaesthesia and Operation Theatre Technology",
+      "B.Sc. Medical Imaging Technology",
+      "B.Sc. Dialysis Technology",
+      "B.Sc. Cardiac Care Technology",
+      "B.Sc. Clinical Research"
+    ],
+    "displayOrder": 0,
+    "durationYears": 4,
+    "summary": "A B.Sc. in Allied Health Sciences is a bachelor's degree that trains health technologists and health-science professionals who work alongside doctors and nurses. Programmes usually specialise in one field, such as anaesthesia and operation theatre technology, medical imaging and radiography, dialysis, cardiac care, emergency and trauma care, neuro-electrophysiology or clinical research. They combine anatomy, physiology and pathology with specialist theory and supervised hospital training. Many run for three years plus an internship. Registration and recognition rules differ by profession and country.",
+    "metaTitle": "B.Sc. Allied Health Sciences for International Students",
+    "metaDescription": "Compare B.Sc. Allied Health Sciences degrees open to international students: specialisations, clinical training, internship, duration and fees."
+  },
+  {
+    "slug": "msc-allied-health-sciences",
+    "name": "M.Sc. in Allied Health Sciences",
+    "shortName": "M.Sc. Allied Health Sciences",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "allied-health-sciences",
+    "aliases": [
+      "Master of Allied Health Sciences",
+      "M.Sc. Medical Laboratory Technology",
+      "M.Sc. Medical Radiology and Imaging Technology",
+      "M.Sc. Clinical Research"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "An M.Sc. in Allied Health Sciences is a postgraduate degree for graduates in an allied health or life-science discipline who want advanced specialist, teaching or research roles. Programmes specialise in one field, such as medical laboratory technology, medical imaging and radiology technology, anaesthesia and operation theatre technology, dialysis, clinical research or pharmacovigilance. They combine advanced theory, hospital or laboratory practice and a research dissertation, and normally last two years, although shorter postgraduate diplomas also exist. Recognition for professional practice differs by country.",
+    "metaTitle": "M.Sc. Allied Health Sciences for International Students",
+    "metaDescription": "Compare M.Sc. Allied Health Sciences programmes open to international students: specialisations, eligibility, research, duration and fees."
+  },
+  {
+    "slug": "bachelor-optometry",
+    "name": "Bachelor's in Optometry",
+    "shortName": "Bachelor's Optometry",
+    "stream": "public-health-allied-health",
+    "level": "bachelors",
+    "discipline": "optometry",
+    "aliases": [
+      "Bachelor of Optometry",
+      "B.Optom",
+      "BSc Optometry"
+    ],
+    "displayOrder": 0,
+    "durationYears": 4,
+    "summary": "A bachelor's degree in optometry trains primary eye-care professionals to examine eyes and vision, prescribe spectacles and contact lenses, detect eye disease and refer patients for medical care. Students study ocular anatomy and physiology, geometric and physiological optics, refraction, binocular vision, contact lenses, low vision, ocular disease and dispensing, with supervised clinical practice. Programmes usually last three to four years, often including a clinical internship. Registration to practise as an optometrist is controlled by national regulators, so international students should check recognition where they plan to work.",
+    "metaTitle": "Bachelor's Optometry Degrees for International Students",
+    "metaDescription": "Compare Bachelor's Optometry degrees open to international students: clinical training, internship, entry subjects, duration and fees."
+  },
+  {
+    "slug": "master-optometry",
+    "name": "Master's in Optometry",
+    "shortName": "Master's Optometry",
+    "stream": "public-health-allied-health",
+    "level": "masters",
+    "discipline": "optometry",
+    "aliases": [
+      "Master of Optometry",
+      "M.Optom",
+      "MSc Optometry"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "A master's degree in optometry is a postgraduate programme for qualified optometrists who want advanced clinical, teaching or research roles. Study covers advanced clinical optometry, contact lenses, paediatric and binocular vision, low vision rehabilitation, ocular disease management and research methods, usually with specialist clinical practice and a dissertation. The degree normally lasts one to two years. Graduates work in specialist eye-care clinics, hospitals, industry and optometry education; the right to practise still depends on registration with the relevant regulator.",
+    "metaTitle": "Master's Optometry Programmes for International Students",
+    "metaDescription": "Compare Master's Optometry programmes open to international students: specialist clinical areas, eligibility, research, duration and fees."
+  },
+  {
+    "slug": "bachelor-social-work",
+    "name": "Bachelor's in Social Work",
+    "shortName": "Bachelor's Social Work",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "social-work",
+    "aliases": [
+      "Bachelor of Social Work",
+      "BSW",
+      "BA Social Work"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A bachelor's degree in social work prepares students for professional practice with individuals, families and communities facing poverty, illness, disability, exclusion or crisis. The curriculum covers social work theory and methods, sociology, psychology, social policy, human rights, community organisation and research, with supervised fieldwork placements in agencies, hospitals or community organisations throughout the course. Programmes usually last three or four years. Graduates work in NGOs, public welfare services and healthcare, or continue to a master's in social work; some countries also require registration to practise.",
+    "metaTitle": "Bachelor's Social Work (BSW) Degrees",
+    "metaDescription": "Compare Bachelor's Social Work degrees open to international students: fieldwork, curriculum, entry requirements, duration and tuition."
+  },
+  {
+    "slug": "master-social-work",
+    "name": "Master's in Social Work",
+    "shortName": "Master's Social Work",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "social-work",
+    "aliases": [
+      "Master of Social Work",
+      "MSW",
+      "MA Social Work"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "A master's degree in social work is a postgraduate professional programme in social work practice, policy and community development. Students study advanced practice methods, social policy and planning, community and rural development, counselling, programme management and research, often specialising in areas such as medical and psychiatric social work, family and child welfare or community development, with substantial supervised fieldwork and a dissertation. The degree normally lasts two years. Graduates work in NGOs, government welfare services, healthcare and development organisations.",
+    "metaTitle": "Master's Social Work (MSW) Programmes",
+    "metaDescription": "Compare Master's Social Work programmes open to international students: specialisations, fieldwork, eligibility, duration and tuition."
+  },
+  {
+    "slug": "ba-religious-studies",
+    "name": "B.A. in Religious Studies",
+    "shortName": "B.A. Religious Studies",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "religious-studies",
+    "aliases": [
+      "BA Islamic Studies",
+      "BA Theology and Religious Studies",
+      "Bachelor of Arts in Religious Studies"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A B.A. in Religious Studies is an undergraduate humanities degree in the history, texts, thought and practice of religious traditions. Some programmes study several traditions comparatively, while others concentrate on one, such as Islamic studies, which covers the Qur'an and hadith literature, Islamic history, law, philosophy and culture, often with a classical language such as Arabic. Students develop skills in textual analysis, historical research and argument. The degree usually lasts three or four years and leads to teaching, research, cultural and heritage work, journalism or postgraduate study.",
+    "metaTitle": "B.A. Religious Studies Degrees for International Students",
+    "metaDescription": "Compare B.A. Religious Studies degrees, including Islamic studies, open to international students: curriculum, duration and tuition."
+  },
+  {
+    "slug": "ma-religious-studies",
+    "name": "M.A. in Religious Studies",
+    "shortName": "M.A. Religious Studies",
+    "stream": "arts-humanities",
+    "level": "masters",
+    "discipline": "religious-studies",
+    "aliases": [
+      "MA Islamic Studies",
+      "MA Comparative Religion",
+      "MA Theology",
+      "Master of Arts in Religious Studies"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "An M.A. in Religious Studies is a postgraduate humanities degree for advanced study of religious traditions, texts and institutions. Programmes may be comparative, examining several traditions side by side, or specialise in one field such as Islamic studies, covering Qur'anic and hadith studies, Islamic law and thought, history and contemporary Muslim societies. Coursework in theory and research methods leads to a dissertation. The degree normally lasts one to two years and prepares graduates for teaching, research, interfaith and cultural work, publishing or doctoral study.",
+    "metaTitle": "M.A. Religious Studies Programmes for International Students",
+    "metaDescription": "Compare M.A. Religious Studies programmes, including Islamic studies and comparative religion, open to international students."
+  },
+  {
+    "slug": "bachelor-library-information-science",
+    "name": "Bachelor's in Library and Information Science",
+    "shortName": "Bachelor's Library Science",
+    "stream": "social-sciences",
+    "level": "bachelors",
+    "discipline": "library-information-science",
+    "aliases": [
+      "Bachelor of Library and Information Science",
+      "BLISc",
+      "B.Lib.I.Sc."
+    ],
+    "displayOrder": 0,
+    "durationYears": 1,
+    "summary": "A bachelor's degree in library and information science trains students to organise, preserve and provide access to information in libraries and information centres. Study covers cataloguing and classification, reference and information services, library management, information sources, and library automation and digital libraries, with practical training in a working library. In some systems it is a one-year programme taken after a first bachelor's degree, followed by a master's for professional librarianship; elsewhere it is a full undergraduate degree. Graduates work as library and information assistants and professionals.",
+    "metaTitle": "Bachelor's Library Science (BLISc) Programmes",
+    "metaDescription": "Compare Bachelor's Library Science programmes open to international students: eligibility, library training, duration and tuition."
+  },
+  {
+    "slug": "master-library-information-science",
+    "name": "Master's in Library and Information Science",
+    "shortName": "Master's Library Science",
+    "stream": "social-sciences",
+    "level": "masters",
+    "discipline": "library-information-science",
+    "aliases": [
+      "Master of Library and Information Science",
+      "MLISc",
+      "MLIS",
+      "Master of Information Studies"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "A master's degree in library and information science is the professional postgraduate qualification for librarians and information managers. Study covers information organisation and retrieval, knowledge management, digital libraries, information systems and technology, research methods, archives and records, and management of information services, usually with a project or dissertation. It lasts one to two years depending on whether a bachelor's in library science has already been completed. Graduates work in academic, public and special libraries, archives, publishing and corporate information management.",
+    "metaTitle": "Master's Library Science (MLIS) Programmes",
+    "metaDescription": "Compare Master's Library Science programmes open to international students: specialisations, eligibility, duration and tuition."
+  },
+  {
+    "slug": "bachelor-physical-education-sports",
+    "name": "Bachelor's in Physical Education and Sports",
+    "shortName": "Bachelor's Physical Education",
+    "stream": "education",
+    "level": "bachelors",
+    "discipline": "physical-education-sports",
+    "aliases": [
+      "Bachelor of Physical Education and Sports",
+      "BPES",
+      "BSc Sports Science"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A bachelor's degree in physical education and sports studies human movement, exercise and sport in education, health and performance settings. The curriculum covers exercise physiology, kinesiology and biomechanics, sports psychology, sports training and coaching, health and fitness, sports management and practical skills in a range of sports, with teaching or coaching placements. Programmes usually last three or four years. They are distinct from one- or two-year teacher-education degrees in physical education, which may be required to teach in schools. Graduates work in coaching, fitness, sports administration and recreation.",
+    "metaTitle": "Bachelor's Physical Education and Sports Degrees",
+    "metaDescription": "Compare Bachelor's Physical Education programmes open to international students: sports science curriculum, placements, duration and fees."
+  },
+  {
+    "slug": "msc-forensic-science",
+    "name": "M.Sc. in Forensic Science",
+    "shortName": "M.Sc. Forensic Science",
+    "stream": "natural-sciences",
+    "level": "masters",
+    "discipline": "forensic-science",
+    "aliases": [
+      "Master of Science in Forensic Science",
+      "MSc Forensic Sciences"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "An M.Sc. in Forensic Science is a postgraduate science degree in applying chemistry, biology and physics to the investigation of crime. Study covers crime-scene investigation, forensic chemistry and toxicology, DNA and serology, fingerprints and questioned documents, ballistics, digital forensics, and the presentation of expert evidence in court, with extensive laboratory work and a research project. It suits graduates in chemistry, life sciences, physics or forensic science. The degree normally lasts two years and leads to work in forensic laboratories, law-enforcement agencies and private investigation, or to research.",
+    "metaTitle": "M.Sc. Forensic Science Programmes for International Students",
+    "metaDescription": "Compare M.Sc. Forensic Science programmes open to international students: laboratory training, eligibility, duration and tuition."
+  },
+  {
+    "slug": "mcom",
+    "name": "Master of Commerce",
+    "shortName": "M.Com",
+    "stream": "economics-commerce",
+    "level": "masters",
+    "discipline": "commerce",
+    "aliases": [
+      "MCom",
+      "Master in Commerce"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "The Master of Commerce is a two-year postgraduate degree in commerce, usually open to graduates who hold a B.Com., BBA or a related business degree. Study builds on undergraduate accounting and finance with advanced financial and management accounting, corporate finance, financial markets and investment analysis, taxation, business research methods and economics, and many programmes offer a specialisation such as finance, accounting or banking. Assessment typically includes a research project or dissertation. Graduates often work in accounting, finance and banking roles, prepare for professional accountancy examinations, or continue to doctoral study and teaching.",
+    "metaTitle": "M.Com (Master of Commerce) Degrees for International Students",
+    "metaDescription": "Compare M.Com degrees open to international students: prerequisite degrees, specialisations, duration, teaching language, tuition and intake timing."
+  },
+  {
+    "slug": "ba-general-arts",
+    "name": "B.A. in General Arts",
+    "shortName": "B.A. General Arts",
+    "stream": "arts-humanities",
+    "level": "bachelors",
+    "discipline": "general-arts",
+    "aliases": [
+      "B.A. (General)",
+      "B.A. Combined Subjects",
+      "Bachelor of Arts (Multidisciplinary)",
+      "B.A. Programme"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "A B.A. in General Arts is a bachelor's degree in which students study two or more humanities or social-science subjects together, such as psychology, sociology, political science, history, economics or a language, instead of a single-subject honours degree. The combination is usually fixed at admission, and some programmes let students deepen one subject in a final honours or research year. The degree builds skills in reading, writing, argument and social research and usually lasts three years, or four with an honours year. Graduates often continue to a subject-specific master's degree, teacher education, public-service examinations or roles in the social sector.",
+    "metaTitle": "B.A. General Arts Degrees for International Students",
+    "metaDescription": "Compare B.A. General Arts degrees open to international students: subject combinations, entry requirements, duration, teaching language and tuition."
+  }
+]

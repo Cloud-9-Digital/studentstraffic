@@ -1,0 +1,165 @@
+{
+  "manifestId": "india-batch-3-media-2026-09-21",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-09-21",
+  "scope": "logo and cover for india-batch-3 content migrations (0108 onward)",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-09-21; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "birla-institute-of-technology-and-science-pilani",
+      "universityName": "Birla Institute of Technology and Science, Pilani",
+      "sourceBatch": "india-batch-3",
+      "migrationId": "0110-india-birla-institute-of-technology-and-science-pilani",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.bits-pilani.ac.in/wp-content/uploads/bits-pillani-logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official BITS Pilani logo served from the university's own domain and declared as the organisation logo (ImageObject, 290x96) in the bits-pilani.ac.in JSON-LD. No open licence - used only to identify the institution. Checked 2026-09-21: HTTP 200, content-type image/png, 19,277 bytes, 290x96 px RGBA. Visually confirmed on a white tile: full-colour BITS seal (blue/red/yellow) with navy 'BITS Pilani' wordmark and 'Pilani | Dubai | Goa | Hyderabad | Mumbai' strapline - legible. Small (290 px wide); the header variants bits-pillani-white-2.webp (white-on-transparent, rejected) and bits-pillani-2-1.webp (IoE lockup) were not preferred.",
+          "proposedPublicId": "studentstraffic/universities/birla-institute-of-technology-and-science-pilani/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/BITS_Pilani.jpg/1920px-BITS_Pilani.jpg",
+          "sourceType": "wikimedia-commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:BITS_Pilani.jpg",
+          "rightsBasis": "Wikimedia Commons 'File:BITS Pilani.jpg' by Gorlapraveen123, own work, licensed CC BY-SA 4.0 (attribution and share-alike required: credit 'Gorlapraveen123 / Wikimedia Commons, CC BY-SA 4.0'). Original 8160x6144 camera photo dated 13 August 2022 (EXIF). Direct 1920px rendition checked 2026-09-21 with a descriptive User-Agent: HTTP 200, content-type image/jpeg, 1920x1446. Visually confirmed: Pilani campus clock tower and main building with flag line and approach road under a cloudy sky, no text overlays other than a small roadside sign. Alternatives reviewed: 'Bits Clock tower.jpg' (1280x850, professional-looking 'own work' upload - not used because of provenance doubt) and 'BITS Clocktower.jpg' (CC BY-SA 3.0, hazy).",
+          "proposedPublicId": "studentstraffic/universities/birla-institute-of-technology-and-science-pilani/cover",
+          "altText": "Clock tower and main building of the BITS Pilani campus in Pilani, Rajasthan, with flags lining the approach road"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-hyderabad",
+      "universityName": "University of Hyderabad",
+      "sourceBatch": "india-batch-3",
+      "migrationId": "0111-india-university-of-hyderabad",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://uohyd.ac.in/wp-content/uploads/2024/09/UoH-log-new3L.png",
+          "sourceType": "official",
+          "rightsBasis": "Official University of Hyderabad header logo served from the university's own domain (img#logo on https://uohyd.ac.in/). No open licence - used as the institution's own brand mark for identification only. HTTP 200, content-type image/png, 1550x360 px RGBA, checked 2026-09-21. Visual confirmation on a white tile: maroon circular seal plus Telugu, Hindi and English 'University of Hyderabad' wordmark - fully legible on white. Square seal-only alternative (300x302, same colour): https://oia.uohyd.ac.in/wp-content/uploads/2020/09/University_of_Hyderabad_Logo.png.",
+          "proposedPublicId": "studentstraffic/universities/university-of-hyderabad/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/University_Of_Hyderabad.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons file 'University Of Hyderabad.jpg' by Y Sai Kumar (own work), licensed CC BY 4.0 - attribution required: 'Photo: Y Sai Kumar, CC BY 4.0, via Wikimedia Commons'. File page: https://commons.wikimedia.org/wiki/File:University_Of_Hyderabad.jpg. HTTP 200, content-type image/jpeg, 4000x3000 px, checked 2026-09-21 (fetched with a descriptive User-Agent). Visual confirmation: trilingual 'University of Hyderabad' entrance sign with palms and the national flag on the Gachibowli campus, no overlays.",
+          "proposedPublicId": "studentstraffic/universities/university-of-hyderabad/cover",
+          "altText": "Trilingual University of Hyderabad sign among palm trees, with the Indian national flag, at the Gachibowli campus in Hyderabad"
+        }
+      ]
+    },
+    {
+      "universitySlug": "manipal-university-jaipur",
+      "universityName": "Manipal University Jaipur",
+      "sourceBatch": "india-batch-3",
+      "migrationId": "0113-india-manipal-university-jaipur",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jaipur.manipal.edu/img/manipal-university-jaipur-logo-01.svg",
+          "sourceType": "official",
+          "rightsBasis": "Official Manipal University Jaipur logo served from the university's own domain and used as the site-wide header logo on jaipur.manipal.edu. No open licence - used only to identify the institution. Checked 2026-09-21: HTTP 200, content-type image/svg+xml, 408,196 bytes, viewBox 456x91 (vector wordmark plus an embedded 282x312 PNG crest). Rendered on a white tile and visually confirmed: orange-and-brown Manipal crest with laurel and 'INSPIRED BY LIFE', dark grey 'MANIPAL UNIVERSITY JAIPUR' serif wordmark - legible. Alternative img/manipal-university-jaipur-logo.svg is near-identical; rasterise the SVG to PNG at upload if the pipeline needs a bitmap.",
+          "proposedPublicId": "studentstraffic/universities/manipal-university-jaipur/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Muj.jpg",
+          "sourceType": "wikimedia-commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Muj.jpg",
+          "rightsBasis": "Wikimedia Commons 'File:Muj.jpg' by Me13farhan, own work, licensed CC BY-SA 4.0 (attribution and share-alike required: credit 'Me13farhan / Wikimedia Commons, CC BY-SA 4.0'). Checked 2026-09-21 with a descriptive User-Agent: HTTP 200, content-type image/jpeg, 720x540. Visually confirmed: aerial view of the Dehmi Kalan campus (domed main building, yellow academic blocks and hostel blocks) in open countryside. CAVEATS: low resolution (720 px wide) and a camera date stamp '14/9/2015 8:52' in the bottom-right corner - crop the bottom ~12% before upload; replace with a higher-resolution rights-safe image when one is found. Official site banners reviewed (img/slider/banner-1.jpg, Website_Home_page_1.jpg, about-us/overview.jpg) were rejected: marketing text overlays or people-only crops with no campus. Other Commons file 'Manipal University Jaipur.jpg' (same author, CC BY-SA 4.0) is 395x395 only. Upload note 2026-09-21: uploaded with a Cloudinary incoming transformation (EXIF rotation, then a 720x460 crop from the top) so the stored cover excludes the camera date stamp; the photo content is unchanged.",
+          "proposedPublicId": "studentstraffic/universities/manipal-university-jaipur/cover",
+          "altText": "Aerial view of the Manipal University Jaipur campus at Dehmi Kalan, with its domed main building and yellow academic and hostel blocks",
+          "transformation": [
+            {
+              "angle": "exif"
+            },
+            {
+              "crop": "crop",
+              "gravity": "north",
+              "width": 720,
+              "height": 460
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "universitySlug": "jamia-millia-islamia",
+      "universityName": "Jamia Millia Islamia",
+      "sourceBatch": "india-batch-3",
+      "migrationId": "0112-india-jamia-millia-islamia",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jmi.ac.in/assets/images/logo/logo.svg",
+          "sourceType": "official",
+          "rightsBasis": "Official JMI header logo served from the university's own domain (img alt 'Jamia Millia Islamia Logo' on https://jmi.ac.in/). No open licence - used as the institution's own brand mark for identification only. HTTP 200, content-type image/svg+xml, 8775x1256 viewBox, checked 2026-09-21. Visual check on a white tile: green (#378B66) crescent-and-palm emblem with 'Jamia Millia Islamia' wordmark in Latin, Devanagari and Urdu scripts - fully legible. Rejected: https://jmi.ac.in/Upload/Content/2023-Feb-27-12-26-2-106.svg (white-on-transparent, invisible on white) and https://jmi.ac.in/Upload/Content/2023-Feb-27-12-26-2-105.png (decorative diamond frame, not the pure mark). Wide aspect ratio - rasterise to PNG or pad for square tiles.",
+          "proposedPublicId": "studentstraffic/universities/jamia-millia-islamia/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Centenary_gate_JMI%2C_Delhi.jpg",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Wikimedia Commons 'File:Centenary gate JMI, Delhi.jpg' by Tamjeed Ahmed, licensed CC BY-SA 4.0 (attribution and share-alike required; credit 'Tamjeed Ahmed, CC BY-SA 4.0, via Wikimedia Commons'). Direct file URL HTTP 200, content-type image/jpeg, 3556x2667 px, 1.15 MB, checked 2026-09-21 with a descriptive User-Agent. Visual check: red-sandstone Centenary Gate with twin domes and 'Centenary Gate Jamia Millia Islamia' lettering under a clear blue sky; small distant figures only. Alternative: File:Centenary Gate Jamia Millia Islamia.jpg (TheAutumnal, CC BY-SA 4.0, 4000x3000, dusk).",
+          "proposedPublicId": "studentstraffic/universities/jamia-millia-islamia/cover",
+          "altText": "The red-sandstone Centenary Gate of Jamia Millia Islamia in Jamia Nagar, New Delhi, with twin domes and the university's name above the arch"
+        }
+      ]
+    },
+    {
+      "universitySlug": "marwadi-university",
+      "universityName": "Marwadi University",
+      "sourceBatch": "india-batch-3",
+      "migrationId": "0109-india-marwadi-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.marwadiuniversity.ac.in/wp-content/themes/marwadi-university/assets/img/mu-logo.svg",
+          "sourceType": "official",
+          "rightsBasis": "Official Marwadi University logo served from the university's own WordPress theme and used as the site header logo on marwadiuniversity.ac.in. No open licence - official institutional brand mark used to identify the institution. HTTP 200, content-type image/svg+xml (vector, 226x64 viewBox), checked 2026-09-21. Visual check rendered on a white tile: teal shield with MU monogram, black \"Marwadi University\" wordmark and \"Marwadi Chandarana Group\" line - fully legible on white. NOTE: the file includes a gold \"NAAC A+\" seal on the right; that grade matches the regulator record (NAAC A+, CGPA 3.31, declared 09-11-2023), but crop it out at upload if a pure wordmark is preferred. Rejected: /wp-content/uploads/2025/09/mu-logo.png (260x66 raster that bundles an NIRF logo) and logomain.svg (same NAAC seal variant).",
+          "proposedPublicId": "studentstraffic/universities/marwadi-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Marwadi_University.jpg/1920px-Marwadi_University.jpg",
+          "sourceType": "wikimedia-commons",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Marwadi_University.jpg",
+          "rightsBasis": "Wikimedia Commons File:Marwadi University.jpg by Eddie Stann, own work, licensed CC BY-SA 4.0 (attribution and share-alike required: credit \"Eddie Stann / Wikimedia Commons, CC BY-SA 4.0\"). Original 4160x3120 photo dated 24 September 2021 (EXIF); Commons description: PG building at Marwadi University. Direct 1920px rendition checked 2026-09-21 with a descriptive User-Agent: HTTP 200, content-type image/jpeg. Visually confirmed: grey concrete campus building with arched windows beside open lawns and a row of palm trees under an overcast sky, no text overlays. Alternative reviewed: File:Marwadi University..jpg (same author, CC BY-SA 4.0, main-building reflection shot in a puddle - less clear as a hero image).",
+          "proposedPublicId": "studentstraffic/universities/marwadi-university/cover",
+          "altText": "Postgraduate building and palm-lined lawns on the Marwadi University campus on the Rajkot-Morbi Road, Rajkot, Gujarat"
+        }
+      ]
+    },
+    {
+      "universitySlug": "jamia-hamdard",
+      "universityName": "Jamia Hamdard",
+      "sourceBatch": "india-batch-3",
+      "migrationId": "0108-india-jamia-hamdard",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.jamiahamdard.ac.in/assets/mainpage/assets/imgs/hamdardLogo-16.png",
+          "sourceType": "official",
+          "rightsBasis": "Official Jamia Hamdard header logo served from the university domain and used as the navbar brand image on https://www.jamiahamdard.ac.in/. No open licence - used only to identify the institution. Checked 2026-09-21: HTTP 200, content-type image/png, 52,411 bytes, 622x123 px, fully opaque white background (alpha 255). Visually confirmed on a white tile: green crest with book and crescent plus green JAMIA HAMDARD wordmark and the lines Government Aided Deemed to be University / Hamdard Nagar, New Delhi - 110062 / Accredited with NAAC A+ (consistent with the NAAC register, A+ 3.41, Cycle 4). Wide lockup; crop to the crest if a square mark is needed. The JSON-LD logo (uploads/files/Untitled_design_(35).png) is only 48x48 and was rejected; Wikipedia File:Jamia_Hamdard_Logo.svg is fair-use on enwiki only and was not used.",
+          "proposedPublicId": "studentstraffic/universities/jamia-hamdard/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.jamiahamdard.ac.in/uploads/files/DSC037371.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official campus photograph on the university domain, used in the homepage campus photo gallery under the Hamdard Convention Centre item. No open licence stated - official institutional image used to identify the institution. Checked 2026-09-21: HTTP 200, content-type image/jpeg, 2,474,108 bytes, 4645x3095 px (landscape). Visual confirmation: arched sandstone facade and clock tower of the Hamdard Convention Centre with signage for the School of Open and Distance Learning, lawns and flagpoles, no text overlay. Wikimedia Commons Category:Jamia_Hamdard holds only event photos (convocations, seminars), and Commons search hits for Hamdard University Karachi/Bangladesh were rejected as different institutions. Alternative official image: https://www.jamiahamdard.ac.in/uploads/files/DSC03640_(1).jpg (Main Academic Building, 6000x4000).",
+          "proposedPublicId": "studentstraffic/universities/jamia-hamdard/cover",
+          "altText": "Arched facade and clock tower of the Hamdard Convention Centre on the Jamia Hamdard campus in Hamdard Nagar, New Delhi"
+        }
+      ]
+    }
+  ]
+}

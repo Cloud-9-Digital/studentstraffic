@@ -1,65 +1,47 @@
 {
-  "appliedAt": "2026-09-21T11:35:32.341Z",
+  "appliedAt": "2026-09-21T18:30:42.182Z",
   "uploads": {
-    "attempted": 17,
-    "succeeded": 17,
+    "attempted": 12,
+    "succeeded": 12,
     "failed": 0
   },
   "database": {
-    "updated": 9,
+    "updated": 6,
     "notFoundInDb": []
   },
   "updatedUniversities": [
     {
-      "universitySlug": "sharda-university",
+      "universitySlug": "birla-institute-of-technology-and-science-pilani",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "world-university-of-design",
-      "logoUpdated": true,
-      "coverUpdated": false,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "chandigarh-university",
+      "universitySlug": "university-of-hyderabad",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "universitySlug": "manipal-university-jaipur",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "jss-academy-of-higher-education-and-research",
+      "universitySlug": "jamia-millia-islamia",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "christ-university",
+      "universitySlug": "marwadi-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "shiv-nadar-institution-of-eminence",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "ashoka-university",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "flame-university",
+      "universitySlug": "jamia-hamdard",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
