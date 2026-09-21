@@ -52,3 +52,15 @@ test("uses stable labels and chronological intake order", () => {
   assert.equal(getIntakeMonthLabel("september"), "September");
   assert.equal(getTeachingLanguageLabel("english"), "English");
 });
+
+test("supports Indian teaching languages used by language programmes", () => {
+  for (const [code, label] of [
+    ["hindi", "Hindi"],
+    ["sanskrit", "Sanskrit"],
+    ["telugu", "Telugu"],
+    ["urdu", "Urdu"],
+  ] as const) {
+    assert.equal(normalizeTeachingLanguageCode(label), code);
+    assert.equal(getTeachingLanguageLabel(code), label);
+  }
+});

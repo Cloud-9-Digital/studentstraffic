@@ -43,7 +43,13 @@ test("medical postgraduate programmes use the Medical PG / Residency category", 
   assert.equal(programmeCategoryLabels.medicalPostgraduate, "Medical PG / Residency");
   assert.ok(
     canonicalProgrammes
-      .filter((programme) => programme.stream === "medicine" && programme.level === "masters")
+      // Traditional-system PG degrees (e.g. MD Unani) are not residencies and keep their own label.
+      .filter(
+        (programme) =>
+          programme.stream === "medicine" &&
+          programme.level === "masters" &&
+          programme.discipline !== "unani-medicine",
+      )
       .every((programme) => programme.aliases.some((alias) => /residency/i.test(alias))),
   );
 });

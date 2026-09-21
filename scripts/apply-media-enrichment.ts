@@ -29,6 +29,15 @@ type ManifestAsset = {
   proposedPublicId: string;
   /** Reviewed manifests mark assets with no rights-safe source as `hold`; those carry no sourceUrl. */
   status?: string;
+  /** Cover alt text, stored in `media_attribution.cover.altText`. */
+  altText?: string;
+  /** Date the source was reviewed (YYYY-MM-DD); defaults to the manifest's checkedAt, then today. */
+  checkedAt?: string;
+  /**
+   * Optional Cloudinary incoming transformation, e.g. a crop that removes a camera date stamp.
+   * It is applied at upload, so the stored asset never contains the removed area.
+   */
+  transformation?: Record<string, string | number>[];
 };
 type ManifestEntry = {
   universitySlug: string;
@@ -36,11 +45,12 @@ type ManifestEntry = {
   sourceBatch: string;
   assets: ManifestAsset[];
 };
-type Manifest = { entries: ManifestEntry[] };
+type Manifest = { checkedAt?: string; entries: ManifestEntry[] };
 
 type UploadResult = {
   universitySlug: string;
   kind: "logo" | "cover";
+  asset: ManifestAsset;
   sourceUrl: string;
   cloudinaryUrl?: string;
   publicId?: string;
@@ -89,6 +99,16 @@ async function main() {
   const BROWSER_UA =
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
+  function uploadOptions(asset: ManifestAsset) {
+    return {
+      public_id: asset.proposedPublicId,
+      resource_type: "image" as const,
+      overwrite: true,
+      invalidate: true,
+      ...(asset.transformation?.length ? { transformation: asset.transformation } : {}),
+    };
+  }
+
   async function uploadViaClientFetch(asset: ManifestAsset) {
     const isWikimedia = asset.sourceUrl.includes("upload.wikimedia.org");
     const backoffs = isWikimedia ? [3000, 8000] : [];
@@ -107,7 +127,7 @@ async function main() {
 
     return new Promise<{ secure_url: string; public_id: string; bytes: number }>((resolve, reject) => {
       const stream = cloudinary.uploader.upload_stream(
-        { public_id: asset.proposedPublicId, resource_type: "image", overwrite: true, invalidate: true },
+        uploadOptions(asset),
         (error, result) => {
           if (error || !result) reject(new Error(errorMessage(error)));
           else resolve(result as { secure_url: string; public_id: string; bytes: number });
@@ -130,6 +150,9 @@ async function main() {
     return `${base}/thumb/${h1}/${h2}/${filename}/${suffix}`;
   }
 
+  const today = new Date().toISOString().slice(0, 10);
+  const checkedAtFor = (asset: ManifestAsset) => asset.checkedAt ?? manifest.checkedAt ?? today;
+
   const uploadResults: UploadResult[] = [];
 
   for (const entry of manifest.entries) {
@@ -142,12 +165,7 @@ async function main() {
       let lastError: unknown;
 
       try {
-        result = await cloudinary.uploader.upload(asset.sourceUrl, {
-          public_id: asset.proposedPublicId,
-          resource_type: "image",
-          overwrite: true,
-          invalidate: true,
-        });
+        result = await cloudinary.uploader.upload(asset.sourceUrl, uploadOptions(asset));
       } catch (err) {
         lastError = err;
       }
@@ -179,6 +197,7 @@ async function main() {
         uploadResults.push({
           universitySlug: entry.universitySlug,
           kind: asset.kind,
+          asset,
           sourceUrl: asset.sourceUrl,
           cloudinaryUrl: result.secure_url,
           publicId: result.public_id,
@@ -189,6 +208,7 @@ async function main() {
         uploadResults.push({
           universitySlug: entry.universitySlug,
           kind: asset.kind,
+          asset,
           sourceUrl: asset.sourceUrl,
           error: message,
         });
@@ -219,7 +239,7 @@ async function main() {
     await db.transaction(async (tx) => {
       for (const [slug, assets] of bySlug) {
         const [existing] = await tx
-          .select({ id: universities.id })
+          .select({ id: universities.id, mediaAttribution: universities.mediaAttribution })
           .from(universities)
           .where(eq(universities.slug, slug));
 
@@ -230,8 +250,30 @@ async function main() {
         }
 
         const patch: Partial<typeof universities.$inferInsert> = { updatedAt: new Date() };
-        if (assets.logo) patch.logoUrl = assets.logo.cloudinaryUrl;
-        if (assets.cover) patch.coverImageUrl = assets.cover.cloudinaryUrl;
+        // Provenance travels with the image: the public field holds only the Cloudinary URL, and
+        // media_attribution keeps the original source, rights basis, review date and alt text.
+        const attribution = { ...existing.mediaAttribution };
+        if (assets.logo) {
+          patch.logoUrl = assets.logo.cloudinaryUrl;
+          attribution.logo = {
+            sourceUrl: assets.logo.asset.sourceUrl,
+            rights: assets.logo.asset.rightsBasis,
+            checkedAt: checkedAtFor(assets.logo.asset),
+          };
+        }
+        if (assets.cover) {
+          patch.coverImageUrl = assets.cover.cloudinaryUrl;
+          const altText = assets.cover.asset.altText ?? existing.mediaAttribution.cover?.altText;
+          if (altText) {
+            attribution.cover = {
+              sourceUrl: assets.cover.asset.sourceUrl,
+              rights: assets.cover.asset.rightsBasis,
+              checkedAt: checkedAtFor(assets.cover.asset),
+              altText,
+            };
+          }
+        }
+        patch.mediaAttribution = attribution;
 
         await tx.update(universities).set(patch).where(eq(universities.id, existing.id));
 
