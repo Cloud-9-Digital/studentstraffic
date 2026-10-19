@@ -7,6 +7,8 @@ const envSchema = z.object({
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
+  CRM_API_KEY: z.string().min(1).optional(),
+  CRM_API_URL: z.string().url().optional(),
   GOOGLE_SHEETS_SPREADSHEET_ID: z.string().min(1).optional(),
   GOOGLE_SHEETS_SHEET_NAME: z.string().min(1).optional(),
   GOOGLE_SHEETS_CLIENT_EMAIL: z.string().email().optional(),
@@ -49,6 +51,8 @@ const parsedEnv = envSchema.safeParse({
   NEXT_PUBLIC_SITE_URL: optionalEnv(process.env.NEXT_PUBLIC_SITE_URL),
   CRM_LEAD_INTAKE_URL: optionalEnv(process.env.CRM_LEAD_INTAKE_URL),
   CRM_LEAD_INTAKE_SECRET: optionalEnv(process.env.CRM_LEAD_INTAKE_SECRET),
+  CRM_API_KEY: optionalEnv(process.env.CRM_API_KEY),
+  CRM_API_URL: optionalEnv(process.env.CRM_API_URL),
   GOOGLE_SHEETS_SPREADSHEET_ID: optionalEnv(process.env.GOOGLE_SHEETS_SPREADSHEET_ID),
   GOOGLE_SHEETS_SHEET_NAME: optionalEnv(process.env.GOOGLE_SHEETS_SHEET_NAME),
   GOOGLE_SHEETS_CLIENT_EMAIL: optionalEnv(process.env.GOOGLE_SHEETS_CLIENT_EMAIL),
@@ -95,6 +99,8 @@ export const env = {
   siteUrl: parsedEnv.data.NEXT_PUBLIC_SITE_URL ?? defaultSiteUrl,
   crmLeadIntakeUrl: parsedEnv.data.CRM_LEAD_INTAKE_URL,
   crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
+  crmApiKey: parsedEnv.data.CRM_API_KEY,
+  crmApiUrl: parsedEnv.data.CRM_API_URL ?? "https://app.marro.si",
   googleSheetsSpreadsheetId: parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID,
   googleSheetsSheetName: parsedEnv.data.GOOGLE_SHEETS_SHEET_NAME,
   googleSheetsClientEmail: parsedEnv.data.GOOGLE_SHEETS_CLIENT_EMAIL,
@@ -113,7 +119,8 @@ export const env = {
   watiWebhookToken: parsedEnv.data.WATI_WEBHOOK_TOKEN,
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
   hasCrmLeadSyncConfig: Boolean(
-    parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
+    parsedEnv.data.CRM_API_KEY ||
+      (parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET)
   ),
   hasGoogleSheetsSyncConfig: Boolean(
     parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID &&

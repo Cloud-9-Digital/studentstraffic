@@ -12,6 +12,7 @@ import {
 import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import { sendMetaLeadEvent } from "@/lib/meta-capi";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
+import { buildCrmCapturePayload } from "@/lib/crm-capture-payload";
 
 type LeadSyncUpdate = {
   crmSyncStatus?: string;
@@ -42,6 +43,11 @@ type CrmSyncResponse = {
   code?: string;
   /** False when the CRM will refuse this same payload however often it is sent. */
   retryable?: boolean;
+};
+
+type ScopedCrmResponse = {
+  lead?: { id?: number; created?: boolean; updated?: boolean };
+  error?: { code?: string; message?: string };
 };
 
 /**
@@ -244,7 +250,7 @@ export async function syncLeadToCrm(
     return;
   }
 
-  if (!env.hasCrmLeadSyncConfig || !env.crmLeadIntakeUrl || !env.crmLeadIntakeSecret) {
+  if (!env.hasCrmLeadSyncConfig) {
     if (!options.skipPersistedSkipStates) {
       await updateLeadSyncState(leadId, {
         crmSyncStatus: "skipped",
@@ -257,37 +263,51 @@ export async function syncLeadToCrm(
   }
 
   try {
+    const scoped = Boolean(env.crmApiKey);
+    const url = scoped
+      ? `${env.crmApiUrl.replace(/\/+$/, "")}/api/v1/leads/capture`
+      : env.crmLeadIntakeUrl!;
     const response = await postJson(
-      env.crmLeadIntakeUrl,
-      buildTransportPayload(payload),
-      {
-      "x-lead-intake-secret": env.crmLeadIntakeSecret,
-      }
+      url,
+      scoped ? buildCrmCapturePayload(payload) : buildTransportPayload(payload),
+      scoped
+        ? {
+            Authorization: `Bearer ${env.crmApiKey}`,
+            ...(payload.websiteLeadId
+              ? { "Idempotency-Key": `studentstraffic:${payload.websiteLeadId}` }
+              : {}),
+          }
+        : { "x-lead-intake-secret": env.crmLeadIntakeSecret! },
     );
     const rawText = await response.text();
-    const parsed = rawText ? (JSON.parse(rawText) as CrmSyncResponse) : {};
+    const parsed = rawText ? JSON.parse(rawText) as CrmSyncResponse : {};
+    const scopedParsed = parsed as ScopedCrmResponse;
 
     if (!response.ok) {
       const reason =
-        parsed.error ??
+        (scoped ? scopedParsed.error?.message : parsed.error) ??
         parsed.message ??
-        `CRM intake failed with status ${response.status}.`;
+        `CRM capture failed with status ${response.status}.`;
+      const code = scoped ? scopedParsed.error?.code : parsed.code;
+      const retryable = scoped
+        ? ![400, 401, 403, 404, 413, 422].includes(response.status)
+        : parsed.retryable !== false;
 
       // The CRM distinguishes "not right now" from "not ever" — a duplicate or a payload it
       // will never accept comes back retryable:false. Recording that as a terminal state costs
       // one write; leaving it as `failed` costs five retries of a request whose answer cannot
       // change, and buries the reason under attempt counts.
-      if (parsed.retryable === false) {
+      if (!retryable) {
         await updateLeadSyncState(leadId, {
           crmSyncStatus: "rejected",
           crmSyncedAt: null,
-          crmSyncError: parsed.code ? `${parsed.code}: ${reason}` : reason,
+          crmSyncError: code ? `${code}: ${reason}` : reason,
           crmExternalId: null,
         });
         console.warn("CRM permanently rejected the lead; not retrying.", {
           leadId,
-          code: parsed.code,
-          reason,
+          code,
+          status: response.status,
         });
         return;
       }
@@ -295,11 +315,15 @@ export async function syncLeadToCrm(
       throw new Error(reason);
     }
 
+    const crmLeadId = scoped ? scopedParsed.lead?.id : parsed.leadId;
+    if (!Number.isSafeInteger(crmLeadId) || !crmLeadId || crmLeadId < 1) {
+      throw new Error("CRM response did not include a valid lead ID.");
+    }
     await updateLeadSyncState(leadId, {
       crmSyncStatus: "synced",
       crmSyncedAt: new Date(),
       crmSyncError: null,
-      crmExternalId: parsed.leadId ? String(parsed.leadId) : null,
+      crmExternalId: String(crmLeadId),
     });
   } catch (error) {
     console.error("CRM lead sync failed.", error);

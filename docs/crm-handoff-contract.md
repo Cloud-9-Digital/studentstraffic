@@ -56,6 +56,31 @@ This repo does not own:
 
 New fields added to the handoff payload should be additive. Existing fields should not be renamed or removed without coordinating with the CRM repository.
 
+## CRM transport migration
+
+Set a server-side `CRM_API_KEY` made in the intended CRM organization with only
+`leads.capture` scope to send leads to `POST /api/v1/leads/capture`. The endpoint
+defaults to `https://app.marro.si/api/v1/leads/capture`; `CRM_API_URL` overrides
+the base URL for local or staging work. When no API key is set, the sender uses
+the existing `CRM_LEAD_INTAKE_URL` and `CRM_LEAD_INTAKE_SECRET` pair. Never put
+the key in a `NEXT_PUBLIC_` variable. A configured key always takes precedence
+over the shared secret; failed API calls do not fall back to the shared secret.
+
+The new endpoint accepts `name`, `phone`, `email`, `source`, `notes`, `fields`,
+`attribution`, and `externalId`, not the old flat payload. `lib/crm-capture-payload.ts`
+adds the website lead ID as `externalId` and an
+`Idempotency-Key` header, so a retry within 24 hours replays the first capture.
+It stores lead and form context in timeline notes; the dedicated attribution
+object carries page/referrer and UTM details. Set active CRM sources named
+`Website`, `WATI`, `Seminar 2026`, and any campaign `sourceName` used by this
+site. The scoped API uses an unknown source as `Website`; configure assignment
+rules for these source names before switching keys because its owner routing
+differs from the legacy intake's assignee email fallbacks. Existing leads keep
+their owner and nonempty fields under the new API. No `fields` are sent until
+the organization's active lead field definitions and dropdown options have
+been read back and validated. A 422 response is terminal and recorded as
+`rejected` for operator correction.
+
 ## CRM source name
 
 The CRM's `/api/leads/intake` accepts an optional `sourceName` (1-60 chars). It matches that string

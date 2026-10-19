@@ -58,9 +58,11 @@ leads.forEach((lead, index) => {
 
 // Check environment configuration
 console.log('\n📋 Environment Configuration:');
+console.log(`  CRM_API_KEY: ${process.env.CRM_API_KEY ? '✅ SET' : '❌ NOT SET'}`);
+console.log(`  CRM_API_URL: ${process.env.CRM_API_URL || 'https://app.marro.si (default)'}`);
 console.log(`  CRM_LEAD_INTAKE_URL: ${process.env.CRM_LEAD_INTAKE_URL || '❌ NOT SET'}`);
 console.log(`  CRM_LEAD_INTAKE_SECRET: ${process.env.CRM_LEAD_INTAKE_SECRET ? '✅ SET' : '❌ NOT SET'}`);
 
-if (!process.env.CRM_LEAD_INTAKE_URL || !process.env.CRM_LEAD_INTAKE_SECRET) {
+if (!process.env.CRM_API_KEY && (!process.env.CRM_LEAD_INTAKE_URL || !process.env.CRM_LEAD_INTAKE_SECRET)) {
   console.log('\n⚠️  CRM sync is disabled because environment variables are not configured');
 }
