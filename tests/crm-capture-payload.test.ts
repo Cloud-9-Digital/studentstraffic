@@ -40,6 +40,16 @@ test("scoped capture preserves WATI, seminar, and campaign source labels", () =>
   assert.equal(buildCrmCapturePayload({ ...lead, sourcePath: "/free-mbbs-counselling-2026" }).source, "MBBS in 10 Lakhs");
 });
 
+test("scoped capture only sets a verified Indian state", () => {
+  const valid = buildCrmCapturePayload({ ...lead, userState: "  telangana  " });
+  assert.deepEqual(valid.fields, { state: "Telangana" });
+  assert.match(valid.notes, /State: telangana/);
+
+  const invalid = buildCrmCapturePayload({ ...lead, userState: "California" });
+  assert.equal("fields" in invalid, false);
+  assert.match(invalid.notes, /State: California/);
+});
+
 test("scoped capture caps timeline notes at the API limit", () => {
   const body = buildCrmCapturePayload({ ...lead, notes: "x".repeat(10_000) });
   assert.equal(body.notes.length <= 5000, true);

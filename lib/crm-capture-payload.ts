@@ -1,6 +1,19 @@
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
 const PLACEHOLDERS = new Set(["NA", "N/A", "-"]);
+// The CRM organization's active `state` select options, verified through
+// GET /api/v1/lead-fields. Keep this allowlist aligned before adding new fields.
+const CRM_INDIAN_STATES = [
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+  "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+  "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya",
+  "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim",
+  "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand",
+  "West Bengal", "Andaman and Nicobar Islands", "Chandigarh",
+  "Dadra and Nagar Haveli and Daman and Diu", "Lakshadweep", "Delhi",
+  "Puducherry", "Ladakh", "Jammu and Kashmir",
+] as const;
+const STATE_BY_NAME = new Map(CRM_INDIAN_STATES.map((state) => [state.toLowerCase(), state]));
 
 function value(input?: string | null, limit = 2000): string | undefined {
   const trimmed = input?.trim();
@@ -11,6 +24,8 @@ function value(input?: string | null, limit = 2000): string | undefined {
 
 /** The scoped CRM API has a deliberately smaller contract than the legacy site intake. */
 export function buildCrmCapturePayload(payload: LeadSyncPayload) {
+  const state = value(payload.userState);
+  const crmState = state && STATE_BY_NAME.get(state.replace(/\s+/g, " ").toLowerCase());
   const isWati = payload.sourcePath === "/wati" || payload.ctaVariant === "wati_inbound";
   const isSeminar = !isWati &&
     (Boolean(value(payload.seminarEvent)) || payload.sourcePath.includes("/seminar-2026/register"));
@@ -18,9 +33,8 @@ export function buildCrmCapturePayload(payload: LeadSyncPayload) {
     : value(payload.sourceName, 60)
       ?? (payload.sourcePath === "/free-mbbs-counselling-2026" ? "MBBS in 10 Lakhs" : "Website");
 
-  // Field definitions and dropdown options differ by CRM organization. Sending an
-  // unchecked `fields` value can reject the whole lead, so retain those details
-  // in the timeline until the organization's active fields have been verified.
+  // Other field definitions and dropdown options differ by CRM organization.
+  // Retain those details in notes until active fields have been verified.
   // Put the visitor's message first; keep the whole note within the API limit.
   const context = [
     value(payload.notes, 2000) && `Notes: ${value(payload.notes, 2000)}`,
@@ -82,6 +96,7 @@ export function buildCrmCapturePayload(payload: LeadSyncPayload) {
     email: value(payload.email, 254),
     source,
     notes: context,
+    ...(crmState ? { fields: { state: crmState } } : {}),
     attribution,
     ...(payload.websiteLeadId ? { externalId: `studentstraffic:${payload.websiteLeadId}` } : {}),
   };

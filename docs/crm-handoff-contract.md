@@ -73,9 +73,11 @@ object carries page/referrer and UTM details. Set active CRM sources named
 `Website`, `WATI`, `Seminar 2026`, and any campaign `sourceName` used by this
 site. The scoped API uses an unknown source as `Website`; configure assignment
 rules for these source names before switching keys. Existing leads keep
-their owner and nonempty fields under the new API. No `fields` are sent until
-the organization's active lead field definitions and dropdown options have
-been read back and validated. A 422 response is terminal and recorded as
+their owner and nonempty fields under the new API. A valid Indian state is sent
+as `fields.state` using the CRM organization's verified active select options.
+Unknown states remain in timeline notes and are omitted from `fields` to avoid
+rejecting the lead. Other fields stay in notes until their active definitions
+and options have been verified. A 422 response is terminal and recorded as
 `rejected` for operator correction.
 
 ## CRM source name
