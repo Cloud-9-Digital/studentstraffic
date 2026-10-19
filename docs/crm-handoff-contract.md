@@ -61,10 +61,8 @@ New fields added to the handoff payload should be additive. Existing fields shou
 Set a server-side `CRM_API_KEY` made in the intended CRM organization with only
 `leads.capture` scope to send leads to `POST /api/v1/leads/capture`. The endpoint
 defaults to `https://app.marro.si/api/v1/leads/capture`; `CRM_API_URL` overrides
-the base URL for local or staging work. When no API key is set, the sender uses
-the existing `CRM_LEAD_INTAKE_URL` and `CRM_LEAD_INTAKE_SECRET` pair. Never put
-the key in a `NEXT_PUBLIC_` variable. A configured key always takes precedence
-over the shared secret; failed API calls do not fall back to the shared secret.
+the base URL for local or staging work. Without the key CRM delivery is skipped.
+Never put the key in a `NEXT_PUBLIC_` variable.
 
 The new endpoint accepts `name`, `phone`, `email`, `source`, `notes`, `fields`,
 `attribution`, and `externalId`, not the old flat payload. `lib/crm-capture-payload.ts`
@@ -74,8 +72,7 @@ It stores lead and form context in timeline notes; the dedicated attribution
 object carries page/referrer and UTM details. Set active CRM sources named
 `Website`, `WATI`, `Seminar 2026`, and any campaign `sourceName` used by this
 site. The scoped API uses an unknown source as `Website`; configure assignment
-rules for these source names before switching keys because its owner routing
-differs from the legacy intake's assignee email fallbacks. Existing leads keep
+rules for these source names before switching keys. Existing leads keep
 their owner and nonempty fields under the new API. No `fields` are sent until
 the organization's active lead field definitions and dropdown options have
 been read back and validated. A 422 response is terminal and recorded as
@@ -83,26 +80,25 @@ been read back and validated. A 422 response is terminal and recorded as
 
 ## CRM source name
 
-The CRM's `/api/leads/intake` accepts an optional `sourceName` (1-60 chars). It matches that string
-against the CRM's `leadSources` table by name, **creating the row if it does not exist**, and writes
-the result to `leads.source` -- which is what the sales team sees as the lead's Source. When the
-field is omitted the CRM falls back to its own `LEAD_INTAKE_SOURCE_NAME`, defaulting to `"Website"`.
+The scoped capture API accepts an optional `source` name (1-60 chars). It uses
+an active source in the key's organization with that name; an unknown name falls
+back to `Website`. It does not create sources. Configure campaign sources in the
+CRM before sending leads that should carry those labels.
 
 This repo derives it in `getSourceName` in `lib/lead-handoff.ts`, from a per-path map:
 
 | `sourcePath` | `sourceName` |
 |---|---|
 | `/free-mbbs-counselling-2026` | `MBBS in 10 Lakhs` |
-| everything else | omitted, so the CRM applies its default |
+| everything else | `Website`, unless WATI or seminar rules select their source |
 
 Two rules when adding an entry:
 
-- The value is a **label the sales team reads**, not a slug. A typo silently creates a second
-  lead source in the CRM rather than failing, so check the exact spelling against the CRM first.
-- Never route `sourceName` through `withPlaceholder` in `lib/lead-sync.ts`. That helper substitutes
-  `"NA"` for empty values, and since the CRM validates `min(1)` it would happily create a lead source
-  named `NA` for every lead without a campaign. It must stay on the plain `...payload` spread, where
-  an undefined value is dropped by `JSON.stringify`.
+- The value is a **label the sales team reads**, not a slug. A typo falls back
+  to `Website`, so check the exact spelling against the organization's active
+  sources before enabling a campaign.
+- `lib/crm-capture-payload.ts` maps `sourceName` to `source` and selects `WATI`
+  or `Seminar 2026` for those flows.
 
 ## Lead delivery routing
 

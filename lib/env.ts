@@ -5,8 +5,6 @@ import { defaultSiteUrl, metaPixelId as metaPixelIdFallback } from "@/lib/consta
 const envSchema = z.object({
   DATABASE_URL: z.string().url().optional(),
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
-  CRM_LEAD_INTAKE_URL: z.string().url().optional(),
-  CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
   CRM_API_KEY: z.string().min(1).optional(),
   CRM_API_URL: z.string().url().optional(),
   GOOGLE_SHEETS_SPREADSHEET_ID: z.string().min(1).optional(),
@@ -49,8 +47,6 @@ function optionalEnv(value: string | undefined) {
 const parsedEnv = envSchema.safeParse({
   DATABASE_URL: optionalEnv(process.env.DATABASE_URL),
   NEXT_PUBLIC_SITE_URL: optionalEnv(process.env.NEXT_PUBLIC_SITE_URL),
-  CRM_LEAD_INTAKE_URL: optionalEnv(process.env.CRM_LEAD_INTAKE_URL),
-  CRM_LEAD_INTAKE_SECRET: optionalEnv(process.env.CRM_LEAD_INTAKE_SECRET),
   CRM_API_KEY: optionalEnv(process.env.CRM_API_KEY),
   CRM_API_URL: optionalEnv(process.env.CRM_API_URL),
   GOOGLE_SHEETS_SPREADSHEET_ID: optionalEnv(process.env.GOOGLE_SHEETS_SPREADSHEET_ID),
@@ -97,8 +93,6 @@ if (process.env.NODE_ENV === "production" && !parsedEnv.data.NEXT_PUBLIC_SITE_UR
 export const env = {
   databaseUrl: parsedEnv.data.DATABASE_URL,
   siteUrl: parsedEnv.data.NEXT_PUBLIC_SITE_URL ?? defaultSiteUrl,
-  crmLeadIntakeUrl: parsedEnv.data.CRM_LEAD_INTAKE_URL,
-  crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
   crmApiKey: parsedEnv.data.CRM_API_KEY,
   crmApiUrl: parsedEnv.data.CRM_API_URL ?? "https://app.marro.si",
   googleSheetsSpreadsheetId: parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID,
@@ -118,10 +112,7 @@ export const env = {
   watiChannelNumber: parsedEnv.data.WATI_CHANNEL_NUMBER,
   watiWebhookToken: parsedEnv.data.WATI_WEBHOOK_TOKEN,
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
-  hasCrmLeadSyncConfig: Boolean(
-    parsedEnv.data.CRM_API_KEY ||
-      (parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET)
-  ),
+  hasCrmLeadSyncConfig: Boolean(parsedEnv.data.CRM_API_KEY),
   hasGoogleSheetsSyncConfig: Boolean(
     parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID &&
       parsedEnv.data.GOOGLE_SHEETS_SHEET_NAME &&

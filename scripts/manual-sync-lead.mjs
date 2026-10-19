@@ -69,18 +69,14 @@ const payload = {
 };
 
 // Sync to CRM
-const crmUrl = process.env.CRM_LEAD_INTAKE_URL;
-const crmSecret = process.env.CRM_LEAD_INTAKE_SECRET;
 const crmApiKey = process.env.CRM_API_KEY?.trim();
 
-if (!crmApiKey && (!crmUrl || !crmSecret)) {
-  console.error('❌ CRM_API_KEY or legacy CRM_LEAD_INTAKE_URL and CRM_LEAD_INTAKE_SECRET not configured');
+if (!crmApiKey) {
+  console.error('❌ CRM_API_KEY not configured');
   process.exit(1);
 }
 
-const endpoint = crmApiKey
-  ? `${(process.env.CRM_API_URL || 'https://app.marro.si').replace(/\/+$/, '')}/api/v1/leads/capture`
-  : crmUrl;
+const endpoint = `${(process.env.CRM_API_URL || 'https://app.marro.si').replace(/\/+$/, '')}/api/v1/leads/capture`;
 console.log(`\n🚀 Sending to CRM: ${endpoint}`);
 
 try {
@@ -88,22 +84,19 @@ try {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      ...(crmApiKey
-        ? { Authorization: `Bearer ${crmApiKey}`, 'Idempotency-Key': `studentstraffic:${lead.id}` }
-        : { 'x-lead-intake-secret': crmSecret }),
+      Authorization: `Bearer ${crmApiKey}`,
+      'Idempotency-Key': `studentstraffic:${lead.id}`,
     },
-    body: JSON.stringify(crmApiKey ? buildCrmCapturePayload(payload) : payload),
+    body: JSON.stringify(buildCrmCapturePayload(payload)),
   });
 
   const result = await response.json();
-  const crmLeadId = crmApiKey ? result.lead?.id : result.leadId;
+  const crmLeadId = result.lead?.id;
 
   if (!response.ok) {
-    const reason = crmApiKey ? result.error?.message : result.error;
-    const code = crmApiKey ? result.error?.code : result.code;
-    const retryable = crmApiKey
-      ? ![400, 401, 403, 404, 413, 422].includes(response.status)
-      : result.retryable !== false;
+    const reason = result.error?.message;
+    const code = result.error?.code;
+    const retryable = ![400, 401, 403, 404, 413, 422].includes(response.status);
     console.error(`❌ CRM sync failed: ${code ? `${code}: ` : ''}${reason || `HTTP ${response.status}`}`);
 
     // Update lead with error
@@ -125,8 +118,8 @@ try {
   }
 
   console.log('\n✅ CRM sync successful!');
-  console.log(`   Created: ${crmApiKey ? result.lead?.created : result.created}`);
-  console.log(`   Updated: ${crmApiKey ? result.lead?.updated : result.updated}`);
+  console.log(`   Created: ${result.lead?.created}`);
+  console.log(`   Updated: ${result.lead?.updated}`);
   console.log(`   CRM Lead ID: ${crmLeadId}`);
 
   // Update lead with success

@@ -33,19 +33,6 @@ type LeadSyncOptions = {
 };
 
 type CrmSyncResponse = {
-  ok?: boolean;
-  leadId?: number;
-  created?: boolean;
-  updated?: boolean;
-  error?: string;
-  message?: string;
-  /** Stable identifier for the failure, e.g. "duplicate_lead". */
-  code?: string;
-  /** False when the CRM will refuse this same payload however often it is sent. */
-  retryable?: boolean;
-};
-
-type ScopedCrmResponse = {
   lead?: { id?: number; created?: boolean; updated?: boolean };
   error?: { code?: string; message?: string };
 };
@@ -263,40 +250,28 @@ export async function syncLeadToCrm(
   }
 
   try {
-    const scoped = Boolean(env.crmApiKey);
-    const url = scoped
-      ? `${env.crmApiUrl.replace(/\/+$/, "")}/api/v1/leads/capture`
-      : env.crmLeadIntakeUrl!;
+    const url = `${env.crmApiUrl.replace(/\/+$/, "")}/api/v1/leads/capture`;
     const response = await postJson(
       url,
-      scoped ? buildCrmCapturePayload(payload) : buildTransportPayload(payload),
-      scoped
-        ? {
-            Authorization: `Bearer ${env.crmApiKey}`,
-            ...(payload.websiteLeadId
-              ? { "Idempotency-Key": `studentstraffic:${payload.websiteLeadId}` }
-              : {}),
-          }
-        : { "x-lead-intake-secret": env.crmLeadIntakeSecret! },
+      buildCrmCapturePayload(payload),
+      {
+        Authorization: `Bearer ${env.crmApiKey}`,
+        ...(payload.websiteLeadId
+          ? { "Idempotency-Key": `studentstraffic:${payload.websiteLeadId}` }
+          : {}),
+      },
     );
     const rawText = await response.text();
     const parsed = rawText ? JSON.parse(rawText) as CrmSyncResponse : {};
-    const scopedParsed = parsed as ScopedCrmResponse;
 
     if (!response.ok) {
       const reason =
-        (scoped ? scopedParsed.error?.message : parsed.error) ??
-        parsed.message ??
+        parsed.error?.message ??
         `CRM capture failed with status ${response.status}.`;
-      const code = scoped ? scopedParsed.error?.code : parsed.code;
-      const retryable = scoped
-        ? ![400, 401, 403, 404, 413, 422].includes(response.status)
-        : parsed.retryable !== false;
+      const code = parsed.error?.code;
+      const retryable = ![400, 401, 403, 404, 413, 422].includes(response.status);
 
-      // The CRM distinguishes "not right now" from "not ever" — a duplicate or a payload it
-      // will never accept comes back retryable:false. Recording that as a terminal state costs
-      // one write; leaving it as `failed` costs five retries of a request whose answer cannot
-      // change, and buries the reason under attempt counts.
+      // Validation and authorization failures need operator correction; retries cannot fix them.
       if (!retryable) {
         await updateLeadSyncState(leadId, {
           crmSyncStatus: "rejected",
@@ -315,7 +290,7 @@ export async function syncLeadToCrm(
       throw new Error(reason);
     }
 
-    const crmLeadId = scoped ? scopedParsed.lead?.id : parsed.leadId;
+    const crmLeadId = parsed.lead?.id;
     if (!Number.isSafeInteger(crmLeadId) || !crmLeadId || crmLeadId < 1) {
       throw new Error("CRM response did not include a valid lead ID.");
     }
