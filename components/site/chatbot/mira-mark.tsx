@@ -12,17 +12,19 @@ import { cn } from "@/lib/utils";
  * icon, so the assistant and the tab never drift apart: replace the favicon
  * and this follows automatically.
  *
+ * It never animates. A pulsing icon next to shimmering text gave the waiting
+ * state two competing rhythms, and the mark is an identity rather than a
+ * status light — the text alone says that something is happening.
+ *
  * No tile, ring or rounded background. The artwork already carries its own
  * silhouette, and wrapping it in a second container read as an icon stuck
  * inside a box — two competing shapes where there should be one.
  */
 export function MiraMark({
   size = 30,
-  busy = false,
   className,
 }: {
   size?: number;
-  busy?: boolean;
   className?: string;
 }) {
   return (
@@ -34,7 +36,6 @@ export function MiraMark({
       aria-hidden="true"
       className={cn(
         "shrink-0 object-contain",
-        busy && "animate-[pulse_1.4s_ease-in-out_infinite]",
         className
       )}
       style={{ width: size, height: size }}

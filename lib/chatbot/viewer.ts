@@ -5,6 +5,7 @@ import { desc, eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { universities, users, userShortlists } from "@/lib/db/schema";
+import { resolveDbUserId } from "@/lib/server-session";
 
 /**
  * What Mira is allowed to know about a signed-in visitor.
@@ -17,6 +18,8 @@ import { universities, users, userShortlists } from "@/lib/db/schema";
  * the profile.
  */
 export type ChatViewer = {
+  /** The real users.id, or null for a login with no site account behind it. */
+  userId: string | null;
   firstName: string | null;
   neetScore: number | null;
   budgetUsd: number | null;
@@ -26,12 +29,41 @@ export type ChatViewer = {
 
 export async function getChatViewer(): Promise<ChatViewer | null> {
   const session = await auth();
-  const userId = session?.user?.id;
+  const email = session?.user?.email;
 
-  if (!userId) return null;
+  if (!email) return null;
 
+  /*
+   * The name comes from the session rather than the users row on purpose.
+   * An admin signs in against admin_users, whose full name can differ from
+   * the users row that happens to share the address, and the dock's greeting
+   * already shows the session name — sourcing it anywhere else would have the
+   * greeting and Mira calling the same person two different things.
+   */
+  const firstName = session.user?.name?.trim().split(/\s+/)[0] || null;
+
+  /*
+   * NOT session.user.id. On an admin session that is the numeric admin id
+   * ("1"), which matches no users row, so the profile and shortlist lookups
+   * below came back empty and Mira knew nothing at all about anyone signed in
+   * that way. resolveDbUserId is the codebase's canonical address-to-id step.
+   */
+  const userId = await resolveDbUserId(email);
   const db = getDb();
-  if (!db) return null;
+
+  // Signed in, but with no site account behind the address, or no database to
+  // ask. We still know who we are talking to, which is the part that matters
+  // most — so personalisation degrades to the name rather than vanishing.
+  const nameOnly: ChatViewer = {
+    userId,
+    firstName,
+    neetScore: null,
+    budgetUsd: null,
+    preferredCountries: null,
+    shortlist: [],
+  };
+
+  if (!userId || !db) return nameOnly;
 
   try {
     const [profile] = await db
@@ -45,7 +77,7 @@ export async function getChatViewer(): Promise<ChatViewer | null> {
       .where(eq(users.id, userId))
       .limit(1);
 
-    if (!profile) return null;
+    if (!profile) return nameOnly;
 
     const shortlist = await db
       .select({ name: universities.name, slug: universities.slug })
@@ -56,7 +88,8 @@ export async function getChatViewer(): Promise<ChatViewer | null> {
       .limit(12);
 
     return {
-      firstName: profile.name?.trim().split(/\s+/)[0] ?? null,
+      userId,
+      firstName: firstName ?? profile.name?.trim().split(/\s+/)[0] ?? null,
       neetScore: profile.neetScore,
       budgetUsd: profile.budgetUsd,
       preferredCountries: profile.preferredCountries,
@@ -65,7 +98,7 @@ export async function getChatViewer(): Promise<ChatViewer | null> {
   } catch (error) {
     // Personalisation is a nicety; an unknown visitor still gets every answer.
     console.error("[chat] viewer lookup failed", error);
-    return null;
+    return nameOnly;
   }
 }
 

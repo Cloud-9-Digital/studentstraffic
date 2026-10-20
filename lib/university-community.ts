@@ -132,6 +132,7 @@ export async function getActivePeersForUniversity(
         universitySlug: universities.slug,
         universityName: universities.name,
         countryName: countries.name,
+        countrySlug: countries.slug,
       })
       .from(studentPeers)
       .innerJoin(universities, eq(studentPeers.universityId, universities.id))
@@ -158,6 +159,7 @@ export type PeerWithUniversity = PublicPeer & {
   universitySlug: string;
   universityName: string;
   countryName: string;
+  countrySlug: string;
 };
 
 export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
@@ -186,6 +188,7 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
         universitySlug: universities.slug,
         universityName: universities.name,
         countryName: countries.name,
+        countrySlug: countries.slug,
       })
       .from(studentPeers)
       .innerJoin(universities, eq(studentPeers.universityId, universities.id))

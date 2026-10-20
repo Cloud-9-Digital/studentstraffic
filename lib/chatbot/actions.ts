@@ -5,6 +5,7 @@ import { and, eq, inArray } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { universities, userShortlists } from "@/lib/db/schema";
+import { resolveDbUserId } from "@/lib/server-session";
 
 /**
  * Actions Mira can take on the visitor's behalf, as opposed to things it can
@@ -40,9 +41,23 @@ export async function shortlistUniversities(
   };
 
   const session = await auth();
-  const userId = session?.user?.id;
+  const email = session?.user?.email;
+
+  if (!email) {
+    return { ...empty, requiresSignIn: true };
+  }
+
+  /*
+   * NOT session.user.id: on an admin session that is the numeric admin id,
+   * which matches no users row — and user_shortlists.user_id is a foreign key
+   * to users.id, so writing with it does not merely save to the wrong place,
+   * it fails outright.
+   */
+  const userId = await resolveDbUserId(email);
 
   if (!userId) {
+    // Signed in, but with no site account to hang a shortlist on. Saving
+    // genuinely does need one, so the answer is the same as for a visitor.
     return { ...empty, requiresSignIn: true };
   }
 

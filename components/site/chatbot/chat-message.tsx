@@ -293,7 +293,7 @@ export function ChatMessage({
 export function ChatThinking({ className }: { className?: string }) {
   return (
     <div className={cn("flex items-center gap-2 py-0.5", className)}>
-      <MiraMark size={18} busy />
+      <MiraMark size={18} />
       <span className="mira-thinking text-[0.8rem] font-medium">Thinking…</span>
     </div>
   );

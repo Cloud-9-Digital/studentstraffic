@@ -16,6 +16,7 @@ export const CHATBOT_TOOL_NAMES = [
   "list_destinations",
   "request_counselling_callback",
   "find_student_peers",
+  "get_peer_coverage",
   "request_peer_connection",
   "shortlist_universities",
 ] as const;
@@ -52,6 +53,10 @@ const TOOL_LABELS: Record<ChatbotToolName, { running: string; done: string }> = 
   find_student_peers: {
     running: "Checking who is available",
     done: "Checked current students",
+  },
+  get_peer_coverage: {
+    running: "Checking where students are available",
+    done: "Checked where students are available",
   },
   request_peer_connection: {
     running: "Opening the introduction form",

@@ -196,8 +196,16 @@ for who is asking.
 | Action | Behaviour |
 | --- | --- |
 | `shortlist_universities` | Saves to the signed-in visitor's shortlist. Shortlists are keyed by user id, so there is nothing to write for an anonymous visitor — it returns `requiresSignIn` and Mira says saving needs an account rather than implying it worked. |
-| `find_student_peers` | Lists students at a university who are active **and** accepting requests. Never returns contact details. |
+| `find_student_peers` | Lists students who are active **and** accepting requests, at one university (`universitySlug`) or across a whole destination (`countrySlug`). Never returns contact details. No branch dead-ends: a university with nobody available answers with the universities in the same country that do have someone, and a destination with nobody answers with the destinations that do. |
+| `get_peer_coverage` | Which destinations and courses have students at all. Mira must check this before offering to find a student on a given course. |
 | `request_peer_connection` | Opens the introduction form. |
+
+Peers are the one place where the catalogue is far narrower than the site: every
+student on the site is on a single course. A per-university lookup alone made
+Mira ask which course before it could act — a question with one possible answer —
+and then guess a handful of universities out of the twenty-one that had someone.
+The destination lookup answers that question in one step, and `get_peer_coverage`
+is what stops Mira offering an introduction on a course no student is taking.
 
 `chat-peer-form.tsx` calls the existing `submitPeerRequestAction` server action
 directly rather than going through a new endpoint, so a request raised in chat is

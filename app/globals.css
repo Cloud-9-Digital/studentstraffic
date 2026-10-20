@@ -480,13 +480,18 @@ select {
 /*
  * The composer's beam.
  *
- * A spectrum runs along the border, with a bright band travelling through it.
- * It sits on the border rather than the fill so the text it frames stays on a
- * plain surface and remains readable, and it is the one loud element in an
- * otherwise quiet panel — which is why it earns the attention.
+ * At rest this is an ordinary hairline — the panel is for reading, and a
+ * permanent rainbow around the input competed with every answer above it.
+ * The colour is reserved for one moment: while Mira is working, a band of
+ * light travels around the border and then it goes back to being a border.
  *
- * Three states: resting (the spectrum, muted), focused (brighter), and working
- * (the beam sweeps). Nothing animates for anyone who has asked for less motion.
+ * It is a conic gradient rotated through --mira-beam-angle, so the light
+ * genuinely runs around all four sides rather than sliding across in one
+ * direction. The lit arc is centred at 180deg, away from the 0/360 seam,
+ * so it fades in and out instead of cutting.
+ *
+ * Three states: resting (a hairline), focused (tinted toward the brand), and
+ * working (the beam travels). Nothing moves for anyone who asked for less.
  */
 @property --mira-beam-angle {
   syntax: "<angle>";
@@ -494,45 +499,65 @@ select {
   inherits: false;
 }
 
-@keyframes mira-beam-sweep {
+@keyframes mira-beam-travel {
   to {
-    background-position:
-      0 0,
-      -200% 50%;
+    --mira-beam-angle: 360deg;
   }
 }
 
 .mira-composer {
-  --mira-spectrum: #0f3d37, #0e7490, #4f46e5, #a21caf, #c2410c, #ca8a04, #0f3d37;
-
-  border: 1.5px solid transparent;
+  border: 2.5px solid transparent;
   border-radius: 1rem;
+  /* The fill is painted over the padding box, so the gradient below it is
+     only ever visible in the 2.5px the border occupies. */
   background:
     linear-gradient(var(--background), var(--background)) padding-box,
-    linear-gradient(90deg, var(--mira-spectrum)) border-box;
-  background-size:
-    100% 100%,
-    200% 100%;
-  background-position:
-    0 0,
-    0 50%;
-  opacity: 1;
-  transition: filter 220ms ease;
-  filter: saturate(0.55) opacity(0.75);
+    linear-gradient(var(--border), var(--border)) border-box;
+  transition: background 260ms ease;
 }
 
 .mira-composer:focus-within {
-  filter: saturate(1) opacity(1);
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(
+        color-mix(in oklab, var(--primary) 45%, var(--border)),
+        color-mix(in oklab, var(--primary) 45%, var(--border))
+      )
+      border-box;
 }
 
-.mira-composer[data-busy="true"] {
-  filter: saturate(1.15) opacity(1);
-  animation: mira-beam-sweep 2.4s linear infinite;
+.mira-composer[data-busy="true"],
+.mira-composer[data-busy="true"]:focus-within {
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    conic-gradient(
+        from var(--mira-beam-angle),
+        var(--border) 0deg,
+        var(--border) 130deg,
+        #0f3d37 160deg,
+        #0e7490 185deg,
+        #6d28d9 205deg,
+        #c2410c 228deg,
+        var(--border) 250deg,
+        var(--border) 360deg
+      )
+      border-box;
+  animation: mira-beam-travel 2.8s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mira-composer[data-busy="true"] {
+  /* A frozen arc would read as a rendering fault, so working falls back to
+     the same tint focus uses. */
+  .mira-composer[data-busy="true"],
+  .mira-composer[data-busy="true"]:focus-within {
     animation: none;
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      linear-gradient(
+          color-mix(in oklab, var(--primary) 45%, var(--border)),
+          color-mix(in oklab, var(--primary) 45%, var(--border))
+        )
+        border-box;
   }
 }
 
@@ -568,19 +593,24 @@ select {
 }
 
 .mira-thinking {
+  /* A narrow bright core rather than a broad fade, so the highlight reads as
+     one pass travelling through the word instead of the whole label breathing.
+     The peak is the brand teal, which is the only colour in the waiting state
+     now that the mark beside it holds still. */
   background: linear-gradient(
     90deg,
     var(--muted-foreground) 0%,
-    var(--muted-foreground) 35%,
-    var(--foreground) 50%,
-    var(--muted-foreground) 65%,
+    var(--muted-foreground) 42%,
+    var(--primary) 50%,
+    var(--muted-foreground) 58%,
     var(--muted-foreground) 100%
   );
   background-size: 200% 100%;
+  background-position: 0 0;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: mira-shimmer 1.8s linear infinite;
+  animation: mira-shimmer 2.2s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

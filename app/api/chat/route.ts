@@ -32,6 +32,7 @@ import {
   findPrograms,
   findStudentPeers,
   getCountryBrief,
+  getPeerCoverage,
   getUniversityDossier,
   listDestinations,
   searchSite,
@@ -182,9 +183,14 @@ export async function POST(request: Request) {
 
   const tracking = getTrackingSnapshot(cookieStore, {});
 
+  // Resolved before the conversation row is written so the transcript can be
+  // attributed to the account rather than only to a browser cookie.
+  const viewer = await getChatViewer();
+
   const conversation = await startOrResumeConversation({
     publicId: body.conversationId,
     visitorId: tracking.visitorId ?? null,
+    userId: viewer?.userId ?? null,
     page: body.page,
     referrer: headerStore.get("referer"),
     userAgent: headerStore.get("user-agent"),
@@ -201,7 +207,7 @@ export async function POST(request: Request) {
   await recordUserMessage(conversation.id, latestText);
 
   const pageNote = buildPageContextNote(body.page);
-  const viewerNote = buildViewerNote(await getChatViewer());
+  const viewerNote = buildViewerNote(viewer);
   const startedAt = Date.now();
 
   const stream = createUIMessageStream<MiraUIMessage>({
@@ -383,10 +389,21 @@ export async function POST(request: Request) {
 
         find_student_peers: tool({
           description:
-            "Find students currently at a university who have agreed to talk to applicants. Use it when the visitor asks what a place is really like, about hostels, food, safety or daily life, or whether they can speak to someone there — the honest answer to those is often a current student rather than our page.",
-          inputSchema: z.object({ universitySlug: slugSchema }),
+            "Find students who have agreed to talk to applicants — at one university, or across a whole destination. Pass countrySlug when the visitor names a country (\"can I talk to students in Vietnam\"), universitySlug when they name a university; pass one, not both. With neither, it returns every destination where an introduction is possible. Use it when the visitor asks what a place is really like, about hostels, food, safety or daily life, or whether they can speak to someone there — the honest answer to those is often a current student rather than our page. Never ask which course first: ask this instead, because only some courses have students at all.",
+          inputSchema: z.object({
+            universitySlug: slugSchema.optional(),
+            countrySlug: slugSchema.optional(),
+          }),
           execute: async (input) =>
             wrap("find_student_peers", input, () => findStudentPeers(input)),
+        }),
+
+        get_peer_coverage: tool({
+          description:
+            "Which destinations and courses actually have students available to talk to applicants. Call it before telling a visitor you will look for a student on a particular course or in a particular country, so that you never offer an introduction that cannot exist.",
+          inputSchema: z.object({}),
+          execute: async (input) =>
+            wrap("get_peer_coverage", input, () => getPeerCoverage()),
         }),
 
         request_peer_connection: tool({

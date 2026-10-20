@@ -18,7 +18,11 @@ import {
 } from "@/lib/routes";
 import { getCountryFlagCode } from "@/lib/university-media";
 import { searchCatalog } from "@/lib/search/search";
-import { getActivePeersForUniversity } from "@/lib/university-community";
+import {
+  getActivePeersForUniversity,
+  getAllActivePeers,
+  type PeerWithUniversity,
+} from "@/lib/university-community";
 import {
   formatCurrencyUsd,
   formatProgramAnnualFee,
@@ -517,17 +521,125 @@ export async function listDestinations(): Promise<KnowledgeResult> {
   };
 }
 
+/** One line per student, in the only detail we ever reveal about them. */
+function describePeers(peers: PeerWithUniversity[], limit = 6) {
+  return peers.slice(0, limit).map((peer) => ({
+    firstName: peer.fullName.split(" ")[0],
+    course: peer.courseName,
+    year: peer.currentYearOrBatch,
+    homeState: peer.homeState,
+    languages: peer.languages,
+  }));
+}
+
+function groupByUniversity(peers: PeerWithUniversity[]) {
+  const byUniversity = new Map<
+    string,
+    { slug: string; name: string; peers: PeerWithUniversity[] }
+  >();
+
+  for (const peer of peers) {
+    const entry = byUniversity.get(peer.universitySlug) ?? {
+      slug: peer.universitySlug,
+      name: peer.universityName,
+      peers: [],
+    };
+    entry.peers.push(peer);
+    byUniversity.set(peer.universitySlug, entry);
+  }
+
+  return [...byUniversity.values()].sort((a, b) => b.peers.length - a.peers.length);
+}
+
+const sortedUnique = (values: string[]) => [...new Set(values)].sort();
+
+async function getAvailablePeers() {
+  return (await getAllActivePeers()).filter((peer) => peer.acceptingRequests);
+}
+
 /**
- * Students currently at a university who have agreed to talk to applicants.
+ * Where student introductions are possible at all.
+ *
+ * Mira used to guess at this and offered to find, say, an engineering student
+ * when every peer on the site is on one course — an offer it could never keep.
+ * Asking this first means the courses and destinations it names are the ones
+ * that actually have someone behind them.
+ */
+export async function getPeerCoverage(): Promise<KnowledgeResult> {
+  const available = await getAvailablePeers();
+
+  if (available.length === 0) {
+    return {
+      result: {
+        destinations: [],
+        courses: [],
+        note: "No students are taking requests anywhere right now. Say so plainly and offer counselling instead.",
+      },
+      outcome: "no peers anywhere",
+    };
+  }
+
+  const byCountry = new Map<string, { name: string; slug: string; peers: number; universities: Set<string> }>();
+
+  for (const peer of available) {
+    const entry = byCountry.get(peer.countrySlug) ?? {
+      name: peer.countryName,
+      slug: peer.countrySlug,
+      peers: 0,
+      universities: new Set<string>(),
+    };
+    entry.peers += 1;
+    entry.universities.add(peer.universitySlug);
+    byCountry.set(peer.countrySlug, entry);
+  }
+
+  const courses = sortedUnique(available.map((peer) => peer.courseName));
+
+  return {
+    result: {
+      destinations: [...byCountry.values()]
+        .sort((a, b) => b.peers - a.peers)
+        .map((entry) => ({
+          country: entry.name,
+          countrySlug: entry.slug,
+          universities: entry.universities.size,
+          students: entry.peers,
+        })),
+      courses,
+      note: `Introductions are only possible for these courses: ${courses.join(", ")}. Never offer to look for a student on any other course — there are none. If the visitor is on a different course, say that plainly and offer counselling, which covers every course.`,
+    },
+    outcome: `${byCountry.size} destinations, ${courses.length} courses`,
+  };
+}
+
+/**
+ * Students currently at a university, or anywhere in a destination, who have
+ * agreed to talk to applicants.
  *
  * This is the one thing no competitor's assistant can offer, so it is worth
  * surfacing by name rather than hiding behind "we can connect you". Only
  * active peers who are accepting requests are returned, and never their
  * contact details — a connection is brokered, not handed over.
+ *
+ * It takes a destination as well as a university because a visitor who says
+ * "I want to talk to students in Vietnam" has asked a complete question. With
+ * only a per-university lookup, Mira had to stall for a course it did not need
+ * and then guess four universities out of twenty-one.
+ *
+ * No branch here dead-ends. A university with nobody available answers with
+ * the places in the same country that do have someone, and a request with
+ * neither slug answers with the full coverage.
  */
 export async function findStudentPeers(input: {
-  universitySlug: string;
+  universitySlug?: string;
+  countrySlug?: string;
 }): Promise<KnowledgeResult> {
+  if (!input.universitySlug) {
+    return input.countrySlug
+      ? findPeersInCountry(input.countrySlug)
+      : getPeerCoverage();
+  }
+
   const [university, peers] = await Promise.all([
     getUniversityBySlug(input.universitySlug),
     getActivePeersForUniversity(input.universitySlug),
@@ -537,7 +649,7 @@ export async function findStudentPeers(input: {
     return {
       result: {
         found: false,
-        note: "No published university with that slug. Resolve the name with search_site first.",
+        note: "No published university with that slug. Resolve the name with search_site first, or pass countrySlug to see everyone available in a destination.",
       },
       outcome: "university not found",
     };
@@ -546,13 +658,27 @@ export async function findStudentPeers(input: {
   const available = peers.filter((peer) => peer.acceptingRequests);
 
   if (available.length === 0) {
+    // Not a dead end: whoever is available nearby is the useful answer.
+    const elsewhere = groupByUniversity(
+      (await getAvailablePeers()).filter(
+        (peer) => peer.countrySlug === university.countrySlug
+      )
+    ).slice(0, 6);
+
     return {
       result: {
         university: university.name,
         peers: [],
-        note: `No students at ${university.name} are taking requests right now. Say so plainly and offer counselling instead — do not imply someone is available.`,
+        alsoInThisCountry: elsewhere.map((entry) => ({
+          university: entry.name,
+          universitySlug: entry.slug,
+          students: entry.peers.length,
+        })),
+        note: elsewhere.length
+          ? `No students at ${university.name} are taking requests right now. Do not imply otherwise — name the universities in alsoInThisCountry instead and offer an introduction at one of those.`
+          : `No students at ${university.name} are taking requests, and none elsewhere in that country either. Say so plainly and offer counselling instead.`,
       },
-      outcome: "no peers",
+      outcome: elsewhere.length ? "no peers, offered alternatives" : "no peers",
     };
   }
 
@@ -561,13 +687,7 @@ export async function findStudentPeers(input: {
       university: university.name,
       universitySlug: university.slug,
       peerCount: available.length,
-      peers: available.slice(0, 6).map((peer) => ({
-        firstName: peer.fullName.split(" ")[0],
-        course: peer.courseName,
-        year: peer.currentYearOrBatch,
-        homeState: peer.homeState,
-        languages: peer.languages,
-      })),
+      peers: describePeers(available),
       note: "These are real students at that university. Describe who is available in general terms — a first name, course and year is plenty — and offer to arrange an introduction with request_peer_connection. Never promise a specific person will respond.",
     },
     links: [
@@ -577,5 +697,67 @@ export async function findStudentPeers(input: {
       },
     ],
     outcome: `${available.length} peers`,
+  };
+}
+
+/** Everyone available across one destination, grouped by university. */
+async function findPeersInCountry(countrySlug: string): Promise<KnowledgeResult> {
+  const [country, available] = await Promise.all([
+    getCountryBySlug(countrySlug),
+    getAvailablePeers(),
+  ]);
+
+  if (!country) {
+    return {
+      result: {
+        found: false,
+        note: "No published destination with that slug. Use list_destinations to resolve the name.",
+      },
+      outcome: "country not found",
+    };
+  }
+
+  const here = available.filter((peer) => peer.countrySlug === countrySlug);
+
+  if (here.length === 0) {
+    // Still answerable: say where introductions ARE possible.
+    const coverage = await getPeerCoverage();
+
+    return {
+      result: {
+        country: country.name,
+        universities: [],
+        elsewhere: coverage.result,
+        note: `No students in ${country.name} are taking requests right now. Say so plainly, then offer either the destinations in elsewhere or a counsellor, who covers every destination.`,
+      },
+      outcome: "no peers in country",
+    };
+  }
+
+  const grouped = groupByUniversity(here);
+  const courses = sortedUnique(here.map((peer) => peer.courseName));
+
+  return {
+    result: {
+      country: country.name,
+      countrySlug,
+      universityCount: grouped.length,
+      studentCount: here.length,
+      courses,
+      universities: grouped.slice(0, 12).map((entry) => ({
+        university: entry.name,
+        universitySlug: entry.slug,
+        students: entry.peers.length,
+        who: describePeers(entry.peers, 3),
+      })),
+      note: `${here.length} students across ${grouped.length} universities in ${country.name} are taking requests, all of them on: ${courses.join(", ")}. Lead with how many and where, name a few, then ask which university to arrange an introduction at. Do NOT offer to find students on any other course — in this destination there are none.`,
+    },
+    links: [
+      {
+        label: `Studying in ${country.name}`,
+        href: getCountryHref(countrySlug),
+      },
+    ],
+    outcome: `${here.length} peers across ${grouped.length} universities`,
   };
 }
