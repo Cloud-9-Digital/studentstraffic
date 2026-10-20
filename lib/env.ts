@@ -38,6 +38,11 @@ const envSchema = z.object({
   META_PIXEL_ID: z.string().min(1).optional(),
   META_CAPI_ACCESS_TOKEN: z.string().min(1).optional(),
   META_CAPI_TEST_EVENT_CODE: z.string().min(1).optional(),
+  // Chatbot ("Mira"). Without ANTHROPIC_API_KEY, production renders no widget
+  // and /api/chat answers 503, so the site works exactly as before. Dev still
+  // renders the launcher — see the gate in app/layout.tsx.
+  ANTHROPIC_API_KEY: z.string().min(1).optional(),
+  CHATBOT_MODEL: z.string().min(1).optional(),
 });
 
 function optionalEnv(value: string | undefined) {
@@ -78,6 +83,8 @@ const parsedEnv = envSchema.safeParse({
   META_PIXEL_ID: optionalEnv(process.env.META_PIXEL_ID),
   META_CAPI_ACCESS_TOKEN: optionalEnv(process.env.META_CAPI_ACCESS_TOKEN),
   META_CAPI_TEST_EVENT_CODE: optionalEnv(process.env.META_CAPI_TEST_EVENT_CODE),
+  ANTHROPIC_API_KEY: optionalEnv(process.env.ANTHROPIC_API_KEY),
+  CHATBOT_MODEL: optionalEnv(process.env.CHATBOT_MODEL),
 });
 
 if (!parsedEnv.success) {
@@ -151,4 +158,7 @@ export const env = {
     parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID && parsedEnv.data.AGORA_APP_CERTIFICATE
   ),
   hasAblyRealtime: Boolean(parsedEnv.data.ABLY_API_KEY),
+  anthropicApiKey: parsedEnv.data.ANTHROPIC_API_KEY,
+  chatbotModel: parsedEnv.data.CHATBOT_MODEL,
+  hasChatbot: Boolean(parsedEnv.data.ANTHROPIC_API_KEY),
 };

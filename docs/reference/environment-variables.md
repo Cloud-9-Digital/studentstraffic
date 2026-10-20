@@ -278,6 +278,30 @@ SENTRY_AUTH_TOKEN=sntrys_your_token_here
 
 ---
 
+## 🤖 Chatbot
+
+### ANTHROPIC_API_KEY
+
+**Required for**: the on-site assistant ("Mira")
+**Format**: `sk-ant-...`
+
+Leave it unset to keep the assistant switched off. With no key the launcher is
+not rendered and `/api/chat` answers `503`; the rest of the site is unaffected.
+
+Metered per request, so the chat endpoint is origin-checked, bot-filtered and
+rate limited — see [Chatbot](../features/chatbot.md).
+
+### CHATBOT_MODEL
+
+**Required**: No
+**Default**: `claude-opus-5-5`
+
+Overrides the model without a code change. Watch `input_tokens` /
+`cached_input_tokens` / `output_tokens` in `chatbot_messages` to judge whether a
+cheaper model holds answer quality at your traffic level.
+
+---
+
 ## ⚙️ Optional Variables
 
 ### CRON_SECRET
@@ -516,6 +540,7 @@ Before deploying:
 - [Deployment Checklist](../getting-started/deployment.md)
 - [Sentry Setup](../features/error-tracking.md)
 - [Rate Limiting](../features/rate-limiting.md)
+- [Chatbot](../features/chatbot.md)
 
 ---
 

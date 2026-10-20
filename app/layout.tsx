@@ -12,8 +12,10 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import { AttributionTracking } from "@/components/site/attribution-tracking";
+import { ChatDockProvider } from "@/components/site/chatbot/chat-dock-context";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
+import { env } from "@/lib/env";
 import { defaultMetadata } from "@/lib/metadata";
 import {
   getAuthorStructuredData,
@@ -46,6 +48,9 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+const chatEnabled =
+  env.hasChatbot || process.env.NODE_ENV !== "production";
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -73,7 +78,18 @@ export default async function RootLayout({
           <Suspense><AttributionTracking /></Suspense>
           <NavCountriesClientProvider countries={navCountries}>
             <NavCoursesClientProvider courses={navCourses}>
-              <AppChrome>{children}</AppChrome>
+              {/* The dock reflows the page when it opens, so it has to wrap the
+                  chrome rather than float over it. Production needs
+                  ANTHROPIC_API_KEY — it never ships a chat UI that cannot
+                  answer — while development always mounts it so the dock can be
+                  seen and styled before a key exists. */}
+              {chatEnabled ? (
+                <ChatDockProvider>
+                  <AppChrome>{children}</AppChrome>
+                </ChatDockProvider>
+              ) : (
+                <AppChrome>{children}</AppChrome>
+              )}
             </NavCoursesClientProvider>
           </NavCountriesClientProvider>
         </Providers>

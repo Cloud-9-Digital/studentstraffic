@@ -27,6 +27,7 @@ const tsvector = customType<{ data: string; driverData: string }>({
   },
 });
 import type {
+  ChatbotToolCallRecord,
   CourseStream,
   FeeStatus,
   Faq,
@@ -1182,6 +1183,76 @@ export const universityResearchDrafts = pgTable(
   ]
 );
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Chatbot ("Mira") conversations
+//
+// Transcripts are kept for three reasons: the questions students actually ask
+// are the cleanest content-gap signal we have, a lead that arrives through the
+// chat needs the conversation that produced it, and abuse needs a trail. The
+// row is keyed by `publicId` because the browser holds that id across reloads
+// and must never be able to guess another visitor's serial id.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const chatbotConversations = pgTable(
+  "chatbot_conversations",
+  {
+    id: serial("id").primaryKey(),
+    publicId: varchar("public_id", { length: 64 })
+      .notNull()
+      .$defaultFn(() => crypto.randomUUID()),
+    visitorId: text("visitor_id"),
+    userId: varchar("user_id", { length: 255 }).references(() => users.id, {
+      onDelete: "set null",
+    }),
+    leadId: integer("lead_id").references(() => leads.id, {
+      onDelete: "set null",
+    }),
+    sourcePath: text("source_path"),
+    sourceUrl: text("source_url"),
+    pageTitle: text("page_title"),
+    referrer: text("referrer"),
+    userAgent: text("user_agent"),
+    ipAddress: text("ip_address"),
+    messageCount: integer("message_count").notNull().default(0),
+    lastMessageAt: timestamp("last_message_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("chatbot_conversations_public_id_idx").on(table.publicId),
+    index("chatbot_conversations_visitor_idx").on(table.visitorId),
+    index("chatbot_conversations_lead_idx").on(table.leadId),
+    index("chatbot_conversations_created_at_idx").on(table.createdAt),
+  ]
+);
+
+export const chatbotMessages = pgTable(
+  "chatbot_messages",
+  {
+    id: serial("id").primaryKey(),
+    conversationId: integer("conversation_id")
+      .notNull()
+      .references(() => chatbotConversations.id, { onDelete: "cascade" }),
+    role: text("role").$type<"user" | "assistant">().notNull(),
+    content: text("content").notNull(),
+    toolCalls: jsonb("tool_calls").$type<ChatbotToolCallRecord[]>(),
+    model: text("model"),
+    inputTokens: integer("input_tokens"),
+    cachedInputTokens: integer("cached_input_tokens"),
+    outputTokens: integer("output_tokens"),
+    latencyMs: integer("latency_ms"),
+    stopReason: text("stop_reason"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index("chatbot_messages_conversation_created_idx").on(
+      table.conversationId,
+      table.createdAt
+    ),
+    index("chatbot_messages_role_created_idx").on(table.role, table.createdAt),
+  ]
+);
+
 export type CountryRow = typeof countries.$inferSelect;
 export type CourseRow = typeof courses.$inferSelect;
 export type UniversityRow = typeof universities.$inferSelect;
@@ -1204,6 +1275,10 @@ export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSel
 export type UniversityResearchQueueRow = typeof universityResearchQueue.$inferSelect;
 export type UniversityResearchDraftRow = typeof universityResearchDrafts.$inferSelect;
 export type BackgroundJobRow = typeof backgroundJobs.$inferSelect;
+export type ChatbotConversationRow = typeof chatbotConversations.$inferSelect;
+export type ChatbotConversationInsert = typeof chatbotConversations.$inferInsert;
+export type ChatbotMessageRow = typeof chatbotMessages.$inferSelect;
+export type ChatbotMessageInsert = typeof chatbotMessages.$inferInsert;
 
 // ─────────────────────────────────────────────────────────────────────────────
 // NextAuth.js Tables (for user authentication)

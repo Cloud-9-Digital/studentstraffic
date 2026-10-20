@@ -1,18 +1,7 @@
+import { CRM_INDIAN_STATES } from "@/lib/indian-states";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
 const PLACEHOLDERS = new Set(["NA", "N/A", "-"]);
-// The CRM organization's active `state` select options, verified through
-// GET /api/v1/lead-fields. Keep this allowlist aligned before adding new fields.
-const CRM_INDIAN_STATES = [
-  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
-  "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
-  "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya",
-  "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim",
-  "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand",
-  "West Bengal", "Andaman and Nicobar Islands", "Chandigarh",
-  "Dadra and Nagar Haveli and Daman and Diu", "Lakshadweep", "Delhi",
-  "Puducherry", "Ladakh", "Jammu and Kashmir",
-] as const;
 const STATE_BY_NAME = new Map(CRM_INDIAN_STATES.map((state) => [state.toLowerCase(), state]));
 
 function value(input?: string | null, limit = 2000): string | undefined {

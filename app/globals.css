@@ -408,3 +408,318 @@ select {
     transform: translate3d(0, -18px, 0) scale(1.08);
   }
 }
+
+/*
+ * Chat dock: forcing the compact header while the page is pushed.
+ *
+ * The site header's centre nav is absolutely positioned and its desktop layout
+ * is gated on `xl:` — a viewport query. When the dock pushes the page, the
+ * header's *container* narrows but the viewport does not, so it keeps the
+ * desktop nav and, being out of flow, overlaps the logo and the actions.
+ *
+ * Between xl (where the push begins) and 1648px (1280 + the 368px dock, the
+ * narrowest viewport where the desktop header still fits beside the dock) we
+ * switch the header to the compact layout it already ships. Above 1648px there
+ * is room for both and nothing is overridden. None of this applies when the
+ * dock is closed.
+ */
+@media (min-width: 1280px) and (max-width: 1647.98px) {
+  [data-chat-dock="open"] [data-header-nav="desktop"],
+  [data-chat-dock="open"] [data-header-nav="desktop-actions"],
+  [data-chat-dock="open"] [data-header-nav="subrow"] {
+    display: none;
+  }
+
+  [data-chat-dock="open"] [data-header-nav="compact"] {
+    display: flex;
+  }
+
+  /*
+   * The compact header's menu button opens a drawer that is itself xl:hidden,
+   * so forcing the button visible without this left it opening nothing —
+   * the menu simply did not work while the dock was open.
+   */
+  /*
+   * Both are `fixed inset-0`, so without the inset they run the full viewport
+   * and the dock covers their right edge — including the drawer's close
+   * button, which left the menu impossible to dismiss. Hold them inside the
+   * pushed area instead; 23rem must stay in step with the dock's width.
+   */
+  /*
+   * The drawer is constrained to the pushed area so the dock does not cover
+   * its close button. That constraint has a catch: the closed state relies on
+   * `translate-x-full`, which only shifts the panel by its OWN width — once
+   * that width is the viewport minus the dock, translating no longer clears
+   * the screen and a strip of menu stays visible. Opening the chat flashed it.
+   *
+   * So the closed drawer is hidden outright rather than translated away, and
+   * the explicit `false` rule comes last so it wins however the open rule is
+   * ordered.
+   */
+  [data-chat-dock="open"] [data-header-nav="drawer"][data-drawer-open="true"] {
+    display: flex;
+    right: var(--mira-dock-reserve);
+    /* The drawer also carries w-full, and an explicit width:100% beats a
+       right inset — without this it spans the viewport and the dock sits over
+       its close button. */
+    width: auto;
+  }
+
+  [data-chat-dock="open"] [data-header-nav="drawer-overlay"][data-drawer-open="true"] {
+    display: block;
+    right: var(--mira-dock-reserve);
+    width: auto;
+  }
+
+  [data-chat-dock="open"] [data-header-nav="drawer"][data-drawer-open="false"],
+  [data-chat-dock="open"] [data-header-nav="drawer-overlay"][data-drawer-open="false"] {
+    display: none;
+  }
+}
+
+/*
+ * The composer's beam.
+ *
+ * A spectrum runs along the border, with a bright band travelling through it.
+ * It sits on the border rather than the fill so the text it frames stays on a
+ * plain surface and remains readable, and it is the one loud element in an
+ * otherwise quiet panel — which is why it earns the attention.
+ *
+ * Three states: resting (the spectrum, muted), focused (brighter), and working
+ * (the beam sweeps). Nothing animates for anyone who has asked for less motion.
+ */
+@property --mira-beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes mira-beam-sweep {
+  to {
+    background-position:
+      0 0,
+      -200% 50%;
+  }
+}
+
+.mira-composer {
+  --mira-spectrum: #0f3d37, #0e7490, #4f46e5, #a21caf, #c2410c, #ca8a04, #0f3d37;
+
+  border: 1.5px solid transparent;
+  border-radius: 1rem;
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(90deg, var(--mira-spectrum)) border-box;
+  background-size:
+    100% 100%,
+    200% 100%;
+  background-position:
+    0 0,
+    0 50%;
+  opacity: 1;
+  transition: filter 220ms ease;
+  filter: saturate(0.55) opacity(0.75);
+}
+
+.mira-composer:focus-within {
+  filter: saturate(1) opacity(1);
+}
+
+.mira-composer[data-busy="true"] {
+  filter: saturate(1.15) opacity(1);
+  animation: mira-beam-sweep 2.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mira-composer[data-busy="true"] {
+    animation: none;
+  }
+}
+
+/*
+ * Message entry. A new turn rises into place rather than appearing, so the
+ * column reads as something being written into rather than a list being
+ * rebuilt. Short and eased out, because it runs on every message.
+ */
+@keyframes mira-message-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mira-message {
+  animation: mira-message-in 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/*
+ * Thinking. A sheen travels across the word while the first part of an answer
+ * is still on its way — quieter than bouncing dots and it does not imply a
+ * progress bar that is secretly going nowhere.
+ */
+@keyframes mira-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.mira-thinking {
+  background: linear-gradient(
+    90deg,
+    var(--muted-foreground) 0%,
+    var(--muted-foreground) 35%,
+    var(--foreground) 50%,
+    var(--muted-foreground) 65%,
+    var(--muted-foreground) 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: mira-shimmer 1.8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mira-message {
+    animation: none;
+  }
+
+  .mira-thinking {
+    animation: none;
+    color: var(--muted-foreground);
+  }
+}
+
+/*
+ * Chat dock geometry.
+ *
+ * One source of truth. The dock's width, the gap it floats in, the page
+ * padding that reserves room for it and the inset applied to the site's own
+ * drawer all derive from these two values — they were previously four separate
+ * literals that had to be kept in step by hand, and when they drifted the
+ * panel overlapped the content it was supposed to sit beside.
+ */
+:root {
+  --mira-dock-width: 22rem;
+  --mira-dock-gap: 0.75rem;
+  --mira-dock-reserve: calc(var(--mira-dock-width) + var(--mira-dock-gap) * 2);
+}
+
+.mira-dock {
+  position: fixed;
+  z-index: 50;
+  border-radius: 1rem;
+  /* Phone: a sheet inset from the edges, below the site header. */
+  inset: 3.5rem var(--mira-dock-gap) var(--mira-dock-gap);
+}
+
+@media (min-width: 768px) {
+  .mira-dock {
+    /* Desktop: a floating card, not a panel welded to the viewport edge. */
+    inset: var(--mira-dock-gap) var(--mira-dock-gap) var(--mira-dock-gap) auto;
+    width: var(--mira-dock-width);
+  }
+}
+
+/*
+ * The page reserves room only where there is genuinely space for both. Below
+ * xl the dock floats over the content instead, which is why it carries a
+ * shadow.
+ */
+@media (min-width: 1280px) {
+  [data-chat-dock="open"] {
+    padding-right: var(--mira-dock-reserve);
+  }
+}
+
+/*
+ * The launcher's orb cloud.
+ *
+ * Three soft colour fields — brand green, brand orange and a warm highlight —
+ * drifting across each other behind the label and merging under a blur, so the
+ * button reads as something alive rather than a flat pill.
+ *
+ * One element with three background layers rather than three elements: the
+ * layers can be given independent positions and animated together, which keeps
+ * it to a single compositor-friendly animation. Every keyframe cycle returns to
+ * its starting positions, so there is no seam.
+ */
+@keyframes mira-cloud-drift {
+  0%,
+  100% {
+    background-position:
+      10% 40%,
+      85% 60%,
+      50% 15%;
+  }
+  33% {
+    background-position:
+      65% 15%,
+      20% 80%,
+      95% 65%;
+  }
+  66% {
+    background-position:
+      30% 85%,
+      70% 20%,
+      5% 45%;
+  }
+}
+
+.mira-orb-cloud {
+  position: absolute;
+  inset: -45%;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size:
+    62% 150%,
+    58% 150%,
+    66% 150%;
+  background-image:
+    /* Kept well under half opacity: at full strength this field washed out
+       the pill as it passed behind the label and the text lost contrast. */
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.16) 45%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle,
+      rgba(255, 176, 120, 0.9) 0%,
+      rgba(194, 65, 12, 0.45) 45%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle,
+      rgba(110, 231, 200, 0.75) 0%,
+      rgba(15, 61, 55, 0.4) 45%,
+      transparent 70%
+    );
+  filter: blur(10px) saturate(1.15);
+  animation: mira-cloud-drift 14s ease-in-out infinite;
+  will-change: background-position;
+}
+
+/*
+ * The same cloud over a light surface.
+ *
+ * The launcher's version sits under white text on a saturated pill; the dock's
+ * header is a light surface with dark text on it, so the fields are dialled
+ * right back and blurred further. Enough to register as movement in the
+ * corner of the eye, not enough to compete with the words in front of it.
+ */
+.mira-orb-cloud--muted {
+  opacity: 0.3;
+  filter: blur(18px) saturate(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mira-orb-cloud {
+    animation: none;
+  }
+}

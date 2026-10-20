@@ -615,3 +615,16 @@ export type SearchFilters = {
   country?: string;
   course?: string;
 };
+
+/**
+ * One grounding tool the chatbot called while answering. Stored alongside the
+ * assistant message so the admin transcript shows which catalogue lookups an
+ * answer was built from — a wrong answer is almost always a wrong lookup.
+ */
+export type ChatbotToolCallRecord = {
+  name: string;
+  input: Record<string, unknown>;
+  /** Short, human-readable outcome, e.g. "4 universities" or "no match". */
+  outcome: string;
+  durationMs: number;
+};

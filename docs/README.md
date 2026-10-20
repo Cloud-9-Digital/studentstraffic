@@ -17,6 +17,7 @@ Learn about the scaling features implemented.
 - **[Caching Strategy](./features/caching.md)** - ISR, Redis, and performance optimization
 - **[Error Tracking](./features/error-tracking.md)** - Sentry integration and monitoring
 - **[Database Monitoring](./features/database-monitoring.md)** - Query performance and logging
+- **[Chatbot](./features/chatbot.md)** - Mira: the grounded on-site assistant and its lead capture
 
 ### 📖 Guides
 Detailed guides for specific tasks.

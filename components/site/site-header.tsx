@@ -465,7 +465,10 @@ function SiteHeaderInner() {
           <SiteLogo showTagline />
 
           {/* Desktop main nav */}
-          <nav className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 xl:flex">
+          <nav
+            data-header-nav="desktop"
+            className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 xl:flex"
+          >
             <DesktopCountriesMenu
               model={countriesMenu}
               open={countriesOpen}
@@ -529,7 +532,10 @@ function SiteHeaderInner() {
           </nav>
 
           {/* Desktop actions */}
-          <div className="ml-auto hidden items-center gap-2 xl:flex">
+          <div
+            data-header-nav="desktop-actions"
+            className="ml-auto hidden items-center gap-2 xl:flex"
+          >
             <SearchPalette />
             <UserMenu />
             <CounsellingDialog
@@ -546,7 +552,10 @@ function SiteHeaderInner() {
           </div>
 
           {/* Mobile toggle */}
-          <div className="ml-auto flex items-center gap-1 xl:hidden">
+          <div
+            data-header-nav="compact"
+            className="ml-auto flex items-center gap-1 xl:hidden"
+          >
             <button
               onClick={() => setMobileOpen(true)}
               aria-label="Open navigation"
@@ -560,6 +569,7 @@ function SiteHeaderInner() {
         {/* Desktop sub-row: program category shortcuts (same categorisation as the mobile drawer) */}
         <nav
           ref={courseMenuRef}
+          data-header-nav="subrow"
           className="hidden flex-wrap items-center justify-center gap-x-0.5 gap-y-1 border-t border-white/15 bg-[linear-gradient(90deg,var(--primary)_0%,var(--primary)_24%,var(--accent)_100%)] px-4 py-1.5 xl:flex"
         >
           {mobileProgrammeCategories.map(({ id, label, shortLabel, description, icon: Icon, groups }) => {
@@ -600,6 +610,8 @@ function SiteHeaderInner() {
       {/* Mobile overlay */}
       <div
         aria-hidden="true"
+        data-header-nav="drawer-overlay"
+        data-drawer-open={mobileOpen ? "true" : "false"}
         className={cn(
           "fixed inset-0 z-50 bg-black/30 backdrop-blur-sm transition-opacity duration-300 xl:hidden",
           mobileOpen
@@ -612,6 +624,8 @@ function SiteHeaderInner() {
       {/* Mobile drawer */}
       <div
         inert={!mobileOpen}
+        data-header-nav="drawer"
+        data-drawer-open={mobileOpen ? "true" : "false"}
         className={cn(
           "fixed inset-0 z-50 flex h-full w-full flex-col bg-white shadow-drawer transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] xl:hidden",
           mobileOpen ? "translate-x-0" : "translate-x-full",
