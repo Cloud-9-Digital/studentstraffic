@@ -9,9 +9,7 @@ import {
   useMemo,
   useState,
 } from "react";
-import { usePathname } from "next/navigation";
 
-import { showsChatbot } from "@/lib/chatbot/branding";
 
 /**
  * The dock shell.
@@ -73,7 +71,6 @@ const ChatTrigger = dynamic(
 );
 
 export function ChatDockProvider({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   // Once opened the dock stays mounted so closing can animate; before that it
   // is never loaded at all, so visitors who ignore it pay nothing.
@@ -111,8 +108,6 @@ export function ChatDockProvider({ children }: { children: React.ReactNode }) {
     };
   }, [isOpen]);
 
-  const available = showsChatbot(pathname);
-
   return (
     <ChatDockContext.Provider value={value}>
       <div
@@ -132,7 +127,7 @@ export function ChatDockProvider({ children }: { children: React.ReactNode }) {
         // The push starts at xl so the remaining column stays readable; below
         // that the dock overlays, which is why it carries its own shadow. This
         // padding MUST stay in step with the dock's w-[23rem].
-        data-chat-dock={available && isOpen ? "open" : "closed"}
+        data-chat-dock={isOpen ? "open" : "closed"}
         // The padding itself is applied in globals.css from the dock's own
         // custom properties, keyed on this attribute — see .mira-dock.
         className="transition-[padding-right] duration-300 ease-out"
@@ -140,12 +135,10 @@ export function ChatDockProvider({ children }: { children: React.ReactNode }) {
         {children}
       </div>
 
-      {available ? (
-        <>
-          {hasOpened ? <ChatDock isOpen={isOpen} /> : null}
-          <ChatTrigger />
-        </>
-      ) : null}
+      {/* Both check the route themselves; they are client-only and load on
+          demand, so the check costs nothing above them. */}
+      {hasOpened ? <ChatDock isOpen={isOpen} /> : null}
+      <ChatTrigger />
     </ChatDockContext.Provider>
   );
 }

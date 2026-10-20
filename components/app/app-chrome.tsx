@@ -20,7 +20,13 @@ const BARE_EXACT = new Set([
   "/mbbs-in-georgia-admission",
 ]);
 
-function AppChromeInner({ children }: { children: React.ReactNode }) {
+function AppChromeInner({
+  children,
+  chatEnabled,
+}: {
+  children: React.ReactNode;
+  chatEnabled: boolean;
+}) {
   const pathname = usePathname();
 
   const isBare =
@@ -31,16 +37,28 @@ function AppChromeInner({ children }: { children: React.ReactNode }) {
     return <div className="relative flex min-h-full flex-col">{children}</div>;
   }
 
-  return <StandardAppChrome>{children}</StandardAppChrome>;
+  return (
+    <StandardAppChrome chatEnabled={chatEnabled}>{children}</StandardAppChrome>
+  );
 }
 
-export function AppChrome({ children }: { children: React.ReactNode }) {
+export function AppChrome({
+  children,
+  chatEnabled,
+}: {
+  children: React.ReactNode;
+  chatEnabled: boolean;
+}) {
   return (
     // StandardAppChrome is the correct default for static prerendering —
     // it covers the vast majority of pages. Admin/login pages swap on
     // hydration; they are not statically prerendered anyway.
-    <Suspense fallback={<StandardAppChrome>{children}</StandardAppChrome>}>
-      <AppChromeInner>{children}</AppChromeInner>
+    <Suspense
+      fallback={
+        <StandardAppChrome chatEnabled={chatEnabled}>{children}</StandardAppChrome>
+      }
+    >
+      <AppChromeInner chatEnabled={chatEnabled}>{children}</AppChromeInner>
     </Suspense>
   );
 }

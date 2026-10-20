@@ -1,8 +1,10 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import { useChatDock } from "@/components/site/chatbot/chat-dock-context";
 import { MiraMark } from "@/components/site/chatbot/mira-mark";
-import { CHATBOT_NAME } from "@/lib/chatbot/branding";
+import { CHATBOT_NAME, showsChatbot } from "@/lib/chatbot/branding";
 import { cn } from "@/lib/utils";
 
 /**
@@ -19,6 +21,12 @@ import { cn } from "@/lib/utils";
  */
 export function ChatTrigger() {
   const { isOpen, open } = useChatDock();
+  const pathname = usePathname();
+
+  // The route check lives here rather than in the provider: this component is
+  // client-only and loaded on demand, so a dynamic API costs nothing above the
+  // page content. In the provider it changed how admin pages prerendered.
+  if (!showsChatbot(pathname)) return null;
 
   return (
     <button

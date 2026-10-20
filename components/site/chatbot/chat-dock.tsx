@@ -5,6 +5,8 @@ import { DefaultChatTransport } from "ai";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowDown, ArrowUp, History, Mic, PenSquare, Square, X } from "lucide-react";
 
+import { usePathname } from "next/navigation";
+
 import { useChatDock } from "@/components/site/chatbot/chat-dock-context";
 import { useSpeechInput } from "@/components/site/chatbot/use-speech-input";
 import {
@@ -14,7 +16,7 @@ import {
 import { ChatGreeting } from "@/components/site/chatbot/chat-greeting";
 import { ChatHistory } from "@/components/site/chatbot/chat-history";
 import { MiraMark } from "@/components/site/chatbot/mira-mark";
-import { CHATBOT_NAME } from "@/lib/chatbot/branding";
+import { CHATBOT_NAME, showsChatbot } from "@/lib/chatbot/branding";
 import type { MiraUIMessage } from "@/lib/chatbot/ui-messages";
 import { cn } from "@/lib/utils";
 
@@ -39,6 +41,7 @@ function readStoredConversationId() {
  */
 export function ChatDock({ isOpen }: { isOpen: boolean }) {
   const { close, seedPrompt, clearSeedPrompt } = useChatDock();
+  const pathname = usePathname();
 
   /**
    * The stored id from a previous page view, read once. Not a ref: it is needed
@@ -257,6 +260,10 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
     isBusy &&
     (lastMessage?.role === "user" ||
       (lastMessage?.role === "assistant" && lastMessage.parts.length === 0));
+
+  // Hidden on admin, auth and single-task routes. Returning null also drops
+  // the page padding, since that is keyed on the dock being open.
+  if (!showsChatbot(pathname)) return null;
 
   return (
     <aside
