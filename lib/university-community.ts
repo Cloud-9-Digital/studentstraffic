@@ -162,12 +162,7 @@ export type PeerWithUniversity = PublicPeer & {
   countrySlug: string;
 };
 
-export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
-  "use cache: remote";
-
-  cacheLife("hours");
-  cacheTag(allPeersTag);
-
+async function selectAllActivePeers(): Promise<PeerWithUniversity[]> {
   const db = getDb();
   if (!db) return [];
 
@@ -201,6 +196,27 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
     logCommunityDataFallback("Unable to load active peers", error);
     return [];
   }
+}
+
+export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
+  "use cache: remote";
+
+  cacheLife("hours");
+  cacheTag(allPeersTag);
+
+  return selectAllActivePeers();
+}
+
+/**
+ * The same rows, read straight from the database.
+ *
+ * An escape hatch for callers that depend on a particular column and would
+ * otherwise read its absence as an absence of data. Nothing should need this
+ * in normal operation — it exists so that an unexpected row shape surfaces as
+ * a slow answer rather than a confident, wrong one.
+ */
+export async function getAllActivePeersUncached(): Promise<PeerWithUniversity[]> {
+  return selectAllActivePeers();
 }
 
 export type PeerUniversity = {

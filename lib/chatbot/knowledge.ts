@@ -21,6 +21,7 @@ import { searchCatalog } from "@/lib/search/search";
 import {
   getActivePeersForUniversity,
   getAllActivePeers,
+  getAllActivePeersUncached,
   type PeerWithUniversity,
 } from "@/lib/university-community";
 import {
@@ -554,8 +555,35 @@ function groupByUniversity(peers: PeerWithUniversity[]) {
 const sortedUnique = (values: Array<string | null | undefined>) =>
   [...new Set(values.filter((value): value is string => Boolean(value)))].sort();
 
+/**
+ * Everyone taking requests, with an invariant check on the rows.
+ *
+ * Every grouping below keys on countrySlug, so a row set carrying none of it
+ * collapses to nothing — and "no students are available in Vietnam" is exactly
+ * the confident, wrong answer this lookup exists to prevent. Peers that exist
+ * but all lack the field is not an empty catalogue, it is a shape we did not
+ * expect, so read through to the database rather than believe the absence.
+ *
+ * This is a guard, not a fix for a diagnosed bug. `use cache` keys on the
+ * build ID, so a deploy should already retire rows selected by an older build.
+ * It is here because the cost of being wrong is a confident denial rather than
+ * a visible error, and because the next field added to these rows inherits the
+ * same protection.
+ */
 async function getAvailablePeers() {
-  return (await getAllActivePeers()).filter((peer) => peer.acceptingRequests);
+  const cached = await getAllActivePeers();
+  const isStaleShape =
+    cached.length > 0 && !cached.some((peer) => Boolean(peer.countrySlug));
+
+  if (isStaleShape) {
+    console.warn(
+      "[chat] peer cache predates countrySlug — reading through to the database"
+    );
+  }
+
+  const peers = isStaleShape ? await getAllActivePeersUncached() : cached;
+
+  return peers.filter((peer) => peer.acceptingRequests);
 }
 
 /**
