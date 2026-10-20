@@ -1,22 +1,20 @@
 "use client";
 
+import Image from "next/image";
+
+import miraIcon from "@/app/icon.png";
 import { cn } from "@/lib/utils";
 
 /**
- * Mira's mark.
+ * Mira's mark — the site icon, rendered bare.
  *
- * A monogram in the brand green, set in the site's display serif. Earlier
- * attempts were pictorial — a gradient orb that muddied into a dark blob at
- * 32px, then three bars that simply read as a chart icon — and both failed the
- * only test that matters here: the mark appears at 18px beside a line of text
- * far more often than it appears large.
+ * Imported from `app/icon.png`, the same file that serves the browser-tab
+ * icon, so the assistant and the tab never drift apart: replace the favicon
+ * and this follows automatically.
  *
- * A letterform survives that. It also stays correct however the product's
- * scope changes, where a compass or a book quietly commits to a meaning.
- *
- * The accent underline is the one hit of brand orange and the element that
- * animates while a turn is in flight — it reads as a progress cue without the
- * mark itself moving.
+ * No tile, ring or rounded background. The artwork already carries its own
+ * silhouette, and wrapping it in a second container read as an icon stuck
+ * inside a box — two competing shapes where there should be one.
  */
 export function MiraMark({
   size = 30,
@@ -28,39 +26,18 @@ export function MiraMark({
   className?: string;
 }) {
   return (
-    <span
+    <Image
+      src={miraIcon}
+      alt=""
+      width={size}
+      height={size}
+      aria-hidden="true"
       className={cn(
-        "relative grid shrink-0 place-items-center overflow-hidden bg-primary",
+        "shrink-0 object-contain",
+        busy && "animate-[pulse_1.4s_ease-in-out_infinite]",
         className
       )}
-      style={{ width: size, height: size, borderRadius: size * 0.32 }}
-      aria-hidden="true"
-    >
-      <span
-        className="font-display leading-none text-white"
-        style={{
-          fontSize: size * 0.56,
-          fontWeight: 600,
-          letterSpacing: "-0.03em",
-          // Optical centring: the serif M sits slightly high in its box.
-          transform: `translateY(${size * 0.02}px)`,
-        }}
-      >
-        M
-      </span>
-
-      <span
-        className={cn(
-          "absolute bg-accent",
-          busy && "animate-[pulse_1.1s_ease-in-out_infinite]"
-        )}
-        style={{
-          height: Math.max(1.5, size * 0.055),
-          width: size * 0.42,
-          bottom: size * 0.15,
-          borderRadius: 99,
-        }}
-      />
-    </span>
+      style={{ width: size, height: size }}
+    />
   );
 }

@@ -28,7 +28,7 @@ export function ChatTrigger() {
       aria-expanded={isOpen}
       tabIndex={isOpen ? -1 : 0}
       className={cn(
-        "group fixed right-4 z-50 flex items-center rounded-full md:right-6",
+        "group fixed right-4 z-50 flex items-center overflow-hidden rounded-full md:right-6",
         "bg-[linear-gradient(120deg,var(--primary)_0%,var(--primary)_38%,var(--accent)_100%)]",
         "text-white shadow-lg shadow-primary/20 ring-1 ring-white/15",
         "transition-all duration-300 ease-out",
@@ -41,13 +41,16 @@ export function ChatTrigger() {
         isOpen && "pointer-events-none translate-y-1 scale-90 opacity-0"
       )}
     >
-      {/* The orb sits on white inside the pill so the gradient mark stays
-          legible against the gradient button. */}
-      <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white/95 shadow-inner md:size-8">
+      {/* Colour fields drifting and merging behind the label — see
+          .mira-orb-cloud. The content is lifted above it so the text stays
+          crisp over the movement. */}
+      <span className="mira-orb-cloud" aria-hidden="true" />
+
+      <span className="relative z-10 grid size-9 shrink-0 place-items-center md:size-8">
         <MiraMark size={26} />
       </span>
 
-      <span className="hidden whitespace-nowrap text-sm font-semibold md:inline">
+      <span className="relative z-10 hidden whitespace-nowrap text-sm font-semibold [text-shadow:0_1px_2px_rgba(0,0,0,0.25)] md:inline">
         Ask {CHATBOT_NAME}
       </span>
     </button>

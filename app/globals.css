@@ -635,3 +635,78 @@ select {
     padding-right: var(--mira-dock-reserve);
   }
 }
+
+/*
+ * The launcher's orb cloud.
+ *
+ * Three soft colour fields — brand green, brand orange and a warm highlight —
+ * drifting across each other behind the label and merging under a blur, so the
+ * button reads as something alive rather than a flat pill.
+ *
+ * One element with three background layers rather than three elements: the
+ * layers can be given independent positions and animated together, which keeps
+ * it to a single compositor-friendly animation. Every keyframe cycle returns to
+ * its starting positions, so there is no seam.
+ */
+@keyframes mira-cloud-drift {
+  0%,
+  100% {
+    background-position:
+      10% 40%,
+      85% 60%,
+      50% 15%;
+  }
+  33% {
+    background-position:
+      65% 15%,
+      20% 80%,
+      95% 65%;
+  }
+  66% {
+    background-position:
+      30% 85%,
+      70% 20%,
+      5% 45%;
+  }
+}
+
+.mira-orb-cloud {
+  position: absolute;
+  inset: -45%;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size:
+    62% 150%,
+    58% 150%,
+    66% 150%;
+  background-image:
+    /* Kept well under half opacity: at full strength this field washed out
+       the pill as it passed behind the label and the text lost contrast. */
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.16) 45%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle,
+      rgba(255, 176, 120, 0.9) 0%,
+      rgba(194, 65, 12, 0.45) 45%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle,
+      rgba(110, 231, 200, 0.75) 0%,
+      rgba(15, 61, 55, 0.4) 45%,
+      transparent 70%
+    );
+  filter: blur(10px) saturate(1.15);
+  animation: mira-cloud-drift 14s ease-in-out infinite;
+  will-change: background-position;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mira-orb-cloud {
+    animation: none;
+  }
+}
