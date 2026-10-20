@@ -1,74 +1,21 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-
-import { MiraMark } from "@/components/site/chatbot/mira-mark";
 import { CHATBOT_GREETING } from "@/lib/chatbot/branding";
 
 /**
- * The opening line, typed out.
+ * The opening line.
  *
- * It costs nothing — the text is a constant, not a model call — but it sets the
- * register before the visitor has asked anything: the assistant is composing
- * rather than displaying. A greeting that simply appears reads as a banner;
- * one that arrives reads as someone answering.
- *
- * Anyone who prefers reduced motion gets it immediately.
+ * Rendered plainly rather than typed out: an animation on a constant string is
+ * a small lie about work being done, and it makes the visitor wait to read
+ * something we already knew we would say. It is also top-aligned, in the same
+ * column the answers use, so the first real reply continues the thread instead
+ * of displacing something that was floating in the middle of the panel.
  */
 export function ChatGreeting() {
-  const [revealed, setRevealed] = useState(0);
-  const frameRef = useRef<number | null>(null);
-
-  useEffect(() => {
-    const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (prefersReduced) {
-      setRevealed(CHATBOT_GREETING.length);
-      return;
-    }
-
-    let start: number | null = null;
-    // Roughly 55 characters a second: fast enough not to make anyone wait,
-    // slow enough to read as composition rather than a glitch.
-    const charsPerMs = 55 / 1000;
-
-    const step = (timestamp: number) => {
-      start ??= timestamp;
-      const next = Math.min(
-        CHATBOT_GREETING.length,
-        Math.floor((timestamp - start) * charsPerMs)
-      );
-
-      setRevealed(next);
-
-      if (next < CHATBOT_GREETING.length) {
-        frameRef.current = requestAnimationFrame(step);
-      }
-    };
-
-    frameRef.current = requestAnimationFrame(step);
-
-    return () => {
-      if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
-    };
-  }, []);
-
-  const isTyping = revealed < CHATBOT_GREETING.length;
-
   return (
-    <div className="flex h-full flex-col items-center justify-center px-6 text-center">
-      <MiraMark size={52} busy={isTyping} className="mb-4 shadow-sm" />
-
-      <p className="max-w-[19rem] text-[0.95rem] leading-relaxed text-foreground">
-        {CHATBOT_GREETING.slice(0, revealed)}
-        {isTyping ? (
-          <span
-            className="ml-0.5 inline-block h-[1em] w-[2px] translate-y-[0.15em] bg-accent"
-            aria-hidden="true"
-          />
-        ) : null}
+    <div className="px-4 py-5">
+      <p className="text-[0.95rem] leading-relaxed text-foreground">
+        {CHATBOT_GREETING}
       </p>
     </div>
   );

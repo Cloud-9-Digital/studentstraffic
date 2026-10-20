@@ -445,19 +445,35 @@ select {
    * button, which left the menu impossible to dismiss. Hold them inside the
    * pushed area instead; 23rem must stay in step with the dock's width.
    */
-  [data-chat-dock="open"] [data-header-nav="drawer"] {
+  /*
+   * The drawer is constrained to the pushed area so the dock does not cover
+   * its close button. That constraint has a catch: the closed state relies on
+   * `translate-x-full`, which only shifts the panel by its OWN width — once
+   * that width is the viewport minus the dock, translating no longer clears
+   * the screen and a strip of menu stays visible. Opening the chat flashed it.
+   *
+   * So the closed drawer is hidden outright rather than translated away, and
+   * the explicit `false` rule comes last so it wins however the open rule is
+   * ordered.
+   */
+  [data-chat-dock="open"] [data-header-nav="drawer"][data-drawer-open="true"] {
     display: flex;
     right: 23rem;
     /* The drawer also carries w-full, and an explicit width:100% beats a
-       right inset — without this the panel still spans the viewport and the
-       dock sits over its close button. */
+       right inset — without this it spans the viewport and the dock sits over
+       its close button. */
     width: auto;
   }
 
-  [data-chat-dock="open"] [data-header-nav="drawer-overlay"] {
+  [data-chat-dock="open"] [data-header-nav="drawer-overlay"][data-drawer-open="true"] {
     display: block;
     right: 23rem;
     width: auto;
+  }
+
+  [data-chat-dock="open"] [data-header-nav="drawer"][data-drawer-open="false"],
+  [data-chat-dock="open"] [data-header-nav="drawer-overlay"][data-drawer-open="false"] {
+    display: none;
   }
 }
 

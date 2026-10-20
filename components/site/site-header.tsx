@@ -611,6 +611,7 @@ function SiteHeaderInner() {
       <div
         aria-hidden="true"
         data-header-nav="drawer-overlay"
+        data-drawer-open={mobileOpen ? "true" : "false"}
         className={cn(
           "fixed inset-0 z-50 bg-black/30 backdrop-blur-sm transition-opacity duration-300 xl:hidden",
           mobileOpen
@@ -624,6 +625,7 @@ function SiteHeaderInner() {
       <div
         inert={!mobileOpen}
         data-header-nav="drawer"
+        data-drawer-open={mobileOpen ? "true" : "false"}
         className={cn(
           "fixed inset-0 z-50 flex h-full w-full flex-col bg-white shadow-drawer transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] xl:hidden",
           mobileOpen ? "translate-x-0" : "translate-x-full",

@@ -309,7 +309,7 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
         ref={scrollRef}
         className={cn(
           "flex-1 overflow-y-auto overscroll-contain",
-          messages.length === 0 ? "" : "space-y-6 px-4 py-5"
+          messages.length > 0 && "space-y-6 px-4 py-5"
         )}
       >
         {messages.length === 0 ? <ChatGreeting /> : null}
