@@ -212,6 +212,14 @@ const nextConfig: NextConfig = {
         hostname: "images.pexels.com",
       },
       {
+        // lib/location-media.ts sources 96 of its 103 city and country hero
+        // images from Wikimedia. Without this entry next/image throws on every
+        // page that renders one, which the error boundary turns into "We
+        // couldn't load this university" — on pages that exist and are fine.
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+      {
         protocol: "https",
         hostname: "i.pravatar.cc",
       },
