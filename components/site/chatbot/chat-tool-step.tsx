@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Loader2, Search, TriangleAlert } from "lucide-react";
+import { Check, Loader2, TriangleAlert } from "lucide-react";
 
 import { getToolLabel } from "@/lib/chatbot/tool-names";
 import { cn } from "@/lib/utils";
@@ -55,17 +55,12 @@ export function ChatToolStep({
 }
 
 /**
- * Groups the steps for one answer behind a single quiet line, so a long
- * lookup chain does not crowd out the answer itself.
+ * Groups one answer's steps.
+ *
+ * A bordered card here competed with the answer it belonged to. A single
+ * hairline rule and muted type keep the lookups available to anyone who wants
+ * to check them, without making the plumbing the loudest thing in the panel.
  */
 export function ChatToolSteps({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="mb-2.5 space-y-1 rounded-lg border border-border/60 bg-muted/30 px-2.5 py-2">
-      <div className="flex items-center gap-1.5 text-[0.65rem] font-medium uppercase tracking-wide text-muted-foreground/70">
-        <Search className="size-3" strokeWidth={2} aria-hidden="true" />
-        Checked our catalogue
-      </div>
-      {children}
-    </div>
-  );
+  return <div className="mb-3 space-y-1.5">{children}</div>;
 }

@@ -3,9 +3,10 @@
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowUp, History, PenSquare, Square, X } from "lucide-react";
+import { ArrowUp, History, Mic, PenSquare, Square, X } from "lucide-react";
 
 import { useChatDock } from "@/components/site/chatbot/chat-dock-context";
+import { useSpeechInput } from "@/components/site/chatbot/use-speech-input";
 import {
   ChatMessage,
   ChatThinking,
@@ -50,6 +51,27 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
 
   const [draft, setDraft] = useState("");
   const [showHistory, setShowHistory] = useState(false);
+
+  // Dictation rewrites the tail of the draft as the transcript firms up, so
+  // the text before the visitor started speaking is kept and only the spoken
+  // part is replaced.
+  const dictationBaseRef = useRef("");
+
+  const speech = useSpeechInput({
+    onTranscript: (text) => {
+      const base = dictationBaseRef.current;
+      setDraft(`${base}${base && !base.endsWith(" ") ? " " : ""}${text}`.slice(0, MAX_INPUT_CHARS));
+    },
+  });
+
+  function toggleDictation() {
+    if (speech.isListening) {
+      speech.stop();
+      return;
+    }
+    dictationBaseRef.current = draft;
+    speech.start();
+  }
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const seededRef = useRef(false);
@@ -221,11 +243,11 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
         "md:inset-y-0 md:left-auto md:right-0 md:top-0 md:w-[23rem] md:border-l md:border-t-0 md:shadow-2xl md:shadow-black/10"
       )}
     >
-      <header className="flex shrink-0 items-center gap-3 border-b border-border bg-[linear-gradient(100deg,color-mix(in_srgb,var(--primary)_7%,transparent),color-mix(in_srgb,var(--accent)_9%,transparent))] px-4 py-3">
-        <MiraMark size={36} busy={isBusy} />
+      <header className="flex h-14 shrink-0 items-center gap-2.5 border-b border-border bg-background px-3.5">
+        <MiraMark size={30} busy={isBusy} />
 
         <div className="min-w-0 flex-1">
-          <p className="truncate text-sm font-semibold leading-tight text-foreground">
+          <p className="truncate text-[0.9rem] font-semibold leading-tight tracking-tight text-foreground">
             {CHATBOT_NAME}
           </p>
           {/* Only the working state earns a second line. A standing "verified
@@ -285,7 +307,10 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
       ) : (
       <div
         ref={scrollRef}
-        className="flex-1 space-y-4 overflow-y-auto overscroll-contain px-4 py-4"
+        className={cn(
+          "flex-1 overflow-y-auto overscroll-contain",
+          messages.length === 0 ? "" : "space-y-6 px-4 py-5"
+        )}
       >
         {messages.length === 0 ? <ChatGreeting /> : null}
 
@@ -316,13 +341,13 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
           event.preventDefault();
           submitDraft();
         }}
-        className="shrink-0 border-t border-border bg-background px-3 pb-3 pt-2.5"
+        className="shrink-0 border-t border-border bg-background px-3 pb-3 pt-3"
       >
         {/* .mira-composer paints the border from a gradient and animates it
             while a turn is in flight — see globals.css. */}
         <div
           data-busy={isBusy}
-          className="mira-composer flex items-end gap-2 py-1.5 pl-3.5 pr-1.5"
+          className="mira-composer flex items-end gap-2 py-2 pl-4 pr-2"
         >
           <textarea
             ref={inputRef}
@@ -344,13 +369,35 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
             className="max-h-32 min-h-8 flex-1 resize-none self-center bg-transparent py-1 text-[0.9rem] leading-relaxed text-foreground outline-none [field-sizing:content] placeholder:text-muted-foreground"
           />
 
+          {speech.isSupported && !isBusy ? (
+            <button
+              type="button"
+              onClick={toggleDictation}
+              title={speech.isListening ? "Stop dictation" : "Dictate your question"}
+              aria-label={speech.isListening ? "Stop dictation" : "Dictate your question"}
+              aria-pressed={speech.isListening}
+              className={cn(
+                "grid size-9 shrink-0 place-items-center rounded-full transition-colors",
+                speech.isListening
+                  ? "bg-accent/12 text-accent"
+                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
+              )}
+            >
+              <Mic
+                className={cn("size-4.5", speech.isListening && "animate-pulse")}
+                strokeWidth={1.75}
+                aria-hidden="true"
+              />
+            </button>
+          ) : null}
+
           {isBusy ? (
             <button
               type="button"
               onClick={() => stop()}
               title="Stop generating"
               aria-label="Stop generating"
-              className="grid size-9 shrink-0 place-items-center rounded-xl bg-foreground/90 text-background transition-transform hover:bg-foreground active:scale-95"
+              className="grid size-9 shrink-0 place-items-center rounded-full bg-foreground/90 text-background transition-transform hover:bg-foreground active:scale-95"
             >
               <Square className="size-3" strokeWidth={3} fill="currentColor" aria-hidden="true" />
             </button>
@@ -364,10 +411,10 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
               // nothing to send it mutes rather than turning into an outline,
               // which looked like an empty checkbox.
               className={cn(
-                "grid size-9 shrink-0 place-items-center rounded-xl transition-all active:scale-95",
+                "grid size-9 shrink-0 place-items-center rounded-full transition-all active:scale-95",
                 draft.trim()
-                  ? "bg-accent text-white shadow-sm shadow-accent/30 hover:brightness-110"
-                  : "cursor-not-allowed bg-muted text-muted-foreground/60"
+                  ? "bg-primary text-white shadow-sm hover:bg-primary/90"
+                  : "cursor-not-allowed bg-foreground/10 text-foreground/35"
               )}
             >
               <ArrowUp className="size-4.5" strokeWidth={2.5} aria-hidden="true" />
@@ -375,7 +422,7 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
           )}
         </div>
 
-        <p className="mt-2 px-1 text-center text-[0.65rem] leading-none text-muted-foreground/80">
+        <p className="mt-2 px-1 text-center text-[0.62rem] leading-none text-muted-foreground/60">
           Verify time-sensitive details with a counsellor.
         </p>
       </form>

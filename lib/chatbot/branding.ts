@@ -5,8 +5,14 @@
 
 export const CHATBOT_NAME = "Mira";
 
+/**
+ * Short on purpose. The empty state is an invitation, not a pitch — an opening
+ * line that argues for its own trustworthiness puts the claim before the
+ * visitor has asked anything, and the answers make that case better than the
+ * greeting can.
+ */
 export const CHATBOT_GREETING =
-  "Hi — I'm Mira. Ask me anything about studying abroad: universities, fees, intakes, eligibility. I'll answer from what Students Traffic has actually verified.";
+  "Hi, I'm Mira. Ask me anything about education — courses, exams, universities, or studying abroad.";
 
 /**
  * Routes where the assistant stays out of the way.

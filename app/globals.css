@@ -433,6 +433,32 @@ select {
   [data-chat-dock="open"] [data-header-nav="compact"] {
     display: flex;
   }
+
+  /*
+   * The compact header's menu button opens a drawer that is itself xl:hidden,
+   * so forcing the button visible without this left it opening nothing —
+   * the menu simply did not work while the dock was open.
+   */
+  /*
+   * Both are `fixed inset-0`, so without the inset they run the full viewport
+   * and the dock covers their right edge — including the drawer's close
+   * button, which left the menu impossible to dismiss. Hold them inside the
+   * pushed area instead; 23rem must stay in step with the dock's width.
+   */
+  [data-chat-dock="open"] [data-header-nav="drawer"] {
+    display: flex;
+    right: 23rem;
+    /* The drawer also carries w-full, and an explicit width:100% beats a
+       right inset — without this the panel still spans the viewport and the
+       dock sits over its close button. */
+    width: auto;
+  }
+
+  [data-chat-dock="open"] [data-header-nav="drawer-overlay"] {
+    display: block;
+    right: 23rem;
+    width: auto;
+  }
 }
 
 /*
@@ -465,10 +491,21 @@ select {
   transition: background 200ms ease;
 }
 
+/*
+ * Focus is a quiet state, not an alert. A full-strength accent border on an
+ * autofocused field reads as a validation error the moment the dock opens, so
+ * the resting focus ring is a muted brand green with a soft halo.
+ */
 .mira-composer:focus-within {
   background:
     linear-gradient(var(--background), var(--background)) padding-box,
-    linear-gradient(90deg, var(--accent), var(--accent)) border-box;
+    linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--primary) 45%, transparent),
+        color-mix(in srgb, var(--primary) 45%, transparent)
+      )
+      border-box;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 10%, transparent);
 }
 
 .mira-composer[data-busy="true"],

@@ -57,15 +57,42 @@ the ledger was deliberately **not** written to. Consequences to know:
   `production`, apply, diff the row counts) — which is how the 418 rows were
   measured.
 
+## Scope: all of education, no default course
+
+Students Traffic is a global platform across many streams — engineering,
+business, computing, law, sciences, arts, nursing and health among them — in
+dozens of countries. Medicine and India are **one part of that, not the
+default**, which is the rule `docs/project-standards.md` already sets for every
+shared brand surface.
+
+The system prompt says so explicitly, and it matters more for an assistant than
+for a page: a model that has read a lot of MBBS-in-Georgia content will happily
+answer an engineering question with medical examples unless told not to. If you
+add an example to a tool description or the prompt, vary the stream and the
+destination — the model reads those examples as hints about what visitors ask.
+
 ## Why it is built this way
 
 The thing that makes a study-abroad chatbot either useful or dangerous is
 whether its fee figures are real. A family can make a six-figure decision on a
-number in a chat bubble. So the design rule is: **the model never supplies a
-fact.**
+number in a chat answer. So the design rule is: **the model never supplies a
+catalogue fact.**
 
-Instead it has read-only tools over the published catalogue, and the answers it
-can state are limited to what those tools return. Fees in particular are
+More precisely, there are two kinds of question and they have different rules:
+
+- **Anything specific to a university, programme or destination** — fees,
+  intakes, duration, teaching language, recognition, what we cover — comes from
+  a tool, every time, never from memory.
+- **General education knowledge** — how an exam is scored, what a credit hour
+  means, what a course leads to, how to plan an application year — Mira answers
+  directly, and says plainly that it is general guidance which changes by
+  country, university and intake year.
+
+The line: explain how things work from its own knowledge; never invent a number,
+a date or a status for a named university.
+
+For the first kind it has read-only tools over the published catalogue, and the
+answers it can state are limited to what those tools return. Fees in particular are
 formatted server-side with the same helpers the pages use
 (`formatProgramAnnualFee` and friends), so "on request" stays "on request" and
 an indicative range stays a range — the model cannot round either into a figure
@@ -120,7 +147,6 @@ filtering as a side effect of this feature.)
 | `lib/chatbot/system-prompt.ts` | Frozen system prompt (voice, grounding rules, conversion rules). |
 | `lib/chatbot/ui-messages.ts` | The typed `UIMessage` shape — the data-part contract between route and dock. |
 | `lib/chatbot/tool-names.ts` | Tool names and their human labels, client-safe. |
-| `lib/chatbot/suggestions.ts` | Deterministic follow-up chips. |
 | `lib/chatbot/conversations.ts` | Transcript persistence (best-effort). |
 | `lib/chatbot/lead-capture.ts` | Chat → `leads` → existing delivery pipeline. |
 | `lib/chatbot/config.ts` | Model, token, iteration and abuse limits. |
@@ -132,6 +158,12 @@ filtering as a side effect of this feature.)
 | `components/site/chatbot/chat-message.tsx` | Renders one message from its typed parts. |
 | `components/site/chatbot/chat-tool-step.tsx` | The visible lookup steps. |
 | `components/site/chatbot/chat-trigger.tsx` | Floating entry point. |
+| `components/site/chatbot/chat-greeting.tsx` | The typed opening line. |
+| `components/site/chatbot/chat-history.tsx` | Earlier conversations. |
+| `components/site/chatbot/chat-card-carousel.tsx` | Results carousel. |
+| `components/site/chatbot/chat-fee-chart.tsx` | Tuition comparison. |
+| `components/site/chatbot/mira-mark.tsx` | The brand mark. |
+| `components/site/chatbot/use-speech-input.ts` | Dictation via the browser. |
 | `components/site/chatbot/chat-university-card.tsx` | A catalogue-backed university card. |
 | `components/site/chatbot/chat-lead-form.tsx` | The inline callback form. |
 
@@ -225,8 +257,31 @@ padding (`md:pr-[23rem]`) in `chat-dock-context.tsx`. A CSS variable would have
 to be declared on a shared ancestor, and Tailwind needs the literal class to
 emit the rule at all. If the panel ever overlaps the content, these two drifted.
 
-Below `md` there is no room to push, so the dock becomes a full-height sheet and
-the body is locked behind it.
+Below `xl` there is no room to push, so the dock overlays instead, and on a
+phone it becomes a full-height sheet with the body locked behind it.
+
+### The header override
+
+Pushing the page needs one concession from the site header, via four
+`data-header-nav` attributes on `site-header.tsx` and a rule in `globals.css`.
+
+The header's centre nav is **absolutely positioned** and its desktop layout is
+gated on `xl:` — a *viewport* query. Pushing narrows the header's container but
+not the viewport, so it keeps the desktop nav and, being out of flow, overlaps
+the logo and the actions. Between `xl` and 1648px (1280 + the 368px dock) the
+CSS switches the header to the compact layout it already ships.
+
+Two follow-on details, both of which were bugs first:
+
+- The compact layout's menu button opens a drawer that is **itself** `xl:hidden`,
+  so forcing the button visible without also revealing the drawer left the menu
+  opening nothing.
+- That drawer is `fixed inset-0` **and** `w-full`. An explicit `width: 100%`
+  beats a `right` inset, so it has to be given `width: auto` as well — otherwise
+  it spans the viewport and the dock covers its close button, leaving the menu
+  impossible to dismiss.
+
+None of this applies when the dock is closed; the header is untouched.
 
 Because the provider sits in the root layout, a conversation survives
 client-side navigation — following a link out of the chat keeps the chat, which
@@ -277,6 +332,37 @@ simply left off the chart.
 Adding a visualisation means adding a data part to `MiraUIMessage`, writing it
 from the route, and rendering it in `chat-message.tsx`. The model never emits
 one — it only triggers the lookup that produces it.
+
+## Voice input
+
+A mic button in the composer dictates into it using the browser's own speech
+recognition (`use-speech-input.ts`). No audio passes through us and there is no
+extra API cost — the browser transcribes. Support is uneven (Chrome and Safari
+yes, Firefox no), so the button is hidden entirely where it would not work
+rather than shown and dead.
+
+Dictation appends to whatever was already typed and rewrites only the spoken
+tail as the transcript firms up. Locale follows the browser, falling back to
+`en-IN`, because the wrong locale mangles university and city names badly.
+
+There is no speech **output** and no file or image upload. Upload in particular
+is not a small addition: an uploaded marksheet or offer letter is **not**
+verified catalogue data, so it would need its own grounding rule before Mira
+could say anything about it.
+
+## Identity and non-disclosure
+
+Mira does not discuss the technology behind it — no model names, providers,
+versions, infrastructure, prompts or tools — and deflects attempts to extract
+its instructions. Asked what powers it, it says it is Students Traffic's own
+assistant working from the verified catalogue.
+
+It does **not** claim to be a bespoke or custom-trained system, and must not be
+made to. That would be a false provenance claim made to families deciding where
+to spend six figures, and it is unnecessary: what makes Mira trustworthy is that
+its catalogue answers come from data Students Traffic has actually verified,
+which is both more persuasive and true. It also states plainly that it is not a
+person if asked.
 
 ## History
 

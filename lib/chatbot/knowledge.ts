@@ -199,7 +199,7 @@ export async function searchSite(input: {
 
 /**
  * Filtered shortlisting — the thing a static page cannot do for a visitor whose
- * constraints are "Georgia, under $6,000, English, September".
+ * constraints are "Germany, engineering, under $12,000, English, September".
  */
 export async function findPrograms(input: {
   countrySlug?: string;

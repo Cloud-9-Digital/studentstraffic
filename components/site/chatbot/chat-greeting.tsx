@@ -58,14 +58,14 @@ export function ChatGreeting() {
   const isTyping = revealed < CHATBOT_GREETING.length;
 
   return (
-    <div className="flex gap-2.5">
-      <MiraMark size={28} busy={isTyping} className="mt-0.5" />
+    <div className="flex h-full flex-col items-center justify-center px-6 text-center">
+      <MiraMark size={52} busy={isTyping} className="mb-4 shadow-sm" />
 
-      <p className="text-[0.9rem] leading-relaxed text-foreground">
+      <p className="max-w-[19rem] text-[0.95rem] leading-relaxed text-foreground">
         {CHATBOT_GREETING.slice(0, revealed)}
         {isTyping ? (
           <span
-            className="ml-0.5 inline-block h-[1em] w-[2px] translate-y-[0.15em] animate-pulse bg-accent"
+            className="ml-0.5 inline-block h-[1em] w-[2px] translate-y-[0.15em] bg-accent"
             aria-hidden="true"
           />
         ) : null}
