@@ -551,7 +551,8 @@ function groupByUniversity(peers: PeerWithUniversity[]) {
   return [...byUniversity.values()].sort((a, b) => b.peers.length - a.peers.length);
 }
 
-const sortedUnique = (values: string[]) => [...new Set(values)].sort();
+const sortedUnique = (values: Array<string | null | undefined>) =>
+  [...new Set(values.filter((value): value is string => Boolean(value)))].sort();
 
 async function getAvailablePeers() {
   return (await getAllActivePeers()).filter((peer) => peer.acceptingRequests);
@@ -606,7 +607,9 @@ export async function getPeerCoverage(): Promise<KnowledgeResult> {
           students: entry.peers,
         })),
       courses,
-      note: `Introductions are only possible for these courses: ${courses.join(", ")}. Never offer to look for a student on any other course — there are none. If the visitor is on a different course, say that plainly and offer counselling, which covers every course.`,
+      note: courses.length
+        ? `Introductions are only possible for these courses: ${courses.join(", ")}. Never offer to look for a student on any other course — there are none. If the visitor is on a different course, say that plainly and offer counselling, which covers every course.`
+        : "Students are available, but none of them records a course. Do not name or promise any course — describe who is available by university instead.",
     },
     outcome: `${byCountry.size} destinations, ${courses.length} courses`,
   };
@@ -750,7 +753,13 @@ async function findPeersInCountry(countrySlug: string): Promise<KnowledgeResult>
         students: entry.peers.length,
         who: describePeers(entry.peers, 3),
       })),
-      note: `${here.length} students across ${grouped.length} universities in ${country.name} are taking requests, all of them on: ${courses.join(", ")}. Lead with how many and where, name a few, then ask which university to arrange an introduction at. Do NOT offer to find students on any other course — in this destination there are none.`,
+      note: `${here.length} students across ${grouped.length} universities in ${country.name} are taking requests${
+        courses.length ? `, all of them on: ${courses.join(", ")}` : ""
+      }. Lead with how many and where, name a few, then ask which university to arrange an introduction at.${
+        courses.length
+          ? " Do NOT offer to find students on any other course — in this destination there are none."
+          : ""
+      }`,
     },
     links: [
       {
