@@ -277,19 +277,25 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
           : "translate-y-[110%] md:translate-x-[110%] md:translate-y-0"
       )}
     >
-      <header className="flex h-14 shrink-0 items-center gap-2.5 border-b border-border bg-background px-3.5">
-        <MiraMark size={30} busy={isBusy} />
+      <header className="relative flex h-14 shrink-0 items-center gap-2.5 overflow-hidden bg-primary px-3.5 text-white">
+        {/* The cloud fills the header rather than sitting in a circle, and it
+            runs whether or not anything is happening — see .mira-orb-cloud.
+            The band is brand green beneath it so the drifting fields have
+            something to read against and the content stays legible. */}
+        <span className="mira-orb-cloud" aria-hidden="true" />
 
-        <div className="min-w-0 flex-1">
-          <p className="truncate text-[0.9rem] font-semibold leading-tight tracking-tight text-foreground">
+        <MiraMark size={30} className="relative z-10" />
+
+        <div className="relative z-10 min-w-0 flex-1">
+          <p className="truncate text-[0.9rem] font-semibold leading-tight tracking-tight [text-shadow:0_1px_2px_rgba(0,0,0,0.3)]">
             {CHATBOT_NAME}
           </p>
           {/* Only the working state earns a second line. A standing "verified
               data" badge is a claim the answers should make for themselves. */}
           {isBusy ? (
-            <p className="flex items-center gap-1.5 text-[0.7rem] leading-tight text-muted-foreground">
+            <p className="flex items-center gap-1.5 text-[0.7rem] leading-tight text-white/80">
               <span
-                className="size-1.5 shrink-0 animate-pulse rounded-full bg-accent"
+                className="size-1.5 shrink-0 animate-pulse rounded-full bg-white"
                 aria-hidden="true"
               />
               Checking our catalogue…
@@ -297,7 +303,7 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
           ) : null}
         </div>
 
-        <div className="flex shrink-0 items-center">
+        <div className="relative z-10 flex shrink-0 items-center">
           <button
             type="button"
             onClick={() => setShowHistory((current) => !current)}
@@ -305,8 +311,8 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
             aria-label={showHistory ? "Back to the conversation" : "Earlier chats"}
             aria-pressed={showHistory}
             className={cn(
-              "grid size-9 place-items-center rounded-lg transition-colors hover:bg-muted hover:text-foreground",
-              showHistory ? "bg-muted text-foreground" : "text-muted-foreground"
+              "grid size-9 place-items-center rounded-lg transition-colors hover:bg-white/15 hover:text-white",
+              showHistory ? "bg-white/20 text-white" : "text-white/75"
             )}
           >
             <History className="size-4" strokeWidth={1.75} aria-hidden="true" />
@@ -317,7 +323,7 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
               onClick={startOver}
               title="Start a new conversation"
               aria-label="Start a new conversation"
-              className="grid size-9 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              className="grid size-9 place-items-center rounded-lg text-white/75 transition-colors hover:bg-white/15 hover:text-white"
             >
               <PenSquare className="size-4" strokeWidth={1.75} aria-hidden="true" />
             </button>
@@ -327,7 +333,7 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
             onClick={close}
             title="Close assistant"
             aria-label="Close assistant"
-            className="grid size-9 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+            className="grid size-9 place-items-center rounded-lg text-white/75 transition-colors hover:bg-white/15 hover:text-white"
           >
             <X className="size-4" strokeWidth={1.75} aria-hidden="true" />
           </button>

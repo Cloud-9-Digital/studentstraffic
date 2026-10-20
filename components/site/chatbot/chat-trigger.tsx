@@ -41,9 +41,9 @@ export function ChatTrigger() {
         isOpen && "pointer-events-none translate-y-1 scale-90 opacity-0"
       )}
     >
-      {/* Colour fields drifting and merging behind the label — see
-          .mira-orb-cloud. The content is lifted above it so the text stays
-          crisp over the movement. */}
+      {/* Colour fields drifting behind the label. The launcher is always at
+          rest, where the orb's cloud theme renders nothing, so this is the CSS
+          version — see .mira-orb-cloud. */}
       <span className="mira-orb-cloud" aria-hidden="true" />
 
       <span className="relative z-10 grid size-9 shrink-0 place-items-center md:size-8">

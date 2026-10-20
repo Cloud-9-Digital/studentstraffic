@@ -705,6 +705,19 @@ select {
   will-change: background-position;
 }
 
+/*
+ * The same cloud over a light surface.
+ *
+ * The launcher's version sits under white text on a saturated pill; the dock's
+ * header is a light surface with dark text on it, so the fields are dialled
+ * right back and blurred further. Enough to register as movement in the
+ * corner of the eye, not enough to compete with the words in front of it.
+ */
+.mira-orb-cloud--muted {
+  opacity: 0.3;
+  filter: blur(18px) saturate(1.05);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mira-orb-cloud {
     animation: none;
