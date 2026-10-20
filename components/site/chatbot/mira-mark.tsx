@@ -2,15 +2,18 @@
 
 import Image from "next/image";
 
-import miraIcon from "@/app/icon.png";
+import miraIcon from "@/components/site/chatbot/mira-mark.png";
 import { cn } from "@/lib/utils";
 
 /**
- * Mira's mark — the site icon, rendered bare.
+ * Mira's mark, rendered bare.
  *
- * Imported from `app/icon.png`, the same file that serves the browser-tab
- * icon, so the assistant and the tab never drift apart: replace the favicon
- * and this follows automatically.
+ * Her own artwork, deliberately separate from the site favicon. The
+ * favicon is the traffic light from the wordmark and speaks for the whole
+ * site; this speech bubble carries the same three lamps but reads as a
+ * reply, which suits the assistant and would not suit a site about all of
+ * education. Change one without the other. The vector source is
+ * docs/brand/mira-mark.svg.
  *
  * It never animates. A pulsing icon next to shimmering text gave the waiting
  * state two competing rhythms, and the mark is an identity rather than a
