@@ -272,7 +272,7 @@ export async function POST(request: Request) {
           if (chartPoints.length >= 3) {
             writer.write({
               type: "data-feeChart",
-              data: { title: "Annual tuition, cheapest first", points: chartPoints },
+              data: { title: "Annual tuition, lowest first", points: chartPoints },
             });
           }
         }
@@ -301,7 +301,7 @@ export async function POST(request: Request) {
 
         find_programs: tool({
           description:
-            "Shortlist published programmes against the visitor's real constraints — destination, course, budget, teaching language, intake month, public or private. Use it whenever they give two or more constraints, in any stream — an MBA in Australia under $40,000, English-taught engineering in Germany, nursing in Ireland with a September intake. Sorted cheapest first. Setting a budget excludes programmes whose fee we may not publish, so every result carries a real figure.",
+            "Shortlist published programmes against the visitor's real constraints — destination, course, budget, teaching language, intake month, public or private. Use it whenever they give two or more constraints, in any stream — an MBA in Australia under $40,000, English-taught engineering in Germany, nursing in Ireland with a September intake. Sorted by annual tuition, lowest first. Setting a budget excludes programmes whose fee we may not publish, so every result carries a real figure.",
           inputSchema: z.object({
             countrySlug: slugSchema.optional(),
             courseSlug: slugSchema.optional(),

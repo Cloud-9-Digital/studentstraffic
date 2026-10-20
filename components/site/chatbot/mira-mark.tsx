@@ -5,16 +5,21 @@ import { cn } from "@/lib/utils";
 /**
  * Mira's mark.
  *
- * A solid brand-green squircle with a crisp white signal glyph. An earlier
- * version used a green-to-orange gradient, which at 32px muddied into a dark
- * blob — gradients need room to read, and a chat header does not have it. Flat
- * fill plus high-contrast glyph stays legible at every size it appears at.
+ * A monogram in the brand green, set in the site's display serif. Earlier
+ * attempts were pictorial — a gradient orb that muddied into a dark blob at
+ * 32px, then three bars that simply read as a chart icon — and both failed the
+ * only test that matters here: the mark appears at 18px beside a line of text
+ * far more often than it appears large.
  *
- * The accent bar is the one hit of brand orange, and it is the element that
- * animates while a turn is in flight.
+ * A letterform survives that. It also stays correct however the product's
+ * scope changes, where a compass or a book quietly commits to a meaning.
+ *
+ * The accent underline is the one hit of brand orange and the element that
+ * animates while a turn is in flight — it reads as a progress cue without the
+ * mark itself moving.
  */
 export function MiraMark({
-  size = 32,
+  size = 30,
   busy = false,
   className,
 }: {
@@ -22,44 +27,40 @@ export function MiraMark({
   busy?: boolean;
   className?: string;
 }) {
-  const bar = Math.max(2, Math.round(size * 0.085));
-  const gap = Math.max(2, Math.round(size * 0.07));
-
   return (
     <span
       className={cn(
-        "relative grid shrink-0 place-items-center bg-primary",
+        "relative grid shrink-0 place-items-center overflow-hidden bg-primary",
         className
       )}
       style={{ width: size, height: size, borderRadius: size * 0.32 }}
       aria-hidden="true"
     >
       <span
-        className="flex items-end"
-        style={{ gap, height: size * 0.4 }}
+        className="font-display leading-none text-white"
+        style={{
+          fontSize: size * 0.56,
+          fontWeight: 600,
+          letterSpacing: "-0.03em",
+          // Optical centring: the serif M sits slightly high in its box.
+          transform: `translateY(${size * 0.02}px)`,
+        }}
       >
-        <span
-          className={cn(
-            "rounded-full bg-white/70",
-            busy && "animate-[pulse_1.1s_ease-in-out_infinite]"
-          )}
-          style={{ width: bar, height: "52%" }}
-        />
-        <span
-          className={cn(
-            "rounded-full bg-accent",
-            busy && "animate-[pulse_1.1s_ease-in-out_infinite_150ms]"
-          )}
-          style={{ width: bar, height: "100%" }}
-        />
-        <span
-          className={cn(
-            "rounded-full bg-white/70",
-            busy && "animate-[pulse_1.1s_ease-in-out_infinite_300ms]"
-          )}
-          style={{ width: bar, height: "72%" }}
-        />
+        M
       </span>
+
+      <span
+        className={cn(
+          "absolute bg-accent",
+          busy && "animate-[pulse_1.1s_ease-in-out_infinite]"
+        )}
+        style={{
+          height: Math.max(1.5, size * 0.055),
+          width: size * 0.42,
+          bottom: size * 0.15,
+          borderRadius: 99,
+        }}
+      />
     </span>
   );
 }
