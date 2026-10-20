@@ -3,7 +3,7 @@
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowUp, History, Mic, PenSquare, Square, X } from "lucide-react";
+import { ArrowDown, ArrowUp, History, Mic, PenSquare, Square, X } from "lucide-react";
 
 import { useChatDock } from "@/components/site/chatbot/chat-dock-context";
 import { useSpeechInput } from "@/components/site/chatbot/use-speech-input";
@@ -37,6 +37,46 @@ function readStoredConversationId() {
  * component owns is presentation and the two things the SDK cannot know — the
  * stored conversation id, and when to stop pestering the visitor.
  */
+/**
+ * What the composer should invite, given where the visitor is and what has
+ * happened so far.
+ *
+ * A single frozen "Ask about fees, intakes, eligibility" is wasted space: it
+ * says the same thing on a course page, mid-conversation and while the
+ * microphone is open. Derived from the path rather than rotated at random, so
+ * it is stable across renders and never flickers.
+ */
+function getComposerPlaceholder({
+  isListening,
+  hasMessages,
+  pathname,
+}: {
+  isListening: boolean;
+  hasMessages: boolean;
+  pathname: string;
+}) {
+  if (isListening) return "Listening…";
+  if (hasMessages) return "Ask a follow-up…";
+
+  if (/^\/(universities|university)\/[^/]+/.test(pathname)) {
+    return "Ask about this university — fees, intakes, hostel…";
+  }
+  if (/^\/countries\/[^/]+/.test(pathname)) {
+    return "Ask about studying here — costs, entry, universities…";
+  }
+  if (/^\/courses\/[^/]+/.test(pathname)) {
+    return "Ask about this course — where to study it, what it costs…";
+  }
+  if (/^\/compare\//.test(pathname)) {
+    return "Ask me to compare any two of these…";
+  }
+  if (/^\/(blog|news|guides)\//.test(pathname)) {
+    return "Ask me anything about this…";
+  }
+
+  return "Ask about a course, a country, or your budget…";
+}
+
 export function ChatDock({ isOpen }: { isOpen: boolean }) {
   const { close, seedPrompt, clearSeedPrompt } = useChatDock();
 
@@ -51,6 +91,37 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
 
   const [draft, setDraft] = useState("");
   const [showHistory, setShowHistory] = useState(false);
+
+  /**
+   * Whether the view is following the stream.
+   *
+   * A ref, not state: it is read by the autoscroll effect and must not cause a
+   * render of its own. Once the visitor scrolls up to read something, the
+   * answer must stop dragging them back to the bottom — an assistant that
+   * yanks the viewport mid-sentence is unreadable on a long answer.
+   */
+  const followRef = useRef(true);
+  const [showJumpToLatest, setShowJumpToLatest] = useState(false);
+
+  function handleBodyScroll() {
+    const node = scrollRef.current;
+    if (!node) return;
+
+    const distanceFromBottom =
+      node.scrollHeight - node.scrollTop - node.clientHeight;
+    const isFollowing = distanceFromBottom < 80;
+
+    followRef.current = isFollowing;
+    setShowJumpToLatest(!isFollowing);
+  }
+
+  function jumpToLatest() {
+    const node = scrollRef.current;
+    if (!node) return;
+    followRef.current = true;
+    setShowJumpToLatest(false);
+    node.scrollTo({ top: node.scrollHeight, behavior: "smooth" });
+  }
 
   // Dictation rewrites the tail of the draft as the transcript firms up, so
   // the text before the visitor started speaking is kept and only the spoken
@@ -140,8 +211,10 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
     clearSeedPrompt();
   }, [seedPrompt, sendMessage, clearSeedPrompt]);
 
-  // Keep the newest content in view as parts stream in.
+  // Follow the stream only while the visitor is already at the bottom.
   useEffect(() => {
+    if (!followRef.current) return;
+
     const node = scrollRef.current;
     if (!node) return;
     node.scrollTop = node.scrollHeight;
@@ -160,6 +233,8 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
   function submitDraft() {
     const text = draft.trim();
     if (!text || isBusy) return;
+    followRef.current = true;
+    setShowJumpToLatest(false);
     setDraft("");
     void sendMessage({ text });
   }
@@ -307,6 +382,7 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
       ) : (
       <div
         ref={scrollRef}
+        onScroll={handleBodyScroll}
         className={cn(
           "flex-1 overflow-y-auto overscroll-contain",
           messages.length > 0 && "space-y-6 px-4 py-5"
@@ -336,6 +412,19 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
       </div>
       )}
 
+      {showJumpToLatest && !showHistory ? (
+        <div className="relative">
+          <button
+            type="button"
+            onClick={jumpToLatest}
+            className="absolute -top-11 left-1/2 flex -translate-x-1/2 items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-[0.7rem] font-medium text-foreground shadow-md transition-colors hover:bg-muted"
+          >
+            <ArrowDown className="size-3" strokeWidth={2.5} aria-hidden="true" />
+            Jump to latest
+          </button>
+        </div>
+      ) : null}
+
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -362,7 +451,11 @@ export function ChatDock({ isOpen }: { isOpen: boolean }) {
               }
             }}
             rows={1}
-            placeholder="Ask about fees, intakes, eligibility…"
+            placeholder={getComposerPlaceholder({
+              isListening: speech.isListening,
+              hasMessages: messages.length > 0,
+              pathname: typeof window === "undefined" ? "" : window.location.pathname,
+            })}
             aria-label="Your question"
             // field-sizing grows the box with its content, so a long question
             // is readable without a scrollbar inside a one-line input.

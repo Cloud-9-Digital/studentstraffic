@@ -18,6 +18,7 @@ import {
 } from "@/lib/routes";
 import { getCountryFlagCode } from "@/lib/university-media";
 import { searchCatalog } from "@/lib/search/search";
+import { getActivePeersForUniversity } from "@/lib/university-community";
 import {
   formatCurrencyUsd,
   formatProgramAnnualFee,
@@ -513,5 +514,68 @@ export async function listDestinations(): Promise<KnowledgeResult> {
       note: "This is the complete published coverage. Anything not listed here is not covered yet — say so instead of improvising.",
     },
     outcome: `${countries.length} destinations, ${courses.length} courses`,
+  };
+}
+
+/**
+ * Students currently at a university who have agreed to talk to applicants.
+ *
+ * This is the one thing no competitor's assistant can offer, so it is worth
+ * surfacing by name rather than hiding behind "we can connect you". Only
+ * active peers who are accepting requests are returned, and never their
+ * contact details — a connection is brokered, not handed over.
+ */
+export async function findStudentPeers(input: {
+  universitySlug: string;
+}): Promise<KnowledgeResult> {
+  const [university, peers] = await Promise.all([
+    getUniversityBySlug(input.universitySlug),
+    getActivePeersForUniversity(input.universitySlug),
+  ]);
+
+  if (!university) {
+    return {
+      result: {
+        found: false,
+        note: "No published university with that slug. Resolve the name with search_site first.",
+      },
+      outcome: "university not found",
+    };
+  }
+
+  const available = peers.filter((peer) => peer.acceptingRequests);
+
+  if (available.length === 0) {
+    return {
+      result: {
+        university: university.name,
+        peers: [],
+        note: `No students at ${university.name} are taking requests right now. Say so plainly and offer counselling instead — do not imply someone is available.`,
+      },
+      outcome: "no peers",
+    };
+  }
+
+  return {
+    result: {
+      university: university.name,
+      universitySlug: university.slug,
+      peerCount: available.length,
+      peers: available.slice(0, 6).map((peer) => ({
+        firstName: peer.fullName.split(" ")[0],
+        course: peer.courseName,
+        year: peer.currentYearOrBatch,
+        homeState: peer.homeState,
+        languages: peer.languages,
+      })),
+      note: "These are real students at that university. Describe who is available in general terms — a first name, course and year is plenty — and offer to arrange an introduction with request_peer_connection. Never promise a specific person will respond.",
+    },
+    links: [
+      {
+        label: `Students at ${university.name}`,
+        href: `${getUniversityHref(university.slug)}#community`,
+      },
+    ],
+    outcome: `${available.length} peers`,
   };
 }

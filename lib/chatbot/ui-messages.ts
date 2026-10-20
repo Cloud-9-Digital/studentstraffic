@@ -39,6 +39,18 @@ export type MiraDataParts = {
   };
   /** Opens the inline callback form. */
   leadRequest: ChatLeadRequest;
+  /** Opens the inline form that asks to be introduced to a student. */
+  peerRequest: {
+    universitySlug: string;
+    universityName: string;
+    reason: string;
+  };
+  /** Confirms what was saved to the visitor's shortlist. */
+  shortlist: {
+    added: string[];
+    alreadyThere: string[];
+    requiresSignIn: boolean;
+  };
 };
 
 export type MiraMessageMetadata = {

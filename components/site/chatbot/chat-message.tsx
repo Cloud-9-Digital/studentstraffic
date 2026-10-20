@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { BookmarkCheck } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { ChatCardCarousel } from "@/components/site/chatbot/chat-card-carousel";
 import { ChatFeeChart } from "@/components/site/chatbot/chat-fee-chart";
 import { ChatLeadForm } from "@/components/site/chatbot/chat-lead-form";
+import { ChatPeerForm } from "@/components/site/chatbot/chat-peer-form";
 import {
   ChatToolStep,
   ChatToolSteps,
@@ -213,6 +215,60 @@ export function ChatMessage({
                 ))}
               </div>
             );
+
+          case "data-peerRequest":
+            return (
+              <ChatPeerForm
+                key={key}
+                universitySlug={part.data.universitySlug}
+                universityName={part.data.universityName}
+                reason={part.data.reason}
+              />
+            );
+
+          case "data-shortlist": {
+            const { added, alreadyThere, requiresSignIn } = part.data;
+
+            if (requiresSignIn) {
+              return (
+                <p key={key} className="text-[0.8rem] text-muted-foreground">
+                  <Link
+                    href="/login"
+                    className="font-medium text-accent underline underline-offset-2"
+                  >
+                    Sign in
+                  </Link>{" "}
+                  to save a shortlist you can come back to.
+                </p>
+              );
+            }
+
+            const saved = added.length + alreadyThere.length;
+            if (saved === 0) return null;
+
+            return (
+              <p
+                key={key}
+                className="flex items-center gap-1.5 text-[0.8rem] text-muted-foreground"
+              >
+                <BookmarkCheck
+                  className="size-3.5 shrink-0 text-accent"
+                  strokeWidth={2}
+                  aria-hidden="true"
+                />
+                {added.length > 0
+                  ? `Saved ${added.length} to your shortlist`
+                  : "Already on your shortlist"}
+                {". "}
+                <Link
+                  href="/dashboard/shortlist"
+                  className="font-medium text-accent underline underline-offset-2"
+                >
+                  View
+                </Link>
+              </p>
+            );
+          }
 
           case "data-leadRequest":
             return (

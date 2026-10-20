@@ -15,6 +15,9 @@ export const CHATBOT_TOOL_NAMES = [
   "get_destination",
   "list_destinations",
   "request_counselling_callback",
+  "find_student_peers",
+  "request_peer_connection",
+  "shortlist_universities",
 ] as const;
 
 export type ChatbotToolName = (typeof CHATBOT_TOOL_NAMES)[number];
@@ -45,6 +48,18 @@ const TOOL_LABELS: Record<ChatbotToolName, { running: string; done: string }> = 
   request_counselling_callback: {
     running: "Opening the callback form",
     done: "Opened the callback form",
+  },
+  find_student_peers: {
+    running: "Checking who is available",
+    done: "Checked current students",
+  },
+  request_peer_connection: {
+    running: "Opening the introduction form",
+    done: "Opened the introduction form",
+  },
+  shortlist_universities: {
+    running: "Saving to your shortlist",
+    done: "Saved to your shortlist",
   },
 };
 

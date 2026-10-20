@@ -26,9 +26,11 @@ import {
   recordUserMessage,
   startOrResumeConversation,
 } from "@/lib/chatbot/conversations";
+import { shortlistUniversities } from "@/lib/chatbot/actions";
 import {
   compareUniversities,
   findPrograms,
+  findStudentPeers,
   getCountryBrief,
   getUniversityDossier,
   listDestinations,
@@ -375,6 +377,78 @@ export async function POST(request: Request) {
           inputSchema: z.object({}),
           execute: async () =>
             wrap("list_destinations", {}, () => listDestinations()),
+        }),
+
+        find_student_peers: tool({
+          description:
+            "Find students currently at a university who have agreed to talk to applicants. Use it when the visitor asks what a place is really like, about hostels, food, safety or daily life, or whether they can speak to someone there — the honest answer to those is often a current student rather than our page.",
+          inputSchema: z.object({ universitySlug: slugSchema }),
+          execute: async (input) =>
+            wrap("find_student_peers", input, () => findStudentPeers(input)),
+        }),
+
+        request_peer_connection: tool({
+          description:
+            "Open a short form asking to be introduced to a current student at a university. Call it only after find_student_peers showed someone is available and the visitor has said they want an introduction. A counsellor brokers the introduction; you never share a student's contact details.",
+          inputSchema: z.object({
+            universitySlug: slugSchema,
+            universityName: z.string().trim().min(1).max(200),
+            reason: z
+              .string()
+              .trim()
+              .min(3)
+              .max(300)
+              .describe(
+                "One short line, addressed to the visitor, saying what they will get out of it."
+              ),
+          }),
+          execute: async (input) => {
+            toolRecords.push({
+              name: "request_peer_connection",
+              input,
+              outcome: "peer form shown",
+              durationMs: 0,
+            });
+
+            writer.write({ type: "data-peerRequest", data: input });
+
+            return {
+              shown: true,
+              note: "The introduction form is open in the chat. Tell the visitor it is there. Do not ask for their phone number yourself, and do not promise a particular student will reply.",
+            };
+          },
+        }),
+
+        shortlist_universities: tool({
+          description:
+            "Save universities to the visitor's shortlist so they can come back to them. Use it when they say to save, keep or shortlist something, or clearly settle on a few options. Saving needs an account — if the result says the visitor is not signed in, tell them plainly that saving needs one rather than implying it worked.",
+          inputSchema: z.object({
+            slugs: z.array(slugSchema).min(1).max(8),
+          }),
+          execute: async (input) => {
+            const startedAt = Date.now();
+            const result = await shortlistUniversities(input.slugs);
+
+            toolRecords.push({
+              name: "shortlist_universities",
+              input,
+              outcome: result.requiresSignIn
+                ? "sign-in required"
+                : `${result.added.length} added`,
+              durationMs: Date.now() - startedAt,
+            });
+
+            writer.write({
+              type: "data-shortlist",
+              data: {
+                added: result.added,
+                alreadyThere: result.alreadyThere,
+                requiresSignIn: result.requiresSignIn,
+              },
+            });
+
+            return result;
+          },
         }),
 
         request_counselling_callback: tool({

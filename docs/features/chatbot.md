@@ -186,6 +186,33 @@ straight to the UI.
 `find_programs` is the one a static page cannot replace: it answers "MBBS in
 Georgia under $6,000, taught in English, September intake" against live data.
 
+## Acting, not just answering
+
+Mira can do three things for a visitor, not only tell them things. Actions live
+in `lib/chatbot/actions.ts`, kept apart from `knowledge.ts` because the rules
+differ: a lookup is always safe to run, an action changes data and has to answer
+for who is asking.
+
+| Action | Behaviour |
+| --- | --- |
+| `shortlist_universities` | Saves to the signed-in visitor's shortlist. Shortlists are keyed by user id, so there is nothing to write for an anonymous visitor — it returns `requiresSignIn` and Mira says saving needs an account rather than implying it worked. |
+| `find_student_peers` | Lists students at a university who are active **and** accepting requests. Never returns contact details. |
+| `request_peer_connection` | Opens the introduction form. |
+
+`chat-peer-form.tsx` calls the existing `submitPeerRequestAction` server action
+directly rather than going through a new endpoint, so a request raised in chat is
+the same record, with the same validation, honeypot and lead pipeline, as one
+raised on a university page. Nothing downstream needs to know the chat exists.
+
+Two rules the prompt enforces and the tools back up: a student's contact details
+are never shared — an introduction is brokered by a counsellor — and Mira never
+promises a particular person will reply. When nobody is accepting requests it
+says so plainly instead of implying someone is free.
+
+The peer route is the one thing no competitor's assistant can offer, and it is
+the right answer to questions our pages genuinely cannot settle: what the hostel
+food is like, whether a city feels safe at night, how hard first year really is.
+
 ## Lead capture
 
 The model can **open** the callback form; it can never collect contact details.
