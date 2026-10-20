@@ -458,7 +458,7 @@ select {
    */
   [data-chat-dock="open"] [data-header-nav="drawer"][data-drawer-open="true"] {
     display: flex;
-    right: 23rem;
+    right: var(--mira-dock-reserve);
     /* The drawer also carries w-full, and an explicit width:100% beats a
        right inset — without this it spans the viewport and the dock sits over
        its close button. */
@@ -467,7 +467,7 @@ select {
 
   [data-chat-dock="open"] [data-header-nav="drawer-overlay"][data-drawer-open="true"] {
     display: block;
-    right: 23rem;
+    right: var(--mira-dock-reserve);
     width: auto;
   }
 
@@ -478,73 +478,160 @@ select {
 }
 
 /*
- * Chat dock: the composer glows while a turn is in flight.
+ * The composer's beam.
  *
- * A gradient runs along the border from brand green into brand orange, which
- * doubles as the "working" signal so the composer itself carries the state
- * instead of a separate spinner. Two background layers: the inner one paints
- * the field over padding-box, the outer gradient shows only in the border.
+ * A spectrum runs along the border, with a bright band travelling through it.
+ * It sits on the border rather than the fill so the text it frames stays on a
+ * plain surface and remains readable, and it is the one loud element in an
+ * otherwise quiet panel — which is why it earns the attention.
+ *
+ * Three states: resting (the spectrum, muted), focused (brighter), and working
+ * (the beam sweeps). Nothing animates for anyone who has asked for less motion.
  */
-@keyframes mira-composer-flow {
-  0% {
+@property --mira-beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes mira-beam-sweep {
+  to {
     background-position:
       0 0,
-      0% 50%;
-  }
-  100% {
-    background-position:
-      0 0,
-      200% 50%;
+      -200% 50%;
   }
 }
 
 .mira-composer {
+  --mira-spectrum: #0f3d37, #0e7490, #4f46e5, #a21caf, #c2410c, #ca8a04, #0f3d37;
+
   border: 1.5px solid transparent;
   border-radius: 1rem;
   background:
     linear-gradient(var(--background), var(--background)) padding-box,
-    linear-gradient(90deg, var(--border), var(--border)) border-box;
-  transition: background 200ms ease;
-}
-
-/*
- * Focus is a quiet state, not an alert. A full-strength accent border on an
- * autofocused field reads as a validation error the moment the dock opens, so
- * the resting focus ring is a muted brand green with a soft halo.
- */
-.mira-composer:focus-within {
-  background:
-    linear-gradient(var(--background), var(--background)) padding-box,
-    linear-gradient(
-        90deg,
-        color-mix(in srgb, var(--primary) 45%, transparent),
-        color-mix(in srgb, var(--primary) 45%, transparent)
-      )
-      border-box;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 10%, transparent);
-}
-
-.mira-composer[data-busy="true"],
-.mira-composer[data-busy="true"]:focus-within {
-  background:
-    linear-gradient(var(--background), var(--background)) padding-box,
-    linear-gradient(
-        90deg,
-        var(--primary),
-        var(--accent),
-        var(--primary),
-        var(--accent),
-        var(--primary)
-      )
-      border-box;
+    linear-gradient(90deg, var(--mira-spectrum)) border-box;
   background-size:
     100% 100%,
     200% 100%;
-  animation: mira-composer-flow 2.2s linear infinite;
+  background-position:
+    0 0,
+    0 50%;
+  opacity: 1;
+  transition: filter 220ms ease;
+  filter: saturate(0.55) opacity(0.75);
+}
+
+.mira-composer:focus-within {
+  filter: saturate(1) opacity(1);
+}
+
+.mira-composer[data-busy="true"] {
+  filter: saturate(1.15) opacity(1);
+  animation: mira-beam-sweep 2.4s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .mira-composer[data-busy="true"] {
     animation: none;
+  }
+}
+
+/*
+ * Message entry. A new turn rises into place rather than appearing, so the
+ * column reads as something being written into rather than a list being
+ * rebuilt. Short and eased out, because it runs on every message.
+ */
+@keyframes mira-message-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mira-message {
+  animation: mira-message-in 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/*
+ * Thinking. A sheen travels across the word while the first part of an answer
+ * is still on its way — quieter than bouncing dots and it does not imply a
+ * progress bar that is secretly going nowhere.
+ */
+@keyframes mira-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.mira-thinking {
+  background: linear-gradient(
+    90deg,
+    var(--muted-foreground) 0%,
+    var(--muted-foreground) 35%,
+    var(--foreground) 50%,
+    var(--muted-foreground) 65%,
+    var(--muted-foreground) 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: mira-shimmer 1.8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mira-message {
+    animation: none;
+  }
+
+  .mira-thinking {
+    animation: none;
+    color: var(--muted-foreground);
+  }
+}
+
+/*
+ * Chat dock geometry.
+ *
+ * One source of truth. The dock's width, the gap it floats in, the page
+ * padding that reserves room for it and the inset applied to the site's own
+ * drawer all derive from these two values — they were previously four separate
+ * literals that had to be kept in step by hand, and when they drifted the
+ * panel overlapped the content it was supposed to sit beside.
+ */
+:root {
+  --mira-dock-width: 22rem;
+  --mira-dock-gap: 0.75rem;
+  --mira-dock-reserve: calc(var(--mira-dock-width) + var(--mira-dock-gap) * 2);
+}
+
+.mira-dock {
+  position: fixed;
+  z-index: 50;
+  border-radius: 1rem;
+  /* Phone: a sheet inset from the edges, below the site header. */
+  inset: 3.5rem var(--mira-dock-gap) var(--mira-dock-gap);
+}
+
+@media (min-width: 768px) {
+  .mira-dock {
+    /* Desktop: a floating card, not a panel welded to the viewport edge. */
+    inset: var(--mira-dock-gap) var(--mira-dock-gap) var(--mira-dock-gap) auto;
+    width: var(--mira-dock-width);
+  }
+}
+
+/*
+ * The page reserves room only where there is genuinely space for both. Below
+ * xl the dock floats over the content instead, which is why it carries a
+ * shadow.
+ */
+@media (min-width: 1280px) {
+  [data-chat-dock="open"] {
+    padding-right: var(--mira-dock-reserve);
   }
 }

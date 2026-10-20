@@ -12,7 +12,6 @@ import {
 import { usePathname } from "next/navigation";
 
 import { showsChatbot } from "@/lib/chatbot/branding";
-import { cn } from "@/lib/utils";
 
 /**
  * The dock shell.
@@ -134,10 +133,9 @@ export function ChatDockProvider({ children }: { children: React.ReactNode }) {
         // that the dock overlays, which is why it carries its own shadow. This
         // padding MUST stay in step with the dock's w-[23rem].
         data-chat-dock={available && isOpen ? "open" : "closed"}
-        className={cn(
-          "transition-[padding-right] duration-300 ease-out",
-          available && isOpen && "xl:pr-[23rem]"
-        )}
+        // The padding itself is applied in globals.css from the dock's own
+        // custom properties, keyed on this attribute — see .mira-dock.
+        className="transition-[padding-right] duration-300 ease-out"
       >
         {children}
       </div>

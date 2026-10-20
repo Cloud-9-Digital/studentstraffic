@@ -9,6 +9,7 @@ import { ChatCardCarousel } from "@/components/site/chatbot/chat-card-carousel";
 import { ChatFeeChart } from "@/components/site/chatbot/chat-fee-chart";
 import { ChatLeadForm } from "@/components/site/chatbot/chat-lead-form";
 import { ChatPeerForm } from "@/components/site/chatbot/chat-peer-form";
+import { MiraMark } from "@/components/site/chatbot/mira-mark";
 import {
   ChatToolStep,
   ChatToolSteps,
@@ -126,7 +127,7 @@ export function ChatMessage({
       .join("\n");
 
     return (
-      <div className="flex justify-end">
+      <div className="mira-message flex justify-end">
         <div className="max-w-[85%] rounded-2xl bg-muted px-3.5 py-2.5 text-[0.9rem] leading-relaxed text-foreground">
           <p className="whitespace-pre-wrap">{text}</p>
         </div>
@@ -139,7 +140,7 @@ export function ChatMessage({
   );
 
   return (
-    <div className="space-y-2.5">
+    <div className="mira-message space-y-2.5">
       {toolParts.length > 0 ? (
         <ChatToolSteps>
           {toolParts.map((part, index) => {
@@ -291,14 +292,9 @@ export function ChatMessage({
 /** The streaming placeholder, shown before the first part of an answer lands. */
 export function ChatThinking({ className }: { className?: string }) {
   return (
-    <div className={cn("flex items-center gap-1.5 py-1", className)}>
-      {[0, 150, 300].map((delay) => (
-        <span
-          key={delay}
-          className="size-1.5 animate-bounce rounded-full bg-muted-foreground/50"
-          style={{ animationDelay: `${delay}ms` }}
-        />
-      ))}
+    <div className={cn("flex items-center gap-2 py-0.5", className)}>
+      <MiraMark size={18} busy />
+      <span className="mira-thinking text-[0.8rem] font-medium">Thinking…</span>
     </div>
   );
 }

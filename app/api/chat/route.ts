@@ -44,6 +44,7 @@ import {
 import { intakeMonthCodes, teachingLanguageCodes } from "@/lib/catalogue-facets";
 import type { MiraUIMessage } from "@/lib/chatbot/ui-messages";
 import type { ChatbotToolCallRecord } from "@/lib/data/types";
+import { buildViewerNote, getChatViewer } from "@/lib/chatbot/viewer";
 import { rateLimit } from "@/lib/rate-limit";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 import { getTrackingSnapshot } from "@/lib/tracking";
@@ -200,6 +201,7 @@ export async function POST(request: Request) {
   await recordUserMessage(conversation.id, latestText);
 
   const pageNote = buildPageContextNote(body.page);
+  const viewerNote = buildViewerNote(await getChatViewer());
   const startedAt = Date.now();
 
   const stream = createUIMessageStream<MiraUIMessage>({
@@ -497,9 +499,12 @@ export async function POST(request: Request) {
         uiMessages.slice(-MAX_HISTORY_MESSAGES)
       );
 
-      // Page context rides on the last user turn rather than the instructions,
-      // so it sits after the cached prefix and never invalidates it.
-      if (pageNote) {
+      // Page and viewer context ride on the last user turn rather than the
+      // instructions, so they sit after the cached prefix and never
+      // invalidate it.
+      const contextNotes = [pageNote, viewerNote].filter(Boolean).join("\n");
+
+      if (contextNotes) {
         const lastUserIndex = modelMessages.findLastIndex(
           (message) => message.role === "user"
         );
@@ -511,8 +516,8 @@ export async function POST(request: Request) {
         if (target?.role === "user") {
           target.content =
             typeof target.content === "string"
-              ? `${target.content}\n\n${pageNote}`
-              : [...target.content, { type: "text", text: pageNote }];
+              ? `${target.content}\n\n${contextNotes}`
+              : [...target.content, { type: "text", text: contextNotes }];
         }
       }
 

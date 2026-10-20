@@ -287,6 +287,51 @@ emit the rule at all. If the panel ever overlaps the content, these two drifted.
 Below `xl` there is no room to push, so the dock overlays instead, and on a
 phone it becomes a full-height sheet with the body locked behind it.
 
+### Geometry lives in one place
+
+The dock is a rounded floating card, inset from the viewport rather than welded
+to its edge. Its width, the gap it floats in, the page padding that reserves
+room for it, and the inset applied to the site's own drawer all derive from two
+custom properties in `globals.css`:
+
+```css
+--mira-dock-width: 22rem;
+--mira-dock-gap: 0.75rem;
+--mira-dock-reserve: calc(var(--mira-dock-width) + var(--mira-dock-gap) * 2);
+```
+
+These were four separate literals copied between a component, a provider and
+two CSS rules, and when they drifted the panel overlapped the content it was
+supposed to sit beside. Change the width here and everything follows.
+
+### Motion
+
+Three animations, all defined in `globals.css` and all disabled under
+`prefers-reduced-motion`:
+
+- **The composer beam.** A spectrum runs the border with a bright band
+  travelling through it — muted at rest, brighter on focus, sweeping while a
+  turn is in flight. It sits on the *border*, not the fill, so the text it
+  frames stays on a plain surface and remains readable. It is the one loud
+  element in an otherwise quiet panel, which is why it earns the attention.
+- **Message entry.** A new turn rises into place over 280ms, so the column
+  reads as something being written into rather than a list being rebuilt.
+- **Thinking.** A sheen travels across the word while the first part of an
+  answer is on its way — quieter than bouncing dots, and it does not imply a
+  progress bar that is secretly going nowhere.
+
+### Personalisation
+
+A signed-in visitor is greeted by first name, and the model is told what we
+already hold about their plans — exam score, budget, destinations, shortlist —
+so it stops asking for things they have already saved. That note is appended
+*after* the history, so it never invalidates the cached prefix.
+
+**It is never given their email or phone number.** The assistant cannot send
+anything, and the callback form collects contact details directly, so putting
+them in the model's context would add risk and buy nothing. The same reasoning
+as the lead form, applied to the profile.
+
 ### The header override
 
 Pushing the page needs one concession from the site header, via four
