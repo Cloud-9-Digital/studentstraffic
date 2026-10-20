@@ -408,3 +408,90 @@ select {
     transform: translate3d(0, -18px, 0) scale(1.08);
   }
 }
+
+/*
+ * Chat dock: forcing the compact header while the page is pushed.
+ *
+ * The site header's centre nav is absolutely positioned and its desktop layout
+ * is gated on `xl:` — a viewport query. When the dock pushes the page, the
+ * header's *container* narrows but the viewport does not, so it keeps the
+ * desktop nav and, being out of flow, overlaps the logo and the actions.
+ *
+ * Between xl (where the push begins) and 1648px (1280 + the 368px dock, the
+ * narrowest viewport where the desktop header still fits beside the dock) we
+ * switch the header to the compact layout it already ships. Above 1648px there
+ * is room for both and nothing is overridden. None of this applies when the
+ * dock is closed.
+ */
+@media (min-width: 1280px) and (max-width: 1647.98px) {
+  [data-chat-dock="open"] [data-header-nav="desktop"],
+  [data-chat-dock="open"] [data-header-nav="desktop-actions"],
+  [data-chat-dock="open"] [data-header-nav="subrow"] {
+    display: none;
+  }
+
+  [data-chat-dock="open"] [data-header-nav="compact"] {
+    display: flex;
+  }
+}
+
+/*
+ * Chat dock: the composer glows while a turn is in flight.
+ *
+ * A gradient runs along the border from brand green into brand orange, which
+ * doubles as the "working" signal so the composer itself carries the state
+ * instead of a separate spinner. Two background layers: the inner one paints
+ * the field over padding-box, the outer gradient shows only in the border.
+ */
+@keyframes mira-composer-flow {
+  0% {
+    background-position:
+      0 0,
+      0% 50%;
+  }
+  100% {
+    background-position:
+      0 0,
+      200% 50%;
+  }
+}
+
+.mira-composer {
+  border: 1.5px solid transparent;
+  border-radius: 1rem;
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(90deg, var(--border), var(--border)) border-box;
+  transition: background 200ms ease;
+}
+
+.mira-composer:focus-within {
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(90deg, var(--accent), var(--accent)) border-box;
+}
+
+.mira-composer[data-busy="true"],
+.mira-composer[data-busy="true"]:focus-within {
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(
+        90deg,
+        var(--primary),
+        var(--accent),
+        var(--primary),
+        var(--accent),
+        var(--primary)
+      )
+      border-box;
+  background-size:
+    100% 100%,
+    200% 100%;
+  animation: mira-composer-flow 2.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mira-composer[data-busy="true"] {
+    animation: none;
+  }
+}

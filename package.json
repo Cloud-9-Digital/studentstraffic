@@ -37,6 +37,9 @@
     "queue:normalize": "tsx scripts/university-queue.ts validate --fix"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.84",
+    "@ai-sdk/react": "^4.0.150",
+    "@anthropic-ai/sdk": "^0.135.0",
     "@auth/core": "^0.41.2",
     "@auth/drizzle-adapter": "^1.11.2",
     "@microsoft/clarity": "^1.0.2",
@@ -46,6 +49,7 @@
     "ably": "^2.21.0",
     "agora-rtc-sdk-ng": "^4.24.3",
     "agora-token": "^2.0.5",
+    "ai": "^7.0.146",
     "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.1",
     "cloudinary": "^2.9.0",
