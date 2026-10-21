@@ -20,6 +20,7 @@ import {
   MAX_HISTORY_MESSAGES,
   MAX_TOOL_ITERATIONS,
   MAX_USER_MESSAGE_CHARS,
+  TRANSCRIPT_RESULT_CHARS,
 } from "@/lib/chatbot/config";
 import {
   recordAssistantMessage,
@@ -90,6 +91,19 @@ const slugSchema = z
   .min(1)
   .max(120)
   .regex(/^[a-z0-9-]+$/, "Slugs are lowercase words joined by hyphens.");
+
+/** A lookup's result as the transcript stores it: whole when small, else a preview. */
+function forTranscript(result: unknown) {
+  const json = JSON.stringify(result) ?? "null";
+
+  return json.length <= TRANSCRIPT_RESULT_CHARS
+    ? result
+    : {
+        truncated: true,
+        chars: json.length,
+        preview: json.slice(0, TRANSCRIPT_RESULT_CHARS),
+      };
+}
 
 function isTrustedBrowserRequest(request: Request) {
   const userAgent = request.headers.get("user-agent") ?? "";
@@ -234,6 +248,9 @@ export async function POST(request: Request) {
             input,
             outcome: "error",
             durationMs: Date.now() - toolStartedAt,
+            result: {
+              error: error instanceof Error ? error.message : String(error),
+            },
           });
           return {
             error: "lookup_failed",
@@ -246,6 +263,7 @@ export async function POST(request: Request) {
           input,
           outcome: outcome.outcome,
           durationMs: Date.now() - toolStartedAt,
+          result: forTranscript(outcome.result),
         });
 
         if (outcome.cards?.length) {
@@ -451,6 +469,7 @@ export async function POST(request: Request) {
             toolRecords.push({
               name: "shortlist_universities",
               input,
+              result,
               outcome: result.requiresSignIn
                 ? "sign-in required"
                 : `${result.added.length} added`,

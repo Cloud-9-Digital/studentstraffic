@@ -627,4 +627,10 @@ export type ChatbotToolCallRecord = {
   /** Short, human-readable outcome, e.g. "4 universities" or "no match". */
   outcome: string;
   durationMs: number;
+  /**
+   * What the lookup handed the model, capped at TRANSCRIPT_RESULT_CHARS. The
+   * outcome alone says "no peers in country"; this says which peers were and
+   * were not there, which is what a wrong answer has to be traced back to.
+   */
+  result?: unknown;
 };

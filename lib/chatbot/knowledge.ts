@@ -142,6 +142,7 @@ function describeProgram(program: FinderProgram) {
     city: program.university.city,
     country: program.country.name,
     countrySlug: program.country.slug,
+    countryPage: getCountryHref(program.country.slug),
     universityType: program.university.type,
     course: program.course.shortName,
     courseSlug: program.course.slug,
@@ -631,6 +632,7 @@ export async function getPeerCoverage(): Promise<KnowledgeResult> {
         .map((entry) => ({
           country: entry.name,
           countrySlug: entry.slug,
+          page: getCountryHref(entry.slug),
           universities: entry.universities.size,
           students: entry.peers,
         })),
@@ -703,6 +705,7 @@ export async function findStudentPeers(input: {
         alsoInThisCountry: elsewhere.map((entry) => ({
           university: entry.name,
           universitySlug: entry.slug,
+          page: getUniversityHref(entry.slug),
           students: entry.peers.length,
         })),
         note: elsewhere.length
@@ -717,6 +720,7 @@ export async function findStudentPeers(input: {
     result: {
       university: university.name,
       universitySlug: university.slug,
+      page: getUniversityHref(university.slug),
       peerCount: available.length,
       peers: describePeers(available),
       note: "These are real students at that university. Describe who is available in general terms — a first name, course and year is plenty — and offer to arrange an introduction with request_peer_connection. Never promise a specific person will respond.",
@@ -778,6 +782,7 @@ async function findPeersInCountry(countrySlug: string): Promise<KnowledgeResult>
       universities: grouped.slice(0, 12).map((entry) => ({
         university: entry.name,
         universitySlug: entry.slug,
+        page: getUniversityHref(entry.slug),
         students: entry.peers.length,
         who: describePeers(entry.peers, 3),
       })),

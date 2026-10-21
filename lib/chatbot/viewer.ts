@@ -5,7 +5,6 @@ import { desc, eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { universities, users, userShortlists } from "@/lib/db/schema";
-import { resolveDbUserId } from "@/lib/server-session";
 
 /**
  * What Mira is allowed to know about a signed-in visitor.
@@ -45,17 +44,18 @@ export async function getChatViewer(): Promise<ChatViewer | null> {
   /*
    * NOT session.user.id. On an admin session that is the numeric admin id
    * ("1"), which matches no users row, so the profile and shortlist lookups
-   * below came back empty and Mira knew nothing at all about anyone signed in
-   * that way. resolveDbUserId is the codebase's canonical address-to-id step.
+   * came back empty and Mira knew nothing at all about anyone signed in that
+   * way. The address is the reliable key, and the profile query below takes it
+   * directly: resolving the id first and then fetching the same row again by
+   * id would be a second round trip on every signed-in turn for nothing.
    */
-  const userId = await resolveDbUserId(email);
   const db = getDb();
 
   // Signed in, but with no site account behind the address, or no database to
   // ask. We still know who we are talking to, which is the part that matters
   // most — so personalisation degrades to the name rather than vanishing.
   const nameOnly: ChatViewer = {
-    userId,
+    userId: null,
     firstName,
     neetScore: null,
     budgetUsd: null,
@@ -63,21 +63,24 @@ export async function getChatViewer(): Promise<ChatViewer | null> {
     shortlist: [],
   };
 
-  if (!userId || !db) return nameOnly;
+  if (!db) return nameOnly;
 
   try {
     const [profile] = await db
       .select({
+        id: users.id,
         name: users.name,
         neetScore: users.neetScore,
         budgetUsd: users.budgetUsd,
         preferredCountries: users.preferredCountries,
       })
       .from(users)
-      .where(eq(users.id, userId))
+      .where(eq(users.email, email))
       .limit(1);
 
     if (!profile) return nameOnly;
+
+    const userId = profile.id;
 
     const shortlist = await db
       .select({ name: universities.name, slug: universities.slug })

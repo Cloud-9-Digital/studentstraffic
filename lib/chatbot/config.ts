@@ -39,6 +39,13 @@ export const MAX_MESSAGES_PER_CONVERSATION = 60;
 /** Narrative catalogue fields are page-length. Tool results get a lede only. */
 export const NARRATIVE_CLIP_CHARS = 700;
 
+/**
+ * How much of each lookup's result the transcript keeps. It rides in the row
+ * every answer already writes, so it costs no extra query — the cap keeps a
+ * full dossier from quietly multiplying the size of every stored message.
+ */
+export const TRANSCRIPT_RESULT_CHARS = 4000;
+
 export function isChatbotConfigured() {
   return Boolean(process.env.ANTHROPIC_API_KEY?.trim());
 }
