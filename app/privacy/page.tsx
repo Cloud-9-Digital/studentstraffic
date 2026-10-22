@@ -27,8 +27,24 @@ export const metadata: Metadata = buildIndexableMetadata({
 
 const privacySections = [
   {
+    title: "Who we are",
+    body: "Students Traffic (studentstraffic.com and the Students Traffic app for Android and iOS) is owned and operated by Cloud 9 Digital. References to \"we\" and \"us\" on this page mean Cloud 9 Digital.",
+  },
+  {
     title: "Information we collect",
-    body: "We collect the details you submit through enquiry and counselling forms, such as your name, phone number, email address, course interest, country preference, and any additional notes you choose to share.",
+    body: "We collect the details you submit through enquiry and counselling forms, such as your name, phone number, email address, country of residence, course interest, country preference, and any additional notes you choose to share.",
+  },
+  {
+    title: "The Students Traffic app",
+    body: "If you create an app account we store your name, email address, phone number, a hashed password, and the profile details, shortlist and applications you add. We store a push-notification token so we can alert you to messages and calls, the messages you exchange with student guides, and records of voice calls (who called, when and for how long). Voice calls are carried in real time through Agora and are not recorded. The app uses the microphone only during a call you start or answer.",
+  },
+  {
+    title: "Mira, our AI assistant",
+    body: "When you chat with Mira, your messages are sent to Anthropic to generate replies and the conversation is stored with your account (or your device, if you are signed out) so we can continue it and improve answers. Don't share sensitive personal information in the chat. If you ask Mira to arrange counselling or a student introduction, the details you confirm are saved as an enquiry.",
+  },
+  {
+    title: "Service providers",
+    body: "We use service providers to run Students Traffic: hosting and databases, Google Firebase for push notifications, Agora for voice calls, Anthropic for Mira, WATI for WhatsApp messages you ask us to send, and our admissions CRM for counselling follow-up. They process data only on our instructions. We do not sell personal information and the app shows no ads.",
   },
   {
     title: "How we use it",
@@ -45,6 +61,10 @@ const privacySections = [
   {
     title: "Your choices",
     body: "You can ask us to update or delete the personal information you have shared with us, subject to any record-keeping obligations that apply to active admissions or compliance needs.",
+  },
+  {
+    title: "Deleting your account",
+    body: "In the app, open Profile and tap Delete account. This immediately deletes your account, profile, shortlist, applications, Mira chats, guide conversations, call history and push tokens. You can also request deletion without the app at studentstraffic.com/delete-account. Enquiries already passed to our counselling team are deleted within 30 days of your request unless an active admission needs them.",
   },
   {
     title: "Third-party links",

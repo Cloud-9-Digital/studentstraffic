@@ -175,6 +175,11 @@ export const mobileClient = {
     await clearToken();
   },
 
+  async deleteAccount() {
+    await request<{ success: boolean }>("/api/mobile/v1/me", { method: "DELETE" });
+    await clearToken();
+  },
+
   async forgotPassword(email: string) {
     return request<{ success: boolean; message: string }>("/api/mobile/v1/auth/forgot-password", {
       method: "POST",

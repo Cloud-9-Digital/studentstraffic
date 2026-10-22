@@ -260,7 +260,7 @@ export function SiteFooter() {
       <div className="border-t border-white/8">
         <div className="container-shell flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-white/50">
-            © {siteConfig.copyrightYear} Students Traffic. All rights reserved.
+            © {siteConfig.copyrightYear} Students Traffic, operated by Cloud 9 Digital. All rights reserved.
           </p>
           <div className="flex gap-5 text-xs text-white/50">
             <Link href="/privacy" className="transition-colors hover:text-white/80">

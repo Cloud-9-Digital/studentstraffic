@@ -37,6 +37,15 @@ function withNotifeeAndroid(config) {
           "android:exported": "false",
         },
       },
+      // Agora's screen-sharing extension declares a mediaProjection
+      // foreground service. The app never shares its screen, and Play asks
+      // for a foreground-service declaration for every declared type.
+      {
+        $: {
+          "android:name": "io.agora.rtc2.extensions.MediaProjectionMgr$LocalScreenSharingService",
+          "tools:node": "remove",
+        },
+      },
     ];
 
     for (const svc of services) {

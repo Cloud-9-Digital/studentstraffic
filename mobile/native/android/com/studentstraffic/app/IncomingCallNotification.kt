@@ -12,7 +12,6 @@ import android.os.Build
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import androidx.core.app.Person
 
 object IncomingCallNotification {
   // Android preserves user changes to a notification channel across app updates.
@@ -30,7 +29,7 @@ object IncomingCallNotification {
     }
 
     val openIntent = appIntent(context, callId, callerDisplayName, universityName, null)
-    val fullScreenIntent = PendingIntent.getActivity(
+    val contentIntent = PendingIntent.getActivity(
       context,
       notificationId(callId),
       openIntent,
@@ -49,10 +48,10 @@ object IncomingCallNotification {
       PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
     )
 
-    val caller = Person.Builder()
-      .setName(callerDisplayName)
-      .setImportant(true)
-      .build()
+    // Play does not grant USE_FULL_SCREEN_INTENT to this app, and Android 12+
+    // refuses a CallStyle notification without a full-screen intent or a
+    // foreground service. Telecom owns the real ringing UI; this fallback is
+    // a heads-up notification with plain Answer / Decline actions.
     val notification = NotificationCompat.Builder(context, CHANNEL_ID)
       .setSmallIcon(R.drawable.ic_stat_call)
       .setContentTitle(callerDisplayName)
@@ -60,13 +59,12 @@ object IncomingCallNotification {
       .setCategory(NotificationCompat.CATEGORY_CALL)
       .setPriority(NotificationCompat.PRIORITY_MAX)
       .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
-      .setColorized(true)
       .setOngoing(true)
       .setAutoCancel(false)
       .setTimeoutAfter(60_000)
-      .setFullScreenIntent(fullScreenIntent, true)
-      .setContentIntent(fullScreenIntent)
-      .setStyle(NotificationCompat.CallStyle.forIncomingCall(caller, declineIntent, answerIntent))
+      .setContentIntent(contentIntent)
+      .addAction(0, "Decline", declineIntent)
+      .addAction(0, "Answer", answerIntent)
       .build()
 
     NotificationManagerCompat.from(context).notify(notificationId(callId), notification)

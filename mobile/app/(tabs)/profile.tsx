@@ -1,7 +1,9 @@
 import { GuideApplicationLink } from "../../src/features/guides/GuideApplicationLink";
 import { PageHeader } from "../../src/components/PageHeader";
 import {
+  Alert,
   KeyboardAvoidingView,
+  Linking,
   Modal,
   Platform,
   Pressable,
@@ -298,6 +300,30 @@ export default function ProfileScreen() {
     router.replace("/(auth)/welcome");
   }
 
+  function handleDeleteAccount() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    Alert.alert(
+      "Delete your account?",
+      "This permanently deletes your Students Traffic account, profile, shortlist, applications, Mira chats, guide chats and call history. It can't be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete account",
+          style: "destructive",
+          onPress: async () => {
+            try {
+              await mobileClient.deleteAccount();
+              queryClient.clear();
+              router.replace("/(auth)/welcome");
+            } catch {
+              Alert.alert("Couldn't delete your account", "Please check your connection and try again.");
+            }
+          },
+        },
+      ],
+    );
+  }
+
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
       <StatusBar style="dark" />
@@ -432,6 +458,11 @@ export default function ProfileScreen() {
               icon="help-circle-outline"
               label="Help & FAQ"
               onPress={() => router.push("/help")}
+            />
+            <SettingsRow
+              icon="shield-checkmark-outline"
+              label="Privacy policy"
+              onPress={() => Linking.openURL("https://www.studentstraffic.com/privacy")}
               last
             />
           </SettingsGroup>
@@ -442,6 +473,12 @@ export default function ProfileScreen() {
               icon="log-out-outline"
               label="Sign out"
               onPress={handleSignOut}
+              danger
+            />
+            <SettingsRow
+              icon="trash-outline"
+              label="Delete account"
+              onPress={handleDeleteAccount}
               danger
               last
             />

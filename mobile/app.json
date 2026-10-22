@@ -2,7 +2,7 @@
   "expo": {
     "name": "Students Traffic",
     "slug": "students-traffic",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "studentstraffic",
@@ -40,7 +40,6 @@
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_CONNECT",
         "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.USE_FULL_SCREEN_INTENT",
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MICROPHONE",
         "android.permission.WAKE_LOCK",
@@ -48,7 +47,19 @@
         "android.permission.RECEIVE_BOOT_COMPLETED",
         "android.permission.POST_NOTIFICATIONS"
       ],
-      "versionCode": 16,
+      "blockedPermissions": [
+        "android.permission.USE_FULL_SCREEN_INTENT",
+        "android.permission.CAMERA",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.ACCESS_NOTIFICATION_POLICY",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ],
+      "versionCode": 17,
       "intentFilters": [
         {
           "action": "VIEW",
