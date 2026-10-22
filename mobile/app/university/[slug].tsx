@@ -1,3 +1,5 @@
+import { ProgramList } from "../../src/components/ProgramList";
+import { MiraMark } from "../../src/features/mira/MiraMark";
 import { SearchablePicker } from "../../src/components/SearchablePicker";
 import { useReducedMotion } from "../../src/hooks/useReducedMotion";
 import {
@@ -93,7 +95,7 @@ function DetailSection({ title, icon, children }: { title: string; icon?: keyof 
 }
 function BulletPreview({ items, warn = false }: { items: string[]; warn?: boolean }) {
   const [all, setAll] = useState(false);
-  return <View style={{ gap: 12 }}>{(all ? items : items.slice(0, 3)).map((text, i) => <View key={i} style={{ flexDirection: "row", gap: 10 }}><Ionicons name={warn ? "alert-circle-outline" : "checkmark-circle-outline"} size={18} color={warn ? colors.accent : colors.primary} /><View style={{ flex: 1 }}><ExpandableText text={text} lines={2} /></View></View>)}{items.length > 3 ? <Pressable accessibilityRole="button" accessibilityState={{ expanded: all }} onPress={() => setAll(v => !v)} style={ux.textAction}><Text style={ux.link}>{all ? "Show fewer" : `Show all ${items.length}`}</Text></Pressable> : null}</View>;
+  return <View style={{ gap: 12 }}>{(all ? items : items.slice(0, 3)).map((text, i) => <View key={i} style={{ flexDirection: "row", gap: 10 }}><Ionicons name={warn ? "alert-circle-outline" : "checkmark-circle-outline"} size={18} color={warn ? colors.accent : colors.primary} /><View style={{ flex: 1 }}><ExpandableText text={text} lines={2} /></View></View>)}{items.length > 3 ? <Pressable accessibilityRole="button" accessibilityState={{ expanded: all }} onPress={() => setAll(v => !v)} style={ux.textAction}><Text style={ux.link}>{all ? "Show fewer" : "Show all"}</Text></Pressable> : null}</View>;
 }
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
@@ -120,7 +122,8 @@ export default function UniversityDetailScreen() {
   const router = useRouter();
   const queryClient = useQueryClient();
   const { showToast } = useToast();
-  const { slug } = useLocalSearchParams<{ slug: string }>();
+  // `program` preselects a programme, e.g. when Mira links to a programme page.
+  const { slug, program } = useLocalSearchParams<{ slug: string; program?: string }>();
   const insets = useSafeAreaInsets();
 
   const { data: university, isLoading } = useQuery({
@@ -142,7 +145,7 @@ export default function UniversityDetailScreen() {
   const [programPicker, setProgramPicker] = useState(false);
   const [allFaqs, setAllFaqs] = useState(false);
   const [logoError, setLogoError] = useState(false);
-  useEffect(() => { setSelectedProgram(null); setProgramPicker(false); setAllFaqs(false); setLogoError(false); setImgError(false); }, [slug]);
+  useEffect(() => { setSelectedProgram(program ?? null); setProgramPicker(false); setAllFaqs(false); setLogoError(false); setImgError(false); }, [slug, program]);
   const [saved, setSaved]               = useState(false);
   const [toggling, setToggling]         = useState(false);
   const [imgError, setImgError]         = useState(false);
@@ -273,7 +276,7 @@ export default function UniversityDetailScreen() {
   const tone = toneFor(university.country);
   const hasCoverImage = !imgError && !!university.coverImageUrl;
   const programs = university.offerings ?? [];
-  const o = programs.find(program => program.slug === selectedProgram) ?? university.primaryOffering ?? programs[0] ?? null;
+  // No programme is highlighted by default; a student picks one from the list or "See all".
 
   const campusSections = [
     { icon: "home-outline",       title: "Hostel & Accommodation", body: university.hostelOverview },
@@ -371,10 +374,9 @@ export default function UniversityDetailScreen() {
         {/* ── Content ── */}
         <View style={s.content}>
 
-          <View style={ux.identityRow}>{university.logoUrl && !logoError ? <Image source={{ uri: university.logoUrl }} resizeMode="contain" style={ux.logo} onError={() => setLogoError(true)} /> : <View style={ux.logoFallback}><Ionicons name="school-outline" size={24} color={colors.primary} /></View>}<View style={{ flex: 1 }}><Text style={[ux.meta, { color: colors.ink }]}>University overview</Text><Text style={ux.meta}>{university.establishedYear ? `Established ${university.establishedYear} · ` : ""}{programs.length} {programs.length === 1 ? "program" : "programs"}</Text></View></View>
+          <View style={ux.identityRow}>{university.logoUrl && !logoError ? <Image source={{ uri: university.logoUrl }} resizeMode="contain" style={ux.logo} onError={() => setLogoError(true)} /> : <View style={ux.logoFallback}><Ionicons name="school-outline" size={24} color={colors.primary} /></View>}<View style={{ flex: 1 }}><Text style={[ux.meta, { color: colors.ink }]}>University overview</Text>{university.establishedYear ? <Text style={ux.meta}>Established {university.establishedYear}</Text> : null}</View></View>
           {!!university.summary && <View style={ux.section}><SectionTitle>At a glance</SectionTitle><ExpandableText key={university.slug} text={university.summary} /></View>}
-          <View style={ux.programSection}><View style={ux.sectionHeading}><SectionTitle>Explore programs</SectionTitle><Text style={ux.count}>{programs.length}</Text></View><Text style={ux.caption}>Choose a program to see its duration, language and intake.</Text>{programs.length ? <Pressable accessibilityRole="button" accessibilityLabel="Choose a program" onPress={() => setProgramPicker(true)} style={ux.programSelector}><Ionicons name="school-outline" size={21} color={colors.accent} /><Text style={ux.programTitle} numberOfLines={2}>{o?.title ?? "Choose a program"}</Text><Ionicons name="chevron-down" size={18} color={colors.accent} /></Pressable> : <Text style={ux.caption}>Program details are being updated.</Text>}
-          {o ? <View style={ux.facts}><View style={ux.fact}><Ionicons name="time-outline" size={17} color={colors.muted} /><Text style={ux.factLabel}>Duration</Text><Text style={ux.factValue}>{o.durationYears ? `${o.durationYears} years` : "Not confirmed"}</Text></View><View style={ux.fact}><Ionicons name="language-outline" size={17} color={colors.muted} /><Text style={ux.factLabel}>Language</Text><Text style={ux.factValue}>{o.medium || "Not confirmed"}</Text></View>{o.intakeMonths?.length ? <View style={ux.fact}><Ionicons name="calendar-outline" size={17} color={colors.muted} /><Text style={ux.factLabel}>Intake</Text><Text style={ux.factValue}>{o.intakeMonths.join(", ")}</Text></View> : null}</View> : null}</View>
+          <View style={ux.programSection}><View style={ux.sectionHeading}><SectionTitle>Explore programs</SectionTitle></View><Text style={ux.caption}>Tap a program to see its duration, language and intake.</Text>{programs.length ? <ProgramList programs={programs} universityName={university.name} selectedSlug={selectedProgram} onSelect={setSelectedProgram} onSeeAll={() => setProgramPicker(true)} /> : <Text style={ux.caption}>Program details are being updated.</Text>}</View>
           {university.whyChoose?.length > 0 ? <View style={ux.section}><SectionTitle>Why consider this university</SectionTitle><BulletPreview key={university.slug} items={university.whyChoose} /></View> : null}
           <View style={ux.section}><SectionTitle>A closer look</SectionTitle>
           {/* Admissions */}
@@ -410,7 +412,7 @@ export default function UniversityDetailScreen() {
                     </View>
                     {university.admissionsContent.admissionSteps!.map((step, i) => (
                       <View key={i} style={s.stepRow}>
-                        <View style={s.stepNum}><Text style={s.stepNumText}>{i + 1}</Text></View>
+                        <View style={s.stepNum}><Ionicons name="checkmark" size={13} color={colors.primary} /></View>
                         <Text style={s.admBody}>{step}</Text>
                       </View>
                     ))}
@@ -472,19 +474,33 @@ export default function UniversityDetailScreen() {
           {university.thingsToConsider?.length ? <DetailSection title="Before you decide" icon="alert-circle-outline"><BulletPreview items={university.thingsToConsider} warn /></DetailSection> : null}
           </View>
           <Pressable accessibilityRole="button" onPress={() => router.push({ pathname: "/student-guides", params: { university: university.slug } })} style={ux.guideCard}><View style={{ flex: 1 }}><Text style={ux.guideTitle}>Ask a student guide</Text><Text style={ux.caption}>Find out what studying here is really like.</Text></View><Ionicons name="arrow-forward" size={22} color={colors.primary} /></Pressable>
-          {university.faq?.length ? <View style={ux.section}><SectionTitle>Common questions</SectionTitle>{(allFaqs ? university.faq : university.faq.slice(0,3)).map((item,i) => <FaqItem key={university.slug+i} question={item.question} answer={item.answer} />)}{university.faq.length > 3 ? <Pressable accessibilityRole="button" onPress={() => setAllFaqs(v => !v)} style={ux.textAction}><Text style={ux.link}>{allFaqs ? "Show fewer questions" : `View all ${university.faq.length} questions`}</Text></Pressable> : null}</View> : null}
+          {university.faq?.length ? <View style={ux.section}><SectionTitle>Common questions</SectionTitle>{(allFaqs ? university.faq : university.faq.slice(0,3)).map((item,i) => <FaqItem key={university.slug+i} question={item.question} answer={item.answer} />)}{university.faq.length > 3 ? <Pressable accessibilityRole="button" onPress={() => setAllFaqs(v => !v)} style={ux.textAction}><Text style={ux.link}>{allFaqs ? "Show fewer questions" : "View all questions"}</Text></Pressable> : null}</View> : null}
 
 
         </View>
       </Animated.ScrollView>
 
-      {programPicker ? <SearchablePicker picker={{ title: "Choose a program", selected: o?.slug ?? "", options: programs.map(program => ({ label: program.title, value: program.slug })), onSelect: setSelectedProgram }} onClose={() => setProgramPicker(false)} /> : null}
+      {programPicker ? <SearchablePicker picker={{ title: "Choose a program", selected: selectedProgram ?? "", options: programs.map(program => ({ label: program.title, value: program.slug })), onSelect: setSelectedProgram }} onClose={() => setProgramPicker(false)} /> : null}
       {/* ── Sticky bottom CTA bar ── */}
       <View style={[s.bottomBar, { paddingBottom: insets.bottom + 12 }]}>
         {Platform.OS === "ios" && (
           <BlurView tint="systemChromeMaterial" intensity={80} style={StyleSheet.absoluteFill} />
         )}
         <View style={s.bottomInner}>
+          {/* Ask Mira, with this university as context */}
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Ask Mira about ${university.name}`}
+            onPress={() => {
+              Haptics.selectionAsync();
+              router.push({ pathname: "/mira", params: { university: university.slug, universityName: university.name } });
+            }}
+            style={({ pressed }) => [s.miraBtn, pressed && s.counselBtnPressed]}
+          >
+            <MiraMark size={22} />
+            <Text style={s.miraLabel}>Ask Mira</Text>
+          </Pressable>
+
           {/* Talk to a counsellor */}
           <Pressable
             onPress={() => {
@@ -1075,11 +1091,6 @@ const s = StyleSheet.create({
     flexShrink: 0,
     marginTop: 1,
   },
-  stepNumText: {
-    fontFamily: "PlusJakartaSans-Bold",
-    fontSize: 11,
-    color: colors.primary,
-  },
   admDeadline: {
     flexDirection: "row",
     alignItems: "flex-start",
@@ -1215,6 +1226,22 @@ const s = StyleSheet.create({
     flexShrink: 0,
   },
   counselBtnPressed: { opacity: 0.75 },
+  miraBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 7,
+    minHeight: 50,
+    paddingHorizontal: 14,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: colors.line,
+    backgroundColor: colors.primarySoft,
+  },
+  miraLabel: {
+    fontFamily: "PlusJakartaSans-Bold",
+    fontSize: 14,
+    color: colors.primary,
+  },
 });
 
 const ux = StyleSheet.create({
@@ -1228,14 +1255,7 @@ const ux = StyleSheet.create({
   link: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12, color: colors.primary },
   programSection: { marginTop: 24, padding: 16, borderRadius: 18, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line },
   sectionHeading: { flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" },
-  count: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, color: colors.accent, paddingHorizontal: 9, paddingVertical: 3, borderRadius: 8, backgroundColor: colors.coralSoft },
   caption: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, lineHeight: 20, color: colors.muted },
-  programSelector: { flexDirection: "row", alignItems: "center", gap: 10, padding: 13, borderRadius: 12, backgroundColor: colors.coralSoft, marginTop: 16 },
-  programTitle: { flex: 1, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, lineHeight: 20, color: colors.accentStrong },
-  facts: { marginTop: 10 },
-  fact: { flexDirection: "row", alignItems: "center", gap: 8, paddingVertical: 12, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.line },
-  factLabel: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, color: colors.muted, width: 68 },
-  factValue: { flex: 1, textAlign: "right", fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12, lineHeight: 19, color: colors.ink },
   accordion: { borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.line },
   accordionHeader: { minHeight: 62, flexDirection: "row", alignItems: "center", gap: 12, paddingVertical: 14 },
   accordionTitle: { flex: 1, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, lineHeight: 21, color: colors.ink },

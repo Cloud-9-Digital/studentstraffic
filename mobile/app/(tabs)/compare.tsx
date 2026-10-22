@@ -23,6 +23,11 @@ import type { UniversityDetail } from "../../src/types/domain";
 
 const BG = colors.surface;
 
+// Fee for the Total cost row; a missing or zero amount is not shown as $0.
+function usd(value: number | null | undefined) {
+  return value ? `$${value.toLocaleString("en-US")}` : "—";
+}
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 
@@ -34,7 +39,6 @@ type Row = {
 };
 
 const ROWS: Row[] = [
-  { label: "Programs", icon: "school-outline", get: u => String(u.programCount ?? u.offerings?.length ?? 0) },
   { label: "Duration",     icon: "time-outline",      get: u => u.primaryOffering ? `${u.primaryOffering.durationYears} yrs` : (u.duration ?? "6 yrs") },
   { label: "Total cost",   icon: "wallet-outline",    get: u => u.primaryOffering ? usd(u.primaryOffering.totalTuitionUsd) : "—" },
   { label: "Medium",       icon: "language-outline",  get: u => u.primaryOffering?.medium ?? u.medium ?? "—" },

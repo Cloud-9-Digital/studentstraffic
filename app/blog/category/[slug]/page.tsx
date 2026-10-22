@@ -8,7 +8,7 @@ import { CalendarDays, Clock, ArrowLeft } from "lucide-react";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
-import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
+import { absoluteUrl, buildNotFoundMetadata, getOgImageUrl } from "@/lib/metadata";
 
 // Canonical category definitions — slug → display name
 const CATEGORIES: Record<string, string> = {
@@ -65,7 +65,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const categoryName = CATEGORIES[slug];
-  if (!categoryName) return {};
+  if (!categoryName) return buildNotFoundMetadata();
 
   const title = `${categoryName} — Blog | Students Traffic`;
   const description = `All articles in the "${categoryName}" category — guides and insights for Indian students planning to study MBBS abroad.`;

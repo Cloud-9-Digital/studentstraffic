@@ -10,11 +10,14 @@ import * as Haptics from "expo-haptics";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { mobileClient } from "../src/api/mobileClient";
+import { getResidenceCountry, RESIDENCE_COUNTRIES, toInternationalPhone } from "../src/data/residenceCountries";
 import { colors } from "../src/theme/tokens";
 
 const COUNSELLOR_PHONE = "+919176162888";
 const WHATSAPP_URL = "https://wa.me/919176162888?text=Hi%2C+I%27d+like+to+talk+to+a+Students+Traffic+counsellor.";
 const INDIAN_STATES = ["Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry"];
+
+const RESIDENCE_OPTIONS = RESIDENCE_COUNTRIES.map(([code, name]) => ({ label: name, value: code }));
 
 type Picker = { title: string; selected: string; options: Array<{ label: string; value: string }>; onSelect: (value: string) => void } | null;
 
@@ -26,6 +29,8 @@ export default function CounsellingScreen() {
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [userState, setUserState] = useState("");
+  const [residenceCountry, setResidenceCountry] = useState("");
+  const residenceChosenRef = useRef(false);
   const [email, setEmail] = useState("");
   const [courseSlug, setCourseSlug] = useState("");
   const [countrySlug, setCountrySlug] = useState("");
@@ -36,6 +41,16 @@ export default function CounsellingScreen() {
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
 
+  // Preselect the country from IP geolocation; the student can change it.
+  useEffect(() => {
+    let cancelled = false;
+    mobileClient.getGeoCountry().then((country) => {
+      if (cancelled || residenceChosenRef.current || !getResidenceCountry(country)) return;
+      setResidenceCountry((current) => current || (country ?? "").toUpperCase());
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, []);
+
   useEffect(() => {
     if (!profile) return;
     setFullName((current) => current || profile.name || "");
@@ -43,17 +58,23 @@ export default function CounsellingScreen() {
     setEmail((current) => current || profile.email || "");
   }, [profile]);
 
+  const livesInIndia = residenceCountry === "IN";
+  const dialCode = getResidenceCountry(residenceCountry)?.dialCode;
+
   async function submit() {
     const next: Record<string, string> = {};
     if (!fullName.trim()) next.fullName = "Enter your full name.";
+    const internationalPhone = toInternationalPhone(phone, residenceCountry);
+    if (!residenceCountry) next.residenceCountry = "Select the country you live in.";
     if (!/^\+?[\d\s()-]{7,20}$/.test(phone.trim())) next.phone = "Enter a valid phone number.";
+    else if (!/^\+[1-9]\d{7,14}$/.test(internationalPhone)) next.phone = residenceCountry ? "Enter a valid phone number, with its country code if it isn't from your country." : "Select your country, or start the number with + and its country code.";
     if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) next.email = "Enter a valid email address.";
-    if (!userState) next.userState = "Select your state.";
+    if (livesInIndia && !userState) next.userState = "Select your state.";
     setFieldErrors(next); setError(null);
     if (Object.keys(next).length) { scrollRef.current?.scrollTo({ y: 220, animated: true }); return; }
     setSubmitting(true); setError(null);
     try {
-      await mobileClient.requestCounselling({ fullName: fullName.trim(), phone: phone.trim(), email: email.trim() || undefined, userState, courseSlug: courseSlug || undefined, countrySlug: countrySlug || undefined });
+      await mobileClient.requestCounselling({ fullName: fullName.trim(), phone: internationalPhone, email: email.trim() || undefined, residenceCountry, userState: livesInIndia ? userState : undefined, courseSlug: courseSlug || undefined, countrySlug: countrySlug || undefined });
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       setSubmitted(true);
     } catch (cause) {
@@ -72,9 +93,10 @@ export default function CounsellingScreen() {
             <Text style={s.intro}>Leave your number and our team will call you with guidance on country options, scholarships, shortlisting, and the next admission step that fits your profile.</Text>
             <View style={s.form}>
               <FormInput label="Full name *" value={fullName} onChangeText={v => { setFullName(v); setFieldErrors(e => ({ ...e, fullName: "" })); }} error={fieldErrors.fullName} focusError={["fullName", "phone", "email"].find(k => fieldErrors[k]) === "fullName"} autoCapitalize="words" />
-              <FormInput label="Phone number *" value={phone} onChangeText={v => { setPhone(v); setFieldErrors(e => ({ ...e, phone: "" })); }} error={fieldErrors.phone} focusError={["fullName", "phone", "email"].find(k => fieldErrors[k]) === "phone"} keyboardType="phone-pad" />
+              <SelectField error={fieldErrors.residenceCountry} label="Country you live in" required value={getResidenceCountry(residenceCountry)?.name ?? ""} placeholder="Select country" onPress={() => setPicker({ title: "Select country", selected: residenceCountry, options: RESIDENCE_OPTIONS, onSelect: value => { residenceChosenRef.current = true; setResidenceCountry(value); setFieldErrors(e => ({ ...e, residenceCountry: "" })); } })} />
+              <FormInput label={dialCode && !phone.trim().startsWith("+") ? `Phone number * (+${dialCode})` : "Phone number *"} placeholder={dialCode ? `Number, +${dialCode} added for you` : "+ country code and number"} value={phone} onChangeText={v => { setPhone(v); setFieldErrors(e => ({ ...e, phone: "" })); }} error={fieldErrors.phone} focusError={["fullName", "phone", "email"].find(k => fieldErrors[k]) === "phone"} keyboardType="phone-pad" />
               <FormInput label="Email (optional)" value={email} onChangeText={v => { setEmail(v); setFieldErrors(e => ({ ...e, email: "" })); }} error={fieldErrors.email} focusError={["fullName", "phone", "email"].find(k => fieldErrors[k]) === "email"} keyboardType="email-address" autoCapitalize="none" />
-              <SelectField error={fieldErrors.userState} label="State" required value={userState} placeholder="Select state" onPress={() => setPicker({ title: "Select state", selected: userState, options: INDIAN_STATES.map((value) => ({ label: value, value })), onSelect: value => { setUserState(value); setFieldErrors(e => ({ ...e, userState: "" })); } })} />
+              {livesInIndia ? <SelectField error={fieldErrors.userState} label="State" required value={userState} placeholder="Select state" onPress={() => setPicker({ title: "Select state", selected: userState, options: INDIAN_STATES.map((value) => ({ label: value, value })), onSelect: value => { setUserState(value); setFieldErrors(e => ({ ...e, userState: "" })); } })} /> : null}
               <SelectField label="Interested course" value={catalogue?.options.courses.find((course) => course.slug === courseSlug)?.shortName ?? ""} placeholder="Select a course" onPress={() => setPicker({ title: "Select a course", selected: courseSlug, options: (catalogue?.options.courses ?? []).map((course) => ({ label: course.shortName, value: course.slug })), onSelect: setCourseSlug })} />
               <SelectField label="Interested country" value={catalogue?.options.countries.find((country) => country.slug === countrySlug)?.name ?? ""} placeholder="Select a country" onPress={() => setPicker({ title: "Select a country", selected: countrySlug, options: (catalogue?.options.countries ?? []).map((country) => ({ label: country.name, value: country.slug })), onSelect: setCountrySlug })} />
               {error && <Text style={s.error}>{error}</Text>}

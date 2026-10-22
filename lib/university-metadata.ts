@@ -217,8 +217,10 @@ export type UniversityStreamProfile = {
   isSingleStream: boolean;
 };
 
-function pluraliseProgrammes(count: number) {
-  return count === 1 ? "1 programme" : `${count} programmes`;
+// Programme and university counts are deliberately not published, so the
+// descriptions name the streams instead of saying how many programmes exist.
+function programmesNoun(count: number) {
+  return count === 1 ? "programme" : "programmes";
 }
 
 function joinWithAnd(parts: string[]) {
@@ -446,9 +448,9 @@ export function buildUniversityMetadata(input: {
     description: composeDescription([
       profile.programCount > 0
         ? [
-            `${university.name}, ${loc}: ${pluraliseProgrammes(profile.programCount)} across ${profile.streamPhrase}.`,
-            `${university.name}, ${loc}: ${pluraliseProgrammes(profile.programCount)} across ${profile.streamPhrase.split(" and ")[0]}.`,
-            `${university.name}, ${loc}: ${pluraliseProgrammes(profile.programCount)} published.`,
+            `${university.name}, ${loc}: ${programmesNoun(profile.programCount)} in ${profile.streamPhrase}.`,
+            `${university.name}, ${loc}: ${programmesNoun(profile.programCount)} in ${profile.streamPhrase.split(" and ")[0]}.`,
+            `${university.name}, ${loc}: published ${programmesNoun(profile.programCount)}.`,
           ]
         : `${university.name}, ${loc}: campus, courses, admission requirements and student support for Indian students.`,
       lowestFeeText ? [`Annual tuition from ${lowestFeeText}.`] : undefined,
@@ -476,8 +478,8 @@ function buildUniversitySectionDescription(input: {
       return composeDescription([
         profile.programCount > 0
           ? [
-              `All ${pluraliseProgrammes(profile.programCount)} at ${university.name}, ${loc} — duration, medium of instruction, intake and tuition.`,
-              `All ${pluraliseProgrammes(profile.programCount)} at ${university.name}, ${loc} — duration, medium and intake.`,
+              `${programmesNoun(profile.programCount).replace(/^p/, "P")} at ${university.name}, ${loc} — duration, medium of instruction, intake and tuition.`,
+              `${programmesNoun(profile.programCount).replace(/^p/, "P")} at ${university.name}, ${loc} — duration, medium and intake.`,
             ]
           : `Programmes at ${university.name}, ${loc} — duration, medium of instruction, intake and admission details.`,
         feeText ? [`Tuition from ${feeText}.`] : undefined,

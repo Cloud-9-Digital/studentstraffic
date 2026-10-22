@@ -1,4 +1,5 @@
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
+import { getResidenceCountryName } from "@/lib/residence-countries";
 
 const GOOGLE_SHEETS_RANGE = "A:F";
 const GOOGLE_SHEETS_TIMEOUT_MS = 8_000;
@@ -154,7 +155,8 @@ export function buildWebsiteLeadGoogleSheetsRow(payload: LeadSyncPayload) {
     withDefault(payload.fullName),
     withDefault(payload.phone),
     withDefault(payload.email),
-    withDefault(payload.userState),
+    // Indian leads give a state; everyone else is located by country.
+    withDefault(payload.userState ?? getResidenceCountryName(payload.residenceCountry)),
     buildGoogleSheetsSource(payload),
   ];
 }

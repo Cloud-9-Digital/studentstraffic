@@ -3,6 +3,7 @@
 import type React from "react";
 import { useActionState, useEffect, useId, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import type { Country } from "react-phone-number-input";
 
 import {
   type LeadFormState,
@@ -15,7 +16,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { CountrySelect } from "@/components/ui/country-select";
 import { PhoneInputField } from "@/components/ui/phone-input";
+import { useResidenceCountry } from "@/components/site/use-residence-country";
 import { trackLeadFormSubmit } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
@@ -96,7 +99,11 @@ export type LeadFormProps = {
    * page itself — asking again is redundant and costs a filled field.
    */
   lockInterest?: boolean;
-  /** When true, locks the phone field to +91 (India) and hides the country picker. */
+  /**
+   * When true, locks the phone field to +91 (India) and hides its country
+   * picker. The lead's country of residence is then India too, so the
+   * "Country you live in" field is not shown. Used on India-only campaigns.
+   */
   lockPhoneToIndia?: boolean;
   className?: string;
   children?: React.ReactNode;
@@ -143,6 +150,9 @@ export function LeadForm({
   const hasTrackedSubmitRef = useRef(false);
   const phoneValidRef = useRef(false);
   const [clientError, setClientError] = useState<string | null>(null);
+  const residence = useResidenceCountry(lockPhoneToIndia ? "IN" : undefined);
+  // Indian states only make sense for students living in India.
+  const livesInIndia = residence.country === "IN";
 
   // Course/country options for the visible interest selects. Sourced from the
   // same catalog data (via the nav client providers) used across the site.
@@ -174,6 +184,13 @@ export function LeadForm({
     armStartedAt();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // The geo lookup waits for a real interaction (unlike armStartedAt, which
+  // also runs on mount) so a page view alone never calls /api/geo.
+  const onFirstInteraction = () => {
+    residence.prime();
+    armStartedAt();
+  };
 
   const trackSubmit = () => {
     if (hasTrackedSubmitRef.current) {
@@ -219,7 +236,25 @@ export function LeadForm({
     </div>
   );
 
-  const stateField = (
+  const residenceField = lockPhoneToIndia ? null : (
+    <div className="space-y-2">
+      <Label htmlFor={`${fieldPrefix}-residence`}>
+        Country you live in<RequiredMark />
+      </Label>
+      <CountrySelect
+        id={`${fieldPrefix}-residence`}
+        name="residenceCountry"
+        value={residence.country}
+        onChange={(code) => {
+          residence.setCountry(code);
+          setClientError(null);
+        }}
+        className="h-12"
+      />
+    </div>
+  );
+
+  const stateField = !livesInIndia ? null : (
     <div className="space-y-2">
       <Label htmlFor={`${fieldPrefix}-state`}>
         State<RequiredMark />
@@ -247,11 +282,17 @@ export function LeadForm({
       ref={formRef}
       action={formAction}
       className="space-y-4"
-      onFocusCapture={armStartedAt}
-      onPointerDownCapture={armStartedAt}
-      onKeyDownCapture={armStartedAt}
+      onFocusCapture={onFirstInteraction}
+      onPointerDownCapture={onFirstInteraction}
+      onKeyDownCapture={onFirstInteraction}
       onSubmitCapture={(event) => {
         armStartedAt();
+
+        if (!residence.country) {
+          event.preventDefault();
+          setClientError("Please select the country you live in.");
+          return;
+        }
 
         if (!phoneValidRef.current) {
           event.preventDefault();
@@ -283,6 +324,9 @@ export function LeadForm({
         </>
       ) : null}
       <input type="hidden" name="universitySlug" value={universitySlug ?? ""} />
+      {lockPhoneToIndia ? (
+        <input type="hidden" name="residenceCountry" value="IN" />
+      ) : null}
       <input ref={startedAtInputRef} type="hidden" name="startedAt" defaultValue="0" />
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" />
 
@@ -299,6 +343,9 @@ export function LeadForm({
             required
           />
         </div>
+        {/* Before the phone, so the calling code already matches the
+            visitor's country when they reach the number. */}
+        {residenceField}
         <div className="space-y-2">
           <Label htmlFor={`${fieldPrefix}-phone`}>
             Phone number<RequiredMark />
@@ -309,20 +356,25 @@ export function LeadForm({
             required
             className="h-12"
             placeholder={hidePlaceholders ? "" : undefined}
+            defaultCountry={
+              lockPhoneToIndia
+                ? "IN"
+                : (residence.country as Country | "") || null
+            }
             lockCountry={lockPhoneToIndia}
+            onCountryChange={residence.suggestCountry}
             onValidityChange={(valid) => {
               phoneValidRef.current = valid;
             }}
           />
         </div>
+        {!showNeetCategory ? (
+          <>
+            {stateField}
+            {emailField}
+          </>
+        ) : null}
       </div>
-
-      {!showNeetCategory ? (
-        <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
-          {emailField}
-          {stateField}
-        </div>
-      ) : null}
 
       {!showNeetCategory && !lockInterest ? (
         <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>

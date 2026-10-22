@@ -73,6 +73,20 @@ export default async function BudgetIndexPage() {
       return left.budgetUsd - right.budgetUsd;
     });
 
+  // budgetCards is sorted by course, then budget, so groups keep that order.
+  const courseGroups: Array<{
+    course: (typeof budgetCards)[number]["course"];
+    guides: typeof budgetCards;
+  }> = [];
+  for (const guide of budgetCards) {
+    const group = courseGroups.at(-1);
+    if (group?.course.slug === guide.course.slug) {
+      group.guides.push(guide);
+    } else {
+      courseGroups.push({ course: guide.course, guides: [guide] });
+    }
+  }
+
   const path = "/budget";
   const structuredDataItems = [
     getBreadcrumbStructuredData([
@@ -118,67 +132,51 @@ export default async function BudgetIndexPage() {
 
       <section className="section-space">
         <div className="container-shell">
+          {/* One card per course with a link per budget ceiling. A full card
+              per guide (~470 of them) made this page 2.5 MB of HTML. */}
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {budgetCards.map((guide) => {
-              const theme = courseThemes[guide.course.slug] ?? {
-                card: "border-border hover:border-primary/20",
+            {courseGroups.map(({ course, guides: courseGuides }) => {
+              const theme = courseThemes[course.slug] ?? {
+                card: "border-border",
                 action: "text-primary",
               };
-              const visibleCountries = guide.countryNames.slice(0, 3);
-              const hiddenCountryCount = Math.max(guide.countryNames.length - visibleCountries.length, 0);
+              const widest = courseGuides[courseGuides.length - 1];
 
               return (
-                <Link
-                  key={guide.slug}
-                  href={getBudgetGuideHref(guide.slug)}
+                <div
+                  key={course.slug}
                   className={cn(
-                    "group flex h-full flex-col rounded-2xl border bg-card p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md",
+                    "flex h-full flex-col rounded-2xl border bg-card p-6 shadow-sm",
                     theme.card,
                   )}
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0">
-                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                        {guide.course.shortName}
-                      </p>
-                      <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight text-heading">
-                        Under {formatCurrencyUsd(guide.budgetUsd)}
-                      </h2>
-                    </div>
-
-                    <div className="shrink-0 text-right">
-                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                        Matching
-                      </p>
-                      <p className="mt-2 text-sm font-semibold text-heading">
-                        {guide.programCount} option{guide.programCount === 1 ? "" : "s"}
-                      </p>
-                    </div>
-                  </div>
-
-                  <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                    {guide.programCount} listed option{guide.programCount === 1 ? "" : "s"} across{" "}
-                    {guide.countryNames.length} countr{guide.countryNames.length === 1 ? "y" : "ies"} with
-                    annual tuition at or below {formatCurrencyUsd(guide.budgetUsd)}.
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                    {course.shortName}
                   </p>
-
-                  <p className="mt-4 text-sm leading-6 text-muted-foreground">
-                    {visibleCountries.join(", ")}
-                    {hiddenCountryCount > 0 ? ` +${hiddenCountryCount} more` : ""}
+                  <h2 className="mt-2 font-display text-2xl font-semibold tracking-tight text-heading">
+                    {course.name}
+                  </h2>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                    Options in {widest.countryNames.slice(0, 3).join(", ")}
+                    {widest.countryNames.length > 3 ? " and more" : ""}, at or below{" "}
+                    {formatCurrencyUsd(widest.budgetUsd)} a year.
                   </p>
-
-                  <div className="mt-5 border-t border-border/70 pt-4">
-                    <span
-                      className={cn(
-                        "inline-flex items-center gap-2 text-sm font-semibold",
-                        theme.action,
-                      )}
-                    >
-                      Open guide
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                    </span>
-                  </div>
-                </Link>
+                  <ul className="mt-4 divide-y divide-border/70 border-t border-border/70">
+                    {courseGuides.map((guide) => (
+                      <li key={guide.slug}>
+                        <Link
+                          href={getBudgetGuideHref(guide.slug)}
+                          className="flex items-center justify-between gap-3 py-2.5 text-sm"
+                        >
+                          <span className={cn("font-semibold", theme.action)}>
+                            Under {formatCurrencyUsd(guide.budgetUsd)}
+                          </span>
+                          <span className="text-muted-foreground">→</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               );
             })}
           </div>

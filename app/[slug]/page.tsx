@@ -17,6 +17,7 @@ import {
   ShieldPlus,
 } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -25,7 +26,7 @@ import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-p
 import { StudyAbroadGuidePage } from "@/components/site/study-abroad-guide-page";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { UniversityCard } from "@/components/site/university-card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { FaqDisclosureList } from "@/components/shared/faq-disclosure-list";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
@@ -51,7 +52,8 @@ import {
   getWebPageStructuredData,
   getUniversityStructuredData,
 } from "@/lib/structured-data";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { getProgramMarkdownHref } from "@/lib/agent-markdown";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import { buildProgramMetadata } from "@/lib/university-metadata";
 import {
   getLandingPageBySlug,
@@ -173,11 +175,12 @@ export async function generateMetadata({
         title,
         description,
         path: `/${slug}`,
+        markdownPath: getProgramMarkdownHref(program.offering.slug),
         keywords,
       });
     }
 
-    return { title: "Page Not Found" };
+    return buildNotFoundMetadata();
   }
   const keywords = [
     page.title,
@@ -253,10 +256,10 @@ export default async function LandingPageRoute({
       return <ProgramPageRoute {...programData} />;
     }
 
-    notFound();
+    return <MissingPage />;
   }
 
-  if (!context.country || !context.course) notFound();
+  if (!context.country || !context.course) return <MissingPage />;
 
   const country = context.country;
   const course = context.course;
@@ -655,7 +658,7 @@ export default async function LandingPageRoute({
                 All {course.shortName} colleges in {country.name}
               </h2>
               <p className="mt-2 max-w-xl text-sm leading-7 text-muted-foreground">
-                {allPrograms.length} colleges verified for Indian students — click any college for fees, admissions details, and student life.
+                Colleges verified for Indian students — click any college for fees, admissions details, and student life.
               </p>
             </div>
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -1224,18 +1227,14 @@ export default async function LandingPageRoute({
                 Common questions about {page.title}
               </h2>
             </div>
-            <Accordion type="single" collapsible className="w-full divide-y divide-border">
-              {page.faq.map((item, i) => (
-                <AccordionItem key={item.question} value={`faq-${i}`} className="border-none">
-                  <AccordionTrigger className="py-4 text-left text-sm font-semibold leading-snug text-heading hover:no-underline">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="pb-4 text-sm leading-7 text-muted-foreground">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            <FaqDisclosureList
+              items={page.faq}
+              name="guide-faq"
+              className="w-full divide-y divide-border"
+              itemClassName="border-none"
+              questionClassName="font-semibold leading-snug text-heading"
+              answerClassName="pb-4 text-sm leading-7 text-muted-foreground"
+            />
           </div>
         </section>
       )}
@@ -1360,7 +1359,8 @@ async function ProgramPageRoute({
       image: coverImage?.url,
     }),
     programStructuredData,
-    university.faq.length ? getFaqStructuredData(university.faq, path) : null,
+    // No FAQPage: programme pages do not render the university FAQs. They are
+    // marked up once, on the university page where they are visible.
   ];
 
   return (

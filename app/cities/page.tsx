@@ -51,11 +51,6 @@ export default async function CitiesIndexPage() {
       a.cities.reduce((sum, c) => sum + c.universityCount, 0),
   );
 
-  const totalCities = citiesWithMultipleUnis.length;
-  const totalUniversities = citiesWithMultipleUnis.reduce(
-    (sum, c) => sum + c.universityCount,
-    0,
-  );
 
   return (
     <>
@@ -72,7 +67,7 @@ export default async function CitiesIndexPage() {
             <em className="not-italic text-accent">by city</em>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 md:text-lg">
-            {totalUniversities}+ medical universities across {totalCities} cities. Compare programs, fees, and student life within each city — because where you live for 6 years matters as much as the degree.
+            Medical universities by city. Compare programs, fees, and student life within each city — because where you live for 6 years matters as much as the degree.
           </p>
         </div>
       </section>
@@ -109,9 +104,6 @@ export default async function CitiesIndexPage() {
                             {city.name}
                           </span>
                         </div>
-                        <span className="shrink-0 rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
-                          {city.universityCount} {city.universityCount === 1 ? "university" : "universities"}
-                        </span>
                       </div>
 
                       {guide ? (
@@ -120,7 +112,7 @@ export default async function CitiesIndexPage() {
                         </p>
                       ) : (
                         <p className="mb-4 text-sm leading-6 text-muted-foreground">
-                          Compare {city.universityCount} medical {city.universityCount === 1 ? "university" : "universities"} in {city.name}, {countryName} — fees, recognition, and programs.
+                          Compare medical universities in {city.name}, {countryName} — fees, recognition, and programs.
                         </p>
                       )}
 

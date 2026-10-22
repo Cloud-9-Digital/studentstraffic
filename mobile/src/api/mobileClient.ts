@@ -387,7 +387,10 @@ export const mobileClient = {
     fullName: string;
     phone: string;
     email?: string;
-    userState: string;
+    /** ISO 3166-1 alpha-2 code of the country the student lives in. */
+    residenceCountry?: string;
+    /** Only asked of students living in India. */
+    userState?: string;
     universitySlug?: string;
     courseSlug?: string;
     countrySlug?: string;
@@ -397,5 +400,66 @@ export const mobileClient = {
       method: "POST",
       body: JSON.stringify(input),
     });
+  },
+
+  /** The visitor's country from the server's IP geolocation, or null when unknown. */
+  async getGeoCountry() {
+    const { country } = await request<{ country: string | null }>("/api/geo", { auth: false });
+    return country;
+  },
+
+  /** A callback request from Mira's inline form; the same lead as the website's chat form. */
+  async submitMiraLead(input: {
+    fullName: string;
+    phone: string;
+    residenceCountry: string;
+    userState?: string;
+    conversationId?: string;
+    countrySlug?: string;
+    courseSlug?: string;
+    universitySlug?: string;
+    page: { path: string; url?: string; title?: string };
+  }) {
+    return request<{ success: boolean; leadId: number | null }>("/api/mobile/v1/mira/lead", {
+      method: "POST",
+      body: JSON.stringify(input),
+    });
+  },
+
+  /** Asking to be introduced to a current student, from Mira's inline form; the same request as the website's. */
+  async submitMiraPeerRequest(input: {
+    fullName: string;
+    phone: string;
+    residenceCountry: string;
+    userState?: string;
+    universitySlug: string;
+    sourcePath: string;
+    sourceUrl?: string;
+    pageTitle?: string;
+  }) {
+    return request<{ success: boolean; leadId: number }>("/api/mobile/v1/mira/peer", {
+      method: "POST",
+      body: JSON.stringify(input),
+    });
+  },
+
+  /** Which app screen, if any, shows a bare website path from one of Mira's answers. */
+  async resolveMiraLink(path: string) {
+    const { target } = await request<{ target: { screen: "university"; universitySlug: string; programSlug: string } | null }>(
+      `/api/mobile/v1/mira/link?path=${encodeURIComponent(path)}`,
+      { auth: false },
+    );
+    return target;
+  },
+
+  /** Headers for a request made outside `request`, such as Mira's streamed replies. */
+  async authHeaders() {
+    const headers: Record<string, string> = {
+      "X-Platform": Platform.OS,
+      "X-App-Version": APP_BUILD ? `${APP_VERSION} (${APP_BUILD})` : APP_VERSION,
+    };
+    const token = await getToken();
+    if (token) headers.Authorization = `Bearer ${token}`;
+    return headers;
   },
 };

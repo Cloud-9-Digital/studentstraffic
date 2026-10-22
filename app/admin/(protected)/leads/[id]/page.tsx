@@ -11,6 +11,7 @@ import { Suspense } from "react";
 import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
+import { getResidenceCountryName } from "@/lib/residence-countries";
 import { LeadDetailDeleteButton } from "../_components/leads-table";
 
 const fmt = new Intl.DateTimeFormat("en-IN", {
@@ -165,6 +166,10 @@ async function LeadDetail({ id }: { id: string }) {
             <InfoCard title="Contact Information" icon={User}>
               <InfoRow label="Phone" value={lead.phone} />
               <InfoRow label="Email" value={lead.email} />
+              <InfoRow
+                label="Lives in"
+                value={getResidenceCountryName(lead.residenceCountry) ?? lead.residenceCountry}
+              />
               <InfoRow label="State" value={lead.userState} />
               {lead.fatherName && <InfoRow label="Father's Name" value={lead.fatherName} />}
               {lead.alternatePhone && <InfoRow label="Alternate Phone" value={lead.alternatePhone} />}

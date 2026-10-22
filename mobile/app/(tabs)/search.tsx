@@ -67,7 +67,6 @@ export default function SearchScreen() {
   const [sheetVisible, setSheetVisible] = useState(false);
   const [universities, setUniversities] = useState<University[]>([]);
   const [options, setOptions] = useState<SearchOptions>({ countries: [], courses: [], intakes: [] });
-  const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [hasNextPage, setHasNextPage] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -107,7 +106,6 @@ export default function SearchScreen() {
       }, nextPage);
       if (id !== requestId.current) return;
       setUniversities((current) => append ? appendUnique(current, result.universities) : result.universities);
-      setTotal(result.totalItems);
       setPage(nextPage);
       setHasNextPage(result.hasNextPage);
       if (result.options) setOptions({ ...result.options, countries: sortCountries(result.options.countries) });
@@ -202,11 +200,10 @@ export default function SearchScreen() {
           keyboardDismissMode="on-drag"
           onEndReached={loadMore}
           onEndReachedThreshold={0.3}
-          ListHeaderComponent={universities.length > 0 ? <Text style={s.resultCount}>{total.toLocaleString()} universities</Text> : null}
           ListEmptyComponent={<EmptyState />}
           ListFooterComponent={
             loadingMore ? <View style={s.footerLoader}><ActivityIndicator color={colors.primary} size="small" /></View>
-              : !hasNextPage && universities.length > 0 ? <Text style={s.footerEnd}>All {total.toLocaleString()} shown</Text> : null
+              : !hasNextPage && universities.length > 0 ? <Text style={s.footerEnd}>You’ve reached the end</Text> : null
           }
         />
       )}
@@ -218,7 +215,6 @@ export default function SearchScreen() {
         onChange={setPendingFilters}
         onApply={() => { setFilters(pendingFilters); setSheetVisible(false); }}
         options={options}
-        totalItems={total}
       />
     </View>
   );

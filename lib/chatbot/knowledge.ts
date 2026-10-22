@@ -275,13 +275,11 @@ export async function findPrograms(input: {
 
   return {
     result: {
-      totalMatches: programs.length,
-      showing: Math.min(programs.length, limit),
+      // No totals: catalogue size is not shared with visitors.
       matches: programs.slice(0, limit).map(describeProgram),
       ...(withheldForUnpublishedFee > 0
         ? {
-            alsoMatchingWithFeeOnRequest: withheldForUnpublishedFee,
-            note: `${withheldForUnpublishedFee} further programmes match the other filters but their fee is on request, so they are not listed under a budget. Mention they exist if it is relevant.`,
+            note: "Further programmes match the other filters but their fee is on request, so they are not listed under a budget. Mention they exist if it is relevant.",
           }
         : {}),
     },
@@ -483,8 +481,6 @@ export async function getCountryBrief(input: {
       whyStudentsChooseIt: clip(country.whyStudentsChooseIt),
       climate: country.climate,
       currencyCode: country.currencyCode,
-      publishedUniversities: universitySlugs.size,
-      publishedProgrammes: programs.length,
       coursesOffered: courses,
       annualTuitionRangeUsd:
         fees.length > 0 ? { min: fees[0], max: fees[fees.length - 1] } : null,

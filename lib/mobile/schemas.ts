@@ -45,7 +45,10 @@ export const mobileCounsellingSchema = z.object({
   fullName: z.string().trim().min(2, "Please enter your full name."),
   phone: z.string().trim().min(7, "Please enter a valid phone number."),
   email: z.string().trim().email().optional().or(z.literal("")),
-  userState: z.string().trim().min(2, "Please enter your state."),
+  /** ISO 3166-1 alpha-2. Builds before 2026-10 omit it; the server falls back to IP/phone. */
+  residenceCountry: z.string().trim().length(2).optional(),
+  // Required in the route only for students living in India.
+  userState: z.string().trim().optional(),
   neetScore: z.number().int().min(0).max(720).nullable().optional(),
   courseSlug: z.string().trim().optional(),
   countrySlug: z.string().trim().optional(),

@@ -13,6 +13,7 @@ import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import { sendMetaLeadEvent } from "@/lib/meta-capi";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 import { buildCrmCapturePayload } from "@/lib/crm-capture-payload";
+import { getResidenceCountryName } from "@/lib/residence-countries";
 
 type LeadSyncUpdate = {
   crmSyncStatus?: string;
@@ -63,6 +64,7 @@ type LeadSyncTransportPayload = Omit<
   | "needsFmgeSession"
   | "documentUrl"
   | "documentType"
+  | "residenceCountry"
   | "userState"
   | "courseSlug"
   | "countrySlug"
@@ -97,6 +99,8 @@ type LeadSyncTransportPayload = Omit<
   needsFmgeSession: boolean;
   documentUrl: string;
   documentType: string;
+  residenceCountry: string;
+  residenceCountryName: string;
   userState: string;
   courseSlug: string;
   countrySlug: string;
@@ -148,6 +152,10 @@ function buildTransportPayload(
     needsFmgeSession: payload.needsFmgeSession ?? false,
     documentUrl: withPlaceholder(payload.documentUrl),
     documentType: withPlaceholder(payload.documentType),
+    residenceCountry: withPlaceholder(payload.residenceCountry),
+    residenceCountryName: withPlaceholder(
+      getResidenceCountryName(payload.residenceCountry)
+    ),
     userState: withPlaceholder(payload.userState),
     courseSlug: withPlaceholder(payload.courseSlug),
     countrySlug: withPlaceholder(payload.countrySlug),

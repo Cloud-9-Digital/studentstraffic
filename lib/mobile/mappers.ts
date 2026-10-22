@@ -1,6 +1,7 @@
-import type { FinderCardProgram, ProgramOffering, University } from "@/lib/data/types";
+import { programmeLevelLabels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
+import type { FinderCardProgram, FinderProgram, University } from "@/lib/data/types";
 import type { ApplicationRow } from "@/lib/db/schema";
-import { formatProgramMedium } from "@/lib/utils";
+import { formatProgramAnnualFee, formatProgramMedium } from "@/lib/utils";
 
 export function mapFinderCardProgram(program: FinderCardProgram) {
   return {
@@ -25,8 +26,10 @@ export function mapFinderCardProgram(program: FinderCardProgram) {
 export function mapUniversityDetail(
   university: University,
   countryName: string | undefined,
-  offerings: ProgramOffering[]
+  programs: FinderProgram[]
 ) {
+  const offerings = programs.map((program) => program.offering);
+  // Kept for app builds released before the full programme list; newer builds list `offerings`.
   const primaryOffering = offerings[0];
   return {
     slug: university.slug,
@@ -75,8 +78,11 @@ export function mapUniversityDetail(
           professionalExamSupport: primaryOffering.professionalExamSupport,
         }
       : null,
-    offerings: offerings.map((offering) => ({
+    offerings: programs.map(({ offering, course }) => ({
       slug: offering.slug,
+      level: course.level ?? null,
+      levelLabel: course.level ? (programmeLevelLabels[course.level as ProgrammeLevel] ?? null) : null,
+      annualFeeLabel: formatProgramAnnualFee(offering, "Fee on request"),
       courseSlug: offering.courseSlug,
       title: offering.title,
       durationYears: offering.durationYears,

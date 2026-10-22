@@ -47,7 +47,7 @@ async function buildRussiaFeesGuide(): Promise<StudyAbroadGuidePageProps> {
   const feeSection: GuideSection = {
     title: "University-wise MBBS fees",
     paragraphs: [
-      `Annual tuition and total program cost for ${programs.length} Russian universities offering English-medium MBBS, drawn live from our verified catalogue and sorted from lowest to highest tuition. Figures are shown in USD, the currency most Russian universities quote for international students; convert to rupees using the current exchange rate and add hostel, food, and living costs (see the scenarios below) for a full six-year budget.`,
+      `Annual tuition and total program cost for Russian universities offering English-medium MBBS, drawn live from our verified catalogue and sorted from lowest to highest tuition. Figures are shown in USD, the currency most Russian universities quote for international students; convert to rupees using the current exchange rate and add hostel, food, and living costs (see the scenarios below) for a full six-year budget.`,
     ],
     table: {
       headers: ["University", "City", "Annual tuition", "Total tuition (6 yrs)"],

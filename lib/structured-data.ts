@@ -1,3 +1,4 @@
+import type { TeachingLanguageCode } from "@/lib/catalogue-facets";
 import type {
   Country,
   Course,
@@ -20,7 +21,11 @@ import {
   getUniversityProgramHref,
 } from "@/lib/routes";
 import { getIndexableUniversityImageUrls } from "@/lib/university-media";
-import { hasPublishedUsdAmount } from "@/lib/utils";
+import {
+  hasOfficialFeeAmount,
+  hasPublishedUsdAmount,
+  isConfirmedProgramFee,
+} from "@/lib/utils";
 
 type BreadcrumbItem = {
   name: string;
@@ -67,6 +72,103 @@ function getAbsoluteMediaUrls(urls: Array<string | undefined>) {
 
 const contentAuthorPath = `/author/${contentAuthorSlug}`;
 
+const teachingLanguageTags: Record<TeachingLanguageCode, string> = {
+  albanian: "sq",
+  arabic: "ar",
+  bulgarian: "bg",
+  catalan: "ca",
+  chinese: "zh",
+  croatian: "hr",
+  czech: "cs",
+  dutch: "nl",
+  english: "en",
+  french: "fr",
+  georgian: "ka",
+  german: "de",
+  greek: "el",
+  hindi: "hi",
+  hungarian: "hu",
+  italian: "it",
+  japanese: "ja",
+  korean: "ko",
+  kyrgyz: "ky",
+  lithuanian: "lt",
+  maltese: "mt",
+  norwegian: "no",
+  polish: "pl",
+  portuguese: "pt",
+  romanian: "ro",
+  russian: "ru",
+  sanskrit: "sa",
+  serbian: "sr",
+  slovak: "sk",
+  slovenian: "sl",
+  spanish: "es",
+  swedish: "sv",
+  telugu: "te",
+  turkish: "tr",
+  urdu: "ur",
+  uzbek: "uz",
+  vietnamese: "vi",
+};
+
+// Teaching language comes only from the controlled facet; an unconfirmed
+// medium is omitted rather than defaulted to English.
+function getProgramLanguageTags(program: FinderProgram) {
+  const tags = uniqueValues(
+    (program.offering.instructionLanguages ?? []).map(
+      (code) => teachingLanguageTags[code],
+    ),
+  );
+  if (tags.length === 0) return undefined;
+  return tags.length === 1 ? tags[0] : tags;
+}
+
+// Annual tuition in the official currency the page shows, falling back to the
+// normalized USD figure. Indicative, on-request and missing fees emit nothing.
+function getProgramTuitionOffer(program: FinderProgram, programUrl: string) {
+  const { offering } = program;
+  if (!isConfirmedProgramFee(offering)) return undefined;
+
+  const official =
+    hasOfficialFeeAmount(
+      offering.officialAnnualTuitionAmount,
+      offering.officialFeeCurrency,
+    ) && /^[A-Z]{3}$/.test(offering.officialFeeCurrency ?? "");
+  const price = official
+    ? offering.officialAnnualTuitionAmount
+    : hasPublishedUsdAmount(offering.annualTuitionUsd)
+      ? offering.annualTuitionUsd
+      : undefined;
+  if (price === undefined) return undefined;
+  const priceCurrency = official ? offering.officialFeeCurrency : "USD";
+
+  return {
+    "@type": "Offer",
+    url: programUrl,
+    category: "Paid",
+    description: offering.feeAcademicYear
+      ? `Annual tuition, ${offering.feeAcademicYear}`
+      : "Annual tuition",
+    priceCurrency,
+    price,
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price,
+      priceCurrency,
+      referenceQuantity: {
+        "@type": "QuantitativeValue",
+        value: 1,
+        unitCode: "ANN",
+      },
+    },
+  };
+}
+
+function getIsoDuration(years: number) {
+  return Number.isInteger(years) ? `P${years}Y` : `P${Math.round(years * 12)}M`;
+}
+
 export function getProgramStructuredDataId(programSlug: string) {
   return withFragment(getUniversityProgramHref(programSlug), "program");
 }
@@ -75,13 +177,19 @@ export function getProgramOfferingStructuredData(program: FinderProgram) {
   const programPath = getUniversityProgramHref(program.offering.slug);
   const programUrl = absoluteUrl(programPath);
   const universityId = getUniversityStructuredDataId(program.university.slug);
-  const hasPublishedFee = hasPublishedUsdAmount(program.offering.annualTuitionUsd);
+  const duration = getIsoDuration(program.offering.durationYears);
+  const medium =
+    program.offering.medium && program.offering.medium !== "Not confirmed"
+      ? `, taught in ${program.offering.medium}`
+      : "";
 
   return {
-    "@type": "Course",
+    // A degree programme is both: Course keeps Google's course features,
+    // EducationalOccupationalProgram carries timeToComplete.
+    "@type": ["Course", "EducationalOccupationalProgram"],
     "@id": getProgramStructuredDataId(program.offering.slug),
     name: program.offering.title,
-    description: `${program.course.shortName} at ${program.university.name} in ${program.university.city}, ${program.country.name}.`,
+    description: `${program.offering.title} (${program.course.shortName}) at ${program.university.name}, ${program.university.city}, ${program.country.name}: ${program.offering.durationYears}-year programme${medium}.`,
     url: programUrl,
     provider: {
       "@type": "CollegeOrUniversity",
@@ -97,26 +205,15 @@ export function getProgramOfferingStructuredData(program: FinderProgram) {
     courseCode: program.course.shortName,
     courseMode: "Onsite",
     educationalCredentialAwarded: program.course.shortName,
-    inLanguage: "en",
-    timeRequired: Number.isInteger(program.offering.durationYears)
-      ? `P${program.offering.durationYears}Y`
-      : `P${Math.round(program.offering.durationYears * 12)}M`,
+    inLanguage: getProgramLanguageTags(program),
+    timeRequired: duration,
+    timeToComplete: duration,
     hasCourseInstance: {
       "@type": "CourseInstance",
       courseMode: "Onsite",
-      courseWorkload: Number.isInteger(program.offering.durationYears)
-        ? `P${program.offering.durationYears}Y`
-        : `P${Math.round(program.offering.durationYears * 12)}M`,
+      courseWorkload: duration,
     },
-    offers: hasPublishedFee
-      ? {
-          "@type": "Offer",
-          url: programUrl,
-          priceCurrency: "USD",
-          price: program.offering.annualTuitionUsd,
-          category: "Paid",
-        }
-      : undefined,
+    offers: getProgramTuitionOffer(program, programUrl),
     mainEntityOfPage: {
       "@id": getWebPageStructuredDataId(programPath),
     },
@@ -149,7 +246,7 @@ export function getArticleStructuredData(input: {
     },
     image: {
       "@type": "ImageObject",
-      url: input.image ?? getOgImageUrl(input.path),
+      url: input.image ? absoluteUrl(input.image) : getOgImageUrl(input.path),
     },
   };
 }
@@ -416,9 +513,8 @@ export function getCourseStructuredData(course: Course) {
     description: course.summary,
     url: absoluteUrl(path),
     image: getOgImageUrl(path),
-    provider: {
-      "@id": getOrganizationStructuredDataId(),
-    },
+    // A course family is a catalogue category, not something Students Traffic
+    // teaches, so it carries no provider; offerings name their university.
     educationalCredentialAwarded: course.shortName,
     timeRequired: `P${course.durationYears}Y`,
     mainEntityOfPage: {
@@ -432,7 +528,6 @@ export function getProgramItemListStructuredData(input: ProgramItemListInput) {
     "@type": "ItemList",
     "@id": getItemListStructuredDataId(input.path),
     name: input.name,
-    numberOfItems: input.programs.length,
     itemListElement: input.programs.map((program, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -478,8 +573,10 @@ export function getUniversityStructuredData(input: {
     mainEntityOfPage: {
       "@id": getWebPageStructuredDataId(path),
     },
-    hasCourse: input.programs.map((program) =>
-      getProgramCourseStructuredData(program)
-    ),
+    // References only: the full Course nodes are in the page's ItemList (or
+    // the programme node itself), so each offering is emitted once.
+    hasCourse: input.programs.map((program) => ({
+      "@id": getProgramStructuredDataId(program.offering.slug),
+    })),
   };
 }

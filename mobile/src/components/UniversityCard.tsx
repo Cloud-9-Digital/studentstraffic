@@ -156,11 +156,6 @@ export const UniversityCard = memo(function UniversityCard({ university, isShort
               />
             </Pressable>
           </View>
-        {university.programCount != null && (
-          <Text style={s.programCount}>
-            {university.programCount} {university.programCount === 1 ? "program" : "programs"}
-          </Text>
-        )}
       </View>
     </Pressable>
   );
@@ -204,12 +199,6 @@ const s = StyleSheet.create({
     justifyContent: "center",
     gap: 8,
     flexShrink: 0,
-  },
-  programCount: {
-    fontFamily: "PlusJakartaSans-SemiBold",
-    fontSize: 11,
-    color: colors.primary,
-    textAlign: "right",
   },
   actionBtns: {
     flexDirection: "row",

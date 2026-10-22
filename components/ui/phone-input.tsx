@@ -13,7 +13,12 @@ interface PhoneInputFieldProps {
   id?: string;
   name: string;
   required?: boolean;
-  defaultCountry?: Country;
+  /**
+   * Calling code to start from. `null` starts with no country ("+"), for forms
+   * that set it from the visitor's country of residence instead. Changing it
+   * re-selects the country until the visitor types a number or picks a flag.
+   */
+  defaultCountry?: Country | null;
   defaultValue?: string;
   className?: string;
   placeholder?: string;
@@ -21,6 +26,8 @@ interface PhoneInputFieldProps {
   lockCountry?: boolean;
   /** Fired whenever the field's validity changes, so the parent form can block submission. */
   onValidityChange?: (valid: boolean) => void;
+  /** Fired when the number's country changes (flag picked, or detected from a typed `+` code). */
+  onCountryChange?: (country?: Country) => void;
 }
 
 const InnerInput = forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
@@ -48,7 +55,9 @@ export function PhoneInputField({
   placeholder = "Phone number",
   lockCountry = false,
   onValidityChange,
+  onCountryChange,
 }: PhoneInputFieldProps) {
+  const startCountry = defaultCountry ?? undefined;
   const [value, setValue] = useState<Value | undefined>(
     (defaultValue as Value) ?? undefined
   );
@@ -84,8 +93,9 @@ export function PhoneInputField({
           id={id}
           international
           countryCallingCodeEditable={!lockCountry}
-          countries={lockCountry ? [defaultCountry] : undefined}
-          defaultCountry={defaultCountry}
+          countries={lockCountry && startCountry ? [startCountry] : undefined}
+          defaultCountry={startCountry}
+          onCountryChange={onCountryChange}
           value={value}
           onChange={setValue}
           onBlur={() => setTouched(true)}

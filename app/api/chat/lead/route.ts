@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import { captureChatLead } from "@/lib/chatbot/lead-capture";
+import { chatLeadSchema, type ChatLeadBody } from "@/lib/chatbot/lead-schema";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 
 /**
@@ -14,37 +15,6 @@ import { logPublicRouteRequest } from "@/lib/route-observability";
 
 const BOT_USER_AGENT_PATTERN =
   /bot|crawl|crawler|spider|slurp|preview|facebookexternalhit|telegram|discord|linkedinbot|google-extended|headless/i;
-
-const slugSchema = z
-  .string()
-  .trim()
-  .regex(/^[a-z0-9-]+$/)
-  .max(120)
-  .optional();
-
-const chatLeadSchema = z.object({
-  fullName: z.string().trim().min(2, "Please enter your full name.").max(120),
-  phone: z.string().trim().min(7, "Please enter a valid phone number.").max(32),
-  userState: z.string().trim().min(2, "Please enter your state.").max(120),
-  email: z
-    .string()
-    .trim()
-    .max(200)
-    .optional()
-    .transform((value) => (value ? value : undefined))
-    .refine((value) => !value || /\S+@\S+\.\S+/.test(value), {
-      message: "Please enter a valid email address.",
-    }),
-  conversationId: z.string().trim().min(1).max(64).optional(),
-  countrySlug: slugSchema,
-  courseSlug: slugSchema,
-  universitySlug: slugSchema,
-  page: z.object({
-    path: z.string().trim().min(1).max(512),
-    url: z.string().trim().max(1024).optional(),
-    title: z.string().trim().max(300).optional(),
-  }),
-});
 
 function isTrustedBrowserRequest(request: Request) {
   const userAgent = request.headers.get("user-agent") ?? "";
@@ -70,7 +40,7 @@ export async function POST(request: Request) {
     return Response.json({ error: "Request blocked." }, { status: 403 });
   }
 
-  let parsed: z.infer<typeof chatLeadSchema>;
+  let parsed: ChatLeadBody;
 
   try {
     parsed = chatLeadSchema.parse(await request.json());

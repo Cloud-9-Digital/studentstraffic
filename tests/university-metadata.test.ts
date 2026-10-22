@@ -131,7 +131,9 @@ test("multi-stream university page leads with the university, never a course", (
   assert.ok(meta.title.startsWith("Vellore Institute of Technology"));
   assert.ok(!meta.title.includes("B.Com"));
   assert.ok(meta.description.startsWith("Vellore Institute of Technology, Vellore, India"));
-  assert.ok(meta.description.includes("7 programmes"));
+  assert.ok(meta.description.includes("programmes in"));
+  // Programme counts are not published.
+  assert.ok(!/\d+ programmes?/.test(meta.description));
   assertBudgets(meta);
   // Stream-aware keywords replaced the hardcoded "<city> medical university".
   assert.ok(meta.keywords.includes("Vellore engineering college"));
@@ -345,8 +347,8 @@ test("a single published programme is described in the singular", () => {
     programs: kazanPrograms,
     section: "programs",
   });
-  assert.ok(meta.description.startsWith("All 1 programme at"));
-  assert.ok(!meta.description.includes("1 programmes"));
+  assert.ok(meta.description.startsWith("Programme at"));
+  assert.ok(!/\d+ programmes?/.test(meta.description));
 });
 
 test("broad catalogues do not claim a single-stream keyword noun", () => {

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { unstable_cache } from "next/cache";
 import { BookOpen, ChevronRight } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CountryAccommodationSection } from "@/components/site/country/country-accommodation-section";
 import { CountryCostSection, CountryCurrencySection } from "@/components/site/country/country-cost-section";
@@ -42,7 +42,7 @@ import { and, eq, ilike } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import { getBudgetGuideSummaries } from "@/lib/discovery-pages";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import {
   getArticleStructuredData,
   getBreadcrumbStructuredData,
@@ -118,7 +118,7 @@ export async function generateMetadata({
   const country = await getCountryBySlug(slug);
 
   if (!country) {
-    return { title: "Country Not Found" };
+    return buildNotFoundMetadata("Country Not Found");
   }
 
   // Country metadata must stay destination-level even when a country's
@@ -164,7 +164,7 @@ export default async function CountryPage({
   const { country, programRows: programs, structuredPrograms } = await getCountryPageData(slug);
 
   if (!country) {
-    notFound();
+    return <MissingPage />;
   }
   const primaryProgram = programs[0];
   const curatedLandingPageHref = primaryProgram

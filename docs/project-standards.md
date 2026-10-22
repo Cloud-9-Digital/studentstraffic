@@ -44,6 +44,12 @@ For admissions, scholarship, country, and decision-stage pages:
 - Do not overexpose citations, source mechanics, or update-process language in user-facing copy unless the page truly needs it.
 - Avoid sounding like a research portal, newsroom, or encyclopedia even when the underlying work is heavily researched.
 - The content should feel like expert guidance from a company that can actually help the student act on that information.
+- Never publish catalogue counts (decided 2026-10-22): no "N universities", "N programmes", "N colleges"
+  or "N options" for the site, a country, city, course or budget band, in page copy, titles, meta
+  descriptions, JSON-LD (`numberOfItems`), finder headers ("Showing 1–24 of N"), llms.txt, the
+  chatbot or the mobile app. Name the options instead. Facts about a country's education system
+  ("all 16 Italian public universities") and service claims ("3,000+ students admitted") are not
+  catalogue counts.
 
 ## Conversion standards
 

@@ -106,22 +106,15 @@ export function UniversitiesResultsPanel({
     () => createPageNumbers(results.totalPages, results.currentPage),
     [results.currentPage, results.totalPages],
   );
-  const firstResult =
-    results.totalItems === 0
-      ? 0
-      : (results.currentPage - 1) * results.pageSize + 1;
-  const lastResult =
-    results.totalItems === 0
-      ? 0
-      : Math.min(results.currentPage * results.pageSize, results.totalItems);
   const selectedSort = getFinderSort(currentSort);
 
   return (
     <div className="space-y-5 md:space-y-6">
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
+          {/* Catalogue size is not shown anywhere on the site. */}
           <p className="text-sm leading-none font-semibold text-heading">
-            {results.totalItems.toLocaleString()} universities
+            Universities
           </p>
         </div>
 
@@ -208,10 +201,6 @@ export function UniversitiesResultsPanel({
 
       {!isLoading && results.totalPages > 1 && (
         <>
-          <p className="text-center text-sm text-muted-foreground">
-            Showing {firstResult}-{lastResult} of{" "}
-            {results.totalItems.toLocaleString()}
-          </p>
           <Pagination>
           <PaginationContent>
             <PaginationItem>

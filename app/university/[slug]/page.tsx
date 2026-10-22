@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import { connection } from "next/server";
 import { cache, Suspense } from "react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
 import { ComparisonCard } from "@/components/site/comparison-card";
@@ -36,7 +37,8 @@ import {
 import { getCityHref, getCountryHref, getUniversityProgramHref } from "@/lib/routes";
 import { getRelatedContent } from "@/lib/data/related-content";
 import { RelatedContentSection } from "@/components/site/related-content-section";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { getUniversityMarkdownHref } from "@/lib/agent-markdown";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import {
   buildUniversityMetadata,
   selectFlagshipProgram,
@@ -173,7 +175,7 @@ export async function generateMetadata({
   const { university, country, programs } = await getUniversityPageData(slug);
 
   if (!university) {
-    return { title: "University Not Found" };
+    return buildNotFoundMetadata("University Not Found");
   }
 
   const pathSuffix = section ? `-${section}` : "";
@@ -188,6 +190,7 @@ export async function generateMetadata({
     title,
     description,
     path: `/university/${university.slug}${pathSuffix}`,
+    markdownPath: getUniversityMarkdownHref(university.slug),
     keywords,
   });
 }
@@ -213,9 +216,7 @@ export default async function UniversityDetailPage({
 
   const { university, programs, country } = await getUniversityPageData(slug);
 
-  if (!university) notFound();
-
-  if (!country) notFound();
+  if (!university || !country) return <MissingPage />;
 
   const primaryProgram = selectFlagshipProgram(programs);
   const coverImage = getUniversityCoverImage(university);

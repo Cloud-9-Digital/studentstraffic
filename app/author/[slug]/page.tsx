@@ -5,7 +5,7 @@ import { ArrowLeft, Quote } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { getAllAuthors, getAuthor, isValidAuthorSlug } from "@/lib/authors";
-import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
+import { absoluteUrl, buildNotFoundMetadata, getOgImageUrl } from "@/lib/metadata";
 import { getProfilePageStructuredData } from "@/lib/structured-data";
 
 export function generateStaticParams() {
@@ -18,7 +18,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  if (!isValidAuthorSlug(slug)) return {};
+  if (!isValidAuthorSlug(slug)) return buildNotFoundMetadata();
   const author = getAuthor(slug);
   const url = absoluteUrl(`/author/${slug}`);
   const title = `${author.name} — ${author.title} | Students Traffic`;

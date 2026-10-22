@@ -1,12 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FaqDisclosureList } from "@/components/shared/faq-disclosure-list";
 import type { FaqSection } from "@/lib/data/university-faq-sections";
 import { cn } from "@/lib/utils";
 import { SectionLabel } from "./shared";
@@ -78,31 +73,21 @@ export function TabbedFaqSection({
         </div>
       </div>
 
-      {/* FAQ accordion for active section */}
-      {activeSection && (
-        <Accordion
-          key={activeSection.slug}
-          type="single"
-          collapsible
-          defaultValue="faq-0"
-          className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card"
-        >
-          {activeSection.faqs.map((item, index) => (
-            <AccordionItem
-              key={item.question}
-              value={`faq-${index}`}
-              className="border-b-0 px-6"
-            >
-              <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-7">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      )}
+      {/* Every topic is rendered so all answers are in the server HTML;
+          the tabs only toggle which one is visible. */}
+      {sections.map((section) => (
+        <div key={section.slug} hidden={section.slug !== activeSection?.slug}>
+          <FaqDisclosureList
+            items={section.faqs}
+            name={`university-faq-${section.slug}`}
+            defaultOpenIndex={0}
+            className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card"
+            itemClassName="border-b-0 px-6"
+            questionClassName="font-semibold text-foreground"
+            answerClassName="text-muted-foreground leading-7"
+          />
+        </div>
+      ))}
 
       {/* Section counter */}
       <p className="text-xs text-muted-foreground">

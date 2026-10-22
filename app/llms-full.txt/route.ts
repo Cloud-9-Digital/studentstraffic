@@ -12,12 +12,19 @@ import {
 } from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
 import { logPublicRouteRequest } from "@/lib/route-observability";
+import { getUniversityMarkdownHref } from "@/lib/agent-markdown";
+import type { FeeStatus } from "@/lib/data/types";
 import {
   getCountryHref,
   getCourseHref,
   getUniversityHref,
+  getUniversityProgramHref,
 } from "@/lib/routes";
-import { formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
+import {
+  formatProgramAnnualFee,
+  formatProgramMedium,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 
 const getPublishedBlogIndex = unstable_cache(
   async () => {
@@ -43,14 +50,18 @@ const getPublishedBlogIndex = unstable_cache(
   { tags: ["blog"], revalidate: 3600 }
 );
 
-const getLlmsCatalogIndex = unstable_cache(
+// unstable_cache entries over 2 MB are silently not stored, so a too-large
+// entry re-reads the whole catalogue from Neon on every request. The catalogue
+// is therefore split, and programme rows are cached as tuples (no repeated
+// keys). Bump a key when its row shape changes: the data cache outlives deploys.
+const getLlmsCatalogEntities = unstable_cache(
   async () => {
     const db = getDb();
     if (!db) {
-      return { countries: [], courses: [], universities: [], offerings: [] };
+      return { countries: [], courses: [], universities: [] };
     }
 
-    const [countries, courses, universities, offerings] = await Promise.all([
+    const [countries, courses, universities] = await Promise.all([
       db
         .select({
           slug: countriesTable.slug,
@@ -89,38 +100,129 @@ const getLlmsCatalogIndex = unstable_cache(
         )
         .where(eq(universitiesTable.published, true))
         .orderBy(asc(universitiesTable.name)),
-      db
-        .select({
-          universitySlug: universitiesTable.slug,
-          courseSlug: coursesTable.slug,
-          durationYears: programOfferingsTable.durationYears,
-          annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
-          totalTuitionUsd: programOfferingsTable.totalTuitionUsd,
-          medium: programOfferingsTable.medium,
-        })
-        .from(programOfferingsTable)
-        .innerJoin(
-          universitiesTable,
-          eq(programOfferingsTable.universityId, universitiesTable.id),
-        )
-        .innerJoin(
-          coursesTable,
-          eq(programOfferingsTable.courseId, coursesTable.id),
-        )
-        .where(
-          and(
-            eq(programOfferingsTable.published, true),
-            eq(universitiesTable.published, true),
-          ),
-        )
-        .orderBy(asc(universitiesTable.name), asc(coursesTable.name)),
     ]);
 
-    return { countries, courses, universities, offerings };
+    return { countries, courses, universities };
   },
-  ["llms-full-catalog-index"],
+  ["llms-full-catalog-entities-v1"],
   { tags: ["catalog", "llms"], revalidate: 86400 },
 );
+
+type LlmsProgramTuple = [
+  universitySlug: string,
+  courseSlug: string,
+  slug: string,
+  title: string,
+  durationYears: number,
+  annualTuitionUsd: number,
+  totalTuitionUsd: number,
+  officialFeeCurrency: string | null,
+  officialAnnualTuitionAmount: number | null,
+  feeStatus: FeeStatus | null,
+  indicativeAnnualTuitionMinUsd: number | null,
+  indicativeAnnualTuitionMaxUsd: number | null,
+  medium: string,
+];
+
+const getLlmsProgramTuples = unstable_cache(
+  async (): Promise<LlmsProgramTuple[]> => {
+    const db = getDb();
+    if (!db) return [];
+
+    const rows = await db
+      .select({
+        universitySlug: universitiesTable.slug,
+        courseSlug: coursesTable.slug,
+        slug: programOfferingsTable.slug,
+        title: programOfferingsTable.title,
+        durationYears: programOfferingsTable.durationYears,
+        annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+        totalTuitionUsd: programOfferingsTable.totalTuitionUsd,
+        officialFeeCurrency: programOfferingsTable.officialFeeCurrency,
+        officialAnnualTuitionAmount:
+          programOfferingsTable.officialAnnualTuitionAmount,
+        feeStatus: programOfferingsTable.feeStatus,
+        indicativeAnnualTuitionMinUsd:
+          programOfferingsTable.indicativeAnnualTuitionMinUsd,
+        indicativeAnnualTuitionMaxUsd:
+          programOfferingsTable.indicativeAnnualTuitionMaxUsd,
+        medium: programOfferingsTable.medium,
+      })
+      .from(programOfferingsTable)
+      .innerJoin(
+        universitiesTable,
+        eq(programOfferingsTable.universityId, universitiesTable.id),
+      )
+      .innerJoin(
+        coursesTable,
+        eq(programOfferingsTable.courseId, coursesTable.id),
+      )
+      .where(
+        and(
+          eq(programOfferingsTable.published, true),
+          eq(universitiesTable.published, true),
+        ),
+      )
+      .orderBy(asc(universitiesTable.name), asc(coursesTable.name));
+
+    return rows.map((row) => [
+      row.universitySlug,
+      row.courseSlug,
+      row.slug,
+      row.title,
+      row.durationYears,
+      row.annualTuitionUsd,
+      row.totalTuitionUsd,
+      row.officialFeeCurrency,
+      row.officialAnnualTuitionAmount,
+      row.feeStatus,
+      row.indicativeAnnualTuitionMinUsd,
+      row.indicativeAnnualTuitionMaxUsd,
+      row.medium,
+    ]);
+  },
+  ["llms-full-program-tuples-v1"],
+  { tags: ["catalog", "llms"], revalidate: 86400 },
+);
+
+async function getLlmsCatalogIndex() {
+  const [entities, programTuples] = await Promise.all([
+    getLlmsCatalogEntities(),
+    getLlmsProgramTuples(),
+  ]);
+  const offerings = programTuples.map(
+    ([
+      universitySlug,
+      courseSlug,
+      slug,
+      title,
+      durationYears,
+      annualTuitionUsd,
+      totalTuitionUsd,
+      officialFeeCurrency,
+      officialAnnualTuitionAmount,
+      feeStatus,
+      indicativeAnnualTuitionMinUsd,
+      indicativeAnnualTuitionMaxUsd,
+      medium,
+    ]) => ({
+      universitySlug,
+      courseSlug,
+      slug,
+      title,
+      durationYears,
+      annualTuitionUsd,
+      totalTuitionUsd,
+      officialFeeCurrency,
+      officialAnnualTuitionAmount,
+      feeStatus,
+      indicativeAnnualTuitionMinUsd,
+      indicativeAnnualTuitionMaxUsd,
+      medium,
+    }),
+  );
+  return { ...entities, offerings };
+}
 
 export async function GET(request: Request) {
   logPublicRouteRequest({
@@ -142,7 +244,7 @@ export async function GET(request: Request) {
     "",
     `> ${siteConfig.description}`,
     "",
-    "This file provides a lightweight structured index of Students Traffic content for AI agents and LLMs. For navigation guidance see /llms.txt.",
+    `This file is a structured index of Students Traffic content for AI agents and LLMs. For navigation guidance see ${absoluteUrl("/llms.txt")}. Every university and programme page also has a markdown view at its URL plus \`.md\`.`,
     "",
     "---",
     "",
@@ -203,6 +305,7 @@ export async function GET(request: Request) {
     "### Is NEET Required for MBBS in Vietnam?",
     `- URL: ${absoluteUrl("/is-neet-required-for-mbbs-in-vietnam")}`,
     "- Summary: A direct Vietnam eligibility page covering whether NEET is required, the 'without NEET' myth, score reality, and why Indian students should treat NEET as part of the India-return pathway.",
+    "",
     "### MBBS Admission in Russia",
     `- URL: ${absoluteUrl("/mbbs-admission-in-russia")}`,
     "- Summary: A practical India-focused guide to MBBS admission in Russia, covering eligibility, documents, timeline, NEET implications, and common admission mistakes.",
@@ -284,6 +387,7 @@ export async function GET(request: Request) {
 
     lines.push(`### ${university.name}`);
     lines.push(`- URL: ${url}`);
+    lines.push(`- Markdown: ${absoluteUrl(getUniversityMarkdownHref(university.slug))}`);
     lines.push(`- Location: ${university.city}${country ? `, ${country.name}` : ""}`);
     lines.push(`- Type: ${university.type}`);
     lines.push(`- Established: ${university.establishedYear}`);
@@ -297,15 +401,30 @@ export async function GET(request: Request) {
       for (const offering of universityOfferings) {
         const course = courseMap.get(offering.courseSlug);
         const courseName = course?.shortName ?? offering.courseSlug.toUpperCase();
-        const fee = hasPublishedUsdAmount(offering.annualTuitionUsd)
-          ? `$${offering.annualTuitionUsd.toLocaleString("en-US")}/year`
-          : "fee on request";
+        // Same fee precedence as the page: indicative range, USD, then the
+        // official-currency amount; "on request" when none is published.
+        const annualFee = formatProgramAnnualFee(
+          {
+            ...offering,
+            feeStatus: offering.feeStatus ?? undefined,
+            officialFeeCurrency: offering.officialFeeCurrency ?? undefined,
+            officialAnnualTuitionAmount:
+              offering.officialAnnualTuitionAmount ?? undefined,
+            indicativeAnnualTuitionMinUsd:
+              offering.indicativeAnnualTuitionMinUsd ?? undefined,
+            indicativeAnnualTuitionMaxUsd:
+              offering.indicativeAnnualTuitionMaxUsd ?? undefined,
+          },
+          "fee on request",
+        );
+        const fee =
+          annualFee === "fee on request" ? annualFee : `${annualFee}/year`;
         const totalFee = hasPublishedUsdAmount(offering.totalTuitionUsd)
           ? `, $${offering.totalTuitionUsd.toLocaleString("en-US")} total`
           : "";
         const medium = formatProgramMedium(offering.medium, university.countrySlug);
         programLines.push(
-          `  - ${courseName}: ${fee}${totalFee}, ${offering.durationYears} years${
+          `  - [${offering.title}](${absoluteUrl(getUniversityProgramHref(offering.slug))}) (${courseName}): ${fee}${totalFee}, ${offering.durationYears} years${
             medium ? `, ${medium}` : ""
           }`,
         );

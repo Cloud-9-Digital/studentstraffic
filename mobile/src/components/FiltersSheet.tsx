@@ -43,7 +43,6 @@ type Props = {
   onChange: (f: FilterState) => void;
   onApply: () => void;
   options: Options;
-  totalItems: number;
 };
 
 // ─── Pill ─────────────────────────────────────────────────────────────────────
@@ -113,7 +112,7 @@ const sec = StyleSheet.create({
 
 // ─── Sheet ────────────────────────────────────────────────────────────────────
 
-export function FiltersSheet({ visible, onClose, filters, onChange, onApply, options, totalItems }: Props) {
+export function FiltersSheet({ visible, onClose, filters, onChange, onApply, options }: Props) {
   const insets = useSafeAreaInsets();
 
   function set(key: keyof FilterState, value: string) {
@@ -194,7 +193,7 @@ export function FiltersSheet({ visible, onClose, filters, onChange, onApply, opt
           style={({ pressed }) => [s.applyBtn, pressed && s.applyPressed]}
         >
           <Text style={s.applyLabel}>
-            Show {totalItems > 0 ? `${totalItems.toLocaleString()} ` : ""}universities
+            Show universities
           </Text>
           {activeCount > 0 && (
             <View style={s.applyBadge}>

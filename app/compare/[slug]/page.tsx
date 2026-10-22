@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -9,6 +8,7 @@ import {
   PencilLine,
 } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { LeadForm } from "@/components/site/lead-form";
 import { ComparisonTable } from "@/components/site/comparison-table";
@@ -30,12 +30,13 @@ import {
   type ComparisonPage,
   type CountryComparisonGuide,
 } from "@/lib/discovery-pages";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import { buildComparisonTitle } from "@/lib/university-metadata";
 import {
   getBreadcrumbStructuredData,
   getCountryStructuredData,
   getCourseStructuredData,
+  getProgramOfferingStructuredData,
   getStructuredDataGraph,
   getUniversityStructuredData,
   getWebPageStructuredData,
@@ -168,7 +169,9 @@ function getIntakeSummary(programs: FinderProgram[]) {
 
 function getCitySummary(programs: FinderProgram[]) {
   const cities = [...new Set(programs.map((program) => program.university.city))];
-  return `${cities.length} cit${cities.length === 1 ? "y" : "ies"}`;
+  return cities.length > 3
+    ? `${cities.slice(0, 3).join(", ")} and more`
+    : cities.join(", ");
 }
 
 function getMonthlyLivingRange(countryContent: CountryContent | null | undefined) {
@@ -197,16 +200,6 @@ function getCountryComparisonRows(
   const rightContent = getCountryContent(guide.rightCountry.slug);
 
   return [
-    {
-      label: "Listed universities",
-      left: String(getUniqueProgramsByUniversity(guide.leftPrograms).length),
-      right: String(getUniqueProgramsByUniversity(guide.rightPrograms).length),
-    },
-    {
-      label: "Listed programs",
-      left: String(guide.leftPrograms.length),
-      right: String(guide.rightPrograms.length),
-    },
     {
       label: "Annual fee range",
       left: getFeeRange(guide.leftPrograms),
@@ -270,11 +263,6 @@ function getBudgetComparisonRows(
       winner: getWinnerByStartingFee(guide.leftPrograms, guide.rightPrograms),
     },
     {
-      label: "Listed universities",
-      left: String(getUniqueProgramsByUniversity(guide.leftPrograms).length),
-      right: String(getUniqueProgramsByUniversity(guide.rightPrograms).length),
-    },
-    {
       label: "City spread",
       left: getCitySummary(guide.leftPrograms),
       right: getCitySummary(guide.rightPrograms),
@@ -336,12 +324,6 @@ function getCountryDecisionPoints(
     );
   }
 
-  points.push(
-    `${getUniqueProgramsByUniversity(programs).length} university option${
-      getUniqueProgramsByUniversity(programs).length === 1 ? "" : "s"
-    } are currently listed.`
-  );
-
   if (content?.eligibility.items[0]) {
     points.push(content.eligibility.items[0]);
   }
@@ -377,7 +359,7 @@ function getPageDescription(page: ComparisonPage) {
     case "budget":
       return `Compare ${page.course.shortName} options under ${formatCurrencyUsd(
         page.budgetUsd
-      )} in ${page.leftCountry.name} and ${page.rightCountry.name} by fees, number of options, and student living costs.`;
+      )} in ${page.leftCountry.name} and ${page.rightCountry.name} by fees and student living costs.`;
     default:
       return "Comparison page";
   }
@@ -1088,7 +1070,7 @@ export async function generateMetadata({
   const page = await getComparisonPageBySlug(slug);
 
   if (!page) {
-    return { title: "Comparison Not Found" };
+    return buildNotFoundMetadata("Comparison Not Found");
   }
 
   const path = getComparisonHref(page.slug);
@@ -1150,7 +1132,7 @@ export default async function ComparisonGuidePage({
   const page = await getComparisonPageBySlug(slug);
 
   if (!page) {
-    notFound();
+    return <MissingPage />;
   }
 
   const path = getComparisonHref(page.slug);
@@ -1192,9 +1174,14 @@ export default async function ComparisonGuidePage({
     });
     structuredDataItems.push(
       getCountryStructuredData(page.left.country),
-      getCountryStructuredData(page.right.country),
+      page.right.country.slug !== page.left.country.slug
+        ? getCountryStructuredData(page.right.country)
+        : null,
       leftUniversityStructuredData,
-      rightUniversityStructuredData
+      rightUniversityStructuredData,
+      // hasCourse on each university references these by @id.
+      getProgramOfferingStructuredData(page.left),
+      getProgramOfferingStructuredData(page.right)
     );
   }
 

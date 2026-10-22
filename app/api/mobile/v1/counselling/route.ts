@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { resolveResidenceCountry } from "@/lib/lead-residence";
 import { mobileError, mobileJson, mobileValidationError, readJson } from "@/lib/mobile/http";
 import { mobileCounsellingSchema } from "@/lib/mobile/schemas";
 
@@ -14,13 +15,25 @@ export async function POST(request: Request) {
   if (!db) return mobileError("unavailable", "Service unavailable.", 503);
 
   const headerStore = await headers();
+  const residenceCountry = resolveResidenceCountry({
+    submitted: parsed.data.residenceCountry,
+    headerStore,
+    phone: parsed.data.phone,
+  });
+  const userState = parsed.data.userState || null;
+
+  if (residenceCountry === "IN" && (!userState || userState.length < 2)) {
+    return mobileError("validation_error", "Please enter your state.", 422);
+  }
+
   const [lead] = await db
     .insert(leads)
     .values({
       fullName: parsed.data.fullName,
       phone: parsed.data.phone,
       email: parsed.data.email || null,
-      userState: parsed.data.userState,
+      residenceCountry: residenceCountry ?? null,
+      userState,
       neetScore: parsed.data.neetScore ?? null,
       courseSlug: parsed.data.courseSlug || null,
       countrySlug: parsed.data.countrySlug || null,

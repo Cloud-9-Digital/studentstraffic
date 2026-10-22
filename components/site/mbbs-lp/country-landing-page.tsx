@@ -75,7 +75,6 @@ export function CountryMbbsLandingPage({ path, config, stats, featuredPrograms }
         heroHeadlinePrefix={config.heroHeadlinePrefix}
         heroHeadlineHighlight={config.heroHeadlineHighlight}
         heroSubtext={config.heroSubtext}
-        universityCount={stats.universityCount}
         minTotalInrLabel={formatInrApprox(stats.minTotalUsd)}
         maxTotalInrLabel={formatInrApprox(stats.maxTotalUsd)}
         durationYears={stats.durationYears}
@@ -92,7 +91,7 @@ export function CountryMbbsLandingPage({ path, config, stats, featuredPrograms }
       <LpProcess />
       <LpTrust countryName={config.countryName} testimonials={config.testimonials} />
       <LpFaq faqs={config.faqs} />
-      <LpCta sourcePath={sourcePath} countryName={config.countryName} universityCount={stats.universityCount} />
+      <LpCta sourcePath={sourcePath} countryName={config.countryName} />
       <LpFooter />
       <LpMobileCta />
     </LpDialogProvider>

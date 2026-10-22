@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import {
   ArrowRight,
   BookOpen,
@@ -13,13 +12,14 @@ import {
   Shield,
 } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import {
   getTamilNaduCityPage,
   getTamilNaduCityPages,
 } from "@/lib/data/tamil-nadu-local";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import {
   getCountryHref,
   getTamilNaduCityHref,
@@ -49,7 +49,7 @@ export async function generateMetadata({
   const page = getTamilNaduCityPage(slug);
 
   if (!page) {
-    return { title: "Page Not Found" };
+    return buildNotFoundMetadata();
   }
 
   return buildIndexableMetadata({
@@ -78,7 +78,7 @@ export default async function TamilNaduCityPageRoute({
   const page = getTamilNaduCityPage(slug);
 
   if (!page) {
-    notFound();
+    return <MissingPage />;
   }
 
   const path = getTamilNaduCityHref(page.slug);

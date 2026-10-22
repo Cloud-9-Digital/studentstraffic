@@ -80,29 +80,66 @@ export async function getChatViewer(): Promise<ChatViewer | null> {
 
     if (!profile) return nameOnly;
 
-    const userId = profile.id;
-
-    const shortlist = await db
-      .select({ name: universities.name, slug: universities.slug })
-      .from(userShortlists)
-      .innerJoin(universities, eq(universities.id, userShortlists.universityId))
-      .where(eq(userShortlists.userId, userId))
-      .orderBy(desc(userShortlists.id))
-      .limit(12);
-
     return {
-      userId,
-      firstName: firstName ?? profile.name?.trim().split(/\s+/)[0] ?? null,
+      userId: profile.id,
+      firstName: firstName ?? firstNameOf(profile.name),
       neetScore: profile.neetScore,
       budgetUsd: profile.budgetUsd,
       preferredCountries: profile.preferredCountries,
-      shortlist,
+      shortlist: await getShortlistNames(profile.id),
     };
   } catch (error) {
     // Personalisation is a nicety; an unknown visitor still gets every answer.
     console.error("[chat] viewer lookup failed", error);
     return nameOnly;
   }
+}
+
+/**
+ * The viewer for a caller that already holds the users row — the mobile app,
+ * whose bearer token resolves straight to one. Same narrow shape: the row's
+ * email and phone are deliberately not carried over.
+ */
+export async function getChatViewerForUser(user: {
+  id: string;
+  name: string | null;
+  neetScore: number | null;
+  budgetUsd: number | null;
+  preferredCountries: string[] | null;
+}): Promise<ChatViewer> {
+  let shortlist: ChatViewer["shortlist"] = [];
+
+  try {
+    shortlist = await getShortlistNames(user.id);
+  } catch (error) {
+    console.error("[chat] viewer shortlist lookup failed", error);
+  }
+
+  return {
+    userId: user.id,
+    firstName: firstNameOf(user.name),
+    neetScore: user.neetScore,
+    budgetUsd: user.budgetUsd,
+    preferredCountries: user.preferredCountries,
+    shortlist,
+  };
+}
+
+function firstNameOf(name: string | null | undefined) {
+  return name?.trim().split(/\s+/)[0] || null;
+}
+
+async function getShortlistNames(userId: string) {
+  const db = getDb();
+  if (!db) return [];
+
+  return db
+    .select({ name: universities.name, slug: universities.slug })
+    .from(userShortlists)
+    .innerJoin(universities, eq(universities.id, userShortlists.universityId))
+    .where(eq(userShortlists.userId, userId))
+    .orderBy(desc(userShortlists.id))
+    .limit(12);
 }
 
 /**

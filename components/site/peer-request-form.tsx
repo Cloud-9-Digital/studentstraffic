@@ -2,13 +2,16 @@
 
 import { useActionState, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import type { Country } from "react-phone-number-input";
 
 import {
   type PeerRequestFormState,
   submitPeerRequestAction,
 } from "@/app/_actions/submit-peer-request";
 import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
+import { useResidenceCountry } from "@/components/site/use-residence-country";
 import { Button } from "@/components/ui/button";
+import { CountrySelect } from "@/components/ui/country-select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
@@ -73,9 +76,13 @@ export function PeerRequestForm({
   const cities = getCitiesForState(selectedState);
   const formRef = useRef<HTMLFormElement | null>(null);
   const startedAtInputRef = useRef<HTMLInputElement | null>(null);
+  const residence = useResidenceCountry();
+  const livesInIndia = residence.country === "IN";
+  const [clientError, setClientError] = useState<string | null>(null);
 
   const armStartedAt = () => {
     syncLeadTrackingFields(formRef.current);
+    residence.prime();
 
     if (startedAtInputRef.current && startedAtInputRef.current.value === "0") {
       startedAtInputRef.current.value = String(Date.now());
@@ -90,7 +97,17 @@ export function PeerRequestForm({
           onFocusCapture={armStartedAt}
           onPointerDownCapture={armStartedAt}
           onKeyDownCapture={armStartedAt}
-          onSubmitCapture={armStartedAt}
+          onSubmitCapture={(event) => {
+            armStartedAt();
+
+            if (!residence.country) {
+              event.preventDefault();
+              setClientError("Please select the country you live in.");
+              return;
+            }
+
+            setClientError(null);
+          }}
         >
           <input type="hidden" name="sourcePath" value={sourcePath} />
           <input type="hidden" name="universitySlug" value={universitySlug} />
@@ -119,12 +136,31 @@ export function PeerRequestForm({
               <Input id="peer-name" name="fullName" placeholder="Your name" required />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="peer-phone">Phone number</Label>
-              <PhoneInputField id="peer-phone" name="phone" required />
+              <Label htmlFor="peer-residence">Country you live in</Label>
+              <CountrySelect
+                id="peer-residence"
+                name="residenceCountry"
+                value={residence.country}
+                onChange={(code) => {
+                  residence.setCountry(code);
+                  setClientError(null);
+                }}
+              />
             </div>
           </div>
 
           <div className="field-grid field-grid--two">
+            <div className="space-y-2">
+              <Label htmlFor="peer-phone">Phone number</Label>
+              <PhoneInputField
+                id="peer-phone"
+                name="phone"
+                required
+                defaultCountry={(residence.country as Country | "") || null}
+                onCountryChange={residence.suggestCountry}
+              />
+            </div>
+
             <div className="space-y-2">
               <Label htmlFor="peer-email">
                 Email <span className="font-normal text-muted-foreground">(optional)</span>
@@ -136,52 +172,54 @@ export function PeerRequestForm({
                 placeholder="you@email.com"
               />
             </div>
-            <div className="space-y-2">
-              <Label htmlFor="peer-state">State</Label>
-              <div className="relative">
-                <select
-                  id="peer-state"
-                  name="userState"
-                  required
-                  value={selectedState}
-                  onChange={(e) => setSelectedState(e.target.value)}
-                  className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  <option value="" disabled className="text-muted-foreground">
-                    Select state
-                  </option>
-                  {INDIAN_STATES.map((stateName) => (
-                    <option key={stateName} value={stateName}>
-                      {stateName}
-                    </option>
-                  ))}
-                </select>
-                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-              </div>
-            </div>
-          </div>
-
-          <div className="field-grid field-grid--two">
-            <div className="space-y-2">
-              <Label htmlFor="peer-district">
-                City <span className="font-normal text-muted-foreground">(optional)</span>
-              </Label>
-              <div className="relative">
-                <select
-                  id="peer-district"
-                  name="userCity"
-                  disabled={cities.length === 0}
-                  defaultValue=""
-                  className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  <option value="">{selectedState ? "Select city" : "Select state first"}</option>
-                  {cities.map((c) => (
-                    <option key={c} value={c}>{c}</option>
-                  ))}
-                </select>
-                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-              </div>
-            </div>
+            {/* State and city lists are Indian; students elsewhere skip them. */}
+            {livesInIndia ? (
+              <>
+                <div className="space-y-2">
+                  <Label htmlFor="peer-state">State</Label>
+                  <div className="relative">
+                    <select
+                      id="peer-state"
+                      name="userState"
+                      required
+                      value={selectedState}
+                      onChange={(e) => setSelectedState(e.target.value)}
+                      className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      <option value="" disabled className="text-muted-foreground">
+                        Select state
+                      </option>
+                      {INDIAN_STATES.map((stateName) => (
+                        <option key={stateName} value={stateName}>
+                          {stateName}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="peer-district">
+                    City <span className="font-normal text-muted-foreground">(optional)</span>
+                  </Label>
+                  <div className="relative">
+                    <select
+                      id="peer-district"
+                      name="userCity"
+                      disabled={cities.length === 0}
+                      defaultValue=""
+                      className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      <option value="">{selectedState ? "Select city" : "Select state first"}</option>
+                      {cities.map((c) => (
+                        <option key={c} value={c}>{c}</option>
+                      ))}
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+                  </div>
+                </div>
+              </>
+            ) : null}
             <div className="space-y-2">
               <Label htmlFor="peer-language">
                 Language preference <span className="font-normal text-muted-foreground">(optional)</span>
@@ -211,9 +249,9 @@ export function PeerRequestForm({
             </div>
           </div>
 
-          {state.error && (
+          {(clientError || state.error) && (
             <p className="rounded-2xl border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm text-destructive">
-              {state.error}
+              {clientError || state.error}
             </p>
           )}
 

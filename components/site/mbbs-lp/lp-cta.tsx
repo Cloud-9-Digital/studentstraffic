@@ -3,10 +3,9 @@ import { LeadForm } from "@/components/site/lead-form";
 type Props = {
   sourcePath: string;
   countryName: string;
-  universityCount: number;
 };
 
-export function LpCta({ sourcePath, countryName, universityCount }: Props) {
+export function LpCta({ sourcePath, countryName }: Props) {
   return (
     <section
       className="border-t py-16 md:py-24"
@@ -30,10 +29,9 @@ export function LpCta({ sourcePath, countryName, universityCount }: Props) {
               on your NEET score and budget. No pressure.
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div className="mt-8 grid grid-cols-3 gap-4">
               {[
                 { n: "3,000+", l: "Students Admitted" },
-                { n: `${universityCount}+`, l: `Universities in ${countryName}` },
                 { n: "Since 2014", l: "In This Field" },
                 { n: "Free", l: "Counselling Call" },
               ].map(({ n, l }) => (

@@ -1,6 +1,6 @@
 # Structured-data contract for destination, university and program pages
 
-Updated: 2026-07-11
+Updated: 2026-10-22
 
 This document defines the JSON-LD contract for Students Traffic's three core catalog page
 families:
@@ -138,7 +138,10 @@ Fields are derived from the university catalog record:
 - `foundingDate` from `establishedYear`;
 - `PostalAddress` with city and country;
 - `mainEntityOfPage` pointing to the university `WebPage`;
-- `hasCourse` for published program offerings.
+- `hasCourse` for published program offerings, as `{ "@id" }` references only. The full
+  program-offering nodes live once in the page's `ItemList` (university page), as the page's own
+  program node (program page), or as separate graph nodes (comparison pages). Any page that emits a
+  `CollegeOrUniversity` with programs must also emit those program nodes.
 
 The institution's `sameAs` array must contain real canonical profiles or official verification
 URLs. Recognition copy belongs in visible page content and internal provenance; a recognition URL
@@ -167,9 +170,12 @@ specific offering and therefore emits:
 4. `CollegeOrUniversity` for the provider institution
 5. `WebPage` for the specific program URL
 6. program-offering `Course`
-7. `CourseInstance` and a paid `Offer` when the published fee exists
+7. `CourseInstance` and a paid `Offer` when a confirmed fee exists
 8. `Article` metadata using the governed author and page review date
-9. `FAQPage` using the visible university FAQs when available
+
+Program pages do not emit `FAQPage`. They do not render the university FAQs, and repeating one
+university's FAQs on every one of its program URLs is duplicate markup for invisible content. The
+FAQs are marked up once, on the university page that shows them.
 
 ### Program-offering `Course`
 
@@ -181,16 +187,22 @@ Output includes:
 - official offering title and canonical program URL;
 - description identifying course, university, city and country;
 - `provider` pointing to the university entity;
+- `@type` `["Course", "EducationalOccupationalProgram"]`: `Course` keeps Google's course features,
+  `EducationalOccupationalProgram` describes a degree program and carries `timeToComplete`;
+- a description naming the offering, course, university, city, country, duration and teaching
+  language;
 - course code and credential name from the canonical course;
 - `courseMode` as `Onsite` for the current catalog's campus-based offerings;
-- `inLanguage` as currently supported by the catalog contract;
-- `timeRequired` from the offering duration;
-- `Offer` with normalized USD annual tuition only when a published fee exists;
+- `inLanguage` as BCP 47 tags mapped from the controlled `instruction_languages` facet, omitted
+  when the facet is empty (never defaulted to English, matching the medium-normalization rule);
+- `timeRequired` and `timeToComplete` from the offering duration;
+- `Offer` only when `isConfirmedProgramFee` holds: the official-currency annual amount when it has
+  an ISO 4217 code, otherwise the normalized USD annual tuition, with a `UnitPriceSpecification`
+  whose `referenceQuantity` is one year (`unitCode` `ANN`) and the fee academic year in
+  `description`;
 - `mainEntityOfPage` pointing to the program `WebPage`.
 
-The normalized USD amount is an analytical display value. It must not replace the official native
-currency amount in visible page content or provenance. Do not emit an `Offer` when the fee is
-missing, stale or unpublished.
+Do not emit an `Offer` for indicative, on-request, missing or unpublished fees.
 
 ### `Article`
 
@@ -200,7 +212,18 @@ site's governed author `Person`, the site `Organization` publisher, the page as
 `mainEntityOfPage`, and the page's current image. It does not claim a separate author or date that
 is not present in the content-governance configuration.
 
+### Guides and hubs
+
+Study-abroad guide pages (`components/site/study-abroad-guide-page.tsx`) emit `WebPage`, `Article`
+(governed author, publisher, `publishedDate`), `BreadcrumbList` and, when the guide has FAQs,
+`FAQPage`. The `/universities` and `/india-mbbs-colleges` hubs emit `BreadcrumbList` and
+`CollectionPage` outside their Suspense boundary, so the graph is in the static shell. Article images
+are always made absolute by `getArticleStructuredData`.
+
 ### Program page versus course page
+
+The course-family `Course` node has no `provider`: it is a catalogue category, and naming Students
+Traffic as its provider would tell search and answer engines that Students Traffic teaches it.
 
 `/courses/{slug}` remains a course-family guide. It emits the canonical catalog `Course`, a
 `CollectionPage`, an `Article`, and an `ItemList` of representative offerings. It must not be
@@ -219,8 +242,10 @@ section labels that are not navigable, or URLs that redirect unnecessarily.
 
 ## FAQ rules
 
-`FAQPage` is emitted only when the questions and answers are actually rendered or otherwise clearly
-available on the page. Answers must be complete, factual and sourced internally. The content
+`FAQPage` is emitted only when the questions and answers are actually rendered in the server HTML.
+FAQ lists use `components/shared/faq-disclosure-list.tsx` (native `<details>`), not the Radix
+accordion: Radix renders a closed panel's answer only after it opens, so all but the first answer
+were missing from the HTML that crawlers and answer engines read. Answers must be complete, factual and sourced internally. The content
 standard targets 10–13 university FAQs; country and program FAQ counts may be lower when the topic
 does not apply, but empty or placeholder answers must never be emitted.
 
@@ -243,6 +268,8 @@ The authoritative fields and sourcing workflow are defined in:
 For every page family:
 
 1. Confirm exactly one JSON-LD graph is emitted by the route in addition to the site-wide graph.
+   (Until 2026-10-22 every dynamic-param page emitted its graph twice: the `AppChrome` Suspense
+   fallback rendered the page a second time. The fallback must never render `children`.)
 2. Confirm every `@id` is absolute, stable and unique for its entity.
 3. Confirm all internal references resolve to an entity in the graph or the site-wide graph.
 4. Confirm canonical page URL, breadcrumb final URL and `WebPage.url` agree.

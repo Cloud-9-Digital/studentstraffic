@@ -7,6 +7,7 @@ import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { appendWatiInboundLeadToGoogleSheets } from "@/lib/google-sheets";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
+import { getPhoneCountry } from "@/lib/lead-residence";
 import { syncLeadToCrm } from "@/lib/lead-sync";
 
 type WatiWebhookPayload = {
@@ -344,11 +345,19 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
     messageId ? `Message ID: ${messageId}` : null,
   ].filter(Boolean).join("\n");
 
+  // WhatsApp ids are the full international number, so its country code is
+  // the best residence signal available (the request comes from WATI's servers,
+  // not the student, so IP geolocation would be wrong here).
+  const residenceCountry = getPhoneCountry(
+    normalizedPhone.startsWith("+") ? normalizedPhone : `+${normalizedPhone}`
+  );
+
   const [insertedLead] = await db
     .insert(leads)
     .values({
       fullName,
       phone: normalizedPhone,
+      residenceCountry,
       sourcePath: "/wati",
       sourceUrl: env.siteUrl ? `${env.siteUrl.replace(/\/+$/, "")}/wati` : null,
       sourceQuery,
@@ -381,6 +390,7 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
       submittedAt: submittedAt.toISOString(),
       fullName,
       phone: normalizedPhone,
+      residenceCountry,
       userState: "NA",
       sourcePath: "/wati",
       sourceUrl: env.siteUrl ? `${env.siteUrl.replace(/\/+$/, "")}/wati` : undefined,

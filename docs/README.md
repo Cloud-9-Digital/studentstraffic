@@ -38,6 +38,8 @@ Quick reference for configurations and APIs.
 
 - **[CTA Conversion Status](./analytics/cta-conversion-summary.md)** - Current CTA conversion backlog and historical rollout notes
 - **[SEO Improvements Log](./seo/seo-improvements-2026.md)** - Historical SEO/design implementation record
+- **[AI Discovery](./seo/ai-discovery.md)** - Crawler policy, llms.txt, markdown views for agents, and server-HTML rules
+- **[Structured-Data Contract](./seo/structured-data-contract.md)** - JSON-LD contract for country, university and programme pages
 - **[Archived Optimization Plan](./archive/performance/optimization-plan-2026-05.md)** - Superseded performance recommendations
 - **[Archived Optimization Status](./archive/performance/optimization-status-2026-05.md)** - May 2026 optimization snapshot
 - **[Archived Deployment Checklist](./archive/operations/final-deployment-2026-05.md)** - Historical checklist; not current deployment authority

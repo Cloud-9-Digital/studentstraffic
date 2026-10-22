@@ -95,10 +95,7 @@ export function CourseDirectoryGrid({
                 </div>
                 <p className="mt-4 flex-1 text-sm leading-7 text-muted-foreground">{getConciseSummary(course.summary)}</p>
                 <div className="mt-5 border-t border-border/70 pt-4">
-                  <div className="flex items-center justify-between gap-4">
-                    <p className="text-sm text-muted-foreground">
-                      {course.programCount} option{course.programCount === 1 ? "" : "s"} across {course.countryCount} countr{course.countryCount === 1 ? "y" : "ies"}
-                    </p>
+                  <div className="flex items-center justify-end gap-4">
                     <span className={cn("inline-flex items-center gap-2 text-sm font-semibold", theme.action)}>
                       Open guide <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                     </span>

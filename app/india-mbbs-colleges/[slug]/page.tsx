@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { FaqDisclosureList } from "@/components/shared/faq-disclosure-list";
 import { Badge } from "@/components/ui/badge";
 import { catalogReviewedAt, formatContentDate } from "@/lib/content-governance";
 import {
   getIndiaMbbsCollegeBySlug,
   getIndiaMbbsCollegeSlugs,
 } from "@/lib/data/india-mbbs";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import { getIndiaMbbsCollegeHref, getIndiaMbbsCollegesHref } from "@/lib/routes";
 import {
   getBreadcrumbStructuredData,
@@ -58,7 +58,7 @@ export async function generateMetadata({
   const college = await getIndiaMbbsCollegeBySlug(slug);
 
   if (!college) {
-    return { title: "College Not Found" };
+    return buildNotFoundMetadata("College Not Found");
   }
 
   const description =
@@ -93,7 +93,7 @@ export default async function IndiaMbbsCollegeDetailPage({
   const college = await getIndiaMbbsCollegeBySlug(slug);
 
   if (!college) {
-    notFound();
+    return <MissingPage />;
   }
 
   const overview = college.editorialContent.overview?.trim() || buildOverview(college);
@@ -326,18 +326,13 @@ export default async function IndiaMbbsCollegeDetailPage({
                   </p>
                 </div>
 
-                <Accordion type="single" collapsible className="w-full">
-                  {faq.map((item, index) => (
-                    <AccordionItem key={item.question} value={`faq-${index}`}>
-                      <AccordionTrigger className="text-left text-base font-semibold text-heading">
-                        {item.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-sm leading-7 text-muted-foreground">
-                        {item.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
+                <FaqDisclosureList
+                  items={faq}
+                  name="college-faq"
+                  className="w-full"
+                  questionClassName="text-base font-semibold text-heading"
+                  answerClassName="text-sm leading-7 text-muted-foreground"
+                />
               </section>
             ) : null}
           </div>

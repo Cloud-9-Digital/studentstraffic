@@ -2,8 +2,11 @@
 
 import { useRef, useState } from "react";
 import { Check, Loader2 } from "lucide-react";
+import type { Country } from "react-phone-number-input";
 
+import { useResidenceCountry } from "@/components/site/use-residence-country";
 import { Button } from "@/components/ui/button";
+import { CountrySelect } from "@/components/ui/country-select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
@@ -20,7 +23,8 @@ import { CRM_INDIAN_STATES } from "@/lib/indian-states";
  * context entirely: they go from this form straight to /api/chat/lead.
  *
  * States come from the CRM's own verified option list, so a chat lead cannot
- * arrive with a value the CRM would silently drop.
+ * arrive with a value the CRM would silently drop. They are only asked of
+ * students who live in India; everyone else just picks their country.
  */
 export function ChatLeadForm({
   request,
@@ -35,6 +39,7 @@ export function ChatLeadForm({
   const [pending, setPending] = useState(false);
   const [done, setDone] = useState(false);
   const phoneValidRef = useRef(true);
+  const residence = useResidenceCountry();
 
   if (done) {
     return (
@@ -50,6 +55,11 @@ export function ChatLeadForm({
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    if (!residence.country) {
+      setError("Please select the country you live in.");
+      return;
+    }
 
     if (!phoneValidRef.current) {
       setError("Please enter a valid phone number.");
@@ -68,7 +78,11 @@ export function ChatLeadForm({
         body: JSON.stringify({
           fullName: String(formData.get("fullName") ?? "").trim(),
           phone: String(formData.get("phone") ?? "").trim(),
-          userState: String(formData.get("userState") ?? "").trim(),
+          residenceCountry: residence.country,
+          userState:
+            residence.country === "IN"
+              ? String(formData.get("userState") ?? "").trim()
+              : undefined,
           conversationId,
           countrySlug: request.interest?.countrySlug,
           courseSlug: request.interest?.courseSlug,
@@ -101,10 +115,12 @@ export function ChatLeadForm({
   return (
     <form
       onSubmit={handleSubmit}
+      onFocusCapture={residence.prime}
+      onPointerDownCapture={residence.prime}
       className="mt-3 space-y-3 rounded-xl border border-border bg-muted/40 p-3"
     >
       <p className="text-xs text-muted-foreground">
-        Share three details and a counsellor will call you {request.reason}.
+        Share a few details and a counsellor will call you {request.reason}.
       </p>
 
       <div className="space-y-1.5">
@@ -123,6 +139,22 @@ export function ChatLeadForm({
       </div>
 
       <div className="space-y-1.5">
+        <Label htmlFor="chat-lead-residence" className="text-xs">
+          Country you live in
+        </Label>
+        <CountrySelect
+          id="chat-lead-residence"
+          name="residenceCountry"
+          value={residence.country}
+          onChange={(code) => {
+            residence.setCountry(code);
+            setError(null);
+          }}
+          className="h-10"
+        />
+      </div>
+
+      <div className="space-y-1.5">
         <Label htmlFor="chat-lead-phone" className="text-xs">
           Phone number
         </Label>
@@ -131,33 +163,37 @@ export function ChatLeadForm({
           name="phone"
           required
           className="h-10"
+          defaultCountry={(residence.country as Country | "") || null}
+          onCountryChange={residence.suggestCountry}
           onValidityChange={(valid) => {
             phoneValidRef.current = valid;
           }}
         />
       </div>
 
-      <div className="space-y-1.5">
-        <Label htmlFor="chat-lead-state" className="text-xs">
-          State
-        </Label>
-        <select
-          id="chat-lead-state"
-          name="userState"
-          required
-          defaultValue=""
-          className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm text-foreground outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-        >
-          <option value="" disabled>
-            Select your state
-          </option>
-          {CRM_INDIAN_STATES.map((state) => (
-            <option key={state} value={state}>
-              {state}
+      {residence.country === "IN" ? (
+        <div className="space-y-1.5">
+          <Label htmlFor="chat-lead-state" className="text-xs">
+            State
+          </Label>
+          <select
+            id="chat-lead-state"
+            name="userState"
+            required
+            defaultValue=""
+            className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm text-foreground outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+          >
+            <option value="" disabled>
+              Select your state
             </option>
-          ))}
-        </select>
-      </div>
+            {CRM_INDIAN_STATES.map((state) => (
+              <option key={state} value={state}>
+                {state}
+              </option>
+            ))}
+          </select>
+        </div>
+      ) : null}
 
       {error ? (
         <p role="alert" className="text-xs font-medium text-destructive">

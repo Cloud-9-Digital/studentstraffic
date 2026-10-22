@@ -43,6 +43,11 @@ export type Offering = {
   slug: string;
   courseSlug: string;
   title: string;
+  /** Programme level slug (e.g. bachelors); absent from older API responses. */
+  level?: string | null;
+  levelLabel?: string | null;
+  /** Pre-formatted annual fee, matching the website (official currency, or "Fee on request"). */
+  annualFeeLabel?: string;
   durationYears: number;
   annualTuitionUsd: number;
   totalTuitionUsd: number;

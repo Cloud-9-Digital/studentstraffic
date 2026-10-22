@@ -6,9 +6,10 @@ import { connection } from "next/server";
 import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { MarkdownContent } from "@/components/site/markdown-content";
 import { TableOfContents } from "@/components/blog/table-of-contents";
-import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
+import { absoluteUrl, buildNotFoundMetadata, getOgImageUrl } from "@/lib/metadata";
 import { buildLinkRules, linkifyMarkdown } from "@/lib/blog-autolinks";
 import { ReadingProgress } from "@/components/blog/reading-progress";
 import {
@@ -170,7 +171,7 @@ export async function generateMetadata({
   const { slug } = await params;
   if (slug === PLACEHOLDER_BLOG_SLUG) return {};
   const post = await getPost(slug);
-  if (!post) return {};
+  if (!post) return buildNotFoundMetadata();
 
   const title = post.metaTitle?.trim() || post.title;
   const description =
@@ -268,7 +269,7 @@ export default async function BlogPostPage({
   }
   const post = await getPost(slug);
 
-  if (!post) notFound();
+  if (!post) return <MissingPage />;
 
   const content = post.content ?? "";
   const rt = readingTime(content);

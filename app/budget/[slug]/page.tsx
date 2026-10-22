@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ import {
   getBudgetGuideBySlug,
   getBudgetGuideSummaries,
 } from "@/lib/discovery-pages";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
@@ -44,7 +44,7 @@ export async function generateMetadata({
   const guide = await getBudgetGuideBySlug(slug);
 
   if (!guide) {
-    return { title: "Budget Guide Not Found" };
+    return buildNotFoundMetadata("Budget Guide Not Found");
   }
 
   return buildIndexableMetadata({
@@ -69,7 +69,7 @@ export default async function BudgetGuidePage({
   const guide = await getBudgetGuideBySlug(slug);
 
   if (!guide) {
-    notFound();
+    return <MissingPage />;
   }
 
   const budgetLabel = formatCurrencyUsd(guide.budgetUsd);
@@ -146,7 +146,7 @@ export default async function BudgetGuidePage({
               Matching Universities
             </p>
             <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-              {guide.programs.length} option{guide.programs.length === 1 ? "" : "s"} within this budget band.
+              Options within this budget band.
             </h2>
             <p className="max-w-3xl text-sm leading-7 text-muted-foreground">
               These results are limited to published programs with annual tuition

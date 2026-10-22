@@ -452,6 +452,8 @@ export const leads = pgTable(
     needsFmgeSession: boolean("needs_fmge_session"),
     documentUrl: text("document_url"),
     documentType: text("document_type"),
+    /** ISO 3166-1 alpha-2 code of the country the student lives in. */
+    residenceCountry: varchar("residence_country", { length: 2 }),
     userState: text("user_state"),
     neetScore: integer("neet_score"),
     neetCategory: text("neet_category"),

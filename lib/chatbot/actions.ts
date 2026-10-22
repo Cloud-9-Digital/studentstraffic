@@ -33,18 +33,11 @@ export type ShortlistResult = {
 export async function shortlistUniversities(
   slugs: string[]
 ): Promise<ShortlistResult> {
-  const empty: ShortlistResult = {
-    added: [],
-    alreadyThere: [],
-    unknown: [],
-    requiresSignIn: false,
-  };
-
   const session = await auth();
   const email = session?.user?.email;
 
   if (!email) {
-    return { ...empty, requiresSignIn: true };
+    return shortlistUniversitiesForUser(null, slugs);
   }
 
   /*
@@ -53,11 +46,28 @@ export async function shortlistUniversities(
    * to users.id, so writing with it does not merely save to the wrong place,
    * it fails outright.
    */
-  const userId = await resolveDbUserId(email);
+  return shortlistUniversitiesForUser(await resolveDbUserId(email), slugs);
+}
+
+/**
+ * The same save for a caller that already knows the account — the mobile app,
+ * whose bearer token resolves straight to a users row. `null` means nobody is
+ * signed in, or the sign-in has no site account to hang a shortlist on.
+ */
+export async function shortlistUniversitiesForUser(
+  userId: string | null,
+  slugs: string[]
+): Promise<ShortlistResult> {
+  const empty: ShortlistResult = {
+    added: [],
+    alreadyThere: [],
+    unknown: [],
+    requiresSignIn: false,
+  };
 
   if (!userId) {
-    // Signed in, but with no site account to hang a shortlist on. Saving
-    // genuinely does need one, so the answer is the same as for a visitor.
+    // Saving genuinely needs an account, so a sign-in with no site account
+    // behind it gets the same answer as a visitor.
     return { ...empty, requiresSignIn: true };
   }
 

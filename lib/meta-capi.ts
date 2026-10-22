@@ -74,7 +74,7 @@ export async function sendMetaLeadEvent(
     fn: hash(first),
     ln: hash(last),
     st: hash(payload.userState?.replace(/\s+/g, "")),
-    country: hash("in"),
+    country: hash(payload.residenceCountry),
     // fbc/fbp and the IP/UA pair are unhashed by design — Meta matches on them raw.
     fbc: payload.fbc,
     fbp: payload.fbp,

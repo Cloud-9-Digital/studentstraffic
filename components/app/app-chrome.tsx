@@ -2,6 +2,9 @@
 
 import { Suspense } from "react";
 import { usePathname } from "next/navigation";
+
+import Loading from "@/app/loading";
+
 import { StandardAppChrome } from "./standard-app-chrome";
 
 const BARE_PREFIXES = [
@@ -53,9 +56,17 @@ export function AppChrome({
     // StandardAppChrome is the correct default for static prerendering —
     // it covers the vast majority of pages. Admin/login pages swap on
     // hydration; they are not statically prerendered anyway.
+    //
+    // The fallback must not render `children`. On dynamic-param routes
+    // usePathname suspends during prerender, so the fallback lands in the
+    // shell and the request-time resume then rendered the page twice: once
+    // into the fallback and once into AppChromeInner. Catalogue pages shipped
+    // two copies of their body and JSON-LD graph (~2.5 MB of HTML).
     <Suspense
       fallback={
-        <StandardAppChrome chatEnabled={chatEnabled}>{children}</StandardAppChrome>
+        <StandardAppChrome chatEnabled={chatEnabled}>
+          <Loading />
+        </StandardAppChrome>
       }
     >
       <AppChromeInner chatEnabled={chatEnabled}>{children}</AppChromeInner>

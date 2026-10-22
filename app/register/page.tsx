@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -6,6 +7,14 @@ import { GraduationCap, MessageCircle, ClipboardList } from "lucide-react";
 import { auth } from "@/lib/auth";
 import { getSafeCallbackPath } from "@/lib/auth/safe-callback";
 import { RegisterForm } from "@/components/register/register-form";
+import { buildNoIndexMetadata } from "@/lib/metadata";
+
+// Account pages are not search content; without this they inherited the root
+// layout's index/follow and homepage canonical.
+export const metadata: Metadata = buildNoIndexMetadata({
+  title: "Create an account",
+  alternates: { canonical: null },
+});
 
 export default async function RegisterPage({
   searchParams,

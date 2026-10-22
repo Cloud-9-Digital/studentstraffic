@@ -11,8 +11,14 @@ import {
   hasRenderableProgramLivingFee,
 } from "@/lib/utils";
 import { getUniversityProgramHref } from "@/lib/routes";
+import { programmeLevelLabels, programmeLevels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
 
+import { ProgramsDirectory, type ProgramDirectoryRow } from "./programs-directory";
 import { SectionLabel } from "./shared";
+
+// Above this many programmes the full cards make the page very long, so the section switches
+// to the compact, filterable directory.
+const CARD_LIMIT = 8;
 
 export function UniversityProgramsSection({
   programs,
@@ -21,13 +27,57 @@ export function UniversityProgramsSection({
 }) {
   return (
     <div id="programs" className="deferred-render scroll-mt-24 space-y-5 py-10">
-      <div className="flex items-end justify-between gap-4">
-        <SectionLabel>Programs at this university</SectionLabel>
-        <span className="shrink-0 text-xs font-medium text-muted-foreground">
-          {programs.length} {programs.length === 1 ? "programme" : "programmes"}
-        </span>
-      </div>
-      <ProgramOfferingsTable programs={programs} />
+      <SectionLabel>Programs at this university</SectionLabel>
+      {programs.length > CARD_LIMIT ? (
+        <ProgramDirectoryList programs={programs} />
+      ) : (
+        <ProgramOfferingsTable programs={programs} />
+      )}
+    </div>
+  );
+}
+
+function levelRank(level: string) {
+  const rank = programmeLevels.indexOf(level as ProgrammeLevel);
+  return rank === -1 ? programmeLevels.length : rank;
+}
+
+function ProgramDirectoryList({ programs }: { programs: FinderProgram[] }) {
+  // Only the fields the list shows are sent to the client, not the full university/course records.
+  const rows: ProgramDirectoryRow[] = programs
+    .map((program, index) => {
+      const level = program.course.level ?? "other";
+      return {
+        index,
+        row: {
+          slug: program.offering.slug,
+          href: getUniversityProgramHref(program.offering.slug),
+          // Offering titles often end with ", <University name>", which repeats on its own page.
+          title: program.offering.title.endsWith(`, ${program.university.name}`)
+            ? program.offering.title.slice(0, -(program.university.name.length + 2))
+            : program.offering.title,
+          level,
+          levelLabel: programmeLevelLabels[level as ProgrammeLevel] ?? "Other",
+          feeLabel: getProgramAnnualFeeLabel(program.offering),
+          fee: formatProgramAnnualFee(program.offering, "Fee plan on request"),
+          duration: formatProgramDuration(program.offering.durationYears),
+        },
+      };
+    })
+    .sort((a, b) => levelRank(a.row.level) - levelRank(b.row.level) || a.index - b.index)
+    .map(({ row }) => row);
+
+  const levels = [...new Set(rows.map((row) => row.level))].map((level) => ({
+    level,
+    label: rows.find((row) => row.level === level)!.levelLabel,
+  }));
+
+  return (
+    <div className="space-y-4">
+      <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+        Open a programme for eligibility, tuition, curriculum and application planning.
+      </p>
+      <ProgramsDirectory rows={rows} levels={levels} />
     </div>
   );
 }

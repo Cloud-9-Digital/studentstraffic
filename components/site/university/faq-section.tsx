@@ -1,10 +1,5 @@
 import type { Faq } from "@/lib/data/types";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FaqDisclosureList } from "@/components/shared/faq-disclosure-list";
 
 import { SectionLabel } from "./shared";
 
@@ -44,27 +39,15 @@ export function UniversityFaqSection({
         </div>
       )}
 
-      <Accordion
-        type="single"
-        collapsible
-        defaultValue="faq-0"
+      <FaqDisclosureList
+        items={faq}
+        name="university-faq"
+        defaultOpenIndex={0}
         className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card"
-      >
-        {faq.map((item, index) => (
-          <AccordionItem
-            key={item.question}
-            value={`faq-${index}`}
-            className="border-b-0 px-6"
-          >
-            <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline">
-              {item.question}
-            </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground leading-7">
-              {item.answer}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+        itemClassName="border-b-0 px-6"
+        questionClassName="font-semibold text-foreground"
+        answerClassName="text-muted-foreground leading-7"
+      />
     </div>
   );
 }

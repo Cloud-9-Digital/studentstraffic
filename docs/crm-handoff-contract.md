@@ -44,6 +44,23 @@ This repo does not own:
 - `utmMedium`
 - `utmCampaign`
 
+## Country of residence
+
+`residenceCountry` is the ISO 3166-1 alpha-2 code (`IN`, `AE`, `GB`, …) of the
+country the student lives in, stored on `leads.residence_country`. Every web
+lead form asks for it; India-only campaign forms that lock the phone to +91
+send `IN`, and the seminar forms (Tamil Nadu cities only) record `IN`. When a
+submission carries none (WATI inbound, older app builds, a tab opened before the
+field shipped) the server falls back to Vercel's IP country, then the phone
+number's country. `userState` is only asked for, and only required, when the
+country is `IN`.
+
+Downstream: the CRM gets it as a timeline-notes line ("Country of residence:
+India (IN)"); Pabbly and the legacy intake get `residenceCountry` and
+`residenceCountryName`; the website-lead Google Sheets row shows the country
+name in the state column when there is no state; Meta CAPI hashes it as
+`country` (it was hard-coded to `in` before).
+
 ## Current entry surfaces
 
 - general lead forms

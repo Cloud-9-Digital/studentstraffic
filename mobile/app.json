@@ -9,7 +9,7 @@
     "newArchEnabled": false,
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-transparent.png",
+      "image": "./assets/splash-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#0a4a3a"
     },
@@ -18,8 +18,13 @@
       "bundleIdentifier": "com.studentstraffic.app",
       "infoPlist": {
         "NSMicrophoneUsageDescription": "Students Traffic needs microphone access for voice calls with student guides.",
-        "UIBackgroundModes": ["remote-notification"]
-      }
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      },
+      "associatedDomains": [
+        "applinks:www.studentstraffic.com"
+      ]
     },
     "android": {
       "package": "com.studentstraffic.app",
@@ -43,7 +48,29 @@
         "android.permission.RECEIVE_BOOT_COMPLETED",
         "android.permission.POST_NOTIFICATIONS"
       ],
-      "versionCode": 16
+      "versionCode": 16,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "www.studentstraffic.com",
+              "pathPrefix": "/university/"
+            },
+            {
+              "scheme": "https",
+              "host": "www.studentstraffic.com",
+              "pathPrefix": "/countries"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -52,7 +79,15 @@
       "expo-font",
       "@react-native-firebase/app",
       "@react-native-firebase/messaging",
-      "./notifee.plugin.js"
+      "./notifee.plugin.js",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0a4a3a",
+          "image": "./assets/splash-logo.png",
+          "imageWidth": 200
+        }
+      ]
     ],
     "extra": {
       "eas": {

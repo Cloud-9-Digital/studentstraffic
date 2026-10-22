@@ -189,6 +189,8 @@ export async function submitSeminarLeadAction(
           phone: normalizedPhone,
           city: data.city,
           seminarEvent: data.seminarEvent,
+          // Seminars are in Tamil Nadu and the city list is Tamil Nadu only.
+          residenceCountry: "IN",
           userState: "Tamil Nadu",
           notes: `Attending: ${data.seminarEvent} | Home city: ${data.city}`,
           sourcePath: data.sourcePath,
@@ -235,6 +237,8 @@ export async function submitSeminarLeadAction(
           phone: normalizedPhone,
           city: data.city,
           seminarEvent: data.seminarEvent,
+          // Seminars are in Tamil Nadu and the city list is Tamil Nadu only.
+          residenceCountry: "IN",
           userState: "Tamil Nadu",
           notes: `Attending: ${data.seminarEvent} | Home city: ${data.city}`,
           sourcePath: data.sourcePath,

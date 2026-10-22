@@ -10,6 +10,7 @@ import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { LowFeeUniversitiesShowcase } from "@/components/site/low-fee-universities-showcase";
 import { getCountryHeroImage } from "@/lib/country-media";
 import {
+  getArticleStructuredData,
   getBreadcrumbStructuredData,
   getFaqStructuredData,
   getStructuredDataGraph,
@@ -127,11 +128,21 @@ export function StudyAbroadGuidePage({
       datePublished: publishedDate,
       dateModified: publishedDate,
     }),
+    // Guides are editorial articles: Article ties the page to the governed
+    // author and publisher in the site-wide graph.
+    getArticleStructuredData({
+      path,
+      headline: title,
+      description: summary,
+      datePublished: publishedDate,
+      dateModified: publishedDate,
+      image: heroImage?.url,
+    }),
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
       { name: title, path },
     ]),
-    getFaqStructuredData(faqItems, path),
+    faqItems.length ? getFaqStructuredData(faqItems, path) : null,
   ]);
 
   return (

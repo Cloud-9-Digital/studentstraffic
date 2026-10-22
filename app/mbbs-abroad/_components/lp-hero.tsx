@@ -108,7 +108,6 @@ export function LpHero() {
                 { value: "3,000+", label: "Students Admitted" },
                 { value: "6 Countries", label: "We Specialise In" },
                 { value: "Since 2014", label: "Trusted Platform" },
-                { value: "500+", label: "Universities" },
               ].map(({ value, label }) => (
                 <div key={label}>
                   <div className="text-xl font-black text-[#F5A623]">{value}</div>

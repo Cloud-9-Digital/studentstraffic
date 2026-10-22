@@ -25,6 +25,7 @@ import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
+import { resolveResidenceCountry } from "@/lib/lead-residence";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -49,13 +50,18 @@ export const CHATBOT_CTA_VARIANT = "chatbot";
 export type ChatLeadInput = {
   fullName: string;
   phone: string;
-  userState: string;
+  residenceCountry?: string;
+  userState?: string;
   email?: string;
   countrySlug?: string;
   courseSlug?: string;
   universitySlug?: string;
   conversationId?: string;
   page: { path: string; url?: string; title?: string };
+  /** Set by the mobile app's endpoint; the website sends nothing. */
+  channel?: "mobile_app";
+  /** The signed-in account, where the surface knows it (the app's bearer token). */
+  userId?: string;
 };
 
 export type ChatLeadResult =
@@ -131,6 +137,25 @@ export async function captureChatLead(
   const sourceQuery = parseSourceQuery(input.page.url);
   const tracking = getTrackingSnapshot(cookieStore, sourceQuery);
   const metaEventId = randomUUID();
+  const residenceCountry = resolveResidenceCountry({
+    submitted: input.residenceCountry,
+    headerStore,
+    phone: input.phone,
+  });
+  const userState = input.userState?.trim() || undefined;
+  const clientContext: ClientContext = {
+    surface: "chatbot",
+    ...(input.channel ? { channel: input.channel } : {}),
+    ...(input.userId ? { userId: input.userId } : {}),
+  };
+
+  if (!residenceCountry) {
+    return { ok: false, error: "Please select the country you live in." };
+  }
+
+  if (residenceCountry === "IN" && (!userState || userState.length < 2)) {
+    return { ok: false, error: "Please select your state." };
+  }
 
   // Same two guards as the website forms: a repeat phone inside 15 minutes is a
   // double submit, and the per-IP / per-phone windows stop enumeration.
@@ -191,7 +216,8 @@ export async function captureChatLead(
         fullName: input.fullName,
         phone: input.phone,
         email: input.email,
-        userState: input.userState,
+        residenceCountry,
+        userState,
         courseSlug: input.courseSlug,
         countrySlug: input.countrySlug,
         universitySlug: input.universitySlug,
@@ -220,7 +246,7 @@ export async function captureChatLead(
         userAgent: headerStore.get("user-agent") ?? null,
         ipAddress,
         acceptLanguage: headerStore.get("accept-language") ?? null,
-        clientContext: { surface: "chatbot" } as ClientContext,
+        clientContext,
         crmSyncStatus: shouldSyncCrm ? "pending" : "skipped",
         pabblySyncStatus: shouldSyncPabbly ? "pending" : "skipped",
         leadSquaredSyncStatus: "skipped",
@@ -246,7 +272,8 @@ export async function captureChatLead(
       fullName: input.fullName,
       phone: input.phone,
       email: input.email,
-      userState: input.userState,
+      residenceCountry,
+      userState,
       courseSlug: input.courseSlug,
       countrySlug: input.countrySlug,
       universitySlug: input.universitySlug,
@@ -268,7 +295,7 @@ export async function captureChatLead(
       userAgent: headerStore.get("user-agent") ?? undefined,
       ipAddress: ipAddress ?? undefined,
       acceptLanguage: headerStore.get("accept-language") ?? undefined,
-      clientContext: { surface: "chatbot" } as ClientContext,
+      clientContext,
     });
 
     const jobId = await enqueueLeadDeliveryJob({

@@ -30,6 +30,7 @@ import {
   NEET_PREDICTOR_SOURCE_PATH,
 } from "@/lib/lead-delivery-routes";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
+import { isValidLeadPhone, resolveResidenceCountry } from "@/lib/lead-residence";
 import { getTrackingSnapshot } from "@/lib/tracking";
 import {
   consumePublicFormRateLimits,
@@ -42,7 +43,10 @@ export type LeadFormState = {
 
 const leadSchema = z.object({
   fullName: z.string().trim().min(2, "Please enter your full name."),
-  phone: z.string().trim().min(7, "Please enter a valid phone number."),
+  phone: z
+    .string()
+    .trim()
+    .refine(isValidLeadPhone, "Please enter a valid phone number."),
   email: z
     .string()
     .trim()
@@ -51,7 +55,9 @@ const leadSchema = z.object({
     .refine((value) => !value || /\S+@\S+\.\S+/.test(value), {
       message: "Please enter a valid email address.",
     }),
-  userState: z.string().trim().min(2, "Please enter your state."),
+  residenceCountry: z.string().trim().optional(),
+  // Required below only for students living in India.
+  userState: z.string().trim().optional(),
   neetScore: z.string().trim().optional(),
   neetCategory: z.string().trim().optional(),
   courseSlug: z.string().trim().optional(),
@@ -77,6 +83,7 @@ export async function submitLeadAction(
     fullName: getFormString(formData, "fullName"),
     phone: getFormString(formData, "phone"),
     email: getFormString(formData, "email"),
+    residenceCountry: getFormString(formData, "residenceCountry"),
     userState: getFormString(formData, "userState"),
     neetScore: getFormString(formData, "neetScore"),
     neetCategory: getFormString(formData, "neetCategory"),
@@ -104,6 +111,23 @@ export async function submitLeadAction(
   }
 
   const data = parsed.data;
+  const headerStore = await headers();
+  const residenceCountry = resolveResidenceCountry({
+    submitted: data.residenceCountry,
+    headerStore,
+    phone: data.phone,
+  });
+
+  if (!residenceCountry) {
+    return { error: "Please select the country you live in." };
+  }
+
+  const userState = emptyToUndefined(data.userState);
+
+  if (residenceCountry === "IN" && (!userState || userState.length < 2)) {
+    return { error: "Please select your state." };
+  }
+
   const trimmedNeetScore = data.neetScore?.trim();
   let neetScore: number | undefined;
 
@@ -145,7 +169,6 @@ export async function submitLeadAction(
 
   const db = getDb();
   const cookieStore = await cookies();
-  const headerStore = await headers();
   const submittedAt = new Date();
   const sourceQuery = parseJsonObject<QueryParamMap>(data.sourceQuery);
   const clientContext = parseJsonObject<ClientContext>(data.clientContext);
@@ -209,7 +232,8 @@ export async function submitLeadAction(
         fullName: data.fullName,
         phone: data.phone,
         email: emptyToUndefined(data.email),
-        userState: data.userState,
+        residenceCountry,
+        userState,
         neetScore,
         neetCategory,
         courseSlug: emptyToUndefined(data.courseSlug),
@@ -259,7 +283,8 @@ export async function submitLeadAction(
         fullName: data.fullName,
         phone: data.phone,
         email: emptyToUndefined(data.email),
-        userState: data.userState,
+        residenceCountry,
+        userState,
         neetScore,
         neetCategory,
         courseSlug: emptyToUndefined(data.courseSlug),

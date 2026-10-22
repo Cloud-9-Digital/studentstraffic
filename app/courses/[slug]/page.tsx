@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { ArrowRight, BookOpen, Building2, Globe2, Lightbulb, TrendingUp } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { CountryFlag } from "@/components/site/country-flag";
@@ -24,7 +24,7 @@ import {
   getProgramPreviewForCourse,
 } from "@/lib/data/catalog";
 import { getBudgetGuideSummaries } from "@/lib/discovery-pages";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import {
   getArticleStructuredData,
   getBreadcrumbStructuredData,
@@ -91,7 +91,7 @@ export async function generateMetadata({
   const { course, summary } = await getCoursePageData(slug);
 
   if (!course) {
-    return { title: "Course Not Found" };
+    return buildNotFoundMetadata("Course Not Found");
   }
 
   const countries = summary.countries.map((country) => country.name);
@@ -129,7 +129,7 @@ export default async function CoursePage({
   const { course, summary, previewPrograms, budgetGuides } = await getCoursePageData(slug);
 
   if (!course) {
-    notFound();
+    return <MissingPage />;
   }
   const countries = summary.countries;
   const finderHref = `/universities?course=${course.slug}`;
@@ -235,7 +235,7 @@ export default async function CoursePage({
                 Available destinations
               </p>
               <h2 className="mt-4 font-display text-2xl font-bold tracking-tight text-heading">
-                {countries.length} {countries.length === 1 ? "country" : "countries"}
+                Where to study
               </h2>
               <p className="mt-3 text-base leading-7 text-muted-foreground group-hover:text-foreground/80 transition-colors">
                 These are some of the destinations where students currently find
@@ -250,7 +250,7 @@ export default async function CoursePage({
                 University options
               </p>
               <h2 className="mt-4 font-display text-2xl font-bold tracking-tight text-heading">
-                {summary.programCount} listed option{summary.programCount === 1 ? "" : "s"}
+                Compare universities
               </h2>
               <p className="mt-3 text-base leading-7 text-muted-foreground group-hover:text-foreground/80 transition-colors">
                 Browse these options when you want to move from course guidance to
@@ -312,11 +312,11 @@ export default async function CoursePage({
                       Budget Guide
                     </p>
                     <h2 className="relative z-10 mt-3 font-display text-4xl font-bold text-white group-hover:scale-105 origin-left transition-transform duration-300">
-                      Under \${guide.budgetUsd.toLocaleString("en-US")}
+                      Under ${guide.budgetUsd.toLocaleString("en-US")}
                     </h2>
                     <div className="relative z-10 mt-8 flex items-center justify-between">
                       <p className="text-sm font-medium text-white/80">
-                        {guide.programCount} listed options inside this band.
+                        Options at or below this annual tuition.
                       </p>
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md group-hover:bg-white group-hover:text-primary transition-colors">
                         <ArrowRight className="h-5 w-5" />

@@ -1,0 +1,131 @@
+"use client";
+
+import Link from "next/link";
+import { useMemo, useState } from "react";
+import { ArrowRight, Search } from "lucide-react";
+
+import { cn } from "@/lib/utils";
+
+export type ProgramDirectoryRow = {
+  slug: string;
+  href: string;
+  title: string;
+  level: string;
+  levelLabel: string;
+  feeLabel: string;
+  fee: string;
+  duration: string;
+};
+
+const INITIAL_VISIBLE = 10;
+const SEARCH_THRESHOLD = 15;
+
+// Compact, filterable list for universities with many programmes. Every row stays in the
+// server-rendered HTML (rows past the first page are only hidden), so crawlers and AI agents
+// still see every programme link.
+export function ProgramsDirectory({
+  rows,
+  levels,
+}: {
+  rows: ProgramDirectoryRow[];
+  levels: { level: string; label: string }[];
+}) {
+  const [activeLevel, setActiveLevel] = useState("all");
+  const [query, setQuery] = useState("");
+  const [expanded, setExpanded] = useState(false);
+
+  const matches = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return new Set(
+      rows
+        .filter((row) => activeLevel === "all" || row.level === activeLevel)
+        .filter((row) => !needle || row.title.toLowerCase().includes(needle))
+        .map((row) => row.slug),
+    );
+  }, [rows, activeLevel, query]);
+
+  const filtering = activeLevel !== "all" || query.trim() !== "";
+  // Unfiltered, only the first page shows until "Show all"; a filter or search shows every match.
+  const visible = filtering || expanded
+    ? matches
+    : new Set(rows.slice(0, INITIAL_VISIBLE).map((row) => row.slug));
+
+  return (
+    <div className="space-y-4">
+      {levels.length > 1 || rows.length > SEARCH_THRESHOLD ? (
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          {levels.length > 1 ? (
+            <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none [-webkit-overflow-scrolling:touch]">
+              {[{ level: "all", label: "All" }, ...levels].map((option) => (
+                <button
+                  key={option.level}
+                  type="button"
+                  onClick={() => setActiveLevel(option.level)}
+                  aria-pressed={activeLevel === option.level}
+                  className={cn(
+                    "flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors",
+                    activeLevel === option.level
+                      ? "border-primary bg-primary text-white shadow-sm"
+                      : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground",
+                  )}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          ) : null}
+          {rows.length > SEARCH_THRESHOLD ? (
+            <label className="relative block sm:w-64">
+              <span className="sr-only">Find a programme</span>
+              <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Find a programme"
+                className="h-10 w-full rounded-full border border-border bg-card pl-9 pr-4 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-primary/50"
+              />
+            </label>
+          ) : null}
+        </div>
+      ) : null}
+
+      <ul className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card">
+        {rows.map((row) => {
+          return (
+            <li key={row.slug} hidden={!visible.has(row.slug)}>
+              <Link
+                href={row.href}
+                className="group flex items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/40 sm:px-5"
+              >
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
+                    {row.title}
+                  </p>
+                  <p className="mt-0.5 text-xs text-muted-foreground">
+                    {row.levelLabel} · {row.duration} · {row.feeLabel}: <span className="font-medium text-foreground">{row.fee}</span>
+                  </p>
+                </div>
+                <ArrowRight className="size-4 shrink-0 text-primary transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+
+      {matches.size === 0 ? (
+        <p className="text-sm text-muted-foreground">No programme matches that search.</p>
+      ) : null}
+
+      {!filtering && rows.length > INITIAL_VISIBLE ? (
+        <button
+          type="button"
+          onClick={() => setExpanded((value) => !value)}
+          className="w-full rounded-full border border-border bg-card px-4 py-2.5 text-sm font-semibold text-primary transition-colors hover:border-primary/40"
+        >
+          {expanded ? "Show fewer programmes" : "Show all programmes"}
+        </button>
+      ) : null}
+    </div>
+  );
+}

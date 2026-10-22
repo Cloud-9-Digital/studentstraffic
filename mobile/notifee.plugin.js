@@ -135,7 +135,7 @@ function withNativeIncomingCallFiles(config) {
         );
         source = source.replace(
           "  /**\n   * Returns the name of the main component",
-          "  override fun onNewIntent(intent: android.content.Intent?) {\n    super.onNewIntent(intent)\n    IncomingCallStore.captureLaunchIntent(this, intent)\n    setIntent(intent)\n  }\n\n  /**\n   * Returns the name of the main component",
+          "  override fun onNewIntent(intent: android.content.Intent) {\n    super.onNewIntent(intent)\n    IncomingCallStore.captureLaunchIntent(this, intent)\n    setIntent(intent)\n  }\n\n  /**\n   * Returns the name of the main component",
         );
         fs.writeFileSync(mainActivityPath, source);
       }

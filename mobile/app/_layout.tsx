@@ -145,6 +145,10 @@ export default function RootLayout() {
                 }}
               />
               <Stack.Screen
+                name="mira"
+                options={{ animation: reducedMotion ? "none" : "slide_from_bottom" }}
+              />
+              <Stack.Screen
                 name="country/[slug]"
                 options={{ animation: reducedMotion ? "none" : "slide_from_right" }}
               />

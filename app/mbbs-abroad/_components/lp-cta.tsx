@@ -24,12 +24,11 @@ export function LpCta() {
               on your NEET score and budget. No pressure.
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div className="mt-8 grid grid-cols-3 gap-4">
               {[
                 { n: "3,000+", l: "Students Admitted" },
                 { n: "10+", l: "Countries" },
                 { n: "Since 2014", l: "In This Field" },
-                { n: "500+", l: "Universities" },
               ].map(({ n, l }) => (
                 <div key={l} className="rounded-xl border border-white/10 px-4 py-3 text-center">
                   <p className="text-xl font-black" style={{ color: "#F5A623" }}>{n}</p>

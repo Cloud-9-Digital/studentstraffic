@@ -88,7 +88,7 @@ function renderGuide(guide: Guide) {
       key={guide.slug}
       kicker={`${guide.course.shortName} under ${formatCurrencyUsd(guide.budgetUsd)}`}
       title={`${guide.leftCountry.name} vs ${guide.rightCountry.name}`}
-      description={`${guide.leftStats.programCount} options in ${guide.leftCountry.name} and ${guide.rightStats.programCount} options in ${guide.rightCountry.name}. Fee range: ${leftRange} and ${rightRange}.`}
+      description={`Annual tuition: ${leftRange} in ${guide.leftCountry.name}, ${rightRange} in ${guide.rightCountry.name}.`}
       href={getComparisonHref(guide.slug)}
       footer="Open comparison"
     />

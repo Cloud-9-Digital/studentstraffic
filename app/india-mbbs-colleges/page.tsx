@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
+import { JsonLd } from "@/components/shared/json-ld";
 import { IndiaMbbsExplorer } from "@/components/site/india-mbbs-explorer";
 import { buildIndexableMetadata, buildNoIndexMetadata } from "@/lib/metadata";
+import {
+  getBreadcrumbStructuredData,
+  getCollectionPageStructuredData,
+  getCountryStructuredDataId,
+  getStructuredDataGraph,
+} from "@/lib/structured-data";
 import {
   getIndiaMbbsFilterOptions,
   queryIndiaMbbsCollegesPage,
@@ -52,9 +59,27 @@ export default function IndiaMbbsCollegesPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   return (
-    <Suspense fallback={<IndiaMbbsFallback />}>
-      <IndiaMbbsExplorerSection searchParams={searchParams} />
-    </Suspense>
+    <>
+      <Suspense fallback={<IndiaMbbsFallback />}>
+        <IndiaMbbsExplorerSection searchParams={searchParams} />
+      </Suspense>
+      {/* Outside the Suspense boundary so the graph is in the static shell. */}
+      <JsonLd
+        data={getStructuredDataGraph([
+          getBreadcrumbStructuredData([
+            { name: "Home", path: "/" },
+            { name: "India MBBS colleges", path: "/india-mbbs-colleges" },
+          ]),
+          getCollectionPageStructuredData({
+            path: "/india-mbbs-colleges",
+            name: "MBBS colleges in India",
+            description:
+              "Government and private MBBS colleges in India by state, management type and seats, using NMC-sourced data.",
+            aboutIds: [getCountryStructuredDataId("india")],
+          }),
+        ])}
+      />
+    </>
   );
 }
 

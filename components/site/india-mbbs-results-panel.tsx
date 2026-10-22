@@ -80,14 +80,6 @@ export function IndiaMbbsResultsPanel({
     () => createPageNumbers(results.totalPages, results.currentPage),
     [results.currentPage, results.totalPages],
   );
-  const firstResult =
-    results.totalItems === 0
-      ? 0
-      : (results.currentPage - 1) * results.pageSize + 1;
-  const lastResult =
-    results.totalItems === 0
-      ? 0
-      : Math.min(results.currentPage * results.pageSize, results.totalItems);
   const selectedSort = getIndiaMbbsSort(currentSort);
 
   return (
@@ -95,7 +87,7 @@ export function IndiaMbbsResultsPanel({
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <p className="text-sm leading-none font-semibold text-heading">
-            {results.totalItems.toLocaleString()} colleges
+            Colleges
           </p>
         </div>
 
@@ -182,10 +174,6 @@ export function IndiaMbbsResultsPanel({
 
       {!isLoading && results.totalPages > 1 ? (
         <>
-          <p className="text-center text-sm text-muted-foreground">
-            Showing {firstResult}-{lastResult} of{" "}
-            {results.totalItems.toLocaleString()}
-          </p>
           <Pagination>
             <PaginationContent>
               <PaginationItem>

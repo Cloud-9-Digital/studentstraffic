@@ -84,7 +84,11 @@ function ProgrammeMenuPanel({
   open: boolean;
   onClose: () => void;
 }) {
-  const totalCourses = groups.reduce((sum, group) => sum + group.courses.length, 0);
+  // The course links mount on first open and then stay for the close
+  // animation. Rendered up front, every page shipped ~200 links to noindexed
+  // finder-filter URLs in its server HTML and RSC payload.
+  const [hasOpened, setHasOpened] = useState(open);
+  if (open && !hasOpened) setHasOpened(true);
 
   return (
     <div
@@ -106,7 +110,7 @@ function ProgrammeMenuPanel({
 
       <div className="max-h-[min(28rem,calc(100vh-10rem))] overflow-y-auto p-3">
         <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2">
-          {groups.map((group) => (
+          {hasOpened && groups.map((group) => (
             <section key={group.stream}>
               <p className="px-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary/80">
                 {group.label}
@@ -129,10 +133,7 @@ function ProgrammeMenuPanel({
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-3 border-t border-border bg-muted/20 px-5 py-3">
-        <p className="text-xs font-medium text-muted-foreground">
-          {totalCourses} program{totalCourses === 1 ? "" : "s"} in {label}
-        </p>
+      <div className="flex items-center justify-end gap-3 border-t border-border bg-muted/20 px-5 py-3">
         <Link
           href="/courses"
           onClick={onClose}

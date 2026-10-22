@@ -10,7 +10,6 @@ type Props = {
   heroHeadlinePrefix: string;
   heroHeadlineHighlight: string;
   heroSubtext: string;
-  universityCount: number;
   minTotalInrLabel: string;
   maxTotalInrLabel: string;
   durationYears: number;
@@ -24,13 +23,11 @@ export function LpHero({
   heroHeadlinePrefix,
   heroHeadlineHighlight,
   heroSubtext,
-  universityCount,
   minTotalInrLabel,
   maxTotalInrLabel,
   durationYears,
 }: Props) {
   const stats = [
-    { value: `${universityCount}+`, label: "NMC-Aligned Universities" },
     { value: `${minTotalInrLabel} to ${maxTotalInrLabel}`, label: "Approx. Total Cost (6 yrs)" },
     { value: `${durationYears} Years`, label: "Course Duration" },
     { value: "3,000+", label: "Students Admitted" },

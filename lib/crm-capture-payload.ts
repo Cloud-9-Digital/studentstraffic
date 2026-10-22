@@ -1,5 +1,6 @@
 import { CRM_INDIAN_STATES } from "@/lib/indian-states";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
+import { getResidenceCountryName } from "@/lib/residence-countries";
 
 const PLACEHOLDERS = new Set(["NA", "N/A", "-"]);
 const STATE_BY_NAME = new Map(CRM_INDIAN_STATES.map((state) => [state.toLowerCase(), state]));
@@ -13,6 +14,7 @@ function value(input?: string | null, limit = 2000): string | undefined {
 
 /** The scoped CRM API has a deliberately smaller contract than the legacy site intake. */
 export function buildCrmCapturePayload(payload: LeadSyncPayload) {
+  const residenceCountryName = getResidenceCountryName(payload.residenceCountry);
   const state = value(payload.userState);
   const crmState = state && STATE_BY_NAME.get(state.replace(/\s+/g, " ").toLowerCase());
   const isWati = payload.sourcePath === "/wati" || payload.ctaVariant === "wati_inbound";
@@ -38,6 +40,8 @@ export function buildCrmCapturePayload(payload: LeadSyncPayload) {
     payload.primaryInterestValue && `Interest: ${payload.primaryInterestValue}`,
     value(payload.fatherName) && `Father: ${value(payload.fatherName)}`,
     value(payload.alternatePhone) && `Alternate phone: ${value(payload.alternatePhone)}`,
+    residenceCountryName &&
+      `Country of residence: ${residenceCountryName} (${payload.residenceCountry?.trim().toUpperCase()})`,
     value(payload.city) && `City: ${value(payload.city)}`,
     value(payload.userState) && `State: ${value(payload.userState)}`,
     value(payload.courseSlug) && `Course: ${value(payload.courseSlug)}`,

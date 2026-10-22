@@ -40,6 +40,8 @@ export type LeadSyncPayload = {
   needsFmgeSession?: boolean;
   documentUrl?: string;
   documentType?: string;
+  /** ISO 3166-1 alpha-2 code of the country the student lives in. */
+  residenceCountry?: string;
   userState?: string;
   neetScore?: number;
   neetCategory?: string;

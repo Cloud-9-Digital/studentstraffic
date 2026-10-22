@@ -166,6 +166,30 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return {
+      // Markdown views for AI agents (lib/agent-markdown.ts). beforeFiles so
+      // they win over the /university/[slug] and /[slug] dynamic routes.
+      beforeFiles: [
+        {
+          source: "/university/:slug([^/.]+)\\.md",
+          destination: "/md/university/:slug",
+        },
+        {
+          // Content negotiation: agents that ask for markdown get it at the
+          // canonical URL. Limited to university pages, where every valid
+          // slug has a markdown view; the root route also serves guides.
+          source: "/university/:slug([^/.]+)",
+          has: [{ type: "header", key: "accept", value: "(.*)text/markdown(.*)" }],
+          destination: "/md/university/:slug",
+        },
+        {
+          source: "/:slug([^/.]+)\\.md",
+          destination: "/md/programme/:slug",
+        },
+      ],
+    };
+  },
   async headers() {
     return [
       {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
+import { JsonLd } from "@/components/shared/json-ld";
 import { UniversitiesExplorer } from "@/components/site/universities-explorer";
 import { finderPageSize } from "@/lib/constants";
 import {
@@ -8,6 +9,11 @@ import {
   queryFinderCardProgramsPage,
 } from "@/lib/data/catalog";
 import { buildIndexableMetadata, buildNoIndexMetadata } from "@/lib/metadata";
+import {
+  getBreadcrumbStructuredData,
+  getCollectionPageStructuredData,
+  getStructuredDataGraph,
+} from "@/lib/structured-data";
 import {
   hasFinderFilters,
   parseFinderFilters,
@@ -44,9 +50,26 @@ export default function UniversitiesPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   return (
-    <Suspense fallback={<UniversitiesExplorerFallback />}>
-      <UniversitiesExplorerSection searchParams={searchParams} />
-    </Suspense>
+    <>
+      <Suspense fallback={<UniversitiesExplorerFallback />}>
+        <UniversitiesExplorerSection searchParams={searchParams} />
+      </Suspense>
+      {/* Outside the Suspense boundary so the graph is in the static shell. */}
+      <JsonLd
+        data={getStructuredDataGraph([
+          getBreadcrumbStructuredData([
+            { name: "Home", path: "/" },
+            { name: "Universities", path: "/universities" },
+          ]),
+          getCollectionPageStructuredData({
+            path: "/universities",
+            name: "Universities abroad",
+            description:
+              "Browse universities abroad by destination, programme, fees, intake, teaching language, and entry requirements.",
+          }),
+        ])}
+      />
+    </>
   );
 }
 

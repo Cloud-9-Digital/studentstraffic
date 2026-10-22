@@ -20,7 +20,7 @@ export async function GET(
     university: mapUniversityDetail(
       university,
       programs[0]?.country.name,
-      programs.map((program) => program.offering),
+      programs,
     ),
   });
 }

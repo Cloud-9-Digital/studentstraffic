@@ -1354,6 +1354,7 @@ type FinderProgramRow = {
   courseName: string;
   courseShortName: string;
   courseStream: string;
+  courseLevel: string;
   courseDurationYears: number;
   courseSummary: string;
   courseMetaTitle: string;
@@ -1472,6 +1473,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       name: row.courseName,
       shortName: row.courseShortName,
       stream: row.courseStream as import("@/lib/data/types").CourseStream,
+      level: row.courseLevel,
       durationYears: row.courseDurationYears,
       summary: row.courseSummary,
       metaTitle: row.courseMetaTitle,
@@ -1543,6 +1545,7 @@ async function selectFinderProgramsFromDatabase(
       courseName: coursesTable.name,
       courseShortName: coursesTable.shortName,
       courseStream: coursesTable.stream,
+      courseLevel: coursesTable.level,
       courseDurationYears: coursesTable.durationYears,
       courseSummary: coursesTable.summary,
       courseMetaTitle: coursesTable.metaTitle,

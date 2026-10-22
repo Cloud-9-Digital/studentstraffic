@@ -307,6 +307,10 @@ that Cache Components needs before a dynamic slug is resolved.
   `cacheLife` profile (`next.config.ts`): one-year `revalidate`, no `expire` (infinite). There is
   no timer-based refresh at all: an entry changes only when a publish expires its own tag. A cached
   page that nobody publishes to is never re-queried.
+- **Markdown views share the readers.** `/university/{slug}.md` and `/{programme}.md` (route
+  handlers under `app/md/`, see `docs/seo/ai-discovery.md`) call the same cached readers, so the
+  entity tags above refresh them too. Publishes do not purge their CDN copies; those use a one-hour
+  `s-maxage`, so a published change reaches the markdown view within the hour.
 - **Not-found lookups are cached for minutes only.** `getCountryBySlug`, the cached university
   reader and `getProgramBySlug` call `cacheLife(CATALOG_MISS_CACHE_LIFE)` (`lib/data/catalog.ts`,
   1 min stale / 5 min revalidate / 15 min expire) on their miss path. Hits keep the long-lived

@@ -20,6 +20,8 @@ export type IndexableMetadataInput = {
   description: string;
   path: string;
   canonicalPath?: string;
+  /** Markdown view for AI agents, advertised as <link rel="alternate">. */
+  markdownPath?: string;
   keywords?: string[];
   category?: string;
   openGraphType?: "website" | "article";
@@ -60,6 +62,9 @@ export function buildIndexableMetadata(
     category: input.category ?? "education",
     alternates: {
       canonical: absoluteUrl(input.canonicalPath ?? input.path),
+      ...(input.markdownPath
+        ? { types: { "text/markdown": absoluteUrl(input.markdownPath) } }
+        : {}),
     },
     robots: defaultRobots,
     openGraph: {
@@ -132,6 +137,18 @@ export const defaultMetadata: Metadata = {
   },
   robots: defaultRobots,
 };
+
+// Unknown slugs on catalogue routes still answer HTTP 200: the static shell
+// (loading.tsx and the AppChrome Suspense) is sent before the page can call
+// notFound(), and the streamed response does not carry Next's noindex. The
+// not-found metadata therefore has to say noindex itself.
+export function buildNotFoundMetadata(title = "Page Not Found"): Metadata {
+  return {
+    title,
+    robots: { index: false, follow: false },
+    alternates: { canonical: null },
+  };
+}
 
 export function buildNoIndexMetadata(
   base: Metadata,

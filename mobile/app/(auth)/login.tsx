@@ -243,7 +243,7 @@ export default function LoginScreen() {
           </View>
 
           {/* ── Inputs ── */}
-          <View><FormInput label="Email address" value={email} onChangeText={v => { setEmail(v); setFieldErrors(e => ({ ...e, email: "" })); }} error={fieldErrors.email} focusError={["email", "password"].find(k => fieldErrors[k]) === "email"} keyboardType="email-address" autoCapitalize="none" /><FormInput label="Password" value={password} onChangeText={v => { setPassword(v); setFieldErrors(e => ({ ...e, password: "" })); }} error={fieldErrors.password} focusError={["email", "password"].find(k => fieldErrors[k]) === "password"} secureTextEntry={!showPwd} autoCapitalize="none" /><Pressable accessibilityRole="button" onPress={() => setShowPwd(v => !v)} style={{ paddingVertical: 8 }}><Text style={{ color: colors.primary, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 12 }}>{showPwd ? "Hide password" : "Show password"}</Text></Pressable></View>
+          <View><FormInput label="Email address" value={email} onChangeText={v => { setEmail(v); setFieldErrors(e => ({ ...e, email: "" })); }} error={fieldErrors.email} focusError={["email", "password"].find(k => fieldErrors[k]) === "email"} keyboardType="email-address" autoCapitalize="none" /><FormInput label="Password" value={password} onChangeText={v => { setPassword(v); setFieldErrors(e => ({ ...e, password: "" })); }} error={fieldErrors.password} focusError={["email", "password"].find(k => fieldErrors[k]) === "password"} password autoCapitalize="none" /></View>
 
           {/* ── Forgot password ── */}
           <Pressable

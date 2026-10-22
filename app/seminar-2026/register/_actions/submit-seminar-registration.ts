@@ -268,6 +268,8 @@ export async function submitSeminarRegistrationAction(
           needsFmgeSession: data.needsFmgeSession === "yes",
           documentUrl: documentUrl || null,
           documentType: documentUrl ? data.documentType : null,
+          // Seminars are in Tamil Nadu and the city list is Tamil Nadu only.
+          residenceCountry: "IN",
           userState: "Tamil Nadu",
           sourcePath: data.sourcePath,
           sourceUrl: emptyToUndefined(data.sourceUrl),
@@ -321,6 +323,8 @@ export async function submitSeminarRegistrationAction(
           needsFmgeSession: data.needsFmgeSession === "yes",
           documentUrl: documentUrl || undefined,
           documentType: documentUrl ? data.documentType : undefined,
+          // Seminars are in Tamil Nadu and the city list is Tamil Nadu only.
+          residenceCountry: "IN",
           userState: "Tamil Nadu",
           sourcePath: data.sourcePath,
           sourceUrl: emptyToUndefined(data.sourceUrl),

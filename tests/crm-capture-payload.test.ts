@@ -55,3 +55,9 @@ test("scoped capture caps timeline notes at the API limit", () => {
   assert.equal(body.notes.length <= 5000, true);
   assert.match(body.notes, /^Notes: x/);
 });
+
+test("scoped capture records the country of residence in notes", () => {
+  const body = buildCrmCapturePayload({ ...lead, residenceCountry: "ae" });
+  assert.match(body.notes, /Country of residence: United Arab Emirates \(AE\)/);
+  assert.doesNotMatch(buildCrmCapturePayload(lead).notes, /Country of residence/);
+});

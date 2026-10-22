@@ -2,9 +2,12 @@
 
 import { useActionState, useEffect, useRef, useState } from "react";
 import { Check, Loader2 } from "lucide-react";
+import type { Country } from "react-phone-number-input";
 
 import { submitPeerRequestAction } from "@/app/_actions/submit-peer-request";
+import { useResidenceCountry } from "@/components/site/use-residence-country";
 import { Button } from "@/components/ui/button";
+import { CountrySelect } from "@/components/ui/country-select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
@@ -34,6 +37,8 @@ export function ChatPeerForm({
   const [state, formAction, pending] = useActionState(submitPeerRequestAction, {});
   const [done, setDone] = useState(false);
   const phoneValidRef = useRef(true);
+  const residence = useResidenceCountry();
+  const [clientError, setClientError] = useState<string | null>(null);
   const startedAtInputRef = useRef<HTMLInputElement>(null);
 
   // Stamped on mount rather than during render: Date.now() is impure, and the
@@ -62,12 +67,20 @@ export function ChatPeerForm({
     <form
       action={formAction}
       onSubmit={(event) => {
+        if (!residence.country) {
+          event.preventDefault();
+          setClientError("Please select the country you live in.");
+          return;
+        }
         if (!phoneValidRef.current) {
           event.preventDefault();
           return;
         }
+        setClientError(null);
         setDone(true);
       }}
+      onFocusCapture={residence.prime}
+      onPointerDownCapture={residence.prime}
       className="mt-3 space-y-3 rounded-xl border border-border bg-muted/40 p-3"
     >
       <p className="text-xs text-muted-foreground">{reason}</p>
@@ -107,6 +120,22 @@ export function ChatPeerForm({
       </div>
 
       <div className="space-y-1.5">
+        <Label htmlFor="chat-peer-residence" className="text-xs">
+          Country you live in
+        </Label>
+        <CountrySelect
+          id="chat-peer-residence"
+          name="residenceCountry"
+          value={residence.country}
+          onChange={(code) => {
+            residence.setCountry(code);
+            setClientError(null);
+          }}
+          className="h-10"
+        />
+      </div>
+
+      <div className="space-y-1.5">
         <Label htmlFor="chat-peer-phone" className="text-xs">
           Phone number
         </Label>
@@ -115,37 +144,41 @@ export function ChatPeerForm({
           name="phone"
           required
           className="h-10"
+          defaultCountry={(residence.country as Country | "") || null}
+          onCountryChange={residence.suggestCountry}
           onValidityChange={(valid) => {
             phoneValidRef.current = valid;
           }}
         />
       </div>
 
-      <div className="space-y-1.5">
-        <Label htmlFor="chat-peer-state" className="text-xs">
-          State
-        </Label>
-        <select
-          id="chat-peer-state"
-          name="userState"
-          required
-          defaultValue=""
-          className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm text-foreground outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-        >
-          <option value="" disabled>
-            Select your state
-          </option>
-          {CRM_INDIAN_STATES.map((state) => (
-            <option key={state} value={state}>
-              {state}
+      {residence.country === "IN" ? (
+        <div className="space-y-1.5">
+          <Label htmlFor="chat-peer-state" className="text-xs">
+            State
+          </Label>
+          <select
+            id="chat-peer-state"
+            name="userState"
+            required
+            defaultValue=""
+            className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm text-foreground outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+          >
+            <option value="" disabled>
+              Select your state
             </option>
-          ))}
-        </select>
-      </div>
+            {CRM_INDIAN_STATES.map((state) => (
+              <option key={state} value={state}>
+                {state}
+              </option>
+            ))}
+          </select>
+        </div>
+      ) : null}
 
-      {state.error ? (
+      {clientError || state.error ? (
         <p role="alert" className="text-xs font-medium text-destructive">
-          {state.error}
+          {clientError || state.error}
         </p>
       ) : null}
 

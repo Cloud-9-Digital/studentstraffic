@@ -238,11 +238,8 @@ export default function CountryDetailScreen() {
           {/* Universities */}
           <View style={s.section}>
             <View style={s.sectionHeader}>
-              <Text style={s.sectionTitle}>
-                {isLoading
-                  ? "Universities"
-                  : `Universities${universities.length > 0 ? ` (${universities.length})` : ""}`}
-              </Text>
+              {/* No count: the app doesn't show how many universities are listed. */}
+              <Text style={s.sectionTitle}>Universities</Text>
               {!isLoading && data?.hasNextPage && (
                 <Pressable
                   onPress={() => {

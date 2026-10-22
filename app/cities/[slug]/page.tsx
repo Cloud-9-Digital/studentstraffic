@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import {
   ArrowRight,
@@ -16,6 +15,7 @@ import {
   Users,
 } from "lucide-react";
 
+import { MissingPage } from "@/components/shared/missing-page";
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ import {
   getUniqueCities,
 } from "@/lib/data/catalog";
 import { getCityGuide } from "@/lib/data/city-guide";
-import { buildIndexableMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNotFoundMetadata } from "@/lib/metadata";
 import {
   getCitiesIndexHref,
   getCityHref,
@@ -69,14 +69,13 @@ export async function generateMetadata({
   const programs = await getProgramsForCity(slug);
 
   if (!programs.length) {
-    return { title: "City Not Found" };
+    return buildNotFoundMetadata("City Not Found");
   }
 
   const cityName = programs[0].university.city;
   const countryName = programs[0].country.name;
   const guide = getCityGuide(slug);
 
-  const uniCount = new Set(programs.map((p) => p.university.slug)).size;
   const pricedPrograms = programs.filter((p) =>
     hasPublishedUsdAmount(p.offering.annualTuitionUsd),
   );
@@ -85,10 +84,10 @@ export async function generateMetadata({
     : null;
   const feeHint = minTuition ? ` from ${formatCurrencyUsd(minTuition)}/year` : "";
 
-  const title = `MBBS in ${cityName}, ${countryName} 2026 | ${uniCount} Universities, Fees & Comparison`;
+  const title = `MBBS in ${cityName}, ${countryName} 2026 | Universities, Fees & Comparison`;
   const description =
     guide?.summary.slice(0, 155) ??
-    `Compare ${uniCount} medical universities in ${cityName}, ${countryName} for MBBS${feeHint}. English-medium programs, fees, NMC recognition, and Indian student context.`;
+    `Compare medical universities in ${cityName}, ${countryName} for MBBS${feeHint}. English-medium programs, fees, NMC recognition, and Indian student context.`;
 
   return buildIndexableMetadata({
     title,
@@ -150,7 +149,7 @@ export default async function CityPage({
   const programs = await getProgramsForCity(slug);
 
   if (!programs.length) {
-    notFound();
+    return <MissingPage />;
   }
 
   const cityName = programs[0].university.city;
@@ -161,7 +160,6 @@ export default async function CityPage({
     programs.map((p) => [p.university.slug, p.university]),
   );
   const uniqueUniversities = Array.from(uniqueUniversityMap.values());
-  const uniCount = uniqueUniversities.length;
   const publicCount = uniqueUniversities.filter((u) => u.type === "Public").length;
   const privateCount = uniqueUniversities.filter((u) => u.type === "Private").length;
 
@@ -209,7 +207,7 @@ export default async function CityPage({
       name: `MBBS in ${cityName}`,
       description:
         guide?.summary ??
-        `Compare ${uniCount} medical universities in ${cityName}, ${country.name} for MBBS.`,
+        `Compare medical universities in ${cityName}, ${country.name} for MBBS.`,
       mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
       datePublished: catalogReviewedAt,
       dateModified: catalogReviewedAt,
@@ -282,15 +280,11 @@ export default async function CityPage({
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/65 md:text-lg md:leading-9">
               {guide?.summary ??
-                `${uniCount} medical ${uniCount === 1 ? "university" : "universities"} in ${cityName}, ${country.name}. Compare fees, recognition, and programs to decide if this city is the right base for your MBBS.`}
+                `Medical universities in ${cityName}, ${country.name}. Compare fees, recognition, and programs to decide if this city is the right base for your MBBS.`}
             </p>
 
             {/* Stat pills */}
             <div className="mt-8 flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/8 px-3.5 py-1.5 text-xs font-medium text-white/80">
-                <Building2 className="size-3.5 text-white/40" />
-                {uniCount} {uniCount === 1 ? "university" : "universities"}
-              </span>
               {feeRange && (
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/8 px-3.5 py-1.5 text-xs font-medium text-white/80">
                   <CircleDollarSign className="size-3.5 text-white/40" />
@@ -365,7 +359,7 @@ export default async function CityPage({
             </div>
           ) : (
             <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground">
-              {cityName} has {uniCount} published medical {uniCount === 1 ? "university" : "universities"} in {country.name}. Use the comparison table below to evaluate fees, recognition, and program medium before applying.
+              Compare the published medical universities in {cityName}, {country.name}. Use the comparison table below to evaluate fees, recognition, and program medium before applying.
             </p>
           )}
 
@@ -387,10 +381,11 @@ export default async function CityPage({
             Medical universities in {cityName}
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-8 text-muted-foreground">
-            {uniCount} {uniCount === 1 ? "institution" : "institutions"} —
-            {publicCount > 0 && ` ${publicCount} public`}
-            {publicCount > 0 && privateCount > 0 && ","}
-            {privateCount > 0 && ` ${privateCount} private`}.
+            {publicCount > 0 && privateCount > 0
+              ? "Public and private institutions."
+              : publicCount > 0
+                ? "Public institutions."
+                : "Private institutions."}
             {feeRange && ` Annual tuition ranges from ${feeRange}.`}
           </p>
 
@@ -765,9 +760,6 @@ export default async function CityPage({
                     <div>
                       <p className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">
                         {city.name}
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        {city.universityCount} {city.universityCount === 1 ? "university" : "universities"}
                       </p>
                     </div>
                   </div>
