@@ -1,35 +1,17 @@
 {
-  "appliedAt": "2026-10-22T09:53:42.840Z",
+  "appliedAt": "2026-10-22T11:53:51.882Z",
   "uploads": {
-    "attempted": 7,
-    "succeeded": 7,
+    "attempted": 2,
+    "succeeded": 2,
     "failed": 0
   },
   "database": {
-    "updated": 4,
+    "updated": 1,
     "notFoundInDb": []
   },
   "updatedUniversities": [
     {
-      "universitySlug": "joy-university",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "kalasalingam-academy-of-research-and-education",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "nellai-college-of-engineering",
-      "logoUpdated": true,
-      "coverUpdated": false,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "sardar-raja-college-of-engineering",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false

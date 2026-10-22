@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-batch-5-arul-tharum-vpmm-college-of-engineering-and-technology-media-2026-10-22",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-22",
+  "scope": "logo and cover for content migration 0119-india-arul-tharum-vpmm-college-of-engineering-and-technology",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-22; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "universityName": "Arul Tharum VPMM College of Engineering and Technology",
+      "sourceBatch": "claude-india-batch5-20261022",
+      "migrationId": "0119-india-arul-tharum-vpmm-college-of-engineering-and-technology",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://engineering.vpmm.in/img/Logo/Logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://engineering.vpmm.in/",
+          "rightsBasis": "Official VPMM college crest served from the college's own domain (engineering.vpmm.in) and used on its site. No open licence; used only to identify the institution. Checked 2026-10-22: HTTP 200, image/png, 139,379 bytes, 561x561 px, transparent background. Rendered on white and visually confirmed legible: green ring reading 'V.P. Muthiah Pillai - Meenakshi Ammal Trust', yellow centre with a green temple-tower figure and the words 'Prosperity', 'Truth', 'Work' in red, and a green ribbon reading 'V.P. Muthaiah Pillai Meenakshi Ammal College of Engineering & Technology'. Square, so it suits small tiles. Alternative wide lock-up (crest plus 'ARUL THARUM VPMM COLLEGE OF ENGINEERING & TECHNOLOGY' wordmark, 'Counselling Code - 4979') at https://engineering.vpmm.in/img/Logo/ENGINEERING%20LOGO-01.png (2433x608 px, also legible on white) was not chosen because it embeds a counselling-code line.",
+          "proposedPublicId": "studentstraffic/universities/arul-tharum-vpmm-college-of-engineering-and-technology/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://engineering.vpmm.in/img/College/college1.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://engineering.vpmm.in/",
+          "rightsBasis": "Official institutional photograph in the homepage carousel of the college's own domain (engineering.vpmm.in). No open licence; used only to depict the institution. Checked 2026-10-22: HTTP 200, image/jpeg, 400,419 bytes, 1366x768 px (landscape). Visually confirmed as a single real aerial (drone) photograph, not a composite or AI image: a twin-lane entrance avenue with a flowering median and palm and neem trees leads to a blue-fronted three-storey college block with a second building to the left; no text overlay or watermark; no identifiable people. Rejected: img/College/collegepic.jpg (building frontage carries the former '... Engineering College for Women' signage, which would misstate the current name), img/College/college2.jpg (crowded event photo with identifiable students).",
+          "proposedPublicId": "studentstraffic/universities/arul-tharum-vpmm-college-of-engineering-and-technology/cover",
+          "altText": "Aerial view of the tree-lined entrance avenue leading to the main block of Arul Tharum VPMM College of Engineering and Technology at Krishnankoil"
+        }
+      ]
+    }
+  ]
+}
