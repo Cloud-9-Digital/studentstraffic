@@ -1,0 +1,37 @@
+{
+  "manifestId": "india-batch-4-joy-university-media-2026-10-22",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-22",
+  "scope": "logo and cover for content migration 0117-india-joy-university",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-22; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "joy-university",
+      "universityName": "Joy University",
+      "sourceBatch": "claude-india-batch4-20261022",
+      "migrationId": "0117-india-joy-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://joyuniversity.edu.in/images/Joy-Logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official Joy University header logo served from the university's own domain (site-wide header on joyuniversity.edu.in). No open licence - used only to identify the institution. Checked 2026-10-22: HTTP 200, content-type image/png, 16,532 bytes, 338x47 px. Rendered on white and visually confirmed: maroon 'J' monogram, grey 'JOY UNIVERSITY' wordmark and the strapline 'Established vide Tamil Nadu State Pvt. Universities Act 2019 - UGC Recognised' - legible on a white tile. CAVEAT: small raster (338 px wide); no SVG or larger brand asset found. The footer logo (images/footer-logo.png) is white-on-transparent and was rejected.",
+          "proposedPublicId": "studentstraffic/universities/joy-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://joyuniversity.edu.in/userfiles/PhotoGallery/0d8f50f9c5f143a18ec8dd8d6adae39a.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://joyuniversity.edu.in/Infrastructures",
+          "rightsBasis": "Official campus photograph on the university domain, first image in the Infrastructures page gallery (Campus Overview). No open licence stated - official institutional image used to identify the institution, same basis as earlier official covers in research/media-enrichment/india-batch-3-upload-manifest.json. Checked 2026-10-22: HTTP 200, content-type image/jpeg, 543,918 bytes, 1280x752 px (landscape). Visual confirmation: aerial view of the Raja Nagar campus at dusk - blue-and-white academic blocks, a round building, green quadrangles and the Our Lady of Lourdes chapel sign, with wind turbines and the Western Ghats behind. No text overlay or watermark.",
+          "altText": "Aerial view of Joy University's campus at Vadakkankulam, Tamil Nadu, with academic blocks and lawns in the foreground and wind turbines and hills behind",
+          "proposedPublicId": "studentstraffic/universities/joy-university/cover"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "universitySlug": "sardar-raja-college-of-engineering",
+  "checkedAt": "2026-10-22",
+  "owner": "claude-india-srce-20261022",
+  "status": "packaged-validated",
+  "migrationId": "0115-india-sardar-raja-college-of-engineering",
+  "identity": {
+    "name": "Sardar Raja College of Engineering",
+    "address": "Raja Nagar, Adaikalapattinam (Post), Alangulam, Tenkasi district, Tamil Nadu 627808",
+    "established": 2000,
+    "aictePermanentId": "1-2894011",
+    "aicteType": "Private-Self Financing",
+    "annaUniversityExamCode": "9527",
+    "tneaCode": "4968",
+    "trust": "Raja Educational and Charitable Trust, Vadakkangulam (reg. 711 of 1985); chairman Er. A. Jesus Raja; founder Dr. S.A. Raja",
+    "autonomous": false,
+    "minority": false,
+    "website": "https://src.org.in/",
+    "note": "srce.co.in (Wikipedia) does not resolve"
+  },
+  "collegeVsUniversity": "Affiliated non-autonomous college; payload type 'Private' (schema enum Public|Private only); affiliation and Anna University degree-awarding stated in summary, thingsToConsider, FAQ and recognitionBadges. Precedent: Bangladesh affiliated medical colleges (0008, 0012).",
+  "recognition": {
+    "AICTE EoA 2026-27": "verified (letter 13 May 2026 + AICTE dashboard)",
+    "Anna University affiliation": "verified (CAI Tenkasi list + CAI 2026-27 form, provisional affiliation)",
+    "NBA": "none (TNEA 2026, CAI)",
+    "NAAC": "none reported in CAI form",
+    "NIRF": "not ranked"
+  },
+  "packaged": [
+    "B.E. Civil",
+    "B.E. CSE",
+    "B.E. CSE (Cyber Security)",
+    "B.E. EEE",
+    "B.E. ECE",
+    "B.E. Mechanical",
+    "B.Tech AI & DS",
+    "MCA"
+  ],
+  "held": {
+    "M.E. VLSI Design, CSE, Applied Electronics, Power Systems, Structural, Manufacturing, Communication and Networking": "AICTE-approved (intake 9) but absent from SRCE's Anna University CAI 2026-27 affiliated/approved course list; zero COE enrolment; affiliation for 2026-27 unconfirmed"
+  },
+  "evidenceGaps": [
+    "No published tuition (college, TNEA 2026, DTE fee committee) -> fee on_request for all",
+    "Management-quota share and fees not published",
+    "College admission forms still labelled 2023-24",
+    "No placement data beyond self-reported '100%' in TNEA booklet (not used)",
+    "Campus area conflict: site 'more than 25 acres' vs CAI 16.89 acres earmarked (CAI used)",
+    "Civil start year: dept page 2000 vs TNEA/About 2002 (not published)"
+  ],
+  "groupLinks": "Founded by Dr. S.A. Raja ('3rd engineering college of the Rajas group'). Joy University (Vadakkangulam) is run by Selvam Educational and Charitable Trust under the Rajas group (Chancellor Dr. S.A. Joy Raja) - separate trust; SRCE is not a constituent of Joy University. Rajas Institute of Allied Health Sciences is another group institution (separate ledger row, held).",
+  "media": "research/media-enrichment/india-batch-4-sardar-raja-college-of-engineering.json (official logo + official main-building photo; pending controlled Cloudinary upload)"
+}

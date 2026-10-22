@@ -1,47 +1,35 @@
 {
-  "appliedAt": "2026-09-21T18:30:42.182Z",
+  "appliedAt": "2026-10-22T09:53:42.840Z",
   "uploads": {
-    "attempted": 12,
-    "succeeded": 12,
+    "attempted": 7,
+    "succeeded": 7,
     "failed": 0
   },
   "database": {
-    "updated": 6,
+    "updated": 4,
     "notFoundInDb": []
   },
   "updatedUniversities": [
     {
-      "universitySlug": "birla-institute-of-technology-and-science-pilani",
+      "universitySlug": "joy-university",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "university-of-hyderabad",
+      "universitySlug": "kalasalingam-academy-of-research-and-education",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "manipal-university-jaipur",
+      "universitySlug": "nellai-college-of-engineering",
       "logoUpdated": true,
-      "coverUpdated": true,
+      "coverUpdated": false,
       "notFoundInDb": false
     },
     {
-      "universitySlug": "jamia-millia-islamia",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "marwadi-university",
-      "logoUpdated": true,
-      "coverUpdated": true,
-      "notFoundInDb": false
-    },
-    {
-      "universitySlug": "jamia-hamdard",
+      "universitySlug": "sardar-raja-college-of-engineering",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false

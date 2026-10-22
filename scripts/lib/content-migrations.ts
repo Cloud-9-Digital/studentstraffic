@@ -208,11 +208,17 @@ function isChildPath(root: string, candidate: string) {
   return pathFromRoot !== "" && !pathFromRoot.startsWith(`..${sep}`) && pathFromRoot !== "..";
 }
 
+// Line endings are normalised so a Windows checkout (core.autocrlf) hashes the same bundle
+// identically: five India bundles were recorded with CRLF payloads in 2026-09.
+function normaliseLineEndings(text: string) {
+  return text.replace(/\r\n/g, "\n");
+}
+
 export function contentMigrationChecksum(manifest: string, payload: string) {
   return createHash("sha256")
-    .update(manifest)
+    .update(normaliseLineEndings(manifest))
     .update("\u0000")
-    .update(payload)
+    .update(normaliseLineEndings(payload))
     .digest("hex");
 }
 

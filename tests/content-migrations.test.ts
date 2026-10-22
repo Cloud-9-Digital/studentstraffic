@@ -170,6 +170,15 @@ test("discovers numbered content migrations in sequence and hashes their immutab
   });
 });
 
+test("checksums a CRLF checkout the same as its LF original", () => {
+  const manifest = '{\n  "id": "0001-test-university"\n}\n';
+  const payload = '{\n  "courses": []\n}\n';
+  assert.equal(
+    contentMigrationChecksum(manifest.replace(/\n/g, "\r\n"), payload.replace(/\n/g, "\r\n")),
+    contentMigrationChecksum(manifest, payload),
+  );
+});
+
 test("rejects a bundle whose manifest id does not match its sequence directory", async () => {
   await withTemporaryMigrations(async (root) => {
     const migrationDirectory = join(root, "0001-test-university");

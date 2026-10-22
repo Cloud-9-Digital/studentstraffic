@@ -1,0 +1,36 @@
+{
+  "manifestId": "india-batch-4-sardar-raja-college-of-engineering-media-2026-10-22",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-22",
+  "scope": "logo and cover for content migration 0115-india-sardar-raja-college-of-engineering",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-22; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "universityName": "Sardar Raja College of Engineering",
+      "sourceBatch": "india-batch-4",
+      "migrationId": "0115-india-sardar-raja-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://src.org.in/wp-content/uploads/2023/03/sardhar-logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official SRCE logo lock-up (crest with 'Love and serve mankind through education' ribbon plus 'SARDAR RAJA COLLEGE OF ENGINEERING' wordmark) served from the college's own domain src.org.in and used in its site header. No open licence; used only to identify the institution. Checked 2026-10-22: HTTP 200, image/png, 121,832 bytes, 1431x279 px. Visually confirmed legible on a white tile (slate-blue wordmark and blue/white crest). Wide aspect ratio; a square crop of the crest may suit small tiles.",
+          "proposedPublicId": "studentstraffic/universities/sardar-raja-college-of-engineering/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://src.org.in/wp-content/uploads/2023/01/1492685186phpY7jaCk.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph of the SRCE main building published on the college's own homepage (src.org.in). No open licence; used only to depict the institution. Wikimedia Commons searched 2026-10-22: no SRCE campus image exists. Checked 2026-10-22: HTTP 200, image/jpeg, 338,686 bytes, 1066x800 px (landscape, below the preferred 1000px+ ideal but acceptable). Visually confirmed: white three-storey main building with central dome and Indian flag, statue group and landscaped hedges, paved forecourt, wind turbines in the background; no text overlay.",
+          "proposedPublicId": "studentstraffic/universities/sardar-raja-college-of-engineering/cover",
+          "altText": "White main building of Sardar Raja College of Engineering at Alangulam, with a central dome, statue group and paved forecourt"
+        }
+      ]
+    }
+  ]
+}

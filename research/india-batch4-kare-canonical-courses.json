@@ -1,0 +1,25 @@
+{
+  "batch": "claude-india-batch4-20261022",
+  "owner": "claude-india-kare-20261022",
+  "note": "Shared canonical course record first shipped in content-migrations/0118-india-kalasalingam-academy-of-research-and-education. Copy verbatim into the courses array of every payload that references the slug; publishing overwrites the shared course row. bsc-horticulture was added to lib/data/program-taxonomy.ts in the same change.",
+  "courses": [
+    {
+      "slug": "bsc-horticulture",
+      "name": "B.Sc. in Horticulture",
+      "shortName": "B.Sc. Horticulture",
+      "stream": "agriculture",
+      "level": "bachelors",
+      "discipline": "horticulture",
+      "aliases": [
+        "B.Sc. (Hons.) Horticulture",
+        "Bachelor of Horticulture",
+        "BSc Horticulture"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for undergraduate horticulture degrees. Programmes in this category cover the production and management of fruit, vegetable, flower, plantation, spice and medicinal crops, with nursery management, post-harvest technology, plant protection and field practice. Curriculum, regulator approval, admission route and fees are set by each university and are listed on the individual programme pages.",
+      "metaTitle": "B.Sc. Horticulture Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Horticulture degrees open to international applicants: subject prerequisites, duration, intake months, teaching language and published tuition."
+    }
+  ]
+}

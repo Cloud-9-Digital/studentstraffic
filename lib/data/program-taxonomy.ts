@@ -146,6 +146,8 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "msc-environmental-science", name: "M.Sc. in Environmental Science", shortName: "M.Sc. Environmental Science", stream: "environment-sustainability", level: "masters", discipline: "environmental-science", aliases: ["Master of Environmental Science", "MSc Environmental Sciences"] },
   { slug: "master-sustainability", name: "Master's in Sustainability", shortName: "Master's Sustainability", stream: "environment-sustainability", level: "masters", discipline: "sustainability", aliases: ["MSc Sustainability", "Master of Sustainability"] },
   { slug: "bsc-agriculture", name: "B.Sc. in Agriculture", shortName: "B.Sc. Agriculture", stream: "agriculture", level: "bachelors", discipline: "agriculture", aliases: ["Bachelor of Agriculture", "BSc Agricultural Science"] },
+  { slug: "bsc-horticulture", name: "B.Sc. in Horticulture", shortName: "B.Sc. Horticulture", stream: "agriculture", level: "bachelors", discipline: "horticulture", aliases: ["B.Sc. (Hons.) Horticulture", "Bachelor of Horticulture", "BSc Horticulture"] },
+  { slug: "msc-horticulture", name: "M.Sc. in Horticulture", shortName: "M.Sc. Horticulture", stream: "agriculture", level: "masters", discipline: "horticulture", aliases: ["M.Sc. (Horticulture)", "Master of Horticulture", "MSc Horticulture"] },
   { slug: "msc-agriculture", name: "M.Sc. in Agriculture", shortName: "M.Sc. Agriculture", stream: "agriculture", level: "masters", discipline: "agriculture", aliases: ["Master of Agriculture", "MSc Agricultural Science"] },
   { slug: "bachelor-forestry", name: "Bachelor's in Forestry", shortName: "Bachelor's Forestry", stream: "agriculture", level: "bachelors", discipline: "forestry", aliases: ["Bachelor of Forestry", "BSc Forestry"] },
   { slug: "master-forestry", name: "Master's in Forestry", shortName: "Master's Forestry", stream: "agriculture", level: "masters", discipline: "forestry", aliases: ["Master of Forestry", "MSc Forestry"] },
@@ -221,6 +223,11 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "master-library-information-science", name: "Master's in Library and Information Science", shortName: "Master's Library Science", stream: "social-sciences", level: "masters", discipline: "library-information-science", aliases: ["Master of Library and Information Science", "MLISc", "MLIS", "Master of Information Studies"] },
   { slug: "bachelor-physical-education-sports", name: "Bachelor's in Physical Education and Sports", shortName: "Bachelor's Physical Education", stream: "education", level: "bachelors", discipline: "physical-education-sports", aliases: ["Bachelor of Physical Education and Sports", "BPES", "BSc Sports Science"] },
   { slug: "msc-forensic-science", name: "M.Sc. in Forensic Science", shortName: "M.Sc. Forensic Science", stream: "natural-sciences", level: "masters", discipline: "forensic-science", aliases: ["Master of Science in Forensic Science", "MSc Forensic Sciences"] },
+  { slug: "bsc-forensic-science", name: "B.Sc. in Forensic Science", shortName: "B.Sc. Forensic Science", stream: "natural-sciences", level: "bachelors", discipline: "forensic-science", aliases: ["Bachelor of Science in Forensic Science", "BSc Forensic Sciences"] },
+  { slug: "bsc-biotechnology", name: "B.Sc. in Biotechnology", shortName: "B.Sc. Biotechnology", stream: "natural-sciences", level: "bachelors", discipline: "biotechnology", aliases: ["Bachelor of Science in Biotechnology", "BSc Biotechnology"] },
+  { slug: "msc-biotechnology", name: "M.Sc. in Biotechnology", shortName: "M.Sc. Biotechnology", stream: "natural-sciences", level: "masters", discipline: "biotechnology", aliases: ["Master of Science in Biotechnology", "MSc Biotechnology"] },
+  { slug: "bsc-renewable-energy", name: "B.Sc. in Renewable Energy", shortName: "B.Sc. Renewable Energy", stream: "environment-sustainability", level: "bachelors", discipline: "renewable-energy", aliases: ["Bachelor of Science in Renewable Energy", "BSc Renewable Energy"] },
+  { slug: "bachelor-criminology", name: "Bachelor's in Criminology", shortName: "Bachelor's Criminology", stream: "social-sciences", level: "bachelors", discipline: "criminology", aliases: ["BA Criminology", "B.A. Criminology and Police Administration", "BSc Criminology"] },
 ]);
 
 /**
@@ -641,6 +648,19 @@ export const canonicalProgrammes = [
     level: "bachelors",
     discipline: "biomedical-engineering",
     aliases: ["Bachelor of Biomedical Engineering", "BEng Biomedical Engineering"],
+  },
+  {
+    slug: "be-btech-agricultural-engineering",
+    name: "B.E./B.Tech in Agricultural Engineering",
+    shortName: "B.E./B.Tech Agricultural",
+    stream: "engineering",
+    level: "bachelors",
+    discipline: "agricultural-engineering",
+    aliases: [
+      "B.Tech Agricultural Engineering",
+      "Bachelor of Agricultural Engineering",
+      "BEng Agricultural Engineering",
+    ],
   },
   {
     slug: "be-btech-industrial-production-engineering",

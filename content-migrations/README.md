@@ -86,3 +86,8 @@ The target database records every ID, checksum and state in `content_migrations`
 the catalogue transaction committed but search/cache refresh still needs to finish; the next apply
 command resumes that refresh. `applied` means the complete publish workflow finished. Never edit an
 applied bundle; create the next numbered migration to correct or extend published content.
+
+The checksum normalises CRLF to LF, and `.gitattributes` keeps this directory on LF, so a Windows
+checkout hashes a bundle the same way as macOS/Linux. Commit a bundle before applying it: on
+2026-10-22 eight rows had to be re-recorded because they were applied from an uncommitted Windows
+copy (0001-0003) or from CRLF checkouts (0089, 0090, 0094, 0096, 0101).

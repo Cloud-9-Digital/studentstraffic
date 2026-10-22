@@ -124,3 +124,11 @@ The publishing fixes for batch 3 added the generic `mcom` record and one more pa
 `ba-general-arts` (a B.A. with two or more humanities or social-science subjects fixed at admission,
 the arts counterpart of `bsc-general-sciences`). Do not map a combined-subject B.A. to
 `bachelor-liberal-arts`, which is for declared-major liberal-arts degrees.
+
+## India batch 4 additions (2026-10-22)
+
+`bsc-horticulture` (B.Sc. in Horticulture) was added for Kalasalingam Academy of Research and
+Education's B.Sc. (Hons.) Horticulture. In India, ICAR treats Horticulture as a separate four-year
+degree from B.Sc. (Hons.) Agriculture, with its own curriculum, so it is not mapped to
+`bsc-agriculture`. The shared course record is in `research/india-batch4-kare-canonical-courses.json`
+and was first shipped in content migration 0117 (Joy University); 0118 carries the same record.

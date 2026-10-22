@@ -1,0 +1,555 @@
+{
+  "university": "kalasalingam-academy-of-research-and-education",
+  "migration": "0118-india-kalasalingam-academy-of-research-and-education",
+  "checkedAt": "2026-10-22",
+  "standard": "lean answer-first template",
+  "feeBands2026_27": {
+    "btech_cse": {
+      "inrTuition": 195000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 4000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "B.Tech.(CSE), B.Tech.(AI&DS) & B.Tech.(IT)",
+      "nriForeignRow": "B.Tech.(CSE), B.Tech.(AI&DS) & B.Tech.(IT)"
+    },
+    "btech_ece": {
+      "inrTuition": 160000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 2500,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "B.Tech.(ECE) & B.Tech.(Biotech)",
+      "nriForeignRow": "B.Tech.(ECE), B.Tech.(BioTech)"
+    },
+    "btech_oth": {
+      "inrTuition": 100000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "B.Tech (All other Disciplines)",
+      "nriForeignRow": "B.Tech - Others"
+    },
+    "agri": {
+      "inrTuition": 120000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 3000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "B.Sc. (Hons.) Agriculture, B.Sc. (Hons.) Horticulture",
+      "nriForeignRow": "B.Sc (Agriculture & Horticulture)"
+    },
+    "law": {
+      "inrTuition": 150000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "B.A / B.Com - LLB - 05 years",
+      "nriForeignRow": "B.A (LLB) & B.Com (LLB)"
+    },
+    "ug60": {
+      "inrTuition": 60000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 1200,
+      "usdAdmission": 0,
+      "usdMisc": 75,
+      "residentRow": "B.Com (CA), B.C.A, B.Sc.(CS), B.Sc.(IT)",
+      "nriForeignRow": "U.G - Arts & Science"
+    },
+    "ug45": {
+      "inrTuition": 45000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 1200,
+      "usdAdmission": 0,
+      "usdMisc": 75,
+      "residentRow": "B.B.A, B.Com (Regular), B.Com (Professional Accounting)",
+      "nriForeignRow": "U.G - Arts & Science"
+    },
+    "ug30": {
+      "inrTuition": 30000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 1200,
+      "usdAdmission": 0,
+      "usdMisc": 75,
+      "residentRow": "B.Sc. (Viscom)",
+      "nriForeignRow": "U.G - Arts & Science"
+    },
+    "ugcat": {
+      "inrTuition": 30000,
+      "inrMisc": 5000,
+      "inrExtra": "a one-time INR 10,000 uniform kit in the first year",
+      "usdTuition": 1200,
+      "usdAdmission": 0,
+      "usdMisc": 75,
+      "residentRow": "B.Sc. (Catering Science & Hotel Management)",
+      "nriForeignRow": "U.G - Arts & Science"
+    },
+    "ug20": {
+      "inrTuition": 20000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 1200,
+      "usdAdmission": 0,
+      "usdMisc": 75,
+      "residentRow": "B.A. (English Literature), B.Sc. (Maths, Physics & Chemistry)",
+      "nriForeignRow": "U.G - Arts & Science"
+    },
+    "mtech": {
+      "inrTuition": 70000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "M.Tech., M.Arch (Habitat Design)",
+      "nriForeignRow": "PG - All Programmes"
+    },
+    "mba": {
+      "inrTuition": 150000,
+      "inrMisc": 12000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "MBA, M.C.A",
+      "nriForeignRow": "PG - All Programmes"
+    },
+    "pg40": {
+      "inrTuition": 40000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "M.Sc (Maths, Physics, Chemistry), MSW, M.A. English Literature",
+      "nriForeignRow": "PG - All Programmes"
+    },
+    "pg60": {
+      "inrTuition": 60000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "M.Sc. (CS, Data sciences)",
+      "nriForeignRow": "PG - All Programmes"
+    },
+    "pgfor": {
+      "inrTuition": 70000,
+      "inrMisc": 5000,
+      "inrExtra": null,
+      "usdTuition": 2000,
+      "usdAdmission": 150,
+      "usdMisc": 150,
+      "residentRow": "M.Sc (Forensic Science)",
+      "nriForeignRow": "PG - All Programmes"
+    }
+  },
+  "courseRecordSources": {
+    "ba-english-literature": "0117-india-joy-university",
+    "bachelor-food-science-technology": "0117-india-joy-university",
+    "bachelor-hospitality-management": "0113-india-manipal-university-jaipur",
+    "bachelor-information-systems": "0109-india-marwadi-university",
+    "bachelor-media-communication": "0091-india-manipal-academy-of-higher-education",
+    "bba": "0117-india-joy-university",
+    "bca": "0117-india-joy-university",
+    "bcom": "0117-india-joy-university",
+    "be-btech-aerospace-engineering": "0117-india-joy-university",
+    "be-btech-biomedical-engineering": "0117-india-joy-university",
+    "be-btech-biotechnology": "0117-india-joy-university",
+    "be-btech-civil-engineering": "0117-india-joy-university",
+    "be-btech-computer-science-engineering": "0117-india-joy-university",
+    "be-btech-electrical-electronics-engineering": "0115-india-sardar-raja-college-of-engineering",
+    "be-btech-electronics-communication-engineering": "0117-india-joy-university",
+    "be-btech-information-technology": "0117-india-joy-university",
+    "be-btech-mechanical-engineering": "0117-india-joy-university",
+    "bsc-agriculture": "0117-india-joy-university",
+    "bsc-chemistry": "0112-india-jamia-millia-islamia",
+    "bsc-computer-science": "0117-india-joy-university",
+    "bsc-horticulture": "new (research/india-batch4-kare-canonical-courses.json)",
+    "bsc-mathematics": "0112-india-jamia-millia-islamia",
+    "bsc-physics": "0112-india-jamia-millia-islamia",
+    "llb": "0113-india-manipal-university-jaipur",
+    "ma-english-literature": "0113-india-manipal-university-jaipur",
+    "march": "0112-india-jamia-millia-islamia",
+    "master-social-work": "0112-india-jamia-millia-islamia",
+    "mba": "0113-india-manipal-university-jaipur",
+    "mca": "0115-india-sardar-raja-college-of-engineering",
+    "me-mtech-biotechnology": "0113-india-manipal-university-jaipur",
+    "me-mtech-civil-engineering": "0112-india-jamia-millia-islamia",
+    "me-mtech-computer-science-engineering": "0117-india-joy-university",
+    "me-mtech-electronics-communication-engineering": "0113-india-manipal-university-jaipur",
+    "me-mtech-energy-engineering": "0112-india-jamia-millia-islamia",
+    "me-mtech-mechanical-engineering": "0112-india-jamia-millia-islamia",
+    "msc-chemistry": "0113-india-manipal-university-jaipur",
+    "msc-computer-science": "0009-uk-gcu-computer-science",
+    "msc-data-science": "0113-india-manipal-university-jaipur",
+    "msc-forensic-science": "0108-india-jamia-hamdard",
+    "msc-mathematics": "0113-india-manipal-university-jaipur",
+    "msc-physics": "0113-india-manipal-university-jaipur"
+  },
+  "sources": {
+    "adm": {
+      "label": "KARE - Admissions: eligibility, 2026-27 fee structure (Resident Indian and NRI/Foreign), application fee, FAQ",
+      "url": "https://www.kalasalingam.ac.in/admissions/"
+    },
+    "ir": {
+      "label": "KARE - International Relations: Study in India admissions, hostels, food, MoUs, quick facts",
+      "url": "https://www.kalasalingam.ac.in/international-relations/"
+    },
+    "cal": {
+      "label": "KARE - Academic Year Calendar 2025-26, first-year UG/PG batches",
+      "url": "https://www.kalasalingam.ac.in/wp-content/uploads/2025/08/Gist_AYC_2025_26-Common-to-all-First-Year-classes-UG-and-PG.pdf"
+    },
+    "bro": {
+      "label": "KARE - Admissions Brochure 2026 (programme list, library, placement summary)",
+      "url": "https://www.kalasalingam.ac.in/wp-content/uploads/2025/12/Brochure2026.pdf"
+    },
+    "siib": {
+      "label": "KARE - Study in India brochure (location and distances)",
+      "url": "https://www.kalasalingam.ac.in/wp-content/uploads/2021/11/Kalasalingam-StudyInIndia.pdf"
+    },
+    "hostel": {
+      "label": "KARE - Hostels and Mess, Hostel Tariff 2026-27",
+      "url": "https://www.kalasalingam.ac.in/hostel-mess/"
+    },
+    "campus": {
+      "label": "KARE - Campus Life (campus area, transport fleet, amenities)",
+      "url": "https://www.kalasalingam.ac.in/campus-life/"
+    },
+    "about": {
+      "label": "KARE - About Us (founding, trust, leadership)",
+      "url": "https://www.kalasalingam.ac.in/about-us/"
+    },
+    "progs": {
+      "label": "KARE - Programs Offered",
+      "url": "https://www.kalasalingam.ac.in/program-offer/"
+    },
+    "btech": {
+      "label": "KARE - B.Tech programme page (eligibility, selection, industry-collaborated programmes)",
+      "url": "https://www.kalasalingam.ac.in/programs/b-tech/"
+    },
+    "ugc": {
+      "label": "UGC - Consolidated list of all universities (deemed university entry no. 802)",
+      "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+    },
+    "naac": {
+      "label": "NAAC - Institutions with valid accreditation as on 14-08-2025",
+      "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+    },
+    "nba": {
+      "label": "NBA - Accredited programmes register (Engineering UG Tier I and PG)",
+      "url": "https://www.nbaind.org/accreditationprogram"
+    },
+    "nirfu": {
+      "label": "NIRF 2025 - University ranking",
+      "url": "https://www.nirfindia.org/Rankings/2025/UniversityRanking.html"
+    },
+    "nirfe": {
+      "label": "NIRF 2025 - Engineering ranking",
+      "url": "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    },
+    "nirfo": {
+      "label": "NIRF 2025 - Overall ranking",
+      "url": "https://www.nirfindia.org/Rankings/2025/OverallRanking.html"
+    },
+    "nirfd": {
+      "label": "NIRF 2025 - Data submitted by KARE (IR-O-U-0458)",
+      "url": "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/University/IR-O-U-0458.pdf"
+    },
+    "siifaq": {
+      "label": "Study in India (Ministry of Education) - FAQ: medium of instruction, how to apply, visa documents",
+      "url": "https://www.studyinindia.gov.in/FAQ"
+    },
+    "siifrro": {
+      "label": "Study in India (Ministry of Education) - Onboarding and FRRO",
+      "url": "https://www.studyinindia.gov.in/Onboarding-&-FRRO"
+    },
+    "moe": {
+      "label": "Ministry of Education D.O. No. 13-23/2018-ICC dated 17 October 2024 on mandatory SII registration (copy on KARE site)",
+      "url": "https://www.kalasalingam.ac.in/wp-content/uploads/2024/10/DO-to-all-HEIs.pdf"
+    }
+  },
+  "packagedProgrammes": [
+    {
+      "slug": "kalasalingam-btech-computer-science-engineering",
+      "officialTitle": "B.Tech. Computer Science and Engineering",
+      "canonical": "be-btech-computer-science-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-computer-science-and-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-information-technology",
+      "officialTitle": "B.Tech. Information Technology",
+      "canonical": "be-btech-information-technology",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-information-technology/"
+    },
+    {
+      "slug": "kalasalingam-btech-electronics-communication-engineering",
+      "officialTitle": "B.Tech. Electronics and Communication Engineering",
+      "canonical": "be-btech-electronics-communication-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-electronics-and-communication-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-electrical-electronics-engineering",
+      "officialTitle": "B.Tech. Electrical and Electronics Engineering",
+      "canonical": "be-btech-electrical-electronics-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-electrical-and-electronics-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-biomedical-engineering",
+      "officialTitle": "B.Tech. Biomedical Engineering",
+      "canonical": "be-btech-biomedical-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-biomedical-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-aeronautical-engineering",
+      "officialTitle": "B.Tech. Aeronautical Engineering",
+      "canonical": "be-btech-aerospace-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-aeronautical-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-mechanical-engineering",
+      "officialTitle": "B.Tech. Mechanical Engineering",
+      "canonical": "be-btech-mechanical-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-mechanical-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-civil-engineering",
+      "officialTitle": "B.Tech. Civil Engineering",
+      "canonical": "be-btech-civil-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-civil-engineering/"
+    },
+    {
+      "slug": "kalasalingam-btech-biotechnology",
+      "officialTitle": "B.Tech. Biotechnology",
+      "canonical": "be-btech-biotechnology",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-biotechnology-2/"
+    },
+    {
+      "slug": "kalasalingam-btech-food-technology",
+      "officialTitle": "B.Tech. Food Technology",
+      "canonical": "bachelor-food-science-technology",
+      "url": "https://www.kalasalingam.ac.in/course/b-tech-food-technology/"
+    },
+    {
+      "slug": "kalasalingam-bsc-hons-agriculture",
+      "officialTitle": "B.Sc. (Hons.) Agriculture",
+      "canonical": "bsc-agriculture",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-hons-agriculture/"
+    },
+    {
+      "slug": "kalasalingam-bsc-hons-horticulture",
+      "officialTitle": "B.Sc. (Hons.) Horticulture",
+      "canonical": "bsc-horticulture",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-hons-horticulture/"
+    },
+    {
+      "slug": "kalasalingam-ba-llb-hons",
+      "officialTitle": "B.A. LL.B. (Hons.)",
+      "canonical": "llb",
+      "url": "https://www.kalasalingam.ac.in/llb/"
+    },
+    {
+      "slug": "kalasalingam-bcom-llb-hons",
+      "officialTitle": "B.Com. LL.B. (Hons.)",
+      "canonical": "llb",
+      "url": "https://www.kalasalingam.ac.in/llb/"
+    },
+    {
+      "slug": "kalasalingam-bcom",
+      "officialTitle": "B.Com. Commerce",
+      "canonical": "bcom",
+      "url": "https://www.kalasalingam.ac.in/programs/b-com/"
+    },
+    {
+      "slug": "kalasalingam-bcom-computer-applications",
+      "officialTitle": "B.Com. Computer Applications",
+      "canonical": "bcom",
+      "url": "https://www.kalasalingam.ac.in/course/b-com-computer-applications/"
+    },
+    {
+      "slug": "kalasalingam-bcom-professional-accounting",
+      "officialTitle": "B.Com. Professional Accounting",
+      "canonical": "bcom",
+      "url": "https://www.kalasalingam.ac.in/course/b-com-professional-accounting/"
+    },
+    {
+      "slug": "kalasalingam-bba",
+      "officialTitle": "B.B.A. Business Administration",
+      "canonical": "bba",
+      "url": "https://www.kalasalingam.ac.in/programs/bba/"
+    },
+    {
+      "slug": "kalasalingam-bca",
+      "officialTitle": "B.C.A. Computer Applications",
+      "canonical": "bca",
+      "url": "https://www.kalasalingam.ac.in/programs/bca/"
+    },
+    {
+      "slug": "kalasalingam-ba-english",
+      "officialTitle": "B.A. English",
+      "canonical": "ba-english-literature",
+      "url": "https://www.kalasalingam.ac.in/programs/ba/"
+    },
+    {
+      "slug": "kalasalingam-bsc-computer-science",
+      "officialTitle": "B.Sc. Computer Science",
+      "canonical": "bsc-computer-science",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-computer-science/"
+    },
+    {
+      "slug": "kalasalingam-bsc-information-technology",
+      "officialTitle": "B.Sc. Information Technology",
+      "canonical": "bachelor-information-systems",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-information-technology/"
+    },
+    {
+      "slug": "kalasalingam-bsc-mathematics-computer-applications",
+      "officialTitle": "B.Sc. Mathematics with Computer Applications",
+      "canonical": "bsc-mathematics",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-mathematics/"
+    },
+    {
+      "slug": "kalasalingam-bsc-physics-computer-applications",
+      "officialTitle": "B.Sc. Physics with Computer Applications",
+      "canonical": "bsc-physics",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-physics/"
+    },
+    {
+      "slug": "kalasalingam-bsc-chemistry",
+      "officialTitle": "B.Sc. Chemistry",
+      "canonical": "bsc-chemistry",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-chemistry/"
+    },
+    {
+      "slug": "kalasalingam-bsc-visual-communication",
+      "officialTitle": "B.Sc. Visual Communication",
+      "canonical": "bachelor-media-communication",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-visual-communication/"
+    },
+    {
+      "slug": "kalasalingam-bsc-catering-science-hotel-management",
+      "officialTitle": "B.Sc. Catering Science and Hotel Management",
+      "canonical": "bachelor-hospitality-management",
+      "url": "https://www.kalasalingam.ac.in/course/b-sc-catering-and-hotel-management/"
+    },
+    {
+      "slug": "kalasalingam-mba",
+      "officialTitle": "M.B.A. Business Administration",
+      "canonical": "mba",
+      "url": "https://www.kalasalingam.ac.in/programs/mba/"
+    },
+    {
+      "slug": "kalasalingam-mca",
+      "officialTitle": "M.C.A. Computer Applications",
+      "canonical": "mca",
+      "url": "https://www.kalasalingam.ac.in/programs/mca/"
+    },
+    {
+      "slug": "kalasalingam-mtech-computer-science-engineering",
+      "officialTitle": "M.Tech. Computer Science and Engineering",
+      "canonical": "me-mtech-computer-science-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-computer-science-and-engineering/"
+    },
+    {
+      "slug": "kalasalingam-mtech-vlsi-design",
+      "officialTitle": "M.Tech. VLSI Design",
+      "canonical": "me-mtech-electronics-communication-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-vlsi-design/"
+    },
+    {
+      "slug": "kalasalingam-mtech-renewable-energy-technologies",
+      "officialTitle": "M.Tech. Renewable Energy Technologies",
+      "canonical": "me-mtech-energy-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-renewable-energy-technologies/"
+    },
+    {
+      "slug": "kalasalingam-mtech-automotive-systems-engineering",
+      "officialTitle": "M.Tech. Automotive Systems Engineering",
+      "canonical": "me-mtech-mechanical-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-automotive-systems/"
+    },
+    {
+      "slug": "kalasalingam-mtech-industrial-safety-engineering",
+      "officialTitle": "M.Tech. Industrial Safety Engineering",
+      "canonical": "me-mtech-mechanical-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-industrial-safety-engineering/"
+    },
+    {
+      "slug": "kalasalingam-mtech-structural-engineering",
+      "officialTitle": "M.Tech. Structural Engineering",
+      "canonical": "me-mtech-civil-engineering",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-civil-structural-engineering/"
+    },
+    {
+      "slug": "kalasalingam-mtech-biotechnology",
+      "officialTitle": "M.Tech. Biotechnology",
+      "canonical": "me-mtech-biotechnology",
+      "url": "https://www.kalasalingam.ac.in/course/m-tech-biotechnology/"
+    },
+    {
+      "slug": "kalasalingam-march-habitat-design",
+      "officialTitle": "M.Arch. Habitat Design",
+      "canonical": "march",
+      "url": "https://www.kalasalingam.ac.in/programs/m-arch/"
+    },
+    {
+      "slug": "kalasalingam-msc-computer-science",
+      "officialTitle": "M.Sc. Computer Science",
+      "canonical": "msc-computer-science",
+      "url": "https://www.kalasalingam.ac.in/course/m-sc-computer-science/"
+    },
+    {
+      "slug": "kalasalingam-msc-data-science",
+      "officialTitle": "M.Sc. Data Science",
+      "canonical": "msc-data-science",
+      "url": "https://www.kalasalingam.ac.in/course/m-sc-data-science/"
+    },
+    {
+      "slug": "kalasalingam-msc-mathematics",
+      "officialTitle": "M.Sc. Mathematics",
+      "canonical": "msc-mathematics",
+      "url": "https://www.kalasalingam.ac.in/course/m-sc-mathematics/"
+    },
+    {
+      "slug": "kalasalingam-msc-physics",
+      "officialTitle": "M.Sc. Physics",
+      "canonical": "msc-physics",
+      "url": "https://www.kalasalingam.ac.in/course/m-sc-physics/"
+    },
+    {
+      "slug": "kalasalingam-msc-chemistry",
+      "officialTitle": "M.Sc. Chemistry",
+      "canonical": "msc-chemistry",
+      "url": "https://www.kalasalingam.ac.in/course/m-sc-chemistry/"
+    },
+    {
+      "slug": "kalasalingam-msc-forensic-science",
+      "officialTitle": "M.Sc. Forensic Science",
+      "canonical": "msc-forensic-science",
+      "url": "https://www.kalasalingam.ac.in/course/m-sc-forensic-science/"
+    },
+    {
+      "slug": "kalasalingam-ma-english",
+      "officialTitle": "M.A. English",
+      "canonical": "ma-english-literature",
+      "url": "https://www.kalasalingam.ac.in/programs/ma-english/"
+    },
+    {
+      "slug": "kalasalingam-msw",
+      "officialTitle": "M.S.W. Master of Social Work",
+      "canonical": "master-social-work",
+      "url": "https://www.kalasalingam.ac.in/programs/msw/"
+    }
+  ]
+}

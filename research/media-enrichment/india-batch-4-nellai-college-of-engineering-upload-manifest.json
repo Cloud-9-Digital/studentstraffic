@@ -1,0 +1,34 @@
+{
+  "manifestId": "india-batch-4-media-nellai-college-of-engineering-2026-10-22",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-22",
+  "scope": "logo and cover for content migration 0114-india-nellai-college-of-engineering (India batch 4). Kept as a per-university file so concurrent batch-4 workers do not overwrite one shared manifest; merge into a batch manifest at integration if preferred.",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-22; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "nellai-college-of-engineering",
+      "universityName": "Nellai College of Engineering",
+      "sourceBatch": "india-batch-4",
+      "migrationId": "0114-india-nellai-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://nce.ac.in/wp-content/uploads/2022/05/Nellai.png",
+          "sourceType": "official",
+          "rightsBasis": "Official NCE header logo served from the college's own WordPress uploads (full-size original of the Nellai-1024x309.png header image on https://nce.ac.in/). No open licence - official institutional brand mark used only to identify the college. Checked 2026-10-22: HTTP 200, content-type image/png, 41,863 bytes, 1264x382 px, RGBA with transparent background. Visual check composited on a white tile: circular crest (orange laurel, orbit rings, lamp, 'Nellai College of Engineering' ring text and the line 'Taking you to tomorrow's technology'), dark-grey NELLAI wordmark and orange COLLEGE OF ENGINEERING - fully legible on white. Wide lockup; crop to the crest (left ~240 px) if a square mark is needed. Rejected: favicon-300x300.png (favicon).",
+          "proposedPublicId": "studentstraffic/universities/nellai-college-of-engineering/logo"
+        },
+        {
+          "kind": "cover",
+          "status": "hold",
+          "rightsBasis": "HOLD - no rights-safe, non-misleading campus cover found. Official candidates reviewed 2026-10-22: (1) https://nce.ac.in/wp-content/uploads/2022/05/NCE-College.jpg (1920x1080, HTTP 200 image/jpeg) shows the real arched academic block but is a digital composite: the foreground synthetic running track (mirrored lane numbers), hurdle, goalposts and tent are pasted in, with a visible blend seam at the right; publishing it would imply facilities NCE does not document. A crop to the building band (roughly y 150-560) removes most of the composite but still leaves seams and a 4:1 strip - reviewer may approve with a transformation crop, not recommended. (2) Hostel.jpg and stu_03.webp are collages; NCE-1.jpg is a close-up of identifiable students. Wikimedia Commons searches for 'Nellai College of Engineering', 'National College of Engineering Maruthakulam' and 'Maruthakulam' returned no files. Content is not blocked by this hold.",
+          "proposedPublicId": "studentstraffic/universities/nellai-college-of-engineering/cover"
+        }
+      ]
+    }
+  ]
+}

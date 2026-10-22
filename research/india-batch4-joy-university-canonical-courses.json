@@ -1,0 +1,231 @@
+{
+  "batch": "claude-india-batch4-20261022",
+  "owner": "claude-india-joy-20261022",
+  "note": "Shared canonical course records first shipped in content-migrations/0117-india-joy-university. Copy each record verbatim into the courses array of every payload that references the slug; publishing overwrites the shared course row, so the text must stay identical across bundles. Text is generic and university-neutral. be-btech-agricultural-engineering was added to lib/data/program-taxonomy.ts in the same change; the other two slugs already existed in the taxonomy but had no shipped course record. Extended 2026-10-22 with records for bsc-horticulture, msc-horticulture, bachelor-criminology, bsc-forensic-science, bsc-biotechnology, msc-biotechnology and bsc-renewable-energy (taxonomy entries added the same day; bsc-horticulture was already in the taxonomy) and first shipped records for ba-languages-linguistics, bachelor-film-television and msc-agriculture.",
+  "courses": [
+    {
+      "slug": "be-btech-agricultural-engineering",
+      "name": "B.E./B.Tech in Agricultural Engineering",
+      "shortName": "B.E./B.Tech Agricultural",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "agricultural-engineering",
+      "aliases": [
+        "B.Tech Agricultural Engineering",
+        "Bachelor of Agricultural Engineering",
+        "BEng Agricultural Engineering"
+      ],
+      "displayOrder": 35,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate agricultural engineering degrees. Programmes in this category apply engineering to farming and food production: farm machinery and power, soil and water conservation, irrigation and drainage, post-harvest and processing engineering and renewable energy in agriculture, with field and workshop practice. Curriculum, regulator approval, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech Agricultural Programmes | Students Traffic",
+      "metaDescription": "Compare B.E./B.Tech Agricultural engineering programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "be-btech-biomedical-engineering",
+      "name": "B.E./B.Tech in Biomedical Engineering",
+      "shortName": "B.E./B.Tech Biomedical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "biomedical-engineering",
+      "aliases": [
+        "Bachelor of Biomedical Engineering",
+        "BEng Biomedical Engineering"
+      ],
+      "displayOrder": 36,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate biomedical engineering degrees. Programmes in this category combine electronics, instrumentation and mechanics with human anatomy and physiology, covering medical devices and imaging, biomaterials, biosignal processing and hospital equipment, usually with laboratory work and clinical or industry exposure. Curriculum, regulator approval, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.E./B.Tech Biomedical Programmes | Students Traffic",
+      "metaDescription": "Compare B.E./B.Tech Biomedical engineering programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "mba-marketing",
+      "name": "MBA in Marketing",
+      "shortName": "MBA Marketing",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "marketing",
+      "aliases": [
+        "Master of Business Administration in Marketing"
+      ],
+      "displayOrder": 341,
+      "durationYears": 2,
+      "summary": "An MBA specialisation in marketing combining core business administration modules with consumer behaviour, market research, brand and product management, sales, pricing and digital marketing. Each university offering keeps its own official award, accreditation, tuition and admissions conditions visible before applying.",
+      "metaTitle": "MBA in Marketing Programmes | Students Traffic",
+      "metaDescription": "Compare MBA in Marketing programmes by curriculum, accreditation, tuition fees, teaching language and admissions before you apply."
+    },
+    {
+      "slug": "bsc-horticulture",
+      "name": "B.Sc. in Horticulture",
+      "shortName": "B.Sc. Horticulture",
+      "stream": "agriculture",
+      "level": "bachelors",
+      "discipline": "horticulture",
+      "aliases": [
+        "B.Sc. (Hons.) Horticulture",
+        "Bachelor of Horticulture",
+        "BSc Horticulture"
+      ],
+      "displayOrder": 150,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for undergraduate horticulture degrees. Programmes cover the science and production of fruit, vegetable, flower, plantation, spice and medicinal crops, with plant propagation, nursery management, protected cultivation, post-harvest handling and field practice. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.Sc. Horticulture Programmes | Students Traffic",
+      "metaDescription": "Compare B.Sc. Horticulture programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "msc-horticulture",
+      "name": "M.Sc. in Horticulture",
+      "shortName": "M.Sc. Horticulture",
+      "stream": "agriculture",
+      "level": "masters",
+      "discipline": "horticulture",
+      "aliases": [
+        "M.Sc. (Horticulture)",
+        "Master of Horticulture",
+        "MSc Horticulture"
+      ],
+      "displayOrder": 151,
+      "durationYears": 2,
+      "summary": "The Students Traffic catalogue category for postgraduate horticulture degrees, usually taken in a named specialisation such as fruit science, vegetable science or floriculture and landscaping, combining advanced coursework with a research thesis. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "M.Sc. Horticulture Programmes | Students Traffic",
+      "metaDescription": "Compare M.Sc. Horticulture programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bachelor-criminology",
+      "name": "Bachelor's in Criminology",
+      "shortName": "Bachelor's Criminology",
+      "stream": "social-sciences",
+      "level": "bachelors",
+      "discipline": "criminology",
+      "aliases": [
+        "BA Criminology",
+        "B.A. Criminology and Police Administration",
+        "BSc Criminology"
+      ],
+      "displayOrder": 152,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate criminology degrees. Programmes study crime, victims and the criminal justice system, covering criminological theory, policing and police administration, penology, criminal law and procedure, and social research methods. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "Bachelor's Criminology Programmes | Students Traffic",
+      "metaDescription": "Compare Bachelor's Criminology programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bsc-forensic-science",
+      "name": "B.Sc. in Forensic Science",
+      "shortName": "B.Sc. Forensic Science",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "forensic-science",
+      "aliases": [
+        "Bachelor of Science in Forensic Science",
+        "BSc Forensic Sciences"
+      ],
+      "displayOrder": 153,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate forensic science degrees. Programmes apply chemistry, biology and physics to the examination of evidence, covering crime-scene practice, forensic chemistry and toxicology, serology and DNA, fingerprints, questioned documents and laboratory work. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.Sc. Forensic Science Programmes | Students Traffic",
+      "metaDescription": "Compare B.Sc. Forensic Science programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bsc-biotechnology",
+      "name": "B.Sc. in Biotechnology",
+      "shortName": "B.Sc. Biotechnology",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "biotechnology",
+      "aliases": [
+        "Bachelor of Science in Biotechnology",
+        "BSc Biotechnology"
+      ],
+      "displayOrder": 154,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for science-track undergraduate biotechnology degrees, distinct from the engineering B.Tech. Programmes cover cell and molecular biology, biochemistry, microbiology, genetics, genetic engineering and bioprocess basics, with laboratory practicals. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.Sc. Biotechnology Programmes | Students Traffic",
+      "metaDescription": "Compare B.Sc. Biotechnology programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "msc-biotechnology",
+      "name": "M.Sc. in Biotechnology",
+      "shortName": "M.Sc. Biotechnology",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "biotechnology",
+      "aliases": [
+        "Master of Science in Biotechnology",
+        "MSc Biotechnology"
+      ],
+      "displayOrder": 155,
+      "durationYears": 2,
+      "summary": "The Students Traffic catalogue category for postgraduate science-track biotechnology degrees. Programmes deepen molecular biology, genetic engineering, immunology, bioprocess technology and bioinformatics, usually with a research dissertation. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "M.Sc. Biotechnology Programmes | Students Traffic",
+      "metaDescription": "Compare M.Sc. Biotechnology programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bsc-renewable-energy",
+      "name": "B.Sc. in Renewable Energy",
+      "shortName": "B.Sc. Renewable Energy",
+      "stream": "environment-sustainability",
+      "level": "bachelors",
+      "discipline": "renewable-energy",
+      "aliases": [
+        "Bachelor of Science in Renewable Energy",
+        "BSc Renewable Energy"
+      ],
+      "displayOrder": 156,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate science degrees in renewable energy. Programmes cover the physics and chemistry of energy conversion, solar, wind, bioenergy and other renewable sources, energy storage, and energy efficiency and policy, with laboratory and field work. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.Sc. Renewable Energy Programmes | Students Traffic",
+      "metaDescription": "Compare B.Sc. Renewable Energy programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "ba-languages-linguistics",
+      "name": "B.A. in Languages and Linguistics",
+      "shortName": "B.A. Languages",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "languages-linguistics",
+      "aliases": [
+        "BA Linguistics",
+        "Bachelor of Arts in Modern Languages"
+      ],
+      "displayOrder": 157,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate degrees in a named language, modern languages or linguistics. Programmes study language structure, literature and cultural texts in the chosen language or languages, with translation and analytical writing. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.A. Languages Programmes | Students Traffic",
+      "metaDescription": "Compare B.A. Languages programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bachelor-film-television",
+      "name": "Bachelor's in Film and Television",
+      "shortName": "Bachelor's Film & TV",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "film-television",
+      "aliases": [
+        "BA Film and Television",
+        "Bachelor of Film"
+      ],
+      "displayOrder": 158,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate film and television degrees. Programmes cover screenwriting, direction, cinematography, editing, sound and production management, with studio and field production projects. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "Bachelor's Film & TV Programmes | Students Traffic",
+      "metaDescription": "Compare Bachelor's Film & TV programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "msc-agriculture",
+      "name": "M.Sc. in Agriculture",
+      "shortName": "M.Sc. Agriculture",
+      "stream": "agriculture",
+      "level": "masters",
+      "discipline": "agriculture",
+      "aliases": [
+        "Master of Agriculture",
+        "MSc Agricultural Science"
+      ],
+      "displayOrder": 159,
+      "durationYears": 2,
+      "summary": "The Students Traffic catalogue category for postgraduate agriculture degrees, usually taken in a named discipline such as agronomy, entomology, plant breeding or extension education, combining advanced coursework with a research thesis. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "M.Sc. Agriculture Programmes | Students Traffic",
+      "metaDescription": "Compare M.Sc. Agriculture programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "manifestId": "india-batch-4-combined",
+  "checkedAt": "2026-10-22",
+  "entries": [
+    {
+      "universitySlug": "joy-university",
+      "universityName": "Joy University",
+      "sourceBatch": "claude-india-batch4-20261022",
+      "migrationId": "0117-india-joy-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://joyuniversity.edu.in/images/Joy-Logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official Joy University header logo served from the university's own domain (site-wide header on joyuniversity.edu.in). No open licence - used only to identify the institution. Checked 2026-10-22: HTTP 200, content-type image/png, 16,532 bytes, 338x47 px. Rendered on white and visually confirmed: maroon 'J' monogram, grey 'JOY UNIVERSITY' wordmark and the strapline 'Established vide Tamil Nadu State Pvt. Universities Act 2019 - UGC Recognised' - legible on a white tile. CAVEAT: small raster (338 px wide); no SVG or larger brand asset found. The footer logo (images/footer-logo.png) is white-on-transparent and was rejected.",
+          "proposedPublicId": "studentstraffic/universities/joy-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://joyuniversity.edu.in/userfiles/PhotoGallery/0d8f50f9c5f143a18ec8dd8d6adae39a.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://joyuniversity.edu.in/Infrastructures",
+          "rightsBasis": "Official campus photograph on the university domain, first image in the Infrastructures page gallery (Campus Overview). No open licence stated - official institutional image used to identify the institution, same basis as earlier official covers in research/media-enrichment/india-batch-3-upload-manifest.json. Checked 2026-10-22: HTTP 200, content-type image/jpeg, 543,918 bytes, 1280x752 px (landscape). Visual confirmation: aerial view of the Raja Nagar campus at dusk - blue-and-white academic blocks, a round building, green quadrangles and the Our Lady of Lourdes chapel sign, with wind turbines and the Western Ghats behind. No text overlay or watermark.",
+          "altText": "Aerial view of Joy University's campus at Vadakkankulam, Tamil Nadu, with academic blocks and lawns in the foreground and wind turbines and hills behind",
+          "proposedPublicId": "studentstraffic/universities/joy-university/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "kalasalingam-academy-of-research-and-education",
+      "universityName": "Kalasalingam Academy of Research and Education",
+      "sourceBatch": "india-batch-4",
+      "migrationId": "0118-india-kalasalingam-academy-of-research-and-education",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.kalasalingam.ac.in/wp-content/uploads/2022/02/Logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official KARE header logo served from the university's own domain (site header image on every page). No open licence - used only to identify the institution. Checked 2026-10-22: HTTP 200, content-type image/png, 2,048,564 bytes, 5646x986 px RGBA. Visually confirmed composited on white: full-colour KARE gear seal, blue 'KALASALINGAM' wordmark, red 'ACADEMY OF RESEARCH AND EDUCATION', '(DEEMED TO BE UNIVERSITY)' bar and a portrait of the founder at the right - legible on a white tile. Very wide lockup (about 5.7:1); crop to the seal plus wordmark (drop the founder portrait) at upload if the logo tile is square. The site icon cropped-logo-1-*.png is a favicon and was not used.",
+          "proposedPublicId": "studentstraffic/universities/kalasalingam-academy-of-research-and-education/logo",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 4660,
+              "height": 986
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.kalasalingam.ac.in/wp-content/uploads/2021/08/building-19-scaled.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official campus photograph on the university domain, used on the kalasalingam.ac.in homepage. No open licence stated - used to identify the institution, same basis as the jamia-hamdard batch-3 cover. Checked 2026-10-22: HTTP 200, content-type image/jpeg, 710,391 bytes, 2560x1707 px. Visually confirmed: white multi-storey academic blocks including the signed 'Dr. A.P.J. Abdul Kalam Block' under a clear sky with the Western Ghats foothills at right; no people in focus, no text overlay. The only Wikimedia Commons candidate ('File:Kalasalingam University.jpg', CC0) is an event poster with faces and text and was rejected.",
+          "altText": "Academic blocks including the Dr. A.P.J. Abdul Kalam Block on the Kalasalingam Academy of Research and Education campus in Krishnankoil, with Western Ghats foothills behind",
+          "proposedPublicId": "studentstraffic/universities/kalasalingam-academy-of-research-and-education/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "nellai-college-of-engineering",
+      "universityName": "Nellai College of Engineering",
+      "sourceBatch": "india-batch-4",
+      "migrationId": "0114-india-nellai-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://nce.ac.in/wp-content/uploads/2022/05/Nellai.png",
+          "sourceType": "official",
+          "rightsBasis": "Official NCE header logo served from the college's own WordPress uploads (full-size original of the Nellai-1024x309.png header image on https://nce.ac.in/). No open licence - official institutional brand mark used only to identify the college. Checked 2026-10-22: HTTP 200, content-type image/png, 41,863 bytes, 1264x382 px, RGBA with transparent background. Visual check composited on a white tile: circular crest (orange laurel, orbit rings, lamp, 'Nellai College of Engineering' ring text and the line 'Taking you to tomorrow's technology'), dark-grey NELLAI wordmark and orange COLLEGE OF ENGINEERING - fully legible on white. Wide lockup; crop to the crest (left ~240 px) if a square mark is needed. Rejected: favicon-300x300.png (favicon).",
+          "proposedPublicId": "studentstraffic/universities/nellai-college-of-engineering/logo"
+        },
+        {
+          "kind": "cover",
+          "status": "hold",
+          "rightsBasis": "HOLD - no rights-safe, non-misleading campus cover found. Official candidates reviewed 2026-10-22: (1) https://nce.ac.in/wp-content/uploads/2022/05/NCE-College.jpg (1920x1080, HTTP 200 image/jpeg) shows the real arched academic block but is a digital composite: the foreground synthetic running track (mirrored lane numbers), hurdle, goalposts and tent are pasted in, with a visible blend seam at the right; publishing it would imply facilities NCE does not document. A crop to the building band (roughly y 150-560) removes most of the composite but still leaves seams and a 4:1 strip - reviewer may approve with a transformation crop, not recommended. (2) Hostel.jpg and stu_03.webp are collages; NCE-1.jpg is a close-up of identifiable students. Wikimedia Commons searches for 'Nellai College of Engineering', 'National College of Engineering Maruthakulam' and 'Maruthakulam' returned no files. Content is not blocked by this hold.",
+          "proposedPublicId": "studentstraffic/universities/nellai-college-of-engineering/cover"
+        }
+      ]
+    },
+    {
+      "universitySlug": "sardar-raja-college-of-engineering",
+      "universityName": "Sardar Raja College of Engineering",
+      "sourceBatch": "india-batch-4",
+      "migrationId": "0115-india-sardar-raja-college-of-engineering",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://src.org.in/wp-content/uploads/2023/03/sardhar-logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official SRCE logo lock-up (crest with 'Love and serve mankind through education' ribbon plus 'SARDAR RAJA COLLEGE OF ENGINEERING' wordmark) served from the college's own domain src.org.in and used in its site header. No open licence; used only to identify the institution. Checked 2026-10-22: HTTP 200, image/png, 121,832 bytes, 1431x279 px. Visually confirmed legible on a white tile (slate-blue wordmark and blue/white crest). Wide aspect ratio; a square crop of the crest may suit small tiles.",
+          "proposedPublicId": "studentstraffic/universities/sardar-raja-college-of-engineering/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://src.org.in/wp-content/uploads/2023/01/1492685186phpY7jaCk.jpeg",
+          "sourceType": "official",
+          "rightsBasis": "Official institutional photograph of the SRCE main building published on the college's own homepage (src.org.in). No open licence; used only to depict the institution. Wikimedia Commons searched 2026-10-22: no SRCE campus image exists. Checked 2026-10-22: HTTP 200, image/jpeg, 338,686 bytes, 1066x800 px (landscape, below the preferred 1000px+ ideal but acceptable). Visually confirmed: white three-storey main building with central dome and Indian flag, statue group and landscaped hedges, paved forecourt, wind turbines in the background; no text overlay.",
+          "proposedPublicId": "studentstraffic/universities/sardar-raja-college-of-engineering/cover",
+          "altText": "White main building of Sardar Raja College of Engineering at Alangulam, with a central dome, statue group and paved forecourt"
+        }
+      ]
+    }
+  ]
+}

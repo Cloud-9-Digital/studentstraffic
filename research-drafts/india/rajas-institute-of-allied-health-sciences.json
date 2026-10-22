@@ -1,0 +1,75 @@
+{
+  "status": "validated",
+  "migrationId": "0116-india-rajas-institute-of-allied-health-sciences",
+  "listing": "domestic-only (local-only), user-approved 2026-10-22",
+  "owner": "claude-india-srcahs-20261022",
+  "batch": "claude-india-batch4-20261022",
+  "checkedAt": "2026-10-22",
+  "requestedName": "Sardar Raja College of Allied Health Sciences",
+  "identity": {
+    "slug": "rajas-institute-of-allied-health-sciences",
+    "officialName": "Rajas Institute of Allied Health Sciences",
+    "abbreviation": "RIAHS",
+    "address": "Raja Nagar, Vadakkankulam, Tirunelveli District, Tamil Nadu 627116",
+    "city": "Vadakkankulam",
+    "type": "Private",
+    "institutionKind": "Self-financing college affiliated to The Tamil Nadu Dr. M.G.R. Medical University (not a university)",
+    "awardingUniversity": "The Tamil Nadu Dr. M.G.R. Medical University, Chennai",
+    "tnmgrmuInstitutionCode": "898",
+    "trust": "Selvam Educational & Charitable Trust",
+    "parentGroup": "Rajas Medical Institutions (group founded 1987 by Sardar Dr. S.A. Raja)",
+    "establishedYearBasis": "TNMGRMU provisional affiliation year 2020-21; G.O.(Ms.) No.552 H&FW (PME-2) dated 15-12-2020 (institute-stated). Exact founding year not published.",
+    "officialWebsite": "https://riahs.rmi.net.in/",
+    "contact": { "email": "riahs@rajas.edu", "phone": ["+91 7094434293", "04637 213788"] },
+    "principal": "Dr. V. Sony Mol",
+    "joyUniversityCheck": "Not absorbed: TNMGRMU lists RIAHS as its own affiliated institution for 2025-26 (published 2026-09-07); Joy University site names no constituent college."
+  },
+  "programmes": [
+    {
+      "officialTitle": "B.Sc Cardiac Technology",
+      "canonicalCourseSlug": "bsc-allied-health-sciences",
+      "durationYears": 4,
+      "structure": "3 academic years plus 1-year compulsory internship (TNMGRMU AHS regulations)",
+      "sanctionedIntake": 10,
+      "intakeMonth": "august (course commences 1 August per TNMGRMU regulation; admissions close 30 September)",
+      "medium": "English",
+      "eligibility": "TNMGRMU: pass in 10+2 with Physics, Chemistry and Biology (or equivalent, 12 years of schooling) with at least 35% in each subject including English; age 17 by 31 December of the admission year; candidates from boards other than the TN Higher Secondary need a TNMGRMU eligibility certificate. Institute page: HSC with PCB+Maths or PC+Botany+Zoology.",
+      "internshipPostings": "Cath lab and blood bank, echo room, ICCU, Holter (3 months each)",
+      "fee": "not published",
+      "intlStatus": "unknown",
+      "officialProgramUrl": "https://riahs.rmi.net.in/cardiac_course"
+    },
+    {
+      "officialTitle": "B.Sc Operation Theatre and Anaesthesia Technology",
+      "canonicalCourseSlug": "bsc-allied-health-sciences",
+      "durationYears": 4,
+      "structure": "3 academic years plus 1-year compulsory internship",
+      "sanctionedIntake": 10,
+      "intakeMonth": "august",
+      "medium": "English",
+      "eligibility": "As for B.Sc Cardiac Technology (TNMGRMU AHS regulations).",
+      "internshipPostings": "Sterilisation room 3 months, post-operative/recovery 3 months, surgical ICU 3 months, operation theatres 3 months (general surgery, O&G, paediatrics, others)",
+      "fee": "not published",
+      "intlStatus": "unknown",
+      "officialProgramUrl": "https://riahs.rmi.net.in/anaesthesia_course"
+    }
+  ],
+  "clinicalTieUps": {
+    "mou": ["Bethesda Hospital, Nagercoil", "The Salvation Army Catherine Booth Hospital"],
+    "internshipAndTraining": ["Angel Hospital, Tirunelveli", "Kauvery Hospital, Tirunelveli", "Porunai Hospital, Tirunelveli", "Ponjesly Super Speciality Hospital, Nagercoil", "KIMS Hospital, Nagercoil", "Tamil Nadu Government Multi Super Speciality Hospital, Omandurar, Chennai", "Rajiv Gandhi Government General Hospital, Chennai", "Indira Gandhi Government General Hospital & PGI, Puducherry", "Ananthapuri Hospital, Thiruvananthapuram", "PRS Hospital, Thiruvananthapuram", "Selvam Orthopedic Hospital, Valliyur", "and others listed at https://riahs.rmi.net.in/hospital_tie_up"]
+  },
+  "admissionRoute": "Direct institutional admission via https://riahs.rmi.net.in/online-application. B.Sc Cardiac Technology and OTAT are not offered under TN DME government quota in self-financing colleges (2025-26 paramedical prospectus), so the state government-quota rules (Indian citizenship, TN nativity) do not apply to these seats.",
+  "recognitionCandidates": [
+    { "badge": "The Tamil Nadu Dr. M.G.R. Medical University: affiliated institution, code 898 (AHS list 2025-26)", "url": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/09/Allied-health-sciences-sep72026.pdf" },
+    { "badge": "TNMGRMU: B.Sc. Cardiac Technology and B.Sc. OTAT affiliated, 10 seats each (PA 2020-21, CCPA 2022-23)", "url": "https://www.tnmgrmu.ac.in/wp-content/uploads/2025/12/Allied-Health-Science-Courses-2024.pdf" }
+  ],
+  "blockingFacts": [
+    "No official foreign-national, NRI or OCI admission route, eligibility rule, document list or fee for either programme (RIAHS or TNMGRMU).",
+    "No official tuition or fee schedule.",
+    "No official application steps, document list or deadline beyond the online form fields and the TNMGRMU 30 September admission cut-off."
+  ],
+  "media": {
+    "logoCandidate": { "sourceUrl": "https://riahs.rmi.net.in/public/user_assets/images/rp-logo.png", "http": "200 image/png", "rights": "not documented; official site asset", "uploaded": false },
+    "cover": { "status": "none", "reason": "No rights-safe campus photograph. The official admissions image appears AI-generated, and gallery images are event photos with no reuse terms." }
+  }
+}

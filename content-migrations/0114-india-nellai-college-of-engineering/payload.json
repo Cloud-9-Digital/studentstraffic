@@ -1,0 +1,1970 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "be-btech-cyber-security",
+      "name": "B.E./B.Tech in Cyber Security",
+      "shortName": "B.E./B.Tech Cyber Security",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "cyber-security",
+      "aliases": [
+        "Bachelor of Cyber Security",
+        "BSc Cyber Security"
+      ],
+      "displayOrder": 101,
+      "durationYears": 3,
+      "summary": "Study cyber security through an undergraduate engineering programme covering network security, cryptography, secure systems design, digital forensics and ethical hacking practice. Compare each university's official award, laboratory facilities, industry certifications, tuition and admissions requirements before applying, since specialisation depth and delivery format vary by institution.",
+      "metaTitle": "B.E./B.Tech Cyber Security Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Cyber Security programmes abroad by curriculum, laboratories, tuition fees and admissions requirements for international students."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "nellai-college-of-engineering",
+      "name": "Nellai College of Engineering",
+      "city": "Tirunelveli",
+      "type": "Private",
+      "establishedYear": 2000,
+      "officialWebsite": "https://nce.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Nellai College of Engineering (NCE), formerly National College of Engineering, is a self-financing Muslim minority engineering college at Maruthakulam in Tirunelveli district, Tamil Nadu, founded in 2000 by the Manarul Huda Trust. It is affiliated to Anna University, Chennai, which awards its degrees, and is AICTE-approved for seven English-taught B.E./B.Tech programmes in 2026-27.",
+      "campusLifestyle": "NCE was inaugurated on 7 September 2000 and has an AICTE-approved intake of 330 across seven branches for 2026-27. The CSE department lists 200 HP computers on a 32 Mbps link; the Cyber Security and AI & DS labs list 150 computers each with firewall-configured servers. College facilities include a library, a 1,000-seat auditorium, a 60-seat canteen, indoor and outdoor games and a college bus service. An Institution of Engineers (India) student chapter runs through the AI & DS department.",
+      "cityProfile": "The campus address is Maruthakulam P.O., Nanguneri taluk, Tirunelveli district, Tamil Nadu 627151, in the far south of the state; NCE publishes no distance from the campus to Tirunelveli town. Anna University lists NCE among the affiliated colleges of its Region IV, Tirunelveli. The Tirunelveli district administration names Tirunelveli Junction as the railway station and the Veinthankulam New Bus Stand as the town's bus terminal; the nearest airport is Vagaikulam in Thoothukudi district, about 20 km from Tirunelveli, and Madurai's airport is about 170 km away. NCE runs its own buses for students and staff from several places, but does not publish routes or charges.",
+      "practicalExposure": "NCE is not autonomous, so the syllabus, examinations and degree rules are Anna University's. Under Anna University's Regulations 2021 for affiliated colleges, a B.E./B.Tech runs eight semesters and must be completed within fourteen; students need 75 per cent attendance to sit end-semester examinations; and industrial training or internships can earn credits. AICTE's 2026-27 approval letter makes an internship mandatory for all admitted students. Recent activities listed by NCE include an ECE industrial visit to Saksam Electronics on 25 July 2026 and a one-day full-stack development workshop run by CSE and AI & DS on 30 July 2026. The CSE department lists AICTE- and IIT-sponsored short-term training programmes and Spoken Tutorial workshops. NCE does not publish placement statistics or a list of recruiting companies with offer numbers.",
+      "hostelOverview": "NCE runs separate hostels for men and women, with round-the-clock security, dining halls, common study halls and prayer halls. Neither the facilities page nor the 2026-27 mandatory disclosure gives hostel or mess fees, room types or capacity, so ask the college office (04635 256420) before admission. For students admitted under Tamil Nadu's 7.5 per cent government-school reservation, the disclosure says the state pays tuition, hostel and development fees under G.O. 221 of 15 November 2021.",
+      "dietarySupport": "Hostel residents eat in the hostel dining halls. NCE does not publish a menu, a mess fee or whether vegetarian and non-vegetarian food are served separately. The campus canteen seats 60 students and staff, and the hostels include prayer halls.",
+      "safetyOverview": "NCE says its men's and women's hostels are separate and have round-the-clock security. The college website links an online grievance form and student feedback forms. Its committees page returned an error when checked on 22 October 2026, so anti-ragging committee contacts were not available there.",
+      "studentSupport": "Admission enquiries go to +91 83001 27171; the college office is on 04635 256420 and the principal on +91 83001 27474 (principal@nce.ac.in). NCE's disclosure lists the Tamil Nadu first-graduate tuition concession, the AICTE Tuition Fee Waiver on up to 5 per cent of seats and post-matric scholarships for SC/SCA/ST students.",
+      "whyChoose": [
+        "Degrees are awarded by Anna University, Chennai, and all seven B.E./B.Tech programmes hold AICTE Extension of Approval for 2026-27",
+        "Entry is through Tamil Nadu Engineering Admissions counselling under code 4961, ranked on Class 12 Mathematics (100), Physics (50) and Chemistry (50)",
+        "Computer Science and Engineering (Cyber Security) and Artificial Intelligence and Data Science, added in 2024, sit alongside Civil, Mechanical, EEE, ECE and CSE",
+        "State and AICTE schemes listed by the college can cut costs: the state pays tuition, hostel and development fees for 7.5 per cent government-school admits, and first-graduate and AICTE tuition waivers also apply",
+        "Separate men's and women's hostels and a college bus service serve the campus at Maruthakulam in Tirunelveli district"
+      ],
+      "thingsToConsider": [
+        "AICTE has not approved NCE for foreign-national or NRI seats in 2026-27; seats go through TNEA, which admits Indian nationals under nativity rules and OCI/PIO card holders only if they are Tamil Nadu natives",
+        "NCE does not publish its tuition: its disclosure says fees are set by Tamil Nadu's fee-fixation committee for self-financing colleges, and hostel and bus charges are not published either",
+        "NCE's 2026-27 mandatory disclosure lists no NBA or NAAC accreditation, and the college is not autonomous, so curriculum and examinations follow Anna University's common regulations",
+        "Mechanical and Civil Engineering now have 30 seats each, and the M.E. programmes and B.Tech Information Technology that AICTE approved in earlier years are no longer on its 2026-27 list",
+        "Some college pages are out of date: the EEE page still mentions an M.E. Control and Instrumentation, and the principal's message lists five branches rather than seven"
+      ],
+      "bestFitFor": [
+        "Tamil Nadu applicants going through TNEA counselling who want an Anna University B.E. or B.Tech in Tirunelveli district",
+        "Students interested in the newer AI & DS or CSE (Cyber Security) branches with 30-seat cohorts",
+        "Government-school, first-graduate or lower-income applicants who qualify for Tamil Nadu or AICTE fee concessions"
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Extension of Approval 2026-27 for seven UG engineering programmes (Permanent ID 1-4378723, total intake 330)",
+        "Anna University, Chennai - affiliated college, Region IV Tirunelveli (college code 9518, TNEA counselling code 4961)",
+        "AICTE approved-institutions register 2026-27 - listed as a minority institution"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutions dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Tirunelveli district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Nellai College of Engineering a university?",
+          "answer": "No. NCE is a college affiliated to Anna University, Chennai, which sets the syllabus, conducts the examinations and awards the B.E. or B.Tech degree. NCE is not autonomous. It opened in 2000 as National College of Engineering, and AICTE's records show the name Nellai College of Engineering from 2022-23."
+        },
+        {
+          "question": "Is NCE a government or private college?",
+          "answer": "It is a private, self-financing college run by the Manarul Huda Trust of Thiruvananthapuram, Kerala, and AICTE lists it as a minority institution; NCE describes itself as a Muslim minority institution. AICTE classes it as Private-Self Financing, and its tuition is the fee prescribed by Tamil Nadu's fee-fixation committee for self-financing professional colleges."
+        },
+        {
+          "question": "Which programmes does NCE offer in 2026-27?",
+          "answer": "AICTE approves seven four-year undergraduate programmes for 2026-27: B.E. Computer Science and Engineering (90 seats), B.E. Electronics and Communication Engineering (60), B.E. Electrical and Electronics Engineering (60), B.E. Civil Engineering (30), B.E. Mechanical Engineering (30), B.E. Computer Science and Engineering (Cyber Security) (30) and B.Tech Artificial Intelligence and Data Science (30). No postgraduate or doctoral programme is on AICTE's 2026-27 list."
+        },
+        {
+          "question": "Can international or NRI students apply to NCE?",
+          "answer": "Not on student visas. AICTE's 2026-27 approval letter shows International Students approval 'No' and NRI approval 'No' for every NCE course, so there are no foreign-national or NRI seats. Seats are filled through TNEA, which admits Indian nationals meeting its nativity or Tamil Nadu schooling rules; OCI/PIO card holders who are natives of Tamil Nadu may take part under open competition unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "What are the eligibility requirements for B.E./B.Tech at NCE?",
+          "answer": "NCE's disclosure reproduces Tamil Nadu's rules: a Class 12 (HSC, +1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45 per cent for General category or 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST applicants. An HSC vocational-stream pass in an engineering group with the same averages also qualifies. Diploma holders and B.Sc. Mathematics graduates may enter the third semester through lateral entry."
+        },
+        {
+          "question": "How do I apply to NCE?",
+          "answer": "Apply online through Tamil Nadu Engineering Admissions (TNEA) at tneaonline.org; the fee is INR 500, or INR 250 for SC/SCA/ST. Upload your marksheets and certificates, then in your counselling round enter college code 4961 with your branch choices and confirm the allotment. For 2026, registration closed on 5 June and general counselling ran 20 July to 30 August. NCE publishes no separate management-quota route; its admission line is +91 83001 27171."
+        },
+        {
+          "question": "What are NCE's fees?",
+          "answer": "NCE does not publish an amount. Its 2026-27 disclosure says tuition for every branch is the fee prescribed by the Government of Tamil Nadu's fee-fixation committee for self-financing professional colleges, and hostel, mess and bus charges are not published. Ask the college office for the current figures before you accept a seat."
+        },
+        {
+          "question": "Are there fee concessions or scholarships?",
+          "answer": "NCE's disclosure lists four: the state pays tuition, hostel and development fees for students admitted under the 7.5 per cent government-school reservation; a first-graduate tuition concession; the AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh, with no change of college or course allowed; and post-matric scholarships for SC/SCA/ST students with family income below INR 2.5 lakh."
+        },
+        {
+          "question": "What is the medium of instruction?",
+          "answer": "English. Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminar presentations and project reports, except programmes the university offers in Tamil medium; none of NCE's AICTE-approved courses is a Tamil-medium course."
+        },
+        {
+          "question": "When do first-year classes start?",
+          "answer": "NCE follows Anna University's calendar for non-autonomous affiliated colleges. For 2026-27, first-semester B.E./B.Tech classes begin on 2 September 2026, after TNEA general counselling from 20 July to 30 August 2026. TNEA registration for 2026 closed on 5 June."
+        },
+        {
+          "question": "Is NCE accredited by NBA or NAAC?",
+          "answer": "NCE's 2026-27 mandatory disclosure lists no NBA or NAAC accreditation. Its recognitions are AICTE approval for 2026-27 (permanent ID 1-4378723) and affiliation to Anna University, Chennai (college code 9518). The Anna University degree is the qualification you receive."
+        },
+        {
+          "question": "Does NCE have hostels?",
+          "answer": "Yes. NCE has separate hostels for men and women with round-the-clock security, dining halls, common study halls and prayer halls, plus a 60-seat canteen on campus. It does not publish room types or hostel and mess fees, so ask the college office (04635 256420) for them."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+          "url": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22",
+          "notes": "Queried via php/approvedinstituteserver.php and php/approvedcourse.php (app 1-46225914737, 2026-2027); historical years 2012-13, 2016-17, 2019-20, 2022-23."
+        },
+        {
+          "label": "Anna University CAI - Tirunelveli district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 schedule",
+          "url": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 general academic vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Regulations 2021, B.E./B.Tech, affiliated institutions (hosted by NCE)",
+          "url": "https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DOTE Tamil Nadu - Committee on fixation of fee for self-financing professional colleges",
+          "url": "https://dte.tn.gov.in/fee-fixation-committee",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Nellai College of Engineering - official website",
+          "url": "https://nce.ac.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Tirunelveli District (Government of Tamil Nadu) - How to Reach",
+          "url": "https://tirunelveli.nic.in/how-to-reach/",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "research_ready",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my NCE eligibility",
+            "capture": [
+              "Class 12 board and stream",
+              "Mathematics, Physics and Chemistry marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Work out my NCE fees and concessions",
+            "capture": [
+              "intended branch",
+              "government-school or first-graduate status",
+              "family income band",
+              "hostel or day-scholar"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for NCE",
+            "capture": [
+              "TNEA registration status",
+              "branch preferences",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "nce-be-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.E. Civil Engineering, Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/civil-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 30 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Civil Engineering is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 30 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.E. Civil Engineering at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's common B.E. curriculum. NCE's Civil Engineering department lists laboratories for surveying, soil testing, cement and concrete testing, highway materials and water and wastewater quality, and arranges industrial and site visits."
+            }
+          ]
+        },
+        {
+          "slug": "nce-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/computer-science-and-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 90 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 90 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.E. Computer Science and Engineering at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's common B.E. curriculum. NCE's CSE department lists 200 HP computers networked to two servers on a 32 Mbps connection, Spoken Tutorial workshops, AICTE- and IIT-sponsored short-term training and online aptitude tests such as TCS iON."
+            }
+          ]
+        },
+        {
+          "slug": "nce-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/electrical-electronics-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 60 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electrical and Electronics Engineering is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 60 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.E. Electrical and Electronics Engineering at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's common B.E. curriculum. NCE's EEE department lists laboratories for AC and DC machines, electrical circuits, control systems, power electronics, power-system simulation, microprocessors and microcontrollers and measurements, with MATLAB and SCILAB for projects."
+            }
+          ]
+        },
+        {
+          "slug": "nce-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/electronics-and-communication-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 60 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Electronics and Communication Engineering is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 60 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.E. Electronics and Communication Engineering at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's common B.E. curriculum. The ECE department has run since 2000; NCE reports an ECE industrial visit to Saksam Electronics on 25 July 2026."
+            }
+          ]
+        },
+        {
+          "slug": "nce-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering, Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/mechanical-engineering/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 30 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Mechanical Engineering is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 30 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.E. Mechanical Engineering at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's common B.E. curriculum. NCE's Mechanical department lists faculty specialisms in engineering design, thermal engineering and CAD/CAM and a central workshop shared with other departments."
+            }
+          ]
+        },
+        {
+          "slug": "nce-be-cse-cyber-security",
+          "canonicalCourseSlug": "be-btech-cyber-security",
+          "officialTitle": "B.E. Computer Science and Engineering (Cyber Security), Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/best-cyber-security-engineering-in-taminadu/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 30 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.E. Computer Science and Engineering (Cyber Security) is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 30 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.E. Computer Science and Engineering (Cyber Security) at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's curriculum for the CSE (Cyber Security) branch, which NCE started in 2024. The department lists air-conditioned labs with 150 HP computers, three firewall-configured servers and a 100 Mbps connection, and says ethical hacking is taught in lab sessions."
+            }
+          ]
+        },
+        {
+          "slug": "nce-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, Nellai College of Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-22",
+            "notes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh."
+          },
+          "officialProgramUrl": "https://nce.ac.in/artificial-intelligence/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE's 2026-27 approval shows no NRI or international-student seats for this programme, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category.",
+              "Seats follow the Government of Tamil Nadu rule of reservation: OC 31, BC 26.5, BC Muslim 3.5, MBC & DNC 20, SC 15, SC Arunthathiyar 3 and ST 1 per cent."
+            ],
+            "notes": "Applicants enter through TNEA 2026 (college code 4961). NCE publishes no separate management-quota admission route. AICTE approves an intake of 30 for 2026-27; the degree is awarded by Anna University, Chennai.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The B.Tech. Artificial Intelligence and Data Science is a four-year, eight-semester Anna University degree taught in English at NCE's Maruthakulam campus in Tirunelveli district, with 30 seats approved by AICTE for 2026-27. AICTE has not approved foreign-national or NRI seats for it.",
+            "eligibility": {
+              "intro": "NCE's disclosure reproduces Tamil Nadu's engineering-admission rules: a Class 12 pass with Mathematics, Physics and Chemistry at a set minimum average.",
+              "items": [
+                "A pass in Higher Secondary (+1 and +2, academic stream) or equivalent, with Mathematics, Physics and Chemistry",
+                "Minimum average in +2 Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BC Muslim, MBC & DNC and SC/SCA/ST",
+                "Or a pass in the HSC vocational stream in an engineering group, with the same 45 or 40 per cent average across the related subject, vocational theory and practicals",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may join the third semester through lateral entry under Tamil Nadu rules"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Fill choices online in your counselling round, entering college code 4961 for B.Tech. Artificial Intelligence and Data Science at Nellai College of Engineering, then confirm the allotment",
+              "Report to the college with the allotment order and original documents, and pay the fee prescribed by Tamil Nadu's fee-fixation committee",
+              "Submit the certificate for any concession you claim: 7.5 per cent government-school reservation, first graduate, AICTE tuition-fee waiver or post-matric scholarship"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 marksheet",
+                "HSC first-year (+1) marksheet",
+                "HSC second-year (+2) or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate for BC, BCM, MBC & DNC, SC, SCA or ST applicants",
+                "Nativity certificate in electronic form, if applicable",
+                "Income certificate, if applicable",
+                "First-graduate certificate and joint declaration, if claiming that concession",
+                "Proof of government-school study from Class 6 to 12, for the 7.5 per cent reservation",
+                "Sri Lankan Tamil refugee certificate, or special-reservation certificates, if applicable"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Regulations 2021 for affiliated colleges make English the medium for all courses, examinations, seminars and project reports.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "NCE does not publish its tuition. Its 2026-27 disclosure says tuition for every B.E./B.Tech branch is the fee prescribed by the Government of Tamil Nadu's Committee for fixation of fee for self-financing professional colleges; no amount is printed, and hostel, transport and other charges are not published either. Concessions listed by NCE: full tuition, hostel and development fees paid by the state for 7.5 per cent government-school reservation admits (G.O. 221, 15.11.2021); first-graduate tuition concession; AICTE Tuition Fee Waiver on up to 5 per cent of seats for family income below INR 8 lakh; and post-matric scholarship for SC/SCA/ST students with family income below INR 2.5 lakh.",
+          "teachingPhases": [
+            {
+              "phase": "4 years (8 semesters)",
+              "language": "English",
+              "details": "Eight semesters under Anna University's B.Tech AI and Data Science curriculum, which NCE started in 2024. The department lists air-conditioned labs with 150 HP computers and three servers on a 32 Mbps connection, and an Institution of Engineers (India) student chapter."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The University Grants Commission is the statutory body of the Government of India for coordination, determination and maintenance of standards of higher education, operating under the Ministry of Education.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission (UGC) - official site",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "UGC publishes the authoritative lists of Central, State, Deemed-to-be and State Private universities, plus a published list of fake universities. Corroborated by the Study in India portal Indian Higher Education page, which states all institutions are governed by the Ministry of Education."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The All India Council for Technical Education is the Government of India statutory body for technical education, covering engineering, management and allied technical programmes.",
+      "status": "verified",
+      "sourceLabel": "All India Council for Technical Education (AICTE) - official site",
+      "sourceUrl": "https://www.aicte-india.org/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Medical Commission is the Government of India regulator for medical education and medical institutions; medical and dental admission is governed separately from general higher education.",
+      "status": "verified",
+      "sourceLabel": "National Medical Commission (NMC) - official site",
+      "sourceUrl": "https://www.nmc.org.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "India's higher-education landscape includes over 1,100 universities and more than 45,000 colleges, all governed by the Ministry of Education, and higher education begins after 12 years of schooling.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Indian Higher Education",
+      "sourceUrl": "https://www.studyinindia.gov.in/indian-higher-education",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal-published counts are approximate and shift between AISHE cycles; treat them as indicative and re-check at review. Regulator identity is separately verified against UGC and AICTE."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Study in India portal is the Government of India route for international applicants: the applicant registers for a compulsory SII ID, explores participating institutes and courses, submits applications to several institutes from one profile, accepts an offer letter, then applies for a student visa or student e-visa.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - official portal",
+      "sourceUrl": "https://www.studyinindia.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Bureau of Immigration directs foreign nationals who wish to apply to Indian institutes to register under the Study in India scheme, confirming the portal as a government-recognised route rather than a third-party service.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The Indian Council for Cultural Relations administers Government of India scholarship schemes for international students at UG, PG and PhD level, including AYUSH streams; applications are handled through the ICCR A2A scholarship portal and the applicant's Indian diplomatic mission.",
+      "status": "verified",
+      "sourceLabel": "ICCR Admissions to Alumni (A2A) Scholarship Portal",
+      "sourceUrl": "https://a2ascholarships.iccr.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Portal states that applicants should contact the Indian Mission for scholarship updates - eligibility and open cycles are mission-specific and vary by country, so no scheme may be presented as open to all nationalities."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals must obtain a Student Visa to pursue on-campus, full-time structured courses or research at educational institutions recognised by the Government of India. Student (S-3) visas cover yoga, Vedic culture, Indian dance, music and Buddhist studies at approved institutions; Student (S-5) visas cover internships.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22"
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Foreign nationals entering India on a Student visa valid for more than 180 days must register with the jurisdictional FRRO or FRO within 14 days of arrival. Pakistani nationals must register within 24 hours. Children under 12 years and OCI cardholders are exempt from registration, and citizens of Nepal and Bhutan are exempt from both visa and registration requirements.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Registration Requirements",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/registration-authority/registration-of-foreign-nationals/registration-requirements",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Corroborated by the Study in India Onboarding & FRRO page, which states e-FRRO registration within 14 days of landing. Nationality-dependent rule - never state one universal deadline."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Students on an Indian Student visa must not undertake employment or business activity in India, must open a Non-Resident Ordinary (NRO) account with a recognised Indian bank and furnish the details to the FRRO, and must not enrol in off-campus franchise centres, distance-learning study centres of open universities or outreach programmes.",
+      "status": "verified",
+      "sourceLabel": "Bureau of Immigration, Ministry of Home Affairs - Study in India",
+      "sourceUrl": "https://www.boi.gov.in/boi/contents/travelling-to-india/foreigners/study-in-india",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Directly constrains any work-rights or earn-while-you-study claim on India pages. Do not publish part-time work guidance for India."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "An applicant should possess proof of admission to a full-time regular academic course at a recognised Indian institution and evidence of financial support, and must also hold a No Objection Certificate from the Ministry of Health where the admission is to a medical or paramedical course.",
+      "status": "verified",
+      "sourceLabel": "Study in India (Ministry of Education) - Onboarding & FRRO",
+      "sourceUrl": "https://studyinindia.gov.in/Onboarding-&-FRRO",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The portal adds its own disclaimer that document requirements differ across countries and must be confirmed with the nearest Indian embassy."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Admission for Foreign Nationals, OCIs, PIOs and NRIs to undergraduate engineering, architecture and planning programmes at NITs, IIEST, IIITs, SPAs and other centrally funded technical institutes runs through the Ministry of Education DASA scheme, and for the 2026-27 year admission is on the basis of JEE (Main) 2026. DASA seats are supernumerary and capped at up to 15 per cent of a programme's total seats. IITs are outside the DASA scheme.",
+      "status": "verified",
+      "sourceLabel": "Information Brochure DASA 2026 (UG), Central Seat Allocation Board / Ministry of Education",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s305a70454516ecd9194c293b0e415777f/uploads/2026/06/202607281804466532.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "The qualifying-exam basis has changed between cycles (SAT in earlier cycles, JEE Main for 2026-27). Never state the accepted exam without naming the admission year. Corroborated by dasanit.org, which describes DASA as an MoE scheme for Foreign Nationals, PIOs, OCIs and NRIs to NITs, CFTIs and other premier technical institutions other than IITs."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "Non-Resident Indians, Overseas Citizens of India and Foreign Nationals are eligible to appear in NEET (UG) and are eligible for admission to medical and dental colleges subject to the rules of the respective State Governments, institutions and the Government of India. Foreign applicants must upload documentary proof of nationality with the application and are directed to confirm eligibility with the competent state and counselling authorities.",
+      "status": "verified",
+      "sourceLabel": "Information Bulletin NEET (UG)-2026, National Testing Agency",
+      "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602081576322299.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Chapter 6, sections 1-2. No India medical page may present a NEET-free route. Eligibility is explicitly conditional on state and institution rules, so it varies by college."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "summary",
+      "claimText": "The National Assessment and Accreditation Council, established in 1994 as an autonomous institution of the UGC, assesses and accredits Indian higher education institutions. The National Institutional Ranking Framework, launched by the Ministry of Education in September 2015, is the government ranking framework for Indian institutions.",
+      "status": "verified",
+      "sourceLabel": "NAAC - official site",
+      "sourceUrl": "https://www.naac.gov.in/index.php/en/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "NIRF corroborated separately at https://www.nirfindia.org/Home (MoE, launched 29 September 2015). Use a NAAC grade or NIRF rank only with the assessment or ranking year stated."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "whyStudentsChooseIt",
+      "claimText": "The UGC publishes a list of fake universities alongside its lists of Central, State, Deemed-to-be and State Private universities, so institutional recognition must be checked against UGC records before an Indian institution is presented as degree-awarding.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission - Higher Education Institutions listings",
+      "sourceUrl": "https://www.ugc.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "Operational rule for this catalogue: no Indian university is published without a verifiable UGC listing and, where applicable, AICTE approval or NMC recognition."
+    },
+    {
+      "entity": "country",
+      "countrySlug": "india",
+      "publicField": "climate",
+      "claimText": "India spans Himalayan, tropical coastal, semi-arid and monsoon-affected climate zones, with the southwest monsoon typically running from June to September.",
+      "status": "indicative",
+      "sourceLabel": "India Meteorological Department, Ministry of Earth Sciences",
+      "sourceUrl": "https://mausam.imd.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-08-22",
+      "reviewBy": "2027-02-22",
+      "internalNotes": "General climatic framing only; do not present city-level weather claims at country level."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.E. Civil Engineering: an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves CIVIL ENGINEERING at Nellai College of Engineering with intake 30 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 30. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2012. Disclosure gives 2012 as the starting year; the department page says 2013."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-civil-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch CE in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-civil-engineering",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-civil-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's common B.E. curriculum. NCE's Civil Engineering department lists laboratories for surveying, soil testing, cement and concrete testing, highway materials and water and wastewater quality, and arranges industrial and site visits. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Civil Engineering department page",
+      "sourceUrl": "https://nce.ac.in/civil-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.E. Computer Science and Engineering: an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves COMPUTER SCIENCE AND ENGINEERING at Nellai College of Engineering with intake 90 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 90. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2000. Home-page blurb still says 60 seats; department page and AICTE 2026-27 give 90."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch CS in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's common B.E. curriculum. NCE's CSE department lists 200 HP computers networked to two servers on a 32 Mbps connection, Spoken Tutorial workshops, AICTE- and IIT-sponsored short-term training and online aptitude tests such as TCS iON. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Computer Science and Engineering department page",
+      "sourceUrl": "https://nce.ac.in/computer-science-and-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.E. Electrical and Electronics Engineering: an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves ELECTRICAL AND ELECTRONICS ENGINEERING at Nellai College of Engineering with intake 60 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 60. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2002. Department page also claims an M.E. Control and Instrumentation since 2010; AICTE has not listed it since 2016-17."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch EE in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's common B.E. curriculum. NCE's EEE department lists laboratories for AC and DC machines, electrical circuits, control systems, power electronics, power-system simulation, microprocessors and microcontrollers and measurements, with MATLAB and SCILAB for projects. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Electrical and Electronics Engineering department page",
+      "sourceUrl": "https://nce.ac.in/electrical-electronics-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.E. Electronics and Communication Engineering: an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves ELECTRONICS & COMMUNICATION ENGG at Nellai College of Engineering with intake 60 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 60. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2000."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch EC in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's common B.E. curriculum. The ECE department has run since 2000; NCE reports an ECE industrial visit to Saksam Electronics on 25 July 2026. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Electronics and Communication Engineering department page",
+      "sourceUrl": "https://nce.ac.in/electronics-and-communication-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-mechanical-engineering",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.E. Mechanical Engineering: an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves MECHANICAL ENGINEERING at Nellai College of Engineering with intake 30 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 30. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2011. AICTE intake was 120 in 2016-17 and 60 in 2022-23; 30 for 2025-26 and 2026-27."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-mechanical-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch ME in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-mechanical-engineering",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-mechanical-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's common B.E. curriculum. NCE's Mechanical department lists faculty specialisms in engineering design, thermal engineering and CAD/CAM and a central workshop shared with other departments. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mechanical Engineering department page",
+      "sourceUrl": "https://nce.ac.in/mechanical-engineering/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-cse-cyber-security",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.E. Computer Science and Engineering (Cyber Security): an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-cse-cyber-security",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves COMPUTER SCIENCE AND ENGINEERING (CYBER SECURITY) at Nellai College of Engineering with intake 30 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 30. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2024."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-cse-cyber-security",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-cse-cyber-security",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch SC in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-cse-cyber-security",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-be-cse-cyber-security",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's curriculum for the CSE (Cyber Security) branch, which NCE started in 2024. The department lists air-conditioned labs with 150 HP computers, three firewall-configured servers and a 100 Mbps connection, and says ethical hacking is taught in lab sessions. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Computer Science and Engineering (Cyber Security) department page",
+      "sourceUrl": "https://nce.ac.in/best-cyber-security-engineering-in-taminadu/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "NCE's 2026-27 mandatory disclosure (Admission Norms, p.37) gives the eligibility for B.E./B.Tech admission, which applies to the B.Tech. Artificial Intelligence and Data Science: an HSC (+1 and +2) pass with Mathematics, Physics and Chemistry averaging at least 45% (General) or 40% (BC, BCM, MBC & DNC, SC/SCA/ST), or an HSC vocational-stream pass with the same averages. Anna University Regulations 2021 cl. 2.2 allow lateral entry to semester 3 for diploma holders and B.Sc. Mathematics graduates under Tamil Nadu rules.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Admission Norms page is an image; read by OCR. Lateral-entry rule from https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "AICTE's Extension of Approval for 2026-27 (F.No. Southern/1-46225914737/2026/EOA, 16-Mar-2026) approves ARTIFICIAL INTELLIGENCE (AI) AND DATA SCIENCE at Nellai College of Engineering with intake 30 for 2025-26 and 2026-27, affiliating body Anna University, Chennai, International Students approval 'No' and NRI approval 'No'. Anna University's CAI list gives NCE examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "AICTE dashboard JSON (php/approvedcourse.php, aicteid 1-46225914737, year 2026-2027) lists the course, UG, full time, 1st shift, intake 30. EoA letter reproduced on p.3-4 of https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf. AU list: https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php. Starting year per disclosure: 2024. Disclosure writes 'B.Tech. Artificial Intelligence & Data Science'."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar for non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes for B.E./B.Tech on Wednesday 2 September 2026. TNEA 2026 schedule: registration 03.05.2026 to 05.06.2026, rank list 01.07.2026, general counselling (online) 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf. NCE is a non-autonomous Anna University affiliated college (disclosure: 'Is the College Autonomous: NO')."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 (DoTE Tamil Nadu) lists college 4961 Nellai College of Engineering, Maruthakulam, with branch AD in the general academic vacancy position after Round 1. TNEA admits Indian nationals; OCI/PIO cardholders who are natives of Tamil Nadu may participate under Open Category, except those born abroad after 04.03.2021. Steps: online registration (INR 500 / INR 250 SC/SCA/ST), certificate upload, rank list, online choice filling, allotment, reporting to the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. No management-quota route is published on nce.ac.in, so none is stated."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "NCE's 2026-27 mandatory disclosure 'Fees Structure for Academic Year 2025-26' states that tuition for all seven B.E./B.Tech courses is 'Prescribed by Committee for fixation fee in respect of self financing professional colleges, Government of Tamilnadu' and prints no amount; DOTE Tamil Nadu describes that committee (Justice R. Pongiappan, G.O. No. 285, 23.11.2023). Fee status is therefore on request. Concessions (7.5% government-school, first graduate, AICTE TFW up to 5% for income below INR 8 lakh, post-matric for SC/SCA/ST below INR 2.5 lakh) are from the disclosure p.38.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Committee page: https://dte.tn.gov.in/fee-fixation-committee. No per-college engineering fee schedule was found on DOTE."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "nellai-college-of-engineering",
+      "programmeSlug": "nce-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "Eight semesters under Anna University's B.Tech AI and Data Science curriculum, which NCE started in 2024. The department lists air-conditioned labs with 150 HP computers and three servers on a 32 Mbps connection, and an Institution of Engineers (India) student chapter. Anna University Regulations 2021 (affiliated institutions) cl. 4.11 make English the medium of instruction and cl. 5.1 set 8 semesters, maximum 14.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Artificial Intelligence and Data Science department page",
+      "sourceUrl": "https://nce.ac.in/artificial-intelligence/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Regulations: https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf. Students admitted in 2025 or later may follow a later Anna University regulation; medium and semester count to be re-checked at review."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "NCE (formerly National College of Engineering), Maruthakulam, is an ISO 9001:2015 certified Muslim minority institution approved by AICTE and affiliated to Anna University, Chennai; inaugurated on 7 September 2000. The disclosure gives year of establishment 2000, type Self Financing, category Muslim Minority, promoted by Manarul Huda Trust, Thiruvananthapuram.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "About page: https://nce.ac.in/about-us/. Trust registration No.46/2000/mht/15.11.2000. AICTE dashboard names: National College of Engineering (2012-13, 2016-17), College of Engineering Maruthakulam (2019-20), Nellai College of Engineering (2022-23 onward), permanent ID 1-4378723 throughout."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "summary",
+      "claimText": "AICTE's 2026-27 dashboard lists Nellai College of Engineering, Maruthakulam P.O., Nanguneri Taluk, Tirunelveli, Private-Self Financing, minority 'Y', permanent ID 1-4378723, with seven UG courses affiliated to Anna University, Chennai totalling 330 seats.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Similarly named but different: Nellai Nadar College of Engineering and Technology, Chennai (1-483503761)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE Extension of Approval for 2026-27, F.No. Southern/1-46225914737/2026/EOA dated 16-Mar-2026, permanent ID 1-4378723, approves seven UG courses (CSE 90, ECE 60, EEE 60, Civil 30, Mechanical 30, CSE Cyber Security 30, AI & DS 30), all affiliated to Anna University, Chennai; corroborated on the AICTE dashboard.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Letter reproduced in https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf p.3-4."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University's Centre for Affiliation of Institutions lists Nellai College of Engineering in Tirunelveli district with examination code 9518 and TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Tirunelveli district affiliated colleges",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE's approved-institutions list for Tamil Nadu 2026-27 marks Nellai College of Engineering with minority status 'Y' (women's-institution 'N').",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "NCE's disclosure states category Muslim Minority. No NCMEI certificate checked."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "NCE's 2026-27 mandatory disclosure lists 'Any other Accreditation / Recognition: None', 'Is the College Autonomous: NO', and states UGC 2(f) included (F.No.8-82/2013, 21-08-2013) and 12(B) not included; AICTE EoA shows International and NRI approval 'No' for all courses; tuition is 'prescribed by Committee for fixation fee'.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "UGC 2(f)/12(B) not verified on a UGC list, so not used in public copy."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "thingsToConsider",
+      "claimText": "AICTE dashboard history: 2012-13 approved UG Civil 60, CSE 120, EEE 60, ECE 120, IT 60, Mechanical 60 and PG Applied Electronics 18, CSE 24, Control and Instrumentation 18; 2016-17 PG courses still listed; from 2019-20 no PG and no IT; 2026-27 Mechanical and Civil at 30.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutions dashboard 2026-27 (Tamil Nadu)",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "NCE EEE department page still refers to the M.E. Control and Instrumentation (stale)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "NCE's department pages list: CSE 200 HP computers, two servers, 32 Mbps; Cyber Security labs 150 HP computers, three firewall-configured servers, 100 Mbps; AI & DS 150 HP computers, three servers, 32 Mbps and an IEI student chapter. Facilities page: library, labs, sports, transport buses, canteen seating 60, separate boys' and girls' hostels, 1000-seater seminar hall/auditorium.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Facilities and department pages",
+      "sourceUrl": "https://nce.ac.in/facilities/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "cityProfile",
+      "claimText": "Tirunelveli district administration: by air 20 km from Vagaikulam Airport (Thoothukudi district) or 170 km from Madurai airport; by rail Tirunelveli Junction; by road Veinthankulam New Bus Stand, Tirunelveli. NCE's address is Maruthakulam P.O., Nanguneri Taluk, Tirunelveli 627151; Anna University lists it in Region IV Tirunelveli.",
+      "status": "verified",
+      "sourceLabel": "Tirunelveli District (Government of Tamil Nadu) - How to Reach",
+      "sourceUrl": "https://tirunelveli.nic.in/how-to-reach/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Address from https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf; region from https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "Anna University Regulations 2021 (affiliated institutions): 8 semesters, maximum 14 (cl. 5.1); minimum 75% attendance (cl. 7.1); industrial training/internship credits (cl. 4.5); English medium (cl. 4.11). AICTE EoA 2026-27 instruction 8: 'Internship is mandatory for all admitted students.'",
+      "status": "verified",
+      "sourceLabel": "Anna University - Regulations 2021, B.E./B.Tech, affiliated institutions (hosted by NCE)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2022/06/Regulation-2021-MECH.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "EoA in https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "NCE latest news lists an industrial visit to Saksam Electronics by ECE (25.07.2026) and a one-day full-stack development workshop by CSE and AI & DS (30.07.2026); the CSE page lists IITB/IITKgp/AICTE sponsored short-term training programmes and Spoken Tutorial workshops. No placement statistics are published.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Latest Updates",
+      "sourceUrl": "https://nce.ac.in/latest-news/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "NCE facilities page: separate hostels for boys and girls with round-the-clock security, dining halls, common study halls and prayer halls. Disclosure p.38: for 7.5% government-school reservation admits the government pays tuition, hostel and development fees (G.O. 221, Higher Education (J2), 15.11.2021). No hostel or mess fees published.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Facilities",
+      "sourceUrl": "https://nce.ac.in/facilities/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Concession detail from https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "dietarySupport",
+      "claimText": "NCE facilities page: hostels have dining halls and prayer halls; the canteen has a seating capacity of 60 for students and staff.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Facilities",
+      "sourceUrl": "https://nce.ac.in/facilities/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "safetyOverview",
+      "claimText": "NCE facilities page states separate hostels with round-the-clock security; the site menu links Google Forms for grievances and student feedback; https://nce.ac.in/committees/ returned a 404 page on 2026-10-22.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Facilities",
+      "sourceUrl": "https://nce.ac.in/facilities/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "studentSupport",
+      "claimText": "NCE contact page: phone +91 8300127474 and 04635 256 420, admission enquiries +91 8300127171; disclosure gives principal@nce.ac.in and lists first-graduate, AICTE TFW and post-matric concessions.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Contact Us",
+      "sourceUrl": "https://nce.ac.in/contact-us/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Concessions from https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "faq",
+      "claimText": "FAQ answers restate facts evidenced elsewhere in this bundle: affiliation and codes (AU CAI list), AICTE 2026-27 courses/intake and International/NRI approval 'No', TNEA eligibility and documents (disclosure p.37-38), fee statement and concessions, English medium (AU R2021 cl. 4.11; AICTE 2026-27 course names carry no Tamil-medium designation), 2026 TNEA schedule and Anna University Sep-Dec 2026 calendar.",
+      "status": "verified",
+      "sourceLabel": "Nellai College of Engineering - Mandatory Disclosure 2026-27 (incl. AICTE EoA letter 2026-27)",
+      "sourceUrl": "https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 Information Brochure: single-window admission for Indian Nationals; OCI/PIO cardholders who are natives of Tamil Nadu participate under Open Category (not those born abroad after 04.03.2021); nativity categories i-vi incl. other-state candidates who studied Classes VIII-XII in Tamil Nadu. NCE's disclosure reproduces the rule of reservation (OC 31%, BC 26.5%, BCM 3.5%, MBC & DNC 20%, SC 15%, SCA 3%, ST 1%); TNEA counselling code 4961.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Reservation from https://nce.ac.in/wp-content/uploads/2026/10/Website-Mandatory-Disclosure-2026-27.pdf; code from https://www.annauniv.edu/cai/District%20wise/district/Thirunelveli.php and https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "nellai-college-of-engineering",
+      "publicField": "intake",
+      "claimText": "Anna University academic calendar, non-autonomous affiliated colleges, I Semester Sep-Dec 2026: commencement of classes 2 September 2026. TNEA 2026: registration to 05.06.2026; general counselling 20.07.2026 to 30.08.2026.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAC - Academic Calendar I Semester Sep-Dec 2026 (non-autonomous affiliated colleges)",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Schedule: https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf."
+    }
+  ]
+}

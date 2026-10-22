@@ -1,0 +1,36 @@
+{
+  "manifestId": "india-batch-4-media-kalasalingam-academy-of-research-and-education-2026-10-22",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-22",
+  "scope": "logo and cover for content migration 0118-india-kalasalingam-academy-of-research-and-education (India batch 4). Kept as a per-university file so concurrent batch-4 workers do not overwrite one shared manifest; merge into a batch manifest at integration if preferred.",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-22; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "kalasalingam-academy-of-research-and-education",
+      "universityName": "Kalasalingam Academy of Research and Education",
+      "sourceBatch": "india-batch-4",
+      "migrationId": "0118-india-kalasalingam-academy-of-research-and-education",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.kalasalingam.ac.in/wp-content/uploads/2022/02/Logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official KARE header logo served from the university's own domain (site header image on every page). No open licence - used only to identify the institution. Checked 2026-10-22: HTTP 200, content-type image/png, 2,048,564 bytes, 5646x986 px RGBA. Visually confirmed composited on white: full-colour KARE gear seal, blue 'KALASALINGAM' wordmark, red 'ACADEMY OF RESEARCH AND EDUCATION', '(DEEMED TO BE UNIVERSITY)' bar and a portrait of the founder at the right - legible on a white tile. Very wide lockup (about 5.7:1); crop to the seal plus wordmark (drop the founder portrait) at upload if the logo tile is square. The site icon cropped-logo-1-*.png is a favicon and was not used.",
+          "proposedPublicId": "studentstraffic/universities/kalasalingam-academy-of-research-and-education/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.kalasalingam.ac.in/wp-content/uploads/2021/08/building-19-scaled.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official campus photograph on the university domain, used on the kalasalingam.ac.in homepage. No open licence stated - used to identify the institution, same basis as the jamia-hamdard batch-3 cover. Checked 2026-10-22: HTTP 200, content-type image/jpeg, 710,391 bytes, 2560x1707 px. Visually confirmed: white multi-storey academic blocks including the signed 'Dr. A.P.J. Abdul Kalam Block' under a clear sky with the Western Ghats foothills at right; no people in focus, no text overlay. The only Wikimedia Commons candidate ('File:Kalasalingam University.jpg', CC0) is an event poster with faces and text and was rejected.",
+          "altText": "Academic blocks including the Dr. A.P.J. Abdul Kalam Block on the Kalasalingam Academy of Research and Education campus in Krishnankoil, with Western Ghats foothills behind",
+          "proposedPublicId": "studentstraffic/universities/kalasalingam-academy-of-research-and-education/cover"
+        }
+      ]
+    }
+  ]
+}
