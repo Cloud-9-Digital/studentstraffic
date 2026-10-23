@@ -204,7 +204,7 @@ export function renderUniversityMarkdown(input: {
       "Programmes",
       programs.length
         ? [
-            "| Programme | Course | Duration | Medium | Annual tuition |",
+            "| Programme | Course | Duration | Medium | Tuition per year |",
             "| --- | --- | --- | --- | --- |",
             ...programs.map(
               (program) =>
@@ -299,7 +299,7 @@ export function renderProgramMarkdown(input: {
         `Duration: ${formatProgramDuration(offering.durationYears)}`,
         medium ? `Teaching language: ${medium}` : null,
         offering.mediumNote ? `Language note: ${offering.mediumNote}` : null,
-        `Annual tuition: ${formatAnnualFeeLine(program)}`,
+        `Tuition per year: ${formatAnnualFeeLine(program)}`,
         hasPublishedUsdAmount(offering.totalTuitionUsd)
           ? `Total tuition: ${formatCurrencyUsd(offering.totalTuitionUsd)}`
           : null,

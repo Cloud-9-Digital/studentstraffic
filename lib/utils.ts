@@ -1,4 +1,4 @@
-import type { ProgramOffering } from "@/lib/data/types";
+import type { FeeAudience, ProgramOffering } from "@/lib/data/types";
 
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -117,15 +117,15 @@ export function getProgramAnnualFeeLabel(
     | "feeStatus"
   >,
 ) {
-  if (offering.feeStatus === "indicative") return "Indicative annual tuition";
+  if (offering.feeStatus === "indicative") return "Indicative tuition per year";
   if (offering.feeStatus === "on_request") return "Fee plan";
   return hasOfficialFeeAmount(
     offering.officialAnnualTuitionAmount,
     offering.officialFeeCurrency,
   ) && !hasPublishedUsdAmount(offering.annualTuitionUsd)
-    ? "Official annual fee"
+    ? "Tuition per year"
     : hasPublishedUsdAmount(offering.annualTuitionUsd)
-      ? "Annual tuition"
+      ? "Tuition per year"
       : "Fee status";
 }
 
@@ -169,6 +169,45 @@ export function formatProgramAnnualFee(
   }
 
   return fallback;
+}
+
+function feeAudienceLabel(audience: FeeAudience, countrySlug: string) {
+  if (audience === "all") return "All students";
+  if (audience === "international") return countrySlug === "india" ? "NRI & international" : "International students";
+  return countrySlug === "india" ? "Indian students" : "Domestic students";
+}
+
+/**
+ * Every published annual fee for a programme, each labelled with who it applies to when known,
+ * e.g. [{ label: "Indian students", amount: "₹1,95,000" }, { label: "NRI & international", amount: "$4,000" }].
+ * Unclassified fees keep the generic label, so older records render as before.
+ */
+export function getProgramFeeLines(
+  offering: Pick<
+    ProgramOffering,
+    | "annualTuitionUsd"
+    | "officialAnnualTuitionAmount"
+    | "officialFeeCurrency"
+    | "feeStatus"
+    | "indicativeAnnualTuitionMinUsd"
+    | "indicativeAnnualTuitionMaxUsd"
+    | "feeAudience"
+    | "additionalFees"
+  >,
+  countrySlug: string,
+  fallback = "Fee plan on request",
+): { label: string; amount: string }[] {
+  const primary = {
+    label: offering.feeAudience && offering.feeStatus !== "on_request"
+      ? feeAudienceLabel(offering.feeAudience, countrySlug)
+      : getProgramAnnualFeeLabel(offering),
+    amount: formatProgramAnnualFee(offering, fallback),
+  };
+  const extra = (offering.additionalFees ?? []).map((fee) => ({
+    label: feeAudienceLabel(fee.audience, countrySlug),
+    amount: formatCurrencyAmount(fee.annualAmount, fee.currency),
+  }));
+  return [primary, ...extra];
 }
 
 export function hasRenderableProgramLivingFee(

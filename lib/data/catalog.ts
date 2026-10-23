@@ -1399,6 +1399,8 @@ type FinderProgramRow = {
   offeringOfficialAnnualTuitionAmount: number | null;
   offeringOfficialTotalTuitionAmount: number | null;
   offeringFeeStatus: ProgramOffering["feeStatus"] | null;
+  offeringFeeAudience: ProgramOffering["feeAudience"] | null;
+  offeringAdditionalFees: NonNullable<ProgramOffering["additionalFees"]>;
   offeringFeeAcademicYear: string | null;
   offeringIndicativeAnnualTuitionMinUsd: number | null;
   offeringIndicativeAnnualTuitionMaxUsd: number | null;
@@ -1493,6 +1495,8 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       officialAnnualTuitionAmount: row.offeringOfficialAnnualTuitionAmount ?? undefined,
       officialTotalTuitionAmount: row.offeringOfficialTotalTuitionAmount ?? undefined,
       feeStatus: row.offeringFeeStatus ?? undefined,
+      feeAudience: row.offeringFeeAudience ?? undefined,
+      additionalFees: row.offeringAdditionalFees,
       feeAcademicYear: row.offeringFeeAcademicYear ?? undefined,
       indicativeAnnualTuitionMinUsd:
         row.offeringIndicativeAnnualTuitionMinUsd ?? undefined,
@@ -1590,6 +1594,8 @@ async function selectFinderProgramsFromDatabase(
       offeringOfficialAnnualTuitionAmount: programOfferingsTable.officialAnnualTuitionAmount,
       offeringOfficialTotalTuitionAmount: programOfferingsTable.officialTotalTuitionAmount,
       offeringFeeStatus: programOfferingsTable.feeStatus,
+      offeringFeeAudience: programOfferingsTable.feeAudience,
+      offeringAdditionalFees: programOfferingsTable.additionalFees,
       offeringFeeAcademicYear: programOfferingsTable.feeAcademicYear,
       offeringIndicativeAnnualTuitionMinUsd:
         programOfferingsTable.indicativeAnnualTuitionMinUsd,

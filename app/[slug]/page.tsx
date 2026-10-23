@@ -715,7 +715,7 @@ export default async function LandingPageRoute({
                     {/* Tuition */}
                     <div className="px-6 py-5">
                       <p className="mb-4 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                        Confirmed annual tuition
+                        Tuition per year
                       </p>
                       <p className="text-2xl font-semibold text-heading">{fs.annualTuition}</p>
                       <p className="mt-1 text-sm text-muted-foreground">per year</p>

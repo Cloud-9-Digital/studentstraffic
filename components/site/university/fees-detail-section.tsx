@@ -118,7 +118,7 @@ function ProgramFeeCard({
         <div className="grid grid-cols-1 gap-px border-b border-border bg-border sm:grid-cols-3">
           <div className="bg-card px-5 py-4">
             <p className="text-[0.6rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-              Annual tuition
+              Tuition per year
             </p>
             <p className="mt-1.5 text-xl font-bold text-foreground">
               {formatProgramAnnualFee(offering)}

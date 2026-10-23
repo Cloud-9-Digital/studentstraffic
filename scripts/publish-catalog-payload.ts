@@ -260,6 +260,7 @@ export async function publishCatalogPayload(
         const feeFields = fee.status === "confirmed"
           ? {
               feeStatus: fee.status,
+              feeAudience: fee.audience ?? null,
               feeAcademicYear: fee.academicYear,
               officialFeeCurrency: fee.officialFeeCurrency,
               officialAnnualTuitionAmount: fee.officialAnnualTuitionAmount,
@@ -274,6 +275,7 @@ export async function publishCatalogPayload(
           : fee.status === "indicative"
             ? {
                 feeStatus: fee.status,
+                feeAudience: fee.audience ?? null,
                 feeAcademicYear: fee.academicYear,
                 officialFeeCurrency: null,
                 officialAnnualTuitionAmount: null,
@@ -287,6 +289,7 @@ export async function publishCatalogPayload(
               }
             : {
                 feeStatus: fee.status,
+                feeAudience: null,
                 feeAcademicYear: null,
                 officialFeeCurrency: null,
                 officialAnnualTuitionAmount: null,
@@ -301,9 +304,12 @@ export async function publishCatalogPayload(
         // Explicit null so a republish without a note clears a stale one
         // (drizzle skips undefined keys in the on-conflict update).
         const mediumNote = offering.mediumNote ?? null;
+        // Explicit [] so a republish without extra fees clears stale ones.
+        const additionalFees = offering.additionalFees ?? [];
         const [savedProgramme] = await tx.insert(programOfferings).values({
           ...offering,
           mediumNote,
+          additionalFees,
           ...feeFields,
           universityId: saved.id,
           courseId,
@@ -318,6 +324,7 @@ export async function publishCatalogPayload(
           set: {
             ...offering,
             mediumNote,
+            additionalFees,
             ...feeFields,
             universityId: saved.id,
             courseId,

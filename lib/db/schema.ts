@@ -27,8 +27,10 @@ const tsvector = customType<{ data: string; driverData: string }>({
   },
 });
 import type {
+  AdditionalProgramFee,
   ChatbotToolCallRecord,
   CourseStream,
+  FeeAudience,
   FeeStatus,
   Faq,
   IndiaMbbsCollegeEditorialContent,
@@ -260,6 +262,8 @@ export const programOfferings = pgTable(
     }),
     feeStatus: text("fee_status").$type<FeeStatus>(),
     feeAcademicYear: text("fee_academic_year"),
+    feeAudience: text("fee_audience").$type<FeeAudience>(),
+    additionalFees: jsonb("additional_fees").$type<AdditionalProgramFee[]>().notNull().default([]),
     indicativeAnnualTuitionMinUsd: integer("indicative_annual_tuition_min_usd"),
     indicativeAnnualTuitionMaxUsd: integer("indicative_annual_tuition_max_usd"),
     officialProgramUrl: text("official_program_url").notNull(),

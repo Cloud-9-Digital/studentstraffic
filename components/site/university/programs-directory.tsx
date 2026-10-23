@@ -12,8 +12,8 @@ export type ProgramDirectoryRow = {
   title: string;
   level: string;
   levelLabel: string;
-  feeLabel: string;
-  fee: string;
+  /** One entry per published fee, labelled by audience where known (Indian students, NRI & international). */
+  fees: { label: string; amount: string }[];
   duration: string;
 };
 
@@ -90,27 +90,50 @@ export function ProgramsDirectory({
         </div>
       ) : null}
 
-      <ul className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card">
+      {/* One column on phones, two from md up. The 1px gap over a border-coloured background draws
+          the grid lines; a filler cell keeps the last row even when the visible count is odd. */}
+      <ul className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2">
         {rows.map((row) => {
           return (
-            <li key={row.slug} hidden={!visible.has(row.slug)}>
+            <li key={row.slug} hidden={!visible.has(row.slug)} className="bg-card">
               <Link
                 href={row.href}
-                className="group flex items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/40 sm:px-5"
+                className="group flex h-full flex-col gap-3 p-4 transition-colors hover:bg-muted/30 sm:p-5"
               >
-                <div className="min-w-0 flex-1">
-                  <p className="text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
+                <div className="flex items-start justify-between gap-3">
+                  <p className="min-w-0 text-[0.95rem] font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
                     {row.title}
                   </p>
-                  <p className="mt-0.5 text-xs text-muted-foreground">
-                    {row.levelLabel} · {row.duration} · {row.feeLabel}: <span className="font-medium text-foreground">{row.fee}</span>
-                  </p>
+                  <ArrowRight className="mt-0.5 size-4 shrink-0 text-primary transition-transform group-hover:translate-x-0.5" />
                 </div>
-                <ArrowRight className="size-4 shrink-0 text-primary transition-transform group-hover:translate-x-0.5" />
+                <div className="flex flex-wrap gap-1.5">
+                  <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    {row.levelLabel}
+                  </span>
+                  <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+                    {row.duration}
+                  </span>
+                </div>
+                {/* One line per published fee, so the Indian-student and NRI/international rates read
+                    side by side instead of as one ambiguous figure. */}
+                <dl className="mt-auto divide-y divide-border/70 rounded-xl border border-border/70 bg-muted/30 px-3">
+                  {row.fees.map((fee) => (
+                    <div key={fee.label} className="flex items-baseline justify-between gap-3 py-2">
+                      <dt className="text-xs text-muted-foreground">{fee.label}</dt>
+                      <dd className="text-sm font-semibold text-foreground">
+                        {fee.amount}
+                        {/\d/.test(fee.amount) ? (
+                          <span className="ml-0.5 text-xs font-normal text-muted-foreground">/ year</span>
+                        ) : null}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               </Link>
             </li>
           );
         })}
+        {visible.size % 2 === 1 ? <li aria-hidden="true" className="hidden bg-card md:block" /> : null}
       </ul>
 
       {matches.size === 0 ? (

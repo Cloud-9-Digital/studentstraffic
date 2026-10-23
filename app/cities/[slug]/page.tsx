@@ -400,7 +400,7 @@ export default async function CityPage({
                     Type
                   </th>
                   <th className="px-5 py-3.5 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                    Annual tuition
+                    Tuition per year
                   </th>
                   <th className="px-5 py-3.5 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                     Medium

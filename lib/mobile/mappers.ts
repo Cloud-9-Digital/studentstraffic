@@ -1,7 +1,7 @@
 import { programmeLevelLabels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
 import type { FinderCardProgram, FinderProgram, University } from "@/lib/data/types";
 import type { ApplicationRow } from "@/lib/db/schema";
-import { formatProgramAnnualFee, formatProgramMedium } from "@/lib/utils";
+import { getProgramFeeLines, formatProgramMedium } from "@/lib/utils";
 
 export function mapFinderCardProgram(program: FinderCardProgram) {
   return {
@@ -21,6 +21,12 @@ export function mapFinderCardProgram(program: FinderCardProgram) {
     officialFeeCurrency: program.offering.officialFeeCurrency,
     officialAnnualTuitionAmount: program.offering.officialAnnualTuitionAmount,
   };
+}
+
+function formatMobileFeeLabel(offering: FinderProgram["offering"], countrySlug: string) {
+  const lines = getProgramFeeLines(offering, countrySlug, "Fee on request");
+  if (lines.length === 1 && !offering.feeAudience) return lines[0].amount;
+  return lines.map((line) => `${line.label} ${line.amount}`).join(" · ");
 }
 
 export function mapUniversityDetail(
@@ -82,7 +88,9 @@ export function mapUniversityDetail(
       slug: offering.slug,
       level: course.level ?? null,
       levelLabel: course.level ? (programmeLevelLabels[course.level as ProgrammeLevel] ?? null) : null,
-      annualFeeLabel: formatProgramAnnualFee(offering, "Fee on request"),
+      // "₹50,000" when the fee's audience is unknown; "Indian students ₹1,95,000 · NRI & international $4,000"
+      // when the record says who each fee is for.
+      annualFeeLabel: formatMobileFeeLabel(offering, university.countrySlug),
       courseSlug: offering.courseSlug,
       title: offering.title,
       durationYears: offering.durationYears,

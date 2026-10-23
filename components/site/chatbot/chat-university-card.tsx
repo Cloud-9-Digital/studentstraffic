@@ -84,7 +84,7 @@ export function ChatUniversityCardItem({ card }: { card: ChatUniversityCard }) {
             {card.annualFee}
           </p>
           <p className="mt-1 text-[0.65rem] text-muted-foreground">
-            Annual tuition{card.courses.length > 0 ? ` · ${card.courses[0]}` : ""}
+            Tuition per year{card.courses.length > 0 ? ` · ${card.courses[0]}` : ""}
           </p>
 
           <div className="mt-2 flex flex-wrap gap-1">

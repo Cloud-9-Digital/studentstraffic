@@ -79,6 +79,20 @@ export type ResearchSource = {
 
 export type FeeStatus = "confirmed" | "indicative" | "on_request";
 
+/** Who a published fee applies to: Indian students, NRI/foreign applicants, or everyone. */
+export type FeeAudience = "domestic" | "international" | "all";
+
+/** A further official fee for the same programme, e.g. the NRI/foreign rate beside the Indian one. */
+export type AdditionalProgramFee = {
+  audience: FeeAudience;
+  currency: string;
+  annualAmount: number;
+  totalAmount?: number | null;
+  academicYear: string;
+  verifiedAt: string;
+  notes: string;
+};
+
 export type Faq = {
   question: string;
   answer: string;
@@ -213,6 +227,9 @@ export type ProgramOffering = {
   /** Explicit for framework-published content; legacy records are classified during backfill. */
   feeStatus?: FeeStatus;
   feeAcademicYear?: string;
+  /** Who the main fee above applies to; absent until classified. */
+  feeAudience?: FeeAudience;
+  additionalFees?: AdditionalProgramFee[];
   indicativeAnnualTuitionMinUsd?: number;
   indicativeAnnualTuitionMaxUsd?: number;
   officialProgramUrl: string;

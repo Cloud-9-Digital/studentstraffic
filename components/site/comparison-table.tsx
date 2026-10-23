@@ -51,7 +51,7 @@ function buildRows(programs: FinderProgram[]): Row[] {
 
   return [
     {
-      label: "Annual tuition",
+      label: "Tuition per year",
       values: programs.map((p) => formatProgramAnnualFee(p.offering)),
       winnerIndexes:
         hasComparableUsdFees && tuitionWinners.length < programs.length

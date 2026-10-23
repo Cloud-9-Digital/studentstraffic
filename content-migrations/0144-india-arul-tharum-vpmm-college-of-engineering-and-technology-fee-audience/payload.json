@@ -1,0 +1,1839 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Computer Science major"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "name": "Arul Tharum VPMM College of Engineering and Technology",
+      "city": "Krishnankoil",
+      "type": "Private",
+      "establishedYear": 2002,
+      "officialWebsite": "https://engineering.vpmm.in/",
+      "mediaAttribution": {},
+      "summary": "Arul Tharum VPMM College of Engineering and Technology (VPMM), formerly V.P. Muthaiah Pillai Meenakshi Ammal Engineering College for Women, is a private self-financing engineering college founded in 2002 at Krishnankoil, Virudhunagar district, Tamil Nadu. It is an Anna University-affiliated college, and Anna University awards its degrees. It admits men and women to six AICTE-approved B.E./B.Tech branches.",
+      "campusLifestyle": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE disclosure lists 27 classrooms of 70.08 sq m, 12 tutorial rooms, 21 laboratories including an English language laboratory, two computer centres and 1,000 Mbps internet bandwidth, with lifts in all blocks. The library holds 24,331 books in 6,620 titles and subscribes to DELNET and the National Digital Library. The disclosure also lists an innovation cell, sports facilities and one MoU, with Ekalai Academy, Coimbatore.",
+      "cityProfile": "Arul Tharum VPMM College of Engineering and Technology (VPMM) is at V.P.M. Nagar, Krishnankoil, in Srivilliputtur taluk of Virudhunagar district, Tamil Nadu (AICTE address PIN 626190). The college's trust, the V.P. Muthaiah Pillai Meenakshi Ammal Trust, is registered at 40 North Car Street, Srivilliputtur. Kalasalingam Academy of Research and Education, a separate deemed university, is also at Krishnankoil. Anna University lists VPMM under its Tirunelveli region, Virudhunagar district.",
+      "practicalExposure": "Arul Tharum VPMM College of Engineering and Technology (VPMM) teaches Anna University's curricula: the university sets the syllabus, conducts end-semester exams and awards the degree, and the college runs internal assessments. AICTE makes an internship mandatory for every admitted student, and Anna University's 2025 regulations give one credit for each two weeks of internship. The college's placement training covers mock interviews, aptitude tests, group discussions and soft-skills workshops. Its 2026-27 disclosure lists one industry MoU, with Ekalai Academy, Coimbatore, and reports no enrolment and placement figures, research projects or consultancy for the last three years. No VPMM programme is NBA-accredited.",
+      "hostelOverview": "Arul Tharum VPMM College of Engineering and Technology (VPMM) has a boys' hostel and a girls' hostel on campus, according to its 2026-27 AICTE disclosure. The college's hostel page lists rooms for 2 to 4 students with cots, study tables, wardrobes and fans, Wi-Fi, laundry service, a gym and a TV room. The college publishes no hostel or mess fee, and TNEA's 2026 college booklet has no entry for VPMM, so ask the college for current charges.",
+      "dietarySupport": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s hostel mess serves vegetarian and non-vegetarian food, according to the college's hostel page. No menu, mess fee or provision for specific regional or religious diets is published, so ask the hostel office before joining.",
+      "safetyOverview": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 anti-ragging committee is chaired by the principal and includes a Deputy Superintendent of Police and a Sub-Inspector from Srivilliputhur, an NGO representative and a parent. The college also lists an internal committee on sexual harassment and an SC/ST committee. The hostel page lists 24-hour security, CCTV and biometric entry.",
+      "studentSupport": "Arul Tharum VPMM College of Engineering and Technology (VPMM) takes grievances through an online form and a four-member grievance committee. The college lists Tamil Nadu scholarships for SC/ST/SCC, hostel students (HESS, family income up to INR 2,00,000) and minority students, plus management scholarships for toppers and poorer students. Contact: info@vpmm.in or +91 89258 04367.",
+      "whyChoose": [
+        "Arul Tharum VPMM College of Engineering and Technology (VPMM) publishes its 2026-27 tuition: INR 50,000 a year for TNEA government-quota seats and INR 85,000 a year for management-quota seats.",
+        "AICTE approves six B.E./B.Tech branches for 2026-27 (Civil, CSE, ECE, EEE, IT, and AI and Data Science), all offered in TNEA 2026 under code 4979 and all leading to an Anna University degree.",
+        "The college has separate on-campus hostels for men and women, and branch intakes of 30 or 60 seats make 240 first-year B.E./B.Tech places in 2026-27."
+      ],
+      "thingsToConsider": [
+        "Arul Tharum VPMM College of Engineering and Technology (VPMM) has no seats for international students: AICTE lists no NRI or foreign-national seats, and TNEA admits only Indian nationals and Tamil Nadu-native OCI/PIO card holders.",
+        "The college's 2026-27 AICTE disclosure states that students it admitted in 2023-24 and 2024-25 were transferred to other colleges under Anna University compliance, and it reports no enrolment or placement figures for the last three years.",
+        "No programme is NBA-accredited and no NAAC grade is reported. AICTE also approves M.E. CSE and M.E. ECE, but they are not listed here because no current Anna University affiliation record was found."
+      ],
+      "bestFitFor": [
+        "Tamil Nadu TNEA applicants who want an Anna University B.E. or B.Tech near Srivilliputtur with a published government-quota fee of INR 50,000 a year.",
+        "Students from Virudhunagar district who want an on-campus hostel and a branch intake of 30 or 60 seats.",
+        "SC, ST and SCC students who can use the Tamil Nadu post-matric and HESS hostel scholarships the college lists."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE - Approved institution 2026-27, Permanent ID 1-8897103 (Private-Self Financing)",
+        "Anna University, Chennai - Affiliated non-autonomous college, examination code 9535",
+        "DoTE Tamil Nadu - TNEA 2026 participating college, counselling code 4979"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE - Approved institutes dashboard",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI - Affiliated colleges, Virudhunagar district",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Virudhunagar.php"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is VPMM Engineering College AICTE approved?",
+          "answer": "Yes, Arul Tharum VPMM College of Engineering and Technology (VPMM) is AICTE approved: it is on AICTE's 2026-27 list of approved institutions as a private self-financing college, permanent ID 1-8897103. AICTE approves six B.E./B.Tech branches and two M.E. programmes there for 2026-27, all under Anna University, Chennai."
+        },
+        {
+          "question": "What is the TNEA code for VPMM?",
+          "answer": "The TNEA counselling code for Arul Tharum VPMM College of Engineering and Technology (VPMM) is 4979, and its Anna University examination code is 9535. In TNEA 2026 the college offered Civil (CE), CSE (CS), ECE (EC), EEE (EE), IT and AI and Data Science (AD) seats."
+        },
+        {
+          "question": "Is VPMM a women's college?",
+          "answer": "No, Arul Tharum VPMM College of Engineering and Technology (VPMM) is no longer a women-only college, although it was formerly V.P. Muthaiah Pillai Meenakshi Ammal Engineering College for Women. AICTE's 2026-27 list does not mark it as a women's institution, and its 2026-27 disclosure lists both a boys' hostel and a girls' hostel."
+        },
+        {
+          "question": "Is V.P. Muthaiah Pillai Meenakshi Ammal Engineering College the same as Arul Tharum VPMM?",
+          "answer": "Yes, Arul Tharum VPMM College of Engineering and Technology (VPMM) is the renamed V.P. Muthaiah Pillai Meenakshi Ammal Engineering College for Women at V.P.M. Nagar, Krishnankoil, near Srivilliputtur. Anna University lists it under the new name with \"formerly\" the old one, and AICTE keeps the same permanent ID, 1-8897103."
+        },
+        {
+          "question": "Is VPMM part of the Kalasalingam group?",
+          "answer": "No, Arul Tharum VPMM College of Engineering and Technology (VPMM) is not part of the Kalasalingam group: it is run by the V.P. Muthaiah Pillai Meenakshi Ammal Trust of Srivilliputtur. Kalasalingam Academy of Research and Education is a separate deemed university in the same village, Krishnankoil, with its own AICTE record and its own trust."
+        },
+        {
+          "question": "What is the fee at VPMM Engineering College?",
+          "answer": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. It publishes no hostel, mess or transport charges. TNEA entrants may claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship."
+        },
+        {
+          "question": "Can NRI or international students apply to VPMM?",
+          "answer": "No, Arul Tharum VPMM College of Engineering and Technology (VPMM) has no NRI or foreign-national seats on AICTE's 2026-27 list, and its 2025-26 approval shows NRI and foreign quotas as No. TNEA is for Indian nationals; OCI/PIO card holders who are natives of Tamil Nadu may join unless born abroad after 4 March 2021."
+        },
+        {
+          "question": "How do I get admission to VPMM?",
+          "answer": "Most seats at Arul Tharum VPMM College of Engineering and Technology (VPMM) are filled through TNEA: register at tneaonline.org, get a rank from Mathematics (100), Physics (50) and Chemistry (50), and choose code 4979. TNEA 2026 counselling ran 20 July to 30 August, and Anna University classes began on 2 September 2026. Management-quota seats are applied for at the college."
+        },
+        {
+          "question": "Is VPMM NBA or NAAC accredited?",
+          "answer": "No, Arul Tharum VPMM College of Engineering and Technology (VPMM) is not NBA or NAAC accredited: its 2026-27 AICTE disclosure lists no NBA-accredited programme, and no NAAC grade is reported. Its recognition is AICTE approval and Anna University affiliation."
+        },
+        {
+          "question": "Does VPMM have hostels?",
+          "answer": "Yes, Arul Tharum VPMM College of Engineering and Technology (VPMM) has separate on-campus hostels for men and women, with rooms for 2 to 4 students and a mess serving vegetarian and non-vegetarian food. The college publishes no hostel or mess fee."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AICTE - Approved institutes dashboard (2026-27 institution and course lists)",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "AICTE - Extension of Approval 2025-26 (VPMM)",
+          "url": "https://engineering.vpmm.in/EOAReport2025-26.PDF",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "VPMM - Mandatory Disclosure 2026-27",
+          "url": "https://engineering.vpmm.in/disclosure2627.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Provisional affiliation letter 2022-23 (VPMM)",
+          "url": "https://engineering.vpmm.in/content/PDF/ANNA%20UNIVERSITY.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University CAI - Virudhunagar district affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Virudhunagar.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 Tentative Schedule",
+          "url": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "DoTE Tamil Nadu - TNEA 2026 vacancy position after Round 1",
+          "url": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Affiliated colleges academic calendar Sep-Dec 2026",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "VPMM - Courses offered",
+          "url": "https://engineering.vpmm.in/vpmm_engg_courses_offered.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-22"
+        },
+        {
+          "label": "VPMM - Official website",
+          "url": "https://engineering.vpmm.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-22"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "This record covers the engineering college at V.P.M. Nagar, Krishnankoil only. Other VPMM group institutions and Kalasalingam Academy of Research and Education are outside this record.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my VPMM eligibility",
+            "capture": [
+              "nationality and Tamil Nadu nativity or schooling",
+              "Class 12 board and MPC marks",
+              "community category",
+              "intended branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Estimate my VPMM fees and hostel cost",
+            "capture": [
+              "intended branch",
+              "TNEA or management quota",
+              "hostel needs",
+              "concession eligibility"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA choices for VPMM",
+            "capture": [
+              "TNEA rank or expected cut-off",
+              "preferred branches",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "arul-tharum-vpmm-be-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.E. Civil Engineering, Arul Tharum VPMM College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-22",
+            "notes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+            "audience": "domestic"
+          },
+          "officialProgramUrl": "https://engineering.vpmm.in/be_civil_engineering.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE lists no NRI, OCI or foreign-national seats for this programme in 2025-26 or 2026-27, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 4979, branch code CE) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Civil Engineering at Arul Tharum VPMM College of Engineering and Technology (VPMM) is a four-year, eight-semester Anna University degree taught in English at Krishnankoil, Virudhunagar district. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4979 with branch CE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through the form at engineering.vpmm.in/apply.php or at info@vpmm.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Civil Engineering curriculum, taught with three civil engineering laboratories (150 to 251 sq m), according to the college's 2026-27 AICTE disclosure. Anna University sets the syllabus and end-semester exams; AICTE makes an internship mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "arul-tharum-vpmm-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering, Arul Tharum VPMM College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-22",
+            "notes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+            "audience": "domestic"
+          },
+          "officialProgramUrl": "https://engineering.vpmm.in/be_computer_engineering.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE lists no NRI, OCI or foreign-national seats for this programme in 2025-26 or 2026-27, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 4979, branch code CS) or the college's management quota. AICTE approves an intake of 60 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Computer Science and Engineering at Arul Tharum VPMM College of Engineering and Technology (VPMM) is a four-year, eight-semester Anna University degree taught in English at Krishnankoil, Virudhunagar district. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4979 with branch CS, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through the form at engineering.vpmm.in/apply.php or at info@vpmm.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Computer Science and Engineering curriculum, taught with four computer science laboratories (105.58 to 251 sq m), according to the college's 2026-27 AICTE disclosure. Anna University sets the syllabus and end-semester exams; AICTE makes an internship mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering, Arul Tharum VPMM College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-22",
+            "notes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+            "audience": "domestic"
+          },
+          "officialProgramUrl": "https://engineering.vpmm.in/be_electrical_and_electronics_engineering.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE lists no NRI, OCI or foreign-national seats for this programme in 2025-26 or 2026-27, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 4979, branch code EE) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Electrical and Electronics Engineering at Arul Tharum VPMM College of Engineering and Technology (VPMM) is a four-year, eight-semester Anna University degree taught in English at Krishnankoil, Virudhunagar district. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4979 with branch EE, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through the form at engineering.vpmm.in/apply.php or at info@vpmm.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Electrical and Electronics Engineering curriculum, taught with three electrical and electronics laboratories (157.64 to 251 sq m), according to the college's 2026-27 AICTE disclosure. Anna University sets the syllabus and end-semester exams; AICTE makes an internship mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering, Arul Tharum VPMM College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-22",
+            "notes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+            "audience": "domestic"
+          },
+          "officialProgramUrl": "https://engineering.vpmm.in/be_electronics_and_communication_engineering.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE lists no NRI, OCI or foreign-national seats for this programme in 2025-26 or 2026-27, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 4979, branch code EC) or the college's management quota. AICTE approves an intake of 60 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Electronics and Communication Engineering at Arul Tharum VPMM College of Engineering and Technology (VPMM) is a four-year, eight-semester Anna University degree taught in English at Krishnankoil, Virudhunagar district. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4979 with branch EC, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through the form at engineering.vpmm.in/apply.php or at info@vpmm.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Electronics and Communication Engineering curriculum, taught with four electronics and communication laboratories (157.64 to 210.24 sq m), according to the college's 2026-27 AICTE disclosure. Anna University sets the syllabus and end-semester exams; AICTE makes an internship mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "arul-tharum-vpmm-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology, Arul Tharum VPMM College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-22",
+            "notes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+            "audience": "domestic"
+          },
+          "officialProgramUrl": "https://engineering.vpmm.in/btech_information_technology.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE lists no NRI, OCI or foreign-national seats for this programme in 2025-26 or 2026-27, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 4979, branch code IT) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Information Technology at Arul Tharum VPMM College of Engineering and Technology (VPMM) is a four-year, eight-semester Anna University degree taught in English at Krishnankoil, Virudhunagar district. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4979 with branch IT, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through the form at engineering.vpmm.in/apply.php or at info@vpmm.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Information Technology curriculum, taught with four information technology laboratories (157.64 to 251 sq m), according to the college's 2026-27 AICTE disclosure. Anna University sets the syllabus and end-semester exams; AICTE makes an internship mandatory."
+            }
+          ]
+        },
+        {
+          "slug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science, Arul Tharum VPMM College of Engineering and Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 50000,
+            "officialTotalTuitionAmount": null,
+            "annualTuitionUsd": null,
+            "totalTuitionUsd": null,
+            "verifiedAt": "2026-10-22",
+            "notes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+            "audience": "domestic"
+          },
+          "officialProgramUrl": "https://engineering.vpmm.in/btech_artificial_intelligence_data_science.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian nationals meeting TNEA 2026 nativity or Tamil Nadu schooling rules (government-quota seats)",
+              "Indian nationals applying to the college for management-quota seats",
+              "OCI/PIO card holders who are natives of Tamil Nadu (TNEA open competition)"
+            ],
+            "restrictions": [
+              "AICTE lists no NRI, OCI or foreign-national seats for this programme in 2025-26 or 2026-27, so foreign nationals cannot be admitted on a student visa.",
+              "TNEA government-quota seats are open only to Indian nationals; OCI/PIO card holders qualify only if natives of Tamil Nadu and not born abroad after 4 March 2021.",
+              "Other-state Indian candidates qualify for TNEA only if they studied Classes 8 to 12 in Tamil Nadu or meet another TNEA nativity category."
+            ],
+            "notes": "The college admits men and women. Indian applicants enter through TNEA 2026 (college code 4979, branch code AD) or the college's management quota. AICTE approves an intake of 30 for 2026-27.",
+            "verifiedAt": "2026-10-22",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The Artificial Intelligence and Data Science at Arul Tharum VPMM College of Engineering and Technology (VPMM) is a four-year, eight-semester Anna University degree taught in English at Krishnankoil, Virudhunagar district. Most seats are filled through TNEA single-window counselling on Class 12 marks; the rest are management-quota seats filled by the college. There is no entrance test.",
+            "eligibility": {
+              "intro": "TNEA 2026 sets these conditions for B.E./B.Tech admission; Anna University applies the same Government of Tamil Nadu norms to its affiliated colleges.",
+              "items": [
+                "Pass in HSC (Class 11 and 12, academic stream) or equivalent with Mathematics, Physics and Chemistry",
+                "Minimum average in Mathematics, Physics and Chemistry: 45 per cent for General category, 40 per cent for BC, BCM, MBC/DNC and SC/SCA/ST",
+                "HSC vocational candidates qualify with a listed engineering vocational subject and the same minimum averages",
+                "TNEA nativity rules apply: Tamil Nadu schooling for Classes 8 to 12, Tamil Nadu nativity certificate, or another listed category",
+                "Diploma holders, and B.Sc. graduates with Mathematics, may apply for lateral entry to the third semester under Government of Tamil Nadu norms"
+              ]
+            },
+            "applicationSteps": [
+              "Register and apply online at tneaonline.org (registration fee INR 500, or INR 250 for SC/SCA/ST); TNEA 2026 registration ran 3 May to 5 June 2026",
+              "Upload Class 10, 11 and 12 mark sheets, transfer certificate and any community, nativity, income or first-graduate certificates for verification",
+              "Check the TNEA rank, computed from Mathematics (100), Physics (50) and Chemistry (50), on the published rank list",
+              "Fill choices online in your counselling round, entering college code 4979 with branch AD, then confirm the tentative allotment",
+              "Download the allotment order, report to the college within 5 days and pay the fees to complete admission",
+              "For a management-quota seat, apply directly to the college through the form at engineering.vpmm.in/apply.php or at info@vpmm.in"
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 mark sheet",
+                "Class 11 (HSC first year) mark sheet",
+                "Class 12 (HSC second year) or equivalent mark sheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "Permanent community certificate where claiming reservation",
+                "Nativity e-certificate where applicable",
+                "Income certificate and first-graduate e-certificate where claiming concessions",
+                "Aadhaar details"
+              ]
+            },
+            "deadlinesNote": "For 2026 entry, TNEA registration closed on 5 June 2026 and general counselling ran 20 July to 30 August 2026. Anna University starts first-semester classes at affiliated colleges on 2 September 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University's Academic Regulations 2025 for affiliated colleges set English as the medium of instruction for all B.E./B.Tech programmes.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September - first-semester classes begin 2 September 2026 after TNEA counselling (20 July to 30 August 2026)"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-22",
+          "feeNotes": "Arul Tharum VPMM College of Engineering and Technology (VPMM)'s 2026-27 AICTE mandatory disclosure lists tuition of INR 50,000 a year for government-quota (TNEA) seats and INR 85,000 a year for management-quota seats. The disclosure gives one figure for all B.E./B.Tech branches and lists no hostel, mess, transport or examination charges, and TNEA's 2026 college booklet has no entry for VPMM. Eligible TNEA entrants can claim the First Graduate concession, the AICTE Tuition Fee Waiver or the Post-Matric Scholarship.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1-4 (8 semesters)",
+              "language": "English",
+              "details": "Anna University's Artificial Intelligence and Data Science curriculum, taught with the college's computer centres and IT laboratories; the 2026-27 disclosure lists no separate AI and Data Science laboratory, according to the college's 2026-27 AICTE disclosure. Anna University sets the syllabus and end-semester exams; AICTE makes an internship mandatory."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University AR2025 (affiliated UG) admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 NRI/PIO/OCI approved-course list has no row for VPMM (application 1-46268701029), and the AICTE Extension of Approval 2025-26 (F.No. Southern/1-44643474407/2025/EOA) shows FN/Gulf/OCI quota and NRI approval as No for Civil Engineering. No foreign-national or NRI seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27 (NRI/PIO/OCI list) and EoA 2025-26",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/nripiofcinstitute.php?q=2026-2027&q1=NRI: 3,261 rows, 965 Tamil Nadu, none for VPMM. EoA 2025-26: https://engineering.vpmm.in/EOAReport2025-26.PDF"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's 2026-27 approved-course list for VPMM (application 1-46268701029) includes UNDER GRADUATE CIVIL ENGINEERING with intake 30, affiliating body Anna University, Chennai. TNEA 2026 Round 1 vacancy list shows college 4979 Arul Tharum VPMM College of Engineering and Technology with branch CE.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27 and DoTE TNEA 2026 vacancy list",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/approvedcourse.php?aicteid=1-46268701029&year=2026-2027. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. College courses page lists intake 30: https://engineering.vpmm.in/vpmm_engg_courses_offered.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 admission steps: online registration (INR 500 / INR 250 for SC/SCA/ST), certificate upload, rank on Mathematics 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, and reporting to the college within 5 days with fees. Management-quota seats are applied for directly at the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Management quota: VPMM 2026-27 disclosure s.18.11 ('For the management quota Student can directly visit college'), https://engineering.vpmm.in/disclosure2627.pdf; online form https://engineering.vpmm.in/apply.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026. Anna University calendar for non-autonomous affiliated colleges: first-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-colleges calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "fee",
+      "claimText": "VPMM Mandatory Disclosure 2026-27, section 18.6(v) Fee: GQ Rs.50,000 per year; MQ Rs.85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 (AICTE format)",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "One figure for all programmes; no hostel, mess or transport charge published. TNEA 2026 Information about colleges booklet has no entry for code 4979. Concessions per TNEA 2026 brochure."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (affiliated UG): medium of instruction is English for all B.E./B.Tech programmes; duration four years (eight semesters).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-civil-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(iii) lists laboratories by room: Civil (3), CSE (4), ECE (4), EEE (3), IT (4), PG (2) and an English language laboratory; no AI and Data Science laboratory is listed separately. AICTE EoA 2025-26: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and AICTE EoA 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University AR2025 (affiliated UG) admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 NRI/PIO/OCI approved-course list has no row for VPMM (application 1-46268701029), and the AICTE Extension of Approval 2025-26 (F.No. Southern/1-44643474407/2025/EOA) shows FN/Gulf/OCI quota and NRI approval as No for Computer Science and Engineering. No foreign-national or NRI seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27 (NRI/PIO/OCI list) and EoA 2025-26",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/nripiofcinstitute.php?q=2026-2027&q1=NRI: 3,261 rows, 965 Tamil Nadu, none for VPMM. EoA 2025-26: https://engineering.vpmm.in/EOAReport2025-26.PDF"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's 2026-27 approved-course list for VPMM (application 1-46268701029) includes UNDER GRADUATE COMPUTER SCIENCE AND ENGINEERING with intake 60, affiliating body Anna University, Chennai. TNEA 2026 Round 1 vacancy list shows college 4979 Arul Tharum VPMM College of Engineering and Technology with branch CS.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27 and DoTE TNEA 2026 vacancy list",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/approvedcourse.php?aicteid=1-46268701029&year=2026-2027. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. College courses page lists intake 60: https://engineering.vpmm.in/vpmm_engg_courses_offered.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 admission steps: online registration (INR 500 / INR 250 for SC/SCA/ST), certificate upload, rank on Mathematics 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, and reporting to the college within 5 days with fees. Management-quota seats are applied for directly at the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Management quota: VPMM 2026-27 disclosure s.18.11 ('For the management quota Student can directly visit college'), https://engineering.vpmm.in/disclosure2627.pdf; online form https://engineering.vpmm.in/apply.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026. Anna University calendar for non-autonomous affiliated colleges: first-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-colleges calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "fee",
+      "claimText": "VPMM Mandatory Disclosure 2026-27, section 18.6(v) Fee: GQ Rs.50,000 per year; MQ Rs.85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 (AICTE format)",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "One figure for all programmes; no hostel, mess or transport charge published. TNEA 2026 Information about colleges booklet has no entry for code 4979. Concessions per TNEA 2026 brochure."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (affiliated UG): medium of instruction is English for all B.E./B.Tech programmes; duration four years (eight semesters).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-computer-science-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(iii) lists laboratories by room: Civil (3), CSE (4), ECE (4), EEE (3), IT (4), PG (2) and an English language laboratory; no AI and Data Science laboratory is listed separately. AICTE EoA 2025-26: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and AICTE EoA 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University AR2025 (affiliated UG) admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 NRI/PIO/OCI approved-course list has no row for VPMM (application 1-46268701029), and the AICTE Extension of Approval 2025-26 (F.No. Southern/1-44643474407/2025/EOA) shows FN/Gulf/OCI quota and NRI approval as No for Electrical and Electronics Engineering. No foreign-national or NRI seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27 (NRI/PIO/OCI list) and EoA 2025-26",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/nripiofcinstitute.php?q=2026-2027&q1=NRI: 3,261 rows, 965 Tamil Nadu, none for VPMM. EoA 2025-26: https://engineering.vpmm.in/EOAReport2025-26.PDF"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's 2026-27 approved-course list for VPMM (application 1-46268701029) includes UNDER GRADUATE ELECTRICAL AND ELECTRONICS ENGINEERING with intake 30, affiliating body Anna University, Chennai. TNEA 2026 Round 1 vacancy list shows college 4979 Arul Tharum VPMM College of Engineering and Technology with branch EE.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27 and DoTE TNEA 2026 vacancy list",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/approvedcourse.php?aicteid=1-46268701029&year=2026-2027. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. College courses page lists intake 30: https://engineering.vpmm.in/vpmm_engg_courses_offered.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 admission steps: online registration (INR 500 / INR 250 for SC/SCA/ST), certificate upload, rank on Mathematics 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, and reporting to the college within 5 days with fees. Management-quota seats are applied for directly at the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Management quota: VPMM 2026-27 disclosure s.18.11 ('For the management quota Student can directly visit college'), https://engineering.vpmm.in/disclosure2627.pdf; online form https://engineering.vpmm.in/apply.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026. Anna University calendar for non-autonomous affiliated colleges: first-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-colleges calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "fee",
+      "claimText": "VPMM Mandatory Disclosure 2026-27, section 18.6(v) Fee: GQ Rs.50,000 per year; MQ Rs.85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 (AICTE format)",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "One figure for all programmes; no hostel, mess or transport charge published. TNEA 2026 Information about colleges booklet has no entry for code 4979. Concessions per TNEA 2026 brochure."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (affiliated UG): medium of instruction is English for all B.E./B.Tech programmes; duration four years (eight semesters).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electrical-electronics-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(iii) lists laboratories by room: Civil (3), CSE (4), ECE (4), EEE (3), IT (4), PG (2) and an English language laboratory; no AI and Data Science laboratory is listed separately. AICTE EoA 2025-26: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and AICTE EoA 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University AR2025 (affiliated UG) admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 NRI/PIO/OCI approved-course list has no row for VPMM (application 1-46268701029), and the AICTE Extension of Approval 2025-26 (F.No. Southern/1-44643474407/2025/EOA) shows FN/Gulf/OCI quota and NRI approval as No for Electronics and Communication Engineering. No foreign-national or NRI seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27 (NRI/PIO/OCI list) and EoA 2025-26",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/nripiofcinstitute.php?q=2026-2027&q1=NRI: 3,261 rows, 965 Tamil Nadu, none for VPMM. EoA 2025-26: https://engineering.vpmm.in/EOAReport2025-26.PDF"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "AICTE's 2026-27 approved-course list for VPMM (application 1-46268701029) includes UNDER GRADUATE ELECTRONICS AND COMMUNICATION ENGINEERING with intake 60, affiliating body Anna University, Chennai. TNEA 2026 Round 1 vacancy list shows college 4979 Arul Tharum VPMM College of Engineering and Technology with branch EC.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27 and DoTE TNEA 2026 vacancy list",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/approvedcourse.php?aicteid=1-46268701029&year=2026-2027. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. College courses page lists intake 60: https://engineering.vpmm.in/vpmm_engg_courses_offered.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 admission steps: online registration (INR 500 / INR 250 for SC/SCA/ST), certificate upload, rank on Mathematics 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, and reporting to the college within 5 days with fees. Management-quota seats are applied for directly at the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Management quota: VPMM 2026-27 disclosure s.18.11 ('For the management quota Student can directly visit college'), https://engineering.vpmm.in/disclosure2627.pdf; online form https://engineering.vpmm.in/apply.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026. Anna University calendar for non-autonomous affiliated colleges: first-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-colleges calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "fee",
+      "claimText": "VPMM Mandatory Disclosure 2026-27, section 18.6(v) Fee: GQ Rs.50,000 per year; MQ Rs.85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 (AICTE format)",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "One figure for all programmes; no hostel, mess or transport charge published. TNEA 2026 Information about colleges booklet has no entry for code 4979. Concessions per TNEA 2026 brochure."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (affiliated UG): medium of instruction is English for all B.E./B.Tech programmes; duration four years (eight semesters).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-be-electronics-communication-engineering",
+      "publicField": "teachingPhases",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(iii) lists laboratories by room: Civil (3), CSE (4), ECE (4), EEE (3), IT (4), PG (2) and an English language laboratory; no AI and Data Science laboratory is listed separately. AICTE EoA 2025-26: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and AICTE EoA 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University AR2025 (affiliated UG) admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 NRI/PIO/OCI approved-course list has no row for VPMM (application 1-46268701029), and the AICTE Extension of Approval 2025-26 (F.No. Southern/1-44643474407/2025/EOA) shows FN/Gulf/OCI quota and NRI approval as No for Information Technology. No foreign-national or NRI seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27 (NRI/PIO/OCI list) and EoA 2025-26",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/nripiofcinstitute.php?q=2026-2027&q1=NRI: 3,261 rows, 965 Tamil Nadu, none for VPMM. EoA 2025-26: https://engineering.vpmm.in/EOAReport2025-26.PDF"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "AICTE's 2026-27 approved-course list for VPMM (application 1-46268701029) includes UNDER GRADUATE INFORMATION TECHNOLOGY with intake 30, affiliating body Anna University, Chennai. TNEA 2026 Round 1 vacancy list shows college 4979 Arul Tharum VPMM College of Engineering and Technology with branch IT.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27 and DoTE TNEA 2026 vacancy list",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/approvedcourse.php?aicteid=1-46268701029&year=2026-2027. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. College courses page lists intake 30: https://engineering.vpmm.in/vpmm_engg_courses_offered.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 admission steps: online registration (INR 500 / INR 250 for SC/SCA/ST), certificate upload, rank on Mathematics 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, and reporting to the college within 5 days with fees. Management-quota seats are applied for directly at the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Management quota: VPMM 2026-27 disclosure s.18.11 ('For the management quota Student can directly visit college'), https://engineering.vpmm.in/disclosure2627.pdf; online form https://engineering.vpmm.in/apply.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026. Anna University calendar for non-autonomous affiliated colleges: first-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-colleges calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "fee",
+      "claimText": "VPMM Mandatory Disclosure 2026-27, section 18.6(v) Fee: GQ Rs.50,000 per year; MQ Rs.85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 (AICTE format)",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "One figure for all programmes; no hostel, mess or transport charge published. TNEA 2026 Information about colleges booklet has no entry for code 4979. Concessions per TNEA 2026 brochure."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (affiliated UG): medium of instruction is English for all B.E./B.Tech programmes; duration four years (eight semesters).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-information-technology",
+      "publicField": "teachingPhases",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(iii) lists laboratories by room: Civil (3), CSE (4), ECE (4), EEE (3), IT (4), PG (2) and an English language laboratory; no AI and Data Science laboratory is listed separately. AICTE EoA 2025-26: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and AICTE EoA 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 eligibility: pass in HSC (+1 and +2) or equivalent with minimum average in Mathematics, Physics and Chemistry of 45 per cent (General) or 40 per cent (BC, BCM, MBC/DNC, SC/SCA/ST); vocational route with listed engineering subjects; nativity categories including Tamil Nadu schooling Classes 8-12; open to Indian nationals and Tamil Nadu-native OCI/PIO card holders, excluding OCI/PIO born abroad after 04.03.2021.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University AR2025 (affiliated UG) admission per Government of Tamil Nadu norms; lateral entry for diploma holders and B.Sc. (Maths) graduates: https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "eligibility",
+      "claimText": "AICTE's 2026-27 NRI/PIO/OCI approved-course list has no row for VPMM (application 1-46268701029), and the AICTE Extension of Approval 2025-26 (F.No. Southern/1-44643474407/2025/EOA) shows FN/Gulf/OCI quota and NRI approval as No for Artificial Intelligence and Data Science. No foreign-national or NRI seats are approved.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27 (NRI/PIO/OCI list) and EoA 2025-26",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/nripiofcinstitute.php?q=2026-2027&q1=NRI: 3,261 rows, 965 Tamil Nadu, none for VPMM. EoA 2025-26: https://engineering.vpmm.in/EOAReport2025-26.PDF"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "AICTE's 2026-27 approved-course list for VPMM (application 1-46268701029) includes UNDER GRADUATE ARTIFICIAL INTELLIGENCE AND DATA SCIENCE with intake 30, affiliating body Anna University, Chennai. TNEA 2026 Round 1 vacancy list shows college 4979 Arul Tharum VPMM College of Engineering and Technology with branch AD.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27 and DoTE TNEA 2026 vacancy list",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Dashboard JSON php/approvedcourse.php?aicteid=1-46268701029&year=2026-2027. Vacancy list: https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf. College courses page lists intake 30: https://engineering.vpmm.in/vpmm_engg_courses_offered.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 admission steps: online registration (INR 500 / INR 250 for SC/SCA/ST), certificate upload, rank on Mathematics 100 + Physics 50 + Chemistry 50, online choice filling, confirmation, and reporting to the college within 5 days with fees. Management-quota seats are applied for directly at the college.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Management quota: VPMM 2026-27 disclosure s.18.11 ('For the management quota Student can directly visit college'), https://engineering.vpmm.in/disclosure2627.pdf; online form https://engineering.vpmm.in/apply.php"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "TNEA 2026 schedule: registration 03.05.2026-05.06.2026, general counselling 20.07.2026-30.08.2026. Anna University calendar for non-autonomous affiliated colleges: first-semester B.E./B.Tech classes commence 2 September 2026.",
+      "status": "verified",
+      "sourceLabel": "DoTE TNEA 2026 schedule and Anna University affiliated-colleges calendar",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA_Tentative_Schedule_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Calendar: https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "fee",
+      "claimText": "VPMM Mandatory Disclosure 2026-27, section 18.6(v) Fee: GQ Rs.50,000 per year; MQ Rs.85,000 per year.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 (AICTE format)",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "One figure for all programmes; no hostel, mess or transport charge published. TNEA 2026 Information about colleges booklet has no entry for code 4979. Concessions per TNEA 2026 brochure."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "medium",
+      "claimText": "Anna University Academic Regulations 2025 (affiliated UG): medium of instruction is English for all B.E./B.Tech programmes; duration four years (eight semesters).",
+      "status": "verified",
+      "sourceLabel": "Anna University - Academic Regulations 2025 (UG, affiliated)",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "programmeSlug": "arul-tharum-vpmm-btech-artificial-intelligence-data-science",
+      "publicField": "teachingPhases",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(iii) lists laboratories by room: Civil (3), CSE (4), ECE (4), EEE (3), IT (4), PG (2) and an English language laboratory; no AI and Data Science laboratory is listed separately. AICTE EoA 2025-26: internship is mandatory for all admitted students.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and AICTE EoA 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "AICTE 2026-27 approved-institutes list: application 1-46268701029, ARUL THARUM VPMM COLLEGE OF ENGINEERING AND TECHNOLOGY, V.P.M NAGAR, KRISHNANKOVIL, VIRUDHUNAGAR, Private-Self Financing, Women N, Minority N, permanent ID 1-8897103.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "JSON php/approvedinstituteserver.php?method=fetchdata&year=2026-2027&program=1&level=1&institutiontype=1&Women=1&Minority=1&state=Tamil%20Nadu&course=1. 66 of 67 TN institutions with WOMEN in the name carry Women=Y; VPMM carries N."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "identity",
+      "claimText": "Anna University CAI Virudhunagar list: exam code 9535, TNEA code 4979, Arul Tharum VPMM College of Engineering and Technology (Formerly V.P. Muthaiah Pillai Meenakshi Ammal Engineering College for Women).",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Virudhunagar district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Virudhunagar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "establishedYear",
+      "claimText": "AICTE EoA 2025-26 for permanent ID 1-8897103: Year of Establishment 2002; Society/Trust V.P. MUTHAIAH PILLAI MEENAKSHI AMMAL TRUST, 40 North Car Street, Srivilliputtur 626125; Institution Type Private-Self Financing.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Extension of Approval 2025-26",
+      "sourceUrl": "https://engineering.vpmm.in/EOAReport2025-26.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "summary",
+      "claimText": "Anna University 2022-23 provisional affiliation letter (letter reference ending AU/2022-2023/9535) addressed to Arul Tharum VPMM College of Engineering and Technology (Formerly V P Muthaiah Pillai Meenakshi Ammal Engineering College for Women) under Section 7.6.1 of the Statutes for Affiliation.",
+      "status": "verified",
+      "sourceLabel": "Anna University - Provisional affiliation letter 2022-23",
+      "sourceUrl": "https://engineering.vpmm.in/content/PDF/ANNA%20UNIVERSITY.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Scanned letter read by OCR; date partly legible (18-08-202x); grants provisional affiliation for 2022-23 to B.E. Civil, CSE, EEE, ECE, B.Tech IT and M.E. CSE, ECE, Power Electronics and Drives, VLSI Design."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "summary",
+      "claimText": "AICTE 2026-27 approved-course list for application 1-46268701029: UG Civil 30, CSE 60, ECE 60, EEE 30, IT 30, AI and Data Science 30; PG CSE 12, ECE 12; affiliating body Anna University, Chennai.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved courses 2026-27",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "JSON php/approvedcourse.php?method=fetchdata&aicteid=1-46268701029&course=&year=2026-2027"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE lists VPMM as an approved Private-Self Financing institution for 2026-27, permanent ID 1-8897103.",
+      "status": "verified",
+      "sourceLabel": "AICTE - Approved institutes dashboard 2026-27",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University CAI lists VPMM as an affiliated college in Virudhunagar district with examination code 9535; the name carries no (Autonomous) suffix, unlike autonomous colleges on the same list.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI - Virudhunagar district list",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Virudhunagar.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "TNEA 2026 General Academic Vacancy Position after Round 1 lists college code 4979 Arul Tharum VPMM College of Engineering and Technology with branches AD, CE, CS, EC, EE and IT.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 vacancy list",
+      "sourceUrl": "https://static.tneaonline.org/docs/TNEA-2026-GENERAL-ACADEMIC-VACANCY-POSITION-AFTER-ROUND-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "recognitionBadges",
+      "claimText": "VPMM Mandatory Disclosure 2026-27 s.18.6: programmes accredited by NBA - NIL; status of accreditation - NIL.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "No NAAC grade reported anywhere in the disclosure; not on NBA list checked via disclosure only, so no NBA/NAAC badge is claimed."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "campusLifestyle",
+      "claimText": "VPMM 2026-27 disclosure s.18.15: 27 classrooms of 70.08 sq m; 12 tutorial rooms; 21 laboratories incl. Englab; 2 computer centres; internet bandwidth 1000 Mbps; lift facility in all blocks; library 6,620 titles and 24,331 books; DELNET; NDL subscription available; innovation cell; games and sports facilities; MoU with Ekalai Academy, Coimbatore.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "College website library page says 'over 35,000 books'; disclosure figure used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "cityProfile",
+      "claimText": "AICTE EoA 2025-26: institution address V.P.M Nagar, Krishnankovil, Srivilliputur, Virudhunagar, Tamil Nadu 626190; trust address 40 North Car Street, Srivilliputtur 626125. AICTE 2026-27 list: Kalasalingam Academy of Research and Education, Anand Nagar Krishnankoil, Deemed to be University (Pvt), separate application 1-46215297252.",
+      "status": "verified",
+      "sourceLabel": "AICTE - EoA 2025-26 and approved institutes 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/EOAReport2025-26.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Anna University region: https://www.annauniv.edu/cai/District%20wise/district/Virudhunagar.php (Tirunelveli region page lists Virudhunagar district)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "AICTE EoA 2025-26 important instruction 8: internship is mandatory for all admitted students. Anna University AR2025: one credit per two weeks of internship.",
+      "status": "verified",
+      "sourceLabel": "AICTE - EoA 2025-26 and Anna University AR2025",
+      "sourceUrl": "https://engineering.vpmm.in/EOAReport2025-26.PDF",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025).pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "VPMM 2026-27 disclosure: 18.16 enrolment and placement details of students in the last 3 years NIL; 18.17 research projects/consultancy NIL; 18.18 MoU with Ekalai Academy, Coimbatore. College placement-training page: mock interviews, aptitude tests, group discussions, soft-skills workshops.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and placement training page",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "https://engineering.vpmm.in/placement_training.php"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "hostelOverview",
+      "claimText": "VPMM 2026-27 disclosure s.18.15(ix): Boys Hostel available in the campus; Girls Hostel available in the campus.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "hostelOverview",
+      "claimText": "VPMM hostel page: separate hostels for boys and girls; rooms for 2 to 4 students with cots, study tables, wardrobes and fans; Wi-Fi; laundry; gym and TV room; mess with vegetarian and non-vegetarian options; 24/7 security, CCTV and biometric entry. No fee published. TNEA 2026 Information about colleges booklet has no entry for code 4979.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Hostel page",
+      "sourceUrl": "https://engineering.vpmm.in/hostel.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "TNEA booklet checked (text search for 4979, VPMM, Krishnankovil): https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "dietarySupport",
+      "claimText": "VPMM hostel page: the hostel mess provides vegetarian and non-vegetarian options.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Hostel page",
+      "sourceUrl": "https://engineering.vpmm.in/hostel.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "safetyOverview",
+      "claimText": "VPMM committee list 2026-27 and disclosure s.18.5: anti-ragging committee chaired by the principal with a Deputy Superintendent of Police and a Sub Inspector of Police (Srivilliputhur), an NGO founder, a parents' representative and staff; internal committee (sexual harassment) and SC/ST committee constituted.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Committee list 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/committe2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "https://engineering.vpmm.in/disclosure2627.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "safetyOverview",
+      "claimText": "VPMM hostel page: 24/7 security personnel, CCTV surveillance and biometric entry systems.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Hostel page",
+      "sourceUrl": "https://engineering.vpmm.in/hostel.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "studentSupport",
+      "claimText": "VPMM disclosure 2026-27: online grievance redressal form (forms.gle) and four-member grievance redressal committee. Scholarship page: SC/ST/SCC scholarship, HESS for hostel students with parental income limit Rs. 2,00,000, minority scholarship, management scholarships for class toppers, rank holders and economically weaker students. Contact info@vpmm.in, +91 89258 04367.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27 and scholarship page",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "https://engineering.vpmm.in/vpmm_engg_college_scholarship_details.php"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "whyChoose",
+      "claimText": "VPMM disclosure 2026-27: fee GQ Rs.50,000 per year, MQ Rs.85,000 per year; sanctioned intakes Civil 30, CSE 60, ECE 60, EEE 30, IT 30, AI&DS 30 (total UG 240); boys and girls hostels on campus.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "Intakes match AICTE 2026-27 course list."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "thingsToConsider",
+      "claimText": "VPMM disclosure 2026-27 s.18.10(iii): management-quota applications/admissions 2023-24: 102/66; 2024-25: 103/37, with the note 'all the enrolled students were transferred to other colleges via Anna University compliance'. s.18.10(ii) students admitted in the last three years: NIL; s.18.16 enrolment and placement: NIL.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Mandatory Disclosure 2026-27",
+      "sourceUrl": "https://engineering.vpmm.in/disclosure2627.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "M.E. held: latest Anna University-issued letter is 2022-23; CEAP 2026 booklet (cfa.annauniv.edu) lists only government/aided/university colleges: https://cfa.annauniv.edu/cfa/pdf/CEAP_BOOKLET_INFORMATION_2026.pdf"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "bestFitFor",
+      "claimText": "VPMM scholarship page lists SC/ST/SCC scholarship (no income limit for UG) and the HESS scholarship for SC/ST/SCC hostel students with parental income up to Rs. 2,00,000.",
+      "status": "verified",
+      "sourceLabel": "VPMM - Scholarship page",
+      "sourceUrl": "https://engineering.vpmm.in/vpmm_engg_college_scholarship_details.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "TNEA 2026 brochure: OCI/PIO cardholders who are natives of Tamil Nadu eligible under open competition, not applicable to those born in a foreign country after 04.03.2021; registration fee Rs. 500 (Rs. 250 SC/SCA/ST); report to the college within 5 days of allotment. First Graduate, AICTE TFW and Post-Matric concessions claimed in the TNEA application.",
+      "status": "verified",
+      "sourceLabel": "DoTE Tamil Nadu - TNEA 2026 Information Brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "arul-tharum-vpmm-college-of-engineering-and-technology",
+      "publicField": "faq",
+      "claimText": "VPMM 'About' page: managed by the VPMM Educational Trust, founder and chairman Dr. V.P.M. Sankar. AICTE records the trust as V.P. Muthaiah Pillai Meenakshi Ammal Trust; KARE is a separate AICTE institution (Deemed to be University (Pvt)).",
+      "status": "verified",
+      "sourceLabel": "VPMM - About page and AICTE dashboard",
+      "sourceUrl": "https://engineering.vpmm.in/vpmm_engg_about.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-22",
+      "reviewBy": "2027-04-22",
+      "internalNotes": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+    }
+  ]
+}

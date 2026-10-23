@@ -80,7 +80,7 @@ test("university markdown carries facts, programme table and FAQ", () => {
 test("programme markdown shows the official fee and omits an unconfirmed medium", () => {
   const markdown = renderProgramMarkdown({ program });
 
-  assert.match(markdown, /Annual tuition: ₹2,50,000/);
+  assert.match(markdown, /Tuition per year: ₹2,50,000/);
   assert.doesNotMatch(markdown, /Teaching language/);
   assert.match(markdown, /- https:\/\/example\.edu\/fees/);
 });

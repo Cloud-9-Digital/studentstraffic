@@ -3,11 +3,10 @@ import { ArrowRight } from "lucide-react";
 
 import type { FinderProgram } from "@/lib/data/types";
 import {
-  formatProgramAnnualFee,
   formatProgramLivingFee,
   formatProgramMedium,
   formatProgramDuration,
-  getProgramAnnualFeeLabel,
+  getProgramFeeLines,
   hasRenderableProgramLivingFee,
 } from "@/lib/utils";
 import { getUniversityProgramHref } from "@/lib/routes";
@@ -58,8 +57,7 @@ function ProgramDirectoryList({ programs }: { programs: FinderProgram[] }) {
             : program.offering.title,
           level,
           levelLabel: programmeLevelLabels[level as ProgrammeLevel] ?? "Other",
-          feeLabel: getProgramAnnualFeeLabel(program.offering),
-          fee: formatProgramAnnualFee(program.offering, "Fee plan on request"),
+          fees: getProgramFeeLines(program.offering, program.country.slug),
           duration: formatProgramDuration(program.offering.durationYears),
         },
       };
@@ -111,10 +109,9 @@ function ProgramOfferingsTable({
               </span>
             </div>
             <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-border pt-4">
-              <ProgramFact
-                label={getProgramAnnualFeeLabel(program.offering)}
-                value={formatProgramAnnualFee(program.offering, "Fee plan on request")}
-              />
+              {getProgramFeeLines(program.offering, program.country.slug).map((fee) => (
+                <ProgramFact key={fee.label} label={fee.label} value={fee.amount} />
+              ))}
               <ProgramFact label="Duration" value={formatProgramDuration(program.offering.durationYears)} />
               {medium ? <ProgramFact label="Medium" value={medium} /> : null}
               <ProgramFact label="Intake" value={program.offering.intakeMonths.join(", ") || "Guidance available"} />

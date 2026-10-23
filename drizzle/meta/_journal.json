@@ -456,6 +456,13 @@
       "when": 1792627200000,
       "tag": "0081_lead_residence_country",
       "breakpoints": true
+    },
+    {
+      "idx": 79,
+      "version": "7",
+      "when": 1792713600000,
+      "tag": "0082_offering_fee_audience",
+      "breakpoints": true
     }
   ]
 }

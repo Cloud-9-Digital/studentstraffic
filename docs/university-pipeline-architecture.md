@@ -127,6 +127,14 @@ The migration payload is now the enforcement point for the catalogue content fra
 
 - every programme supplies a `fee` object with explicit `confirmed`, `indicative` or `on_request`
   status rather than a zero-value fee sentinel;
+- `fee.audience` says who that fee applies to: `domestic` (Indian students on Indian university
+  pages), `international` (NRI and foreign applicants) or `all`. Set it from the source, never from
+  the currency: Amity's INR fee is the foreign rate and Jindal charges everyone one INR fee. A
+  programme with a second published fee carries it in `additionalFees` (up to 3, each with
+  audience, currency, annual amount, academic year, checked date and notes). Both land in
+  `program_offerings.fee_audience` / `additional_fees` (drizzle `0082_offering_fee_audience`), and
+  pages label each fee by audience. Unclassified fees fall back to "Tuition per year". Bundles
+  0120–0144 (2026-10-23) classified every priced Indian programme;
 - every material claim is carried in a private root `evidence` record with entity target, public
   field, claim text, source grade, checked date and review-by date;
 - `npm run content:validate` rejects Grade C evidence, prohibited filler, missing

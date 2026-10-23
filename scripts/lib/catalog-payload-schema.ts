@@ -44,9 +44,24 @@ const evidenceSchema = z.object({
   }
 });
 
+// Who a fee applies to. Indian universities often publish an Indian-student fee and a separate
+// NRI/foreign fee for the same programme; "all" means one fee for every applicant.
+const feeAudienceSchema = z.enum(["domestic", "international", "all"]);
+
+const additionalFeeSchema = z.object({
+  audience: feeAudienceSchema,
+  currency: z.string().length(3),
+  annualAmount: z.number().int().positive(),
+  totalAmount: z.number().int().positive().nullable().optional(),
+  academicYear: z.string().min(4).max(40),
+  verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  notes: z.string().min(20).max(600),
+});
+
 const feeSchema = z.discriminatedUnion("status", [
   z.object({
     status: z.literal("confirmed"),
+    audience: feeAudienceSchema.optional(),
     academicYear: z.string().min(4).max(40),
     officialFeeCurrency: z.string().length(3),
     officialAnnualTuitionAmount: z.number().int().positive(),
@@ -58,6 +73,7 @@ const feeSchema = z.discriminatedUnion("status", [
   }),
   z.object({
     status: z.literal("indicative"),
+    audience: feeAudienceSchema.optional(),
     academicYear: z.string().min(4).max(40),
     annualTuitionMinUsd: z.number().int().positive(),
     annualTuitionMaxUsd: z.number().int().positive(),
@@ -143,6 +159,7 @@ const createProgrammeSchema = (mediumSchema: OfferingMediumSchema) => z.object({
   feeVerifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   feeNotes: z.string().min(40).max(1200),
   teachingPhases: z.array(z.object({ phase: z.string(), language: z.string(), details: z.string() })).min(1),
+  additionalFees: z.array(additionalFeeSchema).max(3).optional(),
 });
 
 const createUniversitySchema = (mediumSchema: OfferingMediumSchema) => z.object({
