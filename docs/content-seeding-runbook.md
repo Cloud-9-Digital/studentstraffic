@@ -237,8 +237,13 @@ ask the renderer to infer them from prose.
 | Display label for the teaching language(s) | `medium` | Language names only, joined with " / " (e.g. `English`, `English / Russian`). Max 40 characters; no `. ; : ( )` or newlines. Never put a sentence here: it renders verbatim on cards, tables and search. |
 | How teaching is delivered, including phase changes and local-language clinical requirements | `mediumNote` and `teachingPhases` | Preserve the precise, source-backed explanation in `mediumNote` (optional, 10-300 characters) or `teachingPhases`. |
 | Verified languages actually used for instruction | `instructionLanguages` | Use only controlled language codes, e.g. `english`, `russian`. Do not add `english` merely because an English test is required, an English option is marketed without confirmation, or the source mentions English in another context. |
-| Official intake wording and current timing context | `intakeMonths` and `admissionsContent.deadlinesNote` | Preserve the source wording and any deadline in the decision content. |
+| Verified intake month(s) for display | `intakeMonths` | Use calendar month names only, e.g. `September` or `January`, matching `intakeCodes` exactly. No years, seasons, dates or explanatory text. |
+| Current timing context and deadlines | `admissionsContent.deadlinesNote` | Preserve source-backed cycle dates, pending-date caveats and application deadlines here. |
 | Month(s) represented by a verified intake | `intakeCodes` | Use only calendar codes, e.g. `september`, `january`. `Fall`, `Spring`, `September intake`, dates and country-wide assumptions are not valid codes. |
+
+The content-migration validator enforces exact month-label/`intakeCodes` agreement from migration
+`0154` onward. Earlier applied bundles are immutable; public programme facts render from the
+controlled codes so legacy prose cannot appear as an intake label.
 
 If a source confirms a mixed English/local-language programme, record every verified instructional
 language in `instructionLanguages`, list them in the `medium` label, and explain the transition in

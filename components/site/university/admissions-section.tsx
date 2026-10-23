@@ -17,6 +17,7 @@ import type {
   UniversityRegulatoryAdvisory,
 } from "@/lib/data/regulatory-advisories";
 import type { FinderProgram, University } from "@/lib/data/types";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
   getRussiaOfficialPageAudit,
   getRussiaOfficialPageAuditSummary,
@@ -126,7 +127,7 @@ export function UniversityAdmissionsSection({
     ? primaryProgram.offering.admissionsContent
     : null;
 
-  const intakeMonths = primaryProgram?.offering.intakeMonths ?? [];
+  const intakeMonths = getIntakeMonthLabels(primaryProgram?.offering.intakeCodes ?? []);
   const universityAdmissions = university.admissionsContent;
   const russiaOfficialAudit =
     university.countrySlug === "russia"

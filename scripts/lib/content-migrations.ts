@@ -4,6 +4,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { basename, join, relative, resolve, sep } from "node:path";
 
 import { z } from "zod";
+import { getIntakeMonthLabel } from "@/lib/catalogue-facets";
 
 import {
   catalogPayloadSchema,
@@ -161,6 +162,19 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string, no
     }
 
     for (const programme of university.programmes) {
+      // Earlier applied bundles are immutable. New bundles must keep intake
+      // labels aligned with the controlled month facets, with timing notes in
+      // admissionsContent.deadlinesNote.
+      if (Number(migrationId.slice(0, 4)) >= 154) {
+        const expectedMonths = programme.intakeCodes.map(getIntakeMonthLabel);
+        if (
+          programme.intakeMonths.length !== expectedMonths.length ||
+          new Set(programme.intakeMonths).size !== expectedMonths.length ||
+          !programme.intakeMonths.every((month) => expectedMonths.includes(month))
+        ) {
+          throw new Error(`${migrationId} programme '${programme.slug}' intakeMonths must contain only month labels matching intakeCodes; put dates and caveats in admissionsContent.deadlinesNote.`);
+        }
+      }
       const evidence = payload.evidence.filter(
         (item) => item.entity === "programme" && item.universitySlug === university.slug && item.programmeSlug === programme.slug,
       );

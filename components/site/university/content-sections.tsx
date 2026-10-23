@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import type { Country, FinderProgram, University } from "@/lib/data/types";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
   formatProgramAnnualFee,
   formatProgramDuration,
@@ -25,8 +26,6 @@ import { programmeLevelLabels, programmeLevels, type ProgrammeLevel } from "@/li
 import { SectionLabel } from "./shared";
 import { cn } from "@/lib/utils";
 
-const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
 // For a university with several programmes, one programme's fee or duration would misrepresent the
 // rest, so the snapshot shows facts that hold for the whole university instead.
 function universityWideStats(programs: FinderProgram[], university: University, country: Country) {
@@ -34,9 +33,7 @@ function universityWideStats(programs: FinderProgram[], university: University, 
     .filter((level) => programs.some((program) => program.course.level === level))
     .map((level) => programmeLevelLabels[level as ProgrammeLevel]);
   const mediums = [...new Set(programs.map((program) => formatProgramMedium(program.offering.medium, country.slug)).filter(Boolean))];
-  const intakes = MONTHS.filter((month) =>
-    programs.some((program) => program.offering.intakeMonths.some((intake) => intake.toLowerCase().startsWith(month.toLowerCase()))),
-  );
+  const intakes = getIntakeMonthLabels(programs.flatMap((program) => program.offering.intakeCodes));
   return [
     { icon: <MapPinned className="size-3.5" />, label: "Location", value: `${university.city}, ${country.name}` },
     { icon: <GraduationCap className="size-3.5" />, label: "University type", value: university.type },
@@ -82,7 +79,7 @@ export function UniversitySnapshotSection({
     {
       icon: <CalendarDays className="size-3.5" />,
       label: "Intake",
-      value: primaryProgram.offering.intakeMonths.join(", ") || "Guidance available",
+      value: getIntakeMonthLabels(primaryProgram.offering.intakeCodes).join(", ") || "Not listed",
     },
     {
       icon: <MapPinned className="size-3.5" />,

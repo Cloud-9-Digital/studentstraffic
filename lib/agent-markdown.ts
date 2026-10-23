@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/constants";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import type {
   CountryRegulatoryAdvisory,
@@ -307,7 +308,7 @@ export function renderProgramMarkdown(input: {
           ? `Estimated living cost: ${formatCurrencyUsd(offering.livingUsd)} per year`
           : null,
         offering.feeVerifiedAt ? `Fee verified: ${offering.feeVerifiedAt.slice(0, 10)}` : null,
-        offering.intakeMonths.length ? `Intake: ${offering.intakeMonths.join(", ")}` : null,
+        offering.intakeCodes.length ? `Intake: ${getIntakeMonthLabels(offering.intakeCodes).join(", ")}` : null,
         offering.professionalExamSupport.length
           ? `Licensing exam support: ${offering.professionalExamSupport.join(", ")}`
           : null,

@@ -10,6 +10,7 @@ import {
   hasRenderableProgramLivingFee,
 } from "@/lib/utils";
 import { getUniversityProgramHref } from "@/lib/routes";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import { programmeLevelLabels, programmeLevels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
 
 import { ProgramsDirectory, type ProgramDirectoryRow } from "./programs-directory";
@@ -102,6 +103,7 @@ function ProgramOfferingsTable({
       <div className="grid gap-4 md:grid-cols-2">
         {programs.map((program) => {
           const medium = formatProgramMedium(program.offering.medium, program.country.slug);
+          const intake = getIntakeMonthLabels(program.offering.intakeCodes).join(", ");
           return (
           <Link
             key={program.offering.slug}
@@ -123,7 +125,7 @@ function ProgramOfferingsTable({
               ))}
               <ProgramFact label="Duration" value={formatProgramDuration(program.offering.durationYears)} />
               {medium ? <ProgramFact label="Medium" value={medium} /> : null}
-              <ProgramFact label="Intake" value={program.offering.intakeMonths.join(", ") || "Guidance available"} />
+              {intake ? <ProgramFact label="Intake" value={intake} /> : null}
               {hasRenderableProgramLivingFee(program.offering) ? (
                 <div className="col-span-2 rounded-xl bg-muted/40 px-3 py-2.5">
                   <ProgramFact label="Living estimate" value={formatProgramLivingFee(program.offering)} />

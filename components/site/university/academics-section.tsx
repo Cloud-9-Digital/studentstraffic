@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 
 import type { FinderProgram, University } from "@/lib/data/types";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
   formatProgramAnnualFee,
   formatUsdAmountOrTbd,
@@ -85,11 +86,13 @@ export function UniversityAcademicsSection({
               {primaryMedium}
             </span>
           ) : null}
-          <span className="text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">Intake</span>
-            <span className="mx-1.5 text-border">—</span>
-            {primaryProgram.offering.intakeMonths.join(", ")}
-          </span>
+          {primaryProgram.offering.intakeCodes.length ? (
+            <span className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Intake</span>
+              <span className="mx-1.5 text-border">—</span>
+              {getIntakeMonthLabels(primaryProgram.offering.intakeCodes).join(", ")}
+            </span>
+          ) : null}
         </div>
         {primaryProgram.offering.mediumNote ? (
           <p className="mt-2 max-w-2xl text-xs leading-5 text-muted-foreground">

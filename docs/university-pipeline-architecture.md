@@ -43,14 +43,14 @@ Keep it current — see "Keeping this doc current" at the bottom.
   source-backed delivery nuance such as phase transitions or local-language clinical requirements;
   selected only by university/programme detail queries, never search documents, cards or facets),
   `instructionLanguages`
-  (controlled language-facet codes, at least one required), `intakeMonths` (source display values), `intakeCodes`
+  (controlled language-facet codes, at least one required), `intakeMonths` (calendar month labels only, matching `intakeCodes` in new bundles), `intakeCodes`
   (controlled calendar-facet codes), `professionalExamSupport`, `sourceUrls`, `published`.
 
   **2026-07-20 facet normalization (drizzle `0068`).** `/universities` must filter only on
   `instruction_languages` and `intake_codes`, never on free-text `medium` or `intake_months`.
   `lib/catalogue-facets.ts` is the single allowed vocabulary and label/order source. The descriptive
-  fields remain because programme pages must retain the verified delivery nuance and exact admissions
-  timing. Legacy rows are backfilled only for exact unambiguous values; ambiguous rows remain absent
+  fields remain because programme pages must retain verified delivery nuance and exact admissions
+  timing in `mediumNote` and `admissionsContent.deadlinesNote`. Legacy rows are backfilled only for exact unambiguous values; ambiguous rows remain absent
   from those facets until a source-backed content migration corrects them.
 
   > **2026-07-09 column rename (drizzle `0054_rename_medical_columns`).** Four medically/India-flavored

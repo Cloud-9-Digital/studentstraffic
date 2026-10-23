@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -299,8 +300,8 @@ function getUniversityDecisionPoints(program: FinderProgram) {
     points.push(`Teaching medium: ${medium}`);
   }
 
-  if (program.offering.intakeMonths.length) {
-    points.push(`Main intake: ${program.offering.intakeMonths.join(", ")}`);
+  if (program.offering.intakeCodes.length) {
+    points.push(`Main intake: ${getIntakeMonthLabels(program.offering.intakeCodes).join(", ")}`);
   }
 
   return points.slice(0, 4);
@@ -672,7 +673,7 @@ function UniversityComparisonDetail({
                       countrySlug={guide.left.country.slug}
                     />
                     Intake months:{" "}
-                    {guide.left.offering.intakeMonths.join(", ") || "Check with university"}.
+                    {getIntakeMonthLabels(guide.left.offering.intakeCodes).join(", ") || "Check with university"}.
                   </p>
                 </div>
                 <div className="rounded-xl border border-border bg-muted/20 p-4">
@@ -684,7 +685,7 @@ function UniversityComparisonDetail({
                       countrySlug={guide.right.country.slug}
                     />
                     Intake months:{" "}
-                    {guide.right.offering.intakeMonths.join(", ") || "Check with university"}.
+                    {getIntakeMonthLabels(guide.right.offering.intakeCodes).join(", ") || "Check with university"}.
                   </p>
                 </div>
               </div>

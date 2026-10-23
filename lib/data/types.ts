@@ -252,7 +252,7 @@ export type ProgramOffering = {
   teachingPhases: TeachingPhase[];
   yearlyCostBreakdown: YearlyCostBreakdown[];
   professionalExamSupport: string[];
-  /** Legacy/source display values. Use intakeCodes for finder filters and canonical UI labels. */
+  /** Calendar month display labels in new bundles; legacy rows may contain source prose. */
   intakeMonths: string[];
   /** Controlled intake-month facets. */
   intakeCodes: import("@/lib/catalogue-facets").IntakeMonthCode[];

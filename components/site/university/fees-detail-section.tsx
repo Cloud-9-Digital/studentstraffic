@@ -2,6 +2,7 @@ import { CircleDollarSign, Info } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
+import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
   formatProgramAnnualFee,
   formatProgramDuration,
@@ -100,9 +101,9 @@ function ProgramFeeCard({
               {offering.title}
             </p>
             <p className="mt-0.5 text-sm text-muted-foreground">
-              {formatProgramDuration(offering.durationYears)} ·{" "}
-              {medium ? <>{medium} medium ·{" "}</> : null}
-              {offering.intakeMonths.join(", ")} intake
+              {formatProgramDuration(offering.durationYears)}
+              {medium ? <> · {medium} medium</> : null}
+              {offering.intakeCodes.length ? <> · {getIntakeMonthLabels(offering.intakeCodes).join(", ")} intake</> : null}
             </p>
             {offering.mediumNote ? (
               <p className="mt-1 max-w-2xl text-xs leading-5 text-muted-foreground">

@@ -170,6 +170,28 @@ test("discovers numbered content migrations in sequence and hashes their immutab
   });
 });
 
+test("new bundles reject prose in intake month labels", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const directory = join(root, "0154-normalized-intake");
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({
+      version: 1,
+      id: "0154-normalized-intake",
+      description: "Verify controlled intake display labels.",
+      createdAt: "2026-10-23",
+      payload: "payload.json",
+    }));
+    const payload = structuredClone(validPayload);
+    payload.universities[0].programmes[0].intakeMonths = ["September 2026"];
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await assert.rejects(readContentMigrations(root), /intakeMonths must contain only month labels matching intakeCodes/);
+
+    payload.universities[0].programmes[0].intakeMonths = ["September"];
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    assert.equal((await readContentMigrations(root)).length, 1);
+  });
+});
+
 test("checksums a CRLF checkout the same as its LF original", () => {
   const manifest = '{\n  "id": "0001-test-university"\n}\n';
   const payload = '{\n  "courses": []\n}\n';

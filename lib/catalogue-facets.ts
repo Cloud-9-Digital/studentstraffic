@@ -149,6 +149,10 @@ export function sortIntakeMonthCodes(values: Iterable<IntakeMonthCode>) {
   return intakeMonthCodes.filter((code) => present.has(code));
 }
 
+export function getIntakeMonthLabels(values: Iterable<IntakeMonthCode>) {
+  return sortIntakeMonthCodes(values).map(getIntakeMonthLabel);
+}
+
 export function isTeachingLanguageCode(
   value: string,
 ): value is TeachingLanguageCode {
