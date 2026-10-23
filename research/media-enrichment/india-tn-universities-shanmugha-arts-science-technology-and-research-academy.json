@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-tn-universities-shanmugha-arts-science-technology-and-research-academy-media-2026-10-23",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-23",
+  "scope": "logo and cover for content migration 0151-india-shanmugha-arts-science-technology-and-research-academy",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-23; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "shanmugha-arts-science-technology-and-research-academy",
+      "universityName": "Shanmugha Arts, Science, Technology & Research Academy",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0151-india-shanmugha-arts-science-technology-and-research-academy",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://webstream.sastra.edu/sastraonline/resources/Image/SASTRA_logo_2025.png",
+          "sourceType": "official",
+          "sourcePage": "https://webstream.sastra.edu/sastraonline/application/loginManager/applicantInitialPage.jsp",
+          "rightsBasis": "Official SASTRA logo served from the university's own admissions portal (webstream.sastra.edu) as the banner of the Applicant Registration 2026 page. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 93,585 bytes, 1349x344 px, RGBA with a transparent background. Rendered on white and visually confirmed legible: the blue SASTRA crest ('Progress through quality education', 'Shanmugha Arts, Science, Technology & Research Academy'), the wordmark 'SASTRA', the strap 'Engineering - Management - Law - Sciences - Humanities - Education', 'Deemed to be University (U/S 3 of the UGC Act, 1956)', a '40 years' anniversary badge, and 'Thanjavur | Kumbakonam | Chennai'. Wide lock-up; for square tiles crop to the crest at the left. The site header logo /templates/santosh/images/sastratransp.png (300x85) was not chosen because it is smaller.",
+          "proposedPublicId": "studentstraffic/universities/shanmugha-arts-science-technology-and-research-academy/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sastra.edu/images/sastra/newbuildingAUG15.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.sastra.edu/about-us/sastra.html",
+          "rightsBasis": "Official institutional photograph used on the 'About SASTRA' page of the university's own domain (sastra.edu). No open licence; used only to depict the institution. Checked 2026-10-23: HTTP 200, image/jpeg, 120,163 bytes, 1600x720 px (landscape). Visually confirmed as a single real photograph, not a composite or AI image: a lawn in front of a long cream multi-storey building with a central curved, glass-fronted block in brick red, and the Indian national flag on a tall mast under an overcast sky; no text overlay or watermark; no identifiable people. Rejected: slideshow2026/02.jpeg and 05.jpeg (promotional composites with text and identifiable students), hostel/vb1-1.jpg (hostel block with caption text 'Vinaya hostel (block 1)' burnt into the image; possible student-life accommodation image only).",
+          "proposedPublicId": "studentstraffic/universities/shanmugha-arts-science-technology-and-research-academy/cover",
+          "altText": "Multi-storey academic building with a curved glass-fronted central block and the Indian flag at Shanmugha Arts, Science, Technology & Research Academy (SASTRA)"
+        }
+      ]
+    }
+  ]
+}
