@@ -1,0 +1,106 @@
+{
+  "manifestId": "india-tn-universities-batch1",
+  "checkedAt": "2026-10-23",
+  "entries": [
+    {
+      "universitySlug": "anna-university",
+      "universityName": "Anna University",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0149-india-anna-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.annauniv.edu/images/ANNAUNIVERSITYLOGO.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.annauniv.edu/",
+          "rightsBasis": "Official Anna University emblem and wordmark served from the university's own domain and used in its site header. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 112,002 bytes, 631x78 px, RGBA. Rendered on white and visually confirmed legible: the circular emblem ('Anna University', 'Progress through knowledge') beside 'Anna University, Chennai' in Tamil and English in dark blue. It is a wide lock-up (about 8:1); for a square tile, crop to the emblem on the left or pad with white.",
+          "proposedPublicId": "studentstraffic/universities/anna-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.annauniv.edu/images/main-slider/slide1.jpeg",
+          "sourceType": "official",
+          "sourcePage": "https://www.annauniv.edu/",
+          "rightsBasis": "Official homepage slider photograph on the university's own domain. No open licence; used only to depict the institution. Checked 2026-10-23: HTTP 200, image/jpeg, 148,663 bytes, 1280x548 px (landscape). Visually confirmed as a single real aerial photograph, not a composite or AI image: the red-brick, domed main building of the College of Engineering Guindy surrounded by trees, with the front lawn and road; no text overlay; no identifiable people. Rejected: images/ceg_campus.jpeg (350x250 px, too small).",
+          "proposedPublicId": "studentstraffic/universities/anna-university/cover",
+          "altText": "Aerial view of the domed red-brick main building of the College of Engineering Guindy, Anna University, Chennai"
+        }
+      ]
+    },
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "universityName": "Dhanalakshmi Srinivasan College of Engineering and Technology",
+      "sourceBatch": "india-tn-affiliated",
+      "migrationId": "0148-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dscet.ac.in/assets/favicon1.png",
+          "sourceType": "official",
+          "sourcePage": "https://dscet.ac.in/",
+          "rightsBasis": "Official DSCET crest served from the college's own domain (dscet.ac.in) and used on its site. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 273,706 bytes, 523x477 px, black line art on a transparent background. Rendered on white and visually confirmed legible: a ring reading 'Dhanalakshmi Srinivasan College of Engineering & Technology' and 'Chennai' around a quartered shield (torch, folded hands, lotus, open book) above a ribbon reading 'Learning for Excellence'. Although the file is named favicon1.png, it is a full-size crest (523x477), not a 16/32 px favicon. Alternative wide colour lock-up (crest plus 'DHANALAKSHMI SRINIVASAN COLLEGE OF ENGINEERING AND TECHNOLOGY (An Autonomous Institution) ECR, MAMALLAPURAM, CHENNAI') at https://dscet.ac.in/assets/images/logo.png (471x100 px, transparent, legible on white) was not chosen because it is only 100 px tall and does not suit square tiles.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-college-of-engineering-and-technology/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dscet.ac.in/assets/dscet-slider.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://dscet.ac.in/",
+          "rightsBasis": "Official institutional photograph used as the homepage banner on the college's own domain (dscet.ac.in). No open licence; used only to depict the institution. Checked 2026-10-23: HTTP 200, image/jpeg, 228,506 bytes, 1920x800 px (landscape). Visually confirmed as a single real elevated photograph, not a composite or AI image: the arched entrance gate reading 'Dhanalakshmi Srinivasan College of Engineering and Technology', a basketball court, the glass-fronted four-storey main block with the college name board, further blocks and hostels behind, and a row of yellow college buses; no text overlay or watermark; no identifiable people. Rejected: assets/images/slider/4.jpg (graduation-day stage with identifiable people), assets/images/about/1.jpg (portrait of the chairman), assets/images/25.png (generic '25 years' badge).",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-college-of-engineering-and-technology/cover",
+          "altText": "Elevated view of the entrance arch, basketball court and main academic block of Dhanalakshmi Srinivasan College of Engineering and Technology on East Coast Road, Mamallapuram"
+        }
+      ]
+    },
+    {
+      "universitySlug": "shanmugha-arts-science-technology-and-research-academy",
+      "universityName": "Shanmugha Arts, Science, Technology & Research Academy",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0151-india-shanmugha-arts-science-technology-and-research-academy",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://webstream.sastra.edu/sastraonline/resources/Image/SASTRA_logo_2025.png",
+          "sourceType": "official",
+          "sourcePage": "https://webstream.sastra.edu/sastraonline/application/loginManager/applicantInitialPage.jsp",
+          "rightsBasis": "Official SASTRA logo served from the university's own admissions portal (webstream.sastra.edu) as the banner of the Applicant Registration 2026 page. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 93,585 bytes, 1349x344 px, RGBA with a transparent background. Rendered on white and visually confirmed legible: the blue SASTRA crest ('Progress through quality education', 'Shanmugha Arts, Science, Technology & Research Academy'), the wordmark 'SASTRA', the strap 'Engineering - Management - Law - Sciences - Humanities - Education', 'Deemed to be University (U/S 3 of the UGC Act, 1956)', a '40 years' anniversary badge, and 'Thanjavur | Kumbakonam | Chennai'. Wide lock-up; for square tiles crop to the crest at the left. The site header logo /templates/santosh/images/sastratransp.png (300x85) was not chosen because it is smaller.",
+          "proposedPublicId": "studentstraffic/universities/shanmugha-arts-science-technology-and-research-academy/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sastra.edu/images/sastra/newbuildingAUG15.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.sastra.edu/about-us/sastra.html",
+          "rightsBasis": "Official institutional photograph used on the 'About SASTRA' page of the university's own domain (sastra.edu). No open licence; used only to depict the institution. Checked 2026-10-23: HTTP 200, image/jpeg, 120,163 bytes, 1600x720 px (landscape). Visually confirmed as a single real photograph, not a composite or AI image: a lawn in front of a long cream multi-storey building with a central curved, glass-fronted block in brick red, and the Indian national flag on a tall mast under an overcast sky; no text overlay or watermark; no identifiable people. Rejected: slideshow2026/02.jpeg and 05.jpeg (promotional composites with text and identifiable students), hostel/vb1-1.jpg (hostel block with caption text 'Vinaya hostel (block 1)' burnt into the image; possible student-life accommodation image only).",
+          "proposedPublicId": "studentstraffic/universities/shanmugha-arts-science-technology-and-research-academy/cover",
+          "altText": "Multi-storey academic building with a curved glass-fronted central block and the Indian flag at Shanmugha Arts, Science, Technology & Research Academy (SASTRA)"
+        }
+      ]
+    },
+    {
+      "universitySlug": "university-of-madras",
+      "universityName": "University of Madras",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0150-india-university-of-madras",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://egovernance.unom.ac.in/CBCS2627/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://egovernance.unom.ac.in/CBCS2627/",
+          "rightsBasis": "Official University of Madras lock-up served from the University's own e-governance domain (egovernance.unom.ac.in) on its 2026-27 admissions portal. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 27,676 bytes, 420x100 px, transparent background. Viewed on white and legible: the University crest (shield with elephant, lotus and motto ribbon) beside '\u0b9a\u0bc6\u0ba9\u0bcd\u0ba9\u0bc8\u0baa\u0bcd \u0baa\u0bb2\u0bcd\u0b95\u0bb2\u0bc8\u0b95\u0bcd\u0b95\u0bb4\u0b95\u0bae\u0bcd', 'UNIVERSITY OF MADRAS' in dark blue and 'Estd. 1857, State University'. Rejected: https://egovernance.unom.ac.in/logo.PNG (803x183) because it carries a NAAC A++ seal that could not be verified on NAAC's own list; https://egovernance.unom.ac.in/univ.png is a 16x16 favicon. Wide format (100 px tall); a square crest crop would suit square tiles better.",
+          "proposedPublicId": "studentstraffic/universities/university-of-madras/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Madras_University_Senate_House.jpg/1920px-Madras_University_Senate_House.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Madras_University_Senate_House.jpg",
+          "rightsBasis": "Wikimedia Commons, 'Madras University Senate House.jpg' by Jonas Buchholz (Jbuchholz), 7 September 2011, licensed CC BY-SA 3.0; attribution and share-alike required. Checked 2026-10-23: HTTP 200, image/jpeg, 794,091 bytes, 1920x1280 px rendition of a 3810x2540 original. Visually confirmed as a single real photograph, not a composite or AI image: the red-brick Indo-Saracenic Senate House at Chepauk with its domed towers behind lawns and trees, a statue on the right; no text overlay; no identifiable people. Rejected: https://egovernance.unom.ac.in/Building.png (an AI-generated composite of invented towers with a signboard), 'Senate House University of Madras Chennai India.jpg' (taken through a vehicle windscreen with glare and identifiable passers-by).",
+          "proposedPublicId": "studentstraffic/universities/university-of-madras/cover",
+          "altText": "The red-brick Senate House of the University of Madras at Chepauk, Chennai, with domed towers behind lawns and trees"
+        }
+      ]
+    }
+  ]
+}

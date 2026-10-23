@@ -1,17 +1,35 @@
 {
-  "appliedAt": "2026-10-23T07:26:38.709Z",
+  "appliedAt": "2026-10-23T10:17:41.258Z",
   "uploads": {
-    "attempted": 2,
-    "succeeded": 2,
+    "attempted": 8,
+    "succeeded": 8,
     "failed": 0
   },
   "database": {
-    "updated": 1,
+    "updated": 4,
     "notFoundInDb": []
   },
   "updatedUniversities": [
     {
+      "universitySlug": "anna-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
       "universitySlug": "dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "shanmugha-arts-science-technology-and-research-academy",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "university-of-madras",
       "logoUpdated": true,
       "coverUpdated": true,
       "notFoundInDb": false
