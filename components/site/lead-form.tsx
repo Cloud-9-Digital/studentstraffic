@@ -239,11 +239,12 @@ export function LeadForm({
   const residenceField = lockPhoneToIndia ? null : (
     <div className="space-y-2">
       <Label htmlFor={`${fieldPrefix}-residence`}>
-        Country you live in<RequiredMark />
+        Country<RequiredMark />
       </Label>
       <CountrySelect
         id={`${fieldPrefix}-residence`}
         name="residenceCountry"
+        placeholder={hidePlaceholders ? "" : undefined}
         value={residence.country}
         onChange={(code) => {
           residence.setCountry(code);
@@ -267,7 +268,7 @@ export function LeadForm({
           defaultValue=""
           className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          <option value="" disabled className="text-muted-foreground">Select state</option>
+          <option value="" disabled className="text-muted-foreground">{hidePlaceholders ? "" : "Select state"}</option>
           {INDIAN_STATES.map((s) => (
             <option key={s} value={s}>{s}</option>
           ))}
@@ -389,7 +390,7 @@ export function LeadForm({
           className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <option value="" className="text-muted-foreground">
-                  Select a course
+                  {hidePlaceholders ? "" : "Select a course"}
                 </option>
                 {navCourses.map((course) => (
                   <option key={course.slug} value={course.slug}>
@@ -411,7 +412,7 @@ export function LeadForm({
                 className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <option value="" className="text-muted-foreground">
-                  Select a country
+                  {hidePlaceholders ? "" : "Select a country"}
                 </option>
                 {navCountries.map((country) => (
                   <option key={country.slug} value={country.slug}>

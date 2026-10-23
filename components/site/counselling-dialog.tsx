@@ -111,22 +111,22 @@ export function CounsellingDialog({
           </Dialog.Close>
 
           <div className="grid md:grid-cols-[0.78fr_1.22fr]">
-            <div className="relative flex min-h-[25rem] flex-col overflow-hidden bg-gradient-to-br from-primary via-primary to-accent p-5 text-white sm:p-8 md:min-h-0">
-              <Dialog.Title className="relative z-10 max-w-[18ch] font-display text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
+            <div className="flex h-64 flex-col overflow-hidden bg-gradient-to-br from-primary via-primary to-accent p-5 text-white sm:h-72 sm:p-8 md:h-auto md:min-h-0">
+              <Dialog.Title className="max-w-[18ch] shrink-0 font-display text-2xl font-semibold leading-tight tracking-tight text-white sm:text-3xl">
                 {title}
               </Dialog.Title>
               <Dialog.Description className="sr-only">
                 {description}
               </Dialog.Description>
 
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center">
+              <div className="pointer-events-none mt-3 flex min-h-0 flex-1 items-end justify-center">
                 <Image
                   src="/images/counselling/study-abroad-enquiry-illustration.png"
                   alt="Student preparing to study abroad"
                   width={1085}
                   height={1450}
                   sizes="(max-width: 767px) 15rem, 20rem"
-                  className="h-auto w-[78%] max-w-[13rem] object-contain sm:max-w-[15rem] md:w-[108%] md:max-w-none"
+                  className="h-full max-h-[15rem] w-auto max-w-full object-contain object-bottom"
                 />
               </div>
             </div>
@@ -143,6 +143,7 @@ export function CounsellingDialog({
                 lockInterest={lockInterest}
                 embedded
                 stacked
+                hidePlaceholders
               />
             </div>
           </div>

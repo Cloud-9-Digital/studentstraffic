@@ -121,6 +121,7 @@ Scholarship pages should:
 - Use accordions or collapsible navigation when a page gets long.
 - Make sure headings, badges, and card elements never overlap.
 - Favor readability and scanning over decorative complexity.
+- Counselling dialogs use persistent field labels without repeating them as placeholders. Keep illustration and title in separate layout space so long university names do not overlap the art.
 
 ## Shared navigation and footer standards
 
