@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-tn-universities-dhanalakshmi-srinivasan-college-of-engineering-and-technology-media-2026-10-23",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-23",
+  "scope": "logo and cover for content migration 0148-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-23; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "universityName": "Dhanalakshmi Srinivasan College of Engineering and Technology",
+      "sourceBatch": "india-tn-affiliated",
+      "migrationId": "0148-india-dhanalakshmi-srinivasan-college-of-engineering-and-technology",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dscet.ac.in/assets/favicon1.png",
+          "sourceType": "official",
+          "sourcePage": "https://dscet.ac.in/",
+          "rightsBasis": "Official DSCET crest served from the college's own domain (dscet.ac.in) and used on its site. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 273,706 bytes, 523x477 px, black line art on a transparent background. Rendered on white and visually confirmed legible: a ring reading 'Dhanalakshmi Srinivasan College of Engineering & Technology' and 'Chennai' around a quartered shield (torch, folded hands, lotus, open book) above a ribbon reading 'Learning for Excellence'. Although the file is named favicon1.png, it is a full-size crest (523x477), not a 16/32 px favicon. Alternative wide colour lock-up (crest plus 'DHANALAKSHMI SRINIVASAN COLLEGE OF ENGINEERING AND TECHNOLOGY (An Autonomous Institution) ECR, MAMALLAPURAM, CHENNAI') at https://dscet.ac.in/assets/images/logo.png (471x100 px, transparent, legible on white) was not chosen because it is only 100 px tall and does not suit square tiles.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-college-of-engineering-and-technology/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dscet.ac.in/assets/dscet-slider.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://dscet.ac.in/",
+          "rightsBasis": "Official institutional photograph used as the homepage banner on the college's own domain (dscet.ac.in). No open licence; used only to depict the institution. Checked 2026-10-23: HTTP 200, image/jpeg, 228,506 bytes, 1920x800 px (landscape). Visually confirmed as a single real elevated photograph, not a composite or AI image: the arched entrance gate reading 'Dhanalakshmi Srinivasan College of Engineering and Technology', a basketball court, the glass-fronted four-storey main block with the college name board, further blocks and hostels behind, and a row of yellow college buses; no text overlay or watermark; no identifiable people. Rejected: assets/images/slider/4.jpg (graduation-day stage with identifiable people), assets/images/about/1.jpg (portrait of the chairman), assets/images/25.png (generic '25 years' badge).",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-college-of-engineering-and-technology/cover",
+          "altText": "Elevated view of the entrance arch, basketball court and main academic block of Dhanalakshmi Srinivasan College of Engineering and Technology on East Coast Road, Mamallapuram"
+        }
+      ]
+    }
+  ]
+}
