@@ -207,7 +207,16 @@ export function getProgramFeeLines(
     label: feeAudienceLabel(fee.audience, countrySlug),
     amount: formatCurrencyAmount(fee.annualAmount, fee.currency),
   }));
-  return [primary, ...extra];
+  const lines = [
+    { ...primary, audience: offering.feeStatus === "on_request" ? undefined : offering.feeAudience },
+    ...extra.map((line, index) => ({ ...line, audience: offering.additionalFees?.[index]?.audience })),
+  ];
+  // Same order on every card: Indian/domestic fee first, then one-fee-for-all, then NRI & international.
+  const rank = (audience?: FeeAudience) => (audience === "domestic" ? 0 : audience === "all" ? 1 : audience === "international" ? 2 : 3);
+  return lines
+    .map((line, index) => ({ line, index }))
+    .sort((a, b) => rank(a.line.audience) - rank(b.line.audience) || a.index - b.index)
+    .map(({ line }) => ({ label: line.label, amount: line.amount }));
 }
 
 export function hasRenderableProgramLivingFee(
