@@ -410,7 +410,9 @@ Reject the complete payload when any of these is true:
 - a programme has an eligibility restriction that is omitted, softened or contradicted by the page;
 - country metadata targets one program;
 - content exceeds the hard page or field limit;
-- the copy contains guarantees, invented rankings, placeholder text or generic filler.
+- the copy contains guarantees, invented rankings, placeholder text or generic filler;
+- public narrative repeatedly reports what source pages say instead of stating supported facts and
+  their practical limits directly (see `docs/content-framework.md`, "Public voice and private evidence").
 
 ### 9. Use the validation framework
 

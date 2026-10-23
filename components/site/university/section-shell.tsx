@@ -52,11 +52,7 @@ export function UniversitySectionShell({
       : null
     : initialSection === "student-life"
       ? (
-          <UniversityStudentLifeSection
-            university={university}
-            country={country}
-            primaryProgram={primaryProgram}
-          />
+          <UniversityStudentLifeSection university={university} />
         )
       : initialSection === "hostel"
         ? <UniversityHostelDetailSection university={university} programs={programs} />

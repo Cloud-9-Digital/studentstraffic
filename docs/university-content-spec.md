@@ -116,11 +116,19 @@ to reach a minimum and never repeat facts already stated elsewhere.
 | Campus environment | `campusLifestyle` | 700 characters |
 | Accommodation | `hostelOverview` | 800 characters |
 | Daily living support | `dietarySupport` | 550 characters |
-| Safety and support | `safetyOverview` + `studentSupport` | 450 characters each |
+| Safety | `safetyOverview` | 450 characters |
+| Student support | `studentSupport` | 450 characters |
 
 Every sentence must add a verifiable fact, useful cost, named facility/service, restriction or
 practical action. Remove promotional adjectives, generic reassurance, repeated institutional history
 and filler transitions. A short accurate section is preferable to a complete-looking generic one.
+
+Write each student-living card for the student, not as a report on the sources. Lead with the
+facility, cost, option, contact or limitation itself; keep "the website says" and "the booklet
+lists" in the private evidence record. Retain the year or qualifier when a figure is from a past
+cycle, and give one clear action only where the missing detail affects a decision. Before publishing,
+read the cards in sequence: remove repeated source attribution, repeated requests to check with the
+college, and sentences that merely explain what the section covers.
 
 Each section may carry one optional image under `mediaAttribution.studentLife`. Allowed keys are
 `campusEnvironment`, `accommodation`, `dailyLiving` and `safetySupport`. Each image record must include

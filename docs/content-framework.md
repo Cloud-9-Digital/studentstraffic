@@ -34,6 +34,17 @@ the visitor to verify the work themselves.
 Public pages are Students Traffic guidance. They do not display source URLs, citations, research
 notes, confidence labels or instructions to "verify" information elsewhere.
 
+Write the supported fact directly. Do not narrate the research process in public copy with phrases
+such as "the college website says", "the booklet lists", "according to the page" or "the source
+does not confirm". Put the source and its exact wording in private evidence. Keep a date, authority
+or scope in the public sentence when the reader needs it to understand a time-sensitive fee,
+admission rule or recognition claim.
+
+For example, replace "The 2026 college booklet lists separate hostels for men and women" with
+"Separate men’s and women’s hostels are available." If a cost is from a past cycle, say "The
+published 2026 charge was …" and state that current charges need confirmation. Do not turn every
+sentence into a hedge or a request for the visitor to repeat our research.
+
 Evidence stays private in the research bundle and provenance record. Every material claim must have:
 
 - the exact claim and the public field it supports;
@@ -78,15 +89,16 @@ Intake and teaching language are programme-level decision facts. They are also f
 they must never be created from free-text prose, a country-wide default or an inference made by the
 renderer.
 
-- Store a source-backed delivery explanation in `medium`, including verified phase changes or local
-  clinical-language requirements where relevant.
+- Store only language names in `medium`. Keep verified phase changes or local clinical-language
+  requirements in `mediumNote` or `teachingPhases`.
 - Store the separate `instructionLanguages` array using only the controlled codes in
   `lib/catalogue-facets.ts` (for example `english`, `russian`). Include a language only when the
   official programme source confirms it is used for instruction; an English-test requirement or an
   unconfirmed English track is not an English-taught programme.
-- Store the source wording in `intakeMonths` and the matching controlled calendar values in
-  `intakeCodes` (for example `september`, `january`). Never use `Fall`, `Spring`, `Sept intake`, a
-  deadline, or a country-level assumption as a filter value.
+- Store only calendar month names in `intakeMonths`, matching the controlled `intakeCodes`
+  (for example `September` and `september`). Put cycle dates and uncertainty in
+  `admissionsContent.deadlinesNote`. Never use `Fall`, `Spring`, `Sept intake`, a deadline, or a
+  country-level assumption as a filter or display value.
 - A programme with uncertain language or intake may remain useful on its public page when its
   limitation is stated precisely, but it is excluded from the corresponding finder facet until the
   fact is verified. Do not invent a value merely to make it filterable.

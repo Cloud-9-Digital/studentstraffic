@@ -1,132 +1,129 @@
 import Image from "next/image";
 import {
   BedDouble,
+  HeartHandshake,
   ShieldCheck,
-  UtensilsCrossed,
   Trees,
+  UtensilsCrossed,
 } from "lucide-react";
 
-import type { Country, FinderProgram, University } from "@/lib/data/types";
+import type { University } from "@/lib/data/types";
 
 import { SectionLabel } from "./shared";
 
-type Cell = {
+type LivingCard = {
+  id: string;
   icon: React.ReactNode;
   label: string;
   body: string;
-  index: number;
   image?: {
     url: string;
     altText: string;
   };
 };
 
-function LifeCell({ icon, label, body, index, image }: Cell) {
-  const sectionId = label.toLowerCase().replaceAll(" ", "-");
-  const imageOnLeft = index % 2 === 1;
-  const sectionBackground = index % 2 === 0 ? "bg-card" : "bg-primary/[0.035]";
-
+function StudentLivingCard({ id, icon, label, body, image }: LivingCard) {
   return (
     <section
-      id={sectionId}
-      className={`scroll-mt-24 overflow-hidden rounded-2xl border border-border ${sectionBackground}`}
+      id={id}
+      className="h-full scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-card"
     >
-      <div className={image ? "grid lg:grid-cols-2 lg:items-stretch" : undefined}>
-        {image ? (
-          <div
-            className={`min-h-52 border-b border-border bg-muted/45 lg:min-h-80 lg:border-b-0 ${
-              imageOnLeft ? "lg:border-r" : "lg:order-2 lg:border-l"
-            }`}
-          >
-            <div className="relative h-full min-h-52 lg:min-h-80">
-              <Image
-                src={image.url}
-                alt={image.altText}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
-        ) : null}
-
-        <div className={`flex flex-col justify-center px-5 py-7 sm:px-8 sm:py-9 ${image ? (imageOnLeft ? "" : "lg:order-1") : "max-w-3xl"}`}>
-          <div className="flex items-center gap-3">
-            <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent [&_svg]:size-4">
-              {icon}
-            </span>
-            <h3 className="font-display text-xl font-semibold text-heading sm:text-2xl">
-              {label}
-            </h3>
-          </div>
-          <p className="mt-5 text-sm leading-7 text-muted-foreground sm:text-base sm:leading-8">
-            {body}
-          </p>
+      {image ? (
+        <div className="relative aspect-[16/9] overflow-hidden bg-muted">
+          <Image
+            src={image.url}
+            alt={image.altText}
+            fill
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            className="object-cover"
+          />
         </div>
+      ) : null}
+      <div className="p-5 sm:p-6">
+        <div className="flex items-center gap-3">
+          <span
+            className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent [&_svg]:size-4"
+            aria-hidden="true"
+          >
+            {icon}
+          </span>
+          <h3 className="font-display text-lg font-semibold text-heading">
+            {label}
+          </h3>
+        </div>
+        <p className="mt-4 break-words text-sm leading-7 text-muted-foreground">
+          {body}
+        </p>
       </div>
     </section>
   );
 }
 
+function cardSpan(index: number, total: number) {
+  const lastOddCard = total % 2 === 1 && index === total - 1;
+  const desktopSpan = total === 5
+    ? index < 2 ? "lg:col-span-3" : "lg:col-span-2"
+    : lastOddCard ? "lg:col-span-6" : "lg:col-span-3";
+  return `${lastOddCard ? "md:col-span-2" : ""} ${desktopSpan}`;
+}
+
 export function UniversityStudentLifeSection({
   university,
-  country,
-  primaryProgram,
 }: {
   university: University;
-  country?: Country;
-  primaryProgram?: FinderProgram;
 }) {
-  const safetyBody = `${university.safetyOverview} ${university.studentSupport}`.trim();
   const studentLifeImages = university.mediaAttribution?.studentLife;
-  const course = primaryProgram?.course.shortName ?? "this program";
-  const countryName = country?.name ?? "the country";
+  const cards: LivingCard[] = [
+    {
+      id: "campus-environment",
+      icon: <Trees />,
+      label: "Campus environment",
+      body: university.campusLifestyle,
+      image: studentLifeImages?.campusEnvironment,
+    },
+    {
+      id: "accommodation",
+      icon: <BedDouble />,
+      label: "Accommodation",
+      body: university.hostelOverview,
+      image: studentLifeImages?.accommodation,
+    },
+    {
+      id: "daily-living-support",
+      icon: <UtensilsCrossed />,
+      label: "Food & daily living",
+      body: university.dietarySupport,
+      image: studentLifeImages?.dailyLiving,
+    },
+    {
+      id: "safety-and-support",
+      icon: <ShieldCheck />,
+      label: "Safety",
+      body: university.safetyOverview,
+      image: studentLifeImages?.safetySupport,
+    },
+    {
+      id: "student-support",
+      icon: <HeartHandshake />,
+      label: "Student support",
+      body: university.studentSupport,
+    },
+  ].filter((card) => card.body.trim().length > 0);
+
+  if (!cards.length) return null;
 
   return (
-    <div id="living" className="deferred-render scroll-mt-24 space-y-6 py-10">
+    <div id="living" className="deferred-render scroll-mt-24 space-y-5 py-10">
       <SectionLabel>Student living</SectionLabel>
-
-      <div className="space-y-3">
-        <h2 className="font-display text-2xl font-semibold text-heading">
-          Student life at {university.name}
-        </h2>
-        <p className="max-w-2xl text-base leading-8 text-muted-foreground">
-          Practical information about day-to-day life while pursuing {course} at{" "}
-          {university.name} in {university.city}, {countryName}. This covers
-          the campus environment, accommodation, daily living and available
-          safety and student-support services.
-        </p>
-      </div>
-
-      <div className="space-y-4">
-        <LifeCell
-          index={0}
-          image={studentLifeImages?.campusEnvironment}
-          icon={<Trees />}
-          label="Campus environment"
-          body={university.campusLifestyle}
-        />
-        <LifeCell
-          index={1}
-          image={studentLifeImages?.accommodation}
-          icon={<BedDouble />}
-          label="Accommodation"
-          body={university.hostelOverview}
-        />
-        <LifeCell
-          index={2}
-          image={studentLifeImages?.dailyLiving}
-          icon={<UtensilsCrossed />}
-          label="Daily living support"
-          body={university.dietarySupport}
-        />
-        <LifeCell
-          index={3}
-          image={studentLifeImages?.safetySupport}
-          icon={<ShieldCheck />}
-          label="Safety and support"
-          body={safetyBody}
-        />
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-6">
+        {cards.map((card, index) => (
+          <div
+            key={card.id}
+            className={cardSpan(index, cards.length)}
+          >
+            <StudentLivingCard {...card} />
+          </div>
+        ))}
       </div>
     </div>
   );

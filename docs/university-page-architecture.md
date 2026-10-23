@@ -120,7 +120,7 @@ Long-form source notes, raw evidence and unused research belong in the research 
 
 ## Shared visual system
 
-Use a **quiet editorial catalogue** direction: warm white canvas, brand ink, restrained brand accent,
+Use a **quiet catalogue** direction: warm white canvas, brand ink, restrained brand accent,
 strong type hierarchy, thin rules, compact data cards and one clear action color. Do not introduce
 new palette colors or use orange text on green backgrounds.
 
@@ -129,7 +129,7 @@ new palette colors or use orange text on green backgrounds.
 - Desktop: one centered reading rail, maximum 1,200px; use a two-column grid only when the second column is genuinely useful.
 - Mobile: single column with 16px side padding; cards become full-width rows; secondary metadata moves below the title.
 - Use section anchors as a horizontal scroll rail on mobile and a compact sticky section index on desktop.
-- Use an editorial hero, not a giant banner: title, one-line positioning statement, 3–5 facts and one CTA.
+- Use a compact hero, not a giant banner: title, one-line positioning statement, 3–5 facts and one CTA.
 - Use progressive disclosure for FAQs, cost details and long source lists.
 - Use sticky mobile CTA only for the page’s primary action, not multiple competing buttons.
 - Use `content-visibility: auto` for long below-fold sections and lazy-load non-critical media.
@@ -187,7 +187,7 @@ Help a student decide whether to shortlist the institution and which programs de
 | 7 | Fees and living costs | Tuition, mandatory fees, housing and monthly living estimate | 240 words + labelled rows | Stacked cost rows with native currency first |
 | 8 | Admissions | Eligibility, subject prerequisites, tests, documents, deadlines and application route | 260 words | 5–7 step timeline |
 | 9 | Visa impact | Only institution/program-specific visa documents or conditions | 120 words | Dated caveat panel; link to country visa section |
-| 10 | Campus and city | Campus, accommodation, transport, food, safety and student support | 300 words total | Topic tabs or accordions; no wall of text |
+| 10 | Student living | Campus, accommodation, food, safety and student support | 300 words total | One section heading; compact topic cards with equal heights within each row, one column on mobile; omit empty topics and filler introductions |
 | 11 | Student outcomes | Only sourced placement, internship, employer or graduate-support facts | 160 words | Proof-point cards; omit if unsupported |
 | 12 | FAQs | Questions that unblock application decisions | 8–10 × 75 words | Accordion with category labels |
 | 13 | Final comparison CTA | Shortlist, compare programs or request guidance | 35 words | Sticky bottom action |
@@ -306,6 +306,9 @@ The validator should reject or hold content when:
 
 Public country, university and program pages should not show citation links, source labels, research
 notes or “sourced from” blocks. The information should read as clear, useful product content.
+Lead with the student-relevant fact rather than a sentence about what a website, booklet or page
+reports. Keep the year or named authority in public copy when a fee, rule or recognition would be
+misleading without that context.
 
 Authority is enforced behind the page:
 

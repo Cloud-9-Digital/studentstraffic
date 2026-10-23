@@ -11,6 +11,10 @@
 > The canonical content research and seeding workflow is
 > [`docs/content-seeding-runbook.md`](./content-seeding-runbook.md). Historical country-specific
 > seed scripts are not templates and should not be used for new content.
+> Public catalogue voice, including direct student-facing facts with private source evidence, is
+> governed by [`docs/content-framework.md`](./content-framework.md). Student-living field and card
+> standards are in [`docs/university-content-spec.md`](./university-content-spec.md) and
+> [`docs/university-page-architecture.md`](./university-page-architecture.md).
 
 Read this before touching university/program data (schema, seed scripts, or the
 research-and-publish pipeline) instead of re-deriving it from source each time.

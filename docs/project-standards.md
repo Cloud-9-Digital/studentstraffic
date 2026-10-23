@@ -39,9 +39,10 @@ For admissions, scholarship, country, and decision-stage pages:
 - Use strong informational content first, then layer in commercial intent naturally.
 - Avoid filler, thin repetition, and generic motivational copy.
 - Keep pages evergreen where possible; avoid baking in years unless the topic is genuinely cycle-dependent and reviewed.
-- When facts are time-sensitive, frame them carefully and encourage verification from official sources instead of implying static permanence.
+- When facts are time-sensitive, show the applicable year or cycle and a specific next step; do not imply an old fee or deadline is current.
 - Do not make the page feel like a detached editorial article whose only job is to publish information.
 - Do not overexpose citations, source mechanics, or update-process language in user-facing copy unless the page truly needs it.
+- State supported facts directly. Keep "the website says", "the booklet lists" and similar source-reporting language in the private research record; preserve public dates or authority names only when they change how a student should use the fact.
 - Avoid sounding like a research portal, newsroom, or encyclopedia even when the underlying work is heavily researched.
 - The content should feel like expert guidance from a company that can actually help the student act on that information.
 - Never publish catalogue counts (decided 2026-10-22): no "N universities", "N programmes", "N colleges"
