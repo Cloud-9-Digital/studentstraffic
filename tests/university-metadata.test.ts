@@ -155,6 +155,20 @@ test("single-stream university surfaces its one course in the title", () => {
   assertBudgets(meta);
 });
 
+test("single-stream engineering college with several courses keeps an institution title", () => {
+  const programs = vitPrograms.filter((entry) => entry.course.stream === "engineering");
+  const meta = buildUniversityMetadata({
+    university: { ...vit, name: "J.P. College of Engineering", city: "Ayikudi" },
+    country: india,
+    programs,
+    section: null,
+  });
+  assert.ok(meta.title.startsWith("J.P. College of Engineering"));
+  assert.ok(!meta.title.includes("B.E./B.Tech"));
+  assert.ok(meta.description.includes("programmes in engineering"));
+  assertBudgets(meta);
+});
+
 test("every university section leads with the university and stays in budget", () => {
   const sections = ["programs", "student-life", "hostel", "faq"] as const;
   const titles = new Set<string>();

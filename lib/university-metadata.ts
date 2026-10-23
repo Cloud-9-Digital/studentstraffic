@@ -414,11 +414,11 @@ export function buildUniversityMetadata(input: {
     };
   }
 
-  // The flagship course only leads the title when the university teaches a
-  // single stream, where it *is* the search intent. A multi-stream university
-  // gets an institution-level title.
+  // A course leads the institution title only when it is the sole published
+  // programme. Colleges with several courses in one stream still need an
+  // institution-level title.
   const focusCourse =
-    flagship && profile.isSingleStream ? flagship.course.shortName : null;
+    flagship && profile.programCount === 1 ? flagship.course.shortName : null;
 
   if (focusCourse) {
     return {

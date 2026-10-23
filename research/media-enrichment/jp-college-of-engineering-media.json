@@ -1,0 +1,34 @@
+{
+  "manifestId": "jp-college-of-engineering-media-2026-10-23",
+  "status": "cover-uploaded-logo-held",
+  "checkedAt": "2026-10-23",
+  "scope": "J.P. College of Engineering, Ayikudi; content migration 0152-india-jp-college-of-engineering",
+  "entries": [
+    {
+      "universitySlug": "jp-college-of-engineering",
+      "universityName": "J.P. College of Engineering",
+      "sourceBatch": "jp-college-of-engineering-20261023",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://jpcoe.ac.in/uploads/slider/slide_2026-03-17_881ddb96.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://jpcoe.ac.in/",
+          "rightsBasis": "Official college homepage photograph used to identify its own Ayikudi campus; no open licence stated. Visually checked: labelled main academic building and courtyard, no watermark. Source returned HTTP 200 image/jpeg, 2765x1843 pixels on 2026-10-23.",
+          "altText": "J.P. College of Engineering main academic building and courtyard in Ayikudi",
+          "proposedPublicId": "studentstraffic/universities/jp-college-of-engineering/campus-main-building-2026",
+          "cloudinaryUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792768081/studentstraffic/universities/jp-college-of-engineering/campus-main-building-2026.jpg",
+          "cloudinaryChecked": "2026-10-23: HTTP 200 image/jpeg"
+        },
+        {
+          "kind": "logo",
+          "status": "hold",
+          "sourceUrl": "https://jpcoe.ac.in/images/College.png",
+          "sourceType": "official",
+          "sourcePage": "https://jpcoe.ac.in/",
+          "rightsBasis": "Official college wordmark inspected on 2026-10-23. The 1166x236 composite includes tiny lower text and an unverified NAAC grade; it would be illegible on the catalogue's logo tile. Hold until a clean, high-resolution emblem or approved wordmark is available. Do not substitute a favicon."
+        }
+      ]
+    }
+  ]
+}
