@@ -41,6 +41,21 @@ function levelRank(level: string) {
   return rank === -1 ? programmeLevels.length : rank;
 }
 
+function programTitle(program: FinderProgram) {
+  const suffix = `, ${program.university.name}`;
+  return program.offering.title.endsWith(suffix)
+    ? program.offering.title.slice(0, -suffix.length)
+    : program.offering.title;
+}
+
+function programFees(program: FinderProgram) {
+  return getProgramFeeLines(program.offering, program.country.slug, "On request")
+    .map((fee) => ({
+      ...fee,
+      label: fee.label === "Fee plan" ? "Tuition" : fee.label,
+    }));
+}
+
 function ProgramDirectoryList({ programs }: { programs: FinderProgram[] }) {
   // Only the fields the list shows are sent to the client, not the full university/course records.
   const rows: ProgramDirectoryRow[] = programs
@@ -51,13 +66,10 @@ function ProgramDirectoryList({ programs }: { programs: FinderProgram[] }) {
         row: {
           slug: program.offering.slug,
           href: getUniversityProgramHref(program.offering.slug),
-          // Offering titles often end with ", <University name>", which repeats on its own page.
-          title: program.offering.title.endsWith(`, ${program.university.name}`)
-            ? program.offering.title.slice(0, -(program.university.name.length + 2))
-            : program.offering.title,
+          title: programTitle(program),
           level,
           levelLabel: programmeLevelLabels[level as ProgrammeLevel] ?? "Other",
-          fees: getProgramFeeLines(program.offering, program.country.slug),
+          fees: programFees(program),
           duration: formatProgramDuration(program.offering.durationYears),
         },
       };
@@ -87,9 +99,6 @@ function ProgramOfferingsTable({
 }) {
   return (
     <div className="space-y-4">
-      <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
-        Open a programme profile for eligibility, tuition, curriculum and application planning.
-      </p>
       <div className="grid gap-4 md:grid-cols-2">
         {programs.map((program) => {
           const medium = formatProgramMedium(program.offering.medium, program.country.slug);
@@ -101,7 +110,7 @@ function ProgramOfferingsTable({
           >
             <div className="flex items-start justify-between gap-3">
               <p className="min-w-0 text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
-                {program.offering.title}
+                {programTitle(program)}
               </p>
               <span className="mt-0.5 flex shrink-0 items-center gap-1 text-xs font-semibold text-primary">
                 Details
@@ -109,7 +118,7 @@ function ProgramOfferingsTable({
               </span>
             </div>
             <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-border pt-4">
-              {getProgramFeeLines(program.offering, program.country.slug).map((fee) => (
+              {programFees(program).map((fee) => (
                 <ProgramFact key={fee.label} label={fee.label} value={fee.amount} />
               ))}
               <ProgramFact label="Duration" value={formatProgramDuration(program.offering.durationYears)} />
