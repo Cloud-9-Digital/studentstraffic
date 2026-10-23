@@ -65,7 +65,7 @@ export function ProgramList({
       <View style={s.list}>
         {rows.map((program, index) => {
           const open = program.slug === selectedSlug;
-          const meta = [program.levelLabel, program.durationYears ? `${program.durationYears} years` : null, program.annualFeeLabel]
+          const meta = [program.levelLabel, program.durationYears ? `${program.durationYears} years` : null, program.feeLines ? null : program.annualFeeLabel]
             .filter(Boolean)
             .join(" · ");
           return (
@@ -73,15 +73,30 @@ export function ProgramList({
               <Pressable
                 accessibilityRole="button"
                 accessibilityState={{ expanded: open }}
-                accessibilityLabel={`${shortTitle(program.title)}. ${meta}`}
+                accessibilityLabel={`${shortTitle(program.title)}. ${meta}${program.feeLines?.length ? `. ${program.feeLines.map(fee => `${fee.label} ${fee.amount} a year`).join(", ")}` : ""}`}
                 onPress={() => { onSelect(open ? null : program.slug); Haptics.selectionAsync(); }}
                 style={s.rowHead}
               >
-                <View style={{ flex: 1 }}>
-                  <Text style={s.title} numberOfLines={2}>{shortTitle(program.title)}</Text>
-                  {meta ? <Text style={s.meta}>{meta}</Text> : null}
+                <View style={s.rowTop}>
+                  <View style={{ flex: 1 }}>
+                    <Text style={s.title} numberOfLines={2}>{shortTitle(program.title)}</Text>
+                    {meta ? <Text style={s.meta}>{meta}</Text> : null}
+                  </View>
+                  <Ionicons name={open ? "chevron-up" : "chevron-down"} size={18} color={colors.muted} style={{ marginTop: 2 }} />
                 </View>
-                <Ionicons name={open ? "chevron-up" : "chevron-down"} size={18} color={colors.muted} />
+                {program.feeLines?.length ? (
+                    <View style={s.fees}>
+                      {program.feeLines.map((fee, feeIndex) => (
+                        <View key={fee.label} style={[s.fee, feeIndex > 0 && s.feeDivider]}>
+                          <Text style={s.feeLabel} numberOfLines={1}>{fee.label}</Text>
+                          <Text style={s.feeAmount}>
+                            {fee.amount}
+                            {/\d/.test(fee.amount) ? <Text style={s.feePer}> / year</Text> : null}
+                          </Text>
+                        </View>
+                      ))}
+                    </View>
+                  ) : null}
               </Pressable>
               {open ? (
                 <View style={s.facts}>
@@ -124,9 +139,18 @@ const s = StyleSheet.create({
   list: { marginTop: 12 },
   row: { paddingVertical: 4 },
   rowDivider: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line },
-  rowHead: { minHeight: 52, flexDirection: "row", alignItems: "center", gap: 10, paddingVertical: 8 },
+  rowHead: { minHeight: 52, paddingVertical: 8 },
+  // Title and chevron share the top line; the fee panel below uses the full row width.
+  rowTop: { flexDirection: "row", alignItems: "flex-start", gap: 10 },
   title: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 14, lineHeight: 20, color: colors.ink },
   meta: { marginTop: 2, fontFamily: "PlusJakartaSans-Regular", fontSize: 12, lineHeight: 18, color: colors.muted },
+  // Fees side by side (Indian students | NRI & international), matching the website card.
+  fees: { marginTop: 8, flexDirection: "row", borderRadius: 10, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.line, backgroundColor: colors.background },
+  fee: { flex: 1, paddingHorizontal: 10, paddingVertical: 7 },
+  feeDivider: { borderLeftWidth: StyleSheet.hairlineWidth, borderLeftColor: colors.line },
+  feeLabel: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: colors.muted },
+  feeAmount: { marginTop: 1, fontFamily: "PlusJakartaSans-SemiBold", fontSize: 13, color: colors.ink },
+  feePer: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: colors.muted },
   facts: { marginBottom: 8, borderRadius: 12, backgroundColor: colors.background, paddingHorizontal: 12, paddingVertical: 4 },
   fact: { minHeight: 40, flexDirection: "row", alignItems: "center", gap: 8 },
   factLabel: { flex: 1, fontFamily: "PlusJakartaSans-Regular", fontSize: 13, color: colors.muted },

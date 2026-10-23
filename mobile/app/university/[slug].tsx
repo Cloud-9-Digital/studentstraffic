@@ -480,7 +480,7 @@ export default function UniversityDetailScreen() {
         </View>
       </Animated.ScrollView>
 
-      {programPicker ? <SearchablePicker picker={{ title: "Choose a program", selected: selectedProgram ?? "", options: programs.map(program => ({ label: program.title, value: program.slug })), onSelect: setSelectedProgram }} onClose={() => setProgramPicker(false)} /> : null}
+      {programPicker ? <SearchablePicker picker={{ title: "Choose a program", selected: selectedProgram ?? "", options: programs.map(program => ({ label: program.title.endsWith(`, ${university.name}`) ? program.title.slice(0, -(university.name.length + 2)) : program.title, value: program.slug })), onSelect: setSelectedProgram }} onClose={() => setProgramPicker(false)} /> : null}
       {/* ── Sticky bottom CTA bar ── */}
       <View style={[s.bottomBar, { paddingBottom: insets.bottom + 12 }]}>
         {Platform.OS === "ios" && (

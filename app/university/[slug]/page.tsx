@@ -296,6 +296,7 @@ export default async function UniversityDetailPage({
           {primaryProgram ? (
             <UniversitySnapshotSection
               primaryProgram={primaryProgram}
+              programs={programs}
               university={university}
               country={country}
             />

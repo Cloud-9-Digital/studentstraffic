@@ -6,6 +6,8 @@ import {
   Clock,
   GraduationCap,
   Languages,
+  Landmark,
+  Layers,
   MapPinned,
   Target,
 } from "lucide-react";
@@ -18,20 +20,46 @@ import {
   getProgramAnnualFeeLabel,
 } from "@/lib/utils";
 
+import { programmeLevelLabels, programmeLevels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
+
 import { SectionLabel } from "./shared";
 import { cn } from "@/lib/utils";
 
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// For a university with several programmes, one programme's fee or duration would misrepresent the
+// rest, so the snapshot shows facts that hold for the whole university instead.
+function universityWideStats(programs: FinderProgram[], university: University, country: Country) {
+  const levels = programmeLevels
+    .filter((level) => programs.some((program) => program.course.level === level))
+    .map((level) => programmeLevelLabels[level as ProgrammeLevel]);
+  const mediums = [...new Set(programs.map((program) => formatProgramMedium(program.offering.medium, country.slug)).filter(Boolean))];
+  const intakes = MONTHS.filter((month) =>
+    programs.some((program) => program.offering.intakeMonths.some((intake) => intake.toLowerCase().startsWith(month.toLowerCase()))),
+  );
+  return [
+    { icon: <MapPinned className="size-3.5" />, label: "Location", value: `${university.city}, ${country.name}` },
+    { icon: <GraduationCap className="size-3.5" />, label: "University type", value: university.type },
+    ...(university.establishedYear ? [{ icon: <Landmark className="size-3.5" />, label: "Established", value: String(university.establishedYear) }] : []),
+    ...(levels.length ? [{ icon: <Layers className="size-3.5" />, label: "Study levels", value: levels.join(", ") }] : []),
+    ...(mediums.length ? [{ icon: <Languages className="size-3.5" />, label: "Teaching language", value: mediums.join(", ") }] : []),
+    ...(intakes.length ? [{ icon: <CalendarDays className="size-3.5" />, label: "Intakes", value: intakes.join(", ") }] : []),
+  ];
+}
+
 export function UniversitySnapshotSection({
   primaryProgram,
+  programs,
   university,
   country,
 }: {
   primaryProgram: FinderProgram;
+  programs: FinderProgram[];
   university: University;
   country: Country;
 }) {
   const medium = formatProgramMedium(primaryProgram.offering.medium, country.slug);
-  const stats = [
+  const stats = programs.length > 1 ? universityWideStats(programs, university, country) : [
     {
       icon: <CircleDollarSign className="size-3.5" />,
       label: getProgramAnnualFeeLabel(primaryProgram.offering),

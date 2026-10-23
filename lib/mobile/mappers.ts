@@ -91,6 +91,8 @@ export function mapUniversityDetail(
       // "₹50,000" when the fee's audience is unknown; "Indian students ₹1,95,000 · NRI & international $4,000"
       // when the record says who each fee is for.
       annualFeeLabel: formatMobileFeeLabel(offering, university.countrySlug),
+      // Each fee on its own, labelled by audience, in the same order as the website card.
+      feeLines: getProgramFeeLines(offering, university.countrySlug, "Fee on request"),
       courseSlug: offering.courseSlug,
       title: offering.title,
       durationYears: offering.durationYears,

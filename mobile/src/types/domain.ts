@@ -48,6 +48,8 @@ export type Offering = {
   levelLabel?: string | null;
   /** Pre-formatted annual fee, matching the website (official currency, or "Fee on request"). */
   annualFeeLabel?: string;
+  /** Each published fee with its audience label; absent from older API responses. */
+  feeLines?: { label: string; amount: string }[];
   durationYears: number;
   annualTuitionUsd: number;
   totalTuitionUsd: number;

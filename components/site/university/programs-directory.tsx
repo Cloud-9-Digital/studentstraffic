@@ -116,10 +116,11 @@ export function ProgramsDirectory({
                 </div>
                 {/* One line per published fee, so the Indian-student and NRI/international rates read
                     side by side instead of as one ambiguous figure. */}
-                <dl className="mt-auto divide-y divide-border/70 rounded-xl border border-border/70 bg-muted/30 px-3">
+                {/* Stacked on phones; one row on desktop so both fees read side by side. */}
+                <dl className="mt-auto flex flex-col divide-y divide-border/70 rounded-xl border border-border/70 bg-muted/30 md:flex-row md:divide-x md:divide-y-0">
                   {row.fees.map((fee) => (
-                    <div key={fee.label} className="flex items-baseline justify-between gap-3 py-2">
-                      <dt className="text-xs text-muted-foreground">{fee.label}</dt>
+                    <div key={fee.label} className="min-w-0 flex-1 px-3 py-2">
+                      <dt className="truncate text-[0.7rem] text-muted-foreground">{fee.label}</dt>
                       <dd className="text-sm font-semibold text-foreground">
                         {fee.amount}
                         {/\d/.test(fee.amount) ? (
