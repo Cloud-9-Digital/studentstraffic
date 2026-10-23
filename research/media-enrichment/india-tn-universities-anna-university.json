@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-tn-universities-anna-university-media-2026-10-23",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-23",
+  "scope": "logo and cover for content migration 0149-india-anna-university",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-23; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "anna-university",
+      "universityName": "Anna University",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0149-india-anna-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.annauniv.edu/images/ANNAUNIVERSITYLOGO.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.annauniv.edu/",
+          "rightsBasis": "Official Anna University emblem and wordmark served from the university's own domain and used in its site header. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 112,002 bytes, 631x78 px, RGBA. Rendered on white and visually confirmed legible: the circular emblem ('Anna University', 'Progress through knowledge') beside 'Anna University, Chennai' in Tamil and English in dark blue. It is a wide lock-up (about 8:1); for a square tile, crop to the emblem on the left or pad with white.",
+          "proposedPublicId": "studentstraffic/universities/anna-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.annauniv.edu/images/main-slider/slide1.jpeg",
+          "sourceType": "official",
+          "sourcePage": "https://www.annauniv.edu/",
+          "rightsBasis": "Official homepage slider photograph on the university's own domain. No open licence; used only to depict the institution. Checked 2026-10-23: HTTP 200, image/jpeg, 148,663 bytes, 1280x548 px (landscape). Visually confirmed as a single real aerial photograph, not a composite or AI image: the red-brick, domed main building of the College of Engineering Guindy surrounded by trees, with the front lawn and road; no text overlay; no identifiable people. Rejected: images/ceg_campus.jpeg (350x250 px, too small).",
+          "proposedPublicId": "studentstraffic/universities/anna-university/cover",
+          "altText": "Aerial view of the domed red-brick main building of the College of Engineering Guindy, Anna University, Chennai"
+        }
+      ]
+    }
+  ]
+}
