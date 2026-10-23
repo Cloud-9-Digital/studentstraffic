@@ -79,6 +79,7 @@ export type LeadFormProps = {
   stacked?: boolean;
   /** When true, hides input placeholder text (labels still show the field purpose). */
   hidePlaceholders?: boolean;
+  floatingCountryPicker?: boolean;
   /**
    * When true, the email field is not rendered at all. Email is optional
    * server-side, so the lead still submits. Used on paid-traffic landing pages
@@ -102,7 +103,7 @@ export type LeadFormProps = {
   /**
    * When true, locks the phone field to +91 (India) and hides its country
    * picker. The lead's country of residence is then India too, so the
-   * "Country you live in" field is not shown. Used on India-only campaigns.
+   * "Country" field is not shown. Used on India-only campaigns.
    */
   lockPhoneToIndia?: boolean;
   className?: string;
@@ -133,6 +134,7 @@ export function LeadForm({
   embedded = false,
   stacked = false,
   hidePlaceholders = false,
+  floatingCountryPicker = false,
   hideEmail = false,
   showNeetCategory = false,
   lockInterest = false,
@@ -182,7 +184,6 @@ export function LeadForm({
   // no matter how long they actually spent on the form.
   useEffect(() => {
     armStartedAt();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // The geo lookup waits for a real interaction (unlike armStartedAt, which
@@ -245,6 +246,8 @@ export function LeadForm({
         id={`${fieldPrefix}-residence`}
         name="residenceCountry"
         placeholder={hidePlaceholders ? "" : undefined}
+        floating={floatingCountryPicker}
+        hideSearchPlaceholder={hidePlaceholders}
         value={residence.country}
         onChange={(code) => {
           residence.setCountry(code);

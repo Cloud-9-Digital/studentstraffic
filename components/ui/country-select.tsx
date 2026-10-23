@@ -20,6 +20,8 @@ type CountrySelectProps = {
   placeholder?: string;
   className?: string;
   invalid?: boolean;
+  floating?: boolean;
+  hideSearchPlaceholder?: boolean;
 };
 
 function normalize(text: string) {
@@ -37,9 +39,8 @@ const SEARCH_INDEX = RESIDENCE_COUNTRIES.map(([code, name]) => ({
 }));
 
 /**
- * Searchable country picker. The list opens inline under the trigger rather
- * than in a floating popover, so it is never clipped or scroll-locked inside
- * the counselling dialogs and sheets these forms live in.
+ * Searchable country picker. Inline mode remains available for embedded forms;
+ * floating mode keeps a modal's form rows from expanding when the list opens.
  */
 export function CountrySelect({
   id,
@@ -49,6 +50,8 @@ export function CountrySelect({
   placeholder = "Select country",
   className,
   invalid = false,
+  floating = false,
+  hideSearchPlaceholder = false,
 }: CountrySelectProps) {
   const listId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -152,7 +155,7 @@ export function CountrySelect({
       <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
 
       {open ? (
-        <div className="mt-1.5 rounded-xl border border-border bg-card shadow-lg">
+        <div className={cn("rounded-xl border border-border bg-card shadow-lg", floating ? "absolute inset-x-0 top-full z-30 mt-1.5" : "mt-1.5")}>
           <div className="flex items-center gap-2 border-b border-border px-3">
             <Search className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
             <input
@@ -164,7 +167,7 @@ export function CountrySelect({
                 setActiveIndex(0);
               }}
               onKeyDown={onSearchKeyDown}
-              placeholder="Search country"
+              placeholder={hideSearchPlaceholder ? undefined : "Search country"}
               aria-label="Search country"
               aria-controls={listId}
               aria-activedescendant={
@@ -179,7 +182,7 @@ export function CountrySelect({
             id={listId}
             role="listbox"
             aria-label="Countries"
-            className="max-h-56 overflow-y-auto overscroll-contain py-1"
+            className={cn("overflow-y-auto overscroll-contain py-1", floating ? "max-h-28" : "max-h-56")}
           >
             {matches.length === 0 ? (
               <li className="px-3 py-2 text-sm text-muted-foreground">No country found</li>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useId, useState } from "react";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Dialog } from "radix-ui";
 import { X } from "lucide-react";
@@ -92,10 +91,10 @@ export function CounsellingDialog({
     <Dialog.Root open={open} onOpenChange={setOpen}>
       {trigger}
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
+        <Dialog.Overlay className="fixed inset-0 z-50 bg-[#092c28]/55 backdrop-blur-[2px] data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
         <Dialog.Content
           id={contentId}
-          className="fixed left-1/2 top-1/2 z-50 max-h-[min(92vh,820px)] w-[calc(100%-1.5rem)] max-w-3xl -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-[1.75rem] border border-primary/15 bg-background shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200"
+          className="fixed inset-y-0 right-0 z-50 h-dvh w-full max-w-[36rem] overflow-y-auto bg-background shadow-2xl outline-none data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right data-[state=open]:animate-in data-[state=open]:slide-in-from-right duration-300 sm:border-l sm:border-primary/10"
           onOpenAutoFocus={(event) => {
             // Radix auto-focuses the first form field on open by default, which
             // arms the form's anti-bot "startedAt" timer before the user has
@@ -105,47 +104,38 @@ export function CounsellingDialog({
             event.preventDefault();
           }}
         >
-          <Dialog.Close className="absolute right-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-border/70 bg-background/90 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+          <Dialog.Close className="absolute right-5 top-5 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:right-8 sm:top-8">
             <X className="size-4" />
             <span className="sr-only">Close</span>
           </Dialog.Close>
 
-          <div className="grid md:grid-cols-[0.78fr_1.22fr]">
-            <div className="flex h-64 flex-col overflow-hidden bg-gradient-to-br from-primary via-primary to-accent p-5 text-white sm:h-72 sm:p-8 md:h-auto md:min-h-0">
-              <Dialog.Title className="max-w-[18ch] shrink-0 font-display text-2xl font-semibold leading-tight tracking-tight text-white sm:text-3xl">
-                {title}
-              </Dialog.Title>
-              <Dialog.Description className="sr-only">
-                {description}
-              </Dialog.Description>
-
-              <div className="pointer-events-none mt-3 flex min-h-0 flex-1 items-end justify-center">
-                <Image
-                  src="/images/counselling/study-abroad-enquiry-illustration.png"
-                  alt="Student preparing to study abroad"
-                  width={1085}
-                  height={1450}
-                  sizes="(max-width: 767px) 15rem, 20rem"
-                  className="h-full max-h-[15rem] w-auto max-w-full object-contain object-bottom"
-                />
-              </div>
+          <div className="bg-primary px-6 pb-8 pt-7 pr-20 text-white sm:px-10 sm:pb-9 sm:pt-9 sm:pr-20">
+            <div className="mb-5 flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-white/70 uppercase">
+              <span className="h-0.5 w-6 rounded-full bg-[#ef9a62]" aria-hidden="true" />
+              Students Traffic
             </div>
+            <Dialog.Title className="max-w-[22ch] font-display text-[2rem] font-semibold leading-[1.12] tracking-tight text-white sm:text-[2.5rem]">
+              {title}
+            </Dialog.Title>
+            <Dialog.Description className="mt-4 max-w-[48ch] text-[0.95rem] leading-6 text-white/75">
+              {description}
+            </Dialog.Description>
+          </div>
 
-            <div className="border-t border-border p-6 sm:p-8 md:border-l md:border-t-0">
-              <DialogLeadForm
-                key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}:${universitySlug ?? ""}`}
-                ctaVariant={ctaVariant}
-                submitLabel={submitLabel}
-                countrySlug={countrySlug}
-                courseSlug={courseSlug}
-                universitySlug={universitySlug}
-                notes={notes}
-                lockInterest={lockInterest}
-                embedded
-                stacked
-                hidePlaceholders
-              />
-            </div>
+          <div className="px-6 py-7 sm:px-10 sm:py-9">
+            <DialogLeadForm
+              key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}:${universitySlug ?? ""}`}
+              ctaVariant={ctaVariant}
+              submitLabel={submitLabel}
+              countrySlug={countrySlug}
+              courseSlug={courseSlug}
+              universitySlug={universitySlug}
+              notes={notes}
+              lockInterest={lockInterest}
+              embedded
+              hidePlaceholders
+              floatingCountryPicker
+            />
           </div>
         </Dialog.Content>
       </Dialog.Portal>
