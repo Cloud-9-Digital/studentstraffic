@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-tn-universities-university-of-madras-media-2026-10-23",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-23",
+  "scope": "logo and cover for content migration 0150-india-university-of-madras",
+  "rules": [
+    "This manifest permits neither direct database writes nor automatic Cloudinary uploads.",
+    "Every sourceUrl is a direct image URL verified HTTP 200 with an image/* content-type on 2026-10-23; re-verify before upload.",
+    "Only a verified Cloudinary URL may be applied to the catalogue; hold entries are excluded."
+  ],
+  "entries": [
+    {
+      "universitySlug": "university-of-madras",
+      "universityName": "University of Madras",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0150-india-university-of-madras",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://egovernance.unom.ac.in/CBCS2627/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://egovernance.unom.ac.in/CBCS2627/",
+          "rightsBasis": "Official University of Madras lock-up served from the University's own e-governance domain (egovernance.unom.ac.in) on its 2026-27 admissions portal. No open licence; used only to identify the institution. Checked 2026-10-23: HTTP 200, image/png, 27,676 bytes, 420x100 px, transparent background. Viewed on white and legible: the University crest (shield with elephant, lotus and motto ribbon) beside 'சென்னைப் பல்கலைக்கழகம்', 'UNIVERSITY OF MADRAS' in dark blue and 'Estd. 1857, State University'. Rejected: https://egovernance.unom.ac.in/logo.PNG (803x183) because it carries a NAAC A++ seal that could not be verified on NAAC's own list; https://egovernance.unom.ac.in/univ.png is a 16x16 favicon. Wide format (100 px tall); a square crest crop would suit square tiles better.",
+          "proposedPublicId": "studentstraffic/universities/university-of-madras/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Madras_University_Senate_House.jpg/1920px-Madras_University_Senate_House.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Madras_University_Senate_House.jpg",
+          "rightsBasis": "Wikimedia Commons, 'Madras University Senate House.jpg' by Jonas Buchholz (Jbuchholz), 7 September 2011, licensed CC BY-SA 3.0; attribution and share-alike required. Checked 2026-10-23: HTTP 200, image/jpeg, 794,091 bytes, 1920x1280 px rendition of a 3810x2540 original. Visually confirmed as a single real photograph, not a composite or AI image: the red-brick Indo-Saracenic Senate House at Chepauk with its domed towers behind lawns and trees, a statue on the right; no text overlay; no identifiable people. Rejected: https://egovernance.unom.ac.in/Building.png (an AI-generated composite of invented towers with a signboard), 'Senate House University of Madras Chennai India.jpg' (taken through a vehicle windscreen with glare and identifiable passers-by).",
+          "proposedPublicId": "studentstraffic/universities/university-of-madras/cover",
+          "altText": "The red-brick Senate House of the University of Madras at Chepauk, Chennai, with domed towers behind lawns and trees"
+        }
+      ]
+    }
+  ]
+}
