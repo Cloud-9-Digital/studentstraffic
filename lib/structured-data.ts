@@ -326,6 +326,11 @@ export function getOrganizationStructuredData() {
       },
     ],
     description: siteConfig.description,
+    parentOrganization: {
+      "@type": "Organization",
+      name: siteConfig.operator,
+    },
+    sameAs: [siteConfig.playStoreUrl, siteConfig.appStoreUrl].filter(Boolean),
   };
 }
 

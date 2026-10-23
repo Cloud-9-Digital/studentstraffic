@@ -115,20 +115,22 @@ export function SiteFooter() {
                   className="h-10 w-auto"
                 />
               </a>
-              <a
-                href={siteConfig.appStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block transition-opacity hover:opacity-85"
-              >
-                <Image
-                  src="/images/badges/app-store-badge.png"
-                  alt="Download on the App Store"
-                  width={360}
-                  height={120}
-                  className="h-10 w-auto"
-                />
-              </a>
+              {siteConfig.appStoreUrl ? (
+                <a
+                  href={siteConfig.appStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block transition-opacity hover:opacity-85"
+                >
+                  <Image
+                    src="/images/badges/app-store-badge.png"
+                    alt="Download on the App Store"
+                    width={360}
+                    height={120}
+                    className="h-10 w-auto"
+                  />
+                </a>
+              ) : null}
             </div>
           </div>
 
@@ -260,7 +262,7 @@ export function SiteFooter() {
       <div className="border-t border-white/8">
         <div className="container-shell flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-white/50">
-            © {siteConfig.copyrightYear} Students Traffic, operated by Cloud 9 Digital. All rights reserved.
+            © {siteConfig.copyrightYear} Students Traffic, operated by {siteConfig.operator}. All rights reserved.
           </p>
           <div className="flex gap-5 text-xs text-white/50">
             <Link href="/privacy" className="transition-colors hover:text-white/80">
