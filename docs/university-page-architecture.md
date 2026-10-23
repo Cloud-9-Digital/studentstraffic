@@ -187,7 +187,7 @@ Help a student decide whether to shortlist the institution and which programs de
 | 7 | Fees and living costs | Tuition, mandatory fees, housing and monthly living estimate | 240 words + labelled rows | Stacked cost rows with native currency first |
 | 8 | Admissions | Eligibility, subject prerequisites, tests, documents, deadlines and application route | 260 words | 5–7 step timeline |
 | 9 | Visa impact | Only institution/program-specific visa documents or conditions | 120 words | Dated caveat panel; link to country visa section |
-| 10 | Student living | Campus, accommodation, food, safety and student support | 300 words total | One section heading; compact topic cards with equal heights within each row, one column on mobile; omit empty topics and filler introductions |
+| 10 | Student living | Campus, accommodation, food, safety and student support | 300 words total | One section heading; two image-led topics when authentic media exists, then a compact shared panel for food, safety and support; one column on mobile; omit empty topics and filler introductions |
 | 11 | Student outcomes | Only sourced placement, internship, employer or graduate-support facts | 160 words | Proof-point cards; omit if unsupported |
 | 12 | FAQs | Questions that unblock application decisions | 8–10 × 75 words | Accordion with category labels |
 | 13 | Final comparison CTA | Shortlist, compare programs or request guidance | 35 words | Sticky bottom action |

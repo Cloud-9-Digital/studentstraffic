@@ -130,11 +130,19 @@ cycle, and give one clear action only where the missing detail affects a decisio
 read the cards in sequence: remove repeated source attribution, repeated requests to check with the
 college, and sentences that merely explain what the section covers.
 
+Keep university email addresses and phone numbers out of the Student support topic. That space
+should explain actual support services and offer Students Traffic counselling as the next step.
+Institutional contacts, when needed for a specific task, belong in a separate clearly labelled
+official-contact area; safety and emergency contacts may remain in the Safety topic.
+
 Each section may carry one optional image under `mediaAttribution.studentLife`. Allowed keys are
 `campusEnvironment`, `accommodation`, `dailyLiving` and `safetySupport`. Each image record must include
 the Students Traffic Cloudinary URL, original source URL, rights basis, checked date and useful alt
 text. Use official or clearly reusable assets only. Never hotlink. Missing section imagery must not
 block publication or be replaced with an unrelated stock image.
+Use genuine, topic-specific photos to anchor the campus and accommodation topics when available.
+Keep food, safety and student support as short, scannable facts; do not create a large empty card or
+repeat a hero image solely to balance a grid.
 Each field should read like DIT's dedicated sub-sections, not one generic paragraph:
 - `campusLifestyle`: physical campus facts (founding year, student count, % international,
   specific facilities — library, labs, language center), not just "modern campus with good

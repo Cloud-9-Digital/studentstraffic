@@ -1,0 +1,1732 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-data-science",
+      "name": "B.E./B.Tech in Data Science",
+      "shortName": "B.E./B.Tech Data Science",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Data Science",
+        "BSc Data Science"
+      ],
+      "displayOrder": 33,
+      "durationYears": 3,
+      "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+      "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+      "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+    },
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Computer Science major"
+      ],
+      "displayOrder": 180,
+      "durationYears": 4,
+      "summary": "An approved Engineering catalogue category for four-year undergraduate information technology degrees, including university programmes that publish Computer Science as a major within an Information Technology award. The exact university title and major structure remain visible on each offering.",
+      "metaTitle": "B.E./B.Tech IT Programmes",
+      "metaDescription": "Compare B.E./B.Tech IT programmes, official titles, fees, duration and admissions routes for international students."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "jp-college-of-engineering",
+      "name": "J.P. College of Engineering",
+      "city": "Tenkasi",
+      "type": "Private",
+      "establishedYear": 2008,
+      "officialWebsite": "https://jpcoe.ac.in/",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792768081/studentstraffic/universities/jp-college-of-engineering/campus-main-building-2026.jpg",
+      "mediaAttribution": {
+        "cover": {
+          "sourceUrl": "https://jpcoe.ac.in/uploads/slider/slide_2026-03-17_881ddb96.jpg",
+          "rights": "Official institution homepage image used for the college catalogue profile",
+          "checkedAt": "2026-10-23",
+          "altText": "J.P. College of Engineering main academic building and entrance courtyard in Ayikudi"
+        },
+        "studentLife": {
+          "campusEnvironment": {
+            "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792780601/studentstraffic/universities/jp-college-of-engineering/student-life-library.jpg",
+            "sourceUrl": "https://jpcoe.ac.in/assets/img/gallery/library.jpg",
+            "rights": "Official institution library image used for the college catalogue profile",
+            "checkedAt": "2026-10-24",
+            "altText": "Students browsing books and newspapers in the J.P. College of Engineering library"
+          },
+          "accommodation": {
+            "url": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792780602/studentstraffic/universities/jp-college-of-engineering/student-life-womens-hostel.jpg",
+            "sourceUrl": "https://jpcoe.ac.in/images/wh-1.jpg",
+            "rights": "Official institution hostel image used for the college catalogue profile",
+            "checkedAt": "2026-10-24",
+            "altText": "Exterior of the women’s hostel shown on the J.P. College of Engineering website"
+          }
+        }
+      },
+      "summary": "J.P. College of Engineering is a private, non-autonomous engineering college in Ayikudi, Tenkasi, Tamil Nadu. Founded in 2008, it is affiliated to Anna University, Chennai, and its seven full-time undergraduate engineering branches appear in the AICTE 2026-27 approved-course register. The documented government-quota route is Tamil Nadu Engineering Admissions counselling.",
+      "campusLifestyle": "The Ayikudi campus has a library open from 8 a.m. to 6 p.m. on working days and during vacations. Students can borrow books for seven days and use DELNET digital journals. The college also has an NSS unit and hosts technical symposia.",
+      "cityProfile": "Ayikudi is in Tenkasi district in southern Tamil Nadu. The TNEA 2026 college booklet places the campus about 5 km from the district headquarters and about 7 km from Tenkasi Junction railway station. Those are the booklet’s reported distances, not door-to-door journey times. Applicants comparing travel or daily commuting should verify their route from the specific hostel or home address.",
+      "practicalExposure": "J.P. College of Engineering is non-autonomous, so students follow Anna University degree regulations. The Computer Science page names operating systems, data structures, network programming, cloud computing, mobile application development and software engineering laboratories. The AI department names programming, machine-learning, analytics, deep-learning and natural-language-processing labs. Its training and placement cell says it coordinates workshops, career guidance and recruitment; the site does not establish a guaranteed internship or job outcome for any branch.",
+      "hostelOverview": "Separate men’s and women’s hostels have mess facilities, security, water and power backup. The published 2026 figures are ₹2,000 a year for room rent and ₹2,000 a year for mess, plus a ₹1,000 admission fee. Request a current written breakdown before budgeting.",
+      "dietarySupport": "Vegetarian and non-vegetarian mess options are available in both hostels. Ask the hostel office for the current menu, daily availability and charges.",
+      "safetyOverview": "Hostel facilities include 24-hour security. For anti-ragging concerns, call 8012520500. Confirm current supervision and grievance contacts with the hostel office before moving in.",
+      "studentSupport": "The training and placement cell coordinates workshops, career guidance and recruitment activities. TNEA handles government-quota counselling and document requirements.",
+      "whyChoose": [
+        "Anna University lists the college under Tenkasi with examination code 9512 and counselling code 4994.",
+        "AICTE approved all seven current undergraduate engineering branches for the 2026-27 academic year.",
+        "The college publishes named computing laboratories, a library and a training and placement cell."
+      ],
+      "thingsToConsider": [
+        "Tuition is not published as a current branch-specific amount; request a written fee schedule for the applicable quota.",
+        "The documented TNEA route has nativity rules, and no general foreign-national route was verified.",
+        "The website shows stale intake figures for AI and Data Science and ECE; use current AICTE/TNEA records."
+      ],
+      "bestFitFor": [
+        "TNEA-eligible applicants who want an Anna University-affiliated engineering degree near Tenkasi.",
+        "Students comparing computing, electronics, civil, electrical or mechanical branches at one campus.",
+        "Applicants willing to confirm tuition, hostel totals and current branch facilities before accepting an offer."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "AICTE — approved technical institution, 2026-27 (permanent ID 1-2819861)",
+        "Anna University, Chennai — affiliated college (examination code 9512)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "AICTE approved institutions and courses, 2026-27",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved"
+        },
+        {
+          "label": "Anna University CAI — Tenkasi affiliated colleges",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is J.P. College of Engineering in Tenkasi a university?",
+          "answer": "It is a private, non-autonomous engineering college affiliated to Anna University, Chennai. Anna University lists it under Tenkasi with examination code 9512; its TNEA counselling code is 4994."
+        },
+        {
+          "question": "Which engineering degrees does the college currently offer?",
+          "answer": "AICTE and TNEA 2026-27 records list seven undergraduate branches: AI and Data Science, Civil, Computer Science, Electrical and Electronics, Electronics and Communication, Information Technology, and Mechanical Engineering. No current postgraduate degree appears in the checked AICTE register."
+        },
+        {
+          "question": "How do I apply through Tamil Nadu engineering counselling?",
+          "answer": "Check the current TNEA brochure, register on its official portal, complete certificate verification, and list J.P. College of Engineering under code 4994 with your chosen branch. The 2026 registration window has passed; use the next published schedule for future applications."
+        },
+        {
+          "question": "Can an applicant from outside India apply?",
+          "answer": "A general foreign-national route was not verified. The 2026 TNEA brochure permits Tamil Nadu-native OCI/PIO cardholders under specified conditions, while the 2026-27 AICTE special-quota lists show no JPCOE entry. Ask the college for written confirmation before assuming another route is available."
+        },
+        {
+          "question": "What academic marks are needed for TNEA?",
+          "answer": "The 2026 brochure required a pass in HSC or equivalent and a Mathematics, Physics and Chemistry average of 45% for General Category or 40% for the listed reserved categories. It also provides a separate eligible vocational route; check the next brochure before applying."
+        },
+        {
+          "question": "What is the tuition for a B.E. or B.Tech at this college?",
+          "answer": "No current branch-specific tuition amount was verified in the college or TNEA sources. The TNEA college booklet says tuition follows Government norms. Request a written academic-year and quota-specific fee schedule before paying or comparing offers."
+        },
+        {
+          "question": "Are hostel rooms available?",
+          "answer": "The 2026 TNEA college booklet lists permanent boys’ and girls’ accommodation and mess facilities. It quotes ₹2,000 for room rent and ₹2,000 for mess bill per annum, plus a ₹1,000 admission fee; confirm what these figures cover and the current total with the college."
+        },
+        {
+          "question": "Is the college autonomous or NBA accredited?",
+          "answer": "The TNEA 2026 booklet marks the college non-autonomous and shows no NBA accreditation for any of the seven branches. Its degrees follow Anna University affiliation and its engineering courses appear in the AICTE 2026-27 register."
+        },
+        {
+          "question": "Are the college website intake numbers current?",
+          "answer": "Use the 2026-27 AICTE register and TNEA 2026 booklet when checking seats. Both list 120 seats each for AI and Data Science and Electronics and Communication, while the college’s programme cards still show 60 for those branches."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "AICTE 2026-27 approved institutions and course register",
+          "url": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+          "kind": "recognition",
+          "checkedAt": "2026-10-23",
+          "notes": "Application 1-46268025973; seven UG courses, AICTE permanent ID 1-2819861."
+        },
+        {
+          "label": "Anna University CAI Tenkasi affiliated-college register",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php",
+          "kind": "recognition",
+          "checkedAt": "2026-10-23",
+          "notes": "Examination code 9512; TNEA code 4994."
+        },
+        {
+          "label": "TNEA 2026 Information about Colleges, p.378",
+          "url": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23",
+          "notes": "Seven branches, intake, non-autonomous and minority status, hostel and transport data."
+        },
+        {
+          "label": "TNEA 2026 Information Brochure",
+          "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23",
+          "notes": "Nativity, OCI/PIO exception, academic eligibility, counselling route and documents."
+        },
+        {
+          "label": "Anna University Academic Regulations 2025",
+          "url": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23",
+          "notes": "B.E./B.Tech structure and language framework."
+        },
+        {
+          "label": "Anna University affiliated-college first-semester calendar 2026",
+          "url": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-23",
+          "notes": "Latest verified September cycle only; no 2027 projection."
+        },
+        {
+          "label": "J.P. College of Engineering UG programme directory",
+          "url": "https://jpcoe.ac.in/?p=ug",
+          "kind": "official-university",
+          "checkedAt": "2026-10-23",
+          "notes": "Programme cards are used for titles and links, not for stale intake counts."
+        },
+        {
+          "label": "J.P. College of Engineering hostel page",
+          "url": "https://jpcoe.ac.in/?p=hostel",
+          "kind": "official-university",
+          "checkedAt": "2026-10-23",
+          "notes": "Mens and womens hostels, mess and security descriptions."
+        },
+        {
+          "label": "J.P. College of Engineering library page",
+          "url": "https://jpcoe.ac.in/?p=library",
+          "kind": "official-university",
+          "checkedAt": "2026-10-23",
+          "notes": "Library hours and facilities."
+        },
+        {
+          "label": "J.P. College of Engineering placement cell",
+          "url": "https://jpcoe.ac.in/?p=placement",
+          "kind": "official-university",
+          "checkedAt": "2026-10-23",
+          "notes": "Training and placement contact and service; no outcome guarantee."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "research_ready",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "research_ready"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my JPCOE eligibility",
+            "capture": [
+              "Class 12 board and subject marks",
+              "Tamil Nadu nativity or schooling",
+              "preferred engineering branch"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Review my JPCOE budget",
+            "capture": [
+              "applicable seat quota",
+              "preferred branch",
+              "hostel or commuter plan"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNEA shortlist",
+            "capture": [
+              "TNEA registration year",
+              "branch preferences",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "jpcoe-btech-artificial-intelligence-data-science",
+          "canonicalCourseSlug": "be-btech-data-science",
+          "officialTitle": "B.Tech. Artificial Intelligence and Data Science",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=aids",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Artificial Intelligence and Data Science is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 120 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Artificial Intelligence and Data Science, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "AI programming, machine-learning, data analytics, deep-learning and natural-language-processing labs appear on the department page. The linked page uses an AI & Machine Learning heading; the regulator and TNEA call the approved degree Artificial Intelligence and Data Science. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        },
+        {
+          "slug": "jpcoe-be-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.E. Civil Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=civil",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Civil Engineering is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 30 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Civil Engineering, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "The Civil Engineering department publishes its programme objectives and course outcomes. Confirm the exact current laboratory list and any fieldwork requirements with the department before committing to the branch. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        },
+        {
+          "slug": "jpcoe-be-computer-science-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.E. Computer Science and Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=cse",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Computer Science and Engineering is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 120 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Computer Science and Engineering, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "The department lists operating systems, data structures, network programming, cloud computing, mobile application development and software engineering laboratories. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        },
+        {
+          "slug": "jpcoe-be-electrical-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.E. Electrical and Electronics Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=eee",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Electrical and Electronics Engineering is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 60 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Electrical and Electronics Engineering, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "The department describes an electrical and electronics laboratory, a computer centre and a departmental library. Its teaching follows Anna University degree regulations. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        },
+        {
+          "slug": "jpcoe-be-electronics-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.E. Electronics and Communication Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=ece",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Electronics and Communication Engineering is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 120 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Electronics and Communication Engineering, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "The department publishes its objectives and faculty details. The 2026 TNEA and AICTE records approve 120 seats, although the college UG card still displays 60. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        },
+        {
+          "slug": "jpcoe-btech-information-technology",
+          "canonicalCourseSlug": "be-btech-information-technology",
+          "officialTitle": "B.Tech. Information Technology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=it",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Information Technology is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 60 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Information Technology, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "The IT department says it began in 2022, follows Anna University affiliation, and operates a project laboratory. Its official page describes a four-year B.Tech. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        },
+        {
+          "slug": "jpcoe-be-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.E. Mechanical Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-23",
+            "notes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting."
+          },
+          "officialProgramUrl": "https://jpcoe.ac.in/?p=mech",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants who meet TNEA nativity, qualifying-examination and category rules for Tamil Nadu engineering counselling",
+              "Tamil Nadu-native OCI or PIO cardholders eligible under the TNEA brochure conditions"
+            ],
+            "restrictions": [
+              "No J.P. College of Engineering entry appears in the AICTE 2026-27 special NRI or PIO/FN/CIWG approval lists; a general foreign-national route is not verified",
+              "TNEA counselling has specific nativity and document rules; an applicant outside them must confirm any other route directly with the college"
+            ],
+            "notes": "This is a restricted admissions route, not a claim that all international applicants are categorically barred. College-specific management or foreign admission arrangements have not been verified.",
+            "verifiedAt": "2026-10-23",
+            "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.E. Mechanical Engineering is a four-year Anna University-affiliated degree at the Ayikudi campus. AICTE and TNEA list 30 approved seats for 2026-27. The documented government-quota route is TNEA; a separate international route is unverified.",
+            "eligibility": {
+              "intro": "For Mechanical Engineering, TNEA 2026 used the same academic and nativity conditions as other B.E./B.Tech branches at this college.",
+              "items": [
+                "Pass Class 12 HSC (academic stream) or an accepted equivalent with Mathematics, Physics and Chemistry.",
+                "General-category applicants need a 45% average in Mathematics, Physics and Chemistry; listed reserved categories need 40%, subject to TNEA rules.",
+                "A specified vocational HSC combination with an engineering-related subject can also qualify under the separate TNEA vocational route.",
+                "Meet the Tamil Nadu nativity or schooling provisions; eligible Tamil Nadu-native OCI/PIO cardholders may participate in Open Category under the brochure conditions."
+              ]
+            },
+            "applicationSteps": [
+              "Check TNEA eligibility and the current brochure before registering; a separate management-quota route for this branch is not documented here.",
+              "Register on the official TNEA portal in the notified window, upload certificates and verify the application.",
+              "Review the rank list and choose J.P. College of Engineering (code 4994) with the matching branch in online counselling.",
+              "After provisional allotment, follow the reporting and fee-payment instructions in the current TNEA allotment notice."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class 10 and Class 12 marksheets or accepted equivalent qualification documents",
+                "Mathematics, Physics and Chemistry marks or eligible vocational-course records"
+              ],
+              "application": [
+                "TNEA online application and identity documents required by the current brochure",
+                "Nativity, community, income or special-category certificates when claiming the relevant eligibility or benefit"
+              ]
+            },
+            "deadlinesNote": "The 2026 TNEA registration window has passed. No 2027 registration or counselling dates had been announced in the checked official sources on 23 October 2026."
+          },
+          "medium": "English",
+          "mediumNote": "Anna University Regulations 2025 use English for B.E./B.Tech. Tamil-medium Civil and Mechanical options exist at the university level, but are not verified at this college.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "intakeCodes": [
+            "september"
+          ],
+          "feeVerifiedAt": "2026-10-23",
+          "feeNotes": "J.P. College of Engineering does not publish a current branch-specific tuition amount. The official TNEA 2026 college booklet says tuition is collected under Government norms and gives separate hostel and transport figures. Request a written 2027 fee schedule and confirm the applicable quota before budgeting.",
+          "teachingPhases": [
+            {
+              "phase": "Four-year, eight-semester B.E./B.Tech",
+              "language": "English",
+              "details": "The Mechanical Engineering department publishes its course outcomes and faculty information. Verify any desired workshop, laboratory or internship option directly with the department. Anna University Regulations 2025 set the degree structure and English-medium default."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "identity",
+      "claimText": "J.P. College of Engineering is a private self-financing college at College Road, Ayikudi, Tenkasi, founded in 2008.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2025-26 EoA",
+      "sourceUrl": "https://jpcoe.ac.in/pdfs/EOA/2025-26.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE 2026-27 approved-institutions register lists J.P. College of Engineering under permanent ID 1-2819861 and application 1-46268025973.",
+      "status": "verified",
+      "sourceLabel": "AICTE approved institutions",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "recognitionBadges",
+      "claimText": "Anna University CAI lists J P College of Engineering under Tenkasi with examination code 9512 and TNEA code 4994.",
+      "status": "verified",
+      "sourceLabel": "Anna University CAI",
+      "sourceUrl": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "programmes",
+      "claimText": "AICTE and TNEA 2026-27 list seven current full-time UG engineering branches, with no PG branch in the checked register.",
+      "status": "verified",
+      "sourceLabel": "AICTE approved course register",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "campusLifestyle",
+      "claimText": "The college has an Ayikudi campus; its library is open 08:00 to 18:00 on working days and vacations.",
+      "status": "verified",
+      "sourceLabel": "JPCOE library",
+      "sourceUrl": "https://jpcoe.ac.in/?p=library",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "hostelOverview",
+      "claimText": "TNEA 2026 lists permanent boys and girls hostels, a ₹2,000 annual room-rent figure, a ₹2,000 annual mess-bill figure, and a ₹1,000 admission fee; current total needs confirmation.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissionsContent",
+      "claimText": "TNEA 2026 counselling lists J.P. College of Engineering under college code 4994 and applies stated nativity and HSC rules.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "safetyOverview",
+      "claimText": "JPCOE publishes an anti-ragging contact in the TNEA booklet and separate men’s and women’s hostel accommodation.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "practicalExposure",
+      "claimText": "The college publishes a training and placement cell with workshops, counselling and campus recruitment coordination; no individual outcome is guaranteed.",
+      "status": "verified",
+      "sourceLabel": "JPCOE placement cell",
+      "sourceUrl": "https://jpcoe.ac.in/?p=placement",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.Tech. Artificial Intelligence and Data Science is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 120 approved seats for B.Tech. Artificial Intelligence and Data Science.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.Tech. Artificial Intelligence and Data Science.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.Tech. Artificial Intelligence and Data Science degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.Tech. Artificial Intelligence and Data Science.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=aids",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.E. Civil Engineering is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 30 approved seats for B.E. Civil Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.E. Civil Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.E. Civil Engineering degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.E. Civil Engineering.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=civil",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.E. Computer Science and Engineering is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 120 approved seats for B.E. Computer Science and Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.E. Computer Science and Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.E. Computer Science and Engineering degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.E. Computer Science and Engineering.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=cse",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-computer-science-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.E. Electrical and Electronics Engineering is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 60 approved seats for B.E. Electrical and Electronics Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.E. Electrical and Electronics Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.E. Electrical and Electronics Engineering degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.E. Electrical and Electronics Engineering.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=eee",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.E. Electronics and Communication Engineering is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 120 approved seats for B.E. Electronics and Communication Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.E. Electronics and Communication Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.E. Electronics and Communication Engineering degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.E. Electronics and Communication Engineering.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=ece",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.Tech. Information Technology is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 60 approved seats for B.Tech. Information Technology.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.Tech. Information Technology.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.Tech. Information Technology degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.Tech. Information Technology.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=it",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-btech-information-technology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialTitle",
+      "claimText": "B.E. Mechanical Engineering is listed as a current JPCOE undergraduate degree in the AICTE 2026-27 course register.",
+      "status": "verified",
+      "sourceLabel": "AICTE 2026-27 approved courses",
+      "sourceUrl": "https://facilities.aicte-india.org/dashboard/pages/angulardashboard.php#!/approved",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "approvedIntake",
+      "claimText": "AICTE and TNEA 2026 list 30 approved seats for B.E. Mechanical Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "admissions",
+      "claimText": "TNEA 2026 sets nativity restrictions and a narrow Tamil Nadu-native OCI/PIO exception; no JPCOE special foreign quota appears in the AICTE 2026-27 lists.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "fee",
+      "claimText": "A current official tuition figure for this branch was not published in the checked college and TNEA materials. Fee status is on request; TNEA says tuition follows Government norms.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 college booklet",
+      "sourceUrl": "https://static.tneaonline.org/docs/Information_about_colleges_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-01-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "eligibility",
+      "claimText": "TNEA 2026 gives the HSC Mathematics, Physics and Chemistry marks thresholds, document rules and online counselling route for B.E. Mechanical Engineering.",
+      "status": "verified",
+      "sourceLabel": "TNEA 2026 brochure",
+      "sourceUrl": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "medium",
+      "claimText": "Anna University academic regulations set English as the general medium for the B.E./B.Tech B.E. Mechanical Engineering degree type; college-specific Tamil cohorts are unverified.",
+      "status": "verified",
+      "sourceLabel": "Anna University Regulations 2025",
+      "sourceUrl": "https://cac.annauniv.edu/aidetails/reg/R2025/ACADEMIC%20REGULATIONS%202025%29.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "publicField": "officialProgramUrl",
+      "claimText": "JPCOE hosts a department page linked from its current UG directory for B.E. Mechanical Engineering.",
+      "status": "verified",
+      "sourceLabel": "JPCOE department page",
+      "sourceUrl": "https://jpcoe.ac.in/?p=mech",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31",
+      "programmeSlug": "jpcoe-be-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-btech-artificial-intelligence-data-science",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-be-civil-engineering",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-be-computer-science-engineering",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-be-electrical-electronics-engineering",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-be-electronics-communication-engineering",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-btech-information-technology",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jp-college-of-engineering",
+      "programmeSlug": "jpcoe-be-mechanical-engineering",
+      "publicField": "intake",
+      "claimText": "The latest verified first-semester calendar for Anna University affiliated colleges starts in September 2026; the 2027 TNEA timetable was not yet published.",
+      "status": "verified",
+      "sourceLabel": "Anna University affiliated-college calendar 2026",
+      "sourceUrl": "https://cac.annauniv.edu/Annoucement/Calender%20-%20Affi/Jul-Nov%202026/UG%20%26%20MBAMCA%20Calendar%20I%20Sem.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-23",
+      "reviewBy": "2027-03-31"
+    }
+  ]
+}

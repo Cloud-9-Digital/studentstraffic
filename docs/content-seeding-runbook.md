@@ -311,6 +311,9 @@ one image each for campus environment, accommodation, daily living and safety/su
 `mediaAttribution.studentLife`. Do not reuse one image across all four sections merely to fill space.
 Upload every selected asset to Cloudinary and retain its original source, rights basis, checked date
 and alt text. If no suitable image exists, omit it; imagery must never delay otherwise valid content.
+In `studentSupport`, describe verified services without the university's email addresses or phone
+numbers. Use Students Traffic counselling for the page's enquiry path; retain emergency contacts
+only where they are useful in the separate safety topic.
 
 ### University media hosting — mandatory
 

@@ -42,6 +42,7 @@ For admissions, scholarship, country, and decision-stage pages:
 - When facts are time-sensitive, show the applicable year or cycle and a specific next step; do not imply an old fee or deadline is current.
 - Do not make the page feel like a detached editorial article whose only job is to publish information.
 - Do not overexpose citations, source mechanics, or update-process language in user-facing copy unless the page truly needs it.
+- In university Student living sections, use authentic campus/hostel photos only where they clarify the topic. Keep institutional phone numbers and emails out of Student support copy; offer Students Traffic guidance as the primary next step. Preserve safety/emergency contacts where useful.
 - State supported facts directly. Keep "the website says", "the booklet lists" and similar source-reporting language in the private research record; preserve public dates or authority names only when they change how a student should use the fact.
 - Avoid sounding like a research portal, newsroom, or encyclopedia even when the underlying work is heavily researched.
 - The content should feel like expert guidance from a company that can actually help the student act on that information.
