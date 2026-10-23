@@ -121,7 +121,7 @@ Scholarship pages should:
 - Use accordions or collapsible navigation when a page gets long.
 - Make sure headings, badges, and card elements never overlap.
 - Favor readability and scanning over decorative complexity.
-- Counselling opens a focused side panel with a clear page-specific request and a short, labelled form. Keep long university names readable, dropdowns from changing form layout, the close control clear, and mobile fields easy to complete. Use persistent labels without repeating them as placeholders.
+- Counselling opens a centered, scrollable dialog with a clear page-specific request and a short, labelled form. Keep long university names readable, dropdowns from changing form layout, the close control clear, and mobile fields easy to complete. Conditional fields must not leave an orphan half-width row. Ask for state when the student lives in India and state, province, or region elsewhere. Require email in the counselling dialog. Keep required marks close to their labels and use persistent labels without repeating them as placeholders.
 
 ## Shared navigation and footer standards
 

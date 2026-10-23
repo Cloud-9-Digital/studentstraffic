@@ -94,7 +94,7 @@ export function CounsellingDialog({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-[#092c28]/55 backdrop-blur-[2px] data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
         <Dialog.Content
           id={contentId}
-          className="fixed inset-y-0 right-0 z-50 h-dvh w-full max-w-[36rem] overflow-y-auto bg-background shadow-2xl outline-none data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right data-[state=open]:animate-in data-[state=open]:slide-in-from-right duration-300 sm:border-l sm:border-primary/10"
+          className="fixed left-1/2 top-1/2 z-50 max-h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] max-w-[48rem] -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-[1.5rem] border border-primary/10 bg-background shadow-2xl outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200 sm:max-h-[calc(100dvh-3rem)]"
           onOpenAutoFocus={(event) => {
             // Radix auto-focuses the first form field on open by default, which
             // arms the form's anti-bot "startedAt" timer before the user has
@@ -109,20 +109,20 @@ export function CounsellingDialog({
             <span className="sr-only">Close</span>
           </Dialog.Close>
 
-          <div className="bg-primary px-6 pb-8 pt-7 pr-20 text-white sm:px-10 sm:pb-9 sm:pt-9 sm:pr-20">
-            <div className="mb-5 flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-white/70 uppercase">
+          <div className="bg-primary px-6 pb-7 pt-7 pr-20 text-white sm:px-10 sm:pb-7 sm:pt-7 sm:pr-20">
+            <div className="mb-3 flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-white/70 uppercase">
               <span className="h-0.5 w-6 rounded-full bg-[#ef9a62]" aria-hidden="true" />
               Students Traffic
             </div>
-            <Dialog.Title className="max-w-[22ch] font-display text-[2rem] font-semibold leading-[1.12] tracking-tight text-white sm:text-[2.5rem]">
+            <Dialog.Title className="max-w-[22ch] font-display text-[2rem] font-semibold leading-[1.12] tracking-tight text-white sm:text-[2.25rem]">
               {title}
             </Dialog.Title>
-            <Dialog.Description className="mt-4 max-w-[48ch] text-[0.95rem] leading-6 text-white/75">
+            <Dialog.Description className="mt-3 max-w-[48ch] text-[0.95rem] leading-6 text-white/75">
               {description}
             </Dialog.Description>
           </div>
 
-          <div className="px-6 py-7 sm:px-10 sm:py-9">
+          <div className="px-6 py-7 sm:px-10 sm:py-7">
             <DialogLeadForm
               key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}:${universitySlug ?? ""}`}
               ctaVariant={ctaVariant}
@@ -133,6 +133,7 @@ export function CounsellingDialog({
               notes={notes}
               lockInterest={lockInterest}
               embedded
+              emailRequired
               hidePlaceholders
               floatingCountryPicker
             />

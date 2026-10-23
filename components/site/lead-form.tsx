@@ -112,8 +112,8 @@ export type LeadFormProps = {
 
 function RequiredMark() {
   return (
-    <span className="text-destructive" aria-hidden="true">
-      {" "}*
+    <span className="ml-1 text-destructive" aria-hidden="true">
+      *
     </span>
   );
 }
@@ -153,8 +153,9 @@ export function LeadForm({
   const phoneValidRef = useRef(false);
   const [clientError, setClientError] = useState<string | null>(null);
   const residence = useResidenceCountry(lockPhoneToIndia ? "IN" : undefined);
-  // Indian states only make sense for students living in India.
+  // Use the Indian state list for India; other countries use a region field.
   const livesInIndia = residence.country === "IN";
+  const hasResidenceCountry = Boolean(residence.country);
 
   // Course/country options for the visible interest selects. Sourced from the
   // same catalog data (via the nav client providers) used across the site.
@@ -217,8 +218,11 @@ export function LeadForm({
   const showEmailField = !hideEmail || emailRequired;
 
   const emailField = !showEmailField ? null : (
-    <div className="space-y-2">
-      <Label htmlFor={`${fieldPrefix}-email`}>
+    <div className={cn(
+      "space-y-2",
+      hasResidenceCountry && !lockPhoneToIndia && !showNeetCategory && !stacked && "md:col-span-2"
+    )}>
+      <Label htmlFor={`${fieldPrefix}-email`} className={emailRequired ? "gap-0" : undefined}>
         Email
         {emailRequired ? (
           <RequiredMark />
@@ -226,9 +230,9 @@ export function LeadForm({
           <span className="font-normal text-muted-foreground"> (optional)</span>
         )}
       </Label>
-          <Input
-            className="h-12"
-            id={`${fieldPrefix}-email`}
+      <Input
+        className="h-12"
+        id={`${fieldPrefix}-email`}
         name="email"
         type="email"
         placeholder={hidePlaceholders ? undefined : "you@email.com"}
@@ -239,7 +243,7 @@ export function LeadForm({
 
   const residenceField = lockPhoneToIndia ? null : (
     <div className="space-y-2">
-      <Label htmlFor={`${fieldPrefix}-residence`}>
+      <Label htmlFor={`${fieldPrefix}-residence`} className="gap-0">
         Country<RequiredMark />
       </Label>
       <CountrySelect
@@ -258,26 +262,38 @@ export function LeadForm({
     </div>
   );
 
-  const stateField = !livesInIndia ? null : (
+  const stateField = !hasResidenceCountry ? null : (
     <div className="space-y-2">
-      <Label htmlFor={`${fieldPrefix}-state`}>
-        State<RequiredMark />
+      <Label htmlFor={`${fieldPrefix}-state`} className="gap-0">
+        {livesInIndia ? "State" : "State / province / region"}<RequiredMark />
       </Label>
-      <div className="relative">
-        <select
+      {livesInIndia ? (
+        <div className="relative">
+          <select
+            id={`${fieldPrefix}-state`}
+            name="userState"
+            required
+            defaultValue=""
+            className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            <option value="" disabled className="text-muted-foreground">{hidePlaceholders ? "" : "Select state"}</option>
+            {INDIAN_STATES.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+          <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+        </div>
+      ) : (
+        <Input
+          key={residence.country}
+          className="h-12"
           id={`${fieldPrefix}-state`}
           name="userState"
+          autoComplete="address-level1"
+          maxLength={120}
           required
-          defaultValue=""
-          className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
-        >
-          <option value="" disabled className="text-muted-foreground">{hidePlaceholders ? "" : "Select state"}</option>
-          {INDIAN_STATES.map((s) => (
-            <option key={s} value={s}>{s}</option>
-          ))}
-        </select>
-        <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-      </div>
+        />
+      )}
     </div>
   );
 
@@ -336,7 +352,7 @@ export function LeadForm({
 
       <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
         <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-name`}>
+          <Label htmlFor={`${fieldPrefix}-name`} className="gap-0">
             Full name<RequiredMark />
           </Label>
           <Input
@@ -351,7 +367,7 @@ export function LeadForm({
             visitor's country when they reach the number. */}
         {residenceField}
         <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-phone`}>
+          <Label htmlFor={`${fieldPrefix}-phone`} className="gap-0">
             Phone number<RequiredMark />
           </Label>
           <PhoneInputField
@@ -432,7 +448,7 @@ export function LeadForm({
           <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
             {emailField}
             <div className="space-y-2">
-              <Label htmlFor={`${fieldPrefix}-neet`}>
+              <Label htmlFor={`${fieldPrefix}-neet`} className="gap-0">
                 NEET score<RequiredMark />
               </Label>
               <Input
@@ -449,7 +465,7 @@ export function LeadForm({
           </div>
           <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
             <div className="space-y-2">
-              <Label htmlFor={`${fieldPrefix}-neet-category`}>
+              <Label htmlFor={`${fieldPrefix}-neet-category`} className="gap-0">
                 Category<RequiredMark />
               </Label>
               <div className="relative">
