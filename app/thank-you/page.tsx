@@ -1,31 +1,50 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
+import { Suspense } from "react";
+import { cookies } from "next/headers";
 
 import { ThankYouAnalytics } from "@/components/site/thank-you-analytics";
 import { buildNoIndexMetadata } from "@/lib/metadata";
+import { ENQUIRY_RECEIPT_COOKIE, formatEnquiryInterest, readEnquiryReceipt } from "@/lib/enquiry-confirmation";
 
 export const metadata: Metadata = buildNoIndexMetadata(
   { title: "Thank You", description: "Your Students Traffic enquiry has been received." },
   { canonicalPath: "/thank-you" },
 );
 
-export default async function ThankYouPage({
-  searchParams,
-}: {
+type ThankYouPageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
-}) {
+};
+
+export default function ThankYouPage(props: ThankYouPageProps) {
+  return <Suspense fallback={<ThankYouView heading="Thank you." description="Your enquiry has been received." />}>
+    <ThankYouConfirmation {...props} />
+  </Suspense>;
+}
+
+async function ThankYouConfirmation({
+  searchParams,
+}: ThankYouPageProps) {
   const params = await searchParams;
   const source = Array.isArray(params.source) ? params.source[0] : params.source;
-  const interest = Array.isArray(params.interest) ? params.interest[0] : params.interest;
+  const rawInterest = Array.isArray(params.interest) ? params.interest[0] : params.interest;
   const eventId = Array.isArray(params.eid) ? params.eid[0] : params.eid;
+  const receiptId = Array.isArray(params.receipt) ? params.receipt[0] : params.receipt;
+  const receipt = readEnquiryReceipt((await cookies()).get(ENQUIRY_RECEIPT_COOKIE)?.value, eventId ?? receiptId);
+  const interest = receipt?.interest ?? formatEnquiryInterest(rawInterest);
   const isNeetPredictor = source === "/neet-college-predictor";
-  const heading = isNeetPredictor
-    ? "Your NEET prediction request has been received."
-    : interest
-      ? `Your enquiry about ${interest} has been received.`
-      : "Your request has been received.";
+  const heading = receipt?.name ? `Thank you, ${receipt.name}.` : "Thank you.";
+  const description = isNeetPredictor
+    ? "Your NEET college prediction request has been received. We will send the results to your email."
+    : `Your enquiry about ${interest} has been received. Our counsellor will call you with the next steps.`;
 
+  return <ThankYouView heading={heading} description={description}>
+    <ThankYouAnalytics source={source} interest={rawInterest} eventId={eventId} />
+  </ThankYouView>;
+}
+
+function ThankYouView({ heading, description, children }: { heading: string; description: string; children?: React.ReactNode }) {
   return (
     <main className="min-h-screen bg-muted/30">
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-accent">
@@ -36,17 +55,13 @@ export default async function ThankYouPage({
                 <Check className="size-7" strokeWidth={2.5} />
               </div>
               <p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-white/60">Enquiry received</p>
-              <h1 className="mx-auto mt-4 max-w-[17ch] font-display text-5xl font-semibold leading-[1.04] tracking-tight text-white md:text-6xl lg:text-7xl">
+              <h1 className="mx-auto mt-4 max-w-[17ch] break-words font-display text-5xl font-semibold leading-[1.04] tracking-tight text-white md:text-6xl lg:text-7xl">
                 {heading}
               </h1>
 
-              <ThankYouAnalytics source={source} interest={interest} eventId={eventId} />
+              {children}
               <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-white/70 md:text-lg">
-                {isNeetPredictor
-                  ? "Your NEET college prediction request is in. We will send the results to your email."
-                  : interest
-                    ? `Our counsellor will call you about ${interest}.`
-                    : "Our counsellor will call you about your enquiry."}
+                {description}
               </p>
             </div>
           </div>

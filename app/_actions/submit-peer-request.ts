@@ -2,9 +2,12 @@
 
 import { redirect } from "next/navigation";
 import { z } from "zod";
+import { cookies } from "next/headers";
+import { randomUUID } from "node:crypto";
 
 import { getFormString, wasSubmittedTooFast } from "@/app/_actions/form-helpers";
 import { capturePeerRequest, peerRequestSchema } from "@/lib/peer-request-capture";
+import { storeEnquiryReceipt } from "@/lib/enquiry-confirmation";
 
 export type PeerRequestFormState = {
   error?: string;
@@ -70,7 +73,11 @@ export async function submitPeerRequestAction(
     return { error: result.error };
   }
 
+  const receiptId = randomUUID();
+  storeEnquiryReceipt(await cookies(), {
+    fullName: data.fullName, interest: result.universityName, eventId: receiptId,
+  });
   redirect(
-    `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(result.universityName)}`
+    `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(result.universityName)}&receipt=${encodeURIComponent(receiptId)}`
   );
 }

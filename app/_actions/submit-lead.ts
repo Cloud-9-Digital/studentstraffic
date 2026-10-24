@@ -25,6 +25,8 @@ import {
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { getCountryBySlug, getCourseBySlug, getUniversityBySlug } from "@/lib/data/catalog";
+import { formatEnquiryInterest, storeEnquiryReceipt } from "@/lib/enquiry-confirmation";
 import {
   getLeadDeliveryRoute,
   NEET_PREDICTOR_SOURCE_PATH,
@@ -344,7 +346,22 @@ export async function submitLeadAction(
   }
 
   const interest =
-    data.universitySlug ?? data.countrySlug ?? data.courseSlug ?? "study-abroad";
+    data.universitySlug || data.countrySlug || data.courseSlug || "study-abroad";
+
+  let interestName = formatEnquiryInterest(interest);
+  try {
+    const entity = data.universitySlug
+      ? await getUniversityBySlug(data.universitySlug)
+      : data.countrySlug
+        ? await getCountryBySlug(data.countrySlug)
+        : data.courseSlug ? await getCourseBySlug(data.courseSlug) : null;
+    interestName = entity?.name ?? interestName;
+  } catch {
+    // A label lookup must not turn an already-saved enquiry into a failed submission.
+  }
+  storeEnquiryReceipt(cookieStore, {
+    fullName: data.fullName, interest: interestName, eventId: metaEventId,
+  });
 
   redirect(
     `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(interest)}&eid=${encodeURIComponent(metaEventId)}`
