@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-agricultural-university",
+      "universityName": "Tamil Nadu Agricultural University",
+      "sourceBatch": "codex-tnau-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tnau.ac.in/wp-content/uploads/2023/12/TNAU-Logo.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic official institutional emblem from its own public media library; retained intact without redrawing.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-agricultural-university/logo-20261025",
+          "altText": "Tamil Nadu Agricultural University official emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-nadu-agricultural-university/logo-high.jpg",
+          "sha256": "cd1f4864ea90b3c1eead117cb7a45c5be88b611f22f73c8bb5bd0f543172e624",
+          "width": 2083,
+          "height": 1848
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cdn.npfs.co/uploads/template/580/2111/publish/images/banner-1.jpg?1785132733",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic official institutional campus photograph embedded by the current official postgraduate admissions portal; no ownership transfer or current capture date claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-agricultural-university/cover-20261025",
+          "altText": "Tamil Nadu Agricultural University main building and clock tower in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-nadu-agricultural-university/pg-banner1.jpg",
+          "sha256": "9571f0893d483620613e68617ead797bfb98883e59d7a5a31917b2ff76cd1530",
+          "width": 1024,
+          "height": 649
+        }
+      ]
+    }
+  ]
+}

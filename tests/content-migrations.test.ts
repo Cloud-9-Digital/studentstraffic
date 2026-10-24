@@ -343,3 +343,35 @@ test("grandfathered legacy bundles keep free-text mediums while every other bund
     await assert.rejects(readContentMigrations(root), /put delivery detail in mediumNote/);
   });
 });
+
+test("fractional canonical course durations survive migration validation without rounding", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const directory = join(root, "0001-fractional-course-duration");
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({
+      version: 1,
+      id: "0001-fractional-course-duration",
+      description: "Preserve the exact five-and-a-half-year veterinary award duration.",
+      createdAt: "2026-10-25",
+      payload: "payload.json",
+    }));
+    const payload = structuredClone(validPayload);
+    payload.courses[0]!.durationYears = 5.5;
+    payload.universities[0]!.programmes[0]!.durationYears = 5.5;
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+
+    const [migration] = await readContentMigrations(root);
+    assert.equal(migration?.payload.courses[0]?.durationYears, 5.5);
+    assert.equal(migration?.payload.universities[0]?.programmes[0]?.durationYears, 5.5);
+  });
+});
+
+test("canonical course durations reject values PostgreSQL numeric(4,1) cannot preserve", async () => {
+  const { courseDurationYearsSchema } = await import("../scripts/lib/catalog-payload-schema");
+  for (const duration of [0, -1, 5.55, 1000, Number.NaN, Number.POSITIVE_INFINITY]) {
+    assert.equal(courseDurationYearsSchema.safeParse(duration).success, false, String(duration));
+  }
+  for (const duration of [0.1, 4, 5.5, 999.9]) {
+    assert.equal(courseDurationYearsSchema.parse(duration), duration);
+  }
+});

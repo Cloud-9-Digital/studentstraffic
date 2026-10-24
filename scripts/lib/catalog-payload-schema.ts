@@ -107,6 +107,9 @@ const cloudinaryImageUrlSchema = z.string().url().refine(
   "Public university images must be hosted on Cloudinary.",
 );
 
+// Match courses.duration_years numeric(4,1), preserving half-year awards without rounding.
+export const courseDurationYearsSchema = z.number().positive().max(999.9).multipleOf(0.1);
+
 const courseSchema = z.object({
   slug: z.string().min(2),
   name: z.string().min(2),
@@ -116,7 +119,7 @@ const courseSchema = z.object({
   discipline: z.string().min(2),
   aliases: z.array(z.string().min(2)),
   displayOrder: z.number().int().nonnegative(),
-  durationYears: z.number().int().positive(),
+  durationYears: courseDurationYearsSchema,
   summary: z.string().min(180).max(1000),
   metaTitle: z.string().min(20).max(70),
   metaDescription: z.string().min(80).max(170),

@@ -230,6 +230,11 @@ master's award, distinct from graduate-entry software engineering master's degre
 Programme-specific duration, language and intake evidence remain mandatory even
 when a family exists; taxonomy availability does not clear an evidence hold.
 
+`be-btech-fashion-technology` represents the engineering bachelor's award in
+Fashion Technology, covering technical apparel and manufacturing study. It is
+distinct from non-engineering fashion design awards and from Textile Technology;
+the exact curriculum, duration and entry route remain institutional facts.
+
 
 ### Agriculture science and engineering awards (25 October 2026)
 
@@ -247,3 +252,10 @@ natural science doctoral parents where those describe the actual research field
 more accurately. A doctorate's offering must distinguish minimum registration
 from expected or guaranteed completion, and must not infer full-course tuition
 from a minimum residential period.
+
+`bachelor-visual-arts` preserves B.V.A. and other visual-arts bachelor's awards,
+covering studio practice, visual expression and critical study without relabelling
+an institution's B.V.A. as B.F.A. `master-art-history` covers academic master's
+study of art history, visual culture and historical interpretation, including
+M.A. History of Fine Arts. It is distinct from a practice-based Master of Fine
+Arts. Exact award names, entry qualifications and duration remain offering facts.

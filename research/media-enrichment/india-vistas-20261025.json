@@ -1,0 +1,49 @@
+{
+  "manifestId": "india-vistas-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Official VISTAS identifying crest/wordmark and authentic university campus photograph; verified browser-saved complete originals.",
+  "entries": [
+    {
+      "universitySlug": "vels-institute-of-science-technology-and-advanced-studies",
+      "universityName": "Vels Institute of Science, Technology & Advanced Studies",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://vistas.ac.in/wp-content/uploads/2026/08/vels-university-logo.webp",
+          "sourceType": "official",
+          "sourcePage": "https://vistas.ac.in/",
+          "rightsBasis": "Official institution-owned identifying asset from the university website. Direct image visibly rendered in a dedicated Chrome research tab and complete original saved using native Save Image As on25October2026. Ordinary direct HTTP returns an HTML browser-verification response; no ordinary HTTP image-success claim. Original bytes,source association,image signature and SHA256 retained for controlled media uploader preflight. Visually reviewed complete original; no open licence claimed. Prescribed crop preserves the complete blue crest,motto,VELS wordmark and underline; excludes both accreditation shields,portraits and campus tagline. Actual530x130crop visually checked; no upscaling claim.",
+          "proposedPublicId": "studentstraffic/universities/vels-institute-of-science-technology-and-advanced-studies/logo",
+          "altText": "VISTAS crest and VELS wordmark",
+          "uploadFromReviewedLocalOriginal": true,
+          "localPath": "research/india-source-bundles/vistas-20261025/logo-blue-complete.webp",
+          "sha256": "fae53e17435b6191cc4ed17ff3ccb2517eb2d78779c1cb547690c1a54ac03d22",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 275,
+              "y": 195,
+              "width": 530,
+              "height": 130
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://vistas.ac.in/wp-content/uploads/2021/12/IMG_8394-1024x683.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://vistas.ac.in/facilities/",
+          "rightsBasis": "Official institution-owned identifying asset from the university website. Direct image visibly rendered in a dedicated Chrome research tab and complete original saved using native Save Image As on25October2026. Ordinary direct HTTP returns an HTML browser-verification response; no ordinary HTTP image-success claim. Original bytes,source association,image signature and SHA256 retained for controlled media uploader preflight. Visually reviewed complete original; no open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/vels-institute-of-science-technology-and-advanced-studies/cover",
+          "altText": "Dr MGR Block and landscaped approach at VISTAS in Chennai",
+          "uploadFromReviewedLocalOriginal": true,
+          "localPath": "research/india-source-bundles/vistas-20261025/campus-complete.jpg",
+          "sha256": "eec614638656f85b911bff28d3c3a27e17f6aa17c4af57b1502c498b5ae70447"
+        }
+      ],
+      "migrationId": "0220-vistas-pallavaram"
+    }
+  ]
+}

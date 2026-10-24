@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "vels-institute-of-science-technology-and-advanced-studies",
+      "universityName": "Vels Institute of Science, Technology & Advanced Studies",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://vistas.ac.in/wp-content/uploads/2026/08/vels-university-logo.webp",
+          "sourceType": "official",
+          "sourcePage": "https://vistas.ac.in/",
+          "rightsBasis": "Official institution-owned identifying asset from the university website. Direct image visibly rendered in a dedicated Chrome research tab and complete original saved using native Save Image As on25October2026. Ordinary direct HTTP returns an HTML browser-verification response; no ordinary HTTP image-success claim. Original bytes,source association,image signature and SHA256 retained for controlled media uploader preflight. Visually reviewed complete original; no open licence claimed. Prescribed crop preserves the complete blue crest,motto,VELS wordmark and underline; excludes both accreditation shields,portraits and campus tagline. Actual530x130crop visually checked; no upscaling claim.",
+          "proposedPublicId": "studentstraffic/universities/vels-institute-of-science-technology-and-advanced-studies/logo",
+          "altText": "VISTAS crest and VELS wordmark",
+          "uploadFromReviewedLocalOriginal": true,
+          "localPath": "research/india-source-bundles/vistas-20261025/logo-blue-complete.webp",
+          "sha256": "fae53e17435b6191cc4ed17ff3ccb2517eb2d78779c1cb547690c1a54ac03d22",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 275,
+              "y": 195,
+              "width": 530,
+              "height": 130
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://vistas.ac.in/wp-content/uploads/2021/12/IMG_8394-1024x683.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://vistas.ac.in/facilities/",
+          "rightsBasis": "Official institution-owned identifying asset from the university website. Direct image visibly rendered in a dedicated Chrome research tab and complete original saved using native Save Image As on25October2026. Ordinary direct HTTP returns an HTML browser-verification response; no ordinary HTTP image-success claim. Original bytes,source association,image signature and SHA256 retained for controlled media uploader preflight. Visually reviewed complete original; no open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/vels-institute-of-science-technology-and-advanced-studies/cover",
+          "altText": "Dr MGR Block and landscaped approach at VISTAS in Chennai",
+          "uploadFromReviewedLocalOriginal": true,
+          "localPath": "research/india-source-bundles/vistas-20261025/campus-complete.jpg",
+          "sha256": "eec614638656f85b911bff28d3c3a27e17f6aa17c4af57b1502c498b5ae70447"
+        }
+      ],
+      "migrationId": "0220-vistas-pallavaram"
+    },
+    {
+      "universitySlug": "tamil-nadu-agricultural-university",
+      "universityName": "Tamil Nadu Agricultural University",
+      "sourceBatch": "codex-tnau-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tnau.ac.in/wp-content/uploads/2023/12/TNAU-Logo.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic official institutional emblem from its own public media library; retained intact without redrawing.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-agricultural-university/logo-20261025",
+          "altText": "Tamil Nadu Agricultural University official emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-nadu-agricultural-university/logo-high.jpg",
+          "sha256": "cd1f4864ea90b3c1eead117cb7a45c5be88b611f22f73c8bb5bd0f543172e624",
+          "width": 2083,
+          "height": 1848
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cdn.npfs.co/uploads/template/580/2111/publish/images/banner-1.jpg?1785132733",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic official institutional campus photograph embedded by the current official postgraduate admissions portal; no ownership transfer or current capture date claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-agricultural-university/cover-20261025",
+          "altText": "Tamil Nadu Agricultural University main building and clock tower in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-nadu-agricultural-university/pg-banner1.jpg",
+          "sha256": "9571f0893d483620613e68617ead797bfb98883e59d7a5a31917b2ff76cd1530",
+          "width": 1024,
+          "height": 649
+        }
+      ]
+    },
+    {
+      "universitySlug": "psg-college-of-technology",
+      "universityName": "PSG College of Technology",
+      "sourceBatch": "codex-psgtech-coimbatore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.psgtech.edu/BScMScAdmission2026/image/logo.jpeg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgtech.edu/BScMScAdmission2026/",
+          "rightsBasis": "Official institutional public brand and campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "PSG College of Technology technical shield crest",
+          "visualCheck": "Native274×362 official technical-college shield: textile/gear/machine symbols, PSGCTroundel, KnowledgeandServicemotto and1951. Matches shield in official header. Genuine original brand asset, not generic PSG group diamond, favicon, collage or synthetic image.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicGET and nativeimageinspection with sequential view_image calls; publicserver weakDHrequired reducedciphersecuritylevel, with certificateverificationretained. No credentials or privateapplicationdata.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-technology/logo-20261025",
+          "localPath": "research/india-source-bundles/psg-college-of-technology/science-logo.jpeg",
+          "sha256": "851a021b89d45aca87ce2d89f18a0032e3fade0f218d8aadeb5bd7e7506afe2b",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.psgtech.edu/BScMScAdmission2026/image/background.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgtech.edu/BScMScAdmission2026/",
+          "rightsBasis": "Official institutional public brand and campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Historic PSG Industrial Institute building in the shared Peelamedu campus",
+          "visualCheck": "Native1280×713 official admissions background: historic white arched PSGIndustrialInstitutebuilding, twin domes, entrance and fountain. The official college history explicitly places PSGTech on the same IndustrialInstitutecampus. Caption identifies shared-campusbuilding, not an exclusive engineering faculty building. No stock or attribution-dependentlicence.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicGET and nativeimageinspection with sequential view_image calls; publicserver weakDHrequired reducedciphersecuritylevel, with certificateverificationretained. No credentials or privateapplicationdata.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-technology/cover-20261025",
+          "localPath": "research/india-source-bundles/psg-college-of-technology/science-campus.jpg",
+          "sha256": "24f2f2ace024cbf27836f75745a55180cec4bd42db090ef93d89bb8a44a1ca1a",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "stella-maris-college-chennai",
+      "universityName": "Stella Maris College (Autonomous), Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://stellamariscollege.edu.in/assets/images/icon.png",
+          "sourceType": "official",
+          "sourcePage": "https://stellamariscollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on the college website. Ordinary directHTTPS retrieval returned a genuine PNG,visually checked25October2026. Complete unaltered source retained locally with checksum; no open licence or upscaling claimed.",
+          "proposedPublicId": "studentstraffic/universities/stella-maris-college-chennai/logo",
+          "altText": "Stella Maris College crest",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/stella-maris-20261025/logo.png",
+          "sha256": "b711cf97c09f9dc416ebb51068e9d5a96a3ac78f01d6d4493772943b00c79686"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://stellamariscollege.edu.in/assets/images/banner01.png",
+          "sourceType": "official",
+          "sourcePage": "https://stellamariscollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on the college website. Ordinary directHTTPS retrieval returned a genuine PNG,visually checked25October2026. Complete unaltered source retained locally with checksum; no open licence or upscaling claimed.",
+          "proposedPublicId": "studentstraffic/universities/stella-maris-college-chennai/cover",
+          "altText": "Stella Maris College main facade, garden and palm trees in Chennai",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/stella-maris-20261025/cover.png",
+          "sha256": "29b3f64c14fa796bc20cc69a14549ffb63dad3b74498fb6cc558770bafdd1e04"
+        }
+      ],
+      "migrationId": "0223-stella-maris-college-chennai"
+    }
+  ]
+}

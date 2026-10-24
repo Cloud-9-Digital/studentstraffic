@@ -393,6 +393,15 @@ publish invalidation was scoped to entity tags.
 
 ## Resolved issues
 
+- Canonical `courses.duration_years` also supports exact fractional awards through `numeric(4,1)`
+  with Drizzle number mode. Forward migration `0084_course_duration_years_numeric.sql` changes
+  only that column; existing integer durations retain their values. Both payload entry points use
+  the shared positive, one-decimal course-duration validator (maximum 999.9), rejecting values
+  that PostgreSQL would round. Programme-offering precision is unchanged. Catalogue/admin
+  data types already use `number`, and the import writer passes the validated numeric value
+  through without integer conversion. Apply the schema migration before publishing a new
+  fractional canonical course.
+
 - ~~`program_offerings.duration_years` was `integer`, rejecting fractional-year programs~~ — fixed
   2026-07-07 via `drizzle/0051_program_offering_duration_years_numeric.sql` (now `numeric(4,1)`).
   Fractional durations (e.g. a 5.5-year MD) publish fine now.

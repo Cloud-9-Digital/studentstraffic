@@ -26,6 +26,7 @@ import {
 } from "@/lib/catalogue-facets";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 import {
+  courseDurationYearsSchema,
   programmeMediumNoteSchema,
   programmeMediumSchema,
   type CatalogPayload,
@@ -55,7 +56,7 @@ const courseSchema = z.object({
   discipline: z.string().min(2),
   aliases: z.array(z.string().min(2)),
   displayOrder: z.number().int().nonnegative(),
-  durationYears: z.number().int().positive(),
+  durationYears: courseDurationYearsSchema,
   summary: z.string().min(180).max(1000),
   metaTitle: z.string().min(20).max(70),
   metaDescription: z.string().min(80).max(170),

@@ -1,0 +1,38 @@
+{
+  "manifestId": "india-stella-maris-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Authentic official complete identifying crest and main campus facade; no overlays or accreditation graphics.",
+  "entries": [
+    {
+      "universitySlug": "stella-maris-college-chennai",
+      "universityName": "Stella Maris College (Autonomous), Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://stellamariscollege.edu.in/assets/images/icon.png",
+          "sourceType": "official",
+          "sourcePage": "https://stellamariscollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on the college website. Ordinary directHTTPS retrieval returned a genuine PNG,visually checked25October2026. Complete unaltered source retained locally with checksum; no open licence or upscaling claimed.",
+          "proposedPublicId": "studentstraffic/universities/stella-maris-college-chennai/logo",
+          "altText": "Stella Maris College crest",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/stella-maris-20261025/logo.png",
+          "sha256": "b711cf97c09f9dc416ebb51068e9d5a96a3ac78f01d6d4493772943b00c79686"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://stellamariscollege.edu.in/assets/images/banner01.png",
+          "sourceType": "official",
+          "sourcePage": "https://stellamariscollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on the college website. Ordinary directHTTPS retrieval returned a genuine PNG,visually checked25October2026. Complete unaltered source retained locally with checksum; no open licence or upscaling claimed.",
+          "proposedPublicId": "studentstraffic/universities/stella-maris-college-chennai/cover",
+          "altText": "Stella Maris College main facade, garden and palm trees in Chennai",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/stella-maris-20261025/cover.png",
+          "sha256": "29b3f64c14fa796bc20cc69a14549ffb63dad3b74498fb6cc558770bafdd1e04"
+        }
+      ],
+      "migrationId": "0223-stella-maris-college-chennai"
+    }
+  ]
+}

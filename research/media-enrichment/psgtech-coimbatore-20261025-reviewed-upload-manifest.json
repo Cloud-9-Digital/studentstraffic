@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "psg-college-of-technology",
+      "universityName": "PSG College of Technology",
+      "sourceBatch": "codex-psgtech-coimbatore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.psgtech.edu/BScMScAdmission2026/image/logo.jpeg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgtech.edu/BScMScAdmission2026/",
+          "rightsBasis": "Official institutional public brand and campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "PSG College of Technology technical shield crest",
+          "visualCheck": "Native274×362 official technical-college shield: textile/gear/machine symbols, PSGCTroundel, KnowledgeandServicemotto and1951. Matches shield in official header. Genuine original brand asset, not generic PSG group diamond, favicon, collage or synthetic image.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicGET and nativeimageinspection with sequential view_image calls; publicserver weakDHrequired reducedciphersecuritylevel, with certificateverificationretained. No credentials or privateapplicationdata.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-technology/logo-20261025",
+          "localPath": "research/india-source-bundles/psg-college-of-technology/science-logo.jpeg",
+          "sha256": "851a021b89d45aca87ce2d89f18a0032e3fade0f218d8aadeb5bd7e7506afe2b",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.psgtech.edu/BScMScAdmission2026/image/background.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgtech.edu/BScMScAdmission2026/",
+          "rightsBasis": "Official institutional public brand and campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Historic PSG Industrial Institute building in the shared Peelamedu campus",
+          "visualCheck": "Native1280×713 official admissions background: historic white arched PSGIndustrialInstitutebuilding, twin domes, entrance and fountain. The official college history explicitly places PSGTech on the same IndustrialInstitutecampus. Caption identifies shared-campusbuilding, not an exclusive engineering faculty building. No stock or attribution-dependentlicence.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicGET and nativeimageinspection with sequential view_image calls; publicserver weakDHrequired reducedciphersecuritylevel, with certificateverificationretained. No credentials or privateapplicationdata.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-technology/cover-20261025",
+          "localPath": "research/india-source-bundles/psg-college-of-technology/science-campus.jpg",
+          "sha256": "24f2f2ace024cbf27836f75745a55180cec4bd42db090ef93d89bb8a44a1ca1a",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

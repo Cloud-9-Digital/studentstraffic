@@ -154,7 +154,7 @@ export const courses = pgTable(
     aliases: text("aliases").array().notNull().default([]),
     active: boolean("active").notNull().default(true),
     displayOrder: integer("display_order").notNull().default(0),
-    durationYears: integer("duration_years").notNull(),
+    durationYears: numeric("duration_years", { precision: 4, scale: 1, mode: "number" }).notNull(),
     summary: text("summary").notNull(),
     metaTitle: text("meta_title").notNull(),
     metaDescription: text("meta_description").notNull(),
