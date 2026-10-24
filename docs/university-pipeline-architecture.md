@@ -577,3 +577,7 @@ Both publishers use `lib/program-medium.ts`. Migration `0073_normalize_program_m
 ### Tamil teaching-language facet (25 October 2026)
 
 The controlled teaching-language registry includes `tamil` (display label `Tamil`) for source-verified Tamil instruction. Mixed programmes store both `english` and `tamil` in `instructionLanguages`, with `medium: "English / Tamil"`; this does not establish an independently selectable English-only route. TNPESU Yoga regulations explicitly list both languages.
+
+Teaching-language additions must also update the database normalization trigger allow-list.
+Migration `0083_tamil_teaching_language` adds Tamil while preserving canonical mixed-language
+labels; apply the schema migration before publishing offerings that use the new code.
