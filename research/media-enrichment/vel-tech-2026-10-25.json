@@ -1,0 +1,40 @@
+{
+  "manifestId": "vel-tech-2026-10-25",
+  "status": "reviewed-offline-research-only",
+  "entries": [
+    {
+      "universitySlug": "vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology",
+      "universityName": "Vel Tech Rangarajan Dr Sagunthala R&D Institute of Science and Technology",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://static.npfs.co/accounts/609/documents/2026/1/29/3d9f5c5499d14f32a1b064f67d450719_Vel%20Tech%20Logo.jpg%20%281%29.jpeg?1790228289",
+          "sourceType": "official",
+          "sourcePage": "https://application.veltech.edu.in/",
+          "rightsBasis": "University-supplied identification asset on the official admissions portal, delivered by its admissions vendor CDN. No open licence claimed; used only to identify the institution.",
+          "altText": "Vel Tech university crest and name on white",
+          "visualCheck": "16559×7096 JPEG; high-resolution red/blue crest and full university name, clearly visible on white. Original white footer alternative rejected.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "curl GET returned200 image/jpeg; local downloaded pixels visually inspected.",
+          "proposedPublicId": "studentstraffic/universities/vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/54/Campus-vtu.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Campus-vtu.jpg",
+          "rightsBasis": "Ghantajayaram, Campus-vtu.jpg; CC0 1.0 public-domain dedication verified on Wikimedia Commons. Historical photograph dated2015, uploaded9January2016.",
+          "altText": "Students beside the Vel Tech campus sign in a historical 2015 photograph",
+          "visualCheck": "2048×1360 JPEG; students in Vel Tech blazers by prominent Vel Tech sign and landscaped campus entrance. Historical image, not evidence of current facilities.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "curl GET returned200 image/jpeg; local downloaded pixels visually inspected.",
+          "proposedPublicId": "studentstraffic/universities/vel-tech-rangarajan-dr-sagunthala-rd-institute-of-science-and-technology/cover"
+        }
+      ]
+    }
+  ]
+}

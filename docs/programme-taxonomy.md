@@ -157,3 +157,8 @@ The same batch adds `msc-information-technology` and `msc-nanoscience-technology
 ### Law and policy postgraduate diplomas (2026-10-25)
 
 `pg-diploma-law-policy` covers graduate-entry diplomas in specialised law and policy, including fisheries governance. It uses the `postgraduate-diploma` level and `law` stream, distinct from a practising-lawyer qualifying LLB or an LLM. Programme records retain exact specialisation, hybrid delivery, attendance requirements and national eligibility.
+
+
+### B.Sc. Data Science (25 October 2026)
+
+`bsc-data-science` is a university-neutral bachelor's family in `computing-information-systems`, distinct from `bsc-computer-science` and the four-year engineering family `be-btech-data-science`. Remove `BSc Data Science` from both former alias sets: the same award must not resolve to two unrelated families. Engineering aliases now name B.Tech./B.Eng. qualifications explicitly. HITS B.Sc. Data Science maps to the dedicated science degree family, with its verified three-year duration stored on the offering; B.Tech. AI and Data Science retains the engineering family and four-year duration. Historical applied payloads remain immutable; pending bundles use the corrected aliases.

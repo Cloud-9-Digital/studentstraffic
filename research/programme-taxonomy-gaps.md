@@ -2430,3 +2430,28 @@ These Joy University programmes have no exact canonical entry. None of them is p
 | Joy University | India | joy-university | B.A. Criminology & Police Administration | B.A. | bachelors | Bachelor's in Criminology | bachelor-criminology | https://joyuniversity.edu.in/University/School-of-Arts-and-Natural-Sciences | No criminology canonical; `ba-sociology` would misstate the award. | claude-india-joy-20261022 | resolved 2026-10-22 (added to taxonomy; shipped in 0117) |
 | Joy University | India | joy-university | B.Sc. Forensic Science | B.Sc. | bachelors | B.Sc. in Forensic Science | bsc-forensic-science | https://joyuniversity.edu.in/University/School-of-Arts-and-Natural-Sciences | Only `msc-forensic-science` exists. | claude-india-joy-20261022 | resolved 2026-10-22 (added to taxonomy; shipped in 0117) |
 | Joy University | India | joy-university | B.Sc. Renewable Energy | B.Sc. | bachelors | B.Sc. in Renewable Energy | bsc-renewable-energy | https://joyuniversity.edu.in/University/School-of-Arts-and-Natural-Sciences | `bsc-environmental-science` and `me-mtech-energy-engineering` are different awards/levels. | claude-india-joy-20261022 | resolved 2026-10-22 (added to taxonomy; shipped in 0117) |
+
+
+## HITS Padur — 25 October 2026 held qualification matches
+
+- M.Sc. Food Technology (Integrated) → `GAP:m-sc-food-technology-integrated`; source https://hindustanuniv.ac.in/integrated-master-of-science-msc-food-technology/. Held; no new taxonomy row invented.
+- M.Sc. Visual Communication(Integrated) → `GAP:m-sc-visual-communication-integrated`; source https://hindustanuniv.ac.in/master-of-science-msc-visual-communication/. Held; no new taxonomy row invented.
+- Integrated M.Sc. Mathematics (B.Sc.+M.Sc.) → `GAP:integrated-m-sc-mathematics-b-sc-m-sc`; source https://hindustanuniv.ac.in/master-of-science-msc-mathematics-integrated/. Held; no new taxonomy row invented.
+- M.Sc. Mathematics (Integrated) → `GAP:m-sc-mathematics-integrated`; source https://hindustanuniv.ac.in/master-of-science-msc-mathematics-integrated/. Held; no new taxonomy row invented.
+- B.Voc. – Aircraft Maintenance → `GAP:b-voc-aircraft-maintenance`; source https://hindustanuniv.ac.in/undergraduate-degree/. Held; no new taxonomy row invented.
+- B.Voc. - Automobile Servicing Technology → `GAP:b-voc-automobile-servicing-technology`; source https://hindustanuniv.ac.in/bachelor-of-vocational-programmes-bvoc-automobile-servicing-technology/. Held; no new taxonomy row invented.
+- B.Voc. - Food Processing Technology → `GAP:b-voc-food-processing-technology`; source https://hindustanuniv.ac.in/department-of-food-technology/. Held; no new taxonomy row invented.
+- B.Voc. - Media Production → `GAP:b-voc-media-production`; source https://hindustanuniv.ac.in/bachelor-of-vocational-programs/. Held; no new taxonomy row invented.
+- M.Tech. Defense Technology → `GAP:m-tech-defense-technology`; source https://hindustanuniv.ac.in/master-of-technology-mtech-defence-technology-aerospace-technology/. Held; no new taxonomy row invented.
+- Master of Science (M.Sc.) → `GAP:master-of-science-m-sc`; source https://hindustanuniv.ac.in/master-of-science-msc-visual-communication/. Held; no new taxonomy row invented.
+- PG Diploma in Marital Counselling → `GAP:pg-diploma-in-marital-counselling`; source https://api.hindustanuniv.ac.in/uploads/PGD_marital_counselling_4d2910d6b8.pdf. Held; no new taxonomy row invented.
+- PG Diploma in Child & Adolescent Counselling → `GAP:pg-diploma-in-child-adolescent-counselling`; source https://api.hindustanuniv.ac.in/uploads/PGD_child_adolescent_counselling_1d3b916df6.pdf. Held; no new taxonomy row invented.
+- Diploma in Electronics & Communication Engineering → `GAP:diploma-in-electronics-communication-engineering`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- Professional Diploma in Cyber Investigation and Laws → `GAP:professional-diploma-in-cyber-investigation-and-laws`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- Professional Diploma in Cyber Security Management → `GAP:professional-diploma-in-cyber-security-management`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- PG Diploma in Child & Adolescent → `GAP:pg-diploma-in-child-adolescent`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- PG Diploma in Sports Management → `GAP:pg-diploma-in-sports-management`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- PG Diploma in Global Sports Management → `GAP:pg-diploma-in-global-sports-management`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- PG Diploma in Strength and Conditioning → `GAP:pg-diploma-in-strength-and-conditioning`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- PG Diploma in Yoga → `GAP:pg-diploma-in-yoga`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.
+- Advanced Diploma in Photo & Videography → `GAP:advanced-diploma-in-photo-videography`; source https://hindustanuniv.ac.in/diploma-courses/. Held; no new taxonomy row invented.

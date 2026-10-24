@@ -1,0 +1,40 @@
+{
+  "manifestId": "periyar-university-2026-10-25",
+  "status": "reviewed-offline-research-only",
+  "entries": [
+    {
+      "universitySlug": "periyar-university",
+      "universityName": "Periyar University",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.periyaruniversity.ac.in/Need/images/logo.JPG",
+          "sourceType": "official",
+          "sourcePage": "https://www.periyaruniversity.ac.in/",
+          "rightsBasis": "Official university identification crest; no open licence claimed.",
+          "altText": "Periyar University Salem crest",
+          "visualCheck": "180\u00d7210 JPEG; white-backed purple university ring, torch/book and Periyar portrait. Official homepage crest is clear and uncropped.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET download and local pixel inspection; Commons author, date and CC BY4.0 licence checked for cover.",
+          "proposedPublicId": "studentstraffic/universities/periyar-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.periyaruniversity.ac.in/Need/images/grid.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.periyaruniversity.ac.in/",
+          "rightsBasis": "Official university homepage campus photograph, used for institutional identification; no open licence claimed.",
+          "altText": "Main block, Periyar statue and entrance drive at Periyar University in Salem",
+          "visualCheck": "1100\u00d7500 JPEG; clear university main block, prominent Salem university roof sign, Periyar statue and entrance drive. Current official homepage hero, uncropped. Founder portrait and attribution-dependent Commons photo rejected.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and downloaded local pixel inspection. Official homepage hero image.",
+          "proposedPublicId": "studentstraffic/universities/periyar-university/cover"
+        }
+      ]
+    }
+  ]
+}

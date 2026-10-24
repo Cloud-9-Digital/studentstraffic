@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "hindustan-institute-of-technology-and-science",
+      "universityName": "Hindustan Institute of Technology and Science",
+      "sourceBatch": "codex-hits-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://hindustanuniv.ac.in/assets/image/new-logo.svg",
+          "proposedPublicId": "studentstraffic/universities/hindustan-institute-of-technology-and-science/logo-20261025",
+          "altText": "Hindustan Institute of Technology and Science seal",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand/marketing asset used to identify and illustrate the institution in a factual profile; no licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 95,
+              "height": 113
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://api.hindustanuniv.ac.in/uploads/2_6500e92341.jpg",
+          "proposedPublicId": "studentstraffic/universities/hindustan-institute-of-technology-and-science/cover-20261025",
+          "altText": "Academic building and landscaped grounds at HITS, Padur",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand/marketing asset used to identify and illustrate the institution in a factual profile; no licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

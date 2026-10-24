@@ -1,0 +1,1489 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "msc-computer-science",
+      "name": "M.Sc. in Computer Science",
+      "shortName": "M.Sc. Computer Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science",
+      "aliases": [
+        "Master of Science in Computer Science",
+        "MSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "M.Sc. Computer Science is the Students Traffic catalogue category for postgraduate degrees that develop advanced computer-science knowledge through technical study, practical work and a substantial independent project. The precise academic background required, curriculum, fee and delivery route must be assessed from the university's current programme information.",
+      "metaTitle": "M.Sc. Computer Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Computer Science programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-data-science",
+      "name": "M.Sc. in Data Science",
+      "shortName": "M.Sc. Data Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "data-science",
+      "aliases": [
+        "Master of Science in Data Science",
+        "MSc Data Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate Master of Science degrees in data science, usually one to two years after a bachelor's degree with a quantitative or computing background. Programmes typically cover statistics, machine learning, programming, databases and big-data tools, data visualisation and applied projects, often with industry internships or capstone work.",
+      "metaTitle": "M.Sc. Data Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Data Science programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "mca",
+      "name": "Master of Computer Applications",
+      "shortName": "MCA",
+      "stream": "computing-information-systems",
+      "level": "masters",
+      "discipline": "computer-applications",
+      "aliases": [
+        "M.C.A.",
+        "Master in Computer Applications"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The Master of Computer Applications is a two-year postgraduate degree in applied computing, open to graduates who have studied computing or mathematics at undergraduate level. Study covers advanced programming, algorithms, database management, software engineering, computer networks and web technologies, with electives such as machine learning, cloud computing, data analytics and cyber security, and usually a major project or industry internship. Graduates typically work as software developers, systems analysts or IT consultants, and some continue to doctoral research in computer applications.",
+      "metaTitle": "MCA Programmes and Admissions",
+      "metaDescription": "Compare MCA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "ma-history",
+      "name": "M.A. in History",
+      "shortName": "M.A. History",
+      "stream": "arts-humanities",
+      "level": "masters",
+      "discipline": "history",
+      "aliases": [
+        "MA History",
+        "Master of Arts in History"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A master's catalogue category for advanced historical research and interpretation. University offerings may focus on a period, region or interdisciplinary field, so the official title and curriculum should be checked before applying.",
+      "metaTitle": "M.A. History Programmes and Admissions",
+      "metaDescription": "Compare M.A. History programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "periyar-university",
+      "name": "Periyar University",
+      "city": "Salem",
+      "type": "Public",
+      "establishedYear": 1997,
+      "officialWebsite": "https://www.periyaruniversity.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.periyaruniversity.ac.in/Need/images/logo.JPG",
+          "rights": "Official university identification crest; no open licence claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://www.periyaruniversity.ac.in/Need/images/grid.jpg",
+          "rights": "Official university homepage campus photograph, used for institutional identification; no open licence claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Main block, Periyar statue and entrance drive at Periyar University in Salem"
+        }
+      },
+      "summary": "Periyar University is a state public university established in Salem on 17 September 1997. It offers university-department teaching and research alongside affiliated-college and distance-education routes. The regular campus programmes below belong to its Salem university departments.",
+      "campusLifestyle": "Students can use the central and department libraries, sports facilities, National Service Scheme, Youth Red Cross and Women’s Studies Centre. Campus amenities include a Computer Centre, Indoor Stadium, bank, post office and transport services. Activities and facilities support university study; access and timetables depend on the relevant department.",
+      "cityProfile": "The university is at Periyar Palkalai Nagar in Salem, Tamil Nadu. Its prospectus describes bus, rail and air connections. The Dharmapuri Centre for Post Graduate and Research Studies is a separate teaching location; Salem department facts should not be transferred to that centre.",
+      "practicalExposure": "The regular department curricula use the Choice Based Credit System. Computer Science and Data Science include practical courses and projects, while History includes a core industry project, internship and extension activity. These are curricular requirements rather than a promise of a paid placement.",
+      "hostelOverview": "The university lists separate hostels for boys and girls. Current room availability, accommodation charges and admission arrangements require confirmation. An academic admission or a historical fee table does not establish a reserved room or a current residential package.",
+      "dietarySupport": "A current hostel menu and programme-specific meal charge are not verified. Applicants with dietary requirements should obtain the hostel’s current meal arrangements and accommodation quote before choosing a room.",
+      "safetyOverview": "The campus lists a Health Centre. The mandatory disclosure describes medical support from a doctor and team. These facilities do not establish emergency response times or a personal-safety guarantee; students should obtain current campus contacts when joining.",
+      "studentSupport": "The Career Guidance and Placement Cell organises recruitment and pooled campus drives and training activities. General and department libraries, the Women’s Studies Centre and student-service groups support campus study. The university requires eligibility certification for applicants whose qualifying degree comes from another university.",
+      "whyChoose": [
+        "Regular postgraduate study in Salem with explicit programme language and entry rules.",
+        "Department libraries, computing facilities and project work support academic study.",
+        "UGC state-university listing and Section 12(B) status have regulator-owned verification."
+      ],
+      "thingsToConsider": [
+        "The July intake label represents the verified 1 July 2025 department calendar, requiring a new-cycle check.",
+        "Tuition is on request; historical composite fee tables are not current tuition quotes.",
+        "MCA is published as a domestic route; NRI and foreign admission remain unverified."
+      ],
+      "bestFitFor": [
+        "Graduates meeting the chosen programme’s subject and equivalence requirements.",
+        "Applicants seeking English-medium regular postgraduate study in Salem.",
+        "Students prepared to verify current fees, accommodation and next-cycle dates before applying."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC-listed state university — Salem",
+        "UGC Section 12(B) — eligible for central assistance"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated university list: Periyar University, Salem",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "UGC Section 12(B) state-university list: Periyar University, Salem",
+          "url": "https://www.ugc.gov.in/oldpdf/State%20University/List%20of%20State%20Universities%20which%20are%20included%20under%20Section%2012_B_%20of%20the%20UGC%20Act%2C%201956%20_As%20on%2011-09-2015.pdf"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "periyar-msc-computer-science",
+          "canonicalCourseSlug": "msc-computer-science",
+          "officialTitle": "M.Sc. Computer Science",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the specific degree and marks requirements",
+              "Foreign nationals and NRIs satisfying the qualifying-degree assessment and valid passport/Indian visa requirements"
+            ],
+            "restrictions": [
+              "University equivalence assessment applies to qualifications from other universities.",
+              "Applicants from other Indian states and foreign nationals are considered under General Turn.",
+              "The 2025–26 prospectus earmarks 10% supernumerary seats for foreign nationals including NRIs in all PG programmes; current allocation and status documentation require confirmation."
+            ],
+            "notes": "Programme eligibility is subject to university assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Computer Science is a two-year English-medium regular programme in the Salem university departments. The 2026–27 notice assigns this programme to department entrance test.",
+            "eligibility": {
+              "intro": "The applicable programme regulation gives the following entry conditions.",
+              "items": [
+                "B.Sc. Computer Science, BCA, Computer Technology, Information Science/Technology or a university-accepted equivalent computing degree.",
+                "Listed B.Sc. variants include Computer Science with AI, Cyber Security, AI and Data Science, AI and Machine Learning, Internet of Things and Data Science; B.Voc. AR & VR is also listed.",
+                "Other-university qualifications need a separate Periyar University eligibility certificate at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online University Department application through the official university admission link.",
+              "Pay the applicable application charge online and retain the filled application printout.",
+              "Send the printout with self-attested qualification records and required certificates to the relevant Head of Department in Salem.",
+              "Follow the department’s entrance-test notice and assessment instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "SSLC and Higher Secondary mark statements",
+                "Qualifying undergraduate mark statements",
+                "Transfer certificate",
+                "Periyar eligibility certificate for qualifications from another university"
+              ],
+              "application": [
+                "Filled application printout",
+                "Community certificate where applicable",
+                "Passport and Indian visa/status documents for foreign/NRI applicants"
+              ]
+            },
+            "deadlinesNote": "Historical regular Salem baseline: odd semester reopened 1 July 2025; CBCS explicitly includes semester I in July–November. Confirm the next cycle separately. The 2026–27 notice closed online 31 May 2026 and hard copies 10 June 2026."
+          },
+          "medium": "English",
+          "mediumNote": "The applicable university-department regulation explicitly identifies English as the medium of instruction/study.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "English",
+              "details": "Two academic years across four semesters in the Salem university departments."
+            }
+          ]
+        },
+        {
+          "slug": "periyar-msc-data-science",
+          "canonicalCourseSlug": "msc-data-science",
+          "officialTitle": "M.Sc. Data Science",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the specific degree and marks requirements",
+              "Foreign nationals and NRIs satisfying the qualifying-degree assessment and valid passport/Indian visa requirements"
+            ],
+            "restrictions": [
+              "University equivalence assessment applies to qualifications from other universities.",
+              "Applicants from other Indian states and foreign nationals are considered under General Turn.",
+              "The 2025–26 prospectus earmarks 10% supernumerary seats for foreign nationals including NRIs in all PG programmes; current allocation and status documentation require confirmation."
+            ],
+            "notes": "Programme eligibility is subject to university assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Data Science is a two-year English-medium regular programme in the Salem university departments. The 2026–27 notice assigns this programme to department entrance test.",
+            "eligibility": {
+              "intro": "The applicable programme regulation gives the following entry conditions.",
+              "items": [
+                "An accepted bachelor’s in Electrical/Electronics, ECE, CSE, IT or Electronics and Instrumentation engineering.",
+                "B.Sc. Computer Science, including Cyber Security/AI/AI-ML/AI-DS variants; Computer Technology, Software Engineering or BCA.",
+                "Mathematics, Statistics, Physics, Data Science/Data Analytics, Electronics/Electronics and Communications or B.Com. Computer Applications are also listed.",
+                "A UG degree with Mathematics or Computer Science as a subject is also listed, under an accepted 10+2/3+2/3/4 pattern and university equivalence conditions.",
+                "Other-university qualifications need a separate Periyar University eligibility certificate at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online University Department application through the official university admission link.",
+              "Pay the applicable application charge online and retain the filled application printout.",
+              "Send the printout with self-attested qualification records and required certificates to the relevant Head of Department in Salem.",
+              "Follow the department’s entrance-test notice and assessment instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "SSLC and Higher Secondary mark statements",
+                "Qualifying undergraduate mark statements",
+                "Transfer certificate",
+                "Periyar eligibility certificate for qualifications from another university"
+              ],
+              "application": [
+                "Filled application printout",
+                "Community certificate where applicable",
+                "Passport and Indian visa/status documents for foreign/NRI applicants"
+              ]
+            },
+            "deadlinesNote": "Historical regular Salem baseline: odd semester reopened 1 July 2025; CBCS explicitly includes semester I in July–November. Confirm the next cycle separately. The 2026–27 notice closed online 31 May 2026 and hard copies 10 June 2026."
+          },
+          "medium": "English",
+          "mediumNote": "The applicable university-department regulation explicitly identifies English as the medium of instruction/study.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "English",
+              "details": "Two academic years across four semesters in the Salem university departments."
+            }
+          ]
+        },
+        {
+          "slug": "periyar-ma-history",
+          "canonicalCourseSlug": "ma-history",
+          "officialTitle": "M.A. History",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the specific degree and marks requirements",
+              "Foreign nationals and NRIs satisfying the qualifying-degree assessment and valid passport/Indian visa requirements"
+            ],
+            "restrictions": [
+              "University equivalence assessment applies to qualifications from other universities.",
+              "Applicants from other Indian states and foreign nationals are considered under General Turn.",
+              "The 2025–26 prospectus earmarks 10% supernumerary seats for foreign nationals including NRIs in all PG programmes; current allocation and status documentation require confirmation."
+            ],
+            "notes": "Programme eligibility is subject to university assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.A. History is a two-year English-medium regular programme in the Salem university departments. The 2026–27 notice assigns this programme to direct admission.",
+            "eligibility": {
+              "intro": "The applicable programme regulation gives the following entry conditions.",
+              "items": [
+                "Any graduate may apply; preference is given to History graduates.",
+                "Applicants qualifying from another university must obtain a separate Periyar University eligibility certificate for admission."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online University Department application through the official university admission link.",
+              "Pay the applicable application charge online and retain the filled application printout.",
+              "Send the printout with self-attested qualification records and required certificates to the relevant Head of Department in Salem.",
+              "Follow the department’s direct-admission selection and document-verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "SSLC and Higher Secondary mark statements",
+                "Qualifying undergraduate mark statements",
+                "Transfer certificate",
+                "Periyar eligibility certificate for qualifications from another university"
+              ],
+              "application": [
+                "Filled application printout",
+                "Community certificate where applicable",
+                "Passport and Indian visa/status documents for foreign/NRI applicants"
+              ]
+            },
+            "deadlinesNote": "Historical regular Salem baseline: odd semester reopened 1 July 2025; CBCS explicitly includes semester I in July–November. Confirm the next cycle separately. The 2026–27 notice closed online 31 May 2026 and hard copies 10 June 2026."
+          },
+          "medium": "English",
+          "mediumNote": "The applicable university-department regulation explicitly identifies English as the medium of instruction/study.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "English",
+              "details": "Two academic years across four semesters in the Salem university departments."
+            }
+          ]
+        },
+        {
+          "slug": "periyar-mca",
+          "canonicalCourseSlug": "mca",
+          "officialTitle": "Master of Computer Applications",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the specific degree and marks requirements"
+            ],
+            "restrictions": [
+              "University equivalence assessment applies to qualifications from other universities.",
+              "NRI and foreign admission is not verified for this offering. The 2026–27 university-hosted AICTE EOA records No for both NRI and International Students approval status; the older general PG foreign provision must not be assumed to override that programme-specific record."
+            ],
+            "notes": "Published as a domestic route. International and NRI routes remain held pending current programme-specific clarification.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Aicte/1.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Master of Computer Applications is a two-year English-medium regular programme in the Salem university departments. The 2026–27 notice assigns this programme to department entrance test.",
+            "eligibility": {
+              "intro": "The applicable programme regulation gives the following entry conditions.",
+              "items": [
+                "A recognized undergraduate degree, including B.E./B.Tech., B.Sc., B.Com., B.A., B.Voc., BCA or equivalent, preferably with Mathematics at 10+2 or graduation.",
+                "At least 50% in the qualifying examination, or 45% for reserved categories.",
+                "Candidates without Mathematics must complete a compulsory Mathematics bridge course and additional Computer Science bridge courses prescribed by the university.",
+                "Applicants qualifying from another university must obtain a separate Periyar University eligibility certificate for admission."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the online University Department application through the official university admission link.",
+              "Pay the applicable application charge online and retain the filled application printout.",
+              "Send the printout with self-attested qualification records and required certificates to the relevant Head of Department in Salem.",
+              "Follow the department’s entrance-test notice and assessment instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "SSLC and Higher Secondary mark statements",
+                "Qualifying undergraduate mark statements",
+                "Transfer certificate",
+                "Periyar eligibility certificate for qualifications from another university"
+              ],
+              "application": [
+                "Filled application printout",
+                "Community certificate where applicable"
+              ]
+            },
+            "deadlinesNote": "Historical regular Salem baseline: odd semester reopened 1 July 2025; CBCS explicitly includes semester I in July–November. Confirm the next cycle separately. The 2026–27 notice closed online 31 May 2026 and hard copies 10 June 2026."
+          },
+          "medium": "English",
+          "mediumNote": "The applicable university-department regulation explicitly identifies English as the medium of instruction/study.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+          "teachingPhases": [
+            {
+              "phase": "Regular postgraduate study",
+              "language": "English",
+              "details": "Two academic years across four semesters in the Salem university departments."
+            }
+          ]
+        }
+      ],
+      "admissionsContent": {
+        "overview": "Choose the exact Salem department programme before applying. The current notice distinguishes entrance-test programmes from direct admission. Applicants with qualifications from another university need a separate eligibility certificate.",
+        "applicationPortals": {
+          "general": "https://www.periyaruniversity.ac.in/"
+        },
+        "feeNote": "Ask for current programme and applicant-category tuition and other charges separately."
+      },
+      "researchSources": [
+        {
+          "label": "Periyar notice verification source",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar prospectus verification source",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar calendar verification source",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar cbcs verification source",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2021/CBCS_Regulations.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar fees verification source",
+          "url": "https://www.periyaruniversity.ac.in/fees.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar ugc verification source",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar 12b verification source",
+          "url": "https://www.ugc.gov.in/oldpdf/State%20University/List%20of%20State%20Universities%20which%20are%20included%20under%20Section%2012_B_%20of%20the%20UGC%20Act%2C%201956%20_As%20on%2011-09-2015.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Periyar eoa verification source",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2026/Aicte/1.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Applicable department programme regulation",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Applicable department programme regulation",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Applicable department programme regulation",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Applicable department programme regulation",
+          "url": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is this the Salem university or Periyar Maniammai?",
+          "answer": "This is Periyar University, a state public university in Salem established on 17 September 1997. Periyar Maniammai in Thanjavur is a separate institution."
+        },
+        {
+          "question": "Are these programmes regular campus degrees?",
+          "answer": "Yes. The 2026–27 admission notice lists these programmes under regular-mode University Departments in Salem. They are distinct from the Dharmapuri centre, affiliated-college and distance-education routes."
+        },
+        {
+          "question": "Which programmes are taught in English?",
+          "answer": "The applicable regulations explicitly identify English for M.Sc. Computer Science, M.Sc. Data Science, MCA and M.A. History. A syllabus written in English does not by itself establish the medium of other degrees."
+        },
+        {
+          "question": "Who can enter Computer Science?",
+          "answer": "The regulation lists computing qualifications including B.Sc. Computer Science, BCA, Computer Technology, Information Science/Technology, several AI and Cyber Security variants, IoT, Data Science and B.Voc. AR & VR. University equivalence conditions apply."
+        },
+        {
+          "question": "Who can enter Data Science?",
+          "answer": "The listed routes include relevant engineering, computing, Mathematics, Statistics, Physics and Electronics degrees, BCA and B.Com. Computer Applications. A degree containing Mathematics or Computer Science is also listed, subject to the university’s accepted qualification pattern and equivalence assessment."
+        },
+        {
+          "question": "Who can enter History?",
+          "answer": "Any graduate may apply for the two-year M.A. History. The department gives preference to History graduates. The 2026–27 notice lists this programme under direct admission."
+        },
+        {
+          "question": "What are the MCA academic requirements?",
+          "answer": "A recognized undergraduate degree and at least 50% marks are required, reduced to 45% for reserved categories. Mathematics at school or degree level is preferred; applicants without it must complete the prescribed Mathematics and Computer Science bridge courses."
+        },
+        {
+          "question": "Can foreign nationals and NRIs apply?",
+          "answer": "The 2025–26 prospectus permits eligible foreign nationals and NRIs with valid passport/Indian visa documentation and earmarks 10% supernumerary PG seats. General Turn conditions apply. MCA is published here as a domestic route because current programme-specific international permission is not verified."
+        },
+        {
+          "question": "When does the academic year start?",
+          "answer": "The verified regular-department calendar records odd-semester reopening on 1 July 2025; the same CBCS scope includes semester I in July–November. This is a historical July baseline. The next cycle needs its own commencement confirmation."
+        },
+        {
+          "question": "Are applications currently open?",
+          "answer": "The 2026–27 notice specified 31 May 2026 for online applications and 10 June 2026 for hard copies. Those dates have passed. Check the next official department notice before applying or paying."
+        },
+        {
+          "question": "What are tuition and accommodation charges?",
+          "answer": "Current charges are on request. The linked tuition schedule is dated 2024 and the prospectus tables cover 2025–26. Obtain a new programme- and applicant-category breakdown, separating tuition, admission, examination, laboratory, insurance, hostel and meals."
+        },
+        {
+          "question": "Which documents are needed?",
+          "answer": "The prospectus requests the application printout and self-attested SSLC, Higher Secondary and UG mark statements, community certificate where applicable and transfer certificate. Other-university qualifications require Periyar eligibility certification. Foreign/NRI applicants also need the applicable status documents."
+        },
+        {
+          "question": "Are hostel and student-support facilities available?",
+          "answer": "The university lists separate boys’ and girls’ hostels, libraries, a Computer Centre, Health Centre and Indoor Stadium. The placement cell organises recruitment activities. Hostel availability and any placement outcome require separate confirmation."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Computer Science is offered through regular mode in the 2026–27 Salem department admission notice.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "duration",
+      "claimText": "Two years; four semesters.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "medium",
+      "claimText": "English medium explicitly stated in programme regulation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "Historical July baseline: the 2025–26 calendar records university-department odd-semester reopening on 1 July 2025; its CBCS scope explicitly places semesters I and III in July–November. This is the dated regular Salem department baseline, not a future commencement promise. The 2026–27 notice closed online applications on 31 May 2026 and hard copies on 10 June 2026; confirm the next cycle separately.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "University department CBCS explicitly places semesters I and III in July–November.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2021/CBCS_Regulations.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic applicants meeting the specific degree and marks requirements Foreign nationals and NRIs satisfying the qualifying-degree assessment and valid passport/Indian visa requirements University equivalence assessment applies to qualifications from other universities. Applicants from other Indian states and foreign nationals are considered under General Turn. The 2025–26 prospectus earmarks 10% supernumerary seats for foreign nationals including NRIs in all PG programmes; current allocation and status documentation require confirmation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "eligibility",
+      "claimText": "B.Sc. Computer Science, BCA, Computer Technology, Information Science/Technology, Computer Science with AI, Cyber Security, AI and Data Science, AI and Machine Learning, Internet of Things, Data Science, or B.Voc. AR & VR, or an equivalent degree accepted by the university.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 route: department entrance test; online31May2026/hardcopy10June2026; submit printout to relevant HoD.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "Self-attested SSLC,HSC,UGmarks,community and transfer certificates; separate eligibility certificate for other-university qualifications.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "fee",
+      "claimText": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/fees.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Data Science is offered through regular mode in the 2026–27 Salem department admission notice.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "duration",
+      "claimText": "Two years; four semesters.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "medium",
+      "claimText": "English medium explicitly stated in programme regulation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "Historical July baseline: the 2025–26 calendar records university-department odd-semester reopening on 1 July 2025; its CBCS scope explicitly places semesters I and III in July–November. This is the dated regular Salem department baseline, not a future commencement promise. The 2026–27 notice closed online applications on 31 May 2026 and hard copies on 10 June 2026; confirm the next cycle separately.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "University department CBCS explicitly places semesters I and III in July–November.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2021/CBCS_Regulations.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic applicants meeting the specific degree and marks requirements Foreign nationals and NRIs satisfying the qualifying-degree assessment and valid passport/Indian visa requirements University equivalence assessment applies to qualifications from other universities. Applicants from other Indian states and foreign nationals are considered under General Turn. The 2025–26 prospectus earmarks 10% supernumerary seats for foreign nationals including NRIs in all PG programmes; current allocation and status documentation require confirmation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "eligibility",
+      "claimText": "An accepted bachelor’s degree in Electrical/Electronics, ECE, CSE, IT or Electronics and Instrumentation engineering; or B.Sc. Computer Science and listed AI/Cyber Security variants, Computer Technology, Software Engineering, BCA, Mathematics, Statistics, Physics, Data Science/Data Analytics or Electronics/Electronics and Communications. B.Com. Computer Applications or an undergraduate degree with Mathematics or Computer Science as a subject is also listed; the qualification must follow an accepted 10+2/3+2/3/4 pattern and university equivalence conditions.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 route: department entrance test; online31May2026/hardcopy10June2026; submit printout to relevant HoD.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "Self-attested SSLC,HSC,UGmarks,community and transfer certificates; separate eligibility certificate for other-university qualifications.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "fee",
+      "claimText": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/fees.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "officialTitle",
+      "claimText": "M.A. History is offered through regular mode in the 2026–27 Salem department admission notice.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "duration",
+      "claimText": "Two years; four semesters.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "medium",
+      "claimText": "English medium explicitly stated in programme regulation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "Historical July baseline: the 2025–26 calendar records university-department odd-semester reopening on 1 July 2025; its CBCS scope explicitly places semesters I and III in July–November. This is the dated regular Salem department baseline, not a future commencement promise. The 2026–27 notice closed online applications on 31 May 2026 and hard copies on 10 June 2026; confirm the next cycle separately.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "University department CBCS explicitly places semesters I and III in July–November.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2021/CBCS_Regulations.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic applicants meeting the specific degree and marks requirements Foreign nationals and NRIs satisfying the qualifying-degree assessment and valid passport/Indian visa requirements University equivalence assessment applies to qualifications from other universities. Applicants from other Indian states and foreign nationals are considered under General Turn. The 2025–26 prospectus earmarks 10% supernumerary seats for foreign nationals including NRIs in all PG programmes; current allocation and status documentation require confirmation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "eligibility",
+      "claimText": "Any graduate may apply; preference is given to History graduates.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 route: direct admission; online31May2026/hardcopy10June2026; submit printout to relevant HoD.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "Self-attested SSLC,HSC,UGmarks,community and transfer certificates; separate eligibility certificate for other-university qualifications.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "fee",
+      "claimText": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/fees.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-ma-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "officialTitle",
+      "claimText": "Master of Computer Applications is offered through regular mode in the 2026–27 Salem department admission notice.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "duration",
+      "claimText": "Two years; four semesters.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "medium",
+      "claimText": "English medium explicitly stated in programme regulation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "Historical July baseline: the 2025–26 calendar records university-department odd-semester reopening on 1 July 2025; its CBCS scope explicitly places semesters I and III in July–November. This is the dated regular Salem department baseline, not a future commencement promise. The 2026–27 notice closed online applications on 31 May 2026 and hard copies on 10 June 2026; confirm the next cycle separately.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "intake",
+      "claimText": "University department CBCS explicitly places semesters I and III in July–November.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2021/CBCS_Regulations.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic applicants meeting the specific degree and marks requirements University equivalence assessment applies to qualifications from other universities. NRI and foreign admission is not verified for this offering. The 2026–27 university-hosted AICTE EOA records No for both NRI and International Students approval status; the older general PG foreign provision must not be assumed to override that programme-specific record.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Aicte/1.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "eligibility",
+      "claimText": "A recognized undergraduate degree, including B.E./B.Tech., B.Sc., B.Com., B.A., B.Voc., BCA or equivalent, preferably with Mathematics at 10+2 or graduation. At least 50% in the qualifying examination, or 45% for reserved categories. Candidates without Mathematics must complete a compulsory Mathematics bridge course and additional Computer Science bridge courses prescribed by the university.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 route: department entrance test; online31May2026/hardcopy10June2026; submit printout to relevant HoD.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "admissions",
+      "claimText": "Self-attested SSLC,HSC,UGmarks,community and transfer certificates; separate eligibility certificate for other-university qualifications.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-university",
+      "publicField": "fee",
+      "claimText": "Tuition is on request for the next available cycle. The linked fee schedule is dated 2024 and the latest prospectus fee table is for 2025–26; neither establishes a current 2026–27 tuition charge. Request tuition, laboratory, examination, admission, insurance, accommodation and other charges separately for the exact applicant category.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/fees.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "periyar-mca"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "summary",
+      "claimText": "Periyar University is a state public university established in Salem on 17 September 1997. It offers university-department teaching and research alongside affiliated-college and distance-education routes. The regular campus programmes below belong to its Salem university departments.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "campusLifestyle",
+      "claimText": "Students can use the central and department libraries, sports facilities, National Service Scheme, Youth Red Cross and Women’s Studies Centre. Campus amenities include a Computer Centre, Indoor Stadium, bank, post office and transport services. Activities and facilities support university study; access and timetables depend on the relevant department.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "cityProfile",
+      "claimText": "The university is at Periyar Palkalai Nagar in Salem, Tamil Nadu. Its prospectus describes bus, rail and air connections. The Dharmapuri Centre for Post Graduate and Research Studies is a separate teaching location; Salem department facts should not be transferred to that centre.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "practicalExposure",
+      "claimText": "History curriculum includes a core industry project, internship and extension activity.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "hostelOverview",
+      "claimText": "The university lists separate hostels for boys and girls. Current room availability, accommodation charges and admission arrangements require confirmation. An academic admission or a historical fee table does not establish a reserved room or a current residential package.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "dietarySupport",
+      "claimText": "A current hostel menu and programme-specific meal charge are not verified. Applicants with dietary requirements should obtain the hostel’s current meal arrangements and accommodation quote before choosing a room.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "studentSupport",
+      "claimText": "The Career Guidance and Placement Cell organises recruitment and pooled campus drives and training activities. General and department libraries, the Women’s Studies Centre and student-service groups support campus study. The university requires eligibility certification for applicants whose qualifying degree comes from another university.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "whyChoose",
+      "claimText": "Regular postgraduate study in Salem with explicit programme language and entry rules. Department libraries, computing facilities and project work support academic study. UGC state-university listing and Section 12(B) status have regulator-owned verification.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "thingsToConsider",
+      "claimText": "The July intake label represents the verified 1 July 2025 department calendar, requiring a new-cycle check. Tuition is on request; historical composite fee tables are not current tuition quotes. MCA is published as a domestic route; NRI and foreign admission remain unverified.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "bestFitFor",
+      "claimText": "Graduates meeting the chosen programme’s subject and equivalence requirements. Applicants seeking English-medium regular postgraduate study in Salem. Students prepared to verify current fees, accommodation and next-cycle dates before applying.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "safetyOverview",
+      "claimText": "The campus lists a Health Centre. The mandatory disclosure describes medical support from a doctor and team. These facilities do not establish emergency response times or a personal-safety guarantee; students should obtain current campus contacts when joining.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/aicte.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC-listed state university — Salem",
+      "sourceLabel": "University Grants Commission regulator list",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC Section 12(B) — eligible for central assistance",
+      "sourceLabel": "University Grants Commission regulator list",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/State%20University/List%20of%20State%20Universities%20which%20are%20included%20under%20Section%2012_B_%20of%20the%20UGC%20Act%2C%201956%20_As%20on%2011-09-2015.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "This is Periyar University, a state public university in Salem established on 17 September 1997. Periyar Maniammai in Thanjavur is a separate institution.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "Yes. The 2026–27 admission notice lists these programmes under regular-mode University Departments in Salem. They are distinct from the Dharmapuri centre, affiliated-college and distance-education routes.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The applicable regulations explicitly identify English for M.Sc. Computer Science, M.Sc. Data Science, MCA and M.A. History. A syllabus written in English does not by itself establish the medium of other degrees.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The regulation lists computing qualifications including B.Sc. Computer Science, BCA, Computer Technology, Information Science/Technology, several AI and Cyber Security variants, IoT, Data Science and B.Voc. AR & VR. University equivalence conditions apply.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The listed routes include relevant engineering, computing, Mathematics, Statistics, Physics and Electronics degrees, BCA and B.Com. Computer Applications. A degree containing Mathematics or Computer Science is also listed, subject to the university’s accepted qualification pattern and equivalence assessment.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "Any graduate may apply for the two-year M.A. History. The department gives preference to History graduates. The 2026–27 notice lists this programme under direct admission.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "A recognized undergraduate degree and at least 50% marks are required, reduced to 45% for reserved categories. Mathematics at school or degree level is preferred; applicants without it must complete the prescribed Mathematics and Computer Science bridge courses.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The 2025–26 prospectus permits eligible foreign nationals and NRIs with valid passport/Indian visa documentation and earmarks 10% supernumerary PG seats. General Turn conditions apply. MCA is published here as a domestic route because current programme-specific international permission is not verified.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The verified regular-department calendar records odd-semester reopening on 1 July 2025; the same CBCS scope includes semester I in July–November. This is a historical July baseline. The next cycle needs its own commencement confirmation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The 2026–27 notice specified 31 May 2026 for online applications and 10 June 2026 for hard copies. Those dates have passed. Check the next official department notice before applying or paying.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "Current charges are on request. The linked tuition schedule is dated 2024 and the prospectus tables cover 2025–26. Obtain a new programme- and applicant-category breakdown, separating tuition, admission, examination, laboratory, insurance, hostel and meals.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/fees.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The prospectus requests the application printout and self-attested SSLC, Higher Secondary and UG mark statements, community certificate where applicable and transfer certificate. Other-university qualifications require Periyar eligibility certification. Foreign/NRI applicants also need the applicable status documents.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "The university lists separate boys’ and girls’ hostels, libraries, a Computer Centre, Health Centre and Indoor Stadium. The placement cell organises recruitment activities. Hostel availability and any placement outcome require separate confirmation.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "practicalExposure",
+      "claimText": "Computer Science regular curriculum includes practical courses and projects.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "practicalExposure",
+      "claimText": "Data Science regular curriculum includes practical courses and project work.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "M.Sc. Computer Science: two-year regular study with explicit English instruction.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "M.Sc. Data Science: two-year regular study with explicit English instruction.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(1).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "M.A. History: two-year regular study with explicit English instruction.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-university",
+      "publicField": "faq",
+      "claimText": "Master of Computer Applications: two-year regular study with explicit English instruction.",
+      "sourceLabel": "Periyar University official source",
+      "sourceUrl": "https://www.periyaruniversity.ac.in/Documents/2026/syllabus/UD/8(2).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

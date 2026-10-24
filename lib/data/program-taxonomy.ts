@@ -191,7 +191,8 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "bba", name: "Bachelor of Business Administration", shortName: "BBA", stream: "business", level: "bachelors", discipline: "business-administration", aliases: ["B.B.A.", "Bachelor's in Business Administration", "Bachelor of Management Studies", "BMS", "Bachelor of Business Management"] },
   { slug: "bca", name: "Bachelor of Computer Applications", shortName: "BCA", stream: "computing-information-systems", level: "bachelors", discipline: "computer-applications", aliases: ["B.C.A.", "BCA (Honours)", "Bachelor in Computer Applications"] },
   { slug: "mca", name: "Master of Computer Applications", shortName: "MCA", stream: "computing-information-systems", level: "masters", discipline: "computer-applications", aliases: ["M.C.A.", "Master in Computer Applications"] },
-  { slug: "bsc-computer-science", name: "B.Sc. in Computer Science", shortName: "B.Sc. Computer Science", stream: "computing-information-systems", level: "bachelors", discipline: "computer-science", aliases: ["Bachelor of Science in Computer Science", "BSc (Hons) Computer Science", "BSc Data Science"] },
+  { slug: "bsc-computer-science", name: "B.Sc. in Computer Science", shortName: "B.Sc. Computer Science", stream: "computing-information-systems", level: "bachelors", discipline: "computer-science", aliases: ["Bachelor of Science in Computer Science", "BSc (Hons) Computer Science"] },
+  { slug: "bsc-data-science", name: "B.Sc. in Data Science", shortName: "B.Sc. Data Science", stream: "computing-information-systems", level: "bachelors", discipline: "data-science", aliases: ["Bachelor of Science in Data Science", "BSc Data Science", "BSc (Hons) Data Science"] },
   { slug: "bsc-general-sciences", name: "B.Sc. in General Sciences", shortName: "B.Sc. General Sciences", stream: "natural-sciences", level: "bachelors", discipline: "general-sciences", aliases: ["B.Sc. (General)", "B.Sc. Combined Sciences", "Bachelor of Science (Multidisciplinary)", "B.Sc. PCM"] },
   { slug: "ba-general-arts", name: "B.A. in General Arts", shortName: "B.A. General Arts", stream: "arts-humanities", level: "bachelors", discipline: "general-arts", aliases: ["B.A. (General)", "B.A. Combined Subjects", "Bachelor of Arts (Multidisciplinary)", "B.A. Programme"] },
   { slug: "me-mtech-computer-science-engineering", name: "M.E./M.Tech in Computer Science and Engineering", shortName: "M.E./M.Tech CSE", stream: "engineering", level: "masters", discipline: "computer-science-engineering", aliases: ["Master of Technology in Computer Science and Engineering", "Master of Engineering in Computer Science", "M.Tech Computer Engineering", "M.Tech Artificial Intelligence"] },
@@ -540,7 +541,7 @@ export const canonicalProgrammes = [
     stream: "engineering",
     level: "bachelors",
     discipline: "data-science",
-    aliases: ["Bachelor of Data Science", "BSc Data Science"],
+    aliases: ["Bachelor of Technology in Data Science", "BEng Data Science"],
   },
   {
     slug: "be-btech-information-technology",

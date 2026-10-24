@@ -1,0 +1,24 @@
+# Periyar University (Salem) inventory
+
+Reviewed 25 October 2026. Owner: codex-tn-periyar-salem-20261025. Distinct from Periyar Maniammai in Thanjavur. 138 discoveries: four supported regular PG routes, including domestic-only MCA; remaining discoveries are held or excluded as recorded in the CSV. Research and value-added rows are discoveries, not current admissions claims.
+
+## Sources and scope
+
+- Current 2026–27 admission notice: https://www.periyaruniversity.ac.in/Documents/2026/Advt/ad14.pdf . It separately names regular Salem departments and eight Dharmapuri centre routes. The latter remain held; Salem facts are not transferred.
+- Full department directory: https://www.periyaruniversity.ac.in/Programmes_offered.php . It includes historical research, M.Phil and department-level value-added entries. Current MBA Export and Import Management corresponds to the older directory Export Management candidate, not a separate published offering.
+- Applicable syllabus hub: https://www.periyaruniversity.ac.in/Syllabi.php . Downloaded 67 current/previous department PDFs; extracted text and two URL indexes are in sources/periyar-university. Explicit campus English was found for Computer Science, Data Science, MCA and History only. English PDF text is not itself medium evidence. CDOE language tables are excluded.
+- Current computing regulations: Documents/2026/syllabus/UD/8.pdf (Computer Science), 8(1).pdf (Data Science), 8(2).pdf (MCA). These supersede the older eligibility table. MCA now accepts a recognized undergraduate degree, 50%/45% reserved, preferably Mathematics; compulsory bridges apply without Mathematics. Data Science includes B.Com Computer Applications and a degree with Mathematics/Computer Science, as precisely listed in the 2026 regulation.
+- History: https://www.periyaruniversity.ac.in/Documents/2024/CDC/UD/pg/24_mahis.pdf explicitly confirms English, two years, any graduate with History preference. Current notice corroborates continuing degree and direct admission.
+- International: https://www.periyaruniversity.ac.in/Documents/2025/CDC/Prospectus.pdf permits qualifying foreign/NRI PG applicants, with valid passport/Indian visa documentation, General Turn and 10% supernumerary provision. Current seat allocation is not promised.
+- MCA approval: authentic AICTE-generated EOA F.No.Southern/1-46209872938/2026/EOA, approved 16 March 2026, is linked from the university mandatory disclosure and downloaded from https://www.periyaruniversity.ac.in/Documents/2026/Aicte/1.pdf . It lists 30 MCA seats and No for NRI and International Students Approval Status. Domestic route only is packaged; foreign/NRI scope remains held. No AICTE public recognition badge is claimed without regulator-owned corroboration.
+- Calendar: https://www.periyaruniversity.ac.in/Documents/2025/CDC/calen.pdf ; PDF page 24 / booklet page35 visually confirms University Departments Reopen for Odd Semester(UDE) on 1 July2025. The same booklet and https://www.periyaruniversity.ac.in/Documents/2021/CBCS_Regulations.pdf explicitly include semesters I and III in July–November. This supports the qualified historical regular Salem July baseline only. No future, distance, constituent-college or Dharmapuri cohort date is inferred.
+- Fees: https://www.periyaruniversity.ac.in/fees.php links a 2024 table; the prospectus fees cover 2025–26. All four current tuition amounts are on request. SAARC yearly totals contain composite charges and are not called tuition.
+- Recognition: UGC’s own 2023 consolidated university list and 2015 Section12(B) state list both include Periyar University, Salem. Institutional establishment is1997 under official history; the UGC listing year1998 is not substituted for that date. University-hosted NAAC marketing is not used as a badge.
+
+## Holds and exclusions
+
+Other regular degrees lack an explicit verified campus teaching medium after the applicable2024–26 syllabus search. Five-year integrated and B.Voc routes also need their own first-year scope and duration checks. Biomedical Science, Biostatistics, part-time B.Ed and Immersive Technology discoveries are not confirmed by the current department notice. Legacy research/M.Phil entries and value-added department lists are not asserted as current stand-alone admissions. Eight Dharmapuri PG routes require centre-specific language, entry and intake evidence. Held taxonomy gaps do not prevent the four supported generic mappings.
+
+## Media
+
+Reviewed manifest: research/media-enrichment/periyar-university-2026-10-25.json . Official180×210 crest and official homepage1100×500 campus hero https://www.periyaruniversity.ac.in/Need/images/grid.jpg . Local pixels inspected; founder portrait and attribution-dependent Commons alternative rejected as cover. No Cloudinary or database access performed.
