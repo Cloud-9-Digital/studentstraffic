@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "madras-christian-college",
+      "universityName": "Madras Christian College",
+      "sourceBatch": "codex-mcc-tambaram-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://mcc.edu.in/wp-content/uploads/2021/04/MMC-LOGO-2.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://mcc.edu.in/emblem-motto/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Madras Christian College crest",
+          "visualCheck": "1323×1735 official emblem original sequentially inspected: maroon heraldic hand, cross, anchor and In Hoc Signo motto on white. Standalone genuine institution emblem, not favicon or ranking banner.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 GET; native image dimensions and originals reviewed sequentially with view_image, preserving filename-to-source association.",
+          "proposedPublicId": "studentstraffic/universities/madras-christian-college/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/madras-christian-college/crest.jpg",
+          "sha256": "b9e06361bb805f255d97d995c841f809382a84378ef64213254211415b9cddad"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mcc.edu.in/wp-content/uploads/2021/02/banner-06.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://mcc.edu.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Students using microscopes in a Madras Christian College laboratory",
+          "visualCheck": "1366×760 official homepage photograph sequentially inspected: students in laboratory coats using microscopes beside campus lab windows. No poster text, ranking overlay, external credit or open-licence condition. Alumni reunion banner and white header wordmark rejected.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 GET; native image dimensions and originals reviewed sequentially with view_image, preserving filename-to-source association.",
+          "proposedPublicId": "studentstraffic/universities/madras-christian-college/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/madras-christian-college/banner-06.jpg",
+          "sha256": "3a1508cfcd736f8b37f4aeb5190829c3035b1f7c4bec490cb356dabd900a0259"
+        }
+      ]
+    }
+  ]
+}

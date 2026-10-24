@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "indian-institute-of-technology-madras",
+      "universityName": "Indian Institute of Technology Madras",
+      "sourceBatch": "codex-iitm-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://study.iitm.ac.in/ds/assets/img/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official IIT Madras institutional identity asset from its own degree website; intact emblem, no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/indian-institute-of-technology-madras/logo-20261025",
+          "altText": "Indian Institute of Technology Madras official circular emblem",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.iitm.ac.in/sites/default/files/instigram/202005/About%20IIT%20Madras%20-%20Overview.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional About overview campus photograph used for factual institution identification; no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/indian-institute-of-technology-madras/cover-20261025",
+          "altText": "Gajendra Circle statue and fountain illuminated at the IIT Madras campus",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "loyola-college-chennai",
+      "universityName": "Loyola College",
+      "sourceBatch": "codex-loyola-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admission.loyolacollege.edu/ugonlineapplication/application/home/lccfiles/logo3.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://admission.loyolacollege.edu/ugonlineapplication/application/home/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Loyola College crest",
+          "visualCheck": "Native250x309official admissions-portal PNG sequentially inspected. Full yellow/blue heraldic crest and Luceat Lux Vestra motto; standalone institutional brand asset, not favicon or banner. Oversized wide homepage wordmark with white text rejected for poor fit.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP200 GET with ordinary Mozilla/5.0 User-Agent; local source dimensions checked and originals inspected sequentially to preserve source/output association.",
+          "proposedPublicId": "studentstraffic/universities/loyola-college-chennai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.loyolacollege.edu/imgnew/church.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.loyolacollege.edu/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Tree-lined avenue leading to the church on Loyola College campus",
+          "visualCheck": "Official homepage campus photograph sequentially inspected. Tree-lined road and identifiable campus church; no poster, promotional text or externally credited/open-licence dependency. Shows the college campus, not LIBA or LICET.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP200 GET with ordinary Mozilla/5.0 User-Agent; local source dimensions checked and originals inspected sequentially to preserve source/output association.",
+          "proposedPublicId": "studentstraffic/universities/loyola-college-chennai/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

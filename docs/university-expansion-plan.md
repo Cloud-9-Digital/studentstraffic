@@ -251,4 +251,11 @@ unreviewed payloads outside the executable migration sequence during a controlle
 
 **Published grouped continuation:** SVCE Pennalur (11 verified undergraduate offerings,0211), CMI/SIMATS
 canonical city-facet correction (0212, existing10offerings preserved), and Sathyabama Marine Biology
-(1 programme,0213). Next offline research: Loyola College Chennai, IIT Madras and VISTAS.
+(1 programme,0213). Next offline research: Madras Christian College, IIT Madras and VISTAS.
+
+**Reviewed next bundle:** Loyola College Chennai (0214),45regular degree/shift offerings.
+Four vocational awards were added through the closed same-course-set Kaushal crosswalk alongside
+41named dated-medium routes;8other current degree/shift routes remain held. Collect the next
+reviewed bundles for a grouped publication window while agents research offline.
+
+**Next grouped window (0214–0216):** Loyola College Chennai45, IIT Madras74 and Madras Christian College25 offerings (144 total) are reviewed for grouped publication. VISTAS, NIT Tiruchirappalli and Presidency College continue offline; no unreviewed payload enters the executable sequence during the apply.

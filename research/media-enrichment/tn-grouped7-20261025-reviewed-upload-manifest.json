@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "loyola-college-chennai",
+      "universityName": "Loyola College",
+      "sourceBatch": "codex-loyola-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admission.loyolacollege.edu/ugonlineapplication/application/home/lccfiles/logo3.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://admission.loyolacollege.edu/ugonlineapplication/application/home/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Loyola College crest",
+          "visualCheck": "Native250x309official admissions-portal PNG sequentially inspected. Full yellow/blue heraldic crest and Luceat Lux Vestra motto; standalone institutional brand asset, not favicon or banner. Oversized wide homepage wordmark with white text rejected for poor fit.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP200 GET with ordinary Mozilla/5.0 User-Agent; local source dimensions checked and originals inspected sequentially to preserve source/output association.",
+          "proposedPublicId": "studentstraffic/universities/loyola-college-chennai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.loyolacollege.edu/imgnew/church.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.loyolacollege.edu/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Tree-lined avenue leading to the church on Loyola College campus",
+          "visualCheck": "Official homepage campus photograph sequentially inspected. Tree-lined road and identifiable campus church; no poster, promotional text or externally credited/open-licence dependency. Shows the college campus, not LIBA or LICET.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP200 GET with ordinary Mozilla/5.0 User-Agent; local source dimensions checked and originals inspected sequentially to preserve source/output association.",
+          "proposedPublicId": "studentstraffic/universities/loyola-college-chennai/cover-20261025"
+        }
+      ]
+    },
+    {
+      "universitySlug": "indian-institute-of-technology-madras",
+      "universityName": "Indian Institute of Technology Madras",
+      "sourceBatch": "codex-iitm-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://study.iitm.ac.in/ds/assets/img/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official IIT Madras institutional identity asset from its own degree website; intact emblem, no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/indian-institute-of-technology-madras/logo-20261025",
+          "altText": "Indian Institute of Technology Madras official circular emblem",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.iitm.ac.in/sites/default/files/instigram/202005/About%20IIT%20Madras%20-%20Overview.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional About overview campus photograph used for factual institution identification; no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/indian-institute-of-technology-madras/cover-20261025",
+          "altText": "Gajendra Circle statue and fountain illuminated at the IIT Madras campus",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "universitySlug": "madras-christian-college",
+      "universityName": "Madras Christian College",
+      "sourceBatch": "codex-mcc-tambaram-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://mcc.edu.in/wp-content/uploads/2021/04/MMC-LOGO-2.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://mcc.edu.in/emblem-motto/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Madras Christian College crest",
+          "visualCheck": "1323×1735 official emblem original sequentially inspected: maroon heraldic hand, cross, anchor and In Hoc Signo motto on white. Standalone genuine institution emblem, not favicon or ranking banner.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 GET; native image dimensions and originals reviewed sequentially with view_image, preserving filename-to-source association.",
+          "proposedPublicId": "studentstraffic/universities/madras-christian-college/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/madras-christian-college/crest.jpg",
+          "sha256": "b9e06361bb805f255d97d995c841f809382a84378ef64213254211415b9cddad"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mcc.edu.in/wp-content/uploads/2021/02/banner-06.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://mcc.edu.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Students using microscopes in a Madras Christian College laboratory",
+          "visualCheck": "1366×760 official homepage photograph sequentially inspected: students in laboratory coats using microscopes beside campus lab windows. No poster text, ranking overlay, external credit or open-licence condition. Alumni reunion banner and white header wordmark rejected.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 GET; native image dimensions and originals reviewed sequentially with view_image, preserving filename-to-source association.",
+          "proposedPublicId": "studentstraffic/universities/madras-christian-college/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/madras-christian-college/banner-06.jpg",
+          "sha256": "3a1508cfcd736f8b37f4aeb5190829c3035b1f7c4bec490cb356dabd900a0259"
+        }
+      ]
+    }
+  ]
+}

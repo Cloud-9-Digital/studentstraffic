@@ -193,3 +193,10 @@ Added Diploma in Nautical Science (one-year diploma), Postgraduate Diploma in Ma
 ### Computer and communication engineering — 25 October 2026
 
 Added the generic B.E./B.Tech in Computer and Communication Engineering family for the combined computing and communications engineering award. It is not an institution-specific branded specialisation. Sri Sairam’s CSE IoT and Computer Science and Business Systems offerings retain their exact titles under the existing CSE parent; Cyber Security and AI/ML use their existing specialist families. Integrated M.Tech remains distinct from two-year engineering master’s and was not published without its own verified medium.
+
+
+### Science, interdisciplinary engineering and dedicated cybersecurity awards — 25 October 2026
+
+IIT Madras exact awards require dedicated Bachelor of Cybersecurity, science bachelor families in Electronics, Aerospace Science and Medical Sciences and Engineering, and integrated Aerospace/Design Engineering master's families. These preserve award type: B.Cyber is not B.Tech, BS Medical Sciences and Engineering is not MBBS, and non-campus BS Aeronautics is not an operational Aviation degree. Actual delivery, eligibility and verified duration remain offering-level facts.
+
+Development Studies uses a social-sciences master family. Engineering master's families in Applied Mathematics, Complex Systems, Computational Engineering and Quantum Technology reflect distinct disciplinary curricula; regular Data Science and AI reuses the engineering CSE parent, not MSc Data Science. Ocean Structures/Technology reuse Naval Architecture engineering; other named engineering specialties reuse their appropriate parent. No institution brand, funding category, admission mode or minor creates a new family.
