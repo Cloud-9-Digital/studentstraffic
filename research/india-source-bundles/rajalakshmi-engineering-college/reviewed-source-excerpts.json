@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-25",
+  "sources": [
+    {
+      "label": "Current main-campus taught and research programme directory",
+      "url": "https://www.rajalakshmi.org/admissions",
+      "kind": "official-program",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "UG 2023 regulations: English, duration and curriculum",
+      "url": "https://cms.rajalakshmi.org/api/media/file/REC-2023-UG-Regulations.pdf",
+      "kind": "official-program",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "PG 2023 regulations: English, duration, admission norms and internship",
+      "url": "https://cms.rajalakshmi.org/api/media/file/REC-2023-PG-Regulations.pdf",
+      "kind": "official-program",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "Signed 2024-25 first-semester UG calendar",
+      "url": "https://pages.rajalakshmi.org/downloads/AC/REC-AC-2024-25-ODD-UG-I.PDF",
+      "kind": "official-university",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "Signed 2024-25 first-semester PG calendar",
+      "url": "https://pages.rajalakshmi.org/downloads/AC/REC-AC-2024-25-ODD-PG-1.PDF",
+      "kind": "official-university",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "2025-26 mandatory disclosure: entry marks and historical fee structure",
+      "url": "https://docs.rajalakshmi.org/u/Mandatory_Disclosure.pdf",
+      "kind": "official-fee",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "NRI-only overseas undergraduate category",
+      "url": "https://www.rajalakshmi.org/iro",
+      "kind": "official-university",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "UGC autonomy 2023-24 to 2032-33",
+      "url": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+      "kind": "recognition",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "Anna University main-campus affiliation",
+      "url": "https://www.annauniv.edu/cai/District%20wise/district/Kancheepuram.php",
+      "kind": "recognition",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "TNEA 2026 UG rules and document verification",
+      "url": "https://static.tneaonline.org/docs/2_Information_Brochure_2026.pdf",
+      "kind": "government",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "Hostel, mess and campus living facilities",
+      "url": "https://www.rajalakshmi.org/student-life",
+      "kind": "official-university",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "Administrative student services",
+      "url": "https://www.rajalakshmi.org/facilities",
+      "kind": "official-university",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "label": "Perungudi campus portfolio, separate scope",
+      "url": "https://admissions.rajalakshmi.org/offcampus/",
+      "kind": "official-university",
+      "checkedAt": "2026-10-25"
+    }
+  ],
+  "intakeReview": {
+    "ug": "19September2024first-semester reopening,original visually inspected",
+    "pg": "6September2024first-semester ME/MTech/MBA commencement,original visually inspected",
+    "excluded": "2025-26 and2026-27higher-semester calendars not newintake evidence"
+  },
+  "holds": "Perungudi campus4;research routes;detailed PGqualifying-degree matrix andforeignaccess;current fees;nonvegetarian provision",
+  "finalScope": "20:19UGdomestic route plus MBAgovernment counselling;8ME/MTechheld forexactqualifyingdegree/marksverification",
+  "mba2026Source": "https://static.tn-mbamca.com/docs/MBA_Instructions.pdf?t=1781654400022",
+  "nriLimit": "Valid Indian passport is only a category condition; detailed NRIacademic qualification threshold unverified. No domestic marks inherited."
+}

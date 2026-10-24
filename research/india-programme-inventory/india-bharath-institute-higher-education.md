@@ -29,3 +29,7 @@ Sources and originals are under `research/india-source-bundles/india-bharath-ins
 ## Exact next actions
 
 Resolve50% vs55% eligibility; establish current programme-level international/category restrictions; finish constituent/campus inventory and deduplication; verify NMC/DCI/INC/PCI/BCI/COA scopes separately for regulated awards; get programme-specific PG/arts/science teaching-language/intake evidence; resolve fee conflicts; then reserve a fresh migration and mandatory reviewed media. No logo/cover manifest was packaged because the evidence gate remained held. Scoped content validation is not applicable: no executable payload exists.
+
+## Bounded retry — 25 October 2026
+
+Rechecked current Admissions2026 portal:50%PCM plus BEEE2026. The2024 regulations effective2024-25 onwards still specify55%; no authenticated superseding2026 regulation/clarification found. The admission page points to an Information Handbook without resolving the conflict in retrieved content.194-row campus discovery inventory remains incomplete as described above. No programme, amount or international scope is inferred. No payload or reservation.

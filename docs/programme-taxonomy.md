@@ -152,3 +152,8 @@ the verified B.E./B.Tech offerings themselves retain their four-year durations.
 Added university-neutral master's families `msc-electronics-instrumentation`, `master-educational-technology`, `master-career-guidance` and `master-gender-studies`. E-Learning Technology maps to Educational Technology; Career Guidance lateral entry retains its official title and one-year duration as a separate offering under the same master's category. Gender Studies includes Women's Studies as an alias. Biological-science specialisations map to `msc-biological-sciences`; Medical Biotechnology maps to `msc-biotechnology`; Biostatistics to `msc-statistics`; Medical Physics to `msc-physics`; Nanoscience and Technology to the dedicated `msc-nanoscience-technology` family. Exact programme titles are preserved in migration 0187. These decisions do not imply accreditation or international entrance exemptions.
 
 The same batch adds `msc-information-technology` and `msc-nanoscience-technology` rather than compressing technically distinct IT and nanoscience awards into Information Systems or Materials Science.
+
+
+### Law and policy postgraduate diplomas (2026-10-25)
+
+`pg-diploma-law-policy` covers graduate-entry diplomas in specialised law and policy, including fisheries governance. It uses the `postgraduate-diploma` level and `law` stream, distinct from a practising-lawyer qualifying LLB or an LLM. Programme records retain exact specialisation, hybrid delivery, attendance requirements and national eligibility.

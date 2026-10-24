@@ -133,7 +133,11 @@ blocks packaging that programme, not the whole university.
 ### 1c. Keep research offline and create a numbered content migration
 
 Research agents must not connect to, query or write the production database while researching or
-drafting. They produce one complete source-backed payload under
+drafting. Group reviewed bundles into one deliberate publication window so database compute can
+return to sleep between batches. Use offline validation during research; do not run database-backed
+check-only commands or poll database status while waiting for other workers.
+
+They produce one complete source-backed payload under
 `content-migrations/<NNNN>-<scope>/` with a `manifest.json` and the referenced `payload.json`.
 The directory name and manifest ID are the immutable content-migration ID.
 

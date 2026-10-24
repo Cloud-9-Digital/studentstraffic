@@ -1,0 +1,730 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A postgraduate category for general-management degrees taken after a bachelor qualification. Study commonly combines finance, marketing, organisational behaviour, operations and strategy with applied management work. Programme delivery, selection tests, curriculum and fees vary by university.",
+      "metaTitle": "MBA Programmes and Admissions",
+      "metaDescription": "Compare MBA programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "alagappa-university",
+      "name": "Alagappa University",
+      "city": "Karaikudi",
+      "type": "Public",
+      "establishedYear": 1985,
+      "officialWebsite": "https://www.alagappauniversity.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://alagappauniversity.ac.in/img/core-img/logo2.png",
+          "rights": "Official university identification asset served by its website; no open licence claimed. Intended only to identify this university and campus.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://alagappauniversity.ac.in/img/slider/university.jpg",
+          "rights": "Official university identification asset served by its website; no open licence claimed. Intended only to identify this university and campus.",
+          "checkedAt": "2026-10-25",
+          "altText": "Alagappa University main building and landscaped entrance in Karaikudi"
+        }
+      },
+      "summary": "Alagappa University is a public university in Karaikudi, Tamil Nadu, established in 1985. Its university departments cover arts, sciences, education and management. The regular MBA in Logistics and Supply Chain Management combines classroom study with a summer internship and final-semester project.",
+      "campusLifestyle": "The Karaikudi university campus covers about 436 acres. Central and faculty libraries, computer laboratories, three auditoria and sports grounds support campus study. The Logistics Management department has a computer centre, smart-board classrooms and facilities for conferences and industry interaction.",
+      "cityProfile": "Karaikudi is a business town in Sivagangai district, Tamil Nadu. The main university departments and Faculty of Management are based here; the constituent arts and science college at Thondi is a separate satellite location. Confirm the department and campus address before arranging accommodation or travel.",
+      "practicalExposure": "MBA Logistics and Supply Chain Management includes a summer internship after the second semester and project or training work in the fourth semester. The curriculum covers warehouse and distribution management, port management, sustainable supply chains and supply-chain analytics. Departmental industry events and executive-empowerment activities complement the assessed work; participation does not guarantee a placement or overseas opportunity.",
+      "hostelOverview": "Separate boarding and lodging facilities are available for male and female students. The 2026–27 lodging charge is INR 16,000 per year; mess charges are collected monthly under a dividing system. Students requesting a hostel place must present their admission fee receipt to the relevant warden. An academic offer does not itself confirm a room allocation.",
+      "dietarySupport": "Hostel boarding is charged monthly under a dividing system and is additional to the annual lodging fee. Applicants with dietary restrictions should establish available meal arrangements before accepting accommodation; a specific dietary menu is not verified.",
+      "safetyOverview": "The university has an Internal Complaints Committee and grievance channels. Hostel arrangements are administered through the relevant wardens. These support routes do not establish a crime-rate or personal-safety guarantee.",
+      "studentSupport": "The university provides a coaching centre for competitive examinations, a placement cell, disability-related extension activities and student clubs. Students Traffic counselling can help organise the programme, fee and document questions that need confirmation before applying.",
+      "whyChoose": [
+        "A dedicated Logistics Management department delivers a four-semester regular MBA.",
+        "Summer internship and final-semester project work are part of the curriculum.",
+        "The 2026–27 prospectus separates tuition and mandatory charges, including a foreign-student tariff."
+      ],
+      "thingsToConsider": [
+        "Selection includes an entrance test, group discussion and interview; a degree alone is insufficient.",
+        "July 2025 is a historical first-year orientation baseline; the next admission window needs confirmation.",
+        "Tuition excludes several mandatory charges, and accommodation and mess are paid separately."
+      ],
+      "bestFitFor": [
+        "Graduates with the required marks seeking a full-time logistics and supply-chain MBA.",
+        "Applicants prepared for the university entrance test and assessed group discussion/interview.",
+        "Students able to undertake a summer internship and a final-semester project or training."
+      ],
+      "industryPartners": [
+        "SUN LOGISTIC SERVICES, Muscat — departmental MoU; individual project or placement access is not guaranteed."
+      ],
+      "recognitionBadges": [
+        "UGC state-public university register",
+        "UGC Section 12(B) central-assistance eligibility — list dated 26 September 2022"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC state-public university register:Alagappa University,Karaikudi,1985",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated_State_University_List.pdf"
+        },
+        {
+          "label": "UGC Section12(B) list as of26September2022:Alagappa University",
+          "url": "https://www.ugc.gov.in/oldpdf/State%20University/State%20University%2012(B).pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Alagappa University public or private?",
+          "answer": "Alagappa University is a Tamil Nadu state public university established in 1985 at Karaikudi. The UGC state-public register lists the institution; its Section 12(B) entry records eligibility for central assistance in the 26 September 2022 list."
+        },
+        {
+          "question": "Which campus delivers this MBA?",
+          "answer": "The MBA in Logistics and Supply Chain Management is delivered by the Department of Logistics Management in the Faculty of Management at Karaikudi. Thondi is a separate constituent-college location and is not the campus for this MBA."
+        },
+        {
+          "question": "Is this a regular English-taught MBA?",
+          "answer": "Yes. The exact 2022-onwards departmental regulations identify a full-time two-year programme and English instruction. This catalogue entry concerns regular university-department study; online and distance-learning MBA routes have separate admissions arrangements."
+        },
+        {
+          "question": "What qualification and marks are required?",
+          "answer": "The 2026–27 entry requirement is any degree in a 10+2+3 or 10+2+4 pattern, with at least 50% marks for others and 45% for SC/ST applicants. Foreign qualifications need the university assessment; no blanket equivalence or entrance exemption is established."
+        },
+        {
+          "question": "How are applicants selected?",
+          "answer": "Selection combines 85% entrance-test marks with 15% group-discussion and interview marks. The application is made through the University Departments portal, with an entrance-programme application fee ofINR 600 orINR 300 for eligibleSC/ST applicants in 2026–27."
+        },
+        {
+          "question": "What is the tuition for foreign and domestic students?",
+          "answer": "Annual domestic tuition including guest lectures isINR 12,000 in 2026–27. Foreign students pay twice this tuition component, INR 24,000 per year. These amounts exclude lab, special, other and industrial-visit charges; the foreign-student bill must be confirmed before payment."
+        },
+        {
+          "question": "What other academic charges should I budget for?",
+          "answer": "The 2026–27 MBA table separates labINR 2,000, special feeINR 2,200 and special lectures/industrial visitINR 3,000 from annual tuition. First-year other feeINR 2,200 is separate. The domestic composite totals areINR 21,400 first year andINR 19,200 second year; these totals must not be mistaken for tuition alone."
+        },
+        {
+          "question": "When does the MBA intake begin?",
+          "answer": "The latest programme-specific verified baseline is the first-year orientation held 22–25 July 2025 for the tenth MBA Logistics and Supply Chain Management batch. July is presented with this historical qualification; it does not confirm the next start date or that applications remain open."
+        },
+        {
+          "question": "What practical work is included?",
+          "answer": "Students complete a summer internship after the second semester and project or training work during the fourth semester. Logistics events and executive-empowerment activities support the programme, while individual internship or job offers remain subject to the relevant selection process."
+        },
+        {
+          "question": "Can students apply for university accommodation?",
+          "answer": "Separate male and female hostel facilities are available. Lodging isINR 16,000 per year in 2026–27 and mess charges are collected monthly under a dividing system. Students request accommodation through the warden using their admission fee receipt; room allocation is separate from academic admission."
+        },
+        {
+          "question": "Which original documents are needed after selection?",
+          "answer": "The prospectus requires cumulative degree marks or grade certificates, provisional certificate, transfer certificate, communitycertificate where applicable and a medical fitness certificate, plus two photographs. Applicants must also submit the parent/guardian undertaking and any additional records required for their qualification or applicant category."
+        },
+        {
+          "question": "Does this MBA guarantee a job or an overseas placement?",
+          "answer": "No outcome is guaranteed. The department has industry interaction and an MoU with SUN LOGISTIC SERVICES in Muscat, while the academic programme includes internship and project requirements. Admission, training access and employment are separate decisions."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+          "url": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Exact2022-onwards regular MBA Logistics regulations",
+          "url": "https://da.alagappauniversity.ac.in/Media/Syllabus/Department%20of%20Logistics%20Management/M.B.A_Logistics%26Supply_chain.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Logistics department:facilities and industry interaction",
+          "url": "https://www.alagappauniversity.ac.in/academics/faculty-of-management/school-of-management/department-of-logistics-management",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Department first-year orientation22–25July2025",
+          "url": "https://www.linkedin.com/posts/department-of-logistics-management-alagappa-university_the-department-of-logistics-management-activity-7364582311666872320-rfxq",
+          "kind": "other",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC state-public register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated_State_University_List.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC Section12Blist dated26September2022",
+          "url": "https://www.ugc.gov.in/oldpdf/State%20University/State%20University%2012(B).pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Studentcalendar2024–25:support services",
+          "url": "https://alagappauniversity.ac.in/links/docs/Student_Calendar_2024-2025.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Internal Complaints Committee and grievance channels",
+          "url": "https://www.alagappauniversity.ac.in/links/icc.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "overview": "Regular university-department admission uses programme-specific eligibility and selection. The packaged MBA route requires a qualifying degree, minimum marks, entrance test and group discussion/interview.",
+        "applicationPortal": "https://admissions.alagappauniversity.ac.in/DepartmentsAdmission/",
+        "feeNote": "Keep general domestic and foreign-student tuition categories separate. Mandatory non-tuition charges and hostel costs require an additional budget."
+      },
+      "programmes": [
+        {
+          "slug": "alagappa-university-mba-logistics-supply-chain-management",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "M.B.A. (Logistics & Supply Chain Management)",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.alagappauniversity.ac.in/academics/faculty-of-management/school-of-management/department-of-logistics-management",
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 24000,
+            "verifiedAt": "2026-10-25",
+            "notes": "2026–27 foreign tuition is INR 24,000 per year: twice the INR 12,000 annual domestic tuition component, including guest lectures. Lab INR 2,000, special fee INR 2,200 and special lectures/industrial visit INR 3,000 are additional annual components; first-year other fees INR 2,200 are separate. Foreign applicants must obtain their complete payable bill; hostel and mess are additional."
+          },
+          "additionalFees": [
+            {
+              "audience": "domestic",
+              "currency": "INR",
+              "annualAmount": 12000,
+              "academicYear": "2026-27",
+              "verifiedAt": "2026-10-25",
+              "notes": "Domestic annual tuition including guest lectures only. Composite domestic first-year payment INR 21,400 and second-year INR 19,200 include separate lab, special, other and visit charges; neither is tuition alone. Hostel/mess extra. Individual concessions depend on eligibility; no automatic waiver is asserted."
+            }
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the specified degree and minimum marks",
+              "Foreign applicants meeting the same programme qualification assessment and applicable foreign-student requirements"
+            ],
+            "restrictions": [
+              "Tamil Nadu reservation and concession rules apply only where eligibility is established.",
+              "Foreign tariff availability does not establish automatic admission, qualification equivalence or exemption from the entrance/GD/interview process."
+            ],
+            "notes": "The 2026–27 prospectus expressly provides foreign-student tuition at twice the general tuition component; other fees remain additional.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The regular MBA in Logistics and Supply Chain Management is a two-year postgraduate programme in Karaikudi. Selection in 2026–27 combines 85% entrance-test marks and 15% group-discussion/interview marks.",
+            "eligibility": {
+              "intro": "Applicants need the academic qualification and marks for the 2026–27 MBA route.",
+              "items": [
+                "Any degree in a 10+2+3 or 10+2+4 pattern.",
+                "At least 50% marks for the general category;45% for SC/ST applicants.",
+                "Foreign applicants pay the published foreign fee category and must obtain confirmation that their qualification and documents meet the programme requirements. No entrance exemption is established."
+              ]
+            },
+            "applicationSteps": [
+              "Apply through the University Departments portal at https://admissions.alagappauniversity.ac.in/DepartmentsAdmission/ and select MBA Logistics and Supply Chain Management.",
+              "Upload the required records and pay the 2026–27 entrance-programme application fee:INR 600, orINR 300 for eligible SC/ST applicants producing the community certificate.",
+              "Take the university entrance examination and complete the group discussion and interview; these contribute 85% and 15% respectively.",
+              "If provisionally selected, present original academic and application documents to the department, pay the applicable tuition and charges, and complete hostel arrangements separately if required."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying-degree cumulative marks or grade certificates",
+                "Degree or provisional certificate",
+                "Transfer certificate of the qualifying degree"
+              ],
+              "application": [
+                "Community certificate when claiming a reservation or fee concession",
+                "Medical fitness certificate",
+                "Two passport-size photographs",
+                "Parent or guardian undertaking at admission",
+                "Foreign qualification and applicant-status documents requested during the university assessment"
+              ]
+            },
+            "deadlinesNote": "Historical intake baseline: first-year MBA Logistics and Supply Chain Management orientation, 22–25 July 2025. This supports July for that verified cohort; no 2027 start date or currently open application window is established."
+          },
+          "medium": "English",
+          "mediumNote": "English is the teaching medium in the exact 2022-onwards university-department MBA Logistics and Supply Chain Management regulations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "2026–27 foreign tuition is INR 24,000 per year: twice the INR 12,000 annual domestic tuition component, including guest lectures. Lab INR 2,000, special fee INR 2,200 and special lectures/industrial visit INR 3,000 are additional annual components; first-year other fees INR 2,200 are separate. Foreign applicants must obtain their complete payable bill; hostel and mess are additional.",
+          "teachingPhases": [
+            {
+              "phase": "Regular full-time postgraduate study",
+              "language": "English",
+              "details": "Four semesters, including summer internship and final-semester project or training, under the university-department regulations."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "summary",
+      "claimText": "Alagappa University is a public university in Karaikudi, Tamil Nadu, established in 1985. Its university departments cover arts, sciences, education and management. The regular MBA in Logistics and Supply Chain Management combines classroom study with a summer internship and final-semester project.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The Karaikudi university campus covers about 436 acres. Central and faculty libraries, computer laboratories, three auditoria and sports grounds support campus study. The Logistics Management department has a computer centre, smart-board classrooms and facilities for conferences and industry interaction.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "cityProfile",
+      "claimText": "Karaikudi is a business town in Sivagangai district, Tamil Nadu. The main university departments and Faculty of Management are based here; the constituent arts and science college at Thondi is a separate satellite location. Confirm the department and campus address before arranging accommodation or travel.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "hostelOverview",
+      "claimText": "Separate boarding and lodging facilities are available for male and female students. The 2026–27 lodging charge is INR 16,000 per year; mess charges are collected monthly under a dividing system. Students requesting a hostel place must present their admission fee receipt to the relevant warden. An academic offer does not itself confirm a room allocation.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "dietarySupport",
+      "claimText": "Hostel boarding is charged monthly under a dividing system and is additional to the annual lodging fee. Applicants with dietary restrictions should establish available meal arrangements before accepting accommodation; a specific dietary menu is not verified.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "studentSupport",
+      "claimText": "The university provides a coaching centre for competitive examinations, a placement cell, disability-related extension activities and student clubs. Students Traffic counselling can help organise the programme, fee and document questions that need confirmation before applying.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "safetyOverview",
+      "claimText": "The university has an Internal Complaints Committee and grievance channels. Hostel arrangements are administered through the relevant wardens. These support routes do not establish a crime-rate or personal-safety guarantee.",
+      "sourceLabel": "Official Internal Complaints Committee page; hostel warden arrangements in2026–27 prospectus",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/links/icc.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "practicalExposure",
+      "claimText": "MBA Logistics and Supply Chain Management includes a summer internship after the second semester and project or training work in the fourth semester. The curriculum covers warehouse and distribution management, port management, sustainable supply chains and supply-chain analytics. Departmental industry events and executive-empowerment activities complement the assessed work; participation does not guarantee a placement or overseas opportunity.",
+      "sourceLabel": "Exact2022-onwards regular MBA Logistics regulations",
+      "sourceUrl": "https://da.alagappauniversity.ac.in/Media/Syllabus/Department%20of%20Logistics%20Management/M.B.A_Logistics%26Supply_chain.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "industryPartners",
+      "claimText": "SUN LOGISTIC SERVICES, Muscat — departmental MoU; individual project or placement access is not guaranteed.",
+      "sourceLabel": "Logistics department:facilities and industry interaction",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/academics/faculty-of-management/school-of-management/department-of-logistics-management",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC state-public university register",
+      "sourceLabel": "UGC state-public register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated_State_University_List.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC Section 12(B) central-assistance eligibility — list dated 26 September 2022",
+      "sourceLabel": "UGC Section12Blist dated26September2022",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/State%20University/State%20University%2012(B).pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "whyChoose",
+      "claimText": "A dedicated Logistics Management department delivers a four-semester regular MBA. Summer internship and final-semester project work are part of the curriculum. The 2026–27 prospectus separates tuition and mandatory charges, including a foreign-student tariff.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "thingsToConsider",
+      "claimText": "Selection includes an entrance test, group discussion and interview; a degree alone is insufficient. July 2025 is a historical first-year orientation baseline; the next admission window needs confirmation. Tuition excludes several mandatory charges, and accommodation and mess are paid separately.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "bestFitFor",
+      "claimText": "Graduates with the required marks seeking a full-time logistics and supply-chain MBA. Applicants prepared for the university entrance test and assessed group discussion/interview. Students able to undertake a summer internship and a final-semester project or training.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "officialTitle",
+      "claimText": "M.B.A. (Logistics & Supply Chain Management)",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "duration",
+      "claimText": "Full-time two-year regular MBA in Logistics and Supply Chain Management.",
+      "sourceLabel": "Exact2022-onwards regular MBA Logistics regulations",
+      "sourceUrl": "https://da.alagappauniversity.ac.in/Media/Syllabus/Department%20of%20Logistics%20Management/M.B.A_Logistics%26Supply_chain.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "medium",
+      "claimText": "English teaching medium in exact 2022-onwards university-department MBA regulations.",
+      "sourceLabel": "Exact2022-onwards regular MBA Logistics regulations",
+      "sourceUrl": "https://da.alagappauniversity.ac.in/Media/Syllabus/Department%20of%20Logistics%20Management/M.B.A_Logistics%26Supply_chain.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "intake",
+      "claimText": "Latest programme-specific verified intake baseline: first-year MBA Logistics and Supply Chain Management orientation took place 22–25 July 2025. This dated historical cohort supports July; it does not establish a 2027 start or currently open application window. Confirm the next cycle before applying.",
+      "sourceLabel": "Department first-year orientation22–25July2025",
+      "sourceUrl": "https://www.linkedin.com/posts/department-of-logistics-management-alagappa-university_the-department-of-logistics-management-activity-7364582311666872320-rfxq",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "fee",
+      "claimText": "2026–27 foreign tuition is INR 24,000 per year: twice the INR 12,000 annual domestic tuition component, including guest lectures. Lab INR 2,000, special fee INR 2,200 and special lectures/industrial visit INR 3,000 are additional annual components; first-year other fees INR 2,200 are separate. Foreign applicants must obtain their complete payable bill; hostel and mess are additional.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "additionalFees",
+      "claimText": "Domestic annual tuition including guest lectures only. Composite domestic first-year payment INR 21,400 and second-year INR 19,200 include separate lab, special, other and visit charges; neither is tuition alone. Hostel/mess extra. Individual concessions depend on eligibility; no automatic waiver is asserted.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The 2026–27 prospectus expressly provides foreign-student tuition at twice the general tuition component; other fees remain additional.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "eligibility",
+      "claimText": "Any degree in a 10+2+3 or 10+2+4 pattern. At least 50% marks for the general category;45% for SC/ST applicants. Foreign applicants pay the published foreign fee category and must obtain confirmation that their qualification and documents meet the programme requirements. No entrance exemption is established.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "admissions",
+      "claimText": "Apply through the University Departments portal at https://admissions.alagappauniversity.ac.in/DepartmentsAdmission/ and select MBA Logistics and Supply Chain Management. Upload the required records and pay the 2026–27 entrance-programme application fee:INR 600, orINR 300 for eligible SC/ST applicants producing the community certificate. Take the university entrance examination and complete the group discussion and interview; these contribute 85% and 15% respectively. If provisionally selected, present original academic and application documents to the department, pay the applicable tuition and charges, and complete hostel arrangements separately if required.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "alagappa-university",
+      "publicField": "documentsRequired",
+      "claimText": "Original cumulative marks, provisional degree, transfer certificate, community certificate where applicable, medical fitness certificate, two photos, parent/guardian undertaking.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "alagappa-university-mba-logistics-supply-chain-management"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "Alagappa University is a Tamil Nadu state public university established in 1985 at Karaikudi. The UGC state-public register lists the institution; its Section 12(B) entry records eligibility for central assistance in the 26 September 2022 list.",
+      "sourceLabel": "UGC state-public register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated_State_University_List.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "The MBA in Logistics and Supply Chain Management is delivered by the Department of Logistics Management in the Faculty of Management at Karaikudi. Thondi is a separate constituent-college location and is not the campus for this MBA.",
+      "sourceLabel": "Logistics department:facilities and industry interaction",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/academics/faculty-of-management/school-of-management/department-of-logistics-management",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "Yes. The exact 2022-onwards departmental regulations identify a full-time two-year programme and English instruction. This catalogue entry concerns regular university-department study; online and distance-learning MBA routes have separate admissions arrangements.",
+      "sourceLabel": "Exact2022-onwards regular MBA Logistics regulations",
+      "sourceUrl": "https://da.alagappauniversity.ac.in/Media/Syllabus/Department%20of%20Logistics%20Management/M.B.A_Logistics%26Supply_chain.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "The 2026–27 entry requirement is any degree in a 10+2+3 or 10+2+4 pattern, with at least 50% marks for others and 45% for SC/ST applicants. Foreign qualifications need the university assessment; no blanket equivalence or entrance exemption is established.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "Selection combines 85% entrance-test marks with 15% group-discussion and interview marks. The application is made through the University Departments portal, with an entrance-programme application fee ofINR 600 orINR 300 for eligibleSC/ST applicants in 2026–27.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "Annual domestic tuition including guest lectures isINR 12,000 in 2026–27. Foreign students pay twice this tuition component, INR 24,000 per year. These amounts exclude lab, special, other and industrial-visit charges; the foreign-student bill must be confirmed before payment.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "The 2026–27 MBA table separates labINR 2,000, special feeINR 2,200 and special lectures/industrial visitINR 3,000 from annual tuition. First-year other feeINR 2,200 is separate. The domestic composite totals areINR 21,400 first year andINR 19,200 second year; these totals must not be mistaken for tuition alone.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "The latest programme-specific verified baseline is the first-year orientation held 22–25 July 2025 for the tenth MBA Logistics and Supply Chain Management batch. July is presented with this historical qualification; it does not confirm the next start date or that applications remain open.",
+      "sourceLabel": "Department first-year orientation22–25July2025",
+      "sourceUrl": "https://www.linkedin.com/posts/department-of-logistics-management-alagappa-university_the-department-of-logistics-management-activity-7364582311666872320-rfxq",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "Students complete a summer internship after the second semester and project or training work during the fourth semester. Logistics events and executive-empowerment activities support the programme, while individual internship or job offers remain subject to the relevant selection process.",
+      "sourceLabel": "Exact2022-onwards regular MBA Logistics regulations",
+      "sourceUrl": "https://da.alagappauniversity.ac.in/Media/Syllabus/Department%20of%20Logistics%20Management/M.B.A_Logistics%26Supply_chain.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "Separate male and female hostel facilities are available. Lodging isINR 16,000 per year in 2026–27 and mess charges are collected monthly under a dividing system. Students request accommodation through the warden using their admission fee receipt; room allocation is separate from academic admission.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "The prospectus requires cumulative degree marks or grade certificates, provisional certificate, transfer certificate, communitycertificate where applicable and a medical fitness certificate, plus two photographs. Applicants must also submit the parent/guardian undertaking and any additional records required for their qualification or applicant category.",
+      "sourceLabel": "2026–27 prospectus:programmes,eligibility,annualfees and hostels",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/docs/Admission_notification/ALU_Prospectus_2026-2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "alagappa-university",
+      "publicField": "faq",
+      "claimText": "No outcome is guaranteed. The department has industry interaction and an MoU with SUN LOGISTIC SERVICES in Muscat, while the academic programme includes internship and project requirements. Admission, training access and employment are separate decisions.",
+      "sourceLabel": "Logistics department:facilities and industry interaction",
+      "sourceUrl": "https://www.alagappauniversity.ac.in/academics/faculty-of-management/school-of-management/department-of-logistics-management",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

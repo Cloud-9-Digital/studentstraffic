@@ -137,3 +137,10 @@ Next targeted action: authenticate all three 2026 ERP intimation letters via off
 social/video announcements, a current handbook/calendared induction schedule, or another dependable
 copy preserving the full original letter. Also resolve 2026 prospectus versus evergreen eligibility
 thresholds programme by programme. The 120-row inventory remains intact, with no guessed intake added.
+
+
+## Second targeted continuation — 25 October 2026
+
+A full public post by the named Head of the Centre for Ocean Research independently narrows one intake claim: https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_admissions-open-msc-marine-biology-activity-7493607039160492033-KXLr explicitly gives MSc Marine Biology classes17August2026. The author identity is corroborated by university centre affiliation and publisher affiliation https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0357970 . This is useful programme-scoped faculty evidence, not a basis to assign every campus the same intake. MSc Marine Biology remains held because qualifying-degree eligibility is absent from the reviewed official eligibility table.
+
+Current live2026PG page https://www.sathyabama.ac.in/admissions/post-graduate now visibly lists six regular engineering masters and fourteen arts/science masters plus three LLMs. Several previously inventoried2026rows are no longer visible; the120row inventory must be reconciled against current visible lists before packaging. No inactive/programme removal inferred from one page alone. No executable bundle created.

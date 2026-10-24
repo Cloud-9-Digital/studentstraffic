@@ -1,0 +1,520 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "pg-diploma-law-policy",
+      "name": "Postgraduate Diploma in Law and Policy",
+      "shortName": "PG Diploma Law & Policy",
+      "stream": "law",
+      "level": "postgraduate-diploma",
+      "discipline": "law-policy",
+      "aliases": [
+        "PG Diploma in Law and Policy",
+        "Postgraduate Diploma in Fisheries Law and Policy"
+      ],
+      "displayOrder": 0,
+      "durationYears": 1,
+      "summary": "Postgraduate diplomas in law and policy provide graduate-entry study of legal frameworks, institutions and policy in a specialist field. Programmes may combine foundational legal methods with international instruments, regulatory analysis, case studies and an applied dissertation. They can suit graduates from law, science, management or the humanities, depending on the institution. These diplomas are distinct from qualifying undergraduate law degrees and do not automatically provide professional admission to practise law; compare delivery, assessment and jurisdiction-specific requirements.",
+      "metaTitle": "Postgraduate Diploma in Law and Policy: Study Options",
+      "metaDescription": "Compare Postgraduate Diploma in Law and Policy options by entry, specialisation, English teaching, hybrid delivery, assessments, tuition and fee category."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "tamil-nadu-national-law-university",
+      "name": "Tamil Nadu National Law University",
+      "city": "Tiruchirappalli",
+      "type": "Public",
+      "establishedYear": 2012,
+      "officialWebsite": "https://www.tnnlu.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Tamil Nadu National Law University is a public state university established in 2012 at Navalurkuttapattu, Tiruchirappalli. Its residential undergraduate law degrees combine law with arts or commerce, and its postgraduate portfolio includes Business Law and a part-time hybrid diploma in Fisheries Law and Policy offered with BOBP-IGO. The verified diploma shown here has global graduate entry and physical assessment requirements.",
+      "campusLifestyle": "The 25-acre campus includes undergraduate and postgraduate academic blocks, a library with a Legal History Museum and moot court hall, an auditorium, hostels and sports facilities. Student committees organise legal aid, mooting, trial advocacy, mediation and cultural activities. The Fisheries Law and Policy diploma follows a part-time hybrid timetable; residential-campus life belongs primarily to the regular degree routes.",
+      "cityProfile": "The university is at Navalurkuttapattu on the Tiruchirappalli–Dindigul highway, about 12 kilometres from the Central Bus Stand and Tiruchirappalli Junction. Its postal address is TNNLU Post 620027. Programme delivery matters when planning travel: the hybrid diploma uses weekend online teaching and notified physical examination centres, while regular degrees are residential.",
+      "practicalExposure": "The Fisheries Law and Policy diploma studies international fisheries instruments, regional institutions, human rights, labour law and negotiation, with case analysis and a supervised dissertation. BOBP-IGO coordinates coursework and research as knowledge partner. University law students also participate in moot courts and legal aid activities; these campus activities are distinct from a promised internship or employment outcome for diploma participants.",
+      "hostelOverview": "The university provides separate men’s and women’s hostels with mess facilities. Regular undergraduate and postgraduate students share rooms; resident wardens and welfare committees support hostel life. The hybrid Fisheries Law and Policy diploma does not imply a residential place. Confirm any examination visit accommodation separately rather than applying residential-degree hostel charges to a hybrid student.",
+      "dietarySupport": "Campus hostels have separate mess arrangements for men and women, with dining timetables and mess committees. A campus canteen and food stalls provide additional options. Hybrid students planning a physical assessment visit should confirm meal access and any dietary requirements with the host or examination centre; no specific menu is guaranteed.",
+      "safetyOverview": "The university publishes anti-ragging and internal-complaints arrangements, and its health centre has a doctor on working days and nursing cover. A resident counsellor provides confidential support, and the university describes emergency ambulance access and a hospital tie-up. These are named support arrangements rather than an assurance of individual safety.",
+      "studentSupport": "Faculty mentorship, library resources and student committees support the residential university community. The PGDFLP provides remote access to TNNLU library resources, class recordings for review and dissertation guidance. Attendance credit for a missed live session requires the administrator’s approval under programme rules; watching recordings does not automatically satisfy attendance.",
+      "whyChoose": [
+        "A state law university with specialised law and policy study.",
+        "Globally open graduate entry to the English-taught Fisheries Law and Policy diploma.",
+        "Part-time hybrid study combining weekend sessions with dissertation research."
+      ],
+      "thingsToConsider": [
+        "The Fisheries Law and Policy diploma requires physical final examination attendance at notified centres.",
+        "Its diploma does not itself provide lawyer registration or a right to practise law.",
+        "Published country-based tuition differs for India, BOBP countries and other countries.",
+        "The 2026 diploma start date does not establish a future-cycle application window."
+      ],
+      "bestFitFor": [
+        "Graduates seeking structured fisheries governance and legal-policy knowledge.",
+        "Working professionals able to attend weekend teaching and physical assessment.",
+        "Applicants who can verify their fee category and plan any examination travel."
+      ],
+      "industryPartners": [
+        "Bay of Bengal Programme Inter-Governmental Organisation — PGDFLP knowledge partner"
+      ],
+      "recognitionBadges": [
+        "UGC — State University listed under its former Tamilnadu National Law School name",
+        "Tamil Nadu — established under Act No.9 of 2012"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated universities register, entry 829",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "Tamil Nadu National Law University establishment Act",
+          "url": "https://drive.google.com/file/d/1vEJgSUV5WJMe8H6ApK9F44LxjYW49vFA/view"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is Tamil Nadu National Law University?",
+          "answer": "TNNLU is a Tamil Nadu state university established by ActNo.9 of 2012 in Tiruchirappalli. It was formerly called Tamil Nadu National Law School and is listed under that name in the UGC consolidated register."
+        },
+        {
+          "question": "Which programme is shown here?",
+          "answer": "The verified offering shown here is the one-year Post Graduate Diploma in Fisheries Law and Policy, offered in part-time hybrid mode with BOBP-IGO. The university also has residential law degrees whose admission requirements and teaching arrangements are separate."
+        },
+        {
+          "question": "Who can apply for the fisheries diploma?",
+          "answer": "A graduate from a recognised university in India or abroad can apply. The brochure places no restrictions on age, nationality, gender or employment status. Applicants must still satisfy qualification assessment and the teaching and examination requirements."
+        },
+        {
+          "question": "Is a law degree required?",
+          "answer": "The diploma accepts graduates from recognised universities across disciplines. It introduces legal systems and fisheries frameworks alongside regional policy, human rights and negotiation. It is suitable for subject-specific policy learning without requiring applicants to already be qualified lawyers."
+        },
+        {
+          "question": "Is this a fully online programme?",
+          "answer": "Teaching is online or hybrid, with weekend sessions, but final written examinations require physical attendance at approved centres. The university will notify centres in India and abroad. Obtain the applicable arrangements before committing to travel or assuming remote-only completion."
+        },
+        {
+          "question": "What language is used?",
+          "answer": "The PGDFLP brochure explicitly specifies English instruction. This statement applies to the diploma, and does not establish teaching language for every other university degree."
+        },
+        {
+          "question": "When does the programme begin?",
+          "answer": "The 2026-27 brochure scheduled commencement for 1 August 2026 and a programme running from August toJuly. Applications were scheduled 27 May–15 July 2026. Future-cycle start dates and application windows require a new notification."
+        },
+        {
+          "question": "What is the tuition fee?",
+          "answer": "For 2026-27, one-year tuition is INR 20000 for Indian candidates, USD 320 for BOBP-country candidates andUSD 600 for candidates from other countries. The brochure has a separate India fee column; admissions should confirm the applicable country category."
+        },
+        {
+          "question": "What other charges should I budget for?",
+          "answer": "The published totals, including application, admission, examination, provisional-certificate and convocation charges, are INR 27500 for India, USD 450 for BOBP-country candidates andUSD 850 for other-country candidates. Physical examination travel and any accommodation are additional."
+        },
+        {
+          "question": "How is attendance assessed?",
+          "answer": "Students need at least 60%attendance in each course to sit the examination. Recordings are available for review, but a missed live class needs prior approval for any recording-based attendance credit under programme rules. Access to recordings alone does not count as attendance."
+        },
+        {
+          "question": "Does the diploma qualify me to practise law?",
+          "answer": "The postgraduate diploma provides specialised academic study in fisheries law and policy. It is distinct from a qualifying LLB and does not itself confer advocate registration or a right to practise law. Professional admission remains subject to the relevant jurisdiction’s requirements."
+        },
+        {
+          "question": "What support does a hybrid student receive?",
+          "answer": "Enrolled PGDFLP students receive remote library access, class recordings for review and dissertation guidance. BOBP-IGO coordinates academic work with TNNLU. A residential hostel place or internship is not implied by enrolment in this hybrid programme."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Official 2026-27 PGDFLPbrochure",
+          "url": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official 2027 universitybrochure",
+          "url": "https://drive.google.com/file/d/1dBSAe1pg7db_jiX0zC90UrUgKkS9tw8O/view",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Admissions source page",
+          "url": "https://www.tnnlu.ac.in/Admission-Counselling-A-Y-2026-27",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "BOBP-IGOprogramme page",
+          "url": "https://bobpigo.org/pages/view/pgdflp",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Establishment Act",
+          "url": "https://drive.google.com/file/d/1vEJgSUV5WJMe8H6ApK9F44LxjYW49vFA/view",
+          "kind": "government",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGCconsolidatedregister",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Complete current taught award portfolio inventoried:two residential undergraduate law degrees, oneLLMBusinessLaw, onehybridPGDFLP andonelegal-practicecertificate. Only fully verifiedPGDFLP packaged. Doctoralstudy, fellowships and non-awardCLEexcluded.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my TNNLU diploma eligibility",
+            "capture": [
+              "graduate qualification",
+              "country",
+              "hybrid attendance needs"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my TNNLU diploma budget",
+            "capture": [
+              "country fee category",
+              "physical examination travel"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNNLU diploma application",
+            "capture": [
+              "intended cycle",
+              "qualification records",
+              "examination arrangements"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "tnnlu-pgd-fisheries-law-policy",
+          "canonicalCourseSlug": "pg-diploma-law-policy",
+          "officialTitle": "Post Graduate Diploma in Fisheries Law and Policy (Part-time, Hybrid)",
+          "durationYears": 1,
+          "fee": {
+            "status": "confirmed",
+            "audience": "international",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 600,
+            "officialTotalTuitionAmount": 600,
+            "verifiedAt": "2026-10-25",
+            "notes": "2026-27 tuition for candidates from countries outside the BOBP grouping is USD 600 for this one-year programme. Other charges: application 15, admission 30, examination 105, provisional certificate 20 and convocation 80 USD; all published fees total 850 USD. Candidates from BOBP countries pay 320 USD tuition and 450 USD total; Indian candidates pay 20000 INR tuition and 27500 INR total. Travel and accommodation for any required physical assessment are additional; examination centres are notified separately."
+          },
+          "additionalFees": [
+            {
+              "audience": "domestic",
+              "currency": "INR",
+              "annualAmount": 20000,
+              "totalAmount": 20000,
+              "academicYear": "2026-27",
+              "verifiedAt": "2026-10-25",
+              "notes": "Indian candidate tuition for the one-year programme; published compulsory fee heads including application, examination and certification bring the total to 27500 INR. Physical-assessment travel and accommodation are additional."
+            },
+            {
+              "audience": "international",
+              "currency": "USD",
+              "annualAmount": 320,
+              "totalAmount": 320,
+              "academicYear": "2026-27",
+              "verifiedAt": "2026-10-25",
+              "notes": "BOBP-country candidate tuition, distinct from other-country international 600 USD rate. BOBP members are Bangladesh, India, Maldives, SriLanka; India has its separate INR fee column. Published all-fee total 450 USD; clarify assigned category with admissions."
+            }
+          ],
+          "officialProgramUrl": "https://bobpigo.org/pages/view/pgdflp",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Graduates from a recognised university in India or abroad",
+              "Candidates of any nationality, age, gender or employment status"
+            ],
+            "restrictions": [
+              "Final examinations require physical attendance at approved centres; future centres in India and abroad will be notified.",
+              "This specialised diploma is not a qualifying LLB and does not itself confer lawyer registration or a right to practise law."
+            ],
+            "notes": "Part-time hybrid programme, with weekend online sessions and physical assessment. Fee category depends on country grouping; admission and examination-centre arrangements need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view"
+          },
+          "admissionsContent": {
+            "overview": "This one-year part-time diploma combines fisheries governance, international legal instruments, regional policy and research. TNNLU awards the diploma and manages admission and examination; BOBP-IGO coordinates coursework and research as knowledge partner. Weekend online teaching is combined with physical final examinations. It does not itself qualify a graduate to practise law.",
+            "eligibility": {
+              "intro": "The official 2026-27 programme brochure specifies inclusive graduate entry.",
+              "items": [
+                "A graduate degree from a recognised university in India or abroad.",
+                "No restriction based on age, nationality, gender or employment status.",
+                "Ability to meet the hybrid teaching, attendance and physical-examination requirements."
+              ]
+            },
+            "applicationSteps": [
+              "Read the current programme brochure and check graduate-degree recognition and the country-based fee category.",
+              "The 2026 brochure directs applications to https://forms.gle/9ReKpoXzAiY6cuRu8; its 15 July 2026 deadline has passed and the form is closed. Future applicants need the next admission notice.",
+              "For a future cycle, use the newly notified form and follow the admission and fee-payment instructions for that cycle.",
+              "Before enrolment, plan weekend online attendance and obtain the notified physical examination-centre arrangements."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Before applying, obtain the next cohort’s list of required degree records."
+              ],
+              "application": [
+                "The 2026 application form is closed. Use the next cohort’s application form and document checklist when announced."
+              ]
+            },
+            "deadlinesNote": "The 2026-27 brochure scheduled applications 27 May–15 July 2026 and commencement 1 August 2026, running toJuly 2027. The 2026 deadline has passed and its form is closed; future applicants need a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction is explicitly stated for the PGDFLP. Teaching is online or hybrid, with physical final examinations; this language evidence is not extended to other university degrees.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "2026-27 tuition for candidates from countries outside the BOBP grouping is USD 600 for this one-year programme. Other charges: application 15, admission 30, examination 105, provisional certificate 20 and convocation 80 USD; all published fees total 850 USD. Candidates from BOBP countries pay 320 USD tuition and 450 USD total; Indian candidates pay 20000 INR tuition and 27500 INR total. Travel and accommodation for any required physical assessment are additional; examination centres are notified separately.",
+          "teachingPhases": [
+            {
+              "phase": "One-year programme, August–July",
+              "language": "English",
+              "details": "Part-time hybrid delivery: weekend online sessions, dissertation with guide allocation in September and synopsis in October–November, open-book pre-final assessment in May and physical written final examinations in July at approved centres. Minimum 60%courseattendance; recordings alone do not automatically earn attendance."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "eligibility",
+      "claimText": "Recognised graduate degree India orabroad, noage, nationality, gender oremploymentrestriction.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "medium",
+      "claimText": "PGDFLP explicitmediumEnglish; hybridclasses plusphysicalfinalexams.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "duration",
+      "claimText": "One-year part-timehybrid graduate diploma, August toJuly.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "intake",
+      "claimText": "2026-27 brochure scheduled programmecommencement 1 August 2026. This is a publishedhistoricalcycle, not a futuredeadline.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "admissions",
+      "claimText": "TNNLU manages admission, examination and award; BOBP-IGO coordinates coursework/research. The 2026 brochure supplies https://forms.gle/9ReKpoXzAiY6cuRu8 with 15 July 2026 deadline. Public form checked 25 October 2026 confirms no longer accepting responses and created insideTamilNaduNationalLawUniversity. Future applicants require next-cycle notice.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "fee",
+      "claimText": "2026-27 tuition for candidates from countries outside the BOBP grouping is USD 600 for this one-year programme. Other charges: application 15, admission 30, examination 105, provisional certificate 20 and convocation 80 USD; all published fees total 850 USD. Candidates from BOBP countries pay 320 USD tuition and 450 USD total; Indian candidates pay 20000 INR tuition and 27500 INR total. Travel and accommodation for any required physical assessment are additional; examination centres are notified separately.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "teachingPhases",
+      "claimText": "Part-time hybrid delivery: weekend online sessions, dissertation with guide allocation in September and synopsis in October–November, open-book pre-final assessment in May and physical written final examinations in July at approved centres. Minimum 60%courseattendance; recordings alone do not automatically earn attendance.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "audienceEligibility",
+      "claimText": "No nationalityrestriction; degreefromrecogniseduniversityIndiaorabroad; physicalassessmentcentresIndia/abroadtobenotified.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnnlu-pgd-fisheries-law-policy"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "identity",
+      "claimText": "Tamil Nadu National Law University is a public state university established in 2012 at Navalurkuttapattu, Tiruchirappalli. Its residential undergraduate law degrees combine law with arts or commerce, and its postgraduate portfolio includes Business Law and a part-time hybrid diploma in Fisheries Law and Policy offered with BOBP-IGO. The verified diploma shown here has global graduate entry and physical assessment requirements.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1dBSAe1pg7db_jiX0zC90UrUgKkS9tw8O/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "recognition",
+      "claimText": "UGCconsolidatedregisterentry 829 listsTamilnaduNationalLawSchool, NavalurKuttapattu, Tiruchirapalli asStateUniversity, year 2012. EstablishmentActanduniversitysiteconfirmcurrentTNNLUname.",
+      "status": "verified",
+      "sourceLabel": "UGC official register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "recognition",
+      "claimText": "TamilNaduActNo 9 of 2012 establisheduniversity; currentconsolidatedActusestheUniversityname.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1vEJgSUV5WJMe8H6ApK9F44LxjYW49vFA/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The 25-acre campus includes undergraduate and postgraduate academic blocks, a library with a Legal History Museum and moot court hall, an auditorium, hostels and sports facilities. Student committees organise legal aid, mooting, trial advocacy, mediation and cultural activities. The Fisheries Law and Policy diploma follows a part-time hybrid timetable; residential-campus life belongs primarily to the regular degree routes.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1dBSAe1pg7db_jiX0zC90UrUgKkS9tw8O/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "cityProfile",
+      "claimText": "The university is at Navalurkuttapattu on the Tiruchirappalli–Dindigul highway, about 12 kilometres from the Central Bus Stand and Tiruchirappalli Junction. Its postal address is TNNLU Post 620027. Programme delivery matters when planning travel: the hybrid diploma uses weekend online teaching and notified physical examination centres, while regular degrees are residential.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1dBSAe1pg7db_jiX0zC90UrUgKkS9tw8O/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "studentLiving",
+      "claimText": "The university provides separate men’s and women’s hostels with mess facilities. Regular undergraduate and postgraduate students share rooms; resident wardens and welfare committees support hostel life. The hybrid Fisheries Law and Policy diploma does not imply a residential place. Confirm any examination visit accommodation separately rather than applying residential-degree hostel charges to a hybrid student. Campus hostels have separate mess arrangements for men and women, with dining timetables and mess committees. A campus canteen and food stalls provide additional options. Hybrid students planning a physical assessment visit should confirm meal access and any dietary requirements with the host or examination centre; no specific menu is guaranteed.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1dBSAe1pg7db_jiX0zC90UrUgKkS9tw8O/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "safetyOverview",
+      "claimText": "The university publishes anti-ragging and internal-complaints arrangements, and its health centre has a doctor on working days and nursing cover. A resident counsellor provides confidential support, and the university describes emergency ambulance access and a hospital tie-up. These are named support arrangements rather than an assurance of individual safety.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1dBSAe1pg7db_jiX0zC90UrUgKkS9tw8O/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "studentSupport",
+      "claimText": "Faculty mentorship, library resources and student committees support the residential university community. The PGDFLP provides remote access to TNNLU library resources, class recordings for review and dissertation guidance. Attendance credit for a missed live session requires the administrator’s approval under programme rules; watching recordings does not automatically satisfy attendance.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-national-law-university",
+      "publicField": "practicalExposure",
+      "claimText": "The Fisheries Law and Policy diploma studies international fisheries instruments, regional institutions, human rights, labour law and negotiation, with case analysis and a supervised dissertation. BOBP-IGO coordinates coursework and research as knowledge partner. University law students also participate in moot courts and legal aid activities; these campus activities are distinct from a promised internship or employment outcome for diploma participants.",
+      "status": "verified",
+      "sourceLabel": "TNNLU official source",
+      "sourceUrl": "https://drive.google.com/file/d/1W7ddizZul_3sbTSy762vR-EohZxfjlAl/view",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "manifestId": "alagappa-university-2026-10-25",
+  "status": "reviewed-offline-research-only",
+  "entries": [
+    {
+      "universitySlug": "alagappa-university",
+      "universityName": "Alagappa University",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://alagappauniversity.ac.in/img/core-img/logo2.png",
+          "sourceType": "official",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "rightsBasis": "Official university identification asset served by its website; no open licence claimed. Intended only to identify this university and campus.",
+          "proposedPublicId": "studentstraffic/universities/alagappa-university/logo",
+          "altText": "Alagappa University coloured emblem",
+          "visualCheck": "1200×1200 coloured crest on transparent background; coloured text and emblem remain legible on white."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://alagappauniversity.ac.in/img/slider/university.jpg",
+          "sourceType": "official",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "rightsBasis": "Official university identification asset served by its website; no open licence claimed. Intended only to identify this university and campus.",
+          "proposedPublicId": "studentstraffic/universities/alagappa-university/cover",
+          "altText": "Alagappa University main building and landscaped entrance in Karaikudi",
+          "visualCheck": "1200×763 campus building, Indian flag and university name; image visually matches official campus."
+        }
+      ]
+    }
+  ]
+}

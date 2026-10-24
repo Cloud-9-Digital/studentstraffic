@@ -32,3 +32,7 @@ https://www.academicjobs.com/employers/madurai-kamaraj-university/8846/academic-
 ## Recognition and identity leads
 
 UGC consolidatedJanuary2023 register and Section12BSeptember2015 list include Madurai Kamraj University, with1965 establishment. Current prospectus says1966; reconcile before publication. `mkuniversity.edu.in` is MK UniversityPatan and `mku.ac.in` is Mahakaushal University, not Madurai Kamaraj.
+
+## 25 October bounded continuation
+
+Reclaimed under the same owner and retried both HTTPS and HTTP official first-year calendar. HTTPS remains SSL unexpected EOF and HTTP returns503. New2025/2026 first-year classes, reopening and commencement searches again returned affiliated colleges/faculty induction or unsupported aggregate calendars. No new legitimate programme-scoped recent intake evidence was found. Returned to held and continued Alagappa research; no database access or migration.

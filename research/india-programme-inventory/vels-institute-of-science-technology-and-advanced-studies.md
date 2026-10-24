@@ -77,3 +77,12 @@ reservation `0157-vals-institute-of-science-and-advanced-technologies` remains m
 explicit reservation note. A future ready payload requires a new correctly named reservation.
 Resume by restoring full official or authenticated mirrored documents for eligibility, international
 route, intake, fees and institutional recognition, and completing medical/agriculture scope.
+
+
+## Second continuation — 25 October 2026
+
+Official NAAC-hosted MBA2024 regulation opens fully: https://naac.vistas.ac.in/web/MBA%20GENERAL%20SYLLABUS%20-%202024%20REGULATION%20-%2030.9.24.pdf . It establishes two years/four semesters, English instruction, three-year bachelor degree minimum50% (45%reserved), odd semester July–November, 102credits,30day internship between semesters2/3 and fourthsemester project. This materially resolves MBAacademicfacts, but does not identify the current campus-specific foreign application route or establish current class-start2026 dates; a semester range is not a reporting notice. Main fee/international pages still accessdenied. No invented current fee or international eligibility added.
+
+Medical2025-26 prospectus search indexed thirteen MD/MS programmes at https://velsmedicalcollege.com/pdf/PG-Prospectus-AY-2025-26.pdf but full15.6MB document remains above web limit and unverified at fulltext. Need add the medical portfolio only after source retrieval and verify current NMCpermissions/intake/English. Search-index table includes GeneralMedicine,Paediatrics,Dermatology,Psychiatry,GeneralSurgery,Orthopaedics,Obstetrics&Gynaecology,ENT,Ophthalmology,Anaesthesiology,Radiodiagnosis,Pathology,CommunityMedicine. Medicalunit and Agriculture completeinventory remain gaps.
+
+University remains held after targeted attempt; no new numbered reservation or executablepayload. Nextworker should use accessible naac.vistas.ac.in archive and retrieve current campus-specific international instructions before promoting MBA.

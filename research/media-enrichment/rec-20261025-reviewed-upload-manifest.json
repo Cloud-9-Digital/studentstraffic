@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "rajalakshmi-engineering-college",
+      "universityName": "Rajalakshmi Engineering College",
+      "sourceBatch": "codex-rec-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admissions.rajalakshmi.org/assets/images/main-logo.png",
+          "proposedPublicId": "studentstraffic/universities/rajalakshmi-engineering-college/logo-20261025",
+          "altText": "Rajalakshmi Engineering College emblem",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 260,
+              "y": 0,
+              "width": 580,
+              "height": 867
+            }
+          ],
+          "sourceType": "official-university",
+          "rightsBasis": "Official college brand/marketing asset used to identify and illustrate the institution in a factual profile;no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cms.rajalakshmi.org/api/media/file/Banner11.avif",
+          "proposedPublicId": "studentstraffic/universities/rajalakshmi-engineering-college/cover-20261025",
+          "altText": "Main academic building at Rajalakshmi Engineering College,Thandalam",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 1160,
+              "y": 0,
+              "width": 732,
+              "height": 520
+            }
+          ],
+          "sourceType": "official-university",
+          "rightsBasis": "Official college brand/marketing asset used to identify and illustrate the institution in a factual profile;no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

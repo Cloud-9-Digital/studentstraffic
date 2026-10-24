@@ -1,0 +1,33 @@
+{
+  "manifestId": "india-tn-tnnlu-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "TNNLU mandatory identifying logo and official campus cover",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-national-law-university",
+      "universityName": "Tamil Nadu National Law University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tnnlu.ac.in/images/TNNLU%20Logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://tnnlu.ac.in/",
+          "rightsBasis": "Official identifying university logo; no open licence claimed. HTTP200image/png2954x2954 verified25October2026; purple text and emblem legible on white; transparent outer corners.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-national-law-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tnnlu.ac.in/images/default_bg.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnnlu.ac.in/About-TNNLU",
+          "rightsBasis": "Official university website campus photograph used as page background; no open licence claimed. HTTP200image/jpeg5845x2074 verified25October2026 and visually inspected: university building behind palms and campus boundary, no editorial text overlay. Matches official gallery entrance/building photograph.",
+          "altText": "Tamil Nadu National Law University campus building behind palms and a white boundary wall",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-national-law-university/cover"
+        }
+      ],
+      "migrationId": "0195-india-tamil-nadu-national-law-university"
+    }
+  ]
+}
