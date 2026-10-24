@@ -2,8 +2,15 @@ const PROGRAMME_SUFFIX_SEPARATOR = /\s+(?:\u2014|\u2013|-)\s+/u;
 const PROGRAMME_SUFFIX_MARKER =
   /\b(?:bachelor|master|honours|bsc|b\.sc|bscn|msc|m\.sc|mbbs|md|mba|nursing|engineering|computer science|general practice nurse)\b/i;
 
+// Public labels can use a familiar name while the catalogue retains the official name.
+const UNIVERSITY_DISPLAY_NAMES: Record<string, string> = {
+  "christ (deemed to be university)": "Christ University",
+};
+
 export function getUniversityDisplayName(name: string) {
   const normalized = name.trim();
+  const displayName = UNIVERSITY_DISPLAY_NAMES[normalized.toLowerCase()];
+  if (displayName) return displayName;
   const separator = normalized.match(PROGRAMME_SUFFIX_SEPARATOR);
   if (!separator?.index) return normalized;
 
