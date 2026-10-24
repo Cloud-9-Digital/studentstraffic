@@ -64,6 +64,7 @@ export function cityNameToSlug(city: string) {
 }
 import { finderPageSize } from "@/lib/constants";
 import { getFinderSort } from "@/lib/filters";
+import { finderCityCondition, matchesFinderCity, normalizeFinderCity } from "@/lib/finder-city";
 import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
 import { getUniversityDisplayName } from "@/lib/university-presentation";
 type CatalogSnapshot = {
@@ -1136,7 +1137,7 @@ function buildFinderProgramConditions(filters: FinderFilters) {
   }
 
   if (filters.city) {
-    conditions.push(eq(universitiesTable.city, filters.city));
+    conditions.push(finderCityCondition(universitiesTable.city, filters.city));
   }
 
   if (filters.level) {
@@ -1738,7 +1739,7 @@ export async function listFinderPrograms(filters: FinderFilters) {
       return false;
     }
 
-    if (filters.city && program.university.city !== filters.city) {
+    if (filters.city && !matchesFinderCity(program.university.city, filters.city)) {
       return false;
     }
 
@@ -1844,7 +1845,7 @@ function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
     ...filters,
     q: normalizeValue(filters.q),
     country: normalizeValue(filters.country),
-    city: normalizeValue(filters.city),
+    city: filters.city ? normalizeFinderCity(filters.city) || undefined : undefined,
     level: normalizeValue(filters.level),
     course: normalizeValue(filters.course),
     medium: normalizeValue(filters.medium),
