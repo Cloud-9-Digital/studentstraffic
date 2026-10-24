@@ -1,0 +1,33 @@
+{
+  "appliedAt": "2026-10-24T22:47:19.037Z",
+  "uploads": {
+    "attempted": 6,
+    "succeeded": 6,
+    "failed": 0
+  },
+  "database": {
+    "updated": 3,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "tamil-nadu-veterinary-and-animal-sciences-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "womens-christian-college-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "ethiraj-college-for-women",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
