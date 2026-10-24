@@ -1,0 +1,39 @@
+{
+  "appliedAt": "2026-10-24T20:00:07.441Z",
+  "uploads": {
+    "attempted": 8,
+    "succeeded": 8,
+    "failed": 0
+  },
+  "database": {
+    "updated": 4,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "annamalai-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "amet-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-fisheries-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "b-s-abdur-rahman-crescent-institute-of-science-and-technology",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
