@@ -39,8 +39,14 @@ export function hasPublishedUsdAmount(
 export function hasOfficialFeeAmount(
   value: number | null | undefined,
   currencyCode?: string | null,
+  feeStatus?: ProgramOffering["feeStatus"],
 ): value is number {
-  return typeof value === "number" && value > 0 && Boolean(currencyCode);
+  if (typeof value !== "number" || !Number.isFinite(value)) return false;
+  // Zero is a fee only with explicit confirmation and a native currency.
+  // Legacy normalized USD zero remains an unknown-amount sentinel.
+  return (value > 0 && Boolean(currencyCode)) || (
+    value === 0 && feeStatus === "confirmed" && /^[A-Z]{3}$/.test(currencyCode ?? "")
+  );
 }
 
 // Mirrors formatProgramAnnualFee's source-of-truth logic without the
@@ -71,7 +77,8 @@ export function hasRenderableProgramFee(
 
   return hasOfficialFeeAmount(
     offering.officialAnnualTuitionAmount,
-    offering.officialFeeCurrency
+    offering.officialFeeCurrency,
+    offering.feeStatus,
   );
 }
 
@@ -92,6 +99,7 @@ export function hasRenderableProgramAnnualFee(
     hasOfficialFeeAmount(
       offering.officialAnnualTuitionAmount,
       offering.officialFeeCurrency,
+      offering.feeStatus,
     )
   );
 }
@@ -122,6 +130,7 @@ export function getProgramAnnualFeeLabel(
   return hasOfficialFeeAmount(
     offering.officialAnnualTuitionAmount,
     offering.officialFeeCurrency,
+    offering.feeStatus,
   ) && !hasPublishedUsdAmount(offering.annualTuitionUsd)
     ? "Tuition per year"
     : hasPublishedUsdAmount(offering.annualTuitionUsd)
@@ -151,6 +160,15 @@ export function formatProgramAnnualFee(
 
   if (offering.feeStatus === "on_request") return fallback;
 
+  if (
+    offering.feeStatus === "confirmed" &&
+    offering.officialAnnualTuitionAmount === 0 &&
+    hasOfficialFeeAmount(0, offering.officialFeeCurrency, offering.feeStatus) &&
+    offering.officialFeeCurrency
+  ) {
+    return formatCurrencyAmount(0, offering.officialFeeCurrency);
+  }
+
   if (hasPublishedUsdAmount(offering.annualTuitionUsd)) {
     return formatCurrencyUsd(offering.annualTuitionUsd);
   }
@@ -159,6 +177,7 @@ export function formatProgramAnnualFee(
     hasOfficialFeeAmount(
       offering.officialAnnualTuitionAmount,
       offering.officialFeeCurrency,
+      offering.feeStatus,
     ) &&
     offering.officialFeeCurrency
   ) {

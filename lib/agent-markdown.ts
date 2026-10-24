@@ -143,6 +143,7 @@ function formatOfficialAnnualFee(program: FinderProgram) {
     !hasOfficialFeeAmount(
       offering.officialAnnualTuitionAmount,
       offering.officialFeeCurrency,
+      offering.feeStatus,
     ) ||
     !offering.officialFeeCurrency
   ) {

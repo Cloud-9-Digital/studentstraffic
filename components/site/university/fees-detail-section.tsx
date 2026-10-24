@@ -10,6 +10,7 @@ import {
   formatProgramMedium,
   formatUsdAmountOrTbd,
   hasPublishedUsdAmount,
+  hasOfficialFeeAmount,
   hasRenderableProgramAnnualFee,
   hasRenderableProgramLivingFee,
 } from "@/lib/utils";
@@ -124,11 +125,23 @@ function ProgramFeeCard({
             <p className="mt-1.5 text-xl font-bold text-foreground">
               {formatProgramAnnualFee(offering)}
             </p>
-            {offering.officialFeeCurrency &&
-              offering.officialAnnualTuitionAmount ? (
+            {offering.officialFeeCurrency && hasOfficialFeeAmount(
+              offering.officialAnnualTuitionAmount,
+              offering.officialFeeCurrency,
+              offering.feeStatus,
+            ) ? (
               <p className="mt-0.5 text-xs text-muted-foreground">
                 {offering.officialFeeCurrency}{" "}
                 {offering.officialAnnualTuitionAmount.toLocaleString()} official
+              </p>
+            ) : null}
+            {offering.officialAnnualTuitionAmount === 0 && hasOfficialFeeAmount(
+              offering.officialAnnualTuitionAmount,
+              offering.officialFeeCurrency,
+              offering.feeStatus,
+            ) ? (
+              <p className="mt-1 text-xs leading-5 text-muted-foreground">
+                Tuition only. Other compulsory fees and living costs may apply; check the programme fee notes.
               </p>
             ) : null}
           </div>

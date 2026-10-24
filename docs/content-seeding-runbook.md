@@ -523,3 +523,7 @@ Update this document when the schema, page architecture, validation rules, conte
 workflow or source-quality standard changes. Historical scripts, old prompts and one-off country
 decisions do not belong here; keep any necessary durable record in the relevant content migration or
 external archive instead.
+
+### Explicit NIL tuition
+
+A primary official annual tuition amount of `0` is publishable only as an explicit `fee.status: "confirmed"` native-currency amount with an uppercase three-letter currency, academic year, verified date and source-backed notes. Use this for a verified NIL tuition component for the exact programme, route and applicant category; retain compulsory charges and any waiver conditions in the notes. It does not mean the entire course, examinations, accommodation or living costs are free. Never substitute zero for a missing tuition quote or a conditional waiver with unverified eligibility. Omit unverified total tuition rather than calculating a zero total. Normalized USD zero remains an unknown-value sentinel; indicative ranges and secondary fee records retain positive-amount validation.

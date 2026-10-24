@@ -63,9 +63,11 @@ const feeSchema = z.discriminatedUnion("status", [
     status: z.literal("confirmed"),
     audience: feeAudienceSchema.optional(),
     academicYear: z.string().min(4).max(40),
-    officialFeeCurrency: z.string().length(3),
-    officialAnnualTuitionAmount: z.number().int().positive(),
-    officialTotalTuitionAmount: z.number().int().positive().nullable().optional(),
+    officialFeeCurrency: z.string().regex(/^[A-Z]{3}$/),
+    // An explicit native zero means verified NIL tuition, not missing pricing.
+    // USD sentinels, indicative ranges and additional fees keep their existing rules.
+    officialAnnualTuitionAmount: z.number().int().nonnegative(),
+    officialTotalTuitionAmount: z.number().int().nonnegative().nullable().optional(),
     annualTuitionUsd: z.number().int().positive().nullable().optional(),
     totalTuitionUsd: z.number().int().positive().nullable().optional(),
     verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

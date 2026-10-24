@@ -52,6 +52,7 @@ const program = {
     officialAnnualTuitionAmount: 250000,
     medium: "Not confirmed",
     intakeMonths: [],
+    intakeCodes: [],
     professionalExamSupport: [],
     yearlyCostBreakdown: [],
     teachingPhases: [],
@@ -83,4 +84,15 @@ test("programme markdown shows the official fee and omits an unconfirmed medium"
   assert.match(markdown, /Tuition per year: ₹2,50,000/);
   assert.doesNotMatch(markdown, /Teaching language/);
   assert.match(markdown, /- https:\/\/example\.edu\/fees/);
+});
+
+
+test("programme markdown preserves confirmed NIL tuition and compulsory charge notes", () => {
+  const markdown = renderProgramMarkdown({ program: { ...program, offering: {
+    ...program.offering, feeStatus: "confirmed", officialAnnualTuitionAmount: 0,
+    feeNotes: "NIL tuition only; admission and examination charges remain payable.",
+  }} as FinderProgram });
+  assert.match(markdown, /Tuition per year:.*₹0/);
+  assert.match(markdown, /NIL tuition only; admission and examination charges remain payable/);
+  assert.doesNotMatch(markdown, /Total tuition:.*0|Free course/);
 });

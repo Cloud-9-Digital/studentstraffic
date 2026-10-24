@@ -218,3 +218,7 @@ support like "FMGE prep sessions" not generic "exam support available").
 ### Medium of instruction
 
 Use a concise language label derived from controlled `instructionLanguages`. Store evidence, teaching-phase caveats and language-test notes separately in `mediumDetails`; never put paragraphs into `medium`. Preserve known clinical-language transitions in teaching phases/appropriate admission content. Where teaching language is not established, use `Not confirmed`, not an inferred English label.
+
+### Confirmed NIL tuition
+
+Verified NIL tuition must be labelled as annual tuition for its exact programme and applicant category. A confirmed native amount of zero is distinct from missing pricing. Preserve compulsory-fee and conditional-waiver notes, avoid describing the whole course as free, and do not invent total tuition or living costs from a zero tuition component.

@@ -135,6 +135,7 @@ function getProgramTuitionOffer(program: FinderProgram, programUrl: string) {
     hasOfficialFeeAmount(
       offering.officialAnnualTuitionAmount,
       offering.officialFeeCurrency,
+      offering.feeStatus,
     ) && /^[A-Z]{3}$/.test(offering.officialFeeCurrency ?? "");
   const price = official
     ? offering.officialAnnualTuitionAmount
@@ -147,10 +148,8 @@ function getProgramTuitionOffer(program: FinderProgram, programUrl: string) {
   return {
     "@type": "Offer",
     url: programUrl,
-    category: "Paid",
-    description: offering.feeAcademicYear
-      ? `Annual tuition, ${offering.feeAcademicYear}`
-      : "Annual tuition",
+    category: price === 0 ? "Tuition" : "Paid",
+    description: `${offering.feeAcademicYear ? `Annual tuition, ${offering.feeAcademicYear}` : "Annual tuition"}${price === 0 ? `; tuition only, other compulsory fees and living costs may apply.${offering.feeNotes ? ` ${offering.feeNotes}` : ""}` : ""}`,
     priceCurrency,
     price,
     priceSpecification: {

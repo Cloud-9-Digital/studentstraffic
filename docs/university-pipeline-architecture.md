@@ -609,3 +609,9 @@ not a comma-delimited postal address or city-plus-state label. Keep neighbourhoo
 metropolitan context, state and postal code in `cityProfile`. A nearby town must not be renamed
 Chennai merely to join that filter. Correct already-applied city data through a forward content
 migration, preserving full programme records and reviewed media attribution.
+
+### Confirmed native zero tuition and detail-only admissions projection
+
+The confirmed primary fee schema accepts a non-negative native annual tuition amount (and an explicitly sourced native total if supplied), paired with an uppercase ISO-style three-letter currency. Public helpers render native zero only when `feeStatus` is explicitly `confirmed`; an absent native amount, unconfirmed status, or legacy normalized USD zero remains unknown. Structured offers may emit native `price: 0` for annual tuition, with tuition-only scope and a reminder that compulsory fees and living costs may apply. They do not mark the course Free or infer a total. Existing positive pricing, indicative ranges and secondary fee records retain their prior handling. Fee/category/source notes remain part of the offering and must be displayed.
+
+`getProgramBySlug` selects and maps stored `audienceEligibility` and programme `admissionsContent` for detail pages. Broad finder/list projections remain unchanged, preserving their query-cost intent. Keep this explicit detail projection when evolving stored programme fields; omission must not silently discard published applicant restrictions or admissions instructions.
