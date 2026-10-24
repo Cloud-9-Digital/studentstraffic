@@ -2289,8 +2289,15 @@ export async function getProgramsForUniversity(universitySlug: string) {
 }
 
 export async function getProgramBySlug(programSlug: string) {
+  return getProgramDetailBySlug(programSlug, "admissions-v1");
+}
+
+async function getProgramDetailBySlug(programSlug: string, detailVersion: string) {
   "use cache: remote";
 
+  // Version the serialized detail shape so remote entries created before the
+  // admissions fields were selected cannot survive a deployment unchanged.
+  void detailVersion;
   cacheLife("catalog");
   cacheTag("catalog");
   // Deliberately not tagged "program-offerings": that shared tag is expired by
