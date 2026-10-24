@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0212-india-cmi-simats-city-facets",
+  "description": "Normalize CMI and SIMATS city facets to Siruseri and Chennai, retaining full addresses, all programme details and reviewed media attribution.",
+  "createdAt": "2026-10-25",
+  "payload": "payload.json"
+}

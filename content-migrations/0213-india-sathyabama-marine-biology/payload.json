@@ -1,0 +1,576 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "msc-biological-sciences",
+      "name": "M.Sc. in Biological Sciences",
+      "shortName": "M.Sc. Biological Sciences",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "biological-sciences",
+      "aliases": [
+        "Master of Science in Biology",
+        "MSc Biological Sciences"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Biological sciences master’s programmes provide advanced academic study of living systems and specialist fields within biology. Curricula may combine coursework, laboratory learning, research methods, practical exposure and a project or dissertation. Compare qualifying bachelor’s subjects, marks, teaching language, specialisation, study location, assessment and complete costs.",
+      "metaTitle": "M.Sc. Biological Sciences: Entry and Fees",
+      "metaDescription": "Compare M.Sc. Biological Sciences programmes by qualifying degrees, teaching language, specialisation, duration, practical study and complete costs."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "sathyabama-institute-of-science-and-technology",
+      "name": "Sathyabama Institute of Science and Technology",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 2001,
+      "officialWebsite": "https://www.sathyabama.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Sathyabama Institute of Science and Technology is a private deemed-to-be university in Chennai. Its academic portfolio covers engineering, sciences, arts, commerce, management, law and health disciplines. The Chennai campus houses the Centre for Ocean Research, which jointly offers M.Sc. Marine Biology with the Department of Biotechnology.",
+      "campusLifestyle": "The Chennai campus at Jeppiaar Nagar combines academic blocks, research facilities, hostels and sports spaces. Student clubs cover science, technology, literature, design and cultural interests. Marine Biology study connects the Department of Biotechnology with the Centre for Ocean Research; the exact laboratory, internship and field arrangements depend on the programme.",
+      "cityProfile": "The Chennai campus is at Jeppiaar Nagar on Rajiv Gandhi Salai, Chennai 600119. Confirm this location on your admission record before planning a commute or accommodation. The university’s Sriperumbudur off-campus programmes have separate teaching locations and admission arrangements.",
+      "practicalExposure": "The announced Marine Biology curriculum includes oceanography, fisheries, aquaculture, marine microbiology, biotechnology, ecology and laboratory work. The fourth semester includes internship and field exposure with a project or dissertation. Confirm the specific field sites, practical schedule, supervision and any associated charges before accepting an offer.",
+      "hostelOverview": "The university lists five men’s and five women’s hostels at the Chennai campus. Rooms with attached bathrooms and air-conditioned options are available, alongside laundry and fitness facilities. The published hostel rules require students returning from outings to be back by 6:30pm; obtain current allotment, charges and residence rules before moving.",
+      "dietarySupport": "The university describes North and South Indian dishes and separate vegetarian and non-vegetarian mess halls for men and women. Confirm the current meal arrangement, mess charges and any dietary requirements before accepting residence. Keep food and hostel payments separate from the academic tuition quotation.",
+      "safetyOverview": "The university reports round-the-clock security personnel and CCTV monitoring of campus entry and exit. Hostel students have 24-hour medical aid, with a student help desk during working hours and referral to Sathyabama General Hospital where required. Check residence and programme-specific field-safety instructions as part of admission planning.",
+      "studentSupport": "The university provides a student help desk, library access, sports facilities and academic support services. International applicants use a separate university application route with supporting documents and an individual admission assessment. Students Traffic can help compare the qualifying-degree route, teaching campus, language and complete study budget.",
+      "whyChoose": [
+        "Marine Biology combines coursework, laboratory study and a final project.",
+        "Biotechnology and the Centre for Ocean Research jointly offer the programme.",
+        "Chennai campus facilities include hostels, sports spaces and student support."
+      ],
+      "thingsToConsider": [
+        "Marine Biology requires a listed bachelor’s subject and at least 55% marks.",
+        "The August 2026 programme start is historical; obtain the next cohort’s dates.",
+        "Tuition, hostel and fieldwork costs need a complete current quotation.",
+        "Chennai and Sriperumbudur programmes have separate teaching locations."
+      ],
+      "bestFitFor": [
+        "Graduates in the listed life and marine science fields.",
+        "Applicants seeking academic, laboratory and field-based marine science study.",
+        "Students ready for postgraduate coursework, internship and project assessment."
+      ],
+      "recognitionBadges": [
+        "UGC — deemed-to-be university listed at Chennai, established 2001",
+        "NAAC — A++, CGPA 3.73, cycle 3; valid-accreditation list dated 14 August 2025"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated university register, entry 815",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "NAAC valid-accreditation register, U-0474",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+        }
+      ],
+      "industryPartners": [],
+      "researchSources": [
+        {
+          "label": "UGC university register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC own valid accreditation list14August2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current2026regularPGdirectory",
+          "url": "https://www.sathyabama.ac.in/admissions/post-graduate",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "GeneralPGregulations effective2015-16",
+          "url": "https://www.sathyabama.ac.in/examination/pg-course-regulations",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "AuthenticatedCentre/HeadMarineBiologylaunchandeligibility2026",
+          "url": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "AuthenticatedHeadprogrammeclassstart2026",
+          "url": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_admissions-open-msc-marine-biology-activity-7493607039160492033-KXLr",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Universitycentrepage authenticatingHeadidentity",
+          "url": "https://research.sathyabama.ac.in/people/CentreforOceanResearch",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "CampusFAQ",
+          "url": "https://www.sathyabama.ac.in/academics/FAQ",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Hostelfacilitiesandrules",
+          "url": "https://www.sathyabama.ac.in/campus-life/hostel-facility",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Internationaladmissionroute",
+          "url": "https://www.sathyabama.ac.in/International_Student_Admissions",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "sathyabama-msc-marine-biology",
+          "canonicalCourseSlug": "msc-biological-sciences",
+          "officialTitle": "M.Sc. Marine Biology",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.sathyabama.ac.in/admissions/post-graduate",
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "officialFeeCurrency": "INR",
+            "academicYear": "2026-27",
+            "verifiedAt": "2026-10-25",
+            "notes": "The Centre’s 2026–2028 programme launch announcement quotes a course fee of INR 70,000 per year. It does not isolate tuition or specify all included charges. Request the current tuition breakdown, payment schedule, compulsory academic charges and fieldwork or research costs. Hostel and meals require separate confirmation; no full-course total is established."
+          },
+          "feeNotes": "The Centre’s 2026–2028 programme launch announcement quotes a course fee of INR 70,000 per year. It does not isolate tuition or specify all included charges. Request the current tuition breakdown, payment schedule, compulsory academic charges and fieldwork or research costs. Hostel and meals require separate confirmation; no full-course total is established.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The university’s published general PG regulations specify English instruction, examinations and project reports; these regulations are effective from 2015–16.",
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with a qualifying bachelor’s degree in one of the listed fields or an accepted equivalent, with at least 55% marks"
+            ],
+            "restrictions": [
+              "The specific 2026 Marine Biology qualifying-degree and marks conditions apply.",
+              "Foreign qualification equivalence, international admission and applicant-category charges require separate university confirmation."
+            ],
+            "notes": "Regular Chennai campus route only. The Marine Biology start announcement is not evidence for other programmes or for Sriperumbudur. Future cohorts need fresh admission instructions.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM"
+          },
+          "admissionsContent": {
+            "overview": "Two-year M.Sc. Marine Biology study is jointly offered by the Department of Biotechnology and the Centre for Ocean Research at the Chennai campus. Four semesters cover marine biology, oceanography, ecology and applied marine sciences, followed by internship, field exposure and a project or dissertation.",
+            "eligibility": {
+              "intro": "Qualifying bachelor’s-degree route for regular Chennai admission; listed subject fields and the minimum marks requirement apply.",
+              "items": [
+                "A bachelor’s degree in Life Sciences, Zoology, Botany, Biotechnology, Microbiology, Biochemistry.",
+                "Other listed qualifying fields are Environmental Science, Ecology, Marine Biology, Marine Science, Oceanography, Aquatic Biology, Aquaculture, or an accepted equivalent.",
+                "A minimum of 55% marks in the qualifying bachelor’s degree is required for the programme’s 2026 admission route.",
+                "Qualification equivalence, admission and any applicant-category conditions require university assessment."
+              ]
+            },
+            "applicationSteps": [
+              "Use the regular postgraduate admission link on the university website when the next Marine Biology cycle opens.",
+              "Select M.Sc. Marine Biology and obtain an assessment of your bachelor’s subject, marks and qualification equivalence.",
+              "Complete the application through the university’s prescribed admission route and obtain its current document checklist.",
+              "Follow the programme’s admission and document-verification instructions; confirm the teaching campus and any fieldwork arrangements.",
+              "Obtain the complete tuition and compulsory-charge quotation before payment and registration."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Prepare the qualifying bachelor’s-degree record and marks for subject and 55% threshold assessment; obtain the university’s checklist for required originals, copies and formats."
+              ],
+              "application": [
+                "Obtain the current programme application form instructions and applicant-category document checklist."
+              ]
+            },
+            "deadlinesNote": "The Centre for Ocean Research head announced Marine Biology classes beginning on 17 August 2026 for the 2026–2028 batch. This is a historical programme-specific date; future applicants need the next admission notice and class-start confirmation."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Four semesters of regular postgraduate study",
+              "language": "English",
+              "details": "Study is jointly offered by Biotechnology and the Centre for Ocean Research. The announced curriculum combines oceanography, marine biology and laboratory study, with internship or field exposure and a project/dissertation in the final semester."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Sathyabama a deemed-to-be university?",
+          "answer": "UGC lists Sathyabama Institute of Science and Technology at Chennai as a deemed-to-be university, with the date 16 July 2001. It is distinct from other Jeppiaar-named institutions."
+        },
+        {
+          "question": "Where is the Marine Biology programme taught?",
+          "answer": "The programme is jointly offered by the Department of Biotechnology and the Centre for Ocean Research at the Chennai campus. Confirm the Jeppiaar Nagar teaching location and specific fieldwork arrangements before accepting an offer."
+        },
+        {
+          "question": "How long is M.Sc. Marine Biology?",
+          "answer": "The current programme takes two years across four semesters. The announced curriculum includes academic and laboratory study, followed by internship or field exposure and a project or dissertation."
+        },
+        {
+          "question": "Which bachelor’s degrees are eligible?",
+          "answer": "The programme lists Life Sciences, Zoology, Botany, Biotechnology, Microbiology, Biochemistry, Environmental Science, Ecology, Marine Biology, Marine Science, Oceanography, Aquatic Biology and Aquaculture, or an accepted equivalent. A minimum of 55% marks is required."
+        },
+        {
+          "question": "Is Marine Biology taught in English?",
+          "answer": "The university’s published general postgraduate regulations specify English for instruction, examinations and project reports. These regulations are effective from 2015–16; obtain the programme’s current academic instructions before enrolment."
+        },
+        {
+          "question": "When was the 2026 class start?",
+          "answer": "The Centre for Ocean Research head announced 17 August 2026 as the Marine Biology class-start date. This is programme-specific historical timing; applicants to a future cohort need a fresh admission notice."
+        },
+        {
+          "question": "Does this date apply to all Sathyabama programmes?",
+          "answer": "No. The Marine Biology announcement establishes that programme’s 2026 timing. Other programmes and the Sriperumbudur campus need their own class-start confirmation."
+        },
+        {
+          "question": "What practical study is included?",
+          "answer": "The announced curriculum includes oceanography and marine-science laboratories, with internship and field exposure in the final semester. Confirm the approved practical sites, supervision, assessment and any extra charges with the department."
+        },
+        {
+          "question": "How much is the tuition?",
+          "answer": "The Centre’s 2026–2028 programme launch announcement quotes a course fee of INR 70,000 per year. It does not isolate tuition or specify all included charges. Request the current tuition breakdown, payment schedule, compulsory academic charges and fieldwork or research costs. Hostel and meals require separate confirmation; no full-course total is established."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the regular postgraduate admission link on the university website when the next cycle opens. Select Marine Biology and obtain an assessment of your qualifying degree and marks, the document checklist and the full payment instructions."
+        },
+        {
+          "question": "Are hostels available?",
+          "answer": "The Chennai campus has separate men’s and women’s hostels, with air-conditioned room options, laundry, fitness facilities and medical support. Confirm allotment, current charges and residence rules, including the published outing-return time."
+        },
+        {
+          "question": "What food options are described?",
+          "answer": "The university describes North and South Indian dishes with separate vegetarian and non-vegetarian mess halls. Confirm current meal arrangements, dietary requirements and mess charges when planning accommodation."
+        },
+        {
+          "question": "Can foreign graduates use this admission route?",
+          "answer": "The university has a separate international application route. Foreign qualification equivalence, programme-specific acceptance, category conditions and charges need an individual assessment; do not assume that the regular Indian route confirms them."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Complete120rowcurrentregularTamilNaduportfolio refreshed. Oneprogramme-specificMarineBiologyroute supported; other119rowsheldforpreciseintakeandotheridentifiedgaps.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Marine Biology eligibility",
+            "capture": [
+              "bachelor subject",
+              "degree marks",
+              "intended cycle"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my complete postgraduate budget",
+            "capture": [
+              "programme",
+              "hostel preference",
+              "applicant category"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my Sathyabama application",
+            "capture": [
+              "qualification records",
+              "intended cycle",
+              "campus"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "officialTitle",
+      "claimText": "Current2026regularPGpage listsMScMarineBiology2years.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/admissions/post-graduate",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "duration",
+      "claimText": "Two-year2026–2028programme, foursemestersexplicitlaunchcurriculum.",
+      "status": "verified",
+      "sourceLabel": "AuthenticatedCentreandHeadinstitutionalannouncement",
+      "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "medium",
+      "claimText": "GeneralPGcourse regulations effective2015–16 expresslyallpostgraduatedegrees and English instruction/examination/projectreports. CurrentpublishedpageSep2026; notrepresented asMarine-specific2026regulation.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/examination/pg-course-regulations",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "eligibility",
+      "claimText": "A bachelor’s degree in Life Sciences, Zoology, Botany, Biotechnology, Microbiology, Biochemistry. Other listed qualifying fields are Environmental Science, Ecology, Marine Biology, Marine Science, Oceanography, Aquatic Biology, Aquaculture, or an accepted equivalent. A minimum of 55% marks in the qualifying bachelor’s degree is required for the programme’s 2026 admission route. Qualification equivalence, admission and any applicant-category conditions require university assessment.",
+      "status": "verified",
+      "sourceLabel": "AuthenticatedCentreandHeadinstitutionalannouncement",
+      "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "intake",
+      "claimText": "The Centre for Ocean Research head announced Marine Biology classes beginning on 17 August 2026 for the 2026–2028 batch. This is a historical programme-specific date; future applicants need the next admission notice and class-start confirmation.",
+      "status": "verified",
+      "sourceLabel": "AuthenticatedCentreandHeadinstitutionalannouncement",
+      "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_admissions-open-msc-marine-biology-activity-7493607039160492033-KXLr",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "fee",
+      "claimText": "The Centre’s 2026–2028 programme launch announcement quotes a course fee of INR 70,000 per year. It does not isolate tuition or specify all included charges. Request the current tuition breakdown, payment schedule, compulsory academic charges and fieldwork or research costs. Hostel and meals require separate confirmation; no full-course total is established.",
+      "status": "verified",
+      "sourceLabel": "Authenticated Centre programme launch: annual course fee, tuition component not isolated",
+      "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "admissions",
+      "claimText": "CurrentregularPGtable linksApplyNowtofeeportal.sathyabama.ac.in; programmeheadoffersadmissionguidance, exactfuturecohortrequired.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/admissions/post-graduate",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "documentsRequired",
+      "claimText": "No enumeratedMarine-specificpublicidentitydocumentlist established. Public instructions askapplicanttoobtainnextcyclechecklist, ratherthaninventpassport/TC/medicalrecords.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/admissions/post-graduate",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "audienceEligibility",
+      "claimText": "NarrowIndianqualifying-degree55%route; broadinternationalpage nottreatedasguaranteedprogrammeforeignacceptance.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/International_Student_Admissions",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "teachingPhases",
+      "claimText": "Study is jointly offered by Biotechnology and the Centre for Ocean Research. The announced curriculum combines oceanography, marine biology and laboratory study, with internship or field exposure and a project/dissertation in the final semester.",
+      "status": "verified",
+      "sourceLabel": "AuthenticatedCentreandHeadinstitutionalannouncement",
+      "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "sathyabama-msc-marine-biology"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "summary",
+      "claimText": "Sathyabama Institute of Science and Technology is a private deemed-to-be university in Chennai. Its academic portfolio covers engineering, sciences, arts, commerce, management, law and health disciplines. The Chennai campus houses the Centre for Ocean Research, which jointly offers M.Sc. Marine Biology with the Department of Biotechnology.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/about-us",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "campusLifestyle",
+      "claimText": "The Chennai campus at Jeppiaar Nagar combines academic blocks, research facilities, hostels and sports spaces. Student clubs cover science, technology, literature, design and cultural interests. Marine Biology study connects the Department of Biotechnology with the Centre for Ocean Research; the exact laboratory, internship and field arrangements depend on the programme.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/academics/FAQ",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "cityProfile",
+      "claimText": "The Chennai campus is at Jeppiaar Nagar on Rajiv Gandhi Salai, Chennai 600119. Confirm this location on your admission record before planning a commute or accommodation. The university’s Sriperumbudur off-campus programmes have separate teaching locations and admission arrangements.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/about-us",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "practicalExposure",
+      "claimText": "The announced Marine Biology curriculum includes oceanography, fisheries, aquaculture, marine microbiology, biotechnology, ecology and laboratory work. The fourth semester includes internship and field exposure with a project or dissertation. Confirm the specific field sites, practical schedule, supervision and any associated charges before accepting an offer.",
+      "status": "verified",
+      "sourceLabel": "AuthenticatedCentreandHeadinstitutionalannouncement",
+      "sourceUrl": "https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "hostelOverview",
+      "claimText": "The university lists five men’s and five women’s hostels at the Chennai campus. Rooms with attached bathrooms and air-conditioned options are available, alongside laundry and fitness facilities. The published hostel rules require students returning from outings to be back by 6:30pm; obtain current allotment, charges and residence rules before moving.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/campus-life/hostel-facility",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "dietarySupport",
+      "claimText": "The university describes North and South Indian dishes and separate vegetarian and non-vegetarian mess halls for men and women. Confirm the current meal arrangement, mess charges and any dietary requirements before accepting residence. Keep food and hostel payments separate from the academic tuition quotation.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/academics/FAQ",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "safetyOverview",
+      "claimText": "The university reports round-the-clock security personnel and CCTV monitoring of campus entry and exit. Hostel students have 24-hour medical aid, with a student help desk during working hours and referral to Sathyabama General Hospital where required. Check residence and programme-specific field-safety instructions as part of admission planning.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/academics/FAQ",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "studentSupport",
+      "claimText": "The university provides a student help desk, library access, sports facilities and academic support services. International applicants use a separate university application route with supporting documents and an individual admission assessment. Students Traffic can help compare the qualifying-degree route, teaching campus, language and complete study budget.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://www.sathyabama.ac.in/academics/FAQ",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "recognition",
+      "claimText": "UGCregisterentry815 exactSathyabamaChennaiDeemedUniversity16July2001; no trust1988/university2001conflation.",
+      "status": "verified",
+      "sourceLabel": "UGCofficialregister",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "recognition",
+      "claimText": "NAACownXLSXvalidlist14Aug2025,sheet1row368serial367,SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY,U0474,TNUNGN10127,JeppiaarNagarChennai600119,cycle3,CGPA3.73,A++,declaration19May2023. No expiry invented.",
+      "status": "verified",
+      "sourceLabel": "NAACofficialvalidaccreditationlist",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "publicField": "sourceAuthentication",
+      "claimText": "UniversityCentrepageindependentlynamesDrInbakandanDhinakarasamy asProfessorResearchandHeadCOR; institutionalemail matchespublicpost. Eligibility comesfromCentreannouncementresharedbyHead, notanonymoussocialcopy; commencementseparateHeadpost.",
+      "status": "verified",
+      "sourceLabel": "Sathyabamaofficialsource",
+      "sourceUrl": "https://research.sathyabama.ac.in/people/CentreforOceanResearch",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "manifestId": "india-sathyabama-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "SathyabamaChennai officialcrest and maincampus photograph",
+  "entries": [
+    {
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "universityName": "Sathyabama Institute of Science and Technology",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.sathyabama.ac.in/sites/default/files/inline-images/logo_blue.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.sathyabama.ac.in/",
+          "rightsBasis": "Official university identifying logo, linked fromhomepage footer. Crop x0y0width96height95 retains completecrestandribbon, excludeswordmark. No brand alteration. No openlicence claimed. DirectHTTP200image contenttype verified25October2026 using browserUserAgent; visuallyinspected localoriginal.",
+          "proposedPublicId": "studentstraffic/universities/sathyabama-institute-of-science-and-technology/logo",
+          "altText": "Sathyabama Institute of Science and Technology crest",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 95
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sathyabama.ac.in/sites/default/files/inline-images/DJI_0105-New-Low.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.sathyabama.ac.in/about-us",
+          "rightsBasis": "Official university campus photograph linked onAboutUs page. AuthenticChennaicampus photograph with Sathyabamasatmonument visible; no watermark/syntheticasset or stockportrait. Uncropped original. No openlicence claimed. DirectHTTP200image contenttype verified25October2026 using browserUserAgent; visuallyinspected localoriginal.",
+          "proposedPublicId": "studentstraffic/universities/sathyabama-institute-of-science-and-technology/cover",
+          "altText": "Aerial view of Sathyabama’s Chennai campus academic buildings and grounds"
+        }
+      ],
+      "migrationId": "0213-india-sathyabama-marine-biology"
+    }
+  ]
+}

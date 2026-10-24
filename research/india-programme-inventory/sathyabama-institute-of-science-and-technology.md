@@ -1,4 +1,9 @@
-# Sathyabama Institute of Science and Technology: programme inventory (held)
+# Sathyabama Institute of Science and Technology: programme inventory and resumed narrow route
+
+
+Current handoff25October2026: locked owner `codex-india-20261024`, ledger **validated**, one supported regular M.Sc. Marine Biology offering. Executable payload `content-migrations/0213-india-sathyabama-marine-biology/payload.json`; scoped offline validation passed1migration with0expired-reviewwarnings. Mandatory reviewed media manifest `research/media-enrichment/india-sathyabama-20261025.json`. Full120currentrowCSV; other119routesheld. No DB connection, media upload, production probe or commit by worker. Earlier23October findings below are preserved as history and are superseded by the final continuation notes where explicitly resolved.
+
+## Historical23October research record
 
 - Ledger: `sathyabama-institute-of-science-and-technology`, owner `claude-tn-sathyabama-cloud-20261023`,
   batch `claude-tn-universities-batch1-cloud-20261023`. Status **held** (2026-10-23). No migration reserved.
@@ -144,3 +149,19 @@ thresholds programme by programme. The 120-row inventory remains intact, with no
 A full public post by the named Head of the Centre for Ocean Research independently narrows one intake claim: https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_admissions-open-msc-marine-biology-activity-7493607039160492033-KXLr explicitly gives MSc Marine Biology classes17August2026. The author identity is corroborated by university centre affiliation and publisher affiliation https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0357970 . This is useful programme-scoped faculty evidence, not a basis to assign every campus the same intake. MSc Marine Biology remains held because qualifying-degree eligibility is absent from the reviewed official eligibility table.
 
 Current live2026PG page https://www.sathyabama.ac.in/admissions/post-graduate now visibly lists six regular engineering masters and fourteen arts/science masters plus three LLMs. Several previously inventoried2026rows are no longer visible; the120row inventory must be reconciled against current visible lists before packaging. No inactive/programme removal inferred from one page alone. No executable bundle created.
+
+## Third targeted continuation — 25 October 2026, after SPIHER handoff
+
+Reclaimed same locked owner codex-india-20261024. Direct requests with browserUserAgent now returnHTTP200, including current four programme directories. Parsed visibleHTMLtables excluding comments: exactly120currentawards, samecampuscounts56ChennaiUG/33ChennaiPG/23SriperumbudurUG/8SriperumbudurPG. The earlier apparent6currentengineeringPG result was excerpttruncation; fullprimaryHTMLconfirms8. Complete newcurrent directorytitles/durations in CSV; original23OctoberCSV preserved in durable sourcebundle. New refreshbuilder research-drafts/india/sathyabama-refresh-inventory.py; do not rerun historical inventorybuilder over refreshedCSV.
+
+MarineBiology narrowroute now has completefacts: current2026PGpage2years, Head/Centrelaunchannouncement fullqualifyingdegreesminimum55%, separateauthenticatedHeadpostclasses17August2026. Eligibility source https://www.linkedin.com/posts/inbakandan-dhinakarasamy-6143a575_launch-of-msc-marine-biology-20262028-activity-7468540681364439040-A7HM ; currentofficialCentrepage https://research.sathyabama.ac.in/people/CentreforOceanResearch independently authenticates DrInbakandanDhinakarasamy asProfessorResearchandHead. This is attributedinstitutionalCentreannouncementresharedbyitsHead, notanonymoussocialcopy. Two-year2026–2028launchprogrammejointlyBiotechnology+COR, finalsemester internship/fieldexposureandproject. Publiceligiblefields+55% retainedprecisely; foreignrouteacceptance notinferred.
+
+Mediumsource is universitypublishedgeneralPGregulations effective2015–16, stillpublishedandupdatedSep2026: https://www.sathyabama.ac.in/examination/pg-course-regulations explicitlyEnglishinstruction/examinations/projectreports acrossPGdegrees. No expiry restriction; no contraryMarine2026mediumfound. PublicmediumNoteaccuratelystatesoldergeneralregulationyear, notclaims2026Marine-specificregulation. OtherPGcurrent2023regulations alsoEnglish, but notborrowed asnewprogramme-specificproof. GeneralMCA3yeardurationinoldpage is notusedforcurrentMCA. Marine2years comesfromcurrent2026directory+launch.
+
+OnlyMarineAugustintake clears; other119programmes remainheld for programme/campus-specific authenticatedfirstentry andtheirprioridentifiedrequirements. Mirroredengineeringlettergroupingnotapplieduniversally. Programmefeeon_requestwithcurrentportalroute; no inventedtuition. Documentlistsaskfornextcohortchecklist ratherthaninventpassport/TC/medicalrequirements. CurrentregularIndianqualificationroute only, foreignequivalence/programmeacceptanceseparate.
+
+Recognitionunblocked: ownNAACvalidlist14August2025 liveXLSXchecked25Oct2026 sheet1row368serial367 U0474,exactSathyabamaChennai,cycle3CGPA3.73A++19May2023. UGCexactentry815deemedstatus16July2001;1988trustfoundationnotusedasuniversityyear. No expiry invented orclinicalprogrammeapprovalinherited. OriginalNAACfilealreadydurablysavedSPIHERsourcebundle; exactextractsourcelocationrecordedSathyabamabundle.
+
+Mandatoryofficialmedia: homepagefooter logo_blue.png direct200PNG352x95, completecrest+ribboncropx0y0w96h95. AboutUscampus aerial DJI_0105-New-Low.jpg direct200JPEG5018x2823, unalteredauthenticChennaiacademicbuildingswithSathyabamasatmonument; visuallychecked. Manifest research/media-enrichment/india-sathyabama-20261025.json. Local logo-reviewed-crop.png andcover-try0.jpg; no uploadorDB.
+
+Root source audit25October2026: authenticated Centre launch post also quotes Course Fee INR70,000 per year for2026–2028. Preserved as an annual course-fee reference in publicbudgetnotes, not isolated confirmed tuition; scope/extras remain unconfirmed.

@@ -1,0 +1,2790 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bsc-mathematics",
+      "name": "B.Sc. in Mathematics",
+      "shortName": "B.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "bachelors",
+      "discipline": "mathematics",
+      "aliases": [
+        "Bachelor of Science in Mathematics",
+        "BSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "B.Sc. in Mathematics is the Students Traffic catalogue category for undergraduate science degrees whose main subject is mathematics. Programmes in this category typically cover calculus, linear algebra, real and complex analysis, algebra, probability and applied or computational mathematics, and require mathematics at school-leaving level. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+      "metaTitle": "B.Sc. Mathematics Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Mathematics degrees abroad by duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A B.Sc. in Computer Science is a science-faculty bachelor's degree in the theory and practice of computing. The curriculum covers programming, data structures and algorithms, discrete mathematics, computer architecture, operating systems, databases, networks and software engineering, with electives in artificial intelligence, data science, cyber security or graphics. It differs from a B.E./B.Tech by placing more weight on mathematics and computing theory and less on engineering design. Programmes last three or four years and lead to software, data and IT roles or to master's study.",
+      "metaTitle": "B.Sc. Computer Science Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Computer Science degrees open to international students: curriculum, electives, entry subjects, duration, tuition and intakes."
+    },
+    {
+      "slug": "bsc-physics",
+      "name": "B.Sc. in Physics",
+      "shortName": "B.Sc. Physics",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "physics",
+      "aliases": [
+        "Bachelor of Science in Physics",
+        "BSc Physics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "B.Sc. in Physics is the Students Traffic catalogue category for undergraduate science degrees whose main subject is physics. Programmes in this category typically cover classical and quantum mechanics, electromagnetism, thermal and statistical physics and laboratory work, and require physics and mathematics at school-leaving level. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+      "metaTitle": "B.Sc. Physics Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Physics degrees abroad by duration, teaching language, tuition and the admission route open to international applicants."
+    },
+    {
+      "slug": "msc-mathematics",
+      "name": "M.Sc. in Mathematics",
+      "shortName": "M.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "masters",
+      "discipline": "mathematics",
+      "aliases": [
+        "Master of Science in Mathematics",
+        "MSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare mathematics master's programmes abroad by pure and applied theory, computation, research, thesis, tuition and admissions. Departmental prerequisites and terminal-degree availability vary.",
+      "metaTitle": "M.Sc. Mathematics Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Mathematics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-computer-science",
+      "name": "M.Sc. in Computer Science",
+      "shortName": "M.Sc. Computer Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science",
+      "aliases": [
+        "Master of Science in Computer Science",
+        "MSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "M.Sc. Computer Science is the Students Traffic catalogue category for postgraduate degrees that develop advanced computer-science knowledge through technical study, practical work and a substantial independent project. The precise academic background required, curriculum, fee and delivery route must be assessed from the university's current programme information.",
+      "metaTitle": "M.Sc. Computer Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Computer Science programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-data-science",
+      "name": "M.Sc. in Data Science",
+      "shortName": "M.Sc. Data Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "data-science",
+      "aliases": [
+        "Master of Science in Data Science",
+        "MSc Data Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate Master of Science degrees in data science, usually one to two years after a bachelor's degree with a quantitative or computing background. Programmes typically cover statistics, machine learning, programming, databases and big-data tools, data visualisation and applied projects, often with industry internships or capstone work.",
+      "metaTitle": "M.Sc. Data Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Data Science programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "master-occupational-therapy",
+      "name": "Master's in Occupational Therapy",
+      "shortName": "Master's Occupational Therapy",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "occupational-therapy",
+      "aliases": [
+        "Master of Occupational Therapy",
+        "MSc Occupational Therapy"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate occupational therapy degrees, usually two years after a bachelor's degree in occupational therapy. Programmes are often organised by specialisation, such as musculoskeletal or paediatric occupational therapy, and combine advanced clinical practice, assessment and rehabilitation methods, research and a dissertation. Practice rights depend on each country's regulator.",
+      "metaTitle": "Master's Occupational Therapy Programmes Compared",
+      "metaDescription": "Compare Master's Occupational Therapy programmes by specialisation, entry requirements, duration, tuition and the admission route each university publishes."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "chennai-mathematical-institute",
+      "name": "Chennai Mathematical Institute",
+      "city": "Siruseri",
+      "type": "Private",
+      "establishedYear": 1989,
+      "officialWebsite": "https://www.cmi.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.cmi.ac.in/pix/cmi-header.png",
+          "rights": "Official institution identification header/logo, used for factual identification; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/CMI-front.jpg",
+          "rights": "Prakash.saivasan, CMI-front.jpg, photographed 28 August 2013; CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0 ; source https://commons.wikimedia.org/wiki/File:CMI-front.jpg. Historical campus photograph; original sepia appearance preserved. Any image transformations remain under the same licence.",
+          "checkedAt": "2026-10-25",
+          "altText": "CMI Siruseri academic building, photographed in August 2013"
+        }
+      },
+      "summary": "Chennai Mathematical Institute is a specialist university in Siruseri with undergraduate, master’s and research programmes in mathematics, computer science and physics. Its four-year BS Honours structure starts with a shared foundation before students choose an award focus. Admission uses CMI’s examinations and programme-specific selection.",
+      "campusLifestyle": "Study centres on mathematics, computing and physics, with courses taught by active researchers and opportunities to attend seminars. The Siruseri campus combines academic space and residential facilities for the programmes that provide hostel accommodation. The undergraduate curriculum also includes humanities study and cultural activity.",
+      "cityProfile": "CMI is at H1, SIPCOT IT Park, Siruseri, near Kelambakkam on Chennai’s southern IT corridor. Applicants should use the Siruseri campus address when arranging travel. BS students and students in MSc Mathematics or Computer Science follow a residential programme; MSc Data Science students need to budget and arrange their accommodation outside the institute.",
+      "practicalExposure": "The programme structure emphasises mathematical reasoning and theoretical foundations alongside subject-specific practical work. Undergraduates use computing facilities, while Physics students undertake laboratory experiments. BS students can pursue deeper electives and, where approved, a thesis. MSc Computer Science includes a second-year thesis, sometimes undertaken through an approved industry internship; MSc Data Science students have first-year summer internship opportunities described by the placement office. These academic components do not guarantee employment.",
+      "hostelOverview": "The 2026 brochure describes residential study and campus hostels for BS students and MSc Mathematics/Computer Science. Hostel accommodation is expressly unavailable for MSc Data Science. The listed hostel, mess and establishment charges total INR 31,310 per semester and may change. PhD accommodation follows separate arrangements, including first-year hostel availability in the brochure.",
+      "dietarySupport": "Students using the campus residential arrangement pay mess charges as part of the published hostel and living bill. Discuss vegetarian preferences, food allergies, medical diets or religious food requirements before accepting accommodation; no particular specialist diet or certification is guaranteed here.",
+      "safetyOverview": "CMI publishes an anti-ragging committee and squad with named institutional contacts. Its Grievance and Internal Complaints Committee investigates harassment and serves as the gender-sensitisation cell. Students should use the institute’s stated reporting channels for a complaint or urgent concern.",
+      "studentSupport": "The Students Grievances Redressal Committee covers admissions, academic issues, financial demands, scholarship non-payment and discrimination, with an ombudsperson identified by the institute. Programme faculty, academic administration and the complaints committee provide further institutional contact points.",
+      "whyChoose": [
+        "A specialist setting for mathematics, computer science and physics with research-active teachers.",
+        "A shared BS foundation followed by a clearly defined Mathematics, Computer Science or Physics award focus.",
+        "Published MSc curricula and financial-assistance arrangements tied to the programme and applicant circumstances."
+      ],
+      "thingsToConsider": [
+        "BS award selection follows admission and foundation study; a named final award is not chosen as an independent admission seat.",
+        "MSc Data Science has no institute hostel accommodation; housing and living costs need separate planning.",
+        "The current brochure quotes 2026–27 fees, while the next entrance cycle has separate dates and a future fee notice."
+      ],
+      "bestFitFor": [
+        "Students interested in rigorous mathematical and theoretical study.",
+        "Applicants who can demonstrate the required subject background through CMI’s selection process.",
+        "Students who understand the distinction between residential programmes and the off-campus housing needs of MSc Data Science."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC — Deemed to be University under Section 3",
+        "NAAC — B++ (Cycle 2, assessment declared 21 March 2023)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC own consolidated university register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "NAAC own valid-accreditation register, 14 August 2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Six regular taught awards; BS focus choices remain within the common admission route. Research, part-time, exit and visiting options are accounted for separately in the private inventory.",
+        "sectionStates": {
+          "eligibility": "published",
+          "admissions": "published",
+          "fees": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "published",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Review my CMI programme eligibility",
+            "capture": [
+              "programme or BS focus",
+              "qualifying examination or degree",
+              "subject background and admission category"
+            ]
+          }
+        ]
+      },
+      "researchSources": [
+        {
+          "label": "Current admissions and programmes",
+          "url": "https://www.cmi.ac.in/admissions/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "2026–27 fees and curricula",
+          "url": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "First-year2026–27calendar",
+          "url": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Northwestern independent English-medium assessment",
+          "url": "https://www.math.northwestern.edu/graduate/application.html",
+          "kind": "other",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Michigan independent English-medium list",
+          "url": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+          "kind": "other",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC own register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC own register",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Academic curriculum and practical components",
+          "url": "https://www.cmi.ac.in/~placement/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Student grievance channels",
+          "url": "https://www.cmi.ac.in/practical/sgrc.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are the current undergraduate degrees?",
+          "answer": "CMI offers four-year BS Honours awards in Mathematics, Mathematics and Computer Science, and Mathematics and Physics. They share the same entrance examination and initial foundation; students make the later subject and award choices after joining."
+        },
+        {
+          "question": "When do BS students choose their award focus?",
+          "answer": "After Semester I, students choose Computer Science or Physics as the second subject. After Semester IV, the focus determines the final award. Computer Science and Physics focus options require the matching earlier second-subject choice."
+        },
+        {
+          "question": "Can a student exit after three years?",
+          "answer": "The BS structure allows a BSc exit after three years on completing the required 112 credits. Students who selected Computer Science or Physics receive the corresponding Mathematics and Computer Science or Mathematics and Physics exit award. It is a progression option within BS, not a separate new admission route."
+        },
+        {
+          "question": "What are the MSc entry requirements?",
+          "answer": "MSc Mathematics requires an undergraduate degree and strong mathematics background. MSc Computer Science requires a strong computing background. MSc Data Science requires a background in mathematics, statistics or computer science. The institute uses its entrance examination and any required interview."
+        },
+        {
+          "question": "Is teaching in English?",
+          "answer": "Independent academic institution assessments identify CMI as English-medium. Northwestern’s current Mathematics admissions guidance names CMI in this context, and Michigan’s institutional list provides earlier corroboration. Any onward-study language certificate or exemption is assessed by the receiving institution."
+        },
+        {
+          "question": "Which intake dates are verified?",
+          "answer": "The 2026–27 calendar records first-year admission formalities on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening. The next entrance examination is announced for 15 May 2027; the next joining date remains separate."
+        },
+        {
+          "question": "What tuition should applicants budget for?",
+          "answer": "The 2026–27 brochure quotes INR 125000 per semester for BS, MSc Mathematics and MSc Computer Science, with two semesters per year. MSc Data Science tuition is INR 250000 per semester. Accommodation, mess and personal costs are additional; later-cycle rates require their own notice."
+        },
+        {
+          "question": "Is hostel accommodation available for every programme?",
+          "answer": "No. BS and MSc Mathematics/Computer Science are residential, while the 2026 brochure expressly states that MSc Data Science has no hostel accommodation. Research accommodation follows separate arrangements. Use the exact programme’s offer when planning housing."
+        },
+        {
+          "question": "What does the residential charge include?",
+          "answer": "The 2026 brochure lists INR 31310 per semester combined: INR 4000 hostel, INR 23310 mess and INR 4000 establishment charges. These are separate from tuition and can change. MSc Data Science students need their own off-campus accommodation budget."
+        },
+        {
+          "question": "Are scholarships guaranteed?",
+          "answer": "The 2026–27 brochure has programme-specific support. BS income-based waivers are 100% for family income up to INR 8 lakh and 50% up to INR 12 lakh; MSc waivers at those bands are 40% and 25%. Merit awards and limited stipends have separate conditions. Requests are processed after admission; an award is not guaranteed to every student."
+        },
+        {
+          "question": "Can overseas applicants rely on the regular fee quote?",
+          "answer": "The published regular entrance route and 2026–27 tuition are documented here. Overseas qualifications, nationality, equivalence, any visa arrangements and category-specific charges need the institute’s separate assessment; domestic conditions are not automatically an overseas offer."
+        },
+        {
+          "question": "How are the institute’s recognitions described?",
+          "answer": "CMI is listed by UGC as a deemed university under Section 3. NAAC’s own valid-accreditation register lists a cycle 2 B++ assessment declared 21 March 2023. These institutional designations do not guarantee employment or exempt a student from another country’s qualification assessment."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "cmi-bs-mathematics",
+          "canonicalCourseSlug": "bsc-mathematics",
+          "officialTitle": "B.S. (Honours) Mathematics",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 250000,
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision."
+          },
+          "officialProgramUrl": "https://www.cmi.ac.in/teaching/bsc.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the documented regular CMI entrance-examination route"
+            ],
+            "restrictions": [
+              "The published regular route is covered. A separate foreign-national admission or fee arrangement is not established here.",
+              "Applicants with overseas qualifications or nationality requirements need CMI’s equivalence and admission-category assessment."
+            ],
+            "notes": "Admission is through the stated CMI programme process; no automatic foreign-category eligibility or fee equivalence is implied.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.cmi.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.S. (Honours) Mathematics is a 4-year regular science degree at CMI in Siruseri, Chennai. The shared foundation develops into advanced algebra, analysis, topology and manifolds, with a Computer Science or Physics minor determined by the earlier second-subject choice.",
+            "eligibility": {
+              "intro": "The institute selects students for the regular programme through its examination and any required interview. The qualification and subject-background requirements below apply.",
+              "items": [
+                "Pass Class XII or an equivalent examination from a recognised board. The published route uses the CMI undergraduate entrance examination; it does not state a minimum board percentage.",
+                "All three BS awards share one admission examination and common first-semester study. No award choice is required at application.",
+                "After Semester I, choose Computer Science or Physics as the second subject; after Semester IV, choose the focus leading to the final Mathematics, Mathematics and Computer Science, or Mathematics and Physics award.",
+                "The specific national Olympiad categories listed by CMI may qualify for direct admission or entrance-test exemption at the Admissions Committee’s discretion."
+              ]
+            },
+            "applicationSteps": [
+              "Select the appropriate CMI admission application and entrance examination; all BS award choices use the common undergraduate route.",
+              "Submit the required educational details and complete the examination and any interview or documented Olympiad assessment.",
+              "Review the offer, applicable tuition and financial-assistance decision, then complete document verification and the cohort’s joining formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class XII certificate and marksheets for BS entry"
+              ],
+              "application": [
+                "Completed CMI application and entrance-examination records",
+                "Identity and any applicable category/disability certificates",
+                "Olympiad records if claiming the specified BS exemption"
+              ]
+            },
+            "deadlinesNote": "Instruction for the verified 2026–27 first-year cohort began on 3 August 2026. CMI announces the next entrance examination for 15 May 2027 and applications around 1 March; the next joining date and fee notice are separate."
+          },
+          "medium": "English",
+          "mediumNote": "English-medium teaching is corroborated by independent university-owned institutional assessments. Programme-specific language certification and any language electives require their own confirmation.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+          "teachingPhases": [
+            {
+              "phase": "4-year programme",
+              "language": "English",
+              "details": "The shared foundation develops into advanced algebra, analysis, topology and manifolds, with a Computer Science or Physics minor determined by the earlier second-subject choice. All BS students share the foundation before choosing their final award focus; the three-year BSc exit is a separate progression option."
+            }
+          ]
+        },
+        {
+          "slug": "cmi-bs-mathematics-computer-science",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.S. (Honours) Mathematics and Computer Science",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 250000,
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision."
+          },
+          "officialProgramUrl": "https://www.cmi.ac.in/teaching/bsc.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the documented regular CMI entrance-examination route"
+            ],
+            "restrictions": [
+              "The published regular route is covered. A separate foreign-national admission or fee arrangement is not established here.",
+              "Applicants with overseas qualifications or nationality requirements need CMI’s equivalence and admission-category assessment."
+            ],
+            "notes": "Admission is through the stated CMI programme process; no automatic foreign-category eligibility or fee equivalence is implied.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.cmi.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.S. (Honours) Mathematics and Computer Science is a 4-year regular science degree at CMI in Siruseri, Chennai. The shared mathematics foundation develops into computer science depth courses in logic, complexity, systems and theoretical or applied machine learning.",
+            "eligibility": {
+              "intro": "The institute selects students for the regular programme through its examination and any required interview. The qualification and subject-background requirements below apply.",
+              "items": [
+                "Pass Class XII or an equivalent examination from a recognised board. The published route uses the CMI undergraduate entrance examination; it does not state a minimum board percentage.",
+                "All three BS awards share one admission examination and common first-semester study. No award choice is required at application.",
+                "After Semester I, choose Computer Science or Physics as the second subject; after Semester IV, choose the focus leading to the final Mathematics, Mathematics and Computer Science, or Mathematics and Physics award.",
+                "The specific national Olympiad categories listed by CMI may qualify for direct admission or entrance-test exemption at the Admissions Committee’s discretion.",
+                "The Computer Science focus in years three and four is available to students who chose Computer Science after Semester I."
+              ]
+            },
+            "applicationSteps": [
+              "Select the appropriate CMI admission application and entrance examination; all BS award choices use the common undergraduate route.",
+              "Submit the required educational details and complete the examination and any interview or documented Olympiad assessment.",
+              "Review the offer, applicable tuition and financial-assistance decision, then complete document verification and the cohort’s joining formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class XII certificate and marksheets for BS entry"
+              ],
+              "application": [
+                "Completed CMI application and entrance-examination records",
+                "Identity and any applicable category/disability certificates",
+                "Olympiad records if claiming the specified BS exemption"
+              ]
+            },
+            "deadlinesNote": "Instruction for the verified 2026–27 first-year cohort began on 3 August 2026. CMI announces the next entrance examination for 15 May 2027 and applications around 1 March; the next joining date and fee notice are separate."
+          },
+          "medium": "English",
+          "mediumNote": "English-medium teaching is corroborated by independent university-owned institutional assessments. Programme-specific language certification and any language electives require their own confirmation.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+          "teachingPhases": [
+            {
+              "phase": "4-year programme",
+              "language": "English",
+              "details": "The shared mathematics foundation develops into computer science depth courses in logic, complexity, systems and theoretical or applied machine learning. All BS students share the foundation before choosing their final award focus; the three-year BSc exit is a separate progression option."
+            }
+          ]
+        },
+        {
+          "slug": "cmi-bs-mathematics-physics",
+          "canonicalCourseSlug": "bsc-physics",
+          "officialTitle": "B.S. (Honours) Mathematics and Physics",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 250000,
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision."
+          },
+          "officialProgramUrl": "https://www.cmi.ac.in/teaching/bsc.php",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the documented regular CMI entrance-examination route"
+            ],
+            "restrictions": [
+              "The published regular route is covered. A separate foreign-national admission or fee arrangement is not established here.",
+              "Applicants with overseas qualifications or nationality requirements need CMI’s equivalence and admission-category assessment."
+            ],
+            "notes": "Admission is through the stated CMI programme process; no automatic foreign-category eligibility or fee equivalence is implied.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.cmi.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.S. (Honours) Mathematics and Physics is a 4-year regular science degree at CMI in Siruseri, Chennai. The shared mathematics foundation develops into physics depth courses, including statistical, computational and quantum physics, relativity and advanced electives.",
+            "eligibility": {
+              "intro": "The institute selects students for the regular programme through its examination and any required interview. The qualification and subject-background requirements below apply.",
+              "items": [
+                "Pass Class XII or an equivalent examination from a recognised board. The published route uses the CMI undergraduate entrance examination; it does not state a minimum board percentage.",
+                "All three BS awards share one admission examination and common first-semester study. No award choice is required at application.",
+                "After Semester I, choose Computer Science or Physics as the second subject; after Semester IV, choose the focus leading to the final Mathematics, Mathematics and Computer Science, or Mathematics and Physics award.",
+                "The specific national Olympiad categories listed by CMI may qualify for direct admission or entrance-test exemption at the Admissions Committee’s discretion.",
+                "The Physics focus in years three and four is available to students who chose Physics after Semester I."
+              ]
+            },
+            "applicationSteps": [
+              "Select the appropriate CMI admission application and entrance examination; all BS award choices use the common undergraduate route.",
+              "Submit the required educational details and complete the examination and any interview or documented Olympiad assessment.",
+              "Review the offer, applicable tuition and financial-assistance decision, then complete document verification and the cohort’s joining formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class XII certificate and marksheets for BS entry"
+              ],
+              "application": [
+                "Completed CMI application and entrance-examination records",
+                "Identity and any applicable category/disability certificates",
+                "Olympiad records if claiming the specified BS exemption"
+              ]
+            },
+            "deadlinesNote": "Instruction for the verified 2026–27 first-year cohort began on 3 August 2026. CMI announces the next entrance examination for 15 May 2027 and applications around 1 March; the next joining date and fee notice are separate."
+          },
+          "medium": "English",
+          "mediumNote": "English-medium teaching is corroborated by independent university-owned institutional assessments. Programme-specific language certification and any language electives require their own confirmation.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+          "teachingPhases": [
+            {
+              "phase": "4-year programme",
+              "language": "English",
+              "details": "The shared mathematics foundation develops into physics depth courses, including statistical, computational and quantum physics, relativity and advanced electives. All BS students share the foundation before choosing their final award focus; the three-year BSc exit is a separate progression option."
+            }
+          ]
+        },
+        {
+          "slug": "cmi-msc-mathematics",
+          "canonicalCourseSlug": "msc-mathematics",
+          "officialTitle": "M.Sc. Mathematics",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 250000,
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision."
+          },
+          "officialProgramUrl": "https://www.cmi.ac.in/teaching/courses.php?prog=mscm",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the documented regular CMI entrance-examination route"
+            ],
+            "restrictions": [
+              "The published regular route is covered. A separate foreign-national admission or fee arrangement is not established here.",
+              "Applicants with overseas qualifications or nationality requirements need CMI’s equivalence and admission-category assessment."
+            ],
+            "notes": "Admission is through the stated CMI programme process; no automatic foreign-category eligibility or fee equivalence is implied.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.cmi.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Mathematics is a 2-year regular science degree at CMI in Siruseri, Chennai. The mathematics master’s develops advanced algebra, analysis and topology through core courses and subject electives.",
+            "eligibility": {
+              "intro": "The institute selects students for the regular programme through its examination and any required interview. The qualification and subject-background requirements below apply.",
+              "items": [
+                "Hold an undergraduate degree such as B.A., B.Sc., B.Math., B.Stat., B.E. or B.Tech., with a strong background in Mathematics.",
+                "Complete the CMI entrance examination for the exact MSc programme. The published entry route does not give a minimum degree percentage.",
+                "Mathematics admission includes shortlisting for an interview; the 2026 admission update specified online interviews in June."
+              ]
+            },
+            "applicationSteps": [
+              "Select the CMI admission application and the entrance examination for this exact MSc programme.",
+              "Submit the required educational details and complete the examination and any interview or documented Olympiad assessment.",
+              "Review the offer, applicable tuition and financial-assistance decision, then complete document verification and the cohort’s joining formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying bachelor’s degree and marksheets showing the relevant subject background"
+              ],
+              "application": [
+                "Completed CMI application and entrance-examination records",
+                "Identity and any applicable category/disability certificates",
+                "Shortlisting/interview and admission-offer records"
+              ]
+            },
+            "deadlinesNote": "Instruction for the verified 2026–27 first-year cohort began on 3 August 2026. CMI announces the next entrance examination for 15 May 2027 and applications around 1 March; the next joining date and fee notice are separate."
+          },
+          "medium": "English",
+          "mediumNote": "English-medium teaching is corroborated by independent university-owned institutional assessments. Programme-specific language certification and any language electives require their own confirmation.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+          "teachingPhases": [
+            {
+              "phase": "2-year programme",
+              "language": "English",
+              "details": "The mathematics master’s develops advanced algebra, analysis and topology through core courses and subject electives. The MSc structure has four semesters."
+            }
+          ]
+        },
+        {
+          "slug": "cmi-msc-computer-science",
+          "canonicalCourseSlug": "msc-computer-science",
+          "officialTitle": "M.Sc. Computer Science",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 250000,
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision."
+          },
+          "officialProgramUrl": "https://www.cmi.ac.in/teaching/courses.php?prog=msccs",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the documented regular CMI entrance-examination route"
+            ],
+            "restrictions": [
+              "The published regular route is covered. A separate foreign-national admission or fee arrangement is not established here.",
+              "Applicants with overseas qualifications or nationality requirements need CMI’s equivalence and admission-category assessment."
+            ],
+            "notes": "Admission is through the stated CMI programme process; no automatic foreign-category eligibility or fee equivalence is implied.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.cmi.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Computer Science is a 2-year regular science degree at CMI in Siruseri, Chennai. The computer science master’s combines advanced computing courses and electives with a second-year thesis, which may be pursued through an approved industry internship.",
+            "eligibility": {
+              "intro": "The institute selects students for the regular programme through its examination and any required interview. The qualification and subject-background requirements below apply.",
+              "items": [
+                "Hold an undergraduate degree such as B.A., B.Sc., B.Math., B.Stat., B.E. or B.Tech., with a strong background in Computer Science.",
+                "Complete the CMI entrance examination for the exact MSc programme. The published entry route does not give a minimum degree percentage.",
+                "An interview may be required for shortlisted candidates under the Admissions Committee’s process."
+              ]
+            },
+            "applicationSteps": [
+              "Select the CMI admission application and the entrance examination for this exact MSc programme.",
+              "Submit the required educational details and complete the examination and any interview or documented Olympiad assessment.",
+              "Review the offer, applicable tuition and financial-assistance decision, then complete document verification and the cohort’s joining formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying bachelor’s degree and marksheets showing the relevant subject background"
+              ],
+              "application": [
+                "Completed CMI application and entrance-examination records",
+                "Identity and any applicable category/disability certificates",
+                "Shortlisting/interview and admission-offer records"
+              ]
+            },
+            "deadlinesNote": "Instruction for the verified 2026–27 first-year cohort began on 3 August 2026. CMI announces the next entrance examination for 15 May 2027 and applications around 1 March; the next joining date and fee notice are separate."
+          },
+          "medium": "English",
+          "mediumNote": "English-medium teaching is corroborated by independent university-owned institutional assessments. Programme-specific language certification and any language electives require their own confirmation.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+          "teachingPhases": [
+            {
+              "phase": "2-year programme",
+              "language": "English",
+              "details": "The computer science master’s combines advanced computing courses and electives with a second-year thesis, which may be pursued through an approved industry internship. The MSc structure has four semesters."
+            }
+          ]
+        },
+        {
+          "slug": "cmi-msc-data-science",
+          "canonicalCourseSlug": "msc-data-science",
+          "officialTitle": "M.Sc. Data Science",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 500000,
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026–27 regular tuition is INR 250,000 per semester, with two semesters per year: INR 500,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. Hostel accommodation is not available for this programme."
+          },
+          "officialProgramUrl": "https://www.cmi.ac.in/teaching/courses.php?prog=mscdatascience",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the documented regular CMI entrance-examination route"
+            ],
+            "restrictions": [
+              "The published regular route is covered. A separate foreign-national admission or fee arrangement is not established here.",
+              "Applicants with overseas qualifications or nationality requirements need CMI’s equivalence and admission-category assessment."
+            ],
+            "notes": "Admission is through the stated CMI programme process; no automatic foreign-category eligibility or fee equivalence is implied.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.cmi.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Data Science is a 2-year regular science degree at CMI in Siruseri, Chennai. The data science curriculum combines mathematical foundations, statistical modelling and computing, with first-year summer internship experience described by the placement office.",
+            "eligibility": {
+              "intro": "The institute selects students for the regular programme through its examination and any required interview. The qualification and subject-background requirements below apply.",
+              "items": [
+                "Hold an undergraduate degree such as B.A., B.Sc., B.Math., B.Stat., B.E. or B.Tech., with a strong background in Mathematics, Statistics or Computer Science.",
+                "Complete the CMI entrance examination for the exact MSc programme. The published entry route does not give a minimum degree percentage.",
+                "An interview may be required for shortlisted candidates under the Admissions Committee’s process.",
+                "Plan off-campus accommodation: the 2026 programme brochure expressly states that hostel accommodation is not available for MSc Data Science."
+              ]
+            },
+            "applicationSteps": [
+              "Select the CMI admission application and the entrance examination for this exact MSc programme.",
+              "Submit the required educational details and complete the examination and any interview or documented Olympiad assessment.",
+              "Review the offer, applicable tuition and financial-assistance decision, then complete document verification and the cohort’s joining formalities."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying bachelor’s degree and marksheets showing the relevant subject background"
+              ],
+              "application": [
+                "Completed CMI application and entrance-examination records",
+                "Identity and any applicable category/disability certificates",
+                "Shortlisting/interview and admission-offer records"
+              ]
+            },
+            "deadlinesNote": "Instruction for the verified 2026–27 first-year cohort began on 3 August 2026. CMI announces the next entrance examination for 15 May 2027 and applications around 1 March; the next joining date and fee notice are separate."
+          },
+          "medium": "English",
+          "mediumNote": "English-medium teaching is corroborated by independent university-owned institutional assessments. Programme-specific language certification and any language electives require their own confirmation.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026–27 regular tuition is INR 250,000 per semester, with two semesters per year: INR 500,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. Hostel accommodation is not available for this programme.",
+          "teachingPhases": [
+            {
+              "phase": "2-year programme",
+              "language": "English",
+              "details": "The data science curriculum combines mathematical foundations, statistical modelling and computing, with first-year summer internship experience described by the placement office. The MSc structure has four semesters."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countrySlug": "india",
+      "slug": "saveetha-institute-of-medical-and-technical-sciences",
+      "name": "Saveetha Institute of Medical and Technical Sciences",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 2005,
+      "officialWebsite": "https://www.saveetha.com/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://static.wixstatic.com/media/41d401_bd785b6002d647d38ba30fcd859ba46e~mv2.png",
+          "rights": "Official SIMATS institution identity asset. Crop retains university emblem and wordmark and removes adjacent historical ranking/accreditation panels; no ownership transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://static.wixstatic.com/media/41d401_a8c7a7ab543248d28e749f84b1950f3b~mv2.jpg",
+          "rights": "Official occupational therapy college website photograph, visibly identifying the Saveetha Health Sciences Block, used in a factual institution profile; no ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Saveetha Health Sciences Block at the Thandalam campus shown by the occupational therapy college"
+        }
+      },
+      "summary": "Saveetha Institute of Medical and Technical Sciences (SIMATS) is a deemed university in Chennai with constituent medical, dental, engineering and other professional schools. Its College of Occupational Therapy at Thandalam offers postgraduate specialist training combining clinical practice, research and a dissertation.",
+      "campusLifestyle": "The occupational therapy college is based in the Health Sciences setting at Thandalam, with classrooms, a library and clinical facilities. Its academic calendar and events include seminars, case-based learning and community activities. The wider SIMATS portfolio spans several constituent schools and campuses; applicants should use the location in their own programme offer.",
+      "cityProfile": "SIMATS has constituent institutions in Chennai. Saveetha College of Occupational Therapy gives its address as Saveetha Nagar, Thandalam, Chennai 602105. The college publishes Chennai transport routes and on-campus hostel arrangements. Use the Thandalam address for these MOT programmes; the university’s Velappanchavadi registered address and similarly named independent Saveetha institutions are different locations.",
+      "practicalExposure": "MOT regulations describe full-time training with graded clinical responsibilities, rounds, case demonstrations and clinical postings. Students maintain a work diary and case records for faculty review. The first year includes research methodology, occupational therapy education and general practice; the second year develops the chosen clinical specialty and a dissertation. The college also reports community screening and awareness activities. These are educational components rather than employment or overseas-registration guarantees.",
+      "hostelOverview": "The occupational therapy college publishes separate campus hostels for men and women, shared rooms and common bathrooms. Its page describes Wi-Fi, electricity and water provision. Room availability, allocation, mess arrangements and current charges need confirmation in the accommodation offer; no room price or guaranteed allotment is established here.",
+      "dietarySupport": "Confirm mess availability, food preferences, allergies, medical diets and religious food requirements with the college before choosing accommodation. The reviewed hostel page describes rooms and utilities but does not establish a specialist menu, certified diet or current meal price.",
+      "safetyOverview": "The occupational therapy academic page states that ragging is prohibited. Before joining, obtain the current college complaint, anti-ragging and emergency contacts through the admission or student office. The reviewed sources do not establish a particular security staffing or emergency response time.",
+      "studentSupport": "MOT students are supervised through clinical postings, faculty review of their work diaries and dissertation guidance. Applicants with another university’s degree must complete the SIMATS eligibility-certificate process. Current admissions and accommodation questions should be resolved against the written programme offer.",
+      "whyChoose": [
+        "Specialist occupational therapy study following a qualifying BOT degree.",
+        "Full-time clinical training with documented case work and a specialty dissertation.",
+        "English instruction and evaluation expressly specified in the linked MOT regulations."
+      ],
+      "thingsToConsider": [
+        "The current MOT admissions page requires 60% aggregate; check your eligibility certificate and internship records before applying.",
+        "The verified induction baseline is August 2024; obtain a joining notice for the intended cohort.",
+        "The central public fee table is undated, so request a cohort-specific tuition and laboratory-fee quotation."
+      ],
+      "bestFitFor": [
+        "BOT graduates seeking advanced study in a clearly identified clinical specialty.",
+        "Applicants able to undertake two continuous years of full-time academic and clinical training.",
+        "Students who can complete qualification-equivalence and university eligibility checks before admission."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC — Deemed to be University under Section 3",
+        "NAAC — A++ (Cycle 2, assessment declared 28 June 2022)"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC own consolidated university register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "NAAC own valid-accreditation register14August2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Four verified MOT specialties at Thandalam. Other university programmes remain separately inventoried and held; this is not an all-programme admission promise.",
+        "sectionStates": {
+          "eligibility": "published",
+          "admissions": "published",
+          "fees": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Review my SIMATS MOT eligibility",
+            "capture": [
+              "BOT qualification and university",
+              "aggregate marks and internship",
+              "preferred specialty and admission category"
+            ]
+          }
+        ]
+      },
+      "researchSources": [
+        {
+          "label": "Current MOT admissions and qualification threshold",
+          "url": "https://scot.saveetha.com/admissions",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "MOT regulations and curriculum2023–24",
+          "url": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Undated central programme fee table",
+          "url": "https://www.saveetha.com/admission2",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Historical BOT/MOT induction7August2024",
+          "url": "https://scot.saveetha.com/blog",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current occupational therapy admissions2026–27",
+          "url": "https://scot.saveetha.com/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "College hostels and transport",
+          "url": "https://scot.saveetha.com/hostel-and-transport",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC own university register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC own valid-accreditation register",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which MOT specialities are covered?",
+          "answer": "The verified routes here are Mental Health, Neurosciences, Paediatrics and Hand Rehabilitation. The college admissions page styles Paediatrics as Paediatrics & Neonatology and Hand Rehabilitation as Hand. Select the exact specialty in the written offer; other SIMATS courses have their own admission rules."
+        },
+        {
+          "question": "What is the current MOT marks requirement?",
+          "answer": "The current college admission page requires a BOT degree or equivalent from a recognised university with at least 60% aggregate. The linked regulations also require a qualifying full-time BOT programme and six months of compulsory internship. External-university qualifications need SIMATS eligibility certification."
+        },
+        {
+          "question": "How long is MOT and what is the study mode?",
+          "answer": "The linked regulations specify two continuous years on a full-time basis. The four-year maximum period to pass examinations is a completion limit, not the normal course duration. Academic courses, supervised clinical work and a specialty dissertation form part of the degree."
+        },
+        {
+          "question": "Is the MOT teaching medium English?",
+          "answer": "Yes. The college-linked regulations, applicable from academic year 2023–24, explicitly state English as the medium of instruction and evaluation for all MOT courses. Any certificate needed for overseas study or professional registration has separate requirements."
+        },
+        {
+          "question": "When is the intake?",
+          "answer": "The college’s recorded new BOT/MOT batch induction took place on 7 August 2024. It currently advertises 2026–27 admissions, but that does not provide a current joining date. Ask for the joining notice for your intended cohort before arranging travel."
+        },
+        {
+          "question": "What tuition and other fees are published?",
+          "answer": "The undated central table lists annual tuition INR 65,000 and laboratory fee INR 100,000 for Indian/SAARC applicants, totalling INR 165,000. These reference figures are not a confirmed quote for a named academic year. Request current tuition, laboratory charges and any additional costs in writing."
+        },
+        {
+          "question": "Does the overseas column show a separate fee?",
+          "answer": "Yes. The same undated table lists NRI/foreign annual tuition USD 1,000 and lab fee USD 1,500, totalling USD 2,500, for its named overseas categories. It does not establish a named academic year, degree-equivalence approval, visa eligibility or an automatic offer."
+        },
+        {
+          "question": "Which documents are needed for the eligibility certificate?",
+          "answer": "The linked MOT regulations list the BOT degree or provisional certificate, all qualifying university marksheets, internship completion certificate and migration certificate. Graduates of another university need SIMATS’s eligibility certificate before the stated admission deadline."
+        },
+        {
+          "question": "Is hostel accommodation guaranteed?",
+          "answer": "The college publishes separate men’s and women’s campus hostels with shared rooms, common bathrooms and utilities. The reviewed page does not establish a guaranteed room allocation or current price. Confirm room availability, mess arrangements and the total housing bill separately."
+        },
+        {
+          "question": "What does clinical training involve?",
+          "answer": "The regulations describe supervised clinical postings, rounds, case demonstrations, research-related work and a work diary. Specialty clinical study and dissertation requirements form part of the two-year degree. No particular employment or overseas practice outcome is guaranteed."
+        },
+        {
+          "question": "What institutional recognition is verified?",
+          "answer": "UGC’s own register lists SIMATS as a deemed university under Section 3. NAAC’s own valid-accreditation register dated 14 August 2025 lists cycle 2, A++, CGPA 3.66, declared 28 June 2022. These institutional statuses do not replace another country’s professional-registration assessment."
+        },
+        {
+          "question": "Are other Saveetha institutions the same university?",
+          "answer": "Use the exact institution and campus on your offer. These MOT routes are at Saveetha College of Occupational Therapy within SIMATS, Thandalam. Saveetha Engineering College and Saveetha Amaravati University are distinct institutions and cannot supply admission dates or regulations for these programmes."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "simats-mot-mental-health",
+          "canonicalCourseSlug": "master-occupational-therapy",
+          "officialTitle": "Master of Occupational Therapy – Mental Health",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate."
+          },
+          "officialProgramUrl": "https://scot.saveetha.com/admissions",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants holding the documented BOT/equivalent qualification assessed by SIMATS"
+            ],
+            "restrictions": [
+              "A degree from another university requires a SIMATS eligibility certificate.",
+              "The regulations allow equivalent BOT qualifications from India or abroad; recognition, internship and current marks requirements still apply.",
+              "A foreign-currency fee column does not by itself establish visa eligibility or automatic acceptance of an overseas degree."
+            ],
+            "notes": "Foreign qualification equivalence is subject to university assessment. Request the applicable nationality/category fee and joining arrangements before making travel plans.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx"
+          },
+          "admissionsContent": {
+            "overview": "Master of Occupational Therapy – Mental Health is a two-year full-time postgraduate degree at Saveetha College of Occupational Therapy, SIMATS, Thandalam. The specialty develops occupational therapy evaluation and intervention for people with mental health conditions, alongside research, supervised clinical work and a dissertation.",
+            "eligibility": {
+              "intro": "The current college admission threshold applies alongside the qualifying-degree, internship and external-university certificate requirements in its linked MOT regulations.",
+              "items": [
+                "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission.",
+                "The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship.",
+                "Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates."
+              ]
+            },
+            "applicationSteps": [
+              "Select the occupational therapy postgraduate specialty and submit the institutional application with your qualifying BOT records.",
+              "Complete the university’s degree-equivalence and eligibility-certificate assessment where required; obtain the written admission and specialty offer.",
+              "Confirm the cohort’s fees, joining date, accommodation and document-verification requirements before accepting and reporting."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "BOT degree or provisional certificate and all qualifying university marksheets",
+                "Compulsory internship completion certificate",
+                "Migration certificate and SIMATS eligibility certificate for external-university graduates"
+              ],
+              "application": [
+                "Completed admission application and identity documents",
+                "Written programme/specialty offer and any applicable fee-category documents"
+              ]
+            },
+            "deadlinesNote": "The verified historical BOT/MOT new-batch induction was 7 August 2024. The college currently advertises 2026–27 admissions; it does not publish a current joining date here. Confirm the intended cohort’s reporting notice."
+          },
+          "medium": "English",
+          "mediumNote": "The college-linked MOT regulations, applicable from 2023–24, explicitly state English as the medium of instruction and evaluation for all MOT courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MOT",
+              "language": "English",
+              "details": "Year one combines common research methodology, education/management and general occupational therapy study. Year two develops the clinical specialty and dissertation, with supervised clinical postings and recorded case work."
+            }
+          ]
+        },
+        {
+          "slug": "simats-mot-neurosciences",
+          "canonicalCourseSlug": "master-occupational-therapy",
+          "officialTitle": "Master of Occupational Therapy – Neurosciences",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate."
+          },
+          "officialProgramUrl": "https://scot.saveetha.com/admissions",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants holding the documented BOT/equivalent qualification assessed by SIMATS"
+            ],
+            "restrictions": [
+              "A degree from another university requires a SIMATS eligibility certificate.",
+              "The regulations allow equivalent BOT qualifications from India or abroad; recognition, internship and current marks requirements still apply.",
+              "A foreign-currency fee column does not by itself establish visa eligibility or automatic acceptance of an overseas degree."
+            ],
+            "notes": "Foreign qualification equivalence is subject to university assessment. Request the applicable nationality/category fee and joining arrangements before making travel plans.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx"
+          },
+          "admissionsContent": {
+            "overview": "Master of Occupational Therapy – Neurosciences is a two-year full-time postgraduate degree at Saveetha College of Occupational Therapy, SIMATS, Thandalam. The specialty develops occupational therapy evaluation and rehabilitation for neurological conditions, alongside research, supervised clinical work and a dissertation.",
+            "eligibility": {
+              "intro": "The current college admission threshold applies alongside the qualifying-degree, internship and external-university certificate requirements in its linked MOT regulations.",
+              "items": [
+                "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission.",
+                "The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship.",
+                "Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates."
+              ]
+            },
+            "applicationSteps": [
+              "Select the occupational therapy postgraduate specialty and submit the institutional application with your qualifying BOT records.",
+              "Complete the university’s degree-equivalence and eligibility-certificate assessment where required; obtain the written admission and specialty offer.",
+              "Confirm the cohort’s fees, joining date, accommodation and document-verification requirements before accepting and reporting."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "BOT degree or provisional certificate and all qualifying university marksheets",
+                "Compulsory internship completion certificate",
+                "Migration certificate and SIMATS eligibility certificate for external-university graduates"
+              ],
+              "application": [
+                "Completed admission application and identity documents",
+                "Written programme/specialty offer and any applicable fee-category documents"
+              ]
+            },
+            "deadlinesNote": "The verified historical BOT/MOT new-batch induction was 7 August 2024. The college currently advertises 2026–27 admissions; it does not publish a current joining date here. Confirm the intended cohort’s reporting notice."
+          },
+          "medium": "English",
+          "mediumNote": "The college-linked MOT regulations, applicable from 2023–24, explicitly state English as the medium of instruction and evaluation for all MOT courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MOT",
+              "language": "English",
+              "details": "Year one combines common research methodology, education/management and general occupational therapy study. Year two develops the clinical specialty and dissertation, with supervised clinical postings and recorded case work."
+            }
+          ]
+        },
+        {
+          "slug": "simats-mot-paediatrics",
+          "canonicalCourseSlug": "master-occupational-therapy",
+          "officialTitle": "Master of Occupational Therapy – Paediatrics",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate."
+          },
+          "officialProgramUrl": "https://scot.saveetha.com/admissions",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants holding the documented BOT/equivalent qualification assessed by SIMATS"
+            ],
+            "restrictions": [
+              "A degree from another university requires a SIMATS eligibility certificate.",
+              "The regulations allow equivalent BOT qualifications from India or abroad; recognition, internship and current marks requirements still apply.",
+              "A foreign-currency fee column does not by itself establish visa eligibility or automatic acceptance of an overseas degree."
+            ],
+            "notes": "Foreign qualification equivalence is subject to university assessment. Request the applicable nationality/category fee and joining arrangements before making travel plans.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx"
+          },
+          "admissionsContent": {
+            "overview": "Master of Occupational Therapy – Paediatrics is a two-year full-time postgraduate degree at Saveetha College of Occupational Therapy, SIMATS, Thandalam. The paediatric specialty develops evaluation and intervention for children with developmental and functional needs, alongside research, supervised clinical work and a dissertation.",
+            "eligibility": {
+              "intro": "The current college admission threshold applies alongside the qualifying-degree, internship and external-university certificate requirements in its linked MOT regulations.",
+              "items": [
+                "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission.",
+                "The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship.",
+                "Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates."
+              ]
+            },
+            "applicationSteps": [
+              "Select the occupational therapy postgraduate specialty and submit the institutional application with your qualifying BOT records.",
+              "Complete the university’s degree-equivalence and eligibility-certificate assessment where required; obtain the written admission and specialty offer.",
+              "Confirm the cohort’s fees, joining date, accommodation and document-verification requirements before accepting and reporting."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "BOT degree or provisional certificate and all qualifying university marksheets",
+                "Compulsory internship completion certificate",
+                "Migration certificate and SIMATS eligibility certificate for external-university graduates"
+              ],
+              "application": [
+                "Completed admission application and identity documents",
+                "Written programme/specialty offer and any applicable fee-category documents"
+              ]
+            },
+            "deadlinesNote": "The verified historical BOT/MOT new-batch induction was 7 August 2024. The college currently advertises 2026–27 admissions; it does not publish a current joining date here. Confirm the intended cohort’s reporting notice."
+          },
+          "medium": "English",
+          "mediumNote": "The college-linked MOT regulations, applicable from 2023–24, explicitly state English as the medium of instruction and evaluation for all MOT courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MOT",
+              "language": "English",
+              "details": "Year one combines common research methodology, education/management and general occupational therapy study. Year two develops the clinical specialty and dissertation, with supervised clinical postings and recorded case work."
+            }
+          ]
+        },
+        {
+          "slug": "simats-mot-hand-rehabilitation",
+          "canonicalCourseSlug": "master-occupational-therapy",
+          "officialTitle": "Master of Occupational Therapy – Hand Rehabilitation",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate."
+          },
+          "officialProgramUrl": "https://scot.saveetha.com/admissions",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants holding the documented BOT/equivalent qualification assessed by SIMATS"
+            ],
+            "restrictions": [
+              "A degree from another university requires a SIMATS eligibility certificate.",
+              "The regulations allow equivalent BOT qualifications from India or abroad; recognition, internship and current marks requirements still apply.",
+              "A foreign-currency fee column does not by itself establish visa eligibility or automatic acceptance of an overseas degree."
+            ],
+            "notes": "Foreign qualification equivalence is subject to university assessment. Request the applicable nationality/category fee and joining arrangements before making travel plans.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx"
+          },
+          "admissionsContent": {
+            "overview": "Master of Occupational Therapy – Hand Rehabilitation is a two-year full-time postgraduate degree at Saveetha College of Occupational Therapy, SIMATS, Thandalam. The specialty develops occupational therapy assessment and rehabilitation of hand function, alongside research, supervised clinical work and a dissertation.",
+            "eligibility": {
+              "intro": "The current college admission threshold applies alongside the qualifying-degree, internship and external-university certificate requirements in its linked MOT regulations.",
+              "items": [
+                "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission.",
+                "The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship.",
+                "Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates."
+              ]
+            },
+            "applicationSteps": [
+              "Select the occupational therapy postgraduate specialty and submit the institutional application with your qualifying BOT records.",
+              "Complete the university’s degree-equivalence and eligibility-certificate assessment where required; obtain the written admission and specialty offer.",
+              "Confirm the cohort’s fees, joining date, accommodation and document-verification requirements before accepting and reporting."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "BOT degree or provisional certificate and all qualifying university marksheets",
+                "Compulsory internship completion certificate",
+                "Migration certificate and SIMATS eligibility certificate for external-university graduates"
+              ],
+              "application": [
+                "Completed admission application and identity documents",
+                "Written programme/specialty offer and any applicable fee-category documents"
+              ]
+            },
+            "deadlinesNote": "The verified historical BOT/MOT new-batch induction was 7 August 2024. The college currently advertises 2026–27 admissions; it does not publish a current joining date here. Confirm the intended cohort’s reporting notice."
+          },
+          "medium": "English",
+          "mediumNote": "The college-linked MOT regulations, applicable from 2023–24, explicitly state English as the medium of instruction and evaluation for all MOT courses.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "August"
+          ],
+          "intakeCodes": [
+            "august"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+          "teachingPhases": [
+            {
+              "phase": "Two-year full-time MOT",
+              "language": "English",
+              "details": "Year one combines common research methodology, education/management and general occupational therapy study. Year two develops the clinical specialty and dissertation, with supervised clinical postings and recorded case work."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "admissions",
+      "claimText": "B.S. (Honours) Mathematics; The shared foundation develops into advanced algebra, analysis, topology and manifolds, with a Computer Science or Physics minor determined by the earlier second-subject choice.",
+      "sourceLabel": "Official 2026–27 programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "duration",
+      "claimText": "B.S. (Honours) Mathematics: 4 years, 8 semesters; current admission directory confirms continuing programme.",
+      "sourceLabel": "Current CMI programme directory",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "eligibility",
+      "claimText": "Pass Class XII or an equivalent examination from a recognised board. The published route uses the CMI undergraduate entrance examination; it does not state a minimum board percentage. All three BS awards share one admission examination and common first-semester study. No award choice is required at application. After Semester I, choose Computer Science or Physics as the second subject; after Semester IV, choose the focus leading to the final Mathematics, Mathematics and Computer Science, or Mathematics and Physics award. The specific national Olympiad categories listed by CMI may qualify for direct admission or entrance-test exemption at the Admissions Committee’s discretion.",
+      "sourceLabel": "Current programme-specific CMI admissions requirements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "audienceEligibility",
+      "claimText": "Regular entrance-examination route verified; separate overseas eligibility/fees require category assessment.",
+      "sourceLabel": "Official regular-route admission policy",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "intake",
+      "claimText": "The official 2026–27 calendar records first-year admissions on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening, not a separate new-entry intake.",
+      "sourceLabel": "Official 2026–27 first-year academic calendar",
+      "sourceUrl": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "fee",
+      "claimText": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+      "sourceLabel": "Official 2026–27 programme tuition and living costs",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "Northwestern Mathematics English-medium institutional assessment",
+      "sourceUrl": "https://www.math.northwestern.edu/graduate/application.html",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "University of Michigan English-medium institutional list, updated November2021",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "admissions",
+      "claimText": "B.S. (Honours) Mathematics and Computer Science; The shared mathematics foundation develops into computer science depth courses in logic, complexity, systems and theoretical or applied machine learning.",
+      "sourceLabel": "Official 2026–27 programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "duration",
+      "claimText": "B.S. (Honours) Mathematics and Computer Science: 4 years, 8 semesters; current admission directory confirms continuing programme.",
+      "sourceLabel": "Current CMI programme directory",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "eligibility",
+      "claimText": "Pass Class XII or an equivalent examination from a recognised board. The published route uses the CMI undergraduate entrance examination; it does not state a minimum board percentage. All three BS awards share one admission examination and common first-semester study. No award choice is required at application. After Semester I, choose Computer Science or Physics as the second subject; after Semester IV, choose the focus leading to the final Mathematics, Mathematics and Computer Science, or Mathematics and Physics award. The specific national Olympiad categories listed by CMI may qualify for direct admission or entrance-test exemption at the Admissions Committee’s discretion. The Computer Science focus in years three and four is available to students who chose Computer Science after Semester I.",
+      "sourceLabel": "Current programme-specific CMI admissions requirements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "audienceEligibility",
+      "claimText": "Regular entrance-examination route verified; separate overseas eligibility/fees require category assessment.",
+      "sourceLabel": "Official regular-route admission policy",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "intake",
+      "claimText": "The official 2026–27 calendar records first-year admissions on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening, not a separate new-entry intake.",
+      "sourceLabel": "Official 2026–27 first-year academic calendar",
+      "sourceUrl": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "fee",
+      "claimText": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+      "sourceLabel": "Official 2026–27 programme tuition and living costs",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "Northwestern Mathematics English-medium institutional assessment",
+      "sourceUrl": "https://www.math.northwestern.edu/graduate/application.html",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "University of Michigan English-medium institutional list, updated November2021",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-computer-science",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "admissions",
+      "claimText": "B.S. (Honours) Mathematics and Physics; The shared mathematics foundation develops into physics depth courses, including statistical, computational and quantum physics, relativity and advanced electives.",
+      "sourceLabel": "Official 2026–27 programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "duration",
+      "claimText": "B.S. (Honours) Mathematics and Physics: 4 years, 8 semesters; current admission directory confirms continuing programme.",
+      "sourceLabel": "Current CMI programme directory",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "eligibility",
+      "claimText": "Pass Class XII or an equivalent examination from a recognised board. The published route uses the CMI undergraduate entrance examination; it does not state a minimum board percentage. All three BS awards share one admission examination and common first-semester study. No award choice is required at application. After Semester I, choose Computer Science or Physics as the second subject; after Semester IV, choose the focus leading to the final Mathematics, Mathematics and Computer Science, or Mathematics and Physics award. The specific national Olympiad categories listed by CMI may qualify for direct admission or entrance-test exemption at the Admissions Committee’s discretion. The Physics focus in years three and four is available to students who chose Physics after Semester I.",
+      "sourceLabel": "Current programme-specific CMI admissions requirements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "audienceEligibility",
+      "claimText": "Regular entrance-examination route verified; separate overseas eligibility/fees require category assessment.",
+      "sourceLabel": "Official regular-route admission policy",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "intake",
+      "claimText": "The official 2026–27 calendar records first-year admissions on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening, not a separate new-entry intake.",
+      "sourceLabel": "Official 2026–27 first-year academic calendar",
+      "sourceUrl": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "fee",
+      "claimText": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+      "sourceLabel": "Official 2026–27 programme tuition and living costs",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "Northwestern Mathematics English-medium institutional assessment",
+      "sourceUrl": "https://www.math.northwestern.edu/graduate/application.html",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "University of Michigan English-medium institutional list, updated November2021",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-bs-mathematics-physics",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "admissions",
+      "claimText": "M.Sc. Mathematics; The mathematics master’s develops advanced algebra, analysis and topology through core courses and subject electives.",
+      "sourceLabel": "Official 2026–27 programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "duration",
+      "claimText": "M.Sc. Mathematics: 2 years, 4 semesters; current admission directory confirms continuing programme.",
+      "sourceLabel": "Current CMI programme directory",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "eligibility",
+      "claimText": "Hold an undergraduate degree such as B.A., B.Sc., B.Math., B.Stat., B.E. or B.Tech., with a strong background in Mathematics. Complete the CMI entrance examination for the exact MSc programme. The published entry route does not give a minimum degree percentage. Mathematics admission includes shortlisting for an interview; the 2026 admission update specified online interviews in June.",
+      "sourceLabel": "Current programme-specific CMI admissions requirements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "audienceEligibility",
+      "claimText": "Regular entrance-examination route verified; separate overseas eligibility/fees require category assessment.",
+      "sourceLabel": "Official regular-route admission policy",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "intake",
+      "claimText": "The official 2026–27 calendar records first-year admissions on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening, not a separate new-entry intake.",
+      "sourceLabel": "Official 2026–27 first-year academic calendar",
+      "sourceUrl": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "fee",
+      "claimText": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+      "sourceLabel": "Official 2026–27 programme tuition and living costs",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "Northwestern Mathematics English-medium institutional assessment",
+      "sourceUrl": "https://www.math.northwestern.edu/graduate/application.html",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "University of Michigan English-medium institutional list, updated November2021",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-mathematics",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "admissions",
+      "claimText": "M.Sc. Computer Science; The computer science master’s combines advanced computing courses and electives with a second-year thesis, which may be pursued through an approved industry internship.",
+      "sourceLabel": "Official 2026–27 programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "duration",
+      "claimText": "M.Sc. Computer Science: 2 years, 4 semesters; current admission directory confirms continuing programme.",
+      "sourceLabel": "Current CMI programme directory",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "eligibility",
+      "claimText": "Hold an undergraduate degree such as B.A., B.Sc., B.Math., B.Stat., B.E. or B.Tech., with a strong background in Computer Science. Complete the CMI entrance examination for the exact MSc programme. The published entry route does not give a minimum degree percentage. An interview may be required for shortlisted candidates under the Admissions Committee’s process.",
+      "sourceLabel": "Current programme-specific CMI admissions requirements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "audienceEligibility",
+      "claimText": "Regular entrance-examination route verified; separate overseas eligibility/fees require category assessment.",
+      "sourceLabel": "Official regular-route admission policy",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "intake",
+      "claimText": "The official 2026–27 calendar records first-year admissions on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening, not a separate new-entry intake.",
+      "sourceLabel": "Official 2026–27 first-year academic calendar",
+      "sourceUrl": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "fee",
+      "claimText": "The 2026–27 regular tuition is INR 125,000 per semester, with two semesters per year: INR 250,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. The programme is residential; the 2026 brochure lists INR 31,310 per semester for hostel, mess and establishment charges combined, subject to revision.",
+      "sourceLabel": "Official 2026–27 programme tuition and living costs",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "Northwestern Mathematics English-medium institutional assessment",
+      "sourceUrl": "https://www.math.northwestern.edu/graduate/application.html",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "University of Michigan English-medium institutional list, updated November2021",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-computer-science",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "admissions",
+      "claimText": "M.Sc. Data Science; The data science curriculum combines mathematical foundations, statistical modelling and computing, with first-year summer internship experience described by the placement office.",
+      "sourceLabel": "Official 2026–27 programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "duration",
+      "claimText": "M.Sc. Data Science: 2 years, 4 semesters; current admission directory confirms continuing programme.",
+      "sourceLabel": "Current CMI programme directory",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "eligibility",
+      "claimText": "Hold an undergraduate degree such as B.A., B.Sc., B.Math., B.Stat., B.E. or B.Tech., with a strong background in Mathematics, Statistics or Computer Science. Complete the CMI entrance examination for the exact MSc programme. The published entry route does not give a minimum degree percentage. An interview may be required for shortlisted candidates under the Admissions Committee’s process. Plan off-campus accommodation: the 2026 programme brochure expressly states that hostel accommodation is not available for MSc Data Science.",
+      "sourceLabel": "Current programme-specific CMI admissions requirements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "audienceEligibility",
+      "claimText": "Regular entrance-examination route verified; separate overseas eligibility/fees require category assessment.",
+      "sourceLabel": "Official regular-route admission policy",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "intake",
+      "claimText": "The official 2026–27 calendar records first-year admissions on 31 July or 1 August, orientation on 1 or 2 August and instruction from 3 August 2026. January 2027 is continuing-semester reopening, not a separate new-entry intake.",
+      "sourceLabel": "Official 2026–27 first-year academic calendar",
+      "sourceUrl": "https://www.cmi.ac.in/practical/cal2026_2027.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "fee",
+      "claimText": "The 2026–27 regular tuition is INR 250,000 per semester, with two semesters per year: INR 500,000 annual tuition, calculated by multiplication. This is the published fee before any scholarship or income-based waiver. It excludes hostel, mess and personal living expenses. The quoted academic year is 2026–27; later-cycle fees and any overseas-category quotation require confirmation. Hostel accommodation is not available for this programme.",
+      "sourceLabel": "Official 2026–27 programme tuition and living costs",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "Northwestern Mathematics English-medium institutional assessment",
+      "sourceUrl": "https://www.math.northwestern.edu/graduate/application.html",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "medium",
+      "claimText": "English is the institutional teaching language identified for CMI by the independent university-owned academic assessment/list; not a CMI-issued programme-specific certificate.",
+      "sourceLabel": "University of Michigan English-medium institutional list, updated November2021",
+      "sourceUrl": "https://lsa.umich.edu/content/dam/math-assets/math-document/Grad/PDFs/2022_admissions-english-medium-institutions.pdf",
+      "sourceGrade": "B",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "cmi-msc-data-science",
+      "internalNotes": "Northwestern’s current page names CMI among institutions teaching in English for its own Mathematics application language-waiver assessment. Michigan’s university-owned list, updated November 2021, identifies English-only institutions. External institutional assessment, Grade B; not a CMI programme certificate or proof that every elective/new variant is exclusively English. EduRank’s Languages field provenance is undisclosed and is not relied on alone."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "summary",
+      "claimText": "Chennai Mathematical Institute is a specialist university in Siruseri with undergraduate, master’s and research programmes in mathematics, computer science and physics. Its four-year BS Honours structure starts with a shared foundation before students choose an award focus. Admission uses CMI’s examinations and programme-specific selection.",
+      "sourceLabel": "Current programme brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "campusLifestyle",
+      "claimText": "Study centres on mathematics, computing and physics, with courses taught by active researchers and opportunities to attend seminars. The Siruseri campus combines academic space and residential facilities for the programmes that provide hostel accommodation. The undergraduate curriculum also includes humanities study and cultural activity.",
+      "sourceLabel": "Current programme and campus brochure",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "cityProfile",
+      "claimText": "CMI is at H1, SIPCOT IT Park, Siruseri, near Kelambakkam on Chennai’s southern IT corridor. Applicants should use the Siruseri campus address when arranging travel. BS students and students in MSc Mathematics or Computer Science follow a residential programme; MSc Data Science students need to budget and arrange their accommodation outside the institute.",
+      "sourceLabel": "Current campus and programme accommodation scope",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "practicalExposure",
+      "claimText": "The programme structure emphasises mathematical reasoning and theoretical foundations alongside subject-specific practical work. Undergraduates use computing facilities, while Physics students undertake laboratory experiments. BS students can pursue deeper electives and, where approved, a thesis. MSc Computer Science includes a second-year thesis, sometimes undertaken through an approved industry internship; MSc Data Science students have first-year summer internship opportunities described by the placement office. These academic components do not guarantee employment.",
+      "sourceLabel": "Official academic placement-office curriculum description",
+      "sourceUrl": "https://www.cmi.ac.in/~placement/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "hostelOverview",
+      "claimText": "The 2026 brochure describes residential study and campus hostels for BS students and MSc Mathematics/Computer Science. Hostel accommodation is expressly unavailable for MSc Data Science. The listed hostel, mess and establishment charges total INR 31,310 per semester and may change. PhD accommodation follows separate arrangements, including first-year hostel availability in the brochure.",
+      "sourceLabel": "Official 2026–27 campus and hostel arrangements",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "dietarySupport",
+      "claimText": "Students using the campus residential arrangement pay mess charges as part of the published hostel and living bill. Discuss vegetarian preferences, food allergies, medical diets or religious food requirements before accepting accommodation; no particular specialist diet or certification is guaranteed here.",
+      "sourceLabel": "Official mess charges and accommodation scope",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "safetyOverview",
+      "claimText": "CMI publishes an anti-ragging committee and squad with named institutional contacts. Its Grievance and Internal Complaints Committee investigates harassment and serves as the gender-sensitisation cell. Students should use the institute’s stated reporting channels for a complaint or urgent concern.",
+      "sourceLabel": "Official anti-ragging and complaints channels",
+      "sourceUrl": "https://www.cmi.ac.in/practical/anti-ragging.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "studentSupport",
+      "claimText": "The Students Grievances Redressal Committee covers admissions, academic issues, financial demands, scholarship non-payment and discrimination, with an ombudsperson identified by the institute. Programme faculty, academic administration and the complaints committee provide further institutional contact points.",
+      "sourceLabel": "Official student grievances committee",
+      "sourceUrl": "https://www.cmi.ac.in/practical/sgrc.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "recognition",
+      "claimText": "UGC regulator-own register listsCMI as a deemeduniversity, notification15December2006; the institute was founded1989.",
+      "sourceLabel": "UGC own university register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "recognition",
+      "claimText": "NAAC own validregister14August2025 listsCMI U-0450 cycle2,CGPA2.81,B++,declared21March2023. Do not substitute oldA2016 marketing grades.",
+      "sourceLabel": "NAAC own valid-accreditation register",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "safetyOverview",
+      "claimText": "CMI Grievance and Internal Complaints Committee investigates harassment and serves as gender-sensitisation cell.",
+      "sourceLabel": "Official harassment complaints committee",
+      "sourceUrl": "https://www.cmi.ac.in/practical/grievance-committee.php",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "programmeSlug": "cmi-bs-mathematics",
+      "publicField": "scholarships",
+      "claimText": "BS: about 30–35 full tuition waivers for four years; limited INR 5,000 monthly stipends subject to academic continuation. Annual family income at most INR 8 lakh qualifies for 100% tuition waiver, at most INR 12 lakh for 50%. Financial-assistance requests are processed after admission; not every admitted applicant receives an award.",
+      "sourceLabel": "Official 2026–27 programme-specific scholarships and income bands",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "programmeSlug": "cmi-bs-mathematics-computer-science",
+      "publicField": "scholarships",
+      "claimText": "BS: about 30–35 full tuition waivers for four years; limited INR 5,000 monthly stipends subject to academic continuation. Annual family income at most INR 8 lakh qualifies for 100% tuition waiver, at most INR 12 lakh for 50%. Financial-assistance requests are processed after admission; not every admitted applicant receives an award.",
+      "sourceLabel": "Official 2026–27 programme-specific scholarships and income bands",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "programmeSlug": "cmi-bs-mathematics-physics",
+      "publicField": "scholarships",
+      "claimText": "BS: about 30–35 full tuition waivers for four years; limited INR 5,000 monthly stipends subject to academic continuation. Annual family income at most INR 8 lakh qualifies for 100% tuition waiver, at most INR 12 lakh for 50%. Financial-assistance requests are processed after admission; not every admitted applicant receives an award.",
+      "sourceLabel": "Official 2026–27 programme-specific scholarships and income bands",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "programmeSlug": "cmi-msc-mathematics",
+      "publicField": "scholarships",
+      "claimText": "MSc Mathematics/Computer Science: substantial full tuition waivers for two years and limited INR 6,000 monthly stipends subject to academic continuation. Income at most INR 8 lakh qualifies for 40% tuition waiver, at most INR 12 lakh for 25%. Financial-assistance requests are processed after admission; not every admitted applicant receives an award.",
+      "sourceLabel": "Official 2026–27 programme-specific scholarships and income bands",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "programmeSlug": "cmi-msc-computer-science",
+      "publicField": "scholarships",
+      "claimText": "MSc Mathematics/Computer Science: substantial full tuition waivers for two years and limited INR 6,000 monthly stipends subject to academic continuation. Income at most INR 8 lakh qualifies for 40% tuition waiver, at most INR 12 lakh for 25%. Financial-assistance requests are processed after admission; not every admitted applicant receives an award.",
+      "sourceLabel": "Official 2026–27 programme-specific scholarships and income bands",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "chennai-mathematical-institute",
+      "programmeSlug": "cmi-msc-data-science",
+      "publicField": "scholarships",
+      "claimText": "MSc Data Science: annual family income at most INR 8 lakh qualifies for 40% tuition waiver, at most INR 12 lakh for 25%; greater assistance may be considered for significantly lower incomes. Financial-assistance requests are processed after admission; not every admitted applicant receives an award.",
+      "sourceLabel": "Official 2026–27 programme-specific scholarships and income bands",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "chennai-mathematical-institute",
+      "publicField": "city",
+      "claimText": "Canonical city facet: Siruseri. Full campus address and regional context remain in the city profile.",
+      "sourceLabel": "Current campus and programme accommodation scope",
+      "sourceUrl": "https://www.cmi.ac.in/admissions/brochure/2026/cmi-brochure-2026.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "admissions",
+      "claimText": "Master of Occupational Therapy – Mental Health; two-year postgraduate degree awarded in the specialty. Current admission wording: Mental Health.",
+      "sourceLabel": "Current college MOT admission specialties",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health",
+      "internalNotes": "Regulation title/award preserved; admissions page adds neonatal scope to Paediatrics and shortens Hand Rehabilitation to Hand."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "duration",
+      "claimText": "MOT extends over two continuous full-time years, year one months0–12 and year two13–24. Four years is the maximum completion period, not normal duration.",
+      "sourceLabel": "College-linked revised MOT regulations2023–24",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission. The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship. Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates.",
+      "sourceLabel": "Current MOT admission threshold and linked regulations",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health",
+      "internalNotes": "Current admissions page says BOT/equivalent≥60%. Linked regulation applicable2023–24 says≥50%, full-time3.5/4.5yearBOT+sixmonthsinternship, outsideuniversity eligibilitycertificate. Public current admission condition60% adopted; do not promise admission at50%. Old duration examples are qualifying-degree recognition wording, not current BOT duration."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Full-time BOT/equivalent; six months compulsory internship. Outside-university graduates need eligibility certificate with degree/provisional, marksheets, internship and migration documents before admission deadline.",
+      "sourceLabel": "MOT qualifying-degree and certificate requirements",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "medium",
+      "claimText": "English is expressly the medium of instruction and evaluation for all courses of the MOT programme.",
+      "sourceLabel": "MOT regulations: medium of instruction and evaluation",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "intake",
+      "claimText": "New BOT and MOT students were welcomed at induction on7August2024; college homepage currently advertises admissions2026–27. Historical induction only, no inference of a current physical class start.",
+      "sourceLabel": "College historical new-batch induction7August2024",
+      "sourceUrl": "https://scot.saveetha.com/blog",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "fee",
+      "claimText": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+      "sourceLabel": "Undated central table: tuition, laboratory fee and separate audiences",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health",
+      "internalNotes": "No academic year printed; reviewed25October2026. Main fee.on_request for current cohort, exact known undated references retained in notes; no numeric current amount or annual total tuition inferred from composite fees."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "audienceEligibility",
+      "claimText": "The regulations accept equivalent BOT qualifications from a university in India or abroad, subject to eligibility certification for external graduates and internship/qualification assessment. Current admissions threshold60% applies.",
+      "sourceLabel": "MOT external-university qualification and equivalence route",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "practicalExposure",
+      "claimText": "The specialty develops occupational therapy evaluation and intervention for people with mental health conditions, alongside research, supervised clinical work and a dissertation. Common research-methodology and education/management study, clinical rounds, case demonstrations, logbook, graded postings and specialty dissertation are specified.",
+      "sourceLabel": "MOT training methods and specialty curriculum",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-mental-health"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "admissions",
+      "claimText": "Master of Occupational Therapy – Neurosciences; two-year postgraduate degree awarded in the specialty. Current admission wording: Neurosciences.",
+      "sourceLabel": "Current college MOT admission specialties",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences",
+      "internalNotes": "Regulation title/award preserved; admissions page adds neonatal scope to Paediatrics and shortens Hand Rehabilitation to Hand."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "duration",
+      "claimText": "MOT extends over two continuous full-time years, year one months0–12 and year two13–24. Four years is the maximum completion period, not normal duration.",
+      "sourceLabel": "College-linked revised MOT regulations2023–24",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission. The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship. Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates.",
+      "sourceLabel": "Current MOT admission threshold and linked regulations",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences",
+      "internalNotes": "Current admissions page says BOT/equivalent≥60%. Linked regulation applicable2023–24 says≥50%, full-time3.5/4.5yearBOT+sixmonthsinternship, outsideuniversity eligibilitycertificate. Public current admission condition60% adopted; do not promise admission at50%. Old duration examples are qualifying-degree recognition wording, not current BOT duration."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Full-time BOT/equivalent; six months compulsory internship. Outside-university graduates need eligibility certificate with degree/provisional, marksheets, internship and migration documents before admission deadline.",
+      "sourceLabel": "MOT qualifying-degree and certificate requirements",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "medium",
+      "claimText": "English is expressly the medium of instruction and evaluation for all courses of the MOT programme.",
+      "sourceLabel": "MOT regulations: medium of instruction and evaluation",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "intake",
+      "claimText": "New BOT and MOT students were welcomed at induction on7August2024; college homepage currently advertises admissions2026–27. Historical induction only, no inference of a current physical class start.",
+      "sourceLabel": "College historical new-batch induction7August2024",
+      "sourceUrl": "https://scot.saveetha.com/blog",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "fee",
+      "claimText": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+      "sourceLabel": "Undated central table: tuition, laboratory fee and separate audiences",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences",
+      "internalNotes": "No academic year printed; reviewed25October2026. Main fee.on_request for current cohort, exact known undated references retained in notes; no numeric current amount or annual total tuition inferred from composite fees."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "audienceEligibility",
+      "claimText": "The regulations accept equivalent BOT qualifications from a university in India or abroad, subject to eligibility certification for external graduates and internship/qualification assessment. Current admissions threshold60% applies.",
+      "sourceLabel": "MOT external-university qualification and equivalence route",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "practicalExposure",
+      "claimText": "The specialty develops occupational therapy evaluation and rehabilitation for neurological conditions, alongside research, supervised clinical work and a dissertation. Common research-methodology and education/management study, clinical rounds, case demonstrations, logbook, graded postings and specialty dissertation are specified.",
+      "sourceLabel": "MOT training methods and specialty curriculum",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-neurosciences"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "admissions",
+      "claimText": "Master of Occupational Therapy – Paediatrics; two-year postgraduate degree awarded in the specialty. Current admission wording: Paediatrics & Neonatology.",
+      "sourceLabel": "Current college MOT admission specialties",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics",
+      "internalNotes": "Regulation title/award preserved; admissions page adds neonatal scope to Paediatrics and shortens Hand Rehabilitation to Hand."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "duration",
+      "claimText": "MOT extends over two continuous full-time years, year one months0–12 and year two13–24. Four years is the maximum completion period, not normal duration.",
+      "sourceLabel": "College-linked revised MOT regulations2023–24",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission. The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship. Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates.",
+      "sourceLabel": "Current MOT admission threshold and linked regulations",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics",
+      "internalNotes": "Current admissions page says BOT/equivalent≥60%. Linked regulation applicable2023–24 says≥50%, full-time3.5/4.5yearBOT+sixmonthsinternship, outsideuniversity eligibilitycertificate. Public current admission condition60% adopted; do not promise admission at50%. Old duration examples are qualifying-degree recognition wording, not current BOT duration."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Full-time BOT/equivalent; six months compulsory internship. Outside-university graduates need eligibility certificate with degree/provisional, marksheets, internship and migration documents before admission deadline.",
+      "sourceLabel": "MOT qualifying-degree and certificate requirements",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "medium",
+      "claimText": "English is expressly the medium of instruction and evaluation for all courses of the MOT programme.",
+      "sourceLabel": "MOT regulations: medium of instruction and evaluation",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "intake",
+      "claimText": "New BOT and MOT students were welcomed at induction on7August2024; college homepage currently advertises admissions2026–27. Historical induction only, no inference of a current physical class start.",
+      "sourceLabel": "College historical new-batch induction7August2024",
+      "sourceUrl": "https://scot.saveetha.com/blog",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "fee",
+      "claimText": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+      "sourceLabel": "Undated central table: tuition, laboratory fee and separate audiences",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics",
+      "internalNotes": "No academic year printed; reviewed25October2026. Main fee.on_request for current cohort, exact known undated references retained in notes; no numeric current amount or annual total tuition inferred from composite fees."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "audienceEligibility",
+      "claimText": "The regulations accept equivalent BOT qualifications from a university in India or abroad, subject to eligibility certification for external graduates and internship/qualification assessment. Current admissions threshold60% applies.",
+      "sourceLabel": "MOT external-university qualification and equivalence route",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "practicalExposure",
+      "claimText": "The paediatric specialty develops evaluation and intervention for children with developmental and functional needs, alongside research, supervised clinical work and a dissertation. Common research-methodology and education/management study, clinical rounds, case demonstrations, logbook, graded postings and specialty dissertation are specified.",
+      "sourceLabel": "MOT training methods and specialty curriculum",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-paediatrics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "admissions",
+      "claimText": "Master of Occupational Therapy – Hand Rehabilitation; two-year postgraduate degree awarded in the specialty. Current admission wording: Hand.",
+      "sourceLabel": "Current college MOT admission specialties",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation",
+      "internalNotes": "Regulation title/award preserved; admissions page adds neonatal scope to Paediatrics and shortens Hand Rehabilitation to Hand."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "duration",
+      "claimText": "MOT extends over two continuous full-time years, year one months0–12 and year two13–24. Four years is the maximum completion period, not normal duration.",
+      "sourceLabel": "College-linked revised MOT regulations2023–24",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Hold a Bachelor of Occupational Therapy degree or equivalent from a recognised university. The current college admissions page specifies at least 60% aggregate for MOT admission. The linked MOT regulations require a full-time qualifying BOT programme and completion of six months of compulsory rotatory internship. Graduates of another university must obtain SIMATS’s eligibility certificate before the admission deadline, with their degree, marksheets, internship completion and migration certificates.",
+      "sourceLabel": "Current MOT admission threshold and linked regulations",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation",
+      "internalNotes": "Current admissions page says BOT/equivalent≥60%. Linked regulation applicable2023–24 says≥50%, full-time3.5/4.5yearBOT+sixmonthsinternship, outsideuniversity eligibilitycertificate. Public current admission condition60% adopted; do not promise admission at50%. Old duration examples are qualifying-degree recognition wording, not current BOT duration."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "eligibility",
+      "claimText": "Full-time BOT/equivalent; six months compulsory internship. Outside-university graduates need eligibility certificate with degree/provisional, marksheets, internship and migration documents before admission deadline.",
+      "sourceLabel": "MOT qualifying-degree and certificate requirements",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "medium",
+      "claimText": "English is expressly the medium of instruction and evaluation for all courses of the MOT programme.",
+      "sourceLabel": "MOT regulations: medium of instruction and evaluation",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "intake",
+      "claimText": "New BOT and MOT students were welcomed at induction on7August2024; college homepage currently advertises admissions2026–27. Historical induction only, no inference of a current physical class start.",
+      "sourceLabel": "College historical new-batch induction7August2024",
+      "sourceUrl": "https://scot.saveetha.com/blog",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "fee",
+      "claimText": "Request a fee quotation for the intended cohort. The undated central public table lists annual tuition INR 65,000 plus lab fee INR 100,000 for Indian/SAARC applicants (INR 165,000 combined). Its NRI/foreign column lists tuition USD 1,000 plus lab fee USD 1,500 (USD 2,500 combined) for the named overseas categories. These are undated reference figures, not confirmed rates for a named academic year; hostel and personal living costs are separate.",
+      "sourceLabel": "Undated central table: tuition, laboratory fee and separate audiences",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "indicative",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation",
+      "internalNotes": "No academic year printed; reviewed25October2026. Main fee.on_request for current cohort, exact known undated references retained in notes; no numeric current amount or annual total tuition inferred from composite fees."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "audienceEligibility",
+      "claimText": "The regulations accept equivalent BOT qualifications from a university in India or abroad, subject to eligibility certification for external graduates and internship/qualification assessment. Current admissions threshold60% applies.",
+      "sourceLabel": "MOT external-university qualification and equivalence route",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "practicalExposure",
+      "claimText": "The specialty develops occupational therapy assessment and rehabilitation of hand function, alongside research, supervised clinical work and a dissertation. Common research-methodology and education/management study, clinical rounds, case demonstrations, logbook, graded postings and specialty dissertation are specified.",
+      "sourceLabel": "MOT training methods and specialty curriculum",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "simats-mot-hand-rehabilitation"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "summary",
+      "claimText": "Saveetha Institute of Medical and Technical Sciences (SIMATS) is a deemed university in Chennai with constituent medical, dental, engineering and other professional schools. Its College of Occupational Therapy at Thandalam offers postgraduate specialist training combining clinical practice, research and a dissertation.",
+      "sourceLabel": "Official university and constituent school directory",
+      "sourceUrl": "https://www.saveetha.com/",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "cityProfile",
+      "claimText": "SIMATS has constituent institutions in Chennai. Saveetha College of Occupational Therapy gives its address as Saveetha Nagar, Thandalam, Chennai 602105. The college publishes Chennai transport routes and on-campus hostel arrangements. Use the Thandalam address for these MOT programmes; the university’s Velappanchavadi registered address and similarly named independent Saveetha institutions are different locations.",
+      "sourceLabel": "College address and programme admission page",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "campusLifestyle",
+      "claimText": "The occupational therapy college is based in the Health Sciences setting at Thandalam, with classrooms, a library and clinical facilities. Its academic calendar and events include seminars, case-based learning and community activities. The wider SIMATS portfolio spans several constituent schools and campuses; applicants should use the location in their own programme offer.",
+      "sourceLabel": "College academic facilities and study methods",
+      "sourceUrl": "https://scot.saveetha.com/academics",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "practicalExposure",
+      "claimText": "MOT regulations describe full-time training with graded clinical responsibilities, rounds, case demonstrations and clinical postings. Students maintain a work diary and case records for faculty review. The first year includes research methodology, occupational therapy education and general practice; the second year develops the chosen clinical specialty and a dissertation. The college also reports community screening and awareness activities. These are educational components rather than employment or overseas-registration guarantees.",
+      "sourceLabel": "MOT training methods, clinical posting and dissertation regulations",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "hostelOverview",
+      "claimText": "The occupational therapy college publishes separate campus hostels for men and women, shared rooms and common bathrooms. Its page describes Wi-Fi, electricity and water provision. Room availability, allocation, mess arrangements and current charges need confirmation in the accommodation offer; no room price or guaranteed allotment is established here.",
+      "sourceLabel": "College hostel and Chennai transport arrangements",
+      "sourceUrl": "https://scot.saveetha.com/hostel-and-transport",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "dietarySupport",
+      "claimText": "Confirm mess availability, food preferences, allergies, medical diets and religious food requirements with the college before choosing accommodation. The reviewed hostel page describes rooms and utilities but does not establish a specialist menu, certified diet or current meal price.",
+      "sourceLabel": "Reviewed accommodation scope; specialist dietary provision not established",
+      "sourceUrl": "https://scot.saveetha.com/hostel-and-transport",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "safetyOverview",
+      "claimText": "Ragging is strictly prohibited on the college academic page; no security performance claim is made.",
+      "sourceLabel": "College academic conduct statement",
+      "sourceUrl": "https://scot.saveetha.com/academics",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "studentSupport",
+      "claimText": "MOT students are supervised through clinical postings, faculty review of their work diaries and dissertation guidance. Applicants with another university’s degree must complete the SIMATS eligibility-certificate process. Current admissions and accommodation questions should be resolved against the written programme offer.",
+      "sourceLabel": "MOT clinical supervision and external-graduate certificate process",
+      "sourceUrl": "https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "recognition",
+      "claimText": "UGC consolidated register entry816 lists SIMATS deemed university, notification18March2005. Year2005 records university designation, not the founding of predecessor colleges.",
+      "sourceLabel": "UGC own consolidated university register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "recognition",
+      "claimText": "NAAC own valid-accreditation register14August2025 Universities row391 lists SIMATS U0475,cycle2,CGPA3.66,A++,declared28June2022. Distinct SaveethaEngineeringCollege not merged.",
+      "sourceLabel": "NAAC own institutional accreditation record",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "programmeSlug": "simats-mot-mental-health",
+      "publicField": "fee",
+      "claimText": "A current-cohort fee quotation is required: the current college2026–27admission homepage, college admissions page, linked MOT regulations and central fee table do not identify an academic year for the published MOT amounts. The undated reference numbers remain separately documented; no current-year tuition quote is verified.",
+      "sourceLabel": "Official current admission pages and undated central fee-table audit",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Bounded official fee search reviewed current SCOT homepage/admissions/academic syllabus and central fee table. Current homepage says admissions2026–27but does not bind the central table to that academic year. No named-year MOT fee schedule located. Historic tuition/lab values retained as indicative evidence and public notes; currentfee on_request approved by root. No currency conversion or invented range."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "programmeSlug": "simats-mot-neurosciences",
+      "publicField": "fee",
+      "claimText": "A current-cohort fee quotation is required: the current college2026–27admission homepage, college admissions page, linked MOT regulations and central fee table do not identify an academic year for the published MOT amounts. The undated reference numbers remain separately documented; no current-year tuition quote is verified.",
+      "sourceLabel": "Official current admission pages and undated central fee-table audit",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Bounded official fee search reviewed current SCOT homepage/admissions/academic syllabus and central fee table. Current homepage says admissions2026–27but does not bind the central table to that academic year. No named-year MOT fee schedule located. Historic tuition/lab values retained as indicative evidence and public notes; currentfee on_request approved by root. No currency conversion or invented range."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "programmeSlug": "simats-mot-paediatrics",
+      "publicField": "fee",
+      "claimText": "A current-cohort fee quotation is required: the current college2026–27admission homepage, college admissions page, linked MOT regulations and central fee table do not identify an academic year for the published MOT amounts. The undated reference numbers remain separately documented; no current-year tuition quote is verified.",
+      "sourceLabel": "Official current admission pages and undated central fee-table audit",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Bounded official fee search reviewed current SCOT homepage/admissions/academic syllabus and central fee table. Current homepage says admissions2026–27but does not bind the central table to that academic year. No named-year MOT fee schedule located. Historic tuition/lab values retained as indicative evidence and public notes; currentfee on_request approved by root. No currency conversion or invented range."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "programmeSlug": "simats-mot-hand-rehabilitation",
+      "publicField": "fee",
+      "claimText": "A current-cohort fee quotation is required: the current college2026–27admission homepage, college admissions page, linked MOT regulations and central fee table do not identify an academic year for the published MOT amounts. The undated reference numbers remain separately documented; no current-year tuition quote is verified.",
+      "sourceLabel": "Official current admission pages and undated central fee-table audit",
+      "sourceUrl": "https://www.saveetha.com/admission2",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Bounded official fee search reviewed current SCOT homepage/admissions/academic syllabus and central fee table. Current homepage says admissions2026–27but does not bind the central table to that academic year. No named-year MOT fee schedule located. Historic tuition/lab values retained as indicative evidence and public notes; currentfee on_request approved by root. No currency conversion or invented range."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "publicField": "city",
+      "claimText": "Canonical city facet: Chennai. Full campus address and regional context remain in the city profile.",
+      "sourceLabel": "College address and programme admission page",
+      "sourceUrl": "https://scot.saveetha.com/admissions",
+      "sourceGrade": "A",
+      "status": "verified",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

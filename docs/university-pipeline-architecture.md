@@ -581,3 +581,11 @@ The controlled teaching-language registry includes `tamil` (display label `Tamil
 Teaching-language additions must also update the database normalization trigger allow-list.
 Migration `0083_tamil_teaching_language` adds Tamil while preserving canonical mixed-language
 labels; apply the schema migration before publishing offerings that use the new code.
+
+### Canonical city facets
+
+Use the plain city or town in `university.city` (for example `Chennai` or `Siruseri`),
+not a comma-delimited postal address or city-plus-state label. Keep neighbourhood, district,
+metropolitan context, state and postal code in `cityProfile`. A nearby town must not be renamed
+Chennai merely to join that filter. Correct already-applied city data through a forward content
+migration, preserving full programme records and reviewed media attribution.

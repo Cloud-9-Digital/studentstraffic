@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sri-venkateswara-college-of-engineering",
+      "universityName": "Sri Venkateswara College of Engineering",
+      "sourceBatch": "codex-svce-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.svce.ac.in/wp-content/uploads/2021/12/svce-logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.svce.ac.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "Sri Venkateswara College of Engineering wordmark",
+          "visualCheck": "Native561x108 transparent PNG inspected at original pixels. Complete blue SVCE wordmark, orange motif and exact college name; actual current official header brand, no favicon or accreditation text. An alternative older logo with unsupported approval text was rejected.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP200 GET and sequential local original-pixel visual inspection of logo2.png (561x108, SHA25686a6506ebdef87f2a6f3e789e6dea5ec848fb2eedc7bc1d4b289b086dec2a33d). Prior concurrent image outputs were misassociated; /2021/01/logo.png is the rejected337x123 asset with affiliation/approval text.",
+          "proposedPublicId": "studentstraffic/universities/sri-venkateswara-college-of-engineering/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.svce.ac.in/wp-content/uploads/2022/01/hostel-svce.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.svce.ac.in/facilities/hostel/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "SVCE hostel building at the Pennalur campus",
+          "visualCheck": "Native800x443 JPEG inspected. Official hostel photograph shows a grey multi-storey campus residence, passage, landscaping and trees. No poster, marketing text, external licence condition or other institution identity. Other homepage banners containing promotional text were rejected.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP200 GET and local original-pixel visual inspection; reviewed originals retained in the institutional source bundle.",
+          "proposedPublicId": "studentstraffic/universities/sri-venkateswara-college-of-engineering/cover-20261025"
+        }
+      ]
+    },
+    {
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "universityName": "Sathyabama Institute of Science and Technology",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.sathyabama.ac.in/sites/default/files/inline-images/logo_blue.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.sathyabama.ac.in/",
+          "rightsBasis": "Official university identifying logo, linked fromhomepage footer. Crop x0y0width96height95 retains completecrestandribbon, excludeswordmark. No brand alteration. No openlicence claimed. DirectHTTP200image contenttype verified25October2026 using browserUserAgent; visuallyinspected localoriginal.",
+          "proposedPublicId": "studentstraffic/universities/sathyabama-institute-of-science-and-technology/logo",
+          "altText": "Sathyabama Institute of Science and Technology crest",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 95
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sathyabama.ac.in/sites/default/files/inline-images/DJI_0105-New-Low.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.sathyabama.ac.in/about-us",
+          "rightsBasis": "Official university campus photograph linked onAboutUs page. AuthenticChennaicampus photograph with Sathyabamasatmonument visible; no watermark/syntheticasset or stockportrait. Uncropped original. No openlicence claimed. DirectHTTP200image contenttype verified25October2026 using browserUserAgent; visuallyinspected localoriginal.",
+          "proposedPublicId": "studentstraffic/universities/sathyabama-institute-of-science-and-technology/cover",
+          "altText": "Aerial view of Sathyabama\u2019s Chennai campus academic buildings and grounds"
+        }
+      ],
+      "migrationId": "0213-india-sathyabama-marine-biology"
+    }
+  ]
+}
