@@ -1,0 +1,33 @@
+{
+  "manifestId": "india-tn-snu-chennai-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "SNU Chennai mandatory logo and cover; controlled upload by publisher",
+  "entries": [
+    {
+      "universitySlug": "shiv-nadar-university-chennai",
+      "universityName": "Shiv Nadar University Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://som.snuchennai.edu.in/wp-content/uploads/2024/04/snu-logo.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://som.snuchennai.edu.in/",
+          "rightsBasis": "Official university identifying logo, no open licence claimed. HTTP 200 image/jpeg, 150x150; inspected legible on white tile, blue lettering and mark.",
+          "proposedPublicId": "studentstraffic/universities/shiv-nadar-university-chennai/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/The_Department_Of_Computer_Science.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Department_Of_Computer_Science.jpg",
+          "rightsBasis": "Jeyavelu Sudarshan, 11 January 2012, CC BY-SA 3.0, attribution and licence link required. Historical photograph of SSN Computer Science building at Kalavakkam shared campus, now home to SSN School of Engineering under SNU Chennai for 2026 admissions. Visually inspected, 2560x1440 JPEG.",
+          "altText": "Computer Science department building at the Kalavakkam campus, photographed in 2012",
+          "proposedPublicId": "studentstraffic/universities/shiv-nadar-university-chennai/cover"
+        }
+      ],
+      "migrationId": "0191-india-shiv-nadar-university-chennai"
+    }
+  ]
+}

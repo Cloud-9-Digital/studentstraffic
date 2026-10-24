@@ -1,0 +1,36 @@
+{
+  "manifestId": "madurai-kamaraj-university-2026-10-24",
+  "status": "reviewed-offline-research-only",
+  "entries": [
+    {
+      "universitySlug": "madurai-kamaraj-university",
+      "universityName": "Madurai Kamaraj University",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admissions.mkuniversity.ac.in/images/mku%20logo.png",
+          "sourceType": "official",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-24",
+          "rightsBasis": "Official institution asset on university admissions site; no open licence claimed; identifies institution and campus.",
+          "proposedPublicId": "studentstraffic/universities/madurai-kamaraj-university/logo",
+          "altText": "Madurai Kamaraj University coloured emblem",
+          "visualCheck": "Coloured emblem5848x4135;legible onwhite."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://admissions.mkuniversity.ac.in/images/university.jpg",
+          "sourceType": "official",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-24",
+          "rightsBasis": "Official institution asset on university admissions site; no open licence claimed; identifies institution and campus.",
+          "proposedPublicId": "studentstraffic/universities/madurai-kamaraj-university/cover",
+          "altText": "Entrance gate of Madurai Kamaraj University in Madurai",
+          "visualCheck": "Officialcampusgate1200x704;institutionnamevisible."
+        }
+      ]
+    }
+  ]
+}

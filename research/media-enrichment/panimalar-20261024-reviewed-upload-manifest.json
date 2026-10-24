@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-24",
+  "entries": [
+    {
+      "universitySlug": "panimalar-engineering-college",
+      "universityName": "Panimalar Engineering College",
+      "sourceBatch": "01a16a61",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.panimalar.ac.in/assets/images/pec-logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college in its factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/panimalar-engineering-college/logo-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "Panimalar Engineering College emblem",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 280,
+              "height": 316
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.panimalar.ac.in/assets/images/CampusLife/panimalar-campus-life.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college in its factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/panimalar-engineering-college/cover-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "Students working in a computer laboratory at Panimalar Engineering College"
+        }
+      ]
+    }
+  ]
+}

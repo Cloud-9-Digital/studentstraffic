@@ -11,6 +11,8 @@ for existing in sorted((root/'content-migrations').glob('*/payload.json')):
   for course in json.load(existing.open())['courses']:
    courses[course['slug']]=course
 registry=courses
+# Engineering Data Science is a four-year B.E./B.Tech family; older shared records carried a B.Sc. default.
+courses['be-btech-data-science']['durationYears']=4
 base='https://kongu.ac.in'
 regs='https://api.kongu.edu/uploads/academic/curriculum/'
 disclosure=base+'/static/media/mandatorydisclosure2026new.861d78389b9b834372d7.pdf'

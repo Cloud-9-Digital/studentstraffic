@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "panimalar-engineering-college",
+      "universityName": "Panimalar Engineering College",
+      "sourceBatch": "01a16a61",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.panimalar.ac.in/assets/images/pec-logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college in its factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/panimalar-engineering-college/logo-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "Panimalar Engineering College emblem",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 280,
+              "height": 316
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.panimalar.ac.in/assets/images/CampusLife/panimalar-campus-life.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college in its factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/panimalar-engineering-college/cover-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "Students working in a computer laboratory at Panimalar Engineering College"
+        }
+      ]
+    },
+    {
+      "universitySlug": "shiv-nadar-university-chennai",
+      "universityName": "Shiv Nadar University Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://som.snuchennai.edu.in/wp-content/uploads/2024/04/snu-logo.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://som.snuchennai.edu.in/",
+          "rightsBasis": "Official university identifying logo, no open licence claimed. HTTP 200 image/jpeg, 150x150; inspected legible on white tile, blue lettering and mark.",
+          "proposedPublicId": "studentstraffic/universities/shiv-nadar-university-chennai/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/The_Department_Of_Computer_Science.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Department_Of_Computer_Science.jpg",
+          "rightsBasis": "Jeyavelu Sudarshan, 11 January 2012, CC BY-SA 3.0, attribution and licence link required. Historical photograph of SSN Computer Science building at Kalavakkam shared campus, now home to SSN School of Engineering under SNU Chennai for 2026 admissions. Visually inspected, 2560x1440 JPEG.",
+          "altText": "Computer Science department building at the Kalavakkam campus, photographed in 2012",
+          "proposedPublicId": "studentstraffic/universities/shiv-nadar-university-chennai/cover"
+        }
+      ],
+      "migrationId": "0191-india-shiv-nadar-university-chennai"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "be-btech-computer-science-engineering",
+    "name": "B.E./B.Tech in Computer Science and Engineering",
+    "shortName": "B.E./B.Tech CSE",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "computer-science-engineering",
+    "aliases": [
+      "Bachelor of Engineering in Computer Science",
+      "Bachelor of Engineering in Computer Science and Engineering",
+      "Bachelor of Technology in Computer Science and Engineering",
+      "BEng Computer Science"
+    ],
+    "displayOrder": 0,
+    "durationYears": 4,
+    "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+    "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+    "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+  },
+  {
+    "slug": "bcom",
+    "name": "Bachelor of Commerce",
+    "shortName": "B.Com",
+    "stream": "economics-commerce",
+    "level": "bachelors",
+    "discipline": "commerce",
+    "aliases": [
+      "BCom",
+      "Bachelor in Commerce"
+    ],
+    "displayOrder": 9,
+    "durationYears": 3,
+    "summary": "The Students Traffic catalogue category for the three-year Bachelor of Commerce. Programmes in this category cover financial accounting, cost and management accounting, business law, taxation, corporate finance, economics and business statistics, and often add auditing, banking or company-secretarial electives. In India the B.Com. runs over six semesters and international entry normally requires a school-leaving qualification with commerce and accountancy subjects and a stated minimum aggregate.",
+    "metaTitle": "B.Com Degrees for International Students",
+    "metaDescription": "Compare B.Com degrees abroad by three-year structure, commerce subject prerequisites, teaching language, annual tuition in USD and the international admission route."
+  },
+  {
+    "slug": "bachelor-economics",
+    "name": "Bachelor's in Economics",
+    "shortName": "Bachelor's Economics",
+    "stream": "economics-commerce",
+    "level": "bachelors",
+    "discipline": "economics",
+    "aliases": [
+      "BA Economics",
+      "BSc Economics"
+    ],
+    "displayOrder": 0,
+    "durationYears": 3,
+    "summary": "Bachelor's in Economics is the Students Traffic catalogue category for undergraduate degrees whose main subject is economics, whether awarded as a B.A., B.Sc. or equivalent. Programmes in this category typically cover microeconomics, macroeconomics, econometrics and quantitative methods, and many require mathematics at school level. Each university's own award title, duration, entry rules and fees are shown on its programme page.",
+    "metaTitle": "Bachelor's in Economics for International Students",
+    "metaDescription": "Compare Bachelor's in Economics degrees abroad by award, duration, teaching language, tuition and the admission route open to international applicants."
+  },
+  {
+    "slug": "be-btech-data-science",
+    "name": "B.E./B.Tech in Data Science",
+    "shortName": "B.E./B.Tech Data Science",
+    "stream": "engineering",
+    "level": "bachelors",
+    "discipline": "data-science",
+    "aliases": [
+      "Bachelor of Data Science",
+      "BSc Data Science"
+    ],
+    "displayOrder": 33,
+    "durationYears": 4,
+    "summary": "Compare undergraduate Data Science degrees abroad by statistics, machine learning, data engineering, applied projects, tuition and admissions. Each university offering keeps its official award title, artificial-intelligence specialisation depth and entry requirements visible before applying.",
+    "metaTitle": "B.E./B.Tech Data Science Abroad | Fees",
+    "metaDescription": "Compare B.E./B.Tech Data Science programmes abroad by curriculum, tuition fees, admissions and practical training."
+  }
+]
