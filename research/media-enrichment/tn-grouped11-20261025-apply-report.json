@@ -1,0 +1,33 @@
+{
+  "appliedAt": "2026-10-24T23:02:44.004Z",
+  "uploads": {
+    "attempted": 6,
+    "succeeded": 6,
+    "failed": 0
+  },
+  "database": {
+    "updated": 3,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "karunya-institute-of-technology-and-sciences",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "queen-marys-college-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
