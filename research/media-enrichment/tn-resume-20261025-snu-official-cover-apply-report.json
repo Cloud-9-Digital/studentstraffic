@@ -1,0 +1,21 @@
+{
+  "appliedAt": "2026-10-24T18:41:25.822Z",
+  "uploads": {
+    "attempted": 2,
+    "succeeded": 2,
+    "failed": 0
+  },
+  "database": {
+    "updated": 1,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "shiv-nadar-university-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

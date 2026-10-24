@@ -34,4 +34,4 @@ BA LL.B: fiveyear duration, fees and August2026 intake verified; English-medium 
 
 ## Media
 
-Mandatory manifest `research/media-enrichment/india-tn-universities-shiv-nadar-university-chennai.json`: official blue logo inspected on white; licensed historical2012 Kalavakkam CSE building photo CC BY-SA3.0 Jeyavelu Sudarshan. Both direct200image responses verified and images inspected. Attribution and historical date required. Parent performs controlled upload with content publication.
+Mandatory manifest `research/media-enrichment/india-tn-universities-shiv-nadar-university-chennai.json`: official blue logo inspected on white; official SNU Chennai campus photograph https://www.snuchennai.edu.in/wp-content/uploads/2024/02/About-1.webp linked from https://www.snuchennai.edu.in/campus-life/ . Cover is720x481, direct200image/webp verified25October2026 and visually inspected: academic building with Shiv Nadar signage, flag, trees and students. This replaces the historical2012 Wikimedia CC BY-SA cover. No open licence claimed for the official university image. Same proposed cover public ID retained; parent performs controlled replacement upload.

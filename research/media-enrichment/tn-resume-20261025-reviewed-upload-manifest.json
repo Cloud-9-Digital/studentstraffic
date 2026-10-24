@@ -50,11 +50,11 @@
         },
         {
           "kind": "cover",
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/The_Department_Of_Computer_Science.jpg",
-          "sourceType": "licensed",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Department_Of_Computer_Science.jpg",
-          "rightsBasis": "Jeyavelu Sudarshan, 11 January 2012, CC BY-SA 3.0, attribution and licence link required. Historical photograph of SSN Computer Science building at Kalavakkam shared campus, now home to SSN School of Engineering under SNU Chennai for 2026 admissions. Visually inspected, 2560x1440 JPEG.",
-          "altText": "Computer Science department building at the Kalavakkam campus, photographed in 2012",
+          "sourceUrl": "https://www.snuchennai.edu.in/wp-content/uploads/2024/02/About-1.webp",
+          "sourceType": "official",
+          "sourcePage": "https://www.snuchennai.edu.in/campus-life/",
+          "rightsBasis": "University-owned website campus photograph, used for institutional identification and campus illustration; no open licence claimed. Linked as About 1 on official SNU Chennai Campus Life page. Direct HTTP 200 image/webp verified on 25 October 2026, 720x481; visually inspected: white academic block with Shiv Nadar signage, Indian flag, tree-lined approach and students. Replaces previous 2012 Wikimedia cover; no CC BY-SA asset used.",
+          "altText": "Academic building and tree-lined approach on the Shiv Nadar University Chennai campus",
           "proposedPublicId": "studentstraffic/universities/shiv-nadar-university-chennai/cover"
         }
       ],
