@@ -1,0 +1,633 @@
+{
+  "countries": [
+    {
+      "slug": "india",
+      "name": "India",
+      "region": "South Asia",
+      "summary": "India's higher-education system is overseen by the Ministry of Education and its statutory regulators - the University Grants Commission for universities and degrees, the All India Council for Technical Education for technical and management programmes, and the National Medical Commission for medical education. International applicants normally enter through an institution's own international-admissions office, through the government's Study in India portal, or through a centrally administered scheme such as DASA for engineering and architecture seats at NITs, IIITs and other centrally funded technical institutes. Entry rules differ by nationality, residency status, the prior qualification held and the discipline chosen.",
+      "whyStudentsChooseIt": "International applicants look at India for English-taught degrees across computing, engineering, management, design, sciences, law and health disciplines, and for a single national application route: the Ministry of Education's Study in India portal issues an SII ID and lets an applicant send one profile to several participating institutes. Government-funded study places also exist through Indian Council for Cultural Relations scholarship schemes, which are applied for through Indian diplomatic missions rather than directly to a university. What an individual applicant can access depends on citizenship, residency status, how the prior qualification is assessed for equivalence, and whether the programme is attached to a national entrance test.",
+      "climate": "Climate varies widely by region, from alpine Himalayan conditions in the north to tropical coastal and semi-arid zones further south, with a June-to-September monsoon across most of the country.",
+      "currencyCode": "INR",
+      "metaTitle": "Study in India: Guide for International Students",
+      "metaDescription": "Regulators, admission routes, entrance tests, student visa and FRRO rules that international applicants should verify before applying to an Indian university."
+    }
+  ],
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate computer science and engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Computer Science & Engineering as part of its School of Computing with specialisations in Artificial Intelligence & Data Science, Animation & Game Design, Cyber Security, and a standalone AI & Data Science degree. The institute is approved by the All India Council for Technical Education (LoA 2018-19, EoA current through 2026-27) and is situated in Chennai, Tamil Nadu.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE programmes abroad, including four-year structure, entry requirements, tuition in INR and international admission routes."
+    },
+    {
+      "slug": "be-btech-information-technology",
+      "name": "B.E./B.Tech in Information Technology",
+      "shortName": "B.E./B.Tech IT",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "information-technology",
+      "aliases": [
+        "Bachelor of Engineering in Information Technology",
+        "Bachelor of Technology in Information Technology",
+        "BEng Information Technology"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate information technology degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Information Technology through its School of Computing with specialisations including Animation & Game Design and Cyber Security. The programme costs INR 3,60,000 per annum (total INR 3,80,000 including exam fees) for the 2026-27 academic session.",
+      "metaTitle": "B.E./B.Tech IT Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech IT programmes abroad, including four-year structure, entry requirements, tuition in INR and international admission routes."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Mechanical Engineering",
+        "Bachelor of Technology in Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate mechanical engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Mechanical Engineering through its School of Mechanical & Construction with departmental specialisations in Design Engineering, Manufacturing Engineering, Thermal Engineering and Industrial Engineering. The institute holds current All India Council for Technical Education (AICTE) approval extending through 2026-27.",
+      "metaTitle": "B.E./B.Tech Mechanical Engineering Degrees: Fees and Admissions",
+      "metaDescription": "Compare B.E./B.Tech Mechanical degrees by tuition, entry requirements, programme length, teaching language and the admission route published by each university."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Electronics and Communication Engineering",
+        "Bachelor of Technology in Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate electronics and communication engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Electronics and Communication Engineering through its School of Electrical & Communication with specialisations in Artificial Intelligence and Data Science, Cyber Security, Embedded Systems and Internet of Things, plus minor degree opportunities in AI/ML, Cyber Security and VLSI Design. The institute holds current AICTE approval extending through 2026-27.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE programmes abroad, including four-year structure, entry requirements, tuition in INR and international admission routes."
+    },
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Civil Engineering",
+        "Bachelor of Technology in Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate civil engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Civil Engineering through its School of Mechanical & Construction with departmental focus areas in Structural Engineering, Geotechnical Engineering, Transportation Engineering and Environmental Engineering. The institute holds current AICTE approval extending through 2026-27.",
+      "metaTitle": "B.E./B.Tech Civil Engineering Degrees: Fees and Admissions",
+      "metaDescription": "Compare B.E./B.Tech Civil degrees by tuition, entry requirements, programme length, teaching language and the admission route published by each university."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Electrical and Electronics Engineering",
+        "Bachelor of Technology in Electrical and Electronics Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 5,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate electrical and electronics engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Electrical and Electronics Engineering through its School of Electrical & Communication with departmental specialisations in Power Systems, Power Electronics, Control & Instrumentation and Smart Grid Technology, plus minor degree opportunities in Computer Systems, VLSI Design and Embedded Systems. The institute holds current AICTE approval extending through 2026-27.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE programmes abroad, including four-year structure, entry requirements, tuition in INR and international admission routes."
+    },
+    {
+      "slug": "be-btech-biomedical-engineering",
+      "name": "B.E./B.Tech in Biomedical Engineering",
+      "shortName": "B.E./B.Tech BME",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "biomedical-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Biomedical Engineering",
+        "Bachelor of Technology in Biomedical Engineering",
+        "BEng Biomedical Engineering"
+      ],
+      "displayOrder": 6,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate biomedical engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Biomedical Engineering through its School of Bio Engineering with departmental focus on Medical Imaging, Biomedical Instrumentation, Biomaterials and Computational Biology. The programme costs INR 3,60,000 per annum (total INR 3,80,000 including exam fees) for the 2026-27 academic session.",
+      "metaTitle": "B.E./B.Tech Biomedical Engineering Degrees: Fees and Admissions",
+      "metaDescription": "Compare B.E./B.Tech BME degrees by tuition, entry requirements, programme length, teaching language and the admission route published by each university."
+    },
+    {
+      "slug": "be-btech-biotechnology",
+      "name": "B.E./B.Tech in Biotechnology",
+      "shortName": "B.E./B.Tech Biotech",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "biotechnology",
+      "aliases": [
+        "Bachelor of Engineering in Biotechnology",
+        "Bachelor of Technology in Biotechnology",
+        "BEng Biotechnology"
+      ],
+      "displayOrder": 7,
+      "durationYears": 4,
+      "summary": "This is the Students Traffic catalogue category for four-year undergraduate biotechnology degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers B.Tech in Biotechnology through its School of Bio Engineering with departmental focus on Genetic Engineering, Bioinformatics, Food Technology and Environmental Biotechnology. The programme costs INR 3,60,000 per annum (total INR 3,80,000 including exam fees) for the 2026-27 academic session.",
+      "metaTitle": "B.E./B.Tech Biotechnology Degrees: Fees and Admissions",
+      "metaDescription": "Compare B.E./B.Tech Biotechnology degrees by tuition, entry requirements, programme length, teaching language and the admission route published by each university."
+    },
+    {
+      "slug": "master-of-computer-application",
+      "name": "Master of Computer Applications",
+      "shortName": "MCA",
+      "stream": "computing",
+      "level": "masters",
+      "discipline": "computer-applications",
+      "aliases": [
+        "MCA (Regular)",
+        "Master in Computer Applications"
+      ],
+      "displayOrder": 8,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year postgraduate computer application degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers MCA through its School of Computing. The programme costs INR 1,42,000 per annum (total INR 1,73,000 including exam fees) for the 2026-27 academic session.",
+      "metaTitle": "Master of Computer Applications Degrees: Fees and Admissions",
+      "metaDescription": "Compare MCA programmes by tuition, entry requirements, programme length and the admission route published by each university."
+    },
+    {
+      "slug": "master-of-business-administration",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "MBA (Regular)",
+        "Post Graduate Diploma in Management"
+      ],
+      "displayOrder": 9,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year full-time management master's degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers MBA through its Department of Management Studies with dual specialisations in Business Analytics and Digital Business. The programme costs INR 1,50,000 per annum (total INR 1,73,000 including exam fees) for the 2026-27 academic session.",
+      "metaTitle": "Master of Business Administration Degrees: Fees and Admissions",
+      "metaDescription": "Compare MBA programmes by tuition, entry requirements, programme length and the admission route published by each university."
+    },
+    {
+      "slug": "master-technology-computer-science-engineering",
+      "name": "M.Tech in Computer Science and Engineering",
+      "shortName": "M.Tech CSE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "M.Tech CS",
+        "M.Tech in Computer Science"
+      ],
+      "displayOrder": 10,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year postgraduate computer science engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers M.Tech in Computer Science and Engineering through its School of Computing with specialisations including Artificial Intelligence and Machine Learning, Cyber Security and Data Science. The institute holds current AICTE approval extending through 2026-27.",
+      "metaTitle": "M.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare M.Tech CSE programmes by tuition, entry requirements, programme length and the admission route published by each university."
+    },
+    {
+      "slug": "master-technology-mechanical-engineering",
+      "name": "M.Tech in Mechanical Engineering",
+      "shortName": "M.Tech Mech",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "M.Tech Mechanical"
+      ],
+      "displayOrder": 11,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year postgraduate mechanical engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers M.Tech in Mechanical Engineering through its School of Mechanical & Construction with specialisations including CAD/CAM/Robotics, Thermal Engineering and Industrial Engineering.",
+      "metaTitle": "M.Tech Mechanical Engineering Degrees: Fees and Admissions",
+      "metaDescription": "Compare M.Tech Mech degrees by tuition, entry requirements, programme length and the admission route published by each university."
+    },
+    {
+      "slug": "master-technology-industrial-safety-and-engineering",
+      "name": "M.Tech in Industrial Safety and Engineering",
+      "shortName": "M.Tech Ind. Safety",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "industrial-engineering",
+      "aliases": [
+        "M.Tech Safety Engineering"
+      ],
+      "displayOrder": 12,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year postgraduate industrial safety and engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers M.Tech in Industrial Safety and Engineering through its Department of Mechanical Engineering with categories for industry-oriented and academic tracks. The programme costs INR 1,00,000 per annum (total INR 1,25,000 including exam fees) for the 2026-27 academic session.",
+      "metaTitle": "M.Tech Industrial Safety Engineering Degrees: Fees and Admissions",
+      "metaDescription": "Compare M.Tech Industrial Safety degrees by tuition, entry requirements, programme length and the admission route published by each university."
+    },
+    {
+      "slug": "master-technology-electronics-communication-engineering",
+      "name": "M.Tech in Electronics and Communication Engineering",
+      "shortName": "M.Tech ECE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "M.Tech VLSI",
+        "M.Tech Communication"
+      ],
+      "displayOrder": 13,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year postgraduate electronics and communication engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers M.Tech in Electronics and Communication Engineering through its School of Electrical & Communication with specialisations in VLSI Design, Power Electronics and Signal Processing.",
+      "metaTitle": "M.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare M.Tech ECE programmes by tuition, entry requirements, programme length and the admission route published by each university."
+    },
+    {
+      "slug": "master-technology-power-systems-engineering",
+      "name": "M.Tech in Power Systems Engineering",
+      "shortName": "M.Tech Power",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "power-systems-engineering",
+      "aliases": [
+        "M.Tech Power Electronics"
+      ],
+      "displayOrder": 14,
+      "durationYears": 2,
+      "summary": "This is the Students Traffic catalogue category for two-year postgraduate power systems and electrical engineering degrees. Vel Tech Rangarajan Dr. Sagunthala R&D Institute offers M.Tech in Power Systems Engineering through its School of Electrical & Communication with focus areas including Smart Grid Technology, Power Electronics and Control Systems.",
+      "metaTitle": "M.Tech Power Systems Degrees for International Students",
+      "metaDescription": "Compare M.Tech Power Systems degrees by tuition, entry requirements, programme length and the admission route published by each university."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "vel-tech-rangarajan-dr-sagunthala-rd-institute",
+      "name": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "type": "Private Self-Financed University",
+      "establishedYear": 1996,
+      "officialWebsite": "https://www.veltech.edu.in",
+      "summary": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology is a private self-financed university in Chennai, Tamil Nadu, established in 1996. The institute offers undergraduate and postgraduate programmes across engineering, technology, management and sciences. It holds approval from the All India Council for Technical Education (LoA from 2018-19 with continuous Extension of Approval through 2026-27) and is affiliated to the Anna University for certain technical programmes. The institute operates three schools - Computing, Bio Engineering, and Electrical & Communication Engineering - along with a School of Mechanical & Construction, a Department of Management Studies, and departments for Sciences and Humanities.",
+      "mediaAttribution": {
+        "logo": "https://www.veltech.edu.in/wp-content/uploads/2026/01/veltech-logo-.png"
+      },
+      "campusLifestyle": "The institute is located in Chennai, Tamil Nadu's capital city on India's southeastern coast. Chennai has a tropical wet and dry climate with hot summers (March to June) reaching up to 45°C and moderate winters (November to February) around 24°C. The northeast monsoon (October to December) contributes approximately 60% of the state's annual rainfall. The institute offers on-campus hostel accommodation in both air-conditioned and non-air-conditioned rooms, along with a central library, laboratories, sports facilities and a research centre.",
+      "cityProfile": "Chennai is India's fourth-largest metropolitan city and the capital of Tamil Nadu. It serves as a major hub for information technology, automotive manufacturing, healthcare and culture on India's Coromandel Coast. The city has extensive rail, road and air connectivity through Chennai International Airport (PNQ). The local education ecosystem includes Anna University affiliations, state government engineering colleges and numerous private institutions.",
+      "practicalExposure": "The institute's Schools of Computing and Bio Engineering provide access to modern laboratory facilities including AI/ML labs, IoT labs, VLSI design centers and biotechnology research equipment. The Department of Management Studies runs industry visits, case study competitions and guest lectures from management professionals. The School of Mechanical & Construction offers CAD/CAM lab access and industrial training programs. Students also benefit from the institute's AICTE IDEA Lab certification and industry partnerships.",
+      "hostelOverview": "On-campus hostel accommodation is available for both UG and PG students in air-conditioned and non-air-conditioned room categories. The PG Hostel A/C rate is approximately INR 90,000 per year and PG Hostel Non A/C around INR 71,000 per year (for reference). The B.Tech hostel fee structure includes a caution deposit of INR 5,000 payable once during admission. Specific rates for UG hostel rooms are not published on the official website; students should verify with the hostel administration office.",
+      "sectionStates": {
+        "decisionSummary": "published",
+        "eligibility": "published",
+        "fees": "published",
+        "admissions": "published",
+        "recognition": "published",
+        "hostel": "published",
+        "funding": "absent"
+      },
+      "scope": "This record covers the main Chennai campus of Vel Tech Rangarajan Dr. Sagunthala R&D Institute only. The institute operates from a single main campus location in Chennai, Tamil Nadu. Programme availability, fee schedules and regulatory submissions are specific to this campus.",
+      "sectionDetails": {
+        "admissionRoutes": [
+          "B.Tech: Through VTUEEE (Vel Tech University Entrance Examination) - online application with multiple phases of examination",
+          "M.Tech / MCA / MBA: Direct admission based on merit and eligibility criteria as published by the institute"
+        ],
+        "admissionContact": {
+          "email": "admission@veltech.edu.in",
+          "applicationPortal": "https://application.veltech.edu.in"
+        },
+        "eligibilityNotes": "B.Tech: Valid score in VTUEEE 2027 (Paper & Pencil Test / Computer Based Test) with minimum qualifications as per Anna University norms. M.Tech: Relevant Bachelor's degree in Engineering/Technology with minimum percentage requirements. MCA: Bachelor's degree in any discipline with Mathematics at 10+2 or Bachelor's level. MBA: Bachelor's degree with minimum 50% aggregate marks. Students appearing for final year examinations can apply provisionally.",
+        "scholarships": [
+          {
+            "name": "Mahatma Gandhi National Merit Scholarship",
+            "description": "Merit-based fee concession available for B.Tech, MCA and MBA programmes based on Class 12 / Bachelor's percentage. Concession tiers range from 75% for above 95% to 10% for 70-79.9% aggregate.",
+            "tiers": [
+              {
+                "percentageAbove": "95%",
+                "concessionPercent": 75
+              },
+              {
+                "percentageAbove": "90%",
+                "concessionPercent": 50
+              },
+              {
+                "percentageAbove": "80%",
+                "concessionPercent": 25
+              },
+              {
+                "percentageAbove": "70%",
+                "concessionPercent": 10
+              }
+            ]
+          }
+        ],
+        "recognitionAuthority": "Approved by All India Council for Technical Education (AICTE). Letter of Approval (LoA) from 2018-19 with Extension of Approval (EoA) through 2026-27. Also recognized under the University Grants Commission.",
+        "programmes": [
+          {
+            "slug": "veltech-btech-cse-ai-data-science",
+            "canonicalCourseSlug": "be-btech-computer-science-engineering",
+            "officialTitle": "B.Tech. Computer Science & Engineering (Artificial Intelligence and Data Science)",
+            "stream": "engineering",
+            "level": "bachelors",
+            "durationYears": 4,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 290000,
+              "totalAnnualAmount": 310000,
+              "feeBreakdown": {
+                "tuitionFee": 290000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 5000
+              },
+              "notes": "B.Tech Computer Science & Engineering (AI and Data Science). Total annual fee of INR 3,10,000 inclusive of academic fee (INR 15,000) and examination fee (INR 5,000). Mahatma Gandhi National Merit Scholarship available: 75% concession for above 95%, 50% for 90-94.9%, 25% for 80-89.9%, 10% for 70-79.9%."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/btech-admissions/",
+            "admissionMethod": "VTUEEE (online application with multiple phases)",
+            "specialisations": [
+              "Artificial Intelligence and Data Science"
+            ]
+          },
+          {
+            "slug": "veltech-btech-cse",
+            "canonicalCourseSlug": "be-btech-computer-science-engineering",
+            "officialTitle": "B.Tech. Computer Science & Engineering",
+            "stream": "engineering",
+            "level": "bachelors",
+            "durationYears": 4,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 310000,
+              "totalAnnualAmount": 330000,
+              "feeBreakdown": {
+                "tuitionFee": 310000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 5000
+              },
+              "notes": "B.Tech Computer Science & Engineering (standard programme). Total annual fee of INR 3,30,000 inclusive of academic and examination fees. Mahatma Gandhi National Merit Scholarship available: 75% concession for above 95%, 50% for 90-94.9%, 25% for 80-89.9%, 10% for 70-79.9%."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/btech-admissions/",
+            "admissionMethod": "VTUEEE (online application with multiple phases)",
+            "specialisations": [
+              "Artificial Intelligence & Machine Learning",
+              "Cyber Security",
+              "Data Science"
+            ]
+          },
+          {
+            "slug": "veltech-btech-it",
+            "canonicalCourseSlug": "be-btech-information-technology",
+            "officialTitle": "B.Tech. Information Technology",
+            "stream": "engineering",
+            "level": "bachelors",
+            "durationYears": 4,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 360000,
+              "totalAnnualAmount": 380000,
+              "feeBreakdown": {
+                "tuitionFee": 360000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 5000
+              },
+              "notes": "B.Tech Information Technology. Total annual fee of INR 3,80,000 inclusive of academic and examination fees. Mahatma Gandhi National Merit Scholarship available: 75% concession for above 95%, 50% for 90-94.9%, 25% for 80-89.9%, 10% for 70-79.9%."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/btech-admissions/",
+            "admissionMethod": "VTUEEE (online application with multiple phases)",
+            "specialisations": [
+              "Animation & Game Design",
+              "Cyber Security"
+            ]
+          },
+          {
+            "slug": "veltech-btech-biomedical-engineering",
+            "canonicalCourseSlug": "be-btech-biomedical-engineering",
+            "officialTitle": "B.Tech. Biomedical Engineering",
+            "stream": "engineering",
+            "level": "bachelors",
+            "durationYears": 4,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 360000,
+              "totalAnnualAmount": 380000,
+              "feeBreakdown": {
+                "tuitionFee": 360000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 5000
+              },
+              "notes": "B.Tech Biomedical Engineering (School of Bio Engineering). Total annual fee of INR 3,80,000 inclusive of academic and examination fees. Mahatma Gandhi National Merit Scholarship available: 75% concession for above 95%, 50% for 90-94.9%, 25% for 80-89.9%, 10% for 70-79.9%."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/btech-admissions/",
+            "admissionMethod": "VTUEEE (online application with multiple phases)",
+            "specialisations": [
+              "Medical Imaging",
+              "Biomedical Instrumentation"
+            ]
+          },
+          {
+            "slug": "veltech-btech-biotechnology",
+            "canonicalCourseSlug": "be-btech-biotechnology",
+            "officialTitle": "B.Tech. Biotechnology",
+            "stream": "engineering",
+            "level": "bachelors",
+            "durationYears": 4,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 360000,
+              "totalAnnualAmount": 380000,
+              "feeBreakdown": {
+                "tuitionFee": 360000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 5000
+              },
+              "notes": "B.Tech Biotechnology (School of Bio Engineering). Total annual fee of INR 3,80,000 inclusive of academic and examination fees. Mahatma Gandhi National Merit Scholarship available: 75% concession for above 95%, 50% for 90-94.9%, 25% for 80-89.9%, 10% for 70-79.9%."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/btech-admissions/",
+            "admissionMethod": "VTUEEE (online application with multiple phases)",
+            "specialisations": [
+              "Genetic Engineering",
+              "Bioinformatics"
+            ]
+          },
+          {
+            "slug": "veltech-mca",
+            "canonicalCourseSlug": "master-of-computer-application",
+            "officialTitle": "Master of Computer Applications (MCA)",
+            "stream": "computing",
+            "level": "masters",
+            "durationYears": 2,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 142000,
+              "totalAnnualAmount": 173000,
+              "feeBreakdown": {
+                "tuitionFee": 142000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 8000
+              },
+              "notes": "MCA. Total annual fee of INR 1,73,000 inclusive of academic and examination fees. Caution deposit of INR 5,000 payable once during admission (refundable at the end of the programme). Application fee of INR 1,000."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/mba-admission/",
+            "admissionMethod": "Direct merit-based admission",
+            "eligibility": "Bachelor's degree in any discipline with Mathematics at 10+2 or Bachelor's level"
+          },
+          {
+            "slug": "veltech-mba",
+            "canonicalCourseSlug": "master-of-business-administration",
+            "officialTitle": "Master of Business Administration (MBA)",
+            "stream": "business",
+            "level": "masters",
+            "durationYears": 2,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 150000,
+              "totalAnnualAmount": 173000,
+              "feeBreakdown": {
+                "tuitionFee": 150000,
+                "academicAndCareerAdvancementFee": 15000,
+                "examinationFee": 8000
+              },
+              "notes": "MBA with dual specialisation in Business Analytics and Digital Business. Total annual fee of INR 1,73,000 inclusive of academic and examination fees. Caution deposit of INR 5,000 payable once during admission (refundable at the end of the programme). PG Hostel A/C: approx. INR 90,000/year; PG Hostel Non A/C: approx. INR 71,000/year."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/mba-admission/",
+            "admissionMethod": "Direct merit-based admission",
+            "eligibility": "Bachelor's degree with minimum 50% aggregate from a recognized university/institution"
+          },
+          {
+            "slug": "veltech-mtech-cse-ai-ml",
+            "canonicalCourseSlug": "master-technology-computer-science-engineering",
+            "officialTitle": "M.Tech. Computer Science and Engineering (AI & ML)",
+            "stream": "engineering",
+            "level": "masters",
+            "durationYears": 2,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 70000,
+              "totalAnnualAmount": 82500,
+              "feeBreakdown": {
+                "tuitionFee": 70000,
+                "examinationFee": 12500
+              },
+              "notes": "M.Tech Computer Science & Engineering with AI & Machine Learning specialisation. Total annual fee of INR 82,500 inclusive of examination fees."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/fee-structure/",
+            "admissionMethod": "Direct merit-based admission",
+            "specialisations": [
+              "AI & Machine Learning"
+            ]
+          },
+          {
+            "slug": "veltech-mtech-cse",
+            "canonicalCourseSlug": "master-technology-computer-science-engineering",
+            "officialTitle": "M.Tech. Computer Science and Engineering",
+            "stream": "engineering",
+            "level": "masters",
+            "durationYears": 2,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 62500,
+              "totalAnnualAmount": 75000,
+              "feeBreakdown": {
+                "tuitionFee": 62500,
+                "examinationFee": 12500
+              },
+              "notes": "M.Tech Computer Science & Engineering (standard). Total annual fee of INR 75,000 inclusive of examination fees."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/fee-structure/",
+            "admissionMethod": "Direct merit-based admission",
+            "specialisations": [
+              "Cyber Security",
+              "Data Science"
+            ]
+          },
+          {
+            "slug": "veltech-mtech-industrial-safety-category-1",
+            "canonicalCourseSlug": "master-technology-industrial-safety-and-engineering",
+            "officialTitle": "M.Tech. Industrial Safety and Engineering (Category 1)",
+            "stream": "engineering",
+            "level": "masters",
+            "durationYears": 2,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 100000,
+              "totalAnnualAmount": 125000,
+              "feeBreakdown": {
+                "tuitionFee": 100000,
+                "examinationFee": 12500
+              },
+              "notes": "M.Tech Industrial Safety and Engineering (Industry-oriented Category 1). Total annual fee of INR 1,25,000 inclusive of examination fees."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/fee-structure/",
+            "admissionMethod": "Direct merit-based admission",
+            "specialisations": [
+              "Industrial Safety",
+              "Engineering"
+            ]
+          },
+          {
+            "slug": "veltech-mtech-industrial-safety-category-2",
+            "canonicalCourseSlug": "master-technology-industrial-safety-and-engineering",
+            "officialTitle": "M.Tech. Industrial Safety and Engineering (Category 2)",
+            "stream": "engineering",
+            "level": "masters",
+            "durationYears": 2,
+            "fee": {
+              "status": "confirmed",
+              "academicYear": "2026-2027",
+              "currencyCode": "INR",
+              "annualTuitionAmount": 82500,
+              "totalAnnualAmount": 95000,
+              "feeBreakdown": {
+                "tuitionFee": 82500,
+                "examinationFee": 12500
+              },
+              "notes": "M.Tech Industrial Safety and Engineering (Academic Category 2). Total annual fee of INR 95,000 inclusive of examination fees."
+            },
+            "officialProgramUrl": "https://www.veltech.edu.in/fee-structure/",
+            "admissionMethod": "Direct merit-based admission",
+            "specialisations": [
+              "Industrial Safety",
+              "Engineering"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

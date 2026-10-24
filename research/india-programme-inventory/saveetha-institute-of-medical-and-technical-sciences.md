@@ -45,3 +45,18 @@ Ledger status: **held**. No migration was reserved.
 ## What unblocks packaging
 
 A SIMATS document (regulations, academic calendar 2026-27, or Study in India listing) that states the medium of instruction and the 2026-27 start dates. With that, about 70 programmes have exact canonical matches and Grade A fee evidence (domestic INR headline plus USD `additionalFees`). MBBS, BDS and the 18 MD/MS specialities also pass the regulator gate.
+
+## Targeted resumption — 2026-10-24 (codex-india-20261024)
+
+- Corrects the previous blanket teaching-language hold: https://scot.saveetha.com/admissions explicitly confirms English instruction for Bachelor of Occupational Therapy (60% PCB; entrance examination and interview; age 17; four academic years plus one internship year). It does not establish the MOT medium or current intake month.
+- https://www.ssm.saveetha.com/s/academic-schedule-19-20.pdf confirms English for MBA under 2015-16 regulations, but its 2019-20 calendar cannot establish a current intake. The fee conflict remains unresolved.
+- https://www.scpt.saveetha.com/news-events labels an ACADEMIC CALENDAR 2026-2027, but its only iframe is a Google calendar for saveetha.scpt@gmail.com; the accessible page exposes no dated first-year commencement event. The label alone is not intake evidence.
+- The MBBS/MDMS reporting forms ask the applicant for the medium of the prior qualifying examination; they are not evidence for the programme teaching language. Their displayed NEET-2024 fields also cannot establish current intake timing.
+- Targeted primary-domain queries for 2026 commencement and medium of instruction did not resolve the remaining programme-level gaps. This retry did not assemble a complete publishable programme bundle. The existing 2024-25 MBA calendar may establish a historical September baseline if directly rechecked and clearly dated; absence of a 2026 commencement alone must not hold a programme with a valid recent baseline. Current programme/regulatory scope and the remaining language/portfolio gaps still require follow-up. Existing regulator and portfolio holds remain pending authoritative resolution.
+- Status: held. No migration or media manifest reserved; scoped content validation not applicable because there is no executable payload. No database access or publication performed.
+
+### Additional discovery after expanded-source instruction
+
+- https://sites.google.com/saveetha.com/sacthe-simats/programmes/mhpepgdhpe-programmes is a Saveetha-domain Google Site for SaCTHE. It advertises MHPE/PGDHPE and an October 2026–October 2027 calendar; full award title, formal eligibility, teaching language, fees and foreign-access rules were not established. These are new discovery candidates beyond the inherited 175-row inventory and need confirmation before claiming the inventory is institution-wide complete. They were not packaged.
+- Independent search also exposes Saveetha Engineering College (saveetha.ac.in) and Saveetha Amaravati calendars; these are distinct institutions and cannot supply SIMATS Tamil Nadu dates.
+- The blanket old language assertion is superseded for BOT and MBA. An old MBA calendar can be a precisely dated historical intake baseline under the parent’s clarification; do not impose an arbitrary 2026-only gate. No second current regulator recognition for MBA was verified in this targeted resumption (inherited AICTE EOA was 2024-25), and no standalone SIMATS migration was reserved.

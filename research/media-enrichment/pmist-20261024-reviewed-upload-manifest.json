@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-24",
+  "entries": [
+    {
+      "universitySlug": "periyar-maniammai-university",
+      "universityName": "Periyar Maniammai Institute of Science & Technology",
+      "sourceBatch": "codex-tn-batch2-20261024",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://pmu.edu/assets/img/pmu-logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset, used solely to identify and illustrate PMIST in its factual university profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/periyar-maniammai-university/logo-20261024",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://pmu.edu/assets-v2/img/index/main-slider-banner-1.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset, used solely to identify and illustrate PMIST in its factual university profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/periyar-maniammai-university/cover-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "PMIST students outside the Periyar Knowledge Centre at the Vallam campus"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,976 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mba-finance",
+      "name": "MBA in Finance",
+      "shortName": "MBA Finance",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "finance",
+      "aliases": [
+        "Master of Business Administration in Finance"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "An MBA in Finance combines general management study with financial decision-making. Programmes cover accounting, corporate finance, investment analysis, financial markets, risk management and business strategy, often with a summer internship and a final project. Entry usually requires a bachelor's degree, while subject prerequisites, entrance tests and work-experience requirements vary. Graduates may pursue finance and management roles or further study; professional licensing and employment requirements depend on the jurisdiction and employer.",
+      "metaTitle": "MBA Finance Programmes: Entry, Fees and Study Options",
+      "metaDescription": "Compare MBA Finance programmes by entry requirements, curriculum, practical training, tuition, duration and admission route for your qualifications."
+    },
+    {
+      "slug": "integrated-mtech-biotechnology",
+      "name": "Integrated M.Tech in Biotechnology",
+      "shortName": "Integrated M.Tech Biotechnology",
+      "stream": "engineering",
+      "level": "integrated-masters",
+      "discipline": "biotechnology-engineering",
+      "aliases": [
+        "Integrated Master of Technology in Biotechnology",
+        "Six-year Integrated M.Tech Biotechnology"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "An integrated M.Tech in Biotechnology combines undergraduate engineering foundations with advanced biotechnology study in a continuous school-entry route. Coursework can include mathematics, chemistry, molecular biology, bioprocess engineering, genetic engineering and laboratory methods, followed by advanced projects or research. Applicants enter after upper-secondary education with the required science subjects. Duration, intermediate awards and progression rules vary by institution; compare the full integrated structure before applying.",
+      "metaTitle": "Integrated M.Tech Biotechnology: Entry and Study Options",
+      "metaDescription": "Compare Integrated M.Tech Biotechnology programmes by school-entry subjects, degree structure, teaching language, duration, practical study and tuition."
+    },
+    {
+      "slug": "integrated-mtech-computer-science-engineering",
+      "name": "Integrated M.Tech in Computer Science and Engineering",
+      "shortName": "Integrated M.Tech CSE",
+      "stream": "engineering",
+      "level": "integrated-masters",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Integrated Master of Technology in Computer Science and Engineering",
+        "Six-year Integrated M.Tech CSE"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "An integrated M.Tech in Computer Science and Engineering combines undergraduate computing and engineering foundations with advanced postgraduate study in one school-entry route. Programmes can cover programming, algorithms, computer systems, networks, software engineering and specialised computing topics, with project or research work. Entry follows upper-secondary education with the required mathematics and science subjects. Duration, intermediate awards and progression requirements vary, so the full integrated route should be compared with separate bachelor and master degrees.",
+      "metaTitle": "Integrated M.Tech CSE: Entry and Study Options",
+      "metaDescription": "Compare Integrated M.Tech CSE programmes by school-entry subjects, degree structure, teaching language, duration, practical study and tuition."
+    },
+    {
+      "slug": "integrated-mtech-geoinformatics",
+      "name": "Integrated M.Tech in Geoinformatics",
+      "shortName": "Integrated M.Tech Geoinformatics",
+      "stream": "engineering",
+      "level": "integrated-masters",
+      "discipline": "geoinformatics",
+      "aliases": [
+        "Integrated Master of Technology in Geoinformatics",
+        "Integrated M.Tech Geological Technology and Geoinformatics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "An integrated M.Tech in Geoinformatics combines undergraduate scientific and engineering foundations with advanced study of spatial data, geographic information systems and remote sensing. Programmes may emphasise geological technology, mapping, satellite-image interpretation, environmental applications and research projects. Entry is after upper-secondary education with prescribed mathematics and science subjects. Duration, intermediate awards and progression rules depend on the institution; this school-entry route is distinct from a postgraduate M.Tech requiring a prior degree.",
+      "metaTitle": "Integrated M.Tech Geoinformatics: Entry and Study Options",
+      "metaDescription": "Compare Integrated M.Tech Geoinformatics programmes by school-entry subjects, degree structure, teaching language, duration, practical study and tuition."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "bharathidasan-university",
+      "name": "Bharathidasan University",
+      "city": "Tiruchirappalli",
+      "type": "Public",
+      "establishedYear": 1982,
+      "officialWebsite": "https://www.bdu.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Bharathidasan University is a public state university established in 1982 in Tiruchirappalli, Tamil Nadu. Its Palkalaiperur and Khajamalai campuses teach postgraduate and integrated degrees across science, engineering, management, social sciences, humanities and education, alongside vocational and specialist study.",
+      "campusLifestyle": "Palkalaiperur houses the central library, sports complex, bank, post office, canteen and health centre. Khajamalai hosts selected departments and entrepreneurship activities. Library services include INFLIBNET, DELNET, electronic resources and a 24-hour Garden Library; sports facilities include an indoor stadium, gymnasium, yoga centre and 400-metre athletics track.",
+      "cityProfile": "Bharathidasan University is based in Tiruchirappalli, Tamil Nadu. Its Palkalaiperur main campus is on the Tiruchirappalli–Pudukkottai–Rameswaram highway; a second campus is at Khajamalai in the city. Department and accommodation allocation matter when planning the daily journey between university facilities.",
+      "practicalExposure": "The Financial Management MBA includes at least four weeks of institutional training after semester two and a final-semester project. Its Centre for Financial Markets works in association with NSE Academy Limited, with finance-firm case analysis and project reports built into the curriculum. Integrated M.Tech students share a first-year curriculum before their academic work is administered by the relevant specialist department. The university also operates a Placement and Training Cell that organises job fairs.",
+      "hostelOverview": "Hostels are located at Palkalaiperur and Khajamalai, including separate accommodation for men, women and research scholars. Eligibility is limited to students residing at least 40 kilometres from the university. Facilities include Wi-Fi, kitchens and dining rooms, water supply, reading rooms and recreation areas. Current room and mess charges need a hostel quotation before budgeting.",
+      "dietarySupport": "University hostels have kitchens and dining facilities, and the Palkalaiperur campus has a canteen. Discuss required meals and any dietary restrictions with the hostel before taking a place; current mess charges need a separate accommodation quotation.",
+      "safetyOverview": "An Anti-Ragging Cell addresses ragging, while the anti-sexual-harassment committee and Students Affairs Cell handle related complaints and grievances. The main campus includes a health centre. These are named campus services, rather than a guarantee about personal safety.",
+      "studentSupport": "The International Students Cell handles overseas admission categories and qualification assessment. The Centre for Differently Abled Persons supports disability-specific study routes, and the university runs student-affairs and grievance services. Students Traffic can help match qualifications, programme requirements and the appropriate application route.",
+      "whyChoose": [
+        "A state university with university-department study across Palkalaiperur and Khajamalai campuses.",
+        "English-medium Financial Management MBA with institutional training and a final-semester project.",
+        "Integrated M.Tech options admit after Plus Two, with subject-specific eligibility and an English-medium route."
+      ],
+      "thingsToConsider": [
+        "Integrated M.Tech programmes take six years from Plus Two; they are different entry routes from postgraduate M.Tech degrees.",
+        "The hostel eligibility rule requires residence at least 40 kilometres from the university.",
+        "Foreign-national tuition follows a separate USD policy; Indian admission totals do not represent an international tuition quote.",
+        "The usual July intake does not establish next-cycle application or reporting dates."
+      ],
+      "bestFitFor": [
+        "Commerce graduates seeking the Financial Management MBA with an accountancy background.",
+        "School graduates meeting the specific science-subject requirements for an integrated M.Tech.",
+        "Applicants who want university-department study and can plan around department and campus allocation."
+      ],
+      "industryPartners": [
+        "NSE Academy Limited — association with the Centre for Financial Markets"
+      ],
+      "recognitionBadges": [
+        "UGC — State University listed in the consolidated universities register",
+        "UGC — included under Section 12(B), as listed in the state universities register"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated universities register, entry 792",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "UGC Section 12(B) state universities register, entry 144",
+          "url": "https://www.ugc.gov.in/oldpdf/State%20University/List%20of%20State%20Universities%20which%20are%20included%20under%20Section%2012_B_%20of%20the%20UGC%20Act%2C%201956%20_As%20on%2011-09-2015.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Bharathidasan University a public university?",
+          "answer": "Bharathidasan University is a Tamil Nadu state university established in 1982. The UGC consolidated register lists it at Palkalaiperur, Tiruchirappalli; its university departments are separate from the colleges affiliated to it."
+        },
+        {
+          "question": "Which campus will I study at?",
+          "answer": "The university operates its main Palkalaiperur campus and the Khajamalai city campus. Palkalaiperur contains the central library, sports complex, health centre and administrative buildings; department and hostel allocation determine your daily campus."
+        },
+        {
+          "question": "Are the programmes taught in English?",
+          "answer": "The Financial Management MBA regulations specify English. The integrated M.Tech programmes have English and Tamil options; the offerings shown here cover English medium only. Confirm the English class allocation with the department when accepting an integrated-programme place."
+        },
+        {
+          "question": "Can I enter an integrated M.Tech after school?",
+          "answer": "The six-year integrated programmes admit after Plus Two or equivalent, with subjects specified separately for Biotechnology, Computer Science and Engineering, and Geological Technology and Geoinformatics. The university describes entrance-based selection for integrated programmes; this is a longer route than a two-year postgraduate M.Tech after a prior degree."
+        },
+        {
+          "question": "What does the Financial Management MBA require?",
+          "answer": "For 2026-27, eligible qualifications include B.Com., B.B.A., Corporate Secretaryship, Bank Management and related Commerce degrees, with an Accountancy course and at least 50% under Part III. Selection gives equal weight to Part III marks and the entrance test. Valid scores in the tests named in the prospectus allow entrance-test exemption."
+        },
+        {
+          "question": "How much is tuition for Indian students?",
+          "answer": "The 2026-27 tuition for the Financial Management MBA and the integrated M.Tech options shown here is INR 20,000 per semester. Two semesters therefore carry INR 40,000 tuition, with laboratory and university charges where applicable. Admission totals vary by programme and prior board or university; accommodation is additional."
+        },
+        {
+          "question": "Do foreign students pay the same amount?",
+          "answer": "Foreign-student tuition follows a separate USD policy, with different treatment for developed and other countries. Its outside-India qualification column also includes recognition charges. Obtain an individual international fee assessment rather than treating an Indian-student admission total as your foreign-national tuition."
+        },
+        {
+          "question": "How do I apply to a university department?",
+          "answer": "Use the regular University Departments admissions portal and select the exact programme. The general MBA, Logistics and Supply Chain Management MBA, and International Business MBA use Tamil Nadu MBA/MCA counselling instead; Financial Management has its own department selection rules. Students Traffic can help identify the route for your qualification."
+        },
+        {
+          "question": "When does the academic year begin?",
+          "answer": "Applications usually open around May and June, followed by classes in July. That is a usual annual pattern. The next admission cycle needs its own notification before an application deadline or reporting date can be relied on."
+        },
+        {
+          "question": "Can international and NRI students apply?",
+          "answer": "The International Students Cell covers foreign passport holders, NRIs educated abroad and qualifying NRI-sponsored students. It describes postgraduate and integrated programmes and assesses overseas qualifications. Category-specific admission, fees and document requirements need confirmation for the intended programme."
+        },
+        {
+          "question": "Is hostel accommodation available?",
+          "answer": "Hostels operate across Palkalaiperur and Khajamalai, with separate accommodation for men and women and dedicated research-scholar hostels. Hostel eligibility is limited to students living at least 40 kilometres away. Rooms have Wi-Fi, dining facilities and reading or recreation spaces; a current accommodation quotation is needed."
+        },
+        {
+          "question": "Does the MBA include practical training?",
+          "answer": "The Financial Management MBA requires at least four weeks of institutional training after semester two and a final-semester project. The regulations describe work in finance firms and a Centre for Financial Markets associated with NSE Academy Limited. These are curriculum features and do not promise employment or a particular salary."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "2026-27 regular admissions prospectus",
+          "url": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "International Students Cell",
+          "url": "https://www.bdu.ac.in/cells/international-students-cell/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "MBA Financial Management regulations",
+          "url": "https://www.bdu.ac.in/schools/business-studies/commerce-and-financial-studies/docs/syllabi/MBA-Financial-Management-2024-2025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Centre for Engineering and Technology",
+          "url": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "UGC universities register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "UGC Section 12(B) register",
+          "url": "https://www.ugc.gov.in/oldpdf/State%20University/List%20of%20State%20Universities%20which%20are%20included%20under%20Section%2012_B_%20of%20the%20UGC%20Act%2C%201956%20_As%20on%2011-09-2015.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-24"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "University departments and centres at Palkalaiperur and Khajamalai; affiliated colleges, distance/online education and Ph.D. excluded. Only verified English-medium programmes are packaged; other regular programmes remain in the full inventory with exact holds.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "research_ready"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Bharathidasan University eligibility",
+            "capture": [
+              "intended programme",
+              "qualifying subjects and marks",
+              "nationality and prior board or university"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my Bharathidasan University budget",
+            "capture": [
+              "programme",
+              "fee category",
+              "hostel needs"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my Bharathidasan application",
+            "capture": [
+              "programme",
+              "admission cycle",
+              "document readiness"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "bdu-mba-financial-management",
+          "canonicalCourseSlug": "mba-finance",
+          "officialTitle": "M.B.A. Financial Management",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27 onwards",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 40000,
+            "verifiedAt": "2026-10-24",
+            "notes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 28,110 for BDU graduates and INR 28,860 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote."
+          },
+          "officialProgramUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the programme-specific qualifications",
+              "Foreign passport holders, NRIs educated abroad and eligible NRI-sponsored students through the International Students Cell"
+            ],
+            "restrictions": [
+              "International qualifications and admission category need assessment by the International Students Cell.",
+              "The qualifying transcript must meet the current accountancy and Part III marks requirements."
+            ],
+            "notes": "The international route covers university postgraduate and integrated programmes; an offer remains subject to academic assessment.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/"
+          },
+          "admissionsContent": {
+            "overview": "M.B.A. Financial Management at Bharathidasan University is an on-campus programme in Tiruchirappalli. Four semesters and 124 credits, including at least four weeks of summer institutional training after semester 2 and a final-semester project.",
+            "eligibility": {
+              "intro": "The university’s 2026-27 regular admissions prospectus sets the following programme-specific qualification requirements.",
+              "items": [
+                "B.Com., B.B.A., B.A. Corporate Secretaryship, Bank Management, Commerce or a related discipline",
+                "At least one Accountancy course and 50% aggregate under Part III, as specified for 2026-27"
+              ]
+            },
+            "applicationSteps": [
+              "Select this programme in the University Departments admissions portal and read its eligibility and fee particulars.",
+              "Submit the online application with academic qualifications and the requested supporting documents.",
+              "Complete the department selection process; ranking gives equal weight to the qualifying Part III marks and entrance test, with valid TANCET/GMAT/MAT/CAT/GATE scores allowing entrance-test exemption.",
+              "For a foreign or NRI-category application, have the International Students Cell assess the qualifying certificates and admission route before making fee or travel arrangements."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree certificate and Part III marks statement",
+                "Original academic certificates for admission assessment"
+              ],
+              "application": [
+                "Completed programme application and payment record",
+                "Passport and relevant foreign/NRI-category evidence for the international route"
+              ]
+            },
+            "deadlinesNote": "Admissions usually begin around May/June, with classes in July. This is the usual annual pattern, not an open 2027 application window; new-cycle dates need a separate notice."
+          },
+          "medium": "English",
+          "mediumNote": "English is the teaching language for this full-time on-campus MBA under the regulations effective from 2024-25.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 28,110 for BDU graduates and INR 28,860 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1–2",
+              "language": "English",
+              "details": "Four semesters and 124 credits, including at least four weeks of summer institutional training after semester 2 and a final-semester project."
+            }
+          ]
+        },
+        {
+          "slug": "bdu-integrated-mtech-biotechnology-english",
+          "canonicalCourseSlug": "integrated-mtech-biotechnology",
+          "officialTitle": "M.Tech. Biotechnology (Six-year Integrated, English-medium option)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27 onwards",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 40000,
+            "verifiedAt": "2026-10-24",
+            "notes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 35,210 for Tamil Nadu State Board entrants and INR 35,960 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote."
+          },
+          "officialProgramUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the programme-specific qualifications",
+              "Foreign passport holders, NRIs educated abroad and eligible NRI-sponsored students through the International Students Cell"
+            ],
+            "restrictions": [
+              "International qualifications and admission category need assessment by the International Students Cell.",
+              "This record covers the English-medium option only."
+            ],
+            "notes": "The international route covers university postgraduate and integrated programmes; an offer remains subject to academic assessment.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Biotechnology (Six-year Integrated, English-medium option) at Bharathidasan University is an on-campus programme in Tiruchirappalli. Six-year integrated degree; the first-year curriculum is administered centrally and subsequent study by the Department of Biotechnology.",
+            "eligibility": {
+              "intro": "The university’s 2026-27 regular admissions prospectus sets the following programme-specific qualification requirements.",
+              "items": [
+                "Plus Two or equivalent with Mathematics, Physics, Chemistry and Biology (Botany / Zoology)"
+              ]
+            },
+            "applicationSteps": [
+              "Select this programme in the University Departments admissions portal and read its eligibility and fee particulars.",
+              "Submit the online application with academic qualifications and the requested supporting documents.",
+              "Complete the department selection process; the International Students Cell also describes an entrance examination for integrated programmes.",
+              "For a foreign or NRI-category application, have the International Students Cell assess the qualifying certificates and admission route before making fee or travel arrangements."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Plus Two certificate and subject-wise mark statement",
+                "Original academic certificates for admission assessment"
+              ],
+              "application": [
+                "Completed programme application and payment record",
+                "Passport and relevant foreign/NRI-category evidence for the international route"
+              ]
+            },
+            "deadlinesNote": "Admissions usually begin around May/June, with classes in July. This is the usual annual pattern, not an open 2027 application window; new-cycle dates need a separate notice."
+          },
+          "medium": "English",
+          "mediumNote": "This offering covers the English-medium option. The Centre also lists Tamil medium; confirm the English class allocation when accepting a place.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 35,210 for Tamil Nadu State Board entrants and INR 35,960 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1–6",
+              "language": "English",
+              "details": "Six-year integrated degree; the first-year curriculum is administered centrally and subsequent study by the Department of Biotechnology."
+            }
+          ]
+        },
+        {
+          "slug": "bdu-integrated-mtech-cse-english",
+          "canonicalCourseSlug": "integrated-mtech-computer-science-engineering",
+          "officialTitle": "M.Tech. Computer Science & Engineering (Six-year Integrated, English-medium option)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27 onwards",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 40000,
+            "verifiedAt": "2026-10-24",
+            "notes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 36,210 for Tamil Nadu State Board entrants and INR 36,960 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote."
+          },
+          "officialProgramUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the programme-specific qualifications",
+              "Foreign passport holders, NRIs educated abroad and eligible NRI-sponsored students through the International Students Cell"
+            ],
+            "restrictions": [
+              "International qualifications and admission category need assessment by the International Students Cell.",
+              "This record covers the English-medium option only."
+            ],
+            "notes": "The international route covers university postgraduate and integrated programmes; an offer remains subject to academic assessment.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Computer Science & Engineering (Six-year Integrated, English-medium option) at Bharathidasan University is an on-campus programme in Tiruchirappalli. Six-year integrated degree; common first-year curriculum followed by study administered by the Computer Science and Engineering department.",
+            "eligibility": {
+              "intro": "The university’s 2026-27 regular admissions prospectus sets the following programme-specific qualification requirements.",
+              "items": [
+                "Plus Two or equivalent with Mathematics, Physics, Chemistry and Computer Science"
+              ]
+            },
+            "applicationSteps": [
+              "Select this programme in the University Departments admissions portal and read its eligibility and fee particulars.",
+              "Submit the online application with academic qualifications and the requested supporting documents.",
+              "Complete the department selection process; the International Students Cell also describes an entrance examination for integrated programmes.",
+              "For a foreign or NRI-category application, have the International Students Cell assess the qualifying certificates and admission route before making fee or travel arrangements."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Plus Two certificate and subject-wise mark statement",
+                "Original academic certificates for admission assessment"
+              ],
+              "application": [
+                "Completed programme application and payment record",
+                "Passport and relevant foreign/NRI-category evidence for the international route"
+              ]
+            },
+            "deadlinesNote": "Admissions usually begin around May/June, with classes in July. This is the usual annual pattern, not an open 2027 application window; new-cycle dates need a separate notice."
+          },
+          "medium": "English",
+          "mediumNote": "This offering covers the English-medium option. The Centre also lists Tamil medium; confirm the English class allocation when accepting a place.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 36,210 for Tamil Nadu State Board entrants and INR 36,960 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1–6",
+              "language": "English",
+              "details": "Six-year integrated degree; common first-year curriculum followed by study administered by the Computer Science and Engineering department."
+            }
+          ]
+        },
+        {
+          "slug": "bdu-integrated-mtech-geoinformatics-english",
+          "canonicalCourseSlug": "integrated-mtech-geoinformatics",
+          "officialTitle": "M.Tech. Geological Technology & Geoinformatics (Six-year Integrated, English-medium option)",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026-27 onwards",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 40000,
+            "verifiedAt": "2026-10-24",
+            "notes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 34,710 for Tamil Nadu State Board entrants and INR 35,460 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote."
+          },
+          "officialProgramUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": [
+              "Indian applicants meeting the programme-specific qualifications",
+              "Foreign passport holders, NRIs educated abroad and eligible NRI-sponsored students through the International Students Cell"
+            ],
+            "restrictions": [
+              "International qualifications and admission category need assessment by the International Students Cell.",
+              "This record covers the English-medium option only."
+            ],
+            "notes": "The international route covers university postgraduate and integrated programmes; an offer remains subject to academic assessment.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Geological Technology & Geoinformatics (Six-year Integrated, English-medium option) at Bharathidasan University is an on-campus programme in Tiruchirappalli. Six-year integrated degree; common first-year curriculum followed by study administered by the Department of Remote Sensing.",
+            "eligibility": {
+              "intro": "The university’s 2026-27 regular admissions prospectus sets the following programme-specific qualification requirements.",
+              "items": [
+                "Plus Two or equivalent with Mathematics, Physics, Chemistry, Biology and Computer Science as listed in the 2026-27 prospectus"
+              ]
+            },
+            "applicationSteps": [
+              "Select this programme in the University Departments admissions portal and read its eligibility and fee particulars.",
+              "Submit the online application with academic qualifications and the requested supporting documents.",
+              "Complete the department selection process; the International Students Cell also describes an entrance examination for integrated programmes.",
+              "For a foreign or NRI-category application, have the International Students Cell assess the qualifying certificates and admission route before making fee or travel arrangements."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Plus Two certificate and subject-wise mark statement",
+                "Original academic certificates for admission assessment"
+              ],
+              "application": [
+                "Completed programme application and payment record",
+                "Passport and relevant foreign/NRI-category evidence for the international route"
+              ]
+            },
+            "deadlinesNote": "Admissions usually begin around May/June, with classes in July. This is the usual annual pattern, not an open 2027 application window; new-cycle dates need a separate notice."
+          },
+          "medium": "English",
+          "mediumNote": "This offering covers the English-medium option. The Centre also lists Tamil medium; confirm the English class allocation when accepting a place.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 34,710 for Tamil Nadu State Board entrants and INR 35,460 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1–6",
+              "language": "English",
+              "details": "Six-year integrated degree; common first-year curriculum followed by study administered by the Department of Remote Sensing."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "eligibility",
+      "claimText": "2026-27 prospectus eligibility: B.Com., B.B.A., B.A. Corporate Secretaryship, Bank Management, Commerce or a related discipline; At least one Accountancy course and 50% aggregate under Part III, as specified for 2026-27",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-mba-financial-management",
+      "internalNotes": "The 2026-27 cycle-specific prospectus is used for admission eligibility; the 2024-25 MBA syllabus has an older stricter two-accountancy-course plus computer-course formulation. Programme transcript assessment remains necessary."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "admissions",
+      "claimText": "University Departments admission portal accepts regular programme applications. MBA Financial Management ranking is 50% eligible Part III marks and 50% entrance test; valid TANCET-2026/GMAT/MAT/CAT/GATE scores exempt the entrance test.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-mba-financial-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "intake",
+      "claimText": "International Students Cell: admissions usually begin around May/June and classes commence by July for beginning of the academic year. Published as July usual intake, not a current application deadline.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-mba-financial-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "fee",
+      "claimText": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 28,110 for BDU graduates and INR 28,860 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-mba-financial-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "medium",
+      "claimText": "Regulations effective 2024-25 onward state Medium of Instruction: English; full-time regular on-campus MBA Financial Management.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/schools/business-studies/commerce-and-financial-studies/docs/syllabi/MBA-Financial-Management-2024-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-mba-financial-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "teachingPhases",
+      "claimText": "Four semesters and 124 credits, including at least four weeks of summer institutional training after semester 2 and a final-semester project.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/schools/business-studies/commerce-and-financial-studies/docs/syllabi/MBA-Financial-Management-2024-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-mba-financial-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "eligibility",
+      "claimText": "2026-27 prospectus eligibility: Plus Two or equivalent with Mathematics, Physics, Chemistry and Biology (Botany / Zoology)",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-biotechnology-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "admissions",
+      "claimText": "University Departments admission portal accepts regular programme applications. Integrated programme entry is after Plus Two; International Students Cell identifies entrance examination and minimum qualifying marks for integrated programmes.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-biotechnology-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "intake",
+      "claimText": "International Students Cell: admissions usually begin around May/June and classes commence by July for beginning of the academic year. Published as July usual intake, not a current application deadline.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-biotechnology-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "fee",
+      "claimText": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 35,210 for Tamil Nadu State Board entrants and INR 35,960 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-biotechnology-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "medium",
+      "claimText": "Centre for Engineering and Technology explicitly states integrated M.Tech programmes are offered in both Tamil and English medium. Only the English-medium option is packaged; Tamil is a separate held option.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-biotechnology-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "teachingPhases",
+      "claimText": "Six-year integrated degree; the first-year curriculum is administered centrally and subsequent study by the Department of Biotechnology.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-biotechnology-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "eligibility",
+      "claimText": "2026-27 prospectus eligibility: Plus Two or equivalent with Mathematics, Physics, Chemistry and Computer Science",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-cse-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "admissions",
+      "claimText": "University Departments admission portal accepts regular programme applications. Integrated programme entry is after Plus Two; International Students Cell identifies entrance examination and minimum qualifying marks for integrated programmes.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-cse-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "intake",
+      "claimText": "International Students Cell: admissions usually begin around May/June and classes commence by July for beginning of the academic year. Published as July usual intake, not a current application deadline.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-cse-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "fee",
+      "claimText": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 36,210 for Tamil Nadu State Board entrants and INR 36,960 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-cse-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "medium",
+      "claimText": "Centre for Engineering and Technology explicitly states integrated M.Tech programmes are offered in both Tamil and English medium. Only the English-medium option is packaged; Tamil is a separate held option.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-cse-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "teachingPhases",
+      "claimText": "Six-year integrated degree; common first-year curriculum followed by study administered by the Computer Science and Engineering department.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-cse-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "eligibility",
+      "claimText": "2026-27 prospectus eligibility: Plus Two or equivalent with Mathematics, Physics, Chemistry, Biology and Computer Science as listed in the 2026-27 prospectus",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-geoinformatics-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "admissions",
+      "claimText": "University Departments admission portal accepts regular programme applications. Integrated programme entry is after Plus Two; International Students Cell identifies entrance examination and minimum qualifying marks for integrated programmes.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-geoinformatics-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "intake",
+      "claimText": "International Students Cell: admissions usually begin around May/June and classes commence by July for beginning of the academic year. Published as July usual intake, not a current application deadline.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/cells/international-students-cell/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-geoinformatics-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "fee",
+      "claimText": "2026-27 Indian-student tuition: INR 20,000 per semester, equivalent to INR 40,000 across two semesters. First-semester admission total is INR 34,710 for Tamil Nadu State Board entrants and INR 35,460 for the within-India/Sri Lanka other-board or university category; totals include tuition and listed compulsory charges. Later semester charges and accommodation are separate. Foreign-national tuition follows a separate USD policy and requires a category-specific quotation; the outside-India qualification column is not a foreign-national tuition quote.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-geoinformatics-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "medium",
+      "claimText": "Centre for Engineering and Technology explicitly states integrated M.Tech programmes are offered in both Tamil and English medium. Only the English-medium option is packaged; Tamil is a separate held option.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-geoinformatics-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "teachingPhases",
+      "claimText": "Six-year integrated degree; common first-year curriculum followed by study administered by the Department of Remote Sensing.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/centers/engineering-and-technology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "bdu-integrated-mtech-geoinformatics-english"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "identity",
+      "claimText": "Established February 1982. Palkalaiperur main campus and Khajamalai city campus; university departments teach across sciences, management, humanities, engineering and education.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "campusLifestyle",
+      "claimText": "Palkalaiperur houses the central library, sports complex, bank, post office, canteen and health centre. Khajamalai hosts selected departments and entrepreneurship activities. Library services include INFLIBNET, DELNET, electronic resources and a 24-hour Garden Library; sports facilities include an indoor stadium, gymnasium, yoga centre and 400-metre athletics track.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "studentLiving",
+      "claimText": "Hostels are located at Palkalaiperur and Khajamalai, including separate accommodation for men, women and research scholars. Eligibility is limited to students residing at least 40 kilometres from the university. Facilities include Wi-Fi, kitchens and dining rooms, water supply, reading rooms and recreation areas. Current room and mess charges need a hostel quotation before budgeting. University hostels have kitchens and dining facilities, and the Palkalaiperur campus has a canteen. Discuss required meals and any dietary restrictions with the hostel before taking a place; current mess charges need a separate accommodation quotation.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "studentSupport",
+      "claimText": "The International Students Cell handles overseas admission categories and qualification assessment. The Centre for Differently Abled Persons supports disability-specific study routes, and the university runs student-affairs and grievance services. Students Traffic can help match qualifications, programme requirements and the appropriate application route.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "safetyOverview",
+      "claimText": "An Anti-Ragging Cell addresses ragging, while the anti-sexual-harassment committee and Students Affairs Cell handle related complaints and grievances. The main campus includes a health centre. These are named campus services, rather than a guarantee about personal safety.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://oms.bdu.ac.in/admissions/assets/docs/bdu-regular-admissions-2026-2027-prospectus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "practicalExposure",
+      "claimText": "The Financial Management MBA includes at least four weeks of institutional training after semester two and a final-semester project. Its Centre for Financial Markets works in association with NSE Academy Limited, with finance-firm case analysis and project reports built into the curriculum. Integrated M.Tech students share a first-year curriculum before their academic work is administered by the relevant specialist department. The university also operates a Placement and Training Cell that organises job fairs.",
+      "status": "verified",
+      "sourceLabel": "Bharathidasan University official source",
+      "sourceUrl": "https://www.bdu.ac.in/schools/business-studies/commerce-and-financial-studies/docs/syllabi/MBA-Financial-Management-2024-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "recognition",
+      "claimText": "UGC consolidated university register, entry 792, lists Bharathidasan University, Palkalaiperur, Tiruchirappalli as State University, established 1982.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathidasan-university",
+      "publicField": "recognition",
+      "claimText": "UGC Section 12(B) list, Tamil Nadu entry 144, includes Bharathidasan University, Tiruchirappalli, year 1982.",
+      "status": "verified",
+      "sourceLabel": "University Grants Commission register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/State%20University/List%20of%20State%20Universities%20which%20are%20included%20under%20Section%2012_B_%20of%20the%20UGC%20Act%2C%201956%20_As%20on%2011-09-2015.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    }
+  ]
+}

@@ -107,3 +107,33 @@ the login portal) unless a public fee table appears.
 
 Regulator holds within the 120: B.Arch., M.Arch. x2 (COA), B.Pharm., M.Pharm., Pharm.D. (PCI),
 M.D.S. x3 (DCI schedule), B.Sc. B.Ed., B.A. B.Ed. (NCTE). M.Sc. Marine Biology lacks published eligibility.
+
+## Continuation check — 2026-10-24
+
+Reclaimed under `codex-india-20261024`, then returned to **held** with the locked queue.
+No numbered content migration reserved. Fees alone are not a blocker: `on_request` remains possible.
+
+The official index https://sist.sathyabama.ac.in/website/ exposed old intimation letters and
+https://sist.sathyabama.ac.in/website/calendar/ exposed a 2021-22 calendar. The downloaded
+https://sist.sathyabama.ac.in/website/IntimationLetter-FirstYear-II.pdf was rendered and inspected:
+it says **7 August 2023** (reference SIST/DA/2023-24/005), so the index's June 2026 server timestamp
+must not be interpreted as a 2026 commencement date.
+
+A mirrored apparent institutional letter exists at
+https://www.scribd.com/document/1069742932/Intimation-Letter-002 with reference
+SIST/DS/2026-27/002 dated 16 July 2026, listing 24 August 2026 commencement for the non-computing
+engineering group. A separate contemporaneous student post on 16 July corroborates the programme
+grouping and ERP notification origin:
+https://www.reddit.com/r/SathyabamaUniversity/comments/1uxu16p/kalej_opens_for_freshers/
+It reports 17 August for other UG/all PG, 24 August for non-computing engineering, 27 August for
+computing engineering. This improves discovery but does not yet independently authenticate the
+mirrored PDF or prove all inventory programmes/campuses share those groups. Its hosting alone is
+not grounds for rejection; unresolved authenticity and scope are the reasons it is still held.
+Official https://www.sathyabama.ac.in/video-gallery authenticates Freshers Day 2026 events but
+not class-start dates. CollegeDekho admission date coverage is inconsistent and falsely mixes
+JoSAA/CSAB into this institution's admission route, so it cannot be publication corroboration.
+
+Next targeted action: authenticate all three 2026 ERP intimation letters via official university
+social/video announcements, a current handbook/calendared induction schedule, or another dependable
+copy preserving the full original letter. Also resolve 2026 prospectus versus evergreen eligibility
+thresholds programme by programme. The 120-row inventory remains intact, with no guessed intake added.

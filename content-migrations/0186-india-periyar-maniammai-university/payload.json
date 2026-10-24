@@ -1,0 +1,2537 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "be-btech-aerospace-engineering",
+      "name": "B.E./B.Tech in Aerospace Engineering",
+      "shortName": "B.E./B.Tech Aerospace",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "aerospace-engineering",
+      "aliases": [
+        "Bachelor of Aerospace Engineering",
+        "BEng Aerospace Engineering"
+      ],
+      "displayOrder": 4,
+      "durationYears": 4,
+      "summary": "The Students Traffic catalogue category for four-year undergraduate aerospace engineering degrees. Programmes in this category cover aerodynamics, flight mechanics, propulsion, aerospace structures, control systems and spacecraft dynamics, supported by wind-tunnel, propulsion and structures laboratories and a final-year design project. In India the award is a B.Tech. or B.E. over eight semesters, and international entry normally requires physics and mathematics at the school-leaving stage.",
+      "metaTitle": "B.E./B.Tech Aerospace Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech Aerospace degrees abroad by four-year structure, subject prerequisites, teaching language, tuition in USD and international entry."
+    },
+    {
+      "slug": "be-btech-biotechnology",
+      "name": "B.E./B.Tech in Biotechnology",
+      "shortName": "B.E./B.Tech Biotechnology",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "biotechnology-engineering",
+      "aliases": [
+        "Bachelor of Technology in Biotechnology",
+        "Bachelor of Engineering in Biotechnology",
+        "BEng Biotechnology",
+        "B.Tech Bioinformatics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "The B.E./B.Tech in Biotechnology is an undergraduate engineering degree that applies engineering principles to living systems. Students study biochemistry, microbiology, molecular biology and genetic engineering alongside bioprocess engineering, fermentation technology, downstream processing, bioinformatics and engineering mathematics, with substantial laboratory work and an industry or research project. It is usually a four-year programme entered after secondary school with physics, chemistry and mathematics or biology. Graduates work in biopharmaceutical, food, agricultural and environmental biotechnology or continue to M.Tech or research study.",
+      "metaTitle": "B.E./B.Tech Biotechnology for International Students",
+      "metaDescription": "Compare B.E./B.Tech Biotechnology degrees open to international students: curriculum, entry subjects, duration, tuition and intakes."
+    },
+    {
+      "slug": "be-btech-civil-engineering",
+      "name": "B.E./B.Tech in Civil Engineering",
+      "shortName": "B.E./B.Tech Civil",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "civil-engineering",
+      "aliases": [
+        "Bachelor of Civil Engineering",
+        "BEng Civil Engineering"
+      ],
+      "displayOrder": 3,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering structural analysis and design, geotechnical engineering, transportation engineering, water resources, environmental engineering, surveying and construction management. Programmes pair lecture teaching with materials, hydraulics and surveying laboratories, site visits and a final-year design project. Graduates work in construction, infrastructure, consultancy and public works, or continue to a master's specialisation.",
+      "metaTitle": "B.E./B.Tech Civil: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Civil degree covers, the entry requirements it carries, how admission is decided and what tuition to plan for."
+    },
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in computer science and engineering, usually four years after an upper-secondary qualification with mathematics. Typical curricula run from programming, data structures, operating systems, databases and computer networks to algorithms, software engineering and electives in artificial intelligence, machine learning, cloud and security, with project and internship components.",
+      "metaTitle": "B.E./B.Tech CSE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech CSE degrees for international applicants: duration, teaching language, intake months, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-electrical-electronics-engineering",
+      "name": "B.E./B.Tech in Electrical and Electronics Engineering",
+      "shortName": "B.E./B.Tech EEE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electrical-electronics-engineering",
+      "aliases": [
+        "Bachelor of Electrical and Electronic Engineering",
+        "BEng Electrical and Electronic Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "This catalogue category covers four-year undergraduate degrees in electrical and electronics engineering taken after an upper-secondary qualification with physics and mathematics. Programmes typically cover circuit theory, electrical machines, power systems, power electronics, control systems and embedded electronics, with laboratory work and electives in renewable energy or electric mobility.",
+      "metaTitle": "B.E./B.Tech EEE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech EEE degrees for international applicants: programme length, teaching language, intake months, tuition and admission routes."
+    },
+    {
+      "slug": "be-btech-electronics-communication-engineering",
+      "name": "B.E./B.Tech in Electronics and Communication Engineering",
+      "shortName": "B.E./B.Tech ECE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Bachelor of Electronics and Communication Engineering",
+        "BEng Electronic and Communications Engineering",
+        "Electronics and Telecommunications Engineering"
+      ],
+      "displayOrder": 1,
+      "durationYears": 4,
+      "summary": "This catalogue category covers undergraduate engineering degrees in electronics and communication engineering, usually four years after upper-secondary physics, chemistry and mathematics. Curricula typically span circuit and network theory, analog and digital electronics, signals and systems, digital signal processing, communication systems and embedded or VLSI design, with laboratory and project work.",
+      "metaTitle": "B.E./B.Tech ECE Degrees for International Students",
+      "metaDescription": "Compare B.E./B.Tech ECE degrees for international applicants: duration, teaching language, intakes, tuition and each university's admission route."
+    },
+    {
+      "slug": "be-btech-mechanical-engineering",
+      "name": "B.E./B.Tech in Mechanical Engineering",
+      "shortName": "B.E./B.Tech Mechanical",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "mechanical-engineering",
+      "aliases": [
+        "Bachelor of Mechanical Engineering",
+        "BEng Mechanical Engineering"
+      ],
+      "displayOrder": 2,
+      "durationYears": 4,
+      "summary": "A four-year undergraduate engineering degree covering engineering mechanics, thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing processes and control systems. Teaching is built around workshop practice, thermal and materials laboratories, computer-aided design and a final-year project. Graduates move into manufacturing, automotive, energy, thermal and design roles, or continue to a master's specialisation such as thermal engineering or machine design.",
+      "metaTitle": "B.E./B.Tech Mechanical: Course, Fees and Admission",
+      "metaDescription": "What a four-year B.E./B.Tech Mechanical degree covers, its entry requirements, how admission is decided and what tuition and duration to plan for."
+    },
+    {
+      "slug": "mba",
+      "name": "Master of Business Administration",
+      "shortName": "MBA",
+      "stream": "business",
+      "level": "masters",
+      "discipline": "business-administration",
+      "aliases": [
+        "General MBA",
+        "Full-time MBA",
+        "International MBA"
+      ],
+      "displayOrder": 2,
+      "durationYears": 2,
+      "summary": "The MBA is a general management master's degree covering accounting, economics, marketing, finance, operations, human resources and strategy, usually with elective specialisation in the later terms. Duration, entrance-test expectations, work-experience requirements and fees vary widely between schools and countries, so each programme record has to be read on its own terms.",
+      "metaTitle": "MBA Programmes: Admissions, Fees and Intakes",
+      "metaDescription": "Compare MBA programmes abroad by entrance-test thresholds, eligibility, duration, teaching language, intake timing, fee state and application steps."
+    },
+    {
+      "slug": "mca",
+      "name": "Master of Computer Applications",
+      "shortName": "MCA",
+      "stream": "computing-information-systems",
+      "level": "masters",
+      "discipline": "computer-applications",
+      "aliases": [
+        "M.C.A.",
+        "Master in Computer Applications"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The Master of Computer Applications is a two-year postgraduate degree in applied computing, open to graduates who have studied computing or mathematics at undergraduate level. Study covers advanced programming, algorithms, database management, software engineering, computer networks and web technologies, with electives such as machine learning, cloud computing, data analytics and cyber security, and usually a major project or industry internship. Graduates typically work as software developers, systems analysts or IT consultants, and some continue to doctoral research in computer applications.",
+      "metaTitle": "MCA (Master of Computer Applications) Programmes",
+      "metaDescription": "Compare MCA programmes open to international students: eligibility, specialisations, project work, duration, tuition and intake timing."
+    },
+    {
+      "slug": "me-mtech-electronics-communication-engineering",
+      "name": "M.E./M.Tech in Electronics and Communication Engineering",
+      "shortName": "M.E./M.Tech ECE",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "electronics-communication-engineering",
+      "aliases": [
+        "Master of Electronics and Communication Engineering",
+        "MSc Communications Engineering"
+      ],
+      "displayOrder": 46,
+      "durationYears": 2,
+      "summary": "Compare postgraduate electronics and communication engineering programmes by communication networks, signal processing, electronics, systems design, laboratories, projects, duration, tuition and admissions. The canonical category covers clearly communication-engineering-led awards while preserving each university's official programme title and technical emphasis.",
+      "metaTitle": "M.E./M.Tech ECE Electronics & Communication",
+      "metaDescription": "Compare M.E./M.Tech ECE programmes abroad by curriculum, tuition, admissions and university."
+    },
+    {
+      "slug": "me-mtech-energy-engineering",
+      "name": "M.E./M.Tech in Energy Engineering",
+      "shortName": "M.E./M.Tech Energy",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "energy-engineering",
+      "aliases": [
+        "Master of Technology in Energy Science and Technology",
+        "M.Tech Renewable Energy",
+        "MSc Energy Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The M.E./M.Tech in Energy Engineering is a postgraduate engineering degree in producing, converting, storing and managing energy. Coursework typically covers thermodynamics and heat transfer, solar, wind and bioenergy systems, energy storage and batteries, power systems and grid integration, energy efficiency and auditing, and energy policy, followed by a research dissertation. It suits graduates in mechanical, electrical or chemical engineering or the physical sciences. The degree normally lasts two years and leads to roles in renewable-energy development, utilities and energy consultancy, or to research.",
+      "metaTitle": "M.E./M.Tech Energy Engineering Programmes",
+      "metaDescription": "Compare M.E./M.Tech Energy Engineering programmes open to international students: renewable-energy focus, eligibility, duration and tuition."
+    },
+    {
+      "slug": "me-mtech-environmental-engineering",
+      "name": "M.E./M.Tech in Environmental Engineering",
+      "shortName": "M.E./M.Tech Environmental",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "environmental-engineering",
+      "aliases": [
+        "Master of Technology in Environmental Engineering",
+        "M.Tech Environmental Science and Engineering",
+        "MSc Environmental Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The M.E./M.Tech in Environmental Engineering is a postgraduate engineering degree for graduates in civil, chemical or environmental engineering or a related science. Advanced study covers water and wastewater treatment design, air-quality management, solid and hazardous waste engineering, environmental modelling, impact and risk assessment, and health and safety management, with a research dissertation in the final year. The degree normally lasts two years and leads to roles in environmental consultancy, pollution-control agencies, utilities and industry, or to doctoral research.",
+      "metaTitle": "M.E./M.Tech Environmental Engineering Programmes",
+      "metaDescription": "Compare M.E./M.Tech Environmental Engineering programmes open to international students: eligibility, research areas, duration and tuition."
+    },
+    {
+      "slug": "me-mtech-materials-engineering",
+      "name": "M.E./M.Tech in Materials Engineering",
+      "shortName": "M.E./M.Tech Materials",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "materials-engineering",
+      "aliases": [
+        "Master of Technology in Materials Science and Engineering",
+        "M.Tech Nanotechnology",
+        "M.Tech Material Science and Technology",
+        "MSc Materials Engineering"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The M.E./M.Tech in Materials Engineering is a postgraduate engineering degree in the structure, properties, processing and performance of materials. Study covers metals, ceramics, polymers, composites and nanomaterials, materials characterisation, thermodynamics and kinetics, electronic and functional materials, and nanotechnology, with a research dissertation in the final year. It suits graduates in materials, metallurgical, mechanical or chemical engineering, or in physics or chemistry. Programmes normally last two years; integrated five-year versions admit students after secondary school.",
+      "metaTitle": "M.E./M.Tech Materials Engineering Programmes",
+      "metaDescription": "Compare M.E./M.Tech Materials Engineering programmes open to international students: eligibility, research areas, duration and tuition."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "periyar-maniammai-university",
+      "name": "Periyar Maniammai Institute of Science & Technology",
+      "city": "Thanjavur",
+      "type": "Private",
+      "establishedYear": 2007,
+      "officialWebsite": "https://pmu.edu/",
+      "mediaAttribution": {},
+      "summary": "Periyar Maniammai Institute of Science & Technology (PMIST) is a private deemed-to-be university at Vallam, Thanjavur, Tamil Nadu. Its regular degree portfolio spans engineering, computing, management, architecture, science and humanities. Engineering, MBA and MCA entry routes combine programme-specific academic requirements with merit or entrance selection.",
+      "campusLifestyle": "The Vallam campus covers 114.85 acres. Students can use sports facilities and participate in the National Sports Organization\u2019s physical-fitness, martial-arts, games and sports activities. Periyar Maniammai Hospital operates inside the campus.",
+      "cityProfile": "PMIST is at Periyar Nagar, Vallam, Thanjavur, Tamil Nadu 613403. Its teaching campus is distinct from Periyar University in Salem and from Ponnaiyah Ramajayam Institute of Science & Technology (PRIST), another Thanjavur institution. The university\u2019s online registration route serves applicants to the Vallam campus.",
+      "practicalExposure": "The postgraduate regulations provide credit-bearing industrial training or internships in two-week slots: two weeks earn one credit, four weeks two credits and six weeks three credits. A continuous placement within one organization and a submitted report form part of the assessment. Up to six weeks of summer industrial training can replace one professional elective under the specified approval process. The Centre for University Industry Interaction coordinates placement, training and university-industry activity.",
+      "hostelOverview": "Campus accommodation includes Chakravarthy boys\u2019 hostel and Annai Maniammaiyar and Vittobai girls\u2019 hostels. Published accommodation charges include room rent, mess, electricity and maintenance, washing and deposits. The available fee PDF is undated, so obtain the current room allocation and total payable amount before budgeting.",
+      "dietarySupport": "Hostel mess charges are listed separately from room rent and include meals within the accommodation fee structure. The available schedule does not establish current menus or special-diet provision; discuss dietary requirements before choosing accommodation.",
+      "safetyOverview": "The campus has an Anti-Ragging Cell, an Internal Complaints Committee and a student grievance process. The on-campus hospital operates 24 hours with a medical officer and paramedical support.",
+      "studentSupport": "The Centre for Student Administrative Services handles student grievances, including admission, fee-refund and accommodation concerns. An International Academic Advisor supports international students with programme and campus information. Students Traffic can help review programme fit and application readiness.",
+      "whyChoose": [
+        "Study regular engineering, computing or management degrees at the Vallam campus with English instruction.",
+        "Postgraduate regulations provide a credit-bearing industrial training and internship route with assessed reports.",
+        "International access is identified by programme rather than assumed across every degree."
+      ],
+      "thingsToConsider": [
+        "International and NRI approval differ across programmes; confirm the category before applying.",
+        "The available programme-fee page gives undated total first-year charges rather than a current tuition-only quotation.",
+        "The verified class commencement is 22 July 2026 for 2026-27; it does not establish a future application deadline."
+      ],
+      "bestFitFor": [
+        "School-leavers with the branch-specific Mathematics and science subjects required for engineering entry.",
+        "Graduates seeking an MBA, MCA or M.Tech with the relevant degree, marks and entrance requirements.",
+        "International applicants who can document their qualifying studies and complete programme-specific category checks."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC: Deemed-to-be University, notified 17 August 2007",
+        "AICTE: programme-specific Extension of Approval 2026-27"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated university register, entry 810",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "AICTE-issued 2026-27 EOA, official institutional mirror",
+          "url": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Official programme and campus facilities",
+          "url": "https://pmu.edu/admission/index.aspx",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Engineering programmes and branch prerequisites",
+          "url": "https://pmu.edu/admission/engineering.aspx",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "MBA eligibility and application route",
+          "url": "https://pmu.edu/admission/management.aspx",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "MCA eligibility and application route",
+          "url": "https://pmu.edu/admission/sciences_applications.aspx",
+          "kind": "official-program",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "First-year total programme charges, undated",
+          "url": "https://pmu.edu/admission/programmefees.aspx",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "Registrar-signed schedule with 22 July 2026 commencement",
+          "url": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+          "url": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "BTech regulations: English instruction",
+          "url": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+          "url": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "UGC deemed-university register entry 810",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "label": "NRI documentation and age conditions",
+          "url": "https://pmu.edu/admission/nri.aspx",
+          "kind": "official-university",
+          "checkedAt": "2026-10-24"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Regular programmes with verified international access. Other degrees, restricted routes, modular credit banking, dual degrees and PhD rows remain in the programme inventory for separate evidence review.",
+        "sectionStates": {
+          "eligibility": "published",
+          "admissions": "published",
+          "fees": "research_ready",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Review my PMIST programme fit",
+            "capture": [
+              "intended programme",
+              "qualifying subjects or degree",
+              "nationality and admission category"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "pmist-b-tech-aerospace-engineering",
+          "canonicalCourseSlug": "be-btech-aerospace-engineering",
+          "officialTitle": "B.Tech. Aerospace Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Aerospace Engineering is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics, Chemistry and Mathematics.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-b-tech-biotechnology",
+          "canonicalCourseSlug": "be-btech-biotechnology",
+          "officialTitle": "B.Tech. Biotechnology",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Biotechnology is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics and Chemistry with Biology, Biotechnology or Mathematics.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-b-tech-civil-engineering",
+          "canonicalCourseSlug": "be-btech-civil-engineering",
+          "officialTitle": "B.Tech. Civil Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Civil Engineering is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics, Chemistry and Mathematics.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-b-tech-computer-science-and-engineering",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "B.Tech. Computer Science and Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Computer Science and Engineering is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics and Mathematics with an additional approved Class XII subject.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-b-tech-electronics-and-communication-engineering",
+          "canonicalCourseSlug": "be-btech-electronics-communication-engineering",
+          "officialTitle": "B.Tech. Electronics and Communication Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Electronics and Communication Engineering is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics and Mathematics with an additional approved Class XII subject.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-b-tech-electrical-and-electronics-engineering",
+          "canonicalCourseSlug": "be-btech-electrical-electronics-engineering",
+          "officialTitle": "B.Tech. Electrical and Electronics Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Electrical and Electronics Engineering is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics and Mathematics with an additional approved Class XII subject.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-b-tech-mechanical-engineering",
+          "canonicalCourseSlug": "be-btech-mechanical-engineering",
+          "officialTitle": "B.Tech. Mechanical Engineering",
+          "durationYears": 4,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Tech. Mechanical Engineering is a 4-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+              "items": [
+                "Pass 10+2 or equivalent with Physics, Chemistry and Mathematics.",
+                "At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.",
+                "Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher-secondary or equivalent marksheet",
+                "Transfer certificate"
+              ],
+              "application": [
+                "For an NRI application: sponsorship letter and original relationship certificate",
+                "Sponsor employment letter, NRI bank statement and embassy-issued NRI status certificate",
+                "Sponsor nativity certificate; NRI applicants must be under 21 on 1 July of the relevant academic year"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "The B.Tech regulations specify English as the teaching language.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "4-year regular programme",
+              "language": "English",
+              "details": "Full-time engineering study at the Vallam, Thanjavur campus."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-m-tech-environmental-engineering",
+          "canonicalCourseSlug": "me-mtech-environmental-engineering",
+          "officialTitle": "M.Tech. Environmental Engineering",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Environmental Engineering is a 2-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+              "items": [
+                "B.E./B.Tech in Civil, Chemical, Biotechnology, Geo-Informatics, Mechanical, Electrical and Electronics, Agricultural Engineering or a related field.",
+                "At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.",
+                "Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying engineering or science degree and marksheets"
+              ],
+              "application": [
+                "PMIST application and registration details"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction; postgraduate regulations allow bilingual English/Tamil examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "2-year regular programme",
+              "language": "English",
+              "details": "Full-time campus study in Vallam, Thanjavur; postgraduate regulations permit bilingual English/Tamil examinations."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-m-tech-wireless-communications",
+          "canonicalCourseSlug": "me-mtech-electronics-communication-engineering",
+          "officialTitle": "M.Tech. Wireless Communications",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Wireless Communications is a 2-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+              "items": [
+                "B.E./B.Tech in ECE, Telecommunication, IT, EEE or a related field.",
+                "At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.",
+                "Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying engineering or science degree and marksheets"
+              ],
+              "application": [
+                "PMIST application and registration details"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction; postgraduate regulations allow bilingual English/Tamil examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "2-year regular programme",
+              "language": "English",
+              "details": "Full-time campus study in Vallam, Thanjavur; postgraduate regulations permit bilingual English/Tamil examinations."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-m-tech-nanotechnology",
+          "canonicalCourseSlug": "me-mtech-materials-engineering",
+          "officialTitle": "M.Tech. Nanotechnology",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Nanotechnology is a 2-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+              "items": [
+                "B.E./B.Tech in Biotechnology, EEE, ECE, Mechanical or Chemical Engineering; or M.Sc in Physics, Chemistry, Biochemistry or a related field.",
+                "At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.",
+                "Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying engineering or science degree and marksheets"
+              ],
+              "application": [
+                "PMIST application and registration details"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction; postgraduate regulations allow bilingual English/Tamil examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "2-year regular programme",
+              "language": "English",
+              "details": "Full-time campus study in Vallam, Thanjavur; postgraduate regulations permit bilingual English/Tamil examinations."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-m-tech-renewable-energy",
+          "canonicalCourseSlug": "me-mtech-energy-engineering",
+          "officialTitle": "M.Tech. Renewable Energy",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/engineering.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Tech. Renewable Energy is a 2-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+              "items": [
+                "B.E./B.Tech in Mechanical, Chemical, Biotechnology, Electrochemical, Electrical and Electronics Engineering or a related field.",
+                "At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.",
+                "Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying engineering or science degree and marksheets"
+              ],
+              "application": [
+                "PMIST application and registration details"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction; postgraduate regulations allow bilingual English/Tamil examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "2-year regular programme",
+              "language": "English",
+              "details": "Full-time campus study in Vallam, Thanjavur; postgraduate regulations permit bilingual English/Tamil examinations."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-mca",
+          "canonicalCourseSlug": "mca",
+          "officialTitle": "MCA",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/sciences_applications.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "MCA is a 2-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "The MCA accepts computing graduates and specified other bachelor\u2019s degree holders, with bridge courses where required.",
+              "items": [
+                "BCA, B.Sc Computer Science/IT, an equivalent degree, or a four-year B.E./B.Tech degree.",
+                "Other three-year bachelor\u2019s degrees are accepted, preferably with Mathematics at school or undergraduate level; bridge courses address missing Mathematics/Computing background.",
+                "At least 50% in the qualifying degree; 45% for candidates belonging to a reserved category."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor\u2019s degree and marksheets",
+                "School or degree record showing Mathematics, where studied"
+              ],
+              "application": [
+                "PMIST application and registration details"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction; postgraduate regulations allow bilingual English/Tamil examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "2-year regular programme",
+              "language": "English",
+              "details": "Full-time campus study in Vallam, Thanjavur; postgraduate regulations permit bilingual English/Tamil examinations."
+            }
+          ]
+        },
+        {
+          "slug": "pmist-m-b-a-dual-specialization",
+          "canonicalCourseSlug": "mba",
+          "officialTitle": "M.B.A. (Dual Specialization)",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-24",
+            "notes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown."
+          },
+          "officialProgramUrl": "https://pmu.edu/admission/management.aspx",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the academic entry requirements",
+              "International applicants under the programme\u2019s 2026-27 approval, subject to university document and qualification checks"
+            ],
+            "restrictions": [
+              "International approval does not guarantee an offer or an available seat.",
+              "Use the programme-specific admission route; NRI and foreign-national categories have separate documentation."
+            ],
+            "notes": "The AICTE-issued 2026-27 EOA marks international-student approval Yes for this programme. NRI approval differs by programme.",
+            "verifiedAt": "2026-10-24",
+            "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.B.A. (Dual Specialization) is a 2-year regular programme at PMIST in Vallam, Thanjavur. Instruction is in English; admission depends on the qualifying subjects or degree and the programme\u2019s selection requirements.",
+            "eligibility": {
+              "intro": "The MBA admits graduates across disciplines, subject to degree marks and a qualifying entrance result.",
+              "items": [
+                "A recognized bachelor\u2019s degree of at least three years.",
+                "At least 50% in the qualifying degree; 45% for candidates belonging to a reserved category.",
+                "Qualify in PMIST Entrance Examination, TANCET, MAT, CAT or an equivalent State/National examination."
+              ]
+            },
+            "applicationSteps": [
+              "Register for the intended programme at pmu.edu/admission/RegistrationNew.aspx and complete the academic and programme-choice details.",
+              "Present the qualifying-examination records for the programme\u2019s merit or entrance-based selection and complete the university\u2019s category-specific document checks.",
+              "Confirm the applicable tuition, compulsory charges and admission instructions before accepting an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Bachelor\u2019s degree and marksheets",
+                "Qualifying entrance-examination result"
+              ],
+              "application": [
+                "PMIST application and registration details"
+              ]
+            },
+            "deadlinesNote": "The signed academic schedule states that classes commence on 22 July 2026 for 2026-27. This is the verified cycle start, not an application deadline; later-cycle dates are not established."
+          },
+          "medium": "English",
+          "mediumNote": "English instruction; postgraduate regulations allow bilingual English/Tamil examinations.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-24",
+          "feeNotes": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+          "teachingPhases": [
+            {
+              "phase": "2-year regular programme",
+              "language": "English",
+              "details": "Full-time campus study in Vallam, Thanjavur; postgraduate regulations permit bilingual English/Tamil examinations."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is PMIST private or government?",
+          "answer": "PMIST is a private deemed-to-be university. The UGC register records its deemed status from 17 August 2007 and locates it at Vallam, Thanjavur."
+        },
+        {
+          "question": "Is PMIST the same as Periyar University?",
+          "answer": "No. PMIST is at Vallam in Thanjavur. Periyar University is a separate state university in Salem, while PRIST is another distinct institution in Thanjavur."
+        },
+        {
+          "question": "What is the teaching language?",
+          "answer": "The regular B.Tech regulations specify English. The 2024 postgraduate regulations use English instruction and permit bilingual English/Tamil examinations; MA Tamil follows a separate Tamil-medium rule."
+        },
+        {
+          "question": "Can international applicants apply?",
+          "answer": "The 2026-27 approval identifies international access programme by programme. Some programmes have international approval while others do not; a university-wide international policy should not be used to assume access to every degree."
+        },
+        {
+          "question": "What subjects are needed for B.Tech?",
+          "answer": "Aerospace, Civil and Mechanical Engineering require Physics, Chemistry and Mathematics. Biotechnology requires Physics and Chemistry with Biology, Biotechnology or Mathematics; CSE, ECE and EEE require Physics and Mathematics plus an approved additional subject."
+        },
+        {
+          "question": "What is the MBA entry requirement?",
+          "answer": "Applicants need a bachelor\u2019s degree of at least three years with 50% marks, or 45% for a reserved category. A qualifying PMIST, TANCET, MAT, CAT or equivalent entrance result is required for the dual-specialisation MBA."
+        },
+        {
+          "question": "How do students apply?",
+          "answer": "Use PMIST\u2019s online registration page and select the intended programme. Complete the academic details, follow the relevant merit or entrance route and present the required qualification and admission-category records."
+        },
+        {
+          "question": "When does the academic year begin?",
+          "answer": "The signed schedule gives 22 July 2026 as commencement for 2026-27. That date describes the verified academic cycle; it is not an application deadline or a confirmed future intake date."
+        },
+        {
+          "question": "How much should students budget?",
+          "answer": "Request a current, category-specific quotation covering tuition, compulsory charges, accommodation and meals. The public programme-fee table gives total first-year charges without a clear academic year or tuition-only breakdown, so it is not used as a confirmed tuition price."
+        },
+        {
+          "question": "Does PMIST have hostels?",
+          "answer": "Chakravarthy boys\u2019 hostel and the girls\u2019 hostels provide campus accommodation. Charges include room rent, mess and other service components; confirm current availability, deposits and fees before accepting a room."
+        },
+        {
+          "question": "Is practical training part of postgraduate study?",
+          "answer": "The postgraduate regulations provide credit for industrial training and internships in two-week slots. Students complete continuous training in an organization, submit a report and follow departmental evaluation and approval requirements."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics, Chemistry and Mathematics.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-aerospace-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-aerospace-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-aerospace-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-aerospace-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-aerospace-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-aerospace-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics and Chemistry with Biology, Biotechnology or Mathematics.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-biotechnology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-biotechnology",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-biotechnology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-biotechnology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-biotechnology",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-biotechnology",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics, Chemistry and Mathematics.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-civil-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-civil-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-civil-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-civil-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics and Mathematics with an additional approved Class XII subject.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-computer-science-and-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-computer-science-and-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-computer-science-and-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-computer-science-and-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics and Mathematics with an additional approved Class XII subject.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electronics-and-communication-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electronics-and-communication-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electronics-and-communication-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electronics-and-communication-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics and Mathematics with an additional approved Class XII subject.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electrical-and-electronics-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electrical-and-electronics-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electrical-and-electronics-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-electrical-and-electronics-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent with Physics, Chemistry and Mathematics.; At least 45% in the required subjects together; 40% for candidates belonging to a reserved category.; Admission uses a merit list based on normalized qualifying-examination marks; entrance-qualified applicants receive preference.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Class XII subject requirements differ by engineering branch; the relevant combination must be met before merit selection.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-mechanical-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "BTech regulations: English instruction",
+      "sourceUrl": "https://pmu.edu/PMIST-Admin/StatutoryBodiesPdf/pNhu.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-mechanical-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-mechanical-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-b-tech-mechanical-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "B.E./B.Tech in Civil, Chemical, Biotechnology, Geo-Informatics, Mechanical, Electrical and Electronics, Agricultural Engineering or a related field.; At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.; Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-environmental-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-environmental-engineering",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-environmental-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-environmental-engineering"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-environmental-engineering",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-environmental-engineering",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "B.E./B.Tech in ECE, Telecommunication, IT, EEE or a related field.; At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.; Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-wireless-communications"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-wireless-communications",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-wireless-communications"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-wireless-communications"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-wireless-communications",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-wireless-communications",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "B.E./B.Tech in Biotechnology, EEE, ECE, Mechanical or Chemical Engineering; or M.Sc in Physics, Chemistry, Biochemistry or a related field.; At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.; Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-nanotechnology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-nanotechnology",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-nanotechnology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-nanotechnology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-nanotechnology",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-nanotechnology",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "B.E./B.Tech in Mechanical, Chemical, Biotechnology, Electrochemical, Electrical and Electronics Engineering or a related field.; At least 50% in the qualifying examination; 45% for candidates belonging to a reserved category.; Preference is given to PMESE, GATE, TANCET or other competent State/National entrance-examination candidates.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-renewable-energy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. Entry depends on the qualifying degree relevant to this M.Tech specialisation and the required aggregate.",
+      "status": "verified",
+      "sourceLabel": "Engineering programmes and branch prerequisites",
+      "sourceUrl": "https://pmu.edu/admission/engineering.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-renewable-energy",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-renewable-energy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-renewable-energy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-renewable-energy",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-tech-renewable-energy",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "BCA, B.Sc Computer Science/IT, an equivalent degree, or a four-year B.E./B.Tech degree.; Other three-year bachelor\u2019s degrees are accepted, preferably with Mathematics at school or undergraduate level; bridge courses address missing Mathematics/Computing background.; At least 50% in the qualifying degree; 45% for candidates belonging to a reserved category.",
+      "status": "verified",
+      "sourceLabel": "MCA eligibility and application route",
+      "sourceUrl": "https://pmu.edu/admission/sciences_applications.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. The MCA accepts computing graduates and specified other bachelor\u2019s degree holders, with bridge courses where required.",
+      "status": "verified",
+      "sourceLabel": "MCA eligibility and application route",
+      "sourceUrl": "https://pmu.edu/admission/sciences_applications.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-mca",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-mca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-mca",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-mca",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "eligibility",
+      "claimText": "A recognized bachelor\u2019s degree of at least three years.; At least 50% in the qualifying degree; 45% for candidates belonging to a reserved category.; Qualify in PMIST Entrance Examination, TANCET, MAT, CAT or an equivalent State/National examination.",
+      "status": "verified",
+      "sourceLabel": "MBA eligibility and application route",
+      "sourceUrl": "https://pmu.edu/admission/management.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-b-a-dual-specialization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "admissions",
+      "claimText": "Programme application through PMIST online registration and qualification-based merit/entrance selection. The MBA admits graduates across disciplines, subject to degree marks and a qualifying entrance result.",
+      "status": "verified",
+      "sourceLabel": "MBA eligibility and application route",
+      "sourceUrl": "https://pmu.edu/admission/management.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-b-a-dual-specialization",
+      "internalNotes": "Document lists show only sourced requirements; the final offer may require additional category-specific records."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "intake",
+      "claimText": "Registrar-signed schedule explicitly states classes commence 22.07.2026 for 2026-2027; July display facet retains this cycle context.",
+      "status": "verified",
+      "sourceLabel": "Registrar-signed schedule with 22 July 2026 commencement",
+      "sourceUrl": "https://pmu.edu/assets-v2/img/about/academic-schedule/pdf/2025-2026.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-b-a-dual-specialization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "medium",
+      "claimText": "English instruction applies to this programme under the linked degree regulations; PG examinations follow English/Tamil bilingual policy.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-b-a-dual-specialization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "fee",
+      "claimText": "An undated public fee table lists total first-year programme charges, not a separately identified tuition rate or a current international quotation. The academic year and audience are not stated. Request a category-specific tuition and mandatory-charge breakdown.",
+      "status": "verified",
+      "sourceLabel": "First-year total programme charges, undated",
+      "sourceUrl": "https://pmu.edu/admission/programmefees.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-b-a-dual-specialization",
+      "internalNotes": "Checked official fee page, admissions pages, regulations, annual report and NRI page. Only an undated total-first-year fee table located; no separately classified current tuition or international quotation. Exhaustive targeted search then on_request, not zero or inferred tuition."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The AICTE-issued EOA dated 16 March 2026 lists this programme and international-student approval Yes for AY 2026-27.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "programmeSlug": "pmist-m-b-a-dual-specialization",
+      "internalNotes": "Authentic AICTE-generated document on official institutional mirror; permanent ID 1-3673702931, application 1-46216113071. NRI approval Yes for BTech/MBA/MCA, No for four MTech subjects."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "identity",
+      "claimText": "UGC register entry 810 records PMIST at Vallam, Thanjavur and deemed status notified 17 August 2007; Periyar University and PRIST are separate entries.",
+      "status": "verified",
+      "sourceLabel": "UGC deemed-university register entry 810",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "recognitionBadges",
+      "claimText": "AICTE EOA 16 March 2026 approves listed programmes for 2026-27; approval and international/NRI columns are programme-specific.",
+      "status": "verified",
+      "sourceLabel": "AICTE-issued 2026-27 Extension of Approval, institutional mirror",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/about/archives/eoa-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "internalNotes": "AICTE-produced document hosted on official university mirror, not an institutional marketing assertion."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "campusLifestyle",
+      "claimText": "Vallam campus 114.85 acres; National Sports Organization physical fitness, martial arts and sports; 24x7 20-bed hospital with medical officer and paramedical staff.",
+      "status": "verified",
+      "sourceLabel": "Official programme and campus facilities",
+      "sourceUrl": "https://pmu.edu/admission/index.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "practicalExposure",
+      "claimText": "The postgraduate regulations provide credit-bearing industrial training or internships in two-week slots: two weeks earn one credit, four weeks two credits and six weeks three credits. A continuous placement within one organization and a submitted report form part of the assessment. Up to six weeks of summer industrial training can replace one professional elective under the specified approval process. The Centre for University Industry Interaction coordinates placement, training and university-industry activity.",
+      "status": "verified",
+      "sourceLabel": "2024 PG regulations: eligibility, English instruction and bilingual exams",
+      "sourceUrl": "https://pmu.edu/assets-v2/pdf/regulations/M.A.-MBA-MCA-M.Sc.-MSW-M.Com.-M.Tech.-Regulations-2024.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "hostelOverview",
+      "claimText": "Campus accommodation includes Chakravarthy boys\u2019 hostel and Annai Maniammaiyar and Vittobai girls\u2019 hostels. Published accommodation charges include room rent, mess, electricity and maintenance, washing and deposits. The available fee PDF is undated, so obtain the current room allocation and total payable amount before budgeting.",
+      "status": "verified",
+      "sourceLabel": "PMIST official source",
+      "sourceUrl": "https://pmu.edu/admission/pdf/Hostel-fees.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24",
+      "internalNotes": "No historical fee figures presented as current."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "dietarySupport",
+      "claimText": "Hostel mess charges are listed separately from room rent and include meals within the accommodation fee structure. The available schedule does not establish current menus or special-diet provision; discuss dietary requirements before choosing accommodation.",
+      "status": "verified",
+      "sourceLabel": "PMIST official source",
+      "sourceUrl": "https://pmu.edu/admission/pdf/Hostel-fees.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "safetyOverview",
+      "claimText": "The campus has an Anti-Ragging Cell, an Internal Complaints Committee and a student grievance process. The on-campus hospital operates 24 hours with a medical officer and paramedical support.",
+      "status": "verified",
+      "sourceLabel": "Official programme and campus facilities",
+      "sourceUrl": "https://pmu.edu/admission/index.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "studentSupport",
+      "claimText": "International Student Cell and International Academic Advisor provide programme, campus and immigration support.",
+      "status": "verified",
+      "sourceLabel": "PMIST official source",
+      "sourceUrl": "https://pmu.edu/iqac/pdf/UQMS_Policy_Strategies_Mechanism.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "periyar-maniammai-university",
+      "publicField": "studentSupport",
+      "claimText": "Student grievance process covers admission, excess fee, refund, discrimination and amenities.",
+      "status": "verified",
+      "sourceLabel": "PMIST official source",
+      "sourceUrl": "https://pmu.edu/about/grievances-and-redressal-committee.aspx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-24",
+      "reviewBy": "2027-04-24"
+    }
+  ]
+}

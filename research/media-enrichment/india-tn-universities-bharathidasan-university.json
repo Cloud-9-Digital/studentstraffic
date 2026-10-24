@@ -1,0 +1,37 @@
+{
+  "manifestId": "india-tn-bharathidasan-university-media-20261024",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-24",
+  "scope": "Logo and cover for 0188-india-bharathidasan-university",
+  "rules": [
+    "No database writes or automatic media upload authorised to research workers.",
+    "Direct sources verified HTTP 200 image/* and visually inspected on 2026-10-24."
+  ],
+  "entries": [
+    {
+      "universitySlug": "bharathidasan-university",
+      "universityName": "Bharathidasan University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.bdu.ac.in/forms/logo/emp-png.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.bdu.ac.in/downloads/",
+          "rightsBasis": "Official emblem explicitly offered for download by Bharathidasan University. Used solely for institutional identification; no open licence claimed. HTTP 200 image/png, 480x406 pixels; inspected on a white background and legible with blue text, lotus and portrait.",
+          "proposedPublicId": "studentstraffic/universities/bharathidasan-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bharathidasan_University_Campus_%2839583909894%29.jpg/1280px-Bharathidasan_University_Campus_%2839583909894%29.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Bharathidasan_University_Campus_(39583909894).jpg",
+          "rightsBasis": "Photograph by deadrat.in, 26 January 2018, CC0 1.0 public domain dedication verified on Wikimedia Commons; Flickr licence reviewed by FlickreviewR 2 on 16 February 2018. HTTP 200 image/jpeg; 1280x960 rendition. Inspected: a real photograph of the Centre of Excellence in Life Sciences building at Palkalaiperur, behind its garden gate, without a text overlay.",
+          "altText": "Centre of Excellence in Life Sciences building behind a garden gate on Bharathidasan University\u2019s Palkalaiperur campus",
+          "proposedPublicId": "studentstraffic/universities/bharathidasan-university/cover"
+        }
+      ],
+      "migrationId": "0188-india-bharathidasan-university"
+    }
+  ]
+}

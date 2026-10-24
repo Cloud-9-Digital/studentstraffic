@@ -132,3 +132,19 @@ Education's B.Sc. (Hons.) Horticulture. In India, ICAR treats Horticulture as a 
 degree from B.Sc. (Hons.) Agriculture, with its own curriculum, so it is not mapped to
 `bsc-agriculture`. The shared course record is in `research/india-batch4-kare-canonical-courses.json`
 and was first shipped in content migration 0117 (Joy University); 0118 carries the same record.
+
+## Tamil Nadu university continuation (2026-10-24)
+
+`integrated-mtech-biotechnology`, `integrated-mtech-computer-science-engineering` and
+`integrated-mtech-geoinformatics` are school-entry engineering families at the
+`integrated-masters` level. They combine undergraduate and advanced master's study and remain
+separate from postgraduate two-year M.E./M.Tech families requiring an existing degree.
+Each offering retains its official award title and institution-specific duration. Reusable,
+university-neutral records are in `research/india-bdu-canonical-courses.json`.
+
+
+### Bharathiar postgraduate mappings — 24 October 2026
+
+Added university-neutral master's families `msc-electronics-instrumentation`, `master-educational-technology`, `master-career-guidance` and `master-gender-studies`. E-Learning Technology maps to Educational Technology; Career Guidance lateral entry retains its official title and one-year duration as a separate offering under the same master's category. Gender Studies includes Women's Studies as an alias. Biological-science specialisations map to `msc-biological-sciences`; Medical Biotechnology maps to `msc-biotechnology`; Biostatistics to `msc-statistics`; Medical Physics to `msc-physics`; Nanoscience and Technology to the dedicated `msc-nanoscience-technology` family. Exact programme titles are preserved in migration 0187. These decisions do not imply accreditation or international entrance exemptions.
+
+The same batch adds `msc-information-technology` and `msc-nanoscience-technology` rather than compressing technically distinct IT and nanoscience awards into Information Systems or Materials Science.

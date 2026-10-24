@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "mba-finance",
+    "name": "MBA in Finance",
+    "shortName": "MBA Finance",
+    "stream": "business",
+    "level": "masters",
+    "discipline": "finance",
+    "aliases": [
+      "Master of Business Administration in Finance"
+    ],
+    "displayOrder": 0,
+    "durationYears": 2,
+    "summary": "An MBA in Finance combines general management study with financial decision-making. Programmes cover accounting, corporate finance, investment analysis, financial markets, risk management and business strategy, often with a summer internship and a final project. Entry usually requires a bachelor's degree, while subject prerequisites, entrance tests and work-experience requirements vary. Graduates may pursue finance and management roles or further study; professional licensing and employment requirements depend on the jurisdiction and employer.",
+    "metaTitle": "MBA Finance Programmes: Entry, Fees and Study Options",
+    "metaDescription": "Compare MBA Finance programmes by entry requirements, curriculum, practical training, tuition, duration and admission route for your qualifications."
+  },
+  {
+    "slug": "integrated-mtech-biotechnology",
+    "name": "Integrated M.Tech in Biotechnology",
+    "shortName": "Integrated M.Tech Biotechnology",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "biotechnology-engineering",
+    "aliases": [
+      "Integrated Master of Technology in Biotechnology",
+      "Six-year Integrated M.Tech Biotechnology"
+    ],
+    "displayOrder": 0,
+    "durationYears": 6,
+    "summary": "An integrated M.Tech in Biotechnology combines undergraduate engineering foundations with advanced biotechnology study in a continuous school-entry route. Coursework can include mathematics, chemistry, molecular biology, bioprocess engineering, genetic engineering and laboratory methods, followed by advanced projects or research. Applicants enter after upper-secondary education with the required science subjects. Duration, intermediate awards and progression rules vary by institution; compare the full integrated structure before applying.",
+    "metaTitle": "Integrated M.Tech Biotechnology: Entry and Study Options",
+    "metaDescription": "Compare Integrated M.Tech Biotechnology programmes by school-entry subjects, degree structure, teaching language, duration, practical study and tuition."
+  },
+  {
+    "slug": "integrated-mtech-computer-science-engineering",
+    "name": "Integrated M.Tech in Computer Science and Engineering",
+    "shortName": "Integrated M.Tech CSE",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "computer-science-engineering",
+    "aliases": [
+      "Integrated Master of Technology in Computer Science and Engineering",
+      "Six-year Integrated M.Tech CSE"
+    ],
+    "displayOrder": 0,
+    "durationYears": 6,
+    "summary": "An integrated M.Tech in Computer Science and Engineering combines undergraduate computing and engineering foundations with advanced postgraduate study in one school-entry route. Programmes can cover programming, algorithms, computer systems, networks, software engineering and specialised computing topics, with project or research work. Entry follows upper-secondary education with the required mathematics and science subjects. Duration, intermediate awards and progression requirements vary, so the full integrated route should be compared with separate bachelor and master degrees.",
+    "metaTitle": "Integrated M.Tech CSE: Entry and Study Options",
+    "metaDescription": "Compare Integrated M.Tech CSE programmes by school-entry subjects, degree structure, teaching language, duration, practical study and tuition."
+  },
+  {
+    "slug": "integrated-mtech-geoinformatics",
+    "name": "Integrated M.Tech in Geoinformatics",
+    "shortName": "Integrated M.Tech Geoinformatics",
+    "stream": "engineering",
+    "level": "integrated-masters",
+    "discipline": "geoinformatics",
+    "aliases": [
+      "Integrated Master of Technology in Geoinformatics",
+      "Integrated M.Tech Geological Technology and Geoinformatics"
+    ],
+    "displayOrder": 0,
+    "durationYears": 6,
+    "summary": "An integrated M.Tech in Geoinformatics combines undergraduate scientific and engineering foundations with advanced study of spatial data, geographic information systems and remote sensing. Programmes may emphasise geological technology, mapping, satellite-image interpretation, environmental applications and research projects. Entry is after upper-secondary education with prescribed mathematics and science subjects. Duration, intermediate awards and progression rules depend on the institution; this school-entry route is distinct from a postgraduate M.Tech requiring a prior degree.",
+    "metaTitle": "Integrated M.Tech Geoinformatics: Entry and Study Options",
+    "metaDescription": "Compare Integrated M.Tech Geoinformatics programmes by school-entry subjects, degree structure, teaching language, duration, practical study and tuition."
+  }
+]

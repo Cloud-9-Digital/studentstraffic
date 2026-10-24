@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-24",
+  "entries": [
+    {
+      "universitySlug": "kongu-engineering-college",
+      "universityName": "Kongu Engineering College",
+      "sourceBatch": "tn-resume-20261024",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kongu.ac.in/static/media/kec11.8c78d444060b4f77a60d.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identity/campus image used to identify the institution in its catalogue profile; no open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/kongu-engineering-college/logo-20261024",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kongu.ac.in/static/media/kec.278b926390254d4ec529.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identity/campus image used to identify the institution in its catalogue profile; no open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/kongu-engineering-college/cover-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "Tree-lined entrance gates of Kongu Engineering College in Perundurai"
+        }
+      ]
+    }
+  ]
+}

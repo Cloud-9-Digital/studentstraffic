@@ -1,0 +1,37 @@
+{
+  "manifestId": "bharathiar-university-2026-10-24",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "entries": [
+    {
+      "universitySlug": "bharathiar-university",
+      "universityName": "Bharathiar University",
+      "migrationId": "0187-india-bharathiar-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://b-u.ac.in/sites/b-u.ac.in/files/About%20University/bu-logo_0.png",
+          "sourceType": "official",
+          "checkedAt": "2026-10-24",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "rightsBasis": "Official university identification asset on university website; no open licence claimed. Reuse solely identifies the institution and its campus.",
+          "proposedPublicId": "studentstraffic/universities/bharathiar-university/logo",
+          "altText": "Bharathiar University emblem",
+          "visualCheck": "300x300 coloured emblem legible on white"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://b-u.ac.in/sites/b-u.ac.in/files/2025-10/home_entrance_0_0.jpg",
+          "sourceType": "official",
+          "checkedAt": "2026-10-24",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "rightsBasis": "Official university identification asset on university website; no open licence claimed. Reuse solely identifies the institution and its campus.",
+          "proposedPublicId": "studentstraffic/universities/bharathiar-university/cover",
+          "altText": "Entrance gate of Bharathiar University in Coimbatore",
+          "visualCheck": "1920x850 photograph of university entrance, verified campus name visible"
+        }
+      ]
+    }
+  ]
+}
