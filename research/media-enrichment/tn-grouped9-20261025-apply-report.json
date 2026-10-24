@@ -1,0 +1,39 @@
+{
+  "appliedAt": "2026-10-24T22:26:39.104Z",
+  "uploads": {
+    "attempted": 8,
+    "succeeded": 8,
+    "failed": 0
+  },
+  "database": {
+    "updated": 4,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "vels-institute-of-science-technology-and-advanced-studies",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "tamil-nadu-agricultural-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "psg-college-of-technology",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "stella-maris-college-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

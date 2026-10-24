@@ -24,6 +24,7 @@ Keep it current — see "Keeping this doc current" at the bottom.
 
 - **`countries`** — one row per country (slug, name).
 - **`courses`** — course catalog (e.g. `mbbs`, `bds`, `bsc-nursing`, `pharmacy`). Programs reference a course.
+  Canonical duration uses `numeric(4,1)` after migration0084, preserving exact fractional years.
 - **`universities`** — one row per published university. Key fields:
   `slug`, `name`, `city`, `type`, `establishedYear`, `officialWebsite`, `published`, `featured`,
   narrative fields (`campusLifestyle`, `cityProfile`, `practicalExposure`, `hostelOverview`,
@@ -37,7 +38,7 @@ Keep it current — see "Keeping this doc current" at the bottom.
   This uses the existing JSONB field; no section-specific image columns are required. Student-living
   text is validated against the hard field limits in `docs/university-content-spec.md` before write.
 - **`programOfferings`** — one row per program at a university, FK to `universities` + `courses`.
-  Key fields: `slug`, `title`, `durationYears` (⚠️ **integer column** — see Known issues),
+  Key fields: `slug`, `title`, `durationYears` (`numeric(4,1)`, preserving fractional years),
   `annualTuitionUsd`/`totalTuitionUsd`/`livingUsd` (normalized USD), `officialFeeCurrency` +
   `officialAnnualTuitionAmount`/`officialTotalTuitionAmount` (native-currency figures, bigint),
   `officialProgramUrl`, `medium` (short display label: language names only joined with " / ",
