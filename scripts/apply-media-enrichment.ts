@@ -13,6 +13,7 @@ import { WebSocket } from "ws";
 import { universities } from "@/lib/db/schema";
 import * as schema from "@/lib/db/schema";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
+import { readReviewedMediaOriginal } from "./lib/reviewed-media-original";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -33,6 +34,10 @@ type ManifestAsset = {
   altText?: string;
   /** Date the source was reviewed (YYYY-MM-DD); defaults to the manifest's checkedAt, then today. */
   checkedAt?: string;
+  /** Explicitly use an intact, browser-saved source original after visual/source review. */
+  uploadFromReviewedLocalOriginal?: boolean;
+  localPath?: string;
+  sha256?: string;
   /**
    * Optional Cloudinary incoming transformation, e.g. a crop that removes a camera date stamp.
    * It is applied at upload, so the stored asset never contains the removed area.
@@ -74,6 +79,14 @@ async function main() {
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is required.");
 
   const manifest: Manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
+  const reviewedOriginals = new Map<ManifestAsset, Buffer>();
+  for (const entry of manifest.entries) {
+    for (const asset of entry.assets) {
+      if (asset.uploadFromReviewedLocalOriginal && asset.status !== "hold" && asset.sourceUrl) {
+        reviewedOriginals.set(asset, readReviewedMediaOriginal(root, asset));
+      }
+    }
+  }
   console.log(
     `Loaded manifest: ${manifest.entries.length} universities, ${manifest.entries.reduce((n, e) => n + e.assets.length, 0)} assets.`,
   );
@@ -109,6 +122,19 @@ async function main() {
     };
   }
 
+  function uploadBytes(asset: ManifestAsset, buffer: Buffer) {
+    return new Promise<{ secure_url: string; public_id: string; bytes: number }>((resolve, reject) => {
+      const stream = cloudinary.uploader.upload_stream(
+        uploadOptions(asset),
+        (error, result) => {
+          if (error || !result) reject(new Error(errorMessage(error)));
+          else resolve(result as { secure_url: string; public_id: string; bytes: number });
+        },
+      );
+      stream.end(buffer);
+    });
+  }
+
   async function uploadViaClientFetch(asset: ManifestAsset) {
     const isWikimedia = asset.sourceUrl.includes("upload.wikimedia.org");
     const backoffs = isWikimedia ? [3000, 8000] : [];
@@ -125,16 +151,7 @@ async function main() {
     const buffer = Buffer.from(await response!.arrayBuffer());
     if (buffer.byteLength < 500) throw new Error(`Client fetch returned a suspiciously small body (${buffer.byteLength} bytes).`);
 
-    return new Promise<{ secure_url: string; public_id: string; bytes: number }>((resolve, reject) => {
-      const stream = cloudinary.uploader.upload_stream(
-        uploadOptions(asset),
-        (error, result) => {
-          if (error || !result) reject(new Error(errorMessage(error)));
-          else resolve(result as { secure_url: string; public_id: string; bytes: number });
-        },
-      );
-      stream.end(buffer);
-    });
+    return uploadBytes(asset, buffer);
   }
 
   // Wikimedia serves properly web-sized thumbnails via its own CDN — no site embeds
@@ -165,7 +182,9 @@ async function main() {
       let lastError: unknown;
 
       try {
-        result = await cloudinary.uploader.upload(asset.sourceUrl, uploadOptions(asset));
+        result = asset.uploadFromReviewedLocalOriginal
+          ? await uploadBytes(asset, reviewedOriginals.get(asset)!)
+          : await cloudinary.uploader.upload(asset.sourceUrl, uploadOptions(asset));
       } catch (err) {
         lastError = err;
       }
@@ -173,7 +192,7 @@ async function main() {
       // Cloudinary's own server-side fetch is sometimes blocked by bot-protection
       // that a browser-like client request bypasses; fall back to fetching the
       // asset ourselves and uploading the bytes directly.
-      if (!result || !result.secure_url || !result.bytes || result.bytes < 500) {
+      if (!asset.uploadFromReviewedLocalOriginal && (!result || !result.secure_url || !result.bytes || result.bytes < 500)) {
         try {
           result = await uploadViaClientFetch(asset);
         } catch (err) {

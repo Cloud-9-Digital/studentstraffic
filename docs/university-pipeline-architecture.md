@@ -568,6 +568,16 @@ university, logo and cover sources go into the batch media manifest and are appl
 `docs/content-seeding-runbook.md` for the full source/legibility/hold rules. A missing cover may be
 held only with a recorded reason; it must not be silently deferred to a later enrichment pass.
 
+**Reviewed local originals (25 October 2026):** if an official public image can be saved normally in
+the browser but ordinary downloads return a challenge page, the same uploader accepts explicit
+`uploadFromReviewedLocalOriginal: true`, `localPath` and `sha256` on a reviewed manifest asset.
+Keep the original HTTPS `sourceUrl`, rights basis and visual/source association. The intact original
+must live under `research/india-source-bundles`; real-path checks prevent symlink escapes, and size,
+image signature and SHA-256 checks reject challenge HTML or changed files before any upload. A failed
+local check does not fall back to a different source. Existing reviewed Cloudinary crops still apply
+at upload; public delivery and provenance fields remain unchanged. This supports ordinary saved
+public originals and does not authorise bypassing access controls.
+
 ## Medium normalization (2026-09-09)
 
 `instruction_languages` remains the controlled teaching-language facet. `medium` is its short display label (e.g. `English` or `English / French`), or `Not confirmed` when delivery cannot be established. `medium_details` preserves the original evidence and caveats; it is not a stats-card value. Admission-test requirements, translated application instructions and foreign-language electives do not establish teaching language. Never default missing medium to English.
