@@ -142,6 +142,10 @@ separate from postgraduate two-year M.E./M.Tech families requiring an existing d
 Each offering retains its official award title and institution-specific duration. Reusable,
 university-neutral records are in `research/india-bdu-canonical-courses.json`.
 
+The Engineering Data Science family's default duration was corrected to four years in the
+Panimalar/SNU Chennai continuation. Older shared records had carried a three-year default;
+the verified B.E./B.Tech offerings themselves retain their four-year durations.
+
 
 ### Bharathiar postgraduate mappings — 24 October 2026
 

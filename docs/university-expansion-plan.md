@@ -147,11 +147,15 @@ apply to `publish-university-draft.ts` and to content-migration payloads (see
 ## Country/scope priority queue
 
 **2026-10-24 user-directed Tamil Nadu continuation:** resume the existing shared-ledger work before
-claiming more institutions. The active reviewed batch is Kongu Engineering College, Periyar
-Maniammai Institute of Science & Technology, Bharathiar University and Bharathidasan University.
+claiming more institutions. The reviewed publication batch covers Kongu Engineering College, Periyar
+Maniammai Institute of Science & Technology, Bharathiar University, Bharathidasan University,
+Panimalar Engineering College and Shiv Nadar University Chennai (including the verified SSN
+new-entry transition). These institutions' supported offerings have been published; remaining
+programme-level holds stay in their inventories.
 Preserve programme-level evidence holds and distinguish historical intake baselines from future
 application windows. Saveetha SIMATS and Sathyabama remain follow-up candidates with explicit
-source gaps; the inherited Vel Tech draft is held for identity, inventory and payload reconstruction.
+source gaps. VISTAS, BIHER and Madurai Kamaraj University retain precise evidence holds; the inherited
+Vel Tech draft is held for identity, inventory and payload reconstruction.
 Use the batch run report for applied migration IDs and live verification, rather than treating a
 claim, reservation or delegated assignment as publication. Independent sources may provide
 discovery and corroboration alongside primary evidence; credibility and claim scope determine use.
