@@ -1,0 +1,27 @@
+{
+  "appliedAt": "2026-10-24T20:45:35.949Z",
+  "uploads": {
+    "attempted": 4,
+    "succeeded": 4,
+    "failed": 0
+  },
+  "database": {
+    "updated": 2,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "sri-venkateswara-college-of-engineering",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "sathyabama-institute-of-science-and-technology",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

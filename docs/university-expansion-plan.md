@@ -249,6 +249,6 @@ SIMATS occupational therapy (4). Their complete inventories retain programme and
 holds. SVCE, Sathyabama and IIT Madras are the current offline research assignments. Keep new
 unreviewed payloads outside the executable migration sequence during a controlled grouped apply.
 
-**Next grouped publication:** SVCE Pennalur (11 verified undergraduate offerings,0211), CMI/SIMATS
+**Published grouped continuation:** SVCE Pennalur (11 verified undergraduate offerings,0211), CMI/SIMATS
 canonical city-facet correction (0212, existing10offerings preserved), and Sathyabama Marine Biology
 (1 programme,0213). Next offline research: Loyola College Chennai, IIT Madras and VISTAS.
