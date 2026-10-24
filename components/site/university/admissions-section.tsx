@@ -23,6 +23,7 @@ import {
   getRussiaOfficialPageAuditSummary,
 } from "@/lib/data/russia-official-page-audit";
 import { formatProgramDuration, formatProgramMedium } from "@/lib/utils";
+import { getProgrammeEligibilityItems } from "@/lib/program-eligibility";
 
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 
@@ -364,13 +365,6 @@ export function UniversityEligibilitySection({
   const universityAdmissions = university.admissionsContent;
   const course = primaryProgram?.course.shortName ?? "this program";
   const audienceEligibility = primaryProgram?.offering.audienceEligibility;
-  const audienceItems = [
-    ...(audienceEligibility?.eligibleAudiences ?? []).map(
-      (audience) => `Open to: ${audience}`,
-    ),
-    ...(audienceEligibility?.restrictions ?? []),
-  ];
-
   const eligibilityIntro =
     primaryProgram
       ? programAdmissions?.eligibility.intro ??
@@ -382,7 +376,7 @@ export function UniversityEligibilitySection({
 
   const eligibilityItems =
     primaryProgram
-      ? programAdmissions?.eligibility.items ?? audienceItems
+      ? getProgrammeEligibilityItems(programAdmissions?.eligibility.items, audienceEligibility)
       : universityAdmissions?.eligibility?.items ?? countryContent?.eligibility.items ?? [];
 
   const educationalDocuments =
@@ -475,6 +469,11 @@ export function UniversityEligibilitySection({
               Detailed academic requirements have not yet been published for this programme.
             </p>
           )}
+          {audienceEligibility?.notes && audienceEligibility.notes !== eligibilityIntro ? (
+            <p className="mt-5 text-sm leading-7 text-muted-foreground">
+              {audienceEligibility.notes}
+            </p>
+          ) : null}
         </div>
       </div>
 
