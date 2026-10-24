@@ -1,0 +1,33 @@
+{
+  "appliedAt": "2026-10-24T21:20:21.486Z",
+  "uploads": {
+    "attempted": 6,
+    "succeeded": 6,
+    "failed": 0
+  },
+  "database": {
+    "updated": 3,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "loyola-college-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "indian-institute-of-technology-madras",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "madras-christian-college",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

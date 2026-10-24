@@ -258,4 +258,4 @@ Four vocational awards were added through the closed same-course-set Kaushal cro
 41named dated-medium routes;8other current degree/shift routes remain held. Collect the next
 reviewed bundles for a grouped publication window while agents research offline.
 
-**Next grouped window (0214–0216):** Loyola College Chennai45, IIT Madras74 and Madras Christian College25 offerings (144 total) are reviewed for grouped publication. VISTAS, NIT Tiruchirappalli and Presidency College continue offline; no unreviewed payload enters the executable sequence during the apply.
+**Published grouped window (0214–0216):** Loyola College Chennai45, IIT Madras74 and Madras Christian College25 offerings (144 total) are published with all six reviewed media assets assigned. VISTAS, NIT Tiruchirappalli and Presidency College continue offline; no unreviewed payload enters the executable sequence during the apply.
