@@ -113,4 +113,3 @@ test("existing positive annual tuition retains its normalized display and paid O
   assert.equal(getProgramOfferingStructuredData({ ...program, offering: positive }).offers?.category, "Paid");
   assert.equal(getProgramOfferingStructuredData({ ...program, offering: positive }).offers?.price, 100000);
 });
-

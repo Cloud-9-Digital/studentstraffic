@@ -1,0 +1,47 @@
+{
+  "manifestId": "india-ethiraj-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Complete identifying crest cropped from official desktop logo; authentic Instrumentation Centre laboratory photograph, accurately labelled as a facility.",
+  "entries": [
+    {
+      "universitySlug": "ethiraj-college-for-women",
+      "universityName": "Ethiraj College for Women (Autonomous)",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://ethirajcollege.edu.in/static/media/logoDesktop.284fe9195baf0fb3766f.png",
+          "sourceType": "official",
+          "sourcePage": "https://ethirajcollege.edu.in/",
+          "rightsBasis": "Official college-owned identifying asset or facility photograph displayed on the college website. Ordinary direct HTTPS retrieval returned genuine image bytes; complete original and SHA256 retained. Visually checked25October2026. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/ethiraj-college-for-women/logo",
+          "altText": "Ethiraj College for Women complete crest",
+          "localPath": "research/india-source-bundles/ethiraj-20261025/logo.png",
+          "sha256": "00c49da45ec3a25f906cb5abdfb229525e3c39d20a6bcb8c46c28a0278624896",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 84,
+              "height": 84
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://ethirajcollege.edu.in/static/media/researchHome1.cddfbe84ca3fcc214bb9.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://ethirajcollege.edu.in/",
+          "rightsBasis": "Official college-owned identifying asset or facility photograph displayed on the college website. Ordinary direct HTTPS retrieval returned genuine image bytes; complete original and SHA256 retained. Visually checked25October2026. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/ethiraj-college-for-women/cover",
+          "altText": "Instrumentation Centre laboratory facilities at Ethiraj College for Women in Chennai",
+          "localPath": "research/india-source-bundles/ethiraj-20261025/campus-source.jpg",
+          "sha256": "940e003308a9da76165d6a2ca2b9740af857936ea798474be88e8de3a4d5f11f"
+        }
+      ],
+      "migrationId": "0226-ethiraj-college-for-women"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-veterinary-and-animal-sciences-university",
+      "universityName": "Tamil Nadu Veterinary and Animal Sciences University",
+      "sourceBatch": "codex-tanuvas-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://adm.tanuvas.ac.in/images/tanuvas_logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional emblem published on its own public website; no ownership transfer claimed, no AI generation or redrawing.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-veterinary-and-animal-sciences-university/logo-20261025",
+          "altText": "Tamil Nadu Veterinary and Animal Sciences University official emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/tamil-nadu-veterinary-and-animal-sciences-university/logo-admissions.png",
+          "sha256": "86e4d76c3db50b6a7060d74b1ac73fc39d622affc5e6674c0a9aec20cf937ffd",
+          "width": 2194,
+          "height": 2194
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tanuvas.ac.in/admin/uploads/homeslider/1779449188.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional building photograph published on its own public website; no ownership transfer claimed, no AI generation or redrawing.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-veterinary-and-animal-sciences-university/cover-20261025",
+          "altText": "TANUVAS university headquarters building at Madhavaram Milk Colony in Chennai",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/tamil-nadu-veterinary-and-animal-sciences-university/1779449188.jpg",
+          "sha256": "fd0ca38a9e2bde5d32b7b2497a126404bbbdc4355eac612fa74351c5acc1797a",
+          "width": 1226,
+          "height": 527
+        }
+      ],
+      "migrationId": "0224-india-tamil-nadu-veterinary-and-animal-sciences-university"
+    }
+  ]
+}

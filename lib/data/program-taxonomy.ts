@@ -306,6 +306,7 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "master-astrology", name: "Master's in Astrology", shortName: "Master's Astrology", stream: "arts-humanities", level: "masters", discipline: "astrology", aliases: ["MA Astrology", "Master of Arts in Astrology"] },
   { slug: "bachelor-visual-arts", name: "Bachelor's in Visual Arts", shortName: "Bachelor's Visual Arts", stream: "design-creative-arts", level: "bachelors", discipline: "visual-arts", aliases: ["Bachelor of Visual Arts", "BVA", "B.V.A."] },
   { slug: "master-art-history", name: "Master's in Art History", shortName: "Master's Art History", stream: "arts-humanities", level: "masters", discipline: "art-history", aliases: ["MA Art History", "MA History of Fine Arts", "Master of Arts in Art History"] },
+  { slug: "master-human-resource-management", name: "Master's in Human Resource Management", shortName: "Master's HRM", stream: "business", level: "masters", discipline: "human-resource-management", aliases: ["MA Human Resource Management", "Master of Arts in Human Resource Management", "MHRM"] },
 ]);
 
 /**
@@ -1044,6 +1045,7 @@ export const canonicalProgrammes = [
   {"slug": "bsc-agribusiness-management", "name": "B.Sc. in Agribusiness Management", "shortName": "B.Sc. Agribusiness", "stream": "agriculture", "level": "bachelors", "discipline": "agribusiness-management", "aliases": ["Bachelor of Science in Agribusiness Management", "B.Sc. (Hons.) Agri Business Management", "B.Sc. (Hons.) Agribusiness Management"]},
   {"slug": "me-mtech-agricultural-engineering", "name": "M.E./M.Tech in Agricultural Engineering", "shortName": "M.E./M.Tech Agricultural", "stream": "engineering", "level": "masters", "discipline": "agricultural-engineering", "aliases": ["Master of Technology in Agricultural Engineering", "Master of Engineering in Agricultural Engineering", "M.Tech. (Agricultural Engineering)"]},
   {"slug": "phd-agriculture-allied-sciences", "name": "PhD in Agriculture and Allied Sciences", "shortName": "PhD Agriculture", "stream": "agriculture", "level": "doctorate", "discipline": "agriculture-allied-sciences", "aliases": ["Doctor of Philosophy in Agriculture", "PhD Agricultural Sciences", "Doctorate in Agriculture and Allied Sciences"]},
+  {"slug": "be-btech-poultry-technology", "name": "B.E./B.Tech in Poultry Technology", "shortName": "B.E./B.Tech Poultry Technology", "stream": "engineering", "level": "bachelors", "discipline": "poultry-technology", "aliases": ["Bachelor of Technology in Poultry Technology", "B.Tech Poultry Production Technology"]},
 ] as const satisfies readonly CanonicalProgramme[];
 
 export type CanonicalProgrammeSlug = (typeof canonicalProgrammes)[number]["slug"];

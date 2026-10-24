@@ -259,3 +259,15 @@ an institution's B.V.A. as B.F.A. `master-art-history` covers academic master's
 study of art history, visual culture and historical interpretation, including
 M.A. History of Fine Arts. It is distinct from a practice-based Master of Fine
 Arts. Exact award names, entry qualifications and duration remain offering facts.
+
+
+`be-btech-poultry-technology` preserves the engineering bachelor's award in Poultry
+Technology, including the older Poultry Production Technology name. It combines
+poultry production with hatchery systems, feed processing, equipment and industrial
+training. It is distinct from a veterinary degree or a non-engineering poultry
+science award. Exact campus, entry route, instruction language and fees remain
+programme-level facts.
+
+### Non-MBA master's Human Resource Management
+
+`master-human-resource-management` covers academic master's awards such as M.A. Human Resource Management and MHRM. Keep the exact institutional award title. It is distinct from `mba-human-resource-management`, which represents an MBA award, and from the postgraduate diploma family. HRM study may cover recruitment, organisational behaviour, employment relations, people development and analytical methods; curriculum and entry requirements vary by institution.

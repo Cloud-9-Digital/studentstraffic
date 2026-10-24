@@ -590,7 +590,7 @@ public originals and does not authorise bypassing access controls.
 
 ## Medium normalization (2026-09-09)
 
-`instruction_languages` remains the controlled teaching-language facet. `medium` is its short display label (e.g. `English` or `English / French`), or `Not confirmed` when delivery cannot be established. `medium_details` preserves the original evidence and caveats; it is not a stats-card value. Admission-test requirements, translated application instructions and foreign-language electives do not establish teaching language. Never default missing medium to English.
+`instruction_languages` remains the controlled teaching-language facet. `medium` is its short display label (e.g. `English` or `English / French`); hold a programme when delivery cannot be established. `medium_note` preserves short delivery caveats, with full evidence in provenance and teaching/admissions requirements in their structured fields. Admission-test requirements, translated application instructions and foreign-language electives do not establish teaching language. Never default missing medium to English or publish a placeholder.
 
 Both publishers use `lib/program-medium.ts`. Migration `0073_normalize_program_medium` adds the notes column and a write trigger enforcing canonical labels from language codes. Run `npx tsx scripts/normalize-program-medium.ts` to preview legacy changes and add `--apply` to back up and normalize the configured database, including search-document labels. Verify the printed database target before applying. No course, fee, admission, or publication fields are changed.
 

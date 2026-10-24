@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "womens-christian-college-chennai",
+      "universityName": "Women's Christian College, Chennai",
+      "sourceBatch": "codex-wcc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://wcc.edu.in/wp-content/themes/wcc/assets/images/logo/WCCLogo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://wcc.edu.in/",
+          "rightsBasis": "Official institutional public brand/campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Women's Christian College Chennai crest and wordmark",
+          "visualCheck": "Native858×469 transparent crest and black institutional wordmark with LightedtoLighten motto; genuine official header brand asset, not favicon or synthetic image.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Normal public browser page and downloadMedia, followed by sequential native view_image inspection. Direct automatedHTTP403; no bypass or CAPTCHA solved. Local retained original inspected.",
+          "proposedPublicId": "studentstraffic/universities/womens-christian-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/womens-christian-college-chennai/logo.png",
+          "sha256": "71f8bc30e9a37dce4749ddbe11e4173676cb7c23752be89d52edc334ce43df74",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://wcc.edu.in/wp-content/uploads/2021/06/6.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://wcc.edu.in/",
+          "rightsBasis": "Official institutional public brand/campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Doveton House entrance at Women’s Christian College, Chennai",
+          "visualCheck": "Native650×650 official homepage campus card; white classical columned entrance, garden and heritage building, consistent with prospectus DovetonHouse campus description. No stock or attribution-dependent licence used.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Normal public browser page and downloadMedia, followed by sequential native view_image inspection. Direct automatedHTTP403; no bypass or CAPTCHA solved. Local retained original inspected.",
+          "proposedPublicId": "studentstraffic/universities/womens-christian-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/womens-christian-college-chennai/campus.jpg",
+          "sha256": "5d404a7c16e456c4d4e0e9054219896faf1f663154c4ab7e41ce57b61e2ec832",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0225-india-womens-christian-college-chennai"
+    }
+  ]
+}
