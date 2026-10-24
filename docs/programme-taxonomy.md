@@ -173,3 +173,18 @@ Added generic degree families for undergraduate Marine Engineering, undergraduat
 ### Fisheries science and engineering (25 October 2026)
 
 Distinct generic `bachelor-fisheries-science` and `master-fisheries-science` categories retain the fisheries-science qualification at bachelor and master levels. Fisheries engineering uses `be-btech-fisheries-engineering` and `me-mtech-fisheries-engineering`; the latter covers postgraduate aquacultural engineering and fish-process engineering specialisations. These categories are distinct from marine engineering, marine biology and general agriculture, and use university-neutral shared summaries.
+
+### Physical education, coaching and Yoga qualifications (25 October 2026)
+
+`bachelor-physical-education` represents the B.P.Ed. qualification, including graduate-entry bachelor routes; it remains at bachelor level and is distinct from the existing BPES physical-education-and-sports category. `bachelor-sports-coaching` represents coaching-focused bachelor awards. `bsc-yoga` and `msc-yoga` distinguish science qualifications in Yoga by level and do not imply medical licensure or an English-only track. All shared summaries are university-neutral.
+
+### Engineering physics, design engineering and integrated engineering families (25 October 2026)
+
+IIITDM Kancheepuram's current programme directory and 2026 reporting instructions distinguish four-year B.Tech Design Engineering and Engineering Physics from B.Des and B.Sc Physics. University-neutral `be-btech-design-engineering` and `be-btech-engineering-physics` preserve those science-and-engineering qualifications. Smart Manufacturing reuses Industrial and Production Engineering; M.Tech specialisations reuse their CSE, ECE or Mechanical Engineering parents.
+
+Five-year B.Tech/M.Tech dual degrees use integrated-master's families: existing `integrated-mtech-computer-science-engineering`, plus `integrated-mtech-electronics-communication-engineering` and `integrated-mtech-mechanical-engineering`. Official programme titles retain both awards and the named master's specialisation. The CSE generic family's historical six-year default does not override the verified five-year IIITDM offering. No university-specific course family is added.
+
+
+### IMU maritime award families — 25 October 2026
+
+Added Diploma in Nautical Science (one-year diploma), Postgraduate Diploma in Marine Engineering (one-year graduate conversion award), and M.E./M.Tech in Dredging and Harbour Engineering (two-year master’s). DNS leads towards later B.Sc. Applied Nautical Science stages and must not be classified as a one-year bachelor’s. Graduate Marine Engineering is a postgraduate diploma, not a B.Tech. Naval architecture/ocean and shipbuilding degrees use the existing naval architecture engineering families; M.Tech. Marine Technology uses the marine-engineering master’s family. Campus and admission audience remain offering data.

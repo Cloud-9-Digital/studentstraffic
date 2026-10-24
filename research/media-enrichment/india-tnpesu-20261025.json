@@ -1,0 +1,43 @@
+{
+  "manifestId": "india-tnpesu-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "TNPESU official crest and main campus cover",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "universityName": "Tamil Nadu Physical Education and Sports University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnpesu.org/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnpesu.org/",
+          "rightsBasis": "Official university identifying crest on its own homepage header; no open licence claimed. Visually inspected25October2026. Crop retains complete crest, excluding institutional wordmark/accreditation text; no brand alteration.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-physical-education-and-sports-university/logo",
+          "altText": "Tamil Nadu Physical Education and Sports University crest",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 108,
+              "height": 130
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnpesu.org/images/slider/105.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnpesu.org/",
+          "rightsBasis": "Official university homepage campus photograph; no open licence claimed. Visually inspected25October2026: authentic branded main campus building, no watermark or synthetic content.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-physical-education-and-sports-university/cover",
+          "altText": "Tamil Nadu Physical Education and Sports University main campus building at Melakottaiyur, Chennai"
+        }
+      ],
+      "migrationId": "0204-india-tamil-nadu-physical-education-and-sports-university"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "indian-institute-of-information-technology-design-and-manufacturing-kancheepuram",
+      "universityName": "Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",
+      "sourceBatch": "codex-iiitdm-kancheepuram-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.iiitdm.ac.in/apple-touch-icon.png",
+          "proposedPublicId": "studentstraffic/universities/indian-institute-of-information-technology-design-and-manufacturing-kancheepuram/logo-20261025",
+          "altText": "IIITDM Kancheepuram official gear and person emblem",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identification asset used in a factual institutional profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.iiitdm.ac.in/_app/immutable/assets/1.b2a0b2ba.webp",
+          "proposedPublicId": "studentstraffic/universities/indian-institute-of-information-technology-design-and-manufacturing-kancheepuram/cover-20261025",
+          "altText": "Multi-storey residential hostel buildings at IIITDM Kancheepuram Chennai campus",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional campus photograph used to illustrate residential facilities in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

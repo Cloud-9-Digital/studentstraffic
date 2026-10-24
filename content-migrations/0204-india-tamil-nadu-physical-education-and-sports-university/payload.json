@@ -1,0 +1,1452 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bachelor-physical-education-sports",
+      "name": "Bachelor's in Physical Education and Sports",
+      "shortName": "Bachelor's Physical Education",
+      "stream": "education",
+      "level": "bachelors",
+      "discipline": "physical-education-sports",
+      "aliases": [
+        "Bachelor of Physical Education and Sports",
+        "BPES",
+        "BSc Sports Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Physical education and sports bachelor’s programmes combine academic knowledge of movement, games, exercise and education with practical sporting activity. Curricula and entry routes vary by university. Compare prior-school qualifications, sports participation, fitness and selection requirements, teaching language, campus, duration and full study costs.",
+      "metaTitle": "Bachelor's in Physical Education and Sports: Entry and Fees",
+      "metaDescription": "Compare Bachelor's in Physical Education and Sports programmes by entry requirements, teaching language, duration, practical study, campus attendance and study costs."
+    },
+    {
+      "slug": "bachelor-physical-education",
+      "name": "Bachelor of Physical Education",
+      "shortName": "B.P.Ed.",
+      "stream": "education",
+      "level": "bachelors",
+      "discipline": "physical-education",
+      "aliases": [
+        "BPEd",
+        "Bachelor of Physical Education (graduate entry)"
+      ],
+      "displayOrder": 1,
+      "durationYears": 2,
+      "summary": "Bachelor of Physical Education programmes develop knowledge and practical skills for physical education, games, movement and teaching practice. Some systems offer this bachelor qualification after a prior degree. Compare the exact entry pattern, sports and fitness conditions, selection process, professional recognition, teaching language and practical requirements.",
+      "metaTitle": "Bachelor of Physical Education: Entry and Fees",
+      "metaDescription": "Compare Bachelor of Physical Education programmes by entry requirements, teaching language, duration, practical study, campus attendance and study costs."
+    },
+    {
+      "slug": "bsc-yoga",
+      "name": "B.Sc. in Yoga",
+      "shortName": "B.Sc. Yoga",
+      "stream": "public-health-allied-health",
+      "level": "bachelors",
+      "discipline": "yoga",
+      "aliases": [
+        "Bachelor of Science in Yoga",
+        "BSc Yoga"
+      ],
+      "displayOrder": 2,
+      "durationYears": 3,
+      "summary": "Yoga science bachelor’s programmes combine academic study of Yoga with practical instruction and related subjects in human function, wellbeing and applied practice. Degree scope and teaching language vary by institution. Compare school qualifications, practical requirements, programme duration, language, campus attendance and complete costs; a degree does not itself establish medical licensure.",
+      "metaTitle": "B.Sc. in Yoga: Entry and Fees",
+      "metaDescription": "Compare B.Sc. in Yoga programmes by entry requirements, teaching language, duration, practical study, campus attendance and study costs."
+    },
+    {
+      "slug": "msc-yoga",
+      "name": "M.Sc. in Yoga",
+      "shortName": "M.Sc. Yoga",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "yoga",
+      "aliases": [
+        "Master of Science in Yoga",
+        "MSc Yoga"
+      ],
+      "displayOrder": 3,
+      "durationYears": 2,
+      "summary": "Yoga science master’s programmes provide advanced academic and practical study of Yoga and related approaches to human function and wellbeing. Curricula may combine specialist coursework, practical instruction and applied academic work. Compare qualifying degrees, marks, teaching languages, campus attendance and assessment; the qualification does not itself confer medical licensure.",
+      "metaTitle": "M.Sc. in Yoga: Entry and Fees",
+      "metaDescription": "Compare M.Sc. in Yoga programmes by entry requirements, teaching language, duration, practical study, campus attendance and study costs."
+    },
+    {
+      "slug": "bachelor-sports-coaching",
+      "name": "Bachelor's in Sports Coaching",
+      "shortName": "Bachelor's Sports Coaching",
+      "stream": "education",
+      "level": "bachelors",
+      "discipline": "sports-coaching",
+      "aliases": [
+        "Bachelor of Science in Sports Coaching",
+        "BSc Sports Coaching"
+      ],
+      "displayOrder": 4,
+      "durationYears": 3,
+      "summary": "Sports coaching bachelor’s programmes study training methods, sport skills, performance and the academic foundations of coaching. Curricula commonly combine theory with practical coaching and sporting activity. Compare the qualifying school examination, required sports participation, selection trials, language, campus, practical assessment and full study budget.",
+      "metaTitle": "Bachelor's in Sports Coaching: Entry and Fees",
+      "metaDescription": "Compare Bachelor's in Sports Coaching programmes by entry requirements, teaching language, duration, practical study, campus attendance and study costs."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "tamil-nadu-physical-education-and-sports-university",
+      "name": "Tamil Nadu Physical Education and Sports University",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 2005,
+      "officialWebsite": "https://www.tnpesu.org/",
+      "mediaAttribution": {},
+      "summary": "Tamil Nadu Physical Education and Sports University is a public state university at Melakottaiyur, Chennai. Its regular campus programmes cover physical education, Yoga, sports coaching and related sports sciences. Academic study combines classroom and practical learning. Entry conditions vary by award; Yoga uses English and Tamil, while specific physical education and coaching programmes specify English.",
+      "campusLifestyle": "The Melakottaiyur campus has playing fields, an athletics track, indoor sports space and specialised academic departments. The university supports football, hockey, volleyball, cricket, kabaddi and other games. The programme you choose determines the combination of classroom study, practical work and sports activity.",
+      "cityProfile": "The main campus is on Vandalur–Kelambakkam Road at Melakottaiyur, Chennai 600127. It is separate from the university’s affiliated colleges. Confirm the university-department campus on the admission order before arranging travel, a hostel room or a daily commute.",
+      "practicalExposure": "Regular sports and physical education courses combine academic learning with practical activity. Physical education programmes include game skills and teaching or coaching practice; Sports Coaching study focuses on coaching methods and performance. Yoga courses include practical instruction alongside academic subjects. Selection and assessment are programme-specific.",
+      "hostelOverview": "The university has men’s and women’s hostel facilities. The 2026 notice lists room rent INR 2,250 per semester, mess advance INR 7,500 per semester, establishment charge INR 2,000, first-year caution deposit INR 5,000 and hostel application INR 100. Its published initial first-year total is INR 16,850. Monthly mess is paid at the approved rate; obtain the complete payment schedule and allotment before moving.",
+      "dietarySupport": "A mess advance is separate from monthly mess charges. The 2026 hostel notice requires monthly mess payment at the approved rate, so obtain the current food budget and settlement method. The first-year university aggregate academic charge does not include meals.",
+      "safetyOverview": "The university has a health centre, anti-ragging arrangements, an Internal Complaints Cell, grievance redressal and anti-drug measures. Physical education applicants must check programme-specific medical and physical-selection conditions before applying.",
+      "studentSupport": "Students have library services, sports facilities, counselling, career guidance and placement-cell support. The university also introduces scholarship and SC/ST-cell services during induction. Students Traffic can help assess the qualification route, language needs and complete study budget.",
+      "whyChoose": [
+        "Specialist academic departments in physical education, Yoga and sports sciences.",
+        "Regular programmes combine classroom and practical study on a dedicated sports campus.",
+        "Separate physical education and sports-coaching qualifications with programme-specific entry routes."
+      ],
+      "thingsToConsider": [
+        "Yoga instruction includes English and Tamil; an English-only route is not established.",
+        "Physical education and coaching programmes have sports, fitness or practical-selection conditions.",
+        "Published first-year academic charges are aggregates; isolated tuition and future-year charges need a quotation.",
+        "The July 2026 class-start date is historical; the next intake requires a new notice."
+      ],
+      "bestFitFor": [
+        "Applicants seeking regular study in physical education, coaching or Yoga.",
+        "Sports participants ready for academic and practical assessment.",
+        "Students who can meet the precise teaching-language and programme-specific entry conditions."
+      ],
+      "recognitionBadges": [
+        "UGC — State University listed at Chennai, established 2005",
+        "NCTE — university B.P.Ed. listed as recognised, file SRCAPP2246"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated university register, entry 832",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "NCTE recognised-institution register, university B.P.Ed.",
+          "url": "https://web.ncte.gov.in/page-regional-committee-institution-lists-hindi/32/tamil-nadu?page=57"
+        }
+      ],
+      "industryPartners": [],
+      "researchSources": [
+        {
+          "label": "UGC State University register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NCTE current recognised-institution register",
+          "url": "https://web.ncte.gov.in/page-regional-committee-institution-lists-hindi/32/tamil-nadu?page=57",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current taught programme directory",
+          "url": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Complete regular admission notification and charges2026",
+          "url": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "First-year commencement circular2026",
+          "url": "https://tnpesu.org/upload/College%20Open%20Circular%202026-2027.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "First-year induction programme2026",
+          "url": "https://tnpesu.org/upload/Fresher%27s%20Induction%20Programme%20Circular.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University facilities and FAQ",
+          "url": "https://www.tnpesu.org/faq.html",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "tnpesu-bpes",
+          "canonicalCourseSlug": "bachelor-physical-education-sports",
+          "officialTitle": "B.P.E.S. (Bachelor of Physical Education and Sports)",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established."
+          },
+          "officialProgramUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular university-department admission route and meeting the programme-specific qualification conditions"
+            ],
+            "restrictions": [
+              "The programme’s 2023-onwards regulations list medical and physical exclusions, including pregnancy and specified impairments. Obtain current written eligibility criteria and an individual assessment before applying.",
+              "Foreign-national, NRI and student-visa eligibility are not established by the regular Indian criteria."
+            ],
+            "notes": "University main campus, Vandalur–Kelambakkam Road, Melakottaiyur, Chennai 600127. Affiliated-college and distance-learning admissions have separate conditions.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Three-year bachelor’s study in physical education and sports combines theory, games, practical training and coaching or teaching practice. Study is at the university main campus in Melakottaiyur, Chennai.",
+            "eligibility": {
+              "intro": "Regular Indian admission route; check the qualifying records, programme conditions and applicant category before applying.",
+              "items": [
+                "Pass HSC under 10+2 or an equivalent examination recognised by Tamil Nadu or approved by the university.",
+                "School-level representation in a game or sport is mandatory.",
+                "Age limit: 21 on 1 July 2026. The UG notice allows five years’ disability relaxation and three years for SC/SCA/ST/BC/BCM/MBC/DNC and women; programme qualification and fitness rules still apply.",
+                "Programme-specific medical fitness and physical-performance conditions apply, with medical examination at admission.",
+                "Selection ranks qualifying examination, sports participation, game skills, track-and-field skills and the applicable physical-education subject bonus."
+              ]
+            },
+            "applicationSteps": [
+              "Use tnpesuonline.in through the university’s regular-admission link when the next application cycle opens.",
+              "Choose the exact programme, enter the required details and attach scanned educational qualifications and relevant category or sports records.",
+              "Pay the application processing charge online by credit card, debit card or net banking and retain the completed application and payment record.",
+              "Attend the programme-specific selection process and follow the department’s allotment and original-verification instructions.",
+              "Bring the downloaded application and attachments in hard copy at admission; confirm tuition breakdown, hostel allotment and complete charges before paying."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying HSC/10+2 pass certificate or accepted equivalent qualification record.",
+                "Mark statement for the qualifying HSC/10+2 examination."
+              ],
+              "application": [
+                "Downloaded completed online application with attachments, presented as a hard copy at admission.",
+                "Community/category evidence where claiming a concession or reservation.",
+                "Sports-participation and achievement certificates for the applicable eligibility and selection claims.",
+                "Medical-fitness record required by the programme’s admission rules."
+              ]
+            },
+            "deadlinesNote": "The 2026 application deadline was 6 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice."
+          },
+          "medium": "English",
+          "mediumNote": "The programme-specific regulations explicitly specify English instruction; language-subject courses are part of the curriculum where prescribed.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+          "teachingPhases": [
+            {
+              "phase": "3 years of regular campus study",
+              "language": "English",
+              "details": "Three-year bachelor’s study in physical education and sports combines theory, games, practical training and coaching or teaching practice. University main campus in Melakottaiyur, Chennai; attendance, practical work and programme assessment requirements apply."
+            }
+          ]
+        },
+        {
+          "slug": "tnpesu-bped",
+          "canonicalCourseSlug": "bachelor-physical-education",
+          "officialTitle": "B.P.Ed. (Bachelor of Physical Education)",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026-27 first-year aggregate university charge is INR 27,096 for Others and INR 11,340 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established."
+          },
+          "officialProgramUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular university-department admission route and meeting the programme-specific qualification conditions"
+            ],
+            "restrictions": [
+              "This is a graduate-entry bachelor qualification. Its 2023-onwards regulations list medical and physical exclusions, including pregnancy and specified impairments; obtain current written eligibility criteria and an individual assessment.",
+              "Foreign-national, NRI and student-visa eligibility are not established by the regular Indian criteria."
+            ],
+            "notes": "University main campus, Vandalur–Kelambakkam Road, Melakottaiyur, Chennai 600127. Affiliated-college and distance-learning admissions have separate conditions.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Two-year graduate-entry Bachelor of Physical Education study combines academic learning, physical practice, games and teaching or coaching experience. Study is at the university main campus in Melakottaiyur, Chennai.",
+            "eligibility": {
+              "intro": "Regular Indian admission route; check the qualifying records, programme conditions and applicant category before applying.",
+              "items": [
+                "The route below covers graduates with at least 50% in a recognised bachelor’s degree after 10+2. Other specified qualification routes have separate conditions.",
+                "At least the required school/inter-school sports participation is compulsory; recognised higher-level participation may support selection.",
+                "The 2023 regulations set an ordinary age ceiling of 30 years on 1 July, with specified SC/ST and eligible employed ex-serviceman/teacher relaxations.",
+                "Medical examination and the programme’s physical-fitness conditions apply.",
+                "Selection includes academic marks, sports participation and practical game/track-and-field skill tests."
+              ]
+            },
+            "applicationSteps": [
+              "Use tnpesuonline.in through the university’s regular-admission link when the next application cycle opens.",
+              "Choose the exact programme, enter the required details and attach scanned educational qualifications and relevant category or sports records.",
+              "Pay the application processing charge online by credit card, debit card or net banking and retain the completed application and payment record.",
+              "Attend the programme-specific selection process and follow the department’s allotment and original-verification instructions.",
+              "Bring the downloaded application and attachments in hard copy at admission; confirm tuition breakdown, hostel allotment and complete charges before paying."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying bachelor’s degree certificate or accepted equivalent qualification record.",
+                "Mark statements for the qualifying bachelor’s degree."
+              ],
+              "application": [
+                "Downloaded completed online application with attachments, presented as a hard copy at admission.",
+                "Community/category evidence where claiming a concession or reservation.",
+                "Sports-participation and achievement certificates for the applicable eligibility and selection claims.",
+                "Medical-fitness record required by the programme’s admission rules."
+              ]
+            },
+            "deadlinesNote": "The 2026 application deadline was 15 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice."
+          },
+          "medium": "English",
+          "mediumNote": "The programme-specific regulations explicitly specify English instruction; language-subject courses are part of the curriculum where prescribed.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026-27 first-year aggregate university charge is INR 27,096 for Others and INR 11,340 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+          "teachingPhases": [
+            {
+              "phase": "2 years of regular campus study",
+              "language": "English",
+              "details": "Two-year graduate-entry Bachelor of Physical Education study combines academic learning, physical practice, games and teaching or coaching experience. University main campus in Melakottaiyur, Chennai; attendance, practical work and programme assessment requirements apply."
+            }
+          ]
+        },
+        {
+          "slug": "tnpesu-bsc-yoga",
+          "canonicalCourseSlug": "bsc-yoga",
+          "officialTitle": "B.Sc. Yoga",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established."
+          },
+          "officialProgramUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular university-department admission route and meeting the programme-specific qualification conditions"
+            ],
+            "restrictions": [
+              "The programme uses English and Tamil. Applicants should assess their ability to study in both languages before accepting a place.",
+              "Foreign-national, NRI and student-visa eligibility are not established by the regular Indian criteria."
+            ],
+            "notes": "University main campus, Vandalur–Kelambakkam Road, Melakottaiyur, Chennai 600127. Affiliated-college and distance-learning admissions have separate conditions.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Three-year B.Sc. Yoga study combines theoretical, practical and applied Yoga learning under the university department’s semester curriculum. Study is at the university main campus in Melakottaiyur, Chennai.",
+            "eligibility": {
+              "intro": "Regular Indian admission route; check the qualifying records, programme conditions and applicant category before applying.",
+              "items": [
+                "Pass 12th standard under 10+2 in any discipline from a recognised board, or an equivalent qualification.",
+                "Age limit: 21 on 1 July 2026. The UG notice allows five years’ disability relaxation and three years for SC/SCA/ST/BC/BCM/MBC/DNC and women; programme qualification and fitness rules still apply.",
+                "Instruction uses English and Tamil; an independently selectable English-only route is not established."
+              ]
+            },
+            "applicationSteps": [
+              "Use tnpesuonline.in through the university’s regular-admission link when the next application cycle opens.",
+              "Choose the exact programme, enter the required details and attach scanned educational qualifications and relevant category or sports records.",
+              "Pay the application processing charge online by credit card, debit card or net banking and retain the completed application and payment record.",
+              "Attend the programme-specific selection process and follow the department’s allotment and original-verification instructions.",
+              "Bring the downloaded application and attachments in hard copy at admission; confirm tuition breakdown, hostel allotment and complete charges before paying."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying HSC/10+2 pass certificate or accepted equivalent qualification record.",
+                "Mark statement for the qualifying HSC/10+2 examination."
+              ],
+              "application": [
+                "Downloaded completed online application with attachments, presented as a hard copy at admission.",
+                "Community/category evidence where claiming a concession or reservation."
+              ]
+            },
+            "deadlinesNote": "The 2026 application deadline was 6 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice."
+          },
+          "medium": "English / Tamil",
+          "mediumNote": "Departmental regulations specify English and Tamil instruction together. No separate English-only route is established.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+          "teachingPhases": [
+            {
+              "phase": "3 years of regular campus study",
+              "language": "English / Tamil",
+              "details": "Three-year B.Sc. Yoga study combines theoretical, practical and applied Yoga learning under the university department’s semester curriculum. University main campus in Melakottaiyur, Chennai; attendance, practical work and programme assessment requirements apply."
+            }
+          ]
+        },
+        {
+          "slug": "tnpesu-msc-yoga",
+          "canonicalCourseSlug": "msc-yoga",
+          "officialTitle": "M.Sc. Yoga",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026-27 first-year aggregate university charge is INR 16,044 for Others and INR 9,744 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established."
+          },
+          "officialProgramUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular university-department admission route and meeting the programme-specific qualification conditions"
+            ],
+            "restrictions": [
+              "The eligibility described here is the bachelor’s-degree route meeting the departmental 50% aggregate condition. Teaching uses English and Tamil.",
+              "Foreign-national, NRI and student-visa eligibility are not established by the regular Indian criteria."
+            ],
+            "notes": "University main campus, Vandalur–Kelambakkam Road, Melakottaiyur, Chennai 600127. Affiliated-college and distance-learning admissions have separate conditions.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Two-year, four-semester postgraduate Yoga study combines core and elective coursework with practical learning and applied academic work. Study is at the university main campus in Melakottaiyur, Chennai.",
+            "eligibility": {
+              "intro": "Regular Indian admission route; check the qualifying records, programme conditions and applicant category before applying.",
+              "items": [
+                "A recognised bachelor’s degree or university-accepted equivalent under 10+2+3 or 10+2+4 with at least 50% aggregate, under the departmental 2023-onwards regulations.",
+                "Admission and reservation follow university and Tamil Nadu government rules.",
+                "Instruction uses English and Tamil; this is not an independently verified English-only track."
+              ]
+            },
+            "applicationSteps": [
+              "Use tnpesuonline.in through the university’s regular-admission link when the next application cycle opens.",
+              "Choose the exact programme, enter the required details and attach scanned educational qualifications and relevant category or sports records.",
+              "Pay the application processing charge online by credit card, debit card or net banking and retain the completed application and payment record.",
+              "Attend the programme-specific selection process and follow the department’s allotment and original-verification instructions.",
+              "Bring the downloaded application and attachments in hard copy at admission; confirm tuition breakdown, hostel allotment and complete charges before paying."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying bachelor’s degree certificate or accepted equivalent qualification record.",
+                "Mark statements for the qualifying bachelor’s degree."
+              ],
+              "application": [
+                "Downloaded completed online application with attachments, presented as a hard copy at admission.",
+                "Community/category evidence where claiming a concession or reservation."
+              ]
+            },
+            "deadlinesNote": "The 2026 application deadline was 30 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice."
+          },
+          "medium": "English / Tamil",
+          "mediumNote": "Departmental regulations specify English and Tamil instruction together. No separate English-only route is established.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026-27 first-year aggregate university charge is INR 16,044 for Others and INR 9,744 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+          "teachingPhases": [
+            {
+              "phase": "2 years of regular campus study",
+              "language": "English / Tamil",
+              "details": "Two-year, four-semester postgraduate Yoga study combines core and elective coursework with practical learning and applied academic work. University main campus in Melakottaiyur, Chennai; attendance, practical work and programme assessment requirements apply."
+            }
+          ]
+        },
+        {
+          "slug": "tnpesu-bsc-sports-coaching",
+          "canonicalCourseSlug": "bachelor-sports-coaching",
+          "officialTitle": "B.Sc. Sports Coaching",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "INR",
+            "verifiedAt": "2026-10-25",
+            "notes": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established."
+          },
+          "officialProgramUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular university-department admission route and meeting the programme-specific qualification conditions"
+            ],
+            "restrictions": [
+              "Sports proficiency and selection trials are required; passing school examinations alone does not assure eligibility or admission.",
+              "Foreign-national, NRI and student-visa eligibility are not established by the regular Indian criteria."
+            ],
+            "notes": "University main campus, Vandalur–Kelambakkam Road, Melakottaiyur, Chennai 600127. Affiliated-college and distance-learning admissions have separate conditions.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Three-year regular Sports Coaching study combines coaching theory, practical skills, sport performance and training methods across six semesters. Study is at the university main campus in Melakottaiyur, Chennai.",
+            "eligibility": {
+              "intro": "Regular Indian admission route; check the qualifying records, programme conditions and applicant category before applying.",
+              "items": [
+                "Pass HSC/+2 or an equivalent examination approved by the university.",
+                "Current 2026 programme directory requires sports proficiency with at least school-district competition participation.",
+                "Age limit: 21 on 1 July 2026. The UG notice allows five years’ disability relaxation and three years for SC/SCA/ST/BC/BCM/MBC/DNC and women; programme qualification and fitness rules still apply.",
+                "Selection includes the sports-performance and skill tests prescribed by the department."
+              ]
+            },
+            "applicationSteps": [
+              "Use tnpesuonline.in through the university’s regular-admission link when the next application cycle opens.",
+              "Choose the exact programme, enter the required details and attach scanned educational qualifications and relevant category or sports records.",
+              "Pay the application processing charge online by credit card, debit card or net banking and retain the completed application and payment record.",
+              "Attend the programme-specific selection process and follow the department’s allotment and original-verification instructions.",
+              "Bring the downloaded application and attachments in hard copy at admission; confirm tuition breakdown, hostel allotment and complete charges before paying."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying HSC/10+2 pass certificate or accepted equivalent qualification record.",
+                "Mark statement for the qualifying HSC/10+2 examination."
+              ],
+              "application": [
+                "Downloaded completed online application with attachments, presented as a hard copy at admission.",
+                "Community/category evidence where claiming a concession or reservation.",
+                "Sports-participation and achievement certificates for the applicable eligibility and selection claims."
+              ]
+            },
+            "deadlinesNote": "The 2026 application deadline was 6 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice."
+          },
+          "medium": "English",
+          "mediumNote": "The programme-specific regulations explicitly specify English instruction; language-subject courses are part of the curriculum where prescribed.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "July"
+          ],
+          "intakeCodes": [
+            "july"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+          "teachingPhases": [
+            {
+              "phase": "3 years of regular campus study",
+              "language": "English",
+              "details": "Three-year regular Sports Coaching study combines coaching theory, practical skills, sport performance and training methods across six semesters. University main campus in Melakottaiyur, Chennai; attendance, practical work and programme assessment requirements apply."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is TNPESU a public university?",
+          "answer": "It is a Tamil Nadu state university. UGC lists the institution at Chennai with establishment year 2005. Its main campus at Melakottaiyur is separate from affiliated colleges."
+        },
+        {
+          "question": "Where is the regular university campus?",
+          "answer": "It is on Vandalur–Kelambakkam Road at Melakottaiyur, Chennai 600127. Check whether your admission is to a university department or an affiliated college, as teaching locations and charges differ."
+        },
+        {
+          "question": "What is the difference between BPES and BPEd?",
+          "answer": "BPES is a three-year school-leaver bachelor’s programme in physical education and sports. BPEd is a two-year graduate-entry bachelor qualification; it requires a prior degree and the relevant sports and selection conditions."
+        },
+        {
+          "question": "Are all programmes taught only in English?",
+          "answer": "No. The Yoga regulations specify English and Tamil. The physical education and Sports Coaching regulations specify English instruction. Do not assume a separate English-only Yoga route."
+        },
+        {
+          "question": "Can I apply for BPES without sports participation?",
+          "answer": "The programme requires school-level representation in a sport or game, as well as a qualifying school examination. Its selection process also assesses sports and physical skills; the school pass alone is insufficient."
+        },
+        {
+          "question": "What does BPEd require?",
+          "answer": "The route described here covers graduates with at least 50% in a recognised bachelor’s degree and the required sports participation. The full rules have other specified qualification routes, age and medical conditions, and a selection process."
+        },
+        {
+          "question": "Can I study Yoga after school?",
+          "answer": "BSc Yoga accepts a recognised 12th-standard or equivalent qualification. It takes three years and uses English and Tamil. The current UG age conditions and admission process also apply."
+        },
+        {
+          "question": "What is the MSc Yoga entry route?",
+          "answer": "The departmental regulations specify a recognised bachelor’s degree under a 10+2+3 or 10+2+4 pattern with at least 50% aggregate. The programme takes two years and uses English and Tamil."
+        },
+        {
+          "question": "When do first-year classes start?",
+          "answer": "The university scheduled first-year classes for all programmes to commence on 27 July 2026. Induction was held separately in August. These dates belong to the historical 2026-27 cycle; future applicants need a fresh notice."
+        },
+        {
+          "question": "Are the published academic charges tuition only?",
+          "answer": "No. The 2026 notice gives combined first-year university charges for SC/ST and Others. Request the isolated tuition component, remaining-year charges and compulsory extras before accepting an offer. Hostel and mess are separate."
+        },
+        {
+          "question": "Is hostel accommodation available?",
+          "answer": "The university has men’s and women’s hostels. Its 2026 notice gives room rent, establishment charge, caution deposit, application charge and mess advance separately. Monthly mess is payable at the approved rate, and allotment needs confirmation."
+        },
+        {
+          "question": "Can foreign or NRI students use these Indian criteria?",
+          "answer": "Foreign-national, NRI and student-visa eligibility is not established by the regular Indian route. Obtain the university’s category-specific assessment before assuming that an Indian qualification or fee condition applies."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "All15currentregular taught awards plus two legacy/discovery rows inventoried. Supported university-department routes only; exact remaining language, regulator and current-offering gaps held.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my sports programme eligibility",
+            "capture": [
+              "qualification",
+              "sports participation",
+              "intended award"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my complete campus budget",
+            "capture": [
+              "programme",
+              "fee category",
+              "hostel preference"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my TNPESU application",
+            "capture": [
+              "qualification records",
+              "teaching languages",
+              "intended cycle"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "duration",
+      "claimText": "Three-year bachelor’s study in physical education and sports combines theory, games, practical training and coaching or teaching practice.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "medium",
+      "claimText": "Explicit programme medium: English. Current-linked departmental regulation; BPES/BPEd2023onwards, Yoga2023onwards, SportsCoaching2020onwards.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/BPES.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "intake",
+      "claimText": "Registrar17July2026circular: commencement of first-year classes for all programmes27July2026. Not merely semester label or induction date.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/College%20Open%20Circular%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC under 10+2 or an equivalent examination recognised by Tamil Nadu or approved by the university. School-level representation in a game or sport is mandatory. UG age limit is 21 years as on 1 July 2026; the current notice allows three years’ relaxation for the specified reserved categories and women. Programme-specific medical fitness and physical-performance conditions apply, with medical examination at admission. Selection ranks qualifying examination, sports participation, game skills, track-and-field skills and the applicable physical-education subject bonus.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/BPES.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "admissions",
+      "claimText": "The 2026 application deadline was 6 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "documentsRequired",
+      "claimText": "{\"academic\": [\"Scanned educational-qualification certificates required for the chosen programme.\", \"Qualifying school or degree marks and certificate appropriate to this admission route.\"], \"application\": [\"Downloaded completed online application with attachments, presented as a hard copy at admission.\", \"Community/category evidence where claiming a concession or reservation.\", \"Sports-participation and achievement certificates for the applicable eligibility and selection claims.\", \"Medical-fitness record required by the programme\\u2019s admission rules.\"]}",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "fee",
+      "claimText": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Physical education regulations exclude current pregnancy and specified physical or sensory impairments; obtain a programme-specific eligibility assessment before applying. Precisely scoped regular Indian route; international-admission page placeholder is not foreign-eligibility evidence.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "2026programme directory confirms current offering, duration and broad qualification route; additional prerequisites retained from fullregulations. No excluded alternative routes declared ineligible merely from this narrow scope.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "deadlinesNote",
+      "claimText": "Current2026notification establishes6JuneUG,15JuneBPEd/MPEd,30JunePG applicationdeadlines; finalstartcircular27Julyseparate.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bpes"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "duration",
+      "claimText": "Two-year graduate-entry Bachelor of Physical Education study combines academic learning, physical practice, games and teaching or coaching experience.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "medium",
+      "claimText": "Explicit programme medium: English. Current-linked departmental regulation; BPES/BPEd2023onwards, Yoga2023onwards, SportsCoaching2020onwards.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/B.P.Ed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "intake",
+      "claimText": "Registrar17July2026circular: commencement of first-year classes for all programmes27July2026. Not merely semester label or induction date.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/College%20Open%20Circular%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "The route below covers graduates with at least 50% in a recognised bachelor’s degree after 10+2. Other specified qualification routes have separate conditions. At least the required school/inter-school sports participation is compulsory; recognised higher-level participation may support selection. The 2023 regulations set an ordinary age ceiling of 30 years on 1 July, with specified SC/ST and eligible employed ex-serviceman/teacher relaxations. Medical examination and the programme’s physical-fitness conditions apply. Selection includes academic marks, sports participation and practical game/track-and-field skill tests.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/B.P.Ed.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "admissions",
+      "claimText": "The 2026 application deadline was 15 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "documentsRequired",
+      "claimText": "{\"academic\": [\"Scanned educational-qualification certificates required for the chosen programme.\", \"Qualifying school or degree marks and certificate appropriate to this admission route.\"], \"application\": [\"Downloaded completed online application with attachments, presented as a hard copy at admission.\", \"Community/category evidence where claiming a concession or reservation.\", \"Sports-participation and achievement certificates for the applicable eligibility and selection claims.\", \"Medical-fitness record required by the programme\\u2019s admission rules.\"]}",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "fee",
+      "claimText": "The 2026-27 first-year aggregate university charge is INR 27,096 for Others and INR 11,340 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "audienceEligibility",
+      "claimText": "This is a graduate-entry bachelor qualification. Physical education regulations exclude current pregnancy and specified physical or sensory impairments; seek an individual eligibility assessment. Precisely scoped regular Indian route; international-admission page placeholder is not foreign-eligibility evidence.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "2026programme directory confirms current offering, duration and broad qualification route; additional prerequisites retained from fullregulations. No excluded alternative routes declared ineligible merely from this narrow scope.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "deadlinesNote",
+      "claimText": "Current2026notification establishes6JuneUG,15JuneBPEd/MPEd,30JunePG applicationdeadlines; finalstartcircular27Julyseparate.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bped"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "duration",
+      "claimText": "Three-year B.Sc. Yoga study combines theoretical, practical and applied Yoga learning under the university department’s semester curriculum.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "medium",
+      "claimText": "Explicit programme medium: English / Tamil. Current-linked departmental regulation; BPES/BPEd2023onwards, Yoga2023onwards, SportsCoaching2020onwards.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/B.Sc%20yoga.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "intake",
+      "claimText": "Registrar17July2026circular: commencement of first-year classes for all programmes27July2026. Not merely semester label or induction date.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/College%20Open%20Circular%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "Pass 12th standard under 10+2 in any discipline from a recognised board, or an equivalent qualification. UG age limit is 21 years as on 1 July 2026; current notice provides the specified category and women’s relaxations. Instruction uses English and Tamil; an independently selectable English-only route is not established.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/B.Sc%20yoga.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "admissions",
+      "claimText": "The 2026 application deadline was 6 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "documentsRequired",
+      "claimText": "{\"academic\": [\"Scanned educational-qualification certificates required for the chosen programme.\", \"Qualifying school or degree marks and certificate appropriate to this admission route.\"], \"application\": [\"Downloaded completed online application with attachments, presented as a hard copy at admission.\", \"Community/category evidence where claiming a concession or reservation.\"]}",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "fee",
+      "claimText": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The programme uses English and Tamil. Applicants should assess their ability to study in both languages before accepting a place. Precisely scoped regular Indian route; international-admission page placeholder is not foreign-eligibility evidence.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "2026programme directory confirms current offering, duration and broad qualification route; additional prerequisites retained from fullregulations. No excluded alternative routes declared ineligible merely from this narrow scope.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "deadlinesNote",
+      "claimText": "Current2026notification establishes6JuneUG,15JuneBPEd/MPEd,30JunePG applicationdeadlines; finalstartcircular27Julyseparate.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "duration",
+      "claimText": "Two-year, four-semester postgraduate Yoga study combines core and elective coursework with practical learning and applied academic work.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "medium",
+      "claimText": "Explicit programme medium: English / Tamil. Current-linked departmental regulation; BPES/BPEd2023onwards, Yoga2023onwards, SportsCoaching2020onwards.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/M.Sc%20-%20YOGA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "intake",
+      "claimText": "Registrar17July2026circular: commencement of first-year classes for all programmes27July2026. Not merely semester label or induction date.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/College%20Open%20Circular%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "A recognised bachelor’s degree or university-accepted equivalent under 10+2+3 or 10+2+4 with at least 50% aggregate, under the departmental 2023-onwards regulations. Admission and reservation follow university and Tamil Nadu government rules. Instruction uses English and Tamil; this is not an independently verified English-only track.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/M.Sc%20-%20YOGA.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "admissions",
+      "claimText": "The 2026 application deadline was 30 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "documentsRequired",
+      "claimText": "{\"academic\": [\"Scanned educational-qualification certificates required for the chosen programme.\", \"Qualifying school or degree marks and certificate appropriate to this admission route.\"], \"application\": [\"Downloaded completed online application with attachments, presented as a hard copy at admission.\", \"Community/category evidence where claiming a concession or reservation.\"]}",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "fee",
+      "claimText": "The 2026-27 first-year aggregate university charge is INR 16,044 for Others and INR 9,744 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility described here is the bachelor’s-degree route meeting the departmental 50% aggregate condition. Teaching uses English and Tamil. Precisely scoped regular Indian route; international-admission page placeholder is not foreign-eligibility evidence.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "2026programme directory confirms current offering, duration and broad qualification route; additional prerequisites retained from fullregulations. No excluded alternative routes declared ineligible merely from this narrow scope.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "deadlinesNote",
+      "claimText": "Current2026notification establishes6JuneUG,15JuneBPEd/MPEd,30JunePG applicationdeadlines; finalstartcircular27Julyseparate.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-msc-yoga"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "duration",
+      "claimText": "Three-year regular Sports Coaching study combines coaching theory, practical skills, sport performance and training methods across six semesters.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "medium",
+      "claimText": "Explicit programme medium: English. Current-linked departmental regulation; BPES/BPEd2023onwards, Yoga2023onwards, SportsCoaching2020onwards.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/B.SC%20Coaching%20syllabus%2020-21.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "intake",
+      "claimText": "Registrar17July2026circular: commencement of first-year classes for all programmes27July2026. Not merely semester label or induction date.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/College%20Open%20Circular%202026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an equivalent examination approved by the university. Current 2026 programme directory requires sports proficiency with at least school-district competition participation. UG age limit is 21 years as on 1 July 2026, with the relaxations specified in the current admission notice. Selection includes the sports-performance and skill tests prescribed by the department.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/B.SC%20Coaching%20syllabus%2020-21.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "admissions",
+      "claimText": "The 2026 application deadline was 6 June 2026. First-year classes for all programmes were scheduled to commence on 27 July 2026; induction was 19–25 August. These are historical dates; future applicants need the next notice.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "documentsRequired",
+      "claimText": "{\"academic\": [\"Scanned educational-qualification certificates required for the chosen programme.\", \"Qualifying school or degree marks and certificate appropriate to this admission route.\"], \"application\": [\"Downloaded completed online application with attachments, presented as a hard copy at admission.\", \"Community/category evidence where claiming a concession or reservation.\", \"Sports-participation and achievement certificates for the applicable eligibility and selection claims.\"]}",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "fee",
+      "claimText": "The 2026-27 first-year aggregate university charge is INR 12,108 for Others and INR 8,952 for SC/ST applicants. These are combined first-year charges, not an isolated tuition quote or a full-course total. Obtain the current tuition breakdown and remaining-year charges. Hostel, mess and relevant deposits are additional; foreign/NRI charges are not established.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Sports proficiency and selection trials are required; passing school examinations alone does not assure eligibility or admission. Precisely scoped regular Indian route; international-admission page placeholder is not foreign-eligibility evidence.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "eligibility",
+      "claimText": "2026programme directory confirms current offering, duration and broad qualification route; additional prerequisites retained from fullregulations. No excluded alternative routes declared ineligible merely from this narrow scope.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "deadlinesNote",
+      "claimText": "Current2026notification establishes6JuneUG,15JuneBPEd/MPEd,30JunePG applicationdeadlines; finalstartcircular27Julyseparate.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnpesu-bsc-sports-coaching"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "summary",
+      "claimText": "Tamil Nadu Physical Education and Sports University is a public state university at Melakottaiyur, Chennai. Its regular campus programmes cover physical education, Yoga, sports coaching and related sports sciences. Academic study combines classroom and practical learning. Entry conditions vary by award; Yoga uses English and Tamil, while specific physical education and coaching programmes specify English.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/about.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The Melakottaiyur campus has playing fields, an athletics track, indoor sports space and specialised academic departments. The university supports football, hockey, volleyball, cricket, kabaddi and other games. The programme you choose determines the combination of classroom study, practical work and sports activity.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/faq.html",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "cityProfile",
+      "claimText": "The main campus is on Vandalur–Kelambakkam Road at Melakottaiyur, Chennai 600127. It is separate from the university’s affiliated colleges. Confirm the university-department campus on the admission order before arranging travel, a hostel room or a daily commute.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/pdf/PROGRAMME%20OFFERED%202026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "practicalExposure",
+      "claimText": "Regular sports and physical education courses combine academic learning with practical activity. Physical education programmes include game skills and teaching or coaching practice; Sports Coaching study focuses on coaching methods and performance. Yoga courses include practical instruction alongside academic subjects. Selection and assessment are programme-specific.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://www.tnpesu.org/upload/syllabus/BPES.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "hostelOverview",
+      "claimText": "The university has men’s and women’s hostel facilities. The 2026 notice lists room rent INR 2,250 per semester, mess advance INR 7,500 per semester, establishment charge INR 2,000, first-year caution deposit INR 5,000 and hostel application INR 100. Its published initial first-year total is INR 16,850. Monthly mess is paid at the approved rate; obtain the complete payment schedule and allotment before moving.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "dietarySupport",
+      "claimText": "A mess advance is separate from monthly mess charges. The 2026 hostel notice requires monthly mess payment at the approved rate, so obtain the current food budget and settlement method. The first-year university aggregate academic charge does not include meals.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Admission%20Notification%20website2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "safetyOverview",
+      "claimText": "The university has a health centre, anti-ragging arrangements, an Internal Complaints Cell, grievance redressal and anti-drug measures. Physical education applicants must check programme-specific medical and physical-selection conditions before applying.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Fresher%27s%20Induction%20Programme%20Circular.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "studentSupport",
+      "claimText": "Students have library services, sports facilities, counselling, career guidance and placement-cell support. The university also introduces scholarship and SC/ST-cell services during induction. Students Traffic can help assess the qualification route, language needs and complete study budget.",
+      "status": "verified",
+      "sourceLabel": "TNPESU official source",
+      "sourceUrl": "https://tnpesu.org/upload/Fresher%27s%20Induction%20Programme%20Circular.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "recognition",
+      "claimText": "UGC consolidated register entry832: Tamilnadu Physical Education and Sports University, StateUniversity, Chennai, established2005.",
+      "status": "verified",
+      "sourceLabel": "UGC official register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-physical-education-and-sports-university",
+      "publicField": "recognition",
+      "claimText": "CurrentNCTErecognisedregister lists university BPEd fileSRCAPP2246,initialrecognition2May2016. Does not establish MPEd approval; no university-wide NCTE approval inferred.",
+      "status": "verified",
+      "sourceLabel": "NCTE recognised-institution register",
+      "sourceUrl": "https://web.ncte.gov.in/page-regional-committee-institution-lists-hindi/32/tamil-nadu?page=57",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

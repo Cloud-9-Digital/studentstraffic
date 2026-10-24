@@ -115,3 +115,12 @@ test("article schema makes a relative image URL absolute", () => {
 
   assert.equal(schema.image.url, "http://localhost:3000/images/countries/russia-hero.jpg");
 });
+
+
+test("mixed English and Tamil instruction keeps both language tags", () => {
+  const schema = getProgramOfferingStructuredData({
+    ...program,
+    offering: { ...program.offering, medium: "English / Tamil", instructionLanguages: ["english", "tamil"] },
+  } as FinderProgram);
+  assert.deepEqual(schema.inLanguage, ["en", "ta"]);
+});

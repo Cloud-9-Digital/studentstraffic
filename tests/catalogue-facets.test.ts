@@ -7,6 +7,7 @@ import {
   normalizeIntakeMonthCode,
   normalizeTeachingLanguageCode,
   sortIntakeMonthCodes,
+  sortTeachingLanguageCodes,
 } from "@/lib/catalogue-facets";
 import { normalizeFinderFilters } from "@/lib/filters";
 
@@ -63,4 +64,13 @@ test("supports Indian teaching languages used by language programmes", () => {
     assert.equal(normalizeTeachingLanguageCode(label), code);
     assert.equal(getTeachingLanguageLabel(code), label);
   }
+});
+
+
+test("preserves Tamil as a distinct facet for mixed English and Tamil programmes", () => {
+  assert.equal(normalizeTeachingLanguageCode(" Tamil "), "tamil");
+  assert.equal(getTeachingLanguageLabel("tamil"), "Tamil");
+  assert.equal(normalizeFinderFilters({ medium: "Tamil" }).medium, "tamil");
+  assert.deepEqual(sortTeachingLanguageCodes(["tamil", "english", "tamil"]), ["english", "tamil"]);
+  assert.equal(normalizeTeachingLanguageCode("English / Tamil"), undefined);
 });

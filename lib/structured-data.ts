@@ -105,6 +105,7 @@ const teachingLanguageTags: Record<TeachingLanguageCode, string> = {
   slovenian: "sl",
   spanish: "es",
   swedish: "sv",
+  tamil: "ta",
   telugu: "te",
   turkish: "tr",
   urdu: "ur",

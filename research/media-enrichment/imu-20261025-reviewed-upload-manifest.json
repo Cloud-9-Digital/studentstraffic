@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "indian-maritime-university",
+      "universityName": "Indian Maritime University",
+      "sourceBatch": "codex-imu-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.imu.edu.in/imunew/public/images/imu-logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.imu.edu.in/imunew/",
+          "rightsBasis": "Official university identity/marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "Indian Maritime University crest",
+          "visualCheck": "4000x600 official PNG inspected. Complete crest lies in first600x600pixels. Apply northwest crop0,0,600,600 to exclude extensive banner whitespace and the remote black artifact. No professional accreditation shield.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and local original-pixel inspection.",
+          "proposedPublicId": "studentstraffic/universities/indian-maritime-university/logo-20261025",
+          "transformation": [
+            {
+              "crop": "crop",
+              "gravity": "north_west",
+              "x": 0,
+              "y": 0,
+              "width": 600,
+              "height": 600
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.imu.edu.in/imunew/public/images/home-banner-3.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.imu.edu.in/imunew/",
+          "rightsBasis": "Official university identity/marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "IMU cadets working with marine-system simulator panels",
+          "visualCheck": "1400x668 official university homepage JPEG inspected. Maritime-uniformed cadets working at simulator panels; inherent dark tint. No overlaid advertising or assumed campus location.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and local original-pixel inspection.",
+          "proposedPublicId": "studentstraffic/universities/indian-maritime-university/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

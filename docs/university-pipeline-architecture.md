@@ -573,3 +573,7 @@ held only with a recorded reason; it must not be silently deferred to a later en
 `instruction_languages` remains the controlled teaching-language facet. `medium` is its short display label (e.g. `English` or `English / French`), or `Not confirmed` when delivery cannot be established. `medium_details` preserves the original evidence and caveats; it is not a stats-card value. Admission-test requirements, translated application instructions and foreign-language electives do not establish teaching language. Never default missing medium to English.
 
 Both publishers use `lib/program-medium.ts`. Migration `0073_normalize_program_medium` adds the notes column and a write trigger enforcing canonical labels from language codes. Run `npx tsx scripts/normalize-program-medium.ts` to preview legacy changes and add `--apply` to back up and normalize the configured database, including search-document labels. Verify the printed database target before applying. No course, fee, admission, or publication fields are changed.
+
+### Tamil teaching-language facet (25 October 2026)
+
+The controlled teaching-language registry includes `tamil` (display label `Tamil`) for source-verified Tamil instruction. Mixed programmes store both `english` and `tamil` in `instructionLanguages`, with `medium: "English / Tamil"`; this does not establish an independently selectable English-only route. TNPESU Yoga regulations explicitly list both languages.

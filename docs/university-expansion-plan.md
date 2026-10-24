@@ -169,8 +169,10 @@ Vel Tech (34 offerings), Hindustan Institute of Technology and Science (38) and 
 Salem (4) were published together as migrations 0197–0199. Tamil Nadu Dr Ambedkar Law University
 retains documented programme-level holds. The next completed group comprises Annamalai University (8 offerings), AMET Chennai (28), Tamil Nadu
 Dr. J. Jayalalithaa Fisheries University (20) and B.S. Abdur Rahman Crescent Institute (54), migrations
-0200–0203, applied together with scoped search and cache refresh. The three current offline assignments are Indian Maritime University, Tamil Nadu
-Physical Education and Sports University, and IIITDM Kancheepuram. Collect validated bundles for a
+0200–0203, applied together with scoped search and cache refresh. The next reviewed group contains Indian Maritime University (24 offerings), Tamil Nadu
+Physical Education and Sports University (5), and IIITDM Kancheepuram (18), migrations 0204–0206.
+The three current offline assignments are Sri Sairam Engineering College, St Peter’s Institute of
+Higher Education and Research, and Chennai Mathematical Institute. Collect validated bundles for a
 deliberate grouped apply; do not poll or connect to the database during research.
 
 **2026-07-20 Vietnam Medicine quality pass:** the first gold-standard correction bundle covers Dai
