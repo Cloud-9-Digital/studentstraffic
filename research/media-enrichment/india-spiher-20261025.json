@@ -1,0 +1,52 @@
+{
+  "manifestId": "india-spiher-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "SPIHER Avadi official symbol and authentic playing-field campus cover",
+  "entries": [
+    {
+      "universitySlug": "st-peters-institute-of-higher-education-and-research",
+      "universityName": "St. Peter's Institute of Higher Education and Research",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://spiher.ac.in/wp-content/uploads/2024/12/St.Peters-Logo-New-white-bg-scaled.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://spiher.ac.in/",
+          "rightsBasis": "Official identifying logo at university homepage; complete symbol and motto cropped from wordmark asset. No brand alteration or unsupported accreditation text retained. No open licence claimed. Source returned HTTP200 with image content type; visually reviewed25October2026 by worker and parent.",
+          "proposedPublicId": "studentstraffic/universities/st-peters-institute-of-higher-education-and-research/logo",
+          "altText": "St. Peter’s Institute of Higher Education and Research symbol and motto",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 130,
+              "y": 65,
+              "width": 410,
+              "height": 510
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://spiher.ac.in/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-07-at-11.03.55-AM-1-1024x768.jpeg",
+          "sourceType": "official",
+          "sourcePage": "https://spiher.ac.in/campus-life/",
+          "rightsBasis": "Official university campus-life photograph. Original GPS overlay identifies St Peters University Avadi and18March2025. Crop excludes entire GPS/Google overlay belowy529 while retaining full players, field and campus environment; not represented as academic building. No open licence claimed. Source returned HTTP200 with image content type; visually reviewed25October2026 by worker and parent.",
+          "proposedPublicId": "studentstraffic/universities/st-peters-institute-of-higher-education-and-research/cover",
+          "altText": "Students playing football on SPIHER’s Avadi campus playing field",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 1024,
+              "height": 520
+            }
+          ]
+        }
+      ],
+      "migrationId": "0209-india-st-peters-institute-of-higher-education-and-research"
+    }
+  ]
+}

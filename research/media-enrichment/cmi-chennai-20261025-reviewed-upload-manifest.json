@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "chennai-mathematical-institute",
+      "universityName": "Chennai Mathematical Institute",
+      "sourceBatch": "codex-cmi-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.cmi.ac.in/pix/cmi-header.png",
+          "proposedPublicId": "studentstraffic/universities/chennai-mathematical-institute/logo-20261025",
+          "altText": "Chennai Mathematical Institute official monogram and wordmark",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identification header/logo, used for factual identification; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/CMI-front.jpg",
+          "proposedPublicId": "studentstraffic/universities/chennai-mathematical-institute/cover-20261025",
+          "altText": "CMI Siruseri academic building, photographed in August 2013",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Prakash.saivasan, CMI-front.jpg, photographed 28 August 2013; CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0 ; source https://commons.wikimedia.org/wiki/File:CMI-front.jpg. Historical campus photograph; original sepia appearance preserved. Any image transformations remain under the same licence.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

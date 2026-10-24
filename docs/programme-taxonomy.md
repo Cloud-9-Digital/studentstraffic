@@ -188,3 +188,8 @@ Five-year B.Tech/M.Tech dual degrees use integrated-master's families: existing 
 ### IMU maritime award families — 25 October 2026
 
 Added Diploma in Nautical Science (one-year diploma), Postgraduate Diploma in Marine Engineering (one-year graduate conversion award), and M.E./M.Tech in Dredging and Harbour Engineering (two-year master’s). DNS leads towards later B.Sc. Applied Nautical Science stages and must not be classified as a one-year bachelor’s. Graduate Marine Engineering is a postgraduate diploma, not a B.Tech. Naval architecture/ocean and shipbuilding degrees use the existing naval architecture engineering families; M.Tech. Marine Technology uses the marine-engineering master’s family. Campus and admission audience remain offering data.
+
+
+### Computer and communication engineering — 25 October 2026
+
+Added the generic B.E./B.Tech in Computer and Communication Engineering family for the combined computing and communications engineering award. It is not an institution-specific branded specialisation. Sri Sairam’s CSE IoT and Computer Science and Business Systems offerings retain their exact titles under the existing CSE parent; Cyber Security and AI/ML use their existing specialist families. Integrated M.Tech remains distinct from two-year engineering master’s and was not published without its own verified medium.

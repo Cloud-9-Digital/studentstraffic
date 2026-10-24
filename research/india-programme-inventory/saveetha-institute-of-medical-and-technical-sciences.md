@@ -64,3 +64,32 @@ A SIMATS document (regulations, academic calendar 2026-27, or Study in India lis
 ## Bounded retry — 25 October 2026
 
 Official SCOT events page https://scot.saveetha.com/blog explicitly establishes BOT/MOT new-batch induction on 7 August 2024. BOT teaching English is explicit on https://scot.saveetha.com/admissions. However, that page specifies four academic years plus one internship year (five total), conflicting with the central prospectus/fee-table 4.5 years. No duration chosen silently. MOT language remains unverified. MBA English old regulations and historical 25 September 2024 induction are available, but current professional approval was not verified: https://www.ssm.saveetha.com/new-page-58 now links only EOA2022-23 and LOA2019-20. Tuition amounts conflict and can remain unquoted; programme duration/regulatory scope and complete inventory still held. No payload or reservation.
+
+
+## Latest targeted resume — 25 October 2026, codex-simats-resume-20261025
+
+This section supersedes the earlier blanket medium/recognition holds. Four exact MOT specialties are packaged: Mental Health, Neurosciences, Paediatrics, Hand Rehabilitation. The working inventory has 178 rows, including the newly discovered MHPE, PGDHPE and Health Professions Education PhD options; unverified discovery details remain holds rather than empty catalogue rows.
+
+### Primary MOT evidence and entry conditions
+
+The academic page now links a full genuine DOCX: `https://scot.saveetha.com/_files/ugd/41d401_c5f7ff288c184fce8c50b351cc2f6553.docx?dn=MOT%20regulations%20Updated.docx`. The downloaded syllabus applies from 2023–24 and explicitly states two continuous full-time years and English instruction/evaluation for all MOT courses. Four-year completion maximum is not normal duration. The current home advertises 2026–27 BOT/MOT admission. Current admissions require BOT/equivalent with ≥60% aggregate; the linked older regulation says ≥50%, plus a qualifying full-time BOT and six-month internship. The packaged route uses the CURRENT 60% condition, retains internship and outside-university eligibility certificate, and makes no 50% admission guarantee. Equivalence can include universities in India or abroad under the regulation, subject to certificate/recognition assessment, not automatic overseas admission.
+
+Current admissions styles Paediatrics as Paediatrics & Neonatology and Hand Rehabilitation as Hand; exact award-regulation specialty titles are retained. The fifth route is held: current admissions Musculoskeletal Sciences versus award-regulation/fee-table Orthopaedics is not silently reconciled. BOT remains held because college admissions has four academic years plus one internship year versus central 4.5 years; the national 2025 occupational therapy curriculum is a useful lead, not proof of SIMATS cohort transition.
+
+### Intake and fees
+
+The official SCOT events page explicitly reports induction of newly admitted BOT/MOT students on 7 August 2024 (about100BOT and30+MOT); downloaded HTML and extracted text retain it. This is a clearly dated historical induction baseline, not a current joining or physical-class-start promise. Current 2026–27 admissions are separately verified. No individual speciality seat count is inferred from the common MOT event.
+
+Official fee search covered SCOT current home/admissions, linked academic regulations and central `https://www.saveetha.com/admission2`. The central table is UNDATED: Indian/SAARC annual tuition INR65,000 plus laboratory INR100,000, aggregate165,000; NRI/foreign named overseas categories tuitionUSD1,000 plus laboratoryUSD1,500, aggregate2,500. No named-year MOT schedule was located. Current-cohort fees therefore on_request; these exact known undated references remain in public notes and indicative GradeA evidence. No guessed academic year, aggregate-as-tuition, currency conversion or invented range.
+
+### Regulator-owned institution recognition
+
+NAAC’s own valid-accreditation register14August2025, Universities sheet row391, lists SIMATS U-0475/TNUNGN11447, cycle2,CGPA3.66,A++,declared28June2022. This resolves the old inaccessible-NAAC hold; distinct Saveetha Engineering College row excluded. UGC own consolidated register entry816 lists deemed university notification18March2005. The university establishment field uses2005 for university designation, not the founding of predecessor colleges. No invented expiry or programme-specific professional approval claim.
+
+### Other programme holds and next evidence
+
+The institutional Michigan November2021 English-medium assessment is GradeB corroboration; it does not alone establish every modern programme variant. For MOT the explicit linked primary language provision supersedes that gap. MBBS lead: the official medical-college LinkedIn post identifies first-year2025–26 whitecoat ceremony6October2025; useful historical induction evidence, not yet a packaged route or proof of class commencement. Current medical course approvals, exact admission prerequisites and separate cohort fee conflicts need direct source recheck. Earlier inventory notes are historical checkpoints; unresolved regulatory scopes and unknown dates for other175portfolio programmes are not declared resolved by this four-specialty publication.
+
+### Reviewed media
+
+Official college homepage photograph visibly identifies the Saveetha Health Sciences Block at Thandalam, 1600×1064. Official SIMATS identity source777×124 includes adjacent historical NAAC/NIRF panels: reviewed incoming crop x0,y0,width565,height124 retains only emblem/wordmark and removes those panels. Exact cropped review image `logo-identity-reviewed.png`; cover `cover-reviewed.jpg`; upload manifest `research/media-enrichment/simats-mot-20261025-reviewed-upload-manifest.json`. No fabricated building or AI imagery.

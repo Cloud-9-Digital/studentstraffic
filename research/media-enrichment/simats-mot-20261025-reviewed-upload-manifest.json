@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "universityName": "Saveetha Institute of Medical and Technical Sciences",
+      "sourceBatch": "codex-simats-resume-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://static.wixstatic.com/media/41d401_bd785b6002d647d38ba30fcd859ba46e~mv2.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official SIMATS institution identity asset. Crop retains university emblem and wordmark and removes adjacent historical ranking/accreditation panels; no ownership transfer claimed.",
+          "transformation": [
+            {
+              "crop": "crop",
+              "gravity": "north_west",
+              "x": 0,
+              "y": 0,
+              "width": 565,
+              "height": 124
+            }
+          ],
+          "proposedPublicId": "studentstraffic/universities/saveetha-institute-of-medical-and-technical-sciences/logo-20261025",
+          "altText": "SIMATS official university emblem and wordmark",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://static.wixstatic.com/media/41d401_a8c7a7ab543248d28e749f84b1950f3b~mv2.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official occupational therapy college website photograph, visibly identifying the Saveetha Health Sciences Block, used in a factual institution profile; no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/saveetha-institute-of-medical-and-technical-sciences/cover-20261025",
+          "altText": "Saveetha Health Sciences Block at the Thandalam campus shown by the occupational therapy college",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

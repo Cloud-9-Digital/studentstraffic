@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sri-sairam-engineering-college",
+      "universityName": "Sri Sairam Engineering College",
+      "sourceBatch": "codex-sairam-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://sairam.edu.in/wp-content/uploads/2023/12/Sri_Sai_Ram_Engineering_College_logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://sairam.edu.in/",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Sri Sairam Engineering College crest",
+          "visualCheck": "Native191x191officialoriginalbrandPNGinspected;completecircularcollegecrestandname,noaccreditationclaims. Matchesofficialheader. Originalunprefixedassetselectedinstead offaviconrenditionsorresampled512croppedmaster.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200withordinaryMozilla/5.0UserAgentandlocaloriginal-pixelinspection;defaultcurl403. Reviewedlocaloriginalretainedinsourcebundle.",
+          "proposedPublicId": "studentstraffic/universities/sri-sairam-engineering-college/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://sairam.edu.in/wp-content/uploads/2023/10/campus-1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://sairam.edu.in/",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Sri Sairam campus academic building beside a landscaped pond and statue",
+          "visualCheck": "Native600x300officialhomepagecampusJPEGinspected;academicblock,landscapedpondandSaraswatistatue;nocopyrightcreditdependentlicence,marketingoverlayorprofessionalapprovalclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200withordinaryMozilla/5.0UserAgentandlocaloriginal-pixelinspection;defaultcurl403. Reviewedlocaloriginalretainedinsourcebundle.",
+          "proposedPublicId": "studentstraffic/universities/sri-sairam-engineering-college/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

@@ -242,3 +242,9 @@ overwriting each other.
   immediately, not scratchpad — a session end mid-batch shouldn't lose research.
 - Keep this file and `docs/university-pipeline-architecture.md` updated when the pipeline shape,
   scope, or priority queue changes.
+
+**Next reviewed Tamil Nadu group (25 October 2026):** migrations 0207–0210 contain Sri Sairam
+Engineering College (15 offerings), Chennai Mathematical Institute (6), SPIHER Avadi (27), and
+SIMATS occupational therapy (4). Their complete inventories retain programme and applicant-route
+holds. SVCE, Sathyabama and IIT Madras are the current offline research assignments. Keep new
+unreviewed payloads outside the executable migration sequence during a controlled grouped apply.

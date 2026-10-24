@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sri-sairam-engineering-college",
+      "universityName": "Sri Sairam Engineering College",
+      "sourceBatch": "codex-sairam-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://sairam.edu.in/wp-content/uploads/2023/12/Sri_Sai_Ram_Engineering_College_logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://sairam.edu.in/",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Sri Sairam Engineering College crest",
+          "visualCheck": "Native191x191officialoriginalbrandPNGinspected;completecircularcollegecrestandname,noaccreditationclaims. Matchesofficialheader. Originalunprefixedassetselectedinstead offaviconrenditionsorresampled512croppedmaster.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200withordinaryMozilla/5.0UserAgentandlocaloriginal-pixelinspection;defaultcurl403. Reviewedlocaloriginalretainedinsourcebundle.",
+          "proposedPublicId": "studentstraffic/universities/sri-sairam-engineering-college/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://sairam.edu.in/wp-content/uploads/2023/10/campus-1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://sairam.edu.in/",
+          "rightsBasis": "Official institutional brand/marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Sri Sairam campus academic building beside a landscaped pond and statue",
+          "visualCheck": "Native600x300officialhomepagecampusJPEGinspected;academicblock,landscapedpondandSaraswatistatue;nocopyrightcreditdependentlicence,marketingoverlayorprofessionalapprovalclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200withordinaryMozilla/5.0UserAgentandlocaloriginal-pixelinspection;defaultcurl403. Reviewedlocaloriginalretainedinsourcebundle.",
+          "proposedPublicId": "studentstraffic/universities/sri-sairam-engineering-college/cover-20261025"
+        }
+      ]
+    },
+    {
+      "universitySlug": "chennai-mathematical-institute",
+      "universityName": "Chennai Mathematical Institute",
+      "sourceBatch": "codex-cmi-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.cmi.ac.in/pix/cmi-header.png",
+          "proposedPublicId": "studentstraffic/universities/chennai-mathematical-institute/logo-20261025",
+          "altText": "Chennai Mathematical Institute official monogram and wordmark",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identification header/logo, used for factual identification; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/CMI-front.jpg",
+          "proposedPublicId": "studentstraffic/universities/chennai-mathematical-institute/cover-20261025",
+          "altText": "CMI Siruseri academic building, photographed in August 2013",
+          "sourceType": "wikimedia-commons",
+          "rightsBasis": "Prakash.saivasan, CMI-front.jpg, photographed 28 August 2013; CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0 ; source https://commons.wikimedia.org/wiki/File:CMI-front.jpg. Historical campus photograph; original sepia appearance preserved. Any image transformations remain under the same licence.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "universitySlug": "st-peters-institute-of-higher-education-and-research",
+      "universityName": "St. Peter's Institute of Higher Education and Research",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://spiher.ac.in/wp-content/uploads/2024/12/St.Peters-Logo-New-white-bg-scaled.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://spiher.ac.in/",
+          "rightsBasis": "Official identifying logo at university homepage; complete symbol and motto cropped from wordmark asset. No brand alteration or unsupported accreditation text retained. No open licence claimed. Source returned HTTP200 with image content type; visually reviewed25October2026 by worker and parent.",
+          "proposedPublicId": "studentstraffic/universities/st-peters-institute-of-higher-education-and-research/logo",
+          "altText": "St. Peter\u2019s Institute of Higher Education and Research symbol and motto",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 130,
+              "y": 65,
+              "width": 410,
+              "height": 510
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://spiher.ac.in/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-07-at-11.03.55-AM-1-1024x768.jpeg",
+          "sourceType": "official",
+          "sourcePage": "https://spiher.ac.in/campus-life/",
+          "rightsBasis": "Official university campus-life photograph. Original GPS overlay identifies St Peters University Avadi and18March2025. Crop excludes entire GPS/Google overlay belowy529 while retaining full players, field and campus environment; not represented as academic building. No open licence claimed. Source returned HTTP200 with image content type; visually reviewed25October2026 by worker and parent.",
+          "proposedPublicId": "studentstraffic/universities/st-peters-institute-of-higher-education-and-research/cover",
+          "altText": "Students playing football on SPIHER\u2019s Avadi campus playing field",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 1024,
+              "height": 520
+            }
+          ]
+        }
+      ],
+      "migrationId": "0209-india-st-peters-institute-of-higher-education-and-research"
+    },
+    {
+      "universitySlug": "saveetha-institute-of-medical-and-technical-sciences",
+      "universityName": "Saveetha Institute of Medical and Technical Sciences",
+      "sourceBatch": "codex-simats-resume-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://static.wixstatic.com/media/41d401_bd785b6002d647d38ba30fcd859ba46e~mv2.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official SIMATS institution identity asset. Crop retains university emblem and wordmark and removes adjacent historical ranking/accreditation panels; no ownership transfer claimed.",
+          "transformation": [
+            {
+              "crop": "crop",
+              "gravity": "north_west",
+              "x": 0,
+              "y": 0,
+              "width": 565,
+              "height": 124
+            }
+          ],
+          "proposedPublicId": "studentstraffic/universities/saveetha-institute-of-medical-and-technical-sciences/logo-20261025",
+          "altText": "SIMATS official university emblem and wordmark",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://static.wixstatic.com/media/41d401_a8c7a7ab543248d28e749f84b1950f3b~mv2.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official occupational therapy college website photograph, visibly identifying the Saveetha Health Sciences Block, used in a factual institution profile; no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/saveetha-institute-of-medical-and-technical-sciences/cover-20261025",
+          "altText": "Saveetha Health Sciences Block at the Thandalam campus shown by the occupational therapy college",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}
