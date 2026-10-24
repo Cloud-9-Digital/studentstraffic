@@ -1,0 +1,3079 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bcom",
+      "name": "Bachelor of Commerce",
+      "shortName": "B.Com",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "commerce",
+      "aliases": [
+        "BCom",
+        "Bachelor in Commerce"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Commerce bachelor programmes study accounting, business, economics and finance, with specialist subjects varying by award. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.Com: Study and Admissions",
+      "metaDescription": "Compare B.Com programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A B.Sc. in Computer Science is a science-faculty bachelor's degree in the theory and practice of computing. The curriculum covers programming, data structures and algorithms, discrete mathematics, computer architecture, operating systems, databases, networks and software engineering, with electives in artificial intelligence, data science, cyber security or graphics. It differs from a B.E./B.Tech by placing more weight on mathematics and computing theory and less on engineering design. Programmes last three or four years and lead to software, data and IT roles or to master's study.",
+      "metaTitle": "B.Sc. Computer Science: Entry, Study and Fees",
+      "metaDescription": "Compare B.Sc. Computer Science programmes by entry qualifications, teaching language, duration, campus, curriculum and complete study costs."
+    },
+    {
+      "slug": "bsc-mathematics",
+      "name": "B.Sc. in Mathematics",
+      "shortName": "B.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "bachelors",
+      "discipline": "mathematics",
+      "aliases": [
+        "Bachelor of Science in Mathematics",
+        "BSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Mathematics bachelor’s programmes study mathematical reasoning and problem solving through subjects such as calculus, algebra, analysis, geometry, probability and applied mathematics. Curricula may include computing and applications in other fields. Compare subject prerequisites, specialisations, assessment, teaching language, duration and complete costs.",
+      "metaTitle": "B.Sc. Mathematics: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Mathematics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bachelor-media-communication",
+      "name": "Bachelor's in Media and Communication",
+      "shortName": "Bachelor's Media",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "media-communication",
+      "aliases": [
+        "BA Media and Communication",
+        "Bachelor of Communication"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Media and communication bachelor programmes study communication, media practices, production and analysis. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "Bachelor's Media: Entry, Study and Fees",
+      "metaDescription": "Compare Bachelor's Media programmes by entry qualifications, teaching language, duration, campus, curriculum and complete study costs."
+    },
+    {
+      "slug": "bachelor-journalism",
+      "name": "Bachelor's in Journalism",
+      "shortName": "Bachelor's Journalism",
+      "stream": "media-communication",
+      "level": "bachelors",
+      "discipline": "journalism",
+      "aliases": [
+        "BA Journalism",
+        "Bachelor of Journalism"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "This catalogue category covers undergraduate journalism and mass communication degrees, usually three or four years. Programmes typically combine news reporting, writing and editing, broadcast and digital production, media law and ethics, and public relations or advertising, with studio work, portfolio projects and media internships.",
+      "metaTitle": "Bachelor's Journalism Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Journalism and mass communication degrees for international applicants: duration, intakes, tuition and each admission route."
+    },
+    {
+      "slug": "bachelor-food-science-technology",
+      "name": "Bachelor's in Food Science and Technology",
+      "shortName": "Bachelor's Food Science",
+      "stream": "agriculture",
+      "level": "bachelors",
+      "discipline": "food-science-technology",
+      "aliases": [
+        "BSc Food Science",
+        "Bachelor of Food Technology"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "This catalogue category covers undergraduate degrees in food science and food technology, including B.Sc. and B.Tech awards, usually three or four years after an upper-secondary qualification with science. Typical curricula cover food chemistry, microbiology, food processing and preservation, dairy and cereal technology, packaging, quality assurance and food safety law, with plant training.",
+      "metaTitle": "Bachelor's Food Science Degrees for International Students",
+      "metaDescription": "Compare Bachelor's Food Science degrees by award, subject eligibility, programme length, tuition and the admission route each university publishes."
+    },
+    {
+      "slug": "ba-sociology",
+      "name": "B.A. in Sociology",
+      "shortName": "B.A. Sociology",
+      "stream": "social-sciences",
+      "level": "bachelors",
+      "discipline": "sociology",
+      "aliases": [
+        "BA Sociology",
+        "Bachelor of Arts in Sociology"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "B.A. Sociology programmes study social institutions, communities, culture, inequality and methods of social research. Teaching may combine lectures, guided study, practical or research exercises and assessed assignments. Compare each institution’s curriculum, entry subjects, teaching language, duration, admission process and verified tuition status before applying.",
+      "metaTitle": "B.A. Sociology: Study and Admissions",
+      "metaDescription": "Compare B.A. Sociology programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bachelor-psychology",
+      "name": "Bachelor's in Psychology",
+      "shortName": "Bachelor's Psychology",
+      "stream": "psychology",
+      "level": "bachelors",
+      "discipline": "psychology",
+      "aliases": [
+        "BA Psychology",
+        "BSc Psychology"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Psychology bachelor’s programmes examine behaviour, mental processes and their social, biological and developmental contexts. Study may include research methods, statistics, experiments and applied topics. Compare curricula, practical requirements, language, entry qualifications and costs; professional clinical registration requires its own qualifying pathway.",
+      "metaTitle": "Bachelor's Psychology: Study and Admissions",
+      "metaDescription": "Compare Bachelor's Psychology programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bachelor-economics",
+      "name": "Bachelor's in Economics",
+      "shortName": "Bachelor's Economics",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "economics",
+      "aliases": [
+        "BA Economics",
+        "BSc Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Economics bachelor programmes study markets, resource allocation, economic institutions and methods of economic analysis. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "Bachelor's Economics: Study and Admissions",
+      "metaDescription": "Compare Bachelor's Economics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "m-o-p-vaishnav-college-for-women",
+      "name": "M.O.P. Vaishnav College for Women (Autonomous)",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 1992,
+      "officialWebsite": "https://mopvc.edu.in/",
+      "mediaAttribution": {},
+      "summary": "M.O.P. Vaishnav College for Women is an autonomous, self-financing college affiliated to the University of Madras in Nungambakkam, Chennai. Established in 1992, it offers study in commerce, business, computing, media, food science and social sciences. These undergraduate routes describe Indian women’s school-entry conditions and regular campus study.",
+      "campusLifestyle": "The central Chennai campus brings academic departments, library facilities, media and computing spaces, and student activities together. Programme shifts and practical work affect the daily timetable. The current handbook has dress, identity-card and classroom mobile-phone rules; review these before choosing a programme and commute.",
+      "cityProfile": "The college is at 20, IV Lane, Nungambakkam High Road, Chennai 600034. Its urban setting suits students planning a city commute. Confirm shift hours and travel arrangements before acceptance; the handbook has vehicle and parking rules, and private accommodation requires a separate arrangement.",
+      "practicalExposure": "Department curricula include subject-specific projects, practical work, field visits and internships. The college describes media studios, food-production facilities, computing resources and business-on-campus learning. The exact requirements vary by award; obtain the current curriculum, supervision arrangements and any materials or external-visit costs.",
+      "hostelOverview": "The current institutional MBA disclosure records no girls’ hostel seats, and the historical institutional report states the college does not operate a hostel. Applicants needing accommodation should obtain current college guidance and assess private housing separately. A programme offer does not include a residence place or establish its cost.",
+      "dietarySupport": "The 2025–26 handbook describes a college food court supplying vegetarian food and permits students to bring their own vegetarian food. It also describes Beyond Breads, a health cafeteria. Confirm current opening hours, menu, prices and any allergy requirements before budgeting; these services do not establish a residence meal plan.",
+      "safetyOverview": "The handbook describes in-campus medical support through Apollo Shine, accessible ramps, elevators and washrooms, and campus conduct rules. Obtain current emergency contacts and the procedure for medical help at induction. Confirm travel and private-housing arrangements separately from the college’s on-campus services.",
+      "studentSupport": "The college describes a campus counsellor available by appointment through its Happiness Centre, mentoring and counselling resources, and library/digital research facilities. Students receive an intranet account for academic information. Confirm current access and departmental support arrangements during induction.",
+      "whyChoose": [
+        "Women’s autonomous undergraduate study within University of Madras affiliation.",
+        "Subject routes across commerce, computing, media, food science and social sciences.",
+        "Library, digital, practical and student-support facilities in central Chennai."
+      ],
+      "thingsToConsider": [
+        "Obtain an exact programme and applicant-route tuition quotation.",
+        "June refers to the published 2025 first-year induction baseline.",
+        "Review the programme’s shift, assessment and school-subject conditions.",
+        "Arrange accommodation independently and check college conduct rules."
+      ],
+      "bestFitFor": [
+        "Indian women meeting the selected school-subject conditions.",
+        "Students planning regular campus study and a central Chennai commute.",
+        "Applicants comparing exact programme curricula and practical requirements."
+      ],
+      "recognitionBadges": [
+        "University of Madras — autonomous affiliated college",
+        "NAAC — cycle 4 A++, CGPA 3.55; declared 28 June 2022"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "University of Madras own self-financing college directory",
+          "url": "https://www.unom.ac.in/index.php?route=colleges%2Fselffinance"
+        },
+        {
+          "label": "NAAC own valid-institution list 14 August 2025, C 43917",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+        }
+      ],
+      "industryPartners": [],
+      "programmes": [
+        {
+          "slug": "mop-b-com-accounting-and-finance",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com Accounting and Finance",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-business/b-com-accounting-and-finance/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-accounting-and-finance/"
+          },
+          "admissionsContent": {
+            "overview": "B.Com Accounting and Finance is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Student must have passed 10+2, any board or equivalent, with background in Commerce/ Business studies, Accountancy, and Mathematics."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Commerce study focused on accounting and finance, with the applicable business, quantitative and practical components. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-com-marketing-management",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com Marketing Management",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-business/b-com-marketing-management/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-marketing-management/"
+          },
+          "admissionsContent": {
+            "overview": "B.Com Marketing Management is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Standard XII Students from the Commerce stream with Commerce/ Business Studies , Accountancy, with or without Mathematics can apply for the programme."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Commerce foundations with marketing management, retail and services marketing, and relevant business communication and practical work. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-com-corporate-secretaryship",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com Corporate Secretaryship",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-business/b-com-corporate-secretaryship/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-corporate-secretaryship/"
+          },
+          "admissionsContent": {
+            "overview": "B.Com Corporate Secretaryship is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Standard XII Students from the Commerce stream with Commerce/ Business studies, Accountancy, with or without Mathematics can apply for the program"
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Commerce study with corporate administration, company law and secretaryship-related academic work; professional certifications have separate requirements. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-com-honours",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com Honours",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-business/b-com-honours/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-honours/"
+          },
+          "admissionsContent": {
+            "overview": "B.Com Honours is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Pass 10+2 or equivalent in Commerce with Commerce/Business Studies, Accountancy and Mathematics."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Three-year honours study in commerce, combining accounting, business and quantitative learning with the programme’s practical or project requirements. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-sc-computer-science",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc Computer Science",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-computer-science/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-computer-science/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Computer Science is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "(10+2) pass (Any Board) with Mathematics as compulsory subject"
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Computer science study with programming, computing concepts and practical work; obtain the current software, laboratory and project requirements. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-sc-mathematics",
+          "canonicalCourseSlug": "bsc-mathematics",
+          "officialTitle": "B.Sc Mathematics",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-mathematics/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-mathematics/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Mathematics is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Pass in Class X & XII or equivalent from any board with Mathematics / Business Mathematics / Applied Mathematics can apply for the programme."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Mathematical concepts and methods with the current allied, skill and application components; verify the exact semester choices. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-sc-visual-communication",
+          "canonicalCourseSlug": "bachelor-media-communication",
+          "officialTitle": "B.Sc Visual Communication",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-visual-communication/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-visual-communication/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Visual Communication is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Standard XII from any stream, with visualising, drawing and related skills.",
+                "Admission is through assessment and evaluation."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Visual communication with drawing, photography, design and media-production learning; admission assesses relevant visual and drawing skills. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-sc-electronic-media",
+          "canonicalCourseSlug": "bachelor-media-communication",
+          "officialTitle": "B.Sc Electronic Media",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-electronic-media/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-electronic-media/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Electronic Media is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Standard XII from any stream, with media, current-affairs and global-social-issue knowledge.",
+                "Admission is through an entrance test."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Electronic media study with media knowledge, production and practical components; confirm entrance-test and current departmental studio requirements. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-a-journalism",
+          "canonicalCourseSlug": "bachelor-journalism",
+          "officialTitle": "B.A. Journalism",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-a-journalism/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-a-journalism/"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Journalism is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Plus-two pass from any stream with a flair for written and oral communication."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Journalism study with written and oral communication, reporting and media practice, including the current fact-checking and practical learning opportunities. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-sc-food-science-and-management",
+          "canonicalCourseSlug": "bachelor-food-science-technology",
+          "officialTitle": "B.Sc Food Science and Management",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-food-science/b-sc-food-science-and-management/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-food-science/b-sc-food-science-and-management/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Food Science and Management is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "“The Eligibility condition of B.Sc., Food Science and Management is Candidates from any stream who have completed 10+2 can apply.”"
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Food science and management study with programme-specific food-production, practical and research learning; confirm laboratory, materials and food-safety requirements. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-a-sociology",
+          "canonicalCourseSlug": "ba-sociology",
+          "officialTitle": "B.A. Sociology",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-social-science/b-a-sociology/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-a-sociology/"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Sociology is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "10+2 pass of any Board"
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Sociological concepts and specialised subjects across six semesters, with field visits, internships and project work described in the current brochure. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-sc-psychology",
+          "canonicalCourseSlug": "bachelor-psychology",
+          "officialTitle": "B.Sc Psychology",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-social-science/b-sc-psychology/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The institutional SSR submitted December 2021/generated April 2022 records English for this continued award/faculty route. Its dated programme table is corroborated by the named historical programme identity and current admission materials; language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-sc-psychology/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Psychology is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Candidates from any stream who have completed 10+2 can apply, with preference given to those with Psychology or Biology."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Undergraduate psychology study with the current theory, research and practical components; this degree does not by itself establish a clinical practice licence. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        },
+        {
+          "slug": "mop-b-a-economics",
+          "canonicalCourseSlug": "bachelor-economics",
+          "officialTitle": "B.A. Economics",
+          "durationYears": 3,
+          "officialProgramUrl": "https://mopvc.edu.in/school-of-business/b-a-economics/",
+          "fee": {
+            "status": "on_request",
+            "notes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+            "verifiedAt": "2026-10-25"
+          },
+          "feeNotes": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "mediumNote": "The institutional SSR submitted December 2021/generated April 2022 records English for this continued award/faculty route. Its dated programme table is corroborated by the named historical programme identity and current admission materials; language papers retain their own subjects.",
+          "intakeMonths": [
+            "June"
+          ],
+          "intakeCodes": [
+            "june"
+          ],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian women with the accepted school qualification and required programme subjects."
+            ],
+            "restrictions": [
+              "A foreign-national admission route is not established by this entry.",
+              "The exact shift, qualification equivalence and selection requirements must be confirmed through the college."
+            ],
+            "notes": "Regular women-only undergraduate study. June refers to the dated 2025 first-year induction baseline.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://mopvc.edu.in/school-of-business/b-a-economics/"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Economics is a three-year regular undergraduate route at M.O.P. Vaishnav College for Women in Nungambakkam, Chennai. The college offers autonomous study within University of Madras affiliation. This entry describes the Indian women’s qualifying route; confirm the exact shift and next cohort dates.",
+            "eligibility": {
+              "intro": "Indian women meeting the stated school-subject conditions may apply. The college assesses qualification equivalence and the exact admission route.",
+              "items": [
+                "Pass in 10 + 2 (Any group – Economics as a subject in +2 Preferred)"
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026–27 admission portal and choose the exact undergraduate programme and available shift.",
+              "Check the programme-specific subject conditions and any assessment or entrance-test instructions before completing the application.",
+              "Provide the qualifying examination and application details requested by the live official form; obtain its current original-record checklist.",
+              "Follow the college’s selection and verification instructions, and complete payments only through its notified official channel."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying Class XII marks and subject details for assessing the selected programme’s entry conditions.",
+                "Obtain the college’s current original-record and qualification-equivalence checklist for the exact board route."
+              ],
+              "application": [
+                "Supply the identification, photograph and supporting records expressly requested in the current application form.",
+                "Obtain the exact original-document and category-document list before attending admission verification."
+              ]
+            },
+            "deadlinesNote": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Regular undergraduate study",
+              "language": "English",
+              "details": "Economics study with quantitative, analytical and public-policy learning under the current department curriculum. Obtain the current semester timetable and any compulsory practical charges."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Who can apply through these undergraduate routes?",
+          "answer": "Indian women holding the accepted school qualification and meeting the exact subject conditions may apply. Qualification equivalence and any foreign-national route require a separate college assessment."
+        },
+        {
+          "question": "Which university is the college affiliated to?",
+          "answer": "M.O.P. Vaishnav College for Women is an autonomous college affiliated to the University of Madras. Autonomous study still follows applicable degree and admission requirements."
+        },
+        {
+          "question": "What first-year date is available?",
+          "answer": "The 2025–26 annual report records induction for the incoming 2025–2028 undergraduate cohort on 23–28 June 2025. That historical orientation baseline does not guarantee the next cohort’s class-start date."
+        },
+        {
+          "question": "What is the teaching language?",
+          "answer": "The dated 2022 institutional programme table records English for these continued award/faculty routes. Language papers have their own subjects. The exact current department curriculum should be checked at admission."
+        },
+        {
+          "question": "How much is undergraduate tuition?",
+          "answer": "Obtain a current official quotation for the exact undergraduate award and applicant category. Request tuition and compulsory academic charges separately for the exact programme and shift."
+        },
+        {
+          "question": "Are there entrance or skill assessments?",
+          "answer": "Conditions vary by programme. Visual Communication uses assessment/evaluation; Electronic Media uses an entrance test and expects media, current-affairs and global-social-issue knowledge. Check the exact selected course instructions."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the college-linked admission portal for the current cycle, choose the exact programme and shift, and follow its qualifying-record, selection and verification steps. An application does not guarantee admission."
+        },
+        {
+          "question": "Which documents are required?",
+          "answer": "Prepare qualifying marks and subject details, and obtain the exact identification, photo, original-record and category checklist from the current application form. Requirements for qualification equivalence must be assessed individually."
+        },
+        {
+          "question": "Does the college provide a hostel?",
+          "answer": "The current institutional disclosure records no girls’ hostel seats, and the historical institutional report says the college does not operate a hostel. Seek current college guidance and arrange private accommodation independently."
+        },
+        {
+          "question": "What food is available?",
+          "answer": "The handbook describes a vegetarian food court, permits students to bring vegetarian food, and lists a health cafeteria. Confirm current menu, prices, hours and dietary needs directly."
+        },
+        {
+          "question": "What support services are described?",
+          "answer": "The handbook lists medical support, counselling by appointment, mentoring, accessible facilities and library/digital resources. Confirm current procedures and service availability at induction."
+        },
+        {
+          "question": "What everyday rules should students check?",
+          "answer": "The handbook has dress, visible identity-card, classroom mobile-phone, vehicle and conduct rules. Check these alongside the exact shift timetable before arranging travel and accepting admission."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current college website",
+          "url": "https://mopvc.edu.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current admission portal",
+          "url": "https://www.mopvaishnav.co.in/admission/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Student handbook 2025–26",
+          "url": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Annual report 2025–26",
+          "url": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Historical institutional SSR 2021/2022",
+          "url": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Historical exact-name institutional SSR 2014",
+          "url": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC own valid register",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University of Madras directory",
+          "url": "https://www.unom.ac.in/index.php?route=colleges%2Fselffinance",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Continued undergraduate awards with historical 2025 first-entry induction, current department entry conditions and dated exact award/faculty language evidence. Unresolvednew awards, professionalapproval and PGintakeheld.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my programme eligibility",
+            "capture": [
+              "qualification",
+              "subjects",
+              "marks"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my complete college budget",
+            "capture": [
+              "programme",
+              "shift",
+              "accommodation"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my M.O.P. application",
+            "capture": [
+              "programme",
+              "intended cycle"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Commerce study focused on accounting and finance, with the applicable business, quantitative and practical components.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-accounting-and-finance/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Com Accounting and Finance; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-accounting-and-finance/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Student must have passed 10+2, any board or equivalent, with background in Commerce/ Business studies, Accountancy, and Mathematics.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-accounting-and-finance/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-accounting-and-finance/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-accounting-and-finance"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Commerce foundations with marketing management, retail and services marketing, and relevant business communication and practical work.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-marketing-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Com Marketing Management; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-marketing-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Standard XII Students from the Commerce stream with Commerce/ Business Studies , Accountancy, with or without Mathematics can apply for the programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-marketing-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-marketing-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-marketing-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Commerce study with corporate administration, company law and secretaryship-related academic work; professional certifications have separate requirements.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-corporate-secretaryship/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Com Corporate Secretaryship; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-corporate-secretaryship/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Standard XII Students from the Commerce stream with Commerce/ Business studies, Accountancy, with or without Mathematics can apply for the program",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-corporate-secretaryship/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-corporate-secretaryship/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Three-year honours study in commerce, combining accounting, business and quantitative learning with the programme’s practical or project requirements.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-honours/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Com Honours; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-honours/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Pass 10+2 or equivalent in Commerce with Commerce/Business Studies, Accountancy and Mathematics.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-honours/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-com-honours/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-com-honours"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Computer science study with programming, computing concepts and practical work; obtain the current software, laboratory and project requirements.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Sc Computer Science; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "(10+2) pass (Any Board) with Mathematics as compulsory subject",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Mathematical concepts and methods with the current allied, skill and application components; verify the exact semester choices.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-mathematics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Sc Mathematics; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-mathematics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Pass in Class X & XII or equivalent from any board with Mathematics / Business Mathematics / Applied Mathematics can apply for the programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-mathematics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-information-technology/b-sc-mathematics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Visual communication with drawing, photography, design and media-production learning; admission assesses relevant visual and drawing skills.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-visual-communication/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Sc Visual Communication; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-visual-communication/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Standard XII from any stream, with visualising, drawing and related skills. Admission is through assessment and evaluation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-visual-communication/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-visual-communication/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-visual-communication"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Electronic media study with media knowledge, production and practical components; confirm entrance-test and current departmental studio requirements.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-electronic-media/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Sc Electronic Media; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-electronic-media/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Standard XII from any stream, with media, current-affairs and global-social-issue knowledge. Admission is through an entrance test.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-electronic-media/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-sc-electronic-media/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-electronic-media"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Journalism study with written and oral communication, reporting and media practice, including the current fact-checking and practical learning opportunities.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-a-journalism/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.A. Journalism; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-a-journalism/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Plus-two pass from any stream with a flair for written and oral communication.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-a-journalism/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-communication-and-media-studies/b-a-journalism/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-journalism"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Food science and management study with programme-specific food-production, practical and research learning; confirm laboratory, materials and food-safety requirements.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-food-science/b-sc-food-science-and-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Sc Food Science and Management; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-food-science/b-sc-food-science-and-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "“The Eligibility condition of B.Sc., Food Science and Management is Candidates from any stream who have completed 10+2 can apply.”",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-food-science/b-sc-food-science-and-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-food-science/b-sc-food-science-and-management/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-food-science-and-management"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Sociological concepts and specialised subjects across six semesters, with field visits, internships and project work described in the current brochure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-a-sociology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "2014 SSR printedp 9 exact named undergraduate award,3 years, English; corroborated 2022 faculty row and current continued programme.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/07/NAAC-SELF-STUDY-REPORT-FEB-2014.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.A. Sociology; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-a-sociology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The 2014 institutional SSR names this exact programme as English-medium and three years. The 2022 SSR again records English for its continued award/faculty route; current department materials continue the degree. Language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "10+2 pass of any Board",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-a-sociology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-a-sociology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-sociology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Undergraduate psychology study with the current theory, research and practical components; this degree does not by itself establish a clinical practice licence.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-sc-psychology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.Sc Psychology; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-sc-psychology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The institutional SSR submitted December 2021/generated April 2022 records English for this continued award/faculty route. Its dated programme table is corroborated by the named historical programme identity and current admission materials; language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Candidates from any stream who have completed 10+2 can apply, with preference given to those with Psychology or Biology.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-sc-psychology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-social-science/b-sc-psychology/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-sc-psychology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "academics",
+      "claimText": "Economics study with quantitative, analytical and public-policy learning under the current department curriculum.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-a-economics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "official Title",
+      "claimText": "B.A. Economics; current official department page and 2026 admission continuation.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-a-economics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "duration",
+      "claimText": "Three-year undergraduate award; dated 2022 SSR table 36 months, corroborated current programme structure.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "medium",
+      "claimText": "The institutional SSR submitted December 2021/generated April 2022 records English for this continued award/faculty route. Its dated programme table is corroborated by the named historical programme identity and current admission materials; language papers retain their own subjects.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2022/04/SSR-AFTER-DVV-TNCOGN10164_8.4.22.pdf",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics",
+      "internalNotes": "SSR tables group programmes by award/faculty; exact continuation is reconciled with current department and historical named award descriptions. No policy extrapolation to laternew awards."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "eligibility",
+      "claimText": "Pass in 10 + 2 (Any group – Economics as a subject in +2 Preferred)",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-a-economics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "intake",
+      "claimText": "The 2025–26 annual report records induction for the 2025–2028 incoming UG batch on 23–28 June 2025. June is a historical first-entry orientation baseline, not a guaranteed 2026 or future class date. Obtain the next cohort notice.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2026/04/college-day-booklet-2025-26_.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "fee",
+      "claimText": "The current tuition amount for this exact undergraduate programme and applicant route requires an official quotation. Request tuition, examination and any compulsory programme charges separately. College fee collection is through its notified online portal. Private accommodation, food and travel are separate. Request programme and shift-specific figures before budgeting.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "audience Eligibility",
+      "claimText": "Women-only Indian qualifying route; no foreign pathway inferred.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/school-of-business/b-a-economics/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "admissions",
+      "claimText": "Current 2026–27 application portal; exact programme selection and official verification/payment instructions.",
+      "status": "verified",
+      "sourceLabel": "Official college admission portal",
+      "sourceUrl": "https://www.mopvaishnav.co.in/admission/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "mop-b-a-economics"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "summary",
+      "claimText": "M.O.P. Vaishnav College for Women is an autonomous, self-financing college affiliated to the University of Madras in Nungambakkam, Chennai. Established in 1992, it offers study in commerce, business, computing, media, food science and social sciences. These undergraduate routes describe Indian women’s school-entry conditions and regular campus study.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "campus Lifestyle",
+      "claimText": "The central Chennai campus brings academic departments, library facilities, media and computing spaces, and student activities together. Programme shifts and practical work affect the daily timetable. The current handbook has dress, identity-card and classroom mobile-phone rules; review these before choosing a programme and commute.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "city Profile",
+      "claimText": "The college is at 20, IV Lane, Nungambakkam High Road, Chennai 600034. Its urban setting suits students planning a city commute. Confirm shift hours and travel arrangements before acceptance; the handbook has vehicle and parking rules, and private accommodation requires a separate arrangement.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "practical Exposure",
+      "claimText": "Department curricula include subject-specific projects, practical work, field visits and internships. The college describes media studios, food-production facilities, computing resources and business-on-campus learning. The exact requirements vary by award; obtain the current curriculum, supervision arrangements and any materials or external-visit costs.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "hostel Overview",
+      "claimText": "The current institutional MBA disclosure records no girls’ hostel seats, and the historical institutional report states the college does not operate a hostel. Applicants needing accommodation should obtain current college guidance and assess private housing separately. A programme offer does not include a residence place or establish its cost.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "dietary Support",
+      "claimText": "The 2025–26 handbook describes a college food court supplying vegetarian food and permits students to bring their own vegetarian food. It also describes Beyond Breads, a health cafeteria. Confirm current opening hours, menu, prices and any allergy requirements before budgeting; these services do not establish a residence meal plan.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "safety Overview",
+      "claimText": "The handbook describes in-campus medical support through Apollo Shine, accessible ramps, elevators and washrooms, and campus conduct rules. Obtain current emergency contacts and the procedure for medical help at induction. Confirm travel and private-housing arrangements separately from the college’s on-campus services.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "student Support",
+      "claimText": "The college describes a campus counsellor available by appointment through its Happiness Centre, mentoring and counselling resources, and library/digital research facilities. Students receive an intranet account for academic information. Confirm current access and departmental support arrangements during induction.",
+      "status": "verified",
+      "sourceLabel": "M.O.P. institutional source",
+      "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2025/12/STUDENT-HANDBOOK-2025-2026_Final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "recognition",
+      "claimText": "NAAC own valid list 14 August 2025 sheet 2 row 6073/serial 6072, TNCOGN 10164, C 43917, cycle 4 CGPA 3.55 A++, declared 28 June 2022. No expiry or programmeapproval inferred.",
+      "status": "verified",
+      "sourceLabel": "Regulator or affiliating university own record",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "publicField": "recognition",
+      "claimText": "University of Madras autonomous affiliated self-financing college.",
+      "status": "verified",
+      "sourceLabel": "Regulator or affiliating university own record",
+      "sourceUrl": "https://www.unom.ac.in/index.php?route=colleges%2Fselffinance",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

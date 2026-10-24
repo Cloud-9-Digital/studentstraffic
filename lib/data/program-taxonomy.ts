@@ -578,7 +578,6 @@ export const canonicalProgrammes = [
     discipline: "artificial-intelligence-machine-learning",
     aliases: [
       "Bachelor of Engineering in Artificial Intelligence",
-      "Bachelor of Science in Artificial Intelligence",
       "Artificial Intelligence and Machine Learning",
     ],
   },
@@ -619,7 +618,7 @@ export const canonicalProgrammes = [
     stream: "engineering",
     level: "bachelors",
     discipline: "cyber-security",
-    aliases: ["Bachelor of Cyber Security", "BSc Cyber Security"],
+    aliases: ["Bachelor of Cyber Security"],
   },
   {
     slug: "be-btech-mechanical-engineering",

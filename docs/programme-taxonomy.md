@@ -271,3 +271,14 @@ programme-level facts.
 ### Non-MBA master's Human Resource Management
 
 `master-human-resource-management` covers academic master's awards such as M.A. Human Resource Management and MHRM. Keep the exact institutional award title. It is distinct from `mba-human-resource-management`, which represents an MBA award, and from the postgraduate diploma family. HRM study may cover recruitment, organisational behaviour, employment relations, people development and analytical methods; curriculum and entry requirements vary by institution.
+
+### Science and engineering awards in AI and cyber security
+
+`be-btech-artificial-intelligence-machine-learning` and `be-btech-cyber-security`
+represent engineering bachelor's awards. A B.Sc. in Artificial Intelligence or
+Cyber Security must not resolve to these parents merely because the subject names
+overlap. The incorrect science-award aliases have been removed from these two
+registry entries. Use a suitable science family for a verified B.Sc. award, and
+retain the exact degree title and curriculum scope in its offering. Historical
+applied content bundles remain immutable; any published mapping correction needs
+a forward migration after an offering-title audit.

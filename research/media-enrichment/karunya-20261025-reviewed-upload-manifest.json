@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "karunya-institute-of-technology-and-sciences",
+      "universityName": "Karunya Institute of Technology and Sciences",
+      "sourceBatch": "codex-karunya-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admissions.karunya.edu/sites/admissions/files/uploads/logo.png.pagespeed.ce.0ueEiddfEk.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published on its own public website; no ownership transfer claimed, no generation or redrawing. Complete left emblem crop retains the motto and excludes the header wordmark and approval/accreditation wording.",
+          "proposedPublicId": "studentstraffic/universities/karunya-institute-of-technology-and-sciences/logo-20261025",
+          "altText": "Karunya Institute of Technology and Sciences institutional emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/media-logo.png",
+          "sha256": "a3ec980cabd07c88d683aec89c710fb1184b63b097ea392312420812d4ca39f9",
+          "width": 600,
+          "height": 100,
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://admissions.karunya.edu/sites/admissions/files/uploads/images/xcampus-view.jpg.pagespeed.ic.fB4EUmgWu8.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published on its own public website; no ownership transfer claimed, no generation or redrawing.",
+          "proposedPublicId": "studentstraffic/universities/karunya-institute-of-technology-and-sciences/cover-20261025",
+          "altText": "Panoramic view of Karunya Nagar campus buildings below the Western Ghats in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/media-cover-campus.webp",
+          "sha256": "978accaa9e3574faa14df94c98ea74bf95e17ea3c76a540dd68b58777a93d1cf",
+          "width": 1920,
+          "height": 571
+        }
+      ],
+      "migrationId": "0227-india-karunya-institute-of-technology-and-sciences"
+    }
+  ]
+}

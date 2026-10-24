@@ -1,0 +1,9 @@
+# Queen Mary's College, Chennai
+
+25 October2026; current government women's college at KamarajarSalai, Madrasaffiliated. Full inventory88records:42currentUGshift/medium entries,18currentPGmatrixentries,3additionaldirectory-only scope differences and25legacy/currentresearchdiscoveryrecords.
+
+Supported draft38UGofferings,15genericfamilies,312evidence. BCA2heldcurrentapproval; Sanskrit/Telugu2heldactualmediumconflict. PG18heldexactfirst-entryintake/degree-specificqualification;19thgeneralPGFamilyResourceManagementabsentcurrentmatrix. TamilShiftIIEconomics/Maths directoryclaims absentcurrentmatrixheld. MPhil13/PhD12researchrecordsheldseparateadmissionproof.
+
+Current2026DCE40yearagecap/categoryrelaxations supersede undatedcollege24copy afterrootvisualauthorityreview; no automaticstacking. Official2026matrix suppliesroute-specificEnglish/Tamil; ownJanuary2025namedSSR36months/own2026NIRFUG3yr establishduration. OfficialIUGorientation16/17/20July2026supports historicalJulybaselineonly, noactualclassstart/futurewindowpromise.38UGannualtuitionon_request because currentfirstyearaggregatefeetableomits isolatedtuitioncolumn; nozero inferred. ExactPGtuition0 retained butnotpublishedwithoutothergates.
+
+See full provenance/authority/qualification-group/mediumconflict/fee/approval notes in sourcebundle resume-findings.md. Executable promotion remains paused duringrootgroup10; complete draft is research-drafts/india/queen-marys-college-chennai-payload.json.

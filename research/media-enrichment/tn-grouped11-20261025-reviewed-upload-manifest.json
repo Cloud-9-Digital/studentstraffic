@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "karunya-institute-of-technology-and-sciences",
+      "universityName": "Karunya Institute of Technology and Sciences",
+      "sourceBatch": "codex-karunya-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admissions.karunya.edu/sites/admissions/files/uploads/logo.png.pagespeed.ce.0ueEiddfEk.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published on its own public website; no ownership transfer claimed, no generation or redrawing. Complete left emblem crop retains the motto and excludes the header wordmark and approval/accreditation wording.",
+          "proposedPublicId": "studentstraffic/universities/karunya-institute-of-technology-and-sciences/logo-20261025",
+          "altText": "Karunya Institute of Technology and Sciences institutional emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/media-logo.png",
+          "sha256": "a3ec980cabd07c88d683aec89c710fb1184b63b097ea392312420812d4ca39f9",
+          "width": 600,
+          "height": 100,
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 96,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://admissions.karunya.edu/sites/admissions/files/uploads/images/xcampus-view.jpg.pagespeed.ic.fB4EUmgWu8.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published on its own public website; no ownership transfer claimed, no generation or redrawing.",
+          "proposedPublicId": "studentstraffic/universities/karunya-institute-of-technology-and-sciences/cover-20261025",
+          "altText": "Panoramic view of Karunya Nagar campus buildings below the Western Ghats in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karunya-institute-of-technology-and-sciences/media-cover-campus.webp",
+          "sha256": "978accaa9e3574faa14df94c98ea74bf95e17ea3c76a540dd68b58777a93d1cf",
+          "width": 1920,
+          "height": 571
+        }
+      ],
+      "migrationId": "0227-india-karunya-institute-of-technology-and-sciences"
+    },
+    {
+      "universitySlug": "queen-marys-college-chennai",
+      "universityName": "Queen Mary’s College, Chennai",
+      "sourceBatch": "codex-qmc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/images/logonew.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.queenmaryscollege.edu.in/about",
+          "rightsBasis": "Official institutional public brand/campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Queen Mary’s College Chennai shield crest",
+          "visualCheck": "Native511×490. Official full institutionalshield with peacock,templetower,elephant,book,lamp and CommonsenseandConsiderationmotto; matchednativeUGorientationinstitutioncrest. Genuinebrandasset, notfavicon/synthetic.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "NormalpublicHTTPGET retainedlocaloriginal; sequentialnativeview_image inspection. NoDB/provideroperation.",
+          "proposedPublicId": "studentstraffic/universities/queen-marys-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/queen-marys-college-chennai/logo.png",
+          "sha256": "23700b24d6f7a4f66ffb2783ca48df9a041bd9eb773558d464cafd8924179332",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.queenmaryscollege.edu.in/images/college_photos/SUN_0001.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.queenmaryscollege.edu.in/about",
+          "rightsBasis": "Official institutional public brand/campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Queen Mary’s College Chennai administration building",
+          "visualCheck": "Native3000×2000. Officialaboutgalleryphoto: whitearchedadministrationbuilding, Tamilcollege name, dome, centralflagpole/gardens. Genuineowncampusasset, no externalstock/coursecard orattribution-dependentlicence.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "NormalpublicHTTPGET retainedlocaloriginal; sequentialnativeview_image inspection. NoDB/provideroperation.",
+          "proposedPublicId": "studentstraffic/universities/queen-marys-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/queen-marys-college-chennai/campus.jpg",
+          "sha256": "c084431220b64a72ab7037b66c55be459f16faa9060744dab415c4a5252af862",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0228-india-queen-marys-college-chennai"
+    },
+    {
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "universityName": "M.O.P. Vaishnav College for Women (Autonomous)",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2023/10/logo_mop_updated.webp",
+          "sourceType": "official",
+          "sourcePage": "https://mopvc.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on its own website. Ordinary direct HTTPS retrieval returned genuine image bytes,visually reviewed25October2026; complete original and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/m-o-p-vaishnav-college-for-women/logo",
+          "altText": "M.O.P. Vaishnav College for Women complete crest",
+          "localPath": "research/india-source-bundles/mop-vaishnav-20261025/logo.webp",
+          "sha256": "48a71ffe85db750590f0951521d6f67c133d3f275d4997332b52f1f5a194468a",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 115,
+              "height": 110
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/06/about-mop.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://mopvc.edu.in/campus-e-tour/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on its own website. Ordinary direct HTTPS retrieval returned genuine image bytes,visually reviewed25October2026; complete original and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/m-o-p-vaishnav-college-for-women/cover",
+          "altText": "Campus courtyard and academic building at M.O.P. Vaishnav College for Women in Chennai",
+          "localPath": "research/india-source-bundles/mop-vaishnav-20261025/campus-about.jpg",
+          "sha256": "70f70640bf5cc7c249d5985fc0d32957c0ff4aad1909d2d42a68aca657ac4856"
+        }
+      ],
+      "migrationId": "0229-mop-vaishnav-college-for-women"
+    }
+  ]
+}

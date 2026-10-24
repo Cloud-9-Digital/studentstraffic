@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "queen-marys-college-chennai",
+      "universityName": "Queen Mary’s College, Chennai",
+      "sourceBatch": "codex-qmc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/images/logonew.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.queenmaryscollege.edu.in/about",
+          "rightsBasis": "Official institutional public brand/campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Queen Mary’s College Chennai shield crest",
+          "visualCheck": "Native511×490. Official full institutionalshield with peacock,templetower,elephant,book,lamp and CommonsenseandConsiderationmotto; matchednativeUGorientationinstitutioncrest. Genuinebrandasset, notfavicon/synthetic.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "NormalpublicHTTPGET retainedlocaloriginal; sequentialnativeview_image inspection. NoDB/provideroperation.",
+          "proposedPublicId": "studentstraffic/universities/queen-marys-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/queen-marys-college-chennai/logo.png",
+          "sha256": "23700b24d6f7a4f66ffb2783ca48df9a041bd9eb773558d464cafd8924179332",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.queenmaryscollege.edu.in/images/college_photos/SUN_0001.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.queenmaryscollege.edu.in/about",
+          "rightsBasis": "Official institutional public brand/campus illustration; no open licence or ownership transfer claimed.",
+          "altText": "Queen Mary’s College Chennai administration building",
+          "visualCheck": "Native3000×2000. Officialaboutgalleryphoto: whitearchedadministrationbuilding, Tamilcollege name, dome, centralflagpole/gardens. Genuineowncampusasset, no externalstock/coursecard orattribution-dependentlicence.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "NormalpublicHTTPGET retainedlocaloriginal; sequentialnativeview_image inspection. NoDB/provideroperation.",
+          "proposedPublicId": "studentstraffic/universities/queen-marys-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/queen-marys-college-chennai/campus.jpg",
+          "sha256": "c084431220b64a72ab7037b66c55be459f16faa9060744dab415c4a5252af862",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0228-india-queen-marys-college-chennai"
+    }
+  ]
+}

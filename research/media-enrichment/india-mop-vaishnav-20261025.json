@@ -1,0 +1,47 @@
+{
+  "manifestId": "india-mop-vaishnav-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Official complete crest crop excludes accreditation wording; authentic official campus courtyard cover.",
+  "entries": [
+    {
+      "universitySlug": "m-o-p-vaishnav-college-for-women",
+      "universityName": "M.O.P. Vaishnav College for Women (Autonomous)",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2023/10/logo_mop_updated.webp",
+          "sourceType": "official",
+          "sourcePage": "https://mopvc.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on its own website. Ordinary direct HTTPS retrieval returned genuine image bytes,visually reviewed25October2026; complete original and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/m-o-p-vaishnav-college-for-women/logo",
+          "altText": "M.O.P. Vaishnav College for Women complete crest",
+          "localPath": "research/india-source-bundles/mop-vaishnav-20261025/logo.webp",
+          "sha256": "48a71ffe85db750590f0951521d6f67c133d3f275d4997332b52f1f5a194468a",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 115,
+              "height": 110
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mopvc.edu.in/wp-content/uploads/2021/06/about-mop.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://mopvc.edu.in/campus-e-tour/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph displayed on its own website. Ordinary direct HTTPS retrieval returned genuine image bytes,visually reviewed25October2026; complete original and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/m-o-p-vaishnav-college-for-women/cover",
+          "altText": "Campus courtyard and academic building at M.O.P. Vaishnav College for Women in Chennai",
+          "localPath": "research/india-source-bundles/mop-vaishnav-20261025/campus-about.jpg",
+          "sha256": "70f70640bf5cc7c249d5985fc0d32957c0ff4aad1909d2d42a68aca657ac4856"
+        }
+      ],
+      "migrationId": "0229-mop-vaishnav-college-for-women"
+    }
+  ]
+}
