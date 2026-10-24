@@ -1,0 +1,27 @@
+{
+  "appliedAt": "2026-10-24T18:39:06.636Z",
+  "uploads": {
+    "attempted": 4,
+    "succeeded": 4,
+    "failed": 0
+  },
+  "database": {
+    "updated": 2,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "panimalar-engineering-college",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "shiv-nadar-university-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
