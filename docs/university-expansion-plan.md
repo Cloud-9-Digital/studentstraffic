@@ -165,9 +165,11 @@ National Law University (hybrid Fisheries Law and Policy diploma) and Rajalakshm
 College (verified domestic undergraduate portfolio and MBA) were applied together as migrations
 0194–0196, with official logo/cover media in the same window. Other programme and applicant-route
 holds remain in their inventories. Keep the three offline research slots active as workers finish;
-Vel Tech, Tamil Nadu Dr Ambedkar Law University and Hindustan Institute of Technology and Science
-are the current next-batch assignments. Collect validated bundles for a deliberate grouped apply;
-do not poll or connect to the database during research.
+Vel Tech (34 offerings), Hindustan Institute of Technology and Science (38) and Periyar University
+Salem (4) were published together as migrations 0197–0199. Tamil Nadu Dr Ambedkar Law University
+retains documented programme-level holds. The three current offline assignments are Annamalai
+University, B.S. Abdur Rahman Crescent Institute and AMET Chennai. Collect validated bundles for a
+deliberate grouped apply; do not poll or connect to the database during research.
 
 **2026-07-20 Vietnam Medicine quality pass:** the first gold-standard correction bundle covers Dai
 Nam University, Dong A University, Buon Ma Thuot Medical University and Can Tho University of
