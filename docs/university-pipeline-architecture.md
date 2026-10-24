@@ -121,6 +121,12 @@ Offline validation also enforces the publisher's course focus-keyword rule for `
 `metaDescription`, so an SEO metadata failure is caught before the runner opens a database
 connection.
 
+**Verification dates (2026-10-24):** the publisher derives `lastVerifiedAt` from the latest
+non-omitted evidence check for that university, falling back to its research-source check dates for
+legacy payloads. Both inserts and updates use that date. A publication timestamp or a hard-coded
+historical date must never replace an evidence check. Correct previously applied records with a
+superseding content migration; do not edit their immutable bundles.
+
 `scripts/publish-catalog-payload.ts` is now an internal write engine, not a direct CLI. Do not let a
 research agent invoke it or any old one-off writer directly. Use the migration runner so that local
 research sessions do not wake the database.

@@ -31,6 +31,7 @@ import {
   type CatalogPayload,
 } from "./lib/catalog-payload-schema";
 import { refreshSearchDocumentsForUniversities } from "@/lib/search/university-search-documents";
+import { universityVerificationDate } from "./lib/catalog-verification-date";
 
 const sourceSchema = z.object({
   label: z.string().min(2),
@@ -237,17 +238,18 @@ export async function publishCatalogPayload(
       if (!countryId) throw new Error(`Country does not exist: ${university.countrySlug}`);
 
       const { programmes, ...content } = university;
+      const lastVerifiedAt = universityVerificationDate(university.slug, payload.evidence, university.researchSources);
       const [saved] = await tx.insert(universities).values({
         ...content,
         countryId,
         featured: false,
         published: true,
         similarUniversitySlugs: [],
-        lastVerifiedAt: "2026-07-12",
+        lastVerifiedAt,
         researchNotes: "Published through validated multi-stream catalogue payload.",
       }).onConflictDoUpdate({
         target: universities.slug,
-        set: { ...content, countryId, published: true, updatedAt: new Date() },
+        set: { ...content, countryId, published: true, lastVerifiedAt, updatedAt: new Date() },
       }).returning({ id: universities.id, slug: universities.slug });
       if (!saved) throw new Error(`Failed to publish university ${university.slug}`);
 

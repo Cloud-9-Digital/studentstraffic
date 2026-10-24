@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-10-24",
+  "entries": [
+    {
+      "universitySlug": "kongu-engineering-college",
+      "universityName": "Kongu Engineering College",
+      "sourceBatch": "tn-resume-20261024",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kongu.ac.in/static/media/kec11.8c78d444060b4f77a60d.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identity/campus image used to identify the institution in its catalogue profile; no open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/kongu-engineering-college/logo-20261024",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kongu.ac.in/static/media/kec.278b926390254d4ec529.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution identity/campus image used to identify the institution in its catalogue profile; no open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/kongu-engineering-college/cover-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "Tree-lined entrance gates of Kongu Engineering College in Perundurai"
+        }
+      ]
+    },
+    {
+      "universitySlug": "periyar-maniammai-university",
+      "universityName": "Periyar Maniammai Institute of Science & Technology",
+      "sourceBatch": "codex-tn-batch2-20261024",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://pmu.edu/assets/img/pmu-logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset, used solely to identify and illustrate PMIST in its factual university profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/periyar-maniammai-university/logo-20261024",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://pmu.edu/assets-v2/img/index/main-slider-banner-1.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand/marketing asset, used solely to identify and illustrate PMIST in its factual university profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/periyar-maniammai-university/cover-20261024",
+          "checkedAt": "2026-10-24",
+          "altText": "PMIST students outside the Periyar Knowledge Centre at the Vallam campus"
+        }
+      ]
+    },
+    {
+      "universitySlug": "bharathiar-university",
+      "universityName": "Bharathiar University",
+      "migrationId": "0187-india-bharathiar-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://b-u.ac.in/sites/b-u.ac.in/files/About%20University/bu-logo_0.png",
+          "sourceType": "official",
+          "checkedAt": "2026-10-24",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "rightsBasis": "Official university identification asset on university website; no open licence claimed. Reuse solely identifies the institution and its campus.",
+          "proposedPublicId": "studentstraffic/universities/bharathiar-university/logo",
+          "altText": "Bharathiar University emblem",
+          "visualCheck": "300x300 coloured emblem legible on white"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://b-u.ac.in/sites/b-u.ac.in/files/2025-10/home_entrance_0_0.jpg",
+          "sourceType": "official",
+          "checkedAt": "2026-10-24",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "rightsBasis": "Official university identification asset on university website; no open licence claimed. Reuse solely identifies the institution and its campus.",
+          "proposedPublicId": "studentstraffic/universities/bharathiar-university/cover",
+          "altText": "Entrance gate of Bharathiar University in Coimbatore",
+          "visualCheck": "1920x850 photograph of university entrance, verified campus name visible"
+        }
+      ]
+    },
+    {
+      "universitySlug": "bharathidasan-university",
+      "universityName": "Bharathidasan University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.bdu.ac.in/forms/logo/emp-png.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.bdu.ac.in/downloads/",
+          "rightsBasis": "Official emblem explicitly offered for download by Bharathidasan University. Used solely for institutional identification; no open licence claimed. HTTP 200 image/png, 480x406 pixels; inspected on a white background and legible with blue text, lotus and portrait.",
+          "proposedPublicId": "studentstraffic/universities/bharathidasan-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bharathidasan_University_Campus_%2839583909894%29.jpg/1280px-Bharathidasan_University_Campus_%2839583909894%29.jpg",
+          "sourceType": "licensed",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Bharathidasan_University_Campus_(39583909894).jpg",
+          "rightsBasis": "Photograph by deadrat.in, 26 January 2018, CC0 1.0 public domain dedication verified on Wikimedia Commons; Flickr licence reviewed by FlickreviewR 2 on 16 February 2018. HTTP 200 image/jpeg; 1280x960 rendition. Inspected: a real photograph of the Centre of Excellence in Life Sciences building at Palkalaiperur, behind its garden gate, without a text overlay.",
+          "altText": "Centre of Excellence in Life Sciences building behind a garden gate on Bharathidasan University\u2019s Palkalaiperur campus",
+          "proposedPublicId": "studentstraffic/universities/bharathidasan-university/cover"
+        }
+      ],
+      "migrationId": "0188-india-bharathidasan-university"
+    }
+  ]
+}
