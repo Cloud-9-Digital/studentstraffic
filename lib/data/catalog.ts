@@ -1406,6 +1406,9 @@ type FinderProgramRow = {
   offeringIndicativeAnnualTuitionMinUsd: number | null;
   offeringIndicativeAnnualTuitionMaxUsd: number | null;
   offeringOfficialProgramUrl: string;
+  /** Selected only for programme detail pages, not finder/list queries. */
+  offeringAudienceEligibility?: ProgramOffering["audienceEligibility"] | null;
+  offeringAdmissionsContent?: typeof programOfferingsTable.$inferSelect["admissionsContent"];
   offeringMedium: ProgramOffering["medium"];
   /** Present only when selected with `includeMediumNote` (detail queries). */
   offeringMediumNote?: string | null;
@@ -1504,6 +1507,8 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       indicativeAnnualTuitionMaxUsd:
         row.offeringIndicativeAnnualTuitionMaxUsd ?? undefined,
       officialProgramUrl: row.offeringOfficialProgramUrl,
+      audienceEligibility: row.offeringAudienceEligibility ?? undefined,
+      admissionsContent: mapProgramAdmissionsContent(row.offeringAdmissionsContent ?? {}),
       medium: row.offeringMedium,
       mediumNote: row.offeringMediumNote ?? undefined,
       published: row.offeringPublished,
@@ -1527,7 +1532,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
 async function selectFinderProgramsFromDatabase(
   whereClause?: ReturnType<typeof and>,
   limit?: number,
-  options: { includeMediumNote?: boolean } = {},
+  options: { includeMediumNote?: boolean; includeAdmissionsDetails?: boolean } = {},
 ): Promise<FinderProgram[] | null> {
   const db = getDb();
 
@@ -1603,6 +1608,12 @@ async function selectFinderProgramsFromDatabase(
       offeringIndicativeAnnualTuitionMaxUsd:
         programOfferingsTable.indicativeAnnualTuitionMaxUsd,
       offeringOfficialProgramUrl: programOfferingsTable.officialProgramUrl,
+      ...(options.includeAdmissionsDetails
+        ? {
+            offeringAudienceEligibility: programOfferingsTable.audienceEligibility,
+            offeringAdmissionsContent: programOfferingsTable.admissionsContent,
+          }
+        : {}),
       offeringMedium: programOfferingsTable.medium,
       ...(options.includeMediumNote
         ? { offeringMediumNote: programOfferingsTable.mediumNote }
@@ -2300,7 +2311,7 @@ export async function getProgramBySlug(programSlug: string) {
       eq(programOfferingsTable.slug, programSlug),
     ),
     undefined,
-    { includeMediumNote: true },
+    { includeMediumNote: true, includeAdmissionsDetails: true },
   );
 
   const program = databasePrograms
