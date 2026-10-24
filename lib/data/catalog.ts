@@ -1896,9 +1896,13 @@ async function cachedFinderCardProgramsPage(
   filters: FinderFilters,
   page: number,
   pageSize: number,
+  filterVersion: string,
 ): Promise<FinderCardProgramsPage> {
   "use cache: remote";
 
+  // Remote cache entries can survive deployments even when a called query helper changes.
+  // Include predicate semantics in the serialized arguments to retire old empty city results.
+  void filterVersion;
   cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
@@ -1921,7 +1925,7 @@ export async function queryFinderCardProgramsPage(
     return executeFinderCardProgramsPage(normalized, page, pageSize);
   }
 
-  return cachedFinderCardProgramsPage(normalized, page, pageSize);
+  return cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-v1");
 }
 
 export async function getFinderOptions(): Promise<FinderOptions> {
