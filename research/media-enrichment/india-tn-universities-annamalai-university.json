@@ -1,0 +1,52 @@
+{
+  "manifestId": "india-tn-annamalai-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Annamalai University mandatory official identifying wordmark and campus cover",
+  "entries": [
+    {
+      "universitySlug": "annamalai-university",
+      "universityName": "Annamalai University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.annamalaiuniversity.ac.in/images/headerk1.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.annamalaiuniversity.ac.in/",
+          "rightsBasis": "Official university identifying crest from its own homepage header. No open licence claimed. Reviewed 1500×191 source; incoming crop x350,y30,width110,height100 retains the complete coloured crest and ribbon, excluding the long wordmark and accreditation line so the crest is legible at catalogue thumbnail size. No alteration of brand artwork.",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 350,
+              "y": 30,
+              "width": 110,
+              "height": 100
+            }
+          ],
+          "proposedPublicId": "studentstraffic/universities/annamalai-university/logo",
+          "altText": "Annamalai University crest"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.annamalaiuniversity.ac.in/assets/img/slideshow/2.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.annamalaiuniversity.ac.in/",
+          "rightsBasis": "Official university homepage photograph of the administrative clocktower building and landscaped grounds; no open licence claimed. JPEG1100x550 inspected25October2026. Crop top42pixels to remove caption while retaining clocktower, actual building and grounds; no synthetic content.",
+          "altText": "Annamalai University administrative clocktower building behind palms and landscaped lawns",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 42,
+              "width": 1100,
+              "height": 508
+            }
+          ],
+          "proposedPublicId": "studentstraffic/universities/annamalai-university/cover"
+        }
+      ],
+      "migrationId": "0200-india-annamalai-university"
+    }
+  ]
+}

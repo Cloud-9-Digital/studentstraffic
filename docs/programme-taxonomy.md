@@ -162,3 +162,14 @@ The same batch adds `msc-information-technology` and `msc-nanoscience-technology
 ### B.Sc. Data Science (25 October 2026)
 
 `bsc-data-science` is a university-neutral bachelor's family in `computing-information-systems`, distinct from `bsc-computer-science` and the four-year engineering family `be-btech-data-science`. Remove `BSc Data Science` from both former alias sets: the same award must not resolve to two unrelated families. Engineering aliases now name B.Tech./B.Eng. qualifications explicitly. HITS B.Sc. Data Science maps to the dedicated science degree family, with its verified three-year duration stored on the offering; B.Tech. AI and Data Science retains the engineering family and four-year duration. Historical applied payloads remain immutable; pending bundles use the corrected aliases.
+
+
+### 2026-10-25 AMET degree families
+
+Added generic degree families for undergraduate Marine Engineering, undergraduate/postgraduate Naval Architecture and Offshore Engineering, postgraduate Petroleum Engineering, B.E./B.Tech Food Technology, B.Sc Aviation, B.Sc AI and Machine Learning, and B.Sc Robotics and AI. These preserve award level and field rather than substituting engineering, management or computing families with a different degree discipline. B.Sc AI/Data Science maps to the existing Data Science family; M.E Power Systems maps to the existing Electrical Engineering family. University-specific names, eligibility, language and programme duration stay on offerings. Seagoing or professional licences are not inferred from degree taxonomy.
+
+
+
+### Fisheries science and engineering (25 October 2026)
+
+Distinct generic `bachelor-fisheries-science` and `master-fisheries-science` categories retain the fisheries-science qualification at bachelor and master levels. Fisheries engineering uses `be-btech-fisheries-engineering` and `me-mtech-fisheries-engineering`; the latter covers postgraduate aquacultural engineering and fish-process engineering specialisations. These categories are distinct from marine engineering, marine biology and general agriculture, and use university-neutral shared summaries.

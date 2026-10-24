@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "b-s-abdur-rahman-crescent-institute-of-science-and-technology",
+      "universityName": "B. S. Abdur Rahman Crescent Institute of Science and Technology",
+      "sourceBatch": "codex-crescent-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://crescent.education/wp-content/uploads/2024/12/crescent-logo-white.png",
+          "proposedPublicId": "studentstraffic/universities/b-s-abdur-rahman-crescent-institute-of-science-and-technology/logo-20261025",
+          "altText": "B. S. Abdur Rahman Crescent Institute seal",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 82,
+              "height": 82
+            }
+          ],
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand asset used to identify the university in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://crescent.education/wp-content/uploads/2022/02/Engineering.jpg",
+          "proposedPublicId": "studentstraffic/universities/b-s-abdur-rahman-crescent-institute-of-science-and-technology/cover-20261025",
+          "altText": "Crescent engineering students using surveying equipment during practical study",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution marketing photograph used to illustrate campus academic activity in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

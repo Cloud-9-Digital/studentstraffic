@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "annamalai-university",
+      "universityName": "Annamalai University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.annamalaiuniversity.ac.in/images/headerk1.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.annamalaiuniversity.ac.in/",
+          "rightsBasis": "Official university identifying crest from its own homepage header. No open licence claimed. Reviewed 1500×191 source; incoming crop x350,y30,width110,height100 retains the complete coloured crest and ribbon, excluding the long wordmark and accreditation line so the crest is legible at catalogue thumbnail size. No alteration of brand artwork.",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 350,
+              "y": 30,
+              "width": 110,
+              "height": 100
+            }
+          ],
+          "proposedPublicId": "studentstraffic/universities/annamalai-university/logo",
+          "altText": "Annamalai University crest"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.annamalaiuniversity.ac.in/assets/img/slideshow/2.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.annamalaiuniversity.ac.in/",
+          "rightsBasis": "Official university homepage photograph of the administrative clocktower building and landscaped grounds; no open licence claimed. JPEG1100x550 inspected25October2026. Crop top42pixels to remove caption while retaining clocktower, actual building and grounds; no synthetic content.",
+          "altText": "Annamalai University administrative clocktower building behind palms and landscaped lawns",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 42,
+              "width": 1100,
+              "height": 508
+            }
+          ],
+          "proposedPublicId": "studentstraffic/universities/annamalai-university/cover"
+        }
+      ],
+      "migrationId": "0200-india-annamalai-university"
+    },
+    {
+      "universitySlug": "amet-university",
+      "universityName": "Academy of Maritime Education and Training (AMET)",
+      "sourceBatch": "codex-amet-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.ametuniv.ac.in/assets/amet-header-logo-RA-E4Yzv.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.ametuniv.ac.in/",
+          "rightsBasis": "Official university identity/marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "AMET university crest",
+          "visualCheck": "1280×320 official PNG inspected. Crest lies approximately x60–330. North-west crop x40,y0,width310,height320 isolates the complete crest and excludes the adjacent wordmark and NAAC shield. Apply the reviewed crop before publication.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and local original-pixel inspection.",
+          "proposedPublicId": "studentstraffic/universities/amet-university/logo-20261025",
+          "transformation": [
+            {
+              "crop": "crop",
+              "gravity": "north_west",
+              "x": 40,
+              "y": 0,
+              "width": 310,
+              "height": 320
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.ametuniv.ac.in/images/about/amet-students-campus.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.ametuniv.ac.in/about",
+          "rightsBasis": "Official university identity/marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "AMET students in maritime uniforms on a tree-lined campus path",
+          "visualCheck": "1920×1280 JPEG; five AMET students in maritime uniforms on a campus path, clear faces and university lanyards, no overlaid marketing text. Official institutional photograph.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and local original-pixel inspection.",
+          "proposedPublicId": "studentstraffic/universities/amet-university/cover-20261025"
+        }
+      ]
+    },
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-fisheries-university",
+      "universityName": "Tamil Nadu Dr. J. Jayalalithaa Fisheries University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admission.tnjfu.ac.in/pg-admission1/images/pg/tnjfu-logo-240.png",
+          "sourceType": "official",
+          "sourcePage": "https://admission.tnjfu.ac.in/pg-admission1/",
+          "rightsBasis": "Official identifying university crest from its own2026PGadmission portal; no open licence claimed. DirectHTTP200 image/png240x240, visually reviewed and legible on white; unchanged branding.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-fisheries-university/logo",
+          "altText": "Tamil Nadu Dr. J. Jayalalithaa Fisheries University crest"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://admission.tnjfu.ac.in/pg-admission1/images/pg/hero-nagapattinam-hq.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://admission.tnjfu.ac.in/pg-admission1/",
+          "rightsBasis": "Official university campus photograph used in its own2026admissions portal; no open licence claimed. DirectHTTP200 image/jpeg2000x1125, visually reviewed: authentic branded red-and-whiteheadquarters atVettarRiverViewCampusNagapattinam; no watermark/caption or synthetic content.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-fisheries-university/cover",
+          "altText": "TNJFU headquarters at Vettar River View Campus in Nagapattinam, with landscaped grounds and water bodies"
+        }
+      ],
+      "migrationId": "0202-india-tamil-nadu-dr-j-jayalalithaa-fisheries-university"
+    },
+    {
+      "universitySlug": "b-s-abdur-rahman-crescent-institute-of-science-and-technology",
+      "universityName": "B. S. Abdur Rahman Crescent Institute of Science and Technology",
+      "sourceBatch": "codex-crescent-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://crescent.education/wp-content/uploads/2024/12/crescent-logo-white.png",
+          "proposedPublicId": "studentstraffic/universities/b-s-abdur-rahman-crescent-institute-of-science-and-technology/logo-20261025",
+          "altText": "B. S. Abdur Rahman Crescent Institute seal",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 82,
+              "height": 82
+            }
+          ],
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand asset used to identify the university in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://crescent.education/wp-content/uploads/2022/02/Engineering.jpg",
+          "proposedPublicId": "studentstraffic/universities/b-s-abdur-rahman-crescent-institute-of-science-and-technology/cover-20261025",
+          "altText": "Crescent engineering students using surveying equipment during practical study",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution marketing photograph used to illustrate campus academic activity in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25"
+        }
+      ]
+    }
+  ]
+}

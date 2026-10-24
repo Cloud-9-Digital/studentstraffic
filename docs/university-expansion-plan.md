@@ -167,8 +167,10 @@ College (verified domestic undergraduate portfolio and MBA) were applied togethe
 holds remain in their inventories. Keep the three offline research slots active as workers finish;
 Vel Tech (34 offerings), Hindustan Institute of Technology and Science (38) and Periyar University
 Salem (4) were published together as migrations 0197–0199. Tamil Nadu Dr Ambedkar Law University
-retains documented programme-level holds. The three current offline assignments are Annamalai
-University, B.S. Abdur Rahman Crescent Institute and AMET Chennai. Collect validated bundles for a
+retains documented programme-level holds. The next reviewed group is Annamalai University (8 offerings), AMET Chennai (28), Tamil Nadu
+Dr. J. Jayalalithaa Fisheries University (20) and B.S. Abdur Rahman Crescent Institute (54), migrations
+0200–0203. The three current offline assignments are Indian Maritime University, Tamil Nadu
+Physical Education and Sports University, and IIITDM Kancheepuram. Collect validated bundles for a
 deliberate grouped apply; do not poll or connect to the database during research.
 
 **2026-07-20 Vietnam Medicine quality pass:** the first gold-standard correction bundle covers Dai

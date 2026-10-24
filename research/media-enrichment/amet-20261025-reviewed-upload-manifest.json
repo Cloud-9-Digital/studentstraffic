@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "amet-university",
+      "universityName": "Academy of Maritime Education and Training (AMET)",
+      "sourceBatch": "codex-amet-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.ametuniv.ac.in/assets/amet-header-logo-RA-E4Yzv.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.ametuniv.ac.in/",
+          "rightsBasis": "Official university identity/marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "AMET university crest",
+          "visualCheck": "1280\u00d7320 official PNG inspected. Crest lies approximately x60\u2013330. North-west crop x40,y0,width310,height320 isolates the complete crest and excludes the adjacent wordmark and NAAC shield. Apply the reviewed crop before publication.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and local original-pixel inspection.",
+          "proposedPublicId": "studentstraffic/universities/amet-university/logo-20261025",
+          "transformation": [
+            {
+              "crop": "crop",
+              "gravity": "north_west",
+              "x": 40,
+              "y": 0,
+              "width": 310,
+              "height": 320
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.ametuniv.ac.in/images/about/amet-students-campus.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.ametuniv.ac.in/about",
+          "rightsBasis": "Official university identity/marketing asset used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "AMET students in maritime uniforms on a tree-lined campus path",
+          "visualCheck": "1920\u00d71280 JPEG; five AMET students in maritime uniforms on a campus path, clear faces and university lanyards, no overlaid marketing text. Official institutional photograph.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public GET200 and local original-pixel inspection.",
+          "proposedPublicId": "studentstraffic/universities/amet-university/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

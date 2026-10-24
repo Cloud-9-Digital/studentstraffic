@@ -1,0 +1,34 @@
+{
+  "manifestId": "india-tnjfu-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "TNJFU mandatory logo and authentic headquarters campus cover",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-fisheries-university",
+      "universityName": "Tamil Nadu Dr. J. Jayalalithaa Fisheries University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://admission.tnjfu.ac.in/pg-admission1/images/pg/tnjfu-logo-240.png",
+          "sourceType": "official",
+          "sourcePage": "https://admission.tnjfu.ac.in/pg-admission1/",
+          "rightsBasis": "Official identifying university crest from its own2026PGadmission portal; no open licence claimed. DirectHTTP200 image/png240x240, visually reviewed and legible on white; unchanged branding.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-fisheries-university/logo",
+          "altText": "Tamil Nadu Dr. J. Jayalalithaa Fisheries University crest"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://admission.tnjfu.ac.in/pg-admission1/images/pg/hero-nagapattinam-hq.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://admission.tnjfu.ac.in/pg-admission1/",
+          "rightsBasis": "Official university campus photograph used in its own2026admissions portal; no open licence claimed. DirectHTTP200 image/jpeg2000x1125, visually reviewed: authentic branded red-and-whiteheadquarters atVettarRiverViewCampusNagapattinam; no watermark/caption or synthetic content.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-fisheries-university/cover",
+          "altText": "TNJFU headquarters at Vettar River View Campus in Nagapattinam, with landscaped grounds and water bodies"
+        }
+      ],
+      "migrationId": "0202-india-tamil-nadu-dr-j-jayalalithaa-fisheries-university"
+    }
+  ]
+}

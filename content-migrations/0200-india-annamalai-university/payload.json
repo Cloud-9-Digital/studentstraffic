@@ -1,0 +1,2019 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "msc-agriculture",
+      "name": "M.Sc. in Agriculture",
+      "shortName": "M.Sc. Agriculture",
+      "stream": "agriculture",
+      "level": "masters",
+      "discipline": "agriculture",
+      "aliases": [
+        "Master of Agriculture",
+        "MSc Agricultural Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "M.Sc. Agriculture programmes provide postgraduate study of agricultural science and related economic, biological or extension disciplines. Universities may offer specialist entry in agronomy, crop protection, genetics, soil science, microbiology, economics or extension education. Regular programmes commonly combine advanced coursework, practical methods, seminars and a supervised research thesis. Compare the specialisation, prior-degree requirements, institutional eligibility, teaching language and delivery format before applying.",
+      "metaTitle": "M.Sc. Agriculture: Courses, Entry and Fees",
+      "metaDescription": "Compare M.Sc. Agriculture programmes by specialisation, entry requirements, teaching language, tuition status, campus attendance and research thesis structure."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "annamalai-university",
+      "name": "Annamalai University",
+      "city": "Chidambaram",
+      "type": "Public",
+      "establishedYear": 1929,
+      "officialWebsite": "https://www.annamalaiuniversity.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Annamalai University is a public state university established in 1929 at Annamalainagar, Chidambaram. Its regular agriculture master’s programmes combine specialist coursework with supervised thesis research. Indian agriculture graduates apply through TNAU counselling; aided and self-supporting categories have different costs. Teaching is in English and study requires campus attendance.",
+      "campusLifestyle": "The Faculty of Agriculture has an experimental farm, orchard, livestock farm, agro-meteorological observatory and automatic weather station. Its departments include Agronomy, Entomology, Plant Pathology, Agricultural Microbiology, Genetics and Plant Breeding, Soil Science, Economics and Extension Education.",
+      "cityProfile": "The main campus is at Annamalainagar in Chidambaram, Tamil Nadu, with postal code 608002. The university also runs a PG Extension Centre at Salamedu, Villupuram; those programmes have a separate campus and admission prospectus.",
+      "practicalExposure": "Agriculture master’s students complete major, minor, supporting and common coursework, a seminar and supervised thesis research under an advisory committee. The common regulations allocate 30 of 70 credits to thesis research and require 80%attendance separately in theory and practical subjects.",
+      "hostelOverview": "Hostel accommodation is available for agriculture students. The historical 2025-26 annual hostel-and-mess charges were 60000 INR for the men’s Sekizhar Block with attached bathroom and 50000 INR for Thamarai Illam women’s hostel, plus 5000 INRcaution deposit. Current charges and room allotment need a new quotation; category-specific concessions have separate conditions.",
+      "studentSupport": "The Faculty of Agriculture has a placement cell for career preparation and employer interaction. Postgraduate advisory committees guide course planning and thesis research. Students Traffic can help assess the degree route, required records and total study budget.",
+      "whyChoose": [
+        "Regular specialist agriculture study with supervised thesis research.",
+        "Aided and self-supporting routes within the same advertised specialisation.",
+        "Experimental farm, orchard, livestock and agricultural weather facilities support the faculty."
+      ],
+      "thingsToConsider": [
+        "Indian B.Sc. Agriculture graduates use the TNAU counselling route; overseas and other-degree eligibility need separate assessment.",
+        "TNAU entrance selection and original qualification scrutiny apply; programme availability does not guarantee a place.",
+        "Current tuition is on request, with distinct aided and self-supporting categories.",
+        "October 2026 start dates are historical; the next intake must be newly announced."
+      ],
+      "bestFitFor": [
+        "Indian agriculture graduates planning specialist postgraduate study.",
+        "Applicants ready for regular campus attendance and a research thesis.",
+        "Students comparing aided and self-supporting admission categories."
+      ],
+      "recognitionBadges": [
+        "UGC — State University listed at Annamalainagar, Chidambaram",
+        "Tamil Nadu Act 20 of 2013 — statutory university framework, amended 2021"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC consolidated university register, entry 787",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf"
+        },
+        {
+          "label": "India Code: Annamalai University Act 2013 with amendments",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/bf8c0f1e-87b9-4db9-ae92-f3b6132f5edb/content"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current 2026-27 admission notification",
+          "url": "https://annamalaiuniversity.ac.in/adm/downloads/2026/Admission_notification_2026-27_040526.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University agriculture master’s prospectus 2025-26",
+          "url": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Common agriculturePGregulations 2022 onwards",
+          "url": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Faculty English instruction policy",
+          "url": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current first-year agriculture admission notice",
+          "url": "https://annamalaiuniversity.ac.in/adm/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "TNAU2026 official admission press release",
+          "url": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "TNAU2026 institutional brochure public mirror",
+          "url": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+          "kind": "other",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC university register",
+          "url": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "annamalai-msc-agriculture-agricultural-economics",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Agricultural Economics",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Agricultural Economics is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Agricultural Economics under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-agricultural-extension-education",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Agricultural Extension Education",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Agricultural Extension Education is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Agricultural Extension Education under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-microbiology",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Microbiology",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Microbiology is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Microbiology under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-agronomy",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Agronomy",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Agronomy is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Agronomy under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-entomology",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Entomology",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Entomology is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Entomology under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-genetics-and-plant-breeding",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Genetics and Plant Breeding",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Genetics and Plant Breeding is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Genetics and Plant Breeding under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-plant-pathology",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Plant Pathology",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Plant Pathology is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Plant Pathology under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        },
+        {
+          "slug": "annamalai-msc-agriculture-soil-science",
+          "canonicalCourseSlug": "msc-agriculture",
+          "officialTitle": "M.Sc. (Agri.) Soil Science",
+          "durationYears": 2,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit."
+          },
+          "officialProgramUrl": "https://annamalaiuniversity.ac.in/adm/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants using the regular TNAU counselling route with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture from an eligible Indian agricultural institution"
+            ],
+            "restrictions": [
+              "This qualification route requires the 10+2+4 education pattern and the relevant academic threshold.",
+              "Other prior degrees and foreign-national admission require separate assessment; the conditions below apply only to the specified agriculture-degree route."
+            ],
+            "notes": "Aided and self-supporting categories are advertised for the same academic specialisation. The eligibility conditions apply to the specified agriculture-degree route; other prior qualifications need individual assessment.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Soil Science is offered as a two-year regular agriculture master’s at Annamalainagar, with coursework and supervised thesis research. The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+            "eligibility": {
+              "intro": "Indian agriculture-degree entry route for this specialisation.",
+              "items": [
+                "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture after 10+2.",
+                "Qualifying institution route: a State Agricultural University, Central Agricultural University or ICAR deemed university. Other institution categories require separate eligibility assessment.",
+                "Minimum OGPA 3.00 out of 4.00 or 6.60 out of 10.00 in the qualifying bachelor’s degree; SC/ST candidates may apply with 6.50 out of 10.00.",
+                "Selection through the TNAU Common Entrance Examination, followed by admission subject to qualification and original-document scrutiny.",
+                "Final-year or final-semester applicants may apply with available completed-semester marks; the required qualifying certificate must be produced at admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the School of Post Graduate Studies portal at admissionsatpgschool.tnau.ac.in and choose the Annamalai University specialisation and available admission category.",
+              "The 2026 master’s application is closed. For a future cycle, use its newly notified brochure and application window before registering or paying.",
+              "Submit the relevant academic records and application documents specified in that cycle; the 2026 process allowed up to two eligible subjects.",
+              "Appear for the TNAU Common Entrance Examination and follow the selection, certificate-verification, allotment and fee-payment instructions.",
+              "Obtain the full aided or self-supporting fee quotation and arrange on-campus attendance and accommodation before accepting the allotment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree, provisional degree or course-completion certificate, according to the stage of application.",
+                "Transcript or available mark sheets for completed qualifying-degree semesters.",
+                "The next-cycle application may prescribe additional academic records; obtain its course-specific checklist."
+              ],
+              "application": [
+                "Valid original photo identification for the entrance examination.",
+                "Use the next-cycle application’s document checklist for any category-specific claims and application attachments."
+              ]
+            },
+            "deadlinesNote": "The 2026 TNAU master’s application deadline was 31 August 2026 and the portal is closed. Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am, with admission-fee payment by 21 October. These are historical 2026 dates; the next cycle requires a new notice."
+          },
+          "medium": "English",
+          "mediumNote": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. This programme includes regular on-campus study and thesis research.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [
+            "October"
+          ],
+          "intakeCodes": [
+            "october"
+          ],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+          "teachingPhases": [
+            {
+              "phase": "Two years, four semesters",
+              "language": "English",
+              "details": "Specialisation in Soil Science under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects."
+            }
+          ]
+        }
+      ],
+      "dietarySupport": "University agriculture hostels have mess arrangements included in the published hostel-and-mess charge. Room category, mess charge and refundable caution deposit should be included separately in a current accommodation quotation.",
+      "safetyOverview": "Ragging is prohibited. Established ragging can lead to removal from the university. Campus rules prohibit anti-social activity, and applicants accept the university rules at admission.",
+      "industryPartners": [],
+      "faq": [
+        {
+          "question": "Is Annamalai University public or private?",
+          "answer": "It is a public state university at Annamalainagar, Chidambaram, established in 1929. UGC lists the institution as a State University; recognition of a university is distinct from any programme-specific professional accreditation."
+        },
+        {
+          "question": "Which agriculture admission route applies?",
+          "answer": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment. The four-year qualifying degree, institution category, academic marks and entrance selection all need to be met."
+        },
+        {
+          "question": "Are these courses taught in English?",
+          "answer": "The Faculty of Agriculture’s 2019-20 policy specifies English instruction. Regular teaching and thesis research are combined in its master’s programmes."
+        },
+        {
+          "question": "How long does an agriculture master’s take?",
+          "answer": "The regular M.Sc. Agriculture programme takes two academic years across four semesters. Common regulations specify 70 credits, with 40 credits of coursework and seminar and 30 of  thesis research."
+        },
+        {
+          "question": "Can I enter directly after school?",
+          "answer": "These agriculture master’s programmes require a qualifying four-year bachelor’s degree after 10+2. The specified route is B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture; this is not the separate undergraduate agriculture admission route."
+        },
+        {
+          "question": "How are students selected?",
+          "answer": "TNAU conducts the regular postgraduate admissions process and common entrance examination. Final admission remains conditional on academic eligibility, original records, selection and the relevant allotment."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use admissionsatpgschool.tnau.ac.in for the notified TNAU postgraduate cycle and select the Annamalai University programme. The 2026 master’s application is closed; future applicants need the new cycle’s notice and dates."
+        },
+        {
+          "question": "What is the next intake?",
+          "answer": "Annamalai scheduled first-year M.Sc. Agriculture classes for 22 October 2026 at 10 am. That historical date does not announce a future intake; the next application and class-start schedule must be newly notified."
+        },
+        {
+          "question": "What should I budget?",
+          "answer": "Obtain a current full fee quotation for the chosen aided or self-supporting category. Include tuition, compulsory charges, hostel, mess, deposits and examination costs; a historic combined annual charge is not a current tuition figure."
+        },
+        {
+          "question": "Is hostel accommodation available?",
+          "answer": "Agriculture students have university hostel options, including Thamarai Illam for women and Sekizhar Block for men. The 2025-26 brochure gives room-and-mess charges plus caution deposit; request current charges and allocation before accepting a room."
+        },
+        {
+          "question": "Can final-year bachelor’s students apply?",
+          "answer": "The 2026 TNAU notice allowed final-year and final-semester applicants to apply with available completed-semester records. They still had to meet final admission requirements and submit the required qualifying certificate at admission."
+        },
+        {
+          "question": "How do aided and self-supporting options differ?",
+          "answer": "The current admission notification advertises both categories for the same agriculture specialisations. Their charges differ, so compare the admission category and complete budget before choosing; neither category guarantees admission or employment."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Complete 210 row 2026-27 taught on-campus inventory; only eight fully documented regular agriculture-degree routes proposed. Other faculties, alternative prior qualifications and international routes held as recorded.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my agriculture master’s eligibility",
+            "capture": [
+              "qualifying degree",
+              "institution",
+              "marks",
+              "intended specialisation"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Get my agriculture study budget",
+            "capture": [
+              "admission category",
+              "hostel preference",
+              "intended cycle"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my Annamalai application",
+            "capture": [
+              "degree status",
+              "qualification records",
+              "intended cycle"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Agricultural Economics under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Agricultural Extension Education under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agricultural-extension-education"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Microbiology under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-microbiology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Agronomy under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-agronomy"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Entomology under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-entomology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Genetics and Plant Breeding under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-genetics-and-plant-breeding"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Plant Pathology under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-plant-pathology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "duration",
+      "claimText": "Two academic years, regular full-time, four semesters.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "medium",
+      "claimText": "Explicit Faculty of Agriculture policy: medium of instruction shall be English.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://mail.annamalaiuniversity.ac.in/studport/download/Handbook/2019/Agri/B.Sc._Hons%20Agri%202019-20.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "intake",
+      "claimText": "Current official admission announcement schedules first-year M.Sc. Agriculture classes 22 October 2026 at 10 am; fee payment 21 October. Exact historical cycle, not futuredate.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "Four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture route explicitly eligible for this M.Sc. Agriculture specialisation; qualifying institution and OGPA3/4 or 6.6/10,6.5 SCST criteria.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "admissions",
+      "claimText": "2026 TNAU primary notice confirms agriculture UG applicants, finalyearcompleted-semester records, maximum twoeligible subjects, common entrance selection and 31 Augustdeadline.",
+      "status": "verified",
+      "sourceLabel": "TNAU official source",
+      "sourceUrl": "https://agritech.tnau.ac.in/tnaupressnotes/pdf/2026/Press%20Note%20-%20TNAU%20Invites%20Applications%20for%20PG%20Admission%202026-27%20-%20English.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "teachingPhases",
+      "claimText": "Specialisation in Soil Science under the Faculty of Agriculture common postgraduate regulations: 70 credits comprising 40 coursework and seminar credits and 30 thesis-research credits. The programme includes major, minor, supporting and common subjects, an advisory committee and final thesis assessment; minimum 80% attendance applies separately to theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "fee",
+      "claimText": "The current tuition and compulsory charges need an individual fee quotation for the chosen admission category. Aided and self-supporting study have different charges; request the complete programme budget, hostel, mess, deposits and examination costs before accepting a place. Request a current tuition and complete cost quotation for your admission category before paying a deposit.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The eligibility conditions below apply to Indian applicants with a four-year B.Sc. (Ag.) or B.Sc. (Hons.) Agriculture degree using regular TNAU admissions. Other prior degrees and foreign-national admission require separate assessment.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "eligibility",
+      "claimText": "The 2026 jointbrochure mirror confirms unchanged four-year B.Sc. (Ag.)/B.Sc. (Hons.) Agriculture route,10+2+4 andOGPA3/4 or 6.6/10,6.5 SCST. Changed alternative-degree lists are deliberately not asserted.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://www.scribd.com/document/1071644680/PG-Information-Brochure-2026-27-Final",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science",
+      "internalNotes": "Mirror authenticity corroborated by current primary 2026 notice, official currentportal and programme list. Detailed changed prerequisites excluded; only unchanged common route supported also by primary 2025 Annamalaiprospectus used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "annamalai-university",
+      "publicField": "documentsRequired",
+      "claimText": "Qualifying degree or provisional certificate,transcript/marks and entrance original photoID verified in university 2025 primary prospectus; current 2026 primarypressrelease confirms availablemarksforfinalyearandoriginalqualificationcondition. No unsupported expandeduploadchecklistpublished.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "annamalai-msc-agriculture-soil-science"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "recognition",
+      "claimText": "IndiaCodepublishesAnnamalaiUniversityAct 2013 with 2021 amendments, establishingcurrentstatutoryframework.",
+      "status": "verified",
+      "sourceLabel": "TNAU 2026 institutional brochure, public mirror",
+      "sourceUrl": "https://indiacode.gov.in/server/api/core/bitstreams/bf8c0f1e-87b9-4db9-ae92-f3b6132f5edb/content",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "dietarySupport",
+      "claimText": "University agriculture hostels have mess arrangements included in the published hostel-and-mess charge. Room category, mess charge and refundable caution deposit should be included separately in a current accommodation quotation.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "safetyOverview",
+      "claimText": "Ragging is prohibited. Established ragging can lead to removal from the university. Campus rules prohibit anti-social activity, and applicants accept the university rules at admission.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "identity",
+      "claimText": "AnnamalaiUniversity,1929,AnnamalainagarChidambaram,stateuniversity.",
+      "status": "verified",
+      "sourceLabel": "UGC official register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "summary",
+      "claimText": "Annamalai University is a public state university established in 1929 at Annamalainagar, Chidambaram. Its regular agriculture master’s programmes combine specialist coursework with supervised thesis research. Indian agriculture graduates apply through TNAU counselling; aided and self-supporting categories have different costs. Teaching is in English and study requires campus attendance.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2026/Admission_notification_2026-27_040526.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The Faculty of Agriculture has an experimental farm, orchard, livestock farm, agro-meteorological observatory and automatic weather station. Its departments include Agronomy, Entomology, Plant Pathology, Agricultural Microbiology, Genetics and Plant Breeding, Soil Science, Economics and Extension Education.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "cityProfile",
+      "claimText": "The main campus is at Annamalainagar in Chidambaram, Tamil Nadu, with postal code 608002. The university also runs a PG Extension Centre at Salamedu, Villupuram; those programmes have a separate campus and admission prospectus.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "practicalExposure",
+      "claimText": "Agriculture master’s students complete major, minor, supporting and common coursework, a seminar and supervised thesis research under an advisory committee. The common regulations allocate 30 of 70 credits to thesis research and require 80%attendance separately in theory and practical subjects.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/studport/download/Handbook/2022-23/Agri/M.Sc_agronomy_22-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "hostelOverview",
+      "claimText": "Hostel accommodation is available for agriculture students. The historical 2025-26 annual hostel-and-mess charges were 60000 INR for the men’s Sekizhar Block with attached bathroom and 50000 INR for Thamarai Illam women’s hostel, plus 5000 INRcaution deposit. Current charges and room allotment need a new quotation; category-specific concessions have separate conditions.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "studentSupport",
+      "claimText": "The Faculty of Agriculture has a placement cell for career preparation and employer interaction. Postgraduate advisory committees guide course planning and thesis research. Students Traffic can help assess the degree route, required records and total study budget.",
+      "status": "verified",
+      "sourceLabel": "Annamalai official source",
+      "sourceUrl": "https://annamalaiuniversity.ac.in/adm/downloads/2025-26/Agri_MSc.Ag_MSc.Hort_2025-26_n.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "annamalai-university",
+      "publicField": "recognition",
+      "claimText": "UGC25 January 2023 consolidatedregisterentry 787 StateUniversityAnnamalaiUniversityChidambaram 1929.NoNAACorICARcurrentaccreditationclaimpublished.",
+      "status": "verified",
+      "sourceLabel": "UGC official register",
+      "sourceUrl": "https://www.ugc.gov.in/oldpdf/Consolidated%20list%20of%20All%20Universities.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}
