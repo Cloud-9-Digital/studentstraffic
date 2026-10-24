@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "karpagam-academy-of-higher-education",
+      "universityName": "Karpagam Academy of Higher Education",
+      "sourceBatch": "codex-karpagam-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2023/01/LOGO-with-different-colors-03.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed. Left emblem/wordmark crop excludes the separate right-hand accreditation wording; original source retained.",
+          "proposedPublicId": "studentstraffic/universities/karpagam-academy-of-higher-education/logo-20261025",
+          "altText": "Karpagam Academy of Higher Education institutional emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karpagam-academy-of-higher-education/media-logo-large.png",
+          "sha256": "b9422ccaba0d2aef1049058e4673285789c82050ba3f2aa7880048c7a29e4106",
+          "width": 1933,
+          "height": 750,
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 620,
+              "height": 620
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2019/11/Campus1-811x497.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/karpagam-academy-of-higher-education/cover-20261025",
+          "altText": "KAHE academic building and landscaped lawn at Eachanari in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karpagam-academy-of-higher-education/media-Campus1-811x497.png",
+          "sha256": "dd2145e677d45db8ee41e4f762d870b037b7d8693a824eb59c76190f0e2b0030",
+          "width": 811,
+          "height": 497
+        }
+      ],
+      "migrationId": "0230-india-karpagam-academy-of-higher-education"
+    }
+  ]
+}

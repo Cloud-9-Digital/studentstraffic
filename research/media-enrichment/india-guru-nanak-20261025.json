@@ -1,0 +1,47 @@
+{
+  "manifestId": "india-guru-nanak-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Official complete100x102crest and authentic academic-building photograph cropped from complete2200x1238official prospectus cover; no badge overlays in finalcrop.",
+  "entries": [
+    {
+      "universitySlug": "guru-nanak-college-chennai",
+      "universityName": "Guru Nanak College (Autonomous), Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gurunanakcollege.edu.in/images-gnc/logo/gnc-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://gurunanakcollege.edu.in/",
+          "rightsBasis": "Official college identifying asset or campus photograph from its own website/college-linked2026–27institutional prospectus. Ordinary HTTPS retrieval returned genuine image bytes; full unmodified original and SHA256 retained. Prospectus photograph source URL was read from the normal public reader’s rendered image after visual verification,not decoded from restricted data. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/guru-nanak-college-chennai/logo",
+          "altText": "Guru Nanak College Chennai complete crest",
+          "localPath": "research/india-source-bundles/guru-nanak-20261025/logo.png",
+          "sha256": "9d8f44d9ea04ae43ee314cb5dad748642389da2bf58b1bc98d11d1eb2bc5336b"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://online.fliphtml5.com/fbfus/qelt/files/large/40ac96b95e39907c5fb2c06f4ab9dd20.webp?1779101305",
+          "sourceType": "official",
+          "sourcePage": "https://online.fliphtml5.com/fbfus/qelt/",
+          "rightsBasis": "Official college identifying asset or campus photograph from its own website/college-linked2026–27institutional prospectus. Ordinary HTTPS retrieval returned genuine image bytes; full unmodified original and SHA256 retained. Prospectus photograph source URL was read from the normal public reader’s rendered image after visual verification,not decoded from restricted data. No open licence or enlargement claim. Prescribed rectangle retains the left academic building and trees,excludes complete top accreditation/header wording,bottom crest,prospectus text and graphics.",
+          "proposedPublicId": "studentstraffic/universities/guru-nanak-college-chennai/cover",
+          "altText": "Academic block and trees at Guru Nanak College in Velachery, Chennai",
+          "localPath": "research/india-source-bundles/guru-nanak-20261025/prospectus2026-cover-original.webp",
+          "sha256": "1dc6b176ff6783b3eaa31bce062d9bdcc33fff2b10b042294d372b3812777ce3",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 270,
+              "width": 1100,
+              "height": 500
+            }
+          ]
+        }
+      ],
+      "migrationId": "0232-guru-nanak-college-chennai"
+    }
+  ]
+}

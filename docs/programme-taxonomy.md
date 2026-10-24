@@ -282,3 +282,7 @@ registry entries. Use a suitable science family for a verified B.Sc. award, and
 retain the exact degree title and curriculum scope in its offering. Historical
 applied content bundles remain immutable; any published mapping correction needs
 a forward migration after an offering-title audit.
+
+## Defence and Strategic Studies
+
+`bachelor-defence-strategic-studies` is the neutral undergraduate family for a distinct Defence and Strategic Studies award. It covers national defence, security policy, military strategy, geopolitics and related international relations; it does not imply military recruitment, professional appointment or a postgraduate qualification. Preserve each institution's exact award title and verified duration separately. International Relations and Political Science remain separate families.

@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "dg-vaishnav-college",
+      "universityName": "Dwaraka Doss Goverdhan Doss Vaishnav College",
+      "sourceBatch": "codex-dgvaishnav-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2020/01/cropped-fav.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.dgvaishnavcollege.edu.in/",
+          "rightsBasis": "Official college-hosted institutional crest and campus illustration; no open licence or ownership transfer asserted.",
+          "altText": "D.G. Vaishnav College crest",
+          "visualCheck": "Native512×512 transparent institutional crest, red lotus border and blue/flame/book design, matching the college’s full current header. Original source behind linked favicon renditions; no screenshot, synthetic or third-party stock.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals. No database or media-provider action.",
+          "proposedPublicId": "studentstraffic/universities/dg-vaishnav-college/logo-20261025",
+          "localPath": "research/india-source-bundles/dg-vaishnav-college/crest-original.png",
+          "sha256": "50e6e1fe5c4911ef7f6bdf54ce5ba73ad6b2036a3a53f6ca3c7c09ce4bcac2e0",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2022/03/Lib-2.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.dgvaishnavcollege.edu.in/library-4/",
+          "rightsBasis": "Official college-hosted institutional crest and campus illustration; no open licence or ownership transfer asserted.",
+          "altText": "Shri Subodhini Library Block at D.G. Vaishnav College, Chennai",
+          "visualCheck": "Native1600×540 official library gallery photograph, white multi-storey building, readable Shri Subodhini Library Block signage, garden and date stamp10January2022. Historical campus illustration; no present-condition guarantee.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals. No database or media-provider action.",
+          "proposedPublicId": "studentstraffic/universities/dg-vaishnav-college/cover-20261025",
+          "localPath": "research/india-source-bundles/dg-vaishnav-college/library2.jpg",
+          "sha256": "0c278e50d2c27860b8b943cde2da9e2623b337e2077c5f9a6cbe75212ec228c1",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0231-india-dg-vaishnav-college"
+    }
+  ]
+}

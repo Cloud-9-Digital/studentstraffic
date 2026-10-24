@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "karpagam-academy-of-higher-education",
+      "universityName": "Karpagam Academy of Higher Education",
+      "sourceBatch": "codex-karpagam-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2023/01/LOGO-with-different-colors-03.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed. Left emblem/wordmark crop excludes the separate right-hand accreditation wording; original source retained.",
+          "proposedPublicId": "studentstraffic/universities/karpagam-academy-of-higher-education/logo-20261025",
+          "altText": "Karpagam Academy of Higher Education institutional emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karpagam-academy-of-higher-education/media-logo-large.png",
+          "sha256": "b9422ccaba0d2aef1049058e4673285789c82050ba3f2aa7880048c7a29e4106",
+          "width": 1933,
+          "height": 750,
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 620,
+              "height": 620
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2019/11/Campus1-811x497.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/karpagam-academy-of-higher-education/cover-20261025",
+          "altText": "KAHE academic building and landscaped lawn at Eachanari in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/karpagam-academy-of-higher-education/media-Campus1-811x497.png",
+          "sha256": "dd2145e677d45db8ee41e4f762d870b037b7d8693a824eb59c76190f0e2b0030",
+          "width": 811,
+          "height": 497
+        }
+      ],
+      "migrationId": "0230-india-karpagam-academy-of-higher-education"
+    },
+    {
+      "universitySlug": "dg-vaishnav-college",
+      "universityName": "Dwaraka Doss Goverdhan Doss Vaishnav College",
+      "sourceBatch": "codex-dgvaishnav-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2020/01/cropped-fav.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.dgvaishnavcollege.edu.in/",
+          "rightsBasis": "Official college-hosted institutional crest and campus illustration; no open licence or ownership transfer asserted.",
+          "altText": "D.G. Vaishnav College crest",
+          "visualCheck": "Native512×512 transparent institutional crest, red lotus border and blue/flame/book design, matching the college’s full current header. Original source behind linked favicon renditions; no screenshot, synthetic or third-party stock.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals. No database or media-provider action.",
+          "proposedPublicId": "studentstraffic/universities/dg-vaishnav-college/logo-20261025",
+          "localPath": "research/india-source-bundles/dg-vaishnav-college/crest-original.png",
+          "sha256": "50e6e1fe5c4911ef7f6bdf54ce5ba73ad6b2036a3a53f6ca3c7c09ce4bcac2e0",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2022/03/Lib-2.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.dgvaishnavcollege.edu.in/library-4/",
+          "rightsBasis": "Official college-hosted institutional crest and campus illustration; no open licence or ownership transfer asserted.",
+          "altText": "Shri Subodhini Library Block at D.G. Vaishnav College, Chennai",
+          "visualCheck": "Native1600×540 official library gallery photograph, white multi-storey building, readable Shri Subodhini Library Block signage, garden and date stamp10January2022. Historical campus illustration; no present-condition guarantee.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals. No database or media-provider action.",
+          "proposedPublicId": "studentstraffic/universities/dg-vaishnav-college/cover-20261025",
+          "localPath": "research/india-source-bundles/dg-vaishnav-college/library2.jpg",
+          "sha256": "0c278e50d2c27860b8b943cde2da9e2623b337e2077c5f9a6cbe75212ec228c1",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0231-india-dg-vaishnav-college"
+    },
+    {
+      "universitySlug": "guru-nanak-college-chennai",
+      "universityName": "Guru Nanak College (Autonomous), Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gurunanakcollege.edu.in/images-gnc/logo/gnc-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://gurunanakcollege.edu.in/",
+          "rightsBasis": "Official college identifying asset or campus photograph from its own website/college-linked2026–27institutional prospectus. Ordinary HTTPS retrieval returned genuine image bytes; full unmodified original and SHA256 retained. Prospectus photograph source URL was read from the normal public reader’s rendered image after visual verification,not decoded from restricted data. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/guru-nanak-college-chennai/logo",
+          "altText": "Guru Nanak College Chennai complete crest",
+          "localPath": "research/india-source-bundles/guru-nanak-20261025/logo.png",
+          "sha256": "9d8f44d9ea04ae43ee314cb5dad748642389da2bf58b1bc98d11d1eb2bc5336b"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://online.fliphtml5.com/fbfus/qelt/files/large/40ac96b95e39907c5fb2c06f4ab9dd20.webp?1779101305",
+          "sourceType": "official",
+          "sourcePage": "https://online.fliphtml5.com/fbfus/qelt/",
+          "rightsBasis": "Official college identifying asset or campus photograph from its own website/college-linked2026–27institutional prospectus. Ordinary HTTPS retrieval returned genuine image bytes; full unmodified original and SHA256 retained. Prospectus photograph source URL was read from the normal public reader’s rendered image after visual verification,not decoded from restricted data. No open licence or enlargement claim. Prescribed rectangle retains the left academic building and trees,excludes complete top accreditation/header wording,bottom crest,prospectus text and graphics.",
+          "proposedPublicId": "studentstraffic/universities/guru-nanak-college-chennai/cover",
+          "altText": "Academic block and trees at Guru Nanak College in Velachery, Chennai",
+          "localPath": "research/india-source-bundles/guru-nanak-20261025/prospectus2026-cover-original.webp",
+          "sha256": "1dc6b176ff6783b3eaa31bce062d9bdcc33fff2b10b042294d372b3812777ce3",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 270,
+              "width": 1100,
+              "height": 500
+            }
+          ]
+        }
+      ],
+      "migrationId": "0232-guru-nanak-college-chennai"
+    }
+  ]
+}
