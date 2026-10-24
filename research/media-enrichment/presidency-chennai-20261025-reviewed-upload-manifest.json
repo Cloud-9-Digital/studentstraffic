@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "presidency-college-chennai",
+      "universityName": "Presidency College",
+      "sourceBatch": "codex-presidency-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.pcc.ac.in/images/Header_Band_Eng.png?5",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.pcc.ac.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Presidency College Chennai crest",
+          "visualCheck": "Official native1487×271 header brand mark sequentially inspected: full heraldic crest, Tamil/English college wordmark and Chennai600005identity. No external accreditation/approval logos or promotional banner. Nativeheight271; genuine brandmark, not favicon. No crop or synthetic edit. Root selected the intact left-hand crest rectangle x0,y0,width260,height271 from this original; the adjacent wordmark starts beyond the rectangle. This preserves all heraldic strokes and motto while making the emblem legible in a square logo slot; no enlargement or invented artwork.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTP200GET, native dimensions checked and local originals inspected sequentially with view_image.",
+          "proposedPublicId": "studentstraffic/universities/presidency-college-chennai/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/presidency-college-chennai/brand.png",
+          "sha256": "7b2808dca7195130b9aea951b5187207aff3d37fed417b9557d4cedd82dcffe8",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 260,
+              "height": 271
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.pcc.ac.in/images/PresidencyCampus.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.pcc.ac.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Red historic Presidency College Chennai campus building and clock tower",
+          "visualCheck": "Official campus photo native794×547sequentially inspected. Red Gothic facade, arched windows, entrance and clock tower with greenery. No poster text, attribution-dependent licence or unrelated campus.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTP200GET, native dimensions checked and local originals inspected sequentially with view_image.",
+          "proposedPublicId": "studentstraffic/universities/presidency-college-chennai/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/presidency-college-chennai/campus.jpg",
+          "sha256": "fd8631d8436fffc17259277ce667ffeb03992a115dac107970c6995f115894d5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "presidency-college-chennai",
+      "universityName": "Presidency College",
+      "sourceBatch": "codex-presidency-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.pcc.ac.in/images/Header_Band_Eng.png?5",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.pcc.ac.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Presidency College Chennai crest",
+          "visualCheck": "Official native1487×271 header brand mark sequentially inspected: full heraldic crest, Tamil/English college wordmark and Chennai600005identity. No external accreditation/approval logos or promotional banner. Nativeheight271; genuine brandmark, not favicon. No crop or synthetic edit. Root selected the intact left-hand crest rectangle x0,y0,width260,height271 from this original; the adjacent wordmark starts beyond the rectangle. This preserves all heraldic strokes and motto while making the emblem legible in a square logo slot; no enlargement or invented artwork.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTP200GET, native dimensions checked and local originals inspected sequentially with view_image.",
+          "proposedPublicId": "studentstraffic/universities/presidency-college-chennai/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/presidency-college-chennai/brand.png",
+          "sha256": "7b2808dca7195130b9aea951b5187207aff3d37fed417b9557d4cedd82dcffe8",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 260,
+              "height": 271
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.pcc.ac.in/images/PresidencyCampus.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.pcc.ac.in/",
+          "rightsBasis": "Official institution-owned public brand/campus marketing asset used to identify and illustrate the college; no open licence or ownership transfer claimed.",
+          "altText": "Red historic Presidency College Chennai campus building and clock tower",
+          "visualCheck": "Official campus photo native794×547sequentially inspected. Red Gothic facade, arched windows, entrance and clock tower with greenery. No poster text, attribution-dependent licence or unrelated campus.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTP200GET, native dimensions checked and local originals inspected sequentially with view_image.",
+          "proposedPublicId": "studentstraffic/universities/presidency-college-chennai/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/presidency-college-chennai/campus.jpg",
+          "sha256": "fd8631d8436fffc17259277ce667ffeb03992a115dac107970c6995f115894d5"
+        }
+      ]
+    },
+    {
+      "universitySlug": "national-institute-of-technology-tiruchirappalli",
+      "universityName": "National Institute of Technology Tiruchirappalli",
+      "sourceBatch": "codex-nitt-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.nitt.edu/home/about/Low-Resolution-Emblem.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Clean intact official institutional emblem linked from the About page; native original selected without redrawing or modification, no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technology-tiruchirappalli/logo-20261025",
+          "altText": "National Institute of Technology Tiruchirappalli official circular emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/national-institute-of-technology-tiruchirappalli/logo.png",
+          "sha256": "d38f38ab6c11407c1d8cc37136e2e026f7f58ac2fafab9ae51bdb8095cea3541",
+          "width": 726,
+          "height": 724,
+          "visualCheck": "Complete clean official circular emblem inspected sequentially by worker and root. High-resolution alternative rejected for rectangular export artefacts. Root fresh public source download SHA256 matches reviewed original."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.nitt.edu/home/NITT-2022.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Genuine official institutional home-page campus photograph; source filename retains2022, no claim of a current capture date or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technology-tiruchirappalli/cover-20261025",
+          "altText": "Administrative building and clock tower at NIT Tiruchirappalli",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/national-institute-of-technology-tiruchirappalli/cover.jpg",
+          "sha256": "67d9d1e4c302c47fcfddcb280baeeac85e6fc5dae54c6a6b4f871200d2a05e0e",
+          "width": 1365,
+          "height": 1024,
+          "visualCheck": "Authentic administration building and clock tower with landscaped approach, inspected sequentially by worker and root. Distinct500x281Aboutphoto excluded; exact1365x1024homepage NITT-2022.jpg selected. Filename date is not a verified capture-date claim."
+        }
+      ]
+    },
+    {
+      "universitySlug": "psg-college-of-arts-and-science",
+      "universityName": "PSG College of Arts & Science",
+      "sourceBatch": "codex-psgcas-coimbatore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://media.licdn.com/dms/image/v2/C4E0BAQHBjcLiwupXIg/company-logo_200_200/company-logo_200_200/0/1630586897671/psg_college_of_arts_and_science_logo?e=2147483647&v=beta&t=Hhrsvunoo3Il16-1cTjs3u2tFirF1hrx6gVRkmpIq4E",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgcas.ac.in/admissions/",
+          "rightsBasis": "Institutional public brand/campus illustration, authenticated through the official college page; no open licence or ownership transfer claimed.",
+          "altText": "PSG College of Arts & Science shield crest",
+          "visualCheck": "Native200×200 genuine CAS shield in purple/white with Tamil motto, torch and open book; inspected sequentially. This is the college crest, not the generic PSG group diamond or a recognition-logo collage. Official admissions header directly embeds this exact LinkedIn-hosted company-logo asset. No crop, synthetic edit or upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 retrieval, image type/native dimensions checked, local originals visually inspected in sequence.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-arts-and-science/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/psg-college-of-arts-and-science/admissions-logo.jpg",
+          "sha256": "f989fe5310066a7703dbf907a8d160a5371f456b29840a1c24c29036b47cc1fd"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.psgcas.ac.in/wp-content/uploads/2025/08/hostels.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgcas.ac.in/hostels/",
+          "rightsBasis": "Institutional public brand/campus illustration, authenticated through the official college page; no open licence or ownership transfer claimed.",
+          "altText": "PSG College of Arts & Science hostel courtyard and staircases",
+          "visualCheck": "Native800×533 official hostel photograph, inspected sequentially: cream pillars, twin staircases, landscaped courtyard and students walking. Actual college accommodation scene; no stock/indicative claim, poster or attribution-dependent licence.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 retrieval, image type/native dimensions checked, local originals visually inspected in sequence.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-arts-and-science/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/psg-college-of-arts-and-science/hostels.jpg",
+          "sha256": "7c08abe0bdf7856da7859cdcc5d69f3b573dc2ec1a583e52db72202478b4a907"
+        }
+      ]
+    }
+  ]
+}

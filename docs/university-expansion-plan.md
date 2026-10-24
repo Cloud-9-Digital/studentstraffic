@@ -259,3 +259,5 @@ Four vocational awards were added through the closed same-course-set Kaushal cro
 reviewed bundles for a grouped publication window while agents research offline.
 
 **Published grouped window (0214–0216):** Loyola College Chennai45, IIT Madras74 and Madras Christian College25 offerings (144 total) are published with all six reviewed media assets assigned. VISTAS, NIT Tiruchirappalli and Presidency College continue offline; no unreviewed payload enters the executable sequence during the apply.
+
+**Reviewed group8 (0217–0219):** Presidency College Chennai2 restricted hearing-impaired routes, NIT Tiruchirappalli46 and PSG College of Arts & Science79 (127 total) are ready for grouped publication. VISTAS campus reconciliation, TNAU and PSG College of Technology continue offline outside the executable migration sequence during this window.

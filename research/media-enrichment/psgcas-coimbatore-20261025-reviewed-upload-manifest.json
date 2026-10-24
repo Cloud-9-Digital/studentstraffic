@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "psg-college-of-arts-and-science",
+      "universityName": "PSG College of Arts & Science",
+      "sourceBatch": "codex-psgcas-coimbatore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://media.licdn.com/dms/image/v2/C4E0BAQHBjcLiwupXIg/company-logo_200_200/company-logo_200_200/0/1630586897671/psg_college_of_arts_and_science_logo?e=2147483647&v=beta&t=Hhrsvunoo3Il16-1cTjs3u2tFirF1hrx6gVRkmpIq4E",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgcas.ac.in/admissions/",
+          "rightsBasis": "Institutional public brand/campus illustration, authenticated through the official college page; no open licence or ownership transfer claimed.",
+          "altText": "PSG College of Arts & Science shield crest",
+          "visualCheck": "Native200×200 genuine CAS shield in purple/white with Tamil motto, torch and open book; inspected sequentially. This is the college crest, not the generic PSG group diamond or a recognition-logo collage. Official admissions header directly embeds this exact LinkedIn-hosted company-logo asset. No crop, synthetic edit or upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 retrieval, image type/native dimensions checked, local originals visually inspected in sequence.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-arts-and-science/logo-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/psg-college-of-arts-and-science/admissions-logo.jpg",
+          "sha256": "f989fe5310066a7703dbf907a8d160a5371f456b29840a1c24c29036b47cc1fd"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.psgcas.ac.in/wp-content/uploads/2025/08/hostels.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.psgcas.ac.in/hostels/",
+          "rightsBasis": "Institutional public brand/campus illustration, authenticated through the official college page; no open licence or ownership transfer claimed.",
+          "altText": "PSG College of Arts & Science hostel courtyard and staircases",
+          "visualCheck": "Native800×533 official hostel photograph, inspected sequentially: cream pillars, twin staircases, landscaped courtyard and students walking. Actual college accommodation scene; no stock/indicative claim, poster or attribution-dependent licence.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP200 retrieval, image type/native dimensions checked, local originals visually inspected in sequence.",
+          "proposedPublicId": "studentstraffic/universities/psg-college-of-arts-and-science/cover-20261025",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/psg-college-of-arts-and-science/hostels.jpg",
+          "sha256": "7c08abe0bdf7856da7859cdcc5d69f3b573dc2ec1a583e52db72202478b4a907"
+        }
+      ]
+    }
+  ]
+}

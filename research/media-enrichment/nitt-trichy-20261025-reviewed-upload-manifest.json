@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "national-institute-of-technology-tiruchirappalli",
+      "universityName": "National Institute of Technology Tiruchirappalli",
+      "sourceBatch": "codex-nitt-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.nitt.edu/home/about/Low-Resolution-Emblem.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Clean intact official institutional emblem linked from the About page; native original selected without redrawing or modification, no ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technology-tiruchirappalli/logo-20261025",
+          "altText": "National Institute of Technology Tiruchirappalli official circular emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/national-institute-of-technology-tiruchirappalli/logo.png",
+          "sha256": "d38f38ab6c11407c1d8cc37136e2e026f7f58ac2fafab9ae51bdb8095cea3541",
+          "width": 726,
+          "height": 724,
+          "visualCheck": "Complete clean official circular emblem inspected sequentially by worker and root. High-resolution alternative rejected for rectangular export artefacts. Root fresh public source download SHA256 matches reviewed original."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.nitt.edu/home/NITT-2022.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Genuine official institutional home-page campus photograph; source filename retains2022, no claim of a current capture date or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technology-tiruchirappalli/cover-20261025",
+          "altText": "Administrative building and clock tower at NIT Tiruchirappalli",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/national-institute-of-technology-tiruchirappalli/cover.jpg",
+          "sha256": "67d9d1e4c302c47fcfddcb280baeeac85e6fc5dae54c6a6b4f871200d2a05e0e",
+          "width": 1365,
+          "height": 1024,
+          "visualCheck": "Authentic administration building and clock tower with landscaped approach, inspected sequentially by worker and root. Distinct500x281Aboutphoto excluded; exact1365x1024homepage NITT-2022.jpg selected. Filename date is not a verified capture-date claim."
+        }
+      ]
+    }
+  ]
+}

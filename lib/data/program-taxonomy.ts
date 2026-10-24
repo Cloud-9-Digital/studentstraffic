@@ -72,6 +72,7 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  {"slug": "integrated-bsc-bed", "name": "Integrated B.Sc. B.Ed.", "shortName": "B.Sc. B.Ed.", "stream": "education", "level": "bachelors", "discipline": "science-teacher-education", "aliases": ["Bachelor of Science and Bachelor of Education", "Integrated Bachelor of Science and Education"]},
   {"slug": "integrated-mtech-aerospace-engineering", "name": "Integrated M.Tech in Aerospace Engineering", "shortName": "Integrated M.Tech Aerospace", "stream": "engineering", "level": "integrated-masters", "discipline": "aerospace-engineering", "aliases": ["B.Tech and M.Tech in Aerospace Engineering"]},
   {"slug": "integrated-mtech-design-engineering", "name": "Integrated M.Tech in Design Engineering", "shortName": "Integrated M.Tech Design Engineering", "stream": "engineering", "level": "integrated-masters", "discipline": "design-engineering", "aliases": ["B.Tech and M.Tech in Engineering Design"]},
   {"slug": "bsc-medical-sciences-engineering", "name": "B.Sc. in Medical Sciences and Engineering", "shortName": "B.Sc. Medical Sciences and Engineering", "stream": "public-health-allied-health", "level": "bachelors", "discipline": "medical-sciences-engineering", "aliases": ["Bachelor of Science in Medical Sciences and Engineering"]},
@@ -284,6 +285,11 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "master-educational-technology", name: "Master's in Educational Technology", shortName: "Master's Educational Technology", stream: "education", level: "masters", discipline: "educational-technology", aliases: ["MSc E-Learning Technology", "Master of Educational Technology"] },
   { slug: "master-career-guidance", name: "Master's in Career Guidance", shortName: "Master's Career Guidance", stream: "education", level: "masters", discipline: "career-guidance", aliases: ["MA Career Guidance", "Master of Career Guidance"] },
   { slug: "msc-information-technology", name: "M.Sc. in Information Technology", shortName: "M.Sc. Information Technology", stream: "computing-information-systems", level: "masters", discipline: "information-technology", aliases: ["MSc Information Technology", "M.Sc. IT"] },
+  { slug: "bsc-information-technology", name: "B.Sc. in Information Technology", shortName: "B.Sc. Information Technology", stream: "computing-information-systems", level: "bachelors", discipline: "information-technology", aliases: ["Bachelor of Science in Information Technology", "BSc Information Technology", "B.Sc. IT"] },
+  { slug: "msc-hospital-administration", name: "M.Sc. in Hospital Administration", shortName: "M.Sc. Hospital Administration", stream: "public-health-allied-health", level: "masters", discipline: "hospital-administration", aliases: ["Master of Science in Hospital Administration", "MSc Hospital Administration"] },
+  { slug: "pg-diploma-human-resource-management", name: "Postgraduate Diploma in Human Resource Management", shortName: "PG Diploma HRM", stream: "business", level: "postgraduate-diploma", discipline: "human-resource-management", aliases: ["PG Diploma in Human Resource Management", "PGDHRM"] },
+  { slug: "pg-diploma-business-management", name: "Postgraduate Diploma in Business Management", shortName: "PG Diploma Business Management", stream: "business", level: "postgraduate-diploma", discipline: "business-management", aliases: ["PG Diploma in Business Management", "PGDBM"] },
+  { slug: "integrated-msc-software-systems", name: "Integrated M.Sc. in Software Systems", shortName: "Integrated M.Sc. Software Systems", stream: "computing-information-systems", level: "integrated-masters", discipline: "software-systems", aliases: ["Five-year Integrated MSc Software Systems", "Integrated Master of Science in Software Systems"] },
   { slug: "msc-nanoscience-technology", name: "M.Sc. in Nanoscience and Technology", shortName: "M.Sc. Nanoscience", stream: "natural-sciences", level: "masters", discipline: "nanoscience-technology", aliases: ["MSc Nanoscience and Technology", "MSc Nanotechnology"] },
   { slug: "master-gender-studies", name: "Master's in Gender Studies", shortName: "Master's Gender Studies", stream: "social-sciences", level: "masters", discipline: "gender-studies", aliases: ["MA Gender Studies", "MA Women's Studies"] },
   {"slug": "bachelor-fisheries-science", "name": "Bachelor of Fisheries Science", "shortName": "B.F.Sc.", "stream": "agriculture", "level": "bachelors", "discipline": "fisheries-science", "aliases": ["BFSc", "Bachelor of Fisheries Sciences"]},
@@ -294,6 +300,9 @@ const globalProgrammeFamilies = defineProgrammes([
   {"slug": "bsc-yoga", "name": "B.Sc. in Yoga", "shortName": "B.Sc. Yoga", "stream": "public-health-allied-health", "level": "bachelors", "discipline": "yoga", "aliases": ["Bachelor of Science in Yoga", "BSc Yoga"]},
   {"slug": "msc-yoga", "name": "M.Sc. in Yoga", "shortName": "M.Sc. Yoga", "stream": "public-health-allied-health", "level": "masters", "discipline": "yoga", "aliases": ["Master of Science in Yoga", "MSc Yoga"]},
   {"slug": "bachelor-sports-coaching", "name": "Bachelor's in Sports Coaching", "shortName": "Bachelor's Sports Coaching", "stream": "education", "level": "bachelors", "discipline": "sports-coaching", "aliases": ["Bachelor of Science in Sports Coaching", "BSc Sports Coaching"]},
+  { slug: "bachelor-music", name: "Bachelor's in Music", shortName: "Bachelor's Music", stream: "design-creative-arts", level: "bachelors", discipline: "music", aliases: ["BA Music", "Bachelor of Music", "BA Western Classical Music"] },
+  { slug: "master-performing-arts", name: "Master's in Performing Arts", shortName: "Master's Performing Arts", stream: "design-creative-arts", level: "masters", discipline: "performing-arts", aliases: ["MA Performing Arts", "MA Bharatanatyam", "Master of Dance"] },
+  { slug: "master-astrology", name: "Master's in Astrology", shortName: "Master's Astrology", stream: "arts-humanities", level: "masters", discipline: "astrology", aliases: ["MA Astrology", "Master of Arts in Astrology"] },
 ]);
 
 /**
@@ -588,7 +597,6 @@ export const canonicalProgrammes = [
     aliases: [
       "Bachelor of Engineering in Information Technology",
       "Bachelor of Information Technology",
-      "BSc Information Technology",
     ],
   },
   {
@@ -1028,6 +1036,11 @@ export const canonicalProgrammes = [
     discipline: "healthcare-management",
     aliases: ["MBA in Healthcare Administration", "MBA in Hospital Management"],
   },
+
+  {"slug": "bsc-sericulture", "name": "B.Sc. in Sericulture", "shortName": "B.Sc. Sericulture", "stream": "agriculture", "level": "bachelors", "discipline": "sericulture", "aliases": ["Bachelor of Science in Sericulture", "B.Sc. (Hons.) Sericulture"]},
+  {"slug": "bsc-agribusiness-management", "name": "B.Sc. in Agribusiness Management", "shortName": "B.Sc. Agribusiness", "stream": "agriculture", "level": "bachelors", "discipline": "agribusiness-management", "aliases": ["Bachelor of Science in Agribusiness Management", "B.Sc. (Hons.) Agri Business Management", "B.Sc. (Hons.) Agribusiness Management"]},
+  {"slug": "me-mtech-agricultural-engineering", "name": "M.E./M.Tech in Agricultural Engineering", "shortName": "M.E./M.Tech Agricultural", "stream": "engineering", "level": "masters", "discipline": "agricultural-engineering", "aliases": ["Master of Technology in Agricultural Engineering", "Master of Engineering in Agricultural Engineering", "M.Tech. (Agricultural Engineering)"]},
+  {"slug": "phd-agriculture-allied-sciences", "name": "PhD in Agriculture and Allied Sciences", "shortName": "PhD Agriculture", "stream": "agriculture", "level": "doctorate", "discipline": "agriculture-allied-sciences", "aliases": ["Doctor of Philosophy in Agriculture", "PhD Agricultural Sciences", "Doctorate in Agriculture and Allied Sciences"]},
 ] as const satisfies readonly CanonicalProgramme[];
 
 export type CanonicalProgrammeSlug = (typeof canonicalProgrammes)[number]["slug"];

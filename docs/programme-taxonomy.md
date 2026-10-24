@@ -200,3 +200,50 @@ Added the generic B.E./B.Tech in Computer and Communication Engineering family f
 IIT Madras exact awards require dedicated Bachelor of Cybersecurity, science bachelor families in Electronics, Aerospace Science and Medical Sciences and Engineering, and integrated Aerospace/Design Engineering master's families. These preserve award type: B.Cyber is not B.Tech, BS Medical Sciences and Engineering is not MBBS, and non-campus BS Aeronautics is not an operational Aviation degree. Actual delivery, eligibility and verified duration remain offering-level facts.
 
 Development Studies uses a social-sciences master family. Engineering master's families in Applied Mathematics, Complex Systems, Computational Engineering and Quantum Technology reflect distinct disciplinary curricula; regular Data Science and AI reuses the engineering CSE parent, not MSc Data Science. Ocean Structures/Technology reuse Naval Architecture engineering; other named engineering specialties reuse their appropriate parent. No institution brand, funding category, admission mode or minor creates a new family.
+
+
+### Integrated undergraduate science and teacher education — 25 October 2026
+
+`integrated-bsc-bed` represents the four-year undergraduate-entry B.Sc. B.Ed. dual-major science/teacher-education qualification at bachelor level. It is distinct from graduate-entry standalone B.Ed. and from an integrated master's. NIT Tiruchirappalli's Physics, Chemistry and Mathematics routes have separate applications, preferences and major-level seats at admission; each retains its exact title under this subject-neutral family. A later three-year BSc exit is progression, not a separate direct admission offering. NCTE's original SRC decision naming BSc BEd supersedes the erroneous BA BEd label in an older compiled table; the provenance is recorded in the institution's source audit.
+
+VISTAS source reconciliation (25 October 2026) adds neutral `bachelor-music`,
+`master-performing-arts` and `master-astrology` families. A BA music award retains the
+bachelor's level; an MA in a performing art belongs to the master's performing-arts
+family and must not be relabelled as an MFA. Astrology is recorded as its own arts
+and humanities subject, with academic curriculum descriptions and no unsupported
+predictive, clinical or professional outcomes. Exact award title, duration,
+qualifying route, language and institution remain offering-level facts.
+
+The neutral `bsc-information-technology` family records the science bachelor's
+award in Information Technology. Its BSc aliases were removed from the engineering
+`be-btech-information-technology` family: a BSc IT award is distinct from a BE or
+BTech IT award. Duration and admission requirements remain offering-level facts.
+
+`msc-hospital-administration` preserves the exact science master's award in
+hospital administration. It is distinct from an MBA or a clinical medical degree;
+its curriculum and career descriptions must not imply a licence to practise medicine.
+
+The neutral postgraduate diploma families in Human Resource Management and Business
+Management preserve the diploma award and level; they are not master's or MBA
+families. `integrated-msc-software-systems` records the five-year HSC-entry science
+master's award, distinct from graduate-entry software engineering master's degrees.
+Programme-specific duration, language and intake evidence remain mandatory even
+when a family exists; taxonomy availability does not clear an evidence hold.
+
+
+### Agriculture science and engineering awards (25 October 2026)
+
+`bsc-sericulture` preserves the science degree in silk production and silkworm
+rearing; `bsc-agribusiness-management` preserves an agricultural science award
+that combines production knowledge with business study. The latter is distinct
+from a Bachelor of Business Administration. `me-mtech-agricultural-engineering`
+is the engineering master's counterpart to the existing agricultural engineering
+bachelor family. More specific food technology and energy engineering parents
+remain available where they fit the actual specialism.
+
+`phd-agriculture-allied-sciences` covers original research in agricultural,
+horticultural and forestry disciplines. Use existing engineering, business or
+natural science doctoral parents where those describe the actual research field
+more accurately. A doctorate's offering must distinguish minimum registration
+from expected or guaranteed completion, and must not infer full-course tuition
+from a minimum residential period.
