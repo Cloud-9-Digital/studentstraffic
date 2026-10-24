@@ -160,6 +160,15 @@ Use the batch run report for applied migration IDs and live verification, rather
 claim, reservation or delegated assignment as publication. Independent sources may provide
 discovery and corroboration alongside primary evidence; credibility and claim scope determine use.
 
+**2026-10-25 grouped continuation:** Alagappa University (verified MBA Logistics), Tamil Nadu
+National Law University (hybrid Fisheries Law and Policy diploma) and Rajalakshmi Engineering
+College (verified domestic undergraduate portfolio and MBA) were applied together as migrations
+0194–0196, with official logo/cover media in the same window. Other programme and applicant-route
+holds remain in their inventories. Keep the three offline research slots active as workers finish;
+Vel Tech, Tamil Nadu Dr Ambedkar Law University and Hindustan Institute of Technology and Science
+are the current next-batch assignments. Collect validated bundles for a deliberate grouped apply;
+do not poll or connect to the database during research.
+
 **2026-07-20 Vietnam Medicine quality pass:** the first gold-standard correction bundle covers Dai
 Nam University, Dong A University, Buon Ma Thuot Medical University and Can Tho University of
 Medicine and Pharmacy. The full 30-slug inventory and the release/hold rules are recorded in
