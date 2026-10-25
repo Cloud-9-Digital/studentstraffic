@@ -347,3 +347,7 @@ HSC-entry integrated master's awards use distinct `integrated-msc-biological-sci
 ### Academic safety, spatial science, valuation and human resources
 
 `bachelor-industrial-safety` covers science and other academic bachelor's awards in industrial safety, distinct from engineering qualifications and professional safety certifications. `bachelor-surveying-spatial-science` covers surveying, positioning and spatial-information study, without implying engineering status or statutory surveyor registration. `master-real-estate-valuation` covers postgraduate property-valuation study without promising statutory valuer registration. `bachelor-human-resource-management` covers non-BBA human-resource management bachelor's awards, preserving BA titles rather than relabelling them as business administration. Each retains exact award, qualification, language and practical scope at offering level.
+
+### Folklore and geospatial science master's families
+
+`master-folklore` is an academic arts/humanities master's in oral traditions, narrative, performance, cultural memory and related fieldwork or interpretation. Retain each institution's exact award and curriculum separately. `msc-geospatial-science` is a natural-sciences master's for remote sensing, geoinformatics and spatial analysis, distinct from engineering geoinformatics awards and the broader Geography family. Neither family implies a professional licence or a fixed university curriculum.

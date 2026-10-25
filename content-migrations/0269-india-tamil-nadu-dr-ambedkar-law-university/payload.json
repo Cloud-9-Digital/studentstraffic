@@ -1,0 +1,2331 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "llm",
+      "name": "Master of Laws",
+      "shortName": "LLM",
+      "stream": "law",
+      "level": "masters",
+      "discipline": "law",
+      "aliases": [
+        "LL.M.",
+        "Master of Law"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A Master of Laws develops advanced legal analysis in a chosen field after a qualifying law degree. Programmes may cover legal theory, legislation, case law, research methods and a dissertation, with duration and specialisation varying by institution. It is a postgraduate academic award; admission, professional registration and eligibility to practise law are separate matters.",
+      "metaTitle": "LLM: Entry, Study and Fees",
+      "metaDescription": "Compare Master of Laws programmes by legal specialisation, qualifying degree, university, duration, teaching language and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "tamil-nadu-dr-ambedkar-law-university",
+      "name": "Tamil Nadu Dr. Ambedkar Law University",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 1997,
+      "officialWebsite": "https://tndalu.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Tamil Nadu Dr. Ambedkar Law University is a Tamil Nadu state university established in 1997 for legal education and research. Its own postgraduate departments offer specialised two-year LL.M. degrees at the School of Excellence in Law in Perungudi, Chennai. The university also affiliates law colleges; their courses and campuses require separate assessment.",
+      "campusLifestyle": "Postgraduate study at the School of Excellence in Law combines specialist legal coursework with the university library, academic seminars and student activities. Its Perungudi academic campus is separate from the Poompozhil administrative campus and affiliated law colleges.",
+      "cityProfile": "The School of Excellence in Law academic campus is in Perungudi, Chennai. Applicants should plan accommodation and the daily journey around this campus, rather than the Poompozhil administrative address or an affiliated law college. Compare commuting arrangements, food, rent and study-space access alongside fees; a university admission does not itself include housing or transport.",
+      "practicalExposure": "The postgraduate departments describe seminars, workshops and symposiums alongside the LL.M. curriculum. The university provides legal library collections, electronic resources and academic research facilities. The LL.M. regulations include legal research and a dissertation. Department events can broaden subject engagement, but participation, internships and employment depend on the particular opportunity and selection process; no placement or professional licence is guaranteed.",
+      "hostelOverview": "The 2026–27 prospectus considers girls’ hostel requests only when vacancies are available and explicitly states no boys’ hostel vacancy for that academic year. Obtain a current accommodation decision and charges before relying on university housing; future availability may change.",
+      "dietarySupport": "The prospectus describes hostel food provision. Applicants needing particular dietary arrangements should ask the hostel directly about menus, eligibility, meal charges and availability, especially before accepting accommodation.",
+      "safetyOverview": "The university lists anti-ragging and internal complaints arrangements. Applicants should obtain current campus contacts and hostel rules, and plan their commute to the Perungudi academic campus.",
+      "studentSupport": "The university provides library services, student activities and scholarship information. Category certificates and eligibility records affect admission and support applications. Ask the relevant office about current assistance, deadlines and documentation.",
+      "whyChoose": [
+        "Thirteen current specialist LL.M. branches are listed in the 2026–27 prospectus.",
+        "Two-year postgraduate legal study includes coursework and legal research.",
+        "A state university law environment offers library access and academic events."
+      ],
+      "thingsToConsider": [
+        "This portfolio covers the Indian qualifying-degree admission route; foreign or NRI LL.M. eligibility is not established.",
+        "The academic campus is in Perungudi; Poompozhil administration and affiliated colleges are separate locations.",
+        "Girls’ hostel accommodation depends on vacancies; the 2026–27 prospectus states no boys’ hostel vacancy."
+      ],
+      "bestFitFor": [
+        "Law graduates meeting the named qualifying-degree and marks conditions.",
+        "Applicants seeking a two-year specialist postgraduate law degree in Chennai.",
+        "Students able to plan accommodation and compulsory charges beyond tuition."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC-listed state university: 2(f) and 12B",
+        "NAAC B++: cycle 1, accredited 6 September 2022"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC state-university register",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2"
+        },
+        {
+          "label": "NAAC own valid accreditation list as on14August2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which programmes are included?",
+          "answer": "The university’s 2026–27 prospectus lists thirteen two-year LL.M. branches under CBCS. These are regular postgraduate department courses at the School of Excellence in Law, rather than affiliated-college programmes."
+        },
+        {
+          "question": "Who can apply for these LL.M. degrees?",
+          "answer": "The prospectus requires a qualifying three-year or five-year law degree or accepted equivalent, with 45% under New Regulations or 40% under Old Regulations and the prescribed formal education pattern. Admission is confirmed only after original certificate verification."
+        },
+        {
+          "question": "How much is LL.M. tuition?",
+          "answer": "The 2026–27 official table lists INR 20,000 tuition for each year, billed as INR 10,000 per semester. Separate charges bring the published first-year total to INR 38,200 and second-year total to INR 32,000. Accommodation, examination and other applicable charges need separate assessment."
+        },
+        {
+          "question": "Is English used for postgraduate instruction?",
+          "answer": "The dated LL.M. CBCS regulations expressly use English for instruction and examinations. This applies to the continued branches covered by that regulation. The two newly named Property Law and Crime and Forensic Law branches have no teaching-language label here pending an applicable confirmation."
+        },
+        {
+          "question": "Where will students study?",
+          "answer": "The university’s own School of Excellence in Law academic campus is in Perungudi, Chennai. Poompozhil houses separate university administration and the prospectus refers to boys’ hostel facilities there; an administrative address should not be used as the teaching-campus address."
+        },
+        {
+          "question": "Can I rely on university accommodation?",
+          "answer": "The current prospectus considers girls’ hostel requests subject to vacancies and states no boys’ hostel vacancy for 2026–27. Obtain a current written accommodation decision, charges and rules before making housing plans."
+        },
+        {
+          "question": "Can foreign or NRI applicants use this LL.M. route?",
+          "answer": "The available LL.M. eligibility establishes an Indian qualifying-law-degree route. The separate NRI provisions in the current prospectus concern undergraduate honours admissions and do not establish an overseas LL.M. route. Such applicants need a specific university assessment."
+        },
+        {
+          "question": "When do classes begin?",
+          "answer": "The current programme and admission sources establish the LL.M. degrees, but an exact first-entry class-start month is not established here. Consult the next official notice and the postgraduate office for current application and teaching dates."
+        },
+        {
+          "question": "Does an LL.M. qualify me to practise law?",
+          "answer": "An LL.M. is a postgraduate academic qualification. It does not itself establish first professional enrolment or permission to practise in India or another country; those requirements depend on the underlying qualification and the relevant professional authority."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current2026–27 School of Excellence in Law prospectus",
+          "url": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current2026–27 LL.M. admission notification",
+          "url": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Dated LL.M. CBCS regulations",
+          "url": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University official campus and student notices",
+          "url": "https://tndalu.ac.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC own state university register",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC own valid accreditation list14August2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "scope": "Regular own-campus postgraduate degrees at the School of Excellence in Law, Perungudi; affiliated colleges and overseas LL.M. admission routes are not included."
+      },
+      "programmes": [
+        {
+          "slug": "tndalu-llm-business-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Business Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Business Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-constitutional-law-and-legal-order",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Constitutional Law and Legal Order",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Constitutional Law and Legal Order is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-intellectual-property-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Intellectual Property Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Intellectual Property Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-international-law-and-organization",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. International Law and Organization",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. International Law and Organization is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-environmental-law-and-legal-order",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Environmental Law and Legal Order",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Environmental Law and Legal Order is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-criminal-law-and-criminal-justice-administration",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Criminal Law and Criminal Justice Administration",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Criminal Law and Criminal Justice Administration is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-human-rights-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Human Rights Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Human Rights Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-labour-law-and-administrative-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Labour Law and Administrative Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Labour Law and Administrative Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-taxation-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Taxation Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Taxation Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-cyber-space-law-and-justice",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Cyber Space – Law and Justice",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Cyber Space – Law and Justice is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-maritime-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Maritime Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Maritime Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "English",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-property-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Property Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Property Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        },
+        {
+          "slug": "tndalu-llm-crime-and-forensic-law",
+          "canonicalCourseSlug": "llm",
+          "officialTitle": "LL.M. Crime and Forensic Law",
+          "durationYears": 2,
+          "officialProgramUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–27",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 20000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included."
+          },
+          "officialFeeCurrency": "INR",
+          "officialAnnualTuitionAmount": 20000,
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Indian applicants with an accepted qualifying law degree and the prescribed marks"
+            ],
+            "restrictions": [
+              "The verified route is limited to the Indian qualifying-degree admission conditions.",
+              "Foreign/NRI LL.M. eligibility is not established by the separate undergraduate NRI provisions.",
+              "University eligibility certification and original-document verification apply as specified."
+            ],
+            "notes": "State reservation and category documentation apply under the published admission policy.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf"
+          },
+          "admissionsContent": {
+            "overview": "LL.M. Crime and Forensic Law is a two-year regular postgraduate degree under CBCS at the university’s own School of Excellence in Law in Perungudi, Chennai. Study combines specialist law coursework and legal research.",
+            "eligibility": {
+              "intro": "The current prospectus gives the following LL.M. admission conditions.",
+              "items": [
+                "A successfully completed three-year or five-year undergraduate law degree of the university or accepted equivalent.",
+                "At least 45% marks under New Regulations, or 40% under Old Regulations, under the prescribed formal 10+2+3 or 10+3+3 education pattern.",
+                "Admission is confirmed only after production of the original certificates; an eligibility certificate is required for specified other-university qualifications."
+              ]
+            },
+            "applicationSteps": [
+              "Review the current official LL.M. admission notice and branch options on the university admission portal.",
+              "Complete the prescribed online application and follow the university’s selection and original-certificate verification instructions."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Original qualifying law-degree certificates and mark statements",
+                "University eligibility certificate and migration certificate where prescribed"
+              ],
+              "application": [
+                "Prescribed online admission application",
+                "Applicable category and reservation certificates"
+              ]
+            },
+            "deadlinesNote": "The 2026 application window has passed. Check the next official LL.M. admission announcement for application dates and exact class commencement."
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Official LL.M. tuition is INR 20,000 for each academic year (INR 10,000 per semester). The first-year composite total is INR 38,200 and second-year total INR 32,000, including other listed charges. Tuition is distinct from these totals; do not assume accommodation, meals or unlisted examination charges are included.",
+          "teachingPhases": [
+            {
+              "phase": "Postgraduate legal study",
+              "language": "",
+              "details": "Two academic years, four semesters under CBCS; legal research and dissertation requirements follow the applicable programme regulation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Business Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Business Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-business-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Constitutional Law and Legal Order is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Constitutional Law and Legal Order is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-constitutional-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Intellectual Property Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Intellectual Property Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-intellectual-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. International Law and Organization is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. International Law and Organization is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-international-law-and-organization"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Environmental Law and Legal Order is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Environmental Law and Legal Order is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-environmental-law-and-legal-order"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Criminal Law and Criminal Justice Administration is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Criminal Law and Criminal Justice Administration is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-criminal-law-and-criminal-justice-administration"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Human Rights Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Human Rights Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-human-rights-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Labour Law and Administrative Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Labour Law and Administrative Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-labour-law-and-administrative-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Taxation Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Taxation Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-taxation-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Cyber Space – Law and Justice is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Cyber Space – Law and Justice is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-cyber-space-law-and-justice"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Maritime Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Maritime Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "LL.M.CBCSclause5.9 explicitlyEnglishinstructionandexamination; continued namedbranch.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/pdf/2021/jan/PGDEPT/LL.M._CBCSREGULATIONSNew_23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-maritime-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Property Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Property Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "New currentbranch notexplicitlylisted in dated11branchregulation; instructionlanguage notadvertised.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-property-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "officialTitle",
+      "claimText": "LL.M. Crime and Forensic Law is one of13current2026–27regularLL.M.branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "duration",
+      "claimText": "LL.M. Crime and Forensic Law is a two-year CBCS course with four semesters.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "eligibility",
+      "claimText": "Indian law-degree route: three/five-year law degree;45%NewRegulations or40%OldRegulations; formal10+2+3or10+3+3 and originals/equivalence requirements.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "admissions",
+      "claimText": "Current official LL.M. admission notice and prospectus establish the university route and branches.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "fee",
+      "claimText": "Official domestic LL.M. annual tuition INR 20,000, billed10,000persemester; firstyearcomposite38,200,second32,000.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "medium",
+      "claimText": "New currentbranch notexplicitlylisted in dated11branchregulation; instructionlanguage notadvertised.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "intake",
+      "claimText": "Currentdegreeverified; exactfirst-entryteachingmonthnotestablished andomitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.ac.in/storage/cms/6a42add666c35.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tndalu-llm-crime-and-forensic-law"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "identity",
+      "claimText": "State university established underTamilNaduAct43of1997; ownPerungudiSchoolofExcellenceacademiccampusseparatefromPoompozhilandaffiliates.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "recognition",
+      "claimText": "UGCownstateuniversityregisterrow398 listsTamilnaduDrAmbedkarLawUniversity,state,2(f)&12B.",
+      "status": "verified",
+      "sourceLabel": "Regulator-owned institution register",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "recognition",
+      "claimText": "NAACownvalid14August2025listUniversitiesrow378:TNUNGN110778,U0480,cycle1,B++,2.8,accreditation06September2022; no inventedexpiry.",
+      "status": "verified",
+      "sourceLabel": "Regulator-owned institution register",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "publicField": "campus",
+      "claimText": "CurrentprospectusownPerungudiacademiccampus,library,activitiesandhostelvacancyscope.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr. Ambedkar Law University official source",
+      "sourceUrl": "https://tndalu.emsecure.in/Documents/Prospectus%20%202026-2027%20-%20School%20of%20Excellence%20in%20Law.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

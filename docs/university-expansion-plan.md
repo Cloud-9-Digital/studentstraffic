@@ -146,6 +146,10 @@ apply to `publish-university-draft.ts` and to content-migration payloads (see
 
 ## Country/scope priority queue
 
+**Latest checkpoint — 25 October 2026, group18:** migrations through0268 are applied. The resumed Tamil Nadu ledger scope contains63 published institution profiles and1,763 programmes, including college profiles; these are internal operational counts. Group18 added92 programmes: Periyar expanded from4to27, Dr. M.G.R. Educational and Research Institute60, and Music/Fine Arts University9. Native fee quotes are published without converting composite charges into annual tuition. Current next group: TNDALU regular LL.M., SCSVMV, PRIST and Madurai Kamaraj regular postgraduate departments. Earlier next-assignment notes below are historical. Reconcile canonical names/aliases against the live locked ledger before claiming an apparent gap in the68-row discovery scope.
+
+Unknown teaching language and intake dates no longer hold otherwise verified current programmes: publish empty controlled arrays with explicit omission evidence, keep them out of those filters, and retain exact identity, qualification, duration and applicable professional-approval gates. Continue source research offline; reserve only complete bundles and apply reviewed groups in short database windows.
+
 **2026-10-24 user-directed Tamil Nadu continuation:** resume the existing shared-ledger work before
 claiming more institutions. The reviewed publication batch covers Kongu Engineering College, Periyar
 Maniammai Institute of Science & Technology, Bharathiar University, Bharathidasan University,

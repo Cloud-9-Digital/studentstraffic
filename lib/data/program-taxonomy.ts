@@ -329,6 +329,9 @@ const globalProgrammeFamilies = defineProgrammes([
   {"slug": "bachelor-surveying-spatial-science", "name": "Bachelor's in Surveying and Spatial Science", "shortName": "Bachelor's Surveying and Spatial Science", "stream": "natural-sciences", "level": "bachelors", "discipline": "surveying-spatial-science", "aliases": ["BSc Surveying and Spatial Science", "Bachelor of Science in Surveying and Spatial Sciences"]},
   {"slug": "master-real-estate-valuation", "name": "Master's in Real Estate Valuation", "shortName": "Master's Real Estate Valuation", "stream": "business", "level": "masters", "discipline": "real-estate-valuation", "aliases": ["MSc Real Estate Valuation", "Master of Science in Real Estate Valuation"]},
   {"slug": "bachelor-human-resource-management", "name": "Bachelor's in Human Resource Management", "shortName": "Bachelor's HRM", "stream": "business", "level": "bachelors", "discipline": "human-resource-management", "aliases": ["BA Human Resource Management", "Bachelor of Arts in Human Resource Management"]},
+  { slug: "master-folklore", name: "Master's in Folklore", shortName: "Master's Folklore", stream: "arts-humanities", level: "masters", discipline: "folklore", aliases: ["MA Folklore", "Master of Arts in Folklore"] },
+  { slug: "msc-geospatial-science", name: "M.Sc. in Geospatial Science", shortName: "M.Sc. Geospatial Science", stream: "natural-sciences", level: "masters", discipline: "geospatial-science", aliases: ["MSc Geospatial Science", "Master of Science in Geoinformatics", "MSc Remote Sensing and Geoinformation Technology"] },
+
 ]);
 
 /**

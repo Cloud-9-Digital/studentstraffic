@@ -36,3 +36,11 @@ UGC consolidatedJanuary2023 register and Section12BSeptember2015 list include Ma
 ## 25 October bounded continuation
 
 Reclaimed under the same owner and retried both HTTPS and HTTP official first-year calendar. HTTPS remains SSL unexpected EOF and HTTP returns503. New2025/2026 first-year classes, reopening and commencement searches again returned affiliated colleges/faculty induction or unsupported aggregate calendars. No new legitimate programme-scoped recent intake evidence was found. Returned to held and continued Alagappa research; no database access or migration.
+
+## Second 25 October bounded retry
+
+The official PG-I 2022 calendar still returns SSL unexpected EOF. Fresh 2024–26 searches found faculty induction, affiliated-college openings and the already historical 2019 PG induction, with no recent Palkalai Nagar first-year PG commencement. The New Indian Express 31 July 2024 report mentioning July 5 PG classes concerns the separate Madurai Kamaraj University College at Tallakulam, not university departments: https://www.newindianexpress.com/states/tamil-nadu/2024/Jul/31/madurai-kamaraj-university-college-principal-accuses-colleague-of-using-filthy-language . The Dinamalar 10 July 2024 direct-UG suspension report further prevents transferring old UG dates into a current route: https://www.dinamalar.com/news/kalvimalar-news-en/mk-university-suspends-ug-programs-students-perplexed/51298 . Held; no payload or database access. Continued to unclaimed Presidency College Chennai after duplicate checks.
+
+## Final0271 —25October optionalfacts resume
+
+39regular PalkalaiNagar2yearPGdegrees validated with exactcurrentqualifications and isolated annualdomesticINRtuition. Historicalmedium/intake-onlyholds superseded:1knownMAEnglish,38mediumomit;39intakeomit. Currentadmissionportalclosed. 59inventoryrows retainedLF;professionalapprovalholds remain. Sourcebundle review.md/build/extraction joins contain fullaudit. UGCstate+AIUmembershipbadges; no inventedNAACexpiry/currentstatus. Mandatorygenuinefullcrest+campusgate media reviewed25Oct. Ownercodex-root-mku-20261025 retained, noDB/upload/commit.
