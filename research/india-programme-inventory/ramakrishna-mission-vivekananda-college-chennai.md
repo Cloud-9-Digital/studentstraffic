@@ -29,3 +29,18 @@ Madras own aided directory explicitly lists VivekanandaCollege,PSSivaswamiSalai,
 Mandatory manifest `research/media-enrichment/india-rkmvc-20261025.json`: ordinaryHTTPS200 complete official1106×300wordmark/crest original and1400×700entrance facade. Root visually approved crest cropx45,y0,w180,h210 retaining complete emblem+motto; no enlargement. Cover uncropped authentic current-homepage photograph. Full originals/hashes/source association retained. No licence invention.
 
 Draft schema PASS26routes/19families/270evidence. Actual scoped reader follows reservation. No DB, uploads or commits by this worker.
+
+
+## Superseding two-award rescue —25October2026
+
+Complete offline draft `research/india-source-bundles/rkmvc-rescue-20261025/draft-payload.json`:28programmes,2new Evenings (BScDataScience&AI3years andMComAccountingFinance2years),10native reportedfeequotes and7knownannualtuition unchanged. All26 published0249 programmeobjects/quotes and populatedlogo/cover source-rights deep-equal preserved. Current locked owner `codex-tn-rkmvc-rescue-20261025` retains published26/pointer0249 pending root groupfreeze. ActualtemporaryreaderPASS0warnings; noreservation/DB/upload.
+
+Exact current2026–27 Eveningprospectus namedpriorqualifications: HSCSciencestreamwithMathematics forBSc; recognisedUGCommerceorrelatedfield forMCom, related-degreeassessmentbycollege. CBCSsection printed17 expresslyUG3years6semesters/PG2years4semesters. Male-onlyIndianregularownMylaporecampus route; no foreign blanketeligibility, noengineeringdegreeorprofessionalaccountancycertification substitution. Newmedium/intakeemptywithomit; no country/Englishpaper inference oroptionaldatehunt.
+
+Retainedfeeprinted18render re-viewedthispass: explicitfirst-yearcollegefees paidtwoequalinstalments, BScDSAI36000+36000=72000, MComAF37000+37000=74000. NativeGradeAconfirmedfirst_year quotes; otheradmissionUniversity1011TNHS/1061otherboards andgateway/exam charges excluded/revisable. Notisolatedtuition,no unchangedlater-years/fullcoursetotal. Original7DayPGannualtuition and8Eveningquotes unchanged.
+
+Mediafullypopulated: officiallogo-rkmvc.png acceptedcompletecrestcrop/motto source-rights, officialENTRANCE.jpg facadecaption, checked25October2026; unchanged hostedasset inheritance,noupload. BBA/BCAcurrentprofessionalapprovalscope, research/MPhiland separatelyPondicherryUniversity-awardedVICAStwinning remainactualholds. No newtaxonomy/sharedmetadata. Source-provenance.json retains exactscope.
+
+## Frozen complete forward
+
+0327-india-rkmvc-academic-hold-rescue: 28 programmes; canonical numbered reader passes with zero warnings. Ledger validated28; parent publication pending. Existing26 programmes deep-equal0249-india-rkmvc-native-reported-fees. Existing reviewed media unchanged; no new upload required.

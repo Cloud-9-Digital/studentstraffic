@@ -1,0 +1,11 @@
+{
+  "previousMigration": "0256-india-guru-nanak-native-reported-fees",
+  "existing24ProgrammeObjectsDeepEqual": true,
+  "existingMediaAttributionDeepEqualAndNonempty": true,
+  "oldProgrammeCount": 24,
+  "newProgrammeCount": 32,
+  "uniqueSlugs": 32,
+  "previous20QuotesPreserved": true,
+  "newQuoteCount": 6,
+  "totalEvidence": 367
+}

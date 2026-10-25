@@ -25,3 +25,22 @@ Candidate mandatory media both genuine ordinary directHTTPimages, visually inspe
 The narrow shared HSC combination Biology,Chemistry,Microbiology is used for both biological-science BScawards. Alternative slash-separated Botany/Zoology/Biotechnology combinations in the actualtable require qualification assessment rather than inventing a logical combination from extraction. UGtablephysical5/printed3 andPGtablephysical6/printed4 were rendered and visuallychecked. CurrentPGtable foreign/NRI note expressly requires additional University/othercharges. PGheader has no explicit period, so published amounts are preserved without semester/annual inference. All isolated tuition remains on_request.
 
 Mandatory reviewed manifest research/media-enrichment/india-stella-maris-20261025.json. Root independently viewed and approved the intact92x89officialcrest (no enlargement claim) and1376x768authenticcollegefacade/garden. Both ordinary directHTTPSresponses are genuinePNG; full originals,sourceURLs andchecksums preserved. No crop needed. No uploads by worker. NAACevidence reviewBy is15Nov2026,matching explicit expiry; no renewal inferred. Complete immutable payload promotion/reservation follows this checkpoint; root controls groupedapply.
+
+
+## Superseding academic rescue draft —25October2026
+
+`research/india-source-bundles/stella-rescue-20261025/draft-payload.json`:40total awards/11new (8UG+3PG),40native confirmed reported-fee quotes. Actual temporary full reader passes zero warnings. Published29 objects, their quotes and populatedmediaAttribution deep-equal0248. Locked forward owner `codex-tn-stella-rescue-20261025` keeps published29/pointer0248 until complete forward reservation after root groupfreeze. No new reservation/upload/DB.
+
+Current2026–27 exact UG andPG entry tables provide durations, subjects andfees. The retained collegecalendar explicitly firstIUG/IPG22June2026 applies same-cyclecurrentawards, historicalJuneonly; no datehunt. Newmediumempty/omit withoutcountrydefault. UndergraduateLanguagepapers and oldSocialWorkTamilrequirement scope preserved. Degreeholderprogrammes HumanResourceManagement,DataScience,Psychology remain academic awards, not clinical-practice registration or LiverpoolHopeforeignaward.
+
+CurrentUGPDFp6/printed4 visuallyviewedagain for direct rowalignment: BComAF/Honours/ProfessionalAccounting requireCommerceorBusinessStudies+Accountancy+MathsorBusinessMaths; BFE requiresCommerceorBusinessStudies+Accountancy, noaddedMaths. Honours explicitly3years/6semesters, notinvented4. BScMathComputingrequiresHSCMath;threeBAvariantsanygroup. HomeScienceFoodNutrition is held for actualslash/comma/and subject-combination ambiguity, not language. PGexact prior-degree lists and2year/4semesterstructure retained.
+
+All11 currentnativeGradeAconfirmedquotes preserve exactperiod:8UGcombinedSemesterIHSCamounts, withCBSEISC/otherboardratesseparatelynotes;3PGexactpublishedadmissionfeeamounts withperiodotherbecauseheaderdoesnotdefineperiod. No annualisation or isolatedtuition/fullcourse claims. Foreign/NRIadditionalUniversitycharges andhostel/food separate; currentwomen/internationalqualificationdocumentroute preserved.
+
+Media provenance is fullypopulated in0248andthisdraft: officialcompletecrest `https://stellamariscollege.edu.in/assets/images/icon.png`, officialfacade/garden/palms `https://stellamariscollege.edu.in/assets/images/banner01.png`; exactacceptedrights/checkdate/covercaption preserved, no newupload or DBimageURLreplacement. Original92x89crest no enlargementclaim. NAACexpiry15November2026/reviewBy maintained, no renewalinference.
+
+RevisedPGDiplomaComputerScience, fourBVoccurrent-entryquestions, separatecoedGlobalBusinessFinanceDiploma andforeignawardedLiverpoolHopeMScDataScience remainseparate; no scope expansionintoaffiliatedexternal/research/professionalawards. Source-provenance.json records exactholds.
+
+## Frozen complete forward
+
+0326-india-stella-maris-academic-hold-rescue: 40 programmes; canonical numbered reader passes with zero warnings. Ledger validated40; parent publication pending. Existing29 programmes deep-equal0248-india-stella-maris-native-reported-fees. Existing reviewed media unchanged; no new upload required.
