@@ -192,6 +192,35 @@ test("new bundles reject prose in intake month labels", async () => {
   });
 });
 
+test("verified programmes may omit unknown intake dates without inventing a month", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const directory = join(root, "0233-unknown-intake");
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({
+      version: 1, id: "0233-unknown-intake", description: "Publish a verified programme with an explicitly unknown start month.",
+      createdAt: "2026-10-25", payload: "payload.json",
+    }));
+    const payload = structuredClone(validPayload);
+    payload.universities[0]!.programmes[0]!.intakeMonths = [];
+    payload.universities[0]!.programmes[0]!.intakeCodes = [];
+    const evidence = payload.evidence.find((item) => item.publicField === "intake")!;
+    evidence.status = "omit";
+    evidence.claimText = "Current programme is offered; the exact start month is unconfirmed and is not advertised.";
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    assert.equal((await readContentMigrations(root))[0]?.payload.universities[0]?.programmes[0]?.intakeCodes.length, 0);
+
+    evidence.status = "verified";
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await assert.rejects(readContentMigrations(root), /missing verified admissions or intake evidence/);
+
+    payload.universities[0]!.programmes[0]!.intakeMonths = ["September"];
+    payload.universities[0]!.programmes[0]!.intakeCodes = ["september"];
+    evidence.status = "omit";
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await assert.rejects(readContentMigrations(root), /missing verified admissions or intake evidence/);
+  });
+});
+
 test("checksums a CRLF checkout the same as its LF original", () => {
   const manifest = '{\n  "id": "0001-test-university"\n}\n';
   const payload = '{\n  "courses": []\n}\n';

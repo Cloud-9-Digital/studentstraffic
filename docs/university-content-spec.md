@@ -30,12 +30,18 @@ digging up and organizing more real facts, never padding with generic filler or 
 
 ## Programme-level minimum content (2026-09-21)
 
-Every packaged programme, at minimum, needs: official title, level, duration, campus, intake,
+Every packaged programme, at minimum, needs: official title, level, duration, campus,
 eligibility for international applicants, a fee with explicit status (`confirmed` / `indicative` /
 `on_request`) and its currency basis, teaching language, and its evidence records (source URL,
 source type, verified date per material claim). This is the compact floor for a programme to be
 publishable at all; `admissionsContent` below and the FAQ/narrative guidance further down are the
 target depth once a programme clears this floor.
+
+Publish an otherwise verified current programme even when its exact intake month is unconfirmed.
+Keep both intake arrays empty, document the omission in internal intake evidence, and avoid a
+dated start claim. Exact cohort-date research is enrichment, not a blocker for the entire verified
+catalogue. Stated intake months still need evidence; teaching language, current programme identity
+and qualification requirements remain verified core facts.
 
 ## Programme admissions content — required and programme-specific
 

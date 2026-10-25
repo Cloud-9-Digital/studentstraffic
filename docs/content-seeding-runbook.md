@@ -81,6 +81,13 @@ Allowed statuses are `claimed`, `researching`, `held`, `validated`, `published` 
 Update the same row as work progresses; never add a second row for the same institution. Historical
 names, campuses and faculties must be checked so a renamed institution is not claimed twice.
 
+For a forward expansion of an already published institution, the publishing integrator records the
+new owner, batch and research scope through `mutateUniversityPublishingLedger` under its lock,
+while retaining `published`, the existing count and applied bundle pointer during research. This
+preserves the live publication checkpoint and avoids a duplicate row. Once a complete forward
+bundle passes the actual scoped reader, update that same row to its new validated pointer/count;
+mark it published only after the grouped apply succeeds.
+
 Research agents stop at `validated`. The content-migration runner re-reads and validates the ledger
 before opening a database connection and requires exactly one `validated` or previously `published`
 row per university in the payload. Only the controlled publishing integrator moves validated rows to
@@ -263,9 +270,13 @@ controlled codes so legacy prose cannot appear as an intake label.
 If a source confirms a mixed English/local-language programme, record every verified instructional
 language in `instructionLanguages`, list them in the `medium` label, and explain the transition in
 `mediumNote` or `teachingPhases`.
-If an intake or teaching language is uncertain, leave its controlled facet empty only in legacy
-repair work; for new payloads, resolve it from a primary source or hold the programme. Never guess
-to make a finder option appear.
+An otherwise verified current programme need not be held solely because its exact start month is
+unconfirmed. Leave both `intakeMonths` and `intakeCodes` empty, record programme `intake` evidence
+with `status: "omit"` and the checked source/gap, and use a short pending-date caveat if useful.
+Do not substitute an old orientation date or a general reopening date simply to fill the facet.
+An advertised month still requires verified intake evidence and matching controlled labels.
+Teaching language remains required: establish it from applicable programme or institutional
+evidence, or hold that programme. Never guess to make a finder option appear.
 
 ### 4. Build the complete publishing payload
 

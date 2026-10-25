@@ -189,7 +189,10 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string, no
       if (!hasFieldEvidence("eligibility", ["verified"])) {
         throw new Error(`${migrationId} is missing verified eligibility evidence for ${programme.slug}.`);
       }
-      if (!hasFieldEvidence("admissions", ["verified"]) || !hasFieldEvidence("intake", ["verified"])) {
+      const hasIntakeEvidence = programme.intakeCodes.length
+        ? hasFieldEvidence("intake", ["verified"])
+        : evidence.some((item) => item.publicField === "intake" && item.status === "omit");
+      if (!hasFieldEvidence("admissions", ["verified"]) || !hasIntakeEvidence) {
         throw new Error(`${migrationId} is missing verified admissions or intake evidence for ${programme.slug}.`);
       }
 

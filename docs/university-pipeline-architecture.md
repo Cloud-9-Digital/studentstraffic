@@ -629,3 +629,8 @@ amounts, exact period/component/category, source year and any conversion provena
 evidence. Reported combined or full-course charges must not be imported into annual-tuition fields.
 Forward full-university bundles preserve applied-history immutability. See the seeding runbook for
 the current source policy.
+
+An unknown start month no longer blocks an otherwise verified current programme. Payloads may
+carry empty `intakeMonths` and `intakeCodes` together, with an explicit omitted-intake evidence
+record. Nonempty month facets still require verified evidence and exact label/code agreement.
+The UI omits empty intake facets; no guessed date, cohort or database schema change is needed.
