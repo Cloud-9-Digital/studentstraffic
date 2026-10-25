@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "gandhigram-rural-institute",
+      "universityName": "The Gandhigram Rural Institute",
+      "sourceBatch": "codex-gandhigram-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf",
+          "sourceType": "official-university",
+          "rightsBasis": "Genuine institutional seal embedded in the institution-published 2026\u201327 prospectus, retained without redesign. Original PDF and extracted native image retained for identification; no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/gandhigram-rural-institute/logo-20261025",
+          "altText": "The Gandhigram Rural Institute institutional seal",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gandhigram-20261025/media-prospectus-image-002.png",
+          "sha256": "d648f6ea5d5f908ddc3cf28418ce20e1eb4b915dff48c1c2b8de67b845fd9c0b",
+          "width": 357,
+          "height": 331,
+          "visualReview": "Complete seal and legal-name border legible on white; no header accreditation text.",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Native 357x331 RGB image extracted from official prospectus page 1 using pdfimages-png; no resizing, recolouring or synthetic edits. Associated PDF soft mask retained separately; full rendered page visually checked.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gandhigram-20261025/prospectus2026.pdf",
+          "originalDocumentSha256": "71d1fb30fe61f548f1bd033803d2825e848360a7960b85abcbbc356889118ae4"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Tamil_department%2C_Gandhigram_Rural_University%2C_Dindigul.JPG",
+          "sourceType": "licensed-reusable",
+          "rightsBasis": "Photo by Surya Prakash S.A. (Commons: Surya Prakash.S.A.), 3 March 2014, CC BY-SA 3.0,https://creativecommons.org/licenses/by-sa/3.0/ . Original unchanged. Source and author: https://commons.wikimedia.org/wiki/File:Tamil_department,_Gandhigram_Rural_University,_Dindigul.JPG",
+          "proposedPublicId": "studentstraffic/universities/gandhigram-rural-institute/cover-20261025",
+          "altText": "Historical 2014 photograph of the Tamil department building at Gandhigram Rural Institute",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gandhigram-20261025/media-cover.jpg",
+          "sha256": "eb16ca08be46a6856bf2fa047e10da1abac9105a7987f7d7b57534933cc3f90a",
+          "width": 4608,
+          "height": 3456,
+          "visualReview": "Authentic campus Tamil department building, undistorted original photograph. Clearly dated 2014, not a claim of present building condition.",
+          "licencePageUrl": "https://commons.wikimedia.org/wiki/File:Tamil_department,_Gandhigram_Rural_University,_Dindigul.JPG"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/university/avinashilingam-institute-for-home-science-and-higher-education-for-women",
+    "kind": "university",
+    "slug": "avinashilingam-institute-for-home-science-and-higher-education-for-women",
+    "status": 200,
+    "h1": "Avinashilingam Institute for Home Science and Higher Education for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/avina-b-a-economics-aided",
+    "kind": "programme",
+    "slug": "avina-b-a-economics-aided",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Economics at Avinashilingam Institute for Home Science and Higher Education for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/avina-m-sc-biotextiles-aided",
+    "kind": "programme",
+    "slug": "avina-m-sc-biotextiles-aided",
+    "status": 200,
+    "h1": "Master&#x27;s Home Science at Avinashilingam Institute for Home Science and Higher Education for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/alagappa-university-mba-logistics-supply-chain-management",
+    "kind": "programme",
+    "slug": "alagappa-university-mba-logistics-supply-chain-management",
+    "status": 200,
+    "h1": "MBA at Alagappa University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/alagappa-university-m-a-english",
+    "kind": "programme",
+    "slug": "alagappa-university-m-a-english",
+    "status": 200,
+    "h1": "M.A. English at Alagappa University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/alagappa-university",
+    "kind": "university",
+    "slug": "alagappa-university",
+    "status": 200,
+    "h1": "Alagappa University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/jbas-m-a-english-shift-1",
+    "kind": "programme",
+    "slug": "jbas-m-a-english-shift-1",
+    "status": 200,
+    "h1": "M.A. English at Justice Basheer Ahmed Sayeed College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/jbas-b-a-historical-studies-shift-1",
+    "kind": "programme",
+    "slug": "jbas-b-a-historical-studies-shift-1",
+    "status": 200,
+    "h1": "B.A. History at Justice Basheer Ahmed Sayeed College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/justice-basheer-ahmed-sayeed-college-for-women",
+    "kind": "university",
+    "slug": "justice-basheer-ahmed-sayeed-college-for-women",
+    "status": 200,
+    "h1": "Justice Basheer Ahmed Sayeed College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/jbas-m-sc-home-science-textile-science-and-fashion-designing-shift-1",
+    "kind": "programme",
+    "slug": "jbas-m-sc-home-science-textile-science-and-fashion-designing-shift-1",
+    "status": 200,
+    "h1": "Master&#x27;s Home Science at Justice Basheer Ahmed Sayeed College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-a-arabic-shift-i-the-new-college-chennai",
+    "kind": "programme",
+    "slug": "b-a-arabic-shift-i-the-new-college-chennai",
+    "status": 200,
+    "h1": "B.A. Languages at The New College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/the-new-college-chennai",
+    "kind": "university",
+    "slug": "the-new-college-chennai",
+    "status": 200,
+    "h1": "The New College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-com-general-shift-ii-the-new-college-chennai",
+    "kind": "programme",
+    "slug": "b-com-general-shift-ii-the-new-college-chennai",
+    "status": 200,
+    "h1": "B.Com at The New College, Chennai",
+    "pass": true
+  }
+]

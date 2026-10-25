@@ -72,6 +72,7 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  { slug: "bachelor-vocational-studies", name: "Bachelor of Vocational Studies", shortName: "B.Voc.", stream: "vocational", level: "bachelors", discipline: "vocational-studies", aliases: ["Bachelor of Vocation", "B.Voc", "BVoc"] },
   {"slug": "integrated-bsc-bed", "name": "Integrated B.Sc. B.Ed.", "shortName": "B.Sc. B.Ed.", "stream": "education", "level": "bachelors", "discipline": "science-teacher-education", "aliases": ["Bachelor of Science and Bachelor of Education", "Integrated Bachelor of Science and Education"]},
   {"slug": "integrated-mtech-aerospace-engineering", "name": "Integrated M.Tech in Aerospace Engineering", "shortName": "Integrated M.Tech Aerospace", "stream": "engineering", "level": "integrated-masters", "discipline": "aerospace-engineering", "aliases": ["B.Tech and M.Tech in Aerospace Engineering"]},
   {"slug": "integrated-mtech-design-engineering", "name": "Integrated M.Tech in Design Engineering", "shortName": "Integrated M.Tech Design Engineering", "stream": "engineering", "level": "integrated-masters", "discipline": "design-engineering", "aliases": ["B.Tech and M.Tech in Engineering Design"]},

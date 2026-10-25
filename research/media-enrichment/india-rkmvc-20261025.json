@@ -1,0 +1,47 @@
+{
+  "manifestId": "india-rkmvc-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Intact official crest crop and authentic complete current-homepage entrance facade.",
+  "entries": [
+    {
+      "universitySlug": "ramakrishna-mission-vivekananda-college-chennai",
+      "universityName": "Ramakrishna Mission Vivekananda College (Autonomous), Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://rkmvc.ac.in/wp-content/uploads/2025/01/logo-rkmvc.png",
+          "sourceType": "official",
+          "sourcePage": "https://rkmvc.ac.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Original ordinary HTTPS image retrieval returned200; complete original and SHA256 retained. No open-licence or enlargement claim. Crop retains complete crest with motto; excludes large wordmark so crest remains legible in catalogue tiles.",
+          "proposedPublicId": "studentstraffic/universities/ramakrishna-mission-vivekananda-college-chennai/logo",
+          "altText": "Ramakrishna Mission Vivekananda College complete crest and motto",
+          "localPath": "research/india-source-bundles/rkmvc-20261025/logo.png",
+          "sha256": "540660aff40137ba24edf8e8d9c2881f3f83996f9798dbfe6d704b8c52702782",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 45,
+              "y": 0,
+              "width": 180,
+              "height": 210
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://rkmvc.ac.in/wp-content/uploads/2024/03/ENTRANCE.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://rkmvc.ac.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Original ordinary HTTPS image retrieval returned200; complete original and SHA256 retained. No open-licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/ramakrishna-mission-vivekananda-college-chennai/cover",
+          "altText": "Entrance facade of Ramakrishna Mission Vivekananda College in Mylapore, Chennai",
+          "localPath": "research/india-source-bundles/rkmvc-20261025/cover.jpg",
+          "sha256": "fe3211d7d1c004b59a7ba7b9bc97fee5365a71d898bfd845a15369c65fc2b52f"
+        }
+      ],
+      "migrationId": "0238-ramakrishna-mission-vivekananda-college-chennai"
+    }
+  ]
+}

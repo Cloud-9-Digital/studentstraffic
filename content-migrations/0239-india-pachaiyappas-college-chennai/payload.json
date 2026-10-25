@@ -1,0 +1,940 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "ba-languages-linguistics",
+      "name": "B.A. in Languages and Linguistics",
+      "shortName": "B.A. Languages",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "languages-linguistics",
+      "aliases": [
+        "BA Linguistics",
+        "Bachelor of Arts in Modern Languages"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate degrees in a named language, modern languages or linguistics. Programmes study language structure, literature and cultural texts in the chosen language or languages, with translation and analytical writing. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.A. Languages Programmes | Students Traffic",
+      "metaDescription": "Compare B.A. Languages programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "ma-languages-linguistics",
+      "name": "M.A. in Languages and Linguistics",
+      "shortName": "M.A. Linguistics",
+      "stream": "arts-humanities",
+      "level": "masters",
+      "discipline": "languages-linguistics",
+      "aliases": [
+        "MA Linguistics",
+        "Master of Arts in Modern Languages"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare M.A. Languages and Linguistics programmes abroad by language structure, multilingualism, research, tuition, language of instruction and admissions. Exact university titles and scope are retained.",
+      "metaTitle": "M.A. Linguistics Programmes and Admissions",
+      "metaDescription": "Compare M.A. Linguistics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "master-economics",
+      "name": "Master's in Economics",
+      "shortName": "Master's Economics",
+      "stream": "economics-commerce",
+      "level": "masters",
+      "discipline": "economics",
+      "aliases": [
+        "MA Economics",
+        "MSc Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A master's economics category covering economic theory, quantitative methods, policy analysis and research. University pages preserve the exact award title, credit structure, prerequisite expectations, thesis options and admissions route.",
+      "metaTitle": "Master's Economics: Study and Admissions",
+      "metaDescription": "Compare Master's Economics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "pachaiyappas-college-chennai",
+      "name": "Pachaiyappa's College, Chennai",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 1842,
+      "officialWebsite": "https://pachaiyappascollege.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/pachaiyappa/logo/favicon.png",
+          "rights": "Official institution-hosted institutional crest and campus photograph; no open licence or ownership transfer asserted.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/pachaiyappa/slider/SLIDER-03.jpg",
+          "rights": "Official institution-hosted institutional crest and campus photograph; no open licence or ownership transfer asserted.",
+          "checkedAt": "2026-10-25",
+          "altText": "Pachaiyappa’s College Chennai entrance with named institutional signage and statue"
+        }
+      },
+      "summary": "Pachaiyappa’s College is a government-aided arts and science college in Chennai, established in 1842 through the educational philanthropy of Pachaiyappa Mudaliar. It is affiliated to the University of Madras and offers aided and self-financed undergraduate, postgraduate and research study. Current admission and fee conditions depend on the exact programme and stream.",
+      "campusLifestyle": "The college is on E.V.R. Periyar High Road in the Shenoy Nagar and Chetput area of Chennai. Students can access departmental and central libraries, laboratories, sports and student-service activities. The state granted co-educational status in June 2026; accommodation eligibility is a separate matter from degree admission.",
+      "cityProfile": "The Chennai campus has access to city bus, rail and Metro networks, according to the college. Plan the actual commute around your department’s reporting time and location. Compare accommodation, food, transport and personal expenses separately from tuition, and verify available accommodation before making a residence commitment.",
+      "practicalExposure": "Academic practical work depends on the degree. The college describes laboratories, departmental libraries, seminars and student activities across its arts, commerce and science departments. Review the exact syllabus for the selected award and ask about its assessed projects or practical components. Placement training or a college event does not guarantee an internship, individual recruitment or a particular salary.",
+      "hostelOverview": "The college describes an attached men’s hostel and states that hostel accommodation cannot be claimed as a right through college admission. Its self-financing information says female students can receive guidance in finding nearby paying-guest accommodation. Confirm vacancy, eligibility, residence rules, charges and meal terms independently.",
+      "dietarySupport": "A specific current hostel menu, allergy service or specialist dietary arrangement has not been verified. Applicants should confirm food arrangements and individual dietary requirements directly with the accommodation provider before accepting a place.",
+      "safetyOverview": "The college publishes anti-ragging information and links student complaint and welfare mechanisms, including its Internal Complaints Committee. Obtain current reporting contacts and student-conduct instructions during enrolment. Published committees and rules do not guarantee any individual safety outcome.",
+      "studentSupport": "The college lists scholarship information, library facilities, NCC, NSS, Youth Red Cross and placement-training activities. Financial support depends on the exact scheme and category requirements; admission alone does not establish a scholarship entitlement. Confirm accessibility arrangements and programme-specific support with the college.",
+      "whyChoose": [
+        "University of Madras affiliated arts and science college.",
+        "Aided and self-financed programmes are separately identified.",
+        "Current prospectus provides exact entry and tuition components."
+      ],
+      "thingsToConsider": [
+        "Choose the exact aided or self-financed programme.",
+        "Teaching-language arrangements differ by degree.",
+        "Tuition excludes other compulsory college charges.",
+        "Hostel eligibility and vacancy require separate confirmation."
+      ],
+      "bestFitFor": [
+        "Domestic applicants meeting the verified subject or main-degree conditions.",
+        "Students seeking Tamil-medium regular arts study in Chennai.",
+        "Applicants prepared for online registration, counselling and academic-record verification."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC — included under Section 2(f) and 12 B",
+        "University of Madras — affiliated aided college"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC official college register row 9151, Pachiyappa’s College, Chetput Madras 600030",
+          "url": "https://www.ugc.gov.in/colleges"
+        },
+        {
+          "label": "University of Madras official aided-affiliated-college list",
+          "url": "https://www.unom.ac.in/index.php?route=colleges%2Faided"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Official prospectus source",
+          "url": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official sf-prospectus source",
+          "url": "https://pachaiyappascollege.edu.in/assets/pdf/prospectus-2026-2027-self-financing.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official aishe source",
+          "url": "https://pachaiyappascollege.edu.in/assets/pdf/aishe/AISHE%202024-2025.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official fees source",
+          "url": "https://pachaiyappascollege.edu.in/fees-structure-aided.php",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official sf-fees source",
+          "url": "https://pachaiyappascollege.edu.in/assets/pdf/fees-structure-self-financing.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official application source",
+          "url": "https://pachapplication.nlabstech.in/New-SignUp",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official ugc source",
+          "url": "https://www.ugc.gov.in/colleges",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official madras source",
+          "url": "https://www.unom.ac.in/index.php?route=colleges%2Faided",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official coeducation source",
+          "url": "https://pachaiyappascollege.edu.in/assets/pdf/flash-news/go[ms]no-100-dt-15.06.2026-06152026142639.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official profile source",
+          "url": "https://pachaiyappascollege.edu.in/college-profile.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official phd source",
+          "url": "https://pachaiyappascollege.edu.in/Phd.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official hostel source",
+          "url": "https://pachaiyappascollege.edu.in/fees-structure-self-financing.php",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Three Tamil-medium regular aided routes from a complete current portfolio inventory. Other current awards retain medium or approval holds, not inferred English. Unknown intake months intentionally omitted.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Pachaiyappa’s programme eligibility",
+            "capture": [
+              "programme",
+              "qualification",
+              "main subject"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my Pachaiyappa’s study budget",
+            "capture": [
+              "programme",
+              "stream",
+              "applicant category"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my Pachaiyappa’s application",
+            "capture": [
+              "programme",
+              "intended cycle"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which Pachaiyappa’s College is this?",
+          "answer": "This is the Chennai institution on E.V.R. Periyar High Road, established in 1842 and affiliated to the University of Madras. Pachaiyappa’s College for Men in Kanchipuram and other colleges managed by the Trust have separate identities and admission material."
+        },
+        {
+          "question": "Can women apply?",
+          "answer": "The state granted the Chennai college co-educational status through its June 2026 government order. The current prospectus also explicitly identifies postgraduate study as co-educational. Older men-only undergraduate wording should not be treated as the current universal rule."
+        },
+        {
+          "question": "What is needed for BA Tamil?",
+          "answer": "The current prospectus requires a pass in the Tamil Nadu Higher Secondary examination or an equivalent examination recognised by the University of Madras. Complete the college’s selection process and original-document checks."
+        },
+        {
+          "question": "What is needed for these postgraduate degrees?",
+          "answer": "The prospectus requires a three-year BA, BSc or BCom degree with the subject concerned as the main. Economics applicants therefore need the Economics main-subject route, and Tamil applicants should confirm acceptance of the qualifying Tamil main subject."
+        },
+        {
+          "question": "Which teaching language is verified?",
+          "answer": "The college’s named AISHE programme return records Tamil for BA Tamil, MA Tamil and MA Economics. These records support the listed Tamil routes; they do not guarantee an English-only section. Confirm current teaching arrangements before enrolment."
+        },
+        {
+          "question": "When do classes begin?",
+          "answer": "A verified first-year teaching-start month is not established for these exact entries. Counselling dates are separate from academic commencement. Follow the college’s applicable admission, selection and reporting notices."
+        },
+        {
+          "question": "What do the displayed fees include?",
+          "answer": "The amount is the isolated tuition component. Admission, special and university charges remain additional. The government UG tuition waiver does not make the whole programme free; confirm the complete payable quote before payment."
+        },
+        {
+          "question": "Are there PG tuition waivers?",
+          "answer": "The current prospectus states a tuition waiver for SC/ST postgraduate students. Category verification and all other applicable charges remain separate. This is not a blanket waiver of every programme expense."
+        },
+        {
+          "question": "How do applications work?",
+          "answer": "Use the official online portal, enter academic details, choose an eligible programme and pay its application charge. Check rank lists and SMS or email for interview or selection instructions and attend with the printed application and required records."
+        },
+        {
+          "question": "What documents are required?",
+          "answer": "The portal asks for the printed application, three passport-size photographs, marks statement, Community Certificate and Transfer Certificate. Postgraduate applicants should prepare their qualifying-degree records; a degree from another university requires the Madras provisional eligibility certificate stated by the college."
+        },
+        {
+          "question": "Is hostel accommodation guaranteed?",
+          "answer": "No. The college describes a men’s hostel and explicitly says a college place does not create a right to hostel accommodation. Female students are offered guidance for nearby paying-guest options; confirm availability, terms and charges separately."
+        },
+        {
+          "question": "Can overseas applicants use these entries?",
+          "answer": "These entries verify the domestic regular aided route. Overseas and NRI admission conditions, qualification treatment and fee categories have not been established here. Obtain the college’s exact category confirmation before relying on an international route."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "b-a-tamil-pachaiyappas-college-chennai",
+          "canonicalCourseSlug": "ba-languages-linguistics",
+          "officialTitle": "B.A. Tamil — Aided (Shift I)",
+          "durationYears": 3,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 0,
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition component only; compulsory admission, special and university charges are additional. Confirm the applicable category quote before payment. The government tuition waiver does not make the whole programme free."
+          },
+          "officialProgramUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the exact academic and selection requirements"
+            ],
+            "restrictions": [
+              "This entry verifies the domestic regular aided route; overseas or NRI admission conditions and fee categories are unverified."
+            ],
+            "notes": "Current state order grants co-educational status. PG is explicitly co-educational in the current prospectus. Qualification recognition and college verification remain necessary.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Tamil is a 3-year regular aided programme at Pachaiyappa’s College in Chennai, affiliated to the University of Madras. The college lists its academic entry requirements, online application and selection process.",
+            "eligibility": {
+              "intro": "Meet the exact qualifying examination or main-subject requirements and complete the college’s selection and original-document checks.",
+              "items": [
+                "Pass the Tamil Nadu Higher Secondary (+2) examination or an equivalent examination recognised by the University of Madras."
+              ]
+            },
+            "applicationSteps": [
+              "Read the current prospectus and register through the college’s official online application portal.",
+              "Enter the academic and personal details, select the eligible programme and pay the notified application charge for that course.",
+              "Check the college rank list and the registered SMS or email for counselling, interview or provisional selection instructions.",
+              "Attend with the printed application and required academic records; complete eligibility verification and pay the notified charges if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Higher Secondary marks statement and Transfer Certificate.",
+                "Community Certificate where applicable; candidates with degrees from another university require the University of Madras provisional eligibility certificate."
+              ],
+              "application": [
+                "Printed application and three passport-size photographs.",
+                "Online application-payment evidence and any additional records requested in the selection notice."
+              ]
+            },
+            "deadlinesNote": "The current admission material does not establish a verified first-year teaching-start month for this exact route. Check the college’s next applicable admission and reporting notice."
+          },
+          "medium": "Tamil",
+          "mediumNote": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section.",
+          "instructionLanguages": [
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition component only; compulsory admission, special and university charges are additional. Confirm the applicable category quote before payment. The government tuition waiver does not make the whole programme free.",
+          "teachingPhases": [
+            {
+              "phase": "Programme teaching",
+              "language": "Tamil",
+              "details": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section."
+            }
+          ]
+        },
+        {
+          "slug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+          "canonicalCourseSlug": "ma-languages-linguistics",
+          "officialTitle": "M.A. Tamizhiyal — Aided (Shift I)",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 500,
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition component only; compulsory admission, special and university charges are additional. Confirm the applicable category quote before payment. The prospectus states that SC/ST students at PG level receive a tuition waiver; valid category verification and other charges still apply."
+          },
+          "officialProgramUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the exact academic and selection requirements"
+            ],
+            "restrictions": [
+              "This entry verifies the domestic regular aided route; overseas or NRI admission conditions and fee categories are unverified."
+            ],
+            "notes": "Current state order grants co-educational status. PG is explicitly co-educational in the current prospectus. Qualification recognition and college verification remain necessary.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.A. Tamizhiyal is a 2-year regular aided programme at Pachaiyappa’s College in Chennai, affiliated to the University of Madras. The college lists its academic entry requirements, online application and selection process.",
+            "eligibility": {
+              "intro": "Meet the exact qualifying examination or main-subject requirements and complete the college’s selection and original-document checks.",
+              "items": [
+                "Hold a three-year B.A., B.Sc. or B.Com. degree with the subject concerned as the main, as required by the current college prospectus.",
+                "For this Tamil postgraduate award, verify that the qualifying main subject is accepted by the college and the University of Madras."
+              ]
+            },
+            "applicationSteps": [
+              "Read the current prospectus and register through the college’s official online application portal.",
+              "Enter the academic and personal details, select the eligible programme and pay the notified application charge for that course.",
+              "Check the college rank list and the registered SMS or email for counselling, interview or provisional selection instructions.",
+              "Attend with the printed application and required academic records; complete eligibility verification and pay the notified charges if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying-degree marks statements and degree or provisional certificate.",
+                "Community Certificate where applicable; candidates with degrees from another university require the University of Madras provisional eligibility certificate."
+              ],
+              "application": [
+                "Printed application and three passport-size photographs.",
+                "Online application-payment evidence and any additional records requested in the selection notice."
+              ]
+            },
+            "deadlinesNote": "The current admission material does not establish a verified first-year teaching-start month for this exact route. Check the college’s next applicable admission and reporting notice."
+          },
+          "medium": "Tamil",
+          "mediumNote": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section.",
+          "instructionLanguages": [
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition component only; compulsory admission, special and university charges are additional. Confirm the applicable category quote before payment. The prospectus states that SC/ST students at PG level receive a tuition waiver; valid category verification and other charges still apply.",
+          "teachingPhases": [
+            {
+              "phase": "Programme teaching",
+              "language": "Tamil",
+              "details": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section."
+            }
+          ]
+        },
+        {
+          "slug": "m-a-economics-pachaiyappas-college-chennai",
+          "canonicalCourseSlug": "master-economics",
+          "officialTitle": "M.A. Economics — Aided (Shift I)",
+          "durationYears": 2,
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "2026–2027",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 500,
+            "verifiedAt": "2026-10-25",
+            "notes": "Tuition component only; compulsory admission, special and university charges are additional. Confirm the applicable category quote before payment. The prospectus states that SC/ST students at PG level receive a tuition waiver; valid category verification and other charges still apply."
+          },
+          "officialProgramUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants meeting the exact academic and selection requirements"
+            ],
+            "restrictions": [
+              "This entry verifies the domestic regular aided route; overseas or NRI admission conditions and fee categories are unverified."
+            ],
+            "notes": "Current state order grants co-educational status. PG is explicitly co-educational in the current prospectus. Qualification recognition and college verification remain necessary.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.A. Economics is a 2-year regular aided programme at Pachaiyappa’s College in Chennai, affiliated to the University of Madras. The college lists its academic entry requirements, online application and selection process.",
+            "eligibility": {
+              "intro": "Meet the exact qualifying examination or main-subject requirements and complete the college’s selection and original-document checks.",
+              "items": [
+                "Hold a three-year B.A., B.Sc. or B.Com. degree with Economics as the main subject, as required by the college’s subject-concerned condition."
+              ]
+            },
+            "applicationSteps": [
+              "Read the current prospectus and register through the college’s official online application portal.",
+              "Enter the academic and personal details, select the eligible programme and pay the notified application charge for that course.",
+              "Check the college rank list and the registered SMS or email for counselling, interview or provisional selection instructions.",
+              "Attend with the printed application and required academic records; complete eligibility verification and pay the notified charges if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying-degree marks statements and degree or provisional certificate.",
+                "Community Certificate where applicable; candidates with degrees from another university require the University of Madras provisional eligibility certificate."
+              ],
+              "application": [
+                "Printed application and three passport-size photographs.",
+                "Online application-payment evidence and any additional records requested in the selection notice."
+              ]
+            },
+            "deadlinesNote": "The current admission material does not establish a verified first-year teaching-start month for this exact route. Check the college’s next applicable admission and reporting notice."
+          },
+          "medium": "Tamil",
+          "mediumNote": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section.",
+          "instructionLanguages": [
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Tuition component only; compulsory admission, special and university charges are additional. Confirm the applicable category quote before payment. The prospectus states that SC/ST students at PG level receive a tuition waiver; valid category verification and other charges still apply.",
+          "teachingPhases": [
+            {
+              "phase": "Programme teaching",
+              "language": "Tamil",
+              "details": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "officialTitle",
+      "claimText": "B.A. Tamil — Aided (Shift I)",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass the Tamil Nadu Higher Secondary (+2) examination or an equivalent examination recognised by the University of Madras.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai",
+      "internalNotes": "Current own-domain 2026–27 prospectus, physical p 1. MA Tamizhiyal is listed as MA Tamil on current department and AISHE return; exact Tamil award continuation, not a new programme inference."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "admissions",
+      "claimText": "B.A. Tamil is a 3-year regular aided programme at Pachaiyappa’s College in Chennai, affiliated to the University of Madras. The college lists its academic entry requirements, online application and selection process. Official portal: online registration, academic details, programme choice, separate course application charge, interview SMS/email and printed documents.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachapplication.nlabstech.in/New-SignUp",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic academic route verified. Co-educational status granted by state GO 100 dated 15 June 2026; PG coeducation explicit in current prospectus. Overseas route unverified.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai",
+      "internalNotes": "Current government order supersedes older aided-UG men-only wording. Do not extend hostel male-only accommodation to course gender eligibility."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "medium",
+      "claimText": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/pdf/aishe/AISHE%202024-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai",
+      "internalNotes": "Own AISHE C-43916 survey 2024–25 generated 23 October 2025, programme table physicalp 3: row 1 MA Economics Tamil, row 5 MA Tamil Tamil, row 16 BA Tamil Tamil. Other rows only Indian-language No, not proof of English. Faulty CampusPro English blanket table rejected."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "duration",
+      "claimText": "3 years regular study, excluding backlog-extension allowance.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai",
+      "internalNotes": "Current prospectus physicalp 3 explicitly normalUG 3 years andPG 2 years; AISHE named rows confirm same."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-year academic commencement month unverified; both intake arrays intentionally omitted.",
+      "status": "omit",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai",
+      "internalNotes": "Checked current 2026–27 prospectus and homepage counselling notices. Counselling dates are not teaching-start dates; no orientation search required."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "fee",
+      "claimText": "0 INR isolated annual tuition component; other compulsory charges excluded.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "b-a-tamil-pachaiyappas-college-chennai",
+      "internalNotes": "Current 2026–27 own prospectus physicalp 2: FeeStructure PerYear, allBA tuition dash with explicit governmentwaiver forallUG; allMA tuition 500. PGSCSTtuitionwaiver conditional only; no wholeprogramme free claim. Domestic route only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.A. Tamizhiyal — Aided (Shift I)",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Hold a three-year B.A., B.Sc. or B.Com. degree with the subject concerned as the main, as required by the current college prospectus.; For this Tamil postgraduate award, verify that the qualifying main subject is accepted by the college and the University of Madras.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+      "internalNotes": "Current own-domain 2026–27 prospectus, physical p 1. MA Tamizhiyal is listed as MA Tamil on current department and AISHE return; exact Tamil award continuation, not a new programme inference."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "admissions",
+      "claimText": "M.A. Tamizhiyal is a 2-year regular aided programme at Pachaiyappa’s College in Chennai, affiliated to the University of Madras. The college lists its academic entry requirements, online application and selection process. Official portal: online registration, academic details, programme choice, separate course application charge, interview SMS/email and printed documents.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachapplication.nlabstech.in/New-SignUp",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic academic route verified. Co-educational status granted by state GO 100 dated 15 June 2026; PG coeducation explicit in current prospectus. Overseas route unverified.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+      "internalNotes": "Current government order supersedes older aided-UG men-only wording. Do not extend hostel male-only accommodation to course gender eligibility."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "medium",
+      "claimText": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/pdf/aishe/AISHE%202024-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+      "internalNotes": "Own AISHE C-43916 survey 2024–25 generated 23 October 2025, programme table physicalp 3: row 1 MA Economics Tamil, row 5 MA Tamil Tamil, row 16 BA Tamil Tamil. Other rows only Indian-language No, not proof of English. Faulty CampusPro English blanket table rejected."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "duration",
+      "claimText": "2 years regular study, excluding backlog-extension allowance.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+      "internalNotes": "Current prospectus physicalp 3 explicitly normalUG 3 years andPG 2 years; AISHE named rows confirm same."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-year academic commencement month unverified; both intake arrays intentionally omitted.",
+      "status": "omit",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+      "internalNotes": "Checked current 2026–27 prospectus and homepage counselling notices. Counselling dates are not teaching-start dates; no orientation search required."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "fee",
+      "claimText": "500 INR isolated annual tuition component; other compulsory charges excluded.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+      "internalNotes": "Current 2026–27 own prospectus physicalp 2: FeeStructure PerYear, allBA tuition dash with explicit governmentwaiver forallUG; allMA tuition 500. PGSCSTtuitionwaiver conditional only; no wholeprogramme free claim. Domestic route only."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "officialTitle",
+      "claimText": "M.A. Economics — Aided (Shift I)",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Hold a three-year B.A., B.Sc. or B.Com. degree with Economics as the main subject, as required by the college’s subject-concerned condition.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai",
+      "internalNotes": "Current own-domain 2026–27 prospectus, physical p 1. MA Tamizhiyal is listed as MA Tamil on current department and AISHE return; exact Tamil award continuation, not a new programme inference."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "admissions",
+      "claimText": "M.A. Economics is a 2-year regular aided programme at Pachaiyappa’s College in Chennai, affiliated to the University of Madras. The college lists its academic entry requirements, online application and selection process. Official portal: online registration, academic details, programme choice, separate course application charge, interview SMS/email and printed documents.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachapplication.nlabstech.in/New-SignUp",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "audienceEligibility",
+      "claimText": "Domestic academic route verified. Co-educational status granted by state GO 100 dated 15 June 2026; PG coeducation explicit in current prospectus. Overseas route unverified.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai",
+      "internalNotes": "Current government order supersedes older aided-UG men-only wording. Do not extend hostel male-only accommodation to course gender eligibility."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "medium",
+      "claimText": "The college’s 2024–25 AISHE programme return explicitly records Tamil for this named award. Current college programme and prospectus listings confirm continuation; this entry does not guarantee an English-only section.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/pdf/aishe/AISHE%202024-2025.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai",
+      "internalNotes": "Own AISHE C-43916 survey 2024–25 generated 23 October 2025, programme table physicalp 3: row 1 MA Economics Tamil, row 5 MA Tamil Tamil, row 16 BA Tamil Tamil. Other rows only Indian-language No, not proof of English. Faulty CampusPro English blanket table rejected."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "duration",
+      "claimText": "2 years regular study, excluding backlog-extension allowance.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai",
+      "internalNotes": "Current prospectus physicalp 3 explicitly normalUG 3 years andPG 2 years; AISHE named rows confirm same."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-year academic commencement month unverified; both intake arrays intentionally omitted.",
+      "status": "omit",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai",
+      "internalNotes": "Checked current 2026–27 prospectus and homepage counselling notices. Counselling dates are not teaching-start dates; no orientation search required."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "fee",
+      "claimText": "500 INR isolated annual tuition component; other compulsory charges excluded.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "m-a-economics-pachaiyappas-college-chennai",
+      "internalNotes": "Current 2026–27 own prospectus physicalp 2: FeeStructure PerYear, allBA tuition dash with explicit governmentwaiver forallUG; allMA tuition 500. PGSCSTtuitionwaiver conditional only; no wholeprogramme free claim. Domestic route only."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "summary",
+      "claimText": "Own current prospectus identifies institution established 1842, affiliatedMadras, government-aided arts/science portfolio.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/prospectus-2026-27/prospectus-2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC own college register row 9151 Pachiyappa’s College Chetput Madras 600030, affiliatedMadras,2(f)&12 B; separate from row 9149 Kanchipuram.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://www.ugc.gov.in/colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "recognitionBadges",
+      "claimText": "Madras own aided-affiliated list names Pachaiyappa’s College in Chennai.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://www.unom.ac.in/index.php?route=colleges%2Faided",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "campusLifestyle",
+      "claimText": "Official website and prospectus describe departments, laboratories, libraries and student activities; June 2026 GO grants coeducation.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/college-profile.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "practicalExposure",
+      "claimText": "Current department pages describe labs, library and academic events; no guaranteedoutcomes.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/college-profile.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "hostelOverview",
+      "claimText": "Own prospectus states attached men’s hostel, vacancy not a right; SFfeeinformation offers femalePGaccommodationguidance.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/fees-structure-self-financing.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "dietarySupport",
+      "claimText": "No specific menu/allergy/specialistdietary claim verified; directconfirmation only.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/fees-structure-self-financing.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "safetyOverview",
+      "claimText": "Own site links antiragging andInternalComplaintsCommittee.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/college-profile.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "pachaiyappas-college-chennai",
+      "publicField": "studentSupport",
+      "claimText": "Own site describes scholarship/library/NCC/NSS/YRC/placementtraining links.",
+      "status": "verified",
+      "sourceLabel": "Official Pachaiyappa’s College, Chennai or named academic authority",
+      "sourceUrl": "https://pachaiyappascollege.edu.in/college-profile.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

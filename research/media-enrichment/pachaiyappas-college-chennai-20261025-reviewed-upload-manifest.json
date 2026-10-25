@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "pachaiyappas-college-chennai",
+      "universityName": "Pachaiyappa's College, Chennai",
+      "sourceBatch": "codex-pachaiyappas-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/pachaiyappa/logo/favicon.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://pachaiyappascollege.edu.in/",
+          "rightsBasis": "Official institution-hosted institutional crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "Pachaiyappa’s College Chennai institutional crest",
+          "visualCheck": "Complete native64×65 crest: sun, portico, torch, lotus, green motto ribbon; same crest as official wordmark and entrance signage. Small native official image, no invented upscale.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP GET, native view_image inspection; no DB or provider action.",
+          "proposedPublicId": "studentstraffic/universities/pachaiyappas-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/pachaiyappas-college-chennai/crest.png",
+          "sha256": "d2edd3489cdd73dc8d142afe663777c6e62576e40e5e5363747abee6897c00b9",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/pachaiyappa/slider/SLIDER-03.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://pachaiyappascollege.edu.in/",
+          "rightsBasis": "Official institution-hosted institutional crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "Pachaiyappa’s College Chennai named entrance and statue",
+          "visualCheck": "Native1600×583 photograph of monumental turquoise/white entrance, statue, trees and clear Pachaiyappa’s College Chennai600030 signage; authentic named campus, not Kanchipuram.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP GET, native view_image inspection; no DB or provider action.",
+          "proposedPublicId": "studentstraffic/universities/pachaiyappas-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/pachaiyappas-college-chennai/cover.jpg",
+          "sha256": "96f3b0d0c4920fe7a35d3ec4c4e7501d707a9fa27bbf4543d82e71079c984d61",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0239-india-pachaiyappas-college-chennai"
+    }
+  ],
+  "migrationId": "0239-india-pachaiyappas-college-chennai"
+}

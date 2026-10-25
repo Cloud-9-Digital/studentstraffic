@@ -1,0 +1,131 @@
+{
+  "manifestId": "tn-grouped14-20261025",
+  "checkedAt": "2026-10-25",
+  "status": "root-visually-reviewed",
+  "entries": [
+    {
+      "universitySlug": "ramakrishna-mission-vivekananda-college-chennai",
+      "universityName": "Ramakrishna Mission Vivekananda College (Autonomous), Chennai",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://rkmvc.ac.in/wp-content/uploads/2025/01/logo-rkmvc.png",
+          "sourceType": "official",
+          "sourcePage": "https://rkmvc.ac.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Original ordinary HTTPS image retrieval returned200; complete original and SHA256 retained. No open-licence or enlargement claim. Crop retains complete crest with motto; excludes large wordmark so crest remains legible in catalogue tiles.",
+          "proposedPublicId": "studentstraffic/universities/ramakrishna-mission-vivekananda-college-chennai/logo",
+          "altText": "Ramakrishna Mission Vivekananda College complete crest and motto",
+          "localPath": "research/india-source-bundles/rkmvc-20261025/logo.png",
+          "sha256": "540660aff40137ba24edf8e8d9c2881f3f83996f9798dbfe6d704b8c52702782",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 45,
+              "y": 0,
+              "width": 180,
+              "height": 210
+            }
+          ],
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://rkmvc.ac.in/wp-content/uploads/2024/03/ENTRANCE.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://rkmvc.ac.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Original ordinary HTTPS image retrieval returned200; complete original and SHA256 retained. No open-licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/ramakrishna-mission-vivekananda-college-chennai/cover",
+          "altText": "Entrance facade of Ramakrishna Mission Vivekananda College in Mylapore, Chennai",
+          "localPath": "research/india-source-bundles/rkmvc-20261025/cover.jpg",
+          "sha256": "fe3211d7d1c004b59a7ba7b9bc97fee5365a71d898bfd845a15369c65fc2b52f",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0238-ramakrishna-mission-vivekananda-college-chennai"
+    },
+    {
+      "universitySlug": "pachaiyappas-college-chennai",
+      "universityName": "Pachaiyappa's College, Chennai",
+      "sourceBatch": "codex-pachaiyappas-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/pachaiyappa/logo/favicon.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://pachaiyappascollege.edu.in/",
+          "rightsBasis": "Official institution-hosted institutional crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "Pachaiyappa\u2019s College Chennai institutional crest",
+          "visualCheck": "Complete native64\u00d765 crest: sun, portico, torch, lotus, green motto ribbon; same crest as official wordmark and entrance signage. Small native official image, no invented upscale.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP GET, native view_image inspection; no DB or provider action.",
+          "proposedPublicId": "studentstraffic/universities/pachaiyappas-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/pachaiyappas-college-chennai/crest.png",
+          "sha256": "d2edd3489cdd73dc8d142afe663777c6e62576e40e5e5363747abee6897c00b9",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://pachaiyappascollege.edu.in/assets/images/pachaiyappa/slider/SLIDER-03.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://pachaiyappascollege.edu.in/",
+          "rightsBasis": "Official institution-hosted institutional crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "Pachaiyappa\u2019s College Chennai named entrance and statue",
+          "visualCheck": "Native1600\u00d7583 photograph of monumental turquoise/white entrance, statue, trees and clear Pachaiyappa\u2019s College Chennai600030 signage; authentic named campus, not Kanchipuram.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Public HTTP GET, native view_image inspection; no DB or provider action.",
+          "proposedPublicId": "studentstraffic/universities/pachaiyappas-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/pachaiyappas-college-chennai/cover.jpg",
+          "sha256": "96f3b0d0c4920fe7a35d3ec4c4e7501d707a9fa27bbf4543d82e71079c984d61",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0239-india-pachaiyappas-college-chennai"
+    },
+    {
+      "universitySlug": "gandhigram-rural-institute",
+      "universityName": "The Gandhigram Rural Institute",
+      "sourceBatch": "codex-gandhigram-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.ruraluniv.ac.in/includes/admissions/2026/pdf/Prospectus_202627.pdf",
+          "sourceType": "official-university",
+          "rightsBasis": "Genuine institutional seal embedded in the institution-published 2026\u201327 prospectus, retained without redesign. Original PDF and extracted native image retained for identification; no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/gandhigram-rural-institute/logo-20261025",
+          "altText": "The Gandhigram Rural Institute institutional seal",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/gandhigram-20261025/media-prospectus-image-002.png",
+          "sha256": "d648f6ea5d5f908ddc3cf28418ce20e1eb4b915dff48c1c2b8de67b845fd9c0b",
+          "width": 357,
+          "height": 331,
+          "visualReview": "Complete seal and legal-name border legible on white; no header accreditation text.",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Native 357x331 RGB image extracted from official prospectus page 1 using pdfimages-png; no resizing, recolouring or synthetic edits. Associated PDF soft mask retained separately; full rendered page visually checked.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gandhigram-20261025/prospectus2026.pdf",
+          "originalDocumentSha256": "71d1fb30fe61f548f1bd033803d2825e848360a7960b85abcbbc356889118ae4"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Tamil_department%2C_Gandhigram_Rural_University%2C_Dindigul.JPG",
+          "sourceType": "licensed-reusable",
+          "rightsBasis": "Photo by Surya Prakash S.A. (Commons: Surya Prakash.S.A.), 3 March 2014, CC BY-SA 3.0,https://creativecommons.org/licenses/by-sa/3.0/ . Original unchanged. Source and author: https://commons.wikimedia.org/wiki/File:Tamil_department,_Gandhigram_Rural_University,_Dindigul.JPG",
+          "proposedPublicId": "studentstraffic/universities/gandhigram-rural-institute/cover-20261025",
+          "altText": "Historical 2014 photograph of the Tamil department building at Gandhigram Rural Institute",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/gandhigram-20261025/media-cover.jpg",
+          "sha256": "eb16ca08be46a6856bf2fa047e10da1abac9105a7987f7d7b57534933cc3f90a",
+          "width": 4608,
+          "height": 3456,
+          "visualReview": "Authentic campus Tamil department building, undistorted original photograph. Clearly dated 2014, not a claim of present building condition.",
+          "licencePageUrl": "https://commons.wikimedia.org/wiki/File:Tamil_department,_Gandhigram_Rural_University,_Dindigul.JPG",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

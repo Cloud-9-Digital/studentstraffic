@@ -315,3 +315,6 @@ Nutrition or Food Science and from a general Agricultural Engineering master's.
 Keep each institution's exact qualifying engineering/science degree list and
 entrance conditions; the family does not imply that every science graduate is
 eligible for an engineering master's.
+
+
+`bachelor-vocational-studies` covers Bachelor of Vocation (B.Voc.) awards. These combine occupation-specific practical training, applied study and workplace skills. The offering retains its exact sector and programme duration. This vocational bachelor family does not turn a B.Voc. in food processing, renewable energy or design into a science or engineering degree.
