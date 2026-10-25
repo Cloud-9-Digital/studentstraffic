@@ -427,3 +427,12 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 `md-geriatrics`, `md-laboratory-medicine` and `md-radiation-oncology` represent distinct medical residency disciplines with recognised medical-degree entry. Geriatrics focuses on older adults; laboratory medicine integrates diagnostic laboratory practice; radiation oncology concerns therapeutic cancer treatment. Radiation oncology is distinct from diagnostic radiology and must not map to `md-radiodiagnosis`. Preserve exact medical registration, examination and internship requirements on each offering.
 
 `bsc-bioinformatics` represents a standalone science bachelor's award studying biological data, computing and quantitative analysis. It is distinct from the existing graduate-entry `msc-bioinformatics`, school-entry integrated MSc, and BTech/MTech engineering families. Honours duration and any explicit exit conditions remain programme-specific; no clinical-practice qualification is implied.
+
+### Academic sport/exercise science and clinical research —25October2026
+
+`bachelor-sport-exercise-science` covers science degrees in exercise physiology, biomechanics, performance and physical activity; it is distinct from coaching and physical-education teacher qualifications. `master-clinical-research` covers academic research design, trials, ethics, evidence and experimental medicine; it does not confer medical registration or independent clinical-practice permission. Keep each exact award, duration, qualifying discipline and professional limits at offering level.
+
+
+### Engineering master's in information technology —25October2026
+
+`me-mtech-information-technology` represents graduate-entry engineering study of computing systems, software, networks, data and information technology. It is distinct from the science award `msc-information-technology` and the undergraduate BTechIT family. Preserve exact qualifying disciplines, any required formal programming study, delivery phases and university award title on each offering; do not substitute MScIT solely because the subject name matches.

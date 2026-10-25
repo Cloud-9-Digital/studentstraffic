@@ -35,3 +35,10 @@ BA LL.B: fiveyear duration, fees and August2026 intake verified; English-medium 
 ## Media
 
 Mandatory manifest `research/media-enrichment/india-tn-universities-shiv-nadar-university-chennai.json`: official blue logo inspected on white; official SNU Chennai campus photograph https://www.snuchennai.edu.in/wp-content/uploads/2024/02/About-1.webp linked from https://www.snuchennai.edu.in/campus-life/ . Cover is720x481, direct200image/webp verified25October2026 and visually inspected: academic building with Shiv Nadar signage, flag, trees and students. This replaces the historical2012 Wikimedia CC BY-SA cover. No open licence claimed for the official university image. Same proposed cover public ID retained; parent performs controlled replacement upload.
+
+
+## Optional-medium/intake forward —25October2026
+
+0308 fullforward supports26routes, preserving original5deep-equal plus10BTech+10MTech+MBA. Unknownnewengineeringmediumomitted; MBAEnglishR2026retained. ActualBA LLBBCIapprovalhold remains. Current2026qualification/fee/identity sources re-read: ordinarydirectHTMLfetch403 butprimarywebtoolrender accessible in full; accesslimits recorded innewsourceaudit. No falsefullHTMLdownloadclaim. MBAcurrent2027–29academicruleMORETHAN60%, acceptednational/statetests;2026–27domesticannualtuition300000indicativereference only, currenttariff/intakeunconfirmed.10MTechs retainfirst2semcampus/approvedsecondyearindustry+MOOCmode andexactbranchnarrowroute/60%X/XII/UG,nocurrentbacklogs.
+
+Newneutralme-mtech-information-technology resolvesoldinventedunregisteredmatch; EnergySystems maps existing me-mtech-energy-engineering. Source/audit/builder:research/india-source-bundles/snu-forward-20261025/. Existingacceptedofficiallogo/coverprovenancereconstructed, noimageURLreplacementornewupload. CitynormalisedtoKalavakkam,addressdistrictretainedinnarrative.

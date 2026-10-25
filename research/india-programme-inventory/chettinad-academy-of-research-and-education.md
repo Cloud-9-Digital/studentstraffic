@@ -1,11 +1,7 @@
-# Chettinad Academy of Research and Education
+# Chettinad Academy inventory —25October2026 forward
 
-23 current CHRI Kelambakkam medical degrees: MBBS plus22MD/MS specialties. NMC regulator-owned current2026–27 matrices verify every exact degree independently of university marketing.22isolated annual native INRtuition records,eightadditionalNRI-onlyUSDannualrates,oneconfirmedMBBSfull-coursequote.
+71 retained discovery rows. Forward supports34 coherent Kelambakkam degrees: all23 applied0283 medical programme objects unchanged plus11 academic science/psychology/nutrition/research awards. Five four-year Honours degrees have exact named eight-semester curricula; older three-year ordinary-BSc prose is retained internally as distinct legacy wording. Six MSc academic awards have current named two-year entry/curriculum evidence. No professional-practice registration promised.
 
-MBBS explicit tuition total INR13500000; alternative30lakh×4+15lakh OR27lakh×5paymentplans are not a universal flatannual rate. One-yearCRMIhasno tuition. Primary annual fee lefton_request; complete programmequote supplies nativeprice without annualbudget/Offer inference.
+Five confirmed native120000 quotes use the current official five-degree BSc Innovative group crosswalk and the exact2026–27 marks70–75%/Nil scholarship fee row. Period remains unknown, no annual/full-course total inferred. PGInnovative/AHS fee categories remain ambiguous and unassigned. All original23 fees/media remain unchanged; original MBBS full-course quote preserved.
 
-Both bulletins govern2026–27 qualifications and MCCselection. PGcutoff requires one-year internship by30September2026. Percentiles retained; PGtable incorrectly labelsmax720,so fixedscore bands/maximum omitted rather than repeated. EightNRIrates onlywhereexactseatpricepublished andMCCcategoryverificationrequired; no blanketforeignpermission.
-
-Unknown medium/intake omitted. Other schools,super-specialties,campuses,andapplicable professional/campus/qualification gaps remain in inventory,not labelled unapproved. No care.ac.in Tiruchirappalli content reused.
-
-Two neutral medical residency families added: MD SportsMedicine and MD ForensicMedicine/Toxicology,distinctfrom sports/forensicsciencemasters.
+Unknown teaching languages/intakes are omitted. Operational clinical, imaging, embryology/medicalphysics, pharmacy/nursing/law/architecture and separate-campus scopes remain bounded verification holds, not unapproved findings. See source bundle programme-facts-reviewed.json and preservation assertions.
