@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/b-com-general-dr-mgr",
+    "kind": "programme",
+    "slug": "b-com-general-dr-mgr",
+    "status": 200,
+    "h1": "B.Com at Dr. M.G.R. Educational and Research Institute",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/periyar-msc-computer-science",
+    "kind": "programme",
+    "slug": "periyar-msc-computer-science",
+    "status": 200,
+    "h1": "M.Sc. Computer Science at Periyar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/periyar-university",
+    "kind": "university",
+    "slug": "periyar-university",
+    "status": 200,
+    "h1": "Periyar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tnjjmfau-ma-music-vocal",
+    "kind": "programme",
+    "slug": "tnjjmfau-ma-music-vocal",
+    "status": 200,
+    "h1": "Master&#x27;s Music at Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/dr-mgr-educational-and-research-institute",
+    "kind": "university",
+    "slug": "dr-mgr-educational-and-research-institute",
+    "status": 200,
+    "h1": "Dr. M.G.R. Educational and Research Institute",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+    "kind": "university",
+    "slug": "tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+    "status": 200,
+    "h1": "Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tnjjmfau-master-theatre-arts",
+    "kind": "programme",
+    "slug": "tnjjmfau-master-theatre-arts",
+    "status": 200,
+    "h1": "Master&#x27;s Performing Arts at Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University",
+    "pass": true
+  }
+]

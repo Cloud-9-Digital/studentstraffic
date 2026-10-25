@@ -1,0 +1,27 @@
+{
+  "appliedAt": "2026-10-25T07:57:52.922Z",
+  "uploads": {
+    "attempted": 4,
+    "succeeded": 4,
+    "failed": 0
+  },
+  "database": {
+    "updated": 2,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "dr-mgr-educational-and-research-institute",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

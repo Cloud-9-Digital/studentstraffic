@@ -39,6 +39,26 @@ test("changed original fails its reviewed checksum", () => {
   });
 });
 
+test("AVIF originals pass while ordinary MP4 and malformed brand boxes fail", () => {
+  withOriginal((root, localPath) => {
+    const make = (brand: string, size = 24) => {
+      const bytes = Buffer.alloc(620);
+      bytes.writeUInt32BE(size, 0);
+      bytes.write("ftyp", 4);
+      bytes.write("mif1", 8);
+      bytes.write(brand, 16);
+      return bytes;
+    };
+    for (const [bytes, accepted] of [[make("avif"), true], [make("avis"), true], [make("mp42"), false], [make("avif", 9999), false]] as const) {
+      writeFileSync(localPath, bytes);
+      const sha256 = createHash("sha256").update(bytes).digest("hex");
+      const read = () => readReviewedMediaOriginal(root, { localPath, sha256, sourceUrl });
+      if (accepted) assert.deepEqual(read(), bytes);
+      else assert.throws(read, /not a supported/);
+    }
+  });
+});
+
 test("a saved challenge page is rejected even with a matching checksum", () => {
   withOriginal((root, localPath) => {
     const html = Buffer.from("<html>Challenge page</html>".repeat(40));

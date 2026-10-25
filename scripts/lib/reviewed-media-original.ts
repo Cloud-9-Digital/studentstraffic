@@ -2,6 +2,15 @@ import { createHash } from "node:crypto";
 import { readFileSync, realpathSync, statSync } from "node:fs";
 import { isAbsolute, relative, resolve } from "node:path";
 
+function hasAvifBrand(bytes: Buffer) {
+  if (bytes.length < 16 || bytes.toString("ascii", 4, 8) !== "ftyp") return false;
+  const size = bytes.readUInt32BE(0);
+  if (size < 16 || size > bytes.length || size % 4 !== 0) return false;
+  const brands = [bytes.toString("ascii", 8, 12)];
+  for (let offset = 16; offset < size; offset += 4) brands.push(bytes.toString("ascii", offset, offset + 4));
+  return brands.some((brand) => brand === "avif" || brand === "avis");
+}
+
 export function readReviewedMediaOriginal(
   root: string,
   asset: { localPath?: string; sha256?: string; sourceUrl: string },
@@ -26,8 +35,9 @@ export function readReviewedMediaOriginal(
   const isImage = bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
     || bytes.subarray(0, 3).equals(Buffer.from([255, 216, 255]))
     || ["GIF87a", "GIF89a"].includes(bytes.toString("ascii", 0, 6))
-    || (bytes.toString("ascii", 0, 4) === "RIFF" && bytes.toString("ascii", 8, 12) === "WEBP");
-  if (!isImage) throw new Error("Reviewed local media is not a supported PNG, JPEG, GIF or WebP image.");
+    || (bytes.toString("ascii", 0, 4) === "RIFF" && bytes.toString("ascii", 8, 12) === "WEBP")
+    || hasAvifBrand(bytes);
+  if (!isImage) throw new Error("Reviewed local media is not a supported PNG, JPEG, GIF, WebP or AVIF image.");
   if (createHash("sha256").update(bytes).digest("hex") !== asset.sha256!.toLowerCase()) {
     throw new Error("Reviewed local media checksum does not match the reviewed original.");
   }
