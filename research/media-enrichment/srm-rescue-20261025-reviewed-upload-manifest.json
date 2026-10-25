@@ -1,0 +1,30 @@
+{
+  "manifestId": "srm-rescue-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Preserve validofficiallogo; replace inheritedCommonscover with root-reviewed genuine officialcampuswalkway original.",
+  "entries": [
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "universityName": "SRM Institute of Science and Technology",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.srmist.edu.in/wp-content/uploads/2022/05/green-campus-2.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.srmist.edu.in/admissions/",
+          "rightsBasis": "Official institution-owned SRMIST admissions campus-life photograph; no open licence claimed.",
+          "verificationMethod": "Full688x467nativeoriginal verifiedordinaryHTTPS200231808bytes and visuallyreviewedbyworker+root. Genuine tree-linedwalkway with incidentalcampusvisitors, nooverlay/collage/rendering/captureyearclaim; exactcurrentgallerylazyimgdata-src retained. No crop/upscale. Replaces inherited attribution-requiring Commons cover; valid official logo unchanged.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/srm-rescue-20261025/cover-green2.png",
+          "sha256": "0cf2fbfe18fd938cef83a7a9f03d211d61f6663ebbf9bc537164332f2fe71406",
+          "width": 688,
+          "height": 467,
+          "altText": "Tree-lined walkway pictured in SRMIST’s official admissions campus-life gallery",
+          "proposedPublicId": "studentstraffic/universities/srm-institute-of-science-and-technology/cover"
+        }
+      ],
+      "migrationId": "0304-india-srm-institute-of-science-and-technology-academic-expansion"
+    }
+  ]
+}

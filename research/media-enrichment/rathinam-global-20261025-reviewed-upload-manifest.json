@@ -1,0 +1,44 @@
+{
+  "manifestId": "rathinam-global-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Three exact current Eachanari awards; authentic complete native logo and aerial campus photo.",
+  "entries": [
+    {
+      "universitySlug": "rathinam-global",
+      "universityName": "Rathinam Global",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://rathinamglobal.edu.in/assets/images/favicon.png",
+          "sourceType": "official",
+          "sourcePage": "https://rathinamglobal.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Complete1024px native official favicon visually inspected. Orange blue green circles and Rathinam wordmark; no appended NAAC or first-in-state claims.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/rathinam-global-20261025/favicon.png",
+          "sha256": "165102233e860a8610b4523f26dd06f4202e7a39d4827232415578deae59af3f",
+          "width": 1024,
+          "height": 988,
+          "altText": "Rathinam identifying emblem and wordmark",
+          "proposedPublicId": "studentstraffic/universities/rathinam-global/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://rathinamglobal.edu.in/assets/images/life/01.webp",
+          "sourceType": "official",
+          "sourcePage": "https://rathinamglobal.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Genuine full official current-homepage campus photograph visually inspected; sports field, academic buildings, road frontage and surrounding neighbourhood visible.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/rathinam-global-20261025/campus-aerial.webp",
+          "sha256": "10124159feb6d7463db8b1d4c6691ce7519c5ff696d2a8f5d408f682ea8a20a8",
+          "width": 800,
+          "height": 655,
+          "altText": "Rathinam Techzone campus at Eachanari, Coimbatore",
+          "proposedPublicId": "studentstraffic/universities/rathinam-global/cover"
+        }
+      ],
+      "migrationId": "0289-india-rathinam-global"
+    }
+  ]
+}

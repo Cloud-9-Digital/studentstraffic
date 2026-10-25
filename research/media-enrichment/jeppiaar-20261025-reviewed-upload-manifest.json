@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "jeppiaar-university",
+      "universityName": "Jeppiaar University",
+      "sourceBatch": "codex-tn-jeppiaar-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jeppiaaruniversity.ac.in/wp-content/uploads/2026/02/whatsapp_image_2026_05_18_at_4_52_58_pm_1.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or student-life photography used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/jeppiaar-university/logo-20261025",
+          "altText": "Jeppiaar University complete official emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/jeppiaar-20261025/logo-candidate.webp",
+          "sha256": "ce0a5640db0c01113d00533f8b3ca442ce651696917c07339d219edb0ca0613d",
+          "notes": "DirectordinaryHTTP200,imageoriginalembedded in currentown-university coursepage,fullvisuallychecked. Nocrop/upscale/generation or accreditationoverlay; event/classroom cover notdescribedasbuildingexterior."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://jeppiaaruniversity.ac.in/wp-content/uploads/2026/06/rectangle_40069.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or student-life photography used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/jeppiaar-university/cover-20261025",
+          "altText": "Students attending an academic session shown on Jeppiaar University’s official course pages",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/jeppiaar-20261025/course-image.webp",
+          "sha256": "0e8dc84fcfee83f1a7754b8dba6fd2a27c92710741fae39bbf36f0f29af06da4",
+          "notes": "DirectordinaryHTTP200,imageoriginalembedded in currentown-university coursepage,fullvisuallychecked. Nocrop/upscale/generation or accreditationoverlay; event/classroom cover notdescribedasbuildingexterior."
+        }
+      ],
+      "migrationId": "0275-india-jeppiaar-university"
+    }
+  ]
+}

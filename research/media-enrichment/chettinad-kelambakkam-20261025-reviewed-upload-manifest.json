@@ -1,0 +1,44 @@
+{
+  "manifestId": "chettinad-kelambakkam-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Authentic official university wordmark and CHRIKelambakkam campus original; no worker upload.",
+  "entries": [
+    {
+      "universitySlug": "chettinad-academy-of-research-and-education",
+      "universityName": "Chettinad Academy of Research and Education",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://care.edu.in/wp-content/uploads/2019/07/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://care.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Complete native blueCsymbol and university wordmark,visuallyinspected.Noaccreditationbadges appended,no editing or enlargement.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/chettinad-academy-20261025/logo.png",
+          "sha256": "2b6dbda442fff70a529d7219ab6112e0c9eb19c1c73a62e27155b1d5b34440ea",
+          "width": 172,
+          "height": 73,
+          "altText": "Chettinad Academy of Research and Education wordmark",
+          "proposedPublicId": "studentstraffic/universities/chettinad-academy-of-research-and-education/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://care.edu.in/wp-content/uploads/2020/07/building-about-care.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://care.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Genuine official current-homepage campus photograph: named administration block,Chettinadwordmark,blueglassfacade,courtyard and landscaping.Native original visually inspected,no render/stock/composite substituted.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/chettinad-academy-20261025/campus.jpg",
+          "sha256": "98942a3f21d27033abfdaff16688b3112e7ab2ed61f7634ed6ddb52d876733d8",
+          "width": 507,
+          "height": 253,
+          "altText": "Chettinad Academy administration building at Kelambakkam",
+          "proposedPublicId": "studentstraffic/universities/chettinad-academy-of-research-and-education/cover"
+        }
+      ],
+      "migrationId": "0283-india-chettinad-academy-of-research-and-education"
+    }
+  ]
+}

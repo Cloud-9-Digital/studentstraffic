@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sri-krishna-arts-and-science-college-coimbatore",
+      "universityName": "Sri Krishna Arts and Science College, Coimbatore",
+      "sourceBatch": "codex-skasc-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://skasc.ac.in/wp-content/uploads/2024/10/Prospect-Brochure.pdf",
+          "sourceType": "official-university",
+          "rightsBasis": "University-published institutional brand or campus photograph for factual institutional identification; exact original retained, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/sri-krishna-arts-and-science-college-coimbatore/logo-20261025",
+          "altText": "Sri Krishna Arts and Science College complete institutional seal on its original blue background",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/skasc-20261025/media-logo-seal.png",
+          "sha256": "2b04055db91159bcad7bdef6883d12b4219f432b27738f64679c77488b1501f3",
+          "width": 804,
+          "height": 807,
+          "visualReview": "Complete seal, legal name and motto retained, original blue background legible on white tile; accreditation copy excluded.",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Official single-page vector prospectus rendered600dpi,4961x7016; crop(138,91,942,898) retains complete white seal and original blue background, no recolouring or redesign.",
+          "originalDocumentLocalPath": "research/india-source-bundles/skasc-20261025/brochure2024.pdf",
+          "originalDocumentSha256": "f0a9b83591e2f58bb37246294bd6462cd004164159da76f659ac96851e22cab3"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://skasc.ac.in/wp-content/uploads/2024/10/skcas-inter-building-image-1.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "University-published institutional brand or campus photograph for factual institutional identification; exact original retained, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/sri-krishna-arts-and-science-college-coimbatore/cover-20261025",
+          "altText": "Sri Krishna Arts and Science College library block and campus buildings in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/skasc-20261025/media-cover-building.jpg",
+          "sha256": "8f3f37b16a6474db152b06646a143f91dcf828b416216bbce207e276d5c16816",
+          "width": 1440,
+          "height": 420,
+          "visualReview": "Authentic library block photograph, college name visible, no synthetic overlay or group-brand confusion."
+        }
+      ]
+    }
+  ]
+}

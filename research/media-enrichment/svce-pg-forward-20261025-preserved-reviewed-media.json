@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-25",
+  "sourceManifest": "research/media-enrichment/svce-20261025-reviewed-upload-manifest.json",
+  "purpose": "Restore source attribution and preserve accepted hosted media by omitted update keys; no new upload.",
+  "entries": [
+    {
+      "universitySlug": "sri-venkateswara-college-of-engineering",
+      "assets": []
+    }
+  ],
+  "hostedImageColumns": "Not read; logoUrl/coverImageUrl absent in applied baseline and draft; update leaves stored columns unchanged."
+}

@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-university",
+      "universityName": "Dhanalakshmi Srinivasan University",
+      "sourceBatch": "codex-tn-dsu-samayapuram-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.dsuniversity.ac.in/images/DSU_Logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or campus photography used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-university/logo-20261025",
+          "altText": "Dhanalakshmi Srinivasan University complete official emblem",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dsu-samayapuram-20261025/logo.png",
+          "sha256": "4b816b3f033093e041d85e3cfdaba2725bbcea67137f9810a0fd388a094ca776",
+          "notes": "Ordinary verified HTTPS200 image, full original visually inspected. No crop, generation or enlargement claim. Official current home asset; institution identity matches Samayapuram university."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.dsuniversity.ac.in/img/bt-slider/campus1.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or campus photography used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-university/cover-20261025",
+          "altText": "Dhanalakshmi Srinivasan University campus building and landscaped grounds at Samayapuram",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dsu-samayapuram-20261025/cover-campus1.jpg",
+          "sha256": "0128754be842085d2b90bbaa255ec15502e595e360291822ea73842471d06404",
+          "notes": "Ordinary verified HTTPS200 image, full original visually inspected. No crop, generation or enlargement claim. Official current home asset; institution identity matches Samayapuram university."
+        }
+      ],
+      "migrationId": "0279-india-dhanalakshmi-srinivasan-university"
+    }
+  ]
+}

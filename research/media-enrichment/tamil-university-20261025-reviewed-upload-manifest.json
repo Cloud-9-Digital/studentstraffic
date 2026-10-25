@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-university",
+      "universityName": "Tamil University",
+      "sourceBatch": "codex-tamil-university-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tamiluniversity.ac.in/english/wp-content/themes/tamil_university/images/logo-new.png",
+          "sourceType": "official",
+          "rightsBasis": "Official institution-owned crest and authentic campus photograph displayed on the university website; originals retained with source and checksum. Identification/context use only, no open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-university/logo-20261025",
+          "altText": "Tamil University complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-university-20261025/media-logo-crest.png",
+          "sha256": "a65615863f5b2172d06759a7837a2b4416a6cb318abcd2d94f6862d5c97c7da8",
+          "width": 123,
+          "height": 100,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Lossless left crest crop x0,y0,width123,height100 from official logo-full.png; blank wordmark area excluded, emblem intact, no upscaling/recolouring.",
+          "visualReview": "Visually inspected actual local file; complete emblem/authentic official campus photograph.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-university-20261025/logo-full.png",
+          "originalDocumentSha256": "ff6ac61c63ca222210e304e7862bedbce654eb747f57992640f304ef6d44749a"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tamiluniversity.ac.in/english/wp-content/themes/tamil_university/img/banner-2.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official institution-owned crest and authentic campus photograph displayed on the university website; originals retained with source and checksum. Identification/context use only, no open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-university/cover-20261025",
+          "altText": "Aerial view of a Tamil University campus academic building and surrounding trees",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tamil-university-20261025/banner-2.jpg",
+          "sha256": "7be3a84a56c18b3bf66ba040599e26f8b4e132d8fe6d0263f0fcfdae24de77ba",
+          "width": 1360,
+          "height": 485,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete official homepage banner photograph; date and exact building function unconfirmed, no whole-campus/current-year inference.",
+          "visualReview": "Visually inspected actual local file; complete emblem/authentic official campus photograph."
+        }
+      ],
+      "migrationId": "0258-india-tamil-university"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "universityName": "Tamil Nadu Dr. Ambedkar Law University",
+      "sourceBatch": "codex-tn-tndalu-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tndalu.ac.in/frontend/images/headerlogo.png",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-ambedkar-law-university/logo-20261025",
+          "altText": "Tamil Nadu Dr. Ambedkar Law University official complete header identity",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand or university event photography used to identify and illustrate the institution in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tndalu-20261025/logo.original.png",
+          "sha256": "93b1d580348936c602ef9de94a296b582213ca63d780a4d12fe957afdea22f70",
+          "notes": "Original embedded in official current homepage; ordinarily retrievedHTTP200 and visually inspected. Full asset, no crop or generated content. Event cover caption identifies the ceremony; no claim of campus exterior. Full official header identity includes native institution text and portrait, as preferred by root."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tndalu.ac.in/storage/cms/69a43b49ad7f0.jpeg",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-ambedkar-law-university/cover-20261025",
+          "altText": "Tamil Nadu Dr. Ambedkar Law University fifteenth convocation ceremony on its official homepage",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand or university event photography used to identify and illustrate the institution in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tndalu-20261025/69a43b49ad7f0.jpeg",
+          "sha256": "778d78fb1e1dab9c64e5694ce18b8800a5efab30d941694ed7770e873fca7aa0",
+          "notes": "Original embedded in official current homepage; ordinarily retrievedHTTP200 and visually inspected. Full asset, no crop or generated content. Event cover caption identifies the ceremony; no claim of campus exterior. Full official header identity includes native institution text and portrait, as preferred by root."
+        }
+      ],
+      "migrationId": "0269-india-tamil-nadu-dr-ambedkar-law-university"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "central-university-of-tamil-nadu",
+      "universityName": "Central University of Tamil Nadu",
+      "sourceBatch": "codex-root-cutn-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://cutn.ac.in/wp-content/uploads/2023/09/live-new-logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official university website image used for institutional identification and authentic campus context; original retained with checksum. No open licence or transfer of ownership claimed.",
+          "proposedPublicId": "studentstraffic/universities/central-university-of-tamil-nadu/logo-20261025",
+          "altText": "Central University of Tamil Nadu complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cutn-20261025/media-logo-crest.png",
+          "sha256": "9f6b1d497873ea2c8fb9ef642af19e87747a33ccfc1a1a5edf4bd012b8d49b2c",
+          "width": 123,
+          "height": 165,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Lossless crop x0 y0 width123 height165 from the full official logo-current.png; no recolouring, resizing or synthetic content.",
+          "visualReview": "Complete crest / authentic library photograph reviewed locally on25October2026.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cutn-20261025/logo-current.png",
+          "originalDocumentSha256": "35bbd57a1215e705322fff171fa18633bee59117ecc80a613c1c58bde0f27b8d"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cutn.ac.in/wp-content/uploads/2023/08/Library_img_2.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official university website image used for institutional identification and authentic campus context; original retained with checksum. No open licence or transfer of ownership claimed.",
+          "proposedPublicId": "studentstraffic/universities/central-university-of-tamil-nadu/cover-20261025",
+          "altText": "Students reading and studying in the Central University of Tamil Nadu library",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cutn-20261025/library2.jpg",
+          "sha256": "5ab8fdc18c05ff60795f6985541ab8df0b10c81eae6f9517d24184a77b231b3f",
+          "width": 600,
+          "height": 400,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original official library photograph; no edits or current-year implication.",
+          "visualReview": "Complete crest / authentic library photograph reviewed locally on25October2026."
+        }
+      ],
+      "migrationId": "0250-india-central-university-of-tamil-nadu"
+    }
+  ]
+}

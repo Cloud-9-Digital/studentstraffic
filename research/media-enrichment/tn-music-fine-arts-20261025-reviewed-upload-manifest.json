@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+      "universityName": "Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University",
+      "sourceBatch": "codex-tn-music-fine-arts-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnjjmfau.in/images/logo.gif",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Official university website asset used for institutional identification and educational context. No open licence or ownership transfer claimed; original retained.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university/logo-20261025",
+          "altText": "Complete university crest with the motto Practice Makes Perfect",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tn-music-fine-arts-20261025/logo.gif",
+          "sha256": "fd1459442117250c8044313912b781e1ca8794151bef124430f82236ecbb75b7",
+          "width": 1183,
+          "height": 1375,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete official original; no crop, synthetic generation or upscale.",
+          "visualReview": "Local image visually reviewed; complete crest including motto / genuine music performance photograph. No assertion of current cohort or pictured student identity."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnjjmfau.in/images/slider/BABU9886.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Official university website asset used for institutional identification and educational context. No open licence or ownership transfer claimed; original retained.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university/cover-20261025",
+          "altText": "Music performance shown on the university website, with singers and mridangam accompaniment",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tn-music-fine-arts-20261025/BABU9886.jpg",
+          "sha256": "9d535e070514ba2eb0246fc0750c141710115855d3f5ce1d36b52908d8eeb033",
+          "width": 5760,
+          "height": 3840,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete official original; no crop, synthetic generation or upscale.",
+          "visualReview": "Local image visually reviewed; complete crest including motto / genuine music performance photograph. No assertion of current cohort or pictured student identity."
+        }
+      ],
+      "migrationId": "0268-india-tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university"
+    }
+  ]
+}

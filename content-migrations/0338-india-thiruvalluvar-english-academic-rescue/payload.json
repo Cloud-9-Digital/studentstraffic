@@ -1,0 +1,3088 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A B.Sc. in Computer Science is a science-faculty bachelor's degree in the theory and practice of computing. The curriculum covers programming, data structures and algorithms, discrete mathematics, computer architecture, operating systems, databases, networks and software engineering, with electives in artificial intelligence, data science, cyber security or graphics. It differs from a B.E./B.Tech by placing more weight on mathematics and computing theory and less on engineering design. Programmes last three or four years and lead to software, data and IT roles or to master's study.",
+      "metaTitle": "B.Sc. Computer Science Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Computer Science degrees open to international students: curriculum, electives, entry subjects, duration, tuition and intakes."
+    },
+    {
+      "slug": "bsc-data-science",
+      "name": "B.Sc. in Data Science",
+      "shortName": "B.Sc. Data Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "data-science",
+      "aliases": [
+        "Bachelor of Science in Data Science",
+        "BSc Data Science",
+        "BSc (Hons) Data Science"
+      ],
+      "displayOrder": 31,
+      "durationYears": 3,
+      "summary": "Bachelor of Science programmes in Data Science combine computing, mathematics, statistics and the analysis of data. Study commonly includes programming, databases, probability, statistical modelling and machine learning, with practical projects. Award structure, duration and admission subjects vary by university.",
+      "metaTitle": "B.Sc. Data Science Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Data Science degrees by duration, mathematics prerequisites, teaching language, tuition status, practical study and international entry."
+    },
+    {
+      "slug": "ma-languages-linguistics",
+      "name": "M.A. in Languages and Linguistics",
+      "shortName": "M.A. Linguistics",
+      "stream": "arts-humanities",
+      "level": "masters",
+      "discipline": "languages-linguistics",
+      "aliases": [
+        "MA Linguistics",
+        "Master of Arts in Modern Languages"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare M.A. Languages and Linguistics programmes abroad by language structure, multilingualism, research, tuition, language of instruction and admissions. Exact university titles and scope are retained.",
+      "metaTitle": "M.A. Linguistics Programmes and Admissions",
+      "metaDescription": "Compare M.A. Linguistics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "master-economics",
+      "name": "Master's in Economics",
+      "shortName": "Master's Economics",
+      "stream": "economics-commerce",
+      "level": "masters",
+      "discipline": "economics",
+      "aliases": [
+        "MA Economics",
+        "MSc Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "A master's economics category covering economic theory, quantitative methods, policy analysis and research. University pages preserve the exact award title, credit structure, prerequisite expectations, thesis options and admissions route.",
+      "metaTitle": "Master's Economics Programmes and Admissions",
+      "metaDescription": "Compare Master's Economics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "mcom",
+      "name": "Master of Commerce",
+      "shortName": "M.Com",
+      "stream": "economics-commerce",
+      "level": "masters",
+      "discipline": "commerce",
+      "aliases": [
+        "MCom",
+        "Master in Commerce"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The Master of Commerce is a two-year postgraduate degree in commerce, usually open to graduates who hold a B.Com., BBA or a related business degree. Study builds on undergraduate accounting and finance with advanced financial and management accounting, corporate finance, financial markets and investment analysis, taxation, business research methods and economics, and many programmes offer a specialisation such as finance, accounting or banking. Assessment typically includes a research project or dissertation. Graduates often work in accounting, finance and banking roles, prepare for professional accountancy examinations, or continue to doctoral study and teaching.",
+      "metaTitle": "M.Com Programmes and Admissions",
+      "metaDescription": "Compare M.Com programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-biological-sciences",
+      "name": "M.Sc. in Biological Sciences",
+      "shortName": "M.Sc. Biological Sciences",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "biological-sciences",
+      "aliases": [
+        "Master of Science in Biology",
+        "MSc Biological Sciences"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Biological sciences master’s programmes provide advanced academic study of living systems and specialist fields within biology. Curricula may combine coursework, laboratory learning, research methods, practical exposure and a project or dissertation. Compare qualifying bachelor’s subjects, marks, teaching language, specialisation, study location, assessment and complete costs.",
+      "metaTitle": "M.Sc. Biological Sciences: Entry and Fees",
+      "metaDescription": "Compare M.Sc. Biological Sciences programmes by qualifying degrees, teaching language, specialisation, duration, practical study and complete costs."
+    },
+    {
+      "slug": "msc-biotechnology",
+      "name": "M.Sc. in Biotechnology",
+      "shortName": "M.Sc. Biotechnology",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "biotechnology",
+      "aliases": [
+        "Master of Science in Biotechnology",
+        "MSc Biotechnology"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "The Students Traffic catalogue category for postgraduate science-track biotechnology degrees. Programmes deepen molecular biology, genetic engineering, immunology, bioprocess technology and bioinformatics, usually with a research dissertation. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "M.Sc. Biotechnology: Study and Admissions",
+      "metaDescription": "Compare M.Sc. Biotechnology programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "msc-chemistry",
+      "name": "M.Sc. in Chemistry",
+      "shortName": "M.Sc. Chemistry",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "chemistry",
+      "aliases": [
+        "Master of Science in Chemistry",
+        "MSc Chemistry"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "This catalogue category covers postgraduate Master of Science degrees in chemistry, usually two years after a science bachelor's degree with chemistry. Programmes typically advance organic, inorganic, physical and analytical chemistry with spectroscopy and instrumentation, supported by extensive laboratory work, seminars and a research project or dissertation.",
+      "metaTitle": "M.Sc. Chemistry Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Chemistry programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-computer-science",
+      "name": "M.Sc. in Computer Science",
+      "shortName": "M.Sc. Computer Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science",
+      "aliases": [
+        "Master of Science in Computer Science",
+        "MSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "M.Sc. Computer Science is the Students Traffic catalogue category for postgraduate degrees that develop advanced computer-science knowledge through technical study, practical work and a substantial independent project. The precise academic background required, curriculum, fee and delivery route must be assessed from the university's current programme information.",
+      "metaTitle": "M.Sc. Computer Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Computer Science programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-mathematics",
+      "name": "M.Sc. in Mathematics",
+      "shortName": "M.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "masters",
+      "discipline": "mathematics",
+      "aliases": [
+        "Master of Science in Mathematics",
+        "MSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare mathematics master's programmes abroad by pure and applied theory, computation, research, thesis, tuition and admissions. Departmental prerequisites and terminal-degree availability vary.",
+      "metaTitle": "M.Sc. Mathematics Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Mathematics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-physics",
+      "name": "M.Sc. in Physics",
+      "shortName": "M.Sc. Physics",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "physics",
+      "aliases": [
+        "Master of Science in Physics",
+        "MSc Physics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare M.Sc. Physics programmes abroad by research areas, laboratory or computational training, tuition, admissions and funding. Applicants should confirm the award route and whether the university requires doctoral-programme enrollment.",
+      "metaTitle": "M.Sc. Physics Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Physics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "ma-english-literature",
+      "name": "M.A. in English and Literature",
+      "shortName": "M.A. English",
+      "stream": "arts-humanities",
+      "level": "masters",
+      "discipline": "english-literature",
+      "aliases": [
+        "MA English",
+        "Master of Arts in English Literature"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare M.A. English and Literature programmes abroad by literary and cultural study, language, teaching or research options, fees and admission requirements. Review the official curriculum carefully because English-studies programmes may include different literature and language components.",
+      "metaTitle": "M.A. English Programmes and Admissions",
+      "metaDescription": "Compare M.A. English programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "thiruvalluvar-university",
+      "name": "Thiruvalluvar University",
+      "city": "Vellore",
+      "type": "Public",
+      "establishedYear": 2002,
+      "officialWebsite": "https://www.tvu.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://tvu.pspl.world/public/website/images/logo/TVU-logo-only.png",
+          "rights": "Public university redesign/mirror assets, corroborated institutional crest and named campus building. Institutional identification/campus context only; full originals retained. No open licence, synthetic generation or ownership transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://tvu.pspl.world/public/website/images/Banner/Web-banner-1.png",
+          "rights": "Public university redesign/mirror assets, corroborated institutional crest and named campus building. Institutional identification/campus context only; full originals retained. No open licence, synthetic generation or ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Thiruvalluvar University campus administration building in Serkkadu, Vellore"
+        }
+      },
+      "summary": "Thiruvalluvar University is a public state university established in 2002 at Serkkadu, near Vellore. Its university departments offer science, language, commerce and economics degrees alongside research. Regular campus programmes have their own qualifications and fees; affiliated-college courses are separate choices.",
+      "campusLifestyle": "The university departments are based at Serkkadu, near Vellore. The campus brings together academic departments and library, sports and student services. Confirm the teaching site and actual language arrangement when choosing a programme.",
+      "cityProfile": "The university is at Serkkadu, near Vallimalai, outside Vellore city on the Ranipet–Chittoor route. Plan commuting or residential arrangements around the university campus rather than assuming a city-centre or affiliated-college teaching location.",
+      "practicalExposure": "The campus portfolio includes laboratory sciences, mathematics, computing, commerce and economics. Science regulations describe practical study and research/project work where prescribed, while subject requirements differ by degree. Confirm the actual curriculum and laboratory component for the selected award; an academic degree does not establish a professional licence or guaranteed placement.",
+      "hostelOverview": "The university publishes hostel facilities and a separate hostel application. Confirm room allocation, reporting arrangements, charges and availability before travelling; academic selection does not guarantee accommodation.",
+      "dietarySupport": "Ask about current mess arrangements, meal charges and any dietary requirements before accepting residential accommodation. No special-menu guarantee is established here.",
+      "safetyOverview": "The university publishes student-support resources and an Internal Committee. Confirm campus reporting, health and emergency arrangements when enrolling; no general safety guarantee is implied.",
+      "studentSupport": "University admission and eligibility verification are separate from government concession eligibility. Keep qualifying records and valid community/disability documents ready, and confirm scholarship reimbursement and personal payment requirements before budgeting.",
+      "whyChoose": [
+        "Regular university-department study at a state university near Vellore.",
+        "Programme-specific science, commerce and economics routes with published academic regulations.",
+        "Published native tuition with separate institutional charges and conditional concessions."
+      ],
+      "thingsToConsider": [
+        "Choose university departments separately from affiliated-college courses and study sites.",
+        "UG core instruction may be Tamil or English; language-course exceptions need programme-specific confirmation.",
+        "Tuition and combined admission charges differ; confirm category documentation and any revised fee notice."
+      ],
+      "bestFitFor": [
+        "Applicants matching the exact qualifying subject and accepted university route.",
+        "Students seeking regular campus study at Serkkadu.",
+        "Applicants prepared to complete equivalence, selection and original-document verification."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC Section 2(f) — recognised state university",
+        "UGC Section 12B — eligible for central assistance"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC current state register —2(f)",
+          "url": "https://www.ugc.gov.in/universitydetails/university?type=LZ1FUMk6U2JWGNLvhWfVSA%3D%3D"
+        },
+        {
+          "label": "UGC current state register —12B",
+          "url": "https://www.ugc.gov.in/universitydetails/university?type=LZ1FUMk6U2JWGNLvhWfVSA%3D%3D"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where are these programmes taught?",
+          "answer": "These routes concern the university departments at Serkkadu near Vellore. Affiliated colleges and any extension-centre courses have separate teaching sites and applicable admission arrangements."
+        },
+        {
+          "question": "What qualification is needed?",
+          "answer": "The subject route differs by programme. For example, Physics requires a Physics degree with Mathematics allied, while computing and life-science courses have their own accepted degree lists and any specified marks."
+        },
+        {
+          "question": "What is the teaching language?",
+          "answer": "The general postgraduate rule is English except language programmes. The supported Tamil award has a programme-specific Tamil instruction rule. The undergraduate regulation permits Tamil or English for core courses and the concerned language for language papers."
+        },
+        {
+          "question": "Are these annual fee amounts?",
+          "answer": "The native quotes isolate tuition explicitly charged per annum in the published tariff. Other institutional annual charges, one-time payments, refundable deposits and hostel/mess costs are additional."
+        },
+        {
+          "question": "Are concessions automatic?",
+          "answer": "No. The tariff gives conditional tuition reimbursement terms for eligible Tamil Nadu SC/ST and converted-Christian scholarship applicants, and disability-related concessions require prescribed proof. Confirm the actual payment and reimbursement process."
+        },
+        {
+          "question": "Can another-university graduate apply?",
+          "answer": "The qualifying degree must satisfy the subject route and university equivalence acceptance. Other-university applicants may require the prescribed eligibility certificate before admission is confirmed."
+        },
+        {
+          "question": "Can international applicants use the same rate?",
+          "answer": "Current overseas-category eligibility and fees are not established by the domestic route here. Confirm qualification acceptance, admission category and the applicable international tariff individually."
+        },
+        {
+          "question": "When does the next intake begin?",
+          "answer": "Follow the next applicable university admission notice for application and reporting dates. An exact intake month or future opening is not asserted here."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current own-campus programme directory",
+          "url": "https://www.tvu.edu.in/academic/courses-offered/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current own2026admission links",
+          "url": "https://www.tvu.edu.in/admission-2025-2026/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University PG regulations effective2023",
+          "url": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University UG regulations effective2023",
+          "url": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University isolated tuition tariff effective2025–26",
+          "url": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC own current state register",
+          "url": "https://www.ugc.gov.in/universitydetails/university?type=LZ1FUMk6U2JWGNLvhWfVSA%3D%3D",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "overview": "Choose the exact university-department programme, meet its subject qualification and complete university eligibility/selection verification. Confirm the applicable tuition and separate institutional/residential charges before payment."
+      },
+      "programmes": [
+        {
+          "slug": "tvu-b-sc-computer-science",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc. Computer Science",
+          "durationYears": 3,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 13000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English / Tamil",
+          "mediumNote": "Core instruction may be Tamil or English; language papers use the concerned language. Confirm the actual class arrangement.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Computer Science is a 3-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass the Tamil Nadu Higher Secondary Course (academic or vocational) with Mathematics / Business Mathematics / Statistics / Computer Science as a subject, or an equivalent accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "3-year regular degree",
+              "language": "English / Tamil",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-b-sc-data-science",
+          "canonicalCourseSlug": "bsc-data-science",
+          "officialTitle": "B.Sc. Data Science",
+          "durationYears": 3,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 13000,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English / Tamil",
+          "mediumNote": "Core instruction may be Tamil or English; language papers use the concerned language. Confirm the actual class arrangement.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Data Science is a 3-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass the Tamil Nadu Higher Secondary Course (academic or vocational) with Mathematics / Business Mathematics / Statistics / Computer Science as a subject, or an equivalent accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "3-year regular degree",
+              "language": "English / Tamil",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-a-tamil",
+          "canonicalCourseSlug": "ma-languages-linguistics",
+          "officialTitle": "M.A. Tamil",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "Tamil",
+          "mediumNote": "Tamil instruction for this programme; an English-only variant is not independently established.",
+          "instructionLanguages": [
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.A. Tamil is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "A bachelor’s degree with Tamil as main subject or Tamil as a subject, or an equivalent degree approved by the Syndicate. Candidates with Tamil as their main subject receive preference.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "Tamil",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-a-economics",
+          "canonicalCourseSlug": "master-economics",
+          "officialTitle": "M.A. Economics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.A. Economics is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.A. Economics / Corporate Economics / Business Economics, B.Com. in any branch, B.Sc. Mathematics / Statistics, BBA, or an equivalent examination approved by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-com",
+          "canonicalCourseSlug": "mcom",
+          "officialTitle": "M.Com.",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Com. is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Com. / B.Com. Corporate Secretaryship or Bank Management / BCS / BBA / B.A. Co-operation, Economics or Corporate Economics. Listed Mathematics/computing degrees require the applicable B.Com.-level",
+                "core-paper condition and university eligibility verification; equivalents need Syndicate acceptance.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-mathematics",
+          "canonicalCourseSlug": "msc-mathematics",
+          "officialTitle": "M.Sc. Mathematics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Mathematics is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Sc. Mathematics, or another university examination with more than one major including Mathematics accepted as equivalent by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-physics",
+          "canonicalCourseSlug": "msc-physics",
+          "officialTitle": "M.Sc. Physics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Physics is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Sc. Physics with Mathematics as an allied subject, or an equivalent examination accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-chemistry",
+          "canonicalCourseSlug": "msc-chemistry",
+          "officialTitle": "M.Sc. Chemistry",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Chemistry is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass the B.Sc. degree with Chemistry / Industrial Chemistry as the main subject, or an equivalent examination accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-biochemistry",
+          "canonicalCourseSlug": "msc-biological-sciences",
+          "officialTitle": "M.Sc. Biochemistry",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Biochemistry is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "First preference: B.Sc. Biochemistry or Chemistry as major with 55%; 5 percentage-point relaxation for SC/ST. Second preference: B.Sc. with 55%, Chemistry ancillary and",
+                "Biology/Zoology/Botany/Biotechnology/Nutrition and Dietetics or another biology-related main subject.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-zoology",
+          "canonicalCourseSlug": "msc-biological-sciences",
+          "officialTitle": "M.Sc. Zoology",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Zoology is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Sc. Zoology, or an equivalent examination accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-biotechnology",
+          "canonicalCourseSlug": "msc-biotechnology",
+          "officialTitle": "M.Sc. Biotechnology",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Biotechnology is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Sc. in a Life Science subject with 55% from a recognised Indian university, or an equivalent examination accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-computer-science",
+          "canonicalCourseSlug": "msc-computer-science",
+          "officialTitle": "M.Sc. Computer Science",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 8500,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Computer Science is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Sc. Computer Science / Computer Science and Technology, BCA, or an equivalent examination accepted by the Syndicate.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-sc-microbiology",
+          "canonicalCourseSlug": "msc-biological-sciences",
+          "officialTitle": "M.Sc. Microbiology",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "English",
+          "mediumNote": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Microbiology is a 2-year regular programme in the university departments at Serkkadu, Vellore. Meet the exact subject qualification and university eligibility-verification conditions.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "Pass B.Sc. Microbiology/Applied or Industrial Microbiology/Botany/Plant Science/Plant Biology and Plant Biotechnology/Zoology/Animal Science/Applied Animal Science and Animal",
+                "Biotechnology/Biochemistry/Biotechnology/Bioinformatics/Biology/Life Sciences/Home Science/Nutrition and Dietetics, BSMS/BAMS/BUMS, or Chemistry with Botany/Zoology allied; other equivalents require Syndicate",
+                "acceptance.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection or entrance process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "English",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        },
+        {
+          "slug": "tvu-m-a-english",
+          "canonicalCourseSlug": "ma-english-literature",
+          "officialTitle": "M.A. English",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+          "fee": {
+            "status": "confirmed",
+            "audience": "domestic",
+            "academicYear": "Effective 2025–26; current linked tariff",
+            "officialFeeCurrency": "INR",
+            "officialAnnualTuitionAmount": 2400,
+            "verifiedAt": "2026-10-25",
+            "notes": "Published isolated annual tuition, not the combined first-year total. Current admission page links the tariff as effective from 2025–26. SC/ST and eligible converted-Christian reimbursement conditions require valid Tamil Nadu community documents; disability concessions require prescribed proof. Confirm any revised tariff and personal category before payment."
+          },
+          "feeNotes": "Tuition is quoted separately from combined institutional charges. Confirm any revised tariff and category-specific concessions before payment. Hostel/mess and deposits are additional.",
+          "feeVerifiedAt": "2026-10-25",
+          "medium": "",
+          "mediumNote": "Confirm the current teaching language for this language degree with the department.",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants using the verified regular university-department qualifying route"
+            ],
+            "restrictions": [
+              "Other-university qualifications require the prescribed university eligibility acceptance.",
+              "Current foreign-national qualification, admission and fee-category treatment require individual confirmation."
+            ],
+            "notes": "No overseas fee total or international test waiver inferred from the domestic academic route.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.A. English is a two-year regular university-department programme at Serkkadu, Vellore. Admission follows the named English-degree or Part II English qualifying routes and university equivalence checks.",
+            "eligibility": {
+              "intro": "Use the programme-specific qualifying route below. University equivalence, the applicable selection process and reservation documentation remain separate admission conditions.",
+              "items": [
+                "B.A. of this university with English as the main subject; or an examination of another university accepted by the Syndicate as equivalent.",
+                "Alternative route: B.A./B.Sc. with Part II English, or B.Com./BBA/BCA/BCS or another such degree with one year Part II English; the regulation specifies at least 55% for this route.",
+                "The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance.",
+                "Complete the applicable university selection process; a qualifying degree alone does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Use the current university-department admission notice and select the exact programme.",
+              "Complete the prescribed application and submit the qualifying marksheets and relevant category records.",
+              "Complete any required eligibility-certificate, selection and original-document checks, then pay the applicable charges after an offer."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate and Higher Secondary marksheet",
+                "Qualifying degree/provisional certificate and semester marksheets"
+              ],
+              "application": [
+                "Completed university application and payment evidence",
+                "Eligibility certificate/acceptance for another university qualification, as applicable",
+                "Applicable community/category/disability certificate",
+                "Original qualification records for verification"
+              ]
+            },
+            "deadlinesNote": "Use the next applicable admission notice for application and reporting dates. No exact intake month or future opening is asserted."
+          },
+          "teachingPhases": [
+            {
+              "phase": "2-year regular degree",
+              "language": "",
+              "details": "Serkkadu university departments, Vellore. The shared affiliated-college regulations are used only where they explicitly cover university departments."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "B.Sc. Computer Science; current own-campus programme directory, 3years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc. Computer Science: 3-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "UG2023§28: Pass the Tamil Nadu Higher Secondary Course (academic or vocational) with Mathematics / Business Mathematics / Statistics / Computer Science as a subject, or an equivalent accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "Core instruction may be Tamil or English; language papers use the concerned language. Confirm the actual class arrangement.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR13000 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "B.Sc. Data Science; current own-campus programme directory, 3years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc. Data Science: 3-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "UG2023§42: Pass the Tamil Nadu Higher Secondary Course (academic or vocational) with Mathematics / Business Mathematics / Statistics / Computer Science as a subject, or an equivalent accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "Core instruction may be Tamil or English; language papers use the concerned language. Confirm the actual class arrangement.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/UG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR13000 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-b-sc-data-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.A. Tamil; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.A. Tamil: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§1: A bachelor’s degree with Tamil as main subject or Tamil as a subject, or an equivalent degree approved by the Syndicate. Candidates with Tamil as their main subject receive preference.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "Tamil instruction for this programme; an English-only variant is not independently established.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Employability%20Highlighted%20Syllabus.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-tamil",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.A. Economics; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.A. Economics: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§3: Pass B.A. Economics / Corporate Economics / Business Economics, B.Com. in any branch, B.Sc. Mathematics / Statistics, BBA, or an equivalent examination approved by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-economics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Com.; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Com.: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§19: Pass B.Com. / B.Com. Corporate Secretaryship or Bank Management / BCS / BBA / B.A. Co-operation, Economics or Corporate Economics. Listed Mathematics/computing degrees require the applicable B.Com.-level core-paper condition and university eligibility verification; equivalents need Syndicate acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-com",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Mathematics; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Mathematics: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§8: Pass B.Sc. Mathematics, or another university examination with more than one major including Mathematics accepted as equivalent by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-mathematics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Physics; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Physics: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§9: Pass B.Sc. Physics with Mathematics as an allied subject, or an equivalent examination accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-physics",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Chemistry; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Chemistry: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§10: Pass the B.Sc. degree with Chemistry / Industrial Chemistry as the main subject, or an equivalent examination accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-chemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Biochemistry; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Biochemistry: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§11: First preference: B.Sc. Biochemistry or Chemistry as major with 55%; 5 percentage-point relaxation for SC/ST. Second preference: B.Sc. with 55%, Chemistry ancillary and Biology/Zoology/Botany/Biotechnology/Nutrition and Dietetics or another biology-related main subject.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biochemistry",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Zoology; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Zoology: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§12: Pass B.Sc. Zoology, or an equivalent examination accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-zoology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Biotechnology; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Biotechnology: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§14: Pass B.Sc. in a Life Science subject with 55% from a recognised Indian university, or an equivalent examination accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-biotechnology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Computer Science; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Computer Science: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§16: Pass B.Sc. Computer Science / Computer Science and Technology, BCA, or an equivalent examination accepted by the Syndicate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR8500 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-computer-science",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.Sc. Microbiology; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Microbiology: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023§27: Pass B.Sc. Microbiology/Applied or Industrial Microbiology/Botany/Plant Science/Plant Biology and Plant Biotechnology/Zoology/Animal Science/Applied Animal Science and Animal Biotechnology/Biochemistry/Biotechnology/Bioinformatics/Biology/Life Sciences/Home Science/Nutrition and Dietetics, BSMS/BAMS/BUMS, or Chemistry with Botany/Zoology allied; other equivalents require Syndicate acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "English instruction for this regular postgraduate programme; language programmes have separate teaching rules.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-sc-microbiology",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "State university established2002, Serkkadu nearVellore; own current identity and governmentregister corroborate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "recognitionBadges",
+      "claimText": "UGC own current state-register row475: ThiruvalluvarUniversity, State,TamilNadu,2(f)&12B. Exact publicJSON excerpt retained.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/university?type=LZ1FUMk6U2JWGNLvhWfVSA%3D%3D",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "campusLifestyle",
+      "claimText": "Current own directory/department/facility links describe campus study,library,sports and studentservices.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "cityProfile",
+      "claimText": "Institutional identity page:Serkkadu nearVallimalai,about16km fromVellore,onRanipet–Chittoor route.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "practicalExposure",
+      "claimText": "Applicable programme regulations contain practical/project course structures; no universalinternship/placement/licence inference.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "hostelOverview",
+      "claimText": "Current own site links separate hostel application and mirror identifies hostel facility. Allocation/cost not guaranteed.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/wp-content/uploads/2022/11/Hostel-Application-Form.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "dietarySupport",
+      "claimText": "Reviewed hostel/facility descriptions do not establish specialdiet guarantee; confirmation advised.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "safetyOverview",
+      "claimText": "Current own header and indexed site link InternalCommittee/studenthelp resources; no numericalsafety claim.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "studentSupport",
+      "claimText": "Tariff exact conditional community/disability exemption/reimbursement provisions and admission equivalence verification.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "logoMedia",
+      "claimText": "Thiruvalluvar University complete institutional crest. Complete original image, no edits/upscaling; crest matches institutional brochure and building carries university Tamil name.",
+      "status": "verified",
+      "sourceLabel": "Authentic institutional website redesign/mirror asset",
+      "sourceUrl": "https://tvu.pspl.world/public/website/images/logo/TVU-logo-only.png",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "coverMedia",
+      "claimText": "Thiruvalluvar University campus administration building in Serkkadu, Vellore. Complete original image, no edits/upscaling; crest matches institutional brochure and building carries university Tamil name.",
+      "status": "verified",
+      "sourceLabel": "Authentic institutional website redesign/mirror asset",
+      "sourceUrl": "https://tvu.pspl.world/public/website/images/Banner/Web-banner-1.png",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "identity",
+      "claimText": "M.A. English; current own-campus programme directory, 2years.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "duration",
+      "claimText": "M.A. English: 2-year regular degree; current directory and applicable2023regulation.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "eligibility",
+      "claimText": "PG2023section2: B.A. of this university with English as the main subject; or an examination of another university accepted by the Syndicate as equivalent. Alternative route: B.A./B.Sc. with Part II English, or B.Com./BBA/BCA/BCS or another such degree with one year Part II English; the regulation specifies at least 55% for this route. The qualification must be university-recognised; other-university applicants require the prescribed eligibility acceptance. Complete the applicable university selection process; a qualifying degree alone does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained. Exact MAEnglish provision explicitly covers affiliated colleges/Department of this university; no universal any-degree eligibility or55% applied to main-English route."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "admissions",
+      "claimText": "Current2026own admission page verified in normal browser;2025notification and admission instructions retained with dated continuity, no future window asserted.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/admission-2025-2026/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "medium",
+      "claimText": "Teaching language omitted: PG2023section7.3 excludes language programmes from the general English-only rule; no exact MAEnglish delivery confirmation retained. English degree title is not used as language proof.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "audienceEligibility",
+      "claimText": "Verified university-department subject route; overseas category/fee unconfirmed; other-university qualification requires eligibility acceptance.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/PG-Regulation-2023.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "fee",
+      "claimText": "INR2400 annual tuition explicitly per annum; current admission page links schedule effect from2025–26. Domestic general category, conditional concessions separate.",
+      "status": "verified",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://tvu.pspl.world/public/website/files/Fees-2025-2026-1.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "thiruvalluvar-university",
+      "publicField": "intake",
+      "claimText": "Current programme verified; exact intake month omitted rather than inferred from semester examination calendars.",
+      "status": "omit",
+      "sourceLabel": "Thiruvalluvar University official source",
+      "sourceUrl": "https://www.tvu.edu.in/academic/courses-offered/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tvu-m-a-english",
+      "internalNotes": "Full institution-authored regulations/fee schedule retained on public university redesign mirror; current own-domain directory/admission links independently read in normal browser. Original academic years retained."
+    }
+  ]
+}

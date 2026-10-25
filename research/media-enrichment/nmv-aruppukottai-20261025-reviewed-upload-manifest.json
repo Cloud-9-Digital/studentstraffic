@@ -1,0 +1,44 @@
+{
+  "manifestId": "nmv-aruppukottai-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Complete official wordmark and genuine institutional first-convocation event; full originals, no worker upload.",
+  "entries": [
+    {
+      "universitySlug": "nmv-university",
+      "universityName": "NMV University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://nmvuniversity.edu.in/wp-content/uploads/2022/07/NMV-University-logo-new2.png",
+          "sourceType": "official",
+          "sourcePage": "https://nmvuniversity.edu.in/",
+          "rightsBasis": "Official university-owned institutional media; no open licence claimed.",
+          "verificationMethod": "Complete native lotus emblem and NMV wordmark from current header, transparent background; visually inspected without alteration.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/nmv-university-20261025/logo.png",
+          "sha256": "d7fd17bbc6f239e168426f3be2f15774952a3e75ccd77578e16cff8d8a4dbb78",
+          "width": 500,
+          "height": 177,
+          "altText": "NMV University official wordmark",
+          "proposedPublicId": "studentstraffic/universities/nmv-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://nmvuniversity.edu.in/wp-content/uploads/2026/10/FWC_9152-scaled.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://nmvuniversity.edu.in/institute-of-agriculture-research-technology/",
+          "rightsBasis": "Official university-owned institutional media; no open licence claimed.",
+          "verificationMethod": "Genuine official first-convocation photograph with clearly named NMVUniversity backdrop. Accurate institutional-event image, not an exterior-campus photograph. Root accepted this event-cover approach; architectural render and unrelated Saveetha-group corridor photos rejected.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/nmv-university-20261025/campus-event.jpg",
+          "sha256": "ff208b3d9220a2c88b5f3ece54d75a7f9ae7129df880bd902e4603592d49e308",
+          "width": 2560,
+          "height": 1703,
+          "altText": "NMV University first-convocation event with its institutional backdrop",
+          "proposedPublicId": "studentstraffic/universities/nmv-university/cover"
+        }
+      ],
+      "migrationId": "0280-india-nmv-university"
+    }
+  ]
+}

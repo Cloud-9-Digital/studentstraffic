@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "noorul-islam-centre-for-higher-education",
+      "universityName": "Noorul Islam Centre for Higher Education",
+      "sourceBatch": "codex-niche-kumaracoil-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.niuniv.com/images/NICHElogo.png",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Original published on the official university website, retained for institutional identification and campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/noorul-islam-centre-for-higher-education/logo-20261025",
+          "altText": "NICHE full university wordmark with complete crest and motto",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/niche-kumaracoil-20261025/logo.png",
+          "sha256": "6c8b8b00311b42fdfd9e07c6ca3d424b4dfb5b07ad88c5a90dc7ec1e848cb49d",
+          "width": 494,
+          "height": 203,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original, no crop or upscale.",
+          "visualReview": "Visually reviewed full local original: intact university crest/wordmark; genuine entrance building with visible university identity."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.niuniv.com/images/facilities/campus/1.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Original published on the official university website, retained for institutional identification and campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/noorul-islam-centre-for-higher-education/cover-20261025",
+          "altText": "NICHE campus building at Kumaracoil with the university name above its entrance",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/niche-kumaracoil-20261025/campus.jpg",
+          "sha256": "0b6bb6866a25e480355663f71eb9a80d0026efaef6341f994ea46442b7f97833",
+          "width": 4160,
+          "height": 3120,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original, no crop or upscale.",
+          "visualReview": "Visually reviewed full local original: intact university crest/wordmark; genuine entrance building with visible university identity."
+        }
+      ],
+      "migrationId": "0277-india-noorul-islam-centre-for-higher-education"
+    }
+  ]
+}

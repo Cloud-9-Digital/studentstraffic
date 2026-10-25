@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "ponnaiyah-ramajayam-institute-of-science-and-technology",
+      "universityName": "Ponnaiyah Ramajayam Institute of Science and Technology",
+      "sourceBatch": "codex-prist-thanjavur-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.prist.ac.in/wp-content/uploads/2023/02/logo.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Official university website original used for institutional identification and campus context. No open licence or ownership transfer claimed; full original retained.",
+          "proposedPublicId": "studentstraffic/universities/ponnaiyah-ramajayam-institute-of-science-and-technology/logo-20261025",
+          "altText": "PRIST full institutional wordmark with complete shield and laurel crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/prist-thanjavur-20261025/logo.jpg",
+          "sha256": "d294da769762c77551fbdf622216fca9f18ca4f6d05f316121cc44bf5dfdbbc9",
+          "width": 1200,
+          "height": 328,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete official1200x328 original logo.jpg wordmark with intact crest and legal name; no crop or upscale. Separate crest-only inspection crop retained but not uploaded.",
+          "visualReview": "Local full originals and crest-only crop visually reviewed; genuine complete university emblem and campus photograph."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.prist.ac.in/wp-content/uploads/2020/09/DJI_0005-e1620900304804.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Official university website original used for institutional identification and campus context. No open licence or ownership transfer claimed; full original retained.",
+          "proposedPublicId": "studentstraffic/universities/ponnaiyah-ramajayam-institute-of-science-and-technology/cover-20261025",
+          "altText": "Aerial campus photograph published by PRIST showing university buildings at Vallam",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/prist-thanjavur-20261025/campus.jpg",
+          "sha256": "1009eba9bb2f635e118ad547a1628ce099258c13a480687209cb68c376fdcac9",
+          "width": 627,
+          "height": 294,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original official homepage aerial asset; no edits/upscale. Historical sourcepath2020/09 retained; no current-year claim.",
+          "visualReview": "Local full originals and crest-only crop visually reviewed; genuine complete university emblem and campus photograph."
+        }
+      ],
+      "migrationId": "0270-india-ponnaiyah-ramajayam-institute-of-science-and-technology"
+    }
+  ]
+}

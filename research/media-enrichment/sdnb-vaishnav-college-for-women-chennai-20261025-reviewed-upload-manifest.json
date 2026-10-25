@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sdnb-vaishnav-college-for-women-chennai",
+      "universityName": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women, Chennai",
+      "sourceBatch": "codex-sdnbvc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.sdnbvc.edu.in/wp-content/uploads/2019/04/cropped-logo-192x192.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.sdnbvc.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "SDNB Vaishnav College for Women institutional crest",
+          "visualCheck": "Native192×192 complete circular lotus crest and motto, inspected locally.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval and native local image inspection; original retained unchanged.",
+          "proposedPublicId": "studentstraffic/universities/sdnb-vaishnav-college-for-women-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/sdnb-vaishnav-college-for-women-chennai/crest.png",
+          "sha256": "d2781136b98c172899a450eb35edaecbe474fa371d2ad5c2fec95497a0bfb40c",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sdnbvc.edu.in/wp-content/uploads/2023/10/clg.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.sdnbvc.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "SDNB Vaishnav College campus building in Chromepet, Chennai",
+          "visualCheck": "Native1640×924 official photograph of named cream campus facade, palms and courtyard. Existing publisher-added bottom identity/affiliation/NAAC overlay is part of the original photograph, not a separate public accreditation claim; no independent NAAC badge asserted.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval and native local image inspection; original retained unchanged.",
+          "proposedPublicId": "studentstraffic/universities/sdnb-vaishnav-college-for-women-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/sdnb-vaishnav-college-for-women-chennai/campus.jpg",
+          "sha256": "c87fc5e37a1881ed4de2a7243579b0f6808839e7c90a6682e801edb8e9d17460",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

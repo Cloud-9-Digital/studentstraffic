@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "kongunadu-arts-and-science-college",
+      "universityName": "Kongunadu Arts and Science College, Coimbatore",
+      "sourceBatch": "codex-kongunadu-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://media.collegedekho.com/media/institutes/prospectus/kongunadu_arts_and_science_College.pdf",
+          "sourceType": "institution-authored-document-mirror",
+          "rightsBasis": "Authentic institution-authored anniversary prospectus mirrored by education directoryCollegeDekho, corroborated institutional name/address/brand and campus. Institutional identification only; original document retained. Crop only, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/kongunadu-arts-and-science-college/logo-20261025",
+          "altText": "Kongunadu Arts and Science College complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/kongunadu-20261025/media-logo-crest.png",
+          "sha256": "6c67c77d92ecb244afcca7238572ae3559c46777cacc77ebf188cedb6da21689",
+          "width": 140,
+          "height": 145,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full4pageinstitutionauthoredPDF retained; native976x1264cover image extracted without resizing or recolouring using pdfimages-png, crop(75,48,740,242), then crest-only(0,0,140,145). Complete circular crest, motto and establishment line retained; widerwordmark crop kept separately, anniversary/accreditation/status prose excluded.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/kongunadu-20261025/mirrored-prospectus.pdf",
+          "originalDocumentSha256": "d3fd3785fca655f828077517aa7058780b1ad004841d5cd9bd8da06638e2626c",
+          "visualReview": "Legible on white, complete institutional legal name and seal."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://media.collegedekho.com/media/institutes/prospectus/kongunadu_arts_and_science_College.pdf",
+          "sourceType": "institution-authored-document-mirror",
+          "rightsBasis": "Authentic institution-authored anniversary prospectus mirrored by education directoryCollegeDekho, corroborated institutional name/address/brand and campus. Institutional identification only; original document retained. Crop only, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/kongunadu-arts-and-science-college/cover-20261025",
+          "altText": "Kongunadu Arts and Science College campus building with clock tower in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/kongunadu-20261025/media-cover-campus.png",
+          "sha256": "16f16d1e07e8be9dcc89a940abd4d599d15f9c3121e927a9d3615865ba520055",
+          "width": 902,
+          "height": 306,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full4pageinstitutionauthoredPDF retained; native976x1264cover image extracted without resizing or recolouring using pdfimages-png, crop(37,935,939,1241). Authentic building photograph cropped below brochure collage, roof/clocktower/front and trees preserved; brochure address band excluded.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/kongunadu-20261025/mirrored-prospectus.pdf",
+          "originalDocumentSha256": "d3fd3785fca655f828077517aa7058780b1ad004841d5cd9bd8da06638e2626c",
+          "visualReview": "Authentic campus building, no invented current date; undated brochure photograph."
+        }
+      ]
+    }
+  ]
+}

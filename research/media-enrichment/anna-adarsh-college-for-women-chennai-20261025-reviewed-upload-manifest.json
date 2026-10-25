@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "anna-adarsh-college-for-women-chennai",
+      "universityName": "Anna Adarsh College for Women, Chennai",
+      "sourceBatch": "codex-annaadarsh-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://annaadarsh.edu.in/wp-content/uploads/2017/02/cropped-mewannalogo-192x192.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://annaadarsh.edu.in/",
+          "rightsBasis": "Official institution-hosted institutional crest and college-facility photograph; no open licence or ownership transfer asserted.",
+          "altText": "Anna Adarsh College for Women institutional crest",
+          "visualCheck": "Native192×192 standalone gold/navy crest with three flowers andPerfectionPurityPerseverance motto; complete round college name andSince1985.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTPGET and nativeview_image inspection of retained original; no image modification/provider action.",
+          "proposedPublicId": "studentstraffic/universities/anna-adarsh-college-for-women-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/anna-adarsh-college-for-women-chennai/crest.png",
+          "sha256": "bc508b68551cbf651d394e6df7078e4442a68f4d0c861821e05b54be39e1b6ef",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://annaadarsh.edu.in/wp-content/uploads/2021/06/sf9.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://annaadarsh.edu.in/other-facilities/",
+          "rightsBasis": "Official institution-hosted institutional crest and college-facility photograph; no open licence or ownership transfer asserted.",
+          "altText": "Students in the college canteen shown by Anna Adarsh’s official facilities page",
+          "visualCheck": "Native1430×953 official college facilities photograph shows students seated in the canteen, tables/chairs andfood; authentic institution-published student-life setting, not stock, generic landmark or faculty portrait.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTPGET and nativeview_image inspection of retained original; no image modification/provider action.",
+          "proposedPublicId": "studentstraffic/universities/anna-adarsh-college-for-women-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/anna-adarsh-college-for-women-chennai/facilities.jpg",
+          "sha256": "3aece29d7cfab71c6b4b29afab1266becaf29202cc24785b34d2258dc84731c0",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0242-india-anna-adarsh-college-for-women-chennai"
+    }
+  ],
+  "migrationId": "0242-india-anna-adarsh-college-for-women-chennai"
+}

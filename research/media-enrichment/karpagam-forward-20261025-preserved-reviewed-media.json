@@ -1,0 +1,28 @@
+{
+  "manifestId": "karpagam-forward-20261025-preserved-reviewed-media",
+  "status": "preserve-applied-media-no-upload",
+  "checkedAt": "2026-10-25",
+  "baselineMigration": "0230-india-karpagam-academy-of-higher-education",
+  "scope": "Existing applied hosted images inherited via absent URL update keys; missing payload attribution restored from original accepted manifest. No DB readback or new image upload.",
+  "mediaAttribution": {
+    "logo": {
+      "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2023/01/LOGO-with-different-colors-03.png",
+      "rights": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed. Left emblem/wordmark crop excludes the separate right-hand accreditation wording; original source retained.",
+      "checkedAt": "2026-10-25"
+    },
+    "cover": {
+      "sourceUrl": "https://kahedu.edu.in/n/wp-content/uploads/2019/11/Campus1-811x497.png",
+      "rights": "Authentic institutional brand asset or campus photograph published by the university on its own public site; no ownership transfer claimed.",
+      "checkedAt": "2026-10-25",
+      "altText": "KAHE academic building and landscaped lawn at Eachanari in Coimbatore"
+    }
+  },
+  "entries": [
+    {
+      "universitySlug": "karpagam-academy-of-higher-education",
+      "universityName": "Karpagam Academy of Higher Education",
+      "assets": []
+    }
+  ],
+  "reviewedOriginalManifest": "/Users/bharat/Documents/studentstraffic/research/media-enrichment/karpagam-20261025-reviewed-upload-manifest.json"
+}

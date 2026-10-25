@@ -1,0 +1,27 @@
+{
+  "manifestId": "psgtech-forward-20261025-preserved-reviewed-media",
+  "checkedAt": "2026-10-25",
+  "status": "preserve-applied-images-restore-source-attribution",
+  "reviewedOriginalManifest": "research/media-enrichment/psgtech-coimbatore-20261025-reviewed-upload-manifest.json",
+  "scope": "Applied hosted images inherited via absent URL update keys; source attribution restored from accepted original manifest. No DB readback or new upload.",
+  "mediaAttribution": {
+    "logo": {
+      "sourceUrl": "https://www.psgtech.edu/BScMScAdmission2026/image/logo.jpeg",
+      "rights": "Official institutional public brand and campus illustration; no open licence or ownership transfer claimed.",
+      "checkedAt": "2026-10-25"
+    },
+    "cover": {
+      "sourceUrl": "https://www.psgtech.edu/BScMScAdmission2026/image/background.jpg",
+      "rights": "Official institutional public brand and campus illustration; no open licence or ownership transfer claimed.",
+      "checkedAt": "2026-10-25",
+      "altText": "Historic PSG Industrial Institute building in the shared Peelamedu campus"
+    }
+  },
+  "entries": [
+    {
+      "universitySlug": "psg-college-of-technology",
+      "universityName": "PSG College of Technology",
+      "assets": []
+    }
+  ]
+}

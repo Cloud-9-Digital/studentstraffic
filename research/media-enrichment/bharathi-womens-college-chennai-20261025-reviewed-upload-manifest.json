@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "bharathi-womens-college-chennai",
+      "universityName": "Bharathi Women's College, Chennai",
+      "sourceBatch": "codex-tn-bwc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/logo2.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://bwc.edu.in/",
+          "rightsBasis": "Official institution-owned public educational brand/event photograph used for institutional identification and illustration; no open licence or ownership transfer claimed.",
+          "altText": "Bharathi Women’s College official crest",
+          "visualCheck": "Native115x115completecrest/ribbon/name locallyviewed; originalcurrentofficialheaderlogo, notfavicon; smallnativeassetnotupscaled.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET withstandardbrowseruseragent, checksumretained and sequential localoriginalpixelview. Noediting/upscale.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/bharathi-womens-college-chennai/logo.png",
+          "sha256": "34e45b9bf9e36351a7fd1a8a0ff2f36d2f42cb5cfbf33217ccea63cdaef5e025",
+          "proposedPublicId": "studentstraffic/universities/bharathi-womens-college-chennai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/Inner-second.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://bwc.edu.in/",
+          "rightsBasis": "Official institution-owned public educational brand/event photograph used for institutional identification and illustration; no open licence or ownership transfer claimed.",
+          "altText": "Historic graduation gathering illustrated on Bharathi Women’s College official website",
+          "visualCheck": "Native1600x363fulloriginal locallyviewed: genuinegraduationgatheringwithstudentsandseating, originaldarkheaderoverlay. Accuratelycaptionedhistoricevent; noeventyear/campusbuildingclaim, noAIstockreplacement.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET withstandardbrowseruseragent, checksumretained and sequential localoriginalpixelview. Noediting/upscale.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/bharathi-womens-college-chennai/inner-second.jpg",
+          "sha256": "9cbe569ecdf01318a871bfbeac7adb199d354811149ae8a482d7a209ac73cbc8",
+          "proposedPublicId": "studentstraffic/universities/bharathi-womens-college-chennai/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+      "universityName": "P K Das Institute of Social Sciences, Health Sciences and Technology",
+      "sourceBatch": "codex-tn-pkdas-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://pkdasuniversity.ac.in/assets/images/home/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and institutional event photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/p-k-das-institute-of-social-sciences-health-sciences-and-technology/logo-20261025",
+          "altText": "PK Das deemed-to-be university complete official logo and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/pkdas-20261025/logo.png",
+          "sha256": "18b1b2884227c9d09019bf81fd04f4e4a6788ca2df0673f621732b4396c2c018",
+          "notes": "NormalHTTPS200completeoriginal, fullviewed, no crop/upscale/generation. Councilparticipantcaptionmatchesofficialhomeeventasset; no class orcompletedbuildingclaim. Architecturalrenderinggalleryalternativesrejected."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://pkdasuniversity.ac.in/uploads/2026/08/First-Governing-Council-Meeting.jpeg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and institutional event photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/p-k-das-institute-of-social-sciences-health-sciences-and-technology/cover-20261025",
+          "altText": "Participants at PK Das University’s first governing council meeting",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/pkdas-20261025/cover-meeting.jpeg",
+          "sha256": "aaa5b43918a3b0d507e175d4090dfe5b150f6fe3f04625b0aca06a0f58b1b0a6",
+          "notes": "NormalHTTPS200completeoriginal, fullviewed, no crop/upscale/generation. Councilparticipantcaptionmatchesofficialhomeeventasset; no class orcompletedbuildingclaim. Architecturalrenderinggalleryalternativesrejected."
+        }
+      ],
+      "migrationId": "0292-india-p-k-das-institute-of-social-sciences-health-sciences-and-technology"
+    }
+  ]
+}

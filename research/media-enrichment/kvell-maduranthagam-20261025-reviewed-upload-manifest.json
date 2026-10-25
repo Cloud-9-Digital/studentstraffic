@@ -1,0 +1,44 @@
+{
+  "manifestId": "kvell-maduranthagam-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Exact own KVELL main-campus identity; original official logo and genuine auditorium photograph.",
+  "entries": [
+    {
+      "universitySlug": "karpaga-vinayaga-educational-lore-for-learning",
+      "universityName": "Karpaga Vinayaga Educational Lore for Learning",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kvell.in/wp-content/uploads/2026/07/kvell-logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://kvell.in/",
+          "rightsBasis": "Official university identifying asset/campus photograph; no open licence claimed.",
+          "verificationMethod": "Complete official university crest and full wordmark visually inspected; no crop/enlargement.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/karpaga-vinayaga-educational-lore-20261025/logo.png",
+          "sha256": "7f02dc26f639611dad58c6bed25a284331d8df01b5cad0e7e4db4e2301729ddd",
+          "width": 961,
+          "height": 286,
+          "altText": "Karpaga Vinayaga Educational Lore for Learning crest and wordmark",
+          "proposedPublicId": "studentstraffic/universities/karpaga-vinayaga-educational-lore-for-learning/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kvell.in/wp-content/uploads/2026/08/IMAGE-3-1.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://kvell.in/",
+          "rightsBasis": "Official university identifying asset/campus photograph; no open licence claimed.",
+          "verificationMethod": "Genuine named auditorium building on official current homepage, clock sculpture, steps and landscaping visible; full native photograph inspected.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/karpaga-vinayaga-educational-lore-20261025/campus.jpg",
+          "sha256": "d9db22ab0cbde55ad620c864bd3f4d6558420bcbeb049a87ad526e611660d6bd",
+          "width": 900,
+          "height": 824,
+          "altText": "Regupathy Saroja Auditorium at KVELL campus",
+          "proposedPublicId": "studentstraffic/universities/karpaga-vinayaga-educational-lore-for-learning/cover"
+        }
+      ],
+      "migrationId": "0293-india-karpaga-vinayaga-educational-lore-for-learning"
+    }
+  ]
+}

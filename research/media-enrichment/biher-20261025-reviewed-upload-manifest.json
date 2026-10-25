@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "india-bharath-institute-higher-education",
+      "universityName": "Bharath Institute of Higher Education and Research",
+      "sourceBatch": "codex-biher-resume-20261025",
+      "migrationId": "0302-india-biher-medical-award-crosswalk-correction",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://bharathuniv.ac.in/images/logo.svg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university/constituent identity and photograph used for factual identification and illustration; no ownership transfer or open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/india-bharath-institute-higher-education/logo-20261025",
+          "altText": "Complete official BIHER crest with motto and India ribbon",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/biher-resume-20261025/logo-crest.png",
+          "sha256": "0f185d0cd84c3411d3d34815829d7315da60f5b3a400711b5b449097e7b31e40",
+          "width": 528,
+          "height": 510,
+          "notes": "Originalvectorlogo.svg retained; vector rendered at3x tologo-render-3x.png; cropx30y0width528height510retainscompletecrest, excludes temporaryanniversarypanel. Rootvisuallyreviewedaccepted25October."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://bmch.ac.in/images/slides/banner-bharath1.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university/constituent identity and photograph used for factual identification and illustration; no ownership transfer or open licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/india-bharath-institute-higher-education/cover-20261025",
+          "altText": "Classroom teaching shown by Bhaarath Medical College and Hospital at its Selaiyur constituent campus",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/biher-resume-20261025/cover.jpg",
+          "sha256": "8bbd1f8776488dab2fcf3f87c7ca1d383c905344b14b1052c229a7bec8630cc2",
+          "width": 1900,
+          "height": 800,
+          "notes": "Full genuine1900x800ownmedicalcollegehomepage slideroriginal. No crop/upscale/generation; rootvisuallyreviewedaccepted25October. Notwholeuniversitycampusview."
+        }
+      ]
+    }
+  ]
+}

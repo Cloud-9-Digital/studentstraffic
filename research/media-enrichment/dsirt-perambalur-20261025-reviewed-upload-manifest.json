@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "dhanalakshmi-srinivasan-institute-of-research-and-technology",
+      "universityName": "Dhanalakshmi Srinivasan Institute of Research and Technology",
+      "sourceBatch": "codex-dsirt-perambalur-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dsirt.edu.in/assets/img/logo.png",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine own-site campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-institute-of-research-and-technology/logo-20261025",
+          "altText": "Complete DSIRT institutional seal and legal university wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dsirt-perambalur-20261025/logo.png",
+          "sha256": "5a8e4495d65a4fe2ded1d2422919cdfdb2c1f83a4bc74092148b965f65135eb4",
+          "width": 945,
+          "height": 168,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native official-site original without crop, upscale or artificial reconstruction.",
+          "visualReview": "Full local original viewed. Complete founder seal and legal wordmark; authentic campus aerial from current own homepage. No capture date or association of every school with the pictured building inferred."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dsirt.edu.in/assets/img/hero/b2.webp",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine own-site campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/dhanalakshmi-srinivasan-institute-of-research-and-technology/cover-20261025",
+          "altText": "Campus aerial photograph published on DSIRT’s official homepage",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dsirt-perambalur-20261025/cover-home.webp",
+          "sha256": "5d2b83a055891bb0bed7f69cadceb4e983c09962bb2d970d97c5c6f267cbcead",
+          "width": 1920,
+          "height": 800,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native official-site original without crop, upscale or artificial reconstruction.",
+          "visualReview": "Full local original viewed. Complete founder seal and legal wordmark; authentic campus aerial from current own homepage. No capture date or association of every school with the pictured building inferred."
+        }
+      ],
+      "migrationId": "0290-india-dhanalakshmi-srinivasan-institute-of-research-and-technology"
+    }
+  ]
+}

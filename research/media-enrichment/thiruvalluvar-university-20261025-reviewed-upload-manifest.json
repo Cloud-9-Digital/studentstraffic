@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "thiruvalluvar-university",
+      "universityName": "Thiruvalluvar University",
+      "sourceBatch": "codex-thiruvalluvar-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tvu.pspl.world/public/website/images/logo/TVU-logo-only.png",
+          "sourceType": "institution-website-mirror",
+          "rightsBasis": "Public university redesign/mirror assets, corroborated institutional crest and named campus building. Institutional identification/campus context only; full originals retained. No open licence, synthetic generation or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/thiruvalluvar-university/logo-20261025",
+          "altText": "Thiruvalluvar University complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/thiruvalluvar-university-20261025/logo.png",
+          "sha256": "c49b7b63370a010b55f46cbd9d06586dfd53ac7263d9a73338617228621016e1",
+          "width": 872,
+          "height": 852,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original image, no edits/upscaling; crest matches institutional brochure and building carries university Tamil name.",
+          "visualReview": "Actual local full image reviewed; authentic complete crest / campus building, no current-year implication."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tvu.pspl.world/public/website/images/Banner/Web-banner-1.png",
+          "sourceType": "institution-website-mirror",
+          "rightsBasis": "Public university redesign/mirror assets, corroborated institutional crest and named campus building. Institutional identification/campus context only; full originals retained. No open licence, synthetic generation or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/thiruvalluvar-university/cover-20261025",
+          "altText": "Thiruvalluvar University campus administration building in Serkkadu, Vellore",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/thiruvalluvar-university-20261025/banner1.png",
+          "sha256": "5512f2fb2ac4b25270e4dcfe38e753f7850499b6b952c79a1d2aa7e398b2e628",
+          "width": 1024,
+          "height": 324,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original image, no edits/upscaling; crest matches institutional brochure and building carries university Tamil name.",
+          "visualReview": "Actual local full image reviewed; authentic complete crest / campus building, no current-year implication."
+        }
+      ],
+      "migrationId": "0263-india-thiruvalluvar-university"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "manifestId": "msu-tirunelveli-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Mandatory exact university logo and genuine campus cover; no provider upload by worker.",
+  "entries": [
+    {
+      "universitySlug": "manonmaniam-sundaranar-university",
+      "universityName": "Manonmaniam Sundaranar University",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0265-india-manonmaniam-sundaranar-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.msuniv.ac.in/images/admission/PG_Prospectus.pdf",
+          "sourceType": "official",
+          "sourcePage": "https://www.msuniv.ac.in/admissions.php",
+          "rightsBasis": "Official university identifying asset, no open licence claimed; Native170×178 JPEG object26, firstpage of official2026–27PGprospectus, extracted directly with pdfimages -j without editing/reencoding. Complete blue shield, symbolic panels, sun/waves and Tamil motto visually inspected; no additional recognition text.",
+          "verificationMethod": "Native local image visually inspected using view_image; original source retained, checksum verified. Native170×178 JPEG object26, firstpage of official2026–27PGprospectus, extracted directly with pdfimages -j without editing/reencoding. Complete blue shield, symbolic panels, sun/waves and Tamil motto visually inspected; no additional recognition text.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/manonmaniam-sundaranar-university/prospectus-logo-000.jpg",
+          "sha256": "d9bb910d28068ca76a1aae28709527ff088cab3f5eefb6db2fc520998f809192",
+          "width": 170,
+          "height": 178,
+          "altText": "Manonmaniam Sundaranar University crest",
+          "proposedPublicId": "studentstraffic/universities/manonmaniam-sundaranar-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.msuniv.ac.in/images/about/5.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.msuniv.ac.in/",
+          "rightsBasis": "Official university identifying asset, no open licence claimed; OfficialAboutphotograph, native800×659. Visually inspected universitymemorialpavilion with statue, redbrickbuildings and trees; samepavilion appears in officialhomepagecampuspanorama. No ranking/banner text, no edits.",
+          "verificationMethod": "Native local image visually inspected using view_image; original source retained, checksum verified. OfficialAboutphotograph, native800×659. Visually inspected universitymemorialpavilion with statue, redbrickbuildings and trees; samepavilion appears in officialhomepagecampuspanorama. No ranking/banner text, no edits.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/manonmaniam-sundaranar-university/cover-about.jpg",
+          "sha256": "f5bb01a3fae10bc671a6fc7fbe1274b1ab2aee657830a9bc718f28ad7fef0dd7",
+          "width": 800,
+          "height": 659,
+          "altText": "Manonmaniam Sundaranar memorial pavilion on the university campus",
+          "proposedPublicId": "studentstraffic/universities/manonmaniam-sundaranar-university/cover"
+        }
+      ]
+    }
+  ]
+}

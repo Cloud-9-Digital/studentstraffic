@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-open-university",
+      "universityName": "Tamil Nadu Open University",
+      "sourceBatch": "codex-tn-tnou-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnou.ac.in/images/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and institutional photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-open-university/logo-20261025",
+          "altText": "Tamil Nadu Open University complete official crest and motto",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tnou-20261025/logo.png",
+          "sha256": "d0baf66a1947df8e01bd8728a5314fedafb4c8cc45644e7a66e130cea8a1d312",
+          "notes": "OrdinaryverifiedHTTPS200original fromcurrenthome, fullvisuallychecked. Completecrest/noaccreditationbadge substitution; officegatheringcaptionnotstudentclass/exteriorclaim. No crop/generation/upscale."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnou.ac.in/images/slider/20260917_110311.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and institutional photograph used for factual identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-open-university/cover-20261025",
+          "altText": "Participants gathered at Tamil Nadu Open University in an official university photograph",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/tnou-20261025/cover-slider1.jpg",
+          "sha256": "feaa3a00bc361fda439f12d472b256aa8194e46d656e1436b2038f6acdcf7b9b",
+          "notes": "OrdinaryverifiedHTTPS200original fromcurrenthome, fullvisuallychecked. Completecrest/noaccreditationbadge substitution; officegatheringcaptionnotstudentclass/exteriorclaim. No crop/generation/upscale."
+        }
+      ],
+      "migrationId": "0285-india-tamil-nadu-open-university"
+    }
+  ]
+}

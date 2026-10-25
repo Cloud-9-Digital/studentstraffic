@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "universityName": "The Tamil Nadu Dr. M.G.R. Medical University",
+      "sourceBatch": "codex-tn-mgr-medical-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2025/12/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and campus photograph used for factual identification and illustration; no transfer of ownership or licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/the-tamil-nadu-dr-mgr-medical-university/logo-20261025",
+          "altText": "The Tamil Nadu Dr. M.G.R. Medical University complete official crest and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgr-medical-20261025/logo.png",
+          "sha256": "f748412e15cac704ca0cede2814a6c32ef2a3ac1ef1e24115e8b4dd2ff6c97fa",
+          "notes": "NormalHTTPS200completeoriginal, visuallychecked. Fullsourceasset, no crop/upscale/generation."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/menu-img-03.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and campus photograph used for factual identification and illustration; no transfer of ownership or licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/the-tamil-nadu-dr-mgr-medical-university/cover-20261025",
+          "altText": "The Tamil Nadu Dr. M.G.R. Medical University Guindy building and landscaped entrance",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgr-medical-20261025/cover.webp",
+          "sha256": "fab4c2418876e36cf4a86ab8408dc92871ad4987bb9a8f628c37d73838904b71",
+          "notes": "NormalHTTPS200completeoriginal, visuallychecked. Fullsourceasset, no crop/upscale/generation."
+        }
+      ],
+      "migrationId": "0288-india-the-tamil-nadu-dr-mgr-medical-university"
+    }
+  ]
+}

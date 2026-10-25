@@ -1,0 +1,47 @@
+{
+  "manifestId": "india-mssw-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Complete crest crop excludes accreditation wording; full authentic campus entrance photograph.",
+  "entries": [
+    {
+      "universitySlug": "madras-school-of-social-work",
+      "universityName": "Madras School of Social Work",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://mssw.in/wp-content/uploads/2024/06/Header-Website.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://mssw.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Ordinary HTTPS retrieval returned 200; complete original and SHA256 retained. No open-licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/madras-school-of-social-work/logo",
+          "altText": "Madras School of Social Work complete college crest",
+          "localPath": "research/india-source-bundles/mssw-20261025/header.jpg",
+          "sha256": "bc1b95849d076283e1a1a757ab509c35209ea03050ca6cd9c85e0031ad8ca6c0",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 180,
+              "height": 180
+            }
+          ]
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mssw.in/wp-content/uploads/2020/03/why-choose-us.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://mssw.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Ordinary HTTPS retrieval returned 200; complete original and SHA256 retained. No open-licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/madras-school-of-social-work/cover",
+          "altText": "Entrance and academic building at Madras School of Social Work in Egmore, Chennai",
+          "localPath": "research/india-source-bundles/mssw-20261025/cover-candidate.jpg",
+          "sha256": "ce595302e37b9d8de3f2224f475c9aa2f7ca1722d5e26b9bc8c8dcba493d79fe"
+        }
+      ],
+      "migrationId": "0241-madras-school-of-social-work"
+    }
+  ]
+}

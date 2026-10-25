@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "mother-teresa-womens-university",
+      "universityName": "Mother Teresa Women's University",
+      "sourceBatch": "codex-tn-mother-teresa-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://drive.motherteresawomenuniv.ac.in/api/v1/file-entries/13694?shareable_link=828&password=null&thumbnail=",
+          "proposedPublicId": "studentstraffic/universities/mother-teresa-womens-university/logo-20261025",
+          "altText": "Mother Teresa Women’s University complete crest and motto",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or campus marketing asset used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mother-teresa-20261025/logo.original",
+          "sha256": "5a46cf6b56039c8cae57a6b2dd37d429972879fab77b074b9f2fec2aa63e9900",
+          "notes": "Direct HTTP200 original visibly embedded in current university home; full original visually inspected. No generated image, accreditation overlay or crop."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://drive.motherteresawomenuniv.ac.in/api/v1/file-entries/13697?shareable_link=831&password=null&thumbnail=",
+          "proposedPublicId": "studentstraffic/universities/mother-teresa-womens-university/cover-20261025",
+          "altText": "Administrative block and landscaped garden at Mother Teresa Women’s University, Kodaikanal",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or campus marketing asset used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mother-teresa-20261025/slide1.original",
+          "sha256": "638f36a539593c69444ba512dfbd18a6568ebea7202ee400a76ae8c0217cfc88",
+          "notes": "Direct HTTP200 original visibly embedded in current university home; full original visually inspected. No generated image, accreditation overlay or crop."
+        }
+      ],
+      "migrationId": "0264-india-mother-teresa-womens-university"
+    }
+  ]
+}

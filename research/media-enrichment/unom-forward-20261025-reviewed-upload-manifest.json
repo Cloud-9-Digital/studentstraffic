@@ -1,0 +1,44 @@
+{
+  "manifestId": "unom-forward-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Preserve university identity/logo; replace inherited CommonsCCBYSA cover with genuine current official university-owned SenateHouse photograph.",
+  "entries": [
+    {
+      "universitySlug": "university-of-madras",
+      "universityName": "University of Madras",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://egovernance.unom.ac.in/CBCS2627/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://egovernance.unom.ac.in/CBCS2627/",
+          "rightsBasis": "Official university identifying asset/campus photograph; no open licence claimed.",
+          "verificationMethod": "Complete native420x100 official admissions-portal crest/wordmark visually inspected; no NAAC appended seal.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/university-of-madras-expansion-20261025/logo.png",
+          "sha256": "3efa89547e8a3df5b62dfa3bc54f3cba9883c9edcff1d5f5ebde50f7e9a8ff7c",
+          "width": 420,
+          "height": 100,
+          "altText": "University of Madras crest and bilingual wordmark",
+          "proposedPublicId": "studentstraffic/universities/university-of-madras/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.unom.ac.in/image/data/slider/IMG_1610%20%281%29.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.unom.ac.in/",
+          "rightsBasis": "Official university identifying asset/campus photograph; no open licence claimed.",
+          "verificationMethod": "Full4032x3024 current official-homepage SenateHouse photograph visually inspected. Redbrick facade,domes,IheartUNOM frontage,trees and incidental campus visitors. Genuine photograph, no composite/render; official host replaces old attribution-requiring Commons asset.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/university-of-madras-expansion-20261025/official-campus.jpg",
+          "sha256": "1f82c69b7751c0da1f4633ee57957bfe2135b5d7bbd89ec0afcae4d4d5da8a41",
+          "width": 4032,
+          "height": 3024,
+          "altText": "University of Madras Senate House at Chepauk",
+          "proposedPublicId": "studentstraffic/universities/university-of-madras/cover"
+        }
+      ],
+      "migrationId": "0296-india-university-of-madras-expansion"
+    }
+  ]
+}

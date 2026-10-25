@@ -19,3 +19,11 @@ All 13 supported routes have isolated native annual tuition: INR 2,400 for non-C
 Category provisions are conditional: eligible Tamil Nadu SC/ST and converted-Christian scholarship reimbursement terms do not mean universally free tuition; the source requires remittance after government reimbursement. Disability tuition/special-fee concessions require prescribed proof. Foreign-category totals, hostel/mess and deposits not included.
 
 Empty intake arrays with omit evidence; no cohort/orientation hunt. No DB, uploads, publication or commit.
+
+## Bounded M.A. English rescue —25October2026
+
+Current own directory explicitly lists MAEnglish; authenticated institution-authored PG2023 mirror fullPDF defines2year4sem and section2 exact qualifying routes: BAEnglish main or namedPartIIEnglish alternate with55% clause, otheruniversity equivalence viaSyndicate. No blanket55% condition imposed onEnglish-major route. GeneralEnglishmedium excludes languageprogrammes, so new language/codes empty withomit evidence, intakealsoempty. Isolated annual2400 tuition fromeffective2025–26 currentlinked PGnonCSschedule, extra charges/concessions separate. Full14draft preserves original13 programmeobjects/fees and populated mirroredofficialmedia attribution exact0263; no reservation or DB duringGroup34. Other39 minus1 holds remainactual qualification/nomenclature/integrated/professional/research scope gaps.
+
+## Frozen complete forward
+
+0338-india-thiruvalluvar-english-academic-rescue:14programmes,1new; numberedreader0warnings. Ledger validated14, parent publication pending. Original13 otherwise exact0263 with two same-language order normalizations documented; populatedmedia exact.

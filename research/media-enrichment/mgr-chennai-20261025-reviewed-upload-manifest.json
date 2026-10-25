@@ -1,0 +1,44 @@
+{
+  "manifestId": "mgr-chennai-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Mandatory authentic university crest and Chennai campus photograph for60regulardegrees; unchanged originals/checksums, no worker upload.",
+  "entries": [
+    {
+      "universitySlug": "dr-mgr-educational-and-research-institute",
+      "universityName": "Dr. M.G.R. Educational and Research Institute",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://drmgrdu.ac.in/wp-content/uploads/2025/05/drmgr_logo.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://drmgrdu.ac.in/",
+          "rightsBasis": "Official university-owned institutional identifying asset; no open licence claimed. Native150×150officialidentifyingcrest, purple/yellowshieldwithmedical/study/musicsymbols,wreathandmotto; fullinstitutionnameencirclescrest. Visuallyinspectednativeimage.Noedit.",
+          "verificationMethod": "Native150×150officialidentifyingcrest, purple/yellowshieldwithmedical/study/musicsymbols,wreathandmotto; fullinstitutionnameencirclescrest. Visuallyinspectednativeimage.Noedit.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dr-mgr-educational-and-research-institute/crest.jpg",
+          "sha256": "5b709bc2db4a52ebf5aed46e4decffc2f48f5b0b3077bf3c7787e0e807921c04",
+          "width": 150,
+          "height": 150,
+          "altText": "Dr. M.G.R. Educational and Research Institute crest",
+          "proposedPublicId": "studentstraffic/universities/dr-mgr-educational-and-research-institute/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://drmgrdu.ac.in/wp-content/uploads/2026/04/drmgr_new_overview.avif",
+          "sourceType": "official",
+          "sourcePage": "https://drmgrdu.ac.in/",
+          "rightsBasis": "Official university-owned institutional identifying asset; no open licence claimed. Native990×680officialhomepageoverviewphotograph: namedDrMGRuniversityglass-frontbuilding,AshaBlock,courtyardandstatue. NotARNI/Bengalurumedia. AVIForiginalunaltered; losslessPNGdecodeonlyforview_imageinspection because toolrejectsAVIF. Noresize/crop/syntheticcontent.",
+          "verificationMethod": "Native990×680officialhomepageoverviewphotograph: namedDrMGRuniversityglass-frontbuilding,AshaBlock,courtyardandstatue. NotARNI/Bengalurumedia. AVIForiginalunaltered; losslessPNGdecodeonlyforview_imageinspection because toolrejectsAVIF. Noresize/crop/syntheticcontent.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dr-mgr-educational-and-research-institute/overview.avif",
+          "sha256": "7463d3a8e67008aaeefa1754ca499fade49a1f6ecfb3a46c35c4f3530a8b6387",
+          "width": 990,
+          "height": 680,
+          "altText": "Dr. M.G.R. university building and Asha Block around a campus courtyard",
+          "proposedPublicId": "studentstraffic/universities/dr-mgr-educational-and-research-institute/cover"
+        }
+      ],
+      "migrationId": "0267-india-dr-mgr-educational-and-research-institute"
+    }
+  ]
+}

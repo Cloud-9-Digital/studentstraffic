@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sai-university",
+      "universityName": "Sai University",
+      "sourceBatch": "codex-tn-sai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://static.wixstatic.com/media/d758b6_fb666055b6b14ef0aa1af58a1f35e1a0~mv2.png",
+          "proposedPublicId": "studentstraffic/universities/sai-university/logo-20261025",
+          "altText": "Sai University complete symbol and wordmark",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand or genuine campus marketing photograph used for factual identification and illustration; no ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/sai-university-20261025/logo.png",
+          "sha256": "24a3f4a00be974885e7bce9c7c4af1a974ba4e00be362323b31810b178a6613c",
+          "notes": "DirectHTTP200 original embedded in current official admissions page. Visually viewed full original. No AI or stock11062b image used. Full symbol/wordmark retained, no crop/upscaling claim."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://static.wixstatic.com/media/0afba6_c380158111f6447cbbb12d78d30eadde~mv2.jpg",
+          "proposedPublicId": "studentstraffic/universities/sai-university/cover-20261025",
+          "altText": "Students outside the School of Arts and Sciences building at Sai University, Paiyanur",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand or genuine campus marketing photograph used for factual identification and illustration; no ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/sai-university-20261025/photo1.jpg",
+          "sha256": "564f68b5a504228dc5bfd74e8813a56f2783a97755739dc6fe845e61188997c6",
+          "notes": "DirectHTTP200 original embedded in current official admissions page. Visually viewed full original. No AI or stock11062b image used. Full symbol/wordmark retained, no crop/upscaling claim."
+        }
+      ]
+    }
+  ]
+}

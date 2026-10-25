@@ -1,0 +1,21 @@
+# Chennai Institute of Technology — held source audit
+
+Checked25October2026; owner codex-cit-chennai-20261025.23inventoryrows:14regularUG,4ME,one broadresearch discovery and4embedded/pathway/advanced-entry discoveries. Institution is autonomous CITKundrathur, TNEA1399, distinct from ChennaiInstituteofTechnology&AppliedResearch and CoimbatoreInstituteofTechnology.
+
+Current admission CMS lists14UGand4ME; currentR24curricula linked under2024–28cohort (13R24links, CyberSecurityR24disabled; R22revised14links). Currentinternationalpage explicitly4yr8semesters and14branches; foreign/OCI requires12yrPCM,AIUequivalence andpriorEnglishmediumproof;SATscoresaccepted. These are not proof of current teaching language. Fourteendegree inventory includes ElectronicsCommunicationAdvancedCommunicationTechnology presentcurrentadmissionsandR24curriculum but omittedhomepage.
+
+## Actual blocker
+
+Explicit current teaching medium not located after targeted official,currentcurriculum,internationaladmission,academiccouncil,archivedofficial and credible secondary searches. Only primary clause found is old2013AnnaUniversity(nonautonomous) UGRegulationEnglishexceptTamilmedium. Currentcollegeautonomous2022and2024regulation supersedesacademicrules; cannot inherit2013ascurrentpolicy. CurrentR24CSE210+pagecurriculum reviewed containsEnglishcommunicationcourses, notmediumrule.2025individualgraduateLinkedInMOIcertificate cannot establish allnewprogrammes. Lowqualityaggregator Englishclaim andEnglishcurriculumtext not enough. Noexecutablebundlecreated.
+
+## Intake evidence
+
+OfficialcollegeLinkedIn https://www.linkedin.com/posts/chennai-institute-of-technology_cit-studentinductionday-citians-activity-7366854651381440514-WnIc explicitlyfirstyear2025-26induction28August2025. Current2026welcomelettermirror https://www.scribd.com/document/1068777621/Welcome-Letter-for-BUILD-X saysregularfirstyearlastweekAugust2026 but informalSeptemberclaims conflict; useprecise2025baselinewithscopeonlyifothergatesresolve. PG exactentryintakeunverified. No futurepromise.
+
+## Other sources
+
+PublicCMSread fromordinaryfrontendAPIpages storedjson (withslugandpublicationdates), notDBaccess. Currentglobaladmissionsectionisalready2027whilemetadata2026; cannot inventfuturewindow. Existing2026TNEAgovernmentcollege-informationentry1399supportsautonomousinstitutionand14branchcodes; do notconfuseapprovedcapacitywithintakemonth. CurrentMEadmissionpage listsCADCAM/CSE/AppliedElectronicsprerequisitesbutnotVLSI. Feeonrequestpendingcurrentcomponent-wiseofficialquote. No professionalforeignpermission inferred.
+
+Currentcurriculumpage explicitly says controlledcopiesarebeingupdated. OldwordpressPDFcurlroutesreturn403136bytesor410/oldhostempty; publicwebindexed2022AcademicCouncil6pagesdoesnotcontainfullappendixregulations. Preservegapratherthanclaimdocumentsunavailableeverywhere.
+
+NoDB,noCloudinary,noreservation,noexecutablenumberedpayload,nocommit.

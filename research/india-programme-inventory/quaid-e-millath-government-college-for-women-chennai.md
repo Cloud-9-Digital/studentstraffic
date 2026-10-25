@@ -1,0 +1,11 @@
+# Quaid-E-Millath Government College for Women, Chennai
+
+Checked25October2026, lockedowner codex-tn-qmgcw-20261025. Distinct governmentwomeninstitution at74BinnyRoad/AnnaSalai, qmgcw.edu.in, UniversityMadrasaffiliate; not men’scollege or othercities.
+
+50rowinventory:25currentUGshift/mediumroutes ready;12PG,12researchfields and1restrictedDiploma discovery held. Current2026TNGASA fullbooklet page6 independently identifies exactcollegecode1012006/routes; duplicateBComadditionalsectionconsolidated. Owncurrent2026UGadmissionpage/fees and2025admittedtables crosscorroboratecontinuation. Own2020fullCBCSsyllabicollection explicitly3academic years6semestersallUG. ApplicablecurrentDCE7May2026 exactsubject/age/categoryrules used; ownundated24yearagerule stale, notapplied. No genericPGprerequisites inferred.
+
+Current own signed2026–27 first-yearUGtable visuallyread:BA/BCom/Math2235,labsciences2255,CS2355 combinednetcharges. Isolatedtuitionon_request, notzero, noannualisation/fullcourseprojection. KnownlanguageonlywhereE/M/T/Mexplicitin2026matrix; English/Tamildegreeinstructionnotinferred. Intakeomitted,nodatehunts.
+
+UGCowncurrentautonomousregisterrow1308records2023–24to2027–28 andMadrasaffiliation. Solevalidbadge GradeA linked; ownNAACB++expired28Feb2026 soexcluded. AICTEcurrent2026MCAEOA exact60seats/NRIIntlNo retained, notattributedtoallacademicdegrees. PG/MCAcurrententrygaps held, notunapproved/absent.
+
+Mandatorygenuine media:complete119x90officialcrest from ownheader and700x200 libraryentrancephoto embeddedownlibrarypage. Homepagecollage anddigitallycollagedhistoricalstudiesphoto rejected. Fulloriginals/checksums/rights/localpaths in reviewedmanifest. No DB/upload/reservation/commit;draftonlyduringrootfreeze.

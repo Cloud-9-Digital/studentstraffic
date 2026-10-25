@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "meenakshi-academy-of-higher-education-and-research",
+      "universityName": "Meenakshi Academy of Higher Education and Research",
+      "sourceBatch": "codex-maher-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://images.maher.ac.in/wp-content/uploads/2022/11/MAHER-LOGO-NEW_1-1024x235.png",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine constituent-campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/meenakshi-academy-of-higher-education-and-research/logo-20261025",
+          "altText": "MAHER full institutional wordmark with complete circular seal and motto",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/maher-chennai-20261025/logo-original.png",
+          "sha256": "7dbadd6be943271f738886a546b31c1357f71c874ad4b39526305e3e030378fe",
+          "width": 1024,
+          "height": 235,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native institution-hosted wordmark, no crop/upscale.",
+          "visualReview": "Full local original visually inspected: intact university seal/wordmark; genuine named constituentmedical building, no whole-university single-campus implication."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://images.maher.ac.in/wp-content/uploads/2026/04/updated-MAHER-PROSPECTUS-2025.pdf",
+          "sourceType": "official-university-prospectus",
+          "rightsBasis": "Institution-published original retained for university identification and genuine constituent-campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/meenakshi-academy-of-higher-education-and-research/cover-20261025",
+          "altText": "Meenakshi Medical College Hospital and Research Institute building at Enathur, a MAHER constituent campus",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/maher-chennai-20261025/prospectus-media/page6-000.png",
+          "sha256": "46904da3b86cb78d325238e6b2645e8475a690814777af28b66b4299575204ae",
+          "width": 1001,
+          "height": 1296,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original embedded image object756, PDFpage6, extracted losslessly toPNG with pdfimages. Full34-page own2025\u201326 prospectus retained; publishedApril2026path, PDFmodifiedAugust2025. Surrounding collage/render retained separately; no artificial reconstruction, crop or upscale.",
+          "visualReview": "Full local original visually inspected: intact university seal/wordmark; genuine named constituentmedical building, no whole-university single-campus implication."
+        }
+      ],
+      "migrationId": "0281-india-meenakshi-academy-of-higher-education-and-research"
+    }
+  ]
+}

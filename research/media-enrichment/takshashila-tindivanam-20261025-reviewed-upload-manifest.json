@@ -1,0 +1,44 @@
+{
+  "manifestId": "takshashila-tindivanam-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Reviewed original university wordmark and campus student scene; no worker upload.",
+  "entries": [
+    {
+      "universitySlug": "takshashila-university",
+      "universityName": "Takshashila University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://takshashilauniv.ac.in/wp-content/uploads/2025/01/logo-new.png",
+          "sourceType": "official",
+          "sourcePage": "https://takshashilauniv.ac.in/about-us/",
+          "rightsBasis": "Official university-owned identifying media; no open licence claimed.",
+          "verificationMethod": "Complete native orange symbolic emblem and university wordmark on transparent background; visually inspected, no editing.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/takshashila-university-20261025/logo.png",
+          "sha256": "a3b72c77c2661e08e06df2d50de60d20421beab0868707ec8d6216428999898e",
+          "width": 500,
+          "height": 148,
+          "altText": "Takshashila University wordmark",
+          "proposedPublicId": "studentstraffic/universities/takshashila-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://takshashilauniv.ac.in/wp-content/uploads/2025/02/Campus-2.webp",
+          "sourceType": "official",
+          "sourcePage": "https://takshashilauniv.ac.in/about-us/",
+          "rightsBasis": "Official university-owned identifying media; no open licence claimed.",
+          "verificationMethod": "Official campus photograph of three students holding academic books in a corridor; university lanyards visible. Visually inspected original. Rejected newer About-Page promotional composite as potentially synthetic; not used.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/takshashila-university-20261025/campus.webp",
+          "sha256": "7eb8813dcf5b54bb75157d85a0543085770c19ff7c89ca24e20df132dc48c96f",
+          "width": 1008,
+          "height": 672,
+          "altText": "Takshashila University students with academic books in a campus corridor",
+          "proposedPublicId": "studentstraffic/universities/takshashila-university/cover"
+        }
+      ],
+      "migrationId": "0276-india-takshashila-university"
+    }
+  ]
+}

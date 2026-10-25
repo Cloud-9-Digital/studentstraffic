@@ -1,0 +1,44 @@
+{
+  "manifestId": "scsvmv-kanchipuram-20261025-reviewed-media",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Mandatory authentic crest and regular Enathur campus image; original files and checksums, no worker upload.",
+  "entries": [
+    {
+      "universitySlug": "sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+      "universityName": "Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0273-india-sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://kanchiuniv.ac.in/wp-content/uploads/2020/09/logo_bl-340x306.png",
+          "sourceType": "official",
+          "sourcePage": "https://kanchiuniv.ac.in/",
+          "rightsBasis": "Official university-owned institutional identifying asset; no open licence claimed.",
+          "verificationMethod": "Complete native gold and orange university seal with blue SCSVMV ribbon and transparent edges. Visually inspected at native dimensions, no crop or enlargement.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/scsvmv-kanchipuram-20261025/logo.png",
+          "sha256": "bb77e2a87596fb09e81335ae4f1275090065ce2ccd2a72db67bf54330926576f",
+          "width": 340,
+          "height": 306,
+          "altText": "SCSVMV university crest",
+          "proposedPublicId": "studentstraffic/universities/sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://kanchiuniv.ac.in/wp-content/uploads/2020/09/slide1.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://kanchiuniv.ac.in/",
+          "rightsBasis": "Official university-owned institutional identifying asset; no open licence claimed.",
+          "verificationMethod": "Official homepage campus photograph: ornate blue and white library, statue pavilion, pink academic blocks, gardens and buses. Native image visually inspected, no editing or synthetic content.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/scsvmv-kanchipuram-20261025/campus.jpg",
+          "sha256": "d75043c6098646bc863fa38cb49ca7853db82959856fd55a234d4e4d42ca4e1d",
+          "width": 1920,
+          "height": 840,
+          "altText": "SCSVMV campus panorama with library, monument and landscaped grounds",
+          "proposedPublicId": "studentstraffic/universities/sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya/cover"
+        }
+      ]
+    }
+  ]
+}

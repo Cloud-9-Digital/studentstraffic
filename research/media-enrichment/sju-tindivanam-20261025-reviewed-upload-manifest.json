@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "st-joseph-university-villupuram",
+      "universityName": "St Joseph University",
+      "sourceBatch": "codex-tn-sju-tindivanam-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://sju.ac.in/wp-content/uploads/2024/07/SJU-NEW-LOGO-HEADER.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and academic-life photography used for factual institution identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/st-joseph-university-villupuram/logo-20261025",
+          "altText": "St Joseph University complete official emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/sju-tindivanam-20261025/logo.png",
+          "sha256": "703a3592d27cb0169f6c09431a08cbf6f14b96763916f4bb818523156ed84f91",
+          "notes": "Full ordinaryHTTPS200 original, visuallychecked. No crop/generation/upscale; library caption does not claim an exterior or unverified precise building/campus."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://sju.ac.in/wp-content/uploads/2025/03/DSC_0275.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university brand and academic-life photography used for factual institution identification and illustration; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/st-joseph-university-villupuram/cover-20261025",
+          "altText": "Students studying in the library reading area shown on St Joseph University’s official website",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/sju-tindivanam-20261025/cover-home.webp",
+          "sha256": "a615c257b9708141c7cc1aa1921277b78074d6bd6e84c682f43f47f2df768fed",
+          "notes": "Full ordinaryHTTPS200 original, visuallychecked. No crop/generation/upscale; library caption does not claim an exterior or unverified precise building/campus."
+        }
+      ],
+      "migrationId": "0282-india-st-joseph-university-villupuram"
+    }
+  ]
+}

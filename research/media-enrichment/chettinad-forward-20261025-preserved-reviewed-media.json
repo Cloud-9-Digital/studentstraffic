@@ -1,0 +1,27 @@
+{
+  "manifestId": "chettinad-forward-20261025-preserved-media",
+  "status": "preserve-applied-media-no-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Same genuine reviewed official full logo and Kelambakkam campus photograph, no new upload requested. Original0283 absent Cloudinary URL keys remain absent from update set.",
+  "reviewedOriginalManifest": "research/media-enrichment/chettinad-kelambakkam-20261025-reviewed-upload-manifest.json",
+  "mediaAttribution": {
+    "logo": {
+      "sourceUrl": "https://care.edu.in/wp-content/uploads/2019/07/logo.png",
+      "rights": "Official university identifying wordmark; no open licence claimed.",
+      "checkedAt": "2026-10-25"
+    },
+    "cover": {
+      "sourceUrl": "https://care.edu.in/wp-content/uploads/2020/07/building-about-care.jpg",
+      "rights": "Official Chettinad Health City administration/campus photograph; no open licence claimed.",
+      "checkedAt": "2026-10-25",
+      "altText": "Chettinad Academy administration building and landscaped Kelambakkam campus"
+    }
+  },
+  "entries": [
+    {
+      "universitySlug": "chettinad-academy-of-research-and-education",
+      "universityName": "Chettinad Academy of Research and Education",
+      "assets": []
+    }
+  ]
+}

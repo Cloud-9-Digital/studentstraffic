@@ -1,0 +1,35 @@
+{
+  "manifestId": "amrita-forward-20261025-preserved-media",
+  "status": "preserve-applied-media-no-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Preserve applied media. Original0093 has no URL keys; publisher omits absent keys from update set. Official reviewed logo and genuine Coimbatore drone sources retained; no upload requested.",
+  "reviewedOriginalManifest": "research/media-enrichment/india-pilot-upload-manifest.json",
+  "sourceProvenance": {
+    "universitySlug": "amrita-vishwa-vidyapeetham",
+    "universityName": "Amrita Vishwa Vidyapeetham",
+    "sourceBatch": "india-pilot-batch-2.json",
+    "assets": [
+      {
+        "kind": "logo",
+        "sourceUrl": "https://webfiles.amrita.edu/2026/02/amrita-red-logo-new.svg",
+        "sourceType": "official",
+        "rightsBasis": "Official brand asset served from the university's own CDN (webfiles.amrita.edu) and rendered as the header logo (alt text \"Amrita Vishwa Vidyapeetham\") on the university's own homepage (www.amrita.edu) as of this check; also referenced on the official branding guidelines page at www.amrita.edu/branding/. URL resolves HTTP 200, image/svg+xml.",
+        "proposedPublicId": "studentstraffic/universities/amrita-vishwa-vidyapeetham/logo"
+      },
+      {
+        "kind": "cover",
+        "sourceUrl": "https://webfiles.amrita.edu/2020/05/2w4fqsOS-amrita-vishwa-vidyapeetham-coimbatore-campus-dron-photo-1.jpg",
+        "sourceType": "official",
+        "rightsBasis": "Official institutional image served from the university's own CDN and used as the hero/background banner on the university's own Coimbatore campus page (www.amrita.edu/campus/coimbatore/). The filename itself identifies it as an aerial/drone photograph of the Coimbatore campus, which matches this payload's record city (Coimbatore) and its Coimbatore-campus programme and accreditation content. URL resolves HTTP 200, image/jpeg.",
+        "proposedPublicId": "studentstraffic/universities/amrita-vishwa-vidyapeetham/cover"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "universitySlug": "amrita-vishwa-vidyapeetham",
+      "universityName": "Amrita Vishwa Vidyapeetham",
+      "assets": []
+    }
+  ]
+}

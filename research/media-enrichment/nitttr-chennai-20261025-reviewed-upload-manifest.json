@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "universityName": "National Institute of Technical Teachers Training and Research, Chennai",
+      "sourceBatch": "codex-root-nitttr-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.nitttrc.ac.in/nitttr/assets/img/new-logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Institution-published original for factual profile identification; no open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technical-teachers-training-and-research-chennai/logo-20261025",
+          "altText": "NITTTR Chennai complete official emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/nitttr-chennai-20261025/logo.png",
+          "sha256": "6f7df8546f96a6ebb7fe3247debf940f18691c61f0c9c13b3b4d28dd2efa9549",
+          "uploadFromReviewedLocalOriginal": true,
+          "notes": "Root visually inspected full original without cropping or enlargement; campus aerial retains original institutional text. Overview infographic excluded."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.nitttrc.ac.in/nitttr_updated/assets/img/portfolio/templeoflearn.jpeg",
+          "sourceType": "official-university",
+          "rightsBasis": "Institution-published original for factual profile identification; no open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/national-institute-of-technical-teachers-training-and-research-chennai/cover-20261025",
+          "altText": "Official aerial photograph of the NITTTR Chennai campus at Taramani",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/nitttr-chennai-20261025/campus-temple.jpeg",
+          "sha256": "223d05ac31c5270ff55a0d837c8429598296461e3bd20688f404e439b6b672bd",
+          "uploadFromReviewedLocalOriginal": true,
+          "notes": "Root visually inspected full original without cropping or enlargement; campus aerial retains original institutional text. Overview infographic excluded."
+        }
+      ],
+      "migrationId": "0284-india-nitttr-chennai"
+    }
+  ]
+}

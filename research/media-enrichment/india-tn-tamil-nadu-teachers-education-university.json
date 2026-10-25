@@ -1,0 +1,31 @@
+{
+  "manifestId": "india-tn-tnteu-20261025",
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "universityName": "Tamil Nadu Teachers Education University",
+      "sourceBatch": "tn-group28-20261025",
+      "migrationId": "0316-india-tamil-nadu-teachers-education-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnteu.ac.in/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnteu.ac.in/",
+          "rightsBasis": "Official TNTEU logo served from the university's own domain and used site-wide in the header and footer. No open licence or ownership transfer claimed; used only to identify the institution. Checked 2026-10-25: HTTP 200, content-type image/png, 26,435 bytes, 157x126 px, RGBA. Rendered on a white tile and visually confirmed: blue circular crest with the Tamil and English university names, green shield with book/figures and the 'Truth Alone Triumphs' motto scroll, all legible. CAVEAT: small raster (157 px wide); no larger or SVG official variant found; several guessed logo paths returned 404.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-teachers-education-university/logo"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnteu.ac.in/images/university/Faculty%20Building%201.JPG",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnteu.ac.in/faculty_building.php",
+          "rightsBasis": "Official campus photograph served from the university's own domain and used on the Faculty Building infrastructure page. No open licence stated; official institutional image used to identify the campus, same basis as earlier official covers in research/media-enrichment. Checked 2026-10-25: HTTP 200, content-type image/jpeg, 351,154 bytes, 1024x768 px (landscape). Visual confirmation: single real exterior of the three-storey Faculty Building with the university name board over the entrance, planted forecourt, parked two-wheelers and one distant figure at the left edge; no identifiable close-up faces. The related 'Faculty Building.jpg' was rejected because it is a composite with an added green band.",
+          "altText": "Faculty Building at Tamil Nadu Teachers Education University, Karapakkam, Chennai, with the university name board over the entrance and a planted forecourt",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-teachers-education-university/cover"
+        }
+      ]
+    }
+  ]
+}

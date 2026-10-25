@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "vinayaka-missions-research-foundation",
+      "universityName": "Vinayaka Mission’s Research Foundation",
+      "sourceBatch": "codex-vmrf-salem-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.vmrfdu.edu.in/img/vmrfdu.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine Salem campus context. No open licence or ownership transfer is claimed.",
+          "proposedPublicId": "studentstraffic/universities/vinayaka-missions-research-foundation/logo-20261025",
+          "altText": "Vinayaka Mission’s Research Foundation complete institutional seal and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/vmrf-salem-20261025/logo-header.jpg",
+          "sha256": "f40f1a1d03637eef31b435c84e341d878fc167cd13174ebc672175cc41b60f93",
+          "width": 2082,
+          "height": 560,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native institution-hosted original; no crop, upscale or reconstruction.",
+          "visualReview": "Full original reviewed by research worker and root integrator. Logo retains complete seal and legal wordmark. Cover is a genuine Salem building night aerial, not a claim about every constituent campus or a dated current cohort."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.vmrfdu.edu.in/img/home_gallery/college.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine Salem campus context. No open licence or ownership transfer is claimed.",
+          "proposedPublicId": "studentstraffic/universities/vinayaka-missions-research-foundation/cover-20261025",
+          "altText": "Night aerial view of the domed VMRF university building at Salem",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/vmrf-salem-20261025/college.jpg",
+          "sha256": "4fccb78b602cc248be9138bf7f8a27f3fe7dd1e7b322f6dae567b74fa8f0515f",
+          "width": 2677,
+          "height": 1800,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native institution-hosted original; no crop, upscale or reconstruction.",
+          "visualReview": "Full original reviewed by research worker and root integrator. Logo retains complete seal and legal wordmark. Cover is a genuine Salem building night aerial, not a claim about every constituent campus or a dated current cohort."
+        }
+      ],
+      "migrationId": "0286-india-vinayaka-missions-research-foundation"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "manifestId": "annamalai-main-forward-20261025-preserved-media",
+  "status": "preserve-applied-media-no-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Same institution/full forward. Existing applied media retained, no new source/image URL keys or uploads.",
+  "baselineMigration": "0294-india-annamalai-villupuram-extension-expansion",
+  "mediaAttribution": {
+    "logo": {
+      "sourceUrl": "https://www.annamalaiuniversity.ac.in/images/headerk1.png",
+      "rights": "Official university identifying crest from its own homepage header. No open licence claimed. Reviewed 1500\u00d7191 source; incoming crop x350,y30,width110,height100 retains the complete coloured crest and ribbon, excluding the long wordmark and accreditation line so the crest is legible at catalogue thumbnail size. No alteration of brand artwork.",
+      "checkedAt": "2026-10-25"
+    },
+    "cover": {
+      "sourceUrl": "https://www.annamalaiuniversity.ac.in/assets/img/slideshow/2.jpg",
+      "rights": "Official university homepage photograph of the administrative clocktower building and landscaped grounds; no open licence claimed. JPEG1100x550 inspected25October2026. Crop top42pixels to remove caption while retaining clocktower, actual building and grounds; no synthetic content.",
+      "checkedAt": "2026-10-25",
+      "altText": "Annamalai University administrative clocktower building behind palms and landscaped lawns"
+    }
+  },
+  "entries": [
+    {
+      "universitySlug": "annamalai-university",
+      "universityName": "Annamalai University",
+      "assets": []
+    }
+  ]
+}

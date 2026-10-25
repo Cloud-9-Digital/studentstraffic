@@ -1,0 +1,29 @@
+{
+  "manifestId": "bdu-forward-20261025-preserved-reviewed-media",
+  "status": "preserve-applied-media-no-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Full forward retains both applied Cloudinary asset URLs and source attribution byte-for-byte; no upload requested.",
+  "reviewedOriginalManifest": "research/media-enrichment/india-tn-universities-bharathidasan-university.json",
+  "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792866240/studentstraffic/universities/bharathidasan-university/logo.png",
+  "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792866242/studentstraffic/universities/bharathidasan-university/cover.jpg",
+  "mediaAttribution": {
+    "logo": {
+      "sourceUrl": "https://www.bdu.ac.in/forms/logo/emp-png.png",
+      "rights": "Official emblem explicitly offered for download by Bharathidasan University. Used solely for institutional identification; no open licence claimed. HTTP 200 image/png, 480x406 pixels; inspected on a white background and legible with blue text, lotus and portrait.",
+      "checkedAt": "2026-10-24"
+    },
+    "cover": {
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bharathidasan_University_Campus_%2839583909894%29.jpg/1280px-Bharathidasan_University_Campus_%2839583909894%29.jpg",
+      "rights": "Photograph by deadrat.in, 26 January 2018, CC0 1.0 public domain dedication verified on Wikimedia Commons; Flickr licence reviewed by FlickreviewR 2 on 16 February 2018. HTTP 200 image/jpeg; 1280x960 rendition. Inspected: a real photograph of the Centre of Excellence in Life Sciences building at Palkalaiperur, behind its garden gate, without a text overlay.",
+      "checkedAt": "2026-10-24",
+      "altText": "Centre of Excellence in Life Sciences building behind a garden gate on Bharathidasan University\u2019s Palkalaiperur campus"
+    }
+  },
+  "entries": [
+    {
+      "universitySlug": "bharathidasan-university",
+      "universityName": "Bharathidasan University",
+      "assets": []
+    }
+  ]
+}
