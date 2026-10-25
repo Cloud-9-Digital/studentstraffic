@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/tndalu-llm-business-law",
+    "kind": "programme",
+    "slug": "tndalu-llm-business-law",
+    "status": 200,
+    "h1": "LLM at Tamil Nadu Dr. Ambedkar Law University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/prist-b-a-english",
+    "kind": "programme",
+    "slug": "prist-b-a-english",
+    "status": 200,
+    "h1": "B.A. English at Ponnaiyah Ramajayam Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/tamil-nadu-dr-ambedkar-law-university",
+    "kind": "university",
+    "slug": "tamil-nadu-dr-ambedkar-law-university",
+    "status": 200,
+    "h1": "Tamil Nadu Dr. Ambedkar Law University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/ponnaiyah-ramajayam-institute-of-science-and-technology",
+    "kind": "university",
+    "slug": "ponnaiyah-ramajayam-institute-of-science-and-technology",
+    "status": 200,
+    "h1": "Ponnaiyah Ramajayam Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/madurai-kamaraj-university",
+    "kind": "university",
+    "slug": "madurai-kamaraj-university",
+    "status": 200,
+    "h1": "Madurai Kamaraj University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mku-m-sc-biotechnology",
+    "kind": "programme",
+    "slug": "mku-m-sc-biotechnology",
+    "status": 200,
+    "h1": "M.Sc. Biotechnology at Madurai Kamaraj University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/st-peters-institute-of-higher-education-and-research",
+    "kind": "university",
+    "slug": "st-peters-institute-of-higher-education-and-research",
+    "status": 200,
+    "h1": "St. Peter&#x27;s Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/spiher-btech-data-science",
+    "kind": "programme",
+    "slug": "spiher-btech-data-science",
+    "status": 200,
+    "h1": "B.E./B.Tech Data Science at St. Peter&#x27;s Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/scsvmv-b-sc-cyber-security",
+    "kind": "programme",
+    "slug": "scsvmv-b-sc-cyber-security",
+    "status": 200,
+    "h1": "Bachelor’s Cybersecurity at Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+    "kind": "university",
+    "slug": "sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+    "status": 200,
+    "h1": "Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya",
+    "pass": true
+  }
+]

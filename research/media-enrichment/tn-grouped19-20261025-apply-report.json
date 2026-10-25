@@ -1,0 +1,39 @@
+{
+  "appliedAt": "2026-10-25T08:13:25.826Z",
+  "uploads": {
+    "attempted": 8,
+    "succeeded": 8,
+    "failed": 0
+  },
+  "database": {
+    "updated": 4,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "tamil-nadu-dr-ambedkar-law-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "ponnaiyah-ramajayam-institute-of-science-and-technology",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "madurai-kamaraj-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

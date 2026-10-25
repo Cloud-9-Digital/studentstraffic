@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/tamil-nadu-dr-ambedkar-law-university",
+    "status": 200,
+    "slug": "tamil-nadu-dr-ambedkar-law-university",
+    "expectedCount": 13,
+    "actualCount": 13,
+    "blankMedium": 2,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/ponnaiyah-ramajayam-institute-of-science-and-technology",
+    "status": 200,
+    "slug": "ponnaiyah-ramajayam-institute-of-science-and-technology",
+    "expectedCount": 24,
+    "actualCount": 24,
+    "blankMedium": 24,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/madurai-kamaraj-university",
+    "status": 200,
+    "slug": "madurai-kamaraj-university",
+    "expectedCount": 39,
+    "actualCount": 39,
+    "blankMedium": 38,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/st-peters-institute-of-higher-education-and-research",
+    "status": 200,
+    "slug": "st-peters-institute-of-higher-education-and-research",
+    "expectedCount": 27,
+    "actualCount": 27,
+    "blankMedium": 0,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+    "status": 200,
+    "slug": "sri-chandrasekharendra-saraswathi-viswa-mahavidyalaya",
+    "expectedCount": 39,
+    "actualCount": 39,
+    "blankMedium": 39,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  }
+]
