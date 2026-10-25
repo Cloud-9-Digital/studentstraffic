@@ -1,0 +1,68 @@
+[
+  {
+    "name": "mgr-city",
+    "status": 200,
+    "universities": [
+      {
+        "slug": "dr-mgr-educational-and-research-institute",
+        "programCount": 60,
+        "hasLogo": true,
+        "hasCover": true
+      }
+    ]
+  },
+  {
+    "name": "music-city",
+    "status": 200,
+    "universities": [
+      {
+        "slug": "tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+        "programCount": 9,
+        "hasLogo": true,
+        "hasCover": true
+      }
+    ]
+  },
+  {
+    "name": "periyar-detail",
+    "status": 200,
+    "universities": [
+      {
+        "slug": "periyar-university",
+        "programCount": 27,
+        "offeringCount": 27,
+        "blankMedium": 23,
+        "hasLogo": true,
+        "hasCover": true
+      }
+    ]
+  },
+  {
+    "name": "mgr-detail",
+    "status": 200,
+    "universities": [
+      {
+        "slug": "dr-mgr-educational-and-research-institute",
+        "programCount": 60,
+        "offeringCount": 60,
+        "blankMedium": 1,
+        "hasLogo": true,
+        "hasCover": true
+      }
+    ]
+  },
+  {
+    "name": "music-detail",
+    "status": 200,
+    "universities": [
+      {
+        "slug": "tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+        "programCount": 9,
+        "offeringCount": 9,
+        "blankMedium": 9,
+        "hasLogo": true,
+        "hasCover": true
+      }
+    ]
+  }
+]
