@@ -1,0 +1,164 @@
+{
+  "status": 200,
+  "pagination": {
+    "totalItems": 51,
+    "totalPages": 2,
+    "currentPage": 1,
+    "pageSize": 30,
+    "hasPreviousPage": false,
+    "hasNextPage": true
+  },
+  "returned": [
+    {
+      "slug": "amet-university",
+      "name": "Academy of Maritime Education and Training (AMET)",
+      "count": 28
+    },
+    {
+      "slug": "anna-adarsh-college-for-women-chennai",
+      "name": "Anna Adarsh College for Women, Chennai",
+      "count": 22
+    },
+    {
+      "slug": "anna-university",
+      "name": "Anna University",
+      "count": 218
+    },
+    {
+      "slug": "b-s-abdur-rahman-crescent-institute-of-science-and-technology",
+      "name": "B. S. Abdur Rahman Crescent Institute of Science and Technology",
+      "count": 54
+    },
+    {
+      "slug": "india-bharath-institute-higher-education",
+      "name": "Bharath Institute of Higher Education and Research",
+      "count": 49
+    },
+    {
+      "slug": "bharathi-womens-college-chennai",
+      "name": "Bharathi Women's College, Chennai",
+      "count": 13
+    },
+    {
+      "slug": "dr-ambedkar-government-arts-college-chennai",
+      "name": "Dr. Ambedkar Government Arts College, Chennai",
+      "count": 23
+    },
+    {
+      "slug": "dr-mgr-educational-and-research-institute",
+      "name": "Dr. M.G.R. Educational and Research Institute",
+      "count": 60
+    },
+    {
+      "slug": "dg-vaishnav-college",
+      "name": "Dwaraka Doss Goverdhan Doss Vaishnav College",
+      "count": 35
+    },
+    {
+      "slug": "ethiraj-college-for-women",
+      "name": "Ethiraj College for Women",
+      "count": 39
+    },
+    {
+      "slug": "government-arts-science-college-thiruvottiyur-chennai",
+      "name": "Government Arts and Science College, Thiruvottiyur, Chennai",
+      "count": 4
+    },
+    {
+      "slug": "guru-nanak-college-chennai",
+      "name": "Guru Nanak College, Chennai",
+      "count": 32
+    },
+    {
+      "slug": "hindustan-institute-of-technology-and-science",
+      "name": "Hindustan Institute of Technology and Science",
+      "count": 38
+    },
+    {
+      "slug": "indian-institute-of-technology-madras",
+      "name": "Indian Institute of Technology Madras",
+      "count": 74
+    },
+    {
+      "slug": "indian-maritime-university",
+      "name": "Indian Maritime University",
+      "count": 24
+    },
+    {
+      "slug": "jeppiaar-university",
+      "name": "Jeppiaar University",
+      "count": 8
+    },
+    {
+      "slug": "justice-basheer-ahmed-sayeed-college-for-women",
+      "name": "Justice Basheer Ahmed Sayeed College for Women",
+      "count": 42
+    },
+    {
+      "slug": "loyola-college-chennai",
+      "name": "Loyola College",
+      "count": 53
+    },
+    {
+      "slug": "m-o-p-vaishnav-college-for-women",
+      "name": "M.O.P. Vaishnav College for Women",
+      "count": 20
+    },
+    {
+      "slug": "madras-christian-college",
+      "name": "Madras Christian College",
+      "count": 54
+    },
+    {
+      "slug": "madras-school-of-social-work",
+      "name": "Madras School of Social Work",
+      "count": 12
+    },
+    {
+      "slug": "meenakshi-academy-of-higher-education-and-research",
+      "name": "Meenakshi Academy of Higher Education and Research",
+      "count": 62
+    },
+    {
+      "slug": "meenakshi-college-for-women-chennai",
+      "name": "Meenakshi College for Women, Chennai",
+      "count": 24
+    },
+    {
+      "slug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "name": "National Institute of Technical Teachers Training and Research, Chennai",
+      "count": 8
+    },
+    {
+      "slug": "pachaiyappas-college-chennai",
+      "name": "Pachaiyappa's College, Chennai",
+      "count": 24
+    },
+    {
+      "slug": "panimalar-engineering-college",
+      "name": "Panimalar Engineering College",
+      "count": 10
+    },
+    {
+      "slug": "presidency-college-chennai",
+      "name": "Presidency College",
+      "count": 49
+    },
+    {
+      "slug": "quaid-e-millath-government-college-for-women-chennai",
+      "name": "Quaid-E-Millath Government College for Women, Chennai",
+      "count": 25
+    },
+    {
+      "slug": "queen-marys-college-chennai",
+      "name": "Queen Mary’s College, Chennai",
+      "count": 40
+    },
+    {
+      "slug": "rajalakshmi-engineering-college",
+      "name": "Rajalakshmi Engineering College",
+      "count": 20
+    }
+  ],
+  "nonempty": true
+}

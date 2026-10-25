@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "rajeswari-vedachalam-government-arts-college-chengalpattu",
+      "universityName": "Rajeswari Vedachalam Government Arts College, Chengalpattu",
+      "sourceBatch": "codex-rvgac-chengalpattu-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.rvgartscollege.in/images/rvgac-new.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.rvgartscollege.in/",
+          "rightsBasis": "Official college public crest and campus photograph for institutional identification and campus context; full originals retained. No open licence, copyright transfer, synthetic generation or capture-date claim.",
+          "altText": "Rajeswari Vedachalam Government Arts College complete crest",
+          "visualCheck": "Full131x115bluecrestwithTamillinstitutionname,educationalemblems; no cropping/upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectordinarypublicHTTPSGET,fullnativeoriginalinspection,ownHTMLsourceassociation;noediting.",
+          "proposedPublicId": "studentstraffic/universities/rajeswari-vedachalam-government-arts-college-chengalpattu/logo-20261025",
+          "localPath": "research/india-source-bundles/rvgac-chengalpattu-20261025/images-rvgac-new.png",
+          "sha256": "61abdcd95d20f17a5885ef0444c65d34d397dae373b229a9604959e7b3edec5d",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.rvgartscollege.in/images/RVG1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.rvgartscollege.in/home.html",
+          "rightsBasis": "Official college public crest and campus photograph for institutional identification and campus context; full originals retained. No open licence, copyright transfer, synthetic generation or capture-date claim.",
+          "altText": "Rajeswari Vedachalam Government Arts College entrance building and trees in Chengalpattu",
+          "visualCheck": "Full686x536genuinebuilding/entrancewithsignedcollegeidentityandtrees; owninnerhomeassociation/rootvisualaccepted. Historicalsourcephotograph,capturedateunknown,nohighresolutionclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectordinarypublicHTTPSGET,fullnativeoriginalinspection,ownHTMLsourceassociation;noediting.",
+          "proposedPublicId": "studentstraffic/universities/rajeswari-vedachalam-government-arts-college-chengalpattu/cover-20261025",
+          "localPath": "research/india-source-bundles/rvgac-chengalpattu-20261025/RVG1.jpg",
+          "sha256": "4783153d8f67e10484819c8ccb0917dda8c2ee2df5ba12db0e4221577815c82f",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0345-india-rajeswari-vedachalam-government-arts-college-chengalpattu"
+    }
+  ]
+}

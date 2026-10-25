@@ -1,0 +1,56 @@
+{
+  "sourceUrl": "https://collegedunia.com/college/1219-dr-ambedkar-govt-arts-college-dagac-chennai",
+  "access": "Actual full web parser page588lines opened25October2026; reviewed table lines103\u2013113",
+  "updated": "6October2026",
+  "columns": [
+    "Course",
+    "Duration",
+    "Eligibility",
+    "Annual Fee"
+  ],
+  "exactRows": [
+    {
+      "course": "BA (Defence and Strategic Studies, Economics, English, Tamil)",
+      "duration": "3 years",
+      "eligibility": "10+2 pass",
+      "annualFeeText": "INR2,768 per year",
+      "minAmount": 2768
+    },
+    {
+      "course": "B.Com",
+      "duration": "3 years",
+      "eligibility": "10+2 Commerce or any stream",
+      "annualFeeText": "INR2,768 per year",
+      "minAmount": 2768
+    },
+    {
+      "course": "B.Sc (Computer Science)",
+      "duration": "3 years",
+      "eligibility": "10+2 with Maths or CS",
+      "annualFeeText": "INR1,888 per year",
+      "minAmount": 1888
+    }
+  ],
+  "mapping": [
+    {
+      "slugs": [
+        "dagac-aece1",
+        "dagac-aect2",
+        "dagac-adfe1",
+        "dagac-lene1",
+        "dagac-ltat1",
+        "dagac-ccoe1",
+        "dagac-ccoe2"
+      ],
+      "amount": 2768
+    },
+    {
+      "slugs": [
+        "dagac-scse1",
+        "dagac-scse2"
+      ],
+      "amount": 1888
+    }
+  ],
+  "limitations": "Source does not distinguish shifts, teaching medium or admission category; quote is an indicative award-level reference, not guaranteed applicable tariff. Source eligibility columns NOT used: current DCE exactsubject rules control. No grouped BSc ranges transferred. No annualtuition field populated from combined fees."
+}

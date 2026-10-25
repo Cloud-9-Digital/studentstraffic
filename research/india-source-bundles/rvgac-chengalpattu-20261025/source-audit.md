@@ -1,0 +1,15 @@
+# RVG bounded new-profile audit —25October2026
+
+Owner codex-rvgac-chengalpattu-20261025 transferredbyrootlockedhelper afterrace-safeguard rejectedourinitialclaim; noownerbypass. Directown200 home/innerhome,INBRIEF,UG,PG,MPHIL,PHD,SSR2018 andmedia. Roothome.html/INBRIEF.html preserved; separatelowercaseug/pg/brief captures savedours.
+
+Governmentcoeducationalcollege,1970,GST RoadChengalpattu603001,rvgartscollege.in,UniversityMadrasaffiliate. Current2026fullgovernmentTNGASAp154college1081011 gives17UGroutes:15academiccore,2BBA/BCAprofessionalscopeheld. OwnUGpage explicitly2016–19,currentavailabilitycomesfrom2026matrix,notstaleownheader. Full117pageowninstitution-authoredSSR28Feb2018 printedp10 namesordinaryBA/BSc/BCom each36months,HSC. English/Tamil languageawardmediumexplicitSSR(namednotgeneric),otherscurrentEM/TM. HistoricalStudiescurrenttitle mapsownHistory; no duplicateaward. ExactcurrentDCE7May2026schoolsubject/age/languageranking/categoryrules applyallgovernmentarts/sciencecolleges. Noothercollegeprogramme-specificqualificationcopied. No intake/datehunt.
+
+FullUGCregulator-owned16,369,613bytecollegeHTML retained research/india-source-bundles/bharathi-womens-college-chennai/ugc-colleges.html; actualparsedrow10083 namesRajeswariVedachalamGovtArtsCollege/MadrasUniversity/Chengalpattu/2(f)&12B/Government/1970. Exactsourcehash/rowinugc-exact-extract.json. Recognitionyear1972ownbriefvs2006SSRconflict omitted; permanentstatusnotdate verifiedindependently. NoNAAC/autonomyexpiryguessed.
+
+No exactcurrentnativefees inownhome/UG/brief/SSR; fullCareers360currentcoursesHTML1MB retained200withoutamount, ShikshastructuredfeesNA, CollegeSearchfeesNA. Rejectedanonymous/contributor60kTamil and5kBCom claims plusotherschooltariffs;fee-candidates.json retainsreasons. Rootaccepts15onrequest, nofeepriceguess/NIL/annualisation. Academicroutesnotheldforprice.
+
+Full34rowLF inventory:15supported+2BBA/BCAactualapprovalscopeholds+7PGexactsubjectqualificationholds+10researchadmissionholds inclbrief-onlyTamil/Englishresearchdiscoveries. GenericSSRBA/BSc/BComPGentry insufficientforexactPGprerequisites. Nounapproved/degreeabsenceclaims.
+
+Genuinecompletebluecrest131x115images/rvgac-new.png; rootviewed686x536RVG1.jpg entrancebuilding/trees fromowninnerhome.html. Mediafulloriginals/signatures/hashes/localpaths/rights mandatorymanifest; noopenlicence/highresolution/capturedateclaim, noediting/upscaling/upload.
+
+Strictschema+actualfulltemporaryreaderPASS15programmes/0quotes/131evidence/0warnings. Draftoutsideexecutablemigrations; noDB/number/upload/build/commit.

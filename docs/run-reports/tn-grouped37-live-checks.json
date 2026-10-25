@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/dagac-scse1",
+    "kind": "programme",
+    "slug": "dagac-scse1",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Dr. Ambedkar Government Arts College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/dr-ambedkar-government-arts-college-chennai",
+    "kind": "university",
+    "slug": "dr-ambedkar-government-arts-college-chennai",
+    "status": 200,
+    "h1": "Dr. Ambedkar Government Arts College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/government-arts-science-college-thiruvottiyur-chennai",
+    "kind": "university",
+    "slug": "government-arts-science-college-thiruvottiyur-chennai",
+    "status": 200,
+    "h1": "Government Arts and Science College, Thiruvottiyur, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/rajeswari-vedachalam-government-arts-college-chengalpattu",
+    "kind": "university",
+    "slug": "rajeswari-vedachalam-government-arts-college-chengalpattu",
+    "status": 200,
+    "h1": "Rajeswari Vedachalam Government Arts College, Chengalpattu",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/rvgac-b-a-english-shift-1-english",
+    "kind": "programme",
+    "slug": "rvgac-b-a-english-shift-1-english",
+    "status": 200,
+    "h1": "B.A. English at Rajeswari Vedachalam Government Arts College, Chengalpattu",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/gasc-thiruvottiyur-tamil",
+    "kind": "programme",
+    "slug": "gasc-thiruvottiyur-tamil",
+    "status": 200,
+    "h1": "B.A. Languages at Government Arts and Science College, Thiruvottiyur, Chennai",
+    "pass": true
+  }
+]

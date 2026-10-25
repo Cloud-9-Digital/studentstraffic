@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-25",
+  "programmes": 4,
+  "genericFamilies": 3,
+  "evidence": 28,
+  "actualReader": "TemporaryfullreaderPASS0expired; noDB",
+  "recognition": "FullDCEregisteractualread; exactrow1110010; precisehighereducationregulatorlistedArtsSciencecollege, nootherstatusclaim.",
+  "fee": "OwnexactnamedcoursepagesAsperGovernmentnoamount, on_request; rejectedthemehiddenUS149.",
+  "sources": [
+    {
+      "file": "dce-colleges.html",
+      "bytes": 5757964,
+      "sha256": "a1093c3abfc7dc3f180471a816bb88c8f7138b59e2a63a05632ea7283eee65bd"
+    },
+    {
+      "file": "home.html",
+      "bytes": 54304,
+      "sha256": "082441a95463b5b1b7136765c8e996898589a7b25f75ee8a7b92f15f3ab7b3e3"
+    },
+    {
+      "file": "about.html",
+      "bytes": 24128,
+      "sha256": "b424952697167fb570f73d3783c768d2b926a693f0e87213df462674496a0f34"
+    },
+    {
+      "file": "courses.html",
+      "bytes": 28616,
+      "sha256": "3074e292fded547504cae27047cac4770467400b5161a0e3754b74bc797c0ecd"
+    },
+    {
+      "file": "course0.html",
+      "bytes": 16217,
+      "sha256": "6f1a45417befb2db02cea52b83c5ca7cf3d0bde435a647b724c6204d75ea65d5"
+    },
+    {
+      "file": "course1.html",
+      "bytes": 16595,
+      "sha256": "82f736def8f17100e97f4bb89b444e5e24d231fda558d555d5df1cc134b449d2"
+    },
+    {
+      "file": "course2.html",
+      "bytes": 16193,
+      "sha256": "486575eafe6f8d3d1196d733bf0aba6ec90e592bab22868dd84335b89d85a3c2"
+    },
+    {
+      "file": "course3.html",
+      "bytes": 16420,
+      "sha256": "22d332e8ddf808ce4e944c79397b10a33d1170b4c5e27c1cb20a6094bf9ff6f2"
+    },
+    {
+      "file": "logo.jpg",
+      "bytes": 65464,
+      "sha256": "def8a87d7925cca7a434841911a4767e4c33242391d21071502be11884d9cc2a"
+    },
+    {
+      "file": "banner3.jpg",
+      "bytes": 300239,
+      "sha256": "c06b5a1e109f04eb46732c32f705a8be591c7028fc6042b1dae99038a66fbc1b"
+    }
+  ]
+}

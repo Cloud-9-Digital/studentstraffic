@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-25",
+  "reviewer": "codex-bwc-chennai-20261025",
+  "result": "PASS, no actionable scoped publication blocker",
+  "readOnly": true,
+  "payload": "0345-india-rajeswari-vedachalam-government-arts-college-chengalpattu",
+  "count": {
+    "offerings": 15,
+    "uniqueSlugs": 15,
+    "families": 10,
+    "evidence": 131
+  },
+  "scopeChecks": [
+    "Numberedpayload bytes exactly equal frozen draft.",
+    "FullcurrentTNGASA2026p15417rows minusBBA/BCAapprovalscopeholds equals15; exactmedium/shift rows match.",
+    "FullownSSR2018printedp10 actualtable namedBA/BSc/BCom36months/HSC; English/Tamilmediumexactnamedrows, current2026continuation source anddatedlimitation retained.",
+    "FullUGC16MBsource actualrow10083 parsed/read exactinstitution/Madras/Chengalpattu/2f12B/1970/Government; hash273357dbbd3b6c9d08baf9cf1b5e56a4046c6b2cd65058e32ba690d7b78dce49matches.",
+    "15annualfeesunknown with nofabricatedquote; rejectedanonymous/unscoped60k/5k candidates, no falseNIL/annualization."
+  ],
+  "media": [
+    {
+      "kind": "logo",
+      "localPath": "research/india-source-bundles/rvgac-chengalpattu-20261025/images-rvgac-new.png",
+      "matchesManifestSHA": true,
+      "sourceUrl": "https://www.rvgartscollege.in/images/rvgac-new.png"
+    },
+    {
+      "kind": "cover",
+      "localPath": "research/india-source-bundles/rvgac-chengalpattu-20261025/RVG1.jpg",
+      "matchesManifestSHA": true,
+      "sourceUrl": "https://www.rvgartscollege.in/images/RVG1.jpg"
+    }
+  ],
+  "originalVisualReview": "Completecrest/officialnamedentrancebuildingphoto individuallyviewed, noedit/upscale; capturedatetimeunclaimed.",
+  "sourcesUntouched": true,
+  "noNewSearchesDBUploadsCommits": true
+}

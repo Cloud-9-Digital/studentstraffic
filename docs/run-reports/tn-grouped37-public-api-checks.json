@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "government-arts-science-college-thiruvottiyur-chennai",
+    "status": 200,
+    "expectedCount": 4,
+    "expectedName": "Government Arts and Science College, Thiruvottiyur, Chennai",
+    "actualName": "Government Arts and Science College, Thiruvottiyur, Chennai",
+    "actualCount": 4,
+    "offerings": 4,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "dr-ambedkar-government-arts-college-chennai",
+    "status": 200,
+    "expectedCount": 23,
+    "expectedName": "Dr. Ambedkar Government Arts College (Autonomous), Chennai",
+    "actualName": "Dr. Ambedkar Government Arts College, Chennai",
+    "actualCount": 23,
+    "offerings": 23,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 9,
+    "actualQuoteLabels": 9,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "rajeswari-vedachalam-government-arts-college-chengalpattu",
+    "status": 200,
+    "expectedCount": 15,
+    "expectedName": "Rajeswari Vedachalam Government Arts College, Chengalpattu",
+    "actualName": "Rajeswari Vedachalam Government Arts College, Chengalpattu",
+    "actualCount": 15,
+    "offerings": 15,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

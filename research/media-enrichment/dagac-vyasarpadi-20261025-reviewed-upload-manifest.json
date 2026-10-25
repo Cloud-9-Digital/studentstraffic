@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "dr-ambedkar-government-arts-college-chennai",
+      "universityName": "Dr. Ambedkar Government Arts College (Autonomous), Chennai",
+      "sourceBatch": "codex-dagac-vyasarpadi-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dagac.edu.in/wp-content/uploads/2022/09/logo1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://dagac.edu.in/",
+          "rightsBasis": "Official institution-hosted identifying/campus photograph used for factual identity and illustration; no open licence or ownership transfer asserted.",
+          "altText": "Dr. Ambedkar Government Arts College official complete crest",
+          "visualCheck": "Officialnativecollegecrest; selectedsourceafterwholeheaderalsoinspected; noresampling. Root independently viewed and accepted original25October2026.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; full native original retained and visually reviewed without upscaling.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dagac-vyasarpadi-20261025/logo1.jpg",
+          "sha256": "6f62db77624930db7564a6730ba135c20ce96cf7e5d848de87d97e183ba7df87",
+          "width": 113,
+          "height": 120,
+          "proposedPublicId": "studentstraffic/universities/dr-ambedkar-government-arts-college-chennai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dagac.edu.in/wp-content/uploads/2022/09/about.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://dagac.edu.in/",
+          "rightsBasis": "Official institution-hosted identifying/campus photograph used for factual identity and illustration; no open licence or ownership transfer asserted.",
+          "altText": "College courtyard, academic building and Dr. Ambedkar statue shown on the Vyasarpadi college website",
+          "visualCheck": "Genuineownabout-pageacademicbuilding/courtyardwithAmbedkarstatue; currentimageaccessbut2022publishedasset, nofuturecampusconditionclaim. Root independently viewed and accepted original25October2026.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; full native original retained and visually reviewed without upscaling.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dagac-vyasarpadi-20261025/about.jpg",
+          "sha256": "f47cc1a1d1a7e1af9b72c36bf276f4ab843c190f3e44be68dd7cace3e5de592a",
+          "width": 756,
+          "height": 750,
+          "proposedPublicId": "studentstraffic/universities/dr-ambedkar-government-arts-college-chennai/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "government-arts-science-college-thiruvottiyur-chennai",
+      "universityName": "Government Arts and Science College, Thiruvottiyur, Chennai",
+      "sourceBatch": "codex-tn-gasc-thiruvottiyur-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gascthiruvottiyur.ac.in/frontend/img/logo/logo.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascthiruvottiyur.ac.in/",
+          "rightsBasis": "Official institution-owned public educational crest and campus photograph used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "Government Arts and Science College Thiruvottiyur crest",
+          "visualCheck": "Fullnative936x964Tamilnamedcrest onwhitetile, completeouterring/ribbon/book/temple/ocean, notfavicon. Rootandworkeroriginalpixelreviewaccepted; noediting/upscale.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET, checksumretainedandsequentialoriginalpixelview; noediting/upscale/provideractions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-thiruvottiyur-20261025/logo.jpg",
+          "sha256": "def8a87d7925cca7a434841911a4767e4c33242391d21071502be11884d9cc2a",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-thiruvottiyur-chennai/logo-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gascthiruvottiyur.ac.in/uploads/banners/banner-3.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascthiruvottiyur.ac.in/",
+          "rightsBasis": "Official institution-owned public educational crest and campus photograph used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "Government Arts and Science College building at Thiruvottiyur",
+          "visualCheck": "Fullnative1600x727actualmoderncampusfacade, exactTamilinstitutionnameonsign, entrance/stairs/ramp/forecourtvisible. Genuineinstitutionalsource, noAIstock/othercampus/dateclaim; rootandworkeracceptedwholeoriginal.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET, checksumretainedandsequentialoriginalpixelview; noediting/upscale/provideractions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-thiruvottiyur-20261025/banner3.jpg",
+          "sha256": "c06b5a1e109f04eb46732c32f705a8be591c7028fc6042b1dae99038a66fbc1b",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-thiruvottiyur-chennai/cover-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "dr-ambedkar-government-arts-college-chennai",
+      "universityName": "Dr. Ambedkar Government Arts College (Autonomous), Chennai",
+      "sourceBatch": "codex-dagac-vyasarpadi-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://dagac.edu.in/wp-content/uploads/2022/09/logo1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://dagac.edu.in/",
+          "rightsBasis": "Official institution-hosted identifying/campus photograph used for factual identity and illustration; no open licence or ownership transfer asserted.",
+          "altText": "Dr. Ambedkar Government Arts College official complete crest",
+          "visualCheck": "Officialnativecollegecrest; selectedsourceafterwholeheaderalsoinspected; noresampling. Root independently viewed and accepted original25October2026.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; full native original retained and visually reviewed without upscaling.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dagac-vyasarpadi-20261025/logo1.jpg",
+          "sha256": "6f62db77624930db7564a6730ba135c20ce96cf7e5d848de87d97e183ba7df87",
+          "width": 113,
+          "height": 120,
+          "proposedPublicId": "studentstraffic/universities/dr-ambedkar-government-arts-college-chennai/logo-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://dagac.edu.in/wp-content/uploads/2022/09/about.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://dagac.edu.in/",
+          "rightsBasis": "Official institution-hosted identifying/campus photograph used for factual identity and illustration; no open licence or ownership transfer asserted.",
+          "altText": "College courtyard, academic building and Dr. Ambedkar statue shown on the Vyasarpadi college website",
+          "visualCheck": "Genuineownabout-pageacademicbuilding/courtyardwithAmbedkarstatue; currentimageaccessbut2022publishedasset, nofuturecampusconditionclaim. Root independently viewed and accepted original25October2026.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; full native original retained and visually reviewed without upscaling.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/dagac-vyasarpadi-20261025/about.jpg",
+          "sha256": "f47cc1a1d1a7e1af9b72c36bf276f4ab843c190f3e44be68dd7cace3e5de592a",
+          "width": 756,
+          "height": 750,
+          "proposedPublicId": "studentstraffic/universities/dr-ambedkar-government-arts-college-chennai/cover-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "rajeswari-vedachalam-government-arts-college-chengalpattu",
+      "universityName": "Rajeswari Vedachalam Government Arts College, Chengalpattu",
+      "sourceBatch": "codex-rvgac-chengalpattu-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.rvgartscollege.in/images/rvgac-new.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.rvgartscollege.in/",
+          "rightsBasis": "Official college public crest and campus photograph for institutional identification and campus context; full originals retained. No open licence, copyright transfer, synthetic generation or capture-date claim.",
+          "altText": "Rajeswari Vedachalam Government Arts College complete crest",
+          "visualCheck": "Full131x115bluecrestwithTamillinstitutionname,educationalemblems; no cropping/upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectordinarypublicHTTPSGET,fullnativeoriginalinspection,ownHTMLsourceassociation;noediting.",
+          "proposedPublicId": "studentstraffic/universities/rajeswari-vedachalam-government-arts-college-chengalpattu/logo-20261025",
+          "localPath": "research/india-source-bundles/rvgac-chengalpattu-20261025/images-rvgac-new.png",
+          "sha256": "61abdcd95d20f17a5885ef0444c65d34d397dae373b229a9604959e7b3edec5d",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.rvgartscollege.in/images/RVG1.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.rvgartscollege.in/home.html",
+          "rightsBasis": "Official college public crest and campus photograph for institutional identification and campus context; full originals retained. No open licence, copyright transfer, synthetic generation or capture-date claim.",
+          "altText": "Rajeswari Vedachalam Government Arts College entrance building and trees in Chengalpattu",
+          "visualCheck": "Full686x536genuinebuilding/entrancewithsignedcollegeidentityandtrees; owninnerhomeassociation/rootvisualaccepted. Historicalsourcephotograph,capturedateunknown,nohighresolutionclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectordinarypublicHTTPSGET,fullnativeoriginalinspection,ownHTMLsourceassociation;noediting.",
+          "proposedPublicId": "studentstraffic/universities/rajeswari-vedachalam-government-arts-college-chengalpattu/cover-20261025",
+          "localPath": "research/india-source-bundles/rvgac-chengalpattu-20261025/RVG1.jpg",
+          "sha256": "4783153d8f67e10484819c8ccb0917dda8c2ee2df5ba12db0e4221577815c82f",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0345-india-rajeswari-vedachalam-government-arts-college-chengalpattu"
+    }
+  ]
+}

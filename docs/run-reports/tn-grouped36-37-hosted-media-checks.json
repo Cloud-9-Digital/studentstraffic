@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "quaid-e-millath-government-college-for-women-chennai",
+    "checks": [
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  {
+    "slug": "bharathi-womens-college-chennai",
+    "checks": [
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  {
+    "slug": "government-arts-science-college-thiruvottiyur-chennai",
+    "checks": [
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  {
+    "slug": "dr-ambedkar-government-arts-college-chennai",
+    "checks": [
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  {
+    "slug": "rajeswari-vedachalam-government-arts-college-chengalpattu",
+    "checks": [
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "image": true,
+        "pass": true
+      }
+    ],
+    "pass": true
+  }
+]

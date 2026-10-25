@@ -1,0 +1,21 @@
+{
+  "result": "PASS — no material blocker found",
+  "checkedAt": "2026-10-25",
+  "scope": "Read-only retained sources and actual numbered reader; no new source hunts, database or mutations to bundle",
+  "payloadSha256": "ffa579efc8408698f34b7bdd66359e249135d2786bc7da69201df6ebb7c6fcaa",
+  "programmeCount": 4,
+  "assertions": [
+    "Full actual DCE retained HTML independently parsed: two exact entries1110010, name/location/Arts&Science category match; badge precisely says DCE listed, no UGC/accreditation/autonomy inference. DCE internal code differs from TNGASA application code1011010; do not equate code systems.",
+    "Full current2026TNGASA matching owncollege row: coeducational, BA Tamil70/BA English70/BCom70/BComCA70/BCA50; only4nonprofessional routes imported, BCAheld.",
+    "All4actual own named course pages independently read locally: COURSES DURATION3Years, FEES As per Government; no numeric tuition inferred from hidden themeprice.",
+    "Common7May2026DCE framework academic route matches both BA language-ranking priorities and bothBCom Commerce+Accountancy/vocational20% provisions; age40as1July2026 and dated category relaxations retained.",
+    "BA teaching language blank/emptyfacets with omit evidence; two BComE/M currentmatrix matchesEnglish; no classmonth inferred.",
+    "Fullnative936x964logo and1600x727campus photo independently viewed: completeTamilnamedcrest and genuineTamilnamedcollegebuilding. ExactsourceURLs/rights/checksums/mediaAttribution populated, no synthetic or date claim.",
+    "Ownaboutpage explicitlyestablished11August2012; profile2012match. Genericcoursemetadata matchedBachelorlevel; BComCA exactspecialtyunderBCom appropriate."
+  ],
+  "actualReader": "PASS1",
+  "materialRisks": [],
+  "notes": [
+    "Ownsite contains generic hidden theme descriptions; payload does not copy hidden US149fee or unverified hostel entitlement. Broad facility claims cautiously qualified; currentgovernmentnilhostel rulecontrols."
+  ]
+}

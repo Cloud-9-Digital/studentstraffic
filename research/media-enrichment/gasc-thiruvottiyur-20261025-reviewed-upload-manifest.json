@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "government-arts-science-college-thiruvottiyur-chennai",
+      "universityName": "Government Arts and Science College, Thiruvottiyur, Chennai",
+      "sourceBatch": "codex-tn-gasc-thiruvottiyur-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gascthiruvottiyur.ac.in/frontend/img/logo/logo.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascthiruvottiyur.ac.in/",
+          "rightsBasis": "Official institution-owned public educational crest and campus photograph used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "Government Arts and Science College Thiruvottiyur crest",
+          "visualCheck": "Fullnative936x964Tamilnamedcrest onwhitetile, completeouterring/ribbon/book/temple/ocean, notfavicon. Rootandworkeroriginalpixelreviewaccepted; noediting/upscale.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET, checksumretainedandsequentialoriginalpixelview; noediting/upscale/provideractions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-thiruvottiyur-20261025/logo.jpg",
+          "sha256": "def8a87d7925cca7a434841911a4767e4c33242391d21071502be11884d9cc2a",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-thiruvottiyur-chennai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gascthiruvottiyur.ac.in/uploads/banners/banner-3.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascthiruvottiyur.ac.in/",
+          "rightsBasis": "Official institution-owned public educational crest and campus photograph used to identify and illustrate the institution; no open licence or ownership transfer claimed.",
+          "altText": "Government Arts and Science College building at Thiruvottiyur",
+          "visualCheck": "Fullnative1600x727actualmoderncampusfacade, exactTamilinstitutionnameonsign, entrance/stairs/ramp/forecourtvisible. Genuineinstitutionalsource, noAIstock/othercampus/dateclaim; rootandworkeracceptedwholeoriginal.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET, checksumretainedandsequentialoriginalpixelview; noediting/upscale/provideractions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-thiruvottiyur-20261025/banner3.jpg",
+          "sha256": "c06b5a1e109f04eb46732c32f705a8be591c7028fc6042b1dae99038a66fbc1b",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-thiruvottiyur-chennai/cover-20261025"
+        }
+      ]
+    }
+  ]
+}
