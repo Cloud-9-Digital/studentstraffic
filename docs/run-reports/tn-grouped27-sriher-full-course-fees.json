@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "sriher-chennai-bachelor-of-physiotherapy",
+    "expectedAmount": 26500,
+    "feeLabel": "$26,500",
+    "feeIsAnnual": false,
+    "pass": true
+  },
+  {
+    "slug": "sriher-chennai-bachelor-of-occupational-therapy",
+    "expectedAmount": 26500,
+    "feeLabel": "$26,500",
+    "feeIsAnnual": false,
+    "pass": true
+  },
+  {
+    "slug": "sriher-chennai-bsc-applied-psychology",
+    "expectedAmount": 14000,
+    "feeLabel": "$14,000",
+    "feeIsAnnual": false,
+    "pass": true
+  },
+  {
+    "slug": "sriher-chennai-master-of-public-health",
+    "expectedAmount": 7000,
+    "feeLabel": "$7,000",
+    "feeIsAnnual": false,
+    "pass": true
+  },
+  {
+    "slug": "sriher-chennai-msc-clinical-psychology",
+    "expectedAmount": 9500,
+    "feeLabel": "$9,500",
+    "feeIsAnnual": false,
+    "pass": true
+  },
+  {
+    "slug": "sriher-chennai-mba-hospital-health-systems-management",
+    "expectedAmount": 14000,
+    "feeLabel": "$14,000",
+    "feeIsAnnual": false,
+    "pass": true
+  }
+]

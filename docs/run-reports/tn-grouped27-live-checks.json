@@ -1,0 +1,138 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/amrita-btech-computer-science-engineering",
+    "kind": "programme",
+    "slug": "amrita-btech-computer-science-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech CSE at Amrita Vishwa Vidyapeetham",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/amrita-coimbatore-5-year-integrated-m-sc-in-data-science",
+    "kind": "programme",
+    "slug": "amrita-coimbatore-5-year-integrated-m-sc-in-data-science",
+    "status": 200,
+    "h1": "Integrated M.Sc. Data Science at Amrita Vishwa Vidyapeetham",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/amrita-coimbatore-b-tech-in-aerospace-engineering",
+    "kind": "programme",
+    "slug": "amrita-coimbatore-b-tech-in-aerospace-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Aerospace at Amrita Vishwa Vidyapeetham",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/amrita-vishwa-vidyapeetham",
+    "kind": "university",
+    "slug": "amrita-vishwa-vidyapeetham",
+    "status": 200,
+    "h1": "Amrita Vishwa Vidyapeetham",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/srm-kattankulathur-diploma-certified-financial-management",
+    "kind": "programme",
+    "slug": "srm-kattankulathur-diploma-certified-financial-management",
+    "status": 200,
+    "h1": "Diploma Financial Management at SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/srm-kattankulathur-btech-computer-science-engineering",
+    "kind": "programme",
+    "slug": "srm-kattankulathur-btech-computer-science-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech CSE at SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/srm-kattankulathur-b-s-fintech",
+    "kind": "programme",
+    "slug": "srm-kattankulathur-b-s-fintech",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Financial Technology at SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/srm-institute-of-science-and-technology",
+    "kind": "university",
+    "slug": "srm-institute-of-science-and-technology",
+    "status": 200,
+    "h1": "SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/srm-kattankulathur-b-sc-psychology",
+    "kind": "programme",
+    "slug": "srm-kattankulathur-b-sc-psychology",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Psychology at SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/srm-kattankulathur-diploma-yoga",
+    "kind": "programme",
+    "slug": "srm-kattankulathur-diploma-yoga",
+    "status": 200,
+    "h1": "Diploma Yoga at SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/srm-kattankulathur-m-sc-disaster-management",
+    "kind": "programme",
+    "slug": "srm-kattankulathur-m-sc-disaster-management",
+    "status": 200,
+    "h1": "Master&#x27;s Disaster Management at SRM Institute of Science and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sri-ramachandra-institute-of-higher-education-and-research",
+    "kind": "university",
+    "slug": "sri-ramachandra-institute-of-higher-education-and-research",
+    "status": 200,
+    "h1": "Sri Ramachandra Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sriher-m-d-radiation-oncology",
+    "kind": "programme",
+    "slug": "sriher-m-d-radiation-oncology",
+    "status": 200,
+    "h1": "MD Radiation Oncology at Sri Ramachandra Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sriher-b-sc-hons-bioinformatics",
+    "kind": "programme",
+    "slug": "sriher-b-sc-hons-bioinformatics",
+    "status": 200,
+    "h1": "B.Sc. Bioinformatics at Sri Ramachandra Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sriher-chennai-bachelor-of-physiotherapy",
+    "kind": "programme",
+    "slug": "sriher-chennai-bachelor-of-physiotherapy",
+    "status": 200,
+    "h1": "BPT at Sri Ramachandra Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sriher-m-d-laboratory-medicine",
+    "kind": "programme",
+    "slug": "sriher-m-d-laboratory-medicine",
+    "status": 200,
+    "h1": "MD Laboratory Medicine at Sri Ramachandra Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sriher-m-d-geriatrics",
+    "kind": "programme",
+    "slug": "sriher-m-d-geriatrics",
+    "status": 200,
+    "h1": "MD Geriatrics at Sri Ramachandra Institute of Higher Education and Research",
+    "pass": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "appliedAt": "2026-10-25T10:36:16.244Z",
+  "uploads": {
+    "attempted": 2,
+    "succeeded": 2,
+    "failed": 0
+  },
+  "database": {
+    "updated": 2,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "srm-institute-of-science-and-technology",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "sri-ramachandra-institute-of-higher-education-and-research",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

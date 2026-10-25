@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "amrita-vishwa-vidyapeetham",
+    "status": 200,
+    "expectedCount": 46,
+    "expectedName": "Amrita Vishwa Vidyapeetham",
+    "actualName": "Amrita Vishwa Vidyapeetham",
+    "actualCount": 46,
+    "offerings": 46,
+    "recognitionCount": 4,
+    "expectedQuoteLabels": 39,
+    "actualQuoteLabels": 39,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "srm-institute-of-science-and-technology",
+    "status": 200,
+    "expectedCount": 73,
+    "expectedName": "SRM Institute of Science and Technology",
+    "actualName": "SRM Institute of Science and Technology",
+    "actualCount": 73,
+    "offerings": 73,
+    "recognitionCount": 5,
+    "expectedQuoteLabels": 73,
+    "actualQuoteLabels": 73,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "sri-ramachandra-institute-of-higher-education-and-research",
+    "status": 200,
+    "expectedCount": 98,
+    "expectedName": "Sri Ramachandra Institute of Higher Education and Research",
+    "actualName": "Sri Ramachandra Institute of Higher Education and Research",
+    "actualCount": 98,
+    "offerings": 98,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 98,
+    "actualQuoteLabels": 98,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]
