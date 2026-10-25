@@ -1,0 +1,146 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/university/dhanalakshmi-srinivasan-institute-of-research-and-technology",
+    "kind": "university",
+    "slug": "dhanalakshmi-srinivasan-institute-of-research-and-technology",
+    "status": 200,
+    "h1": "Dhanalakshmi Srinivasan Institute of Research and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/dsirt-b-com",
+    "kind": "programme",
+    "slug": "dsirt-b-com",
+    "status": 200,
+    "h1": "B.Com at Dhanalakshmi Srinivasan Institute of Research and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/skasc-b-sc-mathematics",
+    "kind": "programme",
+    "slug": "skasc-b-sc-mathematics",
+    "status": 200,
+    "h1": "B.Sc. Mathematics at Sri Krishna Knowledge Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sri-krishna-arts-and-science-college-coimbatore",
+    "kind": "university",
+    "slug": "sri-krishna-arts-and-science-college-coimbatore",
+    "status": 200,
+    "h1": "Sri Krishna Knowledge Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/pkdas-ba-performing-arts-hons",
+    "kind": "programme",
+    "slug": "pkdas-ba-performing-arts-hons",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Performing Arts at P K Das Institute of Social Sciences, Health Sciences and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/skasc-b-a-english-literature",
+    "kind": "programme",
+    "slug": "skasc-b-a-english-literature",
+    "status": 200,
+    "h1": "B.A. English at Sri Krishna Knowledge Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/pkdas-bsc-indology-hons",
+    "kind": "programme",
+    "slug": "pkdas-bsc-indology-hons",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Indology at P K Das Institute of Social Sciences, Health Sciences and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kvell-integrated-msc-renal-dialysis-technology",
+    "kind": "programme",
+    "slug": "kvell-integrated-msc-renal-dialysis-technology",
+    "status": 200,
+    "h1": "Integrated M.Sc. Renal Dialysis Technology at Karpaga Vinayaga Educational Lore for Learning",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kvell-integrated-msc-cardiac-technology",
+    "kind": "programme",
+    "slug": "kvell-integrated-msc-cardiac-technology",
+    "status": 200,
+    "h1": "Integrated M.Sc. Cardiac Technology at Karpaga Vinayaga Educational Lore for Learning",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+    "kind": "university",
+    "slug": "p-k-das-institute-of-social-sciences-health-sciences-and-technology",
+    "status": 200,
+    "h1": "P K Das Institute of Social Sciences, Health Sciences and Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/annamalai-university",
+    "kind": "university",
+    "slug": "annamalai-university",
+    "status": 200,
+    "h1": "Annamalai University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kvell-bsc-hons-sustainable-development-environment-management",
+    "kind": "programme",
+    "slug": "kvell-bsc-hons-sustainable-development-environment-management",
+    "status": 200,
+    "h1": "B.Sc. Environmental Science at Karpaga Vinayaga Educational Lore for Learning",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/annamalai-villupuram-m-a-english",
+    "kind": "programme",
+    "slug": "annamalai-villupuram-m-a-english",
+    "status": 200,
+    "h1": "M.A. English at Annamalai University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/presidency-bcom-hearing-impaired-shift-i",
+    "kind": "programme",
+    "slug": "presidency-bcom-hearing-impaired-shift-i",
+    "status": 200,
+    "h1": "B.Com at Presidency College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/karpaga-vinayaga-educational-lore-for-learning",
+    "kind": "university",
+    "slug": "karpaga-vinayaga-educational-lore-for-learning",
+    "status": 200,
+    "h1": "Karpaga Vinayaga Educational Lore for Learning",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/annamalai-msc-agriculture-agricultural-economics",
+    "kind": "programme",
+    "slug": "annamalai-msc-agriculture-agricultural-economics",
+    "status": 200,
+    "h1": "M.Sc. Agriculture at Annamalai University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/presidency-bca-hearing-impaired-shift-i",
+    "kind": "programme",
+    "slug": "presidency-bca-hearing-impaired-shift-i",
+    "status": 200,
+    "h1": "BCA at Presidency College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/presidency-college-chennai",
+    "kind": "university",
+    "slug": "presidency-college-chennai",
+    "status": 200,
+    "h1": "Presidency College",
+    "pass": true
+  }
+]
