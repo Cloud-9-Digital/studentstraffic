@@ -1,3 +1,4 @@
+import { parseReportedFeeQuote, type ReportedFeeQuote } from "../../lib/reported-fee-quote";
 import { z } from "zod";
 
 import { programmeLevels, programmeStreams } from "@/lib/data/program-taxonomy";
@@ -143,6 +144,7 @@ const createProgrammeSchema = (mediumSchema: OfferingMediumSchema) => z.object({
     sourceUrl: z.string().url(),
   }),
   admissionsContent: z.object({
+    reportedFeeQuote: z.custom<ReportedFeeQuote>((value) => Boolean(parseReportedFeeQuote(value)), "Invalid reported fee quote: retain native amount, basis, period, category and source provenance.").transform((value) => parseReportedFeeQuote(value)!).optional(),
     overview: z.string().min(40).max(420),
     eligibility: z.object({
       intro: z.string().min(30).max(320),

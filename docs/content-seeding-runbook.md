@@ -549,3 +549,19 @@ external archive instead.
 ### Explicit NIL tuition
 
 A primary official annual tuition amount of `0` is publishable only as an explicit `fee.status: "confirmed"` native-currency amount with an uppercase three-letter currency, academic year, verified date and source-backed notes. Use this for a verified NIL tuition component for the exact programme, route and applicant category; retain compulsory charges and any waiver conditions in the notes. It does not mean the entire course, examinations, accommodation or living costs are free. Never substitute zero for a missing tuition quote or a conditional waiver with unverified eligibility. Omit unverified total tuition rather than calculating a zero total. Normalized USD zero remains an unknown-value sentinel; indicative ranges and secondary fee records retain positive-amount validation.
+
+### Reported fee quote fallback
+
+When an exact current award/category has a credible native fee but its amount combines compulsory
+charges or uses a semester/first-year/full-course basis, retain it in the optional programme
+`admissionsContent.reportedFeeQuote` contract documented in the pipeline architecture. Keep the
+original billing period, component basis, category, academic year, source URL/label and checked date
+internally. Do not copy the quote into annual-tuition fields. A precise amount or range is preferable
+to an unknown display when the evidence supports it; a third-party estimate stays `indicative`.
+
+Add programme evidence with `publicField: "reportedFeeQuote"` and the exact quote source URL.
+A confirmed quote requires Grade A `verified` evidence. An indicative quote requires Grade A or B
+`indicative` evidence. The scoped reader rejects missing, mismatched-source or weaker evidence.
+Primary notices explicitly marked tentative also use indicative status. Public display is the native
+amount/range and **Fees** only; source/year/period/component/category remain internal. Existing
+confirmed annual tuition, including native NIL tuition, retains display precedence.

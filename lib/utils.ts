@@ -1,3 +1,4 @@
+import { parseReportedFeeQuote } from "@/lib/reported-fee-quote";
 import type { FeeAudience, ProgramOffering } from "@/lib/data/types";
 
 import { clsx, type ClassValue } from "clsx";
@@ -116,6 +117,19 @@ export function isConfirmedProgramFee(
   return hasRenderableProgramAnnualFee(offering);
 }
 
+/** A reported quote is a display fallback, never an annual tuition or budget value. */
+export function getDisplayedReportedFeeQuote(
+  offering: Pick<ProgramOffering, "annualTuitionUsd" | "officialAnnualTuitionAmount" | "officialFeeCurrency" | "feeStatus" | "indicativeAnnualTuitionMinUsd" | "indicativeAnnualTuitionMaxUsd" | "reportedFeeQuote">,
+) {
+  return hasRenderableProgramFee(offering) ? undefined : parseReportedFeeQuote(offering.reportedFeeQuote);
+}
+
+export function hasRenderableProgramDisplayFee(
+  offering: Parameters<typeof getDisplayedReportedFeeQuote>[0],
+) {
+  return hasRenderableProgramFee(offering) || Boolean(getDisplayedReportedFeeQuote(offering));
+}
+
 export function getProgramAnnualFeeLabel(
   offering: Pick<
     ProgramOffering,
@@ -123,8 +137,10 @@ export function getProgramAnnualFeeLabel(
     | "officialAnnualTuitionAmount"
     | "officialFeeCurrency"
     | "feeStatus"
+    | "reportedFeeQuote"
   >,
 ) {
+  if (getDisplayedReportedFeeQuote(offering)) return "Fees";
   if (offering.feeStatus === "indicative") return "Indicative tuition per year";
   if (offering.feeStatus === "on_request") return "Fee plan";
   return hasOfficialFeeAmount(
@@ -145,6 +161,7 @@ export function formatProgramAnnualFee(
     | "officialAnnualTuitionAmount"
     | "officialFeeCurrency"
     | "feeStatus"
+    | "reportedFeeQuote"
     | "indicativeAnnualTuitionMinUsd"
     | "indicativeAnnualTuitionMaxUsd"
   >,
@@ -190,6 +207,19 @@ export function formatProgramAnnualFee(
   return fallback;
 }
 
+/** Display-only formatter: amount/range without exposing a quote's billing basis or provenance. */
+export function formatProgramFee(
+  offering: Parameters<typeof getDisplayedReportedFeeQuote>[0],
+  fallback = "Fee plan on request",
+) {
+  const quote = getDisplayedReportedFeeQuote(offering);
+  if (!quote) return formatProgramAnnualFee(offering, fallback);
+  const minimum = formatCurrencyAmount(quote.minAmount, quote.currency);
+  return quote.maxAmount !== undefined && quote.maxAmount !== quote.minAmount
+    ? `${minimum}–${formatCurrencyAmount(quote.maxAmount, quote.currency)}`
+    : minimum;
+}
+
 function feeAudienceLabel(audience: FeeAudience, countrySlug: string) {
   if (audience === "all") return "All students";
   if (audience === "international") return countrySlug === "india" ? "NRI & international" : "International students";
@@ -208,6 +238,7 @@ export function getProgramFeeLines(
     | "officialAnnualTuitionAmount"
     | "officialFeeCurrency"
     | "feeStatus"
+    | "reportedFeeQuote"
     | "indicativeAnnualTuitionMinUsd"
     | "indicativeAnnualTuitionMaxUsd"
     | "feeAudience"
@@ -216,6 +247,7 @@ export function getProgramFeeLines(
   countrySlug: string,
   fallback = "Fee plan on request",
 ): { label: string; amount: string }[] {
+  if (getDisplayedReportedFeeQuote(offering)) return [{ label: "Fees", amount: formatProgramFee(offering, fallback) }];
   const primary = {
     label: offering.feeAudience && offering.feeStatus !== "on_request"
       ? feeAudienceLabel(offering.feeAudience, countrySlug)

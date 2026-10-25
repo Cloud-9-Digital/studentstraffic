@@ -37,6 +37,7 @@ type Props = {
   primaryProgramShortName?: string;
   courseSlug?: string;
   feeValue: string;
+  feeIsAnnual: boolean;
   hasFee: boolean;
   recognitionBadge?: string;
   lastVerifiedAt: string;
@@ -124,7 +125,7 @@ function UniversityContextStrip(props: Props & { activeSection: UniversitySectio
             {props.primaryProgramShortName} · {props.universityType}
           </span>
         ) : null}
-        {props.hasFee ? <span className="font-medium text-accent">{props.feeValue}/yr</span> : null}
+        {props.hasFee ? <span className="font-medium text-accent">{props.feeValue}{props.feeIsAnnual ? "/yr" : ""}</span> : null}
         {props.recognitionBadge ? (
           <span className="flex items-center gap-1 text-xs font-medium text-primary">
             <ShieldCheck className="size-3.5 shrink-0" />

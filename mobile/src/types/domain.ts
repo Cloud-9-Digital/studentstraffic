@@ -12,6 +12,7 @@ export type University = {
   courseSlug?: string;
   offeringSlug?: string;
   tuitionUsd: number | null;
+  feeLabel?: string;
   duration?: string;
   medium?: string | null;
   summary?: string;
@@ -46,8 +47,12 @@ export type Offering = {
   /** Programme level slug (e.g. bachelors); absent from older API responses. */
   level?: string | null;
   levelLabel?: string | null;
-  /** Pre-formatted annual fee, matching the website (official currency, or "Fee on request"). */
+  /** Legacy display alias; may contain a reported fee rather than annual tuition. */
   annualFeeLabel?: string;
+  /** Preferred generic display fee; billing period is not inferred from its amount. */
+  feeLabel?: string;
+  /** False for a reported quote. Absent only in older API responses. */
+  feeIsAnnual?: boolean;
   /** Each published fee with its audience label; absent from older API responses. */
   feeLines?: { label: string; amount: string }[];
   durationYears: number;

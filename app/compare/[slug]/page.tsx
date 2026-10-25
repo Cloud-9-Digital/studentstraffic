@@ -45,7 +45,8 @@ import {
 import { getComparisonHref, getUniversityHref } from "@/lib/routes";
 import {
   formatCurrencyUsd,
-  formatProgramAnnualFee,
+  formatProgramFee,
+  getDisplayedReportedFeeQuote,
   formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
@@ -667,7 +668,7 @@ function UniversityComparisonDetail({
                 <div className="rounded-xl border border-border bg-muted/20 p-4">
                   <p className="text-sm font-semibold text-heading">{guide.left.university.name}</p>
                   <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    Annual fee: {formatProgramAnnualFee(guide.left.offering)}.{" "}
+                    {getDisplayedReportedFeeQuote(guide.left.offering) ? "Fees" : "Annual fee"}: {formatProgramFee(guide.left.offering)}.{" "}
                     <TeachingMediumSentence
                       medium={guide.left.offering.medium}
                       countrySlug={guide.left.country.slug}
@@ -679,7 +680,7 @@ function UniversityComparisonDetail({
                 <div className="rounded-xl border border-border bg-muted/20 p-4">
                   <p className="text-sm font-semibold text-heading">{guide.right.university.name}</p>
                   <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                    Annual fee: {formatProgramAnnualFee(guide.right.offering)}.{" "}
+                    {getDisplayedReportedFeeQuote(guide.right.offering) ? "Fees" : "Annual fee"}: {formatProgramFee(guide.right.offering)}.{" "}
                     <TeachingMediumSentence
                       medium={guide.right.offering.medium}
                       countrySlug={guide.right.country.slug}

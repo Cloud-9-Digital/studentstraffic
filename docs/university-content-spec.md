@@ -235,3 +235,12 @@ labelled estimate to an unexplored on-request entry. Secondary estimates use ind
 they do not become confirmed official tuition. A whole-course or semester combined charge can be
 reported with that exact basis in fee notes, but cannot be displayed as annual tuition. Follow the
 seeding runbook's source and conversion requirements.
+
+### Reported native fees
+
+Optional programme `admissionsContent.reportedFeeQuote` supports an evidenced native amount/range
+whose combined components or billing period cannot honestly populate annual tuition. Retain exact
+period, category, components and source/year internally, with the required graded programme evidence.
+Display the amount/range under **Fees**, without source/year/period prose. This is a display fallback;
+it does not change annual tuition budgets, comparisons, filters or structured tuition Offers. See the
+pipeline architecture and canonical runbook for the exact contract and evidence requirements.

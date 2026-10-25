@@ -1,4 +1,5 @@
 import "./lib/load-script-env.mjs";
+import { parseReportedFeeQuote, type ReportedFeeQuote } from "../lib/reported-fee-quote";
 
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
@@ -80,6 +81,7 @@ const programmeSchema = z.object({
     sourceUrl: z.string().url(),
   }),
   admissionsContent: z.object({
+    reportedFeeQuote: z.custom<ReportedFeeQuote>((value) => Boolean(parseReportedFeeQuote(value))).transform((value) => parseReportedFeeQuote(value)!).optional(),
     overview: z.string().min(40).max(420),
     eligibility: z.object({
       intro: z.string().min(30).max(320),

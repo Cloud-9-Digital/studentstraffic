@@ -1,7 +1,7 @@
 import { programmeLevelLabels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
 import type { FinderCardProgram, FinderProgram, University } from "@/lib/data/types";
 import type { ApplicationRow } from "@/lib/db/schema";
-import { getProgramFeeLines, formatProgramMedium } from "@/lib/utils";
+import { getDisplayedReportedFeeQuote, formatProgramFee, getProgramFeeLines, formatProgramMedium } from "@/lib/utils";
 
 export function mapFinderCardProgram(program: FinderCardProgram) {
   return {
@@ -18,6 +18,7 @@ export function mapFinderCardProgram(program: FinderCardProgram) {
     courseSlug: program.course.slug,
     offeringSlug: program.offering.slug,
     tuitionUsd: program.offering.annualTuitionUsd,
+    feeLabel: formatProgramFee(program.offering, "Fee on request"),
     officialFeeCurrency: program.offering.officialFeeCurrency,
     officialAnnualTuitionAmount: program.offering.officialAnnualTuitionAmount,
   };
@@ -79,6 +80,9 @@ export function mapUniversityDetail(
           // null for placeholder mediums; clients must hide the field, not guess.
           medium: formatProgramMedium(primaryOffering.medium, university.countrySlug),
           intakeMonths: primaryOffering.intakeMonths,
+          feeLabel: formatMobileFeeLabel(primaryOffering, university.countrySlug),
+          feeIsAnnual: !getDisplayedReportedFeeQuote(primaryOffering),
+          feeLines: getProgramFeeLines(primaryOffering, university.countrySlug, "Fee on request"),
           yearlyCostBreakdown: primaryOffering.yearlyCostBreakdown,
           feeNotes: primaryOffering.feeNotes,
           professionalExamSupport: primaryOffering.professionalExamSupport,
@@ -90,7 +94,9 @@ export function mapUniversityDetail(
       levelLabel: course.level ? (programmeLevelLabels[course.level as ProgrammeLevel] ?? null) : null,
       // "₹50,000" when the fee's audience is unknown; "Indian students ₹1,95,000 · NRI & international $4,000"
       // when the record says who each fee is for.
-      annualFeeLabel: formatMobileFeeLabel(offering, university.countrySlug),
+      annualFeeLabel: formatMobileFeeLabel(offering, university.countrySlug), // Legacy field name; not a billing-period assertion.
+      feeLabel: formatMobileFeeLabel(offering, university.countrySlug),
+      feeIsAnnual: !getDisplayedReportedFeeQuote(offering),
       // Each fee on its own, labelled by audience, in the same order as the website card.
       feeLines: getProgramFeeLines(offering, university.countrySlug, "Fee on request"),
       courseSlug: offering.courseSlug,

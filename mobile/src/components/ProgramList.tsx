@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
 import { colors } from "../theme/tokens";
 import type { Offering } from "../types/domain";
+import { hasAnnualFeeSuffix } from "../lib/program-fees";
 
 const VISIBLE_ROWS = 5;
 
@@ -65,7 +66,7 @@ export function ProgramList({
       <View style={s.list}>
         {rows.map((program, index) => {
           const open = program.slug === selectedSlug;
-          const meta = [program.levelLabel, program.durationYears ? `${program.durationYears} years` : null, program.feeLines ? null : program.annualFeeLabel]
+          const meta = [program.levelLabel, program.durationYears ? `${program.durationYears} years` : null, program.feeLines ? null : (program.feeLabel ?? program.annualFeeLabel)]
             .filter(Boolean)
             .join(" · ");
           return (
@@ -73,7 +74,7 @@ export function ProgramList({
               <Pressable
                 accessibilityRole="button"
                 accessibilityState={{ expanded: open }}
-                accessibilityLabel={`${shortTitle(program.title)}. ${meta}${program.feeLines?.length ? `. ${program.feeLines.map(fee => `${fee.label} ${fee.amount} a year`).join(", ")}` : ""}`}
+                accessibilityLabel={`${shortTitle(program.title)}. ${meta}${program.feeLines?.length ? `. ${program.feeLines.map(fee => `${fee.label} ${fee.amount}${hasAnnualFeeSuffix(program, fee.amount) ? " a year" : ""}`).join(", ")}` : ""}`}
                 onPress={() => { onSelect(open ? null : program.slug); Haptics.selectionAsync(); }}
                 style={s.rowHead}
               >
@@ -91,7 +92,7 @@ export function ProgramList({
                           <Text style={s.feeLabel} numberOfLines={1}>{fee.label}</Text>
                           <Text style={s.feeAmount}>
                             {fee.amount}
-                            {/\d/.test(fee.amount) ? <Text style={s.feePer}> / year</Text> : null}
+                            {hasAnnualFeeSuffix(program, fee.amount) ? <Text style={s.feePer}> / year</Text> : null}
                           </Text>
                         </View>
                       ))}

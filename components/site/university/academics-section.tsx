@@ -10,12 +10,14 @@ import {
 import type { FinderProgram, University } from "@/lib/data/types";
 import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
-  formatProgramAnnualFee,
+  formatProgramFee,
+  getDisplayedReportedFeeQuote,
   formatUsdAmountOrTbd,
   formatProgramLivingFee,
   formatProgramMedium,
   formatProgramDuration,
   hasRenderableProgramLivingFee,
+  hasRenderableProgramDisplayFee,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
@@ -34,8 +36,8 @@ export function UniversityAcademicsSection({
       hasPublishedUsdAmount(year.hostelUsd) ||
       hasPublishedUsdAmount(year.totalUsd),
   );
-  const hasAnnualFeeSummary =
-    hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd) ||
+  const hasFeeSummary =
+    hasRenderableProgramDisplayFee(primaryProgram.offering) ||
     hasRenderableProgramLivingFee(primaryProgram.offering);
 
   const isMedicalStream = (
@@ -99,14 +101,14 @@ export function UniversityAcademicsSection({
             {primaryProgram.offering.mediumNote}
           </p>
         ) : null}
-        {hasAnnualFeeSummary ? (
+        {hasFeeSummary ? (
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-border bg-muted/30 px-4 py-3">
               <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
-                Tuition fee
+                {getDisplayedReportedFeeQuote(primaryProgram.offering) ? "Fees" : "Tuition fee"}
               </p>
               <p className="mt-1 text-base font-semibold text-foreground">
-                {formatProgramAnnualFee(primaryProgram.offering)}
+                {formatProgramFee(primaryProgram.offering)}
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-muted/30 px-4 py-3">

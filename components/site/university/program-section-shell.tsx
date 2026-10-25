@@ -6,7 +6,7 @@ import type {
 } from "@/lib/data/regulatory-advisories";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import type { ProgramSection } from "@/lib/university-sections";
-import { formatProgramAnnualFee, hasRenderableProgramAnnualFee } from "@/lib/utils";
+import { getDisplayedReportedFeeQuote, formatProgramFee, hasRenderableProgramDisplayFee } from "@/lib/utils";
 
 import { UniversityAcademicsSection } from "./academics-section";
 import {
@@ -95,8 +95,9 @@ export function ProgramSectionShell({
       universityType={university.type}
       countryName={country.name}
       countrySlug={country.slug}
-      hasFee={hasRenderableProgramAnnualFee(program.offering)}
-      feeValue={formatProgramAnnualFee(program.offering)}
+      hasFee={hasRenderableProgramDisplayFee(program.offering)}
+      feeIsAnnual={!getDisplayedReportedFeeQuote(program.offering)}
+      feeValue={formatProgramFee(program.offering)}
       coverImage={coverImage}
       logoUrl={logoUrl}
       logoInitials={logoInitials}

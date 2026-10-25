@@ -22,6 +22,8 @@ import {
   formatCurrencyAmount,
   formatCurrencyUsd,
   formatProgramAnnualFee,
+  formatProgramFee,
+  getDisplayedReportedFeeQuote,
   formatProgramDuration,
   formatProgramMedium,
   hasOfficialFeeAmount,
@@ -157,6 +159,7 @@ function formatOfficialAnnualFee(program: FinderProgram) {
 
 function formatAnnualFeeLine(program: FinderProgram) {
   const { offering } = program;
+  if (getDisplayedReportedFeeQuote(offering)) return formatProgramFee(offering);
   const fee = formatProgramAnnualFee(offering);
   const official = formatOfficialAnnualFee(program);
   const qualifiers = [
@@ -206,7 +209,9 @@ export function renderUniversityMarkdown(input: {
       "Programmes",
       programs.length
         ? [
-            "| Programme | Course | Duration | Medium | Tuition per year |",
+            programs.some((program) => getDisplayedReportedFeeQuote(program.offering))
+              ? "| Programme | Course | Duration | Medium | Fees |"
+              : "| Programme | Course | Duration | Medium | Tuition per year |",
             "| --- | --- | --- | --- | --- |",
             ...programs.map(
               (program) =>
@@ -301,7 +306,7 @@ export function renderProgramMarkdown(input: {
         `Duration: ${formatProgramDuration(offering.durationYears)}`,
         medium ? `Teaching language: ${medium}` : null,
         offering.mediumNote ? `Language note: ${offering.mediumNote}` : null,
-        `Tuition per year: ${formatAnnualFeeLine(program)}`,
+        `${getDisplayedReportedFeeQuote(offering) ? "Fees" : "Tuition per year"}: ${formatAnnualFeeLine(program)}`,
         hasPublishedUsdAmount(offering.totalTuitionUsd)
           ? `Total tuition: ${formatCurrencyUsd(offering.totalTuitionUsd)}`
           : null,
@@ -316,7 +321,7 @@ export function renderProgramMarkdown(input: {
         offering.officialProgramUrl ? `Official programme page: ${offering.officialProgramUrl}` : null,
       ]),
     ]),
-    ...paragraph(offering.feeNotes ? `Fee notes: ${offering.feeNotes}` : null),
+    ...paragraph(offering.feeNotes && !getDisplayedReportedFeeQuote(offering) ? `Fee notes: ${offering.feeNotes}` : null),
     ...section(
       "Year-wise cost (USD)",
       offering.yearlyCostBreakdown.length

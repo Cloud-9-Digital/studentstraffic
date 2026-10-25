@@ -1,3 +1,4 @@
+import { assertReportedFeeQuoteEvidence } from "./reported-fee-quote-evidence";
 import { createHash } from "node:crypto";
 import type { Dirent } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
@@ -195,6 +196,9 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string, no
       if (!hasFieldEvidence("admissions", ["verified"]) || !hasIntakeEvidence) {
         throw new Error(`${migrationId} is missing verified admissions or intake evidence for ${programme.slug}.`);
       }
+
+      const quote = programme.admissionsContent.reportedFeeQuote;
+      if (quote) assertReportedFeeQuoteEvidence(quote, evidence, `${migrationId} programme '${programme.slug}'`);
 
       const feeEvidence = evidence.filter((item) => item.publicField === "fee");
       if (programme.fee.status === "confirmed") {

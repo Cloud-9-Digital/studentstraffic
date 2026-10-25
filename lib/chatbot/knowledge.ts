@@ -27,6 +27,7 @@ import {
 import {
   formatCurrencyUsd,
   formatProgramAnnualFee,
+  formatProgramFee,
   formatProgramDuration,
   formatProgramLivingFee,
 } from "@/lib/utils";
@@ -102,7 +103,7 @@ function toCard(program: FinderProgram): ChatUniversityCard {
     country: program.country.name,
     countryCode: getCountryFlagCode(program.country.slug),
     href: getUniversityHref(program.university.slug),
-    annualFee: formatProgramAnnualFee(program.offering),
+    annualFee: formatProgramFee(program.offering),
     annualFeeUsd: getChartableUsdFee(program),
     courses: [program.course.shortName],
     medium: program.offering.medium,
@@ -148,6 +149,7 @@ function describeProgram(program: FinderProgram) {
     courseSlug: program.course.slug,
     programme: program.offering.title,
     duration: formatProgramDuration(program.offering.durationYears),
+    fee: formatProgramFee(program.offering),
     annualTuition: formatProgramAnnualFee(program.offering),
     annualLivingCost: formatProgramLivingFee(program.offering),
     feeStatus: program.offering.feeStatus ?? "unspecified",
@@ -421,6 +423,7 @@ export async function compareUniversities(input: {
           programmes: entry.programs.map((program) => ({
             course: program.course.shortName,
             duration: formatProgramDuration(program.offering.durationYears),
+            fee: formatProgramFee(program.offering),
             annualTuition: formatProgramAnnualFee(program.offering),
             teachingMedium: program.offering.medium,
             intakes: program.offering.intakeMonths,

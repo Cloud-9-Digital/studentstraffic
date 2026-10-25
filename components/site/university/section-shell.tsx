@@ -4,8 +4,9 @@ import type { Author } from "@/lib/authors";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import type { UniversitySection } from "@/lib/university-sections";
 import {
-  formatProgramAnnualFee,
-  hasRenderableProgramAnnualFee,
+  getDisplayedReportedFeeQuote,
+  formatProgramFee,
+  hasRenderableProgramDisplayFee,
 } from "@/lib/utils";
 
 import { UniversityFaqSection } from "./faq-section";
@@ -44,7 +45,7 @@ export function UniversitySectionShell({
   author?: Author | null;
 }) {
   const hasFee = Boolean(
-    primaryProgram && hasRenderableProgramAnnualFee(primaryProgram.offering),
+    primaryProgram && hasRenderableProgramDisplayFee(primaryProgram.offering),
   );
   const content = initialSection === "programs"
     ? programs.length > 0
@@ -84,9 +85,10 @@ export function UniversitySectionShell({
       courseSlug={primaryProgram?.course.slug}
       feeValue={
         primaryProgram
-          ? formatProgramAnnualFee(primaryProgram.offering, "Fee plan on request")
+          ? formatProgramFee(primaryProgram.offering, "Fee plan on request")
           : "Available on request"
       }
+      feeIsAnnual={primaryProgram ? !getDisplayedReportedFeeQuote(primaryProgram.offering) : false}
       hasFee={hasFee}
       recognitionBadge={university.recognitionBadges[0]}
       lastVerifiedAt={lastVerifiedAt}

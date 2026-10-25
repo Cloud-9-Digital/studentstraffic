@@ -96,3 +96,21 @@ test("programme markdown preserves confirmed NIL tuition and compulsory charge n
   assert.match(markdown, /NIL tuition only; admission and examination charges remain payable/);
   assert.doesNotMatch(markdown, /Total tuition:.*0|Free course/);
 });
+
+test("reported full-course quote uses generic Fees without annual units or internal quote prose", () => {
+  const quotedProgram = { ...program, offering: {
+    ...program.offering, feeStatus: "on_request", officialAnnualTuitionAmount: undefined,
+    feeNotes: "INTERNAL first-year fee basis and source-year detail must not accompany a reported quote.",
+    reportedFeeQuote: {
+      currency: "INR", minAmount: 45000, maxAmount: 90000, status: "indicative", period: "full_course",
+      componentBasis: "Combined compulsory course fees, not isolated tuition.", category: "Indian route", academicYear: "2026",
+      sourceUrl: "https://example.edu/reported-fee-quote", sourceLabel: "Internal retained quote notice", verifiedAt: "2026-10-25",
+    },
+  }} as FinderProgram;
+  const markdown = renderProgramMarkdown({ program: quotedProgram });
+  assert.match(markdown, /Fees: ₹45,000–₹90,000/);
+  assert.doesNotMatch(markdown, /Tuition per year:|INTERNAL|Internal retained quote|first-year fee basis|full_course/);
+  const universityMarkdown = renderUniversityMarkdown({ university, country, programs: [quotedProgram] });
+  assert.match(universityMarkdown, /\| Medium \| Fees \|/);
+  assert.doesNotMatch(universityMarkdown, /Tuition per year|₹90,000\/year/);
+});

@@ -1,3 +1,5 @@
+import type { ReportedFeeQuote } from "@/lib/reported-fee-quote";
+
 export type Country = {
   slug: string;
   name: string;
@@ -230,6 +232,7 @@ export type ProgramOffering = {
   /** Who the main fee above applies to; absent until classified. */
   feeAudience?: FeeAudience;
   additionalFees?: AdditionalProgramFee[];
+  reportedFeeQuote?: ReportedFeeQuote;
   indicativeAnnualTuitionMinUsd?: number;
   indicativeAnnualTuitionMaxUsd?: number;
   officialProgramUrl: string;
@@ -306,6 +309,7 @@ export type DocumentsRequired = {
 };
 
 export type ProgramAdmissionsContent = {
+  reportedFeeQuote?: ReportedFeeQuote;
   overview: string;
   eligibility: EligibilityCriteria;
   applicationSteps: string[];
@@ -460,6 +464,8 @@ export type FinderCardProgram = {
     annualTuitionUsd: number;
     officialFeeCurrency?: string;
     officialAnnualTuitionAmount?: number;
+    feeStatus?: FeeStatus;
+    reportedFeeQuote?: ReportedFeeQuote;
     featured: boolean;
   };
 };

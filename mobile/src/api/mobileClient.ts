@@ -71,6 +71,7 @@ function toUniversity(input: any): University {
     courseSlug: input.courseSlug,
     offeringSlug: input.offeringSlug,
     tuitionUsd: input.tuitionUsd ?? input.primaryOffering?.annualTuitionUsd ?? null,
+    feeLabel: input.feeLabel ?? input.primaryOffering?.feeLabel,
     duration: input.primaryOffering ? `${input.primaryOffering.durationYears} years` : undefined,
     medium: input.primaryOffering?.medium,
     summary: input.summary,

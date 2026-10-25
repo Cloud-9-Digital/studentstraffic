@@ -4,7 +4,9 @@ import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import { getIntakeMonthLabels } from "@/lib/catalogue-facets";
 import {
-  formatProgramAnnualFee,
+  formatProgramFee,
+  getProgramAnnualFeeLabel,
+  getDisplayedReportedFeeQuote,
   formatProgramDuration,
   formatProgramLivingFee,
   formatProgramMedium,
@@ -120,10 +122,10 @@ function ProgramFeeCard({
         <div className="grid grid-cols-1 gap-px border-b border-border bg-border sm:grid-cols-3">
           <div className="bg-card px-5 py-4">
             <p className="text-[0.6rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-              Tuition per year
+              {getProgramAnnualFeeLabel(offering)}
             </p>
             <p className="mt-1.5 text-xl font-bold text-foreground">
-              {formatProgramAnnualFee(offering)}
+              {formatProgramFee(offering)}
             </p>
             {offering.officialFeeCurrency && hasOfficialFeeAmount(
               offering.officialAnnualTuitionAmount,
@@ -170,7 +172,7 @@ function ProgramFeeCard({
         </div>
       )}
 
-      {offering.feeStatus === "on_request" ? (
+      {offering.feeStatus === "on_request" && !getDisplayedReportedFeeQuote(offering) ? (
         <div className="border-t border-border/60 bg-primary/[0.035] px-6 py-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-xl text-sm leading-6 text-muted-foreground">
@@ -233,7 +235,7 @@ function ProgramFeeCard({
       ) : null}
 
       {/* Fee notes */}
-      {offering.feeNotes && (
+      {offering.feeNotes && !getDisplayedReportedFeeQuote(offering) && (
         <div className="border-t border-border/60 bg-muted/20 px-6 py-3">
           <p className="flex items-start gap-2 text-sm leading-6 text-muted-foreground">
             <CircleDollarSign className="mt-0.5 size-3.5 shrink-0 text-accent" />
@@ -243,7 +245,7 @@ function ProgramFeeCard({
       )}
 
       {/* Verified date */}
-      {offering.feeVerifiedAt && (
+      {offering.feeVerifiedAt && !getDisplayedReportedFeeQuote(offering) && (
         <div className="border-t border-border/40 px-6 py-2.5">
           <p className="text-xs text-muted-foreground/70">
             Fee data last verified: {offering.feeVerifiedAt}

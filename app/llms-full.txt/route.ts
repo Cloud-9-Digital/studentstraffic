@@ -1,4 +1,4 @@
-import { and, asc, desc, eq } from "drizzle-orm";
+import { and, asc, desc, eq, sql } from "drizzle-orm";
 import { unstable_cache } from "next/cache";
 
 import { siteConfig } from "@/lib/constants";
@@ -13,6 +13,7 @@ import {
 import { absoluteUrl } from "@/lib/metadata";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 import { getUniversityMarkdownHref } from "@/lib/agent-markdown";
+import { parseReportedFeeQuote, type ReportedFeeQuote } from "@/lib/reported-fee-quote";
 import type { FeeStatus } from "@/lib/data/types";
 import {
   getCountryHref,
@@ -21,7 +22,8 @@ import {
   getUniversityProgramHref,
 } from "@/lib/routes";
 import {
-  formatProgramAnnualFee,
+  formatProgramFee,
+  getDisplayedReportedFeeQuote,
   formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
@@ -122,6 +124,7 @@ type LlmsProgramTuple = [
   indicativeAnnualTuitionMinUsd: number | null,
   indicativeAnnualTuitionMaxUsd: number | null,
   medium: string,
+  reportedFeeQuote: ReportedFeeQuote | null,
 ];
 
 const getLlmsProgramTuples = unstable_cache(
@@ -147,6 +150,7 @@ const getLlmsProgramTuples = unstable_cache(
         indicativeAnnualTuitionMaxUsd:
           programOfferingsTable.indicativeAnnualTuitionMaxUsd,
         medium: programOfferingsTable.medium,
+        reportedFeeQuote: sql<unknown>`${programOfferingsTable.admissionsContent}->'reportedFeeQuote'`,
       })
       .from(programOfferingsTable)
       .innerJoin(
@@ -179,9 +183,10 @@ const getLlmsProgramTuples = unstable_cache(
       row.indicativeAnnualTuitionMinUsd,
       row.indicativeAnnualTuitionMaxUsd,
       row.medium,
+      parseReportedFeeQuote(row.reportedFeeQuote) ?? null,
     ]);
   },
-  ["llms-full-program-tuples-v1"],
+  ["llms-full-program-tuples-fee-quote-v2"],
   { tags: ["catalog", "llms"], revalidate: 86400 },
 );
 
@@ -205,6 +210,7 @@ async function getLlmsCatalogIndex() {
       indicativeAnnualTuitionMinUsd,
       indicativeAnnualTuitionMaxUsd,
       medium,
+      reportedFeeQuote,
     ]) => ({
       universitySlug,
       courseSlug,
@@ -219,6 +225,7 @@ async function getLlmsCatalogIndex() {
       indicativeAnnualTuitionMinUsd,
       indicativeAnnualTuitionMaxUsd,
       medium,
+      reportedFeeQuote: reportedFeeQuote ?? undefined,
     }),
   );
   return { ...entities, offerings };
@@ -401,24 +408,19 @@ export async function GET(request: Request) {
       for (const offering of universityOfferings) {
         const course = courseMap.get(offering.courseSlug);
         const courseName = course?.shortName ?? offering.courseSlug.toUpperCase();
-        // Same fee precedence as the page: indicative range, USD, then the
-        // official-currency amount; "on request" when none is published.
-        const annualFee = formatProgramAnnualFee(
-          {
-            ...offering,
-            feeStatus: offering.feeStatus ?? undefined,
-            officialFeeCurrency: offering.officialFeeCurrency ?? undefined,
-            officialAnnualTuitionAmount:
-              offering.officialAnnualTuitionAmount ?? undefined,
-            indicativeAnnualTuitionMinUsd:
-              offering.indicativeAnnualTuitionMinUsd ?? undefined,
-            indicativeAnnualTuitionMaxUsd:
-              offering.indicativeAnnualTuitionMaxUsd ?? undefined,
-          },
-          "fee on request",
-        );
-        const fee =
-          annualFee === "fee on request" ? annualFee : `${annualFee}/year`;
+        // Display-only native quotes remain separate from annual tuition units.
+        const displayOffering = {
+          ...offering,
+          feeStatus: offering.feeStatus ?? undefined,
+          officialFeeCurrency: offering.officialFeeCurrency ?? undefined,
+          officialAnnualTuitionAmount: offering.officialAnnualTuitionAmount ?? undefined,
+          indicativeAnnualTuitionMinUsd: offering.indicativeAnnualTuitionMinUsd ?? undefined,
+          indicativeAnnualTuitionMaxUsd: offering.indicativeAnnualTuitionMaxUsd ?? undefined,
+        };
+        const displayedFee = formatProgramFee(displayOffering, "fee on request");
+        const fee = getDisplayedReportedFeeQuote(displayOffering)
+          ? `Fees: ${displayedFee}`
+          : displayedFee === "fee on request" ? displayedFee : `${displayedFee}/year`;
         const totalFee = hasPublishedUsdAmount(offering.totalTuitionUsd)
           ? `, $${offering.totalTuitionUsd.toLocaleString("en-US")} total`
           : "";

@@ -634,3 +634,28 @@ An unknown start month no longer blocks an otherwise verified current programme.
 carry empty `intakeMonths` and `intakeCodes` together, with an explicit omitted-intake evidence
 record. Nonempty month facets still require verified evidence and exact label/code agreement.
 The UI omits empty intake facets; no guessed date, cohort or database schema change is needed.
+
+### Native reported fee quotes (2026-10-25)
+
+A programme can retain an optional `admissionsContent.reportedFeeQuote` in the existing JSONB
+column, without a database migration. It stores `currency`, positive safe-integer `minAmount`,
+optional `maxAmount` (at least the minimum), `status` (`confirmed` or `indicative`), `period`
+(`semester`, `academic_year`, `first_year`, `full_course` or `other`), `componentBasis`, optional
+`audience` and `category`, `academicYear`, `sourceUrl`, `sourceLabel` and `verifiedAt`.
+The source, billing basis, components and category remain internal provenance.
+
+The catalogue projects only `admissions_content -> 'reportedFeeQuote'` for list/finder queries,
+validates it with `parseReportedFeeQuote`, and maps it into `ProgramOffering.reportedFeeQuote`.
+The complete admissions JSON remains detail-only. The mobile finder exposes a formatted `feeLabel`. Programme detail DTOs also expose generic
+`feeLabel` and `feeIsAnnual`; reported quotes explicitly set `feeIsAnnual: false`, suppressing
+both visual and accessibility per-year units. The legacy `annualFeeLabel` is a display alias only.
+`formatProgramFee` and `getProgramFeeLines` display a valid fallback quote as a native amount/range
+with the label **Fees**; quote basis, source, date and year are not rendered. Existing renderable
+annual tuition, including explicitly confirmed native zero, has precedence. Missing or malformed
+quotes retain the normal unknown-fee fallback.
+
+`formatProgramAnnualFee`, annual tuition renderability, numeric budget/filter/sort inputs and
+annual tuition SEO/structured Offers remain independent of quotes. Never annualise a semester or
+full-course amount, divide a combined quote into invented tuition, convert it to an inferred USD
+budget, or multiply it into a course total. Finder/detail/university-list and build-snapshot cache
+versions changed with this projection. Publication refreshes the existing catalogue tags.

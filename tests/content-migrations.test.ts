@@ -404,3 +404,33 @@ test("canonical course durations reject values PostgreSQL numeric(4,1) cannot pr
     assert.equal(courseDurationYearsSchema.parse(duration), duration);
   }
 });
+
+test("actual scoped reader retains a quote only with matching graded quote evidence", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const id = "0241-reported-fee-quote";
+    const directory = join(root, id);
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({ version: 1, id, description: "Validate a native combined reported fee without changing tuition.", createdAt: "2026-10-25", payload: "payload.json" }));
+    const payload = structuredClone(validPayload);
+    const quote = { currency: "INR", minAmount: 55000, maxAmount: 80000, status: "indicative", period: "full_course", componentBasis: "Combined college fee; exact compulsory components retained.", category: "Indian regular route", academicYear: "2026", sourceUrl: "https://example.edu/combined-fees", sourceLabel: "Published fee notice", verifiedAt: "2026-10-25" };
+    Object.assign(payload.universities[0].programmes[0].admissionsContent, { reportedFeeQuote: quote });
+    const save = () => writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await save();
+    await assert.rejects(readContentMigrations(root), /reportedFeeQuote evidence/);
+    const evidence = { ...payload.evidence[0], publicField: "reportedFeeQuote", sourceUrl: quote.sourceUrl, status: "indicative", sourceGrade: "B" };
+    payload.evidence.push(evidence);
+    await save();
+    const parsed = (await readContentMigrations(root))[0].payload.universities[0].programmes[0].admissionsContent.reportedFeeQuote;
+    assert.equal(parsed?.minAmount, 55000);
+    assert.equal(parsed?.maxAmount, 80000);
+    assert.equal(parsed?.period, "full_course");
+    assert.equal(parsed?.category, "Indian regular route");
+    quote.status = "confirmed";
+    await save();
+    await assert.rejects(readContentMigrations(root), /Grade A verified/);
+    evidence.status = "verified";
+    evidence.sourceGrade = "A";
+    await save();
+    assert.equal((await readContentMigrations(root)).length, 1);
+  });
+});

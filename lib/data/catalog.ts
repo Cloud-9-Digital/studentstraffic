@@ -1,4 +1,5 @@
 import "server-only";
+import { parseReportedFeeQuote } from "@/lib/reported-fee-quote";
 
 import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -191,6 +192,7 @@ function mapProgramOfferingRow(
     officialProgramUrl: program.officialProgramUrl,
     audienceEligibility: program.audienceEligibility,
     admissionsContent: mapProgramAdmissionsContent(program.admissionsContent),
+    reportedFeeQuote: parseReportedFeeQuote(program.admissionsContent?.reportedFeeQuote),
     medium: program.medium as ProgramOffering["medium"],
     instructionLanguages:
       program.instructionLanguages as ProgramOffering["instructionLanguages"],
@@ -259,7 +261,7 @@ const buildCatalogSnapshotPath = path.join(
   process.cwd(),
   ".next",
   "cache",
-  "catalog-snapshot.json",
+  "catalog-snapshot-fee-quote-v2.json",
 );
 const buildCatalogSnapshotLockPath = `${buildCatalogSnapshotPath}.lock`;
 const currentDeploymentId = process.env.VERCEL_DEPLOYMENT_ID;
@@ -1048,7 +1050,7 @@ export async function getLandingPageSlugs() {
   return landingPages.map((page) => page.slug);
 }
 
-async function getFinderProgramsBase() {
+async function getFinderProgramsBaseWithFeeQuotes() {
   "use cache: remote";
 
   cacheLife("catalog");
@@ -1243,6 +1245,8 @@ async function queryFinderProgramsFromDatabase(
       annualTuitionUsd: sql<number>`${programOfferingsTable.annualTuitionUsd}`.as("annual_tuition_usd"),
       officialFeeCurrency: sql<string | null>`${programOfferingsTable.officialFeeCurrency}`.as("official_fee_currency"),
       officialAnnualTuitionAmount: sql<number | null>`${programOfferingsTable.officialAnnualTuitionAmount}`.as("official_annual_tuition_amount"),
+      reportedFeeQuote: sql<unknown>`${programOfferingsTable.admissionsContent}->'reportedFeeQuote'`.as("reported_fee_quote"),
+      feeStatus: sql<ProgramOffering["feeStatus"] | null>`${programOfferingsTable.feeStatus}`.as("fee_status"),
       offeringFeatured: sql<boolean>`${programOfferingsTable.featured}`.as("offering_featured"),
       universityRank: sql<number>`row_number() over (
         partition by ${universitiesTable.id}
@@ -1333,6 +1337,8 @@ async function queryFinderProgramsFromDatabase(
         annualTuitionUsd: row.annualTuitionUsd,
         officialFeeCurrency: row.officialFeeCurrency ?? undefined,
         officialAnnualTuitionAmount: row.officialAnnualTuitionAmount ?? undefined,
+        feeStatus: row.feeStatus ?? undefined,
+        reportedFeeQuote: parseReportedFeeQuote(row.reportedFeeQuote),
         featured: row.offeringFeatured,
       },
     })),
@@ -1404,6 +1410,7 @@ type FinderProgramRow = {
   offeringOfficialAnnualTuitionAmount: number | null;
   offeringOfficialTotalTuitionAmount: number | null;
   offeringFeeStatus: ProgramOffering["feeStatus"] | null;
+  offeringReportedFeeQuote: unknown;
   offeringFeeAudience: ProgramOffering["feeAudience"] | null;
   offeringAdditionalFees: NonNullable<ProgramOffering["additionalFees"]>;
   offeringFeeAcademicYear: string | null;
@@ -1503,6 +1510,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       officialAnnualTuitionAmount: row.offeringOfficialAnnualTuitionAmount ?? undefined,
       officialTotalTuitionAmount: row.offeringOfficialTotalTuitionAmount ?? undefined,
       feeStatus: row.offeringFeeStatus ?? undefined,
+      reportedFeeQuote: parseReportedFeeQuote(row.offeringReportedFeeQuote),
       feeAudience: row.offeringFeeAudience ?? undefined,
       additionalFees: row.offeringAdditionalFees,
       feeAcademicYear: row.offeringFeeAcademicYear ?? undefined,
@@ -1604,6 +1612,7 @@ async function selectFinderProgramsFromDatabase(
       offeringOfficialAnnualTuitionAmount: programOfferingsTable.officialAnnualTuitionAmount,
       offeringOfficialTotalTuitionAmount: programOfferingsTable.officialTotalTuitionAmount,
       offeringFeeStatus: programOfferingsTable.feeStatus,
+      offeringReportedFeeQuote: sql<unknown>`${programOfferingsTable.admissionsContent}->'reportedFeeQuote'`,
       offeringFeeAudience: programOfferingsTable.feeAudience,
       offeringAdditionalFees: programOfferingsTable.additionalFees,
       offeringFeeAcademicYear: programOfferingsTable.feeAcademicYear,
@@ -1734,7 +1743,7 @@ export async function listFinderPrograms(filters: FinderFilters) {
   const programs =
     (await selectFinderProgramsFromDatabase(
       buildFinderProgramConditions(filters),
-    )) ?? (await getFinderProgramsBase());
+    )) ?? (await getFinderProgramsBaseWithFeeQuotes());
 
   const filteredPrograms = programs.filter((program) => {
     if (filters.q) {
@@ -1837,6 +1846,8 @@ function toFinderCardProgram(program: FinderProgram): FinderCardProgram {
     offering: {
       slug: program.offering.slug,
       annualTuitionUsd: program.offering.annualTuitionUsd,
+      feeStatus: program.offering.feeStatus,
+      reportedFeeQuote: program.offering.reportedFeeQuote,
       officialFeeCurrency: program.offering.officialFeeCurrency,
       officialAnnualTuitionAmount:
         program.offering.officialAnnualTuitionAmount,
@@ -1938,7 +1949,7 @@ export async function queryFinderCardProgramsPage(
   // and stays cached — that is the path landing pages and crawlers hit.
   const results = normalized.q
     ? await executeFinderCardProgramsPage(normalized, page, pageSize)
-    : await cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-v1");
+    : await cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-fee-quote-v2");
 
   return {
     ...results,
@@ -2035,7 +2046,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
     };
   }
 
-  const programs = await getFinderProgramsBase();
+  const programs = await getFinderProgramsBaseWithFeeQuotes();
   const countriesBySlug = new Map<string, FinderCountryOption>();
   const citiesByKey = new Map<string, FinderCityOption>();
   const coursesBySlug = new Map<string, FinderCourseOption>();
@@ -2273,8 +2284,13 @@ export async function getCourseProgramDirectorySummary(courseSlug: string) {
 }
 
 export async function getProgramsForUniversity(universitySlug: string) {
+  return getCachedProgramsForUniversity(universitySlug, "reported-fee-quote-v1");
+}
+
+async function getCachedProgramsForUniversity(universitySlug: string, projectionVersion: string) {
   "use cache: remote";
 
+  void projectionVersion;
   cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("courses");
@@ -2294,12 +2310,12 @@ export async function getProgramsForUniversity(universitySlug: string) {
     return databasePrograms;
   }
 
-  const programs = await getFinderProgramsBase();
+  const programs = await getFinderProgramsBaseWithFeeQuotes();
   return programs.filter((program) => program.university.slug === universitySlug);
 }
 
 export async function getProgramBySlug(programSlug: string) {
-  const program = await getProgramDetailBySlug(programSlug, "admissions-v1");
+  const program = await getProgramDetailBySlug(programSlug, "admissions-fee-quote-v2");
   return program ? {
     ...program,
     university: { ...program.university, name: getUniversityDisplayName(program.university.name) },
@@ -2337,7 +2353,7 @@ async function getProgramDetailBySlug(programSlug: string, detailVersion: string
 
   const program = databasePrograms
     ? (databasePrograms[0] ?? null)
-    : ((await getFinderProgramsBase()).find(
+    : ((await getFinderProgramsBaseWithFeeQuotes()).find(
         (entry) => entry.offering.slug === programSlug,
       ) ?? null);
 
@@ -2374,7 +2390,7 @@ export async function getProgramsForCity(citySlug: string) {
     return databasePrograms;
   }
 
-  const programs = await getFinderProgramsBase();
+  const programs = await getFinderProgramsBaseWithFeeQuotes();
   return programs.filter(
     (program) =>
       program.country.slug === city.countrySlug &&
@@ -2417,7 +2433,7 @@ export async function getUniqueCities() {
       universityCount: row.universityCount,
     }));
   }
-  const programs = await getFinderProgramsBase();
+  const programs = await getFinderProgramsBaseWithFeeQuotes();
 
   const cityMeta = new Map<string, { slug: string; name: string; countrySlug: string; countryName: string }>();
   const uniSetsPerCity = new Map<string, Set<string>>();
