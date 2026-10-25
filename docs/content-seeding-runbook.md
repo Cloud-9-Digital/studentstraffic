@@ -111,11 +111,22 @@ Source order:
 2. the destination country's official international-student/regulator sources (for India: Study in
    India, AICTE, NIRF data files; use the equivalent generic registers for other countries).
 
-Aggregators (for India: Shiksha, Collegedunia, Careers360; use the equivalent aggregators
-elsewhere) are a missed-programme **checklist only** — never cite or copy them as evidence. A
-programme found only on an aggregator must be confirmed on the official site before it can be
-packaged; if it cannot be confirmed, mark it `aggregator_only_unconfirmed` in the CSV and do not
-publish it.
+Aggregators (for India: Shiksha, Collegedunia, Careers360; use equivalent sources elsewhere)
+are useful for missed-programme discovery and source-backed fee estimates. Programme existence
+must still be confirmed on the institution's site; otherwise mark it
+`aggregator_only_unconfirmed` and hold it. Credible secondary evidence is permitted when the
+complete source supports the exact claim, with its date, scope and limitations retained. A search
+snippet, anonymous review or unsourced marketing summary is not sufficient by itself.
+
+For fees, research credible secondary sources before leaving a programme on request. Record the
+exact award, campus/shift, applicant category, currency, academic or publication year, amount/range,
+billing period, and whether the amount is tuition or combined charges. Use `indicative` and Grade
+A/B indicative evidence for defensible estimates; secondary figures must not become confirmed
+official tuition. Retain conversion source/date where a USD range is derived from a native quote.
+Never treat a first-semester or whole-course combined amount as annual tuition. Conflicting or
+unclear figures may be recorded as reported programme charges in clearly scoped fee notes while
+annual tuition remains on request. Existing applied bundles stay immutable; enrich published
+profiles through a forward full-university bundle.
 
 Package every programme whose `intl_status` is `open_to_international` — not a representative
 sample. A programme marked `unknown` needs per-programme verification before packaging, or is held

@@ -845,7 +845,11 @@ async function getCachedUniversityBySlug(slug: string) {
 // React cache deduplicates metadata/page reads in one render. The remote cache
 // prevents repeated wide university reads across function instances; catalogue
 // publishing invalidates university:<slug>, including a cached not-found value.
-export const getUniversityBySlug = cache(getCachedUniversityBySlug);
+export const getUniversityBySlug = cache(async (slug: string) => {
+  const university = await getCachedUniversityBySlug(slug);
+  // Apply current presentation rules after remote cache reads as well.
+  return university ? { ...university, name: getUniversityDisplayName(university.name) } : null;
+});
 
 export async function getCatalogLinkOptions() {
   "use cache: remote";
@@ -1932,11 +1936,17 @@ export async function queryFinderCardProgramsPage(
   // a cache entry written once and rarely read again. Facet browsing
   // (country/city/level/course/sort/page) is a small, heavily reused key space
   // and stays cached — that is the path landing pages and crawlers hit.
-  if (normalized.q) {
-    return executeFinderCardProgramsPage(normalized, page, pageSize);
-  }
+  const results = normalized.q
+    ? await executeFinderCardProgramsPage(normalized, page, pageSize)
+    : await cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-v1");
 
-  return cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-v1");
+  return {
+    ...results,
+    programs: results.programs.map((program) => ({
+      ...program,
+      university: { ...program.university, name: getUniversityDisplayName(program.university.name) },
+    })),
+  };
 }
 
 export async function getFinderOptions(): Promise<FinderOptions> {
@@ -2289,7 +2299,11 @@ export async function getProgramsForUniversity(universitySlug: string) {
 }
 
 export async function getProgramBySlug(programSlug: string) {
-  return getProgramDetailBySlug(programSlug, "admissions-v1");
+  const program = await getProgramDetailBySlug(programSlug, "admissions-v1");
+  return program ? {
+    ...program,
+    university: { ...program.university, name: getUniversityDisplayName(program.university.name) },
+  } : null;
 }
 
 async function getProgramDetailBySlug(programSlug: string, detailVersion: string) {

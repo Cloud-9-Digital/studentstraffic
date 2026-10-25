@@ -5,12 +5,18 @@ const PROGRAMME_SUFFIX_MARKER =
 // Public labels can use a familiar name while the catalogue retains the official name.
 const UNIVERSITY_DISPLAY_NAMES: Record<string, string> = {
   "christ (deemed to be university)": "Christ University",
+  "symbiosis international (deemed university)": "Symbiosis International University",
+  "kiit deemed to be university": "KIIT University",
 };
 
+const INSTITUTION_STATUS_QUALIFIER =
+  /\s*[([]\s*(?:autonomous(?:\s+(?:college|institution))?|deemed(?:[\s-]+to[\s-]+be)?[\s-]+university)\s*[)\]]/giu;
+
 export function getUniversityDisplayName(name: string) {
-  const normalized = name.trim();
-  const displayName = UNIVERSITY_DISPLAY_NAMES[normalized.toLowerCase()];
+  const original = name.trim();
+  const displayName = UNIVERSITY_DISPLAY_NAMES[original.toLowerCase()];
   if (displayName) return displayName;
+  const normalized = original.replace(INSTITUTION_STATUS_QUALIFIER, "").replace(/\s+/g, " ").trim() || original;
   const separator = normalized.match(PROGRAMME_SUFFIX_SEPARATOR);
   if (!separator?.index) return normalized;
 

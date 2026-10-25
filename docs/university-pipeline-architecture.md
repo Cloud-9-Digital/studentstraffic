@@ -617,3 +617,15 @@ The confirmed primary fee schema accepts a non-negative native annual tuition am
 `getProgramBySlug` selects and maps stored `audienceEligibility` and programme `admissionsContent` for detail pages. Broad finder/list projections remain unchanged, preserving their query-cost intent. Keep this explicit detail projection when evolving stored programme fields; omission must not silently discard published applicant restrictions or admissions instructions.
 
 Programme detail cache entries also include an explicit serialized-shape version. Bump that version when adding stored fields to the detail projection so existing remote cache objects cannot silently omit newly rendered admissions or applicant restrictions; retain the broad finder projection unchanged.
+
+Public institution names omit parenthetical institutional-status qualifiers such as Autonomous;
+legal names and recognition facts remain in the stored catalogue and profile narrative. Apply the
+presentation helper after cached university, programme-detail and finder-card reads, and at shared
+card boundaries, so changing a display rule does not require a global catalogue cache flush.
+
+Fee enrichment researches credible secondary sources as well as official schedules. The existing
+indicative fee branch requires Grade A/B indicative evidence and an annual USD range; record native
+amounts, exact period/component/category, source year and any conversion provenance in notes and
+evidence. Reported combined or full-course charges must not be imported into annual-tuition fields.
+Forward full-university bundles preserve applied-history immutability. See the seeding runbook for
+the current source policy.

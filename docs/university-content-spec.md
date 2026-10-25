@@ -222,3 +222,10 @@ Use a concise language label derived from controlled `instructionLanguages`. Sto
 ### Confirmed NIL tuition
 
 Verified NIL tuition must be labelled as annual tuition for its exact programme and applicant category. A confirmed native amount of zero is distinct from missing pricing. Preserve compulsory-fee and conditional-waiver notes, avoid describing the whole course as free, and do not invent total tuition or living costs from a zero tuition component.
+
+Fee research includes credible third-party sources, with exact programme/category, source year,
+currency, billing period and tuition-versus-combined-charge scope recorded. Prefer a defensible
+labelled estimate to an unexplored on-request entry. Secondary estimates use indicative status;
+they do not become confirmed official tuition. A whole-course or semester combined charge can be
+reported with that exact basis in fee notes, but cannot be displayed as annual tuition. Follow the
+seeding runbook's source and conversion requirements.

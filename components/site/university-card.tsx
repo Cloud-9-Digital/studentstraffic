@@ -9,6 +9,7 @@ import { universityImageBlurDataURL, universityLogoBlurDataURL } from "@/lib/ima
 import { getUniversityHref } from "@/lib/routes";
 import { getCountryFlagCode, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import { cn } from "@/lib/utils";
+import { getUniversityDisplayName } from "@/lib/university-presentation";
 
 export function UniversityCard({
   program,
@@ -17,7 +18,8 @@ export function UniversityCard({
   program: FinderCardProgram;
   imagePriority?: boolean;
 }) {
-  const { university, country } = program;
+  const { country } = program;
+  const university = { ...program.university, name: getUniversityDisplayName(program.university.name) };
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
   const coverImage = getUniversityCoverImage({ ...university, countrySlug: country.slug });

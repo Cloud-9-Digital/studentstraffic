@@ -9,9 +9,11 @@ import {
   getUniversityInitials,
 } from "@/lib/university-media";
 import { formatCurrencyUsd, hasPublishedUsdAmount } from "@/lib/utils";
+import { getUniversityDisplayName } from "@/lib/university-presentation";
 
 export function ComparisonCard({ guide }: { guide: ComparisonGuide }) {
-  const { left, right } = guide;
+  const left = { ...guide.left, university: { ...guide.left.university, name: getUniversityDisplayName(guide.left.university.name) } };
+  const right = { ...guide.right, university: { ...guide.right.university, name: getUniversityDisplayName(guide.right.university.name) } };
   const href = getComparisonHref(guide.slug);
   const leftInitials = getUniversityInitials(left.university.name);
   const rightInitials = getUniversityInitials(right.university.name);
