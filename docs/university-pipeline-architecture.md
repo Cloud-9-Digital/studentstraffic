@@ -675,3 +675,8 @@ From content migration 0266, otherwise verified programmes may use `medium: ""` 
 ### Batched evidence writes (25 October 2026)
 
 The catalogue publisher replaces evidence for the exact saved university/programme IDs inside its existing atomic transaction. Programme evidence deletion uses one bounded ID-set query; evidence inserts use batches of at most500rows to keep PostgreSQL parameter counts bounded. Every programme reference must resolve before insertion. The same source fields, foreign keys, rollback boundary and migration checkpoint apply; research still remains offline and publication pools close after the grouped run. Large university bundles no longer require one network round trip per evidence claim.
+
+
+### Programme slug collision guard (25 October 2026)
+
+The offline migration reader rejects repeated programme slugs anywhere in a payload, including different universities. Each exact campus/award needs its own globally unique offering slug. A live full-profile check exposed an Orthopaedics matcher incorrectly selecting Paediatrics three times in applied 0300; only that exact checksum remains readable as immutable history. Forward 0302 preserves the three correct Paediatrics records and inserts the distinct MS Orthopaedics offerings with exact fees. New or modified bytes never inherit this exception. Counts and live checks must compare unique slugs and the actual complete profile, rather than raw payload array length alone.

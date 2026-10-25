@@ -332,6 +332,21 @@ export async function readContentMigrations(
       ? legacyFreeTextMediumCatalogPayloadSchema
       : catalogPayloadSchema;
     const payload = payloadSchema.parse(JSON.parse(payloadRaw));
+    const checksum = contentMigrationChecksum(manifestRaw, payloadRaw);
+    // Frozen applied history: 0300 repeated three Paediatrics slugs through an
+    // Orthopaedics matcher error. Its full forward repairs the affected records.
+    // Only those exact immutable bytes remain readable; new bundles must be unique.
+    const frozenDuplicateHistory = manifest.id === "0300-india-biher-constituent-medical-portfolio"
+      && checksum === "86ca1bc2b4af98b6d9eb9fa4b6a52be66632deef068ebbb7859a561030c8669e";
+    const programmeSlugs = new Set<string>();
+    for (const university of payload.universities) {
+      for (const programme of university.programmes) {
+        if (programmeSlugs.has(programme.slug) && !frozenDuplicateHistory) {
+          throw new Error(`${manifest.id} has duplicate programme slug '${programme.slug}'; each exact award/campus offering needs a unique slug.`);
+        }
+        programmeSlugs.add(programme.slug);
+      }
+    }
     const expiredEvidence = assertContentFramework(payload, manifest.id, now);
     migrations.push({
       id: manifest.id,
@@ -339,7 +354,7 @@ export async function readContentMigrations(
       createdAt: manifest.createdAt,
       directory,
       payloadPath,
-      checksum: contentMigrationChecksum(manifestRaw, payloadRaw),
+      checksum,
       payload,
       expiredEvidence,
     });

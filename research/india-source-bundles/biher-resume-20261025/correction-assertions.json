@@ -1,0 +1,65 @@
+{
+  "migrationId": "0302-india-biher-medical-award-crosswalk-correction",
+  "programmes": 49,
+  "uniqueSlugs": 49,
+  "uniqueCollegeCanonicalPairs": 49,
+  "evidence": 465,
+  "canonicalFamilies": 21,
+  "correctedSixFeeRows": [
+    {
+      "college": "sbmch",
+      "parent": "md-paediatrics",
+      "title": "MD Paediatrics",
+      "nmcTitle": "M.D. Paediatrics",
+      "amount": 5000000,
+      "feeurl": "https://sbmch.ac.in/wp-content/uploads/2026/10/MD-MS.pdf",
+      "current": true
+    },
+    {
+      "college": "sbmch",
+      "parent": "ms-orthopaedics",
+      "title": "MS Orthopaedics",
+      "nmcTitle": "M.S. Orthopaedics",
+      "amount": 5000000,
+      "feeurl": "https://sbmch.ac.in/wp-content/uploads/2026/10/MD-MS.pdf",
+      "current": true
+    },
+    {
+      "college": "slims",
+      "parent": "ms-orthopaedics",
+      "title": "MS Orthopaedics",
+      "nmcTitle": "M.S. Orthopaedics",
+      "amount": 5500000,
+      "feeurl": "https://slims.ac.in/admission-pg.php",
+      "current": false
+    },
+    {
+      "college": "slims",
+      "parent": "md-paediatrics",
+      "title": "MD Paediatrics",
+      "nmcTitle": "M.D. Paediatrics",
+      "amount": 5000000,
+      "feeurl": "https://slims.ac.in/admission-pg.php",
+      "current": false
+    },
+    {
+      "college": "bmch",
+      "parent": "ms-orthopaedics",
+      "title": "MS Orthopaedics",
+      "nmcTitle": "M.S. Orthopaedics",
+      "amount": 6000000,
+      "feeurl": "https://bmch.ac.in/pg-admission.php",
+      "current": true
+    },
+    {
+      "college": "bmch",
+      "parent": "md-paediatrics",
+      "title": "MD Paediatrics",
+      "nmcTitle": "M.D. Paediatrics",
+      "amount": 5000000,
+      "feeurl": "https://bmch.ac.in/pg-admission.php",
+      "current": true
+    }
+  ],
+  "applied0300Untouched": true
+}

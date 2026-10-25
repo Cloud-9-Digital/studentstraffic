@@ -494,3 +494,21 @@ test("actual scoped reader retains a quote only with matching graded quote evide
     assert.equal((await readContentMigrations(root)).length, 1);
   });
 });
+
+
+test("reader rejects repeated offering slugs within or across universities before publication", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const id = "0001-duplicate-offerings";
+    const directory = join(root, id);
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({ version: 1, id, description: "Reject colliding exact-campus programme offering slugs.", createdAt: "2026-10-25", payload: "payload.json" }));
+    const payload = structuredClone(validPayload);
+    payload.universities[0]!.programmes.push(structuredClone(payload.universities[0]!.programmes[0]!));
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await assert.rejects(readContentMigrations(root), /duplicate programme slug 'test-university-mbbs'/);
+    payload.universities[0]!.programmes.pop();
+    payload.universities.push({ ...structuredClone(payload.universities[0]!), slug: "other-university" });
+    await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await assert.rejects(readContentMigrations(root), /duplicate programme slug 'test-university-mbbs'/);
+  });
+});

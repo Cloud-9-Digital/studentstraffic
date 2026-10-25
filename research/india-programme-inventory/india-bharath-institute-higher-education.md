@@ -6,4 +6,4 @@ Source audit and full current downloads: `research/india-source-bundles/biher-re
 
 Engineering55/50minimum conflict remains held. Other professional/arts/online entries preserve qualification, duration, approval, nomenclature or mode-specific scope gaps; unknown teaching language/intake alone is nonblocking. No broad foreign access inferred from price tables. Catalogue contains only exact regular domestic qualifying routes; source dates and overseas limits internal in audit/payload.
 
-Migration0300-india-biher-constituent-medical-portfolio. Offline scoped reader mustPASS1beforevalidated. Root handles DB/media/publication; no DB by researcher.
+Forward correction0302-india-biher-medical-award-crosswalk-correction supersedes applied0300;49UNIQUEawards, including three MSOrthopaedics, with exactPaediatrics/Orthopaedicspricecrosswalk. Offline scoped reader mustPASS1beforevalidated. Root handles DB/media/publication; no DB by researcher.

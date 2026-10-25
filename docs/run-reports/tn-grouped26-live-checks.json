@@ -1,0 +1,130 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/bdu-m-sc-marine-science",
+    "kind": "programme",
+    "slug": "bdu-m-sc-marine-science",
+    "status": 200,
+    "h1": "M.Sc. Marine Science at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-mba-financial-management",
+    "kind": "programme",
+    "slug": "bdu-mba-financial-management",
+    "status": 200,
+    "h1": "MBA Finance at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/bharathidasan-university",
+    "kind": "university",
+    "slug": "bharathidasan-university",
+    "status": 200,
+    "h1": "Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-integrated-m-sc-bioinformatics",
+    "kind": "programme",
+    "slug": "bdu-integrated-m-sc-bioinformatics",
+    "status": 200,
+    "h1": "Integrated M.Sc. Bioinformatics at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-integrated-m-sc-geology",
+    "kind": "programme",
+    "slug": "bdu-integrated-m-sc-geology",
+    "status": 200,
+    "h1": "Integrated M.Sc. Geology at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-integrated-m-sc-geography",
+    "kind": "programme",
+    "slug": "bdu-integrated-m-sc-geography",
+    "status": 200,
+    "h1": "Integrated M.Sc. Geography at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-integrated-m-a-sociology",
+    "kind": "programme",
+    "slug": "bdu-integrated-m-a-sociology",
+    "status": 200,
+    "h1": "Integrated M.A. Sociology at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-integrated-m-sc-media-and-communication",
+    "kind": "programme",
+    "slug": "bdu-integrated-m-sc-media-and-communication",
+    "status": 200,
+    "h1": "Integrated M.Sc. Media and Communication at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/biher-slims-ms-otorhinolaryngology",
+    "kind": "programme",
+    "slug": "biher-slims-ms-otorhinolaryngology",
+    "status": 200,
+    "h1": "MS ENT at Bharath Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/india-bharath-institute-higher-education",
+    "kind": "university",
+    "slug": "india-bharath-institute-higher-education",
+    "status": 200,
+    "h1": "Bharath Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/biher-sbmch-mbbs",
+    "kind": "programme",
+    "slug": "biher-sbmch-mbbs",
+    "status": 200,
+    "h1": "MBBS at Bharath Institute of Higher Education and Research",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/vellore-institute-of-technology",
+    "kind": "university",
+    "slug": "vellore-institute-of-technology",
+    "status": 200,
+    "h1": "Vellore Institute of Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bdu-m-a-development-studies",
+    "kind": "programme",
+    "slug": "bdu-m-a-development-studies",
+    "status": 200,
+    "h1": "Master’s Development Studies at Bharathidasan University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/vit-vellore-btech-computer-science-engineering",
+    "kind": "programme",
+    "slug": "vit-vellore-btech-computer-science-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech CSE at Vellore Institute of Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/vit-vellore-integrated-m-sc-food-science-and-technology",
+    "kind": "programme",
+    "slug": "vit-vellore-integrated-m-sc-food-science-and-technology",
+    "status": 200,
+    "h1": "Integrated M.Sc. Food Science at Vellore Institute of Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/vit-vellore-m-sc-applied-microbiology",
+    "kind": "programme",
+    "slug": "vit-vellore-m-sc-applied-microbiology",
+    "status": 200,
+    "h1": "M.Sc. Biological Sciences at Vellore Institute of Technology",
+    "pass": true
+  }
+]

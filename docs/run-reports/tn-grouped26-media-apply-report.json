@@ -1,0 +1,27 @@
+{
+  "appliedAt": "2026-10-25T10:15:14.519Z",
+  "uploads": {
+    "attempted": 3,
+    "succeeded": 3,
+    "failed": 0
+  },
+  "database": {
+    "updated": 2,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "india-bharath-institute-higher-education",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "vellore-institute-of-technology",
+      "logoUpdated": false,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

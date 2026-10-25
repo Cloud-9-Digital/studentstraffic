@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "bharathidasan-university",
+    "status": 200,
+    "expectedCount": 47,
+    "expectedName": "Bharathidasan University",
+    "actualName": "Bharathidasan University",
+    "actualCount": 47,
+    "offerings": 47,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 46,
+    "actualQuoteLabels": 46,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "india-bharath-institute-higher-education",
+    "status": 200,
+    "expectedCount": 49,
+    "expectedName": "Bharath Institute of Higher Education and Research",
+    "actualName": "Bharath Institute of Higher Education and Research",
+    "actualCount": 46,
+    "offerings": 46,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 46,
+    "actualQuoteLabels": 46,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": false
+  },
+  {
+    "slug": "vellore-institute-of-technology",
+    "status": 200,
+    "expectedCount": 32,
+    "expectedName": "Vellore Institute of Technology",
+    "actualName": "Vellore Institute of Technology",
+    "actualCount": 32,
+    "offerings": 32,
+    "recognitionCount": 7,
+    "expectedQuoteLabels": 30,
+    "actualQuoteLabels": 30,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]
