@@ -1,6 +1,7 @@
 "use client";
 
 import { type ReactNode } from "react";
+import { getProgramSectionSummary } from "@/lib/program-section-summary";
 import Link from "next/link";
 import { ArrowRight, GraduationCap, MapPin, Phone } from "lucide-react";
 
@@ -43,20 +44,6 @@ type Props = {
   content: ReactNode;
 };
 
-function getSectionSummary(section: ProgramSection | null, props: Props) {
-  switch (section) {
-    case "admissions":
-      return `How to apply for ${props.courseShortName} at ${props.universityName} — step-by-step process, documents required, and application timeline.`;
-    case "eligibility":
-      return `Eligibility criteria and academic qualifications needed to apply for ${props.courseShortName} at ${props.universityName}.`;
-    case "fees":
-      return `Year-wise ${props.courseShortName} fee breakdown at ${props.universityName} — annual tuition, hostel costs, and total program cost in USD.`;
-    case "recognition":
-      return `Recognition and accreditation status of ${props.courseShortName} at ${props.universityName} — badges and official verification links.`;
-    default:
-      return `Academic structure, teaching phases, and curriculum for ${props.courseShortName} at ${props.universityName}.`;
-  }
-}
 
 export function ProgramSectionShellClient(props: Props) {
   const activeSection = props.initialSection;
@@ -66,7 +53,7 @@ export function ProgramSectionShellClient(props: Props) {
       <UniversityHeroSection
         universityName={`${props.courseShortName} at ${props.universityName}`}
         universitySlug={props.universitySlug}
-        universitySummary={getSectionSummary(activeSection, props)}
+        universitySummary={getProgramSectionSummary(activeSection, props)}
         logoUrl={props.logoUrl}
         coverImage={props.coverImage}
         logoInitials={props.logoInitials}

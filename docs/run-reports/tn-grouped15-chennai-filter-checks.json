@@ -1,0 +1,71 @@
+[
+  {
+    "q": "Madras School",
+    "status": 200,
+    "totalItems": 1,
+    "university": {
+      "slug": "madras-school-of-social-work",
+      "name": "Madras School of Social Work",
+      "country": "India",
+      "countrySlug": "india",
+      "city": "Chennai",
+      "type": "Private",
+      "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792911829/studentstraffic/universities/madras-school-of-social-work/logo.jpg",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792911830/studentstraffic/universities/madras-school-of-social-work/cover.jpg",
+      "featured": false,
+      "course": "Bachelor's Psychology",
+      "courseSlug": "bachelor-psychology",
+      "offeringSlug": "mssw-b-sc-psychology",
+      "tuitionUsd": 0,
+      "feeLabel": "₹74,000",
+      "programCount": 12
+    },
+    "pass": true
+  },
+  {
+    "q": "Anna Adarsh",
+    "status": 200,
+    "totalItems": 1,
+    "university": {
+      "slug": "anna-adarsh-college-for-women-chennai",
+      "name": "Anna Adarsh College for Women, Chennai",
+      "country": "India",
+      "countrySlug": "india",
+      "city": "Chennai",
+      "type": "Private",
+      "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792911831/studentstraffic/universities/anna-adarsh-college-for-women-chennai/logo-20261025.png",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792911832/studentstraffic/universities/anna-adarsh-college-for-women-chennai/cover-20261025.jpg",
+      "featured": false,
+      "course": "B.A. English",
+      "courseSlug": "ba-english-literature",
+      "offeringSlug": "b-a-english-literature-shift-i-anna-adarsh-college-for-women-chennai",
+      "tuitionUsd": 0,
+      "feeLabel": "₹60,500",
+      "programCount": 18
+    },
+    "pass": true
+  },
+  {
+    "q": "Devkunvar",
+    "status": 200,
+    "totalItems": 1,
+    "university": {
+      "slug": "sdnb-vaishnav-college-for-women-chennai",
+      "name": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women, Chennai",
+      "country": "India",
+      "countrySlug": "india",
+      "city": "Chennai",
+      "type": "Private",
+      "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792911837/studentstraffic/universities/sdnb-vaishnav-college-for-women-chennai/logo-20261025.png",
+      "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792911838/studentstraffic/universities/sdnb-vaishnav-college-for-women-chennai/cover-20261025.jpg",
+      "featured": false,
+      "course": "B.A. English",
+      "courseSlug": "ba-english-literature",
+      "offeringSlug": "b-a-english-aided-aided-day-programme-sdnb-vaishnav-college-for-women-chennai",
+      "tuitionUsd": 0,
+      "feeLabel": "Fee on request",
+      "programCount": 49
+    },
+    "pass": true
+  }
+]

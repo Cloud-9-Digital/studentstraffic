@@ -1,0 +1,234 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/university/madras-school-of-social-work",
+    "kind": "university",
+    "slug": "madras-school-of-social-work",
+    "status": 200,
+    "h1": "Madras School of Social Work",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/anna-adarsh-college-for-women-chennai",
+    "kind": "university",
+    "slug": "anna-adarsh-college-for-women-chennai",
+    "status": 200,
+    "h1": "Anna Adarsh College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-com-general-shift-i-anna-adarsh-college-for-women-chennai",
+    "kind": "programme",
+    "slug": "b-com-general-shift-i-anna-adarsh-college-for-women-chennai",
+    "status": 200,
+    "h1": "B.Com at Anna Adarsh College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mssw-bachelor-of-social-work",
+    "kind": "programme",
+    "slug": "mssw-bachelor-of-social-work",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Social Work at Madras School of Social Work",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sri-krishna-arts-and-science-college-coimbatore",
+    "kind": "university",
+    "slug": "sri-krishna-arts-and-science-college-coimbatore",
+    "status": 200,
+    "h1": "Sri Krishna Arts and Science College, Coimbatore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/skasc-b-a-english-literature",
+    "kind": "programme",
+    "slug": "skasc-b-a-english-literature",
+    "status": 200,
+    "h1": "B.A. English at Sri Krishna Arts and Science College, Coimbatore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kongunadu-b-a-english-literature-aided",
+    "kind": "programme",
+    "slug": "kongunadu-b-a-english-literature-aided",
+    "status": 200,
+    "h1": "B.A. English at Kongunadu Arts and Science College, Coimbatore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/kongunadu-arts-and-science-college",
+    "kind": "university",
+    "slug": "kongunadu-arts-and-science-college",
+    "status": 200,
+    "h1": "Kongunadu Arts and Science College, Coimbatore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kongunadu-b-sc-physics-aided",
+    "kind": "programme",
+    "slug": "kongunadu-b-sc-physics-aided",
+    "status": 200,
+    "h1": "B.Sc. Physics at Kongunadu Arts and Science College, Coimbatore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sdnb-vaishnav-college-for-women-chennai",
+    "kind": "university",
+    "slug": "sdnb-vaishnav-college-for-women-chennai",
+    "status": 200,
+    "h1": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-a-history-and-tourism-aided-aided-day-programme-sdnb-vaishnav-college-for-women-chennai",
+    "kind": "programme",
+    "slug": "b-a-history-and-tourism-aided-aided-day-programme-sdnb-vaishnav-college-for-women-chennai",
+    "status": 200,
+    "h1": "B.A. History at Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/skasc-b-sc-mathematics",
+    "kind": "programme",
+    "slug": "skasc-b-sc-mathematics",
+    "status": 200,
+    "h1": "B.Sc. Mathematics at Sri Krishna Arts and Science College, Coimbatore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-sc-mathematics-aided-aided-day-programme-sdnb-vaishnav-college-for-women-chennai",
+    "kind": "programme",
+    "slug": "b-sc-mathematics-aided-aided-day-programme-sdnb-vaishnav-college-for-women-chennai",
+    "status": 200,
+    "h1": "B.Sc. Mathematics at Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/avinashilingam-institute-for-home-science-and-higher-education-for-women",
+    "kind": "university",
+    "slug": "avinashilingam-institute-for-home-science-and-higher-education-for-women",
+    "status": 200,
+    "h1": "Avinashilingam Institute for Home Science and Higher Education for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/avina-b-a-economics-aided",
+    "kind": "programme",
+    "slug": "avina-b-a-economics-aided",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Economics at Avinashilingam Institute for Home Science and Higher Education for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/jbas-b-a-historical-studies-shift-1",
+    "kind": "programme",
+    "slug": "jbas-b-a-historical-studies-shift-1",
+    "status": 200,
+    "h1": "B.A. History at Justice Basheer Ahmed Sayeed College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/justice-basheer-ahmed-sayeed-college-for-women",
+    "kind": "university",
+    "slug": "justice-basheer-ahmed-sayeed-college-for-women",
+    "status": 200,
+    "h1": "Justice Basheer Ahmed Sayeed College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/stella-maris-b-a-history-and-tourism",
+    "kind": "programme",
+    "slug": "stella-maris-b-a-history-and-tourism",
+    "status": 200,
+    "h1": "B.A. History at Stella Maris College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/stella-maris-college-chennai",
+    "kind": "university",
+    "slug": "stella-maris-college-chennai",
+    "status": 200,
+    "h1": "Stella Maris College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/rkmvc-b-a-economics-day",
+    "kind": "programme",
+    "slug": "rkmvc-b-a-economics-day",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Economics at Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/ramakrishna-mission-vivekananda-college-chennai",
+    "kind": "university",
+    "slug": "ramakrishna-mission-vivekananda-college-chennai",
+    "status": 200,
+    "h1": "Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/rkmvc-b-com-general-evening",
+    "kind": "programme",
+    "slug": "rkmvc-b-com-general-evening",
+    "status": 200,
+    "h1": "B.Com at Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/queen-marys-college-chennai",
+    "kind": "university",
+    "slug": "queen-marys-college-chennai",
+    "status": 200,
+    "h1": "Queen Mary’s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/central-university-of-tamil-nadu",
+    "kind": "university",
+    "slug": "central-university-of-tamil-nadu",
+    "status": 200,
+    "h1": "Central University of Tamil Nadu",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/cutn-b-sc-chemistry-honours-research",
+    "kind": "programme",
+    "slug": "cutn-b-sc-chemistry-honours-research",
+    "status": 200,
+    "h1": "B.Sc. Chemistry at Central University of Tamil Nadu",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/presidency-college-chennai",
+    "kind": "university",
+    "slug": "presidency-college-chennai",
+    "status": 200,
+    "h1": "Presidency College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/presidency-bcom-hearing-impaired-shift-i",
+    "kind": "programme",
+    "slug": "presidency-bcom-hearing-impaired-shift-i",
+    "status": 200,
+    "h1": "B.Com at Presidency College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/presidency-bca-hearing-impaired-shift-i",
+    "kind": "programme",
+    "slug": "presidency-bca-hearing-impaired-shift-i",
+    "status": 200,
+    "h1": "BCA at Presidency College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/qmc-b-sc-biochemistry-shift-i-em",
+    "kind": "programme",
+    "slug": "qmc-b-sc-biochemistry-shift-i-em",
+    "status": 200,
+    "h1": "B.Sc. Biological Sciences at Queen Mary’s College, Chennai",
+    "pass": true
+  }
+]

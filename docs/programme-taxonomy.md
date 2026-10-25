@@ -322,3 +322,16 @@ eligible for an engineering master's.
 ## Social Entrepreneurship
 
 `master-social-entrepreneurship` is the neutral academic master's family for social entrepreneurship, including MA awards. It covers social-enterprise development, community and social-impact analysis, venture models, research and practical enterprise work as applicable to the curriculum. It is distinct from `mba-entrepreneurship`; MA titles must not acquire an MBA label or an alias implying a business-administration award. Exact institutional title, qualification, language, duration and fee scope stay on the offering. No venture success, funding or employment outcome is implied.
+
+## Integrated M.A. awards
+
+`integrated-ma-history` and `integrated-ma-languages-linguistics` cover continuous
+integrated Master of Arts awards entered after the school-leaving qualification.
+They use the `integrated-masters` level and `arts-humanities` stream, with the
+`history` and `languages-linguistics` disciplines respectively. They combine
+undergraduate foundations and advanced subject study; they are distinct from
+graduate-entry `ma-history` and `ma-languages-linguistics`. The language family
+preserves an exact named-language specialisation such as Tamil on the offering.
+Do not infer exit qualifications, a separate bachelor's award, an English-only
+route or a fixed institutional curriculum from the family. Exact five-year
+structure, campus and qualifying language requirements remain programme facts.

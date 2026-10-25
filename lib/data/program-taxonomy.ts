@@ -72,6 +72,8 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  {"slug": "integrated-ma-history", "name": "Integrated M.A. in History", "shortName": "Integrated M.A. History", "stream": "arts-humanities", "level": "integrated-masters", "discipline": "history", "aliases": ["Integrated Master of Arts in History", "Five-year MA History"]},
+  {"slug": "integrated-ma-languages-linguistics", "name": "Integrated M.A. in Languages and Linguistics", "shortName": "Integrated M.A. Languages", "stream": "arts-humanities", "level": "integrated-masters", "discipline": "languages-linguistics", "aliases": ["Integrated Master of Arts in Languages", "Integrated MA Linguistics", "Integrated MA Tamil"]},
   { slug: "bachelor-vocational-studies", name: "Bachelor of Vocational Studies", shortName: "B.Voc.", stream: "vocational", level: "bachelors", discipline: "vocational-studies", aliases: ["Bachelor of Vocation", "B.Voc", "BVoc"] },
   {"slug": "integrated-bsc-bed", "name": "Integrated B.Sc. B.Ed.", "shortName": "B.Sc. B.Ed.", "stream": "education", "level": "bachelors", "discipline": "science-teacher-education", "aliases": ["Bachelor of Science and Bachelor of Education", "Integrated Bachelor of Science and Education"]},
   {"slug": "integrated-mtech-aerospace-engineering", "name": "Integrated M.Tech in Aerospace Engineering", "shortName": "Integrated M.Tech Aerospace", "stream": "engineering", "level": "integrated-masters", "discipline": "aerospace-engineering", "aliases": ["B.Tech and M.Tech in Aerospace Engineering"]},

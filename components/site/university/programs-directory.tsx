@@ -13,7 +13,7 @@ export type ProgramDirectoryRow = {
   level: string;
   levelLabel: string;
   /** One entry per published fee, labelled by audience where known (Indian students, NRI & international). */
-  fees: { label: string; amount: string }[];
+  fees: { label: string; amount: string; isAnnual?: boolean }[];
   duration: string;
 };
 
@@ -123,7 +123,7 @@ export function ProgramsDirectory({
                       <dt className="truncate text-[0.7rem] text-muted-foreground">{fee.label}</dt>
                       <dd className="text-sm font-semibold text-foreground">
                         {fee.amount}
-                        {/\d/.test(fee.amount) ? (
+                        {fee.isAnnual === true && /\d/.test(fee.amount) ? (
                           <span className="ml-0.5 text-xs font-normal text-muted-foreground">/ year</span>
                         ) : null}
                       </dd>

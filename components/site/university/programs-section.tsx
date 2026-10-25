@@ -7,6 +7,7 @@ import {
   formatProgramMedium,
   formatProgramDuration,
   getProgramFeeLines,
+  getDisplayedReportedFeeQuote,
   hasRenderableProgramLivingFee,
 } from "@/lib/utils";
 import { getUniversityProgramHref } from "@/lib/routes";
@@ -49,11 +50,12 @@ function programTitle(program: FinderProgram) {
     : program.offering.title;
 }
 
-function programFees(program: FinderProgram) {
+export function programFees(program: FinderProgram) {
   return getProgramFeeLines(program.offering, program.country.slug, "On request")
     .map((fee) => ({
       ...fee,
       label: fee.label === "Fee plan" ? "Tuition" : fee.label,
+      isAnnual: !getDisplayedReportedFeeQuote(program.offering),
     }));
 }
 
