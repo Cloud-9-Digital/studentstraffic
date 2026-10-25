@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "vinayaka-missions-research-foundation",
+    "status": 200,
+    "expectedCount": 172,
+    "actualCount": 172,
+    "offerings": 172,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 172,
+    "actualQuoteLabels": 172,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "national-institute-of-technical-teachers-training-and-research-chennai",
+    "status": 200,
+    "expectedCount": 8,
+    "actualCount": 8,
+    "offerings": 8,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 8,
+    "actualQuoteLabels": 8,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "the-tamil-nadu-dr-mgr-medical-university",
+    "status": 200,
+    "expectedCount": 4,
+    "actualCount": 4,
+    "offerings": 4,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "rathinam-global",
+    "status": 200,
+    "expectedCount": 3,
+    "actualCount": 3,
+    "offerings": 3,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

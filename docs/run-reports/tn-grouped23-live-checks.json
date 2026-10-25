@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/vmrf-salem-medical-md-radiodiagnosis",
+    "kind": "programme",
+    "slug": "vmrf-salem-medical-md-radiodiagnosis",
+    "status": 200,
+    "h1": "MD Radiodiagnosis at Vinayaka Mission’s Research Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/vmrf-salem-medical-md-immuno-haematology-and-blood-transfusion",
+    "kind": "programme",
+    "slug": "vmrf-salem-medical-md-immuno-haematology-and-blood-transfusion",
+    "status": 200,
+    "h1": "MD Transfusion Medicine at Vinayaka Mission’s Research Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/vmrf-karaikal-medical-md-immuno-haematology-and-blood-transfusion",
+    "kind": "programme",
+    "slug": "vmrf-karaikal-medical-md-immuno-haematology-and-blood-transfusion",
+    "status": 200,
+    "h1": "MD Transfusion Medicine at Vinayaka Mission’s Research Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/national-institute-of-technical-teachers-training-and-research-chennai",
+    "kind": "university",
+    "slug": "national-institute-of-technical-teachers-training-and-research-chennai",
+    "status": 200,
+    "h1": "National Institute of Technical Teachers Training and Research, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/nitttr-chennai-ai-ml",
+    "kind": "programme",
+    "slug": "nitttr-chennai-ai-ml",
+    "status": 200,
+    "h1": "M.E./M.Tech CSE at National Institute of Technical Teachers Training and Research, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/the-tamil-nadu-dr-mgr-medical-university",
+    "kind": "university",
+    "slug": "the-tamil-nadu-dr-mgr-medical-university",
+    "status": 200,
+    "h1": "The Tamil Nadu Dr. M.G.R. Medical University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/vinayaka-missions-research-foundation",
+    "kind": "university",
+    "slug": "vinayaka-missions-research-foundation",
+    "status": 200,
+    "h1": "Vinayaka Mission’s Research Foundation",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tnmgrmu-m-sc-public-health",
+    "kind": "programme",
+    "slug": "tnmgrmu-m-sc-public-health",
+    "status": 200,
+    "h1": "MPH at The Tamil Nadu Dr. M.G.R. Medical University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tnmgrmu-m-sc-epidemiology",
+    "kind": "programme",
+    "slug": "tnmgrmu-m-sc-epidemiology",
+    "status": 200,
+    "h1": "M.Sc. Epidemiology at The Tamil Nadu Dr. M.G.R. Medical University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tnmgrmu-post-graduate-diploma-in-medical-journalism",
+    "kind": "programme",
+    "slug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+    "status": 200,
+    "h1": "PG Diploma Journalism at The Tamil Nadu Dr. M.G.R. Medical University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/rathinam-global",
+    "kind": "university",
+    "slug": "rathinam-global",
+    "status": 200,
+    "h1": "Rathinam Global",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/rathinam-bsc-cs",
+    "kind": "programme",
+    "slug": "rathinam-bsc-cs",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Rathinam Global",
+    "pass": true
+  }
+]
