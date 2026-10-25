@@ -1,0 +1,51 @@
+{
+  "appliedAt": "2026-10-25T07:04:02.439Z",
+  "uploads": {
+    "attempted": 12,
+    "succeeded": 12,
+    "failed": 0
+  },
+  "database": {
+    "updated": 6,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "madras-school-of-social-work",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "anna-adarsh-college-for-women-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "sri-krishna-arts-and-science-college-coimbatore",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "kongunadu-arts-and-science-college",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "sdnb-vaishnav-college-for-women-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "central-university-of-tamil-nadu",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
