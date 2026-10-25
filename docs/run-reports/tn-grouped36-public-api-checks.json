@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "quaid-e-millath-government-college-for-women-chennai",
+    "status": 200,
+    "expectedCount": 25,
+    "expectedName": "Quaid-E-Millath Government College for Women, Chennai",
+    "actualName": "Quaid-E-Millath Government College for Women, Chennai",
+    "actualCount": 25,
+    "offerings": 25,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 25,
+    "actualQuoteLabels": 25,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "bharathi-womens-college-chennai",
+    "status": 200,
+    "expectedCount": 13,
+    "expectedName": "Bharathi Women's College, Chennai",
+    "actualName": "Bharathi Women's College, Chennai",
+    "actualCount": 13,
+    "offerings": 13,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 13,
+    "actualQuoteLabels": 13,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

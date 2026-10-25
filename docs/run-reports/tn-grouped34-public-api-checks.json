@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "womens-christian-college-chennai",
+    "status": 200,
+    "expectedCount": 37,
+    "expectedName": "Women's Christian College, Chennai",
+    "actualName": "Women's Christian College, Chennai",
+    "actualCount": 37,
+    "offerings": 37,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 37,
+    "actualQuoteLabels": 37,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "anna-adarsh-college-for-women-chennai",
+    "status": 200,
+    "expectedCount": 22,
+    "expectedName": "Anna Adarsh College for Women, Chennai",
+    "actualName": "Anna Adarsh College for Women, Chennai",
+    "actualCount": 22,
+    "offerings": 22,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 22,
+    "actualQuoteLabels": 22,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "queen-marys-college-chennai",
+    "status": 200,
+    "expectedCount": 40,
+    "expectedName": "Queen Mary’s College, Chennai",
+    "actualName": "Queen Mary’s College, Chennai",
+    "actualCount": 40,
+    "offerings": 40,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 40,
+    "actualQuoteLabels": 40,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

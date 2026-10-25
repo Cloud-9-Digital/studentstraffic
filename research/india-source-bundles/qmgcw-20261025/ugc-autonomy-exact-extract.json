@@ -1,0 +1,19 @@
+{
+  "sourceUrl": "https://www.ugc.gov.in/colleges/Autonomous_Colleges_list",
+  "retrieval": "Direct ordinary public HTTPS200 fullHTML retrieved by Pythonurllib, not searchsnippet. FullHTML retained and table parsed offline.",
+  "checkedAt": "2026-10-25",
+  "fullDocument": "research/india-source-bundles/qmgcw-20261025/ugc-register.html",
+  "bytes": 1576300,
+  "sha256": "bd2db579df9dd76af7b7ec759780d00941f68dbca46c7bb813c8bbc93673e1a0",
+  "parsedRows": 1659,
+  "matchingRows": [
+    [
+      "1308",
+      "TAMIL NADU",
+      "Quaid-E-Millath Government College for Women, Chennai",
+      "2004-2005",
+      "2023-2024 to 2027-2028",
+      "UNIVERSITY OF MADRAS"
+    ]
+  ]
+}

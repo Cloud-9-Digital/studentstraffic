@@ -9,3 +9,7 @@ Current own signed2026–27 first-yearUGtable visuallyread:BA/BCom/Math2235,labs
 UGCowncurrentautonomousregisterrow1308records2023–24to2027–28 andMadrasaffiliation. Solevalidbadge GradeA linked; ownNAACB++expired28Feb2026 soexcluded. AICTEcurrent2026MCAEOA exact60seats/NRIIntlNo retained, notattributedtoallacademicdegrees. PG/MCAcurrententrygaps held, notunapproved/absent.
 
 Mandatorygenuine media:complete119x90officialcrest from ownheader and700x200 libraryentrancephoto embeddedownlibrarypage. Homepagecollage anddigitallycollagedhistoricalstudiesphoto rejected. Fulloriginals/checksums/rights/localpaths in reviewedmanifest. No DB/upload/reservation/commit;draftonlyduringrootfreeze.
+
+## Frozen executable handoff
+
+0341-india-quaid-e-millath-government-college-for-women-chennai:25UGroutes,25nativequotes. Canonicalnumberedreader0warnings; lockedledger validated25. Rootreviewedmedia pendingparentupload/publication. NoDB.

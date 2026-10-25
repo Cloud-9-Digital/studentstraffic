@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "sri-venkateswara-college-of-engineering",
+    "status": 200,
+    "expectedCount": 19,
+    "expectedName": "Sri Venkateswara College of Engineering",
+    "actualName": "Sri Venkateswara College of Engineering",
+    "actualCount": 19,
+    "offerings": 19,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 11,
+    "actualQuoteLabels": 11,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "thiruvalluvar-university",
+    "status": 200,
+    "expectedCount": 14,
+    "expectedName": "Thiruvalluvar University",
+    "actualName": "Thiruvalluvar University",
+    "actualCount": 14,
+    "offerings": 14,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 14,
+    "actualQuoteLabels": 14,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "sri-sairam-engineering-college",
+    "status": 200,
+    "expectedCount": 21,
+    "expectedName": "Sri Sairam Engineering College",
+    "actualName": "Sri Sairam Engineering College",
+    "actualCount": 21,
+    "offerings": 21,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "quaid-e-millath-government-college-for-women-chennai",
+      "universityName": "Quaid-E-Millath Government College for Women, Chennai",
+      "sourceBatch": "codex-tn-qmgcw-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://qmgcw.edu.in/Images/logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://qmgcw.edu.in/",
+          "rightsBasis": "Official college public crest/library photograph for institutional identification and campus-resource context; no open licence, copyright transfer or synthetic generation claimed.",
+          "altText": "Quaid-E-Millath Government College for Women complete crest",
+          "visualCheck": "Complete119x90 greencrest/motto, matchesownheaderJS; no cropping/upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPSGET andnativeoriginalvisualinspection;fulloriginalretained,noediting.",
+          "proposedPublicId": "studentstraffic/universities/quaid-e-millath-government-college-for-women-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/qmgcw-20261025/logo.png",
+          "sha256": "fa939a13b017394a0f3c815bb42774458ceb6a9d87810b10f9172cdcbdff64ea",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://qmgcw.edu.in/Images/gen_lib.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://qmgcw.edu.in/library_profile.htm",
+          "rightsBasis": "Official college public crest/library photograph for institutional identification and campus-resource context; no open licence, copyright transfer or synthetic generation claimed.",
+          "altText": "Students outside the general library at Quaid-E-Millath Government College for Women, Chennai",
+          "visualCheck": "Full700x200photo of students outside signedGeneralLibrary entrance, embeddedownlibrarypage; no captureyear/exteriorcampusclaim.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPSGET andnativeoriginalvisualinspection;fulloriginalretained,noediting.",
+          "proposedPublicId": "studentstraffic/universities/quaid-e-millath-government-college-for-women-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/qmgcw-20261025/gen_lib.jpg",
+          "sha256": "ccf9b1473082dcb84ef234cc94129c454dc57e3cc5582edec49ef2cf68dd8f15",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0341-india-quaid-e-millath-government-college-for-women-chennai"
+    },
+    {
+      "universitySlug": "bharathi-womens-college-chennai",
+      "universityName": "Bharathi Women's College, Chennai",
+      "sourceBatch": "codex-tn-bwc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/logo2.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://bwc.edu.in/",
+          "rightsBasis": "Official institution-owned public educational brand/event photograph used for institutional identification and illustration; no open licence or ownership transfer claimed.",
+          "altText": "Bharathi Women\u2019s College official crest",
+          "visualCheck": "Native115x115completecrest/ribbon/name locallyviewed; originalcurrentofficialheaderlogo, notfavicon; smallnativeassetnotupscaled.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET withstandardbrowseruseragent, checksumretained and sequential localoriginalpixelview. Noediting/upscale.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/bharathi-womens-college-chennai/logo.png",
+          "sha256": "34e45b9bf9e36351a7fd1a8a0ff2f36d2f42cb5cfbf33217ccea63cdaef5e025",
+          "proposedPublicId": "studentstraffic/universities/bharathi-womens-college-chennai/logo-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/Inner-second.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://bwc.edu.in/",
+          "rightsBasis": "Official institution-owned public educational brand/event photograph used for institutional identification and illustration; no open licence or ownership transfer claimed.",
+          "altText": "Historic graduation gathering illustrated on Bharathi Women\u2019s College official website",
+          "visualCheck": "Native1600x363fulloriginal locallyviewed: genuinegraduationgatheringwithstudentsandseating, originaldarkheaderoverlay. Accuratelycaptionedhistoricevent; noeventyear/campusbuildingclaim, noAIstockreplacement.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "OrdinarypublicHTTPGET withstandardbrowseruseragent, checksumretained and sequential localoriginalpixelview. Noediting/upscale.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/bharathi-womens-college-chennai/inner-second.jpg",
+          "sha256": "9cbe569ecdf01318a871bfbeac7adb199d354811149ae8a482d7a209ac73cbc8",
+          "proposedPublicId": "studentstraffic/universities/bharathi-womens-college-chennai/cover-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

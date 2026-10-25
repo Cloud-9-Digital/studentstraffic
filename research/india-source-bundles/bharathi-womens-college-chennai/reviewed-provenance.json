@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-25",
+  "programmes": 13,
+  "families": 11,
+  "evidence": 97,
+  "sourceGradeLimits": {
+    "primary": "2026TNGASA currentportfolio+medium;2026DCE exactprogrammecriteria;UGCwholeownregister;institutionalqualityreport.",
+    "secondary": "Exactnamedwholecoursefee+3yearduration only; wrongsecondaryadmissionroute rejected. No2027intakeprediction.",
+    "historical": "Own2019subjectcombinations Bio/CS currentlinked with2026intersection, notuniversalexclusion; ownoldage21 notcarried."
+  },
+  "files": [
+    {
+      "file": "tngasa2026.pdf",
+      "bytes": 10889153,
+      "sha256": "fa578aef10e2e8b0b2a9674fcbab029f45dff5c045dc4d63601d94dcda68c010"
+    },
+    {
+      "file": "ugc-colleges.html",
+      "bytes": 16369613,
+      "sha256": "273357dbbd3b6c9d08baf9cf1b5e56a4046c6b2cd65058e32ba690d7b78dce49"
+    },
+    {
+      "file": "courses.pdf",
+      "bytes": 201655,
+      "sha256": "51ff9f1f4992a6a443642a61c7863be5a5d3973f08c508d89e3bd63df9f75ab2"
+    },
+    {
+      "file": "aqar2022-23.pdf",
+      "bytes": 491417,
+      "sha256": "e0e0cf6d538eb5880518da1f9ae30fff8f097c4381a8492c1e5ba5c97cf7eda9"
+    },
+    {
+      "file": "UG-BIO-2019.pdf",
+      "bytes": 608156,
+      "sha256": "50055d4e6cab11a487ac9d772df4ab378d0e2d3b170466cf9ebf83afe9320f9c"
+    },
+    {
+      "file": "UG-CSC-2019.pdf",
+      "bytes": 7470887,
+      "sha256": "627acffcc3cda07589d723e85b0b0d3c204b9b319ab988d7d8f53caf632c68e9"
+    }
+  ],
+  "validation": {
+    "id": "0342-india-bharathi-womens-college-chennai",
+    "actualNumberedReader": "PASS13programmes/11families/97evidence/0expired",
+    "canonicalCommand": "npm run content:validate -- --id 0342-india-bharathi-womens-college-chennai",
+    "result": "PASSwithoutdatabaseconnection,0expired",
+    "ledger": "Locked sameowner rowvalidated13 with0342payloadpointer"
+  }
+}

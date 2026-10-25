@@ -1,0 +1,170 @@
+{
+  "source0305sha256": "0446ee36bdacc28598f9b5d17c2e1ca70be7954abc9a2854d2b64e07815d2e58",
+  "source0310sha256": "d0d1cef143bf265248fde1b59d73a0cf1815c5f2fcb0a1b83811466198ec77a7",
+  "allNonProgrammeUniversityFieldsExact0305": true,
+  "coursesExact0305": true,
+  "allUniversityEvidenceExact0305": true,
+  "programmeCount": 98,
+  "USDQuoteCount": 42,
+  "domesticAdditionalAnnualCharges": 36,
+  "allNumericFeesAudiencesDurationsSlugsUnchanged0310": true,
+  "allowedProgrammeChanges": {
+    "sriher-chennai-bsc-applied-psychology": [
+      ".admissionsContent.overview"
+    ],
+    "sriher-b-sc-hons-biomedical-sciences": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-medical-microbiology-and-applied-molecular-biology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-medical-biotechnology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-environmental-health-sciences": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-clinical-research": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-sports-and-exercise-sciences": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-bioinformatics": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-com-hons": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-b-sc-hons-allied-health-sciences": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-medical-laboratory-science": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-dialysis-therapy": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-medical-radiology-and-imaging-technology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-advanced-care-paramedics": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-optometry": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-nutrition-and-dietetics": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-medical-anatomy": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-medical-physiology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-medical-biochemistry": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-medical-microbiology-and-applied-molecular-biology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-neuroscience": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-urology-technology": [
+      ".admissionsContent.eligibility.items[1]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-human-genetics": [
+      ".admissionsContent.eligibility.items[3]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-biotechnology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-perfusion-technology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-applied-child-development": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-biomedical-sciences": [
+      ".admissionsContent.eligibility.items[3]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-clinical-research": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-medical-psychology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-counselling-psychology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-wellness-and-health-coaching": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-stem-cell-and-regenerative-biology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-sports-and-exercise-psychology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-forensic-science": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-critical-care-technology": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-master-of-social-work": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ],
+    "sriher-m-sc-medical-bioinformatics": [
+      ".admissionsContent.eligibility.items[2]",
+      ".admissionsContent.reportedFeeQuote.componentBasis"
+    ]
+  },
+  "stats": {
+    "newForeignEligibilityItems": 36,
+    "legacyOverview": 1,
+    "feeBasis": 36,
+    "programmeEvidenceEntrance": 37,
+    "programmeEvidenceFeeBasis": 42
+  },
+  "evidenceCount": 1052,
+  "migrationId": "0340-india-sriher-profile-provenance-wording-correction",
+  "actualNumberedReader": "PASS1"
+}

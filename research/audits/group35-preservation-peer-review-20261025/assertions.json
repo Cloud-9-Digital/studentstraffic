@@ -1,0 +1,89 @@
+[
+  {
+    "baseline": "0211-india-sri-venkateswara-college-of-engineering",
+    "appliedForward": "0337-india-svce-postgraduate-portfolio-rescue",
+    "baselineSha256": "a2e86e17de999e0870c743f4e952a09ebde3870ff4136ead7c166f1f02d92c2b",
+    "forwardSha256": "cd9b268a863898df66db8b6576abace9b306a1dbb55d50246baf31753c6f60f4",
+    "slug": "sri-venkateswara-college-of-engineering",
+    "beforeCount": 11,
+    "afterCount": 19,
+    "removedSlugs": [],
+    "addedSlugs": [
+      "svce-pg-biotechnology",
+      "svce-pg-chemical",
+      "svce-pg-communication-systems",
+      "svce-pg-computer-science",
+      "svce-pg-construction-management",
+      "svce-pg-cyber-forensics",
+      "svce-pg-industrial-automation-robotics",
+      "svce-pg-power-electronics"
+    ],
+    "originalProgrammeChangedPaths": {},
+    "oldFeeObjectsNotesDatesQuotesAdditionalFeesExact": true,
+    "oldAwardFamilyDurationAudienceExact": true,
+    "hostedURLKeysPreserved": true,
+    "universityChangedFields": [
+      "mediaAttribution"
+    ],
+    "nonemptySourceAttribution": true
+  },
+  {
+    "baseline": "0263-india-thiruvalluvar-university",
+    "appliedForward": "0338-india-thiruvalluvar-english-academic-rescue",
+    "baselineSha256": "7d4e576d23832653360f472516c72b1e559760305022a1db35e61a25d9f348ed",
+    "forwardSha256": "4aa82eaeb1f080d096124329085a92016e6601e5de88c69a66e4daef525ede43",
+    "slug": "thiruvalluvar-university",
+    "beforeCount": 13,
+    "afterCount": 14,
+    "removedSlugs": [],
+    "addedSlugs": [
+      "tvu-m-a-english"
+    ],
+    "originalProgrammeChangedPaths": {
+      "tvu-b-sc-computer-science": [
+        ".teachingPhases[0].language",
+        ".instructionLanguages[0]",
+        ".instructionLanguages[1]",
+        ".medium"
+      ],
+      "tvu-b-sc-data-science": [
+        ".teachingPhases[0].language",
+        ".instructionLanguages[0]",
+        ".instructionLanguages[1]",
+        ".medium"
+      ]
+    },
+    "oldFeeObjectsNotesDatesQuotesAdditionalFeesExact": true,
+    "oldAwardFamilyDurationAudienceExact": true,
+    "hostedURLKeysPreserved": true,
+    "universityChangedFields": [],
+    "nonemptySourceAttribution": true
+  },
+  {
+    "baseline": "0207-india-sri-sairam-engineering-college",
+    "appliedForward": "0339-india-sairam-postgraduate-academic-rescue",
+    "baselineSha256": "7d90b6a6d261ad9ddc9c1e8300d3db49cae2899b85ab172b3c3da484ef736b6e",
+    "forwardSha256": "f5dcea84a39aaa15c95dac00c5031bf7a6ef8c75de496e201360d3394fd7fb87",
+    "slug": "sri-sairam-engineering-college",
+    "beforeCount": 15,
+    "afterCount": 21,
+    "removedSlugs": [],
+    "addedSlugs": [
+      "sairam-me-cad-cam",
+      "sairam-me-communication-systems",
+      "sairam-me-computer-science-engineering",
+      "sairam-me-cse-networks",
+      "sairam-me-embedded-system-technologies",
+      "sairam-me-power-electronics-drives"
+    ],
+    "originalProgrammeChangedPaths": {},
+    "oldFeeObjectsNotesDatesQuotesAdditionalFeesExact": true,
+    "oldAwardFamilyDurationAudienceExact": true,
+    "hostedURLKeysPreserved": true,
+    "universityChangedFields": [
+      "admissionsContent",
+      "mediaAttribution"
+    ],
+    "nonemptySourceAttribution": true
+  }
+]

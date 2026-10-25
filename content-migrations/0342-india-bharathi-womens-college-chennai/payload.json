@@ -1,0 +1,2709 @@
+{
+  "courses": [
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A B.Sc. in Computer Science is a science-faculty bachelor's degree in the theory and practice of computing. The curriculum covers programming, data structures and algorithms, discrete mathematics, computer architecture, operating systems, databases, networks and software engineering, with electives in artificial intelligence, data science, cyber security or graphics. It differs from a B.E./B.Tech by placing more weight on mathematics and computing theory and less on engineering design. Programmes last three or four years and lead to software, data and IT roles or to master's study.",
+      "metaTitle": "B.Sc. Computer Science Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Computer Science degrees open to international students: curriculum, electives, entry subjects, duration, tuition and intakes."
+    },
+    {
+      "slug": "bsc-biological-sciences",
+      "name": "B.Sc. in Biological Sciences",
+      "shortName": "B.Sc. Biological Sciences",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "biological-sciences",
+      "aliases": [
+        "Bachelor of Science in Biology",
+        "BSc Biological Sciences"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Biological sciences bachelor programmes study living systems through academic subjects and practical or laboratory learning. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.Sc. Biological Sciences: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Biological Sciences programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-chemistry",
+      "name": "B.Sc. in Chemistry",
+      "shortName": "B.Sc. Chemistry",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "chemistry",
+      "aliases": [
+        "Bachelor of Science in Chemistry",
+        "BSc Chemistry"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A bachelor's chemistry degree developing laboratory and theoretical foundations across organic, inorganic, physical and analytical chemistry, typically including practical laboratory training and a research-oriented final-year project. Compare each university's official award, specialisation options, tuition and admissions requirements before applying, since laboratory facilities and placement options vary by institution.",
+      "metaTitle": "B.Sc. Chemistry: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Chemistry programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bcom",
+      "name": "Bachelor of Commerce",
+      "shortName": "B.Com",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "commerce",
+      "aliases": [
+        "BCom",
+        "Bachelor in Commerce"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Commerce bachelor programmes study accounting, business, economics and finance, with specialist subjects varying by award. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.Com: Study and Admissions",
+      "metaDescription": "Compare B.Com programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bachelor-economics",
+      "name": "Bachelor's in Economics",
+      "shortName": "Bachelor's Economics",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "economics",
+      "aliases": [
+        "BA Economics",
+        "BSc Economics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Economics bachelor programmes study markets, resource allocation, economic institutions and methods of economic analysis. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "Bachelor's Economics: Study and Admissions",
+      "metaDescription": "Compare Bachelor's Economics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "ba-english-literature",
+      "name": "B.A. in English and Literature",
+      "shortName": "B.A. English",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "english-literature",
+      "aliases": [
+        "BA English",
+        "Bachelor of Arts in English Literature"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "English and literature bachelor programmes study language, literary texts, communication and critical analysis. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.A. English: Study and Admissions",
+      "metaDescription": "Compare B.A. English programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bachelor-geography",
+      "name": "Bachelor's in Geography",
+      "shortName": "Bachelor's Geography",
+      "stream": "social-sciences",
+      "level": "bachelors",
+      "discipline": "geography",
+      "aliases": [
+        "BA Geography",
+        "Geography BSc"
+      ],
+      "displayOrder": 353,
+      "durationYears": 3,
+      "summary": "Compare Geography bachelor's degrees abroad by physical and human geography, fieldwork, data methods, tuition, admissions and academic progression. Each listing retains the university's official award title.",
+      "metaTitle": "Bachelor's Geography Abroad | Fees",
+      "metaDescription": "Compare Bachelor's Geography programmes abroad by fieldwork, curriculum, tuition fees and admissions."
+    },
+    {
+      "slug": "ba-history",
+      "name": "B.A. in History",
+      "shortName": "B.A. History",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "history",
+      "aliases": [
+        "BA History",
+        "Bachelor of Arts in History"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "B.A. History programmes study historical periods, societies, historical sources and methods of interpretation. Teaching may combine lectures, guided study, practical or research exercises and assessed assignments. Compare each institution’s curriculum, entry subjects, teaching language, duration, admission process and verified tuition status before applying.",
+      "metaTitle": "B.A. History: Study and Admissions",
+      "metaDescription": "Compare B.A. History programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-mathematics",
+      "name": "B.Sc. in Mathematics",
+      "shortName": "B.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "bachelors",
+      "discipline": "mathematics",
+      "aliases": [
+        "Bachelor of Science in Mathematics",
+        "BSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Mathematics bachelor’s programmes study mathematical reasoning and problem solving through subjects such as calculus, algebra, analysis, geometry, probability and applied mathematics. Curricula may include computing and applications in other fields. Compare subject prerequisites, specialisations, assessment, teaching language, duration and complete costs.",
+      "metaTitle": "B.Sc. Mathematics: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Mathematics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-physics",
+      "name": "B.Sc. in Physics",
+      "shortName": "B.Sc. Physics",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "physics",
+      "aliases": [
+        "Bachelor of Science in Physics",
+        "BSc Physics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Physics bachelor’s programmes study the principles of matter, energy and physical systems through mathematical theory, experimentation and analysis. Curricula may include mechanics, electromagnetism, optics, thermal physics, modern physics and computing. Compare laboratory access, entry subjects, specialisations, language, duration and complete costs.",
+      "metaTitle": "B.Sc. Physics: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Physics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "ba-languages-linguistics",
+      "name": "B.A. in Languages and Linguistics",
+      "shortName": "B.A. Languages",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "languages-linguistics",
+      "aliases": [
+        "BA Linguistics",
+        "Bachelor of Arts in Modern Languages"
+      ],
+      "displayOrder": 157,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate degrees in a named language, modern languages or linguistics. Programmes study language structure, literature and cultural texts in the chosen language or languages, with translation and analytical writing. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.A. Languages Programmes | Students Traffic",
+      "metaDescription": "Compare B.A. Languages programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "bharathi-womens-college-chennai",
+      "name": "Bharathi Women's College, Chennai",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 1964,
+      "officialWebsite": "https://bwc.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/logo2.png",
+          "rights": "Official institution-owned public educational brand/event photograph used for institutional identification and illustration; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/Inner-second.jpg",
+          "rights": "Official institution-owned public educational brand/event photograph used for institutional identification and illustration; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Historic graduation gathering illustrated on Bharathi Women’s College official website"
+        }
+      },
+      "summary": "Bharathi Women’s College is a government women’s arts and science college at No.1 Prakasam Salai in George Town, Chennai, affiliated to the University of Madras. Its current undergraduate choices include arts, sciences and commerce, with programme-specific English or Tamil sections and shifts.",
+      "campusLifestyle": "The college brings together arts, science and commerce departments in George Town. Its institutional quality report describes curricular study alongside NSS, NCC, Youth Red Cross and student activities. The current government admission matrix distinguishes subject, shift and teaching medium, so applicants should select the exact course choice.",
+      "cityProfile": "The campus is at No.1 Prakasam Salai, Chennai 600108, in the George Town/Broadway area. This is the government Bharathi Women’s College using bwc.edu.in. Bharathiar University, Bharathi educational institutions in Kallakurichi and Bharati College in Delhi have separate identities and admissions.",
+      "practicalExposure": "The college describes science laboratories, computing facilities, practical work and academic resources in its quality report. Botany and zoology resources include plant and animal specimens. Practical requirements vary by department and curriculum; academic admission does not guarantee a placement, internship or professional licence.",
+      "hostelOverview": "The 2026 government college booklet lists no college or welfare hostel accommodation for this institution. Plan commuting or independently verified accommodation and confirm any later change directly with the college. Admission does not establish a hostel room or an accommodation allowance.",
+      "dietarySupport": "Meal services, mess charges and individual dietary arrangements have not been verified for these entries. Applicants who require particular food, allergy handling or medical diets should confirm arrangements directly before committing to a commute or independent accommodation.",
+      "safetyOverview": "The college’s quality report describes student welfare and institutional support mechanisms, including accessibility measures. Obtain current contacts for academic concerns, anti-ragging or complaints, and discuss individual access needs when enrolling. Institutional policies do not guarantee an individual safety outcome.",
+      "studentSupport": "The college describes library access, academic guidance, scholarships and student committees in its quality report. It also records ramp facilities for students with disabilities. Confirm the current assistance, eligibility documents and service arrangements for your particular programme and circumstances; admission alone does not guarantee financial support.",
+      "whyChoose": [
+        "Government women’s college affiliated to the University of Madras.",
+        "Arts, sciences and commerce with current programme and teaching-medium choices.",
+        "Subject-specific merit admission through the Tamil Nadu government framework."
+      ],
+      "thingsToConsider": [
+        "Choose the exact subject, shift and teaching-medium section.",
+        "Meet the current DCE subject, age and category conditions.",
+        "Confirm an itemised fee quotation for the chosen shift.",
+        "Plan commuting or independent accommodation."
+      ],
+      "bestFitFor": [
+        "Women meeting the programme-specific school subject requirements.",
+        "Applicants comparing regular government-college study in Chennai.",
+        "Students prepared for merit ranking, counselling and original-document verification."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC — included under Sections 2(f) and 12B"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC official college register",
+          "url": "https://www.ugc.gov.in/colleges"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Official 2026 government college and UG programme booklet",
+          "url": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official 2026 DCE admission framework",
+          "url": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official college programme directory",
+          "url": "https://bwc.edu.in/courses-offered/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official 2022–23 institutional quality report",
+          "url": "https://bwc.edu.in/wp-content/uploads/2025/01/AQAR2022-23.pdf",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC college register",
+          "url": "https://www.ugc.gov.in/colleges",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Exact named programme duration and general-category fee table",
+          "url": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+          "kind": "other",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "bwc-history",
+          "canonicalCourseSlug": "ba-history",
+          "officialTitle": "B.A. Historical Studies",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Historical Studies is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil sections.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "History or the concerned subject is preferred for 80% of seats; 10% is for other subjects and 10% for the vocational stream.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14025,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-economics",
+          "canonicalCourseSlug": "bachelor-economics",
+          "officialTitle": "B.A. Economics",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil; Shift II: English. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Economics is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil; Shift II: English.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Economics or the concerned subject is preferred for 80% of seats; 10% is for other subjects and 10% for the vocational stream.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14025,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-english",
+          "canonicalCourseSlug": "ba-english-literature",
+          "officialTitle": "B.A. English",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Shift I. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. English is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Language-degree ranking first considers candidates who applied for and studied the language under HSC Part III; remaining applications use the relevant Part I or Part II language marks.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14025,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-tamil",
+          "canonicalCourseSlug": "ba-languages-linguistics",
+          "officialTitle": "B.A. Tamil",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "Tamil",
+          "mediumNote": "Shifts I and II, Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Tamil is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shifts I and II, Tamil sections.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Language-degree ranking first considers candidates who applied for and studied the language under HSC Part III; remaining applications use the relevant Part I or Part II language marks.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14025,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-commerce",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com. Commerce",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "English sections in Shifts I and II; select the exact application choice. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Com. Commerce is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. English sections in Shifts I and II; select the exact application choice.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Should have studied Commerce and Accountancy at HSC. The DCE framework reserves 20% for the Commerce vocational stream.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14025,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-mathematics",
+          "canonicalCourseSlug": "bsc-mathematics",
+          "officialTitle": "B.Sc. Mathematics",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil; Shift II: English. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Mathematics is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil; Shift II: English.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Should have studied Mathematics at HSC; academic ranking uses the HSC Part III subject component.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-physics",
+          "canonicalCourseSlug": "bsc-physics",
+          "officialTitle": "B.Sc. Physics",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Physics is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil sections.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Should have studied Mathematics at HSC; academic ranking uses the HSC Part III subject component.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-chemistry",
+          "canonicalCourseSlug": "bsc-chemistry",
+          "officialTitle": "B.Sc. Chemistry",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil; Shift II: English. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Chemistry is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil; Shift II: English.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Should have studied Chemistry and Mathematics, or Chemistry and Biological Sciences, at HSC.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-botany",
+          "canonicalCourseSlug": "bsc-biological-sciences",
+          "officialTitle": "B.Sc. Botany",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Botany is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil sections.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Should have studied Chemistry at HSC under the DCE biological-science subject framework.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-advanced-zoology",
+          "canonicalCourseSlug": "bsc-biological-sciences",
+          "officialTitle": "B.Sc. Advanced Zoology and Biotechnology",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Advanced Zoology and Biotechnology is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil sections.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Should have studied Chemistry at HSC under the DCE biological-science subject framework.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-geography",
+          "canonicalCourseSlug": "bachelor-geography",
+          "officialTitle": "B.Sc. Geography",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English / Tamil",
+          "mediumNote": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english",
+            "tamil"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Geography is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. Shift I: English and Tamil sections.",
+            "eligibility": {
+              "intro": "These conditions follow the 2026 Tamil Nadu government-college admission framework for the named subject.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Preference for 90% of seats goes to students who studied the subject concerned; 10% is for students with other science subjects and high marks.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English / Tamil",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-biochemistry",
+          "canonicalCourseSlug": "bsc-biological-sciences",
+          "officialTitle": "B.Sc. Biochemistry",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "English sections in Shifts I and II. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Biochemistry is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. English sections in Shifts I and II.",
+            "eligibility": {
+              "intro": "These are verified college subject combinations that also meet the 2026 DCE framework; other combinations require current college assessment.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Verified subject routes: Chemistry and Biology; Chemistry with Botany and Zoology; or Biochemistry and Chemistry at HSC.",
+                "These current-linked college combinations also meet the DCE Chemistry requirement. Other Chemistry-based combinations require current college assessment.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        },
+        {
+          "slug": "bwc-computer-science",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc. Computer Science",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge."
+          },
+          "feeNotes": "Confirm the current itemised charge list for the exact programme, shift and category. The indicative programme fee does not establish annual tuition, accommodation or every extra charge.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://bwc.edu.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "English sections in Shifts I and II. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Women applying through the verified regular domestic first-year undergraduate route"
+            ],
+            "restrictions": [
+              "School subject, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry admission routes are not established by these entries."
+            ],
+            "notes": "A qualifying subject record or category claim requires verification during counselling.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Computer Science is a regular three-year undergraduate degree at Bharathi Women’s College, Chennai. English sections in Shifts I and II.",
+            "eligibility": {
+              "intro": "These are verified college subject combinations that also meet the 2026 DCE framework; other combinations require current college assessment.",
+              "items": [
+                "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.",
+                "Verified route: HSC Physics and Chemistry, with Computer Science or Biology, and Mathematics as a compulsory subject.",
+                "The DCE framework requires Mathematics, with two-thirds of seats for +2 Computer Science students and one-third for others. Other Mathematics-based combinations require current college assessment.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter the academic and category details accurately.",
+              "Select Bharathi Women’s College, code 1012003, and the exact subject, shift and medium; follow the published rank list and counselling instructions.",
+              "Attend verification with the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            },
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 14151,
+              "status": "indicative",
+              "period": "full_course",
+              "componentBasis": "Unitemised general-category full three-year programme fee; tuition/other compulsory components and shift basis not distinguished.",
+              "category": "General category; shift not specified",
+              "academicYear": "Not stated; checked 2026-10-25",
+              "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+              "sourceLabel": "CollegeDunia exact named course table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three-year undergraduate degree",
+              "language": "English",
+              "details": "The programme follows semester study with subject-specific theory, practical or other curriculum requirements. Medium and shift must match the admitted section."
+            }
+          ]
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "13 regular undergraduate degree families, with current shift/medium variants retained in notes; postgraduate and research discoveries remain separately inventoried.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Bharathi programme eligibility",
+            "capture": [
+              "programme",
+              "subjects",
+              "shift",
+              "qualification"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my Bharathi study budget",
+            "capture": [
+              "programme",
+              "shift",
+              "category"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my Bharathi application",
+            "capture": [
+              "programme",
+              "intended cycle",
+              "academic records"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which Bharathi college is this?",
+          "answer": "This is the government women’s college at No.1 Prakasam Salai, George Town/Broadway, Chennai, affiliated to the University of Madras. Its official domain is bwc.edu.in."
+        },
+        {
+          "question": "Who can apply through these entries?",
+          "answer": "These entries cover women applying for regular domestic first-year undergraduate admission. Meet the current subject, age, category and document conditions. Overseas and lateral-entry routes require separate verification."
+        },
+        {
+          "question": "Are English and Tamil sections available?",
+          "answer": "The current government matrix specifies the available medium for each subject and shift. Some degrees have both English and Tamil sections; Commerce, Biochemistry and Computer Science have English sections. Choose the precise application option."
+        },
+        {
+          "question": "What is the undergraduate duration?",
+          "answer": "The listed B.A., B.Sc. and B.Com. degrees have a three-year course duration. Subject, shift and medium choices do not create a separate higher award."
+        },
+        {
+          "question": "Which school subjects are required?",
+          "answer": "Requirements differ by degree. Mathematics is required for Mathematics, Physics and Computer Science; Chemistry is required in the named biological-science routes. Chemistry has specified subject combinations, and Commerce requires Commerce and Accountancy."
+        },
+        {
+          "question": "What age rules apply to 2026 admission?",
+          "answer": "The DCE upper age limit is 40 as on 1 July 2026. A three-year relaxation may be allowed for women and specified categories; the rules permit five years for disability/transgender categories. Do not assume automatic or cumulative relaxation."
+        },
+        {
+          "question": "How are applicants selected?",
+          "answer": "Government-college admission uses the applicable school marks, subject preferences, reservation rules, rank lists and counselling. A minimum qualification or application does not guarantee a seat."
+        },
+        {
+          "question": "What do the fee amounts include?",
+          "answer": "The programme fee amounts are indicative general-category references. A complete itemised quotation is needed to confirm the selected shift, compulsory charges, deposits and any extra costs."
+        },
+        {
+          "question": "Is a hostel available?",
+          "answer": "The 2026 government booklet lists no college or welfare hostel accommodation. Confirm any subsequent change with the college and plan commuting or independently verified accommodation."
+        },
+        {
+          "question": "Are postgraduate programmes included here?",
+          "answer": "The college lists postgraduate and research programmes separately. Their exact qualifying-degree conditions and current admission arrangements must be checked before applying; undergraduate requirements do not establish postgraduate eligibility."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; History or the concerned subject is preferred for 80% of seats; 10% is for other subjects and 10% for the vocational stream.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14025; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-history"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Economics or the concerned subject is preferred for 80% of seats; 10% is for other subjects and 10% for the vocational stream.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil; Shift II: English. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14025; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-economics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Language-degree ranking first considers candidates who applied for and studied the language under HSC Part III; remaining applications use the relevant Part I or Part II language marks.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14025; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Language-degree ranking first considers candidates who applied for and studied the language under HSC Part III; remaining applications use the relevant Part I or Part II language marks.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shifts I and II, Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14025; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Should have studied Commerce and Accountancy at HSC. The DCE framework reserves 20% for the Commerce vocational stream.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "English sections in Shifts I and II; select the exact application choice. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14025; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Should have studied Mathematics at HSC; academic ranking uses the HSC Part III subject component.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil; Shift II: English. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Should have studied Mathematics at HSC; academic ranking uses the HSC Part III subject component.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Should have studied Chemistry and Mathematics, or Chemistry and Biological Sciences, at HSC.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil; Shift II: English. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Should have studied Chemistry at HSC under the DCE biological-science subject framework.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-botany"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Should have studied Chemistry at HSC under the DCE biological-science subject framework.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-advanced-zoology"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Preference for 90% of seats goes to students who studied the subject concerned; 10% is for students with other science subjects and high marks.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "Shift I: English and Tamil sections. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-geography"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Own current-linked2019 regulation exactsubjectcombination retained narrowly with current2026DCE qualification/ranking; broaderChemistry/Mathcombinations notdeclaredineligible.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/05/UG-BIO-2019.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Verified subject routes: Chemistry and Biology; Chemistry with Botany and Zoology; or Biochemistry and Chemistry at HSC.; These current-linked college combinations also meet the DCE Chemistry requirement. Other Chemistry-based combinations require current college assessment.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "English sections in Shifts I and II. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-biochemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Own current-linked2019 regulation exactsubjectcombination retained narrowly with current2026DCE qualification/ranking; broaderChemistry/Mathcombinations notdeclaredineligible.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/05/UG-CSC-2019.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "eligibility",
+      "claimText": "Women applicants must pass HSC/+2 or an accepted equivalent and meet the applicable programme subject conditions.; Verified route: HSC Physics and Chemistry, with Computer Science or Biology, and Mathematics as a compulsory subject.; The DCE framework requires Mathematics, with two-thirds of seats for +2 Computer Science students and one-third for others. Other Mathematics-based combinations require current college assessment.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Ranking, reservation and counselling rules apply. Relaxations are not automatically cumulative, and meeting the qualification does not guarantee admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "medium",
+      "claimText": "English sections in Shifts I and II. English/Tamil choices follow the current 2026 government matrix and the college’s EM/TM directory; verify the selected section before accepting admission.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "duration",
+      "claimText": "Exact named three-year B.A./B.Sc./B.Com duration in the full institution course table, corroborated by applicable own2019semester curricula where retrievable.",
+      "status": "verified",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established for this programme; omit both intake arrays. Counselling dates are not treated as a class start.",
+      "status": "omit",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "fee",
+      "claimText": "Current isolated annual tuition not established. Own linked undated policy states no tuition but contains obsolete age21wording; do not declare current universal0tuition. Current exactshift/category itemisation required.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/admission-policy/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Full named table states general-category full three-year programme total INR14151; tariffyear/component/shift not stated. Indicative quote only, not annualtuition; source wrong centralisedMadrasadmission wording is not used.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDunia exact named institution programme table",
+      "sourceUrl": "https://collegedunia.com/college/16434-bharathi-womens-college-bwc-chennai",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA exactcollege1012003 and nameddegree/shift/medium; currentDCE merit/subjectranking and reservation rules. No secondary2027deadline or openwindow claim.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "bwc-computer-science"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "recognition",
+      "claimText": "Actual full UGC register HTML retrieved and rows1422/1423 read: exact BWC Chennai/Madrasaffiliation included under2(f)&12B. Row1423matchesown1964. Autonomyregister2019–24notusedascurrentbadge.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://www.ugc.gov.in/colleges",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "identity",
+      "claimText": "Current2026governmentbooklet code1012003: BharathiWomensCollege,No.1PrakasamSalai,Chennai600108,women,www.bwc.edu.in.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "studentLiving",
+      "claimText": "OwnAQAR2022–23 describes library, sciencepracticals, NSS/NCC/YRC, academicguidance and ramps. Currentgovernmentbookletlistsnilcollege/welfarehostel.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2025/01/AQAR2022-23.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "bharathi-womens-college-chennai",
+      "publicField": "media",
+      "claimText": "Fullnative115x115officialcompletecrest, notfavicon; official1600x363historicgraduationgatheringheader. No date/exterior/buildingclaim; stock-lookinghomepagebannerrejected.",
+      "status": "verified",
+      "sourceLabel": "Official college/government/regulator source",
+      "sourceUrl": "https://bwc.edu.in/wp-content/uploads/2022/04/Inner-second.jpg",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

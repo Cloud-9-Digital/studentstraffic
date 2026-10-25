@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/university/quaid-e-millath-government-college-for-women-chennai",
+    "kind": "university",
+    "slug": "quaid-e-millath-government-college-for-women-chennai",
+    "status": 200,
+    "h1": "Quaid-E-Millath Government College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/qmgcw-b-a-tamil-literature-shift-i",
+    "kind": "programme",
+    "slug": "qmgcw-b-a-tamil-literature-shift-i",
+    "status": 200,
+    "h1": "B.A. Languages at Quaid-E-Millath Government College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/bwc-history",
+    "kind": "programme",
+    "slug": "bwc-history",
+    "status": 200,
+    "h1": "B.A. History at Bharathi Women&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/bharathi-womens-college-chennai",
+    "kind": "university",
+    "slug": "bharathi-womens-college-chennai",
+    "status": 200,
+    "h1": "Bharathi Women&#x27;s College, Chennai",
+    "pass": true
+  }
+]

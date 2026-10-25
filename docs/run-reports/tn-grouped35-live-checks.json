@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/tvu-b-sc-computer-science",
+    "kind": "programme",
+    "slug": "tvu-b-sc-computer-science",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Thiruvalluvar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/svce-mechanical-automobile",
+    "kind": "programme",
+    "slug": "svce-mechanical-automobile",
+    "status": 200,
+    "h1": "B.E./B.Tech Automobile at Sri Venkateswara College of Engineering",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/thiruvalluvar-university",
+    "kind": "university",
+    "slug": "thiruvalluvar-university",
+    "status": 200,
+    "h1": "Thiruvalluvar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sri-venkateswara-college-of-engineering",
+    "kind": "university",
+    "slug": "sri-venkateswara-college-of-engineering",
+    "status": 200,
+    "h1": "Sri Venkateswara College of Engineering",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/sri-sairam-engineering-college",
+    "kind": "university",
+    "slug": "sri-sairam-engineering-college",
+    "status": 200,
+    "h1": "Sri Sairam Engineering College",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sairam-civil",
+    "kind": "programme",
+    "slug": "sairam-civil",
+    "status": 200,
+    "h1": "B.E./B.Tech Civil at Sri Sairam Engineering College",
+    "pass": true
+  }
+]

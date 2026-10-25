@@ -1,0 +1,12 @@
+{
+  "source": "https://www.ugc.gov.in/colleges",
+  "file": "ugc-colleges.html",
+  "checkedAt": "2026-10-25",
+  "rows": [
+    "1422 Bharathi Women's College University of Madras, Chennai Pragasom Salai, North Madras, District Madras-600108 Tamil Nadu 2(f) & 12B 1963 Master's Government",
+    "1423 Bharathi Women\u2019s College (Autonomous) University of Madras, Chennai Chennai Tamil Nadu 2(f) & 12B 1964 Master's Government",
+    "3550 Government Arts College for Men University of Madras, Chennai Nandanam, District Madras - 600 035 Tamil Nadu 2(f) & 12B 1969 Bachelor's Government",
+    "14928 Y.M.C.A. College of Physical Education University of Madras, Chennai Nandanam, District Madras - 600 035 Tamil Nadu 2(f) & 12B 1920 Master's Non Government"
+  ],
+  "limitation": "DuplicateBWCrows1422/1423sharecityaffiliationand2f12B; institutionalown1964matchesrow1423. Currentautonomytermnotassertedfromexpired2019\u201324register."
+}

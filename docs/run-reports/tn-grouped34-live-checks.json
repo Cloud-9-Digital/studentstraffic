@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/wcc-b-a-history-shift-1",
+    "kind": "programme",
+    "slug": "wcc-b-a-history-shift-1",
+    "status": 200,
+    "h1": "B.A. History at Women&#x27;s Christian College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-com-general-shift-i-anna-adarsh-college-for-women-chennai",
+    "kind": "programme",
+    "slug": "b-com-general-shift-i-anna-adarsh-college-for-women-chennai",
+    "status": 200,
+    "h1": "B.Com at Anna Adarsh College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/anna-adarsh-college-for-women-chennai",
+    "kind": "university",
+    "slug": "anna-adarsh-college-for-women-chennai",
+    "status": 200,
+    "h1": "Anna Adarsh College for Women, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/womens-christian-college-chennai",
+    "kind": "university",
+    "slug": "womens-christian-college-chennai",
+    "status": 200,
+    "h1": "Women&#x27;s Christian College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/qmc-b-sc-biochemistry-shift-i-em",
+    "kind": "programme",
+    "slug": "qmc-b-sc-biochemistry-shift-i-em",
+    "status": 200,
+    "h1": "B.Sc. Biological Sciences at Queen Mary’s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/queen-marys-college-chennai",
+    "kind": "university",
+    "slug": "queen-marys-college-chennai",
+    "status": 200,
+    "h1": "Queen Mary’s College, Chennai",
+    "pass": true
+  }
+]

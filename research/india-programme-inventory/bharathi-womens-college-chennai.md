@@ -11,3 +11,5 @@ FullCollegeDunia exactinstitutiontable opened/read, updated7October2026: named4B
 Complete16MBUGCownregisterread, rows1422/1423matchcollege2f12B; onegenuinebadge. Autonomyregisterterm2019–24expired, nocurrentautonomybadge orNAACmarketingbadge. OwnAQAR2022–23 supportsfacilities/support; currentgovernmentbookletshowsnilcollege/welfarehostel.
 
 Reviewedoriginal115x115completecrest and1600x363genuinehistoricgraduationheader, accurateeventcaption/noexterioror dateclaim. RejectedAIlookinggraduatebannerandGPStextheavyclassroomcover. Noimageediting/upscale/providerupload. Source/rights/hash manifest retained. Draft-only forgroup36, noexecutable reservation/DB/upload/commit.
+
+Final approved checkpoint: **0342-india-bharathi-womens-college-chennai**,13programmes/11families/97evidence, actualnumberedreaderandcanonicalscopedvalidationPASS0expiredwithoutDB. Sameownerlockedledgervalidated13; reviewedmediaapprovedbyroot. Earlierdraft-only/researchingparagraphs document priorstage, nowsuperseded bythischeckpoint. Frozenforgroup36.
