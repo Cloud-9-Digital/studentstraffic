@@ -13,3 +13,18 @@ Official2026–27 fees are explicitly annual gross fees, not isolated tuition. A
 Recognition: UGC own autonomy row1288 valid2024–25 to2033–34, UniversityofMadras; separate own full-college register row513 Section2(f) ONLY, not12B. Recognition excerpts retain sourceURLs, exactrows and originalretainedsource paths/checksums. No badge inferred from ownNAACmarketing or staleFAQ nonautonomous/A+copy. Current prospectus andUGCautonomy supersede staleFAQ governance/grade wording.
 
 Reviewed media originals: native192×192 standalone institutional crest withcompletecollege name/flowers/motto; native1430×953 canteenstudentlife photograph from officialfacilities page. Both visually inspected without modification. Collegeactivity/foodsource is not described as an exteriorcampus photograph. Separate unused portraits/NCC/culturalimages notselected. Manifest retains URLs, localoriginals andSHA256. No DB/provider/upload/commit byworker. CSV explicitly LF.
+
+
+## Superseding four-route academic rescue —25October2026
+
+Complete offline draft `research/india-source-bundles/annaadarsh-rescue-20261025/draft-payload.json`:22programmes/22nativefirst-yearquotes,4newroutes (3awards). All18baseline0242programmeobjects/quotes and populatedofficialcrest/canteenphoto rights exact. TemporaryactualreaderPASS0warnings. Lockedowner `codex-tn-annaadarsh-rescue-20261025` retains published18/pointer0242 pendingrootcollection. Noreservation/DB/upload.
+
+Currentexactdepartmentconditions: AIHSCMathematics, rankingout400(notminimum400),2/3HSCComputerScienceand1/3withoutCS;3years. HomeSciencePGI/II acceptedBScNutrition/FSM/Dietetics,ClinicalNutritionDietetics,HomeScienceor equivalentwithPhysiology/FoodScience/Nutrition/Dietetics/FoodServiceManagementfoundations;2years. AppliedPsychPG3yearBAPsych/BScPsychrecognisedUoM;2years. Women-onlydomesticownAnnaNagarroute, no foreign/NRIblanketeligibility orregulatedclinicalregistrationclaims. Newmedium/intakeemptywithomit, no optionalhunts.
+
+Retainedcompletecurrent2026–27feePDF renderedandvisuallyrechecked: first-yearAI104000,HomeSciI82000,HomeSciII79000,PsychII70000. GradeAconfirmednativefirst_yearprogrammefigures, no annualtuitioncomponent/fullcoursetotalorunchangedfutureyears inference. SpecialAI/PGShiftII8:30am–1pm andPGI8am–12:30pm kept exact; not ordinaryShiftIIafternoon. Source-provenance.json retains directlocalPDF/render/method. Alloldpricesuntouched.
+
+Populatedofficialcrest/canteenstudentlife imageattribution preserved exactly0242, caption remainscanteennotgenericexterior; nohostedURLoverwrite/upload. CyberSecurity/FinTechqualification, BBA/BCAcurrentprofessionalapprovalscope andcontinuing-only/currententry/research/certificate gaps retained; optionalmedium/intakealoneno longerholds.
+
+## Frozen complete forward
+
+0335-india-anna-adarsh-academic-hold-rescue: 22 programmes; canonical numbered reader passes with zero warnings. Ledger validated22; parent publication pending. Existing18 programmes deep-equal0242-india-anna-adarsh-college-for-women-chennai. Existing reviewed media unchanged; no new upload required.

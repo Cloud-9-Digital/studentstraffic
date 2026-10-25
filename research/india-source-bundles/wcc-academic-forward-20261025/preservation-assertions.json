@@ -1,0 +1,11 @@
+{
+  "base": "0253-india-wcc-native-reported-fees",
+  "original32ProgrammesDeepEqual": true,
+  "nonemptyMediaAttributionDeepEqual": true,
+  "newRoutes": 5,
+  "newConfirmedSemesterQuotes": 5,
+  "totalRoutes": 37,
+  "noReservationDuringFreeze": true,
+  "migrationId": "0334-india-wcc-academic-hold-rescue",
+  "actualNumberedReader": "PASS1"
+}

@@ -11,3 +11,6 @@ Intake: official tentative2026–27calendar expresslySemesterI/III/V, first day-
 Ten taught holds: new/absent-medium BScCSDataScience, BComCorporateSecretaryship, MSW, SFScounselling; affiliation-pending BScCSAI/BComBankManagement/MScCS; currentapproval BBA/BCA; integratedCST old24monthvsnew5year identity/medium/intake ambiguity. Research8held. No overseas route presumed from genericFSIS/foreignfee columns.
 
 Fee: on_request for all32; pp43–44first-semester composite totals are not annualtuition. UGCcurrentautonomy and NIRF2025band101–150 are exact independent statuses. Full provenance, scope reasoning, source dates/access limits and retained files in sourcebundle `reviewed-source-excerpts.md`. Genuine official media reviewed, manifest `research/media-enrichment/wcc-chennai-20261025-reviewed-upload-manifest.json`.
+
+
+25 October2026 bounded forward:37 unique taught routes, original32 deep-equal0253 plus four medium-only awards and explicit5year HSC-entry MScCST. Allfive current ownqualifications/duration/confirmedSemesterI nativecombinedquotes; unknown language/intake omitted. Full58-row LF inventory retains actualapproval/research/section distinctions. Draft only duringGroup33. Sourceaudit research/india-source-bundles/wcc-academic-forward-20261025/.
