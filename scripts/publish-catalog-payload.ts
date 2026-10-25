@@ -1,7 +1,7 @@
 import "./lib/load-script-env.mjs";
 import { parseReportedFeeQuote, type ReportedFeeQuote } from "../lib/reported-fee-quote";
 
-import { eq } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import { neonConfig, Pool } from "@neondatabase/serverless";
 import { WebSocket } from "ws";
@@ -345,21 +345,22 @@ export async function publishCatalogPayload(
 
       await tx.delete(catalogContentEvidence)
         .where(eq(catalogContentEvidence.universityId, saved.id));
-      for (const programmeId of programmeIds.values()) {
+      const savedProgrammeIds = [...programmeIds.values()];
+      if (savedProgrammeIds.length) {
         await tx.delete(catalogContentEvidence)
-          .where(eq(catalogContentEvidence.programOfferingId, programmeId));
+          .where(inArray(catalogContentEvidence.programOfferingId, savedProgrammeIds));
       }
       const universityEvidence = payload.evidence.filter(
         (evidence) => evidence.universitySlug === university.slug,
       );
-      for (const evidence of universityEvidence) {
+      const evidenceRows = universityEvidence.map((evidence) => {
         const programOfferingId = evidence.entity === "programme"
           ? programmeIds.get(evidence.programmeSlug ?? "")
           : undefined;
         if (evidence.entity === "programme" && !programOfferingId) {
           throw new Error(`Evidence references a missing programme: ${evidence.programmeSlug}`);
         }
-        await tx.insert(catalogContentEvidence).values({
+        return {
           universityId: evidence.entity === "university" ? saved.id : undefined,
           programOfferingId,
           publicField: evidence.publicField,
@@ -371,8 +372,14 @@ export async function publishCatalogPayload(
           checkedAt: evidence.checkedAt,
           reviewBy: evidence.reviewBy,
           internalNotes: evidence.internalNotes,
-        });
+        };
+      });
+      // Bound parameter counts while avoiding one network round trip per claim.
+      // Every batch remains inside the same catalogue publication transaction.
+      for (let offset = 0; offset < evidenceRows.length; offset += 500) {
+        await tx.insert(catalogContentEvidence).values(evidenceRows.slice(offset, offset + 500));
       }
+      console.log(`Evidence refreshed: ${evidenceRows.length} records in ${Math.ceil(evidenceRows.length / 500)} batch(es).`);
     }
 
     for (const countryEvidence of payload.evidence.filter((evidence) => evidence.entity === "country")) {
