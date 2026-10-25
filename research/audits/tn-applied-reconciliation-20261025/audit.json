@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-25",
+  "receiptSource": "/private/tmp/tn-applied-ids.json",
+  "receiptSha256": "5e4fe8fad423c6c02f2914126a6ee840dd144a7aeed06d88547bbdaac8640c1a",
+  "explicitReceiptCount": 290,
+  "duplicateReceiptIds": 0,
+  "excludedUnapplied0310": true,
+  "method": "Latest complete India profile/programme snapshot per unique university slug, traversing only explicit applied receipt IDs. Programme sets use unique slugs within profile; pre0170baseline is last RECEIPTED snapshot before0170. No numeric maximum/all-files inference, no DB.",
+  "baselineIndiaProfiles": 35,
+  "baselineIndiaProgrammePairs": 987,
+  "currentIndiaProfiles": 121,
+  "currentIndiaProgrammePairs": 4139,
+  "currentGloballyUniqueProgrammeSlugs": 4139,
+  "newProfilesVsPre0170": 86,
+  "newProgrammeAdditionsVsPre0170": 3152,
+  "newProfilesProgrammePairs": 2852,
+  "existingBaselineProfileProgrammeAdditions": 300,
+  "baselineProgrammeRemovals": {},
+  "historicalReceiptDuplicateProgrammeSlugs": [
+    {
+      "migration": "0300-india-biher-constituent-medical-portfolio",
+      "profile": "india-bharath-institute-higher-education",
+      "slugs": [
+        "biher-sbmch-md-paediatrics",
+        "biher-slims-md-paediatrics",
+        "biher-bmch-md-paediatrics"
+      ]
+    }
+  ],
+  "currentCrossProfileProgrammeSlugCollisions": {},
+  "ledgerExactAppliedCheckpointMatches": 118,
+  "expectedPendingForwards": [
+    {
+      "slug": "womens-christian-college-chennai",
+      "issues": [
+        "pointer",
+        "payload_path",
+        "count"
+      ],
+      "applied": "0253-india-wcc-native-reported-fees",
+      "appliedCount": 32,
+      "ledgerPointer": "0334-india-wcc-academic-hold-rescue",
+      "ledgerCount": "37",
+      "ledgerStatus": "validated",
+      "classification": "Expected source-backed pending forward, not applied"
+    },
+    {
+      "slug": "queen-marys-college-chennai",
+      "issues": [
+        "pointer",
+        "payload_path",
+        "count"
+      ],
+      "applied": "0251-india-queen-marys-native-reported-fees",
+      "appliedCount": 38,
+      "ledgerPointer": "0336-india-qmc-language-award-rescue",
+      "ledgerCount": "40",
+      "ledgerStatus": "validated",
+      "classification": "Expected source-backed pending forward, not applied"
+    },
+    {
+      "slug": "anna-adarsh-college-for-women-chennai",
+      "issues": [
+        "pointer",
+        "payload_path",
+        "count"
+      ],
+      "applied": "0242-india-anna-adarsh-college-for-women-chennai",
+      "appliedCount": 18,
+      "ledgerPointer": "0335-india-anna-adarsh-academic-hold-rescue",
+      "ledgerCount": "22",
+      "ledgerStatus": "validated",
+      "classification": "Expected source-backed pending forward, not applied"
+    }
+  ],
+  "unexplainedAppliedLedgerMismatches": [],
+  "ledgerOnlyPublishedOrValidatedProfiles": [],
+  "group33SavedCountComparison": {
+    "newProfilesMatch": true,
+    "newProgrammesMatch": true,
+    "receiptCountMatch": true
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "panimalar-me-cse",
+    "amount": 100000,
+    "feeLabel": "₹1,00,000",
+    "pass": true
+  },
+  {
+    "slug": "panimalar-me-communication-systems",
+    "amount": 100000,
+    "feeLabel": "₹1,00,000",
+    "pass": true
+  },
+  {
+    "slug": "panimalar-mba",
+    "amount": 70000,
+    "feeLabel": "₹70,000",
+    "pass": true
+  }
+]
