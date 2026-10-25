@@ -1,0 +1,34 @@
+[
+  {
+    "q": "Vivekananda",
+    "status": 200,
+    "totalItems": 1,
+    "universities": [
+      {
+        "slug": "ramakrishna-mission-vivekananda-college-chennai",
+        "name": "Ramakrishna Mission Vivekananda College, Chennai",
+        "city": "Chennai",
+        "type": "Private",
+        "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792909211/studentstraffic/universities/ramakrishna-mission-vivekananda-college-chennai/logo.png",
+        "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792909213/studentstraffic/universities/ramakrishna-mission-vivekananda-college-chennai/cover.jpg",
+        "featured": false
+      }
+    ]
+  },
+  {
+    "q": "Pachaiyappa",
+    "status": 200,
+    "totalItems": 1,
+    "universities": [
+      {
+        "slug": "pachaiyappas-college-chennai",
+        "name": "Pachaiyappa's College, Chennai",
+        "city": "Chennai",
+        "type": "Private",
+        "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792909214/studentstraffic/universities/pachaiyappas-college-chennai/logo-20261025.png",
+        "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1792909215/studentstraffic/universities/pachaiyappas-college-chennai/cover-20261025.jpg",
+        "featured": false
+      }
+    ]
+  }
+]

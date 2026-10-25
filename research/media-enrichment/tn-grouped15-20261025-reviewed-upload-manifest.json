@@ -1,0 +1,254 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "madras-school-of-social-work",
+      "universityName": "Madras School of Social Work",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://mssw.in/wp-content/uploads/2024/06/Header-Website.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://mssw.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Ordinary HTTPS retrieval returned 200; complete original and SHA256 retained. No open-licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/madras-school-of-social-work/logo",
+          "altText": "Madras School of Social Work complete college crest",
+          "localPath": "research/india-source-bundles/mssw-20261025/header.jpg",
+          "sha256": "bc1b95849d076283e1a1a757ab509c35209ea03050ca6cd9c85e0031ad8ca6c0",
+          "transformation": [
+            {
+              "crop": "crop",
+              "x": 0,
+              "y": 0,
+              "width": 180,
+              "height": 180
+            }
+          ],
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://mssw.in/wp-content/uploads/2020/03/why-choose-us.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://mssw.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus photograph presented on the current college homepage. Ordinary HTTPS retrieval returned 200; complete original and SHA256 retained. No open-licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/madras-school-of-social-work/cover",
+          "altText": "Entrance and academic building at Madras School of Social Work in Egmore, Chennai",
+          "localPath": "research/india-source-bundles/mssw-20261025/cover-candidate.jpg",
+          "sha256": "ce595302e37b9d8de3f2224f475c9aa2f7ca1722d5e26b9bc8c8dcba493d79fe",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0241-madras-school-of-social-work"
+    },
+    {
+      "universitySlug": "anna-adarsh-college-for-women-chennai",
+      "universityName": "Anna Adarsh College for Women, Chennai",
+      "sourceBatch": "codex-annaadarsh-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://annaadarsh.edu.in/wp-content/uploads/2017/02/cropped-mewannalogo-192x192.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://annaadarsh.edu.in/",
+          "rightsBasis": "Official institution-hosted institutional crest and college-facility photograph; no open licence or ownership transfer asserted.",
+          "altText": "Anna Adarsh College for Women institutional crest",
+          "visualCheck": "Native192\u00d7192 standalone gold/navy crest with three flowers andPerfectionPurityPerseverance motto; complete round college name andSince1985.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTPGET and nativeview_image inspection of retained original; no image modification/provider action.",
+          "proposedPublicId": "studentstraffic/universities/anna-adarsh-college-for-women-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/anna-adarsh-college-for-women-chennai/crest.png",
+          "sha256": "bc508b68551cbf651d394e6df7078e4442a68f4d0c861821e05b54be39e1b6ef",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://annaadarsh.edu.in/wp-content/uploads/2021/06/sf9.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://annaadarsh.edu.in/other-facilities/",
+          "rightsBasis": "Official institution-hosted institutional crest and college-facility photograph; no open licence or ownership transfer asserted.",
+          "altText": "Students in the college canteen shown by Anna Adarsh\u2019s official facilities page",
+          "visualCheck": "Native1430\u00d7953 official college facilities photograph shows students seated in the canteen, tables/chairs andfood; authentic institution-published student-life setting, not stock, generic landmark or faculty portrait.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary publicHTTPGET and nativeview_image inspection of retained original; no image modification/provider action.",
+          "proposedPublicId": "studentstraffic/universities/anna-adarsh-college-for-women-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/anna-adarsh-college-for-women-chennai/facilities.jpg",
+          "sha256": "3aece29d7cfab71c6b4b29afab1266becaf29202cc24785b34d2258dc84731c0",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0242-india-anna-adarsh-college-for-women-chennai"
+    },
+    {
+      "universitySlug": "sri-krishna-arts-and-science-college-coimbatore",
+      "universityName": "Sri Krishna Arts and Science College, Coimbatore",
+      "sourceBatch": "codex-skasc-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://skasc.ac.in/wp-content/uploads/2024/10/Prospect-Brochure.pdf",
+          "sourceType": "official-university",
+          "rightsBasis": "University-published institutional brand or campus photograph for factual institutional identification; exact original retained, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/sri-krishna-arts-and-science-college-coimbatore/logo-20261025",
+          "altText": "Sri Krishna Arts and Science College complete institutional seal on its original blue background",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/skasc-20261025/media-logo-seal.png",
+          "sha256": "2b04055db91159bcad7bdef6883d12b4219f432b27738f64679c77488b1501f3",
+          "width": 804,
+          "height": 807,
+          "visualReview": "Complete seal, legal name and motto retained, original blue background legible on white tile; accreditation copy excluded.",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Official single-page vector prospectus rendered600dpi,4961x7016; crop(138,91,942,898) retains complete white seal and original blue background, no recolouring or redesign.",
+          "originalDocumentLocalPath": "research/india-source-bundles/skasc-20261025/brochure2024.pdf",
+          "originalDocumentSha256": "f0a9b83591e2f58bb37246294bd6462cd004164159da76f659ac96851e22cab3"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://skasc.ac.in/wp-content/uploads/2024/10/skcas-inter-building-image-1.jpg",
+          "sourceType": "official-university",
+          "rightsBasis": "University-published institutional brand or campus photograph for factual institutional identification; exact original retained, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/sri-krishna-arts-and-science-college-coimbatore/cover-20261025",
+          "altText": "Sri Krishna Arts and Science College library block and campus buildings in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/skasc-20261025/media-cover-building.jpg",
+          "sha256": "8f3f37b16a6474db152b06646a143f91dcf828b416216bbce207e276d5c16816",
+          "width": 1440,
+          "height": 420,
+          "visualReview": "Authentic library block photograph, college name visible, no synthetic overlay or group-brand confusion.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "kongunadu-arts-and-science-college",
+      "universityName": "Kongunadu Arts and Science College, Coimbatore",
+      "sourceBatch": "codex-kongunadu-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://media.collegedekho.com/media/institutes/prospectus/kongunadu_arts_and_science_College.pdf",
+          "sourceType": "institution-authored-document-mirror",
+          "rightsBasis": "Authentic institution-authored anniversary prospectus mirrored by education directoryCollegeDekho, corroborated institutional name/address/brand and campus. Institutional identification only; original document retained. Crop only, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/kongunadu-arts-and-science-college/logo-20261025",
+          "altText": "Kongunadu Arts and Science College complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/kongunadu-20261025/media-logo-crest.png",
+          "sha256": "6c67c77d92ecb244afcca7238572ae3559c46777cacc77ebf188cedb6da21689",
+          "width": 140,
+          "height": 145,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full4pageinstitutionauthoredPDF retained; native976x1264cover image extracted without resizing or recolouring using pdfimages-png, crop(75,48,740,242), then crest-only(0,0,140,145). Complete circular crest, motto and establishment line retained; widerwordmark crop kept separately, anniversary/accreditation/status prose excluded.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/kongunadu-20261025/mirrored-prospectus.pdf",
+          "originalDocumentSha256": "d3fd3785fca655f828077517aa7058780b1ad004841d5cd9bd8da06638e2626c",
+          "visualReview": "Legible on white, complete institutional legal name and seal."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://media.collegedekho.com/media/institutes/prospectus/kongunadu_arts_and_science_College.pdf",
+          "sourceType": "institution-authored-document-mirror",
+          "rightsBasis": "Authentic institution-authored anniversary prospectus mirrored by education directoryCollegeDekho, corroborated institutional name/address/brand and campus. Institutional identification only; original document retained. Crop only, no synthetic content or ownership transfer.",
+          "proposedPublicId": "studentstraffic/universities/kongunadu-arts-and-science-college/cover-20261025",
+          "altText": "Kongunadu Arts and Science College campus building with clock tower in Coimbatore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/kongunadu-20261025/media-cover-campus.png",
+          "sha256": "16f16d1e07e8be9dcc89a940abd4d599d15f9c3121e927a9d3615865ba520055",
+          "width": 902,
+          "height": 306,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full4pageinstitutionauthoredPDF retained; native976x1264cover image extracted without resizing or recolouring using pdfimages-png, crop(37,935,939,1241). Authentic building photograph cropped below brochure collage, roof/clocktower/front and trees preserved; brochure address band excluded.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/kongunadu-20261025/mirrored-prospectus.pdf",
+          "originalDocumentSha256": "d3fd3785fca655f828077517aa7058780b1ad004841d5cd9bd8da06638e2626c",
+          "visualReview": "Authentic campus building, no invented current date; undated brochure photograph."
+        }
+      ]
+    },
+    {
+      "universitySlug": "sdnb-vaishnav-college-for-women-chennai",
+      "universityName": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women, Chennai",
+      "sourceBatch": "codex-sdnbvc-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.sdnbvc.edu.in/wp-content/uploads/2019/04/cropped-logo-192x192.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.sdnbvc.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "SDNB Vaishnav College for Women institutional crest",
+          "visualCheck": "Native192\u00d7192 complete circular lotus crest and motto, inspected locally.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval and native local image inspection; original retained unchanged.",
+          "proposedPublicId": "studentstraffic/universities/sdnb-vaishnav-college-for-women-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/sdnb-vaishnav-college-for-women-chennai/crest.png",
+          "sha256": "d2781136b98c172899a450eb35edaecbe474fa371d2ad5c2fec95497a0bfb40c",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.sdnbvc.edu.in/wp-content/uploads/2023/10/clg.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.sdnbvc.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus photograph; no open licence or ownership transfer asserted.",
+          "altText": "SDNB Vaishnav College campus building in Chromepet, Chennai",
+          "visualCheck": "Native1640\u00d7924 official photograph of named cream campus facade, palms and courtyard. Existing publisher-added bottom identity/affiliation/NAAC overlay is part of the original photograph, not a separate public accreditation claim; no independent NAAC badge asserted.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval and native local image inspection; original retained unchanged.",
+          "proposedPublicId": "studentstraffic/universities/sdnb-vaishnav-college-for-women-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/sdnb-vaishnav-college-for-women-chennai/campus.jpg",
+          "sha256": "c87fc5e37a1881ed4de2a7243579b0f6808839e7c90a6682e801edb8e9d17460",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "central-university-of-tamil-nadu",
+      "universityName": "Central University of Tamil Nadu",
+      "sourceBatch": "codex-root-cutn-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://cutn.ac.in/wp-content/uploads/2023/09/live-new-logo.png",
+          "sourceType": "official",
+          "rightsBasis": "Official university website image used for institutional identification and authentic campus context; original retained with checksum. No open licence or transfer of ownership claimed.",
+          "proposedPublicId": "studentstraffic/universities/central-university-of-tamil-nadu/logo-20261025",
+          "altText": "Central University of Tamil Nadu complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/cutn-20261025/media-logo-crest.png",
+          "sha256": "9f6b1d497873ea2c8fb9ef642af19e87747a33ccfc1a1a5edf4bd012b8d49b2c",
+          "width": 123,
+          "height": 165,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Lossless crop x0 y0 width123 height165 from the full official logo-current.png; no recolouring, resizing or synthetic content.",
+          "visualReview": "Complete crest / authentic library photograph reviewed locally on25October2026.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/cutn-20261025/logo-current.png",
+          "originalDocumentSha256": "35bbd57a1215e705322fff171fa18633bee59117ecc80a613c1c58bde0f27b8d"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://cutn.ac.in/wp-content/uploads/2023/08/Library_img_2.jpg",
+          "sourceType": "official",
+          "rightsBasis": "Official university website image used for institutional identification and authentic campus context; original retained with checksum. No open licence or transfer of ownership claimed.",
+          "proposedPublicId": "studentstraffic/universities/central-university-of-tamil-nadu/cover-20261025",
+          "altText": "Students reading and studying in the Central University of Tamil Nadu library",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/cutn-20261025/library2.jpg",
+          "sha256": "5ab8fdc18c05ff60795f6985541ab8df0b10c81eae6f9517d24184a77b231b3f",
+          "width": 600,
+          "height": 400,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original official library photograph; no edits or current-year implication.",
+          "visualReview": "Complete crest / authentic library photograph reviewed locally on25October2026."
+        }
+      ],
+      "migrationId": "0250-india-central-university-of-tamil-nadu"
+    }
+  ]
+}

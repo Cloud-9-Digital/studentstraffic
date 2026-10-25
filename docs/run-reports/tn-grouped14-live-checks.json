@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/rkmvc-b-a-economics-day",
+    "kind": "programme",
+    "slug": "rkmvc-b-a-economics-day",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Economics at Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/rkmvc-m-a-economics-day",
+    "kind": "programme",
+    "slug": "rkmvc-m-a-economics-day",
+    "status": 200,
+    "h1": "Master&#x27;s Economics at Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-a-tamil-pachaiyappas-college-chennai",
+    "kind": "programme",
+    "slug": "b-a-tamil-pachaiyappas-college-chennai",
+    "status": 200,
+    "h1": "B.A. Languages at Pachaiyappa&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/pachaiyappas-college-chennai",
+    "kind": "university",
+    "slug": "pachaiyappas-college-chennai",
+    "status": 200,
+    "h1": "Pachaiyappa&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/m-a-tamizhiyal-pachaiyappas-college-chennai",
+    "kind": "programme",
+    "slug": "m-a-tamizhiyal-pachaiyappas-college-chennai",
+    "status": 200,
+    "h1": "M.A. Linguistics at Pachaiyappa&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/gri-m-a-english-and-communicative-studies",
+    "kind": "programme",
+    "slug": "gri-m-a-english-and-communicative-studies",
+    "status": 200,
+    "h1": "M.A. English at The Gandhigram Rural Institute",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/gri-m-sc-home-science-extension-and-communication",
+    "kind": "programme",
+    "slug": "gri-m-sc-home-science-extension-and-communication",
+    "status": 200,
+    "h1": "Master&#x27;s Home Science at The Gandhigram Rural Institute",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/ramakrishna-mission-vivekananda-college-chennai",
+    "kind": "university",
+    "slug": "ramakrishna-mission-vivekananda-college-chennai",
+    "status": 200,
+    "h1": "Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/gandhigram-rural-institute",
+    "kind": "university",
+    "slug": "gandhigram-rural-institute",
+    "status": 200,
+    "h1": "The Gandhigram Rural Institute",
+    "pass": true
+  }
+]

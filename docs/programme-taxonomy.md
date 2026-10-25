@@ -318,3 +318,7 @@ eligible for an engineering master's.
 
 
 `bachelor-vocational-studies` covers Bachelor of Vocation (B.Voc.) awards. These combine occupation-specific practical training, applied study and workplace skills. The offering retains its exact sector and programme duration. This vocational bachelor family does not turn a B.Voc. in food processing, renewable energy or design into a science or engineering degree.
+
+## Social Entrepreneurship
+
+`master-social-entrepreneurship` is the neutral academic master's family for social entrepreneurship, including MA awards. It covers social-enterprise development, community and social-impact analysis, venture models, research and practical enterprise work as applicable to the curriculum. It is distinct from `mba-entrepreneurship`; MA titles must not acquire an MBA label or an alias implying a business-administration award. Exact institutional title, qualification, language, duration and fee scope stay on the offering. No venture success, funding or employment outcome is implied.
