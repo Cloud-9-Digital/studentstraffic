@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "thiruvalluvar-university",
+      "universityName": "Thiruvalluvar University",
+      "sourceBatch": "codex-thiruvalluvar-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://tvu.pspl.world/public/website/images/logo/TVU-logo-only.png",
+          "sourceType": "institution-website-mirror",
+          "rightsBasis": "Public university redesign/mirror assets, corroborated institutional crest and named campus building. Institutional identification/campus context only; full originals retained. No open licence, synthetic generation or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/thiruvalluvar-university/logo-20261025",
+          "altText": "Thiruvalluvar University complete institutional crest",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/thiruvalluvar-university-20261025/logo.png",
+          "sha256": "c49b7b63370a010b55f46cbd9d06586dfd53ac7263d9a73338617228621016e1",
+          "width": 872,
+          "height": 852,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original image, no edits/upscaling; crest matches institutional brochure and building carries university Tamil name.",
+          "visualReview": "Actual local full image reviewed; authentic complete crest / campus building, no current-year implication."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://tvu.pspl.world/public/website/images/Banner/Web-banner-1.png",
+          "sourceType": "institution-website-mirror",
+          "rightsBasis": "Public university redesign/mirror assets, corroborated institutional crest and named campus building. Institutional identification/campus context only; full originals retained. No open licence, synthetic generation or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/thiruvalluvar-university/cover-20261025",
+          "altText": "Thiruvalluvar University campus administration building in Serkkadu, Vellore",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/thiruvalluvar-university-20261025/banner1.png",
+          "sha256": "5512f2fb2ac4b25270e4dcfe38e753f7850499b6b952c79a1d2aa7e398b2e628",
+          "width": 1024,
+          "height": 324,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original image, no edits/upscaling; crest matches institutional brochure and building carries university Tamil name.",
+          "visualReview": "Actual local full image reviewed; authentic complete crest / campus building, no current-year implication."
+        }
+      ],
+      "migrationId": "0263-india-thiruvalluvar-university"
+    },
+    {
+      "universitySlug": "mother-teresa-womens-university",
+      "universityName": "Mother Teresa Women's University",
+      "sourceBatch": "codex-tn-mother-teresa-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://drive.motherteresawomenuniv.ac.in/api/v1/file-entries/13694?shareable_link=828&password=null&thumbnail=",
+          "proposedPublicId": "studentstraffic/universities/mother-teresa-womens-university/logo-20261025",
+          "altText": "Mother Teresa Women’s University complete crest and motto",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or campus marketing asset used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/mother-teresa-20261025/logo.original",
+          "sha256": "5a46cf6b56039c8cae57a6b2dd37d429972879fab77b074b9f2fec2aa63e9900",
+          "notes": "Direct HTTP200 original visibly embedded in current university home; full original visually inspected. No generated image, accreditation overlay or crop.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://drive.motherteresawomenuniv.ac.in/api/v1/file-entries/13697?shareable_link=831&password=null&thumbnail=",
+          "proposedPublicId": "studentstraffic/universities/mother-teresa-womens-university/cover-20261025",
+          "altText": "Administrative block and landscaped garden at Mother Teresa Women’s University, Kodaikanal",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or campus marketing asset used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/mother-teresa-20261025/slide1.original",
+          "sha256": "638f36a539593c69444ba512dfbd18a6568ebea7202ee400a76ae8c0217cfc88",
+          "notes": "Direct HTTP200 original visibly embedded in current university home; full original visually inspected. No generated image, accreditation overlay or crop.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0264-india-mother-teresa-womens-university"
+    },
+    {
+      "universitySlug": "manonmaniam-sundaranar-university",
+      "universityName": "Manonmaniam Sundaranar University",
+      "sourceBatch": "india-tn-universities",
+      "migrationId": "0265-india-manonmaniam-sundaranar-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.msuniv.ac.in/images/admission/PG_Prospectus.pdf",
+          "sourceType": "official",
+          "sourcePage": "https://www.msuniv.ac.in/admissions.php",
+          "rightsBasis": "Official university identifying asset, no open licence claimed; Native170×178 JPEG object26, firstpage of official2026–27PGprospectus, extracted directly with pdfimages -j without editing/reencoding. Complete blue shield, symbolic panels, sun/waves and Tamil motto visually inspected; no additional recognition text.",
+          "verificationMethod": "Native local image visually inspected using view_image; original source retained, checksum verified. Native170×178 JPEG object26, firstpage of official2026–27PGprospectus, extracted directly with pdfimages -j without editing/reencoding. Complete blue shield, symbolic panels, sun/waves and Tamil motto visually inspected; no additional recognition text.",
+          "localPath": "research/india-source-bundles/manonmaniam-sundaranar-university/prospectus-logo-000.jpg",
+          "sha256": "d9bb910d28068ca76a1aae28709527ff088cab3f5eefb6db2fc520998f809192",
+          "width": 170,
+          "height": 178,
+          "altText": "Manonmaniam Sundaranar University crest",
+          "proposedPublicId": "studentstraffic/universities/manonmaniam-sundaranar-university/logo",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.msuniv.ac.in/images/about/5.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://www.msuniv.ac.in/",
+          "rightsBasis": "Official university identifying asset, no open licence claimed; OfficialAboutphotograph, native800×659. Visually inspected universitymemorialpavilion with statue, redbrickbuildings and trees; samepavilion appears in officialhomepagecampuspanorama. No ranking/banner text, no edits.",
+          "verificationMethod": "Native local image visually inspected using view_image; original source retained, checksum verified. OfficialAboutphotograph, native800×659. Visually inspected universitymemorialpavilion with statue, redbrickbuildings and trees; samepavilion appears in officialhomepagecampuspanorama. No ranking/banner text, no edits.",
+          "localPath": "research/india-source-bundles/manonmaniam-sundaranar-university/cover-about.jpg",
+          "sha256": "f5bb01a3fae10bc671a6fc7fbe1274b1ab2aee657830a9bc718f28ad7fef0dd7",
+          "width": 800,
+          "height": 659,
+          "altText": "Manonmaniam Sundaranar memorial pavilion on the university campus",
+          "proposedPublicId": "studentstraffic/universities/manonmaniam-sundaranar-university/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

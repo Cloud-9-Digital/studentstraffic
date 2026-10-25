@@ -1,0 +1,9 @@
+# Mother Teresa Women’s University programme inventory
+
+Reviewed25October2026. Canonical own-campus scope: women’s regular Kodaikanal graduate-entry academic programmes.49 inventory rows,16 supported degrees and33 held or separately scoped current/departmental routes; branches marked Madurai/Chennai, distance, integrated, research and professional pathways are retained separately. Fifteen matching native annual course-fee quotes; regular two-year Sociology has no matching current tariff and remains on request.
+
+Primary sources: current2026–27 campus-coded programme notice, annual course-fee PDF, regular online application portal, named departmental syllabi and current department tables. UGC current state-register entry329 and NAAC own valid-institutions register assessed16November2021 support the precise institutional statuses. Exact URLs and check dates are in0264 payload researchSources/evidence.
+
+Current-linked Computer Science fee-sheet versus undated department tariff is resolved in favour of dated2026–27 central schedule, with conflict retained internally. Named current/historical syllabi are crosschecked per award; no blanket English/marks inference. Tamil conflicting medium, AI incomplete academic detail and unresolved professional approval pathways are held. All intake arrays are empty with omit evidence.
+
+Access limits: one archive host failed TLS validation; its ordinary accessible old-host counterpart was used, with no security bypass. A generic MCom2023 link404 was not replaced by the distinct MComComputerApplications document. Public-share syllabus preview downloads were ordinaryHTTP200. Full sources, unreachable paths and precise programme holds are documented in research/india-source-bundles/mother-teresa-20261025/review.md and its fetch logs. Original crest/admin-block media retained in the reviewed manifest.

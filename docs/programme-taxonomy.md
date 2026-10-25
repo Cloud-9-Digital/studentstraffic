@@ -335,3 +335,10 @@ preserves an exact named-language specialisation such as Tamil on the offering.
 Do not infer exit qualifications, a separate bachelor's award, an English-only
 route or a fixed institutional curriculum from the family. Exact five-year
 structure, campus and qualifying language requirements remain programme facts.
+
+
+### Integrated science, commerce and criminology families
+
+HSC-entry integrated master's awards use distinct `integrated-msc-biological-sciences`, `integrated-msc-chemistry`, `integrated-msc-mathematics`, `integrated-msc-physics`, `integrated-msc-environmental-science`, `integrated-msc-marine-science` and `integrated-mcom` parents. They do not inherit the graduate-entry eligibility or duration of a two-year master's. Exact specialist titles remain on the offering. `master-criminology` covers academic criminology and criminal-justice study, without implying a regulated professional licence. Integrated library awards entered after a bachelor's remain graduate-entry master's offerings rather than HSC-entry integrated routes.
+
+`master-archaeology` identifies postgraduate archaeology awards, keeping material-culture, archaeological-method and heritage study distinct from a generic history degree. Institutional curriculum and fieldwork differ; no heritage employment or professional entitlement is implied.
