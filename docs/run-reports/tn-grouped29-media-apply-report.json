@@ -1,0 +1,27 @@
+{
+  "appliedAt": "2026-10-25T11:18:19.108Z",
+  "uploads": {
+    "attempted": 4,
+    "succeeded": 4,
+    "failed": 0
+  },
+  "database": {
+    "updated": 2,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "sai-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
