@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "st-joseph-university-villupuram",
+    "status": 200,
+    "expectedCount": 17,
+    "actualCount": 17,
+    "offerings": 17,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 8,
+    "actualQuoteLabels": 8,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "chettinad-academy-of-research-and-education",
+    "status": 200,
+    "expectedCount": 23,
+    "actualCount": 23,
+    "offerings": 23,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 1,
+    "actualQuoteLabels": 1,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "national-institute-of-technical-teachers-training-and-research-chennai",
+    "status": 200,
+    "expectedCount": 8,
+    "actualCount": 8,
+    "offerings": 8,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 8,
+    "actualQuoteLabels": 8,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "tamil-nadu-open-university",
+    "status": 200,
+    "expectedCount": 25,
+    "actualCount": 25,
+    "offerings": 25,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 25,
+    "actualQuoteLabels": 25,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

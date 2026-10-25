@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/chettinad-mbbs",
+    "kind": "programme",
+    "slug": "chettinad-mbbs",
+    "status": 200,
+    "h1": "MBBS at Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/chettinad-md-forensic-medicine",
+    "kind": "programme",
+    "slug": "chettinad-md-forensic-medicine",
+    "status": 200,
+    "h1": "MD Forensic Medicine at Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/sju-tindivanam-b-sc-computer-science",
+    "kind": "programme",
+    "slug": "sju-tindivanam-b-sc-computer-science",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at St Joseph University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/chettinad-academy-of-research-and-education",
+    "kind": "university",
+    "slug": "chettinad-academy-of-research-and-education",
+    "status": 200,
+    "h1": "Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/chettinad-md-sports-medicine",
+    "kind": "programme",
+    "slug": "chettinad-md-sports-medicine",
+    "status": 200,
+    "h1": "MD Sports Medicine at Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/st-joseph-university-villupuram",
+    "kind": "university",
+    "slug": "st-joseph-university-villupuram",
+    "status": 200,
+    "h1": "St Joseph University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/national-institute-of-technical-teachers-training-and-research-chennai",
+    "kind": "university",
+    "slug": "national-institute-of-technical-teachers-training-and-research-chennai",
+    "status": 200,
+    "h1": "National Institute of Technical Teachers Training and Research, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/nitttr-chennai-ai-ml",
+    "kind": "programme",
+    "slug": "nitttr-chennai-ai-ml",
+    "status": 200,
+    "h1": "M.E./M.Tech CSE at National Institute of Technical Teachers Training and Research, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tnou-b-a-tamil",
+    "kind": "programme",
+    "slug": "tnou-b-a-tamil",
+    "status": 200,
+    "h1": "B.A. Languages at Tamil Nadu Open University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/tamil-nadu-open-university",
+    "kind": "university",
+    "slug": "tamil-nadu-open-university",
+    "status": 200,
+    "h1": "Tamil Nadu Open University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/nitttr-chennai-education",
+    "kind": "programme",
+    "slug": "nitttr-chennai-education",
+    "status": 200,
+    "h1": "Master&#x27;s Engineering Education at National Institute of Technical Teachers Training and Research, Chennai",
+    "pass": true
+  }
+]

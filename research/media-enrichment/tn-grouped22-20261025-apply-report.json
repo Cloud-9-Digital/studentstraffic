@@ -1,0 +1,39 @@
+{
+  "appliedAt": "2026-10-25T09:06:18.963Z",
+  "uploads": {
+    "attempted": 8,
+    "succeeded": 8,
+    "failed": 0
+  },
+  "database": {
+    "updated": 4,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "st-joseph-university-villupuram",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "chettinad-academy-of-research-and-education",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "national-institute-of-technical-teachers-training-and-research-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "tamil-nadu-open-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
