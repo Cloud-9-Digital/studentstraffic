@@ -1,0 +1,33 @@
+{
+  "appliedAt": "2026-10-25T08:32:10.527Z",
+  "uploads": {
+    "attempted": 6,
+    "succeeded": 6,
+    "failed": 0
+  },
+  "database": {
+    "updated": 3,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "jeppiaar-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "takshashila-university",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "noorul-islam-centre-for-higher-education",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}

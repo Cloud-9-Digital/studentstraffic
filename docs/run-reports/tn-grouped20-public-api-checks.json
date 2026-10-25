@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/amet-university",
+    "status": 200,
+    "slug": "amet-university",
+    "expectedCount": 28,
+    "actualCount": 28,
+    "blankMedium": 0,
+    "recognitionCount": 2,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/jeppiaar-university",
+    "status": 200,
+    "slug": "jeppiaar-university",
+    "expectedCount": 8,
+    "actualCount": 8,
+    "blankMedium": 8,
+    "recognitionCount": 1,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/takshashila-university",
+    "status": 200,
+    "slug": "takshashila-university",
+    "expectedCount": 24,
+    "actualCount": 24,
+    "blankMedium": 24,
+    "recognitionCount": 1,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities/noorul-islam-centre-for-higher-education",
+    "status": 200,
+    "slug": "noorul-islam-centre-for-higher-education",
+    "expectedCount": 60,
+    "actualCount": 60,
+    "blankMedium": 1,
+    "recognitionCount": 2,
+    "hasLogo": true,
+    "hasCover": true,
+    "pass": true
+  }
+]

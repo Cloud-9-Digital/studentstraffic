@@ -1,0 +1,66 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/amet-be-marine-eng",
+    "kind": "programme",
+    "slug": "amet-be-marine-eng",
+    "status": 200,
+    "h1": "B.E./B.Tech Marine at Academy of Maritime Education and Training (AMET)",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/jeppiaar-b-sc-computer-science",
+    "kind": "programme",
+    "slug": "jeppiaar-b-sc-computer-science",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Jeppiaar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/jeppiaar-university",
+    "kind": "university",
+    "slug": "jeppiaar-university",
+    "status": 200,
+    "h1": "Jeppiaar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/takshashila-b-com",
+    "kind": "programme",
+    "slug": "takshashila-b-com",
+    "status": 200,
+    "h1": "B.Com at Takshashila University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/takshashila-university",
+    "kind": "university",
+    "slug": "takshashila-university",
+    "status": 200,
+    "h1": "Takshashila University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/niche-b-e-aeronautical-engineering",
+    "kind": "programme",
+    "slug": "niche-b-e-aeronautical-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Aerospace at Noorul Islam Centre for Higher Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/noorul-islam-centre-for-higher-education",
+    "kind": "university",
+    "slug": "noorul-islam-centre-for-higher-education",
+    "status": 200,
+    "h1": "Noorul Islam Centre for Higher Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/amet-university",
+    "kind": "university",
+    "slug": "amet-university",
+    "status": 200,
+    "h1": "Academy of Maritime Education and Training (AMET)",
+    "pass": true
+  }
+]
