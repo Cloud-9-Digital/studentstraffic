@@ -1,0 +1,905 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mph",
+      "name": "Master of Public Health",
+      "shortName": "MPH",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "public-health",
+      "aliases": [
+        "M.P.H.",
+        "MSc Public Health"
+      ],
+      "displayOrder": 300,
+      "durationYears": 2,
+      "summary": "Public health master’s programmes examine population health, prevention, epidemiological methods, health systems and research. Universities may use MPH or MSc award titles, with different qualifying-degree requirements and curricula. Compare the exact degree, supervision, delivery arrangements and costs.",
+      "metaTitle": "MPH: Compare Entry and Fees",
+      "metaDescription": "Compare MPH programmes by qualifying subjects or degree, selection, duration, campus, practical study and complete fees."
+    },
+    {
+      "slug": "msc-epidemiology",
+      "name": "M.Sc. in Epidemiology",
+      "shortName": "M.Sc. Epidemiology",
+      "stream": "public-health-allied-health",
+      "level": "masters",
+      "discipline": "epidemiology",
+      "aliases": [
+        "Master of Science in Epidemiology",
+        "MSc Epidemiology"
+      ],
+      "displayOrder": 310,
+      "durationYears": 2,
+      "summary": "M.Sc. in Epidemiology examines disease patterns in populations, epidemiological study design and the interpretation of health data. Curricula may include surveillance, statistical methods, field investigation and research projects. Specific entry qualifications and research arrangements vary by university.",
+      "metaTitle": "M.Sc. Epidemiology Programmes | Students Traffic",
+      "metaDescription": "Compare M.Sc. Epidemiology programmes, entry requirements, curriculum, delivery arrangements and published fees before applying."
+    },
+    {
+      "slug": "msc-statistics",
+      "name": "M.Sc. in Statistics",
+      "shortName": "M.Sc. Statistics",
+      "stream": "mathematics-statistics",
+      "level": "masters",
+      "discipline": "statistics",
+      "aliases": [
+        "Master of Science in Statistics",
+        "MSc Statistics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "Compare statistics master's degrees abroad by probability, inference, modelling, computation, research and applied projects, with tuition, prerequisite mathematics and admissions requirements. Verify whether each university offers a standalone master's route or a doctoral pathway.",
+      "metaTitle": "M.Sc. Statistics Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Statistics programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "pg-diploma-journalism",
+      "name": "Postgraduate Diploma in Journalism",
+      "shortName": "PG Diploma Journalism",
+      "stream": "media-communication",
+      "level": "postgraduate-diploma",
+      "discipline": "journalism",
+      "aliases": [
+        "Post Graduate Diploma in Journalism",
+        "PG Diploma in Medical Journalism",
+        "PG Diploma in Public Health Journalism"
+      ],
+      "displayOrder": 311,
+      "durationYears": 1,
+      "summary": "Postgraduate Diploma in Journalism programmes develop reporting, interviewing, writing and editorial judgement. Specialised routes may examine health communication, evidence appraisal and the ethical reporting of medical information. This is a communication qualification; it does not confer a licence to practise medicine.",
+      "metaTitle": "PG Diploma Journalism Programmes | Students Traffic",
+      "metaDescription": "Compare PG Diploma Journalism programmes, entry requirements, curriculum, delivery arrangements and published fees before applying."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "the-tamil-nadu-dr-mgr-medical-university",
+      "name": "The Tamil Nadu Dr. M.G.R. Medical University",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 1987,
+      "officialWebsite": "https://www.tnmgrmu.ac.in/",
+      "mediaAttribution": {},
+      "summary": "The Tamil Nadu Dr. M.G.R. Medical University is a state health-sciences university established under the 1987 Act and functioning since July 1988. Alongside its affiliating role, its own Department of Epidemiology at Guindy in Chennai conducts postgraduate study in public health, epidemiology, biostatistics and medical journalism.",
+      "campusLifestyle": "The university’s own Guindy department brings together postgraduate study and health research. The Department of Epidemiology describes a first year of coursework and research training followed by thesis work for its Epidemiology MSc. Academic activity, departmental assessment and supervision depend on the exact degree. These university-taught routes are separate from programmes delivered by affiliated medical and allied-health colleges across Tamil Nadu.",
+      "cityProfile": "The university is at 69, Anna Salai, Guindy, Chennai 600032. Applicants should use the Department of Epidemiology address and current university instructions for these courses. Chennai offers a large urban health and research environment, but admission does not establish a hospital appointment, clinical placement or access to every affiliated institution.",
+      "practicalExposure": "Public health and epidemiology study involves population-health questions and research methods; biostatistics focuses on the analysis of health data. The department describes dissertation work within its Epidemiology MSc. Medical journalism concerns the communication of health information. These academic awards do not independently confer a medical licence, specialist registration or guaranteed employment.",
+      "hostelOverview": "Obtain current accommodation information directly from the university before arranging a move to Chennai. The university lists an auditorium and guest-house facility, but that listing does not establish a student hostel entitlement or an accommodation charge for these programmes. Confirm availability, eligibility, location and payment terms separately.",
+      "dietarySupport": "Ask the university about current food facilities near the teaching department and any arrangements linked to accommodation. Plan meals around the actual academic timetable and communicate dietary or accessibility requirements in advance. A tuition or application payment should not be assumed to include meals.",
+      "safetyOverview": "Use the university’s official website and departmental contacts to confirm admissions, teaching arrangements and payments. Keep copies of submitted applications and official receipts, verify the exact beneficiary before a transfer, and obtain local emergency and campus contact information before attending. Admission to a university programme does not imply access to clinical work beyond its stated academic scope.",
+      "studentSupport": "The university provides a regional medical library, virtual-library links, examination services and departmental contacts. Application forms request qualification records and provide an eligibility-certificate route for candidates from other universities. Obtain the next cohort’s document checklist and confirm any equivalent or foreign qualification before payment.",
+      "whyChoose": [
+        "Direct university-department postgraduate routes are identified separately from the affiliated-college catalogue.",
+        "The current admission notice states precise prior-degree routes for each named programme.",
+        "Health research, statistical analysis and health communication offer distinct academic study options."
+      ],
+      "thingsToConsider": [
+        "The 2026–27 application deadlines have passed; future applicants need the next official notice.",
+        "Current tuition and compulsory programme charges require a departmental quotation.",
+        "These qualifications do not themselves authorise medical practice or specialist clinical registration."
+      ],
+      "bestFitFor": [
+        "Applicants meeting the precise qualifying-degree conditions for the selected award.",
+        "Graduates seeking population-health research, statistical or health-communication study.",
+        "Students who can attend the university’s required teaching, assessments and research activities in Chennai."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC state-university register: Section 2(f) and 12B"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC current state-university register, institution ID399",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Own university 2026–27 revised department admission notice",
+          "url": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current MSc application and document requirements",
+          "url": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current Medical Journalism diploma application",
+          "url": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/ApplicationformPostGraduateDipMedicalJournalism2026-27revised.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Own Department of Epidemiology academics",
+          "url": "https://www.tnmgrmu.ac.in/departments/epidemiology/academics/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC current state-university register ID399",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University history and 1987 Act",
+          "url": "https://www.tnmgrmu.ac.in/the-university/about-the-university/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "MSc Public Health regulations, dated2019 and currently linked",
+          "url": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/msc-publichealth-regul-19122019.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "scope": "Own Department of Epidemiology academic programmes at Guindy, Chennai; affiliated-college courses and professional clinical training are separate."
+      },
+      "faq": [
+        {
+          "question": "Are these courses taught directly by the university?",
+          "answer": "The current 2026–27 notice identifies the Department of Epidemiology of The Tamil Nadu Dr. M.G.R. Medical University as conducting these four programmes. They are distinct from the extensive courses offered by the university’s affiliated colleges."
+        },
+        {
+          "question": "Which MSc Public Health qualifications are accepted?",
+          "answer": "The current notice lists full-time recognised BSc routes in specified life-science, statistical and related subjects, named health and allied-health bachelor degrees, and BE Civil. The exact degree title matters; applicants should obtain a university assessment of equivalent qualifications."
+        },
+        {
+          "question": "Can any science graduate apply for MSc Epidemiology?",
+          "answer": "The notice gives a specific list of medical, health and postgraduate qualifications. It includes MBBS, BDS, AYUSH, BVSc, MPT, MOT and MPharm, along with named MSc degrees. It does not list a generic BSc route."
+        },
+        {
+          "question": "What does MSc Biostatistics require?",
+          "answer": "The qualifying degree must have Statistics as the main branch or as an ancillary or allied subject. The notice does not replace this degree-level condition with school-level Mathematics or Statistics."
+        },
+        {
+          "question": "Who may apply for Medical Journalism?",
+          "answer": "The current notice accepts a recognised undergraduate degree obtained full-time in the 10+2+3–5-year pattern. It states no upper age limit, encourages Tamil journalists and allows service candidates. This is a journalism qualification, not a medical-practice licence."
+        },
+        {
+          "question": "Is admission currently open?",
+          "answer": "The revised 2026–27 notice set 28 June 2026 for the diploma and 29 August 2026 for the MSc applications. Those dates have passed. Future applicants should wait for the next official departmental announcement and confirm available seats and selection arrangements."
+        },
+        {
+          "question": "What is the programme fee?",
+          "answer": "A current isolated tuition tariff for these own-department routes is not established here. Request the full course-specific quotation, compulsory charges and refund terms from the department. The published ₹885 is an application or processing charge, not tuition."
+        },
+        {
+          "question": "Which documents are required?",
+          "answer": "The current forms request a photograph, birth-date and community proof, and academic qualification details. The MSc form also asks for professional registration where applicable and eligibility/migration certificates for candidates from other universities. Follow the next cycle’s exact checklist."
+        },
+        {
+          "question": "What language and timetable should I expect?",
+          "answer": "The currently linked 2019 MSc Public Health regulation specifies English instruction and examinations. Confirm current arrangements for the other named courses directly. The Medical Journalism predecessor regulation describes periodic contact classes; obtain the timetable for the current renamed award rather than assuming daily full-time classes."
+        },
+        {
+          "question": "Can a foreign qualification be used?",
+          "answer": "The published routes list recognised prior qualifications but do not establish an unrestricted international admission route. Obtain a written university assessment of degree equivalence, eligibility documentation, applicant category, attendance requirements and charges before relying on an offer."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "tnmgrmu-m-sc-public-health",
+          "canonicalCourseSlug": "mph",
+          "officialTitle": "M.Sc. Public Health",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the exact recognised prior-degree conditions in the current department notice"
+            ],
+            "restrictions": [
+              "Equivalent or foreign qualifications need separate university eligibility assessment.",
+              "These are own Guindy department routes; affiliated-college admission conditions and tariffs are not substituted."
+            ],
+            "notes": "The notice does not establish unrestricted foreign eligibility or a medical-practice qualification.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Public Health is a 2-year own-department academic programme in the university’s revised 2026–27 admission notice. Prior-degree requirements differ from those of the other MSc routes.",
+            "eligibility": {
+              "intro": "The current 2026–27 department notice states these named qualification conditions.",
+              "items": [
+                "A full-time recognised BSc in Life Sciences (including Food Technology or Dairy), Statistics, Nutrition, Social Work, Communications or equivalent.",
+                "Alternatively, a health/health-related bachelor’s degree: MBBS, BDS, AYUSH (BAMS, BUMS, BSMS, BNYS, BHMS), Veterinary, Nursing, Physiotherapy, Occupational Therapy or Pharmacy; BE Civil is also listed."
+              ]
+            },
+            "applicationSteps": [
+              "Follow the next official Department of Epidemiology admission notice; the published 2026–27 deadlines have passed.",
+              "Complete the prescribed course-specific university application and supply the requested qualification and identity records.",
+              "Follow the department’s entrance, screening or interview instructions and obtain written eligibility, fee and teaching-arrangement confirmation before payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records requested in the prescribed form.",
+                "Eligibility and migration certificates for candidates from other universities; professional registration where applicable, as requested in the MSc form."
+              ],
+              "application": [
+                "Photograph, birth-date and community proof, and application-payment details as requested in the current form."
+              ]
+            },
+            "deadlinesNote": "The 2026–27 diploma deadline was 28 June 2026 and the MSc deadline was 29 August 2026. Future applicants need the next official notice. No exact current first-teaching month is assigned."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Own university department programme",
+              "language": "English",
+              "details": "2-year academic award. Obtain the current departmental teaching and assessment timetable."
+            }
+          ],
+          "medium": "English",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees.",
+          "mediumNote": "The currently linked MSc Public Health regulation dated 2019 explicitly requires English instruction and examinations; current named degree continuation is confirmed in 2026–27."
+        },
+        {
+          "slug": "tnmgrmu-m-sc-epidemiology",
+          "canonicalCourseSlug": "msc-epidemiology",
+          "officialTitle": "M.Sc. Epidemiology",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the exact recognised prior-degree conditions in the current department notice"
+            ],
+            "restrictions": [
+              "Equivalent or foreign qualifications need separate university eligibility assessment.",
+              "These are own Guindy department routes; affiliated-college admission conditions and tariffs are not substituted."
+            ],
+            "notes": "The notice does not establish unrestricted foreign eligibility or a medical-practice qualification.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Epidemiology is a 2-year own-department academic programme in the university’s revised 2026–27 admission notice. Prior-degree requirements differ from those of the other MSc routes.",
+            "eligibility": {
+              "intro": "The current 2026–27 department notice states these named qualification conditions.",
+              "items": [
+                "MBBS, BDS, AYUSH, BVSc, MPT, MOT or MPharm.",
+                "Alternatively, MSc Nursing, Biostatistics, Statistics, Nutrition, Biochemistry, Physiology, Anatomy, Pharmacology or Microbiology."
+              ]
+            },
+            "applicationSteps": [
+              "Follow the next official Department of Epidemiology admission notice; the published 2026–27 deadlines have passed.",
+              "Complete the prescribed course-specific university application and supply the requested qualification and identity records.",
+              "Follow the department’s entrance, screening or interview instructions and obtain written eligibility, fee and teaching-arrangement confirmation before payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records requested in the prescribed form.",
+                "Eligibility and migration certificates for candidates from other universities; professional registration where applicable, as requested in the MSc form."
+              ],
+              "application": [
+                "Photograph, birth-date and community proof, and application-payment details as requested in the current form."
+              ]
+            },
+            "deadlinesNote": "The 2026–27 diploma deadline was 28 June 2026 and the MSc deadline was 29 August 2026. Future applicants need the next official notice. No exact current first-teaching month is assigned."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Own university department programme",
+              "language": "",
+              "details": "2-year academic award. Obtain the current departmental teaching and assessment timetable."
+            }
+          ],
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+        },
+        {
+          "slug": "tnmgrmu-m-sc-biostatistics",
+          "canonicalCourseSlug": "msc-statistics",
+          "officialTitle": "M.Sc. Biostatistics",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the exact recognised prior-degree conditions in the current department notice"
+            ],
+            "restrictions": [
+              "Equivalent or foreign qualifications need separate university eligibility assessment.",
+              "These are own Guindy department routes; affiliated-college admission conditions and tariffs are not substituted."
+            ],
+            "notes": "The notice does not establish unrestricted foreign eligibility or a medical-practice qualification.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Biostatistics is a 2-year own-department academic programme in the university’s revised 2026–27 admission notice. Prior-degree requirements differ from those of the other MSc routes.",
+            "eligibility": {
+              "intro": "The current 2026–27 department notice states these named qualification conditions.",
+              "items": [
+                "A degree with Statistics as the main branch, or a degree in any subject with Statistics as an ancillary or allied subject."
+              ]
+            },
+            "applicationSteps": [
+              "Follow the next official Department of Epidemiology admission notice; the published 2026–27 deadlines have passed.",
+              "Complete the prescribed course-specific university application and supply the requested qualification and identity records.",
+              "Follow the department’s entrance, screening or interview instructions and obtain written eligibility, fee and teaching-arrangement confirmation before payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records requested in the prescribed form.",
+                "Eligibility and migration certificates for candidates from other universities; professional registration where applicable, as requested in the MSc form."
+              ],
+              "application": [
+                "Photograph, birth-date and community proof, and application-payment details as requested in the current form."
+              ]
+            },
+            "deadlinesNote": "The 2026–27 diploma deadline was 28 June 2026 and the MSc deadline was 29 August 2026. Future applicants need the next official notice. No exact current first-teaching month is assigned."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Own university department programme",
+              "language": "",
+              "details": "2-year academic award. Obtain the current departmental teaching and assessment timetable."
+            }
+          ],
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+        },
+        {
+          "slug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+          "canonicalCourseSlug": "pg-diploma-journalism",
+          "officialTitle": "Post Graduate Diploma in Medical Journalism",
+          "durationYears": 1,
+          "officialProgramUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the exact recognised prior-degree conditions in the current department notice"
+            ],
+            "restrictions": [
+              "Equivalent or foreign qualifications need separate university eligibility assessment.",
+              "These are own Guindy department routes; affiliated-college admission conditions and tariffs are not substituted."
+            ],
+            "notes": "The notice does not establish unrestricted foreign eligibility or a medical-practice qualification.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf"
+          },
+          "admissionsContent": {
+            "overview": "Post Graduate Diploma in Medical Journalism is a 1-year own-department academic programme in the university’s revised 2026–27 admission notice. The department previously used Public Health Journalism for the diploma; confirm the current Medical Journalism timetable and award wording on the offer.",
+            "eligibility": {
+              "intro": "The current 2026–27 department notice states these named qualification conditions.",
+              "items": [
+                "Any undergraduate degree from a recognised university acquired as a full-time student in the 10+2+3–5-year pattern.",
+                "No upper age limit. Tamil journalists are encouraged to apply; service candidates may also apply."
+              ]
+            },
+            "applicationSteps": [
+              "Follow the next official Department of Epidemiology admission notice; the published 2026–27 deadlines have passed.",
+              "Complete the prescribed course-specific university application and supply the requested qualification and identity records.",
+              "Follow the department’s entrance, screening or interview instructions and obtain written eligibility, fee and teaching-arrangement confirmation before payment."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Qualifying degree and academic records requested in the prescribed form."
+              ],
+              "application": [
+                "Photograph, birth-date and community proof, and application-payment details as requested in the current form."
+              ]
+            },
+            "deadlinesNote": "The 2026–27 diploma deadline was 28 June 2026 and the MSc deadline was 29 August 2026. Future applicants need the next official notice. No exact current first-teaching month is assigned."
+          },
+          "teachingPhases": [
+            {
+              "phase": "Own university department programme",
+              "language": "",
+              "details": "1-year academic award. Obtain the current departmental teaching and assessment timetable. The predecessor journalism diploma regulation describes periodic contact classes."
+            }
+          ],
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current department quotation for tuition, compulsory programme charges and refund terms. The published ₹885 application/processing charge is separate from course fees."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Public Health own Department of Epidemiology current 2026–27 award.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Public Health: 2 years in current department admission notice.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "eligibility",
+      "claimText": "A full-time recognised BSc in Life Sciences (including Food Technology or Dairy), Statistics, Nutrition, Social Work, Communications or equivalent. Alternatively, a health/health-related bachelor’s degree: MBBS, BDS, AYUSH (BAMS, BUMS, BSMS, BNYS, BHMS), Veterinary, Nursing, Physiotherapy, Occupational Therapy or Pharmacy; BE Civil is also listed.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 revised deadline passed; prescribed application and departmental selection process, next cycle notice required.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "intake",
+      "claimText": "No current exact first-teaching date established; session labels and historical commencement are not assigned as current intake months.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "medium",
+      "claimText": "English instruction and examinations explicit in dated2019 named MSc Public Health regulation, currently linked and degree continued2026–27.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/msc-publichealth-regul-19122019.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "fee",
+      "claimText": "₹885 application/processing charge is not tuition; exact current own-department course tariff unconfirmed after bounded official and secondary check.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-public-health",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Epidemiology own Department of Epidemiology current 2026–27 award.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Epidemiology: 2 years in current department admission notice.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "eligibility",
+      "claimText": "MBBS, BDS, AYUSH, BVSc, MPT, MOT or MPharm. Alternatively, MSc Nursing, Biostatistics, Statistics, Nutrition, Biochemistry, Physiology, Anatomy, Pharmacology or Microbiology.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 revised deadline passed; prescribed application and departmental selection process, next cycle notice required.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "intake",
+      "claimText": "No current exact first-teaching date established; session labels and historical commencement are not assigned as current intake months.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "medium",
+      "claimText": "Current named degree established, but exact current instruction language for this award not confirmed; field omitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "fee",
+      "claimText": "₹885 application/processing charge is not tuition; exact current own-department course tariff unconfirmed after bounded official and secondary check.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-epidemiology",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Biostatistics own Department of Epidemiology current 2026–27 award.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Biostatistics: 2 years in current department admission notice.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "eligibility",
+      "claimText": "A degree with Statistics as the main branch, or a degree in any subject with Statistics as an ancillary or allied subject.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 revised deadline passed; prescribed application and departmental selection process, next cycle notice required.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "intake",
+      "claimText": "No current exact first-teaching date established; session labels and historical commencement are not assigned as current intake months.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "medium",
+      "claimText": "Current named degree established, but exact current instruction language for this award not confirmed; field omitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "fee",
+      "claimText": "₹885 application/processing charge is not tuition; exact current own-department course tariff unconfirmed after bounded official and secondary check.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/MSc-PublicHealthBiostatEpidemiology-Application-Form-2026-2027.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-m-sc-biostatistics",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "officialTitle",
+      "claimText": "Post Graduate Diploma in Medical Journalism own Department of Epidemiology current 2026–27 award.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "duration",
+      "claimText": "Post Graduate Diploma in Medical Journalism: 1 years in current department admission notice.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "eligibility",
+      "claimText": "Any undergraduate degree from a recognised university acquired as a full-time student in the 10+2+3–5-year pattern. No upper age limit. Tamil journalists are encouraged to apply; service candidates may also apply.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "admissions",
+      "claimText": "2026–27 revised deadline passed; prescribed application and departmental selection process, next cycle notice required.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/ApplicationformPostGraduateDipMedicalJournalism2026-27revised.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "intake",
+      "claimText": "No current exact first-teaching date established; session labels and historical commencement are not assigned as current intake months.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "medium",
+      "claimText": "Current named degree established, but exact current instruction language for this award not confirmed; field omitted.",
+      "status": "omit",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "fee",
+      "claimText": "₹885 application/processing charge is not tuition; exact current own-department course tariff unconfirmed after bounded official and secondary check.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/ApplicationformPostGraduateDipMedicalJournalism2026-27revised.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "tnmgrmu-post-graduate-diploma-in-medical-journalism",
+      "internalNotes": "Current notice takes precedence over older regulation entry/session. Journalism historical PublicHealthJournalism alias and diploma current MedicalJournalism reconciled by same department/one-year/eight-seat unique route; no second diploma invented. Unknown medium not inferred from country or journalist language."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "identity",
+      "claimText": "1987Act statutory state medical university, functioningJuly1988,69AnnaSalaiGuindyChennai; distinctMGRERI andaffiliates.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/the-university/about-the-university/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "recognition",
+      "claimText": "UGCcurrentstate registerID399 exactname/domain/Guindyaddress:2(f)&12B. No programmeprofessionalapproval claimed from this listing.",
+      "status": "verified",
+      "sourceLabel": "UGC own state-university register",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "admissions",
+      "claimText": "Own2026–27reviseddepartmentnotice explicitlyconducts threeMSc andonePGdiploma; deadlinespassed.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/EpidemiologyRevAdmissionNotification2026-27.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "publicField": "studentSupport",
+      "claimText": "Ownuniversityregionalmedicallibrary, virtualresources anddepartmentalapplication/eligibilityroutes; guesthouselistingdoesnotprove studenthostelentitlement.",
+      "status": "verified",
+      "sourceLabel": "Tamil Nadu Dr MGR Medical University official source",
+      "sourceUrl": "https://www.tnmgrmu.ac.in/facilities/library/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

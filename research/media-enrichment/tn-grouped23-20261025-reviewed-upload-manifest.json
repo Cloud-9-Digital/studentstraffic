@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "vinayaka-missions-research-foundation",
+      "universityName": "Vinayaka Mission\u2019s Research Foundation",
+      "sourceBatch": "codex-vmrf-salem-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.vmrfdu.edu.in/img/vmrfdu.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine Salem campus context. No open licence or ownership transfer is claimed.",
+          "proposedPublicId": "studentstraffic/universities/vinayaka-missions-research-foundation/logo-20261025",
+          "altText": "Vinayaka Mission\u2019s Research Foundation complete institutional seal and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/vmrf-salem-20261025/logo-header.jpg",
+          "sha256": "f40f1a1d03637eef31b435c84e341d878fc167cd13174ebc672175cc41b60f93",
+          "width": 2082,
+          "height": 560,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native institution-hosted original; no crop, upscale or reconstruction.",
+          "visualReview": "Full original reviewed by research worker and root integrator. Logo retains complete seal and legal wordmark. Cover is a genuine Salem building night aerial, not a claim about every constituent campus or a dated current cohort."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.vmrfdu.edu.in/img/home_gallery/college.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Institution-published original retained for university identification and genuine Salem campus context. No open licence or ownership transfer is claimed.",
+          "proposedPublicId": "studentstraffic/universities/vinayaka-missions-research-foundation/cover-20261025",
+          "altText": "Night aerial view of the domed VMRF university building at Salem",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/vmrf-salem-20261025/college.jpg",
+          "sha256": "4fccb78b602cc248be9138bf7f8a27f3fe7dd1e7b322f6dae567b74fa8f0515f",
+          "width": 2677,
+          "height": 1800,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Full native institution-hosted original; no crop, upscale or reconstruction.",
+          "visualReview": "Full original reviewed by research worker and root integrator. Logo retains complete seal and legal wordmark. Cover is a genuine Salem building night aerial, not a claim about every constituent campus or a dated current cohort."
+        }
+      ],
+      "migrationId": "0286-india-vinayaka-missions-research-foundation"
+    },
+    {
+      "universitySlug": "the-tamil-nadu-dr-mgr-medical-university",
+      "universityName": "The Tamil Nadu Dr. M.G.R. Medical University",
+      "sourceBatch": "codex-tn-mgr-medical-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2025/12/logo.png",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and campus photograph used for factual identification and illustration; no transfer of ownership or licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/the-tamil-nadu-dr-mgr-medical-university/logo-20261025",
+          "altText": "The Tamil Nadu Dr. M.G.R. Medical University complete official crest and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/mgr-medical-20261025/logo.png",
+          "sha256": "f748412e15cac704ca0cede2814a6c32ef2a3ac1ef1e24115e8b4dd2ff6c97fa",
+          "notes": "NormalHTTPS200completeoriginal, visuallychecked. Fullsourceasset, no crop/upscale/generation.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnmgrmu.ac.in/wp-content/uploads/2026/07/menu-img-03.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official university identity and campus photograph used for factual identification and illustration; no transfer of ownership or licence claimed.",
+          "proposedPublicId": "studentstraffic/universities/the-tamil-nadu-dr-mgr-medical-university/cover-20261025",
+          "altText": "The Tamil Nadu Dr. M.G.R. Medical University Guindy building and landscaped entrance",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/mgr-medical-20261025/cover.webp",
+          "sha256": "fab4c2418876e36cf4a86ab8408dc92871ad4987bb9a8f628c37d73838904b71",
+          "notes": "NormalHTTPS200completeoriginal, visuallychecked. Fullsourceasset, no crop/upscale/generation.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0288-india-the-tamil-nadu-dr-mgr-medical-university"
+    },
+    {
+      "universitySlug": "rathinam-global",
+      "universityName": "Rathinam Global",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://rathinamglobal.edu.in/assets/images/favicon.png",
+          "sourceType": "official",
+          "sourcePage": "https://rathinamglobal.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Complete1024px native official favicon visually inspected. Orange blue green circles and Rathinam wordmark; no appended NAAC or first-in-state claims.",
+          "localPath": "research/india-source-bundles/rathinam-global-20261025/favicon.png",
+          "sha256": "165102233e860a8610b4523f26dd06f4202e7a39d4827232415578deae59af3f",
+          "width": 1024,
+          "height": 988,
+          "altText": "Rathinam identifying emblem and wordmark",
+          "proposedPublicId": "studentstraffic/universities/rathinam-global/logo",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://rathinamglobal.edu.in/assets/images/life/01.webp",
+          "sourceType": "official",
+          "sourcePage": "https://rathinamglobal.edu.in/",
+          "rightsBasis": "Official university-owned identifying asset; no open licence claimed.",
+          "verificationMethod": "Genuine full official current-homepage campus photograph visually inspected; sports field, academic buildings, road frontage and surrounding neighbourhood visible.",
+          "localPath": "research/india-source-bundles/rathinam-global-20261025/campus-aerial.webp",
+          "sha256": "10124159feb6d7463db8b1d4c6691ce7519c5ff696d2a8f5d408f682ea8a20a8",
+          "width": 800,
+          "height": 655,
+          "altText": "Rathinam Techzone campus at Eachanari, Coimbatore",
+          "proposedPublicId": "studentstraffic/universities/rathinam-global/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0289-india-rathinam-global"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Rathinam Global — 25 October2026
+
+83 current discovery rows (including overlapping coaching/AI pathways and professional umbrella discovery, not 83 unique degree awards). Three coherent current awards supported: BScComputerScience, BComProfessionalAccounting, BComComputerApplications. Current exact HSC-entry/3year6semester headers retained; no inherited former-affiliate qualification policy. CA coaching/AI tracks not duplicated. MComCA HSC-only entry held as wrong-level contradiction. Other current named programmes remain internal enrichment queue.
+
+UGC main UI register uses GET https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4 (public script /Scripts/Pages/unijs.js and hdfunitypeid4). Exact row1441 Rathinam Global, Eachanari641021, Deemed to be Universities, Section-III. Older deemed.ugc list omits new entry; retained own2024proposal is not declaration. Current mandatory disclosure p2 confirms independent university awards, formerly RCAS. University publicly announced transition May2026; stored2026 represents university conversion, not predecessor college foundation.
+
+Programme fees not yet published on exact core pages; no unrelated Bengaluru or former-affiliate fee assigned. Medium/intakes unknown omitted. Original full favicon1024x988 is genuine Rathinam identifier without appended grade/superlative; full aerial800x655 currenthomepage photo inspected. Rejected black video-poster and composite NAAC/rank header logos. NoDB/upload/publication.

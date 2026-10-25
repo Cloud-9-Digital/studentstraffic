@@ -377,3 +377,14 @@ HSC-entry integrated master's awards use distinct `integrated-msc-biological-sci
 `md-forensic-medicine` represents the medical MD/residency in Forensic Medicine and Toxicology, requiring a qualifying medical degree. It is distinct from B.Sc./M.Sc. Forensic Science: medico-legal medical practice, forensic pathology and toxicology must not be mapped to an academic laboratory-science award. Exact professional approval and medical registration remain programme-specific.
 
 `master-engineering-education` is a neutral master's family for technical-teacher education, engineering pedagogy, curriculum and educational assessment. Preserve the exact M.Tech or other award in each offering. It is distinct from M.Ed, general teacher licences and engineering-subject specialisations; it conveys no automatic teaching appointment or regulated licence.
+
+### VMRF professional allied awards and transfusion medicine (25 October 2026)
+
+The stable `bsc-allied-health-sciences` and `msc-allied-health-sciences` families use neutral Bachelor's and Master's display names. They retain their existing B.Sc./M.Sc. aliases and also accept verified professional allied-health award titles. The individual offering retains the exact official award and specialty; this does not relabel every professional award as a science degree. B.MLS remains under the distinct Medical Laboratory Science bachelor family, and optometry retains its own parent.
+
+The stable `msc-hospital-administration` family similarly uses Master's in Hospital Administration, retains its science aliases and includes the exact Master of Hospital Administration / MHA award. Degree wording is preserved on each programme.
+
+`md-immunohaematology-transfusion-medicine` is a distinct medicine/residency family for postgraduate medical study of immunohaematology, transfusion testing, blood components and clinical transfusion practice. It is distinct from a general science master's in allied health. The neutral family does not establish any institution's approval or professional registration eligibility.
+
+
+M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for population disease patterns, study design and epidemiological analysis. Postgraduate Diploma in Journalism (`pg-diploma-journalism`) is a distinct diploma-level media family, including named medical/public-health journalism specialisations; it is not a master's degree or a qualification to practise medicine. Exact institutional award titles and prerequisites remain on offerings.

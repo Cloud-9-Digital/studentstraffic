@@ -1,0 +1,732 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 300,
+      "durationYears": 3,
+      "summary": "B.Sc. in Computer Science programmes develop knowledge and practical skills in the chosen discipline through structured academic study. Compare the exact award, subject focus, qualifying degree or school subjects, practical training, duration, campus and complete costs before selecting a programme. Individual universities set their admission and assessment requirements.",
+      "metaTitle": "B.Sc. Computer Science: Compare Entry and Fees",
+      "metaDescription": "Compare B.Sc. Computer Science programmes by qualifying subjects or degree, selection, duration, campus, practical study and complete fees."
+    },
+    {
+      "slug": "bcom",
+      "name": "Bachelor of Commerce",
+      "shortName": "B.Com",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "commerce",
+      "aliases": [
+        "BCom",
+        "Bachelor in Commerce"
+      ],
+      "displayOrder": 300,
+      "durationYears": 3,
+      "summary": "Bachelor of Commerce programmes develop knowledge and practical skills in the chosen discipline through structured academic study. Compare the exact award, subject focus, qualifying degree or school subjects, practical training, duration, campus and complete costs before selecting a programme. Individual universities set their admission and assessment requirements.",
+      "metaTitle": "B.Com: Compare Entry and Fees",
+      "metaDescription": "Compare B.Com programmes by qualifying subjects or degree, selection, duration, campus, practical study and complete fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "rathinam-global",
+      "name": "Rathinam Global",
+      "city": "Coimbatore",
+      "type": "Private",
+      "establishedYear": 2026,
+      "officialWebsite": "https://rathinamglobal.edu.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://rathinamglobal.edu.in/assets/images/favicon.png",
+          "rights": "Official university identifying asset; no open licence claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://rathinamglobal.edu.in/assets/images/life/01.webp",
+          "rights": "Official university campus photograph; no open licence claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Aerial view of Rathinam Techzone campus at Eachanari, Coimbatore"
+        }
+      },
+      "summary": "Rathinam Global is a private deemed-to-be university at Rathinam Techzone in Eachanari, Coimbatore. The institution developed from Rathinam College of Arts and Science and currently advertises undergraduate, postgraduate and research study across commerce, computing, science and other schools. These listings cover three regular undergraduate awards with current programme-specific entry information.",
+      "campusLifestyle": "The Eachanari campus brings academic buildings, sports areas and learning facilities together within Rathinam Techzone. Applicants should confirm the facilities and timetable used by their selected department.",
+      "cityProfile": "Coimbatore is a city in western Tamil Nadu. The university is at Eachanari on Pollachi Road; compare accommodation and daily travel arrangements against the exact teaching location. Check transport costs and the route to the exact department before committing to accommodation.",
+      "practicalExposure": "The published computing and commerce programmes describe practical coursework, projects and software-based learning. Professional accounting offers an optional CA study pathway; the degree does not by itself confer Chartered Accountant status. Confirm current project, laboratory and coaching arrangements with the selected department.",
+      "hostelOverview": "The university publishes hostel information. Confirm room availability, accommodation charges and reporting arrangements directly before accepting a place.",
+      "dietarySupport": "Confirm current meal plans and any dietary requirements with the accommodation office; the programme fee should not be assumed to include meals.",
+      "safetyOverview": "Ask the university about residence access, emergency contacts and support arrangements for the exact campus and accommodation selected.",
+      "studentSupport": "Use the official admissions office for qualification verification, programme selection and current reporting instructions. Ask the department about learning arrangements and available support before confirming a place.",
+      "whyChoose": [
+        "Compare a full-time computing degree with two commerce awards at the same Eachanari campus.",
+        "Published programme pages describe six-semester study and the academic entry route.",
+        "Published commerce pages distinguish degree study from optional professional coaching."
+      ],
+      "thingsToConsider": [
+        "Current itemised fees and teaching language require direct confirmation.",
+        "CA coaching and AI-oriented study tracks should be distinguished from the underlying university degree and separate professional examinations.",
+        "Other schools and legacy college programmes require individual current qualification and approval checks."
+      ],
+      "bestFitFor": [
+        "Applicants comparing regular computer-science and commerce study in Coimbatore.",
+        "School leavers seeking full-time six-semester commerce study.",
+        "Applicants who will obtain written confirmation of current fees and programme conditions."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC-listed deemed-to-be university under Section3"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC current university register — Rathinam Global",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where is Rathinam Global?",
+          "answer": "The university is at Rathinam Techzone, Pollachi Road, Eachanari, Coimbatore641021."
+        },
+        {
+          "question": "What is its university status?",
+          "answer": "The UGC current university register lists Rathinam Global as a deemed-to-be university under Section3."
+        },
+        {
+          "question": "Which programmes are included here?",
+          "answer": "B.Sc Computer Science, B.Com Professional Accounting and B.Com Computer Applications are included as three regular full-time undergraduate awards."
+        },
+        {
+          "question": "How long do these degrees take?",
+          "answer": "The current programme pages describe three years and six semesters."
+        },
+        {
+          "question": "What school qualification is required?",
+          "answer": "The listed undergraduate routes require a school-leaving/HSC qualification. Check the exact programme entry conditions and complete university verification."
+        },
+        {
+          "question": "Does the accounting degree confer CA status?",
+          "answer": "No. The Professional Accounting degree offers an optional CA study pathway; professional qualification requires the separate applicable examinations and conditions."
+        },
+        {
+          "question": "What are the fees?",
+          "answer": "Obtain a current written itemised quote for the exact degree and applicant category; a reliable current amount is not established here."
+        },
+        {
+          "question": "Can overseas applicants use these listings?",
+          "answer": "International qualification equivalence and applicant permissions require separate university confirmation. These records verify the stated domestic academic entry route."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "UGC own current public university register",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25",
+          "note": "Exact ID1441 Rathinam Global, Eachanari, statusSection-III."
+        },
+        {
+          "label": "Current university programme and admissions pages",
+          "url": "https://rathinamglobal.edu.in/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25",
+          "note": "Exact current award/qualification pages, unknown fees/language/intake preserved."
+        },
+        {
+          "label": "B.Sc Computer Science current entry page",
+          "url": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25",
+          "note": "Exact current programme-specific entry and three-year duration."
+        },
+        {
+          "label": "B.Com Professional Accounting current entry page",
+          "url": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25",
+          "note": "Exact current programme-specific entry and three-year duration."
+        },
+        {
+          "label": "B.Com Computer Applications current entry page",
+          "url": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25",
+          "note": "Exact current programme-specific entry and three-year duration."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Three exact current undergraduate awards at Eachanari; coaching/AI pathways not counted as separate degrees.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "absent",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my programme eligibility",
+            "capture": [
+              "qualification",
+              "chosen degree"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my study budget",
+            "capture": [
+              "chosen degree",
+              "applicant category"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my application",
+            "capture": [
+              "qualification records",
+              "chosen degree"
+            ]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "rathinam-bsc-cs",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc Computer Science",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current itemised programme fee directly. Tuition, examination, professional coaching and living charges must be checked separately before payment."
+          },
+          "officialProgramUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants whose qualifications satisfy the named programme and university assessment."
+            ],
+            "restrictions": [
+              "Overseas qualification equivalence, permissions and applicant-category fees are not established by this record."
+            ],
+            "notes": "The verified programme entry requirements do not imply universal international admission.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Computer Science is a three-year, six-semester full-time degree at Rathinam Global, Eachanari, Coimbatore. Programming, algorithms, databases, computer networks and software development form the core, with published AI and cloud topics.",
+            "eligibility": {
+              "intro": "Use the published programme-specific qualification and obtain final university eligibility confirmation.",
+              "items": [
+                "Pass Class12. The current programme page leaves additional marks and requirements to be supplied; obtain the university’s final eligibility assessment."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the official university-linked admissions portal and select the exact award and academic cycle.",
+              "Submit qualification records and complete academic verification and any notified programme selection assessment.",
+              "Present original certificates, obtain a written itemised fee quote and complete admission through official payment channels."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class10 and Class12 mark sheets and qualification certificates establishing the required school-leaving qualification."
+              ],
+              "application": [
+                "Application record and original academic documents for verification; submit identity, transfer, migration or category documents when requested by the university."
+              ]
+            },
+            "deadlinesNote": "The university advertises2026–27 admissions. Confirm current application availability and reporting instructions directly; no first-entry month is asserted."
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current itemised programme fee directly. Tuition, examination, professional coaching and living charges must be checked separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Three years / six semesters",
+              "language": "",
+              "details": "Programming, algorithms, databases, computer networks and software development form the core, with published AI and cloud topics. Confirm the current teaching and examination language with the department."
+            }
+          ]
+        },
+        {
+          "slug": "rathinam-bcom-pa",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com Professional Accounting",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current itemised programme fee directly. Tuition, examination, professional coaching and living charges must be checked separately before payment."
+          },
+          "officialProgramUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants whose qualifications satisfy the named programme and university assessment."
+            ],
+            "restrictions": [
+              "Overseas qualification equivalence, permissions and applicant-category fees are not established by this record."
+            ],
+            "notes": "The verified programme entry requirements do not imply universal international admission.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca"
+          },
+          "admissionsContent": {
+            "overview": "B.Com Professional Accounting is a three-year, six-semester full-time degree at Rathinam Global, Eachanari, Coimbatore. Financial and cost accounting, auditing, taxation, corporate law and finance are supported by accounting software and practical projects.",
+            "eligibility": {
+              "intro": "Use the published programme-specific qualification and obtain final university eligibility confirmation.",
+              "items": [
+                "Pass SSLC/Class10 and Higher Secondary10+2 or equivalent from a recognised board. Commerce and Accountancy backgrounds are preferred, while other recognised streams are accepted.",
+                "Meet any minimum marks notified by the university or government and complete original-certificate verification. The optional CA pathway requires accounting and finance aptitude and separate professional study."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the official university-linked admissions portal and select the exact award and academic cycle.",
+              "Submit qualification records and complete academic verification and any notified programme selection assessment.",
+              "Present original certificates, obtain a written itemised fee quote and complete admission through official payment channels."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class10 and Class12 mark sheets and qualification certificates establishing the required school-leaving qualification."
+              ],
+              "application": [
+                "Application record and original academic documents for verification; submit identity, transfer, migration or category documents when requested by the university."
+              ]
+            },
+            "deadlinesNote": "The university advertises2026–27 admissions. Confirm current application availability and reporting instructions directly; no first-entry month is asserted."
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current itemised programme fee directly. Tuition, examination, professional coaching and living charges must be checked separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Three years / six semesters",
+              "language": "",
+              "details": "Financial and cost accounting, auditing, taxation, corporate law and finance are supported by accounting software and practical projects. Confirm the current teaching and examination language with the department."
+            }
+          ]
+        },
+        {
+          "slug": "rathinam-bcom-ca",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com Computer Applications",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the current itemised programme fee directly. Tuition, examination, professional coaching and living charges must be checked separately before payment."
+          },
+          "officialProgramUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants whose qualifications satisfy the named programme and university assessment."
+            ],
+            "restrictions": [
+              "Overseas qualification equivalence, permissions and applicant-category fees are not established by this record."
+            ],
+            "notes": "The verified programme entry requirements do not imply universal international admission.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca"
+          },
+          "admissionsContent": {
+            "overview": "B.Com Computer Applications is a three-year, six-semester full-time degree at Rathinam Global, Eachanari, Coimbatore. Commerce studies combine accounting, business applications and computing; advertised AI pathways are study emphases within the degree.",
+            "eligibility": {
+              "intro": "Use the published programme-specific qualification and obtain final university eligibility confirmation.",
+              "items": [
+                "Pass HSC/Class12 and Class10. The page accepts recognised Commerce, Science and Arts streams, subject to university document verification and admission norms.",
+                "The page describes40% as preferred rather than an unconditional minimum; final eligibility rests with the university."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the official university-linked admissions portal and select the exact award and academic cycle.",
+              "Submit qualification records and complete academic verification and any notified programme selection assessment.",
+              "Present original certificates, obtain a written itemised fee quote and complete admission through official payment channels."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Class10 and Class12 mark sheets and qualification certificates establishing the required school-leaving qualification."
+              ],
+              "application": [
+                "Application record and original academic documents for verification; submit identity, transfer, migration or category documents when requested by the university."
+              ]
+            },
+            "deadlinesNote": "The university advertises2026–27 admissions. Confirm current application availability and reporting instructions directly; no first-entry month is asserted."
+          },
+          "medium": "",
+          "mediumNote": null,
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the current itemised programme fee directly. Tuition, examination, professional coaching and living charges must be checked separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Three years / six semesters",
+              "language": "",
+              "details": "Commerce studies combine accounting, business applications and computing; advertised AI pathways are study emphases within the degree. Confirm the current teaching and examination language with the department."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "programme",
+      "claimText": "B.Sc Computer Science; current own-university programme, three years/six semesters/full-time.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "duration",
+      "claimText": "3 years,6 semesters, full-time; named current school/course header.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "eligibility",
+      "claimText": "Pass Class12. The current programme page leaves additional marks and requirements to be supplied; obtain the university’s final eligibility assessment.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "admissions",
+      "claimText": "University application and programme eligibility/document verification; no guaranteed seat or professional certification.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "fee",
+      "claimText": "Programme page says fee details will be published as per institutional approval. No usable exact current price established.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank medium and language arrays, no English default.",
+      "status": "omit",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "intake",
+      "claimText": "Specific first-entry month not established; both intake arrays empty.",
+      "status": "omit",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-quantum-science/b.sc-computer-science",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bsc-cs"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "programme",
+      "claimText": "B.Com Professional Accounting; current own-university programme, three years/six semesters/full-time.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "duration",
+      "claimText": "3 years,6 semesters, full-time; named current school/course header.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "eligibility",
+      "claimText": "Pass SSLC/Class10 and Higher Secondary10+2 or equivalent from a recognised board. Commerce and Accountancy backgrounds are preferred, while other recognised streams are accepted. Meet any minimum marks notified by the university or government and complete original-certificate verification. The optional CA pathway requires accounting and finance aptitude and separate professional study.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "admissions",
+      "claimText": "University application and programme eligibility/document verification; no guaranteed seat or professional certification.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "fee",
+      "claimText": "Programme page says fee details will be published as per institutional approval. No usable exact current price established.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank medium and language arrays, no English default.",
+      "status": "omit",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "intake",
+      "claimText": "Specific first-entry month not established; both intake arrays empty.",
+      "status": "omit",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-pa-and-b.com-pa-with-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-pa"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "programme",
+      "claimText": "B.Com Computer Applications; current own-university programme, three years/six semesters/full-time.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "duration",
+      "claimText": "3 years,6 semesters, full-time; named current school/course header.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/Class12 and Class10. The page accepts recognised Commerce, Science and Arts streams, subject to university document verification and admission norms. The page describes40% as preferred rather than an unconditional minimum; final eligibility rests with the university.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "admissions",
+      "claimText": "University application and programme eligibility/document verification; no guaranteed seat or professional certification.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "fee",
+      "claimText": "Programme page says fee details will be published as per institutional approval. No usable exact current price established.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "medium",
+      "claimText": "Teaching language not established; blank medium and language arrays, no English default.",
+      "status": "omit",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "rathinam-global",
+      "publicField": "intake",
+      "claimText": "Specific first-entry month not established; both intake arrays empty.",
+      "status": "omit",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/courses/programmes/school-of-business-and-commerce/b.com-ca",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "rathinam-bcom-ca"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rathinam-global",
+      "publicField": "recognition",
+      "claimText": "UGC own current public register entry ID1441: Rathinam Global, Rathinam Techzone, Pollachi Road, Eachanari, Coimbatore641021; Deemed to be Universities, status Section-III.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=4",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Actual public UI GET endpoint discovered in /Scripts/Pages/unijs.js, unitypeID4 from canonical scope HTML. Older deemed.ugc register lacks new entry; proposal PDFs are not declaration evidence."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rathinam-global",
+      "publicField": "identity",
+      "claimText": "Current university disclosure explicitly names Rathinam Global Deemed to be University, formerly Rathinam College of Arts and Science, own awards underSection3, EachanariCoimbatore.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/assets/AICTE-Mandatory%20Disclosures.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rathinam-global",
+      "publicField": "media",
+      "claimText": "Complete official current identifying Rathinam emblem and wordmark; full native favicon, no accreditation/superlative banner substituted.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/assets/images/favicon.png",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rathinam-global",
+      "publicField": "media",
+      "claimText": "Genuine official aerial photograph of Eachanari campus, sports ground and road frontage.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinamglobal.edu.in/assets/images/life/01.webp",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "rathinam-global",
+      "publicField": "identity",
+      "claimText": "Current university inauguration/conversion announced May2026; 2026 records university identity transition, not predecessor college foundation.",
+      "status": "verified",
+      "sourceLabel": "Current university programme page or UGC own public university register",
+      "sourceUrl": "https://rathinam.global/news/rathinam-becomes-rgu-global-future/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}
