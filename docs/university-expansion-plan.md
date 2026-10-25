@@ -293,3 +293,6 @@ reviewed bundles for a grouped publication window while agents research offline.
 
 
 **Published group37 (0343–0345):** Thiruvottiyur4, Dr. Ambedkar Government Arts College23 and Rajeswari Vedachalam15 add three profiles and42 UG offerings. The resumed applied total is91 new institution profiles and3,258 unique programme additions. Nine exact indicative native annual fee quotes, six reviewed official media originals and complete inventories are retained; unknown fees remain blank after bounded checks. Public counts/known labels, six sampled pages, all10 group36–37 hosted images and the51-result Chennai filter passed. Research continues offline on Perumbakkam, Muthurangam Vellore and Government Thirumagal Mill's College; Tiruttani and Cheyyar are held for actual source/media failures.
+
+
+**Published group38 (0346–0348):** Muthurangam23, Government Thirumagal Mills College38 and Perumbakkam8 add three profiles and69 offerings, including10 PG awards supported by one exact applicable university framework. Applied resumed totals94 new profiles/3,327 programme additions. All23 native indicative historical fee quotes, six official hosted images, three public API counts and six sampled pages passed. C. Abdul Hakeem, Voorhees and Auxilium are the next sourced profiles; root researches a Quaid-E-Millath PG forward offline. No database polling during research.

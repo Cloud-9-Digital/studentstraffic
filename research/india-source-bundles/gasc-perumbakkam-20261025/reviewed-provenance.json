@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-25",
+  "programmes": 8,
+  "families": 7,
+  "evidence": 61,
+  "fullSourceProof": [
+    {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-perumbakkam-20261025/madras-ug-common-regulations.pdf",
+      "bytes": 572314,
+      "sha256": "faa5b529ed46276f7cdc40ae8ee9d66372406c330376ec5b7243efc0afcff4e7"
+    },
+    {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-perumbakkam-20261025/madras-ug-common-regulations.txt",
+      "bytes": 50693,
+      "sha256": "36eb91141dfa28156be1cc548bcaaad10b112ea6e44c87c8a5f4f5be779e3d9f"
+    },
+    {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-thiruvottiyur-20261025/dce-colleges.html",
+      "bytes": 5757964,
+      "sha256": "a1093c3abfc7dc3f180471a816bb88c8f7138b59e2a63a05632ea7283eee65bd"
+    },
+    {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/bharathi-womens-college-chennai/tngasa2026.pdf",
+      "bytes": 10889153,
+      "sha256": "fa578aef10e2e8b0b2a9674fcbab029f45dff5c045dc4d63601d94dcda68c010"
+    },
+    {
+      "path": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/queen-marys-college-chennai/admission-guidelines2026.pdf",
+      "bytes": 264629,
+      "sha256": "822dedd6edee20fc4683d46160976bc817c3c9fad76d3ca11d62f41b4cc3cd70"
+    }
+  ],
+  "limits": [
+    "No current UGC recognition claim; own application in process.",
+    "DCE badge is a listing status only.",
+    "No numeric fee, medium for language degrees or intake month inferred.",
+    "No old2024 admission ranking used over binding2026 DCE."
+  ]
+}

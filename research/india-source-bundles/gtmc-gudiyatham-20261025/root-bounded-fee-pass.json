@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-25",
+  "reviewer": "root",
+  "sources": [
+    {
+      "url": "https://www.careers360.com/colleges/government-thirumagal-mills-college-vellore/courses",
+      "actualRead": "Full web parser748/701lines plus fee/currency find; named courses and duration present, no matching named programme fee table/amounts; advertising othercollege scholarship amount excluded."
+    },
+    {
+      "url": "https://www.collegedekho.com/colleges/gtm-college-gudiyattam-courses",
+      "actualRead": "Full502line course page, updated9March2026; no exact namedfee table. MCA Q&A explicitly no college fee known, generic Indian governmentfee range rejected."
+    }
+  ],
+  "result": "No usable quote; retain unknown college fees, stop bounded pass. No DB/outreach."
+}

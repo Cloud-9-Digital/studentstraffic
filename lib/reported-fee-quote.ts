@@ -20,7 +20,7 @@ export function parseReportedFeeQuote(value: unknown): ReportedFeeQuote | undefi
   const q = value as Record<string, unknown>;
   const text = (key: string, min: number, max: number) => typeof q[key] === "string" && (q[key] as string).trim().length >= min && (q[key] as string).length <= max;
   if (typeof q.currency !== "string" || !/^[A-Z]{3}$/.test(q.currency)) return undefined;
-  if (typeof q.minAmount !== "number" || !Number.isSafeInteger(q.minAmount) || q.minAmount <= 0) return undefined;
+  if (typeof q.minAmount !== "number" || !Number.isSafeInteger(q.minAmount) || q.minAmount < 0) return undefined;
   if (q.maxAmount !== undefined && (typeof q.maxAmount !== "number" || !Number.isSafeInteger(q.maxAmount) || q.maxAmount < q.minAmount)) return undefined;
   if (q.status !== "confirmed" && q.status !== "indicative") return undefined;
   if (!["semester", "academic_year", "first_year", "full_course", "other"].includes(q.period as string)) return undefined;

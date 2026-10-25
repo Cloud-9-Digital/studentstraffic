@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "muthurangam-government-arts-college-vellore",
+      "universityName": "Muthurangam Government Arts College (Autonomous), Vellore",
+      "sourceBatch": "codex-mgac-vellore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.mgacvlr.edu.in/NAAC/202324/MGACCAL202324.pdf",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.mgacvlr.edu.in/",
+          "rightsBasis": "Genuine college-published identifying crest and campus photograph used for factual identification and illustration; no open licence or ownership transfer asserted.",
+          "altText": "Muthurangam Government Arts College complete official Tamil and English crest",
+          "visualCheck": "Full native291square unchanged embedded JPEG page1 image0, completecircle/shield/motto/EnglishTamilidentity. Parentroot andworker independently viewed andaccepted; noediting/upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgac-vellore-20261025/calendar-asset-000.jpg",
+          "sha256": "265519afebad36c61c39bbcf0fe7fdd40d393dcc7c857c54e6faedb27e07a4c6",
+          "width": 291,
+          "height": 291,
+          "proposedPublicId": "studentstraffic/universities/muthurangam-government-arts-college-vellore/logo-20261025",
+          "verificationMethod": "Ordinary public GET of original official asset/PDF, retained checksum, sequential local fulloriginalpixel review and root review.",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Original embedded291x291JPEG image0,page1 of official2023–24handbook; extracted unchanged with pdfimages -f1 -l1 -j. Full originalPDF and completepage rendering retained; no cropping or resampling.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgac-vellore-20261025/calendar.pdf",
+          "originalDocumentSha256": "ebb4e420da26804039697e2a1af5e48851765d9bea04e8e52af74b7d844e0322"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.mgacvlr.edu.in/images/slideshow/IMG4758.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.mgacvlr.edu.in/",
+          "rightsBasis": "Genuine college-published identifying crest and campus photograph used for factual identification and illustration; no open licence or ownership transfer asserted.",
+          "altText": "Shaded college building and courtyard on Muthurangam Government Arts College’s official website",
+          "visualCheck": "Full native510x381 genuineinstitutionalbuilding/shadedcourtyardphotograph, observedownhomepageimage23. Parentroot andworker independently viewed andaccepted, no assumedcapturedate or syntheticediting.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgac-vellore-20261025/cover.png",
+          "sha256": "79749830216ec487b62c2803f1dc16c85e142048251920ecf24a6aee0ccc6247",
+          "width": 510,
+          "height": 381,
+          "proposedPublicId": "studentstraffic/universities/muthurangam-government-arts-college-vellore/cover-20261025",
+          "verificationMethod": "Ordinary public GET of original official asset/PDF, retained checksum, sequential local fulloriginalpixel review and root review."
+        }
+      ]
+    }
+  ]
+}

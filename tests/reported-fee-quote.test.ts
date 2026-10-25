@@ -55,10 +55,24 @@ test("confirmed native NIL and published annual tuition keep precedence over com
   assert.equal(formatProgramFee({ ...offering, feeStatus: "indicative", indicativeAnnualTuitionMinUsd: 1000, indicativeAnnualTuitionMaxUsd: 2000 }), "$1,000–$2,000");
 });
 
-test("missing and malformed quote records fail closed; unknown zero never becomes a reported fee", () => {
+test("explicit sourced NIL quotes display without turning unknown annual tuition into zero", () => {
+  const nil = quoteSchema.parse({ ...quote, minAmount: 0, period: "semester", componentBasis: "Published tuition is NIL; laboratory, deposit and other charges are separate." })!;
+  const display = { ...offering, reportedFeeQuote: nil };
+  assert.equal(parseReportedFeeQuote(nil)?.minAmount, 0);
+  assert.equal(formatProgramFee(display), "₹0");
+  assert.equal(hasRenderableProgramDisplayFee(display), true);
+  assert.equal(hasRenderableProgramAnnualFee(display), false);
+  assert.equal(formatProgramAnnualFee(display), "Fee plan on request");
+  assert.equal(formatProgramFee({ ...offering, reportedFeeQuote: undefined }), "Fee plan on request");
+  assert.equal(parseReportedFeeQuote({ minAmount: 0 }), undefined);
+  const program = { offering: display, university: { name: "Example", slug: "example" }, country: { slug: "india" }, course: { shortName: "BA" } } as FinderProgram;
+  assert.equal(getProgramOfferingStructuredData(program).offers, undefined);
+});
+
+test("missing and malformed quote records fail closed", () => {
   assert.equal(quoteSchema.parse(undefined), undefined);
   for (const patch of [
-    { minAmount: 0 }, { minAmount: -1 }, { minAmount: NaN }, { minAmount: 1.5 }, { minAmount: Number.MAX_SAFE_INTEGER + 1 },
+    { minAmount: undefined }, { minAmount: null }, { minAmount: "0" }, { minAmount: -1 }, { minAmount: NaN }, { minAmount: 1.5 }, { minAmount: Number.MAX_SAFE_INTEGER + 1 },
     { maxAmount: 100 }, { maxAmount: Infinity }, { currency: "inr" }, { period: "annualish" }, { status: "on_request" },
     { componentBasis: "" }, { academicYear: "" }, { sourceUrl: "javascript:alert(1)" }, { verifiedAt: "not-a-date" }, { category: 5 }, { audience: "foreign" },
   ]) {
@@ -103,6 +117,11 @@ test("mobile programme quotes suppress annual units in both visible and accessib
   assert.equal(dto.primaryOffering?.feeIsAnnual, false);
   assert.equal(dto.primaryOffering?.annualTuitionUsd, 0);
   assert.equal(hasAnnualFeeSuffix(dto.offerings[0], dto.offerings[0].feeLines[0].amount), false);
+
+  const nilDto = mapUniversityDetail(university, "India", [{ ...program, offering: { ...program.offering, reportedFeeQuote: { ...quote, minAmount: 0, period: "semester" } } }]);
+  assert.equal(nilDto.offerings[0].feeLabel, "₹0");
+  assert.equal(nilDto.offerings[0].feeIsAnnual, false);
+  assert.equal(hasAnnualFeeSuffix(nilDto.offerings[0], "₹0"), false);
 
   const annual = { ...program, offering: { ...program.offering, feeStatus: "confirmed" as const, officialFeeCurrency: "INR", officialAnnualTuitionAmount: 0 } };
   const annualDto = mapUniversityDetail(university, "India", [annual]);

@@ -1,0 +1,19 @@
+# Government Thirumagal Mills College, Gudiyatham
+
+25October2026,ownercodex-tn-gtmc-gudiyatham-20261025. DistinctgovernmentcoeducationalcollegeGandhiNagar/Gudiyatham632602, gtmc.edu.in,1964; notMuthurangamVellore. Lockedclaimed/researching, noaliasduplicate.
+
+80rowLFfullinventory:38supported(28UG+10PG),4BBA/BCAshiftprofessionalholds,1MCAprofessionalhold,36researchmodeholds,1embeddedCLPcertificatehold. Current2026governmentTNGASAp145code1081002 gives32UGroutes; removeonly4actualapprovalscopeholds. OwncurrentUG/PGnamedlists and2026ranknoticecorroborate; no title-sample selection.
+
+Fulluniversity2023UG/PGregulations authenticatedmirrordocuments retainedTVUsourcebundle; owncollegecurriculumlinkpointsTVU; actualPGp2 expressly regularuniversitydepartmentsANDapprovedaffiliatedinstitutions; UG2.2three/sixsem andPG2two/foursem. ExactPGannexsections1,2,3,4,8,9,10,13,16,19 match10currentownawards. Conditional55percentEnglishalternatePartIIroute only; MCommath/computing2BComcorepapers preserved. No university-department tuition transferred.
+
+KnownUGEM/TM exactcurrentmatrix,2languageawardmediumomit. PG5knownEnglishnormative/own,5omitted(Tamil/Englishlanguageexception,Botany/Physics/ChemownTMEMvsuniversityEnglishconflict). No optionalmedium/intakehunt. Allintakesomit. ExactDCE2026currentUGschoolsubjects/age priorities; ownundated24agepage stale.
+
+FullregulatorUGC16MBcurrentregisterrow4501 exactGTM/Gudiyattam,1964,Government,2f12B; exacthash/path/extract preserved. LegacyMadrasaffilcolumnnotusedascurrent; owncollege/header/syllabusidentifyThiruvalluvar. No NAAC2017B+renewalassumed.
+
+Fee amounts onrequest afterboundedpass: noowncurrentpayableschedule; archived2021calendarfetchtimeout; CD120kBScsnippet lacksfullread/exactscope403, ShikshaallstructuredfeesNA, nofeefabrication/zero/annualisation. Feegapsnotdegreeholds.
+
+Rootapprovedcomplete407x92GTMcrestwordmark and1600x1200signedentrancebanner0originals; stockstudyimg2rejected, NAACheaderlogonewrejected. Fulloriginals/checksums/rights/manifest,noediting/capturedateclaim. NoDB/upload/number/build/commit.
+
+## Frozen executable handoff
+
+0347-india-government-thirumagal-mills-college-gudiyatham:38routes(28UG+10PG),feesonrequest. Canonicalnumberedreader0warnings; lockedledger validated38. Rootreviewedmedia pendingparentupload/publication. NoDB.

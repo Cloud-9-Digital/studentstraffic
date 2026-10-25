@@ -29,6 +29,12 @@ test('actual shared web directory preserves explicit annual tuition including co
  }
 });
 
+test('actual shared web directory renders sourced semester NIL without an annual suffix',()=>{
+ const fees=programFees({...program,offering:{...offering,reportedFeeQuote:{...offering.reportedFeeQuote!,minAmount:0}}});
+ assert.equal(fees[0].isAnnual,false);
+ const html=render(fees);assert.match(html,/₹0/);assert.doesNotMatch(html,/\/\s*year|\/yr|a year/);
+});
+
 test('shared web directory fails closed for old numeric rows without billing classification',()=>{
  assert.doesNotMatch(render([{label:'Fees',amount:'₹12,820'}]),/\/\s*year|\/yr/);
 });

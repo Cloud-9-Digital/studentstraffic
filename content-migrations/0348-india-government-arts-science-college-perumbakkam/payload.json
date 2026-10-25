@@ -1,0 +1,1657 @@
+{
+  "courses": [
+    {
+      "slug": "ba-english-literature",
+      "name": "B.A. in English and Literature",
+      "shortName": "B.A. English",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "english-literature",
+      "aliases": [
+        "BA English",
+        "Bachelor of Arts in English Literature"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "English and literature bachelor programmes study language, literary texts, communication and critical analysis. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.A. English: Study and Admissions",
+      "metaDescription": "Compare B.A. English programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "ba-languages-linguistics",
+      "name": "B.A. in Languages and Linguistics",
+      "shortName": "B.A. Languages",
+      "stream": "arts-humanities",
+      "level": "bachelors",
+      "discipline": "languages-linguistics",
+      "aliases": [
+        "BA Linguistics",
+        "Bachelor of Arts in Modern Languages"
+      ],
+      "displayOrder": 157,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate degrees in a named language, modern languages or linguistics. Programmes study language structure, literature and cultural texts in the chosen language or languages, with translation and analytical writing. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.A. Languages Programmes | Students Traffic",
+      "metaDescription": "Compare B.A. Languages programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bcom",
+      "name": "Bachelor of Commerce",
+      "shortName": "B.Com",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "commerce",
+      "aliases": [
+        "BCom",
+        "Bachelor in Commerce"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Commerce bachelor programmes study accounting, business, economics and finance, with specialist subjects varying by award. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.Com: Study and Admissions",
+      "metaDescription": "Compare B.Com programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-chemistry",
+      "name": "B.Sc. in Chemistry",
+      "shortName": "B.Sc. Chemistry",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "chemistry",
+      "aliases": [
+        "Bachelor of Science in Chemistry",
+        "BSc Chemistry"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A bachelor's chemistry degree developing laboratory and theoretical foundations across organic, inorganic, physical and analytical chemistry, typically including practical laboratory training and a research-oriented final-year project. Compare each university's official award, specialisation options, tuition and admissions requirements before applying, since laboratory facilities and placement options vary by institution.",
+      "metaTitle": "B.Sc. Chemistry: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Chemistry programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A B.Sc. in Computer Science is a science-faculty bachelor's degree in the theory and practice of computing. The curriculum covers programming, data structures and algorithms, discrete mathematics, computer architecture, operating systems, databases, networks and software engineering, with electives in artificial intelligence, data science, cyber security or graphics. It differs from a B.E./B.Tech by placing more weight on mathematics and computing theory and less on engineering design. Programmes last three or four years and lead to software, data and IT roles or to master's study.",
+      "metaTitle": "B.Sc. Computer Science Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Computer Science degrees open to international students: curriculum, electives, entry subjects, duration, tuition and intakes."
+    },
+    {
+      "slug": "bsc-mathematics",
+      "name": "B.Sc. in Mathematics",
+      "shortName": "B.Sc. Mathematics",
+      "stream": "mathematics-statistics",
+      "level": "bachelors",
+      "discipline": "mathematics",
+      "aliases": [
+        "Bachelor of Science in Mathematics",
+        "BSc Mathematics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Mathematics bachelor’s programmes study mathematical reasoning and problem solving through subjects such as calculus, algebra, analysis, geometry, probability and applied mathematics. Curricula may include computing and applications in other fields. Compare subject prerequisites, specialisations, assessment, teaching language, duration and complete costs.",
+      "metaTitle": "B.Sc. Mathematics: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Mathematics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    },
+    {
+      "slug": "bsc-physics",
+      "name": "B.Sc. in Physics",
+      "shortName": "B.Sc. Physics",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "physics",
+      "aliases": [
+        "Bachelor of Science in Physics",
+        "BSc Physics"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "Physics bachelor’s programmes study the principles of matter, energy and physical systems through mathematical theory, experimentation and analysis. Curricula may include mechanics, electromagnetism, optics, thermal physics, modern physics and computing. Compare laboratory access, entry subjects, specialisations, language, duration and complete costs.",
+      "metaTitle": "B.Sc. Physics: Study and Admissions",
+      "metaDescription": "Compare B.Sc. Physics programmes by entry requirements, teaching language, duration, academic structure, study location and complete fees."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "government-arts-science-college-perumbakkam-chennai",
+      "name": "Government Arts and Science College, Perumbakkam, Chennai",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 2016,
+      "officialWebsite": "https://gascperumbakkam.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://gascperumbakkam.in/wp-content/uploads/2025/02/new-logo.png",
+          "rights": "Official Tamil Nadu Government emblem as displayed in the college’s public institutional header, used for government-college identification; no bespoke college crest, open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://gascperumbakkam.in/wp-content/uploads/2025/02/2019-07-12-1-1024x427-2.jpg",
+          "rights": "Official college public campus photograph used for institutional illustration; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Government Arts and Science College Perumbakkam building as illustrated on its official website"
+        }
+      },
+      "summary": "Government Arts and Science College, Perumbakkam is a co-educational government college in the Chennai area, affiliated to the University of Madras. Established in 2016, it offers arts, sciences, commerce and postgraduate study. These entries cover eight regular academic undergraduate degrees with verified subject conditions.",
+      "campusLifestyle": "The college began in the 2016–17 academic year and expanded from its initial five undergraduate subjects to a wider arts, science and commerce portfolio. Its official site describes student activities, NSS, Youth Red Cross, sports and academic departments. Confirm the activities and support arrangements available for the selected course when enrolling.",
+      "cityProfile": "The campus is on Jawaharlal Nehru Road, Perumbakkam, Chennai 600131, in the Sholinganallur area of Chengalpattu district. Current government admission code 1011008 identifies this co-educational college. Government Arts and Science College at Thiruvottiyur and similarly named colleges elsewhere have separate campuses and admissions.",
+      "practicalExposure": "The college’s computing department describes computer facilities and a curriculum covering hardware, software and applications. Science and commerce subjects have their own academic and practical requirements. Check the current curriculum and opportunities for the exact award; admission does not guarantee an internship, placement or professional licence.",
+      "hostelOverview": "The 2026 government college booklet lists no college or welfare hostel accommodation. Plan commuting or independently verified housing, and confirm any later change directly with the college. An academic offer does not establish a hostel room, residence allowance or accommodation budget.",
+      "dietarySupport": "Specific meal services, mess charges and support for allergies or medical diets have not been verified for these entries. Applicants with particular requirements should confirm arrangements before choosing a commute or independent accommodation. Academic admission and fees do not establish a meal plan.",
+      "safetyOverview": "Obtain the college’s current student-welfare contacts, complaint procedures and emergency arrangements when enrolling. Discuss individual travel, health and accessibility requirements directly. A government-college listing does not by itself establish a personal safety outcome or a specific support entitlement.",
+      "studentSupport": "The college website lists library services, student activities and academic departments alongside its admission information. Confirm the current help available for your subject and individual needs. Scholarships, accessibility assistance, accommodation and other benefits require their own eligibility, documents and availability checks.",
+      "whyChoose": [
+        "Co-educational government college offering regular arts, sciences and commerce.",
+        "Current government admission listing with programme-specific subject choices.",
+        "University of Madras affiliated study at the Perumbakkam campus."
+      ],
+      "thingsToConsider": [
+        "Check the exact programme and subject-ranking rules.",
+        "Meet current DCE age, category and documentary conditions.",
+        "Obtain an itemised fee quotation.",
+        "Plan commuting or independently confirmed accommodation."
+      ],
+      "bestFitFor": [
+        "Applicants meeting the named school-subject requirements.",
+        "Students comparing regular government-college study in the Chennai area.",
+        "Applicants prepared for merit ranking, counselling and original-document checks."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Tamil Nadu DCE — listed arts and science college"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Directorate of Collegiate Education official college register",
+          "url": "https://tndce.tn.gov.in/"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current 2026 government college and UG programme booklet",
+          "url": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "DCE 2026 government-college admission framework",
+          "url": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "DCE official college register",
+          "url": "https://tndce.tn.gov.in/",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University of Madras full common affiliated-college UG regulations",
+          "url": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official college identity and status",
+          "url": "https://gascperumbakkam.in/about-us/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official college academic departments",
+          "url": "https://gascperumbakkam.in/courses-offered/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Official college 2026–27 admission page",
+          "url": "https://gascperumbakkam.in/admission-2026-2027/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "gasc-perumbakkam-tamil",
+          "canonicalCourseSlug": "ba-languages-linguistics",
+          "officialTitle": "B.A. Tamil",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "",
+          "mediumNote": "Currentmatrixnameslanguageawardwithoutanexplicitmediumclaim; teachinglanguageisomittedratherthaninferredfromthetitle.",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. Tamil is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Language-degree ranking first considers applicants who studied that language under HSC Part III; remaining applications use the applicable Part I or Part II language marks.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-english",
+          "canonicalCourseSlug": "ba-english-literature",
+          "officialTitle": "B.A. English",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "",
+          "mediumNote": "Currentmatrixnameslanguageawardwithoutanexplicitmediumclaim; teachinglanguageisomittedratherthaninferredfromthetitle.",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.A. English is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Language-degree ranking first considers applicants who studied that language under HSC Part III; remaining applications use the applicable Part I or Part II language marks.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-commerce",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com. General",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Com. General is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Should have studied Commerce and Accountancy at HSC. The DCE framework reserves 20% for the Commerce vocational stream.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "English",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-corporate-secretaryship",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com. Corporate Secretaryship",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Com. Corporate Secretaryship is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Should have studied Commerce and Accountancy at HSC. The DCE framework reserves 20% for the Commerce vocational stream.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "English",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-mathematics",
+          "canonicalCourseSlug": "bsc-mathematics",
+          "officialTitle": "B.Sc. Mathematics",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Mathematics is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Should have studied Mathematics at HSC; ranking uses the applicable HSC Part III subject component.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "English",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-computer-science",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc. Computer Science",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Computer Science is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Should have studied Mathematics at HSC. Two-thirds of seats are reserved for applicants who studied Computer Science at +2 and one-third for those who did not.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "English",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-physics",
+          "canonicalCourseSlug": "bsc-physics",
+          "officialTitle": "B.Sc. Physics",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Physics is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Verified subject route: Mathematics and Physics at HSC, meeting the University of Madras subject conditions and the DCE Mathematics requirement.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "English",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        },
+        {
+          "slug": "gasc-perumbakkam-chemistry",
+          "canonicalCourseSlug": "bsc-chemistry",
+          "officialTitle": "B.Sc. Chemistry",
+          "durationYears": 3,
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "verifiedAt": "2026-10-25",
+            "notes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning."
+          },
+          "feeNotes": "Obtain the current itemised tuition and compulsory-charge schedule for the exact programme and category. Accommodation, meals and personal costs require separate planning.",
+          "feeVerifiedAt": "2026-10-25",
+          "officialProgramUrl": "https://gascperumbakkam.in/courses-offered/",
+          "medium": "English",
+          "mediumNote": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+          "instructionLanguages": [
+            "english"
+          ],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants to regular first-year co-educational undergraduate admission"
+            ],
+            "restrictions": [
+              "Programme subjects, age, reservation and documentary conditions apply.",
+              "Foreign/NRI, transfer and lateral-entry routes require separate verification."
+            ],
+            "notes": "Qualifying records and category claims require assessment; an application does not establish eligibility or a place.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Chemistry is a regular three-year undergraduate degree at Government Arts and Science College, Perumbakkam, under the University of Madras affiliated arts and science framework.",
+            "eligibility": {
+              "intro": "The verified subject route combines the applicable University of Madras requirements with the current 2026 government-college admission framework.",
+              "items": [
+                "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.",
+                "Should have studied Chemistry and Mathematics, or Chemistry and Biological Sciences, at HSC.",
+                "The upper age limit is 40 as on 1 July 2026.",
+                "Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.",
+                "Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission."
+              ]
+            },
+            "applicationSteps": [
+              "Register through the notified Tamil Nadu government arts and science admission process and enter academic and category information accurately.",
+              "Select Government Arts and Science College, Perumbakkam, code 1011008, and the exact programme; follow the published rank list and counselling instructions.",
+              "Produce the required original records and complete the college’s admission and payment formalities after selection."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "HSC/+2 marksheet, earlier school records and transfer certificate.",
+                "Accepted equivalence documents where required for the qualifying examination."
+              ],
+              "application": [
+                "Application printout, identity and the applicable counselling or selection communication.",
+                "Valid community, disability, special-reservation or other category certificates where a claim is made."
+              ]
+            }
+          },
+          "teachingPhases": [
+            {
+              "phase": "Three years, six semesters",
+              "language": "English",
+              "details": "University of Madras common regulations for affiliated arts and science colleges specify three academic years and six semesters for ordinary B.A., B.Sc. and B.Com. programmes."
+            }
+          ]
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "scope": "Eight regular first-year domestic academic undergraduate degrees; BCA and four PG programmes remain separately inventoried with exact holds.",
+        "sectionStates": {
+          "decisionSummary": "published",
+          "eligibility": "published",
+          "fees": "published",
+          "admissions": "published",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "published"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Perumbakkam programme eligibility",
+            "capture": [
+              "programme",
+              "subjects",
+              "qualification"
+            ]
+          },
+          {
+            "trigger": "fees",
+            "label": "Plan my Perumbakkam study budget",
+            "capture": [
+              "programme",
+              "category",
+              "accommodation"
+            ]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my Perumbakkam application",
+            "capture": [
+              "programme",
+              "intended cycle",
+              "academic records"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Which college is this?",
+          "answer": "This is Government Arts and Science College at Perumbakkam, Chennai 600131, in Chengalpattu district, with current government admission code 1011008. It is a co-educational government college affiliated to the University of Madras."
+        },
+        {
+          "question": "Which degrees are included?",
+          "answer": "The entries cover B.A. Tamil, B.A. English, B.Com. General, B.Com. Corporate Secretaryship and B.Sc. Mathematics, Computer Science, Physics and Chemistry. Other programmes require their own admission checks."
+        },
+        {
+          "question": "How long are the undergraduate degrees?",
+          "answer": "These ordinary B.A., B.Sc. and B.Com. degrees follow three academic years and six semesters under the University of Madras common affiliated-college regulations."
+        },
+        {
+          "question": "Who can apply through these entries?",
+          "answer": "These entries describe the verified regular domestic first-year route. Meet the exact subject, age, category and documentary conditions. Separate overseas, transfer or lateral-entry routes have not been established."
+        },
+        {
+          "question": "Which school subjects are required?",
+          "answer": "Mathematics is required for Mathematics and Computer Science. The verified Physics route requires Mathematics and Physics. Chemistry has specified subject combinations, while Commerce routes require Commerce and Accountancy."
+        },
+        {
+          "question": "What are the 2026 age rules?",
+          "answer": "The DCE upper age limit is 40 as on 1 July 2026. Three-year relaxation may be allowed for women and listed community categories; five years is permitted for disability/transgender categories. Confirm assessment; relaxations are not automatically cumulative."
+        },
+        {
+          "question": "What is the teaching medium?",
+          "answer": "The current government matrix identifies the six Commerce and Science entries as English medium. The language-degree titles alone do not establish their instruction medium; confirm those arrangements directly."
+        },
+        {
+          "question": "What fees should I plan for?",
+          "answer": "Request the current itemised tuition and compulsory-charge schedule for the selected programme and category. Check separately for deposits, examination charges and any other costs."
+        },
+        {
+          "question": "Is accommodation included?",
+          "answer": "The current government booklet lists no college or welfare hostel accommodation. Confirm any later change directly and plan commuting or independently verified housing."
+        },
+        {
+          "question": "Are postgraduate degrees covered here?",
+          "answer": "The college separately lists M.A. Tamil, M.Com., M.Sc. Mathematics and M.Sc. Computer Science. Their exact current qualifying-degree requirements must be checked before applying; undergraduate conditions do not establish postgraduate eligibility."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Language-degree ranking first considers applicants who studied that language under HSC Part III; remaining applications use the applicable Part I or Part II language marks.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Currentmatrixnameslanguageawardwithoutanexplicitmediumclaim; teachinglanguageisomittedratherthaninferredfromthetitle.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-tamil"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Language-degree ranking first considers applicants who studied that language under HSC Part III; remaining applications use the applicable Part I or Part II language marks.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Currentmatrixnameslanguageawardwithoutanexplicitmediumclaim; teachinglanguageisomittedratherthaninferredfromthetitle.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-english"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Should have studied Commerce and Accountancy at HSC. The DCE framework reserves 20% for the Commerce vocational stream.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-commerce"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Should have studied Commerce and Accountancy at HSC. The DCE framework reserves 20% for the Commerce vocational stream.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-corporate-secretaryship"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Should have studied Mathematics at HSC; ranking uses the applicable HSC Part III subject component.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-mathematics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Should have studied Mathematics at HSC. Two-thirds of seats are reserved for applicants who studied Computer Science at +2 and one-third for those who did not.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-computer-science"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Verified subject route: Mathematics and Physics at HSC, meeting the University of Madras subject conditions and the DCE Mathematics requirement.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-physics"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Pass HSC/+2 or an accepted equivalent and satisfy the subject conditions for this regular first-year route.; Should have studied Chemistry and Mathematics, or Chemistry and Biological Sciences, at HSC.; The upper age limit is 40 as on 1 July 2026.; Three-year relaxation may be allowed for women and SC/SCA/ST/BC/BCM/MBC/DNC categories; five years is permitted for disability/transgender categories, subject to assessment.; Relaxations are not automatically cumulative. Merit ranking, reservation, counselling and original-record verification determine admission.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.queenmaryscollege.edu.in/assets/docs/2026-27%20Admission%20Guideline%20final.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "eligibility",
+      "claimText": "Actual fullMadrasUGcommonregulations AnnexureI namedsubjectqualification crosswalk; currentDCE narrowsMath requirement and othercurrentrank/ageconditions. PhysicsverifiedMath+Physicsroute retained.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "duration",
+      "claimText": "Full22pageofficialMadrascommonaffiliatedarts/scienceUGregs p2clause1.1 threeYears/sixSemesters;3.1affiliatedcollege3academicyears/all6sem. OrdinaryBA/BSc/BCom scope, notIDE. Owncurrentcollegeabout confirmsMadrasaffiliation/nonautonomous; exact2026governmentprogrammecontinuation.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://www.unom.ac.in/webportal/uploads/academics/regulations/ug-common-regulations.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "medium",
+      "claimText": "Current2026governmentprogramme matrix explicitly identifies this degree as English medium.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "intake",
+      "claimText": "Exact first-entry academic month not independently established; both intake arrays omitted. Tentativecounsellingnotices nottreatedasactualclassstart.",
+      "status": "omit",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "fee",
+      "claimText": "No exactcurrentprogrammeamount verified in ownsharedadmission/programmepages or a reliablematchingsecondaryquote; feeon_request. No tuitionNIL/unrelatedcollegeamount/anonymousnumber assumed.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/admission-2026-2027/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "admissions",
+      "claimText": "Current2026TNGASA college1011008 names exactprogramme/coeducation andknownEnglishsections. Owncurrentabout/departmentscontinue9UG+4PG; exactPGcriteria nottransferred.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "gasc-perumbakkam-chemistry"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "recognition",
+      "claimText": "ActualfullDCEprimaryregisterread: moderncollege1110008GovernmentArtsScienceCollegePerumbakkamChennai600131/Chengalpattu/Chennai/ArtsScienceColleges. Exactlistingstatusonly; ownabout2f12Binprocess, noUGC/accreditation/autonomybadge.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://tndce.tn.gov.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "identity",
+      "claimText": "Current2026TNGASA1011008 modernname/address/coeducation/Chengalpattu. Oldlisted.orgDNSfails; active.inexactownname,address,contact,2016history,current2026admissions/events corroborateinstitutionalassociation; no claimdomainownershiptransferverified.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "academics",
+      "claimText": "Owncurrentabout table explicitUniversityMadras/nonautonomous/2016/UG9PG4. FullcommonMadrasregulationsapplicableaffiliatedarts/scienceordinaryUG; rootreadwhole22pagesandworkerdownloaded/fulltextextractedp2AnnexureI.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/about-us/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "studentLiving",
+      "claimText": "Current2026governmentmatrixnilcollege/welfarehostel. Ownsite listslibrary/studentactivities/NSS/YRC; no genericthemeSeattle/Engitechcontactorstockprojectimage used ascollegefact.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://static.tneaonline.org/docs/arts/tngasa_booklet_2026.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "publicField": "media",
+      "claimText": "Rootandworkeroriginalsviewed: official148pxTamilNaduGovernmentemblemusedbycollegeheader(notbespokecrest); official1024x427buildingphotographwithconstructionvisiblegrounds, no currentcompletion/capturedateclaim.",
+      "status": "verified",
+      "sourceLabel": "Official college, University of Madras or Tamil Nadu higher-education authority",
+      "sourceUrl": "https://gascperumbakkam.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "universityName": "Government Arts and Science College, Perumbakkam, Chennai",
+      "sourceBatch": "codex-tn-gasc-perumbakkam-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gascperumbakkam.in/wp-content/uploads/2025/02/new-logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascperumbakkam.in/",
+          "rightsBasis": "Official Tamil Nadu Government emblem as displayed in the college’s public institutional header, used for government-college identification; no bespoke college crest, open licence or ownership transfer claimed.",
+          "altText": "Tamil Nadu Government emblem used in the college’s institutional header",
+          "visualCheck": "Full native148x148 government emblem on white tile; accurately identified as state emblem, not bespoke college crest. Root and worker original review accepted.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval, original checksum and full original pixel review; no editing, upscaling or provider actions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-perumbakkam-20261025/logo.png",
+          "sha256": "ed6b1b8cd9d247b6dc8176dcefb87653a02cd8b155a2748f4092bf52f898bd72",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-perumbakkam-chennai/logo-20261025"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gascperumbakkam.in/wp-content/uploads/2025/02/2019-07-12-1-1024x427-2.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascperumbakkam.in/",
+          "rightsBasis": "Official college public campus photograph used for institutional illustration; no open licence or ownership transfer claimed.",
+          "altText": "Government Arts and Science College Perumbakkam building as illustrated on its official website",
+          "visualCheck": "Full native1024x427 genuine own campus building photograph, construction-visible grounds; no capture-date or current-completion claim. Root and worker original review accepted.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval, original checksum and full original pixel review; no editing, upscaling or provider actions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-perumbakkam-20261025/campus.jpg",
+          "sha256": "9dcc1f96b2d06b27e1f70ea58f05f6b0e5e6ecd4f9457d7bca2addbc41f3dcee",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-perumbakkam-chennai/cover-20261025"
+        }
+      ]
+    }
+  ]
+}

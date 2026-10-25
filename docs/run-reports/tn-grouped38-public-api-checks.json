@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "muthurangam-government-arts-college-vellore",
+    "status": 200,
+    "expectedCount": 23,
+    "expectedName": "Muthurangam Government Arts College (Autonomous), Vellore",
+    "actualName": "Muthurangam Government Arts College, Vellore",
+    "actualCount": 23,
+    "offerings": 23,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 23,
+    "actualQuoteLabels": 23,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "government-thirumagal-mills-college-gudiyatham",
+    "status": 200,
+    "expectedCount": 38,
+    "expectedName": "Government Thirumagal Mills College, Gudiyatham",
+    "actualName": "Government Thirumagal Mills College, Gudiyatham",
+    "actualCount": 38,
+    "offerings": 38,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "government-arts-science-college-perumbakkam-chennai",
+    "status": 200,
+    "expectedCount": 8,
+    "expectedName": "Government Arts and Science College, Perumbakkam, Chennai",
+    "actualName": "Government Arts and Science College, Perumbakkam, Chennai",
+    "actualCount": 8,
+    "offerings": 8,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 0,
+    "actualQuoteLabels": 0,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

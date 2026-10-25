@@ -1,0 +1,9 @@
+# Muthurangam Vellore bounded draft audit
+
+23supported regular domestic first-year undergraduate shift/medium routes, full54-row inventory. Exactcurrent2026TNGASA24UGrows includes1BBAheld for applicableprofessionalapproval, withno assertionofnonapproval.12PGheld for exactcurrentnamedqualification/selectionrequirements andMBAprofessional scope;9MPhillegacy not current lawful intake;9PhDheld for research-specific registration/admission. Unknown medium/intake doesnotblock: BA language-award mediumblank, other exactmatrixEnglishTamil; allintakesempty.
+
+FullactualUGCregister row8551matchesMuthurangamGovernmentArtsCollege/ThiruvalluvarUniversity/Vellore632002/2f&12B/1965/Government. Owninauguration1November1965consistent. SolepreciseUGCbadge, no currentNAAC/autonomyterm/AICTEbadge extrapolation. FullownNIRF2025PDF ordinaryUG3yearframework pluscurrent2026namedcontinuation establishesduration; nohonours/exitclaims or currentcapacityfromhistoricalNIRFaggregate. CurrentDCEcommon7May2026subject/age/categoryframework applies.
+
+Fees: root independentlyreadfullown109linecourses page effective2021–22 table.23exactindicative nativeGrandTotal1quotes: BA/BCom2306, ordinaryBScMath/Phy/Che/ND/Zoo2336, CS1736. Billingperiodunspecified(periodother), date2021–22internal; first2columnsincludeoptionalCLP700,CS0. No subtraction, annualisation/currenttariff guarantee/currentuniversalNILtuition inference.
+
+Media: fulloriginalPDFpage1 complete291squarecrest extractedunchanged; realnative510x381officialcampusbuilding/courtyardimage. Bothoriginals independentlyrootviewed/accepted. FullPDF, page render,checksums, sourceURL, rights and explicitreviewedlocalPDF-derived opt-in manifest retained. Ordinaryhomepage/courses/aboutdirectGET406 butactualfullwebparserpagesread; PDFs/imagesdirect200. No extra sourcehunts, DB, uploads, commits or numberedreservation.

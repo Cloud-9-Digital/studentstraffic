@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/mgac-ltat1",
+    "kind": "programme",
+    "slug": "mgac-ltat1",
+    "status": 200,
+    "h1": "B.A. Languages at Muthurangam Government Arts College, Vellore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/gtmc-b-a-tamil-shift-1",
+    "kind": "programme",
+    "slug": "gtmc-b-a-tamil-shift-1",
+    "status": 200,
+    "h1": "B.A. Languages at Government Thirumagal Mills College, Gudiyatham",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/muthurangam-government-arts-college-vellore",
+    "kind": "university",
+    "slug": "muthurangam-government-arts-college-vellore",
+    "status": 200,
+    "h1": "Muthurangam Government Arts College, Vellore",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/government-thirumagal-mills-college-gudiyatham",
+    "kind": "university",
+    "slug": "government-thirumagal-mills-college-gudiyatham",
+    "status": 200,
+    "h1": "Government Thirumagal Mills College, Gudiyatham",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/gasc-perumbakkam-tamil",
+    "kind": "programme",
+    "slug": "gasc-perumbakkam-tamil",
+    "status": 200,
+    "h1": "B.A. Languages at Government Arts and Science College, Perumbakkam, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/government-arts-science-college-perumbakkam-chennai",
+    "kind": "university",
+    "slug": "government-arts-science-college-perumbakkam-chennai",
+    "status": 200,
+    "h1": "Government Arts and Science College, Perumbakkam, Chennai",
+    "pass": true
+  }
+]

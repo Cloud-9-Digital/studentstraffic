@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "muthurangam-government-arts-college-vellore",
+      "universityName": "Muthurangam Government Arts College (Autonomous), Vellore",
+      "sourceBatch": "codex-mgac-vellore-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.mgacvlr.edu.in/NAAC/202324/MGACCAL202324.pdf",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.mgacvlr.edu.in/",
+          "rightsBasis": "Genuine college-published identifying crest and campus photograph used for factual identification and illustration; no open licence or ownership transfer asserted.",
+          "altText": "Muthurangam Government Arts College complete official Tamil and English crest",
+          "visualCheck": "Full native291square unchanged embedded JPEG page1 image0, completecircle/shield/motto/EnglishTamilidentity. Parentroot andworker independently viewed andaccepted; noediting/upscaling.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgac-vellore-20261025/calendar-asset-000.jpg",
+          "sha256": "265519afebad36c61c39bbcf0fe7fdd40d393dcc7c857c54e6faedb27e07a4c6",
+          "width": 291,
+          "height": 291,
+          "proposedPublicId": "studentstraffic/universities/muthurangam-government-arts-college-vellore/logo-20261025",
+          "verificationMethod": "Ordinary public GET of original official asset/PDF, retained checksum, sequential local fulloriginalpixel review and root review.",
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Original embedded291x291JPEG image0,page1 of official2023\u201324handbook; extracted unchanged with pdfimages -f1 -l1 -j. Full originalPDF and completepage rendering retained; no cropping or resampling.",
+          "originalDocumentLocalPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgac-vellore-20261025/calendar.pdf",
+          "originalDocumentSha256": "ebb4e420da26804039697e2a1af5e48851765d9bea04e8e52af74b7d844e0322"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.mgacvlr.edu.in/images/slideshow/IMG4758.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://www.mgacvlr.edu.in/",
+          "rightsBasis": "Genuine college-published identifying crest and campus photograph used for factual identification and illustration; no open licence or ownership transfer asserted.",
+          "altText": "Shaded college building and courtyard on Muthurangam Government Arts College\u2019s official website",
+          "visualCheck": "Full native510x381 genuineinstitutionalbuilding/shadedcourtyardphotograph, observedownhomepageimage23. Parentroot andworker independently viewed andaccepted, no assumedcapturedate or syntheticediting.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/mgac-vellore-20261025/cover.png",
+          "sha256": "79749830216ec487b62c2803f1dc16c85e142048251920ecf24a6aee0ccc6247",
+          "width": 510,
+          "height": 381,
+          "proposedPublicId": "studentstraffic/universities/muthurangam-government-arts-college-vellore/cover-20261025",
+          "verificationMethod": "Ordinary public GET of original official asset/PDF, retained checksum, sequential local fulloriginalpixel review and root review.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "government-thirumagal-mills-college-gudiyatham",
+      "universityName": "Government Thirumagal Mills College, Gudiyatham",
+      "sourceBatch": "codex-tn-gtmc-gudiyatham-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gtmc.edu.in/images/logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://gtmc.edu.in/index.aspx",
+          "rightsBasis": "Official college public crest/wordmark and genuine college entrance photograph, used for institutional identification and campus context. Full originals retained; no open licence, ownership transfer, synthetic generation or capture-date claim.",
+          "altText": "Government Thirumagal Mills College complete crest and wordmark",
+          "visualCheck": "Complete407x92crest/GTMCollegewordmark onwhite; noNAACtext,crop orupscaling.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectpublicordinaryHTTPSGET andnativefulloriginalvisualreview; ownHTMLsourceassociation, noediting.",
+          "proposedPublicId": "studentstraffic/universities/government-thirumagal-mills-college-gudiyatham/logo-20261025",
+          "localPath": "research/india-source-bundles/gtmc-gudiyatham-20261025/logo.png",
+          "sha256": "d260d4632f9e382e091121c36951d731eebc911fd57d104443736a1dceefa690",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gtmc.edu.in/images/banner_img0.jpeg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gtmc.edu.in/index.aspx",
+          "rightsBasis": "Official college public crest/wordmark and genuine college entrance photograph, used for institutional identification and campus context. Full originals retained; no open licence, ownership transfer, synthetic generation or capture-date claim.",
+          "altText": "Government Thirumagal Mills College entrance gateway and tree-lined campus in Gudiyatham",
+          "visualCheck": "Full1600x1200genuineentrancegatewithTamil/Englishcollegeidentity,trees andpeople; homepagebackgroundassociation verified/rootapproved,no capturedate/highresolutionassertion.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectpublicordinaryHTTPSGET andnativefulloriginalvisualreview; ownHTMLsourceassociation, noediting.",
+          "proposedPublicId": "studentstraffic/universities/government-thirumagal-mills-college-gudiyatham/cover-20261025",
+          "localPath": "research/india-source-bundles/gtmc-gudiyatham-20261025/banner0.jpeg",
+          "sha256": "270b576b597671cd6eb32ac988d826436954fc3b2a0be66ba51cc295da36737b",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0347-india-government-thirumagal-mills-college-gudiyatham"
+    },
+    {
+      "universitySlug": "government-arts-science-college-perumbakkam-chennai",
+      "universityName": "Government Arts and Science College, Perumbakkam, Chennai",
+      "sourceBatch": "codex-tn-gasc-perumbakkam-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gascperumbakkam.in/wp-content/uploads/2025/02/new-logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascperumbakkam.in/",
+          "rightsBasis": "Official Tamil Nadu Government emblem as displayed in the college\u2019s public institutional header, used for government-college identification; no bespoke college crest, open licence or ownership transfer claimed.",
+          "altText": "Tamil Nadu Government emblem used in the college\u2019s institutional header",
+          "visualCheck": "Full native148x148 government emblem on white tile; accurately identified as state emblem, not bespoke college crest. Root and worker original review accepted.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval, original checksum and full original pixel review; no editing, upscaling or provider actions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-perumbakkam-20261025/logo.png",
+          "sha256": "ed6b1b8cd9d247b6dc8176dcefb87653a02cd8b155a2748f4092bf52f898bd72",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-perumbakkam-chennai/logo-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gascperumbakkam.in/wp-content/uploads/2025/02/2019-07-12-1-1024x427-2.jpg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gascperumbakkam.in/",
+          "rightsBasis": "Official college public campus photograph used for institutional illustration; no open licence or ownership transfer claimed.",
+          "altText": "Government Arts and Science College Perumbakkam building as illustrated on its official website",
+          "visualCheck": "Full native1024x427 genuine own campus building photograph, construction-visible grounds; no capture-date or current-completion claim. Root and worker original review accepted.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP retrieval, original checksum and full original pixel review; no editing, upscaling or provider actions.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/gasc-perumbakkam-20261025/campus.jpg",
+          "sha256": "9dcc1f96b2d06b27e1f70ea58f05f6b0e5e6ecd4f9457d7bca2addbc41f3dcee",
+          "proposedPublicId": "studentstraffic/universities/government-arts-science-college-perumbakkam-chennai/cover-20261025",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

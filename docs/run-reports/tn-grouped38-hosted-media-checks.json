@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "muthurangam-government-arts-college-vellore",
+    "checks": [
+      {
+        "status": 200,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  {
+    "slug": "government-thirumagal-mills-college-gudiyatham",
+    "checks": [
+      {
+        "status": 200,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  {
+    "slug": "government-arts-science-college-perumbakkam-chennai",
+    "checks": [
+      {
+        "status": 200,
+        "pass": true
+      },
+      {
+        "status": 200,
+        "pass": true
+      }
+    ],
+    "pass": true
+  }
+]

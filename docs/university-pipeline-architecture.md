@@ -638,7 +638,7 @@ The UI omits empty intake facets; no guessed date, cohort or database schema cha
 ### Native reported fee quotes (2026-10-25)
 
 A programme can retain an optional `admissionsContent.reportedFeeQuote` in the existing JSONB
-column, without a database migration. It stores `currency`, positive safe-integer `minAmount`,
+column, without a database migration. It stores `currency`, non-negative safe-integer `minAmount`,
 optional `maxAmount` (at least the minimum), `status` (`confirmed` or `indicative`), `period`
 (`semester`, `academic_year`, `first_year`, `full_course` or `other`), `componentBasis`, optional
 `audience` and `category`, `academicYear`, `sourceUrl`, `sourceLabel` and `verifiedAt`.
@@ -653,6 +653,11 @@ both visual and accessibility per-year units. The legacy `annualFeeLabel` is a d
 with the label **Fees**; quote basis, source, date and year are not rendered. Existing renderable
 annual tuition, including explicitly confirmed native zero, has precedence. Missing or malformed
 quotes retain the normal unknown-fee fallback.
+
+An explicitly sourced NIL quote may retain `minAmount: 0` with its native period and tuition-only
+basis, including separate compulsory charges. It needs the same complete provenance and matching
+evidence as a positive quote. Missing/null/string amounts and legacy numeric zero sentinels remain
+unknown; a quoted zero does not become annual tuition, a free course, or a structured Offer.
 
 `formatProgramAnnualFee`, annual tuition renderability, numeric budget/filter/sort inputs and
 annual tuition SEO/structured Offers remain independent of quotes. Never annualise a semester or

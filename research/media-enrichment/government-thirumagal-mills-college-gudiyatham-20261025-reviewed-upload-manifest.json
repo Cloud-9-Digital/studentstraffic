@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "government-thirumagal-mills-college-gudiyatham",
+      "universityName": "Government Thirumagal Mills College, Gudiyatham",
+      "sourceBatch": "codex-tn-gtmc-gudiyatham-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://gtmc.edu.in/images/logo.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://gtmc.edu.in/index.aspx",
+          "rightsBasis": "Official college public crest/wordmark and genuine college entrance photograph, used for institutional identification and campus context. Full originals retained; no open licence, ownership transfer, synthetic generation or capture-date claim.",
+          "altText": "Government Thirumagal Mills College complete crest and wordmark",
+          "visualCheck": "Complete407x92crest/GTMCollegewordmark onwhite; noNAACtext,crop orupscaling.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectpublicordinaryHTTPSGET andnativefulloriginalvisualreview; ownHTMLsourceassociation, noediting.",
+          "proposedPublicId": "studentstraffic/universities/government-thirumagal-mills-college-gudiyatham/logo-20261025",
+          "localPath": "research/india-source-bundles/gtmc-gudiyatham-20261025/logo.png",
+          "sha256": "d260d4632f9e382e091121c36951d731eebc911fd57d104443736a1dceefa690",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://gtmc.edu.in/images/banner_img0.jpeg",
+          "sourceType": "official-university",
+          "sourcePage": "https://gtmc.edu.in/index.aspx",
+          "rightsBasis": "Official college public crest/wordmark and genuine college entrance photograph, used for institutional identification and campus context. Full originals retained; no open licence, ownership transfer, synthetic generation or capture-date claim.",
+          "altText": "Government Thirumagal Mills College entrance gateway and tree-lined campus in Gudiyatham",
+          "visualCheck": "Full1600x1200genuineentrancegatewithTamil/Englishcollegeidentity,trees andpeople; homepagebackgroundassociation verified/rootapproved,no capturedate/highresolutionassertion.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "DirectpublicordinaryHTTPSGET andnativefulloriginalvisualreview; ownHTMLsourceassociation, noediting.",
+          "proposedPublicId": "studentstraffic/universities/government-thirumagal-mills-college-gudiyatham/cover-20261025",
+          "localPath": "research/india-source-bundles/gtmc-gudiyatham-20261025/banner0.jpeg",
+          "sha256": "270b576b597671cd6eb32ac988d826436954fc3b2a0be66ba51cc295da36737b",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0347-india-government-thirumagal-mills-college-gudiyatham"
+    }
+  ]
+}
