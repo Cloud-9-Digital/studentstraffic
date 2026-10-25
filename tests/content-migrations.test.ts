@@ -221,6 +221,40 @@ test("verified programmes may omit unknown intake dates without inventing a mont
   });
 });
 
+test("unknown medium requires explicit omission; known language needs matching labels and verified evidence", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const id = "0267-language-policy";
+    const directory = join(root, id);
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({ version: 1, id, description: "Validate honest optional teaching-language publication.", createdAt: "2026-10-25", payload: "payload.json" }));
+    const payload = structuredClone(validPayload);
+    const programme = payload.universities[0]!.programmes[0]!;
+    programme.medium = "";
+    programme.instructionLanguages = [];
+    programme.teachingPhases = [{ phase: "Academic study", language: "", details: "Regular programme delivery; teaching language has not been established." }];
+    const write = () => writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await write();
+    await assert.rejects(readContentMigrations(root), /needs omit medium evidence/);
+    const medium = { ...payload.evidence[0]!, publicField: "medium", status: "omit", claimText: "Current official programme source checked; instruction language remains unconfirmed." };
+    payload.evidence.push(medium);
+    await write();
+    assert.equal((await readContentMigrations(root))[0]?.payload.universities[0]?.programmes[0]?.medium, "");
+    programme.medium = "English";
+    programme.instructionLanguages = ["english"];
+    await write();
+    await assert.rejects(readContentMigrations(root), /needs verified medium evidence/);
+    medium.status = "verified";
+    await write();
+    assert.equal((await readContentMigrations(root)).length, 1);
+    programme.medium = "Tamil";
+    await write();
+    await assert.rejects(readContentMigrations(root), /must match instructionLanguages/);
+    programme.medium = "";
+    await write();
+    await assert.rejects(readContentMigrations(root), /medium is missing/);
+  });
+});
+
 test("checksums a CRLF checkout the same as its LF original", () => {
   const manifest = '{\n  "id": "0001-test-university"\n}\n';
   const payload = '{\n  "courses": []\n}\n';

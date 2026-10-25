@@ -325,6 +325,10 @@ const globalProgrammeFamilies = defineProgrammes([
   {"slug": "integrated-mcom", "name": "Integrated Master of Commerce", "shortName": "Integrated M.Com.", "stream": "economics-commerce", "level": "integrated-masters", "discipline": "commerce", "aliases": ["Five-year Integrated MCom", "Integrated M.Com."]},
   {"slug": "master-criminology", "name": "Master's in Criminology", "shortName": "Master's Criminology", "stream": "social-sciences", "level": "masters", "discipline": "criminology", "aliases": ["MSc Criminology and Criminal Justice Sciences", "Master of Criminology"]},
   {"slug": "master-archaeology", "name": "Master's in Archaeology", "shortName": "Master's Archaeology", "stream": "arts-humanities", "level": "masters", "discipline": "archaeology", "aliases": ["MA Archaeology", "Master of Arts in Archaeology"]},
+  {"slug": "bachelor-industrial-safety", "name": "Bachelor's in Industrial Safety", "shortName": "Bachelor's Industrial Safety", "stream": "environment-sustainability", "level": "bachelors", "discipline": "industrial-safety", "aliases": ["BSc Industrial Safety", "Bachelor of Science in Industrial Safety"]},
+  {"slug": "bachelor-surveying-spatial-science", "name": "Bachelor's in Surveying and Spatial Science", "shortName": "Bachelor's Surveying and Spatial Science", "stream": "natural-sciences", "level": "bachelors", "discipline": "surveying-spatial-science", "aliases": ["BSc Surveying and Spatial Science", "Bachelor of Science in Surveying and Spatial Sciences"]},
+  {"slug": "master-real-estate-valuation", "name": "Master's in Real Estate Valuation", "shortName": "Master's Real Estate Valuation", "stream": "business", "level": "masters", "discipline": "real-estate-valuation", "aliases": ["MSc Real Estate Valuation", "Master of Science in Real Estate Valuation"]},
+  {"slug": "bachelor-human-resource-management", "name": "Bachelor's in Human Resource Management", "shortName": "Bachelor's HRM", "stream": "business", "level": "bachelors", "discipline": "human-resource-management", "aliases": ["BA Human Resource Management", "Bachelor of Arts in Human Resource Management"]},
 ]);
 
 /**

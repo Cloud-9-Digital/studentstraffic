@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "dr-mgr-educational-and-research-institute",
+      "universityName": "Dr. M.G.R. Educational and Research Institute",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://drmgrdu.ac.in/wp-content/uploads/2025/05/drmgr_logo.jpg",
+          "sourceType": "official",
+          "sourcePage": "https://drmgrdu.ac.in/",
+          "rightsBasis": "Official university-owned institutional identifying asset; no open licence claimed. Native150×150officialidentifyingcrest, purple/yellowshieldwithmedical/study/musicsymbols,wreathandmotto; fullinstitutionnameencirclescrest. Visuallyinspectednativeimage.Noedit.",
+          "verificationMethod": "Native150×150officialidentifyingcrest, purple/yellowshieldwithmedical/study/musicsymbols,wreathandmotto; fullinstitutionnameencirclescrest. Visuallyinspectednativeimage.Noedit.",
+          "localPath": "research/india-source-bundles/dr-mgr-educational-and-research-institute/crest.jpg",
+          "sha256": "5b709bc2db4a52ebf5aed46e4decffc2f48f5b0b3077bf3c7787e0e807921c04",
+          "width": 150,
+          "height": 150,
+          "altText": "Dr. M.G.R. Educational and Research Institute crest",
+          "proposedPublicId": "studentstraffic/universities/dr-mgr-educational-and-research-institute/logo",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://drmgrdu.ac.in/wp-content/uploads/2026/04/drmgr_new_overview.avif",
+          "sourceType": "official",
+          "sourcePage": "https://drmgrdu.ac.in/",
+          "rightsBasis": "Official university-owned institutional identifying asset; no open licence claimed. Native990×680officialhomepageoverviewphotograph: namedDrMGRuniversityglass-frontbuilding,AshaBlock,courtyardandstatue. NotARNI/Bengalurumedia. AVIForiginalunaltered; losslessPNGdecodeonlyforview_imageinspection because toolrejectsAVIF. Noresize/crop/syntheticcontent.",
+          "verificationMethod": "Native990×680officialhomepageoverviewphotograph: namedDrMGRuniversityglass-frontbuilding,AshaBlock,courtyardandstatue. NotARNI/Bengalurumedia. AVIForiginalunaltered; losslessPNGdecodeonlyforview_imageinspection because toolrejectsAVIF. Noresize/crop/syntheticcontent.",
+          "localPath": "research/india-source-bundles/dr-mgr-educational-and-research-institute/overview.avif",
+          "sha256": "7463d3a8e67008aaeefa1754ca499fade49a1f6ecfb3a46c35c4f3530a8b6387",
+          "width": 990,
+          "height": 680,
+          "altText": "Dr. M.G.R. university building and Asha Block around a campus courtyard",
+          "proposedPublicId": "studentstraffic/universities/dr-mgr-educational-and-research-institute/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0267-india-dr-mgr-educational-and-research-institute"
+    },
+    {
+      "universitySlug": "tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university",
+      "universityName": "Tamil Nadu Dr. J. Jayalalithaa Music and Fine Arts University",
+      "sourceBatch": "codex-tn-music-fine-arts-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnjjmfau.in/images/logo.gif",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Official university website asset used for institutional identification and educational context. No open licence or ownership transfer claimed; original retained.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university/logo-20261025",
+          "altText": "Complete university crest with the motto Practice Makes Perfect",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/tn-music-fine-arts-20261025/logo.gif",
+          "sha256": "fd1459442117250c8044313912b781e1ca8794151bef124430f82236ecbb75b7",
+          "width": 1183,
+          "height": 1375,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete official original; no crop, synthetic generation or upscale.",
+          "visualReview": "Local image visually reviewed; complete crest including motto / genuine music performance photograph. No assertion of current cohort or pictured student identity."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnjjmfau.in/images/slider/BABU9886.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Official university website asset used for institutional identification and educational context. No open licence or ownership transfer claimed; original retained.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university/cover-20261025",
+          "altText": "Music performance shown on the university website, with singers and mridangam accompaniment",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/tn-music-fine-arts-20261025/BABU9886.jpg",
+          "sha256": "9d535e070514ba2eb0246fc0750c141710115855d3f5ce1d36b52908d8eeb033",
+          "width": 5760,
+          "height": 3840,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete official original; no crop, synthetic generation or upscale.",
+          "visualReview": "Local image visually reviewed; complete crest including motto / genuine music performance photograph. No assertion of current cohort or pictured student identity."
+        }
+      ],
+      "migrationId": "0268-india-tamil-nadu-dr-j-jayalalithaa-music-and-fine-arts-university"
+    }
+  ]
+}

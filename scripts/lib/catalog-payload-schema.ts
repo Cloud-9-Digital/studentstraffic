@@ -4,6 +4,7 @@ import { z } from "zod";
 import { programmeLevels, programmeStreams } from "@/lib/data/program-taxonomy";
 import {
   intakeMonthCodes,
+  teachingLanguageCodes,
 } from "@/lib/catalogue-facets";
 import {
   instructionLanguagesSchema,
@@ -103,7 +104,8 @@ export { programmeMediumNoteSchema, programmeMediumSchema };
  */
 export const legacyFreeTextMediumSchema = z.string().min(2);
 
-type OfferingMediumSchema = typeof programmeMediumSchema | typeof legacyFreeTextMediumSchema;
+const optionalMediumSchema = z.union([z.literal(""), programmeMediumSchema]);
+type OfferingMediumSchema = typeof optionalMediumSchema | typeof programmeMediumSchema | typeof legacyFreeTextMediumSchema;
 
 const cloudinaryImageUrlSchema = z.string().url().refine(
   (value) => new URL(value).hostname === "res.cloudinary.com",
@@ -160,7 +162,7 @@ const createProgrammeSchema = (mediumSchema: OfferingMediumSchema) => z.object({
   }),
   medium: mediumSchema,
   mediumNote: programmeMediumNoteSchema,
-  instructionLanguages: instructionLanguagesSchema,
+  instructionLanguages: mediumSchema === optionalMediumSchema ? z.array(z.enum(teachingLanguageCodes)) : instructionLanguagesSchema,
   intakeMonths: z.array(z.string().min(2)),
   intakeCodes: z.array(z.enum(intakeMonthCodes)),
   feeVerifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
@@ -235,7 +237,7 @@ function createCatalogPayloadSchema(mediumSchema: OfferingMediumSchema) {
 }
 
 /** Strict schema for every new content-migration bundle. */
-export const catalogPayloadSchema = createCatalogPayloadSchema(programmeMediumSchema);
+export const catalogPayloadSchema = createCatalogPayloadSchema(optionalMediumSchema);
 
 /**
  * Identical to `catalogPayloadSchema` except offering `medium` uses `legacyFreeTextMediumSchema`.

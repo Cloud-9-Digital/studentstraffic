@@ -1,3 +1,4 @@
+import { checkOfferingLanguageFields } from "./programme-medium";
 import { assertReportedFeeQuoteEvidence } from "./reported-fee-quote-evidence";
 import { createHash } from "node:crypto";
 import type { Dirent } from "node:fs";
@@ -195,6 +196,17 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string, no
         : evidence.some((item) => item.publicField === "intake" && item.status === "omit");
       if (!hasFieldEvidence("admissions", ["verified"]) || !hasIntakeEvidence) {
         throw new Error(`${migrationId} is missing verified admissions or intake evidence for ${programme.slug}.`);
+      }
+
+      // Applied bundles retain their original validation contract. From 0266,
+      // unknown language is explicit omission, while known languages require proof.
+      if (!programme.medium || Number(migrationId.slice(0, 4)) >= 266) {
+        const language = checkOfferingLanguageFields({ ...programme, allowUnknown: true });
+        if (!language.ok) throw new Error(`${migrationId} programme '${programme.slug}': ${language.issues.join("; ")}`);
+        const status = programme.medium ? "verified" : "omit";
+        if (!evidence.some((item) => item.publicField === "medium" && item.status === status && (item.sourceGrade === "A" || item.sourceGrade === "B"))) {
+          throw new Error(`${migrationId} needs ${status} medium evidence for ${programme.slug}.`);
+        }
       }
 
       const quote = programme.admissionsContent.reportedFeeQuote;

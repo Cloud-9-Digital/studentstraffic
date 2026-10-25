@@ -102,7 +102,7 @@ export function ProgramList({
               {open ? (
                 <View style={s.facts}>
                   <Fact icon="time-outline" label="Duration" value={program.durationYears ? `${program.durationYears} years` : "Not confirmed"} />
-                  <Fact icon="language-outline" label="Language" value={program.medium || "Not confirmed"} />
+                  {program.medium ? <Fact icon="language-outline" label="Language" value={program.medium} /> : null}
                   {program.intakeMonths?.length ? <Fact icon="calendar-outline" label="Intake" value={program.intakeMonths.join(", ")} /> : null}
                 </View>
               ) : null}

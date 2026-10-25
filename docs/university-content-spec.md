@@ -223,7 +223,7 @@ support like "FMGE prep sessions" not generic "exam support available").
 
 ### Medium of instruction
 
-Use a concise language label derived from controlled `instructionLanguages`. Store short source-backed teaching-phase caveats in `mediumNote`, with detailed delivery and language requirements in teaching phases or admissions content; never put paragraphs into `medium`. Preserve known clinical-language transitions. Where teaching language is not established, hold the programme rather than publishing a placeholder or inferring English.
+Use a concise language label derived from controlled `instructionLanguages`. Store short source-backed teaching-phase caveats in `mediumNote`, with detailed delivery and language requirements in teaching phases or admissions content; never put paragraphs into `medium`. Preserve known clinical-language transitions. Where teaching language is not established, publish an otherwise verified programme with `medium: ""`, `instructionLanguages: []` and explicit programme `medium` evidence with `status: "omit"`. Hide unknown language publicly and exclude it from language filters; never infer English from country or website language. Known language labels/codes must agree and retain verified evidence. Unknown intake similarly uses empty arrays with omit evidence.
 
 ### Confirmed NIL tuition
 

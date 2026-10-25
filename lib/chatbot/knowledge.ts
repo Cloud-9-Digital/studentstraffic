@@ -30,6 +30,7 @@ import {
   formatProgramFee,
   formatProgramDuration,
   formatProgramLivingFee,
+  formatProgramMedium,
 } from "@/lib/utils";
 
 /**
@@ -106,7 +107,7 @@ function toCard(program: FinderProgram): ChatUniversityCard {
     annualFee: formatProgramFee(program.offering),
     annualFeeUsd: getChartableUsdFee(program),
     courses: [program.course.shortName],
-    medium: program.offering.medium,
+    medium: formatProgramMedium(program.offering.medium, program.country.slug) ?? "",
     intakes: program.offering.intakeMonths ?? [],
   };
 }
@@ -154,7 +155,7 @@ function describeProgram(program: FinderProgram) {
     annualLivingCost: formatProgramLivingFee(program.offering),
     feeStatus: program.offering.feeStatus ?? "unspecified",
     feeAcademicYear: program.offering.feeAcademicYear,
-    teachingMedium: program.offering.medium,
+    teachingMedium: formatProgramMedium(program.offering.medium, program.country.slug) ?? undefined,
     intakes: program.offering.intakeMonths,
     page: getUniversityHref(program.university.slug),
   };
@@ -425,7 +426,7 @@ export async function compareUniversities(input: {
             duration: formatProgramDuration(program.offering.durationYears),
             fee: formatProgramFee(program.offering),
             annualTuition: formatProgramAnnualFee(program.offering),
-            teachingMedium: program.offering.medium,
+            teachingMedium: formatProgramMedium(program.offering.medium, program.country.slug) ?? undefined,
             intakes: program.offering.intakeMonths,
           })),
           thingsToConsider: university.thingsToConsider,

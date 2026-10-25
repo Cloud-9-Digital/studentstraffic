@@ -22,3 +22,9 @@ Other regular degrees lack an explicit verified campus teaching medium after the
 ## Media
 
 Reviewed manifest: research/media-enrichment/periyar-university-2026-10-25.json . Official180×210 crest and official homepage1100×500 campus hero https://www.periyaruniversity.ac.in/Need/images/grid.jpg . Local pixels inspected; founder portrait and attribution-dependent Commons alternative rejected as cover. No Cloudinary or database access performed.
+
+## Bounded forward review —25October2026
+
+Root-authorised forward research owner codex-tn-periyar-expand-20261025 preserves the published0199pointer/count4. All138 discoveries retained; previous regular-degree holds are primarily exact teaching medium, so optional intake dates do not independently unblock those awards. No CDOE/affiliated language table is transferred. Four exact2025–26 domestic department first-year composite amounts are in a complete fee-only forward draft, statusindicative with sourceyear retained. Full source/table checks and exact holds: `research/india-source-bundles/periyar-expand-20261025/review.md`. Draft-only through Group17freeze; noDB/upload/commit.
+
+Final25October0266:27regular Salem degrees,27indicative official2025–26first-year composite quotes,4existingacademicrecords+mediaunchanged;23newunknownlanguage/intakeomittedexplicitly. Earlier medium-onlyholds superseded; see expansion source review for genuine residualgaps.

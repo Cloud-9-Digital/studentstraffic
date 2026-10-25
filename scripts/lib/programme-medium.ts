@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { teachingLanguageCodes, type TeachingLanguageCode } from "@/lib/catalogue-facets";
+import { getTeachingLanguageLabel, teachingLanguageCodes, type TeachingLanguageCode } from "@/lib/catalogue-facets";
 
 /**
  * Single source of truth for programme teaching-language fields.
@@ -65,8 +65,14 @@ export function checkOfferingLanguageFields(input: {
   medium?: unknown;
   mediumNote?: unknown;
   instructionLanguages?: unknown;
+  allowUnknown?: boolean;
 }): OfferingLanguageCheck {
   const issues: string[] = [];
+  if (input.allowUnknown && input.medium === "" && Array.isArray(input.instructionLanguages) && input.instructionLanguages.length === 0) {
+    const note = programmeMediumNoteSchema.safeParse(input.mediumNote);
+    if (!note.success) return { ok: false, issues: ["mediumNote is invalid."] };
+    return { ok: true, value: { medium: "", mediumNote: note.data ?? null, instructionLanguages: [] } };
+  }
 
   let medium: string | undefined;
   if (typeof input.medium !== "string" || input.medium.trim() === "") {
@@ -103,6 +109,8 @@ export function checkOfferingLanguageFields(input: {
   if (issues.length > 0 || medium === undefined || instructionLanguages === undefined) {
     return { ok: false, issues };
   }
+  const expected = [...new Set(instructionLanguages)].sort().map(getTeachingLanguageLabel).join(" / ");
+  if (medium !== expected) return { ok: false, issues: ["medium must match instructionLanguages labels in canonical order."] };
   return { ok: true, value: { medium, mediumNote, instructionLanguages } };
 }
 

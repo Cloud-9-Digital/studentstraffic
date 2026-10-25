@@ -256,7 +256,7 @@ module the content-migration payload schema uses:
 - `medium` is required and must pass `programmeMediumSchema` (2-40 chars, no `. ; : ( )` or newlines,
   no placeholders such as `Not confirmed` / `TBC` / `Unknown` / `N/A`). There is no `"English"`
   fallback any more.
-- `instructionLanguages` is required, non-empty, and every code must be in
+- For known-language programmes and legacy direct writers, `instructionLanguages` is required, non-empty, and every code must be in
   `teachingLanguageCodes` (`lib/catalogue-facets.ts`). The database enforces the same list in the
   `normalize_program_medium_fields()` trigger, which also rewrites `medium` to the codes' labels in
   alphabetical order (e.g. `English / Hindi`). Adding a language therefore needs both the TypeScript
@@ -268,7 +268,7 @@ module the content-migration payload schema uses:
 - Content-migration bundles use the same strict rule, except the 18 frozen, already-applied bundles in
   `LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS` (`scripts/lib/content-migrations.ts`), which parse with the old
   free-text `medium` (`z.string().min(2)`, stored verbatim) because they are checksum-locked; every new
-  bundle must use a language label in `medium` plus `mediumNote` for detail.
+  known-language bundle must use a language label in `medium` plus `mediumNote` for detail. Canonical migrations may explicitly omit unknown language under the optional-language rule below.
 
 Both writers persist `instruction_languages`; `medium_note` is written only when supplied (an
 UPDATE keeps an existing note otherwise). Run the importer with `npx tsx
@@ -659,3 +659,7 @@ annual tuition SEO/structured Offers remain independent of quotes. Never annuali
 full-course amount, divide a combined quote into invented tuition, convert it to an inferred USD
 budget, or multiply it into a course total. Finder/detail/university-list and build-snapshot cache
 versions changed with this projection. Publication refreshes the existing catalogue tags.
+
+### Optional teaching language (25 October 2026)
+
+From content migration 0266, otherwise verified programmes may use `medium: ""` and `instructionLanguages: []` only with programme-level `medium` evidence marked `omit`. Known languages require Grade A/B verified medium evidence and exact canonical label/code agreement. Historical applied bundles retain their original contract. Legacy direct writers remain strict and cannot bypass omission evidence; use the canonical migration reader for unknown language. No country default fills English. Empty arrays contribute no language facets and unknown labels are hidden publicly. The deployed 0083 trigger stores an empty array as `Not confirmed`; the public formatter hides both that legacy sentinel and blank labels, so no database schema change is required. Unknown intake follows the same explicit omission pattern.

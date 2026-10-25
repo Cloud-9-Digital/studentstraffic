@@ -275,8 +275,7 @@ unconfirmed. Leave both `intakeMonths` and `intakeCodes` empty, record programme
 with `status: "omit"` and the checked source/gap, and use a short pending-date caveat if useful.
 Do not substitute an old orientation date or a general reopening date simply to fill the facet.
 An advertised month still requires verified intake evidence and matching controlled labels.
-Teaching language remains required: establish it from applicable programme or institutional
-evidence, or hold that programme. Never guess to make a finder option appear.
+Teaching language may remain unknown for an otherwise verified current programme: use `medium: ""` and `instructionLanguages: []`, plus programme `medium` evidence with `status: "omit"` documenting the checked source and gap. Do not infer English from an Indian location, a translated website, an entry test or an English subject. Public language labels are hidden and language filters exclude these programmes. Known languages still require verified evidence and matching controlled labels/codes. This parallels the unknown-intake rule; identity, qualification, duration and applicable professional approval remain publication gates.
 
 ### 4. Build the complete publishing payload
 
