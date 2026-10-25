@@ -1,0 +1,114 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/psgtech-b-e-automobile-engineering",
+    "kind": "programme",
+    "slug": "psgtech-b-e-automobile-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Automobile at PSG College of Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/hits-b-tech-aeronautical-engineering",
+    "kind": "programme",
+    "slug": "hits-b-tech-aeronautical-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Aerospace at Hindustan Institute of Technology and Science",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/psg-college-of-technology",
+    "kind": "university",
+    "slug": "psg-college-of-technology",
+    "status": 200,
+    "h1": "PSG College of Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/hindustan-institute-of-technology-and-science",
+    "kind": "university",
+    "slug": "hindustan-institute-of-technology-and-science",
+    "status": 200,
+    "h1": "Hindustan Institute of Technology and Science",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/ethiraj-b-com-commerce",
+    "kind": "programme",
+    "slug": "ethiraj-b-com-commerce",
+    "status": 200,
+    "h1": "B.Com at Ethiraj College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/ethiraj-b-com-bank-management",
+    "kind": "programme",
+    "slug": "ethiraj-b-com-bank-management",
+    "status": 200,
+    "h1": "B.Com at Ethiraj College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/ethiraj-college-for-women",
+    "kind": "university",
+    "slug": "ethiraj-college-for-women",
+    "status": 200,
+    "h1": "Ethiraj College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/thiruvalluvar-university",
+    "kind": "university",
+    "slug": "thiruvalluvar-university",
+    "status": 200,
+    "h1": "Thiruvalluvar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/tvu-b-sc-computer-science",
+    "kind": "programme",
+    "slug": "tvu-b-sc-computer-science",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Thiruvalluvar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/mtwu-m-sc-biotechnology",
+    "kind": "programme",
+    "slug": "mtwu-m-sc-biotechnology",
+    "status": 200,
+    "h1": "M.Sc. Biotechnology at Mother Teresa Women&#x27;s University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/mother-teresa-womens-university",
+    "kind": "university",
+    "slug": "mother-teresa-womens-university",
+    "status": 200,
+    "h1": "Mother Teresa Women&#x27;s University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/manonmaniam-sundaranar-university",
+    "kind": "university",
+    "slug": "manonmaniam-sundaranar-university",
+    "status": 200,
+    "h1": "Manonmaniam Sundaranar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/msu-b-sc-artificial-intelligence-and-machine-learning",
+    "kind": "programme",
+    "slug": "msu-b-sc-artificial-intelligence-and-machine-learning",
+    "status": 200,
+    "h1": "B.Sc. AI &amp; ML at Manonmaniam Sundaranar University",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/msu-m-sc-mathematics-integrated-5-years",
+    "kind": "programme",
+    "slug": "msu-m-sc-mathematics-integrated-5-years",
+    "status": 200,
+    "h1": "Integrated M.Sc. Mathematics at Manonmaniam Sundaranar University",
+    "pass": true
+  }
+]
