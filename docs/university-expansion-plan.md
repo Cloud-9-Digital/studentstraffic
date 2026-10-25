@@ -141,8 +141,8 @@ research, validate and package the entries as a content migration. Do not run
 importer (via `npx tsx`), every entry must carry a verified `medium` (no `Not confirmed` / `TBC` /
 `Unknown` / `N/A` placeholders) and a non-empty `instructionLanguages` array from
 `lib/catalogue-facets.ts`; otherwise the whole file is rejected before any write. The same rules
-apply to `publish-university-draft.ts` and to content-migration payloads (see
-`docs/university-pipeline-architecture.md` §1b).
+apply to `publish-university-draft.ts`. Canonical content migrations additionally support unknown
+language through explicit omission evidence (see `docs/university-pipeline-architecture.md`).
 
 ## Country/scope priority queue
 

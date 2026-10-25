@@ -44,11 +44,11 @@ Keep it current — see "Keeping this doc current" at the bottom.
   `officialProgramUrl`, `medium` (short display label: language names only joined with " / ",
   e.g. `English` or `English / Russian`; payload zod enforces max 40 chars, rejects `. ; : ( )`
   or newlines, and rejects placeholder values `Not confirmed`, `TBC`, `To be confirmed`, `Unknown`
-  and `N/A` case-insensitively — omit the programme until the language is verified), `mediumNote` (optional, nullable `medium_note`, drizzle `0073`: 10-300 chars of
+  and `N/A` case-insensitively; canonical migrations may explicitly omit unknown language under the optional-language rule below), `mediumNote` (optional, nullable `medium_note`, drizzle `0073`: 10-300 chars of
   source-backed delivery nuance such as phase transitions or local-language clinical requirements;
   selected only by university/programme detail queries, never search documents, cards or facets),
   `instructionLanguages`
-  (controlled language-facet codes, at least one required), `intakeMonths` (calendar month labels only, matching `intakeCodes` in new bundles), `intakeCodes`
+  (controlled language-facet codes; empty only with explicit omission evidence in canonical migrations), `intakeMonths` (calendar month labels only, matching `intakeCodes` in new bundles), `intakeCodes`
   (controlled calendar-facet codes), `professionalExamSupport`, `sourceUrls`, `published`.
 
   **2026-07-20 facet normalization (drizzle `0068`).** `/universities` must filter only on
@@ -660,10 +660,14 @@ full-course amount, divide a combined quote into invented tuition, convert it to
 budget, or multiply it into a course total. Finder/detail/university-list and build-snapshot cache
 versions changed with this projection. Publication refreshes the existing catalogue tags.
 
-### Optional teaching language (25 October 2026)
+### Verified recognition (25 October 2026)
 
 Recognition arrays require at least one genuine body/designation and verification link. The actual migration reader accepts a single badge only with matching Grade A verified university recognition evidence. This removes the arbitrary two-badge floor while preserving recognition and applicable professional-approval checks; plain ownership/establishment facts cannot fill a second badge.
 
+### Reviewed original AVIF media (25 October 2026)
+
 Reviewed local media accepts original AVIF files using a bounded ISO-BMFF `ftyp` image brand check, alongside PNG/JPEG/GIF/WebP. Original-path containment, file-size bounds and reviewed SHA-256 checks remain required; an inspection-only PNG decode does not replace the original upload.
+
+### Optional teaching language (25 October 2026)
 
 From content migration 0266, otherwise verified programmes may use `medium: ""` and `instructionLanguages: []` only with programme-level `medium` evidence marked `omit`. Known languages require Grade A/B verified medium evidence and exact canonical label/code agreement. Historical applied bundles retain their original contract. Legacy direct writers remain strict and cannot bypass omission evidence; use the canonical migration reader for unknown language. No country default fills English. Empty arrays contribute no language facets and unknown labels are hidden publicly. The deployed 0083 trigger stores an empty array as `Not confirmed`; the public formatter hides both that legacy sentinel and blank labels, so no database schema change is required. Unknown intake follows the same explicit omission pattern.

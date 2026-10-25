@@ -1,0 +1,3 @@
+# Vel Tech native-fee forward
+
+Preserve34academicprogrammes/media. Current officialfee page advertises2026admissions; individual tariffblocks not independently cycle-labelled, so34indicative primary-source nativeannualquotes, notconfirmednormalizedtuition. BTech15full-fee phaseI/II/III tuition290000/310000/360000; genericMTech12 tuition52500; IndustrialSafety categories72500/100000; exactnamedMA/MSc5 tuition10000; MBAfourcategories142000/172000/192000/242000. Career/exam/deposit/blazer/application andconditionalmeritscholarships excluded. Nativephase/categoryranges no guaranteedallocation. NoFXannualbudgetconversion. SourceURLandbasisperrowinselectionJSON. Normalcurl403, webreader fetchedfulltable; no bypass.

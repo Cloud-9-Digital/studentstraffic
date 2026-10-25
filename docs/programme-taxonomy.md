@@ -361,3 +361,9 @@ HSC-entry integrated master's awards use distinct `integrated-msc-biological-sci
 `be-btech-fire-safety-engineering` is a neutral engineering bachelor family for fire technology, fire protection and safety engineering degrees. It is distinct from generic vocational safety certificates and from postgraduate industrial-safety engineering.
 
 `be-btech-nanotechnology` is a neutral engineering bachelor family for nanoscale materials, fabrication, characterisation and engineering applications. It does not combine science B.Sc./M.Sc. awards with B.E./B.Tech. degrees. NICHE exact official titles remain in programme records; its M.Tech. Nanotechnology uses the existing engineering materials master's family as a specialism. Neither family conveys a professional licence.
+
+`bachelor-public-administration` is a neutral undergraduate Public Administration family for the study of public institutions, governance, administrative processes, public policy, budgeting and accountability. It is distinct from Political Science and the postgraduate Public Administration family. Preserve each university’s exact award and curriculum; it does not imply civil-service appointment or an examination qualification.
+
+### Medical physiology residency (25 October 2026)
+
+`md-physiology` represents the medical MD residency in Physiology, with medicine stream and residency level. It requires a medical-degree entry route and is distinct from academic M.Sc. Physiology or biological-sciences master's awards. MAHER’s exact NMC-listed MD Physiology and three-year academic medical M.Sc. pathways retain separate degree types and qualifying routes.
