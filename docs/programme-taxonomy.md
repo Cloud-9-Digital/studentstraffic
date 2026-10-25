@@ -286,3 +286,32 @@ a forward migration after an offering-title audit.
 ## Defence and Strategic Studies
 
 `bachelor-defence-strategic-studies` is the neutral undergraduate family for a distinct Defence and Strategic Studies award. It covers national defence, security policy, military strategy, geopolitics and related international relations; it does not imply military recruitment, professional appointment or a postgraduate qualification. Preserve each institution's exact award title and verified duration separately. International Relations and Political Science remain separate families.
+
+## Home Science and postgraduate Music
+
+`bachelor-home-science` and `master-home-science` cover interdisciplinary Home Science
+and Community Science awards. Study can combine household resource management,
+human development, community education and applied scientific methods. Use the
+existing specialised nutrition, fashion design or psychology family when that is
+the actual discipline; membership of a Home Science faculty alone does not change
+an unrelated qualification. The Home Science families use the nearest existing
+`natural-sciences` stream and the `home-science` discipline. Preserve an institution's
+exact B.Sc./M.Sc. specialty, campus, duration and qualification requirements in its
+offering. An interior-design and resource-management Home Science award must not
+be relabelled as a professional architecture degree.
+
+`master-music` covers academic and performance master's awards in Music, including
+M.A. Music and Master of Music. It uses `design-creative-arts`, the `music` discipline
+and the master's level, matching the existing bachelor's Music family. Musical
+traditions, performance requirements, language and entry experience remain
+programme facts. It does not convert a dance award into Music or a vocational
+award into an academic science or engineering degree.
+
+`me-mtech-food-technology` preserves engineering master's awards in Food Technology,
+using the `engineering` stream, master's level and `food-technology` discipline.
+Study can cover food processing operations, preservation, process equipment,
+quality systems and engineering research. It is distinct from a science award in
+Nutrition or Food Science and from a general Agricultural Engineering master's.
+Keep each institution's exact qualifying engineering/science degree list and
+entrance conditions; the family does not imply that every science graduate is
+eligible for an engineering master's.
