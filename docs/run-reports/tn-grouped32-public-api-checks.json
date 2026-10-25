@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "stella-maris-college-chennai",
+    "status": 200,
+    "expectedCount": 40,
+    "expectedName": "Stella Maris College (Autonomous), Chennai",
+    "actualName": "Stella Maris College, Chennai",
+    "actualCount": 40,
+    "offerings": 40,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 40,
+    "actualQuoteLabels": 40,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "ramakrishna-mission-vivekananda-college-chennai",
+    "status": 200,
+    "expectedCount": 28,
+    "expectedName": "Ramakrishna Mission Vivekananda College (Autonomous), Chennai",
+    "actualName": "Ramakrishna Mission Vivekananda College, Chennai",
+    "actualCount": 28,
+    "offerings": 28,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 17,
+    "actualQuoteLabels": 17,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "guru-nanak-college-chennai",
+    "status": 200,
+    "expectedCount": 32,
+    "expectedName": "Guru Nanak College (Autonomous), Chennai",
+    "actualName": "Guru Nanak College, Chennai",
+    "actualCount": 32,
+    "offerings": 32,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 26,
+    "actualQuoteLabels": 26,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]

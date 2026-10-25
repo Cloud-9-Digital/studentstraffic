@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/rkmvc-b-a-economics-day",
+    "kind": "programme",
+    "slug": "rkmvc-b-a-economics-day",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Economics at Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/ramakrishna-mission-vivekananda-college-chennai",
+    "kind": "university",
+    "slug": "ramakrishna-mission-vivekananda-college-chennai",
+    "status": 200,
+    "h1": "Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/stella-maris-college-chennai",
+    "kind": "university",
+    "slug": "stella-maris-college-chennai",
+    "status": 200,
+    "h1": "Stella Maris College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/stella-maris-b-a-history-and-tourism",
+    "kind": "programme",
+    "slug": "stella-maris-b-a-history-and-tourism",
+    "status": 200,
+    "h1": "B.A. History at Stella Maris College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/rkmvc-b-com-general-evening",
+    "kind": "programme",
+    "slug": "rkmvc-b-com-general-evening",
+    "status": 200,
+    "h1": "B.Com at Ramakrishna Mission Vivekananda College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/gnc-b-a-economics",
+    "kind": "programme",
+    "slug": "gnc-b-a-economics",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Economics at Guru Nanak College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/guru-nanak-college-chennai",
+    "kind": "university",
+    "slug": "guru-nanak-college-chennai",
+    "status": 200,
+    "h1": "Guru Nanak College, Chennai",
+    "pass": true
+  }
+]
