@@ -1,0 +1,121 @@
+{
+  "manifestId": "tn-grouped13-20261025",
+  "checkedAt": "2026-10-25",
+  "status": "root-visually-reviewed",
+  "entries": [
+    {
+      "universitySlug": "avinashilingam-institute-for-home-science-and-higher-education-for-women",
+      "universityName": "Avinashilingam Institute for Home Science and Higher Education for Women",
+      "sourceBatch": "codex-avinashilingam-research-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://avinuty.ac.in/sites/avinuty.ac.in/files/2026-10/Ph.D%20Prospectus%20July%202026%20Final.pdf",
+          "sourceType": "official-university",
+          "rightsBasis": "Genuine university-published prospectus brand asset or campus photograph. Full original PDF and exact source URL retained; no synthetic content or ownership transfer. Reviewed local PDF-derived image explicitly permitted by publication coordinator because normal direct official image fetch timed out.",
+          "proposedPublicId": "studentstraffic/universities/avinashilingam-institute-for-home-science-and-higher-education-for-women/logo-20261025",
+          "altText": "Avinashilingam Institute for Home Science and Higher Education for Women institutional seal",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/avinashilingam-20261025/media-logo-vector-render.png",
+          "sha256": "0f65df038ffdfcc0c2e02fa65e3049ae63e966a93f696e813d7492856c1c62b9",
+          "width": 325,
+          "height": 301,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Original vector seal from PDF page1 rendered at600dpi; full rendered page3308x4961 retained; crop(1488,425,1813,726) excludes prose and preserves complete seal,motto and legal institutional name.",
+          "originalDocumentLocalPath": "research/india-source-bundles/avinashilingam-20261025/Ph.D_Prospectus_July_2026_Final.pdf",
+          "originalDocumentSha256": "4cdbe6121c5ca5553239f108fea67cf808d69fe05d89a10a532c57a202b2cea3"
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://avinuty.ac.in/sites/avinuty.ac.in/files/2026-04/UG%20Progs%20Offer%202026-27.pdf",
+          "sourceType": "official-university",
+          "rightsBasis": "Genuine university-published prospectus brand asset or campus photograph. Full original PDF and exact source URL retained; no synthetic content or ownership transfer. Reviewed local PDF-derived image explicitly permitted by publication coordinator because normal direct official image fetch timed out.",
+          "proposedPublicId": "studentstraffic/universities/avinashilingam-institute-for-home-science-and-higher-education-for-women/cover-20261025",
+          "altText": "Avinashilingam main campus entrance in Coimbatore with its institutional name and academic building",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/avinashilingam-20261025/media-cover-campus-entrance.png",
+          "sha256": "67e9350f5d760d71144fc67ba11829e26296306eacc1d040e6d6506d81dfc402",
+          "width": 1228,
+          "height": 741,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Genuine campus entrance photograph on2026\u201327UGprospectus cover. PDF page1 rendered at300dpi,2550x1784; crop(668,648,1896,1389) removes brochure layout and preserves native photograph. Raw embedded CMYKJPEG is retained separately but rejected because standalone decoding inverts its PDF colour mapping.",
+          "originalDocumentLocalPath": "research/india-source-bundles/avinashilingam-20261025/UG_Progs_Offer_2026-27.pdf",
+          "originalDocumentSha256": "c260c3e20eede97ac1f0ba300637a69087f2b4112da9f7e64e1f19420c3211c9"
+        }
+      ]
+    },
+    {
+      "universitySlug": "justice-basheer-ahmed-sayeed-college-for-women",
+      "universityName": "Justice Basheer Ahmed Sayeed College for Women (Autonomous)",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.jbascollege.edu.in/images/jbass-lohoo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.jbascollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus-life photograph presented on the current college homepage. Saved through normal documented browser image download; original full pixels and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/justice-basheer-ahmed-sayeed-college-for-women/logo",
+          "altText": "Justice Basheer Ahmed Sayeed College for Women complete SIET crest",
+          "localPath": "research/india-source-bundles/jbas-20261025/logo.png",
+          "sha256": "ff9ce35c1e13ff0be3c28ddf3a619b47a5e40b00f28fa2c20899f7f5fb8bc33a",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.jbascollege.edu.in/images/jb4.webp",
+          "sourceType": "official",
+          "sourcePage": "https://www.jbascollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus-life photograph presented on the current college homepage. Saved through normal documented browser image download; original full pixels and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/justice-basheer-ahmed-sayeed-college-for-women/cover",
+          "altText": "Students assembled by department on the JBAS College sports ground",
+          "localPath": "research/india-source-bundles/jbas-20261025/cover.webp",
+          "sha256": "9d1ce4c1fd794d6bcea44f6f6784564f048445d258dab5bd794feca7179e75bf",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    },
+    {
+      "universitySlug": "the-new-college-chennai",
+      "universityName": "The New College, Chennai",
+      "sourceBatch": "codex-newcollege-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://thenewcollege.edu.in/images/logonew021123.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://thenewcollege.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus illustration; no open licence or transfer of ownership asserted.",
+          "altText": "The New College Chennai institutional crest and motto",
+          "visualCheck": "Native2480\u00d72458 complete institutional shield, crescent/star, lotus, flame and palm, Arabic/English motto; matches crest on official college facade.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals; root independently viewed and accepted the same assets. No DB/provider action.",
+          "proposedPublicId": "studentstraffic/universities/the-new-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/the-new-college-chennai/logo-current.png",
+          "sha256": "0047af0d8b53a2a8ede9113153d49a05994404b741642ecfb253217e03a346a2",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://thenewcollege.edu.in/images/aboutus1.JPG",
+          "sourceType": "official-university",
+          "sourcePage": "https://thenewcollege.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus illustration; no open licence or transfer of ownership asserted.",
+          "altText": "The New College Chennai facade with institutional crest and clock tower",
+          "visualCheck": "Native2000\u00d71333 official homepage campus photograph: named THE NEW COLLEGE facade, large matching crest, clock tower, courtyard signage; authentic college environment, not adjacent MEASI institute or stock photo.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals; root independently viewed and accepted the same assets. No DB/provider action.",
+          "proposedPublicId": "studentstraffic/universities/the-new-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/the-new-college-chennai/campus.jpg",
+          "sha256": "1aeb31b799359f9099cd7d9d5d8618713db21ea6ca7383cfc99906cd5e70a04e",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0236-india-the-new-college-chennai"
+    }
+  ]
+}

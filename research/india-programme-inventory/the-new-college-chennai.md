@@ -1,0 +1,13 @@
+# The New College, Chennai — reviewed 25 October 2026
+
+67 discovery rows; 35 supported regular routes: 22 undergraduate and 13 postgraduate, using 23 existing generic course families. Detailed 2026–27 prospectus tables control award counts rather than inconsistent headline counts. Aided/self-financed streams remain distinct.
+
+Current degree-specific subjects and qualifying degrees were checked visually in prospectus pages 7, 8, 10 and 11. The college policy restricts UG to men, permits selected PG programmes for women and welcomes eligible applicants from India and abroad. Published PG entries verify the male route; exact female degree availability is unverified, not declared ineligible. Overseas qualification equivalence and college immigration-document conditions apply.
+
+The dated December 2022 SSR names programme languages; unchanged 2026 titles establish continuation. BA Tamil is English/Tamil; BA Urdu English/Urdu; MA Tamil Tamil. Botany/Zoology shorthand is crosswalked through earlier full-title college documents and current departments; no BA-to-BSc Criminology extrapolation. Current calendar explicitly schedules I UG and PG commencement and induction on 1 July 2026, a dated published schedule only.
+
+All 35 supported routes have isolated tuition components from the latest published official 2025–26 handbook, printed pages 90–91 (physical 101–102), visually checked from sideways fee-table images. Shift I is annual; Shift II per-semester tuition is multiplied by two using the handbook's odd/even semesters. Domestic category only. NIL tuition excludes compulsory charges; combined table totals are never stored as tuition. Exact original amounts and arithmetic are retained in verified-official-fee-components.json. No 2026 fee promise.
+
+Holds remain explicit in CSV: new or ambiguous language (Professional Accounting, AI, Data Science, BSc Criminology, MA Sociology); BBA/BCA current professional-approval scope; conditional Visual Communication/Cybersecurity university approval; two directory-only awards absent current detailed prospectus; three MLT add-ons with unresolved exact award/entry/duration/scope; 18 research rows outside verified current lawful admission scope. Held programmes are not described as unapproved.
+
+Recognition uses UGC's own autonomy list (2023–24 to 2032–33) and University of Madras's aided affiliated list, without unsupported NAAC/NIRF badges. Mandatory official crest and campus originals are retained and checksum-linked in the reviewed media manifest; worker and root visually inspected both. No DB, upload or publication actions were performed by this worker.

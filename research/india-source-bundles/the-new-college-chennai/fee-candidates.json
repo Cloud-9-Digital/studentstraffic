@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-25",
+  "purpose": "Separate secondary-source discovery; not annual tuition evidence or executable public quotes. Official isolated components supersede these conflicts.",
+  "candidates": [
+    {
+      "sourceUrl": "https://collegedunia.com/college/5137-the-new-college-chennai/courses-fees",
+      "sourceYear": "2025; page says last verified 9 October 2025 and 2026 fees not released",
+      "currency": "INR",
+      "quotes": [
+        {
+          "award": "BA",
+          "amount": 3780
+        },
+        {
+          "award": "BSc",
+          "minimum": 3170,
+          "maximum": 32070
+        },
+        {
+          "award": "BCom",
+          "minimum": 5500,
+          "maximum": 7900
+        },
+        {
+          "award": "BCA",
+          "amount": 17075
+        },
+        {
+          "award": "BBA",
+          "amount": 7900
+        },
+        {
+          "award": "MA",
+          "amount": 4825
+        },
+        {
+          "award": "MCom",
+          "amount": 8320
+        },
+        {
+          "award": "MSc",
+          "amount": 32070
+        }
+      ],
+      "period": "Full course on this page",
+      "basis": "Reported fees; isolated tuition not established",
+      "shift": "Not reliably identified",
+      "audience": "Not reliably identified",
+      "status": "conflicted_do_not_publish",
+      "conflict": "Same publisher overview calls the identical amounts annual and multiplies by degree duration.",
+      "conflictingSourceUrl": "https://collegedunia.com/college/5137-the-new-college-chennai"
+    },
+    {
+      "sourceUrl": "https://collegedunia.com/college/5137-the-new-college-chennai/master-of-science-msc-full-time",
+      "sourceYear": "2025–26",
+      "currency": "INR",
+      "award": "MSc",
+      "amount": 32070,
+      "period": "Entire course; page also approximates INR16035 yearly",
+      "basis": "Total academic fees, not isolated tuition",
+      "shift": "Unverified",
+      "audience": "Unverified",
+      "status": "conflicted_do_not_publish",
+      "notes": "Overview labels same32070 annual. Some named specialisations do not match current official college awards."
+    },
+    {
+      "sourceUrl": "https://studyriserr.com/college/26115-the-new-college-chennai/course-fees/5145-msc",
+      "sourceYear": "2026 page heading; underlying academic cycle unspecified",
+      "currency": "INR",
+      "award": "MSc",
+      "quotes": [
+        {
+          "subject": "Chemistry",
+          "year1": 5630,
+          "year2": 2695
+        },
+        {
+          "subject": "Computer Science",
+          "year1": 32070,
+          "year2": 14330
+        },
+        {
+          "subject": "Mathematics",
+          "year1": 8720,
+          "year2": 5600
+        },
+        {
+          "subject": "Zoology",
+          "year1": 5045,
+          "year2": 2010
+        }
+      ],
+      "period": "Year1/year2",
+      "basis": "Fees; tuition component unverified",
+      "shift": "Unverified",
+      "audience": "Unverified",
+      "status": "discovery_only",
+      "notes": "Additional Biotechnology and IT awards listed there are not current official PG offerings; not imported."
+    },
+    {
+      "sourceUrl": "https://mykollege.in/the-new-college-chennai/course-fees",
+      "sourceYear": "2026 heading; source cycle unspecified",
+      "currency": "INR",
+      "period": "Annual and total columns repeat identical values",
+      "basis": "Combined or tuition scope unresolved",
+      "shift": "Unverified",
+      "audience": "Unverified",
+      "status": "conflicted_do_not_publish",
+      "notes": "Examples BA3780 BSc3170 BCom5500 MCom8320 MSc32070; self-inconsistent period."
+    },
+    {
+      "sourceUrl": "https://www.shiksha.com/college/the-new-college-royapettah-chennai-51502/courses",
+      "sourceYear": "Unverified",
+      "status": "discovery_only",
+      "notes": "Indexed total-tuition label found, but no numerical quote retrieved; no invented value."
+    }
+  ]
+}

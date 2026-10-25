@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "the-new-college-chennai",
+      "universityName": "The New College, Chennai",
+      "sourceBatch": "codex-newcollege-chennai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://thenewcollege.edu.in/images/logonew021123.png",
+          "sourceType": "official-university",
+          "sourcePage": "https://thenewcollege.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus illustration; no open licence or transfer of ownership asserted.",
+          "altText": "The New College Chennai institutional crest and motto",
+          "visualCheck": "Native2480×2458 complete institutional shield, crescent/star, lotus, flame and palm, Arabic/English motto; matches crest on official college facade.",
+          "httpStatus": 200,
+          "contentType": "image/png",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals; root independently viewed and accepted the same assets. No DB/provider action.",
+          "proposedPublicId": "studentstraffic/universities/the-new-college-chennai/logo-20261025",
+          "localPath": "research/india-source-bundles/the-new-college-chennai/logo-current.png",
+          "sha256": "0047af0d8b53a2a8ede9113153d49a05994404b741642ecfb253217e03a346a2",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://thenewcollege.edu.in/images/aboutus1.JPG",
+          "sourceType": "official-university",
+          "sourcePage": "https://thenewcollege.edu.in/",
+          "rightsBasis": "Official institution-hosted crest and campus illustration; no open licence or transfer of ownership asserted.",
+          "altText": "The New College Chennai facade with institutional crest and clock tower",
+          "visualCheck": "Native2000×1333 official homepage campus photograph: named THE NEW COLLEGE facade, large matching crest, clock tower, courtyard signage; authentic college environment, not adjacent MEASI institute or stock photo.",
+          "httpStatus": 200,
+          "contentType": "image/jpeg",
+          "checkedAt": "2026-10-25",
+          "verificationMethod": "Ordinary public HTTP GET; native view_image inspection of retained originals; root independently viewed and accepted the same assets. No DB/provider action.",
+          "proposedPublicId": "studentstraffic/universities/the-new-college-chennai/cover-20261025",
+          "localPath": "research/india-source-bundles/the-new-college-chennai/campus.jpg",
+          "sha256": "1aeb31b799359f9099cd7d9d5d8618713db21ea6ca7383cfc99906cd5e70a04e",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0236-india-the-new-college-chennai"
+    }
+  ],
+  "migrationId": "0236-india-the-new-college-chennai"
+}

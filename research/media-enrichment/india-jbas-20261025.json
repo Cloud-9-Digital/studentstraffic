@@ -1,0 +1,40 @@
+{
+  "manifestId": "india-jbas-media-20261025",
+  "status": "reviewed-offline-pending-controlled-upload",
+  "checkedAt": "2026-10-25",
+  "scope": "Complete official200x184crest and full1349x600genuine campus sports assembly; no marketing badge overlays/crop.",
+  "entries": [
+    {
+      "universitySlug": "justice-basheer-ahmed-sayeed-college-for-women",
+      "universityName": "Justice Basheer Ahmed Sayeed College for Women (Autonomous)",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.jbascollege.edu.in/images/jbass-lohoo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.jbascollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus-life photograph presented on the current college homepage. Saved through normal documented browser image download; original full pixels and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/justice-basheer-ahmed-sayeed-college-for-women/logo",
+          "altText": "Justice Basheer Ahmed Sayeed College for Women complete SIET crest",
+          "localPath": "research/india-source-bundles/jbas-20261025/logo.png",
+          "sha256": "ff9ce35c1e13ff0be3c28ddf3a619b47a5e40b00f28fa2c20899f7f5fb8bc33a",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.jbascollege.edu.in/images/jb4.webp",
+          "sourceType": "official",
+          "sourcePage": "https://www.jbascollege.edu.in/",
+          "rightsBasis": "Official institution-owned identifying asset or campus-life photograph presented on the current college homepage. Saved through normal documented browser image download; original full pixels and SHA256 retained. No open licence or enlargement claim.",
+          "proposedPublicId": "studentstraffic/universities/justice-basheer-ahmed-sayeed-college-for-women/cover",
+          "altText": "Students assembled by department on the JBAS College sports ground",
+          "localPath": "research/india-source-bundles/jbas-20261025/cover.webp",
+          "sha256": "9d1ce4c1fd794d6bcea44f6f6784564f048445d258dab5bd794feca7179e75bf",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0235-justice-basheer-ahmed-sayeed-college-for-women"
+    }
+  ]
+}
