@@ -1244,7 +1244,8 @@ async function queryFinderProgramsFromDatabase(
       offeringSlug: sql<string>`${programOfferingsTable.slug}`.as("offering_slug"),
       annualTuitionUsd: sql<number>`${programOfferingsTable.annualTuitionUsd}`.as("annual_tuition_usd"),
       officialFeeCurrency: sql<string | null>`${programOfferingsTable.officialFeeCurrency}`.as("official_fee_currency"),
-      officialAnnualTuitionAmount: sql<number | null>`${programOfferingsTable.officialAnnualTuitionAmount}`.as("official_annual_tuition_amount"),
+      // Raw SQL aliases otherwise bypass bigint's numeric runtime decoder.
+      officialAnnualTuitionAmount: sql<number | null>`${programOfferingsTable.officialAnnualTuitionAmount}`.mapWith(programOfferingsTable.officialAnnualTuitionAmount).as("official_annual_tuition_amount"),
       reportedFeeQuote: sql<unknown>`${programOfferingsTable.admissionsContent}->'reportedFeeQuote'`.as("reported_fee_quote"),
       feeStatus: sql<ProgramOffering["feeStatus"] | null>`${programOfferingsTable.feeStatus}`.as("fee_status"),
       offeringFeatured: sql<boolean>`${programOfferingsTable.featured}`.as("offering_featured"),
@@ -1949,7 +1950,7 @@ export async function queryFinderCardProgramsPage(
   // and stays cached — that is the path landing pages and crawlers hit.
   const results = normalized.q
     ? await executeFinderCardProgramsPage(normalized, page, pageSize)
-    : await cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-fee-quote-v2");
+    : await cachedFinderCardProgramsPage(normalized, page, pageSize, "city-casefold-native-fee-number-v3");
 
   return {
     ...results,

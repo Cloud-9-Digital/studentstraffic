@@ -402,3 +402,12 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 
 
 `msc-bioinformatics` is an academic natural-sciences master's family for computational biology, biological databases, molecular/genomic data analysis and related statistical or programming methods. It may include a named Bioinformatics and Data Science award, with exact prior-biology requirements and curriculum retained on the offering. It must not inherit BTech/MTech Bioinformatics engineering aliases or imply a clinical-practice qualification.
+
+### Sociology, computing and earth/media sciences integrated degrees — 25 October 2026
+
+`integrated-ma-sociology` and the `integrated-msc-bioinformatics`, `integrated-msc-geography`, `integrated-msc-geology` and `integrated-msc-media-communication` families represent HSC-entry integrated master's degrees, distinct from graduate-entry master's awards. Preserve each institution's exact duration and entry subjects; do not infer intermediate exits. `msc-marine-science` represents graduate-entry interdisciplinary marine science, distinct from integrated marine science and engineering or maritime operations awards. BVoc specialisations may retain the existing neutral Bachelor of Vocational Studies family with exact offering titles; no engineering registration is implied.
+
+
+### Integrated food science and technology
+
+`integrated-msc-food-science-technology` is the neutral HSC-entry integrated master’s family for Food Science and Technology. It is distinct from a graduate-entry food-science master’s and from a standalone bachelor’s award. Exact institution-specific duration, admission subjects, exit options and title remain on the offering.

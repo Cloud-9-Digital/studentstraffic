@@ -1,35 +1,25 @@
-# VIT Vellore -- Programme Inventory
+# Vellore Institute of Technology current own-campus forward
 
-Research pass only. No payload/ledger/DB/docs edits were made from this file. Scope: **VIT Vellore campus only** (matching the published bundle `0090-india-vellore-institute-of-technology`, which covers Vellore). VIT also runs Chennai, AP and Bhopal campuses with overlapping but not identical specialisation lists -- those are out of scope here and were not catalogued.
+Owner `codex-tn-vit-rescue-20261025`. Existing published checkpoint remains7/pointer0121 during research. Draft32programme full forward: seven existing academic/fee objects retained, with root-approved narrow inherited-language correction only (medium/instructionLanguages and same teaching-phase language empty). Existing0121 had no verified medium evidence. Current academic regulations do not establish a broad medium; Exeter Nov2025 candidate direct404 and noVITentry authenticated. No new English inference. All25new intakes/medium omitted with explicit evidence; old intake fields otherwise retained.
 
-## Sources used
+Current2027–28 directory yields 123 own Vellore/Chennai title-campus source rows, including two doctoral rows excluded from this taught inventory. Current taught inventory 122 source-layer rows, not 122 independently qualified ready awards;32unique supported offering slugs. Historical61-row Vellore inventory separately preserved in source bundle/historical61-inventory.csv; its uniform international assumption and stale taxonomy are not carried into new readiness claims. VITAP/Bhopal separate universities, international partner variants and other outside-campus rows excluded.
 
-1. **`https://vit.ac.in/sitemap.xml`** (2024-11 sitemap, reachable) -- used to discover the relevant programme-catalogue pages (`admissions/programmes-offered`, `all-courses/ug/*`, `all-courses/pg/*`, `engineering-programmes-vellore-campus`, `admissions/international/*`).
-2. **`https://vit.ac.in/engineering-programmes-vellore-campus`** (reachable) -- authoritative, Vellore-specific B.Tech list: 19 specialisations across 9 schools, confirmed by the page's own FAQ ("VIT Vellore offers B.Tech specialisations across nine schools... 7 Computer Science variants... Information Technology, 3 Electronics specialisations, 2 Electrical specialisations, Mechanical, 2 Civil specialisations, Chemical, Biotechnology, and Health Sciences and Technology").
-3. **`vit.ac.in/all-courses/ug/*`** pages (7 fetched: B.Des, B.Arch, B.Sc CS & BCA, B.Com & BBA, B.Sc Multimedia/Animation & Visual Comm, B.Sc Hospitality, B.Sc(Hons) Agriculture) -- all reachable, all Vellore-specific.
-4. **`vit.ac.in/all-courses/pg/*`** pages (10 fetched: M.Tech programmes, MCA, M.Sc programmes, M.Des, M.Arch, Integrated M.Tech, Integrated M.Sc, MBA, LL.M, MSW) -- 8 reachable with content; **LL.M and Master of Social Work pages returned no programme content for Vellore** (likely not offered at the Vellore campus, or offered only at another VIT campus) -- both excluded from the CSV rather than guessed.
-5. **`vit.ac.in/admissions/international/overview`** and related international pages (`btech-eligibilityandprocedure`, `otherugprogrammes`, `pg`, `integrated`, `research`) -- confirm VIT runs parallel NRI/Foreign-national admission routes for B.Tech, UG science/humanities, Integrated, PG and Research programmes at all four campuses, hence `intl_status = open_to_international` applied uniformly.
-6. **Study in India / AICTE / NIRF**: not queried this pass (time-boxed; flagged as follow-up).
-7. **Aggregators**: not separately queried; the official Vellore-specific pages were already exhaustive and internally cross-referenced (each programme's FAQ block cites the full sibling list), so no aggregator-only programmes were found or needed.
-8. **Existing bundle payload** -- `content-migrations/0090-india-vellore-institute-of-technology/payload.json`, `officialTitle`/`officialProgramUrl` used to match `already_on_site`.
+## Supported core and fee basis
 
-## Counts
+Ten new MSc award/campus rows: Vellore AppliedMicrobiology, BiomedicalGenetics, Biotechnology, BusinessStatistics, Chemistry, Physics, AI&ML; Chennai Chemistry, Physics, DataScience. Exact current2026 entrance/nonentrance HTML tables inspected with actual rowspans and separate old2025 block. VITMEE applies only new AI/DS routes. Current fees explicitly PerAnnum but not isolated tuition, so ten native GradeAconfirmed academic_year programme-fee quotes, no annualisation. Large current MSc PDF downloads timedout45seconds incomplete; hashes/access limits logged and partials discarded, no full-PDF retrieval claimed.
 
-- **Total programmes catalogued: 61** (UG 32 incl. 19 B.Tech + 13 other UG; PG 16; Integrated 13)
-- `intl_status`: all 61 `open_to_international` (evidence: `admissions/international/overview`).
-- **Already on site: 7** -- B.Tech CSE, B.Tech ECE, B.Tech Mechanical, B.Tech Civil, MBA, M.Sc Data Science, B.Com (base).
-- **Missing (open-to-international, not on site): 54**
-- **GAP canonical courses: 30** rows (mostly niche B.Tech/M.Tech specialisations with no canonical slug); **31** rows matched an existing canonical course.
+Five current Vellore five-year IntegratedMSc routes (FoodScienceTechnology, Biotechnology, Physics, Chemistry, Mathematics): complete2026–27PDF5.46MB retrieved/hashlogged, printedpp5/8/9/10 visually reviewed. Exact domestic prior-two-yearsIndianformal-schooling,60%/50% concession, DOB1July2006 and subject rows; NIOS/correspondence excluded. Printedp9 explicitly TUITION FEES75000/year,2000firstyearcaution; Biotechnology4th/5th110000 each. No flat five-year total. DataScience/ComputationalStatisticsDataAnalytics conflicting current titles held specifically; no bachelor/honours exits minted as independent awards.
 
-## Top GAP canonical courses (recurring, no canonical slug yet)
+Agriculture current2026–27 residentIndian4year route:60overall+60PCB,10% concession, NIOS5subjects allowed unlikeintegrated; merit/noentrance. Annual tuition categories110000/195000/225000; lowest isCategory1, notguaranteed;5000cautionextra.
 
-- **M.Tech specialisations** (10 offered at Vellore: CAD/CAM, Construction Technology & Management, Control & Automation, Mechatronics, Power Electronics & Drives, Structural Engineering, Automotive Electronics, Smart Mobility, Biotechnology, Smart Manufacturing) -- zero canonical M.Tech slugs exist today; only undergraduate B.E./B.Tech slugs are canonicalised.
-- **MCA** (Master of Computer Applications) -- no canonical slug; large national demand.
-- **BCA / BBA** -- no canonical slug (only `bcom` exists on the commerce/business UG side).
-- **CSE specialisation variants** (AI & Data Engineering, Bioinformatics, Cyber Security, and the TCS/Business-Systems and L&T/Civil industry-collaboration programmes) -- these sit under the existing `be-btech-computer-science-engineering` discipline conceptually but are distinct named/admitted programmes; worth a product decision on whether to add specialisation-level canonical slugs or keep mapping to the parent CSE slug.
-- **Integrated M.Sc./M.Tech 5-year dual-degree tracks** (Data Science, Food Science & Technology, Physics, Chemistry, Mathematics with UG exit options; Artificial Intelligence, AI+Bioinformatics) -- the "Integrated" level itself has almost no canonical coverage across the whole catalogue.
+Nine named3year academicUG campus routes use current2026NRI/foreignconditions only: ComputerScienceVellore/Chennai, MultimediaAnimationVellore/Chennai, VisualCommunicationVellore/Chennai, HospitalityVellore, BankingCapitalMarketsVellore, FinancialTechnologyVellore. Own named degree pages explicitly3year, but domestic body2024datedcriteria not used. Exact NRI60% vsforeign55% plus subjects; Hospitalitypass exception; NRIparent-onlysponsorship/DOBJuly2006, foreignpassport/OCIseparate. Seven isolated international annual tuition rates3450USD/4250USD verified from namedprogrammebands; specialisedBCom exactprices held only (genericBComnotforced).
 
-## Unreachable / not attempted this pass
+## Identity, campus and media
 
-- LL.M and Master of Social Work at VIT Vellore specifically (pages returned no Vellore programme content -- likely offered at Chennai/AP/Bhopal only; not confirmed either way, excluded rather than guessed).
-- Study in India portal, AICTE, NIRF data PDF: not queried.
+UGC own current public GET type4 rowID155 exactVelloreInstituteofTechnology/Katpadi/vit.ac.in; own offcampusID155 lists Chennai, MinistryF10-2/2010-U3(A)06June2013. VITAP/Bhopal notsameinstitution. Existing profilecityVellore stable. Existing validlogo retained; inherited CC-BY-SA cover replaced in pending reviewed cover-onlymanifest with official current1024x683 Velloreplantculturelaboratory original, completeHTTPS200/hash/visualreview byworker+root. Hostedreplacement performedonlybyroot later.
+
+## Holds
+
+Additional professional/technical routes remain applicability/currentapprovalscope or exactqualification reconciliation holds, never labelledunapproved. Current MSWVellore listing nowexists but exact priorqualification not reconciled in this boundedpass (olderclaimofabsence notretained). Current BusinessProcessManagement vsolderBusinessProcessServices3year naming conflict held. Current Chandigarh/AP/Bhopal labels or partnercampuses excluded; unknownmedium/intake alone are notholds.
+
+Frozen executable 0301-india-vellore-institute-of-technology-academic-expansion; ledger validated32, scopedreaderPASS0warnings, root publication pending. Scoped reader32/10quotes PASS0warnings; root-approved taxonomyFoodScience integrated family4existingtestsPASS. NoDB/build/upload/commit.
