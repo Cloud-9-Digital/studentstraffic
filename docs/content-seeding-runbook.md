@@ -238,6 +238,8 @@ claims. Add the relevant government or regulator source for those claims. An acc
 recognition claim is always verified on the regulator's own published list, never taken from the
 institution's own marketing or from an aggregator site.
 
+One genuine verified recognition entry is sufficient. Do not search indefinitely for a second badge or substitute a plain ownership/establishment descriptor. A single-badge bundle requires Grade A verified university recognition evidence matching its recognition link. Applicable programme-specific professional approval remains a separate gate.
+
 Audience eligibility is programme data, not a global publication gate. Research citizenship,
 residency, nationality, prior-qualification, location and visa restrictions explicitly. A local-only
 programme can still have a factual catalogue page when its restriction is prominent.

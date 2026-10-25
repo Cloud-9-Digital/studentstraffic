@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "jeppiaar-university",
+      "universityName": "Jeppiaar University",
+      "sourceBatch": "codex-tn-jeppiaar-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://jeppiaaruniversity.ac.in/wp-content/uploads/2026/02/whatsapp_image_2026_05_18_at_4_52_58_pm_1.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or student-life photography used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/jeppiaar-university/logo-20261025",
+          "altText": "Jeppiaar University complete official emblem and wordmark",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/jeppiaar-20261025/logo-candidate.webp",
+          "sha256": "ce0a5640db0c01113d00533f8b3ca442ce651696917c07339d219edb0ca0613d",
+          "notes": "DirectordinaryHTTP200,imageoriginalembedded in currentown-university coursepage,fullvisuallychecked. Nocrop/upscale/generation or accreditationoverlay; event/classroom cover notdescribedasbuildingexterior.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://jeppiaaruniversity.ac.in/wp-content/uploads/2026/06/rectangle_40069.webp",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institution brand or student-life photography used to identify and illustrate the university in a factual profile; no ownership or licence transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/jeppiaar-university/cover-20261025",
+          "altText": "Students attending an academic session shown on Jeppiaar University’s official course pages",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/jeppiaar-20261025/course-image.webp",
+          "sha256": "0e8dc84fcfee83f1a7754b8dba6fd2a27c92710741fae39bbf36f0f29af06da4",
+          "notes": "DirectordinaryHTTP200,imageoriginalembedded in currentown-university coursepage,fullvisuallychecked. Nocrop/upscale/generation or accreditationoverlay; event/classroom cover notdescribedasbuildingexterior.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0275-india-jeppiaar-university"
+    },
+    {
+      "universitySlug": "takshashila-university",
+      "universityName": "Takshashila University",
+      "sourceBatch": "india-tn-universities",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://takshashilauniv.ac.in/wp-content/uploads/2025/01/logo-new.png",
+          "sourceType": "official",
+          "sourcePage": "https://takshashilauniv.ac.in/about-us/",
+          "rightsBasis": "Official university-owned identifying media; no open licence claimed.",
+          "verificationMethod": "Complete native orange symbolic emblem and university wordmark on transparent background; visually inspected, no editing.",
+          "localPath": "research/india-source-bundles/takshashila-university-20261025/logo.png",
+          "sha256": "a3b72c77c2661e08e06df2d50de60d20421beab0868707ec8d6216428999898e",
+          "width": 500,
+          "height": 148,
+          "altText": "Takshashila University wordmark",
+          "proposedPublicId": "studentstraffic/universities/takshashila-university/logo",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://takshashilauniv.ac.in/wp-content/uploads/2025/02/Campus-2.webp",
+          "sourceType": "official",
+          "sourcePage": "https://takshashilauniv.ac.in/about-us/",
+          "rightsBasis": "Official university-owned identifying media; no open licence claimed.",
+          "verificationMethod": "Official campus photograph of three students holding academic books in a corridor; university lanyards visible. Visually inspected original. Rejected newer About-Page promotional composite as potentially synthetic; not used.",
+          "localPath": "research/india-source-bundles/takshashila-university-20261025/campus.webp",
+          "sha256": "7eb8813dcf5b54bb75157d85a0543085770c19ff7c89ca24e20df132dc48c96f",
+          "width": 1008,
+          "height": 672,
+          "altText": "Takshashila University students with academic books in a campus corridor",
+          "proposedPublicId": "studentstraffic/universities/takshashila-university/cover",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0276-india-takshashila-university"
+    },
+    {
+      "universitySlug": "noorul-islam-centre-for-higher-education",
+      "universityName": "Noorul Islam Centre for Higher Education",
+      "sourceBatch": "codex-niche-kumaracoil-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.niuniv.com/images/NICHElogo.png",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Original published on the official university website, retained for institutional identification and campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/noorul-islam-centre-for-higher-education/logo-20261025",
+          "altText": "NICHE full university wordmark with complete crest and motto",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/niche-kumaracoil-20261025/logo.png",
+          "sha256": "6c8b8b00311b42fdfd9e07c6ca3d424b4dfb5b07ad88c5a90dc7ec1e848cb49d",
+          "width": 494,
+          "height": 203,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original, no crop or upscale.",
+          "visualReview": "Visually reviewed full local original: intact university crest/wordmark; genuine entrance building with visible university identity."
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.niuniv.com/images/facilities/campus/1.jpg",
+          "sourceType": "official-university-website",
+          "rightsBasis": "Original published on the official university website, retained for institutional identification and campus context. No open licence or ownership transfer claimed.",
+          "proposedPublicId": "studentstraffic/universities/noorul-islam-centre-for-higher-education/cover-20261025",
+          "altText": "NICHE campus building at Kumaracoil with the university name above its entrance",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/niche-kumaracoil-20261025/campus.jpg",
+          "sha256": "0b6bb6866a25e480355663f71eb9a80d0026efaef6341f994ea46442b7f97833",
+          "width": 4160,
+          "height": 3120,
+          "uploadFromReviewedLocalOriginal": true,
+          "derivation": "Complete original, no crop or upscale.",
+          "visualReview": "Visually reviewed full local original: intact university crest/wordmark; genuine entrance building with visible university identity."
+        }
+      ],
+      "migrationId": "0277-india-noorul-islam-centre-for-higher-education"
+    }
+  ]
+}

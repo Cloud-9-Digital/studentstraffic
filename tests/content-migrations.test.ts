@@ -255,6 +255,32 @@ test("unknown medium requires explicit omission; known language needs matching l
   });
 });
 
+test("one recognition needs matching verified regulator evidence and empty recognition stays rejected", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const id = "0001-single-recognition";
+    const directory = join(root, id);
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({ version: 1, id, description: "Verify genuine single regulatory recognition without filler badges.", createdAt: "2026-10-25", payload: "payload.json" }));
+    const payload = structuredClone(validPayload);
+    const university = payload.universities[0]!;
+    university.recognitionBadges = ["Test regulator accreditation"];
+    university.recognitionLinks = [{ label: "Test regulator", url: "https://regulator.example/entry" }];
+    const write = () => writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+    await write();
+    await assert.rejects(readContentMigrations(root), /needs verified Grade A recognition evidence/);
+    const proof = { ...payload.evidence[0]!, entity: "university", universitySlug: university.slug, publicField: "recognition", status: "verified", sourceGrade: "A", sourceUrl: "https://regulator.example/entry" };
+    payload.evidence.push(proof);
+    await write();
+    assert.equal((await readContentMigrations(root)).length, 1);
+    proof.sourceUrl = "https://unrelated.example/entry";
+    await write();
+    await assert.rejects(readContentMigrations(root), /needs verified Grade A recognition evidence/);
+    university.recognitionBadges = [];
+    await write();
+    await assert.rejects(readContentMigrations(root));
+  });
+});
+
 test("checksums a CRLF checkout the same as its LF original", () => {
   const manifest = '{\n  "id": "0001-test-university"\n}\n';
   const payload = '{\n  "courses": []\n}\n';

@@ -72,6 +72,8 @@ function defineProgrammes<const T extends readonly CanonicalProgramme[]>(program
 }
 
 const globalProgrammeFamilies = defineProgrammes([
+  {"slug": "be-btech-fire-safety-engineering", "name": "B.E./B.Tech in Fire and Safety Engineering", "shortName": "B.E./B.Tech Fire & Safety", "stream": "engineering", "level": "bachelors", "discipline": "fire-safety-engineering", "aliases": ["Bachelor of Fire and Safety Engineering", "B.Tech Fire Technology and Safety Engineering"]} ,
+  {"slug": "be-btech-nanotechnology", "name": "B.E./B.Tech in Nanotechnology", "shortName": "B.E./B.Tech Nanotechnology", "stream": "engineering", "level": "bachelors", "discipline": "nanotechnology", "aliases": ["Bachelor of Nanotechnology", "B.Tech Nanotechnology"]} ,
   {"slug": "integrated-ma-history", "name": "Integrated M.A. in History", "shortName": "Integrated M.A. History", "stream": "arts-humanities", "level": "integrated-masters", "discipline": "history", "aliases": ["Integrated Master of Arts in History", "Five-year MA History"]},
   {"slug": "integrated-ma-languages-linguistics", "name": "Integrated M.A. in Languages and Linguistics", "shortName": "Integrated M.A. Languages", "stream": "arts-humanities", "level": "integrated-masters", "discipline": "languages-linguistics", "aliases": ["Integrated Master of Arts in Languages", "Integrated MA Linguistics", "Integrated MA Tamil"]},
   { slug: "bachelor-vocational-studies", name: "Bachelor of Vocational Studies", shortName: "B.Voc.", stream: "vocational", level: "bachelors", discipline: "vocational-studies", aliases: ["Bachelor of Vocation", "B.Voc", "BVoc"] },
@@ -124,6 +126,7 @@ const globalProgrammeFamilies = defineProgrammes([
   { slug: "msc-mathematics", name: "M.Sc. in Mathematics", shortName: "M.Sc. Mathematics", stream: "mathematics-statistics", level: "masters", discipline: "mathematics", aliases: ["Master of Science in Mathematics", "MSc Mathematics"] },
   { slug: "bsc-statistics", name: "B.Sc. in Statistics", shortName: "B.Sc. Statistics", stream: "mathematics-statistics", level: "bachelors", discipline: "statistics", aliases: ["Bachelor of Science in Statistics", "BSc Statistics"] },
   { slug: "msc-statistics", name: "M.Sc. in Statistics", shortName: "M.Sc. Statistics", stream: "mathematics-statistics", level: "masters", discipline: "statistics", aliases: ["Master of Science in Statistics", "MSc Statistics"] },
+  { slug: "master-statistics", name: "Master of Statistics", shortName: "M.Stat", stream: "mathematics-statistics", level: "masters", discipline: "statistics", aliases: ["MStat", "M.Stat.", "M. Statistics"] },
   { slug: "bsc-actuarial-science", name: "B.Sc. in Actuarial Science", shortName: "B.Sc. Actuarial Science", stream: "mathematics-statistics", level: "bachelors", discipline: "actuarial-science", aliases: ["Bachelor of Actuarial Science", "BSc Actuarial Science"] },
   { slug: "msc-actuarial-science", name: "M.Sc. in Actuarial Science", shortName: "M.Sc. Actuarial Science", stream: "mathematics-statistics", level: "masters", discipline: "actuarial-science", aliases: ["Master of Actuarial Science", "MSc Actuarial Science"] },
   { slug: "bachelor-economics", name: "Bachelor's in Economics", shortName: "Bachelor's Economics", stream: "economics-commerce", level: "bachelors", discipline: "economics", aliases: ["BA Economics", "BSc Economics"] },

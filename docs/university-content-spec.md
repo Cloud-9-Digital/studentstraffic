@@ -60,8 +60,8 @@ medical admissions copy is permitted on engineering, business, arts or other pro
 
 ### `recognitionBadges` / `recognitionLinks` — never leave empty, and never write non-recognitions
 
-Every published university must have at least 2-3 real recognition/accreditation badges with
-verification URLs. If genuinely none exist yet (very new institution), that's a signal the
+Every published university must have at least one real recognition/accreditation badge with
+a verification URL. One verified regulatory listing is sufficient; never hold an otherwise verified institution solely for lacking a second badge or pad the list with ownership facts. A single-badge bundle requires verified Grade A university recognition evidence whose source URL matches a recognition link. Include further genuine recognitions when verified. If genuinely none exist yet (very new institution), that's a signal the
 university may not be ready to publish — flag it rather than publishing with an empty array, which
 currently happens silently.
 

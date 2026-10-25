@@ -662,6 +662,8 @@ versions changed with this projection. Publication refreshes the existing catalo
 
 ### Optional teaching language (25 October 2026)
 
+Recognition arrays require at least one genuine body/designation and verification link. The actual migration reader accepts a single badge only with matching Grade A verified university recognition evidence. This removes the arbitrary two-badge floor while preserving recognition and applicable professional-approval checks; plain ownership/establishment facts cannot fill a second badge.
+
 Reviewed local media accepts original AVIF files using a bounded ISO-BMFF `ftyp` image brand check, alongside PNG/JPEG/GIF/WebP. Original-path containment, file-size bounds and reviewed SHA-256 checks remain required; an inspection-only PNG decode does not replace the original upload.
 
 From content migration 0266, otherwise verified programmes may use `medium: ""` and `instructionLanguages: []` only with programme-level `medium` evidence marked `omit`. Known languages require Grade A/B verified medium evidence and exact canonical label/code agreement. Historical applied bundles retain their original contract. Legacy direct writers remain strict and cannot bypass omission evidence; use the canonical migration reader for unknown language. No country default fills English. Empty arrays contribute no language facets and unknown labels are hidden publicly. The deployed 0083 trigger stores an empty array as `Not confirmed`; the public formatter hides both that legacy sentinel and blank labels, so no database schema change is required. Unknown intake follows the same explicit omission pattern.

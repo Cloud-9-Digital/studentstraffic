@@ -133,6 +133,13 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string, no
   }
 
   for (const university of payload.universities) {
+    if (university.recognitionBadges.length === 1 && !payload.evidence.some((item) =>
+      item.entity === "university" && item.universitySlug === university.slug &&
+      item.publicField === "recognition" && item.status === "verified" && item.sourceGrade === "A" &&
+      university.recognitionLinks.some((link) => link.url === item.sourceUrl)
+    )) {
+      throw new Error(`${migrationId} needs verified Grade A recognition evidence matching a recognition link for ${university.slug}.`);
+    }
     const publicCopy = [
       university.summary,
       university.campusLifestyle,

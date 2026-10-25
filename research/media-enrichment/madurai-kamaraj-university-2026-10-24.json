@@ -1,6 +1,6 @@
 {
   "manifestId": "madurai-kamaraj-university-2026-10-24",
-  "status": "reviewed-offline-research-only",
+  "status": "reviewed-offline-pending-upload",
   "entries": [
     {
       "universitySlug": "madurai-kamaraj-university",
@@ -9,28 +9,37 @@
         {
           "kind": "logo",
           "sourceUrl": "https://admissions.mkuniversity.ac.in/images/mku%20logo.png",
-          "sourceType": "official",
+          "sourceType": "official-university",
           "httpStatus": 200,
           "contentType": "image/png",
-          "checkedAt": "2026-10-24",
+          "checkedAt": "2026-10-25",
           "rightsBasis": "Official institution asset on university admissions site; no open licence claimed; identifies institution and campus.",
           "proposedPublicId": "studentstraffic/universities/madurai-kamaraj-university/logo",
           "altText": "Madurai Kamaraj University coloured emblem",
-          "visualCheck": "Coloured emblem5848x4135;legible onwhite."
+          "visualCheck": "Coloured emblem5848x4135;legible onwhite.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/madurai-kamaraj-university-20261025/logo.png",
+          "sha256": "851ee451c5a88ae5b7be78c71c0d1ddda8f71b5233cfef3dccb97b9115d2400f",
+          "notes": "OrdinaryHTTP200 direct original; full visually inspected25Oct2026; no crop or generated image. Completecrest/motto retained; cover is genuine namedPalkalaiNagar entrance."
         },
         {
           "kind": "cover",
           "sourceUrl": "https://admissions.mkuniversity.ac.in/images/university.jpg",
-          "sourceType": "official",
+          "sourceType": "official-university",
           "httpStatus": 200,
           "contentType": "image/jpeg",
-          "checkedAt": "2026-10-24",
+          "checkedAt": "2026-10-25",
           "rightsBasis": "Official institution asset on university admissions site; no open licence claimed; identifies institution and campus.",
           "proposedPublicId": "studentstraffic/universities/madurai-kamaraj-university/cover",
           "altText": "Entrance gate of Madurai Kamaraj University in Madurai",
-          "visualCheck": "Officialcampusgate1200x704;institutionnamevisible."
+          "visualCheck": "Officialcampusgate1200x704;institutionnamevisible.",
+          "localPath": "/Users/bharat/Documents/studentstraffic/research/india-source-bundles/madurai-kamaraj-university-20261025/cover.jpg",
+          "sha256": "2471f86795185745c9678563a1a99771d6e0d543d80567c4bbf7f0b9f4a3f0d2",
+          "notes": "OrdinaryHTTP200 direct original; full visually inspected25Oct2026; no crop or generated image. Completecrest/motto retained; cover is genuine namedPalkalaiNagar entrance."
         }
-      ]
+      ],
+      "sourceBatch": "codex-root-mku-20261025",
+      "migrationId": "0271-india-madurai-kamaraj-university"
     }
-  ]
+  ],
+  "checkedAt": "2026-10-25"
 }

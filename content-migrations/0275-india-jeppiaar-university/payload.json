@@ -1,0 +1,1685 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "bsc-computer-science",
+      "name": "B.Sc. in Computer Science",
+      "shortName": "B.Sc. Computer Science",
+      "stream": "computing-information-systems",
+      "level": "bachelors",
+      "discipline": "computer-science",
+      "aliases": [
+        "Bachelor of Science in Computer Science",
+        "BSc (Hons) Computer Science"
+      ],
+      "displayOrder": 17,
+      "durationYears": 3,
+      "summary": "Computer science bachelor programmes study computation, programming, software and related computing systems. Compare qualifying school subjects, selection requirements, teaching language, degree and honours pathways, duration, campus attendance, practical assessment and complete study costs. Curricula and admission rules vary by university.",
+      "metaTitle": "B.Sc. Computer Science: Compare Entry and Fees",
+      "metaDescription": "Compare B.Sc. Computer Science programmes by entry requirements, teaching language, duration, practical study, campus and complete costs."
+    },
+    {
+      "slug": "bsc-forensic-science",
+      "name": "B.Sc. in Forensic Science",
+      "shortName": "B.Sc. Forensic Science",
+      "stream": "natural-sciences",
+      "level": "bachelors",
+      "discipline": "forensic-science",
+      "aliases": [
+        "Bachelor of Science in Forensic Science",
+        "BSc Forensic Sciences"
+      ],
+      "displayOrder": 153,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for undergraduate forensic science degrees. Programmes apply chemistry, biology and physics to the examination of evidence, covering crime-scene practice, forensic chemistry and toxicology, serology and DNA, fingerprints, questioned documents and laboratory work. Curriculum, approvals, admission route and fees are set by each awarding university, so the programme record should drive a shortlist decision.",
+      "metaTitle": "B.Sc. Forensic Science Programmes | Students Traffic",
+      "metaDescription": "Compare B.Sc. Forensic Science programmes by curriculum, approvals, admission route, teaching language and fee status before you apply."
+    },
+    {
+      "slug": "bsc-aviation",
+      "name": "B.Sc. in Aviation",
+      "shortName": "B.Sc. Aviation",
+      "stream": "aviation-maritime-logistics",
+      "level": "bachelors",
+      "discipline": "aviation-science",
+      "aliases": [
+        "Bachelor of Science in Aviation",
+        "BSc Aviation Science",
+        "BSc Aviation"
+      ],
+      "durationYears": 3,
+      "summary": "Bachelor of Science degrees in aviation study the scientific and operational foundations of flight, aircraft systems, navigation and the aviation sector. A degree does not by itself establish a pilot or aircraft-maintenance licence; professional training and authorisations depend on the exact route.",
+      "metaTitle": "B.Sc. Aviation Degrees for International Students",
+      "metaDescription": "Compare B.Sc. Aviation degrees: duration, teaching language, intake, tuition and each university’s specific admission and applicant-category rules.",
+      "displayOrder": 19
+    },
+    {
+      "slug": "bachelor-physical-education-sports",
+      "name": "Bachelor's in Physical Education and Sports",
+      "shortName": "Bachelor's Physical Education",
+      "stream": "education",
+      "level": "bachelors",
+      "discipline": "physical-education-sports",
+      "aliases": [
+        "Bachelor of Physical Education and Sports",
+        "BPES",
+        "BSc Sports Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 3,
+      "summary": "A bachelor's degree in physical education and sports studies human movement, exercise and sport in education, health and performance settings. The curriculum covers exercise physiology, kinesiology and biomechanics, sports psychology, sports training and coaching, health and fitness, sports management and practical skills in a range of sports, with teaching or coaching placements. Programmes usually last three or four years. They are distinct from one- or two-year teacher-education degrees in physical education, which may be required to teach in schools. Graduates work in coaching, fitness, sports administration and recreation.",
+      "metaTitle": "Bachelor's Physical Education and Sports Degrees",
+      "metaDescription": "Compare Bachelor's Physical Education programmes open to international students: sports science curriculum, placements, duration and fees."
+    },
+    {
+      "slug": "bcom",
+      "name": "Bachelor of Commerce",
+      "shortName": "B.Com",
+      "stream": "economics-commerce",
+      "level": "bachelors",
+      "discipline": "commerce",
+      "aliases": [
+        "BCom",
+        "Bachelor in Commerce"
+      ],
+      "displayOrder": 9,
+      "durationYears": 3,
+      "summary": "The Students Traffic catalogue category for the three-year Bachelor of Commerce. Programmes in this category cover financial accounting, cost and management accounting, business law, taxation, corporate finance, economics and business statistics, and often add auditing, banking or company-secretarial electives. In India the B.Com. runs over six semesters and international entry normally requires a school-leaving qualification with commerce and accountancy subjects and a stated minimum aggregate.",
+      "metaTitle": "B.Com Degrees for International Students",
+      "metaDescription": "Compare B.Com degrees abroad by three-year structure, commerce subject prerequisites, teaching language, annual tuition in USD and the international admission route."
+    },
+    {
+      "slug": "msc-computer-science",
+      "name": "M.Sc. in Computer Science",
+      "shortName": "M.Sc. Computer Science",
+      "stream": "engineering",
+      "level": "masters",
+      "discipline": "computer-science",
+      "aliases": [
+        "Master of Science in Computer Science",
+        "MSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "M.Sc. Computer Science is the Students Traffic catalogue category for postgraduate degrees that develop advanced computer-science knowledge through technical study, practical work and a substantial independent project. The precise academic background required, curriculum, fee and delivery route must be assessed from the university's current programme information.",
+      "metaTitle": "M.Sc. Computer Science Programmes and Admissions",
+      "metaDescription": "Compare M.Sc. Computer Science programmes by official award, academic eligibility, teaching language, duration, university and tuition fees."
+    },
+    {
+      "slug": "msc-forensic-science",
+      "name": "M.Sc. in Forensic Science",
+      "shortName": "M.Sc. Forensic Science",
+      "stream": "natural-sciences",
+      "level": "masters",
+      "discipline": "forensic-science",
+      "aliases": [
+        "Master of Science in Forensic Science",
+        "MSc Forensic Sciences"
+      ],
+      "displayOrder": 0,
+      "durationYears": 2,
+      "summary": "An M.Sc. in Forensic Science is a postgraduate science degree in applying chemistry, biology and physics to the investigation of crime. Study covers crime-scene investigation, forensic chemistry and toxicology, DNA and serology, fingerprints and questioned documents, ballistics, digital forensics, and the presentation of expert evidence in court, with extensive laboratory work and a research project. It suits graduates in chemistry, life sciences, physics or forensic science. The degree normally lasts two years and leads to work in forensic laboratories, law-enforcement agencies and private investigation, or to research.",
+      "metaTitle": "M.Sc. Forensic Science Programmes for International Students",
+      "metaDescription": "Compare M.Sc. Forensic Science programmes open to international students: laboratory training, eligibility, duration and tuition."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "jeppiaar-university",
+      "name": "Jeppiaar University",
+      "city": "Chennai",
+      "type": "Private",
+      "establishedYear": 2021,
+      "officialWebsite": "https://jeppiaaruniversity.ac.in/",
+      "mediaAttribution": {},
+      "summary": "Jeppiaar University is a state private university at Semmencherry in Chennai, listed by UGC with a 26 February 2021 gazette date. Its current programmes span sciences, commerce and other fields. This profile covers the university’s own degrees; similarly named Jeppiaar engineering colleges and other affiliated institutions have separate awards and approvals.",
+      "campusLifestyle": "The university’s 2026 admission brochure describes a Chennai campus with laboratories, student clubs, sports facilities and hostels for boys and girls. Academic study and campus activities vary by school and programme; applicants should check their exact university route and current facilities rather than relying on a similarly named affiliated college.",
+      "cityProfile": "The university’s admission office is at Jeppiaar Nagar on Rajiv Gandhi Salai, OMR, Semmencherry, Chennai 600119. Applicants should confirm the teaching location for their particular degree and plan daily travel or accommodation around it. The Jeppiaar name is also used by other colleges, so the legal institution, degree-awarding university and invoice should agree before payment.",
+      "practicalExposure": "Current science course pages describe laboratory sessions, projects and subject-focused learning; commerce study includes accounting, finance and business concepts. The 2026 brochure also describes student clubs, collaborative learning and industry engagement. The nature of laboratory work, academic projects and access to particular facilities depends on the selected programme. These academic descriptions do not guarantee a job, internship, forensic-officer appointment, teaching qualification or pilot licence.",
+      "hostelOverview": "The 2026 brochure advertises on-campus accommodation for boys and girls, with air-conditioned and non-air-conditioned rooms. Obtain a current allotment, room category, charges, deposit and refund terms directly from the university; admission does not itself guarantee a hostel place.",
+      "dietarySupport": "The university’s 2026 brochure describes vegetarian and non-vegetarian hostel menus. Applicants with specific dietary needs should confirm the current mess arrangement, meal charges and available options before accepting accommodation.",
+      "safetyOverview": "Applicants should obtain current campus, hostel and emergency contacts and understand university rules before joining. Confirm the academic location and accommodation arrangements, and retain admission and payment records for the exact university degree.",
+      "studentSupport": "The current admissions page sets out online application, acknowledgement, eligibility review, counselling and payment steps. It provides university admissions contacts for programme questions. Students should obtain the required qualification-document checklist and itemised fee terms for their own course and category.",
+      "whyChoose": [
+        "Current named science and commerce degree pages state the academic level and duration.",
+        "The university describes laboratory, project and subject-focused learning across its schools.",
+        "Its Chennai campus brochure lists clubs, sports and on-campus hostel options."
+      ],
+      "thingsToConsider": [
+        "UGC lists the university while inspection information is still awaited under review; this is not a completed inspection claim.",
+        "Engineering, management and other professional routes require their own applicable approval assessment.",
+        "Third-party first-year fee references are indicative; obtain the university’s itemised current quotation before payment."
+      ],
+      "bestFitFor": [
+        "Applicants meeting the university’s stated school or relevant undergraduate qualification conditions.",
+        "Students seeking a university degree at the Semmencherry campus in Chennai.",
+        "Applicants able to confirm subject eligibility, fee terms and accommodation directly for their chosen programme."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC-listed university; inspection information awaited under review"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC own university listing and inspection status",
+          "url": "https://www.ugc.gov.in/universitydetails/Private_university_other?id=1137"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Current2026 university admission brochure",
+          "url": "https://jeppiaaruniversity.ac.in/wp-content/uploads/2026/05/Jeppiaar_2026_Admission.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current university admissions and qualification conditions",
+          "url": "https://jeppiaaruniversity.ac.in/admissions/",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Current own-university academic programme index",
+          "url": "https://jeppiaaruniversity.ac.in/academics/",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC own private university listing",
+          "url": "https://www.ugc.gov.in/universitydetails/Private_university_other?id=1137",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Government-owned university schedule notification",
+          "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2021/127_Ex_II_2.pdf",
+          "kind": "government",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "CollegeDekho exact named first-year fee reference updated22July2026",
+          "url": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+          "kind": "other",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "scope": "Own-university nontechnical degree routes with current award, duration and qualification evidence. Overseas admission eligibility is not established by these domestic school/degree conditions."
+      },
+      "faq": [
+        {
+          "question": "Is this the same as Jeppiaar Engineering College?",
+          "answer": "No. This profile concerns Jeppiaar University at its official university domain. Jeppiaar Engineering College and other similarly named affiliated institutions have separate legal, degree-awarding and approval arrangements. Confirm the exact institution on your offer and invoice."
+        },
+        {
+          "question": "What is the university’s establishment date?",
+          "answer": "UGC lists 26 February 2021 as the establishment or gazette date, and the Tamil Nadu Government Gazette includes Jeppiaar University in the private-university schedule on that date. The university’s own profile describes establishment in 2022; the catalogue year follows the official statutory listing."
+        },
+        {
+          "question": "What undergraduate qualification is required?",
+          "answer": "The current admission page requires completion of 10+2/Higher Secondary with at least 50% marks. The B.Com page accepts a recognised board and states a preference for Commerce, Business Studies and Accountancy. Confirm any programme-specific subject assessment with the university."
+        },
+        {
+          "question": "What is required for the MSc courses?",
+          "answer": "The university’s current postgraduate admission rule requires a relevant undergraduate degree with at least 50% marks. The department must assess whether the precise prior discipline is relevant; do not treat a general postgraduate rule as permission for every undergraduate subject."
+        },
+        {
+          "question": "How should I interpret the fee amounts?",
+          "answer": "Where shown, native reported fee amounts are indicative first-year references from an exact named secondary-source row. They are not isolated annual tuition or an all-years total. Request the current itemised university quotation, additional charges and refund terms before paying."
+        },
+        {
+          "question": "Is teaching language confirmed for these degrees?",
+          "answer": "No applicable programme teaching-language policy has been established for these listings. The language labels are left blank. An English website, English subject or placement claim should not be treated as a guarantee of the language used for instruction and assessment."
+        },
+        {
+          "question": "Is hostel accommodation available?",
+          "answer": "The 2026 admission brochure advertises boys’ and girls’ hostels with air-conditioned and non-air-conditioned rooms and vegetarian/non-vegetarian menus. Obtain current vacancies, room allotment, charges and rules directly; academic admission does not guarantee a place."
+        },
+        {
+          "question": "Do aviation or sports degrees include a professional licence?",
+          "answer": "An academic BSc Aviation or BSc Physical Education degree does not itself establish pilot licensing or eligibility for a regulated teaching appointment. Check the separate requirements for the occupation you intend to pursue. Similar caution applies to professional forensic appointments."
+        },
+        {
+          "question": "Can overseas applicants use these eligibility conditions?",
+          "answer": "Only the published domestic school and relevant-degree conditions are established here. An overseas applicant needs a separate university assessment of qualifications, category, immigration requirements and fees before relying on an offer; no general international eligibility is implied."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "jeppiaar-b-sc-computer-science",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc. Computer Science",
+          "durationYears": 3,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/b-sc-computer-science/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Computer Science is a 3-year undergraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required school qualification records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 120000,
+              "status": "indicative",
+              "period": "first_year",
+              "componentBasis": "Exact named university/course row under First Year Fees, updated22July2026. The source does not isolate tuition or itemise included components. This is a first-year reported charge reference, not annualised tuition or a full-course total; current university quotation and applicant category require confirmation.",
+              "audience": "domestic",
+              "category": "Standard locally reported university course; specific category not stated, not an overseas tariff",
+              "academicYear": "Unstated; updated2026-07-22",
+              "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+              "sourceLabel": "CollegeDekho Jeppiaar University first-year fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "3 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-b-sc-artificial-intelligence",
+          "canonicalCourseSlug": "bsc-computer-science",
+          "officialTitle": "B.Sc. Artificial Intelligence",
+          "durationYears": 3,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/b-sc-artificial-intelligence/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Artificial Intelligence is a 3-year undergraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required school qualification records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing."
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "3 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-b-sc-forensic-science",
+          "canonicalCourseSlug": "bsc-forensic-science",
+          "officialTitle": "B.Sc. Forensic Science",
+          "durationYears": 3,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/b-sc-forensic-science/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc. Forensic Science is a 3-year undergraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required school qualification records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 120000,
+              "status": "indicative",
+              "period": "first_year",
+              "componentBasis": "Exact named university/course row under First Year Fees, updated22July2026. The source does not isolate tuition or itemise included components. This is a first-year reported charge reference, not annualised tuition or a full-course total; current university quotation and applicant category require confirmation.",
+              "audience": "domestic",
+              "category": "Standard locally reported university course; specific category not stated, not an overseas tariff",
+              "academicYear": "Unstated; updated2026-07-22",
+              "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+              "sourceLabel": "CollegeDekho Jeppiaar University first-year fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "3 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-b-sc-aviation",
+          "canonicalCourseSlug": "bsc-aviation",
+          "officialTitle": "B.Sc Aviation",
+          "durationYears": 3,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/b-sc-aviation/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Aviation is a 3-year undergraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school. This academic degree does not itself establish a pilot licence.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required school qualification records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 150000,
+              "status": "indicative",
+              "period": "first_year",
+              "componentBasis": "Exact named university/course row under First Year Fees, updated22July2026. The source does not isolate tuition or itemise included components. This is a first-year reported charge reference, not annualised tuition or a full-course total; current university quotation and applicant category require confirmation.",
+              "audience": "domestic",
+              "category": "Standard locally reported university course; specific category not stated, not an overseas tariff",
+              "academicYear": "Unstated; updated2026-07-22",
+              "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+              "sourceLabel": "CollegeDekho Jeppiaar University first-year fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "3 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-b-sc-physical-education",
+          "canonicalCourseSlug": "bachelor-physical-education-sports",
+          "officialTitle": "B.Sc Physical Education",
+          "durationYears": 3,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/b-sc-physical-education/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.Sc Physical Education is a 3-year undergraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school. This is the named BSc academic award; it is not a substituted BPEd teaching qualification.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required school qualification records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing."
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "3 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-b-com",
+          "canonicalCourseSlug": "bcom",
+          "officialTitle": "B.Com",
+          "durationYears": 3,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/b-com/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "B.Com is a 3-year undergraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy.",
+                "The programme page accepts 10+2 from any recognised board; Commerce, Business Studies and Accountancy are preferred."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required school qualification records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 110000,
+              "status": "indicative",
+              "period": "first_year",
+              "componentBasis": "Exact named university/course row under First Year Fees, updated22July2026. The source does not isolate tuition or itemise included components. This is a first-year reported charge reference, not annualised tuition or a full-course total; current university quotation and applicant category require confirmation.",
+              "audience": "domestic",
+              "category": "Standard locally reported university course; specific category not stated, not an overseas tariff",
+              "academicYear": "Unstated; updated2026-07-22",
+              "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+              "sourceLabel": "CollegeDekho Jeppiaar University first-year fee table",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "3 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-m-sc-computer-science",
+          "canonicalCourseSlug": "msc-computer-science",
+          "officialTitle": "M.Sc. Computer Science",
+          "durationYears": 2,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/m-sc-computer-science/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Computer Science is a 2-year postgraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "A relevant completed undergraduate degree with at least 50% marks under the current university postgraduate admission policy.",
+                "The department must assess whether the exact qualifying discipline is relevant to this MSc programme."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required qualifying-degree records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing."
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "2 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        },
+        {
+          "slug": "jeppiaar-m-sc-forensic-science",
+          "canonicalCourseSlug": "msc-forensic-science",
+          "officialTitle": "M.Sc. Forensic Science",
+          "durationYears": 2,
+          "officialProgramUrl": "https://jeppiaaruniversity.ac.in/m-sc-forensic-science/",
+          "fee": {
+            "status": "on_request",
+            "verifiedAt": "2026-10-25",
+            "notes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Applicants meeting the published domestic school or qualifying-degree admission conditions"
+            ],
+            "restrictions": [
+              "No overseas/NRI qualification or fee route is established by these general university conditions.",
+              "Programme-specific subject relevance and equivalence require university assessment."
+            ],
+            "notes": "The institution’s Christian-minority identity does not itself establish a religion-based admission restriction.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/"
+          },
+          "admissionsContent": {
+            "overview": "M.Sc. Forensic Science is a 2-year postgraduate programme on the university’s current own-degree pages. Confirm subject eligibility and the teaching arrangement with the relevant university school.",
+            "eligibility": {
+              "intro": "The current university admission policy and programme page give these conditions.",
+              "items": [
+                "A relevant completed undergraduate degree with at least 50% marks under the current university postgraduate admission policy.",
+                "The department must assess whether the exact qualifying discipline is relevant to this MSc programme."
+              ]
+            },
+            "applicationSteps": [
+              "Complete the university’s prescribed online application for the exact degree.",
+              "Retain the application confirmation and follow the university’s eligibility review and counselling instructions.",
+              "Obtain the current written fee terms and complete admission payment through the official university route if selected."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Obtain the university’s current checklist of required qualifying-degree records."
+              ],
+              "application": [
+                "Complete the university’s prescribed online application details."
+              ]
+            },
+            "deadlinesNote": "The website advertises 2026–27 admissions and a dated admission timeline. Ask the university about current availability and the next cycle; no exact first-entry class month is advertised in this listing."
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Request the university’s current itemised fee schedule for the exact programme and applicant category. Confirm tuition, application/admission, laboratory, examination, accommodation, mess, deposits and refund conditions separately before payment.",
+          "teachingPhases": [
+            {
+              "phase": "Regular academic study",
+              "language": "",
+              "details": "2 academic years as stated on the named own-university course page; school-specific practical and assessment arrangements need confirmation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "B.Sc. Computer Science currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc. Computer Science: exact3years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.Sc. Computer Science: exactsecondaryFirstYearFees INR120,000,updated22July2026; noannualisation orisolatedtuitionclaim.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDekho named first-year fee table",
+      "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-computer-science",
+      "internalNotes": "OrdinaryHTTP200 fullCollegeDekhopage/visibletextretained. Currentofficialprogrammecontinuation/durationindependentlyestablished. Sourcecontainsotherhistoricalcoursesnotpublishedmerelyfromaggregator. Shiksha150kfullcourseCSalternativekeptseparate, notblendedwithfirstyearbasis."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "B.Sc. Artificial Intelligence currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-artificial-intelligence/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc. Artificial Intelligence: exact3years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-artificial-intelligence/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-artificial-intelligence/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-artificial-intelligence/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-artificial-intelligence",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "B.Sc. Forensic Science currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc. Forensic Science: exact3years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.Sc. Forensic Science: exactsecondaryFirstYearFees INR120,000,updated22July2026; noannualisation orisolatedtuitionclaim.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDekho named first-year fee table",
+      "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-forensic-science",
+      "internalNotes": "OrdinaryHTTP200 fullCollegeDekhopage/visibletextretained. Currentofficialprogrammecontinuation/durationindependentlyestablished. Sourcecontainsotherhistoricalcoursesnotpublishedmerelyfromaggregator. Shiksha150kfullcourseCSalternativekeptseparate, notblendedwithfirstyearbasis."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "B.Sc Aviation currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-aviation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc Aviation: exact3years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-aviation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-aviation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-aviation/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.Sc Aviation: exactsecondaryFirstYearFees INR150,000,updated22July2026; noannualisation orisolatedtuitionclaim.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDekho named first-year fee table",
+      "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-aviation",
+      "internalNotes": "OrdinaryHTTP200 fullCollegeDekhopage/visibletextretained. Currentofficialprogrammecontinuation/durationindependentlyestablished. Sourcecontainsotherhistoricalcoursesnotpublishedmerelyfromaggregator. Shiksha150kfullcourseCSalternativekeptseparate, notblendedwithfirstyearbasis."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "B.Sc Physical Education currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-physical-education/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "B.Sc Physical Education: exact3years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-physical-education/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-physical-education/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-sc-physical-education/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-sc-physical-education",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "B.Com currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "B.Com: exact3years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "Completed 10+2/Higher Secondary with at least 50% marks under the current university undergraduate admission policy. The programme page accepts 10+2 from any recognised board; Commerce, Business Studies and Accountancy are preferred.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/b-com/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "reportedFeeQuote",
+      "claimText": "B.Com: exactsecondaryFirstYearFees INR110,000,updated22July2026; noannualisation orisolatedtuitionclaim.",
+      "status": "indicative",
+      "sourceLabel": "CollegeDekho named first-year fee table",
+      "sourceUrl": "https://www.collegedekho.com/colleges/jeppiaar-university-courses",
+      "sourceGrade": "B",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-b-com",
+      "internalNotes": "OrdinaryHTTP200 fullCollegeDekhopage/visibletextretained. Currentofficialprogrammecontinuation/durationindependentlyestablished. Sourcecontainsotherhistoricalcoursesnotpublishedmerelyfromaggregator. Shiksha150kfullcourseCSalternativekeptseparate, notblendedwithfirstyearbasis."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Computer Science currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Computer Science: exact2years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "A relevant completed undergraduate degree with at least 50% marks under the current university postgraduate admission policy. The department must assess whether the exact qualifying discipline is relevant to this MSc programme.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-computer-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-computer-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "officialTitle",
+      "claimText": "M.Sc. Forensic Science currentownuniversitycourse, distinctfromaffiliatedJeppiaarcolleges.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "duration",
+      "claimText": "M.Sc. Forensic Science: exact2years explicitlynamed currentcoursepage.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "eligibility",
+      "claimText": "A relevant completed undergraduate degree with at least 50% marks under the current university postgraduate admission policy. The department must assess whether the exact qualifying discipline is relevant to this MSc programme.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "admissions",
+      "claimText": "Officialonlineapplication,acknowledgement,review,counselling,paymentprocess.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "medium",
+      "claimText": "Applicableteachinglanguage notestablished;emptylabel/codes, noEnglishinference.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "intake",
+      "claimText": "Noexactfirst-entryclassmonthadvertised; sourcegeneraltimeline nottransferredasprogrammeguarantee.",
+      "status": "omit",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/admissions/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "fee",
+      "claimText": "Itemisedcurrentofficialtuition notpublishedinretrievedcourse/admissionmaterial; requestexactprogramme/categoryquotation.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/m-sc-forensic-science/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25",
+      "programmeSlug": "jeppiaar-m-sc-forensic-science",
+      "internalNotes": "CurrentpagefetchHTTP200,fullHTMLandvisibletextretained. UGgeneral50%/PGrelevantUG50% are explicituniversity-wideconditions; no inventednamedscienceprerequisite. BCompagepass10+2/preferredCommercefields retained with generalminimum. Noaliascollegefees used."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "identity",
+      "claimText": "OwnSemmencherryChennaiJeppiaarUniversity; canonicalapexHTTPSworks,wwwTLSnamemismatchnotbypassed.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "recognition",
+      "claimText": "UGCprivateuniversityID1137 lists26February2021establishment/gazettedate;expertinspectioninformationawaitedunderreview, notcompletedapproval.",
+      "status": "verified",
+      "sourceLabel": "Regulator/government-owned institution record",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Private_university_other?id=1137",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "recognition",
+      "claimText": "TamilNaduGovernmentGazette127,26February2021,GOMs83 includesJeppiaarUniversityin2019ActSchedule, statutoryinstitutionstatusnotprofessionalprogrammeapproval.",
+      "status": "verified",
+      "sourceLabel": "Regulator/government-owned institution record",
+      "sourceUrl": "https://www.stationeryprinting.tn.gov.in/extraordinary/2021/127_Ex_II_2.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "jeppiaar-university",
+      "publicField": "campus",
+      "claimText": "Current2026brochureowncampuslabs,clubs,sportsandboys/girlshostelswithAC/nonACandveg/nonvegmenus; noallotmentguarantee.",
+      "status": "verified",
+      "sourceLabel": "Jeppiaar University official current source",
+      "sourceUrl": "https://jeppiaaruniversity.ac.in/wp-content/uploads/2026/05/Jeppiaar_2026_Admission.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-01-25"
+    }
+  ]
+}

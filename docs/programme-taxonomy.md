@@ -351,3 +351,13 @@ HSC-entry integrated master's awards use distinct `integrated-msc-biological-sci
 ### Folklore and geospatial science master's families
 
 `master-folklore` is an academic arts/humanities master's in oral traditions, narrative, performance, cultural memory and related fieldwork or interpretation. Retain each institution's exact award and curriculum separately. `msc-geospatial-science` is a natural-sciences master's for remote sensing, geoinformatics and spatial analysis, distinct from engineering geoinformatics awards and the broader Geography family. Neither family implies a professional licence or a fixed university curriculum.
+
+### Master of Statistics
+
+`master-statistics` covers the explicitly named Master of Statistics (M.Stat) award. Keep it distinct from `msc-statistics`, which requires a Master of Science award. Probability, inference, statistical modelling, computing and research are subject areas; exact entry qualifications and duration remain offering-specific.
+
+### Fire/safety and nanotechnology engineering (25 October 2026)
+
+`be-btech-fire-safety-engineering` is a neutral engineering bachelor family for fire technology, fire protection and safety engineering degrees. It is distinct from generic vocational safety certificates and from postgraduate industrial-safety engineering.
+
+`be-btech-nanotechnology` is a neutral engineering bachelor family for nanoscale materials, fabrication, characterisation and engineering applications. It does not combine science B.Sc./M.Sc. awards with B.E./B.Tech. degrees. NICHE exact official titles remain in programme records; its M.Tech. Nanotechnology uses the existing engineering materials master's family as a specialism. Neither family conveys a professional licence.

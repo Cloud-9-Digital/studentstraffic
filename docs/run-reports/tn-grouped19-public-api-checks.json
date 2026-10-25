@@ -53,5 +53,12 @@
     "hasLogo": true,
     "hasCover": true,
     "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/api/mobile/v1/universities?country=india&city=Chennai&q=Ambedkar",
+    "status": 200,
+    "slug": "tamil-nadu-dr-ambedkar-law-university",
+    "programCount": 13,
+    "pass": true
   }
 ]
