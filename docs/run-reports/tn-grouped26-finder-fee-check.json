@@ -1,0 +1,10 @@
+{
+  "url": "https://www.studentstraffic.com/api/mobile/v1/universities?country=india&city=Chennai&q=University%20of%20Madras",
+  "status": 200,
+  "slug": "university-of-madras",
+  "programCount": 80,
+  "amount": 20000,
+  "amountType": "number",
+  "feeLabel": "₹20,000",
+  "pass": true
+}

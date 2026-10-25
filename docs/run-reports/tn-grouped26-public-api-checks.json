@@ -21,15 +21,15 @@
     "expectedCount": 49,
     "expectedName": "Bharath Institute of Higher Education and Research",
     "actualName": "Bharath Institute of Higher Education and Research",
-    "actualCount": 46,
-    "offerings": 46,
+    "actualCount": 49,
+    "offerings": 49,
     "recognitionCount": 1,
-    "expectedQuoteLabels": 46,
-    "actualQuoteLabels": 46,
+    "expectedQuoteLabels": 49,
+    "actualQuoteLabels": 49,
     "missingQuoteLabels": [],
     "logoPresent": true,
     "coverPresent": true,
-    "pass": false
+    "pass": true
   },
   {
     "slug": "vellore-institute-of-technology",

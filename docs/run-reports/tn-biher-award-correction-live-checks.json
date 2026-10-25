@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "biher-sbmch-md-paediatrics",
+    "title": "MD Paediatrics — Sree Balaji Medical College and Hospital",
+    "feeLabel": "Indian students ₹50,00,000",
+    "pass": true
+  },
+  {
+    "slug": "biher-sbmch-ms-orthopaedics",
+    "title": "MS Orthopaedics — Sree Balaji Medical College and Hospital",
+    "feeLabel": "Indian students ₹50,00,000",
+    "pass": true
+  },
+  {
+    "slug": "biher-slims-md-paediatrics",
+    "title": "MD Paediatrics — Sri Lakshmi Narayana Institute of Medical Sciences",
+    "feeLabel": "₹50,00,000",
+    "pass": true
+  },
+  {
+    "slug": "biher-slims-ms-orthopaedics",
+    "title": "MS Orthopaedics — Sri Lakshmi Narayana Institute of Medical Sciences",
+    "feeLabel": "₹55,00,000",
+    "pass": true
+  },
+  {
+    "slug": "biher-bmch-md-paediatrics",
+    "title": "MD Paediatrics — Bhaarath Medical College and Hospital",
+    "feeLabel": "Indian students ₹50,00,000",
+    "pass": true
+  },
+  {
+    "slug": "biher-bmch-ms-orthopaedics",
+    "title": "MS Orthopaedics — Bhaarath Medical College and Hospital",
+    "feeLabel": "Indian students ₹60,00,000",
+    "pass": true
+  }
+]
