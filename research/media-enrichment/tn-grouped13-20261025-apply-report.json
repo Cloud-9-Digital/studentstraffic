@@ -1,0 +1,33 @@
+{
+  "appliedAt": "2026-10-25T06:08:16.339Z",
+  "uploads": {
+    "attempted": 6,
+    "succeeded": 6,
+    "failed": 0
+  },
+  "database": {
+    "updated": 3,
+    "notFoundInDb": []
+  },
+  "updatedUniversities": [
+    {
+      "universitySlug": "avinashilingam-institute-for-home-science-and-higher-education-for-women",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "justice-basheer-ahmed-sayeed-college-for-women",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    },
+    {
+      "universitySlug": "the-new-college-chennai",
+      "logoUpdated": true,
+      "coverUpdated": true,
+      "notFoundInDb": false
+    }
+  ],
+  "uploadFailures": []
+}
