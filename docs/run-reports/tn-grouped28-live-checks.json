@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/care-m-sc-clinical-research-and-experimental-medicine",
+    "kind": "programme",
+    "slug": "care-m-sc-clinical-research-and-experimental-medicine",
+    "status": 200,
+    "h1": "Master&#x27;s Clinical Research at Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/care-b-sc-sports-and-exercise-science-honours",
+    "kind": "programme",
+    "slug": "care-b-sc-sports-and-exercise-science-honours",
+    "status": 200,
+    "h1": "Bachelor&#x27;s Sport and Exercise Science at Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/chettinad-academy-of-research-and-education",
+    "kind": "university",
+    "slug": "chettinad-academy-of-research-and-education",
+    "status": 200,
+    "h1": "Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-a-tamil-pachaiyappas-college-chennai",
+    "kind": "programme",
+    "slug": "b-a-tamil-pachaiyappas-college-chennai",
+    "status": 200,
+    "h1": "B.A. Languages at Pachaiyappa&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/b-sc-computer-science-pachaiyappas-college-chennai-self-financed-maths-route",
+    "kind": "programme",
+    "slug": "b-sc-computer-science-pachaiyappas-college-chennai-self-financed-maths-route",
+    "status": 200,
+    "h1": "B.Sc. Computer Science at Pachaiyappa&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/chettinad-mbbs",
+    "kind": "programme",
+    "slug": "chettinad-mbbs",
+    "status": 200,
+    "h1": "MBBS at Chettinad Academy of Research and Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/snu-chennai-btech-ai-data-science",
+    "kind": "programme",
+    "slug": "snu-chennai-btech-ai-data-science",
+    "status": 200,
+    "h1": "B.E./B.Tech Data Science at Shiv Nadar University Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/snu-chennai-m-b-a",
+    "kind": "programme",
+    "slug": "snu-chennai-m-b-a",
+    "status": 200,
+    "h1": "MBA at Shiv Nadar University Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/snu-chennai-m-tech-information-technology",
+    "kind": "programme",
+    "slug": "snu-chennai-m-tech-information-technology",
+    "status": 200,
+    "h1": "M.E./M.Tech IT at Shiv Nadar University Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/pachaiyappas-college-chennai",
+    "kind": "university",
+    "slug": "pachaiyappas-college-chennai",
+    "status": 200,
+    "h1": "Pachaiyappa&#x27;s College, Chennai",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/shiv-nadar-university-chennai",
+    "kind": "university",
+    "slug": "shiv-nadar-university-chennai",
+    "status": 200,
+    "h1": "Shiv Nadar University Chennai",
+    "pass": true
+  }
+]

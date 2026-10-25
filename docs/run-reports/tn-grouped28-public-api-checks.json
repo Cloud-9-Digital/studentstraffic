@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "chettinad-academy-of-research-and-education",
+    "status": 200,
+    "expectedCount": 34,
+    "expectedName": "Chettinad Academy of Research and Education",
+    "actualName": "Chettinad Academy of Research and Education",
+    "actualCount": 34,
+    "offerings": 34,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 28,
+    "actualQuoteLabels": 28,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "pachaiyappas-college-chennai",
+    "status": 200,
+    "expectedCount": 24,
+    "expectedName": "Pachaiyappa's College, Chennai",
+    "actualName": "Pachaiyappa's College, Chennai",
+    "actualCount": 24,
+    "offerings": 24,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 24,
+    "actualQuoteLabels": 24,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "shiv-nadar-university-chennai",
+    "status": 200,
+    "expectedCount": 26,
+    "expectedName": "Shiv Nadar University Chennai",
+    "actualName": "Shiv Nadar University Chennai",
+    "actualCount": 26,
+    "offerings": 26,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 26,
+    "actualQuoteLabels": 26,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]
