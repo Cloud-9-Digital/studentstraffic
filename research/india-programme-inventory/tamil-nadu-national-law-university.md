@@ -1,8 +1,8 @@
 # Tamil Nadu National Law University — complete taught award inventory
 
-Scope checked 25 October 2026: university taught awards, including regular residential degrees, the current part-time hybrid diploma and one professional certificate. Five rows: B.A. LL.B. (Hons.), B.Com. LL.B. (Hons.), LL.M. Business Law, PG Diploma Fisheries Law and Policy, and Certificate Advanced Courtroom and Advocacy Skills. One supported diploma packaged; four exact holds. PhD, the project fellowship and non-award Continuing Legal Education are excluded. Historic three-specialisation LLM lists are superseded by the current 2027 brochure's single Business Law programme.
+Scope checked 25 October 2026: university taught awards, including regular residential degrees, the current part-time hybrid diploma and one professional certificate. Five rows: B.A. LL.B. (Hons.), B.Com. LL.B. (Hons.), LL.M. Business Law, PG Diploma Fisheries Law and Policy, and Certificate Advanced Courtroom and Advocacy Skills. One diploma published in0195; one current domestic-route LL.M. ready in the full forward draft; three actual approval/award-scope holds remain. PhD, the project fellowship and non-award Continuing Legal Education are excluded. Historic three-specialisation LLM lists are superseded by the current 2027 brochure's single Business Law programme.
 
-Canonical identity is Tamil Nadu National Law University (TNNLU), formerly Tamilnadu National Law School (TNNLS). No matching ledger or migration found before claim. UGC consolidated register entry829 uses the older School name and confirms State University, 2012. Current consolidated establishment Act uses the University name. Same Navalurkuttapattu institution, not Tamil Nadu Dr Ambedkar Law University.
+Canonical identity is Tamil Nadu National Law University (TNNLU), formerly Tamilnadu National Law School (TNNLS). Original claim found no duplicate; forward research retains the published0195 checkpoint and one programme until a validated complete forward is reserved. UGC consolidated register entry829 uses the older School name and confirms State University, 2012. Current consolidated establishment Act uses the University name. Same Navalurkuttapattu institution, not Tamil Nadu Dr Ambedkar Law University.
 
 ## Sources and captures
 
@@ -27,11 +27,18 @@ Local source bundle: `research/india-source-bundles/tnnlu-20261025/` includes of
 
 Published2026 schedule: applications27May–15July, fee intimation20July, admission24July, programme commencement1August2026; one-year study August–July. Not presented as a future open application window or a claim of independently observed commencement. Online classes on weekends, minimum60%course attendance; administrator approval required for recordings to receive attendance credit. Physical final written exam July2027 at notified centres in India and abroad. No guarantee of a particular overseas centre, online-only completion or student-visa route.
 
-## Held rows
+## Forward rescue —25October2026
 
-- Two undergraduate degrees: current school-entry45%/40%SC-ST and NRI/OCI quota are documented, but no explicit programme instruction language or verified first-year class-start month was found. The posted BCI letter is historical2022-23, requiring current regulator reconciliation. No inference from English textbooks, English subject or university language lab.
-- LL.M. Business Law: one-year degree,55%general/50%SC-ST and current tuition established, but English instruction, intake and foreign admission category unverified. Current PG seat table has All India/Tamil Nadu categories and no explicit NRI/OCI route. Historical three LLM specialisations not separately packaged.
-- Certificate Advanced Courtroom and Advocacy Skills: one-year offline weekend workshop programme October2026–October2027; graduateLLB>=50%, Bar CouncilTamilNadu/Puducherry enrolment on/after2022 (provisional pending allowed),0–4years experience.100INRapplication; no tuition. Medium unverified and foreign/residency restriction needs precise assessment. Proposed postgraduate-certificate taxonomy held until award-level confirmation.
+Complete two-programme draft: `research/india-source-bundles/tnnlu-forward-20261025/draft-payload.json`; reusable builder beside it. The original fisheries diploma is semantically deep-equal to0195. Full offline reader passes one temporary migration, two programmes, zero warnings. No numbered reservation or database action yet.
+
+Current institution-linked2027–28 brochure printed38–43 establishes one-year LL.M. Business Law, qualifying three/five-year law degree,55% unreserved/OBC/SAP/other or50%SC/ST, CLAT2027 merit/category admission and conditional final-year result evidence. Its academic fee table isolates tuitionINR75,075 per annum; academic total101,955, user charges70,770, one-time20,000, category deposits14,000/20,000 and mess37,800 remain distinct. No inferred full-course total or Tamil Nadu SC/ST zero tuition is entered. Only the established All India/Tamil Nadu postgraduate route is packaged; the undergraduate NRI/OCI quota is not transferred. Unknown instruction language and first-entry month are empty with omit evidence.
+
+Current own admissions page was reopened25October2026: it still links the brochure and confirms LL.M. CLAT admission. Its2026–27 page heading is not silently substituted for the PDF's actual2027–28 cycle. Existing2026 diploma cycle is preserved. Plain establishment-Act filler badge removed in pending forward; genuine linked UGC State University recognition retained. Act remains an institutional history source. Reviewed official source/rights metadata reconstructed for both existing media assets; no asset URL replacement or upload.
+
+## Actual held rows
+
+- B.A. LL.B. (Hons.) and B.Com. LL.B. (Hons.): current applicable professional approval scope unresolved. Posted23February2023 BCI letter extends only2022–23; this is not a finding that programmes are unapproved. Optional language/intake gaps no longer hold the degrees.
+- Certificate Advanced Courtroom and Advocacy Skills: award-level and precise practitioner/residency scope remain unresolved; source requires IndianLLB>=50%, Tamil Nadu/Puducherry Bar enrolment from2022 and0–4years experience. Not rescued solely through optional language/intake policy.
 
 ## Mandatory media
 
@@ -44,3 +51,7 @@ Reserved bundle: `0195-india-tamil-nadu-national-law-university`.
 ## Final application-route verification
 
 The2026brochure expressly supplies https://forms.gle/9ReKpoXzAiY6cuRu8 . Public unauthenticated retrieval25October2026 confirms form title forPGDFLP2026-2027, created insideTamilNaduNationalLawUniversity, and **no longer accepting responses**. Saved HTML `application-form.html`. No submission attempted. Application steps preserve this exact historical route and instruct future applicants to await next notice. Brochure does not enumerate academic/identity uploads; inferred certificate,passport/nationality and payment-record requirements were removed. Required structured document arrays instead explicitly state that the next-cycle checklist must be obtained from admissions.
+
+## Frozen complete forward
+
+0315-india-tnnlu-llm-academic-rescue: two programmes; canonical numbered reader passes with zero warnings. Ledger validated2; parent publication pending. Existing diploma deep-equal0195. Existing reviewed media unchanged; no new upload required.

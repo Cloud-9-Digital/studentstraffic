@@ -1,0 +1,654 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "med-education",
+      "name": "Master of Education",
+      "shortName": "M.Ed",
+      "stream": "education",
+      "level": "masters",
+      "discipline": "education",
+      "aliases": [
+        "MEd",
+        "Master in Education",
+        "MA Education Studies"
+      ],
+      "displayOrder": 100,
+      "durationYears": 1,
+      "summary": "A graduate education catalogue category for master's programmes covering teaching, learning, education policy and research methods. Each university offering keeps its own official award title, placement structure, language and current fee schedule.",
+      "metaTitle": "Master of Education Programmes Abroad",
+      "metaDescription": "Compare Master of Education programmes abroad by structure, admissions, language, tuition and study routes."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "india",
+      "slug": "tamil-nadu-teachers-education-university",
+      "name": "Tamil Nadu Teachers Education University",
+      "city": "Chennai",
+      "type": "Public",
+      "establishedYear": 2008,
+      "officialWebsite": "https://www.tnteu.ac.in/",
+      "mediaAttribution": {
+        "logo": {
+          "sourceUrl": "https://www.tnteu.ac.in/images/logo.png",
+          "rights": "Institution-published original for factual profile identification; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25"
+        },
+        "cover": {
+          "sourceUrl": "https://www.tnteu.ac.in/images/university/Faculty%20Building%201.JPG",
+          "rights": "Institution-published original for factual profile identification; no open licence or ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "altText": "Faculty Building at Tamil Nadu Teachers Education University, Karapakkam, Chennai, with the university name board over the entrance"
+        }
+      },
+      "summary": "Tamil Nadu Teachers Education University (TNTEU) is a public, single-discipline education university at Karapakkam, Chennai. Created by Tamil Nadu Act 33 of 2008, it teaches one common two-year M.Ed. through six education departments and holds UGC 2(f) and 12(B) status, NCTE recognition and NAAC Grade A (CGPA 3.17, first cycle).",
+      "campusLifestyle": "The Karapakkam campus on Gangaiamman Koil Street holds the six education departments, classrooms, an administrative office, seminar and multipurpose halls, a playground, and psychology, educational-technology, computer and language laboratories. The library stocks 3,952 books, 51 education journals, seven periodical journals and 35 encyclopaedias. The 2026-27 brochure adds ICT-enabled classrooms, e-learning resources and campus Wi-Fi. Department, laboratory and hall pages are photo galleries rather than room schedules.",
+      "cityProfile": "Karapakkam is a southern Chennai locality on Old Mahabalipuram Road, the city's IT corridor, in postal code 600097. Chennai is the capital of Tamil Nadu and is served by Chennai International Airport, Chennai Metro, suburban railway and city buses, so students can live away from Karapakkam and commute. The campus sits among technology offices, colleges and residential developments rather than in the historic centre. Plan accommodation around the Karapakkam-Sholinganallur stretch and check daily travel times before choosing a hostel or rented room.",
+      "practicalExposure": "The M.Ed. is a two-year, four-semester CBCS programme carrying 90 credits, with a maximum of three years to complete and 100 working days in each semester. The university's published CBCS regulations organise study into five curricular areas: perspective courses, tool courses, a teacher-education course, specialisation core courses and specialisation thematic courses. Fieldwork is embedded across the degree: field immersion in co-operative schools (10 working days) in semester one, a field visit to teacher-education institutions (10 working days) in semester two, and a field-based internship in co-operative schools (five working days) in semester three. Students also take a research colloquium, practicum work that includes five experiments and five paper-pencil tests in the second semester, and a dissertation that runs across semesters. Attendance must reach 80% for theory and practicum and 90% for field attachment. The university's Training and Placement Cell is listed separately; the degree does not itself guarantee a teaching or placement outcome.",
+      "hostelOverview": "Separate hostels for men and women are advertised in the 2026-27 M.Ed. admission notification. The university publishes a hostel application form (PDF) and a separate online hostel-fee payment page for students, staff and guests. The pages reviewed do not state room types, annual hostel charges, mess fees, curfew rules or a room-allotment guarantee. Ask the hostel office for the current tariff and written allotment terms before paying, and treat the published form as an application rather than a confirmed room.",
+      "dietarySupport": "No mess menu, monthly meal tariff or written allergy/dietary policy is published on the university pages reviewed. The men's and women's hostels and the hostel-fee portal are listed, but meals are not itemised, so vegetarian/non-vegetarian provision and inclusive or extra charges remain unconfirmed. Students with strict dietary needs should ask the hostel office directly before accepting a room.",
+      "safetyOverview": "The current Complaints page names four channels: Prevention of Caste Based Discrimination, Anti-Ragging, a Grievance Redressal Portal, and an Anti-Sexual Harassment Cell with an Internal Complaints Committee. These are published complaint routes rather than a statement of campus security staffing. Response times, warden contacts and emergency arrangements are not published on that page.",
+      "studentSupport": "Support runs through named centres and cells: the Centre for Entrepreneurship Development and Incubation (CEDI), the Centre for MOOCs-SWAYAM, and a Training and Placement Cell. The library holds print collections and education journals, and the academic menu lists value-added courses and e-learning resources. Regulations put dissertation work under approved faculty guidance and the second-semester research colloquium with the Principal or Head.",
+      "whyChoose": [
+        "A public university devoted solely to education, with six departments jointly teaching one common M.Ed.",
+        "UGC 2(f) and 12(B) status, NCTE recognition for the M.Ed., and NAAC Grade A with CGPA 3.17 in the first cycle.",
+        "A two-year CBCS M.Ed. with school field immersion, teacher-education field visits, practicum and a dissertation.",
+        "Published 2026-27 tuition of INR 5,945 in year one and INR 4,640 in year two, plus a INR 100 application fee."
+      ],
+      "thingsToConsider": [
+        "Only the M.Ed. is a current university-department taught degree here; B.Ed., B.A.B.Ed., B.Sc.B.Ed. and special-education awards belong to affiliated colleges.",
+        "The regulations permit Tamil or English according to the medium available in the department or college, but the Karapakkam department's actual language is not published.",
+        "The 2026-27 notification gives no first-year class-start date, and the 2025 commencement circular is addressed to affiliated-college principals.",
+        "Tuition excludes the application fee, hostel charges, eligibility fees and living costs, and no international or NRI fee is published."
+      ],
+      "bestFitFor": [
+        "Graduates with a B.Ed., B.A.B.Ed., B.Sc.B.Ed. or B.El.Ed. and at least 50% aggregate who want a research-oriented education master's.",
+        "Applicants aiming at teacher-educator, curriculum, assessment, educational-planning or school-leadership roles.",
+        "Students who can study in Tamil or English as the department arranges and do not need a published international route.",
+        "Candidates who prefer a small, single-discipline public university to a large multidisciplinary campus."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "UGC 2(f) & 12(B) - State university",
+        "NAAC Grade A - CGPA 3.17 (1st cycle, 2022)",
+        "NCTE recognition - M.Ed. intake 50"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UGC current state-university register, record ID 395",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2"
+        },
+        {
+          "label": "NAAC institutions with valid accreditation as on 14 August 2025 (workbook)",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+        },
+        {
+          "label": "NCTE Tamil Nadu SRC institution list, page 57, row 848",
+          "url": "https://web.ncte.gov.in/page-regional-committee-institution-lists/32/tamil-nadu?page=57"
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "2026-27 M.Ed. admission notification and application",
+          "url": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "2026-27 M.Ed. brochure",
+          "url": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20%20M.Ed.%20Brochure%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "M.Ed. CBCS regulations and syllabus (effective 2020-21; 2021-22 file)",
+          "url": "https://tnteu.ac.in/pdf/Criteria1/Criteria1.1/1.1.1/M.Ed_syllabus_CBCS_2021-2022.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "University departments and common M.Ed.",
+          "url": "https://www.tnteu.ac.in/departments.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "UGC current state-university register",
+          "url": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NAAC valid-accreditation workbook as on 14 August 2025",
+          "url": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+          "kind": "recognition",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "NCTE Tamil Nadu SRC list, page 57",
+          "url": "https://web.ncte.gov.in/page-regional-committee-institution-lists/32/tamil-nadu?page=57",
+          "kind": "government",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Library books and collection counts",
+          "url": "https://www.tnteu.ac.in/library_books.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Complaints and grievance channels",
+          "url": "https://www.tnteu.ac.in/complaints.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "label": "Centres and cells",
+          "url": "https://www.tnteu.ac.in/administrative.php",
+          "kind": "official-university",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "admissionsContent": {
+        "scope": "Regular two-year full-time M.Ed. at the Karapakkam university departments for 2026-27. Affiliated-college B.Ed., B.A.B.Ed., B.Sc.B.Ed., special-education awards and M.Phil./Ph.D. are outside this profile."
+      },
+      "faq": [
+        {
+          "question": "Is TNTEU public or private?",
+          "answer": "It is a public state university created by Tamil Nadu Act No. 33 of 2008, which took effect on 1 July 2008. It appears in the UGC state-university register with 2(f) and 12(B) status and is not a private or deemed university."
+        },
+        {
+          "question": "Which programmes are taught at the Karapakkam campus?",
+          "answer": "The six university departments jointly teach one common two-year M.Ed.; the same departments also offer M.Phil. and Ph.D. in Education. B.Ed., B.Ed. Special Education, B.A.B.Ed., B.Sc.B.Ed. and M.Ed. Special Education are affiliated-college programmes, not campus-department degrees."
+        },
+        {
+          "question": "What are the M.Ed. eligibility requirements?",
+          "answer": "Applicants need at least 50% aggregate marks in theory and practicum, or an equivalent grade, in B.Ed., B.A.B.Ed., B.Sc.B.Ed. or B.El.Ed. Reservation and relaxation follow the applicable Central or State Government rules. Admission uses qualifying-examination marks plus an entrance examination or another selection process set by the State Government, Central Government or university."
+        },
+        {
+          "question": "How long is the M.Ed. and how is it structured?",
+          "answer": "It is a two-year, four-semester CBCS programme of 90 credits, with a maximum of three years to complete and 100 working days per semester. Study covers perspective, tool, teacher-education, core-specialisation and thematic courses, with field immersion, a teacher-education field visit, a school internship, practicum and a dissertation."
+        },
+        {
+          "question": "What does the 2026-27 M.Ed. cost?",
+          "answer": "The official notification sets tuition at INR 5,945 for the first year and INR 4,640 for the second year, a total of INR 10,585. The online application fee is INR 100, or INR 50 for SC/ST/PWD applicants. Hostel charges, eligibility fees and living costs are separate and are not included in the tuition figure."
+        },
+        {
+          "question": "How do I apply for the 2026-27 M.Ed.?",
+          "answer": "Use the university's online M.Ed. application portal linked from the 2026-27 notification; the brochure also advertises online and offline applications. Complete the form, submit the required certificates as the portal instructs and pay the application fee. The notification PDF reviewed states no closing date, so confirm the live portal window before paying."
+        },
+        {
+          "question": "Which documents does the M.Ed. application require?",
+          "answer": "The form lists a transfer certificate, UG degree or provisional, PG degree or provisional, B.Ed. degree or provisional, B.Ed. mark statement, community certificate, two passport-size photographs and a PWD certificate if applicable. Keep originals for verification and check whether the portal wants scanned copies before submitting."
+        },
+        {
+          "question": "Is the M.Ed. taught in English?",
+          "answer": "That is not established. The regulations say the medium of instruction and examination is Tamil or English depending on the medium available in the Colleges of Education or University Departments. No separate statement confirms the Karapakkam department's language, so this profile does not default to English; ask the department before applying."
+        },
+        {
+          "question": "When does the 2026-27 M.Ed. first year begin?",
+          "answer": "No first-year class-start date is published in the 2026-27 notification. A 1 September 2025 commencement circular exists, but it is addressed to affiliated-college principals, so it cannot be applied to the university departments. Confirm the department's reporting date and orientation schedule after admission."
+        },
+        {
+          "question": "Is the M.Ed. recognised by NCTE?",
+          "answer": "Yes. NCTE's Tamil Nadu regional list records the university's M.Ed. with intake 50, order date 2 May 2017, session 2017-18 and order type Revised Recognition. The university also holds UGC 2(f) and 12(B) status and NAAC Grade A with CGPA 3.17 in its first cycle."
+        },
+        {
+          "question": "Can international or NRI students apply?",
+          "answer": "No separate international or NRI admission route, fee or visa process is published for the university-department M.Ed. The 2026-27 notification and application are domestic in structure, although the form asks nationality. Applicants with foreign qualifications should ask the university about equivalence and residency before relying on the domestic process."
+        },
+        {
+          "question": "Is hostel accommodation available?",
+          "answer": "Separate men's and women's hostels are advertised in the 2026-27 M.Ed. notification. The university publishes a hostel application form and an online hostel-fee page, but not room types, charges, mess details or a room guarantee. Apply early and obtain written allotment and payment terms before travelling."
+        },
+        {
+          "question": "Is M.Phil. currently open for admission?",
+          "answer": "No 2026-27 M.Phil. admission notification was found, even though the site menu still lists M.Phil. The published M.Phil. students list contains only 2020 and 2021 entrants, and no current fee or regulations page was located. Treat the menu entry as historical until the university issues a current notice."
+        }
+      ],
+      "programmes": [
+        {
+          "slug": "tnteu-med",
+          "canonicalCourseSlug": "med-education",
+          "officialTitle": "M.Ed. Degree (Two-Year Full-Time)",
+          "durationYears": 2,
+          "officialProgramUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+          "fee": {
+            "status": "on_request",
+            "audience": "domestic",
+            "academicYear": "2026-27",
+            "verifiedAt": "2026-10-25",
+            "notes": "Published first-year tuition INR 5,945 and second-year tuition INR 4,640 are retained as a scoped first-year quote and exact schedule; no uniform recurring annual tuition is asserted. Application, eligibility, hostel and living charges are separate."
+          },
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": [
+              "Domestic applicants who meet the M.Ed. qualification rules and the applicable Tamil Nadu reservation and selection process."
+            ],
+            "restrictions": [
+              "No separate international or NRI admission route, international fee or visa process is published for the university-department M.Ed.",
+              "The 2026-27 notification gives no closing date or first-year class-start date for the university departments."
+            ],
+            "notes": "The application form asks nationality, but the notification and fee schedule are domestic; foreign-qualification equivalence and residency are not addressed.",
+            "verifiedAt": "2026-10-25",
+            "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf"
+          },
+          "admissionsContent": {
+            "overview": "The M.Ed. is a regular two-year, four-semester programme taught by TNTEU's six education departments at Karapakkam. The 2026-27 notification invites full-time applications, and the linked CBCS regulations set the 50% entry rule, 90-credit structure, field immersion and dissertation. Teaching language and the first-year start date are not published for the university departments.",
+            "eligibility": {
+              "intro": "The university's published M.Ed. CBCS regulations require a 50% aggregate in theory and practicum, or an equivalent grade, in one of four teacher-education degrees. The university selects on qualifying marks plus an entrance examination or other process; reservation follows applicable government rules.",
+              "items": [
+                "B.Ed. with at least 50% aggregate marks in theory and practicum, or an equivalent grade.",
+                "B.A.B.Ed. with at least 50% aggregate marks in theory and practicum, or an equivalent grade.",
+                "B.Sc.B.Ed. with at least 50% aggregate marks in theory and practicum, or an equivalent grade.",
+                "B.El.Ed. with at least 50% aggregate marks in theory and practicum, or an equivalent grade.",
+                "SC/ST/OBC/PWD and other categories receive reservation or mark relaxation under the applicable Central or State Government rules.",
+                "Selection uses qualifying-examination marks and an entrance examination or other process set by the State Government, Central Government or university."
+              ]
+            },
+            "applicationSteps": [
+              "Open the official 2026-27 M.Ed. application portal linked from the university notification.",
+              "Complete the online form with personal, academic and community details, and select the university-department M.Ed.",
+              "Submit the transfer certificate, degree certificates, B.Ed. marks, community certificate and photographs as the portal instructs.",
+              "Pay the INR 100 application fee (INR 50 for SC/ST/PWD) and keep the receipt.",
+              "Track the portal for selection and document-verification instructions; no closing date is stated in the notification PDF."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Transfer certificate.",
+                "UG degree or provisional certificate.",
+                "PG degree or provisional certificate, if applicable.",
+                "B.Ed. degree or provisional certificate.",
+                "B.Ed. mark statement."
+              ],
+              "application": [
+                "Community certificate.",
+                "Two passport-size photographs.",
+                "PWD certificate, if applicable.",
+                "Application-fee payment receipt."
+              ]
+            },
+            "deadlinesNote": "The 2026-27 notification opens applications but states no closing date or first-year class-start date in the PDF reviewed. The 2025 commencement circular applies to affiliated colleges; confirm the live portal window and department reporting date.",
+            "reportedFeeQuote": {
+              "currency": "INR",
+              "minAmount": 5945,
+              "status": "confirmed",
+              "period": "first_year",
+              "componentBasis": "Isolated tuition for the first academic year; the published second-year tuition is INR 4,640. Application, eligibility, accommodation and living charges are separate. This is not a uniform recurring annual rate.",
+              "audience": "domestic",
+              "category": "University-department M.Ed. domestic first-year route",
+              "academicYear": "2026-27",
+              "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+              "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+              "verifiedAt": "2026-10-25"
+            }
+          },
+          "medium": "",
+          "instructionLanguages": [],
+          "intakeMonths": [],
+          "intakeCodes": [],
+          "feeVerifiedAt": "2026-10-25",
+          "feeNotes": "Published first-year tuition INR 5,945 and second-year tuition INR 4,640 are retained as a scoped first-year quote and exact schedule; no uniform recurring annual tuition is asserted. Application, eligibility, hostel and living charges are separate.",
+          "teachingPhases": [
+            {
+              "phase": "M.Ed. coursework, practicum and dissertation",
+              "language": "",
+              "details": "Two years over four semesters and 90 credits, with field immersion, a teacher-education field visit, a school internship, practicum work, a research colloquium and a dissertation. The regulations allow Tamil or English according to the medium available in the department; the Karapakkam department's actual language is not published."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "summary",
+      "claimText": "TNTEU is a public university established by Tamil Nadu Act 33 of 2008 at Karapakkam, Chennai, dedicated to teacher education.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Genesis page",
+      "sourceUrl": "https://www.tnteu.ac.in/genesis.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Act No. 33 of 2008; effective 1 July 2008 via G.O.Ms. 256, Higher Education (K2) Department, dated 25 June 2008. Address on the same site: Gangaiamman Koil Street, Karapakkam, Chennai 600097."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "summary",
+      "claimText": "Six university departments together offer one common M.Ed.; TNTEU describes itself as a single-discipline education university.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Departments page",
+      "sourceUrl": "https://www.tnteu.ac.in/departments.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The academic menu lists six departments plus psychology, ET, computer and language laboratories, seminar and multipurpose halls and a playground.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Departments page",
+      "sourceUrl": "https://www.tnteu.ac.in/departments.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Facility names taken from the current academic navigation on departments.php and the M.Ed. infrastructure menu. Individual laboratory/hall pages are photo galleries."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "campusLifestyle",
+      "claimText": "Library publishes 3,952 books, 51 education journals, 7 periodical journals and 35 encyclopaedias across its collection subpages.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Library collection pages",
+      "sourceUrl": "https://www.tnteu.ac.in/library_books.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Counts: library_books.php 3952; library_journals.php 51; library_periodicals.php 7; library_encyclopedia.php 35."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "campusLifestyle",
+      "claimText": "The 2026-27 brochure lists ICT-enabled classrooms, e-learning resources, campus Wi-Fi, separate hostels and a placement cell.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. brochure",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20%20M.Ed.%20Brochure%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Brochure is an official 2026-27 institutional marketing leaflet; claims are attributed rather than treated as independently audited."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "cityProfile",
+      "claimText": "Campus address is Gangaiamman Koil Street, Karapakkam, Chennai 600097.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Genesis page",
+      "sourceUrl": "https://www.tnteu.ac.in/genesis.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "practicalExposure",
+      "claimText": "The university's published CBCS regulations set two years, four semesters, 90 credits, five curricular areas, field immersion/internship, practicum, dissertation and 80%/90% attendance thresholds.",
+      "status": "verified",
+      "sourceLabel": "TNTEU M.Ed. CBCS regulations and syllabus",
+      "sourceUrl": "https://tnteu.ac.in/pdf/Criteria1/Criteria1.1/1.1.1/M.Ed_syllabus_CBCS_2021-2022.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "hostelOverview",
+      "claimText": "The 2026-27 M.Ed. notification advertises separate hostel facilities for boys and girls.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "hostelOverview",
+      "claimText": "The university publishes a hostel application form and a separate online hostel-fee payment page; no room types or charges are stated there.",
+      "status": "verified",
+      "sourceLabel": "TNTEU hostel application PDF",
+      "sourceUrl": "https://www.tnteu.ac.in/pdf/hostel%20appln.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Form is a scanned PDF with no text layer. Hostel fee portal: https://formbuilder.ccavenue.com/live/indian-bank/tnteu-hostel."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "dietarySupport",
+      "claimText": "No mess menu, meal tariff or dietary/allergy policy is published on the reviewed university pages; only separate hostels are advertised.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Absence checked across the notification, brochure, hostel form and fee portal. No meal detail found."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "safetyOverview",
+      "claimText": "The Complaints page lists Prevention of Caste Based Discrimination, Anti-Ragging, Grievance Redressal and an Anti-Sexual Harassment Cell/ICC.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Complaints page",
+      "sourceUrl": "https://www.tnteu.ac.in/complaints.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "studentSupport",
+      "claimText": "Centres and Cells lists CEDI and the Centre for MOOCs-SWAYAM; the academic menu also links a Training and Placement Cell PDF, value-added courses and e-learning resources.",
+      "status": "verified",
+      "sourceLabel": "TNTEU Centres and Cells page",
+      "sourceUrl": "https://www.tnteu.ac.in/administrative.php",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "recognition",
+      "claimText": "UGC current state-university register row ID 395 lists the institution at Karapakkam, Chennai 600097, with 2(f) & 12B status and State type.",
+      "status": "verified",
+      "sourceLabel": "UGC current state-university register",
+      "sourceUrl": "https://www.ugc.gov.in/universitydetails/Getuniversity_details?unitypeID=2",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "UGC spells the name 'Tamil Nadu Teacher Education University'. Official institutional styling and NAAC/NCTE use 'Teachers'."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "recognition",
+      "claimText": "NAAC's valid-accreditation workbook records Grade A, CGPA 3.17, cycle 1, declaration 15-11-2022, Track-ID TNUNGN111251 and AISHE U-0483.",
+      "status": "verified",
+      "sourceLabel": "NAAC valid-accreditation workbook as on 14 August 2025",
+      "sourceUrl": "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Sheet 1 serial 378 (spreadsheet row 379)."
+    },
+    {
+      "entity": "university",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "recognition",
+      "claimText": "NCTE's Tamil Nadu SRC list records M.Ed., intake 50, order 02-05-2017, session 2017-18, Revised Recognition for Institute ID NCTE4731890.",
+      "status": "verified",
+      "sourceLabel": "NCTE Tamil Nadu SRC institution list, page 57",
+      "sourceUrl": "https://web.ncte.gov.in/page-regional-committee-institution-lists/32/tamil-nadu?page=57",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "internalNotes": "Row 848. File No SRCAPP2586. Only the M.Ed. course appears for this institution on this page."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "officialTitle",
+      "claimText": "The 2026-27 notification names the Full-Time Two year M.Ed. Degree programme offered by the University Departments.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "duration",
+      "claimText": "The university's published regulations set two academic years, four semesters, 90 credits, 100 working days per semester and a maximum of three years.",
+      "status": "verified",
+      "sourceLabel": "TNTEU M.Ed. CBCS regulations and syllabus",
+      "sourceUrl": "https://tnteu.ac.in/pdf/Criteria1/Criteria1.1/1.1.1/M.Ed_syllabus_CBCS_2021-2022.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "eligibility",
+      "claimText": "Eligibility is at least 50% aggregate in theory and practicum, or equivalent grade, in B.Ed., B.A.B.Ed., B.Sc.B.Ed. or B.El.Ed., with selection on qualifying marks and an entrance examination or other process.",
+      "status": "verified",
+      "sourceLabel": "TNTEU M.Ed. CBCS regulations and syllabus",
+      "sourceUrl": "https://tnteu.ac.in/pdf/Criteria1/Criteria1.1/1.1.1/M.Ed_syllabus_CBCS_2021-2022.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "admissions",
+      "claimText": "The 2026-27 notification gives the online application portal, INR 100/INR 50 application fee and document list for the university-department M.Ed.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "audienceEligibility",
+      "claimText": "The 2026-27 notification and fee schedule present a domestic application process; no international/NRI route or international fee is published.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "recognition",
+      "claimText": "NCTE's own Tamil Nadu list records the university's M.Ed. with intake 50, order 02-05-2017, session 2017-18, Revised Recognition.",
+      "status": "verified",
+      "sourceLabel": "NCTE Tamil Nadu SRC institution list, page 57",
+      "sourceUrl": "https://web.ncte.gov.in/page-regional-committee-institution-lists/32/tamil-nadu?page=57",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "fee",
+      "claimText": "The 2026-27 notification states tuition of INR 5,945 in year one and INR 4,640 in year two, total INR 10,585.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med",
+      "internalNotes": "Application fee INR 100 (SC/ST/PWD INR 50) is separate. Eligibility fee and hostel charges are separate."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "medium",
+      "claimText": "The regulations allow Tamil or English according to the medium available in the Colleges of Education/University Departments; the Karapakkam department's actual language is not published.",
+      "status": "omit",
+      "sourceLabel": "TNTEU M.Ed. CBCS regulations and syllabus",
+      "sourceUrl": "https://tnteu.ac.in/pdf/Criteria1/Criteria1.1/1.1.1/M.Ed_syllabus_CBCS_2021-2022.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "intake",
+      "claimText": "No 2026-27 first-year class-start date is published for the university departments; the 01.09.2025 commencement circular is addressed to affiliated-college principals.",
+      "status": "omit",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med",
+      "internalNotes": "Circular retained as research/india-source-bundles/tnteu-20261025/med-start2025.pdf; OCR text shows it is addressed to affiliated-college principals."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "documentsRequired",
+      "claimText": "The application lists transfer certificate, UG/PG/B.Ed. degrees, B.Ed. marks, community certificate, two photographs and PWD certificate where applicable.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "deadlinesNote",
+      "claimText": "The 2026-27 notification invites applications but states no closing date or first-year class-start date in the PDF reviewed.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "publicField": "reportedFeeQuote",
+      "claimText": "Official 2026-27 M.Ed. notification publishes INR 5,945 isolated tuition for year one and INR 4,640 for year two; the displayed quote is first-year tuition only, not a flat recurring annual rate.",
+      "status": "verified",
+      "sourceLabel": "TNTEU 2026-27 M.Ed. admission notification",
+      "sourceUrl": "https://www.tnteu.ac.in/admin/file_storage/cms/10001%20-%20M.Ed.%20Application%20%20-%20(2026-2027)%20-%2012.06.2026.pdf.pdf.pdf.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-10-25",
+      "reviewBy": "2027-04-25",
+      "programmeSlug": "tnteu-med",
+      "internalNotes": "Root integrator scopes the exact first-year amount without annualising or assuming equal year-two tuition."
+    }
+  ]
+}

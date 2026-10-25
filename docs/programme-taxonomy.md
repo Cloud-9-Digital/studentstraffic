@@ -436,3 +436,24 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 ### Engineering master's in information technology —25October2026
 
 `me-mtech-information-technology` represents graduate-entry engineering study of computing systems, software, networks, data and information technology. It is distinct from the science award `msc-information-technology` and the undergraduate BTechIT family. Preserve exact qualifying disciplines, any required formal programming study, delivery phases and university award title on each offering; do not substitute MScIT solely because the subject name matches.
+
+
+### Sport and exercise science and postgraduate coaching
+
+`master-sport-exercise-science` is the neutral academic master’s family for exercise physiology, movement science, sport biomechanics, kinesiology and related specialist study. It complements the bachelor’s family and is distinct from a qualifying physical-education teaching award or a medical qualification. `master-sports-coaching` covers advanced academic coaching study, with prior degree, coaching credentials and experience specified by the exact offering. Generic summaries do not confer clinical or regulated teaching registration.
+
+### Dairy engineering and dairy science — 25 October 2026
+
+`be-btech-dairy-technology` covers undergraduate engineering study of dairy processing, equipment, chemistry and microbiology, including the practical training specified by each university. `msc-dairy-science` is a graduate-entry science award focused on milk and dairy products. Keep these award levels and engineering/science disciplines separate; neither family implies veterinary registration. Exact admission subjects, training, duration and campus remain offering-specific.
+
+### Neuroscience, PPE and postgraduate AI diplomas — 25 October 2026
+
+`bsc-neuroscience` covers undergraduate study of neuroanatomy, neurophysiology, cellular and molecular neurobiology, cognitive and behavioural neuroscience and laboratory methods. It is distinct from `bachelor-psychology`, which studies behaviour and mental processes without the neurobiological core, and from any medical qualification.
+
+`bachelor-ppe` is the integrated politics, philosophy and economics degree family. It combines political theory and institutions, ethics and philosophy of science, and microeconomics with applied quantitative methods. Do not split it into three separate bachelor's awards, and do not treat it as a generic `bachelor-liberal-arts` award when the institution names PPE as the award.
+
+`pg-diploma-artificial-intelligence` covers graduate-entry postgraduate diplomas that teach AI methods and their application to a professional domain, including domain-specific variants such as AI in finance, healthcare, cybersecurity or creative practice. It is diploma-level, not a master's degree, and does not imply research-degree standing. Keep the exact specialisation, prerequisites, delivery mode (including hybrid or online) and award title on each offering.
+
+### School-entry integrated humanities, library science and IT —25October2026
+
+`integrated-ma-economics`, `integrated-ma-political-science`, `integrated-ma-philosophy`, `integrated-ma-population-studies`, `integrated-ma-rural-development`, `integrated-master-library-information-science` and `integrated-msc-information-technology` represent complete five-year school-entry master's awards. They remain distinct from graduate-entry master's degrees and engineering awards. Preserve exact HSC subjects, award title, duration and institution-specific entry conditions. No separately admitting intermediate exit, professional registration or practice entitlement is implied. `master-population-studies` covers graduate-entry demography and population research; its level is distinct from the integrated family.

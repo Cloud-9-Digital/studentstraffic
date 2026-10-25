@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-25",
+  "entries": [
+    {
+      "universitySlug": "sai-university",
+      "universityName": "Sai University",
+      "sourceBatch": "codex-tn-sai-20261025",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://static.wixstatic.com/media/d758b6_fb666055b6b14ef0aa1af58a1f35e1a0~mv2.png",
+          "proposedPublicId": "studentstraffic/universities/sai-university/logo-20261025",
+          "altText": "Sai University complete symbol and wordmark",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand or genuine campus marketing photograph used for factual identification and illustration; no ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/sai-university-20261025/logo.png",
+          "sha256": "24a3f4a00be974885e7bce9c7c4af1a974ba4e00be362323b31810b178a6613c",
+          "notes": "DirectHTTP200 original embedded in current official admissions page. Visually viewed full original. No AI or stock11062b image used. Full symbol/wordmark retained, no crop/upscaling claim.",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://static.wixstatic.com/media/0afba6_c380158111f6447cbbb12d78d30eadde~mv2.jpg",
+          "proposedPublicId": "studentstraffic/universities/sai-university/cover-20261025",
+          "altText": "Students outside the School of Arts and Sciences building at Sai University, Paiyanur",
+          "sourceType": "official-university",
+          "rightsBasis": "Official institutional brand or genuine campus marketing photograph used for factual identification and illustration; no ownership transfer claimed.",
+          "checkedAt": "2026-10-25",
+          "localPath": "research/india-source-bundles/sai-university-20261025/photo1.jpg",
+          "sha256": "564f68b5a504228dc5bfd74e8813a56f2783a97755739dc6fe845e61188997c6",
+          "notes": "DirectHTTP200 original embedded in current official admissions page. Visually viewed full original. No AI or stock11062b image used. Full symbol/wordmark retained, no crop/upscaling claim.",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ],
+      "migrationId": "0309-india-sai-university-chennai-rescue"
+    },
+    {
+      "universitySlug": "tamil-nadu-teachers-education-university",
+      "universityName": "Tamil Nadu Teachers Education University",
+      "sourceBatch": "tn-group28-20261025",
+      "migrationId": "0316-india-tamil-nadu-teachers-education-university",
+      "assets": [
+        {
+          "kind": "logo",
+          "sourceUrl": "https://www.tnteu.ac.in/images/logo.png",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnteu.ac.in/",
+          "rightsBasis": "Official TNTEU logo served from the university's own domain and used site-wide in the header and footer. No open licence or ownership transfer claimed; used only to identify the institution. Checked 2026-10-25: HTTP 200, content-type image/png, 26,435 bytes, 157x126 px, RGBA. Rendered on a white tile and visually confirmed: blue circular crest with the Tamil and English university names, green shield with book/figures and the 'Truth Alone Triumphs' motto scroll, all legible. CAVEAT: small raster (157 px wide); no larger or SVG official variant found; several guessed logo paths returned 404.",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-teachers-education-university/logo",
+          "sha256": "0f72bdb09091b092c1d0c6c464b9fbc0c6f36a33e0157834b897cf92d84908a1",
+          "localPath": "research/india-source-bundles/tnteu-20261025-rescue/logo.png",
+          "uploadFromReviewedLocalOriginal": true
+        },
+        {
+          "kind": "cover",
+          "sourceUrl": "https://www.tnteu.ac.in/images/university/Faculty%20Building%201.JPG",
+          "sourceType": "official",
+          "sourcePage": "https://www.tnteu.ac.in/faculty_building.php",
+          "rightsBasis": "Official campus photograph served from the university's own domain and used on the Faculty Building infrastructure page. No open licence stated; official institutional image used to identify the campus, same basis as earlier official covers in research/media-enrichment. Checked 2026-10-25: HTTP 200, content-type image/jpeg, 351,154 bytes, 1024x768 px (landscape). Visual confirmation: single real exterior of the three-storey Faculty Building with the university name board over the entrance, planted forecourt, parked two-wheelers and one distant figure at the left edge; no identifiable close-up faces. The related 'Faculty Building.jpg' was rejected because it is a composite with an added green band.",
+          "altText": "Faculty Building at Tamil Nadu Teachers Education University, Karapakkam, Chennai, with the university name board over the entrance and a planted forecourt",
+          "proposedPublicId": "studentstraffic/universities/tamil-nadu-teachers-education-university/cover",
+          "sha256": "ea0c33264fd4c8cb470fbec00d5e0828ef0f9a9df846fb228aa8e7d5f5812f7c",
+          "localPath": "research/india-source-bundles/tnteu-20261025-rescue/faculty-building-1.jpg",
+          "uploadFromReviewedLocalOriginal": true
+        }
+      ]
+    }
+  ]
+}

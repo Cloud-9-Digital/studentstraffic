@@ -13,3 +13,9 @@ Short-course titles are preserved for inventory completeness, outside the curren
 Complete executable0224-india-tamil-nadu-veterinary-and-animal-sciences-university is validated with ten programmes and141evidence records. Scoped content:validate passes without database connection and no expired evidence warnings. Mandatory reviewed media manifest is research/media-enrichment/tanuvas-20261025-reviewed-upload-manifest.json. No database connection, media upload, publication or commit was performed by this worker.
 
 Root normalized six inventory-only restricted statuses to canonical unknown, preserving precise campus/category permissions in notes; published audience restrictions are unchanged.
+
+## Forward rescue — 25 October 2026
+
+142 LF rows retained. Complete13-route forward preserves10 published0224 programme objects exactly and supports CFDT Dairy Technology plus current two-year MSc Biotechnology and MSc Dairy Science. Unknown new programme languages and MSc intakes are explicitly omitted; Dairy's historical2025notice is qualified. Native rounded full-course INR1.17lakh secondaryBiotechnology quote is indicative, not annual tuition; no fee transfer to DairyScience.
+
+Superseding PG hold: current minimum-marks header is malformed; genuine2025–26 own correct undergraduate table is only indexed, direct404/timeout/certificate mismatch. No full-read claim, no marks/fee inference.22MVSc and6MTech remain held on actual qualification evidence, not language or intake. Full detail in research/india-source-bundles/tanuvas-forward-20261025/source-audit.md. Existing distance/research/affiliated holds remain scoped. Owner codex-tanuvas-forward-20261025.
