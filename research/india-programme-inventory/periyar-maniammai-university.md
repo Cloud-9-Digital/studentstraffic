@@ -57,3 +57,9 @@ Independent discovery/corroboration was checked following user clarification: Sh
 5. Doctoral list discrepancy (18 admissions disciplines vs annual-report count 20), doctoral duration/teaching language/start date and taxonomy.
 6. Current tuition-only classification, academic year and category-specific rate; safely represented as on_request for this migration.
 7. Media must be uploaded to Students Traffic Cloudinary by the parent before publication and applied in the same session. Payload contains no external public media hotlinks.
+
+## Bounded forward rescue — 25 October 2026
+
+Supersedes former international/language/intake-only holds for57 regular degree/session entries, preserving all13 applied0189 programme objects and media.44 added domestic-restricted entries include3 explicit afternoon Shift2 choices.107 LF discovery rows retained. Full current own pages and posted2024 degree regulations downloaded/read; unknown language/intake omitted where necessary.41 exact own undated first-year combined-fee references are indicative, not current annual tuition or foreign/NRI rates. No quotes transferred to Shift2 or original13 audience records.
+
+Two architecture/two education approval holds,3 TATTI award/qualification/duration conflicts, doctoral and nonregular routes remain separate. Corrected inventory BScDataScience to science bachelor family bsc-data-science and BScAI to existing science AI/ML family, preserving exact official award title. Remove institution-mirror AICTE badge in forward while retaining genuine EOA scope internally; verified own UGC current register retained. Exact qualification intersections and numeric/header limitations documented in research/india-source-bundles/pmist-forward-20261025/source-audit.md. Temporary actual reader PASS1; draft-only during Group29 freeze, owner codex-pmist-forward-20261025.

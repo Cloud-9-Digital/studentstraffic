@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-25",
+  "currentAdmissionsRechecked": "current-primary-pages-recheck.txt",
+  "completeRetainedSources": [
+    {
+      "path": "research/india-source-bundles/karpagam-academy-of-higher-education/curriculum-B.Sc-CS-AI-ML-Syllabus-Final.pdf",
+      "sha256": "05c25d89001e7f9dcd087a2a700f3ddec60e657e72ad19e11f912f10bb4c6a21",
+      "bytes": 3074871
+    },
+    {
+      "path": "research/india-source-bundles/karpagam-academy-of-higher-education/curriculum-M.Sc-CS-Syllabus-1.pdf",
+      "sha256": "ee33434b39a8d9fb21c800c97d70714f4662d17f7e631e91bff5d5344511d259",
+      "bytes": 2357486
+    },
+    {
+      "path": "research/india-source-bundles/karpagam-academy-of-higher-education/KAHE-FASCM-Fee-structure-2026-2027.pdf",
+      "sha256": "a0e22d426f0e2695cadf3784f91ae7fd49366774f07d7109570de68398682b60",
+      "bytes": 18970
+    }
+  ],
+  "visualFeeReview": "research/india-source-bundles/karpagam-academy-of-higher-education/fee-fascm-review.png visually inspected25October2026: native semester tuition rows and additional one-time5000+500. FinTech absent; no borrowed amount.",
+  "feePolicy": "15new exact semester tuition quotes confirmed GradeA. Annual tuition remains on_request; no annualisation. Original17programme objects unchanged.",
+  "status": "0317 canonical actual scoped reader PASS0expired without database; same owned ledger row validated33; root publication pending."
+}
