@@ -395,3 +395,10 @@ M.Sc. Epidemiology (`msc-epidemiology`) is a public-health master's family for p
 
 
 `bachelor-performing-arts` is a bachelor's-level creative-arts family for music, dance, theatre, performance study and production; retain the exact BA/BPA and honours wording on the offering, and do not replace it with BFA or music-only awards. `bachelor-indology` is an arts-and-humanities family for interdisciplinary Indian civilisation, languages, textual study, history, philosophy and cultural heritage. Its neutral parent accommodates the exact institutional BSc award without classifying that curriculum as a laboratory natural science. Programme duration and entry criteria remain institution-specific.
+
+### Adult education, defence and yoga studies master's families — 25 October 2026
+
+`master-adult-continuing-education` covers non-teacher-licensing master's study in adult education, continuing education and lifelong learning. `master-defence-strategic-studies` covers graduate study of strategy, security and defence policy; no military service or security clearance is implied. `master-yoga-studies` covers arts-oriented yoga philosophy, theory and practice, distinct from the existing MSc Yoga award family and from clinical or professional practice qualifications. Exact award titles and entry routes remain university-specific.
+
+
+`msc-bioinformatics` is an academic natural-sciences master's family for computational biology, biological databases, molecular/genomic data analysis and related statistical or programming methods. It may include a named Bioinformatics and Data Science award, with exact prior-biology requirements and curriculum retained on the offering. It must not inherit BTech/MTech Bioinformatics engineering aliases or imply a clinical-practice qualification.

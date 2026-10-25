@@ -93,3 +93,12 @@ The institutional Michigan November2021 English-medium assessment is GradeB corr
 ### Reviewed media
 
 Official college homepage photograph visibly identifies the Saveetha Health Sciences Block at Thandalam, 1600×1064. Official SIMATS identity source777×124 includes adjacent historical NAAC/NIRF panels: reviewed incoming crop x0,y0,width565,height124 retains only emblem/wordmark and removes those panels. Exact cropped review image `logo-identity-reviewed.png`; cover `cover-reviewed.jpg`; upload manifest `research/media-enrichment/simats-mot-20261025-reviewed-upload-manifest.json`. No fabricated building or AI imagery.
+
+
+## Current bounded medical rescue forward —25October2026
+
+Owner codex-simats-forward-20261025. Full26supported routes:original4MOTacademics/mainfees/media preserved, plus MBBS and21currentNMC/MCCMD/MS awards. Exactcurrent matrices resolve the earlier18count and now-existing Physiology/Immunohaematology/SportsMedicine family gaps. Unknown medical medium/intake is omitted, never guessed.
+
+Twenty-five indicative native annual reference quotes:20MD/MS+MBBS+4MOT. Central tables explicitly perannum but undated; current tuition remainson_request and no2026fee validity is invented. MDAnatomyamount is held because centralfeeM.S.label differs from exactcurrentNMC/MCCM.D.award. ExistingMOT60%/internship/English/historicalinduction conditions unchanged; only nativequote added.
+
+178inventoryrows preserved. Medical campus/regulatory scope, domesticcounselling restrictions and other programme prerequisite/professional/duration holds remain exact. Price-only overseas availability claims becomeunknown. FifthMOTOrthopaedics stalePaediatrics pointer cleared; unresolvedMusculoskeletal/Orthopaedics naming and BOT5/4.5duration remainheld. Full sourceaudit/crosswalks at research/india-source-bundles/simats-forward-20261025/. Bundle0298passesactualscopedreader; noDB/upload/commit.

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "preservedOfferingSlugs": [
+    "unom-ma-public-administration",
+    "unom-bsc-blended-science"
+  ],
+  "allowedChanges": [
+    "intakeMonths normalized to July label matching existing july code",
+    "Existing semester/calendar caveat moved or retained in deadlinesNote"
+  ],
+  "allOtherFieldsExactlyEqual": true
+}

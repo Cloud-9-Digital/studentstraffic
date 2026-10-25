@@ -331,6 +331,9 @@ const globalProgrammeFamilies = defineProgrammes([
   {"slug": "integrated-msc-marine-science", "name": "Integrated M.Sc. in Marine Science", "shortName": "Integrated M.Sc. Marine Science", "stream": "natural-sciences", "level": "integrated-masters", "discipline": "marine-science", "aliases": ["Integrated Master of Science in Marine Science"]},
   {"slug": "integrated-msc-renal-dialysis-technology", "name": "Integrated M.Sc. in Renal Dialysis Technology", "shortName": "Integrated M.Sc. Renal Dialysis Technology", "stream": "public-health-allied-health", "level": "integrated-masters", "discipline": "renal-dialysis-technology", "aliases": ["Five-year Integrated MSc Renal Dialysis Technology"]},
   {"slug": "integrated-msc-cardiac-technology", "name": "Integrated M.Sc. in Cardiac Technology", "shortName": "Integrated M.Sc. Cardiac Technology", "stream": "public-health-allied-health", "level": "integrated-masters", "discipline": "cardiac-technology", "aliases": ["Five-year Integrated MSc Cardiac Technology"]},
+  {"slug": "master-adult-continuing-education", "name": "Master's in Adult and Continuing Education", "shortName": "Master's Adult Education", "stream": "education", "level": "masters", "discipline": "adult-continuing-education", "aliases": ["MA Lifelong Learning", "MA Adult and Continuing Education", "Master of Arts in Lifelong Learning"]},
+  {"slug": "master-defence-strategic-studies", "name": "Master's in Defence and Strategic Studies", "shortName": "Master's Defence Studies", "stream": "public-policy-international-relations", "level": "masters", "discipline": "defence-strategic-studies", "aliases": ["MA Defence and Strategic Studies", "MA Defense and Strategic Studies"]},
+  {"slug": "master-yoga-studies", "name": "Master's in Yoga Studies", "shortName": "Master's Yoga Studies", "stream": "arts-humanities", "level": "masters", "discipline": "yoga-studies", "aliases": ["MA Yoga Theory and Practice", "Master of Arts in Yoga"]},
   {"slug": "integrated-mcom", "name": "Integrated Master of Commerce", "shortName": "Integrated M.Com.", "stream": "economics-commerce", "level": "integrated-masters", "discipline": "commerce", "aliases": ["Five-year Integrated MCom", "Integrated M.Com."]},
   {"slug": "master-criminology", "name": "Master's in Criminology", "shortName": "Master's Criminology", "stream": "social-sciences", "level": "masters", "discipline": "criminology", "aliases": ["MSc Criminology and Criminal Justice Sciences", "Master of Criminology"]},
   {"slug": "master-archaeology", "name": "Master's in Archaeology", "shortName": "Master's Archaeology", "stream": "arts-humanities", "level": "masters", "discipline": "archaeology", "aliases": ["MA Archaeology", "Master of Arts in Archaeology"]},
@@ -349,6 +352,8 @@ const globalProgrammeFamilies = defineProgrammes([
 
   {"slug": "bachelor-performing-arts", "name": "Bachelor's in Performing Arts", "shortName": "Bachelor's Performing Arts", "stream": "design-creative-arts", "level": "bachelors", "discipline": "performing-arts", "aliases": ["BA Performing Arts", "BA Performing Arts (Hons)", "Bachelor of Performing Arts"]},
   {"slug": "bachelor-indology", "name": "Bachelor's in Indology", "shortName": "Bachelor's Indology", "stream": "arts-humanities", "level": "bachelors", "discipline": "indology", "aliases": ["BSc Indology", "BSc Indology (Hons)", "Bachelor of Science in Indology"]},
+
+  {"slug": "msc-bioinformatics", "name": "M.Sc. in Bioinformatics", "shortName": "M.Sc. Bioinformatics", "stream": "natural-sciences", "level": "masters", "discipline": "bioinformatics", "aliases": ["Master of Science in Bioinformatics", "MSc Bioinformatics and Data Science"]},
 
 ]);
 
