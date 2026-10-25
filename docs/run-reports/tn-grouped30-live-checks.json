@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.studentstraffic.com/university/karpagam-academy-of-higher-education",
+    "kind": "university",
+    "slug": "karpagam-academy-of-higher-education",
+    "status": 200,
+    "h1": "Karpagam Academy of Higher Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kahe-forward-b-com-honours",
+    "kind": "programme",
+    "slug": "kahe-forward-b-com-honours",
+    "status": 200,
+    "h1": "B.Com at Karpagam Academy of Higher Education",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/periyar-maniammai-university",
+    "kind": "university",
+    "slug": "periyar-maniammai-university",
+    "status": 200,
+    "h1": "Periyar Maniammai Institute of Science &amp; Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/pmist-b-tech-aerospace-engineering",
+    "kind": "programme",
+    "slug": "pmist-b-tech-aerospace-engineering",
+    "status": 200,
+    "h1": "B.E./B.Tech Aerospace at Periyar Maniammai Institute of Science &amp; Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/pmist-b-tech-computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+    "kind": "programme",
+    "slug": "pmist-b-tech-computer-science-and-engineering-artificial-intelligence-and-machine-learning",
+    "status": 200,
+    "h1": "B.E./B.Tech AI &amp; ML at Periyar Maniammai Institute of Science &amp; Technology",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/university/ethiraj-college-for-women",
+    "kind": "university",
+    "slug": "ethiraj-college-for-women",
+    "status": 200,
+    "h1": "Ethiraj College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/ethiraj-b-com-commerce",
+    "kind": "programme",
+    "slug": "ethiraj-b-com-commerce",
+    "status": 200,
+    "h1": "B.Com at Ethiraj College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/ethiraj-b-com-bank-management",
+    "kind": "programme",
+    "slug": "ethiraj-b-com-bank-management",
+    "status": 200,
+    "h1": "B.Com at Ethiraj College for Women",
+    "pass": true
+  },
+  {
+    "url": "https://www.studentstraffic.com/kahe-be-biomedical",
+    "kind": "programme",
+    "slug": "kahe-be-biomedical",
+    "status": 200,
+    "h1": "B.E./B.Tech Biomedical at Karpagam Academy of Higher Education",
+    "pass": true
+  }
+]

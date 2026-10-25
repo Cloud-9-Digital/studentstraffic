@@ -1,0 +1,23 @@
+[
+  {
+    "s": "karpagam-academy-of-higher-education",
+    "p": "kahe-forward-b-com-honours",
+    "expected": "₹42,000",
+    "actual": "₹42,000",
+    "pass": true
+  },
+  {
+    "s": "periyar-maniammai-university",
+    "p": "pmist-b-c-a",
+    "expected": "₹47,000",
+    "actual": "₹47,000",
+    "pass": true
+  },
+  {
+    "s": "ethiraj-college-for-women",
+    "p": "ethiraj-m-sc-zoology",
+    "expected": "₹750",
+    "actual": "₹750",
+    "pass": true
+  }
+]

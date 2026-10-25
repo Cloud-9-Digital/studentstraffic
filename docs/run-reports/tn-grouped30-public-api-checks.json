@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "karpagam-academy-of-higher-education",
+    "status": 200,
+    "expectedCount": 33,
+    "expectedName": "Karpagam Academy of Higher Education",
+    "actualName": "Karpagam Academy of Higher Education",
+    "actualCount": 33,
+    "offerings": 33,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 21,
+    "actualQuoteLabels": 21,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "periyar-maniammai-university",
+    "status": 200,
+    "expectedCount": 57,
+    "expectedName": "Periyar Maniammai Institute of Science & Technology",
+    "actualName": "Periyar Maniammai Institute of Science & Technology",
+    "actualCount": 57,
+    "offerings": 57,
+    "recognitionCount": 1,
+    "expectedQuoteLabels": 41,
+    "actualQuoteLabels": 41,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  },
+  {
+    "slug": "ethiraj-college-for-women",
+    "status": 200,
+    "expectedCount": 39,
+    "expectedName": "Ethiraj College for Women (Autonomous)",
+    "actualName": "Ethiraj College for Women",
+    "actualCount": 39,
+    "offerings": 39,
+    "recognitionCount": 2,
+    "expectedQuoteLabels": 39,
+    "actualQuoteLabels": 39,
+    "missingQuoteLabels": [],
+    "logoPresent": true,
+    "coverPresent": true,
+    "pass": true
+  }
+]
